@@ -578,6 +578,8 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 		WoWPro.Leveling:AutoCompleteZone(...)
 	end
 	if event == "QUEST_LOG_UPDATE" then
+		-- Keep track of the completed quests
+		WoWPro.Leveling:GetTurnins(...)
 		WoWPro.Leveling:PopulateQuestLog(...)
 		WoWPro.Leveling:AutoCompleteQuestUpdate(...)
 		WoWPro.Leveling:UpdateQuestTracker()
@@ -605,6 +607,58 @@ function WoWPro.Leveling:AutoCompleteGetFP(...)
 		end
 	end
 end
+
+do -- Closure
+
+local currentquests, oldquests, firstscan, abandoning
+local qids = setmetatable({}, {
+	__index = function(t,i)
+		local v = tonumber(i:match("|Hquest:(%d+):"))
+		t[i] = v
+		return v
+	end,
+})
+
+local orig = AbandonQuest
+function AbandonQuest(...)
+	abandoning = true
+	return orig(...)
+end
+
+-- Get the turn ins into completedQIDs
+function WoWPro.Leveling:GetTurnins()
+	currentquests, oldquests = oldquests, currentquests
+	for i in pairs(currentquests) do currentquests[i] = nil end
+
+	for i=1,GetNumQuestLogEntries() do
+		local link = GetQuestLink(i)
+		local qid = link and qids[link]
+		if qid then
+			currentquests[qid] = true
+			local complete = select(7,GetQuestLogTitle(i))
+			currentcompletes[qid] = complete == 1 and true or nil
+		end
+	end
+
+	if firstscan then
+		firstscan = nil
+		return
+	end
+
+	for qid in pairs(oldquests) do
+		if not currentquests[qid] then
+			if not abandoning then
+				-- We save the turn in so that that the quests completed out of order
+				-- are known
+				WoWPro_LevelingDB.completedQIDs[qid] = true
+			end
+			abandoning = nil
+			return
+		end
+	end
+end
+
+end -- End Closure
 
 -- Populate the Quest Log table for other functions to call on --
 function WoWPro.Leveling:PopulateQuestLog()
