@@ -14,16 +14,7 @@ A The Battle for Arathi Basin!|QID|8105|RANK|1|M|39.96,46.93|N|From Field Marsha
 A Worth Its Weight in Gold|QID|26035|RANK|1|M|40.34,49.03|N|From Skuerto.|
 
 A Shakes O'Breen|QID|26336|RANK|1|M|40.34,49.03|N|From Skuerto.|
-A Levixus the Soul Caller|QID|10253|RANK|1|M|40.34,49.03|N|From Skuerto.|
-A Death to the Traitor King|QID|13167|RANK|1|M|40.34,49.03|N|From Skuerto.|
-A Death's Door|QID|10910|RANK|1|M|40.34,49.03|N|From Skuerto.|
 
-A Search and Rescue|QID|12037|RANK|1|M|40.34,49.03|N|From Skuerto.|
-A Man on the Inside|QID|24792|RANK|1|M|40.34,49.03|N|From Skuerto.|
-A The Foreman|QID|27756|RANK|1|M|40.34,49.03|N|From Skuerto.|
-A Prisoner of War|QID|11973|RANK|1|M|40.34,49.03|N|From Skuerto.|
-
-A Disarmament|QID|13205|RANK|1|M|40.34,49.03|N|From Skuerto. If you're going to do Utgard Keep.|
 A The Stone Shards|QID|26341|RANK|1|M|40.34,49.03|N|From Skuerto.|
 A Home Sweet Gnome|QID|26943|RANK|1|M|40.34,49.03|N|From Skuerto. If you wish to go to Gnomerigan.|
 
@@ -65,7 +56,7 @@ T Northfold Manor|QID|26093|M|39.89,48.75|N|To Captain Nials.|
 A Stromgarde Badges|QID|26095|PRE|26093|RANK|1|M|39.89,48.75|N|From Captain Nials.|
 C Stromgarde Badges|QID|26095|M|19.99,66.47|
 
-R Refuge Pointe|QID|26095|NC|P|1|M|39.97,48.83|N|Run or Hearth back to Refuge Pointe.|
+R Refuge Pointe|QID|26095|NC|M|39.97,48.83|N|Run or Hearth back to Refuge Pointe.|
 
 T Stromgarde Badges|QID|26095|M|39.91,48.75|N|To Captain Nials.|
 T Quae and Kinelory|QID|26113|M|54.76,55.33|N|To Quae.|
@@ -127,7 +118,7 @@ A The Princess Unleashed|QID|26049|PRE|26049|RANK|1|M|40.26,49.07|N|From Skuerto
 C The Princess Unleashed|QID|26049|U|4472|M|57.56,34.99|N|Use the Scroll of Myzrael to summon her. Defeat her and loot. You may need another player to assist. She's a level 30 Elite.|
 T The Princess Unleashed|QID|26049|M|57.26,34.61|
 
-R Refuge Pointe|QID|26542|NC|P|1|M|39.97,48.83|N|Run or Hearth back to Refuge Pointe.|
+R Refuge Pointe|QID|26542|NC|M|39.97,48.83|N|Run or Hearth back to Refuge Pointe.|
 
 A Hero's Call: The Hinterlands!|QID|26542|RANK|1|M|40,48.8|N|If you're going to the Hinterlands. From Captain Nials.|
 ]]

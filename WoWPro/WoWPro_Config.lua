@@ -13,19 +13,12 @@ end
 
 function WoWPro:SetDefaults()
 	
-	-- AnchorFrame --
-	WoWPro.AnchorFrame:SetHeight(22)
-	WoWPro.AnchorFrame:SetWidth(200)
-	WoWPro.AnchorFrame:SetMinResize(150,40)
-	WoWPro.AnchorFrame:ClearAllPoints()
-	WoWPro.AnchorFrame:SetPoint("TOPRIGHT", UIParent, "RIGHT", -10, 175)
-	
 	-- MainFrame --
 	WoWPro.MainFrame:SetHeight(300)
 	WoWPro.MainFrame:SetWidth(200)
 	WoWPro.MainFrame:SetMinResize(150,40)
 	WoWPro.MainFrame:ClearAllPoints()
-	WoWPro.MainFrame:SetPoint("TOPRIGHT", WoWPro.AnchorFrame, "TOPRIGHT")
+	WoWPro.MainFrame:SetPoint("TOPLEFT", UIParent, "RIGHT", -210, 175)
 	
 	WoWPro:RefreshConfig()
 end
@@ -36,8 +29,8 @@ local soundfiles = {
 			["Level Up"] = [[Sound\Interface\LevelUp.wav]],
 			["Map Ping"] = [[Sound\Interface\MapPing.wav]],
 			["Boat Docked"] = [[Sound\Doodad\BoatDockedWarning.wav]],
-		}
-			
+}
+
 local function CreateDisplayConfig()
 	local options = {
 		type = "group",
@@ -720,19 +713,21 @@ local function createBlizzOptions()
 	profiles = LibStub("AceDBOptions-3.0"):GetOptionsTable(WoWProDB)
 	
 	dialog:SetDefaultSize("WoWPro-Bliz", 600, 400)
-	dialog:AddToBlizOptions("WoWPro-Bliz", "WoW-Pro Guides")
+	dialog:AddToBlizOptions("WoWPro-Bliz", "WoW-Pro")
 
 	-- Display Options
 	config:RegisterOptionsTable("WoWPro-Display", options.args.display)
-	dialog:AddToBlizOptions("WoWPro-Display", options.args.display.name, "WoW-Pro Guides")
+	dialog:AddToBlizOptions("WoWPro-Display", options.args.display.name, "WoW-Pro")
 	
 	-- Profile Options
 	config:RegisterOptionsTable("WoWPro-Profile", profiles)
-	dialog:AddToBlizOptions("WoWPro-Profile", "WoW-Pro Profiles", "WoW-Pro Guides")
+	dialog:AddToBlizOptions("WoWPro-Profile", "WoW-Pro Profiles", "WoW-Pro")
 
 	return blizzPanel
 end
 
 function WoWPro.CreateConfig()
 	blizzPanel = createBlizzOptions()
+	InterfaceOptions_AddCategory(WoWPro.GuideList)
+	InterfaceOptions_AddCategory(WoWPro.CurrentGuideFrame)
 end

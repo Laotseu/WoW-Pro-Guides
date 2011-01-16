@@ -1,9 +1,10 @@
 ## Interface: 40000
-## Title: WoW-Pro Guides
+## Title: WoW-Pro
 ## Notes: Guides created by the WoW-Pro Community
 ## Author: Jiyambi
 ## SavedVariables: WoWProData
-## Version: 2.1.0
+## SavedVariablesPerCharacter: WoWProCharDB
+## Version: 2.1.2
 
 ## X-Category: Compilations
 
@@ -23,6 +24,8 @@ Libraries\LibBabble-Zone-3.0\lib.xml
 WoWPro.lua
 WoWPro_Widgets.lua
 WoWPro_Localization.lua
+WoWPro_CurrentGuide.lua
+WoWPro_GuideList.lua
 WoWPro_Frames.lua
 WoWPro_Config.lua
 WoWPro_Mapping.lua

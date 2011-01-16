@@ -195,6 +195,10 @@ end
 
 function WoWPro.Leveling:CreateConfig()
 	blizzPanel = createBlizzOptions()
-	InterfaceOptions_AddCategory(WoWPro_Leveling_GuideListFrame)
-	InterfaceOptions_AddCategory(WoWPro_Leveling_CurrentGuide)
+	
+	table.insert(WoWPro.DropdownMenu, {text = "", isTitle = true} )
+	table.insert(WoWPro.DropdownMenu, {text = "WoW-Pro Leveling", isTitle = true} )
+	table.insert(WoWPro.DropdownMenu, {text = "About", func = function() 
+			InterfaceOptionsFrame_OpenToCategory("WoW-Pro Leveling") 
+		end} )
 end
