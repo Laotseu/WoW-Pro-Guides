@@ -60,7 +60,7 @@ function WoWPro.Leveling:NextStep(k, skip)
 			local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
 			for j=1,numprereqs do
 				local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
-				if not WoWProCharDB.completedQIDs[tonumber(jprereq)] then 
+				if not WoWProCharDB.completedQIDs[tonumber(jprereq)] then
 					skip = true -- If one of the prereqs is NOT complete, step is skipped.
 				end
 			end
@@ -70,8 +70,8 @@ function WoWPro.Leveling:NextStep(k, skip)
 
 	-- Skipping quests with prerequisites if their prerequisite was skipped --
 	if WoWPro.prereq[k]
-	and not WoWProCharDB.Guide[GID].skipped[k] 
-	and not WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then 
+	and not WoWProCharDB.Guide[GID].skipped[k]
+	and not WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
 		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
 		for j=1,numprereqs do
 			local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
@@ -600,7 +600,7 @@ end
 function WoWPro.Leveling:AutoCompleteGetFP(...)
 	for i = 1,15 do
 		local index = WoWPro.rows[i].index
-		if ... == ERR_NEWTAXIPATH and WoWPro.action[index] == "f" 
+		if ... == ERR_NEWTAXIPATH and WoWPro.action[index] == "f"
 		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
 			WoWPro.CompleteStep(index)
 		end
@@ -649,7 +649,7 @@ function WoWPro.Leveling:GetTurnins()
 			if not abandoning then
 				-- We save the turn in so that that the quests completed out of order
 				-- are known
-				WoWPro_LevelingDB.completedQIDs[qid] = true
+				WoWProCharDB.completedQIDs[qid] = true
 			end
 			abandoning = nil
 			return
@@ -696,8 +696,8 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate()
 			end
 
 			-- Partial Completion --
-			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[i] 
-			and not WoWProCharDB.Guide[GID].completion[i] then 
+			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[i]
+			and not WoWProCharDB.Guide[GID].completion[i] then
 				local numquesttext = select("#", string.split(";", WoWPro.questtext[i]))
 				local complete = true
 				for l=1,numquesttext do
@@ -758,7 +758,7 @@ function WoWPro.Leveling:AutoCompleteLoot(msg)
 			local track = GetLootTrackingInfo(WoWPro.lootitem[index],lootqtyi,count)
 			WoWPro.rows[i].track:SetText(strtrim(track))
 		end
-		if WoWPro.lootitem[index] and WoWPro.lootitem[index] == itemid and GetItemCount(WoWPro.lootitem[index]) + count >= lootqtyi 
+		if WoWPro.lootitem[index] and WoWPro.lootitem[index] == itemid and GetItemCount(WoWPro.lootitem[index]) + count >= lootqtyi
 		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
 			WoWPro.CompleteStep(index)
 		end
@@ -775,7 +775,7 @@ function WoWPro.Leveling:AutoCompleteSetHearth(...)
 		WoWProCharDB.Guide.hearth = loc
 		for i = 1,15 do
 			local index = WoWPro.rows[i].index
-			if WoWPro.action[index] == "h" and WoWPro.step[index] == loc 
+			if WoWPro.action[index] == "h" and WoWPro.step[index] == loc
 			and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
 				WoWPro.CompleteStep(index)
 			end
@@ -793,7 +793,7 @@ function WoWPro.Leveling:AutoCompleteZone()
 	local waypcomplete = WoWPro.waypcomplete[currentindex]
 	local zonetext, subzonetext = GetZoneText(), string.trim(GetSubZoneText())
 	if action == "F" or action == "H" or action == "b" or (action == "R" and not waypcomplete) then
-		if step == zonetext or step == subzonetext 
+		if step == zonetext or step == subzonetext
 		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[currentindex] then
 			WoWPro.CompleteStep(currentindex)
 		end
@@ -807,7 +807,7 @@ function WoWPro.Leveling:AutoCompleteLevel(...)
 		local GID = WoWProDB.char.currentguide
 		if not WoWProCharDB.Guide[GID] then return end
 		for i=1,WoWPro.stepcount do
-			if not WoWProCharDB.Guide[GID].completion[i] 
+			if not WoWProCharDB.Guide[GID].completion[i]
 				and WoWPro.level[i]
 				and tonumber(WoWPro.level[i]) <= newlevel then
 					WoWPro.CompleteStep(i)
