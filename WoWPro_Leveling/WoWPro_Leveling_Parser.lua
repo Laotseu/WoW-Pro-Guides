@@ -657,7 +657,6 @@ function WoWPro.Leveling:GetTurnins()
 	end
 end
 
-end -- End Closure
 -- Auto-Complete: Quest Update --
 function WoWPro.Leveling:AutoCompleteQuestUpdate()
 	local GID = WoWProDB.char.currentguide
@@ -686,12 +685,17 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate()
 			end
 
 			-- Quest Accepts --
-			if WoWPro.newQuest == QID and action == "A" and not completion then
+			if (WoWPro.newQuest == QID or currentquests[QID]) and action == "A" and not completion then
 				WoWPro.CompleteStep(i)
 			end
 
 			-- Quest Completion --
 			if WoWPro.QuestLog[QID] and action == "C" and not completion and WoWPro.QuestLog[QID].complete then
+				WoWPro.CompleteStep(i)
+			end
+
+			-- If the quest step is marked as completed in
+			if WoWProCharDB.completedQIDs[QID] then
 				WoWPro.CompleteStep(i)
 			end
 
@@ -724,6 +728,8 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate()
 	end
 
 end
+
+end -- End Closure
 
 -- Update Item Tracking --
 local function GetLootTrackingInfo(lootitem,lootqty,count)
