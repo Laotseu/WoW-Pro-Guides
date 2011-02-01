@@ -492,6 +492,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 				if key2 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_itembutton"..i..":LeftButton")
 				end
+				WoWPro:SetMacro("WPI", "/use item:"..use)
 				itemkb = true
 			end
 		else row.itembutton:Hide() end
@@ -499,8 +500,9 @@ function WoWPro.Leveling:RowUpdate(offset)
 		-- Target Button --
 		if target then
 			row.targetbutton:Show() 
-			row.targetbutton:SetAttribute("macrotext", "/cleartarget\n/targetexact "..target
-				.."\n/run if not GetRaidTargetIndex('target') == 8 and not UnitIsDead('target') then SetRaidTarget('target', 8) end")
+			local macroText = "/cleartarget\n/targetexact "..target
+				.."\n/run if not GetRaidTargetIndex('target') == 8 and not UnitIsDead('target') then SetRaidTarget('target', 8) end"
+			row.targetbutton:SetAttribute("macrotext", macroText)
 			if use then
 				row.targetbutton:SetPoint("TOPRIGHT", row.itembutton, "TOPLEFT", -5, 0)
 			else
@@ -514,6 +516,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 				if key2 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_targetbutton"..i..":LeftButton")
 				end
+				WoWPro:SetMacro("WPT", macroText)
 				targetkb = true
 			end
 		else
@@ -540,6 +543,10 @@ function WoWPro.Leveling:RowUpdate(offset)
 		k = k + 1
 	end
 	
+	-- Remove macros if no button found
+	if not itemkb then WoWPro:SetMacro("WPI") end
+	if not targetkb then WoWPro:SetMacro("WPT") end
+
 	WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount or 0
 	WoWPro.CurrentIndex = WoWPro.rows[1+WoWPro.ActiveStickyCount].index
 	WoWPro.Leveling:UpdateQuestTracker()
