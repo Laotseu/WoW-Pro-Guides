@@ -14,6 +14,7 @@ local SHOW_WORLDMAP_MENU = true
 local SHOW_MINIMAP_TOOLTIP = true
 local SHOW_WORLDMAP_TOOLTIP = true
 
+local WoWPro = WoWPro
 
 -- WoWPro customized callback functions for TomTom --
 
@@ -117,14 +118,14 @@ local function WoWProMapping_distance(event, uid, range, distance, lastdistance)
 			TomTom:RemoveWaypoint(cache[i].uid)
 		end
 			
-		if iactual == 1 then
+		if iactual == 1 and cache[iactual].index then
 			WoWPro.CompleteStep(cache[iactual].index)
 		end
 	
 
 	elseif autoarrival == 2 then
 		if iactual ~= #cache then return 
-		elseif iactual == 1 then 
+		elseif iactual == 1 and cache[iactual].index then
 			WoWPro.CompleteStep(cache[iactual].index)
 		else
 			TomTom:RemoveWaypoint(cache[iactual].uid)
@@ -233,6 +234,15 @@ local zidmap = {
 function WoWPro:findBlizzCoords(questId)
 	local POIFrame
 
+		-- THIS CVAR MUST BE CHANGED BACK!
+		local cvar = GetCVarBool("questPOI")
+		SetCVar("questPOI", 1)
+
+		-- This function relies on the above CVar being set, and updates the icon
+		-- position information so it can be queries via the API
+		QuestMapUpdateAllQuests()
+		QuestPOIUpdateIcons()
+		WorldMapFrame_UpdateQuests()
     	-- Try to find the correct quest frame
     	for i = 1, MAX_NUM_QUESTS do
         	local questFrame = _G["WorldMapQuestFrame"..i];
@@ -265,9 +275,11 @@ function WoWPro:findBlizzCoords(questId)
         	return nil, nil
     	end
 
+		SetCVar("questPOI", cvar and 1 or 0)
     	return cx * 100, cy * 100
 end
 
+local zonei, zonec, zonenames
 function WoWPro:MapPoint(row)
 	local GID = WoWProDB.char.currentguide
 	if not GID or not WoWPro.Guides[GID] then return end
@@ -294,9 +306,9 @@ function WoWPro:MapPoint(row)
 	
 	-- Loading Blizzard Coordinates for this objective, if coordinates aren't provided --
 	if (WoWPro.action[i]=="T" or WoWPro.action[i]=="C") and WoWPro.QID and WoWPro.QID[i] and not coords then
-		QuestMapUpdateAllQuests()
-		QuestPOIUpdateIcons()
-		WorldMapFrame_UpdateQuests()
+		--QuestMapUpdateAllQuests()
+		--QuestPOIUpdateIcons()
+		--WorldMapFrame_UpdateQuests()
 		local x, y = WoWPro:findBlizzCoords(WoWPro.QID[i])
 		if x and y then coords = tostring(x)..","..tostring(y) end
 	end
@@ -323,14 +335,16 @@ function WoWPro:MapPoint(row)
 	if not coords then return end
 	
 	-- Finding the zone --
-	local zonei, zonec, zonenames = {}, {}, {}
-	for ci,c in pairs{GetMapContinents()} do
-		zonenames[ci] = {GetMapZones(ci)}
-		for zi,z in pairs(zonenames[ci]) do
-			zonei[z], zonec[z] = zi, ci
+	if not zonenames then
+		zonei, zonec, zonenames = {}, {}, {}
+		for ci,c in pairs{GetMapContinents()} do
+			zonenames[ci] = {GetMapZones(ci)}
+			for zi,z in pairs(zonenames[ci]) do
+				zonei[z], zonec[z] = zi, ci
+			end
 		end
 	end
-	zi, zc = zone and zonei[zone], zone and zonec[zone]
+	local zi, zc = zone and zonei[zone], zone and zonec[zone]
 	if not zi then
 		zi, zc = GetCurrentMapZone(), GetCurrentMapContinent()
 		WoWPro:Print("Zone not found. Using current zone")
@@ -420,6 +434,63 @@ function WoWPro:MapPoint(row)
 	
 	end
 	
+end
+
+function WoWPro:MapPOI(questId)
+	if not qid or not TomTom then return end
+
+	local zoneIndex = GetCurrentMapZone()
+	if not zoneIndex then return end
+
+	local x, y = WoWPro:findBlizzCoords(questId)
+	if not x then return end
+
+	-- Finding the zone --
+	if not zonenames then
+		zonei, zonec, zonenames = {}, {}, {}
+		for ci,c in pairs{GetMapContinents()} do
+			zonenames[ci] = {GetMapZones(ci)}
+			for zi,z in pairs(zonenames[ci]) do
+				zonei[z], zonec[z] = zi, ci
+			end
+		end
+	end
+	local zi, zc = zoneIndex and zonei[zoneIndex], zoneIndex and zonec[zoneIndex]
+	if not zi then return end
+
+	if not x or x > 100 then return end
+	if not y or y > 100 then return end
+
+	local desc, found
+	for i = 1,GetNumQuestLogEntries() do
+		local qid
+		desc, _, _, _, _, _, _, _, qid = GetQuestLogTitle(i)
+		if qid == questId then
+			found = true
+			break
+		end
+	end
+
+	if not found then return end
+
+	if TomTom.db then
+		local waypoint = {}
+		local uid
+
+		uid = TomTom:AddZWaypoint(zc, zi, x, y, desc, false, nil, nil, WoWProMapping_callbacks_tomtom)
+
+		waypoint.uid = uid
+		--waypoint.index = i
+		waypoint.zone = zoneIndex
+		waypoint.x = x
+		waypoint.y = y
+		waypoint.desc = desc
+		waypoint.j = #cache + 1
+
+		table.insert(cache, waypoint)
+	else
+		table.insert(cache, TomTom:AddZWaypoint(zc, zi, x, y, desc, false))
+	end
 end
 
 function WoWPro:RemoveMapPoint()
