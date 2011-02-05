@@ -492,7 +492,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 				if key2 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_itembutton"..i..":LeftButton")
 				end
-				WoWPro:SetMacro("WPI", "/use item:"..use)
+				WoWPro:SetMacro("WPI", "#showtooltip\n/use item:"..use)
 				itemkb = true
 			end
 		else row.itembutton:Hide() end
