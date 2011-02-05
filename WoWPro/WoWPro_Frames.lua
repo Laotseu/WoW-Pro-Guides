@@ -1,6 +1,7 @@
 ---------------------------------
 --      WoWPro_Frames.lua      --
 ---------------------------------
+local _G = getfenv(0)
 local L = WoWPro_Locale
 local AceGUI = LibStub("AceGUI-3.0")
 

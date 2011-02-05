@@ -2,6 +2,8 @@
 --      WoWPro_Leveling_Parser      --
 --------------------------------------
 
+local WoWPro = WoWPro
+
 local L = WoWPro_Locale
 WoWPro.Leveling.actiontypes = {
 	A = "Interface\\GossipFrame\\AvailableQuestIcon",
@@ -575,12 +577,13 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 		WoWPro.Leveling:AutoCompleteZone(...)
 	end
 	if event == "QUEST_LOG_UPDATE" then
+		WoWPro.Leveling:QUEST_LOG_UPDATE_bucket()
 		-- Keep track of the completed quests
-		WoWPro.Leveling:GetTurnins(...)
-		WoWPro:PopulateQuestLog(...)
+		--WoWPro.Leveling:GetTurnins(...)
 
-		WoWPro.Leveling:AutoCompleteQuestUpdate(...)
-		WoWPro.Leveling:UpdateQuestTracker()
+		--WoWPro:PopulateQuestLog(...)
+		--WoWPro.Leveling:AutoCompleteQuestUpdate(...)
+		--WoWPro.Leveling:UpdateQuestTracker()
 	end
 	if event == "UI_INFO_MESSAGE" then
 		WoWPro.Leveling:AutoCompleteGetFP(...)
@@ -610,6 +613,8 @@ end
 do -- Closure
 
 local currentquests, oldquests, firstscan, abandoning = {}, {}
+local currentobj, oldobj = {}, {}
+local currentcompletes = {}
 local qids = setmetatable({}, {
 	__index = function(t,i)
 		local v = tonumber(i:match("|Hquest:(%d+):"))
@@ -627,15 +632,26 @@ end
 -- Get the turn ins into completedQIDs
 function WoWPro.Leveling:GetTurnins()
 	currentquests, oldquests = oldquests, currentquests
-	for i in pairs(currentquests) do currentquests[i] = nil end
+	for k in pairs(currentquests) do currentquests[k] = nil end
+	currentobj, oldobj = oldobj, currentobj
+	for k in pairs(currentobj) do currentobj[k] = nil end
+	for k in pairs(currentcompletes) do currentcompletes[k] = nil end
 
 	for i=1,GetNumQuestLogEntries() do
 		local link = GetQuestLink(i)
 		local qid = link and qids[link]
 		if qid then
 			currentquests[qid] = true
-			--local complete = select(7,GetQuestLogTitle(i))
-			--currentcompletes[qid] = complete == 1 and true or nil
+			local complete = select(7,GetQuestLogTitle(i))
+			currentcompletes[qid] = complete == 1 and true or nil
+
+			-- Get the current objectives for the quest if there is more then one
+			local num_obj = GetNumQuestLeaderBoards(qid)
+			if num_obj > 1 then
+				for i = 1,num_obj do
+					currentobj[qid*100 + i] = select(3,GetQuestLogLeaderBoard(i, qid))
+				end
+			end
 		end
 	end
 
@@ -643,6 +659,9 @@ function WoWPro.Leveling:GetTurnins()
 		firstscan = nil
 		return
 	end
+
+	-- Get the active quest QID
+	local active_qid = WoWPro.QID[WoWPro.action[WoWPro.ActiveStep or 0] or 0]
 
 	for qid in pairs(oldquests) do
 		if not currentquests[qid] then
@@ -653,6 +672,15 @@ function WoWPro.Leveling:GetTurnins()
 			end
 			abandoning = nil
 			return
+		else
+			-- The quest is still active, let see if the objectives got completed
+			for k, done in pairs(currentobj) do
+				obj_qid = floor(k/100)
+				if active_qid == obj_qid and done and not oldobj[k] and not currentcompletes[obj_qid] then
+					-- Map the closest POI for the next not completed objective
+					--WoWPro:MapPoint(nil, true)
+				end
+			end
 		end
 	end
 end
@@ -729,7 +757,33 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate()
 
 end
 
-end -- End Closure
+end -- Closure
+
+do -- Bucket Closure
+
+	local THROTTLE_TIME = 0.2
+	local throt
+	local f = CreateFrame("Frame")
+	f:Hide()
+	f:SetScript("OnShow", function(self)
+		throt = 0
+	end)
+	f:SetScript("OnUpdate", function(self, elapsed)
+		throt = throt - elapsed
+		if throt < 0 then
+			WoWPro.Leveling:GetTurnins()
+			WoWPro:PopulateQuestLog()
+			WoWPro.Leveling:AutoCompleteQuestUpdate()
+			WoWPro.Leveling:UpdateQuestTracker()
+			f:Hide()
+		end
+	end)
+
+	function WoWPro.Leveling:QUEST_LOG_UPDATE_bucket()
+		f:Show()
+	end
+
+end -- End Bucket Closure
 
 -- Update Item Tracking --
 local function GetLootTrackingInfo(lootitem,lootqty,count)
