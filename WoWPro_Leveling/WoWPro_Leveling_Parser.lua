@@ -187,7 +187,7 @@ local function ParseQuests(...)
 		local text = select(j, ...)
 		text = text:trim()
 		if text ~= "" and text:sub(1,1) ~= ";" then
-			local class, race = text:match("|C|([^|]*)|?"), text:match("|R|([^|]*)|?")
+			local class, race, gender = text:match("|C|([^|]*)|?"), text:match("|R|([^|]*)|?"), text:match("|GEN|([^|]*)|?")
 			if class then
 				-- deleting whitespaces and capitalizing, to compare with Blizzard's class tokens
 				class = strupper(strreplace(class, " ", ""))
@@ -196,7 +196,19 @@ local function ParseQuests(...)
 				-- deleting whitespaces to compare with Blizzard's race tokens
 				race = strreplace(race, " ", "")
 			end
-			if class == nil or class:find(myclass) then if race == nil or race:find(myrace) then
+			if gender then
+				-- deleting leading/trailing whitespace and then canonicalize the case
+				gender=strupper(strtrim(gender))
+				-- map the text to the gender code
+				if gender == "FEMALE" then
+					gender = 3
+				elseif gender == "MALE" then
+					gender = 2
+				else
+					gender = 1
+				end
+			end
+			if class == nil or class:find(myclass) then if race == nil or race:find(myrace) then if gender == nil or gender == UnitSex("player") then
 				_, _, WoWPro.action[i], WoWPro.step[i] = text:find("^(%a) ([^|]*)(.*)")
 				WoWPro.step[i] = WoWPro.step[i]:trim()
 				WoWPro.stepcount = WoWPro.stepcount + 1
@@ -228,7 +240,7 @@ local function ParseQuests(...)
 				WoWPro.level[i] = text:match("|LVL|([^|]*)|?")
 				WoWPro.leadin[i] = text:match("|LEAD|([^|]*)|?")
 				WoWPro.target[i] = text:match("|T|([^|]*)|?")
-                                    WoWPro.rep[i] = text:match("|Rep|([^|]*)|?")
+                                    WoWPro.rep[i] = text:match("|REP|([^|]*)|?")
 				WoWPro.prof[i] = text:match("|P|([^|]*)|?")
 				WoWPro.rank[i] = text:match("|RANK|([^|]*)|?")
 
@@ -237,7 +249,7 @@ local function ParseQuests(...)
 				end
 
 				i = i + 1
-			end end
+			end end end
 		end
 	end
 end
@@ -375,7 +387,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 			row.check:SetChecked(false)
 			row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
 		end
-		if note then note = strtrim(note) end
+		if note then note = strtrim(note) note = string.gsub(note,"\\n","\n") end
 		if WoWProDB.profile.showcoords and coord and note then note = note.." ("..coord..")" end
 		if WoWProDB.profile.showcoords and coord and not note then note = "("..coord..")" end
 		if not ( WoWProDB.profile.showcoords and coord ) and not note then note = "" end
