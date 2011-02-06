@@ -290,7 +290,7 @@ function WoWPro.CompleteStep(step)
 		end
 	end
 	
-	WoWPro:dbp("Step Complete: "..WoWPro.step[step])
+	WoWPro:dbp("Step Complete: "..WoWPro.step[step] or "")
 	
 	WoWPro:MapPoint()
 	WoWPro:UpdateGuide() 
