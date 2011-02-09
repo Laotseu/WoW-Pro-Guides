@@ -749,20 +749,20 @@ end
 -- Dropdown Menu --
 function WoWPro:CreateDropdownMenu()
 	WoWPro.DropdownMenu = {
-		{text = "WoW-Pro Guides", isTitle = true},
-		{text = "About", func = function() 
+		{text = "WoW-Pro Guides", notCheckable = true, isTitle = true},
+		{text = "About", notCheckable = true, func = function()
 			InterfaceOptionsFrame_OpenToCategory("WoW-Pro")
 		end},
-		{text = "Display Settings", func = function() 
+		{text = "Display Settings", notCheckable = true, func = function()
 			InterfaceOptionsFrame_OpenToCategory("Guide Display") 
 		end},
-		{text = L["Guide List"], func = function() 
+		{text = L["Guide List"], notCheckable = true, func = function()
 			InterfaceOptionsFrame_OpenToCategory("Guide List") 
 		end},
-		{text = L["Current Guide"], func = function() 
+		{text = L["Current Guide"], notCheckable = true, func = function()
 			InterfaceOptionsFrame_OpenToCategory("Current Guide") 
 		end},
-		{text = L["Reset Current Guide"], func = function() 
+		{text = L["Reset Current Guide"], notCheckable = true, func = function()
 			if not WoWProDB.char.currentguide then return end
 			WoWProCharDB.Guide[WoWProDB.char.currentguide] = nil
 			for j = 1,WoWPro.stepcount do 
