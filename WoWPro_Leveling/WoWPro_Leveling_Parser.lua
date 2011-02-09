@@ -426,7 +426,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 		}
 		if step then
 			table.insert(dropdown,
-				{text = step.." Options", isTitle = true}
+				{text = step.." Options", notCheckable = true, isTitle = true}
 			)
 			QuestMapUpdateAllQuests()
 			QuestPOIUpdateIcons()
@@ -434,21 +434,21 @@ function WoWPro.Leveling:RowUpdate(offset)
 			if QID then _, x, y, obj = QuestPOIGetIconInfo(QID) end
 			if coord or x then
 				table.insert(dropdown,
-					{text = "Map Coordinates", func = function()
+					{text = "Map Coordinates", notCheckable = true, func = function()
 						WoWPro:MapPoint(row.num)
 					end}
 				)
 			end
 			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].index and GetNumPartyMembers() > 0 then
 				table.insert(dropdown,
-					{text = "Share Quest", func = function()
+					{text = "Share Quest", notCheckable = true, func = function()
 						QuestLogPushQuest(WoWPro.QuestLog[QID].index)
 					end}
 				)
 			end
 			if sticky then
 				table.insert(dropdown,
-					{text = "Un-Sticky", func = function()
+					{text = "Un-Sticky", notCheckable = true, func = function()
 						WoWPro.sticky[row.index] = false
 						WoWPro.UpdateGuide()
 						WoWPro.UpdateGuide()
@@ -457,7 +457,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 				)
 			else
 				table.insert(dropdown,
-					{text = "Make Sticky", func = function()
+					{text = "Make Sticky", notCheckable = true, func = function()
 						WoWPro.sticky[row.index] = true
 						WoWPro.unsticky[row.index] = false
 						WoWPro.UpdateGuide()
