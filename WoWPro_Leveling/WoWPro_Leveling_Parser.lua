@@ -210,6 +210,7 @@ local function ParseQuests(...)
 			end
 			if class == nil or class:find(myclass) then if race == nil or race:find(myrace) then if gender == nil or gender == UnitSex("player") then
 				_, _, WoWPro.action[i], WoWPro.step[i] = text:find("^(%a) ([^|]*)(.*)")
+				assert(WoWPro.step[i],("i=%s, text=%s"):format(tostring(i),tostring(text)))
 				WoWPro.step[i] = WoWPro.step[i]:trim()
 				WoWPro.stepcount = WoWPro.stepcount + 1
 				WoWPro.QID[i] = tonumber(text:match("|QID|([^|]*)|?"))
