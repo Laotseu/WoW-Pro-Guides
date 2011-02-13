@@ -92,6 +92,11 @@ function WoWPro.Leveling:NextStep(k, skip)
 		end
 	end
 
+	-- Skipping L steps if we are already past the level
+	if WoWPro.action[k] == "L" and tonumber(WoWPro.level[k]) <= UnitLevel("player") then
+		skip = true
+	end
+					
 	return skip
 end
 
@@ -584,6 +589,22 @@ end
 -- Event Response Logic --
 function WoWPro.Leveling:EventHandler(self, event, ...)
 	WoWPro:dbp("Running: Leveling Event Handler")
+
+	-- Noticing if we have entered a Dungeon!
+	if event == "ZONE_CHANGED_NEW_AREA" and WoWProCharDB.AutoHideLevelingInsideInstances == true then
+		if IsInInstance() then
+			WoWPro:Print("|cff33ff33Instance Auto Hide|r: Leveling Module")
+			WoWPro.MainFrame:Hide()
+			WoWPro.Titlebar:Hide()
+			WoWPro.Hidden = true
+			return
+		elseif WoWPro.Hidden == true then
+			WoWPro:Print("|cff33ff33Instance Exit Auto Show|r: Leveling Module")
+			WoWPro.MainFrame:Show()
+			WoWPro.Titlebar:Show()
+			WoWPro.Hidden = nil
+		end
+	end	
 
 	-- Noting that a quest is being completed for quest log update events --
 	if event == "QUEST_COMPLETE" then
