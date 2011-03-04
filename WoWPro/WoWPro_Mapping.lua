@@ -52,6 +52,7 @@ local function WoWProMapping_tooltip(event, tooltip, uid, dist)
 	local y = cache[iactual].y
 	local desc = cache[iactual].desc
 	local jcoord = cache[iactual].j
+	if not (zone and x and y) then return end
 	
 	tooltip:SetText(desc or L["WoWPro waypoint"])
 	if dist and tonumber(dist) then
