@@ -260,14 +260,14 @@ A Steady Hand|QID|26576|PRE|26575|RANK|2|N|From Kor.|
 A Rocky Upheaval|QID|26577|PRE|26575|From Kor.|
 T Steady Hand|QID|26576|RANK|2|N|To Terrath the Steady.|
 A Don't. Stop. Moving.|QID|26656|PRE|26576|RANK|2|M|33,24.1|N|From Terrath the Steady.|
-C Don't. Stop. Moving.|QID|26656|RANK|2|M|33,24.1;42.50,13.00;50.60,13.00|N|You need to do this on a ground mount. Speak to Terrath and tell him you are ready. A group of Opalescent Guardians will spawn. This group will follow you and you need to get 5 across the eastern section of the Pale Roost, past all the stone dragons. The best way I have found is to run northwest to about (42.50,13.00), then head directly east to the stone circle at (50.60, 13.00)|
-T Don't. Stop. Moving.|QID|26656|RANK|2|M|33,24.1|To Terrath the Steady.|
+C Don't. Stop. Moving.|QID|26656|RANK|2|M|42.50,13.00;50.60,13.00|N|You need to do this on a ground mount. Speak to Terrath and tell him you are ready. A group of Opalescent Guardians will spawn. This group will follow you and you need to get 5 across the eastern section of the Pale Roost, past all the stone dragons. The best way I have found is to run northwest to about (42.50,13.00), then head directly east to the stone circle at (50.60, 13.00)|
+T Don't. Stop. Moving.|QID|26656|RANK|2|M|40.0,19.0|To Terrath the Steady.|
 A Hard Falls|QID|26657|PRE|26656|RANK|2|M|33,24.1|N|From Terrath the Steady.|
 A Fragile Values|QID|26658|PRE|26656|RANK|2|M|33,24.1|N|From Terrath the Steady.|
 C Hard Falls|QID|26657|RANK|2|M|33.6,21.4|N|Go west, out into the Pale Roost. You will see Stone Dragons falling to the ground. Attack them before they manage to take off again.|
-C Fragile Values|QID|26658|RANK|2|U|60266|M|353.8,26.4|N|Search the area until you find two stone troggs with a basilisk in a net. Kill the two troggs and loot them to get a Stonework Mallet.|
-T Hard Falls|QID|26657|RANK|2|M|33,24.1|N|To Terrath the Steady.|
-T Fragile Values|QID|26658|RANK|2|M|33,24.1|N|To Terrath the Steady.|
+C Fragile Values|QID|26658|RANK|2|U|60266|M|37.3,24.0|N|Search the area until you find two stone troggs with a basilisk in a net. Kill the two troggs and loot them to get a Stonework Mallet.|
+T Hard Falls|QID|26657|RANK|2|M|39.9,19.2|N|To Terrath the Steady.|
+T Fragile Values|QID|26658|RANK|2|M|39.9,19.2|N|To Terrath the Steady.|
 A Resonating Blow|QID|26659|PRE|26657;26658|RANK|2|M|33,24.1|N|From Terrath the Steady.|
 C Resonating Blow|QID|26659|RANK|2|U|60266|M|32.60,24.30|N| Terrath will come and toss you up onto some floating rocks. Jump from rock to rock until you reach a cluster of rocks all on the same level. You will attack Aeosera from these rocks. When she targets the platform you are standing on, jump to another and continue to attack. Continue attacking and jumping from rock to rock until she surrenders.|
 T Resonating Blow|QID|26659|RANK|2|M|33,24.1|N|To Terrath the Steady.|
@@ -283,7 +283,7 @@ T A Head Full of Wind|QID|26581|M|71.80,47.60|N|To Windspeaker Lorvarius.|
 A Unnatural Causes|QID|26582|PRE|26581|M|71.80,47.60|N|From Windspeaker Lorvarius.|
 C Gone Soft|QID|26579|M|70.5,43.3|N|Finish killing Fungal Behemoths.|
 C Doomshrooms|QID|26578|M|70.6,40.1|N|FInish killing Doomshrooms.|US|
-T Unnatural Causes|QID|26582|M|70.6,40.1|N|To Gorsik the Tumultuous.|
+T Unnatural Causes|QID|26582|M|72.2,53.9|N|To Gorsik the Tumultuous.|
 T Gone Soft|QID|26579|M|72.2,53.9|N|To Gorsik the Tumultuous.|
 T Doomshrooms|QID|26578|M|72.2,53.9|N|To Gorsik the Tumultuous.|
 A Shaken and Stirred|QID|26584|PRE|26578;26579;26582|M|72.2,53.9|N|From Gorsik the Tumultuous.|
