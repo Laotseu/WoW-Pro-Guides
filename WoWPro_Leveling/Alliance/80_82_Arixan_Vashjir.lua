@@ -66,8 +66,7 @@ A Can't Start a Fire Without a Spark|QID|25602|PRE|25598|M|57.3,28.9|Z|Kelp'thar
 C A Girl's Best Friend|QID|25390|RANK|2|S|M|56.2,37.6;50.8,44.9;46.8,41.6;50.82,31.95|L|53074 6|Z|Kelp'thar Forest|N|While you complete the other quests, look for Adarrah's Jewelry Box on the sea floor. They are small and a little hard to spot.|
 C A Taste For Tail|QID|25389|RANK|2|M|48.77,36.36|Z|Kelp'thar Forest|L|53073 4|N|In the area just east, kill Clacksnap Pincers for A Taste For Tail. You should get a Tattered Treasure Map off one of them.|
 A The Horde's Hoard|QID|25377|RANK|2|Z|Kelp'thar Forest|M|48.7,40.7;48.6,32.9;51.9,43.2;46.9,47.2|N|If you don't have a Tattered Treasure Map yet, keep killing Clacksnap Pincers in the area until you get it. Use the map to accept the quest The Horde's Hoard.|
-N Kliklak's Craw|QID|25467|RANK|2|Z|Kelp'thar Forest|M|53.2,44.0;53.5,23.9;51.2,47.8|L|54345|N|In the same area, kill Sabreclaw Skitterers until you get a Crumpled Treasure Map. This item will start the quest Kliklak's Craw.|
-A Kliklak's Craw|QID|25467|Z|Kelp'thar Forest|RANK|2|M|53.2,44.0;53.5,23.9;51.2,47.8|U|54345|N|Use the map.|
+A Kliklak's Craw|QID|25467|Z|Kelp'thar Forest|RANK|2|M|53.2,44.0;53.5,23.9;51.2,47.8|U|54345|N|In the same area, kill Sabreclaw Skitterers until you get a Crumpled Treasure Map. This item will start the quest Kliklak's Craw.|
 C Kliklak's Craw|QID|25467|RANK|2|M|45,38;43.89,39.85|Z|Kelp'thar Forest|L|54344|N|Kliklak patrols around this area. Kill him and loot the Corroded key.|
 T Kliklak's Craw|QID|25467|RANK|2|M|46.6,47.5|Z|Kelp'thar Forest|U|54344|N|Swim to Shallow's End and locate the chest behind the two large shells. Open it to turn in Kliklak's Craw.|
 C Can't Start a Fire Without a Spark|QID|25602|M|55.4,38.8|Z|Kelp'thar Forest|QO|Keg of Gunpowder: 1/1|N|Get the Keg of Gunpowder at Budd's Dig.|
@@ -101,14 +100,14 @@ C Dah, Nunt... Dah, Nunt...|QID|25657|RANK|2|U|55190|M|58.21,49.04|Z|Kelp'thar F
 T Dah, Nunt... Dah, Nunt...|QID|25657|RANK|2|M|58.34,48.76|Z|Kelp'thar Forest|N|Quest ends automatic.|
 A Shark Weak|QID|27699|PRE|25657|RANK|2|M|58.34,48.76|Z|Kelp'thar Forest|N|Quest starts automatic.|
 C Shark Weak|QID|27699|RANK|2|S|M|59.25,46.87|Z|Kelp'thar Forest|L|55212 5|N|Collect 5 of Gnaws' Teeth.|
-C Blackfin's Booty|QID|25503|RANK|2|M|56.73,53.96|Z|Kelp'thar Forest|L|54640|N|Find Blackfin. He is an orca that swims in the waters above The Accursed Reef. Kill him and loot Gliblingle's Map.|
+C Blackfin's Booty|QID|25503|RANK|2|M|56.73,53.96|Z|Kelp'thar Forest|T|Blackfin|L|54640|N|Find Blackfin. He is an orca that swims in the waters above The Accursed Reef. Kill him and loot Gliblingle's Map.|
 C Shark Weak|QID|27699|RANK|2|US|M|59.2,47.0|Z|Kelp'thar Forest|L|55212 5|N|Collect the missing Gnaw's Teeth.|
 T Shark Weak|QID|27699|RANK|2|M|55.3,38.9|Z|Kelp'thar Forest|N|To Budd.|
 A DUN-dun-DUN-dun-DUN-dun|QID|25670|PRE|27699|RANK|2|M|55.3,38.9|Z|Kelp'thar Forest|N|From Budd.|
-C DUN-dun-DUN-dun-DUN-dun|QID|25670|RANK|2|M|60.35,59.75|Z|Kelp'thar Forest|N|Go back to the Rusty Harpoon Gun. Use Budd's Chain. You will be picked up by Gnaws. Use the Fire Harpoon Gun ability when prompted. Once Gnaws dies, you will be in Gnaws' Boneyard. Swim back to The Accursed Reef.|
+C DUN-dun-DUN-dun-DUN-dun|QID|25670|RANK|2|M|58.4,48.7|Z|Kelp'thar Forest|N|Go back to the Rusty Harpoon Gun. Use Budd's Chain. You will be picked up by Gnaws. Use the Fire Harpoon Gun ability when prompted. Once Gnaws dies, you will be in Gnaws' Boneyard. Swim back to The Accursed Reef.|
 T DUN-dun-DUN-dun-DUN-dun|QID|25670|RANK|2|M|58.37,48.55|Z|Kelp'thar Forest|N|To Budd.|
 A A Bone to Pick|QID|25732|PRE|25670|RANK|2|M|58.37,48.55|Z|Kelp'thar Forest|N|From Budd.|
-C A Bone to Pick|QID|25732|RANK|2|M|53.15,57.75|Z|Kelp'thar Forest|N|Find King Gurboggle, kill him and collect The Pewter Pounder.|
+C A Bone to Pick|QID|25732|RANK|2|M|53.15,57.75|T|King Gurboggle|Z|Kelp'thar Forest|N|Find King Gurboggle, kill him and collect The Pewter Pounder.|
 T Blackfin's Booty|QID|25503|RANK|2|M|55.1,54.8|Z|Kelp'thar Forest|
 T A Bone to Pick|QID|25732|RANK|2|M|58.37,48.55|Z|Kelp'thar Forest|N|To Budd.|
 A Decisions, Decisions|QID|25743|PRE|25732|RANK|2|M|58.37,48.52|Z|Kelp'thar Forest|N|From Budd.|
