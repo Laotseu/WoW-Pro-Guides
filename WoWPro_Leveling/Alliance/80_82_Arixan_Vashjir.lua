@@ -304,7 +304,8 @@ T Decompression|QID|25888|M|60.48,64.71;63.84,59.66|Z|Kelp'thar Forest|N|To Moan
 T What? What? In My Gut...?|QID|25885|M|63.84,59.66|Z|Kelp'thar Forest|N|To Private Pollard.|
 T The Warden's Time|QID|27708|M|63.84,59.66|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Across the Great Divide|QID|25471|PRE|27708|M|63.8,59.7|Z|Kelp'thar Forest|N|From Erunak Stonespeaker.|
-T Across the Great Divide|QID|25471|M|49.26,72.95;56.03,13.75|Z|Shimmering Expanse|N|To Farseer Gadra. Turn in is over the mass of land. The first waypoint is the entrance to the cave.|
+f Sandy Beach|QID|25630|M|57.0,17.1|N|You need to go up out of the water, this is an "air" flight point.|
+T Across the Great Divide|QID|25630|M|48.8,71.4;56.0,13.8|Z|Shimmering Expanse|N|To Farseer Gadra. Turn in is over the mass of land. The first waypoint is the entrance to the cave.|
 A The Looming Threat|QID|25334|PRE|25471|M|56.0,13.7|Z|Shimmering Expanse|N|From Farseer Gadra.|
 C The Looming Threat|QID|25334|M|56.0,13.7|Z|Shimmering Expanse|N|Speak to Farseer Gadra and tell him you are ready to enter the vision. after a few seconds you will be pulled into a vision. Gadra will explain the current situation in Vashj'ir.|
 T The Looming Threat|QID|25334|M|72.89,37.35|Z|Shimmering Expanse|N|When he is finished speaking, speak to him again to turn in The Looming Threat and be transported back to Damplight Chamber, which is not a peaceful as when you left.|
@@ -323,7 +324,7 @@ A Don't be Shellfish|QID|25219|PRE|25222|RANK|2|M|49.24,42.57|Z|Shimmering Expan
 A Slippery Threat|QID|25220|PRE|25222|RANK|2|M|49.13,41.95|Z|Shimmering Expanse|N|From Caretaker Movra.|
 h Silver Tide Hollow|QID|25215|M|49.13,41.95|Z|Shimmering Expanse|N|At Caretaker Movra.|
 N A Distracting Scent|QID|25215|M|49.2,42|Z|Shimmering Expanse|N|Swim out of Silver Tide Hollow and mount up. All around the entrance you will see naga bodies. Swim close to one and right-click it to start dragging the body.|
-C Don't be Shellfish|QID|25219|S|M|49.2,35.8|Z|Shimmering Expanse|L|52975 10|N|Collect Coilshell Sifters.|
+C Don't be Shellfish|QID|25219|S|T|Coilshell Sifter|M|49.2,35.8|Z|Shimmering Expanse|L|52975 10|N|Collect Coilshell Sifters.|
 C Slippery Threat|QID|25220|S|M|40.5,37.9;49.2,35.8;61,38.2|Z|Shimmering Expanse|N|Kill Spiketooth Eels.|
 C A Distracting Scent|QID|25215|M|50.35,41.11;50.63,45.51|Z|Shimmering Expanse|N|Swim south to Glimmerdeep Gorge. As soon as you are over the gorge you will drop the naga you are dragging. Drag 3 bodies into the gorge to complete Distracting Scent.|
 T The Great Sambino|QID|25216|M|41.3,34.2|Z|Shimmering Expanse|N|From The Great Sambino.|
@@ -530,16 +531,16 @@ C Final Judgement|QID|25951|M|37.50,78.69;42,90.78.40|Z|Shimmering Expanse|N|Swi
 T Final Judgement|QID|25951|M|33.1,75.9|Z|Shimmering Expanse|N|To Lady Naz'jar.|
 T Visions of the Past: Rise From The Deep|QID|25626|M|46.69,57.53;49.45,57.57|Z|Shimmering Expanse|N|To Wavespeaker Valoren.|
 A A Breath of Fresh Air|QID|26005|PRE|25626|M|49.45,57.57|Z|Shimmering Expanse|N|From Wavespeaker Valoren.|
-T A Breath of Fresh Air|QID|26005|M|44.82,56.66;69.61,75.34|Z|Vashj'ir|U|57412|N|You can use the Boom Boots to get to the surface. Turn quest in to Captain Taylor.|
+T A Breath of Fresh Air|QID|26005|M|57.0,75.9|Z|Shimmering Expanse|U|57412|N|You can use the Boom Boots to get to the surface. Turn quest in to Captain Taylor.|
 A Full Circle|QID|26219|PRE|26005|M|69.6,75.3|Z|Vashj'ir|N|From Captain Taylor.|
 C Full Circle|QID|26219|M|69.6,75.3|Z|Vashj'ir|Z|Shimmering Expanse|N|Get on board the sub once it arrives and wait till Darkbreak Cove is secured.|
 T Full Circle|QID|26219|M|54.5,72.8|Z|Abyssal Depths|N|To Captain Glovaal.|
+A Claim Korthun's End|QID|26105|PRE|26103|M|54.58,75.62|Z|Abyssal Depths|N|Kill a Hellscream Seadog to automatically be offered this quest.|
+C Claim Korthun's End|QID|26105|S|M|55.9,70.6;56.5,72.6;51.9,70.7;53,58;49.2,67.3|Z|Abyssal Depths|N|Kill Hellsong Seadogs.|
 A Bio-Fuel|QID|26103|PRE|26219|M|55.5,72.9|Z|Abyssal Depths|N|Engineer Hexascrub.|
 C Bio-Fuel|QID|26103|M|56.8,44.2;53.9,49.6;54.5,62.9;49.3,74.7;56.7,74.4|U|56821|Z|Abyssal Depths|N|Oilify 4 Seabrush Terrapins, Scourgut Remora and Spinescale Hammerheads after killing them.|
 T Bio-Fuel|QID|26103|M|55.5,72.9|Z|Abyssal Depths|N|To Engineer Hexascrub.|
 A Fuel-ology 101|QID|26106|PRE|26103|M|55.5,72.9|Z|Abyssal Depths|N|From Engineer Hexascrub.|
-A Claim Korthun's End|QID|26105|PRE|26103|M|19.51,71.71;54.58,75.62|Z|Abyssal Depths|N|Kill a Hellscream Seadog to automatically be offered this quest.|
-C Claim Korthun's End|QID|26105|S|M|55.9,70.6;56.5,72.6;51.9,70.7;53,58;49.2,67.3|Z|Abyssal Depths|N|Kill Hellsong Seadogs.|
 C Fuel-ology 101|QID|26106|M|55.5,72.9|Z|Abyssal Depths|N|Go to the table in the middle of the camp and click on it to begin mixing. The combination for the correct mixture is: 2x Remora Oil and 3x Hammerhead Oil.|
 T Fuel-ology 101|QID|26106|M|55.5,72.9|Z|Abyssal Depths|N|To Engineer Hexascrub.|
 A The Brothers Digsong|QID|26014|PRE|26106|M|54.5,72.8|Z|Abyssal Depths|N|From Captain Glovaal.|
