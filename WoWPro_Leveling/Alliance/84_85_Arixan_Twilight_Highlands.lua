@@ -571,7 +571,7 @@ C Four Heads are Better than None|QID|27500|M|37.93,71.35|
 T Four Heads are Better than None|QID|27500|M|43.43,57.42|N|To Cassius the White.|
 
 A Up to the Citadel|QID|27502|M|43.43,57.42|N|From Cassius the White.|
-C Up to the Citadel|QID|27502|M|37.33,66.09|
+C Up to the Citadel|QID|27502|M|38.9,64.1|
 T Up to the Citadel|QID|27502|M|37.33,66.08|N|To Cho'gall.|
 
 A Just You and Mathias|QID|27636|M|37.33,66.08|N|From Cho'gall.|
