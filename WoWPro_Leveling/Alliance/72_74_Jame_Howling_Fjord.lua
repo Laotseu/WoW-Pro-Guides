@@ -399,19 +399,19 @@ T Spawn of the Twisted Glade |QID|11316|M|61.5,22.8|N|To Lurielle.|
 T Seeds of the Blacksouled Keepers |QID|11319|M|61.5,22.8|N|To Lurielle.|
 
 A Keeper Witherleaf |QID|11428|M|61.5,22.8|N|From Lurielle.|
-C Keeper Witherleaf |QID|11428|N|Kill Keeper Witherleaf in the area.|M|53.82,17.48|
+C Keeper Witherleaf |QID|11428|T|Keeper Witherleaf|N|Kill Keeper Witherleaf in the area.|M|53.82,17.48|
 T Keeper Witherleaf |QID|11428|M|61.5,22.8|N|To Lurielle.|
 C Down to the Wire |QID|11269|N|Finish collecting Spotted Hippogryph Downs and Trapped Animals. |M|51.96,20.11|US|
 C Preying Upon the Weak |QID|11292|N|Finish collecting Trapped Animals. |M|51.96,20.11|US|
-K Binder Murdis |QID|11348|QO|Binder Murdis slain: 1/1|N|Kill Binder Murdis here. |M|71.85,24.56|
+K Binder Murdis |QID|11348|QO|Binder Murdis slain: 1/1|T|Binder Murdis|N|Kill Binder Murdis here. |M|71.85,24.56|
 C The Rune of Command |QID|11348|U|33796|N|Use the Rune of Command on a Stone Giant nearby. |M|71.96,23.16|
-C Demolishing Megalith |QID|11359|N|Mount up and find Megalith up here. Let Megalith hit you once, then sit back and let your Stone Giant get some threat. Help your pet kill Megalith in order to solo him. If you fail, try again in 5 minutes. |M|67.94,10.64|
+C Demolishing Megalith |QID|11359|T|Megalith|N|Mount up and find Megalith up here. Let Megalith hit you once, then sit back and let your Stone Giant get some threat. Help your pet kill Megalith in order to solo him. If you fail, try again in 5 minutes. |M|67.94,10.64|
 T Demolishing Megalith |QID|11359|N|To Researcher Aderan.|
 T The Rune of Command |QID|11348|M|62.3,17.2|N|To Prospector Belvar.|
 T Preying Upon the Weak |QID|11292|M|62.6,16.8|N|To Trapper Jethan.|
 T Down to the Wire |QID|11269|M|62.6,16.8|N|To Gil Grisert.|
 A We Call Him Steelfeather |QID|11418|M|62.6,16.8|N|From Gil Grisert.|
-C We Call Him Steelfeather |QID|11418|U|34026|N|Target Steelfeather (/tar Steel), then use the Feathered Charm and wait for the quest complete message.|
+C We Call Him Steelfeather |QID|11418|U|34026|T|Steelfeather|N|Target Steelfeather (/tar Steel), then use the Feathered Charm and wait for the quest complete message.|
 T We Call Him Steelfeather |QID|11418|M|62.6,16.8|N|To Gil Grisert.|
 r Sell junk, repair, re-stock food/drink. |QID|11322|M|61.01,17.07|
 H Westguard Inn |QID|11322|N|Hearth back to Westguard Keep.|
