@@ -157,7 +157,7 @@ T Mimicking Nature's Call |QID|11281| |N|Back at Camp Winterhoof.|M|49.3,12.0|
 T The Book of Runes |QID|11350|M|49.2,12.2|
 A Mastering the Runes |QID|11351|
 T March of the Giants |QID|11365|M|48.1,10.5|
-A The Lodestone |QID|11366|
+A The Lodestone |QID|11366|PRE|11365|
 A Skorn Must Fall! |QID|11256|M|48.1,10.8|
 
 R Skorn |QID|11258|N|Southwest.|M|44,26|
@@ -180,9 +180,9 @@ N Target the Southwest Tower |QID|11259|QO|Southwest Tower Targeted: 1/1|U|33344
 C Gruesome, But Necessary |QID|11257|U|33342|S|N|When you kill a Vrykul, use The Brave's Machete on the corpse.|US|
 
 T Gruesome, But Necessary |QID|11257|U|33340|N|Summon the Brave if he's died or disappeared, then turn it in.|
-T Burn Skorn, Burn! |QID|11258|
-T Towers of Certain Doom |QID|11259|
-A The Conqueror of Skorn! |QID|11261|
+T Burn Skorn, Burn! |QID|11258|U|33340|
+T Towers of Certain Doom |QID|11259|U|33340|
+A The Conqueror of Skorn! |QID|11261|U|33340|
 
 C The Fallen Sisters |QID|11314|U|33606|NOPOI|N|In the Vibrant Glade to the east. Beat a Chill Nymph down to below 30% HP, then use Lurielle's Pendant. Rinse and repeat.|M|51,26|
 C Wild Vines |QID|11315|
@@ -202,12 +202,12 @@ T Spawn of the Twisted Glade |QID|11316| |N|Head back to the Frozen Glade.|M|61.
 T Seeds of the Blacksouled Keepers |QID|11319|
 A Keeper Witherleaf |QID|11428|
 
-C Keeper Witherleaf |QID|11428| |N|He patrols around the Twisted Glade.|M|55,19|
+C Keeper Witherleaf |QID|11428| |T|Keeper Witherleaf|N|He patrols around the Twisted Glade.|M|55,19|
 
 T Mastering the Runes |QID|11351| |N|Back at Camp Winterhoof.|M|49.2,12.2|
 A The Rune of Command |QID|11352|
 T The Lodestone |QID|11366|M|48.1,10.5|
-A Demolishing Megalith |QID|11367|
+A Demolishing Megalith |QID|11367|PRE|11366|
 T The Conqueror of Skorn! |QID|11261|M|48.1,10.8|
 A Dealing With Gjalerbron |QID|11263|
 T Stop the Ascension! |QID|11260|
@@ -233,7 +233,7 @@ T Keeper Witherleaf |QID|11428|M|61.5,22.9|
 
 C Hasty Preparations |QID|11271||N|Pick up any feathers you still need on the way.|US|M|72,25|
 
-K Binder Murdis |QID|11352|QO|Binder Murdis slain: 1/1|M|72,25|
+K Binder Murdis |QID|11352|QO|Binder Murdis slain: 1/1|M|72,25|T|Binder Murdis|
 
 C The Rune of Command |QID|11352|U|33796|N|Use the Rune of Command on a Stone Giant, it's non-aggressive, should be just to the northwest.|M|71,23|
 C Demolishing Megalith |QID|11367|N|Use the Stone Giant as a tank.|
