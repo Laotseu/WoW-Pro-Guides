@@ -16,6 +16,17 @@ local SHOW_WORLDMAP_TOOLTIP = true
 
 local WoWPro = WoWPro
 
+-- For debugging
+local err_params = {}
+function err(msg, ...)
+	--if true then return end
+	msg = tostring(msg)
+	wipe(err_params)
+	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
+	_G.geterrorhandler()(msg:format(_G.unpack(err_params)) .. " - " .. _G.time())
+end
+
+
 -- WoWPro customized callback functions for TomTom --
 
 -- Function to customize the drop-down menu when right-clicking
@@ -295,9 +306,12 @@ function WoWPro:MapPoint(row)
 		i = WoWPro:NextStepNotSticky(WoWPro.ActiveStep)
 	end
 	local coords; if WoWPro.map then coords = WoWPro.map[i] else coords = nil end
+	--err("i = %s, coords = %s", i, coords)
 	local desc = WoWPro.step[i]
 	local zone
-	if row then zone = WoWPro.rows[row].zone else 
+	if row then
+		zone = WoWPro.rows[row].zone
+	else
 		zone = WoWPro.zone[i] or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(%-]+)"))
 	end 
 	autoarrival = WoWPro.waypcomplete[i]
@@ -373,6 +387,7 @@ function WoWPro:MapPoint(row)
 		-- Parsing and mapping coordinates --
 		
 		local numcoords = select("#", string.split(";", coords))
+		if numcoords and numcoords > 1 then err("numcoords = %s, coords = %s", numcoords, coords) end
 		for j=1,numcoords do
 			local waypoint = {}
 			local jcoord = select(numcoords-j+1, string.split(";", coords))
@@ -424,6 +439,7 @@ function WoWPro:MapPoint(row)
 	elseif TomTom then 
 		-- Parsing and mapping coordinates --
 		local numcoords = select("#", string.split(";", coords))
+		if numcoords and numcoords > 1 then err("numcoords = %s, coords = %s", numcoords, coords) end
 		for j=1,numcoords do
 			local jcoord = select(numcoords-j+1, string.split(";", coords))
 			local x = tonumber(jcoord:match("([^|]*),"))
