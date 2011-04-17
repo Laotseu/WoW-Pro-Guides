@@ -511,7 +511,8 @@ function WoWPro.Leveling:RowUpdate(offset)
 				row.cooldown:Show()
 				row.cooldown:SetCooldown(start, duration)
 			else row.cooldown:Hide() end
-			if not itemkb and row.itembutton:IsVisible() then
+--			if not itemkb and row.itembutton:IsVisible() then
+			if row.itembutton:IsVisible() then
 				local key1, key2 = GetBindingKey("CLICK WoWPro_FauxItemButton:LeftButton")
 				if key1 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key1, "CLICK WoWPro_itembutton"..i..":LeftButton")
@@ -539,7 +540,8 @@ function WoWPro.Leveling:RowUpdate(offset)
 			else
 				row.targetbutton:SetPoint("TOPRIGHT", row, "TOPLEFT", -10, -7)
 			end
-			if not targetkb and row.targetbutton:IsVisible() then
+--			if not targetkb and row.targetbutton:IsVisible() then
+			if row.targetbutton:IsVisible() then
 				local key1, key2 = GetBindingKey("CLICK WoWPro_FauxTargetButton:LeftButton")
 				if key1 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key1, "CLICK WoWPro_targetbutton"..i..":LeftButton")
