@@ -1,4 +1,14 @@
 -- URL: http://wow-pro.com/wiki/source_code_deepholm_alliance
+-- Date: 2011-04-19 17:46
+-- Who: Ludovicus Maior
+-- Log: [A Slight Problem] had a  two 'A' steps and no 'T' step. Corrected coordinates for "Kor the Immovable" and removed the report his missing location text. Rerouted [Don't. Stop. Moving.] to reflect Kor's change of domicile. A dozen coordinate tweaks.
+
+-- URL: http://wow-pro.com/node/3307/revisions/24233/view
+-- Date: 2011-04-17 18:10
+-- Who: Ludovicus Maior
+-- Log: Dumped [We have a Situation], corrected syntax error around [A Slight Problem] and [Rescue the Stonefather...and Flint].
+
+-- URL: http://wow-pro.com/node/3307/revisions/24172/view
 -- Date: 2011-03-12 18:41
 -- Who: Ludovicus Maior
 -- Log: Unique ID
@@ -196,8 +206,6 @@ T Shatter Them!|QID|26537|M|24.52,62.41|N|To Gravel Longslab.|
 A Troggzor the Earthinator|QID|26625|PRE|26537;26564;26591|M|24.52,62.41|N|From Gravel Longslab.|
 C Troggzor the Earthinator|QID|26625|M|22.51,56.74|N|Troggzor is located on a small rise. Kill him ant loot The Earthinator's Cudgel.|
 T Troggzor the Earthinator|QID|26625|M|24.52,62.40|N|To Gravel Longslab.|
-A We have a Situation|QID|26626|PRE|26625|M|24.52,62.40|N|Do the quest "We have a situation", if it still exists (no QID known).|
-T We have a Situation|QID|26626|M|24.72,62.17|To Clay Mudaxle.|
 A Rush Delivery|QID|27126|M|24.72,62.17|N|From Clay Mudaxle.|
 T Rush Delivery|QID|27126|M|20.77,61.56|N|To Peak Grindstone.|
 A Close Escort|QID|26632|PRE|27126|M|20.69,61.59|N|From Peak Grindstone.|
@@ -223,8 +231,9 @@ C Sprout No More|QID|26791|M|27.6,35.6|US|N|Finish destroying Giant Shrooms.|
 T Sprout No More|QID|26791|M|27.6,44.9|To Slate Quicksand.|
 T Fungal Monstrosities|QID|26792|M|27.6,44.9|N|To Slate Quicksand.|
 A A Slight Problem|QID|26835|PRE|26791;26792|M|27.6,44.9|N|From Slate Quickand.|
-A A Slight Problem|QID|26835|PRE|26791;26792|M|27.6,44.9|N|From Slate Quickand.|A Rescue the Stonefather...and Flint|QID|26836|PRE|26835|M|22.6,52.1|N|From Pyrium Lodestone.|
-C Rescue the Stonefather...and Flint|QID|26836|M|24.00,31.00|N|Rescue Stonefather Oremantle.|
+T A Slight Problem|QID|26835|PRE|26791;26792|M|22.6,52.1|N|To Pyrium Lodestone.|
+A Rescue the Stonefather...and Flint|QID|26836|PRE|26835|M|22.6,52.1|N|From Pyrium Lodestone.|
+C Rescue the Stonefather...and Flint|QID|26836|M|24.64,32.41;24.57,30.94|N|Fly to this bridge and then kill Bouldergut.|
 T Rescue the Stonefather...and Flint|QID|26836|M|22.6,52.1|N|To Pyrium Lodestone.|
 A The Hero returns|QID|27937|PRE|26836|M|22.6,52.1|N|From Pyrium Lodestone.|
 T The Hero returns|QID|27937|M|28,68.6|N|To Stonefather Oremantle.|
@@ -251,7 +260,7 @@ T Rocky Relations|QID|26328|M|56.50,41.20|N|To Diamant the Patient.|
 A Hatred Runs Deep|QID|26376|PRE|26328|M|56.50,41.20|N|From Diamant the Patient.|
 A Unsolid Ground|QID|26377|PRE|26328|M|56.50,41.20|N|From Diamant the Patient.|
 A Loose Stone|QID|26375|PRE|26328|M|56.5,41.1|N|From Quartz Stonetender.|
-C Unsolid Ground|QID|26377|U|58783|M|58.80,41.20|S|N|Collect 6 Jade Crystal Clusters, Go to an open area of the camp. Use the 6 Jade Crystal Clusters, to turn them into a Jade Crystal Composite. Then use the Jade Crystal Composite to summon an Aggitated Tunneler. Mount up as soon as you get the quest complete message. You donít want to be nearby when the rockworm emerges.|
+C Unsolid Ground|QID|26377|U|58783|M|58.80,41.20|S|N|Collect 6 Jade Crystal Clusters, Go to an open area of the camp. Use the 6 Jade Crystal Clusters, to turn them into a Jade Crystal Composite. Then use the Jade Crystal Composite to summon an Aggitated Tunneler. Mount up as soon as you get the quest complete message. You don‚Äôt want to be nearby when the rockworm emerges.|
 C Loose Stone|QID|26375|U|58254|M|59.00,42.00|S|N|Use Delicate Chain Smasher to free Quartz Rocklings|
 C Hatred Runs Deep|QID|26376|QO|Lorthuna's Gate Cultists slain: 12/12|M|59.5,39.9|N|Kill Twilight Duskwardens.|
 C Unsolid Ground|QID|26377|U|58783|M|58.80,41.20|US|
@@ -267,47 +276,47 @@ A Depth of the Depths|QID|26869|PRE|26426|N|Automatic from Diamond the Patient.|
 C Depth of the Depths|QID|26869|N|Follow the main path until you reach a fork.Wait for the Colossal Gyreworm to go by then start running down the right fork. Follow this around until you reach a small branch to you right. Duck into this and wait for the elite to path by again, then continue up the tunnel, following the elite. Take the next right. Hug the wall to your right until you enter a short tunnel. Follow this to another chamber. Keep hugging the right wall and enter the first tunnel you come to. This will lead to the chamber with the stone you are looking for.|
 T Depth of the Depths|QID|26869|M|66.4,20.6|N|Click on the stone.|
 A A Rock Amongst Many|QID|26871|PRE|26869|M|66.4,20.6|N|From the Gigantic Painite Cluster.|
-T A Rock Amongst Many|QID|26871|M|56.5,42.5|N|Donít go back the way you came. Take the exit directly in front of you, into another tunnel. Keep the wall on your right side as you follow this tunnel. At the end of it, you will drop down into the large central chamber. To your left is the circular tunnel that the Colossal Gyreworm paths around. Wait for him to go by, then follow him down the right fork. There will be some stones blocking the way, but they can be hopped over. Take the first right you can, and follow this tunnel all the way to the exit.|
+T A Rock Amongst Many|QID|26871|M|56.5,42.5|N|Don‚Äôt go back the way you came. Take the exit directly in front of you, into another tunnel. Keep the wall on your right side as you follow this tunnel. At the end of it, you will drop down into the large central chamber. To your left is the circular tunnel that the Colossal Gyreworm paths around. Wait for him to go by, then follow him down the right fork. There will be some stones blocking the way, but they can be hopped over. Take the first right you can, and follow this tunnel all the way to the exit.|
 A Entrenched|QID|26436|PRE|26871|M|56.5,42.5|N|From Diamant the Patient.|
-T Entrenched|QID|26436|M|34.29,34.31|N|To Kor the Immovable. He's way to the West.|
-A Intervention|QID|26438|PRE|26436|M|34,33|N|If this coordinate is wrong, please let us know at WoW-Pro.com. From Kor the Immovable.|
-A Making Things Crystal Clear|QID|26437|PRE|26436|M|34,33|N|If this coordinate is wrong, please let us know at WoW-Pro.com. From Kor the Immovable.|
-A Putting the Pieces Together|QID|26439|PRE|26436|M|34.5,33.4|N|From Berracite.|
+T Entrenched|QID|26436|M|34.12,34.19|N|To Kor the Immovable. He's way to the West.|
+A Intervention|QID|26438|PRE|26436|M|34.12,34.19|N|From Kor the Immovable.|
+A Making Things Crystal Clear|QID|26437|PRE|26436|M|34.12,34.19|N|From Kor the Immovable.|
+A Putting the Pieces Together|QID|26439|PRE|26436|M|34.5,33.4|N|From Berracite, who wanders.|
 C Making Things Crystal Clear|QID|26437|M|33.40,43.80|S|N|Collect Chalky Crystal Formations, kill Jaspertip Rockflayers and click on remains of Elementals to reform them.|
 C Intervention|QID|26438|M|31.3,47.8|N|Kill 12 Rockflayers.|
-C Putting the Pieces Together|QID|26439|M|33.47,43.80|N|Click on Dormant Stonebound Elementas to reform them.|
+C Putting the Pieces Together|QID|26439|M|33.47,43.80|N|Click on Dormant/Dead Stonebound Elementals to reform them.|
 C Making Things Crystal Clear|QID|26437|M|33.40,43.80|US|N|Finish collecting Chalky Crystal Formations.|
-T Putting the Pieces Together|QID|26439|M|34.2,35|N|To Kirin'Var Ghost.|
-T Making Things Crystal Clear|QID|26437|M|34,33|N|To Kor the Immovable.|
-T Intervention|QID|26438|M|34,33|N|To Kor the Immovable.|
-A Pebble|QID|28869|PRE|26437;26438;26439|RANK|1|M|34,33|N|From Kor the Immovable.|
+T Putting the Pieces Together|QID|26439|M|34.2,35|N|To Berracite, who wanders.|
+T Making Things Crystal Clear|QID|26437|M|34.12,34.19|N|To Kor the Immovable.|
+T Intervention|QID|26438|M|34.12,34.19|N|To Kor the Immovable.|
+A Pebble|QID|28869|PRE|26437;26438;26439|RANK|1|M|34.12,34.19|N|From Kor the Immovable.|
 T Pebble|QID|28869|N|To Pebble.|
 A Clingy|QID|26440|PRE|28869|N|From Pebble.|
-C Clingy|QID|26440|M|30.00,46.00|N|Pebble will begin ìharvestingî the crystal. Defend him.|
+C Clingy|QID|26440|M|30.00,46.00|N|Pebble will begin ‚Äúharvesting‚Äù the crystal. Defend him.|
 T Clingy|QID|26440|N|To Pebble.|
 A So Big, So Round...|QID|26441|PRE|26440|N|From Pebble.|
-T So Big, So Round...|QID|26441|M|34,33|N|To Kor the Immovable.|
-A Petrified Delicacies|QID|26507|PRE|26441|RANK|2|M|34,33|N|From Kor the Immovable.|
-A Rock Bottom|QID|26575|PRE|26441|M|34,33|N|From Kor the Immovable.|
+T So Big, So Round...|QID|26441|M|34.12,34.19|N|To Kor the Immovable.|
+A Petrified Delicacies|QID|26507|PRE|26441|RANK|2|M|34.12,34.19|N|From Kor the Immovable.|
+A Rock Bottom|QID|26575|PRE|26441|M|34.12,34.19|N|From Kor the Immovable.|
 C Petrified Delicacies|QID|26507|RANK|2|M|39.1,28.8|N|Head to the shelf to the northeast. Loot any Petrified Bats off the ground. The basilisks in the area can also drop them.|
 T Petrified Delicacies|QID|26507|RANK|2|N|To Pebble, who should still be following you around.|
-C Rock Bottom|QID|26575|M|47.5,27.00|M|34,33|N|Try to dodge the boulders he chucks. If you get the message that Gorgoniteís eyes begin to glow, you must quickly break line-of-sight with him or you will be stunned for several seconds.|
-T Rock Bottom|QID|26575|M|34.33|N|Back to Kor the Immovable.|
-A Steady Hand|QID|26576|PRE|26575|RANK|2|N|From Kor.|
-A Rocky Upheaval|QID|26577|PRE|26575|From Kor.|
+C Rock Bottom|QID|26575|M|47.5,27.00|M|34,33|N|Try to dodge the boulders he chucks. If you get the message that Gorgonite‚Äôs eyes begin to glow, you must quickly break line-of-sight with him or you will be stunned for several seconds.|
+T Rock Bottom|QID|26575|M|34.12,34.19|N|Back to Kor the Immovable.|
+A Steady Hand|QID|26576|PRE|26575|RANK|2|M|34.12,34.19|N|From Kor.|
+A Rocky Upheaval|QID|26577|PRE|26575||M|34.12,34.19From Kor.|
 T Steady Hand|QID|26576|RANK|2|N|To Terrath the Steady.|
-A Don't. Stop. Moving.|QID|26656|PRE|26576|RANK|2|M|33,24.1|N|From Terrath the Steady.|
-C Don't. Stop. Moving.|QID|26656|RANK|2|M|42.50,13.00;50.60,13.00|N|You need to do this on a ground mount. Speak to Terrath and tell him you are ready. A group of Opalescent Guardians will spawn. This group will follow you and you need to get 5 across the eastern section of the Pale Roost, past all the stone dragons. The best way I have found is to run northwest to about (42.50,13.00), then head directly east to the stone circle at (50.60, 13.00)|
-T Don't. Stop. Moving.|QID|26656|RANK|2|M|40.0,19.0|To Terrath the Steady.|
-A Hard Falls|QID|26657|PRE|26656|RANK|2|M|33,24.1|N|From Terrath the Steady.|
-A Fragile Values|QID|26658|PRE|26656|RANK|2|M|33,24.1|N|From Terrath the Steady.|
+A Don't. Stop. Moving.|QID|26656|PRE|26576|RANK|2|M|39.94,19.41|N|From Terrath the Steady.|
+C Don't. Stop. Moving.|QID|26656|RANK|2|M|39.94,19.41;43.03,16.33;46.07,13.60;50.56,13.79|N|You need to do this on a ground mount. Speak to Terrath and tell him you are ready. A group of Opalescent Guardians will spawn. This group will follow you and you need to get 5 across the eastern section of the Pale Roost, past all the stone dragons. The best way I have found is to run directly east to the stone circle at (50.60, 13.00)|
+T Don't. Stop. Moving.|QID|26656|RANK|2|M|39.94,19.41|To Terrath the Steady.|
+A Hard Falls|QID|26657|PRE|26656|RANK|2|M|39.94,19.41|N|From Terrath the Steady.|
+A Fragile Values|QID|26658|PRE|26656|RANK|2|M|39.94,19.41|N|From Terrath the Steady.|
 C Hard Falls|QID|26657|RANK|2|M|33.6,21.4|N|Go west, out into the Pale Roost. You will see Stone Dragons falling to the ground. Attack them before they manage to take off again.|
-C Fragile Values|QID|26658|RANK|2|U|60266|M|37.3,24.0|N|Search the area until you find two stone troggs with a basilisk in a net. Kill the two troggs and loot them to get a Stonework Mallet.|
-T Hard Falls|QID|26657|RANK|2|M|39.9,19.2|N|To Terrath the Steady.|
-T Fragile Values|QID|26658|RANK|2|M|39.9,19.2|N|To Terrath the Steady.|
-A Resonating Blow|QID|26659|PRE|26657;26658|RANK|2|M|33.1,24|N|From Terrath the Steady.|
+C Fragile Values|QID|26658|RANK|2|U|60266|M|35.8,26.4|N|Search the area until you find two stone troggs with a basilisk in a net. Kill the two troggs and loot them to get a Stonework Mallet.|
+T Hard Falls|QID|26657|RANK|2|M|39.94,19.41|N|To Terrath the Steady.|
+T Fragile Values|QID|26658|RANK|2|M|39.94,19.41|N|To Terrath the Steady.|
+A Resonating Blow|QID|26659|PRE|26657;26658|RANK|2|M|39.94,19.41|N|From Terrath the Steady.|
 C Resonating Blow|QID|26659|RANK|2|U|60266|M|32.60,24.30|N| Terrath will come and toss you up onto some floating rocks. Jump from rock to rock until you reach a cluster of rocks all on the same level. You will attack Aeosera from these rocks. When she targets the platform you are standing on, jump to another and continue to attack. Continue attacking and jumping from rock to rock until she surrenders.|
-T Resonating Blow|QID|26659|RANK|2|M|33,24.1|N|To Terrath the Steady.|
+T Resonating Blow|QID|26659|RANK|2|M|39.94,19.41|N|To Terrath the Steady.|
 T Rocky Upheaval|QID|26577|M|72.30,54.10|N|To Gorsik the Tumultuous.|
 A Doomshrooms|QID|26578|PRE|26577|M|72.2,53.9|N|From Gorsik the Tumultuous.|
 A Gone Soft|QID|26579|PRE|26577|M|72.2,53.9|N|From Gorsik the Tumultuous.|
@@ -329,7 +338,7 @@ A Wrath of the Fungalmancer|QID|26583|PRE|26578;26579;26582|M|68.50,26.30|RANK|2
 C Shaken and Stirred|QID|26584|N|Right behind Ruberick, you may have notice there are troggs raining from the sky. Kill 8 of these Verlock Pillartumblers.|
 N Wrath of the Fungalmancer|QID|26583|RANK|2|N|Go in the direction Ruberick is facing, until you enter Fungal Deep. Follow the cave down until you run into Earthmender Norsala. If you reach a point where the path splits off in different directions, it means someone else is doing the event. Wait a couple minutes and she should re-appear.|
 N Wrath of the Fungalmancer|QID|26583|RANK|2|N|Speak to Norsala and let her know you are ready to start the event.Follow him, attacking when you can.|
-C Wrath of the Fungalmancer|QID|26583|RANK|2|N|Heíll lead you on a merry chase through his cave, stopping a couple times. Be sure to watch out for the mushrooms he throws each time he stops. They will start small and begin growing, eventually exploding for a moderate amount of damage that hits everyone within 5 yards or so. You can stop this by attacking the mushrooms.|
+C Wrath of the Fungalmancer|QID|26583|RANK|2|N|He‚Äôll lead you on a merry chase through his cave, stopping a couple times. Be sure to watch out for the mushrooms he throws each time he stops. They will start small and begin growing, eventually exploding for a moderate amount of damage that hits everyone within 5 yards or so. You can stop this by attacking the mushrooms.|
 T Wrath of the Fungalmancer|QID|26583|RANK|2|M|68.50,26.30|N|Once Glop makes his last stand and is finished off, take the path to your left, then turn right to head out of the cave.|
 C Corruption Destruction|QID|26585|M|73.00,27.00|N|Loot Verlok Miracle-Grow, which will be on the ground and in crates all over this area.|
 T Corruption Destruction|QID|26585|M|72.2,53.9|N|Back to Gorsik.|

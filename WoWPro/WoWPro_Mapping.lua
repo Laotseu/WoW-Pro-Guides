@@ -246,15 +246,6 @@ local zidmap = {
 function WoWPro:findBlizzCoords(questId)
 	local POIFrame
 
-		-- THIS CVAR MUST BE CHANGED BACK!
-		local cvar = GetCVarBool("questPOI")
-		SetCVar("questPOI", 1)
-
-		-- This function relies on the above CVar being set, and updates the icon
-		-- position information so it can be queries via the API
-		QuestMapUpdateAllQuests()
-		QuestPOIUpdateIcons()
-		WorldMapFrame_UpdateQuests()
     	-- Try to find the correct quest frame
     	for i = 1, MAX_NUM_QUESTS do
         	local questFrame = _G["WorldMapQuestFrame"..i];
@@ -287,8 +278,22 @@ function WoWPro:findBlizzCoords(questId)
         	return nil, nil
     	end
 
-		SetCVar("questPOI", cvar and 1 or 0)
     	return cx * 100, cy * 100
+end
+
+local FinalCoord
+function WoWPro:MapPointDelta()
+    local x, y = GetPlayerMapPosition("player");
+    if FinalCoord then
+        local X,Y
+        X=FinalCoord[1]
+        Y=FinalCoord[2]
+        x = x * 100.0
+        y = y * 100.0
+        return { sqrt((X-x)*(X-x)+(Y-y)*(Y-y)), X , Y , x , y }
+    else
+        return nil
+    end
 end
 
 local zonei, zonec, zonenames
@@ -298,6 +303,7 @@ function WoWPro:MapPoint(row)
 
 	-- Removing old map point --
 	WoWPro:RemoveMapPoint()
+	FinalCoord = nil
 	
 	-- Loading Variables for this step --
 	local i
@@ -321,9 +327,9 @@ function WoWPro:MapPoint(row)
 	
 	-- Loading Blizzard Coordinates for this objective, if coordinates aren't provided --
 	if (WoWPro.action[i]=="T" or WoWPro.action[i]=="C") and WoWPro.QID and WoWPro.QID[i] and not coords then
-		--QuestMapUpdateAllQuests()
-		--QuestPOIUpdateIcons()
-		--WorldMapFrame_UpdateQuests()
+		QuestMapUpdateAllQuests()
+		QuestPOIUpdateIcons()
+		WorldMapFrame_UpdateQuests()
 		local x, y = WoWPro:findBlizzCoords(WoWPro.QID[i])
 		if x and y then coords = tostring(x)..","..tostring(y) end
 	end
@@ -410,6 +416,7 @@ function WoWPro:MapPoint(row)
 				waypoint.j = numcoords-j+1
 
 				table.insert(cache, waypoint)
+				FinalCoord = { x , y }
 			end
 		end
 		
@@ -448,6 +455,7 @@ function WoWPro:MapPoint(row)
 			if not x or x > 100 then return end
 			if not y or y > 100 then return end
 			table.insert(cache, TomTom:AddZWaypoint(zc, zi, x, y, desc, false))
+			FinalCoord = { x , y }
 		end
 	
 	end
