@@ -18,7 +18,7 @@ local WoWPro = WoWPro
 
 -- For debugging
 local err_params = {}
-function err(msg, ...)
+local function err(msg, ...)
 	--if true then return end
 	msg = tostring(msg)
 	wipe(err_params)
@@ -399,7 +399,8 @@ function WoWPro:MapPoint(row)
 				local uid
 				
 				uid = TomTom:AddZWaypoint(zc, zi, x, y, desc, false, nil, nil, WoWProMapping_callbacks_tomtom)
-				
+				if numcoords and numcoords > 1 then err("Added uid = %s, x = %s, y = %s, zc = %s, zi = %s, desc = %s",uid,x,y,zc,zi,desc) end
+
 				waypoint.uid = uid
 				waypoint.index = i
 				waypoint.zone = zone

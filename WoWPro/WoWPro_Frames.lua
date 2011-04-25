@@ -843,6 +843,7 @@ end
 WoWPro:CreateMainFrame()
 
 -- Macro stuff
+do -- closure
 function WoWPro:SetMacro(macroType, macroBody)
 	assert(macroType == "WPI" or macroType == "WPT","Invalide macro type: " .. (macroType or 'nil'))
 
@@ -864,3 +865,5 @@ function WoWPro:SetMacro(macroType, macroBody)
 
 	_G.EditMacro(macroIndex, macroType, macroIcon, macroBody, 0)
 end
+
+end -- closure
