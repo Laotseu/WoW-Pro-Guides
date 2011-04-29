@@ -1,4 +1,14 @@
 -- URL: http://wow-pro.com/wiki/source_code_elwynn_forest
+-- Date: 2011-04-29 14:05
+-- Who: Ludovicus Maior
+-- Log: Line 203 for step T has unknown tag [T Blackrock Invasion]: [T Extinguishing Hope|QID|26391|R|Human|M|48.15,42.52|T Blackrock Invasion|QID|26389|R|Human|M|48.20,42.06|]
+
+-- URL: http://wow-pro.com/node/3197/revisions/24272/view
+-- Date: 2011-04-26 22:42
+-- Who: Ludovicus Maior
+-- Log: Fixed syntax errors.
+
+-- URL: http://wow-pro.com/node/3197/revisions/24201/view
 -- Date: 2011-04-02 19:01
 -- Who: Ludovicus Maior
 -- Log: Syntax error in quest [Fear No Evil] for Human Warlocks.
@@ -101,7 +111,7 @@ A Mastering The Arcane|QID|26916|C|Mage|R|Human|M|49.66,39.40|
 A The Deepest Cut|QID|26915|C|Rogue|R|Human|M|50.31,39.92|
 A Healing The Wounded|QID|26919|C|Priest|R|Human|M|49.81,39.49|
 A Immolation|QID|26914|C|Warlock|R|Human|M|49.87,42.65|
-C Immolation|N|Learn Immolate then use it on the training dummies. |QID|26914|C|Warlock|R|Human|48.63,44.37|
+C Immolation|N|Learn Immolate then use it on the training dummies. |QID|26914|C|Warlock|R|Human|M|48.63,44.37|
 C The Deepest Cut|N|Learn Eviscerate and use it on the training dummies. |QID|26915|C|Rogue|R|Human|M|48.63,44.37|
 C Healing The Wounded|N|Learn Flash Heal then use it on Wounded Trainees inside the abbey.|QID|26919|C|Priest|R|Human|
 C Charging Into Battle|N|Learn Charge from the warrior trainer then use it on the training dummies.|QID|26913|C|Warrior|R|Human|M|48.63,44.37|
@@ -159,8 +169,9 @@ C Fear No Evil|N|Revive 4 Injured Soldiers. | |QID|28811|C|Rogue|R|Human|M|48.40
 C They Sent Assassins|N|kill goblin assassins while reviving injured soldiers. | |QID|28793|C|Paladin|R|Human|M|48.40,35.79|
 C Fear No Evil|N|Revive 4 Injured Soldiers. | |QID|28809|C|Paladin|R|Human|M|48.40,35.79|
 C They Sent Assassins|N|kill goblin assassins while reviving injured soldiers. | |QID|28796|C|Warlock|R|Human|M|48.40,35.79|
-C Fear No Evil|N|Revive 4 Injured Soldiers. | |QID|28812|C|Warlock|R|Human|M|48.40,35.79|T Fear No Evil|QID|28806|C|Hunter|R|Human|M|48.49,38.16|
+C Fear No Evil|N|Revive 4 Injured Soldiers. | |QID|28812|C|Warlock|R|Human|M|48.40,35.79|
 
+T Fear No Evil|QID|28806|C|Hunter|R|Human|M|48.49,38.16|
 T They Sent Assassins|QID|28791|C|Hunter|R|Human|M|48.81,38.38|
 T Fear No Evil|QID|28808|C|Mage|R|Human|M|48.49,38.16|
 T They Sent Assassins|QID|28792|C|Mage|R|Human|M|48.81,38.38|
@@ -194,7 +205,8 @@ A Blackrock Invasion|QID|26389|R|Human|M|48.20,42.06|
 A Extinguishing Hope|QID|26391|R|Human|M|48.15,42.52|
 C Extinguishing Hope|N|Extinguish the fires and kill orcs around here.|U|58362||QID|26391|R|Human|M|54.02,48.52|
 C Blackrock Invasion|N|Kill Orcs until you have 8 Blackrock Weapons.|QID|26389|R|Human|M|54.02,48.52|
-T Extinguishing Hope|QID|26391|R|Human|M|48.15,42.52|T Blackrock Invasion|QID|26389|R|Human|M|48.20,42.06|
+T Extinguishing Hope|QID|26391|R|Human|M|48.15,42.52|
+T Blackrock Invasion|QID|26389|R|Human|M|48.20,42.06|
 A Ending The Invasion|QID|26390|R|Human|M|48.20,42.06|
 C Ending The Invasion|N|Kill Kurtok The Slayer.|QID|26390|R|Human|M|56.90,40.81|
 H Northshire Valley|QID|26390|R|Human|U|6948|
