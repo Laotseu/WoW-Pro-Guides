@@ -4,7 +4,7 @@
 ## Author: Jiyambi
 ## SavedVariables: WoWProData
 ## SavedVariablesPerCharacter: WoWProCharDB
-## Version: 2.1.11
+## Version: 2.1.12
 
 ## X-Category: Compilations
 
@@ -28,6 +28,7 @@ WoWPro_CurrentGuide.lua
 WoWPro_GuideList.lua
 WoWPro_Frames.lua
 WoWPro_Config.lua
+WoWPro_Zones.lua
 WoWPro_Mapping.lua
 WoWPro_Broker.lua
 WoWPro_NilGuide.lua
