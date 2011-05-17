@@ -23,24 +23,20 @@
   <Script file="35_40_Jiyambi_Dustwallow_Marsh.lua"/>
   <Script file="35_40_Jiyambi_Feralas.lua"/>
   <Script file="35_40_Jiyambi_Western_Plaguelands.lua"/>
-  <Script file="40_45_Jiyambi_Eastern_Plaguelands.lua"/>
   <Script file="40_45_Jiyambi_Thousand_Needles.lua"/>
   <Script file="45_48_Liavan_Badlands.lua"/>
   <Script file="45_50_Jiyambi_Felwood.lua"/>
   <Script file="45_50_Jiyambi_Tanaris.lua"/>
-  <Script file="48_50_Liavan_Searing_Gorge.lua"/>
   <Script file="50_52_Liavan_Burning_Steppes.lua"/>
-  <Script file="50_55_Jiyambi_UnGoro.lua"/>
-  <Script file="50_55_Jiyambi_Winterspring.lua"/>
   <Script file="52_55_Liavan_Swamp_of_Sorrows.lua"/>
   <Script file="55_60_Jiyambi_Blasted_Lands.lua"/>
-  <Script file="55_60_Jiyambi_Silithus.lua"/>
   <Script file="60_63_Jame_Hellfire_Peninsula.lua"/>
   <Script file="63_65_Jame_Zangarmarsh.lua"/>
   <Script file="65a_67a_Jame_Terokkar_Forest.lua"/>
   <Script file="65s_67s_Jame_Terokkar_Forest.lua"/>
   <Script file="67_69_Jame_Nagrand.lua"/>
   <Script file="69_70_Jame_Blades_Edge.lua"/>
+  <Script file="70_70_Crackerhead22_Shadowmoon.lua"/>
   <Script file="70_71_Jame_Howling_Fjord.lua"/>
   <Script file="71_73_Jame_Borean_Tundra.lua"/>
   <Script file="73_75_Jame_Dragonblight.lua"/>
@@ -55,3 +51,4 @@
   <Script file="83_84_Arixan_Uldum.lua"/>
   <Script file="84_85_Liavan_Twilight_Highlands.lua"/>
 </Ui>
+
