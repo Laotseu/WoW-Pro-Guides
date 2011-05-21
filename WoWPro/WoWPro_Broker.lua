@@ -1,9 +1,33 @@
+-------------------------------------------------------------------------------
+-- Localized Lua globals
+-------------------------------------------------------------------------------
+local _G = getfenv(0)
+
+local WoWPro = _G.WoWPro
+--local WoWProDB = _G.WoWProDB
+--local WoWProCharDB = _G.WoWProCharDB
+
+local math = _G.math
+local tonumber = _G.tonumber
+local string = _G.string
+local type = _G.type
+
+local table = _G.table
+local ipairs = _G.ipairs
+local pairs = _G.pairs
+local wipe = _G.wipe
+
 -----------------------------
 --      WoWPro_Broker      --
 -----------------------------
 
 local L = WoWPro_Locale
 local OldQIDs, CurrentQIDs, NewQIDs, MissingQIDs
+
+-- Check for empty table
+local function IsTableEmpty(table)
+	return not _G.next(table)
+end
 
 -- Guide Load --
 function WoWPro:LoadGuide(guideID)
@@ -66,7 +90,7 @@ function WoWPro:UpdateGuide(offset)
 	local GID = WoWProDB.char.currentguide
 	
 	-- If the user is in combat, or if a GID is not present, or if the guide cannot be found, end --
-	if InCombatLockdown() 
+	if _G.InCombatLockdown()
 		or not GID 
 		or not WoWPro.Guides[GID]
 		then return 
@@ -201,9 +225,9 @@ function WoWPro:NextStep(k,i)
 			local repID,repmax = string.split("-",temprep)
 			if repmax== nil then repmax = repID end
 			-- Canonicalize the case
-			rep = string.lower(rep)
-			repID = string.lower(repID)
-			repmax = string.lower(repmax) 
+			rep = rep:lower()
+			repID = repID:lower()
+			repmax = repmax:lower()
 			replvl = tonumber(replvl) or 0
 
 			if repID == 'hated' then repID = 1 end
@@ -228,11 +252,11 @@ function WoWPro:NextStep(k,i)
 			skip = true --reputation steps skipped by default
 			
 			for factionIndex = 1, GetNumFactions() do
-  				name, description, standingId, bottomValue, topValue, earnedValue, atWarWith,
+  				local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith,
     				canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
-    			name=string.lower(name)
+    			name=name:lower()
     			-- The guide will have "Scryers" and the faction name is "The Scryers"
-				if string.find(name,rep) then
+				if name:find(rep) then
 					if (repID <= standingId) and (repmax >= standingId) and (replvl == 0) then
 						skip = false
 					end
@@ -316,7 +340,7 @@ function WoWPro.CompleteStep(step)
 	    if WoWPro.QID[step] then
 	        qid = WoWPro.QID[step]
 	    end
-	    local line = string.format("Action=%s|Step=%s|M0=%.2f,%.2f|M1=%.2f,%.2f|Error=%.2f|QID=%s|Vers=%s|Guide=%s",WoWPro.action[step],WoWPro.step[step],Delta[2],Delta[3],Delta[4],Delta[5],Delta[1],qid,WoWPro.Version,GID)
+	    local line = ("Action=%s|Step=%s|M0=%.2f,%.2f|M1=%.2f,%.2f|Error=%.2f|QID=%s|Vers=%s|Guide=%s"):format(WoWPro.action[step],WoWPro.step[step],Delta[2],Delta[3],Delta[4],Delta[5],Delta[1],qid,WoWPro.Version,GID)
 	    table.insert(WoWProDB.global.Deltas, line)
 	    WoWPro:dbp(line)
 	else
@@ -332,7 +356,7 @@ function WoWPro:PopulateQuestLog()
 	WoWPro:dbp("Populating quest log...")
 	
 	WoWPro.oldQuests = WoWPro.QuestLog or {}
-	WoWPro.newQuest, WoWPro.missingQuest = false, false
+	WoWPro.newQuest, WoWPro.missingQuest = false, nil
 	
 	-- Generating the Quest Log table --
 	WoWPro.QuestLog = {} -- Reinitiallizing the Quest Log table
@@ -354,7 +378,7 @@ function WoWPro:PopulateQuestLog()
 			local link, icon, charges = GetQuestLogSpecialItemInfo(i)
 			local use
 			if link then
-				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
+				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = link:find("|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
 				use = Id
 			end
 			local coords
@@ -362,23 +386,26 @@ function WoWPro:PopulateQuestLog()
 			QuestPOIUpdateIcons()
 			WorldMapFrame_UpdateQuests()
 			local x, y = WoWPro:findBlizzCoords(questID)
-			if x and y then coords = string.format("%.2f",x)..","..string.format("%.2f",y) end
-			WoWPro.QuestLog[questID] = {
-				title = questTitle,
-				level = level,
-				tag = questTag,
-				group = suggestedGroup,
-				complete = isComplete,
-				daily = isDaily,
-				leaderBoard = leaderBoard,
-				header = currentHeader,
-				use = use,
-				coords = coords,
-				index = i
-			}
+			if x and y then coords = ("%.2f"):format(x)..","..("%.2f"):format(y) end
+
+			WoWPro.QuestLog[questID] = WoWPro.QuestLog[questID] or {}
+			local quest_log_item = WoWPro.QuestLog[questID]
+			wipe(quest_log_item)
+			quest_log_item.title = questTitle
+			quest_log_item.level = level
+			quest_log_item.tag = questTag
+			quest_log_item.group = suggestedGroup
+			quest_log_item.complete = isComplete
+			quest_log_item.daily = isDaily
+			quest_log_item.leaderBoard = leaderBoard
+			quest_log_item.header = currentHeader
+			quest_log_item.use = use
+			quest_log_item.coords = coords
+			quest_log_item.index = i
 		end
 	end
-	if WoWPro.oldQuests == {} then return end
+--	if WoWPro.oldQuests == {} then return end
+	if IsTableEmpty(WoWPro.oldQuests) then return end
 
 	-- Generating table WoWPro.newQuest --
 	for QID, questInfo in pairs(WoWPro.QuestLog) do

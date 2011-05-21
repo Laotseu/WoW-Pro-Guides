@@ -1,8 +1,34 @@
+-------------------------------------------------------------------------------
+-- Localized Lua globals
+-------------------------------------------------------------------------------
+local _G = getfenv(0)
+
+local WoWPro = _G.WoWPro
+--local WoWProDB = _G.WoWProDB
+--local WoWProCharDB = _G.WoWProCharDB
+
+local _
+local assert = _G.assert
+local floor = _G.floor
+local math = _G.math
+local string = _G.string
+local strreplace = _G.strreplace
+local strsplit = _G.strsplit
+local strtrim = _G.strtrim
+local strupper = _G.strupper
+local tonumber = _G.tonumber
+local tostring = _G.tostring
+local type = _G.type
+
+local table = _G.table
+local ipairs = _G.ipairs
+local pairs = _G.pairs
+local select = _G.select
+local wipe = _G.wipe
+
 --------------------------------------
 --      WoWPro_Leveling_Parser      --
 --------------------------------------
-
-local WoWPro = WoWPro
 
 local L = WoWPro_Locale
 WoWPro.Leveling.actiontypes = {
@@ -71,7 +97,8 @@ function WoWPro.Leveling:NextStep(k, skip)
 	end
 	
 	-- Skipping quests with prerequisites if their prerequisite was skipped --
-	if WoWPro.prereq[k] 
+	if WoWPro.prereq[k]
+	and not WoWProCharDB.completedQIDs[k]
 	and not WoWProCharDB.Guide[GID].skipped[k] 
 	and not WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then 
 		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
@@ -563,7 +590,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 		-- Checking for loot items in bags --
 		local lootqtyi
 		if lootcheck and ( lootitem or action == "B" ) then
-			if not WoWPro.sticky[index] then lootcheck = false end
+			if not WoWPro.sticky[row.index] then lootcheck = false end
 			if not lootitem then
 				if GetItemCount(step) > 0 and not completion[k] then WoWPro.CompleteStep(k) end
 			end
@@ -617,8 +644,9 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 
 	-- Noting that a quest is being completed for quest log update events --
 	if event == "QUEST_COMPLETE" then
-		WoWPro.Leveling.CompletingQuest = true
+		WoWPro.Leveling.CompletingQuest = GetQuestID()
 		WoWPro.Leveling:AutoCompleteQuestUpdate(GetQuestID())
+		--WoWPro.Leveling:QUEST_LOG_UPDATE_bucket()
 	end
 	
 	-- Auto-Completion --
@@ -678,8 +706,8 @@ local qids = setmetatable({}, {
 	end,
 })
 
-local orig = AbandonQuest
-function AbandonQuest(...)
+local orig = _G.AbandonQuest
+_G.AbandonQuest = function(...)
 	abandoning = true
 	return orig(...)
 end
@@ -696,7 +724,7 @@ function WoWPro.Leveling:GetTurnins()
 		local link = GetQuestLink(i)
 		local qid = link and qids[link]
 		if qid then
-			currentquests[qid] = true
+			--currentquests[qid] = true
 			local complete = select(7,GetQuestLogTitle(i))
 			currentcompletes[qid] = complete == 1 and true or nil
 
@@ -726,11 +754,11 @@ function WoWPro.Leveling:GetTurnins()
 				WoWProCharDB.completedQIDs[qid] = true
 			end
 			abandoning = nil
-			return
+			--return
 		else
 			-- The quest is still active, let see if the objectives got completed
 			for k, done in pairs(currentobj) do
-				obj_qid = floor(k/100)
+				local obj_qid = floor(k/100)
 				if active_qid == obj_qid and done and not oldobj[k] and not currentcompletes[obj_qid] then
 					-- Map the closest POI for the next not completed objective
 					--WoWPro:MapPoint(nil, true)
@@ -753,22 +781,24 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
 			local completion = WoWProCharDB.Guide[GID].completion[i]
 		
 			-- Quest Turn-Ins --
-			if WoWPro.Leveling.CompletingQuest and action == "T" and not completion and WoWPro.missingQuest == QID then
+			if WoWPro.Leveling.CompletingQuest == QID and action == "T" and not completion and WoWPro.missingQuest == QID then
 				WoWPro.CompleteStep(i)
 				WoWProCharDB.completedQIDs[QID] = true
-				WoWPro.Leveling.CompletingQuest = false
+				WoWPro.Leveling.CompletingQuest = nil
 			end
 			
 			-- Abandoned Quests --
 			if not WoWPro.Leveling.CompletingQuest and ( action == "A" or action == "C" ) 
-			and completion and WoWPro.missingQuest == QID then
+				and completion and WoWPro.missingQuest == QID
+			then
 				WoWProCharDB.Guide[GID].completion[i] = nil
 				WoWPro:UpdateGuide()
 				WoWPro:MapPoint()
 			end
 			
             -- Quest AutoComplete --
-			if (WoWPro.newQuest == QID or currentquests[QID]) and (action == "A" or action == "C" or action == "T" or action == "N") and not completion then
+			if (WoWPro.newQuest == QID or currentquests[QID]) and (action == "A") and not completion
+			then
                 WoWPro.CompleteStep(i)
             end
 
@@ -854,7 +884,7 @@ local function GetLootTrackingInfo(lootitem,lootqty,count)
 	- a complete symbol if the ammount the user has is equal to the ammount they need 
 ]]
 	if not GetItemInfo(lootitem) then return "" end
-	local track = "" 												--If the function did have a track string, adds a newline
+	local track, numinbag = "" 								--If the function did have a track string, adds a newline
 	track = track.." - "..GetItemInfo(lootitem)..": " 	--Adds the item's name to the string
 	numinbag = GetItemCount(lootitem)+(count or 0)		--Finds the number in the bag, and adds a count if supplied
 	track = track..numinbag										--Adds the number in bag to the string
