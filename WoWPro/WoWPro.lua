@@ -146,8 +146,23 @@ function WoWPro:OnEnable()
 	WoWPro.GuideFrame:SetScript("OnEvent", function(self, event, ...)		-- Setting up event handler
 		WoWPro:dbp("Event Fired: "..event)
 		
+		-- Unlocking guide frame when leaving combat --
+		if event == "PLAYER_REGEN_ENABLED" or event == "PLAYER_ENTERING_WORLD" then
+			WoWPro:UpdateGuide()
+		--end
+
+		-- Updating party-dependant options --
+		elseif event == "PARTY_MEMBERS_CHANGED" and not InCombatLockdown() then
+			WoWPro:UpdateGuide()
+		--end
+
+		-- Updating WoWPro keybindings --
+		elseif event == "UPDATE_BINDINGS" and not InCombatLockdown() then
+			WoWPro:UpdateGuide()
+		--end
+
 		-- Receiving the result of the completed quest query --
-		if event == "QUEST_QUERY_COMPLETE" then
+		elseif event == "QUEST_QUERY_COMPLETE" then
 			local num = 0
 			for i, QID in pairs(WoWProCharDB.completedQIDs) do
 				num = num+1
@@ -162,21 +177,6 @@ function WoWPro:OnEnable()
 			WoWPro:dbp("New Completed QIDs: "..num)
 			collectgarbage("collect")
 			WoWPro.UpdateGuide()
-		end
-		
-		-- Unlocking guide frame when leaving combat --
-		if event == "PLAYER_REGEN_ENABLED" or event == "PLAYER_ENTERING_WORLD" then
-			WoWPro:UpdateGuide() 
-		end
-		
-		-- Updating party-dependant options --
-		if event == "PARTY_MEMBERS_CHANGED" and not InCombatLockdown() then
-			WoWPro:UpdateGuide() 
-		end
-
-		-- Updating WoWPro keybindings --
-		if event == "UPDATE_BINDINGS" and not InCombatLockdown() then
-			WoWPro:UpdateGuide() 
 		end
 
 		-- Module Event Handlers --

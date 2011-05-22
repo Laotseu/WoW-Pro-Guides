@@ -625,9 +625,24 @@ end
 -- Event Response Logic --
 function WoWPro.Leveling:EventHandler(self, event, ...)
 	WoWPro:dbp("Running: Leveling Event Handler")
-		
+
+	-- Auto-Completion --
+	if event == "CHAT_MSG_SYSTEM" then
+		WoWPro.Leveling:AutoCompleteSetHearth(...)
+	--end
+	elseif event == "CHAT_MSG_LOOT" then
+		WoWPro.Leveling:AutoCompleteLoot(...)
+	--end
+	elseif event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
+		WoWPro.Leveling:AutoCompleteZone(...)
+	--end
+
+	elseif event == "UI_INFO_MESSAGE" then
+		WoWPro.Leveling:AutoCompleteGetFP(...)
+	--end
+
 	-- Noticing if we have entered a Dungeon!
-	if event == "ZONE_CHANGED_NEW_AREA" and WoWProCharDB.AutoHideLevelingInsideInstances == true then
+	elseif event == "ZONE_CHANGED_NEW_AREA" and WoWProCharDB.AutoHideLevelingInsideInstances == true then
 		if IsInInstance() then
 			WoWPro:Print("|cff33ff33Instance Auto Hide|r: Leveling Module")
 			WoWPro.MainFrame:Hide()
@@ -640,26 +655,17 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 			WoWPro.Titlebar:Show()
 			WoWPro.Hidden = nil
 		end
-	end	
+	--end
 
 	-- Noting that a quest is being completed for quest log update events --
-	if event == "QUEST_COMPLETE" then
+	elseif event == "QUEST_COMPLETE" then
 		WoWPro.Leveling.CompletingQuest = GetQuestID()
-		WoWPro.Leveling:AutoCompleteQuestUpdate(GetQuestID())
+		--WoWPro.Leveling.CompletingQuestName =
+		--WoWPro.Leveling:AutoCompleteQuestUpdate(GetQuestID())
 		--WoWPro.Leveling:QUEST_LOG_UPDATE_bucket()
-	end
-	
-	-- Auto-Completion --
-	if event == "CHAT_MSG_SYSTEM" then
-		WoWPro.Leveling:AutoCompleteSetHearth(...)
-	end	
-	if event == "CHAT_MSG_LOOT" then
-		WoWPro.Leveling:AutoCompleteLoot(...)
-	end
-	if event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
-		WoWPro.Leveling:AutoCompleteZone(...)
-	end
-	if event == "QUEST_LOG_UPDATE" then
+	--end
+
+	elseif event == "QUEST_LOG_UPDATE" then
 		WoWPro.Leveling:QUEST_LOG_UPDATE_bucket()
 		-- Keep track of the completed quests
 		--WoWPro.Leveling:GetTurnins(...)
@@ -667,16 +673,13 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 		--WoWPro:PopulateQuestLog(...)
 		--WoWPro.Leveling:AutoCompleteQuestUpdate(...)
 		--WoWPro.Leveling:UpdateQuestTracker()
-	end	
-	if event == "UI_INFO_MESSAGE" then
-		WoWPro.Leveling:AutoCompleteGetFP(...)
-	end
-	if event == "PLAYER_LEVEL_UP" then
+	--end
+	elseif event == "PLAYER_LEVEL_UP" then
 		WoWPro.Leveling:AutoCompleteLevel(...)
 		WoWPro.Leveling.CheckAvailableSpells(...)
 --		WoWPro.Leveling.CheckAvailableTalents()
-	end
-	if event == "TRAINER_UPDATE" then
+	--end
+	elseif event == "TRAINER_UPDATE" then
 		WoWPro.Leveling.CheckAvailableSpells()
 	end
 
@@ -781,11 +784,11 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
 			local completion = WoWProCharDB.Guide[GID].completion[i]
 		
 			-- Quest Turn-Ins --
-			if WoWPro.Leveling.CompletingQuest == QID and action == "T" and not completion and WoWPro.missingQuest == QID then
-				WoWPro.CompleteStep(i)
-				WoWProCharDB.completedQIDs[QID] = true
-				WoWPro.Leveling.CompletingQuest = nil
-			end
+			--if WoWPro.Leveling.CompletingQuest == QID and action == "T" and not completion and WoWPro.missingQuest == QID then
+			--	WoWPro.CompleteStep(i)
+			--	WoWProCharDB.completedQIDs[QID] = true
+			--	WoWPro.Leveling.CompletingQuest = nil
+			--end
 			
 			-- Abandoned Quests --
 			if not WoWPro.Leveling.CompletingQuest and ( action == "A" or action == "C" ) 
@@ -928,6 +931,16 @@ function WoWPro.Leveling:AutoCompleteSetHearth(...)
 			if WoWPro.action[index] == "h" and WoWPro.step[index] == loc 
 			and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
 				WoWPro.CompleteStep(index)
+			end
+		end
+	else
+		local quest = select(3, msg:find("^(.+) completed.$"))
+		if quest then
+			local qid = GetQuestID()
+			if qid and WoWPro.Leveling.CompletingQuest and qid == WoWPro.Leveling.CompletingQuest then
+				WoWPro.Leveling.CompletingQuest = nil
+				WoWProCharDB.completedQIDs[qid] = true
+				WoWPro.Leveling:QUEST_LOG_UPDATE_bucket()
 			end
 		end
 	end	
