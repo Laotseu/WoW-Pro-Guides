@@ -94,7 +94,7 @@ C Bathran's Hair|QID|26473|S|M|21.65,14.69|N|They look like orange bushes.|
 C Don't Forget the Horde|QID|13594|S|M|21.65,17.27|N|Kill the Orcs and Herbalists from Bathran's Haunt.|
 
 l Bottle of Wildfire|QID|13595|M|32.16,23.39|N|Loot the Bottle of Wildfire from the table in Bathran's Haunt.|L|44967|
-C Of Their Own Design|QID|13595|M|32.81,21.38|N|Burn Bathran's corpse with the Bottle of Wildfire.|
+C Of Their Own Design|QID|13595|U|44967|M|32.81,21.38|N|Burn Bathran's corpse with the Bottle of Wildfire.|
 
 C Don't Forget the Horde|QID|13594|US|M|31.99,23.55|
 
@@ -144,10 +144,11 @@ C Respect for the Fallen|QID|13626|U|45044|M|26.97,40.84|N|Equip and use the clo
 C Respect for the Fallen|QID|13626|U|45044|M|26.30,38.43|N|Back down the tower, remember to put the cloak back on, then head to the circle of Rocks. Loot the body of Feero Ironhand and loot Feero's Holy Hammer. Remember not to do anything that causes you to take damage, such as jumping down the tower, as the cloak's effects will stop.|L|45042|
 T Respect for the Fallen|QID|13626|M|26.67,36.90|N|To Sentinel Onaeya.|
 
+C Rear Guard Duty|QID|13632|S|M|30.24,31.40|
 N Deactivate Green Moonstone |QID|13630|M|27.50,33.15|N|Deactivate the Green Moonstone.|QO|Green Moonstone deactivated: 1/1|
 N Deactivate Red Moonstone |QID|13630|M|28.60,31.70|N|Deactivate the Red Moonstone.|QO|Red Moonstone deactivated: 1/1|
 N Deactivate Blue Moonstone |QID|13630|M|30.30, 31.40|N|Deactivate the Blue Moonstone.|QO|Blue Moonstone deactivated: 1/1|
-C Rear Guard Duty|QID|13632|M|30.24,31.40|
+C Rear Guard Duty|QID|13632|US|M|30.24,31.40|
 
 T The Reason Why|QID|13630|M|27.07,36.16|N|To Moon Priestess Maestra.|
 
@@ -179,7 +180,7 @@ R Astranaar|QID|13646|NC|N|Talk to Sentinel Avana. She will give you a free ride
 
 T Astranaar Bound|QID|13646|M|34.69,48.55|N|To Sentinel Luara.|
 
-f Astranaar|QID|13849|NC|N|Accept the Flight Path from Daelyshia.|
+f Astranaar|QID|13849|NC|M|34.4,48.0|N|Accept the Flight Path from Daelyshia.|
 
 A Astranaar's Burning!|QID|13849|M|34.92,49.77|N|From Sentinel Thenysil.|
 C Astranaar's Burning!|QID|13849|U|46094|M|35.31,49.26|

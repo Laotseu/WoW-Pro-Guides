@@ -1,8 +1,10 @@
 ---------------------------------
 --      WoWPro_Frames.lua      --
 ---------------------------------
+local _G = getfenv(0)
 local L = WoWPro_Locale
 local AceGUI = LibStub("AceGUI-3.0")
+
 
 -- Frame Update Functions --
 local function GetSide(frame)
@@ -756,20 +758,20 @@ end
 -- Dropdown Menu --
 function WoWPro:CreateDropdownMenu()
 	WoWPro.DropdownMenu = {
-		{text = "WoW-Pro Guides", isTitle = true},
-		{text = "About", func = function() 
+		{text = "WoW-Pro Guides", notCheckable = true, isTitle = true},
+		{text = "About", notCheckable = true, func = function()
 			InterfaceOptionsFrame_OpenToCategory("WoW-Pro")
 		end},
-		{text = "Display Settings", func = function() 
+		{text = "Display Settings", notCheckable = true, func = function()
 			InterfaceOptionsFrame_OpenToCategory("Guide Display") 
 		end},
-		{text = L["Guide List"], func = function() 
+		{text = L["Guide List"], notCheckable = true, func = function()
 			InterfaceOptionsFrame_OpenToCategory("Guide List") 
 		end},
-		{text = L["Current Guide"], func = function() 
+		{text = L["Current Guide"], notCheckable = true, func = function()
 			InterfaceOptionsFrame_OpenToCategory("Current Guide") 
 		end},
-		{text = L["Reset Current Guide"], func = function() 
+		{text = L["Reset Current Guide"], notCheckable = true, func = function()
 			if not WoWProDB.char.currentguide then return end
 			WoWProCharDB.Guide[WoWProDB.char.currentguide] = nil
 			for j = 1,WoWPro.stepcount do 
@@ -839,3 +841,29 @@ function WoWPro:AbleFrames()
 end
 
 WoWPro:CreateMainFrame()
+
+-- Macro stuff
+do -- closure
+function WoWPro:SetMacro(macroType, macroBody)
+	assert(macroType == "WPI" or macroType == "WPT","Invalide macro type: " .. (macroType or 'nil'))
+
+	-- select the icon
+	local macroIcon = (macroType == "WPI" or not macroBody) and 1 or 418
+
+	-- find macro
+	local macroIndex = _G.GetMacroIndexByName(macroType)
+
+	-- create macro if not present
+	if macroIndex == 0 then
+		macroIndex = _G.CreateMacro(macroType, macroIcon, "", 1, 0)
+	end
+
+	-- set error message and error sound if there is no usable quest item
+	local error_msg = (macroType == "WPI" and "No suitable quest item found") or "Nothig to target"
+	macroBody = macroBody or "/script UIErrorsFrame:AddMessage(\"" .. error_msg .. "\", 1.0, 0.0, 0.0, 53, 5);"
+	    .. "PlaySoundFile(\"Sound\\\\Interface\\\\Error.wav\");"
+
+	_G.EditMacro(macroIndex, macroType, macroIcon, macroBody, 0)
+end
+
+end -- closure

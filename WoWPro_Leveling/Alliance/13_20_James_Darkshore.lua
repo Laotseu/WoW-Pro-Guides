@@ -367,7 +367,7 @@ A The Titans' Terminal|QID|13918|M|37.70,82.90|N|From Jr. Archaeologist Ferd.|
 T Sweeping Clean the Ruins|QID|13907|M|37.70,82.90|N|To Archaeologist Groff.|
 A Got Some Flotsam?|QID|13909|M|37.70,82.90|N|From Archaeologist Groff.|
 l The Titans' Terminal|QID|13918|U|46388|M|37.09,81.24|N|Use the detector, click on the mud piles, and then use it again till you have 5.|L|46702 5|
-U The Titans' Terminal|QID|13918|U|46702|M|37.09,81.24|N|Combine the fragments to complete the quest.
+U The Titans' Terminal|QID|13918|U|46702|L|46387|M|37.09,81.24|N|Combine the fragments to complete the quest.
 C Got Some Flotsam?|QID|13909|M|37.16,86.91|N|Look all around the beach for the wreckage.|
 T The Titans' Terminal|QID|13918|M|37.69,82.92|N|To Jr. Archaeologist Ferd.|
 T Got Some Flotsam?|QID|13909|M|37.68,82.78|N|To Archaeologist Groff.|

@@ -162,7 +162,7 @@ T Mimicking Nature's Call |QID|11281| |N|Back at Camp Winterhoof.|M|49.3,12.0|
 T The Book of Runes |QID|11350|M|49.2,12.2|
 A Mastering the Runes |QID|11351|
 T March of the Giants |QID|11365|M|48.1,10.5|
-A The Lodestone |QID|11366|
+A The Lodestone |QID|11366|PRE|11365|
 A Skorn Must Fall! |QID|11256|M|48.1,10.8|
 
 R Skorn |QID|11258|N|Southwest.|M|44,26|
@@ -185,9 +185,9 @@ N Target the Southwest Tower |QID|11259|QO|Southwest Tower Targeted: 1/1|U|33344
 C Gruesome, But Necessary |QID|11257|U|33342|S|N|When you kill a Vrykul, use The Brave's Machete on the corpse.|US|
 
 T Gruesome, But Necessary |QID|11257|U|33340|N|Summon the Brave if he's died or disappeared, then turn it in.|
-T Burn Skorn, Burn! |QID|11258|
-T Towers of Certain Doom |QID|11259|
-A The Conqueror of Skorn! |QID|11261|
+T Burn Skorn, Burn! |QID|11258|U|33340|
+T Towers of Certain Doom |QID|11259|U|33340|
+A The Conqueror of Skorn! |QID|11261|U|33340|
 
 C The Fallen Sisters |QID|11314|U|33606|N|In the Vibrant Glade to the east. Beat a Chill Nymph down to below 30% HP, then use Lurielle's Pendant. Rinse and repeat.|M|51,26|
 C Wild Vines |QID|11315|
@@ -207,12 +207,12 @@ T Spawn of the Twisted Glade |QID|11316| |N|Head back to the Frozen Glade.|M|61.
 T Seeds of the Blacksouled Keepers |QID|11319|
 A Keeper Witherleaf |QID|11428|
 
-C Keeper Witherleaf |QID|11428| |N|He patrols around the Twisted Glade.|M|55,19|
+C Keeper Witherleaf |QID|11428| |T|Keeper Witherleaf|N|He patrols around the Twisted Glade.|M|55,19|
 
 T Mastering the Runes |QID|11351| |N|Back at Camp Winterhoof.|M|49.2,12.2|
 A The Rune of Command |QID|11352|
 T The Lodestone |QID|11366|M|48.1,10.5|
-A Demolishing Megalith |QID|11367|
+A Demolishing Megalith |QID|11367|PRE|11366|
 T The Conqueror of Skorn! |QID|11261|M|48.1,10.8|
 A Dealing With Gjalerbron |QID|11263|
 T Stop the Ascension! |QID|11260|
@@ -238,7 +238,7 @@ T Keeper Witherleaf |QID|11428|M|61.5,22.9|
 
 C Hasty Preparations |QID|11271||N|Pick up any feathers you still need on the way.|US|M|72,25|
 
-K Binder Murdis |QID|11352|QO|Binder Murdis slain: 1/1|M|72,25|
+K Binder Murdis |QID|11352|QO|Binder Murdis slain: 1/1|M|72,25|T|Binder Murdis|
 
 C The Rune of Command |QID|11352|U|33796|N|Use the Rune of Command on a Stone Giant, it's non-aggressive, should be just to the northwest.|M|71,23|
 C Demolishing Megalith |QID|11367|N|Use the Stone Giant as a tank.|
@@ -257,12 +257,12 @@ A In Worg's Clothing |QID|11323|
 T In Worg's Clothing |QID|11323| |N|Fight your way through the Rivenwood, open the Riven Widow Cocoons when you see them; you'll be going through here several times, so don't worry about finishing that now. Head to the cave, then use the Worg Disguise and turn the quest in inside the cave.| |U|33618|M|29.64,5.72|
 A Brother Betrayers |QID|11415|
 
-K Bjomolf |QID|11415|QO|Bjomolf slain: 1/1|U|33618|N|Bjomolf is southwest.|M|27,21|
-K Varg |QID|11415|QO|Varg slain: 1/1|U|33618|N|Varg is then east.|M|34,29|
+K Bjomolf |QID|11415|QO|Bjomolf slain: 1/1|U|33618|T|Bjomolf|N|Bjomolf is southwest.|M|27,21|
+K Varg |QID|11415|QO|Varg slain: 1/1|U|33618|T|Varg|N|Varg is then east.|M|34,29|
 C Rivenwood Captives |QID|11296| |N|In the Rivenwood, open the Riven Widow Cocoons until you complete the quest.|M|29.64,17.04|
 
 R Gjalerbron |QID|11266|N|North.|M|35,15|
-C Of Keys and Cages |QID|11265|N|You want to kill any Vrykul, and you'll get Cage Keys. Use them on the cages to free the prisoners. The rarer Large Gjalerbron Cage Key is used on the Large Gjalerbron Cage at the center of Gjalerbron, it will spawn up to 5 prisoners at a time.|S|
+C Of  Keys and Cages |QID|11265|N|You want to kill any Vrykul, and you'll get Cage Keys. Use them on the cages to free the prisoners. The rarer Large Gjalerbron Cage Key is used on the Large Gjalerbron Cage at the center of Gjalerbron, it will spawn up to 5 prisoners at a time.|S|
 
 C Dealing With Gjalerbron |QID|11263| |N|Kill the remaining Vrykul you need for this quest. |M|34.68,15.28|
 
@@ -273,8 +273,7 @@ C Of Keys and Cages |QID|11265|N|Get any prisoners you still need.|US|
 T Brother Betrayers |QID|11415|U|33618|N|Back at the wolf cave, to the northwest.|M|29.64,5.72|
 A Eyes of the Eagle |QID|11417|
 
-K Scourge |QID|11398|L|33962|N|Head to the beach. Kill them until you get a Scourge Device.|M|26,20|
-A It's a Scourge Device |QID|11398| |U|33962|
+A It's a Scourge Device |QID|11398| |U|33962|N|Head to the beach. Kill them until you get a Scourge Device.|M|26,20|
 A Trident of the Son |QID|11422| |N|From the murloc Old Icefin.|M|20,22|
 
 T It's a Scourge Device |QID|11398| |N|Back the Apothecary Camp.|M|26.2,24.5|
