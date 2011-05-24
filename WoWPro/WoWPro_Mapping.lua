@@ -41,7 +41,7 @@ end
 ----------------------------------
 
 local L = WoWPro_Locale
-local cache = {}	
+local cache = {}
 local B = LibStub("LibBabble-Zone-3.0")
 local BL = B:GetUnstrictLookupTable()
 
@@ -68,7 +68,7 @@ local function WoWProMapping_minimap_onclick(event, uid, self, button)
 	end
 end
 
--- Function to customize the drop-down menu when right-clicking 
+-- Function to customize the drop-down menu when right-clicking
 -- the TomTom waypoint on the world map
 local function WoWProMapping_worldmap_onclick(event, uid, self, button)
 	if SHOW_WORLDMAP_MENU then
@@ -77,7 +77,7 @@ local function WoWProMapping_worldmap_onclick(event, uid, self, button)
 	end
 end
 
--- Function to customize the tooltip when mouse-over the TomTom waypoint, 
+-- Function to customize the tooltip when mouse-over the TomTom waypoint,
 -- can be called by both minimap and world map tooltip functions
 local function WoWProMapping_tooltip(event, tooltip, uid, dist)
 
@@ -93,7 +93,7 @@ local function WoWProMapping_tooltip(event, tooltip, uid, dist)
 	local y = cache[iactual].y
 	local desc = cache[iactual].desc
 	local jcoord = cache[iactual].j
-	
+
 	tooltip:SetText(desc or L["WoWPro waypoint"])
 	if dist and tonumber(dist) then
 		tooltip:AddLine((L["%s yards away"]):format(math.floor(dist)), 1, 1, 1)
@@ -109,7 +109,7 @@ end
 
 -- Function to customize the tooltip when mouse-over the TomTom waypoint on the minimap
 local function WoWProMapping_tooltip_minimap(event, tooltip, uid, dist)
-	if not SHOW_MINIMAP_TOOLTIP then 
+	if not SHOW_MINIMAP_TOOLTIP then
 		tooltip:Hide()
 		return
 	end
@@ -125,7 +125,7 @@ local function WoWProMapping_tooltip_worldmap(event, tooltip, uid, dist)
 	return WoWProMapping_tooltip(event, tooltip, uid, dist)
 end
 
--- Function to update customized tooltips, for both minimap and world map 
+-- Function to update customized tooltips, for both minimap and world map
 -- (could be changed later so they can be different)
 local function WoWProMapping_tooltip_update_both(event, tooltip, uid, dist)
 	if dist and tonumber(dist) then
@@ -215,7 +215,7 @@ err("Distance callback: event = %s, title = %s, range = %s, distance = %s, lastd
 
 end
 
--- table with custom callback functions to use in TomTom
+-- table with custom callback functions to use in _G.TomTom
 local WoWProMapping_callbacks_tomtom = {
 			minimap = {
 				onclick = WoWProMapping_minimap_onclick,
@@ -228,7 +228,7 @@ local WoWProMapping_callbacks_tomtom = {
 				tooltip_update = WoWProMapping_tooltip_update_both,
 			},
 			distance = {
-				
+
 			},
 }
 
@@ -324,17 +324,17 @@ function WoWPro:findBlizzCoords(questId)
     	if not POIFrame then return nil, nil end
 
     	local _, _, _, x, y = POIFrame:GetPoint()
-		
+
 		-- sanity check if there's a problem with Blizzard's quest map POI APIs
 		if (not x) or (not y) then
 			return nil, nil
     	end
-		
+
     	local frame = _G.WorldMapDetailFrame
     	local width = frame:GetWidth()
     	local height = frame:GetHeight()
     	local scale = frame:GetScale() / POIFrame:GetScale()
-		
+
     	local cx = (x / scale) / width
     	local cy = (-y / scale) / height
 
@@ -359,7 +359,6 @@ function WoWPro:MapPointDelta()
         return nil
     end
 end
-
 
 function WoWPro:MapPoint(row, forceBlizCoord)
 	local GID = _G.WoWProDB.char.currentguide
@@ -425,7 +424,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	-- Finding the zone --
 	local zm, zf = nil, nil
 	if zone then
-	    if tonumber(zone) then
+	    if type(zone) == "number" then
 	        -- Using a numeric zone ID
 	        zm = tonumber(zone)
 	        zf = 0
@@ -477,7 +476,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 			if _G.TomTom then
 				local uid
 
-				if numcoords > 1 then
+				if numcoords > 1 or autoarrival == 1 or autoarrival == 2 then
 					uid = _G.TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {
 						title = desc,
 						callbacks = WoWProMapping_callbacks_tomtom,
@@ -486,7 +485,6 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 						persistent = false,
 						minimap = true,
 						world = true,
-	--					crazy = (j == numcoords) and true or false -- Only set the arrow for the first coordinate in the list
 						crazy = false -- We will set it with the callback if there is more then one
 					})
 				else
