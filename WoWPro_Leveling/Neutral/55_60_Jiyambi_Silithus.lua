@@ -19,7 +19,7 @@
 -- Date: 2010-12-03 12:07
 -- Who: Jiyambi
 
-WoWPro.Leveling:RegisterGuide('JiySil5560', 'Silithus', 'Jiyambi', '55', '60', 'JamHel6062|JamHel6063', 'Neutral', function()
+WoWPro.Leveling:RegisterGuide('JiySil5560', 'Silithus', 'Jiyambi', '55', '60', 'JamHel6062|JamHel6063', 'Horde', function()
 return [[
 
 R Cenarion Hold|QID|8280|M|54.92,35.85|
@@ -30,26 +30,26 @@ A Securing the Supply Lines|QID|8280|M|54.92,35.85|N|From Windcaller Proudhorn.|
 A Wanted - Deathclasp, Terror of the Sands|QID|8283|M|55.05,35.93|N|From Windcaller Proudhorn.|
 h Cenarion Hold|QID|8304|M|55.51,36.72|N|If you'd like, set your hearth at Calandrath.|
 A Deadly Desert Venom|QID|8277|M|55.35,36.26|N|From Beetix Ficklespragg.|
-A The Twilight Mystery|QID|8284|M|53.58,35.24|N|From Geologist Larksbane.|
+;A The Twilight Mystery|QID|8284|M|53.58,35.24|N|From Geologist Larksbane.|
 A Report to General Kirika|QID|9416|M|52.96,34.68|N|From Scout Bloodfist.|
 f Cenarion Hold|QID|9416|M|52.75,34.66|N|From Runk Windtamer.|
 A Secret Communication|QID|8318|M|52.67,35.56|N|From Bor Wildmane.|
 A Twilight Geolords|QID|8320|M|52.76,35.63|N|From Huum Wildmane.|
-A Dearest Natalia|QID|8304|M|53.22,32.48|N|From Commander Mar'alith.|
+;A Dearest Natalia|QID|8304|M|53.22,32.48|N|From Commander Mar'alith.|
 
 C Deadly Desert Venom|QID|8277|M|47.91,36.17|S|N|From spiders and scorpions.|
 C Securing the Supply Lines|QID|8280|M|47.27,38.32|S|
 C Secret Communication|QID|8318|M|43.32,38.61|S|N|Dropped by Geolords and Prophets.|
 C Twilight Geolords|QID|8320|M|43.91,40.41|N|This camp should have enough Geolords. Prophets occassionally patrol through - be careful, they are elite and quite strong, but if you manage to kill one the drop 10 Encrypted Texts.|
 C Secret Communication|QID|8318|M|43.32,38.61|US|N|Dropped by Geolords and Prophets. Be careful, the Prophets are elite and quite strong, but if you manage to kill one the drop 10 Encrypted Texts..|
-C The Twilight Mystery|NC|QID|8284|M|29.44,9.74|N|Loot the tablets scattered around the ground in the Crystal Vale.|
+;C The Twilight Mystery|NC|QID|8284|M|29.44,9.74|N|Loot the tablets scattered around the ground in the Crystal Vale.|
 C Deadly Desert Venom|QID|8277|M|47.91,36.17|US|N|From spiders and scorpions.|
 C Securing the Supply Lines|QID|8280|M|47.27,38.32|US|
 
 T Secret Communication|QID|8318|M|52.67,35.62|N|To Bor Wildmane, back at Cenarion Hold.|
 T Twilight Geolords|QID|8320|M|52.67,35.62|N|To Huum Wildmane.|
 A Vyral the Vile|QID|8321|PRE|8320|M|52.67,35.62|N|From Huum Wildmane.|
-T The Twilight Mystery|QID|8284|M|53.66,35.19|N|To Geologist Larksbane.|
+;T The Twilight Mystery|QID|8284|M|53.66,35.19|N|To Geologist Larksbane.|
 A The Deserter|QID|8285|PRE|8284|M|53.66,35.19|N|From Geologist Larksbane.|
 T Securing the Supply Lines|QID|8280|M|54.89,36.03|N|To Windcaller Proudhorn.|
 A Stepping Up Security|QID|8281|PRE|8280|M|54.89,36.03|N|From Windcaller Proudhorn.|
@@ -59,6 +59,10 @@ A Noggle's Last Hope|QID|8278|PRE|8277|M|55.34,36.31|N|From Beetix Ficklespragg.
 C Vyral the Vile|RANK|3|QID|8321|M|73.19,16.48|N|In the back of the cave to the north-east.|
 H Cenarion Hold|RANK|3|QID|8321|M|55.51,36.72|N|Ride if you didn't set your hearth there.|
 T Vyral the Vile|RANK|3|QID|8321|M|52.75,35.58|N|To Huum Wildmane.|
+A Dearest Natalia|QID|8304|M|53.22,32.48|N|From Commander Mar'alith.|
+A The Twilight Mystery|QID|8284|M|53.58,35.24|N|From Geologist Larksbane.|
+C The Twilight Mystery|NC|QID|8284|M|29.44,9.74|N|Loot the tablets scattered around the ground in the Crystal Vale.|
+T The Twilight Mystery|QID|8284|M|53.66,35.19|N|To Geologist Larksbane.|
 
 C Noggle's Last Hope|QID|8278|M|52.33,61.10|S|N|From scorpions and spiders.|
 C Stepping Up Security|QID|8281|M|43.69,52.01|S|

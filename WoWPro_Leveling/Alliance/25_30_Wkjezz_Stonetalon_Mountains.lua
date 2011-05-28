@@ -390,11 +390,11 @@ f Farwatcher's Glen|QID|25935|M|31.95,61.79|N|At Ceyora.|
 
 h Farwatcher's Glen|QID|25935|M|31.50,60.62|N|At Innkeeper Bernice.|
 
-R Carefull shimmy down the mountain.|QID|999999|CS|M|31.01,62.13;30.23,63.15;30.06,64.98|
+R Carefull shimmy down the mountain.|QID|999999|CS|U|56221|M|31.01,62.13;30.23,63.15;30.06,64.98|
 
-C World First: Gnomegen|QID|25934|S|M|27.39,70.10|N|Kill every Fire elemental you see.  You may need to kill quite a number of them to get the Heart to drop.|
+C World First: Gnomegen|QID|25934|S|U|56221|M|27.39,70.10|N|Kill every Fire elemental you see.  You may need to kill quite a number of them to get the Heart to drop.|
 
-C Hungry Pups|QID|25935|S|M|30.65,72.39|
+C Hungry Pups|QID|25935|S|U|56221|M|30.65,72.39|
 
 C Ascending the Vale|QID|25930|NC|U|56221|M|29.25,71.07|N|Use your boots as needed.|
 

@@ -45,6 +45,8 @@ local cache = {}
 local B = LibStub("LibBabble-Zone-3.0")
 local BL = B:GetUnstrictLookupTable()
 
+-- Map dat
+local LMD = LibStub("LibMapData-1.0")
 -- Debug
 WoWPro.mappoints_cache = cache
 WoWPro.map_debug = false
@@ -166,7 +168,7 @@ err("Distance callback: event = %s, title = %s, range = %s, distance = %s, lastd
 	local autoarrival = cache[iactual].autoarrival
 
 	if autoarrival == 1 then
-		for i=iactual+1,#cache,1 do
+		for i=iactual,#cache,1 do
 			_G.TomTom:RemoveWaypoint(cache[i].uid)
 		end
 
@@ -264,22 +266,26 @@ local zidmap = {
    [139] = "Eastern Plaguelands",
    [141] = "Teldrassil",
    [148] = "Darkshore",
+	[201] = "Un'Goro Crater",
    [210] = "Icecrown",
    [215] = "Mulgore",
+   [261] = "Silithus",
    [267] = "Hilsbrad Foothills",
    [331] = "Ashenvale Forest",
    [357] = "Feralas",
    [361] = "Felwood",
-   [394] = "Grizzly Hills",
+--   [394] = "Grizzly Hills",
    [400] = "Thousand Needles",
    [405] = "Desolace",
    [406] = "Stonetalon Mountains",
    [440] = "Tanaris",
-   [490] = "Un'Goro Crater",
+   [490] = "Grizzly Hills",
+--   [490] = "Un'Goro Crater",
    [493] = "Moonglade",
    [495] = "Howling Fjord",
    [618] = "Winterspring",
-   [1377] = "Silithus",
+   [640] = "Deepholm",
+--   [1377] = "Silithus",
    [1497] = "Undercity",
    [1519] = "Stormwind City",
    [1537] = "Ironforge",
@@ -384,7 +390,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	local desc = WoWPro.step[i]
 	local zone
 	if row then
-	    zone = WoWPro.rows[row].zone
+	    zone = WoWPro.rows[row].zone or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(%-]+)"))
 	else
 		zone = WoWPro.zone[i] or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(%-]+)"))
 	end
@@ -438,7 +444,10 @@ function WoWPro:MapPoint(row, forceBlizCoord)
     if not zm then
 	    zm = _G.GetCurrentMapAreaID()
 	    zf = 0
-	    WoWPro:Print("Zone ["..zone.."] not found. Using map id "..tostring(zm))
+	    if not zone then
+	    	zone = LDM and LDM:MapLocalize(zm)
+	    end
+	    WoWPro:Print("Zone ["..tostring(zone).."] not found. Using map id "..tostring(zm))
 	end
 
 	if _G.TomTom and _G.TomTom.db then
@@ -479,6 +488,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 				if numcoords > 1 or autoarrival == 1 or autoarrival == 2 then
 					uid = _G.TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {
 						title = desc,
+						desc = desc,
 						callbacks = WoWProMapping_callbacks_tomtom,
 						cleardistance = 0,
 						arrivaldistance = 1, -- The callback is set and we don't want it overwritten
@@ -490,6 +500,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 				else
 					uid = _G.TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {
 						title = desc,
+						desc = desc,
 						persistent = false,
 						minimap = true,
 						world = true,
