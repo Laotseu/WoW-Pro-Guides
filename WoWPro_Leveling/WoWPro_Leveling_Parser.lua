@@ -477,6 +477,8 @@ function WoWPro.Leveling:RowUpdate(offset)
 						WoWPro:MapPoint(row.num)
 					end}
 				)
+			end
+			if WoWPro.QuestLog[QID] and action ~= 'A' then
 				table.insert(dropdown,
 					{text = "Map Blizard Coordinates", notCheckable = true, func = function()
 						WoWPro:MapPoint(row.num, true)
@@ -713,6 +715,12 @@ local qids = setmetatable({}, {
 		return v
 	end,
 })
+local abandon_qid
+
+-- Debug
+WoWPro_Debug = {}
+WoWPro_Debug.currentquests = currentquests
+WoWPro_Debug.oldquests = oldquests
 
 local orig = _G.AbandonQuest
 _G.AbandonQuest = function(...)
@@ -732,7 +740,7 @@ function WoWPro.Leveling:GetTurnins()
 		local link = GetQuestLink(i)
 		local qid = link and qids[link]
 		if qid then
-			--currentquests[qid] = true
+			currentquests[qid] = true
 			local complete = select(7,GetQuestLogTitle(i))
 			currentcompletes[qid] = complete == 1 and true or nil
 
@@ -760,6 +768,9 @@ function WoWPro.Leveling:GetTurnins()
 				-- We save the turn in so that that the quests completed out of order
 				-- are known
 				WoWProCharDB.completedQIDs[qid] = true
+				abandon_qid = nil
+			else
+				abandon_qid = qid
 			end
 			abandoning = nil
 			--return
@@ -796,38 +807,53 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
 			--end
 
 			-- Abandoned Quests --
-			if not WoWPro.Leveling.CompletingQuest and ( action == "A" or action == "C" )
-				and completion and WoWPro.missingQuest == QID
-			then
+--			if not WoWPro.Leveling.CompletingQuest and ( action == "A" or action == "C" )
+--				and completion and WoWPro.missingQuest == QID
+--			then
+			if abandon_qid == QID and WoWPro.Leveling.CompletingQuest and
+					( action == "A" or action == "C" ) and completion then
 				WoWProCharDB.Guide[GID].completion[i] = nil
 				WoWPro:UpdateGuide()
 				WoWPro:MapPoint()
 			end
 
-            -- Quest AutoComplete --
-			if (WoWPro.newQuest == QID or currentquests[QID]) and (action == "A") and not completion
-			then
-                WoWPro.CompleteStep(i)
+			-- If the quest is marked as completed in
+			if WoWProCharDB.completedQIDs[QID] then
+				WoWPro.CompleteStep(i)
+				completion = true
             end
 
-			-- Quest Accepts --
-			if WoWPro.newQuest == QID and action == "A" and not completion then
+            -- Quest AutoComplete --
+--			if (WoWPro.newQuest == QID or currentquests[QID]) and (action == "A") and not completion
+--			then
+--                WoWPro.CompleteStep(i)
+--            end
+--
+--			-- Quest Accepts --
+--			if WoWPro.newQuest == QID and action == "A" and not completion then
+--				WoWPro.CompleteStep(i)
+--			end
+
+			-- Quests that are in the current log have been accepted
+			if action == "A" and not completion and currentquests[QID] then
 				WoWPro.CompleteStep(i)
+				completion = true
 			end
 
 			-- Quest Completion --
-			if WoWPro.QuestLog[QID] and action == "C" and not completion and WoWPro.QuestLog[QID].complete then
+			if action == "C" and not completion and WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].complete then
 				WoWPro.CompleteStep(i)
+				completion = true
 			end
 
-			-- If the quest step is marked as completed in
-			if WoWProCharDB.completedQIDs[QID] then
-				WoWPro.CompleteStep(i)
+			-- Verify with FlightPoint addons
+			if action == "f" and not completion then
+				-- Futur code to interact with FlightMap type of addons
 			end
 
 			-- Partial Completion --
 			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[i]
-					and not WoWProCharDB.Guide[GID].completion[i] then
+					and not completion then
 				local numquesttext = select("#", string.split(";", WoWPro.questtext[i]))
 				local complete = true
 				for l=1,numquesttext do
