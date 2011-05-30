@@ -3,10 +3,10 @@
 -------------------------------------------------------------------------------
 local _G = getfenv(0)
 
-local WoWPro = _G.WoWPro
 --local WoWProDB = _G.WoWProDB
 --local WoWProCharDB = _G.WoWProCharDB
 
+local assert = _G.assert
 local math = _G.math
 local tonumber = _G.tonumber
 local string = _G.string
@@ -15,26 +15,110 @@ local type = _G.type
 local table = _G.table
 local ipairs = _G.ipairs
 local pairs = _G.pairs
+local tinsert = _G.tinsert
+local tremove = _G.tremove
 local wipe = _G.wipe
+
+local UIParent = _G.UIParent
+
+local CreateFrame = _G.CreateFrame
+local EasyMenu = _G.EasyMenu
+local GetFactionInfo = _G.GetFactionInfo
+local GetItemCount = _G.GetItemCount
+local GetNumFactions = _G.GetNumFactions
+local GetNumQuestLeaderBoards = _G.GetNumQuestLeaderBoards
+local GetNumQuestLogEntries = _G.GetNumQuestLeaderBoards
+local GetProfessionInfo = _G.GetProfessionInfo
+local GetProfessions = _G.GetProfessions
+local GetQuestLogLeaderBoard = _G.GetQuestLogLeaderBoard
+local GetQuestLogSpecialItemInfo = _G.GetQuestLogSpecialItemInfo
+local GetQuestLogTitle = _G.GetQuestLogTitle
+local PlaySoundFile = _G.PlaySoundFile
+local QuestMapUpdateAllQuests = _G.QuestMapUpdateAllQuests
+local QuestPOIUpdateIcons = _G.QuestPOIUpdateIcons
+local UnitFactionGroup = _G.UnitFactionGroup
+local WorldMapFrame_UpdateQuests = _G.WorldMapFrame_UpdateQuests
 
 -----------------------------
 --      WoWPro_Broker      --
 -----------------------------
 
+local WoWPro = LibStub("AceAddon-3.0"):GetAddon("WoWPro")
+
 local L = WoWPro_Locale
 local OldQIDs, CurrentQIDs, NewQIDs, MissingQIDs
+
+-------------------------------
+-- Table Recycling functions --
+-------------------------------
+
+-- Table reuse functions
+local AcquireTable, ReleaseTable
+do
+	local table_cache = {}
+
+	-- Returns a table
+	function AcquireTable()
+		local tbl = tremove(table_cache) or {}
+		return tbl
+	end
+
+	-- Cleans the table and stores it in the cache
+	function ReleaseTable(tbl)
+		if not tbl then return end
+
+		-- Nested tables ?
+		for i=1,#tbl do
+			if type(tbl[i]) == 'table' then ReleaseTable(tbl[i]) end
+		end
+
+		wipe(tbl)
+		tinsert(table_cache, tbl)
+	end
+end	-- do block
+
+-- Wipe a table but also call ReleaseTable() on each nested table
+local function WipeTable(tbl)
+	assert(type(tbl) == 'table',"Usage: WipeTable(table) The argument must be a table.")
+
+	-- Nested tables ?
+	for i=1,#tbl do
+		if type(tbl[i]) == 'table' then ReleaseTable(tbl[i]) end
+	end
+
+	wipe(tbl)
+end
+
+-- Table copy function -- borrowed from AceDB-3.0.lua
+local function CopyTable(src, dest)
+	if type(dest) ~= "table" then dest = AcquireTable() end
+	if type(src) == "table" then
+		for k,v in pairs(src) do
+			if type(v) == "table" then
+				-- try to index the key first so that the metatable creates the defaults, if set, and use that table
+				v = CopyTable(v, dest[k])
+			end
+			dest[k] = v
+		end
+	end
+	return dest
+end
 
 -- Check for empty table
 local function IsTableEmpty(table)
 	return not _G.next(table)
 end
 
+
+
 -- Guide Load --
 function WoWPro:LoadGuide(guideID)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	--Re-initiallizing tags and counts--
 	for i,tag in pairs(WoWPro.Tags) do
-		WoWPro[tag] = {}
+		--WoWPro[tag] = {}
+		WoWPro[tag] = AcquireTable()
 	end
 	WoWPro.stepcount, WoWPro.stickycount, WoWPro.optionalcount = 0, 0 ,0
 
@@ -70,9 +154,9 @@ function WoWPro:LoadGuide(guideID)
 	WoWPro:dbp("Loading Guide: "..GID)
 
 	-- Creating a new entry if this guide does not have one
-	WoWProCharDB.Guide[GID] = WoWProCharDB.Guide[GID] or {}
-	WoWProCharDB.Guide[GID].completion = WoWProCharDB.Guide[GID].completion or {}
-	WoWProCharDB.Guide[GID].skipped = WoWProCharDB.Guide[GID].skipped or {}
+	WoWProCharDB.Guide[GID] = WoWProCharDB.Guide[GID] or AcquireTable()
+	WoWProCharDB.Guide[GID].completion = WoWProCharDB.Guide[GID].completion or AcquireTable()
+	WoWProCharDB.Guide[GID].skipped = WoWProCharDB.Guide[GID].skipped or AcquireTable()
 
 	local module = WoWPro:GetModule(WoWPro.Guides[GID].guidetype)
 	if module:IsEnabled() then
@@ -87,6 +171,8 @@ end
 function WoWPro:UpdateGuide(offset)
 	if not WoWPro.GuideFrame:IsVisible() then return end
 	WoWPro:dbp("Running: UpdateGuide()")
+
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 	local GID = WoWProDB.char.currentguide
 
 	-- If the user is in combat, or if a GID is not present, or if the guide cannot be found, end --
@@ -177,6 +263,8 @@ end
 -- Next Step --
 -- Determines the next active step --
 function WoWPro:NextStep(k,i)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local GID = WoWProDB.char.currentguide
 	if not k then k = 1 end --k is the position in the guide
 	if not i then i = 1 end --i is the position on the rows
@@ -205,7 +293,7 @@ function WoWPro:NextStep(k,i)
 
 			if prof and type(prof) == "string" and type(proflvl) == "number" then
 				skip = true --Profession steps skipped by default
-				local profs = {}
+				local profs = AcquireTable()
 				profs[1], profs[2], profs[3], profs[4], profs[5], profs[6] = GetProfessions()
 				for p=1,6 do
 					if profs[p] then
@@ -215,6 +303,7 @@ function WoWPro:NextStep(k,i)
 						end
 					end
 				end
+				ReleaseTable(profs)
 			end
 		end
 
@@ -320,6 +409,8 @@ end
 
 -- Step Completion Tasks --
 function WoWPro.CompleteStep(step)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local GID = WoWProDB.char.currentguide
 	if WoWProCharDB.Guide[GID].completion[step] then return end
 	if WoWProDB.profile.checksound then
@@ -355,8 +446,8 @@ end
 function WoWPro:PopulateQuestLog()
 	WoWPro:dbp("Populating quest log...")
 
-	WoWPro.oldQuests = WoWPro.oldQuests or {}
-	WoWPro.QuestLog = WoWPro.QuestLog or {}
+	WoWPro.oldQuests = WoWPro.oldQuests or AcquireTable()
+	WoWPro.QuestLog = WoWPro.QuestLog or AcquireTable()
 
 	WoWPro.oldQuests, WoWPro.QuestLog = WoWPro.QuestLog, WoWPro.oldQuests
 
@@ -364,7 +455,7 @@ function WoWPro:PopulateQuestLog()
 
 	-- Generating the Quest Log table --
 	--WoWPro.QuestLog = {} -- Reinitiallizing the Quest Log table
-	wipe(WoWPro.QuestLog)
+	WipeTable(WoWPro.QuestLog)
 	local i, currentHeader = 1, "None"
 	local entries = GetNumQuestLogEntries()
 	for i=1,tonumber(entries) do
@@ -376,8 +467,8 @@ function WoWPro:PopulateQuestLog()
 			local leaderBoard
 			if GetNumQuestLeaderBoards(i) and GetQuestLogLeaderBoard(1, i) then
 				--leaderBoard = {}
-				leaderBoard = WoWPro.QuestLog[questID] and WoWPro.QuestLog[questID].leaderBoard or {}
-				wipe(leaderBoard)
+				leaderBoard = WoWPro.QuestLog[questID] and WoWPro.QuestLog[questID].leaderBoard or AcquireTable()
+				WipeTable(leaderBoard)
 				for j=1,GetNumQuestLeaderBoards(i) do
 					leaderBoard[j] = GetQuestLogLeaderBoard(j, i)
 				end
@@ -396,9 +487,9 @@ function WoWPro:PopulateQuestLog()
 			local x, y = WoWPro:findBlizzCoords(questID)
 			if x and y then coords = ("%.2f"):format(x)..","..("%.2f"):format(y) end
 
-			WoWPro.QuestLog[questID] = WoWPro.QuestLog[questID] or {}
+			WoWPro.QuestLog[questID] = WoWPro.QuestLog[questID] or AcquireTable()
 			local quest_log_item = WoWPro.QuestLog[questID]
-			wipe(quest_log_item)
+			WipeTable(quest_log_item)
 			quest_log_item.title = questTitle
 			quest_log_item.level = level
 			quest_log_item.tag = questTag

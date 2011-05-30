@@ -3,10 +3,6 @@
 -------------------------------------------------------------------------------
 local _G = getfenv(0)
 
-local WoWPro = _G.WoWPro
---local WoWProDB = _G.WoWProDB
---local WoWProCharDB = _G.WoWProCharDB
-
 local _
 local assert = _G.assert
 local floor = _G.floor
@@ -27,9 +23,24 @@ local pairs = _G.pairs
 local select = _G.select
 local wipe = _G.wipe
 
+local LightHeaded = _G.LightHeaded
+local TomTom = _G.TomTom
+
+local MAX_NUM_QUESTS = _G.MAX_NUM_QUESTS
+local WorldMapDetailFrame = _G.WorldMapDetailFrame
+
+local GetCurrentMapAreaID = _G.GetCurrentMapAreaID
+local GetPlayerMapPosition = _G.GetPlayerMapPosition
+local PlaySoundFile = _G.PlaySoundFile
+local QuestMapUpdateAllQuests = _G.QuestMapUpdateAllQuests
+local QuestPOIUpdateIcons = _G.QuestPOIUpdateIcons
+local ToggleDropDownMenu = _G.ToggleDropDownMenu
+local UnitOnTaxi = _G.UnitOnTaxi
+local WorldMapFrame_UpdateQuests = _G.WorldMapFrame_UpdateQuests
+
 local err_params = {}
 local function err(msg, ...)
-	if not WoWPro.map_debug then return end
+	if not _G.WoWPro.map_debug then return end
 	msg = tostring(msg)
 	wipe(err_params)
 	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
@@ -39,6 +50,7 @@ end
 ----------------------------------
 --      WoWPro_Mapping.lua      --
 ----------------------------------
+local WoWPro = LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 
 local L = WoWPro_Locale
 local cache = {}
@@ -65,8 +77,8 @@ local SHOW_WORLDMAP_TOOLTIP = true
 -- the TomTom waypoint on the minimap
 local function WoWProMapping_minimap_onclick(event, uid, self, button)
 	if SHOW_MINIMAP_MENU then
-		_G.TomTom:InitializeDropdown(uid)
-		_G.ToggleDropDownMenu(1, nil, _G.TomTom.dropdown, "cursor", 0, 0)
+		TomTom:InitializeDropdown(uid)
+		ToggleDropDownMenu(1, nil, TomTom.dropdown, "cursor", 0, 0)
 	end
 end
 
@@ -74,8 +86,8 @@ end
 -- the TomTom waypoint on the world map
 local function WoWProMapping_worldmap_onclick(event, uid, self, button)
 	if SHOW_WORLDMAP_MENU then
-		_G.TomTom:InitializeDropdown(uid)
-		_G.ToggleDropDownMenu(1, nil, _G.TomTom.dropdown, "cursor", 0, 0)
+		TomTom:InitializeDropdown(uid)
+		ToggleDropDownMenu(1, nil, TomTom.dropdown, "cursor", 0, 0)
 	end
 end
 
@@ -145,11 +157,11 @@ local OldCleardistance	-- saves TomTom's option to restore it
 -- Function to handle the distance callback in TomTom, when player gets to the final destination
 local function WoWProMapping_distance(event, uid, range, distance, lastdistance)
 err("Distance callback: event = %s, title = %s, range = %s, distance = %s, lastdistance = %s", event, uid.title, range, distance, lastdistance)
-	if _G.UnitOnTaxi("player") then return end
+	if UnitOnTaxi("player") then return end
 
 	-- Replicate normal TomTom arrival functionality
-	if _G.TomTom.profile.arrow.enablePing then
-	  _G.PlaySoundFile("Interface\\AddOns\\TomTom\\Media\\ping.mp3")
+	if TomTom.profile.arrow.enablePing then
+	  PlaySoundFile("Interface\\AddOns\\TomTom\\Media\\ping.mp3")
 	end
 
 	--if not autoarrival then return end
@@ -169,14 +181,14 @@ err("Distance callback: event = %s, title = %s, range = %s, distance = %s, lastd
 
 	if autoarrival == 1 then
 		for i=iactual,#cache,1 do
-			_G.TomTom:RemoveWaypoint(cache[i].uid)
+			TomTom:RemoveWaypoint(cache[i].uid)
 		end
 
-		-- _G.TomTom.db.profile.arrow.setclosest = true
-		local closest_uid = _G.TomTom:GetClosestWaypoint()
+		-- TomTom.db.profile.arrow.setclosest = true
+		local closest_uid = TomTom:GetClosestWaypoint()
 
 		if closest_uid then
-			_G.TomTom:SetCrazyArrow(cache[iactual-1].uid, 1, cache[iactual-1].desc)
+			TomTom:SetCrazyArrow(cache[iactual-1].uid, 1, cache[iactual-1].desc)
 
 			local iactual
 			for i,waypoint in ipairs(cache) do
@@ -186,7 +198,7 @@ err("Distance callback: event = %s, title = %s, range = %s, distance = %s, lastd
 
 			if iactual then
 				for i=iactual+1,#cache,1 do
-					_G.TomTom:RemoveWaypoint(cache[i].uid)
+					TomTom:RemoveWaypoint(cache[i].uid)
 				end
 			end
 		end
@@ -201,12 +213,12 @@ err("Distance callback: event = %s, title = %s, range = %s, distance = %s, lastd
 		if iactual == 1 and autoarrival == 2 then
 			WoWPro.CompleteStep(cache[iactual].index)
 		else
---			_G.TomTom:SetCrazyArrow(cache[iactual-1].uid, _G.TomTom.db.profile.arrow.arrival, cache[iactual-1].desc)
+--			TomTom:SetCrazyArrow(cache[iactual-1].uid, TomTom.db.profile.arrow.arrival, cache[iactual-1].desc)
 			if iactual > 1 then
-				_G.TomTom:SetCrazyArrow(cache[iactual-1].uid, cache[iactual-1].real_arrivaldistance-1, cache[iactual-1].desc)
+				TomTom:SetCrazyArrow(cache[iactual-1].uid, cache[iactual-1].real_arrivaldistance-1, cache[iactual-1].desc)
 			end
 			for i=#cache,iactual,-1 do
-				_G.TomTom:RemoveWaypoint(cache[i].uid)
+				TomTom:RemoveWaypoint(cache[i].uid)
 				table.remove(cache, i)
 			end
 			for i=1,#cache,1 do
@@ -217,7 +229,7 @@ err("Distance callback: event = %s, title = %s, range = %s, distance = %s, lastd
 
 end
 
--- table with custom callback functions to use in _G.TomTom
+-- table with custom callback functions to use in TomTom
 local WoWProMapping_callbacks_tomtom = {
 			minimap = {
 				onclick = WoWProMapping_minimap_onclick,
@@ -317,7 +329,7 @@ function WoWPro:findBlizzCoords(questId)
 	local POIFrame
 
     	-- Try to find the correct quest frame
-    	for i = 1, _G.MAX_NUM_QUESTS do
+    	for i = 1, MAX_NUM_QUESTS do
         	local questFrame = _G["WorldMapQuestFrame"..i];
         	if ( questFrame ) then
              		if ( questFrame.questId == questId ) then
@@ -336,7 +348,7 @@ function WoWPro:findBlizzCoords(questId)
 			return nil, nil
     	end
 
-    	local frame = _G.WorldMapDetailFrame
+    	local frame = WorldMapDetailFrame
     	local width = frame:GetWidth()
     	local height = frame:GetHeight()
     	local scale = frame:GetScale() / POIFrame:GetScale()
@@ -353,7 +365,7 @@ end
 
 local FinalCoord = {}
 function WoWPro:MapPointDelta()
-    local x, y = _G.GetPlayerMapPosition("player");
+    local x, y = GetPlayerMapPosition("player");
     if FinalCoord then
         local X,Y
         X=FinalCoord[1] or x
@@ -367,7 +379,7 @@ function WoWPro:MapPointDelta()
 end
 
 function WoWPro:MapPoint(row, forceBlizCoord)
-	local GID = _G.WoWProDB.char.currentguide
+	local GID = WoWPro.DB.char.currentguide
 	if not GID or not WoWPro.Guides[GID] then return end
 
 	-- Removing old map point --
@@ -399,21 +411,21 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 
 	-- Loading Blizzard Coordinates for this objective, if coordinates aren't provided --
 	if (WoWPro.action[i]=="T" or WoWPro.action[i]=="C") and WoWPro.QID and WoWPro.QID[i] and (not coords or forceBlizCoord)then
-		_G.QuestMapUpdateAllQuests()
-		_G.QuestPOIUpdateIcons()
-		_G.WorldMapFrame_UpdateQuests()
+		QuestMapUpdateAllQuests()
+		QuestPOIUpdateIcons()
+		WorldMapFrame_UpdateQuests()
 		local x, y = WoWPro:findBlizzCoords(WoWPro.QID[i])
 		if x and y then coords = tostring(x)..","..tostring(y) end
 	end
 
 	-- Using LightHeaded if the user has it and if there aren't coords from anything else --
-	if _G.LightHeaded and WoWPro.QID and WoWPro.QID[i] and not coords then
+	if LightHeaded and WoWPro.QID and WoWPro.QID[i] and not coords then
 		if type(WoWPro.QID[i]) ~= "number" then return end
 		local npcid, npcname, stype
-		if WoWPro.action[i]=="A" then _, _, _, _, stype, npcname, npcid = _G.LightHeaded:GetQuestInfo(WoWPro.QID[i])
-		else _, _, _, _, _, _, _, stype, npcname, npcid = _G.LightHeaded:GetQuestInfo(WoWPro.QID[i]) end
+		if WoWPro.action[i]=="A" then _, _, _, _, stype, npcname, npcid = LightHeaded:GetQuestInfo(WoWPro.QID[i])
+		else _, _, _, _, _, _, _, stype, npcname, npcid = LightHeaded:GetQuestInfo(WoWPro.QID[i]) end
 		if stype == "npc" then
-			local data = _G.LightHeaded:LoadNPCData(tonumber(npcid))
+			local data = LightHeaded:LoadNPCData(tonumber(npcid))
 			if not data then return end
 			for zid,x,y in data:gmatch("([^,]+),([^,]+),([^:]+):") do
 				zone = zidmap[tonumber(zid)]
@@ -442,21 +454,21 @@ function WoWPro:MapPoint(row, forceBlizCoord)
     end
 
     if not zm then
-	    zm = _G.GetCurrentMapAreaID()
+	    zm = GetCurrentMapAreaID()
 	    zf = 0
 	    if not zone then
-	    	zone = LDM and LDM:MapLocalize(zm)
+	    	zone = LMD and LMD:MapLocalize(zm)
 	    end
 	    WoWPro:Print("Zone ["..tostring(zone).."] not found. Using map id "..tostring(zm))
 	end
 
-	if _G.TomTom and _G.TomTom.db then
-		--_G.TomTom.db.profile.arrow.setclosest = true
+	if TomTom and TomTom.db then
+		--TomTom.db.profile.arrow.setclosest = true
 		--local my_setclosest = true
-		local my_cleardistance = _G.TomTom.db.profile.persistence.cleardistance
-		OldCleardistance = _G.TomTom.db.profile.persistence.cleardistance
+		local my_cleardistance = TomTom.db.profile.persistence.cleardistance
+		OldCleardistance = TomTom.db.profile.persistence.cleardistance
 
-		-- arrival distance, so _G.TomTom can call our customized distance function when player
+		-- arrival distance, so TomTom can call our customized distance function when player
 		-- gets to the waypoints
 		local arrivaldistance
 		if (not my_cleardistance) or (my_cleardistance == 0) then
@@ -482,11 +494,11 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 			local y = tonumber(jcoord:match(",([^|]*)"))
 			if not x or x > 100 then return end
 			if not y or y > 100 then return end
-			if _G.TomTom then
+			if TomTom then
 				local uid
 
 				if numcoords > 1 or autoarrival == 1 or autoarrival == 2 then
-					uid = _G.TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {
+					uid = TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {
 						title = desc,
 						desc = desc,
 						callbacks = WoWProMapping_callbacks_tomtom,
@@ -498,7 +510,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 						crazy = false -- We will set it with the callback if there is more then one
 					})
 				else
-					uid = _G.TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {
+					uid = TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {
 						title = desc,
 						desc = desc,
 						persistent = false,
@@ -530,8 +542,8 @@ err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j
 
 		if autoarrival and #cache > 0 then
 			if autoarrival == 1 then
-				-- _G.TomTom.db.profile.arrow.setclosest = true
-				local closest_uid = _G.TomTom:GetClosestWaypoint()
+				-- TomTom.db.profile.arrow.setclosest = true
+				local closest_uid = TomTom:GetClosestWaypoint()
 
 				if closest_uid then
 					local iactual
@@ -541,9 +553,9 @@ err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j
 					end
 
 					if iactual then
-						_G.TomTom:SetCrazyArrow(closest_uid, 1, cache[iactual].desc)
+						TomTom:SetCrazyArrow(closest_uid, 1, cache[iactual].desc)
 						for i=iactual+1,#cache,1 do
-							_G.TomTom:RemoveWaypoint(cache[i].uid)
+							TomTom:RemoveWaypoint(cache[i].uid)
 						end
 					end
 				else
@@ -551,14 +563,14 @@ err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j
 				end
 
 			elseif autoarrival == 2 or autoarrival == 3 then
-				--_G.TomTom.db.profile.arrow.setclosest = false
+				--TomTom.db.profile.arrow.setclosest = false
 				-- Set the arrow to the last one in the cache
-				_G.TomTom:SetCrazyArrow(cache[#cache].uid, 1, cache[#cache].desc)
+				TomTom:SetCrazyArrow(cache[#cache].uid, 1, cache[#cache].desc)
 			end
 
 		end
-		--_G.TomTom.db.profile.persistence.cleardistance = OldCleardistance
-	--elseif _G.TomTom then
+		--TomTom.db.profile.persistence.cleardistance = OldCleardistance
+	--elseif TomTom then
 	--	-- Parsing and mapping coordinates --
 	--	local numcoords = select("#", string.split(";", coords))
 	--	for j=1,numcoords do
@@ -567,7 +579,7 @@ err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j
 	--		local y = tonumber(jcoord:match(",([^|]*)"))
 	--		if not x or x > 100 then return end
 	--		if not y or y > 100 then return end
-	--		table.insert(cache, _G.TomTom:AddZWaypoint(zc, zi, x, y, desc, false))
+	--		table.insert(cache, TomTom:AddZWaypoint(zc, zi, x, y, desc, false))
 			--FinalCoord = { x , y }
 	--		FinalCoord[1] = x
 	--		FinalCoord[2] = y
@@ -578,15 +590,15 @@ err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j
 end
 
 function WoWPro:RemoveMapPoint()
-	if _G.TomTom and _G.TomTom.db then
+	if TomTom and TomTom.db then
 		for i=1,#cache,1 do
 		    if cache[i].uid ~= nil then
-			    _G.TomTom:RemoveWaypoint(cache[i].uid)
+			    TomTom:RemoveWaypoint(cache[i].uid)
 			end
 		end
 		wipe(cache)
 		wipe(WoWProMapping_callbacks_tomtom.distance)
-	elseif _G.TomTom then
-		while cache[1] do _G.TomTom:RemoveWaypoint(table.remove(cache)) end
+	elseif TomTom then
+		while cache[1] do TomTom:RemoveWaypoint(table.remove(cache)) end
 	end
 end
