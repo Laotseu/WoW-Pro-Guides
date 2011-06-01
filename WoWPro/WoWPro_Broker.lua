@@ -27,7 +27,7 @@ local GetFactionInfo = _G.GetFactionInfo
 local GetItemCount = _G.GetItemCount
 local GetNumFactions = _G.GetNumFactions
 local GetNumQuestLeaderBoards = _G.GetNumQuestLeaderBoards
-local GetNumQuestLogEntries = _G.GetNumQuestLeaderBoards
+local GetNumQuestLogEntries = _G.GetNumQuestLogEntries
 local GetProfessionInfo = _G.GetProfessionInfo
 local GetProfessions = _G.GetProfessions
 local GetQuestLogLeaderBoard = _G.GetQuestLogLeaderBoard
@@ -38,6 +38,17 @@ local QuestMapUpdateAllQuests = _G.QuestMapUpdateAllQuests
 local QuestPOIUpdateIcons = _G.QuestPOIUpdateIcons
 local UnitFactionGroup = _G.UnitFactionGroup
 local WorldMapFrame_UpdateQuests = _G.WorldMapFrame_UpdateQuests
+
+_G.WoWPro.quest_log_debug = false
+
+local err_params = {}
+local function err(msg, ...)
+	if not _G.WoWPro.quest_log_debug then return end
+	msg = tostring(msg)
+	wipe(err_params)
+	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
+	_G.geterrorhandler()(msg:format(_G.unpack(err_params)) .. " - " .. _G.time())
+end
 
 -----------------------------
 --      WoWPro_Broker      --
@@ -442,12 +453,16 @@ function WoWPro.CompleteStep(step)
 	WoWPro:UpdateGuide()
 end
 
+WoWPro.oldQuests = AcquireTable()
+WoWPro.QuestLog = AcquireTable()
+
 -- Populate the Quest Log table for other functions to call on --
 function WoWPro:PopulateQuestLog()
 	WoWPro:dbp("Populating quest log...")
+--err("Populating quest log...")
 
-	WoWPro.oldQuests = WoWPro.oldQuests or AcquireTable()
-	WoWPro.QuestLog = WoWPro.QuestLog or AcquireTable()
+	--WoWPro.oldQuests = WoWPro.oldQuests or AcquireTable()
+	--WoWPro.QuestLog = WoWPro.QuestLog or AcquireTable()
 
 	WoWPro.oldQuests, WoWPro.QuestLog = WoWPro.QuestLog, WoWPro.oldQuests
 
@@ -464,16 +479,6 @@ function WoWPro:PopulateQuestLog()
 		if isHeader then
 			currentHeader = questTitle
 		else
-			local leaderBoard
-			if GetNumQuestLeaderBoards(i) and GetQuestLogLeaderBoard(1, i) then
-				--leaderBoard = {}
-				leaderBoard = WoWPro.QuestLog[questID] and WoWPro.QuestLog[questID].leaderBoard or AcquireTable()
-				WipeTable(leaderBoard)
-				for j=1,GetNumQuestLeaderBoards(i) do
-					leaderBoard[j] = GetQuestLogLeaderBoard(j, i)
-				end
-			--else leaderBoard = nil end
-			end
 			local link, icon, charges = GetQuestLogSpecialItemInfo(i)
 			local use
 			if link then
@@ -487,20 +492,29 @@ function WoWPro:PopulateQuestLog()
 			local x, y = WoWPro:findBlizzCoords(questID)
 			if x and y then coords = ("%.2f"):format(x)..","..("%.2f"):format(y) end
 
-			WoWPro.QuestLog[questID] = WoWPro.QuestLog[questID] or AcquireTable()
+			WoWPro.QuestLog[questID] = AcquireTable()
 			local quest_log_item = WoWPro.QuestLog[questID]
-			WipeTable(quest_log_item)
 			quest_log_item.title = questTitle
 			quest_log_item.level = level
 			quest_log_item.tag = questTag
 			quest_log_item.group = suggestedGroup
 			quest_log_item.complete = isComplete
 			quest_log_item.daily = isDaily
-			quest_log_item.leaderBoard = leaderBoard
 			quest_log_item.header = currentHeader
 			quest_log_item.use = use
 			quest_log_item.coords = coords
 			quest_log_item.index = i
+--err("Adding QID: %s", questID)
+			local leaderBoard
+			if GetNumQuestLeaderBoards(i) and GetQuestLogLeaderBoard(1, i) then
+				--leaderBoard = {}
+				leaderBoard = AcquireTable()
+				for j=1,GetNumQuestLeaderBoards(i) do
+					leaderBoard[j] = GetQuestLogLeaderBoard(j, i)
+				end
+			--else leaderBoard = nil end
+			end
+			quest_log_item.leaderBoard = leaderBoard
 		end
 	end
 --	if WoWPro.oldQuests == {} then return end
@@ -527,5 +541,5 @@ function WoWPro:PopulateQuestLog()
 		num = num+1
 	end
 	WoWPro:dbp("Quest Log populated. "..num.." quests found.")
-
+err("Quest Log populated, %s quests found.", num)
 end

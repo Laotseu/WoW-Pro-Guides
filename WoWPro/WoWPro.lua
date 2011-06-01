@@ -167,16 +167,16 @@ function WoWPro:OnEnable()
 		WoWPro:dbp("Enabling "..name.." module...")
 		module:Enable()
 	end
-	
+
 	WoWPro:CustomizeFrames()	-- Applies profile display settings
 
 	-- Keybindings Initial Setup --
 	local keys = GetBindingKey("CLICK WoWPro_FauxItemButton:LeftButton")
-	if not keys then	
+	if not keys then
 		SetBinding("CTRL-SHIFT-I", "CLICK WoWPro_FauxItemButton:LeftButton")
 	end
 	local keys = GetBindingKey("CLICK WoWPro_FauxTargetButton:LeftButton")
-	if not keys then	
+	if not keys then
 		SetBinding("CTRL-SHIFT-T", "CLICK WoWPro_FauxTargetButton:LeftButton")
 	end
 
@@ -197,17 +197,17 @@ function WoWPro:OnEnable()
 	        end
 	    end
 	end)
-	    
+
 	WoWPro.EventFrame:SetScript("OnEvent", function(self, event, ...)		-- Setting up event handler
 		if WoWPro.InitLockdown then
 		    WoWPro:dbp("LockEvent Fired: "..event)
 		else
 		    WoWPro:dbp("Event Fired: "..event)
 		end
-	
+
 
 		-- Unlocking event processong till after things get settled --
-		if event == "PLAYER_ENTERING_WORLD" then	    
+		if event == "PLAYER_ENTERING_WORLD" then
 		    WoWPro.LockdownTimer = 2.0
 
 		-- Updating party-dependant options --
@@ -239,29 +239,29 @@ function WoWPro:OnEnable()
 			    WoWPro.UpdateGuide()
 			end
 		end
-		
+
 		if WoWPro.InitLockdown then
 		    return
 		end
-		
+
 		-- Locking event processong till after things get settled --
 		if event == "PLAYER_LEAVING_WORLD" then
 		    WoWPro.InitLockdown = true
 		end
-		
+
 		-- Unlocking guide frame when leaving combat --
 		if event == "PLAYER_REGEN_ENABLED" or event == "PLAYER_ENTERING_WORLD" then
-			WoWPro:UpdateGuide() 
+			WoWPro:UpdateGuide()
 		end
-		
+
 		-- Updating party-dependant options --
 		if event == "PARTY_MEMBERS_CHANGED" and not InCombatLockdown() then
-			WoWPro:UpdateGuide() 
+			WoWPro:UpdateGuide()
 		end
 
 		-- Updating WoWPro keybindings --
 		if event == "UPDATE_BINDINGS" and not InCombatLockdown() then
-			WoWPro:UpdateGuide() 
+			WoWPro:UpdateGuide()
 		end
 
 		-- Module Event Handlers --

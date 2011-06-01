@@ -822,7 +822,7 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
 			if WoWProCharDB.completedQIDs[QID] then
 				WoWPro.CompleteStep(i)
 				completion = true
-            end
+         end
 
             -- Quest AutoComplete --
 --			if (WoWPro.newQuest == QID or currentquests[QID]) and (action == "A") and not completion
