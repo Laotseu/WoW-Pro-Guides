@@ -292,7 +292,7 @@ T The Element of Supplies|QID|28200|M|58.97,46.16|N|To Sergeant Mehat.|
 T Ploughshares to Swords|QID|28201|M|58.94,46.10|N|To High Commander Kamses.|
 A Ancient Weapons|QID|27839|M|58.94,46.10|N|From High Commander Kamses.|
 T Return to Camp|QID|28291|M|58.94,46.10|N|To High Commander Kamses.|
-T The Pit of Scales|QID|27738|M|56.70,54.65|N|To Vizier Tanotep.|
+T The Pit of Scales|QID|27738|N|To Vizier Tanotep.|
 
 A The High Council's Decision|QID|28533|M|56.70,54.65|N|From Vizier Tanotep.|
 C Ancient Weapons|QID|27839|U|62534|M|60.43,58.56|N|Right-click one of the white chests and loot an Ancient Tol'Vir Armaments.|
@@ -325,7 +325,7 @@ A The Curse of the Tombs|QID|27755|M|67.27,42.82|N|From Sun Prophet Tumet.|
 
 C The Curse of the Tombs|QID|27755|M|69.58,58.50|N|Kill Crazed Diggers.|S|QO|Crazed Digger slain: 6/6|
 K Mekgineer Mixeltweed|QID|27755|M|69.58,58.50|QO|Mekgineer Mixeltweed slain: 1/1|N|Kill Mekgineer Mixeltweed.|
-C The Curse of the Tombs|QID|27755|M|69.58,58.50|N|Kill Crazed Diggers.|S|QO|Crazed Digger slain: 6/6|
+C The Curse of the Tombs|QID|27755|M|69.58,58.50|N|Kill Crazed Diggers.|US|QO|Crazed Digger slain: 6/6|
 
 l A.I.D.A. Communicator|QID|27760|L|62483|M|22.47,64.82|N|If you have not gotten this item yet keep killing and looting Crazed Diggers.|
 A Artificial Intelligence|QID|27760|U|62483|M|22.47,64.82|N|From the A.I.D.A. Communicator.|
@@ -341,7 +341,7 @@ N Second Bomb Cluster|QID|27761|U|62398|M|79.01,64.05|N|Use the Holographic Proj
 C A Disarming Distraction|QID|27761|U|62398|M|78.81,61.82|N|Use the Holographic Projector then right-click on the First Bomb Cluster to disarm it.|QO|First Bomb Cluster disarmed: 1/1|
 C Unstable Bomb Bot deactivated|QID|27761|U|62398|QO|Unstable Bomb Bot deactivated: 4/4|M|79.01,64.05|N|Don't try to fight the cursed engineers. Use the Holographic Projector to distract them repeatedly. Right-click on the Unstable Bomb Bots to defuse them.|US|
 
-T A Disarming Distraction|QID|27761|M|74.08,64.44|N|To the A.I.D.A. Terminal.|
+T A Disarming Distraction|QID|27761|U|62398|M|74.08,64.44|N|To the A.I.D.A. Terminal.|
 T Core Access Codes|QID|27777|M|74.08,64.44|N|To the A.I.D.A. Terminal.|
 
 A Hacking the Wibson|QID|27778|M|74.08,64.44|N|From the A.I.D.A. Terminal.|

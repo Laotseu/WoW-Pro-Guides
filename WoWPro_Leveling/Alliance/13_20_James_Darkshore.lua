@@ -103,10 +103,10 @@ A The Corruption's Source|QID|13529|M|56.23,27.35;56.81,30.04|N|From Tharnariun 
 C The Corruption's Source|QID|13529|M|58.75,32.64|N|Kill Vile Grells on the way.|S|
 l Corruptor's Master Key|QID|13557|L|44927|N|Enter the waterfall, and kill Vile Corruptors until one drops the Corruptor's Master Key.|
 A Bearer of Good Fortune|QID|13557|U|44927|M|57.02,31.46|N|Right click the Corruptor's Master Key to accept the quest.|
-C Bearer of Good Fortune|QID|13557|M|57.50,32.41|N|Open the cages on the way.|S|
+C Bearer of Good Fortune|QID|13557|U|44925|M|57.50,32.41|N|Open the cages on the way.|S|
 A A Troubling Prescription|QID|13831|M|56.78,33.47;57.37,33.80|N|From the Disgusting Workbench on lower level, first cave on left as you come down the ramp.|
 K Zenn Foulhoof|QID|13529|M|58.75,32.64|QO|Zenn Foulhoof slain: 1/1|N|Kill Zenn Foulhoof, you can locate him easily on your minimap by tracking the skull.|
-C Bearer of Good Fortune|QID|13557|M|57.50,32.41|N|Open cages until you finish the quest.|US|
+C Bearer of Good Fortune|QID|13557|U|44925|M|57.50,32.41|N|Open cages until you finish the quest.|US|
 C The Corruption's Source|QID|13529|M|58.75,32.64|N|Kill Vile Grells until you finish the quest.|US|
 C A Cure In The Dark|QID|13554|M|58.86,32.34|N|Kill Vile Grells and Vile Corruptors.|
 R Bashal'Aran Collapse|QID|28529|M|52.81,32.72|N|Head outside the cave, and jump into the 'Maw of the Void'.|
@@ -195,7 +195,7 @@ C War Supplies|QID|13509|U|44999|M|62.42,8.08|US|N|Use the Sentinel Torch to bur
 T One Bitter Wish|QID|13511|M|58.92,19.49|N|To Lieutenant Morra Starbreeze.|
 T War Supplies|QID|13509|M|58.92,19.49|N|To Lieutenant Morra Starbreeze.|
 T Timely Arrival|QID|13510|M|58.92,19.49|N|To Lieutenant Morra Starbreeze.|
-T Denying Manpower|QlID|13507|M|58.92,19.39|N|To Sentinel Tysha Moonblade.|
+T Denying Manpower|QID|13507|M|58.92,19.39|N|To Sentinel Tysha Moonblade.|
 A Strategic Strikes|QID|13512|M|58.94,19.51|N|From Lieutenant Morra Starbreeze.|
 A On the Brink|QID|13513|M|58.94,19.51|N|From Balthule Shadowstrike.|
 A The Looting of Althalaxx|QID|13844|M|59.25,19.63|N|From Mathas Wildwood.|
@@ -347,7 +347,7 @@ A Cleansing the Afflicted|QID|13545|M|43.48,80.96|N|From Elder Brolg.|
 A Jadefire Braziers|QID|13572|M|43.57,80.95|N|From Gren Tornfur.|
 C Cleansing the Afflicted|QID|13545|U|44889|M|44.62,82.07|N|Use the Blessed Herb Bundle on the Furblogs and kill what spawns.|S|
 C Jadefire Braziers|QID|13572|M|44.36,84.07|N|Attack the braziers with the green fire to destroy them.|
-C Cleansing the Afflicted|QID|13545|U|44889|M|44.62,82.07|N|Use the Blessed Herb Bundle on the Furblogs and kill what spawns.|US|
+C Cleansing the Afflicted|QID|13545|U|44889|M|44.62,82.07|N|Use the Blessed Herb Bundle on the Furblogs and kill what spawns.|S|
 L Level 20|QID|13572|LVL|20|N|You should be around level 20 by this point.|
 T Jadefire Braziers|QID|13572|M|43.55,80.94|N|To Gren Tornfur.|
 T Cleansing the Afflicted|QID|13545|M|43.55,80.94|N|To Elder Brolg.|

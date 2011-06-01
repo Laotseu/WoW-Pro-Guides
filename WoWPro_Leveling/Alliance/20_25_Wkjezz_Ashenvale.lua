@@ -93,7 +93,7 @@ A Of Their Own Design|QID|13595|M|29.00,24.06|N|From Bathran.|
 C Bathran's Hair|QID|26473|S|M|21.65,14.69|N|They look like orange bushes.|
 C Don't Forget the Horde|QID|13594|S|M|21.65,17.27|N|Kill the Orcs and Herbalists from Bathran's Haunt.|
 l Bottle of Wildfire|QID|13595|M|32.16,23.39|N|Loot the Bottle of Wildfire from the table in Bathran's Haunt.|L|44967|
-C Of Their Own Design|QID|13595|M|32.81,21.38|N|Burn Bathran's corpse with the Bottle of Wildfire.|
+C Of Their Own Design|QID|13595|U|44967|M|32.81,21.38|N|Burn Bathran's corpse with the Bottle of Wildfire.|
 C Don't Forget the Horde|QID|13594|US|M|31.99,23.55|N|Finish killing mobs.|
 C Bathran's Hair|QID|26473|US|M|31.36,22.80|N|They look like orange bushes..|
 T Of Their Own Design|QID|13595|M|29.08,24.30|N|To Bathran.|
@@ -134,7 +134,7 @@ C Rear Guard Duty|QID|13632|M|30.24,31.40|S|N|Kill any type of Furbolgs.|
 N Deactivate Green Moonstone |QID|13630|M|27.50,33.15|N|Deactivate the Green Moonstone.|QO|Green Moonstone deactivated: 1/1|
 N Deactivate Red Moonstone |QID|13630|M|28.60,31.70|N|Deactivate the Red Moonstone.|QO|Red Moonstone deactivated: 1/1|
 C The Reason Why|QID|13630|M|30.30,31.40|N|Deactivate the Blue Moonstone.|
-C Rear Guard Duty|QID|13632|M|30.24,31.40|US|N|Kill any type of Furbolgs.|
+C Rear Guard Duty|QID|13632|US|M|30.24,31.40|US|N|Kill any type of Furbolgs.|
 T The Reason Why|QID|13630|M|27.07,36.16|N|To Moon Priestess Maestra.|
 T Rear Guard Duty|QID|13632|M|27.26,35.57|N|To Liladris Moonriver.|
 T Finding Teronis|QID|26463|M|20.30,38.75|N|To Teronis' Corpse.|
@@ -155,7 +155,7 @@ A Astranaar Bound|QID|13646|M|26.75,36.04|N|From Sentinel Avana.|
 R Astranaar|QID|13646|NC|N|Talk to Sentinel Avana. She will give you a free ride on one of her Kitties.|
 T Astranaar Bound|QID|13646|M|34.69,48.55|N|To Sentinel Luara.|
 
-f Astranaar|QID|13849|NC|N|Accept the Flight Path from Daelyshia.|
+f Astranaar|QID|13849|NC|M|34.4,48.0|N|Accept the Flight Path from Daelyshia.|
 
 A Astranaar's Burning!|QID|13849|M|34.92,49.77|N|From Sentinel Thenysil.|
 C Astranaar's Burning!|QID|13849|U|46094|M|35.31,49.26|N|Use the bucket and aim for a fire.  Rinse and repeat.|
