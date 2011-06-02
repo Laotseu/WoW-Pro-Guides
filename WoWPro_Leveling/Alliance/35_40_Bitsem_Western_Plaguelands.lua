@@ -67,9 +67,9 @@ T War Machines|QID|27160|M|41.10,70.46|N|To Lurid.|
 A Scholomancer|QID|27162|PRE|27160|M|41.10,70.46|N|From Thassarian.|
 A Brute Strength|QID|27163|PRE|27160|M|41.10,70.46|N|From Thassarian.|
 
-C Brute Strength|QID|27163|M|43.57,69.61|N|Level 35 Elite, inside the building.|
-C Araj the Summoner|QID|27164|U|60849|M|45.20,69.32|N|Use Lang's Hand Grenades if he summons skeletons. Level 35 Elite, by the fountain. Loot Araj's Phylactery Shard.|
-C Scholomancer|QID|27162|M|45.39,72.34|N|Thassarian and Koltira Deathweaver will appear to help you during the battle.|
+C Brute Strength|QID|27163|M|43.57,69.61|T|Rattlegore|N|Level 35 Elite, inside the building.|
+C Araj the Summoner|QID|27164|U|60849|M|45.20,69.32|T|Araj the summoner|N|Use Lang's Hand Grenades if he summons skeletons. Level 35 Elite, by the fountain. Loot Araj's Phylactery Shard.|
+C Scholomancer|QID|27162|M|45.39,72.34|T|Darkmaster Gandling|N|Thassarian and Koltira Deathweaver will appear to help you during the battle.|
 
 T Scholomancer|QID|27162|M|41.13,70.48|N|To Thassarian.|
 T Brute Strength|QID|27163|M|41.13,70.48|N|To Thassarian.|
@@ -183,7 +183,7 @@ C It's About Time!|QID|27156|M|43.09,16.33|N|Talk to Trainees. Challenge and bea
 T It's About Time!|QID|27156|M|43.28,15.96|N|To Lieutenant Myner.|
 
 A Drudges...|QID|27157|PRE|27157|M|43.28,15.96|N|From Lieutenant Myner.|
-C Drudges...|QID|27157|QO|Shadril slain: 1/1|M|45.86,12.31;45.37,9.73|N|Enter the mine. Kill the *ew* huge spider.|
+C Drudges...|QID|27157|QO|Shadril slain: 1/1|M|45.86,12.31;45.37,9.73|T|Shadril|N|Enter the mine. Kill the *ew* huge spider.|
 T Drudges...|QID|27157|M|43.27,15.91|N|To Lieutenant Myner.|
 
 C Taelan Fordring's Legacy|QID|27151|M|54.78,24.69|N|Kill Gnoll looters.|
