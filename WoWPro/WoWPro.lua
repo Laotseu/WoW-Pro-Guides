@@ -12,11 +12,18 @@ local ipairs = _G.ipairs
 local pairs = _G.pairs
 local tinsert = _G.tinsert
 
+local UIParent = _G.UIParent
+
+local CreateFrame = _G.CreateFrame
+local GetAddOnMetadata = _G.GetAddOnMetadata
 local GetBindingKey = _G.GetBindingKey
 local GetQuestsCompleted = _G.GetQuestsCompleted
 local InCombatLockdown = _G.InCombatLockdown
 local LibStub = _G.LibStub
 local SetBinding = _G.SetBinding
+
+local TomTom = _G.TomTom
+local Swatter = _G.Swatter
 
 --------------------------
 --      WoWPro.lua      --
@@ -30,8 +37,8 @@ WoWPro.DebugMode = false
 WoWPro.Guides = {}
 WoWPro.InitLockdown = true  -- Set when the addon is loaded
 
-local WoWProDB
-local WoWProCharDB
+--local WoWProDB
+--local WoWProCharDB
 
 -- WoWPro keybindings name descriptions --
 _G["BINDING_NAME_CLICK WoWPro_FauxItemButton:LeftButton"] = "Use quest item"
@@ -105,7 +112,7 @@ WoWPro.Tags = { "action", "step", "note", "index", "map", "sticky",
 
 -- Called before all addons have loaded, but after saved variables have loaded. --
 function WoWPro:OnInitialize()
-	WoWProDB = LibStub("AceDB-3.0"):New("WoWProData", defaults, true) -- Creates DB object to use with Ace
+	local WoWProDB = LibStub("AceDB-3.0"):New("WoWProData", defaults, true) -- Creates DB object to use with Ace
 	WoWPro.DB = WoWProDB
 	_G.WoWProDB = WoWProDB
 	-- Setting up callbacks for use with profiels --
@@ -114,9 +121,9 @@ function WoWPro:OnInitialize()
 	WoWProDB.RegisterCallback(self, "OnProfileReset", "SetDefaults")
 
 	-- Creating empty user settings if none exist --
+	local WoWProCharDB = _G.WoWProCharDB
 	WoWProCharDB = WoWProCharDB or {}
 	WoWPro.CharDB = WoWProCharDB
-	_G.WoWProCharDB = WoWProCharDB
 	WoWProCharDB.Guide = WoWProCharDB.Guide or {}
 	WoWProCharDB.completedQIDs = WoWProCharDB.completedQIDs or {}
 	WoWProCharDB.skippedQIDs = WoWProCharDB.skippedQIDs or {}
@@ -130,6 +137,8 @@ end
 
 -- Called when the addon is enabled, and on log-in and /reload, after all addons have loaded. --
 function WoWPro:OnEnable()
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	WoWPro:dbp("|cff33ff33Enabled|r: Core Addon")
 
 	-- Warning if the user is missing TomTom --
