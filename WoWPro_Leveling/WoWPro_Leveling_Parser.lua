@@ -11,6 +11,7 @@ local _
 local assert = _G.assert
 local floor = _G.floor
 local math = _G.math
+local setmetatable = _G.setmetatable
 local string = _G.string
 local strreplace = _G.strreplace
 local strsplit = _G.strsplit
@@ -26,11 +27,48 @@ local pairs = _G.pairs
 local select = _G.select
 local wipe = _G.wipe
 
+local ERR_NEWTAXIPATH = _G.ERR_NEWTAXIPATH
+
+local ClearOverrideBindings = _G.ClearOverrideBindings
+local CreateFrame = _G.CreateFrame
+local GetBindingKey = _G.GetBindingKey
+local GetItemCooldown = _G.GetItemCooldown
+local GetItemCount = _G.GetItemCount
+local GetItemIcon = _G.GetItemIcon
+local GetItemInfo = _G.GetItemInfo
+local GetNumPartyMembers = _G.GetNumPartyMembers
+local GetNumQuestLeaderBoards = _G.GetNumQuestLeaderBoards
+local GetNumQuestLogEntries = _G.GetNumQuestLogEntries
+local GetQuestID = _G.GetQuestID
+local GetQuestLink = _G.GetQuestLink
+local GetQuestLogLeaderBoard = _G.GetQuestLogLeaderBoard
+local GetQuestLogSpecialItemInfo = _G.GetQuestLogSpecialItemInfo
+local GetQuestLogTitle = _G.GetQuestLogTitle
+local GetSpellAvailableLevel = _G.GetSpellAvailableLevel
+local GetSpellBookItemInfo = _G.GetSpellBookItemInfo
+local GetSpellBookItemName = _G.GetSpellBookItemName
+local GetSubZoneText = _G.GetSubZoneText
+local GetZoneText = _G.GetZoneText
+local InCombatLockdown = _G.InCombatLockdown
+local IsInInstance = _G.IsInInstance
+local PlaySoundFile = _G.PlaySoundFile
+local QuestLog_OpenToQuest = _G.QuestLog_OpenToQuest
+local QuestLogPushQuest = _G.QuestLogPushQuest
+local QuestMapUpdateAllQuests = _G.QuestMapUpdateAllQuests
+local QuestPOIGetIconInfo = _G.QuestPOIGetIconInfo
+local QuestPOIUpdateIcons = _G.QuestPOIUpdateIcons
+local SetOverrideBinding = _G.SetOverrideBinding
+local UnitClass = _G.UnitClass
+local UnitFactionGroup = _G.UnitFactionGroup
+local UnitLevel = _G.UnitLevel
+local UnitRace = _G.UnitRace
+local UnitSex = _G.UnitSex
+
 --------------------------------------
 --      WoWPro_Leveling_Parser      --
 --------------------------------------
 
-local L = WoWPro_Locale
+local L = _G.WoWPro_Locale
 WoWPro.Leveling.actiontypes = {
 	A = "Interface\\GossipFrame\\AvailableQuestIcon",
 	C = "Interface\\Icons\\Ability_DualWield",
@@ -71,6 +109,8 @@ WoWPro.Leveling.actionlabels = {
 -- Determine Next Active Step (Leveling Module Specific)--
 -- This function is called by the main NextStep function in the core broker --
 function WoWPro.Leveling:NextStep(k, skip)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local GID = WoWProDB.char.currentguide
 
 	-- Optional Quests --
@@ -131,6 +171,8 @@ end
 
 -- Skip a step --
 function WoWPro.Leveling:SkipStep(index)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local GID = WoWProDB.char.currentguide
 
 	if not WoWPro.QID[index] then return "" end
@@ -173,6 +215,8 @@ end
 
 -- Unskip a step --
 function WoWPro.Leveling:UnSkipStep(index)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local GID = WoWProDB.char.currentguide
 	WoWProCharDB.Guide[GID].completion[index] = nil
 	if WoWPro.QID[index]
@@ -210,6 +254,8 @@ end
 
 -- Quest parsing function --
 local function ParseQuests(...)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	WoWPro:dbp("Parsing Guide...")
 	local i = 1
 	local myclassL, myclass = UnitClass("player")
@@ -269,6 +315,8 @@ local function ParseQuests(...)
 				    WoWPro.zone[i] = nil
 				end
 				_, _, WoWPro.lootitem[i], WoWPro.lootqty[i] = text:find("|L|(%d+)%s?(%d*)|")
+				WoWPro.lootitem[i] = tonumber(WoWPro.lootitem[i])
+				WoWPro.lootqty[i] = WoWPro.lootitem[i] and (tonumber(WoWPro.lootqty[i]) or 1) or nil
 				WoWPro.questtext[i] = text:match("|QO|([^|]*)|?")
 				if text:find("|O|") then
 					WoWPro.optional[i] = true
@@ -290,9 +338,9 @@ local function ParseQuests(...)
 				WoWPro.prof[i] = text:match("|P|([^|]*)|?")
 				WoWPro.rank[i] = text:match("|RANK|([^|]*)|?")
 
-				for _,tag in pairs(WoWPro.Tags) do
-					if not WoWPro[tag][i] then WoWPro[tag][i] = false end
-				end
+--				for _,tag in pairs(WoWPro.Tags) do
+--					if not WoWPro[tag][i] then WoWPro[tag][i] = false end
+--				end
 
 				i = i + 1
 			end end end end
@@ -302,6 +350,8 @@ end
 
 -- Guide Load --
 function WoWPro.Leveling:LoadGuide()
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local GID = WoWProDB.char.currentguide
 
 	-- Parsing quests --
@@ -351,6 +401,8 @@ end
 
 -- Row Content Update --
 function WoWPro.Leveling:RowUpdate(offset)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local GID = WoWProDB.char.currentguide
 	if InCombatLockdown()
 		or not GID
@@ -605,9 +657,9 @@ function WoWPro.Leveling:RowUpdate(offset)
 		local lootqtyi
 		if lootcheck and ( lootitem or action == "B" ) then
 			if not WoWPro.sticky[row.index] then lootcheck = false end
-			if not lootitem then
-				if GetItemCount(step) > 0 and not completion[k] then WoWPro.CompleteStep(k) end
-			end
+			--if not lootitem then
+			--	if GetItemCount(step) > 0 and not completion[k] then WoWPro.CompleteStep(k) end
+			--end
 			if tonumber(lootqty) ~= nil then lootqtyi = tonumber(lootqty) else lootqtyi = 1 end
 			if GetItemCount(lootitem) >= lootqtyi and not completion[k] then WoWPro.CompleteStep(k) end
 		end
@@ -638,6 +690,8 @@ end
 
 -- Event Response Logic --
 function WoWPro.Leveling:EventHandler(self, event, ...)
+	local WoWProCharDB = WoWPro.CharDB
+
 	WoWPro:dbp("Running: Leveling Event Handler")
 
 	-- Auto-Completion --
@@ -701,6 +755,8 @@ end
 
 -- Auto-Complete: Get flight point --
 function WoWPro.Leveling:AutoCompleteGetFP(...)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	for i = 1,15 do
 		local index = WoWPro.rows[i].index
 		if ... == ERR_NEWTAXIPATH and WoWPro.action[index] == "f"
@@ -725,9 +781,9 @@ local qids = setmetatable({}, {
 local abandon_qid
 
 -- Debug
-WoWPro_Debug = {}
-WoWPro_Debug.currentquests = currentquests
-WoWPro_Debug.oldquests = oldquests
+_G.WoWPro_Debug = {}
+_G.WoWPro_Debug.currentquests = currentquests
+_G.WoWPro_Debug.oldquests = oldquests
 
 local orig = _G.AbandonQuest
 _G.AbandonQuest = function(...)
@@ -737,6 +793,8 @@ end
 
 -- Get the turn ins into completedQIDs
 function WoWPro.Leveling:GetTurnins()
+	local WoWProCharDB = WoWPro.CharDB
+
 	currentquests, oldquests = oldquests, currentquests
 	for k in pairs(currentquests) do currentquests[k] = nil end
 	currentobj, oldobj = oldobj, currentobj
@@ -796,6 +854,8 @@ end
 
 -- Auto-Complete: Quest Update --
 function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local GID = WoWProDB.char.currentguide
 	if not GID or not WoWPro.Guides[GID] then return end
 
@@ -857,6 +917,13 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
 			-- Verify with FlightPoint addons
 			if action == "f" and not completion then
 				-- Futur code to interact with FlightMap type of addons
+			end
+
+			-- Loot completion
+			if WoWPro.lootitem[i] and not completion
+				and GetItemCount( WoWPro.lootitem[i] ) >=  WoWPro.lootqty[i] then
+				WoWPro.CompleteStep(i)
+				completion = true
 			end
 
 			-- Partial Completion --
@@ -928,6 +995,7 @@ local function GetLootTrackingInfo(lootitem,lootqty,count)
 	if not GetItemInfo(lootitem) then return "" end
 	local track, numinbag = "" 								--If the function did have a track string, adds a newline
 	track = track.." - "..GetItemInfo(lootitem)..": " 	--Adds the item's name to the string
+--	numinbag = GetItemCount(lootitem)+(count or 0)		--Finds the number in the bag, and adds a count if supplied
 	numinbag = GetItemCount(lootitem)+(count or 0)		--Finds the number in the bag, and adds a count if supplied
 	track = track..numinbag										--Adds the number in bag to the string
 	track = track.."/"..lootqty								--Adds the total number needed to the string
@@ -939,13 +1007,17 @@ end
 
 -- Auto-Complete: Loot based --
 function WoWPro.Leveling:AutoCompleteLoot(msg)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local lootqtyi
 	local _, _, itemid, name = msg:find(L["^You .*Hitem:(%d+).*(%[.+%])"])
+	itemid = tonumber(itemid)
 	local _, _, _, _, count = msg:find(L["^You .*Hitem:(%d+).*(%[.+%]).*x(%d+)."])
 	if count == nil then count = 1 end
 	for i = 1,1+WoWPro.ActiveStickyCount do
 		local index = WoWPro.rows[i].index
-		if tonumber(WoWPro.lootqty[index]) ~= nil then lootqtyi = tonumber(WoWPro.lootqty[index]) else lootqtyi = 1 end
+--		if tonumber(WoWPro.lootqty[index]) ~= nil then lootqtyi = tonumber(WoWPro.lootqty[index]) else lootqtyi = 1 end
+		lootqtyi = WoWPro.lootqty[index] or 1
 		if WoWProDB.profile.track and WoWPro.lootitem[index] then
 			local track = GetLootTrackingInfo(WoWPro.lootitem[index],lootqtyi,count)
 			WoWPro.rows[i].track:SetText(strtrim(track))
@@ -961,6 +1033,8 @@ end
 
 -- Auto-Complete: Set hearth --
 function WoWPro.Leveling:AutoCompleteSetHearth(...)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local msg = ...
 	local _, _, loc = msg:find(L["(.*) is now your home."])
 	if loc then
@@ -987,6 +1061,8 @@ end
 
 -- Auto-Complete: Zone based --
 function WoWPro.Leveling:AutoCompleteZone()
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount or 0
 	local currentindex = WoWPro.rows[1+WoWPro.ActiveStickyCount].index
 	local action = WoWPro.action[currentindex]
@@ -1004,6 +1080,8 @@ end
 
 -- Auto-Complete: Level based --
 function WoWPro.Leveling:AutoCompleteLevel(...)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local newlevel = ... or UnitLevel("player")
 	if WoWProCharDB.Guide then
 		local GID = WoWProDB.char.currentguide
@@ -1020,6 +1098,8 @@ end
 
 -- Update Quest Tracker --
 function WoWPro.Leveling:UpdateQuestTracker()
+	local WoWProDB = WoWPro.DB
+
 	if not WoWPro.GuideFrame:IsVisible() then return end
 	local GID = WoWProDB.char.currentguide
 	if not GID or not WoWPro.Guides[GID] then return end
@@ -1030,7 +1110,7 @@ function WoWPro.Leveling:UpdateQuestTracker()
 		local action = WoWPro.action[index]
 		local lootitem = WoWPro.lootitem[index]
 		local lootqty = WoWPro.lootqty[index]
-		if tonumber(lootqty) ~= nil then lootqty = tonumber(lootqty) else lootqty = 1 end
+--		if tonumber(lootqty) ~= nil then lootqty = tonumber(lootqty) else lootqty = 1 end
 		local QID = WoWPro.QID[index]
 		-- Setting up quest tracker --
 		row.trackcheck = false
