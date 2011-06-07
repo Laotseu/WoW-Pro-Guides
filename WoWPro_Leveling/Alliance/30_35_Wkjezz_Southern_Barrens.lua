@@ -260,7 +260,6 @@ C Lion's Pride|QID|25041|S|M|33.84,39.36|
 
 C Diplomacy By Another Means|QID|25044|U|49782|M|43.05,41.87|N|Blow the horn in the pit.|
 
-T Diplomacy By Another Means|QID|25044|M|43.02,41.73|N|UI Alert.|
 
 C Fields of Blood|QID|25043|S|M|31.87,30.50|N|Take out the grunts.|
 
@@ -268,6 +267,7 @@ C Fields of Blood|QID|25043|US|M|46.35,47.19|
 
 C Lion's Pride|QID|25041|US|M|46.54,47.44|
 
+T Diplomacy By Another Means|QID|25044|M|50.0,49.5|N|To Ambassador Gaines|
 T A Line in the Dirt|QID|25045|M|49.90,49.64|N|To General Hawthorne.|
 
 T Fields of Blood|QID|25043|M|49.90,49.64|N|To General Hawthorne.|
