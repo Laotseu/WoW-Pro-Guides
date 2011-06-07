@@ -767,7 +767,7 @@ function WoWPro.Leveling:AutoCompleteGetFP(...)
 end
 
 do -- Closure
-
+--[==[
 local currentquests, oldquests, firstscan, abandoning = {}, {}
 local currentobj, oldobj = {}, {}
 local currentcompletes = {}
@@ -851,7 +851,7 @@ function WoWPro.Leveling:GetTurnins()
 		end
 	end
 end
-
+]==]
 -- Auto-Complete: Quest Update --
 function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
@@ -877,7 +877,7 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
 --			if not WoWPro.Leveling.CompletingQuest and ( action == "A" or action == "C" )
 --				and completion and WoWPro.missingQuest == QID
 --			then
-			if abandon_qid == QID and WoWPro.Leveling.CompletingQuest and
+			if WoWPro.abandonedQID == QID and WoWPro.Leveling.CompletingQuest and
 					( action == "A" or action == "C" ) and completion then
 				WoWProCharDB.Guide[GID].completion[i] = nil
 				completion = false
@@ -903,7 +903,7 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
 --			end
 
 			-- Quests that are in the current log have been accepted
-			if action == "A" and not completion and currentquests[QID] then
+			if action == "A" and not completion and WoWPro.QuestLog[QID] then
 				WoWPro.CompleteStep(i)
 				completion = true
 			end
@@ -927,8 +927,7 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
 			end
 
 			-- Partial Completion --
-			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[i]
-					and not completion then
+			if WoWPro.QuestLog[QID] and not completion and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[i] then
 				local numquesttext = select("#", string.split(";", WoWPro.questtext[i]))
 				local complete = true
 				for l=1,numquesttext do
@@ -965,12 +964,12 @@ do -- Bucket Closure
 	local f = CreateFrame("Frame")
 	f:Hide()
 	f:SetScript("OnShow", function(self)
-		throt = 0
+		throt = THROTTLE_TIME
 	end)
 	f:SetScript("OnUpdate", function(self, elapsed)
 		throt = throt - elapsed
 		if throt < 0 then
-			WoWPro.Leveling:GetTurnins()
+			--WoWPro.Leveling:GetTurnins()
 			WoWPro:PopulateQuestLog()
 			WoWPro.Leveling:AutoCompleteQuestUpdate()
 			WoWPro.Leveling:UpdateQuestTracker()

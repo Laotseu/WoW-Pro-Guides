@@ -6,10 +6,12 @@ local _G = getfenv(0)
 --local WoWProDB = _G.WoWProDB
 --local WoWProCharDB = _G.WoWProCharDB
 
+local string = _G.string
 local assert = _G.assert
 local math = _G.math
+local select = _G.select
 local tonumber = _G.tonumber
-local string = _G.string
+local tostring = _G.tostring
 local type = _G.type
 
 local table = _G.table
@@ -54,9 +56,9 @@ end
 --      WoWPro_Broker      --
 -----------------------------
 
-local WoWPro = LibStub("AceAddon-3.0"):GetAddon("WoWPro")
+local WoWPro = _G.LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 
-local L = WoWPro_Locale
+local L = _G.WoWPro_Locale
 local OldQIDs, CurrentQIDs, NewQIDs, MissingQIDs
 
 -------------------------------
@@ -456,8 +458,17 @@ end
 WoWPro.oldQuests = AcquireTable()
 WoWPro.QuestLog = AcquireTable()
 
+local abandoning
+local orig = _G.AbandonQuest
+_G.AbandonQuest = function(...)
+	abandoning = true
+	return orig(...)
+end
+
+
 -- Populate the Quest Log table for other functions to call on --
 function WoWPro:PopulateQuestLog()
+	local WoWProCharDB = WoWPro.CharDB
 	WoWPro:dbp("Populating quest log...")
 --err("Populating quest log...")
 
@@ -525,6 +536,15 @@ function WoWPro:PopulateQuestLog()
 		if not WoWPro.oldQuests[QID] then
 			WoWPro.newQuest = QID
 			WoWPro:dbp("New Quest: "..WoWPro.QuestLog[QID].title)
+
+			if not abandoning then
+				-- It's a quest that has been completed
+				WoWProCharDB.completedQIDs[QID] = true
+				WoWPro.abandonedQID = nil
+			else
+				WoWPro.abandonedQID = QID
+			end
+			abandoning = nil
 		end
 	end
 

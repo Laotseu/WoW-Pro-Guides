@@ -31,7 +31,7 @@ local InterfaceOptionsFrame_OpenToCategory = _G.InterfaceOptionsFrame_OpenToCate
 ---------------------------------
 local WoWPro = LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 
-local L = WoWPro_Locale
+local L = _G.WoWPro_Locale
 local AceGUI = LibStub("AceGUI-3.0")
 
 
@@ -902,7 +902,7 @@ function WoWPro:SetMacro(macroType, macroBody)
 	assert(macroType == "WPI" or macroType == "WPT","Invalide macro type: " .. (macroType or 'nil'))
 
 	-- select the icon
-	local macroIcon = (macroType == "WPI" or not macroBody) and 1 or 418
+	local macroIcon = (macroType == "WPI" or not macroBody) and 1 or 240
 
 	-- find macro
 	local macroIndex = _G.GetMacroIndexByName(macroType)
