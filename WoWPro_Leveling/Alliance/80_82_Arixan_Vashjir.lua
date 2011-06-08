@@ -215,7 +215,7 @@ C Sea Legs|QID|24432|L|52504|M|45.2,26.7|Z|Kelp'thar Forest|N|Collect a Conch Sh
 C Sea Legs|QID|24432|L|54828 3|M|45.5,22.6;46.2,25.4|Z|Kelp'thar Forest|N|Collect 3 Saltwater Starfish.|US|
 T Sea Legs|QID|24432|M|45.2,23.4|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Pay It Forward|QID|25281|PRE|24432|M|45.2,23.4|Z|Kelp'thar Forest|N|From Erunak Stonespeaker.|
-C Pay It Forward|QID|25281|U|52710|M|46.6,23.9|Z|Kelp'thar Forest|N|Use the Enchanted Conch Shell to rescue 6 Drowning Soldiers.
+C Pay It Forward|QID|25281|U|52710|M|46.6,23.9|Z|Kelp'thar Forest|N|Use the Enchanted Conch Shell to rescue 6 Drowning Soldiers.|
 T Pay It Forward|QID|25281|M|45.2,23.4|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Rest For the Weary|QID|25405|PRE|25281|M|45.2,23.4|Z|Kelp'thar Forest|N|From Erunak Stonespeaker.|
 T Rest For the Weary|QID|25405|M|44.73,22.57|Z|Kelp'thar Forest|N|To Captain Taylor.|
@@ -307,14 +307,14 @@ C Dah, Nunt... Dah, Nunt...|QID|25657|RANK|2|U|55190|M|58.21,49.04|Z|Kelp'thar F
 T Dah, Nunt... Dah, Nunt...|QID|25657|RANK|2|M|58.34,48.76|Z|Kelp'thar Forest|N|Quest ends automatic.|
 A Shark Weak|QID|27699|PRE|25657|RANK|2|M|58.34,48.76|Z|Kelp'thar Forest|N|Quest starts automatic.|
 C Shark Weak|QID|27699|RANK|2|S|M|59.25,46.87|Z|Kelp'thar Forest|L|55212 5|N|Collect 5 of Gnaws' Teeth.|
-C Blackfin's Booty|QID|25503|RANK|2|M|56.73,53.96|Z|Kelp'thar Forest|L|54640|N|Find Blackfin. He is an orca that swims in the waters above The Accursed Reef. Kill him and loot Gliblingle's Map.|
+C Blackfin's Booty|QID|25503|RANK|2|M|56.73,53.96|Z|Kelp'thar Forest|T|Blackfin|L|54640|N|Find Blackfin. He is an orca that swims in the waters above The Accursed Reef. Kill him and loot Gliblingle's Map.|
 C Shark Weak|QID|27699|RANK|2|US|M|59.2,47.0|Z|Kelp'thar Forest|L|55212 5|N|Collect the missing Gnaw's Teeth.|
 T Shark Weak|QID|27699|RANK|2|M|55.3,38.9|Z|Kelp'thar Forest|N|To Budd.|
 A DUN-dun-DUN-dun-DUN-dun|QID|25670|PRE|27699|RANK|2|M|55.3,38.9|Z|Kelp'thar Forest|N|From Budd.|
-C DUN-dun-DUN-dun-DUN-dun|QID|25670|RANK|2|M|58.21,49.04|Z|Kelp'thar Forest|N|Go back to the Rusty Harpoon Gun. Use Budd's Chain. You will be picked up by Gnaws. Use the Fire Harpoon Gun ability when prompted. Once Gnaws dies, you will be in Gnaws' Boneyard. Swim back to The Accursed Reef.|
+C DUN-dun-DUN-dun-DUN-dun|QID|25670|RANK|2|M|58.4,48.7|Z|Kelp'thar Forest|N|Go back to the Rusty Harpoon Gun. Use Budd's Chain. You will be picked up by Gnaws. Use the Fire Harpoon Gun ability when prompted. Once Gnaws dies, you will be in Gnaws' Boneyard. Swim back to The Accursed Reef.|
 T DUN-dun-DUN-dun-DUN-dun|QID|25670|RANK|2|M|58.37,48.55|Z|Kelp'thar Forest|N|To Budd.|
 A A Bone to Pick|QID|25732|PRE|25670|RANK|2|M|58.37,48.55|Z|Kelp'thar Forest|N|From Budd.|
-C A Bone to Pick|QID|25732|RANK|2|M|53.15,57.75|Z|Kelp'thar Forest|N|Find King Gurboggle, kill him and collect The Pewter Pounder.|
+C A Bone to Pick|QID|25732|RANK|2|M|53.15,57.75|T|King Gurboggle|Z|Kelp'thar Forest|N|Find King Gurboggle, kill him and collect The Pewter Pounder.|
 T Blackfin's Booty|QID|25503|RANK|2|M|55.1,54.8|Z|Kelp'thar Forest|N|Turn the quest in at the Sandy Mound.|
 T A Bone to Pick|QID|25732|RANK|2|M|58.37,48.55|Z|Kelp'thar Forest|N|To Budd.|
 A Decisions, Decisions|QID|25743|PRE|25732|RANK|2|M|58.37,48.52|Z|Kelp'thar Forest|N|From Budd.|
@@ -353,9 +353,9 @@ T Decompression|QID|25888|M|60.48,64.71;63.84,59.66|Z|Kelp'thar Forest|N|To Moan
 T What? What? In My Gut...?|QID|25885|M|63.84,59.66|Z|Kelp'thar Forest|N|To Private Pollard.|
 T The Warden's Time|QID|27708|M|63.84,59.66|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Across the Great Divide|QID|25471|PRE|27708|M|63.8,59.7|Z|Kelp'thar Forest|N|From Erunak Stonespeaker.|
+f Sandy Beach|QID|25471|M|57.06,17.11|Z|Shimmering Expanse|N|Grab the flight point from Francis Greene.|
 f Kelp'thar Forest|QID|25471|M|42.39,66.12|Z|Kelp'thar Forest|N|Grab the flight point from the Swift Seahorse.|
 
-f Shimmering Expanse|QID|25471|M|57.06,17.11|Z|Shimmering Expanse|N|Grab the flight point from Francis Greene.|
 N Across the Great Divide|QID|25471|M|48.31,73.28|Z|Kelp'thar Forest|N|Head to the entrance to the cave. Then click off this step.|
 T Across the Great Divide|QID|25471|M|56.02,13.68|Z|Shimmering Expanse|N|To Farseer Gadra. Head into the cave.|
 A The Looming Threat|QID|25334|PRE|25471|M|56.02,13.68|Z|Shimmering Expanse|N|From Farseer Gadra.|
@@ -377,7 +377,7 @@ A Don't be Shellfish|QID|25219|PRE|25222|RANK|2|M|49.24,42.57|Z|Shimmering Expan
 A Slippery Threat|QID|25220|PRE|25222|RANK|2|M|49.13,41.95|Z|Shimmering Expanse|N|From Caretaker Movra.|
 h Silver Tide Hollow|QID|25215|M|49.13,41.95|Z|Shimmering Expanse|N|At Caretaker Movra.|
 N A Distracting Scent|QID|25215|M|49.2,42|Z|Shimmering Expanse|N|Swim out of Silver Tide Hollow and mount up. All around the entrance you will see naga bodies. Swim close to one and right-click it to start dragging the body.|
-C Don't be Shellfish|QID|25219|S|M|49.2,35.8|Z|Shimmering Expanse|L|52975 10|N|Collect Coilshell Sifters.|
+C Don't be Shellfish|QID|25219|S|T|Coilshell Sifter|M|49.2,35.8|Z|Shimmering Expanse|L|52975 10|N|Collect Coilshell Sifters.|
 C Slippery Threat|QID|25220|S|M|40.5,37.9;49.2,35.8;61,38.2|Z|Shimmering Expanse|N|Kill Spiketooth Eels.|
 C A Distracting Scent|QID|25215|M|50.35,41.11;50.63,45.51|Z|Shimmering Expanse|N|Swim south to Glimmerdeep Gorge. As soon as you are over the gorge you will drop the naga you are dragging. Drag 3 bodies into the gorge to complete Distracting Scent.|
 T The Great Sambino|QID|25216|M|41.3,34.2|Z|Shimmering Expanse|N|From The Great Sambino.|
@@ -389,7 +389,7 @@ C Crabby Patrons|QID|25360|M|41.2,40.0;43.7,39.5;48.8,35.2|US|Z|Shimmering Expan
 T Crabby Patrons|QID|25360|M|41.2,34.2|Z|Shimmering Expanse|N|To Felice.|
 T Undersea Inflation|QID|25218|M|41.2,34.3|Z|Shimmering Expanse|N|To The Great Sambino.|
 A Totem Modification|QID|25217|PRE|25218|M|41.2,34.2|Z|Shimmering Expanse|N|From The Great Sambino.|
-C Totem Modification|QID|25217|M|42.33,33.62|Z|Shimmering Expanse|N|Go to one of the brown/orange patches on the ground and use Sambino's Modified Stoneskin Totem. Defend the totem from whatever sea life comes to destroy it until the Enormous Sea Crab appears. Kill him to complete Totem Modifaction.|
+C Totem Modification|QID|25217|M|42.33,33.62|Z|Shimmering Expanse|U|54214|N|Go to one of the brown/orange patches on the ground and use Sambino's Modified Strength of Earth Totem. Defend the totem from whatever sea life comes to destroy it until the Enormous Sea Crab appears. Kill him to complete Totem Modifaction.|
 T Totem Modification|QID|25217|M|41.2,34.2|Z|Shimmering Expanse|N|To The Great Sambino.|
 A Back In One Piece|QID|25456|PRE|25217|M|41.2,34.2|Z|Shimmering Expanse|N|From The Great Sambino.|
 C Slippery Threat|QID|25220|US|M|40.5,37.9;49.2,35.8;61,38.2|Z|Shimmering Expanse|N|Kill the remaining Spiketooth Eels.|
@@ -596,9 +596,9 @@ C Final Judgement|QID|25951|M|37.50,78.69;42.90,78.40|Z|Shimmering Expanse|N|Swi
 T Final Judgement|QID|25951|M|33.1,75.9|Z|Shimmering Expanse|N|To Lady Naz'jar.|
 T Visions of the Past: Rise From The Deep|QID|25626|M|46.69,57.53;49.45,57.57|Z|Shimmering Expanse|N|To Wavespeaker Valoren.|
 A A Breath of Fresh Air|QID|26005|PRE|25626|M|49.45,57.57|Z|Shimmering Expanse|N|From Wavespeaker Valoren.|
-T A Breath of Fresh Air|QID|26005|M|69.61,75.34|Z|Vashj'ir|U|57412|N|Located on the surface. You can use the Boom Boots to get to the surface. Turn quest in to Captain Taylor.|
 f The Lightless Reaches|QID|26005|M|57.1,75.18|Z|Shimmering Expanse|N|Grab the flight point at the Swift Seahorse.|
 f Voldrin's Hold|QID|26005|M|69.4,75.2|Z|Vashj'ir|N|Grab the flight point from Salty McTavish.|
+T A Breath of Fresh Air|QID|26005|M|69.61,75.34|Z|Vashj'ir|U|57412|N|You can use the Boom Boots to get to the surface. Turn quest in to Captain Taylor.|
 
 A Full Circle|QID|26219|PRE|26005|M|69.6,75.3|Z|Vashj'ir|N|From Captain Taylor.|
 C Full Circle|QID|26219|M|69.6,75.3|Z|Vashj'ir|Z|Shimmering Expanse|N|Get on board the sub once it arrives (can take 1-2 minutes to arrive, listen out for the Engineer's yelling indicating it's arrival).  Board the sub, and head downstairs and stand behind the Captain and Number 2.  Once Darkbreak Cove is secured and the sub docks, you will be automatically placed in next to Captain Glovaal on land.|
@@ -609,9 +609,9 @@ A Claim Korthun's End|QID|26105|PRE|26103|M|54.58,75.62;59.51,71.71|Z|Abyssal De
 C Claim Korthun's End|QID|26105|S|M|55.9,70.6;56.5,72.6;51.9,70.7;53,58;49.2,67.3|Z|Abyssal Depths|N|Kill Hellsong Seadogs.|
 C Bio-Fuel|QID|26103|M|56.8,44.2;53.9,49.6;54.5,62.9;49.3,74.7;56.7,74.4|U|56821|Z|Abyssal Depths|N|Oilify 4 Seabrush Terrapins, Scourgut Remora and Spinescale Hammerheads after killing them.|
 T Bio-Fuel|QID|26103|M|55.5,72.9|Z|Abyssal Depths|N|To Engineer Hexascrub.|
-A Fuel-ology 101|QID|26106|PRE|26103|M|55.5,72.9|Z|Abyssal Depths|N|From Engineer Hexascrub.|
 C Fuel-ology 101|QID|26106|M|55.5,72.9|Z|Abyssal Depths|N|Go to the table in the middle of the camp and click on it to begin mixing. The combination for the correct mixture is: 2x Remora Oil and 3x Hammerhead Oil. Talk to Engineer Hexascrub afterwards.|
 T Fuel-ology 101|QID|26106|M|55.5,72.9|Z|Abyssal Depths|N|To Engineer Hexascrub.|
+A Fuel-ology 101|QID|26106|PRE|26103|M|55.5,72.9|Z|Abyssal Depths|N|From Engineer Hexascrub.|
 A The Brothers Digsong|QID|26014|PRE|26106|M|54.5,72.8|Z|Abyssal Depths|N|From Captain Glovaal.|
 T The Brothers Digsong|QID|26014|M|47.4,49.7|Z|Abyssal Depths|N|To Humphrey Digsong.|
 A Phosphora Hunting|QID|26015|PRE|26014|M|47.4,49.7|Z|Abyssal Depths|N|From Humphrey Digsong.|
@@ -640,7 +640,7 @@ A Treasure Reclamation|QID|25975|PRE|26106|M|55.6,72.9|Z|Abyssal Depths|N|From J
 C Sira'kess Slaying|QID|25950|RANK|2|S|N|Kill Naga.|Z|Abyssal Depths|
 C Those Aren't Masks|QID|25981|S|N|Kill Merciless Ones. They will either be accompanying naga or carrying a gilblin. Any naga you kill will also count toward Sira'kess Slaying but the ones with the gilblin are less dangerous.|Z|Abyssal Depths|
 C Treasure Reclamation|QID|25975|M|40.4,17;37.5,24.3;43.7,21.7;43,15|Z|Abyssal Depths|N|Pick up 6 Deepfin Plunder.|
-C A Standard Day for Azrajar|QID|25977|RANK|2|M|53.3,22.3|Z|Abyssal Depths|U|56250|N|Use the Alliance Standard on Azrajar's corpse.|
+C A Standard Day for Azrajar|QID|25977|RANK|2|M|53.3,22.3|Z|Abyssal Depths|U|56250|T|Fathom-Caller Azrajar|N|Use the Alliance Standard on Azrajar's corpse.|
 C Those Aren't Masks|QID|25981|US|M|44.1,22.4;54.5,22.7;47.8,19.2;39.2,21.4;34.3,27;36.5,35.5|Z|Abyssal Depths|N|Kill the remaining Merciless Ones.|
 C Sira'kess Slaying|QID|25950|RANK|2|US|M|55.9,23;53.3,19.4;50.5,18.6;47.7,15.3;43.7,16.9;41,22.7|Z|Abyssal Depths|N|Kill the remaining Naga.|
 T Sira'kess Slaying|QID|25950|RANK|2|M|55.4,72.9|Z|Abyssal Depths|N|To Lieutenant "Foxy" Topper.|
