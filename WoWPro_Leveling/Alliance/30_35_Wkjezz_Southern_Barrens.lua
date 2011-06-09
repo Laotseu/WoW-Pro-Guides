@@ -6,7 +6,7 @@
 -- URL: http://wow-pro.com/node/3235/revisions/24419/view
 -- Date: 2011-05-25 18:34
 -- Who: Fluclo
--- Log: Missing quest 
+-- Log: Missing quest
 
 -- URL: http://wow-pro.com/node/3235/revisions/24300/view
 -- Date: 2011-04-29 14:34
@@ -135,10 +135,12 @@ A Silencing Rageroar|QID|24956|M|66.92,46.79|N|From Tolliver Houndstooth.|
 T Re-Take the Courtyard|QID|24943|M|67.00,46.57|N|To Thomas Paxton.|
 
 A Lifting the Siege|QID|24948|M|67.00,46.57|N|From Thomas Paxton.|
+C Lifting the Siege|QID|24948|U|52017|S|N|Burn the Blade Thrower.|
+C Silencing Rageroar|QID|24956|S|N|Kill the Rageroar Lieutenants.|
 K Karga Rageroar |QID|24956|L|52036|M|67.6,36.7|N|Kill Karga Rageroar and loot his helm.|
-C Lifting the Siege|QID|24948|U|52017|M|68.17,41.47|N|Burn the Blade Thrower.|QO|Rageroar Blade Thrower Burned: 1/1|M|68.00,36.45|
-C Lifting the Siege|QID|24948|S|U|52017|M|68.17,41.47|N|Burn the Catapults.|
-C Silencing Rageroar|QID|24956|M|68.82,38.76|N|Kill the Rageroar Lieutenants.|
+C Lifting the Siege|QID|24948|U|52017|N|Burn the Blade Thrower.|QO|Rageroar Blade Thrower Burned: 1/1|M|68.00,36.45|
+C Lifting the Siege|QID|24948|US|U|52017|M|68.17,41.47|N|Burn the Catapults.|
+C Silencing Rageroar|QID|24956|US|N|Kill the Rageroar Lieutenants.|
 
 C Lifting the Siege|QID|24948|US|U|52017|M|67.36,37.16|
 T Silencing Rageroar|QID|24956|M|66.94,46.77|N|To Tolliver Houndstooth.|
@@ -148,7 +150,9 @@ T Lifting the Siege|QID|24948|M|66.99,46.60|N|To Thomas Paxton.|
 A Teegan's Troubles|QID|25036|M|66.99,46.60|N|From Thomas Paxton.|
 
 A Scavenged|QID|25002|M|61.88,42.10|N|From Mangled Body.|
+A Teegan's People|QID|25000|M|64.8,46.0|N|From Jeffrey Long|
 
+C Teegan's People|QID|25000|U|M|61.3,44.1|N|Kill and loot the various Raptors in the area|
 C Scavenged|QID|25002|M|62.30,45.11|M|61.30,44.10|N|Loot the Crates from the floor.|
 C Teegan's People|QID|25000|US|M|61.3,44.1|N|Kill and loot the various Raptors in the area|
 
@@ -202,7 +206,7 @@ A Adder Subtraction|QID|24570|M|50.34,40.47|N|From Muyoh.|
 
 A Lashvine Seeds|QID|24571|M|50.34,40.47|N|From Muyoh.|
 
-C Adder Subtraction|QID|24570|S|M|47.57,37.60|N|Jiyambi's Favourite quest! Snakes are hard to see and die from AOE damage, keep your eyes peeled and loot them as you see them.|
+C Adder Subtraction|QID|24570|T|Enervated Adder|S|M|47.57,37.60|N|Jiyambi's Favourite quest! Snakes are hard to see and die from AOE damage, keep your eyes peeled and loot them as you see them.|
 
 C Lashvine Seeds|QID|24571|S|M|51.83,45.21|
 
@@ -210,7 +214,7 @@ C Biological Intervention|QID|24565|M|52.75,41.16|
 
 C Lashvine Seeds|QID|24571|US|M|47.38,40.42|
 
-C Adder Subtraction|QID|24570|US|M|46.99,39.49|
+C Adder Subtraction|QID|24570|T|Enervated Adder|US|M|46.99,39.49|
 
 T Biological Intervention|QID|24565|M|50.38,40.65|N|To Naralex.|
 
@@ -256,7 +260,6 @@ C Lion's Pride|QID|25041|S|M|33.84,39.36|
 
 C Diplomacy By Another Means|QID|25044|U|49782|M|43.05,41.87|N|Blow the horn in the pit.|
 
-T Diplomacy By Another Means|QID|25044|M|43.02,41.73|N|UI Alert.|
 
 C Fields of Blood|QID|25043|S|M|31.87,30.50|N|Take out the grunts.|
 
@@ -264,6 +267,7 @@ C Fields of Blood|QID|25043|US|M|46.35,47.19|
 
 C Lion's Pride|QID|25041|US|M|46.54,47.44|
 
+T Diplomacy By Another Means|QID|25044|M|50.0,49.5|N|To Ambassador Gaines|
 T A Line in the Dirt|QID|25045|M|49.90,49.64|N|To General Hawthorne.|
 
 T Fields of Blood|QID|25043|M|49.90,49.64|N|To General Hawthorne.|
