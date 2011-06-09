@@ -536,6 +536,14 @@ function WoWPro:PopulateQuestLog()
 		if not WoWPro.oldQuests[QID] then
 			WoWPro.newQuest = QID
 			WoWPro:dbp("New Quest: "..WoWPro.QuestLog[QID].title)
+		end
+	end
+
+	-- Generating table WoWPro.missingQuest --
+	for QID, questInfo in pairs(WoWPro.oldQuests) do
+		if not WoWPro.QuestLog[QID] then
+			WoWPro.missingQuest = QID
+			WoWPro:dbp("Missing Quest: "..WoWPro.oldQuests[QID].title)
 
 			if not abandoning then
 				-- It's a quest that has been completed
@@ -545,14 +553,6 @@ function WoWPro:PopulateQuestLog()
 				WoWPro.abandonedQID = QID
 			end
 			abandoning = nil
-		end
-	end
-
-	-- Generating table WoWPro.missingQuest --
-	for QID, questInfo in pairs(WoWPro.oldQuests) do
-		if not WoWPro.QuestLog[QID] then
-			WoWPro.missingQuest = QID
-			WoWPro:dbp("Missing Quest: "..WoWPro.oldQuests[QID].title)
 		end
 	end
 
