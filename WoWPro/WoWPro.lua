@@ -195,7 +195,8 @@ function WoWPro:OnEnable()
 		"PLAYER_REGEN_ENABLED", "PARTY_MEMBERS_CHANGED", "QUEST_QUERY_COMPLETE",
 		"UPDATE_BINDINGS", "PLAYER_ENTERING_WORLD", "PLAYER_LEAVING_WORLD"
 	})
-	WoWPro.LockdownTimer = nil
+--	WoWPro.LockdownTimer = nil
+	WoWPro.LockdownTimer = 2.0 -- Initial setting so that InitLockdown will get set to nil after login
 	WoWPro.EventFrame:SetScript("OnUpdate", function(self, elapsed)
 	    if WoWPro.LockdownTimer ~= nil then
 	        WoWPro.LockdownTimer = WoWPro.LockdownTimer - elapsed

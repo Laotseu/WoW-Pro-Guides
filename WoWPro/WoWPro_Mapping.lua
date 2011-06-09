@@ -392,6 +392,7 @@ function WoWPro:ValidZone(zone)
 end
     
 function WoWPro:MapPoint(row, forceBlizCoord)
+--err("MapPoint: row = %s, forceBlizCoord = %s", row, forceBlizCoord)
 	local GID = WoWPro.DB.char.currentguide
 	if not GID or not WoWPro.Guides[GID] then return end
 	if WoWPro.InitLockdown then return end
