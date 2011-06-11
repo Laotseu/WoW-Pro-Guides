@@ -561,5 +561,5 @@ function WoWPro:PopulateQuestLog()
 		num = num+1
 	end
 	WoWPro:dbp("Quest Log populated. "..num.." quests found.")
-err("Quest Log populated, %s quests found.", num)
+--err("Quest Log populated, %s quests found.", num)
 end

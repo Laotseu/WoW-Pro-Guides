@@ -30,6 +30,7 @@ local MAX_NUM_QUESTS = _G.MAX_NUM_QUESTS
 local WorldMapDetailFrame = _G.WorldMapDetailFrame
 
 local GetCurrentMapAreaID = _G.GetCurrentMapAreaID
+local GetCurrentMapDungeonLevel = _G.GetCurrentMapDungeonLevel
 local GetPlayerMapPosition = _G.GetPlayerMapPosition
 local PlaySoundFile = _G.PlaySoundFile
 local QuestMapUpdateAllQuests = _G.QuestMapUpdateAllQuests
@@ -37,6 +38,8 @@ local QuestPOIUpdateIcons = _G.QuestPOIUpdateIcons
 local ToggleDropDownMenu = _G.ToggleDropDownMenu
 local UnitOnTaxi = _G.UnitOnTaxi
 local WorldMapFrame_UpdateQuests = _G.WorldMapFrame_UpdateQuests
+
+local LibStub = _G.LibStub
 
 local err_params = {}
 local function err(msg, ...)
@@ -52,7 +55,7 @@ end
 ----------------------------------
 local WoWPro = LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 
-local L = WoWPro_Locale
+local L = _G.WoWPro_Locale
 local cache = {}
 local B = LibStub("LibBabble-Zone-3.0")
 local BL = B:GetUnstrictLookupTable()
@@ -387,10 +390,10 @@ function WoWPro:ValidZone(zone)
 	        -- Zone found in DB
 	        return WoWPro.Zone2MapID[zone].mapID
 	    end
-    end    
+    end
     return false
 end
-    
+
 function WoWPro:MapPoint(row, forceBlizCoord)
 --err("MapPoint: row = %s, forceBlizCoord = %s", row, forceBlizCoord)
 	local GID = WoWPro.DB.char.currentguide
@@ -418,7 +421,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	local zone
 	if row then
 	    zone = WoWPro.rows[row].zone or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(%-]+)"))
-	else 
+	else
 		zone = WoWPro.zone[i] or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(%-]+)"))
 	end
 	local autoarrival = WoWPro.waypcomplete[i] or 3
