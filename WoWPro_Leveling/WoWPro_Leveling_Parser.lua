@@ -701,9 +701,12 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 	if event == "CHAT_MSG_SYSTEM" then
 		WoWPro.Leveling:AutoCompleteSetHearth(...)
 	--end
-	elseif event == "CHAT_MSG_LOOT" then
-		WoWPro.Leveling:AutoCompleteLoot(...)
+	--elseif event == "CHAT_MSG_LOOT" then
+		--WoWPro.Leveling:AutoCompleteLoot(...)
 	--end
+	elseif event == "BAG_UPDATE" then
+		WoWPro.Leveling:BAG_UPDATE_bucket()
+
 	elseif event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
 		WoWPro.Leveling:AutoCompleteZone(...)
 	--end
@@ -769,92 +772,6 @@ function WoWPro.Leveling:AutoCompleteGetFP(...)
 	end
 end
 
-do -- Closure
---[==[
-local currentquests, oldquests, firstscan, abandoning = {}, {}
-local currentobj, oldobj = {}, {}
-local currentcompletes = {}
-local qids = setmetatable({}, {
-	__index = function(t,i)
-		local v = tonumber(i:match("|Hquest:(%d+):"))
-		t[i] = v
-		return v
-	end,
-})
-local abandon_qid
-
--- Debug
-_G.WoWPro_Debug = {}
-_G.WoWPro_Debug.currentquests = currentquests
-_G.WoWPro_Debug.oldquests = oldquests
-
-local orig = _G.AbandonQuest
-_G.AbandonQuest = function(...)
-	abandoning = true
-	return orig(...)
-end
-
--- Get the turn ins into completedQIDs
-function WoWPro.Leveling:GetTurnins()
-	local WoWProCharDB = WoWPro.CharDB
-
-	currentquests, oldquests = oldquests, currentquests
-	for k in pairs(currentquests) do currentquests[k] = nil end
-	currentobj, oldobj = oldobj, currentobj
-	for k in pairs(currentobj) do currentobj[k] = nil end
-	for k in pairs(currentcompletes) do currentcompletes[k] = nil end
-
-	for i=1,GetNumQuestLogEntries() do
-		local link = GetQuestLink(i)
-		local qid = link and qids[link]
-		if qid then
-			currentquests[qid] = true
-			local complete = select(7,GetQuestLogTitle(i))
-			currentcompletes[qid] = complete == 1 and true or nil
-
-			-- Get the current objectives for the quest if there is more then one
-			local num_obj = GetNumQuestLeaderBoards(qid)
-			if num_obj > 1 then
-				for i = 1,num_obj do
-					currentobj[qid*100 + i] = select(3,GetQuestLogLeaderBoard(i, qid))
-				end
-			end
-		end
-	end
-
-	if firstscan then
-		firstscan = nil
-		return
-	end
-
-	-- Get the active quest QID
-	local active_qid = WoWPro.QID[WoWPro.action[WoWPro.ActiveStep or 0] or 0]
-
-	for qid in pairs(oldquests) do
-		if not currentquests[qid] then
-			if not abandoning then
-				-- We save the turn in so that that the quests completed out of order
-				-- are known
-				WoWProCharDB.completedQIDs[qid] = true
-				abandon_qid = nil
-			else
-				abandon_qid = qid
-			end
-			abandoning = nil
-			--return
-		else
-			-- The quest is still active, let see if the objectives got completed
-			for k, done in pairs(currentobj) do
-				local obj_qid = floor(k/100)
-				if active_qid == obj_qid and done and not oldobj[k] and not currentcompletes[obj_qid] then
-					-- Map the closest POI for the next not completed objective
-					--WoWPro:MapPoint(nil, true)
-				end
-			end
-		end
-	end
-end
-]==]
 -- Auto-Complete: Quest Update --
 function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
@@ -958,9 +875,7 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
 
 end
 
-end -- Closure
-
-do -- Bucket Closure
+do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 
 	local THROTTLE_TIME = 0.2
 	local throt
@@ -986,6 +901,28 @@ do -- Bucket Closure
 
 end -- End Bucket Closure
 
+do -- BAG_UPDATE_bucket Waiting Bucket Closure
+
+	local THROTTLE_TIME = 0.2
+	local throt
+	local f = CreateFrame("Frame")
+	f:Hide()
+	f:SetScript("OnUpdate", function(self, elapsed)
+		throt = throt - elapsed
+		if throt < 0 then
+			WoWPro.Leveling:UpdateLootLines()			-- Updete the loot line displayed
+			f:Hide()
+		end
+	end)
+
+	function WoWPro.Leveling:BAG_UPDATE_bucket()
+		-- We will wait THROTTLE_TIME after the last BAG_UPDATE event
+		throt = THROTTLE_TIME
+		f:Show()
+	end
+
+end -- End Bucket Closure
+
 -- Update Item Tracking --
 local function GetLootTrackingInfo(lootitem,lootqty,count)
 --[[Purpose: Creates a string containing:
@@ -998,13 +935,33 @@ local function GetLootTrackingInfo(lootitem,lootqty,count)
 	local track, numinbag = "" 								--If the function did have a track string, adds a newline
 	track = track.." - "..GetItemInfo(lootitem)..": " 	--Adds the item's name to the string
 --	numinbag = GetItemCount(lootitem)+(count or 0)		--Finds the number in the bag, and adds a count if supplied
-	numinbag = GetItemCount(lootitem)+(count or 0)		--Finds the number in the bag, and adds a count if supplied
+	numinbag = GetItemCount(lootitem)						--Finds the number in the bag, and adds a count if supplied
 	track = track..numinbag										--Adds the number in bag to the string
 	track = track.."/"..lootqty								--Adds the total number needed to the string
-	if lootqty == numinbag then
+	if lootqty <= numinbag then
 		track = track.." (C)"									--If the user has the requisite number of items, adds a complete marker
 	end
-	return track													--Returns the track string to the calling function
+	return track, numinbag										--Returns the track string and the inventory count to the calling function
+end
+
+-- Update the Loot line that are displayed based on actual count found in the inventory
+-- and mark the step as complete if we have the minimum number required
+function WoWPro.Leveling:UpdateLootLines()
+	for i = 1,1+WoWPro.ActiveStickyCount do
+		local guide_index = WoWPro.rows[i].index
+		if WoWPro.DB.profile.track and WoWPro.lootitem[guide_index] then
+			-- Update the displayed text
+			local lootqty = WoWPro.lootqty[guide_index]
+			local track, numinbag = GetLootTrackingInfo(WoWPro.lootitem[guide_index], lootqty)
+			WoWPro.rows[i].track:SetText(track)
+
+			-- Was it completed?
+			if numinbag >= lootqty then
+				WoWPro.CompleteStep(guide_index)
+			end
+		end
+	end
+	if not InCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
 end
 
 -- Auto-Complete: Loot based --
