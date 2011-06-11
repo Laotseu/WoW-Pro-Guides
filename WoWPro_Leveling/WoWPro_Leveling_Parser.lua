@@ -3,7 +3,6 @@
 -------------------------------------------------------------------------------
 local _G = getfenv(0)
 
-local WoWPro = _G.WoWPro
 --local WoWProDB = _G.WoWProDB
 --local WoWProCharDB = _G.WoWProCharDB
 
@@ -64,9 +63,13 @@ local UnitLevel = _G.UnitLevel
 local UnitRace = _G.UnitRace
 local UnitSex = _G.UnitSex
 
+local LibStub = _G.LibStub
+
 --------------------------------------
 --      WoWPro_Leveling_Parser      --
 --------------------------------------
+
+local WoWPro = LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 
 local L = _G.WoWPro_Locale
 WoWPro.Leveling.actiontypes = {
