@@ -310,7 +310,8 @@ C Working the Bugs Out|QID|25082|U|50128|M|47.79,67.48|
 
 C Pick-a-Part|QID|25075|S|M|44.01,71.36|
 
-C Claim the Battlescar|QID|25081|NC|M|45.36,68.51|
+;C Claim the Battlescar|QID|25081|NC|M|45.36,68.51|QO|Battlescar Flag Scouted|N|Take the Horde flag.|
+C Claim the Battlescar|QID|25081|M|45.3,69.7|N|Take the Horde flag.|
 
 C Pick-a-Part|QID|25075|US|M|45.39,70.17|
 
@@ -390,7 +391,7 @@ C Hands Off Me Dig!|QID|25106|S|M|46.94,86.76|
 
 C Feegly the Exiled|QID|25108|M|48.98,89.39|N|Loot the tools right behind where he was standing.|
 
-C Hands Off Me Dig!|QID|25106|M|47.15,86.71|
+C Hands Off Me Dig!|QID|25106|US|M|47.15,86.71|
 
 T Hands Off Me Dig!|QID|25106|M|47.17,88.48|N|To Marley Twinbraid.|
 
@@ -408,7 +409,7 @@ A Bael'dun Rescue|QID|25153|M|49.39,86.92|N|From Bael'dun Survivor.|
 
 A Who Did This?|QID|25163|M|49.59,87.14|N|From Wounded Bael'dun Officer.|
 
-N WARNING: Read this.|QID|99999|N|Some people do not ready quest text closely.  The fire in the keep will 1 shot you. If you are at level for this zone.  Every time you are near a valve (they bubble) stand by it and activate it.  You will be protected. You need to do this in regularly, not just one time. (Click the check box to continue)|
+N WARNING: Read this.|QID|25153|N|Some people do not read quest text closely.  The fire in the keep will 1 shot you. If you are at level for this zone.  Every time you are near a valve (they bubble) stand by it and activate it.  You will be protected. You need to do this in regularly, not just one time. (Click the check box to continue)|
 
 C Bael'dun Rescue|QID|25153|S|M|49.41,86.88|
 

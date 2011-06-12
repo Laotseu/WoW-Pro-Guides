@@ -807,7 +807,7 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate()
 			if WoWPro.abandonedQID == QID and WoWPro.Leveling.CompletingQuest and
 					( action == "A" or action == "C" ) and completion then
 				WoWProCharDB.Guide[GID].completion[i] = nil
-				completion = false
+				completion = nil
 				WoWPro:UpdateGuide()
 				WoWPro:MapPoint()
 			end
