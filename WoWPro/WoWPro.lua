@@ -193,7 +193,7 @@ function WoWPro:OnEnable()
 	WoWPro:dbp("Registering Events: Core Addon")
 	WoWPro:RegisterEvents( {															-- Setting up core events
 		"PLAYER_REGEN_ENABLED", "PARTY_MEMBERS_CHANGED", "QUEST_QUERY_COMPLETE",
-		"UPDATE_BINDINGS", "PLAYER_ENTERING_WORLD", "PLAYER_LEAVING_WORLD"
+		"UPDATE_BINDINGS", "PLAYER_ENTERING_WORLD", "PLAYER_LEAVING_WORLD", "CINEMATIC_STOP"
 	})
 --	WoWPro.LockdownTimer = nil
 	WoWPro.LockdownTimer = 2.0 -- Initial setting so that InitLockdown will get set to nil after login
@@ -221,13 +221,15 @@ function WoWPro:OnEnable()
 		    WoWPro.LockdownTimer = 2.0
 
 		-- Updating party-dependant options --
-		elseif event == "PARTY_MEMBERS_CHANGED" and not InCombatLockdown() then
+		elseif event == "PARTY_MEMBERS_CHANGED"
+			or event == "UPDATE_BINDINGS"
+			or event == "PARTY_MEMBERS_CHANGED" then
 			WoWPro:UpdateGuide()
 		--end
 
 		-- Updating WoWPro keybindings --
-		elseif event == "UPDATE_BINDINGS" and not InCombatLockdown() then
-			WoWPro:UpdateGuide()
+		--elseif event == "UPDATE_BINDINGS" and not InCombatLockdown() then
+		--	WoWPro:UpdateGuide()
 		--end
 
 		-- Receiving the result of the completed quest query --
@@ -260,19 +262,19 @@ function WoWPro:OnEnable()
 		end
 
 		-- Unlocking guide frame when leaving combat --
-		if event == "PLAYER_REGEN_ENABLED" or event == "PLAYER_ENTERING_WORLD" then
+		if event == "PLAYER_REGEN_ENABLED" or event == "PLAYER_ENTERING_WORLD" or event == "CINEMATIC_STOP" then
 			WoWPro:UpdateGuide()
 		end
 
 		-- Updating party-dependant options --
-		if event == "PARTY_MEMBERS_CHANGED" and not InCombatLockdown() then
-			WoWPro:UpdateGuide()
-		end
+		--if event == "PARTY_MEMBERS_CHANGED" and not InCombatLockdown() then
+		--	WoWPro:UpdateGuide()
+		--end
 
 		-- Updating WoWPro keybindings --
-		if event == "UPDATE_BINDINGS" and not InCombatLockdown() then
-			WoWPro:UpdateGuide()
-		end
+		--if event == "UPDATE_BINDINGS" and not InCombatLockdown() then
+		--	WoWPro:UpdateGuide()
+		--end
 
 		-- Module Event Handlers --
 		for name, module in WoWPro:IterateModules() do

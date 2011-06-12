@@ -35,6 +35,7 @@ local GetProfessions = _G.GetProfessions
 local GetQuestLogLeaderBoard = _G.GetQuestLogLeaderBoard
 local GetQuestLogSpecialItemInfo = _G.GetQuestLogSpecialItemInfo
 local GetQuestLogTitle = _G.GetQuestLogTitle
+local InCinematic = _G.InCinematic
 local InCombatLockdown = _G.InCombatLockdown
 local PlaySoundFile = _G.PlaySoundFile
 local QuestMapUpdateAllQuests = _G.QuestMapUpdateAllQuests
@@ -191,6 +192,7 @@ function WoWPro:UpdateGuide(offset)
 
 	-- If the user is in combat, or if a GID is not present, or if the guide cannot be found, end --
 	if InCombatLockdown()
+		or InCinematic()
 		or not GID
 		or not WoWPro.Guides[GID]
 		then return
