@@ -366,6 +366,9 @@ function WoWPro.Leveling:LoadGuide()
 	WoWPro:PopulateQuestLog() --Calling this will populate our quest log table for use here
 
 	-- Checking to see if any steps are already complete --
+	WoWPro.Leveling:AutoCompleteQuestUpdate()
+
+--[[
 	for i=1, WoWPro.stepcount do
 		local QID = WoWPro.QID[i]
 		local action = WoWPro.action[i]
@@ -393,10 +396,14 @@ function WoWPro.Leveling:LoadGuide()
 		end
 
 	end
+]]
+	WoWPro:UpdateGuide()
 
 	-- Checking zone based completion --
-	WoWPro:UpdateGuide()
 	WoWPro.Leveling:AutoCompleteZone()
+
+	-- Update the display using the leadboard
+	WoWPro.Leveling:UpdateQuestTracker()
 
 	-- Scrollbar Settings --
 	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount - WoWPro.ShownRows))
@@ -773,7 +780,7 @@ function WoWPro.Leveling:AutoCompleteGetFP(...)
 end
 
 -- Auto-Complete: Quest Update --
-function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
+function WoWPro.Leveling:AutoCompleteQuestUpdate()
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	local GID = WoWProDB.char.currentguide
@@ -828,8 +835,8 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(questComplete)
 				completion = true
 			end
 
-			-- Quest Completion --
-			if action == "C" and not completion and WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].complete then
+			-- Quest Completion: Any step that is not a Turn in is considered completed if the quest is completed --
+			if action ~= "T" and not completion and WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].complete then
 				WoWPro.CompleteStep(i)
 				completion = true
 			end
