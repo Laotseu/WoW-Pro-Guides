@@ -442,7 +442,7 @@ function WoWPro.CompleteStep(step)
 	end
 
 	local Delta = WoWPro:MapPointDelta()
-	if Delta then
+	if Delta and Delta[1] > 0.9 then
 	    local qid=-99
 	    if WoWPro.QID[step] then
 	        qid = WoWPro.QID[step]
