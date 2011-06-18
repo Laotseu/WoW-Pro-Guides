@@ -184,6 +184,7 @@ end
 
 -- Guide Update --
 function WoWPro:UpdateGuide(offset)
+WoWPro:Trace("Call WoWPro:UpdateGuide")
 	if not WoWPro.GuideFrame:IsVisible() then return end
 	WoWPro:dbp("Running: UpdateGuide()")
 
@@ -198,6 +199,7 @@ function WoWPro:UpdateGuide(offset)
 		then return
 	end
 
+WoWPro:Trace("Start WoWPro:UpdateGuide")
 	-- If the module that handles this guide is not present and enabled, then end --
 	local module = WoWPro:GetModule(WoWPro.Guides[GID].guidetype)
 	if not module or not module:IsEnabled() then return end
@@ -274,6 +276,7 @@ function WoWPro:UpdateGuide(offset)
 			WoWPro.NextGuideDialog:Show()
 		end
 	end
+WoWPro:Trace("End WoWPro:UpdateGuide")
 end
 
 -- Next Step --
@@ -442,7 +445,7 @@ function WoWPro.CompleteStep(step)
 	end
 
 	local Delta = WoWPro:MapPointDelta()
-	if Delta and Delta[1] > 0.9 then
+	if Delta and ((WoWPro.action[step] == "C" and Delta[1] > 10) or Delta[1] > 1.9) then
 	    local qid=-99
 	    if WoWPro.QID[step] then
 	        qid = WoWPro.QID[step]
@@ -471,6 +474,7 @@ end
 
 -- Populate the Quest Log table for other functions to call on --
 function WoWPro:PopulateQuestLog()
+WoWPro:Trace("Begin WoWPro:PopulateQuestLog")
 	local WoWProCharDB = WoWPro.CharDB
 	WoWPro:dbp("Populating quest log...")
 --err("Populating quest log...")
@@ -565,4 +569,5 @@ function WoWPro:PopulateQuestLog()
 	end
 	WoWPro:dbp("Quest Log populated. "..num.." quests found.")
 --err("Quest Log populated, %s quests found.", num)
+WoWPro:Trace("End WoWPro:PopulateQuestLog")
 end

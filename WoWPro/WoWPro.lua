@@ -25,6 +25,14 @@ local SetBinding = _G.SetBinding
 local TomTom = _G.TomTom
 local Swatter = _G.Swatter
 
+local err_params = {}
+local function err(msg, ...)
+	msg = tostring(msg)
+	wipe(err_params)
+	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
+	_G.geterrorhandler()(msg:format(_G.unpack(err_params)) .. " - " .. _G.time())
+end
+
 --------------------------
 --      WoWPro.lua      --
 --------------------------
@@ -115,6 +123,9 @@ function WoWPro:OnInitialize()
 	local WoWProDB = LibStub("AceDB-3.0"):New("WoWProData", defaults, true) -- Creates DB object to use with Ace
 	WoWPro.DB = WoWProDB
 	_G.WoWProDB = WoWProDB
+	-- Trace
+	WoWProDB.global.Trace_on = nil
+	WoWProDB.global.Trace = {}
 	-- Setting up callbacks for use with profiels --
 	WoWProDB.RegisterCallback(self, "OnProfileChanged", "RefreshConfig")
 	WoWProDB.RegisterCallback(self, "OnProfileCopied", "RefreshConfig")
@@ -130,8 +141,13 @@ function WoWPro:OnInitialize()
 	if WoWProCharDB.Enabled == nil then
 	    WoWProCharDB.Enabled = true
 	end
-	if WoWProDB.global.Deltas == nil then
-	    WoWProDB.global.Deltas = {}
+	--if WoWProDB.global.Deltas == nil then
+	--    WoWProDB.global.Deltas = {}
+	--end
+	WoWProDB.global.Deltas = WoWProDB.global.Deltas or {}
+	if #WoWProDB.global.Deltas > 1000 then
+		--err("The WoWProDB.global.Deltas table has %s items, you should think about emptying it.", #WoWProDB.global.Deltas)
+		WoWPro:Print(("The WoWProDB.global.Deltas table has %s items, you should think about emptying it."):format(#WoWProDB.global.Deltas))
 	end
 end
 
@@ -333,3 +349,9 @@ event from the guide frame.
 	end
 end
 
+-- Trace stuff
+function WoWPro:Trace(text)
+	if WoWPro.DB.global.Trace_on then
+		_G.tinsert(WoWPro.DB.global.Trace, text .. " - " ..  _G.time())
+	end
+end

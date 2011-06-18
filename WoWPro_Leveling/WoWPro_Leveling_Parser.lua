@@ -781,6 +781,7 @@ end
 
 -- Auto-Complete: Quest Update --
 function WoWPro.Leveling:AutoCompleteQuestUpdate()
+WoWPro:Trace("Start WoWPro.Leveling:AutoCompleteQuestUpdate")
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	local GID = WoWProDB.char.currentguide
@@ -880,6 +881,7 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate()
 		WoWPro.Leveling.FirstMapCall = false
 	end
 
+WoWPro:Trace("End WoWPro.Leveling:AutoCompleteQuestUpdate")
 end
 
 do -- QUEST_LOG_UPDATE_bucket Bucket Closure
@@ -1064,6 +1066,7 @@ end
 
 -- Update Quest Tracker --
 function WoWPro.Leveling:UpdateQuestTracker()
+WoWPro:Trace("Start WoWPro.Leveling:UpdateQuestTracker")
 	local WoWProDB = WoWPro.DB
 
 	if not WoWPro.GuideFrame:IsVisible() then return end
@@ -1138,6 +1141,7 @@ function WoWPro.Leveling:UpdateQuestTracker()
 		row.track:SetText(track)
 	end
 	if not InCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
+WoWPro:Trace("End WoWPro.Leveling:UpdateQuestTracker")
 end
 
 -- Get Currently Available Spells --
