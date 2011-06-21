@@ -79,7 +79,7 @@ return [[
 
 N This Guide|QID|27251|N|Picks up directly from where Southern Barrens leaves off. If you did not do Southern Barrens, you can take the Hero's Call quest from Darnassus, Exodar or Stormwind instead.  Either make your way to Fort Triumph and run to Theramore or sail from Wetlands.  (Manually close this step by right clicking the check box)|
 R Dustwallow Marsh|QID|27251|M|56.61,78.35|Z|Southern Barrens|N|Head into Dustwallow Marsh.|
-R Theramore Isle |QID|27251|M|68.19,46.82|N|Follow the path all the way east to Theramore. It's populated by Alliance vehicles and banners.|
+R Theramore Isle |QID|27251|M|29.6,47.1;34.0,46.7;42.4,50.9;52.0,50.6|N|Follow the path all the way east to Theramore. It's populated by Alliance vehicles and banners.|
 
 A They Call Him Smiling Jim|QID|27251|M|66.05,45.91|N|From Guard Byron.|
 h Theramore Isle|QID|27251|M|66.57,45.26|N|At Innkeeper Janene. Take this chance to sell your junk and restock also.|

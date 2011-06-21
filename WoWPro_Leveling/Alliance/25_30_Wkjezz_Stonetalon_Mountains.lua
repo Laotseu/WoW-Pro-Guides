@@ -239,16 +239,16 @@ A Hungry Pups|QID|25935|M|32.25,60.12|N|From Houndmaster Jonathan.|
 f Farwatcher's Glen|QID|25935|M|31.95,61.79|N|At Ceyora.|
 h Farwatcher's Glen|QID|25935|M|31.50,60.62|N|At Innkeeper Bernice.|
 
-R Carefull shimmy down the mountain.|QID|25934|CC|M|31.01,62.13;30.23,63.15;30.06,64.98|
-C World First: Gnomegen|QID|25934|S|M|27.39,70.10|N|Kill every Fire elemental you see. You may need to kill quite a number of them to get the Heart to drop.|
-C Hungry Pups|QID|25935|S|M|30.65,72.39|N|Kill and loot Black Dragon Whelps.|
+R Carefull shimmy down the mountain.|QID|25934|CC|U|56221|M|31.01,62.13;30.23,63.15;30.06,64.98|
+C World First: Gnomegen|QID|25934|S|U|56221|M|27.39,70.10|N|Kill every Fire elemental you see. You may need to kill quite a number of them to get the Heart to drop.|
+C Hungry Pups|QID|25935|S|U|56221|M|30.65,72.39|N|Kill and loot Black Dragon Whelps.|
 C Ascending the Vale|QID|25930|NC|U|56221|M|29.25,71.07|N|Use your boots as needed.|
 T Ascending the Vale|QID|25930|M|29.50,71.50|N|(UI Alert)|
 A Brood of Seldarria|QID|25931|M|29.50,71.50|N|(UI Alert)|
 C Brood of Seldarria|QID|25931|S|U|56221|M|29.71,73.17|N|Destroy 5 of Seldarria's Eggs.|
-C Hungry Pups|QID|25935|US|M|31.64,69.62|N|Finish getting the filets needed.|
+C Hungry Pups|QID|25935|US|U|56221|M|31.64,69.62|N|Finish getting the filets needed.|
 C Brood of Seldarria|QID|25931|US|U|56221|M|30.32,70.86|N|Destroy 5 of Seldarria's Eggs.|
-C World First: Gnomegen|QID|25934|US|M|30.08,67.82|N|Keep killing Fire elementals until a Blazing Heart of Fire drops.|
+C World First: Gnomegen|QID|25934|US|U|56221|M|30.08,67.82|N|Keep killing Fire elementals until a Blazing Heart of Fire drops.|
 
 H Farwatcher's Glen|QID|25934|N|Hearth back to Farwatcher's Glen, or run back if your hearth is down.|U|6948|
 
