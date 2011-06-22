@@ -30,7 +30,7 @@
 -- URL: http://wow-pro.com/node/3218/revisions/23868/view
 -- Date: 2010-12-30 19:46
 -- Who: Fluclo
--- Log: Changed to K for Shatterspear Overseer, and the resulting Overseer's Orders 
+-- Log: Changed to K for Shatterspear Overseer, and the resulting Overseer's Orders
 
 -- URL: http://wow-pro.com/node/3218/revisions/23867/view
 -- Date: 2010-12-30 17:48
@@ -352,7 +352,7 @@ A Cleansing the Afflicted|QID|13545|M|43.48,80.96|N|From Elder Brolg.|
 A Jadefire Braziers|QID|13572|M|43.57,80.95|N|From Gren Tornfur.|
 C Cleansing the Afflicted|QID|13545|U|44889|M|44.62,82.07|N|Use the Blessed Herb Bundle on the Furblogs and kill what spawns.|S|
 C Jadefire Braziers|QID|13572|M|44.36,84.07|N|Attack the braziers with the green fire to destroy them.|
-C Cleansing the Afflicted|QID|13545|U|44889|M|44.62,82.07|N|Use the Blessed Herb Bundle on the Furblogs and kill what spawns.|S|
+C Cleansing the Afflicted|QID|13545|U|44889|M|44.62,82.07|N|Use the Blessed Herb Bundle on the Furblogs and kill what spawns.|US|
 L Level 20|QID|13572|LVL|20|N|You should be around level 20 by this point.|
 T Jadefire Braziers|QID|13572|M|43.55,80.94|N|To Gren Tornfur.|
 T Cleansing the Afflicted|QID|13545|M|43.55,80.94|N|To Elder Brolg.|
