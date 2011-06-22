@@ -1,31 +1,56 @@
+-------------------------------------------------------------------------------
+-- Localized Lua globals
+-------------------------------------------------------------------------------
+local _G = getfenv(0)
+
+local string = _G.string
+local strtrim = _G.strtrim
+local tostring = _G.tostring
+
+local pairs = _G.pairs
+
+local QueryQuestsCompleted = _G.QueryQuestsCompleted
+local UnitClass = _G.UnitClass
+local UnitFactionGroup = _G.UnitFactionGroup
+local UnitLevel = _G.UnitLevel
+local UnitRace = _G.UnitRace
+local UnitXP = _G.UnitXP
+
+local LibStub = _G.LibStub
+
 -------------------------------
 --      WoWPro_Leveling      --
 -------------------------------
+
+local WoWPro = LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 
 WoWPro.Leveling = WoWPro:NewModule("Leveling")
 local myUFG = UnitFactionGroup("player")
 
 -- Called before all addons have loaded, but after saved variables have loaded. --
 function WoWPro.Leveling:OnInitialize()
-	if WoWProCharDB.AutoHideLevelingInsideInstances == nil then
-	    WoWProCharDB.AutoHideLevelingInsideInstances = true
+	if WoWPro.CharDB.AutoHideLevelingInsideInstances == nil then
+	    WoWPro.CharDB.AutoHideLevelingInsideInstances = true
 	end
 end
 
 -- Called when the module is enabled, and on log-in and /reload, after all addons have loaded. --
 function WoWPro.Leveling:OnEnable()
+	local WoWProDB = WoWPro.DB
+
 	WoWPro:dbp("|cff33ff33Enabled|r: Leveling Module")
-	
+
 	-- Leveling Tag Setup --
 	WoWPro:RegisterTags({"QID", "questtext", "prereq", "noncombat", "leadin", "rep"})
-	
+
 	-- Event Registration --
-	WoWPro.Leveling.Events = {"QUEST_LOG_UPDATE", "QUEST_COMPLETE", 
-		"ZONE_CHANGED", "ZONE_CHANGED_INDOORS", "MINIMAP_ZONE_CHANGED", "ZONE_CHANGED_NEW_AREA", 
-		"UI_INFO_MESSAGE", "CHAT_MSG_SYSTEM", "CHAT_MSG_LOOT", "PLAYER_LEVEL_UP", "TRAINER_UPDATE"
+	WoWPro.Leveling.Events = {"QUEST_LOG_UPDATE", "QUEST_COMPLETE",
+		"ZONE_CHANGED", "ZONE_CHANGED_INDOORS", "MINIMAP_ZONE_CHANGED", "ZONE_CHANGED_NEW_AREA",
+		"UI_INFO_MESSAGE", "CHAT_MSG_SYSTEM", "PLAYER_LEVEL_UP", "TRAINER_UPDATE",
+		"BAG_UPDATE"
 	}
 	WoWPro:RegisterEvents(WoWPro.Leveling.Events)
-	
+
 	--Loading Frames--
 	if not WoWPro.Leveling.FramesLoaded then --First time the addon has been enabled since UI Load
 		WoWPro.Leveling:CreateConfig()
@@ -34,19 +59,19 @@ function WoWPro.Leveling:OnEnable()
 		WoWPro.Leveling.CreateGuideList()
 		WoWPro.Leveling.FramesLoaded = true
 	end
-	
+
 	-- Loading Initial Guide --
 	local locClass, engClass = UnitClass("player")
 	local locRace, engRace = UnitRace("player")
 	-- New Level 1 Character --
 	if UnitLevel("player") == 1 and UnitXP("player") == 0 then
 		local startguides = {
-			Orc = "JiyDur0105", 
-			Troll = "BitDur0105", 
+			Orc = "JiyDur0105",
+			Troll = "BitDur0105",
 			Scourge = "JiyTir0112",
 			Tauren = "GylMul0105",
 			BloodElf = "SnoEve0112",
-			Goblin = "MalKez0105", 
+			Goblin = "MalKez0105",
 			Draenei = "SnoAzu0112",
 			NightElf = "BitTel0110",
 			Dwarf = "GylDwa0105",
@@ -62,19 +87,21 @@ function WoWPro.Leveling:OnEnable()
 	elseif WoWProDB.char.lastlevelingguide and not WoWProDB.char.currentguide then
 		WoWPro:LoadGuide(WoWProDB.char.lastlevelingguide)
 	end
-	
+
 	WoWPro.Leveling.FirstMapCall = true
-	
+
 	-- Server query for completed quests --
 	QueryQuestsCompleted()
 end
 
 -- Called when the module is disabled --
 function WoWPro.Leveling:OnDisable()
+	local WoWProDB = WoWPro.DB
+
 	-- Unregistering Leveling Module Events --
 	WoWPro:UnregisterEvents(WoWPro.Leveling.Events)
-	
-	--[[ If the current guide is a leveling guide, removes the map point, stores the guide's ID to be resumed later, 
+
+	--[[ If the current guide is a leveling guide, removes the map point, stores the guide's ID to be resumed later,
 	sets the current guide to nil, and loads the nil guide. ]]
 	if WoWPro.Guides[WoWProDB.char.currentguide] and WoWPro.Guides[WoWProDB.char.currentguide].guidetype == "Leveling" then
 		WoWPro:RemoveMapPoint()
@@ -85,17 +112,17 @@ function WoWPro.Leveling:OnDisable()
 end
 
 -- Guide Registration Function --
-function WoWPro.Leveling:RegisterGuide(GIDvalue, zonename, authorname, startlevelvalue, 
+function WoWPro.Leveling:RegisterGuide(GIDvalue, zonename, authorname, startlevelvalue,
 	endlevelvalue, nextGIDvalue, factionname, sequencevalue)
-	
---[[ Purpose: 
+
+--[[ Purpose:
 		Called by guides to register them to the WoWPro.Guide table. All members
-		of this table must have a quidetype parameter to let the addon know what 
+		of this table must have a quidetype parameter to let the addon know what
 		module should handle that guide.]]
-		
-	if factionname and factionname ~= myUFG and factionname ~= "Neutral" then return end 
+
+	if factionname and factionname ~= myUFG and factionname ~= "Neutral" then return end
 		-- If the guide is not of the correct faction, don't register it
-		
+
 	WoWPro:dbp("Guide Registered: "..GIDvalue)
 	if factionname == "Neutral" then
 	    -- nextGIDvalue is faction dependent.   Split it and pick the right one "AllianceGUID|HordeGID"
@@ -135,7 +162,7 @@ function WoWPro.Leveling:LoadAllGuides()
 	        if not WoWPro:ValidZone(zed) then
 			    WoWPro:Print("Invalid guide zone:"..(WoWPro.Guides[guidID].zone))
 			end
-	        if nextGID == nil or WoWPro.Guides[nextGID] == nil then	    
+	        if nextGID == nil or WoWPro.Guides[nextGID] == nil then
 	            WoWPro:Print("Successor to " .. guidID .. " which is " .. tostring(nextGID) .. " is invalid.")
 	        end
 	        if WoWPro.Guides[guidID].faction == "Alliance" then aCount = aCount + 1 end
@@ -143,6 +170,6 @@ function WoWPro.Leveling:LoadAllGuides()
 	        if WoWPro.Guides[guidID].faction == "Horde"    then hCount = hCount + 1 end
 	    end
 	end
-        WoWPro:Print(string.format("Done! %d A, %d N, %d H guides present", aCount, nCount, hCount))
-end	    
+        WoWPro:Print( ("Done! %d A, %d N, %d H guides present"):format(aCount, nCount, hCount) )
+end
 

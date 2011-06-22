@@ -30,7 +30,7 @@
 -- URL: http://wow-pro.com/node/3218/revisions/23868/view
 -- Date: 2010-12-30 19:46
 -- Who: Fluclo
--- Log: Changed to K for Shatterspear Overseer, and the resulting Overseer's Orders 
+-- Log: Changed to K for Shatterspear Overseer, and the resulting Overseer's Orders
 
 -- URL: http://wow-pro.com/node/3218/revisions/23867/view
 -- Date: 2010-12-30 17:48
@@ -108,10 +108,10 @@ A The Corruption's Source|QID|13529|M|56.23,27.35;56.81,30.04|N|From Tharnariun 
 C The Corruption's Source|QID|13529|M|58.75,32.64|N|Kill Vile Grells on the way.|S|
 l Corruptor's Master Key|QID|13557|L|44927|N|Enter the waterfall, and kill Vile Corruptors until one drops the Corruptor's Master Key.|
 A Bearer of Good Fortune|QID|13557|U|44927|M|57.02,31.46|N|Right click the Corruptor's Master Key to accept the quest.|
-C Bearer of Good Fortune|QID|13557|M|57.50,32.41|N|Open the cages on the way.|S|
+C Bearer of Good Fortune|QID|13557|U|44925|M|57.50,32.41|N|Open the cages on the way.|S|
 A A Troubling Prescription|QID|13831|M|56.78,33.47;57.37,33.80|N|From the Disgusting Workbench on lower level, first cave on left as you come down the ramp.|
 K Zenn Foulhoof|QID|13529|M|58.75,32.64|QO|Zenn Foulhoof slain: 1/1|N|Kill Zenn Foulhoof, you can locate him easily on your minimap by tracking the skull.|
-C Bearer of Good Fortune|QID|13557|M|57.50,32.41|N|Open cages until you finish the quest.|US|
+C Bearer of Good Fortune|QID|13557|U|44925|M|57.50,32.41|N|Open cages until you finish the quest.|US|
 C The Corruption's Source|QID|13529|M|58.75,32.64|N|Kill Vile Grells until you finish the quest.|US|
 C A Cure In The Dark|QID|13554|M|58.86,32.34|N|Kill Vile Grells and Vile Corruptors.|
 R Bashal'Aran Collapse|QID|28529|M|52.81,32.72|N|Head outside the cave, and jump into the 'Maw of the Void'.|

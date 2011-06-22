@@ -45,7 +45,7 @@ return [[
 A Hero's Call: Twilight Highlands!|QID|28716|M|62.90,71.78|N|From the Message boards at either end of town.|Z|Stormwind City|
 T Hero's Call: Twilight Highlands!|QID|28716|M|85.62,31.93|N|To King Varian Wrynn.|Z|Stormwind City|
 
-A My Son, the Prince|QID|26960|PRE|28716|M|85.62,31.93|N|From King Varian Wrynn.|Z|Stormwind City|
+A My Son, the Prince|QID|26960|M|85.62,31.93|N|From King Varian Wrynn.|Z|Stormwind City|
 C My Son, the Prince|QID|26960|M|85.64,31.86|Z|Stormwind City|N|Talk to Anduin,|
 T My Son, the Prince|QID|26960|M|85.62,31.93|N|To King Varian Wrynn.|Z|Stormwind City|
 
@@ -53,7 +53,7 @@ A Rallying the Fleet|QID|26975|M|85.62,31.93|N|From King Varian Wrynn.|Z|Stormwi
 A Twilight Investigation|QID|26977|M|85.62,31.93|N|From King Varian Wrynn.|Z|Stormwind City|
 T Twilight Investigation|QID|26977|M|85.26,31.42|N|To Major Samuelson.|Z|Stormwind City|
 
-A The Usual Suspects|QID|26997||PRE|26977|M|85.26,31.42|N|From Major Samuelson.|Z|Stormwind City|
+A The Usual Suspects|QID|26997|M|85.26,31.42|N|From Major Samuelson.|Z|Stormwind City|
 C The Usual Suspects|QID|26997|M|29.06,25.46|N|Interrogate dock workers in this area.|Z|Stormwind City|
 T The Usual Suspects|QID|26997|M|29.06,25.46|N|To Anduin Wrynn.|Z|Stormwind City|
 
@@ -61,44 +61,44 @@ C Rallying the Fleet|QID|26975|M|33.33,39.07|N|Speak to Supply Sergeant Graves.|
 T Rallying the Fleet|QID|26975|M|33.33,39.07|N|To Supply Sergeant Graves.|Z|Stormwind City|
 
 A Missing Parts|QID|27038|PRE|26975|M|33.33,39.07|N|From Supply Sergeant Graves.|Z|Stormwind City|
-A Peasant Problems|QID|27044|PRE|26977|M|33.23,39.38|N|From Anduin Wrynn.|Z|Stormwind City|
+A Peasant Problems|QID|27044|M|33.23,39.38|N|From Anduin Wrynn.|Z|Stormwind City|
 
 C Missing Parts|QID|27038|PRE|26975|M|34.09,43.89|N|Found in this area around the docks.|Z|Stormwind City|
 T Missing Parts|QID|27038|PRE|26975|M|34.50,38.28|N|To Fargo Flintlocke.|Z|Stormwind City|
 
-A He's Holding Out on Us|QID|27064|PRE|26977|N|From Anduin Wrynn|Z|Stormwind City|
+A He's Holding Out on Us|QID|27064|N|From Anduin Wrynn|Z|Stormwind City|
 C Peasant Problems|QID|27044|NC|M|52.07,6.26|N|Speak to Farmer Wallerton at the Walleton Stead.|Z|Stormwind City|
 T Peasant Problems|QID|27044|M|52.07,6.26|N|To Farmer Wallerton.|Z|Stormwind City|
 
-A Unholy Cow|QID|27060|PRE|26977|M|51.96,5.83|N|From Farmer Wollerton.|Z|Stormwind City|
+A Unholy Cow|QID|27060|M|51.96,5.83|N|From Farmer Wollerton.|Z|Stormwind City|
 C Unholy Cow|QID|27060|M|44.05,4.28|N|Follow the trail of parts. You will be attacked once the first part of the quest is completed. If you die, then you will need to return to the throne room to retrive the prince again.|Z|Stormwind City|
 T Unholy Cow|QID|27060|M|44.05,4.28|N|To Anduin Wrynn.|Z|Stormwind City|
 
 C He's Holding Out on Us|QID|27064|M|80.39,62.34|N|There is a small stairwell leading up to the 3rd floor.|Z|Stormwind City|
 
 T He's Holding Out on Us|QID|27064|M|80.39,62.34|N|To Anduin Wrynn.|Z|Stormwind City|
-A Expert Opinion|QID|28807|PRE|26977|M|80.39,62.34|N|From Anduin Wrynn|Z|Stormwind City|
-T Expert Opinion|QID|28807|M|81.28,63.32|N|To Master Mathias Shaw, same building.|
+A Expert Opinion|QID|28807|M|80.39,62.34|N|From Anduin Wrynn|Z|Stormwind City|
+T Expert Opinion|QID|28807|M|81.28,63.32|Z|Stormwind City|N|To Master Mathias Shaw, same building.|
 
-A The Old Barracks|QID|27072|PRE|26977|M|81.28,63.32|N|From Master Mathias Shaw.|Z|Stormwind City|
+A The Old Barracks|QID|27072|M|81.28,63.32|N|From Master Mathias Shaw.|Z|Stormwind City|
 C The Old Barracks|QID|27072|M|37.24,56.47|N|Kill crazed cultists. Work on this building since you need to make your way down to the bottom floor to turn in this quest.|Z|Stormwind City|
-T The Old Barracks|QID|27072|M|37.24,56.47|N|To Jack Bauden.|
+T The Old Barracks|QID|27072|M|37.24,56.47|N|To Jack Bauden.|Z|Stormwind City|
 
-A Cataclysm in the Catacombs|QID|27092|PRE|26977|M|37.24,56.47|N|From Jack Bauden.|Z|Stormwind City|
+A Cataclysm in the Catacombs|QID|27092|M|37.24,56.47|N|From Jack Bauden.|Z|Stormwind City|
 C Cataclysm in the Catacombs|QID|27092|M|51.30,42.30|N|You must enter the catacombs found in the bottom of the Cathedral of Light. Kill the Black Bishop and then disarm the bomb.|Z|Stormwind City|
 T Cataclysm in the Catacombs|QID|27092|M|50.45,42.42|N|From the disarmed bomb.|Z|Stormwind City|
 
-A A Villain Unmasked|QID|27106|PRE|26977|M|50.45,42.42|N|From the disarmed bomb.|Z|Stormwind City|
+A A Villain Unmasked|QID|27106|M|50.45,42.42|N|From the disarmed bomb.|Z|Stormwind City|
 C A Villain Unmasked|QID|27106|M|85.19,32.25|N|Talk to Major Samuelson|Z|Stormwind City|
 T A Villain Unmasked|QID|27106|M|85.66,32.00|N|To King Varian Wrynn.|Z|Stormwind City|
 
-A Twilight Shores|QID|28238|PRE|26977|M|85.66,32.00|N|From King Varian Wrynn.|Z|Stormwind City|
+A Twilight Shores|QID|28238|M|85.66,32.00|N|From King Varian Wrynn.|Z|Stormwind City|
 T Twilight Shores|QID|28238|M|26.19,47.29|N|To Fargo Flintlocke.|Z|Stormwind City|
 
-A Twilight Shores|QID|28832|PRE|26977|M|26.19,47.29|N|From Fargo Flintlocke. Then hop in his boat.|Z|Stormwind City|
+A Twilight Shores|QID|28832|M|26.19,47.29|N|From Fargo Flintlocke. Then hop in his boat.|Z|Stormwind City|
 T Twilight Shores|QID|28832|M|80.99,79.43|N|To Lieutenant Fawkes.|
 
-A Welcome to Highbank!|QID|28596|PRE|26977|M|80.99,79.43|N|From Lieutenant Fawkes.|
+A Welcome to Highbank!|QID|28596|M|80.99,79.43|N|From Lieutenant Fawkes.|
 C Welcome to Highbank!|QID|28596|M|79.04,76.01|N|Kill Horde attackers.|
 T Welcome to Highbank!|QID|28596|M|80.99,79.43|N|To Lieutenant Fawkes.|
 
@@ -551,7 +551,7 @@ T Blackout|QID|28173|M|59.07,69.87|N|To Lirastrasza.|
 T Shining Through the Dark|QID|28175|M|59.07,69.87|N|To Velastrasza.|
 
 A Following the Young Home|QID|28176|M|59.07,69.87|N|From Lirastrasza.|
-C Following the Young Home|QID|28176|QO|Obsidian Whelps hatched: 1/1|U|63126|M|57.97,80.33|N|Use Mother's Flame on the Obsidian Eggs.|
+C Following the Young Home|QID|28176|QO|Obsidian Whelps hatched: 1/1|U|63126|M|58,0,86.4|N|Use Mother's Flame on the Obsidian Eggs outside the cave then follow them in the cave.|
 C Following the Young Home|QID|28176|M|55.63,83.74|N|Just follow the tunnel downward.|
 T Following the Young Home|QID|28176|M|44.92,91.02|N|To Baleflame.|
 

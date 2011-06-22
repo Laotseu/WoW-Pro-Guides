@@ -178,7 +178,7 @@ A Fel Spirits |QID|10909|M|54.3,63.6|N|From Assistant Klatu.|
 A Digging for Prayer Beads |QID|10916|M|54.3,63.6|N|From Assistant Klatu.|
 l Draenei Prayer Beads|QID|10916|M|54.16,63.32|N|Head outside the inn and turn left, follow the wall, to the waypoint.  Loot Fei Fei's Cache (glittering dirt pile).|L|31795|
 r Sell junk, repair, restock |N|Sell junk, repair, restock  |M|54.65,63.53|QID|10916|
-A Hellfire Fortifications |QID|10106|M|56.34,62.78|N|From Warrant Officer Tracy Proudwell.  This is optional as it is a PvP quest, so skip if you don't wish to do it.|
+A Hellfire Fortifications |QID|13410|M|56.34,62.78|N|From Warrant Officer Tracy Proudwell.  This is optional as it is a PvP quest, so skip if you don't wish to do it.|
 T The Dark Missive |QID|10395|N|Head to Warp-Scryer Kryv.|M|56.69,66.52|
 A The Heart of Darkness |QID|10399|N|From Warp-Scryer Kryv.|M|56.69,66.52|
 A The Path of Glory |QID|10047|M|56.7,66.5|N|From Warp-Scryer Kryv.|M|56.69,66.52|
@@ -253,7 +253,7 @@ T Rampaging Ravagers |QID|9385|M|24.0,72.1|N|To Gremni Longbeard.|
 
 N Start looking for a group... |QID|10937|N|Start looking for a group for The Rock Flayer Matriarch and Drill the Drillmaster. Kill mobs in this area while you do so.|M|34.00,63.00|
 C Deadly Predators |N|Kill the mobs needed for this quest.|QID|9398|M|32.00,61.00|
-C Hellfire Fortifications |N|Do this quest by taking over the towers.|QID|10106|M|40.76,49.64;39.81,56.49;35.38,56.42|O|
+C Hellfire Fortifications |N|Do this quest by taking over the towers.|QID|13410|M|40.76,49.64;39.81,56.49;35.38,56.42|O|
 C The Rock Flayer Matriarch|N|Kill the elite in this cave.|QID|9490|M|34.00,64.00|
 C Drill the Drillmaster |N|Kill Drillmaster Zurok.|QID|10937|M|47.89,56.11|
 C An Ambitious Plan |N|Get an Uncontrolled Voidwalker down to low health, then use the Sanctified Crystal.  Click on the red Crystal that appears.|QID|9383|M|46.00,82.00|
@@ -265,7 +265,7 @@ T Voidwalkers Gone Wild |QID|9351|M|49.2,74.8|N|To "Screaming" Screed Luckheed.
 
 H Honor Hold |QID|10937|N|Hearth to Honor Hold. |U|6948|M|54.3,63.4|
 T An Old Gift |QID|10058|M|54.3,63.4|N|To Father Malgor Devidicus.|
-T Hellfire Fortifications|QID|10106|M|56.34,62.78|N|To Warrant Officer Tracy Proudwell.|O|
+T Hellfire Fortifications|QID|13410|M|56.34,62.78|N|To Warrant Officer Tracy Proudwell.|O|
 T Drill the Drillmaster|QID|10937|N|To Force Commander Danath Trollbane.|M|56.61,66.64|
 T Looking to the Leadership |QID|10057|M|50.9,60.2|N|To Honor Guard Wesilow.|
 F Temple of Telhamat|QID|9383|N|Fly to the Temple of Telhamat |M|54.70,62.35|
