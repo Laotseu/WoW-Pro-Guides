@@ -356,6 +356,11 @@ end
 -- Trace stuff
 function WoWPro:Trace(text)
 	if WoWPro.DB.global.Trace_on then
-		_G.tinsert(WoWPro.DB.global.Trace, text .. " - " ..  _G.time())
+		local stack = _G.debugstack(2,3,0)
+		stack = stack:gsub("Interface\\AddOns\\","")
+		stack = stack:gsub("\n[.][.][.]","")
+		stack = stack:gsub("\n"," - ")
+		stack = stack:gsub(" function "," ")
+		_G.tinsert(WoWPro.DB.global.Trace, text .. " - " .. stack .. _G.time())
 	end
 end
