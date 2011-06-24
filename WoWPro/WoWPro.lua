@@ -7,6 +7,9 @@ local _G = getfenv(0)
 
 local print = _G.print
 local collectgarbage = _G.collectgarbage
+local tostring = _G.tostring
+local wipe = _G.wipe
+local select = _G.select
 
 local ipairs = _G.ipairs
 local pairs = _G.pairs
@@ -255,7 +258,8 @@ function WoWPro:OnEnable()
 				num = num+1
 			end
 			WoWPro:dbp("Old Completed QIDs: "..num)
-			WoWProCharDB.completedQIDs = {}
+			WoWProCharDB.completedQIDs = WoWProCharDB.completedQIDs or {}
+			wipe(WoWProCharDB.completedQIDs)
 			GetQuestsCompleted(WoWProCharDB.completedQIDs)
 			num = 0
 			for i, QID in pairs(WoWProCharDB.completedQIDs) do

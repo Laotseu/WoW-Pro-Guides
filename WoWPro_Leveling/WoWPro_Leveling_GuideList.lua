@@ -4,6 +4,7 @@
 local _G = getfenv(0)
 
 local math = _G.math
+local wipe = _G.wipe
 
 local ipairs = _G.ipairs
 local pairs = _G.pairs
@@ -73,13 +74,13 @@ function WoWPro.Leveling.UpdateGuideList()
 		local function OnClick()
 			if not WoWPro.Leveling:IsEnabled() then return end
 			if IsShiftKeyDown() then
+				WoWPro.ReleaseTable(WoWProCharDB.Guide[guides[row.i].GID])
 				WoWProCharDB.Guide[guides[row.i].GID] = nil
 				WoWPro.Leveling.Resetting = true
 				WoWPro:LoadGuide(guides[row.i].GID)
-				for j = 1,WoWPro.stepcount do
-					if WoWPro.QID[j] then WoWProCharDB.completedQIDs[WoWPro.QID[j]] = nil end
+				for j = 1,#WoWPro.QID do
+					if WoWPro.QID[j] then WoWProCharDB.skippedQIDs[WoWPro.QID[j]] = nil end
 				end
-				WoWPro:LoadGuide(guides[row.i].GID)
 				WoWPro.Leveling.Resetting = false
 			else
 				WoWPro:LoadGuide(guides[row.i].GID)

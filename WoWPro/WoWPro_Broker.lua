@@ -103,6 +103,9 @@ local function WipeTable(tbl)
 
 	wipe(tbl)
 end
+WoWPro.AcquireTable = AcquireTable
+WoWPro.ReleaseTable = ReleaseTable
+WoWPro.WipeTable = WipeTable
 
 -- Table copy function -- borrowed from AceDB-3.0.lua
 local function CopyTable(src, dest)
@@ -133,7 +136,8 @@ function WoWPro:LoadGuide(guideID)
 	--Re-initiallizing tags and counts--
 	for i,tag in pairs(WoWPro.Tags) do
 		--WoWPro[tag] = {}
-		WoWPro[tag] = AcquireTable()
+		WoWPro[tag] = WoWPro[tag] or AcquireTable()
+		wipe(WoWPro[tag])
 	end
 	WoWPro.stepcount, WoWPro.stickycount, WoWPro.optionalcount = 0, 0 ,0
 
@@ -178,7 +182,7 @@ function WoWPro:LoadGuide(guideID)
 		WoWPro[WoWPro.Guides[GID].guidetype]:LoadGuide()
 	else return end
 
-	WoWPro:UpdateGuide()
+	--WoWPro:UpdateGuide()
 	WoWPro:MapPoint()
 end
 
