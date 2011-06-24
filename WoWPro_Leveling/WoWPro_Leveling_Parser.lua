@@ -257,6 +257,7 @@ end
 
 -- Quest parsing function --
 local function ParseQuests(...)
+--WoWPro:Trace("Start ParseQuests")
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	WoWPro:dbp("Parsing Guide...")
@@ -349,10 +350,12 @@ local function ParseQuests(...)
 			end end end end
 		end
 	end
+--WoWPro:Trace("End ParseQuests")
 end
 
 -- Guide Load --
 function WoWPro.Leveling:LoadGuide()
+--WoWPro:Trace("Start WoWPro.Leveling:LoadGuide: "..tostring(WoWPro.DB.char.currentguide))
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	local GID = WoWProDB.char.currentguide
@@ -365,8 +368,8 @@ function WoWPro.Leveling:LoadGuide()
 
 	WoWPro:PopulateQuestLog() --Calling this will populate our quest log table for use here
 
-	-- Checking to see if any steps are already complete --
-	WoWPro.Leveling:AutoCompleteQuestUpdate()
+	-- Checking to see if any steps are already complete wihtout updating the GUI --
+	WoWPro.Leveling:AutoCompleteQuestUpdate(true)
 
 --[[
 	for i=1, WoWPro.stepcount do
@@ -394,7 +397,7 @@ function WoWPro.Leveling:LoadGuide()
 		if not completion and level and tonumber(level) <= UnitLevel("player") then
 			WoWProCharDB.Guide[GID].completion[i] = true
 		end
-		
+
 	end
 ]]
 	WoWPro:UpdateGuide()
@@ -407,6 +410,17 @@ function WoWPro.Leveling:LoadGuide()
 
 	-- Scrollbar Settings --
 	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount - WoWPro.ShownRows))
+
+	-- Set the arrow
+	WoWPro:MapPoint()
+	WoWPro.Leveling.FirstMapCall = false
+
+	-- Audio feedback to tell the user it's done
+	if WoWProDB.profile.checksound then
+		PlaySoundFile(WoWProDB.profile.checksoundfile)
+	end
+
+--WoWPro:Trace("End WoWPro.Leveling:LoadGuide: "..tostring(WoWPro.DB.char.currentguide))
 end
 
 -- Row Content Update --
@@ -780,8 +794,8 @@ function WoWPro.Leveling:AutoCompleteGetFP(...)
 end
 
 -- Auto-Complete: Quest Update --
-function WoWPro.Leveling:AutoCompleteQuestUpdate()
-WoWPro:Trace("Start WoWPro.Leveling:AutoCompleteQuestUpdate")
+function WoWPro.Leveling:AutoCompleteQuestUpdate(skipUIUpdate)
+--WoWPro:Trace("Start WoWPro.Leveling:AutoCompleteQuestUpdate")
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	local GID = WoWProDB.char.currentguide
@@ -790,97 +804,101 @@ WoWPro:Trace("Start WoWPro.Leveling:AutoCompleteQuestUpdate")
 	if WoWProCharDB.Guide then
 		for i=1,#WoWPro.action do
 
-			local action = WoWPro.action[i]
-			local QID = WoWPro.QID[i]
 			local completion = WoWProCharDB.Guide[GID].completion[i]
-			-- Quest Turn-Ins --
-			--if WoWPro.Leveling.CompletingQuest == QID and action == "T" and not completion and WoWPro.missingQuest == QID then
-			--	WoWPro.CompleteStep(i)
-			--	WoWProCharDB.completedQIDs[QID] = true
-			--	WoWPro.Leveling.CompletingQuest = nil
-			--end
+			if not completion then
 
-			-- Abandoned Quests --
---			if not WoWPro.Leveling.CompletingQuest and ( action == "A" or action == "C" )
---				and completion and WoWPro.missingQuest == QID
---			then
-			if WoWPro.abandonedQID == QID and WoWPro.Leveling.CompletingQuest and
-					( action == "A" or action == "C" ) and completion then
-				WoWProCharDB.Guide[GID].completion[i] = nil
-				completion = nil
-				WoWPro:UpdateGuide()
-				WoWPro:MapPoint()
-			end
+				local action = WoWPro.action[i]
+				local QID = WoWPro.QID[i]
+				-- Quest Turn-Ins --
+				--if WoWPro.Leveling.CompletingQuest == QID and action == "T" and not completion and WoWPro.missingQuest == QID then
+				--	WoWPro.CompleteStep(i)
+				--	WoWProCharDB.completedQIDs[QID] = true
+				--	WoWPro.Leveling.CompletingQuest = nil
+				--end
 
-                    -- Quest AutoComplete --
-			if WoWProCharDB.completedQIDs[QID] then
-                        WoWPro.CompleteStep(i)
-				completion = true
-                    end
-
-            -- Quest AutoComplete --
---			if (WoWPro.newQuest == QID or currentquests[QID]) and (action == "A") and not completion
---			then
---                WoWPro.CompleteStep(i)
---            end
---
-			        -- Quest Accepts --
---			if WoWPro.newQuest == QID and action == "A" and not completion then
---				WoWPro.CompleteStep(i)
---			end
-
-			-- Quests that are in the current log have been accepted
-			if action == "A" and not completion and WoWPro.QuestLog[QID] then
-				WoWPro.CompleteStep(i)
-				completion = true
-			end
-
-			-- Quest Completion: Any step that is not a Turn in is considered completed if the quest is completed --
-			if action ~= "T" and not completion and WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].complete then
-				WoWPro.CompleteStep(i)
-				completion = true
-			end
-
-			-- Verify with FlightPoint addons
-			if action == "f" and not completion then
-				-- Futur code to interact with FlightMap type of addons
-			end
-
-			        -- Quest Completion --
-			if WoWPro.lootitem[i] and not completion
-				and GetItemCount( WoWPro.lootitem[i] ) >=  WoWPro.lootqty[i] then
-				WoWPro.CompleteStep(i)
-				completion = true
-			end
-
-			-- Partial Completion --
-			if WoWPro.QuestLog[QID] and not completion and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[i] then
-				local numquesttext = select("#", string.split(";", WoWPro.questtext[i]))
-				local complete = true
-				for l=1,numquesttext do
-					local lquesttext = select(numquesttext-l+1, string.split(";", WoWPro.questtext[i]))
-					local lcomplete = false
-					for _, objective in pairs(WoWPro.QuestLog[QID].leaderBoard) do --Checks each of the quest log objectives
-						if lquesttext == objective then --if the objective matches the step's criteria, mark true
-							lcomplete = true
-						end
+				-- Abandoned Quests --
+	--			if not WoWPro.Leveling.CompletingQuest and ( action == "A" or action == "C" )
+	--				and completion and WoWPro.missingQuest == QID
+	--			then
+				if WoWPro.abandonedQID == QID and WoWPro.Leveling.CompletingQuest and
+						( action == "A" or action == "C" ) and completion then
+					WoWProCharDB.Guide[GID].completion[i] = nil
+					completion = nil
+					if not skipUIUpdate then
+						WoWPro:UpdateGuide()
+						WoWPro:MapPoint()
 					end
-					if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
 				end
-				if complete then WoWPro.CompleteStep(i) end --if the step has not been found to be incomplete, run the completion function
-			end
-		
-		end
 
+				-- Quest AutoComplete --
+				if WoWProCharDB.completedQIDs[QID] then
+					WoWPro.CompleteStep(i, skipUIUpdate)
+					completion = true
+--				end
+
+					-- Quest AutoComplete --
+	--			if (WoWPro.newQuest == QID or currentquests[QID]) and (action == "A") and not completion
+	--			then
+	--                WoWPro.CompleteStep(i)
+	--            end
+	--
+						  -- Quest Accepts --
+	--			if WoWPro.newQuest == QID and action == "A" and not completion then
+	--				WoWPro.CompleteStep(i)
+	--			end
+
+				-- Quests that are in the current log have been accepted
+				elseif action == "A" and not completion and WoWPro.QuestLog[QID] then
+					WoWPro.CompleteStep(i, skipUIUpdate)
+					completion = true
+--				end
+
+				-- Quest Completion: Any step that is not a Turn in is considered completed if the quest is completed --
+				elseif action ~= "T" and not completion and WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].complete then
+					WoWPro.CompleteStep(i, skipUIUpdate)
+					completion = true
+--				end
+
+				-- Verify with FlightPoint addons
+				--elseif action == "f" and not completion then
+				--	-- Futur code to interact with FlightMap type of addons
+				--end
+
+						  -- Quest Completion --
+				elseif WoWPro.lootitem[i] and not completion
+					and GetItemCount( WoWPro.lootitem[i] ) >=  WoWPro.lootqty[i] then
+					WoWPro.CompleteStep(i, skipUIUpdate)
+					completion = true
+--				end
+
+				-- Partial Completion --
+				elseif WoWPro.QuestLog[QID] and not completion and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[i] then
+					local numquesttext = select("#", string.split(";", WoWPro.questtext[i]))
+					local complete = true
+					for l=1,numquesttext do
+						local lquesttext = select(numquesttext-l+1, string.split(";", WoWPro.questtext[i]))
+						local lcomplete = false
+						for _, objective in pairs(WoWPro.QuestLog[QID].leaderBoard) do --Checks each of the quest log objectives
+							if lquesttext == objective then --if the objective matches the step's criteria, mark true
+								lcomplete = true
+							end
+						end
+						if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
+					end
+					if complete then WoWPro.CompleteStep(i, skipUIUpdate) end --if the step has not been found to be incomplete, run the completion function
+				end
+
+			end
+		end
 	end
 
 	-- First Map Point --
-	if WoWPro.Leveling.FirstMapCall then
+	if not skipUIUpdate and WoWPro.Leveling.FirstMapCall then
 		WoWPro:MapPoint()
 		WoWPro.Leveling.FirstMapCall = false
 	end
 
-WoWPro:Trace("End WoWPro.Leveling:AutoCompleteQuestUpdate")
+--WoWPro:Trace("End WoWPro.Leveling:AutoCompleteQuestUpdate")
 end
 
 do -- QUEST_LOG_UPDATE_bucket Bucket Closure
@@ -1065,7 +1083,7 @@ end
 
 -- Update Quest Tracker --
 function WoWPro.Leveling:UpdateQuestTracker()
-WoWPro:Trace("Start WoWPro.Leveling:UpdateQuestTracker")
+--WoWPro:Trace("Start WoWPro.Leveling:UpdateQuestTracker")
 	local WoWProDB = WoWPro.DB
 
 	if not WoWPro.GuideFrame:IsVisible() then return end
@@ -1140,7 +1158,7 @@ WoWPro:Trace("Start WoWPro.Leveling:UpdateQuestTracker")
 		row.track:SetText(track)
 	end
 	if not InCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
-WoWPro:Trace("End WoWPro.Leveling:UpdateQuestTracker")
+--WoWPro:Trace("End WoWPro.Leveling:UpdateQuestTracker")
 end
 
 -- Get Currently Available Spells --

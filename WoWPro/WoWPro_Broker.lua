@@ -188,7 +188,7 @@ end
 
 -- Guide Update --
 function WoWPro:UpdateGuide(offset)
-WoWPro:Trace("Call WoWPro:UpdateGuide")
+----WoWPro:Trace("Call WoWPro:UpdateGuide offset:"..tostring(offset))
 	if not WoWPro.GuideFrame:IsVisible() then return end
 	WoWPro:dbp("Running: UpdateGuide()")
 
@@ -203,7 +203,7 @@ WoWPro:Trace("Call WoWPro:UpdateGuide")
 		then return
 	end
 
-WoWPro:Trace("Start WoWPro:UpdateGuide")
+--WoWPro:Trace("Start WoWPro:UpdateGuide")
 	-- If the module that handles this guide is not present and enabled, then end --
 	local module = WoWPro:GetModule(WoWPro.Guides[GID].guidetype)
 	if not module or not module:IsEnabled() then return end
@@ -280,7 +280,7 @@ WoWPro:Trace("Start WoWPro:UpdateGuide")
 			WoWPro.NextGuideDialog:Show()
 		end
 	end
-WoWPro:Trace("End WoWPro:UpdateGuide")
+--WoWPro:Trace("End WoWPro:UpdateGuide")
 end
 
 -- Next Step --
@@ -431,15 +431,22 @@ function WoWPro:NextStepNotSticky(k)
 end
 
 -- Step Completion Tasks --
-function WoWPro.CompleteStep(step)
+function WoWPro.CompleteStep(step, skipUIUpdate)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	local GID = WoWProDB.char.currentguide
 	if WoWProCharDB.Guide[GID].completion[step] then return end
+
+	WoWProCharDB.Guide[GID].completion[step] = true
+
+	if skipUIUpdate then
+		-- No UI update is needed. We are probably in the process of loading a guide.
+		return
+	end
+
 	if WoWProDB.profile.checksound then
 		PlaySoundFile(WoWProDB.profile.checksoundfile)
 	end
-	WoWProCharDB.Guide[GID].completion[step] = true
 	for i,row in ipairs(WoWPro.rows) do
 		if WoWProCharDB.Guide[GID].completion[row.index] then
 			row.check:SetChecked(true)
@@ -478,7 +485,7 @@ end
 
 -- Populate the Quest Log table for other functions to call on --
 function WoWPro:PopulateQuestLog()
-WoWPro:Trace("Begin WoWPro:PopulateQuestLog")
+--WoWPro:Trace("Begin WoWPro:PopulateQuestLog")
 	local WoWProCharDB = WoWPro.CharDB
 	WoWPro:dbp("Populating quest log...")
 --err("Populating quest log...")
@@ -573,5 +580,5 @@ WoWPro:Trace("Begin WoWPro:PopulateQuestLog")
 	end
 	WoWPro:dbp("Quest Log populated. "..num.." quests found.")
 --err("Quest Log populated, %s quests found.", num)
-WoWPro:Trace("End WoWPro:PopulateQuestLog")
+--WoWPro:Trace("End WoWPro:PopulateQuestLog")
 end

@@ -74,6 +74,7 @@ function WoWPro.Leveling.UpdateGuideList()
 		local function OnClick()
 			if not WoWPro.Leveling:IsEnabled() then return end
 			if IsShiftKeyDown() then
+--WoWPro:Trace("Start Reseting Guide: "..guides[row.i].GID)
 				WoWPro.ReleaseTable(WoWProCharDB.Guide[guides[row.i].GID])
 				WoWProCharDB.Guide[guides[row.i].GID] = nil
 				WoWPro.Leveling.Resetting = true
@@ -82,6 +83,7 @@ function WoWPro.Leveling.UpdateGuideList()
 					if WoWPro.QID[j] then WoWProCharDB.skippedQIDs[WoWPro.QID[j]] = nil end
 				end
 				WoWPro.Leveling.Resetting = false
+--WoWPro:Trace("End Reseting Guide: "..guides[row.i].GID)
 			else
 				WoWPro:LoadGuide(guides[row.i].GID)
 			end
