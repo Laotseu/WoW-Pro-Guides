@@ -131,6 +131,7 @@ end
 
 -- Guide Load --
 function WoWPro:LoadGuide(guideID)
+----WoWPro:Trace("Start WoWPro:LoadGuide Guide: "..tostring(guideID))
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	--Re-initiallizing tags and counts--
@@ -184,6 +185,7 @@ function WoWPro:LoadGuide(guideID)
 
 	--WoWPro:UpdateGuide()
 	WoWPro:MapPoint()
+----WoWPro:Trace("End WoWPro:LoadGuide Guide: "..tostring(guideID))
 end
 
 -- Guide Update --
