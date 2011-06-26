@@ -244,7 +244,7 @@ b Scalawag Point |QID|11509|N|Talk to Lou the Cabin Boy and choose his chat bubb
 T Street "Cred" |QID|11509|M|35.1,80.9|N|To "Silvermoon" Harry.|
 A "Scoodles" |QID|11510|M|35.1,80.9|N|From "Silvermoon" Harry.|
 A Forgotten Treasure |QID|11434|M|35.6,80.2|N|From Handsome Terry.|
-C "Scoodles" |QID|11510|N|Find and kill "Scoodles" and loot his Sin'dorei Scrying Crystal. |M|36.40,85.27|
+C "Scoodles" |QID|11510|T|"Scoodles"|N|Find and kill "Scoodles" and loot his Sin'dorei Scrying Crystal. |M|36.40,85.27|
 l Eagle Figurine |QID|11434|QO|Eagle Figurine: 1/1|U|34076|N|Use the Fish Bladder for underwater breathing, then dive down and loot the Eagle Figurine inside the ship here. |M|37.77,84.62|
 C Forgotten Treasure |QID|11434|N|Swim to the other ship here and loot the Amani Vase. |M|37.14,85.53|
 T Forgotten Treasure |QID|11434|M|35.6,80.2|N|To Handsome Terry.|
@@ -295,7 +295,7 @@ A Meet Number Two |QID|11480|M|35.6,80.2|N|From Handsome Terry.|
 T Meet Number Two |QID|11480|M|35.4,79.4|N|To Annie Bonn.|
 
 A The Jig is Up |QID|11471|N|From Annie Bonn.|
-C Swabbin' Soap |QID|11469|N|Kill Big Roy here and loot Big Roy's Blubber. |M|31.33,78.68|
+C Swabbin' Soap |QID|11469|T|Big Roy|N|Kill Big Roy here and loot Big Roy's Blubber. |M|31.33,78.68|
 C The Jig is Up |QID|11471|N|You may need a group for this quest. Beat "Mad" Jonah Sterling down to ~30%, then kill the pet he summons, Hozzer, and loot Jonah Sterling's Spyglass from Hozzer. |M|33.60,78.18|
 C The Frozen Heart of Isuldof |QID|11512|N|Loot The Frozen Heart of Isuldof from the ground here. |M|32.33,78.67|
 T The Jig is Up |QID|11471|N|To Annie Bonn.|
@@ -467,7 +467,7 @@ T It's a Scourge Device |QID|11395|M|24.2,32.5|N|To Explorer Jaren.|
 A Bring Down Those Shields |QID|11396|M|24.2,32.5|N|From Explorer Jaren.|
 C Bring Down Those Shields |QID|11396|U|33960|N|Find the 3 Scourging Crystals and use the Scourging Crystal Controller on them, then kill them. Pet kills do not count.|M|22.69,31.14;21.92,28.75;21.52,24.60|
 A Trident of the Son |QID|11422|M|19.8,22.2|N|From Old Icefin.|
-C Trident of the Son |QID|11422|T|Rotgil|N|Find Rotgill patrolling the coast here and kill him for Rotgill's Trident. |M|24.24,35.67|
+C Trident of the Son |QID|11422|T|Rotgill|N|Find Rotgill patrolling the coast here and kill him for Rotgill's Trident. |M|24.24,35.67|
 C And You Thought Murlocs Smelled Bad! |US|QID|11394|N|Kill any remaining Scourge mobs you need for this quest. |M|22.78,31.13|
 T And You Thought Murlocs Smelled Bad! |QID|11394|M|24.2,32.5|N|To Explorer Jaren.|
 T Bring Down Those Shields |QID|11396|M|24.2,32.5|N|To Explorer Jaren.|
