@@ -1,26 +1,154 @@
+-------------------------------------------------------------------------------
+-- Localized Lua globals
+-------------------------------------------------------------------------------
+local _G = getfenv(0)
+
+--local WoWProDB = _G.WoWProDB
+--local WoWProCharDB = _G.WoWProCharDB
+
+local string = _G.string
+local assert = _G.assert
+local math = _G.math
+local select = _G.select
+local tonumber = _G.tonumber
+local tostring = _G.tostring
+local type = _G.type
+
+local table = _G.table
+local ipairs = _G.ipairs
+local pairs = _G.pairs
+local tinsert = _G.tinsert
+local tremove = _G.tremove
+local wipe = _G.wipe
+
+local UIParent = _G.UIParent
+
+local CreateFrame = _G.CreateFrame
+local EasyMenu = _G.EasyMenu
+local GetFactionInfo = _G.GetFactionInfo
+local GetItemCount = _G.GetItemCount
+local GetNumFactions = _G.GetNumFactions
+local GetNumQuestLeaderBoards = _G.GetNumQuestLeaderBoards
+local GetNumQuestLogEntries = _G.GetNumQuestLogEntries
+local GetProfessionInfo = _G.GetProfessionInfo
+local GetProfessions = _G.GetProfessions
+local GetQuestLogLeaderBoard = _G.GetQuestLogLeaderBoard
+local GetQuestLogSpecialItemInfo = _G.GetQuestLogSpecialItemInfo
+local GetQuestLogTitle = _G.GetQuestLogTitle
+local InCinematic = _G.InCinematic
+local InCombatLockdown = _G.InCombatLockdown
+local PlaySoundFile = _G.PlaySoundFile
+local QuestMapUpdateAllQuests = _G.QuestMapUpdateAllQuests
+local QuestPOIUpdateIcons = _G.QuestPOIUpdateIcons
+local UnitFactionGroup = _G.UnitFactionGroup
+local WorldMapFrame_UpdateQuests = _G.WorldMapFrame_UpdateQuests
+
+_G.WoWPro.quest_log_debug = false
+
+local err_params = {}
+local function err(msg, ...)
+	if not _G.WoWPro.quest_log_debug then return end
+	msg = tostring(msg)
+	wipe(err_params)
+	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
+	_G.geterrorhandler()(msg:format(_G.unpack(err_params)) .. " - " .. _G.time())
+end
+
 -----------------------------
 --      WoWPro_Broker      --
 -----------------------------
 
-local L = WoWPro_Locale
+local WoWPro = _G.LibStub("AceAddon-3.0"):GetAddon("WoWPro")
+
+local L = _G.WoWPro_Locale
 local OldQIDs, CurrentQIDs, NewQIDs, MissingQIDs
+
+-------------------------------
+-- Table Recycling functions --
+-------------------------------
+
+-- Table reuse functions
+local AcquireTable, ReleaseTable
+do
+	local table_cache = {}
+
+	-- Returns a table
+	function AcquireTable()
+		local tbl = tremove(table_cache) or {}
+		return tbl
+	end
+
+	-- Cleans the table and stores it in the cache
+	function ReleaseTable(tbl)
+		if not tbl then return end
+
+		-- Nested tables ?
+		for i=1,#tbl do
+			if type(tbl[i]) == 'table' then ReleaseTable(tbl[i]) end
+		end
+
+		wipe(tbl)
+		tinsert(table_cache, tbl)
+	end
+end	-- do block
+
+-- Wipe a table but also call ReleaseTable() on each nested table
+local function WipeTable(tbl)
+	assert(type(tbl) == 'table',"Usage: WipeTable(table) The argument must be a table.")
+
+	-- Nested tables ?
+	for i=1,#tbl do
+		if type(tbl[i]) == 'table' then ReleaseTable(tbl[i]) end
+	end
+
+	wipe(tbl)
+end
+WoWPro.AcquireTable = AcquireTable
+WoWPro.ReleaseTable = ReleaseTable
+WoWPro.WipeTable = WipeTable
+
+-- Table copy function -- borrowed from AceDB-3.0.lua
+local function CopyTable(src, dest)
+	if type(dest) ~= "table" then dest = AcquireTable() end
+	if type(src) == "table" then
+		for k,v in pairs(src) do
+			if type(v) == "table" then
+				-- try to index the key first so that the metatable creates the defaults, if set, and use that table
+				v = CopyTable(v, dest[k])
+			end
+			dest[k] = v
+		end
+	end
+	return dest
+end
+
+-- Check for empty table
+local function IsTableEmpty(table)
+	return not _G.next(table)
+end
+
+
 
 -- Guide Load --
 function WoWPro:LoadGuide(guideID)
-	
+----WoWPro:Trace("Start WoWPro:LoadGuide Guide: "..tostring(guideID))
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	--Re-initiallizing tags and counts--
-	for i,tag in pairs(WoWPro.Tags) do 
-		WoWPro[tag] = {}
+	for i,tag in pairs(WoWPro.Tags) do
+		--WoWPro[tag] = {}
+		WoWPro[tag] = WoWPro[tag] or AcquireTable()
+		wipe(WoWPro[tag])
 	end
 	WoWPro.stepcount, WoWPro.stickycount, WoWPro.optionalcount = 0, 0 ,0
-	
+
 	--Checking the GID and loading the guide --
-	if guideID then WoWProDB.char.currentguide = guideID end 
+	if guideID then WoWProDB.char.currentguide = guideID end
 	local GID = WoWProDB.char.currentguide
-	if not GID then 
-		WoWPro:LoadNilGuide() 
+	if not GID then
+		WoWPro:LoadNilGuide()
 		WoWPro:dbp("No guide specified, loading NilGuide.")
-		return 
+		return
 	end
 	-- If the current guide can not be found, see if it was renamed.
 	if not WoWPro.Guides[GID] then
@@ -34,62 +162,68 @@ function WoWPro:LoadGuide(guideID)
 	        WoWProCharDB.Guide[newGID] = WoWProCharDB.Guide[GID]
 	        WoWProCharDB.Guide[GID] = nil
 	        GID = newGID
-	        WoWProDB.char.currentguide = GID  
+	        WoWProDB.char.currentguide = GID
 	    end
 	end
-	if not WoWPro.Guides[GID] then 
+	if not WoWPro.Guides[GID] then
 		WoWPro:dbp("Guide "..GID.." not found, loading NilGuide.")
 		WoWPro:LoadNilGuide()
-		WoWProDB.char.currentguide = nil 
-		return 
-	end 
+		WoWProDB.char.currentguide = nil
+		return
+	end
 	WoWPro:dbp("Loading Guide: "..GID)
-	
+
 	-- Creating a new entry if this guide does not have one
-	WoWProCharDB.Guide[GID] = WoWProCharDB.Guide[GID] or {}
-	WoWProCharDB.Guide[GID].completion = WoWProCharDB.Guide[GID].completion or {}
-	WoWProCharDB.Guide[GID].skipped = WoWProCharDB.Guide[GID].skipped or {}
-	
+	WoWProCharDB.Guide[GID] = WoWProCharDB.Guide[GID] or AcquireTable()
+	WoWProCharDB.Guide[GID].completion = WoWProCharDB.Guide[GID].completion or AcquireTable()
+	WoWProCharDB.Guide[GID].skipped = WoWProCharDB.Guide[GID].skipped or AcquireTable()
+
 	local module = WoWPro:GetModule(WoWPro.Guides[GID].guidetype)
-	if module:IsEnabled() then 
-		WoWPro[WoWPro.Guides[GID].guidetype]:LoadGuide() 
+	if module:IsEnabled() then
+		WoWPro[WoWPro.Guides[GID].guidetype]:LoadGuide()
 	else return end
-	
-	WoWPro:UpdateGuide()
+
+	--WoWPro:UpdateGuide()
 	WoWPro:MapPoint()
+----WoWPro:Trace("End WoWPro:LoadGuide Guide: "..tostring(guideID))
 end
 
 -- Guide Update --
 function WoWPro:UpdateGuide(offset)
+----WoWPro:Trace("Call WoWPro:UpdateGuide offset:"..tostring(offset))
 	if not WoWPro.GuideFrame:IsVisible() then return end
 	WoWPro:dbp("Running: UpdateGuide()")
+
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 	local GID = WoWProDB.char.currentguide
-	
+
 	-- If the user is in combat, or if a GID is not present, or if the guide cannot be found, end --
-	if InCombatLockdown() 
-		or not GID 
+	if InCombatLockdown()
+		or InCinematic()
+		or not GID
 		or not WoWPro.Guides[GID]
-		then return 
+		then return
 	end
-	
+
+--WoWPro:Trace("Start WoWPro:UpdateGuide")
 	-- If the module that handles this guide is not present and enabled, then end --
 	local module = WoWPro:GetModule(WoWPro.Guides[GID].guidetype)
 	if not module or not module:IsEnabled() then return end
-	
+
 	-- Finding the active step in the guide --
 	WoWPro.ActiveStep = WoWPro:NextStep(1)
 	if WoWPro.Recorder then WoWPro.ActiveStep = WoWPro.Recorder.SelectedStep or WoWPro.ActiveStep end
 	if not offset then WoWPro.Scrollbar:SetValue(WoWPro.ActiveStep) end
 	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount))
-	
+
 	-- Calling on the guide's module to populate the guide window's rows --
 	local function rowContentUpdate()
 		local reload = WoWPro[module:GetName()]:RowUpdate(offset)
 		for i, row in pairs(WoWPro.rows) do
 			local modulename
 			-- Hyjack the click and menu functions for the Recorder if it's enabled --
-			if WoWPro.Recorder then 
-				modulename = "Recorder" 
+			if WoWPro.Recorder then
+				modulename = "Recorder"
 				WoWPro.Recorder:RowUpdate(offset)
 			else modulename = module:GetName() end
 			local menuFrame = CreateFrame("Frame", "WoWProDropMenu", UIParent, "UIDropDownMenuTemplate")
@@ -110,36 +244,36 @@ function WoWPro:UpdateGuide(offset)
 	local reload = true
 	-- Reloading until all stickies that need to unsticky have done so --
 	while reload do reload = rowContentUpdate() end
-	
+
 	-- Update content and formatting --
 	WoWPro:RowSet(); WoWPro:RowSet()
 	WoWPro:PaddingSet()
-	
+
 	-- Updating the guide list or current guide panels if they are shown --
-	if WoWPro[module:GetName()].GuideList 
-	and WoWPro[module:GetName()].GuideList:IsVisible() 
+	if WoWPro[module:GetName()].GuideList
+	and WoWPro[module:GetName()].GuideList:IsVisible()
 	and WoWPro[module:GetName()].UpdateGuideList then
-		WoWPro[module:GetName()].UpdateGuideList() 
+		WoWPro[module:GetName()].UpdateGuideList()
 	end
 	if WoWPro.CurrentGuideFrame:IsVisible() then WoWPro.UpdateCurrentGuidePanel() end
-	
+
 	-- Updating the progress count --
 	local p = 0
 	for j = 1,WoWPro.stepcount do
 		if ( WoWProCharDB.Guide[GID].completion[j] or WoWProCharDB.Guide[GID].skipped[j] )
-		and not WoWPro.sticky[j] 
-		and not WoWPro.optional[j] then 
-			p = p + 1 
+		and not WoWPro.sticky[j]
+		and not WoWPro.optional[j] then
+			p = p + 1
 		end
 	end
 	WoWProCharDB.Guide[GID].progress = p
 	WoWProCharDB.Guide[GID].total = WoWPro.stepcount - WoWPro.stickycount - WoWPro.optionalcount
-	
+
 	-- TODO: make next lines module specific
 	WoWPro.TitleText:SetText(WoWPro.Guides[GID].zone.."   ("..WoWProCharDB.Guide[GID].progress.."/"..WoWProCharDB.Guide[GID].total..")")
-	
+
 	-- If the guide is complete, loading the next guide --
-	if WoWProCharDB.Guide[GID].progress == WoWProCharDB.Guide[GID].total 
+	if WoWProCharDB.Guide[GID].progress == WoWProCharDB.Guide[GID].total
 	and not WoWPro.Recorder and not WoWPro.Leveling.Resetting then
 		if WoWProDB.profile.autoload then
 			WoWProDB.char.currentguide = WoWPro.Guides[GID].nextGID
@@ -148,40 +282,43 @@ function WoWPro:UpdateGuide(offset)
 			WoWPro.NextGuideDialog:Show()
 		end
 	end
-end	
+--WoWPro:Trace("End WoWPro:UpdateGuide")
+end
 
 -- Next Step --
 -- Determines the next active step --
 function WoWPro:NextStep(k,i)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local GID = WoWProDB.char.currentguide
 	if not k then k = 1 end --k is the position in the guide
 	if not i then i = 1 end --i is the position on the rows
 	local skip = true
-	while skip do 
-		
+	while skip do
+
 		skip = false -- The step deaults to NOT skipped
-		
+
 		-- Optional Quests --
-		if WoWPro.optional[k] and WoWPro.QID[k] then 
+		if WoWPro.optional[k] and WoWPro.QID[k] then
 			skip = true --Optional steps default to skipped --
-			
+
 			-- Checking Use Items --
 			if WoWPro.use[k] then
-				if GetItemCount(WoWPro.use[k]) >= 1 then 
+				if GetItemCount(WoWPro.use[k]) >= 1 then
 					skip = false -- If the optional quest has a use item and it's in the bag, it's NOT skipped --
 				end
 			end
-			
+
 		end
-	
+
 		-- Skipping profession quests if their requirements aren't met --
 		if WoWPro.prof[k] then
 			local prof, proflvl = string.split(";",WoWPro.prof[k])
 			proflvl = proflvl or 1
-			
+
 			if prof and type(prof) == "string" and type(proflvl) == "number" then
 				skip = true --Profession steps skipped by default
-				local profs = {}
+				local profs = AcquireTable()
 				profs[1], profs[2], profs[3], profs[4], profs[5], profs[6] = GetProfessions()
 				for p=1,6 do
 					if profs[p] then
@@ -191,6 +328,7 @@ function WoWPro:NextStep(k,i)
 						end
 					end
 				end
+				ReleaseTable(profs)
 			end
 		end
 
@@ -201,9 +339,9 @@ function WoWPro:NextStep(k,i)
 			local repID,repmax = string.split("-",temprep)
 			if repmax== nil then repmax = repID end
 			-- Canonicalize the case
-			rep = string.lower(rep)
-			repID = string.lower(repID)
-			repmax = string.lower(repmax) 
+			rep = rep:lower()
+			repID = repID:lower()
+			repmax = repmax:lower()
 			replvl = tonumber(replvl) or 0
 
 			if repID == 'hated' then repID = 1 end
@@ -224,22 +362,22 @@ function WoWPro:NextStep(k,i)
 			elseif repmax == 'revered' then repmax = 7
 			elseif repmax == 'exalted' then repmax = 8
 			else repmax = 8 end
-            
+
 			skip = true --reputation steps skipped by default
-			
+
 			for factionIndex = 1, GetNumFactions() do
-  				name, description, standingId, bottomValue, topValue, earnedValue, atWarWith,
+  				local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith,
     				canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
-    			name=string.lower(name)
+    			name=name:lower()
     			-- The guide will have "Scryers" and the faction name is "The Scryers"
-				if string.find(name,rep) then
+				if name:find(rep) then
 					if (repID <= standingId) and (repmax >= standingId) and (replvl == 0) then
 						skip = false
 					end
 					if (replvl > 0) then
 						replvl = bottomValue + replvl
-						if (repID > standingId) then 
-							skip = false 
+						if (repID > standingId) then
+							skip = false
 						end
 						if (repID == standingId) and (earnedValue <= replvl) then
                                                                                                 skip = false
@@ -247,16 +385,16 @@ function WoWPro:NextStep(k,i)
 					end
   				end
 			end
-                                 end	
+                                 end
 		-- Skipping any quests with a greater completionist rank than the setting allows --
 		if WoWPro.rank[k] then
-			if tonumber(WoWPro.rank[k]) > WoWProDB.profile.rank then 
-				skip = true 
+			if tonumber(WoWPro.rank[k]) > WoWProDB.profile.rank then
+				skip = true
 			end
 		end
-		
+
 		skip = WoWPro[WoWPro.Guides[GID].guidetype]:NextStep(k, skip)
-		
+
 		-- Skipping any manually skipped quests --
 		if WoWProCharDB.Guide[GID].skipped[k] then
 			skip = true
@@ -264,17 +402,17 @@ function WoWPro:NextStep(k,i)
 			WoWProCharDB.Guide[GID].skipped[k] = true
 			skip = true
 		end
-		
+
 		-- Skipping any unstickies until it's time for them to display --
 		if WoWPro.unsticky[k] and WoWPro.ActiveStickyCount and i > WoWPro.ActiveStickyCount+1 then skip = true end
-		
+
 		-- Skipping completed steps --
 		if WoWProCharDB.Guide[GID].completion[k] then skip = true end
-		
+
 		if skip then k = k+1 end
-		
+
 	end
-	
+
 	return k
 end
 
@@ -283,10 +421,10 @@ end
 function WoWPro:NextStepNotSticky(k)
 	if not k then k = 1 end
 	local sticky = true
-	while sticky do 
+	while sticky do
 		sticky = false
 		k = WoWPro:NextStep(k)
-		if WoWPro.sticky[k] then 
+		if WoWPro.sticky[k] then
 			sticky = true
 			k = k + 1
 		end
@@ -295,13 +433,22 @@ function WoWPro:NextStepNotSticky(k)
 end
 
 -- Step Completion Tasks --
-function WoWPro.CompleteStep(step)
+function WoWPro.CompleteStep(step, skipUIUpdate)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	local GID = WoWProDB.char.currentguide
 	if WoWProCharDB.Guide[GID].completion[step] then return end
-	if WoWProDB.profile.checksound then	
+
+	WoWProCharDB.Guide[GID].completion[step] = true
+
+	if skipUIUpdate then
+		-- No UI update is needed. We are probably in the process of loading a guide.
+		return
+	end
+
+	if WoWProDB.profile.checksound then
 		PlaySoundFile(WoWProDB.profile.checksoundfile)
 	end
-	WoWProCharDB.Guide[GID].completion[step] = true
 	for i,row in ipairs(WoWPro.rows) do
 		if WoWProCharDB.Guide[GID].completion[row.index] then
 			row.check:SetChecked(true)
@@ -309,52 +456,64 @@ function WoWPro.CompleteStep(step)
 			row.check:SetChecked(false)
 		end
 	end
-	
+
 	local Delta = WoWPro:MapPointDelta()
-	if Delta then
+	if Delta and ((WoWPro.action[step] == "C" and Delta[1] > 10) or Delta[1] > 1.9) then
 	    local qid=-99
 	    if WoWPro.QID[step] then
 	        qid = WoWPro.QID[step]
 	    end
-	    local line = string.format("Action=%s|Step=%s|M0=%.2f,%.2f|M1=%.2f,%.2f|Error=%.2f|QID=%s|Vers=%s|Guide=%s",WoWPro.action[step],WoWPro.step[step],Delta[2],Delta[3],Delta[4],Delta[5],Delta[1],qid,WoWPro.Version,GID)
+	    local line = ("Action=%s|Step=%s|M0=%.2f,%.2f|M1=%.2f,%.2f|Error=%.2f|QID=%s|Vers=%s|Guide=%s"):format(WoWPro.action[step],WoWPro.step[step],Delta[2],Delta[3],Delta[4],Delta[5],Delta[1],qid,WoWPro.Version,GID)
 	    table.insert(WoWProDB.global.Deltas, line)
 	    WoWPro:dbp(line)
 	else
 	    WoWPro:dbp("Step Complete: "..WoWPro.step[step])
 	end
-	
+
 	WoWPro:MapPoint()
-	WoWPro:UpdateGuide() 
+	WoWPro:UpdateGuide()
 end
+
+WoWPro.oldQuests = AcquireTable()
+WoWPro.QuestLog = AcquireTable()
+
+local abandoning
+local orig = _G.AbandonQuest
+_G.AbandonQuest = function(...)
+	abandoning = true
+	return orig(...)
+end
+
 
 -- Populate the Quest Log table for other functions to call on --
 function WoWPro:PopulateQuestLog()
+--WoWPro:Trace("Begin WoWPro:PopulateQuestLog")
+	local WoWProCharDB = WoWPro.CharDB
 	WoWPro:dbp("Populating quest log...")
-	
-	WoWPro.oldQuests = WoWPro.QuestLog or {}
-	WoWPro.newQuest, WoWPro.missingQuest = false, false
-	
+--err("Populating quest log...")
+
+	--WoWPro.oldQuests = WoWPro.oldQuests or AcquireTable()
+	--WoWPro.QuestLog = WoWPro.QuestLog or AcquireTable()
+
+	WoWPro.oldQuests, WoWPro.QuestLog = WoWPro.QuestLog, WoWPro.oldQuests
+
+	WoWPro.newQuest, WoWPro.missingQuest = false, nil
+
 	-- Generating the Quest Log table --
-	WoWPro.QuestLog = {} -- Reinitiallizing the Quest Log table
+	--WoWPro.QuestLog = {} -- Reinitiallizing the Quest Log table
+	WipeTable(WoWPro.QuestLog)
 	local i, currentHeader = 1, "None"
 	local entries = GetNumQuestLogEntries()
 	for i=1,tonumber(entries) do
-		local questTitle, level, questTag, suggestedGroup, isHeader, 
+		local questTitle, level, questTag, suggestedGroup, isHeader,
 			isCollapsed, isComplete, isDaily, questID = GetQuestLogTitle(i)
-		local leaderBoard
 		if isHeader then
 			currentHeader = questTitle
 		else
-			if GetNumQuestLeaderBoards(i) and GetQuestLogLeaderBoard(1, i) then
-				leaderBoard = {} 
-				for j=1,GetNumQuestLeaderBoards(i) do 
-					leaderBoard[j] = GetQuestLogLeaderBoard(j, i)
-				end 
-			else leaderBoard = nil end
 			local link, icon, charges = GetQuestLogSpecialItemInfo(i)
 			local use
 			if link then
-				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
+				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = link:find("|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
 				use = Id
 			end
 			local coords
@@ -362,44 +521,66 @@ function WoWPro:PopulateQuestLog()
 			QuestPOIUpdateIcons()
 			WorldMapFrame_UpdateQuests()
 			local x, y = WoWPro:findBlizzCoords(questID)
-			if x and y then coords = string.format("%.2f",x)..","..string.format("%.2f",y) end
-			WoWPro.QuestLog[questID] = {
-				title = questTitle,
-				level = level,
-				tag = questTag,
-				group = suggestedGroup,
-				complete = isComplete,
-				daily = isDaily,
-				leaderBoard = leaderBoard,
-				header = currentHeader,
-				use = use,
-				coords = coords,
-				index = i
-			}
+			if x and y then coords = ("%.2f"):format(x)..","..("%.2f"):format(y) end
+
+			WoWPro.QuestLog[questID] = AcquireTable()
+			local quest_log_item = WoWPro.QuestLog[questID]
+			quest_log_item.title = questTitle
+			quest_log_item.level = level
+			quest_log_item.tag = questTag
+			quest_log_item.group = suggestedGroup
+			quest_log_item.complete = isComplete
+			quest_log_item.daily = isDaily
+			quest_log_item.header = currentHeader
+			quest_log_item.use = use
+			quest_log_item.coords = coords
+			quest_log_item.index = i
+--err("Adding QID: %s", questID)
+			local leaderBoard
+			if GetNumQuestLeaderBoards(i) and GetQuestLogLeaderBoard(1, i) then
+				--leaderBoard = {}
+				leaderBoard = AcquireTable()
+				for j=1,GetNumQuestLeaderBoards(i) do
+					leaderBoard[j] = GetQuestLogLeaderBoard(j, i)
+				end
+			--else leaderBoard = nil end
+			end
+			quest_log_item.leaderBoard = leaderBoard
 		end
 	end
-	if WoWPro.oldQuests == {} then return end
+--	if WoWPro.oldQuests == {} then return end
+	if IsTableEmpty(WoWPro.oldQuests) then return end
 
 	-- Generating table WoWPro.newQuest --
 	for QID, questInfo in pairs(WoWPro.QuestLog) do
-		if not WoWPro.oldQuests[QID] then 
-			WoWPro.newQuest = QID 
+		if not WoWPro.oldQuests[QID] then
+			WoWPro.newQuest = QID
 			WoWPro:dbp("New Quest: "..WoWPro.QuestLog[QID].title)
 		end
 	end
-	
+
 	-- Generating table WoWPro.missingQuest --
 	for QID, questInfo in pairs(WoWPro.oldQuests) do
-		if not WoWPro.QuestLog[QID] then 
-			WoWPro.missingQuest = QID 
+		if not WoWPro.QuestLog[QID] then
+			WoWPro.missingQuest = QID
 			WoWPro:dbp("Missing Quest: "..WoWPro.oldQuests[QID].title)
+
+			if not abandoning then
+				-- It's a quest that has been completed
+				WoWProCharDB.completedQIDs[QID] = true
+				WoWPro.abandonedQID = nil
+			else
+				WoWPro.abandonedQID = QID
+			end
+			abandoning = nil
 		end
 	end
-	
+
 	local num = 0
 	for i, QID in pairs(WoWPro.QuestLog) do
 		num = num+1
 	end
 	WoWPro:dbp("Quest Log populated. "..num.." quests found.")
-	
+--err("Quest Log populated, %s quests found.", num)
+--WoWPro:Trace("End WoWPro:PopulateQuestLog")
 end
