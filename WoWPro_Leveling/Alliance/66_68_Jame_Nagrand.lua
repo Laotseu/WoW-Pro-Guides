@@ -75,8 +75,8 @@ T The Nesingwary Safari|QID|10113|N|To Hemet Nesingwary.|M|71.46,40.7|
 A Talbuk Mastery (part 1)|QID|9857|M|71.6,40.5|N|From Harold Lane.|
 A Windroc Mastery (part 1)|QID|9854|M|71.6,40.5|N|From Shado 'Fitz' Farstrider.|
 A Clefthoof Mastery (part 1)|QID|9789|M|71.6,40.5|N|From Hemet Nesingwary.|
-N Kristen DeMeza |QID|9897|M|71.42,40.6|N|Kill mobs in this area until Kristen DeMeza shows up at the Nesingwary Safari (it may take a long time).  Kill the undead that spawns. |
-A I'm Saved! |QID|9897|N|From Kristen DeMeza. Skip if it takes too long for her to show up.|M|71.42,40.6|
+N Kristen Dipswitch |QID|9897|M|71.42,40.6|N|Kill mobs in this area until Kristen Dipswitch shows up at the Nesingwary Safari (it may take a long time).  Kill the undead that spawns. |
+A I'm Saved! |QID|9897|N|From Kristen Dipswitch. Skip if it takes too long for her to show up.|M|71.42,40.6|
 T I'm Saved! |QID|9897|N|To Harold Lane.|M|71.42,40.6|
 C Windroc Mastery (part 1) |N|Kill the Windrocs needed for this quest.|QID|9854|M|64,36|S|
 l Howling Wind |QID|9861|N|Kill mobs until you get the Howling Wind.|L|24504|M|64.0,45.1|
