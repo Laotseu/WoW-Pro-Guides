@@ -1,11 +1,27 @@
+local _addonname, _addon = ...
+
+-------------------------------------------------------------------------------
+-- Localized Lua globals
+-------------------------------------------------------------------------------
+local _G = getfenv(0)
+
+local table = _G.table
+
+local InterfaceOptionsFramePanelContainer = _G.InterfaceOptionsFramePanelContainer
+
+local CreateFrame = _G.CreateFrame
+
 ---------------------------------
 --      WoWPro_Guide_List      --
 ---------------------------------
 
-local L = WoWPro_Locale
+local WoWPro = _G.LibStub("AceAddon-3.0"):GetAddon("WoWPro")
+
+local L = _G.WoWPro_Locale
 local GAP, EDGEGAP = 35, 16
 
 function WoWPro:CreateGuideList()
+	local WoWProDB = WoWPro.DB
 
 	local frame = CreateFrame("Frame", nil, InterfaceOptionsFramePanelContainer)
 	frame.name = L["Guide List"]
@@ -17,7 +33,7 @@ function WoWPro:CreateGuideList()
 		.."\nShift+click a guide to clear it."])
 
 	frame.box = WoWPro:CreateBG(frame)
-	frame.box:SetPoint("TOP", subtitle, "BOTTOM", 0, -GAP) 
+	frame.box:SetPoint("TOP", subtitle, "BOTTOM", 0, -GAP)
 	frame.box:SetPoint("LEFT", EDGEGAP, 0)
 	frame.box:SetPoint("BOTTOMRIGHT", -EDGEGAP, EDGEGAP)
 
@@ -35,12 +51,12 @@ function WoWPro:CreateGuideList()
 		tabs[name].name = name
 		tabs[name]:SetScript("OnClick", function(self, button)
 			WoWPro.ActivateTab(name)
-		end) 
+		end)
 		prev = tabs[name]
 		table.insert(tabhashtable,name)
 	end
-	
-	if not tabhashtable[1] then 
+
+	if not tabhashtable[1] then
 		subtitle:SetText(L["Looks like you don't have any modules loaded!"
 			.."\nLog out to the character selection screen and open your addons menu there to select some to load."])
 		frame.box:Hide()
@@ -54,33 +70,35 @@ function WoWPro:CreateGuideList()
 		local GID = WoWProDB.char.currentguide
 		if GID and WoWPro.Guides[GID] then
 			WoWPro.ActivateTab(WoWPro.Guides[GID].guidetype)
-		end 
+		end
 	end
 	WoWPro.GuideList:SetScript("OnShow", OnShow)
 	OnShow(WoWPro.GuideList)
-	
+
 end
 
 function WoWPro.ActivateTab(tabname)
+	local WoWProDB = WoWPro.DB
+
 	local tab
-	
+
 	if not tabname then
 		local GID = WoWProDB.char.currentguide
 		if GID and WoWPro.Guides[GID] and WoWPro.Guides[GID].guidetype then
 			tabname = WoWPro.Guides[GID].guidetype
 		else
 			tabname = WoWPro.GuideList.TabHashTable[1]
-		end 
+		end
 	end
-	
+
 	if not WoWPro.GuideList.TabTable[tabname] then
 		tabname = WoWPro.GuideList.TabHashTable[1]
 	end
-	
+
 	if not tabname then return end
-		
+
 	tab = WoWPro.GuideList.TabTable[tabname]
-	
+
 	-- Deactivating tabs --
 	for name, module in WoWPro:IterateModules() do
 		WoWPro.DeactivateTab(WoWPro.GuideList.TabTable[name])
@@ -106,6 +124,6 @@ function WoWPro.DeactivateTab(tab)
 		})
 	tab:SetBackdropColor(0.1, 0.1, 0.1, 1)
 	tab.border:SetPoint("BOTTOM", 0, 5)
-	
+
 	if WoWPro[tab.name].GuideList then WoWPro[tab.name].GuideList:Hide() end
 end
