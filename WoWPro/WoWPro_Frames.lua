@@ -902,7 +902,7 @@ function WoWPro:SetMacro(macroType, macroBody)
 	assert(macroType == "WPI" or macroType == "WPT","Invalide macro type: " .. (macroType or 'nil'))
 
 	-- select the icon
-	local macroIcon = (macroType == "WPI" or not macroBody) and 1 or 240
+	local macroIcon = (macroType == "WPI" or not macroBody) and 1 or 241
 
 	-- find macro
 	local macroIndex = _G.GetMacroIndexByName(macroType)
