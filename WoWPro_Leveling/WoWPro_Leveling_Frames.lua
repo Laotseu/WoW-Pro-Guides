@@ -1,6 +1,21 @@
+-------------------------------------------------------------------------------
+-- Localized Lua globals
+-------------------------------------------------------------------------------
+local _G = getfenv(0)
+
+local pairs = _G.pairs
+
+local GameFontNormal = _G.GameFontNormal
+local GameFontNormalSmall = _G.GameFontNormalSmall
+
+local CreateFrame = _G.CreateFrame
+local ToggleSpellBook = _G.ToggleSpellBook
+
 ------------------------------------------
 --      WoWPro_Leveling_Frames.lua      --
 ------------------------------------------
+
+local WoWPro = _G.LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 
 -- Spells available reminder --
 function WoWPro.Leveling.CreateSpellFrame()
@@ -11,12 +26,12 @@ function WoWPro.Leveling.CreateSpellFrame()
 	spellbutton:SetPoint("BOTTOMLEFT", WoWPro.MainFrame, "TOPLEFT", 0, 0)
 	spellbutton:RegisterForClicks("anyUp")
 	WoWPro.Leveling.SpellButton = spellbutton
-	
+
 	local spellbookicon = WoWPro.Leveling.SpellButton:CreateTexture(nil, "ARTWORK")
 	spellbookicon:SetWidth(24) spellbookicon:SetHeight(24)
 	spellbookicon:SetTexture("Interface\\Icons\\INV_Misc_Book_09")
 	spellbookicon:SetAllPoints(WoWPro.Leveling.SpellButton)
-	
+
 	local tooltip = CreateFrame("Frame", "tooltip", WoWPro.GuideFrame)
 	tooltip:SetBackdrop( {
 		bgFile = [[Interface\Tooltips\UI-Tooltip-Background]],
@@ -29,7 +44,7 @@ function WoWPro.Leveling.CreateSpellFrame()
 	tooltip:SetHeight(125)
 	tooltip:SetWidth(250)
 	tooltip:Hide()
-	
+
 	local tooltiptext = tooltip:CreateFontString(nil, nil, "GameFontNormal")
 	tooltiptext:SetPoint("TOPLEFT", 10, -10)
 	tooltiptext:SetPoint("RIGHT", -10, 0)
@@ -38,13 +53,13 @@ function WoWPro.Leveling.CreateSpellFrame()
 	tooltiptext:SetWidth(200-20)
 	tooltiptext:SetText("You have new abilities available to learn!\n\nClick here to see what they are.\nRight-click to open your spellbook.\n\nMake sure to visit your trainer next time you are in a major city.")
 	tooltip.tooltiptext = tooltiptext
-	
+
 	WoWPro.Leveling.SpellButton:SetScript("OnEnter", function()
 		tooltip:Show()
 	end)
 	WoWPro.Leveling.SpellButton:SetScript("OnLeave", function()
 		tooltip:Hide()
-	end)	
+	end)
 	WoWPro.Leveling.SpellButton:SetScript("OnMouseUp", function(self, button)
 		if button == "LeftButton" then
 			WoWPro.Leveling:SpellListDialogCall()
@@ -52,7 +67,7 @@ function WoWPro.Leveling.CreateSpellFrame()
 			ToggleSpellBook("spell")
 		end
 	end)
-	
+
 	function WoWPro.Leveling.CheckAvailableSpells(...)
 		local numSpells
 		numSpells, WoWPro.Leveling.AvailableSpells = WoWPro.Leveling.GetAvailableSpells(...)
@@ -62,13 +77,13 @@ function WoWPro.Leveling.CreateSpellFrame()
 			WoWPro.Leveling.SpellButton:Hide()
 		end
 	end
-	
+
 	WoWPro.Leveling.CheckAvailableSpells()
 end
 
 function WoWPro.Leveling.CreateSpellListFrame()
 	local frame, titletext = WoWPro:CreateDialogBox("Available Abilities", 250, 250)
-	
+
 	local explanation = frame:CreateFontString()
 	explanation:SetPoint("TOPLEFT", frame, "TOPLEFT", 10, -15-titletext:GetHeight())
 	explanation:SetJustifyH("LEFT")
@@ -87,8 +102,8 @@ function WoWPro.Leveling.CreateSpellListFrame()
 	button1text:SetTextColor(1, 1, 1)
 	button1:SetScript("OnClick", function(self, button)
 		WoWPro.Leveling.SpellListDialog:Hide()
-	end) 
-	
+	end)
+
 	function WoWPro.Leveling:SpellListDialogCall()
 		local listOfSpells = ""
 		for _,spellname in pairs(WoWPro.Leveling.AvailableSpells) do
@@ -99,7 +114,7 @@ function WoWPro.Leveling.CreateSpellListFrame()
 		WoWPro.Leveling.SpellListDialog:SetHeight(70+WoWPro.Leveling.SpellListDialogText:GetHeight())
 		WoWPro.Leveling.SpellListDialog:Show()
 	end
-	
+
 	WoWPro.Leveling.SpellListDialog = frame
 	WoWPro.Leveling.SpellListDialogText = explanation
 end
