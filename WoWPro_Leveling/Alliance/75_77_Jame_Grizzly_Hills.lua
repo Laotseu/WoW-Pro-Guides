@@ -358,7 +358,7 @@ C Vordrassil's Seeds |QID|12250|N|Loot Vordrassil's Seeds that are in and around
 C Vordrassil's Sapling |QID|12248|U|37306|N|Use the [Verdant Torch] on the tree  and get the [Vordrassil's Ashes]|M|50.63,42.73|
 C Vordrassil's Seeds |QID|12250|N|Loot Vordrassil's Seeds that are in and around the large, dead tree trunk.|M|51.5,47.1|US|
 
-T Fate and Coincidence |N|To Sasha.|M|57.52,41.27|
+T Fate and Coincidence |QID|12329|N|To Sasha.|M|57.52,41.27|
 A Sasha's Hunt |QID|12134|M|57.5,41.3|N|From Sasha.|
 A Anatoly Will Talk |QID|12330|M|57.5,41.3|N|From Sasha.|
 
