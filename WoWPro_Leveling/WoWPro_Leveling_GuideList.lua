@@ -22,7 +22,7 @@ local WoWPro = _G.LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 local L = _G.WoWPro_Locale
 local ROWHEIGHT, GAP, EDGEGAP = 17, 8, 16
 local titlerow, rows, offset = {}, {}, 0
-local NUMROWS = 24
+local NUMROWS = 16
 
 -- Creating a Table of Guides for the Guide List and sorting based on level --
 local guides = {}
@@ -97,6 +97,8 @@ end
 function WoWPro.Leveling.CreateGuideList()
 	local frame = CreateFrame("Frame", nil, WoWPro.GuideList.box)
 	frame:SetAllPoints()
+	local frame_height = frame:GetHeight()
+	local NUMROWS = frame_height and floor(frame_height/ROWHEIGHT) or NUMROWS
 
 	local scrollbar = WoWPro:CreateScrollbar(frame, 6)
 
