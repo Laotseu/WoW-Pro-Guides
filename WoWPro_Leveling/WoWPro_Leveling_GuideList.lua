@@ -97,8 +97,8 @@ end
 function WoWPro.Leveling.CreateGuideList()
 	local frame = CreateFrame("Frame", nil, WoWPro.GuideList.box)
 	frame:SetAllPoints()
-	local frame_height = frame:GetHeight()
-	local NUMROWS = frame_height and floor(frame_height/ROWHEIGHT) or NUMROWS
+	--local frame_height = frame:GetHeight()
+	--local NUMROWS = frame_height and floor(frame_height/ROWHEIGHT) or NUMROWS
 
 	local scrollbar = WoWPro:CreateScrollbar(frame, 6)
 
