@@ -524,7 +524,7 @@ F Amber Ledge |QID|11704|N|Fly to Amber Ledge or take a free teleport from Libra
 C Plan B |QID|11658|N|Grab the Warsong Banner here and loot 10 Warsong Outfits from the bodies around the area.|M|49.57,26.55|
 T King Mrgl-Mrgl |QID|11704|N|Go north to the road, then follow it east to Winterfin Retreat.|M|43.50,13.97|
 A Learning to Communicate |QID|11571|N|From King Mrgl-Mrgl.|M|43.50,13.97|
-C Learning to Communicate |QID|11571|U|34598|N|Kill Scalder at the bottom of the sea. Target his corpse and use the conch. Scalder is immune to frost.|M|42.53,15.85|
+C Learning to Communicate |QID|11571|U|34598|T|Scalder|N|Kill Scalder at the bottom of the sea. Target his corpse and use the conch. Scalder is immune to frost.|M|42.53,15.85|
 T Learning to Communicate |QID|11571|N|To King Mrgl-Mrgl.|M|43.50,13.97|
 A Winterfin Commerce |QID|11559|N|From King Mrgl-Mrgl.|M|43.50,13.97|
 C Winterfin Commerce |QID|11559|N|Swim across the water and loot 5 Winterfin Clams off the ground. The murlocs here can also drop them.|M|41.55,17.35|
