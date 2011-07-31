@@ -64,7 +64,7 @@ A The Demo-gnome |QID|12275|M|78.6,48.2|N|From High Commander Halfor Wyrmbane.|
 A The Fate of the Dead |QID|12258|N|From Commander Lynore Windstryke.|M|78.60,48.20|
 A Imprints on the Past |QID|12282|N|From Zelig the Visionary.|M|79.10,47.20|
 
-T The Demo-gnome |QID|12275| |N|Go south to Siege Engineer Quarterflash.|M|79.1,47.2|
+T The Demo-gnome |QID|12275| |N|Go south to Siege Engineer Quarterflash.|M|77.8,47.2|
 A The Search for Slinkin |QID|12276|M|77.8,50.3|N|From Siege Engineer Quarterflash.|
 A The Bleeding Ore |QID|12272|M|77.8,50.3|N|From Siege Engineer Quarterflash.|
 A Not In Our Mine |QID|12269| |N|From Highlord Leoric Von Zeldig.|M|77.80,50.30|
@@ -105,8 +105,8 @@ C The Bleeding Ore |QID|12272|US|N|Finish getting the ore you need.|M|80.4,45.1|
 l Wintergarde Miner's Cards|QID|12269|US|QO|Wintergarde Miner's Card: 10/10|N|Kill and loot Risen Wintergarde Miners to finish getting the cards.|
 H Wintergarde Keep |QID|12269| |N|Hearthstone back to Wintergarde Keep (or just ride there if HS not up)|M|79.1,47.2|
 
-T The Bleeding Ore |QID|12272| |N|To Siege Engineer Quarterflash.|M|79.1,47.2|
-T Leave Nothing to Chance |QID|12277|M|77.8,50.3|N|
+T The Bleeding Ore |QID|12272| |N|To Siege Engineer Quarterflash.|M|77.8,50.2|
+T Leave Nothing to Chance |QID|12277|M|77.8,50.2|N|
 A Understanding the Scourge War Machine |QID|12281|M|77.8,50.3|N|
 T Not In Our Mine |QID|12269|M|77.8,50.3|N|
 
@@ -198,7 +198,7 @@ A Strengthen the Ancients |QID|12092| |N|From Sarendryana.|M|28.80,57.10|
 
 l Woodlands Walker |QID|12092|S|L|36786 3|N|Dismount. Look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some Bark of the Walkers. Repeat until you got 3.|M|32.68,65.48|
 C Strengthen the Ancients |U|36786|S|QID|12092|N|Look for Lothalor Ancients (not corrupted ones). Get close to them and right-click the Bark of the Walkers.|M|32.68,65.48|
-K Lieutenant Ta'zinni |QID|12083| |L|36779| |N|Go further south until you find a Ley Line Focus  Kill Lieutenant Ta'zinni. He's a troll NPC and patrols around the Ley Line Focus. Loot the Ley Line Focus Control Amulet.|M|32.00,71.00|
+K Lieutenant Ta'zinni |QID|12083| |L|36779| |T|Lieutenant Ta'zinni|N|Go further south until you find a Ley Line Focus  Kill Lieutenant Ta'zinni. He's a troll NPC and patrols around the Ley Line Focus. Loot the Ley Line Focus Control Amulet.|M|32.00,71.00|
 C Atop the Woodlands |QID|12083| |U|36779| |N|Right-click it while being close to the Ley Line Focus, then wait until you get the quest completion.|M|32.2,70.6|
 l Woodlands Walker |QID|12092|US|L|36786 3|N|Dismount. Look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some Bark of the Walkers. Repeat until you got 3.|M|32.68,65.48|
 C Strengthen the Ancients |U|36786|US|QID|12092|N|Look for Lothalor Ancients (not corrupted ones). Get close to them and right-click the Bark of the Walkers.|M|32.68,65.48|
@@ -235,7 +235,7 @@ T Search Indu'le Village |QID|12098| |N|Clear the way to the middle of Lake Indu
 A The End of the Line |QID|12107|M|40.3,66.9|N|From the corpse of Mage-Commander Evenstar.|
 N Ley Line Focus information retrieved|QID|12107|U|36815|QO|Ley Line Focus information retrieved: 1/1||N|Get close to the Ley Line Focus and right-click the Ley Line Focus Control Talisman, then wait until you get the quest completion.|
 C Freedom for the Lingering |QID|12031| |N|Get out of the lake, and finish kill Indu'le Fishermen/Warriors/Mystics until you finish up.|M|37.2,65.5|
-T Freedom for the Lingering |QID|12031| |N|To Elder Mana'loa.|M|36.62,64.98|
+T Freedom for the Lingering |QID|12031| |US|N|To Elder Mana'loa.|M|36.62,64.98|
 A Conversing With the Depths |QID|12032|M|36.62,64.98|N|From Elder Mana'loa.|
 C The End of the Line |QID|12107|N|Mount up, ride east to the western ledge of the Azure Dragonshrine. You should get a "Azure Dragonshrine Observed" message. (Be careful to not confuse it with the area discovery message).|M|53.00,65.00|
 
@@ -245,7 +245,7 @@ A Signs of Big Watery Trouble |QID|12011| |U|37265| |N|Go to the very end of the
 T Signs of Big Watery Trouble |QID|12011| |N|To Tua'kea.|M|47.7,76.6|
 A The Bait |QID|12016|M|47.7,76.6|N|From Tua'kea.|
 C Tua'kea's Crab Traps |QID|12009|US|N|Finish gathering Tua'kea Crab Traps.|M|46.23,78.2|
-K Kili'ua |QID|12016| |L|35831| |N|Once you reach Kili'ua's Atoll, kill Kili'ua and loot [The Flesh of "Two Huge Pincers"].|M|43.27,82.40|
+K Kili'ua |QID|12016| |L|35831| |T|Kili'ua|N|Once you reach Kili'ua's Atoll, kill Kili'ua and loot [The Flesh of "Two Huge Pincers"].|M|43.27,82.40|
 
 R The Briny Pinnacle |QID|12032| |N|Swim west to The Briny Pinnacle. |M|34.00, 83.00|
 C Conversing With the Depths |QID|12032| |N|Follow the path up until you find The Pearl of the Depth. Right-click it and the sea-goddess Oacha'noa will come and talk to you. Jump in the water when she gives you the compulsion buff.|M|34.00,83.46|
