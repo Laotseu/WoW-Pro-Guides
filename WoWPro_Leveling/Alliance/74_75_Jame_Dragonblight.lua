@@ -392,9 +392,9 @@ K Bonesunder |QID|12148| |QO|Emblazoned Battle Horn: 1/1|M|50.64,58.5|N|Look for
 T One of a Kind |QID|12148|M|60.0,55.1|N|To Aurastrasza.|
 A Mighty Magnataur |QID|12149|N|From Aurastrasza.|M|60.0,55.1|
 
-K Drakegore |QID|12149| |QO|Drakegore slain: 1/1| |N|He's elite but soloable, doesn't hit too hard, can be snared, stunned, feared, rooted. He also has an aura which does 300 fire damage to enemies in his melee range, nothing too bad.|
-K Iceshatter |QID|12149| |QO|Iceshatter slain: 1/1| |N|He's more tricky to kill than the previous one. He's immune to movement impairing effects so clothies might have a little bit of trouble, however he doesn't much hit points so you can burn him down before he kills you. He periodically casts Pulsing Shards. This is very dangerous and can't be interrupted. Either run away while he channels it or use something like cloak of shadows, divine shield, ice block.|
-K Bloodfeast |QID|12149|  |QO|Bloodfeast slain: 1/1| |N|That one is also tricky, immune to all forms of cc. He summons maggots which heal him up. The maggots are immune to AoE abilities, so you'd have to target them and kill them one by one (they have 1000HP). By the time you'd be done with that, he'd summon another round of maggots. So here is the strategy: Ignore the maggots, burn him down as fast as you can.|
+K Drakegore |QID|12149| |QO|Drakegore slain: 1/1| |M|68.0,37.0;67.6,40.0;68.2,47.8|T|Drakegore|N|He's elite but soloable, doesn't hit too hard, can be snared, stunned, feared, rooted. He also has an aura which does 300 fire damage to enemies in his melee range, nothing too bad.|
+K Iceshatter |QID|12149| |QO|Iceshatter slain: 1/1| |M|69.2,51.6;67.8,50.0;66.0,51.6|T|Iceshatter|N|He's more tricky to kill than the previous one. He's immune to movement impairing effects so clothies might have a little bit of trouble, however he doesn't much hit points so you can burn him down before he kills you. He periodically casts Pulsing Shards. This is very dangerous and can't be interrupted. Either run away while he channels it or use something like cloak of shadows, divine shield, ice block.|
+K Bloodfeast |QID|12149| |QO|Bloodfeast slain: 1/1| |M|67.4,70.2|T|Bloodfeast|N|That one is also tricky, immune to all forms of cc. He summons maggots which heal him up. The maggots are immune to AoE abilities, so you'd have to target them and kill them one by one (they have 1000HP). By the time you'd be done with that, he'd summon another round of maggots. So here is the strategy: Ignore the maggots, burn him down as fast as you can.|
 T Mighty Magnataur |QID|12149||M|60.0,55.1|N|To Aurastrasza.|
 A Reclusive Runemaster |QID|12150|N|From Aurastrasza.|M|60.0,55.1|
 
@@ -435,7 +435,7 @@ A Hard to Swallow |QID|12049| |N|From Xink.|M|55.0,23.4|
 
 l Splintered Bone Chunk |QID|12047|QO|Splintered Bone Chunk: 12/12|S|N|Look for a Splintered Bone Chunk around the dragon skull and bones, and loot them.|
 C Hard to Swallow |QID|12049| |U|36732| |N|Look for a Hulking Jormungar. Bring it down to 80% HP and a message will appear: "The Hulking Jormungar falters for a moment, opening its mouth wide." Use the [Potent Explosive Charges]. This will blow up the Hulking Jormungar and a lot of meat will fly all around its corpse. Loot 6 Seared Jormungar Meat.|M|57.5,23.9|
-T Canyon Chase |QID|12143| |N|To Duane.|M|64.00,28.00|
+T Canyon Chase |QID|12143| |N|To Duane.|M|64.5,26.4|
 l Splintered Bone Chunk |QID|12047|QO|Splintered Bone Chunk: 12/12|US|N|Look for a Splintered Bone Chunk around the dragon skull and bones, and loot them|
 
 T Something That Doesn't Melt |QID|12047| |N|To Zivlix.|M|54.7,23.2|
