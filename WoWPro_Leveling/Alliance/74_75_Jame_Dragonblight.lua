@@ -64,7 +64,7 @@ A The Demo-gnome |QID|12275|M|78.6,48.2|N|From High Commander Halfor Wyrmbane.|
 A The Fate of the Dead |QID|12258|N|From Commander Lynore Windstryke.|M|78.60,48.20|
 A Imprints on the Past |QID|12282|N|From Zelig the Visionary.|M|79.10,47.20|
 
-T The Demo-gnome |QID|12275| |N|Go south to Siege Engineer Quarterflash.|M|79.1,47.2|
+T The Demo-gnome |QID|12275| |N|Go south to Siege Engineer Quarterflash.|M|77.8,47.2|
 A The Search for Slinkin |QID|12276|M|77.8,50.3|N|From Siege Engineer Quarterflash.|
 A The Bleeding Ore |QID|12272|M|77.8,50.3|N|From Siege Engineer Quarterflash.|
 A Not In Our Mine |QID|12269| |N|From Highlord Leoric Von Zeldig.|M|77.80,50.30|
@@ -105,8 +105,8 @@ C The Bleeding Ore |QID|12272|US|N|Finish getting the ore you need.|M|80.4,45.1|
 l Wintergarde Miner's Cards|QID|12269|US|QO|Wintergarde Miner's Card: 10/10|N|Kill and loot Risen Wintergarde Miners to finish getting the cards.|
 H Wintergarde Keep |QID|12269| |N|Hearthstone back to Wintergarde Keep (or just ride there if HS not up)|M|79.1,47.2|
 
-T The Bleeding Ore |QID|12272| |N|To Siege Engineer Quarterflash.|M|79.1,47.2|
-T Leave Nothing to Chance |QID|12277|M|77.8,50.3|N|
+T The Bleeding Ore |QID|12272| |N|To Siege Engineer Quarterflash.|M|77.8,50.2|
+T Leave Nothing to Chance |QID|12277|M|77.8,50.2|N|
 A Understanding the Scourge War Machine |QID|12281|M|77.8,50.3|N|
 T Not In Our Mine |QID|12269|M|77.8,50.3|N|
 
@@ -198,7 +198,7 @@ A Strengthen the Ancients |QID|12092| |N|From Sarendryana.|M|28.80,57.10|
 
 l Woodlands Walker |QID|12092|S|L|36786 3|N|Dismount. Look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some Bark of the Walkers. Repeat until you got 3.|M|32.68,65.48|
 C Strengthen the Ancients |U|36786|S|QID|12092|N|Look for Lothalor Ancients (not corrupted ones). Get close to them and right-click the Bark of the Walkers.|M|32.68,65.48|
-K Lieutenant Ta'zinni |QID|12083| |L|36779| |N|Go further south until you find a Ley Line Focus  Kill Lieutenant Ta'zinni. He's a troll NPC and patrols around the Ley Line Focus. Loot the Ley Line Focus Control Amulet.|M|32.00,71.00|
+K Lieutenant Ta'zinni |QID|12083| |L|36779| |T|Lieutenant Ta'zinni|N|Go further south until you find a Ley Line Focus  Kill Lieutenant Ta'zinni. He's a troll NPC and patrols around the Ley Line Focus. Loot the Ley Line Focus Control Amulet.|M|32.00,71.00|
 C Atop the Woodlands |QID|12083| |U|36779| |N|Right-click it while being close to the Ley Line Focus, then wait until you get the quest completion.|M|32.2,70.6|
 l Woodlands Walker |QID|12092|US|L|36786 3|N|Dismount. Look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some Bark of the Walkers. Repeat until you got 3.|M|32.68,65.48|
 C Strengthen the Ancients |U|36786|US|QID|12092|N|Look for Lothalor Ancients (not corrupted ones). Get close to them and right-click the Bark of the Walkers.|M|32.68,65.48|
@@ -235,7 +235,7 @@ T Search Indu'le Village |QID|12098| |N|Clear the way to the middle of Lake Indu
 A The End of the Line |QID|12107|M|40.3,66.9|N|From the corpse of Mage-Commander Evenstar.|
 N Ley Line Focus information retrieved|QID|12107|U|36815|QO|Ley Line Focus information retrieved: 1/1||N|Get close to the Ley Line Focus and right-click the Ley Line Focus Control Talisman, then wait until you get the quest completion.|
 C Freedom for the Lingering |QID|12031| |N|Get out of the lake, and finish kill Indu'le Fishermen/Warriors/Mystics until you finish up.|M|37.2,65.5|
-T Freedom for the Lingering |QID|12031| |N|To Elder Mana'loa.|M|36.62,64.98|
+T Freedom for the Lingering |QID|12031| |US|N|To Elder Mana'loa.|M|36.62,64.98|
 A Conversing With the Depths |QID|12032|M|36.62,64.98|N|From Elder Mana'loa.|
 C The End of the Line |QID|12107|N|Mount up, ride east to the western ledge of the Azure Dragonshrine. You should get a "Azure Dragonshrine Observed" message. (Be careful to not confuse it with the area discovery message).|M|53.00,65.00|
 
@@ -245,7 +245,7 @@ A Signs of Big Watery Trouble |QID|12011| |U|37265| |N|Go to the very end of the
 T Signs of Big Watery Trouble |QID|12011| |N|To Tua'kea.|M|47.7,76.6|
 A The Bait |QID|12016|M|47.7,76.6|N|From Tua'kea.|
 C Tua'kea's Crab Traps |QID|12009|US|N|Finish gathering Tua'kea Crab Traps.|M|46.23,78.2|
-K Kili'ua |QID|12016| |L|35831| |N|Once you reach Kili'ua's Atoll, kill Kili'ua and loot [The Flesh of "Two Huge Pincers"].|M|43.27,82.40|
+K Kili'ua |QID|12016| |L|35831| |T|Kili'ua|N|Once you reach Kili'ua's Atoll, kill Kili'ua and loot [The Flesh of "Two Huge Pincers"].|M|43.27,82.40|
 
 R The Briny Pinnacle |QID|12032| |N|Swim west to The Briny Pinnacle. |M|34.00, 83.00|
 C Conversing With the Depths |QID|12032| |N|Follow the path up until you find The Pearl of the Depth. Right-click it and the sea-goddess Oacha'noa will come and talk to you. Jump in the water when she gives you the compulsion buff.|M|34.00,83.46|
@@ -392,9 +392,9 @@ K Bonesunder |QID|12148| |QO|Emblazoned Battle Horn: 1/1|M|50.64,58.5|N|Look for
 T One of a Kind |QID|12148|M|60.0,55.1|N|To Aurastrasza.|
 A Mighty Magnataur |QID|12149|N|From Aurastrasza.|M|60.0,55.1|
 
-K Drakegore |QID|12149| |QO|Drakegore slain: 1/1| |N|He's elite but soloable, doesn't hit too hard, can be snared, stunned, feared, rooted. He also has an aura which does 300 fire damage to enemies in his melee range, nothing too bad.|
-K Iceshatter |QID|12149| |QO|Iceshatter slain: 1/1| |N|He's more tricky to kill than the previous one. He's immune to movement impairing effects so clothies might have a little bit of trouble, however he doesn't much hit points so you can burn him down before he kills you. He periodically casts Pulsing Shards. This is very dangerous and can't be interrupted. Either run away while he channels it or use something like cloak of shadows, divine shield, ice block.|
-K Bloodfeast |QID|12149|  |QO|Bloodfeast slain: 1/1| |N|That one is also tricky, immune to all forms of cc. He summons maggots which heal him up. The maggots are immune to AoE abilities, so you'd have to target them and kill them one by one (they have 1000HP). By the time you'd be done with that, he'd summon another round of maggots. So here is the strategy: Ignore the maggots, burn him down as fast as you can.|
+K Drakegore |QID|12149| |QO|Drakegore slain: 1/1| |M|68.0,37.0;67.6,40.0;68.2,47.8|T|Drakegore|N|He's elite but soloable, doesn't hit too hard, can be snared, stunned, feared, rooted. He also has an aura which does 300 fire damage to enemies in his melee range, nothing too bad.|
+K Iceshatter |QID|12149| |QO|Iceshatter slain: 1/1| |M|69.2,51.6;67.8,50.0;66.0,51.6|T|Iceshatter|N|He's more tricky to kill than the previous one. He's immune to movement impairing effects so clothies might have a little bit of trouble, however he doesn't much hit points so you can burn him down before he kills you. He periodically casts Pulsing Shards. This is very dangerous and can't be interrupted. Either run away while he channels it or use something like cloak of shadows, divine shield, ice block.|
+K Bloodfeast |QID|12149| |QO|Bloodfeast slain: 1/1| |M|67.4,70.2|T|Bloodfeast|N|That one is also tricky, immune to all forms of cc. He summons maggots which heal him up. The maggots are immune to AoE abilities, so you'd have to target them and kill them one by one (they have 1000HP). By the time you'd be done with that, he'd summon another round of maggots. So here is the strategy: Ignore the maggots, burn him down as fast as you can.|
 T Mighty Magnataur |QID|12149||M|60.0,55.1|N|To Aurastrasza.|
 A Reclusive Runemaster |QID|12150|N|From Aurastrasza.|M|60.0,55.1|
 
@@ -435,7 +435,7 @@ A Hard to Swallow |QID|12049| |N|From Xink.|M|55.0,23.4|
 
 l Splintered Bone Chunk |QID|12047|QO|Splintered Bone Chunk: 12/12|S|N|Look for a Splintered Bone Chunk around the dragon skull and bones, and loot them.|
 C Hard to Swallow |QID|12049| |U|36732| |N|Look for a Hulking Jormungar. Bring it down to 80% HP and a message will appear: "The Hulking Jormungar falters for a moment, opening its mouth wide." Use the [Potent Explosive Charges]. This will blow up the Hulking Jormungar and a lot of meat will fly all around its corpse. Loot 6 Seared Jormungar Meat.|M|57.5,23.9|
-T Canyon Chase |QID|12143| |N|To Duane.|M|64.00,28.00|
+T Canyon Chase |QID|12143| |N|To Duane.|M|64.5,26.4|
 l Splintered Bone Chunk |QID|12047|QO|Splintered Bone Chunk: 12/12|US|N|Look for a Splintered Bone Chunk around the dragon skull and bones, and loot them|
 
 T Something That Doesn't Melt |QID|12047| |N|To Zivlix.|M|54.7,23.2|
