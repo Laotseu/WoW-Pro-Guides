@@ -185,7 +185,7 @@ T Firebeard's Patrol|QID|27621|M|60.18,57.96|N|To Keegan Firebeard.|
 A Welcome Relief|QID|27803|M|60.18,57.96|N|From Keegan Firebeard.|
 A The Only Homes We Have|QID|27804|M|60.18,57.96|N|From Keegan Firebeard.|
 
-f Firebeard's Patrol|QID|27804|M|0.00,0.00|N|At Farstad Stonegrip.|
+f Firebeard's Patrol|QID|27804|M|60.4,57.7|N|At Farstad Stonegrip.|
 
 C The Only Homes We Have|QID|27804|PRE|27803|S|U|62508|M|59.68,56.89|N|Put out fires as you go.|
 C Welcome Relief|QID|27803|M|59.67,56.91|N|Kill subjugated firestarters.|
@@ -292,7 +292,7 @@ T Finding Beak|QID|27646|M|46.05,58.69|N|To Donnelly Dunwald.|
 A Home Again|QID|27650|M|47.84,74.52|N|From Cayden Dunwald.|
 
 C Sifting Through The Wreckage|QID|27642|US|M|51.94,70.32|N|On the ground and in the buildings.|
-C Steady Supply|QID|27649|US|M|49.54,71.85|N|Kegs in the buildings.|
+C A Steady Supply|QID|27649|US|M|49.54,71.85|N|Kegs in the buildings.|
 C While Meeting The Family|QID|27641|M|49.80,71.20|N|Finish killing Twilight "guests".|US|
 
 T Home Again|QID|27650|M|45.97,65.53|N|To Keely Dunwald.|
