@@ -420,14 +420,14 @@ function WoWPro:CreateMainFrame()
 	local menuFrame = CreateFrame("Frame", "WoWProDropMenu", UIParent, "UIDropDownMenuTemplate")
 	-- Scripts --
 	WoWPro.MainFrame:SetScript("OnMouseDown", function(self, button)
-		if button == "LeftButton" and WoWProDB.profile.drag then
+		if button == "LeftButton" and WoWPro.DB.profile.drag then
 			WoWPro.MainFrame:StartMoving()
 		elseif button == "RightButton" then
 			EasyMenu(WoWPro.DropdownMenu, menuFrame, "cursor", 0 , 0, "MENU");
 		end
 	end)
 	WoWPro.MainFrame:SetScript("OnMouseUp", function(self, button)
-		if button == "LeftButton" and WoWProDB.profile.drag then
+		if button == "LeftButton" and WoWPro.DB.profile.drag then
 			WoWPro.MainFrame:StopMovingOrSizing()
 			WoWPro.AnchorSet()
 		end
