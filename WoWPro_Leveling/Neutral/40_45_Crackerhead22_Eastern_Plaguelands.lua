@@ -255,8 +255,8 @@ A Righteous Indignation|QID|27479|M|61.29,42.94|N|From Deacon Andaal.|
 A Out of the Ziggurat|QID|27481|M|61.29,42.84|N|From Vex'tul.|
 A The Corpulent One|QID|27477|M|61.50,43.22|N|From Gamella Cracklefizz.|
 A Ix'lar the Underlord|QID|27487|M|61.53,43.29|N|From Tarenar Sunstrike.|
-C Ix'lar the Underlord|QID|27487|M|60.88,34.20|N|Ix'lar wanders around, so look for the boss icon on the minimap to see where he is.|
-C The Corpulent One|QID|27477|M|57.66,28.27|N|Borelgore seems to wander in the scar, look for his boss icon on the minimap.|
+C Ix'lar the Underlord|QID|27487|M|60.88,34.20|T|Ix'lar the Underlord|N|Ix'lar wanders around, so look for the boss icon on the minimap to see where he is.|
+C The Corpulent One|QID|27477|M|57.66,28.27|T|Borelgore|N|Borelgore seems to wander in the scar, look for his boss icon on the minimap.|
 C Righteous Indignation|QID|27479|M|65.50,12.34|N|Kill Mossflayers as you go for their eyes, be careful not to step on the graves.|S|
 C Out of the Ziggurat|QID|27481|M|66.45,10.53|N|Go to the top of the ziggurat and kill Warlord Thresh'jin and loot his corpse.|
 T Out of the Ziggurat|QID|27481|M|66.58,9.17|N|(UI Alert)|
@@ -281,7 +281,7 @@ A Wretched Hive of Scum and Villainy|QID|27521|M|50.10,19.57|N|From Kirkian Dawn
 f Northpass Tower|QID|27521|M|51.29,21.21|N|At Grayson Ironwing.|
 N A City Under Siege|QID|27422|M|51.55,21.36|N|From Argent Officer Irizarry. This is optional as it leads into Stratholme.|
 A Duskwing, Oh How I Hate Thee...|QID|27523|M|48.11,23.01|N|From Corpseburner Tim.|
-C Duskwing, Oh How I Hate Thee...|QID|27523|U|61334|M|46.90,30.69|N|He wanders around, so look for his boss icon on the minimap. Use the flare on him if he is out of range.|
+C Duskwing, Oh How I Hate Thee...|QID|27523|U|61334|M|46.90,30.69|T|Duskwing|N|He wanders around, so look for his boss icon on the minimap. Use the flare on him if he is out of range.|
 T Duskwing, Oh How I Hate Thee...|QID|27523|M|48.06,23.20|N|To Corpseburner Tim.|
 C Wretched Hive of Scum and Villainy|QID|27521|M|46.63,14.83|N|Kill 9 Quel'lithien Wretched.|
 T Wretched Hive of Scum and Villainy|QID|27521|M|50.12,19.60|N|To Kirkian Dawnshield.|
@@ -295,14 +295,14 @@ A Guardians of Stratholme|QID|27525|M|27.58,21.14|N|From Tarenar Sunstrike.|
 A Scourged Mass|QID|27528|M|27.70,21.02|N|From Crusader Kevin Frost.|
 A Defenders of Darrowshire|QID|27529|M|27.70,21.02|N|From Crusader Kevin Frost.|
 A Add 'em to the Pile|QID|27539|M|27.70,21.02|N|From Crusader Kevin Frost.|
+C Add 'em to the Pile|QID|27539|M|38.38,30.46|Kill Cursed Mages and Scourge Soldiers to get their skulls.|S|
+C Defenders of Darrowshire|QID|27529|M|36.27,17.53|N|Kill Cannibal Ghouls then to talk to the spirits.|S|
+C Scourged Mass|QID|27528|U|61369|M|32.22,21.30|N|Kill Overstuffed Golems and then burn their corpses.|S|
 C Guardians of Stratholme|QID|27525|M|24.94,20.41;29.37,20.00|N|Kill Omasum Blighthoof and Karthis Darkrune.|
 A The Baroness' Missive|QID|27551|U|61378|N|Omasum Blighthoof or Karthis Darkrune should drop this. If not kill them again until they do.|
 T The Baroness' Missive|QID|27551|M|27.48,21.27|N|To Tarenar Sunstrike.|
 A Gidwin's Fate Revealed|QID|27526|M|27.48,21.27|N|From Tarenar Sunstrike.|
 T Guardians of Stratholme|QID|27525|M|27.48,21.27|N|To Tarenar Sunstrike.|
-C Scourged Mass|QID|27528|U|61369|M|32.22,21.30|N|Kill Overstuffed Golems and then burn their corpses.|S|
-C Defenders of Darrowshire|QID|27529|M|36.27,17.53|N|Kill Cannibal Ghouls then to talk to the spirits.|S|
-C Add 'em to the Pile|QID|27539|M|38.38,30.46|N|Kill Cursed Mages and Scourge Soldiers to get their skulls.|S|
 C Gidwin's Fate Revealed|QID|27526|M|28.69,26.06|N|As you enter the slaughterhouse you will be treated to a cutscene.|
 T Gidwin's Fate Revealed|QID|27526|M|28.34,25.90|N|To Gidwin Goldbraids.|
 
