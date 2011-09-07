@@ -165,7 +165,7 @@ R Then finally here...|QID|24593|CC|M|54.02,71.85|N|Into the circle room. Get in
 C Just Trying to Kill Some Bugs|QID|24953|M|54.54,72.01|N|Explode!|
 T Just Trying to Kill Some Bugs|QID|24953|M|55.65,60.83|N|To Zeke Bootscuff.|
 A Land's End|QID|25061|M|55.31,60.30|N|From Narain Soothfancy.|
-A Find OOX-17/TN!|QID|351|O|U|8623|N|By now you should be high enough level to handle the Beacon quest. This is why I have pathed this guide like this up until now, giving you more chance to loot the Beacon. If you have not had the beacon drop please skip this step.|
+A Find OOX-17/TN!|QID|351|U|8623|N|By now you should be high enough level to handle the Beacon quest. This is why I have pathed this guide like this up until now, giving you more chance to loot the Beacon. If you have not had the beacon drop please skip this step.|
 T Find OOX-17/TN!|QID|351|O|M|59.81,64.06|N|To Homing Robot OOX-17/TN.|
 A Rescue OOX-17/TN!|QID|648|O|PRE|351|M|59.80,63.99|N|From Homing Robot OOX-17/TN. This is optional as it the turn-in requires you to go to Booty Bay.|
 C Rescue OOX-17/TN!|QID|648|O|M|60.86,53.63|N|Escort the chicken to safety.|
@@ -210,9 +210,9 @@ C What Lies Within|QID|25070|M|84.48,43.21|N|The Antechamber Guardian spawns beh
 T What Lies Within|QID|25070|M|84.48,43.21|N|To the Antediluvean Chest.|Z|Uldum|
 A The Grand Tablet|QID|25421|M|84.48,43.21|N|From the Antediluvean Chest.|Z|Uldum|
 T The Grand Tablet|QID|25421|M|40.14,76.90|N|To Prospector Gunstan.|
-A Tropical Paradise Beckons|QID|24911|M|33.23,76.93|N|From Sherm. Pick this up if you plan to go to Un'Goro next.|
 
 H Gadgetzan|QID|26895|N|Your hearth SHOULD still be set at Gadgetzan, if it is not, use the flight path to go back.|
+A Tropical Paradise Beckons|QID|24911|M|33.23,76.93|N|From Sherm. Pick this up if you plan to go to Un'Goro next.|
 T The Thunderdrome!|QID|26895|M|51.78,28.00|N|To Dr. Dealwell.|
 N The Following quest...|QID|25067|N|The following quest is listed as a group quest. With potions advanced players can solo the first 2. So Try as hard as you can to get a group for these quests.|
 

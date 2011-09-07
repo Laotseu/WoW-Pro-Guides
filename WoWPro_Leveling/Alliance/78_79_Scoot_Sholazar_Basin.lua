@@ -39,7 +39,7 @@ WoWPro.Leveling:RegisterGuide("ScoShoA7879", "Sholazar Basin", "Scoot", "78", "7
 return [[
 F Dalaran |QID|12521| |N|Head to Dalaran.|
 
-A Where in the World is Hemet Nesingwary? |QID|12521|N|From Archmage Pentarus, near the exit from Krasus' Landing.|M|68.68,42.06|
+A Where in the World is Hemet Nesingwary? |QID|12521|N|From Archmage Pentarus, near the exit from Krasus' Landing.|M|68.68,42.06|Z|Dalaran|
 T Where in the World is Hemet Nesingwary? |QID|12521|N|Talk to the Archmage again to get a flight. To Monte Muzzleshot. He's hanging from a tree.|M|35.68,58.65|
 
 A Welcome to Sholazar Basin |QID|12489|M|39.7,58.7|N|From Monte Muzzleshot.|
@@ -136,8 +136,8 @@ C Crocolisk Mastery: The Plan |QID|12560|N|Gather ferns along the banks of the r
 T Crocolisk Mastery: The Plan |QID|12560|N|To Debaar, at Nesingwary Base Camp.|M|27.21,59.86|
 
 A Crocolisk Mastery: The Ambush |QID|12569|N|From Debaar.|M|27.2,59.9|
-C Rhino Mastery: The Kill |QID|12556|N|You'll find Farunn around the Glimmering Pillar to the NE.|M|48.50,44.32|
-C Dreadsaber Mastery: Ready to Pounce |QID|12558|N|At the top of Bittertide Lake, look for Shango.|M|32.49,35.16|
+C Rhino Mastery: The Kill |QID|12556|T|Farunn|N|You'll find Farunn around the Glimmering Pillar to the NE.|M|48.50,44.32|
+C Dreadsaber Mastery: Ready to Pounce |QID|12558|T|Shango|N|At the top of Bittertide Lake, look for Shango.|M|32.49,35.16|
 T Rhino Mastery: The Kill |QID|12556| |N|To Hemet Nesingwary, in Nesingwary Base Camp.|M|27.09,58.72|
 T Dreadsaber Mastery: Ready to Pounce |QID|12558|N|To Buck Cantwell.|M|26.7,59.0|
 
@@ -223,7 +223,7 @@ A Make the Bad Snake Go Away |QID|12571|N|From High-Oracle Soo-say.|M|54.6,56.3|
 A Gods like Shiny Things |QID|12572|N|From Lafoo.|
 C Gods like Shiny Things |QID|12572|S|N|The things you want are on the ground: they blink on and off. To dig them up, he needs almost to be on top of them.|U|38622|M|52.4,53.2|
 C Make the Bad Snake Go Away|QID|12571|S|QO|Emperor Cobra slain: 1/1|N|Kill 10 Emperor Cobras.|M|52.4,53.2|
-K Venomtip |QID|12571|N|You'll find Venomtip near the Rainspeaker Rapids.|M|58.14,52.87|QO|Venomtip slain: 1/1|
+K Venomtip |QID|12571|N|T|Venomtip|You'll find Venomtip near the Rainspeaker Rapids.|M|58.14,52.87|QO|Venomtip slain: 1/1|
 C Gods like Shiny Things |QID|12572|US|N|The things you want are on the ground: they blink on and off. To dig them up, he needs almost to be on top of them.|U|38622|M|52.4,53.2|
 C Make the Bad Snake Go Away|QID|12571|US|QO|Emperor Cobra slain: 1/1|N|Kill 10 Emperor Cobras.|M|52.4,53.2|
 T Make the Bad Snake Go Away |QID|12571|N|To High-Oracle Soo-say, at Rainspeaker Canopy.|M|54.53,56.36|
