@@ -135,8 +135,8 @@ function WoWPro:OnInitialize()
 	WoWProDB.RegisterCallback(self, "OnProfileReset", "SetDefaults")
 
 	-- Creating empty user settings if none exist --
+	_G.WoWProCharDB = _G.WoWProCharDB or {}
 	local WoWProCharDB = _G.WoWProCharDB
-	WoWProCharDB = WoWProCharDB or {}
 	WoWPro.CharDB = WoWProCharDB
 	WoWProCharDB.Guide = WoWProCharDB.Guide or {}
 	WoWProCharDB.completedQIDs = WoWProCharDB.completedQIDs or {}
@@ -278,6 +278,7 @@ function WoWPro:OnEnable()
 		-- Locking event processong till after things get settled --
 		if event == "PLAYER_LEAVING_WORLD" then
 		    WoWPro.InitLockdown = true
+		end
 		
 		-- Unlocking guide frame when leaving combat --
 		if event == "PLAYER_REGEN_ENABLED" or event == "PLAYER_ENTERING_WORLD" or event == "CINEMATIC_STOP" then
