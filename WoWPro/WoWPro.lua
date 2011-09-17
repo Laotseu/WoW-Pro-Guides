@@ -236,15 +236,8 @@ function WoWPro:OnEnable()
 
 
 		-- Unlocking event processong till after things get settled --
-		if event == "PLAYER_ENTERING_WORLD" then	    
+		if event == "PLAYER_ENTERING_WORLD" then
 		    WoWPro.LockdownTimer = 2.0
-
-		-- Updating party-dependant options --
-		elseif event == "PARTY_MEMBERS_CHANGED"
-			or event == "UPDATE_BINDINGS"
-			or event == "PARTY_MEMBERS_CHANGED" then
-			WoWPro:UpdateGuide()
-		--end
 
 		-- Updating WoWPro keybindings --
 		--elseif event == "UPDATE_BINDINGS" and not InCombatLockdown() then
@@ -275,13 +268,21 @@ function WoWPro:OnEnable()
 		if WoWPro.InitLockdown then
 		    return
 		end
+
+		-- Updating party-dependant options --
+		if event == "PARTY_MEMBERS_CHANGED"
+			or event == "UPDATE_BINDINGS"
+			or event == "PARTY_MEMBERS_CHANGED" then
+			WoWPro:UpdateGuide()
+		--end
+
 		-- Locking event processong till after things get settled --
-		if event == "PLAYER_LEAVING_WORLD" then
+		elseif event == "PLAYER_LEAVING_WORLD" then
 		    WoWPro.InitLockdown = true
-		end
-		
+		--end
+
 		-- Unlocking guide frame when leaving combat --
-		if event == "PLAYER_REGEN_ENABLED" or event == "PLAYER_ENTERING_WORLD" or event == "CINEMATIC_STOP" then
+		elseif event == "PLAYER_REGEN_ENABLED" or event == "PLAYER_ENTERING_WORLD" or event == "CINEMATIC_STOP" then
 			WoWPro:UpdateGuide()
 		end
 
