@@ -266,7 +266,7 @@ A Good Deed Left Undone|QID|27685|PRE|25371|M|46.6,46.7|Z|Kelp'thar Forest|N|Fro
 T Good Deed Left Undone|QID|27685|M|53.40,43.0|Z|Kelp'thar Forest|N|Find Adarrah on the east side of the Kelp Forest. Turn in Good Deed Left Undone.|
 A Gimme Shelter!|QID|25587|M|53.4,43.2|Z|Kelp'thar Forest|N|From Adarrah.|
 C Smuggler's Scar|QID|25587|M|53.63,34.55;57.00,29.50|QO|Smuggler's Scar Scouted: 1/1|Z|Kelp'thar Forest|N|Swim toward Smuggler's Hole, a small cave just north of where you are. Go inside, until you reach the surface of the water. Get the flightpoint at the Swift Seahorse.|
-f Smuggler's Scar|QID|25587|Z|Kelp'thar Forest|M|56.14,31.1|N|Grab the flight point from the Swift Seahorse.|
+; f Smuggler's Scar|QID|25587|Z|Kelp'thar Forest|M|56.14,31.1|N|Grab the flight point from the Swift Seahorse.|
 C Gimme Shelter!|QID|25587|M|53.67,34.32|Z|Kelp'thar Forest|N|Swim back out of the cave to signal Adarrah.|
 T Gimme Shelter!|QID|25587|M|57.1,28.8|Z|Kelp'thar Forest|N|Swim back into the cave and talk to Adarrah.|
 A Ain't Too Proud to Beg|QID|25598|M|57.09,28.87|Z|Kelp'thar Forest|N|From Adarrah.|
@@ -363,8 +363,8 @@ T Decompression|QID|25888|M|60.48,64.71;63.84,59.66|Z|Kelp'thar Forest|N|To Moan
 T What? What? In My Gut...?|QID|25885|M|63.84,59.66|Z|Kelp'thar Forest|N|To Private Pollard.|
 T The Warden's Time|QID|27708|M|63.84,59.66|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Across the Great Divide|QID|25471|PRE|27708|M|63.8,59.7|Z|Kelp'thar Forest|N|From Erunak Stonespeaker.|
-f Sandy Beach|QID|25471|M|57.06,17.11|Z|Shimmering Expanse|N|Grab the flight point from Francis Greene.|
-f Kelp'thar Forest|QID|25471|M|42.39,66.12|Z|Kelp'thar Forest|N|Grab the flight point from the Swift Seahorse.|
+; f Sandy Beach|QID|25471|M|57.06,17.11|Z|Shimmering Expanse|N|Grab the flight point from Francis Greene.|
+; f Kelp'thar Forest|QID|25471|M|42.39,66.12|Z|Kelp'thar Forest|N|Grab the flight point from the Swift Seahorse.|
 
 N Across the Great Divide|QID|25471|M|48.31,73.28|Z|Kelp'thar Forest|N|Head to the entrance to the cave. Then click off this step.|
 T Across the Great Divide|QID|25471|M|56.02,13.68|Z|Shimmering Expanse|N|To Farseer Gadra. Head into the cave.|
@@ -379,7 +379,7 @@ A Rundown|QID|25221|PRE|25164|M|55.5,12.5|Z|Shimmering Expanse|N|From Toshe Chao
 C Rundown|QID|25221|U|54466|M|53.1,18.9;53.1,34.1;59.4,37.3|Z|Shimmering Expanse|N|When you come out of the tunnel, you will see naga swimming off to your left. Use Toshe's Hunting Spears to kill 20 naga.|
 T Rundown|QID|25221|M|53.3,33.0|Z|Shimmering Expanse|N|To Toshe Chaosrender.|
 A Silver Tide Hollow|QID|25222|PRE|25221|M|53.3,33.0|Z|Shimmering Expanse|N|From Toshe Chaosrender.|
-f Silver Tide Hollow|QID|25222|M|49.52,41.22|M|49.52,41.22|Z|Shimmering Expanse|N|Grab the flight point at the Swift Seahorse.|
+; f Silver Tide Hollow|QID|25222|M|49.52,41.22|M|49.52,41.22|Z|Shimmering Expanse|N|Grab the flight point at the Swift Seahorse.|
 T Silver Tide Hollow|QID|25222|M|49.5,42.1|Z|Shimmering Expanse|N|To Felora Firewreath.|
 A A Distracting Scent|QID|25215|PRE|25222|RANK|2|M|49.6,42.1|Z|Shimmering Expanse|N|From Felora Firewreath.|
 A The Great Sambino|QID|25216|PRE|25222|M|49.6,42.1|Z|Shimmering Expanse|N|From Felora Firewreath.|
@@ -464,7 +464,7 @@ C Waking The Beast|QID|25922|M|51.58,55.43;50.37,55.42|Z|Shimmering Expanse|N|Li
 T Waking The Beast|QID|25922|M|49.2,57|Z|Shimmering Expanse|N|To Captain Taylor.|
 A Cold Welcome|QID|25536|PRE|25922|M|49.2,57.0|Z|Shimmering Expanse|N|From Captain Taylor.|
 A A Powerful Need to Eat|QID|25535|PRE|25536|M|49.47,57.35|Z|Shimmering Expanse|N|From Wavespeaker Valoren.|
-f Tranguil Wash|QID|25535|M|48.6,57.38|N|Grab the flight point from the Swift Seahorse.|Z|Shimmering Expanse|
+; f Tranguil Wash|QID|25535|M|48.6,57.38|N|Grab the flight point from the Swift Seahorse.|Z|Shimmering Expanse|
 T A Powerful Need to Eat|QID|25535|M|48.9,49.2|Z|Shimmering Expanse|N|To Divemaster Birmingham.|
 A Clamming Up|QID|25539|PRE|25535|M|48.9,49.2|Z|Shimmering Expanse|N|From Divemaster Birmingham.|
 A Art of Attraction|QID|25537|PRE|25535|M|49,49.2|Z|Shimmering Expanse|N|From Engineer Hexascrub.|
@@ -606,15 +606,15 @@ C Final Judgement|QID|25951|M|37.50,78.69;42.90,78.40|Z|Shimmering Expanse|N|Swi
 T Final Judgement|QID|25951|M|33.1,75.9|Z|Shimmering Expanse|N|To Lady Naz'jar.|
 T Visions of the Past: Rise From The Deep|QID|25626|M|46.69,57.53;49.45,57.57|Z|Shimmering Expanse|N|To Wavespeaker Valoren.|
 A A Breath of Fresh Air|QID|26005|PRE|25626|M|49.45,57.57|Z|Shimmering Expanse|N|From Wavespeaker Valoren.|
-f The Lightless Reaches|QID|26005|M|57.1,75.18|Z|Shimmering Expanse|N|Grab the flight point at the Swift Seahorse.|
-f Voldrin's Hold|QID|26005|M|69.4,75.2|Z|Vashj'ir|N|Grab the flight point from Salty McTavish.|
+; f The Lightless Reaches|QID|26005|M|57.1,75.18|Z|Shimmering Expanse|N|Grab the flight point at the Swift Seahorse.|
+; f Voldrin's Hold|QID|26005|M|69.4,75.2|Z|Vashj'ir|N|Grab the flight point from Salty McTavish.|
 T A Breath of Fresh Air|QID|26005|M|69.61,75.34|Z|Vashj'ir|U|57412|N|You can use the Boom Boots to get to the surface. Turn quest in to Captain Taylor.|
 
 A Full Circle|QID|26219|PRE|26005|M|69.6,75.3|Z|Vashj'ir|N|From Captain Taylor.|
 C Full Circle|QID|26219|M|69.6,75.3|Z|Vashj'ir|Z|Shimmering Expanse|N|Get on board the sub once it arrives (can take 1-2 minutes to arrive, listen out for the Engineer's yelling indicating it's arrival).  Board the sub, and head downstairs and stand behind the Captain and Number 2.  Once Darkbreak Cove is secured and the sub docks, you will be automatically placed in next to Captain Glovaal on land.|
 T Full Circle|QID|26219|M|54.5,72.8|Z|Abyssal Depths|N|To Captain Glovaal.|
 A Bio-Fuel|QID|26103|PRE|26219|M|55.5,72.9|Z|Abyssal Depths|N|Engineer Hexascrub.|
-f Darkbreak Cove|QID|26103|M|56.92,75.52|Z|Abyssal Depths|N|Grab the flight point at the Swift Seahorse.|
+; f Darkbreak Cove|QID|26103|M|56.92,75.52|Z|Abyssal Depths|N|Grab the flight point at the Swift Seahorse.|
 A Claim Korthun's End|QID|26105|PRE|26103|M|54.58,75.62;59.51,71.71|Z|Abyssal Depths|N|Go up from the cave to Korthun's end and kill a Hellscream Seadog to automatically be offered this quest.|
 C Claim Korthun's End|QID|26105|S|M|55.9,70.6;56.5,72.6;51.9,70.7;53,58;49.2,67.3|Z|Abyssal Depths|N|Kill Hellsong Seadogs.|
 C Bio-Fuel|QID|26103|M|56.8,44.2;53.9,49.6;54.5,62.9;49.3,74.7;56.7,74.4|U|56821|Z|Abyssal Depths|N|Oilify 4 Seabrush Terrapins, Scourgut Remora and Spinescale Hammerheads after killing them.|

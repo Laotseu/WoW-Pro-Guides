@@ -67,7 +67,7 @@ A The Throne of the Elements |QID|9869|M|55.5,68.8|N|From Elementalist Ioki.|
 A Solving the Problem |QID|9878|M|54.5,72.2|N|Frmo Poli'lukluk the Wiser.|
 A Stopping the Spread |QID|9874|M|54.5,72.2|N|From Otonbu the Sage.|
 A The Ravaged Caravan |QID|9956|M|54.2,70.0|N|From Huntress Kima. She wanders around the village.|
-f Telaar |QID|10251|N|Get the flight path.|M|54.20,75.05|
+; f Telaar |QID|10251|N|Get the flight path.|M|54.20,75.05|
 
 T The Master's Grand Design? |QID|10251|N|To Nitrin the Learned.|M|51.77,56.88|O|
 A Vision of the Dead |QID|10252|PRE|10251|O|N|From Nitrin the Learned.|M|51.77,56.88|

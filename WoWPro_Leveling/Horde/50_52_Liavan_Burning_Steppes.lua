@@ -34,7 +34,7 @@ return [[
 T Mouton Flamestar|QID|28515|M|17.13,51.32|N|To Mouton Flamestar.|
 A Done Nothing Wrong|QID|28417|M|17.21,51.39|N|From Mouton Flamestar.|
 A Burning Vengeance|QID|28418|M|17.43,51.65|N|From Ariok.|
-f Flamestar Post|QID|28418|M|17.69,52.81|N|At Hans Oreflight.|
+; f Flamestar Post|QID|28418|M|17.69,52.81|N|At Hans Oreflight.|
 C Burning Vengeance|QID|28418|S|M|17.00,63.80|N|Kill Blackrock Whelpers and Flamescale Broodlings.|
 C Done Nothing Wrong|QID|28417|M|17.60,60.44;17.36,67.83|N|Kill Blackrock Whelpers and Flamescale Broodlings as you go.|
 C Burning Vengeance|QID|28418|US|M|17.00,63.80|N|Kill Blackrock Whelpers and Flamescale Broodlings.|
@@ -64,7 +64,7 @@ C Chiselgrip, the Heart of the Steppes|QID|28426|M|36.76,53.81|
 T Chiselgrip, the Heart of the Steppes|QID|28426|M|46.76,44.11|N|To Stebben Oreknuckle.|
 A Prove Yer Allegiance|QID|28225|M|46.80,44.10|N|From Stebben Oreknuckle.|
 A Scrapped Golems|QID|28226|M|46.80,44.10|N|From Stebben Oreknuckle.|
-f Ruins of Thaurissan|QID|28226|M|46.17,41.87|N|At Grimly Singefeather.|
+; f Ruins of Thaurissan|QID|28226|M|46.17,41.87|N|At Grimly Singefeather.|
 A A Needle in a Hellhole|QID|28427|M|44.65,44.49|N|From Eitrigg.|
 T A Needle in a Hellhole|QID|28427|M|45.38,46.16|N|To Thelaron Direneedle.|
 A A Perfect Costume|QID|28428|R|Undead,Orc|M|45.38,46.16|N|From Thelaron Direneedle.|

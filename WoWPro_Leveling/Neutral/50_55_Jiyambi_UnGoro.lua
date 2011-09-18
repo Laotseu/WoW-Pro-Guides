@@ -81,7 +81,7 @@ T The Bait for Lar'korwi|RANK|2|QID|24733|M|71.20,76.52|N|Back down to Torwa Pat
 l Blue Crystals|NC|US|L|11184 7|QID|24720|N|Loot 7 blue crystals from the big crystal nodes in this part of the zone.|
 
 R Marshal's Stand|QID|24865|M|55.97,64.15|N|Follow the road north to Marshal's Stand.|
-f Marshal's Stand|QID|24865|M|55.97,64.15|N|From Gryfe.|
+; f Marshal's Stand|QID|24865|M|55.97,64.15|N|From Gryfe.|
 
 T Hero's Call: Un'Goro Crater!|QID|28525|O|M|55.09,62.16|N|To Williden Marshal.|FACTION|Alliance|
 T Warchief's Command: Un'Goro Crater!|O|QID|28526|N|To Williden Marshal.|FACTION|Horde|
@@ -132,7 +132,7 @@ A Marshal's Refuse|QID|24701|M|43.15,41.13|N|From Doreen.|
 A Super Sticky|QID|24737|M|43.15,41.13|N|From Tara.|
 A Hard to Harvest|QID|24700|M|43.15,41.13|N|From Tara.|
 A Shizzle's Flyer|QID|24736|M|43.38,41.37|N|From Shizzle.|
-f Mossy Pile|QID|24736|M|44.09,40.23|N|At Flizzy Coilspanner.|
+; f Mossy Pile|QID|24736|M|44.09,40.23|N|At Flizzy Coilspanner.|
 
 l Yellow Crystals|NC|S|QID|24720|M|37.04,29.06;44.79,17.53|N|Loot 7 yellow crystals from the big crystal nodes in this part of the zone.|QO|Yellow Power Crystal: 7/7|
 C Shizzle's Flyer|QID|24736|M|37.04,29.06|N|Kill and loot Pterrorddaxes in the Screaming Reaches.|

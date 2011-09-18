@@ -57,7 +57,7 @@ A Tanaris is Calling|QID|27446|M|75.95,74.58|Z|Thousand Needles|N|From Fizzle Br
 R Tanaris|QID|27446|U|55121|M|74.38,94.85|Z|Thousand Needles|N|If you have your boat use it now and head south, if you do not, swim. Continue along the path marked by the co-ords.|
 h Gadgetzan|QID|27446|M|52.59,27.00|N|At Innkeeper Fizzgrimble.|
 r Sell Junk / Repair and Restock|QID|27446|M|52.28,29.72|N|You can also put items in the bank here. I would suggest doing so. (Click to continue)|
-f Gadgetzan|QID|27446|M|51.32,29.45|N|At Bera Stonehammer.|
+; f Gadgetzan|QID|27446|M|51.32,29.45|N|At Bera Stonehammer.|
 T Tanaris is Calling|QID|27446|M|51.23,29.90|N|To Kelsey Steelspark.|
 
 A Seaside Salvage|QID|25048|M|51.23,29.90|N|From Kelsey Steelspark.|
@@ -135,7 +135,7 @@ C Secrets in the Oasis|QID|25032|M|39.04,35.17|N|Click on the dirt pile here.|
 T Secrets in the Oasis|QID|25032|M|42.44,24.02|N|To Trenton Lighthammer.|
 
 A Into Zul'Farrak|QID|25556|M|42.44,24.02|N|From Trenton Lighthammer. If you do not wish to run the Zul'farrak dungeon; abandon this quest; but it is good XP and rewards if you do.|
-f Bootlegger Outpost|QID|26889|M|55.84,60.63|N|At Slick Dropdip.|
+; f Bootlegger Outpost|QID|26889|M|55.84,60.63|N|At Slick Dropdip.|
 T All Cheered Out|QID|26889|M|55.65,60.82|N|To Zeke Bootscuff.|
 A Cutting Losses|QID|24932|M|55.65,60.82|N|From Zeke Bootscuff.|
 A A Few Good Goblins|QID|25072|M|55.65,60.82|N|From Zeke Bootscuff.|
@@ -188,7 +188,7 @@ A You Too, Brute?|QID|25065|M|49.99,82.90|N|From Kelsey Steelspark.|
 C You Too, Brute?|QID|25065|M|53.31,89.73|N|Kill and loot Meatface.|
 T You Too, Brute?|QID|25065|M|50.00,82.90|N|To Kelsey Steelspark.|
 A Prospector Gunstan|QID|28881|M|50.00,82.90|N|From Kelsey Steelspark.|
-f Southmoon Ruins|QID|28881|M|49.10,76.00;40.01,77.50|N|At Thurda.|
+; f Southmoon Ruins|QID|28881|M|49.10,76.00;40.01,77.50|N|At Thurda.|
 T Prospector Gunstan|QID|28881|M|40.12,76.91|N|To Prospector Gunstan.|
 A Ancient Obstacles|QID|25420|M|40.12,76.91|N|From Prospector Gunstan.|
 A Laying Claim|QID|25559|M|40.12,76.91|N|From Prospector Gunstan.|

@@ -293,7 +293,7 @@ T The Dead Scar |QID|8475|N|To Ranger Jaela|M|50.3,50.8|
 T The Dwarven Spy |QID|8483|N|To Aeldon Sunbrand|M|48.2,46.0|
 A Fairbreeze Village |QID|9256|N|From Aeldon Sunbrand|
 A Pelt Collection |QID|8491|N|From Velan Brightoak|M|44.7,69.6|
-f Fairbreeze Village|M|43.98,69.98|N|At Skymaster Brightdawn.|
+; f Fairbreeze Village|M|43.98,69.98|N|At Skymaster Brightdawn.|
 A The Wayward Apprentice |QID|9254|N|From Magistrix Landra Dawnstrider|M|44.0,70.8|
 A Saltheril's Haven |QID|9395|N|From Magistrix Landra Dawnstrider|M|44.0,70.8|
 T Fairbreeze Village |QID|9256|N|To Ranger Degolien. Up the ramp.|

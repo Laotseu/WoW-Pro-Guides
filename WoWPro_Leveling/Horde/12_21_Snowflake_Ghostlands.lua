@@ -71,7 +71,7 @@ T Delivery to Tranquillien |QID|9148|N|Follow the road south to Tranquillien.|
 
 A The Forsaken |QID|9327|R|BloodElf|N|From Vandril.|M|46.35,28.39|
 A The Forsaken |QID|9329|M|46.35,28.39|R|Orc,Troll,Tauren,Undead,Goblin|N|From Vandril.|
-f Tranquillien|QID|9327|M|45.47,30.54|N|At Skymaster Sunwing.|
+; f Tranquillien|QID|9327|M|45.47,30.54|N|At Skymaster Sunwing.|
 T The Forsaken |QID|9327|R|BloodElf|N|To High Executor Mavren. In the large building to your right as you enter Tranquillien from the north.|
 T The Forsaken |QID|9329|R|Orc,Troll,Tauren,Undead,Goblin|N|To High Executor Mavren. In the large building to your right as you enter Tranquillien from the north.|
 A Return to Arcanist Vandril|QID|9758|M|44.84,32.43|N|From High Executor Mavren.|
@@ -203,7 +203,7 @@ K Bring Me Kel'gash's Head!|QID|9215|L|22640 |M|65.33,79.51|N|If you feel that y
 U Poison the Smoked Meat Rack|QID|9275|US|U|22796|QO|Poison the Smoked Meat Rack: 1/1|M|62.82,75.13|N|Poison the Smoked Meat Rack.|
 U Poison the Fresh Fish Rack|QID|9275|US|U|22796|QO|Poison the Fresh Fish Rack: 1/1|M|68.22,57.85|N|Poison the Fresh Fish Rack.|
 
-f Hatchet Hills|M|63.93,61.44;74.72,67.05|N|At Kiz Coilspanner.|
+; f Hatchet Hills|M|63.93,61.44;74.72,67.05|N|At Kiz Coilspanner.|
 H Tranquilien|QID|9193|U|6948|N|Hearth back to Tranquilien or fly there if you want to save your hearth.|
 A The Sanctum of the Sun|QID|9151|M|46.04,31.97|N|From Magister Darenis.|
 T Troll Juju|QID|9199|M|44.84,32.32|N|To Deathstalker Maltendis.|
@@ -271,17 +271,17 @@ A Envoy to the Horde|QID|9812|M|53.98,20.42|R|Orc,Troll,Tauren,Undead,Goblin|Z|S
 R Undercity|QID|9180|M|49.49,14.76|Z|Silvermoon City|N|Go to the room behind Lor'themar, and click on the Orb of Translocation.|
 
 A Warchief's Command: Hillsbrad Foothills!|QID|28571|M|66.03,49.64|Z|Undercity|N|From the Warchief's Command Board.|
-f Trade Quarter|QID|28571|M|63.51,48.54|Z|Undercity|N|At Michael Garrett.|
+; f Trade Quarter|QID|28571|M|63.51,48.54|Z|Undercity|N|At Michael Garrett.|
 T Envoy to the Horde|QID|9621|M|57.59,91.64|R|BloodElf|Z|Undercity|N|To Lady Sylvanas Windrunner.|
 T Envoy to the Horde|QID|9812|M|57.59,91.64|R|Orc,Troll,Tauren,Undead,Goblin|Z|Undercity|N|To Lady Sylvanas Windrunner.|
 T Journey to Undercity|QID|9180|M|57.59,91.64|R|BloodElf|Z|Undercity|N|To Lady Sylvanas Windrunner.|
 T Journey to Undercity|QID|9177|M|57.59,91.64|R|Orc,Troll,Undead,Tauren,Goblin|N|From High Executor Mavren.|
 N Next guide|QID|28571|Z|Undercity|N|The end of this guide is taking you to Hillsbrad Foothillsas well as get flightpoints.  If you don't want to do that zone, go ahead and choose which zone you want.  Right-click this step to continue.|
 
-f Brill|QID|28571|M|58.89,52.00|Z|Tirisfal Glades|N|At Anette Williams.|
-f The Sepulcher|QID|28571|M|45.41,42.49|Z|Silverpine Forest|N|At Karos Razok.|
-f The Forsaken Front|QID|28571|M|50.90,63.69|Z|Silverpine Forest|N|At Steven Stutzka.|
-f Southpoint Gate|QID|28571|M|29.11,64.38|Z|Hillsbrad Foothills|N|At Pamela Stutzka.|
+; f Brill|QID|28571|M|58.89,52.00|Z|Tirisfal Glades|N|At Anette Williams.|
+; f The Sepulcher|QID|28571|M|45.41,42.49|Z|Silverpine Forest|N|At Karos Razok.|
+; f The Forsaken Front|QID|28571|M|50.90,63.69|Z|Silverpine Forest|N|At Steven Stutzka.|
+; f Southpoint Gate|QID|28571|M|29.11,64.38|Z|Hillsbrad Foothills|N|At Pamela Stutzka.|
 ]]
 
 end)

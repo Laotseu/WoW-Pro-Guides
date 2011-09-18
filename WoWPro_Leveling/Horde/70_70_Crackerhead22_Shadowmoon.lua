@@ -38,7 +38,7 @@ T Besieged!|QID|10595|M|30.46,32.49|N|To Blood Guard Gulmok.|
 A To Legion Hold|QID|10596|M|30.39,32.50|N|From Blood Guard Gulmok.|
 A Wanted: Uvuros, Scourge of Shadowmoon|QID|10647|M|30.45,30.91|N|From the Wanted Poster.|
 A The Sketh'lon Wreckage|QID|10760|M|31.00,29.87|N|From Sergeant Kargrul.|
-f Shadowmoon Village|QID|10760|M|30.32,29.14|N|At Drek'Gol.|
+; f Shadowmoon Village|QID|10760|M|30.32,29.14|N|At Drek'Gol.|
 
 A What Strange Creatures...|QID|10660|M|30.00,28.35|N|From Researcher Tiorus.|
 A A Haunted History|QID|10624|M|29.91,27.71|N|From Chief Apothecary Hildagard.|
@@ -113,7 +113,7 @@ A Divination: Gorefiend's Cloak|QID|10635|M|58.23,70.75|N|From Ancient Shadowmoo
 A Divination: Gorefiend's Truncheon|QID|10636|M|58.23,70.75|N|From Ancient Shadowmoon Spirit.|
 A Divination: Gorefiend's Armor|QID|10634|M|58.23,70.75|N|From Ancient Shadowmoon Spirit.|
 
-f Sanctum of the Stars|QID|10687|M|56.32,57.81|N|At Alieshor.|REP|Scryers;934|
+; f Sanctum of the Stars|QID|10687|M|56.32,57.81|N|At Alieshor.|REP|Scryers;934|
 A Tablets of Baa'ri|QID|10683|M|56.25,59.59|N|From Arcanist Thelis|REP|Scryers;934|
 A The Ashtongue Broken|QID|10807|M|54.73,58.19|N|From Varen the Reclaimer|REP|Scryers;934|
 A Karabor Training Grounds|QID|10687|M|55.74,58.18|N|From Larissa Sunstrike.|REP|Scryers;934|
@@ -140,7 +140,7 @@ C Enraged Spirits of Water|QID|10480|U|30094|M|49.47,22.32|N|Use the totem and k
 A The Ashtongue Tribe|QID|10619|M|61.24,29.18|N|From Vindicator Aluumen.|REP|Aldor;932|
 A Karabor Training Grounds|QID|10587|M|61.24,29.18|N|From Exarch Onaala.|REP|Aldor;932|
 A Tablets of Baa'ri|QID|10568|M|62.54,28.46|N|From Anchorite Ceyla.|REP|Aldor;932|
-f Altar of Sha'tar|QID|10568|M|63.25,30.36|N|At Maddix.|REP|Aldor;932|
+; f Altar of Sha'tar|QID|10568|M|63.25,30.36|N|At Maddix.|REP|Aldor;932|
 l Tablets of Baa'ri|QID|10568|S|M|56.30,36.55|N|Loot these from either the glowing green spots on the ground, or by killing Ashtongue Workers.|REP|Aldor;932|
 C The Ashtongue Tribe|QID|10619|M|56.91,36.41|N|Kill the mobs needed.|REP|Aldor;932|REP|Aldor|
 l Tablets of Baa'ri|QID|10568|US|M|56.30,36.55|N|Loot these from either the glowing green spots on the ground, or by killing Ashtongue Workers.|REP|Aldor;932|

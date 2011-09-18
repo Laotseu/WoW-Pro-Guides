@@ -55,7 +55,7 @@
 -- URL: http://wow-pro.com/node/3303/revisions/23720/view
 -- Date: 2010-12-09 15:46
 -- Who: Bitsem
--- Log: Fixed two small things. 
+-- Log: Fixed two small things.
 --	A From the Mouth of Madness is from Rio Duran, not Royce Duskwhisper.
 --	A Sweeping the Shelf is from Ian Duran, not Rio Duran.
 --	Great work as usual Magic! :)
@@ -108,7 +108,7 @@ A As Hyjal Burns|QID|25316|PRE|27726|M|45.3,44.8|Z|Moonglade|N|From Emissary Win
 F Nordrassil|QID|25316|M|46.1,45.51|Z|Moonglade|N|Jump on Aronus to fly to Nordrassil.|
 T As Hyjal Burns|QID|25316|M|62.08,24.89|N|To Ysera.|
 A Protect the World Tree|QID|25317|PRE|25316|M|62.08,24.89|N|From Ysera.|
-f Nordrassil|QID|25317|M|62.14,21.68|N|At Fayran Elthas.|
+; f Nordrassil|QID|25317|M|62.14,21.68|N|At Fayran Elthas.|
 A The Earth Rises|QID|25460|PRE|25316|RANK|2|M|64.05,22.58|N|From Anren Shadowseeker.|
 A Inciting the Elements|QID|25370|PRE|25316|RANK|2|M|64.05,22.58|N|From Tholo Whitehoof.|
 C The Earth Rises|QID|25460|RANK|2|M|64.61,22.62|N|Kill Scalding Rock Elementals.|S|
@@ -271,11 +271,11 @@ A Return from the Firelands|QID|25612|M|26.2,41.9|N|From Jordan Olafson.|FACTION
 T Return from the Firelands|QID|25612|M|28.4,29.9|N|Enter the portal behind you. This will return you the Shrine of Goldrinn. Fly back to the camp to Takrik Ragehowl.|FACTION|Horde|
 T Sweeping the Shelf|QID|25354|M|28.4,29.9|N|At Takrik Ragehowl.|FACTION|Horde|
 
-A Aviana's Legacy|QID|27874|M|28.4,29.8|N|From Vision of Ysera. If the quest is not offered, and you have it, get rid of the quest An Offering for Aviana.|LEAD|25663|
+A Aviana's Legacy|QID|27874|O|M|28.4,29.8|N|From Vision of Ysera. If the quest is not offered, and you have it, get rid of the quest An Offering for Aviana.|LEAD|25663|
 A The Fires of Mount Hyjal|QID|25630|PRE|25611|M|28.18,29.87|N|From Rio Duran.|
-f Shrine of Aviana|QID|25630|M|41.14,42.70|N|Fly to the Shrine of Aviana and get the flight point from Dinorae Swiftfeather.|
+; f Shrine of Aviana|QID|25630|M|41.14,42.70|N|Fly to the Shrine of Aviana and get the flight point from Dinorae Swiftfeather.|
 T Aviana's Legacy|QID|27874|M|44.39,46.21|N|Enter the first floor of the building at the base of the tree. Head all the way to the back of the shrine to find Choluna.|
-A An Offering for Aviana|QID|25663|M|39,46.21|N|From Choluna.|
+A An Offering for Aviana|QID|25663|M|44.4,46.2|N|From Choluna.|
 A The Wormwing Problem|QID|25655|M|42.18,45.40|N|From Thisalee Crow.|
 A Scrambling for Eggs|QID|25656|M|42.18,45.40|N|From Thisalee Crow.|
 C An Offering for Aviana|QID|25663|U|55208|M|40.38,44.31|N|Go to the small circle of stones just outside the shrine. Use the Sacred Nectar while standing near the basin in the center of the stone circle. The Spirit of Aviana will appear.|
@@ -297,7 +297,7 @@ T A Prayer and a Wing|QID|25664|M|44.38,46.21|N|To Choluna.|
 A Fact-Finding Mission|QID|25740|PRE|25664;25731|M|43.55,45.82|N|From Skylord Omnuron. We will be doing this quest later.|
 A Save the Wee Animals|QID|25385|PRE|25630|M|19.25,37.96|N|Mount up and head west, past the Shrine of Goldrinn and the Twilight Cultists camp. Follow the road until you reach the Grove of Aessina. From Mylune.|
 A If You're Not Against Us...|QID|25404|PRE|25630|M|19.04,36.98|N|From Matoclaw.|
-f Grove of Aessina|QID|25404|M|19.58,36.42|N|At Elizil Wintermoth.|
+; f Grove of Aessina|QID|25404|M|19.58,36.42|N|At Elizil Wintermoth.|
 C If You're Not Against Us...|QID|25404|M|22.18,44.91|N|Talk to Tyrus Blackhorn until you get the quest completion.|
 T If You're Not Against Us...|QID|25404|M|22.18,44.91|N|To Tyrus Blackhorn.|
 A Seeds of Their Demise|QID|25408|PRE|25404|M|22.18,44.91|N|Leave the shrine and go slightly east up the road to a small tower. Find Tyrus Blackhorn at the base of the tower. From Tyrus Blackhorn.|
@@ -532,7 +532,7 @@ C Slash and Burn|QID|25608|M|80.25,65.47|N|Get on one of the Emerald Drakes near
 T Slash and Burn|QID|25608|M|72.15,74.03|N|To Commander Jarod Shadowsong.|
 A Might of the Firelord|QID|25548|PRE|25608|M|71.97,73.97|N|From Commander Jarod Shadowsong.|
 A Secrets of the Flame|QID|25554|PRE|25608|M|71.96,74.01|N|From Cenarius.|
-f Gates of Sothann|QID|25554|M|71.57,75.24|N|At Althera.|
+; f Gates of Sothann|QID|25554|M|71.57,75.24|N|At Althera.|
 C Might of the Firelord|QID|25548|S|M|58.49,82.53|N|Kill Flame Ascendants and Twilight Subjugators.|
 l Secrets of the Flame|QID|25554|M|59.66,80.81|L|54906|N|Get the The Burning Litanies.|
 l Secrets of the Flame|QID|25554|M|58.13,78.90|L|54905|N|Get the Tome of Flame.|

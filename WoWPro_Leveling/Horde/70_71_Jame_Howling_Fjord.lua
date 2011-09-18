@@ -593,10 +593,10 @@ T Return to Atuik |QID|11572| |N|Take the lift behind Orfus, then ride north to 
 R Moa'ki Harbor |QID|12118|N|Go out onto the docks and take the turtle boat. (23.2,57.7)|M|23.55,57.79|
 
 T Travel to Moa'ki Harbor |QID|12118|Z|Dragonblight|M|47.99,74.89|
-f Moa'ki Harbor|QID|11585|N|(48.5,74)|Z|Dragonblight|M|48.51,74.39|
+; f Moa'ki Harbor|QID|11585|N|(48.5,74)|Z|Dragonblight|M|48.51,74.39|
 R Go to Unu'pe |QID|11585|N|Go out onto the second pier, a turtle boat will come that takes you to Unu'pe. (47.6,49.0)|Z|Dragonblight|M|48.02,78.69|
 
-f Unu'pe|QID|11585|N|(78.5,51.5)|Z|Borean Tundra|M|78.53,51.54|
+; f Unu'pe|QID|11585|N|(78.5,51.5)|Z|Borean Tundra|M|78.53,51.54|
 R Warsong Hold |QID|11585|N|About (43,55). Go north to the road, then follow it and take a left at the D.E.H.T.A camp, then take a right in the red area, and continue west to Warsong Hold.|Z|Borean Tundra|M|41.42,53.71|
 ]]
 end)

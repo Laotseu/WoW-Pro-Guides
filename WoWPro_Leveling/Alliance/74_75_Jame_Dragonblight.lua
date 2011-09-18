@@ -44,7 +44,7 @@ WoWPro.Leveling:RegisterGuide("JamDra7475", "Dragonblight", "Jame", "74", "75", 
 return [[
 
 N Note |QID|12298| |N|If you followed my previous guides, you should be in Wintergarde Keep, Dragonblight and have the following quest: High Commander Halford Wyrmbane If you don't have it, just ignore this quest, it's not a big deal, you can get the follow up anyway. Let's get started!|
-f Wintergarde Keep |QID|12298| |N|Get the new flight path at Rodney Wells. |M|77.0,49.8|
+; f Wintergarde Keep |QID|12298| |N|Get the new flight path at Rodney Wells. |M|77.0,49.8|
 N Warning! |QID|12298| |N|Throughout this whole chapter, do NOT get the quest [The Hills Have Us]. If you take it, this will fly you to Grizzly Hills and will make you waste a lot of time.|
 T High Commander Halford Wyrmbane |QID|12298| |N|To High Commander Halford Wyrmbane.|M|78.60,48.20|
 A Naxxramas and the Fall of Wintergarde |QID|12235|M|78.6,48.2|N|From High Commander Halfor Wyrmbane.|
@@ -137,7 +137,7 @@ A Into Hostile Territory |QID|12325|M|78.6,48.2|N|From High Commander Halford Wy
 T A Disturbance In The West |QID|12439| |N|To Rodney Wells.|M|77.00,49.80|
 A To Stars' Rest! |QID|12440| |N|Dismount, then accept this quest from Rodney Wells. This will fly you to Stars' Rest.|M|77,49.8|
 
-f Stars' Rest |QID|12440| |N|Get the new flight path from |
+; f Stars' Rest |QID|12440| |N|Get the new flight path from |
 T To Stars' Rest! |QID|12440| |N|To the Image of Archmage Modera.|M|29.00,55.50|
 A Rifle the Bodies |QID|12000|M|29.0,55.5|N|From the Image of Archmage Modera.|M|29.00,55.50|
 A The Liquid Fire of Elune |QID|12166| |N|From Warden Jodi Moonsong.|M|29.20,55.60|
@@ -293,7 +293,7 @@ A That Which Creates Can Also Destroy |QID|12459|M|59.6,54.4|N|From To Lord Itha
 T Speak with your Ambassador |QID|12766| |N|Go back down to the ground floor of Wyrmrest Temple. Find Lauriel Trueblade.|M|60.00,55.00|
 A Report to the Ruby Dragonshrine |QID|12460|M|60.0,55.1|N|From Lauriel Trueblade.|
 
-f Wyrmrest Temple|QID|12325| |N|Go to the northeastern tip of the temple and you'll find Nethestrasz. Get the new flight path.|M|60.32,51.55|
+; f Wyrmrest Temple|QID|12325| |N|Go to the northeastern tip of the temple and you'll find Nethestrasz. Get the new flight path.|M|60.32,51.55|
 F Wintergarde Keep |QID|12325| |N|Fly back to Wintergarde Keep.|
 F Thorson's Post|QID|12325| |N|At the Gryphon Landing Site, right-click one of the Winterguard Gryphons, this will take you to Thorson's Post.|M|77.13,49.62|
 T Into Hostile Territory |QID|12325| |N|To Duke August Foehammer.|M|89.7,46.4|
@@ -373,7 +373,7 @@ A Shaved Ice |QID|12045|M|54.7,23.2|N|From Zivlix.|
 A Nozzlerust Defense |QID|12043|M|54.5,23.6|N|From Narf.|
 
 R Fordragon Hold |QID|12474| |N|Ride west and then south to Fordragon Hold.|M|43.00,29.00|
-f Fordragon Hold |QID|12474| |N|Get the new flight path.|M|39.5,25.9|
+; f Fordragon Hold |QID|12474| |N|Get the new flight path.|M|39.5,25.9|
 
 T To Fordragon Hold! |QID|12474| |N|Follow the path west towards the highest tower, there you'll find Highlord Bolvar Fordragon.|M|37.81,23.4|
 A Audience With The Dragon Queen |QID|12495|M|37.8,23.4|N|From Highlord Bolvar Fordragon.|

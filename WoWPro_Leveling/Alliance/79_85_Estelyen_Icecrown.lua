@@ -16,7 +16,7 @@ A Honor Above All Else |QID|13036| |M|87.5,75.9|N|Highlord Tirion Fordring|
 T Honor Above All Else |QID|13036| |M|87.5,75.9|N|Crusade Commander Entari|
 A Scourge Tactics |QID|13008| |M|87.1,75.9|N|Crusade Commander Entari|
 A Curing The Incurable |QID|13040| |M|86.9,76.6|N|Father Gustav|
-f The Argent Vanguard |M|86.9,76.6|N|Father Gustav|
+; f The Argent Vanguard |M|86.9,76.6|N|Father Gustav|
 A Defending The Vanguard |QID|13039| |M|86.1,75.8|N|Crusader Lord Dalfors|
 
 C Scourge Tactics |QID|13008| |M|85,75|N|Free 8 Webbed Crusaders by attacking the webs that hold them|
@@ -55,7 +55,7 @@ C The Scourgestone |QID|13122| |M|79,65|N|All the undead in Scourgeholme drop [S
 C The Stone That Started A Revolution |QID|13130| |M|70,61;80,68|N|Collect 10 [Crystalline Heartwood] and 10 Ancient Elven Masonry from Crystalsong Forest and| |Z|Crystalsong Forest|
 C It Could Kill Us All |QID|13135| |M|70,61|N|Kill Mobs in the Unbound Thicket until you have 8 Crystallized Energy| |Z|Crystalsong Forest|
 
-f Windrunner's Overlook |M|72,81| |Z|Crystalsong Forest|
+; f Windrunner's Overlook |M|72,81| |Z|Crystalsong Forest|
 F The Argent Vanguard |M|72,81|
 
 T The Stone That Started A Revolution |QID|13130| |M|83.1,73.0|N|Crusade Architect Silas|
@@ -81,7 +81,7 @@ A The Crusaders' Pinnacle |QID|13157| |M|82.9,72.8|N|Father Gustav|
 T The Crusaders' Pinnacle |QID|13157| |M|80,72|N|Highlord Tirion Fordring|
 A A Tale of Valor |QID|13068| |M|80,72|N|Highlord Tirion Fordring|
 h Crusader's Pinnacle |M|80,73|
-f Crusader's Pinnacle |M|79,72|
+; f Crusader's Pinnacle |M|79,72|
 A The Skybreaker |QID|13225| |M|79.5,72.8|N|Marshal Ivalius|
 
 T The Skybreaker |QID|13225| |M|61,46|N|High Captain Justin Bartlett in the middle room on The Skybreaker|
@@ -221,7 +221,7 @@ C Retest Now |QID|13321| |U|44304| |M|49.0,34.3|N|Throw the [Writhing Mass] into
 T The Shadow Vault |QID|12898| |M|42.9,25.0|N|Baron Sliver|
 A The Duke |QID|12938| |M|42.9,25.0|N|Baron Sliver|
 A Blackwatch |QID|13106| |M|42.9,25.0|N|Baron Sliver|
-f The Shadow Vault |M|44,24|
+; f The Shadow Vault |M|44,24|
 T The Duke |QID|12938| |M|44.6,20.5|N|Duke Lankral|
 A Honor Challenge |QID|12939| |M|44.6,20.5|N|Duke Lankral|
 A Eliminate the Competition |QID|12955| |M|43.6,25.1|N|The Leaper|
@@ -317,7 +317,7 @@ T Ebon Blade Prisoners |QID|12982| |M|43.2,21.1|N|Vaelen the Flayed|
 T Vandalizing Jotunheim |QID|13084| |M|44.6,20.5|N|Duke Lankral|
 A To the Rise with all Due Haste! |QID|12806| |M|42.9,25.0|N|Baron Sliver|
 
-f Get the Flight Point |M|19,48|
+; f Get the Flight Point |M|19,48|
 T To the Rise with all Due Haste! |QID|12806| |M|19.6,48.1|N|Lord-Commander Arete|
 A The Story Thus Far... |QID|12807| |M|19.6,48.1|N|Lord-Commander Arete|
 C The Story Thus Far... |QID|12807| |M|19.6,48.1|N|Speak to Lord-Commander Arete and hear his tale|

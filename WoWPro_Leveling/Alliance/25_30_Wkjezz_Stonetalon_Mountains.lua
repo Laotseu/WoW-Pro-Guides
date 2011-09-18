@@ -75,7 +75,7 @@ T Commandeer That Balloon!|QID|25652|M|59.54,56.92|N|To Lord Fallowmere.|
 A Free Our Sisters|QID|25662|M|59.54,56.92|N|From Lord Fallowmere.|
 A Just Ask Alice|QID|25673|M|58.53,55.25|N|From Alice.|
 
-f Windshear Hold|QID|25673|M|58.80,54.30|N|At Allana Swiftglide.|
+; f Windshear Hold|QID|25673|M|58.80,54.30|N|At Allana Swiftglide.|
 
 l Mechanized Fire|QID|25673|L|55221|M|63.09,56.70|N|Loot the Mechanised Fire at the top of the large shredder.|
 C Free Our Sisters|QID|25662|S|M|65.92,54.00|N|Kill the orcs for their keys and free the trapped Sisters.|
@@ -126,7 +126,7 @@ R Northwatch Expedition Base Camp|QID|25765|M|60.60,70.84|N|Head to the waypoint
 T Tell 'Em Koko Sent You|QID|25765|M|71.07,79.70|N|To Force Commander Valen.|
 A The Deep Reaches|QID|25793|M|71.07,79.70|N|From Force Commander Valen.|
 
-f Northwatch Expedition Base Camp|QID|25793|M|70.90,80.57|N|At Kaluna Songflight.|
+; f Northwatch Expedition Base Camp|QID|25793|M|70.90,80.57|N|At Kaluna Songflight.|
 
 T The Deep Reaches|QID|25793|M|72.05,75.94|N|To Steeltoe McGee.|
 A Shuttin Her Down|QID|25811|M|72.05,75.94|N|From Steeltoe McGee.|
@@ -186,7 +186,7 @@ T Dances with Grimtotem|QID|25851|M|71.08,79.73|N|To Force Commander Valen.|
 A All's Clear|QID|25852|M|71.08,79.73|N|From Force Commander Valen. If you do not plan on doing Southern Barrens, Abandon this quest. If you are seeking Stonetalon’s Quest achievement, Keep this quest.|
 
 F Windshear Hold|QID|25768|N|Fly to Windshear Hold.|M|70.92,80.58|
-f Mirkfallon Post|QID|25768|M|48.61,51.54|N|At Fiora Moonsoar.|
+; f Mirkfallon Post|QID|25768|M|48.61,51.54|N|At Fiora Moonsoar.|
 
 T Bombs Away: Mirkfallon Post!|QID|25768|M|48.36,51.85|N|To Scout Commander Barus.|
 A Gnome on the Inside|QID|25875|M|48.36,51.85|N|From Scout Commander Barus.|
@@ -206,7 +206,7 @@ T Schemin' That Sabotage|QID|25878|M|48.45,51.91|N|To Scout Mistress Yvonia.|
 T No Time for Goodbyes!|QID|25877|M|48.41,51.89|N|To Scout Commander Barus.|
 A Warn Master Thal'darah|QID|25880|M|48.34,51.77|N|From Scout Commander Barus.|
 
-f Thal'darah Overlook|QID|25880|N|Get this flight path.|
+; f Thal'darah Overlook|QID|25880|N|Get this flight path.|
 
 T Warn Master Thal'darah|QID|25880|M|39.96,33.53|N|To Master Thal'darah.|
 A Save the Children!|QID|25889|M|39.95,33.50|N|From Master Thal'darah.|
@@ -236,7 +236,7 @@ A Ascending the Vale|QID|25930|M|33.12,59.69|N|From Hierophant Malyk.|
 A World First: Gnomegen|QID|25934|M|33.03,59.58|N|From Salsbury the "Help".|
 A Hungry Pups|QID|25935|M|32.25,60.12|N|From Houndmaster Jonathan.|
 
-f Farwatcher's Glen|QID|25935|M|31.95,61.79|N|At Ceyora.|
+; f Farwatcher's Glen|QID|25935|M|31.95,61.79|N|At Ceyora.|
 h Farwatcher's Glen|QID|25935|M|31.50,60.62|N|At Innkeeper Bernice.|
 
 R Carefull shimmy down the mountain.|QID|25934|CC|U|56221|M|31.01,62.13;30.23,63.15;30.06,64.98|

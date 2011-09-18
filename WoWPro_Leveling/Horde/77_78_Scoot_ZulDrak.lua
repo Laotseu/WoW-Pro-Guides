@@ -28,7 +28,7 @@ N Amphitheater of Anguish |QID|12948|N|While questing look for a group for the A
 
 A Into the Breach! |QID|12789| |N|Sargent Riannah is next to the Flightmaster.| |M|32.05,74.50|
 T Into the Breach! |QID|12789| |N|Sargent Riannah is next to the Flightmaster.| |M|32.05,74.50|
-f Light's Breach|QID|12859|M|32.2,74.5|
+; f Light's Breach|QID|12859|M|32.2,74.5|
 
 A This Just In: Fire Still Hot! |QID|12859| |M|32.0,75.6|
 
@@ -73,7 +73,7 @@ C Gymer's Salvation |QID|12914| |N|Now head to the area around Ebon Watch and ki
 T The Ebon Watch |QID|12884| |M|14.1,73.8|
 
 A Kickin' Nass and Takin' Manes |QID|12630| |M|14.1,73.8|
-f Ebon Watch |QID|12630| |M|14.1,73.6|
+; f Ebon Watch |QID|12630| |M|14.1,73.6|
 C Kickin' Nass and Takin' Manes |QID|12630| |N|Kill the trolls, put the boot to Nass!| |U|38659|
 T Kickin' Nass and Takin' Manes |QID|12630| |N|Back to Ebon Watch| |M|14.1,73.8|
 
@@ -181,7 +181,7 @@ A Defend the Stand |QID|12503| |M|39.5,66.9|
 
 A Parachutes for the Argent Crusade |QID|12740| |M|39.5,66.9|
 
-f The Argent Stand |QID|12505| |M|41.5,64.5|
+; f The Argent Stand |QID|12505| |M|41.5,64.5|
 
 C Parachutes for the Argent Crusade |QID|12740| |N|Throw parachutes to the Argent fighters out in the battlefield.| |U|39615|
 C Defend the Stand |QID|12503| |N|Kill anymore you need.|
@@ -314,7 +314,7 @@ A The Blessing of Zim'Torga |QID|12615| |M|59.5,58.0|
 T The Blessing of Zim'Torga |QID|12615| |N|Big statue in the middle.| |M|59.5,57.2|
 
 A The Leaders at Jin'Alai |QID|12622| |M|59.2,56.3|
-f Zim'Torga |QID|12628| |M|60.0,56.7|
+; f Zim'Torga |QID|12628| |M|60.0,56.7|
 C Breaking Through Jin'Alai |QID|12627| |N|Just South, Click on the cauldrons. If you get a yell in chat, find the "boss" and kill him.| |M|57.62,61.72;58.78,62.71;57.20,65.34;55.70,64.31|
 C The Leaders at Jin'Alai |QID|12622| |N|Kill Trolls. Pay attention to you chat log, when the "bosses" yell, find him by his Totem. The items can be looted by everyone, so don't worry if someone else tags the mob first. Just don't forget to loot, they spawn in order, so it could be awhile if you miss one.|
 T Breaking Through Jin'Alai |QID|12627| |N|Back to Zim'Torga.| |M|59.51,57.99|
@@ -437,7 +437,7 @@ A For Posterity |QID|13098| |M|70.06,20.99|
 A One of a Kind |QID|13111| |M|70.06,20.99|
 
 A Eggs for Dubra'Jin |QID|13556| |M|70.0,21.0|
-f Dubra'Jin |QID|13556| |N|Get the Flightpath.| |M|70.41,23.21|
+; f Dubra'Jin |QID|13556| |N|Get the Flightpath.| |M|70.41,23.21|
 C Eggs for Dubra'Jin |QID|13556| |N|Collect the eggs on the ground in the small wooded areas. They are hard to see, so look everywhere. you can kill the Raptors if you want to, but the drop rate isn't very good.|
 T Eggs for Dubra'Jin |QID|13556| |N|Turn in to Ha'wana.| |M|70.06,20.99|
 T Rampage |QID|12721| |N|Back to Zim'Torga.| |M|59.51,57.99

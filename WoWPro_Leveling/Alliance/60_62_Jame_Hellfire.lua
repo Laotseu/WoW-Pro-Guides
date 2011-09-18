@@ -94,7 +94,7 @@ A In Search of Sedai |QID|9390|M|23.1,40.3|N|From Anchorite Obadei.|
 A Cruel Taskmasters |QID|9399|M|23.1,40.3|N|From Ikan.|
 A The Rock Flayer Matriarch |QID|9490|M|23.1,40.3|N|From Ikan.|
 A The Pools of Aggonar|QID|9426|M|23.4,36.5|N|From Amaan the Wise.|
-f Temple of Telhamat|QID|9390|N|Get the flight path.|M|25.20,37.20|
+; f Temple of Telhamat|QID|9390|N|Get the flight path.|M|25.20,37.20|
 T In Search of Sedai|QID|9390|M|26.89,37.42|N|To Sedai's Corpse.|
 A Return to Obadei|QID|9423|M|26.89,37.42|N|From Sedai's Corpse.|
 T Return to Obadei|QID|9423|M|23.1,40.3|N|To Anchorite Obadei.|
@@ -148,7 +148,7 @@ T Mission: The Murketh and Shaadraz Gateways |QID|10146|M|71.4,62.7|N|To Forward
 A Shatter Point |QID|10340|M|71.4,62.7|N|Foward Commander Kingston.|
 
 F Shatter Point |QID|10340|N|Talk to Wing Commander Dabir'ee and have him send you to Shatter Point. |M|71.40,62.50|
-f Shatter Point |QID|10340|N|Get the flight-path.|M|78.4,34.9|
+; f Shatter Point |QID|10340|N|Get the flight-path.|M|78.4,34.9|
 T Shatter Point |QID|10340|M|78.4,34.9|N|To Runetog Wildhammer.|
 A Wing Commander Gryphongar |QID|10344|M|78.4,34.9|N|From Runetog Wildhammer.|
 T Wing Commander Gryphongar |QID|10344|M|79.3,33.9|N|To Wing Commander Gryphongar.|

@@ -88,7 +88,7 @@ T Reinforcements From Theramore|QID|26687|O|M|68.21,48.58|N|To Captain Garran Vi
 T They Call Him Smiling Jim|QID|27251|M|68.21,48.58|N|To Captain Garran Vimes.|
 A Inspecting the Ruins|QID|27249|M|68.21,48.58|N|From Captain Garran Vimes.|
 
-f Theramore Isle|QID|27210|M|67.49,51.33|N|At Baldruc.|
+; f Theramore Isle|QID|27210|M|67.49,51.33|N|At Baldruc.|
 A This Old Lighthouse|QID|27216|M|68.30,51.84|N|From Sergeant Amelyn.|
 T Hero's Call: Dustwallow Marsh! |QID|28552|M|68.36,51.02|O|N|To Calia Hastings|
 A Traitors Among Us|QID|27210|M|68.33,51.04|N|From Calia Hastings.|
@@ -276,7 +276,7 @@ T Corrosion Prevention|QID|27347|M|53.55,56.91|N|To Moxie Steelgrille.|
 T Secure the Cargo!|QID|27348|M|53.55,56.91|N|To Moxie Steelgrille.|
 
 A Delivery for Drazzit|QID|11208|M|53.55,56.91|N|From Moxie Steelgrille.|
-f Mudsprocket|QID|11208|M|42.88,72.41|N|At Dyslix Silvergrub.|
+; f Mudsprocket|QID|11208|M|42.88,72.41|N|At Dyslix Silvergrub.|
 T Mission to Mudsprocket|QID|27248|M|42.25,72.92|N|To Drazzit Dripvalve.|
 T Help for Mudsprocket|QID|11211|M|42.25,72.92|N|To Drazzit Dripvalve.|
 T Delivery for Drazzit|QID|11208|M|42.25,72.92|N|To Drazzit Dripvalve.|

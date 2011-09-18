@@ -66,7 +66,7 @@ T Venture Co. Misadventure |QID|12524|N|From Debaar.|M|27.21,59.86|
 
 A Wipe That Grin Off His Face |QID|12525|N|From Debaar.|M|27.2,59.9|
 T Have a Part, Give a Part |QID|12523|N|To Weslex Quickwrench. Back around the broken boat.|M|25.38,58.35|
-f Nesingwary Base Camp|QID|12696|N|At The Spirit of Gnomeregan.|
+; f Nesingwary Base Camp|QID|12696|N|At The Spirit of Gnomeregan.|
 A Aerial Surveillance |QID|12696|N|From Professor Calvert.|M|25.4,58.5|
 C Wipe That Grin Off His Face |QID|12525|N|Go to the platform in the dig site.|M|35.72,50.24|
 T Wipe That Grin Off His Face |QID|12525|N|To Debaar, Nesingwary Base Camp.|M|27.21,59.86|
@@ -146,7 +146,7 @@ C The Taste Test |QID|12645|N|Give a sample to Tamara at Lakeside Landing.|U|386
 T Lakeside Landing |QID|12651|N|To Tamara Wobblesprocket.|
 
 A The Part-time Hunter |QID|12654|N|From Tamara Wobblesprocket.|M|50.5,62.1|
-f Lakeside Landing |QID|12671|N|At Marvin Wobblesprocket.|M|50.12,61.39|
+; f Lakeside Landing |QID|12671|N|At Marvin Wobblesprocket.|M|50.12,61.39|
 T Aerial Surveillance |QID|12696|N|To Pilot Vic.|M|50.0,61.5|
 
 A An Embarassing Incident |QID|12699|N|From Pilot Vic.|M|50.0,61.5|

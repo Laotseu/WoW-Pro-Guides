@@ -339,7 +339,7 @@ C The Eye of All Storms|QID|13588|M|44.27,54.20|N|Jump on Thessera's back, use t
 T The Eye of All Storms|QID|13588|M|43.63,53.41|N|To Malfurion Stormrage.|
 A Mounting the Offensive|QID|13902|M|43.63,53.41|N|From Malfurion Stormrage.|
 
-f Grove of the Ancients|QID|13902|M|44.39,75.39|N|At Delanea.|
+; f Grove of the Ancients|QID|13902|M|44.39,75.39|N|At Delanea.|
 T Mounting the Offensive|QID|13902|M|45.25,75.12|N|To Balren of the Claw.|
 A Leave No Tracks|QID|13892|M|45.25,75.12|N|From Balren of the Claw.|
 A What's Happening to the Blackwood Furbolg?|QID|13525|M|45.19,75.16|N|From Foriel Broadleaf.|
