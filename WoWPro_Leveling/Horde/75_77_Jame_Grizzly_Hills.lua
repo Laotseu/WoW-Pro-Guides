@@ -39,7 +39,7 @@ A A Show of Strength|QID|12257|M|21.0,64.1|
 A The Flamebinders' Secrets|QID|12256|M|21.0,64.1|
 A Gray Worg Hides|QID|12175|M|22.0,65.1|
 A Supplemental Income|QID|12436|M|22.6,66.1|
-f Conquest Hold|QID|12175|M|22.0,64.5|
+; f Conquest Hold|QID|12175|M|22.0,64.5|
 
 C Gray Worg Hides|QID|12175|N|Kill Graymist Hunters.|S|
 A Blackriver Brawl|QID|12170|O|N|Optional PvP Daily quest. Part of the Grizzled Veteran achievement.|M|26.5,65.7|
@@ -189,7 +189,7 @@ T Onward to Camp Oneqwah|QID|12451|N|Head east to Camp Oneqwah.|M|65.1,47.7|
 A An Expedient Ally|QID|12074|M|65.1,47.7|
 A The Horse Hollerer|QID|12415|M|65.0,47.8|
 A The Unexpected 'Guest'|QID|12195|M|65.2,47.5|
-f Camp Oneqwah|QID|12279|M|65.0,46.9|
+; f Camp Oneqwah|QID|12279|M|65.0,46.9|
 
 C The Unexpected 'Guest'|QID|12195|N|Kill Silvercoat Stags.|S|
 A A Bear of an Appetite|QID|12279|M|69.1,40.1|

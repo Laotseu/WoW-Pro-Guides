@@ -58,7 +58,7 @@ T Dask "The Flask" Gobfizzle|QID|26825|M|55.33,42.01|N|To Dask "The Flask" Gobfi
 A Too Big For His Britches|QID|26823|PRE|26825|M|55.33,42.01|N|From Dask "The Flask" Gobfizzle.|
 A Good-Fer-Nothin' Slither-Dogs|QID|26822|RANK|2|M|54.76,41.86|N|From Goris.|
 
-f Explorers' League Digsite|QID|26822|M|55.65,41.26|N|At Colin Swifthammer.|
+; f Explorers' League Digsite|QID|26822|M|55.65,41.26|N|At Colin Swifthammer.|
 
 C Good-Fer-Nothin' Slither-Dogs|QID|26822|S|M|44.50,19.02|N|Kill Stranglethorn Basilisks on your way to Ironjaw Behemoth.|
 C Too Big For His Britches|QID|26823|M|66.13,27.50|N|Head inside the cave, kill and loot an Ironjaw Behemoth.|
@@ -148,7 +148,7 @@ T Airwyn Bantamflax|QID|26821|M|42.49,73.15|N|To Airwyn Bantamflax.|
 
 h Booty Bay|QID|26593|M|40.93,73.79|N|At Innkeeper Skindle.|
 
-f Booty Bay|QID|26593|NC|M|41.64,74.47|N|Get the Booty Bay flight path.|
+; f Booty Bay|QID|26593|NC|M|41.64,74.47|N|Get the Booty Bay flight path.|
 
 T The Bloodsail Buccaneers|QID|26609|M|41.35,61.16|N|The turn-in is the Bloosail Correspondence ontop of a barrel near the water.|
 A Bloodsail Treachery|QID|26610|PRE|26609|M|41.35,61.16|N|From the Bloosail Correspondence.|

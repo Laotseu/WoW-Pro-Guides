@@ -43,7 +43,7 @@ C Blood Oath of the Horde |QID|11983| |N|Talk to the Taunka'le Refugees and go t
 T Blood Oath of the Horde |QID|11983|M|12.8,48.5|
 A Agmar's Hammer |QID|12008|M|12.8,48.5|PRE|11983|
 
-f Agarm's Hammer |QID|12034|N|It's east at .|M|37,48|
+; f Agarm's Hammer |QID|12034|N|It's east at .|M|37,48|
 T Agmar's Hammer |QID|12008|M|38.1,46.3|
 A Victory Nears... |QID|12034|M|38.1,46.3|
 A Rifle the Bodies |QID|11999|M|38.1,46.2|
@@ -252,9 +252,9 @@ T Seeds of the Lashers |QID|12458| |N|Head back to Wyrmrest Temple and get Tario
 A That Which Creates Can Also Destroy |QID|12459|M|59.6,54.4|
 T Speak with your Ambassador |QID|12767| |N|Talk to Torastrasza and get sent back down, then talk to Golluck Rockfist (he patrols the area).|M|59,56|
 A Report to the Ruby Dragonshrine |QID|12461|M|58.0,55.4|PRE|12767|
-f Wyrmrest Temple |QID|12209|M|60,52|
+; f Wyrmrest Temple |QID|12209|M|60,52|
 
-f Venomspite |QID|12188|M|76.5,62.2|N|If you didn't follow Jame's Howling Fjord guide, we have to do a bit of catching up.|
+; f Venomspite |QID|12188|M|76.5,62.2|N|If you didn't follow Jame's Howling Fjord guide, we have to do a bit of catching up.|
 T Imbeciles Abound! |QID|12189|M|77.7,62.8|O|
 A The Forsaken Blight and You: How Not to Die |QID|12188|M|77.7,62.8|PRE|12189|
 A Funding the War Effort |QID|12303|M|76,63.2|

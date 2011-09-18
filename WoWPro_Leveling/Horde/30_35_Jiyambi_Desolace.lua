@@ -47,7 +47,7 @@ T My Time Has Passed|QID|14184|M|54.81,8.65;44.63,29.52|N|Talk to the dragonhawk
 A Avenge Furien!|QID|14188|PRE|14184|M|44.63,29.52|N|From Cerelia.|
 T Avenge Furien!|QID|14188|M|44.85,29.53|N|To Sorrem.|
 A Translation|QID|14189|PRE|14188|M|44.85,29.53|N|From Sorrem.|
-f Furien's Post|QID|14189|M|44.31,29.66|N|At Narimar.|
+; f Furien's Post|QID|14189|M|44.31,29.66|N|At Narimar.|
 
 T Translation|QID|14189|M|44.31,29.66;69.30,29.30|N|Take the dragonhawk by talking to Narimar, the flightmaster. Turn-in to the tablet.|
 A Furien's Footsteps|QID|14191|PRE|14189|M|69.30,29.30|N|From the tablet.|
@@ -85,7 +85,7 @@ A Peace of Mind|QID|14223|PRE|14198|M|44.86,29.52|N|From Sorrem.|
 R Ethel Rethor|QID|14255|M|41.19,29.03;38.83,26.98|
 T Ethel Rethor|QID|14255|M|38.83,26.98|N|To Cenarion Researcher Korrah.|
 A The Emerging Threat|QID|14256|PRE|14255|M|38.83,26.98|N|From Cenarion Researcher Korrah.|
-f Ethel Rethor|QID|14256|M|39.03,27.00|N|At Korrah's Hippogryph.|
+; f Ethel Rethor|QID|14256|M|39.03,27.00|N|At Korrah's Hippogryph.|
 C The Emerging Threat|NC|QID|14256|M|38.82,27.03|N|Speak with Researcher Korrah to get on the hippogryph.|
 T The Emerging Threat|QID|14256|M|38.82,27.03|N|To Cenarion Researcher Korrah.|
 A Slitherblade Slaughter|QID|14257|PRE|14256|M|38.82,27.03|N|From Cenarion Researcher Korrah.|
@@ -135,7 +135,7 @@ T Putting Their Heads Together|QID|14227|M|44.84,29.59|N|To Sorrem. Congrats on 
 R Karnum's Glade|QID|14302|M|44.26,34.51;53.19,37.08;49.64,48.47;57.44,47.71|N|Follow the road to Karnum's Glade.|
 T Official Assessment|QID|14302|M|57.44,47.71|N|To Karnum Marshweaver.|
 A Stubborn Winds|QID|14307|M|57.44,47.71|N|From Karnum Marshweaver.|
-f Karnum's Glade|QID|14307|M|57.72,49.74|N|At Lastrea Greengale.|
+; f Karnum's Glade|QID|14307|M|57.72,49.74|N|At Lastrea Greengale.|
 h Karnum's Glade|QID|14307|M|56.72,50.01|N|If you'd like, set your hearth with Innkeeper Dessina.|
 A A Time to Reap|QID|14305|M|58.55,48.70|N|From Botanist Ferrah.|
 A Pulling Weeds|QID|14306|M|58.55,48.70|N|From Botanist Ferrah.|
@@ -202,7 +202,7 @@ T Delicate Negotiations|QID|14318|M|71.69,45.56|N|To Khan Kammah. Congrats on a 
 A Will Work For Food|QID|14325|M|71.69,45.56|N|From Khan Kammah.|
 C Will Work For Food|QID|14325|M|63.61,36.84|N|The basilisks can be found to the west.|
 
-f Thunk's Abode|RANK|2|QID|14394|M|70.60,32.86|N|At Thunk's Wyvern.|
+; f Thunk's Abode|RANK|2|QID|14394|M|70.60,32.86|N|At Thunk's Wyvern.|
 A Early Adoption|RANK|2|QID|14246|M|70.35,32.88|N|From Cenarion Embassador Thunk.|
 A Stubborn Lands|RANK|2|QID|14247|M|70.35,32.88|N|From Cenarion Embassador Thunk.|
 T Stubborn Lands|RANK|2|QID|14247|M|69.36,21.33|
@@ -257,7 +257,7 @@ R Shadowprey Village|RANK|2|QID|14337|M|27.14,75.81;22.71,72.02|
 T Shadowprey Village|RANK|2|QID|14337|M|22.71,72.02|N|To Mai'Lahii.|
 A Blubbergut|RANK|2|QID|14334|M|22.71,72.02|N|From Mai'Lahii.|
 A Fish in a Bucket|RANK|3|QID|5421|M|22.36,73.18|N|From Jinar'Zillen.|
-f Shadowprey Village|RANK|2|QID|5421|M|21.58,74.01|N|At Thalon.|
+; f Shadowprey Village|RANK|2|QID|5421|M|21.58,74.01|N|At Thalon.|
 C Fish in a Bucket|RANK|3|NC|QID|5421|M|19.74,85.58|S|N|Loot the cages on the bottom of the sea. The bubbly fissures will allow you to regain you breath.|
 C Blubbergut|RANK|2|QID|14334|M|20.01,72.90|N|Blubbergut is a huge orca. He patrols the area.|
 C Fish in a Bucket|RANK|3|NC|QID|5421|M|19.74,85.58|US|N|Loot the cages on the bottom of the sea. The bubbly fissures will allow you to regain you breath.|

@@ -8,7 +8,7 @@
 -- Who: STrek
 -- Log: added code:
 --	C War is Hell |QID|11270|U|33278|US|N|Burn the Forsaken and Alliance corpses with the Burning Torch.|
---	
+--
 --	so sticky gets unsticked and quest is completed before the 'turn in' step is presented
 
 -- URL: http://wow-pro.com/node/3288/revisions/23826/view
@@ -162,7 +162,7 @@ T Mimicking Nature's Call |QID|11281| |N|Back at Camp Winterhoof.|M|49.3,12.0|
 T The Book of Runes |QID|11350|M|49.2,12.2|
 A Mastering the Runes |QID|11351|
 T March of the Giants |QID|11365|M|48.1,10.5|
-A The Lodestone |QID|11366|
+A The Lodestone |QID|11366|PRE|11365|
 A Skorn Must Fall! |QID|11256|M|48.1,10.8|
 
 R Skorn |QID|11258|N|Southwest.|M|44,26|
@@ -185,9 +185,9 @@ N Target the Southwest Tower |QID|11259|QO|Southwest Tower Targeted: 1/1|U|33344
 C Gruesome, But Necessary |QID|11257|U|33342|S|N|When you kill a Vrykul, use The Brave's Machete on the corpse.|US|
 
 T Gruesome, But Necessary |QID|11257|U|33340|N|Summon the Brave if he's died or disappeared, then turn it in.|
-T Burn Skorn, Burn! |QID|11258|
-T Towers of Certain Doom |QID|11259|
-A The Conqueror of Skorn! |QID|11261|
+T Burn Skorn, Burn! |QID|11258|U|33340|
+T Towers of Certain Doom |QID|11259|U|33340|
+A The Conqueror of Skorn! |QID|11261|U|33340|
 
 C The Fallen Sisters |QID|11314|U|33606|N|In the Vibrant Glade to the east. Beat a Chill Nymph down to below 30% HP, then use Lurielle's Pendant. Rinse and repeat.|M|51,26|
 C Wild Vines |QID|11315|
@@ -207,12 +207,12 @@ T Spawn of the Twisted Glade |QID|11316| |N|Head back to the Frozen Glade.|M|61.
 T Seeds of the Blacksouled Keepers |QID|11319|
 A Keeper Witherleaf |QID|11428|
 
-C Keeper Witherleaf |QID|11428| |N|He patrols around the Twisted Glade.|M|55,19|
+C Keeper Witherleaf |QID|11428| |T|Keeper Witherleaf|N|He patrols around the Twisted Glade.|M|55,19|
 
 T Mastering the Runes |QID|11351| |N|Back at Camp Winterhoof.|M|49.2,12.2|
 A The Rune of Command |QID|11352|
 T The Lodestone |QID|11366|M|48.1,10.5|
-A Demolishing Megalith |QID|11367|
+A Demolishing Megalith |QID|11367|PRE|11366|
 T The Conqueror of Skorn! |QID|11261|M|48.1,10.8|
 A Dealing With Gjalerbron |QID|11263|
 T Stop the Ascension! |QID|11260|
@@ -238,7 +238,7 @@ T Keeper Witherleaf |QID|11428|M|61.5,22.9|
 
 C Hasty Preparations |QID|11271||N|Pick up any feathers you still need on the way.|US|M|72,25|
 
-K Binder Murdis |QID|11352|QO|Binder Murdis slain: 1/1|M|72,25|
+K Binder Murdis |QID|11352|QO|Binder Murdis slain: 1/1|M|72,25|T|Binder Murdis|
 
 C The Rune of Command |QID|11352|U|33796|N|Use the Rune of Command on a Stone Giant, it's non-aggressive, should be just to the northwest.|M|71,23|
 C Demolishing Megalith |QID|11367|N|Use the Stone Giant as a tank.|
@@ -257,12 +257,12 @@ A In Worg's Clothing |QID|11323|
 T In Worg's Clothing |QID|11323| |N|Fight your way through the Rivenwood, open the Riven Widow Cocoons when you see them; you'll be going through here several times, so don't worry about finishing that now. Head to the cave, then use the Worg Disguise and turn the quest in inside the cave.| |U|33618|M|29.64,5.72|
 A Brother Betrayers |QID|11415|
 
-K Bjomolf |QID|11415|QO|Bjomolf slain: 1/1|U|33618|N|Bjomolf is southwest.|M|27,21|
-K Varg |QID|11415|QO|Varg slain: 1/1|U|33618|N|Varg is then east.|M|34,29|
+K Bjomolf |QID|11415|QO|Bjomolf slain: 1/1|U|33618|T|Bjomolf|N|Bjomolf is southwest.|M|27,21|
+K Varg |QID|11415|QO|Varg slain: 1/1|U|33618|T|Varg|N|Varg is then east.|M|34,29|
 C Rivenwood Captives |QID|11296| |N|In the Rivenwood, open the Riven Widow Cocoons until you complete the quest.|M|29.64,17.04|
 
 R Gjalerbron |QID|11266|N|North.|M|35,15|
-C Of Keys and Cages |QID|11265|N|You want to kill any Vrykul, and you'll get Cage Keys. Use them on the cages to free the prisoners. The rarer Large Gjalerbron Cage Key is used on the Large Gjalerbron Cage at the center of Gjalerbron, it will spawn up to 5 prisoners at a time.|S|
+C Of  Keys and Cages |QID|11265|N|You want to kill any Vrykul, and you'll get Cage Keys. Use them on the cages to free the prisoners. The rarer Large Gjalerbron Cage Key is used on the Large Gjalerbron Cage at the center of Gjalerbron, it will spawn up to 5 prisoners at a time.|S|
 
 C Dealing With Gjalerbron |QID|11263| |N|Kill the remaining Vrykul you need for this quest. |M|34.68,15.28|
 
@@ -273,8 +273,7 @@ C Of Keys and Cages |QID|11265|N|Get any prisoners you still need.|US|
 T Brother Betrayers |QID|11415|U|33618|N|Back at the wolf cave, to the northwest.|M|29.64,5.72|
 A Eyes of the Eagle |QID|11417|
 
-K Scourge |QID|11398|L|33962|N|Head to the beach. Kill them until you get a Scourge Device.|M|26,20|
-A It's a Scourge Device |QID|11398| |U|33962|
+A It's a Scourge Device |QID|11398| |U|33962|N|Head to the beach. Kill them until you get a Scourge Device.|M|26,20|
 A Trident of the Son |QID|11422| |N|From the murloc Old Icefin.|M|20,22|
 
 T It's a Scourge Device |QID|11398| |N|Back the Apothecary Camp.|M|26.2,24.5|
@@ -291,16 +290,17 @@ A Sleeping Giants |QID|11433|M|48.4,11.0|
 
 C Eyes of the Eagle |QID|11417| |N|Head to the bridge west of Skorn at (38.57,35.49), there is a path going down towards the river to the right of the bridge. Go toward the waterfall, you'll see Talonshrike's Egg. Right click the egg, and kill Talonshrike.|M|38.57,35.49|
 
+C What's in That Brew? |QID|11298|M|37.68,36.0|S|
 C Brains! Brains! Brains! |QID|11301|U|33554|N|Head into Whisper Gulch, just keep going west and you'll see another narrow path going down. Kill the Deranged Explorers and use the Bonesaw on them. (37.68,36.0)|
-C What's in That Brew? |QID|11298|M|37.68,36.0|
+C What's in That Brew? |QID|11298|M|37.68,36.0|US|
 
-C Trident of the Son |QID|11422| |N|Ride west and jump down into the water, once you can get back on land head northwest, Rotgill patrols between the Wrecked Ship at (23,35) and the murloc camp just to the north.|
-
+C And You Thought Murlocs Smelled Bad! |QID|11397|S|
+C Trident of the Son |QID|11422|T|Rotgill| |N|Ride west and jump down into the water, once you can get back on land head northwest, Rotgill patrols between the Wrecked Ship at (23,35) and the murloc camp just to the north.|
 C Bring Down Those Shields |QID|11399|U|33960|N|Head north to the Scourging Crystal at (23,32). Clear around it, then use the Scourging Crystal Controller on it, this'll lower the shield; destroy the crystal. If you have a pet, make sure it's on passive, you need to destroy it yourself to get credit. The second one is northwest at (22,29), and the final one is at (21,24).|
 
 T Trident of the Son |QID|11422|M|19.78,22.23|
 
-C And You Thought Murlocs Smelled Bad! |QID|11397|
+C And You Thought Murlocs Smelled Bad! |QID|11397|US|
 
 T Brains! Brains! Brains! |QID|11301| |N|Back at the Apothecary Camp.|
 T Bring Down Those Shields |QID|11399|
@@ -310,9 +310,9 @@ T What's in That Brew? |QID|11298|
 T Eyes of the Eagle |QID|11417|U|33618|N|Back at (30,6).|M|29.64,5.72|
 A Alpha Worg |QID|11324|
 
-C Alpha Worg |QID|11324|N|Look for Garwal. He patrols between the three points, (27,, (26,12), (28,17). You don't have to be in the Worg disguise.|
+C Alpha Worg |QID|11324|U|33618|T|Garwal|N|Look for Garwal. He patrols between the three points, (27,14), (26,12), (28,17). You don't have to be in the Worg disguise.|M|27.11,14.88|
 
-N Things to do |QID|11264|N|Deathless Watchers and Putrid Wights are kill on sight until you finish the relevant quest, especially the watchers.|
+C The Walking Dead |QID|11268|S|
 
 C Necro Overlord Mezhen |QID|11264| |N|He's on the higher plateau at (38,12). The slope starts at  (38.23,10.80). Pull his adds one at a time then kill him.|M|38,12|
 A The Slumbering King |QID|11453|U|34091|
@@ -325,7 +325,7 @@ K Putrid Wight |QID|11268|QO|Putrid Wight slain: 2/2|N|Until you have 2 kills.|
 K Deathless Watcher |QID|11268|QO|Deathless Watcher slain: 10/10|N|Until you get 10 kills. If you run short (and you probably will), other than the 2 platforms we were just on, there are 2 more much closer to the entrance of Gjalerbron.|
 K Necrolords |QID|11433|L|34083 5|N|Until you have 5 Awakening Rods.| |
 C Sleeping Giants |QID|11433|U|34083|N|Entrance to The Waking Halls is at (35.45,13.14). Use the Awakening Rods on the sleeping Vrykul.|
-C The Walking Dead |QID|11268|
+C The Walking Dead |QID|11268|US|
 
 T Alpha Worg |QID|11324| |N|Back at Steel Gate, (31,24).|M|31.17,24.50|
 T Rivenwood Captives |QID|11296|M|31.26,24.35|
@@ -337,23 +337,60 @@ A The Dead Rise! |QID|11504|N|At the Ancient Lift to the southeast at (40.3,60.3
 T New Agamand |QID|11304|
 A A Tailor-Made Formula |QID|11305|M|53.57,66.37|
 A Give it a Name |QID|12181|
-A Shield Hill |QID|11424|M|55.66,65.27|
+A Shield Hill |QID|11424|M|53.6,65.2|
 A Green Eggs and Whelps |QID|11279|M|53.10,66.90|
-T Give it a Name |QID|12181|
 
 C A Tailor-Made Formula |QID|11305| |N|Thorvald is to the west at (47,68).|M|46.77,68.24|
 
 T A Tailor-Made Formula |QID|11305|M|53.57,66.37|
 A Apply Heat and Stir |QID|11306|M|53.57,66.37|
-C Apply Heat and Stir |QID|11306| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|L|34024|U|34023| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|34024|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33614|L|33615| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
+C Apply Heat and Stir |QID|11306|NC|U|33615|L|33614| |N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
 T Apply Heat and Stir |QID|11306|M|53.57,66.37|
 A Field Test |QID|11307|M|53.57,66.37|
 
-C Field Test |QID|11307|U|33621|N|Head north to Halgrind at (49.56,57.21). Use the Plague Spray on the Vrykuls. Entrance is at (47.84,58.21)|M|49.56,57.21|
+C Field Test |QID|11307|U|33621|N|Head north to Halgrind at (49.56,57.21). Use the Plague Spray on the Vrykuls. Entrance is at (47.84,58.21)|M|47.84,58.21;49.56,57.21|
 
-N Things to do |QID|11279|N|We're going to head to Ember Clutch next, it's at (42,55). You want to look for Proto-Drake Eggs and Use Tillinghast's Plague Canister on them (hotkey the cannister), kill the Whelp that spawns and take the specimen.|
+; N Things to do |QID|11279|N|We're going to head to Ember Clutch next, it's at (42,55). You want to look for Proto-Drake Eggs and Use Tillinghast's Plague Canister on them (hotkey the cannister), kill the Whelp that spawns and take the specimen.|
+C Green Eggs and Whelps |QID|11279|U|33418|N|Use the Plague Canister on the eggs, kill the whelp, loot the specimen.|S|
 C Root Causes |QID|11182| |N|Skeld Drakeson is in the southern building at (41.5,52.3). The Dragonflayer Handlers are all around the area.|
-C Green Eggs and Whelps |QID|11279|U|33418|N|Use the Plague Canister on the eggs, kill the whelp, loot the specimen.|
+C Green Eggs and Whelps |QID|11279|U|33418|N|Use the Plague Canister on the eggs, kill the whelp, loot the specimen.|US|
 T Root Causes |QID|11182|
 
 T Green Eggs and Whelps |QID|11279| |N|Back at New Agamand.|M|53.10,66.90|
@@ -389,6 +426,7 @@ C Parts for the Job |QID|11309| |N|Go kill Shoveltusks if you haven't finished t
 T Shield Hill |QID|11424| |N|Back at New Agamand.|
 T Parts for the Job |QID|11309|
 A Warning: Some Assembly Required |QID|11310|M|53.68,65.22|
+T Give it a Name |QID|12181|
 A To Venomspite! |QID|12182| |N|Make sure you aren't mounted, shapeshifted, or moving when you accept.|
 
 T To Venomspite! |QID|12182|N|If you didn't get flown to Venomspite, abandon To Venomspite!, dismount/unshapeshift/stop moving and reaccept the quest. Don't worry about the destroying the vial warning, it's a provided item.|Z|Dragonblight|
@@ -555,10 +593,10 @@ T Return to Atuik |QID|11572| |N|Take the lift behind Orfus, then ride north to 
 R Moa'ki Harbor |QID|12118|N|Go out onto the docks and take the turtle boat. (23.2,57.7)|M|23.55,57.79|
 
 T Travel to Moa'ki Harbor |QID|12118|Z|Dragonblight|M|47.99,74.89|
-f Moa'ki Harbor|QID|11585|N|(48.5,74)|Z|Dragonblight|M|48.51,74.39|
+; f Moa'ki Harbor|QID|11585|N|(48.5,74)|Z|Dragonblight|M|48.51,74.39|
 R Go to Unu'pe |QID|11585|N|Go out onto the second pier, a turtle boat will come that takes you to Unu'pe. (47.6,49.0)|Z|Dragonblight|M|48.02,78.69|
 
-f Unu'pe|QID|11585|N|(78.5,51.5)|Z|Borean Tundra|M|78.53,51.54|
+; f Unu'pe|QID|11585|N|(78.5,51.5)|Z|Borean Tundra|M|78.53,51.54|
 R Warsong Hold |QID|11585|N|About (43,55). Go north to the road, then follow it and take a left at the D.E.H.T.A camp, then take a right in the red area, and continue west to Warsong Hold.|Z|Borean Tundra|M|41.42,53.71|
 ]]
 end)

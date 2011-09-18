@@ -48,7 +48,7 @@ T The Shadow Vault |QID|12899| |N|Back to Baron Sliver. He has moved to .|M|42.8
 
 A The Duke |QID|12938|
 A Blackwatch |QID|13106|
-f Shadow Vault |QID|12938| |N|Get the Flight Path. |M|43.74,24.30|
+; f Shadow Vault |QID|12938| |N|Get the Flight Path. |M|43.74,24.30|
 T The Duke |QID|12938| |N|At the back of the Shadow Vault .|M|44.66,20.41|
 
 A Honor Challenge |QID|12939|
@@ -137,7 +137,7 @@ T To the Rise with all Due Haste! |QID|12806|
 
 A The Story Thus Far... |QID|12807|
 T The Story Thus Far... |QID|12807| |N|Talk to him to get the story. Turn it in when you're done.|
-f Death's Rise |QID|12810| |N|Get the flight path .|M|19.42,47.78|
+; f Death's Rise |QID|12810| |N|Get the flight path .|M|19.42,47.78|
 
 A Blood in the Water |QID|12810|
 C Blood in the Water |QID|12810| |N|Go to Onslaught Harbor , jump in the water and kill the sharks. They are all around the Harbor, except on the South. Collect their blood in the Gore Bladder.|M|9.28,40.77|
@@ -241,7 +241,7 @@ T Honor Above All Else |QID|13036| |N|Just below at |M|87.06,75.87|
 A Scourge Tactics |QID|13008|
 
 A Curing the Incurable |QID|13040| |N|Father Gustav patrols the infirmary .|M|86.7,76.6|
-f Argent Vanguard |QID|13008| |N|Get the Flight Path in the SE corner .|M|87.76,78.02|
+; f Argent Vanguard |QID|13008| |N|Get the Flight Path in the SE corner .|M|87.76,78.02|
 
 A Defending the Vanguard |QID|13039| |N|Near North front gate. Crusader Lord Dalfors |M|86.08,75.77|
 N Skinning |QID|13070| |N|If you are a Skinner, this is a great place to farm Nerubian Leather, but the Spiders will phase out in a few quests.|
@@ -284,7 +284,7 @@ C The Scourgestone |QID|13122| |N|Keep killing mobs until you're done.|
 F Ruins of Shandaral |QID|13135| |N|Head over to the Ruins of Shandaral in Crystalsong Forest .| |Z|Crystalsong Forest|M|80,62|
 C It Could Kill Us All |QID|13135| |N|Kill mobs for Crystalized Energy. Look around on the ground for Ancient Elven Masonry and Crystalized Heartwood.|
 C The Stone That Started A Revolution |QID|13130| |N|Collect any more Heartwood and Masonry you need.|
-f Sunreaver's Command |QID|13135| |N|Get the Flight Path at Sunreaver's Command. | |Z|Crystalsong Forest|M|78.48,50.24|
+; f Sunreaver's Command |QID|13135| |N|Get the Flight Path at Sunreaver's Command. | |Z|Crystalsong Forest|M|78.48,50.24|
 T It Could Kill Us All |QID|13135| |N|Back to the Valley of Echoes. |M|83.06,72.91|
 T The Stone That Started A Revolution |QID|13130|
 T The Purging Of Scourgeholme |QID|13118|
@@ -308,11 +308,11 @@ A The Crusaders' Pinnacle |QID|13157|
 T The Crusaders' Pinnacle |QID|13157| |N|Highlord Tirion Fordring .|M|79.83,71.79|
 
 A A Tale of Valor |QID|13068|
-f Crusaders' Pinnacle |QID|13068| |N|Get the Flight Path .|M|79.46,72.30|
+; f Crusaders' Pinnacle |QID|13068| |N|Get the Flight Path .|M|79.46,72.30|
 T A Tale of Valor |QID|13068| |N|Crusader Bridenbrad |M|79.85,30.74|
 
 A A Hero Remains |QID|13072|
-f Argent Tournament Grounds |QID|13072| |N|You're close, might as well get the Flight Path .|M|72.63,22.63|
+; f Argent Tournament Grounds |QID|13072| |N|You're close, might as well get the Flight Path .|M|72.63,22.63|
 T A Hero Remains |QID|13072| |N|Back to Highlord Tirion Fordring at Crusaders' Pinnacle . Take the Flight Path if you want.|M|79.83,71.79|
 
 A The Keeper's Favor |QID|13073|

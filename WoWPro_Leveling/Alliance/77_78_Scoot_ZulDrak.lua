@@ -30,7 +30,7 @@ N Amphitheater of Anguish |QID|12948| |N|While questing look for a group for the
 N Amphitheater of Anguish |QID|12948| |N|There is an optional leadin quest from Dalaran's Underbelly for the Amphitheater of Anguish, get that now before going to Light's Breach.|
 A The Champion's Call! |QID|12974|O|Z|Dalaran|M|53.2,48.8|N|In the underbelly in Dalaran, find Shifty Vickers. This breadcrumb quest is not availible if you do ANY of the Amphitheater line and it counts to Loremaster.|
 
-f Light's Breach |QID|12883| |N|Fly to Light's Breach.|Z|Zul'Drak|M|32.05,74.50|
+; f Light's Breach |QID|12883| |N|Fly to Light's Breach.|Z|Zul'Drak|M|32.05,74.50|
 T Into the Breach! |QID|12789| |O| |N|To Sargent Riannah, who is next to the Flightmaster.|M|32.05,74.50|
 
 A Reallocating Resources |QID|12770| |O| |N|From Captain Gryan Stoutmantle.| |Z|Grizzly Hills|M|59.51,26.15|
@@ -443,7 +443,7 @@ A For Posterity |QID|13098| |N|From Chronicler Bah'Kini.|M|70.06,20.99|
 A One of a Kind |QID|13111| |N|From Chronicler Bah'Kini.|M|70.06,20.99|
 
 A Eggs for Dubra'Jin |QID|13556| |N|From Ha'wana.|
-f Dubra'Jin |QID|13556| |N|Get the Flightpath. |M|70.41,23.21|
+; f Dubra'Jin |QID|13556| |N|Get the Flightpath. |M|70.41,23.21|
 C Eggs for Dubra'Jin |QID|13556| |N|Collect the eggs on the ground in the small wooded areas. They are hard to see, so look everywhere. you can kill the Raptors if you want to, but the drop rate isn't very good.|
 T Eggs for Dubra'Jin |QID|13556| |N|Turn in to Ha'wana.|M|70.06,20.99|
 T Rampage |QID|12721| |N|Back to Zim'Torga.|M|59.51,57.99|
