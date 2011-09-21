@@ -400,46 +400,49 @@ A Time for Cleanup |QID|11308|M|53.57,66.37|
 T Time for Cleanup |QID|11308|M|53.67,65.25|
 A Parts for the Job |QID|11309|M|53.67,65.25|
 
-N Things to do |QID|11309|N|Kill Shoveltusks on sight, they're the things that look vaguely like moose.|
+; N Things to do |QID|11309|N|Kill Shoveltusks on sight, they're the things that look vaguely like moose.|
+C Fresh Pound of Flesh |QID|11309|S| |N|Kill Shoveltusks on sight, they're the things that look vaguely like moose.|
 
-N Fengir's Clue |QID|11504|QO|Fengir's Clue: 1/1|N|Fengir's Clue is in a pile of dirt called Mound of Debris at (57.7,77.5).|
-N Rodin's Clue |QID|11504|QO|Rodin's Clue: 1/1|N|Rodin's Clue is to the east in an Unlocked Chest at (59.2,77.0).|
-N Isuldof's Clue |QID|11504|QO|Isuldof's Clue: 1/1|N|Isuldof's Clue is southeast, a Long Tail Feather at (59.4,79.4).|
-N Windan's Clue |QID|11504|QO|Windan's Clue: 1/1|N|Windan's clue, the last of them, is east in a Cannonball at (62.0,80.1).|
-C Shield Hill |QID|11424|M|59.00,78.00|
+C Shield Hill |QID|11424|S|M|59.00,78.00|
+C Fengir's Clue |QID|11504|NC|QO|Fengir's Clue: 1/1|N|Fengir's Clue is in a pile of dirt called Mound of Debris at|M|57.7,77.5|
+C Rodin's Clue |QID|11504|NC|QO|Rodin's Clue: 1/1|N|Rodin's Clue is to the east in an Unlocked Chest at|M|59.2,77.0|
+C Isuldof's Clue |QID|11504|NC|QO|Isuldof's Clue: 1/1|N|Isuldof's Clue is southeast, a Long Tail Feather at|M|59.4,79.4|
+C Windan's Clue |QID|11504|NC|QO|Windan's Clue: 1/1|N|Windan's clue, the last of them, is east in a Cannonball at|M|62.0,80.1|
+C Shield Hill |QID|11424|US|
 
 A Against Nifflevar |QID|12482| |N|At Ghostblade Post, which is to the east over the bridge at (67,61).|M|67.45,60.59|
 A The Enemy's Legacy |QID|11423|M|67.35,60.31|
 
-N Saga of the Val'kyr |QID|11423|QO|Saga of the Val'kyr: 1/1|N|The Saga of the Val'kyr is in the first buildling at (67.4,57.2).|M|67.42,57.16|
-N Saga of the Winter Curse |QID|11423|QO|Saga of the Winter Curse: 1/1|N|The Saga of Saga of Winter Curse is northeast at (68.9,52.6), in a small building east of the bonfire.|M|68.94,52.62|
-N Saga of the Twins |QID|11423|QO|Saga of the Twins: 1/1|N|The Saga of the Twins is in the longhouse west of the bonfire at (64.7,53.6).|M|64.67,53.57|
-C Against Nifflevar |QID|12482|
+C Against Nifflevar |QID|12482|S|
+C Saga of the Val'kyr |QID|11423|NC|QO|Saga of the Val'kyr: 1/1|N|The Saga of the Val'kyr is in the first buildling at|M|67.42,57.16|
+C Saga of the Winter Curse |QID|11423|NC|QO|Saga of the Winter Curse: 1/1|N|The Saga of Saga of Winter Curse is northeast in a small building east of the bonfire.|M|68.94,52.62|
+C Saga of the Twins |QID|11423|NC|QO|Saga of the Twins: 1/1|N|The Saga of the Twins is in the longhouse west of the bonfire at|M|64.67,53.57|
+C Against Nifflevar |QID|12482|US|
 
 T Against Nifflevar |QID|12482| |N|(67.5,60.6)|M|67.45,60.59|
 T The Enemy's Legacy |QID|11423|M|67.35,60.31|
 
-B Fresh Pound of Flesh |QID|11309|L|33612| |N|Anton patrols along the road between New Agamand and the Ancient Lift. If he's dead, he respawns at (53,74).|
+C Fresh Pound of Flesh |QID|11309|US|L|33612|T|Anton| |N|Anton patrols along the road between New Agamand and the Ancient Lift.|M|46.2,70.0;50.0,74.2;52.2,73.6|
 
 C Parts for the Job |QID|11309| |N|Go kill Shoveltusks if you haven't finished this already.|
 
-T Shield Hill |QID|11424| |N|Back at New Agamand.|
-T Parts for the Job |QID|11309|
+T Parts for the Job |QID|11309| |N|Back at New Agamand.|
+T Shield Hill |QID|11424|
 A Warning: Some Assembly Required |QID|11310|M|53.68,65.22|
 T Give it a Name |QID|12181|
-A To Venomspite! |QID|12182| |N|Make sure you aren't mounted, shapeshifted, or moving when you accept.|
+A To Venomspite! |QID|12182|M|52.0,67.4| |N|Make sure you aren't mounted, shapeshifted, or moving when you accept.|
 
-T To Venomspite! |QID|12182|N|If you didn't get flown to Venomspite, abandon To Venomspite!, dismount/unshapeshift/stop moving and reaccept the quest. Don't worry about the destroying the vial warning, it's a provided item.|Z|Dragonblight|
-A The Forsaken Blight and You: How Not to Die |QID|12188|
-A Funding the War Effort |QID|12303|
+T To Venomspite! |QID|12182|M|77.7,62.7|Z|Drablight|N|If you didn't get flown to Venomspite, abandon To Venomspite!, dismount/unshapeshift/stop moving and reaccept the quest. Don't worry about the destroying the vial warning, it's a provided item.|Z|Dragonblight|
+A The Forsaken Blight and You: How Not to Die |QID|12188|M|77.7,62.7|Z|Drablight|
+A Funding the War Effort |QID|12303|M|76.0,63.2|Z|Drablight| |N|Quartermaster Bartlett|
 
 A Beachfront Property |QID|12304|N|From Surveyor Hansen.|M|79.4,65.1|Z|Dragonblight|
 
 C The Forsaken Blight and You: How Not to Die |QID|12188|S|
 C Beachfront Property |QID|12304|S|
 C Funding the War Effort |QID|12303|N|Gather treasure near the water while killing ghosts|Z|Dragonblight|
-C The Forsaken Blight and You: How Not to Die |QID|12188|US|
-C Beachfront Property |QID|12304|US|
+C The Forsaken Blight and You: How Not to Die |QID|12188|US|Z|Dragonblight|
+C Beachfront Property |QID|12304|US|Z|Dragonblight|
 
 T Beachfront Property |QID|12304|M|79,65|Z|Dragonblight|
 
@@ -466,13 +469,13 @@ A Feeding the Survivors |QID|11456|M|25.02,56.96|
 
 C Feeding the Survivors |QID|11456| |N|Head southeast to the green area. Kill the Island Shoveltusks. It is also a good idea to kill the Spearfang Worgs, as they kill the Shoveltusks on sight. There is a shoveltusk herd that walks up and down the snow line.|
 
-T Feeding the Survivors |QID|11456| |N|Back at Kamagua.|M|30.64,63.63|
-A Arming Kamagua |QID|11457|M|30.64,63.63|
+T Feeding the Survivors |QID|11456| |N|Back at Kamagua.|M|25.1,57.0|
+A Arming Kamagua |QID|11457|M|25.1,57.0|
 
-C Arming Kamagua |QID|11457| |N|They're in the snow hills south of the village at (27,65). If that's overcrowded, there's another spot northeast of Kamagua at (27,55).|M|27.47,65.13|
+C Arming Kamagua |QID|11457| |N|They're in the snow hills south of the village at (27,65). If that's overcrowded, there's another spot northeast of Kamagua at (27,55).|M|25.1,57.0|
 
-T Arming Kamagua |QID|11457|M|30.64,63.63|
-A Avenge Iskaal |QID|11458|M|30.64,63.63|
+T Arming Kamagua |QID|11457|M|25.1,57.0|
+A Avenge Iskaal |QID|11458|M|25.1,57.0|
 
 T Grezzix Spindlesnap |QID|11508| |N|Swith southwest to (23,63).|M|23.08,62.67|
 A Street "Cred" |QID|11509|
@@ -482,10 +485,10 @@ T Street "Cred" |QID|11509| |N|"Silvermoon" Harry is under a tent next to the la
 A "Scoodles" |QID|11510|M|35.10,80.94|
 A Forgotten Treasure |QID|11434|M|35.60,80.23|
 
-C "Scoodles" |QID|11510| |N|"Scoodles" is a big Orca at (38,84).|M|38.00,84.00|
+C "Scoodles" |QID|11510|T|"Scoodles"| |N|"Scoodles" is a big Orca at (38,84).|M|38.00,84.00|
 
-N Eagle Figurine |QID|11434|QO|Eagle Figurine: 1/1|U|34076|N|The Eagle Figurine is in the middle ship with the mast at (37.8, 84.6).|M|37.76,84.61|
-N Amani Vase |QID|11434|QO|Amani Vase: 1/1|U|34076|N|The Amani Vase is in the ship to the southeast at (37.15, 85.51).|M|37.15,84.52|
+C Eagle Figurine |QID|11434|NC|QO|Eagle Figurine: 1/1|U|34076|N|The Eagle Figurine is in the middle ship with the mast at (37.8, 84.6).|M|37.76,84.61|
+C Amani Vase |QID|11434|NC|QO|Amani Vase: 1/1|U|34076|N|The Amani Vase is in the ship to the southeast at|M|37.15,85.52|
 
 T Forgotten Treasure |QID|11434|M|35.60,80.23|
 A The Fragrance of Money |QID|11455|M|35.60,80.23|
@@ -518,7 +521,7 @@ C Avenge Iskaal |QID|11458|U|36777|N|Head onto the beach. Use the horn and kill 
 
 C Dead Man's Debt |QID|11467| |N|Head up to the plateau at (29,61), then go east across the bridge to the Dirt Mount (32.7,60.2). HP/Mana up, click the mound. Kill the ghosts and loot Black Conrad's Treasure.|M|32.72,60.23|
 
-T Avenge Iskaal |QID|11458| |N|Back at Kamagua.|
+T Avenge Iskaal |QID|11458| |N|Back at Kamagua.|M|25.1,57.0|
 A Travel to Moa'ki Harbor |QID|12118|
 
 R Scalawag Point |QID|11473|N|Head back to Grezzix Spindlesnap at (23,63) and talk to Lou.|M|23.11,62.59|
@@ -580,10 +583,10 @@ T Warning: Some Assembly Required |QID|11310|M|53.68,65.22|
 
 R Shield Hill |QID|11568|N|Go to Shield Hill|M|56.44,75.58|
 
-N Fengir|QID|11568|QO|Shield of the Aesirites Returned: 1/1|U|34624| |M|57.65,77.62|
-N Rodin|QID|11568|QO|Staff of Storm's Fury Returned: 1/1|U|34624| |M|59.32,76.96|
-N Isuldof|QID|11568|QO|Frozen Heart of Isuldof Returned: 1/1|U|34624| |M|59.80,79.39|
-N Wodin|QID|11568|QO|Ancient Armor of the Kvaldir Returned: 1/1|U|34624| |M|61.95,80.01|
+C Fengir|QID|11568|NC|QO|Shield of the Aesirites Returned: 1/1|U|34624| |M|57.65,77.62|
+C Rodin|QID|11568|NC|QO|Staff of Storm's Fury Returned: 1/1|U|34624| |M|59.32,76.96|
+C Isuldof|QID|11568|NC|QO|Frozen Heart of Isuldof Returned: 1/1|U|34624| |M|59.80,79.39|
+C Wodin|QID|11568|NC|QO|Ancient Armor of the Kvaldir Returned: 1/1|U|34624| |M|61.95,80.01|
 
 T A Return to Resting |QID|11568| |N|At the Ancient Lift (40.3,60.2).|M|40.29,60.25|
 A Return to Atuik |QID|11572|N|(40.3,60.2)|M|40.29,60.25|
