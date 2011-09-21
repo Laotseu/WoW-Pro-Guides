@@ -289,8 +289,7 @@ T Scrambling for Eggs|QID|25656|M|42.18,45.40|N|To Thisalee Crow.|
 A A Bird in Hand|QID|25731|PRE|25655;25656|M|42.18,45.40|N|From Thisalee Crow.|
 T A Plea From Beyond|QID|25665|M|44.38,46.20|N|To Choluna.|
 A A Prayer and a Wing|QID|25664|PRE|25665|M|44.38,46.20|N|From Choluna.|
-N A Bird in Hand|QID|25731|M|38.50,44.04|N|Find the signal fire just west of the shrine. Use it to summon Marion Wormwing. Fight her until Thisalee Crow sneaks up behind her and captures her.|
-C A Bird in Hand|QID|25731|M|38.50,44.04|N|Once she is captured, talk to Marion Wormwing. Go through the dialogue options until you get the quest complete message for A Bird in Hand.|
+C A Bird in Hand|QID|25731|M|38.50,44.04|N|Find the signal fire just west of the shrine. Use it to summon Marion Wormwing. Fight her until Thisalee Crow sneaks up behind her and captures her. Once she is captured, talk to Marion Wormwing. Go through the dialogue options until you get the quest complete message for A Bird in Hand.|
 C A Prayer and a Wing|QID|25664|U|55211|M|35.67,42.30|N|Get on your flying mount and fly up to the top of the ridge to the north. You will see several nests. Land in one and use the Enormous Bird Call to summon Blaithe.|
 T A Bird in Hand|QID|25731|M|42.20,45.37|N|To Thisalee Crow.|
 T A Prayer and a Wing|QID|25664|M|44.38,46.21|N|To Choluna.|
@@ -314,9 +313,9 @@ C A New Master|QID|25411|U|53120|M|14.54,45.26|N|Kill a Twilight Inferno Lord an
 T A New Master|QID|25411|M|14.54,45.26|N|To Subjugated Inferno Lord.|
 A The Name Never Spoken|QID|25412|PRE|25411|M|14.54,45.26|N|From Subjugated Inferno Lord.|
 C Disrupting the Rituals|QID|25382|RANK|2|S|M|12.02,38.36|N|Kill Inferno Lords.|
-N The Name Never Spoken|QID|25412|QO|Southern Firestone Examined: 1/1|M|14.33,45.33|N|The first firestone is in the southern end of the charred zoned. Clear the mobs and right-click to examine it.|
-N The Name Never Spoken|QID|25412|QO|Central Firestone Examined: 1/1|M|11.61,41.50|N|The second firestone is just a bit north of the southern stone.|
-C The Name Never Spoken|QID|25412|M|9.63,36.45|N|The last firestone is just north of the central stone.|
+C The Name Never Spoken|QID|25412|NC|QO|Southern Firestone Examined: 1/1|M|14.33,45.33|N|The first firestone is in the southern end of the charred zoned. Clear the mobs and right-click to examine it.|
+C The Name Never Spoken|QID|25412|NC|QO|Central Firestone Examined: 1/1|M|11.61,41.50|N|The second firestone is just a bit north of the southern stone.|
+C The Name Never Spoken|QID|25412|NC|M|9.63,36.45|N|The last firestone is just north of the central stone.|
 C Save the Wee Animals|QID|25385|US|M|13.57,39.83|N|Finish saving the critters.|
 C Disrupting the Rituals|QID|25382|RANK|2|US|M|12.02,38.36|N|Finish kill Inferno Lords.|
 C Fighting Fire With ... Anything|QID|25381|RANK|2|US|M|13.72,46.89|N|Finish killing Raging Firestorms.|

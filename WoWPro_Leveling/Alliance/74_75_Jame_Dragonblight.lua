@@ -46,7 +46,7 @@ return [[
 N Note |QID|12298| |N|If you followed my previous guides, you should be in Wintergarde Keep, Dragonblight and have the following quest: High Commander Halford Wyrmbane If you don't have it, just ignore this quest, it's not a big deal, you can get the follow up anyway. Let's get started!|
 ; f Wintergarde Keep |QID|12298| |N|Get the new flight path at Rodney Wells. |M|77.0,49.8|
 N Warning! |QID|12298| |N|Throughout this whole chapter, do NOT get the quest [The Hills Have Us]. If you take it, this will fly you to Grizzly Hills and will make you waste a lot of time.|
-T High Commander Halford Wyrmbane |QID|12298| |N|To High Commander Halford Wyrmbane.|M|78.60,48.20|
+T High Commander Halford Wyrmbane |QID|12298|O| |N|To High Commander Halford Wyrmbane.|M|78.60,48.20|
 A Naxxramas and the Fall of Wintergarde |QID|12235|M|78.6,48.2|N|From High Commander Halfor Wyrmbane.|
 
 T Naxxramas and the Fall of Wintergarde |QID|12235| |N|Go back towards the gryphon master. To Gryphon Commander Urik.|M|77.1,50.1|
@@ -64,7 +64,7 @@ A The Demo-gnome |QID|12275|M|78.6,48.2|N|From High Commander Halfor Wyrmbane.|
 A The Fate of the Dead |QID|12258|N|From Commander Lynore Windstryke.|M|78.60,48.20|
 A Imprints on the Past |QID|12282|N|From Zelig the Visionary.|M|79.10,47.20|
 
-T The Demo-gnome |QID|12275| |N|Go south to Siege Engineer Quarterflash.|M|77.8,47.2|
+T The Demo-gnome |QID|12275| |N|Go south to Siege Engineer Quarterflash.|M|77.8,50.3|
 A The Search for Slinkin |QID|12276|M|77.8,50.3|N|From Siege Engineer Quarterflash.|
 A The Bleeding Ore |QID|12272|M|77.8,50.3|N|From Siege Engineer Quarterflash.|
 A Not In Our Mine |QID|12269| |N|From Highlord Leoric Von Zeldig.|M|77.80,50.30|
