@@ -16,7 +16,11 @@ Here's a sumery of the main changes I made to [https://github.com/Jiyambi/WoW-Pr
 * Maintain the completeQID list up to date with every turn-ins and use it to update must of the guide steps instead of reliying on event
 * In general, always try to check with was is instead of what happened for updating the guide steps
 * Used [http://www.wowace.com/addons/findglobals/ FindGlobals] and recast all global variables to local ones for speed and sanity
+* Work all around to eliminate garbage collection caused by cyclic table creation
 * Multiple tweaks to the guides to make them work more like I want them to
+
+== Note ==
+I'm only working on the main and leveling addons. The changes I've made to the core addon may cause compatibility issues with the other WoWPro addons so I've decided to disable them in this branch. If you decide to use them anyways, it's at your own risk.
 
 == Thanks ==
 Big thanks to Ludovicus and all the WoW-Pro team for making such a great addon and such great guides.
