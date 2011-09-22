@@ -10,10 +10,12 @@ local collectgarbage = _G.collectgarbage
 local tostring = _G.tostring
 local wipe = _G.wipe
 local select = _G.select
+local type = _G.type
 
 local ipairs = _G.ipairs
 local pairs = _G.pairs
 local tinsert = _G.tinsert
+local tremove = _G.tremove
 
 local UIParent = _G.UIParent
 
@@ -67,6 +69,30 @@ end
 function WoWPro:Print(message)
 	if message ~= nil then
 		print("|cffffff00WoW-Pro|r: "..message)
+	end
+end
+
+-- Table reuse functions
+do
+	local table_cache = {}
+
+	-- Returns a table
+	function WoWPro.AcquireTable()
+		local tbl = tremove(table_cache) or {}
+		return tbl
+	end
+
+	-- Cleans the table and stores it in the cache
+	function WoWPro.ReleaseTable(tbl)
+		if not tbl then return end
+
+		-- Nested tables ?
+		for i=1,#tbl do
+			if type(tbl[i]) == "table" then WoWPro.ReleaseTable(tbl[i]) end
+		end
+
+		wipe(tbl)
+		tinsert(table_cache, tbl)
 	end
 end
 

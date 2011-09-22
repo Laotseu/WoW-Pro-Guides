@@ -24,6 +24,7 @@ local table = _G.table
 local ipairs = _G.ipairs
 local pairs = _G.pairs
 local select = _G.select
+local tinsert = _G.tinsert
 local wipe = _G.wipe
 
 local ERR_NEWTAXIPATH = _G.ERR_NEWTAXIPATH
@@ -446,6 +447,39 @@ function WoWPro.Leveling:LoadGuide()
 --WoWPro:Trace("End WoWPro.Leveling:LoadGuide: "..tostring(WoWPro.DB.char.currentguide))
 end
 
+-- Functions used by dropdown menus
+local function _MapGuideCoordinate(self, row_num)
+	--err("row_num=%s",row_num)
+	WoWPro:MapPoint(row_num)
+end
+
+local function _MapBlizCoordinate(self, row_num)
+	--err("row_num=%s",row_num)
+	WoWPro:MapPoint(row_num, true)
+end
+
+local function _ShareQuest(self, quest_index)
+	--err("quest_index=%s",quest_index)
+	QuestLogPushQuest(quest_index)
+end
+
+local function _UnSticky(self, row_index)
+	--err("row_index=%s",row_index)
+	WoWPro.sticky[row_index] = false
+	WoWPro.UpdateGuide()
+	WoWPro.UpdateGuide()
+	WoWPro.MapPoint()
+end
+
+local function _Sticky(self, row_index)
+	--err("row_index=%s",row_index)
+	WoWPro.sticky[row_index] = true
+	WoWPro.unsticky[row_index] = false
+	WoWPro.UpdateGuide()
+	WoWPro.UpdateGuide()
+	WoWPro.MapPoint()
+end
+
 -- Row Content Update --
 function WoWPro.Leveling:RowUpdate(offset)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
@@ -463,7 +497,9 @@ function WoWPro.Leveling:RowUpdate(offset)
 	local itemkb = false
 	local targetkb = false
 	ClearOverrideBindings(WoWPro.MainFrame)
-	WoWPro.Leveling.RowDropdownMenu = {}
+	--WoWPro.Leveling.RowDropdownMenu = {}
+	WoWPro.ReleaseTable(WoWPro.Leveling.RowDropdownMenu)
+	WoWPro.Leveling.RowDropdownMenu = WoWPro.AcquireTable()
 
 	for i=1,15 do
 
@@ -567,56 +603,93 @@ function WoWPro.Leveling:RowUpdate(offset)
 		end)
 
 		-- Right-Click Drop-Down --
-		local dropdown = {
-		}
+		--local dropdown = {
+		--}
+		local dropdown = WoWPro.AcquireTable()
 		if step then
-			table.insert(dropdown,
-				{text = step.." Options", notCheckable = true, isTitle = true}
-			)
+			--table.insert(dropdown,
+			--	{text = step.." Options", notCheckable = true, isTitle = true}
+			--)
+			local tbl = WoWPro.AcquireTable()
+			tbl.text 			= step.." Options"
+			tbl.notCheckable 	= true
+			tbl.isTitle 		= true
+			tinsert(dropdown, tbl)
+
 			QuestMapUpdateAllQuests()
 			QuestPOIUpdateIcons()
 			local _, x, y, obj
 			if QID then _, x, y, obj = QuestPOIGetIconInfo(QID) end
 			if coord or x then
-				table.insert(dropdown,
-					{text = "Map Coordinates", notCheckable = true, func = function()
-						WoWPro:MapPoint(row.num)
-					end}
-				)
+				--table.insert(dropdown,
+				--	{text = "Map Coordinates", notCheckable = true, func = function()
+				--		WoWPro:MapPoint(row.num)
+				--	end}
+				--)
+				local tbl = WoWPro.AcquireTable()
+				tbl.text 			= "Map Coordinates"
+				tbl.notCheckable 	= true
+				tbl.arg1				= row.num
+				tbl.func 			= _MapGuideCoordinate
+				tinsert(dropdown, tbl)
 			end
 			if WoWPro.QuestLog[QID] and action ~= 'A' then
-				table.insert(dropdown,
-					{text = "Map Blizard Coordinates", notCheckable = true, func = function()
-						WoWPro:MapPoint(row.num, true)
-					end}
-				)
+				--table.insert(dropdown,
+				--	{text = "Map Blizard Coordinates", notCheckable = true, func = function()
+				--		WoWPro:MapPoint(row.num, true)
+				--	end}
+				--)
+				local tbl = WoWPro.AcquireTable()
+				tbl.text 			= "Map Blizard Coordinates"
+				tbl.notCheckable 	= true
+				tbl.arg1				= row.num
+				tbl.func 			= _MapBlizCoordinate
+				tinsert(dropdown, tbl)
 			end
 			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].index and GetNumPartyMembers() > 0 then
-				table.insert(dropdown,
-					{text = "Share Quest", notCheckable = true, func = function()
-						QuestLogPushQuest(WoWPro.QuestLog[QID].index)
-					end}
-				)
+				--table.insert(dropdown,
+				--	{text = "Share Quest", notCheckable = true, func = function()
+				--		QuestLogPushQuest(WoWPro.QuestLog[QID].index)
+				--	end}
+				--)
+				local tbl = WoWPro.AcquireTable()
+				tbl.text 			= "Share Quest"
+				tbl.notCheckable 	= true
+				tbl.arg1				= WoWPro.QuestLog[QID].index
+				tbl.func 			= _ShareQuest
+				tinsert(dropdown, tbl)
 			end
 			if sticky then
-				table.insert(dropdown,
-					{text = "Un-Sticky", notCheckable = true, func = function()
-						WoWPro.sticky[row.index] = false
-						WoWPro.UpdateGuide()
-						WoWPro.UpdateGuide()
-						WoWPro.MapPoint()
-					end}
-				)
+				--table.insert(dropdown,
+				--	{text = "Un-Sticky", notCheckable = true, func = function()
+				--		WoWPro.sticky[row.index] = false
+				--		WoWPro.UpdateGuide()
+				--		WoWPro.UpdateGuide()
+				--		WoWPro.MapPoint()
+				--	end}
+				--)
+				local tbl = WoWPro.AcquireTable()
+				tbl.text 			= "Un-Sticky"
+				tbl.notCheckable 	= true
+				tbl.arg1				= row.index
+				tbl.func				= _UnSticky
+				tinsert(dropdown, tbl)
 			else
-				table.insert(dropdown,
-					{text = "Make Sticky", notCheckable = true, func = function()
-						WoWPro.sticky[row.index] = true
-						WoWPro.unsticky[row.index] = false
-						WoWPro.UpdateGuide()
-						WoWPro.UpdateGuide()
-						WoWPro.MapPoint()
-					end}
-				)
+				--table.insert(dropdown,
+				--	{text = "Make Sticky", notCheckable = true, func = function()
+				--		WoWPro.sticky[row.index] = true
+				--		WoWPro.unsticky[row.index] = false
+				--		WoWPro.UpdateGuide()
+				--		WoWPro.UpdateGuide()
+				--		WoWPro.MapPoint()
+				--	end}
+				--)
+				local tbl = WoWPro.AcquireTable()
+				tbl.text 			= "Make Sticky"
+				tbl.notCheckable 	= true
+				tbl.arg1				= row.index
+				tbl.func				= _Sticky
+				tinsert(dropdown, tbl)
 			end
 		end
 		WoWPro.Leveling.RowDropdownMenu[i] = dropdown
