@@ -106,7 +106,7 @@ R The Charred Vale|QID|25938|M|30.95,62.20;30.23,63.15;30.06,64.98|N|Follow the 
 T Help for Desolace|QID|25938|M|54.18,9.41|N|To Officer Jankie.|
 A Rerouted!|QID|14384|M|54.18,9.41|N|From Officer Jankie.|
 R Nijel's Point|QID|14384|M|54.18,9.41|N|Mount Jankie's Mount for a ride to Nijel's Point.|
-f Nijel's Point|QID|14384|M|64.72,10.39|N|At Baritanas Skyriver.|
+; f Nijel's Point|QID|14384|M|64.72,10.39|N|At Baritanas Skyriver.|
 h Nijel's Point|QID|14384|M|66.26,6.64|N|At Innkeeper Lyshaerya. Don't forget to stock up! The food and drink vendor is next to the innkeeper.|
 
 T Rerouted!|QID|14384|M|66.75,10.90|N|To Corporal Melkins.|
@@ -158,7 +158,7 @@ l Bleached Skulls|QID|14364|L|48953 100|N|From piles around the compound.|
 C Putting Their Heads Together|QID|14364|U|48953|M|54.96,26.68|N|Use the skulls at the center of the building, and kill Nazargen.|
 C Ears Are Burning|QID|14362|M|53.20,27.48|US|N|Kill and loot Burning Blade mobs for their ears.|
 C Fletch Me Some Plumage!|QID|14253|US|M|46.33,34.99;49.68,25.62|RANK|2|N|Finish collecting Dread Swoop Feathers.|
-f Ethel Rethor|QID|14365|M|39.04,27.01|N|At Korrah's Hippogryph.|
+; f Ethel Rethor|QID|14365|M|39.04,27.01|N|At Korrah's Hippogryph.|
 T Ethel Rethor|QID|14365|M|38.83,26.97|N|To Cenarion Researcher Korrah.|
 
 A The Emerging Threat|QID|14256|M|38.83,26.97|N|From Cenarion Researcher Korrah.|
@@ -214,7 +214,7 @@ A Blood Theory|QID|14304|M|58.69,46.42|N|From Thressa Amberglen.|
 r Repair and Junk Sell|QID|14302|M|58.63,46.32|N|Stronghoof Gentlebend|
 T Official Assessment|QID|14302|M|57.37,47.75|N|To Karnum Marshweaver.|
 A Stubborn Winds|QID|14307|M|57.37,47.75|N|From Karnum Marshweaver.|
-f Karnum's Glade|QID|14305|M|57.68,49.67|N|At Lastrea Greengale.|
+; f Karnum's Glade|QID|14305|M|57.68,49.67|N|At Lastrea Greengale.|
 h Karnum's Glade|QID|14305|M|56.68,50.01|N|At Innkeeper Dessina.|
 
 A A Time to Reap|QID|14305|M|58.51,48.66|N|From Botanist Ferrah.|
@@ -253,7 +253,7 @@ C Cenarion Property|QID|14316|US|M|72.93,43.30|N|Finish looting supply crates.|
 T Bone Collector|QID|5501|M|62.31,38.93|N|To Bibbly F'utzbuckle.|RANK|3|
 A Early Adoption|QID|14246|M|70.43,32.89|N|From Cenarion Embassador Thunk.|
 A Stubborn Lands|QID|14247|M|70.43,32.89|N|From Cenarion Embassador Thunk.|
-f Thunk's Abode|QID|14246|M|70.64,32.89|N|At Thunk's Wyvern.|
+; f Thunk's Abode|QID|14246|M|70.64,32.89|N|At Thunk's Wyvern.|
 C Early Adoption|QID|14246|U|49014|M|66.27,22.38|N|Find the swoop nests. Clear the area around it for mobs. Protect the egg from attacking mobs.|
 T Stubborn Lands|QID|14247|M|69.47,21.30|N|To the Smoldering Stone.|
 
@@ -278,7 +278,7 @@ T My Word is My Bond|QID|14327|M|58.28,50.00|N|To Khan Leh'Prah.|
 A Three Princes|QID|14328|M|58.28,50.00|N|From Khan Leh'Prah.|
 A Thargad's Camp|QID|14372|M|57.43,47.73|N|From Karnum Marshweaver.|
 A Ghost-o-plasm Round Up|QID|6134|M|47.85,61.73|N|From Hornizz Brimbuzzle.|
-f Thargad's Camp|QID|14372|M|36.76,71.68|N|At Moira Steelwing.|
+; f Thargad's Camp|QID|14372|M|36.76,71.68|N|At Moira Steelwing.|
 T Thargad's Camp|QID|14372|M|36.65,71.31|N|To Thargad.|
 A Infernal Encroachment|QID|14373|M|36.65,71.31|N|From Thargad.|
 A Portals of the Legion|QID|14374|M|36.65,71.31|N|From Thargad.|

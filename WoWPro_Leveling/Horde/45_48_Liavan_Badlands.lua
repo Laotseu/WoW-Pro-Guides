@@ -33,7 +33,7 @@ A To Fuselight Proper|QID|27763|M|92.77,38.90|N|From Eddie Flofizzle.|
 T To Fuselight Proper|QID|27763|M|88.37,32.67;65.11,38.29|N|To Dolph Blastus.|
 A Easily Swayed|QID|27774|M|65.11,38.29|N|From Dolph Blastus.|
 A When the Going Gets Tough, Cheat|QID|27775|M|64.38,38.00|N|From Garyanne Fleezlebop.|
-f Fuselight|QID|27775|M|64.26,35.13|N|At Mixi Sweetride.|
+; f Fuselight|QID|27775|M|64.26,35.13|N|At Mixi Sweetride.|
 
 C Easily Swayed|QID|27774|M|60.73,20.55|N|Kill any ogre you see.|
 C When the Going Gets Tough, Cheat|QID|27775|M|56.36,25.79|N|Kill and loot Dustbelcher Instructors until you get the Instructor's Rod.|
@@ -76,7 +76,7 @@ T Bloodwatcher Point|QID|27881|M|52.17,51.19|N|To High Examiner Tae'thelan Blood
 A It's Not About History, It's About Power|QID|27882|M|52.17,51.19|N|From High Examiner Tae'thelan Bloodwatcher.|
 A Forcible Acquisition|QID|27878|M|52.12,51.42|N|From Aoren Sunglow.|
 A The Morons' League|QID|27877|M|52.16,51.60|N|From Lidia Sunglow.|
-f Bloodwatcher Point|QID|27715|M|52.43,50.87|N|At Selara.|
+; f Bloodwatcher Point|QID|27715|M|52.43,50.87|N|At Selara.|
 C It's Not About History, It's About Power|QID|27882|M|46.98,39.61|N|Kill Explores' League Excavators.|
 C The Morons' League|QID|27877|S|M|39.72,24.70|N|Kill and loot Shadowforge Dwarves until you get 15 heads.|
 C Forcible Acquisition|QID|27878|M|39.94,24.95|N|Down in the bottom for the building.|
@@ -141,7 +141,7 @@ T Gargal, the Behemoth|QID|27893|M|20.94,42.89|N|To Gargal.|
 A The Wrath of a Dragonflight|QID|27894|M|20.94,42.89|N|From Amakkar.|
 A Survival of the Fattest|QID|27879|M|18.43,41.55|N|From Aidan Summerwind.|RANK|3|
 
-f New Kargath|QID|27892|M|17.19,40.05|N|From Gorrik.|
+; f New Kargath|QID|27892|M|17.19,40.05|N|From Gorrik.|
 C The Wrath of a Dragonflight|QID|27894|M|26.19,45.11|N|Kill Kalaran the Annihilator and 4 Darkflight Soldiers.|
 T The Wrath of a Dragonflight|QID|27894|M|26.21,45.11|N|(UI Alert)|
 A Their Hunt Continues|QID|27895|M|26.21,45.11|N|(UI Alert)|

@@ -122,7 +122,7 @@ T Joining the Hunt|QID|13647|M|81.82,61.74|N|To Marek Ironheart.|
 A Hornet Hunting|QID|27028|M|81.82,61.74|N|From Marek Ironheart.|
 A Foxtails By The Handful|QID|27030|M|81.87,61.88|N|From Marek Ironheart.|
 A Thistle While You Work|QID|27025|M|82.79,63.42|N|From Safety Warden Pipsy.|
-f Farstrider Lodge|QID|27025|M|81.96,64.10|N|At Eeryven Grayer.|
+; f Farstrider Lodge|QID|27025|M|81.96,64.10|N|At Eeryven Grayer.|
 h Farstrider Lodge|QID|27025|M|81.93,64.56|N|At Vyrin Swiftwind.|
 A Wing Nut|QID|27031|M|81.70,64.59|Z|Farstrider Lodge|N|From Bingles Blastenheimer.|
 A The Joy of Boar Hunting|QID|27016|M|83.35,65.01|Z|Farstrider Lodge|N|From Daryl the Youngling.|

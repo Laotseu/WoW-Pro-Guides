@@ -2,7 +2,7 @@
 ## Title: WoW-Pro Achievements
 ## Notes: World Achievements guides created by the WoW-Pro Community
 ## Author: Jiyambi
-## Dependencies: WoWPro
+## Dependencies: WoWPro, DoNotLoadThisAddon
 ## Version: 2.1.19
 
 ## X-Category: Quest
