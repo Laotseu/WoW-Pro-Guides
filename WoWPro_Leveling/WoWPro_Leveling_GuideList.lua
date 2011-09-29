@@ -1,11 +1,28 @@
+-------------------------------------------------------------------------------
+-- Localized Lua globals
+-------------------------------------------------------------------------------
+local _G = getfenv(0)
+
+local math = _G.math
+local wipe = _G.wipe
+
+local ipairs = _G.ipairs
+local pairs = _G.pairs
+local table = _G.table
+
+local CreateFrame = _G.CreateFrame
+local IsShiftKeyDown = _G.IsShiftKeyDown
+
 ---------------------------------------------
 --      WoWPro_Leveling_GuideList.lua      --
 ---------------------------------------------
 
-local L = WoWPro_Locale
+local WoWPro = _G.LibStub("AceAddon-3.0"):GetAddon("WoWPro")
+
+local L = _G.WoWPro_Locale
 local ROWHEIGHT, GAP, EDGEGAP = 17, 8, 16
 local titlerow, rows, offset = {}, {}, 0
-local NUMROWS = 24
+local NUMROWS = 16
 
 -- Creating a Table of Guides for the Guide List and sorting based on level --
 local guides = {}
@@ -26,6 +43,8 @@ table.sort(guides, function(a,b) return a.startlevel < b.startlevel end)
 
 -- Populating Guide List --
 function WoWPro.Leveling.UpdateGuideList()
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	if not WoWPro.Leveling.GuideList then return end
 	if not WoWPro.Leveling.GuideList:IsVisible() then return end
 	for i,row in ipairs(WoWPro.Leveling.GuideList.rows) do
@@ -37,13 +56,13 @@ function WoWPro.Leveling.UpdateGuideList()
 			row.author:SetText(iGuide.author)
 			row.range:SetText("("..iGuide.startlevel.."-"..iGuide.endlevel..")")
 			row.guide = GID
-			
+
 			if WoWProCharDB.Guide[GID] and WoWProCharDB.Guide[GID].total and WoWProCharDB.Guide[GID].progress then
 				row.progress:SetText(WoWProCharDB.Guide[GID].progress.."/"..WoWProCharDB.Guide[GID].total)
-			else 
+			else
 				row.progress:SetText("")
 			end
-			
+
 			if WoWProDB.char.currentguide == GID then
 				row:SetChecked(true)
 			else
@@ -55,20 +74,22 @@ function WoWPro.Leveling.UpdateGuideList()
 		local function OnClick()
 			if not WoWPro.Leveling:IsEnabled() then return end
 			if IsShiftKeyDown() then
+--WoWPro:Trace("Start Reseting Guide: "..guides[row.i].GID)
+				WoWPro.ReleaseTable(WoWProCharDB.Guide[guides[row.i].GID])
 				WoWProCharDB.Guide[guides[row.i].GID] = nil
 				WoWPro.Leveling.Resetting = true
 				WoWPro:LoadGuide(guides[row.i].GID)
-				for j = 1,WoWPro.stepcount do 
-					if WoWPro.QID[j] then WoWProCharDB.completedQIDs[WoWPro.QID[j]] = nil end
+				for j = 1,#WoWPro.QID do
+					if WoWPro.QID[j] then WoWProCharDB.skippedQIDs[WoWPro.QID[j]] = nil end
 				end
-				WoWPro:LoadGuide(guides[row.i].GID)
 				WoWPro.Leveling.Resetting = false
+--WoWPro:Trace("End Reseting Guide: "..guides[row.i].GID)
 			else
 				WoWPro:LoadGuide(guides[row.i].GID)
 			end
-				WoWPro.Leveling.UpdateGuideList()
+			WoWPro.Leveling.UpdateGuideList()
 		end
-		
+
 		row:SetScript("OnClick", OnClick)
 	end
 end
@@ -76,23 +97,25 @@ end
 function WoWPro.Leveling.CreateGuideList()
 	local frame = CreateFrame("Frame", nil, WoWPro.GuideList.box)
 	frame:SetAllPoints()
+	--local frame_height = frame:GetHeight()
+	--local NUMROWS = frame_height and floor(frame_height/ROWHEIGHT) or NUMROWS
 
 	local scrollbar = WoWPro:CreateScrollbar(frame, 6)
 
 	do -- Title Row --
 		-- Title Backdrop Settings --
-		titlerowBG = {
+		local titlerowBG = {
 			bgFile = "Interface\\ChatFrame\\ChatFrameBackground",
 			tile = true,
 			tileSize = 16,
 			insets = { left = 0, right = 0, top = 5, bottom = -5}
 		}
-		
+
 		titlerow.buffer = CreateFrame("CheckButton", nil, frame)
 		titlerow.buffer:SetBackdrop(titlerowBG)
 		titlerow.buffer:SetBackdropColor(0.3, 0.2, 0.2, 1)
 		titlerow.buffer:SetHeight(ROWHEIGHT)
-		
+
 		titlerow.zone = CreateFrame("CheckButton", nil, frame)
 		titlerow.zone:SetBackdrop(titlerowBG)
 		titlerow.zone:SetBackdropColor(0.3, 0.2, 0.2, 1)
@@ -102,17 +125,17 @@ function WoWPro.Leveling.CreateGuideList()
 		titlerow.range:SetBackdrop(titlerowBG)
 		titlerow.range:SetBackdropColor(0.3, 0.2, 0.2, 1)
 		titlerow.range:SetHeight(ROWHEIGHT)
-		
+
 		titlerow.author = CreateFrame("CheckButton", nil, frame)
-		titlerow.author:SetBackdrop(titlerowBG)		
+		titlerow.author:SetBackdrop(titlerowBG)
 		titlerow.author:SetBackdropColor(0.3, 0.2, 0.2, 1)
 		titlerow.author:SetHeight(ROWHEIGHT)
-		
+
 		titlerow.progress = CreateFrame("CheckButton", nil, frame)
-		titlerow.progress:SetBackdrop(titlerowBG)		
+		titlerow.progress:SetBackdrop(titlerowBG)
 		titlerow.progress:SetBackdropColor(0.3, 0.2, 0.2, 1)
 		titlerow.progress:SetHeight(ROWHEIGHT)
-		
+
 		titlerow.buffer:SetPoint("TOPLEFT", 4, 0)
 		titlerow.buffer:SetWidth(4)
 		titlerow.zone:SetPoint("LEFT", titlerow.buffer, "RIGHT", 0, 0)
@@ -123,13 +146,13 @@ function WoWPro.Leveling.CreateGuideList()
 		titlerow.author:SetWidth(85)
 		titlerow.progress:SetPoint("LEFT", titlerow.author, "RIGHT", 0, 0)
 		titlerow.progress:SetPoint("TOPRIGHT", scrollbar, "TOPLEFT", -5, 22)
-		
+
 		do -- Title Row Text Fields --
 			local zone = titlerow.zone:CreateFontString(nil, nil, "GameFontWhite")
 			local range = titlerow.range:CreateFontString(nil, nil, "GameFontWhite")
 			local author = titlerow.author:CreateFontString(nil, nil, "GameFontWhite")
 			local progress = titlerow.progress:CreateFontString(nil, nil, "GameFontWhite")
-		
+
 			zone:SetPoint("LEFT", 0, -5)
 			zone:SetWidth(155)
 			range:SetPoint("LEFT", zone, "RIGHT", 0, 0)
@@ -138,27 +161,27 @@ function WoWPro.Leveling.CreateGuideList()
 			author:SetWidth(85)
 			progress:SetPoint("LEFT", author, "RIGHT", 0, 0)
 			progress:SetPoint("TOPRIGHT", scrollbar, "TOPLEFT", -5, 14)
-		
+
 			zone:SetText(L["Zone"])
 			range:SetText(L["Level"])
 			author:SetText(L["Author"])
 			progress:SetText(L["Progress"])
-			
+
 			zone:SetJustifyH("LEFT")
 			range:SetJustifyH("LEFT")
 			author:SetJustifyH("LEFT")
 			progress:SetJustifyH("LEFT")
-			
+
 			titlerow.zone.text = zone
 			titlerow.range.text = range
 			titlerow.author.text = author
 			titlerow.progress.text = progress
 		end
-		
+
 
 		-- Sorting Functions --
 		local sorttype = "Default"
-		function authorSort()
+		local function authorSort()
 			if sorttype == "AuthorAsc" then
 				table.sort(guides, function(a,b) return a.author > b.author end)
 				WoWPro.Leveling.UpdateGuideList()
@@ -169,7 +192,7 @@ function WoWPro.Leveling.CreateGuideList()
 				sorttype = "AuthorAsc"
 			end
 		end
-		function zoneSort()
+		local function zoneSort()
 			if sorttype == "ZoneAsc" then
 				table.sort(guides, function(a,b) return a.zone > b.zone end)
 				WoWPro.Leveling.UpdateGuideList()
@@ -180,7 +203,7 @@ function WoWPro.Leveling.CreateGuideList()
 				sorttype = "ZoneAsc"
 			end
 		end
-		function rangeSort()
+		local function rangeSort()
 			if sorttype == "RangeAsc" then
 				table.sort(guides, function(a,b) return a.startlevel > b.startlevel end)
 				WoWPro.Leveling.UpdateGuideList()
@@ -194,30 +217,30 @@ function WoWPro.Leveling.CreateGuideList()
 		titlerow.author:SetScript("OnClick", authorSort)
 		titlerow.zone:SetScript("OnClick", zoneSort)
 		titlerow.range:SetScript("OnClick", rangeSort)
-		
+
 	end
 
 	frame.rows = {}
 	-- Rows --
 	for i=1,NUMROWS do
 		local row = CreateFrame("CheckButton", nil, frame)
-		
+
 		local zone = row:CreateFontString(nil, nil, "GameFontHighlightSmall")
 		local range = row:CreateFontString(nil, nil, "GameFontHighlightSmall")
 		local author = row:CreateFontString(nil, nil, "GameFontHighlightSmall")
 		local progress = row:CreateFontString(nil, nil, "GameFontHighlightSmall")
-		
+
 		local prevrow
-		
+
 		-- Anchor Settings --
 		do
-			if i == 1 then 
+			if i == 1 then
 				row:SetPoint("TOPLEFT", titlerow.zone, "BOTTOMLEFT", 0, -10)
 				row:SetPoint("TOPRIGHT", titlerow.progress, "BOTTOMRIGHT", 0, -10)
 				prevrow = titlerow
 				GAP = -10
-				
-			else 
+
+			else
 				row:SetPoint("TOPLEFT", frame.rows[i-1], "BOTTOMLEFT", 0, 0)
 				row:SetPoint("TOPRIGHT", frame.rows[i-1], "BOTTOMRIGHT", 0, 0)
 				prevrow = frame.rows[i-1]
@@ -236,12 +259,12 @@ function WoWPro.Leveling.CreateGuideList()
 			progress:SetPoint("TOPLEFT", prevrow.progress, "BOTTOMLEFT", 0, GAP)
 			progress:SetPoint("TOPRIGHT", prevrow.progress, "BOTTOMRIGHT", 0, GAP)
 			progress:SetHeight(ROWHEIGHT)
-				
+
 			row:SetPoint("LEFT", 4, 0)
 			row:SetPoint("RIGHT", -4, 0)
 			row:SetHeight(ROWHEIGHT)
 		end
-		
+
 
 		local highlight = row:CreateTexture()
 		highlight:SetTexture("Interface\\HelpFrame\\HelpFrameButton-Highlight")
@@ -249,12 +272,12 @@ function WoWPro.Leveling.CreateGuideList()
 		highlight:SetAllPoints()
 		row:SetHighlightTexture(highlight)
 		row:SetCheckedTexture(highlight)
-		
+
 		zone:SetJustifyH("LEFT")
 		range:SetJustifyH("LEFT")
 		author:SetJustifyH("LEFT")
 		progress:SetJustifyH("LEFT")
-		
+
 		-- On Click - Load Guide Clicked --
 
 		row.zone = zone
@@ -267,16 +290,16 @@ function WoWPro.Leveling.CreateGuideList()
 	frame:EnableMouseWheel()
 	frame:SetScript("OnMouseWheel", function(self, val) scrollbar:SetValue(scrollbar:GetValue() - val*NUMROWS/3) end)
 
-	local function OnShow(self) 
-		scrollbar:SetValue(0); 
+	local function OnShow(self)
+		scrollbar:SetValue(0);
 		WoWPro.Leveling.UpdateGuideList()
-		WoWPro.NextGuideDialog:Hide() 
+		WoWPro.NextGuideDialog:Hide()
 	end
 	frame:SetScript("OnShow", OnShow)
 	OnShow(frame)
-	
+
 	WoWPro.Leveling.GuideList = frame
-	
+
 	local f = scrollbar:GetScript("OnValueChanged")
 	scrollbar:SetMinMaxValues(0, math.max(0, #guides - NUMROWS))
 	scrollbar:SetScript("OnValueChanged", function(self, value, ...)

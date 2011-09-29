@@ -57,7 +57,7 @@ T Hot On the Trail: The Riverpaw Clan|QID|26213|RANK|1|M|60.10,19.32|N|To Lieute
 T Hot On the Trail: Murlocs|QID|26214|RANK|1|M|60.10,19.32|N|To Lieutenant Horatio Laine.|
 A Meet Two-Shoed Lou|QID|26215|PRE|26214|RANK|1|M|60.13,19.37|N|From Lieutenant Horatio Laine.|
 
-f Furlbrow's Pumpkin Farm|QID|26215|M|49.85,18.75|N|At Hoboair.|
+; f Furlbrow's Pumpkin Farm|QID|26215|M|49.85,18.75|N|At Hoboair.|
 
 T Meet Two-Shoed Lou|QID|26215|M|49.71,19.41|N|To Two-Shoed Lou.|
 A Livin' the Life|QID|26228|PRE|26215|RANK|1|M|49.71,19.41|N|From Two-Shoed Lou.|
@@ -111,7 +111,7 @@ A Captain Sanders' Hidden Treasure|QID|26356|PRE|26355|RANK|1|M|40.65,17.05|N|Fr
 
 T Captain Sanders' Hidden Treasure|QID|26356|M|25.95,16.96|N|Swim across the water to the small isle, and turn the quest into the Locked Chest.|
 
-f Sentinel Hill|QID|26266|NC|M|56.96,47.10|N|Get the flight path.|
+; f Sentinel Hill|QID|26266|NC|M|56.96,47.10|N|Get the flight path.|
 
 A Hero's Call: Redridge Mountains!|QID|26365|RANK|1|M|56.39,47.52|N|If you'll be continuing on to Redridge. From Captain Danuvin.|
 A The Legend of Captain Grayson|QID|26371|RANK|1|M|56.44,47.45|N|From Scout Galiaan.|
@@ -136,7 +136,7 @@ A Jango Spothide|QID|26288|PRE|26287|RANK|1|M|56.36,47.54|N|From Captain Danuvin
 T Feeding the Hungry and the Hopeless|QID|26271|M|56.90,47.03|N|To Hope Saldean.|
 A Find Agent Kearnen|QID|26289|RANK|1|M|56.44,47.46|N|From Marshal Gryan Stoutmantle.|
 
-f Moonbrook|M|42.13,63.39|N|At Tina Skyden.|
+; f Moonbrook|M|42.13,63.39|N|At Tina Skyden.|
 
 T The Legend of Captain Grayson|QID|26371|M|30.55,85.54|N|To Captain Grayson.|
 A The Coast Isn't Clear|QID|26348|PRE|26371|RANK|1|M|30.55,85.54|N|From Captain Grayson.|
