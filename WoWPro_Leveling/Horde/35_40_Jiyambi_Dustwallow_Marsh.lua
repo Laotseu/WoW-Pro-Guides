@@ -36,7 +36,7 @@ R Brackenwall Village|RANK|1|QID|27254|M|37.52,31.62|N|Head to the Horde base fo
 A SMASH BROODQUEEN|RANK|1|QID|27229|M|37.52,31.62|N|From the wanted poster.|
 T Next of Kin|RANK|1|QID|25292|O|M|35.52,30.15|N|To Alto Stonespire.|
 A Theramore Spies|RANK|2|QID|1201|M|35.29,30.63|N|From Nazeer Bloodpike.|
-f Brackenwall Village|RANK|1|QID|27182|M|35.57,31.86|
+; f Brackenwall Village|RANK|1|QID|27182|M|35.57,31.86|
 A Twilight of the Dawn Runner|RANK|1|QID|9437|M|35.86,31.71|N|From Balandar Brightstar.|
 T Warchief's Command: Dustwallow Marsh!|RANK|1|QID|28549|O|M|31.42,13.32|N|To Krog.|
 T Suspicious Hoofprints|RANK|1|QID|27259|M|36.39,31.82|N|To Krog.|
@@ -181,7 +181,7 @@ T Delivery for Drazzit|RANK|2|QID|11208|M|42.28,72.93|N|To Drazzit Dripvalve.|
 A Catch a Dragon by the Tail|RANK|1|QID|27413|M|41.59,72.93|N|From Gizzix Grimegurgle.|
 A WANTED: Goreclaw the Ravenous|RANK|1|QID|27412|M|41.75,73.11|N|From Wanted Poster.|
 A Bloodfen Feathers|RANK|1|QID|27407|M|41.86,73.85|N|From Brogg.|
-f Mudsprocket|RANK|1|QID|27407|M|42.82,72.45|N|From Dyslix Silvergrub.|
+; f Mudsprocket|RANK|1|QID|27407|M|42.82,72.45|N|From Dyslix Silvergrub.|
 
 C Bloodfen Feathers|RANK|1|QID|27407|M|32.38,65.36|S|N|Roughly 50% drop from raptors.|
 C WANTED: Goreclaw the Ravenous|RANK|1|QID|27412|M|32.38,65.36|N|Be careful to clear the area around him first, or you might end up with the entire camp of raptors.|

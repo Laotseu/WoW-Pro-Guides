@@ -14,7 +14,7 @@
 WoWPro.Leveling:RegisterGuide('JiyTan4550', 'Tanaris', 'Jiyambi', '45', '50', 'JiyUng5055', 'Horde', function()
 return [[
 
-f Gadgetzan|QID|24906|M|52.04,27.61|N|From Bulkrek Ragefist.|
+; f Gadgetzan|QID|24906|M|52.04,27.61|N|From Bulkrek Ragefist.|
 h Gadgetzan|QID|24906|M|52.59,27.00|N|Set your hearth at Innkeeper Fizzgrimble, if you'd like.|
 A Enemies Abroad|QID|26991|M|51.37,29.77|N|From Dirge Quikcleave.|
 A Butcherbot|QID|25112|RANK|2|M|52.22,28.13|N|From Driz Plunkbow.|
@@ -158,7 +158,7 @@ T Andoren Will Know|QID|25018|M|33.32,77.00|N|To Examiner Andoren Dawnrise.|
 A Fragments of Language|QID|25020|M|33.32,77.00|N|From Examiner Andoren Dawnrise.|
 A Laying Claim|QID|25019|M|33.32,77.00|N|From Examiner Andoren Dawnrise.|
 A The Thunderdrome!|QID|26896|M|33.23,76.93|N|From Sherm.|
-f Dawnrise Expedition|QID|26896|M|33.30,77.31|N|At Raina Sunglide.|
+; f Dawnrise Expedition|QID|26896|M|33.30,77.31|N|At Raina Sunglide.|
 
 C Laying Claim|QID|25019|S|M|41.41,69.61|N|Kill dwarves in the area.|
 C Fragments of Language|QID|25020|M|41.19,70.97|N|Right-click tablets to loot them.|

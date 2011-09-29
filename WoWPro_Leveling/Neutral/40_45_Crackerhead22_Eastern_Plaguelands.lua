@@ -80,7 +80,7 @@ T Into the Woods|QID|27683|M|9.02,66.40|N|To Fiona.|
 T Hero's Call: Eastern Plaguelands!|QID|28578|M|9.02,66.40|O|N|To Fiona.|
 A Gidwin Goldbraids|QID|27367|M|9.02,66.40|N|From Fiona.|
 A Tarenar Sunstrike|QID|27370|M|9.02,66.40|N|From Fiona.|
-f Get flightpoint.|QID|27367|M|10.02,65.70|N|At Frax Bucketdrop.|
+; f Get flightpoint.|QID|27367|M|10.02,65.70|N|At Frax Bucketdrop.|
 T Gidwin Goldbraids|QID|27367|M|4.16,36.16|N|To Gidwin Goldbraids.|
 A Just Encased|QID|27368|M|4.17,36.13|N|From Gidwin Goldbraids.|
 C Just Encased|QID|27368|M|7.52,30.82|N|Kill Crypt Walkers, Stalkers and Horrors in the Terrorweb Tunnel that is next to the quest giver.|
@@ -101,7 +101,7 @@ A Onward, to Light's Hope Chapel|QID|27373|M|9.02,66.40|N|From Fiona.|
 N Optional Buffs|QID|27373|N|Click on Fiona's Caravan to pick one of three buffs. The charm gives you a chance to loot extra gold and items, the oil and the talisman gives a chance to deal extra Holy damage when you attack (oil for ranged, melee; talisman for spells).|
 C Onward, to Light's Hope Chapel|QID|27373|NC|M|9.00,66.40|N|Click on Fiona's Caravan and choose to go to the next destination.|
 T Onward, to Light's Hope Chapel|QID|27373|M|34.8,69.09|N|To Fiona.|
-f Crown Guard Tower|QID|27373|M|34.86,68.05|N|At Janice Myers.|
+; f Crown Guard Tower|QID|27373|M|34.86,68.05|N|At Janice Myers.|
 A Zaeldarr the Outcast|QID|27432|M|35.00,68.20|N|From Urk Gagbaz.|
 A Traveling Companions|QID|27381|M|35.23,68.68|N|From Tarenar Sunstrike.|
 A Little Pamela|QID|27383|M|35.52,68.84|N|From Carlin Redpath.|
@@ -164,7 +164,7 @@ N New buff at caravan available.|QID|27463|N|After completeing "The Battle of Da
 A The Trek Continues|QID|27448|M|34.84,69.27|N|From Fiona.|
 C The Trek Continues|QID|27448|M|52.67,53.73|N|Click on Fiona's Caravan and click on the option to continue the trek.|
 
-f Light's Shield Tower|QID|27455|M|52.83,53.48|N|At Devon Manning.|
+; f Light's Shield Tower|QID|27455|M|52.83,53.48|N|At Devon Manning.|
 T The Trek Continues|QID|27448|M|52.91,53.21|N|To Fiona.|
 A Boys Will Be Boys|QID|27455|M|52.91,53.21|N|From Fiona.|
 A To Kill With Purpose|QID|27451|M|53.13,54.62|N|From Betina Bigglezink.|
@@ -198,7 +198,7 @@ N Talk to Beezil Linkspanner|QID|27463|M|73.82,52.37|N|After you go through his 
 T A Boyhood Dream|QID|27463|M|75.81,52.07|N|To Lord Maxwell Tyrosus.|
 A Argent Call: The Trial of the Crypt|QID|27464|M|75.81,52.07|N|From Lord Maxwell Tyrosus.|
 A The Brotherhood of Light|QID|27459|M|75.57,52.30|N|From Leonid Barthalomew the Revered.|
-f Light's Hope Chapel|QID|27464|M|75.79,53.38|N|At Khaelyn Steelwing.|
+; f Light's Hope Chapel|QID|27464|M|75.79,53.38|N|At Khaelyn Steelwing.|
 A Smokey and the Bandage|QID|27458|M|74.92,53.30|N|From Smokey LaRue.|
 A Gathering Some Grub(s)|QID|27456|M|73.87,51.97|N|From Rimblat Earthshatter.|
 C Argent Call: The Trial of the Crypt|QID|27464|U|61309|M|77.21,51.77|N|Head to the bottom of the crypt and use the scroll. Survive the waves.|
@@ -261,7 +261,7 @@ T Argent Call: The Noxious Glade|QID|27465|M|75.80,52.07|N|To Lord Maxwell Tyros
 A An Opportune Alliance|QID|27457|M|73.85,52.01|N|From Rimblat Earthshatter.|
 R Eastwall Tower|QID|27457|M|62,42|N|Run to Eastwall Tower.|
 A Argent Call: Northdale|QID|27466|M|61.56,43.23|N|From Tarenar Sunstrike.|
-f Eastwall Tower|QID|27457|M|61.62,43.81|N|At Richard Trueflight.|
+; f Eastwall Tower|QID|27457|M|61.62,43.81|N|At Richard Trueflight.|
 T An Opportune Alliance|QID|27457|M|61.42,42.83|N|To Fiona.|
 T Argent Call: Northdale|QID|27466|M|61.42,42.78|N|To Fiona.|
 
@@ -270,8 +270,8 @@ A Righteous Indignation|QID|27479|M|61.29,42.94|N|From Deacon Andaal.|
 A Out of the Ziggurat|QID|27481|M|61.29,42.84|N|From Vex'tul.|
 A The Corpulent One|QID|27477|M|61.50,43.22|N|From Gamella Cracklefizz.|
 A Ix'lar the Underlord|QID|27487|M|61.53,43.29|N|From Tarenar Sunstrike.|
-C Ix'lar the Underlord|QID|27487|M|60.88,34.20|N|Ix'lar wanders around, so look for the boss icon on the minimap to see where he is.|
-C The Corpulent One|QID|27477|M|57.66,28.27|N|Borelgore seems to wander in the scar, look for his boss icon on the minimap.|
+C Ix'lar the Underlord|QID|27487|M|60.88,34.20|T|Ix'lar the Underlord|N|Ix'lar wanders around, so look for the boss icon on the minimap to see where he is.|
+C The Corpulent One|QID|27477|M|57.66,28.27|T|Borelgore|N|Borelgore seems to wander in the scar, look for his boss icon on the minimap.|
 C Righteous Indignation|QID|27479|M|65.50,12.34|N|Kill Mossflayers as you go for their eyes, be careful not to step on the graves.|S|
 C Out of the Ziggurat|QID|27481|M|66.45,10.53|N|Go to the top of the ziggurat and kill Warlord Thresh'jin and loot his corpse.|
 T Out of the Ziggurat|QID|27481|M|66.58,9.17|N|(UI Alert)|
@@ -293,10 +293,10 @@ C Nobody to Blame but Myself|QID|27489|M|50.52,20.45|N|Ride Fiona's Caravan to N
 T Nobody to Blame but Myself|QID|27489|M|50.46,20.27|N|To Tarenar Sunstrike.|
 A Beat it Out of Them|QID|27522|M|50.46,20.27|N|From Tarenar Sunstrike.|
 A Wretched Hive of Scum and Villainy|QID|27521|M|50.10,19.57|N|From Kirkian Dawnshield.|
-f Northpass Tower|QID|27521|M|51.29,21.21|N|At Grayson Ironwing.|
+; f Northpass Tower|QID|27521|M|51.29,21.21|N|At Grayson Ironwing.|
 N A City Under Siege|QID|27422|M|51.55,21.36|N|From Argent Officer Irizarry. This is optional as it leads into Stratholme.|
 A Duskwing, Oh How I Hate Thee...|QID|27523|M|48.11,23.01|N|From Corpseburner Tim.|
-C Duskwing, Oh How I Hate Thee...|QID|27523|U|61334|M|46.90,30.69|N|He wanders around, so look for his boss icon on the minimap. Use the flare on him if he is out of range.|
+C Duskwing, Oh How I Hate Thee...|QID|27523|U|61334|M|46.90,30.69|T|Duskwing|N|He wanders around, so look for his boss icon on the minimap. Use the flare on him if he is out of range.|
 T Duskwing, Oh How I Hate Thee...|QID|27523|M|48.06,23.20|N|To Corpseburner Tim.|
 C Wretched Hive of Scum and Villainy|QID|27521|M|46.63,14.83|N|Kill 9 Quel'lithien Wretched.|
 T Wretched Hive of Scum and Villainy|QID|27521|M|50.12,19.60|N|To Kirkian Dawnshield.|
@@ -310,14 +310,14 @@ A Guardians of Stratholme|QID|27525|M|27.58,21.14|N|From Tarenar Sunstrike.|
 A Scourged Mass|QID|27528|M|27.70,21.02|N|From Crusader Kevin Frost.|
 A Defenders of Darrowshire|QID|27529|M|27.70,21.02|N|From Crusader Kevin Frost.|
 A Add 'em to the Pile|QID|27539|M|27.70,21.02|N|From Crusader Kevin Frost.|
+C Add 'em to the Pile|QID|27539|M|38.38,30.46|Kill Cursed Mages and Scourge Soldiers to get their skulls.|S|
+C Defenders of Darrowshire|QID|27529|M|36.27,17.53|N|Kill Cannibal Ghouls then to talk to the spirits.|S|
+C Scourged Mass|QID|27528|U|61369|M|32.22,21.30|N|Kill Overstuffed Golems and then burn their corpses.|S|
 C Guardians of Stratholme|QID|27525|M|24.94,20.41;29.37,20.00|N|Kill Omasum Blighthoof and Karthis Darkrune.|
 A The Baroness' Missive|QID|27551|U|61378|N|Omasum Blighthoof or Karthis Darkrune should drop this. If not kill them again until they do.|
 T The Baroness' Missive|QID|27551|M|27.48,21.27|N|To Tarenar Sunstrike.|
 A Gidwin's Fate Revealed|QID|27526|M|27.48,21.27|N|From Tarenar Sunstrike.|
 T Guardians of Stratholme|QID|27525|M|27.48,21.27|N|To Tarenar Sunstrike.|
-C Scourged Mass|QID|27528|U|61369|M|32.22,21.30|N|Kill Overstuffed Golems and then burn their corpses.|S|
-C Defenders of Darrowshire|QID|27529|M|36.27,17.53|N|Kill Cannibal Ghouls then to talk to the spirits.|S|
-C Add 'em to the Pile|QID|27539|M|38.38,30.46|N|Kill Cursed Mages and Scourge Soldiers to get their skulls.|S|
 C Gidwin's Fate Revealed|QID|27526|M|28.69,26.06|N|As you enter the slaughterhouse you will be treated to a cutscene.|
 T Gidwin's Fate Revealed|QID|27526|M|28.34,25.90|N|To Gidwin Goldbraids.|
 
@@ -333,7 +333,7 @@ C The Corpsebeasts|QID|27530|U|61375|M|28.95,35.02|N|The beacons need to be put 
 T The Corpsebeasts|QID|27530|M|27.63,21.00|N|To Crusader Kevin Frost.|
 
 R Plaguewood Tower|QID|27530|M|18.51,27.32|N|Run to Plaguewood Tower.|
-f Plaguewood Tower|QID|27530|M|18.51,27.32|N|At William Kielar Jr..|
+; f Plaguewood Tower|QID|27530|M|18.51,27.32|N|At William Kielar Jr..|
 T The Plaguewood Tower|QID|27532|M|17.67,27.74|N|To Argent Apothecary Judkins.|
 A Counter-Plague Research|QID|27531|M|17.67,27.74|N|From Argent Apothecary Judkins.|
 A Just a Little Touched|QID|27535|M|17.67,27.74|N|From Argent Apothecary Judkins.|

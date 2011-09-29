@@ -13,9 +13,9 @@
 -- Who: Crackerhead22
 -- Log: Fixed line-! Line 65 for step C has unknown tag [Kill Vengeful Geists to free the Trapped Wintergarde Villagers.]: [C Rescue from Town Square|QID|12253|S|QO|N|Kill Vengeful Geists to free the Trapped Wintergarde Villagers.|]
 --	Fixed line-! Line 67 for step C has unknown tag [Now just go from one building to another, killing Vengeful Geists to free the Trapped Wintergarde Villagers.]: [C Rescue from Town Square|QID|12253|US|QO|N|Now just go from one building to another, killing Vengeful Geists to free the Trapped Wintergarde Villagers.|]
---	Fixed line-! Line 79 for step C has unknown tag [Q]: [C The Bleeding Ore |QID|12272| |Q|The Bleeding Ore|S|N|Mine the Strange Ore nodes.|M|80.4,45.1|]
+--	Fixed line-! Line 79 for step C has unknown tag [Q]: [C The Bleeding Ore |QID|12272|Q|The Bleeding Ore|S|N|Mine the Strange Ore nodes.|M|80.4,45.1|]
 --	Fixed line-! Line 88 for step C has unknown tag [Q]: [C The Bleeding Ore |QID|12272|US|Q|The Bleeding Ore|N|Finish getting the ore you need.|M|80.4,45.1|]
---	Fixed line-! Line 152 for step T has unknown tag [To the Image of Archmage Modera.]: [T Rifle the Bodies |QID|12000| |N|N|To the Image of Archmage Modera.|M|29.00,55.50|]
+--	Fixed line-! Line 152 for step T has unknown tag [To the Image of Archmage Modera.]: [T Rifle the Bodies |QID|12000|N|N|To the Image of Archmage Modera.|M|29.00,55.50|]
 --	Fixed line-! Line 223 for step A has unknown tag [From Elder Mana'loa.]: [A Conversing With the Depths |QID|12032|M|36.62,64.98|From Elder Mana'loa.|]
 --	Fixed line-! Line 288 for step N has 1 M coords: [N Plague Wagons Sabotaged|QID|12326|M||Get near a Plaue Wagon and use Ability #3, defend the Gnome until you get a quest update. Do this 6 times.|QO|Plague Wagon Sabotaged: 6/6|]
 
@@ -34,7 +34,7 @@
 -- Who: Ludovicus Maior
 -- Log: Eliminated sequence [Reborn From The Ashes], [Fate, Up Against Your Will],
 --	 [A Royal Coup], [The Killing Time], [The Battle For The Undercity].
---	
+--
 --	Kudos to Dez, seeyabye91, and exace for being persistent.
 
 -- URL: http://wow-pro.com/node/3291/revisions/23474/view
@@ -49,9 +49,9 @@ WoWPro.Leveling:RegisterGuide("JamDra7475", "Dragonblight", "Jame", "74", "75", 
 return [[
 
 N Note |QID|12298|N|If you followed my previous guides, you should be in Wintergarde Keep, Dragonblight and have the following quest: High Commander Halford Wyrmbane If you don't have it, just ignore this quest, it's not a big deal, you can get the follow up anyway. Let's get started!|
-f Wintergarde Keep |QID|12298|N|Get the new flight path at Rodney Wells. |M|77.0,49.8|
+; f Wintergarde Keep |QID|12298|N|Get the new flight path at Rodney Wells. |M|77.0,49.8|
 N Warning! |QID|12298|N|Throughout this whole chapter, do NOT get the quest [The Hills Have Us]. If you take it, this will fly you to Grizzly Hills and will make you waste a lot of time.|
-T High Commander Halford Wyrmbane |QID|12298|N|To High Commander Halford Wyrmbane.|M|78.60,48.20|
+T High Commander Halford Wyrmbane |QID|12298|O|N|To High Commander Halford Wyrmbane.|M|78.60,48.20|
 A Naxxramas and the Fall of Wintergarde |QID|12235|M|78.6,48.2|N|From High Commander Halfor Wyrmbane.|
 
 T Naxxramas and the Fall of Wintergarde |QID|12235|N|Go back towards the gryphon master. To Gryphon Commander Urik.|M|77.1,50.1|
@@ -69,7 +69,7 @@ A The Demo-gnome |QID|12275|M|78.6,48.2|N|From High Commander Halfor Wyrmbane.|
 A The Fate of the Dead |QID|12258|N|From Commander Lynore Windstryke.|M|78.60,48.20|
 A Imprints on the Past |QID|12282|N|From Zelig the Visionary.|M|79.10,47.20|
 
-T The Demo-gnome |QID|12275|N|Go south to Siege Engineer Quarterflash.|M|79.1,47.2|
+T The Demo-gnome |QID|12275|N|Go south to Siege Engineer Quarterflash.|M|77.8,50.3|
 A The Search for Slinkin |QID|12276|M|77.8,50.3|N|From Siege Engineer Quarterflash.|
 A The Bleeding Ore |QID|12272|M|77.8,50.3|N|From Siege Engineer Quarterflash.|
 A Not In Our Mine |QID|12269|N|From Highlord Leoric Von Zeldig.|M|77.80,50.30|
@@ -110,13 +110,13 @@ C The Bleeding Ore |QID|12272|US|N|Finish getting the ore you need.|M|80.4,45.1|
 l Wintergarde Miner's Cards|QID|12269|US|QO|Wintergarde Miner's Card: 10/10|N|Kill and loot Risen Wintergarde Miners to finish getting the cards.|
 H Wintergarde Keep |QID|12269|N|Hearthstone back to Wintergarde Keep (or just ride there if HS not up)|M|79.1,47.2|
 
-T The Bleeding Ore |QID|12272|N|To Siege Engineer Quarterflash.|M|79.1,47.2|
+T The Bleeding Ore |QID|12272|N|To Siege Engineer Quarterflash.|M|77.8,50.2|
 T Leave Nothing to Chance |QID|12277|M|77.8,50.3|N|To Siege Engineer Quarterflash.|
 A Understanding the Scourge War Machine |QID|12281|M|77.8,50.3|N|From Siege Engineer Quarterflash.|
-T Not In Our Mine |QID|12269|M|77.8,50.3|N|From Highlord Leoric Von Zeldig.|
+T Not In Our Mine |QID|12269|M|77.8,50.3|N|
 
 T Understanding the Scourge War Machine |QID|12281|N|To High Commander Halford Wyrmbane.|M|78.60,48.20|
-T Find Durkon! |QID|12309|N|From the gate, go down, take a right-turn, past the tall building we went in earlier for the Scrying Orb. A little further south you'll find Cavalier Durkon.|M|79.00,53.00|
+T Find Durkon! |QID|12309|N|From the gate, go down, take a right-turn, past the tall building we went in earlier for the Scrying Orb. A little further south you'll find Cavalier Durkon |M|79.00,53.00|
 A The Noble's Crypt |QID|12311|M|79.1,53.2|N|From Cavalier Durkon.|
 
 K Necrolord Amarion |QID|12311|QO|Necrolord Amarion slain: 1/1|N|Enter the crypt, go to the bottom of it, kill Necrolord Amarion.|
@@ -142,7 +142,7 @@ A Into Hostile Territory |QID|12325|M|78.6,48.2|N|From High Commander Halford Wy
 T A Disturbance In The West |QID|12439|N|To Rodney Wells.|M|77.00,49.80|
 A To Stars' Rest! |QID|12440|N|Dismount, then accept this quest from Rodney Wells. This will fly you to Stars' Rest.|M|77,49.8|
 
-f Stars' Rest |QID|12440|N|Get the new flight path.|
+; f Stars' Rest |QID|12440|N|Get the new flight path from |
 T To Stars' Rest! |QID|12440|N|To the Image of Archmage Modera.|M|29.00,55.50|
 A Rifle the Bodies |QID|12000|M|29.0,55.5|N|From the Image of Archmage Modera.|M|29.00,55.50|
 A The Liquid Fire of Elune |QID|12166|N|From Warden Jodi Moonsong.|M|29.20,55.60|
@@ -192,7 +192,7 @@ A The Focus on the Beach |QID|12065|M|29.0,55.5|N|From the Image of Archmage Mod
 
 R Glittering Strand |QID|12067|N|Ride southwest to the Glittering Strand.|M|25.34,61.60|
 
-K Captain Emmy Malin |QID|12067|L|36751|N|Find Captain Emmy Malin. She's channeling a spell close to the Ley Line Focus. Kill her, loot everything she has.|M|26.00,65.00|
+K Captain Emmy Malin |QID|12067|L|36751|N|Find Captain Emmy Malin . She's channeling a spell close to the Ley Line Focus. Kill her, loot everything she has.|M|26.00,65.00|
 C The Focus on the Beach |QID|12065|N|Get close to the Ley Line Focus and right-click the Ley Line Focus Control Ring, then wait until you get the quest completion.|U|36751|M|26.4,65.0|
 A A Letter for Home |QID|12067|N|Also Right-click Captain Malin's Letter, accept the quest.|U|36756|M|26.4,65.0|
 T A Letter for Home |QID|12067|N|To Commander Saia Azuresteel.|M|29.00,55.50|
@@ -203,7 +203,7 @@ A Strengthen the Ancients |QID|12092|N|From Sarendryana.|M|28.80,57.10|
 
 l Woodlands Walker |QID|12092|S|L|36786 3|N|Dismount. Look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some Bark of the Walkers. Repeat until you got 3.|M|32.68,65.48|
 C Strengthen the Ancients |U|36786|S|QID|12092|N|Look for Lothalor Ancients (not corrupted ones). Get close to them and right-click the Bark of the Walkers.|M|32.68,65.48|
-K Lieutenant Ta'zinni |QID|12083|L|36779|N|Go further south until you find a Ley Line Focus  Kill Lieutenant Ta'zinni. He's a troll NPC and patrols around the Ley Line Focus. Loot the Ley Line Focus Control Amulet.|M|32.00,71.00|
+K Lieutenant Ta'zinni |QID|12083|L|36779|T|Lieutenant Ta'zinni|N|Go further south until you find a Ley Line Focus  Kill Lieutenant Ta'zinni. He's a troll NPC and patrols around the Ley Line Focus. Loot the Ley Line Focus Control Amulet.|M|32.00,71.00|
 C Atop the Woodlands |QID|12083|U|36779|N|Right-click it while being close to the Ley Line Focus, then wait until you get the quest completion.|M|32.2,70.6|
 l Woodlands Walker |QID|12092|US|L|36786 3|N|Dismount. Look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some Bark of the Walkers. Repeat until you got 3.|M|32.68,65.48|
 C Strengthen the Ancients |U|36786|US|QID|12092|N|Look for Lothalor Ancients (not corrupted ones). Get close to them and right-click the Bark of the Walkers.|M|32.68,65.48|
@@ -250,7 +250,7 @@ A Signs of Big Watery Trouble |QID|12011|U|37265|N|Go to the very end of the sou
 T Signs of Big Watery Trouble |QID|12011|N|To Tua'kea.|M|47.7,76.6|
 A The Bait |QID|12016|M|47.7,76.6|N|From Tua'kea.|
 C Tua'kea's Crab Traps |QID|12009|US|N|Finish gathering Tua'kea Crab Traps.|M|46.23,78.2|
-K Kili'ua |QID|12016|L|35831|N|Once you reach Kili'ua's Atoll, kill Kili'ua and loot [The Flesh of "Two Huge Pincers"].|M|43.27,82.40|
+K Kili'ua |QID|12016|L|35831|T|Kili'ua|N|Once you reach Kili'ua's Atoll, kill Kili'ua and loot [The Flesh of "Two Huge Pincers"].|M|43.27,82.40|
 
 R The Briny Pinnacle |QID|12032|N|Swim west to The Briny Pinnacle. |M|34.00, 83.00|
 C Conversing With the Depths |QID|12032|N|Follow the path up until you find The Pearl of the Depth. Right-click it and the sea-goddess Oacha'noa will come and talk to you. Jump in the water when she gives you the compulsion buff.|M|34.00,83.46|
@@ -263,7 +263,7 @@ A Meat on the Hook |QID|12017|M|47.7,76.6|N|From Tua'kea.|
 K Tu'u'gwar |QID|12017|QO|Tu'u'gwar slain: 1/1|U|35838|N|Follow the fishing line (which actually looks more like a big rope), southwest into the water, all the way to Tua'kea's Fishing Hook. Use Tu'u'gwar's Bait, then kill Tu'u'gwar.|M|46.7,78.2|
 T Meat on the Hook |QID|12017|N|To Tua'kea.|M|47.7,76.6|
 T Conversing With the Depths |QID|12032|N|To Toalu'u The Mystic.|M|49.12,75.68|
-r Sell junk, repair, restock. |QID|12107|M|49.41,75.38|N|Sell junk, repair, restock.|
+N Sell junk, repair, restock. |QID|12107|M|49.41,75.38|N|Sell junk, repair, restock.|
 
 F Stars' Rest |QID|12107|N|Fly to Stars' Rest.|M|78.52,74.4|
 T The End of the Line |QID|12107|N|To the Image of Archmage Modera.|M|29.00,55.50|
@@ -298,7 +298,7 @@ A That Which Creates Can Also Destroy |QID|12459|M|59.6,54.4|N|From To Lord Itha
 T Speak with your Ambassador |QID|12766|N|Go back down to the ground floor of Wyrmrest Temple. Find Lauriel Trueblade.|M|60.00,55.00|
 A Report to the Ruby Dragonshrine |QID|12460|M|60.0,55.1|N|From Lauriel Trueblade.|
 
-f Wyrmrest Temple|QID|12325|N|Go to the northeastern tip of the temple and you'll find Nethestrasz. Get the new flight path.|M|60.32,51.55|
+; f Wyrmrest Temple|QID|12325|N|Go to the northeastern tip of the temple and you'll find Nethestrasz. Get the new flight path.|M|60.32,51.55|
 F Wintergarde Keep |QID|12325|N|Fly back to Wintergarde Keep.|
 F Thorson's Post|QID|12325|N|At the Gryphon Landing Site, right-click one of the Winterguard Gryphons, this will take you to Thorson's Post.|M|77.13,49.62|
 T Into Hostile Territory |QID|12325|N|To Duke August Foehammer.|M|89.7,46.4|
@@ -377,7 +377,7 @@ A Shaved Ice |QID|12045|M|54.7,23.2|N|From Zivlix.|
 A Nozzlerust Defense |QID|12043|M|54.5,23.6|N|From Narf.|
 
 R Fordragon Hold |QID|12474|N|Ride west and then south to Fordragon Hold.|M|43.00,29.00|
-f Fordragon Hold |QID|12474|N|Get the new flight path.|M|39.5,25.9|
+; f Fordragon Hold |QID|12474|N|Get the new flight path.|M|39.5,25.9|
 
 T To Fordragon Hold! |QID|12474|N|Follow the path west towards the highest tower, there you'll find Highlord Bolvar Fordragon.|M|37.81,23.4|
 A Audience With The Dragon Queen |QID|12495|M|37.8,23.4|N|From Highlord Bolvar Fordragon.|
@@ -396,9 +396,9 @@ K Bonesunder |QID|12148|QO|Emblazoned Battle Horn: 1/1|M|50.64,58.5|N|Look for B
 T One of a Kind |QID|12148|M|60.0,55.1|N|To Aurastrasza.|
 A Mighty Magnataur |QID|12149|N|From Aurastrasza.|M|60.0,55.1|
 
-K Drakegore |QID|12149|QO|Drakegore slain: 1/1|M|67.4,39;68,42.4|N|He's elite but soloable, doesn't hit too hard, can be snared, stunned, feared, rooted. He also has an aura which does 300 fire damage to enemies in his melee range, nothing too bad.|
-K Iceshatter |QID|12149|QO|Iceshatter slain: 1/1|M|67,50|N|He's more tricky to kill than the previous one. He's immune to movement impairing effects so clothies might have a little bit of trouble, however he doesn't much hit points so you can burn him down before he kills you. He periodically casts Pulsing Shards. This is very dangerous and can't be interrupted. Either run away while he channels it or use something like cloak of shadows, divine shield, ice block.|
-K Bloodfeast |QID|12149|QO|Bloodfeast slain: 1/1|M|67.4,70.2|N|That one is also tricky, immune to all forms of CC. He summons maggots which heal him up. The maggots are immune to AoE abilities, so you have to target them and kill them one by one (they have 1000HP). By the time you'd be done with that, he'd summon another round of maggots. So here is the strategy: Ignore the maggots, burn him down as fast as you can.|
+K Drakegore |QID|12149|QO|Drakegore slain: 1/1|M|68.0,37.0;67.6,40.0;68.2,47.8|T|Drakegore|N|He's elite but soloable, doesn't hit too hard, can be snared, stunned, feared, rooted. He also has an aura which does 300 fire damage to enemies in his melee range, nothing too bad.|
+K Iceshatter |QID|12149|QO|Iceshatter slain: 1/1|M|69.2,51.6;67.8,50.0;66.0,51.6|T|Iceshatter|N|He's more tricky to kill than the previous one. He's immune to movement impairing effects so clothies might have a little bit of trouble, however he doesn't much hit points so you can burn him down before he kills you. He periodically casts Pulsing Shards. This is very dangerous and can't be interrupted. Either run away while he channels it or use something like cloak of shadows, divine shield, ice block.|
+K Bloodfeast |QID|12149|QO|Bloodfeast slain: 1/1|M|67.4,70.2|T|Bloodfeast|N|That one is also tricky, immune to all forms of cc. He summons maggots which heal him up. The maggots are immune to AoE abilities, so you'd have to target them and kill them one by one (they have 1000HP). By the time you'd be done with that, he'd summon another round of maggots. So here is the strategy: Ignore the maggots, burn him down as fast as you can.|
 T Mighty Magnataur |QID|12149||M|60.0,55.1|N|To Aurastrasza.|
 A Reclusive Runemaster |QID|12150|N|From Aurastrasza.|M|60.0,55.1|
 
@@ -439,7 +439,7 @@ A Hard to Swallow |QID|12049|N|From Xink.|M|55.0,23.4|
 
 l Splintered Bone Chunk |QID|12047|QO|Splintered Bone Chunk: 12/12|S|N|Look for a Splintered Bone Chunk around the dragon skull and bones, and loot them.|
 C Hard to Swallow |QID|12049|U|36732|N|Look for a Hulking Jormungar. Bring it down to 80% HP and a message will appear: "The Hulking Jormungar falters for a moment, opening its mouth wide." Use the [Potent Explosive Charges]. This will blow up the Hulking Jormungar and a lot of meat will fly all around its corpse. Loot 6 Seared Jormungar Meat.|M|57.5,23.9|
-T Canyon Chase |QID|12143|N|To Duane.|M|64.00,28.00|
+T Canyon Chase |QID|12143|N|To Duane.|M|64.5,26.4|
 l Splintered Bone Chunk |QID|12047|QO|Splintered Bone Chunk: 12/12|US|N|Look for a Splintered Bone Chunk around the dragon skull and bones, and loot them|
 
 T Something That Doesn't Melt |QID|12047|N|To Zivlix.|M|54.7,23.2|
