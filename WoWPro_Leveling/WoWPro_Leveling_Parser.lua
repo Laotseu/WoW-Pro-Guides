@@ -136,10 +136,12 @@ function WoWPro.Leveling:NextStep(k, skip)
 		-- Checking Quest Log --
 		if WoWPro.QuestLog[WoWPro.QID[k]] then
 			skip = false -- If the optional quest is in the quest log, it's NOT skipped --
-		end
+			WoWPro.prereq[k] = false -- If the quest is in the log, the prereqs must already be met no matter
+											 -- what the guide say
+		--end
 
 		-- Checking Prerequisites --
-		if WoWPro.prereq[k] then
+		elseif WoWPro.prereq[k] then
 			skip = false -- defaulting to NOT skipped
 
 			local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
