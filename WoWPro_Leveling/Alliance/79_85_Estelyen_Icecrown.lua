@@ -19,9 +19,11 @@ A Curing The Incurable |QID|13040| |M|86.9,76.6|N|Father Gustav|
 ; f The Argent Vanguard |M|86.9,76.6|N|Father Gustav|
 A Defending The Vanguard |QID|13039| |M|86.1,75.8|N|Crusader Lord Dalfors|
 
+C Defending The Vanguard |QID|13039|S| |M|83,73|N|Kill 15 Carrion Fleshrstrippers and Forgotten Depths Nerubians.|
+C Curing The Incurable |QID|13040|S| |M|83,73|N|Kill the Carrion Fleshstrippers and Forgotten Depths Nerubians (the crazy spider things) in the area until you have 10 Forgotten Depths Venoms Sacs.|
 C Scourge Tactics |QID|13008| |M|85,75|N|Free 8 Webbed Crusaders by attacking the webs that hold them|
-C Curing The Incurable |QID|13040| |M|83,73|N|Kill the Carrion Fleshstrippers and Forgotten Depths Nerubians (the crazy spider things) in the area until you have 10 Forgotten Depths Venoms Sacs.|
-C Defending The Vanguard |QID|13039| |M|83,73|N|Kill 15 Carrion Fleshrstrippers and Forgotten Depths Nerubians.|
+C Curing The Incurable |QID|13040|US| |M|83,73|N|Kill the Carrion Fleshstrippers and Forgotten Depths Nerubians (the crazy spider things) in the area until you have 10 Forgotten Depths Venoms Sacs.|
+C Defending The Vanguard |QID|13039|US| |M|83,73|N|Kill 15 Carrion Fleshrstrippers and Forgotten Depths Nerubians.|
 
 T Defending The Vanguard |QID|13039| |M|86.1,75.8|N|Crusader Lord Dalfors|
 T Curing The Incurable |QID|13040| |M|86.9,76.6|N|Father Gustav|
@@ -40,20 +42,25 @@ A The Last Line Of Defense |QID|13086| |M|85.7,76.0|N|Siegemaster Fezzik|
 C The Last Line Of Defense |QID|13086| |M|85,76|N|Fly up to one of the Towers around the Argent Vanguard, click on one of the cannons to operate it. Once you're on you'll need to kill 100 scourge attackers and 3 of the Frostbrood Destroyers (the skeletal drakes) using the cannons abilities.|
 
 T The Last Line Of Defense |QID|13086| |M|85.7,76.0|N|Siegemaster Fezzik|
-A Once More Unto The Breach, Hero |QID|13105| |M|86.1,75.8|N|Highlord Tirion Fordring|
-T Once More Unto The Breach, Hero |QID|13105| |M|83.1,72.9|N|The Ebon Watcher|
+A Once More Unto The Breach, Hero |QID|13104| |M|86.1,75.8|N|Highlord Tirion Fordring|
+T Once More Unto The Breach, Hero |QID|13104| |M|83.1,72.9|N|The Ebon Watcher|
+; DK A Once More Unto The Breach, Hero |QID|13105| |M|86.1,75.8|N|Highlord Tirion Fordring|
+; DK T Once More Unto The Breach, Hero |QID|13105| |M|83.1,72.9|N|The Ebon Watcher|
 A The Purging Of Scourgeholme |QID|13118| |M|83.1,72.9|N|The Ebon Watcher|
 A The Scourgestone |QID|13122| |M||N|The Ebon Watcher|
 A The Stone That Started A Revolution |QID|13130| |M|83.1,73.0|N|Crusade Architect Silas|
 A It Could Kill Us All |QID|13135| |M|83.0,73.0|N|Crusade Engineer Spitzpatrick|
 A The Restless Dead |QID|13110| |M|82.9,72.8|N|Father Gustav in the litle house|
 
+C The Scourgestone |QID|13122|S| |M|79,65|N|All the undead in Scourgeholme drop [Scourgestone] when killed, collect 15 stones|
+C The Purging Of Scourgeholme |QID|13118|S| |M|79,65|N|Kill 3 Forgotten Depths High Priests, 3 Forgotten Depths Underkings and 8 Reanimated Crusaders|
 C The Restless Dead |QID|13110| |U|43153| |M|79,65|N|Use the [Holy Water] on 10 bodies of the Reanimated Crusaders you kill to free their souls|
-C The Purging Of Scourgeholme |QID|13118| |M|79,65|N|Kill 3 Forgotten Depths High Priests, 3 Forgotten Depths Underkings and 8 Reanimated Crusaders|
-C The Scourgestone |QID|13122| |M|79,65|N|All the undead in Scourgeholme drop [Scourgestone] when killed, collect 15 stones|
+C The Purging Of Scourgeholme |QID|13118|US| |M|79,65|N|Kill 3 Forgotten Depths High Priests, 3 Forgotten Depths Underkings and 8 Reanimated Crusaders|
+C The Scourgestone |QID|13122|US| |M|79,65|N|All the undead in Scourgeholme drop [Scourgestone] when killed, collect 15 stones|
 
+C It Could Kill Us All |QID|13135|S| |M|70,61|N|Kill Mobs in the Unbound Thicket until you have 8 Crystallized Energy| |Z|Crystalsong Forest|
 C The Stone That Started A Revolution |QID|13130| |M|70,61;80,68|N|Collect 10 [Crystalline Heartwood] and 10 Ancient Elven Masonry from Crystalsong Forest and| |Z|Crystalsong Forest|
-C It Could Kill Us All |QID|13135| |M|70,61|N|Kill Mobs in the Unbound Thicket until you have 8 Crystallized Energy| |Z|Crystalsong Forest|
+C It Could Kill Us All |QID|13135|US| |M|70,61|N|Kill Mobs in the Unbound Thicket until you have 8 Crystallized Energy| |Z|Crystalsong Forest|
 
 ; f Windrunner's Overlook |M|72,81| |Z|Crystalsong Forest|
 F The Argent Vanguard |M|72,81|
@@ -89,7 +96,7 @@ A The Broken Front |QID|13231| |M|61,46|N|High Captain Justin Bartlett in the mi
 A Joining the Assault |QID|13341| |M|61,46|N|Knight-Captain Drosche on The Skybreaker|
 A Get to Ymirheim! |QID|13296| |N|Chief Engineer Boltwrench in the underside of the Skybreaker (near the A-Bomb)|
 
-C The Broken Front |QID|13231| |M|61,46|N|Speak to a dying Soldier to complete the quest|
+C The Broken Front |QID|13231| |M|69,64.5|N|Speak to a dying Soldier to complete the quest|
 A Finish Me! |QID|13232| |M|69,62|N|Speak to a dying Soldier to complete the quest|
 C Finish Me! |QID|13232| |M|69,62|N|Kill 5 Dying Soldiers|
 
