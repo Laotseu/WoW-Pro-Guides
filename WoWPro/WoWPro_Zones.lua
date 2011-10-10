@@ -2117,7 +2117,13 @@ local Zone2MapID = {
 			["cont"] = "Outland",
 			["zone"] = "Zangarmarsh",
 			["mapName"] = "Zangarmarsh",
-		}
+		},
+		["Molten Front"] = {
+			["numFloors"] = 0,
+			["mapID"] = 795,
+			["zone"] = "Molten Front",
+			["mapName"] = "MoltenFront",
+		},
 }
 WoWPro.Zone2MapID = 	Zone2MapID
 
