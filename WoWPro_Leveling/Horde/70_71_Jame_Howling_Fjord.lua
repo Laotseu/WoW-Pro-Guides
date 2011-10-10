@@ -545,7 +545,7 @@ A Meet Number Two |QID|11480|M|35.60,80.23|
 T Meet Number Two |QID|11480| |N|Annie Bonn is on the top floor of the building next to you.|M|35.40,79.44|
 A The Jig is Up |QID|11471|M|35.40,79.44|
 
-C Swabbin' Soap |QID|11469| |N|Head to the northwest point of the isle. Big Roy is in the water at (31,78).|M|31.07,78.76|
+C Swabbin' Soap |QID|11469|T|Big Roy| |N|Head to the northwest point of the isle. Big Roy is in the water at (31,78).|M|31.07,78.76|
 
 C The Jig is Up |QID|11471|N|The cave entrance is at (33.57,75.61). The quest is a little hard, you've got to beat "Mad" Jonah Sterling to 30%, then kill the bear Hozzer. Both can be stunned, slowed and feared. There isn't a followup, but it rewards some nice trinkets.|M|33.57,75.61|
 C The Frozen Heart of Isuldof |QID|11512| |N|If you didn't do the previous quest, hug the wall to get past Jonah, if you did just walk past, head down to the bottom of the cave. The frozen heart is down there.|M|32.33,78.67|
@@ -591,7 +591,7 @@ C Wodin|QID|11568|NC|QO|Ancient Armor of the Kvaldir Returned: 1/1|U|34624| |M|6
 T A Return to Resting |QID|11568| |N|At the Ancient Lift (40.3,60.2).|M|40.29,60.25|
 A Return to Atuik |QID|11572|N|(40.3,60.2)|M|40.29,60.25|
 
-T Return to Atuik |QID|11572| |N|Take the lift behind Orfus, then ride north to Kamagua.|M|30.64,63.63|
+T Return to Atuik |QID|11572| |N|Take the lift behind Orfus, then ride north to Kamagua.|M|25.1,57.1|
 
 R Moa'ki Harbor |QID|12118|N|Go out onto the docks and take the turtle boat. (23.2,57.7)|M|23.55,57.79|
 

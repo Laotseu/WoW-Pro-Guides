@@ -31,25 +31,26 @@ R Westwind Refugee Camp |QID|11978|N|At .|M|13,49|
 A Into the Fold |QID|11978|M|12.8,48.5|
 A Pride of the Horde |QID|11980|M|14.2,49.8|
 
+C Pride of the Horde |QID|11980|S|
 C Into the Fold |QID|11978|M|15.5,51.2|
-C Pride of the Horde |QID|11980|
+C Pride of the Horde |QID|11980|US|
 
-T Into the Fold |QID|11978|M|12.8,48.5|
-A Blood Oath of the Horde |QID|11983|M|12.8,48.5|PRE|11978|
 T Pride of the Horde |QID|11980|M|14.2,49.8|
+T Into the Fold |QID|11978|M|12.8,48.5|
+A Blood Oath of the Horde |QID|11983|M|12.8,48.5|PRE|11978|N|From Emissary Brighthoof|
 
 C Blood Oath of the Horde |QID|11983| |N|Talk to the Taunka'le Refugees and go through the text until you complete the quest.|
 
-T Blood Oath of the Horde |QID|11983|M|12.8,48.5|
-A Agmar's Hammer |QID|12008|M|12.8,48.5|PRE|11983|
+T Blood Oath of the Horde |QID|11983|N|Emissary Brighthoof|
+A Agmar's Hammer |QID|12008|M|12.8,48.5|PRE|11983|N|From Emissary Brighthoof|
 
-; f Agarm's Hammer |QID|12034|N|It's east at .|M|37,48|
+; f Agarm's Hammer |QID|12034|N|It's east|M|37,48|
 T Agmar's Hammer |QID|12008|M|38.1,46.3|
 A Victory Nears... |QID|12034|M|38.1,46.3|
 A Rifle the Bodies |QID|11999|M|38.1,46.2|
-A Wanted: Dreadtalon |QID|12091| |N|From the Wanted Poster just outside the door.|
-A Wanted: Gigantaur |QID|12090|
-A Wanted: Magister Keldonus |QID|12089|
+A Wanted: Magister Keldonus |QID|12089| |N|From the Wanted Poster just outside the door.|M|37.6,46.5|
+A Wanted: Gigantaur |QID|12090| |N|From the Wanted Poster just outside the door.|M|37.6,46.5|
+A Wanted: Dreadtalon |QID|12091| |N|From the Wanted Poster just outside the door.|M|37.6,46.5|
 A Message from the West |QID|12033|M|37.3,46.8|PRE|11916|O|
 C Message from the West |QID|12033|N|Use the firepot right next to the quest NPC.|M|37.4,46.7|PRE|11916|O|
 T Message from the West |QID|12033|M|37.3,46.8|PRE|11916|O|
@@ -62,14 +63,16 @@ A Containing the Rot |QID|12100|M|37.1,48.6|
 N Dragonblight's Group Quests |QID|12090|N|There are a bunch that will be picked up throughout the guide. When you manage to get a group for them, you can take them out. With decent gear, some of these can be soloed. You'll recieve prompts throughout the guide to let you know when you're near the group quests.|
 
 C Containing the Rot |QID|12100| |N|The mobs are in the area just east and south of Azjol-Nerub. The Rot Resistant Organ is a random drop from the Grizzlies and Elks.|M|29.0,50.7|
+C Black Blood of Yogg-Saron |QID|12039|S|M|26.5,49.6|
 A An Enemy in Arthas |QID|12040| |N|Fall down one of the holes and find Kilix the Unravaler.|M|26.2,50.8|
 A Death to the Traitor King |QID|13167|
 A Don't Forget the Eggs! |QID|13182|
 A The Faceless Ones |QID|13187|
 
 C Marked for Death: High Cultist Zangus |QID|12056| |N|Take the middle tunnel going east, he's at the end.|M|28.9,49.7|
-C Black Blood of Yogg-Saron |QID|12039|M|26.5,49.6|
-C An Enemy in Arthas |QID|12040|
+C An Enemy in Arthas |QID|12040|S|
+C Black Blood of Yogg-Saron |QID|12039|US|M|26.5,49.6|
+C An Enemy in Arthas |QID|12040|US|
 
 T An Enemy in Arthas |QID|12040|M|26.2,50.8|
 A The Lost Empire |QID|12041|M|26.2,50.8|PRE|12040|
@@ -78,7 +81,7 @@ N Azjol-Nerub and Ahn'kahet: The Old Kingdom |QID|12041|N|You've got all the que
 
 A Avenge this Atrocity! |QID|12006| |N|Ethenial Moonshadow, the quest NPC, is to the southwest in Moonrest Gardens at .|M|24,60|
 
-C Rifle the Bodies |QID|11999| |N|Look for the Dead Mage Hunters. DISMOUNT (if you don't, you won't get anything) and loot the bodies, then open the Mage Hunter's Personal Effects until you get the item.|M|22.3,54.1|
+C Rifle the Bodies |QID|11999|U|35792| |N|Look for the Dead Mage Hunters. DISMOUNT (if you don't, you won't get anything) and loot the bodies, then open the Mage Hunter's Personal Effects until you get the item.|M|22.3,54.1|
 
 T Containing the Rot |QID|12100|M|37.1,48.6|
 A The Good Doctor... |QID|12101|M|37.1,48.6|PRE|12100|
@@ -96,10 +99,12 @@ A Strength of Icemist |QID|12063|M|35.8,46.7|
 
 T Strength of Icemist |QID|12063|N|He's to the west at in Icemist Village.|M|23,42|
 A Chains of the Anub'ar |QID|12064|M|22.6,41.7|PRE|12063|
-K Anok'ra the Manipulator |QID|12064|QO|Anok'ra's Key Fragment: 1/1|N|Face south, then stay left, he's in a small hut at .|M|25,45|
-K Sinok the Shadowrager |QID|12064|QO|Sinok's Key Fragment: 1/1|N|Head to the upper plateau, Sinok is at .| |L|36754|M|26,44|
-K Tivax the Breaker |QID|12064|QO|Tivax's Key Fragment: 1/1|N|Head north, Tivax is on the other side of the village in a hut at or (23,39).|M|26,39|
-K Anub'ar Cultists |QID|12057|L|36744|N|Until you get a Flesh-Bound Tome. Also drops off the three named mobs we just killed.|
+C Scourge Armaments|QID|12048|S|M|26.9,43.3|
+K Anub'ar Cultists |QID|12057|S|L|36744|N|Until you get a Flesh-Bound Tome. Also drops off the three named mobs we just killed.|
+K Anok'ra the Manipulator |QID|12064|QO|Anok'ra's Key Fragment: 1/1|T|Anok'ra the Manipulator|N|Face south, then stay left, he's in a small hut at .|M|25,45|
+K Sinok the Shadowrager |QID|12064|QO|Sinok's Key Fragment: 1/1|T|Sinok the Shadowrager|N|Head to the upper plateau, Sinok is at | |L|36754|M|26,44|
+K Tivax the Breaker |QID|12064|QO|Tivax's Key Fragment: 1/1|T|Tivax the Breaker|N|Head north, Tivax is on the other side of the village in a hut at or (23,39).|M|26,39|
+K Anub'ar Cultists |QID|12057|US|L|36744|N|Until you get a Flesh-Bound Tome. Also drops off the three named mobs we just killed.|
 A The Flesh-Bound Tome |QID|12057| |U|36744|M|26.9,43.3|
 
 T Chains of the Anub'ar |QID|12064| |N|Go west and jump off the cliff. Turn it in at Banthok Icemist at .|M|23,42|
@@ -108,7 +113,7 @@ A Return of the High Chief |QID|12069|M|22.6,41.7|PRE|12064|
 N READ THIS |QID|12053|N|You're going to do a couple of quests now. First off, to get to the right place, face north and go along the wall on your right, until you find a path going up, take it. Head to Roanauk Icemist in the middle of the village at . Then get to full HP/Mana. Use the Anub'ar Prison Mechanism. Kill Under-King Anub'et'Kan with the Taunka, let them tank. Loot the husk. Then use the battle standard and defend it until the quest completes.|M|25,41|
 C Return of the High Chief |QID|12069|M|25.6,40.9|
 C The Might of the Horde |QID|12053| |U|36738|M|24.8,41.2|
-C Scourge Armaments|QID|12048|M|26.9,43.3|
+C Scourge Armaments|QID|12048|US|M|26.9,43.3|
 
 C Prevent the Accord |QID|12005| |N|Head southwest to the stone building at . The Wind Trader is at the entrance, if you take the slope going left, you'll find Goramosh.|M|18,60|
 A A Strange Device |QID|12059| |U|36746|M|19.4,58.1|
