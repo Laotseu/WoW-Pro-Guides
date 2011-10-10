@@ -1,24 +1,25 @@
 WoWPro.Leveling:RegisterGuide('LaoTseuTest3478585', 'Molten Front', 'LaoTseu', '85', '85', nil, 'Neutral', function()
 return [[
 
-N Test Guide - Issue 347 |N|This is a mini guide to help test the Issue #347 with Quest Objectives not completing when the step is sticky.|
+N Test Guide - Issue 347 |N|This is a mini guide to help test the Issue #347 with Quest Objectives not completing when the step is sticky. Reset the guide when you want to test again.|
 
 A Call the Flock|QID|29147|S|
-A Rage Against the Flames|QID|29123|
+A The Protectors of Hyjal|QID|29128|
 A Call the Flock|QID|29147|US|
 
 C Call the Flock|QID|29147|QO|Alpine Songbird gathered: 12/12|S|
-C Call the Flock|QID|29147|QO|Forest Owl: 5/5|S|
-C Call the Flock|QID|29147|QO|Goldwing Hawk: 2/2|S|
+C Call the Flock|QID|29147|QO|Forest Owl gathered: 5/5|S|
+C Call the Flock|QID|29147|QO|Goldwing Hawk gathered: 2/2|S|
 
-C Rage Against the Flames|QID|29123|
+C The Protectors of Hyjal|QID|29128|
 
-C Call the Flock|QID|29147|QO|Goldwing Hawk: 2/2|US|
-C Call the Flock|QID|29147|QO|Forest Owl: 5/5|US|
-C Call the Flock|QID|29147|QO|Alpine Songbird gathered: 12/12|US|
+;C Call the Flock|QID|29147|QO|Goldwing Hawk gathered: 2/2|US|
+;C Call the Flock|QID|29147|QO|Forest Owl gathered: 5/5|US|
+;C Call the Flock|QID|29147|QO|Alpine Songbird gathered: 12/12|US|
+C Call the Flock|QID|29147|US|
 
 T Call the Flock|QID|29147|S|
-T Rage Against the Flames|QID|29123|
+T The Protectors of Hyjal|QID|29128|
 T Call the Flock|QID|29147|US|
 
 A The Flame Spider Queen|QID|29276|S|
