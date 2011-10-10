@@ -384,7 +384,8 @@ end
 
 function WoWPro:ValidZone(zone)
 	if zone then
-	    if tonumber(zone) then
+--	    if tonumber(zone) then
+	    if type(zone) == "number" then
 	        -- Using a numeric zone ID
             return "NumericZone"
 	    elseif WoWPro.Zone2MapID[zone] then
