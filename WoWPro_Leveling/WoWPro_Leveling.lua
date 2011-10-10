@@ -133,7 +133,7 @@ function WoWPro.Leveling:RegisterGuide(GIDvalue, zonename, authorname, startleve
 	    else
 	        nextGIDvalue = HordeGID
 	    end
-        WoWPro:dbp("Neutral Guide "..GIDvalue.." for "..myUFG.." chose "..nextGIDvalue)
+        WoWPro:dbp("Neutral Guide "..GIDvalue.." for "..myUFG.." chose "..(nextGIDvalue or ""))
 	end
 	WoWPro.Guides[GIDvalue] = {
 		guidetype = "Leveling",
