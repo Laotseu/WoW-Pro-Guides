@@ -152,7 +152,7 @@ T Blightbeasts be Damned! |QID|12072| |N|Back at Agmar's Hammer.|M|37.2,45.7|
 T Projections and Plans |QID|12061|M|38.1,46.2|
 A The Focus on the Beach |QID|12066|M|38.1,46.2|PRE|12061|
 
-K Captain Emmy Malin |QID|12066|L|36751|M|26,65|N|You may need to kill mobs in the area until she spawns.|
+K Captain Emmy Malin |QID|12066|L|36751|M|26,65|T|Captain Emmy Malin|N|You may need to kill mobs in the area until she spawns.|
 
 C The Focus on the Beach |QID|12066|U|36751|N|Get close to the big arch and use the Ley Line Focus Control Ring you just looted.|M|26.4,65.0|
 
@@ -161,8 +161,8 @@ A Atop the Woodlands |QID|12084|M|38.1,46.2|PRE|12066|
 A Strengthen the Ancients |QID|12096|M|36.5,47.9|
 
 C Strengthen the Ancients |S|QID|12096|U|36786|N|Look for the treants. Dismount, and right click. They'll either attack or give you some bark. You can loot the bark off the ones that attack. Use the Bark on the non-aggressive Ancients.| |M|31.2,59.7|
-K Lieutenant Ta'zinni |QID|12085|N|He drops 2 quest items, so make sure you get the letter as well as the amulet.| |L|36779|M|32,71|
-K Lieutenant Ta'zinni |QID|12085|N|He drops 2 quest items, so make sure you get the letter as well as the amulet.| |L|36780|M|32,71|
+K Lieutenant Ta'zinni |QID|12085|T|Lieutenant Ta'zinni|N|He drops 2 quest items, so make sure you get the letter as well as the amulet.| |L|36779|M|32,71|
+K Lieutenant Ta'zinni |QID|12085|T|Lieutenant Ta'zinni|N|He drops 2 quest items, so make sure you get the letter as well as the amulet.| |L|36780|M|32,71|
 C Atop the Woodlands |QID|12084|U|36779|N|Use the amulet next to the big arch.|M|32.2,71.2|
 A A Letter for Home |QID|12085| |U|36780|M|32.2,70.6|
 C Strengthen the Ancients |US|QID|12096|U|36786|N|Use the Bark of the Walkers on the Ancients. It will only work on those who are not aggressive.| |M|31.2,59.7|
@@ -176,10 +176,11 @@ F Moa'ki Harbor|QID|11958|M|37.5,45.7|
 A Let Nothing Go To Waste |QID|11958|M|48.0,74.9|
 A Planning for the Future |QID|11960|N|Daily Quest|M|48.3,74.3|
 
-C Wanted: Gigantaur |QID|12090|N|Gigantaur is near where you're about to quest, so if you can get a group for him, do so.|
-C Let Nothing Go To Waste |S|QID|11958|M|45.3,63.7|N|From wolvar that you've killed.|
-C Planning for the Future |QID|11960| |N|Head north to Snowfall Glade.|M|47,65|
-C Let Nothing Go To Waste |US|QID|11958|M|45.3,63.7|N|From wolvar that you've killed.|
+C Let Nothing Go To Waste |QID|11958|S|M|45.3,63.7|N|From wolvar that you've killed.|
+C Planning for the Future |QID|11960|S| |M|47,65|
+C Wanted: Gigantaur |QID|12090|T|Gigantaur|N|Gigantaur is near where you're about to quest, so if you can get a group for him, do so.|
+C Planning for the Future |QID|11960|US| |N|Head north to Snowfall Glade.|M|47,65|
+C Let Nothing Go To Waste |US|QID|11958|US|M|45.3,63.7|N|From wolvar that you've killed.|
 
 T Planning for the Future |QID|11960|M|48.3,74.3|
 T Let Nothing Go To Waste |QID|11958|M|48.0,74.9|
