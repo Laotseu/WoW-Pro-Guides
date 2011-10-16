@@ -241,11 +241,11 @@ A The Obsidian Dragonshrine |QID|12447|M|60.1,54.2|
 
 A Cycle of Life |QID|12454| |N|Talk to Torastrasza, have him send you down to the ground floor. Then ride south to the Emerald Dragonshine. The questgiver patrols around the path.|M|63,69|
 
-C Emerald Dragon Tears |QID|12200|M|63.3,70.3|O|S|
+C Emerald Dragon Tears |QID|12200|O|M|63.3,70.3|S|
 C Seeds of the Lashers |QID|12458|M|63.3,71.0|S|
 C Cycle of Life |QID|12454|
-C Emerald Dragon Tears |QID|12200|M|63.3,70.3|O|US|
-C Seeds of the Lashers |QID|12458|M|63.3,71.0|US|
+C Emerald Dragon Tears |QID|12200|M|63.3,70.3|US|
+C Seeds of the Lashers |QID|12458|O|M|63.3,71.0|US|
 
 T Cycle of Life |QID|12454|M|63.7,71.9|
 A The Plume of Alystros |QID|12456|PRE|12454|

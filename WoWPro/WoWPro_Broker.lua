@@ -314,16 +314,21 @@ function WoWPro:NextStep(k,i)
 			skip = true --Optional steps default to skipped --
 
 			-- Checking Use Items --
-			if WoWPro.use[k] then
-				if GetItemCount(WoWPro.use[k]) >= 1 then
-					skip = false -- If the optional quest has a use item and it's in the bag, it's NOT skipped --
-				end
+			--if WoWPro.use[k] then
+			--	if GetItemCount(WoWPro.use[k]) >= 1 then
+			--		skip = false -- If the optional quest has a use item and it's in the bag, it's NOT skipped --
+			--	end
+			--end
+			if WoWPro.QuestLog[WoWPro.QID[k]] then
+				skip = false -- If the optional quest is in the quest log, it's NOT skipped --
+				WoWPro.prereq[k] = false -- If the quest is in the log, the prereqs must already be met no matter
+												 -- what the guide say
 			end
 		end
-		if skip then break end
+		-- if skip then break end
 
 		-- Skipping profession quests if their requirements aren't met --
-		if WoWPro.prof[k] then
+		if not skip and WoWPro.prof[k] then
 			local prof, proflvl = string.split(";",WoWPro.prof[k])
 			proflvl = proflvl or 1
 
@@ -344,7 +349,7 @@ function WoWPro:NextStep(k,i)
 		end
 
 		-- Skipping reputation quests if their requirements are met --
-		if WoWPro.rep[k] then
+		if not skip and WoWPro.rep[k] then
 			local rep, factionIndex, temprep, replvl = string.split(";",WoWPro.rep[k])
 			if temprep == nil then temprep = "neutral-exalted" end
 			local repID,repmax = string.split("-",temprep)
@@ -393,12 +398,13 @@ function WoWPro:NextStep(k,i)
 			end
         	end	
 		-- Skipping any quests with a greater completionist rank than the setting allows --
-		if WoWPro.rank[k] then
+		if not skip and WoWPro.rank[k] then
 			if tonumber(WoWPro.rank[k]) > WoWProDB.profile.rank then 
 				skip = true 
 			end
 		end
 		
+		-- We call the module NextStep no matter what in case it wants to reverse the decision
 		skip = WoWPro[WoWPro.Guides[GID].guidetype]:NextStep(k, skip)
 		
 		-- Skipping any manually skipped quests --
