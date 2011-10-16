@@ -42,10 +42,10 @@ A The Last Line Of Defense |QID|13086| |M|85.7,76.0|N|Siegemaster Fezzik|
 C The Last Line Of Defense |QID|13086| |M|85,76|N|Fly up to one of the Towers around the Argent Vanguard, click on one of the cannons to operate it. Once you're on you'll need to kill 100 scourge attackers and 3 of the Frostbrood Destroyers (the skeletal drakes) using the cannons abilities.|
 
 T The Last Line Of Defense |QID|13086| |M|85.7,76.0|N|Siegemaster Fezzik|
-A Once More Unto The Breach, Hero |QID|13104| |M|86.1,75.8|N|Highlord Tirion Fordring|
-T Once More Unto The Breach, Hero |QID|13104| |M|83.1,72.9|N|The Ebon Watcher|
-; DK A Once More Unto The Breach, Hero |QID|13105| |M|86.1,75.8|N|Highlord Tirion Fordring|
-; DK T Once More Unto The Breach, Hero |QID|13105| |M|83.1,72.9|N|The Ebon Watcher|
+A Once More Unto The Breach, Hero |QID|13104| |M|86.1,75.8|N|Highlord Tirion Fordring|C|DRUID,HUNTER,MAGE,PALADIN,PRIEST,ROGUE,SHAMAN,WARLOCK,WARRIOR|
+A Once More Unto The Breach, Hero |QID|13105| |M|86.1,75.8|N|Highlord Tirion Fordring|C|DEATHKNIGHT|
+T Once More Unto The Breach, Hero |QID|13104| |M|83.1,72.9|N|The Ebon Watcher|C|DRUID,HUNTER,MAGE,PALADIN,PRIEST,ROGUE,SHAMAN,WARLOCK,WARRIOR|
+T Once More Unto The Breach, Hero |QID|13105| |M|83.1,72.9|N|The Ebon Watcher|C|DEATHKNIGHT|
 A The Purging Of Scourgeholme |QID|13118| |M|83.1,72.9|N|The Ebon Watcher|
 A The Scourgestone |QID|13122| |M||N|The Ebon Watcher|
 A The Stone That Started A Revolution |QID|13130| |M|83.1,73.0|N|Crusade Architect Silas|
