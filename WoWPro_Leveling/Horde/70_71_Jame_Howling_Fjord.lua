@@ -432,9 +432,9 @@ A Warning: Some Assembly Required |QID|11310|M|53.68,65.22|
 T Give it a Name |QID|12181|
 A To Venomspite! |QID|12182|M|52.0,67.4| |N|Make sure you aren't mounted, shapeshifted, or moving when you accept.|
 
-T To Venomspite! |QID|12182|M|77.7,62.7|Z|Drablight|N|If you didn't get flown to Venomspite, abandon To Venomspite!, dismount/unshapeshift/stop moving and reaccept the quest. Don't worry about the destroying the vial warning, it's a provided item.|Z|Dragonblight|
-A The Forsaken Blight and You: How Not to Die |QID|12188|M|77.7,62.7|Z|Drablight|
-A Funding the War Effort |QID|12303|M|76.0,63.2|Z|Drablight| |N|Quartermaster Bartlett|
+T To Venomspite! |QID|12182|M|77.7,62.7|N|If you didn't get flown to Venomspite, abandon To Venomspite!, dismount/unshapeshift/stop moving and reaccept the quest. Don't worry about the destroying the vial warning, it's a provided item.|Z|Dragonblight|
+A The Forsaken Blight and You: How Not to Die |QID|12188|M|77.7,62.7|Z|Dragonblight|
+A Funding the War Effort |QID|12303|M|76.0,63.2|Z|Dragonblight| |N|Quartermaster Bartlett|
 
 A Beachfront Property |QID|12304|N|From Surveyor Hansen.|M|79.4,65.1|Z|Dragonblight|
 
