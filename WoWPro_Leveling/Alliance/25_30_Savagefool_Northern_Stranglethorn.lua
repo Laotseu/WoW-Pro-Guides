@@ -32,7 +32,7 @@ return [[
 
 F Raven Hill|QID|26838|N|Fly to Raven Hill.|
 R Northern Stranglethorn|QID|26838|N|Run to Northern Stranglethorn.|M|44.35,66.14;44.67,91.19|Z|Duskwood|
-f Rebel Camp|QID|26838|M|47.87,11.86|N|At James Stillair.|
+; f Rebel Camp|QID|26838|M|47.87,11.86|N|At James Stillair.|
 T Rebels Without a Clue|QID|26838|M|47.56,10.33|N|To Lieutenant Doren.|
 A The Fate of Kurzen|QID|26735|M|47.56,10.33|N|From Lieutenant Doren.|
 A Krazek's Cookery|QID|26740|M|47.17,10.68|N|From Corporal Kaleb.|
@@ -154,7 +154,7 @@ A Panther Mastery|QID|193|M|62.49,48.16|N|(UI Alert)|
 C Panther Mastery|QID|193|M|65.99,43.29;65.51,36.82;32.95,49.91|N|Kill Bhag'thera and loot his fang. He is somewhere between the waypoints.|T|Bhag'thera|
 C Raptor Mastery|QID|197|M|60.44,61.49|N|Kill Tethis and loot his talon. He can be anywhere in this area.|T|Tethis|
 R Fort Livingston|QID|197|M|52.66,66.18|N|Head to Fort Livingston.|
-f Fort Livingston|QID|197|M|52.66,66.18|N|At Robert Rhodes.|
+; f Fort Livingston|QID|197|M|52.66,66.18|N|At Robert Rhodes.|
 h Fort Livingston|QID|197|M|53.21,66.92|N|From Livingston Marshal.|
 F Rebel Camp|QID|197|M|52.66,66.18|N|At Robert Rhodes.|
 T Bloodscalp Insight|QID|26742|M|47.92,12.02|N|To Berrin Burnquill.|
