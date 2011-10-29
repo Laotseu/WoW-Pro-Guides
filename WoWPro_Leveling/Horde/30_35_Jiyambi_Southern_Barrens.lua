@@ -30,7 +30,7 @@ C Feeding the Fear|QID|25284|US|M|37.27,13.15|
 C Warriors' Redemption|QID|24512|US|NC|M|37.30,14.10|
 T Warriors' Redemption|QID|24512|M|37.63,16.63|N|To Holgom.|
 T Feeding the Fear|QID|25284|M|37.63,16.63|N|To Holgom.|
-f Hunter's Hill|QID|24517|M|39.75,20.18|N|At Unega.|
+; f Hunter's Hill|QID|24517|M|39.75,20.18|N|At Unega.|
 T Holdout at Hunter's Hill|QID|24505|M|39.44,20.33|N|To Onatay.|
 A Put the Fear in Them|QID|24517|M|39.61,19.93|N|From Kilrok Gorehammer.|
 A Raptor Scraps|QID|24514|M|39.44,20.33|N|From Onatay.|
@@ -111,7 +111,7 @@ A Desolation Hold Inspection|QID|24577|PRE|24572|M|41.50,46.78|N|From Warlord Bl
 C Desolation Hold Inspection|QID|24577|NC|M|41.69,69.79|N|Talk to Warlord Bloodhilt - he'll give you a wolf that will take you right where you need to go, past any hostile mobs!|
 T Desolation Hold Inspection|QID|24577|M|41.69,69.79|N|To Warlord Gar'dul.|
 A Changing of the Gar'dul|QID|24591|PRE|24591|M|41.69,69.79|N|From Warlord Gar'dul.|
-f Desolation Hold|QID|24631|M|41.26,70.78|N|At Crador.|
+; f Desolation Hold|QID|24631|M|41.26,70.78|N|At Crador.|
 A Flightmare|RANK|2|QID|24631|M|41.11,70.92|N|From Tomusa.|
 A Silithissues|RANK|2|QID|24654|M|41.62,69.43|N|From Crawgol.|
 h Desolation Hold|QID|24654|M|40.73,69.28|N|If you'd like, set your hearth at Innkeeper Lhakadd.|
