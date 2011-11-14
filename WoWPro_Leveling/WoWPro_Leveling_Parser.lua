@@ -1299,12 +1299,12 @@ function WoWPro.Leveling:UpdateQuestTracker()
 					local numquesttext = select("#", string.split(";", questtext))
 					for l=1,numquesttext do
 						local lquesttext = select(numquesttext-l+1, string.split(";", questtext))
-						local _, _, litemname = string.find(lquesttext, "([^:]+):") -- Everything before the : is the item name
+						local _, _, litemname = string.find(lquesttext, "(.+):") -- Everything before the : is the item name
 						for m=1,GetNumQuestLeaderBoards(j) do
 							if GetQuestLogLeaderBoard(m, j) then
 								local itemtext, _, isdone = GetQuestLogLeaderBoard(m, j)
 --								local _, _, itemName, _, _ = string.find(GetQuestLogLeaderBoard(m, j), "(.*):%s*([%d]+)%s*/%s*([%d]+)");
-								local _, _, itemName = string.find(itemtext, "([^:]+):") -- Everything before the : is the item name
+								local _, _, itemName = string.find(itemtext, "(.+):") -- Everything before the : is the item name
 								--if itemName and string.find(lquesttext,itemName) then
 								if itemName and itemName == litemname then
 									--track = "- "..GetQuestLogLeaderBoard(m, j)
