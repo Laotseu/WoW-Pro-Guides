@@ -346,15 +346,15 @@ A Disturbing Implications |QID|12147|U|36856|M|42.4,38.9|PRE|12145|N|From the ho
 T Disturbing Implications |QID|12147| |N|Head east into the Dragon Wastes and fly to Wyrmrest Temple, Aurastrasza is on the ground floor.|M|60.0,55.2|
 A One of a Kind |QID|12148|PRE|12147|
 
-C One of a Kind |QID|12148| |N|Head to the canyon to the west. Bonesunder has 21,000 HP, but is vulnerable to slowing effects. Run out of range of his Bone Crack and you'll be fine.|M|51,58|
+C One of a Kind |QID|12148|T|Bonesunder| |N|Head to the canyon to the west. Bonesunder has 21,000 HP, but is vulnerable to slowing effects. Run out of range of his Bone Crack and you'll be fine.|M|51,58|
 
 T One of a Kind |QID|12148|N||M|60.0,55.2|
 A Mighty Magnataur |QID|12149|PRE|12148|
 
-C Mighty Magnataur: Drakegore |QID|12149|QO|Drakegore slain: 1/1|N|Drakegore is elite, but doesn't hit too hard, and can be snared/stunned/feared/rooted.|M|68,41|
-C Mighty Magnataur: Iceshatter |QID|12149|QO|Iceshatter slain: 1/1|N|Iceshatter's tougher, as he's immune to movement impairing effects, but still soloable. Run out of range of his Pulsing Shards or bubble/iceblock/CoS through it.|M|67,50|
+C Mighty Magnataur: Drakegore |QID|12149|QO|Drakegore slain: 1/1|T|Drakegore|N|Drakegore is elite, but doesn't hit too hard, and can be snared/stunned/feared/rooted.|M|68,41|
+C Mighty Magnataur: Iceshatter |QID|12149|QO|Iceshatter slain: 1/1|T|Iceshatter|N|Iceshatter's tougher, as he's immune to movement impairing effects, but still soloable. Run out of range of his Pulsing Shards or bubble/iceblock/CoS through it.|M|67,50|
 C In Service of Frost |QID|12127|U|36847|N|Ice Revenants will be on a frozen lake just south of you. Beat one down to 35% and use the Frost Gem on it.|M|66.2,52.9|
-C Mighty Magnataur: Bloodfeast |QID|12149|QO|Bloodfeast slain: 1/1|N|The hardest of the 3, Bloodfeast's completely immune to any CC and summons maggots that heal him, but are immune to AoE. So just burn him as fast as humanely possible.|M|67,70|
+C Mighty Magnataur: Bloodfeast |QID|12149|QO|Bloodfeast slain: 1/1|T|Bloodfeast|N|The hardest of the 3, Bloodfeast's completely immune to any CC and summons maggots that heal him, but are immune to AoE. So just burn him as fast as humanely possible.|M|67,70|
 
 T Mighty Magnataur |QID|12149|N|Back at Wyrmrest Temple.|
 A Reclusive Runemaster |QID|12150|PRE|12149|
