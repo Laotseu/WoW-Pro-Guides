@@ -3,7 +3,7 @@
 -------------------------------------------------------------------------------
 local _G = getfenv(0)
 
-local table = _G.table
+local tinsert = _G.tinsert
 
 local InterfaceOptionsFrame_OpenToCategory = _G.InterfaceOptionsFrame_OpenToCategory
 
@@ -222,9 +222,9 @@ function WoWPro.Leveling:CreateConfig()
 	--blizzPanel = createBlizzOptions()
 	createBlizzOptions()
 
-	table.insert(WoWPro.DropdownMenu, {text = "", notCheckable = true, isTitle = true} )
-	table.insert(WoWPro.DropdownMenu, {text = "WoW-Pro Leveling", notCheckable = true, isTitle = true} )
-	table.insert(WoWPro.DropdownMenu, {text = "About", notCheckable = true, func = function()
+	tinsert(WoWPro.DropdownMenu, {text = "", notCheckable = true, isTitle = true} )
+	tinsert(WoWPro.DropdownMenu, {text = "WoW-Pro Leveling", notCheckable = true, isTitle = true} )
+	tinsert(WoWPro.DropdownMenu, {text = "About", notCheckable = true, func = function()
 			InterfaceOptionsFrame_OpenToCategory("WoW-Pro Leveling")
 		end} )
 end
