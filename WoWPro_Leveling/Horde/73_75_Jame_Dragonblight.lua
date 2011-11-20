@@ -431,8 +431,9 @@ T Heated Battle |QID|12448|M|43.0,50.9|
 A Return to the Earth |QID|12449|M|43.0,50.9|PRE|12448|
 
 N Things to do |QID|12126|N|You're looking for Ruby Acorns, loot them and use them on Ruby Keepers (dead dragons on fire). Also, you're looking for Duke Vallenhal, you need to get him under 35% and use the Unholy Gem on him.|
-C In Service of the Unholy |QID|12126|U|36835|N|Enter the canyon from the southern end, at . Duke Vallenhal patrols around the tree, beat him down to 35% and use the Unholy Gem on him.|M|47,53|
-C Return to the Earth |QID|12449|U|37727|N|Use the Ruby Acorns on the Ruby Keepers. You can find a whole bunch of acorns close to the tree in the centre.|M|46.7,52.8|
+C Return to the Earth |QID|12449|S|U|37727|N|Use the Ruby Acorns on the Ruby Keepers. You can find a whole bunch of acorns close to the tree in the centre.|M|46.7,52.8|
+C In Service of the Unholy |QID|12126|U|36835|T|Duke Vallenhal|N|Enter the canyon from the southern end, at . Duke Vallenhal patrols around the tree, beat him down to 35% and use the Unholy Gem on him.|M|47,53|
+C Return to the Earth |QID|12449|US|U|37727|N|Use the Ruby Acorns on the Ruby Keepers. You can find a whole bunch of acorns close to the tree in the centre.|M|46.7,52.8|
 
 T Return to the Earth |QID|12449|M|43.0,50.9|
 A Through Fields of Flame |QID|12450|M|43.0,50.9|PRE|12449|
@@ -469,33 +470,35 @@ A Stocking Up |QID|12044| M|55.0,23.4|PRE|12469|
 A Shaved Ice |QID|12045| M|54.7,23.2|
 A Nozzlerust Defense |QID|12043|M|54.5,23.6|
 
+C Nozzlerust Defense |QID|12043|S| |N|Two camps are at and (57,28) and another at (59,31). Collect ore from carts.|M|52,31|
 C Stocking Up |QID|12044| |N|Head south to the Dragon Wastes and get on your drake. Two camps are at and (57,28) and another at (59,31). Kill ghouls and collect ore from carts.|M|52,31|
-C Nozzlerust Defense |QID|12043| |N|Two camps are at and (57,28) and another at (59,31). Collect ore from carts.|M|52,31|
+C Nozzlerust Defense |QID|12043|US| |N|Two camps are at and (57,28) and another at (59,31). Collect ore from carts.|M|52,31|
 
 C Shaved Ice |QID|12045| |N|The Iceshard Clusters come from Crystalline Ice Elementals at Coldwind Heights, to the northwest at .|M|54,20|
 
 T Stocking Up |QID|12044|M|55.0,23.4|
+A Hard to Swallow |QID|12049|M|55.0,23.4|
 T Nozzlerust Defense |QID|12043| M|54.5,23.6|
 T Shaved Ice |QID|12045| M|54.7,23.2|
 A Soft Packaging |QID|12046|M|54.7,23.2|PRE|12045|
+A Something That Doesn't Melt |QID|12047|M|54.7,23.2|PRE|12046|
 
-C Soft Packaging |QID|12046| |N|In the area southwest of Nozzlerust post, kill the Jormugar Tunnelers and Dragonbone Condors.|M|53.7,25.4|
+C Something That Doesn't Melt |QID|12047|S| |N|There's three areas you can get the Bone Chunks. Cycle through them till you complete the quest.|M|57,24;60,27;63,28|
+C Soft Packaging |QID|12046|S| |N|In the area southwest of Nozzlerust post, kill the Jormugar Tunnelers and Dragonbone Condors.|M|53.7,25.4|
+C Hard to Swallow |QID|12049| |N|Head east from the camp. Beat a Jormungor down to 80%, then use the bomb on it and loot the pieces.| |U|36732|M|57.5,23.9|
+C Soft Packaging |QID|12046|US| |N|In the area southwest of Nozzlerust post, kill the Jormugar Tunnelers and Dragonbone Condors.|M|53.7,25.4|
+C Something That Doesn't Melt |QID|12047|US| |N|There's three areas you can get the Bone Chunks. Cycle through them till you complete the quest.|M|57,24;60,27;63,28|
 
 T Soft Packaging |QID|12046| M|54.7,23.2|
-A Something That Doesn't Melt |QID|12047|M|54.7,23.2|PRE|12046|
-A Hard to Swallow |QID|12049|M|55.0,23.4|
-
-C Hard to Swallow |QID|12049| |N|Head east from the camp. Beat a Jormungor down to 80%, then use the bomb on it and loot the pieces.| |U|36732|M|57.5,23.9|
-C Something That Doesn't Melt |QID|12047| |N|There's three areas you can get the Bone Chunks, ; (60,27); (63,28). Cycle through them till you complete the quest.|M|57,24|
-
 T Something That Doesn't Melt |QID|12047| M|54.7,23.2|
 T Hard to Swallow |QID|12049| M|55.0,23.4|
 A Harp on This! |QID|12052| M|54.5,23.6|
 A Lumber Hack |QID|12050| M|55.0,23.4|
 
 R Coldwind Heights |QID|12052|N|, northwest.|M|54,20|
-C Harp on This! |QID|12052|U|36734|N|Shredding time! Ability 1 and 2 are attacks, Ability 4 heals, use ability 6 when standing next to a tree marked with a cross to harvest lumber. The Mistress of the Coldwind is at , elite but killable with your Shredder.|M|45,10|
-C Lumber Hack |QID|12050|M|53.1,19.5|
+C Lumber Hack |QID|12050|S|M|53.1,19.5|U|36734| |N|Use ability 6 when standing next to a tree marked with a cross to harvest lumber. |
+C Harp on This! |QID|12052|U|36734|N|Shredding time! Ability 1 and 2 are attacks, Ability 4 heals, The Mistress of the Coldwind is at , elite but killable with your Shredder.|M|45,10|
+C Lumber Hack |QID|12050|US|U|36734|M|53.1,19.5| |N|Use ability 6 when standing next to a tree marked with a cross to harvest lumber.|
 
 T Lumber Hack |QID|12050| |N|Back at Nozzlerust.|M|55.0,23.4|
 T Harp on This! |QID|12052|M|54.5,23.6|
@@ -510,8 +513,9 @@ T Slim Pickings |QID|12075|M|59.4,18.2|
 A Messy Business |QID|12076|M|59.4,18.2|PRE|12075|
 A Stomping Grounds |QID|12079|M|59.0,17.8|
 
+C Stomping Grounds |QID|12079|S| |N|Keep killing, use the Scraper to remove the DoT, it's nasty.| |U|36775|
 C Messy Business |QID|12076| |N|Head into Ice Heart Cave. Kill the Ice Heart Jormungar Feeders, use Zort's Scraper when they cast Corrosive Spit on you. | |U|36775|M|56.2,11.9|
-C Stomping Grounds |QID|12079| |N|Keep killing, use the Scraper to remove the DoT, it's nasty.| |U|36775|
+C Stomping Grounds |QID|12079|US| |N|Keep killing, use the Scraper to remove the DoT, it's nasty.| |U|36775|
 
 T Messy Business |QID|12076|M|59.4,18.2|
 A Apply This Twice A Day |QID|12077|M|59.4,18.2|PRE|12076|
@@ -529,8 +533,9 @@ T The Obsidian Dragonshrine |QID|12447| |N|Head back to the Dragon Wastes, then 
 A No One to Save You |QID|12262|M|35.2,30.0|
 A No Place to Run |QID|12261|M|35.2,30.0|
 
+C No One to Save You |QID|12262|S| |N|Kill skeletons and necromancers on your way back to Serinar |M|35,30|
 C No Place to Run |QID|12261|U|37445|N|Fight your way out to the snow line at , then HP/Mana up. Then use the Destructive Wards and defend them.|M|42,32|
-C No One to Save You |QID|12262| |N|Kill skeletons and necromancers on your way back to Serinar |M|35,30|
+C No One to Save You |QID|12262|US| |N|Kill skeletons and necromancers on your way back to Serinar |M|35,30|
 
 T No One to Save You |QID|12262|M|35.2,30.0|
 T No Place to Run |QID|12261|M|35.2,30.0|
@@ -542,8 +547,9 @@ T The Best of Intentions |QID|12263|M|35.2,30.0|
 A Culling the Damned |QID|12264|M|35.2,30.0|
 A Defiling the Defilers |QID|12265|M|35.2,30.0|
 
+C Culling the Damned |QID|12264|S|
 C Defiling the Defilers |QID|12265| |N|Right click the Necromantic Runes, they look like purple designs.|M|34.2,26.8|
-C Culling the Damned |QID|12264|
+C Culling the Damned |QID|12264|US|
 
 T Culling the Damned |QID|12264|M|35.2,30.0|
 T Defiling the Defilers |QID|12265|M|35.2,30.0|
@@ -557,8 +563,9 @@ A Tales of Destruction |QID|12266|M|35.2,30.0|PRE|12267|
 T The Call of the Crusade |QID|12542| |N|Head to the Dragon Wastes, mount your Drake, then fly as far east toward as you can, then ride the rest of the way.|M|84,26|
 A The Cleansing Of Jintha'kalar |QID|12545|M|84.0,26.1|PRE|12542|
 
+C The Cleansing Of Jintha'kalar |QID|12545|S|M|86.8,22.4|
 C That Which Creates Can Also Destroy |QID|12459|U|37887|N|Fight your way to Overseer Deathgaze, he's at . Use the Seeds of Nature's Wrath on him and kill him.|M|90,19|
-C The Cleansing Of Jintha'kalar |QID|12545|M|86.8,22.4|
+C The Cleansing Of Jintha'kalar |QID|12545|US|M|86.8,22.4|
 
 T The Cleansing Of Jintha'kalar |QID|12545|M|84.0,26.1|
 A Into the Breach! |QID|12789|M|84.0,26.1|
@@ -588,19 +595,22 @@ T Defending Wyrmrest Temple |QID|12372| |N||M|59.2,54.3|
 
 T Return to Angrathar |QID|12500| |N|Get Afrasastrasz to fly you down to the bottom floor, then get the flightmaster to fly you to Korkron Vanguard, then talk to Saurfang the Younger. Enjoy the cinematic :D|M|40.7,18.1|
 
-A Darkness Stirs |QID|13242|M|38.5,19.3|PRE|12500|
+;A Darkness Stirs |QID|13242|M|38.5,19.3|PRE|12500|
 
-C Darkness Stirs |QID|13242| |N|Saurfang's armour is just at Alexstrasza's feet.|M|38.2,18.7|
+;C Darkness Stirs |QID|13242| |N|Saurfang's armour is just at Alexstrasza's feet.|M|38.2,18.7|
 
-T Darkness Stirs |QID|13242| |N|Fly to Warsong Hold.|M|41.4,53.7|
-A Herald of War |QID|13257|M|41.4,53.7|PRE|13242|
+;T Darkness Stirs |QID|13242| |N|Fly to Warsong Hold.|M|41.4,53.7|
+;A Herald of War |QID|13257|M|41.4,53.7|PRE|13242|
 
-T Herald of War |QID|13257| |N|Take to portal, turn the quest in at Thrall.|M|31.8,37.8|
-A A Life Without Regret |QID|13266|M|31.8,37.8|PRE|13257|
+;T Herald of War |QID|13257| |N|Take to portal, turn the quest in at Thrall.|M|31.8,37.8|
+;A A Life Without Regret |QID|13266|M|31.8,37.8|PRE|13257|
 
-T A Life Without Regret |QID|13266|M|61.7,62.7|
-A The Battle For The Undercity |QID|13267|M|61.7,62.7|PRE|13266|
+;T A Life Without Regret |QID|13266|M|61.7,62.7|
+;A The Battle For The Undercity |QID|13267|M|61.7,62.7|PRE|13266|
 
-T The Battle For The Undercity |QID|13267| |N|Talk to Thrall to start a countdown to the event, or just wait if someone else already has. Stick with Sylvanas and Thrall, fight your way through the Undercity, enjoy the ride. Turn it in once you're done.|M|62.0,62.7|
+;T The Battle For The Undercity |QID|13267| |N|Talk to Thrall to start a countdown to the event, or just wait if someone else already has. Stick with Sylvanas and Thrall, fight your way through the Undercity, enjoy the ride. Turn it in once you're done.|M|62.0,62.7|
+
+A To Dragon's Fall |QID|12095| |O| |PRE|12089;12090;12091|
+T To Dragon's Fall |QID|12095|
 ]]
 end)

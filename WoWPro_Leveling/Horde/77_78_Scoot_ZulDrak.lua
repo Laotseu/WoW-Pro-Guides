@@ -1,7 +1,7 @@
 -- URL: http://wow-pro.com/wiki/source_code_zul039drak_horde
 -- Date: 2011-06-25 02:52
 -- Who: Crackerhead22
--- Log: ! Missing A step for step T qid 13099 - Fixed, accept step for " Just Checkin'" is not 13009 but 13099. 
+-- Log: ! Missing A step for step T qid 13099 - Fixed, accept step for " Just Checkin'" is not 13009 but 13099.
 
 -- URL: http://wow-pro.com/node/3296/revisions/24345/view
 -- Date: 2011-04-29 16:53
@@ -41,9 +41,9 @@ N Group quests |QID|12857| |N|This is the first group quest in Zul'Drak. Just ke
 T In Search Of Answers |QID|12902| |N|The glowing blue scroll on the pedestal at Rageclaw Den.| |M|34.92,83.84|
 
 A Orders From Drakuru |QID|12883| |M|34.9,83.9|
+C Trolls Is Gone Crazy! |QID|12861|S| |N|Kill the Drakuru for the Drakuru "Lock Openers". Use them to free the Captured Rageclaws.| |U|41161|
 C This Just In: Fire Still Hot! |QID|12859| |U|41131| |N|Use the fire extinguisher on the burning huts. Each fire will take multiple hits.|
-K Kill Drakuru |QID|12861| |N|Kill the Drakuru for the Drakuru "Lock Openers". You need 8.| |L|41161 8|
-C Trolls Is Gone Crazy! |QID|12861| |N|Free the Captured Rageclaws.| |U|41161|
+C Trolls Is Gone Crazy! |QID|12861|US| |N|Kill the Drakuru for the Drakuru "Lock Openers". Use them to free the Captured Rageclaws.| |U|41161|
 T This Just In: Fire Still Hot! |QID|12859| |N|Back to Light's Breach.| |M|32.0,75.6|
 T Trolls Is Gone Crazy! |QID|12861| |M|32.2,75.7|
 T Orders From Drakuru |QID|12883| |M|32.2,75.7|
@@ -54,6 +54,7 @@ A Crusader Forward Camp |QID|12894| |M|32.2,75.7|
 T Crusader Forward Camp |QID|12894| |N|To the NW, just across the road.| |M|25.3,64.0|
 
 A That's What Friends Are For... |QID|12903| |M|25.3,64.0|
+C Making Something Out Of Nothing |QID|12901|S| |N|The Scrap Metal is on the ground all over.|
 
 A Making Something Out Of Nothing |QID|12901| |M|25.3,63.9|
 
@@ -61,7 +62,7 @@ A A Great Storm Approaches |QID|12912| |N|Gymer is in the big cage at Thrym's En
 
 A Light Won't Grant Me Vengeance |QID|12904| |N|He's in one of the glowing green vats a little west of Gymer| |M|17.6,57.6|
 N Find Burr |QID|12903| |QO|Burr found: 1/1| |N|He's across the courtyard to the west on one of the tables.| |M|15.7,59.5|
-C Making Something Out Of Nothing |QID|12901| |N|The Scrap Metal is on the ground all over.|
+C Making Something Out Of Nothing |QID|12901|US| |N|The Scrap Metal is on the ground all over.|
 C That's What Friends Are For... |QID|12903| |N|Head to Dargath's Demise and find Crusader Dargath in the ruins. He's got a glowing swirl around him.| |M|25.0,51.6|
 T That's What Friends Are For... |QID|12903| |N|Back to Crusader Forward Camp.| |M|25.3,64.0|
 T Making Something Out Of Nothing |QID|12901| |M|25.3,63.9|
@@ -69,48 +70,51 @@ T A Great Storm Approaches |QID|12912| |M|25.3,63.9|
 
 A Gymer's Salvation |QID|12914| |M|25.3,63.9|
 K Banshees |QID|12914| |N|Kill the banshees in The Dead Fields for their essence. They are floating so you will probably have to pull them to you.| |L|41504 6|
-C Gymer's Salvation |QID|12914| |N|Now head to the area around Ebon Watch and kill the Icetouched Earthragers.| |M|14.26,73.60|
+C Gymer's Salvation |QID|12914|S| |N|Now head to the area around Ebon Watch and kill the Icetouched Earthragers.| |M|14.26,73.60|
 T The Ebon Watch |QID|12884| |M|14.1,73.8|
 
 A Kickin' Nass and Takin' Manes |QID|12630| |M|14.1,73.8|
 ; f Ebon Watch |QID|12630| |M|14.1,73.6|
 C Kickin' Nass and Takin' Manes |QID|12630| |N|Kill the trolls, put the boot to Nass!| |U|38659|
+C Gymer's Salvation |QID|12914|US| |N|Now head to the area around Ebon Watch and kill the Icetouched Earthragers.| |M|14.26,73.60|
 T Kickin' Nass and Takin' Manes |QID|12630| |N|Back to Ebon Watch| |M|14.1,73.8|
 
+
+
 A An Invitation, of Sorts... |QID|12631| |O| |N|From the Unliving Choker. You get this quest chain if you didn't complete the Drakuru quest chain in Grizzly Hills. | |U|38660|
-T An Invitation, of Sorts... |QID|12631| |O| |M|14.1,73.8|
+A Darkness Calling |QID|12633| |O| |PRE|12238| |N|From the Writhing Choker. You get this quest chain if you completed the Drakuru quest chain in Grizzly Hills.| |U|38673|
+T An Invitation, of Sorts... |QID|12631| |M|14.1,73.8|
+T Darkness Calling |QID|12633| |M|14.1,73.8|
 
 A Near Miss |QID|12637| |O| |PRE|12631|
-C Near Miss |QID|12637| |O| |N|Bloodrose Datura will give you a demo.| |M|14.29,74.03|
+C Near Miss |QID|12637| |N|Bloodrose Datura will give you a demo.| |M|14.29,74.03|
 
-A Darkness Calling |QID|12633| |O| |N|From the Writhing Choker. You get this quest chain if you completed the Drakuru quest chain in Grizzly Hills.| |U|38673|
 A Close Call |QID|12638| |O| |PRE|12633|
-T Darkness Calling |QID|12633| |O| |M|14.1,73.8|
-C Close Call |QID|12638|| O| |N|Bloodrose Datura will give you a demo.| |M|14.3,74.0|
+C Close Call |QID|12638| |N|Bloodrose Datura will give you a demo.| |M|14.3,74.0|
 
 A Taking a Stand |QID|12795| |M|14.3,74.0|
-T Near Miss |QID|12637| |O| |M|14.1,73.8|
+T Near Miss |QID|12637| |M|14.1,73.8|
+T Close Call |QID|12638| |M|14.1,73.8|
 
-A You Can Run, But You Can't Hide |QID|12629| |O| |PRE|12631| |M|14.1,73.8|
-C You Can Run, But You Can't Hide |QID|12629| |O| |N|Around the Reliquary of Agony. Pick up the Drool from the ground. Kill the Abominations.| |M|21.24,75.01|
-T You Can Run, But You Can't Hide |QID|12629| |O| |N|Back to Ebon Watch.| |M|14.1,73.8|
+A You Can Run, But You Can't Hide |QID|12629| |O| |PRE|12637| |M|14.1,73.8|
+C You Can Run, But You Can't Hide |QID|12629| |N|Around the Reliquary of Agony. Pick up the Drool from the ground. Kill the Abominations.| |M|21.24,75.01|
+T You Can Run, But You Can't Hide |QID|12629| |N|Back to Ebon Watch.| |M|14.1,73.8|
+A Silver Lining |QID|12643| |O| |PRE|12638| |M|14.1,73.8|
+C Silver Lining |QID|12643| |N|Around the Reliquary of Agony. Pick up the Drool from the ground. Kill the Abominations.| |M|21.24,75.01|
+T Silver Lining |QID|12643| |N|Back to Ebon Watch.| |M|14.1,73.8|
 
-A Dressing Down |QID|12648| |O| |PRE|12631| |M|14.1,73.8|
-C Dressing Down |QID|12648| |O| |N|Return to the Reliquary of Agony and use the choker. Buy the plasma from Gristlegut.| |U|38699| |M|19.9,75.5|
-T Close Call |QID|12638| |O| |M|14.1,73.8|
 
-A Silver Lining |QID|12643| |O| |PRE|12633| |M|14.1,73.8|
-C Silver Lining |QID|12643| |O| |N|Around the Reliquary of Agony. Pick up the Drool from the ground. Kill the Abominations.| |M|21.24,75.01|
-T Silver Lining |QID|12643| |O| |N|Back to Ebon Watch.| |M|14.1,73.8|
+A Dressing Down |QID|12648| |O| |PRE|12629| |M|14.1,73.8|
+C Dressing Down |QID|12648| |N|Return to the Reliquary of Agony and use the choker. Buy the plasma from Gristlegut.| |U|38699| |M|19.9,75.5|
 
 A Suit Up! |QID|12649| |O| |PRE|12633| |M|14.1,73.8|
-C Suit Up! |QID|12649| |O| |N|Return to the Reliquary of Agony and use the choker. You cannot use while shapeshifted. Buy the plasma from Gristlegut.| |U|38699| |M|19.9,75.5|
+C Suit Up! |QID|12649| |N|Return to the Reliquary of Agony and use the choker. You cannot use while shapeshifted. Buy the plasma from Gristlegut.| |U|38699| |M|19.9,75.5|
 
-A Feedin' Da Goolz |QID|12652| |M|19.9,75.5|
-C Feedin' Da Goolz |QID|12652| |N|Use the bowl near the ghouls. Be careful of the Blightguards, they see through your disguise. You should hotkey the chocker because your diguise will fail at some point.| |U|38701|
-T Feedin' Da Goolz |QID|12652| |N|Back to Gristlegut.| |M|19.9,75.5|
-T Dressing Down |QID|12648| |O| |N|Back to Ebon Watch.| |M|14.1,73.8|
-T Suit Up! |QID|12649| |O| |N|Back to Ebon Watch.| |M|14.1,73.8|
+A Feedin' Da Goolz |QID|12652| |M|19.9,75.5| |U|38699|
+C Feedin' Da Goolz |QID|12652|  |U|38701| |N|Use the bowl near the ghouls. Be careful of the Blightguards, they see through your disguise. You should hotkey the chocker because your diguise will fail at some point.| |U|38701|
+T Feedin' Da Goolz |QID|12652|  |U|38699| |N|Back to Gristlegut.| |M|19.9,75.5|
+T Dressing Down |QID|12648| |N|Back to Ebon Watch.| |M|14.1,73.8|
+T Suit Up! |QID|12649| |N|Back to Ebon Watch.| |M|14.1,73.8|
 
 A Infiltrating Voltarus |QID|12661| |M|14.1,73.8|
 T Gymer's Salvation |QID|12914| |N|Back to Crusader Forward Camp.| |M|25.3,63.9|
