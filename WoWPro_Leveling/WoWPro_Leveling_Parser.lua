@@ -79,6 +79,15 @@ local UnitSex = _G.UnitSex
 
 local LibStub = _G.LibStub
 
+local err_params = {}
+local function err(msg, ...)
+	if not _G.WoWPro.quest_log_debug then return end
+	msg = tostring(msg)
+	wipe(err_params)
+	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
+	_G.geterrorhandler()(msg:format(_G.unpack(err_params)) .. " - " .. _G.time())
+end
+
 --------------------------------------
 --      WoWPro_Leveling_Parser      --
 --------------------------------------
@@ -130,20 +139,24 @@ function WoWPro.Leveling:NextStep(k, skip)
 
 	local GID = WoWProDB.char.currentguide
 
+-- if k == 56 then err("skip = %s",skip) end
 	-- Optional Quests --
 	if WoWPro.optional[k] and WoWPro.QID[k] then
 
+-- if k == 56 then err("skip = %s: optional",skip) end
 		-- Checking Quest Log --
 		if WoWPro.QuestLog[WoWPro.QID[k]] then
 			skip = false -- If the optional quest is in the quest log, it's NOT skipped --
-			WoWPro.prereq[k] = false -- If the quest is in the log, the prereqs must already be met no matter
+			WoWPro.prereq[k] = nil -- If the quest is in the log, the prereqs must already be met no matter
 											 -- what the guide say
 		--end
+-- if k == 56 then err("skip = %s: in quest log",skip) end
 
 		-- Checking Prerequisites --
 		elseif WoWPro.prereq[k] then
 			skip = false -- defaulting to NOT skipped
 
+-- if k == 56 then err("skip = %s: got prereq",skip) end
 			local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
 			for j=1,numprereqs do
 				local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
@@ -152,14 +165,18 @@ function WoWPro.Leveling:NextStep(k, skip)
 				end
 			end
 
+-- if k == 56 then err("skip = %s: prereq checked",skip) end
+
 			-- If it is skipped, mark the quest as skipped
-			if WoWPro.action[k] == "A"
-			or WoWPro.action[k] == "C"
-			or WoWPro.action[k] == "T" then
-				WoWProCharDB.skippedQIDs[WoWPro.QID[k]] = true
-				WoWProCharDB.Guide[GID].skipped[k] = true
-			else
-				WoWProCharDB.Guide[GID].skipped[k] = true
+			if skip then
+				if WoWPro.action[k] == "A"
+				or WoWPro.action[k] == "C"
+				or WoWPro.action[k] == "T" then
+					WoWProCharDB.skippedQIDs[WoWPro.QID[k]] = true
+					WoWProCharDB.Guide[GID].skipped[k] = true
+				else
+					WoWProCharDB.Guide[GID].skipped[k] = true
+				end
 			end
 		end
 
@@ -170,11 +187,15 @@ function WoWPro.Leveling:NextStep(k, skip)
 	and not WoWProCharDB.completedQIDs[k]
 	and not WoWProCharDB.Guide[GID].skipped[k]
 	and not WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
+-- if k == 56 then err("skip = %s: prereq with skip",skip) end
+
+
 		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
 		for j=1,numprereqs do
 			local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
 			if WoWProCharDB.skippedQIDs[tonumber(jprereq)] then
 				skip = true
+-- if k == 56 then err("skip = %s: prereq was skiped",skip) end
 				-- If their prerequisite has been skipped, skipping any dependant quests --
 				if WoWPro.action[k] == "A"
 				or WoWPro.action[k] == "C"
@@ -193,8 +214,10 @@ function WoWPro.Leveling:NextStep(k, skip)
 	    if tonumber(WoWPro.level[k]) <= UnitLevel("player") then
 		    skip = true
 	    end
+-- if k == 56 then err("skip = %s: loot check",skip) end
 	end
 
+-- if k == 56 then err("skip = %s: before return",skip) end
 	return skip
 end
 
