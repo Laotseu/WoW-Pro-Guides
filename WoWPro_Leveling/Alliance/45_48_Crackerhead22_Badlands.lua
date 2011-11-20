@@ -50,7 +50,7 @@ T Fuselight, Ho!|QID|27762|M|92.6,38.9|N|To Eddie Flofizzle.|
 A To Fuselight Proper|QID|27763|M|92.48,38.94|N|From Eddie Flofizzle.|
 R Badlands|QID|27763|M|88.13,32.54|N|Head to Fuselight by going through the teleporter.|
 
-f Fuselight|QID|27763|M|82.02,30.88;74.93,33.86;68.62,30.77;70.17,35.40;67.94,35.65;64.35,35.24|N|Continue to Mixi Sweetride at Fuselight by following the glossy looking arrows.|
+; f Fuselight|QID|27763|M|82.02,30.88;74.93,33.86;68.62,30.77;70.17,35.40;67.94,35.65;64.35,35.24|N|Continue to Mixi Sweetride at Fuselight by following the glossy looking arrows.|
 h Fuselight|QID|27763|M|65.88,35.85|N|At Sally Gearwell.|
 T To Fuselight Proper|QID|27763|M|65.12,38.25|N|To Dolph Blastus.|
 A Easily Swayed|QID|27774|M|65.12,38.25|N|From Dolph Blastus.|
@@ -93,7 +93,7 @@ A Dustwind Dig|QID|27791|M|47.05,56.55|N|From Dr. Hieronymus Blam.|
 T Dustwind Dig|QID|27791|M|49.19,36.84|N|To Lead Prospector Durdin.|
 A All's Fair in Love, War, and Archaeology|QID|27792|M|49.19,36.84|N|From Lead Prospector Durdin.|
 
-f Dustwind Dig|QID|27772|M|48.90,36.33|N|At Nancy Skybrew.|
+; f Dustwind Dig|QID|27772|M|48.90,36.33|N|At Nancy Skybrew.|
 r Sell junk, repair/restock.|QID|27823|
 A A Dwarf's Got Needs|QID|27823|M|49.44,37.11|N|From Sigrun Ironhew.|
 C A Dwarf's Got Needs|QID|27823|M|49.03,28.78|N|Kill Dark Iron Dwarves to obtain 15 mugs of "Shadowstout".|
@@ -143,7 +143,7 @@ N Ride to the end of the canyon|QID|27715|M|43.38,41.13|QO|Ride to the end of th
 C The Day that Deathwing Came: What Really Happened|QID|27715|M|39.37,38.51|N|Fly up to Deathwing.|
 T The Day that Deathwing Came: What Really Happened|QID|27715|M|26.29,62.29|N|To Martek the Exiled.|
 
-f Dragon's Mouth|QID|27715|M|21.79,57.73|N|At Jake Badlands.|
+; f Dragon's Mouth|QID|27715|M|21.79,57.73|N|At Jake Badlands.|
 T Into the Dragon's Mouth|QID|27826|M|21.29,57.79|N|To Rhea.|
 A The Swift, the Fierce, and the Stout|QID|27827|M|21.29,57.79|N|From Rhea.|
 A Half-Ton Holdouts|QID|27833|M|20.85,57.28|N|From Terrance Storm.|

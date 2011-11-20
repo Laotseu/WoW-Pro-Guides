@@ -40,7 +40,7 @@ WoWPro.Leveling:RegisterGuide('JiySto2530', "Stonetalon Mountains", 'Jiyambi', '
 return [[
 
 R Silverwind Refuge|QID|25945|M|49.29,65.25|Z|Ashenvale|N|In Ashenvale.|
-f Silverwind Refuge|QID|25945|M|49.29,65.25|Z|Ashenvale|N|At Wind Tamer Shoshok.|
+; f Silverwind Refuge|QID|25945|M|49.29,65.25|Z|Ashenvale|N|At Wind Tamer Shoshok.|
 T Warchief's Command: Stonetalon Mountains!|QID|28532|M|49.90,65.74|Z|Ashenvale|N|To Blood Guard Aldo Rockrain in Ashenvale.|
 A We're Here to Do One Thing, Maybe Two...|QID|25945|M|49.90,65.74|Z|Ashenvale|N|From Blood Guard Aldo Rockrain.|
 C We're Here to Do One Thing, Maybe Two...|QID|25945|NC|M|48.58,66.46|Z|Ashenvale|N|Hop on the wagon and enjoy the ride.|
@@ -62,7 +62,7 @@ T Alliance Attack Plans|QID|26002|M|74.28,47.71|N|To Saurboz.|
 A Krom'gar Fortress|QID|26004|PRE|26002|M|74.28,47.71|N|From Saurboz.|
 
 R Krom'gar Fortress|QID|26004|M|66.54,62.80|
-f Krom'gar Fortress|QID|26004|M|66.54,62.80|N|At Kormal the Swift.|
+; f Krom'gar Fortress|QID|26004|M|66.54,62.80|N|At Kormal the Swift.|
 T Krom'gar Fortress|QID|26004|M|66.13,63.72|N|To Overlord Krom'gar.|
 A Seek and Destroy|QID|26009|M|66.07,63.75|RANK|3|N|From Overlord Krom'gar.|
 A Ashes to Ashes|QID|26010|PRE|26004|M|66.13,63.72|N|From Overlord Krom'gar.|
@@ -119,7 +119,7 @@ A Eyes and Ears: Malaka'jin|QID|26059|PRE|26058|M|66.13,63.69|N|From Overlord Kr
 B Quartermaster|QID|26059|M|65.85,64.12|N|You've gone up a rank in the Krom'gar army! Check and see if there's anything you want at the quartermaster before moving on.|
 
 R Malaka'jin|QID|26063|M|64.33,62.22;60.93,79.45;70.61,89.44|
-f Malaka'jin|QID|26063|M|70.61,89.44|N|At Zillane.|
+; f Malaka'jin|QID|26063|M|70.61,89.44|N|At Zillane.|
 T Eyes and Ears: Malaka'jin|QID|26059|M|71.15,91.23|N|To Witch Doctor Jin'Zil.|
 A Da Voodoo: Stormer Heart|QID|26060|PRE|26059|M|71.15,91.23|N|From Witch Doctor Jin'Zil.|
 A Da Voodoo: Ram Horns|QID|26061|PRE|26059|M|71.15,91.23|N|From Witch Doctor Jin'Zil.|
@@ -164,7 +164,7 @@ A Beginning of the End|QID|26074|M|66.20,63.64|N|From Overlord Krom'gar.|
 B Quartermaster|QID|26074|M|65.85,64.12|N|You've gone up a rank in the Krom'gar army! Check and see if there's anything you want at the quartermaster before moving on.|
 
 C Beginning of the End|NC|QID|26074|M|66.65,63.62|N|Hop on the balloon and ride it to the Sludgeworks.|
-f The Sludgewerks|QID|26074|M|53.84,40.14|N|At Flok.|
+; f The Sludgewerks|QID|26074|M|53.84,40.14|N|At Flok.|
 T Beginning of the End|QID|26074|M|52.93,39.18|N|To Jibbly Rakit.|
 A The Turd Problem|QID|26075|M|52.93,39.18|N|From Jibbly Rakit.|
 C The Turd Problem|QID|26075|M|55.65,45.93;56.04,44.01|N|Kill wyverns.|
@@ -177,7 +177,7 @@ A Final Delivery|QID|26077|M|52.93,39.18|N|From Jibbly Rakit.|
 C Final Delivery|QID|26077|M|51.20,45.51|N|Hop on the balloon and ride it to Cliffwalker Post.|
 T Final Delivery|QID|26077|M|45.11,32.75|N|To General Grebo.|
 A To Battlescar!|QID|26082|M|45.11,32.75|N|From General Grebo.|
-f Cliffwalker Post|QID|26082|M|45.11,30.92|N|At Orna Skywatcher.|
+; f Cliffwalker Post|QID|26082|M|45.11,30.92|N|At Orna Skywatcher.|
 C To Battlescar!|QID|26082|M|46.04,36.01;41.23,38.49|N|Take the lift down, then get into a demolisher. Ability 1 is ranged, Ability 2 melee. Kill alliance units and glaive throwers (ballista-like seige machines).|
 T To Battlescar!|QID|26082|M|45.11,32.82|N|To General Grebo, back up on Cliffwalker Post.|
 A Proof of Lies|QID|26097|PRE|26082|M|45.00,32.82|N|From High Chieftain Cliffwalker.|

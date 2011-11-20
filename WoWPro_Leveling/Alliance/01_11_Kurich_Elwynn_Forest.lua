@@ -274,7 +274,7 @@ T Ending The Invasion|QID|26390|M|48.20,42.06|N|To Marshal McBride.|
 A Report To Goldshire|QID|54|M|48.20,42.06|N|From Marshal McBride.|
 
 A Rest And Relaxation|QID|2158|M|45.56,47.73|N|From Falkhaan Isenstrider.|
-f Goldshire|QID|2158|M|41.72,64.64|N|At Bartlett the Brave.|
+; f Goldshire|QID|2158|M|41.72,64.64|N|At Bartlett the Brave.|
 h Lion's Pride Inn|QID|2185|M|43.77,65.80|N|At Innkeeper Farley.|
 T Rest And Relaxation|QID|2158|M|43.77,65.80|N|To Innkeeper Farley.|
 A Kobold Candles|QID|60|M|43.32,65.71|N|From William Pestle.|
@@ -348,7 +348,7 @@ A A Bundle Of Trouble|QID|5545|M|81.38,66.11|N|From Supervisor Raelen.|
 T Wanted: James Clark|QID|26152|M|81.86,66.04|N|To Marshal McCree.|
 T The Collector|QID|123|M|81.86,66.04|N|To Marshal McCree.|
 A Manhunt|QID|147|M|81.86,66.04|N|From Marshal McCree.|
-f Eastvale Logging Camp|QID|147|M|81.83,66.56|N|At Goss the Swift.|
+; f Eastvale Logging Camp|QID|147|M|81.83,66.56|N|At Goss the Swift.|
 r Sell Junk and Repair.|QID|147|
 
 C A Bundle Of Trouble|N|Collect 8 Bundles Of Wood.|QID|5545|M|80.75,61.33|NC|

@@ -137,6 +137,7 @@ T You Have Our Thanks|QID|26270|M|56.37,30.60|N|To Salma Saldean.|
 A Hope for the People|QID|26266|RANK|1|M|56.37,30.60|N|From Salma Saldean.|
 
 A CLUCK!|QID|3861|RANK|3|M|56.02,31.28|N|To get this quest, buy one unit of Special Chicken Feed from Farmer Saldean, find a chicken, and repeatedly type /chicken at it until eventually it turns friendly, and offer the quest.|
+; f Sentinel Hill|QID|26266|NC|M|56.96,47.10|N|Get the flight path.|
 T CLUCK!|QID|3861|RANK|3|M|56.02,3128|N|To Chicken - enjoy your new pet!|
 
 T Hope for the People|QID|26266|M|56.88,47.13|N|To Hope Saldean at Sentinel Hill.|
@@ -163,6 +164,7 @@ A Jango Spothide|QID|26288|PRE|26287|RANK|1|M|56.36,47.54|N|From Captain Danuvin
 T Feeding the Hungry and the Hopeless|QID|26271|M|56.90,47.03|N|To Hope Saldean.|
 A Find Agent Kearnen|QID|26289|RANK|1|M|56.44,47.46|N|From Marshal Gryan Stoutmantle.|
 
+; f Moonbrook|M|42.13,63.39|N|At Tina Skyden.|
 r William MacGregor |QID|26288|M|57.70,53.71|N|Take this opportunity to repair and sell your junk.\n\nClick this step to continue.|
 C Jango Spothide|QID|26288|M|62.28,76.43|N|Kill Jango Spothide as well as the Riverpaw Mystics and Taskmasters.|
 
