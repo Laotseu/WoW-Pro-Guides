@@ -85,7 +85,7 @@ R Stormwind City |QID|28716|N|The questing will begin in Stormwind City, where y
 A Hero's Call: Twilight Highlands!|QID|28716|M|62.90,71.78|N|From the Message boards at either end of town.|Z|Stormwind City|
 T Hero's Call: Twilight Highlands!|QID|28716|M|85.62,31.93|N|To King Varian Wrynn.|Z|Stormwind City|
 
-A My Son, the Prince|QID|26960|PRE|28716|M|85.62,31.93|N|From King Varian Wrynn.|Z|Stormwind City|
+A My Son, the Prince|QID|26960|M|85.62,31.93|N|From King Varian Wrynn.|Z|Stormwind City|
 C My Son, the Prince|QID|26960|M|85.64,31.86|Z|Stormwind City|N|Talk to Anduin,|NC|
 T My Son, the Prince|QID|26960|M|85.62,31.93|N|To King Varian Wrynn.|Z|Stormwind City|
 
@@ -93,7 +93,7 @@ A Rallying the Fleet|QID|26975|M|85.62,31.93|N|From King Varian Wrynn.|Z|Stormwi
 A Twilight Investigation|QID|26977|M|85.62,31.93|N|From King Varian Wrynn.|Z|Stormwind City|
 T Twilight Investigation|QID|26977|M|85.26,31.42|N|To Major Samuelson.|Z|Stormwind City|
 
-A The Usual Suspects|QID|26997||PRE|26977|M|85.26,31.42|N|From Major Samuelson.|Z|Stormwind City|
+A The Usual Suspects|QID|26997|M|85.26,31.42|N|From Major Samuelson.|Z|Stormwind City|
 C The Usual Suspects|QID|26997|M|29.06,25.46|N|Interrogate dock workers in this area.|Z|Stormwind City|NC|
 T The Usual Suspects|QID|26997|M|29.06,25.46|N|To Anduin Wrynn.|Z|Stormwind City|
 
@@ -101,44 +101,44 @@ C Rallying the Fleet|QID|26975|M|33.33,39.07|N|Speak to Supply Sergeant Graves.|
 T Rallying the Fleet|QID|26975|M|33.33,39.07|N|To Supply Sergeant Graves.|Z|Stormwind City|
 
 A Missing Parts|QID|27038|PRE|26975|M|33.33,39.07|N|From Supply Sergeant Graves.|Z|Stormwind City|
-A Peasant Problems|QID|27044|PRE|26977|M|33.23,39.38|N|From Anduin Wrynn.|Z|Stormwind City|
+A Peasant Problems|QID|27044|M|33.23,39.38|N|From Anduin Wrynn.|Z|Stormwind City|
 
 C Missing Parts|QID|27038|PRE|26975|M|34.09,43.89|N|Found in this area around the docks.|Z|Stormwind City|NC|
 T Missing Parts|QID|27038|PRE|26975|M|34.50,38.28|N|To Fargo Flintlocke.|Z|Stormwind City|
 
-A He's Holding Out on Us|QID|27064|PRE|26977|N|From Anduin Wrynn|Z|Stormwind City|
+A He's Holding Out on Us|QID|27064|N|From Anduin Wrynn|Z|Stormwind City|
 C Peasant Problems|QID|27044|NC|M|52.07,6.26|N|Speak to Farmer Wallerton at the Walleton Stead.|Z|Stormwind City|NC|
 T Peasant Problems|QID|27044|M|52.07,6.26|N|To Farmer Wallerton.|Z|Stormwind City|
 
-A Unholy Cow|QID|27060|PRE|26977|M|51.96,5.83|N|From Farmer Wollerton.|Z|Stormwind City|
+A Unholy Cow|QID|27060|M|51.96,5.83|N|From Farmer Wollerton.|Z|Stormwind City|
 C Unholy Cow|QID|27060|M|44.05,4.28|N|Follow the trail of parts. You will be attacked once the first part of the quest is completed. If you die, then you will need to return to the throne room to retrive the prince again.|Z|Stormwind City|
 T Unholy Cow|QID|27060|M|44.05,4.28|N|To Anduin Wrynn.|Z|Stormwind City|
 
-C He's Holding Out on Us|QID|27064|M|80.39,62.34|N|Head to SI:7 in The Old Town. There is a small stairwell leading up to the 3rd floor.|Z|Stormwind City|NC|
+C He's Holding Out on Us|QID|27064|M|80.39,62.34|N|Head to SI:7 in The Old Town.  There is a small stairwell leading up to the 3rd floor.|Z|Stormwind City|NC|
 
 T He's Holding Out on Us|QID|27064|M|80.39,62.34|N|To Anduin Wrynn.|Z|Stormwind City|
-A Expert Opinion|QID|28807|PRE|26977|M|80.39,62.34|N|From Anduin Wrynn|Z|Stormwind City|
-T Expert Opinion|QID|28807|M|81.28,63.32|N|To Master Mathias Shaw, same building.|
+A Expert Opinion|QID|28807|M|80.39,62.34|N|From Anduin Wrynn|Z|Stormwind City|
+T Expert Opinion|QID|28807|M|81.28,63.32|Z|Stormwind City|N|To Master Mathias Shaw, same building.|
 
-A The Old Barracks|QID|27072|PRE|26977|M|81.28,63.32|N|From Master Mathias Shaw.|Z|Stormwind City|
+A The Old Barracks|QID|27072|M|81.28,63.32|N|From Master Mathias Shaw.|Z|Stormwind City|
 C The Old Barracks|QID|27072|M|37.24,56.47|N|Head to the Ruined Barracks. Kill crazed cultists. Work on the building at the waypoint, since you need to make your way down to the bottom floor to turn in this quest.|Z|Stormwind City|
-T The Old Barracks|QID|27072|M|37.24,56.47|N|To Jack Bauden.|
+T The Old Barracks|QID|27072|M|37.24,56.47|N|To Jack Bauden.|Z|Stormwind City|
 
-A Cataclysm in the Catacombs|QID|27092|PRE|26977|M|37.24,56.47|N|From Jack Bauden.|Z|Stormwind City|
+A Cataclysm in the Catacombs|QID|27092|M|37.24,56.47|N|From Jack Bauden.|Z|Stormwind City|
 C Cataclysm in the Catacombs|QID|27092|M|51.30,42.30|N|Head to the Cathedral of Light, then back right hand side will be the route down to the catacombs found in the bottom of the Cathedral of Light. Kill the Black Bishop and then disarm the bomb.|Z|Stormwind City|
-T Cataclysm in the Catacombs|QID|27092|M|50.45,42.42|N|To the disarmed bomb.|Z|Stormwind City|
+T Cataclysm in the Catacombs|QID|27092|M|50.45,42.42|N|From the disarmed bomb.|Z|Stormwind City|
 
-A A Villain Unmasked|QID|27106|PRE|26977|M|50.45,42.42|N|From the disarmed bomb.|Z|Stormwind City|
+A A Villain Unmasked|QID|27106|M|50.45,42.42|N|From the disarmed bomb.|Z|Stormwind City|
 C A Villain Unmasked|QID|27106|M|85.19,32.25|N|Head to Stormwind Keep, and talk to Major Samuelson. Once confronted, he will turn into a Level 84 elite, which the Guards will help you defeat.|Z|Stormwind City|
 T A Villain Unmasked|QID|27106|M|85.66,32.00|N|To King Varian Wrynn.|Z|Stormwind City|
 
-A Twilight Shores|QID|28238|PRE|26977|M|85.66,32.00|N|From King Varian Wrynn.|Z|Stormwind City|
+A Twilight Shores|QID|28238|M|85.66,32.00|N|From King Varian Wrynn.|Z|Stormwind City|
 T Twilight Shores|QID|28238|M|26.19,47.29|N|To Fargo Flintlocke in Stormwind Harbour.|Z|Stormwind City|
 
-A Twilight Shores|QID|28832|PRE|26977|M|26.19,47.29|N|From Fargo Flintlocke. Then hop in his boat.|Z|Stormwind City|
+A Twilight Shores|QID|28832|M|26.19,47.29|N|From Fargo Flintlocke. Then hop in his boat.|Z|Stormwind City|
 T Twilight Shores|QID|28832|M|80.99,79.43|N|Hop into Flintlocke's Seaplane which will take you to The Twilight Highlands, then to Lieutenant Fawkes.|
 
-A Welcome to Highbank!|QID|28596|PRE|26977|M|80.99,79.43|N|From Lieutenant Fawkes.|
+A Welcome to Highbank!|QID|28596|M|80.99,79.43|N|From Lieutenant Fawkes.|
 C Welcome to Highbank!|QID|28596|M|79.04,76.01|N|Kill the Axebite Infantry (avoid the Bilgewater Gunman as well as Grit's 387k and a PvP flag)|
 T Welcome to Highbank!|QID|28596|M|80.99,79.43|N|To Lieutenant Fawkes.|
 
@@ -154,9 +154,8 @@ A Kurdran's Waitin'|QID|28599|PRE|28597|M|78.93,76.70|N|From Fargo Flintlocke.|
 T Kurdran's Waitin'|QID|28599|M|79.10,78.32|N|To Kurdran Wildhammer upstairs inside the castle.|
 
 A Our Boys on the Shore|QID|27338|PRE|28597|M|79.10,78.32|N|From Kurdran Wildhammer.|
-A Salvage Operation|QID|27177|M|79.28,78.47|N|From Simon Chandler.|S|
+A Salvage Operation|QID|27177|M|79.28,78.47|N|From Simon Chandler.|
 A Naga Reinforcements|QID|27178|M|78.28,78.47|N|From Simon Chandler.|
-A Salvage Operation|QID|27177|M|79.28,78.47|N|From Simon Chandler.|US|
 
 A Siren's Song|QID|27200|M|76.02,79.70|N|From Ephram Hardstone, who's on the sinking ship at the Obsidian Breakers (southwest of Highbank).|
 C Siren's Song|QID|27200|M|76.09,79.69|N|Once you're able to, attack and kill Ophelia. Make sure Ephram doesn't die.|
@@ -166,15 +165,13 @@ C Salvage Operation|QID|27177|S|M|75.41,82.83|N|Collect crates around this area.
 C Naga Reinforcements|QID|27178|M|76.55,83.43|N|Kill Blackscale Myrmidons or Blackscale Seacallers in this area.|
 C Salvage Operation|QID|27177|US|M|75.41,82.83|N|Finish collecting crates around this area.|NC|
 
-T Salvage Operation|QID|27177|M|79.31,78.49|N|To Simon Chandler.|S|
+T Salvage Operation|QID|27177|M|79.31,78.49|N|To Simon Chandler.|
 T Naga Reinforcements|QID|27178|M|79.31,78.49|N|To Simon Chandler.|
-T Salvage Operation|QID|27177|M|79.31,78.49|N|To Simon Chandler.|US|
 
 T Our Boys on the Shore|QID|27338|M|76.80,69.95|N|To Lieutenant Emry.|
 
-A Scouting the Shore|QID|27341|M|76.80,69.95|N|From Lieutenant Emry.|S|
+A Scouting the Shore|QID|27341|M|76.80,69.95|N|From Lieutenant Emry.|
 A Landgrab|QID|27366|M|76.80,69.95|N|From Lieutenant Emry.|
-A Scouting the Shore|QID|27341|M|76.80,69.95|N|From Lieutenant Emry.|US|
 A Shredderectomy|QID|27433|M|76.94,69.92|N|From Fargo Flintlocke.|
 
 C Landgrab|QID|27366|M|75.24,63.20|N|Kill 12 Axebite Marines.|S|
@@ -182,11 +179,10 @@ C Scouting the Shore|QID|27341|NC|M|77.47,65.24|N|Look for wooden pikes and a st
 C Landgrab|QID|27366|M|75.24,63.20|N|Finish killing Axebite Marines.|US|
 C Shredderectomy|QID|27433|M|70.10,66.99|N|Kill the mechanicals for shredder parts.|
 
-T Scouting the Shore|QID|27341|M|76.84,69.83|N|To Lieutenant Emry.|S|
+T Scouting the Shore|QID|27341|M|76.84,69.83|N|To Lieutenant Emry.|
 T Landgrab|QID|27366|M|76.84,69.83|N|To Lieutenant Emry.|
-T Scouting the Shore|QID|27341|M|76.84,69.83|N|To Lieutenant Emry.|US|
-A Bird Down! Bird Down!|QID|27514|M|76.84,69.83|N|From Lieutenant Emry.|
 
+A Bird Down! Bird Down!|QID|27514|M|76.84,69.83|N|From Lieutenant Emry.|
 T Shredderectomy|QID|27433|M|76.93,69.79|N|To Fargo Flintlocke.|
 A Siege Tank Rescue|QID|27468|M|76.93,69.79|N|From Fargo Flintlocke.|
 
@@ -210,9 +206,8 @@ C Any Portal in a Storm|QID|27537|M|69.47,48.51|N|Kill water elementals for the 
 C The Perfect Poultice|QID|27538|M|69.75,49.10|N|Collect the glittering piles of Verrall River Muck.|NC|
 C Any Portal in a Storm|QID|27537|M|69.47,48.51|N|Kill water elementals for the cores.|US|
 
-T Any Portal in a Storm|QID|27537|M|79.50,77.62|N|To Talaa in the center courtyard.|S|
+T Any Portal in a Storm|QID|27537|M|79.50,77.62|N|To Talaa in the center courtyard.|
 T The Perfect Poultice|QID|27538|M|79.50,77.62|N|To Talaa in the center courtyard.|
-T Any Portal in a Storm|QID|27537|M|79.50,77.62|N|To Talaa in the center courtyard.|US|
 
 A The Way is Open|QID|27545|M|79.50,77.62|N|From Talaa in the center courtyard.|
 T The Way is Open|QID|27545|M|79.09,78.23|N|To Kurdran Wildhammer upstairs.|
@@ -222,19 +217,17 @@ A Firebeard's Patrol|QID|27621|M|79.21,78.27|N|From Thordun Hammerblow.|
 r Sell junk, Repair/Restock|QID|27621|M|79.11,76.50|N|From Brundall Chiselgut, 	Dorgan Slagfist, or Richard Maschner in the profession trainer area.  Also beef up your profession skills if needed.|
 
 T Firebeard's Patrol|QID|27621|M|60.18,57.96|N|To Keegan Firebeard.|
-A Welcome Relief|QID|27803|M|60.18,57.96|N|From Keegan Firebeard.|S|
+A Welcome Relief|QID|27803|M|60.18,57.96|N|From Keegan Firebeard.|
 A The Only Homes We Have|QID|27804|M|60.18,57.96|N|From Keegan Firebeard.|
-A Welcome Relief|QID|27803|M|60.18,57.96|N|From Keegan Firebeard.|US|
 
-f Firebeard's Patrol|QID|27804|M|0.00,0.00|N|At Farstad Stonegrip.|
+; f Firebeard's Patrol|QID|27804|M|60.4,57.7|N|At Farstad Stonegrip.|
 
 C Welcome Relief|QID|27803|M|59.67,56.91|N|Kill subjugated firestarters.|S|
 C The Only Homes We Have|QID|27804|PRE|27803|U|62508|M|59.68,56.89|N|Use the Water Bucket to put out fires.|
 C Welcome Relief|QID|27803|M|59.67,56.91|N|Kill subjugated firestarters.|US|
 
-T Welcome Relief|QID|27803|M|60.08,58.00|N|To Keegan Firebeard.|S|
+T Welcome Relief|QID|27803|M|60.08,58.00|N|To Keegan Firebeard.|
 T The Only Homes We Have|QID|27804|M|60.08,58.00|N|To Keegan Firebeard.|
-T Welcome Relief|QID|27803|M|60.08,58.00|N|To Keegan Firebeard.|US|
 
 A Honorable Bearing|QID|27806|PRE|27803|M|60.08,58.00|N|From Keegan Firebeard.|
 
@@ -245,11 +238,9 @@ C Small Comforts|QID|27805|QO|Parlan's Ivory Hammer: 1/1|M|59.32,56.88|N|Enter a
 T Small Comforts|QID|27805|M|60.40,58.24|N|To Cailin Longfellow inside the building.|
 
 T Honorable Bearing|QID|27806|M|57.44,58.09|N|To Iain Firebeard.|
-A Clan Mullan|QID|27807|M|57.44,58.09|N|From Iain Firebeard.|S|
-A Stubborn as a Doyle|QID|27808|M|57.44,58.09|N|From Iain Firebeard.|S|
+A Clan Mullan|QID|27807|M|57.44,58.09|N|From Iain Firebeard.|
+A Stubborn as a Doyle|QID|27808|M|57.44,58.09|N|From Iain Firebeard.|
 A Firebeard Bellows|QID|27809|M|57.44,58.09|N|From Iain Firebeard.|
-A Clan Mullan|QID|27807|M|57.44,58.09|N|From Iain Firebeard.|US|
-A Stubborn as a Doyle|QID|27808|M|57.44,58.09|N|From Iain Firebeard.|US|
 
 T Clan Mullan|QID|27807|M|50.81,60.16|N|To Duglas Mullan.|
 
@@ -268,9 +259,8 @@ C The Scent of Battle|QID|27811|US|M|56.95,63.99|N|Locate the Mullan Gryphons an
 T The Scent of Battle|QID|27811|M|50.88,60.30|N|To Edana Mullan.|
 A The Loyalty of Clan Mullan|QID|27812|M|50.88,60.30|N|From Duglas Mullan.|
 
-T The Fate of the Doyles|QID|27999|M|57.42,58.17|N|To Iain Firebeard.|S|
 T The Loyalty of Clan Mullan|QID|27812|M|57.42,58.17|N|To Iain Firebeard.|
-T The Fate of the Doyles|QID|27999|M|57.42,58.17|N|To Iain Firebeard.|US|
+T The Fate of the Doyles|QID|27999|M|57.42,58.17|N|To Iain Firebeard.|
 T Firebeard Bellows|QID|27809|M|62.49,48.35|N|To Mackay Firebeard.|
 
 A Death Worthy of a Dragonmaw|QID|27813|M|62.49,48.35|N|From Mackay Firebeard.|
@@ -338,7 +328,7 @@ T Finding Beak|QID|27646|M|46.05,58.69|N|To Donnelly Dunwald.|
 A Home Again|QID|27650|M|47.84,74.52|N|From Cayden Dunwald.|
 
 C Sifting Through The Wreckage|QID|27642|US|M|51.94,70.32|N|On the ground and in the buildings.|
-C Steady Supply|QID|27649|US|M|49.54,71.85|N|Kegs in the buildings.|
+C A Steady Supply|QID|27649|US|M|49.54,71.85|N|Kegs in the buildings.|
 C While Meeting The Family|QID|27641|M|49.80,71.20|N|Finish killing Twilight "guests".|US|
 
 T Home Again|QID|27650|M|45.97,65.53|N|To Keely Dunwald.|
@@ -356,7 +346,7 @@ A My Sister, Fanny|QID|28369|M|48.93,29.82|N|From Colin Thundermar.|
 T A Coward's Due|QID|28001|M|48.93,29.82|N|From Colin Thundermar.|
 
 r Sell junk, Repair/Restock|QID|28369|M|49.04,29.15|
-f Thundermar|QID|28369|M|48.53,28.18|N|At Doran Talonheart.|
+; f Thundermar|QID|28369|M|48.53,28.18|N|At Doran Talonheart.|
 
 T My Sister, Fanny|QID|28369|M|49.76,29.23|N|To Fanny Thundermar.|
 
@@ -424,7 +414,7 @@ T The Bachelor|QID|28346|M|54.43,16.82|N|To Keegan Firebeard.|
 
 A Rescue at Glopgut's Hollow|QID|28377|M|54.43,16.82|N|From Keegan Firebeard.|
 
-f Kirthaven|QID|28377|M|56.71,15.20|N|At Shaina Talonheart.|
+; f Kirthaven|QID|28377|M|56.71,15.20|N|At Shaina Talonheart.|
 T Rescue at Glopgut's Hollow|QID|28377|M|38.19,34.42|N|To Colin Thundermar.|
 
 A Find Fanny|QID|28378|M|38.19,34.42|N|From Colin Thundermar.|
@@ -516,7 +506,7 @@ C Warm Welcome|QID|27485|M|27.55,21.37|N|Head towards the waypoint and watch the
 T Warm Welcome|QID|27485|M|29.34,26.00|N|To Calen.|
 
 A Even Dragons Bleed|QID|27504|M|29.34,26.00|N|From Calen.|
-f Vermillion Redoubt|QID|27509|M|28.47,24.95|N|At Aquinastrasz.|
+; f Vermillion Redoubt|QID|27509|M|28.47,24.95|N|At Aquinastrasz.|
 T Even Dragons Bleed|QID|27504|M|29.84,31.15|N|To Velastrasza.|
 
 A Draconic Mending|QID|27505|M|29.84,31.15|N|From Velastrasza.|
@@ -602,7 +592,7 @@ T Blackout|QID|28173|M|59.07,69.87|N|To Lirastrasza.|
 T Shining Through the Dark|QID|28175|M|59.07,69.87|N|To Velastrasza.|
 
 A Following the Young Home|QID|28176|M|59.07,69.87|N|From Lirastrasza.|
-C Following the Young Home|QID|28176|QO|Obsidian Whelps hatched: 1/1|U|63126|M|57.97,80.33|N|Use Mother's Flame on the Obsidian Eggs.|
+C Following the Young Home|QID|28176|QO|Obsidian Whelps hatched: 1/1|U|63126|M|58,0,86.4|N|Use Mother's Flame on the Obsidian Eggs outside the cave then follow them in the cave.|
 C Following the Young Home|QID|28176|M|55.63,83.74|N|Just follow the tunnel downward.|
 T Following the Young Home|QID|28176|M|44.92,91.02|N|To Baleflame.|
 
@@ -617,7 +607,7 @@ A Ogres & Ettins|QID|27492|M|43.39,57.48|N|From Kurdran Wildhammer.|
 A Call in the Artillery|QID|27496|M|43.39,57.48|N|From Cassius the White.|
 A SI:7 Drop|QID|27490|M|43.39,57.48|N|From Cassius the White.|
 
-f Victor's Point|QID|27496|M|43.82,57.31|N|At Desmond Chadsworth.|
+; f Victor's Point|QID|27496|M|43.82,57.31|N|At Desmond Chadsworth.|
 r Sell junk, Repair/Restock|QID|27499|M|43.81,57.74|
 
 C SI:7 Drop|QID|27490|QO|Get Wildhammer squad: 1/1|M|43.82,57.31|N|Talk to Angus, just left of the flight master, to pick up your squad.|

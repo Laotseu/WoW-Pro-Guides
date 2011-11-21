@@ -57,7 +57,7 @@ A Tanaris is Calling|QID|27446|M|75.95,74.58|Z|Thousand Needles|N|From Fizzle Br
 R Tanaris|QID|27446|U|55121|M|74.38,94.85|Z|Thousand Needles|N|If you have your boat use it now and head south, if you do not, swim. Continue along the path marked by the co-ords.|
 h Gadgetzan|QID|27446|M|52.59,27.00|N|At Innkeeper Fizzgrimble.|
 r Sell Junk / Repair and Restock|QID|27446|M|52.28,29.72|N|You can also put items in the bank here. I would suggest doing so. (Click to continue)|
-f Gadgetzan|QID|27446|M|51.32,29.45|N|At Bera Stonehammer.|
+; f Gadgetzan|QID|27446|M|51.32,29.45|N|At Bera Stonehammer.|
 T Tanaris is Calling|QID|27446|M|51.23,29.90|N|To Kelsey Steelspark.|
 
 A Seaside Salvage|QID|25048|M|51.23,29.90|N|From Kelsey Steelspark.|
@@ -135,7 +135,7 @@ C Secrets in the Oasis|QID|25032|M|39.04,35.17|N|Click on the dirt pile here.|
 T Secrets in the Oasis|QID|25032|M|42.44,24.02|N|To Trenton Lighthammer.|
 
 A Into Zul'Farrak|QID|25556|M|42.44,24.02|N|From Trenton Lighthammer. If you do not wish to run the Zul'farrak dungeon; abandon this quest; but it is good XP and rewards if you do.|
-f Bootlegger Outpost|QID|26889|M|55.84,60.63|N|At Slick Dropdip.|
+; f Bootlegger Outpost|QID|26889|M|55.84,60.63|N|At Slick Dropdip.|
 T All Cheered Out|QID|26889|M|55.65,60.82|N|To Zeke Bootscuff.|
 A Cutting Losses|QID|24932|M|55.65,60.82|N|From Zeke Bootscuff.|
 A A Few Good Goblins|QID|25072|M|55.65,60.82|N|From Zeke Bootscuff.|
@@ -165,7 +165,7 @@ R Then finally here...|QID|24593|CC|M|54.02,71.85|N|Into the circle room. Get in
 C Just Trying to Kill Some Bugs|QID|24953|M|54.54,72.01|N|Explode!|
 T Just Trying to Kill Some Bugs|QID|24953|M|55.65,60.83|N|To Zeke Bootscuff.|
 A Land's End|QID|25061|M|55.31,60.30|N|From Narain Soothfancy.|
-A Find OOX-17/TN!|QID|351|O|U|8623|N|By now you should be high enough level to handle the Beacon quest. This is why I have pathed this guide like this up until now, giving you more chance to loot the Beacon. If you have not had the beacon drop please skip this step.|
+A Find OOX-17/TN!|QID|351|U|8623|N|By now you should be high enough level to handle the Beacon quest. This is why I have pathed this guide like this up until now, giving you more chance to loot the Beacon. If you have not had the beacon drop please skip this step.|
 T Find OOX-17/TN!|QID|351|O|M|59.81,64.06|N|To Homing Robot OOX-17/TN.|
 A Rescue OOX-17/TN!|QID|648|O|PRE|351|M|59.80,63.99|N|From Homing Robot OOX-17/TN. This is optional as it the turn-in requires you to go to Booty Bay.|
 C Rescue OOX-17/TN!|QID|648|O|M|60.86,53.63|N|Escort the chicken to safety.|
@@ -188,7 +188,7 @@ A You Too, Brute?|QID|25065|M|49.99,82.90|N|From Kelsey Steelspark.|
 C You Too, Brute?|QID|25065|M|53.31,89.73|N|Kill and loot Meatface.|
 T You Too, Brute?|QID|25065|M|50.00,82.90|N|To Kelsey Steelspark.|
 A Prospector Gunstan|QID|28881|M|50.00,82.90|N|From Kelsey Steelspark.|
-f Southmoon Ruins|QID|28881|M|49.10,76.00;40.01,77.50|N|At Thurda.|
+; f Southmoon Ruins|QID|28881|M|49.10,76.00;40.01,77.50|N|At Thurda.|
 T Prospector Gunstan|QID|28881|M|40.12,76.91|N|To Prospector Gunstan.|
 A Ancient Obstacles|QID|25420|M|40.12,76.91|N|From Prospector Gunstan.|
 A Laying Claim|QID|25559|M|40.12,76.91|N|From Prospector Gunstan.|
@@ -210,9 +210,9 @@ C What Lies Within|QID|25070|M|84.48,43.21|N|The Antechamber Guardian spawns beh
 T What Lies Within|QID|25070|M|84.48,43.21|N|To the Antediluvean Chest.|Z|Uldum|
 A The Grand Tablet|QID|25421|M|84.48,43.21|N|From the Antediluvean Chest.|Z|Uldum|
 T The Grand Tablet|QID|25421|M|40.14,76.90|N|To Prospector Gunstan.|
-A Tropical Paradise Beckons|QID|24911|M|33.23,76.93|N|From Sherm. Pick this up if you plan to go to Un'Goro next.|
 
 H Gadgetzan|QID|26895|N|Your hearth SHOULD still be set at Gadgetzan, if it is not, use the flight path to go back.|
+A Tropical Paradise Beckons|QID|24911|M|33.23,76.93|N|From Sherm. Pick this up if you plan to go to Un'Goro next.|
 T The Thunderdrome!|QID|26895|M|51.78,28.00|N|To Dr. Dealwell.|
 N The Following quest...|QID|25067|N|The following quest is listed as a group quest. With potions advanced players can solo the first 2. So Try as hard as you can to get a group for these quests.|
 

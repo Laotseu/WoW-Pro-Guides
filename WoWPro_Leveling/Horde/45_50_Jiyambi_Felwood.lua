@@ -31,7 +31,7 @@ return [[
 
 R Emerald Sanctuary|QID|27997|M|51.1,80.5|N|In Felwood.|
 T Warchief's Command: Felwood!|QID|28542|O|M|51.1,80.5|N|To Tenell Leafrunner.|
-f Emerald Sanctuary|QID|27997|M|51.51,80.83|N|From Gorrim.|
+; f Emerald Sanctuary|QID|27997|M|51.51,80.83|N|From Gorrim.|
 A The Corruption of the Jadefire|QID|27997|M|51.12,80.51|N|From Tenell Leafrunner.|
 A Culling the Corrupted|QID|28148|M|50.93,80.20|N|From Taronn Redfeather.|
 A A Talking Totem|QID|28100|M|51.37,80.45|N|From Grazle.|
@@ -76,7 +76,7 @@ C Open Their Eyes|QID|28288|U|63395|M|42.37,79.33|N|Use the crustal to terrify t
 T Open Their Eyes|QID|28288|M|41.92,71.98|N|To Arcanist Delaris, back at the Ruins of Constellas.|
 R Wildheart Point|QID|28116|M|44.29,61.92|N|Follow the road north.|
 
-f Wildheart Point|QID|28152|M|44.29,61.89|N|At Chyella Hushglade.|
+; f Wildheart Point|QID|28152|M|44.29,61.89|N|At Chyella Hushglade.|
 h Wildheart Point|QID|28152|M|43.98,61.94|N|At Innkeeper Teenycaugh.|
 T Jaedenar Awaits|QID|28152|M|43.96,61.90|N|To Greta Mosshoof.|
 A Crying Violet|QID|28116|M|43.96,61.90|N|From Greta Mosshoof.|
@@ -139,7 +139,7 @@ R Whisperwind Grove|QID|28306|M|43.29,30.44|N|Follow the road north.|
 T Whisperwind Grove|QID|28306|M|43.29,30.44|N|To Tender Puregrove.|
 A Running their Course|QID|28360|M|43.29,30.44|N|From Tender Puregrove.|
 A Squirrely Clean|QID|28361|M|43.29,30.44|N|From Tender Puregrove.|
-f Whisperwind Grove|QID|28361|M|43.61,28.69|N|At Hanah Southsong.|
+; f Whisperwind Grove|QID|28361|M|43.61,28.69|N|At Hanah Southsong.|
 A Collecting Corruption|QID|28341|M|43.96,27.91|N|From Elessa Starbreeze.|
 A Fel To Pieces|QID|28342|M|43.96,27.91|N|From Elessa Starbreeze.|
 A Hunting the Damned|QID|28358|M|43.96,27.91|N|From Hurak Wildhorn.|
@@ -208,7 +208,7 @@ C Navarax's Gambit|QID|28264|M|44.87,29.25|N|Speak to the arch druid at the top 
 T Navarax's Gambit|QID|28264|M|43.48,28.20|N|To Huntress Selura.|
 A Back to Business|QID|28372|PRE|28264|M|44.20,27.98|N|From Fez Hobnob.|
 R Irontree Clearing|QID|28372|M|56.36,8.58|N|At the northern tip of the zone.|
-f Irontree Clearing|QID|28372|M|56.36,8.58|N|At Dirzak Pryocrank.|
+; f Irontree Clearing|QID|28372|M|56.36,8.58|N|At Dirzak Pryocrank.|
 T Back to Business|QID|28372|M|56.31,8.24|N|To Darla Drilldozer.|
 A It's Time to Oil Up|QID|28333|M|56.31,8.24|N|From Darla Drilldozer.|
 A A Flare Fight|QID|28334|M|56.31,8.24|N|From Darla Drilldozer.|
