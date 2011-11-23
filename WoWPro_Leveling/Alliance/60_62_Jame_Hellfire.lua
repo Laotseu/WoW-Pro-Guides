@@ -58,8 +58,9 @@ return [[
 R Portal to the Blasted Lands|QID|10119|N|By the Portal Trainer |Z|Stormwind City|M|50.3,86|
 B Nethergarde Bitter |QID|10119|L|23848 1|N|Buy a Nethergarde Bitter from Bernie Heisten in Nethergarde Keep. |M|59.40,14.89|Z|Blasted Lands|
 
-A Through the Dark Portal |QID|10119|M|54.66,50.44|N|From Watch Commander Relthorn Netherwane.|Z|Blasted Lands|
-R Hellfire Peninsula |QID|10119|N|Go through the portal.|M|55.01,54.13|Z|Blasted Lands|
+A Through the Dark Portal |QID|10119|M|54.66,50.44|N|From Watch Commander Relthorn Netherwane. If you have Hero's Call: Outlands!|Z|Blasted Lands|
+R Hellfire Peninsula |QID|10288|N|Go through the portal.|M|55.01,54.13|Z|Blasted Lands|
+
 T Through the Dark Portal |QID|10119|M|87.3,50.7|N|To Commander Duron.|
 A Arrival in Outland |QID|10288|M|87.3,50.7|N|From Commander Duron.|
 T Arrival in Outland |QID|10288|M|87.4,52.4|N|To Amish Wildhammer.|
@@ -76,8 +77,8 @@ T Know your Enemy |QID|10160|M|50.9,60.2|N|To Lieutenant Amadi.|
 A Fel Orc Scavengers |QID|10482|M|50.9,60.2|N|From Lieutenant Amadi.|
 
 N Flying|QID|10482|N|If you are level 60, Expert Riding may be purchased for 250 gold, you will also need 50 gold for a mount. Trainer is Hargen Bronzewing.|M|54.3,62.6|
-C Waste Not, Want Not|S|N|Loot Metal Cogs and Wooden Planks off the ground until you finish this quest. |QID|10055|M|60.4,52.1|
-C Fel Orc Scavengers |N|Kill Orcs until you finish this quest.|QID|10482|M|62.00,54.00|
+C Waste Not, Want Not|S|N|Loot Metal Cogs and Wooden Planks off the ground until you finish this quest. |QID|10055|
+C Fel Orc Scavengers |N|Kill Orcs until you finish this quest.|QID|10482|
 C Waste Not, Want Not |N|Loot Metal Cogs/Poles and Wooden Planks off the ground until you finish this quest. |QID|10055|M|60.4,52.1|US|
 T Waste Not, Want Not |QID|10055|M|51.2,60.0|N|To Dumphry.|
 T Fel Orc Scavengers |QID|10482|M|50.9,60.2|N|To Lieutenant Amadi.|
@@ -97,7 +98,7 @@ A In Search of Sedai |QID|9390|M|23.1,40.3|N|From Anchorite Obadei.|
 A Cruel Taskmasters |QID|9399|M|23.1,40.3|N|From Ikan.|
 A The Rock Flayer Matriarch |QID|9490|M|23.1,40.3|N|From Ikan.|
 A The Pools of Aggonar|QID|9426|M|23.4,36.5|N|From Amaan the Wise.|
-f Temple of Telhamat|QID|9390|N|Get the flight path.|M|25.20,37.20|
+; f Temple of Telhamat|QID|9390|N|Get the flight path.|M|25.20,37.20|
 T In Search of Sedai|QID|9390|M|26.89,37.42|N|To Sedai's Corpse.|
 A Return to Obadei|QID|9423|M|26.89,37.42|N|From Sedai's Corpse.|
 T Return to Obadei|QID|9423|M|23.1,40.3|N|To Anchorite Obadei.|
@@ -151,7 +152,7 @@ T Mission: The Murketh and Shaadraz Gateways |QID|10146|M|71.4,62.7|N|To Forward
 A Shatter Point |QID|10340|M|71.4,62.7|N|Foward Commander Kingston.|
 
 F Shatter Point |QID|10340|N|Talk to Wing Commander Dabir'ee and have him send you to Shatter Point. |M|71.40,62.50|
-f Shatter Point |QID|10340|N|Get the flight-path.|M|78.4,34.9|
+; f Shatter Point |QID|10340|N|Get the flight-path.|M|78.4,34.9|
 T Shatter Point |QID|10340|M|78.4,34.9|N|To Runetog Wildhammer.|
 A Wing Commander Gryphongar |QID|10344|M|78.4,34.9|N|From Runetog Wildhammer.|
 T Wing Commander Gryphongar |QID|10344|M|79.3,33.9|N|To Wing Commander Gryphongar.|
@@ -182,7 +183,8 @@ A Fel Spirits |QID|10909|M|54.3,63.6|N|From Assistant Klatu.|
 A Digging for Prayer Beads |QID|10916|M|54.3,63.6|N|From Assistant Klatu.|
 l Draenei Prayer Beads|QID|10916|M|54.16,63.32|N|Head outside the inn and turn left, follow the wall, to the waypoint.  Loot Fei Fei's Cache (glittering dirt pile).|L|31795|
 r Sell junk, repair, restock |N|Sell junk, repair, restock  |M|54.65,63.53|QID|10916|
-A Hellfire Fortifications |QID|10106|M|56.34,62.78|N|From Warrant Officer Tracy Proudwell.  This is optional as it is a PvP quest, so skip if you don't wish to do it.|
+A Hellfire Fortifications |QID|13408|C|DRUID,HUNTER,MAGE,PALADIN,PRIEST,ROGUE,SHAMAN,WARLOCK,WARRIOR|M|56.34,62.78|N|From Warrant Officer Tracy Proudwell.  This is optional as it is a PvP quest, so skip if you don't wish to do it.|
+A Hellfire Fortifications |QID|13410|C|DEATHKNIGHT|M|56.34,62.78|N|From Warrant Officer Tracy Proudwell.  This is optional as it is a PvP quest, so skip if you don't wish to do it.|
 T The Dark Missive |QID|10395|N|Head to Warp-Scryer Kryv.|M|56.69,66.52|
 A The Heart of Darkness |QID|10399|N|From Warp-Scryer Kryv.|M|56.69,66.52|
 A The Path of Glory |QID|10047|M|56.7,66.5|N|From Warp-Scryer Kryv.|M|56.69,66.52|
@@ -257,7 +259,8 @@ T Rampaging Ravagers |QID|9385|M|24.0,72.1|N|To Gremni Longbeard.|
 
 N Start looking for a group... |QID|10937|N|Start looking for a group for The Rock Flayer Matriarch and Drill the Drillmaster. Kill mobs in this area while you do so.|M|34.00,63.00|
 C Deadly Predators |N|Kill the mobs needed for this quest.|QID|9398|M|32.00,61.00|
-C Hellfire Fortifications |N|Do this quest by taking over the towers.|QID|10106|M|40.76,49.64;39.81,56.49;35.38,56.42|O|
+C Hellfire Fortifications |N|Do this quest by taking over the towers.|QID|13408|M|40.76,49.64;39.81,56.49;35.38,56.42|O|
+C Hellfire Fortifications |N|Do this quest by taking over the towers.|QID|13410|M|40.76,49.64;39.81,56.49;35.38,56.42|O|
 C The Rock Flayer Matriarch|N|Kill the elite in this cave.|QID|9490|M|34.00,64.00|
 C Drill the Drillmaster |N|Kill Drillmaster Zurok.|QID|10937|M|47.89,56.11|
 C An Ambitious Plan |N|Get an Uncontrolled Voidwalker down to low health, then use the Sanctified Crystal.  Click on the red Crystal that appears.|QID|9383|M|46.00,82.00|
@@ -269,7 +272,8 @@ T Voidwalkers Gone Wild |QID|9351|M|49.2,74.8|N|To "Screaming" Screed Luckheed.
 
 H Honor Hold |QID|10937|N|Hearth to Honor Hold. |U|6948|M|54.3,63.4|
 T An Old Gift |QID|10058|M|54.3,63.4|N|To Father Malgor Devidicus.|
-T Hellfire Fortifications|QID|10106|M|56.34,62.78|N|To Warrant Officer Tracy Proudwell.|O|
+T Hellfire Fortifications|QID|13408|M|56.34,62.78|N|To Warrant Officer Tracy Proudwell.|O|
+T Hellfire Fortifications|QID|13410|M|56.34,62.78|N|To Warrant Officer Tracy Proudwell.|O|
 T Drill the Drillmaster|QID|10937|N|To Force Commander Danath Trollbane.|M|56.61,66.64|
 T Looking to the Leadership |QID|10057|M|50.9,60.2|N|To Honor Guard Wesilow.|
 F Temple of Telhamat|QID|9383|N|Fly to the Temple of Telhamat |M|54.70,62.35|
@@ -338,7 +342,7 @@ C Cruel Taskmasters |N|Kill the 10 Taskmasters needed for this quest.|QID|9399|M
 C Keep Thornfang Hill Clear! |N|Kill the mobs for this quest while looking for a group for Colossal Menace.|QID|10159|M|10.00,52.00|
 C Colossal Menace |N|Find a group to do this quest, then kill Giants in the northwest part of the zone.|QID|10132|M|15,45|
 l Crimson Crystal Shard|QID|10134|N|Make sure you have one of these items from the giants, unless you have already done the quest Crimson Crystal Clue.|L|29476|M|15,45|
-A Crimson Crystal Clue|N|Right-click the Shard to start the quest.|QID|10134|M|15,45|
+A Crimson Crystal Clue|N|Right-click the Shard to start the quest.|QID|10134|M|15,45|U|29476|
 
 T Colossal Menace|QID|10132|N|To Tola'thion.|M|15.62,52.12|
 T Crimson Crystal Clue|QID|10134|N|To Tola'thion.|M|15.62,52.12|

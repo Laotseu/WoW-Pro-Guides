@@ -65,7 +65,7 @@ T Still Assessing the Threat|QID|26503|M|15.31,64.82|N|To Watch Captain Parker.|
 A Parker's Report|QID|26505|M|15.31,64.82|N|From Watch Captain Parker.|
 T Wanted: Redridge Gnolls|QID|26504|M|15.31,64.82|N|To Watch Captain Parker.|
 
-f Lakeshire|M|29.48,53.77|N|At Ariena Stormfeather.|QID|26761|
+; f Lakeshire|M|29.48,53.77|N|At Ariena Stormfeather.|QID|26761|
 T Threat To The Kingdom|QID|26761|M|28.91,41.11|N|To Magistrate Solomon.|O|
 T Parker's Report|QID|26505|M|28.78,41.15|N|To Magistrate Solomon.|
 A We Must Prepare!|QID|26510|M|28.78,41.15|N|From Magistrate Solomon.|
@@ -150,7 +150,7 @@ r Repair/Restock|QID|26607|M|29.61,43.00|N|At Dorin Songblade.|
 T They Drew First Blood|QID|26607|M|26.29,39.90|N|Head to the basement of the inn to John J. Keeshan.|
 A It's Never Over|QID|26616|M|26.29,39.90|N|From John J. Keeshan.|
 C It's Never Over|QID|26616|NC|M|34.25,45.6|N|Click on the boat to head to Camp Everstill.|
-f Camp Everstill|QID|26616|M|52.87,54.51|N|At Arlen Marsters.|
+; f Camp Everstill|QID|26616|M|52.87,54.51|N|At Arlen Marsters.|
 
 T It's Never Over|QID|26616|M|52.48,55.19|N|To John J. Keeshan.|
 A Point of Contact: Brubaker|QID|26639|M|52.48,55.19|N|From John J. Keeshan.|
@@ -180,7 +180,7 @@ T To Win a War, You Gotta Become War|QID|26651|M|77.60,65.56|N|To John J. Keesha
 A Detonation|QID|26668|M|77.60,65.56|N|From John J. Keeshan.|
 C Detonation|QID|26668|NC|M|77.60,65.61|N|Enjoy the brief cut scene.|
 T Detonation|QID|26668|M|77.60,65.61|N|To John J. Keeshan.|
-f Shalewind Canyon|QID|26668|M|77.91,65.85|N|At Nora Baldwin.|
+; f Shalewind Canyon|QID|26668|M|77.91,65.85|N|At Nora Baldwin.|
 A The Dark Tower|QID|26693|M|77.57,65.57|N|From John J. Keeshan.|
 A Shadowhide Extinction|QID|26692|M|77.59,65.54|N|From Danforth.|
 r Repair/Restock|QID|26692|M|78.71,63.46|N|At Clyde Ranthal.|

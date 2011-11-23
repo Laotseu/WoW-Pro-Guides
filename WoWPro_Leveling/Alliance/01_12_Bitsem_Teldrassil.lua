@@ -164,7 +164,7 @@ T Zenn's Bidding|QID|488|M|59.46,49.19|N|To Zenn Foulhoof.|
 A Seek Redemption!|QID|489|M|55.83,50.40|N|From Syral Bladeleaf.|
 A The Emerald Dreamcatcher|QID|2438|M|55.58,50.06|N|From Tallonkai Swiftroot.|
 
-f Dolanaar|QID|2438|M|55.46,50.41|N|At Fidelio.|
+; f Dolanaar|QID|2438|M|55.46,50.41|N|At Fidelio.|
 
 A A Troubling Breeze|QID|475|M|55.70,51.94|N|From Athridas Bearmantle.|
 T Dolanaar Delivery|QID|2159|M|55.40,52.24|N|To Innkeeper Keldamyr.|
@@ -331,7 +331,7 @@ T Home of the Kaldorei|QID|14039|M|43.15,77.90|Z|Darnassus|N|Take the ramp up, t
 A Breaking Waves of Change|QID|26383|M|43.88,76.22|Z|Darnassus|N|From Sentinel Cordressa Briarbow.|
 
 R Rut'theran Village|QID|26383|M|36.17,50.08|Z|Darnassus|N|Run through the pink glow near the Darnassus flight master.|
-f Rut'theran Village|QID|26383|M|55.36,88.51|N|At Vesprystus.|
+; f Rut'theran Village|QID|26383|M|55.36,88.51|N|At Vesprystus.|
 
 F Lor'danel|QID|26383|M|55.36,88.51|N|Talk to Vesprystus, and ask to be sent to Lor'danel.|
 T Breaking Waves of Change|QID|26383|M|51.8,18|Z|Darkshore|N|To Dentaria Silverglade.|

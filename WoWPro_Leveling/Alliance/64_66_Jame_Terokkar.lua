@@ -118,7 +118,7 @@ A Unruly Neighbors |QID|9998|M|58.3,54.8|N|From Bertelm.|
 A Timber Worg Tails |QID|10016|M|58.3,54.8|N|From Bertelm.|
 T The Fate of Tuurem |QID|9793|M|58.5,53.6|N|To Andarl.|
 A Magical Disturbances |QID|10026|M|58.5,53.6|N|From Andarl.|
-f Allerian Stronghold|QID|10021|N|Get the flight path.|M|59.45,55.40|
+; f Allerian Stronghold|QID|10021|N|Get the flight path.|M|59.45,55.40|
 
 N From now on... |QID|10016|N|From now on, kill Timber Worgs, Timber Alphas, Warp Stalkers, and look for Olemba Seeds on the ground.|
 C Thin the Flock|N|Kill mobs for this quest.|QID|10869|S|
@@ -226,9 +226,9 @@ T Fel Orc Plans |QID|10012|M|58.3,54.8|N|To Bertelm.|
 T Magical Disturbances |QID|10026|M|58.5,53.6|N|To Andarl.|
 T Olemba Seeds|QID|9992|M|57.4,55.4|N|To Ros'eleth.|
 A Vessels of Power|QID|10028|M|57.4,55.4|N|From Ros'eleth.|
-l Vessels of Power |N|Loot the vessels you need from the ground, you will not always get a vessel.|QID|10028|M|54.1,32.1|L|25841 8|S|
+C Vessels of Power |N|Loot the vessels you need from the ground, you will not always get a vessel.|QID|10028|M|54.1,32.1|S|NC|
 C Investigate Tuurem |N|Kill the Firewing Courier and loot the box.|QID|9990|M|54.00,30.00|
-l Vessels of Power |N|Loot the vessels you need from the ground, you will not always get a vessel.|QID|10028|M|54.1,32.1|L|25841 8|US|
+C Vessels of Power |N|Loot the vessels you need from the ground, you will not always get a vessel.|QID|10028|M|54.1,32.1|US|NC|
 T Investigate Tuurem |QID|9990|M|44.3,26.3|N|To Eartbinder Tavgren.|
 A What Are These Things? |QID|9994|M|44.3,26.3|N|From Earthbinder Tavgren.|
 L Level 65 or 75,000 xp|QID|9994|N|Kill mobs until you are level 65 or get 75,000 xp, whichever takes longer.|M|70.00,40.00|LVL|65|
@@ -267,7 +267,7 @@ N Sell junk, Repair, restock |QID|10896|M|56.51,54.94|
 
 C Recover the Bones |N|Loot the bones needed for this quest.|QID|10030|S|M|52.00,58.00|
 C The Infested Protectors|N|Kill treant mobs and then the spawned wood mites until you finish this quest.|QID|10896|M|52.00,58.00|
-l Trachela's Carcass|QID|10035|N|Kill Trachela and loot the carcass.|L|30618|M|43.00,51.00|
+l Trachela's Carcass|QID|10035|T|Trachela|N|Kill Trachela and loot the carcass.|L|30618|M|43.00,51.00|
 T The Infested Protectors |QID|10896|M|37.9,51.7|N|To Lakotae.|
 C Veil Rhaze: Unliving Evil |N|Kill the mobs needed for this quest here. Get a group for the quest "Torgos!"|QID|10848|M|28.00,56.00|
 C Torgos!|N|Use Trachela's Carcass here and then kill and loot Torgos.|QID|10035|M|27.00,55.60|U|30618|
@@ -293,12 +293,12 @@ A Fumping |QID|10929|N|From Dwarfowitz.|
 C Recover the Bones |N|Loot the rest of the bones needed for this quest.|QID|10030|US|M|52.00,58.00|
 
 R Auchindoun |QID|10227|N|Enter Auchindoun from this location. |M|33.00,66.00|
-A I See Dead Draenei|QID|10227|N|From Ha'lei.|
-T I See Dead Draenei|QID|10227|N|To Ramdor the Mad.|
+A I See Dead Draenei|QID|10227|M|37.4,65.6;35.1,65.1|N|Fly down then enter the Auchenai Crypts "lobby". From Ha'lei.|
+T I See Dead Draenei|QID|10227|M|35.2,66.2|N|To Ramdor the Mad.|
 A Ezekiel |QID|10228|N|From Ramdor the Mad.|
 T Recover the Bones |QID|10030|N|To Ramdor the Mad.|
 A Helping the Lost Find Their Way|QID|10031|N|From Ramdor the Mad.|
-T Can't Stay Away |QID|10180|N|To Isfar.|
+T Can't Stay Away |QID|10180|M|41.7,65.5;44.0,65.0|N|To Isfar in the Sethekk Halls "lobby"|
 
 H Shattrath City |QID|10020|N|Hearth to Shattrath City.|M|28.09,48.88|Z|Shattrath City|REP|Aldor;932|
 r Sell junk, Repair, restock|QID|10020|M|28.11,47.65|Z|Shattrath City|REP|Aldor;932|
