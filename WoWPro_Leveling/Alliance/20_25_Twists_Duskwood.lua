@@ -68,7 +68,7 @@ h Darkshire|QID|26618|M|73.93,44.49|N|At Innkeeper Trelayne.|
 A Seasoned Wolf Kabobs|QID|26620|M|73.80,43.61|N|From Chef Grual.|
 A Dusky Crab Cakes|QID|26623|M|73.80,43.61|N|From Chef Grual.|
 
-f Darkshire|QID|26620|M|77.53,44.32|N|At Felicia Maline.|
+; f Darkshire|QID|26620|M|77.53,44.32|N|At Felicia Maline.|
 
 C Dusky Crab Cakes|QID|26623|N|Kill and loot spiders.|S|
 C Wolves at Our Heels|QID|26618|N|Kill Dire Wolves.|S|
@@ -210,7 +210,7 @@ A A Curse We Cannot Lift|QID|26720|M|18.40,57.76|N|From Oliver Harris in Raven H
 A The Jitters-Bugs|QID|26721|M|18.6,58.21|N|From Jitters in Raven Hill.|
 A Soothing Spirits|QID|26777|M|19.92,57.88|N|From Sister Eisington in Raven Hill.|
 
-f Raven Hill|QID|26777|M|21.03,56.63|N|At John Shelby.|
+; f Raven Hill|QID|26777|M|21.03,56.63|N|At John Shelby.|
 
 C Soothing Spirits|QID|26777|N|Use the Holy Censer on Forlon Spirits.|U|60225|S|
 C A Curse We Cannot Lift|QID|26720|M|21,72|N|Find the Lurking Worgen in the barn and weaken him. When he stares and hesitates, use Harris's Ampule.|U|60206|

@@ -96,7 +96,7 @@ C Crossroads Caravan Delivery|QID|13975|NC|M|54.67,41.55;49.55,59.46|N|Talk to R
 T Crossroads Caravan Delivery|QID|13975|M|48.74,59.58|N|To Thork.|
 A To the Mor'shan Rampart|QID|28876|RANK|1|M|48.74,59.58|N|If you plan on going to Ashenvale next. From Thork.|
 
-f The Crossroads|QID|28876|N|Get The Crossroads Flight Path.|
+; f The Crossroads|QID|28876|N|Get The Crossroads Flight Path.|
 
 A Fungal Spores|QID|848|RANK|1|M|48.63,58.45|N|From Apothecary Helbrim.|
 A The Forgotten Pools|QID|870|RANK|1|M|49.41,58.67|N|From Tonga Runetotem.|
@@ -198,7 +198,7 @@ h Ratchet|QID|891|M|67.29,74.68|N|At Innkeeper Wiley.|
 A It's Gotta be the Horn|QID|865|RANK|1|M|67.85,71.58|N|From Mebok Mizzyrix.|
 A WANTED: Cap'n Garvey|QID|895|RANK|2|M|68.28,71.28|N|From Mebok Mizzyrix.|
 
-f Ratchet|QID|895|M|69.11,70.67|N|Get the Ratchet Flight Point.|
+; f Ratchet|QID|895|M|69.11,70.67|N|Get the Ratchet Flight Point.|
 
 A Southsea Freebooters|QID|887|RANK|2|M|69.53,72.88|N|From Wharfmaster Dizzywig.|
 A Take it up with Tony|QID|14052|RANK|1|M|69.53,72.88|N|From Wharfmaster Dizzywig.|
@@ -280,7 +280,7 @@ A Raging River Ride|QID|26769|PRE|14050|RANK|1|M|68.36,69.09|
 C Raging River Ride|QID|26769|M|72.96,65.53|N|Hop on the riverboat for a free ride.|
 T Raging River Ride|QID|26769|M|62.55,16.86|N|To Nozzlepot.|
 
-f Nozzlepot's Outpost|QID|28877|M|62.35,17.18|
+; f Nozzlepot's Outpost|QID|28877|M|62.35,17.18|
 h Nozzlepot's Outpost|QID|28877|M|62.52,16.65|N|At Innkeeper Kritzle.|
 
 A Sludge Investigation|QID|29087|M|62.55,16.86|N|From Nozzlepot.|
@@ -381,7 +381,7 @@ T Demon Seed|QID|29112|M|47.53,39.58|N|To Nagala Whipshank.|
 A Mor'shan Caravan Delivery|QID|29111|M|47.53,39.58|N|From Nagala Whipshank.|
 C Mor'shan Caravan Delivery|QID|29111|M|47.53,39.58|N|Talk to Nagala and defend the caravan.|
 T Mor'shan Caravan Delivery|QID|29111|M|42.42,14.97|N|To Kadrak, who wanders.|
-f The Mor'shan Rampart|QID|3922|M|42.03,15.88|N|At Gort Goreflight.|
+; f The Mor'shan Rampart|QID|3922|M|42.03,15.88|N|At Gort Goreflight.|
 
 F Orgrimmar|NC|O|N|If you plan on going to Stranglethorn next.|
 A Northern Stranglethorn: The Fallen Empire|QID|26417|RANK|1|O|M|51.78,56.49|Z|Orgrimmar|N|From Bort. If you plan on going to Stranglethorn next.|

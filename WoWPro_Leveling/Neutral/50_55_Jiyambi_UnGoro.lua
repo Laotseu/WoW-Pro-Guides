@@ -81,7 +81,7 @@ T The Bait for Lar'korwi|RANK|2|QID|24733|M|71.20,76.52|N|Back down to Torwa Pat
 l Blue Crystals|NC|US|L|11184 7|QID|24720|N|Loot 7 blue crystals from the big crystal nodes in this part of the zone.|
 
 R Marshal's Stand|QID|24865|M|55.97,64.15|N|Follow the road north to Marshal's Stand.|
-f Marshal's Stand|QID|24865|M|55.97,64.15|N|From Gryfe.|
+; f Marshal's Stand|QID|24865|M|55.97,64.15|N|From Gryfe.|
 
 T Hero's Call: Un'Goro Crater!|QID|28525|O|M|55.09,62.16|N|To Williden Marshal.|FACTION|Alliance|
 T Warchief's Command: Un'Goro Crater!|O|QID|28526|N|To Williden Marshal.|FACTION|Horde|
@@ -132,7 +132,7 @@ A Marshal's Refuse|QID|24701|M|43.15,41.13|N|From Doreen.|
 A Super Sticky|QID|24737|M|43.15,41.13|N|From Tara.|
 A Hard to Harvest|QID|24700|M|43.15,41.13|N|From Tara.|
 A Shizzle's Flyer|QID|24736|M|43.38,41.37|N|From Shizzle.|
-f Mossy Pile|QID|24736|M|44.09,40.23|N|At Flizzy Coilspanner.|
+; f Mossy Pile|QID|24736|M|44.09,40.23|N|At Flizzy Coilspanner.|
 
 l Yellow Crystals|NC|S|QID|24720|M|37.04,29.06;44.79,17.53|N|Loot 7 yellow crystals from the big crystal nodes in this part of the zone.|QO|Yellow Power Crystal: 7/7|
 C Shizzle's Flyer|QID|24736|M|37.04,29.06|N|Kill and loot Pterrorddaxes in the Screaming Reaches.|
@@ -147,7 +147,7 @@ T Shizzle's Flyer|QID|24736|M|43.37,41.31|N|To Shizzle, back at Mossy Pile.|
 T Marshal's Refuse|QID|24701|M|43.23,41.68|N|To Doreen.|
 A The Apes of Un'Goro|QID|24717|PRE|24701|M|43.23,41.68|N|From Gremix.|
 T Super Sticky|QID|24737|M|43.23,41.68|N|To Tara.|
-A Gormashh the Glutinous|QID|24699|PRE|24737|M|43.23,41.68|N|From Tara.|
+A Gormashh the Glutinous|QID|24699|PRE|24737|T|Gormashh|M|43.23,41.68|N|From Tara.|
 T Hard to Harvest|QID|24700|M|43.23,41.68|N|To Tara.|
 A Chasing A-Me 01|QID|24714|PRE|24701|M|43.37,41.00|N|From Karna Remtravel.|
 
@@ -156,7 +156,9 @@ C Gormashh the Glutinous|QID|24699|U|50746|M|60.12,31.75|N|Use the tar scraper o
 C The Apes of Un'Goro|QID|24717|M|67.57,16.84|N|Kill and loot 2 pelts from each gorilla type.|S|
 T Chasing A-Me 01|QID|24714|M|63.81,19.79|N|To A-Me 01, at Fungal Rock to the north.|
 A Repairing A-Me 01|QID|24715|M|63.81,19.79|N|From A-Me 01.|
-C Repairing A-Me 01|QID|24715|M|64.08,20.06|N|Pick up a nearby coconut, take it to the rock. Use it there to crack it, then use the cracked coconut.|
+l Un'Goro Coconut|QID|24715|L|50237|N|Pick up a nearby Un'Goro Coconut|
+N Crack the Coconut|QID|24715|U|50237|L|50238|N|Take it to the rock and use it there to crack it|
+C Repairing A-Me 01|QID|24715|NC|M|64.08,20.06|U|50238|N|Use the cracked coconut to help A-Me 01|
 T Repairing A-Me 01|QID|24715|M|63.82,19.77|N|To A-Me 01.|
 A Serving A-Me 01|QID|24926|M|63.82,19.77|N|From A-Me 01.|
 A The Mighty U'cha|QID|24718|M|63.82,16.48;65.06,16.54|N|This quest should automatically pop up when entering the cave.|
@@ -209,7 +211,7 @@ C The Fossil-Finder 3000|QID|24708|U|50405|M|32.99,74.51|N|This works a lot like
 T The Fossil-Finder 3000|QID|24708|M|31.86,50.30|N|Back to Spark Nilminer.|
 A A Tale of Two Shovels|QID|24709|M|31.86,50.30|N|From Spark Nilminer.|
 
-C A Tale of Two Shovels|QID|24709|M|37.62,81.63|N|Durrin patrols the area on a raptor.|
+C A Tale of Two Shovels|QID|24709|T|Durrin Direshovel|M|37.62,81.63|N|Durrin patrols the area on a raptor.|
 
 T A Tale of Two Shovels|QID|24709|M|31.89,50.39|N|Back to Spark Nilminer.|
 A The Western Pylon|QID|24723|M|31.89,50.39|N|From Spark Nilminer.|

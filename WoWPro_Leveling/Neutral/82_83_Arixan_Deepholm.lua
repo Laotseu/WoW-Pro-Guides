@@ -118,7 +118,7 @@ T Deepholm, Realm of Earth|QID|27123|Z|Deepholm|M|49.6,53|N|To Maruut Stonebinde
 A Gunship Down|QID|26245|PRE|27123|M|49.6,53|N|From Maruut Stonebinder.|
 A Elemental Energy|QID|27136|PRE|27123|M|49.7,53|N|From Seer Kormo.|
 A The Earth Claims All|QID|26244|PRE|27123|M|49.7,53|N|From Seer Kormo.|
-C Elemental Energy|QID|27136|U|60835|M|49.6,61.5|N|Use the Depleted Totem and kill the Energized Geodes and Lodestone Elementals.|
+C Elemental Energy|QID|27136|U|60835|M|49.6,61.5|N|S|Use the Depleted Totem and kill the Energized Geodes and Lodestone Elementals.|
 F Storm's Fury Wreckage|QID|27136|M|55,74|N|Fly to the Storm's Fury Wreckage.|
 C The Earth Claims All|QID|26244|S|M|55.6,72.6|N|Kill Deepstone Elementals.|
 A Captain's Log|QID|26246|PRE|26245|M|53.5,73.3|N|Click the Captain's Log to get this quest.|
@@ -126,6 +126,7 @@ N First Clue|QID|26245|QO|First Clue: 1/1|M|53.5,73.7|N|Click on Captain Skullsh
 N Second Clue|QID|26245|QO|Second Clue: 1/1|M|56.1,74.2|N|Click on to find the Slain Cannoneer for the second clue.|
 C Gunship Down|QID|26245|M|56.7,76.4|N|Click on the Unexploded Artillery Shell to find the final clue.|
 C The Earth Claims All|QID|26244|US|M|55.6,72.6|N|Kill Deepstone Elementals.|
+C Elemental Energy|QID|27136|U|60835|M|49.6,61.5|N|US|Use the Depleted Totem and kill the Energized Geodes and Lodestone Elementals.|
 T Gunship Down|QID|26245|M|49.6,53|N|To Maruut Stonebinder.|
 T Captain's Log|QID|26246|M|49.6,53|N|To Maruut Stonebinder.|
 T The Earth Claims All|QID|26244|M|49.7,53|N|To Seer Kormo.|
@@ -325,10 +326,10 @@ T Crumbling Defenses|QID|26312|M|46.1,45.7|N|To Earthcaller Torunscar.|
 T On Even Ground|QID|26314|M|46.1,45.7|N|To Earthcaller Torunscar.|
 T Core of Our Troubles|QID|26313|M|46.1,45.7|N|To Earthmender Norsala.|
 A Imposing Confrontation|QID|26315|PRE|26312;26313;26314|M|46.1,45.7|N|From Earthmender Norsala.|
-C Imposing Confrontation|QID|26315|M|49.00,40.00|U|58177|N|Read the Earthen Ring Proclamation to Boden the Imposing.|
+C Imposing Confrontation|QID|26315|U|58177|N|Read the Earthen Ring Proclamation to Boden the Imposing.|
 T Imposing Confrontation|QID|26315|M|46.1,45.7|N|To Earthmender Norsala.|
 A Rocky Relations|QID|26328|PRE|26315|M|46.1,45.7|N|From Earthmender Norsala.|
-T Rocky Relations|QID|26328|M|56.50,41.20|N|To Diamant the Patient.|
+T Rocky Relations|QID|26328|M|56.4,42.4|N|To Diamant the Patient.|
 A Hatred Runs Deep|QID|26376|PRE|26328|M|56.50,41.20|N|From Diamant the Patient.|
 A Unsolid Ground|QID|26377|PRE|26328|M|56.50,41.20|N|From Diamant the Patient.|
 A Loose Stones|QID|26375|PRE|26328|M|56.5,41.1|N|From Quartz Stonetender.|
@@ -339,7 +340,7 @@ K Dragul Giantbutcher|QID|26376|QO|Dragul Giantbutcher slain: 1/1|M|60.20,39.50|
 C Hatred Runs Deep|QID|26376|US|QO|Lorthuna's Gate Cultists slain: 12/12|M|59.5,39.9|N|Kill Twilight Duskwardens.|
 l Jade Crystal Clusters|QID|26377|L|58500 6|N|Loot 6 Jade Crystal Clusters from around the camp.|US|M|59.5,39.9|
 U Jade Crystal Clusters|QID|26377|L|58783|U|58500|N|Use the Jade Crystal Clusters to get the Jade Crystal Composite.|
-C Unsolid Ground|QID|26377|U|58783|M|58.80,41.20|N|Go to an open area of the camp. Use the Jade Crystal Composite to summon an Aggitated Tunneler. Mount up as soon as you get the quest complete message. You don’t want to be nearby when the rockworm emerges.|
+C Unsolid Ground|QID|26377|U|58783|M|56.5,42.5|N|Go to an open area of the camp. Use the Jade Crystal Composite to summon an Aggitated Tunneler. Mount up as soon as you get the quest complete message. You don’t want to be nearby when the rockworm emerges.|
 C Loose Stones|QID|26375|U|58254|M|59.00,42.00|US|N|Finish releasing Quartz Rocklings with the Delicate Chain Smasher.|
 T Loose Stones|QID|26375|M|56.5,41.1|N|To Quartz Stonetender.|
 T Unsolid Ground|QID|26377|M|56.50,41.20|N|To Diamant the Patient.|
@@ -352,7 +353,7 @@ A Depth of the Depths|QID|26869|PRE|26426|N|Automatic from Diamond the Patient.|
 C Depth of the Depths|QID|26869|N|Follow the main path until you reach a fork. Wait for the Colossal Gyreworm to go by then start running down the right fork. Follow this around until you reach a small branch to you right. Duck into this and wait for the elite to path by again, then continue up the tunnel, following the elite. Take the next right. Hug the wall to your right until you enter a short tunnel. Follow this to another chamber. Keep hugging the right wall and enter the first tunnel you come to. This will lead to the chamber with the stone you are looking for.|
 T Depth of the Depths|QID|26869|M|66.4,20.6|N|Click on the stone.|
 A A Rock Amongst Many|QID|26871|PRE|26869|M|66.4,20.6|N|From the Gigantic Painite Cluster.|
-T A Rock Amongst Many|QID|26871|M|56.5,42.5|N|Don’t go back the way you came. Take the exit directly in front of you, into another tunnel. Keep the wall on your right side as you follow this tunnel. At the end of it, you will drop down into the large central chamber. To your left is the circular tunnel that the Colossal Gyreworm paths around. Wait for him to go by, then follow him down the right fork. There will be some stones blocking the way, but they can be hopped over. Take the first right you can, and follow this tunnel all the way to the exit.|
+T A Rock Amongst Many|QID|26871|M|64.5,21.6;63.8,24.0;63.6,24.2;60.7,23.6;58.2,25.5;56.5,42.7|N|Don’t go back the way you came. Take the exit directly in front of you, into another tunnel. Keep the wall on your right side as you follow this tunnel. At the end of it, you will drop down into the large central chamber. To your left is the circular tunnel that the Colossal Gyreworm paths around. Wait for him to go by, then follow him down the right fork. There will be some stones blocking the way, but they can be hopped over. Take the first right you can, and follow this tunnel all the way to the exit.|
 A Entrenched|QID|26436|PRE|26871|M|56.5,42.5|N|From Diamant the Patient.|
 T Entrenched|QID|26436|M|34.12,34.19|N|To Kor the Immovable. He's way to the West.|
 A Intervention|QID|26438|PRE|26436|M|34.12,34.19|N|From Kor the Immovable.|
