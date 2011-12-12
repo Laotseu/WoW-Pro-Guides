@@ -902,7 +902,7 @@ function WoWPro:SetMacro(macroType, macroBody)
 	assert(macroType == "WPI" or macroType == "WPT","Invalide macro type: " .. (macroType or 'nil'))
 
 	-- select the icon
-	local macroIcon = (macroType == "WPI" or not macroBody) and 1 or 241
+	local macroIcon = (macroType == "WPI" or not macroBody) and "INV_MISC_QUESTIONMARK" or "Ability_Marksmanship"
 
 	-- find macro
 	local macroIndex = _G.GetMacroIndexByName(macroType)
@@ -917,7 +917,7 @@ function WoWPro:SetMacro(macroType, macroBody)
 	macroBody = macroBody or "/script UIErrorsFrame:AddMessage(\"" .. error_msg .. "\", 1.0, 0.0, 0.0, 53, 5);"
 	    .. "PlaySoundFile(\"Sound\\\\Interface\\\\Error.wav\");"
 
-	_G.EditMacro(macroIndex, macroType, macroIcon, macroBody, 0)
+	_G.EditMacro(macroIndex, macroType, macroIcon, macroBody)
 end
 
 end -- closure
