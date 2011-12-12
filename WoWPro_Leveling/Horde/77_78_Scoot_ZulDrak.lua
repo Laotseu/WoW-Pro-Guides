@@ -127,53 +127,53 @@ T Our Only Hope |QID|12916| |M|19.8,56.5|
 
 A The Storm King's Vengeance |QID|12919| |M|19.8,56.5|
 N READ THIS!!! |QID|12919| |N|Read the tips from Lightheaded for the strategy for this quest. It's not that difficult, but the explaination takes up alot of space. Besides, you have Lightheaded, so you might as well use it.|
-K Algar the Chosen |QID|12919| |QO|Algar the chosen slain: 1/1| |N|Talk to Gymer when you're ready. Kill Algar the Chosen in this area.| |M|31,49|
-K Prince Navarius |QID|12919| |QO|Prince Navarius slain: 1/1| |N|Kill Prince Navarius.| |M|31.7,63.4|
+K Algar the Chosen |QID|12919|T|Algar the Chosen| |QO|Algar the Chosen slain: 1/1| |N|Talk to Gymer when you're ready. Kill Algar the Chosen in this area.| |M|31,49|
+K Prince Navarius |QID|12919|T|Prince Navarius| |QO|Prince Navarius slain: 1/1| |N|Kill Prince Navarius.| |M|31.7,63.4|
 C The Storm King's Vengeance |QID|12919| |N|Kill Thrym and finish killing any Scourge you need.| |M|31.7,62.1|
 T The Storm King's Vengeance |QID|12919| |N|Back to Crusader Forward Camp.| |M|25.3,64.0|
 N End of the Lights Breach/Crusader Forward Camp quests |QID|12661|
 
 N Overlord Drakuru |QID|12661| |N|Go to Reliquary of Pain, where you killed Algar the Chosen. Equip your disguise and port up to Voltarus from the center of the platform. Hotkey the diguise so you can reequip it when it fails, some of the following quest have another item to use. Overlord Drakuru is on the outer ring of the platform.| |U|38699| |M|28.4,44.9;27.1,46.1|
 
-A Dark Horizon |QID|12664| |O| |N|You got this because you didn't finish the Drakuru quest chain in Grizzly Hills.| |M|27.1,46.1|
-C Dark Horizon |QID|12664| |O| |N|Circle around the platform until you find a ramp on the outer ring. Gorebag is up there. Enjoy the ride.| |M|29.8,48.0|
-T Dark Horizon |QID|12664| |O| |M|27.1,46.1|
+A Dark Horizon |QID|12664| |U|38699| |O| |N|You got this because you didn't finish the Drakuru quest chain in Grizzly Hills.| |M|27.1,46.1|
+C Dark Horizon |QID|12664| |U|38699| |O| |N|Circle around the platform until you find a ramp on the outer ring. Gorebag is up there. Enjoy the ride.| |M|29.8,48.0|
+T Dark Horizon |QID|12664| |U|38699| |O| |M|27.1,46.1|
 
-A Reunited |QID|12663| |O| |N|You got this because you finished the Drakuru quest chain in Grizzly Hills.| |M|27.1,46.1|
-C Reunited |QID|12663| |O| |N|Circle around the platform until you find a ramp on the outer ring. Gorebag is up there. Enjoy the ride.| |M|29.8,48.0|
-T Reunited |QID|12663| |O| |M|27.1,46.1|
+A Reunited |QID|12663| |U|38699| |O| |N|You got this because you finished the Drakuru quest chain in Grizzly Hills.| |M|27.1,46.1|
+C Reunited |QID|12663| |U|38699| |O| |N|Circle around the platform until you find a ramp on the outer ring. Gorebag is up there. Enjoy the ride.| |M|29.8,48.0|
+T Reunited |QID|12663| |U|38699| |O| |M|27.1,46.1|
 T Infiltrating Voltarus |QID|12661| |N|Port back down, blow the horn.| |U|41390| |M|28.0,44.9|
 
 A So Far, So Bad |QID|12669| |M|28.0,44.9|
 
-A It Rolls Downhill |QID|12673| |N|Back to Overlord Drakuru.| |M|28.4,44.9;27.1,46.1|
+A It Rolls Downhill |QID|12673| |U|38699| |N|Back to Overlord Drakuru.| |M|28.4,44.9;27.1,46.1|
 C It Rolls Downhill |QID|12673| |N|Target a geist, use the scepter to charm it and send it for a crystal (the button is on the pet bar, get close they're not too bright).  You MUST wait until the geist ports up to get credit, so don't get in a rush to charm another one.| |U|39157|
-T It Rolls Downhill |QID|12673| |N|Back to Overlord Drakuru.| |M|28.4,44.9;27.1,46.1|
+T It Rolls Downhill |QID|12673| |U|38699| |N|Back to Overlord Drakuru.| |M|28.4,44.9;27.1,46.1|
 C So Far, So Bad |QID|12669| |N|Port back down, use the Diluting Additive near the cauldrons.  Blightguards will spawn mobs, run away to try to avoid aggro.| |U|39154| |M|28.4,44.9;26.8,46.9;29.6,47.3;31.1,45.1;31.2,44.3;31.4,43.2|
 T So Far, So Bad |QID|12669| |N|Blow the horn...again.| |U|41390| |M|28.0,44.9|
 
 A Hazardous Materials |QID|12677| |M|28.0,44.9|
 
-A Zero Tolerance |QID|12686| |N|Back to Overlord Drakuru.| |M|28.4,44.9;27.1,46.1|
+A Zero Tolerance |QID|12686| |U|38699| |N|Back to Overlord Drakuru.| |M|28.4,44.9;27.1,46.1|
 C Zero Tolerance |QID|12686| |N|Use the scepter on a Servent of Drakuru, then head to the big platform. Target Darmuk and let the troll do all the work. DO NOT FIGHT!! You will lose your disguise and your pet. Open with Ferocious Enrage, use Gut Rip and Stunning Force when they are up, repeat as necessary.| |U|39206| |M|28.4,44.9;30.51,51.57|
-T Zero Tolerance |QID|12686| |N|Back to Overlord Drakuru.| |M|28.4,44.9;27.1,46.1|
-C Hazardous Materials |QID|12677| |N|The crates are all over the platform. Looting the crates can drop your disguise, be alert. You must be disguised to gather the crates.|
-T Hazardous Materials |QID|12677| |N|Port back down, blow the horn. Are you tired of this yet?| |U|41390| |M|28.4,44.9;28.0,44.9|
+T Zero Tolerance |QID|12686| |U|38699| |N|Back to Overlord Drakuru.| |M|28.4,44.9;27.1,46.1|
+C Hazardous Materials |QID|12677| |U|38699| |N|The crates are all over the platform. Looting the crates can drop your disguise, be alert. You must be disguised to gather the crates.|
+T Hazardous Materials |QID|12677| |U|38699| |N|Port back down, blow the horn. Are you tired of this yet?| |U|41390| |M|28.4,44.9;28.0,44.9|
 
-A Sabotage |QID|12676| |M|28.0,44.9|
+A Sabotage |QID|12676| |U|38699| |M|28.0,44.9|
 
-A Fuel for the Fire |QID|12690| |N|Back to Overlord Drakuru| |M|28.4,44.9;27.1,46.1|
+A Fuel for the Fire |QID|12690| |U|38699| |N|Back to Overlord Drakuru| |M|28.4,44.9;27.1,46.1|
 C Fuel for the Fire |QID|12690| |N|Go to the Frigid Breach. Time for some fun! Use the scepter to charm an abomination. Send him out to gather up trolls. Just before he dies, blow him up! Repeat until you've killed 60. Don't worry about the chieftans, they get carried off before they attack.| |U|39238| |M|28.4,44.9;32.74,38.72|
 N Destroy Scourgewagons  |QID|12676| |QO|Scourgewagons destroyed: 5/5| |U|39165| |N|They are all over the Reliquary of Pain. Use the explosive and run.| |M|29.9,47.8;28.6,48.4;28.5,51.4;27.3,48.6;26.6,47.2|
-T Fuel for the Fire |QID|12690| |N|Back to Overlord Drakuru.| |M|28.4,44.9;27.1,46.1|
+T Fuel for the Fire |QID|12690| |U|38699| |N|Back to Overlord Drakuru.| |M|28.4,44.9;27.1,46.1|
 
-A Disclosure |QID|12710| |M|27.1,46.1|
-C Disclosure |QID|12710| |N|Take the upper portal (on top of the one you've been using). Click on the coffin to take the tour.| |M|28.4,44.9;27.3,42.4|
-T Disclosure |QID|12710| |N|Back to Overlord Drakuru.| |M|28.4,44.9;27.1,46.1|
+A Disclosure |QID|12710| |U|38699| |M|27.1,46.1|
+C Disclosure |QID|12710| |U|38699| |N|Take the upper portal (on top of the one you've been using). Click on the coffin to take the tour.| |M|28.4,44.9;27.3,42.4|
+T Disclosure |QID|12710| |U|38699| |N|Back to Overlord Drakuru.| |M|28.4,44.9;27.1,46.1|
 C Sabotage |QID|12676|
 T Sabotage |QID|12676| |N|You know what to do. Pucker up and blow.| |U|41390|M|28.4,44.9;28.0,44.9|
 
-A Betrayal |QID|12713| |M|28.0,44.9|
+A Betrayal |QID|12713| |U|38699| |M|28.0,44.9|
 C Betrayal |QID|12713| |N|Back to Overlord Drakuru. Talk to him to start. Don't worry when your disguise when it fails, you don't need it anymore. Use the scepter to charm one of the Captive Trolls and send him after Drakuru. Keep him attacking while you avoid the Blight Crystals and the fog they create. If you're solo, you'll probably need to charm another Troll, but wait until the first one dies. The Trolls can be healed.| |U|39664| |M|28.4,44.9;27.1,46.1|
 U PORT DOWN NOW!! |QID|12713| |N|You only have 3 minutes, so quit reading this, Heal yourself, and use Drakuru's Last Wish to port down.|
 T Betrayal |QID|12713| |N|Blow the horn one last time.| |U|41390|
@@ -187,8 +187,9 @@ A Parachutes for the Argent Crusade |QID|12740| |M|39.5,66.9|
 
 ; f The Argent Stand |QID|12505| |M|41.5,64.5|
 
+C Defend the Stand |QID|12503|S| |N|Kill anymore you need.|
 C Parachutes for the Argent Crusade |QID|12740| |N|Throw parachutes to the Argent fighters out in the battlefield.| |U|39615|
-C Defend the Stand |QID|12503| |N|Kill anymore you need.|
+C Defend the Stand |QID|12503|US| |N|Kill anymore you need.|
 
 T Defend the Stand |QID|12503| |N|Back to the Argent Stand.| |M|39.5,66.9|
 T Parachutes for the Argent Crusade |QID|12740| |M|39.5,66.9|
@@ -206,9 +207,11 @@ T New Orders for Sergeant Stackhammer |QID|12505| |N|Straight North from the Arg
 A Argent Crusade, We Are Leaving! |QID|12504| |M|40.5,48.2|
 
 A Mopping Up |QID|12508| |M|40.4,48.2|
+C Mopping Up |QID|12508|S|
+C Argent Crusade, We Are Leaving! |QID|12504|S|
 C Trouble at the Altar of Sseratus |QID|12506| |N|Avoid the Prophet in front and go into the temple. Kill Trolls and give Argents their orders on the way.|
-C Argent Crusade, We Are Leaving! |QID|12504|
-C Mopping Up |QID|12508|
+C Argent Crusade, We Are Leaving! |QID|12504|US|
+C Mopping Up |QID|12508|US|
 
 A Strange Mojo |QID|12507| |N|It's a drop. Keep killing trolls until you get it.| |U|38321|
 T Argent Crusade, We Are Leaving! |QID|12504| |N|Back to Sergeant Stackhammer.| |M|40.5,48.2|
@@ -224,8 +227,9 @@ T Siphoning the Spirits |QID|12799| |N|Back to Heb'Valok.| |M|35.6,52.2|
 
 A Stocking the Shelves |QID|12609| |M|35.6,52.2|
 A Clipping Their Wings |QID|12610| |M|35.6,52.2|
+C Stocking the Shelves |QID|12609|S| |N|Kill the spiders.|
 C Clipping Their Wings |QID|12610| |N|Kill the bats.|
-C Stocking the Shelves |QID|12609| |N|Kill the spiders.|
+C Stocking the Shelves |QID|12609|US|dw |N|Kill the spiders.|
 T Stocking the Shelves |QID|12609| |M|35.6,52.2|
 T Clipping Their Wings |QID|12610| |M|35.6,52.2|
 
@@ -237,37 +241,38 @@ A Precious Elemental Fluids |QID|12510| |M|40.6,65.6|
 A The Drakkari Do Not Need Water Elementals! |QID|12562| |N|Southern part of the Argent Stand next to the Leatherworking supplier.| |M|40.2,68.9|
 
 A Something for the Pain |QID|12597| |N|Take the road southeast.| |M|48.8,78.8|
-K Crazed Water Elementals |QID|12510| |N|Head West to the Drak'Sotra Fields. Kill the Elementals, you need 3 links to make a tether (You'll need 9 links total). Kill Trolls and gather plants also.| |L|38323 3| |M|44.7,79.0|
-N Make a tether now!! |QID|12510| |N|Make a tether. You can't loot more than 3 at a time.| |U|38323|
-K Watery Lord |QID|12510| |N|Use the tether to summon.| |U|38324|
-K Kill more Elementals |QID|12510| |N|Keep killing the Elementals.| |L|38323 3|
-N Make another tether now!! |QID|12510| |U|38323|
-K Summon again |QID|12510| |U|38324|
-K Go for the last 3 Links |QID|12510| |L|38323 3|
-C Precious Elemental Fluids |QID|12510| |N|Last time...finally.| |U|38324|
-C The Drakkari Do Not Need Water Elementals! |QID|12562| |N|Kill any trolls you still need.|
-C Something for the Pain |QID|12597| |N|Gather any plants you still need.|
+C Something for the Pain |QID|12597|S| |N|Gather plants|
+C The Drakkari Do Not Need Water Elementals! |QID|12562|S| |N|Kill trolls|
+K Crazed Water Elementals |QID|12510| |U|38323| |N|Head West to the Drak'Sotra Fields. Kill the Elementals, you need 3 links to make a tether (You'll need 9 links total).| |L|38324| |M|44.7,79.0|
+K Watery Lord |QID|12510| |N|Use the tether to summon.| |U|38324| |QO|Precious Elemental Fluids: 1/3|
+K Crazed Water Elementals |QID|12510| |N|Keep killing the Elementals.| |U|38323| |L|38324|
+K Watery Lord |QID|12510| |U|38324| |N|Summon again| |QO|Precious Elemental Fluids: 2/3|
+K Crazed Water Elementals |QID|12510| |U|38323| |L|38324| |N|Go for the last 3 Links|
+K Watery Lord |QID|12510| |U|38324| |N|Last summon|
+C The Drakkari Do Not Need Water Elementals! |QID|12562|US| |N|Kill any trolls you still need.|
+C Something for the Pain |QID|12597|US| |N|Gather any plants you still need.|
 T Something for the Pain |QID|12597| |N|Back to Drak'Sotra.| |M|48.8,78.8|
 
 A Throwing Down |QID|12598| |N|Following the aquaduct to the South will take you to the crusader camp.| |M|58.1,72.4|
 
 A Leave No One Behind |QID|12512| |N|He's in the back,right corner.| |M|58.6,72.5|
-C Throwing Down |QID|12598| |N|Throw the High Impact Grenades in the craters (they actually look like pyramids).  Crispy Spider Treats, not just for Hallows End anymore.| |U|38574| |M|54.88,70.00|
-N Crusader Johnson |N|In the tower. Bandage him and lead him back to the camp. You've got 2 minutes, but remember he's injured, avoid all combat and don't lose him on the run back.| |QID|12512| |QO|Saved Crusader Johnson: 1/1| |U|38330| |M|50.7,69.8;58.1,72.4|
+C Throwing Down |QID|12598|S| |N|Throw the High Impact Grenades in the craters (they actually look like pyramids).  Crispy Spider Treats, not just for Hallows End anymore.| |U|38574| |M|54.88,70.00|
+N Crusader Jonathan |QID|12512| |QO|Saved Crusader Jonathan: 1/1| |U|38330| |M|50.7,69.8;58.1,72.4| |N|In the tower. Bandage him and lead him back to the camp. You've got 2 minutes, but remember he's injured, avoid all combat and don't lose him on the run back.|
 N Crusader Josephine |N|In the tower. Same plan as before.| |QID|12512| |QO|Saved Crusader Josephine: 1/1| |U|38330| |M|49.4,74.7;58.1,72.4|
 C Leave No One Behind |QID|12512| |N|Crusader Lamoof is in the tower. Lead him home, or at least to the doctor.| |U|38330| |M|53.6,75.0;58.1,72.4|
+C Throwing Down |QID|12598|US| |N|Throw the High Impact Grenades in the craters (they actually look like pyramids).  Crispy Spider Treats, not just for Hallows End anymore.| |U|38574| |M|54.88,70.00|
 T Leave No One Behind |QID|12512| |M|58.6,72.5|
 T Throwing Down |QID|12598| |M|58.1,72.4|
 
 A Cocooned! |QID|12606| |M|58.1,72.4|
-
 A Death to the Necromagi |QID|12552| |M|58.1,72.1|
-
 A Skimmer Spinnerets |QID|12553| |M|58.2,72.1|
 
+C Death to the Necromagi |QID|12552|S| |N|Need any more big spiders? Get them now.|
+C Skimmer Spinnerets |QID|12553|S| |N|Go to Kolramas and kill the little spiders. Kill big spiders too.| |M|57.48,79.90|
 C Cocooned! |QID|12606| |N|Back where you blew up the craters.| |M|54.88,70.00|
-C Skimmer Spinnerets |QID|12553| |N|Go to Kolramas and kill the little spiders. Kill big spiders too.| |M|57.48,79.90|
-C Death to the Necromagi |QID|12552| |N|Need any more big spiders? Get them now.|
+C Skimmer Spinnerets |QID|12553|US| |N|Go to Kolramas and kill the little spiders. Kill big spiders too.| |M|57.48,79.90|
+C Death to the Necromagi |QID|12552|US| |N|Need any more big spiders? Get them now.|
 
 T Cocooned! |QID|12606| |N|Back to the camp.| |M|58.1,72.4|
 T Death to the Necromagi |QID|12552| |M|58.1,72.1|
