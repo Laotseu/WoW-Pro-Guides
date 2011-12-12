@@ -248,9 +248,10 @@ T Thinning the Ranks|QID|10007|M|69.7,44.2|N|To Theloria Shadecloak.|
 T Report to the Allerian Post|QID|10444|M|69.7,44.2|N|To Lieutenant Meridian.|
 A Attack on Firewing Point|QID|9996|M|69.7,44.2|N|From Lieutenant Meridian.|
 l Firewing Signets|QID|10412|M|70.00,39.00|N|Kill the mobs until you get 10 Firewing Signets.|L|29426 10|REP|Scryers;934|S|
+C The Elusive Ironjaw|T|Ironjaw|N|Kill Ironjaw (wandering mob) and loot his pelt.|QID|10022|S|M|66.3,34.7|
 C Attack on Firewing Point|N|Kill mobs until you finish this quest.|QID|9996|M|70.00,39.00|
-C The Elusive Ironjaw|T|Ironjaw|N|Kill Ironjaw (wandering mob) and loot his pelt.|QID|10022|M|66.3,34.7|
-N Stonegazer|QID|10020|T|Stonegazer|N|Look for Stonegazer here, if you can't solo it find someone to help you.|M|64.00,31.00|L|25815|REP|Aldor;932|
+K The Elusive Ironjaw|T|Ironjaw|N|Kill Ironjaw (wandering mob) and loot his pelt.|QID|10022|US|M|66.3,34.7|
+K Stonegazer|QID|10020|T|Stonegazer|N|Look for Stonegazer here, if you can't solo it find someone to help you.|M|64.00,31.00|L|25815|REP|Aldor;932|
 T Attack on Firewing Point|QID|9996|M|69.7,44.2|N|To Lieutenant Meridian.|
 A The Final Code|QID|10446|M|69.7,44.2|N|From Lieutenant Meridian.|
 l The Final Code|QID|10446|N|Go to the top of the tower and kill Sharth Voldoun and loot the Final Code. If you are about to die, jump off the tower or else you will not be able to get your corpse.|L|29912|M|74.00,36.00|
@@ -335,7 +336,7 @@ C Taken in the Night|N|Free Netherweb Victims until you finish this quest.|QID|1
 C For the Fallen|N|Kill spiders until you finish this quest.|QID|10920|M|52.00,77.00|
 T For the Fallen|QID|10920|N|To Vindicator Haylen.|
 A Terokkarantula|QID|10921|N|From Vindicator Haylen.|
-C Terokkarantula|N|Get a group for this quest if need be, then go here and kill Terokkarantula.|QID|10921|M|54.2,81.69|
+C Terokkarantula|N|Get a group for this quest if need be, then go here and kill Terokkarantula.|QID|10921|T|Terokkarantula|M|54.2,81.69|
 C Taken in the Night|N|Free Netherweb Victims until you finish this quest.|QID|10873|M|52.00,77.00|US|
 T Terokkarantula|QID|10921|N|To Vindicator Haylen.|
 A Return to Sha'tari Base Camp |QID|10926|N|From Vindicator Haylen.|
