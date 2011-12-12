@@ -32,11 +32,16 @@ local WorldMapDetailFrame = _G.WorldMapDetailFrame
 local GetCurrentMapAreaID = _G.GetCurrentMapAreaID
 local GetCurrentMapDungeonLevel = _G.GetCurrentMapDungeonLevel
 local GetPlayerMapPosition = _G.GetPlayerMapPosition
+local GetQuestLogIndexByID = _G.GetQuestLogIndexByID
+local IsQuestWatched = _G.IsQuestWatched
 local PlaySoundFile = _G.PlaySoundFile
 local QuestMapUpdateAllQuests = _G.QuestMapUpdateAllQuests
 local QuestPOIUpdateIcons = _G.QuestPOIUpdateIcons
+local QuestPOI_SelectButtonByQuestId = _G.QuestPOI_SelectButtonByQuestId
+local SetSuperTrackedQuestID = _G.SetSuperTrackedQuestID
 local ToggleDropDownMenu = _G.ToggleDropDownMenu
 local UnitOnTaxi = _G.UnitOnTaxi
+local WORLDMAP_SETTINGS = _G.WORLDMAP_SETTINGS
 local WorldMapFrame_UpdateQuests = _G.WorldMapFrame_UpdateQuests
 
 local LibStub = _G.LibStub
@@ -437,6 +442,15 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 		local x, y = WoWPro:findBlizzCoords(WoWPro.QID[i])
 		if x and y then coords = tostring(x)..","..tostring(y) end
 	end
+
+	-- Select the proper quest in the watch frame to set the minimap area and arrow for the quest
+	-- (should probably make this an option, only select if the quest is actually watched)
+	if WoWPro.QID[i] and IsQuestWatched(GetQuestLogIndexByID(WoWPro.QID[i])) then
+		WORLDMAP_SETTINGS.selectedQuestId = WoWPro.QID[i]
+		QuestPOI_SelectButtonByQuestId("WatchFrameLines", WoWPro.QID[i], true)
+		SetSuperTrackedQuestID(WoWPro.QID[i])
+	end
+
 
 	-- Using LightHeaded if the user has it and if there aren't coords from anything else --
 	if LightHeaded and WoWPro.QID and WoWPro.QID[i] and not coords then
