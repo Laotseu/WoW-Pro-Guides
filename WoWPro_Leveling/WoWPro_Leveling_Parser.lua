@@ -799,15 +799,15 @@ function WoWPro.Leveling:RowUpdate(offset)
 		row.zone = strtrim(zone)
 
 		-- Checking for loot items in bags --
-		local lootqtyi
-		if lootcheck and ( lootitem or action == "B" ) then
-			if not WoWPro.sticky[row.index] then lootcheck = false end
+--		local lootqtyi
+--		if lootcheck and ( lootitem or action == "B" ) then
+--			if not WoWPro.sticky[row.index] then lootcheck = false end
 			--if not lootitem then
 			--	if GetItemCount(step) > 0 and not completion[k] then WoWPro.CompleteStep(k) end
 			--end
-			if tonumber(lootqty) ~= nil then lootqtyi = tonumber(lootqty) else lootqtyi = 1 end
-			if GetItemCount(lootitem) >= lootqtyi and not completion[k] then WoWPro.CompleteStep(k) end
-		end
+--			if tonumber(lootqty) ~= nil then lootqtyi = tonumber(lootqty) else lootqtyi = 1 end
+--			if GetItemCount(lootitem) >= lootqtyi and not completion[k] then WoWPro.CompleteStep(k) end
+--		end
 
 		WoWPro.rows[i] = row
 
@@ -1058,10 +1058,10 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(skipUIUpdate)
 				--end
 
 						  -- Quest Completion --
-				elseif WoWPro.lootitem[i] and not completion
-					and GetItemCount( WoWPro.lootitem[i] ) >=  WoWPro.lootqty[i] then
-					WoWPro.CompleteStep(i, skipUIUpdate)
-					completion = true
+--				elseif WoWPro.lootitem[i] and not completion
+--					and GetItemCount( WoWPro.lootitem[i] ) >=  WoWPro.lootqty[i] then
+--					WoWPro.CompleteStep(i, skipUIUpdate)
+--					completion = true
 --				end
 
 				-- Partial Completion --
