@@ -268,9 +268,9 @@ A Cocooned! |QID|12606| |M|58.1,72.4|
 A Death to the Necromagi |QID|12552| |M|58.1,72.1|
 A Skimmer Spinnerets |QID|12553| |M|58.2,72.1|
 
-C Death to the Necromagi |QID|12552|S| |N|Need any more big spiders? Get them now.|
-C Skimmer Spinnerets |QID|12553|S| |N|Go to Kolramas and kill the little spiders. Kill big spiders too.| |M|57.48,79.90|
 C Cocooned! |QID|12606| |N|Back where you blew up the craters.| |M|54.88,70.00|
+
+C Death to the Necromagi |QID|12552|S| |N|Need any more big spiders? Get them now.|
 C Skimmer Spinnerets |QID|12553|US| |N|Go to Kolramas and kill the little spiders. Kill big spiders too.| |M|57.48,79.90|
 C Death to the Necromagi |QID|12552|US| |N|Need any more big spiders? Get them now.|
 
@@ -288,8 +288,9 @@ T Crashed Sprayer |QID|12583| |N|Back to the camp.| |M|58.2,72.1|
 
 A A Tangled Skein |QID|12555| |M|58.2,72.1|
 C A Tangled Skein |QID|12555| |N|Oh! What a tangled skein we weave. Use the it on the plague sprayers.| |U|38515|
-C Pure Evil |QID|12584| |N|Inside Kolramas.  Little, glowing chunks of ore that are hard to see. Look in all the nooks and crannies.| |M|60.15,79.31|
-N Malas the Corrupter |QID|12554| |N|Try it solo if you want, just stay out of the AoE. If you can't, just keep questing and do it when you find a group. Turn it in when you're done. Go up the ramp to the right of the entrance, Malas is at the top of the tower.| |L|38521| |M|60.80,80.32;61.1,77.7|
+C Pure Evil |QID|12584|S| |N|Inside Kolramas.  Little, glowing chunks of ore that are hard to see. Look in all the nooks and crannies.| |M|60.15,79.31|
+K Malas the Corrupter |QID|12554| |N|Try it solo if you want, just stay out of the AoE. If you can't, just keep questing and do it when you find a group. Turn it in when you're done. Go up the ramp to the right of the entrance, Malas is at the top of the tower.| |L|38521| |M|60.80,80.32;61.1,77.7|
+C Pure Evil |QID|12584|US| |N|Inside Kolramas.  Little, glowing chunks of ore that are hard to see. Look in all the nooks and crannies.| |M|60.15,79.31|
 T A Tangled Skein |QID|12555| |N|Back to the camp.| |M|58.2,72.1|
 T The Drakkari Do Not Need Water Elementals! |QID|12562| |N|Back at the Argent Stand.| |M|40.2,68.9|
 T Pure Evil |QID|12584| |M|40.8,66.7|
@@ -300,9 +301,11 @@ A Mushroom Mixer |QID|12514| |M|40.6,65.6|
 A Gluttonous Lurkers |QID|12527| |N|Near the Flight Path.| |M|41.3,65.1|
 A Creature Comforts |QID|12599| |N|Go West to Drak'Agal. He's in a building south of the Amphitheater of Anguish.| |M|48.1,63.8|
 
-C Gluttonous Lurkers |QID|12527| |N|Loot 5 rats, they can be hard to see.  After you get 5, feed all of them to one basilisk. You throw one at a time. If you can Root them this is alot easier.  Repeat until you get 5 crystals.| |U|38380|
-C Mushroom Mixer |QID|12514| |N|All over the area.|
-C Creature Comforts |QID|12599| |N|They are all over too, but can be hard to see. They look like a big thorn sticking up. Mouse over the area to find them.|
+C Mushroom Mixer |QID|12514|S| |N|All over the area.|
+C Creature Comforts |QID|12599|S| |N|They are all over too, but can be hard to see. They look like a big thorn sticking up. Mouse over the area to find them.|
+C Gluttonous Lurkers |QID|12527|T|Zul'Drak Rat| |N|Loot 5 rats, they can be hard to see.  After you get 5, feed all of them to one basilisk. You throw one at a time. If you can Root them this is alot easier.  Repeat until you get 5 crystals.| |U|38380|
+C Creature Comforts |QID|12599|US| |N|They are all over too, but can be hard to see. They look like a big thorn sticking up. Mouse over the area to find them.|
+C Mushroom Mixer |QID|12514|US| |N|All over the area.|
 T Creature Comforts |QID|12599| |N|Back at the camp| |M|48.1,63.8|
 T Mushroom Mixer |QID|12514| |N|Back to the Argent Stand.| |M|40.6,65.6|
 
@@ -324,8 +327,9 @@ T The Blessing of Zim'Torga |QID|12615| |N|Big statue in the middle.| |M|59.5,57
 
 A The Leaders at Jin'Alai |QID|12622| |M|59.2,56.3|
 ; f Zim'Torga |QID|12628| |M|60.0,56.7|
-C Breaking Through Jin'Alai |QID|12627| |N|Just South, Click on the cauldrons. If you get a yell in chat, find the "boss" and kill him.| |M|57.62,61.72;58.78,62.71;57.20,65.34;55.70,64.31|
+C Breaking Through Jin'Alai |QID|12627|S| |N|Just South, Click on the cauldrons. If you get a yell in chat, find the "boss" and kill him.| |M|57.62,61.72;58.78,62.71;57.20,65.34;55.70,64.31|
 C The Leaders at Jin'Alai |QID|12622| |N|Kill Trolls. Pay attention to you chat log, when the "bosses" yell, find him by his Totem. The items can be looted by everyone, so don't worry if someone else tags the mob first. Just don't forget to loot, they spawn in order, so it could be awhile if you miss one.|
+C Breaking Through Jin'Alai |QID|12627|US| |N|Just South, Click on the cauldrons. If you get a yell in chat, find the "boss" and kill him.| |M|57.62,61.72;58.78,62.71;57.20,65.34;55.70,64.31|
 T Breaking Through Jin'Alai |QID|12627| |N|Back to Zim'Torga.| |M|59.51,57.99|
 
 A To Speak With Har'koa |QID|12628| |M|59.5,58.0|
