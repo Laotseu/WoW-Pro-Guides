@@ -268,7 +268,7 @@ T Culling the Wendigos|QID|25667|M|53.68,52.17|N|To Captain Tharran.|
 T Forced to watch from afar|QID|313|M|53.68,52.17|N|To Captain Tharran.|
 A Pushing Forward|QID|25792|M|53.68,52.17|N|From Captain Tharran.|
 A Operation Recombobulation|QID|412|M|53.32,51.98|N|From Razzle Sprysprocket.|
-f Kharanos|M|53.77,52.71|N|At Brolan Galebeard.|QID|412|R|Human,NightElf,Draenei,Worgen|
+; f Kharanos|M|53.77,52.71|N|At Brolan Galebeard.|QID|412|R|Human,NightElf,Draenei,Worgen|
 
 C Beer Basted Boar Ribs|QID|384|S|N|Kill and loot boars you to the Tender Boar Ribs.|
 C Operation Recombobulation|QID|412|S|M|58.00,57.29|N|Kill Frostmane Salvagers and loot Gyromechanic Gears.|
@@ -318,7 +318,7 @@ A Help for the Quarry|QID|25933|M|70.46,48.92|N|From Sergeant Flinthammer.|
 
 A Priceless Treasures|QID|25937|M|76.16,53.10|N|From Prospector Drugan.|
 A The Public Servant|QID|433|M|75.88,54.30|N|From Senator Mehr Stonehallow.|
-f Gol'Bolar Quarry|QID|25986|M|75.87,54.36|N|At Dominic Galebeard.|
+; f Gol'Bolar Quarry|QID|25986|M|75.87,54.36|N|At Dominic Galebeard.|
 T Help for the Quarry|QID|25933|M|76.31,54.60|N|To Foreman Stonebrow.|
 A Those Blasted Troggs!|QID|432|M|76.31,54.60|N|From Foreman Stonebrow.|
 C Priceless Treasures|QID|25937|S|U|56226|M|78.31,53.59|N|Collect Frozen Artifacts as you make you way through the cave.|NC|

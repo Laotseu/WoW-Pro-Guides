@@ -189,7 +189,7 @@ T Need More Science|QID|14424|M|50.38,74.25|N|To Assistant Greely. Go to the top
 L Level 16|QID|14424|LVL|16|N|You should be around level 16 by this point.|
 A When Science Attacks|QID|14308|PRE|14424|M|50.38,74.25|N|From Assistant Greely.|
 
-f Southern Rocketway Terminus|QID|14308|M|51.42,74.33|N|At Friz Groundspin.|
+; f Southern Rocketway Terminus|QID|14308|M|51.42,74.33|N|At Friz Groundspin.|
 
 A Mortar the Point|QID|14258|M|52.17,74.22|N|From Bombardier Captain Smooks.|
 A Bad Science! Bad!|QID|14322|M|45.09,75.46|N|From Twistex Happytongs.|
@@ -274,7 +274,7 @@ T Azsharite Experiment Number Two|QID|14388|M|50.39,74.29|N|To Assistant Greely.
 A A Hello to Arms|QID|24458|M|50.53,74.77;51.48,74.32|N|From Hobart Grapplehammer.|
 A Operation Fishgut|QID|14478|M|56.99,50.13|N|Speak with Friz Groundspin for a free airlift. From the poster|
 h Bilgewater Harbor|QID|14478|M|57.02,50.29|N|At Grimy Greasefingers.|
-f Bilgewater Harbor|QID|14340|M|52.95,49.85|N|At Kroum.|
+; f Bilgewater Harbor|QID|14340|M|52.95,49.85|N|At Kroum.|
 A Azshara Blues|QID|14407|M|59.38,50.68|N|From Teemo.|
 
 T A Hello to Arms|QID|24458|M|60.51,50.86|N|To Bleenik Fizzlefuse.|
@@ -450,7 +450,7 @@ A Fade to Black|QID|24467|M|66.51,20.34|N|From Kalec.|
 A Pro-liberation|QID|14297|M|66.42,20.29|N|From Jellix Fuselighter.|
 A Ice Cold|QID|14261|M|66.57,19.63|N|From Feno Blastnoggin.|
 
-f Bitter Reaches|QID|14435|M|66.45,20.93|N|At Blitz Blastospazz.|
+; f Bitter Reaches|QID|14435|M|66.45,20.93|N|At Blitz Blastospazz.|
 
 C Ice Cold|QID|14261|S|N|Kill cultists and dragonkin for keys and free Goblin Workers.|
 
@@ -478,7 +478,7 @@ A Where's My Head?|QID|14462|M|13.98,64.78|N|From Chawg.|
 A Let Them Feast on Fear|QID|24433|M|13.98,64.78|N|From Chawg.|
 A Commando Drop|QID|24434|M|13.87,64.50|N|From Andorel Sunsworn.|
 
-f Valormok|QID|24434|M|14.33,65.01|N|At Kroum.|
+; f Valormok|QID|24434|M|14.33,65.01|N|At Kroum.|
 A Grounded!|QID|14475|M|14.33,65.01|N|From Kroum.|
 
 F Orgrimmar|QID|14475|M|14.33,65.01|N|Train, repair, sell, etc.|
@@ -528,7 +528,7 @@ A To The Ramparts!|QID|13866|PRE|24463|M|94.39,46.80|Z|Ashenvale|N|From Kulg Gor
 
 F Northern Barrens |QID|13866|M|94.39,46.80|Z|Ashenvale|N|Talk to Kulg for a free flight.|
 T To The Ramparts!|QID|13866|M|42.41,15.18|Z|Northern Barrens|N|To Kadrak.|
-f The Mor'shan Rampart|QID|13866|M|42.02,15.81|Z|Northern Barrens|N|At Gort Goreflight.|
+; f The Mor'shan Rampart|QID|13866|M|42.02,15.81|Z|Northern Barrens|N|At Gort Goreflight.|
 
 ]]
 
