@@ -35,7 +35,7 @@ A Equipment Recovery |QID|12844|M|41.1,86.1|
 
 A Reclaimed Rations |QID|12827|M|40.9,85.3|
 A Expression of Gratitude |QID|12836|M|40.9,85.3|
-f K3 |QID|12818| |N||M|40.73,84.57|
+; f K3 |QID|12818| |N||M|40.73,84.57|
 C Clean Up |QID|12818| |N|Pick up parts around the smoking hole in the ground .  Kill a few Gnolls while you're at it.|M|39.48,86.76|
 T Clean Up |QID|12818|M|41.0,86.4|
 
@@ -240,7 +240,7 @@ T Forging an Alliance |QID|12924|N|Njormeld|M|63.17,63.21|
 
 A A New Beginning |QID|13009|M|63.2,63.2|
 N Dailies |QID|13009| |N|Now you have opened the first of the Sons of Hodir Dailies.  Get used to this area, the best Shoulder Enchant in the game (if you don't have Inscription) requires you to be Exalted with them.|
-f Dun Niffelem |QID|13009| |N||M|62.76,61.01|
+; f Dun Niffelem |QID|13009| |N||M|62.76,61.01|
 F Temple of Storms |QID|13009||N||M|33,58|
 T A New Beginning |QID|13009|M|33.4,58.0|
 
@@ -319,7 +319,7 @@ N Halls of Lightning |QID|13034| |N|The next two quests that King Jokkum has are
 N End of Dun Niffelem/Thorim quests |QID|13034|
 
 F Camp Tunka'lo |N|| |QID|13034|M|65,50|
-f Camp Tunka'lo |N|| |QID|13034|M|65.43,50.65|
+; f Camp Tunka'lo |N|| |QID|13034|M|65.43,50.65|
 
 A The Witness and the Hero |QID|13034| |N|In the hut across from the flight path.|
 C The Witness and the Hero |QID|13034| |N|In the village. First (62.85,50.43), Second (66.82,50.14), Third (67.49,50.53).
@@ -350,7 +350,7 @@ T Changing the Wind's Course |QID|13058|
 N End of Camp Tunka'lo quests |QID|13060|
 
 F Grom'arsh Crash-Site |N|| |QID|13060|M|36,49|
-f Grom'arsh Crash-Site |N|| |QID|13060|M|36.20,49.36|
+; f Grom'arsh Crash-Site |N|| |QID|13060|M|36.20,49.36|
 T When All Else Fails |QID|13060|
 
 A Ancient Relics |QID|12882|M|37.0,49.5|
@@ -426,7 +426,7 @@ F Bouldercrag's Refuge |QID|12929| |N||M|30.46,36.69|
 T The Earthen of Ulduar |QID|12929|
 
 A Rare Earth |QID|12930|
-f Bouldercrag's Refuge |QID|12930| |N|Get the Flight Point .|M|30.62,36.37|
+; f Bouldercrag's Refuge |QID|12930| |N|Get the Flight Point .|M|30.62,36.37|
 C Rare Earth |QID|12930| |N|On the cliff to the west. Make sure you have 5 Frostweave cloth. Miners can track the Earth.|
 T Rare Earth |QID|12930|
 
