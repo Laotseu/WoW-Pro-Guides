@@ -10,7 +10,7 @@
 -- URL: http://wow-pro.com/node/3295/revisions/24757/view
 -- Date: 2011-10-10 17:34
 -- Who: Crackerhead22
--- Log: Created neutral guide, credit to Gethe. 
+-- Log: Created neutral guide, credit to Gethe.
 
 -- URL: http://wow-pro.com/node/3295/revisions/24750/view
 -- Date: 2011-09-21 08:37
@@ -63,8 +63,9 @@ C This Just In: Fire Still Hot! |QID|12859|S|N|Use the fire extinguisher on the 
 C Trolls Is Gone Crazy! |QID|12861|N|Kill and loot Drakuru Trolls to get "Lock Openers". Use the "Lock Openers" next to the chains to free the Captured Rageclaws.|U|41161|M|34.9,81.0|S|
 T In Search Of Answers |QID|12902|N|To Orders From Drakuru, the glowing blue scroll on the pedestal at Rageclaw Den.|M|34.92,83.84|
 A Orders From Drakuru |QID|12883|M|34.9,83.9|N|From Orders From Drakuru.|
-C Trolls Is Gone Crazy! |QID|12861|N|Finish freeing the Captured Rageclaws.|U|41161|M|34.9,81.0|US|
+C Trolls Is Gone Crazy! |QID|12861|S|N|Finish freeing the Captured Rageclaws.|U|41161|M|34.9,81.0|US|
 C This Just In: Fire Still Hot! |QID|12859|US|N|Use the fire extinguisher on the burning huts. Each fire will take multiple hits.|U|41131|M|34.9,81.0|
+C Trolls Is Gone Crazy! |QID|12861|US|N|Finish freeing the Captured Rageclaws.|U|41161|M|34.9,81.0|US|
 C Wanted: Ragemane's Flipper |QID|12857|N|Head out into the middle of the pond and kill Ragemane and loot his flipper.|M|38.2,85.6|
 T Wanted: Ragemane's Flipper |QID|12857|N|To Chief Rageclaw.|M|32.2,75.7|
 
@@ -76,12 +77,13 @@ A Crusader Forward Camp |QID|12894|M|32.2,75.7|N|From Crusader Lord Lantinga.|
 T Crusader Forward Camp |QID|12894||M|25.34,63.97|N|To Crusader MacKellar, just across the road.|
 A That's What Friends Are For... |QID|12903|M|25.3,64.0|N|From Crusader MacKellar.|
 A Making Something Out Of Nothing |QID|12901|M|25.3,64.0|N|From Engineer Reed.|
-C Making Something Out Of Nothing |QID|12901|N|The Scrap Metal is on the ground all over.|M|19.4,61.4|S|
 A A Great Storm Approaches |QID|12912|N|From Gymer, who is in the big cage at Thrym's End.|M|20.03,56.59|
+C Making Something Out Of Nothing |QID|12901|S|N|The Scrap Metal is on the ground all over.|M|19.4,61.4|S|
 
 A Light Won't Grant Me Vengeance |QID|12904|N|From Gerk, who is in one of the glowing green vats a little west of Gymer.|M|17.63,57.52|
 C Light Won't Grant Me Vengeance |QID|12904|N|Kill the Varguls.|M|19,56|S|
 C Find Burr |N|He's across the courtyard to the west on one of the tables. |QID|12903|QO|Burr found: 1/1|M|15.56,59.44|
+C Making Something Out Of Nothing |QID|12901|US|N|The Scrap Metal is on the ground all over.|M|19.4,61.4|S|
 C That's What Friends Are For... |QID|12903|N|Head to Dargath's Demise and find Crusader Dargath in the ruins. He's got a glowing swirl around him. |M|24.73,51.54|
 C Making Something Out Of Nothing |QID|12901|N|The Scrap Metal is on the ground all over.|M|19.4,56|US|
 C Light Won't Grant Me Vengeance |QID|12904|N|Kill the Varguls.|M|19,56|US|
@@ -92,90 +94,91 @@ T A Great Storm Approaches |QID|12912|M|25.3,64.0|N|To Engineer Reed.|
 
 A Gymer's Salvation |QID|12914|M|25.3,64.0|N|From Engineer Reed.|
 K Banshees |QID|12914|N|Kill the banshees in The Dead Fields for their essence. They are floating so you will probably have to pull them to you.|L|41504 6|
-C Gymer's Salvation |QID|12914|N|Now head to the area around Ebon Watch and kill the Icetouched Earthragers. |M|14.26,73.60|
+C Gymer's Salvation |QID|12914|S|N|Now head to the area around Ebon Watch and kill the Icetouched Earthragers. |M|14.26,73.60|
 T The Ebon Watch |QID|12884|M|14.12,73.79|N|To Stefan Vadu.|
 A Kickin' Nass and Takin' Manes |QID|12630|M|14.1,73.8|N|From Stefan Vadu.|
 C Kickin' Nass and Takin' Manes |QID|12630|N|Kill the trolls, put the boot to Nass!|U|38659|M|15.5,69.8|
+C Gymer's Salvation |QID|12914|US|N|Now head to the area around Ebon Watch and kill the Icetouched Earthragers. |M|14.26,73.60|
 T Kickin' Nass and Takin' Manes |QID|12630|N|Back to Ebon Watch.|M|14.12,73.79|
 A An Invitation, of Sorts... |QID|12631|O|N|From the Unliving Choker. You get this quest chain if you didn't complete the Drakuru quest chain in Grizzly Hills.|U|38660|M|15.5,69.8|
-T An Invitation, of Sorts... |QID|12631|O|M|14.1,73.8|N|To Stefan Vadu.|
+T An Invitation, of Sorts... |QID|12631|M|14.1,73.8|N|To Stefan Vadu.|
 A Near Miss |QID|12637|O|PRE|12631|M|14.1,73.8|N|From Stefan Vadu.|
 C Near Miss |QID|12637|O|N|Bloodrose Datura will give you a demo. |M|14.29,74.03|
-A Darkness Calling |QID|12633|O|N|From the Writhing Choker. You get this quest chain if you completed the Drakuru quest chain in Grizzly Hills.|U|38673|
+A Darkness Calling |QID|12633|O|PRE|12238|N|From the Writhing Choker. You get this quest chain if you completed the Drakuru quest chain in Grizzly Hills.|U|38673|
 T Darkness Calling |QID|12633|O|N|To Stefan Vadu.|
 A Close Call |QID|12638|O|PRE|12633|N|From Stefan Vadu.|
-C Close Call |QID|12638|O|N|Bloodrose Datura will give you a demo.|M|14.29,74.03|
+C Close Call |QID|12638|N|Bloodrose Datura will give you a demo.|M|14.29,74.03|
 
 A Taking a Stand |QID|12795|M|14.3,74.0|N|From Bloodrose Datura.|
 T Near Miss |QID|12637|O|M|14.1,73.8|N|To Stefan Vadu.|
-A You Can Run, But You Can't Hide |QID|12629|O|PRE|12631|M|14.1,73.8|N|From Stefan Vadu.|
-C You Can Run, But You Can't Hide |QID|12629|O|N|Around the Reliquary of Agony. Pick up the Drool from the ground. Kill and loot the Abominations.|M|21.24,75.01|
-T You Can Run, But You Can't Hide |QID|12629|O|N|Back to Stefan Vadu at Ebon Watch.|M|14.26,73.60|
-A Dressing Down |QID|12648|O|PRE|12631|M|14.1,73.8|N|From Stefan Vadu.|
-C Dressing Down |QID|12648|O|N|Return to the Reliquary of Agony and use the choker. Buy the plasma from Gristlegut.|U|38699|M|19.82,75.32|
-T Close Call |QID|12638|O|M|14.1,73.8|N|To Stefan Vadu.|
-A Silver Lining |QID|12643|O|PRE|12633|N|From Stefan Vadu.|
+A You Can Run, But You Can't Hide |QID|12629|O|PRE|12637|M|14.1,73.8|N|From Stefan Vadu.|
+C You Can Run, But You Can't Hide |QID|12629|N|Around the Reliquary of Agony. Pick up the Drool from the ground. Kill and loot the Abominations.|M|21.24,75.01|
+T You Can Run, But You Can't Hide |QID|12629|N|Back to Stefan Vadu at Ebon Watch.|M|14.26,73.60|
+A Dressing Down |QID|12648|O|PRE|12638|M|14.1,73.8|N|From Stefan Vadu.|
+C Dressing Down |QID|12648|N|Return to the Reliquary of Agony and use the choker. Buy the plasma from Gristlegut.|U|38699|M|19.82,75.32|
+T Close Call |QID|12638|M|14.1,73.8|N|To Stefan Vadu.|
+A Silver Lining |QID|12643|O|PRE|12633|N|From Stefan Vadu.|M|14.1,73.8|
 C Silver Lining |QID|12643|O|N|Around the Reliquary of Agony . Pick up the Drool from the ground. Kill the Abominations.|M|21.24,75.01|
 T Silver Lining |QID|12643|O|N|Back to Ebon Watch. |M|14.12,73.79|
 
-A Suit Up! |QID|12649|O|PRE|12633|N|From Stefan Vadu.|
+A Suit Up! |QID|12649|O|PRE|12633|N|From Stefan Vadu.|M|14.1,73.8|
 C Suit Up! |QID|12649|O|N|Return to the Reliquary of Agony and use the choker. You cannot use while shapeshifted. Buy the plasma from Gristlegut.|U|38699|M|19.91,75.44|
-A Feedin' Da Goolz |QID|12652|M|19.9,75.5|N|From Gristlegut.|
+A Feedin' Da Goolz |QID|12652|U|38699|M|19.9,75.5|N|From Gristlegut.|
 C Feedin' Da Goolz |QID|12652|N|Use the bowl near the ghouls. Be careful of the Blightguards, they see through your disguise. You should hotkey the chocker because your diguise will fail at some point.|U|38701|
-T Feedin' Da Goolz |QID|12652|N|Back to Gristlegut.|M|19.9,75.5|
-T Dressing Down |QID|12648|O|N|Back to Ebon Watch.|M|14.12,73.79|
-T Suit Up! |QID|12649|O|N|Back to Ebon Watch.|M|14.12,73.79|
+T Feedin' Da Goolz |QID|12652|U|38699|N|Back to Gristlegut.|M|19.9,75.5|
+T Dressing Down |QID|12648|N|Back to Ebon Watch.|M|14.12,73.79|
+T Suit Up! |QID|12649|N|Back to Ebon Watch.|M|14.12,73.79|
 A Infiltrating Voltarus |QID|12661|M|14.1,73.8|N|From Stefan Vadu.|
 T Gymer's Salvation |QID|12914|N|Back to Crusader Forward Camp.|M|25.34,63.97|
 A Our Only Hope |QID|12916|M|25.3,64.0|N|From Engineer Reed.|
 C Our Only Hope |QID|12916|N|Use the Jumbo Seaforium Charge on the cage. |M|19.65,56.47|
 T Our Only Hope |QID|12916|M|19.7,56.4|N|To Gymer.|
 
-A The Storm King's Vengeance |QID|12919|N|From Gymer.|
+A The Storm King's Vengeance |QID|12919|M|19.8,56.5|N|From Gymer.|
 N The Storm King's Vengeance |QID|12919|N|Do not bother to look for the scourge: they will find you.|
 N The Storm King's Vengeance |QID|12919|N|Talk to Gymer to mount him and go!|
-K Algar the Chosen |QID|12919|QO|Algar the Chosen slain: 1/1|M|29.2,46|N|He flies in circles underneath Volatrus, above the circular platform on the ground.|
-K Prince Navarius  |QID|12919|QO|Prince Navarius slain: 1/1|M|29.8,65.4;32.4,63.6|N|At one of these two spots.|
-K Thrym |QID|12919|QO|Thrym slain: 1/1|N|He will spawn after killing the Prince. Snack on clouds and wait.|
+K Algar the Chosen |QID|12919|T|Algar the Chosen|QO|Algar the Chosen slain: 1/1|M|29.2,46|N|He flies in circles underneath Volatrus, above the circular platform on the ground.|
+K Prince Navarius  |QID|12919|T|Prince Navarius|QO|Prince Navarius slain: 1/1|M|29.8,65.4;32.4,63.6|N|At one of these two spots.|
+K Thrym |QID|12919|T|Thrym|QO|Thrym slain: 1/1|N|He will spawn after killing the Prince. Snack on clouds and wait.|
 C The Storm King's Vengeance |QID|12919|N|Finish killing scourge.|
 T The Storm King's Vengeance |QID|12919|N|Back to Crusader Forward Camp.|M|25.43,63.97|
 
 N Overlord Drakuru 1|QID|12661|N|Hotkey the disguise so you can reequip it when it fails. Close this step.|M|23.81,45.01|
 N Overlord Drakuru 2|QID|12661|N|Go to Reliquary of Pain, where you killed Algar the Chosen. Equip your disguise and port up to Voltarus from the center of the platform. Close this step.|U|38699|M|23.81,45.01|
 N Overlord Drakuru 3|QID|12661|N|Overlord Drakuru is up the ramp on the outer ring of the platform. Talk to him to get one of two quests depending on whether or not you did Grizzly Hills. Close this step.|M|27.12,46.10|
-A Dark Horizon |QID|12664|O|N|You got this because you didn't finish the Drakuru quest chain in Grizzly Hills.|M|27.1,46.2|
+A Dark Horizon |QID|12664|U|38699|N|You got this because you didn't finish the Drakuru quest chain in Grizzly Hills. If it's not here, skip the step.|M|27.1,46.2|
 C Dark Horizon |QID|12664|O|N|Circle around the platform until you find a ramp on the outer ring. Gorebag is up there. Enjoy the ride.|M|29.76,47.90|
 T Dark Horizon |QID|12664|O|M|27.1,46.2|N|To Overlord Drakuru.|
-A Reunited |QID|12663|O|N|You got this because you finished the Drakuru quest chain in Grizzly Hills.|M|27.1,46.2|
-C Reunited |QID|12663|O|N|Circle around the platform until you find a ramp on the outer ring. Gorebag is up there. Enjoy the ride.|M|29.76,47.90|
-T Reunited |QID|12663|O|N|To Overlord Drakuru.|M|27.1,46.2|
-T Infiltrating Voltarus |QID|12661|N|Port back down, blow the horn.|U|41390|
+A Reunited |QID|12663|O|PRE|12238|U|38699|N|You got this because you finished the Drakuru quest chain in Grizzly Hills.|M|27.1,46.2|
+C Reunited |QID|12663|U|38699|N|Circle around the platform until you find a ramp on the outer ring. Gorebag is up there. Enjoy the ride.|M|29.76,47.90|
+T Reunited |QID|12663|U|38699|N|To Overlord Drakuru.|M|27.1,46.2|
+T Infiltrating Voltarus |QID|12661|M|28.0,44.9|N|Port back down, blow the horn.|U|41390|
 
-A So Far, So Bad |QID|12669|N|From Stefan Vadu.|
-A It Rolls Downhill |QID|12673|N|From Overlord Drakuru.|M|27.12,46.10|
+A So Far, So Bad |QID|12669|M|28.0,44.9|N|From Stefan Vadu.|
+A It Rolls Downhill |QID|12673|U|38699|N|From Overlord Drakuru.|M|27.12,46.10|
 C It Rolls Downhill |QID|12673|N|Port back down, target a geist, use the scepter to charm it and send it for a crystal (the button is on the pet bar, get close they're not too bright). You MUST wait until the geist ports up to get credit, so don't get in a rush to charm another one.|U|39157|M|27.2,45.1|
-T It Rolls Downhill |QID|12673|N|Back to Overlord Drakuru.|M|27.12,46.10|
+T It Rolls Downhill |QID|12673|U|38699|N|Back to Overlord Drakuru.|M|27.12,46.10|
 C So Far, So Bad |QID|12669|N|Port back down, use the Diluting Additive near the cauldrons. Blightguards will spawn mobs, run away to try to avoid aggro. The Cauldrons are at the waypoints.|U|39154|M|31.29,43.2;31.16,44.31;31.04,45.16;29.6,47.43;26.80,46.92|
 T So Far, So Bad |QID|12669|N|Blow the horn...again.|U|41390|
-A Hazardous Materials |QID|12677|N|From Stefan Vadu.|
+A Hazardous Materials |QID|12677|M|28.0,44.9|N|From Stefan Vadu.|
 
-A Zero Tolerance |QID|12686|N|From Overlord Drakuru. |M|27.12,46.10|
+A Zero Tolerance |QID|12686|U|38699|N|From Overlord Drakuru. |M|28.4,44.9;27.1,46.1|
 C Zero Tolerance |QID|12686|N|Use the scepter on a Servent of Drakuru, then head to the big platform. Target Darmuk and let the troll do all the work. DO NOT FIGHT!! You will lose your disguise and your pet. Open with Ferocious Enrage, use Gut Rip and Stunning Force when they are up, repeat as necessary.|U|39206|M|30.51,51.57|
-T Zero Tolerance |QID|12686|N|Back to Overlord Drakuru. |M|27.12,46.10|
-C Hazardous Materials |QID|12677|N|The crates are all over the platform. Looting the crates can drop your disguise, be alert. You must be disguised to gather the crates.|M|27.1,43.9|
+T Zero Tolerance |QID|12686|U|38699|N|Back to Overlord Drakuru. |M|28.4,44.9;27.1,46.1|
+C Hazardous Materials |QID|12677|U|38699|N|The crates are all over the platform. Looting the crates can drop your disguise, be alert. You must be disguised to gather the crates.|M|27.1,43.9|
 T Hazardous Materials |QID|12677|N|Port back down, blow the horn. Are you tired of this yet?|U|41390|
-A Sabotage |QID|12676|N|From Stefan Vadu.|
-A Fuel for the Fire |QID|12690|N|From Overlord Drakuru.|M|27.12,46.10|
+A Sabotage |QID|12676|U|38699|M|28.0,44.9|N|From Stefan Vadu.|
+A Fuel for the Fire |QID|12690|U|38699|N|From Overlord Drakuru.|M|28.4,44.9;27.1,46.1|
 C Fuel for the Fire |QID|12690|N|Go to the Frigid Breach. Time for some fun! Use the scepter to charm an abomination. Send him out to gather up trolls. Just before he dies, blow him up! Repeat until you've killed 60. Don't worry about the chieftans, they get carried off before they attack.|U|39238|M|32.74,38.72|
-N Destroy Scourgewagons |N|They are all over the Reliquary of Pain. Use the explosive and run.|QID|12676|QO|Scourgewagons destroyed: 5/5|U|39165|
-T Fuel for the Fire |QID|12690|N|Back to Overlord Drakuru.|M|27.12,46.10|
+N Destroy Scourgewagons |QID|12676|QO|Scourgewagons destroyed: 5/5|U|39165|M|29.9,47.8;28.6,48.4;28.5,51.4;27.3,48.6;26.6,47.2|N|They are all over the Reliquary of Pain. Use the explosive and run.|
+T Fuel for the Fire |QID|12690|U|38699|N|Back to Overlord Drakuru.|M|28.4,44.9;27.1,46.1|
 
-A Disclosure |QID|12710|M|27.1,46.2|N|From Overlord Drakuru.|
-C Disclosure |QID|12710|N|Take the upper portal (on top of the one you've been using). Click on the coffin to take the tour.|M|27.2,42.3|
-T Disclosure |QID|12710|N|Back to Overlord Drakuru.|M|27.12,46.10|
+A Disclosure |QID|12710|U|38699|M|27.1,46.2|N|From Overlord Drakuru.|
+C Disclosure |QID|12710|U|38699|N|Take the upper portal (on top of the one you've been using). Click on the coffin to take the tour.|M|27.2,42.3|
+T Disclosure |QID|12710|U|38699|N|Back to Overlord Drakuru.|M|28.4,44.9;27.1,46.1|
 C Sabotage |QID|12676|M|30.6,45.3|
 T Sabotage |QID|12676|N|You know what to do. Pucker up and blow.|U|41390|
-A Betrayal |QID|12713|N|From Stefan Vadu.|
+A Betrayal |QID|12713|U|38699|M|28.0,44.9|N|From Stefan Vadu.|
 C Betrayal |QID|12713|N|Back to Overlord Drakuru. Talk to him to start. Don't worry when your disguise when it fails,you don't need it anymore. Use the scepter to charm one of the Captive Trolls and send him after Drakuru. Keep him attacking while you avoid the Blight Crystals and the fog they create. If you're solo, you'll probably need to charm another Troll, but wait until the first one dies. The Trolls can be healed.|U|39664|M|27.12,46.10|
 U PORT DOWN NOW!! |QID|12713|N|You only have 3 minutes, so quit reading this, Heal yourself, and click on [Drakuru's Last Wish] to port down. (Right next to the skull.)|
 T Betrayal |QID|12713|N|Blow the horn one last time.|U|41390|
@@ -230,25 +233,23 @@ A The Drakkari Do Not Need Water Elementals! |QID|12562|N|From Sub-Lieutenant Ja
 A Something for the Pain |QID|12597|N|Take the road southeast.|M|48.76,78.85|
 C Something for the Pain |QID|12597|N|Gather 5 Mature Water-Poppies.|M|44.9,79.5|S|
 C The Drakkari Do Not Need Water Elementals! |QID|12562|N|Kill 10 Drakkari Water Binders.|S|
-K Crazed Water Elementals |QID|12510|N|Head West to the Drak'Sotra Fields. Kill the Elementals, you need 3 links to make a tether (You'll need 9 links total). Kill Trolls and gather plants also.|L|38323 3|M|44.74,78.99|
-N Make a tether now!! |QID|12510|N|Make a tether. You can't loot more than 3 at a time.|U|38323|L|38324|
-K Watery Lord |QID|12510|N|Use the tether to summon.|U|38324|L|38325 1|
-K Kill more Elementals |QID|12510|N|Keep killing the Elementals.|L|38323 3|
-N Make another tether now!! |QID|12510|U|38323|L|38324|
-K Summon again |QID|12510|U|38324|L|38325 2|
-K Go for the last 3 Links |QID|12510|L|38323 3|
-U Make the last tether.|QID|12510|U|38323|L|38324|
-C Precious Elemental Fluids |QID|12510|N|Last time...finally.|U|38324|M|40.2,73.6|
+K Crazed Water Elementals |QID|12510|U|38323|L|38324|M|44.7,79.0|N|Head West to the Drak'Sotra Fields. Kill the Elementals, you need 3 links to make a tether (You'll need 9 links total).|
+K Watery Lord |QID|12510|N|Use the tether to summon.| |U|38324| |QO|Precious Elemental Fluids: 1/3|
+K Crazed Water Elementals |QID|12510|U|38323|L|38324|N|Keep killing the Elementals.|
+K Watery Lord |QID|12510|U|38324|N|Summon again|QO|Precious Elemental Fluids: 2/3|
+K Crazed Water Elementals |QID|12510|U|38323|L|38324|N|Go for the last 3 Links|
+K Watery Lord |QID|12510|U|38324|N|Last summon|
 C The Drakkari Do Not Need Water Elementals! |QID|12562|N|Kill any trolls you still need.|US|
 C Something for the Pain |QID|12597|N|Gather any plants you still need.|M|44.9,79.5|US|
 T Something for the Pain |QID|12597|N|Back to Drak'Sotra. |M|48.76,78.85|
 
 A Throwing Down |QID|12598|N|Following the aquaduct to the South will take you to the crusader camp. |M|58.04,72.48|
 A Leave No One Behind |QID|12512|N|He's in the back, right corner.|M|58.7,72.5|
-C Throwing Down |QID|12598|N|Throw the High Impact Grenades in the craters (they actually look like pyramids), then run. Crispy Spider Treats, not just for Hallows End anymore.|U|38574|M|53.4,68.7|
+C Throwing Down |QID|12598|S|N|Throw the High Impact Grenades in the craters (they actually look like pyramids), then run. Crispy Spider Treats, not just for Hallows End anymore.|U|38574|M|53.4,68.7|
 N Crusader Jonathan |N|In the tower at the waypoint. Bandage him and lead him back to the camp. You've got 3 minutes, but remember he's injured, avoid all combat and don't lose him on the run back.|QID|12512|QO|Saved Crusader Jonathan: 1/1|U|38330|M|50.7,69.9|
 N Crusader Josephine |N|In the tower at waypoint. Same plan as before.|QID|12512|QO|Saved Crusader Josephine: 1/1|U|38330|M|49.4,74.7|
 C Leave No One Behind |QID|12512|N|Crusader Lamoof is in the tower at waypoint. Lead him home, or at least to the doctor.|U|38330|M|53.6,75.0|
+C Throwing Down |QID|12598|US|N|Throw the High Impact Grenades in the craters (they actually look like pyramids), then run. Crispy Spider Treats, not just for Hallows End anymore.|U|38574|M|53.4,68.7|
 T Leave No One Behind |QID|12512|M|58.7,72.5|N|To Dr. Rogers.|
 T Throwing Down |QID|12598|M|58.1,72.4|N|To Captain Rupert.|
 
@@ -271,8 +272,9 @@ T Crashed Sprayer |QID|12583|N|Back to the camp |M|58.28,72.05|N|To Specialist C
 
 A A Tangled Skein |QID|12555|M|58.3,72.0|N|From Specialist Cogwheel.|
 C A Tangled Skein |QID|12555|N|Oh! What a tangled skein we weave. Use the it on the plague sprayers.|U|38515|M|58.3,74.3|
-C Pure Evil |QID|12584|N|Inside Kolramas. Little, glowing chunks of ore that are hard to see. Look in all the nooks and crannies.|M|60.15,79.31|
-C Malas the Corrupter |QID|12554|N|Malas is at the top of the Kolramas necropolis.|M|60.80,80.32|
+C Pure Evil |QID|12584|S|N|Inside Kolramas. Little, glowing chunks of ore that are hard to see. Look in all the nooks and crannies.|M|60.15,79.31|
+K Malas the Corrupter |QID|12554|N|Malas is at the top of the Kolramas necropolis.|M|60.80,80.32|
+C Pure Evil |QID|12584|US|N|Inside Kolramas. Little, glowing chunks of ore that are hard to see. Look in all the nooks and crannies.|M|60.15,79.31|
 T A Tangled Skein |QID|12555|N|Back to the camp. To Specialist Cogwheel.|M|58.04,72.48|
 T Malas the Corrupter |QID|12554|N|To Sergeant Moonshard.|M|58.1,72.0|
 T The Drakkari Do Not Need Water Elementals! |QID|12562|N|To Sub-Lieutenant Jax back at the Argent Stand.|M|40.18,68.91|
@@ -284,7 +286,7 @@ A Gluttonous Lurkers |QID|12527|N|From Apprentive Pestlepot.|M|41.3,65.1|
 A Creature Comforts |QID|12599|N|Go West to Drak'Agal. From Captain Grondel, he's in a building south of the Amphitheater of Anguish.|M|48.13,63.83|
 C Mushroom Mixer |QID|12514|N|All over the area, you need 10. Herbalists can use their tracking to make it easier.|M|41.4,57.4|S|
 C Creature Comforts |QID|12599|N|They are all over too, but can be hard to see. They look like a big thorn sticking up. Mouse over the area to find them.|M|46.9,61.4|S|
-C Gluttonous Lurkers |QID|12527|N|Loot 5 rats, they can be hard to see. After you get 5, feed all of them to one basilisk. You throw one at a time. If you can Root them this is alot easier. Repeat until you get 5 crystals.|U|38380|M|41.4,57.4|
+C Gluttonous Lurkers |QID|12527|T|Zul'Drak Rat|N|Loot 5 rats, they can be hard to see. After you get 5, feed all of them to one basilisk. You throw one at a time. If you can Root them this is alot easier. Repeat until you get 5 crystals.|U|38380|M|41.4,57.4|
 C Mushroom Mixer |QID|12514|N|All over the area, you need 10. Herbalists can use their tracking to make it easier.|M|41.4,57.4|US|
 C Creature Comforts |QID|12599|N|They are all over too, but can be hard to see. They look like a big thorn sticking up. Mouse over the area to find them.|M|46.9,61.4|US|
 T Creature Comforts |QID|12599|N|To Captain Grondel.|M|48.13,63.83|
