@@ -60,6 +60,7 @@ local GetTitleText = _G.GetTitleText
 local GetZoneText = _G.GetZoneText
 local InCombatLockdown = _G.InCombatLockdown
 local IsInInstance = _G.IsInInstance
+local IsShiftKeyDown = _G.IsShiftKeyDown
 local PlaySoundFile = _G.PlaySoundFile
 local QuestLogPushQuest = _G.QuestLogPushQuest
 local QuestLog_OpenToQuest = _G.QuestLog_OpenToQuest
@@ -875,7 +876,7 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 
 	-- Lets see what quests the NPC has:
 	elseif event == "GOSSIP_SHOW" then
-	 	if WoWProCharDB.AutoSelect == true then
+	 	if WoWProCharDB.AutoSelect == true and not IsShiftKeyDown() then
 			local npcQuests = {GetGossipAvailableQuests()};
 			local index = 0
 			local qidx = WoWPro.rows[1].index
@@ -902,7 +903,7 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 		end
 
 	elseif event == "QUEST_GREETING" then
-		if WoWProCharDB.AutoSelect == true then
+		if WoWProCharDB.AutoSelect == true and not IsShiftKeyDown() then
 			local numAvailableQuests = GetNumAvailableQuests()
 			local numActiveQuests = GetNumActiveQuests()
 			local qidx = WoWPro.rows[1].index
@@ -921,7 +922,7 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 		end
 
    elseif event == "QUEST_DETAIL" then
-		if WoWProCharDB.AutoAccept == true then
+		if WoWProCharDB.AutoAccept == true and not IsShiftKeyDown() then
 	   	local qidx = WoWPro.rows[1].index
 	   	local questtitle = GetTitleText();
 			if WoWPro.action[qidx] == "A" and questtitle == WoWPro.step[qidx] then
@@ -930,7 +931,7 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 		end
 
 	elseif event == "QUEST_PROGRESS" then
-		if WoWProCharDB.AutoTurnin == true then
+		if WoWProCharDB.AutoTurnin == true  and not IsShiftKeyDown() then
 			local qidx = WoWPro.rows[1].index
 			local questtitle = GetTitleText();
 			if WoWPro.action[qidx] == "T" and questtitle == WoWPro.step[qidx] then
