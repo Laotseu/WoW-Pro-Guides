@@ -141,8 +141,8 @@ A Protect the World Tree|QID|25317|PRE|25316|M|62.08,24.89|N|From Ysera.|
 A The Earth Rises|QID|25460|PRE|25316|RANK|2|M|64.05,22.58|N|From Anren Shadowseeker.|
 A Inciting the Elements|QID|25370|PRE|25316|RANK|2|M|64.05,22.58|N|From Tholo Whitehoof.|
 C The Earth Rises|QID|25460|RANK|2|M|64.61,22.62|N|Kill Scalding Rock Elementals.|S|
-l Juniper Berries|QID|25370|RANK|2|L|53009 4|M|67.11,22.08|N|Loot 4 Juniper Berries.|
-C Inciting the Elements|QID|25370|RANK|2|U|53009|M|64.8,22.5|N|Use the Berries on Faerie Dragons and kill the Twilight Inciter.|
+; l Juniper Berries|QID|25370|RANK|2|L|53009 4|M|67.11,22.08|N|Loot 4 Juniper Berries.|
+C Inciting the Elements|QID|25370|RANK|2|U|53009|M|64.8,22.5|N|Loot berries and use them on Faerie Dragons and kill the Twilight Inciter.|
 C The Earth Rises|QID|25460|RANK|2|M|64.61,22.62|N|Kill Scalding Rock Elementals.|US|
 T The Earth Rises|QID|25460|RANK|2|M|64.03,22.66|N|To Anren Shadowseeker.|
 T Inciting the Elements|QID|25370|RANK|2|M|64.07,22.46|N|To Tholo Whitehoof.|
@@ -152,9 +152,9 @@ T Flames from Above|QID|25574|RANK|2|M|64.05,22.50|N|To Tholo Whitehoof.|
 T Protect the World Tree|QID|25317|M|47.68,35.51|N|To Malfurion Stormrage.|
 A War on the Twilight's Hammer|QID|25319|M|47.68,35.51|N|From Malfurion Stormrage.|
 A The Flameseer's Staff|QID|25472|M|47.68,35.51|N|From Windspeaker Tamila.|
-C The Flameseer's Staff|QID|25472|M|43.41,28.80|S|N|Loot the Charred Staff Fragments off of the ground in the charred areas.|NC|
-C War on the Twilight's Hammer|QID|25319|M|47.09,30.18|N|Kill Twilight Flamecallers and Vanquishers.|
-C The Flameseer's Staff|QID|25472|M|43.41,28.80|US|N|Loot the Charred Staff Fragments off of the ground in the charred areas.|NC|
+C War on the Twilight's Hammer|QID|25319|S|M|47.09,30.18|N|Kill Twilight Flamecallers and Vanquishers.|
+C The Flameseer's Staff|QID|25472|M|43.41,28.80|N|Loot the Charred Staff Fragments off of the ground in the charred areas.|NC|
+C War on the Twilight's Hammer|QID|25319|US|M|47.09,30.18|N|Kill Twilight Flamecallers and Vanquishers.|
 T War on the Twilight's Hammer|QID|25319|M|47.74,35.43|N|To Malfurion Stormrage.|
 T The Flameseer's Staff|QID|25472|M|47.74,35.43|N|To Malfurion Stormrage.|
 A Flamebreaker|QID|25323|M|47.74,35.43|N|From Malfurion Stormrage.|
@@ -277,11 +277,12 @@ A Crushing the Cores|QID|25577|PRE|25618|M|26.24,41.89|N|From Jordan Olafson.|
 A Forged of Shadow and Flame|QID|25575|PRE|25618|M|26.27,41.93|N|From Yargra Blackscar.|
 A Rage of the Wolf Ancient|QID|25576|PRE|25618|M|26.29,41.94|N|From Yargra Blackscar.|
 C Forged of Shadow and Flame|QID|25575|S|M|30.11,39.21|N|Destroy Twilight Arms Crates as you come across them.|
-l Crushing the Cores|QID|25577|S|L|55123 8|N|Kill Searing Guardians and loot Smoldering Cores.|
+;l Crushing the Cores|QID|25577|S|L|55123 8|N|Kill Searing Guardians and loot Smoldering Cores.|
+C Crushing the Cores|QID|25577|NC|S|U|55123|N|Kill Searing Guardians and loot Smoldering Cores. Find a Twilight Anvil, which is usually around the edges of the cavern, and use the Smoldering Cores while standing next to it.|
 C Rage of the Wolf Ancient|QID|25576|M|28.51,40.57|N|Kill Dark Iron Laborers.|
 C Forged of Shadow and Flame|QID|25575|US|M|27.0,41.5|N|Finish destroying Twilight Arms Crates.|
-l Crushing the Cores|QID|25577|US|L|55123 8|M|27.0,41.5|N|Kill Searing Guardians and loot Smoldering Cores.|
-C Crushing the Cores|QID|25577|U|55123|N|Find a Twilight Anvil, which is usually around the edges of the cavern, and use the Smoldering Cores while standing next to it.|
+;l Crushing the Cores|QID|25577|US|L|55123 8|M|27.0,41.5|N|Kill Searing Guardians and loot Smoldering Cores.|
+C Crushing the Cores|QID|25577|NC|US|U|55123|N|Find a Twilight Anvil, which is usually around the edges of the cavern, and use the Smoldering Cores while standing next to it.|
 T Rage of the Wolf Ancient|QID|25576|M|26.34,41.95|N|To Yargra Blackscar.|
 T Forged of Shadow and Flame|QID|25575|M|26.30,41.91|N|To Jordan Olafson.|
 T Crushing the Cores|QID|25577|M|26.30,41.91|N|To Jordan Olafson.|

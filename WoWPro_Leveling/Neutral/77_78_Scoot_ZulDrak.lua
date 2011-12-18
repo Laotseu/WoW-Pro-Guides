@@ -66,7 +66,7 @@ A Orders From Drakuru |QID|12883|M|34.9,83.9|N|From Orders From Drakuru.|
 C Trolls Is Gone Crazy! |QID|12861|S|N|Finish freeing the Captured Rageclaws.|U|41161|M|34.9,81.0|US|
 C This Just In: Fire Still Hot! |QID|12859|US|N|Use the fire extinguisher on the burning huts. Each fire will take multiple hits.|U|41131|M|34.9,81.0|
 C Trolls Is Gone Crazy! |QID|12861|US|N|Finish freeing the Captured Rageclaws.|U|41161|M|34.9,81.0|US|
-C Wanted: Ragemane's Flipper |QID|12857|N|Head out into the middle of the pond and kill Ragemane and loot his flipper.|M|38.2,85.6|
+C Wanted: Ragemane's Flipper |QID|12857|T|Ragemane|N|Head out into the middle of the pond and kill Ragemane and loot his flipper.|M|38.2,85.6|
 T Wanted: Ragemane's Flipper |QID|12857|N|To Chief Rageclaw.|M|32.2,75.7|
 
 T This Just In: Fire Still Hot! |QID|12859|N|To Elder Shaman Moky at Light's Breach.|M|32.0,75.6|
@@ -418,8 +418,8 @@ T The Key of Warlord Zol'Maz |QID|12712|M|60.3,57.8|N|To Har'koa.|
 A Rampage |QID|12721|M|60.3,57.8|N|From Har'koa.|
 T Hexed Caches |QID|12709|M|60.0,57.9|N|To Chronicler To'kini.|
 C Rampage |QID|12721|N|Right in front of Gundrak, you can't miss him. He's the only giant Rhino god around. Run around and unlock all of the chains, then watch him work.|M|79.03,24.32|
-A Eggs for Dubra'Jin |QID|13556|N|From Ha'wana.|
-f Dubra'Jin |QID|13556|N|Get the Flightpath. |M|70.41,23.21|
+A Eggs for Dubra'Jin |QID|13556|M|70.0,21.0|N|From Ha'wana.|
+; f Dubra'Jin |QID|13556|N|Get the Flightpath. |M|70.41,23.21|
 C Eggs for Dubra'Jin |QID|13556|N|Collect the eggs on the ground in the small wooded areas. They are hard to see, so look everywhere. you can kill the Raptors if you want to, but the drop rate isn't very good.|M|73.64,21.41|
 T Eggs for Dubra'Jin |QID|13556|N|Turn in to Ha'wana.|M|70.06,20.99|
 F Zim'Torga|QID|12721|N|Fly to Zim'Torga,|M|70.46,23.29|
@@ -434,14 +434,14 @@ A Convocation at Zol'Heb |QID|12730|N|From Har'koa.|
 C Convocation at Zol'Heb |QID|12730|N|Use the item in the circle to summon the Prophet. After you get him to about 75% health, Har'koa will show up to help. The Prophet has an evil AoE, but Har'koa can remove it so stay close to her. If you die just run back and try to pick a good time to rez. He may kill Har'koa, so be prepared to finish him off, if necessary.|U|39566|M|77.55,36.67|
 T Convocation at Zol'Heb |QID|12730|N|Back to Har'koa.|M|60.13,57.72|
 ; The quest "Unfinished business" on the following line has wrong caps on 'Business' so it does not auto-accept since it is optional.|
-A Unfinished business |QID|29833|N|From Har'koa.|
+;A Unfinished Business |QID|29833|N|From Har'koa. (Now in the dungeon)|
 
 N Amphitheater of Anguish |QID|12948|N|If you haven't gotten the achievement yet (and you know you want it), get a group up for the Amphitheater of Anguish. |
 
 T The Champion's Call! |QID|12974|O|N|To Gurgthock.|M|48.43,56.35|O|
-A The Amphitheater of Anguish: Yggdras!|QID|12932;12954|M|48.43,56.35|N|Welcome Champion of The Ring of Blood. From Gurgthock|
-C The Amphitheater of Anguish: Yggdras!|QID|12932;12954|M|48.00,57.00|N|L75 Worm, 106K Health.|
-T The Amphitheater of Anguish: Yggdras!|QID|12932;12954|M|48.48,56.42|N|To Wodin the Troll-Servant.|
+A The Amphitheater of Anguish: Yggdras!|QID|12932|M|48.43,56.35|N|Welcome Champion of The Ring of Blood. From Gurgthock|
+C The Amphitheater of Anguish: Yggdras!|QID|12932|M|48.00,57.00|N|L75 Worm, 106K Health.|
+T The Amphitheater of Anguish: Yggdras!|QID|12932|M|48.48,56.42|N|To Wodin the Troll-Servant.|
 
 A The Amphitheater of Anguish: Magnataur!|QID|12933|M|48.43,56.35|N|From Gurgthock.|
 C The Amphitheater of Anguish: Magnataur!|QID|12933|M|48.00,57.00|N|L75 Stinky Magnataur, 138K Health.|
