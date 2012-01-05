@@ -211,8 +211,8 @@ A Attack on Firewing Point |QID|9997|M|63.3,42.4|
 l Firewing Signets|QID|10412|M|70.00,39.00|N|Kill the mobs until you get 10 Firewing Signets.|L|29426 10|REP|Scryers;934|S|
 C Attack on Firewing Point |QID|9997| |N|Head northeast to Firewing Point, it's around . Kill the Blood Elves.|M|70,39|
 
-C Patriarch Ironjaw |QID|10023| |N|Head to , Ironjaw roams east and west of here.|M|69,32|
-C A Cure for Zahlia |QID|10020| |N|Stonegazer patrols along the edge of Terokkar just north of you.|REP|Aldor;932|
+C Patriarch Ironjaw |QID|10023| |T|Ironjaw| |N|Head to , Ironjaw roams east and west of here.|M|69,32|
+C A Cure for Zahlia |QID|10020| |T|Stonegazer| |N|Stonegazer patrols along the edge of Terokkar just north of you. You may or may not be able to solo him, he can't be snared, rooted, feared or blinded, but can be stunned or hibernated.|
 T Attack on Firewing Point |QID|9997| |N|Back at .|M|63,43|
 A The Final Code |QID|10447|M|63.3,42.4|
 
@@ -274,7 +274,7 @@ T Recover the Bones |QID|10030|
 A Helping the Lost Find Their Way |QID|10031|
 H Shattrath City|QID|10231|U|6948|
 
-T Ezekiel |QID|10228| |N|He walks around the terrace around the Terrace of Light, go anti-clockwise (he moves clockwise).|
+T Ezekiel |QID|10228| |Z|Shattrath City| |N|He walks around the terrace around the Terrace of Light, go anti-clockwise (he moves clockwise).|
 A What Book? I Don't See Any Book. |QID|10231|
 C What Book? I Don't See Any Book. |QID|10231| |N|Dirty Larry is in the western Lower City at  with two adds. Talk to him to engage, you get 10 seconds to back up. You have to bring Larry down to 1% to stop them, and then you can turn it in.| |Z|Shattrath City|M|43,29|
 T What Book? I Don't See Any Book. |QID|10231|
@@ -349,10 +349,10 @@ T Torgos! |QID|10036| |N|Northeast at Stonebreaker Hold.|
 F Shattrath City|QID|10879|N||M|49.2,43.4|
 
 T Return to Shattrath |QID|10889| |N|Back at Rilak the Redeemed, northern Lower City.|M|52.6,21.0|
-T Skywing |QID|10898|
+T Skywing |QID|10898| |Z|Shattrath City|
 N READ THIS |QID|10879|N|The next quest is kind of difficult. You fight off 3 waves of normal birds, they do a bit of damage but have low HP. Then you fight a big bird. He hits hard, 1k on cloth, but can be kited, polymorphed, hibernated, stunned, etc. Save your cooldowns for him if you can, and good luck!|
-A The Skettis Offensive |QID|10879|M|52.6,21.0|
-C The Skettis Offensive |QID|10879|M|52.6,21.0|
-T The Skettis Offensive |QID|10879|M|52.6,21.0|
+A The Skettis Offensive |QID|10879|M|52.6,21.0| |Z|Shattrath City|
+C The Skettis Offensive |QID|10879|M|52.6,21.0| |Z|Shattrath City|
+T The Skettis Offensive |QID|10879|M|52.6,21.0| |Z|Shattrath City|
 ]]
 end)

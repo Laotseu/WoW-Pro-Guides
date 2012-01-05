@@ -84,7 +84,7 @@
 -- URL: http://wow-pro.com/node/3303/revisions/23720/view
 -- Date: 2010-12-09 15:46
 -- Who: Bitsem
--- Log: Fixed two small things. 
+-- Log: Fixed two small things.
 --	A From the Mouth of Madness is from Rio Duran, not Royce Duskwhisper.
 --	A Sweeping the Shelf is from Ian Duran, not Rio Duran.
 --	Great work as usual Magic! :)
@@ -137,12 +137,12 @@ A As Hyjal Burns|QID|25316|PRE|27726|M|45.3,44.8|Z|Moonglade|N|From Emissary Win
 F Nordrassil|QID|25316|M|46.1,45.51|Z|Moonglade|N|Jump on Aronus to fly to Nordrassil.|
 T As Hyjal Burns|QID|25316|M|62.08,24.89|N|To Ysera.|
 A Protect the World Tree|QID|25317|PRE|25316|M|62.08,24.89|N|From Ysera.|
-f Nordrassil|QID|25317|M|62.14,21.68|N|At Fayran Elthas.|
+; f Nordrassil|QID|25317|M|62.14,21.68|N|At Fayran Elthas.|
 A The Earth Rises|QID|25460|PRE|25316|RANK|2|M|64.05,22.58|N|From Anren Shadowseeker.|
 A Inciting the Elements|QID|25370|PRE|25316|RANK|2|M|64.05,22.58|N|From Tholo Whitehoof.|
 C The Earth Rises|QID|25460|RANK|2|M|64.61,22.62|N|Kill Scalding Rock Elementals.|S|
-l Juniper Berries|QID|25370|RANK|2|L|53009 4|M|67.11,22.08|N|Loot 4 Juniper Berries.|
-C Inciting the Elements|QID|25370|RANK|2|U|53009|M|64.8,22.5|N|Use the Berries on Faerie Dragons and kill the Twilight Inciter.|
+; l Juniper Berries|QID|25370|RANK|2|L|53009 4|M|67.11,22.08|N|Loot 4 Juniper Berries.|
+C Inciting the Elements|QID|25370|RANK|2|U|53009|M|64.8,22.5|N|Loot berries and use them on Faerie Dragons and kill the Twilight Inciter.|
 C The Earth Rises|QID|25460|RANK|2|M|64.61,22.62|N|Kill Scalding Rock Elementals.|US|
 T The Earth Rises|QID|25460|RANK|2|M|64.03,22.66|N|To Anren Shadowseeker.|
 T Inciting the Elements|QID|25370|RANK|2|M|64.07,22.46|N|To Tholo Whitehoof.|
@@ -152,9 +152,9 @@ T Flames from Above|QID|25574|RANK|2|M|64.05,22.50|N|To Tholo Whitehoof.|
 T Protect the World Tree|QID|25317|M|47.68,35.51|N|To Malfurion Stormrage.|
 A War on the Twilight's Hammer|QID|25319|M|47.68,35.51|N|From Malfurion Stormrage.|
 A The Flameseer's Staff|QID|25472|M|47.68,35.51|N|From Windspeaker Tamila.|
-C The Flameseer's Staff|QID|25472|M|43.41,28.80|S|N|Loot the Charred Staff Fragments off of the ground in the charred areas.|NC|
-C War on the Twilight's Hammer|QID|25319|M|47.09,30.18|N|Kill Twilight Flamecallers and Vanquishers.|
-C The Flameseer's Staff|QID|25472|M|43.41,28.80|US|N|Loot the Charred Staff Fragments off of the ground in the charred areas.|NC|
+C War on the Twilight's Hammer|QID|25319|S|M|47.09,30.18|N|Kill Twilight Flamecallers and Vanquishers.|
+C The Flameseer's Staff|QID|25472|M|43.41,28.80|N|Loot the Charred Staff Fragments off of the ground in the charred areas.|NC|
+C War on the Twilight's Hammer|QID|25319|US|M|47.09,30.18|N|Kill Twilight Flamecallers and Vanquishers.|
 T War on the Twilight's Hammer|QID|25319|M|47.74,35.43|N|To Malfurion Stormrage.|
 T The Flameseer's Staff|QID|25472|M|47.74,35.43|N|To Malfurion Stormrage.|
 A Flamebreaker|QID|25323|M|47.74,35.43|N|From Malfurion Stormrage.|
@@ -182,6 +182,7 @@ T Through the Dream|QID|25325|M|52.32,17.39|N|To Alysra.|
 A Return to Nordrassil|QID|25578|PRE|25325|M|52.32,17.39|N|From Alysra.|
 T Return to Nordrassil|QID|25578|M|62.04,24.87|N|To Ysera.|
 A The Return of the Ancients|QID|25584|PRE|25578|M|62.04,24.87|N|From Ysera.|
+N Do not pick Wings Over Mount Hyjal|QID|25985|M|63.27,21.56|N|Do not pick Wings Over Mount Hyjal, wait for Aviana's Legacy.|
 T The Return of the Ancients|QID|25584|M|35.70,19.47|N|To Oomla Whitehorn.|
 A Harrying the Hunters|QID|25255|PRE|25584|RANK|2|M|35.70,19.49|N|From Oomla Whitehorn.|
 A In the Rear With the Gear|QID|25234|PRE|25584|RANK|2|M|35.72,19.69|N|From Jadi Falaryn.|
@@ -276,11 +277,12 @@ A Crushing the Cores|QID|25577|PRE|25618|M|26.24,41.89|N|From Jordan Olafson.|
 A Forged of Shadow and Flame|QID|25575|PRE|25618|M|26.27,41.93|N|From Yargra Blackscar.|
 A Rage of the Wolf Ancient|QID|25576|PRE|25618|M|26.29,41.94|N|From Yargra Blackscar.|
 C Forged of Shadow and Flame|QID|25575|S|M|30.11,39.21|N|Destroy Twilight Arms Crates as you come across them.|
-l Crushing the Cores|QID|25577|S|L|55123 8|N|Kill Searing Guardians and loot Smoldering Cores.|
+;l Crushing the Cores|QID|25577|S|L|55123 8|N|Kill Searing Guardians and loot Smoldering Cores.|
+C Crushing the Cores|QID|25577|NC|S|U|55123|N|Kill Searing Guardians and loot Smoldering Cores. Find a Twilight Anvil, which is usually around the edges of the cavern, and use the Smoldering Cores while standing next to it.|
 C Rage of the Wolf Ancient|QID|25576|M|28.51,40.57|N|Kill Dark Iron Laborers.|
 C Forged of Shadow and Flame|QID|25575|US|M|27.0,41.5|N|Finish destroying Twilight Arms Crates.|
-l Crushing the Cores|QID|25577|US|L|55123 8|M|27.0,41.5|N|Kill Searing Guardians and loot Smoldering Cores.|
-C Crushing the Cores|QID|25577|U|55123|N|Find a Twilight Anvil, which is usually around the edges of the cavern, and use the Smoldering Cores while standing next to it.|
+;l Crushing the Cores|QID|25577|US|L|55123 8|M|27.0,41.5|N|Kill Searing Guardians and loot Smoldering Cores.|
+C Crushing the Cores|QID|25577|NC|US|U|55123|N|Find a Twilight Anvil, which is usually around the edges of the cavern, and use the Smoldering Cores while standing next to it.|
 T Rage of the Wolf Ancient|QID|25576|M|26.34,41.95|N|To Yargra Blackscar.|
 T Forged of Shadow and Flame|QID|25575|M|26.30,41.91|N|To Jordan Olafson.|
 T Crushing the Cores|QID|25577|M|26.30,41.91|N|To Jordan Olafson.|
@@ -299,11 +301,11 @@ A Return from the Firelands|QID|25612|M|26.2,41.9|N|From Jordan Olafson.|FACTION
 T Return from the Firelands|QID|25612|M|28.4,29.9|N|Enter the portal behind you. This will return you the Shrine of Goldrinn. Fly back to the camp to Takrik Ragehowl.|FACTION|Horde|
 T Sweeping the Shelf|QID|25354|M|28.4,29.9|N|At Takrik Ragehowl.|FACTION|Horde|
 
-A Aviana's Legacy|QID|27874|M|28.4,29.8|N|From the Vision of Ysera.LEAD|25663|
+A Aviana's Legacy|QID|27874|M|28.4,29.8|N|From Vision of Ysera. If the quest is not offered, and you have it, get rid of the quest An Offering for Aviana.|LEAD|25663|
 A The Fires of Mount Hyjal|QID|25630|PRE|25611|M|28.18,29.87|N|From Rio Duran.|
-f Shrine of Aviana|QID|25630|M|41.14,42.70|N|Fly to the Shrine of Aviana and get the flight point from Dinorae Swiftfeather.|
+; f Shrine of Aviana|QID|25630|M|41.14,42.70|N|Fly to the Shrine of Aviana and get the flight point from Dinorae Swiftfeather.|
 T Aviana's Legacy|QID|27874|M|44.39,46.21|N|Enter the first floor of the building at the base of the tree. Head all the way to the back of the shrine to find Choluna.|
-A An Offering for Aviana|QID|25663|M|39,46.21|N|From Choluna.|
+A An Offering for Aviana|QID|25663|M|44.4,46.2|N|From Choluna.|
 A The Wormwing Problem|QID|25655|M|42.18,45.40|N|From Thisalee Crow.|
 A Scrambling for Eggs|QID|25656|M|42.18,45.40|N|From Thisalee Crow.|
 C An Offering for Aviana|QID|25663|U|55208|M|40.38,44.31|N|Go to the small circle of stones just outside the shrine. Use the Sacred Nectar while standing near the basin in the center of the stone circle. The Spirit of Aviana will appear.|NC|
@@ -317,15 +319,14 @@ T Scrambling for Eggs|QID|25656|M|42.18,45.40|N|To Thisalee Crow.|
 A A Bird in Hand|QID|25731|PRE|25655;25656|M|42.18,45.40|N|From Thisalee Crow.|
 T A Plea From Beyond|QID|25665|M|44.38,46.20|N|To Choluna.|
 A A Prayer and a Wing|QID|25664|PRE|25665|M|44.38,46.20|N|From Choluna.|
-N A Bird in Hand|QID|25731|M|38.50,44.04|N|Find the signal fire just west of the shrine. Use it to summon Marion Wormwing. Fight her until Thisalee Crow sneaks up behind her and captures her.|
-C A Bird in Hand|QID|25731|M|38.50,44.04|N|Once she is captured, talk to Marion Wormwing. Go through the dialogue options until you get the quest complete message for A Bird in Hand.|
+C A Bird in Hand|QID|25731|M|38.50,44.04|N|Find the signal fire just west of the shrine. Use it to summon Marion Wormwing. Fight her until Thisalee Crow sneaks up behind her and captures her. Once she is captured, talk to Marion Wormwing. Go through the dialogue options until you get the quest complete message for A Bird in Hand.|
 C A Prayer and a Wing|QID|25664|U|55211|M|35.67,42.30|N|Get on your flying mount and fly up to the top of the ridge to the north. You will see several nests. Land in one and use the Enormous Bird Call to summon Blaithe.|
 T A Bird in Hand|QID|25731|M|42.20,45.37|N|To Thisalee Crow.|
 T A Prayer and a Wing|QID|25664|M|44.38,46.21|N|To Choluna.|
 A Fact-Finding Mission|QID|25740|PRE|25664;25731|M|43.55,45.82|N|From Skylord Omnuron. We will be doing this quest later.|
 A Save the Wee Animals|QID|25385|PRE|25630|M|19.25,37.96|N|Mount up and head west, past the Shrine of Goldrinn and the Twilight Cultists camp. Follow the road until you reach the Grove of Aessina. From Mylune.|
 A If You're Not Against Us...|QID|25404|PRE|25630|M|19.04,36.98|N|From Matoclaw.|
-f Grove of Aessina|QID|25404|M|19.58,36.42|N|At Elizil Wintermoth.|
+; f Grove of Aessina|QID|25404|M|19.58,36.42|N|At Elizil Wintermoth.|
 C If You're Not Against Us...|QID|25404|M|22.18,44.91|N|Talk to Tyrus Blackhorn until you get the quest completion.|NC|
 T If You're Not Against Us...|QID|25404|M|22.18,44.91|N|To Tyrus Blackhorn.|
 A Seeds of Their Demise|QID|25408|PRE|25404|M|22.18,44.91|N|Leave the shrine and go slightly east up the road to a small tower. Find Tyrus Blackhorn at the base of the tower. From Tyrus Blackhorn.|
@@ -342,9 +343,9 @@ C A New Master|QID|25411|U|53120|M|14.54,45.26|N|Kill a Twilight Inferno Lord an
 T A New Master|QID|25411|M|14.54,45.26|N|To Subjugated Inferno Lord.|
 A The Name Never Spoken|QID|25412|PRE|25411|M|14.54,45.26|N|From Subjugated Inferno Lord.|
 C Disrupting the Rituals|QID|25382|RANK|2|S|M|12.02,38.36|N|Kill Inferno Lords.|
-N The Name Never Spoken|QID|25412|QO|Southern Firestone Examined: 1/1|M|14.33,45.33|N|The first firestone is in the southern end of the charred zoned. Clear the mobs and right-click to examine it.|
-N The Name Never Spoken|QID|25412|QO|Central Firestone Examined: 1/1|M|11.61,41.50|N|The second firestone is just a bit north of the southern stone.|
-C The Name Never Spoken|QID|25412|M|9.63,36.45|N|The last firestone is just north of the central stone.|
+C The Name Never Spoken|QID|25412|NC|QO|Southern Firestone Examined: 1/1|M|14.33,45.33|N|The first firestone is in the southern end of the charred zoned. Clear the mobs and right-click to examine it.|
+C The Name Never Spoken|QID|25412|NC|QO|Central Firestone Examined: 1/1|M|11.61,41.50|N|The second firestone is just a bit north of the southern stone.|
+C The Name Never Spoken|QID|25412|NC|M|9.63,36.45|N|The last firestone is just north of the central stone.|
 C Save the Wee Animals|QID|25385|US|M|13.57,39.83|N|Finish saving the critters.|NC|
 C Disrupting the Rituals|QID|25382|RANK|2|US|M|12.02,38.36|N|Finish kill Inferno Lords.|
 C Fighting Fire With ... Anything|QID|25381|RANK|2|US|M|13.72,46.89|N|Finish killing Raging Firestorms.|
@@ -566,7 +567,7 @@ C Slash and Burn|QID|25608|M|80.25,65.47|N|Get on one of the Emerald Drakes near
 T Slash and Burn|QID|25608|M|72.15,74.03|N|To Commander Jarod Shadowsong.|
 A Might of the Firelord|QID|25548|PRE|25608|M|71.97,73.97|N|From Commander Jarod Shadowsong.|
 A Secrets of the Flame|QID|25554|PRE|25608|M|71.96,74.01|N|From Cenarius.|
-f Gates of Sothann|QID|25554|M|71.57,75.24|N|At Althera.|
+; f Gates of Sothann|QID|25554|M|71.57,75.24|N|At Althera.|
 C Might of the Firelord|QID|25548|S|M|58.49,82.53|N|Kill Flame Ascendants and Twilight Subjugators.|
 l Secrets of the Flame|QID|25554|M|59.66,80.81|L|54906|N|Get the The Burning Litanies.|
 l Secrets of the Flame|QID|25554|M|58.13,78.90|L|54905|N|Get the Tome of Flame.|
@@ -601,6 +602,5 @@ A The Battle Is Won, The War Goes On|QID|27398|PRE|25551|M|72.09,74.07|N|From Co
 A The Battle Is Won, The War Goes On|QID|27399|M|72.05,73.89|N|From Commander Jarod Shadowsong.|FACTION|Horde|
 F Orgrimmar|QID|28790|M|71.67,75.24|N|Fly back to Orgrimmar.|FACTION|Horde|
 T The Battle Is Won, The War Goes On|QID|27399|M|50.38,38.23|Z|Orgrimmar|N|In Orgrimmar. To Farseer Krogar.|FACTION|Horde|
-
 ]]
 end)

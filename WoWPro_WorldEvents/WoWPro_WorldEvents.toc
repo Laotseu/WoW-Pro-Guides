@@ -2,7 +2,7 @@
 ## Title: |cffFF9900WoW-|r|cff46921APro|r WorldEvents
 ## Notes: World Event guides created by the WoW-Pro Community
 ## Author: Jiyambi
-## Dependencies: WoWPro
+## Dependencies: WoWPro, DoNotLoadThisAddon
 ## Version: 2.1.26A
 ## X-Category: Quest
 
