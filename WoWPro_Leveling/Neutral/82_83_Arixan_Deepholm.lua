@@ -134,12 +134,6 @@ T Elemental Energy|QID|27136|M|49.7,53|N|To Seer Kormo.|
 A Diplomacy First|QID|26247|PRE|26246;26244;27136|M|49.6,53|N|From Maruut Stonebinder.|
 A Where's Goldmine?|QID|26409|PRE|26876|M|49.52,53.40|N|From Earthcaller Yevaa.|
 
-A The Explorers|QID|27952|M|49.52,53.40|N|From Earthcaller Yevaa.|FACTION|Alliance|
-T The Explorers|QID|27952|M|47.34,51.4|N|To Explorer Mowi.|FACTION|Alliance|
-
-A The Reliquary|QID|27953|M|49.52,53.40|N|From Earthcaller Yevaa.|FACTION|Horde|
-T The Reliquary|QID|27953|M|50,55.5;51.20,50.10|N|To Examiner Rowe.|FACTION|Horde|
-
 T Diplomacy First|QID|26247|M|62.2,47|N|Fly up to the Alliance Gunship. To Stormcaller Mylra.|
 A All Our Friends Are Dead|QID|26248|PRE|26247|M|62.2,47|N|From Stormcaller Mylra.|
 A The Admiral's Cabin|QID|26249|PRE|26247|M|62.2,47|N|From Stormcaller Mylra.|
@@ -158,7 +152,8 @@ T Without a Captain or Crew|QID|26427|RANK|2|M|64,46.2|N|To First Mate Moody.|
 T Take No Prisoners|QID|26251|M|62.2,47|N|To Stormcaller Mylra.|
 T On Second Thought, Take One Prisoner|QID|26250|M|62.2,47|N|To Stormcaller Mylra.|
 A Some Spraining to Do|QID|26254|PRE|26250|M|62.2,47|N|From Stormcaller Mylra.|
-T Some Spraining to Do||QID|26254|M|62.2,47|N|Hop on Stormbeak the gryphon. After the event, turn in.|
+C Some Spraining to Do||QID|26254|M|62.2,47|N|Hop on Stormbeak the gryphon. After the event, turn in.|
+T Some Spraining to Do||QID|26254|M|62.2,47|N|To Stormcaller Mylra.|
 A Return to the Temple of Earth|QID|26255|PRE|26254|M|62.2,47|N|From Stormcaller Mylra.|
 T Return to the Temple of Earth|QID|26255|M|49.6,53|N|Fly back to the Temple of Earth. To Maruut Stonebinder.|
 A Deathwing's Fall|QID|26258|PRE|26255|M|49.6,53|N|From Maruut Stonebinder.|
@@ -455,6 +450,10 @@ A The Stone Throne|QID|26709|PRE|26971|M|49.7,53.3|N|Will open up the Daily Ques
 A Wayward Child|QID|28824|PRE|26709|M|56.5,12.2|N|This is a Quest for Stonecore, the 5-man Dungeon in this zone. Feel free to pick up this quest so you can do it when you run the instance. However that will not be covered here.|
 T The Stone Throne|QID|26709|M|56.4,12.2|N|Back up on Therazane's Throne.|
 
+L Get to level 83 |LVL|83|You need to be level 83 for the remainder of the guide. Visit other zones, kill stuff or run dungeons until you are.|
+
+A The Explorers|QID|27952|M|49.52,53.40|N|From Earthcaller Yevaa.|FACTION|Alliance|
+T The Explorers|QID|27952|M|47.34,51.4|N|To Explorer Mowi.|FACTION|Alliance|
 A The Twilight Plot|QID|27004|RANK|1|M|47.4,51.4|N|From Explorer Mowi.|FACTION|Alliance|
 A Fly Over|QID|27006|RANK|1|M|47.4,51.4|N|From Prospector Brewer.|FACTION|Alliance|
 C The Twilight Plot|QID|27004|M|41.00,69.00|N|Kill Twilight Cultist in the area untill you get the Masters' Gate Plans.|FACTION|Alliance|
@@ -483,6 +482,8 @@ b Ratchet|QID|28295|Z|The Cape of Stranglethorn|M|39,67|N|Take the boat to Ratch
 F Southmoon Ruins|QID|28295|Z|Northern Barrens|M|69.13,70.70|N|Fly to Southmoon Ruins in the southern part of Tanaris.|FACTION|Alliance|
 T Meetup with the Caravan|QID|28295|N|To Adarrah.|M|30.51,65.51|Z|Tanaris|FACTION|Alliance|
 
+A The Reliquary|QID|27953|M|49.52,53.40|N|From Earthcaller Yevaa.|FACTION|Horde|
+T The Reliquary|QID|27953|M|50,55.5;51.20,50.10|N|To Examiner Rowe.|FACTION|Horde|
 A The Twilight Plot|QID|27005|M|51.20,50.10|N|From Examiner Rowe.|FACTION|Horde|
 A Fly Over|QID|27008|M|51.20,50.10|N|From Reliquary Jes'ca Darksun.|FACTION|Horde|
 C The Twilight Plot|QID|27005|M|41.00,69.00|N|Kill Twilight Cultist in the area until you get the Twilight Terrace Plans.|FACTION|Horde|
