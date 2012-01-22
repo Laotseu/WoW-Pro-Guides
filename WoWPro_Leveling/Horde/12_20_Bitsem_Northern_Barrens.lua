@@ -37,22 +37,23 @@ WoWPro.Leveling:RegisterGuide('BitNor1220', 'Northern Barrens', 'Bitsem', '12', 
 return [[
 
 A Plainstrider Menace|QID|844|M|67.41,38.77|RANK|1|N|From Halga Bloodeye.|
+C Plainstrider Menace|QID|844|S|M|67.41,38.77|
 A In Defense of Far Watch|QID|871|RANK|1|N|From Kargal Battlescar.|
 C In Defense of Far Watch|QID|871|S|N|Kill Plainstriders while slaying Razormanes.|
-A Through Fire and Flames|QID|13878|RANK|1|N|From Dorak.|
+A Through Fire and Flames|QID|13878|RANK|1|N|From Dorak.|M|67.0,45.6|
 C Through Fire and Flame|QID|13878|N|Free wolves in the stable by clicking on the chain bases. They look like large horns stuck in the ground.|
 T Through Fire and Flame|QID|13878|N|To Dorak.|
-C Plainstrider Menace|QID|844|M|67.41,38.77|
 C In Defense of Far Watch|QID|871|US||N|Finish slay 8 Razormane Plunderer and 3 Razormane Hunter.|
+C Plainstrider Menace|QID|844|US|M|67.41,38.77|
 
 T In Defense of Far Watch|QID|871|M|67.64,39.46|N|To Kargal Battlescar.|
 A The Far Watch Offensive|QID|872|PRE|871|RANK|1|M|63.13,56.24|N|From Kargal Battlescar.|
 T Plainstrider Menace|QID|844|M|67.57,38.85|N|To Halga Bloodeye.|
 A Supplies for the Crossroads|QID|5041|RANK|1|M|67.57,38.85|N|From Halga Bloodeye.|
 
-C Supplies for the Crossroads|QID|5041|S|M|66.32,51.89;63.03,56.47|N|Kill Razormanes in cave while looting supply crates.|
+C Supplies for the Crossroads|QID|5041|NC|S|M|66.32,51.89;63.03,56.47|N|Kill Razormanes in cave while looting supply crates.|
 C The Far Watch Offensive|QID|872|M|63.13,56.24|N|Kill Razormanes needed.|
-C Supplies for the Crossroads|QID|5041|US|M|63.03,56.47|N|Collect Supply Crates.|
+C Supplies for the Crossroads|QID|5041|NC|US|M|63.03,56.47|N|Collect Supply Crates.|
 
 T The Far Watch Offensive|QID|872|M|67.69,39.50|N|To Kargal Battlescar.|
 T Supplies for the Crossroads|QID|5041|M|67.46,38.79|N|To Halga Bloodeye.|
@@ -101,7 +102,7 @@ C Crossroads Caravan Delivery|QID|13975|NC|M|54.67,41.55;49.55,59.46|N|Talk to R
 T Crossroads Caravan Delivery|QID|13975|M|48.74,59.58|N|To Thork.|
 A To the Mor'shan Rampart|QID|28876|RANK|1|M|48.74,59.58|N|If you plan on going to Ashenvale next. From Thork.|
 
-f The Crossroads|QID|28876|N|Get The Crossroads Flight Path.|
+; f The Crossroads|QID|28876|N|Get The Crossroads Flight Path.|
 
 A Fungal Spores|QID|848|RANK|1|M|48.63,58.45|N|From Apothecary Helbrim.|
 A The Forgotten Pools|QID|870|RANK|1|M|49.41,58.67|N|From Tonga Runetotem.|
@@ -203,7 +204,7 @@ h Ratchet|QID|891|M|67.29,74.68|N|At Innkeeper Wiley.|
 A It's Gotta be the Horn|QID|865|RANK|1|M|67.85,71.58|N|From Mebok Mizzyrix.|
 A WANTED: Cap'n Garvey|QID|895|RANK|2|M|68.28,71.28|N|From Mebok Mizzyrix.|
 
-f Ratchet|QID|895|M|69.11,70.67|N|Get the Ratchet Flight Point.|
+; f Ratchet|QID|895|M|69.11,70.67|N|Get the Ratchet Flight Point.|
 
 A Southsea Freebooters|QID|887|RANK|2|M|69.53,72.88|N|From Wharfmaster Dizzywig.|
 A Take it up with Tony|QID|14052|RANK|1|M|69.53,72.88|N|From Wharfmaster Dizzywig.|
@@ -285,7 +286,7 @@ A Raging River Ride|QID|26769|PRE|14050|RANK|1|M|68.36,69.09|
 C Raging River Ride|QID|26769|M|72.96,65.53|N|Hop on the riverboat for a free ride.|
 T Raging River Ride|QID|26769|M|62.55,16.86|N|To Nozzlepot.|
 
-f Nozzlepot's Outpost|QID|28877|M|62.35,17.18|
+; f Nozzlepot's Outpost|QID|28877|M|62.35,17.18|
 h Nozzlepot's Outpost|QID|28877|M|62.52,16.65|N|At Innkeeper Kritzle.|
 
 A Sludge Investigation|QID|29087|M|62.55,16.86|N|From Nozzlepot.|
@@ -386,7 +387,7 @@ T Demon Seed|QID|29112|M|47.53,39.58|N|To Nagala Whipshank.|
 A Mor'shan Caravan Delivery|QID|29111|M|47.53,39.58|N|From Nagala Whipshank.|
 C Mor'shan Caravan Delivery|QID|29111|M|47.53,39.58|N|Talk to Nagala and defend the caravan.|
 T Mor'shan Caravan Delivery|QID|29111|M|42.42,14.97|N|To Kadrak, who wanders.|
-f The Mor'shan Rampart|QID|3922|M|42.03,15.88|N|At Gort Goreflight.|
+; f The Mor'shan Rampart|QID|3922|M|42.03,15.88|N|At Gort Goreflight.|
 
 F Orgrimmar|NC|O|N|If you plan on going to Stranglethorn next.|
 A Northern Stranglethorn: The Fallen Empire|QID|26417|RANK|1|O|M|51.78,56.49|Z|Orgrimmar|N|From Bort. If you plan on going to Stranglethorn next.|

@@ -25,7 +25,7 @@ WoWPro.Leveling:RegisterGuide('JiyFer3540', 'Feralas', 'Jiyambi', '35', '40', 'J
 return [[
 
 R Camp Ataya|QID|25339|M|41.60,15.14|N|In Feralas.|
-f Camp Ataya|QID|25339|M|41.60,15.14|N|From Konu Runetotem.|
+; f Camp Ataya|QID|25339|M|41.60,15.14|N|From Konu Runetotem.|
 A Vengeance on the Northspring|QID|25339|RANK|2|M|41.60,15.14|N|From Talo Thornhoof.|
 A Dark Heart|QID|25340|RANK|2|M|41.61,15.21|N|From Talo Thornhoof.|
 A Signs of Change|QID|25210|M|41.39,15.40|N|From Konu Runetotem.|
@@ -58,7 +58,7 @@ R Stonemaul Hold|QID|25386|M|51.92,48.07|N|Folow the road.|
 T To Stonemaul Hold|QID|25386|M|51.92,48.07|N|To Orhan Ogreblade.|
 A The Gordunni Threat|QID|25209|M|51.92,48.02|N|From Orhan Ogreblade.|
 A The Gordunni Orb|QID|25341|M|51.92,48.02|N|From Orhan Ogreblade.|
-f Stonemaul Hold|QID|27134|M|51.00,48.38|N|At Mergek.|
+; f Stonemaul Hold|QID|27134|M|51.00,48.38|N|At Mergek.|
 A Testing the Vessel|QID|25336|M|52.26,48.06|N|From Gombana.|
 A The Mark of Quality|QID|25452|RANK|2|M|52.83,47.12|N|From Jangdor Swiftstrider.|
 h Stonemaul Hold|QID|25452|M|51.90,47.47|N|At Chonk.|
@@ -114,7 +114,7 @@ A War on the Woodpaw|QID|25363|M|74.92,42.52|N|From Hadoken Swiftstrider.|
 A The Highborne|QID|27132|M|74.92,42.52|N|From Hadoken Swiftstrider. Pick this up if you'd like to do Dire Maul.|
 A The Darkmist Ruins|QID|25643|M|75.07,42.78|N|From Sage Palerunner.|
 h Camp Mojache|QID|25643|M|74.79,45.12|N|At Innkeeper Greul.|
-f Camp Mojache|QID|25643|M|74.79,45.12|N|At Shyn.|
+; f Camp Mojache|QID|25643|M|74.79,45.12|N|At Shyn.|
 C Treant Muisek|QID|25338|S|U|9606|M|76.55,40.33|N|Kill treants and use the vessel on their corpses.|
 C Twisted Sisters|QID|25349|M|77.06,39.17|N|Kill dryads to the north-east of Camp Mojache.|
 C The Hilltop Threat|QID|25373|M|76.94,34.81|N|The ogres are in the hills to the north.|

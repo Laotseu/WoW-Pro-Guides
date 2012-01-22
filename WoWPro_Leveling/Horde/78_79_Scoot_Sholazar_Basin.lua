@@ -121,7 +121,7 @@ C The Taste Test |QID|12645|N|Give a sample to Hemet  and Hadrius (27.37,59.28),
 T Lakeside Landing |QID|12651|
 
 A The Part-time Hunter |QID|12654|M|50.5,62.1|
-f Lakeside Landing|QID|12671|
+; f Lakeside Landing|QID|12671|
 T Aerial Surveillance |QID|12696|M|50.0,61.5|
 
 A An Embarassing Incident |QID|12699|M|50.0,61.5|
