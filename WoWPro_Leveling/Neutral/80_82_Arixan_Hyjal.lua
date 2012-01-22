@@ -374,10 +374,10 @@ A Fresh Bait|QID|25493|PRE|25490|M|27.08,62.59|N|From Arch Druid Hamuul Runetote
 A Firebreak|QID|25492|PRE|25490|M|27.04,62.90|N|From Rayne Feathersong.|
 f Sanctuary of Malorne|QID|25491|M|27.75,63.63|N|At Ranela Featherglen.|
 N Nemesis|QID|25491|N|As you complete the next steps, watch out for Nemesis, a level 80 Elite giant turtle who patrols all over The Flamewake.|
-C Durable Seeds|QID|25491|S|M|35.49,53.51|N|Look for small piles of dirt on the ground. Click on them to get a Hyjal Seedling.|
+C Durable Seeds|QID|25491|NC|S|M|35.49,53.51|N|Look for small piles of dirt on the ground. Click on them to get a Hyjal Seedling.|
 C Fresh Bait|QID|25493|S|M|38.92,54.30|N|Kill Core Hounds for Core Hound Entrails.|
 C Firebreak|QID|25492|M|39.11,52.77|N|Kill 10 Lava Surgers.|
-C Durable Seeds|QID|25491|US|M|35.49,53.51|N|Finish collecting Hyjal Seedlings.|
+C Durable Seeds|QID|25491|NC|US|M|35.49,53.51|N|Finish collecting Hyjal Seedlings.|
 C Fresh Bait|QID|25493|US|M|35.62,54.29|N|Kill Core Hounds for Core Hound Entrails.|
 T Durable Seeds|QID|25491|M|27.14,62.59|N|To Arch Druid Hamuul Runetotem.|
 T Fresh Bait|QID|25493|M|27.14,62.59|N|To Arch Druid Hamuul Runetotem.|
@@ -389,10 +389,10 @@ C Prepping the Soil|QID|25502|M|41.91,56.01|N|Head to a small area in the south 
 T Fact-Finding Mission|QID|25740|M|32.82,70.73|N|To Thisalee Crow.|
 A Sethria's Brood|QID|25746|PRE|25740|M|32.82,70.73|N|From Thisalee Crow.|
 A A Gap in Their Armor|QID|25758|PRE|25740|M|32.86,70.73|N|From Thisalee Crow.|
-C A Gap in Their Armor|QID|25758|S|M|31.54,76.25|N|Pick up the Twilight Armor Pieces you see.|
+C A Gap in Their Armor|QID|25758|NC|S|M|31.54,76.25|N|Pick up the Twilight Armor Pieces you see.|
 C Sethria's Brood|QID|25746|S|M|31.33,76.40|N|Kill the Twilight Dragonkin. Avoid the Twilight Juggernauts for now.|
 A The Codex of Shadows|QID|25763|PRE|25740|M|31.21,77.08|N|In the center of the camp, you will find a pedestal with a book on it. Click on the book and accept the quest The Codex of Shadows.|
-C A Gap in Their Armor|QID|25758|US|M|31.54,76.25|N|Finish grabbing Twilight Armor Pieces.|
+C A Gap in Their Armor|QID|25758|NC|US|M|31.54,76.25|N|Finish grabbing Twilight Armor Pieces.|
 C Sethria's Brood|QID|25746|US|M|31.33,76.40|N|Kill the Twilight Dragonkin. Avoid the Twilight Juggernauts for now.|
 T Sethria's Brood|QID|25746|M|32.80,70.79|N|To Thisalee Crow.|
 T A Gap in Their Armor|QID|25758|M|32.80,70.79|N|To Thisalee Crow.|
@@ -418,7 +418,7 @@ C Children of Tortolla|QID|25519|M|22.66,56.87|N|Jump into the lake and swim dow
 C Breaking the Bonds|QID|25514|M|24.00,55.88|N|Go back to Tortolla. Use the giant rod to your left to break the chain holding Tortola and summon a Twilight Dominator. Kill him, then repeat on the other rod to the right.|
 T Breaking the Bonds|QID|25514|M|24.45,55.85|N|To Tortolla.|
 T Children of Tortolla|QID|25519|M|24.49,55.81|N|To Tortolla.|
-A An Ancient Awakens|QID|25520|PRE|25514;25519|M|24.49,55.81|N|From Tortolla.|
+A An Ancient Awakens|QID|25520|NC|PRE|25514;25519|M|24.49,55.81|N|From Tortolla.|
 F Shrine of Aviana|QID|25795|M|27.75,63.63;41.74,44.74|N|Fly to the Shrine of Aviana. Either take the flight point, or fly there on your mount.|
 T Return to the Shrine|QID|25795|M|44.41,46.24|N|Find Choluna in the back.|
 A An Ancient Reborn|QID|25807|PRE|25795|M|44.41,46.24|N|From Choluna.|
@@ -458,6 +458,7 @@ T Tortolla's Revenge|QID|25843|M|41.56,60.91|N|To Tortolla.|
 A The Hammer and the Key|QID|25904|PRE|25843|M|41.56,60.91|N|From Tortolla.|
 A Lost Wardens|QID|25881|PRE|25843|RANK|2|M|42.20,60.62|N|From Niden.|
 A Breakthrough|QID|25899|PRE|25843|RANK|2|M|42.20,60.62|N|From Niden.|
+C The Hammer and the Key|QID|25904|S|M|60.42,58.91|N|Continue killing Twilight Field Captains until the Glyph of Opening drops.|
 C Lost Wardens|QID|25881|RANK|2|S|M|48.98,51.70|N|Talk to the Lost Wardens to rescue them.|
 C Breakthrough|QID|25899|RANK|2|M|49.47,51.54|N|Kill 10 Twilight Scorchlords.|
 C Lost Wardens|QID|25881|RANK|2|US|M|48.98,51.70|N|Finish rescueing Lost Wardens.|
@@ -467,7 +468,7 @@ T Breakthrough|QID|25899|RANK|2|M|57.15,55.94|N|To Captain Irontree.|
 A Hyjal Recycling Program|QID|25901|PRE|25843|RANK|2|M|56.87,56.01|N|From Logram.|
 C Hyjal Recycling Program|QID|25901|RANK|2|S|M|56.80,52.80;58.66,54.29|N|Collect Arrows.|
 C Pressing the Advantage|QID|25886|RANK|2|M|54.16,54.28|N|Kill Twilight Field Captains.|
-C The Hammer and the Key|QID|25904|M|60.42,58.91|N|Continue killing Twilight Field Captains until the Glyph of Opening drops.|
+C The Hammer and the Key|QID|25904|US|M|60.42,58.91|N|Continue killing Twilight Field Captains until the Glyph of Opening drops.|
 C Hyjal Recycling Program|QID|25901|RANK|2|US|M|56.80,52.80|N|Collect Arrows.|
 T The Hammer and the Key|QID|25904|M|42.25,60.80|N|To Tortolla.|
 A The Third Flamegate|QID|25906|PRE|25904|M|42.25,60.80|N|From Tortolla.|
@@ -514,12 +515,12 @@ T Twilight Training|QID|25291|M|89.54,59.05|N|To Instructor Mylva.|
 A Physical Training: Forced Labor|QID|25509|PRE|25291|M|89.54,59.05|N|From Instructor Mylva.|
 A Walking the Dog|QID|25294|PRE|25291|M|90.08,56.48|N|From Instructor Devoran.|
 A Gather the Intelligence|QID|25296|PRE|25291|M|88.36,58.57|N|From the Outhouse Hideout.|
+N Walking the Dog|QID|25294|U|52717|M|90.11,56.32|N|Summon your Spawn of Smolderos.|
 l Twilight Communique|QID|25296|M|88.98,57.01|L|52724|N|Search the camp until you find the Twilight Communique. It can be just about anywhere in the camp so just keep looking around until you find it. Try to grab it when none of the Twilight Guards are close by. If they see you take the communique they will attack.|
-l Charred Basilisk Meat|QID|25294|L|52708 5|S|M|89.55,49.35|N|Kill Spinescale Basilisk and loot 5 Charred Basilisk Meat.|
+C Walking the Dog|QID|25294|S|U|52708|M|89.55,49.35|N|Kill Spinescale Basilisk the Charred Basilisk Meat to the dog.|
 C Physical Training: Forced Labor|QID|25509|S|U|54788|M|89.55,49.35|N|Use the Twilight Pick on Darkwhisper Lodestones on your way to the other camp.|
 C Gather the Intelligence|QID|25296|M|91.95,51.60|N|Leave the camp. Head northeast, toward the other camp, Doom's Vigil. Find the Hyjal Battleplans somewhere in the Doom's Vigil camp.|
-l Charred Basilisk Meat|QID|25294|L|52708 5|US|M|89.55,49.35|N|Kill Spinescale Basilisk and loot 5 Charred Basilisk Meat.|
-C Physical Training: Forced Labor|QID|25509|US|U|54788|M|89.55,49.35|N|use the Twilight Pick on Darkwhisper Lodestones.|
+C Walking the Dog|QID|25294|US|U|52708|M|89.55,49.35|N|Kill Spinescale Basilisk the Charred Basilisk Meat to the dog.|
 N Walking the Dog|QID|25294|U|52717|M|90.11,56.32|N|Once back in the camp, use the Fiery Leash to summon the Spawn of Smolderos.|
 C Walking the Dog|QID|25294|U|52708|M|90.11,56.32|N|Feed him the 5 Charred Basilisk Meat.|
 T Walking the Dog|QID|25294|M|90.11,56.32|N|To Instructor Devoran.|
@@ -569,9 +570,9 @@ A Might of the Firelord|QID|25548|PRE|25608|M|71.97,73.97|N|From Commander Jarod
 A Secrets of the Flame|QID|25554|PRE|25608|M|71.96,74.01|N|From Cenarius.|
 ; f Gates of Sothann|QID|25554|M|71.57,75.24|N|At Althera.|
 C Might of the Firelord|QID|25548|S|M|58.49,82.53|N|Kill Flame Ascendants and Twilight Subjugators.|
-l Secrets of the Flame|QID|25554|M|59.66,80.81|L|54906|N|Get the The Burning Litanies.|
-l Secrets of the Flame|QID|25554|M|58.13,78.90|L|54905|N|Get the Tome of Flame.|
-C Secrets of the Flame|QID|25554|M|56.84,83.85|N|Get the Ascendant's Codex.|
+C Secrets of the Flame|QID|25554|NC|M|59.66,80.81|QO|The Burning Litanies: 1/1|N|Get the The Burning Litanies.|
+C Secrets of the Flame|QID|25554|NC|M|58.13,78.90|QO|Tome of Flame: 1/1|N|Get the Tome of Flame.|
+C Secrets of the Flame|QID|25554|NC|M|56.84,83.85|N|Get the Ascendant's Codex.|
 A The Twilight Egg|QID|25644|PRE|25608|M|59.07,83.85|N|From Twilight Subjugator.|
 C Might of the Firelord|QID|25548|US|M|58.49,82.53|N|Finish killing the needed mobs.|
 T Might of the Firelord|QID|25548|M|72.08,74.05|N|To Commander Jarod Shadowsong.|
