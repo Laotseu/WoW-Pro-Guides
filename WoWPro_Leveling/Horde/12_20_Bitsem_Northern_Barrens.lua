@@ -32,22 +32,23 @@ WoWPro.Leveling:RegisterGuide('BitNor1220', 'Northern Barrens', 'Bitsem', '12', 
 return [[
 
 A Plainstrider Menace|QID|844|M|67.41,38.77|RANK|1|N|From Halga Bloodeye.|
+C Plainstrider Menace|QID|844|S|M|67.41,38.77|
 A In Defense of Far Watch|QID|871|RANK|1|N|From Kargal Battlescar.|
 C In Defense of Far Watch|QID|871|S|N|Kill Plainstriders while slaying Razormanes.|
-A Through Fire and Flames|QID|13878|RANK|1|N|From Dorak.|
+A Through Fire and Flames|QID|13878|RANK|1|N|From Dorak.|M|67.0,45.6|
 C Through Fire and Flame|QID|13878|N|Free wolves in the stable by clicking on the chain bases. They look like large horns stuck in the ground.|
 T Through Fire and Flame|QID|13878|N|To Dorak.|
-C Plainstrider Menace|QID|844|M|67.41,38.77|
 C In Defense of Far Watch|QID|871|US||N|Finish slay 8 Razormane Plunderer and 3 Razormane Hunter.|
+C Plainstrider Menace|QID|844|US|M|67.41,38.77|
 
 T In Defense of Far Watch|QID|871|M|67.64,39.46|N|To Kargal Battlescar.|
 A The Far Watch Offensive|QID|872|PRE|871|RANK|1|M|63.13,56.24|N|From Kargal Battlescar.|
 T Plainstrider Menace|QID|844|M|67.57,38.85|N|To Halga Bloodeye.|
 A Supplies for the Crossroads|QID|5041|RANK|1|M|67.57,38.85|N|From Halga Bloodeye.|
 
-C Supplies for the Crossroads|QID|5041|S|M|66.32,51.89;63.03,56.47|N|Kill Razormanes in cave while looting supply crates.|
+C Supplies for the Crossroads|QID|5041|NC|S|M|66.32,51.89;63.03,56.47|N|Kill Razormanes in cave while looting supply crates.|
 C The Far Watch Offensive|QID|872|M|63.13,56.24|N|Kill Razormanes needed.|
-C Supplies for the Crossroads|QID|5041|US|M|63.03,56.47|N|Collect Supply Crates.|
+C Supplies for the Crossroads|QID|5041|NC|US|M|63.03,56.47|N|Collect Supply Crates.|
 
 T The Far Watch Offensive|QID|872|M|67.69,39.50|N|To Kargal Battlescar.|
 T Supplies for the Crossroads|QID|5041|M|67.46,38.79|N|To Halga Bloodeye.|
