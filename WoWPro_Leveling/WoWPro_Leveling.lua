@@ -9,7 +9,7 @@ local tostring = _G.tostring
 
 local pairs = _G.pairs
 
-local QueryQuestsCompleted = _G.QueryQuestsCompleted
+--local QueryQuestsCompleted = _G.QueryQuestsCompleted
 local UnitClass = _G.UnitClass
 local UnitFactionGroup = _G.UnitFactionGroup
 local UnitLevel = _G.UnitLevel
@@ -94,7 +94,7 @@ function WoWPro.Leveling:OnEnable()
 	WoWPro.Leveling.FirstMapCall = true
 
 	-- Server query for completed quests --
-	QueryQuestsCompleted()
+	--QueryQuestsCompleted()
 end
 
 -- Called when the module is disabled --

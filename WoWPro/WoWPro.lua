@@ -359,6 +359,10 @@ function WoWPro:OnEnable()
 	    WoWPro:Disable()
 	    return
 	end
+
+	-- Server query for completed quests --
+	_G.QueryQuestsCompleted()
+
 end
 
 -- Called when the addon is disabled --

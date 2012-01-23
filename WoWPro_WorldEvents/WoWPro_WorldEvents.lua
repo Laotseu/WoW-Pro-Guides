@@ -7,7 +7,7 @@ local tostring						= _G.tostring
 
 local pairs							= _G.pairs
 
-local QueryQuestsCompleted 	= _G.QueryQuestsCompleted
+--local QueryQuestsCompleted 	= _G.QueryQuestsCompleted
 local UnitFactionGroup 			= _G.UnitFactionGroup
 
 local LibStub = _G.LibStub
@@ -55,7 +55,7 @@ function WoWPro.WorldEvents:OnEnable()
 	WoWPro.WorldEvents.FirstMapCall = true
 
 	-- Server query for completed quests --
-	QueryQuestsCompleted() -- Need to check for this
+	--QueryQuestsCompleted() -- Need to check for this
 end
 
 -- Called when the module is disabled --
