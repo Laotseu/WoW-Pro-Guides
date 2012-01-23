@@ -151,7 +151,7 @@ C Traitor's Bait|QID|26830|M|43.73,63.68|Z|Orgrimmar|N|Bottom of the tower.|
 T Traitor's Bait|QID|26830|M|48.10,70.67|Z|Orgrimmar|N|To Garrosh Hellscream.|
 
 A Return to the Highlands|QID|26840|M|48.10,70.67|Z|Orgrimmar|N|From Garrosh Hellscream.|
-f Dragonmaw Port|QID|26840|M|73.78,52.81|N|Take the portal from Org to Twilight Highlands.Get flight path|
+; f Dragonmaw Port|QID|26840|M|73.78,52.81|N|Take the portal from Org to Twilight Highlands.Get flight path|
 T Return to the Highlands|QID|26840|M|75.30,54.84|N|To Zaela.|
 
 A The Northern Flank|QID|27583|M|75.30,54.84|N|From Zaela.|
@@ -197,7 +197,7 @@ C Wildhammer Infestation|QID|28588|M|75.55,16.39|S|
 C Quality Construction|QID|28584|U|65146|M|75.70,17.76|N|Fix leaking valves while killing Raiders|
 C Wildhammer Infestation|QID|28588|M|75.55,16.39|US|
 C Pool Pony Rescue|QID|28586|U|65162|M|81.07,21.19|N|Stay mounted and fly low near the water and throw out Ponies to the goblins.|
-f The Krazzworks|QID|28584|M|75.37,17.76|N|At Harpo Boltknuckle.|
+; f The Krazzworks|QID|28584|M|75.37,17.76|N|At Harpo Boltknuckle.|
 
 T Wildhammer Infestation|QID|28588|M|77.60,16.72|N|To Captain Krazz.|
 T Quality Construction|QID|28584|M|77.60,16.72|N|To Brett the Bomber.|
@@ -235,7 +235,7 @@ A Drag 'em Down|QID|27929|M|54.81,44.14|N|From Narkrall Rakeclaw.|
 A Crushing the Wildhammer|QID|27751|M|54.81,44.14|N|From Narkrall Rakeclaw.|
 A Total War|QID|27747|M|55.10,43.67|N|From Harkkan.|
 
-f Bloodgulch|QID|27747|M|54.16,42.28|N|At Bramok Gorewing.|
+; f Bloodgulch|QID|27747|M|54.16,42.28|N|At Bramok Gorewing.|
 
 A War Forage|QID|27750|M|53.84,43.30|N|From Griff.|
 
@@ -347,7 +347,7 @@ T Fury Unbound|QID|28133|M|36.45,38.15|
 
 A Whispers in the Wind|QID|28149|M|36.43,37.99|N|From Buunu.|
 A Purple is Your Color|QID|28147|M|36.76,38.01|N|From Rotgrum.|
-f The Gullet|QID|28147|M|36.86,37.99|N|At San'shigo.|
+; f The Gullet|QID|28147|M|36.86,37.99|N|At San'shigo.|
 
 C Warm Welcome|QID|27486|M|27.59,21.11|
 T Warm Welcome|QID|27486|M|29.29,26.01|N|To Calen.|
@@ -368,7 +368,7 @@ T In Defense of the Redoubt|QID|27564|M|29.33,26.04|N|To Calen. Back at the tree
 A Breach in the Defenses|QID|27509|M|29.33,26.04|N|From Calen.|
 A Encroaching Twilight|QID|27507|M|29.33,26.04|N|From Calen.|
 A Far from the Nest|QID|27508|M|29.33,26.04|N|From Lirastrasza.|
-f Vermillion Redoubt|QID|27507|M|28.50,24.92|N|At Aquinastrasz.|
+; f Vermillion Redoubt|QID|27507|M|28.50,24.92|N|At Aquinastrasz.|
 
 C Breach in the Defenses|QID|27509|M|17.85,16.82|N|Inside the cave.|
 C Far from the Nest|QID|27508|M|21.90,19.18|S|N|Laying on the ground and dropped by mobs carrying them after being killed.|
@@ -472,7 +472,7 @@ T Crushblow|QID|28249|M|45.32,75.42|N|To Warlord Zaela.|
 A Ogres & Ettins|QID|27493|M|45.32,75.42|N|From Warlord Zaela.|
 A Kor'kron Drop|QID|27491|M|45.32,75.42|N|From Lady Cozwynn.|
 A Call in the Artillery|QID|27497|M|45.32,75.42|N|From Lady Cozwynn.|
-f Crushblow|QID|27497|M|45.68,76.25|N|At Tokrog.|
+; f Crushblow|QID|27497|M|45.68,76.25|N|At Tokrog.|
 
 C Kor'kron Drop|QID|27491|M|45.72,76.02|QO|Get wind rider squad: 1/1|N|Talk to Jon-Jon right next to flight master.|
 C Kor'kron Drop|QID|27491|M|39.17,64.57|QO||N|Fly northwest. X on ground marks the spot.|

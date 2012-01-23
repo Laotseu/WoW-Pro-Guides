@@ -71,10 +71,10 @@
 WoWPro.Leveling:RegisterGuide("JamGriA7577", "Grizzly Hills", "Jame", "75", "77", "ScoZul7778", "Alliance", function()
 return [[
 
-f Amberpine Lodge |QID|12511|M|31.33,59.16|N|Grab the flightpoint at Vana Grey.|
+; f Amberpine Lodge |QID|12511|M|31.33,59.16|N|Grab the flightpoint at Vana Grey.|
 h Amberpine Lodge |QID|12511|M|31.97,60.22|N|Set your hearth at Amberpine Lodge with Jenniger Bell.|
 
-T The Hills Have Us |QID|12511|N|To Lieutenant Dumont in Amberpine Lodge.|M|31.89,60.15|
+T The Hills Have Us |QID|12511|N|To Lieutenant Dumont in Amberpine Lodge.|M|31.89,60.15|O|
 A Local Support |QID|12292|M|31.8,60.2|N|From Lieutenant Dumont.|
 A Replenishing the Storehouse |QID|12212|N|From Master Woodsman Anderhol.|M|32.06,59.98|
 A Them or Us! |QID|12215|N|From Master Woodsman Anderhol.|M|32.02,59.89|
@@ -277,7 +277,7 @@ A Hollowstone Mine |QID|12158|M|59.4,26.0|N|From Captain Gryan Stoutmantle.|
 A Softening the Blow |QID|11998|M|59.4,26.0|N|From Captain Gryan Stoutmantle.|
 A Mounting Up |QID|12414|N|From Squire Percy.|M|59.13,26.63|N|From Squire Percy.|
 
-f Westfall Brigade Encampment |QID|12414|N|Get the flight point at Samuel Clearbook.|M|59.8,26.6|
+; f Westfall Brigade Encampment |QID|12414|N|Get the flight point at Samuel Clearbook.|M|59.8,26.6|
 l Get 5 Wild Carrots|QID|12414|L|37707 5|N|In the field south of the camp.|M|56.73,30.03|
 C Mounting Up |QID|12414|U|37708|N|Target an Highland Mustang, use the [Stick] and bring the Mustang back to Squire Percy.|M|59.13,26.63|
 T Mounting Up |QID|12414|N|To Squire Percy.|M|59.13,26.63|
@@ -371,7 +371,7 @@ C Vordrassil's Seeds |QID|12250|N|Loot Vordrassil's Seeds that are in and around
 C Vordrassil's Sapling |QID|12248|U|37306|N|Use the [Verdant Torch] on the tree  and get the [Vordrassil's Ashes]|M|50.63,42.73|
 C Vordrassil's Seeds |QID|12250|N|Loot Vordrassil's Seeds that are in and around the large, dead tree trunk.|M|51.5,47.1|US|
 
-T Fate and Coincidence |N|To Sasha.|M|57.52,41.27|
+T Fate and Coincidence |QID|12329|N|To Sasha.|M|57.52,41.27|
 A Sasha's Hunt |QID|12134|M|57.5,41.3|N|From Sasha.|
 A Anatoly Will Talk |QID|12330|M|57.5,41.3|N|From Sasha.|
 

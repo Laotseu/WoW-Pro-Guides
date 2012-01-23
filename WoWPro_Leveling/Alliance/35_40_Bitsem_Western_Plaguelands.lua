@@ -82,7 +82,7 @@ A Scourge First... Horde Later|QID|27159|M|41.06,70.44|N|From Thassarian.|
 A War Machines|QID|27160|M|40.97,70.38|N|From Lurid.|
 A The Endless Flow|QID|27161|M|41.27,70.06|N|From Lang Loosegrip.|
 
-f Andorhal|QID|27161|M|39.52,69.54|N|At Ginny Goodwin.|
+; f Andorhal|QID|27161|M|39.52,69.54|N|At Ginny Goodwin.|
 
 C Scourge First... Horde Later|QID|27159|M|41.89,69.69|S|N|Kill the Desiccated Scourge.|
 C War Machines|QID|27160|M|42.50,72.01|N|Kill Opengut Behemoths.|S|
@@ -90,46 +90,46 @@ C The Endless Flow|QID|27161|U|60849|M|42.44,65.55|N|Use Lang's Hand Grenades to
 C War Machines|QID|27160|M|42.50,72.01|N|Finish killing Opengut Behemoths.|US|
 C Scourge First... Horde Later|QID|27159|M|41.89,69.69|US|N|Finish killing the Desiccated Scourge.|
 
-T The Endless Flow|QID|27161|M|41.27,70.06|N|To Lang Loosegrip.|
+T The Endless Flow|QID|27161|M|41.28,70.19|N|To Lang Loosegrip.|
 A Araj the Summoner|QID|27164|PRE|27161|M|41.28,70.19|N|From Lang Loosegrip.|
 
-T Scourge First... Horde Later|QID|27159|M|41.06,70.44|N|To Thassarian.|
+T Scourge First... Horde Later|QID|27159|M|41.13,70.39|N|To Thassarian.|
 T War Machines|QID|27160|M|41.10,70.46|N|To Lurid.|
 
 A Brute Strength|QID|27163|PRE|27160|M|41.10,70.46|N|From Thassarian.|S|
 A Scholomancer|QID|27162|PRE|27160|M|41.10,70.46|N|From Thassarian.|
-A Brute Strength|QID|27163|PRE|27160|M|41.10,70.46|N|From Thassarian.|US|
+A Brute Strength|QID|27163|PRE|27160|M|41.10,70.46|N|From Thassarian.|
 
-C Brute Strength|QID|27163|M|43.57,69.61|N|Level 35 Elite, inside the building.|
-C Araj the Summoner|QID|27164|U|60849|M|45.20,69.32|N|Use Lang's Hand Grenades if he summons skeletons. Level 35 Elite, by the fountain. Loot Araj's Phylactery Shard.|
-C Scholomancer|QID|27162|M|45.39,72.34|N|Kill Darkmaster Gandling, a boss skull boss (HP 3660).  Thassarian and Koltira Deathweaver will appear to help you during the battle at about HP 1000.|
+C Brute Strength|QID|27163|T|Rattlegore|M|43.57,69.61|N|Level 35 Elite, inside the building.|
+C Araj the Summoner|QID|27164|T|Araj the summoner|U|60849|M|45.20,69.32|N|Use Lang's Hand Grenades if he summons skeletons. Level 35 Elite, by the fountain. Loot Araj's Phylactery Shard.|
+C Scholomancer|QID|27162|T|Darkmaster Gandling|M|45.39,72.34|N|Kill Darkmaster Gandling, a boss skull boss (HP 3660).  Thassarian and Koltira Deathweaver will appear to help you during the battle at about HP 1000.|
 
-T Araj the Summoner|QID|27164|M|41.13,70.48|N|To Thassarian.|S|
-T Brute Strength|QID|27163|M|41.13,70.48|N|To Thassarian.|S|
 T Scholomancer|QID|27162|M|41.13,70.48|N|To Thassarian.|
-T Brute Strength|QID|27163|M|41.13,70.48|N|To Thassarian.|US|
-T Araj the Summoner|QID|27164|M|41.13,70.48|N|To Thassarian.|US|
+T Brute Strength|QID|27163|M|41.13,70.48|N|To Thassarian.|
+T Araj the Summoner|QID|27164|M|41.13,70.48|N|To Thassarian.|
 
 A Victory, For Now|QID|27165|PRE|27162;27163;27164|M|41.13,70.48|N|From Thassarian.|
 F Chillwind Camp |QID|27165|N|Fly to Chillwind Camp.  Ginny Goodwin will give you a free-flight if you select the relevant option from her chat menu.|
-f Chillwind Camp|QID|27165|NC|M|42.95,84.95|N|If you don't have it, from Bibilfaz Featherwhistle.|
+; f Chillwind Camp|QID|27165|NC|M|42.95,84.95|N|If you don't have it, from Bibilfaz Featherwhistle.|
 h Chillwind Camp|QID|27165|M|43.38,84.51|N|At Mother Matterly.|
 r Repair and Sell Junk |QID|27165|M|43.08,84.28|N|Sell your junk and repair at Leonard Porter.\n\nClick this step to continue.|
 T Victory, For Now|QID|27165|M|42.78,84.12|N|To Commander Ashlam Valorfist.|
 
 A Go Fletch!|QID|27166|M|42.78,84.12|N|From Commander Ashlam Valorfist.|
 A A Mighty Hunger|QID|27167|M|42.78,84.12|N|From Thurman Grant.|
+A Into the Woods|QID|27683|M|42.96,83.63|N|From Argent Officer Pureheart.|N|If you will be entering the Eastern Plaguelands next.|
+
+h Chillwind Camp|QID|27683|M|43.38,84.51|N|At Mother Matterly.|
 
 C A Mighty Hunger|QID|27167|S|M|41.93,79.46;35.18,76.18|N|From now on, kill and loot Shaggy Black Bears.|
 C Go Fletch!|QID|27166|M|35.56,79.50|N|Collect the feathers sparkling on the ground.|NC|
 C A Mighty Hunger|QID|27167|US|M|41.93,79.46;35.18,76.18|N|Finish killing bears for Sides of Bear Meat.|
-
 T Go Fletch!|QID|27166|M|42.73,83.98|N|To Commander Ashlam Valorfist.|
 T A Mighty Hunger|QID|27167|M|42.73,83.98|N|To Thurman Grant.|
 A Uther's Blessing|QID|27169|PRE|27167|M|42.73,83.98|N|From Commander Ashlam Valorfist.|
 A Those That Couldn't Let Go|QID|27168|PRE|27167|M|43.32,83.81|N|From High Priestess MacDonnell.|
 
-C Those That Couldn't Let Go|QID|27168|S|U|60861|M|49.84,80.79|N|From now on use the Holy Thurible on Withdrawn Souls.  Some may turn hostile.|
+C Those That Couldn't Let Go|QID|27168|S|U|60861|M|49.84,80.79|N|From now on use the Holy Thurible on Withdrawn Souls.|
 C Uther's Blessing|QID|27169|NC|U|61920|M|51.94,82.64|N|Use the Chillwind Tribute at Uther's Tomb.|
 
 T Uther's Blessing|QID|27169|M|51.95,82.71|N|To High Priest Thel'danis.|
@@ -161,14 +161,10 @@ A I Ain't Sayin' You a Gourd-Digger...|QID|26956|M|48.60,54.88|N|From Selyria Gr
 
 A The Battle Resumes!|QID|27197|M|50.39,52.70|N|From Durnt Brightfalcon.|
 
-f The Menders' Stead|QID|27197|M|50.49,52.34|N|At Marge Heffman.|
+; f The Menders' Stead|QID|27197|M|50.49,52.34|N|At Marge Heffman.|
 r Repair and Restock|QID|26953|NC|M|50.69,52.89|N|Repair and Restock.|
 
 C I Ain't Sayin' You a Gourd-Digger...|QID|26956|M|47.41,52.91;46.33,54.45;45.19,53.4|N|Click Bad Corn, Unhealthy-Looking Pumpkins and Rotten Apples; then kill the mobs that appear.|
-C Zen'Kiki, the Druid|QID|26953|M|52.11,58.67|N|Kill with Zen'kiki with you. If Zen'kiki isn't with you, talk to him at Mender's Stead to get him back.|S|
-l Diseased Wolf Samples|QID|26999|M|46.98,46.34|L|60763 4|N|Kill and loot Diseased Wolves for their samples.|S|
-l Hulking Plaguebear Samples|QID|26999|M|46.98,46.34|L|60762 4|N|Kill and loot Hulking Plaguebears for their samples.|
-l Diseased Wolf Samples|QID|26999|M|46.98,46.34|L|60763 4|N|Kill and loot Diseased Wolves for their samples.|US|
 C A New Era for the Plaguelands|QID|26999|M|54.92,60.83|N|Kill and loot Plague Lurkers and Venom Mist Lurkers to get their samples.|
 C Zen'Kiki, the Druid|QID|26953|M|52.11,58.67|N|Finish killing how many mobs you have left to kill with Zen'kiki.|US|
 T A New Era for the Plaguelands|QID|26999|M|49.33,54.92|N|To Field Agent Kaartish.|
@@ -211,7 +207,7 @@ T This Means WAR (Wild Arachnid Roundup)|QID|27001|M|48.11,32.47|N|To Nathaniel 
 
 A An Audience with the Highlord|QID|27002|PRE|27001|M|48.11,32.47|N|From Nathaniel Dumah.|
 
-f Hearthglen|QID|27002|M|47.67,31.80;44.67,18.58|N|Hop on a charger and follow the road to Hearthglen. At William Henderson.|
+; f Hearthglen|QID|26761|M|47.67,31.80;44.67,18.58|N|Hop on a charger and follow the road to Hearthglen. At William Henderson.|
 
 A It's About Time!|QID|27156|M|43.24,16.02|N|From Lieutenant Myner.|
 T An Audience with the Highlord|QID|27002|M|42.04,14.64|N|To Highlord Tirion Fordring.|
@@ -223,7 +219,7 @@ C It's About Time!|QID|27156|M|43.09,16.33|N|Talk to Trainees. Challenge and bea
 T It's About Time!|QID|27156|M|43.28,15.96|N|To Lieutenant Myner.|
 
 A Drudges...|QID|27157|PRE|27157|M|43.28,15.96|N|From Lieutenant Myner.|
-C Drudges...|QID|27157|M|45.86,12.31;45.37,9.73|N|Enter the mine. Kill the *ew* huge spider.|
+C Drudges...|QID|27157|T|Shadril|M|45.86,12.31;45.37,9.73|N|Enter the mine. Kill the *ew* huge spider.|
 T Drudges...|QID|27157|M|43.27,15.91|N|To Lieutenant Myner.|
 
 C Taelan Fordring's Legacy|QID|27151|M|54.78,24.69|N|Kill Gnoll looters.|
