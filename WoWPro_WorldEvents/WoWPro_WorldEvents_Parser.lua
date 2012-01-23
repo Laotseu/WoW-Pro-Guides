@@ -665,7 +665,8 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 				row.cooldown:Show()
 				row.cooldown:SetCooldown(start, duration)
 			else row.cooldown:Hide() end
-			if not itemkb and row.itembutton:IsVisible() then
+--			if not itemkb and row.itembutton:IsVisible() then
+			if row.itembutton:IsVisible() then
 				local key1, key2 = GetBindingKey("CLICK WoWPro_FauxItemButton:LeftButton")
 				if key1 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key1, "CLICK WoWPro_itembutton"..i..":LeftButton")
@@ -673,29 +674,40 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 				if key2 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_itembutton"..i..":LeftButton")
 				end
+				WoWPro:SetMacro("WPI", "#showtooltip\n/use item:"..use)
 				itemkb = true
 			end
-		else row.itembutton:Hide() end
+		else
+			row.itembutton.item_id = nil
+			row.itembutton:Hide()
+		end
 
 		-- Target Button --
 		if target then
+			local macroText = "/cleartarget\n/targetexact [nodead] "..target
+				.."\n/cleartarget [@target,dead]"
+				.."\n/script if not GetRaidTargetIndex('target') then SetRaidTarget('target', 8) end"
+			row.targetbutton:SetAttribute("macrotext", macroText)
 			local target, spell, amt = (";"):split(target)
 			spell = tonumber(spell) or 0
 			amt = tonumber(amt) or 1
 
 			row.targetbutton:Show()
 			if spell == 2 then
-				row.targetbutton:SetAttribute("macrotext", "/"..target.." ")
+				macroText = "/"..target.." "
 			else
-				row.targetbutton:SetAttribute("macrotext", "/cleartarget\n/targetexact "..target
-				.."\n/run if not GetRaidTargetIndex('target') == 8 and not UnitIsDead('target') then SetRaidTarget('target', 8) end")
+				macroText = "/cleartarget\n/targetexact [nodead] "..target
+				.."\n/cleartarget [@target,dead]"
+				.."\n/script if not GetRaidTargetIndex('target') then SetRaidTarget('target', 8) end"
 			end
+			row.targetbutton:SetAttribute("macrotext", macroText)
 			if use then
 				row.targetbutton:SetPoint("TOPRIGHT", row.itembutton, "TOPLEFT", -5, 0)
 			else
 				row.targetbutton:SetPoint("TOPRIGHT", row, "TOPLEFT", -10, -7)
 			end
-			if not targetkb and row.targetbutton:IsVisible() then
+			--if not targetkb and row.targetbutton:IsVisible() then
+			if row.targetbutton:IsVisible() then
 				local key1, key2 = GetBindingKey("CLICK WoWPro_FauxTargetButton:LeftButton")
 				if key1 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key1, "CLICK WoWPro_targetbutton"..i..":LeftButton")
@@ -703,6 +715,7 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 				if key2 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_targetbutton"..i..":LeftButton")
 				end
+				WoWPro:SetMacro("WPT", macroText)
 				targetkb = true
 			end
 		else
@@ -728,6 +741,10 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 
 		k = k + 1
 	end
+
+	-- Remove macros if no button found
+	if not itemkb then WoWPro:SetMacro("WPI") end
+	if not targetkb then WoWPro:SetMacro("WPT") end
 
 	WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount or 0
 	WoWPro.CurrentIndex = WoWPro.rows[1+WoWPro.ActiveStickyCount].index
