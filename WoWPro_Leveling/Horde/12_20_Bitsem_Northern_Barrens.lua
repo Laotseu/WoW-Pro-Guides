@@ -85,9 +85,9 @@ T Grol'dom's Missing Kodo|QID|13969|M|58.06,49.18|N|To Grol'dom Kodo.|
 A Animal Services|QID|13970|PRE|13969|M|58.06,49.18|N|From Grol'dom Kodo.|
 C Animal Services|QID|13970|S|M|58.36,49.90|N|Gather sacks of Stolen Grain while questing on Thorn Hill.|
 
-C The Tortusk Takedown|QID|13968|M|61.36,47.87|N|Kill the Razormane leader, Tortusk.|
-C Consumed by Hatred|QID|899|US|M|58.41,49.49|N|Kill Quillboar until you collect 30 Quilboar Tusks.|
-C Animal Services|QID|13970|US|M|58.36,49.90|N|Gather 5 sacks of Stolen Grain from the Razormane camps on Thorn Hill.|
+C The Tortusk Takedown|QID|13968|T|Fez|M|61.36,47.87|N|Kill the Razormane leader, Tortusk but you better kill his raptor, Fez, first.|
+C Consumed by Hatred|QID|899|US|N|Kill Quillboar until you collect 30 Quilboar Tusks.|
+C Animal Services|QID|13970|US|N|Gather 5 sacks of Stolen Grain from the Razormane camps on Thorn Hill.|
 T Animal Services|QID|13970|M|58.08,49.32|N|To Grol'dom Kodo.|
 
 A The Kodo's Return|QID|13971|PRE|13970|RANK|1|M|58.08,49.32|N|From Grol'dom Kodo.|
@@ -100,7 +100,7 @@ T Consumed by Hatred|QID|899|M|55.18,41.03|N|To Mankrik.|
 
 C Crossroads Caravan Delivery|QID|13975|NC|M|54.67,41.55;49.55,59.46|N|Talk to Rocco Whipshank and hop on kodo. Use first ability on wolf riders, second ability if they jump you.|
 T Crossroads Caravan Delivery|QID|13975|M|48.74,59.58|N|To Thork.|
-A To the Mor'shan Rampart|QID|28876|RANK|1|M|48.74,59.58|N|If you plan on going to Ashenvale next. From Thork.|
+;A To the Mor'shan Rampart|QID|28876|RANK|1|M|48.74,59.58|N|If you plan on going to Ashenvale next. From Thork.|
 
 ; f The Crossroads|QID|28876|N|Get The Crossroads Flight Path.|
 
