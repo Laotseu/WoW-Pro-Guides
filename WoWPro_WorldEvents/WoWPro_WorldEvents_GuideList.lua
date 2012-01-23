@@ -1,12 +1,23 @@
 -------------------------------------------------------------------------------
 -- Localized Lua globals
 -------------------------------------------------------------------------------
-local _G = getfenv(0)
+local _G 							= getfenv(0)
 
+local floor							= _G.floor
+local max							= _G.max
+
+local ipairs						= _G.ipairs
+local pairs							= _G.pairs
+local sort							= _G.sort
+local tinsert						= _G.tinsert
+
+local CreateFrame					= _G.CreateFrame
+local IsShiftKeyDown				= _G.IsShiftKeyDown
+
+local WoWPro_Locale 				= _G.WoWPro_Locale
 
 local LibStub = _G.LibStub
 
-local WoWPro_Locale = _G.WoWPro_Locale
 
 ---------------------------------------------
 --      WoWPro_WorldEvents_GuideList.lua      --
@@ -22,7 +33,7 @@ local NUMROWS = 15
 local guides = {}
 for guidID,guide in pairs(WoWPro.Guides) do
 	if guide.guidetype == "WorldEvents" then
-		table.insert(guides, {
+		tinsert(guides, {
 			GID = guidID,
 			zone = guide.zone,
 			name = guide.name,
@@ -32,10 +43,12 @@ for guidID,guide in pairs(WoWPro.Guides) do
 		})
 	end
 end
-table.sort(guides, function(a,b) return a.name < b.name end)
+sort(guides, function(a,b) return a.name < b.name end)
 
 -- Populating Guide List --
 function WoWPro.WorldEvents.UpdateGuideList()
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
 	if not WoWPro.WorldEvents.GuideList then return end
 	if not WoWPro.WorldEvents.GuideList:IsVisible() then return end
 	if not WoWPro.WorldEvents.GuideList:IsVisible() then return end
@@ -91,7 +104,7 @@ function WoWPro.WorldEvents.CreateGuideList()
 
 	do -- Title Row --
 		-- Title Backdrop Settings --
-		titlerowBG = {
+		local titlerowBG = {
 			bgFile = "Interface\\ChatFrame\\ChatFrameBackground",
 			tile = true,
 			tileSize = 16,
@@ -168,35 +181,35 @@ function WoWPro.WorldEvents.CreateGuideList()
 
 		-- Sorting Functions --
 		local sorttype = "Default"
-		function authorSort()
+		local function authorSort()
 			if sorttype == "AuthorAsc" then
-				table.sort(guides, function(a,b) return a.author > b.author end)
+				sort(guides, function(a,b) return a.author > b.author end)
 				WoWPro.Leveling.UpdateGuideList()
 				sorttype = "AuthorDesc"
 			else
-				table.sort(guides, function(a,b) return a.author < b.author end)
+				sort(guides, function(a,b) return a.author < b.author end)
 				WoWPro.Leveling.UpdateGuideList()
 				sorttype = "AuthorAsc"
 			end
 		end
-		function nameSort()
+		local function nameSort()
 			if sorttype == "NameAsc" then
-				table.sort(guides, function(a,b) return a.name > b.name end)
+				sort(guides, function(a,b) return a.name > b.name end)
 				WoWPro.Leveling.UpdateGuideList()
 				sorttype = "NameDesc"
 			else
-				table.sort(guides, function(a,b) return a.name < b.name end)
+				sort(guides, function(a,b) return a.name < b.name end)
 				WoWPro.Leveling.UpdateGuideList()
 				sorttype = "NameAsc"
 			end
 		end
-		function categorySort()
+		local function categorySort()
 			if sorttype == "CategoryAsc" then
-				table.sort(guides, function(a,b) return a.category > b.category end)
+				sort(guides, function(a,b) return a.category > b.category end)
 				WoWPro.Leveling.UpdateGuideList()
 				sorttype = "CategoryDesc"
 			else
-				table.sort(guides, function(a,b) return a.category < b.category end)
+				sort(guides, function(a,b) return a.category < b.category end)
 				WoWPro.Leveling.UpdateGuideList()
 				sorttype = "CategoryAsc"
 			end
@@ -288,9 +301,9 @@ function WoWPro.WorldEvents.CreateGuideList()
 	WoWPro.WorldEvents.GuideList = frame
 
 	local f = scrollbar:GetScript("OnValueChanged")
-	scrollbar:SetMinMaxValues(0, math.max(0, #guides - NUMROWS))
+	scrollbar:SetMinMaxValues(0, max(0, #guides - NUMROWS))
 	scrollbar:SetScript("OnValueChanged", function(self, value, ...)
-		offset = math.floor(value)
+		offset = floor(value)
 		WoWPro.WorldEvents.UpdateGuideList()
 		return f(self, value, ...)
 	end)
