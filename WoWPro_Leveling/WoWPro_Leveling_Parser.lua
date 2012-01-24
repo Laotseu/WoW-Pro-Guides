@@ -942,13 +942,13 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 	-- Noting that a quest is being completed for quest log update events --
 	elseif event == "QUEST_COMPLETE" then
 		WoWPro.Leveling.CompletingQuest = GetQuestID()
-   	--local qidx = WoWPro.rows[1].index
-      --local questtitle = GetTitleText();
-		--if WoWProCharDB.AutoTurnin == true and (WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and questtitle == WoWPro.step[qidx] then
-		--if (GetNumQuestChoices() <= 1) then
-		  --  GetQuestReward(0)
-		--end
-      --end
+   	local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+   	local questtitle = GetTitleText();
+		if WoWProCharDB.AutoTurnin == true and (WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and questtitle == WoWPro.step[qidx] then
+			if (GetNumQuestChoices() <= 1) then
+				GetQuestReward(0)
+			end
+     	end
 		--WoWPro.Leveling.CompletingQuestName = true
 		--WoWPro.Leveling:AutoCompleteQuestUpdate(GetQuestID())
 		--WoWPro.Leveling:QUEST_LOG_UPDATE_bucket()
