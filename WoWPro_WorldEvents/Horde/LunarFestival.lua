@@ -39,7 +39,7 @@ R Rut'theran Village|N|There is no boat to Rut'theran Village anymore unless you
 R Dolanaar|N|Run to Dolanaar. I would recommend going up and over the tree instead of going through the pink portal, as there is a chance you will get killed by the flying guards.|QID|8715|M|56.8,52.9|Z|Teldrassil|
 A Bladeleaf the Elder|N|From Elder Bladeleaf.|QID|8715|M|56.8,52.9|Z|Teldrassil|T|Elder Bladeleaf|
 R Darnassus|N|Run to Darnassus.|QID|8721|M|39.2,31.8|Z|Darnassus|
-A Bladeswift the Elder|N|From Elder Bladeswift.|QID|8718|M|39.2,31.8|Z|Darnassus|T|Elder Bladeswift|
+A Bladeswift the Elder|N|From  Elder Bladeswift.|QID|8718|M|39.2,31.8|Z|Darnassus|T|Elder Bladeswift|
 R Rut'theran Village|N|Run through the pink portal if you think you can make it, or go back over the tree.|QID|8721|M|36.16,50.16|Z|Darnassus|
 F Astramaar|N|Now for the long trek down to Astramaar. You could head back over to Whisperwind Grove in Felwood if you wish to use a flightpoint as that is the closest to you.|QID|8725|M|35.4,48.9|Z|Ashenvale|
 A Riversong the Elder|N|From Elder Riversong.|QID|8725|M|35.4,48.9|Z|Ashenvale|T|Elder Riversong|

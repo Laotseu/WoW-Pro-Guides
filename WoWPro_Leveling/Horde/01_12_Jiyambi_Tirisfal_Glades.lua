@@ -224,7 +224,7 @@ T A Putrid Task|QID|25090|M|52.53,54.85|N|To Deathguard Dillinger.|
 
 R Brill|QID|24982|M|58.83,51.93|N|Follow the road east.|
 
-f Brill|QID|24982|M|58.83,51.93|N|At Anette Williams.|
+; f Brill|QID|24982|M|58.83,51.93|N|At Anette Williams.|
 
 A Supplying Brill|QID|6321|M|60.15,52.40|R|Undead|N|From Deathguard Morris.|
 T Gordo's Task|QID|25038|M|60.11,52.65|N|To Junior Apothecary Holland.|
@@ -355,7 +355,7 @@ r Repair/Restock/Trainer|QID|25007|
 
 R The Bulwark|QID|25007|M|83.57,69.93|N|At the eastern-most point in the zone.|
 
-f The Bulwark|QID|25007|N|From Timothy Cunningham.|M|83.55,69.97|
+; f The Bulwark|QID|25007|N|From Timothy Cunningham.|M|83.55,69.97|
 
 h The Bulwark|QID|25046|M|83.08,71.93|N|At Provisioner Elda.|
 
