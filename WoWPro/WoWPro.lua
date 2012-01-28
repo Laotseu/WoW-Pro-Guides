@@ -101,6 +101,7 @@ function WoWPro:Print(message,...)
 		if WoWPro.Serial > 999 then
 		    WoWPro.Serial = 1
 		end
+		WoWPro.Log = WoWPro.Log or {}
 		if WoWProDB and WoWProDB.global and WoWProDB.global.Log then
 		    if WoWPro.Log then
 		        WoWProDB.global.Log = WoWPro.Log
@@ -188,7 +189,7 @@ function WoWPro:OnInitialize()
 	if WoWProCharDB.Enabled == nil then
 	    WoWProCharDB.Enabled = true
 	end
-	if WoWProDB.global.Deltas == nil then
+	--if WoWProDB.global.Deltas == nil then
 	--if WoWProDB.global.Deltas == nil then
 	--end
 	WoWProDB.global.Deltas = WoWProDB.global.Deltas or {}
@@ -443,7 +444,7 @@ function WoWPro:LoadAllGuides()
             if WoWPro.Guides[guidID].faction == "Horde"    then hCount = hCount + 1 end
         end
         Count = Count + 1
+		WoWPro:Print("%d Done! %d A, %d N, %d H guides present", Count, aCount, nCount, hCount)
 	end
-        WoWPro:Print("%d Done! %d A, %d N, %d H guides present", Count, aCount, nCount, hCount)
 end	    
 
