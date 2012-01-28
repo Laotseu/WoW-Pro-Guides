@@ -141,8 +141,8 @@ F Brill|N|Fly to Brill in Tirisfal Glades.|QID|8652|M|45.4,42.4|Z|Silverpine For
 b Howling Fjord|N|Take the zeppelin to Howling Fjord.|QID|13067|M|58.9,59.0|Z|Tirisfal Glades|
 
 R Utgarde Keep|N|Head inside Utgarde Keep.|QID|13067|M|58.9,48.7|Z|Howling Fjord|
-A Jarten the Elder|N|From Elder Jarten inside the instance.|QID|13017|M|47.6,70.2|Z|Norndir Preperationw|
-R Utgarde Pinnacle|N|Head out of Utgarde Keep, then run around north of the Keep to get to Utgarde Pinnacle.|QID|13067|M|57.25,46.63|Z|Howling Fjord|
+A Jarten the Elder|N|From Elder Jarten inside the instance. Down the stairs in Lower Pinnacle, after Dalronn the Controller.|QID|13017|M|48.7,22.9|Z|Utgrade Pinnacle|
+R Utgarde Pinnacle|N|Head out of Utgarde Keep, then run around north of the Keep to get to Utgarde Pinnacle.|QID|13067|M|58.0,50.1;57.25,46.63|Z|Howling Fjord|
 A Chogan'gada the Elder|N|From Elder Chogan'gada from inside the instance.|QID|13067|M|48.6,22.2|Z|Lower Pinnacle|
 
 F Camp Oneqwah|N|Fly to Camp Oneqwah in Grizzly Hills.|QID|13030|M|79,29.6|Z|Howling Fjord|
@@ -179,15 +179,14 @@ F River's Heart|N|Fly to River's Heart in Sholazar Basin.|QID|13018|M|21.6,34.8|
 A Sandrene the Elder|N|From Elder Sandrene.|QID|13018|M|49.8,63.6|Z|Sholazar Basin|
 A Wanikaya the Elder|N|From Elder Wanikaya.|QID|13024|M|63.8,49|Z|Sholazar Basin|
 
-; ---
 F Transitus Shield|N|Fly to the Transitus Shield in Borean Tundra.|QID|13016|M|50,61.4|Z|Sholazar Basin|
-A Northal the Elder|N|From Northal the Elder.|QID|13016|M|33.6,34.2|Z|Borean Tundra|
+A Northal the Elder|N|From Elder Northal.|QID|13016|M|33.6,34.2|Z|Borean Tundra|
 R The Nexus|N|Run into The Nexus.|QID|13021|M|27.5,26.09|Z|Borean Tundra|
-A Igasho the Elder|N|From Igasho the Elder.|QID|13021|M|55.4,64.6|Z|The Nexus|
+A Igasho the Elder|N|From Elder Igasho.|QID|13021|M|55.4,64.6|Z|The Nexus|
 R D.H.E.T.A Encampment|N|Head out of The Nexus and go to the D.H.E.T.A Encampment.|QID|13033|M|57.4,43.6|Borean Tundra|
-A Arp the Elder|N|From Arp the Elder.|QID|13033|M|57.4,43.6|Z|Borean Tundra|
-A Pamuya the Elder|N|From Pamuya the Elder.|QID|13029|M|42.8,49.6|Z|Borean Tundra|
-A Sardis the Elder|N|From Sardis the Elder.|QID|13012|M|59,65.5|Z|Borean Tundra|T|Elder Sardis|
+A Arp the Elder|N|From Elder Arp.|QID|13033|M|57.4,43.6|Z|Borean Tundra|
+A Pamuya the Elder|N|From Elder Pamuya.|QID|13029|M|42.8,49.6|Z|Borean Tundra|
+A Sardis the Elder|N|From Elder Sardis.|QID|13012|M|59,65.5|Z|Borean Tundra|T|Elder Sardis|
 
 N The End |N|That's all for this year.|
 
