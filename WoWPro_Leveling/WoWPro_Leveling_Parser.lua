@@ -645,7 +645,6 @@ function WoWPro.Leveling:RowUpdate(offset)
 			QuestMapUpdateAllQuests()
 			QuestPOIUpdateIcons()
 			local _, x, y, obj
-			if QID then _, x, y, obj = QuestPOIGetIconInfo(QID) end
 			if coord or x then
 				--table.insert(dropdown,
 				--	{text = "Map Coordinates", notCheckable = true, func = function()
@@ -659,7 +658,8 @@ function WoWPro.Leveling:RowUpdate(offset)
 				tbl.func 			= _MapGuideCoordinate
 				tinsert(dropdown, tbl)
 			end
-			if WoWPro.QuestLog[QID] and action ~= 'A' then
+			if QID then _, x, y, obj = QuestPOIGetIconInfo(QID) end
+			if x and y then
 				--table.insert(dropdown,
 				--	{text = "Map Blizard Coordinates", notCheckable = true, func = function()
 				--		WoWPro:MapPoint(row.num, true)
@@ -769,6 +769,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 
 		-- Target Button --
 		if target then
+			row.targetbutton.tooltip_text = target
 			row.targetbutton:Show()
 			local macroText = "/cleartarget\n/targetexact [nodead] "..target
 				.."\n/cleartarget [@target,dead]"
@@ -792,12 +793,13 @@ function WoWPro.Leveling:RowUpdate(offset)
 				targetkb = true
 			end
 		else
+			row.targetbutton.tooltip_text = nil
 			row.targetbutton:Hide()
 		end
 
 		-- Setting the zone for the coordinates of the step --
-		zone = zone or strsplit("-(",WoWPro.Guides[GID].zone)
-		row.zone = strtrim(zone)
+		--zone = zone or strsplit("-(",WoWPro.Guides[GID].zone)
+		--row.zone = strtrim(zone)
 
 		-- Checking for loot items in bags --
 --		local lootqtyi

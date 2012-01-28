@@ -116,6 +116,14 @@ function WoWPro:CreateTargetButton(parent, id)
 	targetbutton:RegisterForClicks("anyUp")
 	targetbutton:Hide()
 
+	--Add tooltip to the button
+	targetbutton:HookScript("OnEnter", function (self)
+		if self.tooltip_text then
+			GameTooltip:SetOwner(self); GameTooltip:SetText(self.tooltip_text); GameTooltip:Show();
+		end
+	end);
+	targetbutton:HookScript("OnLeave", GameTooltip_Hide);
+
 	return targetbutton, targeticon
 end
 
