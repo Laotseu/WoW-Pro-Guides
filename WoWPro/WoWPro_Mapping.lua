@@ -66,7 +66,7 @@ local B = LibStub("LibBabble-Zone-3.0")
 local BL = B:GetUnstrictLookupTable()
 
 -- Map dat
-local LMD = LibStub("LibMapData-1.0")
+--local LMD = LibStub("LibMapData-1.0")
 -- Debug
 WoWPro.mappoints_cache = cache
 WoWPro.map_debug = false
@@ -426,11 +426,11 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	end
 	local desc = WoWPro.step[i]
 	local zone
-	if row then
-	    zone = WoWPro.rows[row].zone or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(%-]+)"))
-	else
+	--if row then
+	--	zone = WoWPro.rows[row].zone or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(%-]+)"))
+	--else
 		zone = WoWPro.zone[i] or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(%-]+)"))
-	end
+	--end
 	local autoarrival = WoWPro.waypcomplete[i] or 3
 
 
@@ -475,7 +475,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 
 	-- Finding the zone --
 	local zm, zf = nil, nil
-	if zone then
+	if zone and zone ~= "" then
 	    if type(zone) == "number" then
 	        -- Using a numeric zone ID
 	        zm = tonumber(zone)
@@ -490,9 +490,9 @@ function WoWPro:MapPoint(row, forceBlizCoord)
     if not zm then
 	    zm = GetCurrentMapAreaID()
 	    zf = GetCurrentMapDungeonLevel()
-	    if not zone then
-	    	zone = LMD and LMD:MapLocalize(zm)
-	    end
+	    --if not zone  or zone == "" then
+	    --	zone = LMD and LMD:MapLocalize(zm)
+	    --end
 	    WoWPro:Print("Zone ["..zone.."] not found. Using map id "..tostring(zm))
 	end
 
