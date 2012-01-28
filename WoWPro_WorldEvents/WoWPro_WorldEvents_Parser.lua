@@ -466,6 +466,39 @@ function WoWPro.WorldEvents:LoadGuide()
 	WoWPro.Scrollbar:SetMinMaxValues(1, max(1, WoWPro.stepcount - WoWPro.ShownRows))
 end
 
+-- Functions used by dropdown menus
+local function _MapGuideCoordinate(self, row_num)
+	--err("row_num=%s",row_num)
+	WoWPro:MapPoint(row_num)
+end
+
+local function _MapBlizCoordinate(self, row_num)
+	--err("row_num=%s",row_num)
+	WoWPro:MapPoint(row_num, true)
+end
+
+local function _ShareQuest(self, quest_index)
+	--err("quest_index=%s",quest_index)
+	QuestLogPushQuest(quest_index)
+end
+
+local function _UnSticky(self, row_index)
+	--err("row_index=%s",row_index)
+	WoWPro.sticky[row_index] = false
+	WoWPro.UpdateGuide()
+	WoWPro.UpdateGuide()
+	WoWPro.MapPoint()
+end
+
+local function _Sticky(self, row_index)
+	--err("row_index=%s",row_index)
+	WoWPro.sticky[row_index] = true
+	WoWPro.unsticky[row_index] = false
+	WoWPro.UpdateGuide()
+	WoWPro.UpdateGuide()
+	WoWPro.MapPoint()
+end
+
 -- Row Content Update --
 function WoWPro.WorldEvents:RowUpdate(offset)
 	local WoWProDB = WoWPro.DB
@@ -484,7 +517,9 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 	local itemkb = false
 	local targetkb = false
 	ClearOverrideBindings(WoWPro.MainFrame)
-	WoWPro.WorldEvents.RowDropdownMenu = {}
+	--WoWPro.WorldEvents.RowDropdownMenu = {}
+	WoWPro.ReleaseTable(WoWPro.WorldEvents.RowDropdownMenu)
+	WoWPro.WorldEvents.RowDropdownMenu = WoWPro.AcquireTable()
 
 	for i=1,15 do
 
@@ -589,49 +624,86 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 		end)
 
 		-- Right-Click Drop-Down --
-		local dropdown = {
-		}
+		--local dropdown = {
+		--}
+		local dropdown = WoWPro.AcquireTable()
 		if step then
-			tinsert(dropdown,
-				{text = step.." Options", isTitle = true}
-			)
+			--tinsert(dropdown,
+			--	{text = step.." Options", isTitle = true}
+			local tbl = WoWPro.AcquireTable()
+			tbl.text 			= step.." Options"
+			tbl.notCheckable 	= true
+			tbl.isTitle 		= true
+			tinsert(dropdown, tbl)
+
 			QuestMapUpdateAllQuests()
 			QuestPOIUpdateIcons()
 			local _, x, y, obj
-			if QID then _, x, y, obj = QuestPOIGetIconInfo(QID) end
 			if coord or x then
-				tinsert(dropdown,
-					{text = "Map Coordinates", func = function()
-						WoWPro:MapPoint(row.num)
-					end}
-				)
+				--tinsert(dropdown,
+				--	{text = "Map Coordinates", func = function()
+				--		WoWPro:MapPoint(row.num)
+				local tbl = WoWPro.AcquireTable()
+				tbl.text 			= "Map Coordinates"
+				tbl.notCheckable 	= true
+				tbl.arg1				= row.num
+				tbl.func 			= _MapGuideCoordinate
+				tinsert(dropdown, tbl)
+			end
+			if QID then _, x, y, obj = QuestPOIGetIconInfo(QID) end
+			if x and y then
+				--)
+				local tbl = WoWPro.AcquireTable()
+				tbl.text 			= "Map Blizard Coordinates"
+				tbl.notCheckable 	= true
+				tbl.arg1				= row.num
+				tbl.func 			= _MapBlizCoordinate
+				tinsert(dropdown, tbl)
 			end
 			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].index and GetNumPartyMembers() > 0 then
-				tinsert(dropdown,
-					{text = "Share Quest", func = function()
-						QuestLogPushQuest(WoWPro.QuestLog[QID].index)
-					end}
-				)
+				--tinsert(dropdown,
+				--	{text = "Share Quest", func = function()
+				--		QuestLogPushQuest(WoWPro.QuestLog[QID].index)
+				--	end}
+				--)
+				local tbl = WoWPro.AcquireTable()
+				tbl.text 			= "Share Quest"
+				tbl.notCheckable 	= true
+				tbl.arg1				= WoWPro.QuestLog[QID].index
+				tbl.func 			= _ShareQuest
+				tinsert(dropdown, tbl)
 			end
 			if sticky then
-				tinsert(dropdown,
-					{text = "Un-Sticky", func = function()
-						WoWPro.sticky[row.index] = false
-						WoWPro.UpdateGuide()
-						WoWPro.UpdateGuide()
-						WoWPro.MapPoint()
-					end}
-				)
+				--tinsert(dropdown,
+				--	{text = "Un-Sticky", func = function()
+				--		WoWPro.sticky[row.index] = false
+				--		WoWPro.UpdateGuide()
+				--		WoWPro.UpdateGuide()
+				--		WoWPro.MapPoint()
+				--	end}
+				--)
+				local tbl = WoWPro.AcquireTable()
+				tbl.text 			= "Un-Sticky"
+				tbl.notCheckable 	= true
+				tbl.arg1				= row.index
+				tbl.func				= _UnSticky
+				tinsert(dropdown, tbl)
 			else
-				tinsert(dropdown,
-					{text = "Make Sticky", func = function()
-						WoWPro.sticky[row.index] = true
-						WoWPro.unsticky[row.index] = false
-						WoWPro.UpdateGuide()
-						WoWPro.UpdateGuide()
-						WoWPro.MapPoint()
-					end}
-				)
+				--tinsert(dropdown,
+				--	{text = "Make Sticky", func = function()
+				--		WoWPro.sticky[row.index] = true
+				--		WoWPro.unsticky[row.index] = false
+				--		WoWPro.UpdateGuide()
+				--		WoWPro.UpdateGuide()
+				--		WoWPro.MapPoint()
+				--	end}
+				--)
+				local tbl = WoWPro.AcquireTable()
+				tbl.text 			= "Make Sticky"
+				tbl.notCheckable 	= true
+				tbl.arg1				= row.index
+				tbl.func				= _Sticky
+				tinsert(dropdown, tbl)
 			end
 		end
 		WoWPro.WorldEvents.RowDropdownMenu[i] = dropdown
@@ -648,6 +720,7 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 		end
 
 		if use and GetItemInfo(use) then
+			row.itembutton.item_id = use
 			row.itembutton:Show()
 			row.itemicon:SetTexture(GetItemIcon(use))
 			row.itembutton:SetAttribute("type1", "item")
@@ -684,6 +757,7 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 
 		-- Target Button --
 		if target then
+			row.targetbutton.tooltip_text = target
 			local macroText = "/cleartarget\n/targetexact [nodead] "..target
 				.."\n/cleartarget [@target,dead]"
 				.."\n/script if not GetRaidTargetIndex('target') then SetRaidTarget('target', 8) end"
@@ -719,6 +793,7 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 				targetkb = true
 			end
 		else
+			row.targetbutton.tooltip_text = nil
 			row.targetbutton:Hide()
 		end
 

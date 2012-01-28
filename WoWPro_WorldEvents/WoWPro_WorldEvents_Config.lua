@@ -205,9 +205,9 @@ function WoWPro.WorldEvents:CreateConfig()
 	--blizzPanel = createBlizzOptions()
 	createBlizzOptions()
 
-	tinsert(WoWPro.DropdownMenu, {text = "", isTitle = true} )
-	tinsert(WoWPro.DropdownMenu, {text = "WoW-Pro WorldEvents", isTitle = true} )
-	tinsert(WoWPro.DropdownMenu, {text = "About", func = function()
+	tinsert(WoWPro.DropdownMenu, {text = "", notCheckable = true, isTitle = true} )
+	tinsert(WoWPro.DropdownMenu, {text = "WoW-Pro WorldEvents", notCheckable = true, isTitle = true} )
+	tinsert(WoWPro.DropdownMenu, {text = "About", notCheckable = true, func = function()
 			InterfaceOptionsFrame_OpenToCategory("WoW-Pro WorldEvents")
 		end} )
 end
