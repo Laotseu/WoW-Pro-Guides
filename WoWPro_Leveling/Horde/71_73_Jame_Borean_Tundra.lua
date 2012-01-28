@@ -89,7 +89,7 @@ A Reinforcements Incoming... |QID|11618|M|41.3,53.6|
 A Ride to Taunka'le Village |QID|11888|M|41.7,54.7|
 A Too Close For Comfort |QID|11574|M|41.7,54.7|
 A To Bor'gorok Outpost, Quickly! |QID|12486|M|41.6,53.5|
-f Warsong Hold |QID|11636|N|The lift is hard to find. Go up the stairs behind Hellscream, and sit at the top. Don't walk forwards onto the circular area. The lift is an area on top of the stairs, and perfectly matches the rest of the floor. It's a pain to find.|M|40.4,51.4|
+; f Warsong Hold |QID|11636|N|The lift is hard to find. Go up the stairs behind Hellscream, and sit at the top. Don't walk forwards onto the circular area. The lift is an area on top of the stairs, and perfectly matches the rest of the floor. It's a pain to find.|M|40.4,51.4|
 T Wind Master To'bor |QID|11634| |N|Head straight SE, go in a straight line.|M|42.3,54.9|
 A Magic Carpet Ride |QID|11636|M|42.3,54.9|
 
@@ -228,7 +228,7 @@ A Hellscream's Champion |QID|11916|M|41.3,53.6|
 R Taunka'le Village |QID|11890|N|Talk to Durkot Wolfbrother, he's in the stables SW of Hellscream. Click the text, and you'll get carried to the Village. |M|40.4,54.8|
 
 T Ride to Taunka'le Village |QID|11888|M|77.3,38.5|
-f Taunka'le Village|QID|111888|M|77.75,37.77|Z|Borean Tundra|
+; f Taunka'le Village|QID|111888|M|77.75,37.77|Z|Borean Tundra|
 A What Are They Up To? |QID|11890|M|77.3,38.5|
 A Scouting the Sinkholes |QID|11684|M|77.1,37.8|
 T Hellscream's Champion |QID|11916|M|75.9,37.2|
@@ -384,7 +384,7 @@ N Kill on Sight |QID|11866|N|You want to kill Loot Crazed Poachers, Loot Crazed 
 C Unfit for Death |QID|11865| |N|In the field south of the camp. Stand on the traps and use the furs.| |U|35127|M|56.2,50.5|
 C Happy as a Clam |QID|11869| |N|Go to the lake at , and do it as you go west through the lake.|M|53,45|
 C Ned, Lord of Rhinos... |QID|11884| |N|He's up on the bluffs around , he patrols around. Kill him, he's easy for an elite.|M|47,44|
-f Amber Ledge |QID|11868|N|It's to the north. |M|45.3,34.5|
+; f Amber Ledge |QID|11868|N|It's to the north. |M|45.3,34.5|
 C Help Those That Cannot Help Themselves |QID|11876|U|35228|N|They can be found around the area just east of the grey area around Amber Ledge. Stand next to the traps and use the Trap Smasher. |M|55,41|
 C Ears of Our Enemies |QID|11866|N|They drop off Loot Crazed Divers/Hunters/Poachers|M|53.4,42.7|
 
@@ -587,7 +587,7 @@ C Cracking the Code |QID|11931| |N|Head north to the blue circle at . Inquisitor
 T Cracking the Code |QID|11931|M|33.3,34.5|
 F Amber Ledge|QID|11591|
 
-f Bor'gorok Outpost |QID|11591|N|Follow the road north to .|M|50,11|
+; f Bor'gorok Outpost |QID|11591|N|Follow the road north to .|M|50,11|
 A Report to Steeljaw's Caravan |QID|11591|
 T To Bor'gorok Outpost, Quickly! |QID|12486|M|50.3,9.7|
 A The Sky Will Know |QID|11624|M|50.3,9.7|

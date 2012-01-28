@@ -69,11 +69,11 @@ return [[
 R Fairbreeze Village |QID|9144|LEAD|8473|M|44.06,70.73|N|This guide begins at Fairbreeze Village, which is south-west of Silvermoon City in Eversong Woods.\n\nThere will be a few quests in Eversong Woods first, as this leads to quests in the Ghostlands.|
 
 A Missing in the Ghostlands |QID|9144|M|44.06,70.73|N|From Magistrix Landra Dawnstrider.|Z|Eversong Woods|
-A Runewarden Deryan|QID|9253|PRE|9252|M|46.92,71.81|N|From Ranger Sareyn. \n\nYou have to have done the quest Defending Fairbreeze to get this, but you'll be able to get the follow up to this regardless of whether you do it.|Z|Eversong Woods|
-T Runewarden Deryan|QID|9253|PRE|9252|M|44.20,85.46|N|To Runewarden Deryan.|Z|Eversong Woods|
-A Powering our Defences |QID|8490|M|44.20,85.46|N|From Runewarden Deryan.|Z|Eversong Woods|
-C Powering our Defences |QID|8490|U|22693|N|Head to the Runestone Shan'dor, then use the Infused Crystal.  You will then need to defend the crystal against two sets of 3 Enraged Wraiths.|Z|Eversong Woods|M|55,84|
-T Powering our Defences |QID|8490|M|44.20,85.46|N|Back to Runewarden Deryan.|Z|Eversong Woods|
+A Runewarden Deryan|QID|9253|M|46.92,71.81|N|From Ranger Sareyn. You have to have done the quest Defending Fairbreeze to get this, but you'll be able to get the follow up to this regardless of whether you do it.|Z|Eversong Woods|
+T Runewarden Deryan|QID|9253|N|To Runewarden Deryan. Head south along the road to the Ghostlands, then go west when you hit the Dead Scar.|Z|Eversong Woods|M|44,85|
+A Powering our Defences |QID|8490|N|From Runewarden Deryan. If you couldn't get the "Runewarden Deryan" quest.|Z|Eversong Woods|M|44,85|
+C Powering our Defences |QID|8490|U|22693|N|Head east. Get full HP/mana. Use the infused crystal and defend it.|Z|Eversong Woods|M|55,84|
+T Powering our Defences |QID|8490|N|Back to Runewarden Deryan.|Z|Eversong Woods|M|44,85|
 
 T Missing in the Ghostlands |QID|9144|N|To Courier Dawnstrider.|Z|Eversong Woods|M|48,88|
 A The Fallen Courier|QID|9147|M|49,89|N|From Apothecary Thedra|Z|Eversong Woods|
@@ -223,7 +223,7 @@ K Bring Me Kel'gash's Head!|QID|9215|L|22640 |M|65.33,79.51|N|If you feel that y
 U Poison the Smoked Meat Rack|QID|9275|US|U|22796|QO|Poison the Smoked Meat Rack: 1/1|M|62.82,75.13|N|Poison the Smoked Meat Rack.|
 U Poison the Fresh Fish Rack|QID|9275|US|U|22796|QO|Poison the Fresh Fish Rack: 1/1|M|68.22,57.85|N|Poison the Fresh Fish Rack.|
 
-f Hatchet Hills|M|63.93,61.44;74.72,67.05|N|At Kiz Coilspanner.|
+; f Hatchet Hills|M|63.93,61.44;74.72,67.05|N|At Kiz Coilspanner.|
 H Tranquilien|QID|9193|U|6948|N|Hearth back to Tranquilien or fly there if you want to save your hearth.|
 A The Sanctum of the Sun|QID|9151|M|46.04,31.97|N|From Magister Darenis.|
 T Troll Juju|QID|9199|M|44.84,32.32|N|To Deathstalker Maltendis.|
@@ -291,17 +291,17 @@ A Envoy to the Horde|QID|9812|M|53.98,20.42|R|Orc,Troll,Tauren,Undead,Goblin|Z|S
 R Undercity|QID|9180|M|49.49,14.76|Z|Silvermoon City|N|Go to the room behind Lor'themar, and click on the Orb of Translocation.|
 
 A Warchief's Command: Hillsbrad Foothills!|QID|28571|M|66.03,49.64|Z|Undercity|N|From the Warchief's Command Board.|
-f Trade Quarter|QID|28571|M|63.51,48.54|Z|Undercity|N|At Michael Garrett.|
+; f Trade Quarter|QID|28571|M|63.51,48.54|Z|Undercity|N|At Michael Garrett.|
 T Envoy to the Horde|QID|9621|M|57.59,91.64|R|BloodElf|Z|Undercity|N|To Lady Sylvanas Windrunner.|
 T Envoy to the Horde|QID|9812|M|57.59,91.64|R|Orc,Troll,Tauren,Undead,Goblin|Z|Undercity|N|To Lady Sylvanas Windrunner.|
 T Journey to Undercity|QID|9180|M|57.59,91.64|R|BloodElf|Z|Undercity|N|To Lady Sylvanas Windrunner.|
 T Journey to Undercity|QID|9177|M|57.59,91.64|R|Orc,Troll,Undead,Tauren,Goblin|N|From High Executor Mavren.|
 N Next guide|QID|28571|Z|Undercity|N|The end of this guide is taking you to Hillsbrad Foothillsas well as get flightpoints.  If you don't want to do that zone, go ahead and choose which zone you want.  Right-click this step to continue.|
 
-f Brill|QID|28571|M|58.89,52.00|Z|Tirisfal Glades|N|At Anette Williams.|
-f The Sepulcher|QID|28571|M|45.41,42.49|Z|Silverpine Forest|N|At Karos Razok.|
-f The Forsaken Front|QID|28571|M|50.90,63.69|Z|Silverpine Forest|N|At Steven Stutzka.|
-f Southpoint Gate|QID|28571|M|29.11,64.38|Z|Hillsbrad Foothills|N|At Pamela Stutzka.|
+; f Brill|QID|28571|M|58.89,52.00|Z|Tirisfal Glades|N|At Anette Williams.|
+; f The Sepulcher|QID|28571|M|45.41,42.49|Z|Silverpine Forest|N|At Karos Razok.|
+; f The Forsaken Front|QID|28571|M|50.90,63.69|Z|Silverpine Forest|N|At Steven Stutzka.|
+; f Southpoint Gate|QID|28571|M|29.11,64.38|Z|Hillsbrad Foothills|N|At Pamela Stutzka.|
 
 ]]
 

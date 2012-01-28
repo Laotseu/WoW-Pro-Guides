@@ -79,7 +79,7 @@ N Cold Weather Flying|QID|11672|N|Purchase Cold Weather Flying from Bralla Cloud
 A Hero's Call: Northrend! |QID|28709|N|From the Hero's Callboard in Darnassus, Ironforge, or either Callboard in Stormwind City.  May not show if your level is too high.|M|62.9,71.7|Z|Stormwind City|
 R Stormwind Harbor |QID|11672|N|Go to Stormwind Harbor.|Z|Stormwind City|M|27.06,25.50|
 b Valiance Keep |QID|11672|N|Take the boat from the north dock to get to Valiance Keep.|Z|Stormwind City|M|18.01,25.48|
-f Valiance Keep |QID|11672|N|Get the flight path at Valiance Keep.|M|58.94,68.30|
+; f Valiance Keep |QID|11672|N|Get the flight path at Valiance Keep.|M|58.94,68.30|
 T Hero's Call: Northrend!|QID|28709|N|To Recruitment Officer Blythe.|M|57.9,67.7|
 A Enlistment Day |QID|11672|M|57.8,67.7|N|From Recruitment Officer Blythe.|
 T Enlistment Day |QID|11672|N|Upstairs into the keep. Then turn the quest into General Arlos.|M|56.7,72.6|
@@ -177,7 +177,7 @@ C Ears of Our Enemies |QID|11866|N|Kill Loot Crazed enemies south of D.E.H.T.A.|
 C Unfit for Death |QID|11865|U|35127|N|In the field south of the camp, find traps and use the Fake Furs on them to complete this quest.|M|57.57,45.49|
 C Help Those That Cannot Help Themselves |QID|11876|U|35228|N|Go east and use the D.E.H.T.A. Trap Smasher on Trapped Mammoth Calves.|M|53.73,39.87|S|
 C Happy as a Clam |QID|11869|N|Go west to Lake Kum'uya and kill 10 Loot Crazed Divers.|M|53.04,46.21|
-C Ned, Lord of Rhinos... |QID|11884|N|Go west of the lake and look for Nedar, Lord of Rhinos on his mount.|M|47.19,40.14|
+C Ned, Lord of Rhinos... |QID|11884|T|"Lunchbox"|N|Go west of the lake and look for Nedar, Lord of Rhinos on his mount.|M|47.19,40.14|
 C Help Those That Cannot Help Themselves |QID|11876|U|35228|N|Go east and use the D.E.H.T.A. Trap Smasher on Trapped Mammoth Calves.|M|53.73,39.87|US|
 C Ears of Our Enemies |QID|11866|N|Kill Loot Crazed enemies south of D.E.H.T.A.|M|57.57,45.49|US|
 T Unfit for Death |QID|11865|N|To Zaza at the D.E.H.T.A. Encampment.|M|56.80,44.03|
@@ -196,7 +196,7 @@ C Kaw the Mammoth Destroyer |QID|11879|N|Find a Wooly Mammoth Bull and right-cli
 K Robots |QID|11729|L|34984|N|Kill robots in this area until one drops The Ultrasonic Screwdriver.|M|58.27,22.84|
 A The Ultrasonic Screwdriver |QID|11729|U|34984|N|Right-click The Ultrasonic Screwdriver and accept the quest.|M|58.5,17.6|
 R Fizzcrank Airstrip |QID|11707|M|57,20|
-f Fizzcrank Airstrip |QID|11707|N|Get the flight path at Fizzcrank Airstrip.|M|56.58,20.06|
+; f Fizzcrank Airstrip |QID|11707|N|Get the flight path at Fizzcrank Airstrip.|M|56.58,20.06|
 T Distress Call |QID|11707|N|Inside the inn on the second floor.|M|57.03,18.71|
 A The Mechagnomes |QID|11708|N|From Fizzcrank Fullthrottle|M|57.03,18.71|
 C The Mechagnomes |QID|11708|N|Listen to Fizzcrank Fullthrottle until the quest completes.|M|57.03,18.71|
@@ -274,7 +274,7 @@ T Hampering Their Escape |QID|11617|N|To Etaruk|M|54.3,36.1|
 A A Visit to the Curator |QID|11623|N|From Etaruk|M|54.3,36.1|
 C Leading the Ancestors Home |QID|11610|U|34715|N|Use the Tuskarr Ritual Object at each of the Elders' stones you were previously at.|M|52.84,34.05;50.81,32.38;52.32,31.19|
 C A Visit to the Curator |QID|11623|N|Kill Curator Insivius on the landed platform.|M|50.08,32.73|
-f Amber Ledge |QID|11623|N|Get the flight path at Amber Ledge.|M|45.32,34.59|
+; f Amber Ledge |QID|11623|N|Get the flight path at Amber Ledge.|M|45.32,34.59|
 T A Visit to the Curator |QID|11623|N|To Etaruk.|M|54.3,36.1|
 T Leading the Ancestors Home |QID|11610|N|To Elder Atkanok.|M|54.69,35.69|
 T The Abandoned Reach |QID|11870|N|To Hierophant Liandra.|M|57.79,55.10|
@@ -340,7 +340,7 @@ A Travel to Moa'ki Harbor |QID|12117|N|From Hotawa.|M|67.27,54.87|
 R Unu'pe |QID|11788|M|77.5,51|
 
 r Sell junk, repair and re-stock food/drink.|QID|11788|M|77.91,52.51|
-f Unu'pe |QID|11788|N|Get the flight path at Unu'pe from Bilko Driftspark.|M|78.53,51.53|
+; f Unu'pe |QID|11788|N|Get the flight path at Unu'pe from Bilko Driftspark.|M|78.53,51.53|
 F Fizzcrank Airstrip |QID|11788|N|Fly to Fizzcrank Airstrip.|
 T Lefty Loosey, Righty Tighty |QID|11788|N|To Jinky Wingnut.|M|57.45,18.74|
 A The Gearmaster |QID|11798|N|From Jinky Wingnut.|M|57.45,18.74|
@@ -529,7 +529,7 @@ F Amber Ledge |QID|11704|N|Fly to Amber Ledge or take a free teleport from Libra
 C Plan B |QID|11658|N|Grab the Warsong Banner here and loot 10 Warsong Outfits from the bodies around the area.|M|49.57,26.55|
 T King Mrgl-Mrgl |QID|11704|N|Go north to the road, then follow it east to Winterfin Retreat.|M|43.50,13.97|
 A Learning to Communicate |QID|11571|N|From King Mrgl-Mrgl.|M|43.50,13.97|
-C Learning to Communicate |QID|11571|U|34598|N|Kill Scalder at the bottom of the sea. Target his corpse and use the conch. Scalder is immune to frost.|M|42.53,15.85|
+C Learning to Communicate |QID|11571|U|34598|T|Scalder|N|Kill Scalder at the bottom of the sea. Target his corpse and use the conch. Scalder is immune to frost.|M|42.53,15.85|
 T Learning to Communicate |QID|11571|N|To King Mrgl-Mrgl.|M|43.50,13.97|
 A Winterfin Commerce |QID|11559|N|From King Mrgl-Mrgl.|M|43.50,13.97|
 C Winterfin Commerce |QID|11559|N|Swim across the water and loot 5 Winterfin Clams off the ground. The murlocs here can also drop them.|M|41.55,17.35|
@@ -577,10 +577,10 @@ T Monitoring the Rift: Winterfin Cavern |QID|12728|N|To Librarian Garren.|M|44.9
 N Done with Borean Tundra, but... |N|That concludes Borean Tundra, but if you plan on continuing with Jame's guide, follow the next few steps right to the end to get to Valgarde Keep.|
 F Unu'pe |QID|12117|N|Fly to Unu'pe.|M|45.26,34.42|
 b Moa'ki Harbor |QID|12117|N|Take the turtle to Moa'ki Harbor in Dragonblight.|M|78.91,53.67|
-f Moa'ki Harbor |QID|12117|N|Get the flight path at Moa'ki Harbor.|Z|Dragonblight|M|48.51,74.39|
+; f Moa'ki Harbor |QID|12117|N|Get the flight path at Moa'ki Harbor.|Z|Dragonblight|M|48.51,74.39|
 T Travel to Moa'ki Harbor |QID|12117|N|To Ko'nani|Z|Dragonblight|M|48.01,74.88|
 b Kamagua |QID|11228|N|Use the pier on your left-hand side to travel to Kamagua.|Z|Dragonblight|M|49.63,78.42|
-f Kamagua |QID|11228|N|Get the flight path at Kamagua.|Z|Howling Fjord|M|24.66,57.78|
+; f Kamagua |QID|11228|N|Get the flight path at Kamagua.|Z|Howling Fjord|M|24.66,57.78|
 R Valgarde |QID|11228|N|Take the Ancient Lift, then follow the waypoint arrows.|Z|Howling Fjord|M|24.70,62.27;44.3,59.1;46,50;51,44.67;52.3,47.8;59.6,61.0|
 
 ]]
