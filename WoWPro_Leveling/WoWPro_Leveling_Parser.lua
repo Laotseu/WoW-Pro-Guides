@@ -3,82 +3,81 @@
 -------------------------------------------------------------------------------
 local _G = getfenv(0)
 
---local WoWProDB = _G.WoWProDB
---local WoWProCharDB = _G.WoWProCharDB
-
 local _
-local assert = _G.assert
-local floor = _G.floor
-local math = _G.math
-local setmetatable = _G.setmetatable
-local string = _G.string
-local strreplace = _G.strreplace
-local strsplit = _G.strsplit
-local strtrim = _G.strtrim
-local strupper = _G.strupper
-local tonumber = _G.tonumber
-local tostring = _G.tostring
-local type = _G.type
+local assert							= _G.assert
+local floor								= _G.floor
+local math								= _G.math
+local setmetatable					= _G.setmetatable
+local string							= _G.string
+local strreplace						= _G.strreplace
+local strsplit							= _G.strsplit
+local strtrim							= _G.strtrim
+local strupper							= _G.strupper
+local tonumber							= _G.tonumber
+local tostring							= _G.tostring
+local type								= _G.type
 
-local table = _G.table
-local ipairs = _G.ipairs
-local pairs = _G.pairs
-local select = _G.select
-local tinsert = _G.tinsert
-local wipe = _G.wipe
+local table								= _G.table
+local ipairs							= _G.ipairs
+local pairs								= _G.pairs
+local select							= _G.select
+local tinsert							= _G.tinsert
+local wipe								= _G.wipe
 
-local ERR_NEWTAXIPATH = _G.ERR_NEWTAXIPATH
+local ERR_NEWTAXIPATH				= _G.ERR_NEWTAXIPATH
 
-local AcceptQuest = _G.AcceptQuest
-local ClearOverrideBindings = _G.ClearOverrideBindings
-local CompleteQuest = _G.CompleteQuest
-local CreateFrame = _G.CreateFrame
-local GetActiveTitle = _G.GetActiveTitle
-local GetAvailableTitle = _G.GetAvailableTitle
-local GetBindingKey = _G.GetBindingKey
-local GetGossipActiveQuests = _G.GetGossipActiveQuests
-local GetGossipAvailableQuests = _G.GetGossipAvailableQuests
-local GetItemCooldown = _G.GetItemCooldown
-local GetItemCount = _G.GetItemCount
-local GetItemIcon = _G.GetItemIcon
-local GetItemInfo = _G.GetItemInfo
-local GetNumActiveQuests = _G.GetNumActiveQuests
-local GetNumAvailableQuests = _G.GetNumAvailableQuests
-local GetNumPartyMembers = _G.GetNumPartyMembers
-local GetNumQuestLeaderBoards = _G.GetNumQuestLeaderBoards
-local GetNumQuestLogEntries = _G.GetNumQuestLogEntries
-local GetQuestID = _G.GetQuestID
-local GetQuestLink = _G.GetQuestLink
-local GetQuestLogLeaderBoard = _G.GetQuestLogLeaderBoard
-local GetQuestLogSpecialItemInfo = _G.GetQuestLogSpecialItemInfo
-local GetQuestLogTitle = _G.GetQuestLogTitle
-local GetSpellAvailableLevel = _G.GetSpellAvailableLevel
-local GetSpellBookItemInfo = _G.GetSpellBookItemInfo
-local GetSpellBookItemName = _G.GetSpellBookItemName
-local GetSubZoneText = _G.GetSubZoneText
-local GetTitleText = _G.GetTitleText
-local GetZoneText = _G.GetZoneText
-local InCombatLockdown = _G.InCombatLockdown
-local IsInInstance = _G.IsInInstance
-local IsShiftKeyDown = _G.IsShiftKeyDown
-local PlaySoundFile = _G.PlaySoundFile
-local QuestLogPushQuest = _G.QuestLogPushQuest
-local QuestLog_OpenToQuest = _G.QuestLog_OpenToQuest
-local QuestMapUpdateAllQuests = _G.QuestMapUpdateAllQuests
-local QuestPOIGetIconInfo = _G.QuestPOIGetIconInfo
-local QuestPOIUpdateIcons = _G.QuestPOIUpdateIcons
-local SelectActiveQuest = _G.SelectActiveQuest
-local SelectAvailableQuest = _G.SelectAvailableQuest
-local SelectGossipActiveQuest = _G.SelectGossipActiveQuest
-local SelectGossipAvailableQuest = _G.SelectGossipAvailableQuest
-local SetOverrideBinding = _G.SetOverrideBinding
-local UnitClass = _G.UnitClass
-local UnitFactionGroup = _G.UnitFactionGroup
-local UnitLevel = _G.UnitLevel
-local UnitRace = _G.UnitRace
-local UnitSex = _G.UnitSex
+local AcceptQuest						= _G.AcceptQuest
+local ClearOverrideBindings		= _G.ClearOverrideBindings
+local CompleteQuest					= _G.CompleteQuest
+local CreateFrame						= _G.CreateFrame
+local GetActiveTitle					= _G.GetActiveTitle
+local GetAvailableTitle				= _G.GetAvailableTitle
+local GetBindingKey					= _G.GetBindingKey
+local GetGossipActiveQuests		= _G.GetGossipActiveQuests
+local GetGossipAvailableQuests	= _G.GetGossipAvailableQuests
+local GetItemCooldown				= _G.GetItemCooldown
+local GetItemCount					= _G.GetItemCount
+local GetItemIcon						= _G.GetItemIcon
+local GetItemInfo						= _G.GetItemInfo
+local GetNumActiveQuests			= _G.GetNumActiveQuests
+local GetNumAvailableQuests		= _G.GetNumAvailableQuests
+local GetNumPartyMembers			= _G.GetNumPartyMembers
+local GetNumQuestLeaderBoards 	= _G.GetNumQuestLeaderBoards
+local GetNumQuestLogEntries 		= _G.GetNumQuestLogEntries
+local GetQuestID 						= _G.GetQuestID
+local GetQuestLink 					= _G.GetQuestLink
+local GetQuestLogLeaderBoard 		= _G.GetQuestLogLeaderBoard
+local GetQuestLogSpecialItemInfo	= _G.GetQuestLogSpecialItemInfo
+local GetQuestLogTitle 				= _G.GetQuestLogTitle
+local GetSpellAvailableLevel 		= _G.GetSpellAvailableLevel
+local GetSpellBookItemInfo 		= _G.GetSpellBookItemInfo
+local GetSpellBookItemName 		= _G.GetSpellBookItemName
+local GetSubZoneText 				= _G.GetSubZoneText
+local GetTitleText 					= _G.GetTitleText
+local GetZoneText 					= _G.GetZoneText
+local InCombatLockdown 				= _G.InCombatLockdown
+local IsInInstance 					= _G.IsInInstance
+local IsShiftKeyDown 				= _G.IsShiftKeyDown
+local PlaySoundFile 					= _G.PlaySoundFile
+local QuestLogPushQuest 			= _G.QuestLogPushQuest
+local QuestLog_OpenToQuest 		= _G.QuestLog_OpenToQuest
+local QuestMapUpdateAllQuests 	= _G.QuestMapUpdateAllQuests
+local QuestPOIGetIconInfo 			= _G.QuestPOIGetIconInfo
+local QuestPOIUpdateIcons 			= _G.QuestPOIUpdateIcons
+local SelectActiveQuest 			= _G.SelectActiveQuest
+local SelectAvailableQuest 		= _G.SelectAvailableQuest
+local SelectGossipActiveQuest 	= _G.SelectGossipActiveQuest
+local SelectGossipAvailableQuest	= _G.SelectGossipAvailableQuest
+local SetOverrideBinding 			= _G.SetOverrideBinding
+local UnitClass 						= _G.UnitClass
+local UnitFactionGroup 				= _G.UnitFactionGroup
+local UnitLevel 						= _G.UnitLevel
+local UnitRace 						= _G.UnitRace
+local UnitSex 							= _G.UnitSex
 
-local LibStub = _G.LibStub
+local WoWPro_Locale 					= _G.WoWPro_Locale
+
+local LibStub 							= _G.LibStub
 
 local err_params = {}
 local function err(msg, ...)
@@ -95,7 +94,7 @@ end
 
 local WoWPro = LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 
-local L = _G.WoWPro_Locale
+local L = WoWPro_Locale
 WoWPro.Leveling.actiontypes = {
 	A = "Interface\\GossipFrame\\AvailableQuestIcon",
 	C = "Interface\\Icons\\Ability_DualWield",
@@ -140,24 +139,20 @@ function WoWPro.Leveling:NextStep(k, skip)
 
 	local GID = WoWProDB.char.currentguide
 
--- if k == 56 then err("skip = %s",skip) end
 	-- Optional Quests --
 	if WoWPro.optional[k] and WoWPro.QID[k] then
 
--- if k == 56 then err("skip = %s: optional",skip) end
 		-- Checking Quest Log --
 		if WoWPro.QuestLog[WoWPro.QID[k]] then
-			skip = false -- If the optional quest is in the quest log, it's NOT skipped --
-			WoWPro.prereq[k] = nil -- If the quest is in the log, the prereqs must already be met no matter
-											 -- what the guide say
+			skip = false 					-- If the optional quest is in the quest log, it's NOT skipped --
+			WoWPro.prereq[k] = nil		-- If the quest is in the log, the prereqs must already be met no matter
+												-- what the guide say
 		--end
--- if k == 56 then err("skip = %s: in quest log",skip) end
 
 		-- Checking Prerequisites --
 		elseif WoWPro.prereq[k] then
 			skip = false -- defaulting to NOT skipped
 
--- if k == 56 then err("skip = %s: got prereq",skip) end
 			local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
 			for j=1,numprereqs do
 				local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
@@ -165,8 +160,6 @@ function WoWPro.Leveling:NextStep(k, skip)
 					skip = true -- If one of the prereqs is NOT complete, step is skipped.
 				end
 			end
-
--- if k == 56 then err("skip = %s: prereq checked",skip) end
 
 			-- If it is skipped, mark the quest as skipped
 			if skip then
@@ -180,23 +173,21 @@ function WoWPro.Leveling:NextStep(k, skip)
 				end
 			end
 		end
-
 	end
 
 	-- Skipping quests with prerequisites if their prerequisite was skipped --
+	local steplist = ""
+
 	if WoWPro.prereq[k]
 	and not WoWProCharDB.completedQIDs[k]
 	and not WoWProCharDB.Guide[GID].skipped[k]
 	and not WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
--- if k == 56 then err("skip = %s: prereq with skip",skip) end
-
 
 		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
 		for j=1,numprereqs do
 			local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
 			if WoWProCharDB.skippedQIDs[tonumber(jprereq)] then
 				skip = true
--- if k == 56 then err("skip = %s: prereq was skiped",skip) end
 				-- If their prerequisite has been skipped, skipping any dependant quests --
 				if WoWPro.action[k] == "A"
 				or WoWPro.action[k] == "C"
@@ -215,10 +206,8 @@ function WoWPro.Leveling:NextStep(k, skip)
 	    if tonumber(WoWPro.level[k]) <= UnitLevel("player") then
 		    skip = true
 	    end
--- if k == 56 then err("skip = %s: loot check",skip) end
 	end
 
--- if k == 56 then err("skip = %s: before return",skip) end
 	return skip
 end
 
