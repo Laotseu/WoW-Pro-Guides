@@ -302,9 +302,9 @@ function WoWPro:NextStep(k,i)
 	while skip do repeat
 
 		skip = false -- The step deaults to NOT skipped
-		
+
 		-- Quickly skip completed steps --
-		if WoWProCharDB.Guide[GID].completion[k] then 
+		if WoWProCharDB.Guide[GID].completion[k] then
 			skip = true
 			break
 		end
@@ -344,7 +344,7 @@ function WoWPro:NextStep(k,i)
 							if skillRank >= proflvl then
 								skip = false -- The step is NOT skipped if the skill is present at the correct level or higher
 							end
-							hasProf = true							
+							hasProf = true
 						end
 					end
 				end
@@ -398,8 +398,8 @@ function WoWPro:NextStep(k,i)
 			end
 			if (replvl > 0) then
 				replvl = bottomValue + replvl
-				if (repID > standingId) then 
-					skip = false 
+				if (repID > standingId) then
+					skip = false
 				end
 				if (repID == standingId) and (earnedValue <= replvl) then
                             		skip = false
@@ -411,17 +411,17 @@ function WoWPro:NextStep(k,i)
 			    WoWProCharDB.skippedQIDs[WoWPro.QID[k]] = true
 			end
       end
-		
+
 		-- Skipping any quests with a greater completionist rank than the setting allows --
 		if not skip and WoWPro.rank[k] then
-			if tonumber(WoWPro.rank[k]) > WoWProDB.profile.rank then 
-				skip = true 
+			if tonumber(WoWPro.rank[k]) > WoWProDB.profile.rank then
+				skip = true
 			end
 		end
-		
+
 		-- We call the module NextStep no matter what in case it wants to reverse the decision
 		skip = WoWPro[WoWPro.Guides[GID].guidetype]:NextStep(k, skip)
-		
+
 		-- Skipping any manually skipped quests --
 		if WoWProCharDB.Guide[GID].skipped[k] then
 			skip = true
@@ -429,12 +429,12 @@ function WoWPro:NextStep(k,i)
 			WoWProCharDB.Guide[GID].skipped[k] = true
 			skip = true
 		end
-		
+
 		-- Skipping any unstickies until it's time for them to display --
-		if WoWPro.unsticky[k] and WoWPro.ActiveStickyCount and i > WoWPro.ActiveStickyCount+1 then 
-			skip = true 
+		if WoWPro.unsticky[k] and WoWPro.ActiveStickyCount and i > WoWPro.ActiveStickyCount+1 then
+			skip = true
 		end
-		
+
 		until true
 		if skip then k = k+1 end
 
@@ -498,7 +498,7 @@ function WoWPro.CompleteStep(step, skipUIUpdate)
 	end
 
 	WoWPro:MapPoint()
-	WoWPro:UpdateGuide() 
+	WoWPro:UpdateGuide()
 end
 
 WoWPro.oldQuests = AcquireTable()
@@ -539,10 +539,10 @@ function WoWPro:PopulateQuestLog()
 			currentHeader = questTitle
 		else
 			if GetNumQuestLeaderBoards(i) and GetQuestLogLeaderBoard(1, i) then
-				leaderBoard = {} 
-				for j=1,GetNumQuestLeaderBoards(i) do 
+				leaderBoard = {}
+				for j=1,GetNumQuestLeaderBoards(i) do
 					leaderBoard[j] = GetQuestLogLeaderBoard(j, i)
-				end 
+				end
 			else leaderBoard = nil end
 			local link, icon, charges = GetQuestLogSpecialItemInfo(i)
 			local use
