@@ -115,19 +115,21 @@ A Hunting the Huntress|QID|903|RANK|1|M|50.01,59.78|N|From Sergra Darkthorn.|
 
 r Train, Repair and Restock|QID|28876|
 
+C The Zhevra|QID|845|S|M|48.43,54.63|N|From now on, Kill Zhevra Runners and Savannah Huntress.|
+C Hunting the Huntress|QID|903|S|M|40.44,50.89|N|Finish killing Huntresses for their claws.|
+C Fungal Spores|QID|848|S|NC|M|36.49,46.65|N|Collect 5 Fungal Spores from mushrooms at the Forgotten Pools.|
 A Kolkar Leaders|QID|850|RANK|2|M|38.02,46.68|N|From Telar Highstrider.|
 A A Little Diversion|QID|13992|RANK|2|M|37.49,45.85|N|From Ta'jari.|
 
-C The Zhevra|QID|845|S|M|48.43,54.63|N|From now on, Kill Zhevra Runners and Savannah Huntress.|
-C A Little Diversion|QID|13992|S|M|34.77,46.88|N|Loot Fungal Spores and kill Kolkar Centaur while doing the next few quests.|
-C Fungal Spores|QID|848|M|36.49,46.65|N|Collect 5 Fungal Spores from mushrooms at the Forgotten Pools.|
+C A Little Diversion|QID|13992|S|M|34.77,46.88|N|Kill Kolkar Centaur while doing the next few quests.|
 C The Forgotten Pools|QID|870|NC|M|37.25,45.01|N|Search the bottom of the Forgotten Pools northwest of Crossroads.|
+C Fungal Spores|QID|848|US|NC|M|36.49,46.65|N|Collect 5 Fungal Spores from mushrooms at the Forgotten Pools.|
 C Kolkar Leaders|QID|850|M|33.40,46.68|N|Slay Barak Kodobane and collect his head.|
 C A Little Diversion|QID|13992|US|M|34.77,46.88|N|Kill 8 Kolkar Centaur.|
 
 T A Little Diversion|QID|13992|M|37.53,45.90|N|To Ta'jari.|
 T Kolkar Leaders|QID|850|M|38.06,46.32|N|To Telar Highstrider.|
-C Hunting the Huntress|QID|903|M|40.44,50.89|N|Finish killing Huntresses for their claws.|
+C Hunting the Huntress|QID|903|US|M|40.44,50.89|N|Finish killing Huntresses for their claws.|
 C The Zhevra|QID|845|US|M|48.43,54.63|N|Finish killing Zhevra for hooves.|
 
 T Fungal Spores|QID|848|M|48.62,58.27|N|To Apothecary Helbrim.|
@@ -135,7 +137,7 @@ A In Fungus We Trust|QID|13998|PRE|848|RANK|1|M|48.62,58.27|N|From Apothecary He
 T The Forgotten Pools|QID|870|M|49.43,58.64|N|To Tonga Runetotem.|
 
 A A Growing Problem|QID|13988|PRE|870|RANK|1|M|49.43,58.64|N|From Tonga Runetotem.|
-C A Growing Problem|QID|13988|U|46782|M|49.43,58.64|
+C A Growing Problem|QID|13988|S|U|46782|M|49.43,58.64|
 
 T The Zhevra|QID|845|M|49.97,59.79|N|To Sergra Darkthorn.|
 T Hunting the Huntress|QID|903|M|49.97,59.79|N|To Sergra Darkthorn.|
@@ -154,6 +156,7 @@ C King of Centaur Mountain|QID|13995|NC|M|54.37,78.36|N|Escort quest. Follow Gor
 T King of Centaur Mountain|QID|13995|M|55.15,78.43|N|To Shoe.|
 
 C In Fungus We Trust|QID|13998|NC|U|46789|M|54.94,80.12|N|Use the Fungal Cultures near the Stagnant Oasis.|
+C A Growing Problem|QID|13988|US|U|46782|M|49.43,58.64|
 T A Growing Problem|QID|13988|M|58.77,81.07;60.73,85.38|N|Go up the mountain path to Jerrik Highmountain.|
 
 A The Stagnant Oasis|QID|877|PRE|13988|RANK|1|M|60.73,85.38|N|From Jerrik Highmountain.|
