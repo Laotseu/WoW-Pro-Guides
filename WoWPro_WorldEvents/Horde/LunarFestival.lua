@@ -156,11 +156,12 @@ A Tauros the Elder|N|From Elder Tauros.|QID|13027|M|58.8,56|Z|Zul'Drak|
 R Gundrak|N|Head inside of Gundrak.|QID|13065|M|76.43,21.43|Z|Zul'Drak|
 A Ohanzee the Elder|N|From Elder Ohanzee.|QID|13065|M|45.6,62|Z|Gundrak|
 
-R Camp Tunka'lo|N|Leave Gundrak and head over to Camp Tunka'lo.|QID|13032|M||Z|The Storm Peaks|
+R Camp Tunka'lo|N|Leave Gundrak and head over to Camp Tunka'lo.|QID|13032|M|65.4,50.7|Z|The Storm Peaks|
 A Muraco the Elder|N|From Elder Muraco.|QID|13032|M|64.6,51.2|Z|The Storm Peaks|
 F Ulduar|QID|13066|M|65.4,50.6|N|Fly to Ulduar in The Storm Peaks.|Z|The Storm Peaks|
-R Halls of Stone|N|Run into the Halls of Stone.|QID|13066|M|39.57,26.92|Z|The Storm Peaks|
-A Yurauk the Elder|N|From Elder Yurauk.|QID|13066|M|29.4,61.6|Z|Halls of Stone|
+R Halls of Stone|N|Run into the Halls of Stone.|QID|13066|M|39.57,26.92|Z|The Storm Peaks|RANK|3|
+A Yurauk the Elder|N|From Elder Yurauk.|QID|13066|M|29.4,61.6|Z|Halls of Stone|RANK|3|
+R The Storm Peaks |N|Exit the Halls of Stone|M|34.4, 36.2|Z|Halls of Stone|RANK|3|
 A Stonebeard the Elder|N|From Elder Stonebeard.|QID|13020|M|31.2,37.6|Z|The Storm Peaks|
 A Fargal the Elder|N|From Elder Fargal.|QID|13015|M|28.8,73.6|Z|The Storm Peaks|T|Elder Fargal|
 A Graymane the Elder|N|From Elder Graymane.|QID|13028|M|41,84.6|Z|The Storm Peaks|
@@ -168,8 +169,8 @@ A Graymane the Elder|N|From Elder Graymane.|QID|13028|M|41,84.6|Z|The Storm Peak
 F Agmar's Hammer|N|Fly to Agmar's Hammer in Dragonblight.|QID|13014|M|40.6,84.6|Z|The Storm Peaks|
 A Skywarden the Elder|N|From Elder Skywarden.|QID|13031|M|35,48.4|Z|Dragonblight|
 A Morthie the Elder|N|From Elder Morthie.|QID|13014|M|29.6,55.8|Z|Dragonblight|T|Elder Morthie|
-R Azjol-Nerub|N|Head inside of Azjol-Nerub.|QID|13022|M|25.99,50.86|Z|Dragonblight|
-A Nurgen the Elder|N|From Elder Nurgen.|QID|13022|M|21.8,44|Z|The Brood Pit|
+R Azjol-Nerub|N|Head inside of Azjol-Nerub.|QID|13022|M|25.99,50.86|Z|Dragonblight|RANK|3|
+A Nurgen the Elder|N|From Elder Nurgen. He is down the hole after second boss to the left side, sitting in a clearing.|QID|13022|M|21.8,43.7|Z|The Brood Pit|RANK|3|
 R Moa'ki Harbor|N|Run back out of Azjol-Nerub and head down to Moa'ki Harbor.|QID|13019|M|48.8,78|Z|Dragonblight|
 A Thoim the Elder|N|From Elder Thoim.|QID|13019|M|48.8,78|Z|Dragonblight|
 F Wintergrasp|N|Fly to Wintergrasp in Wintergrasp.|QID|13026|M|48.4,74.4|Z|Dragonblight|
@@ -179,11 +180,11 @@ F River's Heart|N|Fly to River's Heart in Sholazar Basin.|QID|13018|M|21.6,34.8|
 A Sandrene the Elder|N|From Elder Sandrene.|QID|13018|M|49.8,63.6|Z|Sholazar Basin|
 A Wanikaya the Elder|N|From Elder Wanikaya.|QID|13024|M|63.8,49|Z|Sholazar Basin|
 
-F Transitus Shield|N|Fly to the Transitus Shield in Borean Tundra.|QID|13016|M|50,61.4|Z|Sholazar Basin|
+F Transitus Shield|N|Fly to the Transitus Shield in Colderra.|QID|13016|M|50,61.4|Z|Sholazar Basin|
 A Northal the Elder|N|From Elder Northal.|QID|13016|M|33.6,34.2|Z|Borean Tundra|
 R The Nexus|N|Run into The Nexus.|QID|13021|M|27.5,26.09|Z|Borean Tundra|
 A Igasho the Elder|N|From Elder Igasho.|QID|13021|M|55.4,64.6|Z|The Nexus|
-R D.H.E.T.A Encampment|N|Head out of The Nexus and go to the D.H.E.T.A Encampment.|QID|13033|M|57.4,43.6|Borean Tundra|
+R D.E.H.T.A Encampment|N|Head out of The Nexus and go to the D.H.E.T.A Encampment.|QID|13033|M|57.4,43.6|Borean Tundra|
 A Arp the Elder|N|From Elder Arp.|QID|13033|M|57.4,43.6|Z|Borean Tundra|
 A Pamuya the Elder|N|From Elder Pamuya.|QID|13029|M|42.8,49.6|Z|Borean Tundra|
 A Sardis the Elder|N|From Elder Sardis.|QID|13012|M|59,65.5|Z|Borean Tundra|T|Elder Sardis|
