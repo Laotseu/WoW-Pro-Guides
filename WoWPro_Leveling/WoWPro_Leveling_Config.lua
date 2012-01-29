@@ -9,13 +9,16 @@ local InterfaceOptionsFrame_OpenToCategory = _G.InterfaceOptionsFrame_OpenToCate
 
 local LibStub = _G.LibStub
 
+local WoWPro_Locale = _G.WoWPro_Locale
+
+
 --------------------------------------
 --      WoWPro_Leveling_Config      --
 --------------------------------------
 
 local WoWPro = LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 
-local L = _G.WoWPro_Locale
+local L = WoWPro_Locale
 
 local config = LibStub("AceConfig-3.0")
 local dialog = LibStub("AceConfigDialog-3.0")
