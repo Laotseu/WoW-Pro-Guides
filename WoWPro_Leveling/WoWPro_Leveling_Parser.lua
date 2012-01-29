@@ -42,6 +42,7 @@ local GetItemInfo						= _G.GetItemInfo
 local GetNumActiveQuests			= _G.GetNumActiveQuests
 local GetNumAvailableQuests		= _G.GetNumAvailableQuests
 local GetNumPartyMembers			= _G.GetNumPartyMembers
+local GetNumQuestChoices			= _G.GetNumQuestChoices
 local GetNumQuestLeaderBoards 	= _G.GetNumQuestLeaderBoards
 local GetNumQuestLogEntries 		= _G.GetNumQuestLogEntries
 local GetQuestID 						= _G.GetQuestID
@@ -49,6 +50,7 @@ local GetQuestLink 					= _G.GetQuestLink
 local GetQuestLogLeaderBoard 		= _G.GetQuestLogLeaderBoard
 local GetQuestLogSpecialItemInfo	= _G.GetQuestLogSpecialItemInfo
 local GetQuestLogTitle 				= _G.GetQuestLogTitle
+local GetQuestReward					= _G.GetQuestReward
 local GetSpellAvailableLevel 		= _G.GetSpellAvailableLevel
 local GetSpellBookItemInfo 		= _G.GetSpellBookItemInfo
 local GetSpellBookItemName 		= _G.GetSpellBookItemName
@@ -144,14 +146,14 @@ function WoWPro.Leveling:NextStep(k, skip)
 
 		-- Checking Quest Log --
 		if WoWPro.QuestLog[WoWPro.QID[k]] then
-			skip = false 					-- If the optional quest is in the quest log, it's NOT skipped --
+			skip = nil	 					-- If the optional quest is in the quest log, it's NOT skipped --
 			WoWPro.prereq[k] = nil		-- If the quest is in the log, the prereqs must already be met no matter
 												-- what the guide say
 		--end
 
 		-- Checking Prerequisites --
 		elseif WoWPro.prereq[k] then
-			skip = false -- defaulting to NOT skipped
+			skip = nil						-- defaulting to NOT skipped
 
 			local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
 			for j=1,numprereqs do
@@ -176,13 +178,10 @@ function WoWPro.Leveling:NextStep(k, skip)
 	end
 
 	-- Skipping quests with prerequisites if their prerequisite was skipped --
-	local steplist = ""
-
 	if WoWPro.prereq[k]
 	and not WoWProCharDB.completedQIDs[k]
 	and not WoWProCharDB.Guide[GID].skipped[k]
 	and not WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
-
 		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
 		for j=1,numprereqs do
 			local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
@@ -212,87 +211,127 @@ function WoWPro.Leveling:NextStep(k, skip)
 end
 
 -- Skip a step --
+do -- closure
+
+-- Creating a local function in another function is like creating a table,
+-- it creates garbage. Best to create it only once.
+-- Even better, replace with a while loop (todo)
+local steplist = ""
+local function skipPrereqSteps(WoWPro, WoWProCharDB, GID, QID)
+	if not QID then return end
+
+	WoWProCharDB.skippedQIDs[QID] = true
+
+	for j = 1,WoWPro.stepcount do
+		if WoWPro.QID[j] == QID then
+			WoWProCharDB.Guide[GID].skipped[j] = true
+		end
+
+		if WoWPro.prereq[j] then
+			local numprereqs = select("#", string.split(";", WoWPro.prereq[j]))
+			for k=1,numprereqs do
+				local kprereq = select(numprereqs-k+1, string.split(";", WoWPro.prereq[j]))
+				if tonumber(kprereq) == QID then
+
+					if WoWPro.action[j] == "A" or
+						WoWPro.action[j] == "C" or
+						WoWPro.action[j] == "T" then
+
+						-- The QID was used in the |PRE| tag for another line,
+						-- we have a new QID to skip
+						skipPrereqSteps(WoWPro, WoWProCharDB, GID, WoWPro.QID[j])
+
+					end
+
+					steplist = steplist.."- "..WoWPro.step[j].."\n"
+				end
+			end
+		end
+	end
+end
+
 function WoWPro.Leveling:SkipStep(index)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	local GID = WoWProDB.char.currentguide
 
-	if not WoWPro.QID[index] then return "" end
-	if WoWPro.action[index] == "A"
-	or WoWPro.action[index] == "C"
-	or WoWPro.action[index] == "T" then
-		WoWProCharDB.skippedQIDs[WoWPro.QID[index]] = true
-		WoWProCharDB.Guide[GID].skipped[index] = true
-	else
-		WoWProCharDB.Guide[GID].skipped[index] = true
-	end
-	local steplist = ""
+	WoWProCharDB.Guide[GID].skipped[index] = true
 
-	local function skipstep(currentstep)
-		for j = 1,WoWPro.stepcount do
-			if WoWPro.prereq[j] then
-				local numprereqs = select("#", string.split(";", WoWPro.prereq[j]))
-				for k=1,numprereqs do
-					local kprereq = select(numprereqs-k+1, string.split(";", WoWPro.prereq[j]))
-					if tonumber(kprereq) == WoWPro.QID[currentstep]
-					and WoWProCharDB.skippedQIDs[WoWPro.QID[currentstep]] then
-						if WoWPro.action[j] == "A"
-						or WoWPro.action[j] == "C"
-						or WoWPro.action[j] == "T" then
-							WoWProCharDB.skippedQIDs[WoWPro.QID[j]] = true
-						end
-						steplist = steplist.."- "..WoWPro.step[j].."\n"
-						skipstep(j)
-					end
-				end
-			end
-		end
+	steplist = ""
+	if WoWPro.action[index] == "A" or
+		WoWPro.action[index] == "C" or
+		WoWPro.action[index] == "T" then
+
+		-- A step has been skiped, it's possible that it was a prereq for
+		-- another step. We must loop the step list to find and skip all the
+		-- others with that QID as a prereq. Each new step skiped can also be
+		-- a prereq to another and so, the list must be looped again.
+		skipPrereqSteps(WoWPro, WoWProCharDB, GID, WoWPro.QID[index])
+
 	end
 
-	skipstep(index)
 
 	WoWPro:MapPoint()
 	return steplist
 end
 
+end -- closure
+
 -- Unskip a step --
+do -- closure
+
+local function unskipPrereqSteps(WoWPro, WoWProCharDB, GID, QID)
+	if not QID then return end
+
+	WoWProCharDB.skippedQIDs[QID] = nil
+
+	for j = 1,WoWPro.stepcount do
+
+		if WoWPro.QID[j] and QID == WoWPro.QID[j] then
+			WoWProCharDB.Guide[GID].skipped[j] = nil
+		end
+
+		if WoWPro.prereq[j] then
+			local numprereqs = select("#", string.split(";", WoWPro.prereq[j]))
+			for k=1,numprereqs do
+				local kprereq = select(numprereqs-k+1, string.split(";", WoWPro.prereq[j]))
+				if tonumber(kprereq) == QID then
+					WoWProCharDB.Guide[GID].skipped[j] = nil
+					if WoWPro.action[j] == "A" or
+						WoWPro.action[j] == "C" or
+						WoWPro.action[j] == "T" then
+
+						-- We just unstickied a |PRE|, we must unstick the dep.
+						unskipPrereqSteps(WoWPro, WoWProCharDB, GID, WoWPro.QID[j])
+					end
+				end
+			end
+		end
+	end
+end
+
 function WoWPro.Leveling:UnSkipStep(index)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	local GID = WoWProDB.char.currentguide
 	WoWProCharDB.Guide[GID].completion[index] = nil
-	if WoWPro.QID[index]
-	and ( WoWPro.action[index] == "A"
-		or WoWPro.action[index] == "C"
-		or WoWPro.action[index] == "T" ) then
-			WoWProCharDB.skippedQIDs[WoWPro.QID[index]] = nil
-			WoWProCharDB.Guide[GID].skipped[index] = nil
-	else
-		WoWProCharDB.Guide[GID].skipped[index] = nil
+	WoWProCharDB.Guide[GID].skipped[index] = nil
+
+	if WoWPro.QID[index] and
+		( WoWPro.action[index] == "A" or
+		  WoWPro.action[index] == "C" or
+		  WoWPro.action[index] == "T" ) then
+
+		WoWProCharDB.skippedQIDs[WoWPro.QID[index]] = nil
+		unskipPrereqSteps(WoWPro, WoWProCharDB, GID, WoWPro.QID[index])
+
 	end
 
-	local function unskipstep(currentstep)
-		for j = 1,WoWPro.stepcount do if WoWPro.prereq[j] then
-			local numprereqs = select("#", string.split(";", WoWPro.prereq[j]))
-			for k=1,numprereqs do
-				local kprereq = select(numprereqs-k+1, string.split(";", WoWPro.prereq[j]))
-				if tonumber(kprereq) == WoWPro.QID[currentstep] then
-					if WoWPro.action[j] == "A"
-					or WoWPro.action[j] == "C"
-					or WoWPro.action[j] == "T" then
-						WoWProCharDB.skippedQIDs[WoWPro.QID[j]] = nil
-					end
-					WoWProCharDB.Guide[GID].skipped = {}
-					unskipstep(j)
-				end
-			end
-		end end
-	end
-
-	unskipstep(index)
 	WoWPro:UpdateGuide()
 	WoWPro:MapPoint()
 end
+
+end -- closure
 
 -- Quest parsing function --
 local function ParseQuests(...)
@@ -956,11 +995,11 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 	--end
 	elseif event == "PLAYER_LEVEL_UP" then
 		WoWPro.Leveling:AutoCompleteLevel(...)
-		WoWPro.Leveling.CheckAvailableSpells(...)
+--		WoWPro.Leveling.CheckAvailableSpells(...)
 --		WoWPro.Leveling.CheckAvailableTalents()
 	--end
-	elseif event == "TRAINER_UPDATE" then
-		WoWPro.Leveling.CheckAvailableSpells()
+--	elseif event == "TRAINER_UPDATE" then
+--		WoWPro.Leveling.CheckAvailableSpells()
 	end
 
 end
@@ -1176,30 +1215,30 @@ function WoWPro.Leveling:UpdateLootLines()
 end
 
 -- Auto-Complete: Loot based --
-function WoWPro.Leveling:AutoCompleteLoot(msg)
-	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
-
-	local lootqtyi
-	local _, _, itemid, name = msg:find(L["^You .*Hitem:(%d+).*(%[.+%])"])
-	itemid = tonumber(itemid)
-	local _, _, _, _, count = msg:find(L["^You .*Hitem:(%d+).*(%[.+%]).*x(%d+)."])
-	if count == nil then count = 1 end
-	for i = 1,1+WoWPro.ActiveStickyCount do
-		local index = WoWPro.rows[i].index
---		if tonumber(WoWPro.lootqty[index]) ~= nil then lootqtyi = tonumber(WoWPro.lootqty[index]) else lootqtyi = 1 end
-		lootqtyi = WoWPro.lootqty[index] or 1
-		if WoWProDB.profile.track and WoWPro.lootitem[index] then
-			local track = GetLootTrackingInfo(WoWPro.lootitem[index],lootqtyi,count)
-			WoWPro.rows[i].track:SetText(strtrim(track))
-		end
-		if WoWPro.lootitem[index] and WoWPro.lootitem[index] == itemid and GetItemCount(WoWPro.lootitem[index]) + count >= lootqtyi
-		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
-			WoWPro.CompleteStep(index)
-		end
-	end
-	for i = 1,15 do
-	end
-end
+--function WoWPro.Leveling:AutoCompleteLoot(msg)
+--	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+--
+--	local lootqtyi
+--	local _, _, itemid, name = msg:find(L["^You .*Hitem:(%d+).*(%[.+%])"])
+--	itemid = tonumber(itemid)
+--	local _, _, _, _, count = msg:find(L["^You .*Hitem:(%d+).*(%[.+%]).*x(%d+)."])
+--	if count == nil then count = 1 end
+--	for i = 1,1+WoWPro.ActiveStickyCount do
+--		local index = WoWPro.rows[i].index
+----		if tonumber(WoWPro.lootqty[index]) ~= nil then lootqtyi = tonumber(WoWPro.lootqty[index]) else lootqtyi = 1 end
+--		lootqtyi = WoWPro.lootqty[index] or 1
+--		if WoWProDB.profile.track and WoWPro.lootitem[index] then
+--			local track = GetLootTrackingInfo(WoWPro.lootitem[index],lootqtyi,count)
+--			WoWPro.rows[i].track:SetText(strtrim(track))
+--		end
+--		if WoWPro.lootitem[index] and WoWPro.lootitem[index] == itemid and GetItemCount(WoWPro.lootitem[index]) + count >= lootqtyi
+--		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
+--			WoWPro.CompleteStep(index)
+--		end
+--	end
+--	for i = 1,15 do
+--	end
+--end
 
 -- Auto-Complete: Set hearth --
 function WoWPro.Leveling:AutoCompleteSetHearth(...)
