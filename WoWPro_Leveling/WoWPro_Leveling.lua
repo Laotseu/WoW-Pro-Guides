@@ -57,8 +57,8 @@ function WoWPro.Leveling:OnEnable()
 	--Loading Frames--
 	if not WoWPro.Leveling.FramesLoaded then --First time the addon has been enabled since UI Load
 		WoWPro.Leveling:CreateConfig()
-		WoWPro.Leveling.CreateSpellFrame()
-		WoWPro.Leveling.CreateSpellListFrame()
+--		WoWPro.Leveling.CreateSpellFrame()
+--		WoWPro.Leveling.CreateSpellListFrame()
 		WoWPro.Leveling.CreateGuideList()
 		WoWPro.Leveling.FramesLoaded = true
 	end

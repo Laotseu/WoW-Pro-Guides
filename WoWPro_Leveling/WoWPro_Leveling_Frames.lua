@@ -1,3 +1,7 @@
+-- The functions in this file appear never to be used in the leveling module
+-- We skip them for now and we'll remove them later
+if 1 then return true end
+
 -------------------------------------------------------------------------------
 -- Localized Lua globals
 -------------------------------------------------------------------------------
