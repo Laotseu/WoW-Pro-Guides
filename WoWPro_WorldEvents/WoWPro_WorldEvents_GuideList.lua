@@ -27,7 +27,7 @@ local WoWPro = LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 local L = WoWPro_Locale
 local ROWHEIGHT, GAP, EDGEGAP = 17, 8, 16
 local titlerow, rows, offset = {}, {}, 0
-local NUMROWS = 15
+local NUMROWS = 16
 
 -- Creating a Table of Guides for the Guide List and sorting based on name --
 local guides = {}

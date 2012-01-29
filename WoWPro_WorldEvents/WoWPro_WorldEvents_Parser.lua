@@ -68,6 +68,15 @@ local WoWPro_Locale 					= _G.WoWPro_Locale
 
 local LibStub 							= _G.LibStub
 
+local err_params = {}
+local function err(msg, ...)
+	if not _G.WoWPro.quest_log_debug then return end
+	msg = tostring(msg)
+	wipe(err_params)
+	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
+	_G.geterrorhandler()(msg:format(_G.unpack(err_params)) .. " - " .. _G.time())
+end
+
 --------------------------------------
 --      WoWPro_WorldEvents_Parser      --
 --------------------------------------
@@ -124,12 +133,13 @@ function WoWPro.WorldEvents:NextStep(k, skip)
 
 		-- Checking Quest Log --
 		if WoWPro.QuestLog[WoWPro.QID[k]] then
-			skip = false -- If the optional quest is in the quest log, it's NOT skipped --
-		end
+			skip = nil	 				-- If the optional quest is in the quest log, it's NOT skipped
+			WoWPro.prereq[k] = nil	-- If the quest is in the log, the prereqs must already be met no matter
+		--end
 
 		-- Checking Prerequisites --
-		if WoWPro.prereq[k] then
-			skip = false -- defaulting to NOT skipped
+		elseif WoWPro.prereq[k] then
+			skip = nil					 -- defaulting to NOT skipped
 
 			local numprereqs = select("#", (";"):split(WoWPro.prereq[k]))
 			for j=1,numprereqs do
@@ -138,12 +148,22 @@ function WoWPro.WorldEvents:NextStep(k, skip)
 					skip = true -- If one of the prereqs is NOT complete, step is skipped.
 				end
 			end
+			if skip then
+				if WoWPro.action[k] == "A"
+				or WoWPro.action[k] == "C"
+				or WoWPro.action[k] == "T" then
+					WoWProCharDB.skippedQIDs[WoWPro.QID[k]] = true
+					WoWProCharDB.Guide[GID].skipped[k] = true
+				else
+					WoWProCharDB.Guide[GID].skipped[k] = true
 		end
-
+			end
+		end
 	end
 
 	-- Skipping quests with prerequisites if their prerequisite was skipped --
 	if WoWPro.prereq[k]
+	and not WoWProCharDB.completedQIDs[k]
 	and not WoWProCharDB.Guide[GID].skipped[k]
 	and not WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
 		local numprereqs = select("#", (";"):split(WoWPro.prereq[k]))
@@ -161,6 +181,13 @@ function WoWPro.WorldEvents:NextStep(k, skip)
 					WoWProCharDB.Guide[GID].skipped[k] = true
 				end
 			end
+		end
+	end
+
+	-- Skipping L steps if we are already past the level
+	if WoWPro.action[k] == "L" and WoWPro.level[k] then
+	    if tonumber(WoWPro.level[k]) <= UnitLevel("player") then
+		    skip = true
 		end
 	end
 
@@ -389,9 +416,9 @@ local function ParseQuests(...)
 						WoWPro.note[i] = description.. " ("..quantityString.." of "..requiredQuantity..")\n\n"..WoWPro.note[i] end
 				end
 
-				for _,tag in pairs(WoWPro.Tags) do
-					if not WoWPro[tag][i] then WoWPro[tag][i] = false end
-				end
+--				for _,tag in pairs(WoWPro.Tags) do
+--					if not WoWPro[tag][i] then WoWPro[tag][i] = false end
+--				end
 
 				i = i + 1
 			end end end end
@@ -451,10 +478,11 @@ function WoWPro.WorldEvents:LoadGuide()
 			    end
 		    end
 
-		    -- Checking level based completion --
-		    if not completion and level and tonumber(level) <= UnitLevel("player") then
-			    WoWProCharDB.Guide[GID].completion[i] = true
-		    end
+		end
+
+		-- Checking level based completion --
+		if not completion and level and tonumber(level) <= UnitLevel("player") then
+			WoWProCharDB.Guide[GID].completion[i] = true
 		end
 	end
 
@@ -462,8 +490,20 @@ function WoWPro.WorldEvents:LoadGuide()
 	WoWPro:UpdateGuide()
 	WoWPro.WorldEvents:AutoCompleteZone()
 
+	-- Update the display using the leadboard
+	WoWPro.WorldEvents:UpdateQuestTracker()
+
 	-- Scrollbar Settings --
 	WoWPro.Scrollbar:SetMinMaxValues(1, max(1, WoWPro.stepcount - WoWPro.ShownRows))
+
+	-- Set the arrow
+	WoWPro:MapPoint()
+	WoWPro.WorldEvents.FirstMapCall = false
+
+	-- Audio feedback to tell the user it's done
+	if WoWProDB.profile.checksound then
+		PlaySoundFile(WoWProDB.profile.checksoundfile)
+	end
 end
 
 -- Functions used by dropdown menus
@@ -798,8 +838,8 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 		end
 
 		-- Setting the zone for the coordinates of the step --
-		zone = zone or ("-("):split(WoWPro.Guides[GID].zone)
-		row.zone = zone:trim(zone)
+		--zone = zone or ("-("):split(WoWPro.Guides[GID].zone)
+		--row.zone = zone:trim(zone)
 
 		-- Checking for loot items in bags --
 		local lootqtyi

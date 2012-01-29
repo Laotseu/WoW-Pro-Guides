@@ -6,6 +6,7 @@ local _G = getfenv(0)
 local tinsert = _G.tinsert
 
 local InterfaceOptionsFrame_OpenToCategory = _G.InterfaceOptionsFrame_OpenToCategory
+
 local LibStub = _G.LibStub
 
 local WoWPro_Locale = _G.WoWPro_Locale
