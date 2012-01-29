@@ -389,6 +389,7 @@ local function ParseQuests(...)
 				if text:find("|US|") then WoWPro.unsticky[i] = true end
 				WoWPro.use[i] = text:match("|U|([^|]*)|?")
 				WoWPro.zone[i] = text:match("|Z|([^|]*)|?")
+				if tonumber(WoWPro.zone[i]) then WoWPro.zone[i] = tonumber(WoWPro.zone[i]) end
 				if WoWPro.zone[i] and not WoWPro:ValidZone(WoWPro.zone[i]) then
 					local line =string.format("Vers=%s|Guide=%s|Line=%s",WoWPro.Version,WoWProDB.char.currentguide,text)
                     WoWProDB.global.ZoneErrors = WoWProDB.global.ZoneErrors or {}

@@ -135,6 +135,7 @@ function WoWPro.WorldEvents:NextStep(k, skip)
 		if WoWPro.QuestLog[WoWPro.QID[k]] then
 			skip = nil	 				-- If the optional quest is in the quest log, it's NOT skipped
 			WoWPro.prereq[k] = nil	-- If the quest is in the log, the prereqs must already be met no matter
+											-- what the guide say
 		--end
 
 		-- Checking Prerequisites --
@@ -148,6 +149,8 @@ function WoWPro.WorldEvents:NextStep(k, skip)
 					skip = true -- If one of the prereqs is NOT complete, step is skipped.
 				end
 			end
+
+			-- If the optinal quest is skipped, mark the quest as skipped
 			if skip then
 				if WoWPro.action[k] == "A"
 				or WoWPro.action[k] == "C"
@@ -156,7 +159,7 @@ function WoWPro.WorldEvents:NextStep(k, skip)
 					WoWProCharDB.Guide[GID].skipped[k] = true
 				else
 					WoWProCharDB.Guide[GID].skipped[k] = true
-		end
+				end
 			end
 		end
 	end
@@ -188,7 +191,7 @@ function WoWPro.WorldEvents:NextStep(k, skip)
 	if WoWPro.action[k] == "L" and WoWPro.level[k] then
 	    if tonumber(WoWPro.level[k]) <= UnitLevel("player") then
 		    skip = true
-		end
+	    end
 	end
 
 	-- Skipping profession quests (moved here from core)  --
@@ -372,6 +375,7 @@ local function ParseQuests(...)
 				if text:find("|US|") then WoWPro.unsticky[i] = true end
 				WoWPro.use[i] = text:match("|U|([^|]*)|?")
 				WoWPro.zone[i] = text:match("|Z|([^|]*)|?")
+				if tonumber(WoWPro.zone[i]) then WoWPro.zone[i] = tonumber(WoWPro.zone[i]) end
 				if WoWPro.zone[i] and not WoWPro:ValidZone(WoWPro.zone[i]) then
 					local line =("Vers=%s|Guide=%s|Line=%s"):format(WoWPro.Version,WoWProDB.char.currentguide,text)
                     WoWProDB.global.ZoneErrors = WoWProDB.global.ZoneErrors or {}
@@ -441,6 +445,7 @@ function WoWPro.WorldEvents:LoadGuide()
 	WoWPro:PopulateQuestLog() --Calling this will populate our quest log table for use here
 
 	-- Checking to see if any steps are already complete --
+	--##### Need to validate but this should all be done in UpdateGuide()
 	for i=1, WoWPro.stepcount do
 		local action = WoWPro.action[i]
 		local completion = WoWProCharDB.Guide[GID].completion[i]

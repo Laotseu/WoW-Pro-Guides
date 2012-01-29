@@ -39,7 +39,7 @@ function WoWPro.WorldEvents:OnEnable()
 	WoWPro:RegisterTags({"QID", "questtext", "rep", "noncombat", "ach", "prereq"})
 
 	-- Event Registration --
-	WoWPro.WorldEvents.Events = {"QUEST_LOG_UPDATE", "QUEST_COMPLETE", 
+	WoWPro.WorldEvents.Events = {"QUEST_LOG_UPDATE", "QUEST_COMPLETE",
 		"ZONE_CHANGED", "ZONE_CHANGED_INDOORS", "MINIMAP_ZONE_CHANGED", "ZONE_CHANGED_NEW_AREA",
 		"UI_INFO_MESSAGE", "CHAT_MSG_SYSTEM", "CHAT_MSG_LOOT"
 	}
@@ -56,6 +56,7 @@ function WoWPro.WorldEvents:OnEnable()
 
 	-- Server query for completed quests --
 	--QueryQuestsCompleted() -- Need to check for this
+
 end
 
 -- Called when the module is disabled --
