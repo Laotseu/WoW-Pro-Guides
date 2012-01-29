@@ -370,6 +370,9 @@ function WoWPro:OnEnable()
 	-- Server query for completed quests --
 	_G.QueryQuestsCompleted()
 
+	-- Clear the error logs
+	if WoWPro.DB.global.ZoneErrors then wipe(WoWPro.DB.global.ZoneErrors) end
+
 end
 
 -- Called when the addon is disabled --
