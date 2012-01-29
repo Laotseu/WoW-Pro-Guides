@@ -70,8 +70,10 @@ function WoWPro.WorldEvents:OnDisable()
 	if WoWPro.Guides[WoWProDB.char.currentguide] and WoWPro.Guides[WoWProDB.char.currentguide].guidetype == "WorldEvents" then
 		WoWPro:RemoveMapPoint()
 		WoWProDB.char.lastWorldEventsguide = WoWProDB.char.currentguide
-		WoWProDB.char.currentguide = nil
-		WoWPro:LoadGuide()
+		-- Removed because we want the same guide to load next time we enable the module
+		-- This is very useful when click on the LDB icon to quickly get the WoWPro window out of the way
+		--WoWProDB.char.currentguide = nil
+		--WoWPro:LoadGuide()
 	end
 end
 
