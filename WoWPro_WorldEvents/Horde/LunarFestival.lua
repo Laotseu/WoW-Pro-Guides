@@ -55,11 +55,11 @@ A Bloodhoof the Elder|N|From Elder Bloodhoof.|QID|8673|M|48.5,53.2|Z|Mulgore|
 F Vendetta Point|N|Fly to Vendetta Point in Southern Barrens.|QID|8686|M|47.4,58.6|Z|Mulgore|
 A High Mountain the Elder|N|From Elder High Mountain.|QID|8686|M|41.5,47.5|Z|Southern Barrens|
 F Shadowprey Village|N|Fly to Shadowprey Village in Desolace.|QID|8635|M|41.6,47.6|Z|Southern Barrens|
-R Maraudon|QID|8635|M|29.12,62.56|N|Head over to the Maraudon.|Z|Desolace|
-R Open the Stone Door|QID|8635|N|And follow the path until you come to a mini-map change.|M|28.23,62.61;28.29,65.08;27.58,62.85;28.09,62.8|CC|Z|Desolace|
-R Follow the dots|QID|8635|N|Until you come to a portal.|M|29.06,62.48;29.97,59.96;29.39,60.94|Z|Desolace|CC|
-A Splitrock the Elder|N|Enter the portal. From Elder Splitrock. May have to disable and re-enable the addon for the waypoint to appear.|QID|8635|M|51.4,93.4|Z|Zaetar's Grave|
-R Maraudon|QID|8685|N|Easy way out is to invite a friend, make them the leader then leave group. You will end up at the nearest graveyard, in this case right near the stone gate out. Should take about 1-2 minutes before you are booted.|
+R Maraudon|QID|8635|M|29.12,62.56|N|Head over to the Maraudon.|Z|Desolace|RANK|2|
+R Open the Stone Door|QID|8635|N|And follow the path until you come to a mini-map change.|M|28.23,62.61;28.29,65.08;27.58,62.85;28.09,62.8|CC|Z|Desolace|RANK|2|
+R Follow the dots|QID|8635|N|Until you come to a portal.|M|29.06,62.48;29.97,59.96;29.39,60.94|Z|Desolace|CC|RANK|2|
+A Splitrock the Elder|N|Enter the portal. From Elder Splitrock. May have to disable and re-enable the addon for the waypoint to appear.|QID|8635|M|51.4,93.4|Z|Zaetar's Grave|RANK|2|
+R Maraudon|QID|8685|N|Easy way out is to invite a friend, make them the leader then leave group. You will end up at the nearest graveyard, in this case right near the stone gate out. Should take about 1-2 minutes before you are booted.|RANK|2|
 F Stonemaul Hold|N|Fly to Stonemaul Hold in Feralas.|QID|8685|M|21.6,74|Z|Desolace|
 A Mistwalker the Elder|N|From Elder Mistwalker.|QID|8685|M|62.5,31|Z|Feralas|
 A Grimtotem the Elder|N|From Elder Mistwalker.|QID|8679|M|76.7,37.7|Z|Feralas|
@@ -73,8 +73,8 @@ F Dawnrise Exedition|N|Fly to Dawnrise Exedition in Tanaris.|QID|8671|M|56,64|Z|
 A Ragetotem the Elder|N|From Elder Ragetotem.|QID|8671|M|37.2,79|Z|Tanaris|
 F Gadgetzan|N|Fly to Gadgetzan in Tanaris.|QID|8684|M|33.2,77.2|Z|Tanaris|
 A Dreamseer the Elder|N|From Dreamseer the Elder.|QID|8684|M|51.4,28.8|Z|Tanaris|
-R Zul'Farrak|N|Run into Zul'Farrak.|QID|8676|M|39.23,21.21|Z|Tanaris|
-A Wildmane the Elder|N|From Elder Wildmane. May have to disable and re-enable the addon for the waypoint to appear.|QID|8676|M|34.4,39.6|Z|ZulFarrak|
+R Zul'Farrak|N|Run into Zul'Farrak.|QID|8676|M|39.23,21.21|Z|Tanaris|RANK|2|
+A Wildmane the Elder|N|From Elder Wildmane. May have to disable and re-enable the addon for the waypoint to appear.|QID|8676|M|34.4,39.6|Z|ZulFarrak|RANK|2|
 F Fizzle & Pozzik's Speedbarge|N|Fly to Fizzle & Pozzik's Speedbarge in Thousand Needles.|QID|8724|M|52.0,27.6|Z|Tanaris|
 A Morningdew the Elder|N|From Elder Morningdew.|QID|8724|M|77,75.6|Z|Thousand Needles|
 A Skyseer the Elder|N|From Elder Skyseer.|QID|8682|M|46.3,51|Z|Thousand Needles|
@@ -87,10 +87,10 @@ F Bambala|N|Fly to Bambala in Northern Stranglethorn.|QID|8716|M|40.6,73.2|Z|The
 A Starglade the Elder|N|From Elder Starglade.|QID|8716|M|71,34.3|Z|Northern Stranglethorn|
 R The Dark Portal|N|Head over to the Dark Portal.|QID|8647|M|54.3,49.5|Z|Blasted Lands|
 A Bellowrage the Elder|N|From Elder Bellowrage.|QID|8647|M|54.3,49.5|Z|Blasted Lands|
-R The Temple of Atal'Hakkar|N|Head North to Swamp of Sworrows and into the Temple of Atal'Hakkar.|QID|8713|M|69.37,53.07|Z|Swamp of Sorrows|
-R Hall of Masks|N|Head inside the Temple down into the Hall of Masks|QID|8713|Z|Swamp of Sorrows|M|75.99,45.22|
-A Starsong the Elder|N|From Elder Starsong from inside the instance.|QID|8713|M|62.4,34.4|Z|TheTempleOfAtalHakkar|
-R The Temple of Atal'Hakkar|N|Get back out of the instance.|QID|8675|M|49.9,18.4|Z|TheTempleOfAtalHakkar|
+R The Temple of Atal'Hakkar|N|Head North to Swamp of Sworrows and into the Temple of Atal'Hakkar.|QID|8713|M|69.37,53.07|Z|Swamp of Sorrows|RANK|2|
+R Hall of Masks|N|Head inside the Temple down into the Hall of Masks|QID|8713|Z|Swamp of Sorrows|M|75.99,45.22|RANK|2|
+A Starsong the Elder|N|From Elder Starsong from inside the instance.|QID|8713|M|62.4,34.4|Z|TheTempleOfAtalHakkar|RANK|2|
+R The Temple of Atal'Hakkar|N|Get back out of the instance.|QID|8675|M|49.9,18.4|Z|TheTempleOfAtalHakkar|RANK|2|
 R Westfall|N|Head to Westfall.|QID|8675|M|56.6,47|Z|Westfall|
 A Skychaser the Elder|N|From Elder Skychaser.|QID|8675|M|56.6,47|Z|Westfall|T|Elder Skychaser|
 R Elwynn Forest|N|Run North to Elwynn Forest.|QID|8649|M|39.6,63.5|Z|Elwynn Forest|
@@ -100,15 +100,15 @@ R Burning Steppes|N|Time to head to Burning Steppes.|QID|8636|M|70.1,45.4|Z|Burn
 
 A Rumblerock the Elder|N|From Elder Rumblerock.|QID|8636|M|70.1,45.4|Z|Burning Steppes|
 A Dawnstrider the Elder|N|From Elder Dawnstrider.|QID|8683|M|53.2,24|Z|Burning Steppes|
-R Blackrock Mountain|N|Run to Blackrock Mountain.|QID|8644|M|20.39,34.56|Z|Burning Steppes|
-R Do you have a flying mount?|N|If yes, fly up to the ledge at this waypoint. If not pass this step and follow the next steps.|QID|8644|M|23.77,26.14|Z|Burning Steppes|CC|
-R Follow the series of waypoints|N|To get into the instance.|QID|8644|CC|M|24.36,29.86;25.8,26.44;26.4,26.33|Z|Burning Steppes|
-R Follow the series of waypoints|N|To get into the instance. Part 2|QID|8644|CC|M|25.72,25.98;25.89,28.1;24.71,28.37;24.22,26.12|Z|Burning Steppes|
-A Stonefort the Elder|N|Head in the instance. From Elder Stonefort.|QID|8644|M|62.2,39.8|Z|Hordemar City|
-R Head back out of the instance|N|Run to this waypoint at the bottom near the lava.|CC|QID|8619|M|18.59,25.03|Z|Burning Steppes|
-R Follow the waypoints|N|To get into Blackrock Depths instance.|CC|QID|8619|M|18.75,24.89;16.72,20.63;14.29,15.88;14.47,9.25|Z|Burning Steppes|
-A Morndeep the Elder|N|From Elder Morndeep.|QID|8619|M|50.6,63.2|Z|Detention Block|
-R Searing Gorge|N|Head out of the instance, and run North to Searing Gorge.|QID|8651|M|34.56,83.46|Z|Searing Gorge|
+R Blackrock Mountain|N|Run to Blackrock Mountain.|QID|8644|M|20.39,34.56|Z|Burning Steppes|RANK|2|
+R Do you have a flying mount?|N|If yes, fly up to the ledge at this waypoint. If not pass this step and follow the next steps.|QID|8644|M|23.77,26.14|Z|Burning Steppes|CC|RANK|2|
+R Follow the series of waypoints|N|To get into the instance.|QID|8644|CC|M|24.36,29.86;25.8,26.44;26.4,26.33|Z|Burning Steppes|RANK|2|
+R Follow the series of waypoints|N|To get into the instance. Part 2|QID|8644|CC|M|25.72,25.98;25.89,28.1;24.71,28.37;24.22,26.12|Z|Burning Steppes|RANK|2|
+A Stonefort the Elder|N|Head in the instance. From Elder Stonefort.|QID|8644|M|62.2,39.8|Z|Hordemar City|RANK|2|
+R Head back out of the instance|N|Run to this waypoint at the bottom near the lava.|CC|QID|8619|M|18.59,25.03|Z|Burning Steppes|RANK|2|
+R Follow the waypoints|N|To get into Blackrock Depths instance.|CC|QID|8619|M|18.75,24.89;16.72,20.63;14.29,15.88;14.47,9.25|Z|Burning Steppes|RANK|2|
+A Morndeep the Elder|N|From Elder Morndeep.|QID|8619|M|50.6,63.2|Z|Detention Block|RANK|2|
+R Searing Gorge|N|Head out of the instance, and run North to Searing Gorge.|QID|8651|M|34.56,83.46|Z|Searing Gorge|RANK|2|
 A Ironband the Elder|N|From Elder Ironband.|QID|8651|M|21.1,78.8|Z|Searing Gorge|
 R Loch Modan|N|Head towards Loch Modan.|QID|8642|M|33,46.5|Z|Loch Modan|
 A Silvervein the Elder|N|From Elder Silvervein.|QID|8642|M|33,46.5|Z|Loch Modan|T|Elder Silvervein|
@@ -128,9 +128,9 @@ A Windrun the Elder|N|From Elder Windrun.|QID|8688|M|35.6,68.8|Z|Eastern Plaguel
 F Light's Hope Chapel|N|Fly to Light's Hope Chapel in Eastern Plaguelands.|QID|8650|M|34.9,67.9|Z|Eastern Plaguelands|
 A Snowcrown the Elder|N|From Elder Snowcrown.|QID|8650|M|75.7,54.6|Z|Eastern Plaguelands|
 F Plaguewood Tower|N|Fly to Plaguewood Tower in Eastern Plaguelands.|QID|8727|M|75.85,53.41|Z|Eastern Plaguelands|
-R Stratholme |N|Enter Stratholme's main entrance.|QID|8727|M|26.3,11.7|Z|Eastern Plaguelands|
-A Farwhisper the Elder|N|From Elder Farwhisper.|QID|8727|M|78.4,21.6|Z|Crusader's Square|
-R Stratholme |N|Exit Stratholme|M|65.4,87.8|Z|Crusader's Square|
+R Stratholme |N|Enter Stratholme's main entrance.|QID|8727|M|26.3,11.7|Z|Eastern Plaguelands|RANK|2|
+A Farwhisper the Elder|N|From Elder Farwhisper.|QID|8727|M|78.4,21.6|Z|Crusader's Square|RANK|2|
+R Stratholme |N|Exit Stratholme|M|65.4,87.8|Z|Crusader's Square|RANK|2|
 F Brill|N|Fly to Brill in Tirisfal Glades.|QID|8652|M|18.46,27.37|Z|Eastern Plaguelands|
 A Graveborn the Elder|N|From Elder Graveborn.|QID|8652|M|61.7,53.7|Z|Tirisfal Glades|
 R Undercity|N|Head towards Undercity.|QID|8648|M|32.2,61.9w|Z|Tirisfal Glades|
@@ -140,21 +140,21 @@ A Obsidian the Elder|N|From Elder Obsidian.|QID|8645|M|44.8,41.1|Z|Silverpine Fo
 F Brill|N|Fly to Brill in Tirisfal Glades.|QID|8652|M|45.4,42.4|Z|Silverpine Forest|
 b Howling Fjord|N|Take the zeppelin to Howling Fjord.|QID|13067|M|58.9,59.0|Z|Tirisfal Glades|
 
-R Utgarde Keep|N|Head inside Utgarde Keep.|QID|13067|M|58.9,48.7|Z|Howling Fjord|
-A Jarten the Elder|N|From Elder Jarten inside the instance. Down the stairs in Lower Pinnacle, after Dalronn the Controller.|QID|13017|M|48.7,22.9|Z|Utgrade Pinnacle|
-R Utgarde Pinnacle|N|Head out of Utgarde Keep, then run around north of the Keep to get to Utgarde Pinnacle.|QID|13067|M|58.0,50.1;57.25,46.63|Z|Howling Fjord|
-A Chogan'gada the Elder|N|From Elder Chogan'gada from inside the instance.|QID|13067|M|48.6,22.2|Z|Lower Pinnacle|
+R Utgarde Keep|N|Head inside Utgarde Keep.|QID|13067|M|58.9,48.7|Z|Howling Fjord|RANK|3|
+A Jarten the Elder|N|From Elder Jarten inside the instance. Down the stairs in Lower Pinnacle, after Dalronn the Controller.|QID|13017|M|48.7,22.9|Z|Utgrade Pinnacle|RANK|3|
+R Utgarde Pinnacle|N|Head out of Utgarde Keep, then run around north of the Keep to get to Utgarde Pinnacle.|QID|13067|M|58.0,50.1;57.25,46.63|Z|Howling Fjord|RANK|3|
+A Chogan'gada the Elder|N|From Elder Chogan'gada from inside the instance.|QID|13067|M|48.6,22.2|Z|Lower Pinnacle|RANK|3|
 
 F Camp Oneqwah|N|Fly to Camp Oneqwah in Grizzly Hills.|QID|13030|M|79,29.6|Z|Howling Fjord|
 A Whurain the Elder|N|From  Elder Whurain.|QID|13030|M|64.2,47|Z|Grizzly Hills|
 A Lunaro the Elder|N|From Elder Lunaro.|QID|13025|M|80.4,37|Z|Grizzly Hills|
 A Beldak the Elder|N|From Elder Beldak.|QID|13013|M|60.4,27.6|Z|Grizzly Hills|T|Elder Beldak|
-R Drak'Tharon Keep|N|Head into Drak'Tharon Keep.|QID|13023|M|17.42,21.2|Z|Grizzly Hills|
-A Kilias the Elder|N|From  Elder Kilias.|QID|13023|M|68.4,78.6|Z|The Vestibules of Drak'Tharon|
-R Zim'Torga|N|Head out of Drak'Tharon Keep and head to Zim'Torga.|QID|13027|M|58.8,56|Z|Zul'Drak|
+R Drak'Tharon Keep|N|Head into Drak'Tharon Keep.|QID|13023|M|17.42,21.2|Z|Grizzly Hills|RANK|3|
+A Kilias the Elder|N|From  Elder Kilias.|QID|13023|M|68.4,78.6|Z|The Vestibules of Drak'Tharon|RANK|3|
+R Zim'Torga|N|Head out of Drak'Tharon Keep and head to Zim'Torga.|QID|13027|M|58.8,56|Z|Zul'Drak|RANK|3|
 A Tauros the Elder|N|From Elder Tauros.|QID|13027|M|58.8,56|Z|Zul'Drak|
-R Gundrak|N|Head inside of Gundrak.|QID|13065|M|76.43,21.43|Z|Zul'Drak|
-A Ohanzee the Elder|N|From Elder Ohanzee.|QID|13065|M|45.6,62|Z|Gundrak|
+R Gundrak|N|Head inside of Gundrak.|QID|13065|M|76.43,21.43|Z|Zul'Drak|RANK|3|
+A Ohanzee the Elder|N|From Elder Ohanzee.|QID|13065|M|45.6,62|Z|Gundrak|RANK|3|
 
 R Camp Tunka'lo|N|Leave Gundrak and head over to Camp Tunka'lo.|QID|13032|M|65.4,50.7|Z|The Storm Peaks|
 A Muraco the Elder|N|From Elder Muraco.|QID|13032|M|64.6,51.2|Z|The Storm Peaks|
@@ -182,8 +182,8 @@ A Wanikaya the Elder|N|From Elder Wanikaya.|QID|13024|M|63.8,49|Z|Sholazar Basin
 
 F Transitus Shield|N|Fly to the Transitus Shield in Colderra.|QID|13016|M|50,61.4|Z|Sholazar Basin|
 A Northal the Elder|N|From Elder Northal.|QID|13016|M|33.6,34.2|Z|Borean Tundra|
-R The Nexus|N|Run into The Nexus.|QID|13021|M|27.5,26.09|Z|Borean Tundra|
-A Igasho the Elder|N|From Elder Igasho.|QID|13021|M|55.4,64.6|Z|The Nexus|
+R The Nexus|N|Run into The Nexus.|QID|13021|M|27.5,26.09|Z|Borean Tundra|RANK|3|
+A Igasho the Elder|N|From Elder Igasho.|QID|13021|M|55.4,64.6|Z|The Nexus|RANK|3|
 R D.E.H.T.A Encampment|N|Head out of The Nexus and go to the D.H.E.T.A Encampment.|QID|13033|M|57.4,43.6|Borean Tundra|
 A Arp the Elder|N|From Elder Arp.|QID|13033|M|57.4,43.6|Z|Borean Tundra|
 A Pamuya the Elder|N|From Elder Pamuya.|QID|13029|M|42.8,49.6|Z|Borean Tundra|
