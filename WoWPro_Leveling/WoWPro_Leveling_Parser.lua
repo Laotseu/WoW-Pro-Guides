@@ -6,9 +6,11 @@ local _G = getfenv(0)
 local _
 local assert							= _G.assert
 local floor								= _G.floor
-local math								= _G.math
+local format							= _G.format
+local gsub								= _G.gsub
+local max								= _G.max
 local setmetatable					= _G.setmetatable
-local string							= _G.string
+local strfind							= _G.strfind
 local strreplace						= _G.strreplace
 local strsplit							= _G.strsplit
 local strtrim							= _G.strtrim
@@ -155,9 +157,9 @@ function WoWPro.Leveling:NextStep(k, skip)
 		elseif WoWPro.prereq[k] then
 			skip = nil						-- defaulting to NOT skipped
 
-			local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
+			local numprereqs = select("#", strsplit(";", WoWPro.prereq[k]))
 			for j=1,numprereqs do
-				local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
+				local jprereq = select(numprereqs-j+1, strsplit(";", WoWPro.prereq[k]))
 				if not WoWProCharDB.completedQIDs[tonumber(jprereq)] then
 					skip = true -- If one of the prereqs is NOT complete, step is skipped.
 				end
@@ -182,9 +184,9 @@ function WoWPro.Leveling:NextStep(k, skip)
 	and not WoWProCharDB.completedQIDs[k]
 	and not WoWProCharDB.Guide[GID].skipped[k]
 	and not WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
-		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
+		local numprereqs = select("#", strsplit(";", WoWPro.prereq[k]))
 		for j=1,numprereqs do
-			local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
+			local jprereq = select(numprereqs-j+1, strsplit(";", WoWPro.prereq[k]))
 			if WoWProCharDB.skippedQIDs[tonumber(jprereq)] then
 				skip = true
 				-- If their prerequisite has been skipped, skipping any dependant quests --
@@ -228,9 +230,9 @@ local function skipPrereqSteps(WoWPro, WoWProCharDB, GID, QID)
 		end
 
 		if WoWPro.prereq[j] then
-			local numprereqs = select("#", string.split(";", WoWPro.prereq[j]))
+			local numprereqs = select("#", strsplit(";", WoWPro.prereq[j]))
 			for k=1,numprereqs do
-				local kprereq = select(numprereqs-k+1, string.split(";", WoWPro.prereq[j]))
+				local kprereq = select(numprereqs-k+1, strsplit(";", WoWPro.prereq[j]))
 				if tonumber(kprereq) == QID then
 
 					if WoWPro.action[j] == "A" or
@@ -292,9 +294,9 @@ local function unskipPrereqSteps(WoWPro, WoWProCharDB, GID, QID)
 		end
 
 		if WoWPro.prereq[j] then
-			local numprereqs = select("#", string.split(";", WoWPro.prereq[j]))
+			local numprereqs = select("#", strsplit(";", WoWPro.prereq[j]))
 			for k=1,numprereqs do
-				local kprereq = select(numprereqs-k+1, string.split(";", WoWPro.prereq[j]))
+				local kprereq = select(numprereqs-k+1, strsplit(";", WoWPro.prereq[j]))
 				if tonumber(kprereq) == QID then
 					WoWProCharDB.Guide[GID].skipped[j] = nil
 					if WoWPro.action[j] == "A" or
@@ -352,15 +354,15 @@ local function ParseQuests(...)
 			local class, race, gender, faction = text:match("|C|([^|]*)|?"), text:match("|R|([^|]*)|?"), text:match("|GEN|([^|]*)|?"), text:match("|FACTION|([^|]*)|?")
 			if class then
 				-- deleting whitespaces and capitalizing, to compare with Blizzard's class tokens
-				class = strupper(string.gsub(class, " ", ""))
+				class = (class:gsub(" ", "")):upper()
 			end
 			if race then
 				-- deleting whitespaces to compare with Blizzard's race tokens
-				race = string.gsub(race, " ", "")
+				race = race:gsub(" ", "")
 			end
 			if gender then
 				-- deleting leading/trailing whitespace and then canonicalize the case
-				gender=strupper(strtrim(gender))
+				gender = (gender:trim()):upper()
 				-- map the text to the gender code
 				if gender == "FEMALE" then
 					gender = 3
@@ -372,7 +374,7 @@ local function ParseQuests(...)
 			end
 			if faction then
 				-- deleting leading/trailing whitespace and then canonicalize the case
-				faction=strupper(strtrim(faction))
+				faction = (faction:trim()):upper()
             end
 			if class == nil or class:find(myclass) then if race == nil or race:find(myrace) then if gender == nil or gender == UnitSex("player") then if faction == nil or faction == strupper(UnitFactionGroup("player")) then
 				_, _, WoWPro.action[i], WoWPro.step[i] = text:find("^(%a) ([^|]*)(.*)")
@@ -391,7 +393,7 @@ local function ParseQuests(...)
 				WoWPro.zone[i] = text:match("|Z|([^|]*)|?")
 				if tonumber(WoWPro.zone[i]) then WoWPro.zone[i] = tonumber(WoWPro.zone[i]) end
 				if WoWPro.zone[i] and not WoWPro:ValidZone(WoWPro.zone[i]) then
-					local line =string.format("Vers=%s|Guide=%s|Line=%s",WoWPro.Version,WoWProDB.char.currentguide,text)
+					local line =format("Vers=%s|Guide=%s|Line=%s",WoWPro.Version,WoWProDB.char.currentguide,text)
                     WoWProDB.global.ZoneErrors = WoWProDB.global.ZoneErrors or {}
 	                table.insert(WoWProDB.global.ZoneErrors, line)
 				    WoWPro:dbp("Invalid Z tag in:"..text)
@@ -441,7 +443,7 @@ function WoWPro.Leveling:LoadGuide()
 
 	-- Parsing quests --
 	local sequence = WoWPro.Guides[GID].sequence
-	ParseQuests(string.split("\n", sequence()))
+	ParseQuests(strsplit("\n", sequence()))
 
 	WoWPro:dbp("Guide Parsed. "..WoWPro.stepcount.." steps registered.")
 
@@ -488,7 +490,7 @@ function WoWPro.Leveling:LoadGuide()
 	WoWPro.Leveling:UpdateQuestTracker()
 
 	-- Scrollbar Settings --
-	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount - WoWPro.ShownRows))
+	WoWPro.Scrollbar:SetMinMaxValues(1, max(1, WoWPro.stepcount - WoWPro.ShownRows))
 
 	-- Set the arrow
 	WoWPro:MapPoint()
@@ -584,7 +586,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 		local leadin = WoWPro.leadin[k]
 		local target = WoWPro.target[k]
 		if WoWPro.prof[k] then
-			local prof, proflvl = string.split(" ", WoWPro.prof[k])
+			local prof, proflvl = strsplit(" ", WoWPro.prof[k])
 		end
 		local completion = WoWProCharDB.Guide[GID].completion
 
@@ -623,7 +625,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 			row.check:SetChecked(false)
 			row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
 		end
-		if note then note = strtrim(note) note = string.gsub(note,"\\n","\n") end
+		if note then note = strtrim(note) note = gsub(note,"\\n","\n") end
 		if WoWProDB.profile.showcoords and coord and note then note = note.." ("..coord..")" end
 		if WoWProDB.profile.showcoords and coord and not note then note = "("..coord..")" end
 		if not ( WoWProDB.profile.showcoords and coord ) and not note then note = "" end
@@ -754,7 +756,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 		if ( not use ) and action == "C" and WoWPro.QuestLog[QID] then
 			local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[QID].index)
 			if link then
-				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
+				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = strfind(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
 				use = Id
 				WoWPro.use[k] = use
 			end
@@ -1098,10 +1100,10 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(skipUIUpdate)
 
 				-- Partial Completion --
 				elseif WoWPro.QuestLog[QID] and not completion and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[i] then
-					local numquesttext = select("#", string.split(";", WoWPro.questtext[i]))
+					local numquesttext = select("#", strsplit(";", WoWPro.questtext[i]))
 					local complete = true
 					for l=1,numquesttext do
-						local lquesttext = select(numquesttext-l+1, string.split(";", WoWPro.questtext[i]))
+						local lquesttext = select(numquesttext-l+1, strsplit(";", WoWPro.questtext[i]))
 						local lcomplete = false
 						for _, objective in pairs(WoWPro.QuestLog[QID].leaderBoard) do --Checks each of the quest log objectives
 							if lquesttext == objective then --if the objective matches the step's criteria, mark true
@@ -1279,7 +1281,7 @@ function WoWPro.Leveling:AutoCompleteZone()
 	local step = WoWPro.step[currentindex]
 	local coord = WoWPro.map[currentindex]
 	local waypcomplete = WoWPro.waypcomplete[currentindex]
-	local zonetext, subzonetext = GetZoneText(), string.trim(GetSubZoneText())
+	local zonetext, subzonetext = GetZoneText(), strtrim(GetSubZoneText())
 	if action == "F" or action == "H" or action == "b" or (action == "R" and not waypcomplete) then
 		if step == zonetext or step == subzonetext
 		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[currentindex] then
@@ -1351,15 +1353,15 @@ function WoWPro.Leveling:UpdateQuestTracker()
 						--end
 					end
 				elseif questtext then --Partial completion steps only track pertinent objective.
-					local numquesttext = select("#", string.split(";", questtext))
+					local numquesttext = select("#", strsplit(";", questtext))
 					for l=1,numquesttext do
-						local lquesttext = select(numquesttext-l+1, string.split(";", questtext))
-						local _, _, litemname = string.find(lquesttext, "(.+):") -- Everything before the : is the item name
+						local lquesttext = select(numquesttext-l+1, strsplit(";", questtext))
+						local _, _, litemname = strfind(lquesttext, "(.+):") -- Everything before the : is the item name
 						for m=1,GetNumQuestLeaderBoards(j) do
 							if GetQuestLogLeaderBoard(m, j) then
 								local itemtext, _, isdone = GetQuestLogLeaderBoard(m, j)
 --								local _, _, itemName, _, _ = string.find(GetQuestLogLeaderBoard(m, j), "(.*):%s*([%d]+)%s*/%s*([%d]+)");
-								local _, _, itemName = string.find(itemtext, "(.+):") -- Everything before the : is the item name
+								local _, _, itemName = strfind(itemtext, "(.+):") -- Everything before the : is the item name
 								--if itemName and string.find(lquesttext,itemName) then
 								if itemName and itemName == litemname then
 									--track = "- "..GetQuestLogLeaderBoard(m, j)
