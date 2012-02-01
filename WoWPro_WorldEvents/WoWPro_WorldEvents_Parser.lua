@@ -239,87 +239,127 @@ function WoWPro.WorldEvents:NextStep(k, skip)
 end
 
 -- Skip a step --
-function WoWPro.WorldEvents:SkipStep(index)
-	local WoWProCharDB = WoWPro.CharDB
+do -- closure
 
-	local GID = WoWPro.DB.char.currentguide
+-- Creating a local function in another function is like creating a table,
+-- it creates garbage. Best to create it only once.
+-- Even better, replace with a while loop (todo)
+local steplist = ""
+local function skipPrereqSteps(WoWPro, WoWProCharDB, GID, QID)
+	if not QID then return end
 
-	if not WoWPro.QID[index] then return "" end
-	if WoWPro.action[index] == "A"
-	or WoWPro.action[index] == "C"
-	or WoWPro.action[index] == "T" then
-		WoWProCharDB.skippedQIDs[WoWPro.QID[index]] = true
-		WoWProCharDB.Guide[GID].skipped[index] = true
-	else
-		WoWProCharDB.Guide[GID].skipped[index] = true
-	end
-	local steplist = ""
+	WoWProCharDB.skippedQIDs[QID] = true
 
-	local function skipstep(currentstep)
-		for j = 1,WoWPro.stepcount do
-			if WoWPro.prereq[j] then
-				local numprereqs = select("#", (";"):split(WoWPro.prereq[j]))
-				for k=1,numprereqs do
-					local kprereq = select(numprereqs-k+1, (";"):split(WoWPro.prereq[j]))
-					if tonumber(kprereq) == WoWPro.QID[currentstep]
-					and WoWProCharDB.skippedQIDs[WoWPro.QID[currentstep]] then
-						if WoWPro.action[j] == "A"
-						or WoWPro.action[j] == "C"
-						or WoWPro.action[j] == "T" then
-							WoWProCharDB.skippedQIDs[WoWPro.QID[j]] = true
-						end
-						steplist = steplist.."- "..WoWPro.step[j].."\n"
-						skipstep(j)
+	for j = 1,WoWPro.stepcount do
+		if WoWPro.QID[j] == QID then
+			WoWProCharDB.Guide[GID].skipped[j] = true
+		end
+
+		if WoWPro.prereq[j] then
+			local numprereqs = select("#", string.split(";", WoWPro.prereq[j]))
+			for k=1,numprereqs do
+				local kprereq = select(numprereqs-k+1, string.split(";", WoWPro.prereq[j]))
+				if tonumber(kprereq) == QID then
+
+					if WoWPro.action[j] == "A" or
+						WoWPro.action[j] == "C" or
+						WoWPro.action[j] == "T" then
+
+						-- The QID was used in the |PRE| tag for another line,
+						-- we have a new QID to skip
+						skipPrereqSteps(WoWPro, WoWProCharDB, GID, WoWPro.QID[j])
+
 					end
+
+					steplist = steplist.."- "..WoWPro.step[j].."\n"
 				end
 			end
 		end
 	end
+end
 
-	skipstep(index)
+function WoWPro.WorldEvents:SkipStep(index)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
+	local GID = WoWProDB.char.currentguide
+
+	WoWProCharDB.Guide[GID].skipped[index] = true
+
+	steplist = ""
+	if WoWPro.action[index] == "A" or
+		WoWPro.action[index] == "C" or
+		WoWPro.action[index] == "T" then
+
+		-- A step has been skiped, it's possible that it was a prereq for
+		-- another step. We must loop the step list to find and skip all the
+		-- others with that QID as a prereq. Each new step skiped can also be
+		-- a prereq to another and so, the list must be looped again.
+		skipPrereqSteps(WoWPro, WoWProCharDB, GID, WoWPro.QID[index])
+
+	end
+
 
 	WoWPro:MapPoint()
 	return steplist
 end
 
+end -- closure
+
 -- Unskip a step --
-function WoWPro.WorldEvents:UnSkipStep(index)
-	local WoWProCharDB = WoWPro.CharDB
+do -- closure
 
-	local GID = WoWPro.DB.char.currentguide
-	WoWProCharDB.Guide[GID].completion[index] = nil
-	if WoWPro.QID[index]
-	and ( WoWPro.action[index] == "A"
-		or WoWPro.action[index] == "C"
-		or WoWPro.action[index] == "T" ) then
-			WoWProCharDB.skippedQIDs[WoWPro.QID[index]] = nil
-			WoWProCharDB.Guide[GID].skipped[index] = nil
-	else
-		WoWProCharDB.Guide[GID].skipped[index] = nil
-	end
+local function unskipPrereqSteps(WoWPro, WoWProCharDB, GID, QID)
+	if not QID then return end
 
-	local function unskipstep(currentstep)
-		for j = 1,WoWPro.stepcount do if WoWPro.prereq[j] then
-			local numprereqs = select("#", (";"):split(WoWPro.prereq[j]))
+	WoWProCharDB.skippedQIDs[QID] = nil
+
+	for j = 1,WoWPro.stepcount do
+
+		if WoWPro.QID[j] and QID == WoWPro.QID[j] then
+			WoWProCharDB.Guide[GID].skipped[j] = nil
+		end
+
+		if WoWPro.prereq[j] then
+			local numprereqs = select("#", string.split(";", WoWPro.prereq[j]))
 			for k=1,numprereqs do
-				local kprereq = select(numprereqs-k+1, (";"):split(WoWPro.prereq[j]))
-				if tonumber(kprereq) == WoWPro.QID[currentstep] then
-					if WoWPro.action[j] == "A"
-					or WoWPro.action[j] == "C"
-					or WoWPro.action[j] == "T" then
-						WoWProCharDB.skippedQIDs[WoWPro.QID[j]] = nil
+				local kprereq = select(numprereqs-k+1, string.split(";", WoWPro.prereq[j]))
+				if tonumber(kprereq) == QID then
+					WoWProCharDB.Guide[GID].skipped[j] = nil
+					if WoWPro.action[j] == "A" or
+						WoWPro.action[j] == "C" or
+						WoWPro.action[j] == "T" then
+
+						-- We just unstickied a |PRE|, we must unstick the dep.
+						unskipPrereqSteps(WoWPro, WoWProCharDB, GID, WoWPro.QID[j])
 					end
-					WoWProCharDB.Guide[GID].skipped = {}
-					unskipstep(j)
 				end
 			end
-		end end
+		end
+	end
+end
+
+function WoWPro.WorldEvents:UnSkipStep(index)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
+	local GID = WoWProDB.char.currentguide
+	WoWProCharDB.Guide[GID].completion[index] = nil
+	WoWProCharDB.Guide[GID].skipped[index] = nil
+
+	if WoWPro.QID[index] and
+		( WoWPro.action[index] == "A" or
+		  WoWPro.action[index] == "C" or
+		  WoWPro.action[index] == "T" ) then
+
+		WoWProCharDB.skippedQIDs[WoWPro.QID[index]] = nil
+		unskipPrereqSteps(WoWPro, WoWProCharDB, GID, WoWPro.QID[index])
+
 	end
 
-	unskipstep(index)
 	WoWPro:UpdateGuide()
 	WoWPro:MapPoint()
 end
+
+end -- closure
 
 -- Quest parsing function --
 local function ParseQuests(...)
