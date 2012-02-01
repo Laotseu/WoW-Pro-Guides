@@ -171,7 +171,7 @@ C Bleed the Bloodshaper|QID|26256|M|61.21,59.44|N|Find and kill a Twilight Blood
 T Bleed the Bloodshaper|QID|26256|M|61.32,58.76|N|(UI Alert)|
 A Question the Slaves|QID|26261|PRE|26256|RANK|1|M|61.32,58.76|N|(UI Alert)|
 l Twilight Slaver's Key|QID|26261|L|60739|M|62.8,59.6|N|The key you need is in a small tent. Collect it from the chest here.|
-C Question the Slaves|QID|26261|M|65.47,62.41|N|Mount up and fly to quarry just to the southeast. Free 6 Enslaved Miners.|
+C Question the Slaves|QID|26261|NC|M|65.47,62.41|N|Mount up and fly to quarry just to the southeast. Free 6 Enslaved Miners.|
 T Question the Slaves|QID|26261|M|65.47,62.41|N|(UI Alert)|
 A The Forgemaster's Log|QID|26260|PRE|26261|M|65.47,62.41|N|(UI Alert)|
 T The Forgemaster's Log|QID|26260|M|63.75,55.36|N|Find the Forgemaster's Log at the top of a tower.|
