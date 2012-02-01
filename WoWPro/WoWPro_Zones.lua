@@ -1,6 +1,29 @@
+-------------------------------------------------------------------------------
+-- Localized Lua globals
+-------------------------------------------------------------------------------
+local _G = getfenv(0)
+
+local strupper = _G.strupper
+local tostring = _G.tostring
+
+local pairs = _G.pairs
+
+local GetMapInfo = _G.GetMapInfo
+local GetCurrentMapAreaID = _G.GetCurrentMapAreaID
+local GetCurrentMapContinent = _G.GetCurrentMapContinent
+local GetCurrentMapZone = _G.GetCurrentMapZone
+local GetCurrentMapAreaID = _G.GetCurrentMapAreaID
+local GetMapZones = _G.GetMapZones
+local SetMapZoom = _G.SetMapZoom
+local SetMapByID = _G.SetMapByID
+local GetNumDungeonMapLevels = _G.GetNumDungeonMapLevels
+local GetMapContinents = _G.GetMapContinents
+
 ----------------------------------
 --      WoWPro_Zones.lua      --
 ----------------------------------
+
+local WoWPro = _G.LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 
 -- Map information from 4.1.14007 as of May 6th, 2011
 
@@ -76,6 +99,7 @@ WoWPro.Zone2MapID = {
 			["numFloors"] = 1,
 			["mapID"] = 520,
 			["mapName"] = "TheNexus",
+			["zone"] = "The Nexus",
 			["floor"] = 1,
 		},
 		["The Upper Reaches"] = {
@@ -307,6 +331,7 @@ WoWPro.Zone2MapID = {
 		["Halls of Stone"] = {
 			["numFloors"] = 1,
 			["mapID"] = 526,
+			["zone"] = "Halls of Stone",
 			["mapName"] = "Ulduar77",
 			["floor"] = 1,
 		},
@@ -1259,6 +1284,7 @@ WoWPro.Zone2MapID = {
 			["mapID"] = 524,
 			["floor"] = 1,
 			["mapName"] = "Lower Pinnacle",
+			["zone"] = "Utgarde Pinnacle",
 		},
 		["Unyielding Garrison"] = {
 			["dungeon"] = "HallsofLightning",
@@ -2101,13 +2127,14 @@ WoWPro.Zone2MapID = {
 			["mapID"] = 800,
 			["mapName"] = "Firelands",
 		},
-		["MoltenFront"] = {
+		["Molten Front"] = {
 			["numFloors"] = 0,
 			["mapID"] = 795,
+			["zone"] = "Molten Front",
 			["mapName"] = "MoltenFront",
-		}
-	}
-	
+		},
+}
+
 local MapsSeen = {}
 local zonei, zonec, zonenames, contnames = {}, {}, {}, {}
 local function ScrapeMapInfo(cont, zone)
@@ -2152,7 +2179,7 @@ local function ScrapeMapInfo(cont, zone)
             Zone2MapID[floorinfo.mapName]=floorinfo;
         end
     end
-    
+
     -- Single floor instance
     if record.numFloors == 1 then
         if _G["DUNGEON_FLOOR_" .. strupper(record.mapName) .. "0"] then
@@ -2191,9 +2218,9 @@ end
 
 function WoWPro:GenerateMapCache()
     local here = GetCurrentMapAreaID()
-    
-    Zone2MapID = {}
-    MapsSeen = {}
+
+    local Zone2MapID = {}
+--    local MapsSeen = {}
 	for ci,c in pairs{GetMapContinents()} do
 	    contnames[ci] = c
 	    zonenames[ci] = {GetMapZones(ci)}
@@ -2210,6 +2237,6 @@ function WoWPro:GenerateMapCache()
             ScrapeMapInfo(nil,nil)
         end
     end
-    WoWProData.Zone2MapID = Zone2MapID
+    WoWPro.DB.Zone2MapID = Zone2MapID
     SetMapByID(here)
 end

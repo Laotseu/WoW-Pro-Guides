@@ -65,9 +65,9 @@ A Wanted - Deathclasp, Terror of the Sands|QID|8283|M|55.05,35.93|N|From the Wan
 h Cenarion Hold|QID|8318|M|55.51,36.72|N|At Calandrath.|
 A Deadly Desert Venom|QID|8277|M|55.35,36.26|N|From Beetix Ficklespragg.|
 A Report to Marshal Bluewall|QID|9415|M|54.51,32.83|N|From Rifleman Torrig.|FACTION|Alliance|
-f Cenarion Hold|QID|8318|M|54.42,32.74|N|At Cloud Skydancer.|FACTION|Alliance|
+; f Cenarion Hold|QID|8318|M|54.42,32.74|N|At Cloud Skydancer.|FACTION|Alliance|
 A Report to General Kirika|QID|9416|M|52.96,34.68|N|From Scout Bloodfist.|FACTION|Horde|
-f Cenarion Hold|QID|8318|M|52.75,34.66|N|From Runk Windtamer.|FACTION|Horde|
+; f Cenarion Hold|QID|8318|M|52.75,34.66|N|From Runk Windtamer.|FACTION|Horde|
 A Secret Communication|QID|8318|M|52.67,35.56|N|From Bor Wildmane.|
 A Twilight Geolords|QID|8320|M|52.76,35.63|N|From Huum Wildmane.|
 

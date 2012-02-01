@@ -46,7 +46,7 @@
 WoWPro.Leveling:RegisterGuide('BitAsh2025', 'Ashenvale', 'Bitsem', '20', '25', 'JiySto2530', 'Horde', function()
 return [[
 
-f The Mor'shan Rampart|QID|6441|M|41.97,15.84|Z|Northern Barrens|N|At Gort Goreflight.|
+; f The Mor'shan Rampart|QID|6441|M|41.97,15.84|Z|Northern Barrens|N|At Gort Goreflight.|
 A Rescue the Fallen|QID|13613|RANK|1|M|42.42,15.76|Z|Northern Barrens|N|From Dinah Halfmoon.|
 A Mor'shan Defense|QID|13612|RANK|1|M|42.73,15.06|Z|Northern Barrens|N|From Kadrak.|
 A Find Gorat!|QID|13618|RANK|1|M|42.73,15.06|Z|Northern Barrens|N|From Kadrak.|
@@ -101,7 +101,7 @@ A Playing With Felfire|QID|13730|RANK|1|M|72.68,56.76;73.18,56.99;72.92,58.08;72
 A Dead Elves Walking|QID|13801|RANK|1|M|73.83,62.43|N|From Pixel.|
 
 h Splintertree Post|QID|13801|M|73.94,60.72|N|At Innkeeper Kaylisk.|
-f Splintertree Post|QID|13801|M|73.21,61.54|N|At Vhulgra.|
+; f Splintertree Post|QID|13801|M|73.21,61.54|N|At Vhulgra.|
 
 C Ashenvale Outrunners|QID|6503|S|M|75.52,70.28|N|Kill Ashenvale Outrunners while questing.|
 C Dead Elves Walking|QID|13801|S|M|75.64,75.25|N|Destroy any 15 of the night elf ghosts at Dor'danil Barrow Den.|
@@ -207,9 +207,9 @@ T Dread Head Redemption|QID|13842|M|48.17,70.75|Z|Orgrimmar|N|To Garrosh Hellscr
 F Fly to Splintertree Outpost|QID|13842|N|Fly back to Splintertree yet again. (Or hearth)|
 
 T Bad News Bear-er|QID|13848|M|73.21,61.54;12.03,33.88|N|Talk to Vhulgra for a free flight to Zoram'gar Outpost. Turn in to Commander Grimfang.|
-f Zoram'gar Outpost|QID|13842|M|11.20,34.40|N|At Andruk.|
+; f Zoram'gar Outpost|QID|13842|M|11.20,34.40|N|At Andruk.|
 h Zoram'gar Outpost|QID|13842|M|12.92,34.14|N|At Innkeeper Duras.|
-f Silverwind Refuge|QID|13842|M|49.35,65.30|N|At Wind Tamer Shoshok.|
+; f Silverwind Refuge|QID|13842|M|49.35,65.30|N|At Wind Tamer Shoshok.|
 
 T Sharptalon's Claw|QID|2|M|49.8,65.2|N|To Senani Thunderheart.|
 A Keep the Fires Burning|QID|13890|RANK|1|M|12.08,33.78|N|From Commander Grimfang.|
@@ -234,7 +234,7 @@ T Before You Go...|QID|13920|M|12.10,33.82|N|To Commander Grimfang.|
 A To Hellscream's Watch|QID|13923|RANK|1|M|12.10,33.82|N|From Commander Grimfang.|
 
 F Hellscream's Watch|QID|13923|M|11.20,34.40|N|Talk to Andruk for free flight.|
-f Hellscream's Watch|QID|13923|M|38.12,42.21|N|At Thraka.|
+; f Hellscream's Watch|QID|13923|M|38.12,42.21|N|At Thraka.|
 A Troll Charm|QID|6462|RANK|2|M|38.83,42.40|N|From Mitsuwa.|
 h Hellscream's Watch|QID|6462|M|38.60,42.32|N|At Innkeeper Linkasa.|
 T To Hellscream's Watch|QID|13923|M|38.34,42.96|N|To Captain Goggath.|
