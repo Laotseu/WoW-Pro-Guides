@@ -137,7 +137,7 @@ A In Fungus We Trust|QID|13998|PRE|848|RANK|1|M|48.62,58.27|N|From Apothecary He
 T The Forgotten Pools|QID|870|M|49.43,58.64|N|To Tonga Runetotem.|
 
 A A Growing Problem|QID|13988|PRE|870|RANK|1|M|49.43,58.64|N|From Tonga Runetotem.|
-C A Growing Problem|QID|13988|S|U|46782|M|49.43,58.64|
+C A Growing Problem|QID|13988|S|U|46782|M|60.9,85.9|
 
 T The Zhevra|QID|845|M|49.97,59.79|N|To Sergra Darkthorn.|
 T Hunting the Huntress|QID|903|M|49.97,59.79|N|To Sergra Darkthorn.|
@@ -150,22 +150,22 @@ A Into the Raptor's Den|QID|905|PRE|881|RANK|1|M|49.98,59.82|N|From Sergra Darkt
 C Into the Raptor's Den|QID|905|U|5165|S|M|48.57,74.81;49.64,75.15;47.80,74.67;48.01,76.08|N|From now on kill Raptors on sight until you have 3 feathers.|
 A Flushing Out Verog|QID|14072|RANK|1|M|55.11,78.38|N|From Shoe.|
 A King of Centaur Mountain|QID|13995|RANK|2|M|54.97,78.57|N|Escort quest. From Gorgal Angerscar.|
-C Flushing Out Verog|QID|14072|S|M|52.94,80.85|N|Collect Centaur Intelligence from centaur camps while questing.|
+C Flushing Out Verog|QID|14072|S|NC|M|52.94,80.85|N|Collect Centaur Intelligence from centaur camps while questing.|
 
 C King of Centaur Mountain|QID|13995|NC|M|54.37,78.36|N|Escort quest. Follow Gorgal and protect him. Help him kill Kurak.|
 T King of Centaur Mountain|QID|13995|M|55.15,78.43|N|To Shoe.|
 
 C In Fungus We Trust|QID|13998|NC|U|46789|M|54.94,80.12|N|Use the Fungal Cultures near the Stagnant Oasis.|
-C A Growing Problem|QID|13988|US|U|46782|M|49.43,58.64|
-T A Growing Problem|QID|13988|M|58.77,81.07;60.73,85.38|N|Go up the mountain path to Jerrik Highmountain.|
+C A Growing Problem|QID|13988|US|U|46782|M|58.77,81.07;60.9,85.9|N|Call the Eagle and then go to the summet.|
+T A Growing Problem|QID|13988|M|60.73,85.38|N|To Jerrik Highmountain.|
 
 A The Stagnant Oasis|QID|877|PRE|13988|RANK|1|M|60.73,85.38|N|From Jerrik Highmountain.|
 A Altered Beings|QID|880|RANK|1|M|60.60,85.34|N|From Jerrik Highmountain.|
 
 C Altered Beings|QID|880|S|M|55.36,79.14|N|From now on kill Oasis Snapjaws for their shells.|
-C Flushing Out Verog|QID|14072|US|M|52.94,80.85;51.11,83.65;58.11,82.14;52.94,80.85|N|Finish collecting Centaur Intelligence from huts.|
-C Into the Raptor's Den|QID|905|U|5165|US|M|48.57,74.81;49.64,75.15;47.80,74.67;48.01,76.08|N|Use feathers at the three different colored nests.|
-C The Stagnant Oasis|QID|877|U|5068|M|55.91,80.76|N|Use the Dried Seeds underwater at the fissure.|
+C Flushing Out Verog|QID|14072|US|NC|M|52.94,80.85;51.11,83.65;58.11,82.14;52.94,80.85|N|Finish collecting Centaur Intelligence from huts.|
+C Into the Raptor's Den|QID|905|U|5165|US|NC|M|48.57,74.81;49.64,75.15;47.80,74.67;48.01,76.08|N|Use feathers at the three different colored nests.|
+C The Stagnant Oasis|QID|877|NC|U|5068|M|55.91,80.76|N|Use the Dried Seeds underwater at the fissure.|
 C Altered Beings|QID|880|US|M|55.36,79.14|N|Finish killing snapjaws.|
 
 T Flushing Out Verog|QID|14072|M|55.16,78.39|N|To Shoe.|
