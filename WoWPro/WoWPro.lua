@@ -3,32 +3,53 @@ local _addonname, _addon = ...
 -------------------------------------------------------------------------------
 -- Localized Lua globals
 -------------------------------------------------------------------------------
-local _G = getfenv(0)
+local _G 								= getfenv(0)
 
-local print = _G.print
-local collectgarbage = _G.collectgarbage
-local tostring = _G.tostring
-local wipe = _G.wipe
-local select = _G.select
-local type = _G.type
+local collectgarbage					= _G.collectgarbage
+local date								= _G.date
+local print 							= _G.print
+local select							= _G.select
+local tostring							= _G.tostring
+local type								= _G.type
+local wipe								= _G.wipe
 
-local ipairs = _G.ipairs
-local pairs = _G.pairs
-local tinsert = _G.tinsert
-local tremove = _G.tremove
+local ipairs							= _G.ipairs
+local pairs								= _G.pairs
+local tinsert							= _G.tinsert
+local tremove							= _G.tremove
 
-local UIParent = _G.UIParent
+local UIParent							= _G.UIParent
 
-local CreateFrame = _G.CreateFrame
-local GetAddOnMetadata = _G.GetAddOnMetadata
-local GetBindingKey = _G.GetBindingKey
-local GetQuestsCompleted = _G.GetQuestsCompleted
-local InCombatLockdown = _G.InCombatLockdown
-local LibStub = _G.LibStub
-local SetBinding = _G.SetBinding
+local AcceptQuest						= _G.AcceptQuest
+local CompleteQuest					= _G.CompleteQuest
+local CreateFrame						= _G.CreateFrame
+local GetActiveTitle					= _G.GetActiveTitle
+local GetAddOnMetadata				= _G.GetAddOnMetadata
+local GetAvailableTitle				= _G.GetAvailableTitle
+local GetBindingKey					= _G.GetBindingKey
+local GetGossipActiveQuests		= _G.GetGossipActiveQuests
+local GetGossipAvailableQuests	= _G.GetGossipAvailableQuests
+local GetNumActiveQuests			= _G.GetNumActiveQuests
+local GetNumAvailableQuests		= _G.GetNumAvailableQuests
+local GetNumQuestChoices			= _G.GetNumQuestChoices
+local GetQuestID						= _G.GetQuestID
+local GetQuestReward					= _G.GetQuestReward
+local GetQuestsCompleted			= _G.GetQuestsCompleted
+local GetTitleText					= _G.GetTitleText
+local InCombatLockdown				= _G.InCombatLockdown
+local IsShiftKeyDown 				= _G.IsShiftKeyDown
+local SelectActiveQuest				= _G.SelectActiveQuest
+local SelectAvailableQuest			= _G.SelectAvailableQuest
+local SelectGossipActiveQuest		= _G.SelectGossipActiveQuest
+local SelectGossipAvailableQuest	= _G.SelectGossipAvailableQuest
+local SetBinding 						= _G.SetBinding
 
-local TomTom = _G.TomTom
-local Swatter = _G.Swatter
+local DEFAULT_CHAT_FRAME			= _G.DEFAULT_CHAT_FRAME
+
+local LibStub 							= _G.LibStub
+
+local TomTom 							= _G.TomTom
+local Swatter 							= _G.Swatter
 
 local err_params = {}
 local function err(msg, ...)
@@ -61,9 +82,9 @@ function WoWPro:Embed(target)
 end
 
 function WoWPro:Export(target)
-    table.insert(WoWPro.mixins,target)
+    tinsert(WoWPro.mixins,target)
 end
-    
+
 -- WoWPro keybindings name descriptions --
 _G["BINDING_NAME_CLICK WoWPro_FauxItemButton:LeftButton"] = "Use quest item"
 _G.BINDING_HEADER_BINDING_WOWPRO = "WoWPro Keybindings"
@@ -72,8 +93,10 @@ _G["BINDING_NAME_CLICK WoWPro_FauxTargetButton:LeftButton"] = "Target quest mob"
 -- Debug print function --
 WoWPro.Serial = 0
 function WoWPro:dbp(message,...)
+	local WoWProDB = WoWPro.DB
+
 	if WoWPro.DebugMode and message ~= nil then
-	    local msg = string.format("|cffff7f00%s|r: "..message, self.name or "Wow-Pro",...)
+	    local msg = ("|cffff7f00%s|r: "..message):format(self.name or "Wow-Pro",...)
 		DEFAULT_CHAT_FRAME:AddMessage( msg )
 		WoWPro.Serial = WoWPro.Serial + 1
 		if WoWPro.Serial > 999 then
@@ -84,9 +107,9 @@ function WoWPro:dbp(message,...)
 		        WoWProDB.global.Log = WoWPro.Log
 		        WoWPro.Log = nil
 		    end
-		    WoWProDB.global.Log[date("%Y%m%d/%H%M.")..string.format("%03d",WoWPro.Serial)] = msg
+		    WoWProDB.global.Log[date("%Y%m%d/%H%M.") .. ("%03d"):format(WoWPro.Serial)] = msg
 		else
-		    WoWPro.Log[date("%Y%m%d/%H%M.")..string.format("%02d",WoWPro.Serial)] = msg
+		    WoWPro.Log[date("%Y%m%d/%H%M.") .. ("%02d"):format(WoWPro.Serial)] = msg
 		end
 	end
 end
@@ -94,8 +117,10 @@ WoWPro:Export("dbp")
 
 -- WoWPro print function --
 function WoWPro:Print(message,...)
+	local WoWProDB = WoWPro.DB
+
 	if message ~= nil then
-	    local msg = string.format("|cffffff00%s|r: "..message, self.name or "Wow-Pro",...)
+		local msg = ("|cffffff00%s|r: "..message):format(self.name or "Wow-Pro", ...)
 		DEFAULT_CHAT_FRAME:AddMessage( msg )
 		WoWPro.Serial = WoWPro.Serial + 1
 		if WoWPro.Serial > 999 then
@@ -107,9 +132,9 @@ function WoWPro:Print(message,...)
 		        WoWProDB.global.Log = WoWPro.Log
 		        WoWPro.Log = nil
 		    end
-		    WoWProDB.global.Log[date("%Y%m%d/%H%M.")..string.format("%03d",WoWPro.Serial)] = msg
+		    WoWProDB.global.Log[date("%Y%m%d/%H%M.") .. ("%03d"):format(WoWPro.Serial)] = msg
 		else
-		    WoWPro.Log[date("%Y%m%d/%H%M.")..string.format("%02d",WoWPro.Serial)] = msg
+		    WoWPro.Log[date("%Y%m%d/%H%M.") .. ("%02d"):format(WoWPro.Serial)] = msg
 		end
 	end
 end
@@ -231,7 +256,7 @@ function WoWPro:OnEnable()
 			.."While we would love to claim our software is bug free, errors have occured. "
 			.."Download it for free from http://auctioneeraddon.com/dl/AddOns/!Swatter-5.6.4424.zip or consider installing Auctioneer from www.curse.com .")
 	end
-	
+
 	-- Loading Frames --
 	if not WoWPro.FramesLoaded then --First time the addon has been enabled since UI Load
 		WoWPro:CreateFrames()
@@ -281,6 +306,9 @@ function WoWPro:OnEnable()
 	end)
 
 	WoWPro.EventFrame:SetScript("OnEvent", function(self, event, ...)		-- Setting up event handler
+
+	--if _G.perr_onevent then err("event = %s", event) end
+
 		if WoWPro.InitLockdown then
 		    WoWPro:dbp("LockEvent Fired: "..event)
 		else
@@ -324,7 +352,7 @@ function WoWPro:OnEnable()
 		    WoWPro:dbp("Locking Down 1")
 		    WoWPro.InitLockdown = true
 		end
-		
+
 		if WoWPro.InitLockdown then
 		    return
 		end
@@ -350,13 +378,59 @@ function WoWPro:OnEnable()
 		--	WoWPro:UpdateGuide()
 		--end
 
+		-- ====================================================================
+		-- Event management shared between all the modules (used to be in each)
+		-- ====================================================================
+		if event == "QUEST_LOG_UPDATE" then
+				WoWPro:QUEST_LOG_UPDATE_bucket()
+
+		-- All the auto-complete messages need to be processed after the QUEST_LOG_UPDATE
+		-- hense the bucket. Also, all of them can be escaped with the shift key.
+		elseif event == "GOSSIP_SHOW" then
+
+	 		if WoWProCharDB.AutoSelect == true and not IsShiftKeyDown() then
+				WoWPro:GOSSIP_SHOW_bucket()
+			end
+
+		elseif event == "QUEST_COMPLETE" then
+			-- CompletingQuestQID is used by AutoCompleteSetHearth to detect quests that
+			-- never show up in the quest log i.e. quests that are completed as soon as
+			-- you accept them.
+			WoWPro.CompletingQuestQID = GetQuestID()
+
+			if WoWProCharDB.AutoTurnin == true  and not IsShiftKeyDown() then
+				WoWPro:QUEST_COMPLETE_bucket()
+			end
+
+  		elseif event == "QUEST_DETAIL" then
+
+			if WoWProCharDB.AutoAccept == true and not IsShiftKeyDown() then
+				WoWPro:QUEST_DETAIL_bucket()
+			end
+
+		elseif event == "QUEST_GREETING" then
+
+			if WoWProCharDB.AutoSelect == true and not IsShiftKeyDown() then
+				WoWPro:QUEST_GREETING_bucket()
+			end
+
+		elseif event == "QUEST_PROGRESS" then
+
+			if WoWProCharDB.AutoTurnin == true  and not IsShiftKeyDown() then
+				WoWPro:QUEST_PROGRESS_bucket()
+			end
+
+		end
+
 		-- Module Event Handlers --
 		for name, module in WoWPro:IterateModules() do
 			if WoWPro[name].EventHandler
 			and WoWProDB.char.currentguide
 			and WoWPro.Guides[WoWProDB.char.currentguide]
-			and WoWPro.Guides[WoWProDB.char.currentguide].guidetype == name
-			then WoWPro[name]:EventHandler(self, event, ...) end
+			and WoWPro.Guides[WoWProDB.char.currentguide].guidetype == name then
+				--if _G.perr_onevent then err("event = %s, module = %s", event, name) end
+				WoWPro[name]:EventHandler(self, event, ...)
+			end
 		end
 	end)
 
@@ -433,12 +507,12 @@ function WoWPro:LoadAllGuides()
         WoWPro:LoadGuide(guidID)
         nextGID = WoWPro.Guides[guidID].nextGID
         if WoWPro.Guides[guidID].zone then
-            zed = strtrim(string.match(WoWPro.Guides[guidID].zone, "([^%(%-]+)" ))
+            zed = WoWPro.Guides[guidID].zone:match("([^%(%-]+)" ):trim()
             if not WoWPro:ValidZone(zed) then
 		        WoWPro:Print("Invalid guide zone:"..(WoWPro.Guides[guidID].zone))
 		    end
 		end
-        if nextGID and WoWPro.Guides[nextGID] == nil then	    
+        if nextGID and WoWPro.Guides[nextGID] == nil then
             WoWPro:Print("Successor to " .. guidID .. " which is " .. tostring(nextGID) .. " is invalid.")
         end
         if WoWPro.Guides[guidID].faction then
@@ -449,5 +523,171 @@ function WoWPro:LoadAllGuides()
         Count = Count + 1
 		WoWPro:Print("%d Done! %d A, %d N, %d H guides present", Count, aCount, nCount, hCount)
 	end
-end	    
+end
 
+---------
+-- Event processing and buckets that are used by multiple modules
+---------
+
+do -- QUEST_LOG_UPDATE_bucket Bucket Closure
+
+--[[
+	Purpose:
+	--------
+
+	This bucket throttle the LOG_UPDATE messages and also make sure that
+	the quest auto-complete dialogs are processed after the guide has been
+	updated.
+]]
+
+	local THROTTLE_TIME = 0.2
+	local throt, quest_log_update, gossip_show, quest_greeting, quest_detail, quest_complete, quest_progress
+	local f = CreateFrame("Frame")
+	f:Hide()
+	f:SetScript("OnShow", function(self)
+		throt = THROTTLE_TIME
+	end)
+	f:SetScript("OnUpdate", function(self, elapsed)
+		throt = throt - elapsed
+		if throt < 0 then
+			if quest_log_update then
+
+				WoWPro:PopulateQuestLog()
+				WoWPro:AutoCompleteQuestUpdate()
+				WoWPro.Leveling:UpdateQuestTracker() -- **** To fix later
+
+				quest_log_update = nil
+			end
+
+			if gossip_show then
+
+				local qidx = WoWPro.ActiveStep
+				local action, step = WoWPro.action[qidx], WoWPro.step[qidx]
+
+				if action == "T" then
+
+					local index = 1
+					repeat
+						local item = select((index-1)*4 + 1, GetGossipActiveQuests())
+						if item == step then
+							SelectGossipActiveQuest(index)
+							break
+						end
+						index = index + 1
+					until not item
+
+				elseif action == "A" then
+
+					local index = 1
+					repeat
+						local item = select((index-1)*4 + 1, GetGossipAvailableQuests())
+						if item == step then
+							SelectGossipAvailableQuest(index)
+							break
+						end
+						index = index + 1
+					until not item
+
+				end
+
+				gossip_show = nil
+			end
+
+			if quest_greeting then
+
+
+				local qidx = WoWPro.ActiveStep
+				local action, step = WoWPro.action[qidx], WoWPro.step[qidx]
+
+				if action == "T" then
+					local numActiveQuests = GetNumActiveQuests()
+					local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+					for i=1, numActiveQuests do
+						if GetActiveTitle(i) == step then
+							SelectActiveQuest(i)
+							break
+						end
+					end
+				elseif action == "A" then
+					local numAvailableQuests = GetNumAvailableQuests()
+					for i=1, numAvailableQuests do
+						if GetAvailableTitle(i) == step then
+							SelectAvailableQuest(i)
+							break
+						end
+					end
+				end
+
+				quest_greeting = nil
+			end
+
+			if quest_progress then
+
+				-- Turnin the current quest automaticaly if applicable
+				local qidx = WoWPro.ActiveStep
+				if WoWPro.action[qidx] == "T" and GetTitleText() == WoWPro.step[qidx] then
+					CompleteQuest()
+				end
+
+				quest_progress = nil
+			end
+
+			if quest_complete then
+
+				-- Choose the reward automaticaly if there is only one choice
+				local qidx = WoWPro.ActiveStep
+				if (WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and
+					GetTitleText() == WoWPro.step[qidx] and
+					GetNumQuestChoices() <= 1 then
+						GetQuestReward(0)
+				end
+
+				quest_complete = nil
+			end
+
+			if quest_detail then
+
+				-- Accept the current quest automaticaly if applicable
+				local qidx = WoWPro.ActiveStep
+				if WoWPro.action[qidx] == "A" and GetTitleText() == WoWPro.step[qidx] then
+					AcceptQuest()
+				end
+
+				quest_detail = nil
+			end
+
+			f:Hide()
+		end
+	end)
+
+	function WoWPro:QUEST_LOG_UPDATE_bucket()
+		quest_log_update = true
+		f:Show()
+	end
+
+	function WoWPro:GOSSIP_SHOW_bucket()
+		gossip_show = true
+		f:Show()
+	end
+
+	function WoWPro:QUEST_GREETING_bucket()
+		quest_greeting = true
+		f:Show()
+	end
+
+	function WoWPro:QUEST_PROGRESS_bucket()
+		quest_progress = true
+		f:Show()
+	end
+
+	function WoWPro:QUEST_COMPLETE_bucket()
+		quest_complete = true
+		f:Show()
+	end
+
+	function WoWPro:QUEST_DETAIL_bucket()
+		quest_detail = true
+		f:Show()
+	end
+
+end -- End Bucket Closure

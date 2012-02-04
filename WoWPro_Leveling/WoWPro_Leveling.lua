@@ -91,7 +91,7 @@ function WoWPro.Leveling:OnEnable()
 		WoWPro:LoadGuide(WoWProDB.char.lastlevelingguide)
 	end
 
-	WoWPro.Leveling.FirstMapCall = true
+	WoWPro.FirstMapCall = true
 
 	-- Server query for completed quests --
 	--QueryQuestsCompleted()

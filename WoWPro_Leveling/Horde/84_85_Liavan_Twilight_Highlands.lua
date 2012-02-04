@@ -90,9 +90,11 @@ A Smoot's Samophlange|QID|26361|M|54.52,51.21|Z|Azshara|N|From Fleep.|
 T Ready the Navy|QID|26335|M|53.52,47.36|Z|Azshara|
 A Beating the Market|QID|26337|M|53.52,47.36|Z|Azshara|
 
-C Beating the Market|QID|26337|M|58.12,52.42|Z|Azshara|N|Scattered throughout the harbor. Tag AWOL grunts as you look for him.|
-C Smoot's Samophlange|QID|26361|M|54.73,48.78|Z|Azshara|N|Running Wildly through the harbor.|
-C Ready the Ground Troops|QID|26374|M|55.24,48.15|Z|Azshara|N|Find any awol grunts you still might need.|
+C Ready the Ground Troops|QID|26374|S|T|AWOL Grunt|M|55.24,48.15|Z|Azshara|N|Tag AWOL grunts around the harbor.|
+C Smoot's Samophlange|QID|26361|S|NC|T|Smoot|M|54.73,48.78|Z|Azshara|N|Running Wildly through the harbor.|
+C Beating the Market|QID|26337|T|Bilgewater Foreman|M|58.12,52.42|Z|Azshara|N|Scattered throughout the harbor.|
+C Smoot's Samophlange|QID|26361|US|NC|T|Smoot|M|54.73,48.78|Z|Azshara|N|Running Wildly through the harbor.|
+C Ready the Ground Troops|QID|26374|US|T|AWOL Grunt|M|55.24,48.15|Z|Azshara|N|Find any awol grunts you still might need.|
 
 T Smoot's Samophlange|QID|26361|M|54.57,51.27|Z|Azshara|N|To Fleep.|
 A Pre-Flight Checklist|QID|26372|M|54.57,51.27|Z|Azshara|N|From Fleep.|
@@ -104,7 +106,7 @@ A Twilight Skies|QID|28849|M|60.14,50.40|Z|Azshara|N|From Captain Krazz.|
 
 T Twilight Skies|QID|28849|M|50.69,73.97|Z|Azshara|N|To Friz Groundspin. Top of the tower.|
 A Twilight Skies|QID|26388|M|50.69,73.97|Z|Azshara|N|From Friz Groundspin.|
-C Twilight Skies|QID|26388|M|81.97,50.32|N|Wait for the boat|
+C Twilight Skies|QID|26388|M|50.8,73.6|Z|Azshara|aN|Wait for the boat|
 T Twilight Skies|QID|26388|M|82.53,49.90|N|To Admiral Stonefist.|
 
 A Stalled Negotiations|QID|26539|M|82.53,49.90|N|From Admiral Stonefist.|

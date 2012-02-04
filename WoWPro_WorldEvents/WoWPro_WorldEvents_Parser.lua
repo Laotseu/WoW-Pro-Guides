@@ -543,7 +543,7 @@ function WoWPro.WorldEvents:LoadGuide()
 
 	-- Set the arrow
 	WoWPro:MapPoint()
-	WoWPro.WorldEvents.FirstMapCall = false
+	WoWPro.FirstMapCall = false
 
 	-- Audio feedback to tell the user it's done
 	if WoWProDB.profile.checksound then
@@ -1139,9 +1139,9 @@ function WoWPro.WorldEvents:AutoCompleteQuestUpdate(questComplete)
 	end
 
 	-- First Map Point --
-	if WoWPro.WorldEvents.FirstMapCall then
+	if WoWPro.FirstMapCall then
 		WoWPro:MapPoint()
-		WoWPro.WorldEvents.FirstMapCall = false
+		WoWPro.FirstMapCall = false
 	end
 
 end

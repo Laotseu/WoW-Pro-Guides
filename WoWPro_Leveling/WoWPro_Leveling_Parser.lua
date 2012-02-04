@@ -61,7 +61,6 @@ local GetTitleText 					= _G.GetTitleText
 local GetZoneText 					= _G.GetZoneText
 local InCombatLockdown 				= _G.InCombatLockdown
 local IsInInstance 					= _G.IsInInstance
-local IsShiftKeyDown 				= _G.IsShiftKeyDown
 local PlaySoundFile 					= _G.PlaySoundFile
 local QuestLogPushQuest 			= _G.QuestLogPushQuest
 local QuestLog_OpenToQuest 		= _G.QuestLog_OpenToQuest
@@ -85,12 +84,13 @@ local LibStub 							= _G.LibStub
 
 local err_params = {}
 local function err(msg, ...)
-	if not _G.WoWPro.quest_log_debug then return end
 	msg = tostring(msg)
 	wipe(err_params)
 	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
 	_G.geterrorhandler()(msg:format(_G.unpack(err_params)) .. " - " .. _G.time())
 end
+
+--_G.perr = true
 
 --------------------------------------
 --      WoWPro_Leveling_Parser      --
@@ -450,7 +450,7 @@ function WoWPro.Leveling:LoadGuide()
 	WoWPro:PopulateQuestLog() --Calling this will populate our quest log table for use here
 
 	-- Checking to see if any steps are already complete wihtout updating the GUI --
-	WoWPro.Leveling:AutoCompleteQuestUpdate(true)
+	WoWPro:AutoCompleteQuestUpdate(true)
 
 --[[
 	for i=1, WoWPro.stepcount do
@@ -494,7 +494,7 @@ function WoWPro.Leveling:LoadGuide()
 
 	-- Set the arrow
 	WoWPro:MapPoint()
-	WoWPro.Leveling.FirstMapCall = false
+	WoWPro.FirstMapCall = false
 
 	-- Audio feedback to tell the user it's done
 	if WoWProDB.profile.checksound then
@@ -869,6 +869,9 @@ end
 
 -- Event Response Logic --
 function WoWPro.Leveling:EventHandler(self, event, ...)
+
+--if _G.perr_onevent then err("event = %s", event) end
+
 	local WoWProCharDB = WoWPro.CharDB
 
 	WoWPro:dbp("Running: Leveling Event Handler "..event)
@@ -908,89 +911,105 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 	--end
 
 	-- Lets see what quests the NPC has:
-	elseif event == "GOSSIP_SHOW" then
-	 	if WoWProCharDB.AutoSelect == true and not IsShiftKeyDown() then
-			local npcQuests = {GetGossipAvailableQuests()};
-			local index = 0
-        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-			for _,item in pairs(npcQuests) do
-				if type(item) == "string" then
-					index = index + 1
-					if WoWPro.action[qidx] == "A" and item == WoWPro.step[qidx] then
-						SelectGossipAvailableQuest(index)
-						return
-					end
-				end
-			end
-			npcQuests =  {GetGossipActiveQuests()};
-			index = 0
-			for _,item in pairs(npcQuests) do
-				if type(item) == "string" then
-					index = index + 1
-					if WoWPro.action[qidx] == "T" and item == WoWPro.step[qidx] then
-						SelectGossipActiveQuest(index)
-						return
-					end
-				end
-			end
-		end
+	--elseif event == "GOSSIP_SHOW" then
+--if _G.perr then err("GOSSIP_SHOW") end
 
-	elseif event == "QUEST_GREETING" then
-		if WoWProCharDB.AutoSelect == true and not IsShiftKeyDown() then
-			local numAvailableQuests = GetNumAvailableQuests()
-			local numActiveQuests = GetNumActiveQuests()
-        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-			for i=1, numActiveQuests do
-				if WoWPro.action[qidx] == "T" and GetActiveTitle(i) == WoWPro.step[qidx] then
-					SelectActiveQuest(i)
-					return
-			   end
-			end
-			for i=1, numAvailableQuests do
-				if WoWPro.action[qidx] == "A" and GetAvailableTitle(i) == WoWPro.step[qidx] then
-					SelectAvailableQuest(i)
-					return
-				end
-			end
-		end
+	-- 	if WoWProCharDB.AutoSelect == true and not IsShiftKeyDown() then
+	--		WoWPro.Leveling:GOSSIP_SHOW_bucket()
+			--local npcQuests = {GetGossipAvailableQuests()};
+			--local index = 0
+        --local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+			--for _,item in pairs(npcQuests) do
+			--	if type(item) == "string" then
+			--		index = index + 1
+			--		if WoWPro.action[qidx] == "A" and item == WoWPro.step[qidx] then
+			--			SelectGossipAvailableQuest(index)
+			--			return
+			--		end
+			--	end
+			--end
+			--npcQuests =  {GetGossipActiveQuests()};
+			--index = 0
+			--for _,item in pairs(npcQuests) do
+			--	if type(item) == "string" then
+			--		index = index + 1
+			--		if WoWPro.action[qidx] == "T" and item == WoWPro.step[qidx] then
+			--			SelectGossipActiveQuest(index)
+			--			return
+			--		end
+			--	end
+			--end
+	--	end
 
-   elseif event == "QUEST_DETAIL" then
-		if WoWProCharDB.AutoAccept == true and not IsShiftKeyDown() then
-			WoWPro.Leveling:QUEST_DETAIL_bucket()
+	--elseif event == "QUEST_GREETING" then
+--if _G.perr then err("QUEST_GREETING") end
+	--	if WoWProCharDB.AutoSelect == true and not IsShiftKeyDown() then
+	--		WoWPro.Leveling:QUEST_GREETING_bucket()
+		--	local numAvailableQuests = GetNumAvailableQuests()
+		--	local numActiveQuests = GetNumActiveQuests()
+       -- local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+		--	for i=1, numActiveQuests do
+		--		if WoWPro.action[qidx] == "T" and GetActiveTitle(i) == WoWPro.step[qidx] then
+		--			SelectActiveQuest(i)
+		--			return
+		--	   end
+		--	end
+		--	for i=1, numAvailableQuests do
+		--		if WoWPro.action[qidx] == "A" and GetAvailableTitle(i) == WoWPro.step[qidx] then
+		--			SelectAvailableQuest(i)
+		--			return
+		--		end
+		--	end
+	--	end
+
+  -- elseif event == "QUEST_DETAIL" then
+--if _G.perr then err("QUEST_DETAIL") end
+	--	if WoWProCharDB.AutoAccept == true and not IsShiftKeyDown() then
+	--		WoWPro.Leveling:QUEST_DETAIL_bucket()
         --local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
 	   	--local questtitle = GetTitleText();
 			--if WoWPro.action[qidx] == "A" and questtitle == WoWPro.step[qidx] then
 			--	AcceptQuest()
 			--end
-		end
+	--	end
 
-	elseif event == "QUEST_PROGRESS" then
-		if WoWProCharDB.AutoTurnin == true  and not IsShiftKeyDown() then
-			WoWPro.Leveling:QUEST_PROGRESS_bucket()
+	--elseif event == "QUEST_PROGRESS" then
+--if _G.perr then err("QUEST_PROGRESS") end
+		--if WoWProCharDB.AutoTurnin == true  and not IsShiftKeyDown() then
+		--	WoWPro.Leveling:QUEST_PROGRESS_bucket()
         --local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
 			--local questtitle = GetTitleText();
 			--if WoWPro.action[qidx] == "T" and questtitle == WoWPro.step[qidx] then
 			--	CompleteQuest()
 			--end
-		end
+		--end
 
-	-- Noting that a quest is being completed for quest log update events --
-	elseif event == "QUEST_COMPLETE" then
-		WoWPro.Leveling.CompletingQuest = GetQuestID()
-   	local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-   	local questtitle = GetTitleText();
-		if WoWProCharDB.AutoTurnin == true and (WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and questtitle == WoWPro.step[qidx] then
-			if (GetNumQuestChoices() <= 1) then
-				GetQuestReward(0)
-			end
-     	end
+	--elseif event == "QUEST_COMPLETE" then
+--if _G.perr then err("QUEST_COMPLETE") end
+		-- Keep track of the quest being completed
+		-- This is need to get information from quest that never get displayed
+		-- in the quest log i.e. quests that complete as soon as they are
+		-- accepted.
+		--WoWPro.Leveling.CompletingQuest = GetQuestID()
+
+		-- Autocomplete stuff
+		--if WoWProCharDB.AutoTurnin == true  and not IsShiftKeyDown() then
+		--	WoWPro.Leveling:QUEST_COMPLETE_bucket()
+  -- 	local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+  -- 	local questtitle = GetTitleText();
+	--	if WoWProCharDB.AutoTurnin == true and (WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and questtitle == WoWPro.step[qidx] then
+	--		if (GetNumQuestChoices() <= 1) then
+	--			GetQuestReward(0)
+	--		end
+  --   	end
+		--end
 		--WoWPro.Leveling.CompletingQuestName = true
 		--WoWPro.Leveling:AutoCompleteQuestUpdate(GetQuestID())
 		--WoWPro.Leveling:QUEST_LOG_UPDATE_bucket()
 	--end
 
-	elseif event == "QUEST_LOG_UPDATE" then
-		WoWPro.Leveling:QUEST_LOG_UPDATE_bucket()
+	--elseif event == "QUEST_LOG_UPDATE" then
+	--	WoWPro.Leveling:QUEST_LOG_UPDATE_bucket()
 		-- Keep track of the completed quests
 		--WoWPro.Leveling:GetTurnins(...)
 
@@ -1023,6 +1042,7 @@ function WoWPro.Leveling:AutoCompleteGetFP(...)
 end
 
 -- Auto-Complete: Quest Update --
+--[[
 function WoWPro.Leveling:AutoCompleteQuestUpdate(skipUIUpdate)
 --WoWPro:Trace("Start WoWPro.Leveling:AutoCompleteQuestUpdate")
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
@@ -1122,18 +1142,20 @@ function WoWPro.Leveling:AutoCompleteQuestUpdate(skipUIUpdate)
 	end
 
 	-- First Map Point --
-	if not skipUIUpdate and WoWPro.Leveling.FirstMapCall then
+	if not skipUIUpdate and WoWPro.FirstMapCall then
 		WoWPro:MapPoint()
-		WoWPro.Leveling.FirstMapCall = false
+		WoWPro.FirstMapCall = false
 	end
 
 --WoWPro:Trace("End WoWPro.Leveling:AutoCompleteQuestUpdate")
 end
+]]
 
+--[[
 do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 
 	local THROTTLE_TIME = 0.2
-	local throt, quest_log_update, quest_detail, quest_progress
+	local throt, quest_log_update, gossip_show, quest_greeting, quest_detail, quest_complete, quest_progress
 	local f = CreateFrame("Frame")
 	f:Hide()
 	f:SetScript("OnShow", function(self)
@@ -1143,34 +1165,139 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 		throt = throt - elapsed
 		if throt < 0 then
 			if quest_log_update then
-			WoWPro:PopulateQuestLog()
-			WoWPro.Leveling:AutoCompleteQuestUpdate()
-			WoWPro.Leveling:UpdateQuestTracker()
+
+				WoWPro:PopulateQuestLog()
+				WoWPro.Leveling:AutoCompleteQuestUpdate()
+				WoWPro.Leveling:UpdateQuestTracker()
+
 				quest_log_update = nil
 			end
 
-			if quest_detail then
+			if gossip_show then
 
-				-- Accept the current quest automaticaly if applicable
-				local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-				local questtitle = GetTitleText();
-				if WoWPro.action[qidx] == "A" and questtitle == WoWPro.step[qidx] then
-					AcceptQuest()
+--if _G.perr then err("gossip_show") end
+
+				local qidx = WoWPro.ActiveStep
+				local action, step = WoWPro.action[qidx], WoWPro.step[qidx]
+
+				if action == "T" then
+
+					local index = 1
+					repeat
+						local item = select((index-1)*4 + 1, GetGossipActiveQuests())
+						if item == step then
+							SelectGossipActiveQuest(index)
+							break
+						end
+						index = index + 1
+					until not item
+
+					--for _,item in ipairs(npcQuests) do
+					--	if type(item) == "string" then
+					--		index = index + 1
+					--		if item == step then
+					--			-- action == "T"
+					--			SelectGossipActiveQuest(index)
+					--			break
+					--		end
+					--	end
+					--end
+				elseif action == "A" then
+
+					local index = 1
+					repeat
+						local item = select((index-1)*4 + 1, GetGossipAvailableQuests())
+						if item == step then
+							SelectGossipAvailableQuest(index)
+							break
+						end
+						index = index + 1
+					until not item
+
+					--local npcQuests = GetGossipAvailableQuests()
+					--local index = 0
+					--for _,item in ipairs(npcQuests) do
+					--	if type(item) == "string" then
+					--		index = index + 1
+					--		if item == step then
+					--			SelectGossipAvailableQuest(index)
+					--			break
+					--		end
+					--	end
+					--end
 				end
 
-				quest_detail = nil
+				gossip_show = nil
+			end
+
+			if quest_greeting then
+
+--if _G.perr then err("quest_greeting") end
+
+				local qidx = WoWPro.ActiveStep
+				local action, step = WoWPro.action[qidx], WoWPro.step[qidx]
+
+				if action == "T" then
+					local numActiveQuests = GetNumActiveQuests()
+					local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+					for i=1, numActiveQuests do
+						if GetActiveTitle(i) == step then
+							SelectActiveQuest(i)
+							break
+						end
+					end
+				elseif action == "A" then
+					local numAvailableQuests = GetNumAvailableQuests()
+					for i=1, numAvailableQuests do
+						if GetAvailableTitle(i) == step then
+							SelectAvailableQuest(i)
+							break
+						end
+					end
+				end
+
+				quest_greeting = nil
 			end
 
 			if quest_progress then
 
+--if _G.perr then err("quest_progress") end
+
 				-- Turnin the current quest automaticaly if applicable
-				local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-				local questtitle = GetTitleText();
-				if WoWPro.action[qidx] == "T" and questtitle == WoWPro.step[qidx] then
+				local qidx = WoWPro.ActiveStep
+				if WoWPro.action[qidx] == "T" and GetTitleText() == WoWPro.step[qidx] then
 					CompleteQuest()
 				end
 
 				quest_progress = nil
+			end
+
+			if quest_complete then
+
+--if _G.perr then err("quest_complete") end
+
+				-- Choose the reward automaticaly if there is only one choice
+				local qidx = WoWPro.ActiveStep
+				if (WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and
+					GetTitleText() == WoWPro.step[qidx] and
+					GetNumQuestChoices() <= 1 then
+						GetQuestReward(0)
+				end
+
+				quest_complete = nil
+			end
+
+			if quest_detail then
+
+--if _G.perr then err("quest_detail") end
+
+				-- Accept the current quest automaticaly if applicable
+				local qidx = WoWPro.ActiveStep
+				if WoWPro.action[qidx] == "A" and GetTitleText() == WoWPro.step[qidx] then
+					AcceptQuest()
+				end
+
+				quest_detail = nil
 			end
 
 			f:Hide()
@@ -1182,8 +1309,13 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 		f:Show()
 	end
 
-	function WoWPro.Leveling:QUEST_DETAIL_bucket()
-		quest_detail = true
+	function WoWPro.Leveling:GOSSIP_SHOW_bucket()
+		gossip_show = true
+		f:Show()
+	end
+
+	function WoWPro.Leveling:QUEST_GREETING_bucket()
+		quest_greeting = true
 		f:Show()
 	end
 
@@ -1192,7 +1324,18 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 		f:Show()
 	end
 
+	function WoWPro.Leveling:QUEST_COMPLETE_bucket()
+		quest_complete = true
+		f:Show()
+	end
+
+	function WoWPro.Leveling:QUEST_DETAIL_bucket()
+		quest_detail = true
+		f:Show()
+	end
+
 end -- End Bucket Closure
+]]
 
 do -- BAG_UPDATE_bucket Waiting Bucket Closure
 
@@ -1302,10 +1445,10 @@ function WoWPro.Leveling:AutoCompleteSetHearth(...)
 		local quest = select(3, msg:find("^(.+) completed.$"))
 		if quest then
 			local qid = GetQuestID()
-			if qid and WoWPro.Leveling.CompletingQuest and qid == WoWPro.Leveling.CompletingQuest then
-				WoWPro.Leveling.CompletingQuest = nil
+			if qid and WoWPro.CompletingQuestQID and qid == WoWPro.CompletingQuestQID then
+				WoWPro.CompletingQuestQID = nil
 				WoWProCharDB.completedQIDs[qid] = true
-				WoWPro.Leveling:QUEST_LOG_UPDATE_bucket()
+				WoWPro:QUEST_LOG_UPDATE_bucket()
 			end
 		end
 	end

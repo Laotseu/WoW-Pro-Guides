@@ -52,7 +52,7 @@ function WoWPro.WorldEvents:OnEnable()
 		WoWPro.WorldEvents.FramesLoaded = true
 	end
 
-	WoWPro.WorldEvents.FirstMapCall = true
+	WoWPro.FirstMapCall = true
 
 	-- Server query for completed quests --
 	--QueryQuestsCompleted() -- Need to check for this

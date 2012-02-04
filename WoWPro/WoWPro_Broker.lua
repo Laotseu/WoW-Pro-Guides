@@ -26,6 +26,7 @@ local UIParent = _G.UIParent
 local CreateFrame = _G.CreateFrame
 local EasyMenu = _G.EasyMenu
 local GetFactionInfo = _G.GetFactionInfo
+local GetFactionInfoByID = _G.GetFactionInfoByID
 local GetItemCount = _G.GetItemCount
 local GetNumFactions = _G.GetNumFactions
 local GetNumQuestLeaderBoards = _G.GetNumQuestLeaderBoards
@@ -313,15 +314,9 @@ function WoWPro:NextStep(k,i)
 		if WoWPro.optional[k] and WoWPro.QID[k] then
 			skip = true --Optional steps default to skipped --
 
-			-- Checking Use Items --
-			--if WoWPro.use[k] then
-			--	if GetItemCount(WoWPro.use[k]) >= 1 then
-			--		skip = false -- If the optional quest has a use item and it's in the bag, it's NOT skipped --
-			--	end
-			--end
 			if WoWPro.QuestLog[WoWPro.QID[k]] then
 				skip = false -- If the optional quest is in the quest log, it's NOT skipped --
-				WoWPro.prereq[k] = false -- If the quest is in the log, the prereqs must already be met no matter
+				WoWPro.prereq[k] = false -- If the quest is in the log, the prereqs are already met no matter
 												 -- what the guide say
 			end
 		end
@@ -391,8 +386,7 @@ function WoWPro:NextStep(k,i)
 
 			skip = true --reputation steps skipped by default
 
-			name, description, standingId, bottomValue, topValue, earnedValue, atWarWith,
-			canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfoByID(factionIndex)
+			local _, _, standingId, bottomValue, _, earnedValue = GetFactionInfoByID(factionIndex)
 			if (repID <= standingId) and (repmax >= standingId) and (replvl == 0) then
 				skip = false
 			end
@@ -617,4 +611,82 @@ function WoWPro:PopulateQuestLog()
 	WoWPro:dbp("Quest Log populated. "..num.." quests found.")
 --err("Quest Log populated, %s quests found.", num)
 --WoWPro:Trace("End WoWPro:PopulateQuestLog")
+end
+
+------------------------
+-- Functions to parse quests and log that used to be in module but really need to be in core
+------------------------
+
+-- Auto-Complete: Quest Update --
+function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
+	local GID = WoWProDB.char.currentguide
+	if not GID or not WoWPro.Guides[GID] then return end
+
+	if WoWProCharDB.Guide then
+		for i=1,#WoWPro.action do
+
+			local action = WoWPro.action[i]
+			local QID = WoWPro.QID[i]
+			local completion = WoWProCharDB.Guide[GID].completion[i]
+
+			-- A quest was just abandoned, all the related steps that were marked
+			-- as completed need to be unmarked
+			if WoWPro.abandonedQID == QID and
+				( action == "A" or action == "C" ) and
+				completion then
+
+				WoWProCharDB.Guide[GID].completion[i] = nil
+				completion = nil
+				if not skipUIUpdate then
+					WoWPro:UpdateGuide()
+					WoWPro:MapPoint()
+				end
+			end
+
+			if not completion then
+
+				-- Quest is flaged as comple in the completeQIDs table
+				if WoWProCharDB.completedQIDs[QID] then
+					WoWPro.CompleteStep(i, skipUIUpdate)
+					completion = true
+
+				-- Quests that are in the current log have been accepted
+				elseif action == "A" and not completion and WoWPro.QuestLog[QID] then
+					WoWPro.CompleteStep(i, skipUIUpdate)
+					completion = true
+
+				-- Quest Completion: Any step that is not a Turn in is considered completed if the quest is completed --
+				elseif action ~= "T" and not completion and WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].complete then
+					WoWPro.CompleteStep(i, skipUIUpdate)
+					completion = true
+
+				-- Partial Completion --
+				elseif WoWPro.QuestLog[QID] and not completion and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[i] then
+					local numquesttext = select("#", (";"):split(WoWPro.questtext[i]))
+					local complete = true
+					for l=1,numquesttext do
+						local lquesttext = select(numquesttext-l+1, (";"):split(WoWPro.questtext[i]))
+						local lcomplete = false
+						for _, objective in pairs(WoWPro.QuestLog[QID].leaderBoard) do --Checks each of the quest log objectives
+							if lquesttext == objective then --if the objective matches the step's criteria, mark true
+								lcomplete = true
+							end
+						end
+						if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
+					end
+					if complete then WoWPro.CompleteStep(i, skipUIUpdate) end --if the step has not been found to be incomplete, run the completion function
+				end
+
+			end
+		end
+	end
+
+	-- First Map Point --
+	if not skipUIUpdate and WoWPro.FirstMapCall then
+		WoWPro:MapPoint()
+		WoWPro.FirstMapCall = false
+	end
+
 end

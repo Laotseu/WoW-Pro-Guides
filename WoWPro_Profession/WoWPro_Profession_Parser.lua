@@ -693,9 +693,9 @@ function WoWPro.Profession:AutoCompleteQuestUpdate(questComplete)
 	end
 	
 	-- First Map Point --
-	if WoWPro.Profession.FirstMapCall then
+	if WoWPro.FirstMapCall then
 		WoWPro:MapPoint()
-		WoWPro.Profession.FirstMapCall = false
+		WoWPro.FirstMapCall = false
 	end
 	
 end

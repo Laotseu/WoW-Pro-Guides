@@ -574,9 +574,9 @@ function WoWPro.Dailies:AutoCompleteQuestUpdate()
 	end
 	
 	-- First Map Point --
-	if WoWPro.Dailies.FirstMapCall then
+	if WoWPro.FirstMapCall then
 		WoWPro:MapPoint()
-		WoWPro.Dailies.FirstMapCall = false
+		WoWPro.FirstMapCall = false
 	end
 	
 end

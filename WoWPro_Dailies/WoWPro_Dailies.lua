@@ -41,7 +41,7 @@ function WoWPro.Dailies:OnEnable()
 		WoWPro:LoadGuide(WoWProDB.char.lastdailiesguide)
 	end
 	
-	WoWPro.Dailies.FirstMapCall = true
+	WoWPro.FirstMapCall = true
 	
 	-- Server query for completed quests --
 	WoWPro.Dailies.DailiesReset = true
