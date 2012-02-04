@@ -288,8 +288,18 @@ function WoWPro:OnEnable()
 	-- Event Setup --
 	WoWPro:dbp("Registering Events: Core Addon")
 	WoWPro:RegisterEvents( {															-- Setting up core events
-		"PLAYER_REGEN_ENABLED", "PARTY_MEMBERS_CHANGED", "QUEST_QUERY_COMPLETE",
-		"UPDATE_BINDINGS", "PLAYER_ENTERING_WORLD", "PLAYER_LEAVING_WORLD", "CINEMATIC_STOP"
+		"CINEMATIC_STOP",
+		"PARTY_MEMBERS_CHANGED",
+		"PLAYER_ENTERING_WORLD",
+		"PLAYER_LEAVING_WORLD",
+		"PLAYER_REGEN_ENABLED",
+		"QUEST_COMPLETE",
+		"QUEST_DETAIL",
+		"QUEST_GREETING",
+		"QUEST_PROGRESS",
+		"QUEST_LOG_UPDATE",
+		"QUEST_QUERY_COMPLETE",
+		"UPDATE_BINDINGS",
 	})
 --	WoWPro.LockdownTimer = nil
 	WoWPro.LockdownTimer = 2.0 -- Initial setting so that InitLockdown will get set to nil after login
@@ -554,7 +564,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 
 				WoWPro:PopulateQuestLog()
 				WoWPro:AutoCompleteQuestUpdate()
-				WoWPro.Leveling:UpdateQuestTracker() -- **** To fix later
+				WoWPro:UpdateQuestTracker()
 
 				quest_log_update = nil
 			end

@@ -690,3 +690,60 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 	end
 
 end
+
+-- Update WoWPro Quest Tracker --
+function WoWPro:UpdateQuestTracker()
+	local WoWProDB = WoWPro.DB
+
+	if not WoWPro.GuideFrame:IsVisible() then return end
+	local GID = WoWProDB.char.currentguide
+	if not GID or not WoWPro.Guides[GID] then return end
+
+	for i,row in ipairs(WoWPro.rows) do
+		local index = row.index
+		local questtext = WoWPro.questtext[index]
+		local action = WoWPro.action[index]
+		local lootitem = WoWPro.lootitem[index]
+		local lootqty = WoWPro.lootqty[index]
+
+		local QID = WoWPro.QID[index]
+		-- Setting up quest tracker --
+		row.trackcheck = false
+		local track = ""
+		if WoWProDB.profile.track and ( action == "C" or questtext or lootitem) then
+			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard then
+				local j = WoWPro.QuestLog[QID].index
+				row.trackcheck = true
+				if not questtext and action == "C" then
+					for l=1,GetNumQuestLeaderBoards(j) do
+						local itemtext, _, isdone = GetQuestLogLeaderBoard(l, j)
+						track = ("%s%s- %s%s"):format(track, l>1 and "\n" or "", itemtext, isdone and " (C)" or "")
+					end
+				elseif questtext then --Partial completion steps only track pertinent objective.
+					local numquesttext = select("#", strsplit(";", questtext))
+					for l=1,numquesttext do
+						local lquesttext = select(numquesttext-l+1, strsplit(";", questtext))
+						local _, _, litemname = strfind(lquesttext, "(.+):") -- Everything before the : is the item name
+						for m=1,GetNumQuestLeaderBoards(j) do
+							if GetQuestLogLeaderBoard(m, j) then
+								local itemtext, _, isdone = GetQuestLogLeaderBoard(m, j)
+								local _, _, itemName = strfind(itemtext, "(.+):") -- Everything before the : is the item name
+								if itemName and itemName == litemname then
+									track = ("%s%s- %s%s"):format(track, l>1 and "\n" or "", itemtext, isdone and " (C)" or "")
+								end
+							end
+						end
+					end
+				end
+			end
+			if lootitem then
+				row.trackcheck = true
+				lootqty = tonumber(lootqty or 1)
+				track = GetLootTrackingInfo(lootitem,lootqty)
+			end
+		end
+		row.track:SetText(track)
+	end
+	if not InCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
+end
+

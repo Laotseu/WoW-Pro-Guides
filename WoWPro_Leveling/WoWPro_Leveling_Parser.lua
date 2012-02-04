@@ -487,7 +487,7 @@ function WoWPro.Leveling:LoadGuide()
 	WoWPro.Leveling:AutoCompleteZone()
 
 	-- Update the display using the leadboard
-	WoWPro.Leveling:UpdateQuestTracker()
+	WoWPro:UpdateQuestTracker()
 
 	-- Scrollbar Settings --
 	WoWPro.Scrollbar:SetMinMaxValues(1, max(1, WoWPro.stepcount - WoWPro.ShownRows))
@@ -854,7 +854,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 
 	WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount or 0
 	WoWPro.CurrentIndex = WoWPro.rows[1+WoWPro.ActiveStickyCount].index
-	WoWPro.Leveling:UpdateQuestTracker()
+	WoWPro:UpdateQuestTracker()
 
 	return reload
 end
@@ -1491,6 +1491,7 @@ function WoWPro.Leveling:AutoCompleteLevel(...)
 	end
 end
 
+--[[
 -- Update Quest Tracker --
 function WoWPro.Leveling:UpdateQuestTracker()
 --WoWPro:Trace("Start WoWPro.Leveling:UpdateQuestTracker")
@@ -1570,6 +1571,7 @@ function WoWPro.Leveling:UpdateQuestTracker()
 	if not InCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
 --WoWPro:Trace("End WoWPro.Leveling:UpdateQuestTracker")
 end
+]]
 
 -- Get Currently Available Spells --
 function WoWPro.Leveling.GetAvailableSpells(...)
