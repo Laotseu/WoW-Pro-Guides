@@ -37,22 +37,23 @@ WoWPro.Leveling:RegisterGuide('BitNor1220', 'Northern Barrens', 'Bitsem', '12', 
 return [[
 
 A Plainstrider Menace|QID|844|M|67.41,38.77|RANK|1|N|From Halga Bloodeye.|
+C Plainstrider Menace|QID|844|S|M|67.41,38.77|
 A In Defense of Far Watch|QID|871|RANK|1|N|From Kargal Battlescar.|
 C In Defense of Far Watch|QID|871|S|N|Kill Plainstriders while slaying Razormanes.|
-A Through Fire and Flames|QID|13878|RANK|1|N|From Dorak.|
+A Through Fire and Flames|QID|13878|RANK|1|N|From Dorak.|M|67.0,45.6|
 C Through Fire and Flame|QID|13878|N|Free wolves in the stable by clicking on the chain bases. They look like large horns stuck in the ground.|
 T Through Fire and Flame|QID|13878|N|To Dorak.|
-C Plainstrider Menace|QID|844|M|67.41,38.77|
 C In Defense of Far Watch|QID|871|US||N|Finish slay 8 Razormane Plunderer and 3 Razormane Hunter.|
+C Plainstrider Menace|QID|844|US|M|67.41,38.77|
 
 T In Defense of Far Watch|QID|871|M|67.64,39.46|N|To Kargal Battlescar.|
 A The Far Watch Offensive|QID|872|PRE|871|RANK|1|M|63.13,56.24|N|From Kargal Battlescar.|
 T Plainstrider Menace|QID|844|M|67.57,38.85|N|To Halga Bloodeye.|
 A Supplies for the Crossroads|QID|5041|RANK|1|M|67.57,38.85|N|From Halga Bloodeye.|
 
-C Supplies for the Crossroads|QID|5041|S|M|66.32,51.89;63.03,56.47|N|Kill Razormanes in cave while looting supply crates.|
+C Supplies for the Crossroads|QID|5041|NC|S|M|66.32,51.89;63.03,56.47|N|Kill Razormanes in cave while looting supply crates.|
 C The Far Watch Offensive|QID|872|M|63.13,56.24|N|Kill Razormanes needed.|
-C Supplies for the Crossroads|QID|5041|US|M|63.03,56.47|N|Collect Supply Crates.|
+C Supplies for the Crossroads|QID|5041|NC|US|M|63.03,56.47|N|Collect Supply Crates.|
 
 T The Far Watch Offensive|QID|872|M|67.69,39.50|N|To Kargal Battlescar.|
 T Supplies for the Crossroads|QID|5041|M|67.46,38.79|N|To Halga Bloodeye.|
@@ -84,9 +85,9 @@ T Grol'dom's Missing Kodo|QID|13969|M|58.06,49.18|N|To Grol'dom Kodo.|
 A Animal Services|QID|13970|PRE|13969|M|58.06,49.18|N|From Grol'dom Kodo.|
 C Animal Services|QID|13970|S|M|58.36,49.90|N|Gather sacks of Stolen Grain while questing on Thorn Hill.|
 
-C The Tortusk Takedown|QID|13968|M|61.36,47.87|N|Kill the Razormane leader, Tortusk.|
-C Consumed by Hatred|QID|899|US|M|58.41,49.49|N|Kill Quillboar until you collect 30 Quilboar Tusks.|
-C Animal Services|QID|13970|US|M|58.36,49.90|N|Gather 5 sacks of Stolen Grain from the Razormane camps on Thorn Hill.|
+C The Tortusk Takedown|QID|13968|T|Fez|M|61.36,47.87|N|Kill the Razormane leader, Tortusk but you better kill his raptor, Fez, first.|
+C Consumed by Hatred|QID|899|US|N|Kill Quillboar until you collect 30 Quilboar Tusks.|
+C Animal Services|QID|13970|US|N|Gather 5 sacks of Stolen Grain from the Razormane camps on Thorn Hill.|
 T Animal Services|QID|13970|M|58.08,49.32|N|To Grol'dom Kodo.|
 
 A The Kodo's Return|QID|13971|PRE|13970|RANK|1|M|58.08,49.32|N|From Grol'dom Kodo.|
@@ -99,9 +100,9 @@ T Consumed by Hatred|QID|899|M|55.18,41.03|N|To Mankrik.|
 
 C Crossroads Caravan Delivery|QID|13975|NC|M|54.67,41.55;49.55,59.46|N|Talk to Rocco Whipshank and hop on kodo. Use first ability on wolf riders, second ability if they jump you.|
 T Crossroads Caravan Delivery|QID|13975|M|48.74,59.58|N|To Thork.|
-A To the Mor'shan Rampart|QID|28876|RANK|1|M|48.74,59.58|N|If you plan on going to Ashenvale next. From Thork.|
+;A To the Mor'shan Rampart|QID|28876|RANK|1|M|48.74,59.58|N|If you plan on going to Ashenvale next. From Thork.|
 
-f The Crossroads|QID|28876|N|Get The Crossroads Flight Path.|
+; f The Crossroads|QID|28876|N|Get The Crossroads Flight Path.|
 
 A Fungal Spores|QID|848|RANK|1|M|48.63,58.45|N|From Apothecary Helbrim.|
 A The Forgotten Pools|QID|870|RANK|1|M|49.41,58.67|N|From Tonga Runetotem.|
@@ -114,19 +115,21 @@ A Hunting the Huntress|QID|903|RANK|1|M|50.01,59.78|N|From Sergra Darkthorn.|
 
 r Train, Repair and Restock|QID|28876|
 
+C The Zhevra|QID|845|S|M|48.43,54.63|N|From now on, Kill Zhevra Runners and Savannah Huntress.|
+C Hunting the Huntress|QID|903|S|M|40.44,50.89|N|Finish killing Huntresses for their claws.|
+C Fungal Spores|QID|848|S|NC|M|36.49,46.65|N|Collect 5 Fungal Spores from mushrooms at the Forgotten Pools.|
 A Kolkar Leaders|QID|850|RANK|2|M|38.02,46.68|N|From Telar Highstrider.|
 A A Little Diversion|QID|13992|RANK|2|M|37.49,45.85|N|From Ta'jari.|
 
-C The Zhevra|QID|845|S|M|48.43,54.63|N|From now on, Kill Zhevra Runners and Savannah Huntress.|
-C A Little Diversion|QID|13992|S|M|34.77,46.88|N|Loot Fungal Spores and kill Kolkar Centaur while doing the next few quests.|
-C Fungal Spores|QID|848|M|36.49,46.65|N|Collect 5 Fungal Spores from mushrooms at the Forgotten Pools.|
+C A Little Diversion|QID|13992|S|M|34.77,46.88|N|Kill Kolkar Centaur while doing the next few quests.|
 C The Forgotten Pools|QID|870|NC|M|37.25,45.01|N|Search the bottom of the Forgotten Pools northwest of Crossroads.|
+C Fungal Spores|QID|848|US|NC|M|36.49,46.65|N|Collect 5 Fungal Spores from mushrooms at the Forgotten Pools.|
 C Kolkar Leaders|QID|850|M|33.40,46.68|N|Slay Barak Kodobane and collect his head.|
 C A Little Diversion|QID|13992|US|M|34.77,46.88|N|Kill 8 Kolkar Centaur.|
 
 T A Little Diversion|QID|13992|M|37.53,45.90|N|To Ta'jari.|
 T Kolkar Leaders|QID|850|M|38.06,46.32|N|To Telar Highstrider.|
-C Hunting the Huntress|QID|903|M|40.44,50.89|N|Finish killing Huntresses for their claws.|
+C Hunting the Huntress|QID|903|US|M|40.44,50.89|N|Finish killing Huntresses for their claws.|
 C The Zhevra|QID|845|US|M|48.43,54.63|N|Finish killing Zhevra for hooves.|
 
 T Fungal Spores|QID|848|M|48.62,58.27|N|To Apothecary Helbrim.|
@@ -134,7 +137,7 @@ A In Fungus We Trust|QID|13998|PRE|848|RANK|1|M|48.62,58.27|N|From Apothecary He
 T The Forgotten Pools|QID|870|M|49.43,58.64|N|To Tonga Runetotem.|
 
 A A Growing Problem|QID|13988|PRE|870|RANK|1|M|49.43,58.64|N|From Tonga Runetotem.|
-C A Growing Problem|QID|13988|U|46782|M|49.43,58.64|
+C A Growing Problem|QID|13988|S|U|46782|M|60.9,85.9|
 
 T The Zhevra|QID|845|M|49.97,59.79|N|To Sergra Darkthorn.|
 T Hunting the Huntress|QID|903|M|49.97,59.79|N|To Sergra Darkthorn.|
@@ -147,21 +150,22 @@ A Into the Raptor's Den|QID|905|PRE|881|RANK|1|M|49.98,59.82|N|From Sergra Darkt
 C Into the Raptor's Den|QID|905|U|5165|S|M|48.57,74.81;49.64,75.15;47.80,74.67;48.01,76.08|N|From now on kill Raptors on sight until you have 3 feathers.|
 A Flushing Out Verog|QID|14072|RANK|1|M|55.11,78.38|N|From Shoe.|
 A King of Centaur Mountain|QID|13995|RANK|2|M|54.97,78.57|N|Escort quest. From Gorgal Angerscar.|
-C Flushing Out Verog|QID|14072|S|M|52.94,80.85|N|Collect Centaur Intelligence from centaur camps while questing.|
+C Flushing Out Verog|QID|14072|S|NC|M|52.94,80.85|N|Collect Centaur Intelligence from centaur camps while questing.|
 
 C King of Centaur Mountain|QID|13995|NC|M|54.37,78.36|N|Escort quest. Follow Gorgal and protect him. Help him kill Kurak.|
 T King of Centaur Mountain|QID|13995|M|55.15,78.43|N|To Shoe.|
 
 C In Fungus We Trust|QID|13998|NC|U|46789|M|54.94,80.12|N|Use the Fungal Cultures near the Stagnant Oasis.|
-T A Growing Problem|QID|13988|M|58.77,81.07;60.73,85.38|N|Go up the mountain path to Jerrik Highmountain.|
+C A Growing Problem|QID|13988|US|U|46782|M|58.77,81.07;60.9,85.9|N|Call the Eagle and then go to the summet.|
+T A Growing Problem|QID|13988|M|60.73,85.38|N|To Jerrik Highmountain.|
 
 A The Stagnant Oasis|QID|877|PRE|13988|RANK|1|M|60.73,85.38|N|From Jerrik Highmountain.|
 A Altered Beings|QID|880|RANK|1|M|60.60,85.34|N|From Jerrik Highmountain.|
 
 C Altered Beings|QID|880|S|M|55.36,79.14|N|From now on kill Oasis Snapjaws for their shells.|
-C Flushing Out Verog|QID|14072|US|M|52.94,80.85;51.11,83.65;58.11,82.14;52.94,80.85|N|Finish collecting Centaur Intelligence from huts.|
-C Into the Raptor's Den|QID|905|U|5165|US|M|48.57,74.81;49.64,75.15;47.80,74.67;48.01,76.08|N|Use feathers at the three different colored nests.|
-C The Stagnant Oasis|QID|877|U|5068|M|55.91,80.76|N|Use the Dried Seeds underwater at the fissure.|
+C Flushing Out Verog|QID|14072|US|NC|M|52.94,80.85;51.11,83.65;58.11,82.14;52.94,80.85|N|Finish collecting Centaur Intelligence from huts.|
+C Into the Raptor's Den|QID|905|U|5165|US|NC|M|48.57,74.81;49.64,75.15;47.80,74.67;48.01,76.08|N|Use feathers at the three different colored nests.|
+C The Stagnant Oasis|QID|877|NC|U|5068|M|55.91,80.76|N|Use the Dried Seeds underwater at the fissure.|
 C Altered Beings|QID|880|US|M|55.36,79.14|N|Finish killing snapjaws.|
 
 T Flushing Out Verog|QID|14072|M|55.16,78.39|N|To Shoe.|
@@ -203,7 +207,7 @@ h Ratchet|QID|891|M|67.29,74.68|N|At Innkeeper Wiley.|
 A It's Gotta be the Horn|QID|865|RANK|1|M|67.85,71.58|N|From Mebok Mizzyrix.|
 A WANTED: Cap'n Garvey|QID|895|RANK|2|M|68.28,71.28|N|From Mebok Mizzyrix.|
 
-f Ratchet|QID|895|M|69.11,70.67|N|Get the Ratchet Flight Point.|
+; f Ratchet|QID|895|M|69.11,70.67|N|Get the Ratchet Flight Point.|
 
 A Southsea Freebooters|QID|887|RANK|2|M|69.53,72.88|N|From Wharfmaster Dizzywig.|
 A Take it up with Tony|QID|14052|RANK|1|M|69.53,72.88|N|From Wharfmaster Dizzywig.|
@@ -285,7 +289,7 @@ A Raging River Ride|QID|26769|PRE|14050|RANK|1|M|68.36,69.09|
 C Raging River Ride|QID|26769|M|72.96,65.53|N|Hop on the riverboat for a free ride.|
 T Raging River Ride|QID|26769|M|62.55,16.86|N|To Nozzlepot.|
 
-f Nozzlepot's Outpost|QID|28877|M|62.35,17.18|
+; f Nozzlepot's Outpost|QID|28877|M|62.35,17.18|
 h Nozzlepot's Outpost|QID|28877|M|62.52,16.65|N|At Innkeeper Kritzle.|
 
 A Sludge Investigation|QID|29087|M|62.55,16.86|N|From Nozzlepot.|
@@ -386,7 +390,7 @@ T Demon Seed|QID|29112|M|47.53,39.58|N|To Nagala Whipshank.|
 A Mor'shan Caravan Delivery|QID|29111|M|47.53,39.58|N|From Nagala Whipshank.|
 C Mor'shan Caravan Delivery|QID|29111|M|47.53,39.58|N|Talk to Nagala and defend the caravan.|
 T Mor'shan Caravan Delivery|QID|29111|M|42.42,14.97|N|To Kadrak, who wanders.|
-f The Mor'shan Rampart|QID|3922|M|42.03,15.88|N|At Gort Goreflight.|
+; f The Mor'shan Rampart|QID|3922|M|42.03,15.88|N|At Gort Goreflight.|
 
 F Orgrimmar|NC|O|N|If you plan on going to Stranglethorn next.|
 A Northern Stranglethorn: The Fallen Empire|QID|26417|RANK|1|O|M|51.78,56.49|Z|Orgrimmar|N|From Bort. If you plan on going to Stranglethorn next.|

@@ -122,8 +122,8 @@ C Plaguehounds|QID|27372|M|18.07,71.42|L|60986 10|N|Kill Plaguehounds until you 
 T A Gift For Fiona|QID|27372|M|9.02,66.40|N|To Fiona.|
 A Onward, to Light's Hope Chapel|QID|27373|M|9.02,66.40|N|From Fiona.|
 
-N Optional Buffs|QID|27373|N|Click on Fiona's Caravan to pick one of three buffs. The charm gives you a chance to loot extra gold and items, the oil and the talisman gives a chance to deal extra Holy damage when you attack (oil for ranged, melee; talisman for spells).\n\nClick here to continue.|
-C Onward, to Light's Hope Chapel|QID|27373|NC|M|9.00,66.40|N|Click on Fiona's Caravan and choose to go to the next destination.  Sit back and relax, and watch the dialog as the caravan makes it's way to Crown Guard Tower.|
+N Optional Buffs|QID|27373|N|Click on Fiona's Caravan to pick one of three buffs. The charm gives you a chance to loot extra gold and items, the oil and the talisman gives a chance to deal extra Holy damage when you attack (oil for ranged, melee; talisman for spells).|
+C Onward, to Light's Hope Chapel|QID|27373|NC|M|9.00,66.40|N|Click on Fiona's Caravan and choose to go to the next destination.|
 T Onward, to Light's Hope Chapel|QID|27373|M|34.8,69.09|N|To Fiona.|
 f Crown Guard Tower|QID|27373|M|34.86,68.05|N|At Janice Myers.|LVL|40|
 A Zaeldarr the Outcast|QID|27432|M|35.00,68.20|N|From Urk Gagbaz.|
@@ -137,37 +137,28 @@ T Traveling Companions|QID|27381|M|35.24,68.76|N|To Tarenar Sunstrike.|
 R The Undercroft|QID|27432|M|24.23,78.31|N|Run to The Undercroft.|
 C Zaeldarr the Outcast|QID|27432|L|15785|M|23.82,78.79|N|He is at the bottom of the crypt.|
 T Little Pamela|QID|27383|M|32.55,83.77|N|To Pamela Redpath.|
-
-A I'm Not Supposed to Tell You This|QID|27392|M|32.55,83.77|N|From Pamela Redpath.|S|
 A Pamela's Doll|QID|27384|M|32.55,83.77|N|From Pamela Redpath.|
-A I'm Not Supposed to Tell You This|QID|27392|M|32.55,83.77|N|From Pamela Redpath.|US|
+A I'm Not Supposed to Tell You This|QID|27392|M|32.55,83.77|N|From Pamela Redpath.|
 
-C Pamela's Doll|QID|27384|U|12886|M|35.41,83.04|N|Head to the houses and look for and loot three parts of the Doll.  Ghosts of the Past will spawn when you approach the parts.\n\nOnce you have all three parts, combine the three doll parts into the doll itself.|
-C I'm Not Supposed to Tell You This|QID|27392|M|40.14,83.75|N|Kill and loot "The Lone Hunter".|
+C Pamela's Doll|QID|27384|U|12886|M|35.41,83.04|N|Go to the houses to get the 3 pieces needed. Ghosts may spawn when a piece is picked up, combine when you have all 3.|
+C I'm Not Supposed to Tell You This|QID|27392|M|40.14,83.75|N|Kill "The Lone Hunter".|
 
-T I'm Not Supposed to Tell You This|QID|27392|M|32.53,83.80|N|To Pamela Redpath.|S|
 T Pamela's Doll|QID|27384|M|32.47,83.76|N|To Pamela Redpath.|
-T I'm Not Supposed to Tell You This|QID|27392|M|32.53,83.80|N|To Pamela Redpath.|US|
+T I'm Not Supposed to Tell You This|QID|27392|M|32.53,83.80|N|To Pamela Redpath.|
 A Uncle Carlin|QID|27385|M|32.53,83.80|N|From Pamela Redpath.|
 
 T Zaeldarr the Outcast|QID|27432|M|34.92,68.28|N|To Urk Gagbaz.|
 T Uncle Carlin|QID|27385|M|35.51,68.81|N|To Carlin Redpath.|
 A A Strange Historian|QID|27386|M|35.51,68.81|N|From Carlin Redpath.|
 T A Strange Historian|QID|27386|M|35.18,68.02|N|To Chromie.|
-
-A Heroes of Darrowshire|QID|27388|M|35.18,68.02|N|From Chromie.|S|RANK|2|
-A Marauders of Darrowshire|QID|27389|M|35.18,68.02|N|From Chromie.|S|RANK|2|
-A Villains of Darrowshire|QID|27387|M|35.18,68.02|N|From Chromie.|RANK|2|
-A Heroes of Darrowshire|QID|27388|M|35.18,68.02|N|From Chromie.|US|
-A Marauders of Darrowshire|QID|27389|M|35.18,68.02|N|From Chromie.|US|RANK|2|
-
-A Cenarion Tenacity|QID|27544|M|34.93,68.32|N|From Urk Gagbaz.|RANK|2|
-C Heroes of Darrowshire - extended Annals of Darrowshire|QID|27388|L|13202|M|35.57,68.89|N|Speak to Carl Redpath and ask for the extended Annals of Darrowshire.|QO|Extended Annals of Darrowshire: 1/1|NC|RANK|2|
-
-C Rough Roads|QID|27382|M|41.30,71.09|N|Kill any Plaguebats you need.|S|
-C Villains of Darrowshire - Shattered Sword of Marduk|QID|27387|M|39.77,72.36|N|Pick up the "Shattered Sword of Marduk" fron the floor.|QO|Shattered Sword of Marduk: 1/1|NC|RANK|2|
-C Rough Roads|QID|27382|M|41.30,71.09|N|Finish killing any Plaguebats you need.|US|
-T Rough Roads|QID|27382|M|35.91,69.06|N|To Argus Highbeacon.  \n\nOnce you complete this quest, the wagon will give a new Zone Buff, "Argus' Journal", which gives 2% more experience whilst in the zone.|
+A Villains of Darrowshire|QID|27387|M|35.18,68.02|N|From Chromie.|
+A Heroes of Darrowshire|QID|27388|M|35.18,68.02|N|From Chromie.|
+A Marauders of Darrowshire|QID|27389|M|35.18,68.02|N|From Chromie.|
+A Cenarion Tenacity|QID|27544|M|34.93,68.32|N|From Urk Gagbaz.|
+N Heroes of Darrowshire|QID|27388|L|13202|M|35.57,68.89|N|Talk to Carl Redpath inside the tower and get the "Extended Annals of Darrowshire".|
+l Villains of Darrowshire|QID|27387|L|12957|M|39.77,72.36|N|Pick up the "Shattered Sword of Marduk".|
+C Rough Roads|QID|27382|M|41.30,71.09|N|Kill any Plaguebats you need.|
+T Rough Roads|QID|27382|M|35.91,69.06|N|To Argus Highbeacon.|
 
 C Heroes of Darrowshire - Redpath's Shield|QID|27388|M|22.29,68.40|N|Pick up "Redpath's Shield" from the ground floor of the house in The Marris Stead.|QO|Redpath's Shield: 1/1|NC|RANK|2|
 C Heroes of Darrowshire - Davil's Libram|QID|27388|M|22.29,68.40|N|Pick up "Davil's Libram" upstairs from the shield. Should be in the fireplace.|QO|Davil's Libram: 1/1|NC|RANK|2|
@@ -200,7 +191,7 @@ T Hidden Treasures|QID|27391|M|32.19,83.41|N|Right behind the house, next to the
 A The Trek Continues|QID|27448|M|34.84,69.27|N|From Fiona.|
 C The Trek Continues|QID|27448|M|52.67,53.73|N|Click on Fiona's Caravan and click on the option to continue the trek.|
 
-f Light's Shield Tower|QID|27455|M|52.83,53.48|N|At Devon Manning.|
+; f Light's Shield Tower|QID|27455|M|52.83,53.48|N|At Devon Manning.|
 T The Trek Continues|QID|27448|M|52.91,53.21|N|To Fiona.|
 A Boys Will Be Boys|QID|27455|M|52.91,53.21|N|From Fiona.|
 A To Kill With Purpose|QID|27451|M|53.13,54.62|N|From Betina Bigglezink.|
@@ -234,7 +225,7 @@ N Talk to Beezil Linkspanner|QID|27463|M|73.82,52.37|N|After you go through his 
 T A Boyhood Dream|QID|27463|M|75.81,52.07|N|To Lord Maxwell Tyrosus.|
 A Argent Call: The Trial of the Crypt|QID|27464|M|75.81,52.07|N|From Lord Maxwell Tyrosus.|
 A The Brotherhood of Light|QID|27459|M|75.57,52.30|N|From Leonid Barthalomew the Revered.|
-f Light's Hope Chapel|QID|27464|M|75.79,53.38|N|At Khaelyn Steelwing.|
+; f Light's Hope Chapel|QID|27464|M|75.79,53.38|N|At Khaelyn Steelwing.|
 A Smokey and the Bandage|QID|27458|M|74.92,53.30|N|From Smokey LaRue.|
 A Gathering Some Grub(s)|QID|27456|M|73.87,51.97|N|From Rimblat Earthshatter.|
 C Argent Call: The Trial of the Crypt|QID|27464|U|61309|M|77.21,51.77|N|Head to the bottom of the crypt and use the scroll. Survive the waves.|
@@ -297,7 +288,7 @@ T Argent Call: The Noxious Glade|QID|27465|M|75.80,52.07|N|To Lord Maxwell Tyros
 A An Opportune Alliance|QID|27457|M|73.85,52.01|N|From Rimblat Earthshatter.|
 R Eastwall Tower|QID|27457|M|62,42|N|Run to Eastwall Tower.|
 A Argent Call: Northdale|QID|27466|M|61.56,43.23|N|From Tarenar Sunstrike.|
-f Eastwall Tower|QID|27457|M|61.62,43.81|N|At Richard Trueflight.|
+; f Eastwall Tower|QID|27457|M|61.62,43.81|N|At Richard Trueflight.|
 T An Opportune Alliance|QID|27457|M|61.42,42.83|N|To Fiona.|
 T Argent Call: Northdale|QID|27466|M|61.42,42.78|N|To Fiona.|
 
@@ -306,8 +297,8 @@ A Righteous Indignation|QID|27479|M|61.29,42.94|N|From Deacon Andaal.|
 A Out of the Ziggurat|QID|27481|M|61.29,42.84|N|From Vex'tul.|
 A The Corpulent One|QID|27477|M|61.50,43.22|N|From Gamella Cracklefizz.|
 A Ix'lar the Underlord|QID|27487|M|61.53,43.29|N|From Tarenar Sunstrike.|
-C Ix'lar the Underlord|QID|27487|M|60.88,34.20|N|Ix'lar wanders around, so look for the boss icon on the minimap to see where he is.|
-C The Corpulent One|QID|27477|M|57.66,28.27|N|Borelgore seems to wander in the scar, look for his boss icon on the minimap.|
+C Ix'lar the Underlord|QID|27487|M|60.88,34.20|T|Ix'lar the Underlord|N|Ix'lar wanders around, so look for the boss icon on the minimap to see where he is.|
+C The Corpulent One|QID|27477|M|57.66,28.27|T|Borelgore|N|Borelgore seems to wander in the scar, look for his boss icon on the minimap.|
 C Righteous Indignation|QID|27479|M|65.50,12.34|N|Kill Mossflayers as you go for their eyes, be careful not to step on the graves.|S|
 C Out of the Ziggurat|QID|27481|M|66.45,10.53|N|Go to the top of the ziggurat and kill Warlord Thresh'jin and loot his corpse.|
 T Out of the Ziggurat|QID|27481|M|66.58,9.17|N|(UI Alert)|
@@ -329,10 +320,10 @@ C Nobody to Blame but Myself|QID|27489|M|50.52,20.45|N|Ride Fiona's Caravan to N
 T Nobody to Blame but Myself|QID|27489|M|50.46,20.27|N|To Tarenar Sunstrike.|
 A Beat it Out of Them|QID|27522|M|50.46,20.27|N|From Tarenar Sunstrike.|
 A Wretched Hive of Scum and Villainy|QID|27521|M|50.10,19.57|N|From Kirkian Dawnshield.|
-f Northpass Tower|QID|27521|M|51.29,21.21|N|At Grayson Ironwing.|
+; f Northpass Tower|QID|27521|M|51.29,21.21|N|At Grayson Ironwing.|
 N A City Under Siege|QID|27422|M|51.55,21.36|N|From Argent Officer Irizarry. This is optional as it leads into Stratholme.|
 A Duskwing, Oh How I Hate Thee...|QID|27523|M|48.11,23.01|N|From Corpseburner Tim.|
-C Duskwing, Oh How I Hate Thee...|QID|27523|U|61334|M|46.90,30.69|N|He wanders around, so look for his boss icon on the minimap. Use the flare on him if he is out of range.|
+C Duskwing, Oh How I Hate Thee...|QID|27523|U|61334|M|46.90,30.69|T|Duskwing|N|He wanders around, so look for his boss icon on the minimap. Use the flare on him if he is out of range.|
 T Duskwing, Oh How I Hate Thee...|QID|27523|M|48.06,23.20|N|To Corpseburner Tim.|
 C Wretched Hive of Scum and Villainy|QID|27521|M|46.63,14.83|N|Kill 9 Quel'lithien Wretched.|
 T Wretched Hive of Scum and Villainy|QID|27521|M|50.12,19.60|N|To Kirkian Dawnshield.|
@@ -346,14 +337,14 @@ A Guardians of Stratholme|QID|27525|M|27.58,21.14|N|From Tarenar Sunstrike.|
 A Scourged Mass|QID|27528|M|27.70,21.02|N|From Crusader Kevin Frost.|
 A Defenders of Darrowshire|QID|27529|M|27.70,21.02|N|From Crusader Kevin Frost.|
 A Add 'em to the Pile|QID|27539|M|27.70,21.02|N|From Crusader Kevin Frost.|
+C Add 'em to the Pile|QID|27539|M|38.38,30.46|Kill Cursed Mages and Scourge Soldiers to get their skulls.|S|
+C Defenders of Darrowshire|QID|27529|M|36.27,17.53|N|Kill Cannibal Ghouls then to talk to the spirits.|S|
+C Scourged Mass|QID|27528|U|61369|M|32.22,21.30|N|Kill Overstuffed Golems and then burn their corpses.|S|
 C Guardians of Stratholme|QID|27525|M|24.94,20.41;29.37,20.00|N|Kill Omasum Blighthoof and Karthis Darkrune.|
 A The Baroness' Missive|QID|27551|U|61378|N|Omasum Blighthoof or Karthis Darkrune should drop this. If not kill them again until they do.|
 T The Baroness' Missive|QID|27551|M|27.48,21.27|N|To Tarenar Sunstrike.|
 A Gidwin's Fate Revealed|QID|27526|M|27.48,21.27|N|From Tarenar Sunstrike.|
 T Guardians of Stratholme|QID|27525|M|27.48,21.27|N|To Tarenar Sunstrike.|
-C Scourged Mass|QID|27528|U|61369|M|32.22,21.30|N|Kill Overstuffed Golems and then burn their corpses.|S|
-C Defenders of Darrowshire|QID|27529|M|36.27,17.53|N|Kill Cannibal Ghouls then to talk to the spirits.|S|
-C Add 'em to the Pile|QID|27539|M|38.38,30.46|N|Kill Cursed Mages and Scourge Soldiers to get their skulls.|S|
 C Gidwin's Fate Revealed|QID|27526|M|28.69,26.06|N|As you enter the slaughterhouse you will be treated to a cutscene.|
 T Gidwin's Fate Revealed|QID|27526|M|28.34,25.90|N|To Gidwin Goldbraids.|
 
@@ -369,7 +360,7 @@ C The Corpsebeasts|QID|27530|U|61375|M|28.95,35.02|N|The beacons need to be put 
 T The Corpsebeasts|QID|27530|M|27.63,21.00|N|To Crusader Kevin Frost.|
 
 R Plaguewood Tower|QID|27530|M|18.51,27.32|N|Run to Plaguewood Tower.|
-f Plaguewood Tower|QID|27530|M|18.51,27.32|N|At William Kielar Jr..|
+; f Plaguewood Tower|QID|27530|M|18.51,27.32|N|At William Kielar Jr..|
 T The Plaguewood Tower|QID|27532|M|17.67,27.74|N|To Argent Apothecary Judkins.|
 A Counter-Plague Research|QID|27531|M|17.67,27.74|N|From Argent Apothecary Judkins.|
 A Just a Little Touched|QID|27535|M|17.67,27.74|N|From Argent Apothecary Judkins.|
