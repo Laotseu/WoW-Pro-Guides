@@ -140,8 +140,9 @@ A Securing the Beach Head|QID|26786|M|74.73,53.07|N|From Garrosh Hellscream.|
 A Cementing Our Victory|QID|26788|M|74.29,53.34|N|From Ornak.|
 T Securing the Beach Head|QID|26786|M|73.83,53.90|N|To Artesh.|
 A Muddied Waters|QID|26784|M|73.83,53.90|N|From Artesh.|
-C Cementing Our Victory|QID|26788|M|66.20,44.15|
-C Muddied Waters|QID|26784|M|65.01,41.58|
+C Muddied Waters|QID|26784|S|M|65.01,41.58|
+C Cementing Our Victory|QID|NC|26788|M|66.20,44.15|
+C Muddied Waters|QID|26784|US|M|65.01,41.58|
 T Cementing Our Victory|QID|26788|M|74.23,53.25|N|To Ornak.|
 T Muddied Waters|QID|26784|M|73.82,53.89|N|To Artesh.|
 
