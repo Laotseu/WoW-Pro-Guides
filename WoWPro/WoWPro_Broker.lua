@@ -28,6 +28,7 @@ local EasyMenu = _G.EasyMenu
 local GetFactionInfo = _G.GetFactionInfo
 local GetFactionInfoByID = _G.GetFactionInfoByID
 local GetItemCount = _G.GetItemCount
+local GetItemInfo = _G.GetItemInfo
 local GetNumFactions = _G.GetNumFactions
 local GetNumQuestLeaderBoards = _G.GetNumQuestLeaderBoards
 local GetNumQuestLogEntries = _G.GetNumQuestLogEntries
@@ -691,6 +692,26 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 
 end
 
+-- Update Item Tracking --
+local function GetLootTrackingInfo(lootitem, lootqty)
+--[[Purpose: Creates a string containing:
+	- tracked item's name
+	- how many the user has
+	- how many the user needs
+	- a complete symbol if the ammount the user has the ammount they need
+]]
+	if not GetItemInfo(lootitem) then return "" end
+	local track, numinbag = "" 								--If the function did have a track string, adds a newline
+	track = track.." - "..GetItemInfo(lootitem)..": " 	--Adds the item's name to the string
+	numinbag = GetItemCount(lootitem)						--Finds the number in the bag, and adds a count if supplied
+	track = track..numinbag										--Adds the number in bag to the string
+	track = track.."/"..lootqty								--Adds the total number needed to the string
+	if lootqty <= numinbag then
+		track = track.." (C)"									--If the user has the requisite number of items, adds a complete marker
+	end
+	return track, numinbag										--Returns the track string and the inventory count to the calling function
+end
+
 -- Update WoWPro Quest Tracker --
 function WoWPro:UpdateQuestTracker()
 	local WoWProDB = WoWPro.DB
@@ -720,14 +741,14 @@ function WoWPro:UpdateQuestTracker()
 						track = ("%s%s- %s%s"):format(track, l>1 and "\n" or "", itemtext, isdone and " (C)" or "")
 					end
 				elseif questtext then --Partial completion steps only track pertinent objective.
-					local numquesttext = select("#", strsplit(";", questtext))
+					local numquesttext = select("#", (";"):split(questtext))
 					for l=1,numquesttext do
-						local lquesttext = select(numquesttext-l+1, strsplit(";", questtext))
-						local _, _, litemname = strfind(lquesttext, "(.+):") -- Everything before the : is the item name
+						local lquesttext = select(numquesttext-l+1, (";"):split(questtext))
+						local _, _, litemname = lquesttext:find("(.+):") -- Everything before the : is the item name
 						for m=1,GetNumQuestLeaderBoards(j) do
 							if GetQuestLogLeaderBoard(m, j) then
 								local itemtext, _, isdone = GetQuestLogLeaderBoard(m, j)
-								local _, _, itemName = strfind(itemtext, "(.+):") -- Everything before the : is the item name
+								local itemName = select(3, itemtext:find("(.+):")) -- Everything before the : is the item name
 								if itemName and itemName == litemname then
 									track = ("%s%s- %s%s"):format(track, l>1 and "\n" or "", itemtext, isdone and " (C)" or "")
 								end
@@ -747,3 +768,22 @@ function WoWPro:UpdateQuestTracker()
 	if not InCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
 end
 
+-- Update the Loot line that are displayed based on actual count found in the inventory
+-- and mark the step as complete if we have the minimum number required
+function WoWPro:UpdateLootLines()
+	for i = 1,1+WoWPro.ActiveStickyCount do
+		local guide_index = WoWPro.rows[i].index
+		if WoWPro.DB.profile.track and WoWPro.lootitem[guide_index] then
+			-- Update the displayed text
+			local lootqty = WoWPro.lootqty[guide_index]
+			local track, numinbag = GetLootTrackingInfo(WoWPro.lootitem[guide_index], lootqty)
+			WoWPro.rows[i].track:SetText(track)
+
+			-- Was it completed?
+			if numinbag >= lootqty then
+				WoWPro.CompleteStep(guide_index)
+			end
+		end
+	end
+	if not InCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
+end

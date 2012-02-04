@@ -486,7 +486,7 @@ function WoWPro.Leveling:LoadGuide()
 	-- Checking zone based completion --
 	WoWPro.Leveling:AutoCompleteZone()
 
-	-- Update the display using the leadboard
+	-- Update the display using the leaderboard
 	WoWPro:UpdateQuestTracker()
 
 	-- Scrollbar Settings --
@@ -883,8 +883,8 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 	--elseif event == "CHAT_MSG_LOOT" then
 		--WoWPro.Leveling:AutoCompleteLoot(...)
 	--end
-	elseif event == "BAG_UPDATE" then
-		WoWPro.Leveling:BAG_UPDATE_bucket()
+	--elseif event == "BAG_UPDATE" then
+	--	WoWPro.Leveling:BAG_UPDATE_bucket()
 
 	elseif event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
 		WoWPro.Leveling:AutoCompleteZone(...)
@@ -1337,6 +1337,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 end -- End Bucket Closure
 ]]
 
+--[[
 do -- BAG_UPDATE_bucket Waiting Bucket Closure
 
 	local THROTTLE_TIME = 0.2
@@ -1358,7 +1359,9 @@ do -- BAG_UPDATE_bucket Waiting Bucket Closure
 	end
 
 end -- End Bucket Closure
+]]
 
+--[==[
 -- Update Item Tracking --
 local function GetLootTrackingInfo(lootitem,lootqty,count)
 --[[Purpose: Creates a string containing:
@@ -1379,7 +1382,9 @@ local function GetLootTrackingInfo(lootitem,lootqty,count)
 	end
 	return track, numinbag										--Returns the track string and the inventory count to the calling function
 end
+]==]
 
+--[[
 -- Update the Loot line that are displayed based on actual count found in the inventory
 -- and mark the step as complete if we have the minimum number required
 function WoWPro.Leveling:UpdateLootLines()
@@ -1399,6 +1404,7 @@ function WoWPro.Leveling:UpdateLootLines()
 	end
 	if not InCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
 end
+]]
 
 -- Auto-Complete: Loot based --
 --function WoWPro.Leveling:AutoCompleteLoot(msg)

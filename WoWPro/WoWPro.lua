@@ -288,6 +288,7 @@ function WoWPro:OnEnable()
 	-- Event Setup --
 	WoWPro:dbp("Registering Events: Core Addon")
 	WoWPro:RegisterEvents( {															-- Setting up core events
+		"BAG_UPDATE",
 		"CINEMATIC_STOP",
 		"PARTY_MEMBERS_CHANGED",
 		"PLAYER_ENTERING_WORLD",
@@ -429,6 +430,9 @@ function WoWPro:OnEnable()
 			if WoWProCharDB.AutoTurnin == true  and not IsShiftKeyDown() then
 				WoWPro:QUEST_PROGRESS_bucket()
 			end
+
+		elseif event == "BAG_UPDATE" then
+			WoWPro:BAG_UPDATE_bucket()
 
 		end
 
@@ -697,6 +701,28 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 
 	function WoWPro:QUEST_DETAIL_bucket()
 		quest_detail = true
+		f:Show()
+	end
+
+end -- End Bucket Closure
+
+do -- BAG_UPDATE_bucket Waiting Bucket Closure
+
+	local THROTTLE_TIME = 0.2
+	local throt
+	local f = CreateFrame("Frame")
+	f:Hide()
+	f:SetScript("OnUpdate", function(self, elapsed)
+		throt = throt - elapsed
+		if throt < 0 then
+			WoWPro.Leveling:UpdateLootLines() -- Update the loot tracking in the WoWPro quest tracking
+			f:Hide()
+		end
+	end)
+
+	function WoWPro:BAG_UPDATE_bucket()
+		-- We will wait THROTTLE_TIME after the last BAG_UPDATE event
+		throt = THROTTLE_TIME
 		f:Show()
 	end
 
