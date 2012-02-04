@@ -956,20 +956,22 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 
    elseif event == "QUEST_DETAIL" then
 		if WoWProCharDB.AutoAccept == true and not IsShiftKeyDown() then
-        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-	   	local questtitle = GetTitleText();
-			if WoWPro.action[qidx] == "A" and questtitle == WoWPro.step[qidx] then
-				AcceptQuest()
-			end
+			WoWPro.Leveling:QUEST_DETAIL_bucket()
+        --local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+	   	--local questtitle = GetTitleText();
+			--if WoWPro.action[qidx] == "A" and questtitle == WoWPro.step[qidx] then
+			--	AcceptQuest()
+			--end
 		end
 
 	elseif event == "QUEST_PROGRESS" then
 		if WoWProCharDB.AutoTurnin == true  and not IsShiftKeyDown() then
-        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-			local questtitle = GetTitleText();
-			if WoWPro.action[qidx] == "T" and questtitle == WoWPro.step[qidx] then
-				CompleteQuest()
-			end
+			WoWPro.Leveling:QUEST_PROGRESS_bucket()
+        --local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+			--local questtitle = GetTitleText();
+			--if WoWPro.action[qidx] == "T" and questtitle == WoWPro.step[qidx] then
+			--	CompleteQuest()
+			--end
 		end
 
 	-- Noting that a quest is being completed for quest log update events --
@@ -1131,7 +1133,7 @@ end
 do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 
 	local THROTTLE_TIME = 0.2
-	local throt
+	local throt, quest_log_update, quest_detail, quest_progress
 	local f = CreateFrame("Frame")
 	f:Hide()
 	f:SetScript("OnShow", function(self)
@@ -1140,15 +1142,53 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 	f:SetScript("OnUpdate", function(self, elapsed)
 		throt = throt - elapsed
 		if throt < 0 then
-			--WoWPro.Leveling:GetTurnins()
+			if quest_log_update then
 			WoWPro:PopulateQuestLog()
 			WoWPro.Leveling:AutoCompleteQuestUpdate()
 			WoWPro.Leveling:UpdateQuestTracker()
+				quest_log_update = nil
+			end
+
+			if quest_detail then
+
+				-- Accept the current quest automaticaly if applicable
+				local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+				local questtitle = GetTitleText();
+				if WoWPro.action[qidx] == "A" and questtitle == WoWPro.step[qidx] then
+					AcceptQuest()
+				end
+
+				quest_detail = nil
+			end
+
+			if quest_progress then
+
+				-- Turnin the current quest automaticaly if applicable
+				local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+				local questtitle = GetTitleText();
+				if WoWPro.action[qidx] == "T" and questtitle == WoWPro.step[qidx] then
+					CompleteQuest()
+				end
+
+				quest_progress = nil
+			end
+
 			f:Hide()
 		end
 	end)
 
 	function WoWPro.Leveling:QUEST_LOG_UPDATE_bucket()
+		quest_log_update = true
+		f:Show()
+	end
+
+	function WoWPro.Leveling:QUEST_DETAIL_bucket()
+		quest_detail = true
+		f:Show()
+	end
+
+	function WoWPro.Leveling:QUEST_PROGRESS_bucket()
+		quest_progress = true
 		f:Show()
 	end
 
