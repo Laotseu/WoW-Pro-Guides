@@ -268,10 +268,11 @@ A Shatter Them!|QID|26537|PRE|26501|M|24.55,62.41|N|From Gravel Longslab.|
 T Thunder Stones|QID|26502|M|24.72,62.14|N|To Clay Mudaxle.|
 A Fixer Upper|QID|26564|PRE|26501;26502|M|24.72,62.14|N|From Clay Mudaxle.|
 A Battlefront Triage|QID|26591|PRE|26501;26502|M|24.63,62.11|N|From Earthmender Deepvein.|
-C Fixer Upper|QID|26564|S|M|21.01,57.78|N|Collect 6 Catapult Parts.|
-C Battlefront Triage|QID|26591|S|U|58965|M|23.62,61.32|N|Use Deepvein's Patch Kit on the Inured Earthen.|
-C Shatter Them!|QID|26537|M|23.31,60.51|N|Kill 12 Stone Troggs.|
-C Fixer Upper|QID|26564|US|M|21.01,57.78|N|Collect 6 Catapult Parts.|
+C Fixer Upper|QID|26564|S|NC|M|21.01,57.78|N|Collect 6 Catapult Parts.|
+C Shatter Them!|QID|26537|S|M|23.31,60.51|N|Kill 12 Stone Troggs.|
+C Battlefront Triage|QID|26591|NC|U|58965|M|23.62,61.32|N|Use Deepvein's Patch Kit on the Inured Earthen.|
+C Shatter Them!|QID|26537|US|M|23.31,60.51|N|Kill 12 Stone Troggs.|
+C Fixer Upper|QID|26564|US|NC|M|21.01,57.78|N|Collect 6 Catapult Parts.|
 T Battlefront Triage|QID|26591|M|24.59,62.14|N|To Earthmender Deepvein.|
 T Fixer Upper|QID|26564|M|24.75,62.13|N|To Clay Mudaxle.|
 T Shatter Them!|QID|26537|M|24.52,62.41|N|To Gravel Longslab.|
@@ -288,9 +289,9 @@ C Keep Them off the Front|QID|26755|N|Hop in one of the catapults to the left of
 T Keep Them off the Front|QID|26755|N|To Pyrium Lodestone.|
 A Reactivate the Constructs|QID|26762|PRE|26755|N|From Pyrium Lodestone.|
 A Mystic Masters|QID|26770|PRE|26755|N|From Flint Oremantle.|
-C Reactivate the Constructs|QID|26762|S|M|24.00,48.00|N|Reactivate Deactivated War Constructs.|
+C Reactivate the Constructs|QID|26762|S|NC|M|24.00,48.00|N|Reactivate Deactivated War Constructs.|
 C Mystic Masters|QID|26770|M|24.00,48.00|N|Slay 5 Needlerock Mystics.|
-C Reactivate the Constructs|QID|26762|US|M|24.00,48.00|N|Finish reactivate the 5 Deactivated War Constructs.|
+C Reactivate the Constructs|QID|26762|US|NC|M|24.00,48.00|N|Finish reactivate the 5 Deactivated War Constructs.|
 T Reactivate the Constructs|QID|26762|N|To Pyrium Lodestone.|
 T Mystic Masters|QID|26770|N|To Flint Oremantle.|
 A Down Into the Chasm|QID|26834|PRE|26762;26770|M|22.6,52.1|N|From Pyrium Lodestone.|
@@ -298,7 +299,7 @@ T Down Into the Chasm|QID|26834|M|27.6,44.9|N|To Slate Quicksand.|
 A Sprout No More|QID|26791|PRE|26834|M|27.6,44.9|N|From Slate Quicksand.|
 A Fungal Monstrosities|QID|26792|PRE|26834|M|27.6,44.9|N|From Slate Quicksand.|
 C Sprout No More|QID|26791|S|N|Obtain a War Guardian and start destroying Giant Mushrooms and Fungal Monstrosities.|
-C Fungal Monstrosities|QID|26792|M|27.5,38.3|N|Destroy Fungal Monstrosities.|
+C Fungal Monstrosities|QID|26792|NC|M|27.5,38.3|N|Destroy Fungal Monstrosities.|
 C Sprout No More|QID|26791|M|27.6,35.6|US|N|Finish destroying Giant Shrooms.|
 T Sprout No More|QID|26791|M|27.6,44.9|N|To Slate Quicksand.|
 T Fungal Monstrosities|QID|26792|M|27.6,44.9|N|To Slate Quicksand.|
@@ -334,14 +335,14 @@ A Hatred Runs Deep|QID|26376|PRE|26328|M|56.50,41.20|N|From Diamant the Patient.
 A Unsolid Ground|QID|26377|PRE|26328|M|56.50,41.20|N|From Diamant the Patient.|
 A Loose Stones|QID|26375|PRE|26328|M|56.5,41.1|N|From Quartz Stonetender.|
 l Jade Crystal Clusters|QID|26377|L|58500 6|N|Loot 6 Jade Crystal Clusters from around the camp.|S|M|59.5,39.9|
-C Loose Stones|QID|26375|U|58254|M|59.00,42.00|S|N|Use Delicate Chain Smasher to free Quartz Rocklings|M|59.5,39.9|
+C Loose Stones|QID|26375|NC|U|58254|M|59.00,42.00|S|N|Use Delicate Chain Smasher to free Quartz Rocklings|M|59.5,39.9|
 C Hatred Runs Deep|QID|26376|S|QO|Lorthuna's Gate Cultists slain: 12/12|M|59.5,39.9|N|Kill Twilight Duskwardens.|
 K Dragul Giantbutcher|QID|26376|QO|Dragul Giantbutcher slain: 1/1|M|60.20,39.50|N|Kill Dragul Giantbutcher.|
 C Hatred Runs Deep|QID|26376|US|QO|Lorthuna's Gate Cultists slain: 12/12|M|59.5,39.9|N|Kill Twilight Duskwardens.|
 l Jade Crystal Clusters|QID|26377|L|58500 6|N|Loot 6 Jade Crystal Clusters from around the camp.|US|M|59.5,39.9|
 U Jade Crystal Clusters|QID|26377|L|58783|U|58500|N|Use the Jade Crystal Clusters to get the Jade Crystal Composite.|
 C Unsolid Ground|QID|26377|U|58783|M|56.5,42.5|N|Go to an open area of the camp. Use the Jade Crystal Composite to summon an Aggitated Tunneler. Mount up as soon as you get the quest complete message. You don’t want to be nearby when the rockworm emerges.|
-C Loose Stones|QID|26375|U|58254|M|59.00,42.00|US|N|Finish releasing Quartz Rocklings with the Delicate Chain Smasher.|
+C Loose Stones|QID|26375|NC|U|58254|M|59.00,42.00|US|N|Finish releasing Quartz Rocklings with the Delicate Chain Smasher.|
 T Loose Stones|QID|26375|M|56.5,41.1|N|To Quartz Stonetender.|
 T Unsolid Ground|QID|26377|M|56.50,41.20|N|To Diamant the Patient.|
 T Hatred Runs Deep|QID|26376|M|56.50,41.20|N|To Diamant the Patient.|
@@ -350,20 +351,20 @@ N Felsen the Enduring|QID|26426|M|52,32|QO|Find Felsen the Enduring: 1/1|N|Find 
 C Violent Gale|QID|26426|M|58.00,25.00|N|Find the entrance to Crumbling Depths.|
 T Violent Gale|QID|26426|N|(UI Alert)|
 A Depth of the Depths|QID|26869|PRE|26426|N|Automatic from Diamond the Patient.|
-C Depth of the Depths|QID|26869|N|Follow the main path until you reach a fork. Wait for the Colossal Gyreworm to go by then start running down the right fork. Follow this around until you reach a small branch to you right. Duck into this and wait for the elite to path by again, then continue up the tunnel, following the elite. Take the next right. Hug the wall to your right until you enter a short tunnel. Follow this to another chamber. Keep hugging the right wall and enter the first tunnel you come to. This will lead to the chamber with the stone you are looking for.|
-T Depth of the Depths|QID|26869|M|66.4,20.6|N|Click on the stone.|
+T Depth of the Depths|QID|26869|M|62.6,27.4;65.0,27.4;63.7,24.7;64.7,21.4;65.2,18.5;66.4,20.8|N|Follow the main path until you reach a fork. Wait for the Colossal Gyreworm to go by then start running down the right fork. Follow this around until you reach a small branch to you right. Duck into this and wait for the elite to path by again, then continue up the tunnel, following the elite. Take the next right. Hug the wall to your right until you enter a short tunnel. Follow this to another chamber. Keep hugging the right wall and enter the first tunnel you come to. This will lead to the chamber with the stone you are looking for.|
+;T Depth of the Depths|QID|26869|M|66.4,20.6|N|Click on the stone.|
 A A Rock Amongst Many|QID|26871|PRE|26869|M|66.4,20.6|N|From the Gigantic Painite Cluster.|
-T A Rock Amongst Many|QID|26871|M|64.5,21.6;63.8,24.0;63.6,24.2;60.7,23.6;58.2,25.5;56.5,42.7|N|Don’t go back the way you came. Take the exit directly in front of you, into another tunnel. Keep the wall on your right side as you follow this tunnel. At the end of it, you will drop down into the large central chamber. To your left is the circular tunnel that the Colossal Gyreworm paths around. Wait for him to go by, then follow him down the right fork. There will be some stones blocking the way, but they can be hopped over. Take the first right you can, and follow this tunnel all the way to the exit.|
+T A Rock Amongst Many|QID|26871|M|66.7,22.1;65.9,23.7;63.9,24.4;62.6,27.3;60.3,26.2;58.3,25.5;56.5,42.7|N|Don’t go back the way you came. Take the exit directly in front of you, into another tunnel. Keep the wall on your right side as you follow this tunnel. At the end of it, you will drop down into the large central chamber. To your left is the circular tunnel that the Colossal Gyreworm paths around. Wait for him to go by, then follow him down the right fork. There will be some stones blocking the way, but they can be hopped over. Take the first right you can, and follow this tunnel all the way to the exit.|
 A Entrenched|QID|26436|PRE|26871|M|56.5,42.5|N|From Diamant the Patient.|
 T Entrenched|QID|26436|M|34.12,34.19|N|To Kor the Immovable. He's way to the West.|
 A Intervention|QID|26438|PRE|26436|M|34.12,34.19|N|From Kor the Immovable.|
 A Making Things Crystal Clear|QID|26437|PRE|26436|M|34.12,34.19|N|From Kor the Immovable.|
 A Putting the Pieces Together|QID|26439|PRE|26436|M|34.5,33.4|N|From Berracite, who wanders.|
-C Making Things Crystal Clear|QID|26437|M|33.40,43.80|S|N|Collect Chalky Crystal Formations.|
+C Making Things Crystal Clear|QID|26437|NC|M|33.40,43.80|S|N|Collect Chalky Crystal Formations.|
 C Intervention|QID|26438|M|31.3,47.8|N|Kill 12 Rockflayers.|S|
-C Putting the Pieces Together|QID|26439|M|33.47,43.80|N|Click on Dormant/Dead Stonebound Elementals to reform them.|
+C Putting the Pieces Together|QID|26439|NC|M|33.47,43.80|N|Click on Dormant/Dead Stonebound Elementals to reform them.|
 C Intervention|QID|26438|M|31.3,47.8|N|Kill 12 Rockflayers.|US|
-C Making Things Crystal Clear|QID|26437|M|33.40,43.80|US|N|Finish collecting Chalky Crystal Formations.|
+C Making Things Crystal Clear|QID|26437|NC|M|33.40,43.80|US|N|Finish collecting Chalky Crystal Formations.|
 T Putting the Pieces Together|QID|26439|M|34.2,35|N|To Berracite, who wanders.|
 T Making Things Crystal Clear|QID|26437|M|34.12,34.19|N|To Kor the Immovable.|
 T Intervention|QID|26438|M|34.12,34.19|N|To Kor the Immovable.|
