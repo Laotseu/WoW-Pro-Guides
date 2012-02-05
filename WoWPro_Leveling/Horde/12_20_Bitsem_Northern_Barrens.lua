@@ -12,7 +12,7 @@
 -- Date: 2011-06-01 00:40
 -- Who: Crackerhead22
 -- Log: Removed lines "A It's Gotta be the Horn|QID|865|RANK|1|M|56.41,56.05|Z|", "
---	A Take it up with Tony|QID|14052|RANK|1|M|56.53,56.13|Z|" as they were redundant. 
+--	A Take it up with Tony|QID|14052|RANK|1|M|56.53,56.13|Z|" as they were redundant.
 
 -- URL: http://wow-pro.com/node/3214/revisions/24454/view
 -- Date: 2011-05-30 16:03
@@ -217,15 +217,17 @@ T Investigate the Wreckage|QID|14066|M|58.86,67.19|
 
 A To Track a Thief|QID|869|PRE|14066|RANK|1|M|58.86,67.19|
 A Waptor Twapping|QID|14068|RANK|1|M|62.37,63.88|N|From Kala'ma.|
+C Waptor Twapping|QID|14068|S|U|46853|M|63.13,59.18|N|Use the Waptor Twap near Raptors, then loot the trap.|
 C To Track a Thief|QID|869|NC|M|62.83,61.83|
 T To Track a Thief|QID|869|M|62.36,61.43|
 
 A The Stolen Silver|QID|14067|PRE|869|RANK|1|M|62.36,61.43|
+C It's Gotta be the Horn|QID|865|S|M|65.08,58.80|N|Kill Reaperclaw and his minions. Loot his horn.|
 C The Stolen Silver|QID|14067|S|QO|Sunscale Ravager slain: 0/8;Sunscale Scytheclaw slain: 0/4;Stolen Silver: 0/1|M|62.74,61.66|N|From now on, kill Sunscale Ravagers and Scytheclaws, loot Stolen Silver if you come across it.|
-C Waptor Twapping|QID|14068|U|46853|M|63.13,59.18|N|Use the Waptor Twap near Raptors, then loot the trap.|
+C Waptor Twapping|QID|14068|US|U|46853|M|63.13,59.18|N|Use the Waptor Twap near Raptors, then loot the trap.|
 
 T Waptor Twapping|QID|14068|M|62.38,63.87|N|To Kala'ma.|
-C It's Gotta be the Horn|QID|865|M|65.08,58.80|N|Kill Reaperclaw and his minions. Loot his horn.|
+C It's Gotta be the Horn|QID|865|US|M|65.08,58.80|N|Kill Reaperclaw and his minions. Loot his horn.|
 C The Stolen Silver|QID|14067|US|M|63.72,58.87|N|Finish killing Raptors and loot the Stolen Silver.|
 
 H Ratchet|QID|14067|NC|M|66.87,72.78|N|Hearth to Ratchet.|
@@ -233,6 +235,7 @@ H Ratchet|QID|14067|NC|M|66.87,72.78|N|Hearth to Ratchet.|
 T The Stolen Silver|QID|14067|M|66.94,72.84|N|To Gazrog.|
 T It's Gotta be the Horn|QID|865|M|67.85,71.52|N|To Mebok Mizzyrix.|
 
+C Southsea Freebooters|QID|887|S|M|77.61,89.48|N|Kill 8 Southsea Cutthroats or Privateers on Fray Island.|
 C A Captain's Vengeance|QID|891|S|QO|Lieutenant Buckland slain: 1/1;Lieutenant Pyre slain: 0/1;Theramore Medal: 4/10|M|71.51,86.54|N|From now on, kill Theramore Marines and Island Pirates. Be sure to loot the Marine's Medals.|
 T Take it up with Tony|QID|14052|M|77.28,91.34|N|To Tony Two-Tusk.|
 
@@ -241,9 +244,10 @@ C Glomp is Sitting On It|QID|14056|M|76.92,90.80|N|Outside the cabin. Kill him a
 T Glomp is Sitting On It|QID|14056|M|77.30,91.36|N|To Tony Two-Tusk.|
 
 A Guns. We Need Guns.|QID|14057|PRE|14056|RANK|1|M|77.30,91.36|N|From Tony Two-Tusk.|
-C Guns. We Need Guns.|QID|14057|M|77.86,89.29|N|Inside the other cabin, up the stairs, loot the rifles.|
-C Southsea Freebooters|QID|887|M|77.61,89.48|N|Finish killing 8 Southsea Cutthroats or Privateers on Fray Island.|
+C Guns. We Need Guns.|QID|14057|S|M|77.86,89.29|N|Inside the other cabin, up the stairs, loot the rifles.|
 C WANTED: Cap'n Garvey|QID|895|M|77.81,89.20|N|Kill Cap'n Garvey and loot his head.|
+C Guns. We Need Guns.|QID|14057|US|M|77.86,89.29|N|Inside the other cabin, up the stairs, loot the rifles.|
+C Southsea Freebooters|QID|887|US|M|77.61,89.48|N|Finish killing 8 Southsea Cutthroats or Privateers on Fray Island.|
 
 T Guns. We Need Guns.|QID|14057|US|M|77.25,91.34|N|To Tony Two-Tusk.|
 A Mutiny, Mon!|QID|14063|RANK|1|M|77.25,91.34|N|From Tony Two-Tusk.|
