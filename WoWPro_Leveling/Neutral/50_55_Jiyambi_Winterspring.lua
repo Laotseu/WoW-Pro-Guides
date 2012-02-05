@@ -114,13 +114,13 @@ T In Pursuit of Shades|QID|28537|M|46.82,53.89|N|To Kelek Skykeeper.|
 
 A Trailing the Spiritspeaker|QID|28848|M|46.82,53.89|N|From Kelek Skykeeper.|
 R Everlook|QID|28848|M|59.65,50.46|N|Follow the road east.|
-f Everlook|QID|28848|M|58.8,48.3|N|From Yugrek.|FACTION|Horde|
+; f Everlook|QID|28848|M|58.8,48.3|N|From Yugrek.|FACTION|Horde|
 T Trailing the Spiritspeaker|QID|28848|M|59.65,50.46|N|To Nymn.|
 A Hammer Time|QID|28609|M|59.85,49.17|N|From Lilith the Lithe.|
 T Hammer Time|QID|28609|M|59.77,49.65|N|To Deez Rocksnitch.|
 A Rubble Trouble|QID|28610|PRE|28609|M|59.77,49.65|N|From Deez Rocksnitch.|
 h Everlook|QID|28848|M|59.84,51.17|N|At Innkeeper Vizzie.|
-f Everlook|QID|28610|M|61.00,48.61|N|At Maethrya.|FACTION|Alliance|
+; f Everlook|QID|28610|M|61.00,48.61|N|At Maethrya.|FACTION|Alliance|
 C Rubble Trouble|QID|28610|M|60.04,57.18|N|Kill and loot earth elementals in the hills to the south.|
 T Rubble Trouble|QID|28610|M|59.77,49.70|N|To Deez Rocksnitch, back in Everlook.|
 A Boulder Delivery|QID|28618|PRE|28610|M|59.77,49.70|N|From Deez Rocksnitch.|
