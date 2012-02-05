@@ -47,7 +47,6 @@ function WoWPro.Leveling:OnEnable()
 
 	-- Event Registration --
 	WoWPro.Leveling.Events = {
-		"CHAT_MSG_SYSTEM",
 		"MINIMAP_ZONE_CHANGED",
 		"PLAYER_LEVEL_UP",
 		"QUEST_LOG_UPDATE",

@@ -287,18 +287,21 @@ function WoWPro:OnEnable()
 
 	-- Event Setup --
 	WoWPro:dbp("Registering Events: Core Addon")
-	WoWPro:RegisterEvents( {															-- Setting up core events
+	WoWPro:RegisterEvents( {	-- Setting up core events
 		"BAG_UPDATE",
+		"CHAT_MSG_SYSTEM",
 		"CINEMATIC_STOP",
+		"GOSSIP_SHOW",
 		"PARTY_MEMBERS_CHANGED",
 		"PLAYER_ENTERING_WORLD",
 		"PLAYER_LEAVING_WORLD",
 		"PLAYER_REGEN_ENABLED",
+		"QUEST_AUTOCOMPLETE",
 		"QUEST_COMPLETE",
 		"QUEST_DETAIL",
 		"QUEST_GREETING",
-		"QUEST_PROGRESS",
 		"QUEST_LOG_UPDATE",
+		"QUEST_PROGRESS",
 		"QUEST_QUERY_COMPLETE",
 		"UPDATE_BINDINGS",
 	})
@@ -318,7 +321,7 @@ function WoWPro:OnEnable()
 
 	WoWPro.EventFrame:SetScript("OnEvent", function(self, event, ...)		-- Setting up event handler
 
-	--if _G.perr_onevent then err("event = %s", event) end
+if _G.perr_onevent then err("event = %s", event) end
 
 		if WoWPro.InitLockdown then
 		    WoWPro:dbp("LockEvent Fired: "..event)
@@ -392,18 +395,23 @@ function WoWPro:OnEnable()
 		-- ====================================================================
 		-- Event management shared between all the modules (used to be in each)
 		-- ====================================================================
-		if event == "QUEST_LOG_UPDATE" then
+		if event == "CHAT_MSG_SYSTEM" then
+			-- Set Hearth and deal with quest that are accepted and completed in one step
+			WoWPro:CHAT_MSG_SYSTEM_parser(...)
+
+		elseif event == "QUEST_LOG_UPDATE" then
 				WoWPro:QUEST_LOG_UPDATE_bucket()
 
 		-- All the auto-complete messages need to be processed after the QUEST_LOG_UPDATE
 		-- hense the bucket. Also, all of them can be escaped with the shift key.
 		elseif event == "GOSSIP_SHOW" then
-
+--err("GOSSIP_SHOW")
 	 		if WoWProCharDB.AutoSelect == true and not IsShiftKeyDown() then
 				WoWPro:GOSSIP_SHOW_bucket()
 			end
 
 		elseif event == "QUEST_COMPLETE" then
+--err("QUEST_COMPLETE")
 			-- CompletingQuestQID is used by AutoCompleteSetHearth to detect quests that
 			-- never show up in the quest log i.e. quests that are completed as soon as
 			-- you accept them.
@@ -414,18 +422,21 @@ function WoWPro:OnEnable()
 			end
 
   		elseif event == "QUEST_DETAIL" then
+--err("QUEST_DETAIL")
 
 			if WoWProCharDB.AutoAccept == true and not IsShiftKeyDown() then
 				WoWPro:QUEST_DETAIL_bucket()
 			end
 
 		elseif event == "QUEST_GREETING" then
+--err("QUEST_GREETING")
 
 			if WoWProCharDB.AutoSelect == true and not IsShiftKeyDown() then
 				WoWPro:QUEST_GREETING_bucket()
 			end
 
 		elseif event == "QUEST_PROGRESS" then
+--err("QUEST_PROGRESS")
 
 			if WoWProCharDB.AutoTurnin == true  and not IsShiftKeyDown() then
 				WoWPro:QUEST_PROGRESS_bucket()
@@ -575,8 +586,9 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 
 			if gossip_show then
 
-				local qidx = WoWPro.ActiveStep
+				local qidx = WoWPro.CurrentIndex
 				local action, step = WoWPro.action[qidx], WoWPro.step[qidx]
+--err("gossip_show: qidx = %s, action = %s, step = %s",qidx,action,step)
 
 				if action == "T" then
 
@@ -608,10 +620,9 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 			end
 
 			if quest_greeting then
-
-
-				local qidx = WoWPro.ActiveStep
+				local qidx = WoWPro.CurrentIndex
 				local action, step = WoWPro.action[qidx], WoWPro.step[qidx]
+--err("quest_greeting: qidx = %s, action = %s, step = %s",qidx,action,step)
 
 				if action == "T" then
 					local numActiveQuests = GetNumActiveQuests()
@@ -638,7 +649,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 			if quest_progress then
 
 				-- Turnin the current quest automaticaly if applicable
-				local qidx = WoWPro.ActiveStep
+				local qidx = WoWPro.CurrentIndex
 				if WoWPro.action[qidx] == "T" and GetTitleText() == WoWPro.step[qidx] then
 					CompleteQuest()
 				end
@@ -649,7 +660,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 			if quest_complete then
 
 				-- Choose the reward automaticaly if there is only one choice
-				local qidx = WoWPro.ActiveStep
+				local qidx = WoWPro.CurrentIndex
 				if (WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and
 					GetTitleText() == WoWPro.step[qidx] and
 					GetNumQuestChoices() <= 1 then
@@ -662,7 +673,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 			if quest_detail then
 
 				-- Accept the current quest automaticaly if applicable
-				local qidx = WoWPro.ActiveStep
+				local qidx = WoWPro.CurrentIndex
 				if WoWPro.action[qidx] == "A" and GetTitleText() == WoWPro.step[qidx] then
 					AcceptQuest()
 				end
@@ -715,7 +726,7 @@ do -- BAG_UPDATE_bucket Waiting Bucket Closure
 	f:SetScript("OnUpdate", function(self, elapsed)
 		throt = throt - elapsed
 		if throt < 0 then
-			WoWPro.Leveling:UpdateLootLines() -- Update the loot tracking in the WoWPro quest tracking
+			WoWPro:UpdateLootLines() -- Update the loot tracking in the WoWPro quest tracking
 			f:Hide()
 		end
 	end)

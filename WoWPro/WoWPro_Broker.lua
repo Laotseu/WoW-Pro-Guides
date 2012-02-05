@@ -34,6 +34,7 @@ local GetNumQuestLeaderBoards = _G.GetNumQuestLeaderBoards
 local GetNumQuestLogEntries = _G.GetNumQuestLogEntries
 local GetProfessionInfo = _G.GetProfessionInfo
 local GetProfessions = _G.GetProfessions
+local GetQuestID = _G.GetQuestID
 local GetQuestLogLeaderBoard = _G.GetQuestLogLeaderBoard
 local GetQuestLogSpecialItemInfo = _G.GetQuestLogSpecialItemInfo
 local GetQuestLogTitle = _G.GetQuestLogTitle
@@ -49,7 +50,6 @@ _G.WoWPro.quest_log_debug = false
 
 local err_params = {}
 local function err(msg, ...)
-	if not _G.WoWPro.quest_log_debug then return end
 	msg = tostring(msg)
 	wipe(err_params)
 	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
@@ -514,9 +514,6 @@ function WoWPro:PopulateQuestLog()
 	WoWPro:dbp("Populating quest log...")
 --err("Populating quest log...")
 
-	--WoWPro.oldQuests = WoWPro.oldQuests or AcquireTable()
-	--WoWPro.QuestLog = WoWPro.QuestLog or AcquireTable()
-
 	WoWPro.oldQuests, WoWPro.QuestLog = WoWPro.QuestLog, WoWPro.oldQuests
 
 	WoWPro.newQuest, WoWPro.missingQuest = false, nil
@@ -542,8 +539,9 @@ function WoWPro:PopulateQuestLog()
 			local link, icon, charges = GetQuestLogSpecialItemInfo(i)
 			local use
 			if link then
-				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = link:find("|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
-				use = Id
+				--local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = link:find("|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
+				local Id = link:match("item:(%d+)")
+				use = Id and tonumber(Id) or nil
 			end
 			local coords
 			QuestMapUpdateAllQuests()
@@ -744,11 +742,11 @@ function WoWPro:UpdateQuestTracker()
 					local numquesttext = select("#", (";"):split(questtext))
 					for l=1,numquesttext do
 						local lquesttext = select(numquesttext-l+1, (";"):split(questtext))
-						local _, _, litemname = lquesttext:find("(.+):") -- Everything before the : is the item name
+						local litemname = lquesttext:match("(.+):") -- Everything before the : is the item name
 						for m=1,GetNumQuestLeaderBoards(j) do
 							if GetQuestLogLeaderBoard(m, j) then
 								local itemtext, _, isdone = GetQuestLogLeaderBoard(m, j)
-								local itemName = select(3, itemtext:find("(.+):")) -- Everything before the : is the item name
+								local itemName = itemtext:match("(.+):") -- Everything before the : is the item name
 								if itemName and itemName == litemname then
 									track = ("%s%s- %s%s"):format(track, l>1 and "\n" or "", itemtext, isdone and " (C)" or "")
 								end
@@ -760,7 +758,7 @@ function WoWPro:UpdateQuestTracker()
 			if lootitem then
 				row.trackcheck = true
 				lootqty = tonumber(lootqty or 1)
-				track = GetLootTrackingInfo(lootitem,lootqty)
+				track = GetLootTrackingInfo(lootitem, lootqty)
 			end
 		end
 		row.track:SetText(track)
@@ -787,3 +785,40 @@ function WoWPro:UpdateLootLines()
 	end
 	if not InCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
 end
+
+-- Auto-Complete: Set hearth --
+local HOME_MSG = '^' .. _G.ERR_DEATHBIND_SUCCESS_S:format('(.*)') .. '$' -- Build localized: "^(.*) is now your home.$"
+local QUEST_MSG = '^' .. _G.ERR_QUEST_COMPLETE_S:format('(.+)') .. '$'   -- Build localized: "^(.+) completed.$"
+function WoWPro:CHAT_MSG_SYSTEM_parser(msg, ...)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
+	local quest = msg:match(QUEST_MSG)
+	if quest then
+		local qid = GetQuestID()
+		if qid and WoWPro.CompletingQuestQID and qid == WoWPro.CompletingQuestQID then
+			-- A quest has been completed, we mark it in the completedQID table and
+			-- provoque a log update in case the quest was in the log
+			-- CompletingQuestQID was set when we got the QUEST_COMPLETE message
+			-- GetQuestID() is to verify that no other quest were completed since then
+			-- It's probably a bit overkill.
+			WoWPro.CompletingQuestQID = nil
+			WoWProCharDB.completedQIDs[qid] = true
+			WoWPro:QUEST_LOG_UPDATE_bucket()
+		end
+	else
+		local loc = msg:match(HOME_MSG)
+		if loc then
+			-- The user has set his Hearth to a new location, we save it
+			-- and check if we have a step that is completed
+			WoWProCharDB.Guide.hearth = loc
+			for i = 1,15 do -- This need work but it's not used very often
+				local index = WoWPro.rows[i].index
+				if WoWPro.action[index] == "h" and WoWPro.step[index] == loc
+				and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
+					WoWPro.CompleteStep(index)
+				end
+			end
+		end
+	end
+end
+

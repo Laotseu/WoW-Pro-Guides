@@ -877,8 +877,8 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 	WoWPro:dbp("Running: Leveling Event Handler "..event)
 
 	-- Auto-Completion --
-	if event == "CHAT_MSG_SYSTEM" then
-		WoWPro.Leveling:AutoCompleteSetHearth(...)
+	--if event == "CHAT_MSG_SYSTEM" then
+	--	WoWPro.Leveling:AutoCompleteSetHearth(...)
 	--end
 	--elseif event == "CHAT_MSG_LOOT" then
 		--WoWPro.Leveling:AutoCompleteLoot(...)
@@ -886,7 +886,7 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 	--elseif event == "BAG_UPDATE" then
 	--	WoWPro.Leveling:BAG_UPDATE_bucket()
 
-	elseif event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
+	if event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
 		WoWPro.Leveling:AutoCompleteZone(...)
 	--end
 
@@ -1432,6 +1432,7 @@ end
 --	end
 --end
 
+--[[
 -- Auto-Complete: Set hearth --
 function WoWPro.Leveling:AutoCompleteSetHearth(...)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
@@ -1459,6 +1460,7 @@ function WoWPro.Leveling:AutoCompleteSetHearth(...)
 		end
 	end
 end
+]]
 
 -- Auto-Complete: Zone based --
 function WoWPro.Leveling:AutoCompleteZone()
