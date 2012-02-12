@@ -484,7 +484,7 @@ function WoWPro.Leveling:LoadGuide()
 	WoWPro:UpdateGuide()
 
 	-- Checking zone based completion --
-	WoWPro.Leveling:AutoCompleteZone()
+	WoWPro:AutoCompleteZone()
 
 	-- Update the display using the leaderboard
 	WoWPro:UpdateQuestTracker()
@@ -886,28 +886,28 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 	--elseif event == "BAG_UPDATE" then
 	--	WoWPro.Leveling:BAG_UPDATE_bucket()
 
-	if event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
-		WoWPro.Leveling:AutoCompleteZone(...)
+--	if event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
+--		WoWPro.Leveling:AutoCompleteZone(...)
 	--end
 
-	elseif event == "UI_INFO_MESSAGE" then
+	if event == "UI_INFO_MESSAGE" then
 		WoWPro.Leveling:AutoCompleteGetFP(...)
 	--end
 
-	-- Noticing if we have entered a Dungeon!
-	elseif event == "ZONE_CHANGED_NEW_AREA" and WoWProCharDB.AutoHideLevelingInsideInstances == true then
-		if IsInInstance() then
-			WoWPro:Print("|cff33ff33Instance Auto Hide|r: Leveling Module")
-			WoWPro.MainFrame:Hide()
-			WoWPro.Titlebar:Hide()
-			WoWPro.Hidden = true
-			return
-		elseif WoWPro.Hidden == true then
-			WoWPro:Print("|cff33ff33Instance Exit Auto Show|r: Leveling Module")
-			WoWPro.MainFrame:Show()
-			WoWPro.Titlebar:Show()
-			WoWPro.Hidden = nil
-		end
+	----- Noticing if we have entered a Dungeon!
+	---elseif event == "ZONE_CHANGED_NEW_AREA" and WoWProCharDB.AutoHideLevelingInsideInstances == true then
+	---	if IsInInstance() then
+	---		WoWPro:Print("|cff33ff33Instance Auto Hide|r: Leveling Module")
+	---		WoWPro.MainFrame:Hide()
+	---		WoWPro.Titlebar:Hide()
+	---		WoWPro.Hidden = true
+	---		return
+	---	elseif WoWPro.Hidden == true then
+	---		WoWPro:Print("|cff33ff33Instance Exit Auto Show|r: Leveling Module")
+	---		WoWPro.MainFrame:Show()
+	---		WoWPro.Titlebar:Show()
+	---		WoWPro.Hidden = nil
+	---	end
 	--end
 
 	-- Lets see what quests the NPC has:
@@ -1017,8 +1017,8 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 		--WoWPro.Leveling:AutoCompleteQuestUpdate(...)
 		--WoWPro.Leveling:UpdateQuestTracker()
 	--end
-	elseif event == "PLAYER_LEVEL_UP" then
-		WoWPro.Leveling:AutoCompleteLevel(...)
+--	elseif event == "PLAYER_LEVEL_UP" then
+--		WoWPro.Leveling:AutoCompleteLevel(...)
 --		WoWPro.Leveling.CheckAvailableSpells(...)
 --		WoWPro.Leveling.CheckAvailableTalents()
 	--end
@@ -1462,6 +1462,7 @@ function WoWPro.Leveling:AutoCompleteSetHearth(...)
 end
 ]]
 
+--[==[
 -- Auto-Complete: Zone based --
 function WoWPro.Leveling:AutoCompleteZone()
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
@@ -1480,7 +1481,9 @@ function WoWPro.Leveling:AutoCompleteZone()
 		end
 	end
 end
+]==]
 
+--[==[
 -- Auto-Complete: Level based --
 function WoWPro.Leveling:AutoCompleteLevel(...)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
@@ -1498,6 +1501,7 @@ function WoWPro.Leveling:AutoCompleteLevel(...)
 		end
 	end
 end
+]==]
 
 --[[
 -- Update Quest Tracker --

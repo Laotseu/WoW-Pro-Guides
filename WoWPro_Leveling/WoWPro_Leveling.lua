@@ -47,14 +47,7 @@ function WoWPro.Leveling:OnEnable()
 
 	-- Event Registration --
 	WoWPro.Leveling.Events = {
-		"MINIMAP_ZONE_CHANGED",
-		"PLAYER_LEVEL_UP",
-		"QUEST_LOG_UPDATE",
-		"TRAINER_UPDATE",
 		"UI_INFO_MESSAGE",
-		"ZONE_CHANGED",
-		"ZONE_CHANGED_INDOORS",
-		"ZONE_CHANGED_NEW_AREA",
 	}
 	WoWPro:RegisterEvents(WoWPro.Leveling.Events)
 

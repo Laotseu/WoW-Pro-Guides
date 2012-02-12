@@ -38,12 +38,15 @@ local GetQuestID = _G.GetQuestID
 local GetQuestLogLeaderBoard = _G.GetQuestLogLeaderBoard
 local GetQuestLogSpecialItemInfo = _G.GetQuestLogSpecialItemInfo
 local GetQuestLogTitle = _G.GetQuestLogTitle
+local GetSubZoneText = _G.GetSubZoneText
+local GetZoneText = _G.GetZoneText
 local InCinematic = _G.InCinematic
 local InCombatLockdown = _G.InCombatLockdown
 local PlaySoundFile = _G.PlaySoundFile
 local QuestMapUpdateAllQuests = _G.QuestMapUpdateAllQuests
 local QuestPOIUpdateIcons = _G.QuestPOIUpdateIcons
 local UnitFactionGroup = _G.UnitFactionGroup
+local UnitLevel = _G.UnitLevel
 local WorldMapFrame_UpdateQuests = _G.WorldMapFrame_UpdateQuests
 
 _G.WoWPro.quest_log_debug = false
@@ -786,7 +789,7 @@ function WoWPro:UpdateLootLines()
 	if not InCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
 end
 
--- Auto-Complete: Set hearth --
+-- Auto-Complete: Set hearth and quests that complete without any effect on the quest log --
 local HOME_MSG = '^' .. _G.ERR_DEATHBIND_SUCCESS_S:format('(.*)') .. '$' -- Build localized: "^(.*) is now your home.$"
 local QUEST_MSG = '^' .. _G.ERR_QUEST_COMPLETE_S:format('(.+)') .. '$'   -- Build localized: "^(.+) completed.$"
 function WoWPro:CHAT_MSG_SYSTEM_parser(msg, ...)
@@ -822,3 +825,39 @@ function WoWPro:CHAT_MSG_SYSTEM_parser(msg, ...)
 	end
 end
 
+-- Auto-Complete: Level based --
+function WoWPro:AutoCompleteLevel(...)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
+	local newlevel = ... or UnitLevel("player")
+	if WoWProCharDB.Guide then
+		local GID = WoWProDB.char.currentguide
+		if not WoWProCharDB.Guide[GID] then return end
+		for i=1,WoWPro.stepcount do
+			if not WoWProCharDB.Guide[GID].completion[i]
+				and WoWPro.level[i]
+				and tonumber(WoWPro.level[i]) <= newlevel then
+					WoWPro.CompleteStep(i)
+			end
+		end
+	end
+end
+
+-- Auto-Complete: Zone based --
+function WoWPro:AutoCompleteZone()
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
+	WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount or 0
+	local currentindex = WoWPro.rows[1+WoWPro.ActiveStickyCount].index
+	local action = WoWPro.action[currentindex]
+	local step = WoWPro.step[currentindex]
+	local coord = WoWPro.map[currentindex]
+	local waypcomplete = WoWPro.waypcomplete[currentindex]
+	local zonetext, subzonetext = GetZoneText(), GetSubZoneText():trim()
+	if action == "F" or action == "H" or action == "b" or (action == "R" and not waypcomplete) then
+		if step == zonetext or step == subzonetext
+		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[currentindex] then
+			WoWPro.CompleteStep(currentindex)
+		end
+	end
+end

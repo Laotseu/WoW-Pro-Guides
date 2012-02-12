@@ -36,7 +36,9 @@ local GetQuestID						= _G.GetQuestID
 local GetQuestReward					= _G.GetQuestReward
 local GetQuestsCompleted			= _G.GetQuestsCompleted
 local GetTitleText					= _G.GetTitleText
+local HideUIPanel						= _G.HideUIPanel
 local InCombatLockdown				= _G.InCombatLockdown
+local IsInInstance					= _G.IsInInstance
 local IsShiftKeyDown 				= _G.IsShiftKeyDown
 local SelectActiveQuest				= _G.SelectActiveQuest
 local SelectAvailableQuest			= _G.SelectAvailableQuest
@@ -292,9 +294,11 @@ function WoWPro:OnEnable()
 		"CHAT_MSG_SYSTEM",
 		"CINEMATIC_STOP",
 		"GOSSIP_SHOW",
+		"MINIMAP_ZONE_CHANGED",
 		"PARTY_MEMBERS_CHANGED",
 		"PLAYER_ENTERING_WORLD",
 		"PLAYER_LEAVING_WORLD",
+		"PLAYER_LEVEL_UP",
 		"PLAYER_REGEN_ENABLED",
 		"QUEST_AUTOCOMPLETE",
 		"QUEST_COMPLETE",
@@ -304,6 +308,9 @@ function WoWPro:OnEnable()
 		"QUEST_PROGRESS",
 		"QUEST_QUERY_COMPLETE",
 		"UPDATE_BINDINGS",
+		"ZONE_CHANGED",
+		"ZONE_CHANGED_INDOORS",
+		"ZONE_CHANGED_NEW_AREA",
 	})
 --	WoWPro.LockdownTimer = nil
 	WoWPro.LockdownTimer = 2.0 -- Initial setting so that InitLockdown will get set to nil after login
@@ -331,9 +338,9 @@ if _G.perr_onevent then err("event = %s", event) end
 
 
 		-- Unlocking event processong till after things get settled --
-		if event == "PLAYER_ENTERING_WORLD" then
-		    WoWPro.InitLockdown = true
-		    WoWPro.LockdownTimer = 2.0
+--		if event == "PLAYER_ENTERING_WORLD" then
+--		    WoWPro.InitLockdown = true
+--		    WoWPro.LockdownTimer = 2.0
 
 		-- Updating WoWPro keybindings --
 		--elseif event == "UPDATE_BINDINGS" and not InCombatLockdown() then
@@ -341,7 +348,7 @@ if _G.perr_onevent then err("event = %s", event) end
 		--end
 
 		-- Receiving the result of the completed quest query --
-		elseif event == "QUEST_QUERY_COMPLETE" then
+		if event == "QUEST_QUERY_COMPLETE" then
 			local num = 0
 			for i, QID in pairs(WoWProCharDB.completedQIDs) do
 				num = num+1
@@ -373,12 +380,17 @@ if _G.perr_onevent then err("event = %s", event) end
 
 		-- Updating party-dependant options --
 		if event == "PARTY_MEMBERS_CHANGED"
-			or event == "UPDATE_BINDINGS"
-			or event == "PARTY_MEMBERS_CHANGED" then
+			or event == "UPDATE_BINDINGS" then
 			WoWPro:UpdateGuide()
 		--end
 		-- Unlocking guide frame when leaving combat --
 		elseif event == "PLAYER_REGEN_ENABLED" or event == "PLAYER_ENTERING_WORLD" or event == "CINEMATIC_STOP" then
+			-- Unlocking event processong till after things get settled --
+			if event == "PLAYER_ENTERING_WORLD" then
+				WoWPro.InitLockdown = true
+				WoWPro.LockdownTimer = 2.0
+			end
+
 			WoWPro:UpdateGuide()
 		end
 
@@ -405,13 +417,11 @@ if _G.perr_onevent then err("event = %s", event) end
 		-- All the auto-complete messages need to be processed after the QUEST_LOG_UPDATE
 		-- hense the bucket. Also, all of them can be escaped with the shift key.
 		elseif event == "GOSSIP_SHOW" then
---err("GOSSIP_SHOW")
 	 		if WoWProCharDB.AutoSelect == true and not IsShiftKeyDown() then
 				WoWPro:GOSSIP_SHOW_bucket()
 			end
 
 		elseif event == "QUEST_COMPLETE" then
---err("QUEST_COMPLETE")
 			-- CompletingQuestQID is used by AutoCompleteSetHearth to detect quests that
 			-- never show up in the quest log i.e. quests that are completed as soon as
 			-- you accept them.
@@ -422,21 +432,18 @@ if _G.perr_onevent then err("event = %s", event) end
 			end
 
   		elseif event == "QUEST_DETAIL" then
---err("QUEST_DETAIL")
 
 			if WoWProCharDB.AutoAccept == true and not IsShiftKeyDown() then
 				WoWPro:QUEST_DETAIL_bucket()
 			end
 
 		elseif event == "QUEST_GREETING" then
---err("QUEST_GREETING")
 
 			if WoWProCharDB.AutoSelect == true and not IsShiftKeyDown() then
 				WoWPro:QUEST_GREETING_bucket()
 			end
 
 		elseif event == "QUEST_PROGRESS" then
---err("QUEST_PROGRESS")
 
 			if WoWProCharDB.AutoTurnin == true  and not IsShiftKeyDown() then
 				WoWPro:QUEST_PROGRESS_bucket()
@@ -444,6 +451,31 @@ if _G.perr_onevent then err("event = %s", event) end
 
 		elseif event == "BAG_UPDATE" then
 			WoWPro:BAG_UPDATE_bucket()
+
+		-- Noticing if we have entered a Dungeon!
+		elseif event == "ZONE_CHANGED_NEW_AREA" then
+			if WoWProCharDB.AutoHideLevelingInsideInstances then
+				if IsInInstance() then
+					WoWPro:Print("|cff33ff33Instance Auto Hide|r: Leveling Module")
+					WoWPro.MainFrame:Hide()
+					WoWPro.Titlebar:Hide()
+					WoWPro.Hidden = true
+					return
+				elseif WoWPro.Hidden == true then
+					WoWPro:Print("|cff33ff33Instance Exit Auto Show|r: Leveling Module")
+					WoWPro.MainFrame:Show()
+					WoWPro.Titlebar:Show()
+					WoWPro.Hidden = nil
+				end
+			end
+
+			WoWPro:AutoCompleteZone(...)
+
+		elseif event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" then
+			WoWPro:AutoCompleteZone(...)
+
+		elseif event == "PLAYER_LEVEL_UP" then
+			WoWPro:AutoCompleteLevel(...)
 
 		end
 
@@ -675,7 +707,14 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 				-- Accept the current quest automaticaly if applicable
 				local qidx = WoWPro.CurrentIndex
 				if WoWPro.action[qidx] == "A" and GetTitleText() == WoWPro.step[qidx] then
-					AcceptQuest()
+					-- Auto Quest are automaticaly accepted as soon as you see the quest text
+					-- This code was lifted from QuestFrame.lua to prevent calling AcceptQuest()
+					-- for an already accepted quest.
+					if ( _G.QuestFrame.autoQuest ) then
+						HideUIPanel(_G.QuestFrame)
+					else
+						AcceptQuest()
+					end
 				end
 
 				quest_detail = nil
