@@ -276,7 +276,7 @@ T WANTED: Cap'n Garvey|QID|895|M|68.42,69.12|N|To Gazlowe.|
 
 A Club Foote|QID|14034|RANK|1|M|68.42,69.12|N|From Gazlowe.|
 A Find Baron Longshore|QID|14045|RANK|1|M|68.42,69.12|N|From Gazlowe.|
-C Club Foote|QID|14034|M|67.05,74.66|N|Go to the Inn. Find Chief Engineer Force. Club him and search his pockets.|
+C Club Foote|QID|14034|T|Chief Engineer Force|M|67.05,74.66|N|Go to the Inn. Find Chief Engineer Force. Club him and search his pockets.|
 T Club Foote|QID|14034|M|68.37,69.12|N|To Gazlowe.|
 
 A Love it or Limpet|QID|14038|PRE|14034|RANK|1|M|68.37,69.12|N|From Gazlowe.|
@@ -312,19 +312,21 @@ A Hyena Extermination|QID|29088|M|62.55,16.86|N|From Nozzlepot.|
 A Competition Schmompetition|QID|29086|M|62.23,17.40|RANK|1|N|From Sputtervalve.|
 
 ; Venture Co. Drill Site
+A Ignition|QID|858|S|RANK|1|M|57.57,18.36|N|From Wizzlecrank's Shredder.|
 C Competition Schmompetition|QID|29086|M|59.13,18.49|RANK|1|N|Kill Drudgers, Mercenaries, or Peons.|S|
 C Sludge Investigation|QID|29087|M|59.13,18.49|N|Examine 5 tracks around the lake.|
 T Sludge Investigation|QID|29087|N|(UI Alert)|
 A Sludge Beast!|QID|29089|N|(UI Alert)|
 C Sludge Beast!|QID|29089|M|58.18,19.34|N|Swim to the bottom of the lake and click on the glowing mud-thing.|
 C Competition Schmompetition|QID|29086|M|59.13,18.49|RANK|1|N|Kill Drudgers, Mercenaries, or Peons.|US|
-A Ignition|QID|858|RANK|1|M|57.57,18.36|N|From Wizzlecrank's Shredder.|
-C Ignition|QID|858|M|56.95,20.38|N|Kill Supervisor Lugwizzle and loot the key. He is on top of the tower.|
+A Ignition|QID|858|US|RANK|1|M|57.57,18.36|N|From Wizzlecrank's Shredder.|
+C Ignition|QID|858|T|Supervisor Lugwizzle|M|56.95,20.38|N|Kill Supervisor Lugwizzle and loot the key. He is on top of the tower.|
 T Ignition|QID|858|M|57.55,18.23|N|To Wizzlecrank's Shredder.|
 
 A The Escape|QID|863|PRE|858|RANK|1|M|57.58,18.32|N|Escort quest from Wizzlecrank's Shredder.|
-C The Escape|QID|863|NC|M|60.97,17.71|N|Escort Wizzlecrank out of the Venture Co. drill site.|
+C The Escape|QID|863|NC|M|57.55,18.23;54.7,20.7|N|Escort Wizzlecrank out of the Venture Co. drill site.|
 C Hyena Extermination|QID|29088|M|53,25|N|Kill Hyenas.
+C Competition Schmompetition|QID|29086|M|59.13,18.49|RANK|1|N|Kill Drudgers, Mercenaries, or Peons.|US|
 
 T Sludge Beast!|QID|29089|M|62.55,16.86|N|To Nozzlepot.|
 T Hyena Extermination|QID|29088|M|62.55,16.86|N|To Nozzlepot.|
@@ -333,7 +335,7 @@ T The Escape|QID|863|M|62.29,17.43|N|To Sputtervalve.|
 A Samophlange|QID|29021|M|62.23,17.40|RANK|1|N|From Sputtervalve.|
 
 ; Venture Company Research Facility
-C Samophlange|QID|29021|M|50.29,25.68|N|Get to the control console.  Be quick.|
+; C Samophlange|QID|29021|M|50.29,25.68|N|Get to the control console.  Be quick.|
 T Samophlange|QID|29021|M|50.38,25.73|N|To the Control Console.|
 A Samophlange|QID|29022|PRE|29021|RANK|1|M|50.38,25.73|N|From the Control Console.|
 
@@ -341,7 +343,7 @@ C Samophlange|QID|29022|M|50.13,25.63|N|Turn off all three valves.|
 T Samophlange|QID|29022|M|50.22,25.78|N|To the Control Console.|
 A Samophlange|QID|29023|PRE|29022|RANK|1|M|50.22,25.78|N|From the Control Console.|
 
-C Samophlange|QID|29023|M|51.06,23.54|N|In the tent.|
+C Samophlange|QID|29023|T|Tinkerer Sniggles|M|51.06,23.54|N|In the hut.|
 T Samophlange|QID|29023|M|50.33,25.75|N|To the Control Console.|
 
 A Samophlange|QID|29024|PRE|29023|RANK|1|M|50.33,25.75|N|From the Control Console.|
@@ -354,9 +356,9 @@ T Samophlange Repair|QID|14003|M|62.62,17.00|N|To Brak Blusterpipe.|
 A Wenikee Boltbucket|QID|29026|RANK|1|M|62.62,17.00|N|From Brak Blusterpipe.|
 T Wenikee Boltbucket|QID|29026|M|62.62,17.00;44.37,24.94|N|Talk to Brak to teleport directly to her. To Wenikee Boltbucket.|
 A Nugget Slugs|QID|29027|PRE|29026|RANK|1|M|44.37,24.94|N|From Wenikee Boltbucket.|
-A A Burning Threat|QID|29090|RANK|1|M|44.2,25.0|N|From Brogor.|
+A A Burning Threat|QID|29090|RANK|1|M|44.3,25.1|N|From Brogor.|
 C A Burning Threat|QID|29090|M|42,32|N|Kill 8 members of the Burning Blade.|S|
-C Nugget Slugs|QID|29027|M|42,32|N|Collect Slugs from the Tool Buckets all around the farm.|
+C Nugget Slugs|QID|29027|NC|M|42,32|N|Collect Slugs from the Tool Buckets all around the farm.|
 C A Burning Threat|QID|29090|M|42,32|N|Kill 8 members of the Burning Blade.|US|
 T A Burning Threat|QID|29090|RANK|1|M|44.2,25.0|N|To Brogor.|
 T Nugget Slugs|QID|29027|M|44.34,24.90|N|To Wenikee Boltbucket.|
@@ -370,7 +372,7 @@ A Miner's Fortune|QID|29015|RANK|1|M|62.61,17.01|N|From Brak Blusterpipe.|
 
 R Boulder Lode Mine|NC|M|63.00,18.00;65.02,19.13;67.00,20.09;66.39,15.71|N|Follow the road.|QID|29015|
 l Samophlange Manual Page|QID|14006|M|63.71,10.81|N|Kill Venture Co. mobs until you have 5 pages.|L|11148 5|S|
-C Miner's Fortune|QID|29015|M|67.51,13.78|N|Continue killing Venture Co. mobs until you loot the Cats Eye Emerald.|
+C Miner's Fortune|QID|29015|M|67.51,13.78|N|Kill Venture Co. mobs until you loot the Cats Eye Emerald.|
 l Samophlange Manual Cover |QID|14006|M|64.69,11.87|N|Head into the mine and look for Boss Copperplug. Kill him and loot the Manual Cover from him.|L|11147|T|Boss Copperplug|
 l Samophlange Manual Page|QID|14006|M|63.71,10.81|N|Kill Venture Co. mobs until you have 5 pages.|L|11148 5|S|
 C Read the Manual|QID|14006|M|64.69,11.87|N|Use the Cover and complete the book.|U|11147|
