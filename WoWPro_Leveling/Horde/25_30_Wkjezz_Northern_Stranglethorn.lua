@@ -62,7 +62,7 @@ C The Defense of Grom'gol: Raptor Risk|QID|26278|M|36.34,43.04|
 
 h Grom'gol Base Camp|QID|26417|M|37.36,51.83|N|At Innkeeper Thulbek. Repair/Restock here also.|
 
-f Grom'gol Base Camp|QID|26350|M|38.96,51.14|N|At Thysta.|
+; f Grom'gol Base Camp|QID|26350|M|38.96,51.14|N|At Thysta.|
 
 A A Lashtail Hatchling|QID|26317|M|36.34,43.04|N|From Lashtail Raptor.|
 
@@ -282,7 +282,7 @@ A Panther Mastery|QID|193|M|60.25,47.97|N|UI Alert|
 
 C Panther Mastery|QID|193|T|Bhag'thera|M|64.62,38.31|N|Ride around the area useing the button to help you target her.|
 
-f Bambala|QID|193|M|62.40,39.23|N|At Raskha. PLEASE do not pick up quests from here yet.|
+; f Bambala|QID|193|M|62.40,39.23|N|At Raskha. PLEASE do not pick up quests from here yet.|
 
 F Grom'gol Base Camp|QID|99999|N|Fly to Grom'gol. |
 

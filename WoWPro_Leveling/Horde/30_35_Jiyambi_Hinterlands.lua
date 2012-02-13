@@ -17,7 +17,7 @@ return [[
 A Revantusk Village|QID|26430|O|M|69.00,34.78|N|From Drum Fel in Hammerfall in Arathi Highlands.|
 F Revantusk Village|QID|26430|O|M|68.19,33.44|N|At Urda.|
 R Revantusk Village|QID|26210|M|80.35,81.46|N|On the far east of the Hinterlands.|
-f Revantusk Village|QID|26210|M|81.69,81.80|N|From Gorkas.|
+; f Revantusk Village|QID|26210|M|81.69,81.80|N|From Gorkas.|
 A Gammerita, Mon!|QID|26210|M|80.35,81.46|N|From Katoom the Angler.|
 A Snapjaws, Mon!|QID|26211|M|80.35,81.46|N|From Katoom the Angler.|
 A Stalking the Stalkers|QID|26223|M|79.09,79.57|N|From Huntsman Markhor.|
@@ -107,7 +107,7 @@ T Hunt the Keeper|QID|26369|M|67.79,66.42|N|To Primal Torntusk.|
 T Venomous Secrets|QID|26368|M|67.69,66.58|N|To Eliza Darkgrin.|
 A Darkcleric Marnal|QID|26384|PRE|26369|M|67.62,66.51|N|From Eliza Darkgrin.|
 R Hiri'watha Research Station|QID|26384|M|32.38,58.14|N|Follow the road west.|
-f Hiri'watha Research Station|QID|26384|M|32.38,58.14|N|At Kellen Kuhn.|
+; f Hiri'watha Research Station|QID|26384|M|32.38,58.14|N|At Kellen Kuhn.|
 h Hiri'watha Research Station|QID|26418|M|31.83,58.03|N|At Bitsy.|
 T Darkcleric Marnal|QID|26384|M|31.96,58.41|N|To Darkcleric Marnal.|
 A The Eye of Shadra|QID|26381|PRE|26384|M|31.94,58.35|N|From Darkcleric Marnal.|
