@@ -372,10 +372,10 @@ A Miner's Fortune|QID|29015|RANK|1|M|62.61,17.01|N|From Brak Blusterpipe.|
 
 R Boulder Lode Mine|NC|M|63.00,18.00;65.02,19.13;67.00,20.09;66.39,15.71|N|Follow the road.|QID|29015|
 l Samophlange Manual Page|QID|14006|M|63.71,10.81|N|Kill Venture Co. mobs until you have 5 pages.|L|11148 5|S|
-C Miner's Fortune|QID|29015|M|67.51,13.78|N|Kill Venture Co. mobs until you loot the Cats Eye Emerald.|
 l Samophlange Manual Cover |QID|14006|M|64.69,11.87|N|Head into the mine and look for Boss Copperplug. Kill him and loot the Manual Cover from him.|L|11147|T|Boss Copperplug|
 l Samophlange Manual Page|QID|14006|M|63.71,10.81|N|Kill Venture Co. mobs until you have 5 pages.|L|11148 5|S|
 C Read the Manual|QID|14006|M|64.69,11.87|N|Use the Cover and complete the book.|U|11147|
+C Miner's Fortune|QID|29015|M|67.51,13.78|N|Kill Venture Co. mobs until you loot the Cats Eye Emerald.|
 
 H Nozzlepot's Outpost|QID|29015|NC|M|62.67,16.98|N|Hearth to Nozzlepot's Outpost.|
 
