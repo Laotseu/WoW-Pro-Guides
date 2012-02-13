@@ -898,8 +898,35 @@ WoWPro:CreateMainFrame()
 
 -- Macro stuff
 do -- closure
+
+local THROTTLE_TIME = 0.2
+local throt, m_type, m_body
+local f = CreateFrame("Frame")
+f:Hide()
+f:SetScript("OnShow", function(self)
+	throt = THROTTLE_TIME
+end)
+f:SetScript("OnUpdate", function(self, elapsed)
+	throt = throt - elapsed
+	if throt < 0 then
+		WoWPro:SetMacro(m_type, m_body)
+		f:Hide()
+	end
+end)
+
+local function SetMarcro_bucket(macroType, macroBody)
+	m_type, m_body = macroType, macroBody
+	f:Show()
+end
+
 function WoWPro:SetMacro(macroType, macroBody)
 	assert(macroType == "WPI" or macroType == "WPT","Invalide macro type: " .. (macroType or 'nil'))
+
+	if InCombatLockdown() then
+		-- Wait until after lockdown to update the macro
+		SetMarcro_bucket(macroType, macroBody)
+		return
+	end
 
 	-- select the icon
 	local macroIcon = (macroType == "WPI" or not macroBody) and "INV_MISC_QUESTIONMARK" or "Ability_Marksmanship"

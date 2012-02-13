@@ -649,7 +649,7 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 
 			if not completion then
 
-				-- Quest is flaged as comple in the completeQIDs table
+				-- Quest is flaged as completed in the completeQIDs table
 				if WoWProCharDB.completedQIDs[QID] then
 					WoWPro.CompleteStep(i, skipUIUpdate)
 					completion = true

@@ -654,7 +654,6 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 			if quest_greeting then
 				local qidx = WoWPro.CurrentIndex
 				local action, step = WoWPro.action[qidx], WoWPro.step[qidx]
---err("quest_greeting: qidx = %s, action = %s, step = %s",qidx,action,step)
 
 				if action == "T" then
 					local numActiveQuests = GetNumActiveQuests()
