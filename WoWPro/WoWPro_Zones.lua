@@ -2139,7 +2139,7 @@ WoWPro.Zone2MapID = {
 
 local MapsSeen = {}
 local zonei, zonec, zonenames, contnames = {}, {}, {}, {}
-local function ScrapeMapInfo(cont, zone)
+local function ScrapeMapInfo(cont, zone, Zone2MapID)
     local record = {}
     record.mapName = zone or GetMapInfo();
     record.mapID = GetCurrentMapAreaID();
@@ -2211,7 +2211,7 @@ function WoWPro:IsInstanceZone(zone)
     if not mapID then
         WoWPro:Print("Zone [%s] is not in Zone2MapID.  Please report!",zone)
         return false
-    end  
+    end
     if mapID.cont or mapID.zone then
         return false
     end
@@ -2227,16 +2227,16 @@ function WoWPro:GenerateMapCache()
 	    contnames[ci] = c
 	    zonenames[ci] = {GetMapZones(ci)}
 		SetMapZoom(ci,0)
-		ScrapeMapInfo("Continent",c)
+		ScrapeMapInfo("Continent",c,Zone2MapID)
 	    for zi,z in pairs(zonenames[ci]) do
 			SetMapZoom(ci,zi)
-			ScrapeMapInfo(c,z)
+			ScrapeMapInfo(c,z,Zone2MapID)
 		end
 	end
 
     for z=1,10000 do
         if( SetMapByID(z) ) then
-            ScrapeMapInfo(nil,nil)
+            ScrapeMapInfo(nil,nil,Zone2MapID)
         end
     end
     WoWPro.DB.Zone2MapID = Zone2MapID

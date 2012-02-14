@@ -72,7 +72,7 @@ local err_params = {}
 local function err(msg, ...)
 	if not _G.WoWPro.quest_log_debug then return end
 	msg = tostring(msg)
-	wipe(err_params)
+	_G.wipe(err_params)
 	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
 	_G.geterrorhandler()(msg:format(_G.unpack(err_params)) .. " - " .. _G.time())
 end
@@ -256,9 +256,9 @@ local function skipPrereqSteps(WoWPro, WoWProCharDB, GID, QID)
 		end
 
 		if WoWPro.prereq[j] then
-			local numprereqs = select("#", string.split(";", WoWPro.prereq[j]))
+			local numprereqs = select("#", (";"):split(WoWPro.prereq[j]))
 			for k=1,numprereqs do
-				local kprereq = select(numprereqs-k+1, string.split(";", WoWPro.prereq[j]))
+				local kprereq = select(numprereqs-k+1, (";"):split(WoWPro.prereq[j]))
 				if tonumber(kprereq) == QID then
 
 					if WoWPro.action[j] == "A" or
@@ -320,9 +320,9 @@ local function unskipPrereqSteps(WoWPro, WoWProCharDB, GID, QID)
 		end
 
 		if WoWPro.prereq[j] then
-			local numprereqs = select("#", string.split(";", WoWPro.prereq[j]))
+			local numprereqs = select("#", (";"):split(WoWPro.prereq[j]))
 			for k=1,numprereqs do
-				local kprereq = select(numprereqs-k+1, string.split(";", WoWPro.prereq[j]))
+				local kprereq = select(numprereqs-k+1, (";"):split(WoWPro.prereq[j]))
 				if tonumber(kprereq) == QID then
 					WoWProCharDB.Guide[GID].skipped[j] = nil
 					if WoWPro.action[j] == "A" or
@@ -546,8 +546,8 @@ function WoWPro.WorldEvents:LoadGuide()
 	WoWPro.FirstMapCall = false
 
 	-- Audio feedback to tell the user it's done
-	if WoWProDB.profile.checksound then
-		PlaySoundFile(WoWProDB.profile.checksoundfile)
+	if WoWPro.DB.profile.checksound then
+		PlaySoundFile(WoWPro.DB.profile.checksoundfile)
 	end
 end
 

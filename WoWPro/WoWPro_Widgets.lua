@@ -3,10 +3,12 @@
 -------------------------------------------------------------------------------
 local _G = getfenv(0)
 
-local GameTooltip = _G.GameTooltip
+local type = _G.type
+
 local TOOLTIP_DEFAULT_COLOR = _G.TOOLTIP_DEFAULT_COLOR
 
 local CreateFrame = _G.CreateFrame
+local GameTooltip = _G.GameTooltip
 local GameTooltip_Hide = _G.GameTooltip_Hide
 local PlaySound = _G.PlaySound
 
@@ -217,9 +219,9 @@ function WoWPro:CreateScrollbar(parent, offset, step, where)
 	    f:SetPoint("TOPRIGHT", 0 - (offsetX or 0), -16 - (offsetY or 0))
 	    f:SetPoint("BOTTOMRIGHT", 0 - (offsetX or 0), 16 + (offsetY or 0))
 	elseif where == "Outside" then
-	    f:SetPoint("TOPLEFT",parent,"TOPRIGHT",0 - (offsetX or 0), -16 - (offsetY or 0)) 
-	    f:SetPoint("BOTTOMLEFT", parent,"BOTTOMRIGHT",0 - (offsetX or 0), 16 + (offsetY or 0))    
-    end	
+	    f:SetPoint("TOPLEFT",parent,"TOPRIGHT",0 - (offsetX or 0), -16 - (offsetY or 0))
+	    f:SetPoint("BOTTOMLEFT", parent,"BOTTOMRIGHT",0 - (offsetX or 0), 16 + (offsetY or 0))
+    end
 
 	local up = CreateFrame("Button", nil, f)
 	up:SetPoint("BOTTOM", f, "TOP")
