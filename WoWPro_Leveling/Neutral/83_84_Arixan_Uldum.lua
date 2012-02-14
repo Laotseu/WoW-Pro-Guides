@@ -161,7 +161,7 @@ T Relics of the Sun King|QID|28141|M|52.98,27.75|N|To Sun Priest Asaris.|US|
 
 A The Bandit Warlord|QID|28502|M|52.98,27.75|N|From Sun Priest Asaris.|
 
-C The Bandit Warlord|QID|28502|M|45.72,16.20|N|Go to the waypoint and kill Warlord Ihsenn.|
+C The Bandit Warlord|QID|28502|T|Warlord Ihsenn|M|45.72,16.20|N|Go to the waypoint and kill Warlord Ihsenn.|
 T The Bandit Warlord|QID|28502|M|52.98,27.63|N|To Sun Priest Asaris.|
 C Speak with Asaq|QID|28134|M|49.66,39.13|QO|Speak with Asaq: 1/1|N|Talk to Asaq for Impending Retribution Quest.|NC|
 A Take it to 'Em!|QID|27993|M|49.68,39.03|N|From Mack.|
