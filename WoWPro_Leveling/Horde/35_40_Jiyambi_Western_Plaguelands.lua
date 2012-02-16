@@ -28,7 +28,7 @@ WoWPro.Leveling:RegisterGuide('JiyWes3540', 'Western Plaguelands', 'Jiyambi', '3
 return [[
 
 R Andorhal|M|46.56,64.71|N|At the center of the Western Plaguelands.|
-f Andorhal|M|46.56,64.71|N|At Rhonda Molver.|
+; f Andorhal|M|46.56,64.71|N|At Rhonda Molver.|
 T The Battle for Andorhal|QID|28508|O|M|47.78,65.18|N|To Koltira Deathweaver.|
 A Scourge First... Alliance Later|QID|26921|M|47.78,65.18|N|From Koltira Deathweaver.|
 A The Endless Flow|QID|26922|M|47.33,64.47|N|From Jearl Donald.|
@@ -53,7 +53,7 @@ T Scholomancer|QID|26924|M|47.80,65.24|N|To Koltira Deathweaver, back at the Hor
 T Brute Strength|QID|27117|M|47.80,65.24|N|To Koltira Deathweaver.|
 A Victory, For Now|QID|26926|PRE|27117|M|47.80,65.24|N|From Koltira Deathweaver.|
 R The Bulwark|QID|26926|M|83.56,69.99|Z|Tirisfal Glades|N|For now, this quest is broken and you'll have to run to the Bulwark manually.|
-f The Bulwark|QID|26926|M|83.56,69.99|Z|Tirisfal Glades|N|At Timothy Cunningham.|
+; f The Bulwark|QID|26926|M|83.56,69.99|Z|Tirisfal Glades|N|At Timothy Cunningham.|
 A Foxes and Hounds|QID|26931|M|83.42,69.91|Z|Tirisfal Glades|N|From Shadow Priestess Vandis.|
 A Latent Disease|QID|26934|M|83.25,69.34|Z|Tirisfal Glades|N|From Apothecary Dithers.|
 T Victory, For Now|QID|26926|M|83.22,68.91|Z|Tirisfal Glades|N|To High Executor Derrington.|
@@ -93,7 +93,7 @@ A A New Era for the Plaguelands|QID|26999|M|49.31,54.80|N|From Field Agent Kaart
 A Zen'Kiki, the Druid|QID|26953|M|48.96,54.77|N|From Adrine Towhide.|
 A I Ain't Sayin' You a Gourd-Digger...|QID|26956|M|48.57,54.84|N|From Selyria Groenveld.|
 A The Battle Resumes!|QID|27083|M|49.26,53.21|N|From Damion Steel.|
-f The Menders' Stead|QID|27083|M|50.52,52.33|N|At Marge Heffman.|
+; f The Menders' Stead|QID|27083|M|50.52,52.33|N|At Marge Heffman.|
 r Repair/Restock|QID|27083|CC|M|50.63,53.07|N|At the nearby tent.|
 C I Ain't Sayin' You a Gourd-Digger...|QID|26956|M|45.08,53.05|N|Right-click pumpkins, apples, and corn and kill the monsters that appear.|
 C Zen'Kiki, the Druid|QID|26953|S|M|55.90,63.98|N|Kill plagued wildlife while Zen'Kiki is near you.|
@@ -122,7 +122,7 @@ C This Means WAR (Wild Arachnid Roundup)|QID|27001|M|47.91,32.84|N|Back on the h
 T This Means WAR (Wild Arachnid Roundup)|QID|27001|M|48.11,32.42|N|To Nathaniel Dumah.|
 A An Audience with the Highlord|QID|27002|PRE|27001|M|48.11,32.42|N|From Nathaniel Dumah.|
 R Hearthglen|QID|27012|M|44.66,18.45|N|Follow the road north.|
-f Hearthglen|QID|27012|M|44.66,18.45|N|At William Henderson.|
+; f Hearthglen|QID|27012|M|44.66,18.45|N|At William Henderson.|
 A It's About Time!|QID|27156|M|43.20,15.79|N|From Lieutenant Myner.|
 A The Long Trip Home|QID|26957|M|42.58,15.03|N|From Del Gahrron, on the second floor of the keep.|
 T An Audience with the Highlord|QID|27002|M|42.03,14.75|N|To Highlord Tirion Fordring.|
