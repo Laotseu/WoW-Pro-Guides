@@ -522,12 +522,13 @@ A Walking the Dog|QID|25294|PRE|25291|M|90.08,56.48|N|From Instructor Devoran.|
 A Gather the Intelligence|QID|25296|PRE|25291|M|88.36,58.57|N|From the Outhouse Hideout.|
 N Walking the Dog|QID|25294|U|52717|M|90.11,56.32|N|Summon your Spawn of Smolderos.|
 l Twilight Communique|QID|25296|M|88.98,57.01|L|52724|N|Search the camp until you find the Twilight Communique. It can be just about anywhere in the camp so just keep looking around until you find it. Try to grab it when none of the Twilight Guards are close by. If they see you take the communique they will attack.|
-C Walking the Dog|QID|25294|S|U|52708|M|89.55,49.35|N|Kill Spinescale Basilisk the Charred Basilisk Meat to the dog.|
 C Physical Training: Forced Labor|QID|25509|S|U|54788|M|89.55,49.35|N|Use the Twilight Pick on Darkwhisper Lodestones on your way to the other camp.|
+C Walking the Dog|QID|25294|S|U|52708|M|89.55,49.35|N|Kill Spinescale Basilisk the Charred Basilisk Meat to the dog.|
 C Gather the Intelligence|QID|25296|M|91.95,51.60|N|Leave the camp. Head northeast, toward the other camp, Doom's Vigil. Find the Hyjal Battleplans somewhere in the Doom's Vigil camp.|
 C Walking the Dog|QID|25294|US|U|52708|M|89.55,49.35|N|Kill Spinescale Basilisk the Charred Basilisk Meat to the dog.|
 N Walking the Dog|QID|25294|U|52717|M|90.11,56.32|N|Once back in the camp, use the Fiery Leash to summon the Spawn of Smolderos.|
 C Walking the Dog|QID|25294|U|52708|M|90.11,56.32|N|Feed him the 5 Charred Basilisk Meat.|
+C Physical Training: Forced Labor|QID|25509|US|54788|M|89.55,49.35|N|Use the Twilight Pick on Darkwhisper Lodestones on your way to the other camp.|
 T Walking the Dog|QID|25294|M|90.11,56.32|N|To Instructor Devoran.|
 A A Champion's Collar|QID|25494|PRE|25294|M|90.11,56.32|N|From Instructor Devoran.|
 T Gather the Intelligence|QID|25296|M|88.32,58.52|N|To the Outhouse Hideout.|
