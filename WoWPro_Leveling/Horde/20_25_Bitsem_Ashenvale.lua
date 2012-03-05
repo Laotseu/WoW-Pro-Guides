@@ -97,8 +97,8 @@ C To the Rescue!|QID|13712|M|42.66,14.96;73.26,64.99|N|Speak to Kadrak when you'
 T To the Rescue!|QID|13712|M|73.64,62.22|N|To Kadrak.|N|After breaking the seige, follow Kadrak into Splintertree Post.|
 
 A Blood of the Weak|QID|13803|PRE|13712|RANK|1|M|73.64,62.22|N|From Kadrak.|
-A Destroy the Legion|QID|26448|RANK|1|M|73.22,60.09|N|From Valusha.|
 A Ashenvale Outrunners|QID|6503|RANK|1|M|73.55,60.92|N|From Kuray'bin.|
+A Destroy the Legion|QID|26448|RANK|1|M|73.22,60.09|N|From Valusha.|
 
 T Blood of the Weak|QID|13803|M|73.30,59.63;72.91,58.03;73.23,57.45;72.18,57.62|N|To Durak.|
 A Pierce Their Heart!|QID|13805|PRE|13803|RANK|1|M|72.18,57.62|N|From Durak.|
@@ -115,18 +115,20 @@ C Torek's Assault|QID|6544|M|64.71,75.40|N|Help Torek take Silverwing Outpost.|
 K Sharptalon|QID|2|M|78.1,65.8;73.3,70.6;71.3,75.5;73.7,78.5|T|Sharptalon|L|16305|N|Keep and eye out for Sharptalon. Kill and loot the claw. Use the claw to start the quest.|
 A Sharptalon's Claw|QID|2|U|16305|N|From Sharptalon's Claw.|
 
-C Pierce Their Heart!|QID|13805|U|45683|M|75.91,75.36;75.54,74.12|N|Enter Barrpw Den. Follow the blood trail and use the Tainted Blood of the Kaldorei on the Heart.|
+C Pierce Their Heart!|QID|13805|U|45683|M|74.5,76.3;75.91,75.36;75.54,74.12|N|Enter Barrpw Den. Follow the blood trail and use the Tainted Blood of the Kaldorei on the Heart.|
 C Dead Elves Walking|QID|13801|US|M|75.64,75.25|N|Destroy any 15 of the night elf ghosts at Dor'danil Barrow Den.|
 C Ashenvale Outrunners|QID|6503|US|M|75.52,70.28|N|Finish killing Ashenvale Outrunners.|
 
 C Destroy the Legion|QID|26448|S|M|84.07,70.30|N|Slay any 15 demons.|
-C Playing With Felfire|QID|13730|U|45478|M|79.84,64.72|N|Fill the Reinforced Canister with 7 Felfires from Felfire Hill.|
+C Playing With Felfire|QID|13730|U|45478|M|78.9,68.2|N|Fill the Reinforced Canister with 7 Felfires from Felfire Hill.|
 C Destroy the Legion|QID|26448|US|M|84.07,70.30|N|Slay any 15 demons at Felfire Hill, Demon Fall Canyon, or Demon Fall Ridge.|
 l Diabolical Plans|QID|26447|L|23797|RANK|1|M|80.81,68.51|N|Kill demons until this drops.|
 A Diabolical Plans|QID|26447|U|23797|RANK|1|M|80.81,68.51|N|From the Diabolical Plans.|
 
 H Splintertree Post|QID|6503|
 
+T Playing With Felfire|QID|13730|M|73.31,62.06|N|To Splintertree Demolisher.|
+A Tell No One!|QID|13751|PRE|13730|M|73.31,62.06|N|From Splintertree Demolisher.|
 T Ashenvale Outrunners|QID|6503|M|73.47,60.87|N|To Kuray'bin.|
 T Destroy the Legion|QID|26448|M|73.22,60.13|N|To Valusha.|
 T Diabolical Plans|QID|26447|M|73.22,60.13|N|To Valusha.|
@@ -137,10 +139,8 @@ A Mission Improbable|QID|13808|RANK|2|M|73.53,62.17|N|From Kadrak.|
 A Bad News Bear-er|QID|13848|RANK|1|M|73.53,62.17|N|From Kadrak.|
 T Dead Elves Walking|QID|13801|M|73.87,62.39|N|To Pixel.|
 
-T Playing With Felfire|QID|13730|M|73.31,62.06|N|To Splintertree Demolisher.|
-A Tell No One!|QID|13751|PRE|13730|M|73.31,62.06|N|From Splintertree Demolisher.|
 T Torek's Assault|QID|6544|M|73.04,62.46|N|To Ertog Ragetusk.|
-T Tell No One!|QID|13751|M|72.24,57.64|N|To Durak.|
+T Tell No One!|QID|13751|M|73.3,59.6;73.0,57.9;72.9,56.7;72.24,57.64|N|To Durak in the mine.|
 
 A Dirty Deeds|QID|13797|PRE|13751|RANK|1|M|72.24,57.64|N|From Durak.|
 C Dirty Deeds|QID|13797|M|73.21,55.91|N|Search the nearby piles of Fresh Rubble to find 10 Chunks of Ore.|
@@ -148,7 +148,7 @@ T Dirty Deeds|QID|13797|M|72.25,57.55|N|To Durak.|
 
 A Rain of Destruction|QID|13798|PRE|13797|RANK|1|M|72.25,57.55|N|From Durak.|
 C Rain of Destruction|QID|13798|U|45598|M|74.19,62.95|N|Leave the mine tunnel, climb a guard tower, use the Accursed Ore to target Elves and Ancients until complete.|
-T Rain of Destruction|QID|13798|M|72.21,57.61|N|To Durak.|
+T Rain of Destruction|QID|13798|M|73.3,59.6;73.0,57.9;72.9,56.7;72.24,57.64|N|To Durak in the mine.|
 
 A All Apologies|QID|13841|RANK|1|M|73.33,62.12|N|From Splintertree Demolisher.|
 
