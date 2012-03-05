@@ -310,7 +310,7 @@ C The Defilers' Ritual|QID|28611|M|52.81,45.59;52.18,40.18;49.89,40.11|N|At the 
 T The Defilers' Ritual|QID|28611|M|52.81,45.59;54.18,41.83|N|To High Priest Amet.|
 
 A The Root of the Corruption|QID|27838|M|54.20,42.00|N|From High Priest Amet.|
-C The Root of the Corruption|QID|27838|M|58.92,14.13|N|Head to the waypoint and kill Scalemother Hevna.|
+C The Root of the Corruption|QID|27838|T|Scalemother Hevna|M|58.92,14.13|N|Head to the waypoint and kill Scalemother Hevna.|
 T The Root of the Corruption|QID|27838|M|57.87,42.52;54.16,41.93|N|To High Priest Amet.|
 T The High Commander's Vote|QID|27631|M|57.87,42.52;58.84,46.14|N|To High Commander Kamses.|
 
