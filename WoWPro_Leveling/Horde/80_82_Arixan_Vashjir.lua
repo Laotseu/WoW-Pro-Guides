@@ -78,7 +78,9 @@ return [[
 A Warchief's Command: Vashj'ir!|QID|27718|M|49.67,76.45|Z|Orgrimmar|N|From Warchief's Command Board.|
 T Warchief's Command: Vashj'ir!|QID|27718|M|55.84,12.29|Z|Durotar|N|To Commander Thorak inside the tower.|
 A Call of Duty|QID|25924|M|55.84,12.29|Z|Durotar|N|From Commander Thorak.|
-C Call of Duty|QID|25924|NC|M|45.79,33.82|Z|Kelp'thar Forest|N|Watch the scene play out.|
+b The Great Sea |N|Take the ship to Vashj'ir|M|57.7,10.4|Z|Durotar|
+;
+;C Call of Duty|QID|25924|NC|M|45.79,33.82|Z|Kelp'thar Forest|N|Watch the scene play out.|
 T Call of Duty|QID|25924|M|38.83,31.62|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Sea Legs|QID|25929|M|38.83,31.62|Z|Kelp'thar Forest|N|From Erunak Stonespeaker.|
 h The Immortal Coil|QID|25929|M|38.83,31.62|Z|Kelp'thar Forest|N|At Erunak Stonespeaker.|
@@ -102,11 +104,11 @@ A Girding Our Loins|QID|25944|M|38.99,32.05|Z|Kelp'thar Forest|N|From Legionnair
 A Helm's Deep|QID|25946|M|38.85,26.74|Z|Kelp'thar Forest|N|Swim out of the ship, to the piece of Alliance S.E.A.L. Equipment. Click on it to get the quest Helm's Deep.|
 T Helm's Deep|QID|25946|M|38.97,32.03|Z|Kelp'thar Forest|N|To Legionnaire Nazgrim.|
 A Finders, Keepers|QID|25947|M|38.97,32.03|Z|Kelp'thar Forest|N|From Legionnaire Nazgrim.|
+A Once More, With Eeling|QID|27729|S|M|49.76,22.20|Z|Kelp'thar Forest|N|Kill a Slitherfin Eel to automatically begin this quest.|
 C Girding Our Loins|QID|25944|M|36.15,28.07|Z|Kelp'thar Forest|N|The armor for Girding Our Loins can be found on the seafloor and can also be dropped by Gilblin Scavengers.|
-A Once More, With Eeling|QID|27729|M|49.76,22.20|Z|Kelp'thar Forest|N|Kill a Slitherfin Eel to automatically begin this quest.|
-C Once More, With Eeling|QID|27729|S|M|49.76,22.20|N|Kill Slitherfin Eels.|Z|Kelp'thar Forest|
 C Finders, Keepers|QID|25947|M|50.42,27.70|Z|Kelp'thar Forest|N|Collect the S.E.A.L equipment.|
-C Once More, With Eeling|QID|27729|US|M|49.76,22.20|Z|Kelp'thar Forest|
+A Once More, With Eeling|QID|27729|US|M|49.76,22.20|Z|Kelp'thar Forest|N|Kill a Slitherfin Eel to automatically begin this quest.|
+C Once More, With Eeling|QID|27729|M|49.76,22.20|Z|Kelp'thar Forest|
 T Once More, With Eeling|QID|27729|M|49.76,22.20|Z|Kelp'thar Forest|N|Once this quest is complete you can turn it in. (UI Alert)|
 T Girding Our Loins|QID|25944|M|39.04,32.15|Z|Kelp'thar Forest|N|To Legionnaire Nazgrim.|
 T Finders, Keepers|QID|25947|M|39.04,32.15|Z|Kelp'thar Forest|N|To Legionnaire Nazgrim.|
@@ -117,7 +119,7 @@ A Blood and Thunder!|QID|25949|M|38.80,31.48|Z|Kelp'thar Forest|N|From Legionnai
 C Blood and Thunder!|QID|25949|M|46.26,46.73|Z|Kelp'thar Forest|N|If you have trouble completing this event stay inside the ship and wait for it to finish.|
 T Blood and Thunder!|QID|25949|M|46.34,46.81|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Better Late Than Dead|QID|25477|M|46.14,46.80|Z|Kelp'thar Forest|N|From Moanah Stormhoof.|
-C Better Late Than Dead|QID|25477|U|54462|M|48.94,42.35|N|Use Moanah's Baitstick on a Speckled Sea Turtle. Wait a few seconds an a shark will attack you, this will complete the quest.|Z|Kelp'thar Forest|
+C Better Late Than Dead|QID|25477|U|54462|T|Speckled Sea Turtle|M|48.94,42.35|N|Use Moanah's Baitstick on a Speckled Sea Turtle. Wait a few seconds an a shark will attack you, this will complete the quest.|Z|Kelp'thar Forest|
 T Better Late Than Dead|QID|25477|M|46.06,46.83|Z|Kelp'thar Forest|N|To Moanah Stormhoof.|
 A The Abyssal Ride|QID|25371|M|46.06,46.83|Z|Kelp'thar Forest|N|From Moanah Stormhoof.|
 C The Abyssal Ride|QID|25371|M|45.81,46.50|Z|Kelp'thar Forest|N|Go to the west of Moanah Stormhoof to find the coil of rope. Use the coil of rope to send the bait out into the chasm. A Seahorse will come out and grab the bait. Hop on the seahorse. Use the abilities you are given when you are prompted as the Seahorse swims around the zone. If you end up falling off, you will be transported back to the rope to try again. You will find yourself back at Shallow's End when the Seahorse finishes his run.|
@@ -127,7 +129,7 @@ T Good Deed Left Undone|QID|27685|M|53.50,43.14|Z|Kelp'thar Forest|N|Find Adarra
 A Gimme Shelter!|QID|25587|M|53.50,43.14|Z|Kelp'thar Forest|N|From Adarrah.|
 
 ; f Smuggler's Scar|QID|25587|M|56.24,31.23|Z|Kelp'thar Forest|N|Swim toward Smuggler's Scar a small cave just north of where you are. Grab the flight point|
-N Smuggler's Scar|QID|25587|M|56.24,31.23|Z|Kelp'thar Forest|N|Go inside, until you reach the ground.|QO|Smuggler's Hole Scouted: 1/1|
+C Smuggler's Scar|QID|25587|NC|M|56.24,31.23|Z|Kelp'thar Forest|N|Go inside, until you reach the ground.|QO|Smuggler's Scar Scouted: 1/1|
 C Gimme Shelter!|QID|25587|M|53.67,34.32|Z|Kelp'thar Forest|N|Swim back out of the cave to signal Adarrah.|
 T Gimme Shelter!|QID|25587|M|57.09,28.87|Z|Kelp'thar Forest|N|Swim back into the cave and talk to Adarrah.|
 A Ain't Too Proud to Beg|QID|25598|M|57.09,28.87|Z|Kelp'thar Forest|N|From Adarrah.|
