@@ -415,7 +415,7 @@ function WoWPro.Dailies:RowUpdate(offset)
 		}
 		if step then
 			table.insert(dropdown, 
-				{text = step.." Options", isTitle = true}
+				{text = step.." Options", notCheckable = true, isTitle = true}
 			)
 			QuestMapUpdateAllQuests()
 			QuestPOIUpdateIcons()
@@ -423,7 +423,7 @@ function WoWPro.Dailies:RowUpdate(offset)
 			if QID and not action == "A" then _, x, y, obj = QuestPOIGetIconInfo(tonumber(QID)) end
 			if coord or x then
 				table.insert(dropdown, 
-					{text = "Map Coordinates", func = function()
+					{text = "Map Coordinates", notCheckable = true, func = function()
 						WoWPro:MapPoint(row.num)
 					end} 
 				)
@@ -431,14 +431,14 @@ function WoWPro.Dailies:RowUpdate(offset)
 			if not action == "A" and WoWPro.QuestLog[tonumber(QID)] 
 			and WoWPro.QuestLog[tonumber(QID)].index and GetNumPartyMembers() > 0 then
 				table.insert(dropdown, 
-					{text = "Share Quest", func = function()
+					{text = "Share Quest", notCheckable = true, func = function()
 						QuestLogPushQuest(WoWPro.QuestLog[tonumber(QID)].index)
 					end} 
 				)
 			end
 			if sticky then
 				table.insert(dropdown, 
-					{text = "Un-Sticky", func = function() 
+					{text = "Un-Sticky", notCheckable = true, func = function()
 						WoWPro.sticky[row.index] = false
 						WoWPro.UpdateGuide()
 						WoWPro.UpdateGuide()
@@ -447,7 +447,7 @@ function WoWPro.Dailies:RowUpdate(offset)
 				)
 			else
 				table.insert(dropdown, 
-					{text = "Make Sticky", func = function() 
+					{text = "Make Sticky", notCheckable = true, func = function()
 						WoWPro.sticky[row.index] = true
 						WoWPro.unsticky[row.index] = false
 						WoWPro.UpdateGuide()
@@ -763,9 +763,9 @@ function WoWPro.Dailies:AutoCompleteQuestUpdate()
 	end
 	
 	-- First Map Point --
-	if WoWPro.Dailies.FirstMapCall then
+	if WoWPro.FirstMapCall then
 		WoWPro:MapPoint()
-		WoWPro.Dailies.FirstMapCall = false
+		WoWPro.FirstMapCall = false
 	end
 	
 end
