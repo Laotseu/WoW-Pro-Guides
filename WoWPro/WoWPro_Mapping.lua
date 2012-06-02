@@ -553,7 +553,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 						crazy = true,
 					})
 				end
-				uid = TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {title = title, callbacks = WoWProMapping_callbacks_tomtom, persistent=false})
+err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j, numcoords, x, y, uid[3], uid[4], desc)
 				if not uid then
 				    WoWPro:Print("Failed to set waypoint!  Please report a bug with the guide and step number.")
 				end

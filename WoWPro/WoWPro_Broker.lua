@@ -665,18 +665,20 @@ end
 ------------------------
 -- Functions to parse quests and log that used to be in module but really need to be in core
 ------------------------
--- Experimental Interface to Grail
-function WoWPro:SkipAll()
-    WoWPro:Print("Marking All Quests as skipped")
 
+-- Auto-Complete: Quest Update --
+function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
+	local GID = WoWProDB.char.currentguide
 	if not GID or not WoWPro.Guides[GID] then return end
 
 	if WoWProCharDB.Guide then
-	for index=1, WoWPro.stepcount do
+		for i=1,#WoWPro.action do
 
 			local action = WoWPro.action[i]
 			local QID = WoWPro.QID[i]
-	    if not WoWProCharDB.Guide[GID].completion[index] then
+			local completion = WoWProCharDB.Guide[GID].completion[i]
 
 			-- A quest was just abandoned, all the related steps that were marked
 			-- as completed need to be unmarked
@@ -684,11 +686,12 @@ function WoWPro:SkipAll()
 				( action == "A" or action == "C" ) and
 				completion then
 
-	        WoWProCharDB.Guide[GID].skipped[index] = true
+				WoWProCharDB.Guide[GID].completion[i] = nil
 				completion = nil
 				if not skipUIUpdate then
 					WoWPro:UpdateGuide()
 					WoWPro:MapPoint()
+				end
 			end
 
 			if not completion then
@@ -723,14 +726,19 @@ function WoWPro:SkipAll()
 						if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
 					end
 					if complete then WoWPro.CompleteStep(i, skipUIUpdate) end --if the step has not been found to be incomplete, run the completion function
+				end
 
+			end
 		end
 	end
-    if type(qid) == "table" then
-            WoWPro:QuestPrereq(p)
-		WoWPro.FirstMapCall = false
 
-        return
+	-- First Map Point --
+	if not skipUIUpdate and WoWPro.FirstMapCall then
+		WoWPro:MapPoint()
+		WoWPro.FirstMapCall = false
+	end
+
+end
 
 -- Update Item Tracking --
 local function GetLootTrackingInfo(lootitem, lootqty)
@@ -748,6 +756,7 @@ local function GetLootTrackingInfo(lootitem, lootqty)
 	track = track.."/"..lootqty								--Adds the total number needed to the string
 	if lootqty <= numinbag then
 		track = track.." (C)"									--If the user has the requisite number of items, adds a complete marker
+	end
 	return track, numinbag										--Returns the track string and the inventory count to the calling function
 end
 
@@ -755,13 +764,14 @@ end
 function WoWPro:UpdateQuestTracker()
 	local WoWProDB = WoWPro.DB
 
-    WoWPro:Print("Marking QID %d for execution.",qid)
+	if not WoWPro.GuideFrame:IsVisible() then return end
+	local GID = WoWProDB.char.currentguide
 	if not GID or not WoWPro.Guides[GID] then return end
 
 	for i,row in ipairs(WoWPro.rows) do
 		local index = row.index
 		local questtext = WoWPro.questtext[index]
-	for index=1, WoWPro.stepcount do
+		local action = WoWPro.action[index]
 		local lootitem = WoWPro.lootitem[index]
 		local lootqty = WoWPro.lootqty[index]
 
@@ -769,9 +779,9 @@ function WoWPro:UpdateQuestTracker()
 		-- Setting up quest tracker --
 		row.trackcheck = false
 		local track = ""
-	    if tonumber(WoWPro.QID[index]) == tonumber(qid) and not WoWProCharDB.Guide[GID].completion[index] then
+		if WoWProDB.profile.track and ( action == "C" or questtext or lootitem) then
 			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard then
-	        WoWProCharDB.Guide[GID].skipped[index] = nil
+				local j = WoWPro.QuestLog[QID].index
 				row.trackcheck = true
 				if not questtext and action == "C" then
 					for l=1,GetNumQuestLeaderBoards(j) do
@@ -789,9 +799,11 @@ function WoWPro:UpdateQuestTracker()
 								local itemName = itemtext:match("(.+):") -- Everything before the : is the item name
 								if itemName and itemName == litemname then
 									track = ("%s%s- %s%s"):format(track, l>1 and "\n" or "", itemtext, isdone and " (C)" or "")
+								end
 							end
 						end
 					end
+				end
 			end
 			if lootitem then
 				row.trackcheck = true
@@ -802,9 +814,11 @@ function WoWPro:UpdateQuestTracker()
 		row.track:SetText(track)
 	end
 	if not InCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
+end
+
 -- Update the Loot line that are displayed based on actual count found in the inventory
 -- and mark the step as complete if we have the minimum number required
-function WoWPro:QuestPrereq(qid)
+function WoWPro:UpdateLootLines()
 	for i = 1,1+WoWPro.ActiveStickyCount do
 		local guide_index = WoWPro.rows[i].index
 		if WoWPro.DB.profile.track and WoWPro.lootitem[guide_index] then
@@ -830,13 +844,15 @@ function WoWPro:CHAT_MSG_SYSTEM_parser(msg, ...)
 
 	local quest = msg:match(QUEST_MSG)
 	if quest then
-    WoWPro:DoQuest(qid)
-    local preReq = Grail:QuestPrerequisites(qid)
+		local qid = GetQuestID()
+		if qid and WoWPro.CompletingQuestQID and qid == WoWPro.CompletingQuestQID then
+			-- A quest has been completed, we mark it in the completedQID table and
+			-- provoque a log update in case the quest was in the log
 			-- CompletingQuestQID was set when we got the QUEST_COMPLETE message
 			-- GetQuestID() is to verify that no other quest were completed since then
 			-- It's probably a bit overkill.
 			WoWPro.CompletingQuestQID = nil
-        WoWPro:QuestPrereq(p)
+			WoWProCharDB.completedQIDs[qid] = true
 			WoWPro:QUEST_LOG_UPDATE_bucket()
 		end
 	else
@@ -850,22 +866,25 @@ function WoWPro:CHAT_MSG_SYSTEM_parser(msg, ...)
 				if WoWPro.action[index] == "h" and WoWPro.step[index] == loc
 				and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
 					WoWPro.CompleteStep(index)
+				end
 			end
 		end
 	end
+end
+
 -- Auto-Complete: Level based --
-function WoWPro:Questline(qid)
+function WoWPro:AutoCompleteLevel(...)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	local newlevel = ... or UnitLevel("player")
 	if WoWProCharDB.Guide then
 		local GID = WoWProDB.char.currentguide
-    if not Grail then return end
+		if not WoWProCharDB.Guide[GID] then return end
 		for i=1,WoWPro.stepcount do
 			if not WoWProCharDB.Guide[GID].completion[i]
 				and WoWPro.level[i]
 				and tonumber(WoWPro.level[i]) <= newlevel then
-    WoWPro:SkipAll()
+					WoWPro.CompleteStep(i)
 			end
 		end
 	end
@@ -885,6 +904,7 @@ function WoWPro:AutoCompleteZone()
 	if action == "F" or action == "H" or action == "b" or (action == "R" and not waypcomplete) then
 		if step == zonetext or step == subzonetext
 		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[currentindex] then
-    WoWPro:QuestPrereq(qid)
+			WoWPro.CompleteStep(currentindex)
+		end
 	end
 end
