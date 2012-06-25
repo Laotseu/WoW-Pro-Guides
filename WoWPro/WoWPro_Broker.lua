@@ -756,7 +756,7 @@ local function GetLootTrackingInfo(lootitem, lootqty)
 	numinbag = GetItemCount(lootitem)						--Finds the number in the bag, and adds a count if supplied
 	track = track..numinbag										--Adds the number in bag to the string
 	track = track.."/"..lootqty								--Adds the total number needed to the string
-	if lootqty <= numinbag then
+	if tonumber(lootqty or 1) <= numinbag then
 		track = track.." (C)"									--If the user has the requisite number of items, adds a complete marker
 	end
 	return track, numinbag										--Returns the track string and the inventory count to the calling function

@@ -71,7 +71,7 @@ _G.WoWPro = WoWPro
 WoWPro.Version = GetAddOnMetadata("WoWPro", "Version")
 WoWPro.DebugMode = false
 WoWPro.Guides = {}
-WoWPro.InitLockdown = true  -- Set when the addon is loaded
+WoWPro.InitLockdown = false  -- Set when the addon is loaded
 
 
 -- Define list of objects to be exported to Guide Addons
@@ -364,7 +364,7 @@ if _G.perr_onevent then err("event = %s", event) end
 			WoWPro:dbp("New Completed QIDs: "..num)
 			collectgarbage("collect")
 			if not WoWPro.InitLockdown then
-			    WoWPro.UpdateGuide()
+			    WoWPro:UpdateGuide()
 			end
 		--end
 
