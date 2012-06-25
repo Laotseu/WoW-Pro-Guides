@@ -187,6 +187,7 @@ function WoWPro.WorldEvents:NextStep(k, skip)
 		end
 	end
 
+--[[
 		local prof, profnum, proflvl, profmaxlvl, profmaxskill = string.split(";",WoWPro.prof[k])
 		proflvl = tonumber(proflvl) or 1
 		profmaxlvl = tonumber(profmaxlvl) or 700
