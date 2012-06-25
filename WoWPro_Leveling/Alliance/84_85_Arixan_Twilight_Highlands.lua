@@ -296,11 +296,11 @@ A Death Worthy of a Dragonmaw|QID|27813|M|62.49,48.35|N|From Mackay Firebeard.|
 A The Lost Brother|QID|28233|M|62.51,48.58|N|From Ella Forgehammer.|
 
 A Anything We Can Get|QID|27814|M|62.57,48.62|N|From Brom Forgehammer.|
+C Anything We Can Get|QID|27814|S|M|62.58,46.71|N|Found in various ways:\n\nHanging on the wall of the tower\nInside crates near the broken catapult\nBy finding Injured Dragonmaw Stragglers and selecting Help Up, then looting the weapon from the floor\nKilling and looting Dragonmaw Stragglers.|NC|
+C Death Worthy of a Dragonmaw|QID|27813|M|61.97,49.53|N|Either find Injured Dragonmaw Stragglers and select Help Up (credit without the fight), or take down Dragonmaw Stragglers.|S|
 T The Lost Brother|QID|28233|M|63.21,47.58|N|To Bahrum Forgehammer just over the fence.|
 A They Took Me Pants!|QID|28234|M|63.21,47.58|N|From Bahrum Forgehammer.|
 
-C Anything We Can Get|QID|27814|S|M|62.58,46.71|N|Found in various ways:\n\nHanging on the wall of the tower\nInside crates near the broken catapult\nBy finding Injured Dragonmaw Stragglers and selecting Help Up, then looting the weapon from the floor\nKilling and looting Dragonmaw Stragglers.|NC|
-C Death Worthy of a Dragonmaw|QID|27813|M|61.97,49.53|N|Either find Injured Dragonmaw Stragglers and select Help Up (credit without the fight), or take down Dragonmaw Stragglers.|S|
 C They Took Me Pants!|QID|28234|M|62.31,46.93|N|Upstairs of the building, sefeat then look Gorosh the Pant Stealer.|
 C Death Worthy of a Dragonmaw|QID|27813|M|61.97,49.53|N|Either find Injured Dragonmaw Stragglers and select Help Up (credit without the fight), or take down Dragonmaw Stragglers.|US|
 C Anything We Can Get|QID|27814|US|M|62.58,46.71|N|Found in various ways:\n\nHanging on the wall of the tower\nInside crates near the broken catapult\nBy finding Injured Dragonmaw Stragglers and selecting Help Up, then looting the weapon from the floor\nKilling and looting Dragonmaw Stragglers.|NC|

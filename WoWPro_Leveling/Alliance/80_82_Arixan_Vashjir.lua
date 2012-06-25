@@ -251,10 +251,10 @@ A Stormwind Elite Aquatic and Land Forces|QID|25564|PRE|25357;25546|M|44.73,22.5
 C Stormwind Elite Aquatic and Land Forces|QID|25564|S|M|51.1,20.8;50.4,27.7|L|54957 6|Z|Kelp'thar Forest|N|The SEAL equipment is found in large chests inside and around the sunken ships.|
 A Once More, With Eeling|QID|27729|M|48,21|N|Find a Slitherfin Eel and kill it to get this quest (UI Alert).|Z|Kelp'thar Forest|
 C Once More, With Eeling|QID|27729|M|48,21|N|Kill 8 more eels.|S|Z|Kelp'thar Forest|
-C To Arms!|QID|25545|M|50.8,22.5;45.3,17.7;52.7,26.8;49,30|L|54844 4|Z|Kelp'thar Forest|N|Either loot from Seafloor or kill Gilblin Scavengers.|
-C To Arms!|QID|25545|M|50.8,22.5;45.3,17.7;52.7,26.8;49,30|L|54842 4|Z|Kelp'thar Forest|N|Either loot from Seafloor or kill Gilblin Scavengers.|
-C To Arms!|QID|25545|M|50.8,22.5;45.3,17.7;52.7,26.8;49,30|L|54958 4|Z|Kelp'thar Forest|N|Either loot from Seafloor or kill Gilblin Scavengers.|
-C To Arms!|QID|25545|M|50.8,22.5;45.3,17.7;52.7,26.8;49,30|L|54843 4|Z|Kelp'thar Forest|N|Either loot from Seafloor or kill Gilblin Scavengers.|
+C To Arms!|QID|25545|M|50.8,22.5;45.3,17.7;52.7,26.8;49,30|Z|Kelp'thar Forest|N|Either loot from Seafloor or kill Gilblin Scavengers.|
+;C To Arms!|QID|25545|M|50.8,22.5;45.3,17.7;52.7,26.8;49,30|L|54842 4|Z|Kelp'thar Forest|N|Either loot from Seafloor or kill Gilblin Scavengers.|
+;C To Arms!|QID|25545|M|50.8,22.5;45.3,17.7;52.7,26.8;49,30|L|54958 4|Z|Kelp'thar Forest|N|Either loot from Seafloor or kill Gilblin Scavengers.|
+;C To Arms!|QID|25545|M|50.8,22.5;45.3,17.7;52.7,26.8;49,30|L|54843 4|Z|Kelp'thar Forest|N|Either loot from Seafloor or kill Gilblin Scavengers.|
 C Stormwind Elite Aquatic and Land Forces|QID|25564|US|M|51.1,20.8;50.4,27.7|L|54957 6|Z|Kelp'thar Forest|N|The SEAL equipment is found in large chests inside and around the sunken ships.|
 C Once More, With Eeling|QID|27729|M|48,21|N|Finish killing eels.|US|Z|Kelp'thar Forest|
 T Once More, With Eeling|QID|27729|M|48,21|N|An UI Alert will pop-up, turn it in that way.|Z|Kelp'thar Forest|
@@ -262,9 +262,9 @@ T To Arms!|QID|25545|M|44.73,22.57|Z|Kelp'thar Forest|N|To Captain Taylor.|
 T Stormwind Elite Aquatic and Land Forces|QID|25564|M|44.73,22.57|Z|Kelp'thar Forest|N|To Captain Taylor.|
 A On Our Own Terms|QID|25547|PRE|25545;25564|M|44.73,22.57|Z|Kelp'thar Forest|N|From Captain Taylor.|
 T On Our Own Terms|QID|25547|M|45,23.5|Z|Kelp'thar Forest|N|To Captain Taylor.|
-A All Or Nothing|QID|25558|PRE|25547|M|45,23.5|Z|Kelp'thar Forest|N|From Captain Taylor.|
-C All Or Nothing|QID|25558|M|45,23.5|Z|Kelp'thar Forest|N|As soon as you accept the quest, a small battle event starts outside the ship.Do your best to stay alive. Erunak will eventually finish off the first wave, then after a short pause the second wave comes. The soldiers will get carried off one by one, and eventually you will get captured as well. Erunak rescues you and leads you to the next quest hub.|
-T All Or Nothing|QID|25558|M|46.3,46.9|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
+A All or Nothing|QID|25558|PRE|25547|M|45,23.5|Z|Kelp'thar Forest|N|From Captain Taylor.|
+C All or Nothing|QID|25558|M|45,23.5|Z|Kelp'thar Forest|N|As soon as you accept the quest, a small battle event starts outside the ship.Do your best to stay alive. Erunak will eventually finish off the first wave, then after a short pause the second wave comes. The soldiers will get carried off one by one, and eventually you will get captured as well. Erunak rescues you and leads you to the next quest hub.|
+T All or Nothing|QID|25558|M|46.3,46.9|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Better Late Than Dead|QID|25477|PRE|25558|M|46.0,46.8|Z|Kelp'thar Forest|N|From Moanah Stormhoof.|
 C Better Late Than Dead|QID|25477|U|54462|T|Speckled Sea Turtle|M|49.5,40.9;54.8,54.3|U|54462|Z|Kelp'thar Forest|N|Enter the Kelp Forest and look for a Sea Turtle. When you find one, use Moanah's Baitstick. Once you are riding the turtle, swim back toward Shallow's End. You are going to get...dismounted. There is no way to avoid it so don't feel bad. Swim the rest of the way back to Shallow's End.|
 T Better Late Than Dead|QID|25477|M|46.0,46.8|Z|Kelp'thar Forest|N|To Moanah Stormhoof.|
