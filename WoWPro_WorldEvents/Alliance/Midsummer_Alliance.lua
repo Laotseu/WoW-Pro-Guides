@@ -53,9 +53,9 @@ T More Torch Catching |N|To the Master Fire Eater. |M|63.19,47.5|Z|Darnassus|QID
 
 A Honor the Flame|N|From the Flame Warden. (Teldrassil)|QID|11824|M|54.88,52.78|Z|Teldrassil|
 T Incense for the Summer Scorchlings |N|Find a Scorchling at or near the tent. |M|54.83,52.77|QID|11964|Z|Teldrassil|
-B [Juggling Torch] x20 |M|42.52,25.90|L|34599 20|N|Buy 20 from the Midsummer Supplier. Get a few more if you are not confident in your ability to juggle. Save these for later.|QID|11806|Z|Teldrassil|
+B [Juggling Torch] x20 |M|42.52,25.90|L|34599 20|N|Buy 20 from the Midsummer Supplier. Get a few more if you are not confident in your ability to juggle. Save these for later.|QID|11806|Z|Darnassus|
 R Rut'theran Village |N|Run back through Darnassus.|M|36.29,50.3|Z|Darnassus|QID|11806|
-F Azuremyst Isle|N|Fly to Azure Watch.|M|55.43,88.41|Z|Teldrassil|QID|11806|
+F Azure Watch|N|Fly to Azure Watch.|M|55.43,88.41|Z|Teldrassil|QID|11806|
 A Honor the Flame|N|From the Flame Warden. (Azuremyst Isle)|QID|11806|M|44.48,52.51|Z|Azuremyst Isle|
 R Bloodmyst Isle |N|Head North to Bloodmyst Isle.|Z|Azuremyst Isle|M|42,0.4|QID|11809|
 A Honor the Flame|N|From the Flame Warden. (Bloodmyst Isle)|QID|11809|M|55.82,67.89|Z|Bloodmyst Isle|
@@ -75,7 +75,7 @@ T Unusual Activity |N|Use the Totemic Beacon to summon the Guide.|U|35828|QID|11
 A An Innocent Disguise |QID|11891|N|From the Earthen Ring Guide.|
 C An Innocent Disguise |N|Turn into a crab and wait for the naga to finish speaking. |M|9.5,12.6|U|35237|QID|11891|Z|Ashenvale|
 T An Innocent Disguise |N|Use the Totemic Beacon to summon the Guide.|U|35828|QID|11891|
-A Inform the Elder |QID|12012|N|From the Earthen Ring Guide.|
+A Inform the Elder |QID|29092|N|From the Earthen Ring Guide.|
 
 A Honor the Flame|N|From the Flame Warden. (Stonetalon Mountains)|QID|28928|M|49.2,51.4|Z|Stonetalon Mountains|
 A Desecrate this Fire!|N|At the Horde Bonfire. (Stonetalon Mountains)|QID|11780|M|53,62.3|Z|Stonetalon Mountains|
@@ -85,7 +85,7 @@ A Honor the Flame|N|From the Flame Warden. (Feralas)|QID|11817|M|46.82,43.68|Z|F
 A Desecrate this Fire!|N|At the Horde Bonfire. (Feralas)|QID|11773|M|72.42,47.55|Z|Feralas|
 A Honor the Flame|N|From the Flame Warden. (Silithus)|QID|11831|M|60.31,33.52|Z|Silithus|
 A Desecrate this Fire!|N|At the Horde Bonfire. (Silithus)|QID|11800|M|50.86,41.69|Z|Silithus|
-A Honor the Flame|N|From the Flame Warden (Uldum)QID|28950|M|53.6,31.8|Z|Uldum|
+A Honor the Flame|N|From the Flame Warden (Uldum)|QID|28950|M|53.6,31.8|Z|Uldum|
 A Desecrate this Fire!|N|At the Horde Bonfire. (Uldum)|QID|28948|M|53,34.5|Z|Uldum|
 A Honor the Flame|N|From the Flame Warden. (Tanaris)|QID|11833|M|52.64,30.28|Z|Tanaris|
 A Desecrate this Fire!|N|At the Horde Bonfire. (Tanaris)|QID|11802|M|49.85,28.13|Z|Tanaris|
@@ -102,7 +102,7 @@ A Desecrate this Fire!|N|At the Horde Bonfire. (Northern Barrens)|QID|11783|M|49
 A Desecrate this Fire!|N|At the Horde Bonfire. (Durotar)|QID|11770|M|51.98,47.18|Z|Durotar|
 
 A Stealing Orgrimmar's Flame |N|Valley of Wisdom. Loot the bonfire for an item which starts this quest.|U|23179|QID|9324|Z|Orgrimmar|M|46.65,38.51|
-R Ratchet |N|Return to the Northern Barrens, then head South to Ratchet.|QID|11832|M|66.89,70.48|
+R Ratchet |N|Return to the Northern Barrens, then head South to Ratchet.|QID|11832|M|66.89,70.48|Z|Northern Barrens|
 b Booty Bay|N|Catch the boat to Booty Bay.|M|70.9,72.56|Z|Northern Barrens|QID|11832|
 A Honor the Flame|N|From the Flame Warden. (The Cape of Stranglethorn)|QID|11832|M|51.8,67.8|Z|The Cape of Stranglethorn|
 A Desecrate this Fire!|N|At the Horde Bonfire. (The Cape of Stranglethorn)|QID|11801|M|50.6,70.7|Z|The Cape of Stranglethorn|
@@ -121,15 +121,15 @@ A Honor the Flame|N|From the Flame Warden. (Redridge Mountains)|QID|11822|M|24.8
 A Honor the Flame|N|From the Flame Warden. (Burning Steppes)|QID|11810|M|68.34,60.63|Z|Burning Steppes|
 A Desecrate this Fire!|N|At the Horde Bonfire. (Burning Steppes)|QID|11768|M|51.46,29.08|Z|Burning Steppes|
 
-A Honor the Flame|N|From the Flame Warden.|QID|28925|M|19,56|Z|Badlands|
-A Desecrate this Fire! (Badlands)|N|At the Horde Bonfire. (Badlands)|QID|11766|M|24.03,37.11|Z|Badlands|
+A Honor the Flame|N|From the Flame Warden. (Badlands)|QID|28925|M|19,56|Z|Badlands|
+A Desecrate this Fire!|N|At the Horde Bonfire. (Badlands)|QID|11766|M|24.03,37.11|Z|Badlands|
 A Honor the Flame|N|From the Flame Warden. (Loch Modan)|QID|11820|M|32.52,40.98|Z|Loch Modan|
 A Honor the Flame|N|From the Flame Warden. (Dun Morogh)|QID|11813|M|53.8,45.2|Z|Dun Morogh|
 A Honor the Flame|N|From the Flame Warden. (Wetlands)|QID|11828|M|13.47,47.09|Z|Wetlands|
 A Honor the Flame|N|From the Flame Warden. (Twilight Highlands)|QID|28945|M|47.2,29|Z|Twilight Highlands|
 A Desecrate this Fire!|N|At the Horde Bonfire. (Twilight Highlands)|QID|28944|M|53.2,46.5|Z|Twilight Highlands|
 A Honor the Flame|N|From the Flame Warden. (Arathi Highlands)|QID|11804|M|44.29,46.05|Z|Arathi Highlands|
-A Desecrate this Fire!)|N|At the Horde Bonfire. (Arathi Highlands|QID|11764|M|69.16,42.9|Z|Arathi Highlands|
+A Desecrate this Fire!|N|At the Horde Bonfire. (Arathi Highlands)|QID|11764|M|69.16,42.9|Z|Arathi Highlands|
 
 A Desecrate this Fire!|N|At the Horde Bonfire. (Hillsbrad Foothills)|QID|11776|M|54.57,49.87|Z|Hillsbrad Foothills|
 A Desecrate this Fire!|N|At the Horde Bonfire. (Silverpine Forest)|QID|11580|M|49.64,38.64|Z|Silverpine Forest|
