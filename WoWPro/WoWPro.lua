@@ -71,7 +71,7 @@ _G.WoWPro = WoWPro
 WoWPro.Version = GetAddOnMetadata("WoWPro", "Version")
 WoWPro.DebugMode = false
 WoWPro.Guides = {}
-WoWPro.InitLockdown = false  -- Set when the addon is loaded
+WoWPro.InitLockdown = true  -- Set when the addon is loaded
 
 
 -- Define list of objects to be exported to Guide Addons
@@ -311,6 +311,7 @@ function WoWPro:OnEnable()
 		"ZONE_CHANGED",
 		"ZONE_CHANGED_INDOORS",
 		"ZONE_CHANGED_NEW_AREA",
+		"CRITERIA_UPDATE",
 	})
 --	WoWPro.LockdownTimer = nil
 	WoWPro.LockdownTimer = 2.0 -- Initial setting so that InitLockdown will get set to nil after login
@@ -321,7 +322,11 @@ function WoWPro:OnEnable()
 	            WoWPro:dbp("Lockdown Timer expired.  Return to normal")
 	            WoWPro.LockdownTimer = nil
 	            WoWPro.InitLockdown = false
-                WoWPro:LoadGuide()			-- Loads Current Guide (if nil, loads NilGuide)
+               WoWPro:LoadGuide()			-- Loads Current Guide (if nil, loads NilGuide)
+					WoWPro:UpdateGuide()			-- First update
+
+               -- Disable the OnUpdate()
+               WoWPro.EventFrame:SetScript("OnUpdate",nil)
 	        end
 	    end
 	end)
@@ -370,8 +375,32 @@ if _G.perr_onevent then err("event = %s", event) end
 
 		-- Locking event processong till after things get settled --
 		elseif event == "PLAYER_LEAVING_WORLD" then
-		    WoWPro:dbp("Locking Down 1")
-		    WoWPro.InitLockdown = true
+			WoWPro:dbp("Locking Down 1")
+--			WoWPro.LockdownTimer = 2.0
+--	  		WoWPro.InitLockdown = true
+
+		-- Noticing if we have entered a Dungeon!
+		elseif event == "ZONE_CHANGED_NEW_AREA" then
+			if WoWProCharDB.AutoHideLevelingInsideInstances then
+				if IsInInstance() then
+					WoWPro:Print("|cff33ff33Instance Auto Hide|r: Leveling Module")
+					WoWPro.MainFrame:Hide()
+					WoWPro.Titlebar:Hide()
+					WoWPro.Hidden = true
+					return
+				elseif WoWPro.Hidden == true then
+					WoWPro:Print("|cff33ff33Instance Exit Auto Show|r: Leveling Module")
+					WoWPro.MainFrame:Show()
+					WoWPro.Titlebar:Show()
+					WoWPro.Hidden = nil
+				end
+			end
+
+			WoWPro:AutoCompleteZone(...)
+
+		elseif event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" then
+			WoWPro:AutoCompleteZone(...)
+
 		end
 
 		if WoWPro.InitLockdown then
@@ -391,6 +420,9 @@ if _G.perr_onevent then err("event = %s", event) end
 				WoWPro.LockdownTimer = 2.0
 			end
 
+			WoWPro:UpdateGuide()
+		-- Update Achivement criteria based stuff
+		elseif event == "CRITERIA_UPDATE" then
 			WoWPro:UpdateGuide()
 		end
 
@@ -451,28 +483,6 @@ if _G.perr_onevent then err("event = %s", event) end
 
 		elseif event == "BAG_UPDATE" then
 			WoWPro:BAG_UPDATE_bucket()
-
-		-- Noticing if we have entered a Dungeon!
-		elseif event == "ZONE_CHANGED_NEW_AREA" then
-			if WoWProCharDB.AutoHideLevelingInsideInstances then
-				if IsInInstance() then
-					WoWPro:Print("|cff33ff33Instance Auto Hide|r: Leveling Module")
-					WoWPro.MainFrame:Hide()
-					WoWPro.Titlebar:Hide()
-					WoWPro.Hidden = true
-					return
-				elseif WoWPro.Hidden == true then
-					WoWPro:Print("|cff33ff33Instance Exit Auto Show|r: Leveling Module")
-					WoWPro.MainFrame:Show()
-					WoWPro.Titlebar:Show()
-					WoWPro.Hidden = nil
-				end
-			end
-
-			WoWPro:AutoCompleteZone(...)
-
-		elseif event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" then
-			WoWPro:AutoCompleteZone(...)
 
 		elseif event == "PLAYER_LEVEL_UP" then
 			WoWPro:AutoCompleteLevel(...)
@@ -606,7 +616,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 	end)
 	f:SetScript("OnUpdate", function(self, elapsed)
 		throt = throt - elapsed
-		if throt < 0 then
+		if throt < 0 and WoWPro.action then
 			if quest_log_update then
 
 				WoWPro:PopulateQuestLog()
@@ -763,7 +773,7 @@ do -- BAG_UPDATE_bucket Waiting Bucket Closure
 	f:Hide()
 	f:SetScript("OnUpdate", function(self, elapsed)
 		throt = throt - elapsed
-		if throt < 0 then
+		if throt < 0 and WoWPro.lootitem then
 			WoWPro:UpdateLootLines() -- Update the loot tracking in the WoWPro quest tracking
 			f:Hide()
 		end

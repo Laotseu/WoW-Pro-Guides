@@ -206,10 +206,10 @@ function WoWPro.WorldEvents:NextStep(k, skip)
 				end
 			end
 		end
-		if found == false and proflvl == 0 then skip = false 
+		if found == false and proflvl == 0 then skip = false
 		else if found == false and profmaxlvl == 700 then skip = true end end
 	end
-
+]]--
 	-- Skipping profession quests (moved here from core)  --
 	if WoWPro.prof[k] then
 		local prof, profnum, proflvl, profmaxlvl, profmaxskill = (";"):split(WoWPro.prof[k])
@@ -942,133 +942,133 @@ function WoWPro.WorldEvents:EventHandler(self, event, ...)
 
 	WoWPro:dbp("Running: WorldEvents Event Handler "..event)
 
-	-- Noticing if we have entered a Dungeon!
-	if event == "ZONE_CHANGED_NEW_AREA" and WoWProCharDB.AutoHideWorldEventsInsideInstances == true then
-	    local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-	    if WoWPro.zone[qidx] and not WoWPro:IsInstanceZone(WoWPro.zone[qidx]) and IsInInstance() then
-	        WoWPro:Print("|cff33ff33 Suppressing Instance Auto Hide, turn it on after you are done with this guide.|r")
-	        WoWProCharDB.AutoHideWorldEventsInsideInstances = false
-	        return
-	    end
-		if IsInInstance() then
-			WoWPro:Print("|cff33ff33Instance Auto Hide|r: WorldEvents Module")
-			WoWPro.MainFrame:Hide()
-			WoWPro.Titlebar:Hide()
-			WoWPro.Hidden = true
-			return
-		elseif WoWPro.Hidden == true then
-			WoWPro:Print("|cff33ff33Instance Exit Auto Show|r: WorldEvents Module")
-			WoWPro.MainFrame:Show()
-			WoWPro.Titlebar:Show()
-			WoWPro.Hidden = nil
-		end
-	end
+---	-- Noticing if we have entered a Dungeon!
+---	if event == "ZONE_CHANGED_NEW_AREA" and WoWProCharDB.AutoHideWorldEventsInsideInstances == true then
+---	    local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+---	    if WoWPro.zone[qidx] and not WoWPro:IsInstanceZone(WoWPro.zone[qidx]) and IsInInstance() then
+---	        WoWPro:Print("|cff33ff33 Suppressing Instance Auto Hide, turn it on after you are done with this guide.|r")
+---	        WoWProCharDB.AutoHideWorldEventsInsideInstances = false
+---	        return
+---	    end
+---		if IsInInstance() then
+---			WoWPro:Print("|cff33ff33Instance Auto Hide|r: WorldEvents Module")
+---			WoWPro.MainFrame:Hide()
+---			WoWPro.Titlebar:Hide()
+---			WoWPro.Hidden = true
+---			return
+---		elseif WoWPro.Hidden == true then
+---			WoWPro:Print("|cff33ff33Instance Exit Auto Show|r: WorldEvents Module")
+---			WoWPro.MainFrame:Show()
+---			WoWPro.Titlebar:Show()
+---			WoWPro.Hidden = nil
+---		end
+---	end
 
-    -- Lets see what quests the NPC has:
-    if event == "GOSSIP_SHOW" and WoWProCharDB.AutoSelect == true then
-        local npcQuests = {GetGossipAvailableQuests()};
-        local index = 0
-        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-        for _,item in pairs(npcQuests) do
-            if type(item) == "string" then
-                index = index + 1
-		        if WoWPro.action[qidx] == "A" and item == WoWPro.step[qidx] then
-		            SelectGossipAvailableQuest(index)
-		            return
-		        end
-            end
-        end
-        npcQuests =  {GetGossipActiveQuests()};
-        index = 0
-        for _,item in pairs(npcQuests) do
-            if type(item) == "string" then
-                index = index + 1
-		        if WoWPro.action[qidx] == "T" and item == WoWPro.step[qidx] then
-		            SelectGossipActiveQuest(index)
-		            return
-		        end
-            end
-        end
-    end
+--    -- Lets see what quests the NPC has:
+--    if event == "GOSSIP_SHOW" and WoWProCharDB.AutoSelect == true then
+--        local npcQuests = {GetGossipAvailableQuests()};
+--        local index = 0
+--        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+--        for _,item in pairs(npcQuests) do
+--            if type(item) == "string" then
+--                index = index + 1
+--		        if WoWPro.action[qidx] == "A" and item == WoWPro.step[qidx] then
+--		            SelectGossipAvailableQuest(index)
+--		            return
+--		        end
+--            end
+--        end
+--        npcQuests =  {GetGossipActiveQuests()};
+--        index = 0
+--        for _,item in pairs(npcQuests) do
+--            if type(item) == "string" then
+--                index = index + 1
+--		        if WoWPro.action[qidx] == "T" and item == WoWPro.step[qidx] then
+--		            SelectGossipActiveQuest(index)
+--		            return
+--		        end
+--            end
+--        end
+--    end
 
-    if event == "QUEST_GREETING" and WoWProCharDB.AutoSelect == true then
-        local numAvailableQuests = GetNumAvailableQuests()
-        local numActiveQuests = GetNumActiveQuests()
-        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-        for i=1, numActiveQuests do
-            if WoWPro.action[qidx] == "T" and GetActiveTitle(i) == WoWPro.step[qidx] then
-		        SelectActiveQuest(i)
-		        return
-		    end
-		end
-        for i=1, numAvailableQuests do
-            if WoWPro.action[qidx] == "A" and GetAvailableTitle(i) == WoWPro.step[qidx] then
-		        SelectAvailableQuest(i)
-		        return
-		    end
-		end
-    end
+--    if event == "QUEST_GREETING" and WoWProCharDB.AutoSelect == true then
+--        local numAvailableQuests = GetNumAvailableQuests()
+--        local numActiveQuests = GetNumActiveQuests()
+--        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+--        for i=1, numActiveQuests do
+--            if WoWPro.action[qidx] == "T" and GetActiveTitle(i) == WoWPro.step[qidx] then
+--		        SelectActiveQuest(i)
+--		        return
+--		    end
+--		end
+--        for i=1, numAvailableQuests do
+--            if WoWPro.action[qidx] == "A" and GetAvailableTitle(i) == WoWPro.step[qidx] then
+--		        SelectAvailableQuest(i)
+--		        return
+--		    end
+--		end
+--    end
 
-    if event == "QUEST_DETAIL" and WoWProCharDB.AutoAccept == true then
-        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-        local questtitle = GetTitleText();
-		if WoWPro.action[qidx] == "A" and questtitle == WoWPro.step[qidx] then
-		    AcceptQuest()
-		end
-    end
+--    if event == "QUEST_DETAIL" and WoWProCharDB.AutoAccept == true then
+--        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+--        local questtitle = GetTitleText();
+--		if WoWPro.action[qidx] == "A" and questtitle == WoWPro.step[qidx] then
+--		    AcceptQuest()
+--		end
+--    end
 
-    if event == "QUEST_PROGRESS" and WoWProCharDB.AutoTurnin == true then
-        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-        local questtitle = GetTitleText();
-		if WoWPro.action[qidx] == "T" and questtitle == WoWPro.step[qidx] then
-		    CompleteQuest()
-		end
-    end
-
-	-- Noting that a quest is being completed for quest log update events --
-	if event == "QUEST_COMPLETE" then
-	    WoWPro:Print("Completing Quest "..tostring(GetQuestID()))
-        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-        local questtitle = GetTitleText();
-        WoWPro:dbp("QC: "..WoWPro.action[qidx].."'"..questtitle.."', vs '"..WoWPro.step[qidx].."'")
-		if WoWProCharDB.AutoTurnin == true and (WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and questtitle == WoWPro.step[qidx] then
-		    if (GetNumQuestChoices() <= 1) then
-		        GetQuestReward(0)
-		    end
-        end
-		WoWPro.WorldEvents.CompletingQuest = true
-		WoWPro.WorldEvents:AutoCompleteQuestUpdate(GetQuestID())
-	end
+---    if event == "QUEST_PROGRESS" and WoWProCharDB.AutoTurnin == true then
+---        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+---        local questtitle = GetTitleText();
+---		if WoWPro.action[qidx] == "T" and questtitle == WoWPro.step[qidx] then
+---		    CompleteQuest()
+---		end
+---    end
+---
+---	-- Noting that a quest is being completed for quest log update events --
+---	if event == "QUEST_COMPLETE" then
+---	    WoWPro:Print("Completing Quest "..tostring(GetQuestID()))
+---        local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+---        local questtitle = GetTitleText();
+---        WoWPro:dbp("QC: "..WoWPro.action[qidx].."'"..questtitle.."', vs '"..WoWPro.step[qidx].."'")
+---		if WoWProCharDB.AutoTurnin == true and (WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and questtitle == WoWPro.step[qidx] then
+---		    if (GetNumQuestChoices() <= 1) then
+---		        GetQuestReward(0)
+---		    end
+---        end
+---		WoWPro.WorldEvents.CompletingQuest = true
+---		WoWPro.WorldEvents:AutoCompleteQuestUpdate(GetQuestID())
+---	end
 
 	-- Auto-Completion --
-	if event == "CHAT_MSG_SYSTEM" then
-		WoWPro.WorldEvents:AutoCompleteSetHearth(...)
-	end
-	if event == "CHAT_MSG_LOOT" then
-		WoWPro.WorldEvents:AutoCompleteLoot(...)
-	end
-	if event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
-		WoWPro.WorldEvents:AutoCompleteZone(...)
-	end
-	if event == "QUEST_LOG_UPDATE" then
-		WoWPro:PopulateQuestLog(...)
-		WoWPro.WorldEvents:AutoCompleteQuestUpdate(...)
-		WoWPro.WorldEvents:UpdateQuestTracker()
-	end
-	if event == "UI_INFO_MESSAGE" then
-		WoWPro.WorldEvents:AutoCompleteGetFP(...)
-	end
-	if event == "PLAYER_LEVEL_UP" then
-		WoWPro.WorldEvents:AutoCompleteLevel(...)
-		WoWPro.WorldEvents.CheckAvailableSpells(...)
+--	if event == "CHAT_MSG_SYSTEM" then
+--		WoWPro.WorldEvents:AutoCompleteSetHearth(...)
+--	end
+--	if event == "CHAT_MSG_LOOT" then
+--		WoWPro.WorldEvents:AutoCompleteLoot(...)
+--	end
+--	if event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
+--		WoWPro.WorldEvents:AutoCompleteZone(...)
+--	end
+--	if event == "QUEST_LOG_UPDATE" then
+--		WoWPro:PopulateQuestLog(...)
+--		WoWPro.WorldEvents:AutoCompleteQuestUpdate(...)
+--		WoWPro.WorldEvents:UpdateQuestTracker()
+--	end
+--	if event == "UI_INFO_MESSAGE" then
+--		WoWPro.WorldEvents:AutoCompleteGetFP(...)
+--	end
+--	if event == "PLAYER_LEVEL_UP" then
+--		WoWPro.WorldEvents:AutoCompleteLevel(...)
+--		WoWPro.WorldEvents.CheckAvailableSpells(...)
 --		WoWPro.WorldEvents.CheckAvailableTalents()
-	end
-	if event == "TRAINER_UPDATE" then
-		WoWPro.WorldEvents.CheckAvailableSpells()
-	end
-	if event == "CRITERIA_UPDATE" then
-		WoWPro:UpdateGuide()
-	end
+--	end
+--	if event == "TRAINER_UPDATE" then
+--		WoWPro.WorldEvents.CheckAvailableSpells()
+--	end
+--	if event == "CRITERIA_UPDATE" then
+--		WoWPro:UpdateGuide()
+--	end
 end
 
 -- Auto-Complete: Get flight point --
