@@ -53,7 +53,6 @@ T More Torch Catching |N|To the Master Fire Eater. |M|63.19,47.5|Z|Darnassus|QID
 
 A Honor the Flame|N|From the Flame Warden. (Teldrassil)|QID|11824|M|54.88,52.78|Z|Teldrassil|
 T Incense for the Summer Scorchlings |N|Find a Scorchling at or near the tent. |M|54.83,52.77|QID|11964|Z|Teldrassil|
-B [Juggling Torch] x20 |M|42.52,25.90|L|34599 20|N|Buy 20 from the Midsummer Supplier. Get a few more if you are not confident in your ability to juggle. Save these for later.|QID|11806|Z|Darnassus|
 R Rut'theran Village |N|Run back through Darnassus.|M|36.29,50.3|Z|Darnassus|QID|11806|
 F Azure Watch|N|Fly to Azure Watch.|M|55.43,88.41|Z|Teldrassil|QID|11806|
 A Honor the Flame|N|From the Flame Warden. (Azuremyst Isle)|QID|11806|M|44.48,52.51|Z|Azuremyst Isle|
@@ -167,7 +166,7 @@ H Stormwind City|N|Hearth back to Stormwind.|QID|11775|
 R Blasted Lands|N|Take the portal in the Mage's District to go to the Blasted Lands.|Z|Stormwind City|M|48.98,87.37|QID|11775|
 R Hellfire Peninsula |N|Go south through the Dark Portal to get to Hellfire.|M|55.03,54.12|Z|Blasted Lands|QID|11775|
 A Desecrate this Fire!|N|At the Horde Bonfire. (Hellfire Peninsula)|QID|11775|M|57.15,41.81|Z|Hellfire Peninsula|
-A Honor the Flame)|N|From the Flame Warden. (Hellfire Peninsula|QID|11818|M|62.17,58.31|Z|Hellfire Peninsula|
+A Honor the Flame|N|From the Flame Warden. (Hellfire Peninsula)|QID|11818|M|62.17,58.31|Z|Hellfire Peninsula|
 A Desecrate this Fire!|N|At the Horde Bonfire. (Shadowmoon Valley)|QID|11779|M|33.47,30.31|Z|Shadowmoon Valley|
 A Honor the Flame|N|From the Flame Warden. (Shadowmoon Valley)|QID|11823|M|39.65,54.64|Z|Shadowmoon Valley|
 A Honor the Flame|N|From the Flame Warden. (Terokkar Forest)|QID|11825|M|54.05,55.50|Z|Terokkar Forest|
@@ -189,16 +188,17 @@ B [Vestment of Summer] |L|34685|N|Buy the Vestment of Summer from the Midsummer 
 B [Sandals of Summer] |L|34683|N|Buy the Sandals of Summer from the Midsummer Supplier.|M|49.02,71.98|Z|Stormwind City|QID|13485
 N Burning Hot Pole Dance |N|Equip your summer garb and click on the Ribbon Pole to dance for at least 60 seconds.|M|50.5,73.21|Z|Stormwind City|QID|13485
 
-N Keep Going? |N|Time to head to Dalaran to get that last achievment needed for the Flame Warden meta achievement Also, do you need more blossoms and cash? Hit up the Northrend bonfires, though they do not count for any type of achivement.|QID|13485
+N Keep Going? |N|Time to head to Dalaran to get that last achievment needed for the Flame Warden meta achievement Also, do you need more blossoms and cash? Hit up the Northrend bonfires, though they do not count for any type of achivement.|
+B [Juggling Torch] x20 |M|42.8,71.8|L|34599 20|N|Buy 20 from the Midsummer Supplier. Get a few more if you are not confident in your ability to juggle. Save these for later.|QID|11806|Z|Stormwind City|
 b Borean Tundra|N|Take the boat to Borean Tundra.|M|18.49,24.82|Z|Stormwind City|QID|13485
 A Honor the Flame|N|From the Flame Warden. (Borean Tundra)|QID|13485|M|55.10,19.95|Z|Borean Tundra|
-A Desecrate this Fire!|N|At the Horde Bonfire.|QID|13441|M|51.06,11.86|Z|Borean Tundra|
-A Desecrate this Fire!|N|At the Horde Bonfire. (Borean Tundra)|QID|13451|M|38.51,48.25|Z|Dragonblight|
-A Honor the Flame (Dragonblight)|N|From the Flame Warden. (Dragonblight)|QID|13487|M|75.29,43.80|Z|Dragonblight|
+A Desecrate this Fire!|N|At the Horde Bonfire. (Borean Tundra)|QID|13441|M|51.06,11.86|Z|Borean Tundra|
+A Desecrate this Fire!|N|At the Horde Bonfire. (Dragonblight)|QID|13451|M|38.51,48.25|Z|Dragonblight|
+A Honor the Flame|N|From the Flame Warden. (Dragonblight)|QID|13487|M|75.29,43.80|Z|Dragonblight|
+A Desecrate this Fire!|N|At the Horde Bonfire. (Grizzly Hills)|QID|13454|M|19.08,61.42|Z|Grizzly Hills|
 A Desecrate this Fire!|N|At the Horde Bonfire. (Howling Fjord)|QID|13453|M|48.45,13.34|Z|Howling Fjord|
 A Honor the Flame|N|From the Flame Warden. (Howling Fjord)|QID|13488|M|57.80,16.12|Z|Howling Fjord|
 A Honor the Flame|N|From the Flame Warden. (Grizzly Hills)|QID|13489|M|33.90,60.45|Z|Grizzly Hills|
-A Desecrate this Fire!|N|At the Horde Bonfire. (Grizzly Hills)|QID|13454|M|19.08,61.42|Z|Grizzly Hills|
 A Desecrate this Fire!|N|At the Horde Bonfire. (Zul'Drak)|QID|13458|M|43.28,71.25|Z|Zul'Drak|
 A Honor the Flame|N|From the Flame Warden. (Zul'Drak)|QID|13492|M|40.38,61.30|Z|Zul'Drak|
 A Honor the Flame|N|From the Flame Warden. (Crystalsong Forest)|QID|13491|M|78.17,74.95|Z|Crystalsong Forest|
