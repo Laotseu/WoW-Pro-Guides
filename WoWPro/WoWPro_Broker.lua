@@ -200,11 +200,16 @@ function WoWPro:LoadGuide(guideID)
 ----WoWPro:Trace("End WoWPro:LoadGuide Guide: "..tostring(guideID))
 end
 
+WoWPro.eventcount = WoWPro.eventcount or {}
+WoWPro.eventcount["UpdateGuide"] = 0
+
 -- Guide Update --
 function WoWPro:UpdateGuide(offset)
 ----WoWPro:Trace("Call WoWPro:UpdateGuide offset:"..tostring(offset))
 	if not WoWPro.GuideFrame:IsVisible() or not GuideLoaded then return end
 	WoWPro:dbp("Running: UpdateGuide()")
+
+	WoWPro.eventcount["UpdateGuide"] = WoWPro.eventcount["UpdateGuide"] + 1
 
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 	local GID = WoWProDB.char.currentguide
@@ -756,7 +761,7 @@ local function GetLootTrackingInfo(lootitem, lootqty)
 	numinbag = GetItemCount(lootitem)						--Finds the number in the bag, and adds a count if supplied
 	track = track..numinbag										--Adds the number in bag to the string
 	track = track.."/"..lootqty								--Adds the total number needed to the string
-	if tonumber(lootqty or 1) <= numinbag then
+	if tonumber(lootqty) or 1 <= numinbag then
 		track = track.." (C)"									--If the user has the requisite number of items, adds a complete marker
 	end
 	return track, numinbag										--Returns the track string and the inventory count to the calling function
@@ -809,7 +814,7 @@ function WoWPro:UpdateQuestTracker()
 			end
 			if lootitem then
 				row.trackcheck = true
-				lootqty = tonumber(lootqty or 1)
+				lootqty = tonumber(lootqty) or 1
 				track = GetLootTrackingInfo(lootitem, lootqty)
 			end
 		end
@@ -894,6 +899,7 @@ end
 
 -- Auto-Complete: Zone based --
 function WoWPro:AutoCompleteZone()
+	if not WoWPro.action then return end
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount or 0

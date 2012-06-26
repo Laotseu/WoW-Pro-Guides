@@ -331,9 +331,13 @@ function WoWPro:OnEnable()
 	    end
 	end)
 
+	WoWPro.eventcount = WoWPro.eventcount or {}
+
 	WoWPro.EventFrame:SetScript("OnEvent", function(self, event, ...)		-- Setting up event handler
 
-if _G.perr_onevent then err("event = %s", event) end
+		if _G.perr_onevent then err("event = %s", event) end
+
+		WoWPro.eventcount[event] = WoWPro.eventcount[event] and WoWPro.eventcount[event] + 1 or 1
 
 		if WoWPro.InitLockdown then
 		    WoWPro:dbp("LockEvent Fired: "..event)
@@ -616,7 +620,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 	end)
 	f:SetScript("OnUpdate", function(self, elapsed)
 		throt = throt - elapsed
-		if throt < 0 and WoWPro.action then
+		if throt < 0 and WoWPro.action and WoWPro.lootqty then
 			if quest_log_update then
 
 				WoWPro:PopulateQuestLog()
