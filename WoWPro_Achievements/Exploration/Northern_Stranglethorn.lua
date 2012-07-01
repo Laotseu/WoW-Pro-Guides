@@ -1,4 +1,16 @@
 
+-- WoWPro Guides by "The WoW-Pro Community" are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+-- Based on a work at github.com.
+-- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
+
+-- URL: http://wow-pro.com/wiki/exploration_achievements_eastern_kingdoms
+-- Date: 2012-06-30 16:06
+-- Who: Ludovicus Maior
+-- Log: Wrong zone name for The Cape of Stranglethorn
+
+-- URL: http://wow-pro.com/node/3475/revisions/24982/view
+-- Date: 2012-05-27 17:50
+-- Who: Ludovicus Maior
 
 WoWPro.Achievements:RegisterGuide("LudoExpNoS","Northern Stranglethorn","Northern Stranglethorn","Exploration", "Eastern Kingdom", "Ludovicus", "Neutral", function()
 return [[
@@ -20,8 +32,7 @@ F The Vile Reef|QID|907810014|M|25.94,42.43|ACH|781;14|
 F Ruins of Zul'Kunda|QID|907810015|M|26.22,22.81|ACH|781;15|
 F Zul'Gurub|QID|907810016|M|67.53,32.85|ACH|781;16|
 
-
 N Congratulations on exploring Northern Stranglethorn|
 
-]] 
+]]
 end)

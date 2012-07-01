@@ -1,6 +1,18 @@
 
+-- WoWPro Guides by "The WoW-Pro Community" are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+-- Based on a work at github.com.
+-- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
 
-WoWPro.Achievements:RegisterGuide("TwiExpEP","Eastern Plagueland","Eastern Plagueland","Exploration", "Eastern Kingdom", "Twists", "Neutral", function()
+-- URL: http://wow-pro.com/wiki/exploration_achievements_eastern_kingdoms
+-- Date: 2012-06-30 16:06
+-- Who: Ludovicus Maior
+-- Log: Wrong zone name for The Cape of Stranglethorn
+
+-- URL: http://wow-pro.com/node/3475/revisions/24982/view
+-- Date: 2012-05-27 17:50
+-- Who: Ludovicus Maior
+
+WoWPro.Achievements:RegisterGuide("TwiExpEP","Eastern Plaguelands","Eastern Plaguelands","Exploration", "Eastern Kingdom", "Twists", "Neutral", function()
 return [[
 
 F Thondroril River|QID|907710001|M|08.63,66.20|ACH|771;1|
@@ -27,7 +39,7 @@ F The Noxious Glade|QID|907710021|M|77.10,37.02|ACH|771;13|
 F Northdale|QID|907710022|M|65.03,25.67|ACH|771;16|
 F Zul'Mashar|QID|907710023|M|67.39,09.17|ACH|771;17|
 
-N Congratulations on exploring Eastern Plagueland
+N Congratulations on exploring Eastern Plaguelands
 
-]] 
+]]
 end)

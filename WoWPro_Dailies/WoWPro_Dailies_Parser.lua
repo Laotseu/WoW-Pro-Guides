@@ -62,15 +62,38 @@ function WoWPro.Dailies:NextStep(k, skip)
 		end		
 	end
 
+    -- Check for must be active quests
+    if WoWPro.active[k] then
+		if not WoWPro.Dailies:QIDsInTable(WoWPro.active[k],WoWPro.QuestLog) then 
+			skip = true -- If the quest is not in the quest log, the step is skipped --
+		end		
+    end
+    
 	-- Checking Prerequisites --
-	if WoWPro.prereq[k] and WoWPro.QID[k] then		
-		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
-		for j=1,numprereqs do
-			local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
-			if not WoWProCharDB.completedQIDs[tonumber(jprereq)] then 
-				skip = true -- If one of the prereqs is NOT complete, step is skipped.
-			end
-		end
+	if WoWPro.prereq[k] and WoWPro.QID[k] then
+	    if string.find(WoWPro.prereq[k],"+") then
+	        -- Any prereq met is OK, skip only if none are met	
+    		local numprereqs = select("#", string.split("+", WoWPro.prereq[k]))
+    		local totalFailure = true
+    		for j=1,numprereqs do
+    			local jprereq = select(numprereqs-j+1, string.split("+", WoWPro.prereq[k]))
+    			if WoWProCharDB.completedQIDs[tonumber(jprereq)] then 
+    				totalFailure = false -- If one of the prereqs is complete, step is not skipped.
+    			end
+    		end
+    		if totalFailure then
+    		    skip = totalFailure
+    		end
+    	else
+ 	        -- All prereq met must be met	
+    		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
+    		for j=1,numprereqs do
+    			local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
+    			if not WoWProCharDB.completedQIDs[tonumber(jprereq)] then 
+    				skip = true -- If one of the prereqs is NOT complete, step is skipped.
+    			end
+    		end
+   	    end
 	end
 
 	-- Skipping quests with prerequisites if their prerequisite was skipped --
@@ -122,6 +145,7 @@ local function ParseQuests(...)
 	end
 	for j=1,select("#", ...) do
 		local text = select(j, ...)
+		text = text:trim()
 		if text ~= "" and text:sub(1,1) ~= ";" then
 			local class, race, gender, faction = text:match("|C|([^|]*)|?"), text:match("|R|([^|]*)|?"), text:match("|GEN|([^|]*)|?"), text:match("|FACTION|([^|]*)|?")
 			if class then
@@ -174,6 +198,7 @@ local function ParseQuests(...)
     
     			if text:find("|NC|") then WoWPro.noncombat[i] = true end
     			WoWPro.leadin[i] = text:match("|LEAD|([^|]*)|?")
+    			WoWPro.active[i] = text:match("|ACTIVE|([^|]*)|?")
     			WoWPro.target[i] = text:match("|T|([^|]*)|?")
     			WoWPro.rep[i] = text:match("|REP|([^|]*)|?")
     			WoWPro.prof[i] = text:match("|P|([^|]*)|?")
@@ -212,7 +237,7 @@ function WoWPro.Dailies:LoadGuide()
 	-- Server query for completed quests --
 	WoWPro.Dailies.DailiesReset = true
     WoWPro.Dailies:CheckDailiesReset()
- 	QueryQuestsCompleted()
+ 	WoWPro.QueryQuestsCompleted()
  	 
 	-- Parsing quests --
 	local sequence = WoWPro.Guides[GID].sequence
@@ -237,7 +262,6 @@ function WoWPro.Dailies:LoadGuide()
 			if WoWPro.QID[i] then
 				QID = select(numQIDs-j+1, string.split(";", WoWPro.QID[i]))
 				QID = tonumber(QID)
---				WoWPro:dbp("Checking for completion: "..QID.." - "..WoWPro.step[i])
 			else
 				QID = nil
 			end
@@ -314,9 +338,6 @@ function WoWPro.Dailies:RowUpdate(offset)
 		local prereq = WoWPro.prereq[k] 
 		local leadin = WoWPro.leadin[k] 		
 		local target = WoWPro.target[k] 
-		if WoWPro.prof[k] then
-			local prof, proflvl = string.split(" ", WoWPro.prof[k]) 
-		end
 		local completion = WoWProCharDB.Guide[GID].completion
 		
 		-- Checking off leadin steps --
@@ -390,7 +411,7 @@ function WoWPro.Dailies:RowUpdate(offset)
 		}
 		if step then
 			table.insert(dropdown, 
-				{text = step.." Options", isTitle = true}
+				{text = step.." Options", notCheckable = true, isTitle = true}
 			)
 			QuestMapUpdateAllQuests()
 			QuestPOIUpdateIcons()
@@ -398,22 +419,22 @@ function WoWPro.Dailies:RowUpdate(offset)
 			if QID and not action == "A" then _, x, y, obj = QuestPOIGetIconInfo(tonumber(QID)) end
 			if coord or x then
 				table.insert(dropdown, 
-					{text = "Map Coordinates", func = function()
+					{text = "Map Coordinates", notCheckable = true, func = function()
 						WoWPro:MapPoint(row.num)
 					end} 
 				)
 			end
 			if not action == "A" and WoWPro.QuestLog[tonumber(QID)] 
-			and WoWPro.QuestLog[tonumber(QID)].index and GetNumPartyMembers() > 0 then
+			and WoWPro.QuestLog[tonumber(QID)].index and WoWPro.GetNumPartyMembers() > 0 then
 				table.insert(dropdown, 
-					{text = "Share Quest", func = function()
+					{text = "Share Quest", notCheckable = true, func = function()
 						QuestLogPushQuest(WoWPro.QuestLog[tonumber(QID)].index)
 					end} 
 				)
 			end
 			if sticky then
 				table.insert(dropdown, 
-					{text = "Un-Sticky", func = function() 
+					{text = "Un-Sticky", notCheckable = true, func = function()
 						WoWPro.sticky[row.index] = false
 						WoWPro.UpdateGuide()
 						WoWPro.UpdateGuide()
@@ -422,7 +443,7 @@ function WoWPro.Dailies:RowUpdate(offset)
 				)
 			else
 				table.insert(dropdown, 
-					{text = "Make Sticky", func = function() 
+					{text = "Make Sticky", notCheckable = true, func = function()
 						WoWPro.sticky[row.index] = true
 						WoWPro.unsticky[row.index] = false
 						WoWPro.UpdateGuide()
@@ -592,12 +613,19 @@ function WoWPro.Dailies:EventHandler(self, event, ...)
 		end 
     end
 
+    if event == "QUEST_PROGRESS" and WoWProDB.char.CompletedDailies < GetDailyQuestsCompleted() then
+ 	    WoWProDB.char.CompletedDailies = GetDailyQuestsCompleted()  
+    end
+
     if event == "QUEST_PROGRESS" and WoWProCharDB.AutoTurnin == true then
         local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
         local questtitle = GetTitleText();
 		if WoWPro.action[qidx] == "T" and questtitle == WoWPro.step[qidx] then
 		    CompleteQuest()
-		end         
+		end
+		if WoWProDB.char.CompletedDailies < GetDailyQuestsCompleted() then
+		   WoWProDB.char.CompletedDailies = GetDailyQuestsCompleted()
+		end   
     end
 
     -- Noting that a quest is being completed for quest log update events --
@@ -609,7 +637,7 @@ function WoWPro.Dailies:EventHandler(self, event, ...)
 	-- Auto-Completion --
 	if event == "CHAT_MSG_SYSTEM" then
 		WoWPro.Dailies:AutoCompleteSetHearth(...)
-		WoWPro.Dailies:CheckDailiesReset()
+		WoWPro.Dailies:CheckDailiesReset(false)
 	end	
 	if event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
 		WoWPro.Dailies:AutoCompleteZone(...)
@@ -634,7 +662,6 @@ function WoWPro.Dailies:Reset()
 		    if WoWProCharDB.Guide[GID] == nil then
 		        WoWProCharDB.Guide[GID] = {}
 		    end
-		    WoWPro.Dailies:Print("Clearing Daily guide %s",GID)
 		    WoWProCharDB.Guide[GID].completion = {}
 		    WoWProCharDB.Guide[GID].skipped = {}
 		end
@@ -642,14 +669,31 @@ function WoWPro.Dailies:Reset()
 end
 
 function WoWPro.Dailies:CheckDailiesReset(force)
+    local nowDone = GetDailyQuestsCompleted()
+    
 	if WoWProDB.char.CompletedDailies == nil or force then
-	    WoWProDB.char.CompletedDailies = GetDailyQuestsCompleted()
-	    	self:Print("Resetting Dailies")
+	    WoWProDB.char.CompletedDailies = nowDone
+        if force then
+            self:Print("Force Reset")
+        else
+            self:Print("Resetting as unknown number of dalies complete and Wow says we did %d.",nowDone)
+        end
 		WoWPro.Dailies.DailiesReset = true
 		WoWPro.Dailies:Reset()
-		QueryQuestsCompleted()
-	else
-		WoWProDB.char.CompletedDailies = GetDailyQuestsCompleted()
+		WoWPro.QueryQuestsCompleted()
+	    return
+	end
+
+	if WoWProDB.char.CompletedDailies > nowDone then
+        self:Print("Reset since we last did %d and now Wow says %d are done.",WoWProDB.char.CompletedDailies,nowDone)
+        WoWProDB.char.CompletedDailies = nowDone
+		WoWPro.Dailies.DailiesReset = true
+		WoWPro.Dailies:Reset()
+		WoWPro.QueryQuestsCompleted()
+	    return
+	elseif WoWProDB.char.CompletedDailies < nowDone then
+	    self:dbp("Updating CompletedDailies to %d",nowDone)
+	    WoWProDB.char.CompletedDailies = nowDone
 	end
 end
 
@@ -721,9 +765,9 @@ function WoWPro.Dailies:AutoCompleteQuestUpdate()
 	end
 	
 	-- First Map Point --
-	if WoWPro.Dailies.FirstMapCall then
+	if WoWPro.FirstMapCall then
 		WoWPro:MapPoint()
-		WoWPro.Dailies.FirstMapCall = false
+		WoWPro.FirstMapCall = false
 	end
 	
 end

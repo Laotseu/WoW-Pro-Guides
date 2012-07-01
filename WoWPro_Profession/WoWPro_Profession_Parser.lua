@@ -50,30 +50,6 @@ function WoWPro.Profession:NextStep(k, skip)
 		end
 	end
 
-	-- Skipping profession quests (moved here from core)  --
-	if WoWPro.prof[k] then 
-		local prof, proflvl, profmaxlvl, profmaxskill = string.split(";",WoWPro.prof[k])
-		proflvl = tonumber(proflvl) or 1
-		profmaxlvl = tonumber(profmaxlvl) or 700
-		profmaxskill = tonumber(profmaxskill) or 700
-		local profs, found = {}, false
-		skip = false
-		profs[1], profs[2], profs[3], profs[4], profs[5], profs[6] = GetProfessions()
-		for p=1,6 do
-			if profs[p] then
-				local skillName, _, skillRank, maxskill = GetProfessionInfo(profs[p])
-				if (skillName == prof) then 
-					found = true
-					if (skillRank >= proflvl) and (skillRank < profmaxlvl) and (maxskill < profmaxskill) then
-						skip = false else skip = true end
-					if skip and proflvl > skillRank then skip = false end
-					if skip then WoWProCharDB.Guide[GID].skipped[k] = true end
-				end
-			end
-		end
-		if found == false and proflvl == 0 then skip = false 
-		else if found == false and profmaxlvl == 700 then skip = true end end
-	end
 	return skip
 end
 
@@ -192,7 +168,7 @@ local function ParseQuests(...)
 					local line =string.format("Vers=%s|Guide=%s|Line=%s",WoWPro.Version,WoWProDB.char.currentguide,text)
                     WoWProDB.global.ZoneErrors = WoWProDB.global.ZoneErrors or {}
 	                table.insert(WoWProDB.global.ZoneErrors, line)
-				    WoWPro:dbp("Invalid Z tag in:"..text)
+				    WoWPro:Print("Invalid Z tag in:"..text)
 				    WoWPro.zone[i] = nil
 				end
 				_, _, WoWPro.lootitem[i], WoWPro.lootqty[i] = text:find("|L|(%d+)%s?(%d*)|")
@@ -257,7 +233,6 @@ function WoWPro.Profession:LoadGuide()
 			if WoWPro.QID[i] then
 				QID = select(numQIDs-j+1, string.split(";", WoWPro.QID[i]))
 				QID = tonumber(QID)
-				WoWPro:dbp("Checking for completion: "..QID.." - "..WoWPro.step[i])
 			else
 				QID = nil
 			end
@@ -413,7 +388,7 @@ function WoWPro.Profession:RowUpdate(offset)
 					end} 
 				)
 			end
-			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].index and GetNumPartyMembers() > 0 then
+			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].index and WoWPro.GetNumPartyMembers() > 0 then
 				table.insert(dropdown, 
 					{text = "Share Quest", func = function()
 						QuestLogPushQuest(WoWPro.QuestLog[QID].index)
@@ -693,9 +668,9 @@ function WoWPro.Profession:AutoCompleteQuestUpdate(questComplete)
 	end
 	
 	-- First Map Point --
-	if WoWPro.Profession.FirstMapCall then
+	if WoWPro.FirstMapCall then
 		WoWPro:MapPoint()
-		WoWPro.Profession.FirstMapCall = false
+		WoWPro.FirstMapCall = false
 	end
 	
 end

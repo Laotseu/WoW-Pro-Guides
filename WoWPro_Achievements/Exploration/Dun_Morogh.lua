@@ -1,4 +1,16 @@
 
+-- WoWPro Guides by "The WoW-Pro Community" are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+-- Based on a work at github.com.
+-- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
+
+-- URL: http://wow-pro.com/wiki/exploration_achievements_eastern_kingdoms
+-- Date: 2012-06-30 16:06
+-- Who: Ludovicus Maior
+-- Log: Wrong zone name for The Cape of Stranglethorn
+
+-- URL: http://wow-pro.com/node/3475/revisions/24982/view
+-- Date: 2012-05-27 17:50
+-- Who: Ludovicus Maior
 
 WoWPro.Achievements:RegisterGuide("TwiExpDM","Dun Morogh","Dun Morogh","Exploration", "Eastern Kingdom", "Twists", "Neutral", function()
 return [[
@@ -20,7 +32,7 @@ F Iceflow Lake|QID|906270014|M|42.95,38.47|ACH|627;15|
 F Shimmer Ridge|QID|906270015|M|48.47,39.33|ACH|627;6|
 F Gates of Ironforge|QID|906270016|M|60.35,33.43|ACH|627;16|
 
-N Congratulations on exploring Dun Morogh 
+N Congratulations on exploring Dun Morogh
 
-]] 
+]]
 end)

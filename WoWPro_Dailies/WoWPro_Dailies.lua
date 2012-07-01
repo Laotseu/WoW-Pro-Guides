@@ -16,7 +16,7 @@ function WoWPro.Dailies:OnEnable()
 	WoWPro:dbp("|cff33ff33Enabled|r: Dailies Module")
 	
 	-- Dailies Tag Setup --
-	WoWPro:RegisterTags({"QID", "questtext", "rep", "noncombat"})
+	WoWPro:RegisterTags({"QID", "questtext", "rep", "noncombat","active"})
 	
 	-- Event Registration --
 	WoWPro.Dailies.Events = {"QUEST_LOG_UPDATE", "QUEST_COMPLETE", 
@@ -40,7 +40,7 @@ function WoWPro.Dailies:OnEnable()
 		WoWPro:LoadGuide(WoWProDB.char.lastdailiesguide)
 	end
 	
-	WoWPro.Dailies.FirstMapCall = true
+	WoWPro.FirstMapCall = true
 	
 end
 

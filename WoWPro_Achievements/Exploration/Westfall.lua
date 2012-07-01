@@ -1,4 +1,16 @@
 
+-- WoWPro Guides by "The WoW-Pro Community" are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+-- Based on a work at github.com.
+-- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
+
+-- URL: http://wow-pro.com/wiki/exploration_achievements_eastern_kingdoms
+-- Date: 2012-06-30 16:06
+-- Who: Ludovicus Maior
+-- Log: Wrong zone name for The Cape of Stranglethorn
+
+-- URL: http://wow-pro.com/node/3475/revisions/24982/view
+-- Date: 2012-05-27 17:50
+-- Who: Ludovicus Maior
 
 WoWPro.Achievements:RegisterGuide("LudoExpWet","Wetlands","Wetlands","Exploration", "Eastern Kingdom", "Ludovicus", "Neutral", function()
 return [[
@@ -20,8 +32,7 @@ F Dun Algaz|QID|908410014|M|48.06,74.43|ACH|841;14|
 F Slabchisel's Survey|QID|908410015|M|57.46,71.70|ACH|841;15|
 F Raptor Ridge|QID|908410016|M|69.89,38.34|ACH|841;16|
 
-
 N Congratulations on exploring Wetlands|
 
-]] 
+]]
 end)

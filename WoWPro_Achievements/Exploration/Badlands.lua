@@ -1,4 +1,16 @@
 
+-- WoWPro Guides by "The WoW-Pro Community" are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+-- Based on a work at github.com.
+-- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
+
+-- URL: http://wow-pro.com/wiki/exploration_achievements_eastern_kingdoms
+-- Date: 2012-06-30 16:06
+-- Who: Ludovicus Maior
+-- Log: Wrong zone name for The Cape of Stranglethorn
+
+-- URL: http://wow-pro.com/node/3475/revisions/24982/view
+-- Date: 2012-05-27 17:50
+-- Who: Ludovicus Maior
 
 WoWPro.Achievements:RegisterGuide("TwiExpBad","Badlands","Badlands","Exploration", "Eastern Kingdom", "Twists", "Neutral", function()
 return [[
@@ -20,7 +32,7 @@ F Dabyrie's Farmstead|QID|907610014|M|49.64,40.59|ACH|761;14|
 F Circle of East Binding|QID|907610015|M|61.62,30.33|ACH|761;15|
 F Hammerfall|QID|907610016|M|69.06,36.18|ACH|761;16|
 
-N Congratulations on exploring Badlands 
+N Congratulations on exploring Badlands
 
-]] 
+]]
 end)

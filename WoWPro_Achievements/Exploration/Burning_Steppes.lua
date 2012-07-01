@@ -1,4 +1,16 @@
 
+-- WoWPro Guides by "The WoW-Pro Community" are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+-- Based on a work at github.com.
+-- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
+
+-- URL: http://wow-pro.com/wiki/exploration_achievements_eastern_kingdoms
+-- Date: 2012-06-30 16:06
+-- Who: Ludovicus Maior
+-- Log: Wrong zone name for The Cape of Stranglethorn
+
+-- URL: http://wow-pro.com/node/3475/revisions/24982/view
+-- Date: 2012-05-27 17:50
+-- Who: Ludovicus Maior
 
 WoWPro.Achievements:RegisterGuide("TwiExpBS","Burning Steppes","Burning Steppes","Exploration", "Eastern Kingdom", "Twists", "Neutral", function()
 return [[
@@ -14,7 +26,7 @@ F Altar of Storms|QID|907750008|M|10.04,29.71|ACH|775;9|
 F Blackrock Mountain|QID|907750009|M|21.22,43.38|ACH|775;10|
 F Blackrock Stronghold|QID|907750010|M|32.66,35.10|ACH|775;7|
 
-N Congratulations on exploring Burning Steppes 
+N Congratulations on exploring Burning Steppes
 
-]] 
+]]
 end)
