@@ -103,8 +103,8 @@ C Dig-Boss Dinwhisker|QID|27964|M|54.93,45.64|N|Kill Dark Iron Excavators and Fo
 T Dig-Boss Dinwhisker|QID|27964|M|68.52,53.68|N|To Jack Rockleg.|
 A Thorium Point: The Seat of the Brotherhood|QID|27965|M|68.52,53.68|N|From Jack Rockleg.|
 R Thorium Point|QID|27965|M|70.11,39.80;66.61,34.57;41.25,34.23|N|Head to Thorium Point.|
-f Thorium Point|QID|27965|M|38.01,30.67|N|At Lanie Reed.|FACTION|Alliance|
-f Thorium Point|QID|27965|M|34.8,30.8|N|At Grisha.|FACTION|Horde|
+; f Thorium Point|QID|27965|M|38.01,30.67|N|At Lanie Reed.|FACTION|Alliance|
+; f Thorium Point|QID|27965|M|34.8,30.8|N|At Grisha.|FACTION|Horde|
 T Thorium Point: The Seat of the Brotherhood|QID|27965|M|38.21,26.83|N|To Overseer Oilfist.|
 
 A Rasha'krak|QID|28099|M|38.21,26.83|N|From Overseer Oilfist.|
@@ -151,7 +151,7 @@ T Twilight Collars|QID|27982|M|38.48,28.65|N|To Master Smith Burninate.|
 
 r Sell junk, repair/restock.|QID|27986|M|38.48,28.65|N|At Master Smith Burninate.|
 R Iron Summit|QID|27986|M|39.59,31.28;29.51,50.22;31.78,59.97;37.68,62.88|N|Head to the Iron Summit.|
-f Iron Summit|QID|27986|M|40.95,68.58|N|At Doug Deepdown.|
+; f Iron Summit|QID|27986|M|40.95,68.58|N|At Doug Deepdown.|
 T In the Hall of the Mountain-Lord|QID|27986|M|39.26,67.78|N|To Mountain-Lord Rendan.|
 A Siege!|QID|28028|M|39.26,67.78|N|From Mountain-Lord Rendan.|
 A Set Them Ablaze!|QID|28029|M|39.26,67.78|N|From Mountain-Lord Rendan.|

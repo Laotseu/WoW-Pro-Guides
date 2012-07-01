@@ -159,9 +159,8 @@ end
 function WoWPro.Dailies:CreateConfig()
 	blizzPanel = createBlizzOptions()
 
-	table.insert(WoWPro.DropdownMenu, {text = "", isTitle = true} )
-	table.insert(WoWPro.DropdownMenu, {text = "WoW-Pro Dailies", isTitle = true} )
-	table.insert(WoWPro.DropdownMenu, {text = "About", func = function() InterfaceOptionsFrame_OpenToCategory("WoW-Pro Dailies"); end} )
-	table.insert(WoWPro.DropdownMenu, {text = "Reset Dailies", func = function() WoWPro.Dailies:CheckDailiesReset(true); end} )
-
+	table.insert(WoWPro.DropdownMenu, {text = "", notCheckable = true, isTitle = true} )
+	table.insert(WoWPro.DropdownMenu, {text = "WoW-Pro Dailies", notCheckable = true, isTitle = true} )
+	table.insert(WoWPro.DropdownMenu, {text = "About", notCheckable = true, func = function()	InterfaceOptionsFrame_OpenToCategory("WoW-Pro Dailies") end} )
+	table.insert(WoWPro.DropdownMenu, {text = "Reset Dailies",  notCheckable = true, func = function() WoWPro.Dailies:CheckDailiesReset(true); end} )
 end

@@ -38,7 +38,7 @@ T Futile Pride|QID|25674|M|40.49,11.67|N|To Okrilla.|
 A Heartstrike|QID|25676|M|40.49,11.67|N|From Okrilla.|
 h Dreadmaul Hold|QID|25676|M|40.44,11.39|N|Set your hearth at Innkeeper Grak, if you like.|
 A Ogre Combat|QID|25675|M|42.61,13.93|N|From Master Aitokk.|
-f Dreadmaul Hold|QID|25675|M|43.69,14.26|N|At Preda.|
+; f Dreadmaul Hold|QID|25675|M|43.69,14.26|N|At Preda.|
 
 N Draenethist Fragments|QID|25771|N|Occassionally you will obtain draenethist fragments. When you do, you can right-click them to start a repeatable quest. The first time you get one, the guide will show you what to do with it - after that you are on your own.|
 
@@ -149,7 +149,7 @@ T Neptool's Revenge|QID|25706|M|71.04,59.96|N|To Neptool.|
 R Sunveil Excursion|RANK|2|QID|25696|M|49.83,71.46|N|Far to the south-west.|
 T The Sunveil Excursion|RANK|2|QID|25696|M|49.83,71.46|N|To Rohan Sunveil.|
 A The Demons and the Druid|RANK|2|QID|25717|PRE|25696|M|49.83,71.46|N|From Rohan Sunveil.|
-f Sunveil Excursion|RANK|2|QID|25717|M|50.91,72.91|N|At Salena.|
+; f Sunveil Excursion|RANK|2|QID|25717|M|50.91,72.91|N|At Salena.|
 C The Demons and the Druid|RANK|2|QID|25717|M|36.31,68.27|S|N|Kill Doomguard Destroyers, Dreadlord Defiliers and Corrupted Darkwood Treants.|
 K Bog Lords|RANK|2|QID|25717|M|33.32,77.99|QO|Felspore Bog Lord slain: 3/3|N|The bog lords can be found on the south side of the forest.|
 C The Demons and the Druid|RANK|2|QID|25717|M|36.31,68.27|US|N|Kill Doomguard Destroyers, Dreadlord Defiliers and Corrupted Darkwood Treants.|

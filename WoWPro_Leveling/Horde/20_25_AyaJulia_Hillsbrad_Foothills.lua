@@ -44,7 +44,7 @@ T Welcome to the Machine|QID|28096|M|29.23,63.35|N|To High Executor Darthalia.|
 A Trouble at Azurelode|QID|28111|M|29.23,63.35|N|From High Executor Darthalia.|PRE|28096|
 A Glorious Harvest|QID|28114|M|29.20,64.04|N|From Apothecary Underhill.|PRE|28096|
 A Past Their Prime|QID|28115|M|29.20,64.04|N|From Apothecary Underhill.|PRE|28096|
-f Southpoint Gate|QID|28115|M|29.13,64.42|N|At Pamela Stutzka.|
+; f Southpoint Gate|QID|28115|M|29.13,64.42|N|At Pamela Stutzka.|
 r Sell, repair, and restock.|QID|28116|M|28.83,64.11|N|At Harland Waldek.|
 C Past Their Prime|QID|28115|M|32.27,73.62|N|Infested Bears are in the field to the southeast.|S|
 C Glorious Harvest|QID|28114|M|32.28,67.97|N|The eggs are on the rears of the Infested Bears. Loot them.|
@@ -113,7 +113,7 @@ A Studies in Lethality|QID|28324|M|49.09,66.36|N|From Serge Hinott.|
 A Green Living|QID|28325|M|49.09,66.36|N|From Serge Hinott.|
 A Helcular's Rod Giveth...|QID|28331|M|49.15,66.34|N|From Helcular.|
 A Helcular's Command|QID|28332|M|49.15,66.34|N|From Helcular.|
-f Ruins of Southshore|QID|28332|M|49.02,66.19|N|From Darla Harris.|
+; f Ruins of Southshore|QID|28332|M|49.02,66.19|N|From Darla Harris.|
 r Sell, repair, and restock.|QID|28332|M|49.32,66.75|N|At Zixil.|
 C Helcular's Command|QID|28332|M|48.21,64.05|N|Kill the worgen in the area as you go.|S|
 C Helcular's Rod Giveth...|QID|28331|U|63508|M|48.21,64.05|N|Target the Dark Rangers in the field to the north and use Helcular's Rod.|
@@ -171,7 +171,7 @@ A Stagwiches|QID|28489|M|57.69,45.23|N|From Derak Nightfall.|
 A Eastpoint Tower|QID|28620|M|57.68,46.89|N|From Krusk.|
 h Tarren Mill|QID|28620|M|57.95,47.29|N|At Innkeeper Shay.|
 A A Fighting Chance|QID|28495|M|56.74,47.48|N|From Advisor Duskingdawn.|
-f Tarren Mill|QID|28495|M|56.07,46.09|N|At Zarise.|
+; f Tarren Mill|QID|28495|M|56.07,46.09|N|At Zarise.|
 r Sell, repair, and restock.|QID|28485|M|57.66,47.54|N|At Ott.|
 N Group for Yetimus|QID|28485|N|If you see a group looking to kill Yetimus, join them. He hits far too hard for most classes to solo. We won't complete it in this guide, so just get it done when you can and turn it in in Tarren Mill the next time you're in the area.|
 C The Heart of the Matter|QID|28484|M|46,54|N|Kill Yetis for their hearts.|S|
@@ -245,7 +245,7 @@ T Breaking the Hand|QID|28556|M|57.08,46.24|N|To High Warlord Cromush.|
 A Stormpike Apocalypse|QID|28616|M|57.08,46.24|N|From High Warlord Cromush.|PRE|28605;28556|
 T Stormpike Apocalypse|QID|28616|M|57.03,46.26|N|To High Warlord Cromush.|
 L Level 25|QID|28635|LVL|25|N|You should be around Level 25 by this point.|
-f Eastpoint Tower|QID|28635|M|59.61,63.24|N|At Darren Longfellow.|
+; f Eastpoint Tower|QID|28635|M|59.61,63.24|N|At Darren Longfellow.|
 A A Haunting in Hillsbrad|QID|28635|M|59.99,63.34|N|From Captain Jekyll.|
 A The Durnholde Challenge: Zephyrus|QID|28643|M|59.99,63.34|N|From Captain Jekyll.|
 T Eastpoint Tower|QID|28620|M|60.00,63.73|N|To Nils Beerot.|
