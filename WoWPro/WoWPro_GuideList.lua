@@ -297,9 +297,9 @@ function WoWPro:GuideTabFrame_RowOnClick()
 		WoWPro.CharDB.Guide[self.GID] = nil
 		WoWPro.Resetting = true
 		WoWPro:LoadGuide(self.GID)
-		for j = 1,WoWPro.stepcount do
-			if WoWPro.QID[j] then WoWPro.CharDB.completedQIDs[WoWPro.QID[j]] = nil end
-		end
+		--for j = 1,WoWPro.stepcount do
+		--	if WoWPro.QID[j] then WoWPro.CharDB.completedQIDs[WoWPro.QID[j]] = nil end
+		--end
 		WoWPro.Resetting = false
 		WoWPro:LoadGuide(self.GID)
 	else

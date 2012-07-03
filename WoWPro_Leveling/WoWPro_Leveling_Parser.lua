@@ -61,7 +61,6 @@ local GetTitleText 					= _G.GetTitleText
 local GetZoneText 					= _G.GetZoneText
 local InCombatLockdown 				= _G.InCombatLockdown
 local IsInInstance 					= _G.IsInInstance
-local NumTaxiNodes					= _G.NumTaxiNodes
 local PlaySoundFile 					= _G.PlaySoundFile
 local QuestLogPushQuest 			= _G.QuestLogPushQuest
 local QuestLog_OpenToQuest 		= _G.QuestLog_OpenToQuest
@@ -73,7 +72,6 @@ local SelectAvailableQuest 		= _G.SelectAvailableQuest
 local SelectGossipActiveQuest 	= _G.SelectGossipActiveQuest
 local SelectGossipAvailableQuest	= _G.SelectGossipAvailableQuest
 local SetOverrideBinding 			= _G.SetOverrideBinding
-local TaxiNodeName					= _G.TaxiNodeName
 local UnitClass 						= _G.UnitClass
 local UnitFactionGroup 				= _G.UnitFactionGroup
 local UnitLevel 						= _G.UnitLevel
@@ -159,10 +157,10 @@ function WoWPro.Leveling:NextStep(k, skip)
 		elseif WoWPro.prereq[k] then
 			skip = nil						-- defaulting to NOT skipped
 
-			local numprereqs = select("#", strsplit(";", WoWPro.prereq[k]))
+			local numprereqs = select("#", (";"):split(WoWPro.prereq[k]))
 			for j=1,numprereqs do
 				local jprereq = select(numprereqs-j+1, strsplit(";", WoWPro.prereq[k]))
-				if not WoWProCharDB.completedQIDs[tonumber(jprereq)] then
+				if not WoWPro.IsQuestFlaggedCompleted(tonumber(jprereq)) then
 					skip = true -- If one of the prereqs is NOT complete, step is skipped.
 				end
 			end
@@ -183,7 +181,7 @@ function WoWPro.Leveling:NextStep(k, skip)
 
 	-- Skipping quests with prerequisites if their prerequisite was skipped --
 	if WoWPro.prereq[k]
-	and not WoWProCharDB.completedQIDs[k]
+	and not WoWPro.IsQuestFlaggedCompleted(k)
 	and not WoWProCharDB.Guide[GID].skipped[k]
 	and not WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
 		local numprereqs = select("#", strsplit(";", WoWPro.prereq[k]))
@@ -232,9 +230,9 @@ local function skipPrereqSteps(WoWPro, WoWProCharDB, GID, QID)
 		end
 
 		if WoWPro.prereq[j] then
-			local numprereqs = select("#", strsplit(";", WoWPro.prereq[j]))
+			local numprereqs = select("#", (";"):split(WoWPro.prereq[j]))
 			for k=1,numprereqs do
-				local kprereq = select(numprereqs-k+1, strsplit(";", WoWPro.prereq[j]))
+				local kprereq = select(numprereqs-k+1, (";"):split(WoWPro.prereq[j]))
 				if tonumber(kprereq) == QID then
 
 					if WoWPro.action[j] == "A" or
@@ -296,9 +294,9 @@ local function unskipPrereqSteps(WoWPro, WoWProCharDB, GID, QID)
 		end
 
 		if WoWPro.prereq[j] then
-			local numprereqs = select("#", strsplit(";", WoWPro.prereq[j]))
+			local numprereqs = select("#", (";"):split(WoWPro.prereq[j]))
 			for k=1,numprereqs do
-				local kprereq = select(numprereqs-k+1, strsplit(";", WoWPro.prereq[j]))
+				local kprereq = select(numprereqs-k+1, (";"):split(WoWPro.prereq[j]))
 				if tonumber(kprereq) == QID then
 					WoWProCharDB.Guide[GID].skipped[j] = nil
 					if WoWPro.action[j] == "A" or
@@ -378,9 +376,8 @@ local function ParseQuests(...)
 				-- deleting leading/trailing whitespace and then canonicalize the case
 				faction = (faction:trim()):upper()
             end
-			if class == nil or class:find(myclass) then if race == nil or race:find(myrace) then if gender == nil or gender == UnitSex("player") then if faction == nil or faction == strupper(UnitFactionGroup("player")) then
-				_, _, WoWPro.action[i], WoWPro.step[i] = text:find("^(%a) ([^|]*)(.*)")
-				assert(WoWPro.step[i],("i=%s, text=%s"):format(tostring(i),tostring(text)))
+			if class == nil or class:find(myclass) then if race == nil or race:find(myrace) then if gender == nil or gender == UnitSex("player") then if faction == nil or faction == (UnitFactionGroup("player")):upper() then
+				WoWPro.action[i], WoWPro.step[i] = select(3, text:find("^(%a) ([^|]*)(.*)"))
 				WoWPro.step[i] = WoWPro.step[i]:trim()
 				WoWPro.stepcount = WoWPro.stepcount + 1
 				WoWPro.QID[i] = tonumber(text:match("|QID|([^|]*)|?"))
@@ -395,13 +392,13 @@ local function ParseQuests(...)
 				WoWPro.zone[i] = text:match("|Z|([^|]*)|?")
 				if tonumber(WoWPro.zone[i]) then WoWPro.zone[i] = tonumber(WoWPro.zone[i]) end
 				if WoWPro.zone[i] and not WoWPro:ValidZone(WoWPro.zone[i]) then
-					local line =format("Vers=%s|Guide=%s|Line=%s",WoWPro.Version,WoWProDB.char.currentguide,text)
-                    WoWProDB.global.ZoneErrors = WoWProDB.global.ZoneErrors or {}
-	                table.insert(WoWProDB.global.ZoneErrors, line)
-				    WoWPro:dbp("Invalid Z tag in:"..text)
-				    WoWPro.zone[i] = nil
+					local line =("Vers=%s|Guide=%s|Line=%s"):format(WoWPro.Version,WoWProDB.char.currentguide,text)
+					WoWProDB.global.ZoneErrors = WoWProDB.global.ZoneErrors or {}
+					tinsert(WoWProDB.global.ZoneErrors, line)
+					WoWPro:dbp("Invalid Z tag in:"..text)
+					WoWPro.zone[i] = nil
 				end
-				_, _, WoWPro.lootitem[i], WoWPro.lootqty[i] = text:find("|L|(%d+)%s?(%d*)|")
+				WoWPro.lootitem[i], WoWPro.lootqty[i] = select(3, text:find("|L|(%d+)%s?(%d*)|"))
 				WoWPro.lootitem[i] = tonumber(WoWPro.lootitem[i])
 				WoWPro.lootqty[i] = WoWPro.lootitem[i] and (tonumber(WoWPro.lootqty[i]) or 1) or nil
 				WoWPro.questtext[i] = text:match("|QO|([^|]*)|?")
@@ -593,7 +590,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 		local completion = WoWProCharDB.Guide[GID].completion
 
 		-- Checking off lead in steps --
-		if leadin and WoWProCharDB.completedQIDs[tonumber(leadin)] and not completion[k] then
+		if leadin and WoWPro.IsQuestFlaggedCompleted(tonumber(leadin)) and not completion[k] then
 			completion[k] = true
 			return true --reloading
 		end
@@ -892,12 +889,12 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 --		WoWPro.Leveling:AutoCompleteZone(...)
 	--end
 
-	if event == "UI_INFO_MESSAGE" then
-		WoWPro.Leveling:AutoCompleteGetFP(...)
+	--if event == "UI_INFO_MESSAGE" then
+	--	WoWPro.Leveling:AutoCompleteGetFP(...)
 	--end
 
-	elseif event == "TAXIMAP_OPENED" then
-		WoWPro.Leveling:RecordTaxiLocations(...)
+	--elseif event == "TAXIMAP_OPENED" then
+	--	WoWPro.Leveling:RecordTaxiLocations(...)
 	----- Noticing if we have entered a Dungeon!
 	---elseif event == "ZONE_CHANGED_NEW_AREA" and WoWProCharDB.AutoHideLevelingInsideInstances == true then
 	---	if IsInInstance() then
@@ -1028,10 +1025,11 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 	--end
 --	elseif event == "TRAINER_UPDATE" then
 --		WoWPro.Leveling.CheckAvailableSpells()
-	end
+--	end
 
 end
 
+--[==[
 -- Remeber Taxi Locations
 function WoWPro.Leveling:RecordTaxiLocations(...)
 	local WoWProCharDB = WoWPro.CharDB
@@ -1045,7 +1043,9 @@ function WoWPro.Leveling:RecordTaxiLocations(...)
 		end
 	end
 end
+]==]
 
+--[==[
 -- Auto-Complete: Get flight point --
 function WoWPro.Leveling:AutoCompleteGetFP(...)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
@@ -1058,7 +1058,7 @@ function WoWPro.Leveling:AutoCompleteGetFP(...)
 		end
 	end
 end
-
+]==]
 -- Auto-Complete: Quest Update --
 --[[
 function WoWPro.Leveling:AutoCompleteQuestUpdate(skipUIUpdate)

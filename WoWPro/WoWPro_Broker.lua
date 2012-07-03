@@ -611,7 +611,7 @@ function WoWPro:PopulateQuestLog()
 
 			if not abandoning then
 				-- It's a quest that has been completed
-				WoWProCharDB.completedQIDs[QID] = true
+				if not WoWPro.MOP then WoWProCharDB.completedQIDs[QID] = true end
 				WoWPro.abandonedQID = nil
 			else
 				WoWPro.abandonedQID = QID
@@ -710,7 +710,7 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 			if not completion then
 
 				-- Quest is flaged as completed in the completeQIDs table
-				if WoWProCharDB.completedQIDs[QID] then
+				if WoWPro.IsQuestFlaggedCompleted(QID) then
 					WoWPro.CompleteStep(i, skipUIUpdate)
 					completion = true
 
@@ -865,7 +865,7 @@ function WoWPro:CHAT_MSG_SYSTEM_parser(msg, ...)
 			-- GetQuestID() is to verify that no other quest were completed since then
 			-- It's probably a bit overkill.
 			WoWPro.CompletingQuestQID = nil
-			WoWProCharDB.completedQIDs[qid] = true
+			if not WoWPro.MOP then WoWProCharDB.completedQIDs[qid] = true end
 			WoWPro:QUEST_LOG_UPDATE_bucket()
 		end
 	else
@@ -922,3 +922,31 @@ function WoWPro:AutoCompleteZone()
 		end
 	end
 end
+
+-- Learn the FP from the opened taxi window
+function WoWPro:RecordTaxiLocations(...)
+	local WoWProCharDB = WoWPro.CharDB
+
+	for i = 1, _G.NumTaxiNodes() do
+		local nomen = _G.TaxiNodeName(i)
+		local location,zone = (","):split(nomen)
+		if not WoWProCharDB.Taxi[location] then
+			WoWProCharDB.Taxi[location] = true
+			WoWPro:Print("Discovered Flight Point: [%s]",location)
+		end
+	end
+end
+
+-- Auto-Complete: Get flight point --
+function WoWPro:AutoCompleteGetFP(...)
+	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
+
+	for i = 1,15 do
+		local index = WoWPro.rows[i].index
+		if ... == _G.ERR_NEWTAXIPATH and WoWPro.action[index] == "f"
+		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
+			WoWPro.CompleteStep(index)
+		end
+	end
+end
+

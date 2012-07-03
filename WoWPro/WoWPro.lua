@@ -311,13 +311,14 @@ function WoWPro:OnEnable()
 		"QUEST_GREETING",
 		"QUEST_LOG_UPDATE",
 		"QUEST_PROGRESS",
-		"QUEST_QUERY_COMPLETE",
+--		"QUEST_QUERY_COMPLETE",
 		"UPDATE_BINDINGS",
 		"ZONE_CHANGED",
 		"ZONE_CHANGED_INDOORS",
 		"ZONE_CHANGED_NEW_AREA",
 		"CRITERIA_UPDATE",
 	})
+	if not WoWPro.MOP then WoWPro:RegisterEvents( {"QUEST_QUERY_COMPLETE"} ) end
 --	WoWPro.LockdownTimer = nil
 	WoWPro.LockdownTimer = 2.0 -- Initial setting so that InitLockdown will get set to nil after login
 	WoWPro.EventFrame:SetScript("OnUpdate", function(self, elapsed)
@@ -370,7 +371,7 @@ function WoWPro:OnEnable()
 			WoWPro:dbp("Old Completed QIDs: "..num)
 			WoWProCharDB.completedQIDs = WoWProCharDB.completedQIDs or {}
 			wipe(WoWProCharDB.completedQIDs)
-			GetQuestsCompleted(WoWProCharDB.completedQIDs)
+			WoWPro.GetQuestsCompleted(WoWProCharDB.completedQIDs)
 			num = 0
 			for i, QID in pairs(WoWProCharDB.completedQIDs) do
 				num = num+1
@@ -496,6 +497,12 @@ function WoWPro:OnEnable()
 		elseif event == "PLAYER_LEVEL_UP" then
 			WoWPro:AutoCompleteLevel(...)
 
+		elseif event == "TAXIMAP_OPENED" then
+			WoWPro:RecordTaxiLocations(...)
+
+		elseif event == "UI_INFO_MESSAGE" then
+			WoWPro:AutoCompleteGetFP(...)
+
 		end
 
 		-- Module Event Handlers --
@@ -518,7 +525,7 @@ function WoWPro:OnEnable()
 	end
 
 	-- Server query for completed quests --
-	_G.QueryQuestsCompleted()
+	WoWPro.QueryQuestsCompleted()
 
 	-- Clear the error logs
 	if WoWPro.DB.global.ZoneErrors then wipe(WoWPro.DB.global.ZoneErrors) end
@@ -608,14 +615,15 @@ do
 end
 
 if WoWPro.MOP then
-    WoWPro.GetNumPartyMembers = GetNumGroupMembers
-    WoWPro.QueryQuestsCompleted = function () end
-    WoWPro.GetQuestsCompleted = function (x) return x; end
+	WoWPro.GetNumPartyMembers = GetNumGroupMembers
+	WoWPro.QueryQuestsCompleted = function () end
+	WoWPro.GetQuestsCompleted = function (x) return x; end
+	WoWPro.IsQuestFlaggedCompleted = _G.IsQuestFlaggedCompleted
 else
-    WoWPro.GetNumPartyMembers = GetNumPartyMembers
-    WoWPro.QueryQuestsCompleted = QueryQuestsCompleted -- After QUEST_QUERY_COMPLETE
-    WoWPro.GetQuestsCompleted = GetQuestsCompleted
-
+	WoWPro.GetNumPartyMembers = GetNumPartyMembers
+	WoWPro.QueryQuestsCompleted = QueryQuestsCompleted -- After QUEST_QUERY_COMPLETE
+	WoWPro.GetQuestsCompleted = GetQuestsCompleted
+	WoWPro.IsQuestFlaggedCompleted = function(qid)  return WoWPro.CharDB.completedQIDs[qid] end
 end
 
 ---------

@@ -145,7 +145,7 @@ function WoWPro.WorldEvents:NextStep(k, skip)
 			local numprereqs = select("#", (";"):split(WoWPro.prereq[k]))
 			for j=1,numprereqs do
 				local jprereq = select(numprereqs-j+1, (";"):split(WoWPro.prereq[k]))
-				if not WoWProCharDB.completedQIDs[tonumber(jprereq)] then
+				if not WoWPro.IsQuestFlaggedCompleted(tonumber(jprereq)) then
 					skip = true -- If one of the prereqs is NOT complete, step is skipped.
 				end
 			end
@@ -166,7 +166,7 @@ function WoWPro.WorldEvents:NextStep(k, skip)
 
 	-- Skipping quests with prerequisites if their prerequisite was skipped --
 	if WoWPro.prereq[k]
-	and not WoWProCharDB.completedQIDs[k]
+	and not WoWPro.IsQuestFlaggedCompleted(k)
 	and not WoWProCharDB.Guide[GID].skipped[k]
 	and not WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
 		local numprereqs = select("#", (";"):split(WoWPro.prereq[k]))
@@ -440,6 +440,8 @@ local function ParseQuests(...)
 				    WoWPro.zone[i] = nil
 				end
 				WoWPro.lootitem[i], WoWPro.lootqty[i] = select(3, text:find("|L|(%d+)%s?(%d*)|"))
+				WoWPro.lootitem[i] = tonumber(WoWPro.lootitem[i])
+				WoWPro.lootqty[i] = WoWPro.lootitem[i] and (tonumber(WoWPro.lootqty[i]) or 1) or nil
 				WoWPro.questtext[i] = text:match("|QO|([^|]*)|?")
 
 				if text:find("|O|") then
@@ -525,8 +527,8 @@ function WoWPro.WorldEvents:LoadGuide()
 			end
 
 		    -- Turned in quests --
-		    if WoWProCharDB.completedQIDs then
-			    if WoWProCharDB.completedQIDs[QID] then
+		    if WoWProCharDB.completedQIDs or WoWPro.MOP then
+			    if WoWPro.IsQuestFlaggedCompleted(QID) then
 				    WoWProCharDB.Guide[GID].completion[i] = true
 			    end
 		    end
@@ -655,7 +657,7 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 		local completion = WoWProCharDB.Guide[GID].completion
 
 		-- Checking off lead in steps --
-		if leadin and WoWProCharDB.completedQIDs[tonumber(leadin)] and not completion[k] then
+		if leadin and WoWPro.IsQuestFlaggedCompleted(tonumber(leadin)) and not completion[k] then
 			completion[k] = true
 			return true --reloading
 		end
@@ -1071,6 +1073,7 @@ function WoWPro.WorldEvents:EventHandler(self, event, ...)
 --	end
 end
 
+--[==[
 -- Auto-Complete: Get flight point --
 function WoWPro.WorldEvents:AutoCompleteGetFP(...)
 	for i = 1,15 do
@@ -1081,7 +1084,8 @@ function WoWPro.WorldEvents:AutoCompleteGetFP(...)
 		end
 	end
 end
-
+]==]
+--[==[
 -- Auto-Complete: Quest Update --
 function WoWPro.WorldEvents:AutoCompleteQuestUpdate(questComplete)
 	local WoWProCharDB = WoWPro.CharDB
@@ -1104,7 +1108,7 @@ function WoWPro.WorldEvents:AutoCompleteQuestUpdate(questComplete)
 			        -- Quest Turn-Ins --
 			        if WoWPro.WorldEvents.CompletingQuest and action == "T" and not completion and WoWPro.missingQuest == QID then
 				        WoWPro.CompleteStep(i)
-				        WoWProCharDB.completedQIDs[QID] = true
+				        --WoWProCharDB.completedQIDs[QID] = true
 				        WoWPro.WorldEvents.CompletingQuest = false
 			        end
 
@@ -1160,7 +1164,8 @@ function WoWPro.WorldEvents:AutoCompleteQuestUpdate(questComplete)
 	end
 
 end
-
+]==]
+--[==[
 -- Update Item Tracking --
 local function GetLootTrackingInfo(lootitem,lootqty,count)
 --[[Purpose: Creates a string containing:
@@ -1180,7 +1185,8 @@ local function GetLootTrackingInfo(lootitem,lootqty,count)
 	end
 	return track													--Returns the track string to the calling function
 end
-
+]==]
+--[==[
 -- Auto-Complete: Loot based --
 function WoWPro.WorldEvents:AutoCompleteLoot(msg)
 	local WoWProDB = WoWPro.DB
@@ -1205,7 +1211,8 @@ function WoWPro.WorldEvents:AutoCompleteLoot(msg)
 	for i = 1,15 do
 	end
 end
-
+]==]
+--[==[
 -- Auto-Complete: Set hearth --
 function WoWPro.WorldEvents:AutoCompleteSetHearth(...)
 	local WoWProCharDB = WoWPro.CharDB
@@ -1223,7 +1230,8 @@ function WoWPro.WorldEvents:AutoCompleteSetHearth(...)
 		end
 	end
 end
-
+]==]
+--[==[
 -- Auto-Complete: Zone based --
 function WoWPro.WorldEvents:AutoCompleteZone()
 	WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount or 0
@@ -1240,7 +1248,8 @@ function WoWPro.WorldEvents:AutoCompleteZone()
 		end
 	end
 end
-
+]==]
+--[==[
 -- Auto-Complete: Level based --
 function WoWPro.WorldEvents:AutoCompleteLevel(...)
 	local WoWProCharDB = WoWPro.CharDB
@@ -1258,7 +1267,8 @@ function WoWPro.WorldEvents:AutoCompleteLevel(...)
 		end
 	end
 end
-
+]==]
+--[==[
 -- Update Quest Tracker --
 function WoWPro.WorldEvents:UpdateQuestTracker()
 	local WoWProDB = WoWPro.DB
@@ -1327,7 +1337,7 @@ function WoWPro.WorldEvents:UpdateQuestTracker()
 	end
 	if not InCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
 end
-
+]==]
 -- Get Currently Available Spells --
 function WoWPro.WorldEvents.GetAvailableSpells(...)
 	local newLevel = ... or UnitLevel("player")
