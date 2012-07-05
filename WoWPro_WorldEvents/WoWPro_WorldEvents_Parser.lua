@@ -551,10 +551,10 @@ function WoWPro.WorldEvents:LoadGuide()
 
 	-- Checking zone based completion --
 	WoWPro:UpdateGuide()
-	WoWPro.WorldEvents:AutoCompleteZone()
+	WoWPro:AutoCompleteZone()
 
 	-- Update the display using the leadboard
-	WoWPro.WorldEvents:UpdateQuestTracker()
+	WoWPro:UpdateQuestTracker()
 
 	-- Scrollbar Settings --
 	WoWPro.Scrollbar:SetMinMaxValues(1, max(1, WoWPro.stepcount - WoWPro.ShownRows))
@@ -925,7 +925,7 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 
 	WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount or 0
 	WoWPro.CurrentIndex = WoWPro.rows[1+WoWPro.ActiveStickyCount].index
-	WoWPro.WorldEvents:UpdateQuestTracker()
+	WoWPro:UpdateQuestTracker()
 
 	return reload
 end
