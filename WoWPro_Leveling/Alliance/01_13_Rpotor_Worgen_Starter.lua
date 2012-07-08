@@ -503,7 +503,7 @@ A Rut'theran Village|QID|14434|Z|Gilneas|M|42.59,35.93|N|Talk to Admiral Nightwi
 A The Howling Oak|QID|28517|M|55.22,89.15|Z|Teldrassil|N|From Krennan Aranas.|
 T The Howling Oak|QID|28517|M|41.88,48.25;46.04,34.73;47.97,14.16|Z|Darnassus|N|Take the teleporter, then go to the Howling Oak and turn in to Genn Greymane.|
 A Breaking Waves of Change|QID|26385|M|48.12,14.48|Z|Darnassus|N|From Genn Greymane.|
-f Get the Darnassus Flight Point|QID|26385|M|36.67,47.91|Z|Darnassus|N|At Leora.|
+; f Get the Darnassus Flight Point|QID|26385|M|36.67,47.91|Z|Darnassus|N|At Leora.|
 F Lor'danel|QID|26385|M|55.41,88.40|Z|Darnassus|N|Take the teleport out of Darnassus, then get a Hyppogryph ride to Lor'danel.|
 T Breaking Waves of Change|QID|26385|M|51.77,18.00|Z|Darkshore|N|To Dentaria Silverglade. You'll be taken to the next guide, which will cover Darkshore!|
 

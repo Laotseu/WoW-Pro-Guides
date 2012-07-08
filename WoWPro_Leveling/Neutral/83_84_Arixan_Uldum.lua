@@ -125,10 +125,10 @@ A Smoke in Their Eyes|QID|27923|M|59.64,72.05|N|From Prince Nadun.|US|
 A Budd's Plan|QID|27924|M|59.71,72.03|N|From Budd.|
 
 C Smoke in Their Eyes|QID|27923|U|63027|M|62.12,73.98|N|Set bales of hay on fire.|S|NC|
-C Budd's Plan|QID|27924|M|60.91,74.08|N|Loot the Armor pieces from the tables.  You can also find them by killing Neferset Denizens and Neferset Sentinels.|S|NC|
+C Budd's Plan|QID|27924|M|60.91,74.08|N|Kill Neferset Denizens and Neferset Sentinels for Armor Pieces or find them on ground.|S|
 l Neferset Key|QID|28105|L|62817|M|59.96,73.92|N|Kill Kavem and loot the Neferset Key.|
 C Smoke in Their Eyes|QID|27923|U|63027|M|62.12,73.98|N|Set bales of hay on fire.|US|NC|
-C Budd's Plan|QID|27924|M|60.91,74.08|N|Kill Neferset Denizens and Neferset Sentinels for Armor Pieces or find them on ground.|US|NC|
+C Budd's Plan|QID|27924|M|60.91,74.08|N|Kill Neferset Denizens and Neferset Sentinels for Armor Pieces or find them on ground.|US|
 
 T Budd's Plan|QID|27924|M|59.68,72.03|N|To Budd.|
 T Smoke in Their Eyes|QID|27923|M|59.65,72.05|N|To Prince Nadun.|S|
@@ -140,7 +140,7 @@ T Escape From the Lost City|QID|28112|M|54.90,32.84|N|To King Phaoris. Don't be 
 
 A Impending Retribution|QID|28134|M|54.90,32.84|N|From King Phaoris.|
 
-h Ramkahen|QID|28141|M|54.73,32.94|N|At Kazemde.|
+h Ramkahen|QID|28134|M|54.73,32.94|N|At Kazemde.|
 
 ; Flight plans Ramkahen, Oasis of Vir'sar and Schnottz's Landing are showing as already known when above is followed.
 ; f Ramkahen|QID|28141|M|56.18,33.66|N|At Kurzel.|
@@ -161,7 +161,7 @@ T Relics of the Sun King|QID|28141|M|52.98,27.75|N|To Sun Priest Asaris.|US|
 
 A The Bandit Warlord|QID|28502|M|52.98,27.75|N|From Sun Priest Asaris.|
 
-C The Bandit Warlord|QID|28502|M|45.72,16.20|N|Go to the waypoint and kill Warlord Ihsenn.|
+C The Bandit Warlord|QID|28502|T|Warlord Ihsenn|M|45.72,16.20|N|Go to the waypoint and kill Warlord Ihsenn.|
 T The Bandit Warlord|QID|28502|M|52.98,27.63|N|To Sun Priest Asaris.|
 C Speak with Asaq|QID|28134|M|49.66,39.13|QO|Speak with Asaq: 1/1|N|Talk to Asaq for Impending Retribution Quest.|NC|
 A Take it to 'Em!|QID|27993|M|49.68,39.03|N|From Mack.|
@@ -223,7 +223,6 @@ T By the Light of the Stars|QID|27549|M|64.48,28.05|N|To Harrison Jones, then si
 A Tipping the Balance|QID|27431|M|64.49,27.98|N|From Harrison Jones.|
 C Tipping the Balance|QID|27431|M|64.41,27.32|N|Talk to Harrison and click 'Ask "What can I do to help?"', then sit back and watch the cinematic.|NC|
 T Tipping the Balance|QID|27431|M|64.50,27.99|N|To Harrison Jones.|
-
 A After the Fall|QID|27624|M|64.50,27.99|N|From Harrison Jones.|
 A Just A Fancy Cockroach|QID|27627|RANK|2|M|63.77,27.26|N|Kill a Scarab to get this quest.|
 
@@ -247,7 +246,7 @@ T Just A Fancy Cockroach|QID|27627|RANK|2|M|63.2,33.1|N|(UI Alert)|
 T After the Fall|QID|27624|M|64.47,28.02|N|To Harrison Jones.|
 
 A Do the Honors|QID|27669|M|64.47,28.02|N|From Harrison Jones.|
-C Do the Honors|QID|27669|U|62054|M|64.48,31.04|N|Use the Orbs of the Stars, then sit back and watch the cinematic.  Once this has finished, you'll be teleported back outside.|NC|
+C Do the Honors|QID|27669|U|62054|M|64.48,31.04|N|Use the Orbs of the Stars, then sit back and watch the cinematic. Once this has finished, you'll be teleported back outside.|NC|
 T Do the Honors|QID|27669|M|63.90,33.90|N|To Harrison Jones.|
 
 A That Gleam in his Eye|QID|27899|M|54.29,35.23|N|From Adarrah.|
@@ -255,9 +254,9 @@ T Al'Akir's Vengeance|QID|28135|M|45.23,37.92|N|To Prince Nadun.|
 
 A Minions of Al'Akir|QID|27520|M|45.23,37.92|N|From Prince Nadun.|RANK|2|
 A Under the Choking Sands|QID|27519|M|45.28,37.84|N|From General Ammantep.|S|
+
 A The Prophet Hadassi|QID|27595|M|45.28,37.84|N|From General Ammantep.|
 A Under the Choking Sands|QID|27519|M|45.28,37.84|N|From General Ammantep.|US|
-
 C Under the Choking Sands|QID|27519|M|40.63,39.15|N|Right-click Oasis Survivors to rescue them.|S|NC|
 C Minions of Al'Akir|QID|27520|M|41.07,38.47|S|N|Kill Scions of Al'Akir.|RANK|2|
 T The Prophet Hadassi|QID|27595|M|40.03,40.57|N|To Prophet Hadassi.|
@@ -311,7 +310,7 @@ C The Defilers' Ritual|QID|28611|M|52.81,45.59;52.18,40.18;49.89,40.11|N|At the 
 T The Defilers' Ritual|QID|28611|M|52.81,45.59;54.18,41.83|N|To High Priest Amet.|
 
 A The Root of the Corruption|QID|27838|M|54.20,42.00|N|From High Priest Amet.|
-C The Root of the Corruption|QID|27838|M|58.92,14.13|N|Head to the waypoint and kill Scalemother Hevna.|
+C The Root of the Corruption|QID|27838|T|Scalemother Hevna|M|58.92,14.13|N|Head to the waypoint and kill Scalemother Hevna.|
 T The Root of the Corruption|QID|27838|M|57.87,42.52;54.16,41.93|N|To High Priest Amet.|
 T The High Commander's Vote|QID|27631|M|57.87,42.52;58.84,46.14|N|To High Commander Kamses.|
 
@@ -355,7 +354,7 @@ T The Element of Supplies|QID|28200|M|58.97,46.16|N|To Sergeant Mehat.|
 T Ploughshares to Swords|QID|28201|M|58.94,46.10|N|To High Commander Kamses.|
 A Ancient Weapons|QID|27839|M|58.94,46.10|N|From High Commander Kamses.|
 T Return to Camp|QID|28291|M|58.94,46.10|N|To High Commander Kamses.|
-T The Pit of Scales|QID|27738|M|56.70,54.65|N|To Vizier Tanotep.|
+T The Pit of Scales|QID|27738|N|To Vizier Tanotep.|
 
 A The High Council's Decision|QID|28533|M|56.70,54.65|N|From Vizier Tanotep.|
 C Ancient Weapons|QID|27839|U|62534|M|60.43,58.56|N|Right-click one of the white chests and loot an Ancient Tol'Vir Armaments.|NC|
@@ -404,9 +403,9 @@ N Second Bomb Cluster|QID|27761|U|62398|M|79.01,64.05|N|Use the Holographic Proj
 C A Disarming Distraction|QID|27761|U|62398|M|78.81,61.82|N|Use the Holographic Projector then right-click on the First Bomb Cluster to disarm it.|QO|First Bomb Cluster disarmed: 1/1|
 C Unstable Bomb Bot deactivated|QID|27761|U|62398|QO|Unstable Bomb Bot deactivated: 4/4|M|79.01,64.05|N|Don't try to fight the cursed engineers. Use the Holographic Projector to distract them repeatedly. Right-click on the Unstable Bomb Bots to defuse them.|US|
 
-T A Disarming Distraction|QID|27761|M|74.08,64.44|N|To the A.I.D.A. Terminal.|S|
-T Core Access Codes|QID|27777|M|74.08,64.44|N|To the A.I.D.A. Terminal.|
-T A Disarming Distraction|QID|27761|M|74.08,64.44|N|To the A.I.D.A. Terminal.|US|
+T A Disarming Distraction|QID|27761|U|62398|M|74.08,64.44|N|To the A.I.D.A. Terminal.|S|
+T Core Access Codes|QID|27777|U|62398|M|74.08,64.44|N|To the A.I.D.A. Terminal.|
+T A Disarming Distraction|QID|27761|U|62398|M|74.08,64.44|N|To the A.I.D.A. Terminal.|US|
 
 A Hacking the Wibson|QID|27778|M|74.08,64.44|N|From the A.I.D.A. Terminal.|
 C Hacking the Wibson|QID|27778|M|76.94,62.96|N|Fly to the top of the M.A.C Diver (That big fish looking vehicule). Right-click the maintenance tools, loot the Maintenance Axe. Right-click the Wibson Mainframe.|NC|
@@ -446,7 +445,6 @@ T That Gleam in his Eye|QID|27899|M|43.94,57.10|N|To Harrison Jones. On top of t
 A I've Got This Guy|QID|27900|M|43.94,57.10|N|From Harrison Jones.|S|
 A They Don't Know What They've Got Here|QID|27901|M|43.94,57.10|N|From Harrison Jones.|
 A I've Got This Guy|QID|27900|M|43.94,57.10|N|From Harrison Jones.|US|
-
 C I've Got This Guy|QID|27900|M|45.63,54.43|N|Kill Schnottz Air Troopers.|S|
 A Efficient Excavations|QID|28132|U|62768|M|43.51,56.03|N|Kill Schnottz Air Officers until you get Efficient Excavations item. Use it to accept this quest.|T|Schnottz Air Officer|
 l Titan Device Components|QID|27901|M|43.47,55.93|L|62610 6|N|Look for Obelisk of the Sun Coffers and loot 6 Titan Device Components. You can find the keys to open those coffers on Schnottz Air Officers. |
@@ -483,9 +481,10 @@ C Dirty Birds|QID|27940|S|M|41,69.6|N|Kill Diseased Vultures. Keep an eye out fo
 C A Favor for the Furrier|QID|27928|M|41.3,72.3|N|Kill Desert Coyotes. Keep an eye out for the Desert Fox.|S|
 C The Desert Fox|QID|27939|M|45.13,72.83|T|Desert Fox|N|Find the Desert Fox (friendly NPC running around this area) and capture it.|
 C Dirty Birds|QID|27940|US|M|41,69.6|N|Finish slaying Diseased Vultures.|
-T Dirty Birds|QID|27940|US|M|41,69.6|N|When you finish killing them, should pop up.|
+T Dirty Birds|QID|27940|US|M|41,69.6|N|When you finish killing them, should pop up.|S|
 C A Favor for the Furrier|QID|27928|M|41.3,72.3|N|Finish slaying Desert Coyotes.|US|
 
+T Dirty Birds|QID|27940|US|M|41,69.6|N|When you finish killing them, should pop up.|US|
 T A Favor for the Furrier|QID|27928|M|24.42,64.56|N|To Belloc Brightblade.|
 
 A Fashionism|QID|27941|M|24.43,64.55|N|From Belloc Brightblade.|
@@ -502,7 +501,6 @@ C Fashionism|QID|27941|M|34.47,66.97|N|Look for Dead Troopers in the area, right
 C Idolatry|QID|27942|M|32.98,60.99|N|Loot Well-Preserved Idols. Contained in small sphynx statues on the ground.|US|
 
 T Fashionism|QID|27941|M|24.43,64.56|N|To Belloc Brightblade.|
-
 T Idolatry|QID|27942|M|24.45,64.11|N|To Commander Schnottz.|S|
 T Angered Spirits|QID|27943|M|24.45,64.11|N|From Commander Schnottz.|
 T Idolatry|QID|27942|M|24.45,64.11|N|To Commander Schnottz.|US|
@@ -562,10 +560,9 @@ C Two Tents|QID|28274|M|29.67,22.32|N|Watch the cinematic.|
 T Two Tents|QID|28274|M|29.57,21.90|N|To Sullah.|
 
 A Master Trapper|QID|28350|M|29.57,21.90|N|From Sullah.|S|
-A Camel Tow|QID|28352|M|29.57,21.90|N|From Sullah.|S|
+A Camel Tow|QID|28352|M|29.57,21.90|N|From Sullah.|
 A Unlimited Potential|QID|28351|M|29.57,21.90|N|From Sullah.|
 A Master Trapper|QID|28350|M|29.57,21.90|N|From Sullah.|US|
-A Camel Tow|QID|28352|M|29.57,21.90|N|From Sullah.|US|
 
 C Master Trapper|QID|28350|M|28.50,23.29|N|Kill Wild Camels and loot their Meat Scraps.|S|
 C Camel Tow|QID|28352|U|67241|S|M|29.76,30.26|N|Beat down a Wild Camel down to 35% HP then use Sullah's Camel Harness. Repeat 3 times.|
@@ -574,10 +571,9 @@ C Camel Tow|QID|28352|U|67241|US|M|29.76,30.26|N|Beat down a Wild Camel down to 
 C Master Trapper|QID|28350|M|28.50,23.29|N|Kill Wild Camels and loot their Meat Scraps.|US|
 
 T Master Trapper|QID|28350|M|29.56,21.92|N|To Sullah.|S|
-T Camel Tow|QID|28352|M|29.56,21.92|N|To Sullah.|S|
+T Camel Tow|QID|28352|M|29.56,21.92|N|To Sullah.|
 T Unlimited Potential|QID|28351|M|29.56,21.92|N|To Sullah.|
 T Master Trapper|QID|28350|M|29.56,21.92|N|To Sullah.|US|
-T Camel Tow|QID|28352|M|29.56,21.92|N|To Sullah.|US|
 
 A Jonesy Sent For You|QID|28353|M|29.56,21.92|N|From Sullah.|
 T Jonesy Sent For You|QID|28353|M|27.02,7.62|N|To Harrison Jones.|
@@ -643,9 +639,7 @@ T Three if by Air|QID|28622|M|44.86,67.39|N|To Brann Bronzebeard.|
 A The Coffer of Promise|QID|28633|M|44.86,67.39|N|From Brann Bronzebeard.|
 C The Coffer of Promise|QID|28633|M|44.97,67.36|N|Simply right-click the coffer of promise and loot the Titan Discs.|NC|
 T The Coffer of Promise|QID|28633|M|44.87,67.36|N|To Brann Bronzebeard.|
-
 A The Heart of the Matter|QID|28654|M|44.87,67.36|N|If you wish to do the Halls of Origination dungeon.|
-
 ]]
 
 end)

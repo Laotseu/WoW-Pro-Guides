@@ -120,7 +120,7 @@ T A Decisive Strike|QID|26148|M|23.40,75.01|N|To Captain Rugelfuss.|
 A Onward to Thelsamar|QID|26176|M|23.37,75.01|N|From Captain Rugelfuss.|
 T Bigger and Uglier|QID|26147|M|23.34,75.01|N|To Mountaineer Wallbang.|
 R Thelsamar|QID|26176|M|35,46.6|N|Follow the road north to Thelsamar.|
-f Thelsamar|QID|26176|M|33.93,50.95|N|At Thorgum Borrelson.|
+; f Thelsamar|QID|26176|M|33.93,50.95|N|At Thorgum Borrelson.|
 T Onward to Thelsamar|QID|26176|M|35,46.6|N|To Mountaineer Kadrell.|
 
 A Out of Gnoll-where|QID|26842|M|35.09,46.41|N|From Mountaineer Kadrell.|
@@ -213,7 +213,7 @@ A Joining the Hunt|QID|13647|M|64.93,66.60|N|From Magmar Fellhew.|
 
 A Thistle While You Work|QID|27025|M|82.79,63.42|N|From Safety Warden Pipsy.|
 A The Joy of Boar Hunting|QID|27016|M|83.35,65.01|N|From Daryl the Youngling.|
-f Farstrider Lodge|QID|13647|M|81.96,64.10|N|At Eeryven Grayer. |
+; f Farstrider Lodge|QID|13647|M|81.96,64.10|N|At Eeryven Grayer. |
 A Wing Nut|QID|27031|M|81.70,64.59|N|From Bingles Blastenheimer.|
 A Hornet Hunting|QID|27028|M|81.82,61.74|N|From Marek Ironheart.|
 A Foxtails By The Handful|QID|27030|M|81.87,61.88|N|From Marek Ironheart.|

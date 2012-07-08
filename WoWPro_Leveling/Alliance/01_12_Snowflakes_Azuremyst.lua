@@ -92,7 +92,7 @@
 WoWPro.Leveling:RegisterGuide("SnoAzu0112", "Azuremyst Isle - Draenai", "Snowflake", "01", "12", "SveBlo1220", "Alliance", function()
 return [[
 R Note:|R|Human, Worgen, Gnome, Dwarf, Night Elf|Z|The Exodar|M|79.00,58.00;73.70,53.43;54.17,36.47|CC|N|If you have not been here before, I would recommend getting the flight point. Just follow the waypoints to the flight master.|
-f Seat of the Naaru|R|Human, Worgen, Gnome, Dwarf, Night Elf|Z|The Exodar|M|54.22,36.55|N|At Stephanos.|
+; f Seat of the Naaru|R|Human, Worgen, Gnome, Dwarf, Night Elf|Z|The Exodar|M|54.22,36.55|N|At Stephanos.|
 A You Survived!|QID|9279|M|84.2,43.0|N|From Megelon right in front of you.|R|Draenei|
 T You Survived!|QID|9279|N|To Proenitus.|M|80.4,45.9|R|Draenei|
 A Replenishing the Healing Crystals|QID|9280|M|80.4,45.9|N|From Proenitus.|R|Draenei|
