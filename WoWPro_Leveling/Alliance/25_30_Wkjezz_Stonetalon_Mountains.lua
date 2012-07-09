@@ -129,7 +129,7 @@ r Repair/Sell Junk|QID|25729|M|58.82,56.00|N|From Ol'Irongoat, just outside the 
 
 A Just Ask Alice|QID|25673|M|58.53,55.25|N|From Alice.|
 
-f Windshear Hold|QID|25729|M|58.80,54.30|N|At Allana Swiftglide.|
+; f Windshear Hold|QID|25673|M|58.80,54.30|N|At Allana Swiftglide.|
 
 C Just Ask Alice - Fire|QID|25673|L|55221|M|63.09,56.70|N|Loot the Mechanised Fire at the top of the large shredder.|QO|Mechanized Fire: 1/1|NC|
 C Free Our Sisters|QID|25662|S|M|65.92,54.00|N|Kill the orcs for their keys and free the trapped Sisters.|

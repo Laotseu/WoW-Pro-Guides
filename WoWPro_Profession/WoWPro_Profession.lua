@@ -43,7 +43,7 @@ function WoWPro.Profession:OnEnable()
 		WoWPro:LoadGuide(WoWProDB.char.lastProfessionguide)
 	end
 	
-	WoWPro.Profession.FirstMapCall = true
+	WoWPro.FirstMapCall = true
 	
 	-- Server query for completed quests --
 	WoWPro.QueryQuestsCompleted()
