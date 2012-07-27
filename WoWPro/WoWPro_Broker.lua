@@ -204,7 +204,7 @@ function WoWPro:NextGuide(GID)
 	if not WoWPro.Guides[GID].nextGID then return nil; end
 	if WoWPro.Guides[GID].faction == "Neutral" then
 	    -- nextGIDvalue is faction dependent.   Split it and pick the right one "AllianceGUID|HordeGID"
-	    local  AllianceGUID, HordeGID = string.split("|",WoWPro.Guides[GIDvalue].nextGID)
+	    local  AllianceGUID, HordeGID = string.split("|",WoWPro.Guides[GID].nextGID)
 	    if UnitFactionGroup("player") == _G.FACTION_ALLIANCE then
 	        return AllianceGUID
 	    else

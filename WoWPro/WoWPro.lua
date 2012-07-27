@@ -339,9 +339,13 @@ function WoWPro:OnEnable()
 
 	WoWPro.eventcount = WoWPro.eventcount or {}
 
+	local TIME_MAX = 1000
+
 	WoWPro.EventFrame:SetScript("OnEvent", function(self, event, ...)		-- Setting up event handler
 
 		if _G.perr_onevent then err("event = %s", event) end
+
+		debugprofilestart()
 
 		WoWPro.eventcount[event] = WoWPro.eventcount[event] and WoWPro.eventcount[event] + 1 or 1
 
@@ -397,6 +401,10 @@ function WoWPro:OnEnable()
 					WoWPro.MainFrame:Hide()
 					WoWPro.Titlebar:Hide()
 					WoWPro.Hidden = true
+					local time_taken = debugprofilestop()
+					if time_taken > TIME_MAX then
+						err("event = %s, time_taken = %s",event,time_taken)
+					end
 					return
 				elseif WoWPro.Hidden == true then
 					WoWPro:Print("|cff33ff33Instance Exit Auto Show|r: Leveling Module")
@@ -414,7 +422,11 @@ function WoWPro:OnEnable()
 		end
 
 		if WoWPro.InitLockdown then
-		    return
+			local time_taken = debugprofilestop()
+			if time_taken > TIME_MAX then
+				err("event = %s, time_taken = %s",event,time_taken)
+			end
+			return
 		end
 
 		-- Updating party-dependant options --
@@ -515,7 +527,13 @@ function WoWPro:OnEnable()
 				WoWPro[name]:EventHandler(self, event, ...)
 			end
 		end
-	end)
+
+		local time_taken = debugprofilestop()
+		if time_taken > TIME_MAX then
+			err("event = %s, time_taken = %s",event,time_taken)
+		end
+
+	end) -- OnEvent
 
 --	WoWPro:MapPoint()				-- Maps the active step
 	-- If the base addon was disabled by the user, put it to sleep now.
@@ -640,6 +658,11 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 	updated.
 ]]
 
+	-- MOP compatibility
+	local ACTIVE_QUEST_PARAMS = WoWPro.MOP and 5 or 4
+	local AVAILABLE_QUEST_PARAMS = WoWPro.MOP and 6 or 5
+
+
 	local THROTTLE_TIME = 0.2
 	local throt, quest_log_update, gossip_show, quest_greeting, quest_detail, quest_complete, quest_progress
 	local f = CreateFrame("Frame")
@@ -669,7 +692,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 
 					local index = 1
 					repeat
-						local item = select((index-1)*4 + 1, GetGossipActiveQuests())
+						local item = select((index-1)*ACTIVE_QUEST_PARAMS + 1, GetGossipActiveQuests())
 						if item == step then
 							SelectGossipActiveQuest(index)
 							break
@@ -681,7 +704,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 
 					local index = 1
 					repeat
-						local item = select((index-1)*5 + 1, GetGossipAvailableQuests())
+						local item = select((index-1)*AVAILABLE_QUEST_PARAMS + 1, GetGossipAvailableQuests())
 						if item == step then
 							SelectGossipAvailableQuest(index)
 							break
