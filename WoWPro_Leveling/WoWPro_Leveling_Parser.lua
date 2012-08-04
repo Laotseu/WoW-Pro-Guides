@@ -49,7 +49,6 @@ local GetQuestID 						= _G.GetQuestID
 local GetQuestLink 					= _G.GetQuestLink
 local GetQuestLogLeaderBoard 		= _G.GetQuestLogLeaderBoard
 local GetQuestLogSpecialItemInfo	= _G.GetQuestLogSpecialItemInfo
-local GetQuestLogTitle 				= _G.GetQuestLogTitle
 local GetQuestReward					= _G.GetQuestReward
 local GetSpellAvailableLevel 		= _G.GetSpellAvailableLevel
 local GetSpellBookItemInfo 		= _G.GetSpellBookItemInfo
@@ -520,7 +519,7 @@ end
 local function _UnSticky(self, row_index)
 	--err("row_index=%s",row_index)
 	WoWPro.sticky[row_index] = false
-	WoWPro.UpdateGuide()
+--	WoWPro.UpdateGuide()
 	WoWPro.UpdateGuide()
 	WoWPro.MapPoint()
 end
@@ -529,9 +528,30 @@ local function _Sticky(self, row_index)
 	--err("row_index=%s",row_index)
 	WoWPro.sticky[row_index] = true
 	WoWPro.unsticky[row_index] = false
-	WoWPro.UpdateGuide()
+--	WoWPro.UpdateGuide()
 	WoWPro.UpdateGuide()
 	WoWPro.MapPoint()
+end
+
+-- Checkbox Function --
+function WoWPro.Leveling:CheckFunction(row, button, down)
+	row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
+	if button == "LeftButton" and row.check:GetChecked() then
+		local steplist = WoWPro.Leveling:SkipStep(row.index)
+		row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
+		if steplist ~= "" then
+			WoWPro:SkipStepDialogCall(row.index, steplist)
+		end
+	elseif button == "RightButton" and row.check:GetChecked() then
+		WoWPro.CharDB.Guide[WoWPro.DB.char.currentguide].completion[row.index] = true
+		WoWPro:MapPoint()
+		if WoWPro.DB.profile.checksound then
+			PlaySoundFile(WoWPro.DB.profile.checksoundfile)
+		end
+	elseif not row.check:GetChecked() then
+		WoWPro.Leveling:UnSkipStep(row.index)
+	end
+	WoWPro:UpdateGuide()
 end
 
 -- Row Content Update --
@@ -634,26 +654,6 @@ function WoWPro.Leveling:RowUpdate(offset)
 			row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
 		end
 
-		-- Checkbox Function --
-		function WoWPro.Leveling:CheckFunction(row, button, down)
-			row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
-			if button == "LeftButton" and row.check:GetChecked() then
-				local steplist = WoWPro.Leveling:SkipStep(row.index)
-				row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
-				if steplist ~= "" then
-					WoWPro:SkipStepDialogCall(row.index, steplist)
-				end
-			elseif button == "RightButton" and row.check:GetChecked() then
-				completion[row.index] = true
-				WoWPro:MapPoint()
-				if WoWProDB.profile.checksound then
-					PlaySoundFile(WoWProDB.profile.checksoundfile)
-				end
-			elseif not row.check:GetChecked() then
-				WoWPro.Leveling:UnSkipStep(row.index)
-			end
-			WoWPro:UpdateGuide()
-		end
 		row.check:SetScript("OnClick", function(self, button, down)
 			WoWPro.Leveling:CheckFunction(row, button, down)
 		end)
@@ -688,11 +688,6 @@ function WoWPro.Leveling:RowUpdate(offset)
 			end
 			if QID then _, x, y, obj = QuestPOIGetIconInfo(QID) end
 			if x and y then
-				--table.insert(dropdown,
-				--	{text = "Map Blizard Coordinates", notCheckable = true, func = function()
-				--		WoWPro:MapPoint(row.num, true)
-				--	end}
-				--)
 				local tbl = WoWPro.AcquireTable()
 				tbl.text 			= "Map Blizard Coordinates"
 				tbl.notCheckable 	= true
@@ -701,11 +696,6 @@ function WoWPro.Leveling:RowUpdate(offset)
 				tinsert(dropdown, tbl)
 			end
 			if WoWPro.QuestLog[QID] and GetNumPartyMembers() > 0 then
-				--table.insert(dropdown,
-				--	{text = "Share Quest", notCheckable = true, func = function()
-				--		QuestLogPushQuest(WoWPro.QuestLog[QID].index)
-				--	end}
-				--)
 				local tbl = WoWPro.AcquireTable()
 				tbl.text 			= "Share Quest"
 				tbl.notCheckable 	= true
@@ -714,14 +704,6 @@ function WoWPro.Leveling:RowUpdate(offset)
 				tinsert(dropdown, tbl)
 			end
 			if sticky then
-				--table.insert(dropdown,
-				--	{text = "Un-Sticky", notCheckable = true, func = function()
-				--		WoWPro.sticky[row.index] = false
-				--		WoWPro.UpdateGuide()
-				--		WoWPro.UpdateGuide()
-				--		WoWPro.MapPoint()
-				--	end}
-				--)
 				local tbl = WoWPro.AcquireTable()
 				tbl.text 			= "Un-Sticky"
 				tbl.notCheckable 	= true
@@ -729,15 +711,6 @@ function WoWPro.Leveling:RowUpdate(offset)
 				tbl.func				= _UnSticky
 				tinsert(dropdown, tbl)
 			else
-				--table.insert(dropdown,
-				--	{text = "Make Sticky", notCheckable = true, func = function()
-				--		WoWPro.sticky[row.index] = true
-				--		WoWPro.unsticky[row.index] = false
-				--		WoWPro.UpdateGuide()
-				--		WoWPro.UpdateGuide()
-				--		WoWPro.MapPoint()
-				--	end}
-				--)
 				local tbl = WoWPro.AcquireTable()
 				tbl.text 			= "Make Sticky"
 				tbl.notCheckable 	= true
@@ -825,21 +798,6 @@ function WoWPro.Leveling:RowUpdate(offset)
 			row.targetbutton:Hide()
 		end
 
-		-- Setting the zone for the coordinates of the step --
-		--zone = zone or strsplit("-(",WoWPro.Guides[GID].zone)
-		--row.zone = strtrim(zone)
-
-		-- Checking for loot items in bags --
---		local lootqtyi
---		if lootcheck and ( lootitem or action == "B" ) then
---			if not WoWPro.sticky[row.index] then lootcheck = false end
-			--if not lootitem then
-			--	if GetItemCount(step) > 0 and not completion[k] then WoWPro.CompleteStep(k) end
-			--end
---			if tonumber(lootqty) ~= nil then lootqtyi = tonumber(lootqty) else lootqtyi = 1 end
---			if GetItemCount(lootitem) >= lootqtyi and not completion[k] then WoWPro.CompleteStep(k) end
---		end
-
 		WoWPro.rows[i] = row
 
 		k = k + 1
@@ -851,7 +809,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 
 	WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount or 0
 	WoWPro.CurrentIndex = WoWPro.rows[1+WoWPro.ActiveStickyCount].index
-	WoWPro:UpdateQuestTracker()
+	--WoWPro:UpdateQuestTracker()
 
 	return reload
 end

@@ -300,14 +300,14 @@ function WoWPro:OnEnable()
 	WoWPro:RegisterEvents( {	-- Setting up core events
 		"BAG_UPDATE",
 		"CHAT_MSG_SYSTEM",
-		"CINEMATIC_STOP",
+--		"CINEMATIC_STOP",
 		"GOSSIP_SHOW",
 		"MINIMAP_ZONE_CHANGED",
 		"PARTY_MEMBERS_CHANGED",
 		"PLAYER_ENTERING_WORLD",
 		"PLAYER_LEAVING_WORLD",
 		"PLAYER_LEVEL_UP",
-		"PLAYER_REGEN_ENABLED",
+--		"PLAYER_REGEN_ENABLED",
 		"QUEST_AUTOCOMPLETE",
 		"QUEST_COMPLETE",
 		"QUEST_DETAIL",
@@ -445,10 +445,13 @@ function WoWPro:OnEnable()
 				WoWPro.LockdownTimer = 2.0
 			end
 
-			WoWPro:UpdateGuide()
+			--if WoWPro.need_UpdateGuide then
+			--	WoWPro:UpdateGuide()
+			--end
 		-- Update Achivement criteria based stuff
 		elseif event == "CRITERIA_UPDATE" then
-			WoWPro:UpdateGuide()
+			--WoWPro:UpdateGuide()
+			WoWPro:AutoCompleteQuestUpdate()
 		end
 
 		-- Updating party-dependant options --

@@ -215,8 +215,58 @@ function WoWPro:NextGuide(GID)
 	end
 end
 
+local function rowContentUpdate(module, offset)
+	local reload = WoWPro[module:GetName()]:RowUpdate(offset)
+	for i, row in pairs(WoWPro.rows) do
+		local modulename
+		-- Hyjack the click and menu functions for the Recorder if it's enabled --
+		if WoWPro.Recorder then
+			modulename = "Recorder"
+			WoWPro.Recorder:RowUpdate(offset)
+		else modulename = module:GetName() end
+		local menuFrame = CreateFrame("Frame", "WoWProDropMenu", UIParent, "UIDropDownMenuTemplate")
+		if WoWPro[modulename].RowLeftClick and WoWPro[modulename].RowDropdownMenu then
+			row:SetScript("OnClick", function(self, button, down)
+				if button == "LeftButton" then
+					WoWPro[modulename]:RowLeftClick(i)
+				elseif button == "RightButton" then
+					WoWPro.rows[i]:SetChecked(nil)
+					if WoWPro.Recorder then WoWPro[modulename]:RowLeftClick(i) end
+					EasyMenu(WoWPro[modulename].RowDropdownMenu[i], menuFrame, "cursor", 0 , 0, "MENU")
+				end
+			end)
+		end
+	end
+	return reload
+end
+
 WoWPro.eventcount = WoWPro.eventcount or {}
 WoWPro.eventcount["UpdateGuide"] = 0
+
+do -- closure
+
+-- Bucket to wait until out of combat or until the cinematic is over
+local THROTTLE_TIME = 0.1
+local throt, b_offset
+local f = CreateFrame("Frame")
+f:Hide()
+f:SetScript("OnShow", function(self)
+	throt = THROTTLE_TIME
+end)
+f:SetScript("OnUpdate", function(self, elapsed)
+	throt = throt - elapsed
+	if throt < 0 and not InCombatLockdown() and not InCinematic() then
+		WoWPro:UpdateGuide(b_offset)
+		b_offset = nil
+		f:Hide()
+	end
+end)
+
+local function UpdateGuide_bucket(offset)
+	b_offset = offset
+	f:Show()
+end
+
 -- Guide Update --
 function WoWPro:UpdateGuide(offset)
 ----WoWPro:Trace("Call WoWPro:UpdateGuide offset:"..tostring(offset))
@@ -228,12 +278,13 @@ function WoWPro:UpdateGuide(offset)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 	local GID = WoWProDB.char.currentguide
 
-	-- If the user is in combat, or if a GID is not present, or if the guide cannot be found, end --
-	if InCombatLockdown()
-		or InCinematic()
-		or not GID
-		or not WoWPro.Guides[GID]
-		then return
+	if	not GID or not WoWPro.Guides[GID] then
+		return
+	end
+
+	if InCombatLockdown() or InCinematic() then
+		UpdateGuide_bucket(offset)
+		return
 	end
 
 --WoWPro:Trace("Start WoWPro:UpdateGuide")
@@ -248,33 +299,11 @@ function WoWPro:UpdateGuide(offset)
 	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount))
 
 	-- Calling on the guide's module to populate the guide window's rows --
-	local function rowContentUpdate()
-		local reload = WoWPro[module:GetName()]:RowUpdate(offset)
-		for i, row in pairs(WoWPro.rows) do
-			local modulename
-			-- Hyjack the click and menu functions for the Recorder if it's enabled --
-			if WoWPro.Recorder then
-				modulename = "Recorder"
-				WoWPro.Recorder:RowUpdate(offset)
-			else modulename = module:GetName() end
-			local menuFrame = CreateFrame("Frame", "WoWProDropMenu", UIParent, "UIDropDownMenuTemplate")
-			if WoWPro[modulename].RowLeftClick and WoWPro[modulename].RowDropdownMenu then
-				row:SetScript("OnClick", function(self, button, down)
-					if button == "LeftButton" then
-						WoWPro[modulename]:RowLeftClick(i)
-					elseif button == "RightButton" then
-						WoWPro.rows[i]:SetChecked(nil)
-						if WoWPro.Recorder then WoWPro[modulename]:RowLeftClick(i) end
-						EasyMenu(WoWPro[modulename].RowDropdownMenu[i], menuFrame, "cursor", 0 , 0, "MENU")
-					end
-				end)
-			end
-		end
-		return reload
-	end
-	local reload = true
 	-- Reloading until all stickies that need to unsticky have done so --
-	while reload do reload = rowContentUpdate() end
+	while true do
+		if  not rowContentUpdate(module, offset) then break end
+	end
+	WoWPro:UpdateQuestTracker()
 
 	-- Update content and formatting --
 	WoWPro:RowSet(); WoWPro:RowSet()
@@ -314,8 +343,13 @@ function WoWPro:UpdateGuide(offset)
 			WoWPro.NextGuideDialog:Show()
 		end
 	end
+
+	WoWPro.need_UpdateGuide = nil
+
 --WoWPro:Trace("End WoWPro:UpdateGuide")
 end
+
+end -- closure
 
 -- Next Step --
 -- Determines the next active step --
@@ -494,6 +528,19 @@ function WoWPro.CompleteStep(step, skipUIUpdate)
 
 	WoWProCharDB.Guide[GID].completion[step] = true
 
+	local Delta = WoWPro:MapPointDelta()
+	if Delta and ((WoWPro.action[step] == "C" and Delta[1] > 10) or Delta[1] > 1.9) then
+	    local qid=-99
+	    if WoWPro.QID[step] then
+	        qid = WoWPro.QID[step]
+	    end
+	    local line = ("Action=%s|Step=%s|M0=%.2f,%.2f|M1=%.2f,%.2f|Error=%.2f|QID=%s|Vers=%s|Guide=%s"):format(WoWPro.action[step],WoWPro.step[step],Delta[2],Delta[3],Delta[4],Delta[5],Delta[1],qid,WoWPro.Version,GID)
+	    table.insert(WoWProDB.global.Deltas, line)
+	    WoWPro:dbp(line)
+	else
+	    WoWPro:dbp("Step Complete: "..WoWPro.step[step])
+	end
+
 	if skipUIUpdate then
 		-- No UI update is needed. We are probably in the process of loading a guide.
 		return
@@ -508,19 +555,6 @@ function WoWPro.CompleteStep(step, skipUIUpdate)
 		else
 			row.check:SetChecked(false)
 		end
-	end
-
-	local Delta = WoWPro:MapPointDelta()
-	if Delta and ((WoWPro.action[step] == "C" and Delta[1] > 10) or Delta[1] > 1.9) then
-	    local qid=-99
-	    if WoWPro.QID[step] then
-	        qid = WoWPro.QID[step]
-	    end
-	    local line = ("Action=%s|Step=%s|M0=%.2f,%.2f|M1=%.2f,%.2f|Error=%.2f|QID=%s|Vers=%s|Guide=%s"):format(WoWPro.action[step],WoWPro.step[step],Delta[2],Delta[3],Delta[4],Delta[5],Delta[1],qid,WoWPro.Version,GID)
-	    table.insert(WoWProDB.global.Deltas, line)
-	    WoWPro:dbp(line)
-	else
-	    WoWPro:dbp("Step Complete: "..WoWPro.step[step])
 	end
 
 	WoWPro:MapPoint()
@@ -541,6 +575,7 @@ end
 -- Populate the Quest Log table for other functions to call on --
 function WoWPro:PopulateQuestLog()
 	local WoWProCharDB = WoWPro.CharDB
+	--WoWPro:dbp("Populating quest log...")
 
 	WoWPro.oldQuests, WoWPro.QuestLog = WoWPro.QuestLog, WoWPro.oldQuests
 
@@ -630,6 +665,8 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 	if not GID or not WoWPro.Guides[GID] then return end
 
 	if WoWProCharDB.Guide then
+		local something_completed
+
 		for i=1,#WoWPro.action do
 
 			local action = WoWPro.action[i]
@@ -656,18 +693,18 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 
 				-- Quest is flaged as completed in the completeQIDs table
 				if WoWPro.IsQuestFlaggedCompleted(QID) then
-					WoWPro.CompleteStep(i, skipUIUpdate)
-					completion = true
+					WoWPro.CompleteStep(i, true)
+					something_completed = true
 
 				-- Quests that are in the current log have been accepted
 				elseif action == "A" and quest_log_index then
-					WoWPro.CompleteStep(i, skipUIUpdate)
-					completion = true
+					WoWPro.CompleteStep(i, true)
+					something_completed = true
 
 				-- Quest Completion: Any step that is not a Turn in is considered completed if the quest is completed --
 				elseif action ~= "T" and quest_log_index and select(7,GetQuestLogTitle(quest_log_index)) == 1 then
-					WoWPro.CompleteStep(i, skipUIUpdate)
-					completion = true
+					WoWPro.CompleteStep(i, true)
+					something_completed = true
 
 				-- Partial Completion --
 				elseif WoWPro.QuestLog[QID] and WoWPro.questtext[i] and quest_log_index and GetNumQuestLeaderBoards(quest_log_index) > 0 then
@@ -686,10 +723,31 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 						end
 						if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
 					end
-					if complete then WoWPro.CompleteStep(i, skipUIUpdate) end --if the step has not been found to be incomplete, run the completion function
+					if complete then
+						WoWPro.CompleteStep(i, true)
+						something_completed = true
+					end --if the step has not been found to be incomplete, run the completion function
 				end
 
 			end
+		end
+		WoWPro.abandonedQID = nil
+
+		if not skipUIUpdate and something_completed then
+			if WoWProDB.profile.checksound then
+				PlaySoundFile(WoWProDB.profile.checksoundfile)
+			end
+			for i,row in ipairs(WoWPro.rows) do
+				if WoWProCharDB.Guide[GID].completion[row.index] then
+					row.check:SetChecked(true)
+				else
+					row.check:SetChecked(false)
+				end
+			end
+
+			WoWPro:MapPoint()
+			WoWPro.FirstMapCall = nil
+			WoWPro:UpdateGuide()
 		end
 	end
 
@@ -709,13 +767,14 @@ local function GetLootTrackingInfo(lootitem, lootqty)
 	- how many the user needs
 	- a complete symbol if the ammount the user has the ammount they need
 ]]
-	if not GetItemInfo(lootitem) then return "" end
 	local track, numinbag = "" 								--If the function did have a track string, adds a newline
-	track = track.." - "..GetItemInfo(lootitem)..": " 	--Adds the item's name to the string
+	track = GetItemInfo(lootitem)
+	if not track then return "" end
+	track = " - "..track..": " 								--Adds the item's name to the string
 	numinbag = GetItemCount(lootitem)						--Finds the number in the bag, and adds a count if supplied
 	track = track..numinbag										--Adds the number in bag to the string
 	track = track.."/"..lootqty								--Adds the total number needed to the string
-	if tonumber(lootqty) or 1 <= numinbag then
+	if (tonumber(lootqty) or 1) <= numinbag then
 		track = track.." (C)"									--If the user has the requisite number of items, adds a complete marker
 	end
 	return track, numinbag										--Returns the track string and the inventory count to the calling function

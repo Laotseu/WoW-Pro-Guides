@@ -47,7 +47,8 @@ A I Work... For the Horde! |QID|10086|M|55.2,38.8|N|From Megzeg Nukklebust.|
 N Flying|QID|10809|N|Expert Riding may be purchased for 225g, you will also need 50g for a mount. Wind Rider Jahubo.|M|54.2,41.6|
 T Eradicate the Burning Legion |QID|10121|N|To Sergeant Shatterskull.|M|58.0,41.5|
 A Felspark Ravine |QID|10123|M|58.0,41.5|N|From Sergeant Shatterskull.|
-A Invading the Citadel|QID|29542|M|58.0,41.5|N|From Sergeant Shatterskull. This quest leads into Hellfire Ramparts, this is completely optional, there will be no follow up for it. Once you take it, feel free to join queue for Hellfire Ramparts if you wish.|
+; The quest "Invading the Citadel" on the following line has wrong caps on 'The' so it does not auto-accept since it is optional.|
+A Invading The Citadel|QID|29542|M|61.7,60.8|N|From Sergeant Shatterskull. This quest leads into Hellfire Ramparts, this is completely optional, there will be no follow up for it. Once you take it, feel free to join queue for Hellfire Ramparts if you wish.|
 C Felspark Ravine |QID|10123|N|Kill the needed demons.|M|65,36|
 C Bonechewer Blood |QID|10450|M|56.5,47.0|N|Kill and loot orcs for their blood.|S|
 C I Work... For the Horde! |QID|10086|N|Pick up the sparkling pieces of wood and metal.|M|60,45|
@@ -106,7 +107,7 @@ A Forge Camp: Mageddon |QID|10390|M|55.0,36.0|N|From Nazgrel.|
 A The Assassin |QID|9400|M|55.0,36.0|N|From Nazgrel.|
 T Apothecary Antonivich |QID|10835|N|To Apothecary Antonivich.|M|52,36|
 
-A A Burden of Souls |QID|10864|M|52.5,36.5|N|From Apothecary Antonivich.|
+A Burden of Souls |QID|10864|M|52.5,36.5|N|From Apothecary Antonivich.|
 C Forge Camp: Mageddon |QID|10390|N|Kill Gan'arg Servants. Also kill and loot Razorsaw.|M|64,31|
 A Vile Plans |QID|10393|U|29590|M|64.5,32.0|N|From the Burning Legion Missive you picked up.|
 T Forge Camp: Mageddon |QID|10390|M|55.0,36.0|N|To Nazgrel.|
@@ -150,14 +151,13 @@ A Ravager Egg Roundup |QID|9349|M|49.0,75.0|N|From Legassi.|
 C Ravager Egg Roundup |QID|9349|N|Get 12 Ravager eggs from the ground and the Ravagers.|M|42,83|
 T Ravager Egg Roundup |QID|9349|M|49.0,75.0|N|To Legassi.|
 A Helboar, the Other White Meat |QID|9361|M|49.0,75.0|N|From Legassi.|
-C In Case of Emergency... |QID|10161|N|Pick up Zepplin Debris.|M|58.0,71.5|S|
-K Crust Bursters|QID|9373|S|L|23338|M|49,67|N|Kill the Crust Bursters on this area until you loot an Eroded Leather Case.|
 C Helboar, the Other White Meat |QID|9361|N|Head to the NE and work your way south, you should find plenty of Deranged Helboars, kill and loot them. Use the Purification Mixture on the Tainted Helboar Meat.|U|23268|M|50.0,75.0|
-K Crust Bursters|QID|9373|US|L|23338|M|49,67|N|Kill the Crust Bursters on this area until you loot an Eroded Leather Case.|
+K Crust Bursters|QID|9373|L|23338|N|Kill the Crust Bursters on this area until you loot an Eroded Leather Case.|
 A Missing Missive |QID|9373|U|23338|M|48.0,66.0|N|From Eroded Leather Case.|
-T Helboar, the Other White Meat |QID|9361|M|49.2,74.8|N|To Legassi.|
+T Helboar, the Other White Meat |QID|9361|M|49.0,75.0|N|To Legassi.|
 
 A Smooth as Butter |QID|9356|M|49.0,75.0|N|From Legassi.|
+C In Case of Emergency... |QID|10161|N|Pick up Zepplin Debris.|M|58.0,71.5|S|
 C Make Them Listen |QID|10220|N|Kill Unyielding Footman, Knights and Sorcerers.|S|
 l A Mysterious Tome |QID|10229|N|Kill Unyielding Knights at the Expedition Armory until they drop the item "A Mysterious Tome".|L|28552|M|55,76|
 C Make Them Listen |QID|10220|N|Kill Unyielding Footman, Knights and Sorcerers.|US|
@@ -184,7 +184,7 @@ T Decipher the Tome |QID|10229|M|61.74,81.79|N|To Althen the Historian.|
 A The Battle Horn |QID|10230|M|61.74,81.79|N|From Althen the Historian.|
 T Make Them Listen |QID|10220|N|To Emissary Mordiba.|M|61.78,81.71|
 C The Battle Horn|QID|10230|N|Head south to the Expedition Armory. Kill and loot Lieutenant Commander Thalvos.|M|54.8,83.7|
-T Smooth as Butter |QID|9356|N|To Legassi.|M|49.2,74.8|
+T Smooth as Butter |QID|9356|N|To Legassi.|M|49,75|
 T In Case of Emergency... |QID|10161|M|49.0,75.0|N|To "Sreaming" Screed Luckheed.|
 A Voidwalkers Gone Wild |QID|9351|M|49.0,75.0|N|From "Sreaming" Screed Luckheed.|
 C Voidwalkers Gone Wild |QID|9351|N|Kill and loot Voidwalkers until you have 10 Essences.|M|49.5,82.0|S|
@@ -198,7 +198,7 @@ T The Warp Rifts |QID|10278|M|62.0,81.5|N|To Ogath the Mad.|
 A Void Ridge |QID|10294|M|62.0,81.5|N|From Ogath the Mad.|
 C Bloody Vengeance |QID|10250|U|28651|N|Head to the semi-destroyed tower. Use the Unyielding Battle Horn and kill Urtrak when he spawns.|M|63.5,77.6|
 K Bleeding Hollow Peon |QID|10792|L|31347 4|N|Kill Peons until you loot 4 Bleeding Hollow Torches.|
-N Light it up |QID|10792|U|31347|L|31346 4|M|69.2,69.2|N|Find the Bleeding Hollow forge, it's directly to the left after you enter the north gate. Use the torch at the forge to light all four.|
+N Light it up |QID|10792|U|31347|L|31346 4|N|Find the Bleeding Hollow forge, it's directly to the left after you enter the north gate. Use the torch at the forge to light all four.|
 N Burn down the Eastern Hovel |QID|10792|QO|Eastern Hovel Burned: 1/1|U|31346|N|Head to the building next to the forge, and use the torch. |M|69.7,70.3|
 N Burn down the Stables |QID|10792|QO|Stable Burned: 1/1|U|31346|N|Head to the building where you killed the Worg Master, and use the torch. |M|68.2,73.4|
 N Burn down the Eastern Hovel |QID|10792|QO|Western Hovel Burned: 1/1|U|31346|N|Head to the Western Hovel, and use the torch. |M|67.1,75.8|
@@ -213,7 +213,7 @@ T Zeth'Gor Must Burn! |QID|10792|M|61.21,81.32|N|To Captain Darkhowl.|
 R Void Ridge |QID|10294|N|Head to the Void Ridge.|M|72,67;75.5,66.5|
 C Void Ridge |QID|10294|N|Kill the voidwalkers till you get 40 Soul Shards. Collapsing Voidwalkers channel a self destruct when under 10%, if you kill them they explode anyway, so run away once you see the emote. Vascillating Voidwalkers absorb the first type of spell you throw at them and gain resistance to that school for the duration of the fight, so throw something you don't normally use at them first.|M|75.5,66.5|
 H Thrallmar|QID|10238|U|6948|N|Hearth to Thrallmar.|
-T How to Serve Goblins |QID|10238|M|51.4,30.5|N|To Foreman Razelcraz.|
+T How to Serve Goblins |QID|10238|N|To Foreman Razelcraz.|M|51,31|
 A Shizz Work |QID|10629|M|51.5,30.5|N|From Foreman Razelcraz.|
 C Shizz Work |QID|10629|N|Use the Felhound Whistle. Then take your pet and kill the helboars to the west. Each time a boar dies, the Fel Puppy chows down and leaves some remains. Right click the leavings, and eventually one with contain the Shredder Key.|U|30803|M|50.0,29.5|
 T Shizz Work |QID|10629|M|51.5,30.5|N|To Foreman Razelcraz.|
