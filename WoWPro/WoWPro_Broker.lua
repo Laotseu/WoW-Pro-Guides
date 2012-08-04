@@ -709,13 +709,14 @@ local function GetLootTrackingInfo(lootitem, lootqty)
 	- how many the user needs
 	- a complete symbol if the ammount the user has the ammount they need
 ]]
-	if not GetItemInfo(lootitem) then return "" end
 	local track, numinbag = "" 								--If the function did have a track string, adds a newline
-	track = track.." - "..GetItemInfo(lootitem)..": " 	--Adds the item's name to the string
+	track = GetItemInfo(lootitem)
+	if not track then return "" end
+	track = " - "..track..": " 								--Adds the item's name to the string
 	numinbag = GetItemCount(lootitem)						--Finds the number in the bag, and adds a count if supplied
 	track = track..numinbag										--Adds the number in bag to the string
 	track = track.."/"..lootqty								--Adds the total number needed to the string
-	if tonumber(lootqty) or 1 <= numinbag then
+	if (tonumber(lootqty) or 1) <= numinbag then
 		track = track.." (C)"									--If the user has the requisite number of items, adds a complete marker
 	end
 	return track, numinbag										--Returns the track string and the inventory count to the calling function
