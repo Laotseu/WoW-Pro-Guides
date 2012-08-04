@@ -555,6 +555,8 @@ function WoWPro.Leveling:RowUpdate(offset)
 	WoWPro.ReleaseTable(WoWPro.Leveling.RowDropdownMenu)
 	WoWPro.Leveling.RowDropdownMenu = WoWPro.AcquireTable()
 
+	QuestMapUpdateAllQuests()
+	QuestPOIUpdateIcons()
 	for i=1,15 do
 
 		-- Skipping any skipped steps, unsticky steps, and optional steps unless it's time for them to display --
@@ -670,8 +672,6 @@ function WoWPro.Leveling:RowUpdate(offset)
 			tbl.isTitle 		= true
 			tinsert(dropdown, tbl)
 
-			QuestMapUpdateAllQuests()
-			QuestPOIUpdateIcons()
 			local _, x, y, obj
 			if coord or x then
 				--table.insert(dropdown,
@@ -700,7 +700,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 				tbl.func 			= _MapBlizCoordinate
 				tinsert(dropdown, tbl)
 			end
-			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].index and GetNumPartyMembers() > 0 then
+			if WoWPro.QuestLog[QID] and GetNumPartyMembers() > 0 then
 				--table.insert(dropdown,
 				--	{text = "Share Quest", notCheckable = true, func = function()
 				--		QuestLogPushQuest(WoWPro.QuestLog[QID].index)
@@ -709,7 +709,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 				local tbl = WoWPro.AcquireTable()
 				tbl.text 			= "Share Quest"
 				tbl.notCheckable 	= true
-				tbl.arg1				= WoWPro.QuestLog[QID].index
+				tbl.arg1				= WoWPro.QuestLog[QID]
 				tbl.func 			= _ShareQuest
 				tinsert(dropdown, tbl)
 			end
@@ -751,7 +751,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 		-- Item Button --
 		if action == "H" then use = 6948 end
 		if ( not use ) and action == "C" and WoWPro.QuestLog[QID] then
-			local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[QID].index)
+			local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[QID])
 			if link then
 				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = strfind(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
 				use = Id
@@ -859,7 +859,7 @@ end
 -- Left-Click Row Function --
 function WoWPro.Leveling:RowLeftClick(i)
 	if WoWPro.QID[WoWPro.rows[i].index] and WoWPro.QuestLog[WoWPro.QID[WoWPro.rows[i].index]] then
-		QuestLog_OpenToQuest(WoWPro.QuestLog[WoWPro.QID[WoWPro.rows[i].index]].index)
+		QuestLog_OpenToQuest(WoWPro.QuestLog[WoWPro.QID[WoWPro.rows[i].index]])
 	end
 	WoWPro.rows[i]:SetChecked(nil)
 end

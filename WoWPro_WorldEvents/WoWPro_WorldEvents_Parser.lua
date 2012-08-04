@@ -500,6 +500,10 @@ function WoWPro.WorldEvents:LoadGuide()
 
 	WoWPro:PopulateQuestLog() --Calling this will populate our quest log table for use here
 
+	-- Checking to see if any steps are already complete wihtout updating the GUI --
+	WoWPro:AutoCompleteQuestUpdate(true)
+
+--[[
 	-- Checking to see if any steps are already complete --
 	--##### Need to validate but this should all be done in UpdateGuide()
 	for i=1, WoWPro.stepcount do
@@ -546,7 +550,7 @@ function WoWPro.WorldEvents:LoadGuide()
 			WoWProCharDB.Guide[GID].completion[i] = true
 		end
 	end
-
+]]
 	-- Checking zone based completion --
 	WoWPro:UpdateGuide()
 	WoWPro:AutoCompleteZone()
@@ -621,6 +625,9 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 	--WoWPro.WorldEvents.RowDropdownMenu = {}
 	WoWPro.ReleaseTable(WoWPro.WorldEvents.RowDropdownMenu)
 	WoWPro.WorldEvents.RowDropdownMenu = WoWPro.AcquireTable()
+
+	QuestMapUpdateAllQuests()
+	QuestPOIUpdateIcons()
 
 	for i=1,15 do
 
@@ -736,8 +743,6 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 			tbl.isTitle 		= true
 			tinsert(dropdown, tbl)
 
-			QuestMapUpdateAllQuests()
-			QuestPOIUpdateIcons()
 			local _, x, y, obj
 			if coord or x then
 				--tinsert(dropdown,
@@ -760,7 +765,7 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 				tbl.func 			= _MapBlizCoordinate
 				tinsert(dropdown, tbl)
 			end
-			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].index and GetNumPartyMembers() > 0 then
+			if WoWPro.QuestLog[QID] and GetNumPartyMembers() > 0 then
 				--tinsert(dropdown,
 				--	{text = "Share Quest", func = function()
 				--		QuestLogPushQuest(WoWPro.QuestLog[QID].index)
@@ -769,7 +774,7 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 				local tbl = WoWPro.AcquireTable()
 				tbl.text 			= "Share Quest"
 				tbl.notCheckable 	= true
-				tbl.arg1				= WoWPro.QuestLog[QID].index
+				tbl.arg1				= WoWPro.QuestLog[QID]
 				tbl.func 			= _ShareQuest
 				tinsert(dropdown, tbl)
 			end
@@ -811,7 +816,7 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 		-- Item Button --
 		if action == "H" then use = 6948 end
 		if ( not use ) and action == "C" and WoWPro.QuestLog[QID] then
-			local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[QID].index)
+			local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[QID])
 			if link then
 				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = link:find("|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
 				use = Id
@@ -931,7 +936,7 @@ end
 -- Left-Click Row Function --
 function WoWPro.WorldEvents:RowLeftClick(i)
 	if WoWPro.QID[WoWPro.rows[i].index] and WoWPro.QuestLog[WoWPro.QID[WoWPro.rows[i].index]] then
-		QuestLog_OpenToQuest(WoWPro.QuestLog[WoWPro.QID[WoWPro.rows[i].index]].index)
+		QuestLog_OpenToQuest(WoWPro.QuestLog[WoWPro.QID[WoWPro.rows[i].index]])
 	end
 	WoWPro.rows[i]:SetChecked(nil)
 end

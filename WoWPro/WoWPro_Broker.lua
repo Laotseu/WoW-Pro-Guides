@@ -540,89 +540,25 @@ end
 
 -- Populate the Quest Log table for other functions to call on --
 function WoWPro:PopulateQuestLog()
---WoWPro:Trace("Begin WoWPro:PopulateQuestLog")
 	local WoWProCharDB = WoWPro.CharDB
-	WoWPro:dbp("Populating quest log...")
---err("Populating quest log...")
 
 	WoWPro.oldQuests, WoWPro.QuestLog = WoWPro.QuestLog, WoWPro.oldQuests
 
-	WoWPro.newQuest, WoWPro.missingQuest = false, nil
-
-	-- Generating the Quest Log table --
-	--WoWPro.QuestLog = {} -- Reinitiallizing the Quest Log table
 	WipeTable(WoWPro.QuestLog)
-	local i, currentHeader = 1, "None"
+	local i = 1
 	local entries = GetNumQuestLogEntries()
 	for i=1,tonumber(entries) do
-		local questTitle, level, questTag, suggestedGroup, isHeader,
-			isCollapsed, isComplete, isDaily, questID = GetQuestLogTitle(i)
-		local leaderBoard
-		if isHeader then
-			currentHeader = questTitle
-		else
-			if GetNumQuestLeaderBoards(i) and GetQuestLogLeaderBoard(1, i) then
-				leaderBoard = {}
-				for j=1,GetNumQuestLeaderBoards(i) do
-					leaderBoard[j] = GetQuestLogLeaderBoard(j, i)
-				end
-			else leaderBoard = nil end
-			local link, icon, charges = GetQuestLogSpecialItemInfo(i)
-			local use
-			if link then
-				--local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = link:find("|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
-				local Id = link:match("item:(%d+)")
-				use = Id and tonumber(Id) or nil
-			end
-			local coords
-			QuestMapUpdateAllQuests()
-			QuestPOIUpdateIcons()
-			WorldMapFrame_UpdateQuests()
-			local x, y = WoWPro:findBlizzCoords(questID)
-			if x and y then coords = ("%.2f"):format(x)..","..("%.2f"):format(y) end
-
-			WoWPro.QuestLog[questID] = AcquireTable()
-			local quest_log_item = WoWPro.QuestLog[questID]
-			quest_log_item.title = questTitle
-			quest_log_item.level = level
-			quest_log_item.tag = questTag
-			quest_log_item.group = suggestedGroup
-			quest_log_item.complete = isComplete
-			quest_log_item.daily = isDaily
-			quest_log_item.leaderBoard = leaderBoard
-			quest_log_item.header = currentHeader
-			quest_log_item.use = use
-			quest_log_item.coords = coords
-			quest_log_item.index = i
---err("Adding QID: %s", questID)
-			if GetNumQuestLeaderBoards(i) and GetQuestLogLeaderBoard(1, i) then
-				--leaderBoard = {}
-				leaderBoard = AcquireTable()
-				for j=1,GetNumQuestLeaderBoards(i) do
-					leaderBoard[j] = GetQuestLogLeaderBoard(j, i)
-				end
-			--else leaderBoard = nil end
-			end
-			quest_log_item.leaderBoard = leaderBoard
+		local isHeader, _, _, _, questID = select(5,GetQuestLogTitle(i))
+		if not isHeader then
+			WoWPro.QuestLog[questID] = i
 		end
 	end
---	if WoWPro.oldQuests == {} then return end
+
 	if IsTableEmpty(WoWPro.oldQuests) then return end
-
-	-- Generating table WoWPro.newQuest --
-	for QID, questInfo in pairs(WoWPro.QuestLog) do
-		if not WoWPro.oldQuests[QID] then
-			WoWPro.newQuest = QID
-			WoWPro:dbp("New Quest: "..WoWPro.QuestLog[QID].title)
-		end
-	end
 
 	-- Generating table WoWPro.missingQuest --
 	for QID, questInfo in pairs(WoWPro.oldQuests) do
 		if not WoWPro.QuestLog[QID] then
-			WoWPro.missingQuest = QID
-			WoWPro:dbp("Missing Quest: "..WoWPro.oldQuests[QID].title)
-
 			if not abandoning then
 				-- It's a quest that has been completed
 				if not WoWPro.MOP then WoWProCharDB.completedQIDs[QID] = true end
@@ -633,15 +569,8 @@ function WoWPro:PopulateQuestLog()
 			abandoning = nil
 		end
 	end
-
-	local num = 0
-	for i, QID in pairs(WoWPro.QuestLog) do
-		num = num+1
-	end
-	WoWPro:dbp("Quest Log populated. "..num.." quests found.")
---err("Quest Log populated, %s quests found.", num)
---WoWPro:Trace("End WoWPro:PopulateQuestLog")
 end
+
 -- Experimental Interface to Grail
 function WoWPro:SkipAll()
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
@@ -723,31 +652,36 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 
 			if not completion then
 
+				local quest_log_index = WoWPro.QuestLog[QID]
+
 				-- Quest is flaged as completed in the completeQIDs table
 				if WoWPro.IsQuestFlaggedCompleted(QID) then
 					WoWPro.CompleteStep(i, skipUIUpdate)
 					completion = true
 
 				-- Quests that are in the current log have been accepted
-				elseif action == "A" and not completion and WoWPro.QuestLog[QID] then
+				elseif action == "A" and quest_log_index then
 					WoWPro.CompleteStep(i, skipUIUpdate)
 					completion = true
 
 				-- Quest Completion: Any step that is not a Turn in is considered completed if the quest is completed --
-				elseif action ~= "T" and not completion and WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].complete then
+				elseif action ~= "T" and quest_log_index and select(7,GetQuestLogTitle(quest_log_index)) == 1 then
 					WoWPro.CompleteStep(i, skipUIUpdate)
 					completion = true
 
 				-- Partial Completion --
-				elseif WoWPro.QuestLog[QID] and not completion and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[i] then
+				elseif WoWPro.QuestLog[QID] and WoWPro.questtext[i] and quest_log_index and GetNumQuestLeaderBoards(quest_log_index) > 0 then
 					local numquesttext = select("#", (";"):split(WoWPro.questtext[i]))
 					local complete = true
 					for l=1,numquesttext do
 						local lquesttext = select(numquesttext-l+1, (";"):split(WoWPro.questtext[i]))
+						lquesttext = lquesttext:match("(.+):")
 						local lcomplete = false
-						for _, objective in pairs(WoWPro.QuestLog[QID].leaderBoard) do --Checks each of the quest log objectives
-							if lquesttext == objective then --if the objective matches the step's criteria, mark true
+						for j=1,GetNumQuestLeaderBoards(quest_log_index) do
+							local itemtext, _, isdone = GetQuestLogLeaderBoard(j, quest_log_index)
+							if itemtext and itemtext:match("(.+):") == lquesttext and isdone then
 								lcomplete = true
+								break
 							end
 						end
 						if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
@@ -807,8 +741,8 @@ function WoWPro:UpdateQuestTracker()
 		row.trackcheck = false
 		local track = ""
 		if WoWProDB.profile.track and ( action == "C" or questtext or lootitem) then
-			if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard then
-				local j = WoWPro.QuestLog[QID].index
+			if WoWPro.QuestLog[QID] and GetNumQuestLeaderBoards(WoWPro.QuestLog[QID]) > 0 then
+				local j = WoWPro.QuestLog[QID]
 				row.trackcheck = true
 				if not questtext and action == "C" then
 					for l=1,GetNumQuestLeaderBoards(j) do
