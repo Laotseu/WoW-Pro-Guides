@@ -198,7 +198,7 @@ T The Warp Rifts |QID|10278|M|62.0,81.5|N|To Ogath the Mad.|
 A Void Ridge |QID|10294|M|62.0,81.5|N|From Ogath the Mad.|
 C Bloody Vengeance |QID|10250|U|28651|N|Head to the semi-destroyed tower. Use the Unyielding Battle Horn and kill Urtrak when he spawns.|M|63.5,77.6|
 K Bleeding Hollow Peon |QID|10792|L|31347 4|N|Kill Peons until you loot 4 Bleeding Hollow Torches.|
-N Light it up |QID|10792|U|31347|L|31346 4|N|Find the Bleeding Hollow forge, it's directly to the left after you enter the north gate. Use the torch at the forge to light all four.|
+N Light it up |QID|10792|U|31347|L|31346 4|M|69.2,69.2|N|Find the Bleeding Hollow forge, it's directly to the left after you enter the north gate. Use the torch at the forge to light all four.|
 N Burn down the Eastern Hovel |QID|10792|QO|Eastern Hovel Burned: 1/1|U|31346|N|Head to the building next to the forge, and use the torch. |M|69.7,70.3|
 N Burn down the Stables |QID|10792|QO|Stable Burned: 1/1|U|31346|N|Head to the building where you killed the Worg Master, and use the torch. |M|68.2,73.4|
 N Burn down the Eastern Hovel |QID|10792|QO|Western Hovel Burned: 1/1|U|31346|N|Head to the Western Hovel, and use the torch. |M|67.1,75.8|
@@ -213,7 +213,7 @@ T Zeth'Gor Must Burn! |QID|10792|M|61.21,81.32|N|To Captain Darkhowl.|
 R Void Ridge |QID|10294|N|Head to the Void Ridge.|M|72,67;75.5,66.5|
 C Void Ridge |QID|10294|N|Kill the voidwalkers till you get 40 Soul Shards. Collapsing Voidwalkers channel a self destruct when under 10%, if you kill them they explode anyway, so run away once you see the emote. Vascillating Voidwalkers absorb the first type of spell you throw at them and gain resistance to that school for the duration of the fight, so throw something you don't normally use at them first.|M|75.5,66.5|
 H Thrallmar|QID|10238|U|6948|N|Hearth to Thrallmar.|
-T How to Serve Goblins |QID|10238|N|To Foreman Razelcraz.|M|51,31|
+T How to Serve Goblins |QID|10238|M|51.4,30.5|N|To Foreman Razelcraz.|
 A Shizz Work |QID|10629|M|51.5,30.5|N|From Foreman Razelcraz.|
 C Shizz Work |QID|10629|N|Use the Felhound Whistle. Then take your pet and kill the helboars to the west. Each time a boar dies, the Fel Puppy chows down and leaves some remains. Right click the leavings, and eventually one with contain the Shredder Key.|U|30803|M|50.0,29.5|
 T Shizz Work |QID|10629|M|51.5,30.5|N|To Foreman Razelcraz.|
@@ -228,7 +228,7 @@ C Cruel's Intentions |QID|10136|N|Kill Arazzius the Cruel.|
 C In Need of Felblood |QID|9366|N|Kill and loot Terrorfiends.|M|39.5,36.0|US|
 C The Agony and the Darkness |QID|10389|N|Kill Terrorfiends.|M|39.5,36.0|US|
 R Mag'har Post|QID|9410|U|23669|N|Go back to the Fel Orc Corpse and use the Wolf Totem and follow it.|M|33.6,43.6|
-T A Spirit Guide |QID|9410|M|32.0,28.0|N|To Gorkan Bloodfist.|
+T A Spirit Guide |QID|9410|M|32.0,28.0|N|If you can't speak to Gorkan Bloodfist, it's because you didn't follow the wolf.|
 
 A The Mag'har |QID|9406|M|32.0,28.0|N|From Gorkan Bloodfist.|
 R Thrallmar|QID|10389|N|Run back to Thrallmar.|M|55.0,36.0|
@@ -249,14 +249,14 @@ T Wanted: Blacktalon the Savage |QID|9466|N|To Ranger Captain Venn'ren.|
 
 A Report to Zurai |QID|10103|M|28.5,60.0|N|From Ranger Captain Venn'ren.|
 C Trueflight Arrows |QID|9381|N|Go between the points killing and looting Bonestripper Vultures until you have 8 tail feathers.|M|29,56;24.28,44.91|
-T Alerion's Secret |QID|10286|N|Go back and forth along the path between Thornfang Hill and Falcon Watch until you find Magister Aledis. Talk to him, then beat him down in health and turn the quest into him. Just to warn you, you will be put into PVP.|M|18.0,50.0|T|Magister Aledis|
+T Arelion's Secret |QID|10286|N|Go back and forth along the path between Thornfang Hill and Falcon Watch until you find Magister Aledis. Talk to him, then beat him down in health and turn the quest into him. Just to warn you, you will be put into PVP.|M|18.0,50.0|T|Magister Aledis|
 A The Mistress Revealed |QID|10287|M|18.0,50.0|N|From Magister Aledis.|
 T Missing Missive |QID|9373|M|15.7,52.0|N|To Thiah Redmane.|
 T Helping the Cenarion Post |QID|10442|M|15.7,52.0|N|To Thiah Redmane.|
 A Demonic Contamination |QID|9372|M|15.7,52.0|N|From Thiah Redmane.|
-A Keep Thornfang Hill Clear! |QID|10159|M|15.7,52.0|N|From Mahuram Stouthoof.|
 A Colossal Menace |QID|10132|N|From Tola'thion.|M|15.59,52.13|
-A The Cenarion Expedition |QID|9912|M|15.7,52.0|N|From Amythiel Mistwalker.|M|16.02,52.26|
+A Keep Thornfang Hill Clear! |QID|10159|M|15.7,52.0|N|From Mahuram Stouthoof.|
+A The Cenarion Expedition |QID|9912|M|16.0,52.2|N|From Amythiel Mistwalker.|M|16.02,52.26|
 C Colossal Menace |N|Kill Raging Colossui until you have all 5 kills. As they get low in health, they get smaller and Shardlings form.|QID|10132|M|15,45|
 l Crimson Crystal Shard|QID|10134|N|Make sure you have one of these items from the giants.|L|29476|M|15,45|
 
@@ -328,7 +328,7 @@ C Keep Thornfang Hill Clear! |QID|10159|N|Kill the Ravagers and Venomspitters ne
 R Cenarion Refuge |QID|9747|N|Follow the road west, you'll come to Cenarion Refuge.|Z|Zangarmarsh|M|80.5,64.0|
 
 A The Umbrafen Tribe |QID|9747|Z|Zangarmarsh|M|80.5,64.0|N|From Ikeyen.|
-A Plants of Zangarmarsh |QID|9802|Z|Zangarmarsh|M|80.5,64.0|N|From Lauranna Thar'well.|
+A Plants of Zangarmarsh |QID|9802|Z|Zangarmarsh|M|80.3,64.2|N|From Lauranna Thar'well.|
 A Leader of the Darkcrest |QID|9730|Z|Zangarmarsh|M|79.1,64.9|N|From the Wanted Poster.|
 A Leader of the Bloodscale |QID|9817|Z|Zangarmarsh|M|79.1,64.9|N|From the Wanted Poster.|
 A The Dying Balance |QID|9895|Z|Zangarmarsh|M|78.5,63.0|N|From Lethyn Moonfire.|
@@ -336,8 +336,7 @@ B Cenarion Spirits |QID|9472|L|29112|N|Available from the innkeeper.|Z|Zangarmar
 T The Cenarion Expedition |QID|9912|Z|Zangarmarsh|M|78.5,62.0|N|To Ysiel Windsinger.|
 A Disturbance at Umbrafen Lake |QID|9716|Z|Zangarmarsh|M|78.5,62.0|N|From Ysiel Windsinger.|
 A Warden Hamoot |QID|9778|Z|Zangarmarsh|M|78.4,62.1|N|From Ysiel Windsinger.|
-; The quest "Checking up" on the following line has wrong caps on 'Up' so it does not auto-accept since it is optional.|
-A Checking up|QID|29566|M|78.40,62.10|N|From Ysiel Windsinger. This quest leads into The Slave Pens, this is completely optional, there will be no follow up for it. Once you take it, feel free to join queue for The Slave Pens if you wish.|
+A Checking Up|QID|29566|M|78.40,62.10|N|From Ysiel Windsinger. This quest leads into The Slave Pens, this is completely optional, there will be no follow up for it. Once you take it, feel free to join queue for The Slave Pens if you wish.|
 T Warden Hamoot |QID|9778|Z|Zangarmarsh|M|79.1,65.2|N|To Warden Hamoot.|
 
 A A Warm Welcome |QID|9728|Z|Zangarmarsh|M|79.0,65.5|N|From Warden Hamoot.|

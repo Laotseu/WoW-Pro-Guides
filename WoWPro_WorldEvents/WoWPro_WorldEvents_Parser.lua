@@ -604,6 +604,27 @@ local function _Sticky(self, row_index)
 	WoWPro.MapPoint()
 end
 
+-- Checkbox Function --
+function WoWPro.WorldEvents:CheckFunction(row, button, down)
+	row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
+	if button == "LeftButton" and row.check:GetChecked() then
+		local steplist = WoWPro.WorldEvents:SkipStep(row.index)
+		row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
+		if steplist ~= "" then
+			WoWPro:SkipStepDialogCall(row.index, steplist)
+		end
+	elseif button == "RightButton" and row.check:GetChecked() then
+		WoWPro.CharDB.Guide[WoWPro.DB.char.currentguide].completion[row.index] = true
+		WoWPro:MapPoint()
+		if WoWPro.DB.profile.checksound then
+			PlaySoundFile(WoWPro.DB.profile.checksoundfile)
+		end
+	elseif not row.check:GetChecked() then
+		WoWPro.WorldEvents:UnSkipStep(row.index)
+	end
+	WoWPro:UpdateGuide()
+end
+
 -- Row Content Update --
 function WoWPro.WorldEvents:RowUpdate(offset)
 	local WoWProDB = WoWPro.DB
@@ -706,37 +727,13 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 			row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
 		end
 
-		-- Checkbox Function --
-		function WoWPro.WorldEvents:CheckFunction(row, button, down)
-			row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
-			if button == "LeftButton" and row.check:GetChecked() then
-				local steplist = WoWPro.WorldEvents:SkipStep(row.index)
-				row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
-				if steplist ~= "" then
-					WoWPro:SkipStepDialogCall(row.index, steplist)
-				end
-			elseif button == "RightButton" and row.check:GetChecked() then
-				completion[row.index] = true
-				WoWPro:MapPoint()
-				if WoWProDB.profile.checksound then
-					PlaySoundFile(WoWProDB.profile.checksoundfile)
-				end
-			elseif not row.check:GetChecked() then
-				WoWPro.WorldEvents:UnSkipStep(row.index)
-			end
-			WoWPro:UpdateGuide()
-		end
 		row.check:SetScript("OnClick", function(self, button, down)
 			WoWPro.WorldEvents:CheckFunction(row, button, down)
 		end)
 
 		-- Right-Click Drop-Down --
-		--local dropdown = {
-		--}
 		local dropdown = WoWPro.AcquireTable()
 		if step then
-			--tinsert(dropdown,
-			--	{text = step.." Options", isTitle = true}
 			local tbl = WoWPro.AcquireTable()
 			tbl.text 			= step.." Options"
 			tbl.notCheckable 	= true
@@ -745,9 +742,6 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 
 			local _, x, y, obj
 			if coord or x then
-				--tinsert(dropdown,
-				--	{text = "Map Coordinates", func = function()
-				--		WoWPro:MapPoint(row.num)
 				local tbl = WoWPro.AcquireTable()
 				tbl.text 			= "Map Coordinates"
 				tbl.notCheckable 	= true
@@ -766,11 +760,6 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 				tinsert(dropdown, tbl)
 			end
 			if WoWPro.QuestLog[QID] and GetNumPartyMembers() > 0 then
-				--tinsert(dropdown,
-				--	{text = "Share Quest", func = function()
-				--		QuestLogPushQuest(WoWPro.QuestLog[QID].index)
-				--	end}
-				--)
 				local tbl = WoWPro.AcquireTable()
 				tbl.text 			= "Share Quest"
 				tbl.notCheckable 	= true
@@ -779,14 +768,6 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 				tinsert(dropdown, tbl)
 			end
 			if sticky then
-				--tinsert(dropdown,
-				--	{text = "Un-Sticky", func = function()
-				--		WoWPro.sticky[row.index] = false
-				--		WoWPro.UpdateGuide()
-				--		WoWPro.UpdateGuide()
-				--		WoWPro.MapPoint()
-				--	end}
-				--)
 				local tbl = WoWPro.AcquireTable()
 				tbl.text 			= "Un-Sticky"
 				tbl.notCheckable 	= true
@@ -794,15 +775,6 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 				tbl.func				= _UnSticky
 				tinsert(dropdown, tbl)
 			else
-				--tinsert(dropdown,
-				--	{text = "Make Sticky", func = function()
-				--		WoWPro.sticky[row.index] = true
-				--		WoWPro.unsticky[row.index] = false
-				--		WoWPro.UpdateGuide()
-				--		WoWPro.UpdateGuide()
-				--		WoWPro.MapPoint()
-				--	end}
-				--)
 				local tbl = WoWPro.AcquireTable()
 				tbl.text 			= "Make Sticky"
 				tbl.notCheckable 	= true
