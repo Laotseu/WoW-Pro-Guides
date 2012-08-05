@@ -47,9 +47,9 @@ A Dust from the Drakes|QID|10487|M|52.3,57.6|N|From Gor'drek.|
 C The Bladespire Threat|QID|10503|N|Kill Bladespire Ogres and Raptors.|M|48,50|S|
 l Thunderlord Clan Artifact|QID|10503|L|30431|N|Kill Bladespire Ogres until this drops. Be sure to keep 3 Rapter Ribs, they will be used for a quest later.|M|41.6,54.0|
 A Thunderlord Clan Artifacts|QID|10524|U|30431|M|41.6,54.0|N|From the Thunderlord Clan Artifact.|
-N Thunderlord Clan Drum|QID|10524|QO|Thunderlord Clan Drum: 1/1|N|To the southwest, inside the hut.|M|40.17,58.34|
-N Thunderlord Clan Arrow|QID|10524|QO|Thunderlord Clan Arrow: 1/1|N|Directly north on top of the large stone gate.|M|41.50,52.69|
-C Thunderlord Clan Artifacts|QID|10524|N|Directly north inside the hut.|M|41.29,46.46|
+C Thunderlord Clan Drum|QID|10524|NC|QO|Thunderlord Clan Drum: 1/1|N|To the southwest, inside the hut.|M|40.17,58.34|
+C Thunderlord Clan Arrow|QID|10524|NC|QO|Thunderlord Clan Arrow: 1/1|N|Directly north on top of the large stone gate.|M|41.50,52.69|
+C Thunderlord Clan Artifacts|QID|10524|NC|N|Directly north inside the hut.|M|41.29,46.46|
 C The Bladespire Threat|QID|10503|N|Kill Bladespire Ogres and Raptors.|M|48,50|US|
 T The Bladespire Threat|QID|10503|N|To Tor'chunk Twoclaws.|M|51.90,58.49|
 
@@ -70,7 +70,6 @@ l T'chali's Hookah|QID|10542|L|30468|N|Loot the Hookah off the ground.|M|42.14,8
 C The Thunderspike|QID|10526|N|Enter the cave, at the end you will find the Thunderspike. Right-click it, this will spawn Gor Grimgut, kill him and loot The Thunderspike.|M|39.78,85.44|
 l Bloodmaul Brutebane Brew|QID|10542|L|29443 11|N|Gather brews untill you have 11. You can get them from Brewmasters or Bloodmaw Brew Kegs.|M|41.91,81.03|US|
 T They Stole Me Hookah and Me Brews!|QID|10542|N|To T'chali the Witch Doctor.|M|44.94,72.21|
-C The Bloodmaul Ogres|QID|10505|N|Kill ogres untill finished.|M|42.29,82.87|US|
 A Bladespire Kegger|QID|10545|M|45.0,72.3|N|From T'chali the Witch Doctor.|
 C Bladespire Kegger|QID|10545|U|30353|N|Go northwest to Bladespire Hold. Get close to an ogre, but without aggroing it then use the Bloodmaul Brutebane Keg.|M|44.28,52.9|
 T Bladespire Kegger|QID|10545|N|To T'chali the Witch Doctor.|M|44.97,72.20|
@@ -80,7 +79,8 @@ K Grimnok Battleborn|QID|10543|QO|Grimnok Battleborn slain: 1/1|N|On the top of 
 C Grimnok and Korgaah, I Am For You!|QID|10543|U|29443|N|Go to Bladespire Hold, he's on the second floor of the northernmost house, use the brew to lure him out. Kill any brutes first though or it will waste a brew.|M|43.28,46.25|
 T Grimnok and Korgaah, I Am For You!|QID|10543|N|To T'chali the Witch Doctor.|M|44.99,72.21|
 A A Curse Upon Both of Your Clans!|QID|10544|M|45.0,72.3|N|From T'chali the Witch Doctor.|
-N A Curse Upon Both of Your Clans!|QID|10544|QO|Bloodmaul Outpost building cursed: 2/2|U|30479|N|Go to Bloodmaul Outpost, clear the way to a building and use the Wicked Strong Fetish.|M|46.52,79.14|
+C A Curse Upon Both of Your Clans!|QID|10544|NC|QO|Bloodmaul Outpost building cursed: 2/2|U|30479|N|Go to Bloodmaul Outpost, clear the way to a building and use the Wicked Strong Fetish.|M|46.52,79.14|
+C The Bloodmaul Ogres|QID|10505|N|Kill ogres untill finished.|M|42.29,82.87|US|
 H Thunderlord Stronghold|QID|10487|U|6948|N|Hearth to Thunderlord Stronghold.|
 T Dust from the Drakes|QID|10487|N|To Gor'drek.|M|52.27,57.66|
 
