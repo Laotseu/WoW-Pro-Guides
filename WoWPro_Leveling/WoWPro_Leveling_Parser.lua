@@ -596,12 +596,12 @@ function WoWPro.Leveling:RowUpdate(offset)
 		local sticky = WoWPro.sticky[k]
 		local unsticky = WoWPro.unsticky[k]
 		local use = WoWPro.use[k]
-		local zone = WoWPro.zone[k]
-		local lootitem = WoWPro.lootitem[k]
-		local lootqty = WoWPro.lootqty[k]
-		local questtext = WoWPro.questtext[k]
-		local optional = WoWPro.optional[k]
-		local prereq = WoWPro.prereq[k]
+--		local zone = WoWPro.zone[k]
+--		local lootitem = WoWPro.lootitem[k]
+--		local lootqty = WoWPro.lootqty[k]
+--		local questtext = WoWPro.questtext[k]
+--		local optional = WoWPro.optional[k]
+--		local prereq = WoWPro.prereq[k]
 		local leadin = WoWPro.leadin[k]
 		local target = WoWPro.target[k]
 		if WoWPro.prof[k] then
@@ -659,13 +659,8 @@ function WoWPro.Leveling:RowUpdate(offset)
 		end)
 
 		-- Right-Click Drop-Down --
-		--local dropdown = {
-		--}
 		local dropdown = WoWPro.AcquireTable()
 		if step then
-			--table.insert(dropdown,
-			--	{text = step.." Options", notCheckable = true, isTitle = true}
-			--)
 			local tbl = WoWPro.AcquireTable()
 			tbl.text 			= step.." Options"
 			tbl.notCheckable 	= true
@@ -674,11 +669,6 @@ function WoWPro.Leveling:RowUpdate(offset)
 
 			local _, x, y, obj
 			if coord or x then
-				--table.insert(dropdown,
-				--	{text = "Map Coordinates", notCheckable = true, func = function()
-				--		WoWPro:MapPoint(row.num)
-				--	end}
-				--)
 				local tbl = WoWPro.AcquireTable()
 				tbl.text 			= "Map Coordinates"
 				tbl.notCheckable 	= true

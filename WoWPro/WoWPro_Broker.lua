@@ -3,61 +3,58 @@
 -------------------------------------------------------------------------------
 local _G = getfenv(0)
 
---local WoWProDB = _G.WoWProDB
---local WoWProCharDB = _G.WoWProCharDB
+local string 								= _G.string
+local assert 								= _G.assert
+local debugprofilestart 				= _G.debugprofilestart
+local debugprofilestop 					= _G.debugprofilestop
+local geterrorhandler 					= _G.geterrorhandler
+local math 									= _G.math
+local select 								= _G.select
+local tonumber 							= _G.tonumber
+local tostring 							= _G.tostring
+local tostringall							= _G.tostringall
+local time 									= _G.time
+local type 									= _G.type
 
-local string = _G.string
-local assert = _G.assert
-local math = _G.math
-local select = _G.select
-local tonumber = _G.tonumber
-local tostring = _G.tostring
-local type = _G.type
+local table 								= _G.table
+local ipairs 								= _G.ipairs
+local next 									= _G.next
+local pairs 								= _G.pairs
+local tinsert 								= _G.tinsert
+local tremove 								= _G.tremove
+local wipe 									= _G.wipe
 
-local table = _G.table
-local ipairs = _G.ipairs
-local pairs = _G.pairs
-local tinsert = _G.tinsert
-local tremove = _G.tremove
-local wipe = _G.wipe
+local UIParent 							= _G.UIParent
 
-local UIParent = _G.UIParent
+local CreateFrame 						= _G.CreateFrame
+local EasyMenu 							= _G.EasyMenu
+local GetFactionInfo 					= _G.GetFactionInfo
+local GetFactionInfoByID 				= _G.GetFactionInfoByID
+local GetItemCount 						= _G.GetItemCount
+local GetItemInfo 						= _G.GetItemInfo
+local GetNumFactions 					= _G.GetNumFactions
+local GetNumQuestLeaderBoards 		= _G.GetNumQuestLeaderBoards
+local GetNumQuestLogEntries 			= _G.GetNumQuestLogEntries
+local GetProfessionInfo 				= _G.GetProfessionInfo
+local GetProfessions 					= _G.GetProfessions
+local GetQuestID 							= _G.GetQuestID
+local GetQuestLogLeaderBoard 			= _G.GetQuestLogLeaderBoard
+local GetQuestLogSpecialItemInfo 	= _G.GetQuestLogSpecialItemInfo
+local GetQuestLogTitle 					= _G.GetQuestLogTitle
+local GetSubZoneText 					= _G.GetSubZoneText
+local GetZoneText 						= _G.GetZoneText
+local InCinematic 						= _G.InCinematic
+local InCombatLockdown 					= _G.InCombatLockdown
+local NumTaxiNodes						= _G.NumTaxiNodes
+local PlaySoundFile 						= _G.PlaySoundFile
+local QuestMapUpdateAllQuests 		= _G.QuestMapUpdateAllQuests
+local QuestPOIUpdateIcons 				= _G.QuestPOIUpdateIcons
+local TaxiNodeName						= _G.TaxiNodeName
+local UnitFactionGroup 					= _G.UnitFactionGroup
+local UnitLevel 							= _G.UnitLevel
+local WorldMapFrame_UpdateQuests 	= _G.WorldMapFrame_UpdateQuests
 
-local CreateFrame = _G.CreateFrame
-local EasyMenu = _G.EasyMenu
-local GetFactionInfo = _G.GetFactionInfo
-local GetFactionInfoByID = _G.GetFactionInfoByID
-local GetItemCount = _G.GetItemCount
-local GetItemInfo = _G.GetItemInfo
-local GetNumFactions = _G.GetNumFactions
-local GetNumQuestLeaderBoards = _G.GetNumQuestLeaderBoards
-local GetNumQuestLogEntries = _G.GetNumQuestLogEntries
-local GetProfessionInfo = _G.GetProfessionInfo
-local GetProfessions = _G.GetProfessions
-local GetQuestID = _G.GetQuestID
-local GetQuestLogLeaderBoard = _G.GetQuestLogLeaderBoard
-local GetQuestLogSpecialItemInfo = _G.GetQuestLogSpecialItemInfo
-local GetQuestLogTitle = _G.GetQuestLogTitle
-local GetSubZoneText = _G.GetSubZoneText
-local GetZoneText = _G.GetZoneText
-local InCinematic = _G.InCinematic
-local InCombatLockdown = _G.InCombatLockdown
-local PlaySoundFile = _G.PlaySoundFile
-local QuestMapUpdateAllQuests = _G.QuestMapUpdateAllQuests
-local QuestPOIUpdateIcons = _G.QuestPOIUpdateIcons
-local UnitFactionGroup = _G.UnitFactionGroup
-local UnitLevel = _G.UnitLevel
-local WorldMapFrame_UpdateQuests = _G.WorldMapFrame_UpdateQuests
-
-_G.WoWPro.quest_log_debug = false
-
-local err_params = {}
-local function err(msg, ...)
-	msg = tostring(msg)
-	wipe(err_params)
-	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
-	_G.geterrorhandler()(msg:format(_G.unpack(err_params)) .. " - " .. _G.time())
-end
+local function err(msg,...) geterrorhandler()(msg:format(tostringall(...)) .. " - " .. time()) end
 
 -----------------------------
 --      WoWPro_Broker      --
@@ -130,7 +127,7 @@ end
 
 -- Check for empty table
 local function IsTableEmpty(table)
-	return not _G.next(table)
+	return not next(table)
 end
 
 
@@ -215,35 +212,41 @@ function WoWPro:NextGuide(GID)
 	end
 end
 
-local function rowContentUpdate(module, offset)
-	local reload = WoWPro[module:GetName()]:RowUpdate(offset)
-	for i, row in pairs(WoWPro.rows) do
-		local modulename
-		-- Hyjack the click and menu functions for the Recorder if it's enabled --
-		if WoWPro.Recorder then
-			modulename = "Recorder"
-			WoWPro.Recorder:RowUpdate(offset)
-		else modulename = module:GetName() end
-		local menuFrame = CreateFrame("Frame", "WoWProDropMenu", UIParent, "UIDropDownMenuTemplate")
-		if WoWPro[modulename].RowLeftClick and WoWPro[modulename].RowDropdownMenu then
-			row:SetScript("OnClick", function(self, button, down)
-				if button == "LeftButton" then
-					WoWPro[modulename]:RowLeftClick(i)
-				elseif button == "RightButton" then
-					WoWPro.rows[i]:SetChecked(nil)
-					if WoWPro.Recorder then WoWPro[modulename]:RowLeftClick(i) end
-					EasyMenu(WoWPro[modulename].RowDropdownMenu[i], menuFrame, "cursor", 0 , 0, "MENU")
-				end
-			end)
-		end
-	end
-	return reload
-end
-
 WoWPro.eventcount = WoWPro.eventcount or {}
 WoWPro.eventcount["UpdateGuide"] = 0
 
 do -- closure
+
+local menuFrame = CreateFrame("Frame", "WoWProDropMenu", UIParent, "UIDropDownMenuTemplate")
+local function rowOnClick(self, button, down)
+	if button == "LeftButton" then
+		WoWPro[self.modulename]:RowLeftClick(self.i)
+	elseif button == "RightButton" then
+		WoWPro.rows[self.i]:SetChecked(nil)
+		if WoWPro.Recorder then WoWPro[self.modulename]:RowLeftClick(self.i) end
+		EasyMenu(WoWPro[self.modulename].RowDropdownMenu[self.i], menuFrame, "cursor", 0 , 0, "MENU")
+	end
+end
+
+local function rowContentUpdate(module, offset)
+	local reload = WoWPro[module:GetName()]:RowUpdate(offset)
+	if not reload then
+		for i, row in pairs(WoWPro.rows) do
+			local modulename
+			-- Hyjack the click and menu functions for the Recorder if it's enabled --
+			if WoWPro.Recorder then
+				modulename = "Recorder"
+				WoWPro.Recorder:RowUpdate(offset)
+			else modulename = module:GetName() end
+			if WoWPro[modulename].RowLeftClick and WoWPro[modulename].RowDropdownMenu then
+				row.i = i
+				row.modulename = modulename
+				row:SetScript("OnClick", rowOnClick)
+			end
+		end
+	end
+	return reload
+end
 
 -- Bucket to wait until out of combat or until the cinematic is over
 local THROTTLE_TIME = 0.1
@@ -267,8 +270,14 @@ local function UpdateGuide_bucket(offset)
 	f:Show()
 end
 
+-- For profilling
+local max_time, nb_error = 30, 0
+
 -- Guide Update --
 function WoWPro:UpdateGuide(offset)
+
+	debugprofilestart()
+
 ----WoWPro:Trace("Call WoWPro:UpdateGuide offset:"..tostring(offset))
 	if not WoWPro.GuideFrame:IsVisible() or not GuideLoaded then return end
 	WoWPro:dbp("Running: UpdateGuide()")
@@ -345,6 +354,16 @@ function WoWPro:UpdateGuide(offset)
 	end
 
 	WoWPro.need_UpdateGuide = nil
+
+	local time_taken = debugprofilestop()
+	if time_taken > max_time then
+		err("WoWPro:UpdateGuide(%s), time_taken = %s",offset,time_taken)
+		nb_error = nb_error + 1
+		if nb_error > 3 then
+			nb_error = 1
+			max_time = max_time + 10
+		end
+	end
 
 --WoWPro:Trace("End WoWPro:UpdateGuide")
 end
@@ -751,11 +770,13 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 		end
 	end
 
+
 	-- First Map Point --
 	if not skipUIUpdate and WoWPro.FirstMapCall then
 		WoWPro:MapPoint()
 		WoWPro.FirstMapCall = false
 	end
+
 
 end
 
