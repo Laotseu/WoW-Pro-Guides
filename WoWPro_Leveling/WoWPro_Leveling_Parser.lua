@@ -7,6 +7,7 @@ local _
 local assert							= _G.assert
 local floor								= _G.floor
 local format							= _G.format
+local geterrorhandler				= _G.geterrorhandler
 local gsub								= _G.gsub
 local max								= _G.max
 local setmetatable					= _G.setmetatable
@@ -15,8 +16,10 @@ local strreplace						= _G.strreplace
 local strsplit							= _G.strsplit
 local strtrim							= _G.strtrim
 local strupper							= _G.strupper
+local time								= _G.time
 local tonumber							= _G.tonumber
 local tostring							= _G.tostring
+local tostringall						= _G.tostringall
 local type								= _G.type
 
 local table								= _G.table
@@ -79,13 +82,7 @@ local WoWPro_Locale 					= _G.WoWPro_Locale
 
 local LibStub 							= _G.LibStub
 
-local err_params = {}
-local function err(msg, ...)
-	msg = tostring(msg)
-	wipe(err_params)
-	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
-	_G.geterrorhandler()(msg:format(_G.unpack(err_params)) .. " - " .. _G.time())
-end
+local function err(msg,...) geterrorhandler()(msg:format(tostringall(...)) .. " - " .. time()) end
 
 --_G.perr = true
 
@@ -94,6 +91,13 @@ end
 --------------------------------------
 
 local WoWPro = LibStub("AceAddon-3.0"):GetAddon("WoWPro")
+
+-- Mists of Panderia compatibility
+local GetNumSubgroupMembers, LE_PARTY_CATEGORY_HOME
+if WoWPro.MOP then
+	GetNumSubgroupMembers, LE_PARTY_CATEGORY_HOME = _G.GetNumSubgroupMembers, _G.LE_PARTY_CATEGORY_HOME
+	GetNumPartyMembers = function() return GetNumSubgroupMembers(LE_PARTY_CATEGORY_HOME) end
+end
 
 local L = WoWPro_Locale
 WoWPro.Leveling.actiontypes = {
