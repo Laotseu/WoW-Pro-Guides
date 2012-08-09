@@ -114,10 +114,10 @@ T The Softest Wings|QID|10618|N|To Silmara.|M|75.78,61.58|
 T Silkwing Cocoons|QID|10617|N|To Taerek.|M|75.81,61.46|
 l Infused Vekh'nir Crystals|QID|10566|L|30655 4|N|Kill Vekh'nir untill you get four Infused Vekh'nir Crystals.|M|76.98,72.83|
 U Dertrok's Wand Case|QID|10566|U|30650|N|Open Dertrok's Wand Case|L|30651|
-N Test the first wand|QID|10566|QO|Test the first wand: 1/1|U|30651|N|Use the wand on an ogre.|S|
-N Test the second wand|QID|10566|QO|Test the second wand: 1/1|U|30652|N|Use the wand on an ogre.|S|
-N Test the third wand|QID|10566|QO|Test the third wand: 1/1|U|30653|N|Use the wand on an ogre.|S|
 N Test the fourth wand|QID|10566|QO|Test the fourth wand: 1/1|U|30654|N|Use the wand on an ogre.|S|
+N Test the third wand|QID|10566|QO|Test the third wand: 1/1|U|30653|N|Use the wand on an ogre.|S|
+N Test the second wand|QID|10566|QO|Test the second wand: 1/1|U|30652|N|Use the wand on an ogre.|S|
+N Test the first wand|QID|10566|QO|Test the first wand: 1/1|U|30651|N|Use the wand on an ogre.|S|
 C Understanding the Mok'Nathal|QID|10846|N|Inside the cave, go straight ahead at the first fork and you should find Vekh at the end of this tunnel.|M|69.77,72.21|
 N Test the first wand|QID|10566|QO|Test the first wand: 1/1|U|30651|N|Use the wand on an ogre.|US|
 N Test the second wand|QID|10566|QO|Test the second wand: 1/1|U|30652|N|Use the wand on an ogre.|US|
@@ -140,7 +140,7 @@ T Since Time Forgotten...|QID|10843|N|To Leoroxx.|M|75.25,60.88|
 A Slay the Brood Mother|QID|10845|M|75.3,60.9|N|From Leoroxx.|
 T Mok'Nathal Treats|QID|10860|M|76.1,60.3|N|To Matron Verah.|
 C Spirit Calling|QID|10853|U|31663|S|N|Use the Spirit Calling Totems and kill as many Lesser Nether Drakes as you can while being close to your totem.|M|62.83,77.69|
-C Slay the Brood Mother|QID|10845|N|She sometimes takes a walk towards the west, but always comes back to take a nap here.|M|64.88,77.64|
+C Slay the Brood Mother|QID|10845|T|Dreadwing|N|She sometimes takes a walk towards the west, but always comes back to take a nap here.|M|64.88,77.64|
 C Spirit Calling|QID|10853|U|31663|US|N|Use the Spirit Calling Totems and kill as many Lesser Nether Drakes as you can while being close to your totem.|M|62.83,77.69|
 T Spirit Calling|QID|10853|N|To Spiritcaller Dohgar.|M|74.90,60.51|
 
@@ -178,9 +178,9 @@ T Baron Sablemane's Poison|QID|10749|N|To Rexxar.|M|51.83,58.31|
 A The Smallest Creatures|QID|10720|M|51.9,58.4|N|From Rexxar.|
 A Crush the Bloodmaul Camp|QID|10784|N|From Gor'drek.|M|51.87,58.41|
 U [Kodohide Drum]|QID|10720|U|31141|N|Go down the ravine again and ride north/northeast until you find a marmot's den.|M|56.43,29.41|
-N Keg of Ripe Moonshine|QID|10720|QO|Poison the keg of Ripe Moonshine: 1/1|N|Inside the Bloodmaul Camp stand next to the keg and use the marmot's Poison Keg ability.|M|55.34,28.23|
-N Green Spot Grog Keg|QID|10720|QO|Poison the keg of Green Spot Grog: 1/1|N|A little northwest of here you should find the Green Spot Grog Keg, behind a bonfire.|M|55.26,25.97|
-C The Smallest Creatures|QID|10720|N|Further north you should find the Fermented Seed Beer Keg.|M|55.96,23.08|
+C Keg of Ripe Moonshine|QID|10720|NC|U|31141|QO|Poison the keg of Ripe Moonshine: 1/1|NC|N|Inside the Bloodmaul Camp stand next to the keg and use the marmot's Poison Keg ability.|M|55.34,28.23|
+C Green Spot Grog Keg|QID|10720|NC|U|31141|QO|Poison the keg of Green Spot Grog: 1/1|N|A little northwest of here you should find the Green Spot Grog Keg, behind a bonfire.|M|55.26,25.97|
+C Fermented Seed Beer Keg|QID|10720|NC|U|31141|QO|Poison the keg of Fermented Seed Beer: 1/1|N|Further north you should find the Fermented Seed Beer Keg.|M|55.96,23.08|
 C Crush the Bloodmaul Camp|QID|10784|N|Kill 10 Bloodmaul Maulers and 5 Bloodmaul Warlocks.|M|56.2,26.7|
 T The Smallest Creatures|QID|10720|N|To Rexxar.|M|51.76,58.45|
 
