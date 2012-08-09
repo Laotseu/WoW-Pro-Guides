@@ -178,9 +178,10 @@ function WoWPro.Leveling:NextStep(k, skip)
 
 	-- Skipping quests with prerequisites if their prerequisite was skipped --
 	if WoWPro.prereq[k]
-	and not WoWPro.IsQuestFlaggedCompleted(k)
-	and not WoWProCharDB.Guide[GID].skipped[k]
-	and not WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
+		and not WoWPro.IsQuestFlaggedCompleted(WoWPro.QID[k])
+		and not WoWProCharDB.Guide[GID].skipped[k]
+		and not WoWProCharDB.skippedQIDs[WoWPro.QID[k]]
+	then
 		local numprereqs = select("#", strsplit(";", WoWPro.prereq[k]))
 		for j=1,numprereqs do
 			local jprereq = select(numprereqs-j+1, strsplit(";", WoWPro.prereq[k]))

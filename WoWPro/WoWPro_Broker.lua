@@ -514,6 +514,15 @@ function WoWPro:NextStep(k,i)
 			skip = true
 		end
 
+
+		-- Check for conditions that must be chekced only for the current step
+		-- Checking for |L| condition that are already met
+		if not skip and WoWPro.lootitem[k] and
+			GetItemCount(WoWPro.lootitem[k]) >= WoWPro.lootqty[k] then
+			WoWProCharDB.Guide[GID].completion[k] = true
+			skip = true
+		end
+
 		until true
 		if skip then k = k+1 end
 
@@ -725,6 +734,11 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 					WoWPro.CompleteStep(i, true)
 					something_completed = true
 
+				-- We already have the flightpoint
+				elseif action == "f" and WoWProCharDB.Taxi[WoWPro.step[i]] then
+					WoWPro.CompleteStep(i, true)
+					something_completed = true
+
 				-- Partial Completion --
 				elseif WoWPro.QuestLog[QID] and WoWPro.questtext[i] and quest_log_index and GetNumQuestLeaderBoards(quest_log_index) > 0 then
 					local numquesttext = select("#", (";"):split(WoWPro.questtext[i]))
@@ -764,9 +778,9 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 				end
 			end
 
+			WoWPro:UpdateGuide()
 			WoWPro:MapPoint()
 			WoWPro.FirstMapCall = nil
-			WoWPro:UpdateGuide()
 		end
 	end
 
@@ -955,8 +969,8 @@ end
 function WoWPro:RecordTaxiLocations(...)
 	local WoWProCharDB = WoWPro.CharDB
 
-	for i = 1, _G.NumTaxiNodes() do
-		local nomen = _G.TaxiNodeName(i)
+	for i = 1, NumTaxiNodes() do
+		local nomen = TaxiNodeName(i)
 		local location,zone = (","):split(nomen)
 		if not WoWProCharDB.Taxi[location] then
 			WoWProCharDB.Taxi[location] = true
