@@ -122,7 +122,7 @@ frame:SetScript("OnShow", function()
 			if step then row.check:Show() else row.check:Hide() end
 			if optional[index] then step = step.." (optional)" end
 			if WoWPro.prof[index] then
-				local prof, proflvl = string.split(";", WoWPro.prof[index]) 
+				local prof, proflvl = string.split(";", WoWPro.prof[index])
 				step = step.." ("..prof..")"
 			end
 			if WoWPro.rank[index] then
@@ -145,6 +145,7 @@ frame:SetScript("OnShow", function()
 				step = step.." (un-sticky)"
 			end
 
+			step = WoWProCharDB.DebugMode and ("%s. %s [QID:%s]"):format(index, step, WoWPro.QID[index] or "---") or step
 			row.step:SetText(step)
 
 			local action = WoWPro.action[index]

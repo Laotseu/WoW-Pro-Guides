@@ -1,6 +1,4 @@
 - Bug: with sticky steps that get checked completed even if the quest is not complete or the step was not done
-- Add an option to display the QID in the guide and watch frames
-- Add an option to display the step number in the guide and watch frames
 - Bug: mapping when there is a change of continent doesn't work the first time
-- Grey the check boxes for quest that are completed since they can't be uncompleted
+- Disable the check boxes for quest that are completed since they can't be uncompleted
 - Bring most of the Module_Parser code into the core addon because it's mostly the same thing for all the guides

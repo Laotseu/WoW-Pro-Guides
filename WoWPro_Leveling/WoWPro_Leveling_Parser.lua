@@ -180,7 +180,7 @@ function WoWPro.Leveling:NextStep(k, skip)
 		end
 	end
 
-	-- Skipping quests with prerequisites if their prerequisite was skipped --
+	-- Skipping quests with prerequisites if their prerequisite were skipped --
 	if WoWPro.prereq[k]
 		and not WoWPro.IsQuestFlaggedCompleted(WoWPro.QID[k])
 		and not WoWProCharDB.Guide[GID].skipped[k]
@@ -623,7 +623,8 @@ function WoWPro.Leveling:RowUpdate(offset)
 		-- Unstickying stickies --
 		if unsticky and i == WoWPro.ActiveStickyCount+1 then
 			for n,row in ipairs(WoWPro.rows) do
-				if step == row.step:GetText() and WoWPro.sticky[row.index] and not completion[row.index] then
+--				if step == row.step:GetText() and WoWPro.sticky[row.index] and not completion[row.index] then
+				if step == WoWPro.step[row.index] and WoWPro.sticky[row.index] and not completion[row.index] then
 					completion[row.index] = true
 					return true --reloading
 				end
@@ -636,7 +637,8 @@ function WoWPro.Leveling:RowUpdate(offset)
 		end
 
 		-- Getting the image and text for the step --
-		row.step:SetText(step)
+		local display_step = WoWProCharDB.DebugMode and ("%s. %s [QID:%s]"):format(k, step, QID or "---") or step
+		row.step:SetText(display_step)
 		if step then row.check:Show() else row.check:Hide() end
 		if completion[k] or WoWProCharDB.Guide[GID].skipped[k] or WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
 			row.check:SetChecked(true)

@@ -229,6 +229,7 @@ local function rowOnClick(self, button, down)
 end
 
 local function rowContentUpdate(module, offset)
+	-- Call the module
 	local reload = WoWPro[module:GetName()]:RowUpdate(offset)
 	if not reload then
 		for i, row in pairs(WoWPro.rows) do
@@ -303,6 +304,7 @@ function WoWPro:UpdateGuide(offset)
 
 	-- Finding the active step in the guide --
 	WoWPro.ActiveStep = WoWPro:NextStep(1)
+
 	if WoWPro.Recorder then WoWPro.ActiveStep = WoWPro.Recorder.SelectedStep or WoWPro.ActiveStep end
 	if not offset then WoWPro.Scrollbar:SetValue(WoWPro.ActiveStep) end
 	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount))
@@ -353,7 +355,7 @@ function WoWPro:UpdateGuide(offset)
 		end
 	end
 
-	WoWPro.need_UpdateGuide = nil
+	--WoWPro.need_UpdateGuide = nil
 
 	local time_taken = debugprofilestop()
 	if time_taken > max_time then
@@ -556,6 +558,7 @@ function WoWPro.CompleteStep(step, skipUIUpdate)
 
 	WoWProCharDB.Guide[GID].completion[step] = true
 
+	--[==[
 	local Delta = WoWPro:MapPointDelta()
 	if Delta and ((WoWPro.action[step] == "C" and Delta[1] > 10) or Delta[1] > 1.9) then
 	    local qid=-99
@@ -568,6 +571,7 @@ function WoWPro.CompleteStep(step, skipUIUpdate)
 	else
 	    WoWPro:dbp("Step Complete: "..WoWPro.step[step])
 	end
+	]==]
 
 	if skipUIUpdate then
 		-- No UI update is needed. We are probably in the process of loading a guide.

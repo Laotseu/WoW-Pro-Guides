@@ -117,7 +117,7 @@ frame:SetScript("OnShow", function()
 			if step then row.check:Show() else row.check:Hide() end
 			if optional[index] then step = step.." (optional)" end
 			if WoWPro.prof[index] then
-				local prof, _ = string.split(";", WoWPro.prof[index]) 
+				local prof, _ = string.split(";", WoWPro.prof[index])
 				step = step.." ("..prof..")"
 			end
 			if WoWPro.rank[index] then
@@ -138,6 +138,11 @@ frame:SetScript("OnShow", function()
 
 			if WoWPro.unsticky[index] then
 				step = step.." (un-sticky)"
+			end
+
+			if WoWProCharDB.DebugMode then
+				-- Add the step number and the QID to the text displayed
+				step = ("%s. %s [QID:%s]"):format(index, step, WoWPro.QID[index] or "---")
 			end
 
 			row.step:SetText(step)

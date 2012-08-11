@@ -92,6 +92,24 @@ function WoWPro:Export(target)
     tinsert(WoWPro.mixins,target)
 end
 
+--- MOP Function Compatability Section
+do
+	local _, _, _, interface = GetBuildInfo()
+	WoWPro.MOP = (interface >= 50000)
+end
+
+if WoWPro.MOP then
+	WoWPro.GetNumPartyMembers = GetNumGroupMembers
+	WoWPro.QueryQuestsCompleted = function () end
+	WoWPro.GetQuestsCompleted = function (x) return x; end
+	WoWPro.IsQuestFlaggedCompleted = _G.IsQuestFlaggedCompleted
+else
+	WoWPro.GetNumPartyMembers = GetNumPartyMembers
+	WoWPro.QueryQuestsCompleted = QueryQuestsCompleted -- After QUEST_QUERY_COMPLETE
+	WoWPro.GetQuestsCompleted = GetQuestsCompleted
+	WoWPro.IsQuestFlaggedCompleted = function(qid)  return WoWPro.CharDB.completedQIDs[qid] end
+end
+
 -- WoWPro keybindings name descriptions --
 _G["BINDING_NAME_CLICK WoWPro_FauxItemButton:LeftButton"] = "Use quest item"
 _G.BINDING_HEADER_BINDING_WOWPRO = "WoWPro Keybindings"
@@ -634,24 +652,6 @@ function WoWPro:LoadAllGuides()
         Count = Count + 1
 		WoWPro:Print("%d Done! %d A, %d N, %d H guides present", Count, aCount, nCount, hCount)
 	end
-end
-
---- MOP Function Compatability Section
-do
-	local _, _, _, interface = GetBuildInfo()
-	WoWPro.MOP = (interface >= 50000)
-end
-
-if WoWPro.MOP then
-	WoWPro.GetNumPartyMembers = GetNumGroupMembers
-	WoWPro.QueryQuestsCompleted = function () end
-	WoWPro.GetQuestsCompleted = function (x) return x; end
-	WoWPro.IsQuestFlaggedCompleted = _G.IsQuestFlaggedCompleted
-else
-	WoWPro.GetNumPartyMembers = GetNumPartyMembers
-	WoWPro.QueryQuestsCompleted = QueryQuestsCompleted -- After QUEST_QUERY_COMPLETE
-	WoWPro.GetQuestsCompleted = GetQuestsCompleted
-	WoWPro.IsQuestFlaggedCompleted = function(qid)  return WoWPro.CharDB.completedQIDs[qid] end
 end
 
 ---------

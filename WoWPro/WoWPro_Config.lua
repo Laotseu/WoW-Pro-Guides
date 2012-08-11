@@ -671,7 +671,7 @@ local function createBlizzOptions()
 				name = L["Auto Select"],
 				desc = L["Enables/Disables automatically selecting quests from NPCs"],
 				get = function(info) return WoWProCharDB.AutoSelect end,
-				set = function(info,val) 
+				set = function(info,val)
 						if WoWProCharDB.AutoSelect == true then
 						    WoWProCharDB.AutoSelect = false
 						else
@@ -685,7 +685,7 @@ local function createBlizzOptions()
 				name = L["Auto Accept"],
 				desc = L["Enables/Disables automatically accepting quests from NPCs"],
 				get = function(info) return WoWProCharDB.AutoAccept end,
-				set = function(info,val) 
+				set = function(info,val)
 						if WoWProCharDB.AutoAccept == true then
 						    WoWProCharDB.AutoAccept = false
 						else
@@ -699,13 +699,29 @@ local function createBlizzOptions()
 				name = L["Auto Turnin"],
 				desc = L["Enables/Disables automatically turning in quests to NPCs"],
 				get = function(info) return WoWProCharDB.AutoTurnin end,
-				set = function(info,val) 
+				set = function(info,val)
 						if WoWProCharDB.AutoTurnin == true then
 						    WoWProCharDB.AutoTurnin = false
 						else
 						    WoWProCharDB.AutoTurnin = true
 						end
 					end
+			},
+			debugMode = {
+				order = 8,
+				type = "toggle",
+				name = "Debug Mode",
+				desc = "Show the step number and the QID for the current guide.",
+				get = function(info) return WoWProCharDB.DebugMode end,
+				set = function(info,val)
+					if WoWProCharDB.DebugMode then
+						 WoWProCharDB.DebugMode = nil
+					else
+						 WoWProCharDB.DebugMode = true
+					end
+					WoWPro:UpdateGuide()
+					WoWPro.UpdateCurrentGuidePanel()
+				end
 			},
 			reset = {
 			    order = 8,
