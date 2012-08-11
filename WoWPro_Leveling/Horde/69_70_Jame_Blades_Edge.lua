@@ -201,7 +201,7 @@ A Inform Leoroxx!|QID|10865|M|74.9,60.5|N|From Spiritcaller Dohgar in Mok'Nathal
 T Inform Leoroxx!|QID|10865|N|To Leoroxx.|M|75.27,60.90|
 A There Can Be Only One Response|QID|10867|M|75.3,60.9|N|From Leoroxx.|
 h Evergrove|QID|10682|N|Set your hearth to Evergrove.|M|62.8,38.3|
-C A Time for Negotiation... |N|Find Overseer Nuaar, who wanders on the path southeast to northwest of Evergrove. Talk to him and complete the quest.|QID|10682|M|58.8,39.1|T|Overseer Nuaar|
+C A Time for Negotiation... |QID|10682|NC|M|58.8,39.1|T|Overseer Nuaar|N|Find Overseer Nuaar, who wanders on the path southeast to northwest of Evergrove. Talk to him and complete the quest.|
 T A Time for Negotiation... |QID|10682|M|62.0,39.5|N|To Tree Warden Chawn.|
 
 A ...and a Time for Action |QID|10713|M|62.0,39.5|N|From Tree Warden Chawn.|
@@ -235,9 +235,9 @@ C You're Fired! |N|Find the five obelisks (where the waypoints are), and activat
 C There Can Be Only One Response|QID|10867|N|Kill all Razaani agents in this area until Nexus-Prince Razaan comes through the stargate, then kill him. He spawns where the waypoint is. The box of souls appears above his corpse.|M|66.59,43.69|
 C Culling the Wild |N|Kill the mobs needed for this quest.|QID|10753|M|71.00,36.00|US|
 C Little Embers |N|Kill Imps until you finish this quest.|QID|10770|M|72.00,22.00|S|
-C Southern Volcanic Soil|N|Click the soil.|QID|10771|M|71.65,22.37|QO|Southern Volcanic Soil: 1/1|
-C Central Volcanic Soil|N|Click the soil.|QID|10771|M|71.6,20.32|QO|Central Volcanic Soil: 1/1|
-C From the Ashes |N|Click the soil to complete this quest.|QID|10771|M|71.59,18.51|
+C Southern Volcanic Soil|N|Click the soil.|QID|10771|NC|M|71.65,22.37|QO|Southern Volcanic Soil: 1/1|
+C Central Volcanic Soil|N|Click the soil.|QID|10771|NC|M|71.6,20.32|QO|Central Volcanic Soil: 1/1|
+C Northern Volcanic Soil|N|Click the soil to complete this quest.|QID|10771|NC|M|71.59,18.51|
 C Little Embers |N|Kill Imps until you finish this quest.|QID|10770|M|72.00,22.00|US|
 T Culling the Wild |QID|10753|M|62.6,38.2|N|To Faradrella.|
 T Little Embers |QID|10770|M|61.2,38.4|N|To Mosswood the Ancient.|
@@ -251,10 +251,10 @@ C Longtail is the Lynchpin |N|Go in the tunnel and kill Draaca Longtail.|QID|108
 T Longtail is the Lynchpin |QID|10893|M|49.9,35.9|N|To Watcher Moonshade.|
 A Meeting at the Blackwing Coven |QID|10722|M|49.9,35.9|N|From Watcher Moonshade.|
 l Orb of the Grishna |QID|10825|N|Kill Grishna mobs until you get the Orb of the Grishna.|L|31489 1|S|
-C Receive the Second Prophecy|N|Go through the tunnel and go to this location on the tree house. Kill Grishna mobs and you will get a buff that allows you to see prophecies on the minimap.|QID|10607|M|42.43,21.67|QO|Receive the Second Prophecy: 1/1|
-C Receive the Third Prophecy|N|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Third Prophecy.|QID|10607|M|40.68,18.62|QO|Receive the Third Prophecy: 1/1|
-C Receive the First Prophecy|N|Kill Grishna mobs if you need to get the buff again. Go to this spot, up in the tree house, for the First Prophecy.|QID|10607|M|39.06,17.25|QO|Receive the First Prophecy: 1/1|
-C Whispers of the Raven God |N|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Fourth Prophecy.|QID|10607|M|40.18,22.99|
+C Receive the Second Prophecy|QID|10607|NC|M|42.43,21.67|QO|Receive the Second Prophecy: 1/1|N|Go through the tunnel and go to this location on the tree house. Kill Grishna mobs and you will get a buff that allows you to see prophecies on the minimap.|
+C Receive the Third Prophecy|N|QID|10607|NC|M|40.68,18.62|QO|Receive the Third Prophecy: 1/1|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Third Prophecy.|
+C Receive the First Prophecy|N|QID|10607|NC|M|39.06,17.25|QO|Receive the First Prophecy: 1/1|Kill Grishna mobs if you need to get the buff again. Go to this spot, up in the tree house, for the First Prophecy.|
+C Whispers of the Raven God |N|QID|10607|NC|M|40.18,22.99|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Fourth Prophecy.|
 l Orb of the Grishna |QID|10825|N|Kill Grishna mobs until you get the Orb of the Grishna.|L|31489 1|US|M|40.18,22.99|
 
 A The Truth Unorbed |N|Right-click the orb to start this quest.|QID|10825|M|40.2,23.0|U|31489|
@@ -274,7 +274,7 @@ r Sell junk, repair, restock |QID|10829|N|Sell junk, repair, restock.|M|61.61,38
 T Treebole Must Know |QID|10829|M|36.9,22.5|N|To Treebole.|
 
 A Exorcising the Trees |QID|10830|M|36.9,22.5|N|From Treebole.|
-l Grishnath Orb |QID|10830|N|Go to this area and get 5 Grishnath Orbs.|L|31495 5|M|40.00,17.00|
+l Grishnath Orb |QID|10830|N|Go to this area and get 5 Grishnath Orbs. They are on top of the ramps usually around the huts.|L|31495 5|M|40.00,17.00|
 l Dire Pinfeather |QID|10830|N|Kill Dire Ravens until you get five Dire Pinfeathers.|L|31517 5|M|37.00,29.00|
 U Exorcism Feather |QID|10830|N|Right-click the Grishnath Orb to create an Exorcism Feather.|L|31518 5|U|31495|M|37.00,29.00|
 C Exorcising the Trees |N|Use exorcism feathers on Raven's Wood Leafbeards, then kill the spirit that spawns.|QID|10830|M|37.00,29.00|U|31518|
@@ -302,14 +302,14 @@ A Harvesting the Fel Ammunition|QID|10904|M|64.64,69.96|N|From Evergrove Druid.|
 C Harvesting the Fel Ammunition|QID|10904|M|64.19,71.74|N|Kill Deathforge Smiths, Deathforge Over-Smiths and Death's Mights until you get 5 Fel Cannonballs.|
 T Harvesting the Fel Ammunition|QID|10904|U|31763|M|64.46,72.22|N|Find a safe spot, use the signal then turn the quest into the Evergrove Druid.|
 A Fire At Will!|QID|10911|M|64.46,72.22|N|From Evergrove Druid.|
-N Southern Warp-Gate|QID|10911|U|31807|QO|South Warp-Gate Destroyed: 1/1|M|64.75,68.37|N|Go next to the Death's Door Fel Cannon and use the Naturalized Ammunition. You will have a pet bar, use the "Artillery on the Warp-Gate" ability to attack the Warp-Gate, and then protect it. You need to use "Artillery on the Warp-Gate" a total of 7 times to destroy the Warp-Gate.|
+C Southern Warp-Gate|QID|10911|NC|U|31807|QO|South Warp-Gate Destroyed: 1/1|M|64.75,68.37|N|Go next to the Death's Door Fel Cannon and use the Naturalized Ammunition. You will have a pet bar, use the "Artillery on the Warp-Gate" ability to attack the Warp-Gate, and then protect it. You need to use "Artillery on the Warp-Gate" a total of 7 times to destroy the Warp-Gate.|
 C Fire At Will!|QID|10911|U|31807|M|62.01,60.53|N|Go next to the Death's Door Fel Cannon and use the Naturalized Ammunition. You will have a pet bar, use the "Artillery on the Warp-Gate" ability to attack the Warp-Gate, and then protect it. You need to use "Artillery on the Warp-Gate" a total of 7 times to destroy the Warp-Gate.|
 T Fire At Will!|QID|10911|U|31763|M|65.19,69.93|N|Find a safe spot, use the signal then turn the quest into the Evergrove Druid.|
 A The Hound-Master|QID|10912|M|65.16,69.93|N|From Evergrove Druid.|
 C The Hound-Master|QID|10912|U|31809|M|63.57,59.18|N|Head over to Baelmon, use the Evergrove Wand and then kill him.|
 T The Hound-Master|QID|10912|M|62.53,38.77|N|Find Wildlord Antelarion wandering around the moonwell.|
 
-N Note:|QID|10989|M|55.44,44.92|N|The following quests are for zone quest achievement completion, you must be level 70.|
+N Note:|QID|10989|M|55.44,44.92|LVL|70|N|The following quests are for zone quest achievement completion, you must be level 70.|
 
 A Mog'dorg the Wizened|QID|10989|M|55.43,45.32|N|From Chort.|
 T Mog'dorg the Wizened|QID|10989|M|55.44,44.92|N|To Mog'dorg the Wizened, up the tower.|
