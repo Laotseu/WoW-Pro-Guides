@@ -32,6 +32,7 @@
 
 WoWPro.Leveling:RegisterGuide('CraSha7070H', 'Shadowmoon Valley', 'Crackerhead22', '69', '70', 'JamBor7173', 'Horde', function()
 return [[
+N Aldor or Scryers |QID|10211|N|This guide assume that you are friendly with either Aldor or Scryers. If you haven't done the Terokkar forest guide, you may need to go to Shattrath and do the necessary quests to choose one of the factions.|
 
 A Kroghan's Report|QID|11048|M|55.37,37.47|Z|Nagrand|N|From Captain Kroghan in Nagrand.|
 F Stonebreaker Hold|QID|11048|M|57.19,35.28|Z|Nagrand|N|Fly to Stonebreaker Hold.|
@@ -68,14 +69,14 @@ A Spectrecles|QID|10625|M|29.91,27.75|N|From Chief Apothecary Hildagard.|
 C Spectrecles|QID|10625|U|30719|M|30.34,30.64|N|Put on the Spectrecles, then run around Shadowmoon Village and kill 12 Shadowmoon Zealots.|
 T Spectrecles|QID|10625|M|29.92,27.72|N|To Chief Apothecary Hildagard.|
 A Teron Gorefiend - Lore and Legend|QID|10633|M|29.92,27.72|N|From Chief Apothecary Hildagard.|
-l Fel Reaver Armor Plate|QID|10597|L|30631|M|22.18,35.53|N|Loot the Fel Reaver Armor Plate off the ground. It looks like the head of a Fel Reaver.|
-K Overseer Ripsaw|QID|10623|L|30759 |T|Overseer Ripsaw|N|Find and kill Overseer Ripsaw, then loot the item he drops.|
-A Illidari-Bane Shard|QID|10623|U|30759|M|22.49,35.97|N|Accept the quest from the shard.|
+C Fel Reaver Armor Plate|QID|10597|NC|QO|Fel Reaver Armor Plate: 1/1|M|22.18,35.53|N|Loot the Fel Reaver Armor Plate off the ground. It looks like the head of a Fel Reaver.|
+K Overseer Ripsaw|QID|10623|L|30579|T|Overseer Ripsaw|N|Find and kill Overseer Ripsaw, then loot the item he drops.|
+A Illidari-Bane Shard|QID|10623|U|30579|M|22.49,35.97|N|Accept the quest from the shard.|
 
-C Setting Up the Bomb|QID|10597|M|26.29,41.26|N|Head down into the water and loot the Fel Reaver Power Core from the bottom of the pond.|
+C Fel Reaver Power Core|QID|10597|NC|M|26.29,41.26|N|Head down into the water and loot the Fel Reaver Power Core from the bottom of the pond.|
 T Find the Deserter|QID|10761|M|35.19,40.35|N|To Parshah. He wanders up and down the path where the waypoint is.|
 A Asghar's Totem|QID|10777|M|35.19,40.35|N|From Parshah. He wanders up and down the path where the waypoint is.|
-C Asghar's Totem|QID|10777|M|39.94,29.36|N|Kill and loot Ashgar to get the Sketh'lon War Totem.|
+K Asghar's Totem|QID|10777|T|Asghar|M|39.94,29.36|N|Kill and loot Asghar to get the Sketh'lon War Totem.|
 T Setting Up the Bomb|QID|10597|M|30.45,32.44|N|To Blood Guard Gulmok.|
 A Blast the Infernals!|QID|10598|M|30.43,32.56|N|From Blood Guard Gulmok.|
 T Illidari-Bane Shard|QID|10623|M|29.8,31.2|N|To Grokom Deatheye.|
@@ -85,8 +86,7 @@ T Asghar's Totem|QID|10777|M|35.24,41.27|N|To Parshah. He wanders up and down th
 A The Rod of Lianthe|QID|10778|M|35.24,41.27|N|From Parshah. He wanders up and down the path where the waypoint is.|
 T The Hand of Gul'dan|QID|10681|M|42.22,45.03|N|To Earthmender Torlok.|
 A Enraged Spirits of Fire and Earth|QID|10458|M|42.22,45.03|N|From Earthmender Torlok.|
-K Enraged Earth Spirit|QID|10458|U|30094|QO|Earthen Soul Captured: 8/8|M|42.73,47.86;46.59,52.15|N|Use the totem and kill Enraged Earth Spirits between these points.|
-C Enraged Spirits of Fire and Earth|QID|10458|U|30094|M|49.97,50.20|N|Use the totem and kill the fire spirits. Warning: Yes, the green stuff is lava and yes, it  will hurt you.|
+C Enraged Spirits of Fire and Earth|QID|10458|U|30094|M|49.97,50.20|N|Use the totem and kill the earth and fire spirits. Warning: Yes, the green stuff is lava and yes, it  will hurt you.|
 T Enraged Spirits of Fire and Earth|QID|10458|M|42.18,45.05|N|To Earthmender Torlok.|
 A Enraged Spirits of Water|QID|10480|M|42.18,45.05|N|From Earthmender Torlok.|
 C A Grunt's Work...|QID|10702|US|M|38.26,43.69|N|Finish getting the kills needed.|
@@ -100,8 +100,8 @@ C Minions of the Shadow Council|QID|10600|M|40.55,37.7|N|Kill the mobs needed.|
 T Minions of the Shadow Council|QID|10600|M|38.59,38.18|N|To Scout Zagran.|
 A The Fate of Kagrosh|QID|10601|M|38.59,38.18|N|From Scout Zagran.|
 A The Summoning Chamber|QID|10602|M|38.59,38.18|N|From Scout Zagran.|
-l The Summoning Chamber|QID|10602|L|30672|M|40.16,38.18;37.44,41.64|N|Head inside and kill, then loot Deathforge Smiths and Tinkerers until and Elemental Displacer.|
-C The Fate of Kagrosh|QID|10601|M|35.19,40.16|N|Head further inside, the loot the pack off Kargrosh's corpse.|
+C The Summoning Chamber|QID|10602|QO|Elemental Displacer: 1/1|M|40.16,38.18;37.44,41.64|N|Head inside and kill, then loot Deathforge Smiths and Tinkerers until and Elemental Displacer.|
+C The Fate of Kagrosh|QID|10601|NC|M|35.19,40.16|N|Head further inside, the loot the pack off Kargrosh's corpse.|
 C The Summoning Chamber|QID|10602|U|30672|M|37.81,38.79|N|As you head back out, drop off the side of the North side of the bridge. Use the Elemental Displacer.|
 T The Fate of Kagrosh|QID|10601|M|38.62,38.18|N|To Scout Zagran.|
 T The Summoning Chamber|QID|10602|M|38.62,38.18|N|To Scout Zagran.|
@@ -110,15 +110,15 @@ A Bring Down the Warbringer!|QID|10603|M|38.62,38.33|N|From Scout Zagran.|
 C Bring Down the Warbringer!|QID|10603|U|30688|M|38.90,46.75|N|Head inside to where the Deathforge Tinkerers and Smiths. Click on the Heavy Iron Portcullis, head back to the head, kill and loot Warbringer Razuun.|
 l Lianthe's Key|QID|10778|L|31316|M|45.53,67.64|N|Kill Blood Elves until the key drops.|
 C The Rod of Lianthe|QID|10778|M|47.49,71.65|N|Click on the chest to get the rod.|
-C The Path of Conquest|QID|10750|NC|U|31108|M|53.07,59.46|N|Fly over top of The Path of Conquest to get the quest completion message.|
-T The Path of Conquest|QID|10750|M|51.00,58.77|N|To Kor'kron Wind Rider.|
+C The Path of Conquest|QID|10750|NC|M|53.07,59.46|N|Fly over top of The Path of Conquest to get the quest completion message.|
+T The Path of Conquest|QID|10750|U|31108|M|51.00,58.77|N|To Kor'kron Wind Rider.|
 A Breaching the Path|QID|10751|M|51.00,58.87|N|From Kor'kron Wind Rider. This will be done near the end of the guide.|
 T Teron Gorefiend - Lore and Legend|QID|10633|M|58.23,70.75|N|To Ancient Shadowmoon Spirit.|
 A Divination: Gorefiend's Cloak|QID|10635|M|58.23,70.75|N|From Ancient Shadowmoon Spirit.|
 A Divination: Gorefiend's Truncheon|QID|10636|M|58.23,70.75|N|From Ancient Shadowmoon Spirit.|
 A Divination: Gorefiend's Armor|QID|10634|M|58.23,70.75|N|From Ancient Shadowmoon Spirit.|
 
-; f Sanctum of the Stars|QID|10687|M|56.32,57.81|N|At Alieshor.|REP|Scryers;934|
+f Sanctum of the Stars|QID|10687|M|56.32,57.81|N|At Alieshor.|REP|Scryers;934|
 A Tablets of Baa'ri|QID|10683|M|56.25,59.59|N|From Arcanist Thelis|REP|Scryers;934|
 A The Ashtongue Broken|QID|10807|M|54.73,58.19|N|From Varen the Reclaimer|REP|Scryers;934|
 A Karabor Training Grounds|QID|10687|M|55.74,58.18|N|From Larissa Sunstrike.|REP|Scryers;934|
