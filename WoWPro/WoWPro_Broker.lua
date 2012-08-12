@@ -333,13 +333,14 @@ function WoWPro:UpdateGuide(offset)
 	local p = 0
 	for j = 1,WoWPro.stepcount do
 		if ( WoWProCharDB.Guide[GID].completion[j] or WoWProCharDB.Guide[GID].skipped[j] )
-		and not WoWPro.sticky[j]
+--		and not WoWPro.sticky[j]
 		and not WoWPro.optional[j] then
 			p = p + 1
 		end
 	end
 	WoWProCharDB.Guide[GID].progress = p
-	WoWProCharDB.Guide[GID].total = WoWPro.stepcount - WoWPro.stickycount - WoWPro.optionalcount
+--	WoWProCharDB.Guide[GID].total = WoWPro.stepcount - WoWPro.stickycount - WoWPro.optionalcount
+	WoWProCharDB.Guide[GID].total = WoWPro.stepcount - WoWPro.optionalcount
 
 	-- TODO: make next lines module specific
 	WoWPro.TitleText:SetText(WoWPro.Guides[GID].zone.."   ("..WoWProCharDB.Guide[GID].progress.."/"..WoWProCharDB.Guide[GID].total..")")
@@ -724,7 +725,7 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 				local quest_log_index = WoWPro.QuestLog[QID]
 
 				-- Quest is flaged as completed in the completeQIDs table
-				if WoWPro.IsQuestFlaggedCompleted(QID) then
+				if QID and WoWPro.IsQuestFlaggedCompleted(QID) then
 					WoWPro.CompleteStep(i, true)
 					something_completed = true
 

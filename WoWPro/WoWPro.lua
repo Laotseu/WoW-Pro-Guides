@@ -58,13 +58,7 @@ local LibStub 							= _G.LibStub
 local TomTom 							= _G.TomTom
 local Swatter 							= _G.Swatter
 
-local err_params = {}
-local function err(msg, ...)
-	msg = tostring(msg)
-	wipe(err_params)
-	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
-	_G.geterrorhandler()(msg:format(_G.unpack(err_params)) .. " - " .. _G.time())
-end
+local function err(msg,...) geterrorhandler()(msg:format(tostringall(...)) .. " - " .. time()) end
 
 --------------------------
 --      WoWPro.lua      --

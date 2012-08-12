@@ -637,7 +637,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 		end
 
 		-- Getting the image and text for the step --
-		local display_step = WoWProCharDB.DebugMode and ("%s. %s [QID:%s]"):format(k, step, QID or "---") or step
+		local display_step = WoWProCharDB.DebugMode and ("%s. %s [QID:%s]"):format(k, step or "nil", QID or "---") or step
 		row.step:SetText(display_step)
 		if step then row.check:Show() else row.check:Hide() end
 		if completion[k] or WoWProCharDB.Guide[GID].skipped[k] or WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then

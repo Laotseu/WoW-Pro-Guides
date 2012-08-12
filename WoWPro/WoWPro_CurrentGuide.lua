@@ -14,6 +14,8 @@ local InterfaceOptionsFramePanelContainer = _G.InterfaceOptionsFramePanelContain
 
 local CreateFrame = _G.CreateFrame
 
+local function err(msg,...) geterrorhandler()(msg:format(tostringall(...)) .. " - " .. time()) end
+
 -----------------------------------
 --      WoWPro_CurrentGuide      --
 -----------------------------------
@@ -145,7 +147,8 @@ frame:SetScript("OnShow", function()
 				step = step.." (un-sticky)"
 			end
 
-			step = WoWProCharDB.DebugMode and ("%s. %s [QID:%s]"):format(index, step, WoWPro.QID[index] or "---") or step
+			--if not step then err("Nil step for index %s", index) end
+			step = WoWProCharDB.DebugMode and ("%s. %s [QID:%s]"):format(index, step or "nil", WoWPro.QID[index] or "---") or step
 			row.step:SetText(step)
 
 			local action = WoWPro.action[index]
