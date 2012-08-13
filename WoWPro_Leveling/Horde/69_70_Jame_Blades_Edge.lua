@@ -114,15 +114,15 @@ T The Softest Wings|QID|10618|N|To Silmara.|M|75.78,61.58|
 T Silkwing Cocoons|QID|10617|N|To Taerek.|M|75.81,61.46|
 l Infused Vekh'nir Crystals|QID|10566|L|30655 4|N|Kill Vekh'nir untill you get four Infused Vekh'nir Crystals.|M|76.98,72.83|
 U Dertrok's Wand Case|QID|10566|U|30650|N|Open Dertrok's Wand Case|L|30651|
-N Test the fourth wand|QID|10566|QO|Test the fourth wand: 1/1|U|30654|N|Use the wand on an ogre.|S|
-N Test the third wand|QID|10566|QO|Test the third wand: 1/1|U|30653|N|Use the wand on an ogre.|S|
-N Test the second wand|QID|10566|QO|Test the second wand: 1/1|U|30652|N|Use the wand on an ogre.|S|
-N Test the first wand|QID|10566|QO|Test the first wand: 1/1|U|30651|N|Use the wand on an ogre.|S|
+C Test the fourth wand|QID|10566|NC|QO|Test the fourth wand: 1/1|U|30654|N|Use the wand on an ogre.|S|
+C Test the third wand|QID|10566|NC|QO|Test the third wand: 1/1|U|30653|N|Use the wand on an ogre.|S|
+C Test the second wand|QID|10566|NC|QO|Test the second wand: 1/1|U|30652|N|Use the wand on an ogre.|S|
+C Test the first wand|QID|10566|NC|QO|Test the first wand: 1/1|U|30651|N|Use the wand on an ogre.|S|
 C Understanding the Mok'Nathal|QID|10846|N|Inside the cave, go straight ahead at the first fork and you should find Vekh at the end of this tunnel.|M|69.77,72.21|
-N Test the first wand|QID|10566|QO|Test the first wand: 1/1|U|30651|N|Use the wand on an ogre.|US|
-N Test the second wand|QID|10566|QO|Test the second wand: 1/1|U|30652|N|Use the wand on an ogre.|US|
-N Test the third wand|QID|10566|QO|Test the third wand: 1/1|U|30653|N|Use the wand on an ogre.|US|
-N Test the fourth wand|QID|10566|QO|Test the fourth wand: 1/1|U|30654|N|Use the wand on an ogre.|US|
+C Test the first wand|QID|10566|NC|QO|Test the first wand: 1/1|U|30651|N|Use the wand on an ogre.|US|
+C Test the second wand|QID|10566|NC|QO|Test the second wand: 1/1|U|30652|N|Use the wand on an ogre.|US|
+C Test the third wand|QID|10566|NC|QO|Test the third wand: 1/1|U|30653|N|Use the wand on an ogre.|US|
+C Test the fourth wand|QID|10566|NC|QO|Test the fourth wand: 1/1|U|30654|N|Use the wand on an ogre.|US|
 T Trial and Error|QID|10566|N|To Dertrok.|M|75.17,62.11|
 
 A Ruuan Weald|QID|10615|M|75.1,62.1|N|From Dertrok.|
@@ -252,9 +252,9 @@ T Longtail is the Lynchpin |QID|10893|M|49.9,35.9|N|To Watcher Moonshade.|
 A Meeting at the Blackwing Coven |QID|10722|M|49.9,35.9|N|From Watcher Moonshade.|
 l Orb of the Grishna |QID|10825|N|Kill Grishna mobs until you get the Orb of the Grishna.|L|31489 1|S|
 C Receive the Second Prophecy|QID|10607|NC|M|42.43,21.67|QO|Receive the Second Prophecy: 1/1|N|Go through the tunnel and go to this location on the tree house. Kill Grishna mobs and you will get a buff that allows you to see prophecies on the minimap.|
-C Receive the Third Prophecy|N|QID|10607|NC|M|40.68,18.62|QO|Receive the Third Prophecy: 1/1|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Third Prophecy.|
-C Receive the First Prophecy|N|QID|10607|NC|M|39.06,17.25|QO|Receive the First Prophecy: 1/1|Kill Grishna mobs if you need to get the buff again. Go to this spot, up in the tree house, for the First Prophecy.|
-C Whispers of the Raven God |N|QID|10607|NC|M|40.18,22.99|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Fourth Prophecy.|
+C Receive the Third Prophecy|QID|10607|NC|M|40.68,18.62|QO|Receive the Third Prophecy: 1/1|N|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Third Prophecy.|
+C Receive the First Prophecy|QID|10607|NC|M|39.06,17.25|QO|Receive the First Prophecy: 1/1|N|Kill Grishna mobs if you need to get the buff again. Go to this spot, up in the tree house, for the First Prophecy.|
+C Receive the Forth Prophecy|QID|10607|NC|M|40.18,22.99|N|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Fourth Prophecy.|
 l Orb of the Grishna |QID|10825|N|Kill Grishna mobs until you get the Orb of the Grishna.|L|31489 1|US|M|40.18,22.99|
 
 A The Truth Unorbed |N|Right-click the orb to start this quest.|QID|10825|M|40.2,23.0|U|31489|
