@@ -108,8 +108,8 @@ T The Summoning Chamber|QID|10602|M|38.62,38.18|N|To Scout Zagran.|
 
 A Bring Down the Warbringer!|QID|10603|M|38.62,38.33|N|From Scout Zagran.|
 C Bring Down the Warbringer!|QID|10603|U|30688|M|38.90,46.75|N|Head inside to where the Deathforge Tinkerers and Smiths. Click on the Heavy Iron Portcullis, head back to the head, kill and loot Warbringer Razuun.|
-l Lianthe's Key|QID|10778|L|31316|M|45.53,67.64|N|Kill Blood Elves until the key drops.|
-C The Rod of Lianthe|QID|10778|M|47.49,71.65|N|Click on the chest to get the rod.|
+C Lianthe's Key|QID|10778|NC|QO|Lianthe's Key: 1/1|M|45.53,67.64|N|Kill Blood Elves until the key drops.|
+C The Rod of Lianthe|QID|10778|M|47.6,71.0|N|Click on the chest to get the rod.|
 C The Path of Conquest|QID|10750|NC|M|53.07,59.46|N|Fly over top of The Path of Conquest to get the quest completion message.|
 T The Path of Conquest|QID|10750|U|31108|M|51.00,58.77|N|To Kor'kron Wind Rider.|
 A Breaching the Path|QID|10751|M|51.00,58.87|N|From Kor'kron Wind Rider. This will be done near the end of the guide.|
@@ -119,9 +119,9 @@ A Divination: Gorefiend's Truncheon|QID|10636|M|58.23,70.75|N|From Ancient Shado
 A Divination: Gorefiend's Armor|QID|10634|M|58.23,70.75|N|From Ancient Shadowmoon Spirit.|
 
 f Sanctum of the Stars|QID|10687|M|56.32,57.81|N|At Alieshor.|REP|Scryers;934|
+A Karabor Training Grounds|QID|10687|M|55.74,58.18|N|From Larissa Sunstrike.|REP|Scryers;934|
 A Tablets of Baa'ri|QID|10683|M|56.25,59.59|N|From Arcanist Thelis|REP|Scryers;934|
 A The Ashtongue Broken|QID|10807|M|54.73,58.19|N|From Varen the Reclaimer|REP|Scryers;934|
-A Karabor Training Grounds|QID|10687|M|55.74,58.18|N|From Larissa Sunstrike.|REP|Scryers;934|
 
 T The Rod of Lianthe|QID|10778|M|35.41,41.73|N|To Parshah.|
 A Sketh'lon Feathers|QID|10780|M|35.41,41.73|N|From Parshah.|
@@ -145,10 +145,10 @@ C Enraged Spirits of Water|QID|10480|U|30094|M|49.47,22.32|N|Use the totem and k
 A The Ashtongue Tribe|QID|10619|M|61.24,29.18|N|From Vindicator Aluumen.|REP|Aldor;932|
 A Karabor Training Grounds|QID|10587|M|61.24,29.18|N|From Exarch Onaala.|REP|Aldor;932|
 A Tablets of Baa'ri|QID|10568|M|62.54,28.46|N|From Anchorite Ceyla.|REP|Aldor;932|
-; f Altar of Sha'tar|QID|10568|M|63.25,30.36|N|At Maddix.|REP|Aldor;932|
-l Tablets of Baa'ri|QID|10568|S|M|56.30,36.55|N|Loot these from either the glowing green spots on the ground, or by killing Ashtongue Workers.|REP|Aldor;932|
+f Altar of Sha'tar|QID|10568|M|63.25,30.36|N|At Maddix.|REP|Aldor;932|
+C Tablets of Baa'ri|QID|10568|NC|S|M|56.30,36.55|N|Loot these from either the glowing green spots on the ground, or by killing Ashtongue Workers.|REP|Aldor;932|
 C The Ashtongue Tribe|QID|10619|M|56.91,36.41|N|Kill the mobs needed.|REP|Aldor;932|REP|Aldor|
-l Tablets of Baa'ri|QID|10568|US|M|56.30,36.55|N|Loot these from either the glowing green spots on the ground, or by killing Ashtongue Workers.|REP|Aldor;932|
+C Tablets of Baa'ri|QID|10568|NC|US|M|56.30,36.55|N|Loot these from either the glowing green spots on the ground, or by killing Ashtongue Workers.|REP|Aldor;932|
 
 l Tablets of Baa'ri|QID|10683|S|M|56.30,36.55|N|Loot these from either the glowing green spots on the ground, or by killing Ashtongue Workers.|REP|Scryers;934|
 C The Ashtongue Broken|QID|10807|M|56.91,36.41|N|Kill the mobs needed for this quest.|REP|Scryers;934|
@@ -195,16 +195,18 @@ K Uylaru|QID|10685|QO|Uylaru's Medallion Fragment: 1/1|M|48.28,39.55|N|Destroy t
 T Enraged Spirits of Water|QID|10480|M|42.22,45.06|N|To Earthmender Torlok.|
 A Enraged Spirits of Air|QID|10481|M|42.19,45.06|N|From Earthmender Torlok.|
 
-K Eykene|QID|10574|QO|Eykenen's Medallion Fragment: 1/1|M|51.17,52.83|N|Destroy the totems surrounding Eykene (each totem destroyed spawns 3 small elementals), then kill Eykene and loot his corpse.|REP|Aldor;932|
-K Eykene|QID|10685|QO|Eykenen's Medallion Fragment: 1/1|M|51.17,52.83|N|Destroy the totems surrounding Eykene (each totem destroyed spawns 3 small elementals), then kill Eykene and loot his corpse.|REP|Scryers;934|
+K Eykenen|QID|10574|QO|Eykenen's Medallion Fragment: 1/1|M|51.17,52.83|N|Destroy the totems surrounding Eykenen (each totem destroyed spawns 3 small elementals), then kill Eykene and loot his corpse.|REP|Aldor;932|
+K Eykenen|QID|10685|QO|Eykenen's Medallion Fragment: 1/1|M|51.17,52.83|N|Destroy the totems surrounding Eykenen (each totem destroyed spawns 3 small elementals), then kill Eykene and loot his corpse.|REP|Scryers;934|
 T A Necessary Distraction|QID|10688|M|55.74,58.18|N|To Larissa Sunstrike. The follow up she gives takes you back to Nagrand.|REP|Scryers;934|
 T The Great Retribution|QID|10817|M|54.7,58.2|N|To Varen the Reclaimer.|REP|Scryers;934|
 
-C Enraged Spirits of Air|QID|10481|U|30094|M|59.85,69.71|N|Use the totem and kill the Enraged Air Spirit. They tend to be a bit spread out.|
+C Enraged Spirits of Air|QID|10481|S|U|30094|M|59.85,69.71|N|Use the totem and kill the Enraged Air Spirit. They tend to be a bit spread out.|
 T Divination: Gorefiend's Cloak|QID|10635|M|58.30,70.82|N|To Ancient Shadowmoon Spirit.|
 
-C The Ashtongue Corruptors|QID|10574|M|57,73.64|N|Destroy the totems surrounding Haalum (each totem destroyed spawns 3 small elementals), then kill Haalum and loot his corpse.|REP|Aldor;932|
-C The Ashtongue Corruptors|QID|10685|M|57,73.64|N|Destroy the totems surrounding Haalum (each totem destroyed spawns 3 small elementals), then kill Haalum and loot his corpse.|REP|Scryers;934|
+K Haalum|QID|10574|M|57,73.64|N|Destroy the totems surrounding Haalum (each totem destroyed spawns 3 small elementals), then kill Haalum and loot his corpse.|REP|Aldor;932|
+K Haalum|QID|10685|M|57,73.64|N|Destroy the totems surrounding Haalum (each totem destroyed spawns 3 small elementals), then kill Haalum and loot his corpse.|REP|Scryers;934|
+C Enraged Spirits of Air|QID|10481|US|U|30094|M|59.85,69.71|N|Use the totem and kill the Enraged Air Spirit. They tend to be a bit spread out.|
+
 T The Ashtongue Corruptors|QID|10685|M|56.25,59.59|N|To Arcanist Thelis.|REP|Scryers;934|
 A The Warden's Cage|QID|10686|M|56.25,59.59|N|From Arcanist Thelis.|REP|Scryers;934|
 
