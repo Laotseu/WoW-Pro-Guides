@@ -824,7 +824,12 @@ function WoWPro.WorldEvents:RowUpdate(offset)
 				if key2 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_itembutton"..i..":LeftButton")
 				end
-				WoWPro:SetMacro("WPI", "#showtooltip\n/use item:"..use)
+				local itemEquipLoc = select(9, GetItemInfo(use))
+				if not itemEquipLoc ~= "" then
+					WoWPro:SetMacro("WPI", "#showtooltip\n/use item:"..use)
+				else
+					WoWPro:SetMacro( ("WPI", "#showtooltip\n/equip item:%s /use item:%s"):format(use, use) )
+				end
 				itemkb = true
 			end
 		else
