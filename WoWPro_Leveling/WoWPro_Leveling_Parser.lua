@@ -761,7 +761,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 				if not itemEquipLoc ~= "" then
 					WoWPro:SetMacro("WPI", "#showtooltip\n/use item:"..use)
 				else
-					WoWPro:SetMacro( ("WPI", "#showtooltip\n/equip item:%s /use item:%s"):format(use, use) )
+					WoWPro:SetMacro("WPI", ("#showtooltip\n/equip item:%s /use item:%s"):format(use, use))
 				end
 				itemkb = true
 			end
