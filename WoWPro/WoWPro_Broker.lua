@@ -734,8 +734,8 @@ function WoWPro:AutoCompleteQuestUpdate(skipUIUpdate)
 					WoWPro.CompleteStep(i, true)
 					something_completed = true
 
-				-- Quest Completion: Any step that is not a Turn in is considered completed if the quest is completed --
-				elseif action ~= "T" and quest_log_index and select(7,GetQuestLogTitle(quest_log_index)) == 1 then
+				-- Quest Completion: Any C or K step is considered completed if the quest is completed
+				elseif (action == "C" or action == "K") and quest_log_index and select(7,GetQuestLogTitle(quest_log_index)) == 1 then
 					WoWPro.CompleteStep(i, true)
 					something_completed = true
 
