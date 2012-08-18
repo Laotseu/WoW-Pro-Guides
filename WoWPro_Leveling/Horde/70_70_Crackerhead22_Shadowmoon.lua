@@ -237,9 +237,10 @@ A Borak, Son of Oronok|QID|10546|M|53.93,23.48|N|From Oronok Torn-heart.|
 
 T Grom'tor, Son of Oronok|QID|10521|M|44.59,23.68|N|To Grom'tor, Son of Oronok.|
 A The Cipher of Damnation - Grom'tor's Charge|QID|10522|M|44.59,23.68|N|From Grom'tor, Son of Oronok.|
-C The Cipher of Damnation - Grom'tor's Charge|QID|10522|M|53.03,25.53;52.18,18.62|N|Head inside the cave, kill Nagas to get their keys, and open chests as you go.|
-A Escape from Coilskar Cistern|QID|10451|M|52.07,18.74|N|Kill the Keeper of the Cistern. Then get this quest from Earthmender Wilda.|
+C The Cipher of Damnation - Grom'tor's Charge|QID|10522|S|M|53.03,25.53;52.18,18.62|N|Kill Nagas to get their keys, and open chests as you go.|
+A Escape from Coilskar Cistern|QID|10451|M|52.07,18.74|N|Head inside the cave, kill the Keeper of the Cistern then get this quest from Earthmender Wilda.|
 C Escape from Coilskar Cistern|QID|10451|NC|M|53.10,25.35|N|Just follow her and kill things. She is fairly strong.|
+C The Cipher of Damnation - Grom'tor's Charge|QID|10522|US|M|53.03,25.53;52.18,18.62|N|Kill Nagas to get their keys, and open chests as you go.|
 T The Cipher of Damnation - Grom'tor's Charge|QID|10522|M|44.65,23.65|N|To Grom'tor, Son of Oronok.|
 A The Cipher of Damnation - The First Fragment Recovered|QID|10523|M|44.65,23.65|N|From Grom'tor, Son of Oronok.|
 T The Cipher of Damnation - The First Fragment Recovered|QID|10523|M|53.85,23.52|N|To Oronok Torn-heart.|
