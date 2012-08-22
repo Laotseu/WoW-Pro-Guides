@@ -167,7 +167,7 @@ C Scout the northern shrine |QID|29725|QO|Scout the northern shrine: 1/1|M|47.4,
 C Return to camp |QID|29725|QO|Return to camp: 1/1|M|50.9,63.0|N|Whenever you spot a tiger, use the Light Scope to have Amber Kearnen kill it for you.|; Shadybranch Pocket
 T SI:7 Report: Fire From the Sky |QID|29725|N|To Sully "The Pickle" McLeary|M|58.9,81.8|; Pearlfin Village
 A SI:7 Report: Hostile Natives |QID|29726|N|From Little Lu|M|38.2,45.9|; Lair of the Jade Witch
-C Inspect sign |QID|29726||NC|QO|Inspect sign: 1/1|M|38.3,45.5|; Lair of the Jade Witch
+C Inspect sign |QID|29726|NC|QO|Inspect sign: 1/1|M|38.3,45.5|; Lair of the Jade Witch
 C Inspect Lifelike Jade Statue |QID|29726|NC|QO|Inspect Lifelike Jade Statue: 1/1|M|38.8,45.9|; Lair of the Jade Witch
 C Inspect Suspicious Jade Statue |QID|29726|QO|Inspect Suspicious Jade Statue: 1/1|M|38.9,46.4|; Lair of the Jade Witch
 C Speak with Widow Greenpaw |QID|29726|QO|Speak with Widow Greenpaw: 1/1|M|38.8,46.0|N|Flee Widow Greenpaw as soon as you can.|; Lair of the Jade Witch
@@ -178,7 +178,23 @@ T SI:7 Report: Take No Prisoners |QID|29727|N|To Amber Kearnen|M|58.9,81.9|; Pea
 A A Perfect Match |QID|29903|N|From Admiral Taylor|M|58.9,81.7|; Pearlfin Village
 A Seek Out the Lorewalker |QID|29888|N|From Bold Karasshi|M|59.0,81.7|; Pearlfin Village
 
-C A Perfect Match |QID|29903|S|NC|M|58.7,84.7|N|Speak to the Aqualytes and give them presents. The trick is to look at what weapon they have:\nDaggers: Give a dagger\nSword: Give a shield\nRed Staff: give a healing prayer\nBlue Staff: give a staff|; Pearlfin Village
+C A Perfect Match |QID|29903|NC|M|58.7,84.7|N|Speak to the Aqualytes and give them presents. The trick is to look at what weapon they have:\nDaggers: Give a dagger\nSword: Give a shield\nRed Staff: give a healing prayer\nBlue Staff: give a staff|; Pearlfin Village
+
+T A Perfect Match |QID|29903|N|To Admiral Taylor|M|58.9,81.7|; Pearlfin Village
+A Bigger Fish to Fry |QID|29904|N|From Admiral Taylor|M|58.9,81.7|; Pearlfin Village
+
+C Bigger Fish to Fry |QID|29904|M|61.5,78.8|N|Head for the Booboo Wilds and kill wildlife. A trainer will accompagny you and level every two kills. If only it was that easy for us :-).|; The Bamboo Wilds
+
+T Bigger Fish to Fry |QID|29904|M|58.9,81.6|; Pearlfin Village
+A Let Them Burn |QID|29905|M|58.9,81.7|; Pearlfin Village
+A Carp Diem |QID|29906|M|58.9,81.7|; Pearlfin Village
+
+C Let Them Burn |QID|29905|S|M|55.9,81.7|; Slingtail Pits
+K Chief Gukgut |QID|29906|T|Chief Gukgut|M|54.7,80.0|N|Lead you team to Chief Gukgut and kill him|; Slingtail Pits
+C Let Them Burn |QID|29905|US|M|55.9,81.7|; Slingtail Pits
+
+T Let Them Burn |QID|29905|N|To Elder Lusshan|M|58.9,81.5|; Pearlfin Village
+T Carp Diem |QID|29906|N|To Elder Lusshan|M|58.9,81.5|; Pearlfin Village
 
 T Seek Out the Lorewalker |QID|29888|M|53.7,91.5|; Dreamer's Pavilion
 A Borrowed Brew |QID|29889|M|53.7,91.5|; Dreamer's Pavilion
@@ -188,8 +204,187 @@ A A Visit with Lorewalker Cho |QID|31130|N|From Lorewalker Cho|M|53.7,91.4|; Dre
 C A Visit with Lorewalker Cho |QID|31130|NC|QO|Trim the Tree: 1/1|M|53.8,91.0|; Dreamer's Pavilion
 C A Visit with Lorewalker Cho |QID|31130|NC|QO|Paint the Wall: 1/1|M|54.0,90.7|N|Choose whatever|; Dreamer's Pavilion
 C A Visit with Lorewalker Cho |QID|31130|NC|QO|Feed the Birds: 1/1|M|54.0,91.3|; Dreamer's Pavilion
-T A Visit with Lorewalker Cho |QID|31130|N|To Lorewalker Cho|M|54.0,91.2|; Dreamer's Pavilion
 
-C A Perfect Match |QID|29903|US|NC|M|58.7,84.7|N|Speak to the Aqualytes and give them presents. The trick is to look at what weapon they have:\nDaggers: Give a dagger\nSword: Give a shield\nRed Staff: give a healing prayer\nBlue Staff: give a staff|; Pearlfin Village
+T A Visit with Lorewalker Cho |QID|31130|N|To Lorewalker Cho|M|54.0,91.2|; Dreamer's Pavilion
+A Potency |QID|29891|N|From Lorewalker Cho|M|53.8,90.7|; Dreamer's Pavilion
+A Body |QID|29892|N|From Lorewalker Cho|M|53.8,90.7|; Dreamer's Pavilion
+A Hue |QID|29893|N|From Lorewalker Cho|M|53.8,90.7|; Dreamer's Pavilion
+
+C Body |QID|29892|S|M|56.5,88.4|; Amberfly Bog
+C Hue |QID|29893|S|U|76128|M|56.4,91.0|N|Use the |Delicate Shearing Knife on the Glittering Amberflies once you've kill them to get their wings|; Amberfly Bog
+C Potency |QID|29891|57.7,89.5|N|After you killed 8 Mist Creepers, the Mist Horror will appear and drop the Heart after you kill it.|; Amberfly Bog
+C Hue |QID|29893|US|U|76128|M|56.4,91.0|N|Use the |Delicate Shearing Knife on the Glittering Amberflies once you've kill them to get their wings|; Amberfly Bog
+C Body |QID|29892|US|M|56.5,88.4|; Amberfly Bog
+
+T Potency |QID|29891|N|To Lorewalker Cho|M|53.8,90.7|; Dreamer's Pavilion
+T Body |QID|29892|N|To Lorewalker Cho|M|53.8,90.7|; Dreamer's Pavilion
+T Hue |QID|29893|N|To Lorewalker Cho|M|53.8,90.7|; Dreamer's Pavilion
+A Finding Your Center |QID|29890|N|From Lorewalker Cho|M|53.8,90.6|; Dreamer's Pavilion
+C Finding Your Center |QID|29890|M|54.6,91.9|; Dreamer's Pavilion
+
+T Finding Your Center |QID|29890|N|To Anduin Wrynn|M|65.9,79.3|; Den of Sorrow
+A Sacred Waters |QID|29898|N|From Anduin Wrynn|M|65.9,79.3|; Den of Sorrow
+A An Ancient Legend |QID|29900|N|From Lina Whitepaw|M|66.0,79.4|; Den of Sorrow
+A Rest in Peace |QID|29899|N|From Ren Whitepaw|M|66.0,79.3|; Den of Sorrow
+
+C Rest in Peace |QID|29899|S|M|67.8,81.7|; Den of Sorrow
+C Get the Waters of Restorative Body |QID|29898|NC|QO|Waters of Restorative Body: 1/1|M|66.8,82.1|; Den of Sorrow
+C Get the Waters of Restorative Mind |QID|29898|NC|QO|Waters of Restorative Mind: 1/1|M|67.3,81.6|; Den of Sorrow
+C Get the Waters of Restorative Spirit |QID|29898|NC|QO|Waters of Restorative Spirit: 1/1|M|68.0,81.9|; Den of Sorrow
+K Shade of Ling Heartfist |QID|29900|T|Shade of Ling Heartfist|QO|Shade of Ling Heartfist slain: 1/1|M|66.8,80.2|; Den of Sorrow
+C Get the Waters of Restorative Heart |QID|29898|QO|Waters of Restorative Heart: 1/1|M|66.4,80.0|; Den of Sorrow
+C Get the Song of the Vale |QID|29900|NC|QO|Song of the Vale: 1/1|M|66.5,80.5|; Den of Sorrow
+C Rest in Peace |QID|29899|US|M|67.8,81.7|; Den of Sorrow
+
+T Sacred Waters |QID|29898|N|To Lina Whitepaw|M|66.0,79.4|; Den of Sorrow
+T An Ancient Legend |QID|29900|N|To Ren Whitepaw|M|66.0,79.3|; Den of Sorrow
+T Rest in Peace |QID|29899|N|To Ren Whitepaw|M|66.0,79.3|; Den of Sorrow
+; Auto quest:
+A Anduin's Decision |QID|29901|N|The quest will |M|66.0,79.3|; Den of Sorrow
+C Anduin's Decision |QID|29901|NC|M|65.9,79.3|N|Talk to Anduin and learn of his decision in case you didn't guess it already.|; Den of Sorrow
+
+T Anduin's Decision |QID|29901|N|To Admiral Taylor|M|58.9,81.7|; Pearlfin Village
+A In Search of Wisdom |QID|29922|N|From Elder Lusshan|M|58.9,81.5|; Pearlfin Village
+
+C In Search of Wisdom |QID|29922|NC|M|57.9,82.5|N|Speak to Kitemaster Ut-Nam and have him send you to Dawn's Blossom|; Pearlfin Village
+
+T In Search of Wisdom |QID|29922|N|To Lorewalker Cho|M|46.8,46.1|; Dawn's Blossom
+A Welcome to Dawn's Blossom |QID|31230|N|From Toya|M|47.2,46.2|; Dawn's Blossom
+C Speak with Kai Wanderbrew |QID|31230|T|Kai Wanderbrew|NC|QO|Speak with Kai Wanderbrew: 1/1|M|47.2,46.0|N|He is walking around with a barel on his back|; Dawn's Blossom
+A An Air of Worry |QID|29576|N|From Old Man Misteye|M|48.3,46.1|; Dawn's Blossom
+C Speak with Master Windfur |QID|31230|QO|Speak with Master Windfur: 1/1|M|48.5,44.5|; Dawn's Blossom
+C Speak with Peiji Goldendraft |QID|31230|QO|Speak with Peiji Goldendraft: 1/1|M|45.7,43.7|Z|Dawn's Blossom|; The Drunken Hozen
+T Welcome to Dawn's Blossom |QID|31230|N|To Toya|M|47.2,46.2|; Dawn's Blossom
+A The Double Hozen Dare |QID|29716|N|From An Windfur|M|46.7,46.2|; Dawn's Blossom
+A The Silkwood Road |QID|29865|N|From Tzu the Ironbelly|M|46.5,45.8|; Dawn's Blossom
+A The Threads that Stick |QID|29866|N|From Lo Wanderbrew|M|46.6,45.3|; Dawn's Blossom
+
+C The Silkwood Road |QID|29865|S|M|43.0,50.0|; The Silkwood
+C The Threads that Stick |QID|29866|S|NC|M|43.4,49.0|N|Loot the egss to get Pristine Silk Strand|; The Silkwood
+
+A Down Kitty! |QID|29717|N|From An Windfur|M|40.1,48.3|N|The little An followed you to the Forest Heart and has a new quest for you|; Forest Heart
+
+C Down Kitty! |QID|29717|S|M|38.3,44.2|; Forest Heart
+C The Double Hozen Dare |QID|29716|M|37.3,46.0|; Forest Heart
+T The Double Hozen Dare |QID|29716|N|To An Windfur, she follows you aroud.|; Forest Heart
+A The Jade Witch |QID|29723|N|From An Windfur|; Forest Heart
+C The Jade Witch |QID|29723|M|39.3,46.2|N|Talk to Widow Greenpaw, she'll bring you to Shin and then kill her.|; Lair of the Jade Witch
+C Down Kitty! |QID|29717|US|M|38.3,44.2|; Forest Heart
+T Down Kitty! |QID|29717|N|To An Windfur|N|To An Windfur, she follows you aroud.|; Forest Heart
+
+C The Threads that Stick |QID|29866|US|NC|M|43.4,49.0|N|Loot the egss to get Pristine Silk Strand|; The Silkwood
+C The Silkwood Road |QID|29865|US|M|43.0,50.0|; The Silkwood
+
+T The Silkwood Road |QID|29865|N|To Tzu the Ironbelly|M|46.5,45.8|; Dawn's Blossom
+T The Threads that Stick |QID|29866|N|To Lo Wanderbrew|M|46.6,45.3|; Dawn's Blossom
+A Find the Boy |QID|29993|N|From Kai Wanderbrew|M|47.1,46.0|; Dawn's Blossom
+T The Jade Witch |QID|29723|N|To An Windfur|M|47.1,46.0|; Dawn's Blossom
+A All We Can Spare |QID|29925|N|From Toya|M|47.2,46.2|; Dawn's Blossom
+A Tian Monastery |QID|29617|N|From Apprentice Yufi|M|49.6,45.8|; Dawn's Blossom
+
+; At this point, the quest line is very open-ended. This part of the guide will need to be optimized
+A The Perfect Color |QID|29881|N|From Inkmaster Glenzu|M|54.9,45.3|; The Arboretum
+A Quill of Stingers |QID|29882|N|From Inkmaster Jo Po|M|55.3,45.3|; The Arboretum
+T Find the Boy |QID|29993|N|To Inkmaster Wei|M|54.6,44.5|; The Arboretum
+A Shrine of the Dawn |QID|29995|N|From Inkmaster Wei|M|54.6,44.5|; The Arboretum
+C The Perfect Color |QID|29881|M|52.9,45.5|; The Arboretum
+C Quill of Stingers |QID|29882|M|52.6,43.8|; The Arboretum
+T The Perfect Color |QID|29881|N|To Inkmaster Glenzu|M|54.9,45.3|; The Arboretum
+T Quill of Stingers |QID|29882|N|To Inkmaster Jo Po|M|55.3,45.3|; The Arboretum
+T Shrine of the Dawn |QID|29995|N|To Syra Goldendraft|M|52.6,38.1|; Shrine of the Dawn
+A Getting Permission |QID|29920|N|From Syra Goldendraft|M|52.6,38.1|; Shrine of the Dawn
+C Getting Permission |QID|29920|QO|Pandriarch Bramblestaff defeated: 1/1|M|54.1,38.4|; Shrine of the Dawn
+C Getting Permission |QID|29920|QO|Pandriarch Goldendraft defeated: 1/1|M|53.6,36.8|; Shrine of the Dawn
+C Getting Permission |QID|29920|QO|Pandriarch Windfur defeated: 1/1|M|52.6,35.6|; Shrine of the Dawn
+C Getting Permission |QID|29920|M|52.6,35.6|; Shrine of the Dawn
+T Getting Permission |QID|29920|N|To Lo Wanderbrew|M|52.6,38.1|; Shrine of the Dawn
+T All We Can Spare |QID|29925|N|To Lorewalker Cho|M|50.9,27.1|; Emperor's Omen
+A I Have No Jade And I Must Scream |QID|29928|N|From Foreman Mann|M|50.9,27.0|; Emperor's Omen
+N Took a taxi |M|55.4,23.8|; Sri-La Village
+f Emperor's Omen |N|Fly to Emperor's Omen, The Jade Forest|M|50.9,26.9|; Emperor's Omen
+C I Have No Jade And I Must Scream |QID|29928|M|49.1,32.0|; Greenstone Masons' Quarter
+T I Have No Jade And I Must Scream |QID|29928|N|To Foreman Mann|M|50.9,27.0|; Emperor's Omen
+A Calamity Jade |QID|29926|N|From Foreman Mann|M|50.9,27.0|; Emperor's Omen
+A Mann's Man |QID|29927|N|From Foreman Mann|M|50.9,27.0|; Emperor's Omen
+A The Sprites' Plight |QID|29745|N|From Outcast Sprite|M|48.7,24.9|; Woods of the Lost
+C The Sprites' Plight |QID|29745|QO|Source of the destroyers found: 1/1|M|49.1,21.0|; Terrace of Ten Thunders
+C The Sprites' Plight |QID|29745|QO|Stonebound Destroyer slain: 10/10|M|48.4,21.5|; Woods of the Lost
+C The Sprites' Plight |QID|29745|M|48.4,21.5|; Woods of the Lost
+T The Sprites' Plight |QID|29745|M|48.4,21.5|; Woods of the Lost
+; Field turnin
+A Break the Cycle |QID|29747|M|48.4,21.5|; Woods of the Lost
+A Simulacrumble |QID|29748|N|From Shan'ze Spiritbinder|M|48.6,20.6|; Terrace of Ten Thunders
+C Break the Cycle |QID|29747|M|47.0,16.4|; Terrace of Ten Thunders
+T Break the Cycle |QID|29747|M|47.0,16.4|; Terrace of Ten Thunders
+; Field turnin
+C Simulacrumble |QID|29748|M|48.2,20.2|; Terrace of Ten Thunders
+T Simulacrumble |QID|29748|M|48.2,20.2|; Terrace of Ten Thunders
+; Field turnin
+A An Urgent Plea |QID|29749|M|48.2,20.2|; Terrace of Ten Thunders
+C An Urgent Plea |QID|29749|QO|Staff of Pei-Zhi: 1/1|M|44.2,14.9|; Terrace of Ten Thunders
+C An Urgent Plea |QID|29749|QO|Interrupt the Ritual of Spiritbinding: 1/1|M|44.3,15.5|; Terrace of Ten Thunders
+C An Urgent Plea |QID|29749|M|44.3,15.5|; Terrace of Ten Thunders
+T An Urgent Plea |QID|29749|N|To Pei-Zhi|M|44.2,15.0|; Terrace of Ten Thunders
+A Ritual Artifacts |QID|29751|N|From Pei-Zhi|M|44.2,15.0|; Terrace of Ten Thunders
+A Vessels of the Spirit |QID|29750|N|From Pei-Zhi|M|44.2,15.0|; Terrace of Ten Thunders
+A The Wayward Dead |QID|29752|N|From Pei-Zhi|M|44.2,15.0|; Terrace of Ten Thunders
+; |U|74771|N|item:74771 [Staff of Pei-Zhi]|M|43.1,15.1|; Terrace of Ten Thunders
+; |U|74771|N|item:74771 [Staff of Pei-Zhi]|M|43.1,15.1|; Terrace of Ten Thunders
+; |U|74771|N|item:74771 [Staff of Pei-Zhi]|M|42.4,15.9|; Terrace of Ten Thunders
+C Ritual Artifacts |QID|29751|QO|Jade Cong: 1/1|M|42.7,15.8|; Terrace of Ten Thunders
+; |U|74771|N|item:74771 [Staff of Pei-Zhi]|M|42.2,16.1|; Terrace of Ten Thunders
+; |U|74771|N|item:74771 [Staff of Pei-Zhi]|M|41.9,16.6|; Terrace of Ten Thunders
+; |U|74771|N|item:74771 [Staff of Pei-Zhi]|M|41.9,16.8|; Terrace of Ten Thunders
+; |U|74771|N|item:74771 [Staff of Pei-Zhi]|M|41.9,16.9|; Terrace of Ten Thunders
+; |U|74771|N|item:74771 [Staff of Pei-Zhi]|M|41.8,17.0|; Terrace of Ten Thunders
+; |U|74771|N|item:74771 [Staff of Pei-Zhi]|M|41.8,17.1|; Terrace of Ten Thunders
+C Vessels of the Spirit |QID|29750|M|42.2,17.1|; Terrace of Ten Thunders
+C Ritual Artifacts |QID|29751|QO|Pungent Ritual Candle: 1/1|M|42.3,17.0|; Terrace of Ten Thunders
+; |U|74771|N|item:74771 [Staff of Pei-Zhi]|M|41.7,17.2|; Terrace of Ten Thunders
+; |U|74771|N|item:74771 [Staff of Pei-Zhi]|M|41.6,15.3|; Terrace of Ten Thunders
+; |U|74771|N|item:74771 [Staff of Pei-Zhi]|M|41.6,15.1|; Terrace of Ten Thunders
+C The Wayward Dead |QID|29752|M|41.6,15.1|; Terrace of Ten Thunders
+C Ritual Artifacts |QID|29751|QO|Chipped Ritual Bowl: 1/1|M|41.6,14.3|; Terrace of Ten Thunders
+C Ritual Artifacts |QID|29751|M|41.6,14.3|; Terrace of Ten Thunders
+T Ritual Artifacts |QID|29751|N|To Pei-Zhi|M|44.2,15.0|; Terrace of Ten Thunders
+T Vessels of the Spirit |QID|29750|N|To Pei-Zhi|M|44.2,15.0|; Terrace of Ten Thunders
+T The Wayward Dead |QID|29752|N|To Pei-Zhi|M|44.2,15.0|; Terrace of Ten Thunders
+A Back to Nature |QID|29753|N|From Pei-Zhi|M|44.2,15.0|; Terrace of Ten Thunders
+A A Humble Offering |QID|29756|N|From Pei-Zhi|M|44.2,15.0|; Terrace of Ten Thunders
+; |U|74808|N|item:74808 [Spirit Bottles]|M|44.2,15.0|; Terrace of Ten Thunders
+; |U|74808|N|item:74808 [Spirit Bottles]|M|40.8,12.0|; Tideview Thicket
+; |U|74808|N|item:74808 [Spirit Bottles]|M|40.8,11.7|; Tideview Thicket
+; |U|74808|N|item:74808 [Spirit Bottles]|M|41.0,11.4|; Tideview Thicket
+; |U|74808|N|item:74808 [Spirit Bottles]|M|41.0,11.4|; Tideview Thicket
+; |U|74808|N|item:74808 [Spirit Bottles]|M|41.0,11.4|; Tideview Thicket
+; |U|74808|N|item:74808 [Spirit Bottles]|M|41.0,11.4|; Tideview Thicket
+; |U|74808|N|item:74808 [Spirit Bottles]|M|41.0,11.4|; Tideview Thicket
+; |U|74808|N|item:74808 [Spirit Bottles]|M|41.0,11.4|; Tideview Thicket
+C Back to Nature |QID|29753|M|41.0,11.4|; Tideview Thicket
+C A Humble Offering |QID|29756|M|39.1,10.7|; Tideview Thicket
+T Back to Nature |QID|29753|N|To Pei-Zhi|M|44.2,15.0|; Terrace of Ten Thunders
+T A Humble Offering |QID|29756|N|To Pei-Zhi|M|44.2,15.0|; Terrace of Ten Thunders
+A To Bridge Earth and Sky |QID|29754|N|From Pei-Zhi|M|44.2,15.0|; Terrace of Ten Thunders
+C To Bridge Earth and Sky |QID|29754|M|43.8,12.6|; Terrace of Ten Thunders
+T To Bridge Earth and Sky |QID|29754|M|43.8,12.6|; Terrace of Ten Thunders
+; Field turnin
+A Pei-Back |QID|29755|M|43.8,12.6|; Terrace of Ten Thunders
+C Pei-Back |QID|29755|M|43.0,11.5|; Seat of the Spirit Waker
+; Level up! 86
+T Pei-Back |QID|29755|N|To Pei-Zhi|M|43.8,12.5|; Terrace of Ten Thunders
+C Mann's Man |QID|29927|M|68.1,27.3|; Greenstone Quarry
+T Mann's Man |QID|29927|N|To Hao Mann|M|60.9,37.1|; Greenstone Quarry
+A Trapped! |QID|29929|N|From Hao Mann|M|60.9,37.1|; Greenstone Quarry
+C Trapped! |QID|29929|M|41.9,22.7|; Greenstone Quarry
+C Calamity Jade |QID|29926|QO|Greenstone Gorger slain: 6/6|M|55.7,67.1|; Greenstone Quarry
+C Calamity Jade |QID|29926|QO|Greenstone Nibbler slain: 12/12|M|50.5,64.0|; Greenstone Quarry
+C Calamity Jade |QID|29926|M|50.5,64.0|; Greenstone Quarry
+T Trapped! |QID|29929|N|To Hao Mann|M|46.3,29.4|; Greenstone Quarry
+A What's Mined Is Yours |QID|29930|N|From Hao Mann|M|46.3,29.4|; Greenstone Quarry
+C What's Mined Is Yours |QID|29930|M|51.2,26.7|; Emperor's Omen
+T Calamity Jade |QID|29926|N|To Foreman Mann|M|50.9,27.0|; Emperor's Omen
+T What's Mined Is Yours |QID|29930|N|To Foreman Mann|M|50.9,27.0|; Emperor's Omen
+A The Serpent's Heart |QID|29931|N|From Foreman Mann|M|50.9,27.0|; Emperor's Omen
+
 ]]
 end)

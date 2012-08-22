@@ -12,5 +12,6 @@
   <Script file="80_82_Arixan_Hyjal.lua"/>
   <Script file="82_83_Arixan_Deepholm.lua"/>
   <Script file="83_84_Arixan_Uldum.lua"/>
+  <Script file="88_89_Emmaleah_Kun-Lai_Summit.lua"/>
   <Script file="85_85_Test_Issue_347.lua"/>
 </Ui>
