@@ -439,53 +439,64 @@ A Spitfire|QID|29585|M|43.28,75.77|N|From Gentle Mother Hanae.|
 A Orchard-Supplied Hardware|QID|29580|M|43.28,75.77|N|From Gentle Mother Hanae.|
 
 C Defiance|QID|29578|S|M|44.19,74.52|
-C Orchard-Supplied Hardware|QID|29580|S|M|43.58,71.16|
+C Orchard-Supplied Hardware|QID|29580|S|NC|M|43.58,71.16|
 C Spitfire|QID|29585|S|NC|U|72578|M|44.48,72.49|
 C Rally the Survivors|QID|29579|NC|M|44.51,72.75|
 C Spitfire|QID|29585|US|NC|U|72578|M|44.48,72.49|
-C Orchard-Supplied Hardware|QID|29580|US|M|43.58,71.16|
+C Orchard-Supplied Hardware|QID|29580|US|NC|wM|43.58,71.16|
 C Defiance|QID|29578|US|M|44.19,74.52|
 
-T Rally the Survivors|QID|29579|M|43.48,75.96|N|To Shao the Defiant.|
 T Defiance|QID|29578|M|43.48,75.96|N|To Shao the Defiant.|
-T Spitfire|QID|29585|M|43.27,75.97|N|To Gentle Mother Hanae.|
+T Rally the Survivors|QID|29579|M|43.48,75.96|N|To Shao the Defiant.|
 T Orchard-Supplied Hardware|QID|29580|M|43.27,75.97|N|To Gentle Mother Hanae.|
+T Spitfire|QID|29585|M|43.27,75.97|N|To Gentle Mother Hanae.|
 A The Splintered Path|QID|29586|M|43.27,75.97|N|From Traumatized Nectarbreeze Farmer.|
 C The Splintered Path|QID|29586|M|40.71,73.87|
 T The Splintered Path|QID|29586|M|40.96,73.97|N|To Shao the Defiant.|
 A Unbound|QID|29587|M|40.96,73.97|N|From Shao the Defiant.|
 A Maul Gormal|QID|29670|M|40.96,73.97|N|From Shao the Defiant.|
-C Unbound|QID|29587|M|39.76,75.57|
+C Unbound|QID|29587|S|NC|M|39.76,75.57|
 C Maul Gormal|QID|29670|M|37.84,75.76|
+C Unbound|QID|29587|US|NC|M|39.76,75.57|
 T Unbound|QID|29587|M|41.02,73.97|N|To Shao the Defiant.|
 T Maul Gormal|QID|29670|M|41.02,73.97|N|To Shao the Defiant.|
 
-R Serpent's Heart|QID|29931|
+R Serpent's Heart|QID|29931|M|41.6,69.1;42.1,60.4|
 T The Serpent's Heart|QID|29931|M|48.26,61.31|N|To Foreman Raike.|
 A Love's Labor|QID|30495|M|48.26,61.31|N|From Foreman Raike.|
-C Love's Labor|QID|30495|M|47.54,60.63|N|Kitemaster Shoku will fly you to the top where Taskmaster Emi is.|
-T Love's Labor|QID|30495|M|48.31,61.30|N|To Foreman Raike.|
-A The Temple of the Jade Serpent|QID|29932|M|48.31,61.30|N|From Foreman Raike. Take the kite ride from flightmaster Shoku.|
-C The Temple of the Jade Serpent|QID|29932|M|55.78,57.06|
+C Delivery to Kitemaster Shoku |QID|30495|NC|QO|Delivery to Kitemaster Shoku: 1/1|M|48.2,60.0|
+C Delivery to Taskmaster Emi |QID|30495|NC|QO|Delivery to Taskmaster Emi: 1/1|M|47.6,60.7|N|Ask Shoku to get a lift to the top of the statue|
+C Delivery to Surveyor Sawa |QID|30495|NC|QO|Delivery to Surveyor Sawa: 1/1|M|47.4,60.5;46.9,60.4|N|Talk to Kitemaster Inga to get a ride down|
+C Delivery to Historian Dinh |QID|30495|NC|QO|Delivery to Historian Dinh: 1/1|M|46.4,61.8|
+T Love's Labor|QID|30495|M|48.26,61.31|N|From Foreman Raike.|
+A The Temple of the Jade Serpent|QID|29932|M|48.31,61.30|N|From Foreman Raike.|
+
+C The Temple of the Jade Serpent|QID|29932|NC|M|48.2,60.0;55.8,57.1|N|Talk to Kitemaster Shoku for a ride to the Temple of the Jade Serpent and then talk to Elder Sage Wind-Yi for a cut scene.|
+
 T The Temple of the Jade Serpent|QID|29932|M|58.13,58.65|N|To Elder Sage Rain-Zhu.|
 A The Scryer's Dilemma|QID|29997|M|58.13,58.65|N|From Elder Sage Rain-Zhu.|
 A The Librarian's Quandary|QID|29998|M|58.13,58.65|N|From Elder Sage Rain-Zhu.|
 A They Call Him... Stormstout|QID|32019|M|58.13,58.65|N|From Elder Sage Rain-Zhu.|
-A The Rider's Bind|QID|29999|M|58.05,59.00|N|From Fei.|
-A Lighting Up the Sky|QID|30005|M|58.05,59.00|N|From Fei.|
-C Lighting Up the Sky|QID|30005|S|N|Set of the fireworks as you go and pick up the little serpents marked by cogs on your mini map.|
+A The Rider's Bind|QID|29999|M|58.0,59.0|N|From Fei.|
+A Lighting Up the Sky|QID|30005|M|58.0,59.0|N|From Fei.|
+C Lighting Up the Sky|QID|30005|S|NC|N|Set of the fireworks as you go and pick up the little serpents marked by cogs on your mini map.|
+C Find the Playful Emerald Serpent |QID|29999|NC|QO|Playful Emerald Serpent found: 1/1|M|56.5,58.4|
 T The Librarian's Quandary|QID|29998|M|56.29,60.46|N|To Lorewalker Stonestep.|
 A Moth-Ridden|QID|30001|M|56.29,60.46|N|From Lorewalker Stonestep.|
-C Pages of History|QID|30002|M|55.70,59.95|
 A Pages of History|QID|30002|M|56.29,60.46|N|From Lorewalker Stonestep.|
-C Moth-Ridden|QID|30001|M|56.39,60.43|
+C Moth-Ridden|QID|30001|S|M|56.39,60.43|
+C Pages of History|QID|30002|S|M|55.70,59.95|N|Click on the books and the bookworms will spawn. It's faster (and more fun) to stomp on them then to kill them.|
+C Find the Playful Gold Serpent |QID|29999|NC|QO|Playful Gold Serpent found: 1/1|M|56.0,60.4|
+C Pages of History|QID|30002|US|M|55.70,59.95|N|Click on the books and the bookworms will spawn. It's faster (and more fun) to stomp on them then to kill them.|
+C Moth-Ridden|QID|30001|US|M|56.39,60.43|
 T Moth-Ridden|QID|30001|M|56.29,60.40|N|To Lorewalker Stonestep.|
 A Everything In Its Place|QID|30004|M|56.29,60.40|N|From Lorewalker Stonestep.|
-C The Scryer's Dilemma|QID|29997|M|56.79,55.84|
-T The Scryer's Dilemma|QID|29997|M|57.59,55.98|N|To Wise Mari.|
-A A New Vision|QID|30011|M|57.59,55.98|N|From Wise Mari.|
-C The Rider's Bind|QID|29999|M|59.20,56.75|
-C Lighting Up the Sky|QID|29999|US|M|56.42,58.12|
+C Find the Playful Crimson Serpent |QID|29999|NC|QO|Playful Crimson Serpent found: 1/1|M|58.2,61.4|N|Go up the stairs and follow the path.|
+C The Scryer's Dilemma|QID|29997|M|56.9,55.8|N|When you get in the Fountain of the Everseeing, kill Water Fiend until you get the staff.|
+T The Scryer's Dilemma|QID|29997|M|57.6,56.0|N|To Wise Mari.|
+A A New Vision|QID|30011|M|57.6,56.0|N|From Wise Mari.|
+C Find the Playful Azure Serpent|QID|29999|M|59.2,56.7|
+C Lighting Up the Sky|QID|30005|US|M|56.42,58.12|
 T A New Vision|QID|30011|M|58.16,58.64|N|To Elder Sage Rain-Zhu.|
 T Everything In Its Place|QID|30004|M|58.16,58.64|N|To Elder Sage Rain-Zhu.|
 T The Rider's Bind|QID|29999|M|58.05,59.02|N|To Fei.|
@@ -495,39 +506,42 @@ T The Jade Serpent|QID|30000|M|55.83,57.05|N|To Elder Sage Wind-Yi.|
 
 A Get Back Here!|QID|30498|M|55.84,57.07|N|From UI Alert.|
 f Jade Temple Grounds|QID|30498|M|54.58,61.75|N|At Ginsa Arroweye.|
-F Get Back Here!|QID|30498|M|54.58,61.35|N|The flightmaster has an option for a direct flight. (currently misnamed glassfin village).|
+F Pearfin Village|QID|30498|M|54.58,61.35|N|The flightmaster has an option for a direct flight. (currently misnamed glassfin village).|
 A An Unexpected Advantage|QID|30565|M|58.53,82.29|N|From Sully "The Pickle" McLeary.|
 T Get Back Here!|QID|30498|M|58.08,80.67|N|To Admiral Taylor.|
 A Helping the Cause|QID|30568|M|58.08,80.67|N|From Admiral Taylor.|
+C Helping the Cause|QID|30568|QO|Defeat the Captive Hozen: 1/1|M|54.86, 79.81|
 C Helping the Cause|QID|30568|QO|Challenge a Pearlfin Recruit: 1/1|M|59.31, 83.49|
 C Helping the Cause|QID|30568|NC|QO|Assist the Wounded Pearlfin: 3/3|M|60.12,87.19|
-C Helping the Cause|QID|30568|QO|Defeat the Captive Hozen: 1/1|M|54.86, 79.81|
 C An Unexpected Advantage|QID|30565|M|62.50,76.15|
 T An Unexpected Advantage|QID|30565|M|58.60,82.26|N|To Sully "The Pickle" McLeary.|
 T Helping the Cause|QID|30568|M|58.11,80.68|N|To Admiral Taylor.|
 A Last Piece of the Puzzle|QID|31362|M|58.85,81.08|N|From Lorewalker Cho.|
-C Last Piece of the Puzzle|QID|31362|NC|U| |M|58.85,81.08|N|Talk to Mishi for a ride.|
-C Last Piece of the Puzzle|QID|31362|U|80071|M|44.50,66.96|
-T Last Piece of the Puzzle|QID|31362|M|44.78,67.06|N|To Lorewalker Cho.|
+
+C Last Piece of the Puzzle|QID|31362|NC|U|80071|M|58.85,81.08;44.50,66.96|N|Talk to Mishi for a ride and then use the Cho Family Heirloom at the shrine.|
+
+T Last Piece of the Puzzle|QID|31362|M|44.8,67.1|N|To Lorewalker Cho.|
 A The Seal is Broken|QID|31303|M|44.78,67.06|N|From Lorewalker Cho.|
-f Serpent's Overlook|QID|31303|M|43.13,68.48|N|At Sky Dancer Ji. (optional)|
-C The Seal is Broken|QID|31303|NC|M|44.72,66.98|N|Talk to Mishi to start the "bombing run".|
-C The Seal is Broken|QID|31303|M|48.68,58.99|
+f Serpent's Overlook|QID|31303|M|43.13,68.48|N|At Sky Dancer Ji.|
+C The Seal is Broken|QID|31303|M|44.72,66.98|N|Talk to Mishi to start the "bombing run".|
 T The Seal is Broken|QID|31303|M|49.27,61.39|N|To Lorewalker Cho.|
 A Residual Fallout|QID|30500|M|49.27,61.39|N|From Lorewalker Cho.|
 A Jaded Heart|QID|30502|M|49.27,61.39|N|From Lorewalker Cho.|
 A Emergency Response|QID|31319|M|49.27,61.39|N|From Lorewalker Cho.|
-C Jaded Heart|QID|30502|S|NC|U|80074|L|80074 6|N|Pick up the sparkly pieces of Jade, you need them to make the elite Sha, non-elite.|
-C Emergency Response|QID|31319|NC|U|86511|QO|Admiral Taylor Recovered: 1/1|M|47.74,62.07|
-C Emergency Response|QID|31319|NC|U|86511|QO|Mishka Recovered: 1/1|M|46.4,61.68|
-C Emergency Response|QID|31319|NC|U|86511|QO|Sully Recovered: 1/1|M|47.49,59.19|
-C Residual Fallout|QID|30500|M|46.40,60.09|
+C Residual Fallout|QID|30500|S|M|46.40,60.09|
+C Jaded Heart|QID|30502|S|NC|U|80074|N|Pick up the sparkly pieces of Jade and use them to make the elite Sha, non-elite.|
+C Recover Admiral Taylor|QID|31319|NC|U|86511|QO|Admiral Taylor Recovered: 1/1|M|47.7,62.1|
+C Revocer Mishka|QID|31319|NC|U|86511|QO|Mishka Recovered: 1/1|M|46.4,61.7|
+C Recover Sully|QID|31319|NC|U|86511|QO|Sully Recovered: 1/1|M|47.5,59.2|
 C Jaded Heart|QID|30502|US|U|80074|M|49.04,59.9|
+C Residual Fallout|QID|30500|US|M|46.40,60.09|
 T Residual Fallout|QID|30500|M|49.32,61.50|N|To Lorewalker Cho.|
 T Jaded Heart|QID|30502|M|49.32,61.50|N|To Lorewalker Cho.|
+T Emergency Response|QID|31319|1/1|M|49.32,61.50|N|To Lorewalker Cho.|
 A Moving On|QID|30648|M|49.31,61.35|N|From Fei.|
 C Moving On|QID|30648|M|49.31,61.35|N|Talk to Fei.|
 T Moving On|QID|30648|N|To UI Alert (after the ride into the Valley).|
+
 N Congratulations,|N|You finished The Jade Forest. Next zone is Valley of the Four Winds, the guide should load when you check off this step.|
 
 ]]
