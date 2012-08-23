@@ -7,9 +7,12 @@ local _G 								= getfenv(0)
 
 local collectgarbage					= _G.collectgarbage
 local date								= _G.date
+local geterrorhandler				= _G.geterrorhandler
 local print 							= _G.print
 local select							= _G.select
+local time								= _G.time
 local tostring							= _G.tostring
+local tostringall						= _G.tostringall
 local type								= _G.type
 local wipe								= _G.wipe
 
@@ -312,7 +315,7 @@ function WoWPro:OnEnable()
 	WoWPro:RegisterEvents( {	-- Setting up core events
 		"BAG_UPDATE",
 		"CHAT_MSG_SYSTEM",
---		"CINEMATIC_STOP",
+		"CINEMATIC_STOP",
 		"GOSSIP_SHOW",
 		"MINIMAP_ZONE_CHANGED",
 		"PARTY_MEMBERS_CHANGED",
@@ -352,7 +355,7 @@ function WoWPro:OnEnable()
 	    end
 	end)
 
-	WoWPro.eventcount = WoWPro.eventcount or {}
+	--WoWPro.eventcount = WoWPro.eventcount or {}
 
 	local TIME_MAX = 1000
 
@@ -362,7 +365,7 @@ function WoWPro:OnEnable()
 
 		debugprofilestart()
 
-		WoWPro.eventcount[event] = WoWPro.eventcount[event] and WoWPro.eventcount[event] + 1 or 1
+		--WoWPro.eventcount[event] = WoWPro.eventcount[event] and WoWPro.eventcount[event] + 1 or 1
 
 		if WoWPro.InitLockdown then
 		    WoWPro:dbp("LockEvent Fired: "..event)
@@ -445,21 +448,32 @@ function WoWPro:OnEnable()
 		end
 
 		-- Updating party-dependant options --
-		if event == "PARTY_MEMBERS_CHANGED"
-			or event == "UPDATE_BINDINGS" then
+		if event == "PARTY_MEMBERS_CHANGED"	or event == "UPDATE_BINDINGS" then
 			WoWPro:UpdateGuide()
 		--end
+
 		-- Unlocking guide frame when leaving combat --
-		elseif event == "PLAYER_REGEN_ENABLED" or event == "PLAYER_ENTERING_WORLD" or event == "CINEMATIC_STOP" then
+		elseif event == "PLAYER_REGEN_ENABLED"  then
 			-- Unlocking event processong till after things get settled --
-			if event == "PLAYER_ENTERING_WORLD" then
-				WoWPro.InitLockdown = true
-				WoWPro.LockdownTimer = 2.0
-			end
+			--if event == "PLAYER_ENTERING_WORLD" then
+			--	WoWPro.InitLockdown = true
+			--	WoWPro.LockdownTimer = 2.0
+			--end
 
 			--if WoWPro.need_UpdateGuide then
 			--	WoWPro:UpdateGuide()
 			--end
+
+		-- Refresh the arrow after a change of continent or similar zoning
+		elseif event == "PLAYER_ENTERING_WORLD" then
+			WoWPro:DelayMapPoint()
+			
+		-- Update the guide in case there were quest or objectives completed during the cinematics
+		-- and the UI was not updated.
+		elseif event == "CINEMATIC_STOP" then
+			WoWPro:UpdateGuide()
+			WoWPro:MapPoint()
+
 		-- Update Achivement criteria based stuff
 		elseif event == "CRITERIA_UPDATE" then
 			--WoWPro:UpdateGuide()
@@ -842,3 +856,26 @@ do -- BAG_UPDATE_bucket Waiting Bucket Closure
 	end
 
 end -- End Bucket Closure
+
+do -- DelayMapUpdate Bucket Closure
+
+	local THROTTLE_TIME = 0.2
+	local throt
+	local f = CreateFrame("Frame")
+	f:Hide()
+	f:SetScript("OnUpdate", function(self, elapsed)
+		throt = throt - elapsed
+		if throt < 0 then
+			WoWPro:MapPoint() -- Update the TomTom arrow
+			f:Hide()
+		end
+	end)
+
+	function WoWPro:DelayMapPoint()
+		-- We will wait THROTTLE_TIME before doing a MapUpdate()
+		throt = THROTTLE_TIME
+		f:Show()
+	end
+
+end -- End Bucket Closure
+
