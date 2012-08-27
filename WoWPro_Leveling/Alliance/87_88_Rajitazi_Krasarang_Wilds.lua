@@ -7,7 +7,7 @@
 WoWPro.Leveling:RegisterGuide('RajKra8788', 'Krasarang Wilds', 'Rajitazi', '87', '88', 'EmmKun8889', 'Alliance', function() 
 return [[
 
-F Zhu's Watch|QID|11111|M|19, 56|N|Accept flight from "Dragonwing" Dan to see Ken-Ken|
+F Zhu's Watch|QID|29873|M|19,56|N|Accept flight from "Dragonwing" Dan to see Ken-Ken|Z|Valley of the Four Winds|
 A The Arcanic Oubliette|QID|30274|N|From UI ALert. If you fly in this will pop up now, if you run in you will get it when you see Kang.|
 T Ken-Ken|QID|29873|M|76.23,7.13|N|To Ken-Ken. This was accepted from Xiao at the beginning of Valley of the 4 Winds.|
 A What's Eating Zhu's Watch?|QID|30079|M|76.24,7.13|N|From Ken-Ken.|
