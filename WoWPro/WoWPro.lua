@@ -269,18 +269,11 @@ function WoWPro:OnEnable()
     end
 
 	-- Warning if the user is missing Swatter --
-	if not Swatter then
-		WoWPro:Print("It looks like you don't have |cff33ff33Swatter|r installed. "
-			.."While we would love to claim our software is bug free, errors have occured. "
-			.."Download it for free from http://auctioneeraddon.com/dl/AddOns/!Swatter-5.6.4424.zip or consider installing Auctioneer from www.curse.com .")
-	end
-
-	-- Warning if the user is missing Swatter --
-	if not Swatter then
-		WoWPro:Print("It looks like you don't have |cff33ff33Swatter|r installed. "
-			.."While we would love to claim our software is bug free, errors have occured. "
-			.."Download it for free from http://auctioneeraddon.com/dl/AddOns/!Swatter-5.6.4424.zip or consider installing Auctioneer from www.curse.com .")
-	end
+	--if not Swatter then
+	--	WoWPro:Print("It looks like you don't have |cff33ff33Swatter|r installed. "
+	--		.."While we would love to claim our software is bug free, errors have occured. "
+	--		.."Download it for free from http://auctioneeraddon.com/dl/AddOns/!Swatter-5.6.4424.zip or consider installing Auctioneer from www.curse.com .")
+	--end
 
 	-- Loading Frames --
 	if not WoWPro.FramesLoaded then --First time the addon has been enabled since UI Load
@@ -338,7 +331,7 @@ function WoWPro:OnEnable()
 	})
 	if not WoWPro.MOP then WoWPro:RegisterEvents( {"QUEST_QUERY_COMPLETE"} ) end
 --	WoWPro.LockdownTimer = nil
-	WoWPro.LockdownTimer = 2.0 -- Initial setting so that InitLockdown will get set to nil after login
+	WoWPro.LockdownTimer = 1.0 -- Initial setting so that InitLockdown will get set to nil after login
 	WoWPro.EventFrame:SetScript("OnUpdate", function(self, elapsed)
 	    if WoWPro.LockdownTimer ~= nil then
 	        WoWPro.LockdownTimer = WoWPro.LockdownTimer - elapsed
@@ -373,17 +366,6 @@ function WoWPro:OnEnable()
 		    WoWPro:dbp("Event Fired: "..event)
 		end
 
-
-		-- Unlocking event processong till after things get settled --
---		if event == "PLAYER_ENTERING_WORLD" then
---		    WoWPro.InitLockdown = true
---		    WoWPro.LockdownTimer = 2.0
-
-		-- Updating WoWPro keybindings --
-		--elseif event == "UPDATE_BINDINGS" and not InCombatLockdown() then
-		--	WoWPro:UpdateGuide()
-		--end
-
 		-- Receiving the result of the completed quest query --
 		if event == "QUEST_QUERY_COMPLETE" then
 			local num = 0
@@ -408,8 +390,6 @@ function WoWPro:OnEnable()
 		-- Locking event processong till after things get settled --
 		elseif event == "PLAYER_LEAVING_WORLD" then
 			WoWPro:dbp("Locking Down 1")
---			WoWPro.LockdownTimer = 2.0
---	  		WoWPro.InitLockdown = true
 
 		-- Noticing if we have entered a Dungeon!
 		elseif event == "ZONE_CHANGED_NEW_AREA" then
@@ -450,19 +430,7 @@ function WoWPro:OnEnable()
 		-- Updating party-dependant options --
 		if event == "PARTY_MEMBERS_CHANGED"	or event == "UPDATE_BINDINGS" then
 			WoWPro:UpdateGuide()
-		--end
 
-		-- Unlocking guide frame when leaving combat --
-		elseif event == "PLAYER_REGEN_ENABLED"  then
-			-- Unlocking event processong till after things get settled --
-			--if event == "PLAYER_ENTERING_WORLD" then
-			--	WoWPro.InitLockdown = true
-			--	WoWPro.LockdownTimer = 2.0
-			--end
-
-			--if WoWPro.need_UpdateGuide then
-			--	WoWPro:UpdateGuide()
-			--end
 
 		-- Refresh the arrow after a change of continent or similar zoning
 		elseif event == "PLAYER_ENTERING_WORLD" then
@@ -471,24 +439,16 @@ function WoWPro:OnEnable()
 		-- Update the guide in case there were quest or objectives completed during the cinematics
 		-- and the UI was not updated.
 		elseif event == "CINEMATIC_STOP" then
-			WoWPro:UpdateGuide()
-			WoWPro:MapPoint()
+			--WoWPro:UpdateGuide()
+			--WoWPro:MapPoint()
+			WoWPro:DelayMapPoint(true)
 
 		-- Update Achivement criteria based stuff
 		elseif event == "CRITERIA_UPDATE" then
 			--WoWPro:UpdateGuide()
 			WoWPro:AutoCompleteQuestUpdate()
+
 		end
-
-		-- Updating party-dependant options --
-		--if event == "PARTY_MEMBERS_CHANGED" and not InCombatLockdown() then
-		--	WoWPro:UpdateGuide()
-		--end
-
-		-- Updating WoWPro keybindings --
-		--if event == "UPDATE_BINDINGS" and not InCombatLockdown() then
-		--	WoWPro:UpdateGuide()
-		--end
 
 		-- ====================================================================
 		-- Event management shared between all the modules (used to be in each)
@@ -700,13 +660,14 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 				quest_log_update = nil
 			end
 
-			if gossip_show then
+			--if gossip_show then
+			if GossipFrame:IsShown() then
 
 				local qidx = WoWPro.CurrentIndex
 				local action, step = WoWPro.action[qidx], WoWPro.step[qidx]
 --err("gossip_show: qidx = %s, action = %s, step = %s",qidx,action,step)
 
-				if action == "T" then
+				if WoWPro.CharDB.AutoTurnin and action == "T" then
 
 					local index = 1
 					repeat
@@ -718,7 +679,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 						index = index + 1
 					until not item
 
-				elseif action == "A" then
+				elseif WoWPro.CharDB.AutoAccept and action == "A" then
 
 					local index = 1
 					repeat
@@ -732,14 +693,15 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 
 				end
 
-				gossip_show = nil
+				--gossip_show = nil
 			end
 
-			if quest_greeting then
+			--if quest_greeting then
+			if QuestFrameGreetingPanel:IsShown() then
 				local qidx = WoWPro.CurrentIndex
 				local action, step = WoWPro.action[qidx], WoWPro.step[qidx]
 
-				if action == "T" then
+				if WoWPro.CharDB.AutoSelect and action == "T" then
 					local numActiveQuests = GetNumActiveQuests()
 					local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
 					for i=1, numActiveQuests do
@@ -748,7 +710,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 							break
 						end
 					end
-				elseif action == "A" then
+				elseif WoWPro.CharDB.AutoSelect and action == "A" then
 					local numAvailableQuests = GetNumAvailableQuests()
 					for i=1, numAvailableQuests do
 						if GetAvailableTitle(i) == step then
@@ -758,38 +720,42 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 					end
 				end
 
-				quest_greeting = nil
+				--quest_greeting = nil
 			end
 
-			if quest_progress then
+			--if quest_progress then
+			if QuestFrameProgressPanel:IsShown() then
 
 				-- Turnin the current quest automaticaly if applicable
 				local qidx = WoWPro.CurrentIndex
-				if WoWPro.action[qidx] == "T" and GetTitleText() == WoWPro.step[qidx] then
+				if WoWPro.CharDB.AutoTurnin and WoWPro.action[qidx] == "T" and GetTitleText() == WoWPro.step[qidx] then
 					CompleteQuest()
 				end
 
-				quest_progress = nil
+				--quest_progress = nil
 			end
 
-			if quest_complete then
+			--if quest_complete then
+			if QuestFrameRewardPanel:IsShown() then
 
 				-- Choose the reward automaticaly if there is only one choice
 				local qidx = WoWPro.CurrentIndex
-				if (WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and
+				if WoWPro.CharDB.AutoTurnin and 
+					(WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and
 					GetTitleText() == WoWPro.step[qidx] and
 					GetNumQuestChoices() <= 1 then
-						GetQuestReward(0)
+						GetQuestReward(1)
 				end
 
-				quest_complete = nil
+				--quest_complete = nil
 			end
 
-			if quest_detail then
+			--if quest_detail then
+			if QuestFrameDetailPanel:IsShown() then
 
 				-- Accept the current quest automaticaly if applicable
 				local qidx = WoWPro.CurrentIndex
-				if WoWPro.action[qidx] == "A" and GetTitleText() == WoWPro.step[qidx] then
+				if WoWPro.CharDB.AutoAccept and WoWPro.action[qidx] == "A" and GetTitleText() == WoWPro.step[qidx] then
 					-- Auto Quest are automaticaly accepted as soon as you see the quest text
 					-- This code was lifted from QuestFrame.lua to prevent calling AcceptQuest()
 					-- for an already accepted quest.
@@ -800,7 +766,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 					end
 				end
 
-				quest_detail = nil
+				--quest_detail = nil
 			end
 
 			f:Hide()
@@ -860,20 +826,25 @@ end -- End Bucket Closure
 do -- DelayMapUpdate Bucket Closure
 
 	local THROTTLE_TIME = 0.2
-	local throt
+	local throt, need_update_guide
 	local f = CreateFrame("Frame")
 	f:Hide()
 	f:SetScript("OnUpdate", function(self, elapsed)
 		throt = throt - elapsed
-		if throt < 0 then
+		if throt < 0 and not WoWPro.InitLockdown then
+			if need_update_guide then
+				WoWPro:UpdateGuide()
+				need_update_guide = nil
+			end
 			WoWPro:MapPoint() -- Update the TomTom arrow
 			f:Hide()
 		end
 	end)
 
-	function WoWPro:DelayMapPoint()
+	function WoWPro:DelayMapPoint(needUpdateGuide)
 		-- We will wait THROTTLE_TIME before doing a MapUpdate()
 		throt = THROTTLE_TIME
+		need_update_guide = needUpdateGuide or need_update_guide
 		f:Show()
 	end
 
