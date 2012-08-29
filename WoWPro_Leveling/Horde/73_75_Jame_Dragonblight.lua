@@ -50,16 +50,18 @@ C Pride of the Horde |QID|11980|N|Kill Anub'ar Ambushers.|US|M|15.5,51.2|
 T Pride of the Horde |QID|11980|M|14.2,49.8|N|To Blood Guard Roh'kill.|
 T Into the Fold |QID|11978|M|12.8,48.5|N|To Emissary Brighthoof.|
 A Blood Oath of the Horde |QID|11983|M|12.8,48.5|PRE|11978|N|From Emissary Brighthoof.|
-C Blood Oath of the Horde |QID|11983|N|Talk to the Taunka'le Refugees and go through the text until you complete the quest.|
+
+C Blood Oath of the Horde |QID|11983| |N|Talk to the Taunka'le Refugees and go through the text until you complete the quest.|
+
 T Blood Oath of the Horde |QID|11983|M|12.8,48.5|N|To Emissary Brighthoof.|
 
 A Agmar's Hammer |QID|12008|M|12.8,48.5|PRE|11983|N|From Emissary Brighthoof.|
 T Agmar's Hammer |QID|12008|M|38.1,46.3|N|To Overlord Agmar.|
 A Victory Nears... |QID|12034|M|38.1,46.3|N|From Overlord Agmar.|
 A Rifle the Bodies |QID|11999|M|38.1,46.2|N|From the Image of Archmage Aethas Sunreaver.|
-A Wanted: Dreadtalon |QID|12091|N|From the Wanted! Poster.|M|37.66,46.56|
-A Wanted: Gigantaur |QID|12090|N|From the Wanted! Poster.|M|37.66,46.56|
-A Wanted: Magister Keldonus |QID|12089|N|From the Wanted! Poster.|M|37.66,46.56|
+A Wanted: Magister Keldonus |QID|12089| |N|From the Wanted Poster just outside the door.|M|37.6,46.5|
+A Wanted: Gigantaur |QID|12090| |N|From the Wanted Poster just outside the door.|M|37.6,46.5|
+A Wanted: Dreadtalon |QID|12091| |N|From the Wanted Poster just outside the door.|M|37.6,46.5|
 A Message from the West |QID|12033|M|37.3,46.8|PRE|11916|O|N|From Messenger Torvus.|
 C Message from the West |QID|12033|N|Use the firepot right next to the quest NPC.|M|37.4,46.7|PRE|11916|O|
 T Message from the West |QID|12033|M|37.3,46.8|PRE|11916|O|N|To Messenger Torvus.|
@@ -100,18 +102,19 @@ A Strength of Icemist |QID|12063|M|35.8,46.7|N|From Greatmother Icemist. She wan
 C Scourge Armaments|QID|12048|M|26.9,43.3|N|Kill and loot Anub'ar to get the armaments.|S|
 T Strength of Icemist |QID|12063|N|To Banthok Icemist. He is actually down next to the water.|M|22.61,41.71|
 A Chains of the Anub'ar |QID|12064|M|22.61,41.71|PRE|12063|N|From Banthok Icemist.|
-l Flesh-Bound Tome |QID|12057|L|36744|N|Until you get a Flesh-Bound Tome.|S|
-l Anok'ra's Key Fragment |QID|12064|L|36752|N|Kill and loot Anok'ra (ground floor) to get his key fragment.|M|25,45|
-l Sinok's Key Fragment |QID|12064|N|Kill and loot Sinok to get his key fragment.|L|36754|M|26,44|
-C Chains of the Anub'ar |QID|12064|N|Look for Tivax, who can be at either waypoint, get his key fragment.|M|26,39;23,39|
-l Flesh-Bound Tome |QID|12057|L|36744|N|Until you get a Flesh-Bound Tome. Also drops off the three named mobs we just killed.|US|
+C Scourge Armaments|QID|12048|S|M|26.9,43.3|
+K Anub'ar Cultists |QID|12057|S|L|36744|N|Until you get a Flesh-Bound Tome. Also drops off the three named mobs we just killed.|
+K Anok'ra the Manipulator |QID|12064|QO|Anok'ra's Key Fragment: 1/1|T|Anok'ra the Manipulator|N|Face south, then stay left, he's in a small hut at .|M|25,45|
+K Sinok the Shadowrager |QID|12064|QO|Sinok's Key Fragment: 1/1|T|Sinok the Shadowrager|N|Head to the upper plateau, Sinok is at | |L|36754|M|26,44|
+K Tivax the Breaker |QID|12064|QO|Tivax's Key Fragment: 1/1|T|Tivax the Breaker|N|Head north, Tivax is on the other side of the village in a hut at or (23,39).|M|26,39|
+K Anub'ar Cultists |QID|12057|US|L|36744|N|Until you get a Flesh-Bound Tome. Also drops off the three named mobs we just killed.|
 A The Flesh-Bound Tome |QID|12057|U|36744|M|26.9,43.3|N|From the Flesh-Bound Tome.|
 T Chains of the Anub'ar |QID|12064|N|To Banthok Icemist.|M|22.61,41.71|
 
 A Return of the High Chief |QID|12069|M|22.6,41.7|PRE|12064|N|From Banthok Icemist.|
 C Return of the High Chief |QID|12069|M|25.6,40.9|N|Click on the Mechanism to free the High Chief, then help defeat Under-King Anub'et'kan. Loot the Husk when it is dead.|
 C The Might of the Horde |QID|12053|U|36738|M|24.8,41.2|N|Drop the banner then protect it until you get the quest update.|
-C Scourge Armaments|QID|12048|M|26.9,43.3|N|Kill and loot Anub'ar to get the armaments.|US|
+C Scourge Armaments|QID|12048|US|M|26.9,43.3|N|Kill and loot Anub'ar to get the armaments.|US|
 C Avenge this Atrocity! |QID|12006|S|N|Kill any Blue Dragonflight Force mob you see.|M|19,58|
 K Wind Trader Mu'fah |QID|12005|L|35800|N|Clear the way to the other side of the crater. Find and kill Wind Trader Mu'fah . He's standing infront of the door of that big stone building. Loot Wind Trader Mu'fah's Remains.|M|18.44,58.88|
 K Goramosh |QID|12005|L|35801|N|Go inside the building, take the slope going up left. Kill Goramosh, loot The Scales of Goramosh and Goramosh's Strange Device. |M|19.50,58.16|
@@ -148,14 +151,14 @@ T End Arcanimus |QID|12013|N|Use the Surge Needle Teleporter, then turn this que
 T Blightbeasts be Damned! |QID|12072|N|To Valnok Windrager.|M|37.2,45.7|
 T Projections and Plans |QID|12061|M|38.1,46.2|N|To the Image of Archmage Aethas Sunreaver.|
 A The Focus on the Beach |QID|12066|M|38.1,46.2|PRE|12061|N|From the Image of Archmage Aethas Sunreaver.|
-K Captain Emmy Malin |QID|12066|L|36751|M|26,65|N|You may need to kill mobs in the area until she spawns.|
+K Captain Emmy Malin |QID|12066|L|36751|M|26,65|T|Captain Emmy Malin|N|You may need to kill mobs in the area until she spawns.|
 C The Focus on the Beach |QID|12066|U|36751|N|Get close to the big arch and use the Ley Line Focus Control Ring you just looted.|M|26.4,65.0|
 T The Focus on the Beach |QID|12066|N|To the Image of Archmage Aethas Sunreaver.|M|38.1,46.2|
 
 A Atop the Woodlands |QID|12084|M|38.1,46.2|PRE|12066|N|From the Image of Archmage Aethas Sunreaver.|
 A Strengthen the Ancients |QID|12096|M|36.5,47.9|N|From Earthwarden Grife.|
 C Strengthen the Ancients |S|QID|12096|U|36786|N|Look for Woodlands Walkers. Dismount, and right click. They'll either attack or give you some bark. You can loot the bark off the ones that attack. Use the Bark on the non-aggressive Ancients.|M|31.2,59.7|
-K Lieutenant Ta'zinni |QID|12085|N|He drops 2 quest items, so make sure you get the letter as well as the amulet.|L|36779|M|32,71|
+K Lieutenant Ta'zinni |QID|12085|T|Lieutenant Ta'zinni|N|He drops 2 quest items, so make sure you get the letter as well as the amulet.| |L|36779|M|32,71|
 K Lieutenant Ta'zinni |QID|12085|N|He drops 2 quest items, so make sure you get the letter as well as the amulet.|L|36780|M|32,71|
 C Atop the Woodlands |QID|12084|U|36779|N|Use the amulet next to the big arch.|M|32.2,71.2|
 A A Letter for Home |QID|12085|U|36780|M|32.2,70.6|N|From Lieutenant Ta'zinni's Letter.|
