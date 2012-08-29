@@ -2281,7 +2281,26 @@ WoWPro.Zone2MapID = {
 			["mapID"] = 301,
 			["zone"] = "The Wandering Isle",
 			["mapName"] = "TheWanderingIsle",
+		},	
+		["The Jade Forest"] = {
+			["numFloors"] = 0,
+			["mapID"] = 806,
+			["zone"] = "The Jade Forest",
+			["mapName"] = "TheJadeForest",
 		},
+		["Valley of the Four Winds"] = {
+			["numFloors"] = 0,
+			["mapID"] = 807,
+			["zone"] = "Valley of the Four Winds",
+			["mapName"] = "ValleyoftheFourWinds",
+		},
+		["Krasarang Wilds"] = {
+			["numFloors"] = 0,
+			["mapID"] = 857,
+			["zone"] = "Krasarang Wilds",
+			["mapName"] = "KrasarangWilds",
+		},
+
 	}
 	
 local MapsSeen = {}
