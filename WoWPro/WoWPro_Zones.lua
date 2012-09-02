@@ -2294,11 +2294,23 @@ WoWPro.Zone2MapID = {
 			["zone"] = "Valley of the Four Winds",
 			["mapName"] = "ValleyoftheFourWinds",
 		},
+		["Kun-Lai Summit"] = {
+			["numFloors"] = 0,
+			["mapID"] = 809,
+			["zone"] = "Kun-Lai Summit",
+			["mapName"] = "KunLaiSummit",
+		},
 		["Krasarang Wilds"] = {
 			["numFloors"] = 0,
 			["mapID"] = 857,
 			["zone"] = "Krasarang Wilds",
 			["mapName"] = "KrasarangWilds",
+		},
+		["The Veiled Stair"] = {
+			["numFloors"] = 0,
+			["mapID"] = 873,
+			["zone"] = "The Veiled Stair",
+			["mapName"] = "TheVeiledStair",
 		},
 
 	}

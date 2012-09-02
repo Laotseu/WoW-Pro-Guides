@@ -309,7 +309,9 @@ local zidmap = {
 	[795] = "Molten Front",
 	[806] = "The Jade Forest",
 	[807] = "Valley of the Four Winds",
+	[809] = "Kun-Lai Summit",
 	[857] = "Krasarang Wilds",
+	[873] = "The Veiled Stair",
    [1497] = "Undercity",
    [1519] = "Stormwind City",
    [1537] = "Ironforge",
@@ -432,7 +434,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	--if row then
 	--	zone = WoWPro.rows[row].zone or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(%-]+)"))
 	--else
-		zone = WoWPro.zone[i] or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(%-]+)"))
+		zone = WoWPro.zone[i] or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(%)]+)"))
 	--end
 	local autoarrival = WoWPro.waypcomplete[i] or 3
 
