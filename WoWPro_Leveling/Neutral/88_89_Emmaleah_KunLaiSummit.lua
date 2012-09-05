@@ -1,4 +1,4 @@
-﻿
+
 -- WoWPro Guides by "The WoW-Pro Community" are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 -- Based on a work at github.com.
 -- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
@@ -8,14 +8,20 @@ return [[
 
 N Welcome to Kun-Lai Summit.|N|This guide assumes you are starting at Grassy Cline in Valley of the Four Winds. If you don't have the quest 'Road to Kun-Lai' it is available in Halfhill.|
 
-C The Road to Kun-Lai|QID|31254|FACTION|Alliance|QO|Speak with Highroad Grummle: 1/1|NC|M|70.08,23.47|Z|Valley of the Four Winds|
-C The Road to Kun-Lai|QID|31255|FACTION|Horde|QO|Speak with Highroad Grummle: 1/1|NC|M|70.08,23.47|Z|Valley of the Four Winds|
+A The Road to Kun-Lai|QID|31254|FACTION|Alliance|M|55.3,50.2|Z|Valley of the Four Winds|N|From Highlord Grummle.|
+F Grassy Cline|QID|31254|FACTION|Alliance|
+A The Road to Kun-Lai|QID|31255|FACTION|Horde|M|55.3,50.2|Z|Valley of the Four Winds|N|From Highlord Grummle.|
+F Grassy Cline|QID|31255|FACTION|Horde|
+
+C Speak with Highroad Grummle|QID|31254|FACTION|Alliance|QO|Speak with the Highroad Grummle: 1/1|NC|M|70.08,23.47|Z|Valley of the Four Winds|
+C Speak with Highroad Grummle|QID|31255|FACTION|Horde|QO|Speak with the Highroad Grummle: 1/1|NC|M|70.08,23.47|Z|Valley of the Four Winds|
 
 f Tavern in the Mists|QID|99999|M|56.75,75.82|Z|The Veiled Stair|N|At Shin the Weightless.|
 A Robbing Robbers of Robbers|QID|31286|M|53.52,65.78|Z|The Veiled Stair|N|From Len the Whisperer.|
 A Educating Saurok|QID|31287|M|53.52,65.78|Z|The Veiled Stair|N|From Len the Whisperer.|
-C Robbing Robbers of Robbers|QID|31286|Z|The Veiled Stair|M|45.62,45.63|
-C Educating Saurok|QID|31287|M|50.18,42.00|Z|The Veiled Stair|N|In the back of the cave.|
+C Robbing Robbers of Robbers|QID|31286|S|NC|Z|The Veiled Stair|M|45.62,45.63|
+K Kill Leechfingers|QID|31287|T|Leechfingers|M|55.7,55.9;50.18,42.00|CC|Z|The Veiled Stair|N|In the back of the cave.|
+C Robbing Robbers of Robbers|QID|31286|US|NC|Z|The Veiled Stair|M|45.62,45.63|
 T Robbing Robbers of Robbers|QID|31286|M|53.49,65.77|Z|The Veiled Stair|N|To Len the Whisperer.|
 T Educating Saurok|QID|31287|M|53.49,65.77|Z|The Veiled Stair|N|To Len the Whisperer.|
 
@@ -24,6 +30,7 @@ C The Road to Kun-Lai|QID|31255|FACTION|Horde|QO|Speak with Brewmaster Boof: 1/1
 A The Spring Drifter|QID|31285|M|51.98,43.69|Z|The Veiled Stair|N|From Brewmaster Boof.|
 C The Spring Drifter|QID|31285|M|51.98,43.69|Z|The Veiled Stair|N|Get on the boat and enjoy the ride.|
 
+T The Spring Drifter |QID|31285|M|72.7,93.0|N|To Brewmaster Boof|
 f Binan Village|QID|99999|CC|M|72.52,94.18|N|At Jo the Wind Watcher.|
 A Temple of the White Tiger|QID|31392|FACTION|Alliance|M|72.04,94.17|N|From Wang Chung.|
 A Temple of the White Tiger|QID|31393|FACTION|Horde|M|72.04,94.17|N|From Wang Chung.|
@@ -33,9 +40,12 @@ T The Road to Kun-Lai|QID|31254|FACTION|Alliance|M|72.25,91.86|N|To Mayor Brambl
 T The Road to Kun-Lai|QID|31255|FACTION|Horde|M|72.25,91.86|N|To Mayor Bramblestaff.|
 A Call Out Their Leader|QID|30457|M|72.25,91.86|N|From Mayor Bramblestaff.|
 A All of the Arrows|QID|30459|M|70.47,90.05|N|From Commander Hsieh.|
-C Hit Medicine|QID|30460|U|79819|M|68.03,87.57|
-C All of the Arrows|QID|30459|M|68.79,86.46|
-C Call Out Their Leader|QID|30457|M|68.89,88.51|
+C All of the Arrows|QID|30459|S|NC|M|68.79,86.46|
+C Hit Medicine|QID|30460|S|NC|U|79819|M|68.03,87.57|N|Normal healing spells will also work.|
+C Kill Bataari Tribe members|QID|30457|QO|Bataari Tribe Members slain: 10/10|M|68.89,88.51|N|Kill 10 Bataari Tribe members and the Fire-Warrior will appear.|
+K Kill Bataari Fire-Warrior|QID|30457|T|Bataari Fire-Warrior|M|68.6,88.5|QO|Bataari Fire-Warrior slain: 1/1|
+C Hit Medicine|QID|30460|US|NC|U|79819|M|68.03,87.57|N|Normal healing spells will also work.|
+C All of the Arrows|QID|30459|US|NC|M|68.79,86.46|
 T All of the Arrows|QID|30459|M|71.01,90.45|N|To Commander Hsieh.|
 T Call Out Their Leader|QID|30457|M|72.27,91.85|N|To Mayor Bramblestaff.|
 T The Spring Drifter|QID|31285|M|72.64,93.00|N|To Brewmaster Boof.|
@@ -52,15 +62,17 @@ A Eastwind Rest|QID|30513|FACTION|Horde|M|71.62,93.12|N|From General Nazgrim.|
 A Repossession|QID|30469|M|74.94,88.85|N|From Merchant Shi.|
 A My Son...|QID|30467|M|74.94,88.85|N|From Merchant Shi.|
 A Enraged Vengeance|QID|30468|M|74.77,88.74|N|From Swordmistress Mei.|
-A The Waterspeaker's Staff|QID|30496|M|75.07,87.97|N|From Waterspeaker Gorai.|
-A Free the Dissenters|QID|30967|M|75.07,87.97|N|From Waterspeaker Gorai.|
-C Free the Dissenters|QID|30967|S|M|74.40,78.82|N|Talk to the Prisoners, pick up the sparklies and kill what attacks you as you travel towards the next spot.|
-C The Waterspeaker's Staff|QID|30496|M|74.39,77.69|
-C Repossession|QID|30469|M|73.99,77.54|
+A The Waterspeaker's Staff|QID|30496|M|75.1,87.9|N|From Waterspeaker Gorai.|
+A Free the Dissenters|QID|30967|M|75.1,87.9|N|From Waterspeaker Gorai.|
+C Enraged Vengeance|QID|30468|S|M|73.26,77.51|
+C Free the Dissenters|QID|30967|S|NC|M|74.40,78.82|N|Talk to the Prisoners, pick up the sparklies and kill what attacks you as you travel towards the next spot.|
+C Repossession|QID|30469|S|M|73.99,77.54|
+C The Waterspeaker's Staff|QID|30496|T|Orachi|M|74.39,77.69|N|Kill Orachi and get the staff.|
 T My Son...|QID|30467|M|74.68,76.88|N|To Wu-Peng.|
 A Father and Child Reunion|QID|30834|M|74.68,76.88|N|From Wu-Peng.|
-C Enraged Vengeance|QID|30468|M|73.26,77.51|
-C Free the Dissenters|QID|30967|US|M|74.40,78.82|
+C Repossession|QID|30469|US|M|73.99,77.54|
+C Enraged Vengeance|QID|30468|US|M|73.26,77.51|
+C Free the Dissenters|QID|30967|US|NC|M|74.40,78.82|
 T The Waterspeaker's Staff|QID|30496|M|75.17,88.21|N|To Waterspeaker Gorai.|
 T Free the Dissenters|QID|30967|M|75.17,88.21|N|To Waterspeaker Gorai.|
 C Father and Child Reunion|QID|30834|M|74.95,88.86|
@@ -74,7 +86,7 @@ A Cleansing the Mere|QID|30828|M|74.92,88.52|N|From Waterspeaker Gorai.|
 C Cleansing the Mere|QID|30828|M|71.74,87.39|
 T Cleansing the Mere|QID|30828|M|71.74,87.39|N|To Waterspeaker Gorai.|
 A The Fall of Shai Hu|QID|30855|M|71.74,87.39|N|From Waterspeaker Gorai.|
-C The Fall of Shai Hu|QID|30855|M|71.16,82.96|N|Kill the small Sha on the island.|
+K Kill Shai Hu|QID|30855|T|Shai Hu|M|71.16,82.96|N|Kill the small Sha on the island to get the shield down.|
 T The Fall of Shai Hu|QID|30855|M|74.93,88.53|N|To Waterspeaker Gorai.|
 
 C Eastwind Rest|QID|30513|FACTION|Horde|NC|QO|Spoke with Farmhand Ko: 1/1|M|63.65,86.68|N|Talk to Farmhand Ko.|
@@ -95,7 +107,7 @@ C Westwind Rest|QID|30512|FACTION|Alliance|NC|QO|Speak with Farmhand Bo: 1/1|M|5
 C Westwind Rest|QID|30512|FACTION|Alliance|NC|QO|Speak with Elder Tsulan: 1/1|M|56.38,84.44|
 T Westwind Rest|QID|30512|FACTION|Alliance|M|56.38,84.44|N|To Elder Tsulan.|
 A Challenge Accepted|QID|30514|FACTION|Alliance|M|56.38,87.44|N|From Elder Tsulan.|
-C Challenge Accepted|QID|30514|FACTION|Alliance|M|58.30,84.20|
+K Kill Ur-Bataar|QID|30514|T|Ur-Bataar|FACTION|Alliance|M|58.30,84.20|N|Click the banner to start the combat.|
 T Challenge Accepted|QID|30514|FACTION|Alliance|M|54.69,84.27|N|To Elder Tsulan.|
 A Round 'Em Up|QID|30575|FACTION|Alliance|M|53.77,82.70|N|From Admiral Taylor.|
 A Blue Dwarf Needs Food Badly|QID|30583|FACTION|Alliance|M|54.14,83.28|N|From Sully "The Pickle" McLeary.|
@@ -103,45 +115,54 @@ A Mogu?! Oh No-gu!|QID|30619|M|54.19,83.44|FACTION|Alliance|N|From Elder Tsulan.
 f Westwind Rest|QID|30619|M|53.97,84.27|FACTION|Alliance|N|At Tabo the Flyer.|
 A Trouble on the Farmstead|QID|30569|FACTION|Alliance|M|53.80,84.10|N|From Farmhand Bo.|
 A Deanimate the Reanimated|QID|30593|FACTION|Alliance|M|53.44,83.09|N|From Mishka.|
+C Blue Dwarf Needs Food Badly|QID|30583|S|FACTION|Alliance|M|50.70,83.11|N|While killing birds (or Mushan) for meat. also capture 3 yaks (by clicking on them)|
+C Round 'Em Up|QID|30575|FACTION|Alliance|S|NC|M|53.92,83.67|
 T Trouble on the Farmstead|QID|30569|FACTION|Alliance|M|60.25,85.73|N|To Farmer Chow.|
 
 A Farmhand Freedom|QID|30571|M|60.25,85.73|N|From Farmer Chow.|
 A ... and the Pot, Too!|QID|30581|M|60.19,85.81|N|From Uyen Chow.|
-C Farmhand Freedom|QID|30571|M|61.88,87.04|
-C ... and the Pot, Too!|QID|30581|M|60.03,88.43|N|The pot is in the house.|
+C ... and the Pot, Too!|QID|30581|S|NC|M|60.03,88.43|N|The pot is in the house.|
+C Farmhand Freedom|QID|30571|M|61.88,87.04|N|Kill the guards to free the slaves.|
+C ... and the Pot, Too!|QID|30581|US|NC|M|60.03,88.43|N|The pot is in the house.|
 T ... and the Pot, Too!|QID|30581|M|60.18,85.86|N|To Uyen Chow.|
 T Farmhand Freedom|QID|30571|M|60.23,85.82|N|To Farmer Chow.|
 A Back to Westwind Rest|QID|31252|FACTION|Alliance|M|60.23,85.82|N|From Farmer Chow.|
 A Back to Eastwind Rest|QID|31253|FACTION|Horde|M|60.22,85.77|N|From Farmer Chow.|
 
-R Mojuija|QID|99999|CC|M|59.55,78.27|
+;R Mojuija|QID|30595|CC|M|59.55,78.27|; Need to plot a path
 A Profiting off of the Past|QID|30595|M|59.59,78.26|N|From Bao Jian.|
-C Profiting off of the Past|QID|30595|M|58.40,74.86|
-C Mogu?! Oh No-gu!|QID|30619|FACTION|Alliance|M|58.23,71.21|
-C Deanimate the Reanimated|QID|30593|FACTION|Alliance|M|59.20,72.21|
-C Mogu?! Oh No-gu!|QID|30620|FACTION|Horde|M|58.23,71.21|
-C Deanimate the Reanimated|QID|30594|FACTION|Horde|M|59.20,72.21|
+C Profiting off of the Past|QID|30595|S|NC|M|58.40,74.86|
+C Deanimate the Reanimated|QID|30593|S|FACTION|Alliance|M|59.20,72.21|
+K Kill Mogujia Soul-Caller|QID|30619|T|Mogujia Soul-Caller|FACTION|Alliance|M|58.23,71.21|
+C Deanimate the Reanimated|QID|30593|US|FACTION|Alliance|M|59.20,72.21|
+C Profiting off of the Past|QID|30595|US|NC|M|58.40,74.86|
 T Profiting off of the Past|QID|30595|M|59.58,78.27|N|To Bao Jian.|
 
-C Blue Dwarf Needs Food Badly|QID|30583|FACTION|Alliance|M|50.70,83.11|N|While killing birds (or Mushan) for meat. also capture 3 yaks (by clicking on them)|
-C Round 'Em Up|QID|30575|FACTION|Alliance|M|53.92,83.67|
+C Blue Dwarf Needs Food Badly|QID|30583|US|FACTION|Alliance|M|50.70,83.11|N|While killing birds (or Mushan) for meat. also capture 3 yaks (by clicking on them)|
+C Round 'Em Up|QID|30575|FACTION|Alliance|US|NC|M|53.92,83.67|
 T Blue Dwarf Needs Food Badly|QID|30583|FACTION|Alliance|M|54.12,83.37|N|To Sully "The Pickle" McLeary.|
 T Round 'Em Up|QID|30575|M|FACTION|Alliance|53.81,82.77|N|To Admiral Taylor.|
 T Back to Westwind Rest|QID|31252|FACTION|Alliance|M|53.80,83.99|N|To Farmhand Bo.|
 T Mogu?! Oh No-gu!|QID|30619|FACTION|Alliance|M|54.13,83.37|N|To Elder Tsulan.|
 T Deanimate the Reanimated|QID|30593|FACTION|Alliance|M|53.49,83.38|N|To Mishka.|
 A In Tents Channeling|QID|30652|FACTION|Alliance|M|53.80,82.74|N|From Admiral Taylor.|
-A Pandaren Prisoners|QID|30650|M|FACTION|Alliance|54.13,83.40|N|From Elder Tsulan.|
+A Pandaren Prisoners|QID|30650|M|54.2,83.4|FACTION|Alliance|54.13,83.40|N|From Elder Tsulan.|
 A Barrels of Fun|QID|30651|FACTION|Alliance|M|54.13,83.32|N|From Sully "The Pickle" McLeary.|
-C In Tents Channeling|QID|30652|FACTION|Alliance|M|50.50,78.59|
+C Pandaren Prisoners|QID|30650|S|NC|FACTION|Alliance|M|49.67,80.36|
+C Destroy the Eastern Oil Rig|QID|30651|NC|U|80528|QO|Eastern Oil Rig destroyed: 1/1|M|50.9,79.4|N|Pick an Explosives Barrel and set it near the rig.|
+K Kill Musaan the Blazecaster|QID|30652|T|Musaan the Blazecaster|QO|Musaan the Blazecaster slain: 1/1|FACTION|Alliance|M|50.4,78.6|
+K Kill Harala the Firespeaker|QID|30652|T|Harala the Firespeaker|QO|Harala the Firespeaker slain: 1/1|FACTION|Alliance|M|49.4,78.5|
+C Destroy the Southern Oil Rig|QID|30651|NC|U|80528|QO|Southern Oil Rig destroyed: 1/1|FACTION|Alliance|M|49.7,81.1|N|Pick an Explosives Barrel and set it near the rig.|
+K Kill Pao-kun the Pyromancer|QID|30652|T|Pao-kun the Pyromancer|QO|Pao-kun the Pyromancer slain: 1/1|FACTION|Alliance|M|49.1,80.3|
+K Kill Akonu the Embercaller|QID|30652|T|Akonu the Embercaller|QO|Akonu the Embercaller slain: 1/1|FACTION|Alliance|M|47.7,80.0|
 T In Tents Channeling|QID|30652|FACTION|Alliance|N|To UI Alert.|
 A The Ordo Warbringer|QID|30660|FACTION|Alliance|N|From UI Alert.|
-C The Ordo Warbringer|QID|30660|FACTION|Alliance|M|48.35,76.69|
-C Barrels of Fun|QID|30651|FACTION|Alliance|M|49.42,80.61|
-C Pandaren Prisoners|QID|30650|FACTION|Alliance|M|49.67,80.36|
+C Destroy the Western|QID|30651|NC|U|30651|QO|Western Oil Rig destroyed: 1/1|FACTION|Alliance|M|48.0,81.5|N|Pick an Explosives Barrel and set it near the rig.|
+K Kill Ordo Warbringer|QID|30660|FACTION|Alliance|M|49.1,76.7;48.4,76.7|N|Ordo Warbringer is in the cave to the back of the camp.|
+C Pandaren Prisoners|QID|30650|US|NC|FACTION|Alliance|M|49.67,80.36|
 T Barrels of Fun|QID|30651|FACTION|Alliance|M|54.13,83.32|N|To Sully "The Pickle" McLeary.|
-T The Ordo Warbringer|QID|30660|FACTION|Alliance|M|53.80,82.74|N|To Admiral Taylor.|
 T Pandaren Prisoners|QID|30650|FACTION|Alliance|M|53.80,82.74|N|To Admiral Taylor.|
+T The Ordo Warbringer|QID|30660|FACTION|Alliance|M|53.80,82.74|N|To Admiral Taylor.|
 A The Shado-Pan|QID|31455|FACTION|Alliance|M|53.80,82.74|N|From Admiral Taylor.|
 A Cho's Missive|QID|31460|FACTION|Alliance|M|53.49,83.38|N|From Mishka.|
 A Muskpaw Ranch|QID|31456|FACTION|Alliance|M|53.80,83.99|N|From Farmhand Bo.|
@@ -166,41 +187,45 @@ T Barrels of Fun|QID|30656|FACTION|Horde|M|62.76,79.81|N|To Rivett Clutchpop.|
 T The Ordo Warbringer|QID|30661|FACTION|Horde|M|62.28,80.29|N|To General Nazgrim.|
 T Pandaren Prisoners|QID|30655|FACTION|Horde|M|62.28,80.29|N|To General Nazgrim.|
 A The Shado-Pan|QID|31453|FACTION|Horde|M|62.28,80.29|N|From General Nazgrim.|
+A Beyond the Wall|QID|31695|M|54.1,83.4|N|From Elder Tsulan|
 A Cho's Missive|QID|31459|FACTION|Horde|M|62.67,80.65|N|From Shademaster Kiryn.|
 A Muskpaw Ranch|QID|31457|FACTION|Horde|M|62.55,79.53|N|From Farmhand Ko.|
 
-R Muskpaw Ranch|QID|30457|CC|M|71.5,70.04|
+;R Lao & Son's Yakwash|QID|31457|CC|M|71.5,70.04|; Need to plot a proper path
 T Muskpaw Ranch|QID|31457|FACTION|Horde|M|71.50,70.04|N|To Lao Muskpaw.|
 T Muskpaw Ranch|QID|31456|FACTION|Alliance|M|71.50,70.04|N|To Lao Muskpaw.|
 A The Missing Muskpaw|QID|30488|M|71.50,70.04|N|From Lao Muskpaw.|
 A Fresh Needle Scent|QID|30489|M|71.50,70.04|N|From Lao Muskpaw.|
+C Fresh Needle Scent|QID|30489|S|M|71.67,73.59|
 T The Missing Muskpaw|QID|30488|M|74.96,74.52|N|To Muskpaw Jr. He is in the back of the cave.|
 A At the Yak Wash|QID|30491|M|74.96,74.52|N|From Muskpaw Jr..|N|You can ride Jr's Yak out of the cave and leave vehicle when you are out.|
-A Yakity Yak|QID|30587|M|71.67,73.56|N|From UI Alert. (from killing Burilgi Despoiler)|
-C Yakity Yak|QID|30587|S|M|69.94,72.81|N|Also, as you go, Kill the sprites for needles, pick up and deliver yaks.|
-C At the Yak Wash|QID|30491|M|71.39,69.05|
-C Fresh Needle Scent|QID|30489|M|71.67,73.59|
-C Loot Muskpaw's Keepsake|QID|30582|U|80241|L|80241|N|From a Burilgl Despoiler|
-A The Late Mrs. Muskpaw|QID|30582|
+C Fresh Needle Scent|QID|30489|US|M|71.67,73.59|N|Get the remaining needles before mounting the Yak.|
+C At the Yak Wash|QID|30491|NC|M|71.39,69.05|QO|Escaped Yak Washed: 1/6|N|Jump on the Yak and it will go back to the farm by itself.|
+A Yakity Yak|QID|30587|M|70.9,70.4|N|From UI Alert. (from killing Burilgi Despoiler)|
+C Yakity Yak|QID|30587|S|M|69.94,72.81|
+C At the Yak Wash|QID|30491|NC|M|71.39,69.05|N|Mount the Yaks and ride them back to the farm.|
+C Yakity Yak|QID|30587|US|M|69.94,72.81|
+A The Late Mrs. Muskpaw|QID|30582|U|80241|N|You should have the Muskpaw's Keepsake by now. Otherwise, kill more Burilgi.|
 T At the Yak Wash|QID|30491|M|71.34,69.31|N|To Muskpaw Jr..|
 T The Late Mrs. Muskpaw|QID|30582|M|71.30,69.68|N|To Lao Muskpaw.|
 T Fresh Needle Scent|QID|30489|M|71.42,69.75|N|To Lao Muskpaw.|
 A The Fearmaster|QID|30804|M|71.30,69.68|N|From Lao Muskpaw.|
 C The Fearmaster|QID|30804|M|68.20,74.70|
-C Yakity Yak|QID|30587|US|M|69.94,72.81|
 T The Fearmaster|QID|30804|M|71.37,69.64|N|To Lao Muskpaw.|
 T Yakity Yak|QID|30587|M|71.42,69.75|N|To Lao Muskpaw.|
 A Back in Yak|QID|30492|M|71.33,69.28|N|From Muskpaw Jr..|
 
-R Grummie Bazaar|QID|30492|CC|M|65.51,61.26|
+;R The Grummie Bazaar|QID|30492|CC|M|65.51,61.26|; Need a proper path
 C Back in Yak|QID|30492|M|65.51,61.26|
 T Back in Yak|QID|30492|M|64.72,61.68|N|To Lucky Eightcoins.|
 A Oil Stop|QID|30614|M|65.48,60.78|N|From Slimy Inkstain.|
 A A Grummle's Luck|QID|30808|M|64.72,61.68|N|From Lucky Eightcoins.|
 A Traffic Issues|QID|30616|M|64.89,60.47|N|From Smokey Sootassle.|
+C Traffic Issues|QID|30616|S|M|62.8,67.4|
+C A Grummle's Luck|QID|30808|S|NC|M|63.5,66.8|N|Most of them are inside the huts.|
 C Oil Stop|QID|30614|U|80312|M|63.44,68.53|
-C A Grummle's Luck|QID|30808|M|62.24,66.92|
-C Traffic Issues|QID|30616|M|63.53,66.80|
+C A Grummle's Luck|QID|30808|US|NC|M|63.5,66.8||N|Most of them are inside the huts.|
+C Traffic Issues|QID|30616|US|M|62.8,67.4|
 T A Grummle's Luck|QID|30808|M|64.67,61.70|N|To Lucky Eightcoins.|
 T Oil Stop|QID|30614|M|65.44,60.78|N|To Slimy Inkstain.|
 T Traffic Issues|QID|30616|M|64.88,60.40|N|To Smokey Sootassle.|
@@ -221,20 +246,22 @@ C A Celestial Experience|QID|31395|FACTION|Horde|M|68.98,44.09|N|Talk to Xuen be
 T A Celestial Experience|QID|31395|FACTION|Horde|M|68.76,43.14|N|To Dezco.|
 A A Witness to History|QID|31511|FACTION|Horde|M|68.76,43.14|N|From Dezco.|
 
-R Grummle Bazaar|QID|99999|CC|M|64.24,59.45|
-C Roadside Assistance|QID|30617|NC|QO|Light the incense: 4/8|N|Don't worry about finishing this we will be back later.|
+R The Grummle Bazaar|QID|30617|CC|M|64.24,59.45|
+C Roadside Assistance|QID|30617|NC|QO|Lucky Burlap Incense lit: 4/8|N|Don't worry about finishing this we will be back later.|
 T Cho's Missive|QID|31460|FACTION|Alliance|M|57.28,61.66|N|To Lorewalker Cho.|
 T Cho's Missive|QID|31459|FACTION|Horde|M|57.28,61.66|N|To Lorewalker Cho.|
 A Path Less Traveled|QID|30999|M|57.28,61.66|N|From Lorewalker Cho.|
-h The Lucky Traveller|QID|99999|M|57.43,60.05|Z|One Keg|N|At Chiyo Mistpaw.|
-f One Keg|QID|30999|M|57.77,59.78|N|At Little Cleankite.|
 T Path Less Traveled|QID|30999|M|57.27,61.18|N|To Uncle Cloverleaf.|
+h The Lucky Traveller|QID|99999|M|57.43,60.05|Z|One Keg|N|At Chiyo Mistpaw.|
+f One Keg|QID|99999|M|57.77,59.78|N|At Little Cleankite.|
 A Instant Courage|QID|30601|M|57.27,61.18|N|From Uncle Cloverleaf.|
 A Resupplying One Keg|QID|30618|M|57.71,61.79|N|From Big Sal.|
 A They Stole My Luck!|QID|30621|M|57.35,60.22|N|From Ji-Lu the Lucky.|
+C Resupplying One Keg|QID|30618|S|M|56.33,50.88|
+C Instant Courage|QID|30601|S|NC|U|80308|M|57.54,47.44|It's ok to leave the Guides to die if you want to zerg out.|
 C They Stole My Luck!|QID|30621|M|57.77,49.30|N|Next 3 quests done inside Howlingwind Cavern.|
-C Instant Courage|QID|30601|U|80308|M|57.54,47.44|It's ok to leave the Guides to die if you want to zerg out.|
-C Resupplying One Keg|QID|30618|M|56.33,50.88|
+C Instant Courage|QID|30601|US|NC|U|80308|M|57.54,47.44|It's ok to leave the Guides to die if you want to zerg out.|
+C Resupplying One Keg|QID|30618|US|M|56.33,50.88|
 T Resupplying One Keg|QID|30618|M|57.71,61.76|N|To Big Sal.|
 T They Stole My Luck!|QID|30621|M|57.30,60.19|N|To Ji-Lu the Lucky.|
 T Instant Courage|QID|30601|M|57.23,61.15|N|To Uncle Cloverleaf.|
@@ -441,30 +468,30 @@ T A Line Unbroken|QID|30715|M|35.16,59.61|N|To Ban Bearheart.|
 T Honor, Even in Death|QID|30723|M|34.98,59.23|N|To Lin Silentstrike.|
 A To the Wall!|QID|30724|M|35.01,59.22|N|From Lin Silentstrike.|
 C To the Wall!|QID|30724|M|34.55,59.05|
-T To the Wall!|QID|30724|M|29.31,62.31|Z|Kun-Lai Summit|N|To Suna Silentstrike.|
-A Off the Wall!|QID|30750|M|29.30,62.32|Z|Kun-Lai Summit|N|From Suna Silentstrike.|
-A A Terrible Sacrifice|QID|30751|M|29.25,62.33|Z|Kun-Lai Summit|N|From Lao-Chin the Iron Belly.|
-C A Terrible Sacrifice|QID|30751|M|26.27,59.10|Z|Kun-Lai Summit|
-C Off the Wall!|QID|30750|M|26.98,59.95|Z|Kun-Lai Summit|N|Right Click to boot them off the wall (at low health).|
-T Off the Wall!|QID|30750|M|29.28,62.22|Z|Kun-Lai Summit|N|To Suna Silentstrike.|
-T A Terrible Sacrifice|QID|30751|M|29.28,62.22|Z|Kun-Lai Summit|N|To Lao-Chin the Iron Belly.|
-A Lao-Chin's Gambit|QID|30994|M|29.28,62.22|Z|Kun-Lai Summit|N|From Suna Silentstrike.|
-C Lao-Chin's Gambit|QID|30994|M|29.31,62.25|Z|Kun-Lai Summit|
-T Lao-Chin's Gambit|QID|30994|M|31.85,60.18|Z|Kun-Lai Summit|N|To Lao-Chin the Iron Belly.|
-A Do a Barrel Roll!|QID|30991|M|31.85,60.18|Z|Kun-Lai Summit|N|From Lao-Chin the Iron Belly.|
-C Do a Barrel Roll!|QID|30991|M|30.15,63.94|Z|Kun-Lai Summit|N|You can steer towards the target, then press 1 to blow up the barrel.|
-T Do a Barrel Roll!|QID|30991|M|31.82,60.16|Z|Kun-Lai Summit|N|To Lao-Chin the Iron Belly.|
-A Finish This!|QID|30992|M|31.82,60.16|Z|Kun-Lai Summit|N|From Lao-Chin the Iron Belly.|
-C Finish This!|QID|30992|M|31.30,61.61|Z|Kun-Lai Summit|
-T Finish This!|QID|30992|M|31.30,61.61|Z|Kun-Lai Summit|N|To Ban Bearheart.|
-A Where are My Reinforcements?|QID|30993|M|31.30,61.61|Z|Kun-Lai Summit|N|From Ban Bearheart.|
-A My Husband...|QID|30768|M|31.30,61.61|Z|Kun-Lai Summit|N|From Suna Silentstrike.|
-C Where are My Reinforcements?|QID|30993|M|34.08,58.62|Z|Kun-Lai Summit|Talk to Ban while down in the valley and then again beside the balloon.)
-T Where are My Reinforcements?|QID|30993|M|35.29,49.45|Z|Kun-Lai Summit|N|To Ban Bearheart. Follow Ban, hop in his balloon.|
-A Unbelievable!|QID|30752|M|35.29,49.45|Z|Kun-Lai Summit|N|From Ban Bearheart.|
-C Unbelievable!|QID|30752|M|36.75,47.67|Z|Kun-Lai Summit|
-T Unbelievable!|QID|30752|M|36.75,47.67|Z|Kun-Lai Summit|N|To Ban Bearheart.|
-A Into the Monastery|QID|31030|M|36.75,47.67|Z|Kun-Lai Summit|N|From Ban Bearheart. This is a dungeon quest.|
+T To the Wall!|QID|30724|M|29.31,62.31|N|To Suna Silentstrike.|
+A Off the Wall!|QID|30750|M|29.30,62.32|N|From Suna Silentstrike.|
+A A Terrible Sacrifice|QID|30751|M|29.25,62.33|N|From Lao-Chin the Iron Belly.|
+C A Terrible Sacrifice|QID|30751|M|26.27,59.10|
+C Off the Wall!|QID|30750|M|26.98,59.95|N|Right Click to boot them off the wall (at low health).|
+T Off the Wall!|QID|30750|M|29.28,62.22|N|To Suna Silentstrike.|
+T A Terrible Sacrifice|QID|30751|M|29.28,62.22|N|To Lao-Chin the Iron Belly.|
+A Lao-Chin's Gambit|QID|30994|M|29.28,62.22|N|From Suna Silentstrike.|
+C Lao-Chin's Gambit|QID|30994|M|29.31,62.25|
+T Lao-Chin's Gambit|QID|30994|M|31.85,60.18|N|To Lao-Chin the Iron Belly.|
+A Do a Barrel Roll!|QID|30991|M|31.85,60.18|N|From Lao-Chin the Iron Belly.|
+C Do a Barrel Roll!|QID|30991|M|30.15,63.94|N|You can steer towards the target, then press 1 to blow up the barrel.|
+T Do a Barrel Roll!|QID|30991|M|31.82,60.16|N|To Lao-Chin the Iron Belly.|
+A Finish This!|QID|30992|M|31.82,60.16|N|From Lao-Chin the Iron Belly.|
+C Finish This!|QID|30992|M|31.30,61.61|
+T Finish This!|QID|30992|M|31.30,61.61|N|To Ban Bearheart.|
+A Where are My Reinforcements?|QID|30993|M|31.30,61.61|N|From Ban Bearheart.|
+A My Husband...|QID|30768|M|31.30,61.61|N|From Suna Silentstrike.|
+C Where are My Reinforcements?|QID|30993|M|34.08,58.62|Talk to Ban while down in the valley and then again beside the balloon.)
+T Where are My Reinforcements?|QID|30993|M|35.29,49.45|N|To Ban Bearheart. Follow Ban, hop in his balloon.|
+A Unbelievable!|QID|30752|M|35.29,49.45|N|From Ban Bearheart.|
+C Unbelievable!|QID|30752|M|36.75,47.67|
+T Unbelievable!|QID|30752|M|36.75,47.67|N|To Ban Bearheart.|
+A Into the Monastery|QID|31030|M|36.75,47.67|N|From Ban Bearheart. This is a dungeon quest.|
 
 N Congratulations|N|You have finished Kun-Lai Summit. You may have also achieved level 90 and want to explore Vale of Eternal Blossoms. If you want to continue with the guide Townlong Steppes will load when you check off this step.|
 
