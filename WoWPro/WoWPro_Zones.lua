@@ -2300,11 +2300,23 @@ WoWPro.Zone2MapID = {
 			["zone"] = "Kun-Lai Summit",
 			["mapName"] = "KunLaiSummit",
 		},
+		["Townlong Steppes"] = {
+			["numFloors"] = 0,
+			["mapID"] = 810,
+			["zone"] = "Townlong Steppes",
+			["mapName"] = "TownlongWastes",
+		},
 		["Krasarang Wilds"] = {
 			["numFloors"] = 0,
 			["mapID"] = 857,
 			["zone"] = "Krasarang Wilds",
 			["mapName"] = "KrasarangWilds",
+		},
+		["Dread Wastes"] = {
+			["numFloors"] = 0,
+			["mapID"] = 858,
+			["zone"] = "Dread Wastes",
+			["mapName"] = "DreadWastes",
 		},
 		["The Veiled Stair"] = {
 			["numFloors"] = 0,
