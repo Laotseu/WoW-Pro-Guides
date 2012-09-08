@@ -988,11 +988,17 @@ end
 function WoWPro:AutoCompleteGetFP(...)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
-	for i = 1,15 do
-		local index = WoWPro.rows[i].index
-		if ... == _G.ERR_NEWTAXIPATH and WoWPro.action[index] == "f"
-		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
-			WoWPro.CompleteStep(index)
+	if ... == _G.ERR_NEWTAXIPATH then
+		WoWProCharDB.Taxi[GetSubZoneText():trim()] = true
+		--err("New flightpath: %s %s %s",...,"nil","nil")
+		for i = 1,15 do
+			local index = WoWPro.rows[i].index
+			if WoWPro.action[index] == "f" and 
+				not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] and
+				WoWProCharDB.Taxi[WoWPro.step[index] or ""]
+			then
+				WoWPro.CompleteStep(index)
+			end
 		end
 	end
 end
