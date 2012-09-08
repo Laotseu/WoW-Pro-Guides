@@ -1,4 +1,4 @@
-﻿
+
 -- WoWPro Guides by "The WoW-Pro Community" are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 -- Based on a work at github.com.
 -- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
@@ -31,7 +31,7 @@
 -- Who: Ludovicus Maior
 -- Log: Initial Version from Emmaleah
 
-WoWPro.Leveling:RegisterGuide('EmmVal8688', 'Valley of the Four Winds', 'Emmaleah', '86', '88', 'EmmKun8889', 'Alliance', function() return [[
+WoWPro.Leveling:RegisterGuide('EmmVal8687', 'Valley of the Four Winds', 'Emmaleah', '86', '87', 'EmmKra8788'|'RajKra8788', 'Neutral', function() return [[
 
 
 R Valley of the Four Winds|N|Make your way to Valley of the Four Winds.|
