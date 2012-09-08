@@ -248,31 +248,33 @@ A A Witness to History|QID|31511|FACTION|Horde|M|68.76,43.14|N|From Dezco.|
 
 R The Grummle Bazaar|QID|30617|CC|M|64.24,59.45|
 C Roadside Assistance|QID|30617|NC|QO|Lucky Burlap Incense lit: 4/8|N|Don't worry about finishing this we will be back later.|
+
 T Cho's Missive|QID|31460|FACTION|Alliance|M|57.28,61.66|N|To Lorewalker Cho.|
 T Cho's Missive|QID|31459|FACTION|Horde|M|57.28,61.66|N|To Lorewalker Cho.|
 A Path Less Traveled|QID|30999|M|57.28,61.66|N|From Lorewalker Cho.|
 T Path Less Traveled|QID|30999|M|57.27,61.18|N|To Uncle Cloverleaf.|
-h The Lucky Traveller|QID|99999|M|57.43,60.05|Z|One Keg|N|At Chiyo Mistpaw.|
+h The Lucky Traveller|QID|30592|M|57.43,60.05|Z|One Keg|N|At Chiyo Mistpaw.|
 f One Keg|QID|99999|M|57.77,59.78|N|At Little Cleankite.|
 A Instant Courage|QID|30601|M|57.27,61.18|N|From Uncle Cloverleaf.|
 A Resupplying One Keg|QID|30618|M|57.71,61.79|N|From Big Sal.|
 A They Stole My Luck!|QID|30621|M|57.35,60.22|N|From Ji-Lu the Lucky.|
-C Resupplying One Keg|QID|30618|S|M|56.33,50.88|
+C Resupplying One Keg|QID|30618|S|NC|M|56.33,50.88|
 C Instant Courage|QID|30601|S|NC|U|80308|M|57.54,47.44|It's ok to leave the Guides to die if you want to zerg out.|
-C They Stole My Luck!|QID|30621|M|57.77,49.30|N|Next 3 quests done inside Howlingwind Cavern.|
+C They Stole My Luck!|QID|30621|NC|M|57.77,49.30|N|Next 3 quests done inside Howlingwind Cavern.|
 C Instant Courage|QID|30601|US|NC|U|80308|M|57.54,47.44|It's ok to leave the Guides to die if you want to zerg out.|
-C Resupplying One Keg|QID|30618|US|M|56.33,50.88|
+C Resupplying One Keg|QID|30618|US|NC|M|56.33,50.88|
 T Resupplying One Keg|QID|30618|M|57.71,61.76|N|To Big Sal.|
 T They Stole My Luck!|QID|30621|M|57.30,60.19|N|To Ji-Lu the Lucky.|
 T Instant Courage|QID|30601|M|57.23,61.15|N|To Uncle Cloverleaf.|
 A Comin' Round the Mountain|QID|30487|M|57.26,61.17|N|From Uncle Cloverleaf.|
+
 C Comin' Round the Mountain|QID|30487|M|48.11,48.93|
 T Comin' Round the Mountain|QID|30487|M|48.12,49.00|N|To Lucky Bluestring.|
 A One Traveler's Misfortune|QID|30683|M|48.12,49.00|N|From Lucky Bluestring.|
 C One Traveler's Misfortune|QID|30683|M|50.22,49.39|
 T One Traveler's Misfortune|QID|30683|M|48.09,49.04|N|To Lucky Bluestring.|
 A Seeker's Folly|QID|30684|M|48.09,49.04|N|From Lucky Bluestring.|
-C Seeker's Folly|QID|30684|M|43.22,51.99|
+C Seeker's Folly|QID|30684|M|43.22,51.99|N|Follow the path with the red flags. Avoid the falling snow and the twisters. Click on every shrines you see.|
 T Seeker's Folly|QID|30684|M|43.79,51.01|N|To Lorewalker Cho.|
 A The Tongue of Ba-Shon|QID|30829|M|43.79,51.01|N|From Lorewalker Cho.|
 C The Tongue of Ba-Shon|QID|30829|M|43.51,51.38|
@@ -281,48 +283,55 @@ A Staying Connected|QID|30795|M|43.73,51.09|N|From Lorewalker Cho.|
 C Staying Connected|QID|30795|U|81712|M|51.94,47.44|N|Talk to Mishi for a flight to Valley of the Emporers.|
 T Staying Connected|QID|30795|M|51.94,47.44|N|To Image of Lorewalker Cho.|
 A An end to Everything|QID|30796|M|51.94,47.44|N|From Image of Lorewalker Cho.|
+C An end to Everything|QID|30796|S|M|57.34,47.17|
 A It Was Almost Alive|QID|30797|M|57.07,47.75|
-C An end to Everything|QID|30796|U|81712|M|57.34,47.17|
-C It Was Almost Alive|QID|30797|U|81712|M|57.08,47.83|N|Use the item to call Cho and turn in these 2 qeusts.|
-T An end to Everything|QID|30796|M|58.03,49.02|N|To Image of Lorewalker Cho.|
-T It Was Almost Alive|QID|30797|M|58.03,49.02|N|To Image of Lorewalker Cho.|
-A The Tomb of Shadows|QID|30799|M|58.03,49.02|N|From Image of Lorewalker Cho.|
-C The Tomb of Shadows|QID|30799|U|81712|M|56.38,43.45|
-T The Tomb of Shadows|QID|30799|M|55.14,46.47|N|To Image of Lorewalker Cho.|
-A Breaking the Emperor's Shield|QID|30798|M|55.14,46.47|N|From Image of Lorewalker Cho.|
-C Breaking the Emperor's Shield|QID|30798|U|81712|M|53.02,51.35|N|Go up the stairs from Tomb of Shadows to Tomb of Secrets.|
-T Breaking the Emperor's Shield|QID|30798|M|52.94,50.85|N|To Image of Lorewalker Cho.|
-A Stealing Their Thunder King|QID|30800|M|52.94,50.85|N|From Image of Lorewalker Cho.|
-C Stealing Their Thunder King|QID|30800|U|81712|M|53.55,4.48;53.35,48.65;54.74,46.84;48.79,47.36|CS|N|Watch your step, the colored tiles are trapped.|
-T Stealing Their Thunder King|QID|30800|M|49.13,47.46|N|To Image of Lorewalker Cho.|
-A Lessons from History|QID|30801|M|49.13,47.46|N|From Image of Lorewalker Cho.|
-C Lessons from History|QID|30801|U|81712|M|48.84,47.33|
-T Lessons from History|QID|30801|M|49.20,47.43|N|To Image of Lorewalker Cho.|
-A Chasing the Storm|QID|30802|M|49.20,47.43|N|From Image of Lorewalker Cho.|
-C Chasing the Storm|QID|30802|U|81712|M|51.31,48.26|
-T Chasing the Storm|QID|30802|M|51.31,48.26|N|To Image of Lorewalker Cho.|
+C It Was Almost Alive|QID|30797|NC|M|57.08,47.83|N|Use the item to call Cho and turn in these 2 qeusts.|
+C An end to Everything|QID|30796|US|M|57.34,47.17|
+T An end to Everything|QID|30796|U|81712|M|58.03,49.02|N|Use The Togue of Ba-Shon to call the Image of Lorewalker Cho and turn in the quest.|
+T It Was Almost Alive|QID|30797|U|81712|M|58.03,49.02|N|Use The Togue of Ba-Shon to call the Image of Lorewalker Cho and turn in the quest.|
+A The Tomb of Shadows|QID|30799|U|81712|M|58.03,49.02|N|From Image of Lorewalker Cho.|
+C Get the Wai Dynasty Rubbing|QID|30799|NC|QO|Wai Dynasty Rubbing: 1/1|M|56.0,48.0;56.4,43.5|CC|
+C Get the Shen Dynasty Rubbing|QID|30799|NC|QO|Shen Dynasty Rubbing: 1/1|M|57.1,43.5|
+C Get the Qiang Dynasty Rubbing|QID|30799|NC|QO|Qiang Dynasty Rubbing: 1/1|M|57.0,45.0|
+T The Tomb of Shadows|QID|30799|U|81712|M|55.14,46.47|N|To Image of Lorewalker Cho.|
+A Breaking the Emperor's Shield|QID|30798|U|81712|M|55.14,46.47|N|From Image of Lorewalker Cho.|
+C Breaking the Emperor's Shield|QID|30798|M|53.02,51.35|N|Go up the stairs from Tomb of Shadows to Tomb of Secrets.|
+T Breaking the Emperor's Shield|QID|30798|U|81712|M|52.94,50.85|N|To Image of Lorewalker Cho.|
+A Stealing Their Thunder King|QID|30800|U|81712|M|52.94,50.85|N|From Image of Lorewalker Cho.|
+C Stealing Their Thunder King|QID|30800|M|53.55,4.48;53.35,48.65;54.74,46.84;48.79,47.36|CS|N|Watch your step, the colored tiles are trapped.|
+T Stealing Their Thunder King|QID|30800|U|81712|M|49.13,47.46|N|To Image of Lorewalker Cho.|
+A Lessons from History|QID|30801|U|81712|M|49.13,47.46|N|From Image of Lorewalker Cho.|
+C Lessons from History|QID|30801|M|48.84,47.33|
+T Lessons from History|QID|30801|U|81712|M|49.20,47.43|N|To Image of Lorewalker Cho.|
+A Chasing the Storm|QID|30802|U|81712|M|49.20,47.43|N|From Image of Lorewalker Cho.|
+C Chasing the Storm|QID|30802|M|51.31,48.26|N|Kill Zandalari Warriors until you get the Blood-Revealed Map.|
+T Chasing the Storm|QID|30802|U|81712|M|51.31,48.26|N|To Image of Lorewalker Cho.|
 
-A Fisherman's Tale|QID|30935|M|51.31,48.26|N|From Image of Lorewalker Cho.|
-C Fisherman's Tale|QID|30935|QO|Speak to Mishi outside of Zei Shen's Tomb: 1/1|M|54.74,46.84|
-C Fisherman's Tale|QID|30935|QO|Speak to Shin Whispercloud to access Zouchin Province: 1/1|M|63.46,40.14|N|Go down the Path deeper into the mountain.|
-f Zouchin Village|QID|30935|M|62.44,30.16|N|At Bo the Wind Claimer.|
+A Fisherman's Tale|QID|30935|U|81712|M|51.31,48.26|N|From Image of Lorewalker Cho.|
+C Fisherman's Tale|QID|30935|NC|QO|Speak to Mishi outside of Lei Shen's Tomb: 1/1|M|53.0,46.4|
+C Fisherman's Tale|QID|30935|NC|QO|Speak to Shin Whispercloud to access Zouchin Province: 1/1|M|63.3,40.2|N|Go down the Path deeper into the mountain.|
+f Zouchin Village|QID|99999|M|62.44,30.16|N|At Bo the Wind Claimer.|
 T Fisherman's Tale|QID|30935|M|62.33,29.03|N|To Lorewalker Cho.|
 A It Takes A Village|QID|30944|M|62.33,29.03|N|From Lorewalker Cho.|
 A Checking In|QID|30816|M|63.14,29.40|N|From Li Ha,i.|
 A Handle With Care|QID|30943|M|63.48,28.65|N|From Elder Shu.|
 A Make A Fighter Out of Me|QID|30942|M|63.69,30.66|N|From Shomi.|
 A What's Yours Is Mine|QID|30945|M|63.38,30.69|N|From Steelbender Doshu.|
-C It Takes A Village|QID|30944|M|62.43,28.30|
-C Handle With Care|QID|30943|M|70.04,27.70|
-C Make A Fighter Out of Me|QID|30942|M|71.17,28.65|
+C It Takes A Village|QID|30944|S|NC|M|62.43,28.30|
+C Handle With Care|QID|30943|S|NC|M|70.04,27.70|
+C Make A Fighter Out of Me|S|QID|30942|M|71.17,28.65|
 C What's Yours Is Mine|QID|30945|M|71.17,28.66|
+C Make A Fighter Out of Me|QID|30942|US|M|71.17,28.65|
+C Handle With Care|QID|30943|US|NC|M|70.04,27.70|
+C It Takes A Village|QID|30944|US|NC|M|62.43,28.30|
 T Make A Fighter Out of Me|QID|30942|M|71.17,28.66|N|To Shomi.|
 T What's Yours Is Mine|QID|30945|M|63.35,30.68|N|To Steelbender Doshu.|
 T Handle With Care|QID|30943|M|63.23,28.68|N|To Elder Shu. He is upstairs on the balcony.|
 T It Takes A Village|QID|30944|M|62.33,29.04|N|To Lorewalker Cho.|
 A Enemies At Our Door|QID|31011|M|62.33,29.04|N|From Lorewalker Cho.|
-C Enemies At Our Door|QID|31011|NC|QO|Amani Behemoth slain: 5/5|M|61.24,29.27|N|Roll the barrels down the hill.|
-C Enemies At Our Door|QID|31011|M|64.49,28.84|
+C Enemies At Our Door|QID|31011|S||QO|Amani Berserker slain: 10/10;Gurubashi Bloodrider slain: 3/3|M|64.49,28.84|
+C Rool barrels on the Behemoth|QID|31011|NC|QO|Amani Behemoth slain: 5/5|M|61.24,29.27|N|Roll the barrels down the hill.|
+C Enemies At Our Door|QID|31011|US|QO|Amani Berserker slain: 10/10;Gurubashi Bloodrider slain: 3/3|M|64.49,28.84|
 T Enemies At Our Door|QID|31011|M|62.32,29.06|N|To Lorewalker Cho.|
 A Revelations|QID|30946|M|62.32,29.06|N|From Lorewalker Cho.|
 C Revelations|QID|30946|M|62.46,28.88|N|Prisoner is upstairs.|
@@ -330,105 +339,126 @@ T Revelations|QID|30946|M|62.32,29.02|N|To Lorewalker Cho.|
 A Prophet Khar'zul|QID|31228|M|62.32,29.02|N|From Lorewalker Cho.|
 T Checking In|QID|30816|M|60.59,21.25|N|To Sage Liao.|
 A Emergency Care|QID|30794|M|60.59,21.22|N|From Sage Liao.|
-C Emergency Care|QID|30794|U|81177|M|60.60,21.38|
+C Emergency Care|QID|30794|U|81177|M|60.60,21.38|N|Bandage or heal Sage Liao.|
 T Emergency Care|QID|30794|M|60.55,21.32|N|To Sage Liao.|
 A Justice|QID|30805|M|60.55,21.32|N|From Sage Liao.|
 A The Scent of Life|QID|30806|M|60.55,21.32|N|From Sage Liao.|
 A By the Falls, For the Fallen|QID|30807|M|60.55,21.32|N|From Sage Liao.|
-C By the Falls, For the Fallen|QID|30807|M|60.17,31.11|
-C Justice|QID|30805|M|62.14,23.99|
-C The Scent of Life|QID|30806|M|59.61,22.26|
+C By the Falls, For the Fallen|QID|30807|S|NC|M|60.17,31.11|
+C Opalescent Blue Crab Shell|QID|30806|S|QO|Opalescent Blue Crab Shell: 1/1|M|59.61,22.26||N|Kill crabs until you get one.|
+C Blackmane Mercenaries|QID|30805|S|QO|Blackmane Mercenaries slain: 6/6|M|62.4,23.0|
+C Stolen Pandaren Spices|QID|30806|S|QO|Stolen Pandaren Spices: 8/8|M|59.61,22.26|N|Kill Balckmane mercenaries or loot barrels.|
+K Kill Captain Ripflesh|QID|30805|T|Captain Ripflesh|QO|Captain Ripflesh slain: 1/1|M|62.14,23.99|
+C Stolen Pandaren Spices|QID|30806|US|QO|Stolen Pandaren Spices: 8/8|M|59.61,22.26|N|Kill Balckmane mercenaries or loot barrels.|
+C Blackmane Mercenaries|QID|30805|US|QO|Blackmane Mercenaries slain: 6/6|M|62.4,23.0|
+C Opalescent Blue Crab Shell|QID|30806|US|QO|Opalescent Blue Crab Shell: 1/1|M|59.61,22.26||N|Kill crabs until you get one.|
+C By the Falls, For the Fallen|QID|30807|US|NC|M|60.17,31.11|
 T Justice|QID|30805|M|60.59,21.38|N|To Sage Liao.|
 T The Scent of Life|QID|30806|M|60.59,21.38|N|To Sage Liao.|
 T By the Falls, For the Fallen|QID|30807|M|60.59,21.38|N|To Sage Liao.|
 A Preparing the Remains|QID|30819|M|60.59,21.38|N|From Sage Liao.|
 T Preparing the Remains|QID|30819|M|63.12,29.33|N|To Li Hai.|
 A A Funeral|QID|30820|M|63.12,29.33|N|From Li Hai.|
-C A Funeral|QID|30820|M|66.96,33.44|
+C A Funeral|QID|30820|NC|M|62.3,31.5;64.3,32.1;66.96,33.44|CC|N|Light the Incense of Life.|
 T A Funeral|QID|30820|M|67.05,33.44|N|To Sage Liao.|
-C Prophet Khar'zul|QID|31228|NC|QO|Speak with Mishi in Zouchin Village|M|63,29|
-C Prophet Khar'zul|QID|31228|M|74.20,10.61|
+C Prophet Khar'zul|QID|31228|NC|QO|Speak with Mishi in Zouchin Village: 1/1|M|62.3,29.3|
+C Slay Zandalari|QID|31228|S|QO|Zandalari forces slain: 12/12|M|74.20,10.61|
+K Kill Prophet Khar'zul|QID|31228|T|Prophet Khar'zul|QO|Prophet Khar'zul slain: 1/1|M|76.2,8.9|
+C Slay Zandalari|QID|31228|US|QO|Zandalari forces slain: 12/12|M|74.20,10.61|
 F Zouchin Village|QID|31228|M|76.17,11.38|CC|N|Talk to Mishi for a ride back to the village.|
 T Prophet Khar'zul|QID|31228|M|62.30,29.01|N|To Lorewalker Cho.|
 r Repair/Restock|M|63.38,30.69|;currently the blacksmith is bugged and doesnt repair.
 
-H One Keg|QID|99999|N|Fly if you didnt reset your hearthstone earlier.|
+H One Keg|QID|30592|N|Fly if you didnt reset your hearthstone earlier.|
 A The Burlap Trail: To Burlap Waystation|QID|30592|M|58.04,61.49|N|From Brother Lintpocket.|
-A The Rabbitsfoot|QID|30602|M|58.04,61.49|N|From Brother Lintpocket.|
-C Roadside Assistance|QID|30617|M|58.76,62.49|
+C Roadside Assistance|QID|30617|NC|M|58.76,62.49|
 C The Burlap Trail: To Burlap Waystation|QID|30592|M|53.14,66.57|
+T The Burlap Trail: To Burlap Waystation|QID|30592|M|51.69,67.80|N|To Brother Trailscenter.|
+A The Rabbitsfoot|QID|30602|M|58.04,61.49|N|From Brother Trailscenter.|
 C The Rabitsfoot|QID|30602|M|49.07,70.42|N|He is hanging from a tree.|
 A The Broketooth Ravage|QID|30603|M|49.07,70.42|N|From Brother Rabbitsfoot.|
-C The Broketooth Ravage|QID|30603|M|48.01,73.34|
+C The Broketooth Ravage|QID|30603|NC|M|48.01,73.34|N|In Mo-Mo Treasure Chest inside the little cave.|
 
-T The Burlap Trail: To Burlap Waystation|QID|30592|M|51.69,67.80|N|To Brother Trailscenter.|
 T The Rabitsfoot|QID|30602|M|51.99,67.28|N|To Brother Rabbitsfoot.|
 T The Broketooth Ravage|QID|30603|M|51.99,67.28|N|To Brother Rabbitsfoot.|
-A The Burlap Trail: To Kota Basecamp|QID|30692|M|51.69,67.80|N|From Brother Trailscenter.|
-C The Burlap Trail: To Kota Basecamp|QID|30692|M|43.77,69.04|
-
-T The Burlap Trail: To Kota Basecamp|QID|30692|M|42.45,68.96|N|To Brother Oilyak.|
-f Kota Basecamp|QID|30699|M|42.78,69.58|N|At Uncle Eastwind.|
-h Kota Basecamp|QID|99999|M|42.66,69.72|N|At Clover Keeper.|
-A Kota Blend|QID|30744|M|42.47,69.60|N|From Uncle Keenbean.|
-A Trouble Brewing|QID|30745|M|42.47,69.60|N|From Uncle Keenbean.|
-A Shut it Down|QID|30742|M|42.34,69.73|N|From Cousin Gootfur.|
-A Gourmet Kafa|QID|30743|M|42.34,69.73|N|From Cousin Gootfur.|
-C Gourmet Kafa|QID|30743|S|M|39.99,71.67|N|Pick up the berries from the ground, flag droppings and kill goats and yetis.|
-C Shut it Down|QID|30742|M|40.67,73.42|
-C Kota Blend|QID|30744|U|81054|M|36.38,76.94|
-T Kota Blend|QID|30744|36.38,76.94|To UI Alert.|
-A A Fair Trade|QID|30746|M|36.38,76.94|From UI Alert.|
-C Trouble Brewing|QID|30745|M|37.83,77.90|
-C Gourmet Kafa|QID|30743|US|
-T A Fair Trade|QID|30746|M|36.95,76.16|N|To Nephew Burrberry.|
-T Shut it Down|QID|30742|M|42.48,69.45|N|To Uncle Keenbean.|
-T Trouble Brewing|QID|30745|M|42.48,69.45|N|To Uncle Keenbean.|
-T Gourmet Kafa|QID|30743|M|42.48,69.39|N|To Cousin Gootfur.|
-A The Burlap Grind|QID|30747|M|42.49,69.36|N|From Nephew Burrberry. talk to Kota Kon. vehicle UI comes up, |
-C The Burlap Grind|QID|30747|M|49.53,66.89|N|After finishing the objectives, exit vehicle close to the Burlap Trail Waystation.|
-
-A A Monkey Idol|QID|30599|M|51.99,67.28|N|From Brother Rabbitsfoot.|
-A No Pack Left Behind|QID|30600|M|52.04,67.24|N|From Brother Rabbitsfoot.|
-A Breaking Broketooth|QID|30604|M|52.04,67.24|N|From Brother Rabbitsfoot.|
-C A Monkey Idol|QID|30599|QO|Destroy Ko Ko's Altar: 1/1|M|52.29,71.43|
-C A Monkey Idol|QID|30599|QO|Destroy Dak Dak's Alter: 1/1|M|52.29,71.43|
-C No Pack Left Behind|QID|30600|M|53.35,74.45|
-C A Monkey Idol|QID|30599|M|56.78,70.97|
-C Breaking Broketooth|QID|30604|M|55.44,70.84|
-T A Monkey Idol|QID|30599|M|51.94,67.24|N|To Brother Rabbitsfoot.|
-T No Pack Left Behind|QID|30600|M|51.94,67.24|N|To Brother Rabbitsfoot.|
+A A Monkey Idol|QID|30599|M|52.0,67.3|N|From Brother Rabbitsfoot|
+A No Pack Left Behind|QID|30600|M|52.0,67.3|N|From Brother Rabbitsfoot|
+A Breaking Broketooth|QID|30604|M|52.0,67.3|N|From Brother Rabbitsfoot|
+C Breaking Broketooth|QID|30604|S|M|54.8,69.2|
+C No Pack Left Behind|QID|30600|S|NC|M|54.9,73.6|
+K Kill Ko Ko|QID|30599|T|Ko Ko|L|80429|N|Loot his corpse (literally).|M|52.3,71.4|
+C Destroy Ko Ko's Altar|QID|30599|NC|QO|Destroy Ko Ko's Altar: 1/1|M|52.3,71.4|
+K Kill Dak Dak|QID|30599|T|Dak Dak|L|80428|M|56.9,71.0|N|Loot his corpse (literally).|
+C Destroy Dak Dak's Altar|QID|30599|NC|QO|Destroy Dak Dak's Altar: 1/1|M|56.9,71.0|
+K Kill Tak Tak|QID|30599|T|Tak Tak|L|80430|N|Loot his corpse (literally).|
+C Destroy Tak Tak's Altar|QID|30599|NC|QO|Destroy Tak Tak's Altar: 1/1|
+C No Pack Left Behind|QID|30600|US|NC|M|54.9,73.6|
+C Breaking Broketooth|QID|30604|US|M|54.8,69.2|
+T A Monkey Idol|QID|30599|M|52.0,67.3|N|To Brother Rabbitsfoot|
+T No Pack Left Behind|QID|30600|M|52.0,67.3|N|To Brother Rabbitsfoot|
 A Bros before Hozen|QID|30605|M|51.94,67.24|N|From Brother Rabbitsfoot.|
-T Breaking Broketooth|QID|30604|M|51.94,67.24|N|To Brother Rabbitsfoot.|
-C Bros before Hozen|QID|30605|M|50.53,64.21|
+T Breaking Broketooth|QID|30604|M|52.0,67.3|N|To Brother Rabbitsfoot|
+C Bros before Hozen|QID|30605|M|50.5,64.2|
 T Bros before Hozen|QID|30605|M|50.60,64.08|N|To Brother Yakshoe.|
 A Hozen Love Their Keys|QID|30607|M|50.60,64.08|N|From Brother Yakshoe.|
 A The Snackrifice|QID|30608|M|50.60,64.08|N|From Brother Yakshoe.|
 A Thumping Knucklethump|QID|30606|M|50.60,64.08|N|From Brother Yakshoe.|
-C Thumping Knucklethump|QID|30606|M|50.47,62.78|
-C The Snackrifice|QID|30608|M|50.58,62.54|
-C Hozen Love Their Keys|QID|30607|M|48.82,59.66|N|In the back of the cave.|
+C Thumping Knucklethump|QID|30606|S|M|50.2,64.3|
+C The Snackrifice|QID|30608|S|NC|M|52.0,61.2|
+K Kill Cho Cho the Wicked|QID|30607|T|Cho Cho the Wicked|QO|Yeti Shackle Key: 1/1|M|49.19,59.42|N|In the back of the cave. Kill him and get the key.|
+C Hozen Love Their Keys|QID|30607|M|49.19,59.42|N|Click the boulder beside the big Yeti.|
+C The Snackrifice|QID|30608|US|NC|M|52.0,61.2|
+C Thumping Knucklethump|QID|30606|US|M|50.2,64.3|
 T Hozen Love Their Keys|QID|30607|M|52.00,67.22|N|To Brother Yakshoe.|
 T The Snackrifice|QID|30608|M|52.00,67.22|N|To Brother Yakshoe.|
 A Grummle! Grummle! Grummle!|QID|30610|M|52.00,67.22|N|From Brother Yakshoe.|
 T Thumping Knucklethump|QID|30606|M|51.98,67.21|N|To Brother Rabbitsfoot.|
 A Unleash The Yeti!|QID|30611|M|51.98,67.21|N|From Brother Rabbitsfoot.|
+C Grummle! Grummle! Grummle!|QID|30610|S|M|44.84,63.64|
 C Unleash The Yeti!|QID|30611|M|46.56,62.95|
-C Grummle! Grummle! Grummle!|QID|30610|M|44.84,63.64|
+C Grummle! Grummle! Grummle!|QID|30610|US|M|44.84,63.64|
 T Unleash The Yeti!|QID|30611|M|45.98,64.08|N|To Brother Rabbitsfoot.|
 T Grummle! Grummle! Grummle!|QID|30610|M|45.98,64.08|N|To Brother Yakshoe.|
 A The Leader Hozen|QID|30612|M|45.98,64.08|
 C The Leader Hozen|QID|30612|M|46.15,63.24|
+T The Leader Hozen|QID|30612|M|42.79,69.35|N|To Brother Rabbitsfoot.|
+
+A The Burlap Trail: To Kota Basecamp|QID|30692|M|51.69,67.80|N|From Brother Trailscenter.|
+C The Burlap Trail: To Kota Basecamp|QID|30692|M|43.77,69.04|
+
+T The Burlap Trail: To Kota Basecamp|QID|30692|M|42.45,68.96|N|To Brother Oilyak.|
+f Kota Basecamp|QID|30699|M|42.78,69.58|N|At Uncle Eastwind.|
+h Kota Basecamp|QID|30747|M|42.66,69.72|N|At Clover Keeper.|
+A Kota Blend|QID|30744|M|42.47,69.60|N|From Uncle Keenbean.|
+A Trouble Brewing|QID|30745|M|42.47,69.60|N|From Uncle Keenbean.|
+A Shut it Down|QID|30742|M|42.34,69.73|N|From Cousin Gootfur.|
+A Gourmet Kafa|QID|30743|M|42.34,69.73|N|From Cousin Gootfur.|
+C Gourmet Kafa|QID|30743|S|NC|M|39.99,71.67|N|Flag droppings (yes, it's another poop quest).|
+C Trouble Brewing|QID|30745|S|M|37.83,77.90|N|Kill yetis.|
+C Shut it Down|QID|30742|S|M|40.67,73.42|N|Kill the goats.|
+C Kota Blend|QID|30744|NC|U|81054|M|36.38,76.94|N|Pick up the berries from the ground.|
+T Kota Blend|QID|30744|36.38,76.94|To UI Alert.|
+A A Fair Trade|QID|30746|M|36.38,76.94|From UI Alert.|
+C Shut it Down|QID|30742|US|M|40.67,73.42|N|Kill yetis.|
+C Trouble Brewing|QID|30745|US|M|37.83,77.90|N|Kill yetis.|
+C Gourmet Kafa|QID|30743|US|N|Flag droppings (yes, it's another poop quest).|
+T A Fair Trade|QID|30746|M|36.95,76.16|N|To Nephew Burrberry.|
+T Shut it Down|QID|30742|M|42.48,69.45|N|To Cousin Gootfur.|
+T Trouble Brewing|QID|30745|M|42.48,69.45|N|To Cousin Gootfur.|
+T Gourmet Kafa|QID|30743|M|42.48,69.39|N|To Cousin Gootfur.|
+A The Burlap Grind|QID|30747|M|42.49,69.36|N|From Nephew Burrberry.|
+C The Burlap Grind|QID|30747|M|49.53,66.89|N|Talk to Kota Kon. vehicle UI comes up. After finishing the objectives, exit vehicle close to the Burlap Trail Waystation.|
+
 R One Keg|QID|30617|M|57.77,59.78|CC|
 T Roadside Assistance|QID|30617|M|58.13,61.46|N|To Brother Lintpocket.|
 
-F Eastwind Rest|QID|99999|FACTION|Horde|M|57.77,59.2|CC|N|At Little Cleankite.|
+F Eastwind Rest|QID|31511|FACTION|Horde|M|57.77,59.2|CC|N|At Little Cleankite.|
 A Beyond the Wall|QID|31695|FACTION|Horde|M|62.36,79.65|N|From Elder Shiao.|;seems odd. is it really same QID even tho 2 seperate quest givers. ... its also the only QID listed on WOWHEAD?
 C A Witness to History|QID|31511|FACTION|Horde|M|55.58,91.24|
 R Shado-Pan Fallback|QID|31453|FACTION|Horde|CC|M|44.51,89.96|
 T The Shado-Pan|QID|31453|FACTION|Horde|M|44.51,89.96|N|To Shado-Master Chong.|
 
-F Westwind Rest|QID|99999|FACTION|Alliance|M|57.77,59.2|CC|N|At Little Cleankite.|
+F Westwind Rest|QID|31512|FACTION|Alliance|M|57.77,59.2|CC|N|At Little Cleankite.|
 A Beyond the Wall|QID|31695|FACTION|Alliance|M|54.13,83.37|N|From Elder Tsulan.|;seems odd. is it really same QID even tho 2 seperate quest givers. ... its also the only QID listed on WOWHEAD?
 C A Witness to History|QID|31512|FACTION|Alliance|M|55.58,91.24|
 R Shado-Pan Fallback|QID|31455|FACTION|Alliance|CC|M|44.51,89.96|
@@ -436,24 +466,25 @@ T The Shado-Pan|QID|31455|FACTION|Alliance|M|44.51,89.96|N|To Shado-Master Chong
 
 A Turnabout|QID|30670|M|44.49,89.88|N|From Shado-Master Chong.|
 A The Defense of Shado-Pan Fallback|QID|30665|M|44.49,89.88|N|From Shado-Master Chong.|
+C The Defense of Shado-Pan Fallback|S|QID|30665|M|44.45,88.63|
+C Turnabout|QID|30670|S|M|41.29,86.60|
 A Holed Up|QID|30682|NC|M|42.99,88.33|N|From Sya Zhong.|
 C Holed Up|QID|30682|NC|QO|Ya Firebough rescued: 1/1|M|41.08, 87.03|
 C Holed Up|QID|30682|NC|QO|Old Lady Fung rescued: 1/1|M|42.74, 85.76|
 C Holed Up|QID|30682|NC|QO|Jin Warmkeg rescued: 1/1|M|43.86,86.22|
-C Turnabout|QID|30670|M|41.29,86.60|
-C The Defense of Shado-Pan Fallback|QID|30665|M|44.45,88.63|
+C Turnabout|QID|30670|US|M|41.29,86.60|
+C The Defense of Shado-Pan Fallback|US|QID|30665|M|44.45,88.63|
 T Turnabout|QID|30670|M|44.47,89.91|N|To Shado-Master Chong.|
 A Unmasking the Yaungol|QID|30690|M|44.47,89.91|N|From Shado-Master Chong.|
 T The Defense of Shado-Pan Fallback|QID|30665|M|44.47,89.91|N|To Shado-Master Chong.|
 T Holed Up|QID|30682|M|44.47,89.91|N|To Shado-Master Chong.|
-C Unmasking the Yaungol|QID|30690|U|81741|M|45.28,86.63|
+C Unmasking the Yaungol|QID|30690|T|Kobai|U|81741|M|45.28,86.63|N|Find Kobai, put the trap down in front of you, pull him and when it is cought, press the Extra button to start the fight with the Malevolent Fury.|
 T Unmasking the Yaungol|QID|30690|M|44.48,89.91|N|To Shado-Master Chong.|
 A To Winter's Blossom|QID|30699|M|44.48,89.91|N|From Shado-Master Chong.|
 r Repair/Restock|QID|99999|M|44.23,90.25|N|At Fixxit Redhammer.|
 
-f Serpent's Spine|QID|99999|M|43.92,89.56|N|Up the stairs, at Kite Master Ni.|
-H Kota Basecamp|QID|99999|N|Fly if your hearth isn't set to Kota Basecamp.|
-T The Leader Hozen|QID|30612|M|42.79,69.35|N|To Brother Rabbitsfoot.|
+f Shado-Pan Fallback|QID|99999|M|43.92,89.56|N|Up the stairs, at Kite Master Ni.|
+H Kota Basecamp|QID|30747|N|Fly if your hearth isn't set to Kota Basecamp.|
 T The Burlap Grind|QID|30747|M|42.49,69.28|N|To Nephew Burrberry.|
 
 R Winter's Blossom|QID|30699|M|34.97,59.36|
@@ -462,17 +493,22 @@ A Honor, Even in Death|QID|30723|M|34.93,59.20|N|From Lin Silentstrike.|
 A A Line Unbroken|QID|30715|M|35.14,59.59|N|From Ban Bearheart.|
 f Winter's Blossom|QID|30715|M|34.55,59.00|N|At Kite Master Len.|
 A Better Dead than Dread|QID|31847|M|34.55,59.00|N|From Kite Master Len. Requires level 89.|
-C A Line Unbroken|QID|30715|M|30.20,62.58|
-C Honor, Even in Death|QID|30723|M|30.22,62.06|
+C Honor, Even in Death|QID|30723|S|M|30.22,62.06|
+C Released Shado-Master Zhiyao|QID|30715|NC|QO|Shado-Master Zhiyao Released From his Oath: 1/1|M|30.4,60.0|
+C Released Liu of the Thousand Blows|QID|30715|NC|QO|Liu of the Thousand Blows Released From his Oath: 1/1|M|30.2,62.5|
+C Released Shiya Boldblade|QID|30715|QO|NC|Shiya Boldblade Released From her Oath: 1/1|M|30.0,64.4|
+C Honor, Even in Death|QID|30723|US|M|30.22,62.06|
 T A Line Unbroken|QID|30715|M|35.16,59.61|N|To Ban Bearheart.|
 T Honor, Even in Death|QID|30723|M|34.98,59.23|N|To Lin Silentstrike.|
 A To the Wall!|QID|30724|M|35.01,59.22|N|From Lin Silentstrike.|
+
 C To the Wall!|QID|30724|M|34.55,59.05|
 T To the Wall!|QID|30724|M|29.31,62.31|N|To Suna Silentstrike.|
 A Off the Wall!|QID|30750|M|29.30,62.32|N|From Suna Silentstrike.|
 A A Terrible Sacrifice|QID|30751|M|29.25,62.33|N|From Lao-Chin the Iron Belly.|
-C A Terrible Sacrifice|QID|30751|M|26.27,59.10|
+C A Terrible Sacrifice|QID|30751|S|NC|M|26.27,59.10|
 C Off the Wall!|QID|30750|M|26.98,59.95|N|Right Click to boot them off the wall (at low health).|
+C A Terrible Sacrifice|QID|30751|US|NC|M|26.27,59.10|
 T Off the Wall!|QID|30750|M|29.28,62.22|N|To Suna Silentstrike.|
 T A Terrible Sacrifice|QID|30751|M|29.28,62.22|N|To Lao-Chin the Iron Belly.|
 A Lao-Chin's Gambit|QID|30994|M|29.28,62.22|N|From Suna Silentstrike.|
@@ -484,8 +520,8 @@ T Do a Barrel Roll!|QID|30991|M|31.82,60.16|N|To Lao-Chin the Iron Belly.|
 A Finish This!|QID|30992|M|31.82,60.16|N|From Lao-Chin the Iron Belly.|
 C Finish This!|QID|30992|M|31.30,61.61|
 T Finish This!|QID|30992|M|31.30,61.61|N|To Ban Bearheart.|
-A Where are My Reinforcements?|QID|30993|M|31.30,61.61|N|From Ban Bearheart.|
-A My Husband...|QID|30768|M|31.30,61.61|N|From Suna Silentstrike.|
+;A Where are My Reinforcements?|QID|30993|M|31.30,61.61|N|From Ban Bearheart.|
+A My Husband...|QID|30768|M|31.30,61.61|N|From Suna Silentstrike.|;This quest was not offered to me in Kun-Lai Summit, it might have been moved in some other zone.
 C Where are My Reinforcements?|QID|30993|M|34.08,58.62|Talk to Ban while down in the valley and then again beside the balloon.)
 T Where are My Reinforcements?|QID|30993|M|35.29,49.45|N|To Ban Bearheart. Follow Ban, hop in his balloon.|
 A Unbelievable!|QID|30752|M|35.29,49.45|N|From Ban Bearheart.|
