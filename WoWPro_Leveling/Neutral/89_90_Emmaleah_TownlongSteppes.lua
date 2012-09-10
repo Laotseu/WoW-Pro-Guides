@@ -12,41 +12,53 @@ A First Assault|QID|30769|M|71.14,56.77|N|From Taran Zhu.|
 A Running Rampant|QID|30770|M|71.14,56.77|N|From Taran Zhu.|
 A Perfect Pitch|QID|30771|M|71.14,56.77|N|From Taran Zhu.|
 f Longying Outpost|QID|30771|M|71.12,57.41|N|At Kite Master Wong.|
-C Running Rampant|QID|30770|M|67.70,52.97,|N|Free the beasts and pick up pitch as you go.|
-C Perfect Pitch|QID|30771|M|67.7,52.97|
-C First Assault|QID|30769|M|67.7,52.97|
+C First Assault|QID|30769|S|M|67.7,52.97|
+C Perfect Pitch|QID|30771|S|NC|M|67.7,52.97|
+C Running Rampant|QID|30770|NC|M|67.70,52.97|N|Free the beasts and pick up pitch as you go.|
+C Perfect Pitch|QID|30771|US|NC|M|67.7,52.97|
+C First Assault|QID|30769|US|M|67.7,52.97|
 T Running Rampant|QID|30770|M|67.27,52.32|N|To Ban Bearheart.|
 T Perfect Pitch|QID|30771|M|67.27,52.32|N|To Ban Bearheart.|
 T First Assault|QID|30769|M|67.27,52.32|N|To Suna Silentstrike.|
 A Seeing Red|QID|30772|M|67.27,52.32|N|From Suna Silentstrike.|
 A Ranger Rescue|QID|30774|M|67.27,52.32|N|From Suna Silentstrike.|
 A Pitching In|QID|30773|M|67.27,52.32|N|From Ban Bearheart.|
+C Seeing Red|QID|30772|S|M|67.61,47.50|
+C Pitching In|QID|30773|S|NC|U|81193|M|66.61,45.86|
+C Rescew Longying Rangers|QID|30774|S|QO|Longying Ranger rescued: 4/4|M|68.06,49.62N|Kill Osul Marauders to get the stone keys needed to unlock the cages.|
 A The Exile|QID|30775|M|67.08,51.43|N|From Katak the Defeated.|
-C Seeing Red|QID|30772|M|67.61,47.50|
-C The Exile|QID|30775|M|65.70,50.83|
-C Ranger Rescue|QID|30774|M|68.06,49.62|
-C Pitching In|QID|30773|U|81193|M|66.61,45.86|
+K Kill Battat|QID|30775|T|Battat|QO|Battat slain: 1/1|M|65.7,51.7|
+K Kill Urang|QID|30775|T|Urang|QO|Urang slain: 1/1|M|64.8,50.2|
+C Ranger Rescue |QID|30774|NC|QO|Free Lin Silentstrike: 1/1|M|66.6,49.2|N|No key needed for Lin...|
+K Kill Ku-Tong|QID|30775|T|Ku-Tong|QO|Ku-Tong slain: 1/1|M|66.9,48.0|
+C Rescew Longying Rangers|QID|30774|US|QO|Longying Ranger rescued: 4/4|M|68.06,49.62|N|Kill Osul Marauders to get the stone keys needed to unlock the cages.|
+C Pitching In|QID|30773|US|NC|U|81193|M|66.61,45.86|
+C Seeing Red|QID|30772|US|M|67.61,47.50|
 T The Exile|QID|30775|M|67.01,51.39|N|To Katak the Defeated.|
 T Seeing Red|QID|30772|M|67.23,52.22|N|To Ban Bearheart.|
 T Ranger Rescue|QID|30774|M|67.23,52.22|N|To Ban Bearheart.|
 T Pitching In|QID|30773|M|67.23,52.22|N|To Ban Bearheart.|
 A Jung Duk|QID|30776|M|67.20,52.28|N|From Suna Silentstrike.|
-C Jung Duk|QID|30776|M|66.61,50.98|
+K Jung Duk|QID|30776|M|66.61,50.98|N|Plant the banner and fight him.|
 T Jung Duk|QID|30776|M|70.98,56.54|N|To Ban Bearheart.|
 A In Search of Suna|QID|30777|M|70.98,56.54|N|From Ban Bearheart. Hop on the caravan for a ride to Hatred's Vice.|
 
+R Hatred's Vice|QID|30777|M|70.6,56.6|N|Take the Shado-Pan Caravan|
 T In Search of Suna|QID|30777|M|82.73,72.96|N|To Ban Bearheart.|
 A Dust to Dust|QID|30778|M|82.73,72.96|N|From Ban Bearheart.|
 A Slaying the Scavengers|QID|30779|M|82.73,72.96|N|From Ban Bearheart.|
 A Last Toll of the Yaungol|QID|30781|M|82.74,73.13|N|From Xiao Tu.|
 A Totemic Research|QID|30780|M|82.67,72.97|N|From Yalia Sagewhisper.|
-C Last Toll of the Yaungol|QID|30781|NC|QO|Western Smoke Trail examined: 1/1|M|80.95,72.09|
-C Last Toll of the Yaungol|QID|30781|NC|QO|Northwestern Smoke Trail examined: 1/1|M|83.89,70.72|
-C Last Toll of the Yaungol|QID|30781|NC|QO|Eastern Smoke Trail examined: 1/1|M|84.79,71.52|
-C Last Toll of the Yaungol|QID|30781|NC|QO|Southern Smoke Trail examined: 1/1|M|83.64,78.5|
-C Dust to Dust|QID|30778|U|81356|M|82.63,70.03|
-C Totemic Research|QID|30780|M|82.52,71.68|
-C Slaying the Scavengers|QID|30779|M|84.07,72.45|
+C Slaying the Scavengers|QID|30779|S|M|84.07,72.45|
+C Totemic Research|QID|30780|S|NC|M|82.52,71.68|
+C Dust to Dust|QID|30778|S|NC|U|81356|M|82.63,70.03|N|Use the Shado-Pan Torch to burn the corpses.|
+C Examine the Western Smoke Trail|QID|30781|NC|QO|Western Smoke Trail examined: 1/1|M|80.95,72.09|
+C Examine the Northwestern Smoke Trail|QID|30781|NC|QO|Northwestern Smoke Trail examined: 1/1|M|83.89,70.72|
+C Examine the Eastern Smoke Trail|QID|30781|NC|QO|Eastern Smoke Trail examined: 1/1|M|84.79,71.52|
+C Examine the Southern Smoke Trail|QID|30781|NC|QO|Southern Smoke Trail examined: 1/1|M|83.64,78.5|
+C Dust to Dust|QID|30778|US|NC|U|81356|M|82.63,70.03|N|Use the Shado-Pan Torch to burn the corpses.|
+C Totemic Research|QID|30780|US|NC|M|82.52,71.68|
+C Slaying the Scavengers|QID|30779|US|M|84.07,72.45|
 T Dust to Dust|QID|30778|M|82.70,73.10|N|To Ban Bearheart.|
 T Slaying the Scavengers|QID|30779|M|82.70,73.10|N|To Ban Bearheart.|
 T Last Toll of the Yaungol|QID|30781|M|82.70,73.10|N|To Ban Bearheart.|
@@ -56,8 +68,9 @@ C What Lies Beneath|QID|30827|M|82.45,73.57|
 T What Lies Beneath|QID|30827|M|82.53,73.12|N|To Yalia Sagewhisper.|
 A Hatred Becomes Us|QID|30783|M|82.53,73.12|N|From Yalia Sagewhisper.|
 A Spiteful Spirits|QID|30782|M|82.66,73.06|N|From Ban Bearheart.|
+C Spiteful Spirits|QID|30782|S|U|81417|M|84.04,77.51|N|Use the totem on yourself to keep the bar from filling up.|
 C Hatred Becomes Us|QID|30783|U|81417|M|82.65,73.90|N|Use the totem on the Shado-Pan and on yourself to keep the bar from filling up.|
-C Spiteful Spirits|QID|30782|U|81417|M|84.04,77.51|N|Use the totem on yourself to keep the bar from filling up.|
+C Spiteful Spirits|QID|30782|US|U|81417|M|84.04,77.51|N|Use the totem on yourself to keep the bar from filling up.|
 T Hatred Becomes Us|QID|30783|M|82.60,73.05|N|To Yalia Sagewhisper.|
 T Spiteful Spirits|QID|30782|M|82.62,73.04|N|To Ban Bearheart.|
 A The Point of No Return|QID|30784|M|82.62,73.04|N|From Ban Bearheart.|
@@ -66,20 +79,11 @@ T The Point of No Return|QID|30784|M|82.68,73.08|N|To Ban Bearheart.|
 A Gao-Ran Battlefront|QID|30785|M|82.68,73.08|N|From Ban Bearheart.|
 A A Delicate Balance|QID|31894|M|82.60,73.05|N|From Yalia Sagewhisper.|
 
-R Gao-Ran Battlefront|QID|30785|M|76.38,82.39|CC|
-T Gao-Ran Battlefront|QID|30785|M|76.38,82.39|N|To Taran Zhu.|
-A Behind the Battlefront|QID|30884|M|76.38,82.39|N|From Taran Zhu.|
-A Treatment for the Troops|QID|30891|M|75.85,83.05|N|From Septi the Herbalist.|
-r Merchants!|QID|99999|M|75.78,81.87|N|At Ironshaper Peng, finally a place to repair and sell|
-T Behind the Battlefront|QID|30884|M|76.96,78.89|N|To Taoshi.|
-A Unwelcome Intruders|QID|30887|M|76.96,78.89|N|From Taoshi.|
-C Treatment for the Troops|QID|30891|M|75.83,76.58|
-C Unwelcome Intruders|QID|30887|M|77.03,78.16|
-
+; Cannot easily get to Goa-Ran Battle without flying mount from Hatred's Vice so I'm moving the Goa-Ran quests to latter.
 R Lower Sumprushes|QID|30786|M|68.02,67.58|CC|
 T A Delicate Balance|QID|31894|M|68.02,67.58|N|To Orbiss.|
 A A Spear Through My Side, A Chain Through My Soul|QID|30786|M|68.02,67.58|N|From Orbiss.|
-C A Spear Through My Side, A Chain Through My Soul|QID|30786|M|68.51,71.48|
+K Kill Dmong Naruuk|QID|30786|T|Dmong Naruuk|M|68.51,71.48|
 T A Spear Through My Side, A Chain Through My Soul|QID|30786|M|67.86,67.64|N|To Orbiss.|
 A The Torches|QID|30787|M|67.86,67.64|N|From Orbiss.|
 C The Torches|QID|30787|M|68.26,69.16|
@@ -96,29 +100,42 @@ T The Death of Me|QID|30815|M|67.93,67.71|N|To Orbiss.|
 A Golgoss Hungers|QID|30790|M|67.93,67.71|N|From Orbiss.|
 A Arconiss Thirsts|QID|30791|M|67.93,67.71|N|From Orbiss.|
 A Orbiss Fades|QID|30792|M|67.93,67.71|N|From Orbiss.|
-C Orbiss Fades|QID|30792|M|73.52,70.69|
-C Golgoss Hungers|QID|30790|M|74.60,70.17|
-C Arconiss Thirsts|QID|30791|M|74.27,73.58|
+C Arconiss Thirsts|QID|30791|S|M|73.3,71.8|
+C Golgoss Hungers|QID|30790|S|NC|M|74.60,70.17|
+C Orbiss Fades|QID|30792|NC|M|73.52,70.69|N|Walk through the white mist geysers.|
+C Golgoss Hungers|QID|30790|US|NC|M|74.60,70.17|
+C Arconiss Thirsts|QID|30791|US|M|73.3,71.8|
 T Golgoss Hungers|QID|30790|M|67.90,67.76|N|To Orbiss.|
 T Arconiss Thirsts|QID|30791|M|67.90,67.76|N|To Orbiss.|
 T Orbiss Fades|QID|30792|M|67.90,67.76|N|To Orbiss.|
 A Mists' Opportunity|QID|30793|M|67.90,67.76|N|From Orbiss.|
-C Mists' Opportunity|QID|30793|M|76.47,72.71|
+K Kill Jahesh of Osul|QID|30793|T|Jahesh of Osul|M|76.47,72.71|
 T Mists' Opportunity|QID|30793|M|76.19,72.93|N|To Orbiss.|
 
-R Gao-Ran Battlefront|QID|30887|M|74.44,81.47|CC|
+R Gao-Ran Battlefront|QID|30785|M|74.44,81.47|CC|
 f Gao-Ran Battlefront|QID|30887|M|74.44,81.47|N|At Kite Master Nenshi.|
+T Gao-Ran Battlefront|QID|30785|M|76.38,82.39|N|To Taran Zhu.|
+A Behind the Battlefront|QID|30884|M|76.38,82.39|N|From Taran Zhu.|
+A Treatment for the Troops|QID|30891|M|75.85,83.05|N|From Septi the Herbalist.|
+r Merchants!|QID|99999|M|75.78,81.87|N|At Ironshaper Peng, finally a place to repair and sell|
+C Treatment for the Troops|QID|30891|S|NC|M|75.83,76.58|
+T Behind the Battlefront|QID|30884|M|76.96,78.89|N|To Taoshi.|
+A Unwelcome Intruders|QID|30887|M|76.96,78.89|N|From Taoshi.|
+C Unwelcome Intruders|QID|30887|M|77.03,78.16|
+C Treatment for the Troops|QID|30891|US|NC|M|75.83,76.58|
 T Treatment for the Troops|QID|30891|M|75.80,83.10|N|To Septi the Herbalist.|
 T Unwelcome Intruders|QID|30887|M|79.43,84.37|N|To Taoshi.|
 A Breach in the Defenses|QID|30888|M|79.43,84.37|N|From Taoshi.|
 A The Restless Watch|QID|30890|M|79.43,84.37|N|From Taoshi.|
 A Trap Setting|QID|30889|M|79.43,84.37|N|From Mao the Lookout.|
-C The Restless Watch|QID|30890|NC|QO|Deliver Orders to Scout Wei-chin: 1/1|M|82.24,84.07|
-C The Restless Watch|QID|30890|NC|QO|Deliver Orders to Scout Long: 1/1|M|81.34,86.18|
-C The Restless Watch|QID|30890|NC|QO|Deliver Orders to Scout Jai-gan: 1/1|M|78.97,90.24|
-C The Restless Watch|QID|30890|NC|QO|Deliver Orders to Scout Ying: 1/1|M|82.53,89.5|
-C Breach in the Defenses|QID|30888|U|81925|M|80.71,86.18|N|The mobs are stealthed at the front of the orange dustclouds moving along the ground, use the flare to make them visable.|
-C Trap Setting|QID|30889|M|81.81,84.36|
+C Trap Setting|QID|30889|S|NC|M|81.81,84.36|
+C Breach in the Defenses|QID|30888|S|U|81925|M|80.71,86.18|N|The mobs are stealthed at the front of the orange dustclouds moving along the ground, use the flare to make them visable.|
+C Deliver Orders to Scout Wei-chin|QID|30890|NC|QO|Deliver Orders to Scout Wei-chin: 1/1|M|82.24,84.07|
+C Deliver Orders to Scout Long|QID|30890|NC|QO|Deliver Orders to Scout Long: 1/1|M|81.34,86.18|
+C Deliver Orders to Scout Jai-gan|QID|30890|NC|QO|Deliver Orders to Scout Jai-gan: 1/1|M|78.97,90.24|
+C Deliver Orders to Scout Ying|QID|30890|NC|QO|Deliver Orders to Scout Ying: 1/1|M|82.53,89.5|
+C Breach in the Defenses|QID|30888|US|U|81925|M|80.71,86.18|N|The mobs are stealthed at the front of the orange dustclouds moving along the ground, use the flare to make them visable.|
+C Trap Setting|QID|30889|US|NC|M|81.81,84.36|
 T Breach in the Defenses|QID|30888|M|79.41,84.42|N|To Taoshi.|
 T The Restless Watch|QID|30890|M|79.41,84.42|N|To Taoshi.|
 A Returning from the Pass|QID|30960|M|79.41,84.42|N|From Taoshi.|
@@ -127,18 +144,22 @@ T Returning from the Pass|QID|30960|M|76.42,82.47|N|To Taran Zhu.|
 A The Endless Swarm|QID|30893|M|76.42,82.47|N|From Taran Zhu.|
 A Back on Their Feet|QID|30892|M|75.88,83.11|N|From Septi the Herbalist.|
 A Rummaging Through the Remains|QID|30894|M|75.88,83.11|N|From Septi the Herbalist.|
-C Rummaging Through the Remains|QID|30894|M|76.31,89.27|
-C The Endless Swarm|QID|30893|M|75.56,89.88|
-C Back on Their Feet|QID|30892|U|82787|M|74.16,89.57|
+C Back on Their Feet|QID|30892|S|NC|U|82787|M|74.16,89.57|
+C The Endless Swarm|QID|30893|S|M|75.56,89.88|
+C Rummaging Through the Remains|QID|30894|M|76.31,89.27|N|Kill Kril'thik and libs will fall for you to pick up.|
+C The Endless Swarm|QID|30893|US|M|75.56,89.88|
+C Back on Their Feet|QID|30892|US|NC|U|82787|M|74.16,89.57|
 T Back on Their Feet|QID|30892|M|75.82,83.15|N|To Septi the Herbalist.|
 T Rummaging Through the Remains|QID|30894|M|75.82,83.15|N|To Septi the Herbalist.|
 T The Endless Swarm|QID|30893|M|76.37,82.39|N|To Taran Zhu.|
 A Improvised Ammunition|QID|30895|M|76.37,82.39|N|From Taran Zhu.|
 A Thieves and Troublemakers|QID|30896|M|70.53,86.40|N|From Initiate Feng.|
 A In the Wrong Hands|QID|30897|M|70.37,86.56|N|From Initiate Chao.|
-C In the Wrong Hands|QID|30897|M|62.64,87.23|
-C Thieves and Troublemakers|QID|30896|M|68.05,86.72|
-C Improvised Ammunition|QID|30895|M|67.70,87.52|N|These are on the ground as well as dropping from the mobs you kill.|
+C Improvised Ammunition|QID|30895|S|M|67.70,87.52|N|These are on the ground as well as dropping from the mobs you kill.|
+C Thieves and Troublemakers|QID|30896|S|M|68.05,86.72|
+K Kill Needlebottom|QID|30897|T|Needlebottom|M|62.64,87.23|N|Kill Needlebottom to get Chao's Sword.a|
+C Thieves and Troublemakers|QID|30896|US|M|68.05,86.72|
+C Improvised Ammunition|QID|30895|US|M|67.70,87.52|N|These are on the ground as well as dropping from the mobs you kill.|
 T Thieves and Troublemakers|QID|30896|M|70.50,86.40|N|To Initiate Feng.|
 T In the Wrong Hands|QID|30897|M|70.38,86.66|N|To Initiate Chao.|
 R Gao-Ran Battlefront|QID|30895|M|76.38,82.40|CC|
@@ -147,15 +168,16 @@ A Cutting the Swarm|QID|30898|M|76.38,82.40|N|From Taran Zhu.|
 C Cutting the Swarm|QID|30898|M|73.95,84.06|
 T Cutting the Swarm|QID|30898|M|74.27,84.96|N|To Taoshi.|
 A Terror of the Dread Wastes|QID|30900|M|74.27,84.96|N|From Taoshi.|
-C Terror of the Dread Wastes|QID|30900|M|74.63,87.34|
+K Norvakerss|QID|30900|T|Norvakerss|M|74.63,87.34|
 T Terror of the Dread Wastes|QID|30900|M|76.45,82.41|N|To Taran Zhu.|
 A Along the Southern Front|QID|30901|M|76.45,82.41|N|From Taran Zhu.|
 
 T Along the Southern Front|QID|30901|M|67.26,80.78|N|To Taoshi.|
 A Enraged By Hatred|QID|30970|M|67.26,80.78|N|From Taoshi.|
 A Taking Stock|QID|30971|M|67.30,80.69|N|From Initiate Pao-Me.|
-C Enraged By Hatred|QID|30970|M|67.33,83.00|
-C Taking Stock|QID|30971|M|66.67,82.26|
+C Taking Stock|QID|30971|S|NC|M|66.67,82.26|
+C Enraged By Hatred|QID|30970|M|66.8,83.6|
+C Taking Stock|QID|30971|US|NC|M|66.67,82.26|
 T Taking Stock|QID|30971|M|67.35,80.80|N|To Initiate Pao-Me.|
 T Enraged By Hatred|QID|30970|M|67.35,80.80|N|To Taoshi.|
 A Joining the Fight|QID|30972|M|67.35,80.80|N|From Initiate Pao-Me.|

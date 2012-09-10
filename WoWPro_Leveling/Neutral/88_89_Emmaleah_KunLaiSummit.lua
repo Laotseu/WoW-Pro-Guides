@@ -520,8 +520,8 @@ T Do a Barrel Roll!|QID|30991|M|31.82,60.16|N|To Lao-Chin the Iron Belly.|
 A Finish This!|QID|30992|M|31.82,60.16|N|From Lao-Chin the Iron Belly.|
 C Finish This!|QID|30992|M|31.30,61.61|
 T Finish This!|QID|30992|M|31.30,61.61|N|To Ban Bearheart.|
-;A Where are My Reinforcements?|QID|30993|M|31.30,61.61|N|From Ban Bearheart.|
-A My Husband...|QID|30768|M|31.30,61.61|N|From Suna Silentstrike.|;This quest was not offered to me in Kun-Lai Summit, it might have been moved in some other zone.
+A Where are My Reinforcements?|QID|30993|M|31.30,61.61|N|From Ban Bearheart.|
+;A My Husband...|QID|30768|M|31.30,61.61|N|From Suna Silentstrike.|;This quest was not offered to me in Kun-Lai Summit, it might have been moved in some other zone.
 C Where are My Reinforcements?|QID|30993|M|34.08,58.62|Talk to Ban while down in the valley and then again beside the balloon.)
 T Where are My Reinforcements?|QID|30993|M|35.29,49.45|N|To Ban Bearheart. Follow Ban, hop in his balloon.|
 A Unbelievable!|QID|30752|M|35.29,49.45|N|From Ban Bearheart.|
