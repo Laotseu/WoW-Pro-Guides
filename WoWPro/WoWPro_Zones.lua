@@ -2306,6 +2306,12 @@ WoWPro.Zone2MapID = {
 			["zone"] = "Townlong Steppes",
 			["mapName"] = "TownlongWastes",
 		},
+		["Vale of Eternal Blossoms"] = {
+			["numFloors"] = 0,
+			["mapID"] = 811,
+			["zone"] = "Townlong Steppes",
+			["mapName"] = "ValeofEternalBlossoms",
+		},
 		["Krasarang Wilds"] = {
 			["numFloors"] = 0,
 			["mapID"] = 857,

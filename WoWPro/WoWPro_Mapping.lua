@@ -311,6 +311,7 @@ local zidmap = {
 	[807] = "Valley of the Four Winds",
 	[809] = "Kun-Lai Summit",
 	[810] = "Townlong Steppes",
+	[811] = "Vale of Eternal Blossoms",
 	[857] = "Krasarang Wilds",
 	[858] = "Dread Wastes",
 	[873] = "The Veiled Stair",
