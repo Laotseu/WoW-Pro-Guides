@@ -190,25 +190,27 @@ C The Taking of Dusklight Bridge|QID|30975|M|44.79,9.80|Z|Dread Wastes|
 T The Taking of Dusklight Bridge|QID|30975|M|61.08,83.21|N|To Taran Zhu.|
 A Joining the Hunt|QID|30976|M|61.08,83.21|N|From Taran Zhu.|
 
-f Rensai's Watchpost|QID|30976|M|54.28,78.97|N|At Kite Master Li-Sen.|
+f Rensai's Watcewhpost|QID|30976|M|54.28,78.97|N|At Kite Master Li-Sen.|
 r Merchants|99999|M|54.24,77.67|N|If your bags are full... at Supplier Qiao.|
 T Joining the Hunt|QID|30976|M|54.07,78.09|N|To Taran Zhu.|
 A In Skilled Hands|QID|30899|M|54.07,78.09|N|From Taran Zhu.|
 A Grounded Welcome|QID|30977|M|53.98,78.11|N|From Rensai Oakhide.|
 A Choking the Skies|QID|31032|M|51.23,82.94|N|From Marksman Ye.|
+C Grounded Welcome|QID|30977|S|M|51.60,83.06|
+C Choking the Skies|QID|31032|S|NC|U|83768|M|51.25,83.72|N|After you kill the bugs, burn them with the torch.|
 T In Skilled Hands|QID|30899|M|51.58,87.21|N|To Hawkmaster Nurong.|
 A Hostile Skies|QID|30978|M|51.58,87.21|N|From Hawkmaster Nurong.|
 C Hostile Skies|QID|30978|M|51.67,87.32|
 T Hostile Skies|QID|30978|M|51.67,87.32|N|To Hawkmaster Nurong.|
 A Devastation Below|QID|30979|M|51.67,87.32|N|From Hawkmaster Nurong.|
-C Devastation Below|QID|30979|M|54.13,86.94|
+K Kill Voress'thalik|QID|30979|T|Kill Voress'thalik|M|54.13,86.94|N|Jump down to get to Voress'thalik. Don't worry, you have a slow fall debuff.|
 T Devastation Below|QID|30979|M|53.94,86.92|N|To Hawkmaster Nurong.|
 A Heroes of the Shado-Pan|QID|30980|M|53.94,86.92|N|From Hawkmaster Nurong.|
-C Choking the Skies|QID|31032|U|83768|M|51.25,83.72|N|After you kill the bugs, burn them with the torch.|
+C Choking the Skies|QID|31032|US|NC|U|83768|M|51.25,83.72|N|After you kill the bugs, burn them with the torch.|
+C Grounded Welcome|QID|30977|US|M|51.60,83.06|
 T Heroes of the Shado-Pan|QID|30980|M|54.04,77.97|N|To Taran Zhu.|
 A Buried Beneath|QID|31065|M|54.04,77.97|N|From Taran Zhu.|
 C Buried Beneath|QID|31065|M|53.54,77.41|
-C Grounded Welcome|QID|30977|M|51.60,83.06|
 T Choking the Skies|QID|31032|M|51.31,83.00|N|To Marksman Ye.|
 T Grounded Welcome|QID|30977|M|53.94,78.07|N|To Rensai Oakhide.|
 T Buried Beneath|QID|31065|M|54.05,77.92|N|To Taran Zhu.|
@@ -217,34 +219,40 @@ A Lao-Chin and Serevex|QID|31063|M|54.05,77.92|N|From Taran Zhu.|
 A Nurong and Rothek|QID|31064|M|54.05,77.92|N|From Taran Zhu.|
 A Thinning the Sik'thik|QID|31687|M|53.93,78.08|N|From Rensai Oakhide.|
 A The Search for Restless Leng|QID|31688|M|53.93,78.08|N|From Rensai Oakhide.|
+C The Search for Restless Leng|QID|31688|S|NC|M|46.36,76.34|
 C Thinning the Sik'thik|QID|31687|S|M|41.38,74.31|N|Also, break open the Cages that are near the Sik'thik,|
-C Taoshi and Korvexxis|QID|30981|M|46.89,82.80|
-C Lao-Chin and Serevex|QID|31063|M|45.46,77.42|
-C Nurong and Rothek|QID|31064|M|40.10,75.59|
-C Thinning the Sik'thik|QID|31687|S|US|M|41.38,74.31|
-C The Search for Restless Leng|QID|31688|M|46.36,76.34|
+K Kill Korvexxis|QID|30981|T|Korvexxis|M|46.7,83.0|
+K Kill Serevex|QID|31063|T|Serevex|M|45.2,77.5|
+K Kill Rothek|QID|31064|T|Rothek|M|39.7,76.0|
+C Thinning the Sik'thik|QID|31687|US|M|41.38,74.31|
+C The Search for Restless Leng|QID|31688|US|NC|M|46.36,76.34|
 T Taoshi and Korvexxis|QID|30981|M|47.55,78.86|N|To Taran Zhu.|
 T Lao-Chin and Serevex|QID|31063|M|47.55,78.86|N|To Taran Zhu.|
 T Nurong and Rothek|QID|31064|M|47.55,78.86|N|To Taran Zhu.|
 A The Sha of Hatred|QID|30968|M|47.55,78.86|N|From Taran Zhu.|
-C The Sha of Hatred|QID|30968|M|46.16,82.28|
+C The Sha of Hatred|QID|30968|M|46.16,82.28|N|Be sure to stay in the AOE healing.|
 T The Sha of Hatred|QID|30968|M|46.15,82.37|N|To Taoshi.|
 T Thinning the Sik'thik|QID|31687|M|53.96,78.18|N|To Rensai Oakhide.|
 T The Search for Restless Leng|QID|31688|M|53.96,78.18|N|To Rensai Oakhide.|
 
-R Shado-Pan Garrison|QID|99999|CC|M|50.05,71.96|CC|
+R Shado-Pan Garrison|QID|31488|CC|M|50.05,71.96|
 f Shado-Pan Garrison|QID|99999|M|50.05,71.96|N|At Kite Master Yao-Li.|
 A Stranger in a Strange Land|QID|31488|O|RANK|3|M|49.15,71.42|N|From Lorewalker Pao. - legendary quest - must be lvl 90|
-A The Motives of the Mantid|QID|30921|M|49.17,71.20|N|From Tai Ho.|
-A Set the Mantid Back|QID|30923|M|49.17,71.20|N|From Tai Ho.|
-A Natural Antiseptic|QID|30922|M|49.15,71.42|N|From Provisioner Bamfu.|
-A The Field Armorer|QID|30963|M|49.15,71.42|N|From Provisioner Bamfu.|
-A A Proper Poultice|QID|30964|M|49.15,71.42|N|From Provisioner Bamfu.|
-C A Proper Poultice|QID|30964|S|N|These are scattered through out the area.|
-C Natural Antiseptic|QID|30922|M|59.20,54.06|N|Kill turtles and Mushan in the area. Also pick up any sparklies, (Mao-Willow). Avoid the elite Mantid.|
-C The Field Armorer|QID|30963|M|59.21,57.52|
-C Set the Mantid Back|QID|30923|U|81891|M|55.18,53.10|
-C The Motives of the Mantid|QID|30921|M|57.37,51.66|
+A The Motives of the Mantid|QID|30921|M|49.1,71.2|N|From Tai Ho.|
+A Set the Mantid Back|QID|30923|M|49.1,71.2|N|From Tai Ho.|
+A Natural Antiseptic|QID|30922|M|49.1,71.3|N|From Provisioner Bamfu.|
+A The Field Armorer|QID|30963|M|49.1,71.3|N|From Provisioner Bamfu.|
+A A Proper Poultice|QID|30964|M|49.1,71.3|N|From Provisioner Bamfu.|
+C A Proper Poultice|QID|30964|S|NC|N|These are scattered through out the area.|
+C The Field Armorer|QID|30963|S|M|59.21,57.52|
+C Natural Antiseptic|QID|30922|S|M|59.20,54.06|N|Kill turtles and Mushan in the area. Also pick up any sparklies, (Mao-Willow). Avoid the elite Mantid.|
+C The Motives of the Mantid|QID|30921|S|M|57.37,51.66|N|Kill mantids untel you get the four clues.|
+C Make the Kri'thik Supplies Exploded|QID|30923|NC|U|81891|QO|Kri'thik Supplies Exploded: 1/1|M|56.7,53.6|
+C Make the Kri'thik Weapons Exploded|QID|30923|NC|U|81891|QO|Kri'thik Weapons Exploded: 1/1|M|55.2,53.0|
+C The Motives of the Mantid|QID|30921|US|M|57.37,51.66|N|Kill mantids untel you get the four clues.|
+C Set the Mantid Back|QID|30923|US|U|81891|M|55.18,53.10|
+C Natural Antiseptic|QID|30922|US|M|59.20,54.06|N|Kill turtles and Mushan in the area. Also pick up any sparklies, (Mao-Willow). Avoid the elite Mantid.|
+C The Field Armorer|QID|30963|US|M|59.21,57.52|
 C A Proper Poultice|QID|30964|US|M|61.69,56.18|
 T The Motives of the Mantid|QID|30921|M|49.14,71.15|N|To Tai Ho.|
 T Set the Mantid Back|QID|30923|M|49.14,71.15|N|To Tai Ho.|
@@ -253,7 +261,7 @@ T Natural Antiseptic|QID|30922|M|49.20,70.78|N|To Provisioner Bamfu.|
 T The Field Armorer|QID|30963|M|49.20,70.78|N|To Provisioner Bamfu.|
 T A Proper Poultice|QID|30964|M|49.20,70.78|N|To Provisioner Bamfu.|
 
-R Niuzao Temple|QID|99999|CC|43.83,65.79|
+R Niuzao Temple|QID|30931|M|43.83,65.79|
 A My Father's Crossbow|QID|30931|M|43.83,65.79|N|From Ku-Mo.|
 C My Father's Crossbow|QID|30931|M|38.62,65.47|
 T My Father's Crossbow|QID|30931|M|43.80,65.77|N|To Ku-Mo.|
@@ -263,6 +271,7 @@ A Father's Footsteps|QID|30932|M|39.43,62.03|N|From Sentinel Commander Qipan.|
 A Bad Yak|QID|30929|M|39.21,62.05|N|From Bluesaddle.|
 C Bad Yak|QID|30929|M|39.28,61.91|Click on the yak, 4 times.|
 T Bad Yak|QID|30929|M|39.22,61.99|N|To Bluesaddle.|
+C Niuzao's Price|QID|30925|S|M|42.72,47.40|N|Kill Mantid until all the statuettes peices are found.|
 C Father's Footsteps|QID|30932|NC|QO|Find Sentinel Yalo: 1/1|M|39.13, 61.39|
 C Father's Footsteps|QID|30932|NC|QO|Find Father's Shield: 1/1|M|37.54, 61.45|
 C Father's Footsteps|QID|30932|NC|QO|Find Father's Bedroll: 1/1|M|37.41,60.90|
@@ -272,17 +281,18 @@ T Father's Footsteps|QID|30932|M|39.48,61.91|N|To Ku-Mo.|
 A Pick a Yak|QID|30930|M|35.45,56.62|N|From Bluesaddle.|
 C Pick a Yak|QID|30930|U|82468|M|38.36,51.38|
 T Pick a Yak|QID|30930|M|35.38,56.66|N|To Bluesaddle.|
-C Niuzao's Price|QID|30925|M|42.72,47.40|
+C Niuzao's Price|QID|30925|US|M|42.72,47.40|N|Kill Mantid until all the statuettes peices are found.|
 T Niuzao's Price|QID|30925|M|39.37,62.18|N|To Ogo the Younger.|
 A The Terrible Truth|QID|30926|M|39.37,62.18|N|From Ogo the Elder.|
-A Give Them Peace|QID|30927|M|39.38,62.00|N|From Sentinel Commander Qipan.|
 A A Trail of Fear|QID|30928|M|39.19,62.05|N|From Yak-Keeper Kyana.|
+A Give Them Peace|QID|30927|M|39.38,62.00|N|From Sentinel Commander Qipan.|
 R Niuzao Catacombs|QID|30927|M|32.71,61.17|CC|
-C Give Them Peace|QID|30927|S|M|32.43, 61.12|
+C A Trail of Fear|QID|30928|S|M|28.88,73.48|
+C Give Them Peace|QID|30927|S|NC|M|32.43, 61.12|
 C The Terrible Truth|QID|30926|M|36.06,57.72|
 T The Terrible Truth|QID|30926|M|36.51,57.40|N|To Tai Ho.|
-C A Trail of Fear|QID|30928|M|28.88,73.48|
-C Give Them Peace|QID|30927|US|M|33.08,61.81|
+C Give Them Peace|QID|30927|US|NC|M|33.08,61.81|
+C A Trail of Fear|QID|30928|US|M|28.88,73.48|
 ;C Seeking Father|QID|30933|M|17.4,57| -- on wowhead, put it in because when you do the previous step it "feels" uncompleted, so I'm hoping it was a bug that *I* wasn't given it.
 T Give Them Peace|QID|30927|M|39.41,61.90|N|To Sentinel Commander Qipan.|
 T A Trail of Fear|QID|30928|M|39.16,62.12|N|To Yak-Keeper Kyana.|
