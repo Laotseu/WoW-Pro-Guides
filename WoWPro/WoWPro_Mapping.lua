@@ -536,50 +536,48 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 			local y = tonumber(jcoord:match(",([^|]*)"))
 			if not x or x > 100 then return end
 			if not y or y > 100 then return end
-			if TomTom then
-				local uid
+			local uid
 
-				if numcoords > 1 or autoarrival == 1 or autoarrival == 2 then
-					uid = TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {
-						title = desc,
-						desc = desc,
-						callbacks = WoWProMapping_callbacks_tomtom,
-						cleardistance = 0,
-						arrivaldistance = 1, -- The callback is set and we don't want it overwritten
-						persistent = false,
-						minimap = true,
-						world = true,
-						crazy = false -- We will set it with the callback if there is more then one
-					})
-				else
-					uid = TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {
-						title = desc,
-						desc = desc,
-						persistent = false,
-						minimap = true,
-						world = true,
-						crazy = true,
-					})
-				end
-err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j, numcoords, x, y, uid[3], uid[4], desc)
-				if not uid then
-				    WoWPro:Print("Failed to set waypoint!  Please report a bug with the guide and step number.")
-				end
-				waypoint.uid = uid
-				waypoint.index = i
-				waypoint.zone = zone
-				waypoint.x = x
-				waypoint.y = y
-				waypoint.desc = desc
-				waypoint.j = numcoords-j+1
-				waypoint.autoarrival = autoarrival
-				waypoint.real_arrivaldistance = arrivaldistance
-
-				table.insert(cache, waypoint)
-				--FinalCoord = { x , y }
-				FinalCoord[1] = x
-				FinalCoord[2] = y
+			if numcoords > 1 or autoarrival == 1 or autoarrival == 2 then
+				uid = TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {
+					title = desc,
+					desc = desc,
+					callbacks = WoWProMapping_callbacks_tomtom,
+					cleardistance = 0,
+					arrivaldistance = 1, -- The callback is set and we don't want it overwritten
+					persistent = false,
+					minimap = true,
+					world = true,
+					crazy = false -- We will set it with the callback if there is more then one
+				})
+			else
+				uid = TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {
+					title = desc,
+					desc = desc,
+					persistent = false,
+					minimap = true,
+					world = true,
+					crazy = true,
+				})
 			end
+err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j, numcoords, x, y, uid[3], uid[4], desc)
+			if not uid then
+				 WoWPro:Print("Failed to set waypoint!  Please report a bug with the guide and step number.")
+			end
+			waypoint.uid = uid
+			waypoint.index = i
+			waypoint.zone = zone
+			waypoint.x = x
+			waypoint.y = y
+			waypoint.desc = desc
+			waypoint.j = numcoords-j+1
+			waypoint.autoarrival = autoarrival
+			waypoint.real_arrivaldistance = arrivaldistance
+
+			table.insert(cache, waypoint)
+			--FinalCoord = { x , y }
+			FinalCoord[1] = x
+			FinalCoord[2] = y
 		end
 
 		if autoarrival and #cache > 0 then

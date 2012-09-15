@@ -392,6 +392,19 @@ function WoWPro:NextStep(k,i)
 			break
 		end
 
+		-- Check if we are already in the correct zone for traveling steps
+		if not skip then  
+			local action = WoWPro.action[k]
+			if action == "F" or action == "H" or action == "b" or (action == "R" and not WoWPro.waypcomplete[k]) then
+				local step = WoWPro.step[k]
+				if step == GetZoneText() or step == GetSubZoneText():trim() then
+					WoWProCharDB.Guide[GID].completion[k] = true
+					skip = true
+					break
+				end
+			end
+		end
+
 		-- Optional Quests --
 		if WoWPro.optional[k] and WoWPro.QID[k] then
 			skip = true --Optional steps default to skipped --

@@ -720,7 +720,6 @@ local function createBlizzOptions()
 						 WoWProCharDB.DebugMode = true
 					end
 					WoWPro:UpdateGuide()
-					WoWPro.UpdateCurrentGuidePanel()
 				end
 			},
 			reset = {
