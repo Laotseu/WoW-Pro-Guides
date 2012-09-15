@@ -1,4 +1,4 @@
-WoWPro.Leveling:RegisterGuide('EmmDre8990', 'Dread Wastes', 'Emmaleah', '89', '90', 'nil', 'Neutral', function() 
+WoWPro.Leveling:RegisterGuide('EmmDre8990', 'Dread Wastes', 'Emmaleah', '88', '89', 'nil', 'Neutral', function() 
 return [[
 
 N Dread Wastes|N|There are 3 distinct lead in quests, when you pick any of them up it also gives you the flightpath to Serpent's Spine in Vale of Eternal Blossoms (where Brewmistress Li is). This guide starts there.|
@@ -6,8 +6,9 @@ F Serpent's Spine|QID|31847|N|From whatever flightmaster you are near, fly to Se
 T Better Dead than Dread|QID|31847|M|13.99,76.95|Z|Vale of Eternal Blossoms|N|To Bowmistress Li.|
 A Falling Down|QID|31001|M|13.99,76.95|Z|Vale of Eternal Blossoms|N|From Bowmistress Li.|
 A Nope|QID|31002|M|13.99,76.95|Z|Vale of Eternal Blossoms|N|From Bowmistress Li.|
-C Falling Down|QID|31001|M|72.56,28.70|N|Use the rope right behind Brewmistriss Li.|
-C Nope|QID|31002|U|82807|M|71.68,27.38|
+C Nope|QID|31002|S|U|82807|M|71.68,27.38|
+C Falling Down|QID|31001|NC|M|75.1,21.3;72.56,28.70|N|Use the rope right behind Brewmistriss Li.|
+C Nope|QID|31002|US|U|82807|M|71.68,27.38|
 T Falling Down|QID|31001|M|72.56,28.70|N|To Marksman Lann.|
 T Nope|QID|31002|M|72.55,28.62|N|To Marksman Lann.|
 A Psycho Mantid|QID|31003|M|72.55,28.62|N|From Marksman Lann.|
@@ -33,17 +34,24 @@ A Dead Zone|QID|31009|M|54.81,34.12|N|From Kor'ik.|
 A Amber Arms|QID|31008|M|55.00,35.59|N|From Ambersmith Zikk.|
 f Klaxxi'vess|QID|31108|M|55.82,34.83|N|At Kik'tik.|
 h Klaxxi'vess|QID|31108|M|55.89,32.59|N|At Zit'tix.|
-F The Cluthces of Shek'zeer|QID|31009|M|55.01,33.99|N|Ask Kil'ruk the Wind-Reaver for a ride or fly over on your own.|
-C Dead Zone|QID|31009|U|83276|M|40.02,38.99|
+F Heart of Fear|QID|31009|M|55.01,33.99|N|Ask Kil'ruk the Wind-Reaver for a ride or fly over on your own.|
+C Amber Arms|QID|31008|S|M|48.54,43.63|
+C The Dread Clutches|QID|31007|S|M|45.05,42.16|
+C Not Fit to Swarm|QID|31660|S|M|45.05,42.16|
+C Dead Zone|QID|31009|NC|U|83276|M|40.02,38.99|
 T Dead Zone|QID|31009|M|40.02,38.99|N|To UI Alert.|
+A In Her Clutch |QID|31010|M|40.0,39.1|N|From UI Alert.|
+C In Her Clutch |QID|31010|S|M|40.0,39.1|N|Click the crystal and defend the paragon until the quest is complete.|
 A A Source of Terrifying Power|QID|31661|M|44.60,41.40|N|From Sha Haunted Crystal.|
-C Not Fit to Swarm|QID|31660|M|45.05,42.16|
-C The Dread Clutches|QID|31007|M|45.05,42.16|
-C Amber Arms|QID|31008|M|48.54,43.63|
+C In Her Clutch |QID|31010|US|M|40.0,39.1|N|Click the crystal and defend the paragon until the quest is complete.|
+C Not Fit to Swarm|QID|31660|US|M|45.05,42.16|
+C The Dread Clutches|QID|31007|US|M|45.05,42.16|
+C Amber Arms|QID|31008|US|M|48.54,43.63|
 H Klaxxi'vess|QID|31661|
 
 T The Dread Clutches|QID|31007|M|55.01,33.98|N|To Kil'ruk the Wind-Reaver.|
 T Not Fit to Swarm|QID|31660|M|55.01,33.99|N|To Kil'ruk the Wind-Reaver.|
+T In Her Clutch |QID|31010|M|54.9,34.1|N|To Malik the Unscathed|
 T Amber Arms|QID|31008|M|55.05,35.49|N|To Ambersmith Zikk.|
 T A Source of Terrifying Power|QID|31661|M|55.00,35.59|N|To Ambersmith Zikk.|
 A Concentrated Fear|QID|31108|M|55.00,35.59|N|From Ambersmith Zikk.|
@@ -54,48 +62,59 @@ C In Her Clutch|QID|31010|M|44.75,41.42|
 T In Her Clutch|QID|31010|M|54.89,34.14|N|To Malik the Unscathed.|
 A The Dreadsworn|QID|31689|M|55.10,35.45|N|From Malik the Unscathed.|
 A Citizens of a New Empire|QID|31107|M|55.10,35.45|N|From Malik the Unscathed.|
-C A Cry From Darkness|QID|31066|M|59.44,18.37|
-C Citizens of a New Empire|QID|31107|M|59.74,19.78|
-C The Dreadsworn|QID|31689|M|58.99,14.65|
-C Concentrated Fear|QID|31108|M|56.75,18.22|
+C Concentrated Fear|QID|31108|S|NC|M|56.75,18.22|
+C The Dreadsworn|QID|31689|S|M|58.99,14.65|
+C Citizens of a New Empire|QID|31107|S|M|59.74,19.78|
+K Kill Qi'tar the Deathcaller|QID|31066|T|Qi'tar the Deathcaller|M|59.44,18.37|
+C Citizens of a New Empire|QID|31107|US|NC|M|59.74,19.78|
+C The Dreadsworn|QID|31689|US|M|58.99,14.65|
+C Concentrated Fear|QID|31108|US|M|56.75,18.22|
 H Klaxxi'vess|QID|31108|
 
-T Concentrated Fear|QID|31108|M|54.95,35.48|N|To Ambersmith Zikk.|
-T The Dreadsworn|QID|31689|M|54.99,35.43|N|To Malik the Unscathed.|
-T Citizens of a New Empire|QID|31107|M|54.99,35.43|N|To Malik the Unscathed.|
+T Concentrated Fear|QID|31108|M|55.0,35.6|N|To Ambersmith Zikk.|
+T The Dreadsworn|QID|31689|M|55.1,35.5|N|To Malik the Unscathed.|
+T Citizens of a New Empire|QID|31107|M|55.1,35.5|N|To Malik the Unscathed.|
 T A Cry From Darkness|QID|31066|M|54.77,34.03|N|To Kor'ik.|
 A Extending Our Coverage|QID|31087|M|54.77,34.03|N|From Kor'ik.|
 A Amber Is Life|QID|31019|M|55.03,35.77|N|From Kil'ruk the Wind-Reaver.|
+A Mistblade Destruction |QID|31267|M|55.1,35.8||N|From Kil'ruk the Wind-Reaver. This is a daily that require to be level 90. Skip it if you are not 90 yet.|
 
-R Lake of Stars|QID|31023|M|67.91,60.19|CC|
-l Strange Relic|L|82870|N|Drops from Saurok mobs around the lake.|
-A Relics of the Swarm|QID|31023|M|67.91,60.19|U|82870|N|From Strange Relic.|
-C Relics of the Swarm|QID|31023|M|65.65,64.13|
-C Amber Is Life|QID|31019|M|63.68,63.84|N|Entrance to Mistblade Scale-Lord's cave|
+R Lake of Stars|QID|31023|M|67.91,60.19|
+;l Strange Relic|L|82870|N|Drops from Saurok mobs around the lake.|
+A Relics of the Swarm|QID|31023|S|M|67.91,60.19|U|82870|N|The Strange Relic drop from the Saurok around the lake.|
+C Mistblade Destruction |QID|31267|S|M|62.3,57.7|
+C Relics of the Swarm|QID|31023|US|NC|M|65.65,64.13|
+C Amber Is Life |QID|31019|S|QO|Mistblade Ripper slain: 7/7|M|62.3,57.7|
+K Kill Mistblade Scale-Lord|QID|31019|T|Mistblade Scale-Lord|QO|Mistblade Scale-Lord slain: 1/1|M|63.68,63.84;66.5,66.0|CC|
+C Amber Is Life |QID|31019|US|QO|Mistblade Ripper slain: 7/7|M|62.3,57.7|
+C Relics of the Swarm|QID|31023|US|NC|M|65.65,64.13|
+C Mistblade Destruction |QID|31267|US|M|62.3,57.7|
 T Amber Is Life|QID|31019|M|66.82,65.35|N|To Ancient Amber Chunk.|
-A Living Amber|QID|31021|M|66.82,65.35|N|From Korven the Prime.|
 A Feeding the Beast|QID|31020|M|66.82,65.35|N|From Korven the Prime.|
-C Living Amber|QID|31021|M|65.20,59.63|U|82864|N|Pick up the sparklies and feed them to Korven.|
-C Feeding the Beast|QID|31020|M|64.91,58.09|
+A Living Amber|QID|31021|M|66.82,65.35|N|From Korven the Prime.|
+C Feeding the Beast|QID|31020|S|M|64.91,58.09|N|In the lake.|
+C Living Amber|QID|31021|M|65.20,59.63|U|82864|N|Pick up the sparklies in the lake and feed them to Korven.|
+C Feeding the Beast|QID|31020|US|M|64.91,58.09|N|In the lake.|
 T Feeding the Beast|QID|31020|M|64.91,58.09|N|To Korven the Prime.|
 T Living Amber|QID|31021|M|64.91,58.09|N|To Korven the Prime.|
 A Kypari Zar|QID|31022|M|64.91,58.09|N|From Korven the Prime.|
 C Kypari Zar|QID|31022|M|59.90,59.38|
 T Kypari Zar|QID|31022|M|60.00,59.29|N|To Korven the Prime.|
 A The Root of the Problem|QID|31026|M|60.00,59.29|N|From Korven the Prime.|
-C The Root of the Problem|QID|31026|M|57.45,57.79|
+K Kill Coldbite Matriarch|QID|31026|T|Coldbite Matriarch|M|58.7,59.6;57.45,57.79|CC|
 T The Root of the Problem|QID|31026|M|57.46,57.99|N|To Korven the Prime.|
 
-R Soggy's Gamble|QID|31265|M|56.16,70.07|CC|
+R Soggy's Gamble|QID|31265|M|56.16,70.07|
 f Soggy's Gamble|QID|31265|M|56.16,70.07|N|At Min the Breeze Rider.|
 A Mazu's Breath|QID|31265|M|54.67,72.23|N|From Deck Boss Arie.|
 C Mazu's Breath|QID|31265|M|54.67,72.23|NC|
 T Mazu's Breath|QID|31265|M|54.76,72.24|N|To Deck Boss Arie.|
 A Fresh Pots|QID|31181|M|54.76,72.24|N|From Deck Boss Arie.|
 A You Otter Know|QID|31182|M|54.76,72.24|N|From Deck Boss Arie.|
-C You Otter Know|QID|31182|U|85231|M|59.31,80.58|
-K Sea Monarchs|QID|31181|M|58.93,82.22|L|85230 20|N|Kill the fish to collect meat to bait the traps.|
-C Fresh Pots|QID|31181|M|58.93,82.22|
+C Fresh Pots|QID|31181|S|U|85230|M|58.93,82.22|N|Kill the fish to collect meat to bait the traps.|
+C You Otter Know|QID|31182|NC|U|85231|M|59.31,80.58|
+;K Sea Monarchs|QID|31181|M|58.93,82.22|L|85230 20|N|Kill the fish to collect meat to bait the traps.|
+C Fresh Pots|QID|31181|US|U|85230|M|58.93,82.22|N|Kill the fish to collect meat to bait the traps.|
 T Fresh Pots|QID|31181|M|54.79,72.25|N|To Deck Boss Arie.|
 T You Otter Know|QID|31182|M|54.76,72.24|N|To Deck Boss Arie.|
 A Meet the Cap'n|QID|31183|M|54.79,72.25|N|From Deck Boss Arie.|
@@ -105,15 +124,17 @@ A Old Age and Treachery|QID|31184|M|55.66,72.49|N|From Captain "Soggy" Su-Dao.|
 A On the Crab|QID|31187|M|54.73,72.28|N|From Deck Boss Arie.|
 A Shark Week|QID|31188|M|54.73,72.28|N|From Deck Boss Arie.|
 A Dog Food|QID|31186|U|85955|N|From Dog.|
+C Dog Food|QID|31186|S|U|85955|N|Make sure Dog is around when you kill his food (Rockshell Snapclaws).|
 C Shark Week|QID|31188|S|U|85998|N|Kill Sharks, loot Thresher Jaw, extract the teeth from the jaw after each kill.|
+C On the Crab|QID|31187|S|NC|M|40,79|
 C Walking Dog|QID|31185|NC|U|85955|QO|Bring Dog to the Wreck of the Mist-Hopper: 1/1|M|45.31,78.70|
-C Old Age and Treachery|QID|31184|NC|QO|Sealed Charter Tube: 1/1|
-C Walking Dog|QID|31185|NC|U|85955|QO|Bring Dog to the Slit Vents: 1/1|M|46.5,74.0|
-C Dog Food|QID|31186|U|85955|N|Make sure Dog is around when you kill his food (Rockshell Snapclaws).|
-T Dog Food|QID|31186|N|To Dog.|
+C Old Age and Treachery|QID|31184|NC|M|44.7,78.7|
+C Walking Dog|QID|31185|NC|U|85955|QO|Bring Dog to the Silt Vents: 1/1|M|46.3,74.3|
 C Walking Dog|QID|31185|NC|U|85955|QO|Bring Dog to the Whale Corpse: 1/1|M|40.3,79.21|
-C On the Crab|QID|31187|NC|M|40,79|
+C Dog Food|QID|31186|US|U|85955|M|43.8,76.4|N|Make sure Dog is around when you kill his food (Rockshell Snapclaws).|
+C On the Crab|QID|31187|US|NC|M|40,79|
 C Shark Week|QID|31188|US|U|85998|N|Kill Sharks, loot Thresher Jaw, extract the teeth from the jaw after each kill.|
+T Dog Food|QID|31186|N|To Dog.|
 T On the Crab|QID|31187|M|54.78,72.21|N|To Deck Boss Arie.|
 T Shark Week|QID|31188|M|54.78,72.21|N|To Deck Boss Arie.|
 T Old Age and Treachery|QID|31184|M|55.69,72.47|N|To Captain "Soggy" Su-Dao.|
@@ -122,12 +143,12 @@ A Reeltime Strategy|QID|31189|M|54.76,72.22|N|From Deck Boss Arie.|
 C Reeltime Strategy|QID|31189|NC|M|53.65,75.84|
 T Reeltime Strategy|QID|31189|M|54.73,72.24|N|To Deck Boss Arie.|
 A The Mariner's Revenge|QID|31190|M|54.78,72.18|N|From Captain "Soggy" Su-Dao.|
-C The Mariner's Revenge|QID|31190|M|56.19, 76.28)|N|Hop on the boat (Vehicle UI)|
+C The Mariner's Revenge|QID|31190|M|56.19, 76.28|N|Hop on the boat (Vehicle UI)|
 T The Mariner's Revenge|QID|31190|M|56.57.75.85|N|To Captain "Soggy" Su-Dao.|
 A Mazu's Bounty|QID|31354|M|56.57,75.85|N|From Deck Boss Arie.|
 T Mazu's Bounty|QID|31354|M|54.93,72.9|N|To Master Angler Ju Lien|
 
-R Amberglow Hollow|M|46.36,52.91|N|Follow the Stinging Trail.|CC|
+R Amberglow Hollow|M|46.36,52.91|N|Follow the Stinging Trail.|
 C Extending Our Coverage|QID|31087|M|48.20,49.73|N|Click the crystal|
 T Extending Our Coverage|QID|31087|M|48.07,49.65|N|To Kor'ik|
 A Crime and Punishment|QID|31088|M|48.07,49.65|N|From Kor'ik|
@@ -159,7 +180,7 @@ A Skeer the Bloodseeker|QID|31175|M|55.04,35.86|N|From Kil'ruk the Wind-Reaver.|
 A A Not So Friendly Request|QID|31730|N|55.04,35.86|N|From Kil'ruk the Wind-Reaver.|
 A The Zan'thik Dig|QID|31605|M|54.72,34.08|N|From Kor'ik.|
 
-R Zan'vess|M|31.82,88.93|CC|
+R Zan'vess|M|31.82,88.93|
 T The Zan'thik Dig|QID|31605|M|31.82,88.93|N|To Rik'kal the Dissector.|
 A The Dissector Wakens|QID|31606|M|31.82,88.93|N|From Rik'kal the Dissector.|
 C The Dissector Wakens|QID|31606|M|31.82,88.93|
@@ -182,7 +203,7 @@ C The Scent of Blood|QID|31179|M|25.69,50.69|
 
 H Klaxxi'vess|QID|31179|M|55,34|
 T The Scent of Blood|QID|31179|M|55.03,35.82|N|To Kil'ruk the Wind-Reaver.|
-R The Sunset Brewgarden|QID|31730|M|50.27,12.21|CC|
+R The Sunset Brewgarden|QID|31730|M|50.27,12.21|
 f The Sunset Brewgarden|QID|31179|M|50.27,12.21|N|At Jin the Flying Keg.|
 T A Not So Friendly Request|QID|31730|M|51.17,11.51|N|To Sapmaster Vu.|
 A The Heavens Hum With War|QID|31067|M|51.17,11.51|N|From Sapmaster Vu.|
@@ -226,7 +247,7 @@ T Bound With Wood|QID|31073|M|51.13,11.39|N|To Sapmaster Vu.|
 A Sunset Kings|QID|31075|M|51.13,11.39|N|From Sapmaster Vu.|
 T Kor'thik Aggression|QID|31133|M|50.23,12.43|N|To Defender Azzo.|
 
-R Rikkitun Village|QID|31075|M|38.21,17.28|CC|
+R Rikkitun Village|QID|31075|M|38.21,17.28|
 T Sunset Kings|QID|31075|M|38.21,17.28|N|To Sapmaster Vu.|
 A The Horror Comes A-Rising|QID|31079|M|38.19,17.36|N|From Boggeo.|
 A Fiery Wings|QID|31080|M|38.18,17.23|N|From Olon.|
