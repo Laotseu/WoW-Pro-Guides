@@ -1,6 +1,22 @@
+-------------------------------------------------------------------------------
+-- Localized Lua globals
+-------------------------------------------------------------------------------
+local _G = getfenv(0)
+
+local type = _G.type
+
+local TOOLTIP_DEFAULT_COLOR = _G.TOOLTIP_DEFAULT_COLOR
+
+local CreateFrame = _G.CreateFrame
+local GameTooltip = _G.GameTooltip
+local GameTooltip_Hide = _G.GameTooltip_Hide
+local PlaySound = _G.PlaySound
+
 ----------------------------------
 --      WoWPro_Widgets.lua      --
 ----------------------------------
+
+local WoWPro = _G.LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 
 function WoWPro:CreateCheck(parent)
 	local check = CreateFrame("CheckButton", nil, parent)
@@ -14,7 +30,7 @@ function WoWPro:CreateCheck(parent)
 	check:SetDisabledCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
 	check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
 	check:Hide()
-	
+
 	return check
 end
 
@@ -23,16 +39,16 @@ function WoWPro:CreateAction(parent, anchor)
 	action:SetPoint("LEFT", anchor, "RIGHT", 3, 0)
 	action:SetWidth(15)
 	action:SetHeight(15)
-	
+
 	return action
 end
-	
+
 function WoWPro:CreateStep(parent, anchor)
 	local step = parent:CreateFontString(nil, nil, "GameFontHighlight")
 	step:SetPoint("LEFT", anchor, "RIGHT", 3, 0)
 	step:SetPoint("RIGHT")
 	step:SetJustifyH("LEFT")
-	
+
 	return step
 end
 
@@ -42,7 +58,7 @@ function WoWPro:CreateNote(parent, anchor1)
 	note:SetPoint("RIGHT")
 	note:SetJustifyH("LEFT")
 	note:SetJustifyV("TOP")
-	
+
 	return note
 end
 
@@ -52,7 +68,7 @@ function WoWPro:CreateTrack(parent, anchor1)
 	track:SetPoint("RIGHT")
 	track:SetJustifyH("LEFT")
 	track:SetJustifyV("TOP")
-	
+
 	return track
 end
 
@@ -74,7 +90,15 @@ function WoWPro:CreateItemButton(parent, id)
 
 	itembutton:RegisterForClicks("anyUp")
 	itembutton:Hide()
-	
+
+	--Add tooltip to the button
+	itembutton:HookScript("OnEnter", function (self)
+		if self.item_id then
+			GameTooltip:SetOwner(self); GameTooltip:SetHyperlink("item:" .. self.item_id); GameTooltip:Show();
+		end
+	end);
+	itembutton:HookScript("OnLeave", GameTooltip_Hide);
+
 	return itembutton, itemicon, cooldown
 end
 
@@ -93,7 +117,15 @@ function WoWPro:CreateTargetButton(parent, id)
 
 	targetbutton:RegisterForClicks("anyUp")
 	targetbutton:Hide()
-	
+
+	--Add tooltip to the button
+	targetbutton:HookScript("OnEnter", function (self)
+		if self.tooltip_text then
+			GameTooltip:SetOwner(self); GameTooltip:SetText(self.tooltip_text); GameTooltip:Show();
+		end
+	end);
+	targetbutton:HookScript("OnLeave", GameTooltip_Hide);
+
 	return targetbutton, targeticon
 end
 
@@ -127,7 +159,7 @@ function WoWPro:CreateBG(parent)
 	box:SetBackdrop(bg)
 	box:SetBackdropBorderColor(0.2, 0.2, 0.2)
 	box:SetBackdropColor(0.1, 0.2, 0.1, 0.5)
-	
+
 	return box
 end
 
@@ -143,22 +175,22 @@ function WoWPro:CreateTab(name, parent)
 	tab:SetBackdrop(bg)
 	tab:SetBackdropColor(0.1, 0.1, 0.1, 1)
 	tab:RegisterForClicks("anyUp")
-	
+
 	tab.border = tab:CreateTexture('border')
 	tab.border:SetAllPoints(tab)
 	tab.border:SetPoint("BOTTOM", 0, 5)
 	tab.border:SetTexture("Interface\\OPTIONSFRAME\\UI-OptionsFrame-InactiveTab")
-	
+
 	tab.text = tab:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
 	tab.text:SetHeight(35)
 	tab.text:SetPoint("TOPLEFT", tab, "TOPLEFT", 0, -3)
 	tab.text:SetPoint("TOPRIGHT", tab, "TOPRIGHT", 0, -3)
 	tab.text:SetJustifyH("CENTER")
 	tab.text:SetText(name)
-	
+
 	tab:SetWidth(tab.text:GetWidth()+20)
 	tab:SetHeight(35)
-	
+
 	return tab
 end
 
@@ -187,9 +219,9 @@ function WoWPro:CreateScrollbar(parent, offset, step, where)
 	    f:SetPoint("TOPRIGHT", 0 - (offsetX or 0), -16 - (offsetY or 0))
 	    f:SetPoint("BOTTOMRIGHT", 0 - (offsetX or 0), 16 + (offsetY or 0))
 	elseif where == "Outside" then
-	    f:SetPoint("TOPLEFT",parent,"TOPRIGHT",0 - (offsetX or 0), -16 - (offsetY or 0)) 
-	    f:SetPoint("BOTTOMLEFT", parent,"BOTTOMRIGHT",0 - (offsetX or 0), 16 + (offsetY or 0))    
-    end	
+	    f:SetPoint("TOPLEFT",parent,"TOPRIGHT",0 - (offsetX or 0), -16 - (offsetY or 0))
+	    f:SetPoint("BOTTOMLEFT", parent,"BOTTOMRIGHT",0 - (offsetX or 0), 16 + (offsetY or 0))
+    end
 
 	local up = CreateFrame("Button", nil, f)
 	up:SetPoint("BOTTOM", f, "TOP")

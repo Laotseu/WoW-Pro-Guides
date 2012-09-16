@@ -84,7 +84,7 @@ return [[
 
 N This Guide|QID|27251|N|Picks up directly from where Southern Barrens leaves off. If you did not do Southern Barrens, you can take the Hero's Call quest from Darnassus, Exodar or Stormwind instead.  Either make your way to Fort Triumph and run to Theramore or sail from Wetlands.  (Manually close this step by right clicking the check box)|
 R Dustwallow Marsh|QID|27251|M|56.61,78.35|Z|Southern Barrens|N|Head into Dustwallow Marsh.|
-R Theramore Isle |QID|27251|M|68.19,46.82|N|Follow the path all the way east to Theramore. It's populated by Alliance vehicles and banners.|
+R Theramore Isle |QID|27251|M|29.6,47.1;34.0,46.7;42.4,50.9;52.0,50.6|N|Follow the path all the way east to Theramore. It's populated by Alliance vehicles and banners.|
 
 A They Call Him Smiling Jim|QID|27251|M|66.05,45.91|N|From Guard Byron.|
 h Theramore Isle|QID|27251|M|66.57,45.26|N|At Innkeeper Janene. Take this chance to sell your junk and restock also.|
@@ -93,7 +93,7 @@ T Reinforcements From Theramore|QID|26687|O|M|68.21,48.58|N|To Captain Garran Vi
 T They Call Him Smiling Jim|QID|27251|M|68.21,48.58|N|To Captain Garran Vimes.|
 A Inspecting the Ruins|QID|27249|M|68.21,48.58|N|From Captain Garran Vimes.|
 
-f Theramore Isle|QID|27210|M|67.49,51.33|N|At Baldruc.|
+; f Theramore Isle|QID|27210|M|67.49,51.33|N|At Baldruc.|
 A This Old Lighthouse|QID|27216|M|68.30,51.84|N|From Sergeant Amelyn.|
 T Hero's Call: Dustwallow Marsh! |QID|28552|M|68.36,51.02|O|N|To Calia Hastings|
 A Traitors Among Us|QID|27210|M|68.33,51.04|N|From Calia Hastings.|
@@ -281,7 +281,7 @@ T Corrosion Prevention|QID|27347|M|53.55,56.91|N|To Moxie Steelgrille.|
 T Secure the Cargo!|QID|27348|M|53.55,56.91|N|To Moxie Steelgrille.|
 
 A Delivery for Drazzit|QID|11208|M|53.55,56.91|N|From Moxie Steelgrille.|
-f Mudsprocket|QID|11208|M|42.88,72.41|N|At Dyslix Silvergrub.|
+; f Mudsprocket|QID|11208|M|42.88,72.41|N|At Dyslix Silvergrub.|
 T Mission to Mudsprocket|QID|27248|M|42.25,72.92|N|To Drazzit Dripvalve.|
 T Help for Mudsprocket|QID|11211|M|42.25,72.92|N|To Drazzit Dripvalve.|
 T Delivery for Drazzit|QID|11208|M|42.25,72.92|N|To Drazzit Dripvalve.|

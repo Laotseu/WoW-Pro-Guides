@@ -31,7 +31,7 @@
 -- Who: Ludovicus Maior
 -- Log: Initial Version from Emmaleah
 
-WoWPro.Leveling:RegisterGuide('EmmVal8688', 'Valley of the Four Winds', 'Emmaleah', '86', '88', 'EmmKun8889', 'Alliance', function() return [[
+WoWPro.Leveling:RegisterGuide('EmmVal8687', 'Valley of the Four Winds', 'Emmaleah', '86', '87', 'EmmKra8788|RajKra8788', 'Neutral', function() return [[
 
 
 R Valley of the Four Winds|N|Make your way to Valley of the Four Winds.|
