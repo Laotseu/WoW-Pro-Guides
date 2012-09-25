@@ -68,7 +68,7 @@ A Assist Exarch Orelis|QID|11038|M|47.44,26.61|Z|Shattrath City|N|From Vindicato
 A Report to Spymaster Thalodien|QID|11039|M|44.77,76.29|Z|Shattrath City|N|From Arcanist Savan.|REP|Scryers;934|
 F Evergrove|QID|10265|M|63.98,41.12|Z|Shattrath City|N|Fly to Evergrove, or the closest flightpoint to Netherstorm you have.|
 R Area 52|QID|10265|M|32,65|N|Run to Area 52 in Netherstorm.|
-f Area 52|QID|10265|M|33.8,64|N|At Krexcil.|
+; f Area 52|QID|10265|M|33.8,64|N|At Krexcil.|
 h Area 52|QID|10265|M|32.01,64.39|N|At Innkeeper Remi Dodoso.|
 T Assist Exarch Orelis|QID|11038|M|32.07,64.22|N|To Exarch Orelis.|REP|Aldor;932|
 A Distraction at Manaforge B'naar|QID|10241|M|32.07,64.22|N|From Exarch Orelis.|REP|Aldor;932|
@@ -367,7 +367,7 @@ C Ar'kelos the Guardian|QID|10176|M|58.21,86.59|N|Head inside the tower and kill
 T Ar'kelos the Guardian|QID|10176|M|58.32,86.45|N|Head to the top of the tower to Archmage Vargoth.|
 A Finding the Keymaster|QID|10256|M|58.32,86.45|N|Wait a moment then get it from Archmage Vargoth.|
 l Apex's Crystal Focus|QID|10256|L|28786 |T|Apex|M|52.45,69.73|N|Kill Apex and loot the Crystal Focus.|
-f Cosmowrench|QID|10924|M|65.21,66.73|N|At Harpax.|
+; f Cosmowrench|QID|10924|M|65.21,66.73|N|At Harpax.|
 A Bloody Imp-ossible!|QID|10924|M|66.36,67.23|N|From Sab'aoth.|
 C Bloody Imp-ossible!|QID|10924|U|31815|M|64.21,63.99|N|Summon Zeppit, run around The Vortex Fields killing Warp Chasers. You need to be near the Warp Chaser when it dies.|
 T Bloody Imp-ossible!|QID|10924|M|66.36,67.25|N|To Sab'aoth.|
@@ -405,7 +405,7 @@ A Surveying the Ruins|QID|10335|M|44.66,34.90|N|From Zephyrion.|
 T The Dynamic Duo|QID|10434|M|44.79,36.74|N|To Audi the Needle.|
 A Retrieving the Goods|QID|10435|M|44.79,36.74|N|From Audi the Needle.|
 
-f The Stormspire|QID|10268|M|45.27,34.94|N|At Grennik.|
+; f The Stormspire|QID|10268|M|45.27,34.94|N|At Grennik.|
 T An Audience with the Prince|QID|10268|M|45.80,35.97|N|To Image of Nexus-Prince Haramad.|
 A Triangulation Point One|QID|10269|M|45.80,35.97|N|From Image of Nexus-Prince Haramad.|
 C Diagnosis: Critical|QID|10424|U|29803|M|47.65,26.72|N|Head to the generator and use the Diagnostic Device.|

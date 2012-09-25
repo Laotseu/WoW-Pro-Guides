@@ -70,7 +70,7 @@ T The Stolen Keg|QID|25395|M|49.90,79.19|N|To Mountaineer Rharen.|RANK|2|
 
 A Keg Run|QID|25770|M|50.00,79.18|N|From Mountaineer Rharen.|RANK|2|
 R Wetlands|QID|25770,25721,25722,25723|M|48.23,67.29;49.23,70.51;53.93,70.37|N|Follow the path until you get to Wetlands.|
-f Slabchisel's Survey|QID|25770|M|56.87,71.17|N|At Elgin Baelor.|
+; f Slabchisel's Survey|QID|25770|M|56.87,71.17|N|At Elgin Baelor.|
 T Keg Run|QID|25770|M|57.48,71.76|N|To Forba Slabchisel.|RANK|2|
 
 A Fight the Flood|QID|25721|M|57.48,71.76|N|From Forba Slabchisel.|
@@ -128,7 +128,7 @@ C The Third Fleet|QID|25815|M|10.64,61.69|N|In the cellar, loot the Fitzsimmons'
 T The Third Fleet|QID|25815|M|10.90,59.70|N|To First Mate Fitzsimmons.|
 
 A Cursed to Roam|QID|25816|M|10.90,59.70|N|From First Mate Fitzsimmons.|
-f Menethil Harbor|QID|25820|M|09.53,59.56|N|From Shellei Brondir.|
+; f Menethil Harbor|QID|25820|M|09.53,59.56|N|From Shellei Brondir.|
 C When Life Gives You Crabs|QID|25800|S|M|19.85,59.98|N|Kill the crabs and loot them.|
 C A Mother's Worries|QID|25820|M|19.42,58.34|N|Kill the sharks.|
 C When Life Gives You Crabs|QID|25800|US|M|19.85,59.98|N|Kill the crabs and loot them.|
@@ -196,7 +196,7 @@ A Yorla Darksnare|QID|25868|M|26.91,26.18|N|From Shilah Slabchisel.|
 C Yorla Darksnare|QID|25868|M|41.25,22.00|N|Kill Yorla Darksnare.|
 T Yorla Darksnare|QID|25868|M|27.00,26.03|N|To Shilah Slabchisel.|
 A Whelgar's Retreat|QID|26981|M|27.00,26.03|N|From Shilah Slabchisel.|
-f Whelgar's Retreat|QID|26981|M|38.77,39.03|N|At Damon Baelor.|
+; f Whelgar's Retreat|QID|26981|M|38.77,39.03|N|At Damon Baelor.|
 T Whelgar's Retreat|QID|26981|M|38.84,39.30|N|To Prospector Whelgar.|
 
 A When Archaeology Attacks|QID|25849|M|38.84,39.30|N|From Prospector Whelgar.|
@@ -217,7 +217,7 @@ C The Angerfang Menace|QID|26189|QO|Angerfang Dragonmaw slain: 16/16|M|53.33,54.
 T The Angerfang Menace|QID|26189|M|38.94,39.46|N|To Prospector Whelgar.|
 
 A Who Wards The Greenwarden|QID|26195|M|38.94,39.46|N|From Prospector Whelgar.|
-f Greenwarden's Grove|QID|26195|M|56.32,41.85|N|At Halana.|
+; f Greenwarden's Grove|QID|26195|M|56.32,41.85|N|At Halana.|
 T Who Wards The Greenwarden|QID|26195|M|56.48,39.93|N|To Ferilon Leafborn.|
 A The Crazed Dragonmaw|QID|26120|M|56.47,39.79|N|From Huntress Iczelia.|
 A Mired in Hatred|QID|25926|M|56.40,40.35|N|From Rethiel the Greenwarden.|
@@ -235,7 +235,7 @@ T The Threat of Flame|QID|25927|M|56.48,40.39|N|To Rethiel the Greenwarden.|
 T For Peat's Sake|QID|25939|M|56.41,39.94|N|To Rethiel the Greenwarden.|
 
 A Longbraid the Grim|QID|26196|M|56.41,39.94|N|From Rethiel the Greenwarden.|
-f Dun Modr|QID|26196|M|49.98,18.58|N|At Caleb Baelor.|
+; f Dun Modr|QID|26196|M|49.98,18.58|N|At Caleb Baelor.|
 T Longbraid the Grim|QID|26196|M|49.88,18.36|N|To Longbraid the Grim.|
 A Anvilmar the Hero|QID|26327|M|49.88,18.36|N|From Longbraid the Grim.|
 T Anvilmar the Hero|QID|26327|M|49.53,17.29|N|To Thargas Anvilmar.|

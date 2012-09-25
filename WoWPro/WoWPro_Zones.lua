@@ -1,14 +1,34 @@
+-------------------------------------------------------------------------------
+-- Localized Lua globals
+-------------------------------------------------------------------------------
+local _G = getfenv(0)
+
+local strupper = _G.strupper
+local tostring = _G.tostring
+
+local pairs = _G.pairs
+
+local GetMapInfo = _G.GetMapInfo
+local GetCurrentMapAreaID = _G.GetCurrentMapAreaID
+local GetCurrentMapContinent = _G.GetCurrentMapContinent
+local GetCurrentMapZone = _G.GetCurrentMapZone
+local GetCurrentMapAreaID = _G.GetCurrentMapAreaID
+local GetMapZones = _G.GetMapZones
+local SetMapZoom = _G.SetMapZoom
+local SetMapByID = _G.SetMapByID
+local GetNumDungeonMapLevels = _G.GetNumDungeonMapLevels
+local GetMapContinents = _G.GetMapContinents
+
 ----------------------------------
 --      WoWPro_Zones.lua      --
 ----------------------------------
 
--- Map information from 5.0.5 (16057) 9/15
+local WoWPro = _G.LibStub("AceAddon-3.0"):GetAddon("WoWPro")
 
+-- Map information from 4.1.14007 as of May 6th, 2011
 WoWPro.SubZone = {
 	[30] = 864, -- "Elwynn Forest" => "Northshire"
 	}
-
-
 WoWPro.Zone2MapID = {
 		["The Hinterlands"] = {
 			["numFloors"] = 0,
@@ -2964,7 +2984,7 @@ WoWPro.Zone2MapID = {
 	
 local MapsSeen = {}
 local zonei, zonec, zonenames, contnames = {}, {}, {}, {}
-local function ScrapeMapInfo(cont, zone, zone_idx)
+local function ScrapeMapInfo(cont, zone, zone_idx, Zone2MapID)
     local record = {}
     record.mapName = zone or GetMapInfo();
     record.mapID = GetCurrentMapAreaID();
@@ -3009,7 +3029,7 @@ local function ScrapeMapInfo(cont, zone, zone_idx)
             Zone2MapID[floorinfo.mapName]=floorinfo;
         end
     end
-    
+
     -- Single floor instance
     if record.numFloors == 1 then
         if _G["DUNGEON_FLOOR_" .. strupper(record.mapName) .. "0"] then
@@ -3039,7 +3059,7 @@ function WoWPro:IsInstanceZone(zone)
     if not mapID then
         WoWPro:Print("Zone [%s] is not in Zone2MapID.  Please report!",zone)
         return false
-    end  
+    end
     if mapID.cont or mapID.zone then
         return false
     end
@@ -3048,25 +3068,25 @@ end
 
 function WoWPro:GenerateMapCache()
     local here = GetCurrentMapAreaID()
-    
-    Zone2MapID = {}
-    MapsSeen = {}
+
+    local Zone2MapID = {}
+--    local MapsSeen = {}
 	for ci,c in pairs{GetMapContinents()} do
 	    contnames[ci] = c
 	    zonenames[ci] = {GetMapZones(ci)}
 		SetMapZoom(ci,0)
-		ScrapeMapInfo(ci,contnames[ci],0)
+		ScrapeMapInfo(ci,contnames[ci],0,Zone2MapID)
 	    for zi,z in pairs(zonenames[ci]) do
 			SetMapZoom(ci,zi)
-			ScrapeMapInfo(ci,z,zi)
+			ScrapeMapInfo(ci,z,zi,Zone2MapID)
 		end
 	end
 
     for z=1,10000 do
         if( SetMapByID(z) ) then
-            ScrapeMapInfo(nil,nil)
+            ScrapeMapInfo(nil,nil,Zone2MapID)
         end
     end
-    WoWProData.Zone2MapID = Zone2MapID
+    WoWPro.DB.Zone2MapID = Zone2MapID
     SetMapByID(here)
 end
