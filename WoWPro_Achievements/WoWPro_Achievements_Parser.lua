@@ -705,9 +705,9 @@ function WoWPro.Achievements:AutoCompleteQuestUpdate(questComplete)
 	end
 	
 	-- First Map Point --
-	if WoWPro.Achievements.FirstMapCall then
+	if WoWPro.FirstMapCall then
 		WoWPro:MapPoint()
-		WoWPro.Achievements.FirstMapCall = false
+		WoWPro.FirstMapCall = false
 	end
 	
 end

@@ -105,7 +105,7 @@ T Besieged!|QID|10562|M|39.57,53.70|N|To Wing Commander Nuainn.|
 A To Legion Hold|QID|10563|M|39.57,53.70|N|From Wing Commander Nuainn.|
 A The Sketh'lon Wreckage|QID|10569|M|38.74,54.10|N|From Gryphonrider Kieran.|
 A Wanted: Uvuros, Scourge of Shadowmoon|QID|10648|M|38.30,53.93|N|From the Wanted Poster.|
-f Wildhammer Stronghold|QID|10680|M|37.66,55.33|N|At Brubeck Stormfoot.|
+; f Wildhammer Stronghold|QID|10680|M|37.66,55.33|N|At Brubeck Stormfoot.|
 A Spleendid!|QID|10661|M|36.62,55.18|N|From Gnomus.|
 A A Ghost in the Machine|QID|10642|M|36.93,54.90|N|From Zorus the Judicator, he wanders around a bit.|
 A The Hand of Gul'dan|QID|10680|M|36.26,56.93|N|From Earthmender Sophurus.|
@@ -146,7 +146,7 @@ C The Second Course...|QID|10677|M|49.02,26.89|N|Kill Greater Felfire Diemetrado
 A The Ashtongue Tribe|QID|10619|M|61.24,29.18|N|From Vindicator Aluumen.|REP|Aldor;932|
 A Karabor Training Grounds|QID|10587|M|61.24,29.18|N|From Exarch Onaala.|REP|Aldor;932|
 A Tablets of Baa'ri|QID|10568|M|62.54,28.46|N|From Anchorite Ceyla.|REP|Aldor;932|
-f Altar of Sha'tar|QID|10568|M|63.25,30.36|N|At Maddix.|REP|Aldor;932|
+; f Altar of Sha'tar|QID|10568|M|63.25,30.36|N|At Maddix.|REP|Aldor;932|
 H Wildhammer Stronghold|QID|10572|M|37.06,58.17|N|Hearth back to Wildhammer Stronghold.|
 r Repair/Restock|QID|10568|M|37.26,57.58|
 T The Second Course...|QID|10677|M|36.59,55.18|N|To Gnomus.|
@@ -223,7 +223,7 @@ A Divination: Gorefiend's Truncheon|QID|10636|M|58.16,70.82|N|From Ancient Shado
 A Divination: Gorefiend's Armor|QID|10634|M|58.16,70.82|N|From Ancient Shadowmoon Spirit.|
 C Enraged Spirits of Air|QID|10481|U|30094|M|59.85,69.71|N|Use the totem and kill the Enraged Air Spirit. They tend to be a bit spread out.|
 C The Main Course!|QID|10678|M|56.38,45.33|N|Go to the waypoint and kill Felspine the Greater to get his hide.|
-f Sanctum of the Stars|QID|10687|M|56.32,57.81|N|At Alieshor.|REP|Scryers;934|
+; f Sanctum of the Stars|QID|10687|M|56.32,57.81|N|At Alieshor.|REP|Scryers;934|
 A Karabor Training Grounds|QID|10687|M|55.74,58.18|N|From Larissa Sunstrike.|REP|Scryers;934|
 A Tablets of Baa'ri|QID|10683|M|56.25,59.59|N|From Arcanist Thelis|REP|Scryers;934|
 A The Ashtongue Broken|QID|10807|M|54.73,58.19|N|From Varen the Reclaimer|REP|Scryers;934|
