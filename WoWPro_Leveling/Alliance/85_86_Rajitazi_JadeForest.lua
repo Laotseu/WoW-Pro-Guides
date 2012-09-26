@@ -32,9 +32,9 @@ return [[
 
 N Welcome to Pandaria|N|Don't forget to train your tradeskills before you leave Stormwind, the new trainers are not available immediately upon arriving in Pandaria.|
 A The King's Command|QID|29547|N|Autogiven upon entering Stormwind City.|
-C The King's Command|QID|29547|M|80.82,37.61|Z|Stormwind City|N|Run into the keep.|
-T The King's Command|QID|29547|Z|Stormwind City|M|78.86,39.83|N|To Rell Nightwind|Z|Stormwind City|
-A The Mission|QID|29548|Z|Stormwind City|M|78.86,39.83|N|From Rell Nightwind.|Z|Stormwind City|
+C The King's Command|QID|29547|M|30.7,0.6|Z|Stormwind City|N|Run into the keep.|
+T The King's Command|QID|29547|Z|Stormwind City|M|30.7,0.6|N|To Rell Nightwind|Z|Stormwind City|
+A The Mission|QID|29548|Z|Stormwind City|M|30.7,0.6|N|From Rell Nightwind.|Z|Stormwind City|
 C The Mission|QID|29548|Z|Stormwind City|M|66.0,71.0|N|North of and above the harbor.|Z|Stormwind City|
 T The Mission|QID|29548|M|42.02,92.82|N|To Sky Admiral Rogers.|
 A Unleash Hell|QID|31732|M|42.02,92.82|N|From Sky Admiral Rogers.|
@@ -75,7 +75,7 @@ A Priorities!|QID|31739|M|46.22,84.69|N|From Teng Applebloom.|
 A Critical Condition|QID|29552|M|46.10,84.54|N|From Mishka.|
 h Paw'don Village |N|Talk to Jiayi Applebloom|M|44.9,84.4|N|Paw'don is a good place to set your heart since profession trainners are present and there is a portal to StormWind in the village|; Paw'don Village
 C Pillaging Peons|QID|31738|S|M|42.08,87.83|
-C Critical Condition|QID|29552|S|NC|U|82829|M|42.64,87.62|N|Any bandage or healing spell will work. You need to provide your own bandages.|
+C Critical Condition|QID|29552|S|NC|M|42.64,87.62|N|Right-click on the wounded soldiers to heal them.|
 C Priorities!|QID|31739|NC|M|43.62,88.27|N|Click on the applebloom cider barels and let Teng Applebloom pick them up. It's quite impressive to see him carry them all!|
 
 T Priorities!|QID|31739|M|39.56,90.09|N|To Lin Applebloom.|
@@ -84,28 +84,27 @@ A Koukou's Rampage|QID|31740|M|39.56,90.09|N|From Lin Applebloom.|
 K Koukou |QID|31740|T|Koukou|M|39.4,89.9|N|Put the poor Koukou out of his misery|
 
 T Koukou's Rampage|QID|31740|M|46.21,84.68|N|To Sunke Khang.|
-A Twinspire Keep|QID|31741|M|46.21,84.68|N|From Sunke Khang.|
 
-C Critical Condition|QID|29552|US|NC|U|82829|M|42.64,87.62|N|Any bandage or healing spell will work. You need to provide your own bandages.|
+C Critical Condition|QID|29552|US|NC|M|42.64,87.62|N|Right-click on the wounded soldiers to heal them.||
 C Pillaging Peons|QID|31738|US|M|42.08,87.83|
 
 T Critical Condition|QID|29552|M|42.1,89.6|N|To Mishka.|
 T Pillaging Peons|QID|31738|M|46.24,84.79|N|To Sunke Khang.|
+A Twinspire Keep|QID|31741|M|46.21,84.68|N|From Sunke Khang.|
 A Unfair Trade|QID|31744|M|46.21,84.68|N|From Sunke Khang.|
 A Fractured Forces|QID|31742|M|46.21,84.75|N|From Rell Nightwind.|
 A Smoke Before Fire|QID|31743|M|46.21,84.75|N|From Rell Nightwind.|
 
 C Twinspire Keep|QID|31741|S|M|42.30,79.63|
 C Unfair Trade|QID|31744|S|M|40.12,81.90|N|Kill the green demonic eyeballs to free the cubs|
-C Smoke Before Fire|QID|31743|U|89602|M|43.05,81.38|
 K Dalgan slain|QID|31742|S|T|Dalgan|QO|Dalgan slain: 1/1|M|41.0,80.2|; Twinspire Keep
 K Bellandra Felstorm|QID|31742|S|T|Bellandra Felstorm|QO|Bellandra Felstorm slain: 1/1|M|41.7,80.2|; Twinspire Keep
 C Bomb the Twinspire munitions stockpile|QID|31743|NC|U|89602|QO|Twinspire munitions stockpile bombed: 1/1|M|40.6,82.4|N|Use the flare to call an arial strike|; Twinspire Keep
 C Bomb Xhu'daggab|QID|31743|NC|U|89602|QO|Xhu'daggab bombed: 1/1|M|40.3,82.0|N|Use the flare to call an arial strike|; Twinspire Keep
 C Bomb the Wild Imps|QID|31743|NC|U|89602|QO|Wild Imps bombed: 1/1|M|43.3,81.5|N|Use the flare to call an arial strike|; Twinspire Keep
 C Bomb the Twinspire Demolishers|QID|31743|NC|U|89602|QO|Twinspire Demolishers bombed: 1/1|M|41.2,81.4|N|Use the flare to call an arial strike|; Twinspire Keep
-K Bellandra Felstorm|QID|31742|US|T|Bellandra Felstorm|QO|Bellandra Felstorm slain: 1/1|M|41.7,80.2|; Twinspire Keep
 K Dalgan slain|QID|31742|US|T|Dalgan|QO|Dalgan slain: 1/1|M|41.0,80.2|; Twinspire Keep
+K Bellandra Felstorm|QID|31742|US|T|Bellandra Felstorm|QO|Bellandra Felstorm slain: 1/1|M|41.7,80.2|; Twinspire Keep
 C Unfair Trade|QID|31744|US|M|40.3,82.0|N|Kill the green demonic eyeballs to free the cubs|; Twinspire Keep - Need better coord
 C Twinspire Keep|QID|31741|US|M|41.6,81.3|; Twinspire Keep
 T Twinspire Keep|QID|31741|M|41.39,79.60|N|To Sully "The Pickle" McLeary.|
@@ -116,7 +115,7 @@ A The Fall of Ga'trul|QID|30070|M|41.39,79.60|N|From Sully "The Pickle" McLeary.
 K Ga'trul|QID|30070|T|Ga'trul|M|41.49,78.59|N| In Twinspire Keep|
 T The Fall of Ga'trul|QID|30070|M|41.43,79.06|N|To Rell Nightwind.|
 A Onward and Inward|QID|31745|M|41.43,79.06|N|From Rell Nightwind.|
-C Onward and Inward|QID|31745|NC|M||41.5,79.6|N|There is a chopper just outside to take you back to the village.|
+C Onward and Inward|QID|31745|NC|M|41.5,79.6|N|There is a chopper just outside to take you back to the village.|
 
 T Onward and Inward|QID|31745|M|48.0,88.4|N|To Sky Admiral Rogers.|
 A The White Pawn|QID|29555|M|48.0,88.4|N|From Sky Admiral Rogers.|
@@ -170,9 +169,9 @@ T Road Rations|QID|29885|M|58.9,81.9|N|To Rell Nightwind.|
 A Family Heirlooms|QID|29762|M|58.93,81.68|N|From Bold Karasshi.|
 A The Elder's Instruments|QID|29887|M|58.8,81.3|N|From Pearlkeeper Fujin.|
 
-C Family Heirlooms|QID|29762|S|M|67.25,88.40|N|Kill the monkeys until you get all four items|
-C The Elder's Instruments|QID|29887|NC|M|67.44,87.54|N|Loot the corpses around the village|
-C Family Heirlooms|QID|29762|US|M|67.25,88.40|N|Kill the monkeys until you get all four items|
+C The Elder's Instruments|QID|29887|S|M|67.25,88.40|N|Kill the monkeys until you get all four items|
+C Family Heirlooms|QID|29762|NC|M|67.44,87.54|N|Loot the corpses around the village|
+C The Elder's Instruments|QID|29887|US|M|67.25,88.40|N|Kill the monkeys until you get all four items|
 ; |U|79812|N|Optional, no other quests follow.|==I didnt get any scraps in killing the hozen==
 ; A Trail of the White Pawn|QID|29895|
 T Family Heirlooms|QID|29762|M|58.94,81.68|N|To Bold Karasshi.|
@@ -189,20 +188,20 @@ C Scout the southwestern shrine |QID|29725|QO|Scout the southwestern shrine: 1/1
 C Scout the northern shrine |QID|29725|QO|Scout the northern shrine: 1/1|M|47.4,58.6|N|Whenever you spot a tiger, use the Light Scope to have Amber Kearnen kill it for you.|; Serpent's Heart
 C Return to camp |QID|29725|QO|Return to camp: 1/1|M|50.9,63.0|N|Whenever you spot a tiger, use the Light Scope to have Amber Kearnen kill it for you.|; Shadybranch Pocket
 T SI:7 Report: Fire From the Sky|QID|29725|M|58.83,81.69|N|To Sully "The Pickle" McLeary.|
-A SI:7 Report: Hostile Natives|QID|29726|M|38.16,45.78|N|From Little Lu.|
+A SI:7 Report: Hostile Natives|QID|29726|M|59.1,81.9|N|From Little Lu.|
 C Inspect sign |QID|29726|NC|QO|Inspect sign: 1/1|M|38.3,45.5|; Lair of the Jade Witch
 C Inspect Lifelike Jade Statue |QID|29726|NC|QO|Inspect Lifelike Jade Statue: 1/1|M|38.8,45.9|; Lair of the Jade Witch
 C Inspect Suspicious Jade Statue |QID|29726|QO|Inspect Suspicious Jade Statue: 1/1|M|38.9,46.4|; Lair of the Jade Witch
 C Speak with Widow Greenpaw |QID|29726|QO|Speak with Widow Greenpaw: 1/1|M|38.8,46.0|N|Flee Widow Greenpaw as soon as you can.|; Lair of the Jade Witch
 T SI:7 Report: Hostile Natives|QID|29726|M|59.04,81.90|N|To Little Lu.|
 A SI:7 Report: Take No Prisoners|QID|29727|M|29.37,54.11|N|From Amber Kearnen.|
-C SI:7 Report: Take No Prisoners|QID|29727|M|29.37,52.19|N|It's shooting time! Taget the Hozen that have a yellow triangle over their head first.|
+C SI:7 Report: Take No Prisoners|QID|29727|M|28.6,54.4|N|It's shooting time! Taget the Hozen that have a yellow triangle over their head first.|
 T SI:7 Report: Take No Prisoners|QID|29727|M|58.93,81.86|N|To Amber Kearnen.|
 A A Perfect Match|QID|29903|M|58.89,81.70|N|From Admiral Taylor.|
 A Seek Out the Lorewalker|QID|29888|M|58.96,81.68|N|From Bold Karasshi.|
 
 C A Perfect Match|QID|29903|NC|M|60.44,87.70|N|Speak to the Aqualytes and give them presents. The trick is to look at what weapon they have:\nDaggers: Give a dagger\nSword: Give a shield\nRed Staff: give a healing prayer\nBlue Staff: give a staff|
-T A Perfect Match|QID|29903|M||58.9,81.7|N|To Admiral Taylor.|
+T A Perfect Match|QID|29903|M|58.9,81.7|N|To Admiral Taylor.|
 A Bigger Fish to Fry|QID|29904|M||58.9,81.7|N|From Admiral Taylor.|
 
 C Bigger Fish to Fry|QID|29904|M|63.18,80.12|N|Head for the Booboo Wilds and kill wildlife. A trainer will accompagny you and level every two kills. If only it was that easy for us.|
@@ -269,11 +268,11 @@ A In Search of Wisdom|QID|29922|M|58.93,81.50|N|From Elder Lusshan.|
 C In Search of Wisdom|QID|29922|NC|M|57.93,82.48|N|Speak to Kitemaster Ut-Nam and have him send you to Dawn's Blossom|
 
 f Dawn's Blossom|QID|29922|M|47.03,46.22|N|At Keg Runner Lee.|
+T In Search of Wisdom|QID|29922|M|46.85,46.16|N|To Lorewalker Cho.|
 A Welcome to Dawn's Blossom|QID|31230|M|47.19,46.11|N|From Toya.|
 C Welcome to Dawn's Blossom|QID|31230|M|48.47,44.50|N|Bliz has marked the people to talk to on your minimap with chat bubbles.|
-T In Search of Wisdom|QID|29922|M|46.85,46.16|N|To Lorewalker Cho.|
 T Welcome to Dawn's Blossom|QID|31230|M|47.16,46.15|N|To Toya.|
-A The Double Hozu Dare|QID|29716|M|46.52,45.92|N|From An Windfur.|
+A The Double Hozen Dare|QID|29716|M|46.52,45.92|N|From An Windfur.|
 A The Silkwood Road|QID|29865|M|46.48,45.85|N|From Tzu the Ironbelly.|
 A The Threads that Stick|QID|29866|M|46.59,45.32|N|From Lo Wanderbrew.|
 
@@ -282,8 +281,8 @@ C The Silkwood Road|QID|29865|NC|M|S|43.26,49.23|N|Loot the egss to get Pristine
 
 A Down Kitty!|QID|29717|M|39.82,48.05|N|From An Windfur.|N|The little An followed you to the Forest Heart and has a new quest for you|
 C Down Kitty!|QID|29717|S|M|37.11,47.72|
-C The Double Hozu Dare|QID|29716|M|37.31,48.19|
-T The Double Hozu Dare|QID|29716|NC|N|To An Windfur. (she should be following you)|
+C The Double Hozen Dare|QID|29716|M|37.31,48.19|
+T The Double Hozen Dare|QID|29716|NC|N|To An Windfur. (she should be following you)|
 A The Jade Witch|QID|29723|N|From An Windfur.|
 C The Jade Witch|QID|29723|M|39.23,46.17|N|Talk to Widow Greenpaw, she'll bring you to Shin and then kill her.|
 C Down Kitty!|QID|29717|US|M|37.11,47.72|
@@ -300,7 +299,7 @@ A Find the Boy|QID|29993|M|47.07,46.08|N|From Kai Wanderbrew.|
 A All We Can Spare|QID|29925|M|47.20,46.13|N|From Toya.|
 A Tian Monastery |QID|29617|N|From Apprentice Yufi|M|49.6,45.8|; Dawn's Blossom
 
-R The Arboratum|QID|29993|M|54.93,45.28|
+R The Arboretum|QID|29993|M|54.93,45.28|
 A The Perfect Color|QID|29881|M|54.93,45.28|N|From Inkmaster Glenzu.|
 T Find the Boy|QID|29993|M|54.92,44.83|N|To Inkmaster Wei.|
 A Shrine of the Dawn|QID|29995|M|54.92,44.83|N|From Inkmaster Wei.|
@@ -316,7 +315,7 @@ R Shrine of the Dawn|QID|29995|M|52.63,38.08|
 T Shrine of the Dawn|QID|29995|M|52.63,38.08|N|To Syra Goldendraft.|
 A Getting Permission|QID|29920|M|52.63,38.08|N|From Syra Goldendraft.|
 K Defeat Pandriarch Bramblestaff |QID|29920|T|Pandriarch Bramblestaff|QO|Pandriarch Bramblestaff defeated: 1/1|M|54.1,38.4|; Shrine of the Dawn
-K Defeat Pandriarch Goldendraft |QID|29920|T|Defeat Pandriarch|QO|Pandriarch Goldendraft defeated: 1/1|M|53.6,36.8|; Shrine of the Dawn
+K Defeat Pandriarch Goldendraft |QID|29920|T|Pandriarch Goldendraft|QO|Pandriarch Goldendraft defeated: 1/1|M|53.6,36.8|; Shrine of the Dawn
 K Defeat Pandriarch Windfur |QID|29920|T|Pandriarch Windfur|QO|Pandriarch Windfur defeated: 1/1|M|52.6,35.6|; Shrine of the Dawn
 T Getting Permission|QID|29920|M|52.61,38.13|N|To Lo Wanderbrew.|
 
@@ -350,7 +349,7 @@ T The Sprites' Plight|QID|29745|N|To UI Alert.|
 A Break the Cycle|QID|29747|N|From UI Alert.|
 A Simulacrumble|QID|29748|M|48.61,20.65|N|From Vacant Simulacra.|
 C Break the Cycle|QID|29747|S|M|48.34,16.61|N|Kill the Spiritbinders and kick over the statues as you go.|
-C Simulacrumble|QID|29748|M|47.82,16.45|
+C Simulacrumble|QID|29748|N|M|47.82,16.45|N|Right-click on the statues to destroy them.|
 C Break the Cycle|QID|29747|US|M|48.34,16.61|
 T Break the Cycle|QID|29747|M|48.34,16.61|N|To UI Alert.|
 T Simulacrumble|QID|29748|N|To UI Alert.|
@@ -361,18 +360,20 @@ A Ritual Artifacts|QID|29751|M|44.22,15.01|N|From Pei-Zhi.|
 A Vessels of the Spirit|QID|29750|M|44.22,15.01|N|From Pei-Zhi.|
 A The Wayward Dead|QID|29752|M|44.22,15.01|N|From Pei-Zhi.|
 C The Wayward Dead|QID|29752|S|U|74771|M|44.22,15.01|N|Use Pei-Zhi's staff to release the Wandering Spirits, also kill Spiritclaw's.|
+C Vessels of the Spirit|QID|29750|S|M|40.69,14.85|
 C Ritual Artifacts|QID|29751|NC|QO|Chipped Ritual Bowl: 1/1|M|41.62,14.27|
 C Ritual Artifacts|QID|29751|NC|QO|Jade Cong: 1/1|M|42.63,15.74|
 C Ritual Artifacts|QID|29751|NC|QO|Pungent Ritual Candle: 1/1|M|42.3,17.09|
-C Vessels of the Spirit|QID|29750|L|74763 8|M|40.69,14.85|
+C Vessels of the Spirit|QID|29750|US|M|40.69,14.85|
 C The Wayward Dead|QID|29752|US|U|74771|M|40.38,14.76|
 T Ritual Artifacts|QID|29751|M|44.21,15.01|N|To Pei-Zhi.|
 T Vessels of the Spirit|QID|29750|M|44.21,15.01|N|To Pei-Zhi.|
 T The Wayward Dead|QID|29752|M|44.21,15.01|N|To Pei-Zhi.|
 A Back to Nature|QID|29753|M|44.21,15.01|N|From Pei-Zhi.|
 A A Humble Offering|QID|29756|M|44.21,15.01|N|From Pei-Zhi.|
+C Back to Nature|QID|29753|S|U|74808|M|39.88,10.43|
 C A Humble Offering|QID|29756|M|39.71,10.98|
-C Back to Nature|QID|29753|U|74808|M|39.88,10.43|
+C Back to Nature|QID|29753|US|U|74808|M|39.88,10.43|
 T Back to Nature|QID|29753|M|44.26,15.04|N|To Pei-Zhi.|
 T A Humble Offering|QID|29756|M|44.26,15.04|N|To Pei-Zhi.|
 A To Bridge Earth and Sky|QID|29754|M|44.26,15.04|N|From Pei-Zhi.|
@@ -382,7 +383,7 @@ A Pei-Back|QID|29755|M|43.74,12.70|From UI Alert.|
 C Pei-Back|QID|29755|M|42.52,10.99|N|When you get seperated from your body, you need to run back and click on it to rejoin it.|
 T Pei-Back|QID|29755|M|43.81,12.47|N|To Pei-Zhi.|
 
-R Tien Monestary|QID|29617|CS|M|44.48,30.77; 45.14, 28.35; 45.37,26.47;44.38,24.98|
+R Tian Monestary|QID|29617|CS|M|44.48,30.77; 45.14, 28.35; 45.37,26.47;44.38,24.98|;This path doesn't work with the current quests order.
 T Tian Monastery |QID|29617|M|45.0,25.0|N|To Lin Tenderpaw|
 A The High Elder|QID|29618|M|44.98,25.02|N|From Lin Tenderpaw.|
 T The High Elder|QID|29618|M|45.23,25.08|N|To High Elder Cloudfall, upstairs in the temple.|
@@ -503,7 +504,7 @@ A They Call Him... Stormstout|QID|32019|M|58.13,58.65|N|From Elder Sage Rain-Zhu
 A The Rider's Bind|QID|29999|M|58.0,59.0|N|From Fei.|
 A Lighting Up the Sky|QID|30005|M|58.0,59.0|N|From Fei.|
 C Lighting Up the Sky|QID|30005|S|NC|N|Set of the fireworks as you go and pick up the little serpents marked by cogs on your mini map.|
-C Find the Playful Emerald Serpent |QID|29999|NC|QO|Playful Emerald Serpent found: 1/1|M|56.5,58.4|
+C Find the Playful Crimson Serpent |QID|29999|NC|QO|Playful Crimson Serpent found: 1/1|M|58.2,61.4|N|Go up the stairs and follow the path.|
 T The Librarian's Quandary|QID|29998|M|56.29,60.46|N|To Lorewalker Stonestep.|
 A Moth-Ridden|QID|30001|M|56.29,60.46|N|From Lorewalker Stonestep.|
 A Pages of History|QID|30002|M|56.29,60.46|N|From Lorewalker Stonestep.|
@@ -514,22 +515,25 @@ C Pages of History|QID|30002|US|M|55.70,59.95|N|Click on the books and the bookw
 C Moth-Ridden|QID|30001|US|M|56.39,60.43|
 T Moth-Ridden|QID|30001|M|56.29,60.40|N|To Lorewalker Stonestep.|
 A Everything In Its Place|QID|30004|M|56.29,60.40|N|From Lorewalker Stonestep.|
-C Find the Playful Crimson Serpent |QID|29999|NC|QO|Playful Crimson Serpent found: 1/1|M|58.2,61.4|N|Go up the stairs and follow the path.|
+T Pages of History|QID|30002|M|56.29,60.46|N|To Lorewalker Stonestep.|
+C Find the Playful Emerald Serpent |QID|29999|NC|QO|Playful Emerald Serpent found: 1/1|M|56.5,58.4|
 C The Scryer's Dilemma|QID|29997|M|56.9,55.8|N|When you get in the Fountain of the Everseeing, kill Water Fiend until you get the staff.|
 T The Scryer's Dilemma|QID|29997|M|57.6,56.0|N|To Wise Mari.|
 A A New Vision|QID|30011|M|57.6,56.0|N|From Wise Mari.|
-C Find the Playful Azure Serpent|QID|29999|M|59.2,56.7|
+C Find the Playful Azure Serpent|QID|29999|QO|Playful Azure Serpent found: 1/1|M|59.2,56.7|
+
 C Lighting Up the Sky|QID|30005|US|M|56.42,58.12|
 T A New Vision|QID|30011|M|58.16,58.64|N|To Elder Sage Rain-Zhu.|
 T Everything In Its Place|QID|30004|M|58.16,58.64|N|To Elder Sage Rain-Zhu.|
 T The Rider's Bind|QID|29999|M|58.05,59.02|N|To Fei.|
+T Lighting Up the Sky|QID|30005|M|58.0,59.0|N|To Fei.|
 A The Jade Serpent|QID|30000|M|58.05,59.02|N|From Fei.|
 C The Jade Serpent|QID|30000|M|53.49,58.02|
 T The Jade Serpent|QID|30000|M|55.83,57.05|N|To Elder Sage Wind-Yi.|
 
 A Get Back Here!|QID|30498|M|55.84,57.07|N|From UI Alert.|
 f Jade Temple Grounds|QID|30498|M|54.58,61.75|N|At Ginsa Arroweye.|
-F Pearfin Village|QID|30498|M|54.58,61.35|N|The flightmaster has an option for a direct flight. (currently misnamed glassfin village).|
+F Pearlfin Village|QID|30498|M|54.58,61.35|N|The flightmaster has an option for a direct flight. (currently misnamed glassfin village).|
 A An Unexpected Advantage|QID|30565|M|58.53,82.29|N|From Sully "The Pickle" McLeary.|
 T Get Back Here!|QID|30498|M|58.08,80.67|N|To Admiral Taylor.|
 A Helping the Cause|QID|30568|M|58.08,80.67|N|From Admiral Taylor.|

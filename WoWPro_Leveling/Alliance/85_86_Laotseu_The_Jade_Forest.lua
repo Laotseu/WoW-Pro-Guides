@@ -52,7 +52,7 @@ A Critical Condition |QID|29552|N|From Mishka|M|46.1,84.6|; Paw'don Village
 h Paw'don Village |N|Talk to Jiayi Applebloom|M|44.9,84.4|N|Paw'don is a good place to set your heart since profession trainners are present and there is a portal to StormWind in the village|; Paw'don Village
 
 C Pillaging Peons |QID|31738|S|M|42.6,86.8|; Paw'don Glade - Need better coord
-C Critical Condition |QID|29552|S|NC|U|82829|M|42.1,89.6|N|Any bandage or healing spell will work. You need to provide your own bandages.|; Paw'don Glade - Need better coord
+C Critical Condition |QID|29552|S|NC|U|72985|M|42.1,89.6|N|Any bandage or healing spell will work. You need to provide your own bandages.|; Paw'don Glade - Need better coord
 C Priorities! |QID|31739|NC|M|42.3,88.7|N|Click on the applebloom cider barels and let Teng Applebloom pick them up. It's quite impressive to see him carry them all!|; Paw'don Glade - Need better coord
 
 T Priorities! |QID|31739|N|To Lin Applebloom|M|39.5,90.0|; Paw'don Glade
@@ -63,7 +63,7 @@ K Koukou |QID|31740|T|Koukou|M|39.4,89.9|N|Put the poor Koukou out of his misery
 T Koukou's Rampage |QID|31740|N|To Sunke Khang|M|46.2,84.7|; Paw'don Village
 A Twinspire Keep |QID|31741|N|From Sunke Khang|M|46.2,84.7|; Paw'don Village
 
-C Critical Condition |QID|29552|S|NC|US|82829|M|42.1,89.6|N|Any bandage or healing spell will work. You need to provide your own bandages.|; Paw'don Glade - Need better coord
+C Critical Condition |QID|29552|S|NC|US|72985|M|42.1,89.6|N|Any bandage or healing spell will work. You need to provide your own bandages.|; Paw'don Glade - Need better coord
 C Pillaging Peons |QID|31738|US|M|42.6,86.8|; Paw'don Glade - Need better coord
 
 T Critical Condition |QID|29552|N|To Mishka|M|46.1,84.5|; Paw'don Village
