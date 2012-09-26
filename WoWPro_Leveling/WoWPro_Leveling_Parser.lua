@@ -729,7 +729,8 @@ function WoWPro.Leveling:RowUpdate(offset)
 			end
 		end
 
-		if use and GetItemInfo(use) then
+--		if use and GetItemInfo(use) then
+		if use then
 			row.itembutton.item_id = use
 			row.itembutton:Show()
 			row.itemicon:SetTexture(GetItemIcon(use))
