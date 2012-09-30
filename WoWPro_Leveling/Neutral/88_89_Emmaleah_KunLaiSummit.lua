@@ -122,7 +122,7 @@ A Round 'Em Up|QID|31256|M|62.99,80.22|FACTION|Horde|N|From General Nazgrim.|
 A Best Meals Anywhere!|QID|31251|M|62.73,79.83|FACTION|Horde|N|From Rivett Clutchpop.|
 A Trouble on the Farmstead|QID|30570|FACTION|Horde|M|62.52,79.55|N|From Farmhand Ko.|
 A Mogu?! Oh No-gu!|QID|30620|FACTION|Horde|M|62.33,79.69|N|From Elder Shiao.|
-f Eastwind Rest|QID|30620|FACTION|Horde|M|62.46,80.69|N|At Soaring Paw.|
+f Eastwind Rest|QID|99999|FACTION|Horde|M|62.46,80.69|N|At Soaring Paw.|
 A Deanimate the Reanimated|QID|30594|FACTION|Horde|M|62.69,80.67|N|From Shademaster Kiryn.|
 T Trouble on the Farmstead|QID|30570|FACTION|Horde|M|60.29,85.72|N|To Farmer Chow.|
 
@@ -135,7 +135,7 @@ T Challenge Accepted|QID|30514|FACTION|Alliance|M|54.69,84.27|N|To Elder Tsulan.
 A Round 'Em Up|QID|30575|FACTION|Alliance|M|53.77,82.70|N|From Admiral Taylor.|
 A Blue Dwarf Needs Food Badly|QID|30583|FACTION|Alliance|M|54.14,83.28|N|From Sully "The Pickle" McLeary.|
 A Mogu?! Oh No-gu!|QID|30619|M|54.19,83.44|FACTION|Alliance|N|From Elder Tsulan.|
-f Westwind Rest|QID|30619|M|53.97,84.27|FACTION|Alliance|N|At Tabo the Flyer.|
+f Westwind Rest|QID|99999|M|53.97,84.27|FACTION|Alliance|N|At Tabo the Flyer.|
 A Trouble on the Farmstead|QID|30569|FACTION|Alliance|M|53.80,84.10|N|From Farmhand Bo.|
 A Deanimate the Reanimated|QID|30593|FACTION|Alliance|M|53.44,83.09|N|From Mishka.|
 C Blue Dwarf Needs Food Badly|QID|30583|S|FACTION|Alliance|M|50.70,83.11|N|While killing birds (or Mushan) for meat. also capture 3 yaks (by clicking on them)|
@@ -171,16 +171,24 @@ T Deanimate the Reanimated|QID|30593|FACTION|Alliance|M|53.49,83.38|N|To Mishka.
 A In Tents Channeling|QID|30652|FACTION|Alliance|M|53.80,82.74|N|From Admiral Taylor.|
 A Pandaren Prisoners|QID|30650|M|54.2,83.4|FACTION|Alliance|54.13,83.40|N|From Elder Tsulan.|
 A Barrels of Fun|QID|30651|FACTION|Alliance|M|54.13,83.32|N|From Sully "The Pickle" McLeary.|
+; Tying something new here. These are a series of steps for two quests that are normally done in spacific order. 
+; I'll use sticky on the next step so we see one step in advance.
 C Pandaren Prisoners|QID|30650|S|NC|FACTION|Alliance|M|49.67,80.36|
+K Kill Musaan the Blazecaster|QID|30652|S|T|Musaan the Blazecaster|QO|Musaan the Blazecaster slain: 1/1|FACTION|Alliance|M|50.4,78.6|
 C Destroy the Eastern Oil Rig|QID|30651|NC|U|80528|QO|Eastern Oil Rig destroyed: 1/1|M|50.9,79.4|N|Pick an Explosives Barrel and set it near the rig.|
-K Kill Musaan the Blazecaster|QID|30652|T|Musaan the Blazecaster|QO|Musaan the Blazecaster slain: 1/1|FACTION|Alliance|M|50.4,78.6|
-K Kill Harala the Firespeaker|QID|30652|T|Harala the Firespeaker|QO|Harala the Firespeaker slain: 1/1|FACTION|Alliance|M|49.4,78.5|
-C Destroy the Southern Oil Rig|QID|30651|NC|U|80528|QO|Southern Oil Rig destroyed: 1/1|FACTION|Alliance|M|49.7,81.1|N|Pick an Explosives Barrel and set it near the rig.|
-K Kill Pao-kun the Pyromancer|QID|30652|T|Pao-kun the Pyromancer|QO|Pao-kun the Pyromancer slain: 1/1|FACTION|Alliance|M|49.1,80.3|
-K Kill Akonu the Embercaller|QID|30652|T|Akonu the Embercaller|QO|Akonu the Embercaller slain: 1/1|FACTION|Alliance|M|47.7,80.0|
+K Kill Harala the Firespeaker|QID|30652|S|T|Harala the Firespeaker|QO|Harala the Firespeaker slain: 1/1|FACTION|Alliance|M|49.4,78.5|
+K Kill Musaan the Blazecaster|QID|30652|US|T|Musaan the Blazecaster|QO|Musaan the Blazecaster slain: 1/1|FACTION|Alliance|M|50.4,78.6|
+C Destroy the Southern Oil Rig|QID|30651|S|NC|U|80528|QO|Southern Oil Rig destroyed: 1/1|FACTION|Alliance|M|49.7,81.1|N|Pick an Explosives Barrel and set it near the rig.|
+K Kill Harala the Firespeaker|QID|30652|US|T|Harala the Firespeaker|QO|Harala the Firespeaker slain: 1/1|FACTION|Alliance|M|49.4,78.5|
+K Kill Pao-kun the Pyromancer|QID|30652|S|T|Pao-kun the Pyromancer|QO|Pao-kun the Pyromancer slain: 1/1|FACTION|Alliance|M|49.1,80.3|
+C Destroy the Southern Oil Rig|QID|30651|US|NC|U|80528|QO|Southern Oil Rig destroyed: 1/1|FACTION|Alliance|M|49.7,81.1|N|Pick an Explosives Barrel and set it near the rig.|
+K Kill Akonu the Embercaller|QID|30652|S|T|Akonu the Embercaller|QO|Akonu the Embercaller slain: 1/1|FACTION|Alliance|M|47.7,80.0|
+K Kill Pao-kun the Pyromancer|QID|30652|US|T|Pao-kun the Pyromancer|QO|Pao-kun the Pyromancer slain: 1/1|FACTION|Alliance|M|49.1,80.3|
+C Destroy the Western|QID|30651|S|NC|U|80528|QO|Western Oil Rig destroyed: 1/1|FACTION|Alliance|M|48.0,81.5|N|Pick an Explosives Barrel and set it near the rig.|
+K Kill Akonu the Embercaller|QID|30652|US|T|Akonu the Embercaller|QO|Akonu the Embercaller slain: 1/1|FACTION|Alliance|M|47.7,80.0|
 T In Tents Channeling|QID|30652|FACTION|Alliance|N|To UI Alert.|
 A The Ordo Warbringer|QID|30660|FACTION|Alliance|N|From UI Alert.|
-C Destroy the Western|QID|30651|NC|U|30651|QO|Western Oil Rig destroyed: 1/1|FACTION|Alliance|M|48.0,81.5|N|Pick an Explosives Barrel and set it near the rig.|
+C Destroy the Western|QID|30651|US|NC|U|80528|QO|Western Oil Rig destroyed: 1/1|FACTION|Alliance|M|48.0,81.5|N|Pick an Explosives Barrel and set it near the rig.|
 K Kill Ordo Warbringer|QID|30660|FACTION|Alliance|M|49.1,76.7;48.4,76.7|N|Ordo Warbringer is in the cave to the back of the camp.|
 C Pandaren Prisoners|QID|30650|US|NC|FACTION|Alliance|M|49.67,80.36|
 T Barrels of Fun|QID|30651|FACTION|Alliance|M|54.13,83.32|N|To Sully "The Pickle" McLeary.|
@@ -223,26 +231,27 @@ C Fresh Needle Scent|QID|30489|S|M|71.67,73.59|
 T The Missing Muskpaw|QID|30488|M|74.96,74.52|N|To Muskpaw Jr. He is in the back of the cave.|
 A At the Yak Wash|QID|30491|M|74.96,74.52|N|From Muskpaw Jr..|N|You can ride Jr's Yak out of the cave and leave vehicle when you are out.|
 C Fresh Needle Scent|QID|30489|US|M|71.67,73.59|N|Get the remaining needles before mounting the Yak.|
-C At the Yak Wash|QID|30491|NC|M|71.39,69.05|QO|Escaped Yak Washed: 1/6|N|Jump on the Yak and it will go back to the farm by itself.|
-A Yakity Yak|QID|30587|M|70.9,70.4|N|From UI Alert. (from killing Burilgi Despoiler)|
+A Yakity Yak|QID|30587|M|70.9,70.4|S|N|From UI Alert. (from killing Burilgi Despoiler)|
+C At the Yak Wash|QID|30491|S|NC|M|71.39,69.05|N|Jump on the Yak and it will go back to the farm by itself.|
+A The Late Mrs. Muskpaw|QID|30582|S|U|80241|N|You should have the Muskpaw's Keepsake by now. Otherwise, kill more Burilgi.|
 C Yakity Yak|QID|30587|S|M|69.94,72.81|
-C At the Yak Wash|QID|30491|NC|M|71.39,69.05|N|Mount the Yaks and ride them back to the farm.|
+C At the Yak Wash|QID|30491|US|NC|M|71.39,69.05|N|Mount the Yaks and ride them back to the farm.|
+A The Late Mrs. Muskpaw|QID|30582|US|U|80241|N|You should have the Muskpaw's Keepsake by now. Otherwise, kill more Burilgi.|
 C Yakity Yak|QID|30587|US|M|69.94,72.81|
-A The Late Mrs. Muskpaw|QID|30582|U|80241|N|You should have the Muskpaw's Keepsake by now. Otherwise, kill more Burilgi.|
 T At the Yak Wash|QID|30491|M|71.34,69.31|N|To Muskpaw Jr..|
 T The Late Mrs. Muskpaw|QID|30582|M|71.30,69.68|N|To Lao Muskpaw.|
-T Fresh Needle Scent|QID|30489|M|71.42,69.75|N|To Lao Muskpaw.|
 A The Fearmaster|QID|30804|M|71.30,69.68|N|From Lao Muskpaw.|
-C The Fearmaster|QID|30804|M|68.20,74.70|
-T The Fearmaster|QID|30804|M|71.37,69.64|N|To Lao Muskpaw.|
+T Fresh Needle Scent|QID|30489|M|71.42,69.75|N|To Lao Muskpaw.|
 T Yakity Yak|QID|30587|M|71.42,69.75|N|To Lao Muskpaw.|
+K Kill The Fearmaster|QID|30804|T|The Fearmaster|M|68.20,74.70|
+T The Fearmaster|QID|30804|M|71.37,69.64|N|To Lao Muskpaw.|
 A Back in Yak|QID|30492|M|71.33,69.28|N|From Muskpaw Jr..|
 
 ;R The Grummie Bazaar|QID|30492|CC|M|65.51,61.26|; Need a proper path
 C Back in Yak|QID|30492|M|65.51,61.26|
 T Back in Yak|QID|30492|M|64.72,61.68|N|To Lucky Eightcoins.|
-A Oil Stop|QID|30614|M|65.48,60.78|N|From Slimy Inkstain.|
 A A Grummle's Luck|QID|30808|M|64.72,61.68|N|From Lucky Eightcoins.|
+A Oil Stop|QID|30614|M|65.48,60.78|N|From Slimy Inkstain.|
 A Traffic Issues|QID|30616|M|64.89,60.47|N|From Smokey Sootassle.|
 C Traffic Issues|QID|30616|S|M|62.8,67.4|
 C A Grummle's Luck|QID|30808|S|NC|M|63.5,66.8|N|Most of them are inside the huts.|
@@ -254,7 +263,7 @@ T Oil Stop|QID|30614|M|65.44,60.78|N|To Slimy Inkstain.|
 T Traffic Issues|QID|30616|M|64.88,60.40|N|To Smokey Sootassle.|
 A Roadside Assistance|QID|30617|M|64.88,60.40|N|From Smokey Sootassle.|
 
-R Temple of the White Tiger|QID|99999|M|66.8,59.29;68.4,56.08;69.05,52.48;66.33,50.71|CS|; no good QID to use for this...since it comes just before faction based steps.
+R Temple of the White Tiger|QID|31392|M|66.8,59.29;68.4,56.08;69.05,52.48;66.33,50.71|CS|; no good QID to use for this...since it comes just before faction based steps.
 f Temple of the White Tiger|QID|99999|M|66.33,50.71|N|At Big Greenfeather.|
 
 T Temple of the White Tiger|QID|31392|FACTION|Alliance|M|68.74,43.07|N|To Anduin Wrynn.|
@@ -276,18 +285,18 @@ T Cho's Missive|QID|31460|FACTION|Alliance|M|57.28,61.66|N|To Lorewalker Cho.|
 T Cho's Missive|QID|31459|FACTION|Horde|M|57.28,61.66|N|To Lorewalker Cho.|
 A Path Less Traveled|QID|30999|M|57.28,61.66|N|From Lorewalker Cho.|
 T Path Less Traveled|QID|30999|M|57.27,61.18|N|To Uncle Cloverleaf.|
-h The Lucky Traveller|QID|30592|M|57.43,60.05|Z|One Keg|N|At Chiyo Mistpaw.|
-f One Keg|QID|99999|M|57.77,59.78|N|At Little Cleankite.|
 A Instant Courage|QID|30601|M|57.27,61.18|N|From Uncle Cloverleaf.|
-A Resupplying One Keg|QID|30618|M|57.71,61.79|N|From Big Sal.|
+h The Lucky Traveller|QID|30592|M|57.43,60.05|Z|One Keg|N|At Chiyo Mistpaw.|
 A They Stole My Luck!|QID|30621|M|57.35,60.22|N|From Ji-Lu the Lucky.|
+f One Keg|QID|99999|M|57.77,59.78|N|At Little Cleankite.|
+A Resupplying One Keg|QID|30618|M|57.71,61.79|N|From Big Sal.|
 C Resupplying One Keg|QID|30618|S|NC|M|56.33,50.88|
 C Instant Courage|QID|30601|S|NC|U|80308|M|57.54,47.44|It's ok to leave the Guides to die if you want to zerg out.|
-C They Stole My Luck!|QID|30621|NC|M|57.77,49.30|N|Next 3 quests done inside Howlingwind Cavern.|
+C They Stole My Luck!|QID|30621|NC|M|57.77,49.30|N|The next 3 quests are done inside Howlingwind Cavern.|
 C Instant Courage|QID|30601|US|NC|U|80308|M|57.54,47.44|It's ok to leave the Guides to die if you want to zerg out.|
 C Resupplying One Keg|QID|30618|US|NC|M|56.33,50.88|
-T Resupplying One Keg|QID|30618|M|57.71,61.76|N|To Big Sal.|
 T They Stole My Luck!|QID|30621|M|57.30,60.19|N|To Ji-Lu the Lucky.|
+T Resupplying One Keg|QID|30618|M|57.71,61.76|N|To Big Sal.|
 T Instant Courage|QID|30601|M|57.23,61.15|N|To Uncle Cloverleaf.|
 A Comin' Round the Mountain|QID|30487|M|57.26,61.17|N|From Uncle Cloverleaf.|
 
@@ -305,12 +314,12 @@ T The Tongue of Ba-Shon|QID|30829|M|43.73,51.09|N|To Lorewalker Cho.|
 A Staying Connected|QID|30795|M|43.73,51.09|N|From Lorewalker Cho.|
 C Staying Connected|QID|30795|U|81712|M|51.94,47.44|N|Talk to Mishi for a flight to Valley of the Emporers.|
 T Staying Connected|QID|30795|M|51.94,47.44|N|To Image of Lorewalker Cho.|
-A An end to Everything|QID|30796|M|51.94,47.44|N|From Image of Lorewalker Cho.|
-C An end to Everything|QID|30796|S|M|57.34,47.17|
+A An End to Everything|QID|30796|M|51.94,47.44|N|From Image of Lorewalker Cho.|
+C An End to Everything|QID|30796|S|M|57.34,47.17|
 A It Was Almost Alive|QID|30797|M|57.07,47.75|
 C It Was Almost Alive|QID|30797|NC|M|57.08,47.83|N|Use the item to call Cho and turn in these 2 qeusts.|
-C An end to Everything|QID|30796|US|M|57.34,47.17|
-T An end to Everything|QID|30796|U|81712|M|58.03,49.02|N|Use The Togue of Ba-Shon to call the Image of Lorewalker Cho and turn in the quest.|
+C An End to Everything|QID|30796|US|M|57.34,47.17|
+T An End to Everything|QID|30796|U|81712|M|58.03,49.02|N|Use The Togue of Ba-Shon to call the Image of Lorewalker Cho and turn in the quest.|
 T It Was Almost Alive|QID|30797|U|81712|M|58.03,49.02|N|Use The Togue of Ba-Shon to call the Image of Lorewalker Cho and turn in the quest.|
 A The Tomb of Shadows|QID|30799|U|81712|M|58.03,49.02|N|From Image of Lorewalker Cho.|
 C Get the Wai Dynasty Rubbing|QID|30799|NC|QO|Wai Dynasty Rubbing: 1/1|M|56.0,48.0;56.4,43.5|CC|
@@ -392,26 +401,26 @@ F Zouchin Village|QID|31228|M|76.17,11.38|CC|N|Talk to Mishi for a ride back to 
 T Prophet Khar'zul|QID|31228|M|62.30,29.01|N|To Lorewalker Cho.|
 r Repair/Restock|M|63.38,30.69|;currently the blacksmith is bugged and doesnt repair.
 
-H One Keg|QID|30592|N|Fly if you didnt reset your hearthstone earlier.|
+H One Keg|QID|30592|N|Fly if you did not reset your hearthstone earlier.|
 A The Burlap Trail: To Burlap Waystation|QID|30592|M|58.04,61.49|N|From Brother Lintpocket.|
 C Roadside Assistance|QID|30617|NC|M|58.76,62.49|
 C The Burlap Trail: To Burlap Waystation|QID|30592|M|53.14,66.57|
 T The Burlap Trail: To Burlap Waystation|QID|30592|M|51.69,67.80|N|To Brother Trailscenter.|
 A The Rabbitsfoot|QID|30602|M|58.04,61.49|N|From Brother Trailscenter.|
-C The Rabitsfoot|QID|30602|M|49.07,70.42|N|He is hanging from a tree.|
+C The Rabbitsfoot|QID|30602|M|49.07,70.42|N|He is hanging from a tree.|
 A The Broketooth Ravage|QID|30603|M|49.07,70.42|N|From Brother Rabbitsfoot.|
 C The Broketooth Ravage|QID|30603|NC|M|48.01,73.34|N|In Mo-Mo Treasure Chest inside the little cave.|
 
-T The Rabitsfoot|QID|30602|M|51.99,67.28|N|To Brother Rabbitsfoot.|
+T The Rabbitsfoot|QID|30602|M|51.99,67.28|N|To Brother Rabbitsfoot.|
 T The Broketooth Ravage|QID|30603|M|51.99,67.28|N|To Brother Rabbitsfoot.|
 A A Monkey Idol|QID|30599|M|52.0,67.3|N|From Brother Rabbitsfoot|
 A No Pack Left Behind|QID|30600|M|52.0,67.3|N|From Brother Rabbitsfoot|
 A Breaking Broketooth|QID|30604|M|52.0,67.3|N|From Brother Rabbitsfoot|
 C Breaking Broketooth|QID|30604|S|M|54.8,69.2|
 C No Pack Left Behind|QID|30600|S|NC|M|54.9,73.6|
-K Kill Ko Ko|QID|30599|T|Ko Ko|L|80429|N|Loot his corpse (literally).|M|52.3,71.4|
+K Kill Ko Ko|QID|30599|T|Hateful Ko Ko|L|80429|N|Loot his corpse (literally).|M|52.3,71.4|
 C Destroy Ko Ko's Altar|QID|30599|NC|QO|Destroy Ko Ko's Altar: 1/1|M|52.3,71.4|
-K Kill Dak Dak|QID|30599|T|Dak Dak|L|80428|M|56.9,71.0|N|Loot his corpse (literally).|
+K Kill Dak Dak|QID|30599|T|Dak Dak|L|80428|M|52.6,72.8|N|Loot his corpse (literally).|
 C Destroy Dak Dak's Altar|QID|30599|NC|QO|Destroy Dak Dak's Altar: 1/1|M|56.9,71.0|
 K Kill Tak Tak|QID|30599|T|Tak Tak|L|80430|N|Loot his corpse (literally).|
 C Destroy Tak Tak's Altar|QID|30599|NC|QO|Destroy Tak Tak's Altar: 1/1|
@@ -419,10 +428,10 @@ C No Pack Left Behind|QID|30600|US|NC|M|54.9,73.6|
 C Breaking Broketooth|QID|30604|US|M|54.8,69.2|
 T A Monkey Idol|QID|30599|M|52.0,67.3|N|To Brother Rabbitsfoot|
 T No Pack Left Behind|QID|30600|M|52.0,67.3|N|To Brother Rabbitsfoot|
-A Bros before Hozen|QID|30605|M|51.94,67.24|N|From Brother Rabbitsfoot.|
+A Bros Before Hozen|QID|30605|M|51.94,67.24|N|From Brother Rabbitsfoot.|
 T Breaking Broketooth|QID|30604|M|52.0,67.3|N|To Brother Rabbitsfoot|
-C Bros before Hozen|QID|30605|M|50.5,64.2|
-T Bros before Hozen|QID|30605|M|50.60,64.08|N|To Brother Yakshoe.|
+C Bros Before Hozen|QID|30605|M|50.5,64.2|
+T Bros Before Hozen|QID|30605|M|50.60,64.08|N|To Brother Yakshoe.|
 A Hozen Love Their Keys|QID|30607|M|50.60,64.08|N|From Brother Yakshoe.|
 A The Snackrifice|QID|30608|M|50.60,64.08|N|From Brother Yakshoe.|
 A Thumping Knucklethump|QID|30606|M|50.60,64.08|N|From Brother Yakshoe.|
@@ -444,13 +453,13 @@ T Unleash The Yeti!|QID|30611|M|45.98,64.08|N|To Brother Rabbitsfoot.|
 T Grummle! Grummle! Grummle!|QID|30610|M|45.98,64.08|N|To Brother Yakshoe.|
 A The Leader Hozen|QID|30612|M|45.98,64.08|
 C The Leader Hozen|QID|30612|M|46.15,63.24|
-T The Leader Hozen|QID|30612|M|42.79,69.35|N|To Brother Rabbitsfoot.|
 
 A The Burlap Trail: To Kota Basecamp|QID|30692|M|51.69,67.80|N|From Brother Trailscenter.|
 C The Burlap Trail: To Kota Basecamp|QID|30692|M|43.77,69.04|
 
+T The Leader Hozen|QID|30612|M|42.79,69.35|N|To Brother Rabbitsfoot.|
 T The Burlap Trail: To Kota Basecamp|QID|30692|M|42.45,68.96|N|To Brother Oilyak.|
-f Kota Basecamp|QID|30699|M|42.78,69.58|N|At Uncle Eastwind.|
+f Kota Basecamp|QID|99999|M|42.78,69.58|N|At Uncle Eastwind.|
 h Kota Basecamp|QID|30747|M|42.66,69.72|N|At Clover Keeper.|
 A Kota Blend|QID|30744|M|42.47,69.60|N|From Uncle Keenbean.|
 A Trouble Brewing|QID|30745|M|42.47,69.60|N|From Uncle Keenbean.|
@@ -459,7 +468,7 @@ A Gourmet Kafa|QID|30743|M|42.34,69.73|N|From Cousin Gootfur.|
 C Gourmet Kafa|QID|30743|S|NC|M|39.99,71.67|N|Flag droppings (yes, it's another poop quest).|
 C Trouble Brewing|QID|30745|S|M|37.83,77.90|N|Kill yetis.|
 C Shut it Down|QID|30742|S|M|40.67,73.42|N|Kill the goats.|
-C Kota Blend|QID|30744|NC|U|81054|M|36.38,76.94|N|Pick up the berries from the ground.|
+C Kota Blend|QID|30744|NC|M|36.38,76.94|N|Pick up the berries from the ground.|
 T Kota Blend|QID|30744|36.38,76.94|To UI Alert.|
 A A Fair Trade|QID|30746|M|36.38,76.94|From UI Alert.|
 C Shut it Down|QID|30742|US|M|40.67,73.42|N|Kill yetis.|
@@ -467,8 +476,8 @@ C Trouble Brewing|QID|30745|US|M|37.83,77.90|N|Kill yetis.|
 C Gourmet Kafa|QID|30743|US|N|Flag droppings (yes, it's another poop quest).|
 T A Fair Trade|QID|30746|M|36.95,76.16|N|To Nephew Burrberry.|
 T Shut it Down|QID|30742|M|42.48,69.45|N|To Cousin Gootfur.|
-T Trouble Brewing|QID|30745|M|42.48,69.45|N|To Cousin Gootfur.|
 T Gourmet Kafa|QID|30743|M|42.48,69.39|N|To Cousin Gootfur.|
+T Trouble Brewing|QID|30745|M|42.48,69.45|N|To Cousin Gootfur.|
 A The Burlap Grind|QID|30747|M|42.49,69.36|N|From Nephew Burrberry.|
 C The Burlap Grind|QID|30747|M|49.53,66.89|N|Talk to Kota Kon. vehicle UI comes up. After finishing the objectives, exit vehicle close to the Burlap Trail Waystation.|
 
@@ -514,7 +523,7 @@ R Winter's Blossom|QID|30699|M|34.97,59.36|
 T To Winter's Blossom|QID|30699|M|34.97,59.36|N|To Lin Silentstrike.|
 A Honor, Even in Death|QID|30723|M|34.93,59.20|N|From Lin Silentstrike.|
 A A Line Unbroken|QID|30715|M|35.14,59.59|N|From Ban Bearheart.|
-f Winter's Blossom|QID|30715|M|34.55,59.00|N|At Kite Master Len.|
+f Winter's Blossom|QID|99999|M|34.55,59.00|N|At Kite Master Len.|
 A Better Dead than Dread|QID|31847|M|34.55,59.00|N|From Kite Master Len. Requires level 89.|
 C Honor, Even in Death|QID|30723|S|M|30.22,62.06|
 C Released Shado-Master Zhiyao|QID|30715|NC|QO|Shado-Master Zhiyao Released From his Oath: 1/1|M|30.4,60.0|
