@@ -104,7 +104,7 @@ C The Lesson of the Burning Scroll|QID|29408|M|60.10,18.42;59.78,19.73;60.02,18.
 T The Lesson of the Burning Scroll|QID|29408|M|59.73,19.08|N|To Master Shang Xi.|
 
 A The Disciple's Challenge|QID|29409|M|59.73,19.08|N|From Master Shang Xi.|
-C The Disciple's Challenge|QID|29409|M|66.96,22.93|N|Head out of the building, down the stairs, across the bridge to the Tranquil Grotto, then defeat Jaomin Ro.|
+K Defeat Joamin Ro|QID|29409|T|Joamin Ro|M|66.96,22.93|N|Head out of the building, down the stairs, across the bridge to the Tranquil Grotto, then defeat Jaomin Ro.|
 T The Disciple's Challenge|QID|29409|M|66.00,22.80|N|To Master Shang Xi (he has moved to the Tranquil Grotto bridge).|
 
 A Aysa of the Tushui|QID|29410|M|66.01,22.76|N|From Master Shang Xi.|
