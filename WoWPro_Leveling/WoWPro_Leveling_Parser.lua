@@ -582,6 +582,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 
 	QuestMapUpdateAllQuests()
 	QuestPOIUpdateIcons()
+	local last_visible_i = 15 -- Last row visible
 	for i=1,15 do
 
 		-- Skipping any skipped steps, unsticky steps, and optional steps unless it's time for them to display --
@@ -634,6 +635,11 @@ function WoWPro.Leveling:RowUpdate(offset)
 		-- Counting stickies that are currently active (at the top) --
 		if sticky and i == WoWPro.ActiveStickyCount+1 and not completion[k] then
 			WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount+1
+		end
+		
+		-- Is this the last visible row?
+		if not sticky and last_visible_i > i then
+			last_visible_i = i
 		end
 
 		-- Getting the image and text for the step --
@@ -758,11 +764,14 @@ function WoWPro.Leveling:RowUpdate(offset)
 				if key2 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_itembutton"..i..":LeftButton")
 				end
+			end
+--err("i = %s, last_visible_i = %s, k = %s, use = %s", i, last_visible_i, k, use)
+			if i <= last_visible_i then
 				local itemEquipLoc = select(9, GetItemInfo(use))
-				if not itemEquipLoc ~= "" then
+				if itemEquipLoc == "" then
 					WoWPro:SetMacro("WPI", "#showtooltip\n/use item:"..use)
 				else
-					WoWPro:SetMacro("WPI", ("#showtooltip\n/equip item:%s /use item:%s"):format(use, use))
+					WoWPro:SetMacro("WPI", ("#showtooltip\n/equip item:%s\n/use item:%s"):format(use, use))
 				end
 				itemkb = true
 			end
@@ -793,6 +802,8 @@ function WoWPro.Leveling:RowUpdate(offset)
 				if key2 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_targetbutton"..i..":LeftButton")
 				end
+			end
+			if i <= last_visible_i then
 				WoWPro:SetMacro("WPT", macroText)
 				targetkb = true
 			end

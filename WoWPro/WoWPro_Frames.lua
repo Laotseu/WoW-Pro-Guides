@@ -5,9 +5,12 @@ local _G = getfenv(0)
 
 local assert = _G.assert
 local ceil = _G.ceil
+local geterrorhandler = _G.geterrorhandler
 local math = _G.math
 local max = _G.max
 local strtrim = _G.strtrim
+local time = _G.time
+local tostringall = _G.tostringall
 
 local ipairs = _G.ipairs
 local pairs = _G.pairs
@@ -25,6 +28,8 @@ local CreateFrame = _G.CreateFrame
 local EasyMenu = _G.EasyMenu
 local InCombatLockdown = _G.InCombatLockdown
 local InterfaceOptionsFrame_OpenToCategory = _G.InterfaceOptionsFrame_OpenToCategory
+
+local function err(msg,...) geterrorhandler()(msg:format(tostringall(...)) .. " - " .. time()) end
 
 ---------------------------------
 --      WoWPro_Frames.lua      --
@@ -899,7 +904,7 @@ WoWPro:CreateMainFrame()
 -- Macro stuff
 do -- closure
 
-local THROTTLE_TIME = 0.2
+local THROTTLE_TIME = 0.4
 local throt, m_type, m_body
 local f = CreateFrame("Frame")
 f:Hide()
@@ -920,7 +925,7 @@ local function SetMarcro_bucket(macroType, macroBody)
 end
 
 function WoWPro:SetMacro(macroType, macroBody)
-	assert(macroType == "WPI" or macroType == "WPT","Invalide macro type: " .. (macroType or 'nil'))
+	--assert(macroType == "WPI" or macroType == "WPT","Invalide macro type: " .. (macroType or 'nil'))
 
 	if InCombatLockdown() then
 		-- Wait until after lockdown to update the macro
