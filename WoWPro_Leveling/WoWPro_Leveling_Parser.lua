@@ -768,7 +768,7 @@ function WoWPro.Leveling:RowUpdate(offset)
 --err("i = %s, last_visible_i = %s, k = %s, use = %s", i, last_visible_i, k, use)
 			if i <= last_visible_i then
 				local itemEquipLoc = select(9, GetItemInfo(use))
-				if itemEquipLoc == "" then
+				if not itemEquipLoc or itemEquipLoc == "" then
 					WoWPro:SetMacro("WPI", "#showtooltip\n/use item:"..use)
 				else
 					WoWPro:SetMacro("WPI", ("#showtooltip\n/equip item:%s\n/use item:%s"):format(use, use))
