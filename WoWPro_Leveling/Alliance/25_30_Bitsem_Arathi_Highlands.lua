@@ -53,7 +53,7 @@ T Hero's Call: Arathi Highlands!|QID|28573|O|M|39.92,48.73|N|To Captain Nials.|
 A Northfold Manor|QID|26093|RANK|1|M|39.91,48.71|N|From Captain Nials.|
 A The Scarlet Monastery|QID|26982|RANK|1|M|39.91,48.71|N|From Captain Nials. If you wish to do Scarlet Monastery.|
 h Refuge Point|QID|26336|M|39.91,49.04|N|Set your home point at Vikki Lonsav.|
-; f Refuge Point|QID|26093|NC|M|39.85,47.34|N|Get the flight point for Refuge Point from Cedrik Prose.|
+f Refuge Point|NC|M|39.85,47.34|N|Get the flight point for Refuge Point from Cedrik Prose.|
 
 A The Battle for Arathi Basin!|QID|8105|RANK|1|M|39.96,46.93|N|From Field Marshal Oslight. This is a PvP quest.|
 A Worth Its Weight in Gold|QID|26035|RANK|1|M|40.34,49.03|N|From Skuerto.|

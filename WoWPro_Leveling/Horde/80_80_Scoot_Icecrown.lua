@@ -53,7 +53,7 @@ T The Shadow Vault |QID|12899| |N|Back to Baron Sliver. He has moved to|M|42.86,
 
 A The Duke |QID|12938|
 A Blackwatch |QID|13106|
-; f Shadow Vault |QID|12938| |N|Get the Flight Path. |M|43.74,24.30|
+f Shadow Vault |N|Get the Flight Path. |M|43.74,24.30|
 T The Duke |QID|12938| |N|At the back of the Shadow Vault.|M|44.66,20.41|
 
 A Honor Challenge |QID|12939|
@@ -254,7 +254,7 @@ T Honor Above All Else |QID|13036| |N|Just below at |M|87.06,75.87|
 A Scourge Tactics |QID|13008|
 
 A Curing the Incurable |QID|13040| |N|Father Gustav patrols the infirmary.|M|86.7,76.6|
-; f Argent Vanguard |QID|13008| |N|Get the Flight Path in the SE corner.|M|87.76,78.02|
+f Argent Vanguard |N|Get the Flight Path in the SE corner .|M|87.76,78.02|
 
 A Defending the Vanguard |QID|13039| |N|Near North front gate. Crusader Lord Dalfors |M|86.08,75.77|
 N Skinning |QID|13070| |N|If you are a Skinner, this is a great place to farm Nerubian Leather, but the Spiders will phase out in a few quests.|

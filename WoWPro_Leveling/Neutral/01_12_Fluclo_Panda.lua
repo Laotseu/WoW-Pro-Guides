@@ -4,6 +4,16 @@
 -- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
 
 -- URL: http://wow-pro.com/wiki/floating_isle_padaren_neutral
+-- Date: 2012-11-24 02:44
+-- Who: Emmaleah
+-- Log: 23 Nov 2012 - Emmaleah - playtest, add pointers to prof trainers, add some additional explanatory comments.
+
+-- URL: http://wow-pro.com/node/3483/revisions/25103/view
+-- Date: 2012-10-02 23:36
+-- Who: Ludovicus Maior
+-- Log: Add new faction specific quest ending!
+
+-- URL: http://wow-pro.com/node/3483/revisions/25082/view
 -- Date: 2012-09-24 23:46
 -- Who: Ludovicus Maior
 -- Log: It is Stormwind City, not Stormwind!
@@ -170,6 +180,7 @@ T The Passion of Shen-zin Su|QID|29423|M|51.44,46.41|N|To Master Shang Xi|
 A The Singing Pools|QID|29521|M|51.44,46.41|N|From Master Shang Xi|
 A Stronger Than Reeds|QID|29662|M|53.33,47.46;63.47,41.97|N|Head out of the Temple and head east to The Singing Pools to Jojo Ironbrow|
 
+r Profession Trainer|QID|29521|M|63.0,41.6|N|YOu can sell the extra items you have collected here, but even more importantly you can train your primary professions at Whittler Dewei. Unfortunantly secondary professions can't be trained until you reach your factions capital.|
 T The Singing Pools|QID|29521|M|65.59,42.59|N|To Aysa Cloudsinger (she has moved to The Singing Pools)|
 
 A The Lesson of Dry Fur|QID|29661|M|65.59,42.59|N|From Aysa Cloudsinger|
@@ -229,7 +240,7 @@ A Missing Mallet|QID|29768|M|68.89,65.00|N|From Ji Firepaw|
 A Stronger Than Wood|QID|29771|M|69.13,66.62|N|From Jojo Ironbrow|
 
 C Stronger Than Wood|QID|29771|M|69.13,66.62|N|Collect the Discarded Wood Planks from the floor.|S|NC|
-C Missing Mallet|QID|29768|M|62.53,76.68|N|Loot the Mallet from next to Raggis (kill him for easy access)|
+C Missing Mallet|QID|29768|M|62.53,76.68|N|Loot the Mallet from next to Raggis.  You can tag him and drag him over to the guards on the path nearby, they will keep him busy while you loot the mallet. (kill him for easy access)|
 C Stronger Than Wood|QID|29771|M|63.07,76.77|N|Finish collecting the Discarded Wood Planks from the floor.|US|NC|
 
 T Stronger Than Wood|QID|29771|M|69.13,66.62|N|To Jojo Ironbrow|
@@ -273,15 +284,13 @@ A Monkey Advisory Warning|QID|29781|M|30.97,36.74|N|From Ji Firepaw|US|
 
 C The Direct Solution|QID|29779|N|Kill Fe-Fang Hozen|S|
 A Stronger Than Bone|QID|29782|M|28.33,38.78;26.43,33.73|N|From Jade Tiger Pillar in Fe-Feng Village|
-
-C Monkey Advisory Warning|QID|29781|M|20.93,34.36|N|Collect the Stolen Firework Bundle from where Ruk-Ruk is|S|
+C Monkey Advisory Warning|QID|29781|M|20.93,34.36|N|Collect the Stolen Firework Bundles as you go.  There are several where Ruk-Ruk is|S|
 C Do No Evil|QID|29780|M|20.93,34.36|N|Kill Ruk-Ruk|
-T Do No Evil|QID|29780|N|To Ji Firepaw|S|
-C Monkey Advisory Warning|QID|29781|M|20.93,34.36|N|Collect the Stolen Firework Bundle from where Ruk-Ruk was|US|
-T Do No Evil|QID|29780|N|To Ji Firepaw|US|
+T Do No Evil|QID|29780|N|To Ji Firepaw|
+C Monkey Advisory Warning|QID|29781|M|20.93,34.36|N|Collect the Stolen Firework Bundle from where Ruk-Ruk was, or elsewhere in the village|US|
 T Monkey Advisory Warning|QID|29781|N|To Ji Firepaw|
 C The Direct Solution|QID|29779|M|24.44,30.62|N|Finish killing Fe-Fang Hozen.  Ji Firepaw has a great AOE kick, so feel free to pull a few.|US|
-T The Direct Solution|QID|29779|N|To Ji Firepaw|
+T The Direct Solution|QID|29779|N|To Ji Firepaw, you may want to wait until you are out of the monkey village to turn this in as Ji stops helping you and runs off when you turn in the last quest|
 
 T Stronger Than Bone|QID|29782|M|29.92,39.77|N|To Jojo Ironbrow|
 
@@ -313,7 +322,7 @@ T Unwelcome Nature|QID|29788|M|19.33,50.67|N|To Master Shang Xi|
 T Small, But Significant|QID|29789|M|19.33,50.67|N|To Master Shang Xi|US|
 
 A Passing Wisdom|QID|29790|M|19.33,50.67|N|From Master Shang Xi|
-C Passing Wisdom|QID|29790|N|Wait while Master Shang Xi tells you the story.|NC|
+C Passing Wisdom|QID|29790|M|19.33,50.67|N|Wait while Master Shang Xi tells you the story.|NC|
 T Passing Wisdom|QID|29790|M|15.79,49.11|N|To Aysa Cloudsinger|
 
 A The Suffering of Shen-zin Su|QID|29791|M|15.79,49.11|N|To Aysa Cloudsinger|
@@ -322,6 +331,7 @@ C The Suffering of Shen-zin Su|QID|29791|M|15.57,48.90|N|Sit back and discover t
 T The Suffering of Shen-zin Su|QID|29791|M|51.30,48.30|N|Wait until you land, then to Elder Shaopai.|
 
 A Bidden to Greatness|QID|29792|M|51.30,48.30|N|From Elder Shaopai.|
+r Repair/Restock|QID|29792|M|50.65, 58.6|N|Right next to the Blacksmith where you can repair and sell is a profession trainer should you happen to need him|
 C Bidden to Greatness|QID|29792|M|51.58,60.97|N|Head to the Mandori Village Gate|NC|QO|Open the Mandori Village Gate: 1/1|
 C Bidden to Greatness|QID|29792|M|52.26,68.27|N|Head to the Pei-Wu Forest Gate|NC|QO|Open the Pei-Wu Forest Gate: 1/1|
 T Bidden to Greatness|QID|29792|M|50.08,76.62|N|To Wei Palerage|
@@ -379,7 +389,7 @@ C Risking It All|QID|30767|M|36.40,87.20|N|Follow Aysa up the stairs of the ship
 T Risking It All|QID|30767|M|39.33,86.19|N|To Ji Firepaw|
 
 A The Healing of Shen-zin Su|QID|29799|M|39.33,86.19|N|From Ji Firepaw|
-C The Healing of Shen-zin Su|QID|29799|M|38.45,85.95|N|Release the healers found under the cogs on the mini-map by clicking on them, and kill any Deepscale Ravagers attacking the healers near the wound.|
+C The Healing of Shen-zin Su|QID|29799|M|38.45,85.95|N|Release the healers found under the cogs on the mini-map by clicking on them, and kill any Deepscale Ravagers attacking the healers near the wound. If you are doing this solo, it may help to attack the Deepscale Ravagers and drag them over to the guards for help killing them.  Don't forget the green bubbles near Ji can heal you|
 T The Healing of Shen-zin Su|QID|29799|M|39.33,86.19|N|To Ji Firepaw|
 
 A New Allies|QID|29800|M|38.81,86.32|N|After the cut-scene, from Ji Firepaw|
@@ -388,30 +398,31 @@ T New Allies|QID|29800|M|51.46,48.33|N|Up the stairs, to Spirit of Master Shang 
 
 A A New Fate|QID|31450|M|51.46,48.33|N|From Spirit of Master Shang Xi|
 C A New Fate|QID|31450|N|Speak to Spirit of Master Shang Xi, and choose your destiny!|NC|
+; The cinematic triggers a reload, which re-evaluates all the following steps in the new faction.
 T A New Fate|QID|31450|N|Straight in front of you, and welcome to the mainland.|
 
-N Destiny Chosen|N|Skip the quest that does not apply to you.|
-A Joining the Horde|QID|31012|M|45.58,12.61|N|From Ji Firepaw|Z|Durotar|
-A Joining the Alliance|QID|30987|M|32.90,50.95|N|From Aysa Cloudsinger|Z|Elwynn Forest|
+N Destiny Chosen|N|The next faction specific quest should be automatically chosen for you. If not, report the bug!|
+A Joining the Horde|QID|31012|M|45.58,12.61|N|From Ji Firepaw|Z|Durotar|FACTION|Horde|
+A Joining the Alliance|QID|30987|M|32.90,50.95|N|From Aysa Cloudsinger|Z|Elwynn Forest|FACTION|Alliance|
 
-T Joining the Horde|QID|31012|M|48.14,70.54|N|To Garrosh Hellscream|Z|Orgrimmar|
-T Joining the Alliance|QID|30987|M|85.78,31.70|N|To King Varian Wrynn, in Stormwind Keep|Z|Stormwind City|
+T Joining the Horde|QID|31012|M|48.14,70.54|N|To Garrosh Hellscream|Z|Orgrimmar|FACTION|Horde|
+T Joining the Alliance|QID|30987|M|85.78,31.70|N|To King Varian Wrynn, in Stormwind Keep|Z|Stormwind City|FACTION|Alliance|
 
-A The Horde Way|QID|31013|M|48.14,70.54|PRE|31012|N|To Garrosh Hellscream|Z|Orgrimmar|
-C The Horde Way|QID|31013|M|49.00,73.08|N|Listen to Garrosh Hellscream|Z|Orgrimmar|NC|
-T The Horde Way|QID|31013|M|70.61,31.47|N|To Garrosh Hellscream, who has moved to the Valley of Honor|Z|Orgrimmar|
+A The Horde Way|QID|31013|M|48.14,70.54|PRE|31012|N|To Garrosh Hellscream|Z|Orgrimmar|FACTION|Horde|
+C The Horde Way|QID|31013|M|49.00,73.08|N|Listen to Garrosh Hellscream|Z|Orgrimmar|NC|FACTION|Horde|
+T The Horde Way|QID|31013|M|70.61,31.47|N|To Garrosh Hellscream, who has moved to the Valley of Honor|Z|Orgrimmar|FACTION|Horde|
 
-A Hellscream's Gift|QID|31014|M|70.61,31.47|PRE|31012|N|To Garrosh Hellscream|Z|Orgrimmar|
-C Hellscream's Gift|QID|31014|M|70.60,30.90|N|Head towards the door behind Garrosh Hellscream, and you'll get teleported to The Ring of Valor. Just fight the same target as Ji Firepaw, and run when you are told to.|Z|Orgrimmar|
-T Hellscream's Gift|QID|31014|M|48.14,70.54|N|To Garrosh Hellscream, who has moved back to the Valley of Strength|Z|Orgrimmar|
+A Hellscream's Gift|QID|31014|M|70.61,31.47|PRE|31012|N|To Garrosh Hellscream|Z|Orgrimmar|FACTION|Horde|
+C Hellscream's Gift|QID|31014|M|70.60,30.90|N|Head towards the door behind Garrosh Hellscream, and you'll get teleported to The Ring of Valor. Just fight the same target as Ji Firepaw, and run when you are told to.|Z|Orgrimmar|FACTION|Horde|
+T Hellscream's Gift|QID|31014|M|48.14,70.54|N|To Garrosh Hellscream, who has moved back to the Valley of Strength|Z|Orgrimmar|FACTION|Horde|
 
-A The Alliance Way|QID|30988|M|85.78,31.70|PRE|30987|N|From King Varian Wrynn|Z|Stormwind City|
-C The Alliance Way|QID|30988|M|82.59,28.07|N|Listen to King Varian Wrynn|Z|Stormwind City|
-T The Alliance Way|QID|30988|M|82.59,28.07|N|To King Varian Wrynn, who has moved out to the garden|Z|Stormwind City|
+A The Alliance Way|QID|30988|M|85.78,31.70|PRE|30987|N|From King Varian Wrynn|Z|Stormwind City|FACTION|Alliance|
+C The Alliance Way|QID|30988|M|82.59,28.07|N|Listen to King Varian Wrynn|Z|Stormwind City|FACTION|Alliance|
+T The Alliance Way|QID|30988|M|82.59,28.07|N|To King Varian Wrynn, who has moved out to the garden|Z|Stormwind City|FACTION|Alliance|
 
-A An Old Pit Fighter|QID|30989|M|82.59,28.07|PRE|30987|N|From King Varian Wrynn|Z|Stormwind City|
-C An Old Pit Fighter|QID|30989|M|82.59,28.07|N|The King will want you to fight him, but every hit will miss/dodge, after a short while, the fight will be over.|Z|Stormwind City|
-T An Old Pit Fighter|QID|30989|M|85.78,31.70|N|To King Varian Wrynn, who has moved back into the Keep|Z|Stormwind City|
+A An Old Pit Fighter|QID|30989|M|82.59,28.07|PRE|30987|N|From King Varian Wrynn|Z|Stormwind City|FACTION|Alliance|
+C An Old Pit Fighter|QID|30989|M|82.59,28.07|N|The King will want you to fight him, but every hit will miss/dodge, after a short while, the fight will be over.|Z|Stormwind City|FACTION|Alliance|
+T An Old Pit Fighter|QID|30989|M|85.78,31.70|N|To King Varian Wrynn, who has moved back into the Keep|Z|Stormwind City|FACTION|Alliance|
 
 ]]
 

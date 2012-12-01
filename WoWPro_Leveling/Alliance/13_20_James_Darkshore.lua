@@ -18,6 +18,7 @@
 -- Who: Fluclo
 -- Log: Changed the Maw of the Void quest to be Rank 2, as not necessary for zone advancement.
 
+-- URL: http://wow-pro.com/node/3218/revisions/24456/view
 -- Date: 2011-05-30 17:51
 -- Who: Ludovicus Maior
 -- Log: Line 198 for step T has unknown tag [QlID]: [T Denying Manpower|QlID|13507|M|58.92,19.39|N|To Sentinel Tysha Moonblade.|]
@@ -49,7 +50,7 @@
 -- URL: http://wow-pro.com/node/3218/revisions/23868/view
 -- Date: 2010-12-30 19:46
 -- Who: Fluclo
--- Log: Changed to K for Shatterspear Overseer, and the resulting Overseer's Orders
+-- Log: Changed to K for Shatterspear Overseer, and the resulting Overseer's Orders 
 
 -- URL: http://wow-pro.com/node/3218/revisions/23867/view
 -- Date: 2010-12-30 17:48
@@ -114,6 +115,7 @@ C Rescue Shaldyn|QID|13518|M|42.92,21.48|QO|Shaldyn rescued: 1/1|N|Now rescue Sh
 C Threat from the Water|QID|13522|M|45.50,17.64|US|N|Kill 8 Vile Sprays.|
 T Threat from the Water|QID|13522|M|50.21,19.83|N|To Ranger Glynda Nal'Shea.|
 T The Last Wave of Survivors|QID|13518|M|51.75,18.05|N|To Dentaria Silverglade.|
+
 A The Boon of the Seas|QID|13520|M|51.75,18.05|N|From Serendia Oakwhisper.|
 A Buzzbox 413|QID|13521|M|51.17,19.61|N|From Wizbang Cranktoggle.|
 A A Taste for Grouper |QID|13537|M|52.38,17.7|P|Fishing;356|N|From Johnathan Staats, will lead to you fishing.|
@@ -143,10 +145,11 @@ C Bearer of Good Fortune|QID|13557|U|44925|M|57.50,32.41|N|Open cages until you 
 C The Corruption's Source|QID|13529|M|58.75,32.64|N|Kill Vile Grells until you finish the quest.|US|
 C A Cure In The Dark|QID|13554|M|58.86,32.34|N|Kill Vile Grells and Vile Corruptors.|
 R Bashal'Aran Collapse|QID|28529|M|52.81,32.72|N|Head outside the cave, and jump into the 'Maw of the Void'.|RANK|2|
-l Writings of the Dark Herald|QID|28529|M|52.32,31.03|L|64450|N|Run up the ramp and kill Telarius Voidstrider. Then loot the "Writings of the Dark Herald".
-A Writings of the Void|QID|28529|U|64450|N|Accept the quest from the writings.|M|52.32,31.03
+l Writings of the Dark Herald|QID|28529|M|52.32,31.03|L|64450|N|Run up the ramp and kill Telarius Voidstrider. Then loot the "Writings of the Dark Herald".|RANK|2|
+A Writings of the Void|QID|28529|U|64450|N|Accept the quest from the writings.|M|52.32,31.03|RANK|2|
 
-H Lor'danel|QID|13554|U|6948|N|Hearth back to Lor'danel.|
+H Lor'danel|QID|13529|U|6948|N|Hearth back to Lor'danel, or run back down to Bielara Ivyshroud and tell her you'd like to leave the place, then run back.|RANK|2|
+H Lor'danel|QID|13529|U|6948|N|Hearth back to or run back to Lor'danel.|
 T The Corruption's Source|QID|13529|M|51.19,19.69|N|To Tharnariun Treetender.|
 T Bearer of Good Fortune|QID|13557|M|51.19,19.69|N|To Tharnariun Treetender.|
 T A Troubling Prescription|QID|13831|M|51.19,19.69|N|To Tharnariun Treetender.|
@@ -349,7 +352,7 @@ C The Eye of All Storms|QID|13588|M|44.27,54.20|N|Jump on Thessera's back, use t
 T The Eye of All Storms|QID|13588|M|43.63,53.41|N|To Malfurion Stormrage.|
 A Mounting the Offensive|QID|13902|M|43.63,53.41|N|From Malfurion Stormrage.|
 
-; f Grove of the Ancients|QID|13902|M|44.39,75.39|N|At Delanea.|
+f Grove of the Ancients|M|44.39,75.39|N|At Delanea.|
 T Mounting the Offensive|QID|13902|M|45.25,75.12|N|To Balren of the Claw.|
 A Leave No Tracks|QID|13892|M|45.25,75.12|N|From Balren of the Claw.|
 A What's Happening to the Blackwood Furbolg?|QID|13525|M|45.19,75.16|N|From Foriel Broadleaf.|

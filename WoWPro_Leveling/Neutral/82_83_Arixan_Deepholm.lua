@@ -7,7 +7,7 @@
 -- Date: 2012-09-15 20:21
 -- Who: Ludovicus Maior
 -- Log: Change some rank 2 quests to rank 1 so that you can actually finish the guide.
-
+   
 -- URL: http://wow-pro.com/node/3307/revisions/24993/view
 -- Date: 2012-05-27 19:02
 -- Who: Ludovicus Maior

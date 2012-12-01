@@ -50,9 +50,7 @@ C Pride of the Horde |QID|11980|N|Kill Anub'ar Ambushers.|US|M|15.5,51.2|
 T Pride of the Horde |QID|11980|M|14.2,49.8|N|To Blood Guard Roh'kill.|
 T Into the Fold |QID|11978|M|12.8,48.5|N|To Emissary Brighthoof.|
 A Blood Oath of the Horde |QID|11983|M|12.8,48.5|PRE|11978|N|From Emissary Brighthoof.|
-
-C Blood Oath of the Horde |QID|11983| |N|Talk to the Taunka'le Refugees and go through the text until you complete the quest.|
-
+C Blood Oath of the Horde |QID|11983|N|Talk to the Taunka'le Refugees and go through the text until you complete the quest.|
 T Blood Oath of the Horde |QID|11983|M|12.8,48.5|N|To Emissary Brighthoof.|
 
 A Agmar's Hammer |QID|12008|M|12.8,48.5|PRE|11983|N|From Emissary Brighthoof.|

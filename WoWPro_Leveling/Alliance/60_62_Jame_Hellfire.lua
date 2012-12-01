@@ -92,8 +92,8 @@ T Know your Enemy |QID|10160|M|50.9,60.2|N|To Lieutenant Amadi.|
 A Fel Orc Scavengers |QID|10482|M|50.9,60.2|N|From Lieutenant Amadi.|
 
 N Flying|QID|10482|N|If you are level 60, Expert Riding may be purchased for 250 gold, you will also need 50 gold for a mount. Trainer is Hargen Bronzewing.|M|54.3,62.6|
-C Waste Not, Want Not|S|N|Loot Metal Cogs and Wooden Planks off the ground until you finish this quest. |QID|10055|
-C Fel Orc Scavengers |N|Kill Orcs until you finish this quest.|QID|10482|
+C Waste Not, Want Not|S|N|Loot Metal Cogs and Wooden Planks off the ground until you finish this quest. |QID|10055|M|60.4,52.1|
+C Fel Orc Scavengers |N|Kill Orcs until you finish this quest.|QID|10482|M|62.00,54.00|
 C Waste Not, Want Not |N|Loot Metal Cogs/Poles and Wooden Planks off the ground until you finish this quest. |QID|10055|M|60.4,52.1|US|
 T Waste Not, Want Not |QID|10055|M|51.2,60.0|N|To Dumphry.|
 A Laying Waste to the Unwanted |QID|10078|M|51.2,60.0|N|From Dumphry.|
@@ -115,7 +115,7 @@ A In Search of Sedai |QID|9390|M|23.1,40.3|N|From Anchorite Obadei.|
 A Cruel Taskmasters |QID|9399|M|23.1,40.3|N|From Ikan.|
 A The Rock Flayer Matriarch |QID|9490|M|23.1,40.3|N|From Ikan.|
 A The Pools of Aggonar|QID|9426|M|23.4,36.5|N|From Amaan the Wise.|
-; f Temple of Telhamat|QID|9390|N|Get the flight path.|M|25.20,37.20|
+f Temple of Telhamat|N|Get the flight path.|M|25.20,37.20|
 T In Search of Sedai|QID|9390|M|26.89,37.42|N|To Sedai's Corpse.|
 A Return to Obadei|QID|9423|M|26.89,37.42|N|From Sedai's Corpse.|
 T Return to Obadei|QID|9423|M|23.1,40.3|N|To Anchorite Obadei.|
@@ -169,7 +169,7 @@ T Mission: The Murketh and Shaadraz Gateways |QID|10146|M|71.4,62.7|N|To Forward
 A Shatter Point |QID|10340|M|71.4,62.7|N|Foward Commander Kingston.|
 
 F Shatter Point |QID|10340|N|Talk to Wing Commander Dabir'ee and have him send you to Shatter Point. |M|71.40,62.50|
-; f Shatter Point |QID|10340|N|Get the flight-path.|M|78.4,34.9|
+f Shatter Point |N|Get the flight-path.|M|78.4,34.9|
 T Shatter Point |QID|10340|M|78.4,34.9|N|To Runetog Wildhammer.|
 A Wing Commander Gryphongar |QID|10344|M|78.4,34.9|N|From Runetog Wildhammer.|
 T Wing Commander Gryphongar |QID|10344|M|79.3,33.9|N|To Wing Commander Gryphongar.|
@@ -206,9 +206,7 @@ T The Dark Missive |QID|10395|N|Head to Warp-Scryer Kryv.|M|56.69,66.52|
 A The Heart of Darkness |QID|10399|N|From Warp-Scryer Kryv.|M|56.69,66.52|
 A The Path of Glory |QID|10047|M|56.7,66.5|N|From Warp-Scryer Kryv.|M|56.69,66.52|
 A Overlord |QID|10400|N|From Force Commander Danath Trollbane.|M|56.64,66.69|
-A Weaken the Ramparts |QID|9575|M|56.72,66.34|N|From Lieutenant Chadwick.  This is an instance quest, so this is optional, skip if you don't want to do it.|
 
-N Hellfire Ramparts (note)|QID|9575|M|56.72,66.34|N|You may do the Hellfire Ramparts instance if you wish, for extra experience.  Head into the Dungeon Finder and queue for the Ramparts as you are questing from now on. |
 A Unyielding Souls |QID|10050|M|50.9,60.2|N|From Honor Guard Wesilow.|
 A A Job for an Intelligent Man |QID|9355|M|52.0,62.6|N|From Foreman Biggums.|
 A When This Mine's a-Rockin' |QID|10079|M|52.0,62.6|N|From Foreman Biggums.|

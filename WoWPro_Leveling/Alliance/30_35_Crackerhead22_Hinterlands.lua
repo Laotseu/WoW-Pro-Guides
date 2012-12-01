@@ -51,7 +51,7 @@ return [[
 
 R The Hinterlands|QID|26546|M|43.36,45.18;36.71,31.15;38.45,22.89;39.32,19.03|Z|Arathi Highlands|N|Follow the waypoints to The Hinterlands.|
 R Aerie Peak|QID|26546|M|26.29,69.07;26.21,55.04;20.13,53.66;14.17,48.03|N|Follow the waypoints to Aerie Peak.|
-; f Aerie Peak|M|11.17,46.06|N|At Guthrum Thunderfist.|QID|26546|
+f Aerie Peak|M|11.17,46.06|N|At Guthrum Thunderfist.|
 T Hero's Call: The Hinterlands!|QID|26542|M|9.96,44.31|N|To Gryphon Master Talonaxe.|O|
 A Razorbeak Friends|QID|26546|M|9.96,44.31|N|From Gryphon Master Talonaxe.|
 A A Mangy Threat|QID|26547|M|9.96,44.31|N|From Gryphon Master Talonaxe.|
@@ -64,7 +64,7 @@ T A Mangy Threat|QID|26547|M|9.97,44.27|N|To Gryphon Master Talonaxe.|
 A Out to the Front|QID|26548|M|9.97,44.27|N|From Gryphon Master Talonaxe.|
 F Stormfeather Outpost|QID|26548|M|11.11,46.09|N|Talk to Guthrum Thunderfist, and choose to go to Stormfeather Outpost.|
 
-; f Stormfeather Outpost|QID|26548|M|65.74,44.94|N|At Brock Rockbeard.|
+f Stormfeather Outpost|M|65.74,44.94|N|At Brock Rockbeard.|
 T Out to the Front|QID|26548|M|66.33,44.37|N|To Kerr Ironsight.|
 A The Wicked Revantusk|QID|26462|M|66.33,44.37|N|From Kerr Ironsight.|
 A Gan'dranda|QID|26483|M|66.33,44.37|N|From Dron Blastbrew.|

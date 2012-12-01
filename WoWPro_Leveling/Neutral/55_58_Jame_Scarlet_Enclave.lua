@@ -261,7 +261,7 @@ N At this point|N|Go visit AH, profession trainers, etc.|
 
 F Blasted Lands|M|70.97,72.52|Z|Stormwind City|FACTION|Alliance|N|Fly to Nethergarde Keep in the Blasted Lands.|
 R Acherus: The Ebon Hold|Z|Orgrimmar|N|Use your Death Gate and go back to Acherus.|FACTION|Horde|
-; f Acherus: The Ebon Hold|M|83.85,50.36|N|At Grimwing.|Z|Eastern Plaguelands|FACTION|Horde|
+f Acherus: The Ebon Hold|M|83.85,50.36|N|At Grimwing.|Z|Eastern Plaguelands|FACTION|Horde|
 F Blasted Lands|M|70.97,72.52|Z|Orgrimmar|FACTION|Horde|N|Fly to Dreadmaul Hold in the Blasted Lands.|
 
 N Thus ends the Death Knight starting area.|N|Close this step to head start the Blasted Lands guide.|

@@ -245,7 +245,7 @@ A Welcome Relief|QID|27803|M|60.18,57.96|N|From Keegan Firebeard.|S|
 A The Only Homes We Have|QID|27804|M|60.18,57.96|N|From Keegan Firebeard.|
 A Welcome Relief|QID|27803|M|60.18,57.96|N|From Keegan Firebeard.|US|
 
-; f Firebeard's Patrol|QID|27804|M|60.4,57.7|N|At Farstad Stonegrip.|
+f Firebeard's Patrol|M|60.39, 57.64|N|At Farstad Stonegrip.|
 
 C Welcome Relief|QID|27803|M|59.67,56.91|N|Kill subjugated firestarters.|S|
 C The Only Homes We Have|QID|27804|PRE|27803|U|62508|M|59.68,56.89|N|Use the Water Bucket to put out fires.|
@@ -375,7 +375,7 @@ A My Sister, Fanny|QID|28369|M|48.93,29.82|N|From Colin Thundermar.|
 T A Coward's Due|QID|28001|M|48.93,29.82|N|From Colin Thundermar.|
 
 r Sell junk, Repair/Restock|QID|28369|M|49.04,29.15|
-; f Thundermar|QID|28369|M|48.53,28.18|N|At Doran Talonheart.|
+f Thundermar|M|48.53,28.18|N|At Doran Talonheart.|
 
 T My Sister, Fanny|QID|28369|M|49.76,29.23|N|To Fanny Thundermar.|
 
@@ -443,7 +443,7 @@ T The Bachelor|QID|28346|M|54.43,16.82|N|To Keegan Firebeard.|
 
 A Rescue at Glopgut's Hollow|QID|28377|M|54.43,16.82|N|From Keegan Firebeard.|
 
-; f Kirthaven|QID|28377|M|56.71,15.20|N|At Shaina Talonheart.|
+f Kirthaven|M|56.71,15.20|N|At Shaina Talonheart.|
 T Rescue at Glopgut's Hollow|QID|28377|M|38.19,34.42|N|To Colin Thundermar.|
 
 A Find Fanny|QID|28378|M|38.19,34.42|N|From Colin Thundermar.|
@@ -535,7 +535,7 @@ C Warm Welcome|QID|27485|M|27.55,21.37|N|Head towards the waypoint and watch the
 T Warm Welcome|QID|27485|M|29.34,26.00|N|To Calen.|
 
 A Even Dragons Bleed|QID|27504|M|29.34,26.00|N|From Calen.|
-; f Vermillion Redoubt|QID|27509|M|28.47,24.95|N|At Aquinastrasz.|
+f Vermillion Redoubt|M|28.47,24.95|N|At Aquinastrasz.|
 T Even Dragons Bleed|QID|27504|M|29.84,31.15|N|To Velastrasza.|
 
 A Draconic Mending|QID|27505|M|29.84,31.15|N|From Velastrasza.|
@@ -636,7 +636,7 @@ A Ogres & Ettins|QID|27492|M|43.39,57.48|N|From Kurdran Wildhammer.|
 A Call in the Artillery|QID|27496|M|43.39,57.48|N|From Cassius the White.|
 A SI:7 Drop|QID|27490|M|43.39,57.48|N|From Cassius the White.|
 
-; f Victor's Point|QID|27496|M|43.82,57.31|N|At Desmond Chadsworth.|
+f Victor's Point|M|43.82,57.31|N|At Desmond Chadsworth.|
 r Sell junk, Repair/Restock|QID|27499|M|43.81,57.74|
 
 C SI:7 Drop|QID|27490|QO|Get Wildhammer squad: 1/1|M|43.82,57.31|N|Talk to Angus, just left of the flight master, to pick up your squad.|

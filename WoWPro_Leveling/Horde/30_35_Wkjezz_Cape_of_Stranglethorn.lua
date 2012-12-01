@@ -38,7 +38,7 @@
 WoWPro.Leveling:RegisterGuide('WkjCap3035', 'The Cape of Stranglethorn', 'Wkjezz', '30', '35', 'JiyWes3540', 'Horde', function()
 return [[
 
-; f Hardwrench Hideaway|QID|26404|M|35.15,29.24|N|At Hizzle.|
+f Hardwrench Hideaway|M|35.15,29.24|N|At Hizzle.|
 T Above My Pay Grade|QID|26404|M|34.79,29.49|N|To Sassy Hardwrench.|
 A It's You!!|QID|26489|R|Goblin|M|34.76,29.54|N|From Sassy Hardwrench.|
 A Akiris by the Bundle|QID|26487|R|Blood Elf,Orc,Tauren,Troll,Undead|M|34.76,29.54|N|From Sassy Hardwrench.|
@@ -108,7 +108,7 @@ A The Captain's Chest|QID|26599|M|40.16,67.77|N|From Captain Hecklebury Smotts.|
 A Stranglethorn Fever|QID|26597|M|41.87,72.81|N|From Fin Fizracket.|
 A Scaring Shaky|QID|26593|M|42.03,73.44|N|From "Sea Wolf" MacKinley.|
 T I'm A Huge Liar and a Fraud|QID|26435|M|41.98,73.57|N|To Garley Lightrider. The floor below the building "Sea wolf" is standing|
-; f Booty Bay|QID|26593|M|40.58,73.34|N|At Gringer.|
+f Booty Bay|M|40.58,73.34|N|At Gringer.|
 h Booty Bay|QID|26593|M|40.90,73.74|N|At Innkeeper Skindle.|
 C The Captain's Chest|QID|26599|M|52.80,66.79|N|Fight the Sea Giant.|
 A Message in a Bottle|QID|26603|M|54.21,65.44|N|Look for a bottle with a yellow ! on the shore.|

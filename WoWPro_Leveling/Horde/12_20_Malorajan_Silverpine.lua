@@ -29,7 +29,7 @@ WoWPro.Leveling:RegisterGuide('MalSil1220', 'Silverpine Forest', 'Malorajan', '1
 return [[
 
 A Warchief's Command: Silverpine Forest!|QID|28568|M|66.07,49.80|Z|Undercity|N|You can pick this quest up from the Warchief's Command Board in Undercity.|
-; f Trade Quarter|QID|28568|M|63.37,48.64|Z|Undercity|N|At Michael Garrett.|
+f Trade Quarter|M|63.37,48.64|Z|Undercity|N|At Michael Garrett.|
 T Warchief's Command: Silverpine Forest!|QID|28568|M|57.40,10.11|N|To Grand Executor Mortuus.|
 A The Warchief Cometh|QID|26965|M|57.40,10.11|N|From Grand Executor Mortuus.|
 C The Warchief Cometh|QID|26965|M|57.28,10.28|N|Watch the scene between Garrosh and Sylvanas.|
@@ -37,7 +37,7 @@ T The Warchief Cometh|QID|26965|M|57.38,10.15|N|To Grand Executor Mortuus.|
 A The Gilneas Liberation Front|QID|26989|M|57.38,10.15|N|From Grand Executor Mortuus.|
 A Guts and Gore|QID|26995|M|56.34,8.39|N|From High Apothecary Shana T'veen.|
 A Agony Abounds|QID|26992|M|56.73,9.18|N|From Apothecary Witherbloom.|
-; f Forsaken High Command|QID|26998|M|57.87,8.78|N|At Bat Handler Maggotbreath.|
+f Forsaken High Command|M|57.87,8.78|N|At Bat Handler Maggotbreath.|
 
 C Guts and Gore|QID|26995|M|64.16,7.37|N|Kill any bear and worg you see and loot it.|S|
 C Agony Abounds|QID|26992|M|61.55,9.91|N|Loot any Doomweed you come acros.|S|
@@ -61,7 +61,7 @@ A Belmont's Report|QID|27056|M|58.04,9.04|N|From Deathstalker Commander Belmont.
 T Belmont's Report|QID|27056|M|57.39,10.16|N|To Lady Sylvanas Windrunner.|
 A The Warchief's Fleet|QID|27065|M|57.39,10.16|N|From Lady Sylvanas Windrunner.|
 
-; f Forsaken Rear Guard|QID|27065|M|45.96,21.79|N|At Franny Mertz.|
+f Forsaken Rear Guard|M|45.96,21.79|N|At Franny Mertz.|
 T The Warchief's Fleet|QID|27065|M|44.11,21.35|N|To Admiral Hatchet.|
 A Steel Thunder|QID|27069|M|44.11,21.35|N|From Admiral Hatchet.|
 A Give 'em Hell!|QID|27073|M|44.11,21.35|N|From Warlord Torok.|
@@ -108,7 +108,7 @@ C Lordaeron|QID|27098|M|45.02,41.75|
 T Lordaeron|QID|27098|M|44.92,41.71|N|To Lady Sylvanas Windrunner.|
 A Honor the Dead|QID|27180|M|44.92,41.69|N|From Lady Sylvanas Windrunner.|
 
-; f The Sepulcher|QID|27180|M|45.39,42.44|N|At Karos Razok.|
+f The Sepulcher|M|45.39,42.44|N|At Karos Razok.|
 A Hair of the Dog|QID|27226|M|45.75,42.00|N|From Warlord Torok.|
 A Reinforcements from Fenris|QID|27231|M|45.76,42.01|N|From Admiral Hatchet.|
 h The Sepulcher|QID|27231|M|46.40,42.68|N|At Innkeeper Bates.|
@@ -144,7 +144,7 @@ T To Forsaken Forward Command|QID|27290|M|57.40,18.91|Z|Ruins of Gilneas|N|To De
 A In Time, All Will Be Revealed|QID|27342|M|57.40,18.91|Z|Ruins of Gilneas|N|From Deathstalker Commander Belmont.|
 A Losing Ground|QID|27333|M|57.48,18.28|Z|Ruins of Gilneas|N|From Forward Commander Onslaught.|
 A The F.C.D.|QID|27345|M|57.48,18.28|Z|Ruins of Gilneas|N|From Forward Commander Onslaught.|
-; f Forsaken Forward Command|QID|27345|M|57.29,17.84|Z|Ruins of Gilneas|N|At Bat Handler Doomair.|
+f Forsaken Forward Command|M|57.29,17.84|Z|Ruins of Gilneas|N|At Bat Handler Doomair.|
 r Sell junk, repair/restock.|QID|27342|M|57.62,19.66|N|At Provisioner Angelus.|Z|Ruins of Gilneas|
 
 C In Time, All Will Be Revealed|QID|27342|M|68.33,29.60|Z|Ruins of Gilneas|N|Loot Wolfsbane as you come across it.|
@@ -189,7 +189,7 @@ C Rise, Godfrey|QID|27472|M|51.90,64.92|N|Stand there and wait as Godfrey is ris
 T Rise, Godfrey|QID|27472|M|51.90,65.02|N|To Lady Sylvanas Windrunner.|
 A Breaking the Barrier|QID|27474|M|51.88,64.99|N|From Lady Sylvanas Windrunner.|
 A Unyielding Servitors|QID|27475|M|51.89,64.71|N|From Daschla.|
-; f The Forsaken Front|QID|27475|M|50.91,63.66|N|At Steven Stutzka.|
+f The Forsaken Front|M|50.91,63.66|N|At Steven Stutzka.|
 
 C Unyielding Servitors|QID|27475|M|60.52,63.75|N|Kill and loot Elemental Servitors.|S|
 L Level 19|QID|27475|LVL|19|N|You should be around level 19 by this point.|

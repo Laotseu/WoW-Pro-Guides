@@ -4,6 +4,11 @@
 -- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
 
 -- URL: http://wow-pro.com/wiki/source_code_teldrassil
+-- Date: 2012-10-09 15:35
+-- Who: Ludovicus Maior
+-- Log: Added trial monk quests.  Coords are not correct.
+
+-- URL: http://wow-pro.com/node/3204/revisions/24688/view
 -- Date: 2011-07-23 02:55
 -- Who: Crackerhead22
 -- Log: Changed "A Healer's Touch" quest to "Rejuvenating Touch", fixed the note for it. Found by G Visje.
@@ -94,6 +99,7 @@ A Forbidden Sigil|QID|26841|PRE|28714|C|Mage|M|58.07,38.86|N|From Ilthalaine.|R|
 A Simple Sigil|QID|3116|PRE|28714|C|Warrior|M|58.07,38.86|N|From Ilthalaine.|R|Night Elf|
 A Hallowed Sigil|QID|3119|PRE|28714|C|Priest|M|58.07,38.86|N|From Ilthalaine.|R|Night Elf|
 A Encrypted Sigil|QID|3118|PRE|28714|C|Rogue|M|58.07,38.86|N|From Ilthalaine.|R|Night Elf|
+A Calligraphed Sigil|QID|31168|PRE|28714|C|Monk|M|58.07,38.86|N|From Ilthalaine.|R|Night Elf|
 
 T Etched Sigil|QID|3117|M|58.82,35.86|C|Hunter|N|To Ayanna Everstride.|R|Night Elf|
 T Verdant Sigil|QID|3120|C|Druid|M|58.2,34.8|N|To Mardant Strongoak.|R|Night Elf|
@@ -101,27 +107,31 @@ T Forbidden Sigil|QID|26841|C|Mage|M|58.4,35.6|N|To Rhyanda.|R|Night Elf|
 T Simple Sigil|QID|3116|C|Warrior|M|58.8,33.8|N|To Alyissia.|R|Night Elf|
 T Hallowed Sigil|QID|3119|C|Priest|M|58.4,35.6|N|To Shanda.|R|Night Elf|
 T Encrypted Sigil|QID|3118|C|Rogue|M|58.8,33.9|N|To Frahun Shadewhisper.|R|Night Elf|
+T Calligraphed Sigil|QID|31168|C|Monk|M|58.8,33.9|N|To Laoxi.|R|Night Elf|
 
 A A Woodsman's Training|QID|26947|PRE|3117|C|Hunter|M|58.82,35.86|N|From Ayanna Everstride.|R|Night Elf|
 A Rejuvenating Touch|QID|26948|PRE|3120|C|Druid|M|58.2,34.8|N|From Mardant Strongoak.|R|Night Elf|
 A Arcane Missles|QID|26940|PRE|26841|C|Mage|M|58.4,35.6|N|From Rhyanda.|R|Night Elf|
 A Learning New Techniques|QID|26945|PRE|3116|C|Warrior|M|58.8,33.8|N|From Alyissia.|R|Night Elf|
 A Healing for the Wounded|QID|26949|PRE|3119|C|Priest|M|58.4,35.6|N|From Shanda.|R|Night Elf|
-A A Rogue's Advnatage|QID|26946|PRE|3118|C|Rogue|M|58.8,33.9|N|From Frahun Shadewhisper.|R|Night Elf|
+A A Rogue's Advantage|QID|26946|PRE|3118|C|Rogue|M|58.8,33.9|N|From Frahun Shadewhisper.|R|Night Elf|
+A The Art of the Monk|QID|31169|PRE|31168|C|Monk|M|58.8,33.9|N|From Laoxi.|R|Night Elf|
 
 C A Woodsman's Training|QID|26947|C|Hunter|M|58.83,35.82|N|Train Steady Shot and practice it 5 times on a practice dummy.|R|Night Elf|
 C Rejuvenating Touch|QID|26948|C|Druid|N|Train Rejuvenation. Use it to heal a Wounded Sentinel.|R|Night Elf|
 C Arcane Missles|QID|26940|C|Mage|M|58.83,35.82|N|Train Arcane Missles. Use it 5 times on Training Dummy.|R|Night Elf|
 C Learning New Techniques|QID|26945|C|Warrior|M|58.2,34.8|N|Train Charge. Use it 5 times on Training Dummy.|R|Night Elf|
 C Healing for the Wounded|QID|26949|C|Priest|N|From Shanda.|N|Train Flash Heal. Use it to heal 5 Wounded Sentinels.|R|Night Elf|
-C A Rogue's Advnatage|QID|26946|C|Rogue|M|58.83,35.82|N|Train Eviscerate. Use it 5 times on Training Dummy.|R|Night Elf|
+C A Rogue's Advantage|QID|26946|C|Rogue|M|58.83,35.82|N|Train Eviscerate. Use it 5 times on Training Dummy.|R|Night Elf|
+C The Art of the Monk|QID|31169|C|Monk|M|58.83,35.82|N|Use Tiger Palm on Training Dummy.|R|Night Elf|
 
 T A Woodsman's Training|QID|26947|C|Hunter|M|58.83,35.82|N|To Ayanna Everstride.|R|Night Elf|
 T Rejuvenating Touch|QID|26948|C|Druid|M|58.2,34.8|N|To Mardant Strongoak.|R|Night Elf|
 T Arcane Missles|QID|26940|C|Mage|M|58.4,35.6|N|To Rhyanda.|R|Night Elf|
 T Learning New Techniques|QID|26945|C|Warrior|M|58.8,33.8|N|To Alyissia.|R|Night Elf|
 T Healing for the Wounded|QID|26949|C|Priest|M|58.4,35.6|N|To Shanda.|R|Night Elf|
-T A Rogue's Advnatage|QID|26946|C|Rogue|M|58.8,33.9|N|To Frahun Shadewhisper.|R|Night Elf|
+T A Rogue's Advantage|QID|26946|C|Rogue|M|58.8,33.9|N|To Frahun Shadewhisper.|R|Night Elf|
+T The Art of the Monk|QID|31169|C|Monk|M|58.8,33.9|N|To Laoxi.|R|Night Elf|
 
 A Priestess of the Moon|QID|28723|M|58.85,35.75|N|From Ayanna Everstride.|R|Night Elf|
 T Priestess of the Moon|QID|28723|M|57.21,33.33|N|To Dentaria Silverglade.|R|Night Elf|
@@ -169,7 +179,7 @@ T Zenn's Bidding|QID|488|M|59.46,49.19|N|To Zenn Foulhoof.|
 A Seek Redemption!|QID|489|M|55.83,50.40|N|From Syral Bladeleaf.|
 A The Emerald Dreamcatcher|QID|2438|M|55.58,50.06|N|From Tallonkai Swiftroot.|
 
-; f Dolanaar|QID|2438|M|55.46,50.41|N|At Fidelio.|
+f Dolanaar|QID|2438|M|55.46,50.41|N|At Fidelio.|
 
 A A Troubling Breeze|QID|475|M|55.70,51.94|N|From Athridas Bearmantle.|
 T Dolanaar Delivery|QID|2159|M|55.40,52.24|N|To Innkeeper Keldamyr.|
@@ -336,7 +346,7 @@ T Home of the Kaldorei|QID|14039|M|43.15,77.90|Z|Darnassus|N|Take the ramp up, t
 A Breaking Waves of Change|QID|26383|M|43.88,76.22|Z|Darnassus|N|From Sentinel Cordressa Briarbow.|
 
 R Rut'theran Village|QID|26383|M|36.17,50.08|Z|Darnassus|N|Run through the pink glow near the Darnassus flight master.|
-; f Rut'theran Village|QID|26383|M|55.36,88.51|N|At Vesprystus.|
+f Rut'theran Village|QID|26383|M|55.36,88.51|N|At Vesprystus.|
 
 F Lor'danel|QID|26383|M|55.36,88.51|N|Talk to Vesprystus, and ask to be sent to Lor'danel.|
 T Breaking Waves of Change|QID|26383|M|51.8,18|Z|Darkshore|N|To Dentaria Silverglade.|

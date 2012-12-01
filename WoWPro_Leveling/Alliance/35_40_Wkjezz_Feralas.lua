@@ -30,7 +30,7 @@ WoWPro.Leveling:RegisterGuide('WkjFer3540', 'Feralas', 'WKjezz', '35', '40', 'Wk
 return [[
 
 R Feralas|QID|14410|M|42.81,97.92|Z|Desolace|N|Run to Feralas.|
-; f Dreamer's Rest|QID|14410|M|50.21,16.72|N|At Selor.|
+f Dreamer's Rest|M|50.21,16.72|N|At Selor.|
 h Dreamer's Rest|QID|14410|M|51.02,17.97|N|At Andoril.|
 
 T The Wilds of Feralas|QID|14410|M|50.6,17|N|To Telaron Windflight.|
@@ -63,7 +63,7 @@ C Sealing the Dream|QID|25398|U|52576|M|51.26,10.87|N|Head up to the portal and 
 T Sealing the Dream|QID|25398|M|50.66,17.20|N|To Telaron Windflight.|
 A General Shandris Feathermoon|QID|26402|M|50.66,17.20|N|From Telaron Windflight.|
 A The Mark of Quality|QID|25449|M|45.31,41.48|N|From Pratt McGrubben.|
-; f Feathermoon Stronghold|QID|26402|M|46.80,45.35|N|Get the Flight Path at irela Moonfeather.|
+f Feathermoon Stronghold|M|46.80,45.35|N|Get the Flight Path at irela Moonfeather.|
 h Feathermoon Stronghold|QID|26402|M|46.14,45.24|N|At Innkeeper Shyria.|
 T General Shandris Feathermoon|QID|26402|M|46.05,49.09|N|To Shandris Feathermoon, she is at the top of the building.|
 
@@ -93,7 +93,7 @@ T The Mark of Quality|QID|25449|M|45.36,41.29|N|To Pratt McGrubben.|
 A Improved Quality|QID|25450|M|45.36,41.50|N|From Pratt McGrubben.|
 T Still With The Zapped Giants|QID|25465|M|48.67,44.83|N|To Zorbin Fandazzle.|
 T Even More Fuel for the Zapping|QID|25466|M|48.67,44.83|N|To Zorbin Fandazzle.|
-; f Tower of Estulan|QID|25463|M|57.08,53.88|N|At Aryenda.|
+f Tower of Estulan|M|57.08,53.88|N|At Aryenda.|
 T Report to Silvia|QID|25463|M|56.85,55.05|N|To Silvia.|
 
 A The Gordunni Threat|QID|25400|M|56.85,55.05|N|From Silvia.|
@@ -164,7 +164,7 @@ H Feathermoon Stronghold|QID|25333|N|Hearth back to Feathermoon.|
 F Tower of Estulan|QID|25333|N|Catch a flight path to the Tower.|
 T Might of the Sentinels|QID|25333|M|56.89,54.98|N|To Silvia.|
 T Adella's Covert Camp|QID|26574|M|77.21,56.53|N|To Adella it's a long run, be careful of the Horde outpost.|
-; f Shadebough|QID|25426|N|Get the flight path.|
+f Shadebough|N|Get the flight path.|
 
 A War on the Woodpaw|QID|25426|M|77.21,56.53|N|From Adella.|
 A It's Not "Ogre" Yet|QID|25432|M|77.21,56.53|N|From Adella.|

@@ -43,22 +43,22 @@ WoWPro.Leveling:RegisterGuide('CraSwa5254', 'Swamp of Sorrows', 'Crackerhead22',
 return [[
 
 A Maliciously Delicious|QID|27587|M|73.07,14.74|N|From Trade Baron Silversnap.|
-; f Bogpaddle|QID|27587|M|72.09,12.05|N|At Skeezie.|
+f Bogpaddle|M|72.09,12.05|N|At Skeezie.|
 h Bogpaddle|QID|27587|M|71.75,13.98|N|At Cap'n Geech.|
 A Drinks on the Rocks|QID|27592|M|73.58,9.36|N|From Brono Goodgroove.|
 C Drinks on the Rocks|QID|27592|M|86.32,14.40;73.08,4.86|N|Kill and loot Silt Crawlers.|S|
 C Maliciously Delicious|QID|27587|U|62795|M|86.32,14.40;73.08,4.86|N|Should find the makuras you need to kill and loot between these two points.|
 C Drinks on the Rocks|QID|27592|M|86.32,14.40;73.08,4.86|N|Kill and loot Silt Crawlers.|US|
 T Drinks on the Rocks|QID|27592|M|73.75,9.03|N|To Brono Goodgroove.|
-T Maliciously Delicious|QID|27587|M|73.08,14.8|N|To Trade Baron Silversnap. After turning in this quest, you can grab more swim tonics from Trade Baron Silversnap.|
+T Maliciously Delicious|QID|27587|M|73.08,14.64|N|To Trade Baron Silversnap. After turning in this quest, you can grab more swim tonics from Trade Baron Silversnap.|
 
-A Mostly Harmless|QID|27536|M|73.08,14.8|N|From Trade Baron Silversnap.|
-A Croc-Out|QID|27656|M|73.08,14.8|N|From Trade Baron Silversnap.|
+A Mostly Harmless|QID|27536|M|73.05,14.65|N|From Trade Baron Silversnap.|
+A Croc-Out|QID|27656|M|73.05,14.65|N|From Trade Baron Silversnap.|
 A Tastes Like Strider|QID|27663|M|74.23,12.40|N|From Pierre Fishflay.|
 C Mostly Harmless|QID|27536|S|M|81.72,24.60|N|They are all over the area, they sparkle and are fairly easy to spot. They can blow up.|
 C Croc-Out|QID|27656|M|78.56,26.91|S|N|Kill any Sawtooth Crocolisks you see.|
-C Tastes Like Strider|QID|27663|N|The Swampstriders are green/blue birds, kill and loot them.|
-C Croc-Out|QID|27656|US|N|Kill any Sawtooth Crocolisks you see.|
+C Tastes Like Strider|QID|27663|M|83.94,30.07|N|The Swampstriders are green/blue birds, kill and loot them.|
+C Croc-Out|QID|27656|M|78.56,26.91|US|N|Kill any Sawtooth Crocolisks you see.|
 C Mostly Harmless|QID|27536|US|M|81.72,24.60|N|They are all over the area, they sparkle and are fairly easy to spot. They can blow up.|
 T Tastes Like Strider|QID|27663|M|74.20,12.46|N|To Pierre Fishflay.|
 T Mostly Harmless|QID|27536|M|73.02,14.67|N|To Trade Baron Silversnap.|
@@ -100,7 +100,7 @@ A Legends of the Sunken Temple|QID|27704|M|53.99,79.65|N|From Lord Itharius.|
 C Legends of the Sunken Temple|QID|27704|NC|M|73.97,44.38|N|Just keep going the only way you can. You will eventually end up in the Hall of Masks.|
 T Legends of the Sunken Temple|QID|27704|M|73.97,44.38|N|(UI Alert)|
 A Step One: The Priestess|QID|27705|M|73.97,44.38|N|(UI Alert)|
-C Step One: The Priestess|QID|27705|M|74.86,47.09;73.04,46.29;72.65,48.43|N|Follow the waypoints to find the room where Priestess Udum'bra is.|
+C Step One: The Priestess|QID|27705|M|74.86,47.09;72.65,48.43;73.04,46.29|N|Follow the waypoints to find the room where Priestess Udum'bra is.|
 T Step One: The Priestess|QID|27705|M|74.73,49.25|N|(UI Alert)|
 A Step Two: The Bloodletter|QID|27768|M|74.73,49.25|N|(UI Alert)|
 C Step Two: The Bloodletter|QID|27768|M|73.04,46.29;74.85,46.99;77.19,47.94;77.53,46.17|N|Follow the waypoints to find the room where Gomora the Bloodletter is.|
@@ -120,7 +120,7 @@ A Orcs and Humans|QID|27821|M|68.04,36.39|N|From Joanna Blueheart.|
 A Lumbering Oafs|QID|27822|M|68.04,36.39|N|From Joanna Blueheart.|
 A The Lost Ones|QID|27860|M|69.87,36.71|N|From Holaaru.|
 A Draenethyst Crystals|QID|27840|M|69.87,36.71|N|From Holaaru.|
-; f Marshtide Watch|QID|27840|M|69.98,38.34|N|At Paola Baldwin.|
+f Marshtide Watch|M|69.98,38.34|N|At Paola Baldwin.|
 
 r Sell junk, repair/restock.|QID|27860|M|69.41,35|N|At Hull Forgehammer.|
 C The Lost Ones|QID|27860|S|M|56.88,31.66|N|Kill any Lost Ones come across.|
@@ -156,7 +156,7 @@ T Assault on Stonard|QID|27849|M|68.03,36.21|N|To Joanna Blueheart.|
 T Cutting Supply|QID|27851|M|68.03,36.21|N|To Joanna Blueheart.|
 R The Harborage|QID|27918|M|26.82,33.57|N|Time to run to The Harborage.|
 
-; f The Harborage|QID|27851|M|30.78,34.74|N|At Yedrin.|
+f The Harborage|M|30.78,34.74|N|At Yedrin.|
 T The Harborage|QID|27918|M|26.94,33.77|N|To Anchorite Avuun.|
 A Prayerblossom|QID|27875|M|26.94,33.77|N|From Anchorite Avuun.|
 A Secrets of the Mire|QID|27876|M|26.94,33.77|N|From Anchorite Avuun.|

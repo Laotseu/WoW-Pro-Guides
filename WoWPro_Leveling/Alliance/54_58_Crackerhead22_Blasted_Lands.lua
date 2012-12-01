@@ -68,7 +68,7 @@ A Minor Distractions|QID|25710|M|60.11,13.67|N|From Quartermaster Lungertz.|
 h Nethergarde Keep|QID|25715|M|60.72,14.13|N|At Mama Morton.|
 T Onward to the Blasted Lands|QID|27919|M|61.53,18.46|N|To Enohar Thunderbrew.|O|
 A A Closer Look|QID|25715|M|61.53,18.46|N|From Enohar Thunderbrew.|
-; f Nethergarde Keep|QID|25715|M|61.21,21.75|N|At Alexandra Constantine.|
+f Nethergarde Keep|M|61.21,21.75|N|At Alexandra Constantine.|
 C Minor Distractions|QID|25710|M|62.72,23.43|N|They are stealthed, and usually can be found by the cannons.|
 C A Closer Look|QID|25715|NC|M|68.91,28.08|N|Run near the ships for completion.|
 T A Closer Look|QID|25715|M|61.51,18.52|N|To Enohar Thunderbrew.|
@@ -191,7 +191,7 @@ R Surwich|QID|26175|M|53.61,41.96;62.98,40;68.22,45.45;71.95,56.88;66.28,65.47;5
 T Surwich|QID|26175|M|46.41,87.09|N|To Mayor Charlton Connisport.|
 
 A Wormthorn's Dream|QID|26184|M|46.41,87.09|N|From Mayor Charlton Connisport.|
-; f Surwich|QID|26184|M|47.10,89.20|N|At Graham McAllister.|
+f Surwich|M|47.10,89.20|N|At Graham McAllister.|
 h Surwich|QID|26184|M|44.42,87.70|N|Set your hearth with Donna Berrymore.|
 C Wormthorn's Dream|QID|26184|S|M|38.77,70|N|Kill any Doomguard Destoryer, Dreadlord Defilier, and Corrupted Darkwood Treant you see.|
 K Wormthorn's Dream|QID|26184|QO|Felspore Bog Lord slain: 3/3|M|38.77,70;34.6,75.9|N|Go here to kill the Felspore Bog Lords.|

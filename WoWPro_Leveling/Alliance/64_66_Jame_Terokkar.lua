@@ -8,6 +8,7 @@
 -- Who: Ludovicus Maior
 -- Log: Add coords for [ Taken in the Night], [Auchindoun] and [Skywing].
 
+-- URL: http://wow-pro.com/node/3277/revisions/24836/view
 -- Date: 2011-12-05 13:28
 -- Who: Crackerhead22
 -- Log: 4.3 updates
@@ -132,7 +133,7 @@ A Unruly Neighbors |QID|9998|M|58.3,54.8|N|From Bertelm.|
 A Timber Worg Tails |QID|10016|M|58.3,54.8|N|From Bertelm.|
 T The Fate of Tuurem |QID|9793|M|58.5,53.6|N|To Andarl.|
 A Magical Disturbances |QID|10026|M|58.5,53.6|N|From Andarl.|
-; f Allerian Stronghold|QID|10021|N|Get the flight path.|M|59.45,55.40|
+f Allerian Stronghold|N|Get the flight path.|M|59.45,55.40|
 
 N From now on... |QID|10016|N|From now on, kill Timber Worgs, Timber Alphas, Warp Stalkers, and look for Olemba Seeds on the ground.|
 C Thin the Flock|N|Kill mobs for this quest.|QID|10869|S|

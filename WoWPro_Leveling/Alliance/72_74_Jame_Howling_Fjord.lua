@@ -42,7 +42,7 @@ return [[
 A Hell Has Frozen Over... |QID|11228|M|61.1,62.7|N|From Macalroy.|
 T Hell Has Frozen Over... |QID|11228|M|60.5,61.1|N|To Vice Admiral Keller.|
 A If Valgarde Falls... |QID|11243|M|60.5,61.1|N|From Vice Admiral Keller.|
-; f Valgarde |QID|11243|N|Get the flight path for Valgarde Keep.|M|59.79,63.24|
+f Valgarde |N|Get the flight path for Valgarde Keep.|M|59.79,63.24|
 h Valgarde |QID|11243|N|Set your hearthstone to Valgarde Keep.|M|58.39,62.46|
 C If Valgarde Falls... |QID|11243|N|Go to the north side of the village and kill the mobs for this quest. |M|58.89,59.51|
 T If Valgarde Falls... |QID|11243|M|60.5,61.1|N|To Vice Admiral Keller.|
@@ -101,6 +101,7 @@ A Locating the Mechanism |QID|11426|M|60.1,62.4|N|From Guard Captain Zorek.|
 T Guided by Honor |QID|11289|M|59.8,62.4|N|To Lord Irulon Trueblade.|
 C A The Echo of Ymiron |QID|11343|U|33637|N|Use the Incense Burner inside this house and two Vrykuls will show up to have a conversation. Wait for the quest complete message, then cancel the buff. |M|60.15,50.84|
 C Locating the Mechanism |QID|11426|N|Kill a Dragonflayer Harpooner and loot the Harpoon Control Mechanism. |M|60.73,50.90|
+; The quest 'Fresh Legs' has 'legs' lower-cased so it will not auto-accept, as it is optional.
 T Fresh legs |QID|11251|N|To Defender Mordun. This quest is optional as Defender Mordun is inside Utgarde Keep now.|M|57.28,46.75|
 
 T A The Echo of Ymiron |QID|11343|M|59.8,61.5|N|To Thoralius the Wise.|
@@ -184,7 +185,7 @@ A There Exists No Honor Among Birds |QID|11470|M|75.3,65.0|N|From Hidalgo the Ma
 C There Exists No Honor Among Birds |QID|11470|U|34124|N|Go to the Vrykul Hawk Roost and use your Trained Rock Falcon. Use the first ability to pick up eggs, the second for a speed boost, and the third to stun Hawk Matriarchs if they attack you. Collect 8 eggs, then cancel the buff. |M|76.60,67.60|
 T There Exists No Honor Among Birds |QID|11470|M|75.3,65.0|N|To Hidalgo the Master Falconer.|
 F Westguard Keep |QID|11291|N|Talk to Walt and tell him you're ready to go. This will fly you to Westguard Keep. |M|75.04,65.51|
-; f Westguard Keep |QID|11291|N|Get the flight path for Westguard Keep. |M|31.26,43.98|
+f Westguard Keep |N|Get the flight path for Westguard Keep. |M|31.26,43.98|
 T To Westguard Keep! |QID|11291|M|28.8,44.1|N|To Captain Adams.|
 T News From the East |QID|11501|N|To Captain Adams.|
 
@@ -363,7 +364,7 @@ T I'll Try Anything! |QID|11329|M|60.3,18.7|N|To Christopher Sloan.|
 
 A The One That Got Away |QID|11410|M|60.3,18.7|N|From Christopher Sloan.|
 A The Yeti Next Door |QID|11284|M|60.2,15.6|N|From Foreman Colbey.|
-; f Fort Wildervar |QID|11406|N|Get the flight path for Fort Wildervar. |M|60.05,16.11|
+f Fort Wildervar |N|Get the flight path for Fort Wildervar. |M|60.05,16.11|
 A The Enigmatic Frost Nymphs |QID|11302|M|61.8,17.2|N|From Lieutenant Maeve.|
 A The Book of Runes |QID|11346|M|62.3,17.2|N|From Prospector Belvar.|
 T Everything Must Be Ready |QID|11406|M|62.6,16.8|N|To Gil Grisert.|

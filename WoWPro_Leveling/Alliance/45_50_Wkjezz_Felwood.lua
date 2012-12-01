@@ -51,7 +51,7 @@ T Hero's Call: Felwood!|QID|28543|O|M|51.20,80.49|N|To Tenell Leafrunner.|
 A The Corruption of the Jadefire|QID|27997|M|51.20,80.49|N|From Tenell Leafrunner.|
 A Culling the Corrupted|QID|28148|M|50.92,80.21|N|From Taronn Redfeather.|
 A A Talking Totem|QID|28100|M|51.40,80.55|N|From Grazle.|
-; f Emerald Sanctuary|QID|28100|M|51.49,80.80|N|At Gorrim.|
+f Emerald Sanctuary|M|51.49,80.80|N|At Gorrim.|
 T A Talking Totem|QID|28100|M|51.50,83.63|N|To the Totem of Ruumbo.|
 
 A Ruumbo Demands Justice|QID|27994|M|51.50,83.63|N|From the Totem of Ruumbo.|
@@ -98,7 +98,7 @@ A Jaedenar Awaits|QID|28152|M|42.01,71.77|N|From Eridan Bluewind.|
 C Open Their Eyes|QID|28288|U|63395|M|42.19,79.05|N|Taste the Rainbow.|
 T Open Their Eyes|QID|28288|M|41.90,71.98|N|To Arcanist Delaris.|
 
-; f Wildheart Point|QID|28152|M|44.29,61.89|N|At Chyella Hushglade.|
+f Wildheart Point|M|44.29,61.89|N|At Chyella Hushglade.|
 h Wildheart Point|QID|28152|M|43.98,61.94|N|At Innkeeper Teenycaugh.|
 T Jaedenar Awaits|QID|28152|M|43.96,61.90|N|To Greta Mosshoof.|
 A Crying Violet|QID|28116|M|43.96,61.90|N|From Greta Mosshoof.|
@@ -161,7 +161,7 @@ A Whisperwind Grove|QID|28306|M|41.28,49.89|N|From Kelnir Leafsong.|
 T Whisperwind Grove|QID|28306|M|43.29,30.43|N|Follow the path north to Tender Puregrove.|
 A Running their Course|QID|28360|M|43.29,30.43|N|From Tender Puregrove.|
 A Squirrely Clean|QID|28361|M|43.31,30.36|N|From Tender Puregrove.|
-; f Whisperwind Grove|QID|28361|M|43.61,28.74|N|At Hanah Southsong.|
+f Whisperwind Grove|M|43.61,28.74|N|At Hanah Southsong.|
 r Repair/Restock|M|43.13,28.59|N|At Ciana.|QID|28358|
 A Hunting the Damned|QID|28358|M|44.01,27.89|N|From Hurak Wildhorn.|
 A The Core of Kroshius|QID|28359|M|43.98,27.89|N|From Hurak Wildhorn.|
@@ -240,7 +240,7 @@ r Repair/Restock|CC|M|43.07,28.65|N|At Ciana.|QID|28381|
 A The Denmother|QID|28381|M|44.34,28.11|N|From James Hallow.|
 
 F Talonbranch Glade|QID|28381|N|Right click and talk to the Flightmaster. She will fly you there if you use the speech bubble option.|M|43.61,28.69|
-; f Talonbranch Glade|QID|28381|M|60.57,25.32|N|At Mishellena.|
+f Talonbranch Glade|M|60.57,25.32|N|At Mishellena.|
 T The Denmother|QID|28381|M|61.80,26.75|N|To Denmother Ulrica.|
 A Enemy at our Roots|QID|28382|M|61.80,26.75|N|From Denmother Ulrica.|
 A Wisps of the Woods|QID|28383|M|61.87,26.66|N|From Lyros Swiftwind.|

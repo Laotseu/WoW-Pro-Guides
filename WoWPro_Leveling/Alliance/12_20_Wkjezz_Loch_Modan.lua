@@ -120,7 +120,7 @@ T A Decisive Strike|QID|26148|M|23.40,75.01|N|To Captain Rugelfuss.|
 A Onward to Thelsamar|QID|26176|M|23.37,75.01|N|From Captain Rugelfuss.|
 T Bigger and Uglier|QID|26147|M|23.34,75.01|N|To Mountaineer Wallbang.|
 R Thelsamar|QID|26176|M|35,46.6|N|Follow the road north to Thelsamar.|
-; f Thelsamar|QID|26176|M|33.93,50.95|N|At Thorgum Borrelson.|
+f Thelsamar|M|33.93,50.95|N|At Thorgum Borrelson.|
 T Onward to Thelsamar|QID|26176|M|35,46.6|N|To Mountaineer Kadrell.|
 
 A Out of Gnoll-where|QID|26842|M|35.09,46.41|N|From Mountaineer Kadrell.|

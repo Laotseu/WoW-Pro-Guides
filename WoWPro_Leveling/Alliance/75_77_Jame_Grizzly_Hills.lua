@@ -71,7 +71,7 @@
 WoWPro.Leveling:RegisterGuide("JamGriA7577", "Grizzly Hills", "Jame", "75", "77", "ScoZul7778", "Alliance", function()
 return [[
 
-; f Amberpine Lodge |QID|12511|M|31.33,59.16|N|Grab the flightpoint at Vana Grey.|
+f Amberpine Lodge |M|31.33,59.16|N|Grab the flightpoint at Vana Grey.|
 h Amberpine Lodge |QID|12511|M|31.97,60.22|N|Set your hearth at Amberpine Lodge with Jenniger Bell.|
 
 T The Hills Have Us |QID|12511|N|To Lieutenant Dumont in Amberpine Lodge.|M|31.89,60.15|O|
@@ -277,7 +277,7 @@ A Hollowstone Mine |QID|12158|M|59.4,26.0|N|From Captain Gryan Stoutmantle.|
 A Softening the Blow |QID|11998|M|59.4,26.0|N|From Captain Gryan Stoutmantle.|
 A Mounting Up |QID|12414|N|From Squire Percy.|M|59.13,26.63|N|From Squire Percy.|
 
-; f Westfall Brigade Encampment |QID|12414|N|Get the flight point at Samuel Clearbook.|M|59.8,26.6|
+f Westfall Brigade Encampment |N|Get the flight point at Samuel Clearbook.|M|59.8,26.6|
 l Get 5 Wild Carrots|QID|12414|L|37707 5|N|In the field south of the camp.|M|56.73,30.03|
 C Mounting Up |QID|12414|U|37708|N|Target an Highland Mustang, use the [Stick] and bring the Mustang back to Squire Percy.|M|59.13,26.63|
 T Mounting Up |QID|12414|N|To Squire Percy.|M|59.13,26.63|

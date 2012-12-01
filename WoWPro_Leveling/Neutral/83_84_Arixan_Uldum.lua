@@ -131,10 +131,10 @@ A Smoke in Their Eyes|QID|27923|M|59.64,72.05|N|From Prince Nadun.|US|
 A Budd's Plan|QID|27924|M|59.71,72.03|N|From Budd.|
 
 C Smoke in Their Eyes|QID|27923|U|63027|M|62.12,73.98|N|Set bales of hay on fire.|S|NC|
-C Budd's Plan|QID|27924|M|60.91,74.08|N|Kill Neferset Denizens and Neferset Sentinels for Armor Pieces or find them on ground.|S|
+C Budd's Plan|QID|27924|M|60.91,74.08|N|Loot the Armor pieces from the tables.  You can also find them by killing Neferset Denizens and Neferset Sentinels.|S|NC|
 l Neferset Key|QID|28105|L|62817|M|59.96,73.92|N|Kill Kavem and loot the Neferset Key.|
 C Smoke in Their Eyes|QID|27923|U|63027|M|62.12,73.98|N|Set bales of hay on fire.|US|NC|
-C Budd's Plan|QID|27924|M|60.91,74.08|N|Kill Neferset Denizens and Neferset Sentinels for Armor Pieces or find them on ground.|US|
+C Budd's Plan|QID|27924|M|60.91,74.08|N|Kill Neferset Denizens and Neferset Sentinels for Armor Pieces or find them on ground.|US|NC|
 
 T Budd's Plan|QID|27924|M|59.68,72.03|N|To Budd.|
 T Smoke in Their Eyes|QID|27923|M|59.65,72.05|N|To Prince Nadun.|S|
@@ -149,7 +149,7 @@ A Impending Retribution|QID|28134|M|54.90,32.84|N|From King Phaoris.|
 h Ramkahen|QID|28134|M|54.73,32.94|N|At Kazemde.|
 
 ; Flight plans Ramkahen, Oasis of Vir'sar and Schnottz's Landing are showing as already known when above is followed.
-; f Ramkahen|QID|28141|M|56.18,33.66|N|At Kurzel.|
+f Ramkahen|M|56.18,33.66|N|At Kurzel.|
 
 C Speak with Sun Priest Asaris|QID|28134|M|52.98,27.78|QO|Speak with Sun Priest Asaris: 1/1|N|Speak to Sun Priest Asaris for Impending Retribution quest.|NC|
 
@@ -229,6 +229,7 @@ T By the Light of the Stars|QID|27549|M|64.48,28.05|N|To Harrison Jones, then si
 A Tipping the Balance|QID|27431|M|64.49,27.98|N|From Harrison Jones.|
 C Tipping the Balance|QID|27431|M|64.41,27.32|N|Talk to Harrison and click 'Ask "What can I do to help?"', then sit back and watch the cinematic.|NC|
 T Tipping the Balance|QID|27431|M|64.50,27.99|N|To Harrison Jones.|
+
 A After the Fall|QID|27624|M|64.50,27.99|N|From Harrison Jones.|
 A Just A Fancy Cockroach|QID|27627|RANK|2|M|63.77,27.26|N|Kill a Scarab to get this quest.|
 
@@ -252,7 +253,7 @@ T Just A Fancy Cockroach|QID|27627|RANK|2|M|63.2,33.1|N|(UI Alert)|
 T After the Fall|QID|27624|M|64.47,28.02|N|To Harrison Jones.|
 
 A Do the Honors|QID|27669|M|64.47,28.02|N|From Harrison Jones.|
-C Do the Honors|QID|27669|U|62054|M|64.48,31.04|N|Use the Orbs of the Stars, then sit back and watch the cinematic. Once this has finished, you'll be teleported back outside.|NC|
+C Do the Honors|QID|27669|U|62054|M|64.48,31.04|N|Use the Orbs of the Stars, then sit back and watch the cinematic.  Once this has finished, you'll be teleported back outside.|NC|
 T Do the Honors|QID|27669|M|63.90,33.90|N|To Harrison Jones.|
 
 A That Gleam in his Eye|QID|27899|M|54.29,35.23|N|From Adarrah.|
@@ -260,9 +261,9 @@ T Al'Akir's Vengeance|QID|28135|M|45.23,37.92|N|To Prince Nadun.|
 
 A Minions of Al'Akir|QID|27520|M|45.23,37.92|N|From Prince Nadun.|RANK|2|
 A Under the Choking Sands|QID|27519|M|45.28,37.84|N|From General Ammantep.|S|
-
 A The Prophet Hadassi|QID|27595|M|45.28,37.84|N|From General Ammantep.|
 A Under the Choking Sands|QID|27519|M|45.28,37.84|N|From General Ammantep.|US|
+
 C Under the Choking Sands|QID|27519|M|40.63,39.15|N|Right-click Oasis Survivors to rescue them.|S|NC|
 C Minions of Al'Akir|QID|27520|M|41.07,38.47|S|N|Kill Scions of Al'Akir.|RANK|2|
 T The Prophet Hadassi|QID|27595|M|40.03,40.57|N|To Prophet Hadassi.|
@@ -360,7 +361,7 @@ T The Element of Supplies|QID|28200|M|58.97,46.16|N|To Sergeant Mehat.|
 T Ploughshares to Swords|QID|28201|M|58.94,46.10|N|To High Commander Kamses.|
 A Ancient Weapons|QID|27839|M|58.94,46.10|N|From High Commander Kamses.|
 T Return to Camp|QID|28291|M|58.94,46.10|N|To High Commander Kamses.|
-T The Pit of Scales|QID|27738|N|To Vizier Tanotep.|
+T The Pit of Scales|QID|27738|M|56.70,54.65|N|To Vizier Tanotep.|
 
 A The High Council's Decision|QID|28533|M|56.70,54.65|N|From Vizier Tanotep.|
 C Ancient Weapons|QID|27839|U|62534|M|60.43,58.56|N|Right-click one of the white chests and loot an Ancient Tol'Vir Armaments.|NC|
@@ -451,6 +452,7 @@ T That Gleam in his Eye|QID|27899|M|43.94,57.10|N|To Harrison Jones. On top of t
 A I've Got This Guy|QID|27900|M|43.94,57.10|N|From Harrison Jones.|S|
 A They Don't Know What They've Got Here|QID|27901|M|43.94,57.10|N|From Harrison Jones.|
 A I've Got This Guy|QID|27900|M|43.94,57.10|N|From Harrison Jones.|US|
+
 C I've Got This Guy|QID|27900|M|45.63,54.43|N|Kill Schnottz Air Troopers.|S|
 A Efficient Excavations|QID|28132|U|62768|M|43.51,56.03|N|Kill Schnottz Air Officers until you get Efficient Excavations item. Use it to accept this quest.|T|Schnottz Air Officer|
 l Titan Device Components|QID|27901|M|43.47,55.93|L|62610 6|N|Look for Obelisk of the Sun Coffers and loot 6 Titan Device Components. You can find the keys to open those coffers on Schnottz Air Officers. |
@@ -507,6 +509,7 @@ C Fashionism|QID|27941|M|34.47,66.97|N|Look for Dead Troopers in the area, right
 C Idolatry|QID|27942|M|32.98,60.99|N|Loot Well-Preserved Idols. Contained in small sphynx statues on the ground.|US|
 
 T Fashionism|QID|27941|M|24.43,64.56|N|To Belloc Brightblade.|
+
 T Idolatry|QID|27942|M|24.45,64.11|N|To Commander Schnottz.|S|
 T Angered Spirits|QID|27943|M|24.45,64.11|N|From Commander Schnottz.|
 T Idolatry|QID|27942|M|24.45,64.11|N|To Commander Schnottz.|US|
@@ -645,7 +648,9 @@ T Three if by Air|QID|28622|M|44.86,67.39|N|To Brann Bronzebeard.|
 A The Coffer of Promise|QID|28633|M|44.86,67.39|N|From Brann Bronzebeard.|
 C The Coffer of Promise|QID|28633|M|44.97,67.36|N|Simply right-click the coffer of promise and loot the Titan Discs.|NC|
 T The Coffer of Promise|QID|28633|M|44.87,67.36|N|To Brann Bronzebeard.|
+
 A The Heart of the Matter|QID|28654|M|44.87,67.36|N|If you wish to do the Halls of Origination dungeon.|
+
 ]]
 
 end)

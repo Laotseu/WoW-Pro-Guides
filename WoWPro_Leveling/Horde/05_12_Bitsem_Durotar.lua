@@ -4,6 +4,11 @@
 -- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
 
 -- URL: http://wow-pro.com/wiki/source_code_durotar
+-- Date: 2012-10-08 19:43
+-- Who: Ludovicus Maior
+-- Log: Get rid of - in zone names.
+
+-- URL: http://wow-pro.com/node/3199/revisions/24660/view
 -- Date: 2011-07-05 05:42
 -- Who: Jiyambi
 -- Log: Added note to Young and Vicious which explains the bug with Swiftclaw and how to fix it.
@@ -133,7 +138,7 @@ return [[
 
 A Breaking the Chain|QID|25167|M|56.02,74.71|N|From Master Gadrin.|
 A Cleaning Up the Coastline|QID|25170|M|55.77,75.34|N|From Bom'bay.|
-; f Sen'jin Village|QID|25170|M|55.40,73.40|N|At Handler Marnlek.|N|Train Herbalism, Alchemy, Fishing or Riding if you wish.|
+f Sen'jin Village|M|55.40,73.40|N|At Handler Marnlek.|N|Train Herbalism, Alchemy, Fishing or Riding if you wish.|
 C Cleaning Up the Coastline|QID|25170|S|M|59.02,74.41|N|Kill 5 Pygmy Surf Crawlers for Crawler Mucus, while destroying 3 Northwatch Supply Crates and killing 10 Northwatch Lugs.|
 
 L Level 6|QID|25170|LVL|6|N|You should be around level 6 by this point.|
@@ -157,7 +162,7 @@ L Level 7|QID|25169|LVL|7|N|You should be around level 7 by this point.|
 
 T Purge the Valley|QID|25168|M|55.94,74.79|N|To Master Gadrin.|
 A Riding On|QID|25171|PRE|25168|M|55.94,74.79|N|From Master Gadrin.|
-; f Razor Hill|QID|25171|M|55.96,74.80;53.06,43.58|N|Train new skills, then talk to Raider Jhash for ride.|
+f Razor Hill|M|55.96,74.80;53.06,43.58|N|Train new skills, then talk to Raider Jhash for ride.|
 T Riding On|QID|25171|M|51.92,43.48|N|To Gar'Thok.|
 
 A From Bad to Worse|QID|25173|M|51.92,43.48|N|From Gar'Thok.|

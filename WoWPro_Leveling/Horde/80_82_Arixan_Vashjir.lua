@@ -128,7 +128,7 @@ A Good Deed Left Undone|QID|27685|M|46.50,46.76|Z|Kelp'thar Forest|N|From Rendel
 T Good Deed Left Undone|QID|27685|M|53.50,43.14|Z|Kelp'thar Forest|N|Find Adarrah on the east side of the Kelp Forest.|
 A Gimme Shelter!|QID|25587|M|53.50,43.14|Z|Kelp'thar Forest|N|From Adarrah.|
 
-; f Smuggler's Scar|QID|25587|M|56.24,31.23|Z|Kelp'thar Forest|N|Swim toward Smuggler's Scar a small cave just north of where you are. Grab the flight point|
+f Smuggler's Scar|M|56.24,31.23|Z|Kelp'thar Forest|N|Swim toward Smuggler's Scar a small cave just north of where you are. Grab the flight point|
 C Smuggler's Scar|QID|25587|NC|M|56.24,31.23|Z|Kelp'thar Forest|N|Go inside, until you reach the ground.|QO|Smuggler's Scar Scouted: 1/1|
 C Gimme Shelter!|QID|25587|M|53.67,34.32|Z|Kelp'thar Forest|N|Swim back out of the cave to signal Adarrah.|
 T Gimme Shelter!|QID|25587|M|57.09,28.87|Z|Kelp'thar Forest|N|Swim back into the cave and talk to Adarrah.|
@@ -255,7 +255,7 @@ C Rundown|QID|25221|U|54466|M|53.69,11.89;52,20|Z|Shimmering Expanse|N|Get on on
 T Rundown|QID|25221|M|53.28,33.03|Z|Shimmering Expanse|N|To Toshe Chaosrender.|
 
 A Silver Tide Hollow|QID|25222|PRE|25221|RANK|1|M|53.28,33.03|Z|Shimmering Expanse|N|From Toshe Chaosrender.|
-; f Silver Tide Hollow|QID|25222|M|49.49,41.28|Z|Shimmering Expanse|N|Swim down to a cave entrance just north of where you are. Go inside, until you reach the surface of the water. Get the flightpoint at the Swift Seahorse.|
+f Silver Tide Hollow|M|49.49,41.28|Z|Shimmering Expanse|N|Swim down to a cave entrance just north of where you are. Go inside, until you reach the surface of the water. Get the flightpoint at the Swift Seahorse.|
 T Silver Tide Hollow|QID|25222|M|49.5,42.1|Z|Shimmering Expanse|N|To Felora Firewreath.|
 A A Distracting Scent|QID|25215|RANK|1|M|49.5,42.1|Z|Shimmering Expanse|N|From Felora Firewreath.|
 A The Great Sambino|QID|25216|RANK|1|M|49.5,42.1|Z|Shimmering Expanse|N|From Felora Firewreath.|
@@ -356,7 +356,7 @@ T Overseer Idra'kess|QID|25995|Z|Shimmering Expanse|N|To Earthmender Duarn.|M|60
 A Waking The Beast|QID|25996|PRE|25995|RANK|1|Z|Shimmering Expanse|N|From Earthmender Duarn.|M|51.7,52.1|
 C Waking The Beast|QID|25996|M|51.7,52.1|Z|Shimmering Expanse|QO|Listen as Duarn speaks to Nespirah: 1/1|N|Listen as Duarn speaks to Nespirah|
 C Waking The Beast|QID|25996|M|50.3,55.4|Z|Shimmering Expanse|QO|Escape on Erunak's Seahorse: 1/1|N|Leave Nespirah through first exit to the south of the brain room. Just outside the tunnel you will find Erunak's Seahorse.|
-; f Legion's Nest|QID|25996|Z|Shimmering Expanse|M|50.78,63.4|N|Grab the flight point.|
+f Legion's Nest|Z|Shimmering Expanse|M|50.78,63.4|N|Grab the flight point.|
 T Waking The Beast|QID|25996|Z|Shimmering Expanse|N|To Legionnaire Nazgrim.|M|51.21,63|
 
 A Deep Attraction|QID|25592|Z|Shimmering Expanse|N|From Legionnaire Nazgrim.|M|51.21,63|
@@ -542,8 +542,8 @@ T Final Judgement|QID|25951|M|42.46,78.59|Z|Shimmering Expanse|N|To Lady Naz'jar
 T Visions of the Past: Rise From The Deep|QID|26135|Z|Shimmering Expanse|N|To Wavespeaker Tulra.|M|51.6,62.74|
 
 A A Breath of Fresh Air|QID|26006|PRE|26135|RANK|1|Z|Shimmering Expanse|N|From Wavespeaker Tulra.|M|51.6,62.74|
-; f Swift Seahorse|QID|26006|M|49.48,65.58|U|57412|N|Swim just outside the cave, and use the Boom Boots. Then get the flight point at Swift Seahorse.|Z|Shimmering Expanse|
-; f Stygian Bounty|QID|26006|M|64.90,68.11|Z|Vashj'ir|N|At Brogdul.|Z|Shimmering Expanse|
+f Swift Seahorse|M|49.48,65.58|U|57412|N|Swim just outside the cave, and use the Boom Boots. Then get the flight point at Swift Seahorse.|Z|Shimmering Expanse|
+f Stygian Bounty|M|64.90,68.11|Z|Vashj'ir|N|At Brogdul.|Z|Shimmering Expanse|
 T A Breath of Fresh Air|QID|26006|Z|Shimmering Expanse|N|Click on the rope ladder to board the ship, then turn the quest into Legionnaire Nazgrim.|M|49.61,65.88|
 
 A Full Circle|QID|26221|RANK|1|Z|Shimmering Expanse|N|From Legionnaire Nazgrim.|M|64.48,68.68|
@@ -551,7 +551,7 @@ C Full Circle|QID|26221|Z|Shimmering Expanse|N|Get on board the sub once it arri
 T Full Circle|QID|26221|Z|Abyssal Depths|N|To Captain “Jewels” Verne.|M|51.4,61.5|
 
 A Environmental Awareness|QID|26122|Z|Abyssal Depths|N|From Fiasco Sizzlegrin.|M|51.47,60.82|
-; f Tenebrous Cavern|QID|26122|Z|Abyssal Depths|N|Grab the flight point.|M|53.85,59.64|
+f Tenebrous Cavern|Z|Abyssal Depths|N|Grab the flight point.|M|53.85,59.64|
 C Environmental Awareness|QID|26122|U|56821|Z|Abyssal Depths|S|N|Kill Seabrush Terrapins, Scourgut Remoras and Spinescale Hammerheads, then use the pump on their corpses. If your a looter, loot then use it.|
 A Secure Seabrush|QID|26124|Z|Abyssal Depths|M|56.75,43.52|N|Get out of the cave, swim up and go northwest to the area called Seabrush. Find and kill an Alliance Sea-scout, the quest will pop-up, accept it.|
 C Secure Seabrush|QID|26124|Z|Abyssal Depths|M|52.18,48.27|N|Kill a total of 7 Alliance Sea-scouts.|
