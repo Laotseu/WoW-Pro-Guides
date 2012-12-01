@@ -110,7 +110,7 @@ C In the Outhouse|QID|25524|U|54821|M|79.61,75.03|N|Use the Pirate's Crowbar on 
 T In the Outhouse|QID|25524|M|79.58,75.09|N|To Submerged Outhouse.|
 C Down in the Deeps|QID|25515|US|M|80.61,76.83|N|Collect Rocket Car Parts from the ground.|
 
-f Fizzle & Pozzik's Speedbarge|QID|25524|M|79.16,71.95|N|At Tilly Topspin, back onto the Speedbarge.|
+f Fizzle & Pozzik's Speedbarge|M|79.16,71.95|N|At Tilly Topspin, back onto the Speedbarge.|
 T Down in the Deeps|QID|25515|M|76.50,73.64|N|To Jinky Twizzlefixxit.|
 A Pirate Accuracy Increasing|QID|25532|M|76.50,73.64|N|From Jinky Twizzlefixxit.|
 N Pirate Accuracy Increasing|QID|25532|M|78.89,75.71|QO|Get a boat from Mazzer: 1/1|N|Speak to Mazzar on the south pontoon and tell him to get you into your boat.|

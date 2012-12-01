@@ -78,7 +78,9 @@ return [[
 A Warchief's Command: Vashj'ir!|QID|27718|M|49.67,76.45|Z|Orgrimmar|N|From Warchief's Command Board.|
 T Warchief's Command: Vashj'ir!|QID|27718|M|55.84,12.29|Z|Durotar|N|To Commander Thorak inside the tower.|
 A Call of Duty|QID|25924|M|55.84,12.29|Z|Durotar|N|From Commander Thorak.|
-C Call of Duty|QID|25924|NC|M|45.79,33.82|Z|Kelp'thar Forest|N|Watch the scene play out.|
+b The Great Sea |N|Take the ship to Vashj'ir|M|57.7,10.4|Z|Durotar|
+;
+;C Call of Duty|QID|25924|NC|M|45.79,33.82|Z|Kelp'thar Forest|N|Watch the scene play out.|
 T Call of Duty|QID|25924|M|38.83,31.62|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Sea Legs|QID|25929|M|38.83,31.62|Z|Kelp'thar Forest|N|From Erunak Stonespeaker.|
 h The Immortal Coil|QID|25929|M|38.83,31.62|Z|Kelp'thar Forest|N|At Erunak Stonespeaker.|
@@ -102,11 +104,11 @@ A Girding Our Loins|QID|25944|M|38.99,32.05|Z|Kelp'thar Forest|N|From Legionnair
 A Helm's Deep|QID|25946|M|38.85,26.74|Z|Kelp'thar Forest|N|Swim out of the ship, to the piece of Alliance S.E.A.L. Equipment. Click on it to get the quest Helm's Deep.|
 T Helm's Deep|QID|25946|M|38.97,32.03|Z|Kelp'thar Forest|N|To Legionnaire Nazgrim.|
 A Finders, Keepers|QID|25947|M|38.97,32.03|Z|Kelp'thar Forest|N|From Legionnaire Nazgrim.|
+A Once More, With Eeling|QID|27729|S|M|49.76,22.20|Z|Kelp'thar Forest|N|Kill a Slitherfin Eel to automatically begin this quest.|
 C Girding Our Loins|QID|25944|M|36.15,28.07|Z|Kelp'thar Forest|N|The armor for Girding Our Loins can be found on the seafloor and can also be dropped by Gilblin Scavengers.|
-A Once More, With Eeling|QID|27729|M|49.76,22.20|Z|Kelp'thar Forest|N|Kill a Slitherfin Eel to automatically begin this quest.|
-C Once More, With Eeling|QID|27729|S|M|49.76,22.20|N|Kill Slitherfin Eels.|Z|Kelp'thar Forest|
 C Finders, Keepers|QID|25947|M|50.42,27.70|Z|Kelp'thar Forest|N|Collect the S.E.A.L equipment.|
-C Once More, With Eeling|QID|27729|US|M|49.76,22.20|Z|Kelp'thar Forest|
+A Once More, With Eeling|QID|27729|US|M|49.76,22.20|Z|Kelp'thar Forest|N|Kill a Slitherfin Eel to automatically begin this quest.|
+C Once More, With Eeling|QID|27729|M|49.76,22.20|Z|Kelp'thar Forest|
 T Once More, With Eeling|QID|27729|M|49.76,22.20|Z|Kelp'thar Forest|N|Once this quest is complete you can turn it in. (UI Alert)|
 T Girding Our Loins|QID|25944|M|39.04,32.15|Z|Kelp'thar Forest|N|To Legionnaire Nazgrim.|
 T Finders, Keepers|QID|25947|M|39.04,32.15|Z|Kelp'thar Forest|N|To Legionnaire Nazgrim.|
@@ -117,7 +119,7 @@ A Blood and Thunder!|QID|25949|M|38.80,31.48|Z|Kelp'thar Forest|N|From Legionnai
 C Blood and Thunder!|QID|25949|M|46.26,46.73|Z|Kelp'thar Forest|N|If you have trouble completing this event stay inside the ship and wait for it to finish.|
 T Blood and Thunder!|QID|25949|M|46.34,46.81|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Better Late Than Dead|QID|25477|M|46.14,46.80|Z|Kelp'thar Forest|N|From Moanah Stormhoof.|
-C Better Late Than Dead|QID|25477|U|54462|M|48.94,42.35|N|Use Moanah's Baitstick on a Speckled Sea Turtle. Wait a few seconds an a shark will attack you, this will complete the quest.|Z|Kelp'thar Forest|
+C Better Late Than Dead|QID|25477|U|54462|T|Speckled Sea Turtle|M|48.94,42.35|N|Use Moanah's Baitstick on a Speckled Sea Turtle. Wait a few seconds an a shark will attack you, this will complete the quest.|Z|Kelp'thar Forest|
 T Better Late Than Dead|QID|25477|M|46.06,46.83|Z|Kelp'thar Forest|N|To Moanah Stormhoof.|
 A The Abyssal Ride|QID|25371|M|46.06,46.83|Z|Kelp'thar Forest|N|From Moanah Stormhoof.|
 C The Abyssal Ride|QID|25371|M|45.81,46.50|Z|Kelp'thar Forest|N|Go to the west of Moanah Stormhoof to find the coil of rope. Use the coil of rope to send the bait out into the chasm. A Seahorse will come out and grab the bait. Hop on the seahorse. Use the abilities you are given when you are prompted as the Seahorse swims around the zone. If you end up falling off, you will be transported back to the rope to try again. You will find yourself back at Shallow's End when the Seahorse finishes his run.|
@@ -126,8 +128,8 @@ A Good Deed Left Undone|QID|27685|M|46.50,46.76|Z|Kelp'thar Forest|N|From Rendel
 T Good Deed Left Undone|QID|27685|M|53.50,43.14|Z|Kelp'thar Forest|N|Find Adarrah on the east side of the Kelp Forest.|
 A Gimme Shelter!|QID|25587|M|53.50,43.14|Z|Kelp'thar Forest|N|From Adarrah.|
 
-f Smuggler's Scar|QID|25587|M|56.24,31.23|Z|Kelp'thar Forest|N|Swim toward Smuggler's Scar a small cave just north of where you are. Grab the flight point|
-N Smuggler's Scar|QID|25587|M|56.24,31.23|Z|Kelp'thar Forest|N|Go inside, until you reach the ground.|QO|Smuggler's Hole Scouted: 1/1|
+f Smuggler's Scar|M|56.24,31.23|Z|Kelp'thar Forest|N|Swim toward Smuggler's Scar a small cave just north of where you are. Grab the flight point|
+C Smuggler's Scar|QID|25587|NC|M|56.24,31.23|Z|Kelp'thar Forest|N|Go inside, until you reach the ground.|QO|Smuggler's Scar Scouted: 1/1|
 C Gimme Shelter!|QID|25587|M|53.67,34.32|Z|Kelp'thar Forest|N|Swim back out of the cave to signal Adarrah.|
 T Gimme Shelter!|QID|25587|M|57.09,28.87|Z|Kelp'thar Forest|N|Swim back into the cave and talk to Adarrah.|
 A Ain't Too Proud to Beg|QID|25598|M|57.09,28.87|Z|Kelp'thar Forest|N|From Adarrah.|
@@ -253,7 +255,7 @@ C Rundown|QID|25221|U|54466|M|53.69,11.89;52,20|Z|Shimmering Expanse|N|Get on on
 T Rundown|QID|25221|M|53.28,33.03|Z|Shimmering Expanse|N|To Toshe Chaosrender.|
 
 A Silver Tide Hollow|QID|25222|PRE|25221|RANK|1|M|53.28,33.03|Z|Shimmering Expanse|N|From Toshe Chaosrender.|
-f Silver Tide Hollow|QID|25222|M|49.49,41.28|Z|Shimmering Expanse|N|Swim down to a cave entrance just north of where you are. Go inside, until you reach the surface of the water. Get the flightpoint at the Swift Seahorse.|
+f Silver Tide Hollow|M|49.49,41.28|Z|Shimmering Expanse|N|Swim down to a cave entrance just north of where you are. Go inside, until you reach the surface of the water. Get the flightpoint at the Swift Seahorse.|
 T Silver Tide Hollow|QID|25222|M|49.5,42.1|Z|Shimmering Expanse|N|To Felora Firewreath.|
 A A Distracting Scent|QID|25215|RANK|1|M|49.5,42.1|Z|Shimmering Expanse|N|From Felora Firewreath.|
 A The Great Sambino|QID|25216|RANK|1|M|49.5,42.1|Z|Shimmering Expanse|N|From Felora Firewreath.|
@@ -354,7 +356,7 @@ T Overseer Idra'kess|QID|25995|Z|Shimmering Expanse|N|To Earthmender Duarn.|M|60
 A Waking The Beast|QID|25996|PRE|25995|RANK|1|Z|Shimmering Expanse|N|From Earthmender Duarn.|M|51.7,52.1|
 C Waking The Beast|QID|25996|M|51.7,52.1|Z|Shimmering Expanse|QO|Listen as Duarn speaks to Nespirah: 1/1|N|Listen as Duarn speaks to Nespirah|
 C Waking The Beast|QID|25996|M|50.3,55.4|Z|Shimmering Expanse|QO|Escape on Erunak's Seahorse: 1/1|N|Leave Nespirah through first exit to the south of the brain room. Just outside the tunnel you will find Erunak's Seahorse.|
-f Legion's Nest|QID|25996|Z|Shimmering Expanse|M|50.78,63.4|N|Grab the flight point.|
+f Legion's Nest|Z|Shimmering Expanse|M|50.78,63.4|N|Grab the flight point.|
 T Waking The Beast|QID|25996|Z|Shimmering Expanse|N|To Legionnaire Nazgrim.|M|51.21,63|
 
 A Deep Attraction|QID|25592|Z|Shimmering Expanse|N|From Legionnaire Nazgrim.|M|51.21,63|
@@ -540,8 +542,8 @@ T Final Judgement|QID|25951|M|42.46,78.59|Z|Shimmering Expanse|N|To Lady Naz'jar
 T Visions of the Past: Rise From The Deep|QID|26135|Z|Shimmering Expanse|N|To Wavespeaker Tulra.|M|51.6,62.74|
 
 A A Breath of Fresh Air|QID|26006|PRE|26135|RANK|1|Z|Shimmering Expanse|N|From Wavespeaker Tulra.|M|51.6,62.74|
-f Swift Seahorse|QID|26006|M|49.48,65.58|U|57412|N|Swim just outside the cave, and use the Boom Boots. Then get the flight point at Swift Seahorse.|Z|Shimmering Expanse|
-f Stygian Bounty|QID|26006|M|64.90,68.11|Z|Vashj'ir|N|At Brogdul.|Z|Shimmering Expanse|
+f Swift Seahorse|M|49.48,65.58|U|57412|N|Swim just outside the cave, and use the Boom Boots. Then get the flight point at Swift Seahorse.|Z|Shimmering Expanse|
+f Stygian Bounty|M|64.90,68.11|Z|Vashj'ir|N|At Brogdul.|Z|Shimmering Expanse|
 T A Breath of Fresh Air|QID|26006|Z|Shimmering Expanse|N|Click on the rope ladder to board the ship, then turn the quest into Legionnaire Nazgrim.|M|49.61,65.88|
 
 A Full Circle|QID|26221|RANK|1|Z|Shimmering Expanse|N|From Legionnaire Nazgrim.|M|64.48,68.68|
@@ -549,7 +551,7 @@ C Full Circle|QID|26221|Z|Shimmering Expanse|N|Get on board the sub once it arri
 T Full Circle|QID|26221|Z|Abyssal Depths|N|To Captain “Jewels” Verne.|M|51.4,61.5|
 
 A Environmental Awareness|QID|26122|Z|Abyssal Depths|N|From Fiasco Sizzlegrin.|M|51.47,60.82|
-f Tenebrous Cavern|QID|26122|Z|Abyssal Depths|N|Grab the flight point.|M|53.85,59.64|
+f Tenebrous Cavern|Z|Abyssal Depths|N|Grab the flight point.|M|53.85,59.64|
 C Environmental Awareness|QID|26122|U|56821|Z|Abyssal Depths|S|N|Kill Seabrush Terrapins, Scourgut Remoras and Spinescale Hammerheads, then use the pump on their corpses. If your a looter, loot then use it.|
 A Secure Seabrush|QID|26124|Z|Abyssal Depths|M|56.75,43.52|N|Get out of the cave, swim up and go northwest to the area called Seabrush. Find and kill an Alliance Sea-scout, the quest will pop-up, accept it.|
 C Secure Seabrush|QID|26124|Z|Abyssal Depths|M|52.18,48.27|N|Kill a total of 7 Alliance Sea-scouts.|

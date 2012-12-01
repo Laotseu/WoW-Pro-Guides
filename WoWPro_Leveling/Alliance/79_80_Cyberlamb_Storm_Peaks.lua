@@ -44,7 +44,7 @@ A Expression of Gratitude|QID|12836|N|From Ricket.|M|40.9,85.3|
 A Reclaimed Rations|QID|12827|N|From Ricket.|M|40.9,85.3|
 A Equipment Recovery|QID|12844|N|From Gretchen Fizzlespark.|M|41.1,86.1|
 A They Took Our Men!|QID|12843|N|From Gretchen Fizzlespark.|M|41.1,86.1|
-f K3|QID|12819|N|At Skizzle Slickside.|M|40.7,84.5|
+f K3|N|At Skizzle Slickside.|M|40.7,84.5|
 C Gather Rations|QID|12827|N|Click on boxes and loot from gnolls in this area and collect 16 Dried Gnoll Rations.|L|40645 16|S|
 C Clean Up|QID|12818|N|Collect 10 Charred Wreckage.|M|39,86|L|40603 10|
 C Kill Gnarlhide|QID|12836|N|Find Gnarlhide and kill him.|M|30.4,85.6|
@@ -101,7 +101,7 @@ T Know No Fear|QID|12822|N|To Ricket.|M|40.9,85.3|
 T Demolitionist Extraordinaire|QID|12824|N|To Ricket.|M|40.9,85.3|
 A When All Else Fails|QID|12862|N|From Ricket.|M|40.9,85.3|
 F Frosthold|QID|12862|N|Talk to Ricket and take a ride.|M|40.9,85.3|
-f Frosthold|QID|12863|N|At Faldorf Bitterchill.|M|29.5,74.33|
+f Frosthold|N|At Faldorf Bitterchill.|M|29.5,74.33|
 A On Brann's Trail|QID|12854|N|From Archeologist Andorin.|M|29.6,74.0|
 A Offering Thanks|QID|12863|N|From Lagnus.|M|29.3,73.7|
 T Offering Thanks|QID|12863|N|Glorthal Stiffbeard.|M|29.14,74.87|
@@ -280,7 +280,7 @@ T Battling the Elements|QID|12967|N|To Njormeld.|M|75.39,63.57|
 T Forging an Alliance|QID|12924|N|To Njormeld.|M|63.2,63.2|
 A A New Beginning|QID|13009|N|From Njormeld.|M|63.2,63.2|
 A Forging a Head|QID|12985|N|From Njormeld.|M|63.2,63.2|
-f Dun Niffelem|QID|13050|N|At Halvdan.|M|62.6,60.9|
+f Dun Niffelem|N|At Halvdan.|M|62.6,60.9|
 A In Memoriam|QID|12975|N|From King Jokkum.|M|65.4,60.1|
 A Raising Hodir's Spear|QID|13001|M|64.86,59.15|N|From Lorekeeper Randvir.|
 T A New Beginning|QID|13009|N|To Thorim.|M|33.4,58.0|
@@ -327,7 +327,7 @@ C The Reckoning|QID|13047|N|Speak to Thorim and watch the cut scene.|M|35.9,31.6
 T The Reckoning|QID|13047|N|To King Jokkum.|M|65.4,60.1|
 T The Exiles of Ulduar|QID|12885|N|To Bouldercrag the Rockshaper.|M|31.4,38.0|
 A Rare Earth|QID|12930|N|From Bouldercrag the Rockshaper.|M|31.4,38.0|
-f Bouldercrag's Refuge|QID|12937|N|At Breck Rockbrow.|M|30.6,36.3|
+f Bouldercrag's Refuge|N|At Breck Rockbrow.|M|30.6,36.3|
 C Rare Earth|QID|12930|N|Mine 7 Enchanted Earth from the cliffs, and make sure that you have 5 Frostweave Cloth.|M|27,34|L|41614 7|L|33470 5|
 T Rare Earth|QID|12930|N|To Bouldercrag the Rockshaper.|M|31.4,38.0|
 

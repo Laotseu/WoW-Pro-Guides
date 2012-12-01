@@ -138,10 +138,10 @@ A The Corruption's Source|QID|13529|M|56.23,27.35;56.81,30.04|N|From Tharnariun 
 C The Corruption's Source|QID|13529|M|58.75,32.64|N|Kill Vile Grells on the way.|S|
 l Corruptor's Master Key|QID|13557|L|44927|N|Enter the waterfall, and kill Vile Corruptors until one drops the Corruptor's Master Key.|
 A Bearer of Good Fortune|QID|13557|U|44927|M|57.02,31.46|N|Right click the Corruptor's Master Key to accept the quest.|
-C Bearer of Good Fortune|QID|13557|M|57.50,32.41|N|Open the cages on the way.|S|NC|
+C Bearer of Good Fortune|QID|13557|U|44925|M|57.50,32.41|N|Open the cages on the way.|S|NC|
 A A Troubling Prescription|QID|13831|M|56.78,33.47;57.37,33.80|N|From the Disgusting Workbench on lower level, first cave on left as you come down the ramp.|
 K Zenn Foulhoof|QID|13529|M|58.75,32.64|QO|Zenn Foulhoof slain: 1/1|N|Kill Zenn Foulhoof, you can locate him easily on your minimap by tracking the skull.|
-C Bearer of Good Fortune|QID|13557|M|57.50,32.41|N|Open cages until you finish the quest.|US|NC|
+C Bearer of Good Fortune|QID|13557|U|44925|M|57.50,32.41|N|Open cages until you finish the quest.|US|NC|
 C The Corruption's Source|QID|13529|M|58.75,32.64|N|Kill Vile Grells until you finish the quest.|US|
 C A Cure In The Dark|QID|13554|M|58.86,32.34|N|Kill Vile Grells and Vile Corruptors.|
 R Bashal'Aran Collapse|QID|28529|M|52.81,32.72|N|Head outside the cave, and jump into the 'Maw of the Void'.|RANK|2|
@@ -154,7 +154,6 @@ T The Corruption's Source|QID|13529|M|51.19,19.69|N|To Tharnariun Treetender.|
 T Bearer of Good Fortune|QID|13557|M|51.19,19.69|N|To Tharnariun Treetender.|
 T A Troubling Prescription|QID|13831|M|51.19,19.69|N|To Tharnariun Treetender.|
 T A Cure In The Dark|QID|13554|M|51.19,19.69|N|To Wizbang Cranktoggle.|
-
 L Level 14|QID|13561|LVL|14|N|You should be around level 14 by this point.|
 A A Love Eternal|QID|13563|M|50.84,17.96|N|From Cerellean Whiteclaw.|
 A A Lost Companion|QID|13564|M|50.89,17.98|N|From Volcor.|
@@ -292,8 +291,8 @@ l Frienzied Cyclone Bracers|QID|13542|M|39.51,42.09|N|Kill Frenzied Cyclones to 
 A Coaxing the Spirits|QID|13547|M|39.08,43.13|N|From Yalda.|
 A The Last Refugee|QID|13605|M|38.59,42.37|N|From Archaeologist Hollee.|
 C Coax Taldan's Spirit|QID|13547|M|38.54,41.89|N|Grab Taldan's Spirit when Archaeologist Hollee stops at his corpse.|QO|Taldan's spirit coaxed: 1/1|NC|
-C The Last Refugee|QID|13605|NC|M|41.20,43.34|N|Follow Archaeologist Hollee.|NC|
-N Sentinel Elissa Starbreeze's Spirit|QID|13547|M|40.95,41.41|N|Grab Elissa's spirit.|QO|Sentinel Elissa Starbreeze's spirit coaxed: 1/1|NC|
+C The Last Refugee|QID|13605|NC|M|41.20,43.34|N|Follow Archaeologist Hollee.|
+N Sentinel Elissa Starbreeze's Spirit|QID|13547|M|40.95,41.41|N|Grab Elissa's spirit.|QO|Sentinel Elissa Starbreeze's spirit coaxed: 1/1|
 K Cloudtamer Wildmane|QID|13543|M|40.76,41.51|QO|Cloudtamer Wildmane slain: 1/1|N|Head upstairs and Kill Cloudtamer.|
 N Thundris Windweaver's Spirit|QID|13547|M|39.31,38.96|QO|Thundris Windweaver's spirit coaxed: 1/1|N|Talk to Thundris' corpse to get his spirit.|
 K Skylord Braax|QID|13543|M|39.14,38.28|QO|Skylord Braax slain: 1/1|N|Kill Skylord Braax.|
@@ -353,7 +352,7 @@ C The Eye of All Storms|QID|13588|M|44.27,54.20|N|Jump on Thessera's back, use t
 T The Eye of All Storms|QID|13588|M|43.63,53.41|N|To Malfurion Stormrage.|
 A Mounting the Offensive|QID|13902|M|43.63,53.41|N|From Malfurion Stormrage.|
 
-f Grove of the Ancients|QID|13902|M|44.39,75.39|N|At Delanea.|
+f Grove of the Ancients|M|44.39,75.39|N|At Delanea.|
 T Mounting the Offensive|QID|13902|M|45.25,75.12|N|To Balren of the Claw.|
 A Leave No Tracks|QID|13892|M|45.25,75.12|N|From Balren of the Claw.|
 A What's Happening to the Blackwood Furbolg?|QID|13525|M|45.19,75.16|N|From Foriel Broadleaf.|

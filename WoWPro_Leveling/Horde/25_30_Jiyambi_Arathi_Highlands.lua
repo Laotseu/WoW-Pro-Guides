@@ -60,7 +60,7 @@ K Kenata Dabyrie|QID|26428|QO|Kenata's Head: 1/1|M|50.87,36.99|N|Inside the hous
 R Hammerfall|QID|26909|M|69.61,36.47|N|Head to the eastern corner of the zone.|
 A Raising Spirits|QID|26107|M|67.80,34.79|N|From Gor'mul.|
 h Hammerfall|QID|26628|M|68.97,33.32|N|At Innkeeper Adegwa.|
-f Hammerfall|QID|26909|M|68.19,33.44|N|From Urda.|
+f Hammerfall|M|68.19,33.44|N|From Urda.|
 F Galen's Fall|QID|26909|M|68.19,33.44|N|At Urda.|
 T To Steal From Thieves|QID|26428|M|13.70,34.01|N|To Genavie Callow.|
 T Sigil of Arathor|QID|26032|M|12.98,36.05|N|To Galen Trollbane.|

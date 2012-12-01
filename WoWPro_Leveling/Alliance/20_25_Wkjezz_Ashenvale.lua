@@ -124,7 +124,7 @@ A Of Their Own Design|QID|13595|M|29.00,24.06|N|From Bathran.|
 C Bathran's Hair|QID|26473|S|M|21.65,14.69|N|They look like orange bushes.|
 C Don't Forget the Horde|QID|13594|S|M|21.65,17.27|N|Kill the Orcs and Herbalists from Bathran's Haunt.|
 l Bottle of Wildfire|QID|13595|M|32.16,23.39|N|Loot the Bottle of Wildfire from the table in Bathran's Haunt.|L|44967|
-C Of Their Own Design|QID|13595|M|32.81,21.38|N|Burn Bathran's corpse with the Bottle of Wildfire.|
+C Of Their Own Design|QID|13595|U|44967|M|32.81,21.38|N|Burn Bathran's corpse with the Bottle of Wildfire.|
 C Don't Forget the Horde|QID|13594|US|M|31.99,23.55|N|Finish killing mobs.|
 C Bathran's Hair|QID|26473|US|M|31.36,22.80|N|They look like orange bushes..|
 T Of Their Own Design|QID|13595|M|29.08,24.30|N|To Bathran.|
@@ -137,7 +137,7 @@ T West to the Strand|QID|13617|M|18.28,20.49|N|To Talen.|
 A The Ancient Statuettes|QID|26465|M|18.28,20.49|N|From Talen.|
 A Naga of the Strand|QID|13602|M|18.28,20.49|N|From Shindrell Swiftfire.|
 
-f Blackfathom Camp|QID|13602|M|18.11,20.64|N|At Solais.|
+f Blackfathom Camp|M|18.11,20.64|N|At Solais.|
 C The Ancient Statuettes|QID|26465|S|M|11.69,24.27|N|Loot statuettes off the ground.|
 C Naga of the Strand|QID|13602|M|13.58,14.69|N|Kill any type of Naga you see.|
 C The Ancient Statuettes|QID|26465|US|M|12.92,26.45|N|Finish looting statuettes.|
@@ -165,7 +165,7 @@ C Rear Guard Duty|QID|13632|M|30.24,31.40|S|N|Kill any type of Furbolgs.|
 N Deactivate Green Moonstone |QID|13630|M|27.50,33.15|N|Deactivate the Green Moonstone.|QO|Green Moonstone deactivated: 1/1|
 N Deactivate Red Moonstone |QID|13630|M|28.60,31.70|N|Deactivate the Red Moonstone.|QO|Red Moonstone deactivated: 1/1|
 C The Reason Why|QID|13630|M|30.30,31.40|N|Deactivate the Blue Moonstone.|
-C Rear Guard Duty|QID|13632|M|30.24,31.40|US|N|Kill any type of Furbolgs.|
+C Rear Guard Duty|QID|13632|US|M|30.24,31.40|US|N|Kill any type of Furbolgs.|
 T The Reason Why|QID|13630|M|27.07,36.16|N|To Moon Priestess Maestra.|
 T Rear Guard Duty|QID|13632|M|27.26,35.57|N|To Liladris Moonriver.|
 T Finding Teronis|QID|26463|M|20.30,38.75|N|To Teronis' Corpse.|
@@ -186,7 +186,7 @@ A Astranaar Bound|QID|13646|M|26.75,36.04|N|From Sentinel Avana.|
 R Astranaar|QID|13646|NC|N|Talk to Sentinel Avana. She will give you a free ride on one of her Kitties.|
 T Astranaar Bound|QID|13646|M|34.69,48.55|N|To Sentinel Luara.|
 
-f Astranaar|QID|13849|NC|N|Accept the Flight Path from Daelyshia.|
+f Astranaar|NC|N|Accept the Flight Path from Daelyshia.|
 
 A Astranaar's Burning!|QID|13849|M|34.92,49.77|N|From Sentinel Thenysil.|
 C Astranaar's Burning!|QID|13849|U|46094|M|35.31,49.26|N|Use the bucket and aim for a fire.  Rinse and repeat.|NC|
@@ -209,7 +209,7 @@ A A Shameful Waste|QID|26454|M|86.86,44.76|N|From Architect Nemos.|
 A Vile Satyr! Dryads in Danger!|QID|26467|M|86.72,42.98|N|From Illiyana.|
 A The Lost Chalice|QID|26455|M|85.20,44.49|N|From Kayneth Stillwind.|
 
-f Forest Song|QID|26467|M|85.09,43.45|N|At Suralais Farwind.|
+f Forest Song|M|85.09,43.45|N|At Suralais Farwind.|
 
 T Vile Satyr! Dryads in Danger!|QID|26467|M|78.35,44.84|N|To Anilia.|
 A The Branch of Cenarius|QID|26468|M|78.35,44.84|N|From Anilia.|
@@ -378,7 +378,7 @@ A Ze Gnomecorder|QID|25607|M|35.28,71.30|N|From Professor Xakxak Gyromate.|
 A The Goblin Braintrust|QID|13979|M|35.07,71.55|N|From Huntress Jalin.|
 A They Took Our Gnomes|QID|13913|M|35.13,71.69|N|From Huntress Jalin.|
 
-f Stardust Spire|QID|13913|M|35.06,72.02|N|At Myre Moonglide.|
+f Stardust Spire|M|35.06,72.02|N|At Myre Moonglide.|
 r Repair/Sell|QID|26470|M|34.71,71.31|N|From the Boyer in the tower.|
 
 C Retaking Mystral Lake|QID|26470|M|52.78,71.67|N|Kill elementals until you're done.|S|

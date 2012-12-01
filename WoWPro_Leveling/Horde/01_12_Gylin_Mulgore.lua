@@ -282,7 +282,7 @@ A Journey into Thunder Bluff|QID|24550|M|49.31,17.34|R|Tauren|Z|Mulgore|N|From U
 H Hearth to Bloodhoof Village|QID|24550|
 
 A A Bundle of Hides|QID|6361|M|46.11,58.17|Z|Mulgore|R|Tauren|N|From Varg Windwhisper.|
-f Bloodhoof Village|QID|6361|M|47.41,58.68|Z|Mulgore|R|Tauren|N|At Tak.|
+f Bloodhoof Village|M|47.41,58.68|Z|Mulgore|R|Tauren|N|At Tak.|
 T A Bundle of Hides|QID|6361|M|47.41,58.68|Z|Mulgore|R|Tauren|N|To Tak.|
 A Ride to Thunder Bluff|QID|6362|M|47.41,58.68|Z|Mulgore|R|Tauren|N|From Tak.|
 F Fly to Thunder Bluff|QID|24550|M|42.48,28.66|R|Tauren|

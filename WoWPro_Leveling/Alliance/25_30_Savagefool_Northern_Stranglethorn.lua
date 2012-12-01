@@ -42,7 +42,7 @@ return [[
 L Level 24 |LVL|24|QID|26740|N|You need to be level 24 to do this guide.|
 
 R Rebel Camp|QID|26740|M|47.82,11.98|N|Northern Stranglethorn is to the south of Duskwood. You can obtain one of two breadcrumbs into this zone, Rebels Without a Clue is offered by Sentinel Velene Starstrike at the Stardust Spire in Ashenvale, and from Sister Elsington in Raven Hill, Duskwood.  Alternatively, in-level players can obtain the Hero's Call from Stormwind City.\n\nOnce you have one of these two, head to the Rebel Camp.|
-f Rebel Camp|QID|26740|M|47.87,11.86|N|At James Stillair.|
+f Rebel Camp|M|47.87,11.86|N|At James Stillair.|
 
 T Rebels Without a Clue|QID|26838|M|47.56,10.33|N|To Lieutenant Doren.|O|
 T Hero's Call: Northern Stranglethorn Vale!|QID|28699|M|47.56,10.33|N|To Lieutenant Doren.|O|
@@ -169,7 +169,7 @@ A Panther Mastery|QID|193|M|62.49,48.16|N|(UI Alert)|
 C Panther Mastery|QID|193|M|65.99,43.29;65.51,36.82;32.95,49.91|N|Kill Bhag'thera and loot his fang. He is somewhere between the waypoints.|T|Bhag'thera|
 C Raptor Mastery|QID|197|M|60.44,61.49|N|Kill Tethis and loot his talon. He can be anywhere in this area.|T|Tethis|
 R Fort Livingston|QID|197|M|52.66,66.18|N|Head to Fort Livingston.|
-f Fort Livingston|QID|197|M|52.66,66.18|N|At Robert Rhodes.|
+f Fort Livingston|M|52.66,66.18|N|At Robert Rhodes.|
 h Fort Livingston|QID|197|M|53.21,66.92|N|From Livingston Marshal.|
 F Rebel Camp|QID|197|M|52.66,66.18|N|At Robert Rhodes.|
 T Bloodscalp Insight|QID|26742|M|47.92,12.02|N|To Berrin Burnquill.|

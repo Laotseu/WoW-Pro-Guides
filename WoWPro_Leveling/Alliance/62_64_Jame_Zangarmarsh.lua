@@ -102,7 +102,7 @@ A The Orebor Harborage|QID|9776|M|68.2,49.4|N|From Anchorite Ahuurn.|
 A The Boha'mu Ruins|QID|9786|M|68.2,49.4|N|From Anchorite Ahuurn.|
 A The Fate of Tuurem|QID|9793|M|68.3,50.1|N|From Vindicator Idaar.|
 A The Dead Mire|QID|9782|M|68.3,50.1|N|From Vindicator Idaar.|
-f Telredor|QID|9901|N|Get the flight-path.|M|67.80,51.5|
+f Telredor|N|Get the flight-path.|M|67.80,51.5|
 A Too Many Mouths to Feed|QID|9781|M|67.7,48.0|N|From Haalrun.|
 A Menacing Marshfangs|QID|9791|M|67.7,48.0|N|From Noraani.|
 C Menacing Marshfangs|N|Kill Marshfang Rippers needed for this quest.|M|85.00,47.0|QID|9791|S|
@@ -206,7 +206,7 @@ H Cenarion Refuge|QID|9732|N|Hearth to Cenarion Refuge.|U|6948|M|78.50,63.00|
 T Return to the Marsh|QID|9732|M|78.4,62.0|N|To Ysiel Windsinger.|
 r Sell junk, repair, restock, train skills|QID|9732|N|Make sure you do not sell the Bog Lord Tendrils, or any Fertile spores you have.|M|79.27, 63.78|
 
-f Orebor Harborage|QID|9776|N|Get the flight-path from Halu.|M|41.25, 29.0|
+f Orebor Harborage|N|Get the flight-path from Halu.|M|41.25, 29.0|
 A Secrets of the Daggerfen|QID|9848|M|41.2,28.7|N|From Timothy Daniels.|
 T The Orebor Harborage|QID|9776|M|41.9,27.2|N|To Ikuti.|
 A Ango'rosh Encroachment|QID|9835|M|41.9,27.2|N|From Ikuti.|

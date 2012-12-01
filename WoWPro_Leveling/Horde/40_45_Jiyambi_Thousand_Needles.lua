@@ -98,7 +98,7 @@ T With a Little Help...|RANK|2|QID|25661|M|96.94,72.45|N|To Ajamon Ghostcaller.|
 A Carcass Collection|RANK|2|QID|25672|M|96.82,72.50|N|From Ajamon Ghostcaller.|
 
 C Carcass Collection|RANK|2|QID|25672|NC|M|83.37,82.65|QO|Creature Carcass: 5/10|N|You'll find five turtle carcasses floating on top of the water. We'll finish the quest in a bit.|
-T Special Delivery for Brivelthwerp|RANK|2|QID|28042|M|69.95,85.18|N|To Brivelthwerp.|
+T Special Delivery for Brivelthwerp|RANK|2|QID|28042|M|83.37,82.65;69.95,85.18|N|To Brivelthwerp.|
 A The Greatest Flavor in the World!|RANK|2|QID|28045|M|69.95,85.18|N|From Brivelthwerp.|
 A We All Scream for Ice Cream... and then Die!|RANK|2|QID|28051|M|69.86,85.09|N|From Brivelthwerp.|
 C We All Scream for Ice Cream... and then Die!|RANK|2|QID|28051|M|71.10,81.79|S|N|Right-click the dead employees to attach the rope to them.|
@@ -108,10 +108,7 @@ T The Greatest Flavor in the World!|RANK|2|QID|28045|M|69.86,85.09|N|To Brivelth
 T We All Scream for Ice Cream... and then Die!|RANK|2|QID|28051|M|69.89,85.11|N|To Brivelthwerp.|
 A Freezing the Pipes|RANK|2|QID|28047|PRE|28045;28051|M|69.89,85.11|N|From Brivelthwerp.|
 A That Smart One's Gotta Go|RANK|2|QID|28048|PRE|28045;28051|M|69.89,85.11|N|From Brivelthwerp.|
-N First pipe|QID|28047|NC|U|62912|QO|First pipe frozen: 1/1|M|65.95,86.41|N|Go to the bug tunnel under water to the east. First Pipe is here.|
-N Second pipe|QID|28047|NC|U|62912|QO|Second pipe frozen: 1/1|M|65.28,86.93|N|Second Pipe is here.|
-N Third pipe|QID|28047|NC|U|62912|QO|Third pipe frozen: 1/1|M|64.94,84.52|N|Third Pipe is here.|
-C Freezing the Pipes|QID|28047|NC|U|62912|M|64.95,85.79|N|Freeze the last pipe here.|
+C Freezing the Pipes|RANK|2|QID|28047|U|62912|NC|M|65.98,86.38;65.29,86.92;64.95,84.52;64.94,85.62|N|Swim down under the lake, you should find a cave. Use the I-Scream Cryocannon on the pipes.|
 C That Smart One's Gotta Go|RANK|2|QID|28048|M|63.85,86.26|N|At the back of the cave, you'll find the Controller.|
 T Freezing the Pipes|RANK|2|QID|28047|M|69.87,85.09|N|To Brivelthwerp, back on the surface.|
 T That Smart One's Gotta Go|RANK|2|QID|28048|M|69.87,85.09|N|To Brivelthwerp.|
@@ -247,12 +244,12 @@ A To the Withering|QID|28142|PRE|28140|N|(UI Alert)|
 T To the Withering|QID|28142|M|50.15,62.62|N|Head east along the ridge until you reach the Twilight Withering. Turn in to Magatha Grimtotem.|
 A Four Twilight Elements|QID|28157|PRE|28142|M|50.15,62.62|N|From Magatha Grimtotem.|
 A Unbound|QID|28158|M|50.15,62.62|PRE|28142|N|From Magatha Grimtotem.|
-l Twilight Element of Earth|QID|28157|QO|Twilight Element of Earth: 1/1|M|53.09,63.51|N|Earth is here.|
-K Bound Fury|QID|28158|QO|Bound Fury unbound: 1/1|M|52.90,59.60|N|Unbind the Bound Fury here. To "unbind" the elemental, just kill it.|
-l Twilight Element of Water|QID|28157|QO|Twilight Element of Water: 1/1|M|52.79,58.68|N|Water is here.|
-C Unbound|QID|28158|M|56.84,61.28|N|Unbind the Bound Vortex.|
-l Twilight Element of Air|QID|28157|QO|Twilight Element of Air: 1/1|M|57.53,60.00|N|Up this tower you will find air.|
-C Four Twilight Elements|QID|28157|M|60.44,64.39|N|Finally get the Fire here.
+C Four Twilight Elements|QID|28157|M|52.79,58.53|QO|Twilight Element of Water: 1/1|NC|
+C Unbound|QID|28158|M|53.33,59.27|QO|Bound Fury unbound: 1/1|N|To "unbind" the elemental, just kill it.|
+C Unbound|QID|28158|M|57.40,60.98|QO|Bound Vortex unbound: 1/1|N|To "unbind" the elemental, just kill it.|
+C Four Twilight Elements|QID|28157|M|57.59,59.57|QO|Twilight Element of Air: 1/1|NC|
+C Four Twilight Elements|QID|28157|M|60.49,64.48|QO|Twilight Element of Fire: 1/1|NC|
+C Four Twilight Elements|QID|28157|M|53.21,63.62|QO|Twilight Element of Earth: 1/1|NC|
 T Four Twilight Elements|QID|28157|M|50.15,62.51|N|To Magatha Grimtotem.|
 T Unbound|QID|28158|M|50.15,62.51|N|To Magatha Grimtotem.|
 A The Doomstone|QID|28159|PRE|28157;28158|M|50.15,62.51|N|From Magatha Grimtotem.|
@@ -262,7 +259,7 @@ A Spread the Word|QID|28161|M|50.22,62.57|N|From Magatha Grimtotem.|
 
 T Spread the Word|QID|28161|M|75.96,74.67|N|To Pozzik. Congradulations on an awesome reward!|
 A Tanaris is Calling|QID|27447|M|75.94,74.68|N|From Pozzik. Pick this up if you'd like to head to Tanaris next.|
-F Gadgetzan|QID|27447|M|79.19,71.89|N|Fly to Gadgetzan.|
 
 ]]
+
 end)

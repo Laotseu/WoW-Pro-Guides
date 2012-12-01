@@ -83,7 +83,7 @@ A What Argus Means to Me |QID|9693|M|52.67,53.21|N|From Exarch Admetius.|
 T What Argus Means to Me |QID|9693|M|55.39,55.27|N|To Vindicator Boros.|
 A Blood Watch |QID|9694|M|55.39,55.27|N|From Vindicator Boros.|
 
-f Blood Watch |QID|9634|M|57.69,53.92|N|Get the flight path for Blood Watch.|
+f Blood Watch |M|57.69,53.92|N|Get the flight path for Blood Watch.|
 A Mac'Aree Mushroom Menagerie |QID|9648|M|56.4,56.8|N|From Jessera of Mac'Aree.|
 A WANTED: Deathclaw|QID|9646|M|55.2,59.1|N|From the Wanted Board outside the Inn.|
 h Blood Watch |QID|9634|M|55.84,59.80|N|Set hearthstone to Blood Watch with Caregiver Topher Loaal.|

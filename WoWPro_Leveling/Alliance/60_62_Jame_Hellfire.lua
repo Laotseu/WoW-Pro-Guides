@@ -73,8 +73,9 @@ return [[
 R Portal to the Blasted Lands|QID|10119|N|By the Portal Trainer |Z|Stormwind City|M|50.3,86|
 B Nethergarde Bitter |QID|10119|L|23848 1|N|Buy a Nethergarde Bitter from Bernie Heisten in Nethergarde Keep. |M|59.40,14.89|Z|Blasted Lands|
 
-A Through the Dark Portal |QID|10119|M|54.66,50.44|N|From Watch Commander Relthorn Netherwane.|Z|Blasted Lands|
-R Hellfire Peninsula |QID|10119|N|Go through the portal.|M|55.01,54.13|Z|Blasted Lands|
+A Through the Dark Portal |QID|10119|M|54.66,50.44|N|From Watch Commander Relthorn Netherwane. If you have Hero's Call: Outlands!|Z|Blasted Lands|
+R Hellfire Peninsula |QID|10288|N|Go through the portal.|M|55.01,54.13|Z|Blasted Lands|
+
 T Through the Dark Portal |QID|10119|M|87.3,50.7|N|To Commander Duron.|
 A Arrival in Outland |QID|10288|M|87.3,50.7|N|From Commander Duron.|
 T Arrival in Outland |QID|10288|M|87.4,52.4|N|To Amish Wildhammer.|
@@ -114,7 +115,7 @@ A In Search of Sedai |QID|9390|M|23.1,40.3|N|From Anchorite Obadei.|
 A Cruel Taskmasters |QID|9399|M|23.1,40.3|N|From Ikan.|
 A The Rock Flayer Matriarch |QID|9490|M|23.1,40.3|N|From Ikan.|
 A The Pools of Aggonar|QID|9426|M|23.4,36.5|N|From Amaan the Wise.|
-f Temple of Telhamat|QID|9390|N|Get the flight path.|M|25.20,37.20|
+f Temple of Telhamat|N|Get the flight path.|M|25.20,37.20|
 T In Search of Sedai|QID|9390|M|26.89,37.42|N|To Sedai's Corpse.|
 A Return to Obadei|QID|9423|M|26.89,37.42|N|From Sedai's Corpse.|
 T Return to Obadei|QID|9423|M|23.1,40.3|N|To Anchorite Obadei.|
@@ -168,7 +169,7 @@ T Mission: The Murketh and Shaadraz Gateways |QID|10146|M|71.4,62.7|N|To Forward
 A Shatter Point |QID|10340|M|71.4,62.7|N|Foward Commander Kingston.|
 
 F Shatter Point |QID|10340|N|Talk to Wing Commander Dabir'ee and have him send you to Shatter Point. |M|71.40,62.50|
-f Shatter Point |QID|10340|N|Get the flight-path.|M|78.4,34.9|
+f Shatter Point |N|Get the flight-path.|M|78.4,34.9|
 T Shatter Point |QID|10340|M|78.4,34.9|N|To Runetog Wildhammer.|
 A Wing Commander Gryphongar |QID|10344|M|78.4,34.9|N|From Runetog Wildhammer.|
 T Wing Commander Gryphongar |QID|10344|M|79.3,33.9|N|To Wing Commander Gryphongar.|
@@ -197,11 +198,10 @@ A The Longbeards |QID|9558|M|54.3,63.4|N|From Sid Limbardi.|
 T Return to Honor Hold |QID|10903|M|54.3,63.6|N|Upstairs to Assistant Klatu.|
 A Fel Spirits |QID|10909|M|54.3,63.6|N|From Assistant Klatu.|
 A Digging for Prayer Beads |QID|10916|M|54.3,63.6|N|From Assistant Klatu.|
-B Silken Thread|QID|10916|M|54.63,63.71|N|Head into the next room and buy a Silken Thread from Hama.|L|4291|
-B Fei Fei Doggy Treat|QID|10916|M|56.34,62.85|N|Buy a treat from Warrant Officer Tracy Proudwell.|L|31799|
-l Draenei Prayer Beads|QID|10916|M|54.16,63.32|N|Give the treat to Fei Fei, then follow the dog. Loot Fei Fei's Cache (glittering dirt pile) once she stops at the waypoint.|L|31795|
+l Draenei Prayer Beads|QID|10916|M|54.16,63.32|N|Head outside the inn and turn left, follow the wall, to the waypoint.  Loot Fei Fei's Cache (glittering dirt pile).|L|31795|
 r Sell junk, repair, restock |N|Sell junk, repair, restock  |M|54.65,63.53|QID|10916|
-A Hellfire Fortifications |QID|10106|M|56.34,62.78|N|From Warrant Officer Tracy Proudwell. This is optional as it is a PvP quest, so skip if you don't wish to do it.|
+A Hellfire Fortifications |QID|13408|C|DRUID,HUNTER,MAGE,PALADIN,PRIEST,ROGUE,SHAMAN,WARLOCK,WARRIOR|M|56.34,62.78|N|From Warrant Officer Tracy Proudwell.  This is optional as it is a PvP quest, so skip if you don't wish to do it.|
+A Hellfire Fortifications |QID|13410|C|DEATHKNIGHT|M|56.34,62.78|N|From Warrant Officer Tracy Proudwell.  This is optional as it is a PvP quest, so skip if you don't wish to do it.|
 T The Dark Missive |QID|10395|N|Head to Warp-Scryer Kryv.|M|56.69,66.52|
 A The Heart of Darkness |QID|10399|N|From Warp-Scryer Kryv.|M|56.69,66.52|
 A The Path of Glory |QID|10047|M|56.7,66.5|N|From Warp-Scryer Kryv.|M|56.69,66.52|
@@ -300,7 +300,8 @@ T Voidwalkers Gone Wild |QID|9351|M|49.2,74.8|N|To "Screaming" Screed Luckheed.|
 
 H Honor Hold |QID|10058|N|Hearth or run to Honor Hold. |U|6948|M|54.3,63.4|
 T An Old Gift |QID|10058|M|54.3,63.4|N|To Father Malgor Devidicus.|
-T Hellfire Fortifications|QID|10106|M|56.34,62.78|N|To Warrant Officer Tracy Proudwell.|O|
+T Hellfire Fortifications|QID|13408|M|56.34,62.78|N|To Warrant Officer Tracy Proudwell.|O|
+T Hellfire Fortifications|QID|13410|M|56.34,62.78|N|To Warrant Officer Tracy Proudwell.|O|
 T Looking to the Leadership |QID|10057|M|50.9,60.2|N|To Honor Guard Wesilow.|
 F Temple of Telhamat|QID|9383|N|Fly to the Temple of Telhamat |M|54.70,62.35|
 T An Ambitious Plan |QID|9383|M|23.4,36.5|N|To Elsaana.|

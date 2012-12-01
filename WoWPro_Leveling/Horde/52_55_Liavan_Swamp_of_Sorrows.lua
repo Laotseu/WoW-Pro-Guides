@@ -31,7 +31,7 @@ return [[
 
 T The Bogpaddle Bullet|QID|28570|M|72.97,14.78|N|To Trade Baron Silversnap.|
 A Maliciously Delicious|QID|27587|M|72.97,14.78|N|From Trade Baron Silversnap.|
-f Bogpaddle|QID|27587|M|72.14,12.13|N|At Skeezie.|
+f Bogpaddle|M|72.14,12.13|N|At Skeezie.|
 A Drinks on the Rocks|QID|27592|M|73.63,9.29|N|From Brono Goodgroove.|
 C Maliciously Delicious|QID|27587|U|62795|M|85.33,11.98|
 C Drinks on the Rocks|QID|27592|M|0.00,0.00|

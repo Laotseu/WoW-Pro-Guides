@@ -43,7 +43,7 @@ WoWPro.Leveling:RegisterGuide('CraSwa5254', 'Swamp of Sorrows', 'Crackerhead22',
 return [[
 
 A Maliciously Delicious|QID|27587|M|73.07,14.74|N|From Trade Baron Silversnap.|
-f Bogpaddle|QID|27587|M|72.09,12.05|N|At Skeezie.|
+f Bogpaddle|M|72.09,12.05|N|At Skeezie.|
 h Bogpaddle|QID|27587|M|71.75,13.98|N|At Cap'n Geech.|
 A Drinks on the Rocks|QID|27592|M|73.58,9.36|N|From Brono Goodgroove.|
 C Drinks on the Rocks|QID|27592|M|86.32,14.40;73.08,4.86|N|Kill and loot Silt Crawlers.|S|
@@ -120,7 +120,7 @@ A Orcs and Humans|QID|27821|M|68.04,36.39|N|From Joanna Blueheart.|
 A Lumbering Oafs|QID|27822|M|68.04,36.39|N|From Joanna Blueheart.|
 A The Lost Ones|QID|27860|M|69.87,36.71|N|From Holaaru.|
 A Draenethyst Crystals|QID|27840|M|69.87,36.71|N|From Holaaru.|
-f Marshtide Watch|QID|27840|M|69.98,38.34|N|At Paola Baldwin.|
+f Marshtide Watch|M|69.98,38.34|N|At Paola Baldwin.|
 
 r Sell junk, repair/restock.|QID|27860|M|69.41,35|N|At Hull Forgehammer.|
 C The Lost Ones|QID|27860|S|M|56.88,31.66|N|Kill any Lost Ones come across.|
@@ -156,13 +156,13 @@ T Assault on Stonard|QID|27849|M|68.03,36.21|N|To Joanna Blueheart.|
 T Cutting Supply|QID|27851|M|68.03,36.21|N|To Joanna Blueheart.|
 R The Harborage|QID|27918|M|26.82,33.57|N|Time to run to The Harborage.|
 
-f The Harborage|QID|27851|M|30.78,34.74|N|At Yedrin.|
+f The Harborage|M|30.78,34.74|N|At Yedrin.|
 T The Harborage|QID|27918|M|26.94,33.77|N|To Anchorite Avuun.|
 A Prayerblossom|QID|27875|M|26.94,33.77|N|From Anchorite Avuun.|
 A Secrets of the Mire|QID|27876|M|26.94,33.77|N|From Anchorite Avuun.|
 A Onward to the Blasted Lands|QID|27919|M|26.94,33.77|N|From Anchorite Avuun.|
 h The Harborage|QID|27919|M|29.00,32.60|N|At Verad.|
-r Sell junk, restock.|QID|27919|
+r Sell junk, restock.|QID|27919|M|29.7,33.7|
 C Prayerblossom|QID|27875|S|M|36.43,42.55|N|Look for and loot Prayerblossoms. They do sparkle, so it shouldn't be too hard to find the flowers.|
 C Secrets of the Mire|QID|27876|M|36.43,42.55|N|Go around this point killing the Shifting Mireglobs, they are in the waterways.|
 C Prayerblossom|QID|27875|US|M|36.05,38.39|N|Collect however many Prayerblossoms you have left to gather.|

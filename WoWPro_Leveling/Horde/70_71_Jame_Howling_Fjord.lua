@@ -6,7 +6,7 @@
 -- URL: http://wow-pro.com/wiki/source_code_howling_fjord_horde
 -- Date: 2012-01-21 04:12
 -- Who: Crackerhead22
-
+   
 -- URL: http://wow-pro.com/node/3288/revisions/24858/view
 -- Date: 2011-12-10 16:03
 -- Who: Crackerhead22
@@ -149,7 +149,7 @@ T The Book of Runes |QID|11350|M|49.2,12.2|N|To Longrunner Pembe.|
 
 A Mastering the Runes |QID|11351|N|From Longrunner Pembe.|
 T March of the Giants |QID|11365|M|48.1,10.5|N|To Sage Edan.|
-A The Lodestone |QID|11366|N|From Sage Edan.|
+A The Lodestone |QID|11366|PRE|11365|N|From Sage Edan.|
 A Skorn Must Fall! |QID|11256|M|48.1,10.8|N|From Chieftain Ashtotem.|
 R Skorn |QID|11258|N|Run to Skorn.|M|44,26|
 T Skorn Must Fall! |QID|11256|U|33340|N|Use the Winterhoof Emblem and speak to the Winterhoof Brave.|
@@ -171,9 +171,9 @@ C Stop the Ascension! |QID|11260|U|33346|N|Stand next to the Pyre and use the Vr
 C Towers of Certain Doom |QID|11259|U|33344|N|The final tower is southwest.|M|43,36|
 C Gruesome, But Necessary |QID|11257|U|33342|US|N|When you kill a Vrykul, use The Brave's Machete on the corpse.|US|
 T Gruesome, But Necessary |QID|11257|U|33340|N|Summon the Brave if he's died or disappeared, then turn it in.|
-T Burn Skorn, Burn! |QID|11258|N|To the Winterhoof Brave.|
-T Towers of Certain Doom |QID|11259|N|To the Winterhoof Brave.|
-A The Conqueror of Skorn! |QID|11261|N|From the Winterhoof Brave.|
+T Burn Skorn, Burn! |QID|11258|U|33340|N|To the Winterhoof Brave.|
+T Towers of Certain Doom |QID|11259|U|33340|N|To the Winterhoof Brave.|
+A The Conqueror of Skorn! |QID|11261|U|33340|N|From the Winterhoof Brave.|
 C Wild Vines |QID|11315|N|Kill Scarlet Ivy mobs until you complete this quest. |M|51.14,26.57|S|
 C The Fallen Sisters |QID|11314|U|33606|N|Use Lurielle's Pendant on Chill Nymphs until you complete the quest.|M|51.14,26.57|
 C Wild Vines |QID|11315|N|Kill Scarlet Ivy mobs until you complete this quest. |M|51.14,26.57|US|
@@ -190,12 +190,12 @@ C Spawn of the Twisted Glade |QID|11316|N|Kill Thornvine Creepers for this quest
 T Spawn of the Twisted Glade |QID|11316|M|61.5,22.8|N|To Lurielle.|
 T Seeds of the Blacksouled Keepers |QID|11319|M|61.5,22.8|N|To Lurielle.|
 A Keeper Witherleaf |QID|11428|M|61.5,22.8|N|From Lurielle.|
-C Keeper Witherleaf |QID|11428|N|Kill Keeper Witherleaf in the area.|M|53.82,17.48|
+C Keeper Witherleaf |QID|11428|T|Keeper Witherleaf|N|Kill Keeper Witherleaf in the area.|M|53.82,17.48|
 
 T Mastering the Runes |QID|11351|N|To Longrunner Pembe.|M|49.2,12.2|
 A The Rune of Command |QID|11352|N|From Longrunner Pembe.|
 T The Lodestone |QID|11366|M|48.1,10.5|N|To Sage Edan.|
-A Demolishing Megalith |QID|11367|N|From Sage Edan.|
+A Demolishing Megalith |QID|11367|PRE|11366|N|From Sage Edan.|
 T The Conqueror of Skorn! |QID|11261|M|48.1,10.8|N|To Chieftain Ashtotem.|
 A Dealing With Gjalerbron |QID|11263|N|From Chieftain Ashtotem.|
 T Stop the Ascension! |QID|11260|N|To Greatmother Ankha.|
@@ -243,8 +243,7 @@ C Of Keys and Cages |QID|11265|N|Get any prisoners you still need.|US|
 T Brother Betrayers |QID|11415|U|33618|N|To Ulfang.|M|29.64,5.72|
 
 A Eyes of the Eagle |QID|11417|N|From Ulfang.|
-l Scourge Device |QID|11398|L|33962|N|Head to the beach and kill Scourge until you get a Scourge Device.|M|22,17|
-A It's a Scourge Device |QID|11398|U|33962|N|From the Scourge Device.|
+A It's a Scourge Device |QID|11398| |U|33962|N|Head to the beach. Kill them until you get a Scourge Device.|M|22,17|
 A Trident of the Son |QID|11422|N|From the murloc Old Icefin.|M|20,22|
 T It's a Scourge Device |QID|11398|N|To Apothecary Anastasia.|M|26.2,24.5|
 A Bring Down Those Shields |QID|11399|N|From Apothecary Anastasia.|
@@ -272,8 +271,8 @@ T And You Thought Murlocs Smelled Bad! |QID|11397|N|To Apothecary Anastasia.|M|2
 T What's in That Brew? |QID|11298|N|To Apothecary Malthus.|M|26.43,24.5|
 T Eyes of the Eagle |QID|11417|U|33618|N|To Ulfang.|M|29.64,5.72|
 
-A Alpha Worg |QID|11324|N|From Ulfang.|M|29.64,5.72|
-C Alpha Worg |QID|11324|N|Look for Garwal. You don't have to be in the Worg disguise.|M|29.2,17;27,12.8;26.4,8.4|T|Garwal|
+C Alpha Worg |QID|11324|U|33618|N|Look for Garwal. You don't have to be in the Worg disguise.|M|29.2,17;27,12.8;26.4,8.4|T|Garwal|
+C The Walking Dead |QID|11268|S|
 K Deathless Watchers|S|QID|11268|QO|Deathless Watcher slain: 10/10|N|Kill the Deathless Watchers you need for this quest.|M|33.91,9.91|
 K Putrid Wights|S|QID|11268|QO|Putrid Wight slain: 2/2|N|Kill the Putrid Wights you need for this quest.|M|33.91,9.91|
 l Awakening Rods|QID|11433|L|34083 5|S|N|Kill Necrolords until you have 5 Awakening Rods.|M|33.91,9.91|
@@ -285,7 +284,7 @@ K Deathless Watchers|US|QID|11268|QO|Deathless Watcher slain: 10/10|N|Kill the D
 K Putrid Wights|US|QID|11268|QO|Putrid Wight slain: 2/2|N|Kill the Putrid Wights you need for this quest.|M|33.91,9.91|
 l Awakening Rods|QID|11433|L|34083 5|US|N|Kill Necrolords until you have 5 Awakening Rods.|M|33.91,9.91|
 C Sleeping Giants |QID|11433|U|34083|N|Use the Awakening Rods on the sleeping Vrykul.|S|
-C The Walking Dead |QID|11268|N|Enter The Waking Halls. Kill Fearsome Horrors to complete this quest.|M|34.44,13.16|
+C The Walking Dead |QID|11268|US|N|Enter The Waking Halls. Kill Fearsome Horrors to complete this quest.|M|34.44,13.16|
 C Sleeping Giants |QID|11433|U|34083|N|Use the Awakening Rods on the sleeping Vrykul.|US|
 T Alpha Worg |QID|11324|N|To Sage Mistwalker.|M|31.17,24.50|
 T Rivenwood Captives |QID|11296|M|31.26,24.35|N|To Longrunner Skycloud.|
@@ -305,7 +304,7 @@ A Apply Heat and Stir |QID|11306|M|53.57,66.37|N|From Chief Plaguebringer Harris
 C Apply Heat and Stir |QID|11306|N|Use the Empty Apothecary Flask next to the cauldron to the Apothecary's right. Then use the Flask of Vrykul Blood on the table on the other side. It can take a while, as the fail rate is kind of bad. It can also proc a blast which hits you you 3k and can crit.|
 T Apply Heat and Stir |QID|11306|M|53.57,66.37|N|To Chief Plaguebringer Harris.|
 A Field Test |QID|11307|M|53.57,66.37|N|From Chief Plaguebringer Harris.|
-C Field Test |QID|11307|U|33621|N|Head north to Halgrind. Use the Plague Spray on the Vrykuls.|M|49.56,57.21|
+C Field Test |QID|11307|U|33621|N|Head north to Halgrind at (49.56,57.21). Use the Plague Spray on the Vrykuls. Entrance is at (47.84,58.21)|M|47.84,58.21;49.56,57.21|
 C Green Eggs and Whelps |QID|11279|S|U|33418|N|Use the Plague Canister on the eggs, kill the whelp, loot the specimen.|
 C Root Causes |QID|11182|N|Skeld Drakeson is in the southern building at the waypoint. The Dragonflayer Handlers are all around the area.|M|41.5,52.3|
 C Green Eggs and Whelps |QID|11279|US|M|39.95,51.14|U|33418|N|Use the Plague Canister on the eggs, kill the whelp, loot the specimen.|
@@ -317,12 +316,14 @@ A Time for Cleanup |QID|11308|M|53.57,66.37|N|From Chief Plaguebringer Harris.|
 T Time for Cleanup |QID|11308|M|53.67,65.25|N|To "Hacksaw" Jenny.|
 
 A Parts for the Job |QID|11309|M|53.67,65.25|N|From "Hacksaw" Jenny.|
-N Things to do |QID|11309|N|Kill Shoveltusks on sight, they're the things that look vaguely like moose.|
+; N Things to do |QID|11309|N|Kill Shoveltusks on sight, they're the things that look vaguely like moose.|
+C Fresh Pound of Flesh |QID|11309|S| |N|Kill Shoveltusks on sight, they're the things that look vaguely like moose.|
+
 C Shield Hill |QID|11424|M|59.00,78.00|N|Kill and loot Risen Vrykul.|S|
-l Fengir's Clue |QID|11504|QO|Fengir's Clue: 1/1|N|Loot Fengir's Clue here. |M|57.67,77.62|
-l Rodin's Clue |QID|11504|QO|Rodin's Clue: 1/1|N|Loot Rodin's Clue here. |M|59.27,77.00|
-l Isuldof's Clue |QID|11504|QO|Isuldof's Clue: 1/1| |N|Loot Isuldof's Clue here. |M|59.79,79.39|
-C The Dead Rise! |QID|11504|N|Loot Windan's Clue here. |M|61.97,80.06|
+C Fengir's Clue |QID|11504|NC|QO|Fengir's Clue: 1/1|N|Fengir's Clue is in a pile of dirt called Mound of Debris at|M|57.7,77.5|
+C Rodin's Clue |QID|11504|NC|QO|Rodin's Clue: 1/1|N|Rodin's Clue is to the east in an Unlocked Chest at|M|59.2,77.0|
+C Isuldof's Clue |QID|11504|NC|QO|Isuldof's Clue: 1/1|N|Isuldof's Clue is southeast, a Long Tail Feather at|M|59.4,79.4|
+C Windan's Clue |QID|11504|NC|QO|Windan's Clue: 1/1|N|Windan's clue, the last of them, is east in a Cannonball at|M|62.0,80.1|
 C Shield Hill |QID|11424|M|59.00,78.00|N|Kill and loot Risen Vrykul.|US|
 
 A Against Nifflevar |QID|12482|N|From Ranger Captain Areiel.|M|67.45,60.59|
@@ -334,8 +335,10 @@ C The Enemy's Legacy |QID|11423|N|The Saga of the Twins is in the longhouse west
 C Against Nifflevar |QID|12482|N|Kill Dragonflayer Warriors, Rune-Seers, and Hunting Hounds.|US|M|68.27,54.25|
 T Against Nifflevar |QID|12482|N|To Ranger Captain Areiel.|M|67.45,60.59|
 T The Enemy's Legacy |QID|11423|M|67.35,60.31|N|To Scribe Seguine.|
-l Shoveltusk Ligament |QID|11309|L|33611 6|N|Go kill Shoveltusks if you haven't finished this already.|M|67.69,62.81|
-C Parts for the Job |QID|11309|Anton patrols along the road between New Agamand and the Ancient Lift. If he's dead, he respawns at the waypoint.|M|53,74|
+
+C Fresh Pound of Flesh |QID|11309|US|L|33612|T|Anton| |N|Anton patrols along the road between New Agamand and the Ancient Lift.|M|46.2,70.0;50.0,74.2;52.2,73.6|
+C Parts for the Job |QID|11309| |N|Anton patrols along the road between New Agamand and the Ancient Lift. If he's dead, he respawns at the waypoint.|
+
 T Shield Hill |QID|11424|N|To "Hacksaw" Jenny.|
 T Parts for the Job |QID|11309|N|To "Hacksaw" Jenny.|
 
@@ -369,9 +372,9 @@ b Scalawag Point |QID|11509|N|Talk to Lou the Cabin Boy and choose his chat bubb
 T Street "Cred" |QID|11509|M|35.1,80.9|N|To "Silvermoon" Harry.|
 A "Scoodles" |QID|11510|M|35.1,80.9|N|From "Silvermoon" Harry.|
 A Forgotten Treasure |QID|11434|M|35.6,80.2|N|From Handsome Terry.|
-C "Scoodles" |QID|11510|N|Find and kill "Scoodles" and loot his Sin'dorei Scrying Crystal. |M|36.40,85.27|
-l Eagle Figurine |QID|11434|QO|Eagle Figurine: 1/1|U|34076|N|Use the Fish Bladder for underwater breathing, then dive down and loot the Eagle Figurine inside the ship here. |M|37.77,84.62|
-C Forgotten Treasure |QID|11434|N|Swim to the other ship here and loot the Amani Vase. |M|37.14,85.53|
+C "Scoodles" |QID|11510|T|"Scoodles"|N|Find and kill "Scoodles" and loot his Sin'dorei Scrying Crystal. |M|36.40,85.27|
+C Eagle Figurine |QID|11434|NC|QO|Eagle Figurine: 1/1|U|34076|N|Use the Fish Bladder for underwater breathing, then dive down and loot the Eagle Figurine inside the ship here. |M|37.77,84.62|
+C Amani Vase |QID|11434|NC|QO|Amani Vase: 1/1|U|34076|N|Swim to the other ship here and loot the Amani Vase.|M|37.14,85.53|
 T Forgotten Treasure |QID|11434|M|35.6,80.2|N|To Handsome Terry.|
 A The Fragrance of Money |QID|11455|M|35.6,80.2|N|From Handsome Terry.|
 T "Scoodles" |QID|11510|M|35.1,80.9|N|To "Silvermoon" Harry.|
@@ -421,7 +424,7 @@ A Meet Number Two |QID|11480|M|35.6,80.2|N|From Handsome Terry.|
 T Meet Number Two |QID|11480|M|35.4,79.4|N|To Annie Bonn.|
 
 A The Jig is Up |QID|11471|N|From Annie Bonn.|
-C Swabbin' Soap |QID|11469|N|Kill Big Roy here and loot Big Roy's Blubber. |M|31.33,78.68|
+C Swabbin' Soap |QID|11469|T|Big Roy|N|Kill Big Roy here and loot Big Roy's Blubber. |M|31.33,78.68|
 C The Jig is Up |QID|11471|N|Beat "Mad" Jonah Sterling down to ~30%, then kill Hozzer when he awakens, and loot Jonah Sterling's Spyglass from Hozzer. |M|33.60,78.18|
 C The Frozen Heart of Isuldof |QID|11512|N|Loot The Frozen Heart of Isuldof from the ground here. |M|32.33,78.67|
 T The Jig is Up |QID|11471|N|To Annie Bonn.|
@@ -444,10 +447,10 @@ T Draconis Gastritis |QID|11280|N|To Plaguebringer Tillinghast.|M|53.10,66.90|
 T Warning: Some Assembly Required |QID|11310|M|53.68,65.22|N|To "Hacksaw" Jenny.|
 R Shield Hill |QID|11568|N|Go to Shield Hill.|M|56.44,75.58|
 
-N Shield of the Aesirites |QID|11568|QO|Shield of the Aesirites Returned: 1/1|U|34624|N|Use the Bundle of Vrykul Artifacts here. |M|57.67,77.62|
-N Staff of Storm's Fury |QID|11568|QO|Staff of Storm's Fury Returned: 1/1|U|34624|N|Use the Bundle of Vrykul Artifacts here. |M|59.27,77.00|
-N Frozen Heart of Isuldof |QID|11568|QO|Frozen Heart of Isuldof Returned: 1/1|U|34624|N|Use the Bundle of Vrykul Artifacts here. |M|59.79,79.39|
-C A Return to Resting |QID|11568|U|34624|N|Use the Bundle of Vrykul Artifacts here. |M|61.97,80.06|
+C Fengir|QID|11568|NC|QO|Shield of the Aesirites Returned: 1/1|U|34624|N|Use the Bundle of Vrykul Artifacts here. |M|57.65,77.62|
+C Rodin|QID|11568|NC|QO|Staff of Storm's Fury Returned: 1/1|U|34624|N|Use the Bundle of Vrykul Artifacts here. |M|59.32,76.96|
+C Isuldof|QID|11568|NC|QO|Frozen Heart of Isuldof Returned: 1/1|U|34624|N|Use the Bundle of Vrykul Artifacts here. |M|59.80,79.39|
+C Wodin|QID|11568|NC|QO|Ancient Armor of the Kvaldir Returned: 1/1|U|34624|N|Use the Bundle of Vrykul Artifacts here. |M|61.97,80.06|
 T A Return to Resting |QID|11568|M|40.3,60.3|N|To Orfus of Kamagua.|
 A Return to Atuik |QID|11572|M|40.3,60.3|N|From Orfus of Kamagua.|
 T Return to Atuik |QID|11572|M|25.0,57.0|N|To Elder Atuik.|

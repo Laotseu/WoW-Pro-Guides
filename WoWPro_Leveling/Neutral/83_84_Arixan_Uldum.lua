@@ -146,10 +146,10 @@ T Escape From the Lost City|QID|28112|M|54.90,32.84|N|To King Phaoris. Don't be 
 
 A Impending Retribution|QID|28134|M|54.90,32.84|N|From King Phaoris.|
 
-h Ramkahen|QID|28141|M|54.73,32.94|N|At Kazemde.|
+h Ramkahen|QID|28134|M|54.73,32.94|N|At Kazemde.|
 
 ; Flight plans Ramkahen, Oasis of Vir'sar and Schnottz's Landing are showing as already known when above is followed.
-; f Ramkahen|QID|28141|M|56.18,33.66|N|At Kurzel.|
+f Ramkahen|M|56.18,33.66|N|At Kurzel.|
 
 C Speak with Sun Priest Asaris|QID|28134|M|52.98,27.78|QO|Speak with Sun Priest Asaris: 1/1|N|Speak to Sun Priest Asaris for Impending Retribution quest.|NC|
 
@@ -167,7 +167,7 @@ T Relics of the Sun King|QID|28141|M|52.98,27.75|N|To Sun Priest Asaris.|US|
 
 A The Bandit Warlord|QID|28502|M|52.98,27.75|N|From Sun Priest Asaris.|
 
-C The Bandit Warlord|QID|28502|M|45.72,16.20|N|Go to the waypoint and kill Warlord Ihsenn.|
+C The Bandit Warlord|QID|28502|T|Warlord Ihsenn|M|45.72,16.20|N|Go to the waypoint and kill Warlord Ihsenn.|
 T The Bandit Warlord|QID|28502|M|52.98,27.63|N|To Sun Priest Asaris.|
 C Speak with Asaq|QID|28134|M|49.66,39.13|QO|Speak with Asaq: 1/1|N|Talk to Asaq for Impending Retribution Quest.|NC|
 A Take it to 'Em!|QID|27993|M|49.68,39.03|N|From Mack.|
@@ -317,7 +317,7 @@ C The Defilers' Ritual|QID|28611|M|52.81,45.59;52.18,40.18;49.89,40.11|N|At the 
 T The Defilers' Ritual|QID|28611|M|52.81,45.59;54.18,41.83|N|To High Priest Amet.|
 
 A The Root of the Corruption|QID|27838|M|54.20,42.00|N|From High Priest Amet.|
-C The Root of the Corruption|QID|27838|M|58.92,14.13|N|Head to the waypoint and kill Scalemother Hevna.|
+C The Root of the Corruption|QID|27838|T|Scalemother Hevna|M|58.92,14.13|N|Head to the waypoint and kill Scalemother Hevna.|
 T The Root of the Corruption|QID|27838|M|57.87,42.52;54.16,41.93|N|To High Priest Amet.|
 T The High Commander's Vote|QID|27631|M|57.87,42.52;58.84,46.14|N|To High Commander Kamses.|
 
@@ -410,9 +410,9 @@ N Second Bomb Cluster|QID|27761|U|62398|M|79.01,64.05|N|Use the Holographic Proj
 C A Disarming Distraction|QID|27761|U|62398|M|78.81,61.82|N|Use the Holographic Projector then right-click on the First Bomb Cluster to disarm it.|QO|First Bomb Cluster disarmed: 1/1|
 C Unstable Bomb Bot deactivated|QID|27761|U|62398|QO|Unstable Bomb Bot deactivated: 4/4|M|79.01,64.05|N|Don't try to fight the cursed engineers. Use the Holographic Projector to distract them repeatedly. Right-click on the Unstable Bomb Bots to defuse them.|US|
 
-T A Disarming Distraction|QID|27761|M|74.08,64.44|N|To the A.I.D.A. Terminal.|S|
-T Core Access Codes|QID|27777|M|74.08,64.44|N|To the A.I.D.A. Terminal.|
-T A Disarming Distraction|QID|27761|M|74.08,64.44|N|To the A.I.D.A. Terminal.|US|
+T A Disarming Distraction|QID|27761|U|62398|M|74.08,64.44|N|To the A.I.D.A. Terminal.|S|
+T Core Access Codes|QID|27777|U|62398|M|74.08,64.44|N|To the A.I.D.A. Terminal.|
+T A Disarming Distraction|QID|27761|U|62398|M|74.08,64.44|N|To the A.I.D.A. Terminal.|US|
 
 A Hacking the Wibson|QID|27778|M|74.08,64.44|N|From the A.I.D.A. Terminal.|
 C Hacking the Wibson|QID|27778|M|76.94,62.96|N|Fly to the top of the M.A.C Diver (That big fish looking vehicule). Right-click the maintenance tools, loot the Maintenance Axe. Right-click the Wibson Mainframe.|NC|
@@ -489,9 +489,10 @@ C Dirty Birds|QID|27940|S|M|41,69.6|N|Kill Diseased Vultures. Keep an eye out fo
 C A Favor for the Furrier|QID|27928|M|41.3,72.3|N|Kill Desert Coyotes. Keep an eye out for the Desert Fox.|S|
 C The Desert Fox|QID|27939|M|45.13,72.83|T|Desert Fox|N|Find the Desert Fox (friendly NPC running around this area) and capture it.|
 C Dirty Birds|QID|27940|US|M|41,69.6|N|Finish slaying Diseased Vultures.|
-T Dirty Birds|QID|27940|US|M|41,69.6|N|When you finish killing them, should pop up.|
+T Dirty Birds|QID|27940|US|M|41,69.6|N|When you finish killing them, should pop up.|S|
 C A Favor for the Furrier|QID|27928|M|41.3,72.3|N|Finish slaying Desert Coyotes.|US|
 
+T Dirty Birds|QID|27940|US|M|41,69.6|N|When you finish killing them, should pop up.|US|
 T A Favor for the Furrier|QID|27928|M|24.42,64.56|N|To Belloc Brightblade.|
 
 A Fashionism|QID|27941|M|24.43,64.55|N|From Belloc Brightblade.|
@@ -568,10 +569,9 @@ C Two Tents|QID|28274|M|29.67,22.32|N|Watch the cinematic.|
 T Two Tents|QID|28274|M|29.57,21.90|N|To Sullah.|
 
 A Master Trapper|QID|28350|M|29.57,21.90|N|From Sullah.|S|
-A Camel Tow|QID|28352|M|29.57,21.90|N|From Sullah.|S|
+A Camel Tow|QID|28352|M|29.57,21.90|N|From Sullah.|
 A Unlimited Potential|QID|28351|M|29.57,21.90|N|From Sullah.|
 A Master Trapper|QID|28350|M|29.57,21.90|N|From Sullah.|US|
-A Camel Tow|QID|28352|M|29.57,21.90|N|From Sullah.|US|
 
 C Master Trapper|QID|28350|M|28.50,23.29|N|Kill Wild Camels and loot their Meat Scraps.|S|
 C Camel Tow|QID|28352|U|67241|S|M|29.76,30.26|N|Beat down a Wild Camel down to 35% HP then use Sullah's Camel Harness. Repeat 3 times.|
@@ -580,10 +580,9 @@ C Camel Tow|QID|28352|U|67241|US|M|29.76,30.26|N|Beat down a Wild Camel down to 
 C Master Trapper|QID|28350|M|28.50,23.29|N|Kill Wild Camels and loot their Meat Scraps.|US|
 
 T Master Trapper|QID|28350|M|29.56,21.92|N|To Sullah.|S|
-T Camel Tow|QID|28352|M|29.56,21.92|N|To Sullah.|S|
+T Camel Tow|QID|28352|M|29.56,21.92|N|To Sullah.|
 T Unlimited Potential|QID|28351|M|29.56,21.92|N|To Sullah.|
 T Master Trapper|QID|28350|M|29.56,21.92|N|To Sullah.|US|
-T Camel Tow|QID|28352|M|29.56,21.92|N|To Sullah.|US|
 
 A Jonesy Sent For You|QID|28353|M|29.56,21.92|N|From Sullah.|
 T Jonesy Sent For You|QID|28353|M|27.02,7.62|N|To Harrison Jones.|

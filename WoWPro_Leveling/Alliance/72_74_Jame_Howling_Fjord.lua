@@ -42,7 +42,7 @@ return [[
 A Hell Has Frozen Over... |QID|11228|M|61.1,62.7|N|From Macalroy.|
 T Hell Has Frozen Over... |QID|11228|M|60.5,61.1|N|To Vice Admiral Keller.|
 A If Valgarde Falls... |QID|11243|M|60.5,61.1|N|From Vice Admiral Keller.|
-f Valgarde |QID|11243|N|Get the flight path for Valgarde Keep.|M|59.79,63.24|
+f Valgarde |N|Get the flight path for Valgarde Keep.|M|59.79,63.24|
 h Valgarde |QID|11243|N|Set your hearthstone to Valgarde Keep.|M|58.39,62.46|
 C If Valgarde Falls... |QID|11243|N|Go to the north side of the village and kill the mobs for this quest. |M|58.89,59.51|
 T If Valgarde Falls... |QID|11243|M|60.5,61.1|N|To Vice Admiral Keller.|
@@ -185,7 +185,7 @@ A There Exists No Honor Among Birds |QID|11470|M|75.3,65.0|N|From Hidalgo the Ma
 C There Exists No Honor Among Birds |QID|11470|U|34124|N|Go to the Vrykul Hawk Roost and use your Trained Rock Falcon. Use the first ability to pick up eggs, the second for a speed boost, and the third to stun Hawk Matriarchs if they attack you. Collect 8 eggs, then cancel the buff. |M|76.60,67.60|
 T There Exists No Honor Among Birds |QID|11470|M|75.3,65.0|N|To Hidalgo the Master Falconer.|
 F Westguard Keep |QID|11291|N|Talk to Walt and tell him you're ready to go. This will fly you to Westguard Keep. |M|75.04,65.51|
-f Westguard Keep |QID|11291|N|Get the flight path for Westguard Keep. |M|31.26,43.98|
+f Westguard Keep |N|Get the flight path for Westguard Keep. |M|31.26,43.98|
 T To Westguard Keep! |QID|11291|M|28.8,44.1|N|To Captain Adams.|
 T News From the East |QID|11501|N|To Captain Adams.|
 
@@ -257,7 +257,7 @@ b Scalawag Point |QID|11509|N|Talk to Lou the Cabin Boy and choose his chat bubb
 T Street "Cred" |QID|11509|M|35.1,80.9|N|To "Silvermoon" Harry.|
 A "Scoodles" |QID|11510|M|35.1,80.9|N|From "Silvermoon" Harry.|
 A Forgotten Treasure |QID|11434|M|35.6,80.2|N|From Handsome Terry.|
-C "Scoodles" |QID|11510|N|Find and kill "Scoodles" and loot his Sin'dorei Scrying Crystal. |M|36.40,85.27|
+C "Scoodles" |QID|11510|T|"Scoodles"|N|Find and kill "Scoodles" and loot his Sin'dorei Scrying Crystal. |M|36.40,85.27|
 l Eagle Figurine |QID|11434|QO|Eagle Figurine: 1/1|U|34076|N|Use the Fish Bladder for underwater breathing, then dive down and loot the Eagle Figurine inside the ship here. |M|37.77,84.62|
 C Forgotten Treasure |QID|11434|N|Swim to the other ship here and loot the Amani Vase. |M|37.14,85.53|
 T Forgotten Treasure |QID|11434|M|35.6,80.2|N|To Handsome Terry.|
@@ -308,7 +308,7 @@ A Meet Number Two |QID|11480|M|35.6,80.2|N|From Handsome Terry.|
 T Meet Number Two |QID|11480|M|35.4,79.4|N|To Annie Bonn.|
 
 A The Jig is Up |QID|11471|N|From Annie Bonn.|
-C Swabbin' Soap |QID|11469|N|Kill Big Roy here and loot Big Roy's Blubber. |M|31.33,78.68|
+C Swabbin' Soap |QID|11469|T|Big Roy|N|Kill Big Roy here and loot Big Roy's Blubber. |M|31.33,78.68|
 C The Jig is Up |QID|11471|N|Beat "Mad" Jonah Sterling down to ~30%, then kill Hozzer when he awakens, and loot Jonah Sterling's Spyglass from Hozzer. |M|33.60,78.18|
 C The Frozen Heart of Isuldof |QID|11512|N|Loot The Frozen Heart of Isuldof from the ground here. |M|32.33,78.67|
 T The Jig is Up |QID|11471|N|To Annie Bonn.|
@@ -364,7 +364,7 @@ T I'll Try Anything! |QID|11329|M|60.3,18.7|N|To Christopher Sloan.|
 
 A The One That Got Away |QID|11410|M|60.3,18.7|N|From Christopher Sloan.|
 A The Yeti Next Door |QID|11284|M|60.2,15.6|N|From Foreman Colbey.|
-f Fort Wildervar |QID|11406|N|Get the flight path for Fort Wildervar. |M|60.05,16.11|
+f Fort Wildervar |N|Get the flight path for Fort Wildervar. |M|60.05,16.11|
 A The Enigmatic Frost Nymphs |QID|11302|M|61.8,17.2|N|From Lieutenant Maeve.|
 A The Book of Runes |QID|11346|M|62.3,17.2|N|From Prospector Belvar.|
 T Everything Must Be Ready |QID|11406|M|62.6,16.8|N|To Gil Grisert.|
@@ -417,19 +417,19 @@ T Spawn of the Twisted Glade |QID|11316|M|61.5,22.8|N|To Lurielle.|
 T Seeds of the Blacksouled Keepers |QID|11319|M|61.5,22.8|N|To Lurielle.|
 
 A Keeper Witherleaf |QID|11428|M|61.5,22.8|N|From Lurielle.|
-C Keeper Witherleaf |QID|11428|N|Kill Keeper Witherleaf in the area.|M|53.82,17.48|
+C Keeper Witherleaf |QID|11428|T|Keeper Witherleaf|N|Kill Keeper Witherleaf in the area.|M|53.82,17.48|
 T Keeper Witherleaf |QID|11428|M|61.5,22.8|N|To Lurielle.|
 C Down to the Wire |QID|11269|N|Finish collecting Spotted Hippogryph Downs and Trapped Animals. |M|51.96,20.11|US|
 C Preying Upon the Weak |QID|11292|N|Finish collecting Trapped Animals. |M|51.96,20.11|US|
-K Binder Murdis |QID|11348|QO|Binder Murdis slain: 1/1|N|Kill Binder Murdis here. |M|71.85,24.56|
+K Binder Murdis |QID|11348|QO|Binder Murdis slain: 1/1|T|Binder Murdis|N|Kill Binder Murdis here. |M|71.85,24.56|
 C The Rune of Command |QID|11348|U|33796|N|Use the Rune of Command on a Stone Giant nearby. |M|71.96,23.16|
-C Demolishing Megalith |QID|11359|N|Mount up and find Megalith up here. Kill Megalith. |M|67.94,10.64|
+C Demolishing Megalith |QID|11359|T|Megalith|N|Mount up and find Megalith up here. Let Megalith hit you once, then sit back and let your Stone Giant get some threat. Help your pet kill Megalith in order to solo him. If you fail, try again in 5 minutes. |M|67.94,10.64|
 T Demolishing Megalith |QID|11359|N|To Researcher Aderan.|
 T The Rune of Command |QID|11348|M|62.3,17.2|N|To Prospector Belvar.|
 T Preying Upon the Weak |QID|11292|M|62.6,16.8|N|To Trapper Jethan.|
 T Down to the Wire |QID|11269|M|62.6,16.8|N|To Gil Grisert.|
 A We Call Him Steelfeather |QID|11418|M|62.6,16.8|N|From Gil Grisert.|
-C We Call Him Steelfeather |QID|11418|U|34026|N|Target Steelfeather (/tar Steel), then use the Feathered Charm and wait for the quest complete message.|
+C We Call Him Steelfeather |QID|11418|U|34026|T|Steelfeather|N|Target Steelfeather (/tar Steel), then use the Feathered Charm and wait for the quest complete message.|
 T We Call Him Steelfeather |QID|11418|M|62.6,16.8|N|To Gil Grisert.|
 r Sell junk, repair, re-stock food/drink. |QID|11322|M|61.01,17.07|
 H Westguard Inn |QID|11322|N|Hearth back to Westguard Keep.|
@@ -439,10 +439,10 @@ A In Worg's Clothing |QID|11325|M|30.2,28.7|N|From Watcher Moonleaf.|
 C Scare the Guano Out of Them! |S|QID|11154|U|33129|N|Collecting Darkclaw Guano by using Feknut's Firecrackers at the bottoms of trees with Darkclaw Bats nearby. Kill the bat, then loot the Darkclaw Guano off the ground. |M|30.10,18.63|
 T In Worg's Clothing |QID|11325|U|33618|N|Use the Worg Disguise once you're near the quest turn in.|M|29.7,5.7|
 A Brother Betrayers |QID|11414|M|29.7,5.7|N|From Ulfang.|
-K Bjomolf |QID|11414|QO|Bjomolf slain: 1/1|T|Bjomolf|N|Look for Bjomolf and kill him. Use the Worg Disguise again to make searching for him easier. |M|27.11,20.31|U|33618|
+K Bjomolf |QID|11414|QO|Bjomolf slain: 1/1|T|Bjomolf|N|Look for Bjomolf and kill him. Use the Worg Disguise again to make searching for him easier. |M|27.11,20.31|
 C Scare the Guano Out of Them! |US|QID|11154|U|33129|N|Finish collecting Darkclaw Guano by using Feknut's Firecrackers at the bottoms of trees with Darkclaw Bats nearby. Kill the bat, then loot the Darkclaw Guano off the ground. |M|30.10,18.63|
 T Scare the Guano Out of Them! |QID|11154|M|30.2,28.7|N|To Engineer Feknut.|
-C Brother Betrayers |QID|11414|T|Varg|N|Look for Varg and kill him. Use the Worg Disguise again to make searching for him easier. |M|34.51,31.15|U|33618|
+C Brother Betrayers |QID|11414|T|Varg|N|Look for Varg and kill him. Use the Worg Disguise again to make searching for him easier. |M|34.51,31.15|
 T Brother Betrayers |QID|11414|U|33618|M|29.7,5.7|N|To Ulfang.|
 A Eyes of the Eagle |QID|11416|M|29.7,5.7|N|From Ulfang.|
 R Skorn |QID|11248|N|Ride to Skorn, then use your Westguard Command Insignia to summon a quest giver. |M|44.34,26.21|
@@ -452,15 +452,14 @@ A Towers of Certain Doom |QID|11245|M|44.4,26.4|N|From Westguard Sergeant.|
 A Gruesome, But Necessary |QID|11246|M|44.4,26.4|N|From Westguard Sergeant.|
 A Burn Skorn, Burn! |QID|11247|M|44.4,26.4|N|From Westguard Sergeant.|
 C Gruesome, But Necessary |S|QID|11246|U|33310|N|Dismember Vrykul corpses by using The Sergeant's Machete on them. |M|44.92,34.36|
-l Vrykul Scroll of Ascension |S|QID|11249|L|33314|N|Kill and loot Vrykul mobs until you have the Vrykul Scroll of Ascension. |M|44.92,34.36|
+A Stop the Ascension! |S|QID|11249|U|33314|N|Kill and loot Vrykul mobs until you have the Vrykul Scroll of Ascension. |M|44.92,34.36|
 U Northwest Longhouse |QID|11247|QO|Northwest Longhouse Set Ablaze: 1/1|U|33321|N|Go inside the longhouse here and use the Sergeant's Torch. |M|43.62,28.69|
 U Northwest Tower |QID|11245|QO|Northwest Tower Targeted: 1/1|U|33323|N|Get within 90 yards of the tower here and use the Sergeant's Flare. |M|43.61,29.91|
 U Northeast Longhouse |QID|11247|QO|Northeast Longhouse Set Ablaze: 1/1|U|33321|N|Go inside the longhouse here and use the Sergeant's Torch. |M|46.38,28.16|
 C Burn Skorn, Burn! |QID|11247|U|33321|N|Go inside the Barracks here and use the Sergeant's Torch. |M|45.80,30.45|
 U East Tower |QID|11245|QO|East Tower Targeted: 1/1|U|33323|N|Get within 90 yards of the tower here and use the Sergeant's Flare. |M|46.70,32.85|
 U Southeast Tower |QID|11245|QO|Southeast Tower Targeted: 1/1|U|33323|N|Get within 90 yards of the tower here and use the Sergeant's Flare. |M|47.10,36.87|
-l Vrykul Scroll of Ascension |US|QID|11249|L|33314|N|Kill Vrykul mobs until you have the Vrykul Scroll of Ascension. |M|44.92,34.36|
-A Stop the Ascension! |QID|11249|U|33314|N|Use the Vrykul Scroll of Ascension to get this quest.|M|45.3,27.0|
+A Stop the Ascension! |US|QID|11249|U|33314|N|Kill and loot Vrykul mobs until you have the Vrykul Scroll of Ascension. |M|44.92,34.36|
 C Stop the Ascension! |QID|11249|U|33339|N|Use the Vrykul Scroll of Ascension at Thane's Pyre to summon Halfdan the Ice-Hearted, then kill him. |M|44.83,34.93|
 C Towers of Certain Doom |QID|11245|U|33323|N|Get within 90 yards of the tower here and use the Sergeant's Flare. |M|43.18,36.11|
 C Gruesome, But Necessary |US|QID|11246|U|33310|N|Finish dismembering Vrykul corpses by using The Sergeant's Machete on them. |M|44.92,34.36|
@@ -476,13 +475,12 @@ C Send Them Packing |US|QID|11224|N|Finish useing "/raise" with Abandoned Pack M
 T Where is Explorer Jaren? |QID|11393|N|Jump down into the water and swim to the land west to get to Jaren.|M|24.2,32.5|
 A And You Thought Murlocs Smelled Bad! |QID|11394|M|24.2,32.5|N|From Explorer Jaren.|
 C And You Thought Murlocs Smelled Bad! |S|QID|11394|N|Kill any Scourge mobs you need for this quest. |M|22.78,31.13|
-l Scourge Device |QID|11395|L|33961|N|Kill Scourge mobs until you get a Scourge Device. |M|22.78,31.13|
-A It's a Scourge Device |QID|11395|U|33961|M|22.6,28.6|N|From the Scourge Device.|
+A It's a Scourge Device |QID|11395|U|33961|N|Kill Scourge mobs until you get a Scourge Device. |M|22.78,31.13|
 T It's a Scourge Device |QID|11395|M|24.2,32.5|N|To Explorer Jaren.|
 A Bring Down Those Shields |QID|11396|M|24.2,32.5|N|From Explorer Jaren.|
 C Bring Down Those Shields |QID|11396|U|33960|N|Find the 3 Scourging Crystals and use the Scourging Crystal Controller on them, then kill them. Pet kills do not count.|M|22.69,31.14;21.92,28.75;21.52,24.60|
 A Trident of the Son |QID|11422|M|19.8,22.2|N|From Old Icefin.|
-C Trident of the Son |QID|11422|N|Find Rotgill patrolling the coast here and kill him for Rotgill's Trident. |M|24.24,35.67|
+C Trident of the Son |QID|11422|T|Rotgill|N|Find Rotgill patrolling the coast here and kill him for Rotgill's Trident. |M|24.24,35.67|
 C And You Thought Murlocs Smelled Bad! |US|QID|11394|N|Kill any remaining Scourge mobs you need for this quest. |M|22.78,31.13|
 T And You Thought Murlocs Smelled Bad! |QID|11394|M|24.2,32.5|N|To Explorer Jaren.|
 T Bring Down Those Shields |QID|11396|M|24.2,32.5|N|To Explorer Jaren.|
@@ -497,15 +495,14 @@ T All Hail the Conqueror of Skorn! |QID|11250|M|28.8,44.1|N|To Captain Adams.|
 
 A Dealing With Gjalerbron |QID|11235|M|28.8,44.1|N|From Captain Adams.|
 A Of Traitors and Treason |QID|12297|N|From Captain Adams.|
-A Of Keys and Cages |QID|11231|M|28.9,44.0|N|From Father Levariol.|
+A Of Keys and Cage |QID|11231|M|28.9,44.0|N|From Father Levariol.|
 r Sell junk, repair, re-stock food/drink. |QID|11416|M|29.83,42.60|
+A Gjalerbron Attack Plans |S|QID|11237|U|33289|N|Kill Vrykul here until you get Gjalerbron Attack Plans. |M|34.68,15.28|
 C Dealing With Gjalerbron |S|QID|11235|N|Kill the Vrykul you need for this quest. |M|34.68,15.28|
-l Gjalerbron Attack Plans |S|QID|11237|L|33289|N|Kill Vrykul here until you get Gjalerbron Attack Plans. |M|34.68,15.28|
 C Of Keys and Cage |QID|11231|N|Kill Vrykul mobs in this area and use their keys to open cages nearby. Free prisoners here until you complete the quest. |M|34.68,15.28|
 C Dealing With Gjalerbron |US|QID|11235|N|Kill the remaining Vrykul you need for this quest. |M|34.68,15.28|
-l Gjalerbron Attack Plans |US|QID|11237|L|33289|N|Kill Vrykul here until you get Gjalerbron Attack Plans. |M|34.68,15.28|
+A Gjalerbron Attack Plans|US|QID|11237|U|33289|N|Kill Vrykul here until you get Gjalerbron Attack Plans. |M|34.68,15.28|
 
-A Gjalerbron Attack Plans |QID|11237|U|33289|M|35.1,16.0|N|From the Gjalerbron Attack Plans.|
 T Eyes of the Eagle |QID|11416|U|33618|M|29.7,5.7|N|To Ulfang.|
 A Alpha Worg |QID|11326|U|33618|M|29.7,5.7|N|From Ulfang.|
 C Alpha Worg |QID|11326|U|33618|N|Look for Garwal and kill him. Use the Worg Disguise again to make searching for him easier. |M|27.11,14.88|T|Garwal|
@@ -524,8 +521,7 @@ r Sell junk, repair, re-stock food/drink. |QID|11239|M|29.83,42.60|
 K Deathless Watchers|S|QID|11239|QO|Deathless Watcher slain: 10/10|N|Kill the Deathless Watchers you need for this quest.|M|33.91,9.91|
 K Putrid Wights|S|QID|11239|QO|Putrid Wight slain: 2/2|N|Kill the Putrid Wights you need for this quest.|M|33.91,9.91|
 l Awakening Rods|QID|11432|L|34083 5|S|N|Kill Necrolords until you have 5 Awakening Rods.|M|33.91,9.91|
-l Mezhen's Writings |QID|11452|L|34090|N|Kill Necro Overlord Mezhen here and loot Mezhen's Writings.|M|38.80,13.09|
-A The Slumbering King |QID|11452|U|34090|M|38.8,13.0|N|From Mezhen's Writings.|
+A The Slumbering King |QID|11452|U|34090|N|Kill Necro Overlord Mezhen here and loot Mezhen's Writings.|M|38.80,13.09|
 C The Slumbering King |QID|11452|N|Kill Queen Angerboda here. |M|40.89,6.47|
 C The Frost Wyrm and its Master |QID|11238|U|33282|N|Kill Wyrmcaller Vile here last and loot the Wyrmcaller's Horn. Use it and kill Glacion when he arrives. |M|36.43,7.33|
 

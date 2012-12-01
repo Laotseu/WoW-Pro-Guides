@@ -70,7 +70,7 @@ A Malaise |QID|10555|M|37.1,65.6|N|From Daranelle.|
 A Into the Draenethyst Mine |QID|10510|M|37.4,65.0|N|From Bronwyn Stouthammer.|
 A Strange Brew |QID|10511|M|37.4,64.6|N|From Borgrim Stouthammer.|
 
-f Sylvanaar |QID|10555| |N|Get the flight path. |M|37.80,61.40|
+f Sylvanaar |N|Get the flight path. |M|37.80,61.40|
 h Sylvanaar |QID|10555| |N|Set your hearthstone to Sylvanaar. |M|35.80,63.90|
 C The Encroaching Wilderness |N|Kill Lynxes until you finish this quest. |S|QID|10455|M|38.00,72.00|
 C Malaise |N|Kill Birdmen until you get the feathers for this quest.|QID|10555|M|37.00,75.00|
@@ -139,7 +139,7 @@ A What Came First, the Drake or the Egg? |QID|10609|M|61.0,68.1|N|From Fizit "Do
 h Toshley's Station |QID|10584| |N|Set your hearthstone to Toshley's Station. |M|61.00,68.10|
 A Test Flight: The Zephyrium Capacitorium |QID|10557|M|60.3,68.4|N|From Tally Zapnabber.|
 A Crystal Clear |QID|10608|M|60.2,68.9|N|From Nickwinkle the Metro-Gnome.|
-f Toshley's Station |QID|10557|N|Get the flight path.|M|61.15,70.45|
+f Toshley's Station |N|Get the flight path.|M|61.15,70.45|
 
 C Test Flight: The Zephyrium Capacitorium |N|Talk to Rally Zabnapper and start the flight.|QID|10557|M|60.20,68.80|
 T Test Flight: The Zephyrium Capacitorium |QID|10557|M|60.3,68.4|N|To Tally Zapnabber.|
@@ -191,7 +191,7 @@ r Sell junk, repair, restock |QID|10674|M|60.73,69.06|
 
 A Test Flight: Ruuan Weald |QID|10712|M|60.3,68.4|N|From Tally Zapnabber.|
 C Test Flight: Ruuan Weald |N|Talk to Rally Zapnabber and choose to go to Ruuan. Use the Nether-weather Vane in your inventory while in the air.|QID|10712|M|60.20,68.80|U|31124|
-f Evergrove |QID|10712|N|Get the flight path.|M|61.70,39.60|
+f Evergrove |N|Get the flight path.|M|61.70,39.60|
 A A Time for Negotiation... |QID|10682|M|62.0,39.5|N|From Tree Warden Chawn.|
 A Creating the Pendant |QID|10567|M|62.2,39.1|N|From Timeon.|
 T Test Flight: Ruuan Weald |QID|10712|M|62.7,40.4|N|To O'Mally Zapnabber.|

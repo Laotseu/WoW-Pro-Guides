@@ -40,7 +40,7 @@ function WoWPro.Dailies:OnEnable()
 		WoWPro:LoadGuide(WoWProDB.char.lastdailiesguide)
 	end
 	
-	WoWPro.Dailies.FirstMapCall = true
+	WoWPro.FirstMapCall = true
 	
 end
 

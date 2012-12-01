@@ -46,7 +46,7 @@ function WoWPro.Achievements:OnEnable()
 		WoWPro:LoadGuide(WoWProDB.char.lastAchievementsguide)
 	end
 	
-	WoWPro.Achievements.FirstMapCall = true
+	WoWPro.FirstMapCall = true
 	
 	-- Server query for completed quests --
 	WoWPro.QueryQuestsCompleted()

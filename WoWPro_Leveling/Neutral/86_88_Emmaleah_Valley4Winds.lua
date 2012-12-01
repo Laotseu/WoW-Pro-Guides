@@ -80,12 +80,12 @@
 WoWPro.Leveling:RegisterGuide('EmmVal8688', 'Valley of the Four Winds', 'Emmaleah', '86', '88', 'RajKra8788|EmmKra8788', 'Neutral', function() return [[
 
 
-N Valley of the Four Winds|QID|29907|N|Make your way to Valley of the Four Winds. Blizzard added a new UI Element called the Special Action button. If you don?t already have a keybinding set for it, you may want to, as some quests use it. Yes, you can just click it, but I think keybindings are easier, its similar to the idea of Vehicle UI, but your regular action bars don't go away, you just get a new button.|
+N Valley of the Four Winds|QID|29907|N|Make your way to Valley of the Four Winds. Blizzard added a new UI Element called the Special Action button. If you don't already have a keybinding set for it, you may want to, as some quests use it. Yes, you can just click it, but I think keybindings are easier, its similar to the idea of Vehicle UI, but your regular action bars don't go away, you just get a new button.|
 
 R Valley of the Four Winds|N|Make your way to Valley of the Four Winds.|
 T They Call Him... Stormstout|QID|32019|M|85.94,22.10|N|To Chen Stormstout.|O|
 A Chen and Li Li|QID|29907|M|85.94,22.10|N|From Chen Stormstout.|
-f Pang's Stead|QID|29907|M|84.49,21.06|N|From the Princeton.|
+f Pang's Stead|M|84.49,21.06|N|From the Princeton.|
 T Chen and Li Li|QID|29907|M|83.69,21.01|N|To Pang Thunderfoot.|
 A A Seemingly Endless Nuisance|QID|29908|M|83.69,21.01|N|From Pang Thunderfoot.|
 A A Poor Grasp of the Basics|QID|29877|M|82.70,21.24|N|From Muno the Farmhand.|
@@ -119,34 +119,34 @@ A Practically Perfect Produce|QID|29911|M|81.6,25.3|N|From Ang Thunderfoot, she 
 T Practically Perfect Produce|QID|29911|M|83.69,21.01|N|To Pang Thunderfoot.|
 A The Fabulous Miss Fanny|QID|29912|M|83.69,21.01|N|From Pang Thunderfoot.|
 
-l Pick up a Turnip|QID|29912|L|75259|M|84.3,21.9|
+l Pick up a turnip|QID|29912|L|75259|M|84.3,21.9|
 l Pick up a watermelon|QID|29912|L|75258|M|84.1,22.0|
 l Pick up the Extra Spicy Tofy|QID|29912|L|75256|M|84.0,22.0|
-C Ang's Giant Pink Turnip|QID|29912|NC|QO|Launch a pink turnip: 1/1|M|83.0,21.42|N|Have Fanny hit it average.|
-C Ang's Summer Watermelon|QID|29912|NC|QO|Launch a watermelon: 1/1|M|83.0,21.42|N|Have Fanny hit it softly.|
-C Pang's Extra-Spicy Tofu|QID|29912|NC|QO|Launch the Extra-Spicy Tofu: 1/1|M|83.0,21.42|N|Have Fanny hit it very hard. After you have finished the quest, you can ask Fanny to hit you very hard and you will go sailing down to the next area.|
+C Ang's Giant Pink Turnip|QID|29912|NC|QO|Launch a pink turnip: 1/1|M|83.0,21.1|N|Have Fanny hit it average.|
+C Ang's Summer Watermelon|QID|29912|NC|QO|Launch a watermelon: 1/1|M|83.0,21.1|N|Have Fanny hit it softly.|
+C Pang's Extra-Spicy Tofu|QID|29912|NC|QO|Launch the Extra-Spicy Tofu: 1/1|M|83.0,21.1|N|Have Fanny hit it very hard|
 
-T The Fabulous Miss Fanny|QID|29912|M|75.22,24.05|N|To Liang Thunderfoot.|
-A The Meat They'll Eat|QID|29913|M|75.22,24.05|N|From Liang Thunderfoot.|
-A Back to the Sty|QID|29914|M|75.22,24.05|N|From Liang Thunderfoot.|
+T The Fabulous Miss Fanny|QID|29912|M|75.2,24.0|N|To LiangThunderfoot.|
+A The Meat They'll Eat|QID|29913|M|75.2,24.1|N|From Liang Thunderfoot.|
+A Back to the Sty|QID|29914|M|75.2,24.1|N|From Liang Thunderfoot.|
 
-C Adolescent Mushan Shoulder Steak |QID|29913|S|L|75275 4|M|72,29|N|The meat is NOT a 100% drop.|
-C Turtle Meat Scrap |QID|29913|S|L|75276 80|M|67.6,30.1|
-C Pick up Smelly |QID|29914|NC|T|Smelly|L|75273|M|70.5,29.5|
-C Pick up Ling |QID|29914|NC|T|Ling|QO|L|75272|M|66.8,29.0|
-C Turtle Meat Scrap |QID|29913|US|L|75276 80|M|67.6,30.1|N|Kill turtles for the scraps.|
-C Pick up Jian |QID|29914|NC|T|Jian|QO|L|75271|M|69.9,24.3|
+C Mushan Shoulder Steak |QID|29913|S|QO|Mushan Shoulder Steak: 4/4|M|72,29|
+C Turtle Meat Scrap |QID|29913|S|QO|Turtle Meat Scrap: 80/80|M|67.6,30.1|
+C Pick up Smelly |QID|29914|NC|T|Smelly|QO|Smelly: 1/1|M|70.5,29.5|
+C Pick up Ling |QID|29914|NC|T|Ling|QO|Ling: 1/1|M|66.8,29.0|
+C Turtle Meat Scrap |QID|29913|US|QO|Turtle Meat Scrap: 80/80|M|67.6,30.1|
+C Pick up Jian |QID|29914|NC|T|Jian|QO|Jian: 1/1|M|69.9,24.3|
 f Grassy Cline|M|70.8,24.2|N|From Kom of the Mountain Winds.|
-C Adolescent Mushan Shoulder Steak |QID|29913|US|L|75275 4|M|72,29|N|The meat is NOT a 100% drop.|
+C Mushan Shoulder Steak |QID|29913|US|QO|Mushan Shoulder Steak: 4/4|M|72,29|
 
-T The Meat They'll Eat|QID|29913|M|75.22,24.05|N|To Liang Thunderfoot.|
-T Back to the Sty|QID|29914|M|75.22,24.05|N|To Liang Thunderfoot.|
-A A Neighbor's Duty|QID|29915|M|75.22,24.05|N|From Liang Thunderfoot.|
-T A Neighbor's Duty|QID|29915|M|78.12,32.91|N|To Francis the Shepherd Boy.|
-A Piercing Talons and Slavering Jaws|QID|29916|M|78.12,32.91|N|From Francis the Shepherd Boy.|
-A Lupello|QID|29917|M|78.12,32.91|N|From Francis the Shepherd Boy.|
+T The Meat They'll Eat|QID|29913|M|72.4,24.3|N|To Liang Thunderfoot.|
+T Back to the Sty|QID|29914|M|75.2,24.1|N|To Liang Thunderfoot.|
+A A Neighbor's Duty|QID|29915|M|75.2,24.1|N|From Liang Thunderfoot.|
+T A Neighbor's Duty|QID|29915|M|78.15,32.84|N|To Francis the Shepherd Boy.|
+A Piercing Talons and Slavering Jaws|QID|29916|M|78.15,32.84|N|From Francis the Shepherd Boy.|
+A Lupello|QID|29917|M|78.15,32.84|N|From Francis the Shepherd Boy.|
 C Piercing Talons and Slavering Jaws|QID|29916|S|M|78.12,32.91|N|Head down towards Lupello, and kill the wolves and hawks you see.|
-K Kill Lupello|QID|29917|T|Lupello|M|81.21,40.29|QO|Lupello slain: 1/1|N|He is across the bridge and will count as one of the wolves you need to kill for Piercing Talons and Slavering Jaws.|
+K Kill Lupello|QID|29917|T|Lupello|M|81.21,40.29|N|He is across the bridge and will count as one of the wolves you need to kill for Piercing Talons and Slavering Jaws.|
 C Piercing Talons and Slavering Jaws|QID|29916|US|M|82.84,32.34|
 T Piercing Talons and Slavering Jaws|QID|29916|M|78.12,32.91|N|To Francis the Shepherd Boy.|
 T Lupello|QID|29917|M|78.12,32.91|N|To Francis the Shepherd Boy.|

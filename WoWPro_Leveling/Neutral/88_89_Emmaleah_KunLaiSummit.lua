@@ -95,41 +95,49 @@
 WoWPro.Leveling:RegisterGuide('EmmKun8889', 'Kun-Lai Summit', 'Emmaleah', '88', '89', 'EmmTow8990|EmmTow8990', 'Neutral', function()
 return [[
 
-N Welcome to Kun-Lai Summit.|QID|31254;31255|N|This guide assumes you are starting at Grassy Cline in Valley of the Four Winds. If you don't have the quest 'Road to Kun-Lai' it is available in Halfhill.|
+N Welcome to Kun-Lai Summit.|N|This guide assumes you are starting at Grassy Cline in Valley of the Four Winds. If you don't have the quest 'Road to Kun-Lai' it is available in Halfhill.|
 
-C Speak with the Highroad Grummle|QID|31254|FACTION|Alliance|QO|Speak with the Highroad Grummle: 1/1|NC|M|70.08,23.47|Z|Valley of the Four Winds|N|Run up the stairs, keep going up, and up, then follow the path to the tavern.|
-C Speak with the Highroad Grummle|QID|31255|FACTION|Horde|QO|Speak with the Highroad Grummle: 1/1|NC|M|70.08,23.47|Z|Valley of the Four Winds|N|Run up the stairs, keep going up, and up, then follow the path to the tavern.|
+A The Road to Kun-Lai|QID|31254|FACTION|Alliance|M|55.3,50.2|Z|Valley of the Four Winds|N|From Highlord Grummle.|
+F Grassy Cline|QID|31254|FACTION|Alliance|
+A The Road to Kun-Lai|QID|31255|FACTION|Horde|M|55.3,50.2|Z|Valley of the Four Winds|N|From Highlord Grummle.|
+F Grassy Cline|QID|31255|FACTION|Horde|
+
+C Speak with Highroad Grummle|QID|31254|FACTION|Alliance|QO|Speak with the Highroad Grummle: 1/1|NC|M|70.08,23.47|Z|Valley of the Four Winds|
+C Speak with Highroad Grummle|QID|31255|FACTION|Horde|QO|Speak with the Highroad Grummle: 1/1|NC|M|70.08,23.47|Z|Valley of the Four Winds|
 
 f Tavern in the Mists|QID|99999|M|56.75,75.82|Z|The Veiled Stair|N|At Shin the Weightless.|
-C Forgotten Lockbox|QID|31867|M|54.71,71.41|Z|The Veiled Stair|NC|N|Upstairs in the inn. Another of the items one time lootable for XP and gold.|
 A Robbing Robbers of Robbers|QID|31286|M|53.52,65.78|Z|The Veiled Stair|N|From Len the Whisperer.|
 A Educating Saurok|QID|31287|M|53.52,65.78|Z|The Veiled Stair|N|From Len the Whisperer.|
-C Robbing Robbers of Robbers|QID|31286|NC|Z|The Veiled Stair|M|52.97,48.34;48.49,46.75;50.18,42.00|CS|N|Pick up the sparklis as you follow the dots.|
-C Educating Saurok|QID|31287|M|52.97,48.34;48.49,46.75;50.18,42.00|CS|Z|The Veiled Stair|N|In the back of the cave.|
-l The Hammer of Folly|QID|31428|L|86473|M|74.83,76.39|Z|The Veiled Stair|N|Just east of the Black Market Action House, is an ancient grass covered stairway, called the Stairs that lead to nowhere, at the top, known as Mason's Folly, you will find this grey item that is worth ~100g and a decent amount of XP.|
+C Robbing Robbers of Robbers|QID|31286|S|NC|Z|The Veiled Stair|M|45.62,45.63|
+K Kill Leechfingers|QID|31287|T|Leechfingers|M|55.7,55.9;50.18,42.00|CC|Z|The Veiled Stair|N|In the back of the cave.|
+C Robbing Robbers of Robbers|QID|31286|US|NC|Z|The Veiled Stair|M|45.62,45.63|
 T Robbing Robbers of Robbers|QID|31286|M|53.49,65.77|Z|The Veiled Stair|N|To Len the Whisperer.|
 T Educating Saurok|QID|31287|M|53.49,65.77|Z|The Veiled Stair|N|To Len the Whisperer.|
 
-C Speak with Brewmaster Boof|QID|31254|FACTION|Alliance|QO|Speak with Brewmaster Boof: 1/1|NC|M|51.98,43.69|Z|The Veiled Stair|N|Continue up the path to the waters edge.|
-C Speak with Brewmaster Boof|QID|31255|FACTION|Horde|QO|Speak with Brewmaster Boof: 1/1|NC|M|51.98,43.69|Z|The Veiled Stair|N|Continue up the path to the waters edge.|
+C The Road to Kun-Lai|QID|31254|FACTION|Alliance|QO|Speak with Brewmaster Boof: 1/1|NC|M|51.98,43.69|Z|The Veiled Stair|
+C The Road to Kun-Lai|QID|31255|FACTION|Horde|QO|Speak with Brewmaster Boof: 1/1|NC|M|51.98,43.69|Z|The Veiled Stair|
 A The Spring Drifter|QID|31285|M|51.98,43.69|Z|The Veiled Stair|N|From Brewmaster Boof.|
-C Hop in the Spring Drifter|QID|31285|NC|M|51.98,43.69|Z|The Veiled Stair|N|Get on the boat and enjoy the ride.|
-T The Spring Drifter|QID|31285|M|72.64,93.00|N|To Brewmaster Boof.|
+C The Spring Drifter|QID|31285|M|51.98,43.69|Z|The Veiled Stair|N|Get on the boat and enjoy the ride.|
 
+T The Spring Drifter |QID|31285|M|72.7,93.0|N|To Brewmaster Boof|
 f Binan Village|QID|99999|CC|M|72.52,94.18|N|At Jo the Wind Watcher.|
+A Temple of the White Tiger|QID|31392|FACTION|Alliance|M|72.04,94.17|N|From Wang Chung.|
+A Temple of the White Tiger|QID|31393|FACTION|Horde|M|72.04,94.17|N|From Wang Chung.|
 A Hit Medicine|QID|30460|M|71.62,92.82|N|From Apothecary Cheng.|
 r Repair/Restock|QID|30457|M|71.42,92.22|N|At The Metal Paw, he also sells ilvl 393 gear if you want stuff for your offspec or something.|
 T The Road to Kun-Lai|QID|31254|FACTION|Alliance|M|72.25,91.86|N|To Mayor Bramblestaff.|
 T The Road to Kun-Lai|QID|31255|FACTION|Horde|M|72.25,91.86|N|To Mayor Bramblestaff.|
 A Call Out Their Leader|QID|30457|M|72.25,91.86|N|From Mayor Bramblestaff.|
 A All of the Arrows|QID|30459|M|70.47,90.05|N|From Commander Hsieh.|
-C Hit Medicine|QID|30460|S|U|79819|M|68.03,87.57|N|Use the medicine on the injured Binan warriors,|
-C All of the Arrows|QID|30459|S|M|68.79,86.46|N|The arrows are a groundspawn in this area.|
-C Call Out Their Leader|QID|30457|M|68.89,88.51|N|The boss wanders up and down the road.|
-C Hit Medicine|QID|30460|U|79819|US|M|68.03,87.57|
-C All of the Arrows|QID|30459|US|M|68.79,86.46|
+C All of the Arrows|QID|30459|S|NC|M|68.79,86.46|
+C Hit Medicine|QID|30460|S|NC|U|79819|M|68.03,87.57|N|Normal healing spells will also work.|
+C Kill Bataari Tribe members|QID|30457|QO|Bataari Tribe Members slain: 10/10|M|68.89,88.51|N|Kill 10 Bataari Tribe members and the Fire-Warrior will appear.|
+K Kill Bataari Fire-Warrior|QID|30457|T|Bataari Fire-Warrior|M|68.6,88.5|QO|Bataari Fire-Warrior slain: 1/1|
+C Hit Medicine|QID|30460|US|NC|U|79819|M|68.03,87.57|N|Normal healing spells will also work.|
+C All of the Arrows|QID|30459|US|NC|M|68.79,86.46|
 T All of the Arrows|QID|30459|M|71.01,90.45|N|To Commander Hsieh.|
 T Call Out Their Leader|QID|30457|M|72.27,91.85|N|To Mayor Bramblestaff.|
+T The Spring Drifter|QID|31285|M|72.64,93.00|N|To Brewmaster Boof.|
 T Hit Medicine|QID|30460|M|71.59,92.83|N|To Apothecary Cheng.|
 
 A Admiral Taylor has Awakened|QID|30508|FACTION|Alliance|M|71.59,92.83|N|From Apothecary Cheng.|
@@ -180,7 +188,7 @@ A Round 'Em Up|QID|31256|M|62.99,80.22|FACTION|Horde|N|From General Nazgrim.|
 A Best Meals Anywhere!|QID|31251|M|62.73,79.83|FACTION|Horde|N|From Rivett Clutchpop.|
 A Trouble on the Farmstead|QID|30570|FACTION|Horde|M|62.52,79.55|N|From Farmhand Ko.|
 A Mogu?! Oh No-gu!|QID|30620|FACTION|Horde|M|62.33,79.69|N|From Elder Shiao.|
-f Eastwind Rest|QID|30620|FACTION|Horde|M|62.46,80.69|N|At Soaring Paw.|
+f Eastwind Rest|FACTION|Horde|M|62.46,80.69|N|At Soaring Paw.|
 A Deanimate the Reanimated|QID|30594|FACTION|Horde|M|62.69,80.67|N|From Shademaster Kiryn.|
 T Trouble on the Farmstead|QID|30570|FACTION|Horde|M|60.29,85.72|N|To Farmer Chow.|
 
