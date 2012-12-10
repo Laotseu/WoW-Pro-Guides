@@ -55,6 +55,11 @@ local QueryQuestsCompleted			= _G.QueryQuestsCompleted
 
 
 local DEFAULT_CHAT_FRAME			= _G.DEFAULT_CHAT_FRAME
+local GossipFrame						= _G.GossipFrame
+local QuestFrameDetailPanel		= _G.QuestFrameDetailPanel
+local QuestFrameGreetingPanel		= _G.QuestFrameGreetingPanel
+local QuestFrameProgressPanel		= _G.QuestFrameProgressPanel
+local QuestFrameRewardPanel		= _G.QuestFrameRewardPanel
 
 local LibStub 							= _G.LibStub
 

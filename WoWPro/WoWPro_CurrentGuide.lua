@@ -5,8 +5,12 @@ local _addonname, _addon = ...
 -------------------------------------------------------------------------------
 local _G = getfenv(0)
 
+local geterrorhandler = _G.geterrorhandler
 local math = _G.math
 local string = _G.string
+local time = _G.time
+local tostring = _G.tostring
+local tostringall = _G.tostringall
 
 local ipairs = _G.ipairs
 

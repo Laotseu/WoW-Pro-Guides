@@ -23,16 +23,18 @@ local pairs = _G.pairs
 local select = _G.select
 local wipe = _G.wipe
 
-local LightHeaded = _G.LightHeaded
-local TomTom = _G.TomTom
-
 local MAX_NUM_QUESTS = _G.MAX_NUM_QUESTS
+local UIParent = _G.UIParent
+local ChatFrameEditBoxTemplate = _G.ChatFrameEditBoxTemplate
+local GameFontHighlight = _G.GameFontHighlight
 local WorldMapDetailFrame = _G.WorldMapDetailFrame
 
+local CreateFrame = _G.CreateFrame
 local GetCurrentMapAreaID = _G.GetCurrentMapAreaID
 local GetCurrentMapDungeonLevel = _G.GetCurrentMapDungeonLevel
 local GetPlayerMapPosition = _G.GetPlayerMapPosition
 local GetQuestLogIndexByID = _G.GetQuestLogIndexByID
+local GetRealZoneText = _G.GetRealZoneText
 local IsQuestWatched = _G.IsQuestWatched
 local PlaySoundFile = _G.PlaySoundFile
 local QuestMapUpdateAllQuests = _G.QuestMapUpdateAllQuests
@@ -45,15 +47,10 @@ local WORLDMAP_SETTINGS = _G.WORLDMAP_SETTINGS
 local WorldMapFrame_UpdateQuests = _G.WorldMapFrame_UpdateQuests
 
 local LibStub = _G.LibStub
+local LightHeaded = _G.LightHeaded
+local TomTom = _G.TomTom
 
-local err_params = {}
-local function err(msg, ...)
-	if not _G.WoWPro.map_debug then return end
-	msg = tostring(msg)
-	wipe(err_params)
-	for i=1,select('#',...) do err_params[i] = tostring(select(i,...)) end
-	_G.geterrorhandler()(msg:format(_G.unpack(err_params)) .. " - " .. _G.time())
-end
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
 
 ----------------------------------
 --      WoWPro_Mapping.lua      --
@@ -64,6 +61,7 @@ local L = _G.WoWPro_Locale
 local cache = {}
 local B = LibStub("LibBabble-Zone-3.0")
 local BL = B:GetUnstrictLookupTable()
+local AL = DongleStub and pcall(DongleStub,"Astrolabe-1.0") and DongleStub("Astrolabe-1.0")
 -- Map dat
 --local LMD = LibStub("LibMapData-1.0")
 -- Debug
@@ -163,7 +161,7 @@ local OldCleardistance	-- saves TomTom's option to restore it
 
 -- Function to handle the distance callback in TomTom, when player gets to the final destination
 local function WoWProMapping_distance(event, uid, range, distance, lastdistance)
-err("Distance callback: event = %s, title = %s, range = %s, distance = %s, lastdistance = %s", event, uid.title, range, distance, lastdistance)
+--err("Distance callback: event = %s, title = %s, range = %s, distance = %s, lastdistance = %s", event, uid.title, range, distance, lastdistance)
 	if UnitOnTaxi("player") then return end
 
 	-- Replicate normal TomTom arrival functionality
@@ -186,7 +184,7 @@ err("Distance callback: event = %s, title = %s, range = %s, distance = %s, lastd
 	end
 	local autoarrival = cache[iactual].autoarrival
 
-	if autoarrival == 1 then
+	if not autoarrival or autoarrival == 1 then
 		for i=iactual,#cache,1 do
 			TomTom:RemoveWaypoint(cache[i].uid)
 		end
@@ -210,7 +208,7 @@ err("Distance callback: event = %s, title = %s, range = %s, distance = %s, lastd
 			end
 		end
 
-		if iactual == 1 then
+		if auroarrival and iactual == 1 then
 			WoWPro.CompleteStep(cache[iactual].index)
 		end
 
@@ -464,7 +462,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	    zone = WoWPro.rows[row].zone
 	end 
 	zone = zone or WoWPro.zone[i] or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)"))
-	autoarrival = WoWPro.waypcomplete[i]
+	local autoarrival = WoWPro.waypcomplete[i]
 	
 	if zone:match("/") then
 	    -- Well, they have a floor specified
@@ -594,7 +592,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 					crazy = true,
 				})
 			end
-err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j, numcoords, x, y, uid[3], uid[4], desc)
+--err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j, numcoords, x, y, uid[3], uid[4], desc)
 			if not uid then
 				 WoWPro:Print("Failed to set waypoint!  Please report a bug with the guide and step number.")
 			end
@@ -614,7 +612,8 @@ err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j
 			FinalCoord[2] = y
 		end
 		
-		if autoarrival and #cache > 0 then
+		if #cache > 0 then
+		
 			if autoarrival == 1 then
 				-- TomTom.db.profile.arrow.setclosest = true
 				local closest_uid = TomTom:GetClosestWaypoint()
@@ -636,29 +635,14 @@ err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j
 				    WoWPro:Print("No closest waypoint?")
 				end
 
-			elseif autoarrival == 2 or autoarrival == 3 then
+--			elseif autoarrival == 2 or autoarrival == 3 then
+			else
 				--TomTom.db.profile.arrow.setclosest = false
 				-- Set the arrow to the last one in the cache
 				TomTom:SetCrazyArrow(cache[#cache].uid, 1, cache[#cache].desc)
 			end
 
 		end
-		--TomTom.db.profile.persistence.cleardistance = OldCleardistance
-	--elseif TomTom then
-		-- Legacy Parsing and mapping coordinates for Carbonite --
-	--	local numcoords = select("#", string.split(";", coords))
-	--	for j=1,numcoords do
-	--		local jcoord = select(numcoords-j+1, string.split(";", coords))
-	--		local x = tonumber(jcoord:match("([^|]*),"))
-	--		local y = tonumber(jcoord:match(",([^|]*)"))
-	--		if not x or x > 100 then return end
-	--		if not y or y > 100 then return end
-	--		table.insert(cache, TomTom:AddZWaypoint(zc, zi, x, y, desc, false))
-			--FinalCoord = { x , y }
-	--		FinalCoord[1] = x
-	--		FinalCoord[2] = y
-	--	end
-
 	end
 
 end

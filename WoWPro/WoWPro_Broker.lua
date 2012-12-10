@@ -30,6 +30,7 @@ local CreateFrame 						= _G.CreateFrame
 local EasyMenu 							= _G.EasyMenu
 local GetFactionInfo 					= _G.GetFactionInfo
 local GetFactionInfoByID 				= _G.GetFactionInfoByID
+local GetFriendshipReputation			= _G.GetFriendshipReputation
 local GetItemCount 						= _G.GetItemCount
 local GetItemInfo 						= _G.GetItemInfo
 local GetNumFactions 					= _G.GetNumFactions
