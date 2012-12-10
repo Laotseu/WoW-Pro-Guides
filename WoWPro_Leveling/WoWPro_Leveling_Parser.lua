@@ -432,7 +432,7 @@ local function ParseQuests(...)
 --				end
 
 				i = i + 1
-			end end end end
+			end
 		end
 	end
 --WoWPro:Trace("End ParseQuests")
