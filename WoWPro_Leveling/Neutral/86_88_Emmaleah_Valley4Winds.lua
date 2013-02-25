@@ -139,7 +139,7 @@ C Pick up Jian |QID|29914|NC|T|Jian|QO|Jian: 1/1|M|69.9,24.3|
 f Grassy Cline|M|70.8,24.2|N|From Kom of the Mountain Winds.|
 C Mushan Shoulder Steak |QID|29913|US|QO|Mushan Shoulder Steak: 4/4|M|72,29|
 
-T The Meat They'll Eat|QID|29913|M|72.4,24.3|N|To Liang Thunderfoot.|
+T The Meat They'll Eat|QID|29913|M|75.2,24.0|N|To Liang Thunderfoot.|
 T Back to the Sty|QID|29914|M|75.2,24.1|N|To Liang Thunderfoot.|
 A A Neighbor's Duty|QID|29915|M|75.2,24.1|N|From Liang Thunderfoot.|
 T A Neighbor's Duty|QID|29915|M|78.15,32.84|N|To Francis the Shepherd Boy.|
@@ -160,8 +160,8 @@ A Leaders Among Breeders|QID|29944|M|68.88,43.15|N|From Chen Stormstout.|
 A Yellow and Red Make Orange|QID|29945|M|68.89,43.31|N|From Li Li.|
 C Yellow and Red Make Orange|QID|29945|S|M|67.57,39.75; 69.39.47.08; 70.04,48.88|N|Most of the animals (except virmin) in the area drop the blood you need. The marigolds spawn in the areas marked.|
 K Kill Frenzyhop|QID|29944|T|Frenzyhop|QO|Frenzyhop slain: 1/1|M|64.64,40.66|
-K Kill Jinanya the Clawblade|QID|29944|T|Jinanya the Clawblade|QO|Jinanya the Clawblade slain: 1/1|M|68.72,38.29|
-K Kill Aiyu the Skillet|QID|29944|T|Aiyu the Skillet|QO|Aiyu the Skillet slain: 1/1|M|68.25,37.03|
+K Kill Jinanya the Clawblade|QID|29944|T|Jinanya the Clawblade|QO|Jinanya the Clawblade slain: 1/1|M|66.6,38.7|
+K Kill Aiyu the Skillet|QID|29944|T|Aiyu the Skillet|QO|Aiyu the Skillet slain: 1/1|M|68.72,38.29|
 C Yellow and Red Make Orange|QID|29945|US|M|67.57,39.75; 69.39.47.08; 70.04,48.88|N|Most of the animals (except virmin) in the area drop the blood you need. The marigolds spawn in the areas marked.|
 T Yellow and Red Make Orange|QID|29945|M|68.89,43.31|N|To Li Li.|
 T Leaders Among Breeders|QID|29944|M|68.88,43.15|N|To Chen Stormstout.|
@@ -235,7 +235,7 @@ A Hop Hunting|QID|30053|M|55.89,49.44|N|From Chen Stormstout.|
 A Li Li and the Grain|QID|30048|M|55.89,49.44|N|From Chen Stormstout.|
 A Doesn't Hold Water|QID|30049|M|55.89,49.44|N|From Chen Stormstout.|
 A Children of the Water |QID|32045|M|55.13,47.38|N|From Stonecarver Mac, up on Halfhill|; Halfhill
-f Halfhill|QID|30049|M|53.81,50.92|N|From Wing Nga.|
+f Halfhill|QID|30049|M|56.5,50.4|N|From Wing Nga.|
 
 A A Helping Hand|QID|30252|M|52.02,48.13|N|From Farmer Yoon. This chain for The Tillers is optional, but it opens up the Quartermaster which gives you a place to repair. (Plus its quick and easy XP.)|
 C Remove the rocks|QID|30252|M|52.8,49.81|NC|N|Click on the unbudging rocks to dig them up.|
@@ -278,8 +278,8 @@ C Speak with Den Mudclaw|QID|30053|NC|QO|Speak with Den Mudclaw: 1/1|M|44.26,34.
 A The Farmer's Daughter|QID|30056|M|44.26,34.21|N|From Den Mudclaw.|
 A Enough is Ookin' Enough|QID|30054|M|44.16,34.23|N|From Mung-Mung.|
 C Enough is Ookin' Enough|QID|30054|S|M|45.44,36.02|N|Stick to the right wall of the warren. You can easily get your trophy teeth if you methodically kill them all!|
-C The Farmer's Daughter|QID|30056|M|43.55,35.05;41.46,38.6|CS|N|She is underground on a giant veggy. Talk to her and escort her out.|
-T The Farmer's Daughter|QID|30056|M|41.30,38.16|N|To Mina Mudclaw.|
+;C The Farmer's Daughter|QID|30056|M|43.55,35.05;41.46,38.6|CS|N|She is underground on a giant veggy. Talk to her and escort her out.|
+T The Farmer's Daughter|QID|30056|M|43.55,35.05;41.46,38.6,41.30,38.16|CS|N|She is underground on a giant veggy. Talk to her and escort her out.To Mina Mudclaw.|
 A Seeing Orange|QID|30057|M|41.30,38.16|N|From Mina Mudclaw.|
 C Enough is Ookin' Enough|QID|30054|US|M|42,33|N|Stick to the right wall of the warren.|
 T Enough is Ookin' Enough|QID|30054|M|44.16,34.23|N|To Mung-Mung.|

@@ -42,7 +42,7 @@ return [[
 A Hell Has Frozen Over... |QID|11228|M|61.1,62.7|N|From Macalroy.|
 T Hell Has Frozen Over... |QID|11228|M|60.5,61.1|N|To Vice Admiral Keller.|
 A If Valgarde Falls... |QID|11243|M|60.5,61.1|N|From Vice Admiral Keller.|
-f Valgarde |N|Get the flight path for Valgarde Keep.|M|59.79,63.24|
+f Valgarde Port|N|Get the flight path for Valgarde Port.|M|59.79,63.24|
 h Valgarde |QID|11243|N|Set your hearthstone to Valgarde Keep.|M|58.39,62.46|
 C If Valgarde Falls... |QID|11243|N|Go to the north side of the village and kill the mobs for this quest. |M|58.89,59.51|
 T If Valgarde Falls... |QID|11243|M|60.5,61.1|N|To Vice Admiral Keller.|

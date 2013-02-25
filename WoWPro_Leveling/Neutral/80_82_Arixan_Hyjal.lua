@@ -130,9 +130,9 @@ A A Personal Summons|QID|28825|M|71.44,72.32|Z|Stormwind City|N|Should pop up au
 h Trade District|QID|28825|M|60.36,75.20|Z|Stormwind City|N|At Innkeeper Allison.|FACTION|Alliance|
 A Hero's Call: Mount Hyjal!|QID|27726|M|62.9,71.7|Z|Stormwind City|N|From the Hero's Call Board.|FACTION|Alliance|
 T A Personal Summons|QID|28825|M|74.58,18.94|Z|Stormwind City|N|To Naraat the Earthspeaker.|FACTION|Alliance|
-A Eye of the Storm|QID|28826|PRE|28825|M|74.58,18.94|Z|Stormwind City|N|From Naraat the Earthspeaker.|FACTION|Alliance|
-C Eye of the Storm|QID|28826|M|74.43,19.25|Z|Stormwind City|N|Right click the water bowl behind you. Enjoy your first Cataclysm cinematic!|FACTION|Alliance|
-T Eye of the Storm|QID|28826|M|74.56,19.18|Z|Stormwind City|N|To Naraat the Earthspeaker.|FACTION|Alliance|
+A The Eye of the Storm|QID|28826|PRE|28825|M|74.58,18.94|Z|Stormwind City|N|From Naraat the Earthspeaker.|FACTION|Alliance|
+C The Eye of the Storm|QID|28826|M|74.43,19.25|Z|Stormwind City|N|Right click the water bowl behind you. Enjoy your first Cataclysm cinematic!|FACTION|Alliance|
+T The Eye of the Storm|QID|28826|M|74.56,19.18|Z|Stormwind City|N|To Naraat the Earthspeaker.|FACTION|Alliance|
 C Hero's Call: Mount Hyjal!|QID|27726|NC|M|82.7,28.36|Z|Stormwind City|N|Talk to Cenarion Emissary Jademoon to get to Moonglade.|FACTION|Alliance|
 T Hero's Call: Mount Hyjal!|QID|27726|M|45.3,44.8|Z|Moonglade|N|To Emissary Windsong.|FACTION|Alliance|
 

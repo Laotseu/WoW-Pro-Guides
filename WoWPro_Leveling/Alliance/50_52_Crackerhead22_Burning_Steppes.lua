@@ -54,9 +54,17 @@ T Hero's Call: Burning Steppes!|QID|28666|M|17.4,52.5|N|To John J. Keeshan.|O|
 A Burning Vengeance|QID|28416|M|17.31,51.98|N|From John J. Keeshan.|O|
 A Burning Vengeance|QID|28174|PRE|28666|M|17.31,51.98|N|From John J. Keeshan.|
 
-C Done Nothing Wrong|QID|28172|S|M|23.13,60.14|N|Free a Red, Green, Blue and Bronze Fettered Whelping.|
-C Burning Vengeance|QID|28416|M|17.00,63.80|N|Kill Blackrock Whelpers and Flamescale Broodlings.|O|
-C Burning Vengeance|QID|28174|M|17.00,63.80|N|Kill Blackrock Whelpers and Flamescale Broodlings.|O|
+C Burning Vengeance|QID|28416|S|M|17.00,63.80|N|Kill Blackrock Whelpers and Flamescale Broodlings.|O|
+C Burning Vengeance|QID|28174|S|M|17.00,63.80|N|Kill Blackrock Whelpers and Flamescale Broodlings.|O|
+C Free Bronze Whelpling |QID|28172|S|QO|Freed Bronze Whelpling: 1/1|M|21.3,61.4|Z|Burning Steppes|; The Whelping Downs
+C Free Red Whelpling |QID|28172|S|QO|Freed Red Whelpling: 1/1|M|14.4,66.8|Z|Burning Steppes|; The Whelping Downs
+C Free Blue Whelpling |QID|28172|S|QO|Freed Blue Whelpling: 1/1|M|17.4,67.7|Z|Burning Steppes|; The Whelping Downs
+C Free Green Whelpling |QID|28172|QO|Freed Green Whelpling: 1/1|M|17.6,60.3|Z|Burning Steppes|; The Whelping Downs
+C Free Blue Whelpling |QID|28172|US|QO|Freed Blue Whelpling: 1/1|M|17.4,67.7|Z|Burning Steppes|; The Whelping Downs
+C Free Red Whelpling |QID|28172|US|QO|Freed Red Whelpling: 1/1|M|14.4,66.8|Z|Burning Steppes|; The Whelping Downs
+C Free Bronze Whelpling |QID|28172|US|QO|Freed Bronze Whelpling: 1/1|M|21.3,61.4|Z|Burning Steppes|; The Whelping Downs
+C Burning Vengeance|QID|28416|US|M|17.00,63.80|N|Kill Blackrock Whelpers and Flamescale Broodlings.|O|
+C Burning Vengeance|QID|28174|US|M|17.00,63.80|N|Kill Blackrock Whelpers and Flamescale Broodlings.|O|
 C Done Nothing Wrong|QID|28172|US|M|23.13,60.14|N|Free a Red, Green, Blue and Bronze Fettered Whelping.|
 T Burning Vengeance|QID|28174|M|17.34,52.18|N|To John J. Keeshan.|O|
 T Burning Vengeance|QID|28416|M|17.34,52.18|N|To John J. Keeshan.|O|
@@ -95,15 +103,15 @@ f Chiselgrip|M|46.17,41.97|N|At Grimly Singefeather.|
 A A Needle in a Hellhole|QID|28254|M|46.37,45.82|N|From John J. Keeshan.|
 T A Needle in a Hellhole|QID|28254|M|45.45,46.11|N|To Thelaron Direneedle.|
 
-A A Perfect Costume|QID|28203|R|Worgen,Draenei|M|45.45,46.34|N|From Thelaron Direneedle.|N|You will need 4 hides, 1 mud and 3 thread.|
+A A Perfect Costume|QID|28203|R|Worgen,Draenei,Pandaren|M|45.45,46.34|N|From Thelaron Direneedle.|N|You will need 4 hides, 1 mud and 3 thread.|
 A A Perfect Costume|QID|28205|R|Night Elf|M|45.45,46.34|N|From Thelaron Direneedle.|N|You will need 3 hides, 2 mud and 1 thread.|
 A A Perfect Costume|QID|28202|R|Human,Dwarf|M|45.45,46.34|N|From Thelaron Direneedle.|N|You will need 2 hides, 4 mud 2 thread.|
 A A Perfect Costume|QID|28204|R|Gnome|M|45.45,46.34|N|From Thelaron Direneedle.|N|You will need 1 hide, 3 mud and 4 thread.|
-C A Perfect Costume|QID|28203|R|Worgen,Draenei|M|45.45,46.11|QO|Perfect Costume created: 1/1|N|You will need 4 hides, 1 mud and 3 thread. Click on the Tailor's Table, then select the correct number of hides, mud then thread. Then speak with Thelaron Direneedle to make the disguise.|
+C A Perfect Costume|QID|28203|R|Worgen,Draenei,Pandaren|M|45.45,46.11|N|You will need 4 hides, 1 mud and 3 thread. Click on the Tailor's Table, then select the correct number of hides, mud then thread. Then speak with Thelaron Direneedle to make the disguise.|
 C A Perfect Costume|QID|28205|R|Night Elf|M|45.45,46.11|QO|Perfect Costume created: 1/1|N|You will need 3 hides, 2 mud and 1 thread. Click on the Tailor's Table, then select the correct number of hides, mud then thread. Then speak with Thelaron Direneedle to make the disguise.|
 C A Perfect Costume|QID|28202|R|Human,Dwarf|M|45.45,46.11|QO|Perfect Costume created: 1/1|N|You will need 2 hides, 4 mud 2 thread. Click on the Tailor's Table, then select the correct number of hides, mud then thread. Then speak with Thelaron Direneedle to make the disguise.|
 C A Perfect Costume|QID|28204|R|Gnome|M|45.45,46.11|QO|Perfect Costume created: 1/1|N|You will need 1 hide, 3 mud and 4 thread. Click on the Tailor's Table, then select the correct number of hides, mud then thread. Then speak with Thelaron Direneedle to make the disguise.|
-T A Perfect Costume|QID|28203|R|Worgen,Draenei|M|46.40,46.03|N|At John H. Keeshan|
+T A Perfect Costume|QID|28203|R|Worgen,Draenei,Pandaren|M|46.40,46.03|N|At John H. Keeshan|
 T A Perfect Costume|QID|28205|R|Night Elf|M|46.40,46.03|N|At John H. Keeshan|
 T A Perfect Costume|QID|28202|R|Human,Dwarf|M|46.40,46.03|N|At John H. Keeshan|
 T A Perfect Costume|QID|28204|R|Gnome|M|46.40,46.03|N|At John H. Keeshan|

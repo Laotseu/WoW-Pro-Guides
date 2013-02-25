@@ -346,6 +346,7 @@ local function ParseQuests(...)
 	local i = 1
 	local myclassL, myclass = UnitClass("player")
 	local myraceL, myrace = UnitRace("player")
+	local myFaction = UnitFactionGroup("player"):upper()
 	if myrace == "Scourge" then
 		myrace = "Undead"
 	end
@@ -883,7 +884,7 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 	---		WoWPro.Hidden = nil
 	---	end
 	--end
-	
+	--[[
 	-- Noticing if we are doing a pet battle!
 	if event == "PET_BATTLE_OPENING_START" and (not WoWPro.Hidden) then
 		WoWPro:Print("|cff33ff33Pet Battle Auto Hide|r: Leveling Module")
@@ -898,7 +899,7 @@ function WoWPro.Leveling:EventHandler(self, event, ...)
 		WoWPro.Titlebar:Show()
 		WoWPro.Hidden = nil		
 	end
-		
+	]]
 	
 	-- Lets see what quests the NPC has:
 	--elseif event == "GOSSIP_SHOW" then

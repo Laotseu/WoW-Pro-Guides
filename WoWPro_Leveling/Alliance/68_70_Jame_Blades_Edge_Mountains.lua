@@ -83,7 +83,7 @@ C The Encroaching Wilderness |N|Kill Lynxes until you finish this quest. |US|QID
 T The Encroaching Wilderness |QID|10455|M|36.2,67.1|N|To Rina Moonspring.|
 A Marauding Wolves|QID|10456|M|36.2,67.1|N|From Rina Moonspring.|
 C Marauding Wolves|N|Kill the wolves needed for this quest.|QID|10456|M|51.00,65.00|S|
-C The Den Mother|N|Kill Rema in this cave.|QID|10690|M|52.00,75.00|
+C The Den Mother|T|Rema|N|Kill Rema in this cave.|QID|10690|M|52.00,75.00|
 C Marauding Wolves|N|Kill the wolves needed for this quest.|QID|10456|M|51.00,65.00|US|
 
 H Sylvanaar |QID|10690|N|Hearth to Sylvanaar.|M|35.83,63.93|
@@ -113,14 +113,14 @@ r Sell junk, repair, restock|QID|10516|N|Sell junk, repair, restock |M|37.7,64.8
 C Getting the Bladespire Tanked|N|Use the beer ogres until you complete this quest. |QID|10512|M|40.3,53.0|S|U|30353|
 C The Bladespire Ogres |N|Kill any ogre you see for this quest.|QID|10504|M|40.3,53.0|S|
 A The Trappings of a Vindicator |QID|10516|M|44.0,51.9|N|From Vindicator Vuuleen.|
-l Vindicator Vuuleen's Blade |QID|10516|N|Go in this building and kill the two non-elite mobs. Do not pull the elite mobs. Kill Droggam by going close to him (without attracting any mob), and use the Bloodmaul Brutebane Keg on him. Droggam will run towards you without attracting the elites. Loot the blade. (39.20, 52.80)|L|30413 1|M|39.20, 52.80|
-C The Trappings of a Vindicator |N|Kill Mugdorg in this building by using the beer in the same manner as last time. Take the shield.|QID|10516|M|42.00,57.00|
+C Get Vindicator Vuuleen's Blade |QID|10516|QO|Vindicator Vuuleen's Blade: 1/1|N|Go in this building and kill the two non-elite mobs. Do not pull the elite mobs. Kill Droggam by going close to him (without attracting any mob), and use the Bloodmaul Brutebane Keg on him. Droggam will run towards you without attracting the elites. Loot the blade. (39.20, 52.80)|M|39.20, 52.80|
+C Get Vindicator Vuuleen's Shield|QID|10516||QO|Vindicator Vuuleen's Shield: 1/1|N|Kill Mugdorg in this building by using the beer in the same manner as last time. Take the shield.|M|42.00,57.00|
 T The Trappings of a Vindicator |QID|10516|M|44.0,51.9|N|To Vindicator Vuuleen.|
 A Gorr'Dim, Your Time Has Come... |QID|10517|M|44.0,51.9|N|From Vindicator Vuuleen.|
-C Gorr'Dim, Your Time Has Come... |U|30353|N|Kill Gorr'Dim by using the beer in the same manner as before. |QID|10517|M|40.00,49.00|
+K Gorr'Dim, Your Time Has Come... |QID|10517|T|Gorr'Dim|U|30353|N|Kill Gorr'Dim by using the beer in the same manner as before. |M|40.00,49.00|
 T Gorr'Dim, Your Time Has Come... |QID|10517|M|44.0,51.9|N|To Vindicator Vuuleen.|
 A Planting the Banner|QID|10518|N|From Vindicator Vuuleen.|
-l Bladespire Clan Banner|QID|10518|N|Kill a Bladespire Champion on the second floor of this building (stairs are outside) and loot the Bladespire Clan Banner.|L|30416 1|M|39,58|
+C Get a Bladespire Clan Banner|QID|10518|QO|Bladespire Clan Banner: 1/1|N|Kill a Bladespire Champion on the second floor of this building (stairs are outside) and loot the Bladespire Clan Banner.|M|39,58|
 C Getting the Bladespire Tanked|N|Use the beer on more ogres until you complete this quest. |QID|10512|M|40.3,53.0|US|U|30353|
 C The Bladespire Ogres |N|Kill the rest of the ogres for this quest.|QID|10504|M|40.3,53.0|US|
 C Planting the Banner |U|30416|N|You may need a group for this quest. Plant the banner at the top of the tower here and fight the waves of mobs. Loot the helm at the end.|QID|10518|M|46.00,74.00|

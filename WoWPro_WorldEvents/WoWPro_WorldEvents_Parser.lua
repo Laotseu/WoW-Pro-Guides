@@ -1050,7 +1050,7 @@ function WoWPro.WorldEvents:EventHandler(self, event, ...)
 
 --	if event == "CRITERIA_UPDATE" then
 --		WoWPro:UpdateGuide()
-	end
+--	end
 end
 
 --[==[

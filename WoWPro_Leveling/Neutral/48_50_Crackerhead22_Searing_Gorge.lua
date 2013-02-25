@@ -164,7 +164,7 @@ C Southeastern tower|QID|28029|QO|Southeastern tower ablaze: 1/1|M|44.03,60.94|N
 C Eastern tower|QID|28029|QO|Eastern tower ablaze: 1/1|M|50.06,54.72|N|Click on the Eastern tower brazier.|
 C Southwestern tower|QID|28029|QO|Southwestern tower ablaze: 1/1|M|35.67,60.67|N|Click on the Southwestern tower brazier.|
 C Set Them Ablaze!|QID|28029|QO|Western tower ablaze: 1/1|M|33.32,54.47|N|Click on the Western tower brazier.|
-C Siege!|QID|28028|M|48.59,66.16|N|Kill Dark Iron Marksman near the Iron Summit.|
+C Siege!|QID|28028|US|M|48.59,66.16|N|Kill Dark Iron Marksman near the Iron Summit.|
 C The Mysteries of the Fire-Gizzard|QID|28032|M|34.85,67.89|US|N|Finish killing the Incendosaurs to get the items needed for this quest.|
 C They Build a Better Bullet|QID|28030|US|M|49.17,73.38|N|Finish collecting the Dark Iron Bullet crates, the bullets also drop off of Dark Iron Marskmen and Lookouts.|
 T The Mysteries of the Fire-Gizzard|QID|28032|M|39.02,68.77|N|To Agnes Flimshale.|
@@ -182,7 +182,7 @@ h Iron Summit|M|39.21,66.02|N|At Velma Rockslide.|QID|28035|
 F Thorium Point|QID|28035|M|40.89,68.91|N|Fly to Thorium Point.|
 T The Mountain-Lord's Support|QID|28035|M|38.09,26.82|N|To Overseer Oilfist.|
 A Operation: Stir the Cauldron|QID|28052|M|38.09,26.82|N|From Overseer Oilfist.|
-C Operation: Stir the Cauldron|QID|28052|M|41.44,55.72|N|Talk to Lanie Reed, choose the option to take the flying machine. Hit the 1 button and aim where you want to fire and click to fire.|
+C Operation: Stir the Cauldron|QID|28052|M|37.9,90.8|N|Talk to Lanie Reed, choose the option to take the flying machine. Hit the 1 button and aim where you want to fire and click to fire.|
 T Operation: Stir the Cauldron|QID|28052|M|40.89,51.84|N|To Mountain-Lord Rendan.|
 
 A Slavery is Bad|QID|28054|M|40.89,51.84|N|From Mountain-Lord Rendan.|

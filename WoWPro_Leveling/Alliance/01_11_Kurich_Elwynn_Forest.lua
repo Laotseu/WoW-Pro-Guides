@@ -211,24 +211,24 @@ T Mastering The Arcane|N|Train new skills while here.|QID|26916|C|Mage|R|Human|M
 T The Hunter's Path|N|Train new skills while here.|QID|26917|C|Hunter|R|Human|M|48.55,42.56|N|To Ashley Blank.|
 T Palm of the Tiger|QID|31142|C|Monk|R|Human|M|50.35,41.81|N|To Bao.|
 
-A Join The Battle!|QID|28788|C|Warlock|R|Human|M|49.87,42.65|N|From Ashley Blank.|
-A Join The Battle!|QID|28787|C|Rogue|R|Human|M|50.31,39.92|N|From Ashley Blank.|
-A Join The Battle!|QID|28786|C|Priest|R|Human|M|49.81,39.49|N|From Ashley Blank.|
-A Join The Battle!|QID|28789|C|Warrior|R|Human|M|50.24,42.28|N|From Ashley Blank.|
-A Join The Battle!|QID|28785|C|Paladin|R|Human|M|50.43,42.12|N|From Ashley Blank.|
-A Join The Battle!|QID|28784|C|Mage|R|Human|M|49.66,39.40|N|From Ashley Blank.|
-A Join The Battle!|QID|28780|C|Hunter|R|Human|M|48.55,42.56|N|From Ashley Blank.|
-A Join The Battle!|QID|31143|C|Monk|R|Human|M|50.35,41.81|N|From Bao.|
-A Join The Battle!|QID|29080|R|Dwarf,Night Elf,Gnome,Draenei,Worgen|M|48.55,42.56|N|From Ashley Blank.|
-T Join The Battle!|QID|28788|C|Warlock|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
-T Join The Battle!|QID|28787|C|Rogue|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
-T Join The Battle!|QID|28786|C|Priest|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
-T Join The Battle!|QID|28789|C|Warrior|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
-T Join The Battle!|QID|28785|C|Paladin|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
-T Join The Battle!|QID|28784|C|Mage|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
-T Join The Battle!|QID|28780|C|Hunter|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
-T Join The Battle!|QID|31143|C|Monk|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
-T Join The Battle!|QID|29080|R|Dwarf,Night Elf,Gnome,Draenei,Worgen|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
+A Join the Battle!|QID|28788|C|Warlock|R|Human|M|49.87,42.65|N|From Ashley Blank.|
+A Join the Battle!|QID|28787|C|Rogue|R|Human|M|50.31,39.92|N|From Ashley Blank.|
+A Join the Battle!|QID|28786|C|Priest|R|Human|M|49.81,39.49|N|From Ashley Blank.|
+A Join the Battle!|QID|28789|C|Warrior|R|Human|M|50.24,42.28|N|From Ashley Blank.|
+A Join the Battle!|QID|28785|C|Paladin|R|Human|M|50.43,42.12|N|From Ashley Blank.|
+A Join the Battle!|QID|28784|C|Mage|R|Human|M|49.66,39.40|N|From Ashley Blank.|
+A Join the Battle!|QID|28780|C|Hunter|R|Human|M|48.55,42.56|N|From Ashley Blank.|
+A Join the Battle!|QID|31143|C|Monk|R|Human|M|50.35,41.81|N|From Bao.|
+A Join the Battle!|QID|29080|R|Dwarf,Night Elf,Gnome,Draenei,Worgen|M|48.55,42.56|N|From Ashley Blank.|
+T Join the Battle!|QID|28788|C|Warlock|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
+T Join the Battle!|QID|28787|C|Rogue|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
+T Join the Battle!|QID|28786|C|Priest|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
+T Join the Battle!|QID|28789|C|Warrior|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
+T Join the Battle!|QID|28785|C|Paladin|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
+T Join the Battle!|QID|28784|C|Mage|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
+T Join the Battle!|QID|28780|C|Hunter|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
+T Join the Battle!|QID|31143|C|Monk|R|Human|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
+T Join the Battle!|QID|29080|R|Dwarf,Night Elf,Gnome,Draenei,Worgen|M|48.81,38.38|N|To Sergeant Willem, outside the abbey by the blue tent.|
 
 A They Sent Assassins|QID|28791|C|Hunter|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
 A Fear No Evil|QID|28806|C|Hunter|R|Human|M|48.49,38.16|N|From Brother Paxton.|
@@ -294,24 +294,24 @@ T They Sent Assassins|QID|31144|C|Monk|R|Human|M|48.81,38.38|N|To Sergeant Wille
 T Fear No Evil|QID|29082|R|Dwarf,Night Elf,Gnome,Draenei,Worgen|M|48.49,38.16|N|To Brother Paxton.|
 T They Sent Assassins|QID|29081|R|Dwarf,Night Elf,Gnome,Draenei,Worgen|M|48.81,38.38|N|To Sergeant Willem.|
 
-A The Rear Is Clear|QID|28817|C|Hunter|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
-T The Rear Is Clear|QID|28817|C|Hunter|R|Human|M|48.20,42.06|N|To Marshal McBride.|
-A The Rear Is Clear|QID|28818|C|Mage|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
-T The Rear Is Clear|QID|28818|C|Mage|R|Human|M|48.20,42.06|N|To Marshal McBride.|
-A The Rear Is Clear|QID|28823|C|Warrior|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
-T The Rear Is Clear|QID|28823|C|Warrior|R|Human|M|48.20,42.06|N|To Marshal McBride.|
-A The Rear Is Clear|QID|28820|C|Priest|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
-T The Rear Is Clear|QID|28820|C|Priest|R|Human|M|48.20,42.06|N|To Marshal McBride.|
-A The Rear Is Clear|QID|28821|C|Rogue|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
-T The Rear Is Clear|QID|28821|C|Rogue|R|Human|M|48.20,42.06|N|To Marshal McBride.|
-A The Rear Is Clear|QID|28819|C|Paladin|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
-T The Rear Is Clear|QID|28819|C|Paladin|R|Human|M|48.20,42.06|N|To Marshal McBride.|
-A The Rear Is Clear|QID|28822|C|Warlock|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
-T The Rear Is Clear|QID|28822|C|Warlock|R|Human|M|48.20,42.06|N|To Marshal McBride.|
-A The Rear Is Clear|QID|31145|C|Monk|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
-T The Rear Is Clear|QID|31145|C|Monk|R|Human|M|48.20,42.06|N|To Marshal McBride.|
-A The Rear Is Clear|QID|29083|R|Dwarf,Night Elf,Gnome,Draenei,Worgen|M|48.81,38.38|N|From Sergeant Willem.|
-T The Rear Is Clear|QID|29083|R|Dwarf,Night Elf,Gnome,Draenei,Worgen|M|48.20,42.06|N|To Marshal McBride.|
+A The Rear is Clear|QID|28817|C|Hunter|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
+T The Rear is Clear|QID|28817|C|Hunter|R|Human|M|48.20,42.06|N|To Marshal McBride.|
+A The Rear is Clear|QID|28818|C|Mage|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
+T The Rear is Clear|QID|28818|C|Mage|R|Human|M|48.20,42.06|N|To Marshal McBride.|
+A The Rear is Clear|QID|28823|C|Warrior|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
+T The Rear is Clear|QID|28823|C|Warrior|R|Human|M|48.20,42.06|N|To Marshal McBride.|
+A The Rear is Clear|QID|28820|C|Priest|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
+T The Rear is Clear|QID|28820|C|Priest|R|Human|M|48.20,42.06|N|To Marshal McBride.|
+A The Rear is Clear|QID|28821|C|Rogue|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
+T The Rear is Clear|QID|28821|C|Rogue|R|Human|M|48.20,42.06|N|To Marshal McBride.|
+A The Rear is Clear|QID|28819|C|Paladin|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
+T The Rear is Clear|QID|28819|C|Paladin|R|Human|M|48.20,42.06|N|To Marshal McBride.|
+A The Rear is Clear|QID|28822|C|Warlock|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
+T The Rear is Clear|QID|28822|C|Warlock|R|Human|M|48.20,42.06|N|To Marshal McBride.|
+A The Rear is Clear|QID|31145|C|Monk|R|Human|M|48.81,38.38|N|From Sergeant Willem.|
+T The Rear is Clear|QID|31145|C|Monk|R|Human|M|48.20,42.06|N|To Marshal McBride.|
+A The Rear is Clear|QID|29083|R|Dwarf,Night Elf,Gnome,Draenei,Worgen|M|48.81,38.38|N|From Sergeant Willem.|
+T The Rear is Clear|QID|29083|R|Dwarf,Night Elf,Gnome,Draenei,Worgen|M|48.20,42.06|N|To Marshal McBride.|
 
 A Blackrock Invasion|QID|26389|M|48.20,42.06|N|From Marshal McBride.|
 A Extinguishing Hope|QID|26391|M|48.15,42.52|N|From Milly Osworth.|
@@ -324,14 +324,14 @@ A Ending The Invasion|QID|26390|M|48.20,42.06|N|From Marshal McBride.|
 C Ending The Invasion|N|Kill Kurtok The Slayer (go around the abbey to get to him).|QID|26390|M|56.90,40.81|
 H Northshire Valley|QID|26390|U|6948|N|Hearth or run back.|M|48.20,42.06|
 T Ending The Invasion|QID|26390|M|48.20,42.06|N|To Marshal McBride.|
-A Report To Goldshire|QID|54|M|48.20,42.06|N|From Marshal McBride.|
+A Report to Goldshire|QID|54|M|48.20,42.06|N|From Marshal McBride.|
 
-A Rest And Relaxation|QID|2158|M|45.56,47.73|N|From Falkhaan Isenstrider.|
+A Rest and Relaxation|QID|2158|M|45.56,47.73|N|From Falkhaan Isenstrider.|
 ;f Goldshire|QID|2158|M|41.72,64.64|N|At Bartlett the Brave.|
 h Lion's Pride Inn|QID|2158|M|43.77,65.80|N|At Innkeeper Farley.|
-T Rest And Relaxation|QID|2158|M|43.77,65.80|N|To Innkeeper Farley.|
+T Rest and Relaxation|QID|2158|M|43.77,65.80|N|To Innkeeper Farley.|
 A Kobold Candles|QID|60|M|43.32,65.71|N|From William Pestle.|
-T Report To Goldshire|QID|54|M|42.11,65.92|N|To Marshal Dughan.|
+T Report to Goldshire|QID|54|M|42.11,65.92|N|To Marshal Dughan.|
 A The Fargodeep Mine|QID|62|M|42.11,65.92|N|From Marshal Dughan.|
 r Sell Junk,restock,train and repair.|QID|85|N|Repair available inside the forging hut.  Lien Farner at the junction  will train you the basics of every primary professions.\n\nClick this step to continue.|M|41.84,65.68;41.95,67.17|
 A Gold Dust Exchange|QID|47|M|42.14,67.25|N|From Remy "Two Times".|
@@ -340,19 +340,19 @@ R The Stonefield Farm|N|Kill and loot Kobold Tunnelers on the way (for Gold Dust
 A Lost Necklace|QID|85|M|34.49,84.25|N|From "Auntie" Bernice Stonefield.|
 R The Maclure Vineyards|N|Kill and loot Kobold Tunnelers on the way (for Gold Dust and Large Candles).|QID|85|M|40.47,86.61|
 T Lost Necklace|QID|85|M|43.13,85.72|N|To Billy Maclure.|
-A Pie For Billie|QID|86|M|43.13,85.72|N|From Billy Maclure.|
-C Pie For Billie|N|Kill and loot Stonetusk Boars until you have 4 Tender Boar Meat.|QID|86|M|41.74,87.48|S|
+A Pie for Billie|QID|86|M|43.13,85.72|N|From Billy Maclure.|
+C Pie for Billie|N|Kill and loot Stonetusk Boars until you have 4 Tender Boar Meat.|QID|86|M|41.74,87.48|S|
 A Young Lovers|QID|106|M|43.15,89.63|N|From Maybell Maclure.|
-C Pie For Billie|N|Kill and loot Stonetusk Boars until you have 4 Tender Boar Meat.|QID|86|M|41.74,87.48|US|
+C Pie for Billie|N|Kill and loot Stonetusk Boars until you have 4 Tender Boar Meat.|QID|86|M|41.74,87.48|US|
 R The Stonefield Farm|N|Kill and loot Kobold Tunnelers on the way (for Gold Dust and Large Candles).|QID|86|M|29.84,86.00|
 T Young Lovers|QID|106|M|29.84,86.00|N|To Tommy Joe Stonefield.|
-A Speak With Gramma|QID|111|M|29.84,86.00|N|From Tommy Joe Stonefield.|
-T Pie For Billie|QID|86|M|34.49,84.25|N|To "Auntie" Bernice Stonefield.|
-A Back To Billie|QID|84|M|34.49,84.25|N|From "Auntie" Bernice Stonefield.|
-T Speak With Gramma|QID|111|M|34.94,83.86|N|To Gramma Stonefield, inside the hut.|
-A Note To William|QID|107|M|34.94,83.86|N|From Gramma Stonefield.|
+A Speak with Gramma|QID|111|M|29.84,86.00|N|From Tommy Joe Stonefield.|
+T Pie for Billie|QID|86|M|34.49,84.25|N|To "Auntie" Bernice Stonefield.|
+A Back to Billy|QID|84|M|34.49,84.25|N|From "Auntie" Bernice Stonefield.|
+T Speak with Gramma|QID|111|M|34.94,83.86|N|To Gramma Stonefield, inside the hut.|
+A Note to William|QID|107|M|34.94,83.86|N|From Gramma Stonefield.|
 R The Maclure Vineyards|N|Kill and loot Kobold Tunnelers on the way (for Gold Dust and Large Candles).|QID|84|M|40.47,86.61|
-T Back To Billy|QID|84|M|43.13,85.72|N|To Billy Maclure.|
+T Back to Billy|QID|84|M|43.13,85.72|N|To Billy Maclure.|
 A Goldtooth|QID|87|M|43.13,85.72|N|From Billy Maclure.|
 C Goldtooth|N|Go to Goldtooth's Den (which is located OUTSIDE of the mine), kill Goldtooth and loot Bernice's Necklace.|T|Goldtooth|QID|87|M|40.10,80.64|
 T Goldtooth|QID|87|M|34.49,84.25|N|To "Auntie" Bernice Stonefield.|
@@ -367,7 +367,7 @@ C Kobold Candles|N|Kill Kobolds until you have 8 Kobold Candles.|QID|60|US|
 C Gold Dust Exchange|N|Kill Kobolds until you have 10 Gold Dust.|QID|47|US|
 
 H Lion's Pride Inn |QID|60|N|Hearthstone to, or run back to Lion's Pride Inn in Goldshire.|M|43.75,65.75|
-T Note To William|QID|107|M|43.32,65.70|N|To William Pestle.|
+T Note to William|QID|107|M|43.32,65.70|N|To William Pestle.|
 A Collecting Kelp|QID|112|M|43.32,65.70|N|From William Pestle.|
 T Kobold Candles|QID|60|M|43.32,65.70|N|To William Pestle.|
 
@@ -405,38 +405,38 @@ A Fine Linen Goods|QID|83|M|79.46,68.71|N|From Sara Timberlain.|
 C Wanted: James Clark|N|Kill James clark and pickup his head and the Gold Pickup Schedule.|T|James Clark|QID|26152|M|78.66,67.16|
 A The Collector|N|Get this from the Gold Pickup Schedule in your bags.|U|1307|QID|123|
 
-A A Bundle Of Trouble|QID|5545|M|81.38,66.11|N|From Supervisor Raelen.|
+A A Bundle of Trouble|QID|5545|M|81.38,66.11|N|From Supervisor Raelen.|
 T Wanted: James Clark|QID|26152|M|81.86,66.04|N|To Marshal McCree.|
-A Manhunt|QID|147|M|81.86,66.04|N|From Marshal McCree.|
 T The Collector|QID|123|M|81.86,66.04|N|To Marshal McCree.|
+A Manhunt|QID|147|M|81.86,66.04|N|From Marshal McCree.|
 r Sell Junk and Repair.|QID|45|N|From Rallic Finn.\n\nClick this step to continue.|M|83.27,66.08|
 
 C Bounty on Murlocs|N|Kill and loot Murlocs for their fins Fins.|QID|46|M|79.51,56.00|S|
-C A Bundle Of Trouble|N|Collect 8 Bundles Of Wood.|QID|5545|M|80.75,61.33|NC|S|
+C A Bundle of Trouble|N|Collect 8 Bundles Of Wood.|QID|5545|M|80.75,61.33|NC|S|
 T Discover Rolf's Fate|QID|45|M|79.80,55.50|N|To Rolf's corpse.|
-A Report To Thomas|QID|71|M|79.80,55.50|N|From Rolf's corpse.|
+A Report to Thomas|QID|71|M|79.80,55.50|N|From Rolf's corpse.|
 C Bounty on Murlocs|N|Kill Murlocs until you have 8 Murloc Fins.|QID|46|M|79.51,56.00|US|
 C Bounty on Murlocs|N|Kill and loot Murlocs for their fins Fins.|QID|46|M|79.51,56.00|US|
 
-;f Eastvale Logging Camp|QID|147|M|81.83,66.56|N|At Goss the Swift.|
+f Eastvale Logging Camp|QID|147|M|81.83,66.56|N|At Goss the Swift.|
 
-C A Bundle Of Trouble|N|Collect 8 Bundles Of Wood.|QID|5545|M|80.75,61.33|NC|US|
+C A Bundle of Trouble|N|Collect 8 Bundles Of Wood.|QID|5545|M|80.75,61.33|NC|US|
 r Sell Junk and Repair.|QID|5545|N|From Rallic Finn.\n\nClick this step to continue.|M|83.27,66.08|
-T A Bundle Of Trouble|QID|5545|M|81.38,66.11|N|To Supervisor Raelen.|
+T A Bundle of Trouble|QID|5545|M|81.38,66.11|N|To Supervisor Raelen.|
 R Ridgepoint Tower|N|If you want the explorer's achievement go to Ridgepoint Tower now.|QID|71|M|83.99,78.92|
 C Protect the Frontier|N|Kill the remaining wolves and Bears you need to finish the quest.|QID|52|M|87.55,67.79|US|
 
-T Protect The Frontier|QID|52|M|73.97,72.18|N|To Guard Thomas.|
+T Protect the Frontier|QID|52|M|73.97,72.18|N|To Guard Thomas.|
 T Bounty on Murlocs|QID|46|M|73.97,72.18|N|To Guard Thomas.|
-T Report To Thomas|QID|71|M|73.97,72.18|N|To Guard Thomas.|
-A Cloth And Leather Armor|QID|59|M|73.97,72.18|N|From Guard Thomas.|
+T Report to Thomas|QID|71|M|73.97,72.18|N|To Guard Thomas.|
+A Cloth and Leather Armor|QID|59|M|73.97,72.18|N|From Guard Thomas.|
 
 C Fine Linen Goods|N|Kill Bandits until you have 6 Linen Scraps.|QID|83|M|71.20,78.86|S|
 C Manhunt|N|Kill Morgan the collector and  pick up his ring.|T|Morgan The Collector|QID|147|M|71.05,80.63|
 C Fine Linen Goods|N|Kill Bandits until you have 6 Linen Scraps.|QID|83|M|71.20,78.86|US|
 
 T Fine Linen Goods|QID|83|M|79.46,68.71|N|To Sara Timberlain.|
-T Cloth And Leather Armor|QID|59|M|79.46,68.71|N|To Sara Timberlain.|
+T Cloth and Leather Armor|QID|59|M|79.46,68.71|N|To Sara Timberlain.|
 
 T Manhunt|QID|147|M|81.86,66.04|N|To Marshal McCree.|
 F Goldshire|QID|114|M|81.86,66.04|N|Fly to Goldshire.|
@@ -456,9 +456,9 @@ T Continue To Stormwind|QID|26394|Z|Stormwind City|M|77.17,60.98|R|Human|N|To Os
 A Dungar Longdrink|QID|26395|Z|Stormwind City|M|77.17,60.98|R|Human|N|From Osric Strang.|
 T Elmore's Task|QID|1097|Z|Stormwind City|M|59.72,33.78|N|To Grimand Elmore.|
 T Dungar Longdrink|QID|26395|Z|Stormwind City|M|70.93,72.48|R|Human|N|To Osric Strang.|
-A Return To Argus|QID|26396|Z|Stormwind City|M|70.93,72.48|R|Human|N|From Osric Strang.|
+A Return to Argus|QID|26396|Z|Stormwind City|M|70.93,72.48|R|Human|N|From Osric Strang.|
 F Goldshire|QID|26396|Z|Stormwind City|M|70.93,72.48|N|Fly back to Goldshire.|
-T Return To Argus|QID|26396|M|41.71,65.55|R|Human|N|To Smith Argus.|
+T Return to Argus|QID|26396|M|41.71,65.55|R|Human|N|To Smith Argus.|
 A Westbrook Garrison Needs Help!|QID|239|M|42.10,65.93|N|From Marshal Dughan.|
 
 T Westbrook Garrison Needs Help!|QID|239|M|24.23,74.45|N|To Deputy Rainer.|

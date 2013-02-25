@@ -104,7 +104,7 @@ A Tarenar Sunstrike|QID|27370|M|9.02,66.52|N|From Fiona.|S|
 A Gidwin Goldbraids|QID|27367|M|9.02,66.52|N|From Fiona.|
 A Tarenar Sunstrike|QID|27370|M|9.02,66.52|N|From Fiona.|US|
 
-f Get flightpoint.|QID|27367|M|10.02,65.70|N|At Frax Bucketdrop.|LVL|40|
+f Thondoril River|QID|27367|M|10.02,65.70|N|At Frax Bucketdrop.|LVL|40|
 T Gidwin Goldbraids|QID|27367|M|4.16,36.16|N|To Gidwin Goldbraids.|
 A Just Encased|QID|27368|M|4.17,36.13|N|From Gidwin Goldbraids.|
 C Just Encased|QID|27368|M|7.52,30.82|N|Kill Crypt Walkers, Stalkers and Horrors in the Terrorweb Tunnel that is next to the quest giver.|
@@ -162,7 +162,7 @@ A Heroes of Darrowshire|QID|27388|M|35.18,68.02|N|From Chromie.|US|
 A Marauders of Darrowshire|QID|27389|M|35.18,68.02|N|From Chromie.|US|RANK|2|
 
 A Cenarion Tenacity|QID|27544|M|34.93,68.32|N|From Urk Gagbaz.|RANK|2|
-C Heroes of Darrowshire - extended Annals of Darrowshire|QID|27388|L|13202|M|35.57,68.89|N|Speak to Carl Redpath and ask for the extended Annals of Darrowshire.|QO|Extended Annals of Darrowshire: 1/1|NC|RANK|2|
+C Heroes of Darrowshire - extended Annals of Darrowshire|QID|27388|L|13202|M|35.57,68.89|N|Speak to Carlin Redpath and ask for the extended Annals of Darrowshire.|QO|Extended Annals of Darrowshire: 1/1|NC|RANK|2|
 
 C Rough Roads|QID|27382|M|41.30,71.09|N|Kill any Plaguebats you need.|S|
 C Villains of Darrowshire - Shattered Sword of Marduk|QID|27387|M|39.77,72.36|N|Pick up the "Shattered Sword of Marduk" fron the floor.|QO|Shattered Sword of Marduk: 1/1|NC|RANK|2|
@@ -288,9 +288,11 @@ H Light's Hope Chapel|QID|27620|N|Hearth to Light's Hope Chapel, or run if your 
 T Like Rats|QID|27620|M|75.66,52.18|N|To Leonid Barthalomew the Revered.|
 T Gathering Some Grub(s)|QID|27456|M|73.86,51.96|N|To Rimblat Earthshatter.|
 r Sell junk, repair/restock.|QID|27458|M|75.16,53.69|
-C Smokey and the Bandage|QID|27458|L|62028 1|M|71.58,46.38|N|Kill Stephen Browman to get "Browman's Wrappings".|
+C Argentd Call: The Noxious Glade|QID|27465|S|M|77.35,39.07|N|Watch out for Garginox, a level 45 elite.|
 C Buried Blades|QID|27467|S|M|76.20,39.41|N|Poke the Slain Scourge Troopers with the "Light-Touched Blades" as you kill the mobs for the other quest.|
-C Argent Call: The Noxious Glade|QID|27465|M|77.35,39.07|N|Watch out for Garginox, a level 45 elite.|
+C Smokey and the Bandage|QID|27458|L|62028 1|M|71.58,46.38|N|Kill Stephen Browman to get "Browman's Wrappings".|
+C Buried Blades|QID|27467|US|M|76.20,39.41|N|Poke the Slain Scourge Troopers with the "Light-Touched Blades" as you kill the mobs for the other quest.|
+C Argentd Call: The Noxious Glade|QID|27465|US|M|77.35,39.07|N|Watch out for Garginox, a level 45 elite.|
 T Smokey and the Bandage|QID|27458|M|74.94,53.36|N|To Smokey LaRue.|
 T Buried Blades|QID|27467|US|M|75.67,52.21|N|To Master Craftsman Omarion.|
 T Argent Call: The Noxious Glade|QID|27465|M|75.80,52.07|N|To Lord Maxwell Tyrosus.|
@@ -302,13 +304,13 @@ T An Opportune Alliance|QID|27457|M|61.42,42.83|N|To Fiona.|
 T Argent Call: Northdale|QID|27466|M|61.42,42.78|N|To Fiona.|
 
 N Optional Buff|QID|27479|N|New buff at caravan. "Rimbalt's Stone", chance to cast a small self-heal when killing creatures within Eastern Plaguelands.|
-A Righteous Indignation|QID|27479|M|61.29,42.94|N|From Deacon Andaal.|
-A Out of the Ziggurat|QID|27481|M|61.29,42.84|N|From Vex'tul.|
-A The Corpulent One|QID|27477|M|61.50,43.22|N|From Gamella Cracklefizz.|
 A Ix'lar the Underlord|QID|27487|M|61.53,43.29|N|From Tarenar Sunstrike.|
+A Righteous Indignation|QID|27479|M|61.29,42.94|N|From Deacon Andaal.|
+A Out of the Ziggurat|QID|27481|M|60.6,43.3|N|From Vex'tul.|
+A The Corpulent One|QID|27477|M|61.50,43.22|N|From Gamella Cracklefizz.|
 C Ix'lar the Underlord|QID|27487|M|60.88,34.20|T|Ix'lar the Underlord|N|Ix'lar wanders around, so look for the boss icon on the minimap to see where he is.|
 C The Corpulent One|QID|27477|M|57.66,28.27|T|Borelgore|N|Borelgore seems to wander in the scar, look for his boss icon on the minimap.|
-C Righteous Indignation|QID|27479|M|65.50,12.34|N|Kill Mossflayers as you go for their eyes, be careful not to step on the graves.|S|
+C Righteous Indignation|QID|27479|S|M|65.50,12.34|N|Kill Mossflayers as you go for their eyes, be careful not to step on the graves.|S|
 C Out of the Ziggurat|QID|27481|M|66.45,10.53|N|Go to the top of the ziggurat and kill Warlord Thresh'jin and loot his corpse.|
 T Out of the Ziggurat|QID|27481|M|66.58,9.17|N|(UI Alert)|
 A Into the Flames|QID|27482|M|66.58,9.17|N|(UI Alert)|
@@ -354,9 +356,9 @@ A The Baroness' Missive|QID|27551|U|61378|N|Omasum Blighthoof or Karthis Darkrun
 T The Baroness' Missive|QID|27551|M|27.48,21.27|N|To Tarenar Sunstrike.|
 A Gidwin's Fate Revealed|QID|27526|M|27.48,21.27|N|From Tarenar Sunstrike.|
 T Guardians of Stratholme|QID|27525|M|27.48,21.27|N|To Tarenar Sunstrike.|
-C Scourged Mass|QID|27528|U|61369|M|32.22,21.30|N|Kill Overstuffed Golems and then burn their corpses.|S|
-C Defenders of Darrowshire|QID|27529|M|36.27,17.53|N|Kill Cannibal Ghouls then to talk to the spirits.|S|
-C Add 'em to the Pile|QID|27539|M|38.38,30.46|N|Kill Cursed Mages and Scourge Soldiers to get their skulls.|S|
+;C Scourged Mass|QID|27528|U|61369|M|32.22,21.30|N|Kill Overstuffed Golems and then burn their corpses.|S|
+;C Defenders of Darrowshire|QID|27529|M|36.27,17.53|N|Kill Cannibal Ghouls then to talk to the spirits.|S|
+;C Add 'em to the Pile|QID|27539|M|38.38,30.46|N|Kill Cursed Mages and Scourge Soldiers to get their skulls.|S|
 C Gidwin's Fate Revealed|QID|27526|M|28.69,26.06|N|As you enter the slaughterhouse you will be treated to a cutscene.|
 T Gidwin's Fate Revealed|QID|27526|M|28.34,25.90|N|To Gidwin Goldbraids.|
 

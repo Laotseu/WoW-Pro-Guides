@@ -543,7 +543,7 @@ A Gourmet Kafa|QID|30743|M|42.34,69.73|N|From Cousin Gootfur.|
 C Gourmet Kafa|QID|30743|S|M|39.99,71.67|N|Flag the droppings.|
 C Shut it Down|QID|30742|S|M|40.67,73.42|N|Goats are hard to miss.|
 C Trouble Brewing|QID|30745|S|M|37.83,77.90;39.39,75.23;37.16,68.20|N|Yeti's are located in the caves, any of the caves will do.|
-C Kota Blend|QID|30744|U|81054|S|M|36.38,76.94|Pick up the betties from the ground. very plentiful in the caves.|
+C Kota Blend|QID|30744|U|81054|M|36.38,76.94|Pick up the betties from the ground. very plentiful in the caves.|
 T Kota Blend|QID|30744|N|To UI Alert.|M|36.38,76.94|
 A A Fair Trade|QID|30746|N|From UI Alert.|M|36.38,76.94|
 C Gourmet Kafa|QID|30743|US|M|36.95,76.16|N|Flag the droppings.|
@@ -587,7 +587,7 @@ C Unmasking the Yaungol|QID|30690|U|81741|M|45.28,86.63|N|Set up you trap and pu
 T Unmasking the Yaungol|QID|30690|M|44.48,89.91|N|To Shado-Master Chong.|
 A To Winter's Blossom|QID|30699|M|44.48,89.91|N|From Shado-Master Chong.|
 r Repair/Restock|QID|30699|M|44.23,90.25|N|At Fixxit Redhammer.|
-f Serpent's Spine|QID|30699|M|43.92,89.56|N|Up the stairs, at Kite Master Ni.|
+f Shado-Pan Fallback|QID|30699|M|43.92,89.56|N|Up the stairs, at Kite Master Ni.|
 H Kota Basecamp|QID|30699|N|Fly if your hearth isn't set to Kota Basecamp, if you took Koto Kon down to the gate, dont forget to turn in The Burlap Grind now.|
 
 R Winter's Blossom|QID|30699|M|34.97,59.36|

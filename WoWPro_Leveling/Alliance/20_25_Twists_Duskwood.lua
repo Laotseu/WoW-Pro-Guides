@@ -164,9 +164,9 @@ C The Rotting Orchard|QID|26689|N|Kill Nightbane Shadow Weavers. Beware of the h
 C In A Dark Corner|QID|26669|M|66.5,76.5|N|Inside the barn, at the back.|NC|
 C The Rotting Orchard|QID|26689|N|Finish Killing Nightbane Shadow Weavers. Beware of the hidden stalkers in this area.|US|
 
-A Vlugar Vul'Gol|QID|25235|M|45.18,66.95|N|From Watcher Dodds, along the road to the west.|
+A Vulgar Vul'Gol|QID|25235|M|45.18,66.95|N|From Watcher Dodds, along the road to the west.|
 
-C Vlugar Vul'Gol|QID|25235|M|41.91,68.86|S|N|Kill any type Splinter Fist Ogres.|
+C Vulgar Vul'Gol|QID|25235|M|41.91,68.86|S|N|Kill any type Splinter Fist Ogres.|
 C Ogre Thieves|QID|26680|M|33.45,75.27|N|Just outside the cave, pickup Abercrombie's Crate.|NC|
 C Classy Glass|QID|26685|M|37.84,84.33|N|Head to the back of the cave, kill and loot Zzarc'Vul.|
 C Vlugar Vul'Gol|QID|25235|M|41.91,68.86|US|N|Finish killing Splinter Fist Ogres.|
