@@ -321,11 +321,13 @@ function WoWPro:OnEnable()
 		"PLAYER_LEAVING_WORLD",
 		"PLAYER_LEVEL_UP",
 --		"PLAYER_REGEN_ENABLED",
+		"QUEST_ACCEPTED",
+		"QUEST_ACCEPT_CONFIRM",
 		"QUEST_AUTOCOMPLETE",
 		"QUEST_COMPLETE",
 		"QUEST_DETAIL",
 		"QUEST_GREETING",
-		"QUEST_LOG_UPDATE",
+--		"QUEST_LOG_UPDATE",
 		"QUEST_PROGRESS",
 --		"QUEST_QUERY_COMPLETE",
 		"UPDATE_BINDINGS",
@@ -333,6 +335,9 @@ function WoWPro:OnEnable()
 		"ZONE_CHANGED_INDOORS",
 		"ZONE_CHANGED_NEW_AREA",
 		"CRITERIA_UPDATE",
+		"PET_BATTLE_OPENING_START",
+		"PET_BATTLE_CLOSE",
+		"UNIT_QUEST_LOG_CHANGED",
 	})
 	if not WoWPro.MOP then WoWPro:RegisterEvents( {"QUEST_QUERY_COMPLETE"} ) end
 --	WoWPro.LockdownTimer = nil
@@ -419,6 +424,21 @@ function WoWPro:OnEnable()
 
 			WoWPro:AutoCompleteZone(...)
 
+			-- Noticing if we are doing a pet battle!
+		elseif event == "PET_BATTLE_OPENING_START" and (not WoWPro.Hidden) then
+			--WoWPro:Print("|cff33ff33Pet Battle Auto Hide|r: Leveling Module")
+			if InCombatLockdown() then return end
+			WoWPro.MainFrame:Hide()
+			WoWPro.Titlebar:Hide()
+			WoWPro.Hidden = true
+				--return
+
+		elseif event == "PET_BATTLE_CLOSE" and WoWPro.Hidden then
+			--WoWPro:Print("|cff33ff33Pet Battle Exit Auto Show|r: Leveling Module")
+			WoWPro.MainFrame:Show()
+			WoWPro.Titlebar:Show()
+			WoWPro.Hidden = nil		
+
 		elseif event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" then
 			WoWPro:AutoCompleteZone(...)
 
@@ -444,7 +464,7 @@ function WoWPro:OnEnable()
 		-- Update the guide in case there were quest or objectives completed during the cinematics
 		-- and the UI was not updated.
 		elseif event == "CINEMATIC_STOP" then
-			WoWPro:UpdateGuide()
+			--WoWPro:UpdateGuide()
 			--WoWPro:MapPoint()
 			WoWPro:DelayMapPoint(true)
 
@@ -462,8 +482,8 @@ function WoWPro:OnEnable()
 			-- Set Hearth and deal with quest that are accepted and completed in one step
 			WoWPro:CHAT_MSG_SYSTEM_parser(...)
 
-		elseif event == "QUEST_LOG_UPDATE" then
-				WoWPro:QUEST_LOG_UPDATE_bucket()
+		elseif event == "UNIT_QUEST_LOG_CHANGED" or event == "QUEST_ACCEPTED" or event == "QUEST_ACCEPT_CONFIRM" then
+				WoWPro:QUEST_LOG_UPDATE_bucket(event, ...)
 
 		-- All the auto-complete messages need to be processed after the QUEST_LOG_UPDATE
 		-- hense the bucket. Also, all of them can be escaped with the shift key.
@@ -656,7 +676,10 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 	f:SetScript("OnUpdate", function(self, elapsed)
 		throt = throt - elapsed
 		if throt < 0 and WoWPro.action and WoWPro.lootqty then
+			f:Hide()
+
 			if quest_log_update then
+--err("PopulateQuestLog")
 
 				WoWPro:PopulateQuestLog()
 				WoWPro:AutoCompleteQuestUpdate()
@@ -664,7 +687,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 
 				quest_log_update = nil
 			end
-		
+
 			--if gossip_show then
 			if GossipFrame:IsShown() then
 
@@ -697,6 +720,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 					until not item
 				end
 
+				WoWPro:QUEST_LOG_UPDATE_bucket()
 				--gossip_show = nil
 			end
 
@@ -724,6 +748,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 					end
 				end
 
+				WoWPro:QUEST_LOG_UPDATE_bucket()
 				--quest_greeting = nil
 			end
 
@@ -736,6 +761,7 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 					CompleteQuest()
 				end
 
+				WoWPro:QUEST_LOG_UPDATE_bucket()
 				--quest_progress = nil
 			end
 
@@ -751,11 +777,13 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 						GetQuestReward(1)
 				end
 
+				WoWPro:QUEST_LOG_UPDATE_bucket()
 				--quest_complete = nil
 			end
 
 			--if quest_detail then
 			if QuestFrameDetailPanel:IsShown() then
+--err("AutoAcceptQuest")
 
 				-- Accept the current quest automaticaly if applicable
 				local qidx = WoWPro.CurrentIndex
@@ -770,13 +798,14 @@ do -- QUEST_LOG_UPDATE_bucket Bucket Closure
 					end
 				end
 
+				WoWPro:QUEST_LOG_UPDATE_bucket()
 				--quest_detail = nil
 			end
-
-			f:Hide()
+		
 		end
 	end)
-	function WoWPro:QUEST_LOG_UPDATE_bucket()
+	function WoWPro:QUEST_LOG_UPDATE_bucket(arg1, arg2, arg3)
+--err("QUEST_LOG_UPDATE_bucket: arg1 = %s, arg2 = %s, arg3 = %s",arg1, arg2, arg3)	
 		quest_log_update = true
 		f:Show()
 	end
@@ -829,7 +858,7 @@ end -- End Bucket Closure
 
 do -- DelayMapUpdate Bucket Closure
 
-	local THROTTLE_TIME = 0.2
+	local THROTTLE_TIME = 1
 	local throt, need_update_guide
 	local f = CreateFrame("Frame")
 	f:Hide()

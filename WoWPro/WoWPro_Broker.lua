@@ -26,8 +26,10 @@ local wipe 									= _G.wipe
 
 local UIParent 							= _G.UIParent
 
+local CollapseQuestHeader				= _G.CollapseQuestHeader
 local CreateFrame 						= _G.CreateFrame
 local EasyMenu 							= _G.EasyMenu
+local ExpandQuestHeader					= _G.ExpandQuestHeader
 local GetFactionInfo 					= _G.GetFactionInfo
 local GetFactionInfoByID 				= _G.GetFactionInfoByID
 local GetFriendshipReputation			= _G.GetFriendshipReputation
@@ -273,7 +275,7 @@ local function UpdateGuide_bucket(offset)
 end
 
 -- For profilling
-local max_time, nb_error = 30, 0
+local max_time, nb_error = 1000, 0
 
 -- Guide Update --
 function WoWPro:UpdateGuide(offset)
@@ -510,8 +512,8 @@ function WoWPro:NextStep(k,i)
 			else
 			    name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfoByID(factionIndex)
 			end
-			self:Print("Rep %s Friendship=%s: repID %s <= standingId %s and repmax %s >= standingId %s and Replevel %s == 0",
-			            name,tostring(Friendship),tostring(repID) , tostring(standingId), tostring(repmax) , tostring(standingId), tostring(replvl))
+			--self:Print("Rep %s Friendship=%s: repID %s <= standingId %s and repmax %s >= standingId %s and Replevel %s == 0",
+			--            name,tostring(Friendship),tostring(repID) , tostring(standingId), tostring(repmax) , tostring(standingId), tostring(replvl))
 			if (repID <= standingId) and (repmax >= standingId) and (replvl == 0) then
 				skip = false
 			end
@@ -589,6 +591,7 @@ end
 
 -- Step Completion Tasks --
 function WoWPro.CompleteStep(step, skipUIUpdate)
+--err("step = %s, skipUIUpdate - %s",step, skipUIUpdate)
 	local WoWProDB, WoWProCharDB = WoWPro.DB, WoWPro.CharDB
 
 	local GID = WoWProDB.char.currentguide
@@ -596,7 +599,7 @@ function WoWPro.CompleteStep(step, skipUIUpdate)
 
 	WoWProCharDB.Guide[GID].completion[step] = true
 
-	--[==[
+	--[[
 	local Delta = WoWPro:MapPointDelta()
 	if Delta and ((WoWPro.action[step] == "C" and Delta[1] > 10) or Delta[1] > 1.9) then
 	    local qid=-99
@@ -609,7 +612,7 @@ function WoWPro.CompleteStep(step, skipUIUpdate)
 	else
 	    WoWPro:dbp("Step Complete: "..WoWPro.step[step])
 	end
-	]==]
+	]]
 
 	if skipUIUpdate then
 		-- No UI update is needed. We are probably in the process of loading a guide.
@@ -643,21 +646,38 @@ end
 
 
 -- Populate the Quest Log table for other functions to call on --
+--local colapsedHeaders = {}
 function WoWPro:PopulateQuestLog()
 	local WoWProCharDB = WoWPro.CharDB
 	--WoWPro:dbp("Populating quest log...")
 
 	WoWPro.oldQuests, WoWPro.QuestLog = WoWPro.QuestLog, WoWPro.oldQuests
-
 	WipeTable(WoWPro.QuestLog)
-	local i = 1
+	
+	-- Remember the colapsed headers
+	--wipe(colapsedHeaders)
 	local entries = GetNumQuestLogEntries()
-	for i=1,tonumber(entries) do
-		local isHeader, _, _, _, questID = select(5,GetQuestLogTitle(i))
+	--for i=entries,1,-1 do
+	--	if select(6,GetQuestLogTitle(i)) then
+	--		tinsert(colapsedHeaders,i)
+	--	end
+	--end
+	
+	
+	ExpandQuestHeader(0)	
+	entries = GetNumQuestLogEntries()
+	for i=1,entries do
+		local isHeader, _ , _, _, questID = select(5,GetQuestLogTitle(i))
 		if not isHeader then
 			WoWPro.QuestLog[questID] = i
+		elseif isCollapsed then
 		end
 	end
+	
+	-- Restaure the colapsed headers
+	--while(#colapsedHeaders) > 0 do
+	--	CollapseQuestHeader(tremove(colapsedHeaders))
+	--end
 
 	if IsTableEmpty(WoWPro.oldQuests) then return end
 
@@ -1017,6 +1037,7 @@ function WoWPro:RecordTaxiLocations(...)
 		if not WoWProCharDB.Taxi[location] then
 			WoWProCharDB.Taxi[location] = true
 			WoWPro:Print("Discovered Flight Point: [%s]",location)
+			WoWPro:AutoCompleteQuestUpdate()
 		end
 	end
 end
