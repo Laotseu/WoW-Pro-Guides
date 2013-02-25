@@ -195,20 +195,20 @@ local function WoWProMapping_distance(event, uid, range, distance, lastdistance)
 		if closest_uid then
 			TomTom:SetCrazyArrow(cache[iactual-1].uid, 1, cache[iactual-1].desc)
 
-			local iactual
+			local real_i
 			for i,waypoint in ipairs(cache) do
 				if (waypoint.uid == closest_uid) then
 					iactual = i break end
 			end
 
-			if iactual then
-				for i=iactual+1,#cache,1 do
+			if real_i then
+				for i=real_i+1,#cache,1 do
 					TomTom:RemoveWaypoint(cache[i].uid)
 				end
 			end
 		end
 
-		if auroarrival and iactual == 1 then
+		if autoarrival and iactual == 1 then
 			WoWPro.CompleteStep(cache[iactual].index)
 		end
 
@@ -231,6 +231,8 @@ local function WoWProMapping_distance(event, uid, range, distance, lastdistance)
 			end
 		end
 	end
+	
+	--WoWPro:UpdateGuide()
 
 end
 
@@ -523,7 +525,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	    elseif WoWPro.Zone2MapID[zone] then
 	        -- Zone found in DB
 	        zm = WoWPro.Zone2MapID[zone].mapID
-	        zf = WoWPro.Zone2MapID[zone].floor or 0
+	        zf = WoWPro.Zone2MapID[zone].floor
 	    end
     end
 
@@ -592,7 +594,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 					crazy = true,
 				})
 			end
---err("Add WP: j = %s / %s, x = %s, y = %s, uid_x = %s, uid_y = %s, title = %s", j, numcoords, x, y, uid[3], uid[4], desc)
+--err("Add WP: j = %s / %s, x = %s, y = %s, zm = %s, zf = %s, uid_x = %s, uid_y = %s, title = %s", j, numcoords, x, y, zm, zf, uid[3], uid[4], desc)
 			if not uid then
 				 WoWPro:Print("Failed to set waypoint!  Please report a bug with the guide and step number.")
 			end
