@@ -395,6 +395,9 @@ local function ParseQuests(...)
 				end
 				if text:find("|US|") then WoWPro.unsticky[i] = true end
 				WoWPro.use[i] = text:match("|U|([^|]*)|?")
+				if WoWPro.use[i] and not tonumber(WoWPro.use[i]) then
+					err("Invalid |U|%s| in line [[%s]]", WoWPro.use[i], text)
+				end
 				WoWPro.zone[i] = text:match("|Z|([^|]*)|?")
 				if tonumber(WoWPro.zone[i]) then WoWPro.zone[i] = tonumber(WoWPro.zone[i]) end
 				if WoWPro.zone[i] and not WoWPro:ValidZone(WoWPro.zone[i]) then
@@ -753,7 +756,8 @@ function WoWPro.Leveling:RowUpdate(offset)
 						row.cooldown:Show()
 						row.cooldown:SetCooldown(start, duration)
 					else row.cooldown:Hide() end
-				end)
+			end)
+--err("use = %s",use)			
 			local start, duration, enabled = GetItemCooldown(use)
 			if enabled then
 				row.cooldown:Show()

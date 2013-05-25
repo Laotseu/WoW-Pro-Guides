@@ -238,6 +238,7 @@ function WoWPro:OnInitialize()
 	WoWProCharDB.Guide = WoWProCharDB.Guide or {}
 	WoWProCharDB.completedQIDs = WoWProCharDB.completedQIDs or {}
 	WoWProCharDB.skippedQIDs = WoWProCharDB.skippedQIDs or {}
+	WoWProCharDB.Taxi = WoWProCharDB.Taxi or {}
 	if WoWProCharDB.Enabled == nil then
 	    WoWProCharDB.Enabled = true
 	end
@@ -376,29 +377,8 @@ function WoWPro:OnEnable()
 		    WoWPro:dbp("Event Fired: "..event)
 		end
 
-		-- Receiving the result of the completed quest query --
-		if event == "QUEST_QUERY_COMPLETE" then
-			local num = 0
-			for i, QID in pairs(WoWProCharDB.completedQIDs) do
-				num = num+1
-			end
-			WoWPro:dbp("Old Completed QIDs: "..num)
-			WoWProCharDB.completedQIDs = WoWProCharDB.completedQIDs or {}
-			wipe(WoWProCharDB.completedQIDs)
-			WoWPro.GetQuestsCompleted(WoWProCharDB.completedQIDs)
-			num = 0
-			for i, QID in pairs(WoWProCharDB.completedQIDs) do
-				num = num+1
-			end
-			WoWPro:dbp("New Completed QIDs: "..num)
-			collectgarbage("collect")
-			if not WoWPro.InitLockdown then
-			    WoWPro:UpdateGuide()
-			end
-		--end
-
 		-- Locking event processong till after things get settled --
-		elseif event == "PLAYER_LEAVING_WORLD" then
+		if event == "PLAYER_LEAVING_WORLD" then
 			WoWPro:dbp("Locking Down 1")
 
 		-- Noticing if we have entered a Dungeon!
@@ -843,8 +823,8 @@ do -- BAG_UPDATE_bucket Waiting Bucket Closure
 	f:SetScript("OnUpdate", function(self, elapsed)
 		throt = throt - elapsed
 		if throt < 0 and WoWPro.lootitem then
-			WoWPro:UpdateLootLines() -- Update the loot tracking in the WoWPro quest tracking
 			f:Hide()
+			WoWPro:UpdateLootLines() -- Update the loot tracking in the WoWPro quest tracking
 		end
 	end)
 
@@ -865,12 +845,13 @@ do -- DelayMapUpdate Bucket Closure
 	f:SetScript("OnUpdate", function(self, elapsed)
 		throt = throt - elapsed
 		if throt < 0 and not WoWPro.InitLockdown then
+			f:Hide()
 			if need_update_guide then
 				WoWPro:UpdateGuide()
 				need_update_guide = nil
 			end
+--err("need_update_guide = %s",need_update_guide)
 			WoWPro:MapPoint() -- Update the TomTom arrow
-			f:Hide()
 		end
 	end)
 
