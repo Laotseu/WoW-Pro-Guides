@@ -311,7 +311,7 @@ A Eliminate the Resistance|QID|25840|M|62.53,53.62|N|From Slamp Wobblecog.|
 A Strike From Above|QID|25841|M|62.53,53.62|N|From Slamp Wobblecog.|
 A The View from Down Here|QID|28868|M|62.54,53.72|N|From Snevik the Blade.|
 C Eliminate the Resistance|QID|25840|S|QO|Frostmane Warrior slain: 5/5|M|62.04,56.13|N|Kill Frostmane Warriors.|
-C The View from Down Here|QID|28868|S|U|67249|N|Use the Viewpoint Equalizer on Frostmane Builders.|T|Frostmane Builders|
+C The View from Down Here|QID|28868|S|U|67249|N|Use the Viewpoint Equalizer on Frostmane Builders.|T|Frostmane Builder|
 C Attack on Northern Frostmane Retreat|QID|25841|U|56048|QO|Attack on Northern Frostmane Retreat: 1/1|M|64.47,54.37|N|Use the Signal Flare in the circle of stones on the ground.|
 K Kill Battok the Berserker|QID|25840|T|Battok the Berserker|QO|Battok the Berserker slain: 1/1|M|63.81,55.68|N|Dancing in the middle of the camp.|
 C Strike from Above|QID|25841|U|56048|QO|Attack on Southern Frostmane Retreat: 1/1|M|63.20,57.16|N|Use the Signal Flare just in front of the buildings.|
@@ -343,9 +343,11 @@ T Help for the Quarry|QID|25933|M|76.31,54.60|N|To Foreman Stonebrow.|
 A Those Blasted Troggs!|QID|432|M|76.31,54.60|N|From Foreman Stonebrow.|
 C Priceless Treasures|QID|25937|S|U|56226|M|78.31,53.59|N|Collect Frozen Artifacts as you make you way through the cave.|NC|
 R Gol'Bolar Quarry Mine|QID|25937||M|77.89,54.87|N|Go down into the quarry and head into the cave.|
-C The Public Servant|QID|433|S|U|56222|M|79.53,50.06|N|Free Trapped Miners as you make you way through the cave.|T|Trapped Miner|
+C Those Blasted Troggs!|QID|432|S|M|77.65,55.69|N|Kill the Troggs.|
+C Priceless Treasures|QID|25937|S|U|56226|M|78.31,53.59|N|Finish collecting Frozen Artifacts.|NC|
+C The Public Servant|QID|433|U|56222|M|79.53,50.06|N|Free Trapped Miners as you make you way through the cave.|T|Trapped Miner|
 C Priceless Treasures|QID|25937|US|U|56226|M|78.31,53.59|N|Finish collecting Frozen Artifacts.|NC|
-C Those Blasted Troggs!|QID|432|M|77.65,55.69|N|Finish off any Troggs you still need.|
+C Those Blasted Troggs!|QID|432|US|M|77.65,55.69|N|Finish off any Troggs you still need.|
 T Priceless Treasures|QID|25937|M|76.20,53.12|N|To Prospector Drugan.|
 T Those Blasted Troggs!|QID|432|M|76.30,54.60|N|To Foreman Stonebrow.|
 T The Public Servant|QID|433|M|75.84,54.34|N|To Senator Mehr Stonehallow.|

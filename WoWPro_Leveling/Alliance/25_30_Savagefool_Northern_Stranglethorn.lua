@@ -36,10 +36,10 @@
 -- Date: 2010-12-03 10:33
 -- Who: Jiyambi
 
-WoWPro.Leveling:RegisterGuide('SavNorStr2530', 'Northern Stranglethorn', 'Savagefool', '25', '30', 'BitCap3035', 'Alliance', function()
+WoWPro.Leveling:RegisterGuide('SavNorStr2530', 'Northern Stranglethorn', 'Savagefool', '26', '30', 'BitCap3035', 'Alliance', function()
 return [[
 
-L Level 24 |LVL|24|QID|26740|N|You need to be level 24 to do this guide.|
+L Level 26 |LVL|24|QID|26740|N|You need to be level 26 to do this guide.|
 
 R Rebel Camp|QID|26740|M|47.82,11.98|N|Northern Stranglethorn is to the south of Duskwood. You can obtain one of two breadcrumbs into this zone, Rebels Without a Clue is offered by Sentinel Velene Starstrike at the Stardust Spire in Ashenvale, and from Sister Elsington in Raven Hill, Duskwood.  Alternatively, in-level players can obtain the Hero's Call from Stormwind City.\n\nOnce you have one of these two, head to the Rebel Camp.|
 f Rebel Camp|M|47.87,11.86|N|At James Stillair.|
@@ -116,7 +116,7 @@ A Stopping Kurzen's Legacy|QID|26737|M|47.56,10.41|N|From Lieutenant Doren.|
 C Tiger Prowess|QID|187|M|38.18,34.92|N|Kill Elder Stranglethorn Tigers until you are finish this quest.|
 T Tiger Prowess|QID|187|M|38.18,34.92|N|(UI Alert)|
 A Tiger Mastery|QID|188|M|38.18,34.92|N|(UI Alert)|
-C Tiger Mastery|QID|188|M|38.33,31.41|N|Kill and loot Sin'Dall to get her paw.|
+C Tiger Mastery|QID|188|T|Sin'Dall|M|38.33,31.41|N|Kill and loot Sin'Dall to get her paw.|
 C Panther Stalking|QID|191|M|32.69,27.37|N|Kill 10 Panthers.|
 T Panther Stalking|QID|191|M|32.69,27.37|N|(UI Alert)|
 A Panther Prowess|QID|192|M|32.69,27.37|N|(UI Alert)|

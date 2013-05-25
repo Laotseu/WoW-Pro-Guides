@@ -390,12 +390,12 @@ A To Greymane Manor|QID|14465|Z|Gilneas|M|37.61,65.25|N|From Gwen Armstead.  On 
 T To Greymane Manor|QID|14465|Z|Gilneas|M|30.38,52.53;28.71,51.05;28.17,50.03|N|To Queen Mia Greymane.|
 h Greymane Manor |QID|14466|Z|Gilneas|M|28.17,50.03|N|Set your hearthstone at Queen Mia Greymane.|
 A The King's Observatory|QID|14466|Z|Gilneas|M|28.17,50.03|N|From Queen Mia Greymane.|
-T The King's Observatory|QID|14466|Z|Gilneas|M|26.40,46.97|N|To King Genn Greymane, on top of the tower.|
+T The King's Observatory|QID|14466|Z|Gilneas|M|46.0,28.2|N|To King Genn Greymane, on top of the tower.|Z|Greymane Manor|
 
-A Alas, Gilneas!|QID|14467|Z|Gilneas|M|26.40,46.97|NC|N|Look through King Genn Greymane's scope.|
+A Alas, Gilneas!|QID|14467|Z|Gilneas|M|46.0,28.2|NC|N|Look through King Genn Greymane's scope.|Z|Greymane Manor|
 
-A Exodus|QID|24438|Z|Gilneas|M|26.40,46.97|N|From King Genn Greymane.|
-N Board a Stagecoach Carriage|QID|24438|Z|Gilneas|M|28.84,54.18|N|Get out of the manor, go down the road and get on a Stagecoach Carriage. Click off while riding.|CC|26.40,46.97|
+A Exodus|QID|24438|Z|Gilneas|M|46.0,28.2|N|From King Genn Greymane.|Z|Greymane Manor|
+N Board a Stagecoach Carriage|QID|24438|Z|Gilneas|M|28.84,54.18|N|Get out of the manor, go down the road and get on a Stagecoach Carriage. Click off while riding.|CC|26.40,46.97|Z|Gilneas|
 
 T Exodus|QID|24438|Z|Gilneas|M|51.86,80.52|N|To Prince Liam Greymane.|
 A Stranded at the Marsh|QID|24468|Z|Gilneas|M|51.86,80.52|N|From Prince Liam Greymane.|

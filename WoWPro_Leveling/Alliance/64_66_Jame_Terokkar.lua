@@ -139,9 +139,9 @@ N From now on... |QID|10016|N|From now on, kill Timber Worgs, Timber Alphas, War
 C Thin the Flock|N|Kill mobs for this quest.|QID|10869|S|
 C The Outcast's Plight |N|Kill Arakkoa to get their feathers.|QID|10917|S|
 l Eye of Veil Shienor|QID|10847|N|Loot the Eye of Veil Shienor in the tree here. Enter the tree at 59.75,25.25|L|25642|M|57.90,23.15|
-K Ayit|QID|9986|N|Kill Ayit.|M|59.40,23.40|QO|Ayit slain: 1/1|
+K Ayit|QID|9986|T|Ayit|N|Kill Ayit.|M|59.40,23.40|QO|Ayit slain: 1/1|
 N Eastern Altar|QID|10021|N|Right-click the Eastern Altar here.|M|49.20,20.30|QO|Eastern Altar: 1/1|REP|Aldor;932|
-K Ashkaz|QID|9986|N|Kill Ashkaz in the trees here.|M|49.00,17.00|QO|Ashkaz slain: 1/1|
+K Ashkaz|QID|9986|T|Ashkaz|N|Kill Ashkaz in the trees here.|M|49.00,17.00|QO|Ashkaz slain: 1/1|
 C The Eyes of Skettis|N|Loot the Eye of Veil Reskk here.|QID|10847|M|50.15,19.40|
 N Northern Altar|QID|10021|N|Right-click the northern altar here.|M|50.70,16.60|QO|Northern Altar: 1/1|REP|Aldor;932|
 C Restoring the Light|N|Right-click the Altar here to complete the quest.|QID|10021|M|48.10,14.50|REP|Aldor;932|

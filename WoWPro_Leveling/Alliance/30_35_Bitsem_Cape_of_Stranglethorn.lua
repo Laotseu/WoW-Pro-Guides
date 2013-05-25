@@ -78,9 +78,9 @@ A To the Cape! |QID|26805|M|53.37,66.32|N|From Wilfred Harrys in Fort Livingston
 F Explorers' League Digsite |QID|26805|N|Speak to Robert Rhodes in Fort Livingston, and tell him you have had a prepaid ticket to the Explorers' League Digsite.|M|52.64,66.10|Z|Northern Stranglethorn|
 f Explorers' League Digsite|QID|26805|M|55.74,41.22|N|At Colin Swifthammer.|
 
-T To the Cape|QID|26805|M|55.25,42.48|N|To Bronwyn Hewstrike.|S|
-T Hero's Call: Cape of Stranglethorn!|QID|28702|O|M|55.25,42.48|N|To Bronwyn Hewstrike.|
-T To the Cape|QID|26805|M|55.25,42.48|N|To Bronwyn Hewstrike.|US|
+T To the Cape!|QID|26805|M|55.25,42.48|N|To Bronwyn Hewstrike.|S|
+T Hero's Call: The Cape of Stranglethorn!|QID|28702|O|M|55.25,42.48|N|To Bronwyn Hewstrike.|
+T To the Cape!|QID|26805|M|55.25,42.48|N|To Bronwyn Hewstrike.|US|
 
 ;The next quest has two IDs, 26825 and 26826, 26825 if the player found the ogre artifact, and 26826 if they player did not.
 A Dask "The Flask" Gobfizzle|QID|26825|M|55.12,42.44|N|From Bronwyn Hewstrike.|L|58490|
@@ -160,7 +160,7 @@ T Plunging Into Zul'Gurub|QID|26813|M|82.11,35.37|Z|Northern Stranglethorn|N|(UI
 A High Priest Venoxis|QID|26814|PRE|26813|M|82.11,35.37|Z|Northern Stranglethorn|N|(UI Alert)|
 C High Priest Venoxis|QID|26814|M|83.70,35.96|Z|Northern Stranglethorn|N|Kill the High Priest Venoxis - once you achieve this, you will be rooted in place, and a ladder will appear on your screen from the right.  Grab the ladder to return to Explorer's League.\n\nDuring the battle, any Spirit of Venoxis reaching the High Priestess will cast a heal on it, too many of these should be avoided, as the restored health is vastly higher than the health to kill the Spirits.|
 
-T High Priest Venoxis|QID|26814|U|60374M|55.70,42.27|N|To Maywiki.|
+T High Priest Venoxis|QID|26814|U|60374|M|55.70,42.27|N|To Maywiki.|
 T Recipe for Disaster|QID|26816|M|55.31,41.93|N|To Dask "The Flask" Gobfizzle.|
 
 F Booty Bay |QID|26821|N|Fly to Booty Bay.|
@@ -196,7 +196,7 @@ A Bloodsail Treachery|QID|26610|PRE|26609|M|41.35,61.16|N|From Bloodsail Corresp
 K "Good-Boy" Bruce |QID|26617|L|59143|M|41.35,61.23|N|Kill and loot "Good-Boy" Bruce.|US|
 A An Old Sea Dog|QID|26617|U|59143|N|Accept this quest from the Weather-Beaten Coin.|
 
-C The Captain's Chest|QID|26599|M|52.39,64.68;55.9,63.43|N|Kill Gorlash (He wanders around the two waypoints, normally in the water), and loot Smotts' Chest.|
+K The Captain's Chest|QID|26599|T|Gorlash|M|52.39,64.68;55.9,63.43|N|Kill Gorlash (He wanders around the two waypoints, normally in the water), and loot Smotts' Chest.|
 C Scaring Shaky|QID|26593|S|M|51,53|N|From now on kill Elder Mistvale Gorillas for Giblets.|
 l Gorilla Fang|QID|26597|M|51,53|N|Kill and loot Gorillas until you get a Gorilla Fang.|L|2799|
 R Spirit Den|QID|26597|M|52.28,52.12;53.28,49.01;54.00,46.69|N|Follow the waypoints to the cave.|
@@ -229,9 +229,10 @@ C A Giant's Feast|QID|26600|NC|M|41.01,73.98;42.78,69.11|N|Buy a Crate of Pupill
 T A Giant's Feast|QID|26600|M|40.37,67.86|N|To Captain Hecklebury Smotts.|
 A A Dish Best Served Huge|QID|26602|PRE|26600|M|40.37,67.86|N|From Captain Hecklebury Smotts.|
 
-K Freewheelin' Juntz Fitztittle|QID|26595|L|59034|M|56.50,57.89;56.79,53.75|N|Kill Freewheelin' while he runs between these to towers. Loot his wrench.|
-K Ephram "Midriff" Moonfall|QID|26595|L|59035|M|56.12,49.73|N|Talk to "Midriff", he'll attack you. Kill him and loot his Mirror.|
-C Kill-Collect|QID|26595|L|3924|M|59.55,49.16|N|Kill Maury "Clubfoot" Wilkins. Loot his Clubbed Foot.|
+K Ephram "Midriff" Moonfall|QID|26595|S|T|Ephram "Midriff" Moonfall|QO|Ephram's Jeweled Mirror: 1/1|M|56.12,49.73|N|Talk to "Midriff", he'll attack you. Kill him and loot his Mirror.|
+K Freewheelin' Juntz Fitztittle|QID|26595|T|Freewheelin' Juntz Fitztittle|QO|Fitztittle's Ratcheting Torque Wrench: 1/1|M|56.50,57.89;56.79,53.75|N|Kill Freewheelin' while he runs between these to towers. Loot his wrench.|
+K Ephram "Midriff" Moonfall|QID|26595|US|T|Ephram "Midriff" Moonfall|QO|Ephram's Jeweled Mirror: 1/1|M|56.12,49.73|N|Talk to "Midriff", he'll attack you. Kill him and loot his Mirror.|
+K Maury "Clubfoot" Wilkins|QID|26595|T|Maury "Clubfoot" Wilkins|QO|Maury's Clubbed Foot: 1/1|M|59.55,49.16|N|Kill Maury "Clubfoot" Wilkins. Loot his Clubbed Foot.|
 
 C Keep An Eye Out|QID|26614|M|43.16,81.72|N|Kill and loot Bloodsail mobs until this drops.|S|
 C Up to Snuff|QID|26613|M|41.17,82.64|N|Kill and loot Bloodsail mobs until you get 15 Snuff.|S|
@@ -251,7 +252,7 @@ T Keep An Eye Out|QID|26614|M|43.33,71.41|N|Up the ramp to Dizzy One-Eye.|
 T A Dish Best Served Huge|QID|26602|M|40.37,67.84|N|To Captain Hecklebury Smotts.|
 
 A Mok'rash the Cleaver|QID|26601|PRE|26602|M|40.37,67.84|N|From Captain Hecklebury Smotts.|
-C Mok'rash the Cleaver|QID|26601|M|35.15,65.70|N|Swim West to the Island. Kill Mok'rash.|
+K Mok'rash the Cleaver|QID|26601|T|Mok'rash the Cleaver|M|35.15,65.70|N|Swim West to the Island. Kill Mok'rash.|
 T Mok'rash the Cleaver|QID|26601|M|41.80,72.82;40.33,67.85|N|To Captain Hecklebury Smotts.|
 
 T Getting In With the Bloodsail|QID|26624|M|45.81,65.48;45.45,56.16;43.84,56.46|N|Up the path to Yancey Grillsen.|
@@ -263,7 +264,7 @@ l Oversized Pirate Hat|QID|26630|L|59148|M|42.72,69.13|N|Talk to Narkk at The Ol
 C Looks Like a Tauren Pirate to Me|QID|26630|M|41.06,73.28|N|Take the Head and Hat to the Fleetmaster.|NC|
 T Looks Like a Tauren Pirate to Me|QID|26630|M|41.06,73.28|N|To Fleet Master Seahorn.  It will be a few seconds from handing the Head and Hat to him before he will allow you to finish the quest.|
 
-T Seeing Where Your Loyalties Lie|QID|26629|M|42.39,67.65;45.81,5.4;43.85,56.34|N|To Yancey Grillsen.|
+T Seeing Where Your Loyalties Lie|QID|26629|M|42.39,67.65;46.2,57.1;43.8,56.5|N|To Yancey Grillsen.|
 A Your First Day as a Pirate|QID|26631|PRE|26629|M|43.85,56.34|N|From Yancey Grillsen.|
 
 T Your First Day as a Pirate|QID|26631|M|50,68;45.03,93.29;44.41,91.61|N|To Captain Keelhaul, in the right-hand ship of Wild Shore.|

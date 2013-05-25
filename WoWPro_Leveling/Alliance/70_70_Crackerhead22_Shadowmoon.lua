@@ -191,7 +191,7 @@ T Gaining Access|QID|10589|M|39.50,53.60|N|To Wing Commander Nuainn.|
 A Invasion Point: Cataclysm|QID|10766|M|39.50,53.60|N|From Wing Commander Nuainn.|
 l Lianth's Key|QID|10778|L|31316 |M|47.56,71.70|N|Kill Blood Elves until the key drops.|
 C The Rod of Lianthe|QID|10778|M|47.51,71.65|N|Open up the strongbox to get the rod.|
-C The Path of Conquest|QID|10772|NC|M|58.87,58.91|N|After you get to this spot, or a little farther until you get the quest completion.|
+C The Path of Conquest|QID|10772|NC|M|52.5,63.2|N|After you get to this spot, or a little farther until you get the quest completion.|
 T The Path of Conquest|QID|10772|M|50.89,58.82|N|To Wildhammer Gryphon Rider.|U|31310|
 A Breaching the Path|QID|10773|M|50.89,58.82|N|From Wildhammer Gryphon Rider.|U|31310|
 T The Rod of Lianthe|QID|10778|M|35.41,41.99|N|To Parshah.|

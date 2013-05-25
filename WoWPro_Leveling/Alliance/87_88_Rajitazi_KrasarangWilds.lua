@@ -261,7 +261,7 @@ A The Mantid|QID|30361|M|24.88,34.37|N|From Ambassador Han.|
 C The Mantid|QID|30361|S|M|14.44,35.46|
 A The Stoneplow Convoy|QID|30357|M|15.09,39.42|N|From Lorekeeper Vaeldrin.|
 C The Stoneplow Convoy|QID|30357|NC|U|79163|M|15.62,34.96|N|Use the poultices to heal the envoys.|
-C The Mantid|QID|30361|S|M|14.44,35.46|
+C The Mantid|QID|30361|US|M|14.44,35.46|
 T The Mantid|QID|30361|M|15.69,39.71|N|To Ambassador Len.|
 T The Stoneplow Convoy|QID|30357|M|15.09,39.42|N|To Lorekeeper Vaeldrin.|
 A The Lord Reclaimer|QID|30359|M|15.09,39.42|N|From Lorekeeper Vaeldrin.|
