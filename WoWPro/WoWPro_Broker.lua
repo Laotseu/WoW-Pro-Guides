@@ -1048,7 +1048,7 @@ function WoWPro:AutoCompleteGetFP(...)
 
 	if ... == _G.ERR_NEWTAXIPATH then
 		WoWProCharDB.Taxi[GetSubZoneText():trim()] = true
-		--err("New flightpath: %s %s %s",...,"nil","nil")
+--err("New flightpath: %s %s %s",...,"nil","nil")
 		for i = 1,15 do
 			local index = WoWPro.rows[i].index
 			if WoWPro.action[index] == "f" and 

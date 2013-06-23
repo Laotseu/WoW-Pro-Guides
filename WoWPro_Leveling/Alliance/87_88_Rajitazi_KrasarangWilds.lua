@@ -220,7 +220,7 @@ C Balance|QID|30672|S|M|50.85,84.15|
 A Buried Hozen Treasure|QID|30675|U|80827|M|43.81,85.41|N|From Confusing Treasure Map - looted off of an Unga.|
 A Balance Without Violence|QID|30674|M|45.31,85.17|N|From UI Alert.|
 C Balance Without Violence|S|QID|30674|M|42.68,82.74|N|There are piles of fish, the sparkly ones are the ones you can click on to throw back into the water.|
-T Balance Without Violence|QID|30674|M|42.22,82.87|N|To UI Alert.|
+;T Balance Without Violence|QID|30674|M|42.22,82.87|N|To UI Alert.|
 C Buried Hozen Treasure|QID|30675|S|M|51.10,85.27|N|Click on the piles of sand to search for the treasure.|
 C Balance|QID|30672|M|50.85,84.15|
 C Balance Without Violence|US|QID|30674|M|42.68,82.74|N|There are piles of fish, the sparkly ones are the ones you can click on to throw back into the water.|
@@ -248,11 +248,11 @@ A No Sister Left Behind|QID|30354|M|24.70,34.04|N|From Lyalia.|
 A Sever Their Supply Line|QID|30356|M|24.70,34.04|N|From Lyalia.|
 f Sentinel Basecamp|QID|30356|M|25.14,33.46|N|At Maylen Moonfeather.|
 A Re-Reclaim|QID|30355|M|25.20,34.53|N|From Kang Bramblestaff.|
+C Sever Their Supply Line|QID|30356|S|M|23.70,42.04|N|To maximimze efficiency, try to kill the ones that are beside trapped horde people or ground spawns you need to pick up.|
 C Re-Reclaim|QID|30355|S|NC|M|23.43,45.24|N|Pick up the sparkly artifacts from the ground.|
-C No Sister Left Behind|QID|30354|S|NC|M|23.49,45.07|N|Click on the sentinals to free them from the traps.|
-C Sever Their Supply Line|QID|30356|M|23.70,42.04|N|To maximimze efficiency, try to kill the ones that are beside trapped horde people or ground spawns you need to pick up.|
+C No Sister Left Behind|QID|30354|NC|M|23.49,45.07|N|Click on the sentinals to free them from the traps.|
 C Re-Reclaim|QID|30355|US|NC|M|23.43,45.24|N|Pick up the sparkly artifacts from the ground.|
-C No Sister Left Behind|QID|30354|US|NC|M|23.49,45.07|N|Click on the sentinals to free them from the traps.|
+C Sever Their Supply Line|QID|30356|US|M|23.70,42.04|N|To maximimze efficiency, try to kill the ones that are beside trapped horde people or ground spawns you need to pick up.|
 T Re-Reclaim|QID|30355|M|25.20,34.53|N|To Kang Bramblestaff.|
 T No Sister Left Behind|QID|30354|M|24.70,34.04|N|To Lyalia.|
 T Sever Their Supply Line|QID|30356|M|24.70,34.04|N|To Lyalia.|

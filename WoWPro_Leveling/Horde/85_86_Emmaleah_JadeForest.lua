@@ -47,8 +47,10 @@ WoWPro.Leveling:RegisterGuide('EmmJad8586', 'The Jade Forest', 'Emmaleah', '85',
 return [[
 
 N Welcome to Pandaria|QID|29612|N|Don't forget to train your professions before leaving Orgrimar, there are trainers in Pandaria, but some of them take a while to find.|
-A The Art of War|QID|29612|N|From UI Alert|
-T The Art of War|QID|29612|M|48.56,70.62|Z|Orgrimmar|N|To General Nazgrim.|
+A The Art of War|QID|29611|N|From UI Alert|O|
+T The Art of War|QID|29611|M|48.56,70.62|Z|Orgrimmar|N|To General Nazgrim.|O|
+A The Art of War|QID|29612|N|From UI Alert|O|
+T The Art of War|QID|29612|M|48.56,70.62|Z|Orgrimmar|N|To General Nazgrim.|O|
 A All Aboard!|QID|31853|M|48.56,70.62|Z|Orgrimmar|N|From General Nazgrim.|
 T All Aboard!|QID|31853|M|65,0|Z|Durotar|N|To General Nazgrim.(up in the Sky)|
 A Into the Mists|QID|29690|M|65,0|Z|Durotar|N|From General Nazgrim.|
@@ -104,6 +106,7 @@ A Monstrosity|QID|29743|M|30.90,17.49|N|From base of statue.|
 C Cryin' My Eyes Out|QID|29765|S|M|29.15,17.91|N|Kill the hozen to recover Zin'Jun's stuff.|
 C Monstrosity|QID|29743|QO|Statue Torso Sketched: 1/1|NC|M|29.34,18.92|
 C Monstrosity|QID|29743|QO|Statue Arm Sketched: 1/1|NC|M|30.01,21.21|
+C Monstrosity|QID|29743|QO|Statue Head Sketched: 1/1|NC|M|29.87, 22.39|
 C Cryin' My Eyes Out|QID|29765|US|M|29.15,17.91|
 T Cryin' My Eyes Out|QID|29765|M|29.42,18.00|N|To Zin'Jun.|
 A Seein' Red|QID|29804|M|29.42,18.00|N|From Zin'Jun.|
@@ -123,7 +126,6 @@ K Corporal Jackson Silver|T|Corporal Jackson Silver|QO|Corporal Jackson Silver s
 C Unreliable Allies|QID|31778|US|M|29.63,23.15|
 C Choppertunity|QID|31777|U|89163|US|M|27.92,24.14|N|Use rocket launchers on choppers.|
 C Assault on the Airstrip|US|QID|31775|M|27.96,24.73|
-C Monstrosity|QID|29743|QO|Statue Head Sketched: 1/1|NC|M|29.87, 22.39|
 C Monstrosity|QID|29743|QO|Statue Shoulder Sketched: 1/1|NC|M|28.33,22.31|
 T Monstrosity|QID|29743|M|28.33,22.31|To UI Alert.|
 T Choppertunity|QID|31777|M|31.12,21.68|N|To Rivett Clutchpop.|

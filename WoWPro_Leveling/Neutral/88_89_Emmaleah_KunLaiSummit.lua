@@ -204,6 +204,8 @@ A Mogu?! Oh No-gu!|QID|30619|M|54.17,83.42|FACTION|Alliance|N|From Elder Tsulan.
 f Westwind Rest|QID|30619|M|53.97,84.27|FACTION|Alliance|N|At Tabo the Flyer.|
 A Trouble on the Farmstead|QID|30569|FACTION|Alliance|M|53.79,84.11|N|From Farmhand Bo.|
 A Deanimate the Reanimated|QID|30593|FACTION|Alliance|M|53.44,83.09|N|From Mishka.|
+C Blue Dwarf Needs Food Badly|QID|30583|FACTION|Alliance|S|M|50.70,83.11|N|Birds and Mushan drop multiple meat each.|
+C Round 'Em Up|QID|30575|S|FACTION|Alliance|M|54.42,83.47|N|When you have 3 yaks, head back to Westwind Rest, the quest complete message comes in the encampment.|
 T Trouble on the Farmstead|QID|30569|FACTION|Alliance|M|60.25,85.73|N|To Farmer Chow.|
 
 A Farmhand Freedom|QID|30571|M|60.24,85.79|N|From Farmer Chow.|
@@ -231,22 +233,34 @@ C Deanimate the Reanimated|QID|30594|US|FACTION|Horde|M|59.20,72.21|
 C Profiting off of the Past|QID|30595|US|M|58.40,74.86|
 T Profiting off of the Past|QID|30595|M|59.58,78.27|N|To Bao Jian.|
 
-C Blue Dwarf Needs Food Badly|QID|30583|FACTION|Alliance|S|M|50.70,83.11|N|Birds and Mushan drop multiple meat each.|
-C Round 'Em Up|QID|30575|FACTION|Alliance|M|54.42,83.47|N|When you have 3 yaks, head back to Westwind Rest, the quest complete message comes in the encampment.|
+C Round 'Em Up|QID|30575|US|FACTION|Alliance|M|54.42,83.47|N|When you have 3 yaks, head back to Westwind Rest, the quest complete message comes in the encampment.|
 C Blue Dwarf Needs Food Badly|QID|30583|FACTION|Alliance|US|M|50.70,83.11|N|Birds and Mushan drop multiple meat each.|
 T Blue Dwarf Needs Food Badly|QID|30583|FACTION|Alliance|M|54.17,83.27|N|To Sully "The Pickle" McLeary.|
 T Mogu?! Oh No-gu!|QID|30619|FACTION|Alliance|M|54.17,83.42|N|To Elder Tsulan.|
 T Back to Westwind Rest|QID|31252|FACTION|Alliance|M|53.79,84.11|N|To Farmhand Bo.|
 T Deanimate the Reanimated|QID|30593|FACTION|Alliance|M|53.49,83.38|N|To Mishka.|
 T Round 'Em Up|QID|30575|M|FACTION|Alliance|M|53.77,82.67|N|To Admiral Taylor.|
-A Pandaren Prisoners|QID|30650|M|FACTION|Alliance|54.17,83.42|N|From Elder Tsulan.|
-A Barrels of Fun|QID|30651|FACTION|Alliance|M|54.17,83.27|N|From Sully "The Pickle" McLeary.|
 A In Tents Channeling|QID|30652|FACTION|Alliance|M|53.80,82.74|N|From Admiral Taylor.|
+A Pandaren Prisoners|QID|30650|M|FACTION|Alliance|M|54.17,83.42|N|From Elder Tsulan.|
+A Barrels of Fun|QID|30651|FACTION|Alliance|M|54.17,83.27|N|From Sully "The Pickle" McLeary.|
 R Fire Camp Ordo |QID|30652|FACTION|Alliance|M|50.50,78.59|
 C Pandaren Prisoners|QID|30650|S|FACTION|Alliance|M|49.67,80.36|N|The prisoners are throughout the Fire Camp Ordo.|
-C Barrels of Fun|QID|30651|FACTION|Alliance|S|M|49.42,80.61|N|Pick up a sparkly barrel (unique - one at a time) and place it where the gears are on your minimap.|
-C In Tents Channeling|QID|30652|FACTION|Alliance|M|50.50,78.59|N|Blizzard has kindly marked the locations of the mobs to kill|
-C Barrels of Fun|QID|30651|FACTION|Alliance|US|M|49.42,80.61|N|Pick up a sparkly barrell (unique - one at a time) and place it where the gears are on your minimap.|
+;C Barrels of Fun|QID|30651|FACTION|Alliance|S|U|80528|M|49.42,80.61|N|Pick up a sparkly barrel (unique - one at a time) and place it where the gears are on your minimap.|
+;C In Tents Channeling|QID|30652|FACTION|Alliance|M|50.50,78.59|N|Blizzard has kindly marked the locations of the mobs to kill|
+;C Barrels of Fun|QID|30651|FACTION|Alliance|US|M|49.42,80.61|N|Pick up a sparkly barrell (unique - one at a time) and place it where the gears are on your minimap.|
+K Akonu the Embercaller |QID|30652|S|FACTION|Alliance|QO|Akonu the Embercaller slain: 1/1|M|47.7,80.0|Z|Kun-Lai Summit|; Fire Camp Ordo
+C Destroy the Western Oil Rig |QID|30651|S|U|80528|FACTION|Alliance|QO|Western Oil Rig destroyed: 1/1|M|47.9,81.4|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
+C Destroy the Southern Oil Rig |QID|30651|S|U|80528|FACTION|Alliance|QO|Southern Oil Rig destroyed: 1/1|M|49.6,81.0|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
+K Pao-kun the Pyromancer |QID|30652|S|FACTION|Alliance|T|Pao-kun the Pyromancer|QO|Pao-kun the Pyromancer slain: 1/1|M|49.1,80.3|Z|Kun-Lai Summit|; Fire Camp Ordo
+K Harala the Firespeaker |QID|30652|S|FACTION|Alliance|T|Harala the Firespeaker|QO|Harala the Firespeaker slain: 1/1|M|49.4,78.5|Z|Kun-Lai Summit|; Fire Camp Ordo
+K Musaan the Blazecaster |QID|30652|S|FACTION|Alliance|T|Musaan the Blazecaster|QO|Musaan the Blazecaster slain: 1/1|M|50.5,78.6|Z|Kun-Lai Summit|; Fire Camp Ordo
+C Destroy the Eastern Oil Rig |QID|30651|U|80528|FACTION|Alliance|QO|Eastern Oil Rig destroyed: 1/1|M|51.0,79.5|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
+K Musaan the Blazecaster |QID|30652|US|FACTION|Alliance|T|Musaan the Blazecaster|QO|Musaan the Blazecaster slain: 1/1|M|50.5,78.6|Z|Kun-Lai Summit|; Fire Camp Ordo
+K Harala the Firespeaker |QID|30652|US|FACTION|Alliance|T|Harala the Firespeaker|QO|Harala the Firespeaker slain: 1/1|M|49.4,78.5|Z|Kun-Lai Summit|; Fire Camp Ordo
+K Pao-kun the Pyromancer |QID|30652|US|FACTION|Alliance|T|Pao-kun the Pyromancer|QO|Pao-kun the Pyromancer slain: 1/1|M|49.1,80.3|Z|Kun-Lai Summit|; Fire Camp Ordo
+C Destroy the Southern Oil Rig |QID|30651|US|U|80528|FACTION|Alliance|QO|Southern Oil Rig destroyed: 1/1|M|49.6,81.0|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
+C Destroy the Western Oil Rig |QID|30651|US|U|80528|FACTION|Alliance|QO|Western Oil Rig destroyed: 1/1|M|47.9,81.4|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
+K Akonu the Embercaller |QID|30652|US|FACTION|Alliance|QO|Akonu the Embercaller slain: 1/1|M|47.7,80.0|Z|Kun-Lai Summit|; Fire Camp Ordo
 T In Tents Channeling|QID|30652|FACTION|Alliance|N|To UI Alert.|
 A The Ordo Warbringer|QID|30660|FACTION|Alliance|N|From UI Alert.|
 C Pandaren Prisoners|QID|30650|US|FACTION|Alliance|M|49.67,80.36|N|Finish freeing the prisoners.|
@@ -289,7 +303,7 @@ A Muskpaw Ranch|QID|31457|FACTION|Horde|M|62.55,79.53|N|From Farmhand Ko.|
 
 R Lao & Son's Yakwash|QID|30488|M|70.13,70.24|
 T Muskpaw Ranch|QID|31457|FACTION|Horde|M|71.50,70.04|N|To Lao Muskpaw, he walkes back and forth between the two buildings.|
-T Muskpaw Ranch|QID|31456|FACTION|Alliance|M|71.50,70.04|N|To Lao Muskpaw.|
+T Muskpaw Ranch|QID|31456|FACTION|Alliance|M|66.3,67.1;71.0,69.1|N|To Lao Muskpaw, he walks around.|
 A The Missing Muskpaw|QID|30488|M|71.50,70.04|N|From Lao Muskpaw.|
 A Fresh Needle Scent|QID|30489|M|71.50,70.04|N|From Lao Muskpaw.|
 C Fresh Needle Scent|QID|30489|S|M|71.50,70.04|
@@ -312,7 +326,7 @@ T The Fearmaster|QID|30804|M|71.37,69.64|N|To Lao Muskpaw.|
 T At the Yak Wash|QID|30491|M|71.34,69.31|N|To Muskpaw Jr..|
 A Back in Yak|QID|30492|M|71.33,69.28|N|From Muskpaw Jr..|
 
-R The Grummle Bazaar|QID|30492|CS|M|69.47,68.93;66.49,66.62;61.6,62.03;65.51,61.26|
+R The Grummle Bazaar|QID|30492|CS|M|66.4,66.9;67.5,61.9;65.9,61.7|
 C Back in Yak|QID|30492|M|65.51,61.26|
 T Back in Yak|QID|30492|M|64.71,61.76|N|To Lucky Eightcoins.|
 A A Grummle's Luck|QID|30808|M|64.71,61.76|N|From Lucky Eightcoins.|
@@ -320,7 +334,7 @@ A Oil Stop|QID|30614|M|65.49,60.82|N|From Slimy Inkstain.|
 A Traffic Issues|QID|30616|M|64.88,60.49|N|From Smokey Sootassle.|
 C Sturdy Yaungol Spear|QID|31421|NC|M|71.2,62.6;70.0,63.8|N|Optional-This BoA strength polearm can be rarely found on weapons racks at Fire Camp Yongqi (and maybe the other yaungol camps). When you don't find it, manually check this step off.|
 
-R Fire Camp Ruqin|QID|30614|M|63.44,68.53|
+;R Fire Camp Ruqin|QID|30614|M|63.44,68.53|
 C Traffic Issues|QID|30616|S|M|63.53,66.80|
 C A Grummle's Luck|QID|30808|S|M|62.24,66.92|N|These are groundspawn 'sparklies', beside things, inside boxes, etc.|
 C Oil Stop|QID|30614|U|80312|M|63.44,68.53;62.64,68.36|N|Click on the oilwell to fill your flask. These respawn pretty fast.|
@@ -348,7 +362,7 @@ C A Celestial Experience|QID|31395|FACTION|Horde|M|68.98,44.09|N|This takes a mi
 T A Celestial Experience|QID|31395|FACTION|Horde|M|68.76,43.14|N|To Dezco.|
 A A Witness to History|QID|31511|FACTION|Horde|M|68.76,43.14|N|From Dezco.|
 
-R The Grummle Bazaar|QID|30999|M|64.24,59.45|
+R The Grummle Bazaar|QID|30617|M|64.24,59.45|
 C Roadside Assistance|QID|30617|NC|QO|Light the incense: 8/8|N|These are small sparkly sticks along the roadside.|
 T Roadside Assistance|QID|30617|M|58.09,61.46|N|To Brother Lintpocket.|
 T Cho's Missive|QID|31460|FACTION|Alliance|M|57.34,61.69|N|To Lorewalker Cho.|
@@ -477,7 +491,6 @@ T A Funeral|QID|30820|M|67.04,33.34|N|To Sage Liao.|
 T Prophet Khar'zul|QID|31228|M|62.33,29.06|N|To Lorewalker Cho.|
 H One Keg|QID|30592|N|Fly if you didn't reset your hearthstone earlier from "The Lucky Traveller".|
 
-A The Burlap Trail: To Burlap Waystation|QID|30592|M|58.09,61.46|N|From Brother Lintpocket.|
 C The Burlap Trail: To Burlap Waystation|QID|30592|M|53.14,66.57|N|Escort them to burlap waystation, there are at least 3 attacks and they will die if you don't help.|
 T The Burlap Trail: To Burlap Waystation|QID|30592|M|51.66,67.83|N|To Brother Trailscenter.|
 A The Rabbitsfoot|QID|30602|M|58.04,61.49|M|51.66,67.83|N|From Brother Trailscenter.|

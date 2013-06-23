@@ -211,7 +211,7 @@ A Save the Sentinel|QID|25871|M|46.81,56.11|N|From Brienna Starglow.|
 C Grimtotem in the Post|QID|25869|S|M|42.79,51.02|N|Kill the Grimtotem Invaders as you walk up Freewind Post to the next quests.  Any in the middle of battle with Freewind Warriors will not aggro you unless you attack them.  The Freewind Warriors, although shown in red, will not attack you, and are not attackable.|
 A Horn of the Traitor|QID|25873|M|44.58,49.96|N|From Montarr's corpse.|
 C Save the Sentinel|QID|25871|M|45.16,50.16|N|Kill the Grimtotem Invader in front of the Sentinel, then click on her to free her.|
-C Horn of the Traitor|QID|25873|M|45.91,50.83|N|Attack Cliffwatcher Longhorn and loot the Horn.|
+C Horn of the Traitor|QID|25873|M|45.91,50.83|T|Cliffwatcher Longhorn|N|Attack Cliffwatcher Longhorn and loot the Horn.|
 C Grimtotem in the Post|QID|25869|US|M|42.79,51.02|N|Finish killing the Grimtotem Invaders.|
 T Grimtotem in the Post|QID|25869|M|46.36,57.90|N|To Quentin. You can jump over the edge and into the water to avoid running all the way back down.|
 T Horn of the Traitor|QID|25873|M|46.36,57.90|N|To Quentin.|
