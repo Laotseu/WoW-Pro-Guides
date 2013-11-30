@@ -82,8 +82,10 @@ WoWPro.Leveling:RegisterGuide('EmmJad8586', 'The Jade Forest', 'Emmaleah', '85',
 return [[
 
 N Welcome to Pandaria|QID|29612|N|Don't forget to train your professions before leaving Orgrimar, there are trainers in Pandaria, but some of them take a while to find.|
-A The Art of War|QID|29612|N|From UI Alert|
-T The Art of War|QID|29612|M|48.56,70.62|Z|Orgrimmar|N|To General Nazgrim.|
+A The Art of War|QID|29611|LEAD|31853|N|From UI Alert|O|
+T The Art of War|QID|29611|LEAD|31853|M|48.56,70.62|Z|Orgrimmar|N|To General Nazgrim.|O|
+A The Art of War|QID|29612|LEAD|31853|N|From UI Alert|O|
+T The Art of War|QID|29612|LEAD|31853|M|48.56,70.62|Z|Orgrimmar|N|To General Nazgrim.|O|
 A All Aboard!|QID|31853|M|48.56,70.62|Z|Orgrimmar|N|From General Nazgrim.|
 T All Aboard!|QID|31853|M|65,0|Z|Durotar|N|To General Nazgrim.(up in the Sky)|
 A Into the Mists|QID|29690|M|65,0|Z|Durotar|N|From General Nazgrim.|
@@ -133,7 +135,7 @@ T Priorities!|QID|31978|M|29.37,13.57|N|To Ellie Honeypaw.|
 h Honeydew Village|QID|31774|M|28.53,13.33|N|Talk to Brewmother Kiki if you want to make Pandaria you new home. This as a good place to set your heartstone, as there is a portal to Orgrimar right outside the door.|
 f Honeydew Village|QID|31774|M|28.1,15.57|N|At Wing Hya.|
 
-T Seeking Zin'jun|QID|31774|M|31.17,17.52|N|To Zin'Jun.|
+T Seeking Zin'Jun|QID|31774|M|31.17,17.52|N|To Zin'Jun.|
 A Cryin' My Eyes Out|QID|29765|M|31.17,17.52|N|From Zin'Jun.|
 A Monstrosity|QID|29743|M|30.90,17.49|N|From base of statue.|
 C Cryin' My Eyes Out|QID|29765|S|M|29.15,17.91|N|Kill the hozen to recover Zin'Jun's stuff.|
@@ -245,27 +247,27 @@ T Silly Wikket, Slickies are for Hozen|QID|29942|M|27.06,50.77|N|To Eekle Eekle.
 T Boom Bait|QID|29939|M|27.21,50.78|N|To Rivett Clutchpop.|
 A The Scouts Return|QID|29971|M|27.21,50.78|N|From Rivett Clutchpop.|
 T The Scouts Return|QID|29971|M|28.63,47.40|N|To Shokia.|
-A Scouting Report: Hostile Natives|QID|29730|M|37.72,45.31|N|From Riko.|
+A Scouting Report: Hostile Natives|QID|29730|M|28.6,47.4|N|From Riko.|
 C Scouting Report: Hostile Natives|QID|29730|NC|QO|Inspect the warning sign: 1/1|M|38.84, 45.47|
-C Scouting Report: Hostile Natives|QID|29730|NC|QO|Inspect a Lifelike Jade Statue: 1/1|M|38.84,45.14|
+C Scouting Report: Hostile Natives|QID|29730|NC|QO|Inspect a Lifelike Jade Statue: 1/1|M|38.8,46.1|
 C Scouting Report: Hostile Natives|QID|29730|NC|QO|Speak with Widow Greenpaw: 1/1|M|39.2, 46.2|
-T Scouting Report: Hostile Natives|QID|29730|M|28.62,47.43|N|To Riko.|
-A Scouting Report: On the Right Track|QID|29731|M|43.16,61.27|N|From Shademaster Kiryn.|
+T Scouting Report: Hostile Natives|QID|29730|M|28.6,47.4|N|To Riko.|
+A Scouting Report: On the Right Track|QID|29731|M|28.7,47.5|N|From Shademaster Kiryn.|
 C Scouting Report: On the Right Track|QID|29731|M|48.65,60.32|NC|
-T Scouting Report: On the Right Track|QID|29731|M|28.62,47.48|N|To Shademaster Kiryn.|
-A Scouting Report: The Friend of My Enemy|QID|29823|M|49.87,69.15|N|From Riko.|
+T Scouting Report: On the Right Track|QID|29731|M|28.7,47.5|N|To Shademaster Kiryn.|
+A Scouting Report: The Friend of My Enemy|QID|29823|M|28.6,47.4|N|From Riko.|
 C Scouting Report: The Friend of My Enemy|QID|29823|M|49.82,70.53|N|3 knocks back, so you can hit them at range with 4.|
-T Scouting Report: The Friend of My Enemy|QID|29823|M|28.62,47.48|N|To Riko.|
-A Scouting Report: Like Jinyu in a Barrel|QID|29824|M|62.72,81.89|N|From Shokia.|
+T Scouting Report: The Friend of My Enemy|QID|29823|M|28.6,47.4|N|To Riko.|
+A Scouting Report: Like Jinyu in a Barrel|QID|29824|M|28.6,47.4|N|From Shokia.|
 C Scouting Report: Like Jinyu in a Barrel|QID|29824|M|58.06,83.28|N|Use your mouse to aim and then rt click to shoot.|
-T Scouting Report: Like Jinyu in a Barrel|QID|29824|M|28.62,47.48|N|To Shokia.|
+T Scouting Report: Like Jinyu in a Barrel|QID|29824|M|28.6,47.4|N|To Shokia.|
 A Guerrillas in our Midst|QID|29943|M|28.62,47.48|N|From General Nazgrim.|
 A Green-ish Energy|QID|29968|M|30.78,52.22|N|From Rivett Clutchpop.|
 C Green-ish Energy|QID|29968|S|NC|M|29.25,51.73|
 C Guerrillas in our Midst|QID|29943|M|29.12,51.95|
 T Guerrillas in our Midst|QID|29943|M|29.25,51.73|N|To General Nazgrim.|
 A Burning Down the House|QID|29966|M|29.25,51.73|N|From General Nazgrim.|
-C Burning Down the House|QID|29966|U|76336|M|29.49,54.08|
+C Burning Down the House|QID|29966|U|76336|M|30.4,52.9;29.49,54.08|CN|
 C Green-ish Energy|QID|29968|US|NC|M|29.25,51.73|
 T Green-ish Energy|QID|29968|M|27.23,50.74|N|To Rivett Clutchpop.|
 A Boom Goes the Doonamite!|QID|29967|M|27.23,50.74|N|From Rivett Clutchpop.|
@@ -275,7 +277,7 @@ T Burning Down the House|QID|29966|M|28.62,47.51|N|To General Nazgrim.|
 A Dawn's Blossom|QID|30015|M|28.65,47.55|N|From General Nazgrim.|
 
 F Dawn's Blossom|QID|30015|M|27.83,47.94|N|At Grookin Flapmaster.|
-f Dawn's Blossom|QID|30015|M|47.64,46.24|N|From Keg Runner Lee.|
+f Dawn's Blossom|M|47.64,46.24|N|From Keg Runner Lee.|
 T Dawn's Blossom|QID|30015|M|46.82,46.17|N|To Lorewalker Cho.|
 A Welcome to Dawn's Blossom|QID|31230|M|47.19,46.11|N|From Toya.|
 C Welcome to Dawn's Blossom|QID|31230|CHAT|M|47.04,46.02;45.77,43.67;48.47,44.50|CS|
@@ -317,7 +319,7 @@ R Shrine of the Dawn|QID|29995|M|52.63,38.08|
 T Shrine of the Dawn|QID|29995|M|52.63,38.08|N|To Syra Goldendraft.|
 A Getting Permission|QID|29920|M|52.63,38.08|N|From Syra Goldendraft.|
 K Defeat Pandriarch Bramblestaff |QID|29920|T|Pandriarch Bramblestaff|QO|Pandriarch Bramblestaff defeated: 1/1|M|54.1,38.4|; Shrine of the Dawn
-K Defeat Pandriarch Goldendraft |QID|29920|T|Defeat Pandriarch|QO|Pandriarch Goldendraft defeated: 1/1|M|53.6,36.8|; Shrine of the Dawn
+K Defeat Pandriarch Goldendraft |QID|29920|T|Pandriarch Goldendraft|QO|Pandriarch Goldendraft defeated: 1/1|M|53.6,36.8|; Shrine of the Dawn
 K Defeat Pandriarch Windfur |QID|29920|T|Pandriarch Windfur|QO|Pandriarch Windfur defeated: 1/1|M|52.6,35.6|; Shrine of the Dawn
 T Getting Permission|QID|29920|M|52.61,38.13|N|To Lo Wanderbrew.|
 
@@ -331,7 +333,7 @@ A Calamity Jade|QID|29926|M|50.91,27.05|N|From Foreman Mann.|
 A Mann's Man|QID|29927|M|50.91,27.05|N|From Foreman Mann.|
 T Mann's Man|QID|29927|M|45.44,29.09|N|To Hao Mann.|
 A Trapped!|QID|29929|M|45.44,29.09|N|From Hao Mann.|
-C Trapped!|QID|29929|NC|M|43.87,30.49|N|While doing the quests here in the mine an 'ancient pandaran mining pick' can rarely be found, keep an eye out for it.|
+C Trapped!|QID|29929|S|NC|M|43.87,30.49|N|While doing the quests here in the mine an 'ancient pandaran mining pick' can rarely be found, keep an eye out for it.|
 C Calamity Jade|QID|29926|M|44.48,30.29|
 C Trapped!|QID|29929|NC|US|M|43.87,30.49|
 T Trapped!|QID|29929|M|46.30,29.35|N|To Hao Mann.|
@@ -452,7 +454,7 @@ A Flying Colors|QID|29647|M|43.27,24.75|N|From Instructor Myang.|
 T Flying Colors|QID|29647|M|42.71,23.23|N|To High Elder Cloudfall.|
 
 F Dawn's Blossom|QID|29931|M|43.52,24.55|N|At Studious Chu.(or you can just ride straight to Nectarbreeze)|
-R Nectarbreeze Orchard|CC|M|46.67,46.76;45.83,50.25;46.72,55.25;41.52,61.13;43.37,72.76;43.54,75.91|N|The green dots will take you via roads, which is probably safer, but certainly slower than running cross-country.|
+R Nectarbreeze Orchard|QID|29576|CC|M|46.67,46.76;45.83,50.25;46.72,55.25;41.52,61.13;43.37,72.76;43.54,75.91|N|The green dots will take you via roads, which is probably safer, but certainly slower than running cross-country.|
 T An Air of Worry |QID|29576|N|To Shao the Defiant|M|43.5,75.9|
 A Defiance|QID|29578|M|43.54,75.91|N|From Shao the Defiant.|
 A Rally the Survivors|QID|29579|M|43.54,75.91|N|From Shao the Defiant.|
@@ -504,7 +506,7 @@ C Crimson Serpent|QID|29999|NC|QO|Playful Crimson Serpent found: 1/1|M|58.19,61.
 T The Librarian's Quandary|QID|29998|M|56.29,60.46|N|To Lorewalker Stonestep.|
 A Moth-Ridden|QID|30001|M|56.29,60.46|N|From Lorewalker Stonestep.|
 A Pages of History|QID|30002|M|56.29,60.46|N|From Lorewalker Stonestep.|
-C Gold Serpent|QID|29999|NC|QO|Playful Gold Serpent found: 1/1|M|57.51,58.52|N|Click on the cog to pick up the serpant.|
+C Gold Serpent|QID|29999|NC|QO|Playful Gold Serpent found: 1/1|M|57.51,58.52|M|55.9,60.3|N|Click on the cog to pick up the serpant.|
 C Pages of History|QID|30002|S|M|55.70,59.95|N|Stomp(click) on the bookworms (or just kill them the normal way).|
 C Moth-Ridden|QID|30001|M|56.39,60.43|
 C Pages of History|QID|30002|US|M|55.70,59.95|N|Stomp(click) on the bookworms (or just kill them the normal way).|
@@ -532,15 +534,14 @@ T Get Back Here!|QID|30499|M|28.02,47.15|N|To General Nazgrim.|
 A Sufficient Motivation|QID|30466|M|28.02,47.15|N|From General Nazgrim.|
 A Gauging Our Progress|QID|30484|M|28.02,47.15|N|From General Nazgrim.|
 C Sufficient Motivation|QID|30466|U|79884|S|NC|QO|Bucket of Slicky Water: 1/1|M|28.14,47.33|N|Pick up a bucket of slicky water and toss it on lazy hozen as you go.|
+C Sufficient Motivation|QID|30466|S|U|79884|NC|QO|Hozen Motivated: 10/10|M|27.14,46.70|
 C Gauging Our Progress|QID|30484|CHAT|M|28.41,47.75;29.15,50.87;28.41,51.92;27.03,55.00|N|The green dots show where the people you need to talk to are.|CS|
 C Sufficient Motivation|QID|30466|U|79884|US|NC|QO|Hozen Motivated: 10/10|M|27.14,46.70|
 T Sufficient Motivation|QID|30466|M|28.07,47.15|N|To General Nazgrim.|
 T Gauging Our Progress|QID|30484|M|28.07,47.15|N|To General Nazgrim.|
 A Last Piece of the Puzzle|QID|30485|M|28.21,46.68|N|From Lorewalker Cho.|
-C Last Piece of the Puzzle|QID|30485|M|28.19,46.71|N|Talk to Mishi for a ride. *this step will not autocomplete until you finish the next step*|
-
-C Last Piece of the Puzzle|QID|30485|U|80071|M|44.51,66.97|
-f Serpent's Overlook|QID|31303|M|43.13,68.48|N|At Sky Dancer Ji. optional, but you will not be able to get back up here until lvl 90 if you don't (admittedly, you don't need to get up here again.)|
+C Last Piece of the Puzzle|QID|30485|U|80071|M|28.2,46.7;44.50,66.96|CS|N|Talk to Mishi for a ride and then use the Cho Family Heirloom at the shrine.|
+f Serpent's Overlook|M|43.13,68.48|N|At Sky Dancer Ji. optional, but you will not be able to get back up here until lvl 90 if you don't (admittedly, you don't need to get up here again.)|
 T Last Piece of the Puzzle|QID|30485|M|44.74,67.09|N|To Lorewalker Cho.|
 A The Seal is Broken|QID|31303|M|44.74,67.09|N|From Lorewalker Cho.|
 C The Seal is Broken|QID|31303|CHAT|M|47.73,58.29|N|Talk to Mishi to start the "bombing run".|

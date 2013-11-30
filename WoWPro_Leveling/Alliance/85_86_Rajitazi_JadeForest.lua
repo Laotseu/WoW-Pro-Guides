@@ -353,7 +353,7 @@ T Hue|QID|29893|M|53.78,90.63|N|To Lorewalker Cho.|
 A Finding Your Center|QID|29890|M|53.75,90.67|N|From Lorewalker Cho.|
 C Finding Your Center|QID|29890|M|54.57,91.88|N|Keep the bar from 25 to 75.  If it hits either extreme, you fail.|
 
-R Den of Sorrow|QID|29890|M|59.23,87.96;60.19,83.42;61.88,81.98;62.21,82.64;65.18,79.27;65.90,79.29|CS|N|Run back to Pealfin Village and then take the path in your vision.|
+R Den of Sorrow|QID|29890|M|59.23,87.96;60.19,83.42;61.4,82.0;62.1,78.5;65.18,79.27;65.90,79.29|CS|N|Run back to Pealfin Village and then take the path in your vision.|
 T Finding Your Center|QID|29890|M|65.90,79.29|N|To Anduin Wrynn.|
 A Sacred Waters|QID|29898|M|65.90,79.29|N|From Anduin Wrynn.|
 A Rest in Peace|QID|29899|M|65.98,79.30|N|From Ren Whitepaw.|
@@ -383,9 +383,9 @@ f Dawn's Blossom|QID|29922|M|47.05,46.24|N|At Keg Runner Lee.|
 T In Search of Wisdom|QID|29922|M|46.81,46.14|N|To Lorewalker Cho.|
 R The Emperor's Burden - Part 1|QID|968550001|M|47.08, 45.14|ACH|6855;1|N|Exploration>The Seven Burdens of Shaohao.|
 A Welcome to Dawn's Blossom|QID|31230|M|47.16,46.17|N|From Toya.|
-C Welcome to Dawn's Blossom|QID|31230|M|47.04,46.02|N|Wanderbrew wanders about near here.|QO|Speak with Kai Wanderbrew: 1/1|
-C Welcome to Dawn's Blossom|QID|31230|M|45.77,43.67|QO|Speak with Peiji Goldendraft: 1/1|
-C Welcome to Dawn's Blossom|QID|31230|M|48.47,44.50|QO|Speak with Master Windfur: 1/1|
+C Welcome to Dawn's Blossom|QID|31230|NC|M|47.04,46.02|N|Wanderbrew wanders about near here.|QO|Speak with Kai Wanderbrew: 1/1|
+C Welcome to Dawn's Blossom|QID|31230|NC|M|45.77,43.67|QO|Speak with Peiji Goldendraft: 1/1|
+C Welcome to Dawn's Blossom|QID|31230|NC|M|48.47,44.50|QO|Speak with Master Windfur: 1/1|
 T Welcome to Dawn's Blossom|QID|31230|M|47.16,46.17|N|To Toya.|
 A The Double Hozen Dare|QID|29716|M|46.65,46.15|N|From An Windfur.|
 A The Silkwood Road|QID|29865|M|46.46,45.81|N|From Tzu the Ironbelly.|
@@ -495,6 +495,7 @@ A A Humble Offering|QID|29756|M|44.21,15.01|N|From Pei-Zhi.|
 C Back to Nature|QID|29753|S|U|74808|M|39.88,10.43|
 C A Humble Offering|QID|29756|M|39.71,10.98|
 C Back to Nature|QID|29753|US|U|74808|M|39.88,10.43|
+R Owen's Wishing Well|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|
 T Back to Nature|QID|29753|M|44.26,15.04|N|To Pei-Zhi.|
 T A Humble Offering|QID|29756|M|44.26,15.04|N|To Pei-Zhi.|
 A To Bridge Earth and Sky|QID|29754|M|44.26,15.04|N|From Pei-Zhi.|
@@ -514,7 +515,7 @@ C A Courteous Guest|QID|29619|M|45.81,27.50|N|From the ground or kill sprites.|
 
 T A Courteous Guest|QID|29619|M|45.01,24.99|N|To Lin Tenderpaw, back up the stairs.|
 A The Great Banquet|QID|29620|M|45.01,24.99|N|From Lin Tenderpaw.|
-f Banquet Grounds|QID|29620|M|43.52,24.55|N|At Studious Chu.|
+f Tian Monastery|QID|29620|M|43.52,24.55|N|At Studious Chu.|
 C The Great Banquet|QID|29620|NC|M|42.74,23.17|
 T The Great Banquet|QID|29620|M|42.74,23.17|N|To High Elder Cloudfall.|
 A Your Training Starts Now|QID|29622|M|43.13,23.63|N|From Xiao.|
@@ -542,9 +543,9 @@ A And a Heavy Fist|QID|29630|M|41.59,23.66|N|From Groundskeeper Wu.|
 A Burning Bright|QID|29631|M|38.02,23.80|N|From Guard Shan Long, outside the Waxwood gate.|
 
 C Burning Bright|QID|29631|S|M|36.09,27.57|
-C A Steady Hand|QID|29629|NC|S|N|Any movement (including panning the camera angle) will end the gathering.|
-R Owen's Wishing Well|QID|31397|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|
-C A Steady Hand|QID|29629|US|NC|L|73193 80|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
+;C A Steady Hand|QID|29629|NC|S|N|Any movement (including panning the camera angle) will end the gathering.|
+;R Owen's Wishing Well|QID|31397|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|
+C A Steady Hand|QID|29629|NC|L|73193 80|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
 
 C Burning Bright|QID|29631|US|M|36.09,27.57|
 
@@ -643,13 +644,13 @@ C Find the Playful Gold Serpent |QID|29999|NC|QO|Playful Gold Serpent found: 1/1
 C Pages of History|QID|30002|US|M|55.70,59.95|N|Click on the books and the bookworms will spawn. It's faster (and more fun) to stomp on them then to kill them.|
 C Moth-Ridden|QID|30001|US|M|56.39,60.43|
 T Moth-Ridden|QID|30001|M|56.27,60.44|N|To Lorewalker Stonestep.|
-A Everything In Its Place|QID|30004|M|56.27,60.44|N|From Lorewalker Stonestep.|
 T Pages of History|QID|30002|M|56.27,60.44|N|To Lorewalker Stonestep.|
+A Everything In Its Place|QID|30004|M|56.27,60.44|N|From Lorewalker Stonestep.|
 C Find the Playful Emerald Serpent |QID|29999|NC|QO|Playful Emerald Serpent found: 1/1|M|56.5,58.4|N|Head outside the library back to the central plaza and out the main gate.|
 C The Scryer's Dilemma|QID|29997|M|56.9,55.8|N|When you get in the Fountain of the Everseeing, kill Water Fiends until you get the staff.|
 T The Scryer's Dilemma|QID|29997|M|57.6,56.0|N|To Wise Mari.|
 A A New Vision|QID|30011|M|57.6,56.0|N|From Wise Mari.|
-C Find the Playful Azure Serpent|QID|29999|QO|Playful Azure Serpent found: 1/1|M|59.2,56.7|
+C Find the Playful Azure Serpent|QID|29999|NC|QO|Playful Azure Serpent found: 1/1|M|59.2,56.7|
 
 C Lighting Up the Sky|QID|30005|US|M|56.42,58.12|
 T A New Vision|QID|30011|M|58.13,58.67|N|To Elder Sage Rain-Zhu.|

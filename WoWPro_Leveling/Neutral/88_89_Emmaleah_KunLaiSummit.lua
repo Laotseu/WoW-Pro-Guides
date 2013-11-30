@@ -173,7 +173,7 @@ C Speak with the Highroad Grummle|QID|31254;31255|CHAT|QO|Speak with the Highroa
 R Path of a Hundred Steps |QID|31286|N|Head on up the stairs to the Tavern in the Mists via the Path of a Hundred Steps.|M|53.79,87.25|RANK|2|
 R Tavern in the Mists |QID|31286|N|Keep heading up the stairs and path to the Tavern in the Mists|M|56.75,75.82|RANK|2|
 
-f Tavern in the Mists|QID|31286|M|56.75,75.82|Z|The Veiled Stair|N|At Shin the Weightless.|RANK|2|
+f Tavern in the Mists|M|56.75,75.82|Z|The Veiled Stair|N|At Shin the Weightless.|RANK|2|
 l The Hammer of Folly|QID|31286|L|86473|M|68.53,79.00;74.83,76.39|CS|Z|The Veiled Stair|N|*High Value Rare Loot*\nJust east of the Black Market Action House is an ancient grass covered stairway called the Stairs that lead to nowhere. At the top, known as Mason's Folly, you may find The Hammer of Folly.\nWorth 100 gold when sold to a vendor and a lot of XP when looted.|RANK|3|
 l Forgotten Lockbox|QID|31286|M|54.71,71.41|Z|The Veiled Stair|N|*High Value Rare Loot*\nUpstairs in the inn.\nWorth around 10 gold and a lot of XP when looted.|Rank|3|
 
@@ -183,7 +183,7 @@ A Robbing Robbers of Robbers|QID|31286|M|53.52,65.78|Z|The Veiled Stair|N|From L
 A Educating Saurok|QID|31287|M|53.52,65.78|Z|The Veiled Stair|N|From Len the Whisperer.|RANK|2|
 C Robbing Robbers of Robbers|QID|31286|NC|Z|The Veiled Stair|M|52.97,48.34;48.49,46.75;50.18,42.00|CS|N|Pick up any Black Maket Merchandise you see lying on the ground.|RANK|2|S|
 R Hatescale Burrow|QID|31287|M|55.46,56.62|N|Head to the Hatescale Burrow, and enter the cave.|
-C Educating Saurok|QID|31287|M|52.97,48.34;48.49,46.75;50.18,42.00|CS|Z|The Veiled Stair|N|Kill Leechfingers, who can be found at the back of the cave (head to the right at both the first and second forks of the tunnel).|RANK|2|
+K Kill Leechfingers|QID|31287|T|Leechfingers|M|52.97,48.34;48.49,46.75;50.18,42.00|CS|Z|The Veiled Stair|N|Kill Leechfingers, who can be found at the back of the cave (head to the right at both the first and second forks of the tunnel).|RANK|2|
 C Robbing Robbers of Robbers|QID|31286|NC|Z|The Veiled Stair|M|55.38,55.40|CS|N|Finish picking up the Black Maket Merchandise you see lying on the ground as you head out of the cave.|RANK|2|US|
 T Robbing Robbers of Robbers|QID|31286|M|53.49,65.77|Z|The Veiled Stair|N|To Len the Whisperer.|RANK|2|
 T Educating Saurok|QID|31287|M|53.49,65.77|Z|The Veiled Stair|N|To Len the Whisperer.|RANK|2|
@@ -192,26 +192,27 @@ C Speak with Brewmaster Boof|QID|31254;31255|QO|Speak with Brewmaster Boof: 1/1|
 
 A The Spring Drifter|QID|31285|M|51.98,43.69|Z|The Veiled Stair|N|From Brewmaster Boof.|RANK|2|
 C The Spring Drifter|QID|31285|NC|M|51.98,43.69|Z|The Veiled Stair|N|Hop in the Spring Drifter and enjoy the ride.|RANK|2|
-T The Spring Drifter|QID|31285|M|72.64,93.00|N|To Brewmaster Boof.|RANK|2|
 
-f Binan Village|QID|30457|CC|M|72.52,94.18|N|At Jo the Wind Watcher.|
+T The Spring Drifter|QID|31285|M|72.64,93.00|N|To Brewmaster Boof.|RANK|2|
+f Binan Village|CC|M|72.52,94.18|N|At Jo the Wind Watcher.|
+A Temple of the White Tiger|QID|31392|FACTION|Alliance|M|72.04,94.17|N|From Wang Chung.|
+A Temple of the White Tiger|QID|31393|FACTION|Horde|M|72.04,94.17|N|From Wang Chung.|
 A Hit Medicine|QID|30460|M|71.62,92.82|N|From Apothecary Cheng.|
 r Repair/Restock|QID|31254;31255|M|71.42,92.22|N|At The Metal Paw, he also sells ilvl 393 gear if you want stuff for your offspec or something.|RANK|3|
 T The Road to Kun-Lai|QID|31254;31255|M|72.25,91.86|N|To Mayor Bramblestaff.|
 
 A Call Out Their Leader|QID|30457|M|72.25,91.86|N|From Mayor Bramblestaff.|
-A All of the Arrows|QID|30459|M|70.75,90.37|N|From Commander Hsieh.|
-
-C Bataari Fire-Warrior|QID|30457|S|M|68.89,88.51|N|Kill the Bataari Fire-Warrior. He spawns when you kill the ten Bataari Tribe Members. He will yell a message to your chat pane when he spawns, and shows as a Skull on the Mini-Map.|QO|Bataari Fire-Warrior: 1/1|
-C Call Out Their Leader|QID|30457|S|M|68.89,88.51|N|Kill the Bataari Tribe Members, the Yaungol and Flamecaller count, the Battleyack does not.|QO|Bataari Tribe Members slain: 10/10|
-C Hit Medicine|QID|30460|S|U|79819|M|68.03,87.57|N|Use the medicine on the injured Binan warriors.|NC|
-C All of the Arrows|QID|30459|M|68.79,86.46|N|Pick up the Arrows which are sparkling on the ground in the area.|NC|
-C Hit Medicine|QID|30460|US|U|79819|M|68.03,87.57|N|Finish using the medicine on the injured Binan warriors.|NC|
-C Call Out Their Leader|QID|30457|US|M|68.89,88.51|N|Finish killing the Bataari Tribe Members, the Yaungol and Flamecaller count, the Battleyack does not.|QO|Bataari Tribe Members slain: 10/10|
-C Bataari Fire-Warrior|QID|30457|US|M|68.89,88.51|N|Kill the Bataari Fire-Warrior. He spawns when you kill ten Bataari Tribe Members. He will yell a message to your chat pane when he spawns, and shows as a Skull on the Mini-Map.|QO|Bataari Fire-Warrior: 1/1|
+A All of the Arrows|QID|30459|M|70.47,90.05|N|From Commander Hsieh.|
+C All of the Arrows|QID|30459|S|NC|M|68.79,86.46|
+C Hit Medicine|QID|30460|S|NC|U|79819|M|68.03,87.57|N|Normal healing spells will also work.|
+C Kill Bataari Tribe members|QID|30457|QO|Bataari Tribe Members slain: 10/10|M|68.89,88.51|N|Kill 10 Bataari Tribe members and the Fire-Warrior will appear.|
+K Kill Bataari Fire-Warrior|QID|30457|T|Bataari Fire-Warrior|M|68.6,88.5|QO|Bataari Fire-Warrior slain: 1/1|
+C Hit Medicine|QID|30460|US|NC|U|79819|M|68.03,87.57|N|Normal healing spells will also work.|
+C All of the Arrows|QID|30459|US|NC|M|68.79,86.46|
 
 T All of the Arrows|QID|30459|M|70.75,90.37|N|To Commander Hsieh.|
 T Call Out Their Leader|QID|30457|M|72.27,91.85|N|To Mayor Bramblestaff.|
+T The Spring Drifter|QID|31285|M|72.64,93.00|N|To Brewmaster Boof.|
 T Hit Medicine|QID|30460|M|71.59,92.83|N|To Apothecary Cheng.|
 
 A Admiral Taylor has Awakened|QID|30506;30507;30508|FACTION|Alliance|M|71.59,92.83|N|From Apothecary Cheng/Mayor Bramblestaff/Commander Hsieh depending on your quest turn-in order.|
@@ -283,8 +284,8 @@ A Deanimate the Reanimated|QID|30594|FACTION|Horde|M|62.69,80.67|N|From Shademas
 A Deanimate the Reanimated|QID|30593|FACTION|Alliance|M|53.44,83.09|N|From Mishka.|
 A Trouble on the Farmstead|QID|30570|FACTION|Horde|M|62.52,79.55|N|From Farmhand Ko.|
 A Trouble on the Farmstead|QID|30569|FACTION|Alliance|M|53.79,84.11|N|From Farmhand Bo.|
-f Eastwind Rest|QID|30570|FACTION|Horde|M|62.46,80.69|N|At Soaring Paw.|
-f Westwind Rest|QID|30569|FACTION|Alliance|M|53.97,84.27|N|At Tabo the Flyer.|
+f Eastwind Rest|FACTION|Horde|M|62.46,80.69|N|At Soaring Paw.|
+f Westwind Rest|FACTION|Alliance|M|53.97,84.27|N|At Tabo the Flyer.|
 
 T Trouble on the Farmstead|QID|30569;30570|M|60.29,85.72|N|To Farmer Chow.|
 A Farmhand Freedom|QID|30571|M|60.24,85.79|N|From Farmer Chow.|
@@ -447,7 +448,7 @@ A Instant Courage|QID|30601|M|57.22,61.21|N|From Uncle Cloverleaf.|
 A Resupplying One Keg|QID|30618|M|57.72,61.76|N|From Big Sal, inside the hut.|
 A They Stole My Luck!|QID|30621|M|57.32,60.19|N|From Ji-Lu the Lucky, inside The Lucky Traveller inn.|
 h The Lucky Traveller|QID|30601|M|57.43,60.05|N|Set your hearthstone at Chiyo Mistpaw. Setting your hearthstone will save you around 10 min overall, so not essential if you aren't in a hurry.|
-f One Keg|QID|30601|M|57.72,59.68|N|At Little Cleankite.|
+f One Keg|M|57.72,59.68|N|At Little Cleankite.|
 
 R Howlingwind Cavern|QID|30618|M|59.16,53.24|N|Head up the Howlingwind Trail to the Howlingwind Caverns.|
 C They Stole My Luck!|QID|30621|M|57.77,49.30|S|N|Kill and loot the Mischievous Snow Sprites. Walking over the Suspicious Snow Pile will reveal one.|
@@ -736,7 +737,7 @@ C Unmasking the Yaungol|QID|30690|U|81741|M|45.28,86.63|N|Set up you trap and pu
 T Unmasking the Yaungol|QID|30690|M|44.48,89.91|N|To Shado-Master Chong.|
 A To Winter's Blossom|QID|30699|M|44.48,89.91|N|From Shado-Master Chong.|
 r Repair/Restock|QID|30699|M|44.23,90.25|N|At Fixxit Redhammer.|
-f Serpent's Spine|QID|30699|M|43.92,89.56|N|Up the stairs, at Kite Master Ni.|
+f Serpent's Spine|M|43.92,89.56|N|Up the stairs, at Kite Master Ni.|
 
 ; Winter's Blossom
 H Kota Basecamp|QID|30699|N|Fly if your hearth isn't set to Kota Basecamp, if you took Koto Kon down to the gate, dont forget to turn in The Burlap Grind now.|
