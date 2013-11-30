@@ -100,8 +100,8 @@ A Brute Strength|QID|27163|PRE|27160|M|41.10,70.46|N|From Thassarian.|S|
 A Scholomancer|QID|27162|PRE|27160|M|41.10,70.46|N|From Thassarian.|
 A Brute Strength|QID|27163|PRE|27160|M|41.10,70.46|N|From Thassarian.|US|
 
-C Brute Strength|QID|27163|M|43.57,69.61|N|Level 35 Elite, inside the building.|
-C Araj the Summoner|QID|27164|U|60849|M|45.20,69.32|N|Use Lang's Hand Grenades if he summons skeletons. Level 35 Elite, by the fountain. Loot Araj's Phylactery Shard.|
+K Rattlegore|QID|27163|T|Rattlegore|M|43.57,69.61|N|Level 35 Elite, inside the building.|
+K Araj the Summoner|QID|27164|T|Araj the Summoner|U|60849|M|45.20,69.32|N|Use Lang's Hand Grenades if he summons skeletons. Level 35 Elite, by the fountain. Loot Araj's Phylactery Shard.|
 C Scholomancer|QID|27162|M|45.39,72.34|N|Kill Darkmaster Gandling, a boss skull boss (HP 3660).  Thassarian and Koltira Deathweaver will appear to help you during the battle at about HP 1000.|
 
 T Araj the Summoner|QID|27164|M|41.13,70.48|N|To Thassarian.|S|

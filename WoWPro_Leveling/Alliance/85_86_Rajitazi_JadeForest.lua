@@ -332,7 +332,7 @@ T Hue|QID|29893|M|53.78,90.63|N|To Lorewalker Cho.|
 A Finding Your Center|QID|29890|M|53.75,90.67|N|From Lorewalker Cho.|
 C Finding Your Center|QID|29890|M|54.57,91.88|N|Keep the bar from 25 to 75.  If it hits either extreme, you fail.|
 
-R Den of Sorrow|QID|29890|M|59.23,87.96;60.19,83.42;61.88,81.98;62.21,82.64;65.18,79.27;65.90,79.29|CS|N|Run back to Pealfin Village and then take the path in your vision.|
+R Den of Sorrow|QID|29890|M|59.23,87.96;60.19,83.42;61.4,82.0;62.1,78.5;65.18,79.27;65.90,79.29|CS|N|Run back to Pealfin Village and then take the path in your vision.|
 T Finding Your Center|QID|29890|M|65.90,79.29|N|To Anduin Wrynn.|
 A Sacred Waters|QID|29898|M|65.90,79.29|N|From Anduin Wrynn.|
 A Rest in Peace|QID|29899|M|65.98,79.30|N|From Ren Whitepaw.|
@@ -361,9 +361,9 @@ C In Search of Wisdom|QID|29922|NC|M|57.95,82.52|N|Speak to Kitemaster Ut-Nam an
 f Dawn's Blossom|QID|29922|M|47.05,46.24|N|At Keg Runner Lee.|
 T In Search of Wisdom|QID|29922|M|46.81,46.14|N|To Lorewalker Cho.|
 A Welcome to Dawn's Blossom|QID|31230|M|47.16,46.17|N|From Toya.|
-C Welcome to Dawn's Blossom|QID|31230|M|47.04,46.02|N|Wanderbrew wanders about near here.|QO|Speak with Kai Wanderbrew: 1/1|
-C Welcome to Dawn's Blossom|QID|31230|M|45.77,43.67|QO|Speak with Peiji Goldendraft: 1/1|
-C Welcome to Dawn's Blossom|QID|31230|M|48.47,44.50|QO|Speak with Master Windfur: 1/1|
+C Welcome to Dawn's Blossom|QID|31230|NC|M|47.04,46.02|N|Wanderbrew wanders about near here.|QO|Speak with Kai Wanderbrew: 1/1|
+C Welcome to Dawn's Blossom|QID|31230|NC|M|45.77,43.67|QO|Speak with Peiji Goldendraft: 1/1|
+C Welcome to Dawn's Blossom|QID|31230|NC|M|48.47,44.50|QO|Speak with Master Windfur: 1/1|
 T Welcome to Dawn's Blossom|QID|31230|M|47.16,46.17|N|To Toya.|
 A The Double Hozen Dare|QID|29716|M|46.65,46.15|N|From An Windfur.|
 A The Silkwood Road|QID|29865|M|46.46,45.81|N|From Tzu the Ironbelly.|
@@ -472,6 +472,7 @@ A A Humble Offering|QID|29756|M|44.21,15.01|N|From Pei-Zhi.|
 C Back to Nature|QID|29753|S|U|74808|M|39.88,10.43|
 C A Humble Offering|QID|29756|M|39.71,10.98|
 C Back to Nature|QID|29753|US|U|74808|M|39.88,10.43|
+R Owen's Wishing Well|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|
 T Back to Nature|QID|29753|M|44.26,15.04|N|To Pei-Zhi.|
 T A Humble Offering|QID|29756|M|44.26,15.04|N|To Pei-Zhi.|
 A To Bridge Earth and Sky|QID|29754|M|44.26,15.04|N|From Pei-Zhi.|
@@ -519,9 +520,8 @@ A And a Heavy Fist|QID|29630|M|41.59,23.66|N|From Groundskeeper Wu.|
 A Burning Bright|QID|29631|M|38.02,23.80|N|From Guard Shan Long, outside the Waxwood gate.|
 
 C Burning Bright|QID|29631|S|M|36.09,27.57|
-C A Steady Hand|QID|29629|NC|S|N|Any movement (including panning the camera angle) will end the gathering.|
-R Owen's Wishing Well|QID|31397|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|
-C A Steady Hand|QID|29629|US|NC|L|73193 80|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
+;C A Steady Hand|QID|29629|NC|S|N|Any movement (including panning the camera angle) will end the gathering.|
+C A Steady Hand|QID|29629|NC|L|73193 80|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
 
 C Burning Bright|QID|29631|US|M|36.09,27.57|
 

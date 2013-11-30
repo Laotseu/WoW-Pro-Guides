@@ -78,13 +78,14 @@ A Securing the Province|QID|30083|M|75.83,7.65|N|From Mei Barrelbottom.|
 A Borderlands|QID|30084|M|75.83,7.65|N|From Mei Barrelbottom.|
 T Materia Medica|QID|30081|M|76.22,7.06|N|To Ken-Ken.|
 A Why So Serious?|QID|30088|M|76.22,7.06|N|From Ken-Ken.|
-C Why So Serious?|QID|30088|S|L|78941 18|M|72.00,16.91|N|The panthers are in the area around the Memorial Flames.|
+C Why So Serious?|QID|30088|S|QO|Huge Panther Fang: 18/18|M|72.00,16.91|N|The panthers are in the area around the Memorial Flames.|
 C Memorial Flame of Po|QID|30084|NC|U|78928|QO|Memorial Flame of Po: 1/1|M|74.0,16.8|
 C Memorial Flame of Zhu|QID|30084|NC|U|78928|QO|Memorial Flame of Zhu: 1/1|M|72.70,18.12|
 C Memorial Flame of Rin|QID|30084|NC|U|78928|QO|Memorial Flame of Rin: 1/1|M|71.30,17.47|
 C Securing the Province|QID|30083|S|M|77.30,58.91|Z|Valley of the Four Winds|N|Kill the sauroks on the way in and out of the cave.|
-l Saurok Stone Tablet|QID|30088|L|86220|M|75.05,55.12|Z|Valley of the Four Winds|N|The tablet is a world drop worth ~100G and a random amount of XP (at least as much as one quest)|
-l Jar of Pigment|QID|30088|US|L|78942|M|73.89,56.30|Z|Valley of the Four Winds|N|Pick up the jar of pigment here.{
+C Why So Serious?|QID|30088|US|L|78941 18|M|72.00,16.91|N|The panthers are in the area around the Memorial Flames.|
+C Saurok Stone Tablet|QID|30088|QO|Huge Panther Fang: 18/18|M|75.05,55.12|Z|Valley of the Four Winds|N|The tablet is a world drop worth ~100G and a random amount of XP (at least as much as one quest)|
+C Jar of Pigment|QID|30088|NC|QO|Jar of Pigment: 1/1|M|73.89,56.30|Z|Valley of the Four Winds|N|Pick up the jar of pigment here.|
 C Securing the Province|QID|30083|US|M|77.30,58.91|Z|Valley of the Four Winds|N|When you finish killing the sauroks, You can mount up in the cave and zerg out if you want.|
 T Securing the Province|QID|30083|M|75.83,7.65|N|To Mei Barrelbottom.|
 T Borderlands|QID|30084|M|75.83,7.65|N|To Mei Barrelbottom.|
@@ -140,11 +141,10 @@ K Kill Dojani Dominator|QID|30346|T|Dojani Dominator|M|55.51,35.48|L|78917|N|Kil
 C Where are the Pools|QID|30346|M|55.26,34.46|To UI Alert. (If you miss the alert you can turn in back at the Incursion.)|
 T Where are the Pools|QID|30346|
 A The Pools of Youth|QID|30347|N|from UI Alert.|
-C Threat from Dojan|QID|30349|US|M|55,35|N|Finish this before you go on to the pools, no dojani down there.|
 C The Pools of Youth|QID|30347|NC|M|54.6,33.1;51.9,32.4|N|When facing the platform where you killed the Dominator, go to your left, over a bridge and down some stairs to a pool area. Free Na Lek, kill the guardians and loot the 'water of youth' (groundspawn).|
+C Threat from Dojan|QID|30349|US|M|55,35|N|Finish this before you go on to the pools, no dojani down there.|
 C Lotus Tea|QID|30351|US|NS|M|55,35|N|There are a few flowers down here if you aren't yet done.|
 T Lotus Tea|QID|30351||N|To Kang Bramblestaff, next to you. (if you dont turn it in right away, you have to wait until you are at sentinal basecamp.)|
-R While traveling|QID|31409|M|50.8,49.4|CC|N|You can optionally go along the coast and look for a Pandaran Fishing Spear It is located under Uncle Deming.(rare blue BoA).|
 ;R The Incursion|M|67.4,32|
 T Threat from Dojan|QID|30349|M|67.45,32.70|N|To Lyalia.|
 T The Pools of Youth|QID|30347|M|67.45,32.64|N|To Lorekeeper Vaeldrin.|
@@ -154,6 +154,7 @@ C Immortality?|QID|30348|M|67.45,32.64|N|Watch and wait.|
 T Immortality?|QID|30348|M|67.45,32.64|N|To Lorekeeper Vaeldrin.|
 A Going on the Offensive|QID|30363|M|67.45,32.70|N|From Lyalia.|
 
+R While traveling|QID|31409|M|50.8,49.4|CC|N|You can optionally go along the coast and look for a Pandaran Fishing Spear It is located under Uncle Deming.(rare blue BoA).|
 C Going on the Offensive|QID|30363|NC|M|43.9,43.4|N|The poor outrider is on the ground (again).|
 T Into the Wilds|QID|30178|M|44.24,43.02|N|To Koro Mistwalker.|
 A Unsafe Passage|QID|30269|M|44.16,43.00|N|From Koro Mistwalker.|
@@ -222,7 +223,7 @@ A Balance Without Violence|QID|30674|M|45.31,85.17|N|From UI Alert.|
 C Balance Without Violence|S|QID|30674|M|42.68,82.74|N|There are piles of fish, the sparkly ones are the ones you can click on to throw back into the water.|
 ;T Balance Without Violence|QID|30674|M|42.22,82.87|N|To UI Alert.|
 C Buried Hozen Treasure|QID|30675|S|M|51.10,85.27|N|Click on the piles of sand to search for the treasure.|
-C Balance|QID|30672|M|50.85,84.15|
+C Balance|QID|30672|US|M|50.85,84.15|
 C Balance Without Violence|US|QID|30674|M|42.68,82.74|N|There are piles of fish, the sparkly ones are the ones you can click on to throw back into the water.|
 T Balance Without Violence|QID|30674|M|42.22,82.87|N|To UI Alert.|
 C Buried Hozen Treasure|QID|30675|US|M|51.10,85.27|N|Click on the piles of sand to search for the treasure.|

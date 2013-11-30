@@ -87,7 +87,7 @@ T Curtail the Darktail|QID|25709|M|61.59,18.71|N|To Enohar Thunderbrew.|
 
 C Eliminate the Okril'lon|QID|25711|M|53.06,15.91|N|Kill Okril'lon Infantry.|S|
 C Remove Their Arms|QID|25713|S|U|57117|M|53.44,13.77|N|Throw the grenade at the sparkling boxes (has a minimum range)|NC|
-C Nethergarde Reigns|QID|25712|M|51.57,12.70|N|Slay Captain Metlek at the Nethergarde Supply Camp.|
+K Nethergarde Reigns|QID|25712|M|51.57,12.70|T|Captain Metlek|N|Slay Captain Metlek at the Nethergarde Supply Camp.|
 C Remove Their Arms|QID|25713|US|U|57117|M|53.44,13.77|N|Finish throwing grenades at the sparkling boxes.|NC|
 C Eliminate the Okril'lon|QID|25711|M|53.06,15.91|N|Finish killing the Okril'lon Infantry you need.|
 
@@ -101,8 +101,8 @@ C Cultists at our Doorstep|QID|25716|M|62.47,22.09;64.35,26.33;61.17,31.53|
 T Cultists at our Doorstep|QID|25716|M|63.09,16.77|N|To Watcher Mahar Ba.|
 
 A Kasim Sharim|QID|26157|M|63.09,16.77|N|From Watcher Mahar Ba.|
-R Serpent's Coil|QID|26157|QO|Report to Kasim Sharim in the back of the Serpent's Coil in the Blasted Lands.|M|62.47,22.09;64.35,26.33;60.83,29.42|N|Head back to the area from the previous quest and enter the cave.|
-T Kasim Sharim|QID|26157|M|62.58,26.37|N|To Kasim Sharim.|
+;R Serpent's Coil|QID|26157|QO|Report to Kasim Sharim in the back of the Serpent's Coil in the Blasted Lands.|M|62.47,22.09;64.35,26.33;60.83,29.42|N|Head back to the area from the previous quest and enter the cave.|
+T Kasim Sharim|QID|26157|M|64.0,29.2;60.7,29.5;62.58,26.37|N|To Kasim Sharim. Report to Kasim Sharim in the back of the Serpent's Coil in the Blasted Lands.|
 A Attune the Bloodstone|QID|26158|M|62.58,26.37|N|From Kasim Sharim.|
 C Attune the Bloodstone|QID|26158|NC|QO|Use internal Bloodstone Teleporter: 1/1|M|63.19,25.96|N|Click on the Bloodstone.|
 C Attune the Bloodstone|QID|26158|NC|QO|Use external Bloodstone Teleporter: 1/1|M|61.37,29.93|N|Again, click on the Bloodstone.|

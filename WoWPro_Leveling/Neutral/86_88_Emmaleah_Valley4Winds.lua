@@ -172,7 +172,7 @@ C Thieves to the Core|QID|29948|S|NC|M|67.75,36.37|N|The hops are in the warren.
 C Crouching Carrot, Hidden Turnip|QID|29947|S|U|76370|M|69.15,39.41|N|Use the painted turnips in the warren to get rid of the vermin.|
 K Kill Chufa|QID|29946|T|Chufa|M|68.09,36.93|QO|Chufa slain: 1/1|U|76370|N|Chen will help you finish her up.|
 C Crouching Carrot, Hidden Turnip|QID|29947|US|U|76370|M|69.15,39.41|N|Use the painted turnips in the warren to get rid of the vermin.|
-C Thieves to the Core|QID|29948|S|NC|M|67.75,36.37|N|The hops are in the warren.|
+C Thieves to the Core|QID|29948|US|NC|M|67.75,36.37|N|The hops are in the warren.|
 T Crouching Carrot, Hidden Turnip|QID|29947|M|68.89,43.31|N|To Li Li.|
 T Thieves to the Core|QID|29948|M|68.71,43.12|N|To Mudmug.|
 T The Warren-Mother|QID|29946|M|68.87,43.17|N|To Chen Stormstout.|
@@ -194,9 +194,9 @@ C Where Silk Comes From|QID|30072|NC|M|62.37,62.48|N|Inside the building.|
 C The Moth Rebellion|QID|30059|US|M|64.70,62.43|N|The small moths roam in packs. The larger ones tend to be scarcer, so treat as a target of opportunity.|
 T Where Silk Comes From|QID|30072|M|62.67,59.75|N|To Silkmaster Tsai.|
 T The Moth Rebellion|QID|30059|M|63.55,58.46|N|To Journeyman Chu.|
-A Mothran!|QID|30058|M|63.62,58.53|N|From Master Goh.|
-C Mothran!|QID|30058|M|64.4,58.0|N|Click the gear to start the fight, when Mothran goes up in the are, you need to free your npc helpers from the silk wraps.|
-T Mothran!|QID|30058|M|63.62,58.53|N|To Master Goh.|
+A Mothallus!|QID|30058|M|63.62,58.53|N|From Master Goh.|
+C Mothallus!|QID|30058|M|64.4,58.0|N|Click the gear to start the fight, when Mothran goes up in the are, you need to free your npc helpers from the silk wraps.|
+T Mothallus!|QID|30058|M|63.62,58.53|N|To Master Goh.|
 C Li Li's Day Off|QID|29950|U|76350|M|61.41,36.02|N|If you lost her, summon her away from the waypoint.|
 T Clever Ashyo|QID|29871|M|61.23,34.23|N|To Clever Ashyo.|
 A Ashyo's Vision|QID|29577|M|61.23,34.23|N|From Clever Ashyo.|
@@ -219,7 +219,10 @@ T Bottletoads|QID|29757|M|60.61,33.70|N|To Yan.|
 T Guess Whose Back|QID|29758|M|60.61,33.70|N|To Yan.|
 T The Golden Dream|QID|29581|M|60.61,33.70|N|To Yan.|
 
-C Watery Woes|QID|30267|M|58.21,37.01|N|Kill Cranes and loot Fireflies as you run up to Mudmug's place, Unfortunantly the green ones don't drop feathers.|
+;C Watery Woes|QID|30267|M|58.21,37.01|T|Glade Glimmer|N|Kill Cranes and loot Fireflies as you run up to Mudmug's place, Unfortunantly the green ones don't drop feathers.|
+C Kill Cranes|QID|30267|S|M|58.21,37.01|QO|Spindly Bloodfeather: 5/5|N|Kill Cranes as you run up to Mudmug's place, Unfortunantly the green ones don't drop feathers.|
+C Loot Glade Glimmers|QID|30267|NC|QO|Glade Glimmer: 18/18|M|58.21,37.01|T|Glade Glimmer|N|Target and loot the Glade Glimmers.|
+C Kill Cranes|QID|30267|US|M|58.21,37.01|QO|Spindly Bloodfeather: 5/5|N|Kill Cranes and loot Fireflies as you run up to Mudmug's place, Unfortunantly the green ones don't drop feathers.|
 T Watery Woes|QID|30267|M|60.97,32.86|N|To Gladecaster Lang.|
 
 R Mudmug's Place|QID|29950|M|68.87,46.3|
@@ -279,7 +282,7 @@ A The Farmer's Daughter|QID|30056|M|44.26,34.21|N|From Den Mudclaw.|
 A Enough is Ookin' Enough|QID|30054|M|44.16,34.23|N|From Mung-Mung.|
 C Enough is Ookin' Enough|QID|30054|S|M|45.44,36.02|N|Stick to the right wall of the warren. You can easily get your trophy teeth if you methodically kill them all!|
 ;C The Farmer's Daughter|QID|30056|M|43.55,35.05;41.46,38.6|CS|N|She is underground on a giant veggy. Talk to her and escort her out.|
-T The Farmer's Daughter|QID|30056|M|43.55,35.05;41.46,38.6,41.30,38.16|CS|N|She is underground on a giant veggy. Talk to her and escort her out.To Mina Mudclaw.|
+T The Farmer's Daughter|QID|30056|M|43.55,35.05;41.46,38.6;41.30,38.16|CS|N|She is underground on a giant veggy. Talk to her and escort her out.To Mina Mudclaw.|
 A Seeing Orange|QID|30057|M|41.30,38.16|N|From Mina Mudclaw.|
 C Enough is Ookin' Enough|QID|30054|US|M|42,33|N|Stick to the right wall of the warren.|
 T Enough is Ookin' Enough|QID|30054|M|44.16,34.23|N|To Mung-Mung.|
@@ -321,7 +324,7 @@ A The Quest for Better Barley|QID|30032|M|52.74,63.00|N|From Grainlord Kai.|
 A Grain Recovery|QID|30028|M|52.74,63.00|N|From Grainlord Kai.|
 C Grain Recovery|QID|30028|NC|M|54.62,67.84|
 C The Quest for Better Barley|QID|30032|M|51.29,77.54;53.31,75.14;48.63,26.96|CS|N|Use the rope on the ground to get down.|
-T Grain Recovery|QID|30028|M|52.76,62.91|N|Use the rope to climb back. To Grainlord Kai.|
+T Grain Recovery|QID|30028|M|51.3,77.9;52.76,62.91|N|Use the rope to climb back. To Grainlord Kai.|
 T The Quest for Better Barley|QID|30032|M|52.69,62.83|N|To Li Li.|
 A The Chen Taste Test|QID|30047|M|52.69,62.83|N|From Li Li.|
 
@@ -400,8 +403,8 @@ C Talk to the Spadepaws|QID|29982|NC|QO|Evacuate the Spadepaw family: 1/1|M|12.8
 C Talk to Blacksoils|QID|29982|NC|QO|Evacuate the Blacksoil family: 1/1|M|7.14,54.84|N|After you talk to Blacksoil the first time, an ambusher will attack. After you kill it, he will reconsider. Talk to him again to complete this step.|
 C Stemming the Swarm|QID|29981|US|M|15.6,58.09|N|Finish killing mantids as you return to the "safe" area.|
 
-T Evacuation Orders|QID|29982|M|19.55,56.87|N|To Loon Mai.|
 T Stemming the Swarm|QID|29981|M|19.55,56.87|N|To Loon Mai.|
+T Evacuation Orders|QID|29982|M|19.55,56.87|N|To Loon Mai.|
 A The Hidden Master|QID|29983|M|19.55,56.87|N|From Loon Mai.|
 
 R Paoquan Hollow|QID|29983|M|18.15,31.60|CC|
@@ -428,8 +431,9 @@ A Unyielding Fists: Trial of Wood|QID|29987|M|18.24,31.26|N|From Master Bruised 
 C Trial of Wood|QID|29987|M|18.25,32.18|N|Same routine, but we are breaking boards this time.|
 T Unyielding Fists: Trial of Wood|QID|29987|M|18.24,31.26|N|To Master Bruised Paw.|
 A A Taste For Eggs|QID|29988|M|18.24,31.26|N|From Master Bruised Paw.|
+C A Taste For Eggs|QID|29988|NC|S|M|24,45;26.9,39.1|N|Gather the rest of your eggs in the area around the markers|; Singing Marshes
 C Hornbill Strider Egg|QID|29988|QO|Hornbill Strider Egg: 1/1|M|26.9,39.1|N|Inside the cave, The momma bird will come to show her displeasure with you.|; Singing Marshes
-C A Taste For Eggs|QID|29988|M|24,45;26.9,39.1|N|Gather the rest of your eggs in the area around the markers|; Singing Marshes
+C A Taste For Eggs|QID|29988|NC|US|M|24,45;26.9,39.1|N|Gather the rest of your eggs in the area around the markers|; Singing Marshes
 T A Taste For Eggs|QID|29988|M|18.29,31.24|N|To Master Bruised Paw.|
 A Unyielding Fists: Trial of Stone|QID|29989|M|18.29,31.24|N|From Master Bruised Paw.|
 C Trial of Stone|QID|29989|M|18.16,32.15|N|Same routine, this time we get to break stone, while the master throws eggs at us.|
@@ -438,8 +442,8 @@ A Training and Discipline|QID|29990|M|18.05,31.07|N|From Lin Tenderpaw.|
 
 R Stoneplow|QID|29990|M|19,56|CC|
 T Training and Discipline|QID|29990|M|19.55,56.87|N|To Loon Mai.|
-A The Road to Kun-Lai|QID|31254|FACTION|Alliance|M|70.1,23.5|N|From Highlord Grummle, requires level 87 and leads you to Kun-Lai. Skip if you do not want to quest there.|
-A The Road to Kun-Lai|QID|31255|FACTION|Horde|M|70.1,23.5|N|From Highlord Grummle, requires level 87and leads you to Kun-Lai. Skip if you do not want to quest there.|
+A The Road to Kun-Lai|QID|31254|FACTION|Alliance|M|18.6,56.4|N|From Messenger Grummle, requires level 87 and leads you to Kun-Lai. Skip if you do not want to quest there.|
+A The Road to Kun-Lai|QID|31255|FACTION|Horde|M|18.6,56.4|N|From Messenger Grummle, requires level 87and leads you to Kun-Lai. Skip if you do not want to quest there.|
 F Congratulations, you finished Valley of the Four Winds.|QID|29873|M|20.24,58.64|N|You finished Valley of the Four Winds, Dragonwing Dan will give you a free flight (if you ask within 20 min of turning in last quest) into Krasarang Wilds(a flight point you don't have yet). Next guide assumes you chose to go see Ken-Ken.|
 ]]
 

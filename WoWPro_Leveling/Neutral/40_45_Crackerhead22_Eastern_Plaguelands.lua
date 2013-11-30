@@ -104,7 +104,7 @@ A Tarenar Sunstrike|QID|27370|M|9.02,66.52|N|From Fiona.|S|
 A Gidwin Goldbraids|QID|27367|M|9.02,66.52|N|From Fiona.|
 A Tarenar Sunstrike|QID|27370|M|9.02,66.52|N|From Fiona.|US|
 
-f Thondoril River|QID|27367|M|10.02,65.70|N|At Frax Bucketdrop.|LVL|40|
+f Thondroril River|M|10.02,65.70|N|At Frax Bucketdrop.|LVL|40|
 T Gidwin Goldbraids|QID|27367|M|4.16,36.16|N|To Gidwin Goldbraids.|
 A Just Encased|QID|27368|M|4.17,36.13|N|From Gidwin Goldbraids.|
 C Just Encased|QID|27368|M|7.52,30.82|N|Kill Crypt Walkers, Stalkers and Horrors in the Terrorweb Tunnel that is next to the quest giver.|

@@ -446,6 +446,7 @@ function WoWPro:OnEnable()
 		elseif event == "CINEMATIC_STOP" then
 			--WoWPro:UpdateGuide()
 			--WoWPro:MapPoint()
+--err("CINEMATIC_STOP: InCinematic() = %s", InCinematic())
 			WoWPro:DelayMapPoint(true)
 
 		-- Update Achivement criteria based stuff

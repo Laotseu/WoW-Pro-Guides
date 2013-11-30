@@ -48,8 +48,9 @@ A The New Plague |QID|11167|M|78.5,29.0|N|From Apothecary Lysander.|
 A Let Them Eat Crow |QID|11227|M|79.1,31.2|N|From Pontius.|
 A War is Hell |QID|11270|M|78.6,31.2|N|From High Executor Anselm.|
 C War is Hell |QID|11270|U|33278|S|N|Burn the Forsaken and Alliance corpses with the Burning Torch.|M|75.23,32.84|
-l Crow meat |QID|11227|L|33238 5|N|Kill and loot Fjord Crows. Repeat until you have 5 Crow meat.|M|75.23,32.84|U|33221|
-C Let Them Eat Crow |QID|11227|U|33238|N|Use the Crow Meat 5 times.|M|75.23,32.84|
+;l Crow meat |QID|11227|L|33238 5|N|Kill and loot Fjord Crows. Repeat until you have 5 Crow meat.|M|75.23,32.84|U|33221|
+N Sumon the Hungry Plaguehound|QID|11227|U|33221|N|If you don't have the hound with you.|
+C Let Them Eat Crow |QID|11227|T|Fjord Crow|U|33238|N|Kill and loot Fjord Crows. Use the Crow Meat to feed the plaguehoud.|M|75.23,32.84|
 C War is Hell |QID|11270|U|33278|US|N|Burn the Forsaken and Alliance corpses with the Burning Torch.|M|75.23,32.84|
 C The New Plague |QID|11167|N|Head southeast to the wrecked ship. The containers are on and around the ship.|M|81,35|
 T War is Hell |QID|11270|M|78.6,31.2|N|To High Executor Anselm.|
@@ -71,8 +72,10 @@ A The Offensive Begins |QID|11295|N|From High Executor Anselm.|M|78.6,31.2|
 C Test at Sea |QID|11170|U|33349|N|Talk to the flightmaster, Bat Handler Camille. You have to be dismounted to start the flight. Then aim for the Alliance boats.|M|79.1,29.8|
 T Test at Sea |QID|11170|M|78.5,29.0|N|To Apothecary Lysander.|
 A New Agamand |QID|11304|N|From Apothecary Lysander.|M|78.5,29.0|
-N Listen to Razael's Report|QID|11221|QO|Listen to Razael's Report: 1/1|M|77.54,34.61|N|Talk to Razael.|
-C Reports from the Field |QID|11221|N|Dark Ranger Lyana occasionally attacks the alliance forces, the assaults last about 30-60 seconds. If she's not at the coords, just wait for her to get back.|M|78.63,37.03|
+;N Listen to Razael's Report|QID|11221|QO|Listen to Razael's Report: 1/1|M|77.54,34.61|N|Talk to Razael.|
+;C Reports from the Field |QID|11221|N|Dark Ranger Lyana occasionally attacks the alliance forces, the assaults last about 30-60 seconds. If she's not at the coords, just wait for her to get back.|M|78.63,37.03|
+C Listen to Razael's Report|QID|11221|NC|QO|Listen to Razael's Report: 1/1|M|77.54,34.61|N|Talk to Razael.|
+C Listen to Lyana's Report |QID|11221|NC|QO|Listen to Lyana's Report: 1/1|T|Dark Ranger Lyana|N|Dark Ranger Lyana occasionally attacks the alliance forces, the assaults last about 30-60 seconds. If she's not at the coords, just wait for her to get back.|M|78.63,37.03|
 T Reports from the Field |QID|11221|N|To High Executor Anselm.|M|78.6,31.2|
 
 A The Windrunner Fleet |QID|11229|N|From High Executor Anselm.|M|78.6,31.2|
@@ -81,14 +84,17 @@ A Ambushed! |QID|11230|M|84.7,36.5|N|From Captain Harker.|
 C Ambushed! |QID|11230|N|Kill 15 North Fleet Marines.|
 T Ambushed! |QID|11230|M|84.7,36.5|N|To Captain Harker.|
 A Guide Our Sights |QID|11232|N|From Captain Harker.|M|84.7,36.5|
-N Mark Eastern Cannon |QID|11232|QO|Eastern Cannon Marked: 1/1|U|33335|N|Use the flares next while standing next to the cannon. The cannon doesn't actually have to be there for you to get quest credit, you just have to use the flare standing where the cannon usually is.|M|80.3,38.2|
-C Guide Our Sights |QID|11232|U|33335|M|79.3,40.2|N|Use the flare next to the cannon.|
-T Guide Our Sights |QID|11232|N|Back at Dark Ranger Lyana.|M|78.63,37.03|
+;N Mark Eastern Cannon |QID|11232|QO|Eastern Cannon Marked: 1/1|U|33335|N|Use the flares next while standing next to the cannon. The cannon doesn't actually have to be there for you to get quest credit, you just have to use the flare standing where the cannon usually is.|M|80.3,38.2|
+;C Guide Our Sights |QID|11232|U|33335|M|79.3,40.2|N|Use the flare next to the cannon.|
+C Mark the Eastern Cannon |QID|11232|NC|U|33335|QO|Eastern Cannon Marked: 1/1|M|80.3,38.2|; Derelict Strand
+C Mark the Western Cannon |QID|11232|NC|U|33335|QO|Western Cannon Marked: 1/1|M|79.3,40.2|; Derelict Strand
+T Guide Our Sights |QID|11232|T|Dark Ranger Lyana|N|Back at Dark Ranger Lyana.|M|78.63,37.03|
 
 A Landing the Killing Blow |QID|11233|N|From Dark Ranger Lyana.|M|78.63,37.03|
-K Captain Olster slain |QID|11233|QO|Captain Olster slain: 1/1|M|81.5,43.4|N|Kill Captain Olster.|
-K Sergeant Lorric slain |QID|11233|QO|Sergeant Lorric slain: 1/1|M|82.2,40.9|N|Now kill Sergeant Lorric.|
-C Landing the Killing Blow |QID|11233|M|83.2,43.1|N|Finally kill Lieutenant Celeyne.|
+K Kill Captain Olster slain |QID|11233|T|Captain Olster|QO|Captain Olster slain: 1/1|M|81.5,43.4|N|Kill Captain Olster.|
+K Kill Sergeant Lorric slain |QID|11233|T|Sergeant Lorric|QO|Sergeant Lorric slain: 1/1|M|82.2,40.9|N|Now kill Sergeant Lorric.|
+;C Landing the Killing Blow |QID|11233|M|83.2,43.1|N|Finally kill Lieutenant Celeyne.|
+K Kill Lieutenant Celeyne |QID|11233|T|Lieutenant Celeyne|QO|Lieutenant Celeyne slain: 1/1|M|83.2,43.1|N|Finally kill Lieutenant Celeyne.|
 A Trail of Fire |QID|11241|N|From Apothecary Hanes. He spawns near Lieutenant Celeyne.|M|83.2,43.1|
 C Trail of Fire |QID|11241|N|Straightforward escort. You'll end up in front of Dark Ranger Lyana.|
 T Landing the Killing Blow |QID|11233|M|78.63,37.03|N|To Dark Ranger Lyana.|
@@ -105,10 +111,14 @@ T A Lesson in Fear |QID|11282|M|71.1,39.1|N|To Sergeant Gorth.|
 A Baleheim Bodycount |QID|11283|N|From Sergeant Gorth.|M|71.1,39.1|.|
 A Baleheim Must Burn! |QID|11285|N|From Sergeant Gorth.|M|71.1,39.1|.|
 C Baleheim Bodycount |QID|11283|N|Make sure you're in Baleheim when you kill them or you won't get credit.|S|
-N Watchtower Burned |QID|11285|QO|Winterskorn Watchtower Burned: 1/1|U|33472|N|The watchtower is directly to your west, burn it.|M|67.3,39.7|
-N Bridge Burned |QID|11285|QO|Winterskorn Bridge Burned: 1/1|U|33472|N|Head behind the tower and go west to the bridge, burn it.|M|66.0,39.9|
-N Dwelling Burned |QID|11285|QO|Winterskorn Dwelling Burned: 1/1|U|33472|N| Over the bridge, just west, is a small building, set it alight as well.|M|65,41|
-C Baleheim Must Burn! |QID|11285|QO|Winterskorn Barracks Burned: 1/1|U|33472|N| The final structure is to the northwest, careful not to aggro the elite when you light it up.|M|64,40|
+;N Watchtower Burned |QID|11285|QO|Winterskorn Watchtower Burned: 1/1|U|33472|N|The watchtower is directly to your west, burn it.|M|67.3,39.7|
+;N Bridge Burned |QID|11285|QO|Winterskorn Bridge Burned: 1/1|U|33472|N|Head behind the tower and go west to the bridge, burn it.|M|66.0,39.9|
+;N Dwelling Burned |QID|11285|QO|Winterskorn Dwelling Burned: 1/1|U|33472|N| Over the bridge, just west, is a small building, set it alight as well.|M|65,41|
+;C Baleheim Must Burn! |QID|11285|QO|Winterskorn Barracks Burned: 1/1|U|33472|N| The final structure is to the northwest, careful not to aggro the elite when you light it up.|M|64,40|
+C Burn the Winterskorn Watchtower |QID|11285|NC|U|33472|QO|Winterskorn Watchtower Burned: 1/1|N|The watchtower is directly to your west, burn it.|M|67.3,39.6|; Baleheim
+C Burn the Winterskorn Bridge|QID|11285|NC|U|33472|QO|Winterskorn Bridge Burned: 1/1|N|Head behind the tower and go west to the bridge, burn it.|M|66.1,39.8|; Baleheim
+C Burn the Winterskorn Dwelling|QID|11285|NC|U|33472|QO|Winterskorn Dwelling Burned: 1/1|N|Over the bridge, just west, is a small building, set it alight as well.|M|65.0,41.0|; Baleheim
+C Burn the Winterskorn Barracks|QID|11285|NC|U|33472|QO|Winterskorn Barracks Burned: 1/1|N|The final structure is to the northwest, careful not to aggro the elite when you light it up.|M|63.7,39.6|; Baleheim
 C Baleheim Bodycount |QID|11283|N|Make sure you're in Baleheim when you kill them or you won't get credit.|US|
 T Baleheim Bodycount |QID|11283|M|71.1,39.1|N|To Sergeant Gorth.|
 T Baleheim Must Burn! |QID|11285|N|To Sergeant Gorth.|M|71.1,39.1|.|
@@ -116,14 +126,14 @@ T Baleheim Must Burn! |QID|11285|N|To Sergeant Gorth.|M|71.1,39.1|.|
 A The Ambush |QID|11303|N|From Sergeant Gorth.|M|71.1,39.1|.|
 T The Ambush |QID|11303|M|65.9,36.8|N|To Lydell.|
 A Adding Injury to Insult |QID|12481|N|From Lydell.|M|65.9,36.8|
-C Adding Injury to Insult |QID|12481|U|33581|N|Bjorn Halgurdsson is southwest, fight your way to him and make sure you have a clear path back. Use the Vrykul Insult on him and run like hell back to Lydell. Let Lydell tank and you'll be fine.|M|64,39|
+C Adding Injury to Insult |QID|12481|U|33581|N|Bjdorn Halgurdsson is southwest, fight your way to him and make sure you have a clear path back. Use the Vrykul Insult on him and run like hell back to Lydell. Let Lydell tank and you'll be fine.|M|64,39;65.9,36.4|CS|
 T Adding Injury to Insult |QID|12481|M|65.9,36.8|N|To Lydell.|
 T Help for Camp Winterhoof |QID|12566|M|48.0,10.8|N|To Chieftain Ashtotem.|
 A Hasty Preparations |QID|11271|M|48.4,11.0|N|From Ahota Whitefrost.|
 A Making the Horn |QID|11275|M|49.3,12.0|N|From Nokoma Snowseer.|
 A Suppressing the Elements |QID|11311|M|49.0,12.0|N|From Windtamer Kagan.|
 h Camp Winterhoof|QID|11311|M|49.4,10.8|N|At Bori Wintertotem.|
-C Hasty Preparations |QID|11271|S|N|Grab any Spotted Hippogryph Down you see.|
+C Hasty Preparations |QID|11271|S|NC|N|Grab any Spotted Hippogryph Down you see.|
 C Making the Horn |QID|11275|S|N|In the snowy hills northeast of Camp Winterhoof. The elementals tend to be higher in the hills, while the rams are lower.|
 C Suppressing the Elements |QID|11311|N|In the snowy hills northeast of Camp Winterhoof. The elementals tend to be higher in the hills, while the rams are lower.|M|52,3|
 C Making the Horn |QID|11275|US|N|In the snowy hills northeast of Camp Winterhoof. The elementals tend to be higher in the hills, while the rams are lower.|
@@ -156,17 +166,18 @@ T Skorn Must Fall! |QID|11256|U|33340|N|Use the Winterhoof Emblem and speak to t
 A Gruesome, But Necessary |QID|11257|N|From the Winterhoof Brave.|
 A Burn Skorn, Burn! |QID|11258|N|From the Winterhoof Brave.|
 A Towers of Certain Doom |QID|11259|N|From the Winterhoof Brave.|
-l Vrykul Scroll of Ascension |QID|11260|S|L|33345|N|Until you get the Vrykul Scroll of Ascension.|
+;l Vrykul Scroll of Ascension |QID|11260|S|L|33345|N|Until you get the Vrykul Scroll of Ascension.|
+A Stop the Ascension! |QID|11260|S|U|33345|N|Kill Vrykul until you get the Vrykul Scroll of Ascension.|
 C Gruesome, But Necessary |QID|11257|U|33342|S|N|When you kill a Vrykul, use The Brave's Machete on the corpse.|
-N Burn the Northwest Longhouse |QID|11258|QO|Northwest Longhouse Set Ablaze: 1/1|U|33343|N|Just to the southwest. Go inside and use the Brave's Torch.|M|43.7,28.6|
-N Target the Northwest Tower |QID|11259|QO|Northwest Tower Targeted: 1/1|U|33344|N|It's just south. Don't get too close or the mages on it will attack you. The Brave's Flare has a 90 yard range.|M|44.4,28.6|
-N Burn the Northeast Longhouse |QID|11258|QO|Northeast Longhouse Set Ablaze: 1/1|U|33343|N|It's east on the other side of the village.|M|46.4,28.2|
-C Burn Skorn, Burn! |QID|11258|U|33343|N|The final structure, the Barracks, is south.|M|45.9,30.7|
-N Target the East Tower |QID|11259|QO|East Tower Targeted: 1/1|U|33344|N|Head southwest and follow the trail up. East of here, the East Tower.|M|46.8,32.8|
-N Target the Southeast Tower |QID|11259|QO|Southeast Tower Targeted: 1/1|U|33344|N|Further south, the Southeast Tower.|M|47,36|
-l Vrykul Scroll of Ascension |QID|11260|US|L|33345|N|Until you get the Vrykul Scroll of Ascension.|
+C Burn the Northwest Longhouse |QID|11258|NC|QO|Northwest Longhouse Set Ablaze: 1/1|U|33343|N|Just to the southwest. Go inside and use the Brave's Torch.|M|43.7,28.6|
+C Target the Northwest Tower |QID|11259|NC|QO|Northwest Tower Targeted: 1/1|U|33344|N|It's just south. Don't get too close or the mages on it will attack you. The Brave's Flare has a 90 yard range.|M|44.4,28.6|
+C Burn the Northeast Longhouse |QID|11258|NC|QO|Northeast Longhouse Set Ablaze: 1/1|U|33343|N|It's east on the other side of the village.|M|46.4,28.2|
+C Burn the barracks |QID|11258|NC|QO|Barracks set Ablase: 1/1|U|33343|N|The final structure, the Barracks, is south.|M|45.9,30.7|
+C Target the East Tower |QID|11259|NC|QO|East Tower Targeted: 1/1|U|33344|N|Head southwest and follow the trail up. East of here, the East Tower.|M|46.8,32.8|
+C Target the Southeast Tower |QID|11259|QO|Southeast Tower Targeted: 1/1|U|33344|N|Further south, the Southeast Tower.|M|47,36|
+;l Vrykul Scroll of Ascension |QID|11260|US|L|33345|N|Until you get the Vrykul Scroll of Ascension.|
 
-A Stop the Ascension! |QID|11260|U|33345|N|Click the scroll to start the quest.|
+A Stop the Ascension! |QID|11260|US|U|33345|N|Kill Vrykul until you get the Vrykul Scroll of Ascension.|
 C Stop the Ascension! |QID|11260|U|33346|N|Stand next to the Pyre and use the Vrykul Scroll of Ascension. Kill Halfdan the Ice-Hearted when he spawns.|M|44.9,35.3|
 C Towers of Certain Doom |QID|11259|U|33344|N|The final tower is southwest.|M|43,36|
 C Gruesome, But Necessary |QID|11257|U|33342|US|N|When you kill a Vrykul, use The Brave's Machete on the corpse.|US|
@@ -182,7 +193,7 @@ T Wild Vines |QID|11315|M|61.5,22.8|N|To Lurielle.|
 
 A Spawn of the Twisted Glade |QID|11316|M|61.5,22.8|N|From Lurielle.|
 A Seeds of the Blacksouled Keepers |QID|11319|M|61.5,22.8|N|From Lurielle.|
-C The Lodestone |QID|11366|U|33819|N|Head to the Broken Tablet, use the Rune Sample while standing near it.|M|72,17|
+C The Lodestone |QID|11366|U|33819|N|Head to the Broken Tablet, use the Rune Sample while standing near it.|M|71.6,17.7|
 C Mastering the Runes |QID|11351|N|Look for a little box called Iron Rune Carving Tools, they spawn under one of the 5 'tent' canopies.|
 C Spawn of the Twisted Glade |QID|11316|N|Kill Thornvine Creepers for this quest. |M|53.71,18.56|S|
 C Seeds of the Blacksouled Keepers |QID|11319|U|33607|N|Kill Spores here and use the Enchanted Ice Core on their remains until you complete this quest.|M|53.71,18.56|
@@ -190,7 +201,7 @@ C Spawn of the Twisted Glade |QID|11316|N|Kill Thornvine Creepers for this quest
 T Spawn of the Twisted Glade |QID|11316|M|61.5,22.8|N|To Lurielle.|
 T Seeds of the Blacksouled Keepers |QID|11319|M|61.5,22.8|N|To Lurielle.|
 A Keeper Witherleaf |QID|11428|M|61.5,22.8|N|From Lurielle.|
-C Keeper Witherleaf |QID|11428|T|Keeper Witherleaf|N|Kill Keeper Witherleaf in the area.|M|53.82,17.48|
+K Keeper Witherleaf |QID|11428|T|Keeper Witherleaf|N|Kill Keeper Witherleaf in the area.|M|53.82,17.48|
 
 T Mastering the Runes |QID|11351|N|To Longrunner Pembe.|M|49.2,12.2|
 A The Rune of Command |QID|11352|N|From Longrunner Pembe.|
@@ -212,12 +223,12 @@ T Keeping Watch on the Interlopers |QID|11297|N|To Apothecary Malthus.|M|26.43,2
 A What's in That Brew? |QID|11298|N|From Apothecary Malthus.|
 A And You Thought Murlocs Smelled Bad! |QID|11397|N|From Apothecary Anastasia.|
 A Brains! Brains! Brains! |QID|11301|M|26.0,24.4|N|From Apothecary Grick.|
-F Camp Winterhoof|QID|11323|M|26.0,25.1|N|Fly to Camp Winterhoof.|
+F Camp Winterhoof|QID|11428|M|26.0,25.1|N|Fly to Camp Winterhoof.|
 T Keeper Witherleaf |QID|11428|M|61.5,22.9|N|To Lurielle.|
-C Hasty Preparations |QID|11271|N|Pick up any feathers you still need on the way.|US|M|72,25|
-K Binder Murdis |QID|11352|QO|Binder Murdis slain: 1/1|M|72,25|
+C Hasty Preparations |QID|11271|US|NC|N|Pick up any feathers you still need on the way.|US|M|72,25|
+K Binder Murdis |QID|11352|T|Binder Murdis|QO|Binder Murdis slain: 1/1|M|72,25|
 C The Rune of Command |QID|11352|U|33796|N|Use the Rune of Command on a Stone Giant, it's non-aggressive, should be just to the northwest.|M|71.95,23.2|
-C Demolishing Megalith |QID|11367|N|Kill Megalith.|M|76,10|
+K Demolishing Megalith |QID|11367|T|Megalith|N|Kill Megalith.|M|69.4,11.8|
 C The Cleansing |QID|11317|N|Go west through the mountains, stay as far north as you can. There's a small path. Take it to the summit of the mountain, there's a shrine there. Right click it and kill your Inner Turmoil.|M|61.18,2.08|
 R Camp Winterhoof |QID|11323|N|You've got a levitation buff, so mount up, aim at Camp Winterhoof (use the world map; hold down the right mouse button and open it up) and run off the edge.|M|49.6,11.6|
 T Demolishing Megalith |QID|11367|M|48.1,10.5|N|To Sage Edan.|

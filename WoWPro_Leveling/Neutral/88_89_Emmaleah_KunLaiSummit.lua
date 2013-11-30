@@ -248,7 +248,7 @@ C Pandaren Prisoners|QID|30650|S|FACTION|Alliance|M|49.67,80.36|N|The prisoners 
 ;C Barrels of Fun|QID|30651|FACTION|Alliance|S|U|80528|M|49.42,80.61|N|Pick up a sparkly barrel (unique - one at a time) and place it where the gears are on your minimap.|
 ;C In Tents Channeling|QID|30652|FACTION|Alliance|M|50.50,78.59|N|Blizzard has kindly marked the locations of the mobs to kill|
 ;C Barrels of Fun|QID|30651|FACTION|Alliance|US|M|49.42,80.61|N|Pick up a sparkly barrell (unique - one at a time) and place it where the gears are on your minimap.|
-K Akonu the Embercaller |QID|30652|S|FACTION|Alliance|QO|Akonu the Embercaller slain: 1/1|M|47.7,80.0|Z|Kun-Lai Summit|; Fire Camp Ordo
+K Akonu the Embercaller |QID|30652|S|FACTION|Alliance|T|Akonu the Embercaller|QO|Akonu the Embercaller slain: 1/1|M|47.7,80.0|Z|Kun-Lai Summit|; Fire Camp Ordo
 C Destroy the Western Oil Rig |QID|30651|S|U|80528|FACTION|Alliance|QO|Western Oil Rig destroyed: 1/1|M|47.9,81.4|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
 C Destroy the Southern Oil Rig |QID|30651|S|U|80528|FACTION|Alliance|QO|Southern Oil Rig destroyed: 1/1|M|49.6,81.0|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
 K Pao-kun the Pyromancer |QID|30652|S|FACTION|Alliance|T|Pao-kun the Pyromancer|QO|Pao-kun the Pyromancer slain: 1/1|M|49.1,80.3|Z|Kun-Lai Summit|; Fire Camp Ordo
@@ -260,7 +260,7 @@ K Harala the Firespeaker |QID|30652|US|FACTION|Alliance|T|Harala the Firespeaker
 K Pao-kun the Pyromancer |QID|30652|US|FACTION|Alliance|T|Pao-kun the Pyromancer|QO|Pao-kun the Pyromancer slain: 1/1|M|49.1,80.3|Z|Kun-Lai Summit|; Fire Camp Ordo
 C Destroy the Southern Oil Rig |QID|30651|US|U|80528|FACTION|Alliance|QO|Southern Oil Rig destroyed: 1/1|M|49.6,81.0|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
 C Destroy the Western Oil Rig |QID|30651|US|U|80528|FACTION|Alliance|QO|Western Oil Rig destroyed: 1/1|M|47.9,81.4|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
-K Akonu the Embercaller |QID|30652|US|FACTION|Alliance|QO|Akonu the Embercaller slain: 1/1|M|47.7,80.0|Z|Kun-Lai Summit|; Fire Camp Ordo
+K Akonu the Embercaller |QID|30652|US|FACTION|Alliance|T|Akonu the Embercaller|QO|Akonu the Embercaller slain: 1/1|M|47.7,80.0|Z|Kun-Lai Summit|; Fire Camp Ordo
 T In Tents Channeling|QID|30652|FACTION|Alliance|N|To UI Alert.|
 A The Ordo Warbringer|QID|30660|FACTION|Alliance|N|From UI Alert.|
 C Pandaren Prisoners|QID|30650|US|FACTION|Alliance|M|49.67,80.36|N|Finish freeing the prisoners.|
@@ -286,9 +286,22 @@ A In Tents Channeling|QID|30657|FACTION|Horde|M|62.92,80.22|N|From General Nazgr
 A Pandaren Prisoners|QID|30655|FACTION|Horde|M|62.36,79.64|N|From Elder Shiao.|
 R Fire Camp Ordo |QID|30657|FACTION|Horde|M|47.76,80.17|
 C Pandaren Prisoners|QID|30655|FACTION|Horde|S|M|49.58,78.89|The prisoners are throughout the Fire Camp Ordo.|
-C Barrels of Fun|QID|30656|FACTION|Horde|S|M|47.99,81.27|N|Pick up a sparkly barrel (unique - one at a time) and place it where the gears are on your minimap|
-C In Tents Channeling|QID|30657|FACTION|Horde|M|47.76,80.17|N|Blizzard has kindly marked the locations of the mobs to kill|
-C Barrels of Fun|QID|30656|FACTION|Horde|US|M|47.99,81.27|N|Pick up a sparkly barrell (unique - one at a time) and place it where the gears are on your minimap|
+;C Barrels of Fun|QID|30656|FACTION|Horde|S|M|47.99,81.27|N|Pick up a sparkly barrel (unique - one at a time) and place it where the gears are on your minimap|
+;C In Tents Channeling|QID|30657|FACTION|Horde|M|47.76,80.17|N|Blizzard has kindly marked the locations of the mobs to kill|
+;C Barrels of Fun|QID|30656|FACTION|Horde|US|M|47.99,81.27|N|Pick up a sparkly barrell (unique - one at a time) and place it where the gears are on your minimap|
+K Akonu the Embercaller |QID|30657|S|FACTION|Horde|T|Akonu the Embercaller|QO|Akonu the Embercaller slain: 1/1|M|47.7,80.0|Z|Kun-Lai Summit|; Fire Camp Ordo
+C Destroy the Western Oil Rig |QID|30656|S|U|80528|FACTION|Horde|QO|Western Oil Rig destroyed: 1/1|M|47.9,81.4|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
+C Destroy the Southern Oil Rig |QID|30656|S|U|80528|FACTION|Horde|QO|Southern Oil Rig destroyed: 1/1|M|49.6,81.0|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
+K Pao-kun the Pyromancer |QID|30657|S|FACTION|Horde|T|Pao-kun the Pyromancer|QO|Pao-kun the Pyromancer slain: 1/1|M|49.1,80.3|Z|Kun-Lai Summit|; Fire Camp Ordo
+K Harala the Firespeaker |QID|30657|S|FACTION|Horde|T|Harala the Firespeaker|QO|Harala the Firespeaker slain: 1/1|M|49.4,78.5|Z|Kun-Lai Summit|; Fire Camp Ordo
+K Musaan the Blazecaster |QID|30657|S|FACTION|Horde|T|Musaan the Blazecaster|QO|Musaan the Blazecaster slain: 1/1|M|50.5,78.6|Z|Kun-Lai Summit|; Fire Camp Ordo
+C Destroy the Eastern Oil Rig |QID|30656|U|80528|FACTION|Horde|QO|Eastern Oil Rig destroyed: 1/1|M|51.0,79.5|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
+K Musaan the Blazecaster |QID|30657|US|FACTION|Horde|T|Musaan the Blazecaster|QO|Musaan the Blazecaster slain: 1/1|M|50.5,78.6|Z|Kun-Lai Summit|; Fire Camp Ordo
+K Harala the Firespeaker |QID|30657|US|FACTION|Horde|T|Harala the Firespeaker|QO|Harala the Firespeaker slain: 1/1|M|49.4,78.5|Z|Kun-Lai Summit|; Fire Camp Ordo
+K Pao-kun the Pyromancer |QID|30657|US|FACTION|Horde|T|Pao-kun the Pyromancer|QO|Pao-kun the Pyromancer slain: 1/1|M|49.1,80.3|Z|Kun-Lai Summit|; Fire Camp Ordo
+C Destroy the Southern Oil Rig |QID|30656|US|U|80528|FACTION|Horde|QO|Southern Oil Rig destroyed: 1/1|M|49.6,81.0|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
+C Destroy the Western Oil Rig |QID|30656|US|U|80528|FACTION|Horde|QO|Western Oil Rig destroyed: 1/1|M|47.9,81.4|Z|Kun-Lai Summit|N|Place the barel near the rig and make it go BOOM.|; Fire Camp Ordo
+K Akonu the Embercaller |QID|30657|US|FACTION|Horde|T|Akonu the Embercaller|QO|Akonu the Embercaller slain: 1/1|M|47.7,80.0|Z|Kun-Lai Summit|; Fire Camp Ordo
 T In Tents Channeling|QID|30657|FACTION|Horde|N|To UI Alert,|
 A The Ordo Warbringer|QID|30661|FACTION|Horde|N|From UI Alert.|
 C Pandaren Prisoners|QID|30655|FACTION|Horde|US|M|49.58,78.89|N|Finish freeing the prisoners.|

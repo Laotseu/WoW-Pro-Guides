@@ -213,27 +213,27 @@ T Silly Wikket, Slickies are for Hozen|QID|29942|M|27.06,50.77|N|To Eekle Eekle.
 T Boom Bait|QID|29939|M|27.21,50.78|N|To Rivett Clutchpop.|
 A The Scouts Return|QID|29971|M|27.21,50.78|N|From Rivett Clutchpop.|
 T The Scouts Return|QID|29971|M|28.63,47.40|N|To Shokia.|
-A Scouting Report: Hostile Natives|QID|29730|M|37.72,45.31|N|From Riko.|
+A Scouting Report: Hostile Natives|QID|29730|M|28.6,47.4|N|From Riko.|
 C Scouting Report: Hostile Natives|QID|29730|NC|QO|Inspect the warning sign: 1/1|M|38.84, 45.47|
-C Scouting Report: Hostile Natives|QID|29730|NC|QO|Inspect a Lifelike Jade Statue: 1/1|M|38.84,45.14|
+C Scouting Report: Hostile Natives|QID|29730|NC|QO|Inspect a Lifelike Jade Statue: 1/1|M|38.8,46.1|
 C Scouting Report: Hostile Natives|QID|29730|NC|QO|Speak with Widow Greenpaw: 1/1|M|39.2, 46.2|
-T Scouting Report: Hostile Natives|QID|29730|M|28.62,47.43|N|To Riko.|
-A Scouting Report: On the Right Track|QID|29731|M|43.16,61.27|N|From Shademaster Kiryn.|
+T Scouting Report: Hostile Natives|QID|29730|M|28.6,47.4|N|To Riko.|
+A Scouting Report: On the Right Track|QID|29731|M|28.7,47.5|N|From Shademaster Kiryn.|
 C Scouting Report: On the Right Track|QID|29731|M|48.65,60.32|NC|
-T Scouting Report: On the Right Track|QID|29731|M|28.62,47.48|N|To Shademaster Kiryn.|
-A Scouting Report: The Friend of My Enemy|QID|29823|M|49.87,69.15|N|From Riko.|
+T Scouting Report: On the Right Track|QID|29731|M|28.7,47.5|N|To Shademaster Kiryn.|
+A Scouting Report: The Friend of My Enemy|QID|29823|M|28.6,47.4|N|From Riko.|
 C Scouting Report: The Friend of My Enemy|QID|29823|M|49.82,70.53|N|3 knocks back, so you can hit them at range with 4.|
-T Scouting Report: The Friend of My Enemy|QID|29823|M|28.62,47.48|N|To Riko.|
-A Scouting Report: Like Jinyu in a Barrel|QID|29824|M|62.72,81.89|N|From Shokia.|
+T Scouting Report: The Friend of My Enemy|QID|29823|M|28.6,47.4|N|To Riko.|
+A Scouting Report: Like Jinyu in a Barrel|QID|29824|M|28.6,47.4|N|From Shokia.|
 C Scouting Report: Like Jinyu in a Barrel|QID|29824|M|58.06,83.28|N|Use your mouse to aim and then rt click to shoot.|
-T Scouting Report: Like Jinyu in a Barrel|QID|29824|M|28.62,47.48|N|To Shokia.|
+T Scouting Report: Like Jinyu in a Barrel|QID|29824|M|28.6,47.4|N|To Shokia.|
 A Guerrillas in our Midst|QID|29943|M|28.62,47.48|N|From General Nazgrim.|
 A Green-ish Energy|QID|29968|M|30.78,52.22|N|From Rivett Clutchpop.|
 C Green-ish Energy|QID|29968|S|NC|M|29.25,51.73|
 C Guerrillas in our Midst|QID|29943|M|29.12,51.95|
 T Guerrillas in our Midst|QID|29943|M|29.25,51.73|N|To General Nazgrim.|
 A Burning Down the House|QID|29966|M|29.25,51.73|N|From General Nazgrim.|
-C Burning Down the House|QID|29966|U|76336|M|29.49,54.08|
+C Burning Down the House|QID|29966|U|76336|M|30.4,52.9;29.49,54.08|
 C Green-ish Energy|QID|29968|US|NC|M|29.25,51.73|
 T Green-ish Energy|QID|29968|M|27.23,50.74|N|To Rivett Clutchpop.|
 A Boom Goes the Doonamite!|QID|29967|M|27.23,50.74|N|From Rivett Clutchpop.|
@@ -284,7 +284,7 @@ R Shrine of the Dawn|QID|29995|M|52.63,38.08|
 T Shrine of the Dawn|QID|29995|M|52.63,38.08|N|To Syra Goldendraft.|
 A Getting Permission|QID|29920|M|52.63,38.08|N|From Syra Goldendraft.|
 K Defeat Pandriarch Bramblestaff |QID|29920|T|Pandriarch Bramblestaff|QO|Pandriarch Bramblestaff defeated: 1/1|M|54.1,38.4|; Shrine of the Dawn
-K Defeat Pandriarch Goldendraft |QID|29920|T|Defeat Pandriarch|QO|Pandriarch Goldendraft defeated: 1/1|M|53.6,36.8|; Shrine of the Dawn
+K Defeat Pandriarch Goldendraft |QID|29920|T|Pandriarch Goldendraft|QO|Pandriarch Goldendraft defeated: 1/1|M|53.6,36.8|; Shrine of the Dawn
 K Defeat Pandriarch Windfur |QID|29920|T|Pandriarch Windfur|QO|Pandriarch Windfur defeated: 1/1|M|52.6,35.6|; Shrine of the Dawn
 T Getting Permission|QID|29920|M|52.61,38.13|N|To Lo Wanderbrew.|
 
@@ -298,7 +298,7 @@ A Calamity Jade|QID|29926|M|50.91,27.05|N|From Foreman Mann.|
 A Mann's Man|QID|29927|M|50.91,27.05|N|From Foreman Mann.|
 T Mann's Man|QID|29927|M|45.44,29.09|N|To Hao Mann.|
 A Trapped!|QID|29929|M|45.44,29.09|N|From Hao Mann.|
-C Trapped!|QID|29929|NC|M|43.87,30.49|N|While doing the quests here in the mine an 'ancient pandaran mining pick' can rarely be found, keep an eye out for it.|
+C Trapped!|QID|29929|S|NC|M|43.87,30.49|N|While doing the quests here in the mine an 'ancient pandaran mining pick' can rarely be found, keep an eye out for it.|
 C Calamity Jade|QID|29926|M|44.48,30.29|
 C Trapped!|QID|29929|NC|US|M|43.87,30.49|
 T Trapped!|QID|29929|M|46.30,29.35|N|To Hao Mann.|
@@ -342,6 +342,7 @@ A A Humble Offering|QID|29756|M|44.21,15.01|N|From Pei-Zhi.|
 C A Humble Offering|QID|29756|NC|S|M|39.71,10.98|
 C Back to Nature|QID|29753|U|74808|M|39.88,10.43|
 C A Humble Offering|QID|29756|NC|US|M|39.71,10.98|
+R Owen's Wishing Well|QID|31397|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|
 T Back to Nature|QID|29753|M|44.26,15.04|N|To Pei-Zhi.|
 T A Humble Offering|QID|29756|M|44.26,15.04|N|To Pei-Zhi.|
 A To Bridge Earth and Sky|QID|29754|M|44.26,15.04|N|From Pei-Zhi.|
@@ -369,7 +370,7 @@ C Becoming Battle-Ready|QID|29632|M|43.27,24.75|N|Fight the students in the area
 T Becoming Battle-Ready|QID|29632|M|43.27,24.75|N|To Master Stone Fist.|
 A Zhi-Zhi, the Dextrous|QID|29633|M|43.27,24.75|N|From Master Stone Fist.|
 A Husshun, the Wizened|QID|29634|M|43.27,24.75|N|From Master Stone Fist.|
-C Zhi-Zhi, the Dextrous|QID|29633T|Zhi-Zhi|M|43.03,25.96|N|On top of the hill. Challenge him to a match.|
+C Zhi-Zhi, the Dextrous|QID|29633|T|Zhi-Zhi|M|43.03,25.96|N|On top of the hill. Challenge him to a match.|
 
 T Groundskeeper Wu|QID|29626|M|41.59,23.66|N|To Groundskeeper Wu.|
 A A Proper Weapon|QID|29627|M|41.59,23.66|N|From Groundskeeper Wu.|
@@ -384,7 +385,6 @@ A And a Heavy Fist|QID|29630|M|41.59,23.66|N|From Groundskeeper Wu.|
 A Burning Bright|QID|29631|M|37.96,23.8|N|From Guard Shan Long.|
 C Burning Bright|QID|29631|S|M|36.09,27.57|
 C A Steady Hand|QID|29629|S|NC|L|73193 80|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
-R Owen's Wishing Well|QID|31397|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|
 C A Steady Hand|QID|29629|US|NC|L|73193 80|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
 C Burning Bright|QID|29631|US|M|36.09,27.57|
 C And a Heavy Fist|QID|29630|S|N|Kill sprites as you approach the next objective.|
@@ -420,7 +420,7 @@ A Flying Colors|QID|29647|M|43.27,24.75|N|From Instructor Myang.|
 T Flying Colors|QID|29647|M|42.71,23.23|N|To High Elder Cloudfall.|
 
 F Dawn's Blossom|QID|29931|M|43.52,24.55|N|At Studious Chu.(or you can just ride straight to Nectarbreeze)|
-R Nectarbreeze Orchard|CC|M|46.67,46.76;45.83,50.25;46.72,55.25;41.52,61.13;43.37,72.76;43.54,75.91|N|The green dots will take you via roads, which is probably safer, but certainly slower than running cross-country.|
+R Nectarbreeze Orchard|QID|29576|CC|M|46.67,46.76;45.83,50.25;46.72,55.25;41.52,61.13;43.37,72.76;43.54,75.91|N|The green dots will take you via roads, which is probably safer, but certainly slower than running cross-country.|
 T An Air of Worry |QID|29576|N|To Shao the Defiant|M|43.5,75.9|
 A Defiance|QID|29578|M|43.54,75.91|N|From Shao the Defiant.|
 A Rally the Survivors|QID|29579|M|43.54,75.91|N|From Shao the Defiant.|
@@ -471,13 +471,13 @@ C Crimson Serpent|QID|29999|NC|QO|Playful Crimson Serpent found: 1/1|M|58.19,61.
 T The Librarian's Quandary|QID|29998|M|56.29,60.46|N|To Lorewalker Stonestep.|
 A Moth-Ridden|QID|30001|M|56.29,60.46|N|From Lorewalker Stonestep.|
 A Pages of History|QID|30002|M|56.29,60.46|N|From Lorewalker Stonestep.|
-C Gold Serpent|QID|29999|NC|QO|Playful Gold Serpent found: 1/1|M|57.51,58.52|N|Click on the cog to pick up the serpant.|
+C Gold Serpent|QID|29999|NC|QO|Playful Gold Serpent found: 1/1|M|57.51,58.52|M|55.9,60.3|N|Click on the cog to pick up the serpant.|
 C Pages of History|QID|30002|S|M|55.70,59.95|N|Stomp(click) on the bookworms (or just kill them the normal way).|
 C Moth-Ridden|QID|30001|M|56.39,60.43|
 C Pages of History|QID|30002|US|M|55.70,59.95|N|Stomp(click) on the bookworms (or just kill them the normal way).|
 T Moth-Ridden|QID|30001|M|56.29,60.40|N|To Lorewalker Stonestep.|
 A Everything In Its Place|QID|30004|M|56.29,60.40|N|From Lorewalker Stonestep.|
-T Pages of History|QID|30002M|55.70,59.95|N|To Lorewalker Stonestep.|
+T Pages of History|QID|30002|M|55.70,59.95|N|To Lorewalker Stonestep.|
 C Emerald Serpent|QID|29999|NC|QO|Playful Emerald Serpent found: 1/1|M|56.51,58.44|N|Click on the cog to pick up the serpant.|
 C The Scryer's Dilemma|QID|29997|M|56.79,55.84|N|Kill the water elementals until the staff drops.|
 T The Scryer's Dilemma|QID|29997|M|57.59,55.98|N|To Wise Mari.|
@@ -499,17 +499,18 @@ T Get Back Here!|QID|30499|M|28.02,47.15|N|To General Nazgrim.|
 A Sufficient Motivation|QID|30466|M|28.02,47.15|N|From General Nazgrim.|
 A Gauging Our Progress|QID|30484|M|28.02,47.15|N|From General Nazgrim.|
 C Sufficient Motivation|QID|30466|U|79884|S|NC|QO|Bucket of Slicky Water: 1/1|M|28.14,47.33|N|Pick up a bucket of slicky water and toss it on lazy hozen as you go.|
+C Sufficient Motivation|QID|30466|S|U|79884|US|NC|QO|Hozen Motivated: 10/10|M|27.14,46.70|
 C Gauging Our Progress|QID|30484|M|28.41,47.75;29.15,50.87;28.41,51.92;27.03,55.00|N|The green dots show where the people you need to talk to are.|;used the dots because they show arrows when out of range, unlike bliz chat bubbles on mini map
-C Sufficient Motivation|QID|30466|U|79884|US|NC|QO|Hozen Motivated: 10/10|M|27.14,46.70|
+C Sufficient Motivation|QID|30466|US|U|79884|US|NC|QO|Hozen Motivated: 10/10|M|27.14,46.70|
 T Sufficient Motivation|QID|30466|M|28.07,47.15|N|To General Nazgrim.|
 T Gauging Our Progress|QID|30484|M|28.07,47.15|N|To General Nazgrim.|
 A Last Piece of the Puzzle|QID|30485|M|28.21,46.68|N|From Lorewalker Cho. Talk to Mishi for a ride.|
 
-C Last Piece of the Puzzle|QID|30485|U|80071|M|44.51,66.97|
+C Last Piece of the Puzzle|QID|30485|U|80071|M|28.2,46.7;44.50,66.96|N|Talk to Mishi for a ride and then use the Cho Family Heirloom at the shrine.|
 f Serpent's Overlook|QID|31303|M|43.13,68.48|N|At Sky Dancer Ji. optional, but you will not be able to get back up here until lvl 90 if you don't (admittedly, you don't need to get up here again.)|
 T Last Piece of the Puzzle|QID|30485|M|44.74,67.09|N|To Lorewalker Cho.|
 A The Seal is Broken|QID|31303|M|44.74,67.09|N|From Lorewalker Cho.|
-C The Seal is Broken|QID|31303|M|47.73,58.29|N|Talk to Mishi to start the "bombing run".|
+C The Seal is Broken|QID|31303|M|44.8,67.0|N|Talk to Mishi to start the "bombing run".|
 T The Seal is Broken|QID|31303|M|49.27,61.39|N|To Lorewalker Cho.|
 A Residual Fallout|QID|30500|M|49.27,61.39|N|From Lorewalker Cho.|
 A Jaded Heart|QID|30502|M|49.27,61.39|N|From Lorewalker Cho.|
@@ -517,9 +518,9 @@ A Emergency Response|QID|30504|M|49.27,61.39|N|From Lorewalker Cho.|
 C Residual Fallout|QID|30500|S|M|47.38,58.63|
 C Jaded Heart|QID|30502|S|M|50.02,60.17|U|80074|N|Pick up the jade chunks, use them to make the Elite Sha Remnants into non-elite.|
 C General Nazgrim|QID|30504|U|86467|QO|General Nazgrim Rescued: 1/1|M|48.16,61.72|N|Use the signal flare to call Mishi to take him away.|
-C Rivett Clutchpop|QID|30504|U|86467|QO|Rivett Clutchpop Rescued: 1/1|M|48.63,59.11|N|Use the signal flare to call Mishi to take him away.|
 C Shademaster Kiryn|QID|30504|U|86467|QO|Shademaster Kiryn Rescued: 1/1|M|47.3,62.55|N|Use the signal flare to call Mishi to take her away.|
 C Shokia|QID|30504|U|86467|QO|Shokia Rescued: 1/1|M|46.89, 60.74|N|Use the signal flare to call Mishi to take her away.|
+C Rivett Clutchpop|QID|30504|U|86467|QO|Rivett Clutchpop Rescued: 1/1|M|48.0,59.1|N|Use the signal flare to call Mishi to take him away.|
 C Residual Fallout|QID|30500|US|M|47.38,58.63|
 C Jaded Heart|QID|30502|US|M|50.02,60.17|U|80074|N|Pick up the 'sparkly' jade chunks, use them to make the Elite Sha Remnants into non-elite.|
 T Residual Fallout|QID|30500|M|49.32,61.47|N|To Lorewalker Cho.|
