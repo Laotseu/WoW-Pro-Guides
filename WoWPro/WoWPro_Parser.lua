@@ -516,6 +516,7 @@ function WoWPro:RowUpdate(offset)
 	ClearOverrideBindings(WoWPro.MainFrame)
 	WoWPro.RowDropdownMenu = {}
 	
+	local last_visible_i = 15 -- Last row visible
 	for i=1,15 do
 		
 		-- Skipping any skipped steps, unsticky steps, and optional steps unless it's time for them to display --
@@ -583,6 +584,11 @@ function WoWPro:RowUpdate(offset)
 			WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount+1
 		end
 		
+		-- Is this the last visible row?
+		if not sticky and last_visible_i > i then
+			last_visible_i = i
+		end
+
 		-- Getting the image and text for the step --
 		row.step:SetText(step)
 		if step then row.check:Show() else row.check:Hide() end
@@ -685,7 +691,9 @@ function WoWPro:RowUpdate(offset)
 			end
 		end
 		
-		if use and GetItemInfo(use) then
+		-- if use and GetItemInfo(use) then
+		if use then
+			row.itembutton.item_id = use -- To display the item Tooltip
 			row.itembutton:Show() 
 			row.itemicon:SetTexture(GetItemIcon(use))
 			row.itembutton:SetAttribute("type1", "item")
@@ -703,7 +711,7 @@ function WoWPro:RowUpdate(offset)
 				row.cooldown:Show()
 				row.cooldown:SetCooldown(start, duration)
 			else row.cooldown:Hide() end
-			if not itemkb and row.itembutton:IsVisible() then
+			if i <= last_visible_i and row.itembutton:IsVisible() then
 				local key1, key2 = GetBindingKey("CLICK WoWPro_FauxItemButton:LeftButton")
 				if key1 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key1, "CLICK WoWPro_itembutton"..i..":LeftButton")
@@ -711,12 +719,27 @@ function WoWPro:RowUpdate(offset)
 				if key2 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_itembutton"..i..":LeftButton")
 				end
+				--itemkb = true
+			end
+
+			-- Set the item macro
+			if i <= last_visible_i then
+				local itemEquipLoc = select(9, GetItemInfo(use))
+				if not itemEquipLoc or itemEquipLoc == "" then
+					WoWPro:SetMacro("WPI", "#showtooltip\n/use item:"..use)
+				else
+					WoWPro:SetMacro("WPI", ("#showtooltip\n/equip item:%s\n/use item:%s"):format(use, use))
+				end
 				itemkb = true
 			end
-		else row.itembutton:Hide() end
+		else 
+			row.itembutton.item_id = nil
+			row.itembutton:Hide() 
+		end
 		
 		-- Target Button --
 		if target then
+			row.targetbutton.tooltip_text = target
 		    local mtext
 		    local target, emote = string.split(",",target)
 			row.targetbutton:Show()
@@ -724,9 +747,14 @@ function WoWPro:RowUpdate(offset)
 			    mtext = string.gsub(target,"\\n","\n")
 			elseif emote then
 			    mtext = "/target "..target.."\n/"..emote
-			else
-			    mtext = "/cleartarget\n/target "..target.."\n"
-			    mtext = mtext .. "/run if not GetRaidTargetIndex('target') == 8 and not UnitIsDead('target') then SetRaidTarget('target', 8) end"
+			else			
+				mtext = "/cleartarget"
+						.."\n/targetexact [nodead] "..target
+						.."\n/cleartarget [@target,dead]"
+						.."\n/script if not GetRaidTargetIndex('target') then SetRaidTarget('target', 8) end"
+
+			   -- mtext = "/cleartarget\n/target "..target.."\n"
+			   -- mtext = mtext .. "/run if not GetRaidTargetIndex('target') == 8 and not UnitIsDead('target') then SetRaidTarget('target', 8) end"
 			end
 			row.targetbutton:SetAttribute("macrotext", mtext)
 			-- Run Module specific RowUpdateTarget() to override macrotext
@@ -741,7 +769,7 @@ function WoWPro:RowUpdate(offset)
 			else
 				row.targetbutton:SetPoint("TOPRIGHT", row, "TOPLEFT", -10, -7)
 			end 
-			if not targetkb and row.targetbutton:IsVisible() then
+			if i <= last_visible_i and row.targetbutton:IsVisible() then
 				local key1, key2 = GetBindingKey("CLICK WoWPro_FauxTargetButton:LeftButton")
 				if key1 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key1, "CLICK WoWPro_targetbutton"..i..":LeftButton")
@@ -749,11 +777,22 @@ function WoWPro:RowUpdate(offset)
 				if key2 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_targetbutton"..i..":LeftButton")
 				end
+				--targetkb = true
+			end
+
+			-- Set the Taget macro
+			if i <= last_visible_i then
+				WoWPro:SetMacro("WPT", macroText)
 				targetkb = true
 			end
 		else
+			row.targetbutton.tooltip_text = nil
 			row.targetbutton:Hide() 
 		end
+
+		-- Remove macros if no button found
+		if not itemkb then WoWPro:SetMacro("WPI") end
+		if not targetkb then WoWPro:SetMacro("WPT") end
 		
 		-- Setting the zone for the coordinates of the step --
 		zone = zone or strsplit("-(",WoWPro.Guides[GID].zone)
