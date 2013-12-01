@@ -799,7 +799,7 @@ function WoWPro:RowUpdate(offset)
 
 			-- Set the Taget macro
 			if i <= last_visible_i then
-				WoWPro:SetMacro("WPT", macroText)
+				WoWPro:SetMacro("WPT", mtext)
 				targetkb = true
 			end
 		else
