@@ -114,7 +114,8 @@ function WoWPro.LoadGuideReal()
 	if ((not WoWProCharDB.Guide[GID].completion) or (not WoWProCharDB.Guide[GID].skipped)) then
 	    WoWProCharDB.Guide[GID].completion = WoWProCharDB.Guide[GID].completion or {}
 	    WoWProCharDB.Guide[GID].skipped = WoWProCharDB.Guide[GID].skipped or {}
-	    WoWPro:Print("Initializing Guide "..GID..".")
+	    local guide = WoWPro.Guides[GID]
+	    WoWPro:Print(("Initializing Guide: %s - %s (%s)."):format(guide.name or guide.zone or "", guide.guidetype, GID))
 	end
 	
     WoWPro:LoadGuideSteps()
