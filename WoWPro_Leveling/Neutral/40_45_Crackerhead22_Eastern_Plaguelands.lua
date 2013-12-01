@@ -356,7 +356,7 @@ A Add 'em to the Pile|QID|27539|M|27.70,21.02|N|From Crusader Kevin Frost.|
 C Add 'em to the Pile|QID|27539|M|38.38,30.46|Kill Cursed Mages and Scourge Soldiers to get their skulls.|S|
 C Defenders of Darrowshire|QID|27529|M|36.27,17.53|N|Kill Cannibal Ghouls then to talk to the spirits.|S|
 C Scourged Mass|QID|27528|U|61369|M|32.22,21.30|N|Kill Overstuffed Golems and then burn their corpses.|S|
-C Guardians of Stratholme|QID|27525|M|24.94,20.41;29.37,20.00|N|Kill Omasum Blighthoof and Karthis Darkrune.|
+C Guardians of Stratholme|QID|27525|M|24.94,20.41;29.37,20.00|CN|N|Kill Omasum Blighthoof and Karthis Darkrune.|
 A The Baroness' Missive|QID|27551|U|61378|N|Omasum Blighthoof or Karthis Darkrune should drop this. If not kill them again until they do.|
 T The Baroness' Missive|QID|27551|M|27.48,21.27|N|To Tarenar Sunstrike.|
 A Gidwin's Fate Revealed|QID|27526|M|27.48,21.27|N|From Tarenar Sunstrike.|
