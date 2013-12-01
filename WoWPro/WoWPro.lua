@@ -357,6 +357,11 @@ function WoWPro:OnEnable()
 	    return
 	end
 
+	-- Remove the empty radio buttons from all menus
+	-- Remove the empty radio button for all
+	for i,v in ipairs(WoWPro.DropdownMenu) do
+		v.notCheckable 	= true
+	end
 end	
 
 -- Called when the addon is disabled --

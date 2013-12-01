@@ -678,6 +678,11 @@ function WoWPro:RowUpdate(offset)
 				)
 			end
 		end
+
+		-- Remove the empty radio button for all
+		for i,v in ipairs(dropdown) do
+			v.notCheckable 	= true
+		end
 		WoWPro.RowDropdownMenu[i] = dropdown
 		
 		-- Item Button --
