@@ -497,6 +497,11 @@ function WoWPro:CheckFunction(row, button, down)
 	WoWPro:UpdateGuide()
 end
 
+-- Functions used by dropdown menus
+local function _MapBlizCoordinate(self, row_num)
+	--err("row_num=%s",row_num)
+	WoWPro:MapPoint(row_num)
+end
 
 -- Row Content Update --
 function WoWPro:RowUpdate(offset)
@@ -649,6 +654,13 @@ function WoWPro:RowUpdate(offset)
 						WoWPro:MapPoint(row.num)
 					end} 
 				)
+			end
+			if x and y then
+				local tbl = {}
+				tbl.text 			= "Map Blizzard Coordinates"
+				tbl.arg1				= row.num
+				tbl.func 			= _MapBlizCoordinate
+				tinsert(dropdown, tbl)
 			end
 			if tonumber(QID) and WoWPro.QuestLog[tonumber(QID)] and WoWPro.QuestLog[tonumber(QID)].index and WoWPro.GetNumPartyMembers() > 0 then
 				table.insert(dropdown, 
