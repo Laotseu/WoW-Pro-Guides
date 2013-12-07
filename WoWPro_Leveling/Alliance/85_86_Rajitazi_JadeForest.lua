@@ -268,10 +268,10 @@ f Pearlfin Village|QID|29562|M|57.95,82.47|N|At Ut-Nam.|
 T Jailbreak|QID|29562|M|58.97,81.69|N|To Bold Karasshi.|
 A The Pearlfin Situation|QID|29883|M|58.93,81.93|N|From Rell Nightwind.|
 A Road Rations|QID|29885|M|58.93,81.93|N|From Rell Nightwind.|
-C Speak to Pearlkeeper Fujin |QID|29883|NC|QO|Speak to Pearlkeeper Fujin: 1/1|M|58.75,81.28|; Pearlfin Village
-C Speak to Elder Lusshan |QID|29883|NC|QO|Speak to Elder Lusshan: 1/1|M|58.04,80.56|; Pearlfin Village
-C Speak to Instructor Sharpfin |QID|29883|NC|QO|Speak to Instructor Sharpfin: 1/1|M|58.79,84.58|; Pearlfin Village
-C Speak to Watersmith Ot-Temmdo |QID|29883|NC|QO|Speak to Watersmith Ot-Temmdo: 1/1|M|59.92,83.92|; Pearlfin Village
+C Speak to Pearlkeeper Fujin |QID|29883|CHAT|QO|Speak to Pearlkeeper Fujin: 1/1|M|58.75,81.28|; Pearlfin Village
+C Speak to Elder Lusshan |QID|29883|CHAT|QO|Speak to Elder Lusshan: 1/1|M|58.04,80.56|; Pearlfin Village
+C Speak to Instructor Sharpfin |QID|29883|CHAT|QO|Speak to Instructor Sharpfin: 1/1|M|58.79,84.58|; Pearlfin Village
+C Speak to Watersmith Ot-Temmdo |QID|29883|CHAT|QO|Speak to Watersmith Ot-Temmdo: 1/1|M|59.92,83.92|; Pearlfin Village
 C Road Rations |QID|29885|M|60.6,85.0|N|Kill the Pearly Tortoises on the outer bank of the lake around the Pearlfin Village|; Pearlfin Village
 
 T The Pearlfin Situation|QID|29883|M|58.93,81.93|N|To Rell Nightwind.|
@@ -287,7 +287,7 @@ C The Elder's Instruments|QID|29887|US|M|67.25,88.40|N|Kill the monkeys until yo
 T Family Heirlooms|QID|29762|M|58.97,81.69|N|To Bold Karasshi.|
 T The Elder's Instruments|QID|29887|M|58.75,81.28|N|To Pearlkeeper Fujin.|
 A Spirits of the Water|QID|29894|M|58.75,81.28|N|From Pearlkeeper Fujin.|
-C Spirits of the Water|QID|29894|NC|M|58.58,82.89|N|Speak to Elder Lusshan and witness the waterspeaking ceremony.|
+C Spirits of the Water|QID|29894|CHAT|M|58.58,82.89|N|Speak to Elder Lusshan and witness the waterspeaking ceremony.|
 T Spirits of the Water|QID|29894|M|58.97,81.69|N|To Bold Karasshi.|
 A SI:7 Report: Lost in the Woods|QID|29733|M|58.98,81.82|N|From Rell Nightwind. "See" his report as soon as you accept.|
 C SI:7 Report: Lost in the Woods|QID|29733|M|49.88,70.92|N|Use all three of Rell Nightwind's attacks to kill the elite Hozen and then General Rik-Rik. If you keep all abilities on cooldown, it is easy.  Hint, if you are about to die, exit the vehicle and it will take you back to the start without dying.|
@@ -327,7 +327,7 @@ C Let Them Burn|QID|29905|US|M|55.01,81.74|
 T Let Them Burn|QID|29905|M|58.89,81.46|N|To Elder Lusshan.|
 T Carp Diem|QID|29906|M|58.89,81.46|N|To Elder Lusshan.|
 
-R Dreamer's Pavilion|QID|29888|M|59.50,85.78;56.36,87.37;54.77,87.59;54.40,90.38;53.75,91.56|CS|N|Let's go to Dreamer's Pavilion through Amberfly Bog|
+R Dreamer's Pavilion|QID|29888|M|59.50,85.78;56.36,87.37;54.77,87.59;54.40,90.38;53.75,91.56|CC|N|Let's go to Dreamer's Pavilion through Amberfly Bog|
 T Seek Out the Lorewalker|QID|29888|M|53.75,91.56|N|To Mouthwatering Brew.|
 A Borrowed Brew|QID|29889|M|53.75,91.56|N|From Mouthwatering Brew.|
 C Borrowed Brew|QID|29889|NC|M|53.73,91.44|N|Drink the brew.|
@@ -342,7 +342,7 @@ A Body|QID|29892|M|54.02,91.21|N|From Lorewalker Cho.|
 A Hue|QID|29893|M|54.02,91.21|N|From Lorewalker Cho.|
 
 C Body |QID|29892|S|M|56.5,88.4|; Amberfly Bog
-C Hue |QID|29893|U|76128|M|56.4,91.0|N|Use the Delicate Shearing Knife on the Glittering Amberflies once you've kill them to get their wings|; Amberfly Bog
+C Hue |QID|29893|S|U|76128|M|56.4,91.0|N|Use the Delicate Shearing Knife on the Glittering Amberflies once you've kill them to get their wings|; Amberfly Bog
 C Potency |QID|29891|57.7,89.5|N|After you killed 8 Mist Creepers, the Mist Horror will appear and drop the Heart.|; Amberfly Bog
 C Hue |QID|29893|US|U|76128|M|56.4,91.0|N|Use the Delicate Shearing Knife on the Glittering Amberflies once you've kill them to get their wings|; Amberfly Bog
 C Body |QID|29892|US|M|56.5,88.4|; Amberfly Bog
@@ -353,7 +353,7 @@ T Hue|QID|29893|M|53.78,90.63|N|To Lorewalker Cho.|
 A Finding Your Center|QID|29890|M|53.75,90.67|N|From Lorewalker Cho.|
 C Finding Your Center|QID|29890|M|54.57,91.88|N|Keep the bar from 25 to 75.  If it hits either extreme, you fail.|
 
-R Den of Sorrow|QID|29890|M|59.23,87.96;60.19,83.42;61.88,81.98;62.21,82.64;65.18,79.27;65.90,79.29|CS|N|Run back to Pealfin Village and then take the path in your vision.|
+R Den of Sorrow|QID|29890|M|59.23,87.96;60.19,83.42;61.4,82.0;62.1,78.5;65.18,79.27;65.90,79.29|CC|N|Run back to Pealfin Village and then take the path in your vision.|
 T Finding Your Center|QID|29890|M|65.90,79.29|N|To Anduin Wrynn.|
 A Sacred Waters|QID|29898|M|65.90,79.29|N|From Anduin Wrynn.|
 A Rest in Peace|QID|29899|M|65.98,79.30|N|From Ren Whitepaw.|
@@ -373,19 +373,19 @@ T Sacred Waters|QID|29898|M|65.98,79.38|N|To Lina Whitepaw.|
 T Rest in Peace|QID|29899|M|65.98,79.30|N|To Ren Whitepaw.|
 T An Ancient Legend|QID|29900|M|65.94,79.22|N|To Ren Whitepaw.|
 A Anduin's Decision|QID|29901|M|65.94,79.22|N|From Ren Whitepaw.|
-C Anduin's Decision|QID|29901|NC|M|65.91,79.24|N|Talk to Anduin and learn of his decision in case you didn't guess it already.|
+C Anduin's Decision|QID|29901|CHAT|M|65.91,79.24|N|Talk to Anduin and learn of his decision in case you didn't guess it already.|
 T Anduin's Decision|QID|29901|M|58.87,81.68|N|To Admiral Taylor, back in *Perlfin Villiage*.|
-A In Search of Wisdom|QID|29922|M|58.1,80.6|N|From Elder Lusshan.|
+A In Search of Wisdom|QID|29922|M|58.1,81.5|N|From Elder Lusshan.|
 
-C In Search of Wisdom|QID|29922|NC|M|57.95,82.52|N|Speak to Kitemaster Ut-Nam and have him send you to Dawn's Blossom|
+C In Search of Wisdom|QID|29922|CHAT|M|57.95,82.52|N|Speak to Kitemaster Ut-Nam and have him send you to Dawn's Blossom|
 
 f Dawn's Blossom|QID|29922|M|47.05,46.24|N|At Keg Runner Lee.|
 T In Search of Wisdom|QID|29922|M|46.81,46.14|N|To Lorewalker Cho.|
 R The Emperor's Burden - Part 1|QID|968550001|M|47.08, 45.14|ACH|6855;1|N|Exploration>The Seven Burdens of Shaohao.|
 A Welcome to Dawn's Blossom|QID|31230|M|47.16,46.17|N|From Toya.|
-C Welcome to Dawn's Blossom|QID|31230|M|47.04,46.02|N|Wanderbrew wanders about near here.|QO|Speak with Kai Wanderbrew: 1/1|
-C Welcome to Dawn's Blossom|QID|31230|M|45.77,43.67|QO|Speak with Peiji Goldendraft: 1/1|
-C Welcome to Dawn's Blossom|QID|31230|M|48.47,44.50|QO|Speak with Master Windfur: 1/1|
+C Speak with Kai Wanderbrew|QID|31230|CHAT|M|47.04,46.02|N|Wanderbrew wanders about near here.|QO|Speak with Kai Wanderbrew: 1/1|
+C Speak with Peiji Goldendraft|QID|31230|CHAT|M|45.77,43.67|QO|Speak with Peiji Goldendraft: 1/1|
+C Speak with Master Windfur|QID|31230|CHAT|M|48.47,44.50|QO|Speak with Master Windfur: 1/1|
 T Welcome to Dawn's Blossom|QID|31230|M|47.16,46.17|N|To Toya.|
 A The Double Hozen Dare|QID|29716|M|46.65,46.15|N|From An Windfur.|
 A The Silkwood Road|QID|29865|M|46.46,45.81|N|From Tzu the Ironbelly.|
@@ -495,6 +495,7 @@ A A Humble Offering|QID|29756|M|44.21,15.01|N|From Pei-Zhi.|
 C Back to Nature|QID|29753|S|U|74808|M|39.88,10.43|
 C A Humble Offering|QID|29756|M|39.71,10.98|
 C Back to Nature|QID|29753|US|U|74808|M|39.88,10.43|
+R Owen's Wishing Well|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|
 T Back to Nature|QID|29753|M|44.26,15.04|N|To Pei-Zhi.|
 T A Humble Offering|QID|29756|M|44.26,15.04|N|To Pei-Zhi.|
 A To Bridge Earth and Sky|QID|29754|M|44.26,15.04|N|From Pei-Zhi.|
@@ -514,7 +515,7 @@ C A Courteous Guest|QID|29619|M|45.81,27.50|N|From the ground or kill sprites.|
 
 T A Courteous Guest|QID|29619|M|45.01,24.99|N|To Lin Tenderpaw, back up the stairs.|
 A The Great Banquet|QID|29620|M|45.01,24.99|N|From Lin Tenderpaw.|
-f Banquet Grounds|QID|29620|M|43.52,24.55|N|At Studious Chu.|
+f Tian Monastery|QID|29620|M|43.52,24.55|N|At Studious Chu.|
 C The Great Banquet|QID|29620|NC|M|42.74,23.17|
 T The Great Banquet|QID|29620|M|42.74,23.17|N|To High Elder Cloudfall.|
 A Your Training Starts Now|QID|29622|M|43.13,23.63|N|From Xiao.|
@@ -542,9 +543,9 @@ A And a Heavy Fist|QID|29630|M|41.59,23.66|N|From Groundskeeper Wu.|
 A Burning Bright|QID|29631|M|38.02,23.80|N|From Guard Shan Long, outside the Waxwood gate.|
 
 C Burning Bright|QID|29631|S|M|36.09,27.57|
-C A Steady Hand|QID|29629|NC|S|N|Any movement (including panning the camera angle) will end the gathering.|
-R Owen's Wishing Well|QID|31397|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|
-C A Steady Hand|QID|29629|US|NC|L|73193 80|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
+;C A Steady Hand|QID|29629|NC|S|N|Any movement (including panning the camera angle) will end the gathering.|
+;R Owen's Wishing Well|QID|31397|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|
+C A Steady Hand|QID|29629|NC|L|73193 80|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
 
 C Burning Bright|QID|29631|US|M|36.09,27.57|
 
@@ -643,13 +644,13 @@ C Find the Playful Gold Serpent |QID|29999|NC|QO|Playful Gold Serpent found: 1/1
 C Pages of History|QID|30002|US|M|55.70,59.95|N|Click on the books and the bookworms will spawn. It's faster (and more fun) to stomp on them then to kill them.|
 C Moth-Ridden|QID|30001|US|M|56.39,60.43|
 T Moth-Ridden|QID|30001|M|56.27,60.44|N|To Lorewalker Stonestep.|
-A Everything In Its Place|QID|30004|M|56.27,60.44|N|From Lorewalker Stonestep.|
 T Pages of History|QID|30002|M|56.27,60.44|N|To Lorewalker Stonestep.|
+A Everything In Its Place|QID|30004|M|56.27,60.44|N|From Lorewalker Stonestep.|
 C Find the Playful Emerald Serpent |QID|29999|NC|QO|Playful Emerald Serpent found: 1/1|M|56.5,58.4|N|Head outside the library back to the central plaza and out the main gate.|
 C The Scryer's Dilemma|QID|29997|M|56.9,55.8|N|When you get in the Fountain of the Everseeing, kill Water Fiends until you get the staff.|
 T The Scryer's Dilemma|QID|29997|M|57.6,56.0|N|To Wise Mari.|
 A A New Vision|QID|30011|M|57.6,56.0|N|From Wise Mari.|
-C Find the Playful Azure Serpent|QID|29999|QO|Playful Azure Serpent found: 1/1|M|59.2,56.7|
+C Find the Playful Azure Serpent|QID|29999|NC|QO|Playful Azure Serpent found: 1/1|M|59.2,56.7|
 
 C Lighting Up the Sky|QID|30005|US|M|56.42,58.12|
 T A New Vision|QID|30011|M|58.13,58.67|N|To Elder Sage Rain-Zhu.|

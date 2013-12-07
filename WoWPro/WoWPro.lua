@@ -29,10 +29,28 @@ BINDING_HEADER_BINDING_WOWPRO = "WoWPro Keybindings"
 _G["BINDING_NAME_CLICK WoWPro_FauxTargetButton:LeftButton"] = "Target quest mob"
 
 WoWPro.Serial = 0
+
+-- For print
+local default_channel = nil
+local function setDefaultChanelForPrint()
+	default_channel = nil
+	for i=1, _G.NUM_CHAT_WINDOWS do
+		local name = _G.GetChatWindowInfo(i)
+		if name and name:lower() == 'output' then
+			default_channel = i
+		end
+	end
+end
+
 -- Add message to internal debug log
 function WoWPro:Add2Log(level,msg)
     if WoWPro.DebugLevel >= level then
-        DEFAULT_CHAT_FRAME:AddMessage( msg )
+		if default_channel then
+			_G["ChatFrame"..default_channel]:AddMessage(msg);
+		else
+			_G.SELECTED_CHAT_FRAME:AddMessage(msg)
+		end
+       -- DEFAULT_CHAT_FRAME:AddMessage( msg )
     end
 	WoWPro.Serial = WoWPro.Serial + 1
 	if WoWPro.Serial > 999 then
@@ -277,10 +295,17 @@ end
 
 -- Called when the addon is enabled, and on log-in and /reload, after all addons have loaded. --
 function WoWPro:OnEnable()
+	-- Find the default channel
+	setDefaultChanelForPrint()
+
 	WoWPro:dbp("|cff33ff33Enabled|r: Core Addon")
     if  WoWProDB.global.RecklessCombat then
         WoWPro:Warning("Achtung!  Beware! Peligro!  Reckless Combat mode enabled.  InCombat interlocks disabled!")
     end
+	
+	-- Diable Aboutis if present since it conflict with WoWPro quest automation
+	if _G.Aboutis then _G.Aboutis:Disable() end
+
 	-- Loading Frames --
 	if not WoWPro.FramesLoaded then --First time the addon has been enabled since UI Load
 		WoWPro:CreateFrames()
@@ -346,6 +371,11 @@ function WoWPro:OnEnable()
 	    return
 	end
 
+	-- Remove the empty radio buttons from all menus
+	-- Remove the empty radio button for all
+	for i,v in ipairs(WoWPro.DropdownMenu) do
+		v.notCheckable 	= true
+	end
 end	
 
 -- Called when the addon is disabled --
@@ -360,6 +390,10 @@ function WoWPro:OnDisable()
 	WoWPro.EventFrame:UnregisterAllEvents()	-- Unregisters all events
 	WoWPro:RemoveMapPoint()							-- Removes any active map points
 	WoWPro:Print("|cffff3333Disabled|r: Core Addon")
+
+	-- Re-enable Aboutis
+	if _G.Aboutis then _G.Aboutis:Enable() end
+
 end
 
 -- Tag Registration Function --
