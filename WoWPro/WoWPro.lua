@@ -293,6 +293,9 @@ function WoWPro:OnEnable()
 
 	WoWPro:dbp("|cff33ff33Enabled|r: Core Addon")
 
+	-- Diable Aboutis if present since it conflict with WoWPro quest automation
+	if _G.Aboutis then _G.Aboutis:Disable() end
+
 	-- Loading Frames --
 	if not WoWPro.FramesLoaded then --First time the addon has been enabled since UI Load
 		WoWPro:CreateFrames()
@@ -376,6 +379,10 @@ function WoWPro:OnDisable()
 	WoWPro.EventFrame:UnregisterAllEvents()	-- Unregisters all events
 	WoWPro:RemoveMapPoint()							-- Removes any active map points
 	WoWPro:Print("|cffff3333Disabled|r: Core Addon")
+
+	-- Re-enable Aboutis
+	if _G.Aboutis then _G.Aboutis:Enable() end
+
 end
 
 -- Tag Registration Function --
