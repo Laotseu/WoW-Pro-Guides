@@ -268,10 +268,10 @@ f Pearlfin Village|QID|29562|M|57.95,82.47|N|At Ut-Nam.|
 T Jailbreak|QID|29562|M|58.97,81.69|N|To Bold Karasshi.|
 A The Pearlfin Situation|QID|29883|M|58.93,81.93|N|From Rell Nightwind.|
 A Road Rations|QID|29885|M|58.93,81.93|N|From Rell Nightwind.|
-C Speak to Pearlkeeper Fujin |QID|29883|NC|QO|Speak to Pearlkeeper Fujin: 1/1|M|58.75,81.28|; Pearlfin Village
-C Speak to Elder Lusshan |QID|29883|NC|QO|Speak to Elder Lusshan: 1/1|M|58.04,80.56|; Pearlfin Village
-C Speak to Instructor Sharpfin |QID|29883|NC|QO|Speak to Instructor Sharpfin: 1/1|M|58.79,84.58|; Pearlfin Village
-C Speak to Watersmith Ot-Temmdo |QID|29883|NC|QO|Speak to Watersmith Ot-Temmdo: 1/1|M|59.92,83.92|; Pearlfin Village
+C Speak to Pearlkeeper Fujin |QID|29883|CHAT|QO|Speak to Pearlkeeper Fujin: 1/1|M|58.75,81.28|; Pearlfin Village
+C Speak to Elder Lusshan |QID|29883|CHAT|QO|Speak to Elder Lusshan: 1/1|M|58.04,80.56|; Pearlfin Village
+C Speak to Instructor Sharpfin |QID|29883|CHAT|QO|Speak to Instructor Sharpfin: 1/1|M|58.79,84.58|; Pearlfin Village
+C Speak to Watersmith Ot-Temmdo |QID|29883|CHAT|QO|Speak to Watersmith Ot-Temmdo: 1/1|M|59.92,83.92|; Pearlfin Village
 C Road Rations |QID|29885|M|60.6,85.0|N|Kill the Pearly Tortoises on the outer bank of the lake around the Pearlfin Village|; Pearlfin Village
 
 T The Pearlfin Situation|QID|29883|M|58.93,81.93|N|To Rell Nightwind.|
@@ -287,7 +287,7 @@ C The Elder's Instruments|QID|29887|US|M|67.25,88.40|N|Kill the monkeys until yo
 T Family Heirlooms|QID|29762|M|58.97,81.69|N|To Bold Karasshi.|
 T The Elder's Instruments|QID|29887|M|58.75,81.28|N|To Pearlkeeper Fujin.|
 A Spirits of the Water|QID|29894|M|58.75,81.28|N|From Pearlkeeper Fujin.|
-C Spirits of the Water|QID|29894|NC|M|58.58,82.89|N|Speak to Elder Lusshan and witness the waterspeaking ceremony.|
+C Spirits of the Water|QID|29894|CHAT|M|58.58,82.89|N|Speak to Elder Lusshan and witness the waterspeaking ceremony.|
 T Spirits of the Water|QID|29894|M|58.97,81.69|N|To Bold Karasshi.|
 A SI:7 Report: Lost in the Woods|QID|29733|M|58.98,81.82|N|From Rell Nightwind. "See" his report as soon as you accept.|
 C SI:7 Report: Lost in the Woods|QID|29733|M|49.88,70.92|N|Use all three of Rell Nightwind's attacks to kill the elite Hozen and then General Rik-Rik. If you keep all abilities on cooldown, it is easy.  Hint, if you are about to die, exit the vehicle and it will take you back to the start without dying.|
@@ -327,7 +327,7 @@ C Let Them Burn|QID|29905|US|M|55.01,81.74|
 T Let Them Burn|QID|29905|M|58.89,81.46|N|To Elder Lusshan.|
 T Carp Diem|QID|29906|M|58.89,81.46|N|To Elder Lusshan.|
 
-R Dreamer's Pavilion|QID|29888|M|59.50,85.78;56.36,87.37;54.77,87.59;54.40,90.38;53.75,91.56|CS|N|Let's go to Dreamer's Pavilion through Amberfly Bog|
+R Dreamer's Pavilion|QID|29888|M|59.50,85.78;56.36,87.37;54.77,87.59;54.40,90.38;53.75,91.56|CC|N|Let's go to Dreamer's Pavilion through Amberfly Bog|
 T Seek Out the Lorewalker|QID|29888|M|53.75,91.56|N|To Mouthwatering Brew.|
 A Borrowed Brew|QID|29889|M|53.75,91.56|N|From Mouthwatering Brew.|
 C Borrowed Brew|QID|29889|NC|M|53.73,91.44|N|Drink the brew.|
@@ -342,7 +342,7 @@ A Body|QID|29892|M|54.02,91.21|N|From Lorewalker Cho.|
 A Hue|QID|29893|M|54.02,91.21|N|From Lorewalker Cho.|
 
 C Body |QID|29892|S|M|56.5,88.4|; Amberfly Bog
-C Hue |QID|29893|U|76128|M|56.4,91.0|N|Use the Delicate Shearing Knife on the Glittering Amberflies once you've kill them to get their wings|; Amberfly Bog
+C Hue |QID|29893|S|U|76128|M|56.4,91.0|N|Use the Delicate Shearing Knife on the Glittering Amberflies once you've kill them to get their wings|; Amberfly Bog
 C Potency |QID|29891|57.7,89.5|N|After you killed 8 Mist Creepers, the Mist Horror will appear and drop the Heart.|; Amberfly Bog
 C Hue |QID|29893|US|U|76128|M|56.4,91.0|N|Use the Delicate Shearing Knife on the Glittering Amberflies once you've kill them to get their wings|; Amberfly Bog
 C Body |QID|29892|US|M|56.5,88.4|; Amberfly Bog
@@ -353,7 +353,7 @@ T Hue|QID|29893|M|53.78,90.63|N|To Lorewalker Cho.|
 A Finding Your Center|QID|29890|M|53.75,90.67|N|From Lorewalker Cho.|
 C Finding Your Center|QID|29890|M|54.57,91.88|N|Keep the bar from 25 to 75.  If it hits either extreme, you fail.|
 
-R Den of Sorrow|QID|29890|M|59.23,87.96;60.19,83.42;61.4,82.0;62.1,78.5;65.18,79.27;65.90,79.29|CS|N|Run back to Pealfin Village and then take the path in your vision.|
+R Den of Sorrow|QID|29890|M|59.23,87.96;60.19,83.42;61.4,82.0;62.1,78.5;65.18,79.27;65.90,79.29|CC|N|Run back to Pealfin Village and then take the path in your vision.|
 T Finding Your Center|QID|29890|M|65.90,79.29|N|To Anduin Wrynn.|
 A Sacred Waters|QID|29898|M|65.90,79.29|N|From Anduin Wrynn.|
 A Rest in Peace|QID|29899|M|65.98,79.30|N|From Ren Whitepaw.|
@@ -373,19 +373,19 @@ T Sacred Waters|QID|29898|M|65.98,79.38|N|To Lina Whitepaw.|
 T Rest in Peace|QID|29899|M|65.98,79.30|N|To Ren Whitepaw.|
 T An Ancient Legend|QID|29900|M|65.94,79.22|N|To Ren Whitepaw.|
 A Anduin's Decision|QID|29901|M|65.94,79.22|N|From Ren Whitepaw.|
-C Anduin's Decision|QID|29901|NC|M|65.91,79.24|N|Talk to Anduin and learn of his decision in case you didn't guess it already.|
+C Anduin's Decision|QID|29901|CHAT|M|65.91,79.24|N|Talk to Anduin and learn of his decision in case you didn't guess it already.|
 T Anduin's Decision|QID|29901|M|58.87,81.68|N|To Admiral Taylor, back in *Perlfin Villiage*.|
-A In Search of Wisdom|QID|29922|M|58.1,80.6|N|From Elder Lusshan.|
+A In Search of Wisdom|QID|29922|M|58.1,81.5|N|From Elder Lusshan.|
 
-C In Search of Wisdom|QID|29922|NC|M|57.95,82.52|N|Speak to Kitemaster Ut-Nam and have him send you to Dawn's Blossom|
+C In Search of Wisdom|QID|29922|CHAT|M|57.95,82.52|N|Speak to Kitemaster Ut-Nam and have him send you to Dawn's Blossom|
 
 f Dawn's Blossom|QID|29922|M|47.05,46.24|N|At Keg Runner Lee.|
 T In Search of Wisdom|QID|29922|M|46.81,46.14|N|To Lorewalker Cho.|
 R The Emperor's Burden - Part 1|QID|968550001|M|47.08, 45.14|ACH|6855;1|N|Exploration>The Seven Burdens of Shaohao.|
 A Welcome to Dawn's Blossom|QID|31230|M|47.16,46.17|N|From Toya.|
-C Welcome to Dawn's Blossom|QID|31230|NC|M|47.04,46.02|N|Wanderbrew wanders about near here.|QO|Speak with Kai Wanderbrew: 1/1|
-C Welcome to Dawn's Blossom|QID|31230|NC|M|45.77,43.67|QO|Speak with Peiji Goldendraft: 1/1|
-C Welcome to Dawn's Blossom|QID|31230|NC|M|48.47,44.50|QO|Speak with Master Windfur: 1/1|
+C Speak with Kai Wanderbrew|QID|31230|CHAT|M|47.04,46.02|N|Wanderbrew wanders about near here.|QO|Speak with Kai Wanderbrew: 1/1|
+C Speak with Peiji Goldendraft|QID|31230|CHAT|M|45.77,43.67|QO|Speak with Peiji Goldendraft: 1/1|
+C Speak with Master Windfur|QID|31230|CHAT|M|48.47,44.50|QO|Speak with Master Windfur: 1/1|
 T Welcome to Dawn's Blossom|QID|31230|M|47.16,46.17|N|To Toya.|
 A The Double Hozen Dare|QID|29716|M|46.65,46.15|N|From An Windfur.|
 A The Silkwood Road|QID|29865|M|46.46,45.81|N|From Tzu the Ironbelly.|
