@@ -595,7 +595,7 @@ A Orchard-Supplied Hardware|QID|29580|M|43.28,75.77|N|From Gentle Mother Hanae.|
 C Defiance|QID|29578|S|M|44.19,74.52|
 C Orchard-Supplied Hardware|QID|29580|S|NC|M|43.58,71.16|
 C Spitfire|QID|29585|S|NC|U|72578|M|44.48,72.49|
-C Rally the Survivors|QID|29579|NC|M|44.51,72.75|
+C Rally the Survivors|QID|29579|CHAT|M|44.51,72.75|
 C Spitfire|QID|29585|US|NC|U|72578|M|44.48,72.49|
 C Orchard-Supplied Hardware|QID|29580|US|NC|M|43.58,71.16|
 C Defiance|QID|29578|US|M|44.19,74.52|
@@ -618,10 +618,10 @@ T Maul Gormal|QID|29670|M|41.02,73.97|N|To Shao the Defiant.|
 R Serpent's Heart|QID|29931|M|41.6,69.1;42.1,60.4;48.26,61.31|CS|N|It is significantly faster to run northeast cross country towards the arrow, than to follow the roads, if you want to follow the roads, look for signposts to Serpent's Heart. Also, the lost BoA treasure, 'Ancient Jinyu Staff' may be occasionally located in the river beside Serpent's Heart if you want to take the time swimming to look for it.|
 T The Serpent's Heart|QID|29931|M|48.31,61.35|N|To Foreman Raike.|
 A Love's Labor|QID|30495|M|48.31,61.35|N|From Foreman Raike.|
-C Delivery to Kitemaster Shoku |QID|30495|NC|QO|Delivery to Kitemaster Shoku: 1/1|M|48.18,60.02|
-C Delivery to Taskmaster Emi |QID|30495|NC|QO|Delivery to Taskmaster Emi: 1/1|M|47.6,60.7|N|Ask Shoku to get a lift to the top of the statue|
-C Delivery to Surveyor Sawa |QID|30495|NC|QO|Delivery to Surveyor Sawa: 1/1|M|47.45,60.51;46.94,60.35|CS|N|Talk to Kitemaster Inga to get a ride down|
-C Delivery to Historian Dinh |QID|30495|NC|QO|Delivery to Historian Dinh: 1/1|M|46.36,61.80|
+C Delivery to Kitemaster Shoku |QID|30495|CHAT|QO|Delivery to Kitemaster Shoku: 1/1|M|48.18,60.02|
+C Delivery to Taskmaster Emi |QID|30495|CHAT|QO|Delivery to Taskmaster Emi: 1/1|M|47.6,60.7|N|Ask Shoku to get a lift to the top of the statue|
+C Delivery to Surveyor Sawa |QID|30495|CHAT|QO|Delivery to Surveyor Sawa: 1/1|M|47.45,60.51;46.94,60.35|CS|N|Talk to Kitemaster Inga to get a ride down|
+C Delivery to Historian Dinh |QID|30495|CHAT|QO|Delivery to Historian Dinh: 1/1|M|46.36,61.80|
 T Love's Labor|QID|30495|M|48.31,61.35|N|From Foreman Raike.|
 A The Temple of the Jade Serpent|QID|29932|M|48.31,61.35|N|From Foreman Raike.|
 
