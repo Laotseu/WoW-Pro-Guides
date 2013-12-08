@@ -396,7 +396,7 @@ C The Silkwood Road|QID|29865|NC|S|M|43.26,49.23|N|Loot the eggs to get Pristine
 
 A Down Kitty!|QID|29717|M|39.82,48.05|N|Little An followed you to Forest Heart and has a new quest for you, once you get there.|
 C Down Kitty!|QID|29717|S|M|37.11,47.72|
-C The Double Hozen Dare|QID|29716|M|37.31,48.19|
+C The Double Hozen Dare|QID|29716|NC|M|37.31,48.19|
 T The Double Hozen Dare|QID|29716|NC|N|To An Windfur. (she should be following you)|
 A The Jade Witch|QID|29723|N|From An Windfur.|
 C The Jade Witch|QID|29723|M|39.23,46.17|N|Before you talk to the widow, look around for a 'Jade Warrior Statue' in her front yard, if it is there talk to it for a BoA treasure. Talk to Widow Greenpaw, she'll bring you to Shin and then become attackable, kill her.|
@@ -421,9 +421,9 @@ T Find the Boy|QID|29993|M|54.92,44.83|N|To Inkmaster Wei.|
 A Shrine of the Dawn|QID|29995|M|54.92,45.11;54.67,44.11|CN|N|From Inkmaster Wei, who walks around between these two chairs.|
 A Quill of Stingers|QID|29882|M|55.40,45.29|N|From Inkmaster Jo Po, who wanders a bit.|
 f The Arboretum|QID|29882|M|56.96,44.22|N|At Injar'i Lakebloom.|
-C The Perfect Color|QID|29881|S|M|53.48,44.38|
+C The Perfect Color|QID|29881|NC|S|M|53.48,44.38|
 C Quill of Stingers|QID|29882|M|53.65,43.99|
-C The Perfect Color|QID|29881|US|M|53.48,44.38|
+C The Perfect Color|QID|29881|NC|US|M|53.48,44.38|
 T The Perfect Color|QID|29881|M|54.91,45.35|N|To Inkmaster Glenzu.|
 T Quill of Stingers|QID|29882|M|55.28,45.20|N|To Inkmaster Jo Po.|
 
