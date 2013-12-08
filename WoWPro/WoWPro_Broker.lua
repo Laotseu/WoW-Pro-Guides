@@ -5,6 +5,7 @@
 local L = WoWPro_Locale
 local OldQIDs, CurrentQIDs, NewQIDs, MissingQIDs
 
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
 
 -- See if any of the list of QUIDs are in the indicated table.
 function WoWPro:QIDsInTable(QIDs,tabla)
@@ -170,6 +171,26 @@ end
 -- Guide Update --
 local menuFrame = CreateFrame("Frame", "WoWProDropMenu", UIParent, "UIDropDownMenuTemplate")
 WoWPro.GuideOffset = nil
+
+-- Calling on the guide's module to populate the guide window's rows --
+local function rowContentUpdate(offset)
+	local reload = WoWPro:RowUpdate(offset)
+	for i, row in pairs(WoWPro.rows) do
+		if WoWPro.RowDropdownMenu[i] then
+			row:SetScript("OnClick", function(self, button, down)			    
+				if button == "LeftButton" then
+					WoWPro:RowLeftClick(i)
+				elseif button == "RightButton" then
+					WoWPro.rows[i]:SetChecked(nil)
+					if WoWPro.Recorder then WoWPro:RowLeftClick(i) end
+					EasyMenu(WoWPro.RowDropdownMenu[i], menuFrame, "cursor", 0 , 0, "MENU")
+				end
+			end)
+		end
+	end
+	return reload
+end
+
 function WoWPro.UpdateGuideReal(From)
 	if not WoWPro.GuideFrame:IsVisible() or not WoWPro.GuideLoaded then return end
 	WoWPro:dbp("Running: UpdateGuideReal()")
@@ -182,6 +203,11 @@ function WoWPro.UpdateGuideReal(From)
 	    WoWPro:dbp("Suppresssed guide update.  In Combat.")
 	    WoWPro:SendMessage("WoWPro_UpdateGuide","InCombat")
 	    return
+	end
+	if InCinematic() then
+		WoWPro:dbp("Suppresssed guide update.  In Cinematic.")
+		WoWPro:SendMessage("WoWPro_UpdateGuide","InCinematic")
+		return
 	end
 	if  not GID or not WoWPro.Guides[GID] then
 	    WoWPro:dbp("Suppresssed guide update. Guide %s is invalid.",tostring(GID))
@@ -197,32 +223,16 @@ function WoWPro.UpdateGuideReal(From)
 	if not module or not module:IsEnabled() then return end
 	
 	-- Finding the active step in the guide --
+-- err("ActiveStep = %s, CurrentIndex = %s", WoWPro.ActiveStep, WoWPro.CurrentIndex)	
+	local oldCurrentIndex = WoWPro.CurrentIndex
 	WoWPro.ActiveStep = WoWPro:NextStep(1)
 	if WoWPro.Recorder then WoWPro.ActiveStep = WoWPro.Recorder.SelectedStep or WoWPro.ActiveStep end
 	if not offset then WoWPro.Scrollbar:SetValue(WoWPro.ActiveStep) end
 	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount))
 	
-	-- Calling on the guide's module to populate the guide window's rows --
-	local function rowContentUpdate()
-		local reload = WoWPro:RowUpdate(offset)
-		for i, row in pairs(WoWPro.rows) do
-			if WoWPro.RowDropdownMenu[i] then
-				row:SetScript("OnClick", function(self, button, down)			    
-					if button == "LeftButton" then
-						WoWPro:RowLeftClick(i)
-					elseif button == "RightButton" then
-						WoWPro.rows[i]:SetChecked(nil)
-						if WoWPro.Recorder then WoWPro:RowLeftClick(i) end
-						EasyMenu(WoWPro.RowDropdownMenu[i], menuFrame, "cursor", 0 , 0, "MENU")
-					end
-				end)
-			end
-		end
-		return reload
-	end
 	local reload = true
 	-- Reloading until all stickies that need to unsticky have done so --
-	while reload do reload = rowContentUpdate() end
+	while reload do reload = rowContentUpdate(offset) end
 	
 	-- Update content and formatting --
 	WoWPro:RowSet(); WoWPro:RowSet()
@@ -263,8 +273,12 @@ function WoWPro.UpdateGuideReal(From)
 		else
 			WoWPro.NextGuideDialog:Show()
 		end
+		oldCurrentIndex = nil
 	end
-	WoWPro:MapPoint()
+-- err("ActiveStep = %s, CurrentIndex = %s", WoWPro.ActiveStep, WoWPro.CurrentIndex)	
+	if oldCurrentIndex ~= WoWPro.CurrentIndex then
+		WoWPro:MapPoint()
+	end
 end	
 
 local Rep2IdAndClass
@@ -758,7 +772,7 @@ function WoWPro.CompleteStep(step)
 	end
 	
 	WoWPro:UpdateGuide()
-	WoWPro:MapPoint()
+	-- WoWPro:MapPoint()
 end
 
 WoWPro.QuestLog = {}
