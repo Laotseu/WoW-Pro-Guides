@@ -458,7 +458,7 @@ function WoWPro.SetupGuideReal()
     		    -- Quest Accepts and Completions --
     		    if not WoWProCharDB.Guide[GID].completion[i] and WoWPro.QuestLog[QID] then 
     			    if action == "A" then WoWProCharDB.Guide[GID].completion[i] = true end
-    			    if action == "C" and WoWPro.QuestLog[QID].complete then
+    			    if action == "C" and select(7,GetQuestLogTitle(WoWPro.QuestLog[QID])) == 1 then
     				    WoWProCharDB.Guide[GID].completion[i] = true
     				    WoWPro.why[i] = "Completed by WoWPro:LoadGuideSteps() because in QuestLog was complete."
     			    end
@@ -498,6 +498,11 @@ function WoWPro:CheckFunction(row, button, down)
 	WoWPro:UpdateGuide()
 end
 
+-- Functions used by dropdown menus
+local function _MapBlizCoordinate(self, row_num)
+	--err("row_num=%s",row_num)
+	WoWPro:MapPoint(row_num)
+end
 
 -- Row Content Update --
 function WoWPro:RowUpdate(offset)
@@ -517,6 +522,7 @@ function WoWPro:RowUpdate(offset)
 	ClearOverrideBindings(WoWPro.MainFrame)
 	WoWPro.RowDropdownMenu = {}
 	
+	local last_visible_i = 15 -- Last row visible
 	for i=1,15 do
 		
 		-- Skipping any skipped steps, unsticky steps, and optional steps unless it's time for them to display --
@@ -584,6 +590,11 @@ function WoWPro:RowUpdate(offset)
 			WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount+1
 		end
 		
+		-- Is this the last visible row?
+		if not sticky and last_visible_i > i then
+			last_visible_i = i
+		end
+
 		-- Getting the image and text for the step --
 		row.step:SetText(step)
 		if step then row.check:Show() else row.check:Hide() end
@@ -604,11 +615,11 @@ function WoWPro:RowUpdate(offset)
 		if WoWProDB.profile.showcoords and coord then
 		    note = note or ""
 		    if WoWPro.waypcomplete[k] == 1 then
-		        note = note.." ("..string.gsub(coord,";",">")..")"
+		        note = note.." ("..string.gsub(coord,";"," > ")..")"
 		    elseif WoWPro.waypcomplete[k] == 2 then
-		        note = note.." ("..string.gsub(coord,";","}")..")"
+		        note = note.." ("..string.gsub(coord,";"," >> ")..")"
 		    elseif WoWPro.waypcomplete[k] == false then
-		        note = note.." ("..string.gsub(coord,";"," ")..")"
+		        note = note.." ("..string.gsub(coord,";","; ")..")"
 		    else
 		        note = note.." ("..coord..")"
 		    end
@@ -645,10 +656,19 @@ function WoWPro:RowUpdate(offset)
 					end} 
 				)
 			end
-			if tonumber(QID) and WoWPro.QuestLog[tonumber(QID)] and WoWPro.QuestLog[tonumber(QID)].index and WoWPro.GetNumPartyMembers() > 0 then
+			if x and y then
+				local tbl = {}
+				tbl.text 			= "Map Blizzard Coordinates"
+				tbl.arg1				= row.num
+				tbl.func 			= _MapBlizCoordinate
+				tinsert(dropdown, tbl)
+			end
+			-- if tonumber(QID) and WoWPro.QuestLog[tonumber(QID)] and WoWPro.QuestLog[tonumber(QID)].index and WoWPro.GetNumPartyMembers() > 0 then
+			if tonumber(QID) and WoWPro.QuestLog[tonumber(QID)] and WoWPro.GetNumPartyMembers() > 0 then
 				table.insert(dropdown, 
 					{text = "Share Quest", func = function()
-						QuestLogPushQuest(WoWPro.QuestLog[QID].index)
+						-- QuestLogPushQuest(WoWPro.QuestLog[QID].index)
+						QuestLogPushQuest(WoWPro.QuestLog[QID])
 					end} 
 				)
 			end
@@ -673,12 +693,18 @@ function WoWPro:RowUpdate(offset)
 				)
 			end
 		end
+
+		-- Remove the empty radio button for all
+		for i,v in ipairs(dropdown) do
+			v.notCheckable 	= true
+		end
 		WoWPro.RowDropdownMenu[i] = dropdown
 		
 		-- Item Button --
 		if action == "H" then use = 6948 end
 		if ( not use ) and action == "C" and WoWPro.QuestLog[tonumber(QID)] then
-			local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[tonumber(QID)].index)
+			-- local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[tonumber(QID)].index)
+			local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[tonumber(QID)])
 			if link then
 				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
 				use = Id
@@ -686,7 +712,9 @@ function WoWPro:RowUpdate(offset)
 			end
 		end
 		
-		if use and GetItemInfo(use) then
+		-- if use and GetItemInfo(use) then
+		if use then
+			row.itembutton.item_id = use -- To display the item Tooltip
 			row.itembutton:Show() 
 			row.itemicon:SetTexture(GetItemIcon(use))
 			row.itembutton:SetAttribute("type1", "item")
@@ -704,7 +732,7 @@ function WoWPro:RowUpdate(offset)
 				row.cooldown:Show()
 				row.cooldown:SetCooldown(start, duration)
 			else row.cooldown:Hide() end
-			if not itemkb and row.itembutton:IsVisible() then
+			if i <= last_visible_i and row.itembutton:IsVisible() then
 				local key1, key2 = GetBindingKey("CLICK WoWPro_FauxItemButton:LeftButton")
 				if key1 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key1, "CLICK WoWPro_itembutton"..i..":LeftButton")
@@ -712,12 +740,27 @@ function WoWPro:RowUpdate(offset)
 				if key2 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_itembutton"..i..":LeftButton")
 				end
+				--itemkb = true
+			end
+
+			-- Set the item macro
+			if i <= last_visible_i then
+				local itemEquipLoc = select(9, GetItemInfo(use))
+				if not itemEquipLoc or itemEquipLoc == "" then
+					WoWPro:SetMacro("WPI", "#showtooltip\n/use item:"..use)
+				else
+					WoWPro:SetMacro("WPI", ("#showtooltip\n/equip item:%s\n/use item:%s"):format(use, use))
+				end
 				itemkb = true
 			end
-		else row.itembutton:Hide() end
+		else 
+			row.itembutton.item_id = nil
+			row.itembutton:Hide() 
+		end
 		
 		-- Target Button --
 		if target then
+			row.targetbutton.tooltip_text = target
 		    local mtext
 		    local target, emote = string.split(",",target)
 			row.targetbutton:Show()
@@ -725,9 +768,14 @@ function WoWPro:RowUpdate(offset)
 			    mtext = string.gsub(target,"\\n","\n")
 			elseif emote then
 			    mtext = "/target "..target.."\n/"..emote
-			else
-			    mtext = "/cleartarget\n/target "..target.."\n"
-			    mtext = mtext .. "/run if not GetRaidTargetIndex('target') == 8 and not UnitIsDead('target') then SetRaidTarget('target', 8) end"
+			else			
+				mtext = "/cleartarget"
+						.."\n/targetexact [nodead] "..target
+						.."\n/cleartarget [@target,dead]"
+						.."\n/script if not GetRaidTargetIndex('target') then SetRaidTarget('target', 8) end"
+
+			   -- mtext = "/cleartarget\n/target "..target.."\n"
+			   -- mtext = mtext .. "/run if not GetRaidTargetIndex('target') == 8 and not UnitIsDead('target') then SetRaidTarget('target', 8) end"
 			end
 			row.targetbutton:SetAttribute("macrotext", mtext)
 			-- Run Module specific RowUpdateTarget() to override macrotext
@@ -742,7 +790,7 @@ function WoWPro:RowUpdate(offset)
 			else
 				row.targetbutton:SetPoint("TOPRIGHT", row, "TOPLEFT", -10, -7)
 			end 
-			if not targetkb and row.targetbutton:IsVisible() then
+			if i <= last_visible_i and row.targetbutton:IsVisible() then
 				local key1, key2 = GetBindingKey("CLICK WoWPro_FauxTargetButton:LeftButton")
 				if key1 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key1, "CLICK WoWPro_targetbutton"..i..":LeftButton")
@@ -750,11 +798,22 @@ function WoWPro:RowUpdate(offset)
 				if key2 then
 					SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_targetbutton"..i..":LeftButton")
 				end
+				--targetkb = true
+			end
+
+			-- Set the Taget macro
+			if i <= last_visible_i then
+				WoWPro:SetMacro("WPT", mtext)
 				targetkb = true
 			end
 		else
+			row.targetbutton.tooltip_text = nil
 			row.targetbutton:Hide() 
 		end
+
+		-- Remove macros if no button found
+		if not itemkb then WoWPro:SetMacro("WPI") end
+		if not targetkb then WoWPro:SetMacro("WPT") end
 		
 		-- Setting the zone for the coordinates of the step --
 		zone = zone or strsplit("-(",WoWPro.Guides[GID].zone)
@@ -777,7 +836,8 @@ function WoWPro:RowLeftClick(i)
     local QID = tonumber(WoWPro.QID[WoWPro.rows[i].index])
 	if  QID and WoWPro.QuestLog[QID] then
 	    ShowUIPanel(QuestLogFrame)
-		QuestLog_OpenToQuest(WoWPro.QuestLog[QID].index)
+	    -- QuestLog_OpenToQuest(WoWPro.QuestLog[QID].index)
+		QuestLog_OpenToQuest(WoWPro.QuestLog[QID])
 	end
 	WoWPro.rows[i]:SetChecked(nil)
 end

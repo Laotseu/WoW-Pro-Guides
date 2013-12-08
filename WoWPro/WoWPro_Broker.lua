@@ -5,6 +5,7 @@
 local L = WoWPro_Locale
 local OldQIDs, CurrentQIDs, NewQIDs, MissingQIDs
 
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
 
 -- See if any of the list of QUIDs are in the indicated table.
 function WoWPro:QIDsInTable(QIDs,tabla)
@@ -135,7 +136,8 @@ function WoWPro.LoadGuideReal()
 	if ((not WoWProCharDB.Guide[GID].completion) or (not WoWProCharDB.Guide[GID].skipped)) then
 	    WoWProCharDB.Guide[GID].completion = WoWProCharDB.Guide[GID].completion or {}
 	    WoWProCharDB.Guide[GID].skipped = WoWProCharDB.Guide[GID].skipped or {}
-	    WoWPro:Print("Initializing Guide "..GID..".")
+	    local guide = WoWPro.Guides[GID]
+	    WoWPro:Print(("Initializing Guide: %s - %s (%s)."):format(guide.name or guide.zone or "", guide.guidetype, GID))
 	end
 	
     WoWPro:LoadGuideSteps()
@@ -169,6 +171,26 @@ end
 -- Guide Update --
 local menuFrame = CreateFrame("Frame", "WoWProDropMenu", UIParent, "UIDropDownMenuTemplate")
 WoWPro.GuideOffset = nil
+
+-- Calling on the guide's module to populate the guide window's rows --
+local function rowContentUpdate(offset)
+	local reload = WoWPro:RowUpdate(offset)
+	for i, row in pairs(WoWPro.rows) do
+		if WoWPro.RowDropdownMenu[i] then
+			row:SetScript("OnClick", function(self, button, down)			    
+				if button == "LeftButton" then
+					WoWPro:RowLeftClick(i)
+				elseif button == "RightButton" then
+					WoWPro.rows[i]:SetChecked(nil)
+					if WoWPro.Recorder then WoWPro:RowLeftClick(i) end
+					EasyMenu(WoWPro.RowDropdownMenu[i], menuFrame, "cursor", 0 , 0, "MENU")
+				end
+			end)
+		end
+	end
+	return reload
+end
+
 function WoWPro.UpdateGuideReal(From)
 	if not WoWPro.GuideFrame:IsVisible() or not WoWPro.GuideLoaded then return end
 	WoWPro:dbp("Running: UpdateGuideReal()")
@@ -181,6 +203,11 @@ function WoWPro.UpdateGuideReal(From)
 	    WoWPro:dbp("Suppresssed guide update.  In Combat.")
 	    WoWPro:SendMessage("WoWPro_UpdateGuide","InCombat")
 	    return
+	end
+	if InCinematic() then
+		WoWPro:dbp("Suppresssed guide update.  In Cinematic.")
+		WoWPro:SendMessage("WoWPro_UpdateGuide","InCinematic")
+		return
 	end
 	if  not GID or not WoWPro.Guides[GID] then
 	    WoWPro:dbp("Suppresssed guide update. Guide %s is invalid.",tostring(GID))
@@ -196,32 +223,16 @@ function WoWPro.UpdateGuideReal(From)
 	if not module or not module:IsEnabled() then return end
 	
 	-- Finding the active step in the guide --
+-- err("ActiveStep = %s, CurrentIndex = %s", WoWPro.ActiveStep, WoWPro.CurrentIndex)	
+	local oldCurrentIndex = WoWPro.CurrentIndex
 	WoWPro.ActiveStep = WoWPro:NextStep(1)
 	if WoWPro.Recorder then WoWPro.ActiveStep = WoWPro.Recorder.SelectedStep or WoWPro.ActiveStep end
 	if not offset then WoWPro.Scrollbar:SetValue(WoWPro.ActiveStep) end
 	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount))
 	
-	-- Calling on the guide's module to populate the guide window's rows --
-	local function rowContentUpdate()
-		local reload = WoWPro:RowUpdate(offset)
-		for i, row in pairs(WoWPro.rows) do
-			if WoWPro.RowDropdownMenu[i] then
-				row:SetScript("OnClick", function(self, button, down)			    
-					if button == "LeftButton" then
-						WoWPro:RowLeftClick(i)
-					elseif button == "RightButton" then
-						WoWPro.rows[i]:SetChecked(nil)
-						if WoWPro.Recorder then WoWPro:RowLeftClick(i) end
-						EasyMenu(WoWPro.RowDropdownMenu[i], menuFrame, "cursor", 0 , 0, "MENU")
-					end
-				end)
-			end
-		end
-		return reload
-	end
 	local reload = true
 	-- Reloading until all stickies that need to unsticky have done so --
-	while reload do reload = rowContentUpdate() end
+	while reload do reload = rowContentUpdate(offset) end
 	
 	-- Update content and formatting --
 	WoWPro:RowSet(); WoWPro:RowSet()
@@ -262,8 +273,13 @@ function WoWPro.UpdateGuideReal(From)
 		else
 			WoWPro.NextGuideDialog:Show()
 		end
+		oldCurrentIndex = nil
 	end
-	WoWPro:MapPoint()
+-- err("ActiveStep = %s, CurrentIndex = %s", WoWPro.ActiveStep, WoWPro.CurrentIndex)	
+	if oldCurrentIndex ~= WoWPro.CurrentIndex then
+		WoWPro:MapPoint()
+		WoWPro:SendMessage("WoWPro_QuestDialogAutomation") -- Just in case a dialog is open for the step that was just added
+	end
 end	
 
 local Rep2IdAndClass
@@ -382,27 +398,28 @@ function WoWPro:NextStep(k,i)
     	end
 
         -- Partial Completion --
-        if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[k] 
-        and not WoWProCharDB.Guide[GID].completion[k] then 
-	        local numquesttext = select("#", string.split(";", WoWPro.questtext[k]))
-	        local complete = true
-	        for l=1,numquesttext do
-		        local lquesttext = select(numquesttext-l+1, string.split(";", WoWPro.questtext[k]))
-		        local lcomplete = false
-		        for _, objective in pairs(WoWPro.QuestLog[QID].leaderBoard) do --Checks each of the quest log objectives
-			        if lquesttext == objective then --if the objective matches the step's criteria, mark true
-				        lcomplete = true
-			        end
-		        end
-		        if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
-	        end
-	        --if the step has not been found to be incomplete, run the completion function
-	        if complete then
-	            WoWPro.CompleteStep(i)
-	            skip = true
-	            break
-	        end 
-        end
+        -- Already done in AutoCompleteQuestUpdate
+        -- if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[k] 
+        -- and not WoWProCharDB.Guide[GID].completion[k] then 
+	       --  local numquesttext = select("#", string.split(";", WoWPro.questtext[k]))
+	       --  local complete = true
+	       --  for l=1,numquesttext do
+		      --   local lquesttext = select(numquesttext-l+1, string.split(";", WoWPro.questtext[k]))
+		      --   local lcomplete = false
+		      --   for _, objective in pairs(WoWPro.QuestLog[QID].leaderBoard) do --Checks each of the quest log objectives
+			     --    if lquesttext == objective then --if the objective matches the step's criteria, mark true
+				    --     lcomplete = true
+			     --    end
+		      --   end
+		      --   if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
+	       --  end
+	       --  --if the step has not been found to be incomplete, run the completion function
+	       --  if complete then
+	       --      WoWPro.CompleteStep(i)
+	       --      skip = true
+	       --      break
+	       --  end 
+        -- end
 
 	    -- Skip C or T steps if not in QuestLog
 	    if WoWPro.action[k] == "C" or WoWPro.action[k] == "T" then
@@ -417,7 +434,14 @@ function WoWPro:NextStep(k,i)
     	if WoWPro.action[k] == "f"  and WoWProCharDB.Taxi[WoWPro.step[k]] then
 	        WoWPro.CompleteStep(k)
 	        skip = true
-	    end	
+	   end	
+
+	   -- Complete "H" steps if the Hearthstone is already bound to the correct desnisation
+	   if WoWPro.action[k] == "H" and WoWPro.step[k] == GetBindLocation() then
+		   WoWPro.CompleteStep(k)
+		   skip = true
+	   end
+
 	    -- Check for must be active quests
         if WoWPro.active and WoWPro.active[k] then
     		if not WoWPro:QIDsInTable(WoWPro.active[k],WoWPro.QuestLog) then 
@@ -757,128 +781,187 @@ function WoWPro.CompleteStep(step)
 	end
 	
 	WoWPro:UpdateGuide()
-	WoWPro:MapPoint()
+	-- WoWPro:MapPoint()
 end
 
+WoWPro.oldQuests = {}
 WoWPro.QuestLog = {}
+
+local abandoning
+local orig = _G.AbandonQuest
+_G.AbandonQuest = function(...)
+	abandoning = true
+	return orig(...)
+end
+
+
 -- Populate the Quest Log table for other functions to call on --
+--local colapsedHeaders = {}
 function WoWPro:PopulateQuestLog()
-	WoWPro:dbp("WoWPro:PopulateQuestLog()")
-	
-	-- If the UI is up, dont muck with things
-	if (QuestLogFrame:IsShown() or QuestLogDetailFrame:IsShown()) then
-	    WoWPro:SendMessage("WoWPro_PuntedQLU")
-	    return nil
-	end
-	
-	WoWPro.oldQuests = WoWPro.QuestLog or {}
-	WoWPro.newQuest, WoWPro.missingQuest = false, false
-	
-	-- Generating the Quest Log table --
-	WoWPro.QuestLog = {} -- Reinitiallizing the Quest Log table
-	local i, currentHeader = 1, "None"
-	local entries, numQuests = GetNumQuestLogEntries()
-	local lastCollapsed = nil
-	local num = 0
-	WoWPro:dbp("PopulateQuestLog: Entries %d, Quests %d.",entries,numQuests)
+	local WoWProCharDB = WoWPro.CharDB
 
-    i=1
-	repeat
-		local questTitle, level, questTag, suggestedGroup, isHeader, 
-			isCollapsed, isComplete, isDaily, questID, startEvent, displayQuestID = GetQuestLogTitle(i)
-		local leaderBoard
-		if not questTitle and (num < numQuests) then
-		     WoWPro:Error("PopulateQuestLog: return value from GetQuestLogTitle(%d) is nil.",i)
-		end
-		if isHeader then
---		    WoWPro:dbp("PopulateQuestLog: Header %s  @ %d",tostring(questTitle),i)
-			currentHeader = questTitle
-			if lastCollapsed then
-			    -- We just finished scanning a previously collapsed header and ran into the next
-			    -- We need to collapse it and then rewind to the next slot and restart, as the slot number for the header will have mutated on us.
-			    CollapseQuestHeader(lastCollapsed)
---			    WoWPro:dbp("PopulateQuestLog: Collapsing header at %d",lastCollapsed)
-			    i = lastCollapsed
-			    lastCollapsed = nil
-			elseif isCollapsed then
-			    lastCollapsed = i
---			    WoWPro:dbp("PopulateQuestLog: Expanding header at %d",lastCollapsed)
-			    ExpandQuestHeader(i)
-			end	    
-		elseif questTitle and not WoWPro.QuestLog[questID] then
-			if GetNumQuestLeaderBoards(i) and GetQuestLogLeaderBoard(1, i) then
-				leaderBoard = {} 
-				for j=1,GetNumQuestLeaderBoards(i) do 
-					leaderBoard[j] = GetQuestLogLeaderBoard(j, i)
-				end 
-			else leaderBoard = nil end
-			local link, icon, charges = GetQuestLogSpecialItemInfo(i)
-			local use
-			if link then
-				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
-				use = Id
-			end
-			local coords
-			QuestMapUpdateAllQuests()
-			QuestPOIUpdateIcons()
-			local x, y = WoWPro:findBlizzCoords(questID)
-			if x and y then coords = string.format("%.2f",x)..","..string.format("%.2f",y) end
---			WoWPro:dbp("PopulateQuestLog: Quest %s [%s] @ %d",tostring(questID),questTitle,i)
-			WoWPro.QuestLog[questID] = {
-				title = questTitle,
-				level = level,
-				tag = questTag,
-				group = suggestedGroup,
-				complete = isComplete,
-				daily = isDaily,
-				leaderBoard = leaderBoard,
-				header = currentHeader,
-				use = use,
-				coords = coords,
-				index = i
-			}
-			num = num + 1
-		end
-		i = i + 1
-		if ( i > 50 ) then
-		    break
-		end
-	until num == numQuests
+	WoWPro.oldQuests, WoWPro.QuestLog = WoWPro.QuestLog, WoWPro.oldQuests
+	wipe(WoWPro.QuestLog)
 	
-	if lastCollapsed then
-	    CollapseQuestHeader(lastCollapsed)
-	    lastCollapsed = nil
-	end
-
-	WoWPro:dbp("Quest Log populated. "..num.." quests found.")
-	if numQuests ~= num then
-	    WoWPro:Error("Expected to find %d quests in QuestLog, but found %d.",numQuests, num)
-	end
-
-	if WoWPro.oldQuests == {} then return end
-
-	-- Generating table WoWPro.newQuest --
-	for QID, questInfo in pairs(WoWPro.QuestLog) do
-		if not WoWPro.oldQuests[QID] then 
-			WoWPro.newQuest = QID 
-			WoWPro:dbp("New Quest %d: [%s]",QID,WoWPro.QuestLog[QID].title)
+	-- Remember the colapsed headers
+	--wipe(colapsedHeaders)
+	local entries = GetNumQuestLogEntries()
+	--for i=entries,1,-1 do
+	--	if select(6,GetQuestLogTitle(i)) then
+	--		tinsert(colapsedHeaders,i)
+	--	end
+	--end
+	
+	
+	ExpandQuestHeader(0)	
+	entries = GetNumQuestLogEntries()
+	for i=1,entries do
+		local isHeader, _ , _, _, questID = select(5,GetQuestLogTitle(i))
+		if not isHeader then
+			WoWPro.QuestLog[questID] = i
+		elseif isCollapsed then
 		end
 	end
 	
+	-- Restaure the colapsed headers
+	--while(#colapsedHeaders) > 0 do
+	--	CollapseQuestHeader(tremove(colapsedHeaders))
+	--end
+
+	-- Is the table empty?
+	if not next(WoWPro.oldQuests) then return end
+
 	-- Generating table WoWPro.missingQuest --
 	for QID, questInfo in pairs(WoWPro.oldQuests) do
-		if not WoWPro.QuestLog[QID] then 
-			WoWPro.missingQuest = QID 
-			WoWPro:dbp("Missing Quest: "..WoWPro.oldQuests[QID].title)
+		if not WoWPro.QuestLog[QID] then
+			if not abandoning then
+				-- It's a quest that has been completed
+				WoWPro.abandonedQID = nil
+			else
+				WoWPro.abandonedQID = QID
+			end
+			abandoning = nil
 		end
 	end
-
-	if WoWPro.Recorder then
-	    WoWPro:SendMessage("WoWPro_PostQuestLogUpdate")
-	end
-	
-	return num
 end
+-- Populate the Quest Log table for other functions to call on --
+-- function WoWPro:PopulateQuestLog()
+-- 	WoWPro:dbp("WoWPro:PopulateQuestLog()")
+	
+-- 	-- If the UI is up, dont muck with things
+-- 	if (QuestLogFrame:IsShown() or QuestLogDetailFrame:IsShown()) then
+-- 	    WoWPro:SendMessage("WoWPro_PuntedQLU")
+-- 	    return nil
+-- 	end
+	
+-- 	WoWPro.oldQuests = WoWPro.QuestLog or {}
+-- 	WoWPro.newQuest, WoWPro.missingQuest = false, false
+	
+-- 	-- Generating the Quest Log table --
+-- 	WoWPro.QuestLog = {} -- Reinitiallizing the Quest Log table
+-- 	local i, currentHeader = 1, "None"
+-- 	local entries, numQuests = GetNumQuestLogEntries()
+-- 	local lastCollapsed = nil
+-- 	local num = 0
+-- 	WoWPro:dbp("PopulateQuestLog: Entries %d, Quests %d.",entries,numQuests)
+
+--     i=1
+-- 	repeat
+-- 		local questTitle, level, questTag, suggestedGroup, isHeader, 
+-- 			isCollapsed, isComplete, isDaily, questID, startEvent, displayQuestID = GetQuestLogTitle(i)
+-- 		local leaderBoard
+-- 		if not questTitle and (num < numQuests) then
+-- 		     WoWPro:Error("PopulateQuestLog: return value from GetQuestLogTitle(%d) is nil.",i)
+-- 		end
+-- 		if isHeader then
+-- --		    WoWPro:dbp("PopulateQuestLog: Header %s  @ %d",tostring(questTitle),i)
+-- 			currentHeader = questTitle
+-- 			if lastCollapsed then
+-- 			    -- We just finished scanning a previously collapsed header and ran into the next
+-- 			    -- We need to collapse it and then rewind to the next slot and restart, as the slot number for the header will have mutated on us.
+-- 			    CollapseQuestHeader(lastCollapsed)
+-- --			    WoWPro:dbp("PopulateQuestLog: Collapsing header at %d",lastCollapsed)
+-- 			    i = lastCollapsed
+-- 			    lastCollapsed = nil
+-- 			elseif isCollapsed then
+-- 			    lastCollapsed = i
+-- --			    WoWPro:dbp("PopulateQuestLog: Expanding header at %d",lastCollapsed)
+-- 			    ExpandQuestHeader(i)
+-- 			end	    
+-- 		elseif questTitle and not WoWPro.QuestLog[questID] then
+-- 			if GetNumQuestLeaderBoards(i) and GetQuestLogLeaderBoard(1, i) then
+-- 				leaderBoard = {} 
+-- 				for j=1,GetNumQuestLeaderBoards(i) do 
+-- 					leaderBoard[j] = GetQuestLogLeaderBoard(j, i)
+-- 				end 
+-- 			else leaderBoard = nil end
+-- 			local link, icon, charges = GetQuestLogSpecialItemInfo(i)
+-- 			local use
+-- 			if link then
+-- 				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
+-- 				use = Id
+-- 			end
+-- 			local coords
+-- 			QuestMapUpdateAllQuests()
+-- 			QuestPOIUpdateIcons()
+-- 			local x, y = WoWPro:findBlizzCoords(questID)
+-- 			if x and y then coords = string.format("%.2f",x)..","..string.format("%.2f",y) end
+-- --			WoWPro:dbp("PopulateQuestLog: Quest %s [%s] @ %d",tostring(questID),questTitle,i)
+-- 			WoWPro.QuestLog[questID] = {
+-- 				title = questTitle,
+-- 				level = level,
+-- 				tag = questTag,
+-- 				group = suggestedGroup,
+-- 				complete = isComplete,
+-- 				daily = isDaily,
+-- 				leaderBoard = leaderBoard,
+-- 				header = currentHeader,
+-- 				use = use,
+-- 				coords = coords,
+-- 				index = i
+-- 			}
+-- 			num = num + 1
+-- 		end
+-- 		i = i + 1
+-- 		if ( i > 50 ) then
+-- 		    break
+-- 		end
+-- 	until num == numQuests
+	
+-- 	if lastCollapsed then
+-- 	    CollapseQuestHeader(lastCollapsed)
+-- 	    lastCollapsed = nil
+-- 	end
+
+-- 	WoWPro:dbp("Quest Log populated. "..num.." quests found.")
+-- 	if numQuests ~= num then
+-- 	    WoWPro:Error("Expected to find %d quests in QuestLog, but found %d.",numQuests, num)
+-- 	end
+
+-- 	if WoWPro.oldQuests == {} then return end
+
+-- 	-- Generating table WoWPro.newQuest --
+-- 	for QID, questInfo in pairs(WoWPro.QuestLog) do
+-- 		if not WoWPro.oldQuests[QID] then 
+-- 			WoWPro.newQuest = QID 
+-- 			WoWPro:dbp("New Quest %d: [%s]",QID,WoWPro.QuestLog[QID].title)
+-- 		end
+-- 	end
+	
+-- 	-- Generating table WoWPro.missingQuest --
+-- 	for QID, questInfo in pairs(WoWPro.oldQuests) do
+-- 		if not WoWPro.QuestLog[QID] then 
+-- 			WoWPro.missingQuest = QID 
+-- 			WoWPro:dbp("Missing Quest: "..WoWPro.oldQuests[QID].title)
+-- 		end
+-- 	end
+
+-- 	if WoWPro.Recorder then
+-- 	    WoWPro:SendMessage("WoWPro_PostQuestLogUpdate")
+-- 	end
+	
+-- 	return num
+-- end
 
    		
 
