@@ -434,7 +434,14 @@ function WoWPro:NextStep(k,i)
     	if WoWPro.action[k] == "f"  and WoWProCharDB.Taxi[WoWPro.step[k]] then
 	        WoWPro.CompleteStep(k)
 	        skip = true
-	    end	
+	   end	
+
+	   -- Complete "H" steps if the Hearthstone is already bound to the correct desnisation
+	   if WoWPro.action[k] == "H" and WoWPro.step[k] == GetBindLocation() then
+		   WoWPro.CompleteStep(k)
+		   skip = true
+	   end
+
 	    -- Check for must be active quests
         if WoWPro.active and WoWPro.active[k] then
     		if not WoWPro:QIDsInTable(WoWPro.active[k],WoWPro.QuestLog) then 
