@@ -458,7 +458,7 @@ function WoWPro.SetupGuideReal()
     		    -- Quest Accepts and Completions --
     		    if not WoWProCharDB.Guide[GID].completion[i] and WoWPro.QuestLog[QID] then 
     			    if action == "A" then WoWProCharDB.Guide[GID].completion[i] = true end
-    			    if action == "C" and WoWPro.QuestLog[QID].complete then
+    			    if action == "C" and select(7,GetQuestLogTitle(WoWPro.QuestLog[QID])) == 1 then
     				    WoWProCharDB.Guide[GID].completion[i] = true
     				    WoWPro.why[i] = "Completed by WoWPro:LoadGuideSteps() because in QuestLog was complete."
     			    end
@@ -663,10 +663,12 @@ function WoWPro:RowUpdate(offset)
 				tbl.func 			= _MapBlizCoordinate
 				tinsert(dropdown, tbl)
 			end
-			if tonumber(QID) and WoWPro.QuestLog[tonumber(QID)] and WoWPro.QuestLog[tonumber(QID)].index and WoWPro.GetNumPartyMembers() > 0 then
+			-- if tonumber(QID) and WoWPro.QuestLog[tonumber(QID)] and WoWPro.QuestLog[tonumber(QID)].index and WoWPro.GetNumPartyMembers() > 0 then
+			if tonumber(QID) and WoWPro.QuestLog[tonumber(QID)] and WoWPro.GetNumPartyMembers() > 0 then
 				table.insert(dropdown, 
 					{text = "Share Quest", func = function()
-						QuestLogPushQuest(WoWPro.QuestLog[QID].index)
+						-- QuestLogPushQuest(WoWPro.QuestLog[QID].index)
+						QuestLogPushQuest(WoWPro.QuestLog[QID])
 					end} 
 				)
 			end
@@ -701,7 +703,8 @@ function WoWPro:RowUpdate(offset)
 		-- Item Button --
 		if action == "H" then use = 6948 end
 		if ( not use ) and action == "C" and WoWPro.QuestLog[tonumber(QID)] then
-			local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[tonumber(QID)].index)
+			-- local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[tonumber(QID)].index)
+			local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[tonumber(QID)])
 			if link then
 				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
 				use = Id
@@ -833,7 +836,8 @@ function WoWPro:RowLeftClick(i)
     local QID = tonumber(WoWPro.QID[WoWPro.rows[i].index])
 	if  QID and WoWPro.QuestLog[QID] then
 	    ShowUIPanel(QuestLogFrame)
-		QuestLog_OpenToQuest(WoWPro.QuestLog[QID].index)
+	    -- QuestLog_OpenToQuest(WoWPro.QuestLog[QID].index)
+		QuestLog_OpenToQuest(WoWPro.QuestLog[QID])
 	end
 	WoWPro.rows[i]:SetChecked(nil)
 end

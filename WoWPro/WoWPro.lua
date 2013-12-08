@@ -344,11 +344,14 @@ function WoWPro:OnEnable()
 	WoWPro:dbp("Registering Events: Core Addon")
 	WoWPro:RegisterEvents( {															-- Setting up core events
 		"PLAYER_REGEN_ENABLED", "PARTY_MEMBERS_CHANGED", "QUEST_LOG_UPDATE",
-		"UPDATE_BINDINGS", "PLAYER_ENTERING_WORLD", "PLAYER_LEAVING_WORLD","UNIT_AURA", "TRADE_SKILL_SHOW"
+		"UPDATE_BINDINGS", "PLAYER_ENTERING_WORLD", "PLAYER_LEAVING_WORLD","UNIT_AURA", "TRADE_SKILL_SHOW",
+		"CINEMATIC_STOP"
 		
 	})
 	bucket:RegisterBucketEvent({"CHAT_MSG_LOOT", "BAG_UPDATE"}, 0.333, WoWPro.AutoCompleteLoot)
 	bucket:RegisterBucketEvent({"CRITERIA_UPDATE"}, 0.250, WoWPro.AutoCompleteCriteria)
+	bucket:RegisterBucketEvent({"GOSSIP_SHOW", "QUEST_GREETING", "QUEST_DETAIL", "QUEST_PROGRESS", "QUEST_COMPLETE"}, 0.1, WoWPro.QuestDialogAutomation)
+	bucket:RegisterBucketMessage("WoWPro_QuestDialogAutomation", 0.1, WoWPro.QuestDialogAutomation)
 	bucket:RegisterBucketMessage("WoWPro_LoadGuide",0.25,WoWPro.LoadGuideReal)
 	bucket:RegisterBucketMessage("WoWPro_LoadGuideSteps",0.25,WoWPro.LoadGuideStepsReal)
 	bucket:RegisterBucketMessage("WoWPro_GuideSetup",0.25,WoWPro.SetupGuideReal)
@@ -376,6 +379,13 @@ function WoWPro:OnEnable()
 	for i,v in ipairs(WoWPro.DropdownMenu) do
 		v.notCheckable 	= true
 	end
+
+	-- Force an arrow reset
+	WoWPro.FirstMapCall = true
+	WoWPro:PopulateQuestLog()
+	WoWPro:AutoCompleteQuestUpdate(nil)
+	WoWPro:UpdateQuestTracker()
+	WoWPro:UpdateGuide()
 end	
 
 -- Called when the addon is disabled --
