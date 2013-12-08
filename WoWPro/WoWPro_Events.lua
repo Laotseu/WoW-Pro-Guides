@@ -422,7 +422,9 @@ function WoWPro.EventHandler(frame, event, ...)
 	end	
 
 	-- Unlocking guide frame when leaving combat --
-	if event == "PLAYER_REGEN_ENABLED" or event == "PLAYER_ENTERING_WORLD" then
+	if event == "PLAYER_REGEN_ENABLED" or 
+		event == "PLAYER_ENTERING_WORLD" or
+		event == "CINEMATIC_STOP" then
 		WoWPro:UpdateGuide() 
 	end
 	
