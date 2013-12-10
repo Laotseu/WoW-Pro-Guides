@@ -35,8 +35,9 @@ end
 function WoWPro:AutoCompleteGetFP(...)
 	for i = 1,15 do
 		local index = WoWPro.rows[i].index
-		if ... == ERR_NEWTAXIPATH and WoWPro.action[index] == "f" 
-		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
+		if ((... == ERR_NEWTAXIPATH and WoWPro.action[index] == "f" ) or
+			 (WoWPro.action[index] == "f" and WoWProCharDB.Taxi[WoWPro.step[index]]))
+			and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
 			WoWPro.CompleteStep(index)
 		end
 	end
