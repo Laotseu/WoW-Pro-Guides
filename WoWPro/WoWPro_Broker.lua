@@ -442,14 +442,23 @@ function WoWPro:NextStep(k,i)
 		   skip = true
 	   end
 
+	   -- Current zone check : steps that complete if were are in the correct zone.
+	   if (WoWPro.action[k] == "F" or WoWPro.action[k] == "R" or WoWPro.action[k] == "b" or WoWPro.action[k] == "H") and
+	   	not WoWPro.waypcomplete[k] and
+	   	(WoWPro.step[k] == GetZoneText():trim() or WoWPro.step[k] == GetSubZoneText():trim()) then
+
+	   	WoWPro.CompleteStep(k)
+	   	skip = true
+	   end
+
 	    -- Check for must be active quests
-        if WoWPro.active and WoWPro.active[k] then
-    		if not WoWPro:QIDsInTable(WoWPro.active[k],WoWPro.QuestLog) then 
-    			skip = true -- If the quest is not in the quest log, the step is skipped --
-    			WoWPro.why[k] = "NextStep(): Skipping step necessary ACTIVE quest is not in QuestLog."
-    		end
-    		WoWPro:dbp("Step %s [%s] ACTIVE %s, skip=%s",WoWPro.action[k],WoWPro.step[k],WoWPro.active[k],tostring(skip))
-        end
+		if WoWPro.active and WoWPro.active[k] then
+			if not WoWPro:QIDsInTable(WoWPro.active[k],WoWPro.QuestLog) then 
+				skip = true -- If the quest is not in the quest log, the step is skipped --
+				WoWPro.why[k] = "NextStep(): Skipping step necessary ACTIVE quest is not in QuestLog."
+			end
+			WoWPro:dbp("Step %s [%s] ACTIVE %s, skip=%s",WoWPro.action[k],WoWPro.step[k],WoWPro.active[k],tostring(skip))
+		end
 
         -- WoWPro:dbp("Status(%d) skip=%s",k,tostring(skip))
         -- Checking level based completion --
@@ -968,38 +977,39 @@ end
 
 -- Cached version of function
 function WoWPro:IsQuestFlaggedCompleted(qid,force)
-    if qid == "*" then return nil; end
-    local QID = tonumber(qid)
-    if not QID then
-        -- is it a QID list?
-        local quids = select("#", string.split(";", qid))
-        if (not quids) or quids == 1 then 
-            self:Warning("Guide %s has a bad QID! [%s]",WoWProDB.char.currentguide,tostring(qid))
-            return false;
-        else
-            -- Yup, return true if any are complete
-    		for j=1,quids do
-    			local jquid = select(quids-j+1, string.split(";", qid))
-                jquid = tonumber(jquid)
-                if not jquid then
-                    self:Warning("Guide %s has a bad QID! [%s]",WoWProDB.char.currentguide,tostring(qid))
-                    return false;
-                end
-                if WoWPro:IsQuestFlaggedCompleted(jquid,force) then
-                    return true
-                end
-     		end
-            return false
-        end
-    end
-    if not WoWProCharDB.completedQIDs then
-        WoWProCharDB.completedQIDs = {}
-    end
-    if not force and type(WoWProCharDB.completedQIDs[QID]) ~= "nil" then
-        return WoWProCharDB.completedQIDs[QID]
-    end
-    WoWProCharDB.completedQIDs[QID] = IsQuestFlaggedCompleted(QID) or false
-    return WoWProCharDB.completedQIDs[QID]
+	if qid == "*" then return nil; end
+	local QID = tonumber(qid)
+	if not QID then
+		-- is it a QID list?
+		local quids = select("#", string.split(";", qid))
+		if (not quids) or quids == 1 then 
+		   self:Warning("Guide %s has a bad QID! [%s]",WoWProDB.char.currentguide,tostring(qid))
+		   return false;
+		else
+		   -- Yup, return true if any are complete
+			for j=1,quids do
+				local jquid = select(quids-j+1, string.split(";", qid))
+		       jquid = tonumber(jquid)
+		       if not jquid then
+		           self:Warning("Guide %s has a bad QID! [%s]",WoWProDB.char.currentguide,tostring(qid))
+		           return false;
+		       end
+		       if WoWPro:IsQuestFlaggedCompleted(jquid,force) then
+		           return true
+		       end
+			end
+		   return false
+		end
+	end
+	-- if not WoWProCharDB.completedQIDs then
+	--     WoWProCharDB.completedQIDs = {}
+	-- end
+	-- if not force and type(WoWProCharDB.completedQIDs[QID]) ~= "nil" then
+	--     return WoWProCharDB.completedQIDs[QID]
+	-- end
+	-- WoWProCharDB.completedQIDs[QID] = IsQuestFlaggedCompleted(QID) or false
+	-- return WoWProCharDB.completedQIDs[QID]
+ 	return IsQuestFlaggedCompleted(QID)
 end
 
 -- Quest Ordering by distance to travel
