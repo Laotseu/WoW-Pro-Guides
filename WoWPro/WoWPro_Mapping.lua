@@ -144,6 +144,7 @@ local function WoWProMapping_distance(event, uid, range, distance, lastdistance)
 	local autoarrival = cache[iactual].autoarrival
 
 	if not autoarrival or autoarrival == 1 then
+
 		for i=iactual,#cache,1 do
 			TomTom:RemoveWaypoint(cache[i].uid)
 		end
@@ -168,14 +169,22 @@ local function WoWProMapping_distance(event, uid, range, distance, lastdistance)
 		end
 
 		if autoarrival and iactual == 1 then
-			WoWPro.CompleteStep(cache[iactual].index)
+			-- F, R, b and H steps with |CC| complete when the last points is reached
+			local action = WoWPro.action[cache[iactual].index]
+		   if action == "F" or action == "R" or action == "b" or action == "H" then
+				WoWPro.CompleteStep(cache[iactual].index)
+			end
 		end
 
-
 	elseif autoarrival == 2 or autoarrival == 3 then
+
 		--if iactual ~= #cache then return
 		if iactual == 1 and autoarrival == 2 then
-			WoWPro.CompleteStep(cache[iactual].index)
+			local action = WoWPro.action[cache[iactual].index]
+			-- F, R, b and H steps with |CS| complete when the last points is reached
+		   if action == "F" or action == "R" or action == "b" or action == "H" then
+				WoWPro.CompleteStep(cache[iactual].index)
+			end
 		else
 --			TomTom:SetCrazyArrow(cache[iactual-1].uid, TomTom.db.profile.arrow.arrival, cache[iactual-1].desc)
 			if iactual > 1 then
@@ -189,8 +198,8 @@ local function WoWProMapping_distance(event, uid, range, distance, lastdistance)
 				cache[i].j = cache[i].j - 1
 			end
 		end
+
 	end
-	
 end
 
 -- table with custom callback functions to use in TomTom
@@ -483,9 +492,9 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 		zone = WoWPro.rows[row].zone
 	end 
 	zone = zone or WoWPro.zone[i] or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)"))
-		local autoarrival = WoWPro.waypcomplete[i]
+	local autoarrival = WoWPro.waypcomplete[i]
 
-		if zone:match("/") then
+	if zone:match("/") then
 		-- Well, they have a floor specified
 		zone , floor = string.split("/",zone)
 		floor = tonumber(floor)
