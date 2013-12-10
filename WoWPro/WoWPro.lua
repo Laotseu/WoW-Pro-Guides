@@ -384,6 +384,8 @@ function WoWPro:OnEnable()
 	WoWPro.FirstMapCall = true
 	WoWPro:PopulateQuestLog()
 	WoWPro:AutoCompleteQuestUpdate(nil)
+	WoWPro:AutoCompleteZone()
+	
 	WoWPro:UpdateQuestTracker()
 	WoWPro:UpdateGuide()
 end	
