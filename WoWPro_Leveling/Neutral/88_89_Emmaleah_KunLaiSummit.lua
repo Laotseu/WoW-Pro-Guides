@@ -170,19 +170,19 @@ A The Road to Kun-Lai |QID|31254;31255|N|From Messenger Grummle at the foot of T
 
 C Speak with the Highroad Grummle|QID|31254;31255|CHAT|QO|Speak with the Highroad Grummle: 1/1|M|70.08,23.47|Z|Valley of the Four Winds|N|Speak with the Highroad Grummle|RANK|2|
 
-R Path of a Hundred Steps |QID|31286|N|Head on up the stairs to the Tavern in the Mists via the Path of a Hundred Steps.|M|53.79,87.25|RANK|2|
-R Tavern in the Mists |QID|31286|N|Keep heading up the stairs and path to the Tavern in the Mists|M|56.75,75.82|RANK|2|
+R Path of a Hundred Steps |QID|31286|N|Head on up the stairs to the Tavern in the Mists via the Path of a Hundred Steps.|M|71.2,20.9|Z|Valley of the Four Winds|RANK|2|
+R Tavern in the Mists |QID|31286|N|Keep heading up the stairs and path to the Tavern in the Mists|M|56.7,80.5|Z|The Veiled Stair|RANK|2|
 
 f Tavern in the Mists|M|56.75,75.82|Z|The Veiled Stair|N|At Shin the Weightless.|RANK|2|
 l The Hammer of Folly|QID|31286|L|86473|M|68.53,79.00;74.83,76.39|CS|Z|The Veiled Stair|N|*High Value Rare Loot*\nJust east of the Black Market Action House is an ancient grass covered stairway called the Stairs that lead to nowhere. At the top, known as Mason's Folly, you may find The Hammer of Folly.\nWorth 100 gold when sold to a vendor and a lot of XP when looted.|RANK|3|
 l Forgotten Lockbox|QID|31286|M|54.71,71.41|Z|The Veiled Stair|N|*High Value Rare Loot*\nUpstairs in the inn.\nWorth around 10 gold and a lot of XP when looted.|Rank|3|
 
-R The Spring Road|QID|31286|M|53.52,65.78|N|Head up to The Spring Road, north of the Tavern.|
+;R The Spring Road|QID|31286|M|53.52,65.78|N|Head up to The Spring Road, north of the Tavern.|
 
 A Robbing Robbers of Robbers|QID|31286|M|53.52,65.78|Z|The Veiled Stair|N|From Len the Whisperer.|RANK|2|
 A Educating Saurok|QID|31287|M|53.52,65.78|Z|The Veiled Stair|N|From Len the Whisperer.|RANK|2|
 C Robbing Robbers of Robbers|QID|31286|NC|Z|The Veiled Stair|M|52.97,48.34;48.49,46.75;50.18,42.00|CS|N|Pick up any Black Maket Merchandise you see lying on the ground.|RANK|2|S|
-R Hatescale Burrow|QID|31287|M|55.46,56.62|N|Head to the Hatescale Burrow, and enter the cave.|
+;R Hatescale Burrow|QID|31287|M|55.46,56.62|N|Head to the Hatescale Burrow, and enter the cave.|
 K Kill Leechfingers|QID|31287|T|Leechfingers|M|52.97,48.34;48.49,46.75;50.18,42.00|CS|Z|The Veiled Stair|N|Kill Leechfingers, who can be found at the back of the cave (head to the right at both the first and second forks of the tunnel).|RANK|2|
 C Robbing Robbers of Robbers|QID|31286|NC|Z|The Veiled Stair|M|55.38,55.40|CS|N|Finish picking up the Black Maket Merchandise you see lying on the ground as you head out of the cave.|RANK|2|US|
 T Robbing Robbers of Robbers|QID|31286|M|53.49,65.77|Z|The Veiled Stair|N|To Len the Whisperer.|RANK|2|
@@ -194,7 +194,7 @@ A The Spring Drifter|QID|31285|M|51.98,43.69|Z|The Veiled Stair|N|From Brewmaste
 C The Spring Drifter|QID|31285|NC|M|51.98,43.69|Z|The Veiled Stair|N|Hop in the Spring Drifter and enjoy the ride.|RANK|2|
 
 T The Spring Drifter|QID|31285|M|72.64,93.00|N|To Brewmaster Boof.|RANK|2|
-f Binan Village|CC|M|72.52,94.18|N|At Jo the Wind Watcher.|
+f Binan Village|M|72.52,94.18|N|At Jo the Wind Watcher.|
 A Temple of the White Tiger|QID|31392|FACTION|Alliance|M|72.04,94.17|N|From Wang Chung.|
 A Temple of the White Tiger|QID|31393|FACTION|Horde|M|72.04,94.17|N|From Wang Chung.|
 A Hit Medicine|QID|30460|M|71.62,92.82|N|From Apothecary Cheng.|

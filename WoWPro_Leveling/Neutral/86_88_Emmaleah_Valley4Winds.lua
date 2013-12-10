@@ -105,7 +105,7 @@
 WoWPro.Leveling:RegisterGuide('EmmVal8688', 'Valley of the Four Winds', 'Emmaleah', '86', '88', 'RajKra8788|EmmKra8788', 'Neutral', function() return [[
 
 
-N Valley of the Four Winds|QID|29907|N|Make your way to Valley of the Four Winds. Blizzard added a new UI Element called the Special Action button. If you don?t already have a keybinding set for it, you may want to, as some quests use it. Yes, you can just click it, but I think keybindings are easier, its similar to the idea of Vehicle UI, but your regular action bars don't go away, you just get a new button.|
+N Valley of the Four Winds|QID|29907|N|Make your way to Valley of the Four Winds. Blizzard added a new UI Element called the Special Action button. If you don't already have a keybinding set for it, you may want to, as some quests use it. Yes, you can just click it, but I think keybindings are easier, its similar to the idea of Vehicle UI, but your regular action bars don't go away, you just get a new button.|
 
 R Valley of the Four Winds|N|Make your way to Valley of the Four Winds.|
 T They Call Him... Stormstout|QID|32019|M|85.94,22.10|N|To Chen Stormstout.|ACTIVE|

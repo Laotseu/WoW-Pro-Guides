@@ -228,7 +228,7 @@ A In the House of the Red Crane|QID|30273|M|38.01,50.89|N|From Anduin Wrynn.|
 C In the House of the Red Crane|QID|30273|M|40.46,54.65|N|Go up the center stairs then run straight back to the stairs into the basement. Talk to Chi-Ji to start the fight. He will float up and a large sha will appear, defeat it and you win. When the adds show up, you probably want to focus on them, since deaths cause Anduin to heal you.|
 T In the House of the Red Crane|QID|30273|M|40.43,49.18|N|To Chi-Ji (back outside).|
 
-R Nayeli Lagoon|QID|30667|M|51.7,75.34|
+;R Nayeli Lagoon|QID|30667|M|51.7,75.34|
 A Particular Plumage|QID|30667|M|51.67,75.30|N|From Tony Tuna.|
 l Stack of Papers|QID|31863|L|87798|M|52,73|N|Another of those grey items, this one doesn't sell for as much, but its free gold and XP, the path up is on the back side of the island.|
 f Marista|M|52.43,76.53|N|At Nan-Po.|
@@ -254,10 +254,10 @@ C Wisdom Has A Price|QID|30671|US|M|46.54,77.47|N|Random drop from the sharks.|
 T Wisdom Has A Price|QID|30671|M|46.01,78.96|N|To Wise Ana Wu.|
 A Balance|QID|30672|M|46.01,78.96|N|From Wise Ana Wu.|
 
-R Unga Ingoo|QID|30674|M|45.31,85.17|N|Keep jumping on your raft.|
+;R Unga Ingoo|QID|30674|M|45.31,85.17|N|Keep jumping on your raft.|
 A Banana Infused Rum|QID|31411|M|53.2,88.7|N|East of Unga Ingoo (at the top of the hill) there may be a barrel that contains the Recipe: Banana Infused Rum. Beware of Spriggen!|
 A Equipment Locker|QID|31410|M|42.29,91.98|N|West of Unga Ingoo is a pirate ship, that may contain an Equipment Locker (in the lowest level hold) with a pair of spec specific ilvl 419 boots.|
-K Unga Fish Getter|L|80827|M|45.31,85.17|N|Be sure and loot these at least until you get the item to start the quest.|
+K Unga Fish Getter|QID|30675|L|80827|M|45.31,85.17|N|Be sure and loot these at least until you get the item to start the quest.|
 C Balance|QID|30672|S|M|50.85,84.15|
 A Buried Hozen Treasure|QID|30675|U|80827|M|43.81,85.41|N|From Confusing Treasure Map - looted off of an Unga.|
 A Balance Without Violence|QID|30674|M|45.31,85.17|N|From UI Alert.|
@@ -272,8 +272,8 @@ T Buried Hozen Treasure|QID|30675|M|51.10,85.27|N|To UI Alert.|
 R Marista|QID|30672|M|51.55,76.83|N|Keep jumpin'.|
 T Balance|QID|30672|M|51.55,76.83|N|To Jay Cloudfall.|
 
-R Explore|QID|99999|N|Explore the islands while you are out here and have the raft (its a one hour duration).|
-f Cradle of Chi-Ji|QID|30675|M|31.19,63.25|N|At Feather Keeper Li.|
+R Explore|QID|30168|N|Explore the islands while you are out here and have the raft (its a one hour duration).|
+f Cradle of Chi-Ji|M|31.19,63.25|N|At Feather Keeper Li.|
 
 R Fallsong Village|M|29.66,39.0|QID|30168|N|You can take the raft up the river to avoid combat. (portage around the waterfall).|
 A Thieving Raiders|QID|30168|M|29.67,39.06|N|From Tired Shushen.|
@@ -288,7 +288,7 @@ R Sentinel Basecamp|QID|30363|M|24.76,34.00|
 T Going on the Offensive|QID|30363|M|24.70,34.04|N|To Lyalia.|
 A No Sister Left Behind|QID|30354|M|24.70,34.04|N|From Lyalia.|
 A Sever Their Supply Line|QID|30356|M|24.70,34.04|N|From Lyalia.|
-f Sentinel Basecamp|QID|30356|M|25.14,33.46|N|At Maylen Moonfeather.|
+f Sentinel Basecamp|M|25.14,33.46|N|At Maylen Moonfeather.|
 A Re-Reclaim|QID|30355|M|25.20,34.53|N|From Kang Bramblestaff.|
 C Sever Their Supply Line|QID|30356|S|M|23.70,42.04|N|To maximimze efficiency, try to kill the ones that are beside trapped horde people or ground spawns you need to pick up.|
 C Re-Reclaim|QID|30355|S|NC|M|23.43,45.24|N|Pick up the sparkly artifacts from the ground.|
