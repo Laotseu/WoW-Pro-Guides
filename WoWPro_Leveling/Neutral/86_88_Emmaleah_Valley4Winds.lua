@@ -108,7 +108,7 @@ WoWPro.Leveling:RegisterGuide('EmmVal8688', 'Valley of the Four Winds', 'Emmalea
 N Valley of the Four Winds|QID|29907|N|Make your way to Valley of the Four Winds. Blizzard added a new UI Element called the Special Action button. If you don?t already have a keybinding set for it, you may want to, as some quests use it. Yes, you can just click it, but I think keybindings are easier, its similar to the idea of Vehicle UI, but your regular action bars don't go away, you just get a new button.|
 
 R Valley of the Four Winds|N|Make your way to Valley of the Four Winds.|
-T They Call Him... Stormstout|QID|32019|M|85.94,22.10|N|To Chen Stormstout.|O|
+T They Call Him... Stormstout|QID|32019|M|85.94,22.10|N|To Chen Stormstout.|ACTIVE|
 A Chen and Li Li|QID|29907|M|85.94,22.10|N|From Chen Stormstout.|
 r Repair|QID|29909|M|84.86,21.68|N|This vendor sells 372 gear if you missed a slot with quests. Be sure to clean out your bags its awhile before you see another vendor.|
 f Pang's Stead|M|84.49,21.06|N|From the Princeton.|
@@ -148,11 +148,11 @@ A The Fabulous Miss Fanny|QID|29912|M|83.69,21.01|N|From Pang Thunderfoot.|
 l Pick up a turnip|QID|29912|L|75259|M|84.3,21.9|
 l Pick up a watermelon|QID|29912|L|75258|M|84.1,22.0|
 l Pick up the Extra Spicy Tofy|QID|29912|L|75256|M|84.0,22.0|
-C Ang's Giant Pink Turnip|QID|29912|NC|QO|Launch a pink turnip: 1/1|M|83.0,21.1|N|Have Fanny hit it average.|
-C Ang's Summer Watermelon|QID|29912|NC|QO|Launch a watermelon: 1/1|M|83.0,21.1|N|Have Fanny hit it softly.|
-C Pang's Extra-Spicy Tofu|QID|29912|NC|QO|Launch the Extra-Spicy Tofu: 1/1|M|83.0,21.1|N|Have Fanny hit it very hard. After you have finished the quest, you can ask Fanny to hit you very hard and you will go sailing down to the next area.|
+C Ang's Giant Pink Turnip|QID|29912|CHAT|QO|Launch a pink turnip: 1/1|M|83.0,21.1|N|Tell Fanny to "Hit it with average power."|
+C Ang's Summer Watermelon|QID|29912|CHAT|QO|Launch a watermelon: 1/1|M|83.0,21.1|N|Tell Fanny to "Hit it very softly."|
+C Pang's Extra-Spicy Tofu|QID|29912|CHAT|QO|Launch the Extra-Spicy Tofu: 1/1|M|83.0,21.1|N|Tell Fanny to "Hit it as hard as possible." After you have finished the quest, you can ask Fanny to hit you as hard as possible and you will go sailing down to the next area.|
 
-T The Fabulous Miss Fanny|QID|29912|M|75.2,24.0|N|To LiangThunderfoot.|
+T The Fabulous Miss Fanny|QID|29912|M|75.2,24.0|N|To LiangThunderfoot.|N|If you are still near Fanny, you can ask her to hit you as hard as possible and you will go sailing down to the next area.|
 A The Meat They'll Eat|QID|29913|M|75.2,24.1|N|From Liang Thunderfoot.|
 A Back to the Sty|QID|29914|M|75.2,24.1|N|From Liang Thunderfoot.|
 
@@ -191,8 +191,8 @@ K Kill Jinanya the Clawblade|QID|29944|T|Jinanya the Clawblade|QO|Jinanya the Cl
 K Kill Aiyu the Skillet|QID|29944|T|Aiyu the Skillet|QO|Aiyu the Skillet slain: 1/1|M|68.25,37.03|
 C Yellow and Red Make Orange|QID|29945|US|M|67.57,39.75; 69.39,47.08; 70.04,48.88|CN|N|Most of the animals (except virmin) in the area drop the blood you need. The marigolds spawn in the areas marked.|
 T Yellow and Red Make Orange|QID|29945|M|68.89,43.31|N|To Li Li.|
-T Leaders Among Breeders|QID|29944|M|68.88,43.15|N|To Chen Stormstout.|
 A Crouching Carrot, Hidden Turnip|QID|29947|M|68.89,43.31|N|From Li Li.|
+T Leaders Among Breeders|QID|29944|M|68.88,43.15|N|To Chen Stormstout.|
 A The Warren-Mother|QID|29946|M|68.87,43.17|N|From Chen Stormstout.|
 A Thieves to the Core|QID|29948|M|68.67,43.24|N|From Mudmug.|
 C Thieves to the Core|QID|29948|S|NC|M|67.75,36.37|N|The hops are in the warren. The sleeping vermin can be ignored if you are careful.|
@@ -266,8 +266,8 @@ T Chen's Resolution|QID|30046|M|55.89,49.44|N|Follow Chen to Halfhill and turn i
 A Hop Hunting|QID|30053|M|55.89,49.44|N|From Chen Stormstout.|
 A Li Li and the Grain|QID|30048|M|55.89,49.44|N|From Chen Stormstout.|
 A Doesn't Hold Water|QID|30049|M|55.89,49.44|N|From Chen Stormstout.|
+f Halfhill|M|56.5,50.4|N|From Wing Nga.If you want to this is a good time to do the fishing quest and cooking training.  Perhaps not the most efficient, but if you are goind to do it, may as well do it while you get XP.|
 A Children of the Water |QID|32045|M|55.13,47.38|N|From Stonecarver Mac, up on Halfhill|; Halfhill
-f Halfhill|M|53.81,50.92|N|From Wing Nga.If you want to this is a good time to do the fishing quest and cooking training.  Perhaps not the most efficient, but if you are goind to do it, may as well do it while you get XP.|
 
 A A Helping Hand|QID|30252|M|52.02,48.13|N|From Farmer Yoon. This chain for The Tillers is optional, but it opens up the Quartermaster which gives you a place to repair. (Plus its quick and easy XP.)|
 C Remove the rocks|QID|30252|M|52.8,49.81|NC|N|Click on the unbudging rocks to dig them up.|
@@ -296,12 +296,13 @@ C The Great Water Hunt|QID|30051|S|NC||M|53.20,31.92|N|Lead Mudmug to the pools 
 K Kill Kracor |QID|32045|T|Kracor|QO|Kracor slain: 1/1|M|55.9,33.9|; Gilded Fan
 K Kill Thundergill |QID|32045|T|Thundergill|QO|Thundergill slain: 1/1|M|55.1,25.9|; Gilded Fan
 K Kill Succula |QID|32045|T|Succula|QO|Succula slain: 1/1|M|51.4,26.9|; The Heartland
-K Kill Manglemaw|QID|30275|T|Manglemaw|M|54.49,25.81|L|79238|N|Killing the cute baby croc gets mom's attention, Kill her too and loot the quest item.|
-A A Crocolisk Tale|QID|30275|54.49,25.81|N|From Enormous Crocolisk Tail.|
+K Kill Manglemaw|QID|30275|T|Manglemaw|M|57.6,26.0|L|79238|N|Killing the cute baby croc gets mom's attention, Kill her too and loot the quest item.|
+A A Crocolisk Tale|QID|30275|54.49,25.81|U|79238|N|From Enormous Crocolisk Tail.|
 C The Great Water Hunt|QID|30051|US|NC|M|53.20,31.92|N|Lead Mudmug to the pools of muddy water (yum!). Sometimes a creature will attack before Mudmug can gather his water.|
 T The Great Water Hunt|QID|30051|M|53.32,32.16|N|To Mudmug, who is right next to you!|
 A Barreling Along|QID|30172|M|53.32,32.16|N|From Mudmug. He will tag along until we next go the Halfhill.|
 C Barreling Along|QID|30172|M|55.7,49.2|NC|QO|Lead Mudmug back to Halfhill: 1/1|N|If the thought of Mudmug getting in the way with his barrels annoys you, drop him off at Halfhill first, otherwise, skip this step.|
+T Barreling Along|QID|30172|M|55.89,49.43|N|To Chen Stormstout.|
 T A Crocolisk Tale|QID|30275|M|60.61,33.70|N|To Yan.|
 
 R The Heartland|QID|30053|M|50.71,32.25|
@@ -330,7 +331,6 @@ A Stormstout's Hops|QID|30055|M|38.78,51.54|N|From UI Alert.|
 
 C Barreling Along|QID|30172|NC|M|54.19,38.69;55.7,49.2|CN|N|If you have lost Mudmug, you can get him at the place you started this quest.|
 
-T Barreling Along|QID|30172|M|55.89,49.43|N|To Chen Stormstout.|
 T Stormstout's Hops|QID|30055|M|55.89,49.43|N|To Chen Stormstout.|
 T Children of the Water |QID|32045|M|55.13,47.38|N|To Stonecarver Mac|; Halfhill
 A Temple of the White Tiger|QID|31392|FACTION|Alliance|M|56.03,51.80|N|From Hopsmaster Chang.|
@@ -354,7 +354,7 @@ T Wee Little Shenanigans|QID|30029|M|52.74,63.00|N|To Grainlord Kai.|
 A The Quest for Better Barley|QID|30032|M|52.74,63.00|N|From Grainlord Kai.|
 A Grain Recovery|QID|30028|M|52.74,63.00|N|From Grainlord Kai.|
 C Grain Recovery|QID|30028|NC|M|54.62,67.84|
-C The Quest for Better Barley|QID|30032|M|51.29,77.54;53.31,75.14;48.63,26.96|CS|N|Use the rope on the ground to get down.|
+C The Quest for Better Barley|QID|30032|M|51.29,77.54;53.31,75.14|CS|N|Use the rope on the ground to get down.|
 T Grain Recovery|QID|30028|M|51.3,77.9;52.76,62.91|CS|N|Use the rope to climb back. To Grainlord Kai.|
 T The Quest for Better Barley|QID|30032|M|52.69,62.83|N|To Li Li.|
 A The Chen Taste Test|QID|30047|M|52.69,62.83|N|From Li Li.|
@@ -366,7 +366,7 @@ C The Emperor|QID|30073|NC|M|55.89,49.43|N|Wait for him to finish brewing|
 T The Emperor|QID|30073|M|55.83,49.34|N|To Chen Stormstout.|
 A Knocking on the Door|QID|30074|M|55.89,49.43|N|From Chen Stormstout.|
 
-R Thirsty Alley|QID|30074|M|53.97,49.64;51.39,52.01;40.88,60.30;38.5,64.7|CS|N|Down through the market and take the road to the Brewery.|
+R Thirsty Alley|QID|30074|M|53.97,49.64;51.39,52.01;40.88,60.30;38.5,64.7|CC|N|Down through the market and take the road to the Brewery.|
 T Knocking on the Door|QID|30074|M|32.25,68.56|N|To Chen Stormstout, after turning in, wait a moment for a brief scene shift.|
 A The Fanciest Water|QID|30076|M|32.25,68.27|N|From Mudmug.|
 A Barrels, Man|QID|30077|M|32.32,68.47|N|From Li Li.|
@@ -403,7 +403,7 @@ A Mushan Mastery: Darkhide |QID|30184|M|16.01,82.49|N|From Hemet Nesingwary|
 
 C Kill Stags|QID|32038|S|M|24.47,68.43|
 C Kill Foxes|QID|30182|S|M|24.47,68.43|N|The foxes move around stealthed.|
-K Darkhide|QID|30184|T|Darkhide|L|79058|M|26.7,69.6|N|Kill Darkhide and loot his head.|
+K Darkhide|QID|30184|T|Darkhide|L|79058|M|26.0,75.6|N|Kill Darkhide and loot his head.|
 C Kill Foxes|QID|30182|US|M|24.47,68.43|
 C Kill Stags|QID|32038|US|M|24.47,68.43|
 
@@ -442,7 +442,7 @@ R Paoquan Hollow|QID|29983|M|18.15,31.60|CC|
 T The Hidden Master|QID|29983|M|18.30,31.23|N|To Master Bruised Paw.|
 A Unyielding Fists: Trial of Bamboo|QID|29984|M|18.30,31.23|N|From Master Bruised Paw.|
 C Trial of Bamboo|QID|29984|CHAT|M|18.2,31.26|N|Talk to the Master to accept the challenge and get put into a 'vehicle'. Press the "1" key when the circle is full and 'glowy'. Cutscene follows each of these.|
-T Unyielding Fists: Trial of Bamboo|QID|29984|PRE|29983|M|18.30,31.23|N|To Master Bruised Paw, Cutscene follows immediately after.|
+T Unyielding Fists: Trial of Bamboo|QID|29984|M|18.30,31.23|N|To Master Bruised Paw, Cutscene follows immediately after.|
 A They Will Be Mist|QID|29985|M|18.30,31.23|N|From Master Bruised Paw.|
 A Fog Wards|QID|29986|M|18.30,31.23|N|From Master Bruised Paw.|
 A Tenderpaw By Name, Tender Paw By Reputation|QID|29992|M|18.06,31.00|N|From Lin Tenderpaw|

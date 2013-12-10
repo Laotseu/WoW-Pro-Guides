@@ -95,16 +95,15 @@ L Level 86 |QID|30080|LVL|86|N|You need to be Level 86 to do this guide.|
 F Zhu's Watch|QID|30080|M|19, 56|N|This guide starts at Zhu's watch. If you aren't there, fly or run there.|
 T Ken-Ken|QID|29873|M|76.23,7.13|N|To Ken-Ken. This was accepted from Xiao at the beginning of Valley of the 4 Winds.|
 A What's Eating Zhu's Watch?|QID|30079|M|76.22,7.06|N|From Ken-Ken.|
-C Speak with Mei|QID|30079|NC|QO|Speak with Mei: 1/1|M|75.84,7.60|N|Up the stairs, outside.|
+C Speak with Mei|QID|30079|CHAT|QO|Speak with Mei: 1/1|M|75.84,7.60|N|Up the stairs, outside.|
 A Finding Yi-Mo|QID|30080|M|75.84,7.60|N|From Mei Barrelbottom.|
-C Speak with Yun|QID|30079|NC|QO|Speak with Yun: 1/1|M|75.48,9.39|N|Up the stairs, inside.|
-C Speak with Despondent Warden of Zhu|QID|30079|NC|QO|Speak with Despondent Warden of Zhu: 1/1|M|76.69,8.85|
-C Speak with Sunni|QID|30079|NC|QO|Speak with Sunni: 1/1|M|77.47,8.54|N|Up the stairs, inside in bed.|
-f Zhu's Watch|QID|30078|M|76.7,8.38|N|At Gee Hung.|
+C Speak with Yun|QID|30079|CHAT|QO|Speak with Yun: 1/1|M|75.48,9.39|N|Up the stairs, inside.|
+C Speak with Despondent Warden of Zhu|QID|30079|CHAT|QO|Speak with Despondent Warden of Zhu: 1/1|M|76.69,8.85|
+C Speak with Sunni|QID|30079|CHAT|QO|Speak with Sunni: 1/1|M|77.47,8.54|N|Up the stairs, inside in bed.|
 l Boat Building Instructions|QID|31869|L|87524|M|88.53,50.6;92.17,39.06|CS|Z|Valley of the Four Winds|N|Optional, worth 10g and some XP. Dot is at the beginning of the patch down, run down the hill, along the shore about 20 yards, and up into the house, papers are on table.|
-C Finding Yi-Mo|QID|30080|M|81.30,8.85|N|He is lying on the ground.|
-T Finding Yi-Mo|QID|30080|M|81.31,6.78|N|To Yi-Mo Longbrow.|
-A Cheer Up, Yi-Mo|QID|30082|M|81.30,6.78|N|From Yi-Mo Longbrow.|
+C Finding Yi-Mo|QID|30080|M|81.3,6.8|N|He is lying on the ground.|
+T Finding Yi-Mo|QID|30080|M|81.3,6.8|N|To Yi-Mo Longbrow.|
+A Cheer Up, Yi-Mo|QID|30082|M|81.3,6.8|N|From Yi-Mo Longbrow.|
 C Cheer Up, Yi-Mo|QID|30082|NC|M|76.77,7.74|N|Talk to him, then you have to roll him home. You will be attacked by large birds on the way.|
 C Cheer Up, Yi-Mo|QID|30082|M|77.02,7.70|
 T Cheer Up, Yi-Mo|QID|30082|M|75.90,7.61|N|To Mei Barrelbottom.|
@@ -125,8 +124,8 @@ C Memorial Flame of Zhu|QID|30084|NC|U|78928|QO|Memorial Flame of Zhu: 1/1|M|72.
 C Memorial Flame of Rin|QID|30084|NC|U|78928|QO|Memorial Flame of Rin: 1/1|M|71.30,17.47|
 C Why So Serious?|QID|30088|US|QO|Huge Panther Fang: 18/18|M|72.00,16.91|N|Finish killing the Panthers for the Fangs|
 C Securing the Province|QID|30083|S|M|77.30,58.91|Z|Valley of the Four Winds|N|Kill the sauroks on the way in and out of the cave.|
-R Winds' Edge|QID|30083|M|77.05,57.2|N|Head to Winds' Edge and enter the cave|
-C Saurok Stone Tablet|QID|30088|QO|Huge Panther Fang: 18/18|M|75.05,55.12|Z|Valley of the Four Winds|N|The tablet is a world drop worth ~100G and a random amount of XP (at least as much as one quest)|
+;R Winds' Edge|QID|30083|M|77.05,57.2|N|Head to Winds' Edge and enter the cave|
+C Saurok Stone Tablet|QID|30088|M|77.05,57.2;75.05,55.12|CC|Z|Valley of the Four Winds|N|The tablet is a world drop worth ~100G and a random amount of XP (at least as much as one quest)|
 C Jar of Pigment|QID|30088|NC|QO|Jar of Pigment: 1/1|M|73.89,56.30|Z|Valley of the Four Winds|N|Pick up the jar of pigment here.|
 C Securing the Province|QID|30083|US|M|77.30,58.91|Z|Valley of the Four Winds|N|Finish killing the sauroks as you leave the cave.|
 T Securing the Province|QID|30083|M|75.83,7.65|N|To Mei Barrelbottom.|
@@ -183,12 +182,12 @@ K Kill Dojani Dominator|QID|30346|T|Dojani Dominator|M|55.51,35.48|L|78917|N|Kil
 C Where are the Pools|QID|30346|M|55.26,34.46|To UI Alert. (If you miss the alert you can turn in back at the Incursion.)|
 T Where are the Pools|QID|30346|
 A The Pools of Youth|QID|30347|N|from UI Alert.|
-C Threat from Dojan|QID|30349|US|M|55,35|N|Finish this before you go on to the pools, no dojani down there.|
 C The Pools of Youth|QID|30347|NC|M|54.6,33.1;51.9,32.4|CS|N|When facing the platform where you killed the Dominator, go to your left, over a bridge and down some stairs to a pool area. Free Na Lek, kill the guardians and loot the 'water of youth' (groundspawn).|
 C Lotus Tea|QID|30351|US|NS|M|55,35|N|There are a few flowers down here if you aren't yet done.|
-T Lotus Tea|QID|30351||N|To Kang Bramblestaff, next to you. (if you dont turn it in right away, you have to wait until you are at sentinal basecamp.)|
+C Threat from Dojan|QID|30349|US|M|55,35|N|Finish this before you go on to the pools, no dojani down there.|
 ;R The Incursion|M|67.4,32|
 T Threat from Dojan|QID|30349|M|67.45,32.70|N|To Lyalia.|
+T Lotus Tea|QID|30351||N|To Kang Bramblestaff, next to you. (if you dont turn it in right away, you have to wait until you are at sentinal basecamp.)|
 T The Pools of Youth|QID|30347|M|67.45,32.64|N|To Lorekeeper Vaeldrin.|
 T Lotus Tea|QID|30351|M|67.36,32.75|N|To Kang Bramblestaff. |
 A Immortality?|QID|30348|M|67.45,32.64|N|From Lorekeeper Vaeldrin.|
@@ -231,7 +230,7 @@ T In the House of the Red Crane|QID|30273|M|40.43,49.18|N|To Chi-Ji (back outsid
 
 R Nayeli Lagoon|QID|30667|M|51.7,75.34|
 A Particular Plumage|QID|30667|M|51.67,75.30|N|From Tony Tuna.|
-l Stack of Papers|QID||31863|L|87798|M|52,73|N|Another of those grey items, this one doesn't sell for as much, but its free gold and XP, the path up is on the back side of the island.|
+l Stack of Papers|QID|31863|L|87798|M|52,73|N|Another of those grey items, this one doesn't sell for as much, but its free gold and XP, the path up is on the back side of the island.|
 f Marista|M|52.43,76.53|N|At Nan-Po.|
 A Sudden, Unexpected Crocolisk Aggression|QID|30666|M|51.53,76.85|N|From Jay Cloudfall, on the ledge of the inn.|
 C Sudden, Unexpected Crocolisk Aggression|QID|30666|S|M|46.34,71.99|

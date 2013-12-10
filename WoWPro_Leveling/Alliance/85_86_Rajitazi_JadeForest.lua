@@ -676,11 +676,10 @@ T An Unexpected Advantage|QID|30565|M|58.55,82.30|N|To Sully "The Pickle" McLear
 T Helping the Cause|QID|30568|M|58.07,80.65|N|To Admiral Taylor.|
 A Last Piece of the Puzzle|QID|31362|M|58.85,81.11|N|From Lorewalker Cho.|
 
-C Last Piece of the Puzzle|QID|31362|NC|U|80071|M|58.85,81.08;44.50,66.96|CS|N|Talk to Mishi for a ride and then use the Cho Family Heirloom at the shrine.|
-
+C Last Piece of the Puzzle|QID|31362|NC|U|80071|M|58.85,81.08;44.50,66.96|CN|N|Talk to Mishi for a ride and then use the Cho Family Heirloom at the shrine.|
+f Serpent's Overlook|M|43.13,68.48|N|At Sky Dancer Ji.|
 T Last Piece of the Puzzle|QID|31362|M|44.8,67.1|N|To Lorewalker Cho.|
 A The Seal is Broken|QID|31303|M|44.78,67.06|N|From Lorewalker Cho.|
-f Serpent's Overlook|QID|31303|M|43.13,68.48|N|At Sky Dancer Ji.|
 C The Seal is Broken|QID|31303|M|44.72,66.98|N|Talk to Mishi to start the "bombing run".|
 T The Seal is Broken|QID|31303|M|49.27,61.39|N|To Lorewalker Cho.|
 A Residual Fallout|QID|30500|M|49.27,61.39|N|From Lorewalker Cho.|
@@ -697,7 +696,7 @@ T Residual Fallout|QID|30500|M|49.32,61.50|N|To Lorewalker Cho.|
 T Jaded Heart|QID|30502|M|49.32,61.50|N|To Lorewalker Cho.|
 T Emergency Response|QID|31319|1/1|M|49.32,61.50|N|To Lorewalker Cho.|
 A Moving On|QID|30648|M|49.31,61.35|N|From Fei.|
-C Moving On|QID|30648|M|49.31,61.35|N|Talk to Fei.|
+C Moving On|QID|30648|CHAT|M|49.31,61.35|N|Talk to Fei.|
 T Moving On|QID|30648|N|To UI Alert (after the ride into the Valley).|
 
 N Congratulations,|N|You finished The Jade Forest. Next zone is Valley of the Four Winds, the guide should load when you check off this step.|
