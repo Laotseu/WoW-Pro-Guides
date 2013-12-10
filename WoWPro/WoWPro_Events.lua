@@ -35,9 +35,12 @@ end
 function WoWPro:AutoCompleteGetFP(...)
 	for i = 1,15 do
 		local index = WoWPro.rows[i].index
-		if ((... == ERR_NEWTAXIPATH and WoWPro.action[index] == "f" ) or
-			 (WoWPro.action[index] == "f" and WoWProCharDB.Taxi[WoWPro.step[index]]))
+		local step =  WoWPro.step[index]
+		if ((... == ERR_NEWTAXIPATH and WoWPro.action[index] == "f" and GetMinimapZoneText() == step) or
+			 (WoWPro.action[index] == "f" and WoWProCharDB.Taxi[step]))
 			and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
+			WoWProCharDB.Taxi[step] = true -- keep track of the discovered flightpoints
+			WoWPro:Print("Discovered Flight Point: [%s]",location)
 			WoWPro.CompleteStep(index)
 		end
 	end
