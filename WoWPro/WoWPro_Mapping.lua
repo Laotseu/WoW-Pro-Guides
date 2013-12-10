@@ -307,17 +307,33 @@ local zidmap = {
    [4395] = "Dalaran",
 }
 
+local QIDs = {}
 function WoWPro:findBlizzCoords(questId)
+
+	local QID = tonumber(questId)
+	wipe(QIDs)
+	if QID then
+		tinsert(QIDs, QID)
+	else
+		for qid in questId:gmatch("[^;]") do
+			tinsert(QIDs, tonumber(qid))
+		end
+	end
+
+	if #QIDs == 0 then return nil, nil end
+
 	local POIFrame
 
     	-- Try to find the correct quest frame
     	for i = 1, MAX_NUM_QUESTS do
         	local questFrame = _G["WorldMapQuestFrame"..i];
         	if ( questFrame ) then
-             		if ( questFrame.questId == questId ) then
-                		POIFrame = questFrame.poiIcon
-             			break
-             		end
+        		for _, qid in ipairs(QIDs) do
+        			if ( questFrame.questId == qid ) then
+             		POIFrame = questFrame.poiIcon
+          			break
+          		end
+        		end
         	end
     	end
 
@@ -514,10 +530,25 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	end
 	
 	-- Set working objective based on QID
-	if WoWPro.QID[i] and IsQuestWatched(GetQuestLogIndexByID(WoWPro.QID[i])) then
-		WORLDMAP_SETTINGS.selectedQuestId = WoWPro.QID[i]
-		QuestPOI_SelectButtonByQuestId("WatchFrameLines", WoWPro.QID[i], true)
-		SetSuperTrackedQuestID(WoWPro.QID[i])
+	if WoWPro.QID[i] then
+		local QID = tonumber(WoWPro.QID[i])
+		wipe(QIDs) -- define before WoWPro:findBlizzCoords
+		if QID then
+			tinsert(QIDs, QID)
+		else
+			for qid in WoWPro.QID[i]:gmatch("[^;]") do
+				tinsert(QIDs, tonumber(qid))
+			end
+		end
+
+		for _, qid in ipairs(QIDs) do
+			if IsQuestWatched(GetQuestLogIndexByID(qid)) then
+				WORLDMAP_SETTINGS.selectedQuestId = qid
+				QuestPOI_SelectButtonByQuestId("WatchFrameLines", qid, true)
+				SetSuperTrackedQuestID(qid)
+				break
+			end
+		end
 	end
 
 	-- If there aren't coords to map, ending map function --
