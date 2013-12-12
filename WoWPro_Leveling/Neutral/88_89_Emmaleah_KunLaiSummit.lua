@@ -261,10 +261,10 @@ A The Fall of Shai Hu|QID|30855|N|From Waterspeaker Gorai.|
 C The Fall of Shai Hu|QID|30855|M|71.16,82.96|N|Kill the small Sha on the island, reasonably close to Shai Hu to weaken him. You must attack Shai Hu at least once with a hit for the quest kill to register.|
 T The Fall of Shai Hu|QID|30855|M|74.90,88.58|N|To Waterspeaker Gorai, back at Inkgill Mere.|
 
-C Eastwind Rest - Farmhand Ko|QID|30513|FACTION|Horde|NC|QO|Speak with Farmhand Ko: 1/1|M|63.65,86.68|N|Head to The Yaungo Advance, find Farmhand Ko and talk to him.|
-C Westwind Rest - Farmhand Bo|QID|30512|FACTION|Alliance|NC|QO|Speak with Farmhand Bo: 1/1|M|58.89,80.47|N|Head to The Yaungo Advance, find Farmhand Bo and talk to him|
-C Eastwind Rest - Elder Shiao|QID|30513|FACTION|Horde|NC|QO|Speak with Elder Shiao: 1/1|M|61.25,82.25|N|Continue down the road, then talk to Elder Shiao.|
-C Westwind Rest - Elder Tsulan|QID|30512|FACTION|Alliance|NC|QO|Speak with Elder Tsulan: 1/1|M|56.38,84.44|N|Continue down the road, then talk to Elder Tsulan.|
+C Eastwind Rest - Farmhand Ko|QID|30513|FACTION|Horde|CHAT|QO|Speak with Farmhand Ko: 1/1|M|63.65,86.68|N|Head to The Yaungo Advance, find Farmhand Ko and talk to him.|
+C Westwind Rest - Farmhand Bo|QID|30512|FACTION|Alliance|CHAT|QO|Speak with Farmhand Bo: 1/1|M|58.89,80.47|N|Head to The Yaungo Advance, find Farmhand Bo and talk to him|
+C Eastwind Rest - Elder Shiao|QID|30513|FACTION|Horde|CHAT|QO|Speak with Elder Shiao: 1/1|M|61.25,82.25|N|Continue down the road, then talk to Elder Shiao.|
+C Westwind Rest - Elder Tsulan|QID|30512|FACTION|Alliance|CHAT|QO|Speak with Elder Tsulan: 1/1|M|56.38,84.44|N|Continue down the road, then talk to Elder Tsulan.|
 
 T Eastwind Rest|QID|30513|FACTION|Horde|M|61.25,82.25|N|To Elder Shiao.|
 T Westwind Rest|QID|30512|FACTION|Alliance|M|56.38,84.44|N|To Elder Tsulan.|
