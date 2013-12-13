@@ -78,6 +78,14 @@ function WoWPro:CreateItemButton(parent, id)
 
 	itembutton:RegisterForClicks("anyUp")
 	itembutton:Hide()
+
+	--Add tooltip to the button
+	itembutton:HookScript("OnEnter", function (self)
+		if self.item_id then
+			GameTooltip:SetOwner(self); GameTooltip:SetHyperlink("item:" .. self.item_id); GameTooltip:Show();
+		end
+	end);
+	itembutton:HookScript("OnLeave", GameTooltip_Hide);
 	
 	return itembutton, itemicon, cooldown
 end
@@ -98,6 +106,14 @@ function WoWPro:CreateTargetButton(parent, id)
 	targetbutton:RegisterForClicks("anyUp")
 	targetbutton:Hide()
 	
+	--Add tooltip to the button
+	targetbutton:HookScript("OnEnter", function (self)
+		if self.tooltip_text then
+			GameTooltip:SetOwner(self); GameTooltip:SetText(self.tooltip_text); GameTooltip:Show();
+		end
+	end);
+	targetbutton:HookScript("OnLeave", GameTooltip_Hide);
+
 	return targetbutton, targeticon
 end
 
