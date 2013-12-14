@@ -4,6 +4,8 @@
 
 local L = WoWPro_Locale
 
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 -- Remeber Taxi Locations
 function WoWPro:RecordTaxiLocations(...)
     for i = 1, NumTaxiNodes() do
@@ -340,6 +342,17 @@ function WoWPro:UpdateQuestTracker()
 		local lootqty = WoWPro.lootqty[index] 
 		local QID = tonumber(WoWPro.QID[index])
 		local track = ""
+
+		-- If more then one QIDs, find if a QID is active
+		if WoWPro.QID[index] then
+			for qid in (WoWPro.QID[index]):gmatch("[^;]+") do
+				if WoWPro.QuestLog[tonumber(qid)] then 
+					QID = tonumber(qid)
+					break
+				end
+			end
+		end
+	--err("QID = %s,index = %s,action = %s,step = %s",QID,index,action,step)
 		
 		if tonumber(lootqty) ~= nil then lootqty = tonumber(lootqty) else lootqty = 1 end
 		-- Setting up quest tracker --
