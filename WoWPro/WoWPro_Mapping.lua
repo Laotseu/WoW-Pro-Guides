@@ -315,7 +315,7 @@ function WoWPro:findBlizzCoords(questId)
 	if QID then
 		tinsert(QIDs, QID)
 	else
-		for qid in questId:gmatch("[^;]") do
+		for qid in questId:gmatch("[^;]+") do
 			tinsert(QIDs, tonumber(qid))
 		end
 	end
@@ -536,7 +536,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 		if QID then
 			tinsert(QIDs, QID)
 		else
-			for qid in WoWPro.QID[i]:gmatch("[^;]") do
+			for qid in WoWPro.QID[i]:gmatch("[^;]+") do
 				tinsert(QIDs, tonumber(qid))
 			end
 		end
