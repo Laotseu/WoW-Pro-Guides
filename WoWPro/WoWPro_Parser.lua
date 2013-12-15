@@ -1,6 +1,9 @@
 -----------------------------
 --      WoWPro_Parser      --
 -----------------------------
+
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 	
 local L = WoWPro_Locale
 WoWPro.actiontypes = {
@@ -43,6 +46,7 @@ WoWPro.actionlabels = {
 -- Determine Next Active Step (Leveling Module Specific)--
 -- This function is called by the main NextStep function in the core broker --
 function WoWPro:NextStepX(k, skip)
+err("WoWPro:NextStepX was called")
 	local GID = WoWProDB.char.currentguide
 	local myFaction = strupper(UnitFactionGroup("player"))
 
@@ -609,6 +613,13 @@ function WoWPro:RowUpdate(offset)
 			row.check:SetChecked(false)
 			row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
 		end
+
+		-- Add a label for optional steps
+		if optional then
+			note = "|cFF69CCF0Optional Step|r|n"..note
+		end
+
+
 		if note then note = strtrim(note) note = string.gsub(note,"\\n","\n") end
 		
 		

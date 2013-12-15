@@ -251,13 +251,14 @@ function WoWPro.UpdateGuideReal(From)
 	local p = 0
 	for j = 1,WoWPro.stepcount do
 		if ( WoWProCharDB.Guide[GID].completion[j] or WoWProCharDB.Guide[GID].skipped[j] )
-		and not WoWPro.sticky[j] 
-		and not WoWPro.optional[j] then 
+		and not WoWPro.sticky[j] then
+--		and not WoWPro.optional[j] then 
 			p = p + 1 
 		end
 	end
 	WoWProCharDB.Guide[GID].progress = p
-	WoWProCharDB.Guide[GID].total = WoWPro.stepcount - WoWPro.stickycount - WoWPro.optionalcount
+	-- WoWProCharDB.Guide[GID].total = WoWPro.stepcount - WoWPro.stickycount - WoWPro.optionalcount
+	WoWProCharDB.Guide[GID].total = WoWPro.stepcount - WoWPro.stickycount
 	
 	-- TODO: make next lines module specific
 	WoWPro.TitleText:SetText((WoWPro.Guides[GID].name or WoWPro.Guides[GID].zone).."   ("..WoWProCharDB.Guide[GID].progress.."/"..WoWProCharDB.Guide[GID].total..")")
@@ -326,22 +327,22 @@ function WoWPro:NextStep(k,i)
 		end
 		
 		-- Optional Quests --
-		if WoWPro.optional[k] and QID then 
-			skip = true --Optional steps default to skipped --
-			WoWPro.why[k] = "NextStep(): Optional steps default to skipped."
-			-- Checking Use Items --
-			if WoWPro.use and WoWPro.use[k] then
-				if GetItemCount(WoWPro.use[k]) >= 1 then 
-					skip = false -- If the optional quest has a use item and it's in the bag, it's NOT skipped --
-					WoWPro.why[k] = "NextStep(): Optional steps with an item to use that is present is not skipped."
-				end
-			end
-			-- Are we on the quest?
-			if WoWPro:QIDsInTable(QID,WoWPro.QuestLog) then
-				skip = false -- The optional quest is not skipped if we are on it!
-				WoWPro.why[k] = "NextStep(): Optional not skipped if on the quest!"			    
-			end
-		end
+		-- if WoWPro.optional[k] and QID then 
+		-- 	skip = true --Optional steps default to skipped --
+		-- 	WoWPro.why[k] = "NextStep(): Optional steps default to skipped."
+		-- 	-- Checking Use Items --
+		-- 	if WoWPro.use and WoWPro.use[k] then
+		-- 		if GetItemCount(WoWPro.use[k]) >= 1 then 
+		-- 			skip = false -- If the optional quest has a use item and it's in the bag, it's NOT skipped --
+		-- 			WoWPro.why[k] = "NextStep(): Optional steps with an item to use that is present is not skipped."
+		-- 		end
+		-- 	end
+		-- 	-- Are we on the quest?
+		-- 	if WoWPro:QIDsInTable(QID,WoWPro.QuestLog) then
+		-- 		skip = false -- The optional quest is not skipped if we are on it!
+		-- 		WoWPro.why[k] = "NextStep(): Optional not skipped if on the quest!"			    
+		-- 	end
+		-- end
 	
 	
 		-- Checking Prerequisites --
