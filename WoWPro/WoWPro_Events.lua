@@ -327,6 +327,8 @@ end
 
 
 -- Update Quest Tracker --
+local green = "FF00FF00"
+local white = "FFFFFFFF"
 function WoWPro:UpdateQuestTracker()
 	if not WoWPro.GuideFrame:IsVisible() then return end
 	local GID = WoWProDB.char.currentguide
@@ -341,6 +343,7 @@ function WoWPro:UpdateQuestTracker()
 		local step = WoWPro.step[index] 
 		local lootqty = WoWPro.lootqty[index] 
 		local QID = tonumber(WoWPro.QID[index])
+		local isActive = nil
 		local track = ""
 
 		-- If more then one QIDs, find if a QID is active
@@ -348,6 +351,7 @@ function WoWPro:UpdateQuestTracker()
 			for qid in (WoWPro.QID[index]):gmatch("[^;]+") do
 				if WoWPro.QuestLog[tonumber(qid)] then 
 					QID = tonumber(qid)
+					isActive = true
 					break
 				end
 			end
@@ -358,6 +362,14 @@ function WoWPro:UpdateQuestTracker()
 		-- Setting up quest tracker --
 		row.trackcheck = false
 		
+		-- Display the QID if needed.
+		if step then
+			if WoWProCharDB.ShowQID then
+				row.step:SetText(("[|c%s%s|r] %s"):format(isActive and green or white, QID or "---", step))
+			else
+				row.step:SetText(step)
+			end
+		end
 		
         -- Clean up any leftovers
 		row.track:SetText(track)
