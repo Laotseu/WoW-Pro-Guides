@@ -310,10 +310,25 @@ function WoWPro:NextStep(k,i)
 	if not i then i = 1 end --i is the position on the rows
 	WoWPro:dbp("Called WoWPro:NextStep(%d,%d)",k,i)
 	local skip = true
+	local loop, lastk = 1, 0
+	WoWPro.CurrentIndex = WoWPro.CurrentIndex or 0
+
 	-- The "repeat ... break ... until true" hack is how you do a continue in LUA!  http://lua-users.org/lists/lua-l/2006-12/msg00444.html
 	while skip do repeat
 		local QID=WoWPro.QID[k]
 		skip = false -- The step defaults to NOT skipped
+
+		-- Infinite loop detection and protection
+		if lastk == k then
+			loop = loop + 1
+			if loop > 20 then
+				err("Looping on %s",k)
+				return
+			end
+		else
+			loop = 0
+			lastk = k
+		end 
 		
 		-- Quickly skip completed steps --
 		if WoWProCharDB.Guide[GID].completion[k] then skip = true ; break end
@@ -761,6 +776,18 @@ function WoWPro:NextStepNotSticky(k)
 	end
 	return k
 end
+
+function WoWPro:NextStepNotSticky(k)
+	k = k or 1
+	while k = WoWPro:NextStep(k) do 
+		if WoWPro.sticky[k] then 
+			k = k + 1
+		else
+			return k
+		end
+	end
+end
+
 
 -- Step Completion Tasks --
 function WoWPro.CompleteStep(step)

@@ -282,7 +282,6 @@ function WoWPro:OnInitialize()
 	    WoWProCharDB.AutoHideInsideInstances = true
 	end
 	WoWPro.DebugLevel = WoWProCharDB.DebugLevel
-    
 end
 
 
@@ -325,6 +324,15 @@ function WoWPro:OnEnable()
 	for name, module in WoWPro:IterateModules() do
 		WoWPro:dbp("Enabling "..name.." module...")
 		module:Enable()
+		
+		-- Build the complete list of possible action labels
+		if module.actionlabels then
+			for k, v in pairs(module.actionlabels) do
+				if not WoWPro.actionlabels[k] then
+					WoWPro.actionlabels[k] = v
+				end
+			end
+		end
 	end
 	
 	WoWPro:CustomizeFrames()	-- Applies profile display settings

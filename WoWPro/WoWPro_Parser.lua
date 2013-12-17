@@ -209,13 +209,17 @@ function WoWPro:UnSkipStep(index)
 end
 
 
-function WoWPro.ParseQuestLine(faction,i,text)
+function WoWPro.ParseQuestLine(faction,i,text,realline)
 	local GID = WoWProDB.char.currentguide
 	
 	_, _, WoWPro.action[i], WoWPro.step[i] = text:find("^(%a) ([^|]*)(.*)")
 	if (not WoWPro.action[i]) or (not WoWPro.step[i]) then
-	    WoWPro:Error("Line %d in guide %s is badly formatted: \"%s\"\nParsing Halted.",i,GID,text)
+	    WoWPro:Error("Line %d in guide %s is badly formatted: \"%s\"\nParsing Halted.",realline,GID,text)
 	    return
+	end
+	if not WoWPro.actionlabels[WoWPro.action[i]] then
+		WoWPro:Error("Invalid action label %s at line %d in guide %s: \"%s\"\nParsing Halted.",WoWPro.action[i],realline,GID,text)
+		return
 	end
 	WoWPro.step[i] = WoWPro.step[i]:trim()
 	WoWPro.stepcount = WoWPro.stepcount + 1
@@ -240,7 +244,7 @@ function WoWPro.ParseQuestLine(faction,i,text)
 		local line =string.format("Vers=%s|Guide=%s|Line=%s",WoWPro.Version,GID,text)
         WoWProDB.global.ZoneErrors = WoWProDB.global.ZoneErrors or {}
         table.insert(WoWProDB.global.ZoneErrors, line)
-	    WoWPro:Error("Invalid Z tag in:"..text)
+	    WoWPro:Error("Invalid Z tag at line %s in: %s",realline,text)
 	    WoWPro.zone[i] = nil
 	end
 	_, _, WoWPro.lootitem[i], WoWPro.lootqty[i] = text:find("|L|(%d+)%s?(%d*)|")
@@ -265,7 +269,7 @@ function WoWPro.ParseQuestLine(faction,i,text)
 		else
 		    WoWPro.waypcomplete[i] = false
 		    if WoWPro.map[i]:find(";") then
-		        WoWPro:Warning("Step %s [%s:%s] in %s is missing a CS|CC|CN tag.",WoWPro.action[i],WoWPro.step[i],tostring(WoWPro.QID[i]),WoWProDB.char.currentguide)
+		        WoWPro:Warning("Step %s [%s:%s] at line %s in %s is missing a CS|CC|CN tag.",WoWPro.action[i],WoWPro.step[i],tostring(WoWPro.QID[i]),realline,WoWProDB.char.currentguide)
 		    end
 		end
 	end
@@ -287,7 +291,7 @@ function WoWPro.ParseQuestLine(faction,i,text)
 	WoWPro.ach[i] = text:match("|ACH|([^|]*)|?")
 	WoWPro.buff[i] = text:match("|BUFF|([^|]*)|?")
 	WoWPro.recipe[i] = text:match("|RECIPE|([^|]*)|?")
-	WoWPro.why[i] = "I dunno."
+	WoWPro.why[i] = nil
 
     -- If the step is "Achievement" use the name and description from the server ...
     if WoWPro.ach[i] and false then
@@ -362,7 +366,7 @@ function WoWPro:ParseSteps(steps)
 			   (gender == nil or gender == UnitSex("player")) and
 			   (faction == nil or myFaction == "NEUTRAL" or faction == myFaction) then
                 WoWPro.ParsingQuestLine = text
-				WoWPro.ParseQuestLine(faction,i,text)
+				WoWPro.ParseQuestLine(faction,i,text,j)
 				WoWPro.ParsingQuestLine = nil
 				i = i + 1
 			end
@@ -425,51 +429,51 @@ function WoWPro.SetupGuideReal()
     
 	WoWPro:PopulateQuestLog() --Calling this will populate our quest log table for use here
 	
-	-- Checking to see if any steps are already complete --
-	for i=1, WoWPro.stepcount do
-		local action = WoWPro.action[i]
-		local numQIDs
+	-- -- Checking to see if any steps are already complete --
+	-- for i=1, WoWPro.stepcount do
+	-- 	local action = WoWPro.action[i]
+	-- 	local numQIDs
 
-		if WoWPro.QID[i] then
-			numQIDs = select("#", string.split(";", WoWPro.QID[i]))
-		else
-			numQIDs = 0
-		end
+	-- 	if WoWPro.QID[i] then
+	-- 		numQIDs = select("#", string.split(";", WoWPro.QID[i]))
+	-- 	else
+	-- 		numQIDs = 0
+	-- 	end
 
         
-        if (not WoWProCharDB.Guide[GID].skipped[i]) and numQIDs > 0 then
-            WoWProCharDB.Guide[GID].completion[i] = false
-            WoWPro.why[i] = "UnCompleted by WoWPro:LoadGuideSteps() because quest was not skipped."
-        end
-		for j=1,numQIDs do
-			local QID = nil
-			local qid
-			if WoWPro.QID[i] then
-				qid = select(numQIDs-j+1, string.split(";", WoWPro.QID[i]))
-				QID = tonumber(qid)
-			end
+ --        if (not WoWProCharDB.Guide[GID].skipped[i]) and numQIDs > 0 then
+ --            WoWProCharDB.Guide[GID].completion[i] = false
+ --            WoWPro.why[i] = "UnCompleted by WoWPro:LoadGuideSteps() because quest was not skipped."
+ --        end
+	-- 	for j=1,numQIDs do
+	-- 		local QID = nil
+	-- 		local qid
+	-- 		if WoWPro.QID[i] then
+	-- 			qid = select(numQIDs-j+1, string.split(";", WoWPro.QID[i]))
+	-- 			QID = tonumber(qid)
+	-- 		end
 
-            if QID then
-                if recordQIDs then
-                    WoWProDB.global.QID2Guide[QID] = GID
-                end
-    		    -- Turned in quests --
-    			if WoWPro:IsQuestFlaggedCompleted(qid,true) then
-    			    WoWProCharDB.Guide[GID].completion[i] = true
-    			    WoWPro.why[i] = "Completed by WoWPro:LoadGuideSteps() because quest was flagged as complete."
-    			end
+ --            if QID then
+ --                if recordQIDs then
+ --                    WoWProDB.global.QID2Guide[QID] = GID
+ --                end
+ --    		    -- Turned in quests --
+ --    			if WoWPro:IsQuestFlaggedCompleted(qid,true) then
+ --    			    WoWProCharDB.Guide[GID].completion[i] = true
+ --    			    WoWPro.why[i] = "Completed by WoWPro:LoadGuideSteps() because quest was flagged as complete."
+ --    			end
     	
-    		    -- Quest Accepts and Completions --
-    		    if not WoWProCharDB.Guide[GID].completion[i] and WoWPro.QuestLog[QID] then 
-    			    if action == "A" then WoWProCharDB.Guide[GID].completion[i] = true end
-    			    if action == "C" and select(7,GetQuestLogTitle(WoWPro.QuestLog[QID])) == 1 then
-    				    WoWProCharDB.Guide[GID].completion[i] = true
-    				    WoWPro.why[i] = "Completed by WoWPro:LoadGuideSteps() because in QuestLog was complete."
-    			    end
-    		    end
-    		end
-		end
-	end
+ --    		    -- Quest Accepts and Completions --
+ --    		    if not WoWProCharDB.Guide[GID].completion[i] and WoWPro.QuestLog[QID] then 
+ --    			    if action == "A" then WoWProCharDB.Guide[GID].completion[i] = true end
+ --    			    if action == "C" and select(7,GetQuestLogTitle(WoWPro.QuestLog[QID])) == 1 then
+ --    				    WoWProCharDB.Guide[GID].completion[i] = true
+ --    				    WoWPro.why[i] = "Completed by WoWPro:LoadGuideSteps() because in QuestLog was complete."
+ --    			    end
+ --    		    end
+ --    		end
+	-- 	end
+	-- end
 	
 	-- Scrollbar Settings --
 	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount - WoWPro.ShownRows))
