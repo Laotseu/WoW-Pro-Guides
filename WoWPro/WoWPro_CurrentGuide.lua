@@ -90,13 +90,15 @@ frame:SetScript("OnShow", function()
 		row.check = WoWPro:CreateCheck(row)
 		row.action = WoWPro:CreateAction(row, row.check)
 		row.action.frame:SetScript("OnEnter", function()
-		    if row.index and WoWPro.why and WoWPro.why[row.index] then
-		        tooltip:SetPoint("TOPLEFT", row, "BOTTOMLEFT", -10, 10)
-		        tooltiptext:SetHeight(125)
-		        tooltiptext:SetText(WoWPro.why[row.index])
-		        tooltiptext:SetHeight(tooltiptext:GetStringHeight())
-		        tooltip:SetHeight(tooltiptext:GetStringHeight()+20)
-		        tooltip:Show()
+			-- if row.index and WoWPro.why and WoWPro.why[row.index] then
+			if row.index then
+				local why = WoWPro.why and WoWPro.why[row.index] and (" : " .. WoWPro.why[row.index]) or ""
+				tooltip:SetPoint("TOPLEFT", row, "BOTTOMLEFT", -10, 10)
+				tooltiptext:SetHeight(125)
+				tooltiptext:SetText(("%s%s"):format(row.index, why))
+				tooltiptext:SetHeight(tooltiptext:GetStringHeight())
+				tooltip:SetHeight(tooltiptext:GetStringHeight()+20)
+				tooltip:Show()
 		    end
 		end)
 		row.action.frame:SetScript("OnLeave", function()
