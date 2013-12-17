@@ -806,7 +806,10 @@ function WoWPro:QuestDialogAutomation()
 
 		-- Accept the current quest automaticaly if applicable
 		local qidx = WoWPro.CurrentIndex
-		if WoWProCharDB.AutoAccept and WoWPro.action[qidx] == "A" and GetTitleText() == WoWPro.step[qidx] then
+		if WoWProCharDB.AutoAccept and 
+			WoWPro.action[qidx] == "A" and 
+			GetTitleText() == WoWPro.step[qidx] and
+			not WoWPro.optional[qidx] then -- Don' t automatically accept optional quests
 			-- Auto Quest are automaticaly accepted as soon as you see the quest text
 			-- This code was lifted from QuestFrame.lua to prevent calling AcceptQuest()
 			-- for an already accepted quest.
