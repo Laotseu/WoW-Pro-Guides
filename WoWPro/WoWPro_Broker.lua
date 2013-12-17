@@ -335,10 +335,14 @@ function WoWPro:NextStep(k,i)
 
 		-- Quickly skip any manually skipped quests --
 		if WoWProCharDB.Guide[GID].skipped[k] then
-			WoWPro:dbp("SkippedStep(%d,%s [%s])",k,WoWPro.action[k],WoWPro.step[k]); skip = true ;  break
+			WoWPro:dbp("SkippedStep(%d,%s [%s])",k,WoWPro.action[k],WoWPro.step[k]); 
+			skip = true ;  
+			break
 		elseif WoWProCharDB.skippedQIDs[QID] then
 			WoWProCharDB.Guide[GID].skipped[k] = true
-			WoWPro:dbp("SkippedQUID(%d, qid=%s, %s [%s])",k,QID,WoWPro.action[k],WoWPro.step[k]); skip = true ; break
+			WoWPro:dbp("SkippedQUID(%d, qid=%s, %s [%s])",k,QID,WoWPro.action[k],WoWPro.step[k]); 
+			skip = true ; 
+			break
 		end
 		
 		-- Optional Quests --
@@ -375,6 +379,7 @@ function WoWPro:NextStep(k,i)
         		if totalFailure then
         		    skip = true
         		    WoWPro.why[k] = "NextStep(): None of possible prereqs was met."
+        		    break
         		end
         	else
      	        -- All prereq met must be met	
@@ -384,9 +389,10 @@ function WoWPro:NextStep(k,i)
         			if not WoWProCharDB.completedQIDs[tonumber(jprereq)] then 
         				skip = true -- If one of the prereqs is NOT complete, step is skipped.
         				WoWPro.why[k] = "NextStep(): Not all of the prereqs was met: " .. WoWPro.prereq[k]
+        				break
         			end
         		end
-       	    end
+			end
     	end
 
     	-- Skipping quests with prerequisites if their prerequisite was skipped --
@@ -412,6 +418,7 @@ function WoWPro:NextStep(k,i)
     			end
     		end
     	end
+    	if skip then break end -- Exit the loop
 
         -- Partial Completion --
         -- Already done in AutoCompleteQuestUpdate
@@ -437,12 +444,14 @@ function WoWPro:NextStep(k,i)
 	       --  end 
         -- end
 
-	    -- Skip C or T steps if not in QuestLog
-	    if WoWPro.action[k] == "C" or WoWPro.action[k] == "T" then
-	        if not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) then 
+	   -- Skip C or T steps if not in QuestLog
+	   if WoWPro.action[k] == "C" or WoWPro.action[k] == "T" then
+	      if not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) and k <= WoWPro.CurrentIndex then 
     			skip = true -- If the quest is not in the quest log, the step is skipped --
     			WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k],WoWPro.active[k])
     			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in QuestLog."
+  				WoWProCharDB.Guide[GID].skipped[k] = true
+    			break
     		end
     	end
     	
@@ -450,28 +459,33 @@ function WoWPro:NextStep(k,i)
     	if WoWPro.action[k] == "f"  and WoWProCharDB.Taxi[WoWPro.step[k]] then
 	        WoWPro.CompleteStep(k)
 	        skip = true
+	        break
 	   end	
 
 	   -- Complete "H" steps if the Hearthstone is already bound to the correct desnisation
-	   if WoWPro.action[k] == "H" and WoWPro.step[k] == GetBindLocation() then
+	   if WoWPro.action[k] == "H" and WoWPro.step[k] == GetBindLocation() and k <= WoWPro.CurrentIndex then
 		   WoWPro.CompleteStep(k)
 		   skip = true
+		   break
 	   end
 
 	   -- Current zone check : steps that complete if were are in the correct zone.
 	   if (WoWPro.action[k] == "F" or WoWPro.action[k] == "R" or WoWPro.action[k] == "b" or WoWPro.action[k] == "H") and
 	   	not WoWPro.waypcomplete[k] and
+	   	k <= WoWPro.CurrentIndex and
 	   	(WoWPro.step[k] == GetZoneText():trim() or WoWPro.step[k] == GetSubZoneText():trim()) then
 
 	   	WoWPro.CompleteStep(k)
 	   	skip = true
+	   	break
 	   end
 
 	    -- Check for must be active quests
-		if WoWPro.active and WoWPro.active[k] then
+		if WoWPro.active and WoWPro.active[k] and k <= WoWPro.CurrentIndex then
 			if not WoWPro:QIDsInTable(WoWPro.active[k],WoWPro.QuestLog) then 
 				skip = true -- If the quest is not in the quest log, the step is skipped --
 				WoWPro.why[k] = "NextStep(): Skipping step necessary ACTIVE quest is not in QuestLog."
+				break
 			end
 			WoWPro:dbp("Step %s [%s] ACTIVE %s, skip=%s",WoWPro.action[k],WoWPro.step[k],WoWPro.active[k],tostring(skip))
 		end
@@ -629,9 +643,9 @@ function WoWPro:NextStep(k,i)
 			    WoWProCharDB.Guide[GID].skipped[k] = true
 			    WoWProCharDB.skippedQIDs[QID] = true
 			end
-        end
+      end
         
-        -- Skipping Achievements if completed  --
+      -- Skipping Achievements if completed  --
     	if WoWPro.ach and WoWPro.ach[k] then
     		local achnum, achitem, achflip = string.split(";",WoWPro.ach[k])
     		achflip = WoWPro.toboolean(achflip) 
@@ -695,10 +709,10 @@ function WoWPro:NextStep(k,i)
         		WoWPro:dbp("recipe #%d %s/%d is known: %s",k,WoWPro.step[k],WoWPro.recipe[k],tostring(WoWProCharDB.Trades[WoWPro.recipe[k]]))
         		break
         	end
-        end
+      end
         
     	-- This tests for spells that are cast on you and show up as buffs
-    	if WoWPro.buff and WoWPro.buff[k] then
+    	if WoWPro.buff and WoWPro.buff[k] and k <= WoWPro.CurrentIndex then
     	    local buffy = WoWPro:CheckPlayerForBuffs(WoWPro.buff[k])
     	    if buffy then
 	            skip = true
@@ -716,11 +730,11 @@ function WoWPro:NextStep(k,i)
 			end
 		end
 		
-		skip = WoWPro[WoWPro.Guides[GID].guidetype]:NextStep(k, skip)
+		--skip = WoWPro[WoWPro.Guides[GID].guidetype]:NextStep(k, skip)
 		
 
-        -- Do we have enough loot in bags?
-		if (WoWPro.lootitem and WoWPro.lootitem[k]) then
+      -- Do we have enough loot in bags?
+		if (WoWPro.lootitem and WoWPro.lootitem[k] and k <= WoWPro.CurrentIndex) then
 		    if GetItemCount(WoWPro.lootitem[k]) >= WoWPro.lootqty[k] then
 		        if WoWPro.action[k] == "T" then
 		            -- Special for T steps, do NOT skip.  Like Darkmoon [Test Your Strength]
@@ -739,14 +753,14 @@ function WoWPro:NextStep(k,i)
 			end
 		else		
     		-- Special for Buy steps where the step name is the item to buy and no |L| specified
-    		if WoWPro.action[k] == "B" then
+    		if WoWPro.action[k] == "B" and k <= WoWPro.CurrentIndex then
     		    if GetItemCount(WoWPro.step[k]) > 0 then
     			    WoWPro.why[k] = "NextStep(): completed cause you bought enough named loot."
     			    WoWPro.CompleteStep(k)
     			    skip = true
     			end
     		end		    
-        end
+      end
 		
 		-- Skipping any unstickies until it's time for them to display --
 		if WoWPro.unsticky[k] and WoWPro.ActiveStickyCount and i > WoWPro.ActiveStickyCount+1 then 
