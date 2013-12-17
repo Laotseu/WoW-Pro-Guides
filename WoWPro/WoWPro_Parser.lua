@@ -848,10 +848,21 @@ end
 
 -- Left-Click Row Function --
 function WoWPro:RowLeftClick(i)
-    local QID = tonumber(WoWPro.QID[WoWPro.rows[i].index])
-	if  QID and WoWPro.QuestLog[QID] then
-	    ShowUIPanel(QuestLogFrame)
-	    -- QuestLog_OpenToQuest(WoWPro.QuestLog[QID].index)
+	local QID
+
+	-- If more then one QIDs, find if a QID is active
+	if WoWPro.QID[WoWPro.rows[i].index] then
+		for qid in (WoWPro.QID[WoWPro.rows[i].index]):gmatch("[^;]+") do
+			if WoWPro.QuestLog[tonumber(qid)] then 
+				QID = tonumber(qid)
+				break
+			end
+		end
+	end
+
+	if QID then
+	   ShowUIPanel(QuestLogFrame)
+	   -- QuestLog_OpenToQuest(WoWPro.QuestLog[QID].index)
 		QuestLog_OpenToQuest(WoWPro.QuestLog[QID])
 	end
 	WoWPro.rows[i]:SetChecked(nil)
