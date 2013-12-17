@@ -217,7 +217,7 @@ function WoWPro.UpdateGuideReal(From)
 	    WoWPro:dbp("Suppresssed guide update. Guide %s is not loaded yet!",tostring(GID))
         return 
 	end
-		
+
 	-- If the module that handles this guide is not present and enabled, then end --
 	local module = WoWPro:GetModule(WoWPro.Guides[GID].guidetype)
 	if not module or not module:IsEnabled() then return end
@@ -261,7 +261,7 @@ function WoWPro.UpdateGuideReal(From)
 	WoWProCharDB.Guide[GID].total = WoWPro.stepcount - WoWPro.stickycount
 	
 	-- TODO: make next lines module specific
-	WoWPro.TitleText:SetText((WoWPro.Guides[GID].name or WoWPro.Guides[GID].zone).."   ("..WoWProCharDB.Guide[GID].progress.."/"..WoWProCharDB.Guide[GID].total..")")
+	WoWPro.TitleText:SetText((WoWPro.Guides[GID].name or WoWPro.Guides[GID].zone).."   ("..(WoWProCharDB.Guide[GID].progress+1).."/"..WoWProCharDB.Guide[GID].total..")")
 	
 	-- If the guide is complete, loading the next guide --
 	if WoWProCharDB.Guide[GID].progress == WoWProCharDB.Guide[GID].total 
