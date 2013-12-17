@@ -519,6 +519,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 		end
 	end
 
+	if eric_map then err("zone = %s,floor = %s,desc = %s",zone,floor,desc) end
 
 	-- Loading Blizzard Coordinates for this objective, if coordinates aren't provided --
 	if (WoWPro.action[i]=="T" or WoWPro.action[i]=="C") and WoWPro.QID and WoWPro.QID[i] and (not coords or forceBlizCoord)then
@@ -562,14 +563,19 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	        -- Using a numeric zone ID
 	        zm = tonumber(zone)
 	        zf = floor
-	        elseif WoWPro.Zone2MapID[zone] then
-	        -- Zone found in DB
-	        zm = WoWPro.Zone2MapID[zone].mapID
-	        zf = WoWPro.Zone2MapID[zone].floor or floor
-	        zc = WoWPro.Zone2MapID[zone].cont
-	        zi = WoWPro.Zone2MapID[zone].zonei
-	     end
-	  end
+	   elseif WoWPro.Zone2MapID[zone] then
+			-- Zone found in DB
+			zm = WoWPro.Zone2MapID[zone].mapID
+			zf = WoWPro.Zone2MapID[zone].floor or floor
+			zc = WoWPro.Zone2MapID[zone].cont
+			zi = WoWPro.Zone2MapID[zone].zonei
+
+			-- Hack for Tomtom
+			if (not zf or zf == 0) and WoWPro.Zone2MapID[zone].numFloors and WoWPro.Zone2MapID[zone].numFloors > 1 then
+				zf = 1 -- use 1 instead of 0 when there is more then one floor and the floor is not specified
+			end
+	   end
+	end
 
 	  if not zm then
 	  	zm = GetCurrentMapAreaID()
@@ -634,6 +640,9 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 					world = true,
 					crazy = true,
 					})
+
+				if eric_map then err("zm = %s, zf = %s, x/100 = %s, y/100 = %s, uid = %s",zm, zf,x/100, y/100, uid) end
+
 			end
 			--err("Add WP: j = %s / %s, x = %s, y = %s, zm = %s, zf = %s, uid_x = %s, uid_y = %s, title = %s", j, numcoords, x, y, zm, zf, uid[3], uid[4], desc)
 			if not uid then
