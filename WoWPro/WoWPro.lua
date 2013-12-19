@@ -277,6 +277,12 @@ function WoWPro:OnInitialize()
 	end
 	WoWProDB.global.Deltas = {}
 	WoWProDB.global.Log = {}
+	if WoWProDB.char.currentguide and 
+		WoWProCharDB.Guide and 
+		WoWProCharDB.Guide[WoWProDB.char.currentguide] and 
+		WoWProCharDB.Guide[WoWProDB.char.currentguide].total then
+		WoWProCharDB.Guide[WoWProDB.char.currentguide].total = nil
+	end
 	WoWProCharDB.DebugLevel = WoWProCharDB.DebugLevel or WoWPro.DebugLevel
 	if WoWProCharDB.AutoHideInsideInstances == nil then
 	    WoWProCharDB.AutoHideInsideInstances = true
