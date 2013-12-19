@@ -225,7 +225,14 @@ function WoWPro.UpdateGuideReal(From)
 	-- Finding the active step in the guide --
 -- err("ActiveStep = %s, CurrentIndex = %s", WoWPro.ActiveStep, WoWPro.CurrentIndex)	
 	local oldCurrentIndex = WoWPro.CurrentIndex
+	
+	-- Ensure that the current step is not skiped
 	WoWPro.ActiveStep = WoWPro:NextStep(1)
+	local ActiveStep = WoWPro.ActiveStep
+	repeat
+		WoWPro.ActiveStep = WoWPro:NextStep(ActiveStep)
+	until ActiveStep == WoWPro.ActiveStep
+
 	if WoWPro.Recorder then WoWPro.ActiveStep = WoWPro.Recorder.SelectedStep or WoWPro.ActiveStep end
 	if not offset then WoWPro.Scrollbar:SetValue(WoWPro.ActiveStep) end
 	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount))
@@ -365,14 +372,14 @@ function WoWPro:NextStep(k,i)
 	
 	
 		-- Checking Prerequisites --
-    	if WoWPro.prereq[k] then
+    	if WoWPro.prereq[k] and k <= WoWPro.CurrentIndex then
     	    if string.find(WoWPro.prereq[k],"+") then
     	        -- Any prereq met is OK, skip only if none are met	
         		local numprereqs = select("#", string.split("+", WoWPro.prereq[k]))
         		local totalFailure = true
         		for j=1,numprereqs do
         			local jprereq = select(numprereqs-j+1, string.split("+", WoWPro.prereq[k]))
-        			if WoWProCharDB.completedQIDs[tonumber(jprereq)] then 
+        			if WoWPro:IsQuestFlaggedCompleted(tonumber(jprereq)) then 
         				totalFailure = false -- If one of the prereqs is complete, step is not skipped.
         			end
         		end
@@ -386,7 +393,7 @@ function WoWPro:NextStep(k,i)
         		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
         		for j=1,numprereqs do
         			local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
-        			if not WoWProCharDB.completedQIDs[tonumber(jprereq)] then 
+        			if not WoWPro:IsQuestFlaggedCompleted(tonumber(jprereq)) then 
         				skip = true -- If one of the prereqs is NOT complete, step is skipped.
         				WoWPro.why[k] = "NextStep(): Not all of the prereqs was met: " .. WoWPro.prereq[k]
         				break
@@ -396,7 +403,7 @@ function WoWPro:NextStep(k,i)
     	end
 
     	-- Skipping quests with prerequisites if their prerequisite was skipped --
-    	if WoWPro.prereq[k] 
+    	if WoWPro.prereq[k] and k <= WoWPro.CurrentIndex 
     	and not WoWProCharDB.Guide[GID].skipped[k] 
     	and not WoWProCharDB.skippedQIDs[QID] then 
     		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
@@ -445,14 +452,14 @@ function WoWPro:NextStep(k,i)
         -- end
 
 	   -- Skip C or T steps if not in QuestLog
-	   if WoWPro.action[k] == "C" or WoWPro.action[k] == "T" then
-	      if not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) and k <= WoWPro.CurrentIndex then 
-    			skip = true -- If the quest is not in the quest log, the step is skipped --
-    			WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k],WoWPro.active[k])
-    			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in QuestLog."
-  				WoWProCharDB.Guide[GID].skipped[k] = true
-    			break
-    		end
+	   if (WoWPro.action[k] == "C" or WoWPro.action[k] == "T") and
+	      not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) and 
+	      k <= WoWPro.CurrentIndex then 
+ 			skip = true -- If the quest is not in the quest log, the step is skipped --
+ 			WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k],WoWPro.active[k])
+ 			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in QuestLog."
+			WoWProCharDB.Guide[GID].skipped[k] = true
+ 			break
     	end
     	
     	-- Complete "f" steps if we know the flight point already
@@ -791,16 +798,16 @@ function WoWPro:NextStepNotSticky(k)
 	return k
 end
 
-function WoWPro:NextStepNotSticky(k)
-	k = k or 1
-	while k = WoWPro:NextStep(k) do 
-		if WoWPro.sticky[k] then 
-			k = k + 1
-		else
-			return k
-		end
-	end
-end
+-- function WoWPro:NextStepNotSticky(k)
+-- 	k = k or 1
+-- 	while (k = WoWPro:NextStep(k) do 
+-- 		if WoWPro.sticky[k] then 
+-- 			k = k + 1
+-- 		else
+-- 			return k
+-- 		end
+-- 	end
+-- end
 
 
 -- Step Completion Tasks --
