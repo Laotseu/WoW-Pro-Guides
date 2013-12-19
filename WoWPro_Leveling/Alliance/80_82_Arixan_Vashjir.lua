@@ -285,7 +285,7 @@ A All or Nothing|QID|25558|PRE|25547|M|45,23.5|Z|Kelp'thar Forest|N|From Captain
 C All or Nothing|QID|25558|M|45,23.5|Z|Kelp'thar Forest|N|As soon as you accept the quest, a small battle event starts outside the ship.Do your best to stay alive. Erunak will eventually finish off the first wave, then after a short pause the second wave comes. The soldiers will get carried off one by one, and eventually you will get captured as well. Erunak rescues you and leads you to the next quest hub.|
 T All or Nothing|QID|25558|M|46.3,46.9|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Better Late Than Dead|QID|25477|PRE|25558|M|46.0,46.8|Z|Kelp'thar Forest|N|From Moanah Stormhoof.|
-C Better Late Than Dead|QID|25477|U|54462|M|49.5,40.9;54.8,54.3|U|54462|Z|Kelp'thar Forest|CN|N|Enter the Kelp Forest and look for a Sea Turtle. When you find one, use Moanah's Baitstick. Once you are riding the turtle, swim back toward Shallow's End. You are going to get...dismounted. There is no way to avoid it so don't feel bad. Swim the rest of the way back to Shallow's End.|
+C Better Late Than Dead|QID|25477|NC|T|Speckled Sea Turtle|U|54462|M|49.5,40.9;54.8,54.3|U|54462|Z|Kelp'thar Forest|CN|N|Enter the Kelp Forest and look for a Sea Turtle. When you find one, use Moanah's Baitstick. Once you are riding the turtle, swim back toward Shallow's End. You are going to get...dismounted. There is no way to avoid it so don't feel bad. Swim the rest of the way back to Shallow's End.|
 T Better Late Than Dead|QID|25477|M|46.0,46.8|Z|Kelp'thar Forest|N|To Moanah Stormhoof.|
 A The Abyssal Ride|QID|25371|PRE|25477|M|46.0,46.8|Z|Kelp'thar Forest|N|From Moanah Stormhoof.|
 C The Abyssal Ride|QID|25371|M|45.46,46.74|Z|Kelp'thar Forest|QO|Tie off the Seahorse lure: 1/1|N|Go to the west of Moanah Stormhoof to find the coil of rope. Use the coil of rope to send the bait out into the chasm.|
@@ -300,7 +300,7 @@ C Gimme Shelter!|QID|25587|M|53.67,34.32|Z|Kelp'thar Forest|N|Swim back out of t
 T Gimme Shelter!|QID|25587|M|57.1,28.8|Z|Kelp'thar Forest|N|Swim back into the cave and talk to Adarrah.|
 A Ain't Too Proud to Beg|QID|25598|M|57.09,28.87|Z|Kelp'thar Forest|N|From Adarrah.|
 A A Case of Crabs|QID|25388|RANK|2|M|49.70,40.89|Z|Kelp'thar Forest|N|Swim back out into the Kelp Forest and find a crate. Click on the crate to accept A Case of Crabs.|
-C Ain't Too Proud to Beg|QID|25598|M|48.2,39.4|Z|Kelp'thar Forest|N|Find Captain Samir and Mack Fearsen. Talk to Samir and tell him about Smuggler's Hole.|
+C Ain't Too Proud to Beg|QID|25598|CHAT|M|48.2,39.4|Z|Kelp'thar Forest|N|Find Captain Samir and Mack Fearsen. Talk to Samir and tell him about Smuggler's Hole.|
 T Ain't Too Proud to Beg|QID|25598|M|57.1,28.8|Z|Kelp'thar Forest|N|To Adarrah.|
 T A Case of Crabs|QID|25388|RANK|2|M|57.1,28.8|Z|Kelp'thar Forest|N|To Adarrah.|
 A A Girl's Best Friend|QID|25390|PRE|25598|RANK|2|M|57.1,28.8|Z|Kelp'thar Forest|N|From Adarrah.|
