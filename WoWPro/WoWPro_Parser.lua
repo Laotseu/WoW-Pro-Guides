@@ -47,6 +47,7 @@ WoWPro.actionlabels = {
 -- This function is called by the main NextStep function in the core broker --
 function WoWPro:NextStepX(k, skip)
 err("WoWPro:NextStepX was called")
+	do return end
 	local GID = WoWProDB.char.currentguide
 	local myFaction = strupper(UnitFactionGroup("player"))
 
