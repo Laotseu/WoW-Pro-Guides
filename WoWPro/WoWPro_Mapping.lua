@@ -169,6 +169,7 @@ local function WoWProMapping_distance(event, uid, range, distance, lastdistance)
 		end
 
 		if autoarrival and iactual == 1 then
+			TomTom:RemoveWaypoint(cache[iactual].uid)
 			-- F, R, b and H steps with |CC| complete when the last points is reached
 			local action = WoWPro.action[cache[iactual].index]
 		   if action == "F" or action == "R" or action == "b" or action == "H" then
@@ -180,6 +181,7 @@ local function WoWProMapping_distance(event, uid, range, distance, lastdistance)
 
 		--if iactual ~= #cache then return
 		if iactual == 1 and autoarrival == 2 then
+			TomTom:RemoveWaypoint(cache[iactual].uid)
 			local action = WoWPro.action[cache[iactual].index]
 			-- F, R, b and H steps with |CS| complete when the last points is reached
 		   if action == "F" or action == "R" or action == "b" or action == "H" then
