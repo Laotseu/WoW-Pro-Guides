@@ -306,40 +306,41 @@ T A Case of Crabs|QID|25388|RANK|2|M|57.1,28.8|Z|Kelp'thar Forest|N|To Adarrah.|
 A A Girl's Best Friend|QID|25390|PRE|25598|RANK|2|M|57.1,28.8|Z|Kelp'thar Forest|N|From Adarrah.|
 A A Taste For Tail|QID|25389|PRE|25598|RANK|2|M|57.1,28.8|Z|Kelp'thar Forest|N|From Adarrah.|
 A Can't Start a Fire Without a Spark|QID|25602|PRE|25598|M|57.3,28.9|Z|Kelp'thar Forest|N|From Captain Samir.|
-C A Girl's Best Friend|QID|25390|RANK|2|S|M|56.2,37.6;50.8,44.9;46.8,41.6;50.82,31.95|L|53074 6|Z|Kelp'thar Forest|CN|N|While you complete the other quests, look for Adarrah's Jewelry Box on the sea floor. They are small and a little hard to spot.|
+C A Girl's Best Friend|QID|25390|NC|RANK|2|S|M|56.2,37.6;50.8,44.9;46.8,41.6;50.82,31.95|L|53074 6|Z|Kelp'thar Forest|CN|N|While you complete the other quests, look for Adarrah's Jewelry Box on the sea floor. They are small and a little hard to spot.|
 C A Taste For Tail|QID|25389|RANK|2|M|48.77,36.36|Z|Kelp'thar Forest|L|53073 4|N|In the area just east, kill Clacksnap Pincers for A Taste For Tail. You should get a Tattered Treasure Map off one of them.|
 A The Horde's Hoard|QID|25377|RANK|2|Z|Kelp'thar Forest|U|53053|M|48.7,40.7;48.6,32.9;51.9,43.2;46.9,47.2|CN|N|If you don't have a Tattered Treasure Map yet, keep killing Clacksnap Pincers in the area until you get it. Use the map to accept the quest The Horde's Hoard.|
 l Crumpled Treasure Map|QID|25467|RANK|2|Z|Kelp'thar Forest|M|53.2,44.0;53.5,23.9;51.2,47.8|CN|L|54345|N|In the same area, kill Sabreclaw Skitterers until you get a Crumpled Treasure Map. This item will start the quest Kliklak's Craw.|
 A Kliklak's Craw|QID|25467|Z|Kelp'thar Forest|RANK|2|M|53.2,44.0;53.5,23.9;51.2,47.8|CN|U|54345|N|Use the map.|
 K Kliklak's Craw|QID|25467|RANK|2|M|45,38;43.89,39.85|Z|Kelp'thar Forest|CN|L|54344|N|Kliklak patrols around this area. Kill him and loot the Corroded key.|T|Kliklak|
 T Kliklak's Craw|QID|25467|RANK|2|M|46.6,47.5|Z|Kelp'thar Forest|U|54344|N|Swim to Shallow's End and locate the chest behind the two large shells. Open it to turn in Kliklak's Craw.|
-l Can't Start a Fire Without a Spark|QID|25602|M|55.4,38.8|Z|Kelp'thar Forest|L|55143|N|Get the Keg of Gunpowder at Budd's Dig.|
-K Akasha|QID|25377|M|56.4,40.1|L|53054|Z|Kelp'thar Forest|N|Kill Akasha who patrols around here and loot the Horde Chest Key.|QO|Horde Chest Key: 1/1|
+C Can't Start a Fire Without a Spark|QID|25602|NC|M|55.4,38.8|Z|Kelp'thar Forest|N|Get the Keg of Gunpowder at Budd's Dig.|
+K Akasha|QID|25377|M|56.4,40.1|T|Akasha|Z|Kelp'thar Forest|N|Kill Akasha who patrols around here and loot the Horde Chest Key.|
 T The Horde's Hoard|QID|25377|U|53054|M|57.8,35.1|Z|Kelp'thar Forest|N|The quest turn-in is at the Sunken Horde Chest.|
-C A Girl's Best Friend|QID|25390|RANK|2|US|M|56.2,37.6;50.8,44.9;46.8,41.6;50.82,31.95|CN|L|53074 6|Z|Kelp'thar Forest|N|Finish collecting Adarrah's Keepsake.|
+C A Girl's Best Friend|QID|25390|NC|RANK|2|US|M|56.2,37.6;50.8,44.9;46.8,41.6;50.82,31.95|CN|L|53074 6|Z|Kelp'thar Forest|N|Finish collecting Adarrah's Keepsake.|
 T A Taste For Tail|QID|25389|RANK|2|M|53.90,34.38;57.1,28.8|CS|Z|Kelp'thar Forest|N|To Adarrah.|
 T A Girl's Best Friend|QID|25390|RANK|2|M|57.1,28.8|Z|Kelp'thar Forest|N|To Adarrah.|
 T Can't Start a Fire Without a Spark|QID|25602|M|57.3,28.9|Z|Kelp'thar Forest|N|To Captain Samir.|
 A Nerve Tonic|QID|25358|PRE|25602|RANK|2|M|57.3,29.3|Z|Kelp'thar Forest|N|From Mack Fearsen.|
 A Ophidophobia|QID|25459|PRE|25602|M|57.1,28.8|Z|Kelp'thar Forest|N|From Adarrah.|
-C Nerve Tonic|QID|25358|RANK|2|S|M|56.1,37.2;56.87,39.51|CN|L|52973 5|Z|Kelp'thar Forest|N|Collect the small crates floating all around the ship.|
+C Nerve Tonic|QID|25358|NC|RANK|2|S|M|56.1,37.2;56.87,39.51|CN|L|52973 5|Z|Kelp'thar Forest|N|Collect the small crates floating all around the ship.|
 C Ophidophobia|QID|25459|M|57.7,39.5|Z|Kelp'thar Forest|N|Kill any Brinescale Serpents you see.|
-C Nerve Tonic|QID|25358|RANK|2|US|M|56.1,37.2;56.87,39.51|CN|L|52973 5|Z|Kelp'thar Forest|N|Finish collecting the small crates.|
-A An Opened Can of Whoop Gnash|QID|27687|Z|Kelp'thar Forest|RANK|2|M|52.83,46.24|U|62138|N|There is an elite giant wandering around called Gnash. If you are able to kill him via party or by yourself, loot his head and accept this quest.|
+C Nerve Tonic|QID|25358|NC|RANK|2|US|M|56.1,37.2;56.87,39.51|CN|L|52973 5|Z|Kelp'thar Forest|N|Finish collecting the small crates.|
+A An Opened Can of Whoop Gnash|QID|27687|T|Gnash|Z|Kelp'thar Forest|RANK|2|M|52.83,46.24|U|62138|N|There is an elite giant wandering around called Gnash. If you are able to kill him via party or by yourself, loot his head and accept this quest.|
 T Ophidophobia|QID|25459|M|53.62,34.62;57.1,28.8|CS|Z|Kelp'thar Forest|N|To Adarrah.|
-T An Opened Can of Whoop Gnash|QID|27687|Z|Kelp'thar Forest|RANK|2|M|57.31,28.95|N|To Captain Samir.|O|
+T An Opened Can of Whoop Gnash|QID|27687|Z|Kelp'thar Forest|RANK|2|M|57.31,28.95|N|To Captain Samir.|ACTIVE|
 T Nerve Tonic|QID|25358|RANK|2|M|57.3,29.1|Z|Kelp'thar Forest|N|To Mack Fearsen.|
 A A Desperate Plea|QID|25638|U|62137|M|56.48,29.99|Z|Kelp'thar Forest|N|From a Note in a Bottle.|
 A Oh, the Insanity!|QID|25651|PRE|25602|RANK|2|M|55.25,38.87|Z|Kelp'thar Forest|N|From Budd.|
-l Pilfered Cannballs|QID|25651|RANK|2|L|55185 50|S|M|50.2,49.7;54.9,58.8;52.75,50.21|Z|Kelp'thar Forest|CN|N|Kill Gilblin Hoarder's and collect cannonballs from stacks of cannonballs until you have 50 Pilfered Cannonballs.|
+;l Pilfered Cannballs|QID|25651|RANK|2|L|55185 50|S|M|50.2,49.7;54.9,58.8;52.75,50.21|Z|Kelp'thar Forest|CN|N|Kill Gilblin Hoarder's and collect cannonballs from stacks of cannonballs until you have 50 Pilfered Cannonballs.|
+C Oh, the Insanity!|QID|25651|S|RANK|2|M|51.66,53.23|Z|Kelp'thar Forest|U|55185|N|Kill Gilblin Hoarder's and collect cannonballs from stacks of cannonballs until you have 50 Pilfered Cannonballs. Use the cannonballs to convert them into a Keg of Gunpowder.|
 A Lady La-La's Medallion|QID|25419|RANK|2|U|55186|M|50.62,48.43|Z|Kelp'thar Forest|N|Kill Gilblin Collector's until you get Lady La-La's Necklace.|
-l Medallion Fragments|QID|25419|RANK|2|L|55188 5|M|49.3,48.7;53.6,54.6;55.7,58.7|Z|Kelp'thar Forest|CN|N|Kill Gilblin Collector's until you get 5 Medallion Fragments.|
-C Lady La-La's Medallion|QID|25419|M|49.3,48.7;53.6,54.6;55.7,58.7|Z|Kelp'thar Forest|CN|U|55188|N|Combine the 5 Medallion Fragments into Lady La-La's Medallion.|
+;l Medallion Fragments|QID|25419|RANK|2|L|55188 5|M|49.3,48.7;53.6,54.6;55.7,58.7|Z|Kelp'thar Forest|CN|N|Kill Gilblin Collector's until you get 5 Medallion Fragments.|
+C Lady La-La's Medallion|QID|25419|M|49.3,48.7;53.6,54.6;55.7,58.7|Z|Kelp'thar Forest|CN|U|55188|N|Kill Gilblin Collector's until you get 5 Medallion Fragments. Combine the 5 Medallion Fragments into Lady La-La's Medallion.|
 T Lady La-La's Medallion|QID|25419|M|49.3,48.7;53.6,54.6;55.7,58.7|Z|Kelp'thar Forest|CN|N|Complete the quest to get your reward.|
-l Pilfered Cannballs|QID|25651|RANK|2|L|55185 50|S|M|50.2,49.7;54.9,58.8;52.75,50.21|Z|Kelp'thar Forest|CN|N|Kill Gilblin Hoarder's and collect cannonballs from stacks of cannonballs until you have 50 Pilfered Cannonballs.|
-C Oh, the Insanity!|QID|25651|RANK|2|M|51.66,53.23|Z|Kelp'thar Forest|U|55185|N|Use the cannonballs to convert them into a Keg of Gunpowder.|
-N Blackfin's Booty|QID|25503|RANK|2|M|51.5,51.6|L|54639|Z|Kelp'thar Forest|N|Kill Gilblingle and loot the Waterlogged Journal from him.|T|Gilblingle|
-A Blackfin's Booty|QID|25503|RANK|2|M|51.5,51.6|U|54639|Z|Kelp'thar Forest|N|Use it to accept the quest Blackfin's Booty.|
+;l Pilfered Cannballs|QID|25651|RANK|2|L|55185 50|S|M|50.2,49.7;54.9,58.8;52.75,50.21|Z|Kelp'thar Forest|CN|N|Kill Gilblin Hoarder's and collect cannonballs from stacks of cannonballs until you have 50 Pilfered Cannonballs.|
+C Oh, the Insanity!|QID|25651|US|RANK|2|M|51.66,53.23|Z|Kelp'thar Forest|U|55185|N|Kill Gilblin Hoarder's and collect cannonballs from stacks of cannonballs until you have 50 Pilfered Cannonballs. Use the cannonballs to convert them into a Keg of Gunpowder.|
+;N Blackfin's Booty|QID|25503|RANK|2|M|51.5,51.6|L|54639|Z|Kelp'thar Forest|N|Kill Gilblingle and loot the Waterlogged Journal from him.|T|Gilblingle|
+A Blackfin's Booty|QID|25503|T|Gilblingle|RANK|2|M|51.5,51.6|U|54639|Z|Kelp'thar Forest|N|Kill Gilblingle and loot the Waterlogged Journal from him. Use it to accept the quest Blackfin's Booty.|
 T Oh, the Insanity!|QID|25651|M|55.3,38.9|Z|Kelp'thar Forest|N|To Budd.|
 A Dah, Nunt... Dah, Nunt...|QID|25657|PRE|25651|RANK|2|M|55.3,38.9|Z|Kelp'thar Forest|N|From Budd.|
 C Dah, Nunt... Dah, Nunt...|QID|25657|RANK|2|U|55190|M|58.21,49.04|Z|Kelp'thar Forest|N|Find the Rusty Harpoon Gun and use the Booby-Trapped Bait. The shark will come and eat the bait.|
@@ -353,7 +354,7 @@ A DUN-dun-DUN-dun-DUN-dun|QID|25670|PRE|27699|RANK|2|M|55.3,38.9|Z|Kelp'thar For
 C DUN-dun-DUN-dun-DUN-dun|QID|25670|RANK|2|M|58.21,49.04|Z|Kelp'thar Forest|N|Go back to the Rusty Harpoon Gun. Use Budd's Chain. You will be picked up by Gnaws. Use the Fire Harpoon Gun ability when prompted. Once Gnaws dies, you will be in Gnaws' Boneyard. Swim back to The Accursed Reef.|
 T DUN-dun-DUN-dun-DUN-dun|QID|25670|RANK|2|M|58.37,48.55|Z|Kelp'thar Forest|N|To Budd.|
 A A Bone to Pick|QID|25732|PRE|25670|RANK|2|M|58.37,48.55|Z|Kelp'thar Forest|N|From Budd.|
-C A Bone to Pick|QID|25732|RANK|2|M|53.15,57.75|Z|Kelp'thar Forest|N|Find King Gurboggle, kill him and collect The Pewter Pounder.|
+K King Gurboggle|QID|25732|T|King Gurboggle|RANK|2|M|53.15,57.75|Z|Kelp'thar Forest|N|Find King Gurboggle, kill him and collect The Pewter Pounder.|
 T Blackfin's Booty|QID|25503|RANK|2|M|55.1,54.8|Z|Kelp'thar Forest|N|Turn the quest in at the Sandy Mound.|
 T A Bone to Pick|QID|25732|RANK|2|M|58.37,48.55|Z|Kelp'thar Forest|N|To Budd.|
 A Decisions, Decisions|QID|25743|PRE|25732|RANK|2|M|58.37,48.52|Z|Kelp'thar Forest|N|From Budd.|
@@ -367,35 +368,35 @@ A Spelunking|QID|25812|PRE|25794|M|46.3,46.8|Z|Kelp'thar Forest|N|From Erunak St
 T Spelunking|QID|25812|M|60.27,65.08;64.0,59.8|CS|Z|Kelp'thar Forest|N|To Private Pollard.|
 A Debriefing|QID|25824|PRE|25812|M|63.86,59.94|Z|Kelp'thar Forest|N|From Erunak Stonespeaker.|
 h Deepmist Grotto|QID|25824|M|63.9,59.9|Z|Kelp'thar Forest|N|At Erunak Stonespeaker.|
-C Debriefing|QID|25824|M|63.9,59.9|Z|Kelp'thar Forest|N|Talk to Private Pollard to complete this quest.|
+C Debriefing|QID|25824|CHAT|M|63.9,59.9|Z|Kelp'thar Forest|N|Talk to Private Pollard to complete this quest.|
 T Debriefing|QID|25824|M|63.8,59.7|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Wake of Destruction|QID|25887|PRE|25824|M|63.8,59.7|Z|Kelp'thar Forest|N|From Erunak Stonespeaker.|
-N Wake of Destruction|QID|25887|M|58.2,64.4|Z|Kelp'thar Forest|U|56576|N|Swim out of the grotto and head just a bit west, where you will find the Famished Great Sharks. Target one of the sharks while staying far enough away that it doesn't attack you and use the Orb of Suggestion.|
-C Wake of Destruction|QID|25887|M|59,70|Z|Kelp'thar Forest|N|Swim near the Zin'Jatar Guardians and use the ability "Eat Naga". You don't actually have to target the naga, just swim near them.|
+;N Wake of Destruction|QID|25887|M|58.2,64.4|Z|Kelp'thar Forest|U|56576|N|Swim out of the grotto and head just a bit west, where you will find the Famished Great Sharks. Target one of the sharks while staying far enough away that it doesn't attack you and use the Orb of Suggestion.|
+C Wake of Destruction|QID|25887|U|56576|M|59,70|Z|Kelp'thar Forest|N|Swim out of the grotto and head just a bit west, where you will find the Famished Great Sharks. Target one of the sharks while staying far enough away that it doesn't attack you and use the Orb of Suggestion.. Swim near the Zin'Jatar Guardians and use the ability "Eat Naga". You don't actually have to target the naga, just swim near them.|
 T Wake of Destruction|QID|25887|M|63.8,59.7|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Decompression|QID|25888|RANK|2|M|63.9,59.4|Z|Kelp'thar Forest|N|From Moanah Stormhoof.|
 A What? What? In My Gut...?|QID|25885|RANK|2|M|63.9,59.9|Z|Kelp'thar Forest|N|From Private Pollard.|
 A Come Hell or High Water|QID|25884|PRE|25887|M|64.2,59.9|Z|Kelp'thar Forest|N|From Rendel Firetongue.|
 C Come Hell or High Water|QID|25884|M|56.4,70.6|S|Z|Kelp'thar Forest|N|Kill 12 Zin'Jatar Guardians, Overseers, or Pearlbinders. They can also drop the Wiggleweed Sprout you need for What? What? In My Gut...?.|
 C What? What? In My Gut...?|QID|25885|M|58.1,70.7|S|L|56167 7|Z|Kelp'thar Forest|N|Kill Shimmerspine Harvesters (Murlocs) which drop Wiggleweed Sprout.|
-C Decompression|QID|25888|M|58.75,77.77|S|Z|Kelp'thar Forest|U|56169|N|Swim toward the Imprisoned Soldiers further into the camp. They almost look like large pearls from a distance. Use the Breathstone on them to rescue the soldiers. Do this 10 times to complete Decompression. Quest location probably a bit "offlimits".|
+C Decompression|QID|25888|NC|M|58.75,77.77|S|Z|Kelp'thar Forest|U|56169|N|Swim toward the Imprisoned Soldiers further into the camp. They almost look like large pearls from a distance. Use the Breathstone on them to rescue the soldiers. Do this 10 times to complete Decompression. Quest location probably a bit "offlimits".|
 A How Disarming|QID|25883|RANK|2|M|60.41,69.81|Z|Kelp'thar Forest|N|Accept the quest from the Naga Tridents.|
-C How Disarming|QID|25883|M|58.1,70.7;57.1,75.7|Z|Kelp'thar Forest|CN|N|While you are doing the next quests, find and destroy 6 Naga Trident Stands. They can be found all around the Holding Pens.|
+C How Disarming|QID|25883|NC|M|58.1,70.7;57.1,75.7|Z|Kelp'thar Forest|CN|N|While you are doing the next quests, find and destroy 6 Naga Trident Stands. They can be found all around the Holding Pens.|
 T How Disarming|QID|25883|M|58.1,70.7|Z|Kelp'thar Forest|N|(UI Alert)|
 C What? What? In My Gut...?|QID|25885|M|58.1,70.7|US|L|56167 7|Z|Kelp'thar Forest|N|Kill Shimmerspine Harvesters (Murlocs) which drop Wiggleweed Sprout.|
 C Come Hell or High Water|QID|25884|M|56.4,70.6|US|Z|Kelp'thar Forest|N|Kill 12 Zin'Jatar Guardians, Overseers, or Pearlbinders.|
 C Decompression|QID|25888|M|58.75,77.77|Z|Kelp'thar Forest|US|U|56169|N|Swim toward the Imprisoned Soldiers further into the camp. They almost look like large pearls from a distance. Use the Breathstone on them to rescue the soldiers. Do this 10 times to complete Decompression. Quest location probably a bit "offlimits".|
 T Come Hell or High Water|QID|25884|M|64.2,59.9|Z|Kelp'thar Forest|N|(UI Alert)|
 A The Warden's Time|QID|27708|PRE|25884|M|60.2,80.4|Z|Kelp'thar Forest|N|Automatic from (UI Alert) after turning in Come Hell or High Water.|
-C The Warden's Time|QID|27708|M|60.2,80.4|Z|Kelp'thar Forest|N|Kill the Warden.|
+K Warden Azjakir|QID|27708|T|Warden Azjakir|M|60.2,80.4|Z|Kelp'thar Forest|N|Kill the Warden.|
 T Decompression|QID|25888|M|60.48,64.71;63.84,59.66|CS|Z|Kelp'thar Forest|N|To Moanah Stormhoof.|
 T What? What? In My Gut...?|QID|25885|M|63.84,59.66|Z|Kelp'thar Forest|N|To Private Pollard.|
 T The Warden's Time|QID|27708|M|63.84,59.66|Z|Kelp'thar Forest|N|To Erunak Stonespeaker.|
 A Across the Great Divide|QID|25471|PRE|27708|M|63.8,59.7|Z|Kelp'thar Forest|N|From Erunak Stonespeaker.|
-f Kelp'thar Forest|QID|25471|M|42.39,66.12|Z|Kelp'thar Forest|N|Grab the flight point from the Swift Seahorse.|
+f Sandy Beach|QID|25471|M|42.39,66.12|Z|Kelp'thar Forest|N|Grab the flight point from the Swift Seahorse.|
 
 f Shimmering Expanse|QID|25471|M|57.06,17.11|Z|Shimmering Expanse|N|Grab the flight point from Francis Greene.|
-N Across the Great Divide|QID|25471|M|48.31,73.28|Z|Kelp'thar Forest|N|Head to the entrance to the cave. Then click off this step.|
+N Across the Great Divide|QID|25471|M|48.31,73.28|CS|Z|Kelp'thar Forest|N|Head to the entrance to the cave. Then click off this step.|
 T Across the Great Divide|QID|25471|M|56.02,13.68|Z|Shimmering Expanse|N|To Farseer Gadra. Head into the cave.|
 A The Looming Threat|QID|25334|PRE|25471|M|56.02,13.68|Z|Shimmering Expanse|N|From Farseer Gadra.|
 C The Looming Threat|QID|25334|M|56.0,13.7|Z|Shimmering Expanse|N|Speak to Farseer Gadra and tell him you are ready to enter the vision. after a few seconds you will be pulled into a vision. Gadra will explain the current situation in Vashj'ir.|
@@ -414,10 +415,10 @@ A The Great Sambino|QID|25216|PRE|25222|M|49.6,42.1|Z|Shimmering Expanse|N|From 
 A Don't be Shellfish|QID|25219|PRE|25222|RANK|2|M|49.24,42.57|Z|Shimmering Expanse|N|From Earthmender Duarn.|
 A Slippery Threat|QID|25220|PRE|25222|RANK|2|M|49.13,41.95|Z|Shimmering Expanse|N|From Caretaker Movra.|
 h Silver Tide Hollow|QID|25215|M|49.13,41.95|Z|Shimmering Expanse|N|At Caretaker Movra.|
-N A Distracting Scent|QID|25215|M|49.2,42|Z|Shimmering Expanse|N|Swim out of Silver Tide Hollow and mount up. All around the entrance you will see naga bodies. Swim close to one and right-click it to start dragging the body.|
-C Don't be Shellfish|QID|25219|S|M|49.2,35.8|Z|Shimmering Expanse|L|52975 10|N|Collect Coilshell Sifters.|
+;N A Distracting Scent|QID|25215|M|49.2,42|Z|Shimmering Expanse|N|Swim out of Silver Tide Hollow and mount up. All around the entrance you will see naga bodies. Swim close to one and right-click it to start dragging the body.|
+C Don't be Shellfish|QID|25219|NC|S|M|49.2,35.8|Z|Shimmering Expanse|L|52975 10|N|Collect Coilshell Sifters.|
 C Slippery Threat|QID|25220|S|M|40.5,37.9;49.2,35.8;61,38.2|Z|Shimmering Expanse|CN|N|Kill Spiketooth Eels.|
-C A Distracting Scent|QID|25215|M|50.35,41.11;50.63,45.51|Z|Shimmering Expanse|CN|N|Swim south to Glimmerdeep Gorge. As soon as you are over the gorge you will drop the naga you are dragging. Drag 3 bodies into the gorge to complete Distracting Scent.|
+C A Distracting Scent|QID|25215|NC|M|50.35,41.11;50.63,45.51|Z|Shimmering Expanse|CN|N|Swim south to Glimmerdeep Gorge. As soon as you are over the gorge you will drop the naga you are dragging. Drag 3 bodies into the gorge to complete Distracting Scent.|
 T The Great Sambino|QID|25216|M|41.3,34.2|Z|Shimmering Expanse|N|From The Great Sambino.|
 A Undersea Inflation|QID|25218|PRE|25216|M|41.3,34.3|Z|Shimmering Expanse|N|From The Great Sambino.|
 A Crabby Patrons|QID|25360|PRE|25216|RANK|2|M|41.2,34.2|Z|Shimmering Expanse|N|From Felice.|
@@ -431,7 +432,7 @@ C Totem Modification|QID|25217|M|42.33,33.62|Z|Shimmering Expanse|N|Go to one of
 T Totem Modification|QID|25217|M|41.2,34.2|Z|Shimmering Expanse|N|To The Great Sambino.|
 A Back in One Piece|QID|25456|PRE|25217|M|41.2,34.2|Z|Shimmering Expanse|N|From The Great Sambino.|
 C Slippery Threat|QID|25220|US|M|40.5,37.9;49.2,35.8;61,38.2|Z|Shimmering Expanse|CN|N|Kill the remaining Spiketooth Eels.|
-C Don't be Shellfish|QID|25219|M|49.2,35.8|Z|Shimmering Expanse|L|52975 10|N|Collect Coilshell Sifters.|US|
+C Don't be Shellfish|QID|25219|NC|T|Coilshell Sifter|M|49.2,35.8|Z|Shimmering Expanse|L|52975 10|N|Collect Coilshell Sifters.|US|
 T A Distracting Scent|QID|25215|M|49.6,42.1|Z|Shimmering Expanse|N|To Felora Firewreath.|
 T Back in One Piece|QID|25456|M|49.6,42.1|Z|Shimmering Expanse|N|To Felora Firewreath.|
 A Toshe's Vengeance|QID|25359|PRE|25456|RANK|1|M|49.6,42.1|Z|Shimmering Expanse|N|From Felora Firewreath.|
@@ -446,9 +447,9 @@ C Vengeful Heart|QID|25439|US|M|66.3,46.5|Z|Shimmering Expanse|N|Kill remaining 
 T Vortex|QID|25441|M|64.1,42.2|RANK|2|Z|Shimmering Expanse|N|To Toshe Chaosrender.|
 T Vengeful Heart|QID|25439|M|64.1,42.2|Z|Shimmering Expanse|N|To Toshe Chaosrender.|
 A Fathom-Lord Zin'jatar|QID|25440|PRE|25439|M|64.1,42.2|Z|Shimmering Expanse|N|From Toshe Chaosrender.|
-C Fathom-Lord Zin'jatar|QID|25440|M|67.3,49.4|Z|Shimmering Expanse|N|Kill the Fathom-Lord.|N|Fathom-Lord Zin'jatar|
-l Luminescent Pearl|L|54614|N|Loot the Luminescent Pearl from Fathom-Lord.|
-A A Pearl of Wisdom|QID|25442|PRE|25440|U|54614|M|67.3,49.4|Z|Shimmering Expanse|N|Use the Pearl to start the Quest.|
+K Fathom-Lord Zin'jatar|QID|25440|T|Fathom-Lord Zin'jatar|M|67.3,49.4|Z|Shimmering Expanse|N|Kill the Fathom-Lord.|N|Fathom-Lord Zin'jatar|
+;l Luminescent Pearl|L|54614|N|Loot the Luminescent Pearl from Fathom-Lord.|
+A A Pearl of Wisdom|QID|25442|PRE|25440|U|54614|M|67.3,49.4|Z|Shimmering Expanse|N|Loot the Luminescent Pearl from Fathom-Lord. Use the Pearl to start the Quest.|
 T Fathom-Lord Zin'jatar|QID|25440|M|64.1,42.2|Z|Shimmering Expanse|N|To Toshe Chaosrender.|
 T A Pearl of Wisdom|QID|25442|M|49.2,42.6|Z|Shimmering Expanse|N|To Earthmender Duarn.|
 A Nespirah|QID|25890|PRE|25442|M|49.2,42.6|Z|Shimmering Expanse|N|From Earthmender Duarn.|
@@ -456,12 +457,12 @@ R Nespirah|QID|25890|CS|M|51.9,48.6;54.09,50.99|Z|Shimmering Expanse|N|Swim into
 C Nespirah|QID|25890|M|51.71,51.99|Z|Shimmering Expanse|N|Follow Duarn and Stonespeaker.|
 T Nespirah|QID|25890|M|51.7,52.1|Z|Shimmering Expanse|N|To Earthmender Duarn.|
 A Making Contact|QID|25900|PRE|25890|M|51.7,52.1|Z|Shimmering Expanse|N|From Earthmender Duarn.|
-C Making Contact|QID|25900|M|51.7,52.1|Z|Shimmering Expanse|N|Speak with Earthmender Duarn.|
+C Making Contact|QID|25900|CHAT|M|51.7,52.1|Z|Shimmering Expanse|N|Speak with Earthmender Duarn.|
 T Making Contact|QID|25900|M|51.7,52.1|Z|Shimmering Expanse|N|To Earthmender Duarn.|
 A Slave Labor|QID|25907|PRE|25900|M|51.7,52.1|Z|Shimmering Expanse|N|From Earthmender Duarn.|
 A Stick it to Them|QID|25908|PRE|25900|M|51.7,52.1|Z|Shimmering Expanse|N|From Earthmender Duarn.|
 C Stick it to Them|QID|25908|S|Z|Shimmering Expanse|N|Kill Naga.|
-C Slave Labor|QID|25907|U|56178|M|59.49,52.13;56.73,51.70;55.88,53.61|CN|Z|Shimmering Expanse|N|Use the Rope near Miners.|
+C Slave Labor|QID|25907|NC|U|56178|M|59.49,52.13;56.73,51.70;55.88,53.61|CN|Z|Shimmering Expanse|N|Use the Rope near Miners.|
 C Stick it to Them|QID|25908|US|M|58.5,53.1|Z|Shimmering Expanse|N|Kill Naga.|
 T Slave Labor|QID|25907|M|51.7,52.1|Z|Shimmering Expanse|N|To Earthmender Duarn.|
 T Stick it to Them|QID|25908|M|51.7,52.1|Z|Shimmering Expanse|N|To Earthmender Duarn.|
@@ -469,7 +470,7 @@ A Capture the Crab|QID|25909|PRE|25907;25908|M|51.7,52.1|Z|Shimmering Expanse|N|
 C Capture the Crab|QID|25909|U|56184|M|56.2,47.4;62.6,49.9;52.8,57.1;60.2,63.6|Z|Shimmering Expanse|CN|N|Kill the naga with a Crab following it, use the net to capture the crab and loot it.|
 T Capture the Crab|QID|25909|M|51.7,52.1|Z|Shimmering Expanse|N|To Earthmender Duarn.|
 A Breaking Through|QID|25916|PRE|25909|M|51.7,52.1|Z|Shimmering Expanse|N|From Earthmender Duarn.|
-C Breaking Through|QID|25916|M|51.7,52.1|Z|Shimmering Expanse|N|Tell Duarn that you are ready to speak to Nespirah.|
+C Breaking Through|QID|25916|NC|M|51.7,52.1|Z|Shimmering Expanse|N|Tell Duarn that you are ready to speak to Nespirah.|
 T Breaking Through|QID|25916|M|51.7,52.1|Z|Shimmering Expanse|N|To Earthmender Duarn.|
 A We Are Not Alone|QID|25917|PRE|25916|M|51.7,52.1|Z|Shimmering Expanse|N|From Earthmender Duarn.|
 T We Are Not Alone|QID|25917|M|62.6,49.8|Z|Shimmering Expanse|N|Take a left from where Duarn is. To Captain Taylor.|
@@ -477,9 +478,9 @@ A Body Blows|QID|25919|PRE|25917|M|62.6,49.8|Z|Shimmering Expanse|N|From Captain
 A Hopelessly Gearless|QID|25918|M|62.7,49.9|Z|Shimmering Expanse|N|From Admiral Dvorek.|
 A Still Valuable|QID|25920|M|62.8,50.0|Z|Shimmering Expanse|N|From Wavespeaker Valoren.|
 C Still Valuable|QID|25920|S|M|61.1,50.7;59.4,61;63.2,60|Z|Shimmering Expanse|CN|N|Kill any naga in the area until you have looted 5 Mysterious Pearls.|
-C Hopelessly Gearless|QID|25918|S|Z|Shimmering Expanse|N|Find Idra'kess Weapon Racks and loot the Purloined Polearms from them.|
+C Hopelessly Gearless|QID|25918|NC|S|Z|Shimmering Expanse|N|Find Idra'kess Weapon Racks and loot the Purloined Polearms from them.|
 C Body Blows|QID|25919|M|63.73,50.86;63.65,52.06;64.76,54.56;61.80,52.57;61.08,51.78;61.08,53.76;61.11,55.39|Z|Shimmering Expanse|CN|N|Find 7 Nespirah Abscesses and attack them. They are small redish nodes along the walls. They can be hard to spot, as they blend in with everything around them, Position Unknown.|
-C Hopelessly Gearless|QID|25918|US|M|63.42,52.49;64.11,53.86;61.58,55.78|Z|Shimmering Expanse|CN|N|Get the remaining Purloined Polearms.|
+C Hopelessly Gearless|QID|25918|NC|US|M|63.42,52.49;64.11,53.86;61.58,55.78|Z|Shimmering Expanse|CN|N|Get the remaining Purloined Polearms.|
 C Still Valuable|QID|25920|US|M|61.1,50.7;59.4,61;63.2,60|Z|Shimmering Expanse|CN|L|56194 5|N|Kill Naga for the remaining Pearls.|
 T Body Blows|QID|25919|M|62.6,49.8|Z|Shimmering Expanse|N|To Captain Taylor.|
 T Hopelessly Gearless|QID|25918|M|62.7,49.9|Z|Shimmering Expanse|N|To Admiral Dvorek.|
@@ -488,11 +489,11 @@ A Overseer Idra'kess|QID|25921|PRE|25918;25919;25920|M|62.6,49.8|Z|Shimmering Ex
 C Overseer Idra'kess|QID|25921|M|62.91,56.67;62.63,54.45;60.20,52.84;57.76,54.92|CS|Z|Shimmering Expanse|N|Kill the 2 naga near Overseer Idra'kess to turn off the shield and kill him. When told to, lure him over top the Nespirah Fluid.|
 T Overseer Idra'kess|QID|25921|M|60.15,52.84;62.82,57.23;51.65,52.23|Z|Shimmering Expanse|CC|N|To Earthmender Duarn.|
 A Waking the Beast|QID|25922|PRE|25921|M|51.66,52.21|Z|Shimmering Expanse|N|From Earthmender Duarn.|
-C Waking the Beast|QID|25922|M|51.58,55.43;50.37,55.42|CS|Z|Shimmering Expanse|N|Listen as Duarn speaks to Nespirah. Follow Erunak to his Seahorse.|
+C Waking the Beast|QID|25922|NC|M|51.58,55.43;50.37,55.42|CS|Z|Shimmering Expanse|N|Listen as Duarn speaks to Nespirah. Follow Erunak to his Seahorse.|
 T Waking the Beast|QID|25922|M|49.2,57|Z|Shimmering Expanse|N|To Captain Taylor.|
 A Cold Welcome|QID|25536|PRE|25922|M|49.2,57.0|Z|Shimmering Expanse|N|From Captain Taylor.|
-A A Powerful Need To Eat|QID|25535|PRE|25536|M|49.47,57.35|Z|Shimmering Expanse|N|From Wavespeaker Valoren.|
-f Tranguil Wash|QID|25535|M|48.6,57.38|N|Grab the flight point from the Swift Seahorse.|Z|Shimmering Expanse|
+A A Powerful Need To Eat|QID|25535|PRE|25536|M|49.6,57.5|Z|Shimmering Expanse|N|From Wavespeaker Valoren.|
+f Tranquil Wash|QID|25535|M|48.6,57.38|N|Grab the flight point from the Swift Seahorse.|Z|Shimmering Expanse|
 T A Powerful Need To Eat|QID|25535|M|48.9,49.2|Z|Shimmering Expanse|N|To Divemaster Birmingham.|
 A Clamming Up|QID|25539|PRE|25535|M|48.9,49.2|Z|Shimmering Expanse|N|From Divemaster Birmingham.|
 A Art of Attraction|QID|25537|PRE|25535|M|49,49.2|Z|Shimmering Expanse|N|From Engineer Hexascrub.|
