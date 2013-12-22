@@ -283,13 +283,13 @@ T Ride to Ironforge |RANK|2|QID|6391|M|51.37,26.27|N|To Golnir Bouldertoe, insid
 A Gryth Thurden |RANK|2|QID|6388|M|51.37,26.27|N|From Golnir Bouldertoe|PRE|6391|R|Gnome,Dwarf|Z|Ironforge|
 T Gryth Thurden |RANK|2|QID|6388|M|55.42,47.80|N|To Gryth Thurden|PRE|6391|R|Gnome,Dwarf|Z|Ironforge|
 A Return to Gremlock |RANK|2|QID|6392|PRE|6388|M|55.42,47.80|N|From Gryth Thurden|PRE|6391|R|Gnome,Dwarf|Z|Ironforge|
-F Thunderbrew Distillery|RANK|2|QID|6392|M|54.73,50.58|N|Either Fly back to Kharanos then run into the Inn, or use your Hearthstone back to Kharnos|PRE|6391|R|Gnome,Dwarf|
+F Kharanos|RANK|2|QID|6392|M|54.73,50.58|N|Either Fly back to Kharanos then run into the Inn, or use your Hearthstone back to Kharnos|PRE|6391|R|Gnome,Dwarf|
 T Return to Gremlock |RANK|2|QID|6392|M|54.73,50.81|N|To Gremlock Pilsnor|PRE|6391|R|Gnome,Dwarf|
 
 R Shimmer Ridge|QID|25724|M|49.95,43.90|N|Run to here then head up the hill.|
 C The Perfect Stout|QID|315|N|Collect Shimmerweeds  from the baskets on the ground.|S|
 C Frostmane Aggression|QID|25724|M|49.03,37.87|N|Kill Frostmane Seers and Snowstriders.|
-C The Perfect Stout|QID|315|N|Collect any Shimmerweeds you still need from the baskets on the ground.|US|
+C The Perfect Stout|QID|315|NC|N|Collect any Shimmerweeds you still need from the baskets on the ground.|US|
 
 T Bound for Kharanos|QID|26380|M|54.45,50.70|N|To Innkeeper Belm.|R|Dwarf,Human,Nightelf,Worgen,Draenei|
 T The Perfect Stout|QID|315|M|54.12,51.21|N|To Rejold Barleybrew.|
@@ -300,12 +300,12 @@ A Pilfered Supplies|QID|25668|M|53.67,52.14|N|From Quartermaster Glynna.|
 
 R The Grizzled Den|QID|25667|M|49.51,52.90|N|Head into the Grizzled Den.|
 C Culling the Wendigos|QID|25667|S|M|48.28,47.38|N|Kill Wendigos as you make your way through the cave.|
-C Pilfered Supplies|QID|25668|S|M|49.22,47.77|N|Collect the supplies as you go through the cave.|
-C Mountaineer Dunstan|QID|313|QO|Convey orders to Mountaineer Dunstan: 1/1|M|48.31,47.12|N|Talk to Mountaineer Dunstan.|
-C Mountainer Lewin|QID|313|QO|Convey orders to Mountainer Lewin: 1/1|M|49.14,47.75|N|Talk to Mountainer Lewin.|
-C Forced to Watch from Afar|QID|313|M|49.30,44.44|N|Talk to Mountainer Valgrum.|
+C Pilfered Supplies|QID|25668|S|NC|M|49.22,47.77|N|Collect the supplies as you go through the cave.|
+C Mountaineer Dunstan|QID|313|CHAT|QO|Convey orders to Mountaineer Dunstan: 1/1|M|49.3,53.1;48.31,47.12|CS|N|Talk to Mountaineer Dunstan.|
+C Mountaineer Lewin|QID|313|CHAT|QO|Convey orders to Mountaineer Lewin: 1/1|M|49.14,47.75|N|Talk to Mountainer Lewin.|
+C Mountaineer Valgrum|QID|313|CHAT|QO|Convey orders to Mountaineer Valgrum: 1/1|M|49.30,44.44|N|Talk to Mountainer Valgrum.|
 C Culling the Wendigos|QID|25667|US|M|48.28,47.38|N|Kill any Wendigos you still need.|
-C Pilfered Supplies|QID|25668|US|M|49.22,47.77|N|Collect any supplies you still need.|
+C Pilfered Supplies|QID|25668|US|NC|M|49.22,47.77|N|Collect any supplies you still need.|
 H Thunderbrew Distillery|QID|25668|U|6948|N|Hearth to Thunderbrew Distillery.|
 
 T Pilfered Supplies|QID|25668|M|53.67,52.11|N|To Quartermaster Glynna.|
@@ -317,7 +317,7 @@ f Kharanos|M|53.77,52.71|N|At Brolan Galebeard.|QID|412|R|Human,NightElf,Draenei
 
 C Beer Basted Boar Ribs|QID|384|S|N|Kill and loot boars you to the Tender Boar Ribs.|
 C Operation Recombobulation|QID|412|S|M|58.00,57.29|N|Kill Frostmane Salvagers and loot Gyromechanic Gears.|
-C Pushing Forward|QID|25792|U|56009|M|58.14,57.63|N|Use the Rune of Fire to burn the Constriction Totems.|
+C Pushing Forward|QID|25792|NC|U|56009|M|58.14,57.63|N|Use the Rune of Fire to burn the Constriction Totems.|
 C Operation Recombobulation|QID|412|US|M|58.00,57.29|N|Kill Frostmane Salvagers and loot Gyromechanic Gears.|
 C Beer Basted Boar Ribs|QID|384|US|N|Kill any boars you still need meat from.|M|51.73,55.8|
 
@@ -336,12 +336,12 @@ A Eliminate the Resistance|QID|25840|M|62.53,53.62|N|From Slamp Wobblecog.|
 A Strike From Above|QID|25841|M|62.53,53.62|N|From Slamp Wobblecog.|
 A The View from Down Here|QID|28868|M|62.54,53.72|N|From Snevik the Blade.|
 C Eliminate the Resistance|QID|25840|S|QO|Frostmane Warrior slain: 5/5|M|62.04,56.13|N|Kill Frostmane Warriors.|
-C The View from Down Here|QID|28868|S|U|67249|N|Use the Viewpoint Equalizer on Frostmane Builders.|T|Frostmane Builders|
+C The View from Down Here|QID|28868|S|U|67249|N|Use the Viewpoint Equalizer on Frostmane Builders.|T|Frostmane Builder|
 C Attack on Northern Frostmane Retreat|QID|25841|U|56048|QO|Attack on Northern Frostmane Retreat: 1/1|M|64.47,54.37|N|Use the Signal Flare in the circle of stones on the ground.|
 K Kill Battok the Berserker|QID|25840|T|Battok the Berserker|QO|Battok the Berserker slain: 1/1|M|63.81,55.68|N|Dancing in the middle of the camp.|
 C Strike From Above|QID|25841|U|56048|QO|Attack on Southern Frostmane Retreat: 1/1|M|63.20,57.16|N|Use the Signal Flare just in front of the buildings.|
 C Eliminate the Resistance|QID|25840|US|QO|Frostmane Warrior slain: 5/5|M|62.04,56.13|N|Kill Frostmane Warriors.|
-C The View from Down Here|QID|28868|U|67249|N|Use the Viewpoint Equalizer on Frostmane Builders.|T|Frostmane Builders|US|
+C The View from Down Here|QID|28868|U|67249|N|Use the Viewpoint Equalizer on Frostmane Builders.|T|Frostmane Builder|US|
 T The View from Down Here|QID|28868|M|62.54,53.72|N|To Snevik the Blade.|
 T Eliminate the Resistance|QID|25840|M|62.53,53.62|N|To Slamp Wobblecog.|
 T Strike From Above|QID|25841|M|62.53,53.62|N|To Slamp Wobblecog.|

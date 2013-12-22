@@ -63,7 +63,7 @@ L Level 29 |QID|26546|LVL|29|N|This guide requires a minimum level of 29 to do.|
 
 R The Hinterlands|QID|26546|M|43.36,45.18;36.71,31.15;38.45,22.89;39.32,19.03|Z|Arathi Highlands|CC|N|Follow the waypoints to The Hinterlands.|
 R Aerie Peak|QID|26546|M|26.29,69.07;26.21,55.04;20.13,53.66;14.17,48.03|CC|N|Follow the waypoints to Aerie Peak.|
-f Aerie Peak|QID|26546|M|11.17,46.06|N|At Guthrum Thunderfist.|
+f Aerie Peak|M|11.17,46.06|N|At Guthrum Thunderfist.|
 T Hero's Call: The Hinterlands!|QID|26542|M|9.96,44.31|N|To Gryphon Master Talonaxe.|ACTIVE|26542|
 
 A Razorbeak Friends|QID|26546|M|9.96,44.31|N|From Gryphon Master Talonaxe.|
@@ -77,14 +77,14 @@ T A Mangy Threat|QID|26547|M|9.97,44.27|N|To Gryphon Master Talonaxe.|
 A Out to the Front|QID|26548|M|9.97,44.27|N|From Gryphon Master Talonaxe.|
 F Stormfeather Outpost|QID|26548|M|11.11,46.09|N|Talk to Guthrum Thunderfist, and choose to go to Stormfeather Outpost.|
 
-f Stormfeather Outpost|QID|26548|M|65.74,44.94|N|At Brock Rockbeard.|
+f Stormfeather Outpost|M|65.74,44.94|N|At Brock Rockbeard.|
 T Out to the Front|QID|26548|M|66.33,44.37|N|To Kerr Ironsight.|
 A The Wicked Revantusk|QID|26462|M|66.33,44.37|N|From Kerr Ironsight.|
 A Gan'dranda|QID|26483|M|66.33,44.37|N|From Dron Blastbrew.|
 A Snapjaws, Lad!|QID|26485|M|66.27,44.32|N|From Dron Blastbrew.|
 A 99 Bottles of Booze on the Beach|QID|26486|M|66.27,44.32|N|From Dron Blastbrew.|
 C The Wicked Revantusk|QID|26462|S|M|71.98,50.71|N|Kill any troll you see.|
-C Gan'dranda|QID|26483|M|73.23,53.72|N|Head to the waypoint and kill Gan'dranda to get his head.|
+K Gan'dranda|QID|26483|T|Gan'dranda|M|73.23,53.72|N|Head to the waypoint and kill Gan'dranda to get his head.|
 C The Wicked Revantusk|QID|26462|US|M|71.98,50.71|N|Kill any troll you see.|
 C 99 Bottles of Booze on the Beach|QID|26486|S|M|77.34,70.34;81.51,48.74|CN|N|Look for little, sparkling blue bottles on the ground.|
 C Snapjaws, Lad!|QID|26485|M|80.55,46.41;77.34,70.34|CS|N|Head to the top of the waterfall and then jump into the water below. Kill any turtle you come across for their gizzard.|
@@ -100,7 +100,7 @@ A Prime Slime|QID|26490|M|66.27,44.36|N|From Dron Blastbrew.|
 
 C Skulk Rock Supplies|QID|26492|M|57.80,41.44|N|Look around inside the cave to find the Ooze-Coated Supply Crates.|S|
 C Skulk Rock Clean-Up|QID|26491|M|58.29,40.76|N|Killing any Jade Oozes you see.|S|
-C Prime Slime|QID|26490|M|57.42,38.67;57.49,41.20|CS|N|Head into the cave then kill and loot Direglob.|
+K Prime Slime|QID|26490|T|Direglob|M|57.42,38.67;57.49,41.20|CS|N|Head into the cave then kill and loot Direglob.|
 C Skulk Rock Supplies|QID|26492|M|57.80,41.44|N|Look around inside the cave to find the Ooze-Coated Supply Crates.|US|
 C Skulk Rock Clean-Up|QID|26491|M|58.29,40.76|N|Head back outside to finish killing any Jade Oozes you need.|US|
 T Skulk Rock Clean-Up|QID|26491|M|66.31,44.39|N|To Kerr Ironsight.|
@@ -115,11 +115,11 @@ A Faces of Evil|QID|26521|M|63.81,60.00|N|From Fraggar Thundermantle.|
 A All That Skitters|QID|26523|M|63.81,60.00|N|From Fraggar Thundermantle.|
 C Vilebranch Scum|QID|26497|M|68.60,69.10|N|Kill Vilebranch Headhunters and Witch Doctors.|S|
 C Faces of Evil|QID|26521|S|U|58209|N|Use the torch by any mask you see, has a small range and can be used while moving.|
-C All That Skitters|QID|26523|S|N|Grab the spiders as you (you need. They can be a little hard to grab since they are small and move aroud a lot.|
+C All That Skitters|QID|26523|S|T|Skittering Spiderling|N|Grab the spiders as you (you need. They can be a little hard to grab since they are small and move aroud a lot.|
 C Heads Up|QID|26518|M|65.16,65.11|N|Head to the first set of stairs, go up and turn left. When you hit the next set of stairs, go up and turn right. Follow the path ignoring the next set of stairs to find Umboda.|
 C Vilebranch Scum|QID|26497|M|68.60,69.10|N|Kill Vilebranch Headhunters and Witch Doctors.|US|
 C Faces of Evil|QID|26521|US|U|58209|M|65.29,67.31|N|Burn any of the masks you need too.|
-C All That Skitters|QID|26523|M|68.55,70.21|N|Grab any spiders that you don't have.|US|
+C All That Skitters|QID|26523|T|Skittering Spiderling|M|68.55,70.21|N|Grab any spiders that you don't have.|US|
 
 T Vilebranch Scum|QID|26497|M|63.90,60.04|N|To Doran Steelwing.|
 T Heads Up|QID|26518|M|63.90,60.04|N|To Doran Steelwing.|
