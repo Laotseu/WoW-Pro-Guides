@@ -229,9 +229,9 @@ function WoWPro.UpdateGuideReal(From)
 	-- Ensure that the current step is not skiped
 	WoWPro.ActiveStep = WoWPro:NextStep(1)
 	local ActiveStep = WoWPro.ActiveStep
-	repeat
-		WoWPro.ActiveStep = WoWPro:NextStep(ActiveStep)
-	until ActiveStep == WoWPro.ActiveStep
+	-- repeat
+	-- 	WoWPro.ActiveStep = WoWPro:NextStep(ActiveStep)
+	-- until ActiveStep == WoWPro.ActiveStep
 
 	if WoWPro.Recorder then WoWPro.ActiveStep = WoWPro.Recorder.SelectedStep or WoWPro.ActiveStep end
 	if not offset then WoWPro.Scrollbar:SetValue(WoWPro.ActiveStep) end
@@ -469,7 +469,7 @@ function WoWPro:NextStep(k,i)
 	        break
 	   end	
 
-	   -- Complete "H" steps if the Hearthstone is already bound to the correct desnisation
+	   -- Complete "h" steps if the Hearthstone is already bound to the correct desnisation
 	   if WoWPro.action[k] == "H" and WoWPro.step[k] == GetBindLocation() and k <= WoWPro.CurrentIndex then
 		   WoWPro.CompleteStep(k)
 		   skip = true
