@@ -365,7 +365,7 @@ function WoWPro:UpdateQuestTracker()
 		-- Display the QID if needed.
 		if step then
 			if WoWProCharDB.ShowQID then
-				row.step:SetText(("[|c%s%s|r] %s"):format(isActive and green or white, QID or "---", step))
+				row.step:SetText(("[|c%s%s|r] %s"):format(isActive and green or white, QID or WoWPro.QID[index] or "---", step))
 			else
 				row.step:SetText(step)
 			end
