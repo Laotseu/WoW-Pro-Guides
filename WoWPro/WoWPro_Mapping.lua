@@ -153,16 +153,15 @@ local function WoWProMapping_distance(event, uid, range, distance, lastdistance)
 		local closest_uid = TomTom:GetClosestWaypoint()
 
 		if closest_uid then
-			TomTom:SetCrazyArrow(cache[iactual-1].uid, 1, cache[iactual-1].desc)
 
-			local real_i
 			for i,waypoint in ipairs(cache) do
 				if (waypoint.uid == closest_uid) then
 					iactual = i break end
 			end
+			TomTom:SetCrazyArrow(cache[iactual].uid, 1, cache[iactual].desc)
 
-			if real_i then
-				for i=real_i+1,#cache,1 do
+			if iactual then
+				for i=iactual+1,#cache,1 do
 					TomTom:RemoveWaypoint(cache[i].uid)
 				end
 			end
