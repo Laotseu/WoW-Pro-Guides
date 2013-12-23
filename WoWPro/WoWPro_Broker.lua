@@ -470,7 +470,7 @@ function WoWPro:NextStep(k,i)
 	   end	
 
 	   -- Complete "h" steps if the Hearthstone is already bound to the correct desnisation
-	   if WoWPro.action[k] == "H" and WoWPro.step[k] == GetBindLocation() and k <= WoWPro.CurrentIndex then
+	   if WoWPro.action[k] == "h" and WoWPro.step[k] == GetBindLocation() and k <= WoWPro.CurrentIndex then
 		   WoWPro.CompleteStep(k)
 		   skip = true
 		   break
