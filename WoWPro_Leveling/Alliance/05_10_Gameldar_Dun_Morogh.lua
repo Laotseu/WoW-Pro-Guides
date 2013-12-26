@@ -5,37 +5,37 @@
 
 -- URL: http://wow-pro.com/wiki/source_code_dun_morogh
 -- Date: 2013-05-14 18:52
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: [A Triumph of Gnomish Ingenuity] not [Triumph of Gnomish Ingenuity]
 
 -- URL: http://wow-pro.com/node/3200/revisions/25591/view
 -- Date: 2013-03-23 20:23
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Name tweaks
 
 -- URL: http://wow-pro.com/node/3200/revisions/25496/view
 -- Date: 2013-01-22 17:53
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Changed "Lambs on the Lam" to use special target macro!
 
 -- URL: http://wow-pro.com/node/3200/revisions/25412/view
 -- Date: 2013-01-13 14:33
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Added a CS tag
 
 -- URL: http://wow-pro.com/node/3200/revisions/25359/view
 -- Date: 2013-01-12 18:36
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Added some CS and CN tags
 
 -- URL: http://wow-pro.com/node/3200/revisions/25136/view
 -- Date: 2012-10-09 23:22
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Added Monk quests and got rid of extra spaces and spell corrections.
 
 -- URL: http://wow-pro.com/node/3200/revisions/25131/view
 -- Date: 2012-10-08 22:49
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Add Dwarf Monk starter quests.
 
 -- URL: http://wow-pro.com/node/3200/revisions/24869/view
@@ -118,7 +118,7 @@
 
 -- URL: http://wow-pro.com/node/3200/revisions/24517/view
 -- Date: 2011-06-07 23:07
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: ! Line 128 for step N has unknown tag [Gnome,Dwarf]: [N Class Training |QID|384|M|54.69,50.89|N|You should visit your class trainer Hogral Bakkan. Click this step to continue.|C|Rogue|Gnome,Dwarf|]
 --	! Line 129 for step N has unknown tag [Gnome,Dwarf]: [N Class Training |QID|384|M|54.47,50.97|N|You should visit your class trainer Granis Swiftaxe. Click this step to continue.|C|Warrior|Gnome,Dwarf|]
 --	! Line 130 for step N has unknown tag [Gnome,Dwarf]: [N Class Training |QID|384|M|54.46,50.52|N|You should visit your class trainer Maxan Anvol. Click this step to continue.|C|Priest|Gnome,Dwarf|]
@@ -189,36 +189,36 @@
 
 -- URL: http://wow-pro.com/node/3200/revisions/24354/view
 -- Date: 2011-04-29 18:18
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Changed O steps to N steps.
 
 -- URL: http://wow-pro.com/node/3200/revisions/24226/view
 -- Date: 2011-04-05 23:41
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 
 -- URL: http://wow-pro.com/node/3200/revisions/24219/view
 -- Date: 2011-04-05 23:32
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 
 -- URL: http://wow-pro.com/node/3200/revisions/24200/view
 -- Date: 2011-04-02 18:57
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: QID on [Get Me Explosives Back!] was wrong.  Added advice to [Down with Crushcog!]
 
 -- URL: http://wow-pro.com/node/3200/revisions/24097/view
 -- Date: 2011-02-05 01:18
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Removed extra tabs and whitespace.
 --	Removed empty tags (aka ||'s).
 
 -- URL: http://wow-pro.com/node/3200/revisions/24083/view
 -- Date: 2011-01-30 19:28
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Corrected RegisterGuide to match GIT
 
 -- URL: http://wow-pro.com/node/3200/revisions/24063/view
 -- Date: 2011-01-27 19:12
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log:  WoWPro.Leveling
 
 -- URL: http://wow-pro.com/node/3200/revisions/23812/view
@@ -365,11 +365,12 @@ A The Public Servant|QID|433|M|75.88,54.30|N|From Senator Mehr Stonehallow.|
 f Gol'Bolar Quarry|QID|25986|M|75.87,54.36|N|At Dominic Galebeard.|
 T Help for the Quarry|QID|25933|M|76.31,54.60|N|To Foreman Stonebrow.|
 A Those Blasted Troggs!|QID|432|M|76.31,54.60|N|From Foreman Stonebrow.|
+C Those Blasted Troggs!|QID|432|S|M|77.65,55.69|N|Kill Troggs as you go along.|
 C Priceless Treasures|QID|25937|S|U|56226|M|78.31,53.59|N|Collect Frozen Artifacts as you make you way through the cave.|NC|
 R Gol'Bolar Quarry Mine|QID|25937||M|77.89,54.87|N|Go down into the quarry and head into the cave.|
-C The Public Servant|QID|433|S|U|56222|M|79.53,50.06|N|Free Trapped Miners as you make you way through the cave.|T|Trapped Miner|
+C The Public Servant|QID|433|NC|M|79.53,50.06|N|Free Trapped Miners as you make you way through the cave.|T|Trapped Miner,use Runes of Return|
 C Priceless Treasures|QID|25937|US|U|56226|M|78.31,53.59|N|Finish collecting Frozen Artifacts.|NC|
-C Those Blasted Troggs!|QID|432|M|77.65,55.69|N|Finish off any Troggs you still need.|
+C Those Blasted Troggs!|QID|432|US|M|77.65,55.69|N|Finish off any Troggs you still need.|
 T Priceless Treasures|QID|25937|M|76.20,53.12|N|To Prospector Drugan.|
 T Those Blasted Troggs!|QID|432|M|76.30,54.60|N|To Foreman Stonebrow.|
 T The Public Servant|QID|433|M|75.84,54.34|N|To Senator Mehr Stonehallow.|
