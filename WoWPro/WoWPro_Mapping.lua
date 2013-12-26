@@ -26,6 +26,13 @@ local SHOW_MINIMAP_TOOLTIP = true
 local SHOW_WORLDMAP_TOOLTIP = true
 
 
+-- For debug
+-- local oldrm = TomTom.RemoveWaypoint
+-- function TomTom.RemoveWaypoint(...)
+-- 	err("RemoveWaypoint")
+-- 	return oldrm(...)
+-- end
+
 -- WoWPro customized callback functions for TomTom --
 
 -- Function to customize the drop-down menu when right-clicking
@@ -499,8 +506,11 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	local i
 	if row then i = WoWPro.rows[row].index 
 	else 
-		i = WoWPro:NextStepNotSticky(WoWPro.ActiveStep)
+		-- i = WoWPro:NextStepNotSticky(WoWPro.ActiveStep)
+		i = WoWPro.CurrentIndex or WoWPro.ActiveStep or 1
 	end
+	if not i then return end
+
 	local coords; if WoWPro.map then coords = WoWPro.map[i] else coords = nil end
 	local desc = WoWPro.step[i]
 	local zone
@@ -523,7 +533,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	if eric_map then err("zone = %s,floor = %s,desc = %s",zone,floor,desc) end
 
 	-- Loading Blizzard Coordinates for this objective, if coordinates aren't provided --
-	if (WoWPro.action[i]=="T" or WoWPro.action[i]=="C") and WoWPro.QID and WoWPro.QID[i] and (not coords or forceBlizCoord)then
+	if (WoWPro.action[i]=="T" or WoWPro.action[i]=="C") and WoWPro.QID and WoWPro.QID[i] and (not coords or forceBlizCoord) then
 		QuestMapUpdateAllQuests()
 		QuestPOIUpdateIcons()
 		WorldMapFrame_UpdateQuests()
@@ -609,6 +619,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 		-- Parsing and mapping coordinates --
 		WoWPro:dbp("WoWPro:MapPoint1(%s@%s/%s)",coords,tostring(zone),tostring(zm))
 		local numcoords = select("#", string.split(";", coords))
+		-- err("numcoords = %s, coords = %s, autoarrival = %s", numcoords, coords, autoarrival)
 		for j=1,numcoords do
 			local waypoint = {}
 			local jcoord = select(numcoords-j+1, string.split(";", coords))
@@ -621,6 +632,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 			local uid
 
 			if numcoords > 1 or autoarrival == 1 or autoarrival == 2 then
+				-- err("zm = %s, zf = %s, x/100 = %s, y/100 = %s, uid = %s",zm, zf,x/100, y/100, uid)
 				uid = TomTom:AddMFWaypoint(zm, zf, x/100, y/100, {
 					title = desc,
 					desc = desc,
@@ -651,7 +663,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 			end
 
 			local wp_desc = desc
-			if numcoords > 1 then
+			if numcoords > 1 and autoarrival == 2 then
 				wp_desc = ("%s\nWaypoint %d of %d"):format(desc, numcoords-j+1, numcoords)
 			end
 
