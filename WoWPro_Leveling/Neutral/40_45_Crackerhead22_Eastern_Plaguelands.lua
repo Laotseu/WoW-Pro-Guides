@@ -5,7 +5,7 @@
 
 -- URL: http://wow-pro.com/wiki/source_code_eastern_plaguelands_neutral
 -- Date: 2013-01-12 18:42
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Added CS and CN tags
 
 -- URL: http://wow-pro.com/node/3251/revisions/24874/view
@@ -53,15 +53,15 @@
 
 -- URL: http://wow-pro.com/node/3251/revisions/24401/view
 -- Date: 2011-05-17 01:57
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 
 -- URL: http://wow-pro.com/node/3251/revisions/24393/view
 -- Date: 2011-05-17 01:09
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 
 -- URL: http://wow-pro.com/node/3251/revisions/24301/view
 -- Date: 2011-04-29 14:41
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Line 33 for step T has unknown tag [To Fiona.], Line 169 for step A has unknown tag [From the Crusader's Flare.], Line 170 for step A has unknown tag [From the Cursader's Flare.], Line 208 for step C has 1 M coords, Line 214 for step R has unknown tag [Run to Eastwall Tower.], Line 272 for step C has unknown tag [Kill Cursed Mages and Scourge Soldiers to get their skulls.], Line 281, for step T non-decimal QID.
 
 -- URL: http://wow-pro.com/node/3251/revisions/24253/view
@@ -109,7 +109,7 @@ A Tarenar Sunstrike|QID|27370|M|9.02,66.52|N|From Fiona.|S|
 A Gidwin Goldbraids|QID|27367|M|9.02,66.52|N|From Fiona.|
 A Tarenar Sunstrike|QID|27370|M|9.02,66.52|N|From Fiona.|US|
 
-f Get flightpoint.|QID|27367|M|10.02,65.70|N|At Frax Bucketdrop.|LVL|40|
+f Thondroril River|M|10.02,65.70|N|At Frax Bucketdrop.|LVL|40|
 T Gidwin Goldbraids|QID|27367|M|4.16,36.16|N|To Gidwin Goldbraids.|
 A Just Encased|QID|27368|M|4.17,36.13|N|From Gidwin Goldbraids.|
 C Just Encased|QID|27368|M|7.52,30.82|N|Kill Crypt Walkers, Stalkers and Horrors in the Terrorweb Tunnel that is next to the quest giver.|
@@ -205,7 +205,7 @@ T Hidden Treasures|QID|27391|M|32.19,83.41|N|Right behind the house, next to the
 A The Trek Continues|QID|27448|M|34.84,69.27|N|From Fiona.|
 C The Trek Continues|QID|27448|M|52.67,53.73|N|Click on Fiona's Caravan and click on the option to continue the trek.|
 
-f Light's Shield Tower|QID|27455|M|52.83,53.48|N|At Devon Manning.|
+f Light's Shield Tower|M|52.83,53.48|N|At Devon Manning.|
 T The Trek Continues|QID|27448|M|52.91,53.21|N|To Fiona.|
 A Boys Will Be Boys|QID|27455|M|52.91,53.21|N|From Fiona.|
 A To Kill With Purpose|QID|27451|M|53.13,54.62|N|From Betina Bigglezink.|
@@ -235,11 +235,11 @@ r Sell junk, repair/restock.|QID|27455|M|53.89,53.91|
 R Light's Hope Chapel|QID|27455|M|75.84,52.96|N|Run to Light's Hope Chapel.|
 T Boys Will Be Boys|QID|27455|M|74.25,53.37|N|To Gidwin Goldbraids.|
 A A Boyhood Dream|QID|27463|M|74.25,53.37|N|From Gidwin Goldbraids.|
-N Talk to Beezil Linkspanner|QID|27463|M|73.82,52.37|N|After you go through his short dialog to get him to join the caravan, there will be a new buff available. Beezil's Cog: Increase movement speed within Eastern Plaguelands by 10%.|
+N Talk to Beezil Linkspanner|QID|27463|CHAT|M|73.82,52.37|N|After you go through his short dialog to get him to join the caravan, there will be a new buff available. Beezil's Cog: Increase movement speed within Eastern Plaguelands by 10%.|
 T A Boyhood Dream|QID|27463|M|75.81,52.07|N|To Lord Maxwell Tyrosus.|
 A Argent Call: The Trial of the Crypt|QID|27464|M|75.81,52.07|N|From Lord Maxwell Tyrosus.|
 A The Brotherhood of Light|QID|27459|M|75.57,52.30|N|From Leonid Barthalomew the Revered.|
-f Light's Hope Chapel|QID|27464|M|75.79,53.38|N|At Khaelyn Steelwing.|
+f Light's Hope Chapel|M|75.79,53.38|N|At Khaelyn Steelwing.|
 A Smokey and the Bandage|QID|27458|M|74.92,53.30|N|From Smokey LaRue.|
 A Gathering Some Grub(s)|QID|27456|M|73.87,51.97|N|From Rimblat Earthshatter.|
 C Argent Call: The Trial of the Crypt|QID|27464|U|61309|M|77.21,51.77|N|Head to the bottom of the crypt and use the scroll. Survive the waves.|
@@ -263,13 +263,13 @@ A The Wrathcaster|QID|27615|M|75.48,76.17|N|From Crusade Commander Korfax.|
 A The Huntsman|QID|27616|M|75.48,76.17|N|From Crusade Commander Korfax.|
 A The Commander|QID|27619|M|75.48,76.17|N|From Scarlet Cleric.|
 
-l Scarlet Salvage|QID|27614|L|61962 1|M|75.87,77.50|N|Pick up "Gavinrad's Sigil".|
-l Scarlet Salvage|QID|27614|L|61961 1|M|75.13,79.04|N|Pick up "Shroud of Uther".|
-l Scarlet Salvage|QID|27614|L|61960 1|M|74.24,78.31|N|Pick up "Lihanna's Strand".|
-C Scarlet Salvage|QID|27614|L|61959 1|M|74.78,76.68|N|Pick up the "Crimson Boar".|
-C The Wrathcaster|QID|27615|M|74.64,78.62|N|Go downstairs.|
-C The Commander|QID|27619|M|75.02,77.76|N|Go up two floors, in the middle area.|
-C The Huntsman|QID|27616|M|74.47,77.88|N|Go to the roof.|
+C Gavinrad's Sigil|QID|27614|NC|QO|Gavinrad's Sigil: 1/1|M|75.87,77.50|N|Pick up "Gavinrad's Sigil".|
+C Shroud of Uther|QID|27614|NC|QO|Shroud of Uther: 1/1|M|75.13,79.04|N|Pick up "Shroud of Uther".|
+C Lihanna's Strand|QID|27614|NC|QO|Lihanna's Strand: 1/1|M|74.24,78.31|N|Pick up "Lihanna's Strand".|
+C Crimson Boar|QID|27614|NC|QO|Crimson Boar: 1/1|M|74.78,76.68|N|Pick up the "Crimson Boar".|
+K The Wrathcaster|QID|27615|T|Mataus the Wrathcaster|M|74.64,78.62|N|Go downstairs.|
+K The Commander|QID|27619|T|Scarlet Commander Marjhan|M|75.02,77.76|N|Go up two floors, in the middle area.|
+K The Huntsman|QID|27616|T|Huntsman Leopold|M|74.47,77.88|N|Go to the roof.|
 
 T Scarlet Salvage|QID|27614|M|75.29,76.15|N|To Crusade Commander Korfax.|
 T The Wrathcaster|QID|27615|M|75.29,76.15|N|To Crusade Commander Korfax.|
@@ -280,41 +280,45 @@ T Argent Upheaval|QID|27618|M|76.02,75.35|N|To Archmage Angela Dosantos.|
 T To Take the Abbey|QID|27461|M|76.70,73.26|N|To Crusade Commander Eligor Dawnbringer.|
 A Victory From Within|QID|27612|M|76.70,73.26|N|From Crusade Commander Eligor Dawnbringer.|
 A The Assassin|QID|27613|M|76.71,73.30|N|From Crusade Commander Eligor Dawnbringer.|
-C Victory From Within|QID|27612|M|78.48,72.92;77.84,70.99|CS|N|Click on the portals.|
-C The Assassin|QID|27613|M|77.85,72.71|N|Go all the way up. He is in stealth.|
+C Victory From Within|QID|27612|NC|M|78.48,72.92;77.84,70.99|CS|N|Click on the portals.|
+K The Assassin|QID|27613|T|Rohan the Assassin|M|77.85,72.71|N|Go all the way up. He is in stealth.|
 T Victory From Within|QID|27612|M|76.69,73.19|N|To Crusade Commander Eligor Dawnbringer.|
 T The Assassin|QID|27613|M|76.69,73.19|N|To Crusade Commander Eligor Dawnbringer.|
 A Befouled No More|QID|27617|M|76.69,73.19|N|From Crusade Commander Eligor Dawnbringer.|
 T Befouled No More|QID|27617|M|76.09,75.29|N|To Archmage Angela Dosantos.|
 A Like Rats|QID|27620|M|76.08,75.31|N|From Archmage Angela Dosantos.|
-C Like Rats|QID|27620|M|81.45,78.75|N|Work your way inside the cathedral and kill Crusader Lord Valdelmar.|
+K Crusader Lord Valdelmar|QID|27620|M|81.45,78.75|T|Crusader Lord Valdelmar|N|Work your way inside the cathedral and kill Crusader Lord Valdelmar.|
 
 H Light's Hope Chapel|QID|27620|N|Hearth to Light's Hope Chapel, or run if your hearth is not up.|
 T Like Rats|QID|27620|M|75.66,52.18|N|To Leonid Barthalomew the Revered.|
 T Gathering Some Grub(s)|QID|27456|M|73.86,51.96|N|To Rimblat Earthshatter.|
 r Sell junk, repair/restock.|QID|27458|M|75.16,53.69|
-C Smokey and the Bandage|QID|27458|L|62028 1|M|71.58,46.38|N|Kill Stephen Browman to get "Browman's Wrappings".|
-C Buried Blades|QID|27467|S|M|76.20,39.41|N|Poke the Slain Scourge Troopers with the "Light-Touched Blades" as you kill the mobs for the other quest.|
-C Argent Call: The Noxious Glade|QID|27465|M|77.35,39.07|N|Watch out for Garginox, a level 45 elite.|
+C Argent Call: The Noxious Glade|QID|27465|S|M|77.35,39.07|N|Watch out for Garginox, a level 45 elite.|
+C Buried Blades|QID|27467|S|NC|M|76.20,39.41|N|Poke the Slain Scourge Troopers with the "Light-Touched Blades" as you kill the mobs for the other quest.|
+K Stephen Browman|QID|27458|T|Stephen Browman|M|71.58,46.38|N|Kill Stephen Browman to get "Browman's Wrappings".|
+C Buried Blades|QID|27467|US|NC|M|76.20,39.41|N|Poke the Slain Scourge Troopers with the "Light-Touched Blades" as you kill the mobs for the other quest.|
+C Argent Call: The Noxious Glade|QID|27465|US|M|77.35,39.07|N|Watch out for Garginox, a level 45 elite.|
 T Smokey and the Bandage|QID|27458|M|74.94,53.36|N|To Smokey LaRue.|
 T Buried Blades|QID|27467|US|M|75.67,52.21|N|To Master Craftsman Omarion.|
 T Argent Call: The Noxious Glade|QID|27465|M|75.80,52.07|N|To Lord Maxwell Tyrosus.|
 A An Opportune Alliance|QID|27457|M|73.85,52.01|N|From Rimblat Earthshatter.|
 R Eastwall Tower|QID|27457|M|62,42|N|Run to Eastwall Tower.|
 A Argent Call: Northdale|QID|27466|M|61.56,43.23|N|From Tarenar Sunstrike.|
-f Eastwall Tower|QID|27457|M|61.62,43.81|N|At Richard Trueflight.|
+f Eastwall Tower|M|61.62,43.81|N|At Richard Trueflight.|
 T An Opportune Alliance|QID|27457|M|61.42,42.83|N|To Fiona.|
 T Argent Call: Northdale|QID|27466|M|61.42,42.78|N|To Fiona.|
 
 N Optional Buff|QID|27479|N|New buff at caravan. "Rimbalt's Stone", chance to cast a small self-heal when killing creatures within Eastern Plaguelands.|
-A Righteous Indignation|QID|27479|M|61.29,42.94|N|From Deacon Andaal.|
-A Out of the Ziggurat|QID|27481|M|61.29,42.84|N|From Vex'tul.|
-A The Corpulent One|QID|27477|M|61.50,43.22|N|From Gamella Cracklefizz.|
 A Ix'lar the Underlord|QID|27487|M|61.53,43.29|N|From Tarenar Sunstrike.|
-C Ix'lar the Underlord|QID|27487|M|60.88,34.20|N|Ix'lar wanders around, so look for the boss icon on the minimap to see where he is.|
-C The Corpulent One|QID|27477|M|57.66,28.27|N|Borelgore seems to wander in the scar, look for his boss icon on the minimap.|
-C Righteous Indignation|QID|27479|M|65.50,12.34|N|Kill Mossflayers as you go for their eyes, be careful not to step on the graves.|S|
-C Out of the Ziggurat|QID|27481|M|66.45,10.53|N|Go to the top of the ziggurat and kill Warlord Thresh'jin and loot his corpse.|
+A Righteous Indignation|QID|27479|M|61.29,42.94|N|From Deacon Andaal.|
+A Out of the Ziggurat|QID|27481|M|60.6,43.3|N|From Vex'tul.|
+A The Corpulent One|QID|27477|M|61.50,43.22|N|From Gamella Cracklefizz.|
+C Ix'lar the Underlord|QID|27487|S|M|60.88,34.20|QO|Ix'lar's minion slain: 10/10|N|Kill the Ix'lar minions|
+K Ix'lar the Underlord|QID|27487|M|60.88,34.20|T|Ix'lar the Underlord|QO|Ix'lar the Underlord slain: 1/1|N|Ix'lar wanders around, so look for the boss icon on the minimap to see where he is.|
+C Ix'lar the Underlord|QID|27487|US|M|60.88,34.20|QO|Ix'lar's minion slain: 10/10|N|Kill the Ix'lar minions|
+K The Corpulent One|QID|27477|M|57.66,28.27|T|Borelgore|N|Borelgore seems to wander in the scar, look for his boss icon on the minimap.|
+C Righteous Indignation|QID|27479|S|M|65.50,12.34|N|Kill Mossflayers as you go for their eyes, be careful not to step on the graves.|S|
+K Warlord Thresh'jin|QID|27481|T|Warlord Thresh'jin|M|58.9,20.9;66.45,10.53|CS|N|Go to the top of the ziggurat and kill Warlord Thresh'jin and loot his corpse.|
 T Out of the Ziggurat|QID|27481|M|66.58,9.17|N|(UI Alert)|
 A Into the Flames|QID|27482|M|66.58,9.17|N|(UI Alert)|
 C Into the Flames|QID|27482|U|61316|M|67.29,9.11|N|Throw the corpse into the flame.|
@@ -325,7 +329,7 @@ T The Corpulent One|QID|27477|M|61.51,43.22|N|To Gamella Cracklefizz.|
 T Ix'lar the Underlord|QID|27487|M|61.42,42.80|N|To Fiona.|
 
 A Impatience|QID|27488|M|61.50,43.21|N|From Tarenar Sunstrike.|
-C Impatience|QID|27488|L|61318 1|M|65.45,24.49|N|Pick up "Gidwin's Prayer Book".|
+C Impatience|QID|27488|NC|M|65.45,24.49|N|Pick up "Gidwin's Prayer Book".|
 T Impatience|QID|27488|M|61.53,43.31|N|To Tarenar Sunstrike.|
 A Nobody to Blame but Myself|QID|27489|M|61.53,43.31|N|From Tarenar Sunstrike.|
 r Sell junk, repair/restock.|QID|27489|M|62.28,42.28|
@@ -334,10 +338,10 @@ C Nobody to Blame but Myself|QID|27489|M|50.52,20.45|N|Ride Fiona's Caravan to N
 T Nobody to Blame but Myself|QID|27489|M|50.46,20.27|N|To Tarenar Sunstrike.|
 A Beat it Out of Them|QID|27522|M|50.46,20.27|N|From Tarenar Sunstrike.|
 A Wretched Hive of Scum and Villainy|QID|27521|M|50.10,19.57|N|From Kirkian Dawnshield.|
-f Northpass Tower|QID|27521|M|51.29,21.21|N|At Grayson Ironwing.|
-N A City Under Siege|QID|27422|M|51.55,21.36|N|From Argent Officer Irizarry. This is optional as it leads into Stratholme.|
+f Northpass Tower|M|51.29,21.21|N|At Grayson Ironwing.|
+A A City Under Siege|QID|27422|O|M|51.55,21.36|N|From Argent Officer Irizarry. This is optional as it leads into Stratholme.|
 A Duskwing, Oh How I Hate Thee...|QID|27523|M|48.11,23.01|N|From Corpseburner Tim.|
-C Duskwing, Oh How I Hate Thee...|QID|27523|U|61334|M|46.90,30.69|N|He wanders around, so look for his boss icon on the minimap. Use the flare on him if he is out of range.|
+K Duskwing|QID|27523|U|61334|M|46.90,30.69|T|Duskwing|N|He wanders around, so look for his boss icon on the minimap. Use the flare on him if he is out of range.|
 T Duskwing, Oh How I Hate Thee...|QID|27523|M|48.06,23.20|N|To Corpseburner Tim.|
 C Wretched Hive of Scum and Villainy|QID|27521|M|46.63,14.83|N|Kill 9 Quel'lithien Wretched.|
 T Wretched Hive of Scum and Villainy|QID|27521|M|50.12,19.60|N|To Kirkian Dawnshield.|
@@ -351,15 +355,20 @@ A Guardians of Stratholme|QID|27525|M|27.58,21.14|N|From Tarenar Sunstrike.|
 A Scourged Mass|QID|27528|M|27.70,21.02|N|From Crusader Kevin Frost.|
 A Defenders of Darrowshire|QID|27529|M|27.70,21.02|N|From Crusader Kevin Frost.|
 A Add 'em to the Pile|QID|27539|M|27.70,21.02|N|From Crusader Kevin Frost.|
-C Guardians of Stratholme|QID|27525|M|24.94,20.41;29.37,20.00|CS|N|Kill Omasum Blighthoof and Karthis Darkrune.|
+C Add 'em to the Pile|QID|27539|M|38.38,30.46|N|Kill Cursed Mages and Scourge Soldiers to get their skulls.|S|
+C Defenders of Darrowshire|QID|27529|M|36.27,17.53|N|Kill Cannibal Ghouls then to talk to the spirits.|S|
+C Scourged Mass|QID|27528|U|61369|M|32.22,21.30|N|Kill Overstuffed Golems and then burn their corpses.|S|
+K Karthis Darkrune|QID|27525|S|T|Karthis Darkrune|M|29.37,20.00|CN|QO|Karthis Darkrune slain: 1/1N|Kill Omasum Blighthoof and Karthis Darkrune.|
+K Omasum Blighthoof|QID|27525|T|Omasum Blighthoof|M|24.94,20.41|CN|QO|Omasum Blighthoof slain: 1/1|N|Kill Omasum Blighthoof and Karthis Darkrune.|
+K Karthis Darkrune|QID|27525|US|T|Karthis Darkrune|M|29.37,20.00|CN|QO|Karthis Darkrune slain: 1/1N|Kill Omasum Blighthoof and Karthis Darkrune.|
 A The Baroness' Missive|QID|27551|U|61378|N|Omasum Blighthoof or Karthis Darkrune should drop this. If not kill them again until they do.|
 T The Baroness' Missive|QID|27551|M|27.48,21.27|N|To Tarenar Sunstrike.|
 A Gidwin's Fate Revealed|QID|27526|M|27.48,21.27|N|From Tarenar Sunstrike.|
 T Guardians of Stratholme|QID|27525|M|27.48,21.27|N|To Tarenar Sunstrike.|
-C Scourged Mass|QID|27528|U|61369|M|32.22,21.30|N|Kill Overstuffed Golems and then burn their corpses.|S|
-C Defenders of Darrowshire|QID|27529|M|36.27,17.53|N|Kill Cannibal Ghouls then to talk to the spirits.|S|
-C Add 'em to the Pile|QID|27539|M|38.38,30.46|N|Kill Cursed Mages and Scourge Soldiers to get their skulls.|S|
-C Gidwin's Fate Revealed|QID|27526|M|28.69,26.06|N|As you enter the slaughterhouse you will be treated to a cutscene.|
+;C Scourged Mass|QID|27528|U|61369|M|32.22,21.30|N|Kill Overstuffed Golems and then burn their corpses.|S|
+;C Defenders of Darrowshire|QID|27529|M|36.27,17.53|N|Kill Cannibal Ghouls then to talk to the spirits.|S|
+;C Add 'em to the Pile|QID|27539|M|38.38,30.46|N|Kill Cursed Mages and Scourge Soldiers to get their skulls.|S|
+C Gidwin's Fate Revealed|QID|27526|NC|M|28.69,26.06|N|As you enter the slaughterhouse you will be treated to a cutscene.|
 T Gidwin's Fate Revealed|QID|27526|M|28.34,25.90|N|To Gidwin Goldbraids.|
 
 A Journey's End|QID|27527|M|28.34,25.90|N|From Gidwin Goldbraids.|
@@ -374,7 +383,7 @@ C The Corpsebeasts|QID|27530|U|61375|M|28.95,35.02|N|The beacons need to be put 
 T The Corpsebeasts|QID|27530|M|27.63,21.00|N|To Crusader Kevin Frost.|
 
 R Plaguewood Tower|QID|27530|M|18.51,27.32|N|Run to Plaguewood Tower.|
-f Plaguewood Tower|QID|27530|M|18.51,27.32|N|At William Kielar Jr..|
+f Plaguewood Tower|M|18.51,27.32|N|At William Kielar Jr..|
 T The Plaguewood Tower|QID|27532|M|17.67,27.74|N|To Argent Apothecary Judkins.|
 A Counter-Plague Research|QID|27531|M|17.67,27.74|N|From Argent Apothecary Judkins.|
 A Just a Little Touched|QID|27535|M|17.67,27.74|N|From Argent Apothecary Judkins.|
@@ -382,11 +391,11 @@ T Just a Little Touched|QID|27535|M|11.43,28.73|N|To Augustus the Touched.|
 A A Fate Worse Than Butchery|QID|27533|M|11.43,28.73|N|From Augustus the Touched.|
 A Augustus' Receipt Book|QID|27534|M|11.43,28.73|N|From Augustus the Touched.|
 C A Fate Worse Than Butchery|QID|27533|M|15.10,28.21|N|Kill 9 Plagued Swine.|S|
-C Augustus' Receipt Book|QID|27534|M|14.25,26.38|N|Upstairs in the Inn.|
+C Augustus' Receipt Book|QID|27534|NC|M|14.25,26.38|N|Upstairs in the Inn.|
 C A Fate Worse Than Butchery|QID|27533|M|15.10,28.21|N|Kill 9 Plagued Swine.|US|
 T A Fate Worse Than Butchery|QID|27533|M|11.40,28.73|N|To Augustus the Touched.|
 T Augustus' Receipt Book|QID|27534|M|11.40,28.73|N|To Augustus the Touched.|
-C Counter-Plague Research|QID|27531|M|25.09,34.66|N|The berries are small green bushes with red berries next to the mushrooms. The arms are glittering but can be hard to spot, so look carefully. The "Flesh Giant Foot Scrapings" is near the Corpsebeasts where the waypoint is.|
+C Counter-Plague Research|QID|27531|NC|M|25.09,34.66|N|The berries are small green bushes with red berries next to the mushrooms. The arms are glittering but can be hard to spot, so look carefully. The "Flesh Giant Foot Scrapings" is near the Corpsebeasts where the waypoint is.|
 T Counter-Plague Research|QID|27531|M|17.81,27.86|N|To Argent Apothecary Judkins.|
 T Journey's End|QID|27527|U|61379|M|73.83,52.16|N|To Fiona. Use "Gidwin's Hearthstone" to save your own.
 F Ironforge or Stormwind|QID|27762|M|75.81,53.42|N|Fly to Ironforge (or Stormwind depending on your class) to visit your trainers, the AH, etc.  Close this step when done.|FACTION|Alliance|

@@ -52,12 +52,14 @@ frame:SetScript("OnShow", function()
 
 	local tooltip = CreateFrame("Frame", "tooltip", frame)
 	tooltip:SetBackdrop( {
-		bgFile = [[Interface\Tooltips\UI-Tooltip-Background]],
+		-- bgFile = [[Interface\Tooltips\UI-Tooltip-Background]],
+		bgFile = [[Interface\DialogFrame\UI-DialogBox-Background]],
 		edgeFile = [[Interface\Tooltips\UI-Tooltip-Border]],
 		tile = true, tileSize = 16, edgeSize = 16,
 		insets = { left = 4,  right = 3,  top = 4,  bottom = 3 }
 	})
 	tooltip:SetBackdropColor(1, 1, 1, 1)
+	tooltip:SetAlpha(1)
 	tooltip:SetHeight(125)
 	tooltip:SetWidth(512)
 	tooltip:SetFrameStrata("TOOLTIP")
@@ -90,13 +92,16 @@ frame:SetScript("OnShow", function()
 		row.check = WoWPro:CreateCheck(row)
 		row.action = WoWPro:CreateAction(row, row.check)
 		row.action.frame:SetScript("OnEnter", function()
-		    if row.index and WoWPro.why and WoWPro.why[row.index] then
-		        tooltip:SetPoint("TOPLEFT", row, "BOTTOMLEFT", -10, 10)
-		        tooltiptext:SetHeight(125)
-		        tooltiptext:SetText(WoWPro.why[row.index])
-		        tooltiptext:SetHeight(tooltiptext:GetStringHeight())
-		        tooltip:SetHeight(tooltiptext:GetStringHeight()+20)
-		        tooltip:Show()
+			-- if row.index and WoWPro.why and WoWPro.why[row.index] then
+			if row.index then
+				local why = WoWPro.why and WoWPro.why[row.index] and (" - " .. WoWPro.why[row.index]) or ""
+				tooltip:SetPoint("TOPLEFT", row, "BOTTOMLEFT", -10, 10)
+				tooltiptext:SetHeight(125)
+				--tooltiptext:SetText(("%s%s"):format(row.index, why))
+				tooltiptext:SetText(("%s - QID:%s %s"):format(row.index, WoWPro.QID[row.index] or "---", why))
+				tooltiptext:SetHeight(tooltiptext:GetStringHeight())
+				tooltip:SetHeight(tooltiptext:GetStringHeight()+20)
+				tooltip:Show()
 		    end
 		end)
 		row.action.frame:SetScript("OnLeave", function()

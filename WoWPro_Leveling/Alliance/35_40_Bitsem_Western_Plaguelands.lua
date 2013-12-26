@@ -92,7 +92,7 @@ A Scourge First... Horde Later|QID|27159|M|41.06,70.44|N|From Thassarian.|
 A War Machines|QID|27160|M|40.97,70.38|N|From Lurid.|
 A The Endless Flow|QID|27161|M|41.27,70.06|N|From Lang Loosegrip.|
 
-f Andorhal|QID|27161|M|39.52,69.54|N|At Ginny Goodwin.|
+f Andorhal|M|39.52,69.54|N|At Ginny Goodwin.|
 
 C Scourge First... Horde Later|QID|27159|M|41.89,69.69|S|N|Kill the Desiccated Scourge.|
 C War Machines|QID|27160|M|42.50,72.01|N|Kill Opengut Behemoths.|S|
@@ -110,8 +110,8 @@ A Brute Strength|QID|27163|PRE|27160|M|41.10,70.46|N|From Thassarian.|S|
 A Scholomancer|QID|27162|PRE|27160|M|41.10,70.46|N|From Thassarian.|
 A Brute Strength|QID|27163|PRE|27160|M|41.10,70.46|N|From Thassarian.|US|
 
-C Brute Strength|QID|27163|M|43.57,69.61|N|Level 35 Elite, inside the building.|
-C Araj the Summoner|QID|27164|U|60849|M|45.20,69.32|N|Use Lang's Hand Grenades if he summons skeletons. Level 35 Elite, by the fountain. Loot Araj's Phylactery Shard.|
+K Rattlegore|QID|27163|T|Rattlegore|M|43.57,69.61|N|Level 35 Elite, inside the building.|
+K Araj the Summoner|QID|27164|T|Araj the Summoner|U|60849|M|45.20,69.32|N|Use Lang's Hand Grenades if he summons skeletons. Level 35 Elite, by the fountain. Loot Araj's Phylactery Shard.|
 C Scholomancer|QID|27162|M|45.39,72.34|N|Kill Darkmaster Gandling, a boss skull boss (HP 3660).  Thassarian and Koltira Deathweaver will appear to help you during the battle at about HP 1000.|
 
 T Araj the Summoner|QID|27164|M|41.13,70.48|N|To Thassarian.|S|
@@ -171,7 +171,7 @@ A I Ain't Sayin' You a Gourd-Digger...|QID|26956|M|48.60,54.88|N|From Selyria Gr
 
 A The Battle Resumes!|QID|27197|M|50.39,52.70|N|From Durnt Brightfalcon.|
 
-f The Menders' Stead|QID|27197|M|50.49,52.34|N|At Marge Heffman.|
+f The Menders' Stead|M|50.49,52.34|N|At Marge Heffman.|
 r Repair and Restock|QID|26953|NC|M|50.69,52.89|N|Repair and Restock.|
 
 C I Ain't Sayin' You a Gourd-Digger...|QID|26956|M|47.41,52.91;46.33,54.45;45.19,53.4|CN|N|Click Bad Corn, Unhealthy-Looking Pumpkins and Rotten Apples; then kill the mobs that appear.|
@@ -221,7 +221,7 @@ T This Means WAR (Wild Arachnid Roundup)|QID|27001|M|48.11,32.47|N|To Nathaniel 
 
 A An Audience with the Highlord|QID|27002|PRE|27001|M|48.11,32.47|N|From Nathaniel Dumah.|
 
-f Hearthglen|QID|27002|M|47.67,31.80;44.67,18.58|CS|N|Hop on a charger and follow the road to Hearthglen. At William Henderson.|
+f Hearthglen|M|47.67,31.80;44.67,18.58|N|Hop on a charger and follow the road to Hearthglen. At William Henderson.|
 
 A It's About Time!|QID|27156|M|43.24,16.02|N|From Lieutenant Myner.|
 T An Audience with the Highlord|QID|27002|M|42.04,14.64|N|To Highlord Tirion Fordring.|
@@ -232,9 +232,9 @@ A Taelan Fordring's Legacy|QID|27151|M|42.19,14.98|N|From Daria L'Rayne.|
 C It's About Time!|QID|27156|M|43.09,16.33|N|Talk to Trainees. Challenge and beat them.|
 T It's About Time!|QID|27156|M|43.28,15.96|N|To Lieutenant Myner.|
 
-A Drudges...|QID|27157|M|43.28,15.96|N|From Lieutenant Myner.|
-C Drudges...|QID|27157|M|45.86,12.31;45.37,9.73|CS|N|Enter the mine. Kill the *ew* huge spider.|
-T Drudges...|QID|27157|M|43.27,15.91|N|To Lieutenant Myner.|
+A Drudges... <Sigh>|QID|27157|PRE|27157|M|43.28,15.96|N|From Lieutenant Myner.|
+C Drudges... <Sigh>|QID|27157|T|Shadril|M|45.86,12.31;45.37,9.73|N|Enter the mine. Kill the *ew* huge spider.|
+T Drudges... <Sigh>|QID|27157|M|43.27,15.91|N|To Lieutenant Myner.|
 
 C Taelan Fordring's Legacy|QID|27151|M|54.78,24.69|N|Kill Gnoll looters.|
 T Taelan Fordring's Legacy|QID|27151|M|54.99,24.73|
