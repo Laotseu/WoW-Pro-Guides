@@ -530,6 +530,8 @@ function WoWPro:RowUpdate(offset)
 	local module = WoWPro:GetModule(WoWPro.Guides[GID].guidetype)
 	ClearOverrideBindings(WoWPro.MainFrame)
 	WoWPro.RowDropdownMenu = {}
+
+	local CurrentIndex = WoWPro.CurrentIndex
 	
 	local last_visible_i = 15 -- Last row visible
 	for i=1,15 do
@@ -853,6 +855,12 @@ function WoWPro:RowUpdate(offset)
 	
 	WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount or 0
 	WoWPro.CurrentIndex = WoWPro.rows[1+WoWPro.ActiveStickyCount].index
+	if CurrentIndex ~= WoWPro.CurrentIndex then
+		WoWPro:MapPoint()
+		WoWPro:SendMessage("WoWPro_QuestDialogAutomation") -- Just in case a dialog is open for the step that was just added
+	end
+
+
 	WoWPro:UpdateQuestTracker()
 
 	return reload
