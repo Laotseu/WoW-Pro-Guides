@@ -497,7 +497,7 @@ function WoWPro:CheckFunction(row, button, down)
 	elseif button == "RightButton" and row.check:GetChecked() then
 	    row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
 		WoWProCharDB.Guide[GID].completion[row.index] = true
-		WoWPro:MapPoint()
+		WoWPro:UpdateQuestTracker()
 		if WoWProDB.profile.checksound then	
 			PlaySoundFile(WoWProDB.profile.checksoundfile)
 		end
@@ -573,16 +573,16 @@ function WoWPro:RowUpdate(offset)
 		
 		-- Checking off leadin steps --
 		-- Perhaps this logic belongs in NextStep?  --Ludo
-		if leadin then
-		    local numQIDs = select("#", string.split(";", leadin))
-		    for j=1,numQIDs do
-			    local lQID = select(numQIDs-j+1, string.split(";", leadin))
-				if WoWProCharDB.completedQIDs[tonumber(lQID)] and not completion[k] then
-			        completion[k] = true
-			        return true --reloading
-		        end
-			end
-		end		
+		-- if leadin then
+		--     local numQIDs = select("#", string.split(";", leadin))
+		--     for j=1,numQIDs do
+		-- 	    local lQID = select(numQIDs-j+1, string.split(";", leadin))
+		-- 		if WoWProCharDB.completedQIDs[tonumber(lQID)] and not completion[k] then
+		-- 	        completion[k] = true
+		-- 	        return true --reloading
+		--         end
+		-- 	end
+		-- end		
 		
 		-- Unstickying stickies --
 		if unsticky and i == WoWPro.ActiveStickyCount+1 then

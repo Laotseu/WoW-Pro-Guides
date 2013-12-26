@@ -427,6 +427,16 @@ function WoWPro:NextStep(k,i)
     	end
     	if skip then break end -- Exit the loop
 
+    	-- Check leadin
+    	if WoWPro.leadin[k] and k <= WoWPro.CurrentIndex and
+    		WoWPro:IsQuestFlaggedCompleted(WoWPro.leadin[k]) then
+ 			skip = true 
+ 			WoWPro:dbp("Step %s [%s] skipped because it is a leadin to QID %s that is completed.",WoWPro.action[k],WoWPro.step[k],WoWPro.leadin[k])
+ 			WoWPro.why[k] = "NextStep(): Skipping step because it is a leadin to a completed quest."
+			WoWProCharDB.Guide[GID].skipped[k] = true
+ 			break
+    	end
+
         -- Partial Completion --
         -- Already done in AutoCompleteQuestUpdate
         -- if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[k] 
