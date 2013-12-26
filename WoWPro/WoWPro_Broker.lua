@@ -87,22 +87,22 @@ function WoWPro.LoadGuideReal()
 	end
 	
 	-- If the current guide can not be found, see if it was renamed.
-	if not WoWPro.Guides[GID] then
-	    local myUFG = UnitFactionGroup("player"):sub(1,1)
-	    local name,levels = GID:match("([A-Za-z]+)([0-9]+)")
-	    levels = levels or ""
-	    name = name or ""
-	    local newGID =name..myUFG..levels
-	    if WoWPro.Guides[newGID] then
-	        -- Yeah, we renamed the guide on the poor chap.
-	        -- Remap the state
-	        WoWPro:Print("Guide "..GID.." was renamed to "..newGID..".  Remapping.")
-	        WoWProCharDB.Guide[newGID] = WoWProCharDB.Guide[GID]
-	        WoWProCharDB.Guide[GID] = nil
-	        GID = newGID
-	        WoWProDB.char.currentguide = GID  
-	    end
-	end
+	-- if not WoWPro.Guides[GID] then
+	--     local myUFG = UnitFactionGroup("player"):sub(1,1)
+	--     local name,levels = GID:match("([A-Za-z]+)([0-9]+)")
+	--     levels = levels or ""
+	--     name = name or ""
+	--     local newGID =name..myUFG..levels
+	--     if WoWPro.Guides[newGID] then
+	--         -- Yeah, we renamed the guide on the poor chap.
+	--         -- Remap the state
+	--         WoWPro:Print("Guide "..GID.." was renamed to "..newGID..".  Remapping.")
+	--         WoWProCharDB.Guide[newGID] = WoWProCharDB.Guide[GID]
+	--         WoWProCharDB.Guide[GID] = nil
+	--         GID = newGID
+	--         WoWProDB.char.currentguide = GID  
+	--     end
+	-- end
 	if not WoWPro.Guides[GID] then 
 		WoWPro:dbp("Guide "..GID.." not found, loading NilGuide.")
 		WoWPro:LoadNilGuide()
@@ -122,6 +122,7 @@ function WoWPro.LoadGuideReal()
 	    WoWPro:Print("Resetting Guide "..GID.." due to upgrade.  Forgetting skipped steps.")
 	    WoWProCharDB.Guide[GID].completion =  {}
 	    WoWProCharDB.Guide[GID].skipped =  {}
+	    WoWProCharDB.Guide[GID].why =  {}
 	    WoWProCharDB.Guide[GID].Version = WoWPro.Version
     end
     
@@ -130,12 +131,14 @@ function WoWPro.LoadGuideReal()
 	    WoWPro:Print("Manual reset of Guide "..GID..".")
 	    WoWProCharDB.Guide[GID].completion =  {}
 	    WoWProCharDB.Guide[GID].skipped =  {}
+	    WoWProCharDB.Guide[GID].why =  {}
 	    WoWProCharDB.Guide[GID].Version = WoWPro.Version
     end
 	    
 	if ((not WoWProCharDB.Guide[GID].completion) or (not WoWProCharDB.Guide[GID].skipped)) then
 	    WoWProCharDB.Guide[GID].completion = WoWProCharDB.Guide[GID].completion or {}
 	    WoWProCharDB.Guide[GID].skipped = WoWProCharDB.Guide[GID].skipped or {}
+	    WoWProCharDB.Guide[GID].why = WoWProCharDB.Guide[GID].why or {}
 	    local guide = WoWPro.Guides[GID]
 	    WoWPro:Print(("Initializing Guide: %s - %s (%s)."):format(guide.name or guide.zone or "", guide.guidetype, GID))
 	end
