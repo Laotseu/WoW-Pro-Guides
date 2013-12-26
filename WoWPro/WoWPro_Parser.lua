@@ -718,13 +718,17 @@ function WoWPro:RowUpdate(offset)
 		
 		-- Item Button --
 		if action == "H" then use = 6948 end
-		if ( not use ) and action == "C" and WoWPro.QuestLog[tonumber(QID)] then
+		if ( not use ) and (questtext or action == "C" or action == "K") and WoWPro.QuestLog[tonumber(QID)] then
 			-- local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[tonumber(QID)].index)
 			local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[tonumber(QID)])
 			if link then
-				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
-				use = Id
-				WoWPro.use[k] = use
+				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name 
+					= string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
+				-- Verify if the item is used in the target macro, otherwise generate the |U| tag on the fly
+				if not target or (not target:find("use item[:]%d+") and not (name and target:find("use "..name,1,1))) then
+					use = Id
+					WoWPro.use[k] = use
+				end
 			end
 		end
 		
@@ -780,10 +784,17 @@ function WoWPro:RowUpdate(offset)
 		    local mtext
 		    local target, emote = string.split(",",target)
 			row.targetbutton:Show()
-			if string.sub(target,1,1) == "/" then
-			    mtext = string.gsub(target,"\\n","\n")
-			elseif emote then
-			    mtext = "/target "..target.."\n/"..emote
+			if emote then
+			   mtext = target:gsub("\\n","\n")
+			   mtext = mtext:gsub("[|]n","\n")
+
+				row.targetbutton.tooltip_text = "/targetexact "..target.."\n/"..emote
+				mtext = "#showtooltip"
+						.."\n/cleartarget"
+						.."\n/targetexact [nodead] "..target
+						.."\n/cleartarget [@target,dead]"
+						.."\n/script if not GetRaidTargetIndex('target') then SetRaidTarget('target', 1) end"
+						.."\n/"..emote
 			else			
 				mtext = "/cleartarget"
 						.."\n/targetexact [nodead] "..target
