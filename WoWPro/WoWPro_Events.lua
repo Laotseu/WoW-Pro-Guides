@@ -167,7 +167,7 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 							completion = nil
 							if not skipUIUpdate then
 								WoWPro:UpdateGuide()
-								WoWPro:MapPoint()
+								WoWPro:UpdateQuestTracker()
 							end
 						
 						  

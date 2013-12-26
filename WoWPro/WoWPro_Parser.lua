@@ -168,7 +168,7 @@ function WoWPro:SkipStep(index)
 	
 	skipstep(index)
 	
-	WoWPro:MapPoint()
+	WoWPro:UpdateQuestTracker()
 	return steplist
 end
 
@@ -206,7 +206,7 @@ function WoWPro:UnSkipStep(index)
 	
 	unskipstep(index)
 	WoWPro:UpdateGuide()
-	WoWPro:MapPoint()
+	WoWPro:UpdateQuestTracker()
 end
 
 
@@ -510,7 +510,7 @@ end
 -- Functions used by dropdown menus
 local function _MapBlizCoordinate(self, row_num)
 	--err("row_num=%s",row_num)
-	WoWPro:MapPoint(row_num)
+	WoWPro:MapPoint(row_num,true)
 end
 
 -- Row Content Update --
