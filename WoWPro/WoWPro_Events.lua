@@ -715,113 +715,118 @@ function WoWPro.PuntedQLU()
     WoWPro.EventHandler(nil, "QUEST_LOG_UPDATE")
 end
 
+
 -- Call this function to deal with any open quest dialog for autoaccept, autocomplete and autoturins
+-- for any of the current displayed step
 function WoWPro:QuestDialogAutomation()
+	if not WoWPro.CurrentIndex or not WoWPro.ActiveStep then return end
 
-	local callMeAgain = nil
+	for step_index = WoWPro.ActiveStep, WoWPro.CurrentIndex do
 
-	if GossipFrame:IsShown() then
+		local callMeAgain = nil
 
-		local qidx = WoWPro.CurrentIndex
-		local action, step = WoWPro.action[qidx], WoWPro.step[qidx]
-		if WoWProCharDB.AutoTurnin and action == "T" then
+		if GossipFrame:IsShown() then
 
-			local index = 1
-			repeat
-				local item = select((index-1) * 5 + 1, GetGossipActiveQuests())
-				if item == step then
-					SelectGossipActiveQuest(index)
-					callMeAgain = true
-					break
-				end
-				index = index + 1
-			until not item
+			local action, step = WoWPro.action[step_index], WoWPro.step[step_index]
+			if WoWProCharDB.AutoTurnin and action == "T" then
 
-		elseif WoWProCharDB.AutoAccept and action == "A" then
+				local index = 1
+				repeat
+					local item = select((index-1) * 5 + 1, GetGossipActiveQuests())
+					if item == step then
+						SelectGossipActiveQuest(index)
+						callMeAgain = true
+						break
+					end
+					index = index + 1
+				until not item
 
-			local index = 1
-			repeat
-				local item = select((index-1) * 6 + 1, GetGossipAvailableQuests())
-				if item == step then
-					SelectGossipAvailableQuest(index)
-					callMeAgain = true
-					break
-				end
-				index = index + 1
-			until not item
-		end
-	end
+			elseif WoWProCharDB.AutoAccept and action == "A" then
 
-	if QuestFrameGreetingPanel:IsShown() then
-		local qidx = WoWPro.CurrentIndex
-		local action, step = WoWPro.action[qidx], WoWPro.step[qidx]
-
-		if WoWProCharDB.AutoSelect and action == "T" then
-			local numActiveQuests = GetNumActiveQuests()
-			local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-			for i=1, numActiveQuests do
-				if GetActiveTitle(i) == step then
-					SelectActiveQuest(i)
-					callMeAgain = true
-					break
-				end
-			end
-		elseif WoWProCharDB.AutoSelect and action == "A" then
-			local numAvailableQuests = GetNumAvailableQuests()
-			for i=1, numAvailableQuests do
-				if GetAvailableTitle(i) == step then
-					SelectAvailableQuest(i)
-					callMeAgain = true
-					break
-				end
+				local index = 1
+				repeat
+					local item = select((index-1) * 6 + 1, GetGossipAvailableQuests())
+					if item == step then
+						SelectGossipAvailableQuest(index)
+						callMeAgain = true
+						break
+					end
+					index = index + 1
+				until not item
 			end
 		end
-	end
 
-	if QuestFrameProgressPanel:IsShown() then
+		if QuestFrameGreetingPanel:IsShown() then
+			local action, step = WoWPro.action[step_index], WoWPro.step[step_index]
 
-		-- Turnin the current quest automaticaly if applicable
-		local qidx = WoWPro.CurrentIndex
-		if WoWProCharDB.AutoTurnin and WoWPro.action[qidx] == "T" and GetTitleText() == WoWPro.step[qidx] then
-			CompleteQuest()
-			callMeAgain = true
+			if WoWProCharDB.AutoSelect and action == "T" then
+				local numActiveQuests = GetNumActiveQuests()
+				local step_index = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+				for i=1, numActiveQuests do
+					if GetActiveTitle(i) == step then
+						SelectActiveQuest(i)
+						callMeAgain = true
+						break
+					end
+				end
+			elseif WoWProCharDB.AutoSelect and action == "A" then
+				local numAvailableQuests = GetNumAvailableQuests()
+				for i=1, numAvailableQuests do
+					if GetAvailableTitle(i) == step then
+						SelectAvailableQuest(i)
+						callMeAgain = true
+						break
+					end
+				end
+			end
 		end
-	end
 
-	if QuestFrameRewardPanel:IsShown() then
+		if QuestFrameProgressPanel:IsShown() then
 
-		-- Choose the reward automaticaly if there is only one choice
-		local qidx = WoWPro.CurrentIndex
-		if WoWProCharDB.AutoTurnin and 
-			(WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and
-			GetTitleText() == WoWPro.step[qidx] and
-			GetNumQuestChoices() <= 1 then
-				GetQuestReward(1)
-				callMeAgain = true
-		end
-	end
-
-	if QuestFrameDetailPanel:IsShown() then
---err("AutoAcceptQuest")
-
-		-- Accept the current quest automaticaly if applicable
-		local qidx = WoWPro.CurrentIndex
-		if WoWProCharDB.AutoAccept and 
-			WoWPro.action[qidx] == "A" and 
-			GetTitleText() == WoWPro.step[qidx] and
-			not WoWPro.optional[qidx] then -- Don' t automatically accept optional quests
-			-- Auto Quest are automaticaly accepted as soon as you see the quest text
-			-- This code was lifted from QuestFrame.lua to prevent calling AcceptQuest()
-			-- for an already accepted quest.
-			if ( _G.QuestFrame.autoQuest ) then
-				HideUIPanel(_G.QuestFrame)
-			else
-				AcceptQuest()
+			-- Turnin the current quest automaticaly if applicable
+			if WoWProCharDB.AutoTurnin and WoWPro.action[step_index] == "T" and GetTitleText() == WoWPro.step[step_index] then
+				CompleteQuest()
 				callMeAgain = true
 			end
 		end
+
+		if QuestFrameRewardPanel:IsShown() then
+
+			-- Choose the reward automaticaly if there is only one choice
+			if WoWProCharDB.AutoTurnin and 
+				(WoWPro.action[step_index] == "T" or WoWPro.action[step_index] == "A") and
+				GetTitleText() == WoWPro.step[step_index] and
+				GetNumQuestChoices() <= 1 then
+					GetQuestReward(1)
+					callMeAgain = true
+			end
+		end
+
+		if QuestFrameDetailPanel:IsShown() then
+	--err("AutoAcceptQuest")
+
+			-- Accept the current quest automaticaly if applicable
+			if WoWProCharDB.AutoAccept and 
+				WoWPro.action[step_index] == "A" and 
+				GetTitleText() == WoWPro.step[step_index] and
+				not WoWPro.optional[step_index] then -- Don' t automatically accept optional quests
+				-- Auto Quest are automaticaly accepted as soon as you see the quest text
+				-- This code was lifted from QuestFrame.lua to prevent calling AcceptQuest()
+				-- for an already accepted quest.
+				if ( _G.QuestFrame.autoQuest ) then
+					HideUIPanel(_G.QuestFrame)
+				else
+					AcceptQuest()
+					callMeAgain = true
+				end
+			end
+		end
+
+		if callMeAgain then 
+			WoWPro:SendMessage("WoWPro_QuestDialogAutomation") 
+			return
 	end
 
-	if callMeAgain then WoWPro:SendMessage("WoWPro_QuestDialogAutomation") end
+	end
 
 end
