@@ -313,30 +313,19 @@ Rep2IdAndClass = {  ["hated"] = {1,false},
 -- Determines the next active step --
 function WoWPro:NextStep(k,i)
 	local GID = WoWProDB.char.currentguide
+	if not GID then return 1 end
 	if not k then k = 1 end --k is the position in the guide
 	if not i then i = 1 end --i is the position on the rows
 	WoWPro:dbp("Called WoWPro:NextStep(%d,%d)",k,i)
 	local skip = true
-	local loop, lastk = 1, 0
-	WoWPro.CurrentIndex = WoWPro.CurrentIndex or 0
+
+	local CurrentIndex = max(WoWPro.CurrentIndex or 0, WoWPro.ActiveStep or 0)
 
 	-- The "repeat ... break ... until true" hack is how you do a continue in LUA!  http://lua-users.org/lists/lua-l/2006-12/msg00444.html
 	while skip do repeat
 		local QID=WoWPro.QID[k]
 		skip = false -- The step defaults to NOT skipped
 
-		-- Infinite loop detection and protection
-		if lastk == k then
-			loop = loop + 1
-			if loop > 20 then
-				err("Looping on %s",k)
-				return
-			end
-		else
-			loop = 0
-			lastk = k
-		end 
-		
 		-- Quickly skip completed steps --
 		if WoWProCharDB.Guide[GID].completion[k] then skip = true ; break end
 
@@ -372,7 +361,7 @@ function WoWPro:NextStep(k,i)
 	
 	
 		-- Checking Prerequisites --
-    	if WoWPro.prereq[k] and k <= WoWPro.CurrentIndex then
+    	if WoWPro.prereq[k] and k <= CurrentIndex then
     	    if string.find(WoWPro.prereq[k],"+") then
     	        -- Any prereq met is OK, skip only if none are met	
         		local numprereqs = select("#", string.split("+", WoWPro.prereq[k]))
@@ -403,7 +392,7 @@ function WoWPro:NextStep(k,i)
     	end
 
     	-- Skipping quests with prerequisites if their prerequisite was skipped --
-    	if WoWPro.prereq[k] and k <= WoWPro.CurrentIndex 
+    	if WoWPro.prereq[k] and k <= CurrentIndex 
     	and not WoWProCharDB.Guide[GID].skipped[k] 
     	and not WoWProCharDB.skippedQIDs[QID] then 
     		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
@@ -428,7 +417,7 @@ function WoWPro:NextStep(k,i)
     	if skip then break end -- Exit the loop
 
     	-- Check leadin
-    	if WoWPro.leadin[k] and k <= WoWPro.CurrentIndex and
+    	if WoWPro.leadin[k] and k <= CurrentIndex and
     		WoWPro:IsQuestFlaggedCompleted(WoWPro.leadin[k]) then
  			skip = true 
  			WoWPro:dbp("Step %s [%s] skipped because it is a leadin to QID %s that is completed.",WoWPro.action[k],WoWPro.step[k],WoWPro.leadin[k])
@@ -464,9 +453,9 @@ function WoWPro:NextStep(k,i)
 	   -- Skip C or T steps if not in QuestLog
 	   if (WoWPro.action[k] == "C" or WoWPro.action[k] == "T") and
 	      not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) and 
-	      k <= WoWPro.CurrentIndex then 
+	      k <= CurrentIndex then 
  			skip = true -- If the quest is not in the quest log, the step is skipped --
- 			WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k],WoWPro.active[k])
+ 			WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k])
  			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in QuestLog."
 			WoWProCharDB.Guide[GID].skipped[k] = true
  			break
@@ -480,7 +469,7 @@ function WoWPro:NextStep(k,i)
 	   end	
 
 	   -- Complete "h" steps if the Hearthstone is already bound to the correct desnisation
-	   if WoWPro.action[k] == "h" and WoWPro.step[k] == GetBindLocation() and k <= WoWPro.CurrentIndex then
+	   if WoWPro.action[k] == "h" and WoWPro.step[k] == GetBindLocation() and k <= CurrentIndex then
 		   WoWPro.CompleteStep(k)
 		   skip = true
 		   break
@@ -489,7 +478,7 @@ function WoWPro:NextStep(k,i)
 	   -- Current zone check : steps that complete if were are in the correct zone.
 	   if (WoWPro.action[k] == "F" or WoWPro.action[k] == "R" or WoWPro.action[k] == "b" or WoWPro.action[k] == "H") and
 	   	not WoWPro.waypcomplete[k] and
-	   	k <= WoWPro.CurrentIndex and
+	   	k <= CurrentIndex and
 	   	(WoWPro.step[k] == GetZoneText():trim() or WoWPro.step[k] == GetSubZoneText():trim()) then
 
 	   	WoWPro.CompleteStep(k)
@@ -498,7 +487,7 @@ function WoWPro:NextStep(k,i)
 	   end
 
 	    -- Check for must be active quests
-		if WoWPro.active and WoWPro.active[k] and k <= WoWPro.CurrentIndex then
+		if WoWPro.active and WoWPro.active[k] and k <= CurrentIndex then
 			if not WoWPro:QIDsInTable(WoWPro.active[k],WoWPro.QuestLog) then 
 				skip = true -- If the quest is not in the quest log, the step is skipped --
 				WoWPro.why[k] = "NextStep(): Skipping step necessary ACTIVE quest is not in QuestLog."
@@ -729,7 +718,7 @@ function WoWPro:NextStep(k,i)
       end
         
     	-- This tests for spells that are cast on you and show up as buffs
-    	if WoWPro.buff and WoWPro.buff[k] and k <= WoWPro.CurrentIndex then
+    	if WoWPro.buff and WoWPro.buff[k] and k <= CurrentIndex then
     	    local buffy = WoWPro:CheckPlayerForBuffs(WoWPro.buff[k])
     	    if buffy then
 	            skip = true
@@ -751,7 +740,7 @@ function WoWPro:NextStep(k,i)
 		
 
       -- Do we have enough loot in bags?
-		if (WoWPro.lootitem and WoWPro.lootitem[k] and k <= WoWPro.CurrentIndex) then
+		if (WoWPro.lootitem and WoWPro.lootitem[k] and k <= CurrentIndex) then
 		    if GetItemCount(WoWPro.lootitem[k]) >= WoWPro.lootqty[k] then
 		        if WoWPro.action[k] == "T" then
 		            -- Special for T steps, do NOT skip.  Like Darkmoon [Test Your Strength]
@@ -770,7 +759,7 @@ function WoWPro:NextStep(k,i)
 			end
 		else		
     		-- Special for Buy steps where the step name is the item to buy and no |L| specified
-    		if WoWPro.action[k] == "B" and k <= WoWPro.CurrentIndex then
+    		if WoWPro.action[k] == "B" and k <= CurrentIndex then
     		    if GetItemCount(WoWPro.step[k]) > 0 then
     			    WoWPro.why[k] = "NextStep(): completed cause you bought enough named loot."
     			    WoWPro.CompleteStep(k)
@@ -786,6 +775,12 @@ function WoWPro:NextStep(k,i)
 		
 	until true
 	if skip then k = k+1 end
+
+	-- Prevent infinite loop
+	if k > #WoWPro.step then
+		--err("Infinite loop")
+		return CurrentIndex
+	end
 		
 	end
 	
