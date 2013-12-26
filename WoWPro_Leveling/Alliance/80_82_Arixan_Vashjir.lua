@@ -9,7 +9,7 @@
 
 -- URL: http://wow-pro.com/node/3305/revisions/25599/view
 -- Date: 2013-03-23 20:43
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Quest name tweaks
 
 -- URL: http://wow-pro.com/node/3305/revisions/25538/view
@@ -19,7 +19,7 @@
 
 -- URL: http://wow-pro.com/node/3305/revisions/25442/view
 -- Date: 2013-01-13 16:18
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Added C* tags
 
 -- URL: http://wow-pro.com/node/3305/revisions/25392/view
@@ -29,12 +29,12 @@
 
 -- URL: http://wow-pro.com/node/3305/revisions/25341/view
 -- Date: 2013-01-11 23:24
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Added CS,CC and CN tags
 
 -- URL: http://wow-pro.com/node/3305/revisions/25074/view
 -- Date: 2012-09-15 20:24
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Tweaked some RANK2's to 1's and corrected some prerequisites so that the guide could be played at RANK1.
 
 -- URL: http://wow-pro.com/node/3305/revisions/24774/view
@@ -54,7 +54,7 @@
 
 -- URL: http://wow-pro.com/node/3305/revisions/24532/view
 -- Date: 2011-06-08 03:23
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Correct Successor.
 
 -- URL: http://wow-pro.com/node/3305/revisions/24489/view
@@ -69,12 +69,12 @@
 
 -- URL: http://wow-pro.com/node/3305/revisions/24466/view
 -- Date: 2011-05-31 21:00
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Spell Vashj'ir right!
 
 -- URL: http://wow-pro.com/node/3305/revisions/24434/view
 -- Date: 2011-05-28 11:03
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: PLayed the zone, fixed some text, coords and zones.
 
 -- URL: http://wow-pro.com/node/3305/revisions/24276/view
@@ -93,12 +93,12 @@
 
 -- URL: http://wow-pro.com/node/3305/revisions/24170/view
 -- Date: 2011-03-12 18:40
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: Unique ID
 
 -- URL: http://wow-pro.com/node/3305/revisions/24144/view
 -- Date: 2011-03-06 16:37
--- Who: Ludovicus
+-- Who: Ludovicus Maior
 -- Log: A ton of tweaks from geri.
 
 -- URL: http://wow-pro.com/node/3305/revisions/24029/view
@@ -234,10 +234,10 @@ A The Eye of the Storm|QID|28826|M|74.5,19.2|Z|Stormwind City|N|From Naraat the 
 C The Eye of the Storm|QID|28826|NC|M|74.4,19.6|Z|Stormwind City|N|Right click the water bowl behind you, then watch the cinematic!|
 T The Eye of the Storm|QID|28826|M|74.5,19.2|Z|Stormwind City|N|To Naraat the Earthspeaker.|
 
-A To the Depths|QID|28827|PRE|14481;27724|M|74.5,19.2|Z|Stormwind City|N|From Naraat the Earthspeaker. Not available if you have in your log Into The Abyss or Hero's Call: Vashj'ir!|
-T Hero's Call: Vashj'ir!|QID|27724|M|27.4,24.3|Z|Stormwind City|N|To Recruiter Burns.|O|
-T Into The Abyss|QID|14481|M|27.4,24.3|Z|Stormwind City|N|To Recruiter Burns.|O|
-T To the Depths|QID|28827|PRE|14481;27724|M|27.4,24.3|Z|Stormwind City|N|To Recruiter Burns.|
+A To the Depths|QID|28827|LEAD|14482|M|74.5,19.2|Z|Stormwind City|N|From Naraat the Earthspeaker. Not available if you have in your log Into The Abyss or Hero's Call: Vashj'ir!|
+T Hero's Call: Vashj'ir!|QID|27724|LEAD|14482|M|27.4,24.3|Z|Stormwind City|N|To Recruiter Burns.|
+T Into The Abyss|QID|14481|LEAD|14482|M|27.4,24.3|Z|Stormwind City|N|To Recruiter Burns.|
+T To the Depths|QID|28827|LEAD|14482|M|27.4,24.3|Z|Stormwind City|N|To Recruiter Burns.|
 
 A Call of Duty|QID|14482|M|27.39,24.16|Z|Stormwind City|N|From Recruiter Burns.|
 C Call of Duty|QID|14482|M|18.5,25.5|Z|Stormwind City|NC|N|Head to the end of the northern-most dock and board the ship. It will take 5 minutes for the ship to arrive, during which a small event will happen on the docks with soldiers talking about recent events. Once you board the ship, just sit back and watch the on-ship entertainment courtesy of Budd and Captain Taylor.|
@@ -498,17 +498,17 @@ T A Powerful Need To Eat|QID|25535|M|48.9,49.2|Z|Shimmering Expanse|N|To Divemas
 A Clamming Up|QID|25539|PRE|25535|M|48.9,49.2|Z|Shimmering Expanse|N|From Divemaster Birmingham.|
 A Art of Attraction|QID|25537|PRE|25535|M|49,49.2|Z|Shimmering Expanse|N|From Engineer Hexascrub.|
 C Cold Welcome|QID|25536|S||M|43.2,49.9|Z|Shimmering Expanse|N|Kill Tidehunters.|
-C Clamming Up|QID|25539|M|45.5,52.5;42.82,48.53;41.74,46.77|Z|Shimmering Expanse|CN|N|Collect Clams.|S|
-C Art of Attraction|QID|25537|U|54840|M|42.66,49.43;45.68,52.53;48.69,53.92;49.99,51.23|Z|Shimmering Expanse|CN|N|Swim up to the anemones on the cliff walls. When you are near one, use the Anemone Chemical Extraction Device.|
-C Clamming Up|QID|25539|M|45.5,52.5;42.82,48.53;41.74,46.77|Z|Shimmering Expanse|CN|N|Collect Clams.|US|
+C Clamming Up|QID|25539|NC|M|45.5,52.5;42.82,48.53;41.74,46.77|CS|Z|Shimmering Expanse|CN|N|Collect Clams.|S|
+C Art of Attraction|QID|25537|NC|U|54840|M|42.66,49.43;45.68,52.53;48.69,53.92;49.99,51.23|CS|Z|Shimmering Expanse|CN|N|Swim up to the anemones on the cliff walls. When you are near one, use the Anemone Chemical Extraction Device.|
+C Clamming Up|QID|25539|NC|M|45.5,52.5;42.82,48.53;41.74,46.77|CS|Z|Shimmering Expanse|CN|N|Collect Clams.|US|
 C Cold Welcome|QID|25536|US|M|43.2,49.9|Z|Shimmering Expanse|N|Kill remaining Tidehunters.|
 T Clamming Up|QID|25539|M|48.9,49.2|Z|Shimmering Expanse|N|To Divemaster Birmingham.|
 T Art of Attraction|QID|25537|M|49,49.2|Z|Shimmering Expanse|N|To Engineer Hexascrub.|
 A Odor Coater|QID|25538|PRE|25537|M|49,49.2|Z|Shimmering Expanse|N|From Engineer Hexascrub.|
-C Odor Coater|QID|25538|M|49.06,52.62;48.09,53.23;46.98,52.54;45.24,52.01;47.46,50.82|CN|U|54851|Z|Shimmering Expanse|N|Swim around to the Glimmerdeep Clam Divers and use Anemone Chemical Application Device on them.|
+C Odor Coater|QID|25538|NC|M|49.06,52.62;48.09,53.23;46.98,52.54;45.24,52.01;47.46,50.82|CN|U|54851|Z|Shimmering Expanse|N|Swim around to the Glimmerdeep Clam Divers and use Anemone Chemical Application Device on them.|
 T Odor Coater|QID|25538|M|49,49.2|Z|Shimmering Expanse|N|To Engineer Hexascrub.|
 A Bellies Await|QID|25540|PRE|25538;25539|M|49,49.2|Z|Shimmering Expanse|N|From Divemaster Birmingham.|
-T Cold Welcome|QID|25536|M|46.63,57.46;49.2,57|Z|Shimmering Expanse|CC|N|To Captain Taylor.|
+T Cold Welcome|QID|25536|M|46.63,57.46;49.2,57|CS|Z|Shimmering Expanse|N|To Captain Taylor.|
 T Bellies Await|QID|25540|M|49.46,57.40|Z|Shimmering Expanse|N|To Wavespeaker Valoren.|
 A An Occupation of Time|QID|25581|PRE|25536;25540|RANK|2|M|49.69,57.15|Z|Shimmering Expanse|N|From Levia Dreamwalker.|
 A Swift Approach|QID|25580|RANK|1|PRE|25536;25540|M|49.20,56.99|Z|Shimmering Expanse|N|From Captain Taylor.|
@@ -516,25 +516,25 @@ A A Better Vantage|QID|25582|PRE|25536;25540|M|49.20,56.99|Z|Shimmering Expanse|
 A Caught Off-Guard|QID|25579|RANK|1|PRE|25536;25540|M|49.2,56.9|Z|Shimmering Expanse|N|From Admiral Dvorek.|
 C Caught Off-Guard|QID|25579|RANK|1|S|Z|Shimmering Expanse|N|Kill Azsh'ir Patrollers.|
 C Swift Approach|QID|25580|RANK|1|S|Z|Shimmering Expanse|N|Destroy Azsh'ir Monitors.|
-N Lestharia Vashj statue|QID|25581|QO|Lestharia Vashj statue: 1/1|M|39.66,58.96|Z|Shimmering Expanse|N|Read the inscription at the Lestharia Vashj statue.|
-N Queen Azshara statue|QID|25581|QO|Queen Azshara statue: 1/1|M|38.62,58.96|Z|Shimmering Expanse|N|Read the inscription at the Queen Azshara statue.|
-N High Priestess Siralen statue|QID|25581|QO|High Priestess Siralen statue: 1/1|M|38.46,66.05|Z|Shimmering Expanse|N|Read the inscription at the High Priestess Siralen statue.|
-C An Occupation of Time|QID|25581|RANK|2|M|39.73,67.70|Z|Shimmering Expanse|N|Read the inscription at the Ranger Valarian statue.|
+C Lestharia Vashj statue|QID|25581|NC|QO|Lestharia Vashj statue: 1/1|M|39.66,58.96|Z|Shimmering Expanse|N|Read the inscription at the Lestharia Vashj statue.|
+C Queen Azshara statue|QID|25581|NC|QO|Queen Azshara statue: 1/1|M|38.62,58.96|Z|Shimmering Expanse|N|Read the inscription at the Queen Azshara statue.|
+C High Priestess Siralen statue|QID|25581|NC|QO|High Priestess Siralen statue: 1/1|M|38.46,66.05|Z|Shimmering Expanse|N|Read the inscription at the High Priestess Siralen statue.|
+C Ranger Valarian|QID|25581|NC|QO|Ranger Valarian statue: 1/1|RANK|2|M|39.73,67.70|Z|Shimmering Expanse|N|Read the inscription at the Ranger Valarian statue.|
 A Upon the Scene of Battle|QID|25583|M|40.52,75.42|Z|Shimmering Expanse|N|From the skull on the ground.|
-N Structures south of Quel'Dormir Gardens scouted|QID|25582|M|40.49,74.95|Z|Shimmering Expanse|N|Head to the waypoint to scout the Structures south of Quel'Dormir Gardens.|QO|Structures south of Quel'Dormir Gardens scouted: 1/1|
-N Tunnel west of Quel'Dormir Gardens scouted|QID|25582|M|35.24,63.06|Z|Shimmering Expanse|N|Head to the waypoint to get the Tunnel west of Guel'Dormir Garderns scouted.|QO|Tunnel west of Quel'Dormir Gardens scouted: 1/1|
-C A Better Vantage|QID|25582|M|39.17,56.89|Z|Shimmering Expanse|N|Scout the area.|
+C Scout Structures south of Quel'Dormir Gardens|QID|25582|NC|M|40.49,74.95|Z|Shimmering Expanse|N|Head to the waypoint to scout the Structures south of Quel'Dormir Gardens.|QO|Structures south of Quel'Dormir Gardens scouted: 1/1|
+C Scout Tunnel west of Quel'Dormir Gardens|QID|25582|NC|M|35.24,63.06|Z|Shimmering Expanse|N|Head to the waypoint to get the Tunnel west of Guel'Dormir Garderns scouted.|QO|Tunnel west of Quel'Dormir Gardens scouted: 1/1|
+C Scout Northern Quel'Dormir Gardens|QID|25582|NC|QO|Northern Quel'Dormir Gardens scouted: 1/1|M|39.17,56.89|Z|Shimmering Expanse|N|Scout the area.|
 C Swift Approach|QID|25580|RANK|1|US|M|40.3,62.3;41.37,65.78;40.87,68.85;41.81,71.86;42.23,74.49|Z|Shimmering Expanse|CN|N|Destroy Azsh'ir Monitors.|
 C Caught Off-Guard|QID|25579|RANK|1|US|M|41.7,53.4;39.1,63.6;38.8,78.8;33.2,65.9;43.3,67.1;39,62|Z|Shimmering Expanse|CN|N|Kill remaining Azsh'ir Patrollers.|
 A Piece of the Past|QID|27716|RANK|2|U|62281|N|If you are VERY lucky, you have looted an Ancient Elven Etching from one of the naga (2% chance). Accept the quest. If not, either keep killing Naga until you do.|
-T An Occupation of Time|QID|25581|RANK|2|M|46.74,57.52;49.6,57.1|Z|Shimmering Expanse|CC|N|To Levia Dreamwalker.|
+T An Occupation of Time|QID|25581|RANK|2|M|46.74,57.52;49.6,57.1|CS|Z|Shimmering Expanse|CC|N|To Levia Dreamwalker.|
 T Piece of the Past|QID|27716|RANK|2|M|49.6,57.1|Z|Shimmering Expanse|N|To Levia Dreamwalker.|
 T Swift Approach|QID|25580|RANK|1|M|49.2,57|Z|Shimmering Expanse|N|To Captain Taylor.|
 T A Better Vantage|QID|25582|M|49.2,56.9|Z|Shimmering Expanse|N|To Admiral Dvorek.|
 T Caught Off-Guard|QID|25579|RANK|1|M|49.2,56.9|Z|Shimmering Expanse|N|To Admiral Dvorek.|
 T Upon the Scene of Battle|QID|25583|M|49.2,56.9|Z|Shimmering Expanse|N|To Admiral Dvorek.|
 A Visions of the Past: The Invasion of Vashj'ir|QID|25760|RANK|1|U|55171|M|49.3,57.0|Z|Shimmering Expanse|N|From Wavespeaker Valoren.|
-U Visions of the Past: The Invasion of Vashj'ir|QID|25619|RANK|1|U|55171|M|40.50,75.58|Z|Shimmering Expanse|N|Use the Blade of the Naz'jar Battlemaiden to start the vision. Close this step.|
+C Visions of the Past: The Invasion of Vashj'ir|QID|25760|NC|RANK|1|U|55171|M|40.50,75.58|Z|Shimmering Expanse|N|Use the Blade of the Naz'jar Battlemaiden to start the vision.|
 A Reoccupation|QID|25619|PRE|25760|M|40.5,75.4|Z|Shimmering Expanse|N|From Fathom-Stalker Azjentus.|
 C Reoccupation|QID|25619|M|39.32,78.26;38.27,79.35;37.61,75.62;38.89,72.13|CN|Z|Shimmering Expanse|N|Kill Kvaldir Defenders.|
 T Reoccupation|QID|25619|M|40.5,75.4|Z|Shimmering Expanse|N|To Fathom-Stalker Azjentus.|
