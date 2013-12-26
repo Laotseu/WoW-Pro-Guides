@@ -428,8 +428,6 @@ function WoWPro.SetupGuideReal()
     
     WoWPro:dbp("SetupGuideReal(%s): Type: %s, recordQIDs:",GID,guideType,tostring(recordQIDs))
     
-	WoWPro:PopulateQuestLog() --Calling this will populate our quest log table for use here
-	
 	-- -- Checking to see if any steps are already complete --
 	-- for i=1, WoWPro.stepcount do
 	-- 	local action = WoWPro.action[i]
@@ -481,7 +479,10 @@ function WoWPro.SetupGuideReal()
 	
 	WoWPro.GuideLoaded = true
 	
-	WoWPro:UpdateGuide("WoWPro:LoadGuideSteps()")
+	WoWPro:PopulateQuestLog()
+	WoWPro:AutoCompleteQuestUpdate()
+	WoWPro:UpdateQuestTracker()
+	WoWPro:UpdateGuideReal("WoWPro:LoadGuideSteps()")
 end
 
 

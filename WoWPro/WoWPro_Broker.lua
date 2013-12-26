@@ -142,6 +142,9 @@ function WoWPro.LoadGuideReal()
 	    local guide = WoWPro.Guides[GID]
 	    WoWPro:Print(("Initializing Guide: %s - %s (%s)."):format(guide.name or guide.zone or "", guide.guidetype, GID))
 	end
+
+	WoWPro.ActiveStep = 1
+	WoWPro.CurrentIndex = 0 
 	
     WoWPro:LoadGuideSteps()
 end
@@ -232,9 +235,16 @@ function WoWPro.UpdateGuideReal(From)
 	-- Ensure that the current step is not skiped
 	WoWPro.ActiveStep = WoWPro:NextStep(1)
 	local ActiveStep = WoWPro.ActiveStep
-	-- repeat
-	-- 	WoWPro.ActiveStep = WoWPro:NextStep(ActiveStep)
-	-- until ActiveStep == WoWPro.ActiveStep
+	local maxloop = 1000
+	repeat
+		maxloop = maxloop -1
+		if maxloop < 1 then
+			err("infinite loop ActiveStep = %s", ActiveStep)
+			return
+		end
+		ActiveStep = WoWPro.ActiveStep
+	 	WoWPro.ActiveStep = WoWPro:NextStep(ActiveStep-1)
+	until ActiveStep == WoWPro.ActiveStep
 
 	if WoWPro.Recorder then WoWPro.ActiveStep = WoWPro.Recorder.SelectedStep or WoWPro.ActiveStep end
 	if not offset then WoWPro.Scrollbar:SetValue(WoWPro.ActiveStep) end
@@ -272,6 +282,25 @@ function WoWPro.UpdateGuideReal(From)
 	
 	-- TODO: make next lines module specific
 	WoWPro.TitleText:SetText((WoWPro.Guides[GID].name or WoWPro.Guides[GID].zone).."   ("..(WoWProCharDB.Guide[GID].progress+1).."/"..WoWProCharDB.Guide[GID].total..")")
+	
+	-- ActiveStep is the first step we find that is not completed or skiped
+	-- CurrentIndex is the first non sticky step we find that is not completed or skiped
+	-- Finding if the currently displayed step has changed
+	-- err("ActiveStep = %s, CurrentIndex = %s", WoWPro.ActiveStep, WoWPro.CurrentIndex)	
+	local oldCurrentIndex = WoWPro.CurrentIndex
+	WoWPro.CurrentIndex = WoWPro:NextStep(ActiveStep-1)
+	local CurrentIndex 
+	local maxloop = 1000
+	repeat
+		maxloop = maxloop -1
+		if maxloop < 1 then
+			err("infinite loop CurrentIndex = %s", CurrentIndex)
+			return
+		end
+
+		CurrentIndex = WoWPro.CurrentIndex
+	 	WoWPro.CurrentIndex = WoWPro:NextStepNotSticky(CurrentIndex-1)
+	until CurrentIndex == WoWPro.CurrentIndex
 	
 	-- If the guide is complete, loading the next guide --
 	if WoWProCharDB.Guide[GID].progress == WoWProCharDB.Guide[GID].total 
@@ -317,7 +346,7 @@ Rep2IdAndClass = {  ["hated"] = {1,false},
 function WoWPro:NextStep(k,i)
 	local GID = WoWProDB.char.currentguide
 	if not GID then return 1 end
-	if not k then k = 1 end --k is the position in the guide
+	if not k or k < 1 then k = 1 end --k is the position in the guide
 	if not i then i = 1 end --i is the position on the rows
 	WoWPro:dbp("Called WoWPro:NextStep(%d,%d)",k,i)
 	local skip = true
@@ -518,7 +547,7 @@ function WoWPro:NextStep(k,i)
         end
             
 		-- Skipping profession quests if their requirements aren't met --
-		if WoWPro.prof[k] and not skip then
+		if WoWPro.prof[k] and not skip and k <= CurrentIndex then
 			local prof, profnum, proflvl, profmaxlvl, profmaxskill = string.split(";",WoWPro.prof[k])
 			if proflvl == '*' then proflvl = 600 end -- Set to the maximum level obtainable in the expansion plus 1
 			proflvl = tonumber(proflvl) or 1
@@ -558,7 +587,7 @@ function WoWPro:NextStep(k,i)
 		end
         
 		-- Skipping reputation quests if their requirements are met --
-		if WoWPro.rep and WoWPro.rep[k] and not skip then
+		if WoWPro.rep and WoWPro.rep[k] and not skip and k <= CurrentIndex then
 			local rep, factionIndex, temprep, replvl = string.split(";",WoWPro.rep[k])
 			WoWPro:dbp("ConsiderRep(%d, %s [%s] %s)",k,WoWPro.action[k],WoWPro.step[k],WoWPro.rep[k]);
 			if temprep == nil then temprep = "neutral-exalted" end
@@ -655,7 +684,7 @@ function WoWPro:NextStep(k,i)
       end
         
       -- Skipping Achievements if completed  --
-    	if WoWPro.ach and WoWPro.ach[k] then
+    	if WoWPro.ach and WoWPro.ach[k] and k <= CurrentIndex then
     		local achnum, achitem, achflip = string.split(";",WoWPro.ach[k])
     		achflip = WoWPro.toboolean(achflip) 
     		local count = GetAchievementNumCriteria(achnum)
@@ -709,7 +738,7 @@ function WoWPro:NextStep(k,i)
 			end
     	end
     	
-    	if WoWPro.recipe and WoWPro.recipe[k] then
+    	if WoWPro.recipe and WoWPro.recipe[k] and k <= CurrentIndex then
     	    WoWPro:dbp("Step %d Recipe %s",k,WoWPro.recipe[k])
     	    if WoWProCharDB.Trades and WoWPro:AllIDsInTable(WoWPro.recipe[k],WoWProCharDB.Trades) then
         	    WoWPro.why[k] = "Recipe(s) is known already"
@@ -782,7 +811,7 @@ function WoWPro:NextStep(k,i)
 	-- Prevent infinite loop
 	if k > #WoWPro.step then
 		--err("Infinite loop")
-		return CurrentIndex
+		return 1
 	end
 		
 	end
