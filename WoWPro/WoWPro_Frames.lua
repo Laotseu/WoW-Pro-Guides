@@ -877,7 +877,9 @@ function WoWPro:SetMacro(macroType, macroBody)
 	end
 
 	-- select the icon
-	local macroIcon = (macroType == "WPI" or not macroBody) and "INV_MISC_QUESTIONMARK" or "Ability_Marksmanship"
+	local macroIcon = (macroType == "WPI" or not macroBody or macroBody:find("#showtooltip")) and "INV_MISC_QUESTIONMARK" or "Ability_Marksmanship"
+
+
 
 	-- find macro
 	local macroIndex = _G.GetMacroIndexByName(macroType)
