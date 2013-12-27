@@ -191,6 +191,8 @@ frame:SetScript("OnShow", function()
 			
 			if WoWPro.noncombat[index] then
 				row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
+			elseif WoWPro.chat[index] then
+			    row.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon") 
 			end
 			
 			local note = WoWPro.note[index]
