@@ -87,7 +87,8 @@ T A Mangy Threat|QID|26547|M|9.97,44.27|N|To Gryphon Master Talonaxe.|
 A Out to the Front|QID|26548|M|9.97,44.27|N|From Gryphon Master Talonaxe.|
 
 F Stormfeather Outpost|QID|26548|M|11.11,46.09|N|Talk to Guthrum Thunderfist, and choose to go to Stormfeather Outpost.|
-f Stormfeather Outpost|QID|26548|M|65.74,44.94|N|At Brock Rockbeard.|
+
+f Stormfeather Outpost|M|65.74,44.94|N|At Brock Rockbeard.|
 T Out to the Front|QID|26548|M|66.33,44.37|N|To Kerr Ironsight.|
 
 A The Wicked Revantusk|QID|26462|M|66.33,44.37|N|From Kerr Ironsight.|

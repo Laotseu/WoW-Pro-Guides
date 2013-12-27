@@ -149,8 +149,10 @@ L Level 83 |QID|27003|N|You need to be level 83 or higher to be able to work thr
 R Thistleshrub Valley |QID|27003|N|Welcome to Uldum. To start this guide, you need to head to Thistleshrub Valley which is at the south-western part of Tanaris.\n\nDepending on your current location, either fly to Gunstan's Dig in Tanaris, or use the Cavern of Times portal in Dalaran.  \n\nThere are breadcrumb quests for those who have worked through the quests in Deepholm, or a Hero's Call from any Alliance City.|FACTION|Alliance|M|30.52,65.58|Z|Tanaris|
 R Thistleshrub Valley |QID|27003|N|Welcome to Uldum. To start this guide, you need to head to Thistleshrub Valley which is at the south-western part of Tanaris.\n\nDepending on your current location, either fly to Dawnrise Expedition in the Valley of the Watchers, Tanaris, or use the Cavern of Times portal in Dalaran.  \n\nThere are breadcrumb quests for those who have worked through the quests in Deepholm, or a Warchief's Command from Orgrimmar, Thunder Bluff or Undercity.|FACTION|Horde|M|30.52,65.58|Z|Tanaris|
 
-T Hero's Call: Uldum! |QID|28558|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|O|
-T Warchief's Command: Uldum! |QID|28557|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|O|
+A Hero's Call: Uldum! |QID|28558|M|30.52,65.58|Z|Stormwind City|N|From the Hero's Call Board|O|
+T Hero's Call: Uldum! |QID|28558|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|ACTIVE|
+A Warchief's Command: Uldum! |QID|28557|M|30.52,65.58|Z|Orgrimmar|N|From the board.|O|
+T Warchief's Command: Uldum! |QID|28557|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|ACTIVE|
 T Meetup with the Caravan |QID|28295;28296|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|ACTIVE|28295;28296|
 
 A Easy Money|QID|27003|M|30.52,65.58|Z|Tanaris|N|From Adarrah.|
