@@ -149,9 +149,11 @@ L Level 83 |QID|27003|N|You need to be level 83 or higher to be able to work thr
 R Thistleshrub Valley |QID|27003|N|Welcome to Uldum. To start this guide, you need to head to Thistleshrub Valley which is at the south-western part of Tanaris.\n\nDepending on your current location, either fly to Gunstan's Dig in Tanaris, or use the Cavern of Times portal in Dalaran.  \n\nThere are breadcrumb quests for those who have worked through the quests in Deepholm, or a Hero's Call from any Alliance City.|FACTION|Alliance|M|30.52,65.58|Z|Tanaris|
 R Thistleshrub Valley |QID|27003|N|Welcome to Uldum. To start this guide, you need to head to Thistleshrub Valley which is at the south-western part of Tanaris.\n\nDepending on your current location, either fly to Dawnrise Expedition in the Valley of the Watchers, Tanaris, or use the Cavern of Times portal in Dalaran.  \n\nThere are breadcrumb quests for those who have worked through the quests in Deepholm, or a Warchief's Command from Orgrimmar, Thunder Bluff or Undercity.|FACTION|Horde|M|30.52,65.58|Z|Tanaris|
 
-T Hero's Call: Uldum! |QID|28558|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|O|
-T Warchief's Command: Uldum! |QID|28557|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|O|
-T Meetup with the Caravan |QID|28295;28296|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|O|
+A Hero's Call: Uldum! |QID|28558|M|30.52,65.58|Z|Stormwind City|N|From the Hero's Call Board|O|
+T Hero's Call: Uldum! |QID|28558|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|ACTIVE|
+A Warchief's Command: Uldum! |QID|28557|M|30.52,65.58|Z|Orgrimmar|N|From the board.|O|
+T Warchief's Command: Uldum! |QID|28557|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|ACTIVE|
+T Meetup with the Caravan |QID|28295;28296|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|ACTIVE|28295;28296|
 
 A Easy Money|QID|27003|M|30.52,65.58|Z|Tanaris|N|From Adarrah.|
 C Easy Money|QID|27003|N|Click on the camel, Lady Humps, then sit back and watch the cinematic.|Z|Tanaris|NC|
@@ -185,7 +187,7 @@ A Impending Retribution|QID|28134|M|54.90,32.84|N|From King Phaoris.|
 h Ramkahen|QID|28141|M|54.73,32.94|N|At Kazemde.|
 
 ; Adding back Flight plans, as they are no longer auto-learnt.
-f Ramkahen|QID|28141|M|56.18,33.66|N|At Kurzel.|
+f Ramkahen|M|56.18,33.66|N|At Kurzel.|
 
 C Speak with Sun Priest Asaris|QID|28134|M|52.98,27.78|QO|Speak with Sun Priest Asaris: 1/1|N|Speak to Sun Priest Asaris and say "I might be able to help".|CHAT|
 
@@ -515,7 +517,7 @@ T Efficient Excavations|QID|28132|M|24.43,64.46|N|To Belloc Brightblade.|
 
 A Eastern Hospitality|QID|27926|M|24.43,64.46|N|From Belloc Brightblade.|
 
-f Schnottz's Landing|QID|27926|M|22.33,64.82|N|At Evax Oilspark.|
+f Schnottz's Landing|M|22.33,64.82|N|At Evax Oilspark.|
 
 C Eastern Hospitality|QID|27926|M|22.53,64.58;22.57,64.65;21.95,63.98;22.44,63.21|N|Follow the arrows to mingle with the guests.|CS|
 T Eastern Hospitality|QID|27926|M|24.42,64.53|N|To Belloc Brightblade.|
@@ -595,7 +597,7 @@ T Firing Squad|QID|28267|M|23.52,60.25|N|To Harrison Jones.|
 
 A Meet Me In Vir'sar|QID|28269|M|23.52,60.25|N|From Harrison Jones.|
 
-f Oasis of Vir'sar|QID|28269|M|26.63,8.39|N|At Jock Lindsey.|
+f Oasis of Vir'sar|M|26.63,8.39|N|At Jock Lindsey.|
 
 T Meet Me In Vir'sar|QID|28269|M|27.02,7.63|N|To Harrison Jones.|
 
