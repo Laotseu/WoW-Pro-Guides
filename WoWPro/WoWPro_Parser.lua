@@ -793,12 +793,14 @@ function WoWPro:RowUpdate(offset)
 			   mtext = mtext:gsub("[|]n","\n")
 
 				row.targetbutton.tooltip_text = "/targetexact "..target.."\n/"..emote
-				mtext = "#showtooltip"
-						.."\n/cleartarget"
+				mtext = "\n/cleartarget"
 						.."\n/targetexact [nodead] "..target
 						.."\n/cleartarget [@target,dead]"
 						.."\n/script if not GetRaidTargetIndex('target') then SetRaidTarget('target', 1) end"
 						.."\n/"..emote
+				if mtext:find("/use ") then
+					mtext = "#showtooltip\n"..mtext
+				end
 			else			
 				mtext = "/cleartarget"
 						.."\n/targetexact [nodead] "..target
