@@ -407,6 +407,7 @@ function WoWPro:NextStep(k,i)
         		if totalFailure then
         		    skip = true
         		    WoWPro.why[k] = "NextStep(): None of possible prereqs was met."
+        		    WoWProCharDB.Guide[GID].skipped[k] = true
         		    break
         		end
         	else
@@ -417,6 +418,7 @@ function WoWPro:NextStep(k,i)
         			if not WoWPro:IsQuestFlaggedCompleted(tonumber(jprereq)) then 
         				skip = true -- If one of the prereqs is NOT complete, step is skipped.
         				WoWPro.why[k] = "NextStep(): Not all of the prereqs was met: " .. WoWPro.prereq[k]
+        				WoWProCharDB.Guide[GID].skipped[k] = true
         				break
         			end
         		end
@@ -482,16 +484,17 @@ function WoWPro:NextStep(k,i)
 	       --  end 
         -- end
 
-	   -- Skip C or T steps if the A step was skipped (to do, might not be needed)
-	  --  if (WoWPro.action[k] == "C" or WoWPro.action[k] == "T") and
-	  --     not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) and 
-	  --     k <= CurrentIndex then 
- 		-- 	skip = true -- If the quest is not in the quest log, the step is skipped --
- 		-- 	WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k])
- 		-- 	WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in QuestLog."
-			-- WoWProCharDB.Guide[GID].skipped[k] = true
- 		-- 	break
-   --  	end
+	   -- Skip C or T steps if they are not active quests
+	   -- ActiveStep is used here in order not to skiep if the A step is a sticky
+	   if (WoWPro.action[k] == "C" or WoWPro.action[k] == "T") and
+	      not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) and 
+	      k <= (WoWPro.ActiveStep or 0) then 
+ 			skip = true -- If the quest is not in the quest log, the step is skipped --
+ 			WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k])
+ 			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in QuestLog."
+			WoWProCharDB.Guide[GID].skipped[k] = true
+ 			break
+    	end
     	
     	-- Complete "f" steps if we know the flight point already
     	if WoWPro.action[k] == "f"  and WoWProCharDB.Taxi[WoWPro.step[k]] then
