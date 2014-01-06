@@ -229,7 +229,9 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 	    WoWPro:GrailCheckQuestName(GID,WoWPro.QID[i],WoWPro.step[i])
 	end
 	WoWPro.note[i] = text:match("|N|([^|]*)|?")
-	WoWPro.mat[i] = text:match("|N|([^|]*)|?")
+	-- Replace all the \ by | to allow UI Escape sequences in the notes
+	WoWPro.note[i] = WoWPro.note[i] and WoWPro.note[i]:gsub('\\','|') or nil 
+	--WoWPro.mat[i] = text:match("|N|([^|]*)|?")	-- I don't think that mat is ever used anywhere
 	WoWPro.map[i] = text:match("|M|([^|]*)|?")
 	if WoWPro.map[i] then
 	    WoWPro:ValidateMapCoords(GID,WoWPro.action[i],WoWPro.step[i],WoWPro.map[i])
