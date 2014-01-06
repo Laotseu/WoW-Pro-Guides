@@ -484,9 +484,9 @@ function WoWPro:NextStep(k,i)
 	       --  end 
         -- end
 
-	   -- Skip C or T steps if they are not active quests
+	   -- Skip C or T steps, or step with |QO| if they are not active quests
 	   -- ActiveStep is used here in order not to skiep if the A step is a sticky
-	   if (WoWPro.action[k] == "C" or WoWPro.action[k] == "T") and
+	   if (WoWPro.action[k] == "C" or WoWPro.action[k] == "T" or WoWPro.questtext[k]) and
 	      not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) and 
 	      k <= (WoWPro.ActiveStep or 0) then 
  			skip = true -- If the quest is not in the quest log, the step is skipped --
