@@ -395,8 +395,8 @@ function WoWPro:OnEnable()
 		v.notCheckable 	= true
 	end
 
-	-- Force an arrow reset
-	WoWPro.FirstMapCall = true
+	WoWPro:LoadGuide()
+	WoWPro.FirstMapCall = true 	-- Force an arrow reset
 	WoWPro:PopulateQuestLog()
 	WoWPro:AutoCompleteQuestUpdate(nil)
 	WoWPro:AutoCompleteZone()
