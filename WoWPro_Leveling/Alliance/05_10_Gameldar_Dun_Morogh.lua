@@ -376,22 +376,22 @@ T Those Blasted Troggs!|QID|432|M|76.30,54.60|N|To Foreman Stonebrow.|
 T The Public Servant|QID|433|M|75.84,54.34|N|To Senator Mehr Stonehallow.|
 A Trouble at the Lake|QID|25986|M|75.91,54.26|N|From Senator Mehr Stonehallow.|
 
-T Trouble at the Lake|QID|25986|M|82.79,48.36|N|To Sergeant Bahrum.|
-A Entombed in Ice|QID|25978|M|82.79,48.36|N|From Sergeant Bahrum.|
-A Dealing with the Surge|QID|25979|M|82.59,48.22|N|From Khurgorn Singefeather.|
+T Trouble at the Lake|QID|25986|M|82.8,48.4|N|To Sergeant Bahrum.|
+A Entombed in Ice|QID|25978|M|82.8,48.4|N|From Sergeant Bahrum.|
+A Dealing with the Surge|QID|25979|M|82.6,48.3|N|From Khurgorn Singefeather.|
 C Dealing with the Surge|QID|25979|M|83.41,49.78|N|Kill Helm'S Bed Surfgers.|S|
 C Entombed in Ice|QID|25978|M|82.94,50.96|N|Attack the Icy Tombs to free the Frozen Mountaineers.|
 C Dealing with the Surge|QID|25979|M|83.41,49.78|N|Kill Helm'S Bed Surfgers.|US|
-T Dealing with the Surge|QID|25979|M|82.69,48.32|N|To Khurgorn Singefeather.|
-T Entombed in Ice|QID|25978|M|82.90,48.38|N|To Sergeant Bahrum.|
+T Dealing with the Surge|QID|25979|M|82.6,48.3|N|To Khurgorn Singefeather.|
+T Entombed in Ice|QID|25978|M|82.8,48.4|N|To Sergeant Bahrum.|
 
-A Dark Iron Scheming|QID|25997|M|82.80,48.38|N|From Sergeant Bahrum.|
+A Dark Iron Scheming|QID|25997|M|82.8,48.4|N|From Sergeant Bahrum.|
 C Dark Iron Scheming|QID|25997|S|QO|Dark Iron Spy slain: 5/5|M|85.15,60.61|N|Kill Dark Iron Spys.|
-C Dark Iron Scheming|QID|25997|T|Captain Beld|QO|Dark Iron Attack Plans: 1/1|M|85.15,60.61|N|Kill Captain Beld and loot the Dark Iron Attack Plans.|
+K Dark Iron Scheming|QID|25997|T|Captain Beld|QO|Dark Iron Attack Plans: 1/1|M|85.15,60.61|N|Kill Captain Beld and loot the Dark Iron Attack Plans.|
 C Dark Iron Scheming|QID|25997|US|QO|Dark Iron Spy slain: 5/5|N|Kill Dark Iron Spys.|
 
-T Dark Iron Scheming|QID|25997|M|82.76,48.31|N|To Sergeant Bahrum.|
-A Get to the Airfield|QID|25998|M|82.76,48.31|N|From Sergeant Bahrum.|
+T Dark Iron Scheming|QID|25997|M|82.8,48.4|N|To Sergeant Bahrum.|
+A Get toa the Airfield|QID|25998|M|82.8,48.4|N|From Sergeant Bahrum.|
 F Ironforge Airfield|QID|25998|M|75.28,52.80|N|Use Mathel's Flying Machine at Gol'Bolar Quarry to fly to Ironforge Airfield.|
 
 T Get to the Airfield|QID|25998|M|78.21,20.48|N|To Commander Stonebreaker.|
@@ -406,16 +406,16 @@ R Striking Back|QID|26094|M|77.14,18.52|N|Put the bombs on the action bar. Jump 
 C Striking Back|QID|26094|U|56814|M|78.25,20.50|N|Drop Bombs on the Dark Iron Attackers.|
 T Striking Back|QID|26094|M|78.20,20.45|N|To Commander Stonebreaker.|
 A Grimaxe's Demise|QID|26102|M|78.20,20.45|N|From Commander Stonebreaker.|
-C Grimaxe's Demise|QID|26102|T|Dark Iron Golem|M|78.40,34.66|N|Kill the Dark Iron Golem, then Grimaxe will appear - kill him too.|
+K Grimaxe's Demise|QID|26102|T|Dark Iron Golem|M|78.40,34.66|N|Kill the Dark Iron Golem, then Grimaxe will appear - kill him too.|
 T Grimaxe's Demise|QID|26102|M|78.23,20.49|N|To Commander Stonebreaker.|
 A Demanding Answers|QID|26112|M|78.24,20.50|N|From Commander Stonebreaker.|
 L Level 12|QID|26112|N|Before you continue the guide, you need to be within 1975xp of level 12. If you are not, use Rixa's Flying Machine to return to Gol'Bolar Quarry. Then go just east of the quarry and kill mobs until you are within 1975xp of level 12.|LVL|12|
 
 H Thunderbrew Distillery|QID|26112|U|6948|N|Head to Ironforge.  Your Hearthstone is probably set to Thunderbrew Distillery and will shorten your distance.|
 F Ironforge|QID|26112|M|53.78,52.72|N|Fly to Ironforge.|
-T Demanding Answers|QID|26112|M|39.78,57.23|Z|Ironforge|N|To Moira Thaurissan.|
+T Demanding Answers|QID|26112|M|46.1,47.4;39.78,57.23|CS|Z|Ironforge|N|To Moira Thaurissan.|
 A Seize the Ambassador|QID|26118|M|39.78,57.23|Z|Ironforge|N|From Moira Thaurissan.|
-A Reinforcements for Loch Modan|QID|26131|Z|Ironforge|M|41.47,52.32|N|From Mountaineer Barleybrew.  Accept if you plan on going to Loch Modan next.|
+A Reinforcements for Loch Modan|QID|26131|Z|Ironforge|M|41.47,52.32|N|From Mountaineer Barleybrew.  Accept if you plan on going to Loch Modan next.|O|
 C Seize the Ambassador|QID|26118|U|56837|T|Ambassador Slaghammer|M|38.4, 45.83|Z|Ironforge|N|Use the Sturdy Manacles to arrest Ambassador Slaghammer, then head back to the High Seat.|
 T Seize the Ambassador|QID|26118|M|39.78,57.23|Z|Ironforge|N|To Moira Thaurissan.|
 N Visit your trainers, AH, etc.|N|Close this step to continue to Loch Modan.|
