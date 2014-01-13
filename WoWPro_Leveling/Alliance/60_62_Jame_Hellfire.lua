@@ -375,7 +375,7 @@ C Free Aylaan |N|Free Aylaan here.|QID|10368|CHAT|QO|Aylaan Freed: 1/1|M|13.00,5
 C Free Akoru |N|Free Akoru here.|QID|10368|CHAT|QO|Akoru Freed: 1/1|M|15.50,58.75|
 T The Dreghood Elders |QID|10368|M|16.3,65.1|N|To Naladu.|
 A Arzeth's Demise |QID|10369|M|16.3,65.1|N|From Naladu.|
-K Arzeth |N|Use the Staff of the Dreghood Elders on Azreth to turn him into a non-elite, then kill him.|QID|10369|T|Azreth,use item:29513|M|14.25,61.50|
+K Arzeth |N|Use the Staff of the Dreghood Elders on Azreth to turn him into a non-elite, then kill him.|QID|10369|T|Arzeth the Merciless,use item:29513|M|14.25,61.50|
 T Arzeth's Demise |QID|10369|M|16.3,65.1|N|To Naladu.|
 C Sha'naar Relics |N|Grab the 10 relics needed for this quest.|QID|9430|M|15.1,55.7|US|NC|
 C Cruel Taskmasters |N|Kill the 10 Taskmasters needed for this quest.|QID|9399|M|15.1,55.7|US|
@@ -388,7 +388,7 @@ A The Seer's Relic |QID|9545|M|23.4,36.5|N|From Amaan the Wise.|
 C The Seer's Relic |N|Go here and use the Seer's Relic and wait for the quest completion. | |QID|9545|NC|M|26.90,37.40|
 T The Seer's Relic |QID|9545|M|23.4,36.5|N|To Amaan the Wise.|
 h Temple of Telhamat|M|23.23,36.5|N|At Caregiver Ophera Windfury.|
-F Shattrath City|M|25.18,37.22|N|Fly to Shattrath to visit you trainers, AH, etc.|
+F Shattrath|M|25.18,37.22|N|Fly to Shattrath to visit you trainers, AH, etc.|
 H Temple of Telhamat|N|Hearth back to the Temple of Telhamat, this is will continue to the next guide.|
 
 ]]
