@@ -264,6 +264,7 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 		WoWPro.optionalcount = WoWPro.optionalcount + 1 
 	end
 	WoWPro.prereq[i] = text:match("|PRE|([^|]*)|?") or (WoWPro.action[i] == "A" and WoWPro:GrailQuestPrereq(WoWPro.QID[i]))
+	if not WoWPro.prereq[i] then WoWPro.prereq[i] = nil end
 
 	if WoWPro.map[i] then
 		if text:find("|CC|") then WoWPro.waypcomplete[i] = 1
@@ -335,6 +336,7 @@ function WoWPro:ParseSteps(steps)
 	if myrace == "Scourge" then
 		myrace = "Undead"
 	end
+	WoWPro.stepcount, WoWPro.stickycount, WoWPro.optionalcount = 0, 0 ,0
 	for j=1,#steps do
 		local text = steps[j]
 		text = text:trim()
@@ -485,7 +487,7 @@ function WoWPro.SetupGuideReal()
 	WoWPro:PopulateQuestLog()
 	WoWPro:AutoCompleteQuestUpdate()
 	WoWPro:UpdateQuestTracker()
-	WoWPro:UpdateGuideReal("WoWPro:LoadGuideSteps()")
+	WoWPro:UpdateGuide("WoWPro:LoadGuideSteps()")
 end
 
 
@@ -615,7 +617,7 @@ function WoWPro:RowUpdate(offset)
 		if step then row.check:Show() else row.check:Hide() end
 		if completion[k] or WoWProCharDB.Guide[GID].skipped[k] or WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
 			row.check:SetChecked(true)
-			if WoWProCharDB.Guide[GID].skipped[k] or WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
+			if WoWProCharDB.Guide[GID].skipped[k] or WoWProCharDB.skippedQIDs[QID] then
 				row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
 			else
 				row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
@@ -723,6 +725,7 @@ function WoWPro:RowUpdate(offset)
 		WoWPro.RowDropdownMenu[i] = dropdown
 		
 		-- Item Button --
+		local noUseItem = nil
 		if action == "H" then use = 6948 end
 		if ( not use ) and (questtext or action == "C" or action == "K") and WoWPro.QuestLog[tonumber(QID)] then
 			-- local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[tonumber(QID)].index)
@@ -730,10 +733,11 @@ function WoWPro:RowUpdate(offset)
 			if link then
 				local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, Name 
 					= string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
-				-- Verify if the item is used in the target macro, otherwise generate the |U| tag on the fly
-				if not target or (not target:find("use item[:]%d+") and not (name and target:find("use "..name,1,1))) then
-					use = Id
-					WoWPro.use[k] = use
+				use = Id
+				WoWPro.use[k] = use
+				-- Verify if the item is used in the target macro
+				if target  and (target:find("use item[:]%d+") or (name and target:find("use "..name,1,1))) then
+					noUseItem = true
 				end
 			end
 		end
@@ -771,13 +775,15 @@ function WoWPro:RowUpdate(offset)
 
 			-- Set the item macro
 			if i <= last_visible_i then
-				local itemEquipLoc = select(9, GetItemInfo(use))
-				if not itemEquipLoc or itemEquipLoc == "" then
-					WoWPro:SetMacro("WPI", "#showtooltip\n/use item:"..use)
-				else
-					WoWPro:SetMacro("WPI", ("#showtooltip\n/equip item:%s\n/use item:%s"):format(use, use))
+				if not noUseItem then
+					local itemEquipLoc = select(9, GetItemInfo(use))
+					if not itemEquipLoc or itemEquipLoc == "" then
+						WoWPro:SetMacro("WPI", "#showtooltip\n/use item:"..use)
+					else
+						WoWPro:SetMacro("WPI", ("#showtooltip\n/equip item:%s\n/use item:%s"):format(use, use))
+					end
+					itemkb = true
 				end
-				itemkb = true
 			end
 		else 
 			row.itembutton.item_id = nil
