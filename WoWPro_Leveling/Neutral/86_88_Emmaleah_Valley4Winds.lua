@@ -108,7 +108,8 @@ WoWPro.Leveling:RegisterGuide('EmmVal8688', 'Valley of the Four Winds', 'Emmalea
 N Valley of the Four Winds|QID|29907|N|Make your way to Valley of the Four Winds. Blizzard added a new UI Element called the Special Action button. If you don't already have a keybinding set for it, you may want to, as some quests use it. Yes, you can just click it, but I think keybindings are easier, its similar to the idea of Vehicle UI, but your regular action bars don't go away, you just get a new button.|
 
 R Valley of the Four Winds|N|Make your way to Valley of the Four Winds.|
-T They Call Him... Stormstout|QID|32019|M|85.94,22.10|N|To Chen Stormstout.|ACTIVE|
+T His Name Was... Stormstout|QID|32018|M|85.94,22.10|N|To Chen Stormstout.|
+T They Call Him... Stormstout|QID|32019|M|85.94,22.10|N|To Chen Stormstout.|
 A Chen and Li Li|QID|29907|M|85.94,22.10|N|From Chen Stormstout.|
 r Repair|QID|29909|M|84.86,21.68|N|This vendor sells 372 gear if you missed a slot with quests. Be sure to clean out your bags its awhile before you see another vendor.|
 f Pang's Stead|M|84.49,21.06|N|From the Princeton.|
@@ -464,7 +465,7 @@ T Unyielding Fists: Trial of Wood|QID|29987|M|18.24,31.26|N|To Master Bruised Pa
 A A Taste For Eggs|QID|29988|M|18.24,31.26|N|From Master Bruised Paw.|
 C A Taste For Eggs|QID|29988|NC|S|M|24,45;26.9,39.1|CN|N|Gather the rest of your eggs in the area around the markers|; Singing Marshes
 C Hornbill Strider Egg|QID|29988|QO|Hornbill Strider Egg: 1/1|M|26.9,39.1|N|Inside the cave, The momma bird will come to show her displeasure with you.|; Singing Marshes
-C A Taste For Eggs|QID|29988|NC|US|M|24,45;26.9,39.1|N|Gather the rest of your eggs in the area around the markers|; Singing Marshes
+C A Taste For Eggs|QID|29988|NC|US|M|24,45;26.9,39.1|CN|N|Gather the rest of your eggs in the area around the markers|; Singing Marshes
 T A Taste For Eggs|QID|29988|M|18.29,31.24|N|To Master Bruised Paw.|
 A Unyielding Fists: Trial of Stone|QID|29989|M|18.29,31.24|N|From Master Bruised Paw.|
 C Trial of Stone|QID|29989|M|18.16,32.15|CHAT|N|Same routine, this time we get to break stone, while the master throws eggs at us.|
