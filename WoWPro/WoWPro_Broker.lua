@@ -247,6 +247,25 @@ function WoWPro.UpdateGuideReal(From)
 	 	WoWPro.ActiveStep = WoWPro:NextStep(ActiveStep-1)
 	until ActiveStep == WoWPro.ActiveStep
 
+	-- ActiveStep is the first step we find that is not completed or skiped
+	-- CurrentIndex is the first non sticky step we find that is not completed or skiped
+	-- Finding if the currently displayed step has changed
+	-- err("ActiveStep = %s, CurrentIndex = %s", WoWPro.ActiveStep, WoWPro.CurrentIndex)	
+	local oldCurrentIndex = WoWPro.CurrentIndex
+	WoWPro.CurrentIndex = WoWPro:NextStep(ActiveStep-1)
+	local CurrentIndex 
+	local maxloop = 1000
+	repeat
+		maxloop = maxloop -1
+		if maxloop < 1 then
+			err("infinite loop CurrentIndex = %s", CurrentIndex)
+			return
+		end
+
+		CurrentIndex = WoWPro.CurrentIndex
+	 	WoWPro.CurrentIndex = WoWPro:NextStepNotSticky(CurrentIndex-1)
+	until CurrentIndex == WoWPro.CurrentIndex
+
 	if WoWPro.Recorder then WoWPro.ActiveStep = WoWPro.Recorder.SelectedStep or WoWPro.ActiveStep end
 	if not offset then WoWPro.Scrollbar:SetValue(WoWPro.ActiveStep) end
 	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount))
@@ -283,25 +302,6 @@ function WoWPro.UpdateGuideReal(From)
 	
 	-- TODO: make next lines module specific
 	WoWPro.TitleText:SetText((WoWPro.Guides[GID].name or WoWPro.Guides[GID].zone).."   ("..(WoWProCharDB.Guide[GID].progress+1).."/"..WoWProCharDB.Guide[GID].total..")")
-	
-	-- ActiveStep is the first step we find that is not completed or skiped
-	-- CurrentIndex is the first non sticky step we find that is not completed or skiped
-	-- Finding if the currently displayed step has changed
-	-- err("ActiveStep = %s, CurrentIndex = %s", WoWPro.ActiveStep, WoWPro.CurrentIndex)	
-	local oldCurrentIndex = WoWPro.CurrentIndex
-	WoWPro.CurrentIndex = WoWPro:NextStep(ActiveStep-1)
-	local CurrentIndex 
-	local maxloop = 1000
-	repeat
-		maxloop = maxloop -1
-		if maxloop < 1 then
-			err("infinite loop CurrentIndex = %s", CurrentIndex)
-			return
-		end
-
-		CurrentIndex = WoWPro.CurrentIndex
-	 	WoWPro.CurrentIndex = WoWPro:NextStepNotSticky(CurrentIndex-1)
-	until CurrentIndex == WoWPro.CurrentIndex
 	
 	-- If the guide is complete, loading the next guide --
 	if WoWProCharDB.Guide[GID].progress == WoWProCharDB.Guide[GID].total 
@@ -486,10 +486,10 @@ function WoWPro:NextStep(k,i)
         -- end
 
 	   -- Skip C or T steps, or step with |QO| if they are not active quests
-	   -- ActiveStep is used here in order not to skiep if the A step is a sticky
+	   -- ActiveStep is used here in order not to skip if the A step is a sticky (doesn't work, let's fix the guides instead)
 	   if (WoWPro.action[k] == "C" or WoWPro.action[k] == "T" or WoWPro.questtext[k]) and
 	      not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) and 
-	      k <= (WoWPro.ActiveStep or 0) then 
+	      k <= CurrentIndex then 
  			skip = true -- If the quest is not in the quest log, the step is skipped --
  			WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k])
  			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in QuestLog."
@@ -686,6 +686,7 @@ function WoWPro:NextStep(k,i)
 			    WoWProCharDB.Guide[GID].skipped[k] = true
 			    WoWProCharDB.skippedQIDs[QID] = true
 			end
+			if skip then break end
       end
         
       -- Skipping Achievements if completed  --
@@ -731,8 +732,9 @@ function WoWPro:NextStep(k,i)
     	if WoWPro.spell and WoWPro.spell[k] then
     	    local spellNick,spellID,spellFlip = string.split(";",WoWPro.spell[k])
     	    local spellName = GetSpellInfo(tonumber(spellID))
-    	    local spellKnown = GetSpellInfo(spellName)
-    	    spellKnown = spellKnown ~= nil
+    	    -- local spellKnown = GetSpellInfo(spellName)
+    	    -- spellKnown = spellKnown ~= nil
+    	    local spellKnown = IsSpellKnown(spellID)
     	    spellFlip = WoWPro.toboolean(spellFlip)
     	    if spellFlip then spellKnown = not spellKnown end
     	    WoWPro:dbp("Checking spell step %s [%s] for %s: Nomen %s, Known %s",WoWPro.action[k],WoWPro.step[k],WoWPro.spell[k],tostring(spellName),tostring(spellKnown))
