@@ -149,11 +149,11 @@ L Level 83 |QID|27003|N|You need to be level 83 or higher to be able to work thr
 R Thistleshrub Valley |QID|27003|N|Welcome to Uldum. To start this guide, you need to head to Thistleshrub Valley which is at the south-western part of Tanaris.\n\nDepending on your current location, either fly to Gunstan's Dig in Tanaris, or use the Cavern of Times portal in Dalaran.  \n\nThere are breadcrumb quests for those who have worked through the quests in Deepholm, or a Hero's Call from any Alliance City.|FACTION|Alliance|M|30.52,65.58|Z|Tanaris|
 R Thistleshrub Valley |QID|27003|N|Welcome to Uldum. To start this guide, you need to head to Thistleshrub Valley which is at the south-western part of Tanaris.\n\nDepending on your current location, either fly to Dawnrise Expedition in the Valley of the Watchers, Tanaris, or use the Cavern of Times portal in Dalaran.  \n\nThere are breadcrumb quests for those who have worked through the quests in Deepholm, or a Warchief's Command from Orgrimmar, Thunder Bluff or Undercity.|FACTION|Horde|M|30.52,65.58|Z|Tanaris|
 
-A Hero's Call: Uldum! |QID|28558|M|30.52,65.58|Z|Stormwind City|N|From the Hero's Call Board|O|
-T Hero's Call: Uldum! |QID|28558|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|ACTIVE|
-A Warchief's Command: Uldum! |QID|28557|M|30.52,65.58|Z|Orgrimmar|N|From the board.|O|
-T Warchief's Command: Uldum! |QID|28557|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|ACTIVE|
-T Meetup with the Caravan |QID|28295;28296|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|ACTIVE|28295;28296|
+A Hero's Call: Uldum! |QID|28558|M|30.52,65.58|Z|Stormwind City|N|From the Hero's Call Board|O|FACTION|Alliance|
+T Hero's Call: Uldum! |QID|28558|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|
+A Warchief's Command: Uldum! |QID|28557|M|30.52,65.58|Z|Orgrimmar|N|From the board.|O|FACTION|Horde|
+T Warchief's Command: Uldum! |QID|28557|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|
+T Meetup with the Caravan |QID|28295;28296|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|
 
 A Easy Money|QID|27003|M|30.52,65.58|Z|Tanaris|N|From Adarrah.|
 C Easy Money|QID|27003|N|Click on the camel, Lady Humps, then sit back and watch the cinematic.|Z|Tanaris|NC|
@@ -170,7 +170,7 @@ A Budd's Plan|QID|27924|M|59.71,72.03|N|From Budd.|
 
 C Smoke in Their Eyes|QID|27923|U|63027|M|62.12,73.98|N|Walk up to a bale of hay, and use the Brazier Torch to set them on fire.|S|NC|
 C Budd's Plan|QID|27924|M|60.91,74.08|N|Loot the Armor pieces from the tables.  You can also find them by killing Neferset Denizens and Neferset Sentinels.|S|NC|
-l Neferset Key|QID|28105|L|62817|M|59.96,73.92|N|Kill Kavem and loot the Neferset Key.|
+C Neferset Key|QID|28105|T|Kavem the Callous|M|59.96,73.92|N|Kill Kavem and loot the Neferset Key.|
 C Smoke in Their Eyes|QID|27923|U|63027|M|62.12,73.98|N|Walk up to a bale of hay, and use the Brazier Torch to set them on fire.|US|NC|
 C Budd's Plan|QID|27924|M|60.91,74.08|N|Kill Neferset Denizens and Neferset Sentinels for Armor Pieces or find them on ground.|US|NC|
 
@@ -205,7 +205,7 @@ T Relics of the Sun King|QID|28141|M|52.98,27.75|N|To Sun Priest Asaris.|US|
 
 A The Bandit Warlord|QID|28502|M|52.98,27.75|N|From Sun Priest Asaris.|
 
-C The Bandit Warlord|QID|28502|M|45.72,16.20|N|Go to the waypoint and kill Warlord Ihsenn.|
+K Warlord Ihsenn|QID|28502|T|Warlord Ihsenn|M|45.72,16.20|N|Go to the waypoint and kill Warlord Ihsenn.|
 T The Bandit Warlord|QID|28502|M|52.98,27.63|N|To Sun Priest Asaris.|
 C Speak with Asaq|QID|28134|M|49.66,39.13|QO|Speak with Asaq: 1/1|N|Speak to Asaq and say "The king wishes to be informed about Neferset activity".|CHAT|
 A Take it to 'Em!|QID|27993|M|49.68,39.03|N|From Mack.|
@@ -230,7 +230,7 @@ C Field Work|QID|27179|N|Kill Sand Pygmies and loot Ornate Tablet Fragments. You
 A Just the Tip|QID|27176|M|64.85,29.53|N|From the Elaborate Disc.|
 A Do the World a Favor|QID|27187|M|65.4,30.8|N|Kill a Mangy Hyena or Skarf to be offered this quest.|
 C Do the World a Favor|QID|27187|N|Kill Mangy Hyenas.|S|
-K Sultan Oogah|QID|27176|M|68.08,31.51|L|60865|N|Kill and loot Sultan Oogah for the Sultan's Staff.|
+K Sultan Oogah|QID|27176|M|68.08,31.51|T|Sultan Oogah|N|Kill and loot Sultan Oogah for the Sultan's Staff.|
 C Just the Tip|QID|27176|M|68.08,31.51|U|60859|N|Activate the Elaborate Disc to combine it with the Sultan's Staff to create the Shaft of the Stars.|NC|
 C Field Work|QID|27179|M|63.50,31.33|N|Continue to obtain the Ornate Tablet Fragments from either the floor or by killing the Sand Pygmies.|US|
 C Do the World a Favor|QID|27187|M|66.78,26.76;63.34,26.99|CN|N|Kill Mangy Hyenas.|US|
@@ -257,16 +257,16 @@ A Lessons From the Past|QID|27541|M|63.46,32.61|N|From the corpse of Schnottz Sc
 C Lessons From the Past|QID|27541|M|63.46,32.55|N|Speak to Schnottz Scout and select "Take the scout's spectacles".\n\nYou don't need the journal, it's just for a fun read.|CHAT|
 C Be Prepared|QID|27517|US|M|61.81,30.15;67.46,30.05|CN|N|Kill Tormented Tomb-Robbers, they spawn when you walk over the skeletons on the floor. Loot 6 Pieces of Rope.|
 
-T Lessons From the Past|QID|27541|M|64.45,28.00|N|To Harrison Jones.|S|
+;T Lessons From the Past|QID|27541|M|64.45,28.00|N|To Harrison Jones.|S|
 T Be Prepared|QID|27517|M|64.45,28.00|N|To Harrison Jones.|
-T Lessons From the Past|QID|27541|M|64.45,28.00|N|To Harrison Jones.|US|
+T Lessons From the Past|QID|27541|M|64.45,28.00|N|To Harrison Jones.|
 
 A By the Light of the Stars|QID|27549|M|64.45,28.00|N|From Harrison Jones.|
 C By the Light of the Stars|QID|27549|M|62.15,32.93|N|Use the glasses then gather the balls of light floating around the room. If there are Indentured Protectors nearby, the will attack when you pick one up.|U|61509|NC|
 T By the Light of the Stars|QID|27549|M|64.48,28.05|N|To Harrison Jones, then sit back and watch the cinematic.\n\n**Remember to put your head gear back on!**|
 
 A Tipping the Balance|QID|27431|M|64.49,27.98|N|From Harrison Jones.|
-C Tipping the Balance|QID|27431|M|64.41,27.32|N|After the first cinematic, talk to Harrison and click 'Ask "What can I do to help?"', then sit back and watch the second cinematic.|CHAT|
+C Tipping the Balance|QID|27431|M|64.5,82.0|N|After the first cinematic, talk to Harrison and click 'Ask "What can I do to help?"', then sit back and watch the second cinematic.|CHAT|
 T Tipping the Balance|QID|27431|M|64.50,27.99|N|To Harrison Jones.|
 
 A After the Fall|QID|27624|M|64.50,27.99|N|From Harrison Jones.|
@@ -324,11 +324,11 @@ C The Scepter of Orsis|QID|27706|M|39.65,45.38|N|Right-click the Sacred Receptab
 T Under the Choking Sands|QID|27519|M|45.27,37.84|N|To General Ammantep.|S|
 T The Scepter of Orsis|QID|27706|M|45.27,37.84|N|To General Ammantep.|
 T Under the Choking Sands|QID|27519|M|45.27,37.84|N|To General Ammantep.|US|
+A The Vortex Pinnacle|QID|28845|M|45.25,37.79|N|Inside the Instance, if you wish to do it. From General Ammantep.|RANK|2|
 
 A Send Word to Phaoris|QID|27628|M|45.23,37.95|N|From Prince Nadun.|
 T Minions of Al'Akir|QID|27520|M|45.23,37.95|N|To Prince Nadun.|RANK|2|
 
-A The Vortex Pinnacle|QID|28845|M|45.25,37.79|N|Inside the Instance, if you wish to do it. From General Ammantep.|RANK|2|
 T Send Word to Phaoris|QID|27628|M|54.79,32.72|N|To King Phaoris, then sit back and watch the cinematic.|
 
 A The High Priest's Vote|QID|27630|M|54.97,34.01|N|From Prince Nadun, outside the throne room.|S|
@@ -356,7 +356,7 @@ C The Defilers' Ritual|QID|28611|M|52.81,45.59;52.18,40.18;49.89,40.11|CS|N|At t
 T The Defilers' Ritual|QID|28611|M|52.81,45.59;54.18,41.83|CS|N|To High Priest Amet.|
 
 A The Root of the Corruption|QID|27838|M|54.20,42.00|N|From High Priest Amet.|
-C The Root of the Corruption|QID|27838|M|58.92,14.13|N|Head to the waypoint and kill Scalemother Hevna.|
+K The Root of the Corruption|QID|27838|T|Scalemother Hevna|M|58.92,14.13|N|Head to the waypoint and kill Scalemother Hevna.|
 T The Root of the Corruption|QID|27838|M|57.87,42.52;54.16,41.93|CS|N|To High Priest Amet.|
 T The High Commander's Vote|QID|27631|M|57.87,42.52;58.84,46.14|CS|N|To High Commander Kamses.|
 
@@ -372,7 +372,7 @@ A Shaping Up|QID|28210|M|59.56,47.27|N|From Salhet.|
 T The Vizier's Vote|QID|27629|M|56.61,53.45|N|To Vizier Tanotep. He wanders around.|
 A Tanotep's Son|QID|27632|M|56.61,53.45|N|From Vizier Tanotep.|
 
-C Ploughshares to Swords|QID|28201|M|54.13,51.38|N|Right-click Ramkahen Laborers. They can be found in the bamboo fields.|NC|
+C Ploughshares to Swords|QID|28201|M|54.13,51.38|N|Right-click Ramkahen Laborers. They can be found in the bamboo fields.|CHAT|
 C Tanotep's Son|QID|27632|M|58.11,59.81|N|Kill Neferset Guards until one drops the Vir'Naal Delta Map.|
 T Tanotep's Son|QID|27632|M|58.63,59.88|N|Complete the quest and get the follow up: Neferset Prison.|
 
@@ -421,7 +421,7 @@ T The Secret of Nahom|QID|28498|M|67.25,42.81|N|To Salhet.|
 T Punish the Trespassers|QID|28499|M|67.28,42.79|N|To Sun Prophet Tumet.|
 
 A The Cypher of Keset|QID|28500|M|67.26,42.79|N|From Salhet.|
-C The Cypher of Keset|QID|28500|M|78.23,45.77|N|Kill Raider Lord Havat and loot the Cypher of Keset.|
+C The Cypher of Keset|QID|28500|M|78.23,45.77|T|Raider Lord Havat|N|Kill Raider Lord Havat and loot the Cypher of Keset.|
 T The Cypher of Keset|QID|28500|M|67.25,42.82|N|To Salhet.|
 
 A The Defense of Nahom|QID|28501|M|67.25,42.82|N|From Salhet.|
@@ -432,7 +432,7 @@ A The Push Westward|QID|28623|M|67.25,42.84|N|From Salhet.|
 A The Curse of the Tombs|QID|27755|M|67.27,42.82|N|From Sun Prophet Tumet.|
 
 C The Curse of the Tombs|QID|27755|M|69.58,58.50|N|Kill Crazed Diggers.|S|QO|Crazed Digger slain: 6/6|
-K Mekgineer Mixeltweed|QID|27755|M|69.58,58.50|QO|Mekgineer Mixeltweed slain: 1/1|N|Kill Mekgineer Mixeltweed.|
+K Mekgineer Mixeltweed|QID|27755|T|Mekgineer Mixeltweed|M|69.58,58.50|QO|Mekgineer Mixeltweed slain: 1/1|N|Kill Mekgineer Mixeltweed.|
 C The Curse of the Tombs|QID|27755|M|69.58,58.50|N|Kill Crazed Diggers.|US|QO|Crazed Digger slain: 6/6|
 
 l A.I.D.A. Communicator|QID|27760|L|62483|M|22.47,64.82|N|If you have not gotten this item yet keep killing and looting Crazed Diggers.|
@@ -442,11 +442,11 @@ T Artificial Intelligence|QID|27760|M|74.11,64.44|N|To the A.I.D.A. Terminal.|
 A A Disarming Distraction|QID|27761|M|74.11,64.44|N|From the A.I.D.A. Terminal.|
 A Core Access Codes|QID|27777|M|74.11,64.44|N|From the A.I.D.A. Terminal.|
 
-C Core Access Codes|QID|27777|U|62542|M|73.33,72.69|N|Use the Mech Control Scrambler on Twizzleflux the Insane everytime it's ready, this will completely stun him for about 6 seconds each time. Kill Twizzleflux and loot the Core Access Codes.|
+C Core Access Codes|QID|27777|T|Twizzleflux the Insane|U|62542|M|73.33,72.69|N|Use the Mech Control Scrambler on Twizzleflux the Insane everytime it's ready, this will completely stun him for about 6 seconds each time. Kill Twizzleflux and loot the Core Access Codes.|
 C Unstable Bomb Bot deactivated|QID|27761|U|62398|QO|Unstable Bomb Bot deactivated: 4/4|M|79.01,64.05|N|Don't try to fight the cursed engineers. Use the Holographic Projector to distract them repeatedly. Right-click on the Unstable Bomb Bots to defuse them.|S|NC|
-N Third Bomb Cluster|QID|27761|U|62398|M|78.85,65.06|N|Use the Holographic Projector then right-click on the Third Bomb Cluster to disarm it.|QO|Third Bomb Cluster disarmed: 1/1|
-N Second Bomb Cluster|QID|27761|U|62398|M|79.01,64.05|N|Use the Holographic Projector then right-click on the Second Bomb Cluster to disarm it.|QO|Second Bomb Cluster disarmed: 1/1|
-C A Disarming Distraction|QID|27761|U|62398|M|78.81,61.82|N|Use the Holographic Projector then right-click on the First Bomb Cluster to disarm it.|QO|First Bomb Cluster disarmed: 1/1|NC|
+C Third Bomb Cluster|QID|27761|NC|U|62398|M|78.85,65.06|N|Use the Holographic Projector then right-click on the Third Bomb Cluster to disarm it.|QO|Third Bomb Cluster disarmed: 1/1|
+C Second Bomb Cluster|QID|27761|NC|U|62398|M|79.01,64.05|N|Use the Holographic Projector then right-click on the Second Bomb Cluster to disarm it.|QO|Second Bomb Cluster disarmed: 1/1|
+C First Bomb Cluster|QID|27761|NC|U|62398|M|78.81,61.82|N|Use the Holographic Projector then right-click on the First Bomb Cluster to disarm it.|QO|First Bomb Cluster disarmed: 1/1|NC|
 C Unstable Bomb Bot deactivated|QID|27761|U|62398|QO|Unstable Bomb Bot deactivated: 4/4|M|79.01,64.05|N|Don't try to fight the cursed engineers. Use the Holographic Projector to distract them repeatedly. Right-click on the Unstable Bomb Bots to defuse them.|US|NC|
 
 T A Disarming Distraction|QID|27761|M|74.08,64.44|N|To the A.I.D.A. Terminal.|S|
@@ -473,8 +473,8 @@ A Salhet's Gambit|QID|28486|M|52.88,65.55|N|From Salhet.|
 C Salhet's Gambit|QID|28486|M|54.06,71.17|N|Speak with Ramhaken Ranger Captain when ready to start the escort.|
 
 C Bleeding the Enemy|QID|28483|M|52.42,79.47|N|Kill Nefersets and loot Neferset Insignias.|S|
-K High Priest Sekhemet|QID|28480|M|47.49,77.79|N|Kill High Priest Sekhemet.|QO|High Priest Sekhemet slain: 1/1|
-C Lieutenants of Darkness|QID|28480|M|50.55,87.04|N|Kill Scorpion-Lord Namkhare.|
+K High Priest Sekhemet|QID|28480|T|High Priest Sekhemet|M|47.49,77.79|N|Kill High Priest Sekhemet.|QO|High Priest Sekhemet slain: 1/1|
+K Scorpion-Lord Namkhare|QID|28480|M|50.55,87.04|N|Kill Scorpion-Lord Namkhare.|QO|Scorpion-Lord Namkhare slain: 1/1|
 C Bleeding the Enemy|QID|28483|M|52.42,79.47|N|Kill Nefersets and loot Neferset Insignias.|US|
 
 T Salhet's Gambit|QID|28486|M|52.92,65.55|N|To Salhet.|
@@ -484,7 +484,7 @@ T Bleeding the Enemy|QID|28483|M|52.07,65.43|N|To King Phaoris.|
 T Lieutenants of Darkness|QID|28480|M|52.07,65.43|N|To King Phaoris.|US|
 
 A The Fall of Neferset City|QID|28520|M|52.07,65.43|N|From King Phaoris.|
-C The Fall of Neferset City|QID|28520|M|52.04,82.29|N|Defeat Dark Pharaoh Tekahn. NPCs will come to your aid, just make sure you avoid the laser beams from the Colossi.|
+C The Fall of Neferset City|QID|28520|T|Dark Pharaoh Tekahn|M|52.04,82.29|N|Defeat Dark Pharaoh Tekahn. NPCs will come to your aid, just make sure you avoid the laser beams from the Colossi.|
 T The Fall of Neferset City|QID|28520|M|54.89,32.82|U|6948|N|Use your Hearthstone. To King Phaoris.|
 
 A Return to the Lost City|QID|28870|M|54.89,32.82|N|This is a Dungeon quest and is optional. From King Phaoris.|LEAD|28781;28783|RANK|3|
