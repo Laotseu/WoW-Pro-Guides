@@ -201,6 +201,7 @@ end
 
 -- Quest parsing function --
 local function ParseQuests(...)
+	err("ParseQuests called")
 	WoWPro.Leveling:dbp("Parsing Guide...")
 	local GID = WoWProDB.char.currentguide
 	local i = 1
