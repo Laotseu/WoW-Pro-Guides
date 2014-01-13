@@ -14,6 +14,20 @@ function WoWPro:RecordTaxiLocations(...)
         if not WoWProCharDB.Taxi[location] then
             WoWProCharDB.Taxi[location] = true
             WoWPro:Print("Discovered Flight Point: [%s]",location)
+
+            -- Complete f steps for that location if present
+         	local GID = WoWProDB.char.currentguide
+         	if not GID or not WoWPro.Guides[GID] then return end
+
+         	if WoWProCharDB.Guide then
+         		for i=1,#WoWPro.action do
+         			if WoWPro.action[i] == 'f' and 
+         				WoWPro.step[i] == location and 
+         				not WoWProCharDB.Guide[GID].completion[i] then
+         				WoWPro.CompleteStep(i, true)
+         			end
+         		end
+         	end
         end
     end
 end
@@ -693,6 +707,9 @@ function WoWPro.EventHandler(frame, event, ...)
 		-- Auto-Completion --
 	if event == "TAXIMAP_OPENED" then
 		WoWPro:RecordTaxiLocations(...)
+		WoWPro:UpdateQuestTracker()
+		WoWPro:UpdateGuide(event)
+
 		local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
 		if WoWPro.action[qidx] == "F" and WoWProCharDB.AutoAccept == true then
 		    WoWPro:TakeTaxi(qidx,WoWPro.step[qidx])   
