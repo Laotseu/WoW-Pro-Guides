@@ -62,16 +62,16 @@
 WoWPro.Leveling:RegisterGuide('CraBla5458', 'Blasted Lands', 'Crackerhead22', '54', '58', 'JamHel6062', 'Alliance', function()
 return [[
 
-L Level 54 |QID|25715|L|54|N|You need to be Level 54 to do this guide.|
+L Level 54 |LVL|54|N|You need to be Level 54 to do this guide.|
 
-T Hero's Call: Blasted Lands!|QID|28673|M|60.11,13.67|Z|Blasted Lands|N|Enter the building and go up one floor to Quartermaster Lungertz.|O|
-T Blasted Lands: The Other Side of the World|QID|28857|M|60.11,13.67|N|To Quartermaster Lungertz.|O|
+T Hero's Call: Blasted Lands!|QID|28673|M|60.11,13.67|Z|Blasted Lands|N|Enter the building and go up one floor to Quartermaster Lungertz.|
+T Blasted Lands: The Other Side of the World|QID|28857|M|60.11,13.67|N|To Quartermaster Lungertz.|
 R Blasted Lands|QID|28867|M|53.4,33.4|Z|Silithus|N|Click on the portal by the Nethergarde Mage to go to the Blasted Lands.|O|
-T Nethergarde Needs You!|QID|28867|M|60.11,13.67|N|To Quartermaster Lungertz.|O|
+T Nethergarde Needs You!|QID|28867|M|60.11,13.67|N|To Quartermaster Lungertz.|
 
 A Minor Distractions|QID|25710|M|60.11,13.67|N|From Quartermaster Lungertz.|
 h Nethergarde Keep|QID|25715|M|60.72,14.13|N|At Mama Morton.|
-T Onward to the Blasted Lands|QID|27919|M|61.53,18.46|N|To Enohar Thunderbrew.|O|
+T Onward to the Blasted Lands|QID|27919|M|61.53,18.46|N|To Enohar Thunderbrew.|
 A A Closer Look|QID|25715|M|61.53,18.46|N|From Enohar Thunderbrew.|
 f Nethergarde Keep|M|61.21,21.75|N|At Alexandra Constantine.|
 C Minor Distractions|QID|25710|M|62.72,23.43|N|They are stealthed, and usually can be found by the cannons.|
@@ -124,7 +124,7 @@ T Kum'isha's Endeavors|QID|25772|O|N|To Kum'isha the Collector.|
 T The First Step|QID|26159|M|62.64,26.19|N|To Kasim Sharim.|
 A Blood Ritual|QID|26160|M|62.64,26.19|N|From Kasim Sharim.|
 T A Bloodmage's Gotta Eat Too|QID|26172|M|62.64,26.19|N|To Kasim Sharim.|
-C Blood Ritual|QID|26160|NC|M|62.64,26.19|N|Talk to Kasim to get it started.|
+C Blood Ritual|QID|26160|CHAT|M|62.64,26.19|N|Talk to Kasim to get it started.|
 T Blood Ritual|QID|26160|M|62.65,26.15|N|Wait a moment than you can turn this quest in.|
 A The Amulet of Allistarj|QID|26167|M|62.65,26.15|N|From Kasim Sharim.|
 A The Amulet of Sevine|QID|26168|M|62.65,26.15|N|From Kasim Sharim.|
