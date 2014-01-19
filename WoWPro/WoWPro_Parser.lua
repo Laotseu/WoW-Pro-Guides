@@ -294,6 +294,7 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 	WoWPro.NPC[i] = text:match("|NPC|([^|]*)|?")
 	WoWPro.ach[i] = text:match("|ACH|([^|]*)|?")
 	WoWPro.buff[i] = text:match("|BUFF|([^|]*)|?")
+	WoWPro.nobuff[i] = text:match("|NOBUFF|([^|]*)|?")
 	WoWPro.recipe[i] = text:match("|RECIPE|([^|]*)|?")
 	WoWPro.why[i] = nil
 

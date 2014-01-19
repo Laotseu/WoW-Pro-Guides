@@ -62,26 +62,49 @@ function WoWPro:AutoCompleteGetFP(...)
 	end
 end
 
+-- This function expect a string of spellIDs or buff names separated by ;
+-- ex. or valid |BUFF| tags: |BUFF|47014|, |BUFF|Budd's Attention Span|, |BUFF|47014;Budd's Attention Span|
+-- Return the first Buff found or nil if none of the listed buff are found
 function WoWPro:CheckPlayerForBuffs(buffs)
-	local buffies = {}
-    local buffIdx
-    for buffIdx = 1, select("#",string.split(";",buffs)) do
-        local buff = select(buffIdx,string.split(";",buffs))
-        buffies[buffIdx] = tonumber(buff)
-    end
-    local BuffIndex = 1
-    local BuffName, _, _, _, _, _, _, _, _, _, BuffSpellId = UnitBuff("player",BuffIndex)
-    while BuffName and not skip do
-        for buffIdx = 1, #buffies do
-            if BuffSpellId == buffies[buffIdx] then
-                return BuffSpellId
-            end
-        end
-        BuffIndex = BuffIndex + 1
-        BuffName, _, _, _, _, _, _, _, _, _, BuffSpellId = UnitBuff("player",BuffIndex)
-    end
-    return nil
+	for buff in buffs:gmatch("[^;]+") do
+		-- We need the name for UnitBuff and UnitDebuff, they do not accept spellID
+		local buffname = GetSpellInfo(buff) or buff 
+		if UnitBuff("player", buffname) or UnitDebuff("player", buffname) then
+			return buff
+		end
+	end
+	return nil
 end
+
+-- function WoWPro:CheckPlayerForBuffs(buffs)
+-- 	local buffies = {}
+--     local buffIdx
+--     for buffIdx = 1, select("#",string.split(";",buffs)) do
+--         local buff = select(buffIdx,string.split(";",buffs))
+--         buffies[buffIdx] = tonumber(buff)
+--     end
+--     -- UnitBuff, UnitAura and UnitDebuf wants a name.
+--     for i, id in ipairs(buffies) do
+--     	if tonumber(id) then
+--     		buffies[i] = GetSpellInfo(id)
+--     	end
+--     	if UnitBuff("player", buffies[i]) or UnitDebuff("player", buffies[i]) then
+--     		return true
+--     	end
+--     end
+--     -- local BuffIndex = 1
+--     -- local BuffName, _, _, _, _, _, _, _, _, _, BuffSpellId = UnitBuff("player",BuffIndex)
+--     -- while BuffName do
+--     --     for buffIdx = 1, #buffies do
+--     --         if BuffSpellId == buffies[buffIdx] then
+--     --             return BuffSpellId
+--     --         end
+--     --     end
+--     --     BuffIndex = BuffIndex + 1
+--     --     BuffName, _, _, _, _, _, _, _, _, _, BuffSpellId = UnitBuff("player",BuffIndex)
+--     -- end
+--     return nil
+-- end
 
 -- Auto-Complete: Do we have a buff? --
 function WoWPro:AutoCompleteBuff(unit,...)
@@ -89,7 +112,10 @@ function WoWPro:AutoCompleteBuff(unit,...)
 	for i = 1,15 do
 		local index = WoWPro.rows[i].index
 		if WoWPro.buff and WoWPro.buff[index] and  WoWPro:CheckPlayerForBuffs(WoWPro.buff[index]) then
-		    WoWPro.CompleteStep(index)
+		   WoWPro.CompleteStep(index)
+		end
+		if WoWPro.nobuff and WoWPro.nobuff[index] and not WoWPro:CheckPlayerForBuffs(WoWPro.nobuff[index]) then
+			WoWPro.CompleteStep(index)
 		end
 	end
 end
