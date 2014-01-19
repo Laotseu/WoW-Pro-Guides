@@ -149,7 +149,7 @@ L Level 83 |QID|27003|N|You need to be level 83 or higher to be able to work thr
 R Thistleshrub Valley |QID|27003|N|Welcome to Uldum. To start this guide, you need to head to Thistleshrub Valley which is at the south-western part of Tanaris.\n\nDepending on your current location, either fly to Gunstan's Dig in Tanaris, or use the Cavern of Times portal in Dalaran.  \n\nThere are breadcrumb quests for those who have worked through the quests in Deepholm, or a Hero's Call from any Alliance City.|FACTION|Alliance|M|30.52,65.58|Z|Tanaris|
 R Thistleshrub Valley |QID|27003|N|Welcome to Uldum. To start this guide, you need to head to Thistleshrub Valley which is at the south-western part of Tanaris.\n\nDepending on your current location, either fly to Dawnrise Expedition in the Valley of the Watchers, Tanaris, or use the Cavern of Times portal in Dalaran.  \n\nThere are breadcrumb quests for those who have worked through the quests in Deepholm, or a Warchief's Command from Orgrimmar, Thunder Bluff or Undercity.|FACTION|Horde|M|30.52,65.58|Z|Tanaris|
 
-A Hero's Call: Uldum! |QID|28558|M|30.52,65.58|Z|Stormwind City|N|From the Hero's Call Board|O|FACTION|Alliance|
+A Hero's Call: Uldum! |QID|28558|M|62.3,30.0|Z|Stormwind City|N|From the Hero's Call Board|O|FACTION|Alliance|
 T Hero's Call: Uldum! |QID|28558|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|
 A Warchief's Command: Uldum! |QID|28557|M|30.52,65.58|Z|Orgrimmar|N|From the board.|O|FACTION|Horde|
 T Warchief's Command: Uldum! |QID|28557|M|30.52,65.58|Z|Tanaris|N|To Adarrah.|
@@ -324,10 +324,10 @@ C The Scepter of Orsis|QID|27706|M|39.65,45.38|N|Right-click the Sacred Receptab
 T Under the Choking Sands|QID|27519|M|45.27,37.84|N|To General Ammantep.|S|
 T The Scepter of Orsis|QID|27706|M|45.27,37.84|N|To General Ammantep.|
 T Under the Choking Sands|QID|27519|M|45.27,37.84|N|To General Ammantep.|US|
-A The Vortex Pinnacle|QID|28845|M|45.25,37.79|N|Inside the Instance, if you wish to do it. From General Ammantep.|RANK|2|
 
 A Send Word to Phaoris|QID|27628|M|45.23,37.95|N|From Prince Nadun.|
 T Minions of Al'Akir|QID|27520|M|45.23,37.95|N|To Prince Nadun.|RANK|2|
+A The Vortex Pinnacle|QID|28845|M|45.25,37.79|N|Inside the Instance, if you wish to do it. From General Ammantep.|RANK|2|
 
 T Send Word to Phaoris|QID|27628|M|54.79,32.72|N|To King Phaoris, then sit back and watch the cinematic.|
 
@@ -474,7 +474,7 @@ C Salhet's Gambit|QID|28486|M|54.06,71.17|N|Speak with Ramhaken Ranger Captain w
 
 C Bleeding the Enemy|QID|28483|M|52.42,79.47|N|Kill Nefersets and loot Neferset Insignias.|S|
 K High Priest Sekhemet|QID|28480|T|High Priest Sekhemet|M|47.49,77.79|N|Kill High Priest Sekhemet.|QO|High Priest Sekhemet slain: 1/1|
-K Scorpion-Lord Namkhare|QID|28480|M|50.55,87.04|N|Kill Scorpion-Lord Namkhare.|QO|Scorpion-Lord Namkhare slain: 1/1|
+K Scorpion-Lord Namkhare|QID|28480|T|Scorpion-Lord Namkhare|M|50.55,87.04|N|Kill Scorpion-Lord Namkhare.|QO|Scorpion-Lord Namkhare slain: 1/1|
 C Bleeding the Enemy|QID|28483|M|52.42,79.47|N|Kill Nefersets and loot Neferset Insignias.|US|
 
 T Salhet's Gambit|QID|28486|M|52.92,65.55|N|To Salhet.|
@@ -484,10 +484,10 @@ T Bleeding the Enemy|QID|28483|M|52.07,65.43|N|To King Phaoris.|
 T Lieutenants of Darkness|QID|28480|M|52.07,65.43|N|To King Phaoris.|US|
 
 A The Fall of Neferset City|QID|28520|M|52.07,65.43|N|From King Phaoris.|
-C The Fall of Neferset City|QID|28520|T|Dark Pharaoh Tekahn|M|52.04,82.29|N|Defeat Dark Pharaoh Tekahn. NPCs will come to your aid, just make sure you avoid the laser beams from the Colossi.|
+K Dark Pharaoh Tekahn|QID|28520|T|Dark Pharaoh Tekahn|M|52.04,82.29|N|Defeat Dark Pharaoh Tekahn. NPCs will come to your aid, just make sure you avoid the laser beams from the Colossi.|
 T The Fall of Neferset City|QID|28520|M|54.89,32.82|U|6948|N|Use your Hearthstone. To King Phaoris.|
 
-A Return to the Lost City|QID|28870|M|54.89,32.82|N|This is a Dungeon quest and is optional. From King Phaoris.|LEAD|28781;28783|RANK|3|
+A Return to the Lost City|QID|28870|M|54.89,32.82|N|This is a Dungeon quest and is optional. From King Phaoris.|LEAD|28781;28783|RANK|3|O|
 T That Gleam in his Eye|QID|27899|M|43.94,57.10|N|To Harrison Jones. On top of the Obelisk of the Sun.|
 
 A I've Got This Guy|QID|27900|M|43.94,57.10|N|From Harrison Jones.|S|
@@ -512,14 +512,19 @@ A Tailgunner!|QID|27905|M|43.96,57.10|N|From Harrison Jones.|
 C Tailgunner!|QID|27905|M|54.54,42.07|N|Spam ability #1 and #2 while aiming. Easy quest!|
 
 T Tailgunner!|QID|27905|M|54.65,41.85|N|Turnin to Harrison Jones.|
-T Return to the Lost City|QID|28870|M|60.50,65.50|N|If you did the optional dungeon quest. If not, check this off. To Captain Hadan inside the dungeon portal. You don't have to take the 2 follow ups, they are dungeon quests and we won't be doing them in this guide. It's up to you.|O|
+T Return to the Lost City|QID|28870|M|60.50,65.50|N|If you did the optional dungeon quest. If not, check this off. To Captain Hadan inside the dungeon portal. You don't have to take the 2 follow ups, they are dungeon quests and we won't be doing them in this guide. It's up to you.|
 T Efficient Excavations|QID|28132|M|24.43,64.46|N|To Belloc Brightblade.|
 
 A Eastern Hospitality|QID|27926|M|24.43,64.46|N|From Belloc Brightblade.|
 
 f Schnottz's Landing|M|22.33,64.82|N|At Evax Oilspark.|
 
-C Eastern Hospitality|QID|27926|M|22.53,64.58;22.57,64.65;21.95,63.98;22.44,63.21|N|Follow the arrows to mingle with the guests.|CS|
+;C Eastern Hospitality|QID|27926|M|22.53,64.58;22.57,64.65;21.95,63.98;22.44,63.21|N|Follow the arrows to mingle with the guests.|CS|
+C Mingled with a Budding Artist |QID|27926|CHAT|QO|Mingled with a Budding Artist: 1/1|M|22.6,64.6|Z|Uldum|; Schnottz's Landing
+C Mingled with a Refined Gentleman |QID|27926|CHAT|QO|Mingled with a Refined Gentleman: 1/1|M|22.5,64.7|Z|Uldum|; Schnottz's Landing
+C Mingled with an Aspiring Starlet |QID|27926|CHAT|QO|Mingled with an Aspiring Starlet: 1/1|M|22.2,64.0|Z|Uldum|; Schnottz's Landing
+C Mingled with Ambassador Laurent |QID|27926|CHAT|QO|Mingled with Ambassador Laurent: 1/1|M|22.5,63.2|Z|Uldum|; Schnottz's Landing
+;C Eastern Hospitality |QID|27926|M|22.5,63.2|Z|Uldum|; Schnottz's Landing
 T Eastern Hospitality|QID|27926|M|24.42,64.53|N|To Belloc Brightblade.|
 
 A A Favor for the Furrier|QID|27928|M|24.42,64.53|N|From Belloc Brightblade.|
@@ -563,8 +568,12 @@ C Make Yourself Useful|QID|27969|U|62813|M|22.78,60.27;20.89,59.30;20.94,61.78;2
 T Make Yourself Useful|QID|27969|M|24.44,64.23|N|To Commander Schnottz.|
 
 A Crisis Management|QID|28002|M|24.39,64.50|N|From Belloc Brightblade.|
-C Crisis Management|QID|28002|M|22.39,63.85;22.28,63.88;22.30,64.00;21.94,64.25|N|Follow the arrows to the guests.|CS|
-T Crisis Management|QID|28002|M|24.40,64.51|N|To Belloc Brightblade.|
+;C Crisis Management|QID|28002|M|22.39,63.85;22.28,63.88;22.30,64.00;21.94,64.25|N|Follow the arrows to the guests.|CS|
+C Counsel the Budding Artist |QID|28002|CHAT|QO|Budding Artist Counseled: 1/1|M|22.5,64.0|Z|Uldum|; Schnottz's Landing
+C Question the Prolific Writer |QID|28002|CHAT|QO|Prolific Writer Questioned: 1/1|M|22.4,63.9|Z|Uldum|; Schnottz's Landing
+C Chasten the Pretentious Businessman |QID|28002|CHAT|QO|Pretentious Businessman Chastened: 1/1|M|22.3,64.0|Z|Uldum|; Schnottz's Landing
+C Soothed the Privileged Socialite |QID|28002|CHAT|QO|Privileged Socialite Soothed: 1/1|M|22.2,63.9|Z|Uldum|; Schnottz's Landing
+T Crisis Management|QID|28002|M|24.39,64.50|N|To Belloc Brightblade.|
 
 A Battlezone|QID|27990|M|24.44,64.11|N|From Commander Schnottz.|
 K Decrepit Watchers|QID|27990|M|21.32,64.5|QO|Decrepit Watchers Obliterated: 7/7|N|Get inside a Siege Tank. You can't drive it, you can just aim the cannon and fire at the Decrepit Watchers.|
@@ -583,9 +592,9 @@ T Lockdown!|QID|28193|M|22.49,63.21|N|To Commander Schnottz.|
 A Sending a Message|QID|28195|M|22.49,63.21|N|From Commander Schnottz.|
 
 C The Great Escape|QID|28194|M|25.13,68.24|S|N|Kill Schnottz Sea Troopers until you've looted 6 Fresh Sailor Uniforms.|
-K Captain Margun|QID|28195|M|22.29,67.6|N|Kill Captain Margun who is standing on the bridge.|QO|Captain Margun Killed: 1/1|
-K Captain Cork|QID|28195|M|24.88,68.98|N|Kill Captain Cork.|QO|Captain Cork Killed: 1/1|
-C Sending a Message|QID|28195|M|26.05,68.71|N|Finally kill Captain Kronk.|
+K Captain Margun|QID|28195|T|Captain Margun|M|22.29,67.6|N|Kill Captain Margun who is standing on the bridge.|QO|Captain Margun Killed: 1/1|
+K Captain Cork|QID|28195|T|Captain Cork|M|24.88,68.98|N|Kill Captain Cork.|QO|Captain Cork Killed: 1/1|
+K Captain Kronk|QID|28195|T|Captain Kronk|M|26.05,68.71|N|Finally kill Captain Kronk.|QO|Captain Kronk Killed: 1/1|
 C The Great Escape|QID|28194|M|25.13,68.24|US|N|Kill Schnottz Sea Troopers until you've looted 6 Fresh Sailor Uniforms.|
 
 T The Great Escape|QID|28194|M|21.87,64.05|N|To the Prolific Writer.|
@@ -655,7 +664,7 @@ C Schnottz So Fast|QID|28402|M|30.94,15.47;34.51,18.71|CS|N|Go inside the Chambe
 T Schnottz So Fast|QID|28402|M|36.21,20.31|N|To Harrison Jones.|
 
 A Bad Datas|QID|28403|M|36.21,20.31|N|From Harrison Jones.|
-C Bad Datas|QID|28403|M|35.97,23.27|N|Speak to Harrison Jones and follow him.|
+C Bad Datas|QID|28403|CHAT|M|35.97,23.27|N|Speak to Harrison Jones and follow him.|
 T Bad Datas|QID|28403|M|38.98,23.21|N|To Harrison Jones.|
 
 A I'll Do It By Hand|QID|28404|M|38.98,23.21|N|From Harrison Jones.|
