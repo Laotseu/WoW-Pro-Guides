@@ -81,12 +81,14 @@ return [[
 
 L Level 14 |QID|26506|LVL|14|N|This guide requires a minimum level of 14 to do.|
 
+A Threat to the Kingdom|QID|26761|RANK|1|M|56.37,49.57|Z|Westfall|N|If you're in Westfall get this quest from Marshal Gryan Stoutmantle, otherwise, skip this step.|O|
+A Hero's Call: Redridge Mountains!|QID|26363;26365|RANK|1|N|This breadcrumb quest can be stared from the King Verin or the Hero's Board in Stormwind, or from Captain Danuvin in Sentinel Hill|O|
+
 R Redridge Mountains|QID|26506|M|96.68,72.33|Z|Elwynn Forest|N|Head to Redridge Mountains, to the east of Elwynn Forest.  You can fly to Eastvale Logging Camp, then run east along the road.\n\nThe two breadcrumb quests to this zone are Threat to the Kingdom from Marshal Gryan Stoutmantle in Sentinel Hill for those who quested in Westfall, and Hero's Call: Redridge Mountains! available from both Hero's Callboards in Stormwind City, as well as from King Varian Wrynn. |
 
 A Wanted: Redridge Gnolls|QID|26504|M|16.15,64.54|N|From the Wanted Poster board.|
 A Franks and Beans|QID|26506|M|15.67,65.28|N|From Darcy Parker.|
-T Hero's Call: Redridge Mountains!|QID|28563|M|15.32,64.86|N|To Watch Captain Parker.|O|
-T Hero's Call: Redridge Mountains!|QID|26365|M|15.32,64.86|N|To Watch Captain Parker.|O|
+T Hero's Call: Redridge Mountains!|QID|28563;26365|M|15.32,64.86|N|To Watch Captain Parker.|
 A Still Assessing the Threat|QID|26503|M|15.32,64.86|N|From Watch Captain Parker.|
 C Wanted: Redridge Gnolls|QID|26504|S|M|28.21,73.94|N|Kill any Gnoll you come across.|
 C Franks and Beans|QID|26506|S|M|20.46,64.70|N|Kill any Tarantulas, Condors, and Gortusks you see, to get their respective body part.|
@@ -100,14 +102,14 @@ T Still Assessing the Threat|QID|26503|M|15.31,64.82|N|To Watch Captain Parker.|
 A Parker's Report|QID|26505|M|15.31,64.82|N|From Watch Captain Parker.|
 T Wanted: Redridge Gnolls|QID|26504|M|15.31,64.82|N|To Watch Captain Parker.|
 
-; f Lakeshire|M|29.48,53.77|N|At Ariena Stormfeather.|QID|26761|
-T Threat to the Kingdom|QID|26761|M|28.91,41.11|N|To Magistrate Solomon.|O|
+f Lakeshire|M|29.48,53.77|N|At Ariena Stormfeather.|
+T Threat to the Kingdom|QID|26761|M|28.91,41.11|N|To Magistrate Solomon.|
 T Parker's Report|QID|26505|M|28.78,41.15|N|To Magistrate Solomon.|
 A We Must Prepare!|QID|26510|M|28.78,41.15|N|From Magistrate Solomon.|
 A Lake Everstill Clean Up|QID|26511|M|28.61,40.99|N|From Bailiff Conacher.|
 h Lakeshire|QID|26511|M|26.38,41.54|N|At Innkeeper Brianna.|QID|26509|
 A An Unwelcome Guest|QID|26509|M|22.03,42.79|N|From Martie Jainrose.|
-C An Unwelcome Guest|QID|26509|M|17.59,44.80|N|Find and kill Bellygrub. Loot his tusk, once he is dead.|
+K Bellygrub|QID|26509|T|Bellygrub|M|17.59,44.80|N|Find and kill Bellygrub. Loot his tusk, once he is dead.|
 T An Unwelcome Guest|QID|26509|M|21.89,42.82|N|To Martie Jainrose.|
 r Sell junk, Repair/Restock|QID|26509|M|29.57,42.98|N|At Dorin Songblade.|
 A Nida's Necklace|QID|26508|M|28.35,48.72|N|From Shawn.|
@@ -134,7 +136,7 @@ A They've Wised Up...|QID|26544|M|32.57,25.13|N|(UI Alert)|
 C They've Wised Up...|QID|26544|NC|M|20.22,23.77|N|Head inside of Rethbane Caverns and look for a Blackrock Overseer. Kill him to get the Blackrock Missive.|
 T They've Wised Up...|QID|26544|M|20.22,23.77|N|(UI Alert)|
 A Yowler Must Die!|QID|26545|M|20.22,23.77|N|(UI Alert)|
-C He Who Controls the Ettins|QID|26519|M|18.05,18.48|N|Find and kill Ardo Dirtpaw.|
+K Ardo Dirtpaw|QID|26519|T|Ardo Dirtpaw|M|18.05,18.48|N|Find and kill Ardo Dirtpaw.|
 T He Who Controls the Ettins|QID|26519|M|17.93,18.53|N|Turn it in at the orb.|
 A Saving Foreman Oslow|QID|26520|M|17.93,18.53|N|From the Ettin Control Panel.|
 K Yowler Must Die!|QID|26545|U|58895|L|58937 |M|27.45,22.09|N|Ok, time to grab some help, go around looking for a Canyon Enttin. When you see one, use the orb and quickly get it down to around 50% health. Find Yowler, kill him and loot the plans.|
@@ -162,14 +164,14 @@ C Breaking Out is Hard to Do|QID|26587|NC|M|49.06,37.83|N|Be careful not to be s
 T Breaking Out is Hard to Do|QID|26587|M|47.57,41.81|N|To Messner.|
 A Jorgensen|QID|26560|M|47.60,41.83|N|From Messner.|
 C Surveying Equipment|QID|26569|M|32.46,9.82|N|Kill and loot Blackrock Trackers.|S|
-C Jorgensen|QID|26560|L|58969|M|43.56,11.03|N|Kill Utroka the Keymistress to get Jorgensen's Cage Key.|
+C Jorgensen|QID|26560|T|Utroka the Keymistress|M|43.56,11.03|N|Kill Utroka the Keymistress to get Jorgensen's Cage Key.|
 T Jorgensen|QID|26560|M|33.62,11.75|N|To Jorgensen.|
 A Krakauer|QID|26561|M|33.63,11.37|N|From Jorgensen.|
 C His Heart Must Be In It|QID|26573|M|26.67,10.65|N|Enter the cave, and then at the split turn right, loot the Blackrock Coffer.|
 C Krakauer|QID|26561|M|26.41,10.40|N|Kill Ritualist Tarak.|
 T Krakauer|QID|26561|M|26.03,10.45|N|To Krakauer.|
 A And Last But Not Least... Danforth|QID|26562|M|26.08,10.48|N|From Krakauer.|
-C And Last But Not Least... Danforth|QID|26562|M|28.13,18.25|N|Kill Overlord Barbarius and recover the Blackrock Lever Key. Use the Blackrock Lever Key to free Danforth. |
+C And Last But Not Least... Danforth|T|Overlord Barbarius|QID|26562|M|28.13,18.25|N|Kill Overlord Barbarius and recover the Blackrock Lever Key. Use the Blackrock Lever Key to free Danforth. |
 T And Last But Not Least... Danforth|QID|26562|M|28.21,17.11|N|To Danforth.|
 A Return of the Bravo Company|QID|26563|M|28.07,17.29|N|From Danforth.|
 C Surveying Equipment|QID|26569|M|32.46,9.82|N|Kill and loot Blackrock Trackers.|US|
@@ -182,10 +184,10 @@ A They Drew First Blood|QID|26607|M|28.51,40.85|N|From Colonel Troteman.|
 T Surveying Equipment|QID|26569|M|29.65,44.38|N|To Foreman Oslow.|
 T Render's Army|QID|26570|M|29.65,44.38|N|To Marshal Marris.|
 r Repair/Restock|QID|26607|M|29.61,43.00|N|At Dorin Songblade.|
+f Camp Everstill|M|52.87,54.51|N|At Arlen Marsters.|
 T They Drew First Blood|QID|26607|M|26.29,39.90|N|Head to the basement of the inn to John J. Keeshan.|
 A It's Never Over|QID|26616|M|26.29,39.90|N|From John J. Keeshan.|
 C It's Never Over|QID|26616|NC|M|34.25,45.6|N|Click on the boat to head to Camp Everstill.|
-; f Camp Everstill|QID|26616|M|52.87,54.51|N|At Arlen Marsters.|
 
 T It's Never Over|QID|26616|M|52.48,55.19|N|To John J. Keeshan.|
 A Point of Contact: Brubaker|QID|26639|M|52.48,55.19|N|From John J. Keeshan.|
