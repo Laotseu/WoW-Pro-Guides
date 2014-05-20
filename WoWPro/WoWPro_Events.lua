@@ -872,28 +872,28 @@ function WoWPro:QuestDialogAutomation()
 		end
 
 		if QuestFrameDetailPanel:IsShown() then
-	--err("AutoAcceptQuest")
 
 			-- Accept the current quest automaticaly if applicable
 			if WoWProCharDB.AutoAccept and 
 				WoWPro.action[step_index] == "A" and 
-				GetTitleText() == WoWPro.step[step_index] and
-				not WoWPro.optional[step_index] then -- Don' t automatically accept optional quests
-				-- Auto Quest are automaticaly accepted as soon as you see the quest text
-				-- This code was lifted from QuestFrame.lua to prevent calling AcceptQuest()
-				-- for an already accepted quest.
-				if ( _G.QuestFrame.autoQuest ) then
-					HideUIPanel(_G.QuestFrame)
-				else
+				GetTitleText() == WoWPro.step[step_index] and 
+				not WoWPro.optional[step_index] and -- Don' t automatically accept optional quests
+				not _G.QuestFrame.autoQuest -- No need to accept autoQuest since they are accepted automatically
+			then 
+	--err("AutoAcceptQuest")
 					AcceptQuest()
 					callMeAgain = true
-				end
+			end
+
+			-- Deal with AutoAccept dialog
+			if WoWProCharDB.AutoAccept and _G.QuestFrame.autoQuest then
+				HideUIPanel(_G.QuestFrame)
 			end
 		end
 
 		if callMeAgain then 
 			WoWPro:SendMessage("WoWPro_QuestDialogAutomation") 
-			return
+			--return
 	end
 
 	end
