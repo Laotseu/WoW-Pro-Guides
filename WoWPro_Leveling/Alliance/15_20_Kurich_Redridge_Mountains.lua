@@ -206,7 +206,7 @@ T Bravo Company Field Kit: Chloroform|QID|26637|M|52.47,55.45|N|To Messner.|
 T Hunting the Hunters|QID|26638|M|52.47,55.45|N|To Danforth.|
 T Unspeakable Atrocities|QID|26640|M|52.47,55.45|N|To John J. Keeshan.|
 A Prisoners of War|QID|26646|M|52.50,55.48|N|From John J. Keeshan.|
-C Blackrock Holding Pen Key|QID|26646|NC|U|60384|M|69.4,76.53|N|Use the field kit. Then use ability #1 (Camoflauge) when you get near the camp. Use #2 (Distraction) to get past guards (can backfire somewhat). Use #3 (Chloroform) on the orc where the key is.|
+C Blackrock Holding Pen Key|QID|26646|NC|L|59261|U|60384|M|69.4,76.53|N|Use the field kit. Then use ability #1 (Camoflauge) when you get near the camp. Use #2 (Distraction) to get past guards (can backfire somewhat). Use #3 (Chloroform) on the orc where the key is.|
 C Prisoners of War|QID|26646|U|60384|M|69.40,58.59|N|If the orc is about to wake up, use ability #3 again. Use #2 to get out of the cave. Then head to the waypoint, click on one of the cages to free the people.|
 T Prisoners of War|QID|26646|M|69.46,58.62|N|(UI Alert)|
 A To Win a War, You Gotta Become War|QID|26651|M|69.46,58.62|N|(UI Alert)|
@@ -218,15 +218,15 @@ T To Win a War, You Gotta Become War|QID|26651|M|77.60,65.56|N|To John J. Keesha
 A Detonation|QID|26668|M|77.60,65.56|N|From John J. Keeshan.|
 C Detonation|QID|26668|NC|M|77.60,65.61|N|Enjoy the brief cut scene.|
 T Detonation|QID|26668|M|77.60,65.61|N|To John J. Keeshan.|
-; f Shalewind Canyon|QID|26668|M|77.91,65.85|N|At Nora Baldwin.|
+f Shalewind Canyon|M|77.91,65.85|N|At Nora Baldwin.|
 A The Dark Tower|QID|26693|M|77.57,65.57|N|From John J. Keeshan.|
 A Shadowhide Extinction|QID|26692|M|77.59,65.54|N|From Danforth.|
 r Repair/Restock|QID|26692|M|78.71,63.46|N|At Clyde Ranthal.|
 C Shadowhide Extinction|QID|26692|S|N|Kill any Gnoll you come across.|
-C The Dark Tower|QID|26693|M|67.58,29.61|N|Enter the cave and kill General Fangore. Loot his corpse to get the Key of Ilgalar.|
+K The Dark Tower|QID|26693|M|67.58,29.61|T|General Fangore|N|Enter the cave and kill General Fangore. Loot his corpse to get the Key of Ilgalar.|
 T The Dark Tower|QID|26693|M|67.55,29.54|N|(UI Alert)|
 A The Grand Magus Doane|QID|26694|M|67.55,29.54|N|(UI Alert)|
-C The Grand Magus Doane|QID|26694|U|59522|M|71.30,45.17|N|Click on the Ward of Ilgalar to enter the tower, then head to the top and kick Grand Magus Doane's butt.|
+K The Grand Magus Doane|QID|26694|T|Grand Magus Doane|U|59522|M|71.30,45.17|N|Click on the Ward of Ilgalar to enter the tower, then head to the top and kick Grand Magus Doane's butt.|
 C Shadowhide Extinction|QID|26692|US|M|70.24,39.53|N|Kill any Gnoll you come across.|
 T Shadowhide Extinction|QID|26692|M|77.79,65.16|N|To Danforth.|
 T The Grand Magus Doane|QID|26694|M|77.77,65.23|N|To John J. Keeshan.|
@@ -235,14 +235,14 @@ A AHHHHHHHHHHHH! AHHHHHHHHH!!!|QID|26708|M|77.29,65.80|N|From Colonel Troteman.|
 C AHHHHHHHHHHHH! AHHHHHHHHH!!!|QID|26708|M|60.76,36.57|N|Hop in the tank and head towared Keeshan's post. You should have all 200 when you get there.|
 T AHHHHHHHHHHHH! AHHHHHHHHH!!!|QID|26708|M|60.76,36.57|N|To Colonel Troteman.|
 A Showdown at Stonewatch|QID|26713|M|60.76,36.57|N|From Colonel Troteman.|
-C Showdown at Stonewatch|QID|26713|QO|Tharil'zun slain: 1/1|M|60.29,47.27|N|First up is Tharil'zun.|
-C Showdown at Stonewatch|QID|26713|M|58.44,55.60|N|Head to the waypoint to kill Gath'Ilzogg.|
+K Tharil'zun|QID|26713|T|Tharil'zun|QO|Tharil'zun slain: 1/1|M|60.29,47.27|N|First up is Tharil'zun.|
+K Gath'Ilzogg|QID|26713|T|Gath'Ilzogg|QO|Gath'Ilzogg slain: 1/1|M|58.44,55.60|N|Head to the waypoint to kill Gath'Ilzogg.|
 T Showdown at Stonewatch|QID|26713|M|58.44,55.53|N|(UI Alert)|
 A Darkblaze, Brood of the Worldbreaker|QID|26714|M|58.44,55.53|N|(UI Alert)|
-C Darkblaze, Brood of the Worldbreaker|QID|26714|M|58.89,55.27|N|Use the horn tha should be next to Gath'Ilzogg's corpse. Try to stay on Darkblaze's side, and just attack as hard as you can. You can not pull it off of Keeshan.|
+K Darkblaze, Brood of the Worldbreaker|QID|26714|M|58.89,55.27|N|Use the horn tha should be next to Gath'Ilzogg's corpse. Try to stay on Darkblaze's side, and just attack as hard as you can. You can not pull it off of Keeshan.|
 T Darkblaze, Brood of the Worldbreaker|QID|26714|M|60.55,36.46|N|To Colonel Troteman.|
 A Triumphant Return|QID|26726|M|60.55,36.46|N|From Colonel Troteman.|
-H Lakeshire|QID|26726|N|Hearth back to Lakeshire Inn, or run if your hearth is on cooldown.|
+H Lakeshire Inn|QID|26726|N|Hearth back to Lakeshire Inn, or run if your hearth is on cooldown.|
 T Triumphant Return|QID|26726|M|28.79,41.11|N|To Magistrate Solomon.|
 F Stormwind City|M|21.78,57.70|N|Fly to Stormwind visit your trainers, and AH.|
 N Next guide|N|Close this step when you are ready to go to the next guide.

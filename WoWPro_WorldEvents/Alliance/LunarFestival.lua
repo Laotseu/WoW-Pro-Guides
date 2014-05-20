@@ -145,7 +145,7 @@ R Hall of Masks|N|Head inside the Temple down into the Hall of Masks|Z|Swamp of 
 A Starsong the Elder|N|From Starsong the Elder from inside the instance.|QID|8713|M|62.90,34.47|Z|TheTempleOfAtalHakkar|RANK|2|
 F Sentinel Hill|N|Fly to Sentinel Hill.|QID|8675|M|70.04,38.56|Z|Swamp of Sorrows|
 A Skychaser the Elder|N|From Skychaser the Elder.|QID|8675|M|56.64,47.09|Z|Westfall|
-F Stormwind City|N|Fly to Stormwind City.|QID|8649|M|56.64,49.44|Z|Westfall|
+F Stormwind|N|Fly to Stormwind City.|QID|8649|M|56.64,49.44|Z|Westfall|
 A Hammershout the Elder|N|From Hammershout the Elder.|QID|8646|M|34.56,50.25|Z|Elwynn Forest|
 A Stormbrow the Elder|N|From Stormbrow the Elder.|QID|8649|M|39.79,63.67|Z|Elwynn Forest|
 F Morgan's Vigil|N|Fly to Morgan's Vigil.|QID|8636|M|41.72,64.62|Z|Elwynn Forest|

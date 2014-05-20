@@ -113,6 +113,7 @@ T They Call Him... Stormstout|QID|32019|M|85.94,22.10|N|To Chen Stormstout.|
 A Chen and Li Li|QID|29907|M|85.94,22.10|N|From Chen Stormstout.|
 r Repair|QID|29909|M|84.86,21.68|N|This vendor sells 372 gear if you missed a slot with quests. Be sure to clean out your bags its awhile before you see another vendor.|
 f Pang's Stead|M|84.49,21.06|N|From the Princeton.|
+C Chen and Li Li|QID|29907|M|83.69,21.01|N|Fllow them to town.|
 T Chen and Li Li|QID|29907|M|83.69,21.01|N|To Pang Thunderfoot.|
 A A Seemingly Endless Nuisance|QID|29908|M|83.69,21.01|N|From Pang Thunderfoot.|
 A A Poor Grasp of the Basics|QID|29877|M|82.70,21.24|N|From Muno the Farmhand.|
@@ -153,7 +154,7 @@ C Ang's Giant Pink Turnip|QID|29912|CHAT|QO|Launch a pink turnip: 1/1|M|83.0,21.
 C Ang's Summer Watermelon|QID|29912|CHAT|QO|Launch a watermelon: 1/1|M|83.0,21.1|N|Tell Fanny to "Hit it very softly."|
 C Pang's Extra-Spicy Tofu|QID|29912|CHAT|QO|Launch the Extra-Spicy Tofu: 1/1|M|83.0,21.1|N|Tell Fanny to "Hit it as hard as possible." After you have finished the quest, you can ask Fanny to hit you as hard as possible and you will go sailing down to the next area.|
 
-T The Fabulous Miss Fanny|QID|29912|M|75.2,24.0|N|To LiangThunderfoot.|N|If you are still near Fanny, you can ask her to hit you as hard as possible and you will go sailing down to the next area.|
+T The Fabulous Miss Fanny|QID|29912|M|75.2,24.0|N|To LiangThunderfoot. If you are still near Fanny, you can ask her to hit you as hard as possible and you will go sailing down to the next area.|
 A The Meat They'll Eat|QID|29913|M|75.2,24.1|N|From Liang Thunderfoot.|
 A Back to the Sty|QID|29914|M|75.2,24.1|N|From Liang Thunderfoot.|
 
@@ -219,8 +220,8 @@ C The Moth Rebellion|QID|30059|S|M|64.70,62.43|
 C Where Silk Comes From|QID|30072|NC|QO|Mulberry Leaves: 1/1|M|62.47,55.20|N|Pick up a bucket of leaves.|
 C Where Silk Comes From|QID|30072|NC|QO|Hungry Silkworm Fed: 5/5|M|62.4,56.5|N|Under the house.|
 C Where Silk Comes From|QID|30072|NC|M|62.37,62.48|N|Inside the building.|
-C The Moth Rebellion|QID|30059|US|M|64.70,62.43|N|The small moths roam in packs. The larger ones tend to be scarcer, so treat as a target of opportunity.|
 T Where Silk Comes From|QID|30072|M|62.67,59.75|N|To Silkmaster Tsai.|
+C The Moth Rebellion|QID|30059|US|M|64.70,62.43|N|The small moths roam in packs. The larger ones tend to be scarcer, so treat as a target of opportunity.|
 T The Moth Rebellion|QID|30059|M|63.55,58.46|N|To Journeyman Chu.|
 A Mothallus!|QID|30058|M|63.62,58.53|N|From Master Goh.|
 C Mothallus!|QID|30058|M|64.4,58.0|N|Click the gear to start the fight, when Mothallus goes up in the air, you need to free your npc helpers from the silk wraps.|
@@ -245,6 +246,9 @@ A Guess Whose Back|QID|29758|U|83767|M|65.29,26.45|N|From Krosh's Back.|
 C Bottletoads|QID|29757|NC|M|64.82,25.07|N|The eggs are in the sparkly water. Click.|
 C Snap Judgment|QID|29600|US|M|60.9,25.7|
 T Snap Judgment|QID|29600|M|59.82,27.94|N|To Zhang Yue.|
+K Kill Manglemaw|QID|30275|T|Manglemaw|M|57.6,26.0|L|79238|N|Jump down in the watter. Killing the cute baby croc gets mom's attention, Kill her too and loot the quest item.|
+A A Crocolisk Tale|QID|30275|54.49,25.81|U|79238|N|From Enormous Crocolisk Tail.|
+T A Crocolisk Tale|QID|30275|M|60.61,33.70|N|To Yan.|
 T Bottletoads|QID|29757|M|60.61,33.70|N|To Yan.|
 T Guess Whose Back|QID|29758|M|60.61,33.70|N|To Yan.|
 T The Golden Dream|QID|29581|M|60.61,33.70|N|To Yan.|
@@ -297,14 +301,11 @@ C The Great Water Hunt|QID|30051|S|NC||M|53.20,31.92|N|Lead Mudmug to the pools 
 K Kill Kracor |QID|32045|T|Kracor|QO|Kracor slain: 1/1|M|55.9,33.9|; Gilded Fan
 K Kill Thundergill |QID|32045|T|Thundergill|QO|Thundergill slain: 1/1|M|55.1,25.9|; Gilded Fan
 K Kill Succula |QID|32045|T|Succula|QO|Succula slain: 1/1|M|51.4,26.9|; The Heartland
-K Kill Manglemaw|QID|30275|T|Manglemaw|M|57.6,26.0|L|79238|N|Killing the cute baby croc gets mom's attention, Kill her too and loot the quest item.|
-A A Crocolisk Tale|QID|30275|54.49,25.81|U|79238|N|From Enormous Crocolisk Tail.|
 C The Great Water Hunt|QID|30051|US|NC|M|53.20,31.92|N|Lead Mudmug to the pools of muddy water (yum!). Sometimes a creature will attack before Mudmug can gather his water.|
 T The Great Water Hunt|QID|30051|M|53.32,32.16|N|To Mudmug, who is right next to you!|
 A Barreling Along|QID|30172|M|53.32,32.16|N|From Mudmug. He will tag along until we next go the Halfhill.|
 C Barreling Along|QID|30172|M|55.7,49.2|NC|QO|Lead Mudmug back to Halfhill: 1/1|N|If the thought of Mudmug getting in the way with his barrels annoys you, drop him off at Halfhill first, otherwise, skip this step.|
 T Barreling Along|QID|30172|M|55.89,49.43|N|To Chen Stormstout.|
-T A Crocolisk Tale|QID|30275|M|60.61,33.70|N|To Yan.|
 
 R The Heartland|QID|30053|M|50.71,32.25|
 C Speak with Gardener Fran|QID|30053|CHAT|QO|Speak with Gardener Fran: 1/1|M|48.31,33.48|
@@ -315,8 +316,8 @@ C Speak with Den Mudclaw|QID|30053|CHAT|QO|Speak with Den Mudclaw: 1/1|M|44.26,3
 A The Farmer's Daughter|QID|30056|M|44.26,34.21|N|From Den Mudclaw.|
 A Enough is Ookin' Enough|QID|30054|M|44.16,34.23|N|From Mung-Mung.|
 C Enough is Ookin' Enough|QID|30054|S|M|45.44,36.02|N|Stick to the right wall of the warren. You can easily get your trophy teeth if you methodically kill them all!|
-C The Farmer's Daughter|QID|30056|M|43.55,35.05;41.46,38.6|CS|N|She is underground on a giant veggy. Talk to her and escort her out.|
-T The Farmer's Daughter|QID|30056|M|41.30,38.16|N|To Mina Mudclaw.|
+T The Farmer's Daughter|QID|30056|M|43.55,35.05;41.46,38.6|CS|N|She is underground on a giant veggy. Talk to her and escort her out.|
+;T The Farmer's Daughter|QID|30056|M|41.30,38.16|N|To Mina Mudclaw.|
 A Seeing Orange|QID|30057|M|41.30,38.16|N|From Mina Mudclaw.|
 C Enough is Ookin' Enough|QID|30054|US|M|42,33|N|Stick to the right wall of the warren.|
 T Enough is Ookin' Enough|QID|30054|M|44.16,34.23|N|To Mung-Mung.|

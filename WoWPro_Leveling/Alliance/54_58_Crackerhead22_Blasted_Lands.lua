@@ -131,7 +131,7 @@ A The Amulet of Sevine|QID|26168|M|62.65,26.15|N|From Kasim Sharim.|
 A The Amulet of Grol|QID|26169|M|62.65,26.15|
 C The Amulet of Allistarj|QID|26167|M|61.58,27.00|N|Use the teleporter to go outside, then head back inside the cave. Loot the Allistarkian Vault to get the amulet.|
 C The Amulet of Grol|QID|26169|M|70.98,35.50|N|The head is inside the ship's hold. When you pick up the amulet you will be attacked, kill and loot the Spirit of Grol.|
-C The Amulet of Sevine|QID|26168|M|73.04,47.42|N|Talk to Salt-Flop and choose to ask for the amulet.|
+C The Amulet of Sevine|QID|26168|M|73.04,47.42|CHAT|N|Talk to Salt-Flop and choose to ask for the amulet.|
 
 A Home... Gone... Naga...|QID|25702|M|73.04,47.42|N|From Salt-Flop.|
 T Home... Gone... Naga...|QID|25702|M|71.01,59.91|N|To Neptool.|
@@ -141,10 +141,10 @@ T Atrocities|QID|25703|M|71.03,59.89|N|To Neptool.|
 A False Idols|QID|25705|M|71.03,59.89|N|From Neptool.|
 A Neptool's Revenge|QID|25706|M|71.03,59.89|N|From Neptool.|
 C Neptool's Revenge|QID|25706|QO|Bloodwash Gambler slain: 4/4|M|66.58,72.81|N|Kill the Bloodwash Gamblers here.|
-C False Idols|QID|25705|S|M|61.20,62.76|N|Smash the idols as you go.|
+C False Idols|QID|25705|S|NC|M|61.20,62.76|N|Smash the idols as you go.|
 C Neptool's Revenge|QID|25706|QO|Bloodwash Idolater slain: 4/4|M|60.12,76.47|N|Kill the Bloodwash Idolaters here.|
 C Neptool's Revenge|QID|25706|M|61.20,62.76|N|Kill Bloodwash Zealots and Acolytes inside the cave.|
-C False Idols|QID|25705|US|M|61.20,62.76|N|Smash the idols as you go.|
+C False Idols|QID|25705|US|NC|M|61.20,62.76|N|Smash the idols as you go.|
 T False Idols|QID|25705|M|70.99,59.90|N|To Neptool.|
 T Neptool's Revenge|QID|25706|M|70.99,59.90|N|To Neptool.|
 H Nethergarde Keep|QID|26168|N|Hearth back to Nethergarde Keep.|
@@ -158,13 +158,13 @@ T Time is Short|QID|26163|M|54.98,49.62|N|To Watcher Grimeo.|
 A The Charred Granite of the Dark Portal|QID|26164|M|54.98,49.62|N|From Watcher Grimeo.|
 A The Vile Blood of Demons|QID|26165|M|54.98,49.62|N|From Watcher Grimeo.|
 A Protecting Our Rear|QID|26173|M|54.74,50.29|N|From Watch Commander Relthorn Netherwane.|
-C The Charred Granite of the Dark Portal|QID|26164|S|U|56024|N|Look for the sparkling stones as you go.|
+C The Charred Granite of the Dark Portal|QID|26164|S|NC|U|56024|N|Look for the sparkling stones as you go.|
 C The Vile Blood of Demons|QID|26165|S|N|Kill any and all demons you see for their blood.|
-K Protecting Our Rear|QID|26173|QO|Shahandana slain: 1/1|M|57.26,50.19;60,43.4|CN|N|Kill Shahandana.|
-K Protecting Our Rear|QID|26173|QO|Gomegaz slain: 1/1|M|51.59,42.26|N|Gomegaz's turn to die.|
-K Protecting Our Rear|QID|26173|QO|Jarroc Torn-Wing slain: 1/1|M|44,47.74|N|And finally Jarroc Torn-Wing's turn.|
+K Protecting Our Rear|QID|26173|T|Shahandana|QO|Shahandana slain: 1/1|M|57.26,50.19;60,43.4|CN|N|Kill Shahandana.|
+K Protecting Our Rear|QID|26173|T|Gomegaz|QO|Gomegaz slain: 1/1|M|51.59,42.26|N|Gomegaz's turn to die.|
+K Protecting Our Rear|QID|26173|T|Jarroc Torn-Wing|QO|Jarroc Torn-Wing slain: 1/1|M|44,47.74|N|And finally Jarroc Torn-Wing's turn.|
 C The Vile Blood of Demons|QID|26165|US|N|Kill any and all demons for their blood.|
-C The Charred Granite of the Dark Portal|QID|26164|US|U|56024|N|Look for the sparkling stones as you go.|
+C The Charred Granite of the Dark Portal|QID|26164|US|NC|U|56024|N|Look for the sparkling stones as you go.|
 T The Charred Granite of the Dark Portal|QID|26164|M|55.00,49.57|N|To Watcher Grimeo.|
 T The Vile Blood of Demons|QID|26165|M|55.00,49.57|N|To Watcher Grimeo.|
 A Enhancing the Stone|QID|26166|M|54.99,49.57|N|From Watcher Grimeo.|
@@ -176,15 +176,15 @@ T Watching Our Back|QID|26174|M|54.70,50.35|N|To Watch Commander Relthorn Nether
 A Surwich|QID|26175|M|54.70,50.35|N|From Watch Commander Relthorn Netherwane.|
 T Enhancing the Stone|QID|26166|M|61.37,29.93|N|Once again click on the Bloodstone Teleport to get to Kasim Sharim.|
 A Not Just Any Body|QID|26161|M|62.59,26.22|N|From Kasim Sharim.|
-C Not Just Any Body|QID|26161|QO|Loramus' Head: 1/1|M|45.12,30.41;46.6,26.97|CS|N|Enter the cave and go left to get to where Loramus' Head is at.|
-C Not Just Any Body|QID|26161|QO|Loramus' Torso: 1/1|M|41.43,33.27;39.98,37.16|CS|N|Head into the cave and hang a left to get to where Loramus' Torso is.|
-C Not Just Any Body|QID|26161||M|46.88,39.39|N|As always go inside the cave, and you see the chest with his legs.|
+C Not Get Loramus' Head|QID|26161|NC|QO|Loramus' Head: 1/1|M|45.12,30.41;46.6,26.97|CS|N|Enter the cave and go left to get to where Loramus' Head is at.|
+C Not Get Loramus' Torso|QID|26161|NC|QO|Loramus' Torso: 1/1|M|41.43,33.27;39.98,37.16|CS|N|Head into the cave and hang a left to get to where Loramus' Torso is.|
+C Not Get Loramus' Legs|QID|26161|NC|QO|Loramus' Legs: 1/1|M|46.88,39.39|N|As always go inside the cave, and you see the chest with his legs.|
 T Not Just Any Body|QID|26161|M|61.37,29.93|N|As always click on the Bloodstone Teleporter to find Kasim Sharim.|
 A The Altar of Storms|QID|26162|M|62.91,25.98|N|From Kasim Sharim.|
 C The Altar of Storms|QID|26162|M|40.34,35.72;36.98,28.16|CS|N|Click on the Blood Altar to get things started. Demons will spawn near the small altars with candles. Kill them as quickly as possible.|
 T The Altar of Storms|QID|26162|M|61.37,29.93|N|Click the Bloodstone then talk to Loramus Thalipedes.|
 A The Final Ritual|QID|26170|M|62.60,26.06|N|From Kasim Sharim.|
-C The Final Ritual|QID|26170|M|62.46,26.03|N|Talk to Kasim and choose to do the ritual. Wait a moment then talk to Loramus.|
+C The Final Ritual|QID|26170|NC|M|62.46,26.03|N|Talk to Kasim and choose to do the ritual. Wait a moment then talk to Loramus.|
 T The Final Ritual|QID|26170|M|62.38,26.02|N|To Loramus Thalipedes.|
 A You Are Rakh'likh, Demon|QID|26171|M|62.38,26.02|N|From Loramus Thalipedes.|
 C You Are Rakh'likh, Demon|QID|26171|U|56012|M|46.5,21.67|N|Speak with the Deathly Usher. Kill Razelikh, and then once he enters Loramus, get him down in health then use the Stone Knife when he says too.|
@@ -211,14 +211,14 @@ C Screecher Brains|QID|26186|L|57179 2|M|38.33,58.23|N|Kill bats to get brains. 
 C Nightstalker Legs|QID|26186|US|L|57178 20|M|38.33,58.23|N|Kill spiders to get legs. You need 20.|
 C Tainted Hides|QID|26186|US|L|57177 4|M|38.33,58.23|N|Kill bears to get hides. You need 4.|
 
-C Screecher Brain Paste|QID|26186|U|57179|L|57182 2|M|38.33,58.23|N|Turn the Screecher Brains into a paste.|
-C Crushed Nightstalker Legs|QID|26186|U|57178|L|57181 20|M|38.33,58.23|N|Turn the Nightstalker Legs into a powder. You need 20.|
-C Tainted Hide Pouch|QID|26186|U|57177|L|57180 |M|38.33,58.23|N|Combine the Tainted Hides to create the Tainted Hide Pouch.|
-U Demoniac Commixture|QID|26186|U|57182|L|57183 |M|39.02,57.73|N|Use the paste and powder to make the mixture.|
-U Demoniac Vessel|QID|26186|U|57180|N|Use the Tainted Hide Pouch to make the final vessel.|L|57184|
+C Screecher Brain Paste|QID|26186|NC|U|57179|L|57182 2|M|38.33,58.23|N|Turn the Screecher Brains into a paste.|
+C Crushed Nightstalker Legs|QID|26186|NC|U|57178|L|57181 20|M|38.33,58.23|N|Turn the Nightstalker Legs into a powder. You need 20.|
+C Tainted Hide Pouch|QID|26186|U|57177|NC|L|57180 |M|38.33,58.23|N|Combine the Tainted Hides to create the Tainted Hide Pouch.|
+U Demoniac Commixture|QID|26186|U|57182|NC|L|57183 |M|39.02,57.73|N|Use the paste and powder to make the mixture.|
+U Demoniac Vessel|QID|26186|NC|U|57180|N|Use the Tainted Hide Pouch to make the final vessel.|L|57184|
 T Demoniac Vessel|QID|26186|M|46.36,87.01|N|To Mayor Charlton Connisport.|
 A The Downfall of Marl Wormthorn|QID|26187|M|46.36,87.01|N|From Mayor Charlton Connisport.|
-C The Downfall of Marl Wormthorn|QID|26187|U|57185|M|34.84,68.11|N|Kill the demons around him then use the vessel to snap him out of his trance, then defeat him.|
+K The Downfall of Marl Wormthorn|QID|26187|T|Marl Wormthorn|U|57185|M|34.84,68.11|N|Kill the demons around him then use the vessel to snap him out of his trance, then defeat him.|
 T The Downfall of Marl Wormthorn|QID|26187|M|46.34,87.06|N|To Mayor Charlton Connisport.|
 F Stormwind City|QID|28708|M|47.11,89.29|N|Fly to Stormwind to visit trainers, AH, sell junk and repair/restock.|
 L You should by now...|QID|28708|N|Between level 58-60 by now. If you are not level 60, I would suggest doing another zone or two to hit 60. That way you can fly in the Outlands. If you don't wish to do that, just close this step and the next guide will load.|

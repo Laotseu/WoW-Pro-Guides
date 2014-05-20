@@ -153,10 +153,10 @@ T The Arcanic Oubliette|QID|30274|M|67.45,32.64|N|To Lorekeeper Vaeldrin.|
 A The Lost Dynasty|QID|30344|M|67.45,32.64|N|From Lorekeeper Vaeldrin.|
 A Squirmy Delight|QID|30350|M|67.36,32.75|N|From Kang Bramblestaff.|
 A Blind Them!|QID|30384|M|67.45,32.70|N|From Lyalia.|
-C Kill and loot skitterers|QID|30350|S|M|62.46,32.89|N|Its a random drop from the skitterers.|
+C Squirmy Delight|QID|30350|S|M|62.46,32.89|N|Its a random drop from the skitterers.|
 C The Lost Dynasty|QID|30344|S|NC|M|68.05,21.47|N|These are stone tablets on the ground.|
-C Kill cranes|QID|30352|S|M|63.94,29.44|
-C Kill and loot tigers|QID|30353|S|M|71.15,24.65|N|The tigers drop 0-3 blood, they are likely to be stealthed.|
+C Crane Mastery|QID|30352|S|M|63.94,29.44|N|Kill cranes.|
+C Profit Mastery|QID|30353|S|M|71.15,24.65|N|The tigers drop 0-3 blood, they are likely to be stealthed.|
 K Sunwalker Scout|T|Sunwalker Scout|QID|30384|QO|Sunwalker Scout slain: 1/1|M|66.55,25.08|N|He paths up and down this path.|
 C Profit Mastery|QID|30353|US|M|71.15,24.65|
 C Crane Mastery|QID|30352|US|M|63.94,29.44|
@@ -255,12 +255,13 @@ T Wisdom Has A Price|QID|30671|M|46.01,78.96|N|To Wise Ana Wu.|
 A Balance|QID|30672|M|46.01,78.96|N|From Wise Ana Wu.|
 
 ;R Unga Ingoo|QID|30674|M|45.31,85.17|N|Keep jumping on your raft.|
-A Banana Infused Rum|QID|31411|M|53.2,88.7|N|East of Unga Ingoo (at the top of the hill) there may be a barrel that contains the Recipe: Banana Infused Rum. Beware of Spriggen!|
-A Equipment Locker|QID|31410|M|42.29,91.98|N|West of Unga Ingoo is a pirate ship, that may contain an Equipment Locker (in the lowest level hold) with a pair of spec specific ilvl 419 boots.|
-K Unga Fish Getter|QID|30675|L|80827|M|45.31,85.17|N|Be sure and loot these at least until you get the item to start the quest.|
+A Banana Infused Rum|QID|31411|O|M|53.2,88.7|N|East of Unga Ingoo (at the top of the hill) there may be a barrel that contains the Recipe: Banana Infused Rum. Beware of Spriggen!|
+A Equipment Locker|QID|31410|O|M|42.29,91.98|N|West of Unga Ingoo is a pirate ship, that may contain an Equipment Locker (in the lowest level hold) with a pair of spec specific ilvl 419 boots.|
+;K Unga Fish Getter|QID|30675|L|80827|M|45.31,85.17|N|Be sure and loot these at least until you get the item to start the quest.|
 C Balance|QID|30672|S|M|50.85,84.15|
-A Buried Hozen Treasure|QID|30675|U|80827|M|43.81,85.41|N|From Confusing Treasure Map - looted off of an Unga.|
+A Buried Hozen Treasure|QID|30675|S|U|80827|M|43.81,85.41|N|From Confusing Treasure Map - looted off of an Unga. Kill them until you get it.|
 A Balance Without Violence|QID|30674|M|45.31,85.17|N|From UI Alert.|
+A Buried Hozen Treasure|QID|30675|US|U|80827|M|43.81,85.41|N|From Confusing Treasure Map - looted off of an Unga. Kill them until you get it.|
 C Balance Without Violence|S|QID|30674|M|42.68,82.74|N|There are piles of fish, the sparkly ones are the ones you can click on to throw back into the water.|
 ;T Balance Without Violence|QID|30674|M|42.22,82.87|N|To UI Alert.|
 C Buried Hozen Treasure|QID|30675|S|M|51.10,85.27|N|Click on the piles of sand to search for the treasure.|
@@ -278,9 +279,9 @@ f Cradle of Chi-Ji|M|31.19,63.25|N|At Feather Keeper Li.|
 R Fallsong Village|M|29.66,39.0|QID|30168|N|You can take the raft up the river to avoid combat. (portage around the waterfall).|
 A Thieving Raiders|QID|30168|M|29.67,39.06|N|From Tired Shushen.|
 A Raid Leader Slovan|QID|30169|M|29.67,39.06|N|From Tired Shushen.|
-K Riverbank Flesh-Hunter|QID|30168|S|L|78958 5|M|29.55,45.17|Z|Valley of the Four Winds|N|If you still have the raft, take a shortcut across the water, unfortunantly, you lose the buff when you technically cross into Valley of the Four Winds.|
+C Riverbank Flesh-Hunter|QID|30168|S|L|78958 5|M|34.3,28.8|Z|Valley of the Four Winds|N|If you still have the raft, take a shortcut across the water, unfortunantly, you lose the buff when you technically cross into Valley of the Four Winds.|
 K Raid Leader Slovan|T|Slovan|QID|30169|QO|Slovan slain: 1/1|M|31.87,29.01|Z|Valley of the Four Winds|
-K Riverbank Flesh-Hunter|QID|30168|US|L|78958 5|M|29.55,45.17|Z|Valley of the Four Winds|
+C Riverbank Flesh-Hunter|QID|30168|US|L|78958 5|M|34.3,28.8|Z|Valley of the Four Winds|
 T Thieving Raiders|QID|30168|M|29.67,39.06|N|To Tired Shushen.|
 T Raid Leader Slovan|QID|30169|M|29.67,39.06|N|To Tired Shushen.|
 

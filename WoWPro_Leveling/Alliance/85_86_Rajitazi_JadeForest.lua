@@ -401,8 +401,8 @@ A The Double Hozen Dare|QID|29716|M|46.65,46.15|N|From An Windfur.|
 A The Silkwood Road|QID|29865|M|46.46,45.81|N|From Tzu the Ironbelly.|
 A The Threads that Stick|QID|29866|M|46.63,45.31|N|From Lo Wanderbrew.|
 
-C The Threads that Stick|QID|29866|S|M|43.68,48.32|
-C The Silkwood Road|QID|29865|NC|S|M|43.26,49.23|N|Loot the eggs to get Pristine Silk Strand|
+C The Threads that Stick|QID|29866|NC|S|M|43.68,48.32|
+C The Silkwood Road|QID|29865|S|M|43.26,49.23|N|Loot the eggs to get Pristine Silk Strand|
 
 A Down Kitty!|QID|29717|M|39.82,48.05|N|Little An followed you to Forest Heart and has a new quest for you, once you get there.|
 C Down Kitty!|QID|29717|S|M|37.11,47.72|
@@ -414,8 +414,8 @@ C Down Kitty!|QID|29717|US|M|37.11,47.72|
 
 T Down Kitty!|QID|29717|S|N|To An Windfur.|
 
-C The Silkwood Road|QID|29865|NC|US|M|43.26,49.23|N|Loot the eggs to get Pristine Silk Strand|
-C The Threads that Stick|QID|29866|US|M|43.68,48.32|
+C The Silkwood Road|QID|29865|US|M|43.26,49.23|N|Loot the eggs to get Pristine Silk Strand|
+C The Threads that Stick|QID|29866|NC|US|M|43.68,48.32|
 
 T The Silkwood Road|QID|29865|M|46.46,45.81|N|To Tzu the Ironbelly.|
 T The Threads that Stick|QID|29866|M|46.63,45.31|N|To Lo Wanderbrew.|
@@ -504,7 +504,7 @@ T The Wayward Dead|QID|29752|M|44.21,15.01|N|To Pei-Zhi.|
 A Back to Nature|QID|29753|M|44.21,15.01|N|From Pei-Zhi.|
 A A Humble Offering|QID|29756|M|44.21,15.01|N|From Pei-Zhi.|
 C Back to Nature|QID|29753|S|U|74808|M|39.88,10.43|
-C A Humble Offering|QID|29756|M|39.71,10.98|
+C A Humble Offering|QID|29756|NC|M|39.71,10.98|
 C Back to Nature|QID|29753|US|U|74808|M|39.88,10.43|
 R Owen's Wishing Well|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|
 T Back to Nature|QID|29753|M|44.26,15.04|N|To Pei-Zhi.|
@@ -595,7 +595,7 @@ R The First Monks|M|38.1,35.7;39.6,33.6;35.74, 30.46|CS|ACH|6858;3|N|Exploration
 
 R Xin Wo Yin the Broken Hearted|M|37.30, 30.12|ACH|7230;2|N|Exploration>Legend of the Brewfathers.|
 
-F Paw'don Village|QID|29576|M|43.52,24.55|N|At Studious Chu.(or you can just ride straight to Nectarbreeze...or...if your hearthstone is set there, hearth to Paw'don)|
+F Paw'Don Village|QID|29576|M|43.52,24.55|N|At Studious Chu.(or you can just ride straight to Nectarbreeze...or...if your hearthstone is set there, hearth to Paw'don)|
 R Nectarbreeze Orchard|QID|29576|M|43.54,75.91|CC|
 T An Air of Worry |QID|29576|N|To Shao the Defiant|M|43.5,75.9|
 A Defiance|QID|29578|M|43.54,75.91|N|From Shao the Defiant.|

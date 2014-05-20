@@ -159,9 +159,9 @@ C Restoring the Light|N|Right-click the Altar here to complete the quest.|QID|10
 C Thin the Flock|N|Kill mobs until you finish this quest.|QID|10869|US|
 C The Outcast's Plight|N|Kill Arakkoa to get their feathers.|QID|10917|US|
 
-H Shattrah City|QID|10021|N|Hearth to Aldor Rise.|M|28.09,48.88|Z|Shattrath City|REP|Aldor;932|
+H Shattrath City|QID|10021|N|Hearth to Aldor Rise.|M|28.09,48.88|Z|Shattrath City|REP|Aldor;932|
 r Sell junk, Repair, restock|QID|10021|M|28.11,47.65|Z|Shattrath City|REP|Aldor;932|
-H Shattrah City|QID|10021|N|Hearth to Scryer's Tier.|M|56.35,81.55|Z|Shattrath City|REP|Scryers;934|
+H Shattrath City|QID|10021|N|Hearth to Scryer's Tier.|M|56.35,81.55|Z|Shattrath City|REP|Scryers;934|
 r Sell junk, Repair, restock, train skills|QID|10847|M|54.6,82.4|Z|Shattrath City|REP|Scryers;934|
 T Restoring the Light |QID|10021|Z|Shattrath City|M|24.0,29.7|N|To Ishanah.|REP|Aldor;932|
 T The Eyes of Skettis |QID|10847|Z|Shattrath City|M|52.6,21.0|N|To Rilak the Redeemed.|
@@ -220,9 +220,9 @@ T Cabal Orders |QID|10880|M|37.4,51.2|N|To Mekeda.|
 A The Shadow Tomb |QID|10881|M|37.4,51.2|N|From Mekeda.|
 A Recover the Bones |QID|10030|N|From Soolaveen.|M|37.06,49.62|
 
-H Shattrah City|QID|10112|N|Hearth to Shattrath City.|M|28.09,48.88|Z|Shattrath City|REP|Aldor;932|
+H Shattrath City|QID|10112|N|Hearth to Shattrath City.|M|28.09,48.88|Z|Shattrath City|REP|Aldor;932|
 r Sell junk, Repair, restock|QID|10112|M|28.11,47.65|Z|Shattrath City|REP|Aldor;932|
-H Shattrah City|QID|10112|N|Hearth to Shattrath City.|M|56.35,81.55|Z|Shattrath City|REP|Scryers;934|
+H Shattrath City|QID|10112|N|Hearth to Shattrath City.|M|56.35,81.55|Z|Shattrath City|REP|Scryers;934|
 r Sell junk, Repair, restock, train skills|QID|10112|M|54.6,82.4|Z|Shattrath City|REP|Scryers;934|
 A Marks of Kil'jaeden|QID|10325|M|30.7,34.6|N|From Adyen the Lightwarden.|Z|Shattrath City|REP|Aldor;932|
 T Marks of Kil'jaeden|QID|10325|M|30.7,34.6|N|To Adyen the Lightwarden.|Z|Shattrath City|REP|Aldor;932|
@@ -241,7 +241,7 @@ T Unruly Neighbors|QID|9998|M|69.7,44.2|N|To Theloria Shadecloak.|
 A The Firewing Liaison|QID|10002|M|69.7,44.2|N|From Theloria Shadecloak.|
 A Thinning the Ranks|QID|10007|M|69.7,44.2|N|From Theloria Shadecloak.|
 C Thinning the Ranks |N|Kiill the mobs needed for this quest.|QID|10007|S|
-C The Firewing Liaison|N|Kill Lisaile Fireweaver.|QID|10002|M|67.00,53.00|
+K The Firewing Liaison|T|Lisaile Fireweaver|N|Kill Lisaile Fireweaver.|QID|10002|M|67.00,53.00|
 
 A Fel Orc Plans|QID|10012|M|67.90,53.60|N|
 C Thinning the Ranks |N|Kiill the mobs needed for this quest.|QID|10007|US|
@@ -260,9 +260,9 @@ T Investigate Tuurem |QID|9990|M|44.3,26.3|N|To Eartbinder Tavgren.|
 A What Are These Things? |QID|9994|M|44.3,26.3|N|From Earthbinder Tavgren.|
 L Level 65 or 75,000 xp|QID|9994|N|Kill mobs until you are level 65 or get 75,000 xp, whichever takes longer.|M|70.00,40.00|LVL|65|
 
-H Shattrah City|QID|10180|N|Hearth to Shattrath City.|M|28.09,48.88|Z|Shattrath City|REP|Aldor;932|
+H Shattrath City|QID|10180|N|Hearth to Shattrath City.|M|28.09,48.88|Z|Shattrath City|REP|Aldor;932|
 r Sell junk, Repair, restock|QID|10180|M|28.11,47.65|Z|Shattrath City|REP|Aldor;932|
-H Shattrah City|QID|10180|N|Hearth to Shattrath City.|M|56.35,81.55|Z|Shattrath City|REP|Scryers;934|
+H Shattrath City|QID|10180|N|Hearth to Shattrath City.|M|56.35,81.55|Z|Shattrath City|REP|Scryers;934|
 r Sell junk, Repair, restock, train skills|QID|9994|M|54.6,82.4|Z|Shattrath City|REP|Scryers;934|
 A Can't Stay Away|QID|10180|Z|Shattrath City|N|From Oloraak.|M|57.85,15.47|
 F Allerian Stronghold|QID|9994|N|Fly to Allerian Stronghold. |M|63.92,41.56|Z|Shattrath City|
@@ -291,18 +291,18 @@ C A Cure for Zahlia|N|This is your last chance to complete this quest, if you al
 A Letting Earthbinder Tavgren Know|QID|10005|M|57.0,53.5|N|From Jenai Starwhisper.|
 T The Elusive Ironjaw |QID|10022|M|58.3,54.8|N|To Bertelm.|
 T Escape from Firewing Point!|QID|10051|M|57.2,55.7|N|To Captain Auric Sunchaser.|
-N Sell junk, Repair, restock |QID|10896|M|56.51,54.94|
+r Sell junk, Repair, restock |QID|10896|M|56.51,54.94|
 
-C Recover the Bones |N|Loot the bones needed for this quest.|QID|10030|S|M|52.00,58.00|
+C Recover the Bones |N|Loot the bones needed for this quest.|QID|10030|S|NC|M|52.00,58.00|
 C The Infested Protectors|N|Kill treant mobs and then the spawned wood mites until you finish this quest.|QID|10896|M|52.00,58.00|
-K Trachela's Carcass|QID|10035|T|Trachela|N|Kill Trachela and loot the carcass.|M|43.00,51.00|
+K Trachela's Carcass|QID|10035|T|Trachela|L|30618|N|Kill Trachela and loot the carcass.|M|43.00,51.00|
 T The Infested Protectors |QID|10896|M|37.9,51.7|N|To Lakotae.|
 C Veil Rhaze: Unliving Evil |N|Kill the mobs needed for this quest here.|QID|10848|M|28.00,56.00|
-C Torgos!|N|Use Trachela's Carcass here and then kill and loot Torgos.|QID|10035|M|27.00,55.60|U|30618|
+K Torgos!|N|Use Trachela's Carcass here and then kill and loot Torgos.|QID|10035|M|27.00,55.60|U|30618|
 R Shadow Tomb|QID|10887|N|Go to the Shadow Tomb.|M|32.00,53.00|
-l Gavel of K'alen |QID|10881|N|Loot the Gavel from the chest here.|L|31710|M|29.70,51.70|
-l Drape of Arunen |QID|10881|N|Loot the Drape from the chest here.|L|31709|M|32.10,51.20|
-C The Shadow Tomb |QID|10881|N|Loot the scroll from the chest here, then accept the escort quest.|QID|10881|M|31.20,46.70|
+C Gavel of K'alen |QID|10881|NC|N|Loot the Gavel from the chest here.|QO|Gavel of K'alen: 1/1|M|29.70,51.70|
+C Drape of Arunen |QID|10881|NC|N|Loot the Drape from the chest here.|QO|Drape of Arunen: 1/1|M|32.10,51.20|
+C Scroll of Atalor |QID|10881|NC|N|Loot the scroll from the chest here, then accept the escort quest.|QO|Scroll of Atalor: 1/1|M|31.20,46.70|
 A Escaping the Tomb|QID|10887|M|30.60,49.00|N|From Akuno.|
 C Escaping the Tomb|N|Do this escort quest.|QID|10887|M|33.92,51.47|
 T Veil Rhaze: Unliving Evil |QID|10848|M|37.4,51.5|N|To Kirrik the Awakened.|
@@ -318,7 +318,7 @@ A Digging Through Bones |QID|10922|M|31.0,76.1|N|From Chief Archaelogist Letoll.
 C Digging Through Bones |N|Do this escort quest.|QID|10922|M|31.0,76.1|
 T Digging Through Bones |QID|10922|M|31.0,76.1|N|To Dwarfowitz.|
 A Fumping |QID|10929|N|From Dwarfowitz.|
-C Recover the Bones |N|Loot the rest of the bones needed for this quest.|QID|10030|US|M|52.00,58.00|
+C Recover the Bones |N|Loot the rest of the bones needed for this quest.|QID|10030|US|NC|M|52.00,58.00|
 
 R Auchindoun |QID|10227|N|Enter Auchindoun from this location on the inside of the ring. |M|37.38,65.62|
 A I See Dead Draenei|QID|10227|M|37.4,65.6;35.1,65.1|CS|N|Fly down then enter the Auchenai Crypts "lobby". From Ha'lei.|
@@ -328,9 +328,9 @@ T Recover the Bones |QID|10030|N|To Ramdor the Mad.|
 A Helping the Lost Find Their Way|QID|10031|N|From Ramdor the Mad.|
 T Can't Stay Away |QID|10180|M|41.7,65.5;44.0,65.0|CS|N|To Isfar in the Sethekk Halls "lobby"|
 
-H Shattrah City |QID|10020|N|Hearth to Shattrath City.|M|28.09,48.88|Z|Shattrath City|REP|Aldor;932|
+H Shattrath City |QID|10020|N|Hearth to Shattrath City.|M|28.09,48.88|Z|Shattrath City|REP|Aldor;932|
 r Sell junk, Repair, restock|QID|10020|M|28.11,47.65|Z|Shattrath City|REP|Aldor;932|
-H Shattrah City |QID|10020|N|Hearth to Shattrath City.|M|56.35,81.55|Z|Shattrath City|REP|Scryers;934|
+H Shattrath City |QID|10020|N|Hearth to Shattrath City.|M|56.35,81.55|Z|Shattrath City|REP|Scryers;934|
 r Sell junk, Repair, restock, train skills|QID|10412|M|54.6,82.4|Z|Shattrath City|REP|Scryers;934|
 
 A Firewing Signets|QID|10412|Z|Shattrath City|M|45.35,81.23|N|From Magistriz Fyalenn.|REP|Scryers;934|
@@ -359,20 +359,20 @@ C Helping the Lost Find Their Way |N|Kill the rest of the mobs for this quest.|Q
 N The Big Bone Worm|N|For those used to the old way, Blizz has changed it to where, Hai'shulud will follow you into the tunnels.|
 C The Big Bone Worm |N|Kill a Decrepit Clefthoof and then use the Fumper on it. Keep trying the fumper until Hai'shulud spawns, then kill and loot it.|QID|10930|M|44.00,73.00|U|31825|
 A For the Fallen |QID|10920|N|From Vindicator Haylen.|M|49.71,76.18|
-C Taken in the Night|N|Free Netherweb Victims until you finish this quest.|QID|10873|M|52.00,77.00|S|
+C Taken in the Night|N|Free Netherweb Victims until you finish this quest.|QID|10873|NC|M|52.00,77.00|S|
 C For the Fallen|N|Kill spiders until you finish this quest.|QID|10920|M|52.00,77.00|
 T For the Fallen|QID|10920|N|To Vindicator Haylen.|M|49.6,76.2|
 A Terokkarantula|QID|10921|N|From Vindicator Haylen.|M|49.6,76.2|
 K Terokkarantula|N|kill Terokkarantula|QID|10921|T|Terokkarantula|M|54.2,81.69|
-C Taken in the Night|N|Free Netherweb Victims until you finish this quest.|QID|10873|M|52.00,77.00|US|
+C Taken in the Night|N|Free Netherweb Victims until you finish this quest.|QID|10873|NC|M|52.00,77.00|US|
 T Terokkarantula|QID|10921|N|To Vindicator Haylen.|M|49.6,76.2|
 A Return to Sha'tari Base Camp |QID|10926|N|From Vindicator Haylen.|M|49.6,76.2|
 A Skywing|QID|10898|M|54.00,72.00|N|From Skywing.|
 C Skywing|N|Follow the bird, he is quick and likes to attack everything. The mobs in the treehouse use knockback, so do not go near the edge. Turn off the fires when you get near them for the other quest.|QID|10898|S|
-N Bloodstone Signel Fire|QID|10874|M|56.12,72.49|QO|Bloodstone Fire Extinguished: 1/1|N|Keep following Skywing, click on the Bloodstone Signel Fire to extinguish it.|
-N Violet Signel Fire|QID|10874|M|56.63,69.19|QO|Violet Fire Extinguished: 1/1|N|Keep following Skywing, click on the Violet Signel Fire to extinguish it.|
-N Emerald Signel Fire|QID|10874|M|55.47,69.8|QO|Emerald Fire Extinguished: 1/1|N|Keep following Skywing, click on the Emerald Signel Fire to extinguish it.|
-C Veil Shalas: Signal Fires |N|After getting all of the signal fires except sapphire, mount and fly to the next treehouse where the Sapphire Signal Fire is, then extinguish it.|QID|10874|M|55.2,67.1|
+C Bloodstone Signel Fire|QID|10874|NC|M|56.12,72.49|QO|Bloodstone Fire Extinguished: 1/1|N|Keep following Skywing, click on the Bloodstone Signel Fire to extinguish it.|
+C Violet Signel Fire|QID|10874|NC|M|56.63,69.19|QO|Violet Fire Extinguished: 1/1|N|Keep following Skywing, click on the Violet Signel Fire to extinguish it.|
+C Emerald Signel Fire|QID|10874|NC|M|55.47,69.8|QO|Emerald Fire Extinguished: 1/1|N|Keep following Skywing, click on the Emerald Signel Fire to extinguish it.|
+C Sapphire Signel Fire |QID|10874|NC|M|55.2,67.1|QO|Sapphire Fire Extinguished: 1/1|N|After getting all of the signal fires except sapphire, mount and fly to the next treehouse where the Sapphire Signal Fire is, then extinguish it.|
 C Skywing|N|Follow the bird, he is quick and likes to attack everything. The mobs in the treehouse use knockback, so do not go near the edge. Turn off the fires when you get near them for the other quest.|QID|10898|US|
 T Torgos!|QID|10035|N|To Taela Everstride.|M|58.1,53.42|
 
@@ -386,14 +386,14 @@ A The Fallen Exarch |QID|10915|M|31.0,76.1|N|From Commander Ra'vaj.|
 T The Big Bone Worm |QID|10930|N|To Dwarfowitz.|
 T The Dread Relic |QID|10877|N|To Oakun.|
 C The Fallen Exarch |N|Go here from the west gate and use the coffin at this location, then kill the mob that spawns. | |QID|10915|M|36.00,65.50|
-A Evil Draws Near|QID|10923|M|31.1,76.5|N|From Oakun. This quest is optional, do it if you wish, or skip if you don't.|
-l Evil Draws Near|QID|10923|M|48.9,66.47|N|Kill Auchenai Death-Speakers and Auchenai Doomsayers to collect 20 Doom Skulls.|L|31812 20|O|
-C Evil Draws Near|QID|10923|M|48.65,67.16|N|Use the Dread Relic and the glowing purple spot and kill Teribus. He flies down from the west.|U|31811|O|
-T Evil Draws Near|QID|10923|M|31.1,76.5|N|To Oakun.|O|
+A Evil Draws Near|QID|10923|M|31.1,76.5|N|From Oakun. This quest is optional, do it if you wish, or skip if you don't.|O|
+l Evil Draws Near|QID|10923|M|48.9,66.47|N|Kill Auchenai Death-Speakers and Auchenai Doomsayers to collect 20 Doom Skulls.|L|31812 20|
+C Evil Draws Near|QID|10923|M|48.65,67.16|N|Use the Dread Relic and the glowing purple spot and kill Teribus. He flies down from the west.|U|31811|
+T Evil Draws Near|QID|10923|M|31.1,76.5|N|To Oakun.|
 T The Fallen Exarch|QID|10915|M|31.0,76.1|N|To Commander Ra'vaj.|
 
-H Shattrah City|QID|10889|N|Hearth to Shattrath City.|M|28.09,48.88|Z|Shattrath City|REP|Aldor;932|
-H Shattrah City|QID|10889|N|Hearth to Shattrath City.|M|56.35,81.55|Z|Shattrath City|REP|Scryers;934|
+H Shattrath City|QID|10889|N|Hearth to Shattrath City.|M|28.09,48.88|Z|Shattrath City|REP|Aldor;932|
+H Shattrath City|QID|10889|N|Hearth to Shattrath City.|M|56.35,81.55|Z|Shattrath City|REP|Scryers;934|
 T Return to Shattrath|QID|10889|M|52.6,21.0|Z|Shattrath City|N|To Rilak the Redeemed.|
 T Skywing|QID|10898|M|52.6,21.0|Z|Shattrath City|N|To Rilak the Redeemed.|
 A The Skettis Offensive|QID|10879|Z|Shattrath City|M|51.76,20.78|N|From Defender Grashna.|
