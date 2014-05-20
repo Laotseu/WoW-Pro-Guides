@@ -398,21 +398,23 @@ function WoWPro:DistanceBetweenSteps(i,j)
     local jm
     local ifl
     local jfl 
-    if WoWPro.zone[i]:match("/") then
-        local nzone , floor = string.split("/",WoWPro.zone[i])
+    local izone = WoWPro.zone[i] or WoWPro.Guides[GID].zone or ""
+    if izone:match("/") then
+        local nzone , floor = string.split("/",izone)
         im = WoWPro.Zone2MapID[nzone].mapID
         ifl = tonumber(floor)
     else
-        im = WoWPro.Zone2MapID[WoWPro.zone[i]].mapID
-        ifl = WoWPro.Zone2MapID[WoWPro.zone[i]].floor or 0
+        im = WoWPro.Zone2MapID[izone].mapID
+        ifl = WoWPro.Zone2MapID[izone].floor or 0
     end
-    if WoWPro.zone[j]:match("/") then
-        local nzone , floor = string.split("/",WoWPro.zone[j])
+    local jzone = WoWPro.zone[j] or WoWPro.Guides[GID].zone or ""
+    if jzone:match("/") then
+        local nzone , floor = string.split("/",jzone)
         jm = WoWPro.Zone2MapID[nzone].mapID
         jfl = tonumber(floor)
     else
-        jm = WoWPro.Zone2MapID[WoWPro.zone[j]].mapID
-        jfl = WoWPro.Zone2MapID[WoWPro.zone[j]].floor or 0
+        jm = WoWPro.Zone2MapID[jzone].mapID
+        jfl = WoWPro.Zone2MapID[jzone].floor or 0
     end
 
 --    WoWPro:Print("Distance between (%2.2f,%2.2f,%d) and (%2.2f,%2.2f,%d)",ix*100,iy*100,im, jx*100,jy*100,jm)
@@ -430,13 +432,14 @@ function WoWPro:DistanceToStep(i)
     local iy = tonumber(icoord:match(",([^|]*)"))/100
     local im
     local ifl
-    if WoWPro.zone[i]:match("/") then
-        local nzone , floor = string.split("/",WoWPro.zone[i])
+    local izone = WoWPro.zone[i] or WoWPro.Guides[GID].zone or ""
+    if izone:match("/") then
+        local nzone , floor = string.split("/",izone)
         im = WoWPro.Zone2MapID[nzone].mapID
         ifl = tonumber(floor)
     else
-        im = WoWPro.Zone2MapID[WoWPro.zone[i]].mapID
-        ifl = WoWPro.Zone2MapID[WoWPro.zone[i]].floor or 0
+        im = WoWPro.Zone2MapID[izone].mapID
+        ifl = WoWPro.Zone2MapID[izone].floor or 0
     end
 --    WoWPro:Print("Zone %s mapped to %d",WoWPro.zone[i],im)
     local x, y = GetPlayerMapPosition("player");
