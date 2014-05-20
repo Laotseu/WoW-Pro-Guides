@@ -208,6 +208,7 @@ end
 
 -- Event Response Logic --
 function WoWPro.WorldEvents:EventHandler(self, event, ...)
+	if true then return end
 	WoWPro:dbp("Running: WorldEvents Event Handler "..event)
 		
     -- Lets see what quests the NPC has:
