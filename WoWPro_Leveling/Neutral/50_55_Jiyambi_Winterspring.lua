@@ -99,7 +99,7 @@ C Winterfall Runners|QID|28469|M|25.01,55.44|N|The runners patrol the road to th
 T Winterfall Runners|QID|28469|M|25.12,58.53|N|To Donova Snowden.|
 A High Chief Winterfall|QID|28470|M|25.12,58.53|N|From Donova Snowden.|
 A Scalding Signs|QID|28530|M|25.12,58.53|N|From Donova Snowden.|
-C High Chief Winterfall|QID|28470|M|36.91,55.61|N|Kill and loot the chief in the camp to the east.|
+K High Chief Winterfall|QID|28470|T|High Chief Winterfall|M|36.91,55.61|N|Kill and loot the chief in the camp to the east.|
 
 A The Final Piece|QID|28471|U|12842|M|36.91,55.61|N|Use the Crudely Written Log you looted from the chief.|
 C Scalding Signs|QID|28530|M|32.99,48.65|N|At the hot spring to the north. Kill and loot Scalding Springsurges and Boiling Springbubbles.|
@@ -119,7 +119,7 @@ T Pride of the Highborne|QID|28513|M|50.74,54.85|N|To the Kaldorei Spirit.|
 A Descendants of the Highborne|QID|28534|M|50.74,54.85|N|From the Kaldorei Spirit.|
 T Descendants of the Highborne|QID|28534|M|50.81,54.94|N|To the Quel'dorei Spirit.|
 A Legacy of the High Elves|QID|28518|M|50.81,54.94|N|From the Quel'dorei Spirit.|
-C Legacy of the High Elves|QID|28518|M|53.96,57.83|N|Kill and loot Archmage Maenius in the ruins to the south.|
+K Legacy of the High Elves|QID|28518|T|Archmage Maenius|M|53.96,57.83|N|Kill and loot Archmage Maenius in the ruins to the south.|
 T Legacy of the High Elves|QID|28518|M|50.82,55.03|N|To the Quel'dorei Spirit.|
 A Descendants of the High Elves|QID|28535|M|50.82,55.03|N|From the Quel'dorei Spirit.|
 T Descendants of the High Elves|QID|28535|M|50.68,55.10|N|To the Sin'dorei Spirit.|
@@ -213,11 +213,11 @@ C A Little Gamy|QID|28719|M|52.65,41.37|N|Kill bears further to the south.|S|
 C Screechy Keen|QID|28745|N|Kill owls on the mountain to the south-west.|
 T Screechy Keen|QID|28745|N|(UI Alert)|
 A A Bird of Legend|QID|28782|PRE|28745|N|(UI Alert)|
-C A Bird of Legend|QID|28782|N|At the very top of the hill.|
+K Hell-Hoot|QID|28782|T|Hell-Hoot|N|At the very top of the hill.|
 C A Little Gamy|QID|28719|M|52.65,41.37|N|Kill bears further to the south.|US|
 T A Little Gamy|QID|28719|N|(UI Alert)|
 A Ursius|QID|28639|PRE|28719|N|(UI Alert)|
-C Ursius|QID|28639|M|59.51,40.77|N|In a cave to the east.|
+K Ursius|QID|28639|T|Ursius|M|59.51,40.77|N|In a cave to the east.|
 C Fresh Frostsabers|QID|28640|M|51.83,24.72|N|Kill Frostsabers and Frostsaber Stalkers to the north.|
 T Fresh Frostsabers|QID|28640|N|(UI Alert)|
 A Pride of the Dinner Table|QID|28641|PRE|28640|N|(UI Alert)|
@@ -225,7 +225,7 @@ C Pride of the Dinner Table|QID|28641|M|45.91,24.37|N|Kill Frostsaber Huntresses
 T Pride of the Dinner Table|QID|28641|N|(UI Alert)|
 
 A Shy-Rotam|QID|28742|PRE|28641|N|(UI Alert)|
-C Shy-Rotam|QID|28742|M|46.25,17.86|N|At Frostsaber Rock to the north.|
+K Shy-Rotam|QID|28742|T|Shy-Rotam|M|46.25,17.86|N|At Frostsaber Rock to the north.|
 C You Gotta Have Eggs|QID|28828|NC|M|58.68,19.64|N|In the hills to the east. The chimeras will attack if they see you taking their eggs.|
 T A Bird of Legend|QID|28782|M|55.90,28.32|N|To Jeb Guthrie, back at the Goodgrub Smoking Pit.|
 T Ursius|QID|28639|M|55.96,28.13|N|To Francis Morcott.|
@@ -235,7 +235,7 @@ R Winterfall Village|QID|28614|M|65.31,46.14|N|East of Everlook.|
 A Bearzerker|QID|28614|M|65.31,46.14|N|From Burndl.|
 A Turning the Earth|QID|28615|M|65.31,46.14|N|From Tanrir.|
 C Turning the Earth|QID|28615|U|64637|M|67.37,50.25|N|Use the totem on Winterfall totems in the village.|
-C Bearzerker|QID|28614|M|69.48,50.50|N|Kill Grolnar the Berserk in the cave at the top of Winterfall Village.|
+K Grolnar the Berserk|QID|28614|T|Grolnar the Berserk|M|69.48,50.50|N|Kill Grolnar the Berserk in the cave at the top of Winterfall Village.|
 T Turning the Earth|QID|28615|M|65.36,46.15|N|To Tanrir.|
 T Bearzerker|QID|28614|M|65.33,46.15|N|To Burndl.|
 
@@ -260,7 +260,7 @@ T Razor Beak and Antlers Pointy|QID|28829|M|61.92,74.70|N|To Jadrag the Slicer.|
 
 A Chips off the Old Block|QID|28830|PRE|28829|M|61.92,74.70|N|From Jadrag the Slicer.|
 A Damn You, Frostilicus|QID|28831|PRE|28829|M|61.92,74.70|N|From Jadrag the Slicer.|
-C Chips off the Old Block|QID|28830|M|59.44,80.51|N|Kill frost giants.|
+K Frostilicus|QID|28830|T|Frostilicus|M|59.44,80.51|N|Kill frost giants.|
 C Winterwater|QID|28840|S|M|62.47,86.04|N|Kill and loot ice avatars at the bottom of Frostwhisper Gorge.|
 C Damn You, Frostilicus|QID|28831|M|63.14,86.09|N|Frostilicus is at the bottom of Frostwhisper Gorge, on the east side. The ramp down is on the wast side.|
 C Winterwater|QID|28840|US|M|62.47,86.04|N|Kill and loot ice avatars at the bottom of Frostwhisper Gorge.|
@@ -271,7 +271,7 @@ A The Arcane Storm Within|QID|28841|PRE|28840|M|58.04,63.78|N|From Haleh.|
 A Umbranse's Deliverance|QID|28842|PRE|28840|M|58.04,63.78|N|From Haleh.|
 N Warning to epileptics|QID|28841|N|And those with sensitive eyes to flashing lights. Inside Mazthoril cave the portals are flashing red, pink, white and blue lights.|
 C The Arcane Storm Within|QID|28841|S|U|66060|M|49.52,70.39|N|In Mazthoril, kill the guardians for each portal, then use the totem to close it.|
-C Umbranse's Deliverance|QID|28842|M|49.52,70.39|N|Kill Umbranse at the bottom of the cave.|U|66060|
+K Umbranse the Spiritspeaker|QID|28842|T|Umbranse the Spiritspeaker|M|49.52,70.39|N|Kill Umbranse at the bottom of the cave.|U|66060|
 C The Arcane Storm Within|QID|28841|US|U|66060|M|49.52,70.39|N|In Mazthoril, kill the guardians for each portal, then use the totem to close it.|
 T The Arcane Storm Within|QID|28841|U|66061|M|57.99,63.82|N|Use the sigil to return to Haleh.|
 T Umbranse's Deliverance|QID|28842|M|57.99,63.82|N|To Haleh. Congrats on a very nice piece of gear!|

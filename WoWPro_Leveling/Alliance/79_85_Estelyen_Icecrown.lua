@@ -74,13 +74,14 @@ WoWPro:GuideNextGuide(guide, "Arihyj8082")
 WoWPro:GuideSteps(guide, function()
 return [[
 N How to use this Guide|QID|13418|N|This guide includes many 5-Man Quests. It is unlikely that you will find a random group for those since the release of Cataclysm, but you can easily solo most of them once your character wears Cataclysm-Gear. If you already have a full equipment from any of the Cataclysm zones, you can try to do them solo, if you don't, just skip those Quests.|
-A Preparations for War|QID|13418|N|From Officer Van Rossem on Krasus Landing in Dalaran.|Z|Dalaran|M|68.80,46.60|
-T Preparations for War|QID|13418|N|Talk to Officer Van Rossem again to fly to the Skybreaker. Turn the quest in to High Captain Justin Bartlett inside the back/rear/stern/aft part of the ship, just walk straight in from the main deck.|Z|Dalaran|
+A Preparations for War|QID|13418|N|From Officer Van Rossem on Krasus Landing in Dalaran.|Z|Dalaran|M|67.7,47.2|
+T Preparations for War|QID|13418|N|Talk to Officer Van Rossem again to fly to the Skybreaker. Turn the quest in to High Captain Justin Bartlett inside the back/rear/stern/aft part of the ship, just walk straight in from the main deck.|Z|Dalaran|M|67.7,47.2|
 A Judgment Day Comes!|QID|13226|N|From Absalan the Pious. He patrols around on the Deck of the Skybreaker.|
 T Judgment Day Comes!|QID|13226|N|To Highlord Tirion Fordring at the Argent Vanguard.|M|87.40,75.80|
 A Honor Above All Else|QID|13036|N|From Highlord Tirion Fordring.|
 T Honor Above All Else|QID|13036|N|To Crusade Commander Entari.|M|87.00,75.80|
 A Scourge Tactics|QID|13008|N|From Crusade Commander Entari.|
+f The Argent Vanguard|M|87.8,78.1|N|From Aedan Moran|
 A Curing The Incurable|QID|13040|N|From Father Gustav.|M|86.80,76.60|
 A Defending The Vanguard|QID|13039|N|From Crusader Lord Dalfors.|M|86.00,75.80|
 C Defending The Vanguard|QID|13039|N|Kill Nerubians.|S|
@@ -118,7 +119,7 @@ C The Restless Dead|QID|13110|U|43153|N|Kill Reanimated Crusaders in Scourgeholm
 C The Purging Of Scourgeholme|QID|13118|N|Kill the mobs you still need for this quest. The High Priests are inside the ziggurats.|M|79.40,65.20|US|
 C The Scourgestone|QID|13122|N|Kill scourge and collect Scourgestones off them.|US|M|79.40,65.20|
 C It Could Kill Us All|QID|13135|N|Kill mobs in the area and collect their Crystallized Energy.|S|
-C The Stone That Started A Revolution|QID|13130|N|Travel to the Unbound Thicket in Crystalsong Forest and collect Masonry and Heartwood lying around.|Z|Crystalsong Forest|M|74.40,63.40|
+C The Stone That Started A Revolution|QID|13130|NC|N|Travel to the Unbound Thicket in Crystalsong Forest and collect Masonry and Heartwood lying around.|Z|Crystalsong Forest|M|74.40,63.40|
 C It Could Kill Us All|QID|13135|N|Kill mobs in the area and collect their Crystallized Energy.|US|
 T It Could Kill Us All|QID|13135|N|To Crusade Engineer Spitzpatrick.|M|83.00,73.00|
 T The Stone That Started A Revolution|QID|13130|N|To Crusade Architect Silas.|
@@ -127,9 +128,9 @@ T The Purging Of Scourgeholme|QID|13118|N|To The Ebon Watcher.|M|83.00,72.80|
 T The Scourgestone|QID|13122|N|To The Ebon Watcher.|
 
 A The Air Stands Still|QID|13125|N|From The Ebon Watcher.|
-K Salranax the Flesh Render |QID|13125|QO|Salranax the Flesh Render slain: 1/1|U|43206|N|Use the Horn to call for aid should you need it.|M|77.32,61.90|
-K High Priest Yath'amon |QID|13125|QO|High Priest Yath'amon slain: 1/1|U|43206|N|Use the Horn to call for aid should you need it.|M|80.18,61.22|
-C The Air Stands Still|QID|13125|U|43206|N|Use the Horn to call for aid should you need it.|M|76.40,53.35|
+K Salranax the Flesh Render |QID|13125|T|Salranax the Flesh Render|QO|Salranax the Flesh Render slain: 1/1|U|43206|N|Use the Horn to call for aid should you need it.|M|77.32,61.90|
+K High Priest Yath'amon |QID|13125|T|High Priest Yath'amon|QO|High Priest Yath'amon slain: 1/1|U|43206|N|Use the Horn to call for aid should you need it.|M|80.18,61.22|
+K Underking Talonox|QID|13125|T|Underking Talonox|U|43206|N|Use the Horn to call for aid should you need it.|M|76.40,53.35|
 T The Air Stands Still|QID|13125|N|To The Ebon Watcher. If you called for aid, you can click on the portal he came out of to quickly get back to the Ebon Watcher.|M|83.00,72.80|
 A Into The Frozen Heart Of Northrend|QID|13139|N|From Father Gustav.|M|82.80,72.80|
 T Into The Frozen Heart Of Northrend|QID|13139|U|43290|N|Read the Report if you like patting yourself on the Shoulder, then deliver it to Highlord Tirion Fordring.|M|86.00,75.80|
@@ -139,15 +140,16 @@ T The Battle For Crusaders' Pinnacle|QID|13141|N|To Father Gustav.|M|82.80,72.80
 A The Crusaders' Pinnacle|QID|13157|N|From Father Gustav.|
 T The Crusaders' Pinnacle|QID|13157|N|To Highlord Tirion Fordring.|M|79.80,71.80|
 A A Tale of Valor|QID|13068|N|From Highlord Tirion Fordring.|
+f Crusaders' Pinnacle|M|79.4,72.3|N|From Penumbrius|
 T A Tale of Valor|QID|13068|N|To Crusader Bridenbrad, he's lying near a campfire far to the north.|M|79.80,30.80|
 A A Hero Remains|QID|13072|N|From Crusader Bridenbrad.|
 T A Hero Remains|QID|13072|N|To Highlord Tirion Fordring.|M|79.80,71.80|
 
 A The Keeper's Favor|QID|13073|N|From Highlord Tirion Fordring.|
-R Moonglade|QID|13073|N|Talk to Arch Druid Lilliandra. Ask her for a portal to Moonglade. Click on the portal, you can not be mounted.|M|87.05,77.02|
+R Moonglade|QID|13073|CHAT|N|Talk to Arch Druid Lilliandra. Ask her for a portal to Moonglade. Click on the portal, you can not be mounted.|M|87.05,77.02|
 T The Keeper's Favor|QID|13073|N|To Keeper Remulos.|Z|Moonglade|M|36.20,41.80|
 A Hope Within the Emerald Nightmare|QID|13074|N|From Keeper Remulos.|Z|Moonglade|
-C Hope Within the Emerald Nightmare|QID|13074|N|Collect Emerald Acorns in the area.|Z|Moonglade|
+C Hope Within the Emerald Nightmare|QID|13074|NC|N|Collect Emerald Acorns in the area.|Z|Moonglade|
 T Hope Within the Emerald Nightmare|QID|13074|N|Click the buff off to return to the waking world, then turn the quest in to Keeper Remulos.|Z|Moonglade|M|36.20,41.80|
 A The Boon of Remulos|QID|13075|N|From Keeper Remulos.|Z|Moonglade|
 T The Boon of Remulos|QID|13075|N|There's a portal right next to Remulos. Return to Crusader Bridenbrad.|M|79.80,30.80|
@@ -178,12 +180,12 @@ T Joining the Assault|QID|13341|N|To Ground Commander Koup. This quest is just i
 
 A Mind Tricks|QID|13308|N|Enter the Saronite Mines (the big cave in Ymirheim) and fight your way towards Darkspeaker R'khem.|M|54.60,59.20|
 N First Elite Quest|QID|13308|N|This is your first Elite-Quest, but it's intended for 3 players instead of 5. If you're having trouble soloing him with your Cataclysm-Gear you should think about getting better equipment before attempting the 5-Man Quests later in the guide.|
-C Mind Tricks|QID|13308|N|Kill Foreman Thaldrin and loot the key.|M|55.00,59.20|
+K Foreman Thaldrin|QID|13308|T|Foreman Thaldrin|N|Kill Foreman Thaldrin and loot the key.|M|55.00,59.20|
 T Mind Tricks|QID|13308|N|Back to Darkspeaker R'khem.|M|54.60,59.20|
 T Get to Ymirheim!|QID|13296|N|Leave the cave again and find Frazzle Geargrinder hiding in Ymirheim. This quest is just intended to unlock her daily quest (which this guide doesn't cover).|M|57.00,62.40|
-C The Broken Front|QID|13231|N|Question a Dying Soldier at the Broken Front as to what has happened. You can stay in the air on your flying mount while talking to him to avoid aggro.|M|68.48,62.24|
+C The Broken Front|QID|13231|CHAT|N|Question a Dying Soldier at the Broken Front as to what has happened. You can stay in the air on your flying mount while talking to him to avoid aggro.|M|68.48,62.24|
 A Finish Me!|QID|13232|N|From the Dying Soldiers you just interrogated. You can stay in the air on your flying mount while talking to him to avoid aggro.|M|68.80,64.40|
-C Finish Me!|QID|13232|N|Ease the passing for the Dying Soldiers. You can stay in the air on your flying mount while talking to them to avoid aggro.|M|68.48,62.24|
+C Finish Me!|QID|13232|CHAT|N|Ease the passing for the Dying Soldiers. You can stay in the air on your flying mount while talking to them to avoid aggro.|M|68.48,62.24|
 T Finish Me!|QID|13232|N|Fly up to the Skybreaker. High Captain Justin Bartlett is inside the back/rear/stern/aft part of the ship, just walk straight in from the main deck.|
 T The Broken Front|QID|13231|N|To High Captain Justin Bartlett.|
 A ...All the Help We Can Get.|QID|13286|N|From High Captain Justin Bartlett.|
@@ -199,7 +201,7 @@ N Find 3 Abandoned Armors|QID|13291|L|43616 3|S|
 N Find 3 Abandoned Helms|QID|13291|L|43610 3|N|Fly back to the Broken Front and collect what you need.|M|68.80,64.40|
 N Find 3 Abandoned Armors|QID|13291|L|43616 3|US|
 N Find 3 Pile of Bones|QID|13291|L|43609 3|US|
-C Borrowed Technology|QID|13291|U|44048|N|Now you can use the item. A Frostwyrm will descend and pick up the decoy... His bad. Do this 3 times.|M|68.80,64.40|
+C Borrowed Technology|QID|13291|NC|U|44048|N|Now you can use the item. A Frostwyrm will descend and pick up the decoy... His bad. Do this 3 times.|M|68.80,64.40|
 C Poke and Prod|QID|13287|N|Kill the needed mobs.|US|M|68.80,64.40|
 T Borrowed Technology|QID|13291|N|To Chief Engineer Boltwrench, he is located in the belly of the Skybreaker.|
 T Poke and Prod|QID|13287|N|To Thassarian, he's standing on the left "wing" of the Skybreaker.|
@@ -209,16 +211,16 @@ A Against the Giants|QID|13294|N|From Thassarian. This is another 3-man Quest.|
 C Against the Giants|QID|13294|N|Kill the Pustulent Horrors patrolling on top of the Death Gate and loot their spines.|M|69.00,57.40|
 C That's Abominable!|QID|13288|U|43968|N|Kill one Hulking Abomination at the Broken Front and loot Chilled Abomination Guts. Then use the questitem and send your pet abomination into the masses of undead near the gate to the north to blow them up. Repeat until you complete the quest.|M|69.20,61.10|
 T That's Abominable!|QID|13288|N|To Thassarian, he's standing on the left "wing" of the Skybreaker.|
+A Basic Chemistry|QID|13295|N|Another 5-Man quest. From Thassarian.|
 T Against the Giants|QID|13294|N|To Thassarian.|
 A Sneak Preview|QID|13315|N|From Thassarian.|
 A Coprous the Defiled|QID|13298|N|This is your first 5-Man quest. From Thassarian.|
-A Basic Chemistry|QID|13295|N|Another 5-Man quest. From Thassarian.|
 C Basic Chemistry|QID|13295|U|44010|N|This quest is really hard, even if you have lower level Cataclysm-Gear. You can give it a try, if it's too hard, just abandon it. Enter the building and use the item near the plague cauldrons repeatedly until the quest is complete.|M|63.40,62.10|
-C Coprous the Defiled|QID|13298|N|Kill Coprous the Defiled inside the building.|M|60.80,62.20|
-N Aldur'thar South Visited|QID|13315|QO|Aldur'thar South Visited: 1/1|N|Fly here.|M|55.36,47.17|
-N Aldur'thar Central Visited|QID|13315|QO|Aldur'thar Central Visited: 1/1|N|Fly here.|M|53.90,42.63|
-N Aldur'thar North Visited|QID|13315|QO|Aldur'thar North Visited: 1/1|N|Fly here.|M|53.90,35.08|
-C Sneak Preview|QID|13315|N|Fly here.|M|51.73,34.13|
+K Coprous the Defiled|QID|13298|T|Coprous the Defiled|N|Kill Coprous the Defiled inside the building.|M|60.80,62.20|
+C Aldur'thar South Visited|QID|13315|NC|QO|Aldur'thar South Visited: 1/1|N|Fly here.|M|55.36,47.17|
+C Aldur'thar Central Visited|QID|13315|NC|QO|Aldur'thar Central Visited: 1/1|N|Fly here.|M|53.90,42.63|
+C Aldur'thar North Visited|QID|13315|NC|QO|Aldur'thar North Visited: 1/1|N|Fly here.|M|53.90,35.08|
+C Aldur'thar Northwest Visited|QID|13315|NC|QO|Aldur'thar Northwest Visited: 1/1|N|Fly here.|M|51.73,34.13|
 T Sneak Preview|QID|13315|N|To Thassarian.|
 T Coprous the Defiled|QID|13298|N|To Thassarian, he's standing on the left "wing" of the Skybreaker.|
 T Basic Chemistry|QID|13295|N|To Thassarian.|
@@ -227,14 +229,14 @@ A Drag and Drop|QID|13318|N|From Thassarian.|
 A Chain of Command|QID|13319|N|From Thassarian.|
 A Cannot Reproduce|QID|13320|N|From Thassarian.|
 C Drag and Drop|QID|13318|S|U|44246|N|Kill Bitter Initiates until you loot an Orb of Illusion. Throw the Orb at a Dark Subjugator from a distance. Repeat 3 times.|M|54.40,45.60|
-K Overseer Faedris|QID|13319|QO|Overseer Faedris Killed: 1/1|M|53.93,46.96|N|Kill Overseer Faedris.|
+K Overseer Faedris|QID|13319|T|Overseer Faedris|QO|Overseer Faedris Killed: 1/1|M|53.93,46.96|N|Kill Overseer Faedris.|
 C Drag and Drop|QID|13318|US|U|44246|N|Kill Bitter Initiates until you loot an Orb of Illusion. Throw the Orb at a Dark Subjugator from a distance. Repeat 3 times.|M|54.40,45.60|
-K Overseer Jhaeqon|QID|13319|QO|Overseer Jhaeqon Killed: 1/1|M|54.8,32.5|N|Kill Overseer Jhaeqon.|
-K Overseer Veraj|QID|13319|QO|Overseer Veraj Killed: 1/1|M|53.6,29.2|N|Kill Overseer Veraj.|
-C Chain of Command|QID|13319|M|49.4,31.2|N|Kill Overseer Savryn.|
-N Blue Sample Collected|QID|13320|U|44251|QO|Blue Sample Collected: 1/1|N|Use the item near the blue cauldron here.|M|48.97,33.16|
-N Green Sample Collected|QID|13320|U|44251|QO|Green Sample Collected: 1/1|N|Use the item near the green cauldron here.|M|49.08,34.19|
-C Cannot Reproduce|QID|13320|U|44251|N|Use the item near the final cauldron here.|M|49.67,34.38|
+K Overseer Jhaeqon|QID|13319|T|Overseer Jhaeqon|QO|Overseer Jhaeqon Killed: 1/1|M|54.8,32.5|N|Kill Overseer Jhaeqon.|
+K Overseer Veraj|QID|13319|T|Overseer Veraj|QO|Overseer Veraj Killed: 1/1|M|53.6,29.2|N|Kill Overseer Veraj.|
+K Overseer Savryn|QID|13319|T|Overseer Savryn|QO|Overseer Savryn Killed: 1/1|M|49.4,31.2|N|Kill Overseer Savryn.|
+C Blue Sample Collected|QID|13320|NC|U|44251|QO|Blue Sample Collected: 1/1|N|Use the item near the blue cauldron here.|M|48.97,33.16|
+C Green Sample Collected|QID|13320|NC|U|44251|QO|Green Sample Collected: 1/1|N|Use the item near the green cauldron here.|M|49.08,34.19|
+C Dark Sample|QID|13320|NC|U|44251|QO|Dark Sample Collected: 1/1|N|Use the item near the final cauldron here.|M|49.67,34.38|
 T Drag and Drop|QID|13318|N|To Thassarian, he's standing on the left "wing" of the Skybreaker.|
 T Chain of Command|QID|13319|N|To Thassarian.|
 
@@ -243,7 +245,7 @@ A Need More Info|QID|13345|N|Once more a 3-Man quest. From Thassarian.|
 T Cannot Reproduce|QID|13320|N|To Chief Engineer Boltwrench, he is located in the belly of the Skybreaker.|
 A Retest Now|QID|13321|N|From Chief Engineer Boltwrench.|
 U Diluted Cult Tonic|QID|13321|U|44307|N|Use the tonic once you're here, you'll need it to cause the quest items to drop from the cultists.|M|49.60,34.60|
-K Cultists around the cauldrons|QID|13321|L|44301 10|N|You need to collect 10 Tainted Essences.|M|49.60,34.60|
+C Cultists around the cauldrons|QID|13321|U|44307|L|44301 10|N|You need to collect 10 Tainted Essences.|M|49.60,34.60|
 N Make a Writing Mass|QID|13321|U|44301|L|44304|N|Combine the Essences into a Writhing Mass.|
 C Retest Now|QID|13321|U|44304|N|Use the Writhing Mass near one of the cauldrons.|M|49.66,34.35;49.08,34.19;48.95,33.21|CN|
 N Need More Info|QID|13345|L|44459|N|Enter the building and loot the three Pages off the researchers.|M|52.00,32.00|

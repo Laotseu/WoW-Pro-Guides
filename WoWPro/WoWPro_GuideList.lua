@@ -1,3 +1,6 @@
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+local function trace(msg,...) WoWPro:Print(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 ---------------------------------
 --      WoWPro_Guide_List      --
 ---------------------------------
@@ -277,7 +280,7 @@ function WoWPro:GuideTabFrame_RowOnClick()
 	else
 		WoWPro:LoadGuide(self.GID)
 	end
-	self.module:UpdateGuideList()
+	-- self.module:UpdateGuideList()
 end		
 
 

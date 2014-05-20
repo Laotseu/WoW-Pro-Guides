@@ -89,8 +89,6 @@ return [[
 ; Missing Quests:
 ; The Lost Courier
 ; Your Presence is Required at Stars' Rest
-; Wanton Warlord
-; A Reclusive Runemaster
 ; Missing Level 80 Quest
 ; Mystery of the Infinite, Redux
 
@@ -125,11 +123,11 @@ A Wanted: High Shaman Bloodpaw |QID|12441|N|From the Wanted Poster inside the In
 A Wanted: Onslaught Commander Iustus |QID|12442|N|From the Wanted Poster inside the Inn. |M|77.30,51.40|
 
 h Wintergarde Keep |QID|12253|N|Make this inn your home location with Illusia Lune. |M|77.50,51.50|
-K Vengeful Geists |QID|12258|QO|Vengeful Geist slain: 15/15|M|79.9,49.7|S|N|Kill any Vengeful Geist you see.|
+C Vengeful Geists |QID|12258|QO|Vengeful Geist slain: 15/15|M|79.9,49.7|S|N|Kill any Vengeful Geist you see.|
 C Rescue from Town Square|QID|12253|S|N|Kill Vengeful Geists to free the Trapped Wintergarde Villagers.|
 C Imprints on the Past |QID|12282|N|Go back to the gate and take the path going down south. Go to the first building on your right-hand side. Go to the upper floor and find the Scrying Orb. |M|78.90,50.90|
 C Rescue from Town Square|QID|12253|US|N|Now just go from one building to another, killing Vengeful Geists to free the Trapped Wintergarde Villagers.|
-K Vengeful Geists |QID|12258|QO|Vengeful Geist slain: 15/15|M|79.9,49.7|US|N|Finish killing Vengeful Geists.|
+C Vengeful Geists |QID|12258|QO|Vengeful Geist slain: 15/15|M|79.9,49.7|US|N|Finish killing Vengeful Geists.|
 
 T Rescue from Town Square |QID|12253|N|To High Commander Halford Wyrmbane.|M|78.60,48.20|
 A Find Durkon! |QID|12309|M|78.6,48.2|N|From High Commander Halford Wyrmbane.|
@@ -162,7 +160,7 @@ T Understanding the Scourge War Machine |QID|12281|N|To High Commander Halford W
 T Find Durkon! |QID|12309|N|From the gate, go down, take a right-turn, past the tall building we went in earlier for the Scrying Orb. A little further south you'll find Cavalier Durkon.|M|79.00,53.00|
 A The Noble's Crypt |QID|12311|M|79.1,53.2|N|From Cavalier Durkon.|
 
-K Necrolord Amarion |QID|12311|QO|Necrolord Amarion slain: 1/1|N|Enter the crypt, go to the bottom of it, kill Necrolord Amarion.|
+K Necrolord Amarion |QID|12311|T|Necrolord Amarion|QO|Necrolord Amarion slain: 1/1|N|Enter the crypt, go to the bottom of it, kill Necrolord Amarion.|
 
 A Secrets of the Scourge |QID|12312|N|Right-click the Flesh Bound Tome which should be on the floor behind where you found Necrolord Amarion. Get the quest and get out of the crypt as fast as you can to stop those annoying ghouls from spawning.|M|78.6,52.4|
 
@@ -185,7 +183,7 @@ A Into Hostile Territory |QID|12325|M|78.6,48.2|N|From High Commander Halford Wy
 T A Disturbance In The West |QID|12439|N|To Rodney Wells.|M|77.00,49.80|
 A To Stars' Rest! |QID|12440|N|Dismount, then accept this quest from Rodney Wells. This will fly you to Stars' Rest.|M|77,49.8|
 
-f Stars' Rest |QID|12440|N|Get the new flight path.|
+f Stars' Rest |M|29.2,55.3|N|Get the new flight path.|
 T To Stars' Rest! |QID|12440|N|To the Image of Archmage Modera.|M|29.00,55.50|
 A Rifle the Bodies |QID|12000|M|29.0,55.5|N|From the Image of Archmage Modera.|M|29.00,55.50|
 A The Liquid Fire of Elune |QID|12166|N|From Warden Jodi Moonsong.|M|29.20,55.60|
@@ -202,35 +200,35 @@ T Kill the Cultists |QID|12167|N|To Warden Jodi Moonsong.|M|29.20,55.60|
 T The Favor of Zangus |QID|12168|M|29.2,55.6|N|To Warden Jodi Moonsong.|
 A The High Cultist |QID|12169|M|29.2,55.6|N|From Warden Jodi Moonsong.|
 
-K High Cultist Zangus |QID|12169|QO|High Cultist Zangus slain: 1/1|N|From Kilix the Unraveler, take the middle tunnel going east, at the end of it you'll find High Cultist Zangus. Kill him. |M|28.83,49.74|
-R Stars' Rest |QID|12169|N|Go backwards, take the spiraling way out of the pit. Ride back to Stars' Rest. |M|29.20,55.60|
-T The High Cultist |QID|12169|N|To Warden Jodi Moonsong.|M|29.20,55.60|
+K High Cultist Zangus |QID|12169|T|High Cultist Zangus|M|27.1,50.4;26.5,48.8;27.7,49.9;28.83,49.74|CS|N|From Kilix the Unraveler, take the middle tunnel going east, at the end of it you'll find High Cultist Zangus. Kill him. |
+;R Stars' Rest |QID|12169|N|Go backwards, take the spiraling way out of the pit. Ride back to Stars' Rest. |M|29.20,55.60|
+T The High Cultist |QID|12169|M|26.8,48.9;29.20,55.60|CS|N|Go backwards, take the spiraling way out of the pit. Ride back to Stars' Rest. To Warden Jodi Moonsong.|
 
 A Avenge this Atrocity! |QID|12006|N|From Ethenial Moonshadow.|M|24.00,60.00|
 l Moonrest Gardens Plans |QID|12000|U|35792|L|35783|N|Look for Dead Mage Hunters. Dismount and loot the corpse, you'll receive a Mage Hunter's Personal Effects. Right-click them and loot the contents. Repeat this step until you find the Moonrest Gardens Plans.|
 T Rifle the Bodies |QID|12000|N|To the Image of Archmage Modera.|M|29.00,55.50|
 A Prevent the Accord |QID|12004|N|From the Image of Archmage Modera.|M|29.00,55.50|
-K Blue Dragonflight forces |QID|12006|S|QO|Blue Dragonflight forces at Moonrest Gardens slain: 15/15|N|Kill any Blue Dragonflight Force mob you see.|M|24.00,60.00|
-K Wind Trader Mu'fah |QID|12004|L|35800|N|Clear the way to the other side of the crater. Find and kill Wind Trader Mu'fah . He's standing infront of the door of that big stone building. Loot Wind Trader Mu'fah's Remains.|M|18.44,58.88|
-K Goramosh |QID|12004|L|35801|N|Go inside the building, take the slope going up left. Kill Goramosh, loot The Scales of Goramosh and Goramosh's Strange Device. |M|19.50,58.16|
+C Blue Dragonflight forces |QID|12006|S|N|Kill any Blue Dragonflight Force mob you see.|M|24.00,60.00|
+K Wind Trader Mu'fah |QID|12004|T|Wind Trader Mu'fah|QO|Wind Trader Mu'fah's Remains: 1/1|N|Clear the way to the other side of the crater. Find and kill Wind Trader Mu'fah . He's standing infront of the door of that big stone building. Loot Wind Trader Mu'fah's Remains.|M|18.44,58.88|
+K Goramosh |QID|12004|T|Goramosh|QO|The Scales of Goramosh: 1/1|N|Go inside the building, take the slope going up left. Kill Goramosh, loot The Scales of Goramosh and Goramosh's Strange Device. |M|19.50,58.16|
 A A Strange Device |QID|12055|U|36742|N|Right-click A Strange Device to start the quest.|M|19.4,58.1|
-K Blue Dragonflight forces |QID|12006|US|QO|Blue Dragonflight forces at Moonrest Gardens slain: 15/15|N|Finish killing the needed mobs.|M|24.00,60.00|
+C Blue Dragonflight forces |QID|12006|US|N|Finish killing the needed mobs.|M|24.00,60.00|
 T Avenge this Atrocity! |QID|12006|N|To Ethenial Moonshadow.|M|24.00,60.00|
 A End Arcanimus |QID|12013|M|24.2,60.1|N|From Ethenial Moonshadow.|
 
 T Prevent the Accord |QID|12004|N|To the Image of Archmage Modera.|M|29.00,55.50|
 T A Strange Device |QID|12055|M|29.0,55.5|N|To the Image of Archmage Modera.|
 A Projections and Plans |QID|12060|M|29.0,55.5|N|From the Image of Archmage Modera.|
-K Arcanimus |QID|12013|QO|Arcanimus slain: 1/1|N|Go down to the waypoint and kill Arcanimus.|M|20.00,60.00|
+K Arcanimus |QID|12013|T|Arcanimus|N|Go down to the waypoint and kill Arcanimus.|M|20.00,60.00|
 
 C Projections and Plans |QID|12060|U|36747|N|Use the Surge Needle Teleporter , the go towards the middle of the platform until you get the quest complete message.|M|24.2,55.6|
 T End Arcanimus |QID|12013|N|Use the Surge Needle Teleporter, then turn this quest into Ethenial Moonshadow.|M|24.00,60.00|U|36747|
 T Projections and Plans |QID|12060|N|To the Image of Archmage Modera.|M|29.00,55.50|
 A The Focus on the Beach |QID|12065|M|29.0,55.5|N|From the Image of Archmage Modera.|
 
-R Glittering Strand |QID|12067|N|Ride southwest to the Glittering Strand.|M|25.34,61.60|
+;R Glittering Strand |QID|12067|N|Ride southwest to the Glittering Strand.|M|25.34,61.60|
 
-K Captain Emmy Malin |QID|12067|L|36751|N|Find Captain Emmy Malin. She's channeling a spell close to the Ley Line Focus. Kill her, loot everything she has.|M|26.00,65.00|
+K Captain Emmy Malin |QID|12067|T|Captain Emmy Malin|L|36751|N|Find Captain Emmy Malin. She's channeling a spell close to the Ley Line Focus. Kill her, loot everything she has.|M|26.00,65.00|
 C The Focus on the Beach |QID|12065|N|Get close to the Ley Line Focus and right-click the Ley Line Focus Control Ring, then wait until you get the quest completion.|U|36751|M|26.4,65.0|
 A A Letter for Home |QID|12067|N|Also Right-click Captain Malin's Letter, accept the quest.|U|36756|M|26.4,65.0|
 T A Letter for Home |QID|12067|N|To Commander Saia Azuresteel.|M|29.00,55.50|
@@ -239,9 +237,9 @@ A Atop the Woodlands |QID|12083|M|29.0,55.5|N|From the Image of Archmage Modera.
 
 A Strengthen the Ancients |QID|12092|N|From Sarendryana.|M|28.80,57.10|
 
-l Woodlands Walker |QID|12092|S|L|36786 3|N|Dismount. Look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some Bark of the Walkers. Repeat until you got 3.|M|32.68,65.48|
-C Strengthen the Ancients |U|36786|S|QID|12092|N|Look for Lothalor Ancients (not corrupted ones). Get close to them and right-click the Bark of the Walkers.|M|32.68,65.48|
-K Lieutenant Ta'zinni |QID|12083|L|36779|N|Go further south until you find a Ley Line Focus  Kill Lieutenant Ta'zinni. He's a troll NPC and patrols around the Ley Line Focus. Loot the Ley Line Focus Control Amulet.|M|32.00,71.00|
+;l Woodlands Walker |QID|12092|S|L|36786 3|N|Dismount. Look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some Bark of the Walkers. Repeat until you got 3.|M|32.68,65.48|
+C Strengthen the Ancients |U|36786|S|QID|12092|N|For the Bark of the Walker, look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some.|nOnce you have bark, look for Lothalor Ancients (not corrupted ones). Get close to them and right-click the Bark of the Walkers.|M|32.68,65.48|
+K Lieutenant Ta'zinni |QID|12083|T|Lieutenant Ta'zinni|L|36779|N|Go further south until you find a Ley Line Focus  Kill Lieutenant Ta'zinni. He's a troll NPC and patrols around the Ley Line Focus. Loot the Ley Line Focus Control Amulet.|M|32.00,71.00|
 C Atop the Woodlands |QID|12083|U|36779|N|Right-click it while being close to the Ley Line Focus, then wait until you get the quest completion.|M|32.2,70.6|
 C Woodlands Walker |QID|12092|US|L|36786 3|N|Dismount. Look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some Bark of the Walkers. Repeat until you got 3.|M|32.68,65.48|
 C Strengthen the Ancients |U|36786|US|QID|12092|N|Look for Lothalor Ancients (not corrupted ones). Get close to them and right-click the Bark of the Walkers.|M|32.68,65.48|
@@ -251,18 +249,19 @@ T Atop the Woodlands |QID|12083|N|To the Image of Archmage Modera.|M|29.00,55.50
 A Search Indu'le Village |QID|12098|M|29.0,55.5|N|To the Image of Archmage Modera.|
 
 F Moa'ki Harbor |QID|11960|N|Fly to Moa'ki Harbor. If you don't have that flight path, just ride there.|M|29.19,55.33;48.47,74.41|CC|
+f Moa'ki Harbor |M|48.5,74.4|N|From Cid Flounderfix|
 A Planning for the Future |QID|11960|N|From Trapper Mau'i.|M|48.30,74.30|
 h Moa'ki Harbor |QID|11960|N|Make this inn your home location.|
 A Let Nothing Go To Waste |QID|11958|N|From Elder Ko'nani.|M|48.10,74.90|
 
-R Snowfall Glade |QID|11960|N|Go north and slightly northwest to Snowfall Glade.|M|43.6,71.3|
-l Snowfall Glade Pups |QID|11960|S|QO|Snowfall Glade Pup: 12/12|N|Right-click 12 Snowfall Glade Pups, try not to do AoEs near them as it can kill the pups|M|43.6,71.3|
+;R Snowfall Glade |QID|11960|N|Go north and slightly northwest to Snowfall Glade.|M|43.6,71.3|
+C Snowfall Glade Pups |QID|11960|S|NC|T|Snowfall Glade Pup|QO|Snowfall Glade Pup: 12/12|N|Right-click 12 Snowfall Glade Pups, try not to do AoEs near them as it can kill the pups|M|43.6,71.3|
 C Let Nothing Go To Waste|QID|11958|N|Kill and loot Snowfall Glade Wolvars or Denmothers until you get 6 Stolen Moa'ki Goods|M|43.6,71.3|
-l Snowfall Glade Pups |QID|11960|US|QO|Snowfall Glade Pup: 12/12|N|Finishing getting Snowfall Glade Pups.|M|43.6,71.3|
+C Snowfall Glade Pups |QID|11960|US|NC|T|Snowfall Glade Pup|QO|Snowfall Glade Pup: 12/12|N|Finishing getting Snowfall Glade Pups.|M|43.6,71.3|
 T Planning for the Future |QID|11960|N|To Trapper Mau'i.|M|48.30,74.30|
 T Let Nothing Go To Waste |QID|11958|N|To Elder Ko'nani.|M|48.10,74.90|
 A Slay Loguhn |QID|11959|M|48.0,74.9|N|From Elder Ko'nani.|
-C Slay Loguhn |QID|11959|N|Go to the northernmost hut, kill then loot Loguhn. Then use the Blood of Loguhn.|M|46.00,60.00|U|35688|
+C Slay Loguhn |QID|11959|T|Loguhn|N|Go to the northernmost hut, kill then loot Loguhn. Then use the Blood of Loguhn.|M|46.00,60.00|U|35688|
 
 T Slay Loguhn |QID|11959|N|To Elder Ko'nani.|M|48.0,74.9|
 A Spiritual Insight |QID|12028|N|For now only get Spiritual Insight from Toalu'u the Mystic. |M|49.10,75.70|
@@ -276,19 +275,19 @@ A Freedom for the Lingering |QID|12031|M|36.62,64.98|N|From the statue that is E
 C Freedom for the Lingering |QID|12031|S|N|Kill Indu'le Fishermen/Warriors/Mystics until you finish this quest.|M|37.2,65.5|
 T Search Indu'le Village |QID|12098|N|Clear the way to the middle of Lake Indu'le where you should see the corpse of Mage-Commander Evenstar.|M|40.0,67.00|
 A The End of the Line |QID|12107|M|40.3,66.9|N|From the corpse of Mage-Commander Evenstar.|
-N Ley Line Focus information retrieved|QID|12107|U|36815|QO|Ley Line Focus information retrieved: 1/1||N|Get close to the Ley Line Focus and right-click the Ley Line Focus Control Talisman, then wait until you get the quest completion.|
+C Ley Line Focus information retrieved|QID|12107|NCU|36815|QO|Ley Line Focus information retrieved: 1/1||N|Get close to the Ley Line Focus and right-click the Ley Line Focus Control Talisman, then wait until you get the quest completion.|
 C Freedom for the Lingering |QID|12031|US|N|Get out of the lake, and finish kill Indu'le Fishermen/Warriors/Mystics until you finish up.|M|37.2,65.5|
 T Freedom for the Lingering |QID|12031|N|To Elder Mana'loa.|M|36.62,64.98|
 A Conversing With the Depths |QID|12032|M|36.62,64.98|N|From Elder Mana'loa.|
-C The End of the Line |QID|12107|N|Mount up, ride east to the western ledge of the Azure Dragonshrine. You should get a "Azure Dragonshrine Observed" message. (Be careful to not confuse it with the area discovery message).|M|53.00,65.00|
+C The End of the Line |QID|12107|NC|N|Mount up, ride east to the western ledge of the Azure Dragonshrine. You should get a "Azure Dragonshrine Observed" message. (Be careful to not confuse it with the area discovery message).|M|53.00,65.00|
 
 A Tua'kea's Crab Traps |QID|12009|N|From Tua'kea.|M|47.7,76.6|
 C Tua'kea's Crab Traps |QID|12009|S|N|Swim around gathering Tua'kea Crab Traps.|M|46.23,78.2|
 A Signs of Big Watery Trouble |QID|12011|U|37265|N|Go to the very end of the southwestern docks and you should see a yellow "!" on your minimap. Right-click Tua'kea's Breathing Bladder. Dive down there and get the quest from the Wrecked Crab Trap.|M|47.7,79.96|
-T Signs of Big Watery Trouble |QID|12011|N|To Tua'kea.|M|47.7,76.6|
+T Signs of Big Watery Trouble |QID|12011|N|To Tua'kea.|M|48.0,76.1|
 A The Bait |QID|12016|M|47.7,76.6|N|From Tua'kea.|
 C Tua'kea's Crab Traps |QID|12009|US|N|Finish gathering Tua'kea Crab Traps.|M|46.23,78.2|
-K Kili'ua |QID|12016|L|35831|N|Once you reach Kili'ua's Atoll, kill Kili'ua and loot [The Flesh of "Two Huge Pincers"].|M|43.27,82.40|
+K Kili'ua |QID|12016|T|Kili'ua|N|Once you reach Kili'ua's Atoll, kill Kili'ua and loot [The Flesh of "Two Huge Pincers"].|M|43.27,82.40|
 
 R The Briny Pinnacle |QID|12032|N|Swim west to The Briny Pinnacle. |M|34.00, 83.00|
 C Conversing With the Depths |QID|12032|N|Follow the path up until you find The Pearl of the Depth. Right-click it and the sea-goddess Oacha'noa will come and talk to you. Jump in the water when she gives you the compulsion buff.|M|34.00,83.46|
@@ -298,7 +297,7 @@ T Tua'kea's Crab Traps |QID|12009|N|Tua'kea |M|47.7,76.6|
 T The Bait |QID|12016|M|47.7,76.6|N|To Tua'kea.|
 A Meat on the Hook |QID|12017|M|47.7,76.6|N|From Tua'kea.|
 
-K Tu'u'gwar |QID|12017|QO|Tu'u'gwar slain: 1/1|U|35838|N|Follow the fishing line (which actually looks more like a big rope), southwest into the water, all the way to Tua'kea's Fishing Hook. Use Tu'u'gwar's Bait, then kill Tu'u'gwar.|M|46.7,78.2|
+K Tu'u'gwar |QID|12017|T|Tu'u'gwar|U|35838|N|Follow the fishing line (which actually looks more like a big rope), southwest into the water, all the way to Tua'kea's Fishing Hook. Use Tu'u'gwar's Bait, then kill Tu'u'gwar.|M|46.7,78.2|
 T Meat on the Hook |QID|12017|N|To Tua'kea.|M|47.7,76.6|
 T Conversing With the Depths |QID|12032|N|To Toalu'u The Mystic.|M|49.12,75.68|
 r Sell junk, repair, restock. |QID|12107|M|49.41,75.38|N|Sell junk, repair, restock.|
@@ -327,7 +326,7 @@ T The Plume of Alystros |QID|12456|O|N|Go back to Nishera the Garden Keeper.|M|6
 
 R Venomspite |QID|12458|N|This is an optional step, but will help you get the Exploration Achievement.|M|77.11,62.09|
 R New Hearthglen |QID|12458|N|This is an optional step to help you get the Exploration Achievement also.|M|72.93,68.11|
-C My Old Enemy |QID|12464|N|She can be found in the big cathedral in New Hearthglen. There's a level 80 elite next to her but he doesn't add if you pull Abbendis, so don't worry about it.|M|70.00,76.00|
+K High General Abbendis |QID|12464|T|High General Abbendis|N|She can be found in the big cathedral in New Hearthglen. There's a level 80 elite next to her but he doesn't add if you pull Abbendis, so don't worry about it.|M|70.8,75.2;|CC|
 
 T Seeds of the Lashers |QID|12458|N|Ask Tariolastrasz to send you to the top floor. To Lord Itharius.|M|59.60,54.50|
 A That Which Creates Can Also Destroy |QID|12459|M|59.6,54.4|N|From To Lord Itharius.|
@@ -341,14 +340,14 @@ F Thorson's Post|QID|12325|N|At the Gryphon Landing Site, right-click one of the
 T Into Hostile Territory |QID|12325|N|To Duke August Foehammer.|M|89.7,46.4|
 A Steamtank Surprise |QID|12326|M|89.7,46.4|N|From Duke August Foehammer.|
 
-C Wanted: Kreug Oathbreaker |QID|12438|N|Kill Kreug Oathbreaker. |M|90.14,52.55|
-N Now comes a fun quest. |QID|12326||N|Read the whole paragraph before you jump in a tank. You'll get in one of those steam tanks and look around for Plague Wagons. Stand close to it and use Ability #3. To defend yourself, use Ability #2 first and then Ability #1 on the frozen targets, this does tripple damage. Once you have destroyed 6 Plague Wagons, go west to the Wintergarde Mausoleum  and use Ability #4: You're ready now, get in a tank and have fun!|
+K Kreug Oathbreaker |QID|12438|T|Kreug Oathbreaker|N|Kill Kreug Oathbreaker. |M|90.14,52.55|
+N Now comes a fun quest. |QID|12326||N|Read the whole paragraph before you jump in a tank. You'll get in one of those steam tanks and look around for Plague Wagons. Stand close to it and use Ability #3. To defend yourself, use Ability #2 first and then Ability #1 on the frozen targets, this does tripple damage. Once you have destroyed 6 Plague Wagons, go west to the Wintergarde Mausoleum  and use Ability #4: You're ready now, get in a tank and have fun!|M|89.2,45.8|
 N Plague Wagons Sabotaged|QID|12326|N|Get near a Plague Wagon and use Ability #3, defend the Gnome until you get a quest update. Do this 6 times.|QO|Plague Wagon Sabotaged: 6/6|
 C Steamtank Surprise |QID|12326|N|Use Ability #4 near the entrance of the Mausoleum.|M|86.00,50.00|
 T Steamtank Surprise |QID|12326|N|Go down in the Wintergarde Mausoleum and turn this quest into Ambo Cash.|M|85.9,50.9|
 A Scattered To The Wind |QID|12455|M|85.9,50.9|N|From Ambo Cash.|
 C Scattered To The Wind |QID|12455|S|N|Get out of the Mausoleum and look for Wintergarde Munitions Crates. They are all around the Mausoleum. Gather 8 Wintergard Munitions.|M|85.1,49.5|
-K Turgid the Vile |QID|12459|QO|Weakened Turgid the Vile slain: 1/1|U|37887|N|Go to the keep in ruins just a few paces northwest of the mausoleum . Inside you'll find Turgid the Vile. Target him and right-click the Seeds of Nature Wrath. Kill him.|M|86.00,47.00|
+K Turgid the Vile |QID|12459|T|Turgid the Vile|QO|Weakened Turgid the Vile slain: 1/1|U|37887|N|Go to the keep in ruins just a few paces northwest of the mausoleum . Inside you'll find Turgid the Vile. Target him and right-click the Seeds of Nature Wrath. Kill him.|M|86.00,47.00|
 C Scattered To The Wind |QID|12455|US|N|Finish gathering Wintergarde Munitions Crates.|M|85.1,49.5|
 T Scattered To The Wind |QID|12455|N|To Ambo Cash inside the Wintergarde Mausoleum.|M|85.9,50.9|
 A The Chain Gun And You |QID|12457|M|85.9,50.9|N|From Ambo Cash.|
@@ -358,8 +357,8 @@ A Plunderbeard Must Be Found! |QID|12463|M|85.9,50.9|N|From Ambo Cash.|
 A Breaking Off A Piece |QID|12462|N|From Yord "Calamity" Icebeard.|M|85.9,51.0|
 
 C Naxxramas Scourge slain|QID|12462|QO|Naxxramas Scourge slain: 15/15|N|Kill Naxxramas Scourge as you go along.|S|
-K Necrolord X'avius |QID|12462|QO|Necrolord X'avius slain: 1/1|N|Go down the stairs southwest. Take the first door to your right, clear to the back of this room and kill Necrolors X'avius.|M|84.4,51.0|
-K Necrolord Horus |QID|12462|QO|Necrolord Horus slain: 1/1|N|Go back to the main hallway and go to the opposite room. Clear to Necrolord Horus and kill him.|M|86.6,52.8|
+K Necrolord X'avius |QID|12462|T|Necrolord X'avius|QO|Necrolord X'avius slain: 1/1|N|Go down the stairs southwest. Take the first door to your right, clear to the back of this room and kill Necrolors X'avius.|M|84.4,51.0|
+K Necrolord Horus |QID|12462|T|Necrolord Horus|QO|Necrolord Horus slain: 1/1|N|Go back to the main hallway and go to the opposite room. Clear to Necrolord Horus and kill him.|M|86.6,52.8|
 T Plunderbeard Must Be Found! |QID|12463|N|Go back to the main hallway and bear left, to the southwestern room. Clear to the back of it and you'll find Plunderbeard's corpse.|M|84.2,54.7|
 A Plunderbeard's Journal |QID|12465|M|84.2,54.7|N|From Plunderbeard's Corpse.|
 
@@ -384,9 +383,9 @@ T Chasing Icestorm: The 7th Legion Front |QID|12466|M|64.7,27.9|N|To Legion Comm
 A Chasing Icestorm: Thel'zan's Phylactery |QID|12467|M|64.7,27.9|N|From Legion Commander Tyralion.|
 A Pest Control |QID|12142|N|From Duane.|M|64.4,26.9|
 N Note: |QID|12467|N|Now we're going to kill Icestorm, a level 73 elite wyrm. Read the next paragraph before you talk to "Wyrmbait". Wyrmbait will fetch Icestorm for you. All you have to do is stand aside and let the NPCs tank for you and let them build some threat. Once Icestorm is down to 50% HP or so, start attacking it. Stay on its side to avoid the breath. If you do this properly, Icestorm should never attack you. If you got an ability to lower or reset your threat, use it, that way you can start attacking Icestorm earlier. Icestorm is NOT immune to frost, surprisingly.|M|64.60,27.50|
-K Icestorm |QID|12467|QO|Thel'zan's Phylactery: 1/1|N|You should be ready now, talk to "Wyrmbait", tell him to go fetch Icestorm. After you kill Icestorm Thel'zan's Phylactery should appear on the ground, loot it. You can also loot it if you if someone else killed Icestorm.|M|64.60,27.50|
+K Icestorm |QID|12467|T|Icestorm|QO|Thel'zan's Phylactery: 1/1|N|You should be ready now, talk to "Wyrmbait", tell him to go fetch Icestorm. After you kill Icestorm, Thel'zan's Phylactery should appear on the ground, loot it. You can also loot it if you if someone else killed Icestorm.|M|64.60,27.50|
 
-K Reanimated Frost Wyrm |QID|12459|QO|Weakened Reanimated Frost Wyrm slain: 1/1|S|U|37887|N|Look in the skies for a Reanimated Frost Wyrm. Target it and use the Seeds of Nature Wrath, then kill it.|M|55.2,45.7|
+K Reanimated Frost Wyrm |QID|12459|T|Reanimated Frost Wyrm|QO|Weakened Reanimated Frost Wyrm slain: 1/1|S|U|37887|N|Look in the skies for a Reanimated Frost Wyrm. Target it and use the Seeds of Nature Wrath, then kill it.|M|55.2,45.7|
 C Pest Control|QID|12142|N|Go southeast to the Snobold camps. Kill all the Snobolds you can find here, as well as the Magnataur you need.|M|70.14,32.76;64.82,43.06;65.35,49.54|CN|
 T Pest Control |QID|12142|N|To Duane.|M|64.4,26.9|
 A Canyon Chase |QID|12143|M|64.4,26.9|N|From Duane.|
@@ -407,9 +406,9 @@ T An End And A Beginning |QID|12473|M|78.6,48.2|N|To High Commander Halford Wyrm
 A To Fordragon Hold! |QID|12474|M|78.6,48.2|N|From High Commander Halford Wyrmbane.|
 
 F Wyrmrest Temple |QID|12469|M|77,49.79|N|Fly to Wyrmrest Temple.|
-A Return to Sender |QID|12469|N|Go to the waypoint. There you should find a Nozzlerust Supply Runner.|M|48.00,24.00|
+A Return to Sender |QID|12469|N|Go to the waypoint. There you should find a Nozzlerust Supply Runner.|M|48.4,24.2|
 
-T Return to Sender |QID|12469|N|From there ride east to Nozzlerust Post. Turn the quest into Xink.|M|55.00,24.00|
+T Return to Sender |QID|12469|N|From there ride east to Nozzlerust Post. Turn the quest into Xink.|M|55.0,23.4|
 A Stocking Up |QID|12044|M|55.0,23.4|N|From Xink.|
 A Shaved Ice |QID|12045|M|54.7,23.2|N|From Zivlix.|
 A Nozzlerust Defense |QID|12043|M|54.5,23.6|N|From Narf.|
@@ -430,15 +429,20 @@ A Galakrond and the Scourge |QID|12497|M|59.8,54.7|N|From Alexstrasza the Life-B
 
 T Galakrond and the Scourge |QID|12497|N|To Torastrasza.|M|59.5,53.3|
 A On Ruby Wings |QID|12498|M|59.5,53.3|N|From Torastrasza.|
-K Bonesunder |QID|12148|QO|Emblazoned Battle Horn: 1/1|M|50.64,58.5|N|Look for Bonesunder near the waypoint. Kill Bonesunder Loot the Emblazoned Battle Horn.|T|Bonesunder|
+K Bonesunder |QID|12148|T|Bonesunder|QO|Emblazoned Battle Horn: 1/1|M|50.64,58.5|N|Look for Bonesunder near the waypoint. Kill Bonesunder Loot the Emblazoned Battle Horn.|T|Bonesunder|
 T One of a Kind |QID|12148|M|60.0,55.1|N|To Aurastrasza.|
 A Mighty Magnataur |QID|12149|N|From Aurastrasza.|M|60.0,55.1|
 
-K Drakegore |QID|12149|QO|Drakegore slain: 1/1|M|67.4,39;68,42.4|CS|N|Kill Drakegore. He also has an aura which does 300 fire damage to enemies in his melee range, nothing too bad.|
-K Iceshatter |QID|12149|QO|Iceshatter slain: 1/1|M|67,50|N|Kill Iceshatter. He periodically casts Pulsing Shards. This is very dangerous and can't be interrupted. Either run away while he channels it or use something like cloak of shadows, divine shield, ice block.|
-C Mighty Magnataur |QID|12149|M|67.4,70.2|N|Kill Bloodfeast. He summons maggots which heal him up.|
+K Kill Drakegore |QID|12149|T|Drakegore|QO|Drakegore slain: 1/1|M|67.4,39;68,42.4|CS|N|Kill Drakegore. He also has an aura which does 300 fire damage to enemies in his melee range, nothing too bad.|
+K Kill Iceshatter |QID|12149|T|Iceshatter|QO|Iceshatter slain: 1/1|M|67,50|N|Kill Iceshatter. He periodically casts Pulsing Shards. This is very dangerous and can't be interrupted. Either run away while he channels it or use something like cloak of shadows, divine shield, ice block.|
+K Kill Bloodfeast |QID|12149|T|Bloodfeast|QO|Bloodfeast slain: 1/1|M|67.4,70.2|N|Kill Bloodfeast. He summons maggots which heal him up.|
 T Mighty Magnataur |QID|12149||M|60.0,55.1|N|To Aurastrasza.|
-; Need to be finished: A Reclusive Runemaster |QID|12150|N|From Aurastrasza.|M|60.0,55.1|
+A Reclusive Runemaster |QID|12150|N|From Aurastrasza.|M|60.0,55.1|
+K Dregmar Runebrand |QID|12150|T|Dregmar Runebrand|N|Dregmar Runebrand is walking around, look for him. You need to get him to 20%.|M|73.9,46.1;78.2,49.8;73.2,50.5|CS|
+T Reclusive Runemaster |QID|12150|N|To Aurastrasza.|M|60.0,55.1|
+A Wanton Warlord |QID|12151|N|From Aurastrasza.|M|60.0,55.1|
+K Grom'thar the Thunderbringer |QID|12151|U|36864|M|57,76|N|Use the Emblazoned Battle Horn in the circle. He is hard to solo for on-level character so you either find some friend to help or come back when you are higher level (75-76). Beware the knockback, you could get thrown off the cliff.|
+T Wanton Warlord |QID|12151|N|To Aurastrasza.|M|60.0,55.1|
 
 T Report to the Ruby Dragonshrine |QID|12460|N|To Ceristrasz.|M|52.00,50.00|
 A Heated Battle |QID|12416|M|52.2,50.0|N|From Ceristrasz.|
@@ -449,13 +453,13 @@ C Return to the Earth |QID|12417|U|37727|N|Fly to the southern canyon. Look for 
 T Return to the Earth |QID|12417|N|To Ceristrasz.|M|52.00,50.00|
 A Through Fields of Flame |QID|12418|M|52.2,50.0|N|From Ceristrasz.|
 
-K Dahlia Suntouch |QID|12419|L|37833|N|Head west towards the huge tree in the middle of the dragonshrine. The entrance is on the southeastern side of the tree at the bottom of it . Inside you'll find Dahlia Suntouch. Kill her. Loot the Ruby Brooch.|M|48.00,50.00|
+K Dahlia Suntouch |QID|12419|T|Dahlia Suntouch|L|37833|N|Head west towards the huge tree in the middle of the dragonshrine. The entrance is on the southeastern side of the tree at the bottom of it . Inside you'll find Dahlia Suntouch. Kill her. Loot the Ruby Brooch.|M|48.00,50.00|
 A The Fate of the Ruby Dragonshrine |QID|12419|U|37833|N|Right-click the Ruby Brooch|M|47.6,49.0|
 C Through Fields of Flame |QID|12418|N|Kill 6 Frigid Necromancers, they can be found all around the tree.|M|47.6,49.0|
 T Through Fields of Flame |QID|12418|N|To Ceristrasz.|M|52.00,50.00|
 A The Steward of Wyrmrest Temple |QID|12768|M|52.2,50.0|N|From Ceristrasz.|
 
-K Wastes Scavengers |QID|12498|QO|Wastes Scavenger slain: 30/30|U|38302|N|Summon your Wyrmrest Vanquisher, fly north to Galakrond's Rest . Go down in the pit and use Ability #1 and #2 to kill Wastes Scavengers (you can actually use both at the same time). Whenever your drake needs mana or healing, use Ability #3 while being close to a Wastes Scavenger. Kill 30 Wastes Scavenger that way.|M|56.00,35.00|
+C Wastes Scavengers |QID|12498|QO|Wastes Scavenger slain: 30/30|U|38302|N|Summon your Wyrmrest Vanquisher, fly north to Galakrond's Rest . Go down in the pit and use Ability #1 and #2 to kill Wastes Scavengers (you can actually use both at the same time). Whenever your drake needs mana or healing, use Ability #3 while being close to a Wastes Scavenger. Kill 30 Wastes Scavenger that way.|M|56.00,35.00|
 N Note: |QID|12498|N|Before we go kill Grand Necrolord Antiok, equip your PvP trinket if you got one with you, because he casts a 10 second fear and a 10 second Death Coil, quite annoying and it can potentially get you killed.|
 C On Ruby Wings |QID|12498|U|38302|N|Then go to the peak at the northwestern tip of Galakron's Rest, kill the big giant called Thiassi and then land next to his corpse and dismount. Get ready to fight Grand Necrolord Antiok, a level 75 warlock. After he dies, the Scythe of Antiok will appear on the floor. Loot it.|M|54.50,31.30|
 K Reanimated Frost Wyrm |QID|12459|QO|Weakened Reanimated Frost Wyrm slain: 1/1|US|U|37887|N|This is a good spot to be able to kill this mob.|M|55.2,45.7|
@@ -474,10 +478,10 @@ T Soft Packaging |QID|12046|N|To Zivlix.|M|54.7,23.2|
 A Something That Doesn't Melt |QID|12047|M|54.7,23.2|N|From Zivlix.|
 A Hard to Swallow |QID|12049|N|From Xink.|M|55.0,23.4|
 
-l Splintered Bone Chunk |QID|12047|QO|Splintered Bone Chunk: 12/12|S|N|Look for a Splintered Bone Chunk around the dragon skull and bones, and loot them.|
+C Splintered Bone Chunk |QID|12047|NC|S|N|Look for a Splintered Bone Chunk around the dragon skull and bones, and loot them.|
 C Hard to Swallow |QID|12049|U|36732|N|Look for a Hulking Jormungar. Bring it down to 80% HP and a message will appear: "The Hulking Jormungar falters for a moment, opening its mouth wide." Use the [Potent Explosive Charges]. This will blow up the Hulking Jormungar and a lot of meat will fly all around its corpse. Loot 6 Seared Jormungar Meat.|M|57.5,23.9|
-T Canyon Chase |QID|12143|N|To Duane.|M|64.00,28.00|
-l Splintered Bone Chunk |QID|12047|QO|Splintered Bone Chunk: 12/12|US|N|Look for a Splintered Bone Chunk around the dragon skull and bones, and loot them|
+T Canyon Chase |QID|12143|N|To Duane.|M|64.5,26.4|
+C Splintered Bone Chunk |QID|12047|NC|US|N|Look for a Splintered Bone Chunk around the dragon skull and bones, and loot them|
 
 T Something That Doesn't Melt |QID|12047|N|To Zivlix.|M|54.7,23.2|
 T Hard to Swallow |QID|12049|N|To Xink.|M|55.0,23.4|
@@ -486,7 +490,7 @@ A Harp on This! |QID|12052|N|From Narf.|M|54.5,23.6|
 C Harp on This! |QID|12052|S|N|Kill harpies until you finish this quest.|M|53.1,19.5|
 C Lumber Hack |QID|12050|S|N|Gather lumber when you are able to.|M|53.1,19.5|
 N Instructions: |QID|12050||N|Right-click the shredder to take control of it. Go westwards while doing the following two things: Kill harpies on your way (Use Ability #1 and #2 - Also use Ability #4 whenever your shredder lacks 5000 HP or more); Look for trees with a cross: Use Ability #6 while standing close to them. Ability #3 is just a 10 sec run speed boost, use it at will.|
-K Mistress of the Coldwind |QID|12052|U|36734|QO|Mistress of the Coldwind slain: 1/1|N|Keep going west and then northwest and you'll find the Mistress of the Coldwind . She's elite but it's no problem for you and your shredder. ==Note== Should your shredder get destroyed, you can re-summon one again.|M|45.00,10.00|
+K Mistress of the Coldwind |QID|12052|T|Mistress of the Coldwind|U|36734|QO|Mistress of the Coldwind slain: 1/1|N|Keep going west and then northwest and you'll find the Mistress of the Coldwind . She's elite but it's no problem for you and your shredder. ==Note== Should your shredder get destroyed, you can re-summon one again.|M|45.00,10.00|
 C Harp on This! |QID|12052|US|N|Once you've killed the Mistress of the Coldwind, finish killing harpies until you finish this quest.|M|53.1,19.5|
 C Lumber Hack |QID|12050|US|N|Finish gathering lumber.|M|53.1,19.5|
 T Lumber Hack |QID|12050|N|To Xink|M|55.0,23.4|
@@ -509,9 +513,9 @@ T Apply This Twice A Day |QID|12077|M|59.0,17.8|N|To Ko'char the Unbreakable.|
 A Really Big Worm |QID|12080|N|From Ko'char the Unbreakable.|
 A Worm Wrangler |QID|12078|N|From Zort.|M|59.4,18.2|
 
-C Worm Wrangler |QID|12078|S|U|36771|N|It's quite easy, all you have to do is get close to a Jormungar Spawn and then: Use the Sturdy Crates on it. Then just right-click the crate on the floor. Repeat this 3 times.|M|55.3,11.0|
-C Really Big Worm |QID|12080|N|Kill Rattlebore. Don't forget to use the Zort's Protective Elixir.|U|36770|M|50.67,17.8|
-C Worm Wrangler |QID|12078|US|U|36771|N|Finish getting any Jormungar Spawn you need.|M|55.3,11.0|
+C Worm Wrangler |QID|12078|S|NC|U|36771|N|It's quite easy, all you have to do is get close to a Jormungar Spawn and then: Use the Sturdy Crates on it. Then just right-click the crate on the floor. Repeat this 3 times.|M|55.3,11.0|
+K Kill Rattlebore |QID|12080|T|Rattlebore|N|Don't forget to use the Zort's Protective Elixir. Rattlebore is at the end of the cave.|U|36770|M|57.3,12.4;50.67,17.8|CS|
+C Worm Wrangler |QID|12078|US|NC|U|36771|N|Finish getting any Jormungar Spawn you need.|M|55.3,11.0|
 T Worm Wrangler |QID|12078|N|To Zort.|M|59.00,18.00|
 T Really Big Worm |QID|12080|N|To Ko'char the Unbreakable.|M|59.0,17.8|
 
@@ -531,7 +535,7 @@ T The Best of Intentions |QID|12263|N|Go back to Serinar.|M|35.2,30.0|
 A Culling the Damned |QID|12264|M|35.2,30.0|N|From Serinar.|
 A Defiling the Defilers |QID|12265|M|35.2,30.0|N|From Serinar.|
 C Culling the Damned|QID|12264|S|N|Kill what you need for this quest.|
-C Defiling the Defilers |QID|12265|N|Clear the way west towards the end of the cave while looking for Necromantic Runes. Right-click them to destroy them.|M|31.93,28.17|
+C Defiling the Defilers |QID|12265|NC|N|Clear the way west towards the end of the cave while looking for Necromantic Runes. Right-click them to destroy them.|M|31.93,28.17|
 C Culling the Damned|QID|12264|US|N|Kill the rest of what you need.|
 T Culling the Damned |QID|12264|N|Go back to Serinar|M|35.2,30.0|
 T Defiling the Defilers |QID|12265|M|35.2,30.0|N|To Serinar.|
@@ -548,17 +552,17 @@ A The Murkweed Elixir |QID|12290|M|87.2,57.4|N|From Orik Trueheart.|
 A The Call Of The Crusade |QID|12542|N|From Tilda Darathan.|M|87.2,57.4|
 R Eldritch Heights |QID|12290|N|Ride southeast to Eldritch Heights.|M|90.00,68.00|
 N Note: |QID|12441|N|While you're here, try to see if there's any group up for killing High Shaman Bloodpaw for the quest [Wanted: High Shaman Bloodpaw]. He's really close so might as well kill two birds with one stone. Some classes reported being able to solo it, but I wouldn't risk it, duo'ing is already much more realistic. 3+ is best.|
-C The Murkweed Elixir |QID|12290|N|Loot 5 Murkweed.|M|90.00,68.00|S|
-C Wanted: High Shaman Bloodpaw |QID|12441|N|Kill High Shaman Bloodpaw. |M|90.6,72.6|
-C The Murkweed Elixir |QID|12290|N|Loot 5 Murkweed.|M|90.00,68.00|US|
+C The Murkweed Elixir |QID|12290|NC|N|Loot 5 Murkweed.|M|90.00,68.00|S|
+K High Shaman Bloodpaw |QID|12441|T|High Shaman Bloodpaw|N|Kill High Shaman Bloodpaw. |M|90.6,72.6|
+C The Murkweed Elixir |QID|12290|NC|N|Loot 5 Murkweed.|M|90.00,68.00|US|
 T The Murkweed Elixir |QID|12290|M|87.2,57.4|N|To Orik Trueheart.|
 
 A The Forgotten Tale |QID|12291|M|87.2,57.4|N|From Orik Trueheart.|
 R The Forgotten Shore |QID|12291|N|Ride southwest to The Forgotten Shore |M|85.00,67.00|
-C The Forgotten Tale |QID|12291|U|37570|N|Use the Murkweed Elixir. Talk to a Forgotten Peasant, a Forgotten Rifleman, a Forgotten Footman and a Forgotten Kinight, in any order.|M|84.2,66.4|
+C The Forgotten Tale |QID|12291|CHAT|U|37570|N|Use the Murkweed Elixir. Talk to a Forgotten Peasant, a Forgotten Rifleman, a Forgotten Footman and a Forgotten Kinight, in any order.|M|84.2,66.4|
 T The Forgotten Tale |QID|12291|N|To Orik Trueheart.|M|87.2,57.4|
 A The Truth Shall Set Us Free |QID|12301|M|87.2,57.4|N|From Orik Trueheart.|
-C The Truth Shall Set Us Free |QID|12301|U|37577|N|At the waypoint you should find a blue rune drawn on the floor, called "Forgotten Ruins". Right-click Orik's Crystalline Orb from your inventory. Watch the cool script and you'll complete the quest.|M|87.00,66.00|
+C The Truth Shall Set Us Free |QID|12301|NC|U|37577|N|At the waypoint you should find a blue rune drawn on the floor, called "Forgotten Ruins". Right-click Orik's Crystalline Orb from your inventory. Watch the cool script and you'll complete the quest.|M|86.8,66.2|
 T The Truth Shall Set Us Free |QID|12301|M|87.2,57.4|N|To Orik Trueheart.|
 A Parting Thoughts |QID|12305|M|87.2,57.4|N|From Orik Trueheart.|
 
@@ -568,6 +572,7 @@ A What Secrets Men Hide |QID|12475|M|79.1,47.2|N|From Zelig the Visionary.|
 A The Return of the Crusade? |QID|12476|M|78.6,48.2|N|From Commander Lynore Windstryke.|
 A The Path of Redemption |QID|12477|M|78.6,48.2|N|From High Commander Halford Wyrmbane.|
 
+T Wanted: High Shaman Bloodpaw |QID|12441|N|To Highlord Leoric Von Zeldig.|M|77.8,50.2|
 r Sell junk, repair, restock. |QID|12542|N|Sell junk, repair, restock.|M|77.82,50.73|
 
 C The Return of the Crusade? |QID|12476|S|N|Kill Scarlet NPCs.|
@@ -577,14 +582,14 @@ A The Cleansing Of Jintha'kalar |QID|12545|M|84.0,26.1|N|From Crusader Valus.|
 
 C The Cleansing Of Jintha'kalar |QID|12545|S|N|Kill stuff in the area until you have 15 scourge kills.|M|86.8,22.4|
 R Jintha'kalar |QID|12545|N|Go northeast to Jintha'kalar.|M|88.00,20.00|
-K Overseer Deathgaze |QID|12459|QO|Weakened Overseer Deathgaze slain: 1/1|U|37887|N|Find Overseer Deathgaze at the very eastern tip of this camp. Target him and right-click the Seeds of Nature Wrath. Kill him.|M|90.00,19.00|
+K Overseer Deathgaze |QID|12459|T|Overseer Deathgaze|QO|Weakened Overseer Deathgaze slain: 1/1|U|37887|N|Find Overseer Deathgaze at the very eastern tip of this camp. Target him and right-click the Seeds of Nature Wrath. Kill him.|M|90.00,19.00|
 C The Cleansing Of Jintha'kalar |QID|12545|US|N|Kill stuff in the area until you have 15 scourge kills.|M|86.8,22.4|
 T The Cleansing Of Jintha'kalar |QID|12545|M|84.0,26.1|N|To Crusader Valus.|
 A Into the Breach! |QID|12789|M|84.0,26.1|N|From Crusader Valus.|
 
 R Onslaught Base Camp |QID|12476|N|Ride south back to Onslaught Base Camp. |M|88.00,38.00|
 C What Secrets Men Hide |QID|12475|N|This time clear to the tower in construction, on the eastern side of the camp. Inside you'll find the Onslaught Map. Loot it.|M|88.00,38.00|
-C Wanted: Onslaught Commander Iustus |QID|12442|N|Kill Onslaught Commander Iustus at the top of the tower. |M|87.6,38.2|
+K Onslaught Commander Iustus |QID|12442|T|Onslaught Commander Iustus|N|Kill Onslaught Commander Iustus at the top of the tower. |M|87.6,38.2|
 C The Path of Redemption |QID|12477|N|Kill Scarlet NPCs until you loot The Path of Redemption.|M|84.9,35.5|
 C The Return of the Crusade? |QID|12476|US|N|Finish killing Scarlet NPCs until you have 20 kills.|
 
@@ -592,7 +597,6 @@ T The Return of the Crusade? |QID|12476|M|78.6,48.2|N|To Commander Lynore Windst
 T The Path of Redemption |QID|12477|M|78.6,48.2|N|To High Commander Halford Wyrmbane.|
 T What Secrets Men Hide |QID|12475|M|79.1,47.2|N|To Zelig the Visionary.|
 A Frostmourne Cavern |QID|12478|M|79.1,47.2|N|From Zelig the Visionary.|
-T Wanted: High Shaman Bloodpaw |QID|12441|N|To Highlord Leoric Von Zeldig.|M|77.8,50.2|
 T Wanted: Onslaught Commander Iustus |QID|12442|N|To Highlord Leoric Von Zeldig.|M|77.8,50.2|
 R Frostmourne Cavern |QID|12478|N|Head to Frostmourne Cavern.|M|74.00,23.00|
 C Frostmourne Cavern |QID|12478|U|37933|N|At the end of the cavern you'll find the Altar of Frostmourne. Use Zelig's Scrying Orb. Enjoy the script, then you'll get a quest complete message.|M|75.1,20.2|
@@ -618,8 +622,8 @@ T Defending Wyrmrest Temple |QID|12372|N|Go back to Lord Afrasastrasz.|M|59.2,54
 F Fordragon Hold |QID|12499|N|Ask Lord Afrasastrasz to send you to the bottom floor, then fly to Fordragon Hold.|M|60.32,51.55|
 T Return To Angrathar |QID|12499|N|Go to Highlord Bolvar Fordragon. Enjoy the super cool cinematic.|M|37.8,23.4|
 
-A  The Hills Have Us |QID|12511|N|In Wintergarde Keep, go to the gryphon landing site, this will send you to Grizzly Hills.|M|77.1,50.1|
-N End |QID|12511|N|The chapter ends here, move on to my next chapter: Grizzly Hills. I hope you enjoyed this guide. If you want to return the favor, please try to contribute!|
+A The Hills Have Us |QID|12511|N|In Wintergarde Keep, go to the gryphon landing site, this will send you to Grizzly Hills.|M|77.1,50.1|
+N End |QID|99999|N|The chapter ends here, move on to my next chapter: Grizzly Hills. I hope you enjoyed this guide. If you want to return the favor, please try to contribute!|
 
 ]]
 end)
