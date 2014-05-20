@@ -5,11 +5,43 @@
 local L = WoWPro_Locale
 local OldQIDs, CurrentQIDs, NewQIDs, MissingQIDs
 
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 local function QidMapReduce(list,default,or_string,and_string,func)
+    if not list then return default end
+    local do_or = string.find(list,or_string)
+    local split_string
+    if do_or then
+        split_string = or_string
+    else
+        split_string = and_string
+    end
+    local numList = select("#", string.split(split_string, list))
+    for i=1,numList do
+        local QID = select(numList-i+1, string.split(split_string, list))
+        QID = tonumber(QID)
+		if not QID then
+		    WoWPro:Error("Malformed QID [%s] in Guide %s",QIDs,WoWProDB.char.currentguide)
+		    QID=0
+		end
+	    local val = func(math.abs(QID))
+	    if QID < 0 then
+	        val = not val
+	    end
+        if do_or and val then
+            return true
+        else
+            if not val then
+                return false
+            end
+        end
+    end
+    return not do_or
+end
 
 -- See if any of the list of QUIDs are in the indicated table.
 function WoWPro:QIDsInTable(QIDs,tabla)
-    if not QIDs then return false end
+    if not QIDs or QIDs == "" then return false end
     local numQIDs = select("#", string.split(";", QIDs))
     local default = false
 	for j=1,numQIDs do
@@ -450,15 +482,31 @@ function WoWPro:NextStep(k,i)
     		end
     	end
     	if skip then break end -- Exit the loop
-    
-        -- Select the right C step with the QG tag that matches the gossip
-        if WoWPro.GossipText and WoWPro.gossip[k] and  not WoWProCharDB.Guide[GID].completion[k] then
-            if string.find(WoWPro.GossipText, WoWPro.gossip[k], 1 , true) then
+
+    	-- Check leadin
+    	if WoWPro.leadin[k] and k <= CurrentIndex and
+    		WoWPro:IsQuestFlaggedCompleted(WoWPro.leadin[k]) then
+ 			skip = true 
  			WoWPro:dbp("Step %s [%s] skipped because it is a leadin to QID %s that is completed.",WoWPro.action[k],WoWPro.step[k],WoWPro.leadin[k])
  			WoWPro.why[k] = "NextStep(): Skipping step because it is a leadin to a completed quest."
 			WoWProCharDB.Guide[GID].skipped[k] = true
-            end
+ 			break
+    	end
 
+		-- Select the right C step with the QG tag that matches the gossip
+		if WoWPro.GossipText and WoWPro.gossip[k] and  not WoWProCharDB.Guide[GID].completion[k] then
+		   -- is gossip in GossipText?
+		   if string.find(WoWPro.GossipText, WoWPro.gossip[k], 1 , true) then
+		       -- Found it
+		       WoWPro:dbp("Step %s [%s] '%s' in GossipText",WoWPro.action[k],WoWPro.step[k],WoWPro.gossip[k])
+		       WoWPro.why[k] = "Located gossip word in gossip text"
+		       skip = false
+		   else
+		       WoWPro.why[k] = "Gossip word not in gossip text"
+		       WoWProCharDB.Guide[GID].skipped[k] = true
+		       skip = true
+		   end
+		end
         -- Partial Completion --
         -- Already done in AutoCompleteQuestUpdate
         -- if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[k] 
@@ -478,6 +526,7 @@ function WoWPro:NextStep(k,i)
 	       --  --if the step has not been found to be incomplete, run the completion function
 	       --  if complete then
 	       --      WoWPro.CompleteStep(i)
+	       --      skip = true
 	       --      break
 	       --  end 
         -- end
@@ -498,11 +547,15 @@ function WoWPro:NextStep(k,i)
     	if WoWPro.action[k] == "f"  and WoWProCharDB.Taxi[WoWPro.step[k]] then
 	        WoWPro.CompleteStep(k)
 	        skip = true
---    			WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k])
+	        break
 	   end	
-    		    -- For turnins, make sure we have completed the criteria
-    		    if not QidMapReduce(QID,false,";","|",function (qid) return WoWPro.QuestLog[qid].complete end) then
+
+	   -- Complete "h" steps if the Hearthstone is already bound to the correct desnisation
+	   if WoWPro.action[k] == "h" and WoWPro.step[k] == GetBindLocation() and k <= CurrentIndex then
 		   WoWPro.CompleteStep(k)
+		   skip = true
+		   break
+	   end
 
 	   -- Current zone check : steps that complete if were are in the correct zone.
 	   if (WoWPro.action[k] == "F" or WoWPro.action[k] == "R" or WoWPro.action[k] == "b" or WoWPro.action[k] == "H") and
@@ -613,24 +666,24 @@ function WoWPro:NextStep(k,i)
 			end
 
 
-            -- Extract lower bound rep
-            if not Rep2IdAndClass[repID] then
-                self:Error("Bad lower REP value of [%s] found in [%s].  Defaulting to 1.",temprep,WoWPro.rep[k])
-                repID = 0
-            end                
-            Friendship = Rep2IdAndClass[repID][2]
-            repID = Rep2IdAndClass[repID][1]
-            if not repID then
-                self:Error("Bad lower REP value of [%s] found in [%s].  Defaulting to 1.",temprep,WoWPro.rep[k])
-                repID = 0
-            end
+         -- Extract lower bound rep
+         if not Rep2IdAndClass[repID] then
+             self:Error("Bad lower REP value of [%s] found in [%s].  Defaulting to 1.",temprep,WoWPro.rep[k])
+             repID = 0
+         end                
+         Friendship = Rep2IdAndClass[repID][2]
+         repID = Rep2IdAndClass[repID][1]
+         if not repID then
+             self:Error("Bad lower REP value of [%s] found in [%s].  Defaulting to 1.",temprep,WoWPro.rep[k])
+             repID = 0
+         end
 
-            -- Extract upper bound rep
-            repmax = Rep2IdAndClass[repmax][1]
-            if not repmax then
-                self:Error("Bad upper REP value of [%s] found.  Defaulting to 5.",temprep)
-                repmax = 5
-            end
+         -- Extract upper bound rep
+         repmax = Rep2IdAndClass[repmax][1]
+         if not repmax then
+             self:Error("Bad upper REP value of [%s] found.  Defaulting to 5.",temprep)
+             repmax = 5
+         end
 
             
 			skip = true --reputation steps skipped by default
@@ -646,17 +699,17 @@ function WoWPro:NextStep(k,i)
 			    self:dbp("NPC %s is a %s: standing %d, earned %d",name,friendTextLevel,standingId,earnedValue)
 			else
 			    name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild , _, hasBonusRepGain = GetFactionInfoByID(factionIndex)
-                self:dbp("Faction %s: standing %d, earned %d, bottomValue %d, bonus %s",name,standingId,earnedValue,bottomValue,tostring(hasBonusRepGain))
-                earnedValue = earnedValue - bottomValue
+             self:dbp("Faction %s: standing %d, earned %d, bottomValue %d, bonus %s",name,standingId,earnedValue,bottomValue,tostring(hasBonusRepGain))
+             earnedValue = earnedValue - bottomValue
 			end
 
-            if type(replvl) == "boolean" then
-                if not(replvl) == not(hasBonusRepGain) then
-                    skip = false
-                    WoWPro.why[k] = "NextStep(): RepStep no skip on bonus"
-                end
-                self:dbp("Special replvl %s vs hasBonusRepGain %s, skip is %s",tostring(replvl),tostring(hasBonusRepGain),tostring(skip))
-            end 
+         if type(replvl) == "boolean" then
+             if not(replvl) == not(hasBonusRepGain) then
+                 skip = false
+                 WoWPro.why[k] = "NextStep(): RepStep no skip on bonus"
+             end
+             self:dbp("Special replvl %s vs hasBonusRepGain %s, skip is %s",tostring(replvl),tostring(hasBonusRepGain),tostring(skip))
+         end 
 
 			if type(replvl) == "number" and (repID <= standingId) and (repmax >= standingId) and (replvl == 0) then
 				skip = false
@@ -679,7 +732,10 @@ function WoWPro:NextStep(k,i)
 			    WoWProCharDB.Guide[GID].skipped[k] = true
 			    WoWProCharDB.skippedQIDs[QID] = true
 			end
-			if skip then break end
+			if skip then 
+				WoWProCharDB.Guide[GID].skipped[k] = true
+				break 
+			end
       end
         
       -- Skipping Achievements if completed  --
@@ -1005,10 +1061,10 @@ end
 -- 			WoWPro.QuestLog[questID] = {
 -- 				title = questTitle,
 -- 				level = level,
-				tag = questTag or "Standard",
+-- 				tag = questTag,
 -- 				group = suggestedGroup,
-				complete = isComplete or false,
-				daily = isDaily or false,
+-- 				complete = isComplete,
+-- 				daily = isDaily,
 -- 				leaderBoard = leaderBoard,
 -- 				header = currentHeader,
 -- 				use = use,
