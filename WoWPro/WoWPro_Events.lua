@@ -254,12 +254,20 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 							for l=1,numquesttext do
 								local lquesttext = select(numquesttext-l+1, (";"):split(WoWPro.questtext[i]))
 								local lcomplete = false
-								for j=1,GetNumQuestLeaderBoards(quest_log_index) do
-									local itemtext, _, isdone = GetQuestLogLeaderBoard(j, quest_log_index)
-									if (itemtext == lquesttext) or
-										(itemtext:match("(.+):") == lquesttext:match("(.+):") and isdone) then
+								local qoi = tonumber(lquesttext)
+								if qoi and qoi ~= 0 then
+									-- The |QO| argument is a number
+									if select(3,GetQuestLogLeaderBoard(qoi, quest_log_index)) then
 										lcomplete = true
-										break
+									end
+								else
+									for j=1,GetNumQuestLeaderBoards(quest_log_index) do
+										local itemtext, _, isdone = GetQuestLogLeaderBoard(j, quest_log_index)
+										if (itemtext == lquesttext) or
+											(itemtext:match("(.+):") == lquesttext:match("(.+):") and isdone) then
+											lcomplete = true
+											break
+										end
 									end
 								end
 								if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
@@ -291,6 +299,8 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 			end		
 		end
 	end
+
+	WoWPro.abandonedQID = nil
 	
 	-- First Map Point --
 	if WoWPro.FirstMapCall then
@@ -444,16 +454,28 @@ function WoWPro:UpdateQuestTracker()
       		elseif questtext then --Partial completion steps only track pertinent objective.
       			local numquesttext = select("#", (";"):split(questtext))
       			for l=1,numquesttext do
-      				local lquesttext = select(numquesttext-l+1, (";"):split(questtext))
-      				local litemname = lquesttext:match("(.+):") -- Everything before the : is the item name
-      				for m=1,GetNumQuestLeaderBoards(j) do
-      					if GetQuestLogLeaderBoard(m, j) then
-      						local itemtext, _, isdone = GetQuestLogLeaderBoard(m, j)
-      						local itemName = itemtext:match("(.+):") -- Everything before the : is the item name
-      						if itemName and itemName == litemname then
-      							track = ("%s%s- %s%s"):format(track, l>1 and "\n" or "", itemtext, isdone and " (C)" or "")
-      						end
+      				local lquesttext = select(l, (";"):split(questtext))
+      				local qoi = tonumber(lquesttext)
+      				if qoi and qoi ~= 0 then
+      					-- Numerical quest objectif
+      					local itemtext, _, isdone = GetQuestLogLeaderBoard(qoi, j)
+      					if itemtext then
+      						track = ("%s%s- %s%s"):format(track, l>1 and "\n" or "", itemtext, isdone and " (C)" or "")
+      					else
+      						track = ("%s%s|cFFFF0000*** Invalid quest objectif number '%s' in ||QO||%s|| ***|r"):format(track, l>1 and "\n" or "", qoi, questtext)
       					end
+      				else
+      					-- Text quest objectif
+	      				local litemname = lquesttext:match("(.+):") -- Everything before the : is the item name
+	      				for m=1,GetNumQuestLeaderBoards(j) do
+	      					if GetQuestLogLeaderBoard(m, j) then
+	      						local itemtext, _, isdone = GetQuestLogLeaderBoard(m, j)
+	      						local itemName = itemtext:match("(.+):") -- Everything before the : is the item name
+	      						if itemName and itemName == litemname then
+	      							track = ("%s%s- %s%s"):format(track, l>1 and "\n" or "", itemtext, isdone and " (C)" or "")
+	      						end
+	      					end
+	      				end
       				end
       			end
       		end
