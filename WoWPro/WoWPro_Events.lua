@@ -442,11 +442,11 @@ function WoWPro:UpdateQuestTracker()
             WoWPro:dbp("profile.track=%s action=%s questtext=%s lootitem=%s",tostring(WoWProDB.profile.track),tostring(action),tostring(questtext),tostring(lootitem))		
         end
 
-      if WoWProDB.profile.track and ( action == "C" or questtext or lootitem) then
+      if WoWProDB.profile.track and ( action == "C" or action == "K"or questtext or lootitem) then
       	if WoWPro.QuestLog[QID] and GetNumQuestLeaderBoards(WoWPro.QuestLog[QID]) > 0 then
       		local j = WoWPro.QuestLog[QID]
       		row.trackcheck = true
-      		if not questtext and action == "C" then
+      		if not questtext and (action == "C" or action == "K") then
       			for l=1,GetNumQuestLeaderBoards(j) do
       				local itemtext, _, isdone = GetQuestLogLeaderBoard(l, j)
       				track = ("%s%s- %s%s"):format(track, l>1 and "\n" or "", itemtext, isdone and " (C)" or "")
