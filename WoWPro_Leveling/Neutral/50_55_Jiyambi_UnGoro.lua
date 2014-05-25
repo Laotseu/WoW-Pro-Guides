@@ -61,7 +61,7 @@ WoWPro:GuideSteps(guide, function()
 return [[
 
 N Devilsaurs|QID|24720|N|Huge, elite, hostile dinosaurs patrol this zone, so always be aware of your surroundings! That said, this is one of prettiest and most fun zones, so don't be discouraged!|
-F Southmoon Ruins|QID|24731|Z|Tanaris|N|Fly to Gunstan's Dig in Tanaris.|FACTION|Alliance|
+F Gunstan's Dig|QID|24731|Z|Tanaris|N|Fly to Gunstan's Dig in Tanaris.|FACTION|Alliance|
 F Southmoon Ruins|QID|24731|Z|Tanaris|N|Fly to Dawnrise Expedition in Tanaris.|FACTION|Horde|
 R Un'Goro Crater|QID|24731|M|27.96,54.08|Z|Tanaris|N|This is the path to Un'goro from Tanaris.|
 A The Fare of Lar'korwi|RANK|2|QID|24731|M|71.27,76.67|N|From Torwa Pathfinder.|
@@ -75,7 +75,7 @@ A The Scent of Lar'korwi|RANK|2|QID|24732|PRE|24731|M|71.20,76.46|N|From Torwa P
 T Claws of White|QID|24719|M|70.76,76.39|N|To Garl Stormclaw.|
 
 A Carried on the Waves|QID|24686|PRE|24719|M|70.76,76.39|N|From Garl Stormclaw.|
-C Carried on the Waves|QID|24686|U|50441|M|73.13,62.00|N|Get into the river and swim north, looking for tiny orange spores under the water. Use the net when you are near them to gather them.|
+C Carried on the Waves|QID|24686|T|Bloodpetal Seed,use item:50441|U|50441|M|73.13,62.00|N|Get into the river and swim north, looking for tiny orange spores under the water. Use the net when you are near them to gather them.|
 C The Scent of Lar'korwi|QID|24732|M|71.48,60.17;67.42,60.68;67.01,62.55;66.61,66.62;67.31,72.94|CN|N|Look for nests. Once you stand on them, a Mate will appear - kill and loot it.|
 T Carried on the Waves|QID|24686|M|71.04,76.62|N|To Garl Stormclaw.|
 A Flowing to the North|QID|24689|PRE|24686|M|71.04,76.62|N|From Garl Stormclaw.|
@@ -101,9 +101,10 @@ T The Bait for Lar'korwi|RANK|2|QID|24733|M|71.20,76.52|N|Back down to Torwa Pat
 l Blue Crystals|NC|US|L|11184 7|QID|24720|N|Loot 7 blue crystals from the big crystal nodes in this part of the zone.|
 
 R Marshal's Stand|QID|24865|M|55.97,64.15|N|Follow the road north to Marshal's Stand.|
+f Marshal's Stand|M|56.0,64.2|N|From Gryfe|
 T Hero's Call: Un'Goro Crater!|QID|28525|O|M|55.09,62.16|N|To Williden Marshal.|FACTION|Alliance|
 T Warchief's Command: Un'Goro Crater!|O|QID|28526|N|To Williden Marshal.|FACTION|Horde|
-T Tropical Paradise Beckons|O|QID|24911|M|55.13,62.19|N|To Williden Marshal.|
+T Tropical Paradise Beckons|QID|24911|M|55.13,62.19|N|To Williden Marshal.|
 T Is This Stuff Still Good?|QID|24865|M|55.13,62.19|N|To Williden Marshal.|
 A Volcanic Activity|QID|24740|M|55.13,62.19|N|From Williden Marshal.|
 A Finding the Source|QID|24742|M|55.32,62.44|N|From Krakle.|
@@ -115,7 +116,7 @@ A How to Make Meat Fresh Again|RANK|2|QID|24697|M|55.09,60.52|N|From Nolen Tacke
 C How to Make Meat Fresh Again|RANK|2|QID|24697|U|50430|M|53.83,60.86|N|Use the meat on the nearby Diemetrodons, and have them chase you into the pit.|
 T How to Make Meat Fresh Again|RANK|2|QID|24697|M|55.00,60.54|N|To Nolen Tacker.|
 C Volcanic Activity|QID|24740|M|48.57,48.34|S|N|Kill and loot elementals.|
-C Finding the Source|QID|24742|U|12472|M|56.23,56.75;47.57,55.59;45.48,48.38;48.40,43.67;55.13,43.34|CN|N|Circle the volcano, checking the different hot spots until you find the hottest one.|
+C Finding the Source|QID|24742|NC|U|12472|M|56.23,56.75;47.57,55.59;45.48,48.38;48.40,43.67;55.13,43.34|CN|N|Circle the volcano, checking the different hot spots until you find the hottest one.|
 C Volcanic Activity|QID|24740|M|48.57,48.34|US|N|Kill and loot elementals.|
 T Volcanic Activity|QID|24740|M|55.11,62.18|N|To Williden Marshal, back at Marshall's Stand.|
 A Blazerunner|QID|24690|PRE|24740|M|55.11,62.18|N|From Williden Marshal.|
@@ -124,7 +125,7 @@ T Finding the Source|QID|24742|M|55.28,62.50|N|To Krakle.|
 A Speak With Spraggle|QID|24794|PRE|24742|M|55.28,62.50|N|From Krakle.|
 T Speak With Spraggle|QID|24794|M|55.01,62.62|N|To Spraggle Frock.|
 A Lost!|QID|24734|PRE|24794|M|55.01,62.62|N|From Spraggle Frock.|
-C Blazerunner|QID|24690|M|49.28,49.20|N|Run past the sack with the quest turn-in - we'll get it on the way down. Head to the top of the volcano and kill Blazerunner.|
+K Blazerunner|QID|24690|T|Blazerunner|M|49.28,49.20|N|Run past the sack with the quest turn-in - we'll get it on the way down. Head to the top of the volcano and kill Blazerunner.|
 T Lost!|QID|24734|M|53.02,51.82|N|At the sack outside the cave on the south side of the mountain.|
 A A Little Help From My Friends|QID|24735|M|51.97,49.78|N|From Ringo, inside the cave.|
 C A Little Help From My Friends|QID|24735|NC|U|11804|M|54.89,62.29|N|Lead Ringo back to Marshal's Stand. Right-click him if he seems weak, use the canteen if he passes out. The game will prompt you if you aren't sure what to do.|
@@ -134,13 +135,15 @@ T A Little Help From My Friends|QID|24735|M|55.06,62.60|N|To Spraggle Frock.|
 A The Fledgling Colossus|QID|24692|PRE|24690|M|55.00,62.28|N|From Hol'anyee Marshal.|
 A Peculiar Delicacies|QID|24691|PRE|24690|M|54.82,63.78|N|From Quixxil.|
 C Peculiar Delicacies|QID|24691|M|50.10,80.79|S|N|Kill and loot silithid at the Slithering Scar.|
-C The Fledgling Colossus|QID|24692|M|49.98,81.55;46.70,82.96;46.76,86.74|CS|N|This is fairly easy for a group quest, but if you find it too difficult, save it for later or skip it - it has no follow-ups. When the collossus starts casting Poison Explosion, run and hide behind the pillar.|
+K Gorishi Fledgling Colossus|QID|24692|T|Gorishi Fledgling Colossus|M|49.98,81.55;46.70,82.96;46.76,86.74|CS|N|This is fairly easy for a group quest, but if you find it too difficult, save it for later or skip it - it has no follow-ups. When the collossus starts casting Poison Explosion, run and hide behind the pillar.|
 C Peculiar Delicacies|QID|24691|M|50.10,80.79|US|N|Kill and loot silithid at the Slithering Scar.|
 H Marshal's Stand|QID|24691|M|54.79,63.90|N|Hearth back to Marshall's Stand. Or ride back if it is down, or if you didn't set your hearth there.|
 T Peculiar Delicacies|QID|24691|M|54.79,63.90|N|To Quixxil.|
 A Mossy Pile|QID|24693|PRE|24691|M|54.79,63.90|N|From Quixxil.|
 T The Fledgling Colossus|QID|24692|M|55.00,62.16|N|To Hol'anyee Marshal.|
-F Mossy Pile|QID|24693|M|55.97,64.17|N|Fly to Mossy Pile.|
+;When doing the guide on level, the FP for Mossy Pile will not be available
+;F Mossy Pile|QID|24693|M|55.97,64.17|N|Fly to Mossy Pile.|
+f Mossy Pile|QID|24693|M|44.1,40.3|N|From Flizzy Coilspanner.|
 T Mossy Pile|QID|24693|M|43.19,41.18|N|To Gremix.|
 
 A Marshal's Refuse|QID|24701|M|43.15,41.13|N|From Doreen.|
@@ -163,17 +166,18 @@ T Super Sticky|QID|24737|M|43.23,41.68|N|To Tara.|
 A Gormashh the Glutinous|QID|24699|PRE|24737|M|43.23,41.68|N|From Tara.|
 T Hard to Harvest|QID|24700|M|43.23,41.68|N|To Tara.|
 A Chasing A-Me 01|QID|24714|PRE|24701|M|43.37,41.00|N|From Karna Remtravel.|
-l Green Crystals|NC|S|QID|24720|M|60.12,31.75|N|Loot 7 green crystals from the big crystal nodes in this part of the zone.|QO|Green Power Crystal: 7/7|
-C Gormashh the Glutinous|QID|24699|U|50746|M|60.12,31.75|N|Use the tar scraper on Gormash after you defeat him.|
+C Green Crystals|NC|S|QID|24720|NC|M|60.12,31.75|N|Loot 7 green crystals from the big crystal nodes in this part of the zone.|QO|Green Power Crystal: 7/7|
+K Gormashh|QID|24699|T|Gormashh|U|50746|M|60.12,31.75|N|Use the tar scraper on Gormashh after you defeat him.|
 C The Apes of Un'Goro|QID|24717|M|67.57,16.84|N|Kill and loot 2 pelts from each gorilla type.|S|
 T Chasing A-Me 01|QID|24714|M|63.81,19.79|N|To A-Me 01, at Fungal Rock to the north.|
 A Repairing A-Me 01|QID|24715|M|63.81,19.79|N|From A-Me 01.|
-C Repairing A-Me 01|QID|24715|M|64.08,20.06|N|Pick up a nearby coconut, take it to the rock. Use it there to crack it, then use the cracked coconut.|
+C Get a coconut and crack it on the stone|QID|24715|NC|U|50237|L|50238|M|64.08,20.06|N|Pick up a nearby coconut, take it to the rock. Use it there to crack it, then use the cracked coconut.|
+C Get the milk from the coconut|QID|24715|NC|U|50238|M|64.08,20.06|N|Pick up a nearby coconut, take it to the rock. Use it there to crack it, then use the cracked coconut.|
 T Repairing A-Me 01|QID|24715|M|63.82,19.77|N|To A-Me 01.|
 
 A Serving A-Me 01|QID|24926|M|63.82,19.77|N|From A-Me 01.|
 A The Mighty U'cha|QID|24718|M|63.82,16.48;65.06,16.54|CS|N|This quest should automatically pop up when entering the cave.|
-C The Mighty U'cha|QID|24718|M|68.06,15.94|N|U'cha patrols through the cave.|
+K U'cha|QID|24718|T|U'cha|M|68.06,15.94|N|U'cha patrols through the cave.|
 C The Apes of Un'Goro|QID|24717|M|67.57,16.84|N|Kill and loot 2 pelts from each gorilla type.|US|
 l Green Crystals|NC|US|QID|24720|M|60.12,31.75|N|Loot 7 green crystals from the big crystal nodes in this part of the zone.|QO|Green Power Crystal: 7/7|
 T Serving A-Me 01|QID|24926|M|43.41,40.87|N|To Karna Remtravel, back at Mossy Pile.|
@@ -218,12 +222,12 @@ C The Fossil-Finder 3000|QID|24708|U|50405|M|32.99,74.51|N|This works a lot like
 T The Fossil-Finder 3000|QID|24708|M|31.86,50.30|N|Back to Spark Nilminer.|
 
 A A Tale of Two Shovels|QID|24709|M|31.86,50.30|N|From Spark Nilminer.|
-C A Tale of Two Shovels|QID|24709|M|37.62,81.63|N|Durrin patrols the area on a raptor.|
+K Durrin Direshovel|QID|24709|T|Durrin Direshovel|M|37.62,81.63|N|Durrin patrols the area on a raptor.|
 T A Tale of Two Shovels|QID|24709|M|31.89,50.39|N|Back to Spark Nilminer.|
 A The Western Pylon|QID|24723|M|31.89,50.39|N|From Spark Nilminer.|
 C The Western Pylon|QID|24723|NC|M|23.48,49.98|N|Right-click the western pylon, at the crater wall to the west.|
 C Crystals of Power|NC|US|QID|24720|M|31.16,77.41|N|Loot 7 red crystals from the big crystal nodes in this part of the zone.|QO|Red Power Crystal: 7/7|
-H Marshal's Stand|QID|24722|M|54.79,63.90|N|Hearth back to Marshall's Stand. Or ride back if it is down, or if you didn't set your hearth there.|
+H Marshal's Stand|QID|24866|M|54.79,63.90|N|Hearth back to Marshall's Stand. Or ride back if it is down, or if you didn't set your hearth there.|
 T An Abandoned Research Camp|QID|24866|M|54.99,62.19|N|To Hol'anyee Marshal.|
 T The Western Pylon|QID|24723|M|54.25,62.51|N|To J.D. Collie.|
 T Crystals of Power|QID|24720|M|54.23,62.46|N|To J.D. Collie.|

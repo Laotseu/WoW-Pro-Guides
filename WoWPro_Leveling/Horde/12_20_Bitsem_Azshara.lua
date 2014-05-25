@@ -95,10 +95,10 @@ return [[
 L Level 9 |QID|25275;25648;28496|LVL|9|N|This guide requires a minimum level of 9 to do.|
 
 A Beyond Durotar|QID|25648|M|45.0,14.6|Z|Durotar|N|From Gor the Enforcer, just outside Orgrimmar's Southern Gates|LVL|16|LEAD|25275;28496|
-T Beyond Durotar|QID|25648|M|26.84,77.00|N|To Ag'tor Bloodfist.|LEAD|25275;28496|
+T Beyond Durotar|QID|25648|M|26.84,77.00|N|To Ag'tor Bloodfist.|LEAD|25275;28496|ACTIVE|
 
 A Warchief's Command: Azshara!|QID|28496|M|26.84,77.00|N|From the Warchief's Command Board.|LEAD|25275;25648|
-T Warchief's Command: Azshara!|QID|28496|M|26.84,77.00|N|To Ag'tor Bloodfist.|LEAD|25275;25648|
+T Warchief's Command: Azshara!|QID|28496|M|26.84,77.00|N|To Ag'tor Bloodfist.|LEAD|25275;25648|ACTIVE|
 
 A Venison for the Troops|QID|14118|M|26.88,76.98|N|From Ag'tor Bloodfist.|
 A The Eyes of Ashenvale|QID|14117|M|26.88,76.98|N|From Ag'tor Bloodfist.|
@@ -161,28 +161,31 @@ A Hand-me-downs|QID|14469|RANK|2|M|29.43,57.68|N|From Commander Molotov.|
 A Military Breakthrough|QID|14470|RANK|2|M|29.38,57.61|N|From Glix Grindlock.|
 A First Degree Mortar|QID|14471|RANK|2|M|29.10,57.94|N|From Xiz "The Eye" Salvoblast.|
 C Hand-me-downs|QID|14469|S|M|27.75,54.06|N|Retrieve 12 Military Supply Packs from the central minefield.|
-C Military Breakthrough|QID|14470|M|27.63,51.91|N|Kill Warlord Krellen and recover the SFG.|
+C Military Breakthrough|QID|14470|T|Warlord Krellian|M|27.63,51.91|N|Kill Warlord Krellen and recover the SFG.|
 C Hand-me-downs|QID|14469|US|M|27.75,54.06|N|Retrieve 12 Military Supply Packs from the central minefield.|
 C First Degree Mortar|QID|14471|M|31.10,57.63|N|Use a Goblin Mortar to slaughter 60 Spitelash Attackers.|
-T First Degree Mortar|QID|14471|M|29.10,57.94|N|To Xiz "The Eye" Salvoblast.|
-T Military Breakthrough|QID|14470|M|29.38,57.61|N|To Glix Grindlock.|
-T Hand-me-downs|QID|14469|M|29.46,57.67|N|To Commander Molotov.|
+T Hand-me-downs|QID|14469|M|29.41,57.68|N|To Commander Molotov.|
+T First Degree Mortar|QID|14471|M|29.20,57.91|N|To Xiz "The Eye" Salvoblast.|
+T Military Breakthrough|QID|14470|M|29.32,57.71|N|To Glix Grindlock.|
 
 A In The Face!|QID|14472|RANK|2|M|29.38,57.61|N|From Glix Grindlock.|
 C In The Face!|QID|14472|M|31.44,60.75|N|Use an SFG to kill an Enslaved Son of Arkkoroc in the southern minefield.|
 T In The Face!|QID|14472|M|29.38,57.61|N|To Glix Grindlock.|
 A Profitability Scouting|QID|24452|RANK|2|M|29.46,57.67|N|From Commander Molotov.|
 C Profitability Scouting|QID|24452|NC|U|49701|M|31.31,49.92|N|Use the stealth field generator to infiltrate the Ruins of Eldarath and identify the Heart of Arkkoroc.|
-T Profitability Scouting|QID|24452|M|29.46,57.67|N|To Commander Molotov.|
+T Profitability Scouting|QID|24452|U|49701|M|29.47,57.78|N|To Commander Molotov.|
 A Private Chat|QID|24453|PRE|24452|RANK|2|M|29.46,57.67|N|From Commander Molotov.|
 T Private Chat|QID|24453|M|29.55,66.73|N|Back to the Orgrimmar Rocketway Exchange, to Private Worcester.|
 A A Thousand Stories in the Sand|QID|14201|M|29.7,66.9|N|From Malynea Skyreaver.|
 A Survey the Lakeshore|QID|14202|M|29.71,67.11|N|From Custer Clubnik.|N|Protect the goblin that you call with the beacon, while they survey the West, North and East Markers.|
-C A Thousand Stories in the Sand|QID|14201|M|33.57,74.65|S|N|Collect Recovered Artifacts.|
+C A Thousand Stories in the Sand|QID|14201|S|NC|M|33.57,74.65|S|N|Collect Recovered Artifacts.|
+;N Survey North Marker|QID|14202|U|48665|QO|Survey North Marker: 1/1|M|34.69,71.57|U|48665|N|Stand next to the Survey Equipment and protect the Surveryor until you get the completion for that section.|
+;N Survey  Marker|QID|14202|U|48665|QO|Survey  Marker: 1/1|M|37.37,74.61|U|48665|N|Stand next to the Survey Equipment and protect the Surveryor until you get the completion for that section.|
+;C Survey the Lakeshore|QID|14202|U|48665|M|34.29,76.62|U|48665|N|Stand next to the Survey Equipment and protect the Surveryor until you get the completion for that section.|
 C Survey North Marker|QID|14202|U|48665|QO|Survey North Marker: 1/1|M|34.69,71.57|U|48665|N|Stand next to the Survey Equipment and protect the Surveryor until you get the completion for that section.|
-C Survey  Marker|QID|14202|U|48665|QO|Survey East Marker: 1/1|M|37.37,74.61|U|48665|N|Stand next to the Survey Equipment and protect the Surveryor until you get the completion for that section.|
-C Survey the Lakeshore|QID|14202|U|48665|QO|Survey West Marker: 1/1|M|34.29,76.62|U|48665|N|Stand next to the Survey Equipment and protect the Surveryor until you get the completion for that section.|
-C A Thousand Stories in the Sand|QID|14201|M|33.57,74.65|US|N|Collect Recovered Artifacts.|
+C Survey East Marker|QID|14202|U|48665|QO|Survey East Marker: 1/1|M|37.37,74.61|U|48665|N|Stand next to the Survey Equipment and protect the Surveryor until you get the completion for that section.|
+C Survey West Marker|QID|14202|U|48665|QO|Survey West Marker: 1/1|M|34.29,76.62|N|Stand next to the Survey Equipment and protect the Surveryor until you get the completion for that section.|
+C A Thousand Stories in the Sand|QID|14201|US|NC|M|33.57,74.65|US|N|Collect Recovered Artifacts.|
 T A Thousand Stories in the Sand|QID|14201|M|29.64,66.86|N|To Malynea Skyreaver.|
 
 A Memories of the Dead|QID|14215|PRE|14201|M|29.64,66.86|N|From Malynea Skyreaver.|
@@ -196,13 +199,14 @@ A Gunk in the Trunk|QID|14209|PRE|14202|M|29.71,67.11|N|From Custer Clubnik.|
 C Gunk in the Trunk|QID|14209|M|30.02,67.37|N|Click on the Dozer and kill the Ectoplasmic Exhaust that appears. Loot the sample.|
 T Gunk in the Trunk|QID|14209|M|29.73,67.15|N|To Custer Clubnik.|
 A Dozercism|QID|14423|PRE|14209|M|29.73,67.15|N|From Custer Clubnik.|
-C Dozercism|QID|14423|U|49350|M|28.94,66.54|N|Use the Blessed Flaregun by Clubnik's Dozer. Be sure you have the Dozer targeted when the priest appears, or it is hard to target it afterwards.|
+C Dozercism|QID|14423|U|49350|M|30.0,67.3|N|Use the Blessed Flaregun by Clubnik's Dozer. Be sure you have the Dozer targeted when the priest appears, or it is hard to target it afterwards.|
 T Dozercism|QID|14423|M|29.62,67.07|N|To Custer Clubnik.|
 
 A Need More Science|QID|14424|M|29.62,67.07;29.39,66.63|CS|N|From Custer Clubnik. Ride the lift to the top of the tower and talk to the goblin for a rocket ride to the Southern Rocketway Terminus.|
 F Southern Rocketway Terminus|QID|14424|M|29.47,66.22|N|Go to the top of the tower, talk to the Bilgewater Rocket-jockey and ride the rocket to Southern Rocketway Terminus.|
 T Need More Science|QID|14424|M|50.38,74.25|N|To Assistant Greely.|
 A When Science Attacks|QID|14308|PRE|14424|M|50.38,74.25|N|From Assistant Greely.|
+f Southern Rocketway|M|51.5,74.3|
 A Mortar the Point|QID|14258|M|52.17,74.22|N|From Bombardier Captain Smooks.|
 C Mortar the Point|QID|14258|M|43.11,77.18|N|Collect Mortar shells.|S|
 C When Science Attacks|QID|14308|U|49132|M|43.39,76.07|N|Put out Lab fires, and put out Research Interns that are on fire.|S|
@@ -245,8 +249,10 @@ A Sisters of the Sea|QID|14295|PRE|14271|RANK|3|M|50.69,75.20|N|From Torg Twocru
 T Mysterious Azsharite|QID|14370|M|50.45,74.37|N|To Assistant Greely.|
 T A Gigantic Snack|QID|14371|M|50.45,74.37|N|To Assistant Greely.|
 A Befriending Giants|QID|14377|M|50.45,74.37|N|From Assistant Greely.|
-K Lady Silisthra|QID|14295|M|62.81,76.32|QO|Lady Silisthra slain: 1/1|N|Kill Lady Silisthra, disable the Power Stone behind her to make it easier to kill her.|
-C Sisters of the Sea|QID|14295|M|63.13,79.38|N|Kill Lady Vesthra, disable the Power Stone behind her to make it easier to kill her.|
+K Lady Vesthra|QID|14295|S|T|Lady Vesthra|M|63.13,79.38|QO|Lady Vesthra slain: 1/1|N|Kill Lady Vesthra, disable the Power Stone behind her to make it easier to kill her.|
+K Lady Silisthra|QID|14295|T|Lady Silisthra|M|63.1,75.9|QO|Lady Silisthra slain: 1/1|N|Kill Lady Silisthra, disable the Power Stone behind her to make it easier to kill her.|
+K Lady Vesthra|QID|14295|US|T|Lady VesthraM|63.13,79.38|QO|Lady Vesthra slain: 1/1|N|Kill Lady Vesthra, disable the Power Stone behind her to make it easier to kill her.|
+;C Sisters of the Sea|QID|14295|M|62.81,76.32|N|Kill Lady Vesthra, disable the Power Stone behind her to make it easier to kill her.|
 T Sisters of the Sea|QID|14295|M|50.70,75.21|N|To Torg Twocrush.|
 C Befriending Giants|QID|14377|M|47.78,75.47|N|Talk to Gormungan.|
 T Befriending Giants|QID|14377|M|50.39,74.30|N|To Assistant Greely.|
@@ -254,7 +260,7 @@ T Befriending Giants|QID|14377|M|50.39,74.30|N|To Assistant Greely.|
 A Azsharite Experiment Number One|QID|14385|PRE|14377|M|50.39,74.30|N|From Assistant Greely.|
 A The Terrible Tinkers of the Ruined Reaches|QID|14383|M|50.50,74.75|N|From Hobart Grapplehammer.|
 C The Terrible Tinkers of the Ruined Reaches|QID|14383|S|M|43.49,83.00;40.07,84.43|CS|N|Follow the lit path West, kill gnomes on your way to Bingham Gadgetspring inside the house. Kill him.|
-l Giant-Sized Laxative|QID|14385|PRE|14377|M|43.49,83.00;40.07,84.43|CS|L|49230|N|The Laxative is upstairs in Bingham's house.|
+C Giant-Sized Laxative|QID|14385|NC|PRE|14377|QO|Giant-Sized Laxative: 1/1|M|43.49,83.00;40.07,84.43|N|The Laxative is upstairs in Bingham's house.|
 C Azsharite Experiment Number One|QID|14385|PRE|14377|M|47.8,75.5|N|Attempt to give the laxative to Gormungan.|
 C The Terrible Tinkers of the Ruined Reaches|QID|14383|US|M|43.49,83.00;40.07,84.43|CS|N|Kill the rest of the gnomes needed to finish the quest.|
 T Azsharite Experiment Number One|QID|14385|M|50.38,74.29|N|To Assistant Greely.|
