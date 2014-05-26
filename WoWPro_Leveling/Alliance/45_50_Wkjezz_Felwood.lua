@@ -75,7 +75,7 @@ T Hero's Call: Felwood!|QID|28543|O|M|51.20,80.49|N|To Tenell Leafrunner.|
 A The Corruption of the Jadefire|QID|27997|M|51.20,80.49|N|From Tenell Leafrunner.|
 A Culling the Corrupted|QID|28148|M|50.92,80.21|N|From Taronn Redfeather.|
 A A Talking Totem|QID|28100|M|51.40,80.55|N|From Grazle.|
-f Emerald Sanctuary|QID|28100|M|51.49,80.80|N|At Gorrim.|
+f Emerald Sanctuary|M|51.49,80.80|N|At Gorrim.|
 T A Talking Totem|QID|28100|M|51.50,83.63|N|To the Totem of Ruumbo.|
 
 A Ruumbo Demands Justice|QID|27994|M|51.50,83.63|N|From the Totem of Ruumbo.|
@@ -122,7 +122,7 @@ A Jaedenar Awaits|QID|28152|M|42.01,71.77|N|From Eridan Bluewind.|
 C Open Their Eyes|QID|28288|U|63395|M|42.19,79.05|N|Taste the Rainbow.|
 T Open Their Eyes|QID|28288|M|41.90,71.98|N|To Arcanist Delaris.|
 
-f Wildheart Point|QID|28152|M|44.29,61.89|N|At Chyella Hushglade.|
+f Wildheart Point|M|44.29,61.89|N|At Chyella Hushglade.|
 h Wildheart Point|QID|28152|M|43.98,61.94|N|At Innkeeper Teenycaugh.|
 T Jaedenar Awaits|QID|28152|M|43.96,61.90|N|To Greta Mosshoof.|
 A Crying Violet|QID|28116|M|43.96,61.90|N|From Greta Mosshoof.|
@@ -165,13 +165,13 @@ A The Fate of Bloodvenom Post|QID|28305|M|44.09,61.82|N|From Farlus Wildheart.|
 T The Fate of Bloodvenom Post|QID|28305|M|41.26,49.89|N|To Kelnir Leafsong.|
 A A Slimy Situation|QID|28207|M|41.26,49.89|N|From Kelnir Leafsong.|
 A The Tainted Ooze|QID|28190|M|41.26,49.89|N|From Altsoba Ragetotem.|
-C The Tainted Ooze|QID|28190|M|41.73,47.50|N|Kill 8 Tainted Oozes.|
+C The Tainted Ooze|QID|28190|S|M|41.73,47.50|N|Kill 8 Tainted Oozes.|
 C A Slimy Situation|QID|28207|M|41.73,47.50|N|Do a lap on the edge of the lake, the mushrooms are blue.|
-C The Tainted Ooze|QID|28190|M|41.73,47.50|N|Finish killing Tainted Oozes.|
+C The Tainted Ooze|QID|28190|US|M|41.73,47.50|N|Finish killing Tainted Oozes.|
 T The Tainted Ooze|QID|28190|M|41.31,49.88|N|To Altsoba Ragetotem.|
 T A Slimy Situation|QID|28207|M|41.31,49.88|N|To Kelnir Leafsong.|
 A Winna's Kitten|QID|28208|M|41.29,50.01|N|From Kelnir Leafsong.|
-C Winna's Kitten|QID|28208|M|38.88,52.99|N|Kill and loot Winna's Kitten to get the eartag.|
+K Winna's Kitten|QID|28208|T|Winna's Kitten|M|38.88,52.99|N|Kill and loot Winna's Kitten to get the eartag.|
 T Winna's Kitten|QID|28208|M|41.27,49.88|N|To Kelnir Leafsong.|
 
 A Hazzard Disposal|QID|28213|M|41.27,49.88|N|From Kelnir Leafsong.|
@@ -185,7 +185,7 @@ A Whisperwind Grove|QID|28306|M|41.28,49.89|N|From Kelnir Leafsong.|
 T Whisperwind Grove|QID|28306|M|43.29,30.43|N|Follow the path north to Tender Puregrove.|
 A Running Their Course|QID|28360|M|43.29,30.43|N|From Tender Puregrove.|
 A Squirrely Clean|QID|28361|M|43.31,30.36|N|From Tender Puregrove.|
-f Whisperwind Grove|QID|28361|M|43.61,28.74|N|At Hanah Southsong.|
+f Whisperwind Grove|M|43.61,28.74|N|At Hanah Southsong.|
 r Repair/Restock|M|43.13,28.59|N|At Ciana.|QID|28358|
 A Hunting the Damned|QID|28358|M|44.01,27.89|N|From Hurak Wildhorn.|
 A The Core of Kroshius|QID|28359|M|43.98,27.89|N|From Hurak Wildhorn.|
@@ -194,13 +194,13 @@ A Fel To Pieces|QID|28342|M|43.94,27.88|N|From Elessa Starbreeze.|
 
 h Whisperwind Grove|QID|28342|M|44.75,29.17|N|At Innkeeper Wylaria.|
 C Running Their Course|QID|28360|S|M|44.04,34.65|N|Kill Felrot Coursers.|
-C Squirrely Clean|QID|28361|M|45.54,34.17|N|Right click on them as you see them, they are friendly.|
+C Squirrely Clean|QID|28361|T|Tainted Squirrel|M|45.54,34.17|N|Right click on them as you see them, they are friendly.|
 C Running Their Course|QID|28360|US|M|44.04,34.65|N|Kill Felrot Coursers.|
-C Fel To Pieces|QID|28342|S|M|44.35,41.77|N|Collect rubble off of the ground, can be looted off of the Infernals as well.|
+C Fel To Pieces|QID|28342|S|NC|M|44.35,41.77|N|Collect rubble off of the ground, can be looted off of the Infernals as well.|
 C Collecting Corruption|QID|28341|S|M|44.32,43.12|N|Kill Entropic Horrors and loot their Essence.|
 C Hunting the Damned|QID|28358|S|M|43.78,43.11|N|Kill infernals as you go.|
-C The Core of Kroshius|QID|28359|M|47.55,39.43|N|Kill and loot Kroshius to get his core.|
-C Fel To Pieces|QID|28342|US|M|44.35,41.77|N|Finish this now.|
+C The Core of Kroshius|QID|28359|T|Kroshius|M|47.55,39.43|N|Kill and loot Kroshius to get his core.|
+C Fel To Pieces|QID|28342|US|NC|M|44.35,41.77|N|Finish this now.|
 C Hunting the Damned|QID|28358|US|M|43.78,43.11|N|Finish this up.|
 C Collecting Corruption|QID|28341|M|44.32,43.12|N|Finish this up.|
 
@@ -222,21 +222,21 @@ T Nature and Nurture|QID|28229|M|48.67,25.14|N|(UI Alert)|
 
 A Seeking Soil|QID|28220|M|48.67,25.14|N|(UI Alert)|
 A Buzzers for Baby|QID|28219|M|48.82,25.71|N|From Seedling Protector.|
-C Seeking Soil|QID|28220|M|47.62,28.89|N|Run the Seedling Protector over the sparkling soil mounds.|S|
+C Seeking Soil|QID|28220|NC|M|47.62,28.89|N|Run the Seedling Protector over the sparkling soil mounds.|S|
 C Buzzers for Baby|QID|28219|M|49.93,30.30|N|Kill Ironwood Buzzers.|
 T Buzzers for Baby|QID|28219|M|49.82,30.00|N|UI Alert, or to Seedling Protector.|
-C Seeking Soil|QID|28220|M|47.62,28.89|N|Run the Seedling Protector over the sparkling soil mounds.|US|
+C Seeking Soil|QID|28220|NC|M|47.62,28.89|N|Run the Seedling Protector over the sparkling soil mounds.|US|
 T Seeking Soil|QID|28220|M|47.62,28.89|N|UI Alert, or to Seedling Protector.|
 A Singin' in the Sun|QID|28222|M|47.62,28.89|N|UI Alert, or from Seedling Protector.|
 A These Roots Were Made For Stompin'|QID|28221|M|47.62,28.89|N|From Sapling Protector.|
-C Singin' in the Sun|QID|28222|M|51.78,23.83|N|Move the Sapling Protector through shafts of light.|S|
+C Singin' in the Sun|QID|28222|NC|M|51.78,23.83|N|Move the Sapling Protector through shafts of light.|S|
 C These Roots Were Made For Stompin'|QID|28221|M|51.86,23.74|N|Kill Irontree Stompers.|
-C Singin' in the Sun|QID|28222|M|51.78,23.83|N|Move the Sapling Protector through shafts of light.|US|
+C Singin' in the Sun|QID|28222|NC|M|51.78,23.83|N|Move the Sapling Protector through shafts of light.|US|
 T These Roots Were Made For Stompin'|QID|28221|M|51.81,23.61|N|UI Alert, or to Sapling Protector.|
 T Singin' in the Sun|QID|28222|M|51.81,23.61|N|UI Alert, or to Sapling Protector.|
 
 A The Last Protector|QID|28224|M|51.81,23.61|N|UI Alert, or from Flourishing Protector.|
-C The Last Protector|QID|28224|M|52.79,23.94|N|Kill the Withered Protector.|
+K The Last Protector|QID|28224|T|Withered Protector|M|52.79,23.94|N|Kill the Withered Protector.|
 T The Last Protector|QID|28224|M|52.84,24.02|N|To the Flourishing Protector.|
 A Rejoining the Forest|QID|28228|M|52.84,24.02|N|From the Flourishing Protector.|
 C Rejoining the Forest|QID|28228|NC|M|48.72,25.26|N|Take the Flourishing Protector to the top of the small hill.|
@@ -264,7 +264,7 @@ r Repair/Restock|CC|M|43.07,28.65|N|At Ciana.|QID|28381|
 A The Denmother|QID|28381|M|44.34,28.11|N|From James Hallow.|
 
 F Talonbranch Glade|QID|28381|N|Right click and talk to the Flightmaster. She will fly you there if you use the speech bubble option.|M|43.61,28.69|
-f Talonbranch Glade|QID|28381|M|60.57,25.32|N|At Mishellena.|
+f Talonbranch Glade|M|60.57,25.32|N|At Mishellena.|
 T The Denmother|QID|28381|M|61.80,26.75|N|To Denmother Ulrica.|
 A Enemy at our Roots|QID|28382|M|61.80,26.75|N|From Denmother Ulrica.|
 A Wisps of the Woods|QID|28383|M|61.87,26.66|N|From Lyros Swiftwind.|

@@ -139,7 +139,7 @@ C In the Outhouse|QID|25524|U|54821|M|79.61,75.03|N|Use the Pirate's Crowbar on 
 T In the Outhouse|QID|25524|M|79.58,75.09|N|To Submerged Outhouse.|
 C Down in the Deeps|QID|25515|US|M|80.61,76.83|N|Collect Rocket Car Parts from the ground.|
 
-f Fizzle & Pozzik's Speedbarge|QID|25524|M|79.16,71.95|N|At Tilly Topspin, back onto the Speedbarge.|
+f Fizzle & Pozzik's Speedbarge|M|79.16,71.95|N|At Tilly Topspin, back onto the Speedbarge.|
 T Down in the Deeps|QID|25515|M|76.50,73.64|N|To Jinky Twizzlefixxit.|
 A Pirate Accuracy Increasing|QID|25532|M|76.50,73.64|N|From Jinky Twizzlefixxit.|
 N Pirate Accuracy Increasing|QID|25532|M|78.89,75.71|QO|Get a boat from Mazzer: 1/1|N|Speak to Mazzar on the south pontoon and tell him to get you into your boat.|
@@ -240,7 +240,7 @@ A Save the Sentinel|QID|25871|M|46.81,56.11|N|From Brienna Starglow.|
 C Grimtotem in the Post|QID|25869|S|M|42.79,51.02|N|Kill the Grimtotem Invaders as you walk up Freewind Post to the next quests.  Any in the middle of battle with Freewind Warriors will not aggro you unless you attack them.  The Freewind Warriors, although shown in red, will not attack you, and are not attackable.|
 A Horn of the Traitor|QID|25873|M|44.58,49.96|N|From Montarr's corpse.|
 C Save the Sentinel|QID|25871|M|45.16,50.16|N|Kill the Grimtotem Invader in front of the Sentinel, then click on her to free her.|
-C Horn of the Traitor|QID|25873|M|45.91,50.83|N|Attack Cliffwatcher Longhorn and loot the Horn.|
+C Horn of the Traitor|QID|25873|M|45.91,50.83|T|Cliffwatcher Longhorn|N|Attack Cliffwatcher Longhorn and loot the Horn.|
 C Grimtotem in the Post|QID|25869|US|M|42.79,51.02|N|Finish killing the Grimtotem Invaders.|
 T Grimtotem in the Post|QID|25869|M|46.36,57.90|N|To Quentin. You can jump over the edge and into the water to avoid running all the way back down.|
 T Horn of the Traitor|QID|25873|M|46.36,57.90|N|To Quentin.|
