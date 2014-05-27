@@ -85,27 +85,34 @@ WoWPro:GuideNextGuide(guide, 'CraBla5458|JiyBla5560')
 WoWPro:GuideIcon(guide,"ACH",4934)
 WoWPro:GuideSteps(guide, function()
 return [[
+A The Dunes of Silithus|QID|28528;28859;28527|LEAD|8280|M|55.66,60.65|Z|Un'Goro Crater|N|This is a breadcromb quest from Zen'Aliri in Un'Goro Crater.|O|
+A Hero's Call: Silithus!|QID|28528;28859;28527|LEAD|8280|N|This is a breadcromb quest from the Hero's Call board in The Exodar or in Darnassus.|FACTION|Alliance|O|
+A Warchief's Command: Silithus!|QID|28527|LEAD|8280|N|This is a breadcromb quest from the Warchief's Command Board in Orgrimmar  or in Thunder Bluff|FACTION|Horde|O|
 
-F Cenarion Hold|QID|8318|M|55.97,64.15|N|Fly to Cenarion Hold.|Z|Un'Goro Crater|
+; Leveling character do not have the FP at this position
+;F Cenarion Hold|QID|8318|M|55.97,64.15|N|Fly to Cenarion Hold.|Z|Un'Goro Crater|
+R Silithus|QID|8318|M|29.2,22.5;30.4,11.7|N|Get to Silithus.|Z|Un'Goro Crater|
 
-T Hero's Call: Silithus!|O|QID|28528|M|54.92,35.85|N|To Windcaller Proudhorn.|FACTION|Alliance|
-T The Dunes of Silithus|O|QID|28859|M|54.92,35.85|N|To Windcaller Proudhorn.|
-T Warchief's Command: Silithus!|O|QID|28527|M|54.92,35.85|N|To Windcaller Proudhorn.|FACTION|Horde|
+T Hero's Call: Silithus!|QID|28528|M|54.92,35.85|N|To Windcaller Proudhorn.|FACTION|Alliance|
+T The Dunes of Silithus|QID|28859|M|54.92,35.85|N|To Windcaller Proudhorn.|
+T Warchief's Command: Silithus!|QID|28527|M|54.92,35.85|N|To Windcaller Proudhorn.|FACTION|Horde|
 
 A Securing the Supply Lines|QID|8280|M|54.92,35.85|N|From Windcaller Proudhorn.|
 A Wanted - Deathclasp, Terror of the Sands|QID|8283|M|55.05,35.93|N|From the Wanted Poster: Deathclasp.|
 h Cenarion Hold|QID|8318|M|55.51,36.72|N|At Calandrath.|
-A Deadly Desert Venom|QID|8277|M|55.35,36.26|N|From Beetix Ficklespragg.|
+A Deadly Desert Venom|QID|8277|M|55.35,36.26|N|From Beetix Ficklespragg, second floor.|
 A Report to Marshal Bluewall|QID|9415|M|54.51,32.83|N|From Rifleman Torrig.|FACTION|Alliance|
+f Cenarion Hold |M|54.4,32.7|N|From Cloud Skydance.|FACTION|Alliance|
 A Report to General Kirika|QID|9416|M|52.96,34.68|N|From Scout Bloodfist.|FACTION|Horde|
-A Secret Communication|QID|8318|M|52.67,35.56|N|From Bor Wildmane.|
-A Twilight Geolords|QID|8320|M|52.76,35.63|N|From Huum Wildmane.|
+f Cenarion Hold |M|52.8,34.6|N|From Runk Windtamer.|FACTION|Horde|
+A Secret Communication|QID|8318|M|23.1,35.1|N|From Bor Wildmane.|
+A Twilight Geolords|QID|8320|M|53.2,35.2|N|From Huum Wildmane.|
 
 C Deadly Desert Venom|QID|8277|M|47.91,36.17|S|N|Kill and loot Sand Skitterers and Stonelash Scorpids.|
 C Securing the Supply Lines|QID|8280|M|47.27,38.32|S|N|Kill Dredge Strikers.|
 C Secret Communication|QID|8318|M|43.32,38.61|S|N|Dropped by any Twilight mob. Be careful, the Prophets are elite and quite strong, but if you manage to kill one they can drop around 10 Encrypted Texts.|
 C Twilight Geolords|QID|8320|M|43.91,40.41|N|This camp should have enough Geolords. Prophets occassionally patrol through.|
-l Encrypted Twilight Text|QID|8318|M|43.91,40.41|L|20404 20|N|Keep killing and looting Twilight mobs until you have 20 texts. 10 for the quest "Secret Commumnication", plus 10 for a later quest.|
+;l Encrypted Twilight Text|QID|8318|M|43.91,40.41|L|20404 20|N|Keep killing and looting Twilight mobs until you have 20 texts. 10 for the quest "Secret Commumnication", plus 10 for a later quest.|
 C Secret Communication|QID|8318|M|43.32,38.61|US|N|Dropped by any Twilight mob. Be careful, the Prophets are elite and quite strong, but if you manage to kill one they can drop around 10 Encrypted Texts..|
 C Deadly Desert Venom|QID|8277|M|47.91,36.17;40.8,22.5|CN|US|N|Kill and loot Sand Skitterers and Stonelash Scorpids between the waypoints.|
 C Securing the Supply Lines|QID|8280|M|47.27,38.32;40.8,22.5|CN|US|N|Finish killing Dredge Strikers.|
@@ -120,14 +127,14 @@ T Deadly Desert Venom|QID|8277|M|55.34,36.31|N|To Beetix Ficklespragg.|
 A Noggle's Last Hope|QID|8278|PRE|8277|M|55.34,36.31|N|From Beetix Ficklespragg.|
 
 C Stepping Up Security|QID|8281|M|43.69,52.01|N|Kill 20 Dredge Crushers.|S|
-l Stonelash Pincer Stingers|QID|8278|M|46.01,50.69|L|20374 3|N|Kill and loot Stonelash Pincers.|
-C Noggle's Last Hope|QID|8278|M|49.51,75.66|N|Kill and loot Stonelash Flayers and Rock Stalkers. (Note: they may share spawn spots)|
+C Stonelash Pincer Stingers|QID|8278|QO|2|M|46.01,50.69|N|Kill and loot Stonelash Pincers.|
+C Noggle's Last Hope|QID|8278|QO|1;3|M|49.51,75.66|N|Kill and loot Stonelash Flayers and Rock Stalkers. (Note: they may share spawn spots)|
 C Stepping Up Security|QID|8281|M|60,55;43.69,52.01;34,36|CN|N|Go between the waypoints and finish killing 20 Dredge Crushers.|US|
 T Stepping Up Security|QID|8281|M|54.88,35.95|N|To Windcaller Proudhorn.|
 T Noggle's Last Hope|QID|8278|M|55.39,36.28|N|To Beetix Ficklespragg.|
 A Noggle's Lost Satchel|QID|8282|PRE|8278|M|55.37,36.24|N|From Noggle Ficklespragg.|
 R Twilight's Run|QID|8321|M|70.31,16.02|N|Head to the cave, Twilight's Run.|
-C Vyral the Vile|QID|8321|M|69.90,16.36;73.19,16.48|CS|N|Head to the back of the cave, kill and loot Vyral.|
+K Vyral the Vile|QID|8321|T|Vyral the Vile|M|69.90,16.36;73.19,16.48|CS|N|Head to the back of the cave, kill and loot Vyral.|
 
 H Cenarion Hold|QID|8321|M|55.51,36.72|N|Hearth or run back.|
 r Repair|QID|8321|M|54.90,36.55|
@@ -135,7 +142,7 @@ T Vyral the Vile|QID|8321|M|52.75,35.58|N|To Huum Wildmane.|
 
 A The Twilight Mystery|QID|8284|M|53.58,35.24|N|From Geologist Larksbane.|
 A Dearest Natalia|QID|8304|M|53.22,32.48|N|From Commander Mar'alith.|
-C The Twilight Mystery|QID|8284|M|29.44,9.74|N|Loot the tablets scattered around the ground in the Crystal Vale, they have a bit of a blue arua around them. Out of the way, but necessary to continue.|
+C The Twilight Mystery|QID|8284|NC|M|29.44,9.74|N|Loot the tablets scattered around the ground in the Crystal Vale, they have a bit of a blue arua around them. Out of the way, but necessary to continue.|
 T The Twilight Mystery|QID|8284|M|53.66,35.19|N|To Geologist Larksbane.|
 
 A The Deserter|QID|8285|PRE|8284|M|53.66,35.19|N|From Geologist Larksbane.|
@@ -145,12 +152,12 @@ A The Twilight Lexicon|QID|8279|M|68.65,62.99|N|From Hermit Ortell.|
 T Report to General Kirika|QID|9416|M|54.63,62.86|N|To General Kirika.|FACTION|Horde|
 A Scouring the Desert|RANK|3|QID|9422|M|54.63,62.86|N|From General Kirika. NOTE: This PVP quest and is optional, it's up to you to complete it on your own.|FACTION|Horde|
 
-l Twilight Lexicon - Chapter 2|QID|8279|M|24.75,77.23|L|20395|T|Twilight Keeper Exeter|N|Kill and loot Twilight Keeper Exeter. He is way back in the back of the camp.|
+C Twilight Lexicon - Chapter 2|QID|8279|QO|2|M|24.75,77.23|L|20395|T|Twilight Keeper Exeter|N|Kill and loot Twilight Keeper Exeter. He is way back in the back of the camp.|
 
 H Cenarion Hold|QID|9415|M|55.51,36.72|N|If your hearth isn't up or you didn't set it there, skip this step since it is near Cenarion Hold anyways.|
 
-l Twilight Lexicon - Chapter 3|QID|8279|M|45.82,39.06|L|20396|T|Twilight Keeper Havunth|N|Kill and loot Twilight Keeper Havunth.|
-C The Twilight Lexicon|QID|8279|M|33.51,34.56|T|Twilight Keeper Mayna|N|Kill and loot Twilight Keeper Mayna.|
+C Twilight Lexicon - Chapter 3|QID|8279|QO|3|M|45.82,39.06|T|Twilight Keeper Havunth|N|Kill and loot Twilight Keeper Havunth.|
+C Twilight Lexicon - Chapter 1|QID|8279|QO|1|M|33.51,34.56|T|Twilight Keeper Mayna|N|Kill and loot Twilight Keeper Mayna.|
 
 T Report to Marshal Bluewall|QID|9415|M|39.56,46.93|N|To Marshal Bluewall|FACTION|Alliance|
 A Scouring the Desert|RANK|3|QID|9419|M|39.56,46.93|N|From Marshal Bluewall NOTE: This PVP quest and is optional, it's up to you to complete it on your own.|FACTION|Alliance|
@@ -160,28 +167,29 @@ A A Terrible Purpose|QID|8287|PRE|8279|M|68.63,63.01|N|From Hermit Ortell.|
 A True Believers|RANK|3|QID|8323|PRE|8279|M|68.63,63.01|N|From Hermit Ortell.|
 T True Believers|RANK|3|QID|8323|M|68.63,63.01|N|To Hermit Ortell.|
 
-C Dearest Natalia|QID|8304|M|46.36,79.16|N|Talk to the two dwarves in the camp.|
+C Dearest Natalia|QID|8304|CHAT|M|46.36,79.16|N|Talk to the two dwarves in the camp.|
 T Dearest Natalia|QID|8304|M|46.41,79.04|N|(UI Alert)|
 A Into The Maw of Madness|QID|8306|M|46.41,79.04|N|(UI Alert)|
 A Glyph Chasing|QID|8309|M|46.35,79.20|N|From Rutgar Glyphshaper.|
 A Breaking the Code|QID|8310|M|46.11,79.44|N|From Frankal Stonebridge.|
 
-C Breaking the Code|S|QID|8310|M|55.51,90.60|N|Kill and loot silithid.|
-C Into The Maw of Madness|QID|8306|M|58.40,78.38;55.51,90.60|CS|N|Kill Natalia. Clean the section out first, because she fears.|
-C Glyph Chasing|QID|8309|M|55.51,90.60|N|Right-click the white stone.|
+C Breaking the Code|S|QID|8310|NC|M|55.51,90.60|N|Kill and loot silithid.|
+K Natalia|QID|8306|T|Natalia|M|58.40,78.38;55.51,90.60|CS|N|Kill Natalia. Clean the section out first, because she fears.|
+C Glyph Chasing|QID|8309|NC|M|55.51,90.60|N|Right-click the white stone.|
 C Breaking the Code|US|QID|8310|M|55.51,90.60|N|Kill and loot silithid until you get it.|
 
-l Brann Bronzebeard's Lost Letter|QID|8308|M|33.24,53.85|N|Keep killing silithid until you get this. Skip this if you want or takes a while to find it.|L|20461|
-A Brann Bronzebeard's Lost Letter|QID|8308|M|33.24,53.85|N|Accept this quest from the letter.|U|20461|
+;l Brann Bronzebeard's Lost Letter|QID|8308|M|33.24,53.85|N|Keep killing silithid until you get this. Skip this if you want or takes a while to find it.|L|20461|
+A Brann Bronzebeard's Lost Letter|QID|8308|M|33.24,53.85|N|Keep killing silithid until you get this. Skip this if you want or takes a while to find it.|U|20461|O|
 
 T Glyph Chasing|QID|8309|M|46.37,79.08|N|To Rutgar Glyphshaper.|
 T Brann Bronzebeard's Lost Letter|QID|8308|O|M|46.37,79.08|N|To Rutgar Glyphshaper.|
 T Breaking the Code|QID|8310|M|45.96,79.39|N|To Frankal Stonebridge.|
 
-A Unraveling the Mystery|QID|8314|M|45.96,79.39|N|To Rutgar Glyphshaper.|
+A Unraveling the Mystery|QID|8314|M|46.4,79.1|N|From Rutgar Glyphshaper.|
 
-C Wanted - Deathclasp, Terror of the Sands|QID|8283|M|49.61,82.45|N|Path is behind the camp. Watch his kickback. You might want to position him so that your back is to the wall.|
-C Noggle's Lost Satchel|QID|8282|M|49.32,81.46|N|Up the hill on the right.|
+C Noggle's Lost Satchel|QID|8282|S|NC|M|49.32,81.46|N|Up the hill on the right.|
+K Deathclasp|QID|8283|T|Deathclasp|M|49.61,82.45|N|Path is behind the camp. Watch his kickback. You might want to position him so that your back is to the wall.|
+C Noggle's Lost Satchel|QID|8282|US|NC|M|49.32,81.46|N|Up the hill on the right.|
 
 H Cenarion Hold|QID|8282|M|55.51,36.72|N|Hearth back to Cenarion Hold, or run if your hearth is down.|
 

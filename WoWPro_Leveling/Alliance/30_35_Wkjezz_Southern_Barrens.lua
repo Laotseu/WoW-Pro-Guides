@@ -105,7 +105,7 @@ C Futile Resistance|QID|25186|M|35.50,6.40|N|Kill Kona Thunderwalk.|
 T Futile Resistance|QID|25186|M|38.77,11.38|N|To Commander Singleton.|
 A Survey the Destruction|QID|25191|M|39.04,11.48|N|From Nibb Spindlegear.|
 
-f Honor's Stand|QID|25191|M|38.94,10.90|N|At John Johnson.|
+f Honor's Stand|M|38.94,10.90|N|At John Johnson.|
 C Survey the Destruction|QID|25191|NC|M|39.06,11.44|N|Go and speak to Nibb and tell her you are ready to fly.|
 T Survey the Destruction|QID|25191|M|68.68,49.29|N|To Horton Gimbleheart.|
 A The Admiral Won't Back Down|QID|25197|M|68.68,49.29|N|From Horton Gimbleheart.|
@@ -116,7 +116,7 @@ T Repel Boarders!|QID|24934|M|57.47,60.97|Z|Northern Barrens|N|To Captain Fisher
 R Northwatch Hold|QID|24938|N|Ask for a ride back from Captain Fisher.|
 
 A The Guns of Northwatch|QID|24938|M|69.22,49.07|N|From Admiral Aubrey.|
-f Northwatch Hold|QID|24934|M|66.36,47.13|N|At Bill Williamson.|
+f Northwatch Hold|M|66.36,47.13|N|At Bill Williamson.|
 A Langridge Shot|QID|24941|M|67.03,46.57|N|From Thomas Paxton.|
 C Langridge Shot|QID|24941|M|67.63,46.59|N|In the tower beside the quest giver. Pick up anything that sparkles.|
 T Langridge Shot|QID|24941|M|66.98,46.54|N|To Paxton's Field Cannon.|
@@ -146,12 +146,12 @@ T Silencing Rageroar|QID|24956|M|66.94,46.77|N|To Tolliver Houndstooth.|
 T Lifting the Siege|QID|24948|M|66.99,46.60|N|To Thomas Paxton.|
 
 A Teegan's Troubles|QID|25036|M|66.99,46.60|N|From Thomas Paxton.|
-f Northwatch Hold|QID|25002|M|66.38,47.13|N|At Bill Williamson.|
+f Northwatch Hold|M|66.38,47.13|N|At Bill Williamson.|
 A Teegan's People|QID|25000|M|64.85,46.06|N|From Jeffrey Long.|
 A Scavenged|QID|25002|M|61.88,42.10|N|From the Mangled Body.|
-C Teegan's People|QID|25000|US|M|61.3,44.1|N|Kill and loot the various Raptors in the area.|S|
+C Teegan's People|QID|25000|S|M|61.3,44.1|N|Kill and loot the various Raptors in the area.|
 C Scavenged|QID|25002|M|62.30,45.11|M|61.30,44.10|N|Loot the Crates from the floor.|
-C Teegan's People|QID|25000|US|M|61.3,44.1|N|Kill and loot the various Raptors in the area.|US|
+C Teegan's People|QID|25000|US|M|61.3,44.1|N|Kill and loot the various Raptors in the area.|
 T Teegan's Troubles|QID|25036|M|56.15,42.74|N|To Corporal Teegan.|
 T Scavenged|QID|25002|M|56.15,42.74|N|To Corporal Teegan.|
 A Make 'em Squeal|QID|25015|M|56.12,42.72|N|From Corporal Teegan.|
@@ -180,11 +180,11 @@ T Trouble From the Ground Up|QID|25028|M|50.41,40.69|N|To Naralex.|
 A Biological Intervention|QID|24565|M|50.35,40.55|N|From Naralex.|
 A Adder Subtraction|QID|24570|M|50.34,40.47|N|From Muyoh.|
 A Lashvine Seeds|QID|24571|M|50.34,40.47|N|From Muyoh.|
-C Adder Subtraction|QID|24570|S|M|47.57,37.60|N|Jiyambi's Favourite quest! Snakes are hard to see and die from AOE damage, keep your eyes peeled and loot them as you see them.|
+C Adder Subtraction|QID|24570|S|T|Enervated Adder|M|47.57,37.60|N|Jiyambi's Favourite quest! Snakes are hard to see and die from AOE damage, keep your eyes peeled and loot them as you see them.|
 C Lashvine Seeds|QID|24571|S|M|51.83,45.21|N|Kill and loot Lashvines.|
 C Biological Intervention|QID|24565|M|52.75,41.16|N|Kill 5 Deviate Terrortooths and 5 Deviate Plainstriders.|
 C Lashvine Seeds|QID|24571|US|M|47.38,40.42|N|Kill and loot Lashvines.|
-C Adder Subtraction|QID|24570|US|M|46.99,39.49|N|Finish picking up Enervated Adders.|
+C Adder Subtraction|QID|24570|US|T|Enervated Adder|M|46.99,39.49|N|Finish picking up Enervated Adders.|
 T Biological Intervention|QID|24565|M|50.38,40.65|N|To Naralex.|
 
 A To Harvest Chaos|QID|24574|M|50.36,40.63|N|From Naralex.|
@@ -233,7 +233,7 @@ A Meet Me at Triumph|QID|25074|M|49.88,49.79|N|From General Hawthorne.|
 T Marching On Our Stomachs|QID|25042|M|49.76,50.50|N|To Sam Trawley.|
 T Meet Me at Triumph|QID|25074|M|49.08,66.93|N|To Commander Roberts.|
 A Claim the Battlescar|QID|25081|M|49.08,67.02|N|From Commander Roberts.|
-f Fort Triumph|QID|25081|M|49.20,67.78|N|At Steve Stevenson.|
+f Fort Triumph|M|49.20,67.78|N|At Steve Stevenson.|
 A Working the Bugs Out|QID|25082|M|49.26,67.74|N|From Logan Talonstrike.|
 A Pick-a-Part|QID|25075|M|49.43,67.52|N|From Mizzy Pistonhammer.|
 C Working the Bugs Out|QID|25082|U|50128|M|47.79,67.48;48.25,68.45|CN|N|Stand next to the mounds and use the Bucket of Burning Pitch, then kill the Swarmers that appear.|
