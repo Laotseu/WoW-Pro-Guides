@@ -205,7 +205,7 @@ T Plunging Into Zul'Gurub|QID|26813|M|82.11,35.37|Z|Northern Stranglethorn|N|(UI
 A High Priest Venoxis|QID|26814|PRE|26813|M|82.11,35.37|Z|Northern Stranglethorn|N|(UI Alert)|
 C High Priest Venoxis|QID|26814|M|83.70,35.96|Z|Northern Stranglethorn|N|Kill the High Priest Venoxis - once you achieve this, you will be rooted in place, and a ladder will appear on your screen from the right.  Grab the ladder to return to Explorer's League.\n\nDuring the battle, any Spirit of Venoxis reaching the High Priestess will cast a heal on it, too many of these should be avoided, as the restored health is vastly higher than the health to kill the Spirits.|
 
-T High Priest Venoxis|QID|26814|U|60374M|55.70,42.27|N|To Maywiki.|
+T High Priest Venoxis|QID|26814|U|60374|M|55.70,42.27|N|To Maywiki.|
 T Recipe for Disaster|QID|26816|M|55.31,41.93|N|To Dask "The Flask" Gobfizzle.|
 
 ; ** You will not have the FP in Booty Bay yet.
@@ -213,7 +213,8 @@ T Recipe for Disaster|QID|26816|M|55.31,41.93|N|To Dask "The Flask" Gobfizzle.|
 R Booty Bay|QID|26821|M|50.97,43.09;45.26,65.73|CC|N|Follow the path to the final cordinates and walk through the tunnel.|
 h Booty Bay|QID|26821|M|40.93,73.79|N|At Innkeeper Skindle.|
 T Airwyn Bantamflax|QID|26821|M|42.49,73.15|N|To Airwyn Bantamflax.|
-T Message in a Bottle|QID|26603|M|42.38,67.76;45.00,65.96;59.43,79.24|CC|N|To Princess Poobah on Jaguero Isle.|
+f Booty Bay|M|41.7,74.5|
+T Message in a Bottle|QID|26603|M|42.38,67.76;45.00,65.96;59.43,79.24|CS|N|To Princess Poobah on Jaguero Isle.|
 
 A Protecting Her Royal Highness Poobah|QID|26604|PRE|26603|M|59.43,79.24|N|From Princess Poobah.|
 C Protecting Her Royal Highness Poobah|QID|26604|M|58.07,84.56|N|Slay 5 Jaguero Stalkers.|
@@ -224,29 +225,30 @@ C Grubby Little Paws|QID|26605|M|64.81,82.81|N|Kill gorillas and monkeys for the
 T Grubby Little Paws|QID|26605|M|59.51,79.17|N|To Princess Poobah.|
 
 A Mukla's Demise|QID|26606|PRE|26605|M|59.51,79.17|N|From Princess Poobah.|
-C Mukla's Demise|QID|26606|M|62.74,83.26|N|Kill Mukla. He will throw barrels at you DK style. Loot the Shackle Key.|
+K King Mukla|QID|26606|T|King Mukla|M|62.74,83.26|N|Kill Mukla. He will throw barrels at you DK style. Loot the Shackle Key.|
 T Mukla's Demise|QID|26606|M|59.44,79.11|N|To Princess Poobah.|
 
 L Level 31 |QID|26609|N|You need to be Level 31 to continue with this guide.|LVL|31|
 H The Salty Sailor Tavern |QID|26609|N|Hearthstone to The Salty Sailor Tavern in Booty Bay.|
 
-A Scaring Shaky|QID|26593|M|40.97,74.32;42.05,73.46|CC|N|From "Sea Wolf" MacKinley.|
+A Scaring Shaky|QID|26593|M|42.1,73.4|N|From "Sea Wolf" MacKinley.|
 A Stranglethorn Fever|QID|26597|M|41.88,72.81|N|From Fin Fizracket.|
 A The Bloodsail Buccaneers|QID|26609|M|42.66,71.96|N|From First Mate Crazz.|
 A The Captain's Chest|QID|26599|M|40.33,67.87|N|From Captain Hecklebury Smotts.|
 
 ;f Booty Bay|QID|26593|NC|M|41.64,74.47|N|Get the Booty Bay flight path.|
 
-K "Good-Boy" Bruce |QID|26617|L|59143|M|41.35,61.23|N|Kill and loot "Good-Boy" Bruce.|S|
+K "Good-Boy" Bruce |QID|26617|T|"Good-Boy" Bruce|L|59143|M|41.35,61.23|N|Kill and loot "Good-Boy" Bruce.|S|
 T The Bloodsail Buccaneers|QID|26609|M|42.33,67.89;45.06,65.75;41.35,61.16|CN|N|To Bloodsail Correspondence on the Southern Savage Coast.|
 A Bloodsail Treachery|QID|26610|PRE|26609|M|41.35,61.16|N|From Bloodsail Correspondence.|
-K "Good-Boy" Bruce |QID|26617|L|59143|M|41.35,61.23|N|Kill and loot "Good-Boy" Bruce.|US|
+K "Good-Boy" Bruce |QID|26617|T|"Good-Boy" Bruce|L|59143|M|41.35,61.23|N|Kill and loot "Good-Boy" Bruce.|US|
 A An Old Sea Dog|QID|26617|U|59143|N|Accept this quest from the Weather-Beaten Coin.|
 
-C The Captain's Chest|QID|26599|M|52.39,64.68;55.9,63.43|CN|N|Kill Gorlash (He wanders around the two waypoints, normally in the water), and loot Smotts' Chest.|
+K Gorlash|QID|26599|T|Gorlash|M|52.39,64.68;55.9,63.43|CN|N|Kill Gorlash (He wanders around the two waypoints, normally in the water), and loot Smotts' Chest.|
 C Scaring Shaky|QID|26593|S|M|51,53|N|From now on kill Elder Mistvale Gorillas for Giblets.|
 l Gorilla Fang|QID|26597|M|51,53|N|Kill and loot Gorillas until you get a Gorilla Fang.|L|2799|
 R Spirit Den|QID|26597|M|52.28,52.12;53.28,49.01;54.00,46.69|CS|N|Follow the waypoints to the cave.|
+;A The Heart of Mokk|QID||M|54.2,46.4|N|Hand over the Gorilla Fang to Witch Doctor Unbagwam.  This will then summon an Enraged Silverback Gorilla, then Konda, then Mokk the Savage.  Kill them, and loot Mokk the Savage for his heart.|
 C Stranglethorn Fever|QID|26597|L|2797|N|Hand over the Gorilla Fang to Witch Doctor Unbagwam.  This will then summon an Enraged Silverback Gorilla, then Konda, then Mokk the Savage.  Kill them, and loot Mokk the Savage for his heart.|
 C Scaring Shaky|QID|26593|US|M|51,53|N|Finish killing Gorillas for Giblets.|
 
@@ -276,14 +278,15 @@ C A Giant's Feast|QID|26600|NC|M|41.01,73.98;42.78,69.11|CN|N|Buy a Crate of Pup
 T A Giant's Feast|QID|26600|M|40.37,67.86|N|To Captain Hecklebury Smotts.|
 A A Dish Best Served Huge|QID|26602|PRE|26600|M|40.37,67.86|N|From Captain Hecklebury Smotts.|
 
-K Freewheelin' Juntz Fitztittle|QID|26595|L|59034|M|56.50,57.89;56.79,53.75|CN|N|Kill Freewheelin' while he runs between these to towers. Loot his wrench.|
-K Ephram "Midriff" Moonfall|QID|26595|L|59035|M|56.12,49.73|N|Talk to "Midriff", he'll attack you. Kill him and loot his Mirror.|
-C Kill-Collect|QID|26595|L|3924|M|59.55,49.16|N|Kill Maury "Clubfoot" Wilkins. Loot his Clubbed Foot.|
+K Freewheelin' Juntz Fitztittle|QID|26595|T|Freewheelin' Juntz Fitztittle|QO|Fitztittle's Ratcheting Torque Wrench: 1/1|M|56.50,57.89;56.79,53.75|CN|N|Kill Freewheelin' while he runs between these to towers. Loot his wrench.|
+K Ephram "Midriff" Moonfall|QID|26595|T|Ephram "Midriff" Moonfall|QO|Ephram's Jeweled Mirror: 1/1|M|56.12,49.73|N|Talk to "Midriff", he'll attack you. Kill him and loot his Mirror.|
+K Maury "Club Foot" Wilkins|QID|26595|T|Maury "Club Foot" Wilkins|QO|Maury's Clubbed Foot: 1/1|L|3924|M|59.55,49.16|N|Kill Maury "Clubfoot" Wilkins. Loot his Clubbed Foot.|
 
 C Keep An Eye Out|QID|26614|M|43.16,81.72|N|Kill and loot Bloodsail mobs until this drops.|S|
 C Up to Snuff|QID|26613|M|41.17,82.64|N|Kill and loot Bloodsail mobs until you get 15 Snuff.|S|
-C A Dish Best Served Huge|QID|26602|QO|Negolash slain: 1/1|M|49.68,81.16|N|Activate the Life Boat. Put in the food. Wait for Negolash to appear. Kill him!|
-C Details of the Attack|QID|26612|M|45.09,79.59;42.08,83.04;41.12,82.55|CN|N|The Orders and the Charts can be at any of the waypoints. Don't forget to kill the Bloodsail mobs needed.|
+C Details of the Attack|QID|26612|S|M|45.09,79.59;42.08,83.04;41.12,82.55|CN|N|The Orders and the Charts can be at any of the waypoints. Don't forget to kill the Bloodsail mobs needed.|
+K Negolash|QID|26602|T|Negolash|M|49.68,81.16|N|Activate the Life Boat. Put in the food. Wait for Negolash to appear. Kill him!|
+C Details of the Attack|QID|26612|US|M|45.09,79.59;42.08,83.04;41.12,82.55|CN|N|The Orders and the Charts can be at any of the waypoints. Don't forget to kill the Bloodsail mobs needed.|
 C Keep An Eye Out|QID|26614|M|43.16,81.72|N|Kill and loot Bloodsail mobs until this drops.|US|
 C Up to Snuff|QID|26613|M|41.17,82.64|N|Kill and loot Bloodsail mobs until you get 15 Snuff.|US|
 
@@ -298,22 +301,22 @@ T Keep An Eye Out|QID|26614|M|43.33,71.41|N|Up the ramp to Dizzy One-Eye.|
 T A Dish Best Served Huge|QID|26602|M|40.37,67.84|N|To Captain Hecklebury Smotts.|
 
 A Mok'rash the Cleaver|QID|26601|PRE|26602|M|40.37,67.84|N|From Captain Hecklebury Smotts.|
-C Mok'rash the Cleaver|QID|26601|M|35.15,65.70|N|Swim West to the Island. Kill Mok'rash.|
+K Mok'rash the Cleaver|QID|26601|T|Mok'rash the Cleaver|M|35.15,65.70|N|Swim West to the Island. Kill Mok'rash.|
 T Mok'rash the Cleaver|QID|26601|M|41.80,72.82;40.33,67.85|CC|N|To Captain Hecklebury Smotts.|
 
 T Getting In With the Bloodsail|QID|26624|M|45.81,65.48;45.45,56.16;43.84,56.46|CS|N|Up the path to Yancey Grillsen.|
 A Seeing Where Your Loyalties Lie|QID|26629|PRE|26624|M|45.81,65.48;43.84,56.46|CC|N|From Yancey Grillsen.|
 A Looks Like a Tauren Pirate to Me|QID|26630|M|41.14,73.25|N|From Fleet Master Seahorn.|
 
-l Cow Head|QID|26630|L|59147|M|43.24,71.67|N|Go upstairs and talk to Bossy the Cow.|
-l Oversized Pirate Hat|QID|26630|L|59148|M|42.72,69.13|N|Talk to Narkk at The Old Port Authority and get the hat from him.|
+C Cow Head|QID|26630|NC|QO|Cow Head: 1/1|M|43.24,71.67|N|Go upstairs and talk to Bossy the Cow.|
+C Oversized Pirate Hat|QID|26630|NC|QO|Oversized Pirate Hat: 1/1|M|42.72,69.13|N|Talk to Narkk at The Old Port Authority and get the hat from him.|
 C Looks Like a Tauren Pirate to Me|QID|26630|M|41.06,73.28|N|Take the Head and Hat to the Fleetmaster.|NC|
 T Looks Like a Tauren Pirate to Me|QID|26630|M|41.06,73.28|N|To Fleet Master Seahorn.  It will be a few seconds from handing the Head and Hat to him before he will allow you to finish the quest.|
 
-T Seeing Where Your Loyalties Lie|QID|26629|M|42.39,67.65;45.81,5.4;43.85,56.34|CS|N|To Yancey Grillsen.|
+T Seeing Where Your Loyalties Lie|QID|26629|M|42.39,67.65;46.1,57.0;43.85,56.34|CS|N|To Yancey Grillsen.|
 A Your First Day as a Pirate|QID|26631|PRE|26629|M|43.85,56.34|N|From Yancey Grillsen.|
 
-T Your First Day as a Pirate|QID|26631|M|50,68;45.03,93.29;44.41,91.61|CC|N|To Captain Keelhaul, in the right-hand ship of Wild Shore.|
+T Your First Day as a Pirate|QID|26631|M|50,68;45.03,93.29;44.41,91.61|CS|N|To Captain Keelhaul, in the right-hand ship of Wild Shore.|
 A Swabbing Duty|QID|26633|PRE|26631|M|44.41,91.61|N|From Captain Keelhaul.|
 A Cannonball Swim|QID|26635|M|44.53,92.92|N|From "Pretty Boy" Duncan, back up on deck.|
 C Swabbing Duty|QID|26633|M|44.73,92.84|N|Grab a mop up on deck and activate the globs of goo as they appear. Or if you're lazy, pay Duncan a gold to do it for you.|NC|
@@ -347,14 +350,17 @@ A Sinking From Within|QID|26663|PRE|26650|M|50.30,91.46|N|From Captain Still Wat
 A Making Mutiny|QID|26664|PRE|26650|M|50.30,91.46|N|From Captain Still Water's Charts.|
 
 C Making Mutiny|QID|26664|M|44.71,92.59|S|N|Accuse Corsairs of mutiny. When they attack, kill them.|
-C Speak with Long John Copper|QID|26662|M|51.27,91.38|QO|Speak with Long John Copper: 1/1|N|On The Damsel's Luck.|
-C Sabotage the Grog|QID|26663|M|50.96,91.52|QO|Sabotage the Grog: 1/1|N|On the lowest level of The Damsel's Luck.|
+C Sabotage the Grog|QID|26663|S|NC|M|50.96,91.52|QO|Sabotage the Grog: 1/1|N|On the lowest level of The Damsel's Luck.|
+C Speak with Long John Copper|QID|26662|CHAT|T|Long John Copper|M|51.27,91.38|QO|Speak with Long John Copper: 1/1|N|On The Damsel's Luck.|
+C Sabotage the Grog|QID|26663|US|NC|M|50.96,91.52|QO|Sabotage the Grog: 1/1|N|On the lowest level of The Damsel's Luck.|
 
-C Speak with Enormous Shawn Stooker|QID|26662|M|46.77,94.17|QO|Speak with Enormous Shawn Stooker: 1/1|N|Now head to The Crimson Veil ship. Go to the lowest level and speak to Enormous Shawn.|
-C Sabotage the Gunpowder|QID|26663|M|46.80,93.79|QO|Sabotage the Gunpowder: 1/1|N|Activate the Gunpowder Barrell on the lowest level of the ship.|
+C Sabotage the Gunpowder|QID|26663|S|NC|M|46.80,93.79|QO|Sabotage the Gunpowder: 1/1|N|Activate the Gunpowder Barrell on the lowest level of the ship.|
+C Speak with Enormous Shawn Stooker|QID|26662|CHAT|T|Enormous Shawn Stooker|M|46.77,94.17|QO|Speak with Enormous Shawn Stooker: 1/1|N|Now head to The Crimson Veil ship. Go to the lowest level and speak to Enormous Shawn.|
+C Sabotage the Gunpowder|QID|26663|US|NC|M|46.80,93.79|QO|Sabotage the Gunpowder: 1/1|N|Activate the Gunpowder Barrell on the lowest level of the ship.|
 
-C Speak with Wailing Mary Smitts|QID|26662|M|44.52,93.15|QO|Speak with Wailing Mary Smitts: 1/1|N|Last, head to The Riptide ship. One level down, speak to Wailing Mary.|
-C Sabotage the Cannonballs|QID|26663|M|44.71,92.78|QO|Sabotage the Cannonballs: 1/1|N|On the lowest level, between a wall and some normal crates.|
+C Sabotage the Cannonballs|QID|26663|S|NC|M|44.71,92.78|QO|Sabotage the Cannonballs: 1/1|N|On the lowest level, between a wall and some normal crates.|
+C Speak with Wailing Mary Smitts|QID|26662|CHAT|T|Wailing Mary Smitts|M|44.52,93.15|QO|Speak with Wailing Mary Smitts: 1/1|N|Last, head to The Riptide ship. One level down, speak to Wailing Mary.|
+C Sabotage the Cannonballs|QID|26663|US|NC|M|44.71,92.78|QO|Sabotage the Cannonballs: 1/1|N|On the lowest level, between a wall and some normal crates.|
 C Making Mutiny|QID|26664|M|44.71,92.59|US|N|Finish your accusations if necessary.|
 
 T The Brashtide Crew|QID|26662|M|44.52,93.15|N|(UI Alert)|
@@ -381,7 +387,7 @@ A Turning the Brashtide|QID|26699|PRE|26698|M|41.55,73.00|N|From Fleet Master Se
 
 C Turning the Brashtide|QID|26699|S|M|42.59,72.46|N|From now on kill Brashtide Raiders on sight.|
 C The Damsel's (Bad) Luck|QID|26700|M|41.49,73.00;41.29,71.25;41.12,70.93|CC|N|Activate the rope beside him. Kill Corsairs. Activate the rope on the deck to get back.|
-C Prepare for Takeoff|QID|26695|M|42.62,69.09|N|Inside the Old Port Authority. Loot the Crate behind Narkk.|
+C Prepare for Takeoff|QID|26695|NC|M|42.62,69.09|N|Inside the Old Port Authority. Loot the Crate behind Narkk.|
 C Turning the Brashtide|QID|26699|US|M|42.59,72.46|N|Finish killing Raiders.|
 
 T Prepare for Takeoff|QID|26695|M|41.10,73.07|N|To Baron Revilgaz.|
@@ -396,11 +402,11 @@ A Bloodsail's End|QID|26703|PRE|26679|M|41.12,73.12|N|From Baron Revilgaz.|
 C Bloodsail's End|QID|26703|M|40.47,73.38;36.05,66.51|CS|N|Speak to Kebok again. Once on the ship, go down to the Captain's room and kill him and his little parrot too.|
 T Bloodsail's End|QID|26703|M|41.17,73.15|N|To Baron Revilgaz.|
 
-A The Call of Kalimdor|QID|26596|M|40.56,68.20|N|If you're going to go to Dustwallow Marsh in Kalimdor next, skip this if you wish to do Western Plaguelands. From Corporal Jeyne.|
-A The Battle for Andorhal|QID|28749|M|41.55,74.35|N|If you are going to go to the Western Plaguelands next. Ask him for teleport. From War-Mage Erallier.|
+A The Call of Kalimdor|QID|26596|M|40.56,68.20|N|If you're going to go to Dustwallow Marsh in Kalimdor next, skip this if you wish to do Western Plaguelands. From Corporal Jeyne.|O|
+A The Battle for Andorhal|QID|28749|M|41.55,74.35|N|If you are going to go to the Western Plaguelands next. Ask him for teleport. From War-Mage Erallier.|O|
 
-R Western Plaguelands|QID|28749|O|M|41.55,74.34|N|To continue to Western Plaguelands, get a teleport from War-Mage Erallier below the Alliance Flight Master.|
-b Northern Barrens|QID|26596|O|M|39.10,67.05|N|To continue on to Dustwallow Marsh in Kalimdor, hop on the ship to Ratchet.|
+R Western Plaguelands|QID|28749|ACTIVE|28749|M|41.55,74.34|N|To continue to Western Plaguelands, get a teleport from War-Mage Erallier below the Alliance Flight Master.|
+b Northern Barrens|QID|26596|ACTIVE|26596|M|39.10,67.05|N|To continue on to Dustwallow Marsh in Kalimdor, hop on the ship to Ratchet.|
 N Close this step to go onto the next guide.|N|Those doing Dustwallow Marsh will have to load the guide manually.|
 
 ]]

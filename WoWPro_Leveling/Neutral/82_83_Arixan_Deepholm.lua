@@ -172,19 +172,19 @@ WoWPro:GuideIcon(guide,"ACH",4864)
 WoWPro:GuideSteps(guide, function()
 return [[
 
-N The Battle Is Won, The War Goes On|QID|27398|Z|Stormwind City|N|If you don't have this quest, check it off and continue to the next.|FACTION|Alliance|
-A Hero's Call: Deepholm!|QID|27727|M|63,71.7|Z|Stormwind City|N|If you don't have the first quest.|FACTION|Alliance|
+;N The Battle Is Won, The War Goes On|QID|27398|Z|Stormwind City|N|If you don't have this quest, check it off and continue to the next.|FACTION|Alliance|
+A Hero's Call: Deepholm!|QID|27727|M|63,71.7|Z|Stormwind City|N|Breadcrumb quest.|FACTION|Alliance|O|
 T The Battle Is Won, The War Goes On|QID|27398|M|74.5,19.3|Z|Stormwind City|N|If you have it. To Naraat the Earthspeaker.|FACTION|Alliance|
-T Hero's Call: Deepholm!|QID|27727|M|74.5,19.3|Z|Stormwind City|N|If you have it. To Naraat the Earthspeaker.|O|FACTION|Alliance|
+T Hero's Call: Deepholm!|QID|27727|M|74.5,19.3|Z|Stormwind City|N|If you have it. To Naraat the Earthspeaker.|FACTION|Alliance|
 
 A Warchief's Command: Deepholm!|QID|27722|M|49.67,76.45|Z|Orgrimmar|N|From Warchief's Command Board.|FACTION|Horde|
 T Warchief's Command: Deepholm!|QID|27722|M|50.30,38.24|Z|Orgrimmar|N|To Farseer Krogar.|FACTION|Horde|
 
-A The Maelstrom|QID|27203|PRE|27727|Z|The Maelstrom|M|74.5,19.3|N|From Naraat the Earthspeaker.|
+A The Maelstrom|QID|27203|Z|The Maelstrom|M|74.5,19.3|N|From Naraat the Earthspeaker.|
 T The Maelstrom|QID|27203|M|33.2,50.2|Z|The Maelstrom|N|Click on the portal that appears. Then turn the quest into Thrall.|
 A Deepholm, Realm of Earth|QID|27123|Z|The Maelstrom|PRE|27203|M|33.2,50.2|N|From Thrall.|
-C Deepholm, Realm of Earth|QID|27123|Z|The Maelstrom|M|33.2,50.2|N|Hop on the Wyvern behind you.|
-T Deepholm, Realm of Earth|QID|27123|Z|Deepholm|M|49.6,53|N|To Maruut Stonebinder.
+;C Deepholm, Realm of Earth|QID|27123|NC|Z|The Maelstrom|M|33.2,50.2|N|Hop on the Wyvern behind you.|
+T Deepholm, Realm of Earth|QID|27123|Z|Deepholm|M|49.6,53|N|Hop on the Wyvern behind you. To Maruut Stonebinder.|
 A Gunship Down|QID|26245|PRE|27123|M|49.6,53|N|From Maruut Stonebinder.|
 A Elemental Energy|QID|27136|PRE|27123|M|49.7,53|N|From Seer Kormo.|
 A The Earth Claims All|QID|26244|PRE|27123|M|49.7,53|N|From Seer Kormo.|
@@ -192,9 +192,9 @@ C Elemental Energy|QID|27136|U|60835|M|49.6,61.5|N|Use the Depleted Totem and ki
 F Storm's Fury Wreckage|QID|27136|M|55,74|N|Fly to the Storm's Fury Wreckage.|
 C The Earth Claims All|QID|26244|S|M|55.6,72.6|N|Kill Deepstone Elementals.|
 A Captain's Log|QID|26246|PRE|26245|M|53.5,73.3|N|Click the Captain's Log to get this quest.|
-N First Clue|QID|26245|QO|First Clue: 1/1|M|53.5,73.7|N|Click on Captain Skullshatter for the first clue.|
-N Second Clue|QID|26245|QO|Second Clue: 1/1|M|56.1,74.2|N|Click on to find the Slain Cannoneer for the second clue.|
-C Gunship Down|QID|26245|M|56.7,76.4|N|Click on the Unexploded Artillery Shell to find the final clue.|
+C First Clue|QID|26245|NC|QO|First Clue: 1/1|M|53.5,73.7|N|Click on Captain Skullshatter for the first clue.|
+C Second Clue|QID|26245|NC|QO|Second Clue: 1/1|M|56.1,74.2|N|Click on to find the Slain Cannoneer for the second clue.|
+C Third Clue|QID|26245|NC|QO|Third Clue: 1/1|M|56.7,76.4|N|Click on the Unexploded Artillery Shell to find the final clue.|
 C The Earth Claims All|QID|26244|US|M|55.6,72.6|N|Kill Deepstone Elementals.|
 T Gunship Down|QID|26245|M|49.6,53|N|To Maruut Stonebinder.|
 T Captain's Log|QID|26246|M|49.6,53|N|To Maruut Stonebinder.|
