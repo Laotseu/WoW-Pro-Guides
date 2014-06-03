@@ -99,11 +99,11 @@ L Level 26 |QID|26035|LVL|26|N|This guide is recommended for those Level 26 and 
 
 R Refuge Pointe|QID|26035|M|39.91,48.71|N|Head to Refuge Pointe in Arathi Highlands.|
 
-f Refuge Point|QID|26035|NC|M|39.85,47.34|N|Get the flight point for Refuge Point from Cedrik Prose.|
+f Refuge Pointe|NC|M|39.9,47.4|N|Get the flight point for Refuge Point from Cedrik Prose.|
 T Into Arathi|QID|26139|O|M|39.92,48.73|N|To Captain Nials.|
 T Hero's Call: Arathi Highlands!|QID|28573|O|M|39.92,48.73|N|To Captain Nials.|
 
-h Refuge Point|QID|26035|M|39.91,49.04|N|Set your home point at Vikki Lonsav.|
+h Refuge Pointe|QID|26035|M|39.91,49.04|N|Set your home point at Vikki Lonsav.|
 
 A Worth Its Weight in Gold|QID|26035|RANK|1|M|40.34,49.03|N|From Skuerto.|
 C Worth Its Weight in Gold|QID|26035|M|59.90,71.01|N|Kill Witherbark Trolls for the drops you need.|
@@ -115,19 +115,19 @@ C Wand over Fist|QID|26036|M|47.94,79.38;49.03,83.69|CS|N|In the back of the cav
 T Wand over Fist|QID|26036|M|40.35,48.99|N|To Skuerto.|
 
 A Trelane's Defenses|QID|26037|PRE|26036|RANK|1|M|40.35,48.99|N|From Skuerto.|
-A Wanted! Marez Cowl|QID|26024|RANK|1|M|40.24,49.06|N|From the Wanted Poster.|LVL|26|
-A Wanted! Otto and Falconcrest|QID|26079|RANK|1|M|40.24,49.06|N|From the Wanted Poster.|LVL|26|
+A Wanted!  Marez Cowl|QID|26024|RANK|1|M|40.24,49.06|N|From the Wanted Poster.|LVL|26|
+A Wanted!  Otto and Falconcrest|QID|26079|RANK|1|M|40.24,49.06|N|From the Wanted Poster.|LVL|26|
 
 A Northfold Manor|QID|26093|RANK|1|M|39.91,48.71|N|From Captain Nials.|
-C Northfold Manor|QID|26093|M|25.13,30.48|N|Kill the Syndicate Pathstalkers and Syndicate Highwayman at Northfold Manor (North-west of Refuge Point).|
+C Northfold Manor|QID|26093|M|25.13,30.48|N|Kill the Syndicate Pathstalkers and Syndicate Highwayman at Northfold Manor (North-west of Refuge Pointe).|
 T Northfold Manor|QID|26093|M|39.89,48.75|N|To Captain Nials.|
 A Stromgarde Badges|QID|26095|PRE|26093|RANK|1|M|39.89,48.75|N|From Captain Nials.|LVL|26|
 
-R Stromgarde Keep|QID|26037|M|19.6,59.0|N|Head to Stromgarde Keep. Head south out of Refuge Point, then west (to your right) along the road. The keep has a level path across the moat.|
+R Stromgarde Keep|QID|26037|M|19.6,59.0|N|Head to Stromgarde Keep. Head south out of Refuge Pointe, then west (to your right) along the road. The keep has a level path across the moat.|
 
 C Stromgarde Badges|QID|26095|S|M|19.99,66.47|N|Kill and loot Syndicate mobs for the Stromgarde Badges.|LVL|26|
-C Wanted! Marez Cowl|QID|26024|M|23.2,64.8;22.8,66|CN|N|On entering the Keep, go to the first path on the left, then follow it to the house. Go around the left side of the house, and Marez Cowl can be found outside at the back. Kill and loot the head.|LVL|26|T|Marez Cowl|
-C Wanted! Otto and Falconcrest|QID|26079|M|19.5,67.5|N|Head into the tower and upstairs (to the left when you have a choice of direction). Kill and loot Otto and Lord Falconcrest as you head up the tower.|LVL|26|
+C Wanted!  Marez Cowl|QID|26024|M|23.2,64.8;22.8,66|CN|N|On entering the Keep, go to the first path on the left, then follow it to the house. Go around the left side of the house, and Marez Cowl can be found outside at the back. Kill and loot the head.|LVL|26|T|Marez Cowl|
+C Wanted!  Otto and Falconcrest|QID|26079|M|19.5,67.5|N|Head into the tower and upstairs (to the left when you have a choice of direction). Kill and loot Otto and Lord Falconcrest as you head up the tower.|LVL|26|
 C Stromgarde Badges|QID|26095|US|M|17.75,63.10|N|Finish killing and looting the Syndicate mobs for the Stromgarde Badges.|LVL|26|
 
 C Trelane's Defenses|QID|26037|M|17.75,63.10;14.95,68.85|CC|N|Kill Boulderfist Shaman until one drops the Azure Agate.|
@@ -141,8 +141,8 @@ C Attack on the Tower|QID|26038|M|11.33,71.22|CS|N|Head to the top floor of the 
 
 H Refuge Pointe|QID|26024|N|Hearth or run back to Refuge Pointe.|M|39.89,48.75|
 
-T Wanted! Marez Cowl|QID|26024|M|39.89,48.75|N|To Captain Nials.|
-T Wanted! Otto and Falconcrest|QID|26079|M|39.89,48.75|N|To Captain Nials.|
+T Wanted!  Marez Cowl|QID|26024|M|39.89,48.75|N|To Captain Nials.|
+T Wanted!  Otto and Falconcrest|QID|26079|M|39.89,48.75|N|To Captain Nials.|
 T Stromgarde Badges|QID|26095|M|39.91,48.75|N|To Captain Nials.|
 
 T Attack on the Tower|QID|26038|M|40.22,49.07|N|To Skuerto.|
@@ -206,7 +206,7 @@ C Stones of Binding: Burning Key|QID|26041|NC|M|18.93,31.00|N|Click on the Stone
 T Stones of Binding|QID|26041|M|30.06,59.18|N|To the Stone of Inner Binding.|
 
 A Breaking the Keystone|QID|26042|PRE|26041|RANK|1|M|30.06,59.18|N|From the Stone of Inner Binding.|
-C Breaking the Keystone|QID|26042|M|43.40,66.26|N|Kill and loot Fozruk.|
+K Fozruk|QID|26042|T|Fozruk|M|43.40,66.26|N|Kill and loot Fozruk.|
 T Breaking the Keystone|QID|26042|M|30.11,59.74|N|To the Keystone. When you turn this in, a level 29 giant will spawn.|
 
 A Myzrael's Tale|QID|26346|PRE|26042|RANK|1|M|30.01,59.18|N|From the Stone of Inner Binding.|
@@ -214,12 +214,12 @@ A Myzrael's Tale|QID|26346|PRE|26042|RANK|1|M|30.01,59.18|N|From the Stone of In
 H Refuge Pointe|QID|26346|N|Run (or Heathstone) to Refuge Pointe.|M|40.26,49.07|
 
 T Myzrael's Tale|QID|26346|M|40.26,49.07|N|To Skuerto.|
-A The Princess Unleashed: Group [2] Quest|QID|26049|PRE|26346|RANK|1|M|40.26,49.07|N|From Skuerto. This quest is suggested for [2] players.|
+A The Princess Unleashed|QID|26049|PRE|26346|RANK|1|M|40.26,49.07|N|Group [2] Quest\n\nFrom Skuerto. This quest is suggested for [2] players.|O|
 C The Princess Unleashed|QID|26049|U|4472|M|57.56,34.99|N|Head to the Shards of Myzrael, then use the Scroll of Myzrael to summon her. Defeat her and loot. She's a level 30 Elite with 5,730 HP so you may need a second player to help.|
 T The Princess Unleashed|QID|26049|M|57.26,34.61|N|To the Shard of Myzrael.|
 
 ;The following quest is offered up to Level 33 only.
-L Hero's Call: The Hinterlands!|QID|26542|RANK|1|M|40,48.8|N|If you intend to progress onto Hinterlands, accept this Breadcrumb Quest. From Captain Nials.|LVL|34|
+A Hero's Call: The Hinterlands!|QID|26542|RANK|1|M|40,48.8|N|If you intend to progress onto Hinterlands, accept this Breadcrumb Quest. From Captain Nials.|LVL|34|O|
 
 N The End |QID|26542|N|You have finished this guide. Click this step to move onto Hinterlands quest.
 

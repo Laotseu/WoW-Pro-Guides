@@ -128,16 +128,15 @@ L Level 86 |QID|30080|LVL|86|N|You need to be Level 86 to do this guide.|
 F Zhu's Watch|QID|30080|M|19, 56|N|This guide starts at Zhu's watch. If you aren't there, fly or run there.|
 T Ken-Ken|QID|29873|M|76.23,7.13|N|To Ken-Ken. This was accepted from Xiao at the beginning of Valley of the 4 Winds.|
 A What's Eating Zhu's Watch?|QID|30079|M|76.22,7.06|N|From Ken-Ken.|
-C Speak with Mei|QID|30079|NC|QO|Speak with Mei: 1/1|M|75.84,7.60|N|Up the stairs, outside.|
+C Speak with Mei|QID|30079|CHAT|QO|Speak with Mei: 1/1|M|75.84,7.60|N|Up the stairs, outside.|
 A Finding Yi-Mo|QID|30080|M|75.84,7.60|N|From Mei Barrelbottom.|
-C Speak with Yun|QID|30079|NC|QO|Speak with Yun: 1/1|M|75.48,9.39|N|Up the stairs, inside.|
-C Speak with Despondent Warden of Zhu|QID|30079|NC|QO|Speak with Despondent Warden of Zhu: 1/1|M|76.69,8.85|
-C Speak with Sunni|QID|30079|NC|QO|Speak with Sunni: 1/1|M|77.47,8.54|N|Up the stairs, inside in bed.|
-f Zhu's Watch|QID|30078|M|76.7,8.38|N|At Gee Hung.|
+C Speak with Yun|QID|30079|CHAT|QO|Speak with Yun: 1/1|M|75.48,9.39|N|Up the stairs, inside.|
+C Speak with Despondent Warden of Zhu|QID|30079|CHAT|QO|Speak with Despondent Warden of Zhu: 1/1|M|76.69,8.85|
+C Speak with Sunni|QID|30079|CHAT|QO|Speak with Sunni: 1/1|M|77.47,8.54|N|Up the stairs, inside in bed.|
 l Boat Building Instructions|QID|31869|L|87524|M|88.53,50.6;92.17,39.06|CS|Z|Valley of the Four Winds|N|Optional, worth 10g and some XP. Dot is at the beginning of the patch down, run down the hill, along the shore about 20 yards, and up into the house, papers are on table.|
-C Finding Yi-Mo|QID|30080|M|81.30,8.85|N|He is lying on the ground.|
-T Finding Yi-Mo|QID|30080|M|81.31,6.78|N|To Yi-Mo Longbrow.|
-A Cheer Up, Yi-Mo|QID|30082|M|81.30,6.78|N|From Yi-Mo Longbrow.|
+C Finding Yi-Mo|QID|30080|M|81.3,6.8|N|He is lying on the ground.|
+T Finding Yi-Mo|QID|30080|M|81.3,6.8|N|To Yi-Mo Longbrow.|
+A Cheer Up, Yi-Mo|QID|30082|M|81.3,6.8|N|From Yi-Mo Longbrow.|
 C Cheer Up, Yi-Mo|QID|30082|NC|M|76.77,7.74|N|Talk to him, then you have to roll him home. You will be attacked by large birds on the way.|
 C Cheer Up, Yi-Mo|QID|30082|M|77.02,7.70|
 T Cheer Up, Yi-Mo|QID|30082|M|75.90,7.61|N|To Mei Barrelbottom.|
@@ -152,15 +151,15 @@ A Securing the Province|QID|30083|M|75.83,7.65|N|From Mei Barrelbottom.|
 A Borderlands|QID|30084|M|75.83,7.65|N|From Mei Barrelbottom.|
 T Materia Medica|QID|30081|M|76.22,7.06|N|To Ken-Ken.|
 A Why So Serious?|QID|30088|M|76.22,7.06|N|From Ken-Ken.|
-C Why So Serious?|QID|30088|S|L|78941 18|M|72.00,16.91|N|The panthers are in the area around the Memorial Flames.|
-C Memorial Flame of Po|QID|30084|NC|U|78928|QO|Memorial Flame of Po: 1/1|M|74.00,17.00|
+C Why So Serious?|QID|30088|S|QO|Huge Panther Fang: 18/18|M|72.00,16.91|N|The panthers are in the area around the Memorial Flames.|
+C Memorial Flame of Po|QID|30084|NC|U|78928|QO|Memorial Flame of Po: 1/1|M|74.0,16.8|
 C Memorial Flame of Zhu|QID|30084|NC|U|78928|QO|Memorial Flame of Zhu: 1/1|M|72.70,18.12|
 C Memorial Flame of Rin|QID|30084|NC|U|78928|QO|Memorial Flame of Rin: 1/1|M|71.30,17.47|
 C Why So Serious?|QID|30088|US|QO|Huge Panther Fang: 18/18|M|72.00,16.91|N|Finish killing the Panthers for the Fangs|
 C Securing the Province|QID|30083|S|M|77.30,58.91|Z|Valley of the Four Winds|N|Kill the sauroks on the way in and out of the cave.|
-R Winds' Edge|QID|30083|M|77.05,57.2|N|Head to Winds' Edge and enter the cave|
-l Saurok Stone Tablet|QID|30088|L|86220|M|75.05,55.12|Z|Valley of the Four Winds|N|The tablet is a world drop worth ~100G and a random amount of XP (at least as much as one quest)|
-l Jar of Pigment|QID|30088|US|L|78942|M|73.89,56.30|Z|Valley of the Four Winds|N|Pick up the jar of pigment here.|
+;R Winds' Edge|QID|30083|M|77.05,57.2|N|Head to Winds' Edge and enter the cave|
+C Saurok Stone Tablet|QID|30088|M|77.05,57.2;75.05,55.12|CC|Z|Valley of the Four Winds|N|The tablet is a world drop worth ~100G and a random amount of XP (at least as much as one quest)|
+C Jar of Pigment|QID|30088|NC|QO|Jar of Pigment: 1/1|M|73.89,56.30|Z|Valley of the Four Winds|N|Pick up the jar of pigment here.|
 C Securing the Province|QID|30083|US|M|77.30,58.91|Z|Valley of the Four Winds|N|Finish killing the sauroks as you leave the cave.|
 T Securing the Province|QID|30083|M|75.83,7.65|N|To Mei Barrelbottom.|
 T Borderlands|QID|30084|M|75.83,7.65|N|To Mei Barrelbottom.|
@@ -187,10 +186,10 @@ T The Arcanic Oubliette|QID|30274|M|67.45,32.64|N|To Lorekeeper Vaeldrin.|
 A The Lost Dynasty|QID|30344|M|67.45,32.64|N|From Lorekeeper Vaeldrin.|
 A Squirmy Delight|QID|30350|M|67.36,32.75|N|From Kang Bramblestaff.|
 A Blind Them!|QID|30384|M|67.45,32.70|N|From Lyalia.|
-C Kill and loot skitterers|QID|30350|S|M|62.46,32.89|N|Its a random drop from the skitterers.|
+C Squirmy Delight|QID|30350|S|M|62.46,32.89|N|Its a random drop from the skitterers.|
 C The Lost Dynasty|QID|30344|S|NC|M|68.05,21.47|N|These are stone tablets on the ground.|
-C Kill cranes|QID|30352|S|M|63.94,29.44|
-C Kill and loot tigers|QID|30353|S|M|71.15,24.65|N|The tigers drop 0-3 blood, they are likely to be stealthed.|
+C Crane Mastery|QID|30352|S|M|63.94,29.44|N|Kill cranes.|
+C Profit Mastery|QID|30353|S|M|71.15,24.65|N|The tigers drop 0-3 blood, they are likely to be stealthed.|
 K Sunwalker Scout|T|Sunwalker Scout|QID|30384|QO|Sunwalker Scout slain: 1/1|M|66.55,25.08|N|He paths up and down this path.|
 C Profit Mastery|QID|30353|US|M|71.15,24.65|
 C Crane Mastery|QID|30352|US|M|63.94,29.44|
@@ -216,13 +215,12 @@ K Kill Dojani Dominator|QID|30346|T|Dojani Dominator|M|55.51,35.48|L|78917|N|Kil
 C Where are the Pools|QID|30346|M|55.26,34.46|To UI Alert. (If you miss the alert you can turn in back at the Incursion.)|
 T Where are the Pools|QID|30346|
 A The Pools of Youth|QID|30347|N|from UI Alert.|
-C Threat from Dojan|QID|30349|US|M|55,35|N|Finish this before you go on to the pools, no dojani down there.|
 C The Pools of Youth|QID|30347|NC|M|54.6,33.1;51.9,32.4|CS|N|When facing the platform where you killed the Dominator, go to your left, over a bridge and down some stairs to a pool area. Free Na Lek, kill the guardians and loot the 'water of youth' (groundspawn).|
 C Lotus Tea|QID|30351|US|NS|M|55,35|N|There are a few flowers down here if you aren't yet done.|
-T Lotus Tea|QID|30351||N|To Kang Bramblestaff, next to you. (if you dont turn it in right away, you have to wait until you are at sentinal basecamp.)|
-R While traveling|QID|31409|M|50.8,49.4|CC|N|You can optionally go along the coast and look for a Pandaran Fishing Spear It is located under Uncle Deming.(rare blue BoA).|
+C Threat from Dojan|QID|30349|US|M|55,35|N|Finish this before you go on to the pools, no dojani down there.|
 ;R The Incursion|M|67.4,32|
 T Threat from Dojan|QID|30349|M|67.45,32.70|N|To Lyalia.|
+T Lotus Tea|QID|30351||N|To Kang Bramblestaff, next to you. (if you dont turn it in right away, you have to wait until you are at sentinal basecamp.)|
 T The Pools of Youth|QID|30347|M|67.45,32.64|N|To Lorekeeper Vaeldrin.|
 T Lotus Tea|QID|30351|M|67.36,32.75|N|To Kang Bramblestaff. |
 A Immortality?|QID|30348|M|67.45,32.64|N|From Lorekeeper Vaeldrin.|
@@ -230,6 +228,7 @@ C Immortality?|QID|30348|M|67.45,32.64|N|Watch and wait.|
 T Immortality?|QID|30348|M|67.45,32.64|N|To Lorekeeper Vaeldrin.|
 A Going on the Offensive|QID|30363|M|67.45,32.70|N|From Lyalia.|
 
+R While traveling|QID|31409|M|50.8,49.4|CC|N|You can optionally go along the coast and look for a Pandaran Fishing Spear It is located under Uncle Deming.(rare blue BoA).|
 C Going on the Offensive|QID|30363|NC|M|43.9,43.4|N|The poor outrider is on the ground (again).|
 T Into the Wilds|QID|30178|M|44.24,43.02|N|To Koro Mistwalker.|
 A Unsafe Passage|QID|30269|M|44.16,43.00|N|From Koro Mistwalker.|
@@ -262,9 +261,9 @@ A In the House of the Red Crane|QID|30273|M|38.01,50.89|N|From Anduin Wrynn.|
 C In the House of the Red Crane|QID|30273|M|40.46,54.65|N|Go up the center stairs then run straight back to the stairs into the basement. Talk to Chi-Ji to start the fight. He will float up and a large sha will appear, defeat it and you win. When the adds show up, you probably want to focus on them, since deaths cause Anduin to heal you.|
 T In the House of the Red Crane|QID|30273|M|40.43,49.18|N|To Chi-Ji (back outside).|
 
-R Nayeli Lagoon|QID|30667|M|51.7,75.34|
+;R Nayeli Lagoon|QID|30667|M|51.7,75.34|
 A Particular Plumage|QID|30667|M|51.67,75.30|N|From Tony Tuna.|
-l Stack of Papers|QID||31863|L|87798|M|52,73|N|Another of those grey items, this one doesn't sell for as much, but its free gold and XP, the path up is on the back side of the island.|
+l Stack of Papers|QID|31863|L|87798|M|52,73|N|Another of those grey items, this one doesn't sell for as much, but its free gold and XP, the path up is on the back side of the island.|
 f Marista|M|52.43,76.53|N|At Nan-Po.|
 A Sudden, Unexpected Crocolisk Aggression|QID|30666|M|51.53,76.85|N|From Jay Cloudfall, on the ledge of the inn.|
 C Sudden, Unexpected Crocolisk Aggression|QID|30666|S|M|46.34,71.99|
@@ -288,17 +287,18 @@ C Wisdom Has A Price|QID|30671|US|M|46.54,77.47|N|Random drop from the sharks.|
 T Wisdom Has A Price|QID|30671|M|46.01,78.96|N|To Wise Ana Wu.|
 A Balance|QID|30672|M|46.01,78.96|N|From Wise Ana Wu.|
 
-R Unga Ingoo|QID|30674|M|45.31,85.17|N|Keep jumping on your raft.|
-A Banana Infused Rum|QID|31411|M|53.2,88.7|N|East of Unga Ingoo (at the top of the hill) there may be a barrel that contains the Recipe: Banana Infused Rum. Beware of Spriggen!|
-A Equipment Locker|QID|31410|M|42.29,91.98|N|West of Unga Ingoo is a pirate ship, that may contain an Equipment Locker (in the lowest level hold) with a pair of spec specific ilvl 419 boots.|
-K Unga Fish Getter|L|80827|M|45.31,85.17|N|Be sure and loot these at least until you get the item to start the quest.|
+;R Unga Ingoo|QID|30674|M|45.31,85.17|N|Keep jumping on your raft.|
+A Banana Infused Rum|QID|31411|O|M|53.2,88.7|N|East of Unga Ingoo (at the top of the hill) there may be a barrel that contains the Recipe: Banana Infused Rum. Beware of Spriggen!|
+A Equipment Locker|QID|31410|O|M|42.29,91.98|N|West of Unga Ingoo is a pirate ship, that may contain an Equipment Locker (in the lowest level hold) with a pair of spec specific ilvl 419 boots.|
+;K Unga Fish Getter|QID|30675|L|80827|M|45.31,85.17|N|Be sure and loot these at least until you get the item to start the quest.|
 C Balance|QID|30672|S|M|50.85,84.15|
-A Buried Hozen Treasure|QID|30675|U|80827|M|43.81,85.41|N|From Confusing Treasure Map - looted off of an Unga.|
+A Buried Hozen Treasure|QID|30675|S|U|80827|M|43.81,85.41|N|From Confusing Treasure Map - looted off of an Unga. Kill them until you get it.|
 A Balance Without Violence|QID|30674|M|45.31,85.17|N|From UI Alert.|
+A Buried Hozen Treasure|QID|30675|US|U|80827|M|43.81,85.41|N|From Confusing Treasure Map - looted off of an Unga. Kill them until you get it.|
 C Balance Without Violence|S|QID|30674|M|42.68,82.74|N|There are piles of fish, the sparkly ones are the ones you can click on to throw back into the water.|
-T Balance Without Violence|QID|30674|M|42.22,82.87|N|To UI Alert.|
+;T Balance Without Violence|QID|30674|M|42.22,82.87|N|To UI Alert.|
 C Buried Hozen Treasure|QID|30675|S|M|51.10,85.27|N|Click on the piles of sand to search for the treasure.|
-C Balance|QID|30672|M|50.85,84.15|
+C Balance|QID|30672|US|M|50.85,84.15|
 C Balance Without Violence|US|QID|30674|M|42.68,82.74|N|There are piles of fish, the sparkly ones are the ones you can click on to throw back into the water.|
 T Balance Without Violence|QID|30674|M|42.22,82.87|N|To UI Alert.|
 C Buried Hozen Treasure|QID|30675|US|M|51.10,85.27|N|Click on the piles of sand to search for the treasure.|
@@ -306,15 +306,15 @@ T Buried Hozen Treasure|QID|30675|M|51.10,85.27|N|To UI Alert.|
 R Marista|QID|30672|M|51.55,76.83|N|Keep jumpin'.|
 T Balance|QID|30672|M|51.55,76.83|N|To Jay Cloudfall.|
 
-R Explore|QID|99999|N|Explore the islands while you are out here and have the raft (its a one hour duration).|
-f Cradle of Chi-Ji|QID|30675|M|31.19,63.25|N|At Feather Keeper Li.|
+R Explore|QID|30168|N|Explore the islands while you are out here and have the raft (its a one hour duration).|
+f Cradle of Chi-Ji|M|31.19,63.25|N|At Feather Keeper Li.|
 
 R Fallsong Village|M|29.66,39.0|QID|30168|N|You can take the raft up the river to avoid combat. (portage around the waterfall).|
 A Thieving Raiders|QID|30168|M|29.67,39.06|N|From Tired Shushen.|
 A Raid Leader Slovan|QID|30169|M|29.67,39.06|N|From Tired Shushen.|
-K Riverbank Flesh-Hunter|QID|30168|S|L|78958 5|M|29.55,45.17|Z|Valley of the Four Winds|N|If you still have the raft, take a shortcut across the water, unfortunantly, you lose the buff when you technically cross into Valley of the Four Winds.|
+C Riverbank Flesh-Hunter|QID|30168|S|L|78958 5|M|34.3,28.8|Z|Valley of the Four Winds|N|If you still have the raft, take a shortcut across the water, unfortunantly, you lose the buff when you technically cross into Valley of the Four Winds.|
 K Raid Leader Slovan|T|Slovan|QID|30169|QO|Slovan slain: 1/1|M|31.87,29.01|Z|Valley of the Four Winds|
-K Riverbank Flesh-Hunter|QID|30168|US|L|78958 5|M|29.55,45.17|Z|Valley of the Four Winds|
+C Riverbank Flesh-Hunter|QID|30168|US|L|78958 5|M|34.3,28.8|Z|Valley of the Four Winds|
 T Thieving Raiders|QID|30168|M|29.67,39.06|N|To Tired Shushen.|
 T Raid Leader Slovan|QID|30169|M|29.67,39.06|N|To Tired Shushen.|
 
@@ -322,13 +322,13 @@ R Sentinel Basecamp|QID|30363|M|24.76,34.00|
 T Going on the Offensive|QID|30363|M|24.70,34.04|N|To Lyalia.|
 A No Sister Left Behind|QID|30354|M|24.70,34.04|N|From Lyalia.|
 A Sever Their Supply Line|QID|30356|M|24.70,34.04|N|From Lyalia.|
-f Sentinel Basecamp|QID|30356|M|25.14,33.46|N|At Maylen Moonfeather.|
+f Sentinel Basecamp|M|25.14,33.46|N|At Maylen Moonfeather.|
 A Re-Reclaim|QID|30355|M|25.20,34.53|N|From Kang Bramblestaff.|
+C Sever Their Supply Line|QID|30356|S|M|23.70,42.04|N|To maximimze efficiency, try to kill the ones that are beside trapped horde people or ground spawns you need to pick up.|
 C Re-Reclaim|QID|30355|S|NC|M|23.43,45.24|N|Pick up the sparkly artifacts from the ground.|
-C No Sister Left Behind|QID|30354|S|NC|M|23.49,45.07|N|Click on the sentinals to free them from the traps.|
-C Sever Their Supply Line|QID|30356|M|23.70,42.04|N|To maximimze efficiency, try to kill the ones that are beside trapped horde people or ground spawns you need to pick up.|
+C No Sister Left Behind|QID|30354|NC|M|23.49,45.07|N|Click on the sentinals to free them from the traps.|
 C Re-Reclaim|QID|30355|US|NC|M|23.43,45.24|N|Pick up the sparkly artifacts from the ground.|
-C No Sister Left Behind|QID|30354|US|NC|M|23.49,45.07|N|Click on the sentinals to free them from the traps.|
+C Sever Their Supply Line|QID|30356|US|M|23.70,42.04|N|To maximimze efficiency, try to kill the ones that are beside trapped horde people or ground spawns you need to pick up.|
 T Re-Reclaim|QID|30355|M|25.20,34.53|N|To Kang Bramblestaff.|
 T No Sister Left Behind|QID|30354|M|24.70,34.04|N|To Lyalia.|
 T Sever Their Supply Line|QID|30356|M|24.70,34.04|N|To Lyalia.|
@@ -337,7 +337,7 @@ A The Mantid|QID|30361|M|24.88,34.37|N|From Ambassador Han.|
 C The Mantid|QID|30361|S|M|14.44,35.46|
 A The Stoneplow Convoy|QID|30357|M|15.09,39.42|N|From Lorekeeper Vaeldrin.|
 C The Stoneplow Convoy|QID|30357|NC|U|79163|M|15.62,34.96|N|Use the poultices to heal the envoys.|
-C The Mantid|QID|30361|S|M|14.44,35.46|
+C The Mantid|QID|30361|US|M|14.44,35.46|
 T The Mantid|QID|30361|M|15.69,39.71|N|To Ambassador Len.|
 T The Stoneplow Convoy|QID|30357|M|15.09,39.42|N|To Lorekeeper Vaeldrin.|
 A The Lord Reclaimer|QID|30359|M|15.09,39.42|N|From Lorekeeper Vaeldrin.|
