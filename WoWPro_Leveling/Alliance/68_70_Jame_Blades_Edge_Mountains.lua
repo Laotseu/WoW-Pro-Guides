@@ -111,7 +111,7 @@ C The Encroaching Wilderness |N|Kill Lynxes until you finish this quest. |US|QID
 T The Encroaching Wilderness |QID|10455|M|36.2,67.1|N|To Rina Moonspring.|
 A Marauding Wolves|QID|10456|M|36.2,67.1|N|From Rina Moonspring.|
 C Marauding Wolves|N|Kill the wolves needed for this quest.|QID|10456|M|51.00,65.00|S|
-C The Den Mother|N|Kill Rema in this cave.|QID|10690|M|52.00,75.00|
+K Rema|N|Kill Rema in this cave.|QID|10690|T|Rema|M|52.00,75.00|
 C Marauding Wolves|N|Kill the wolves needed for this quest.|QID|10456|M|51.00,65.00|US|
 
 H Sylvanaar |QID|10690|N|Hearth to Sylvanaar.|M|35.83,63.93|
@@ -119,15 +119,15 @@ T The Den Mother |QID|10690|M|36.3,66.2|N|To Commander Skyshadow.|
 T Marauding Wolves |QID|10456|M|36.2,67.1|N|To Rina Moonspring.|
 A Protecting Our Own |QID|10457|M|36.2,67.1|N|From Rina Moonspring.|
 r Sell junk, repair, restock |QID|10457|N|Sell junk, repair, restock |M|37.7,64.86|
-C Protecting Our Own |N|Click seedlings on the ground until you finish this quest.|QID|10457|M|40.00,69.00|
+C Protecting Our Own |N|Click seedlings on the ground until you finish this quest.|QID|10457|NC|M|40.00,69.00|
 T Protecting Our Own |QID|10457|M|36.2,67.1|N|To Rina Moonspring.|
 A A Dire Situation |QID|10506|M|36.2,67.1|N|From Rina Moonspring.|
 
 C A Dire Situation |N|Use Rina's Diminution Powder on Bloodmaul Dire Wolves.|QID|10506|M|43.50,73.20|S|
-C Strange Brew |N|Loot barrels of brew until you finish this quest.|QID|10511|M|46.00,77.00|S|
+C Strange Brew |N|Loot barrels of brew until you finish this quest.|QID|10511|NC|M|46.00,77.00|S|
 C The Bloodmaul Ogres|N|Kill any Bloodmaul Ogres you see for this quest.|QID|10502|M|42.4,79.4|S|
-C Into the Draenethyst Mine |N|Loot 5 Draenethyst Mine Crystals from the cave.|QID|10510|M|42.40,83.50|
-C Strange Brew |N|Loot barrels of brew until you finish this quest.|QID|10511|M|46.00,77.00|US|
+C Into the Draenethyst Mine |N|Loot 5 Draenethyst Mine Crystals from the cave.|QID|10510|NC|M|42.40,83.50|
+C Strange Brew |N|Loot barrels of brew until you finish this quest.|QID|10511|NC|M|46.00,77.00|US|
 C The Bloodmaul Ogres|N|Kill the rest of the Bloodmaul Ogres for this quest.|QID|10502|M|42.4,79.4|US|
 C A Dire Situation |N|Use Rina's Diminution Powder on Bloodmaul Dire Wolves.|QID|10506|M|43.50,73.20|US|
 T A Dire Situation |QID|10506|M|36.2,67.1|N|To Rine Moonspring.|
@@ -138,20 +138,20 @@ T Strange Brew |QID|10511|M|37.4,64.6|N|To Borgrim Stouthammer.|
 A Getting the Bladespire Tanked |QID|10512|M|37.4,64.6|N|From Borgrim Stouthammer.|
 r Sell junk, repair, restock|QID|10516|N|Sell junk, repair, restock |M|37.7,64.86|
 
-C Getting the Bladespire Tanked|N|Use the beer ogres until you complete this quest. |QID|10512|M|40.3,53.0|S|U|30353|
+C Getting the Bladespire Tanked|N|Use the beer ogres until you complete this quest. |QID|10512|NC|M|40.3,53.0|S|U|30353|
 C The Bladespire Ogres |N|Kill any ogre you see for this quest.|QID|10504|M|40.3,53.0|S|
 A The Trappings of a Vindicator |QID|10516|M|44.0,51.9|N|From Vindicator Vuuleen.|
-l Vindicator Vuuleen's Blade |QID|10516|N|Go in this building and kill the two non-elite mobs. Do not pull the elite mobs. Kill Droggam by going close to him (without attracting any mob), and use the Bloodmaul Brutebane Keg on him. Droggam will run towards you without attracting the elites. Loot the blade. (39.20, 52.80)|L|30413 1|M|39.20, 52.80|
-C The Trappings of a Vindicator |N|Kill Mugdorg in this building by using the beer in the same manner as last time. Take the shield.|QID|10516|M|42.00,57.00|
+C Vindicator Vuuleen's Blade |QID|10516|QO|1|U|30353|N|Go in this building and kill the two non-elite mobs. Do not pull the elite mobs. Kill Droggam by going close to him (without attracting any mob), and use the Bloodmaul Brutebane Keg on him. Droggam will run towards you without attracting the elites. Loot the blade. (39.20, 52.80)|M|39.20, 52.80|
+C Vindicator Vuuleen's Shield |N|Kill Mugdorg in this building by using the beer in the same manner as last time. Take the shield.|QID|10516|QO|2|U|30353|M|42.00,57.00|
 T The Trappings of a Vindicator |QID|10516|M|44.0,51.9|N|To Vindicator Vuuleen.|
 A Gorr'Dim, Your Time Has Come... |QID|10517|M|44.0,51.9|N|From Vindicator Vuuleen.|
 C Gorr'Dim, Your Time Has Come... |U|30353|N|Kill Gorr'Dim by using the beer in the same manner as before. |QID|10517|M|40.00,49.00|
 T Gorr'Dim, Your Time Has Come... |QID|10517|M|44.0,51.9|N|To Vindicator Vuuleen.|
 A Planting the Banner|QID|10518|N|From Vindicator Vuuleen.|
-l Bladespire Clan Banner|QID|10518|N|Kill a Bladespire Champion on the second floor of this building (stairs are outside) and loot the Bladespire Clan Banner.|L|30416 1|M|39,58|
-C Getting the Bladespire Tanked|N|Use the beer on more ogres until you complete this quest. |QID|10512|M|40.3,53.0|US|U|30353|
+C Bladespire Clan Banner|QID|10518|QO|1|N|Kill a Bladespire Champion on the second floor of this building (stairs are outside) and loot the Bladespire Clan Banner.|M|39,58|
+C Getting the Bladespire Tanked|N|Use the beer on more ogres until you complete this quest. |QID|10512|NC|M|40.3,53.0|US|U|30353|
 C The Bladespire Ogres |N|Kill the rest of the ogres for this quest.|QID|10504|M|40.3,53.0|US|
-C Planting the Banner |U|30416|N|You may need a group for this quest. Plant the banner at the top of the tower here and fight the waves of mobs. Loot the helm at the end.|QID|10518|M|46.00,74.00|
+C Planting the Banner |U|30416|N|You may need a group for this quest. Plant the banner at the top of the tower here and fight the waves of mobs. Loot the helm at the end.|QID|10518|QO|2|M|46.00,74.00|
 
 H Sylvanaar |QID|10504| |N|Hearth to Sylvanaar.|M|35.83,63.93|
 T The Bladespire Ogres |QID|10504|M|36.3,66.2|N|To Commander Skyshadow.|
@@ -169,7 +169,7 @@ A Test Flight: The Zephyrium Capacitorium |QID|10557|M|60.3,68.4|N|From Tally Za
 A Crystal Clear |QID|10608|M|60.2,68.9|N|From Nickwinkle the Metro-Gnome.|
 f Toshley's Station |QID|10557|N|Get the flight path.|M|61.15,70.45|
 
-C Test Flight: The Zephyrium Capacitorium |N|Talk to Rally Zabnapper and start the flight.|QID|10557|M|60.20,68.80|
+C Test Flight: The Zephyrium Capacitorium |N|Talk to Rally Zabnapper and start the flight.|QID|10557|CHAT|M|60.20,68.80|
 T Test Flight: The Zephyrium Capacitorium |QID|10557|M|60.3,68.4|N|To Tally Zapnabber.|
 A Test Flight: The Singing Ridge |QID|10710|M|60.3,68.4|N|From Tally Zapnabber.|
 C Picking Up Some Power Converters |U|30656|N|Right-click the Power Converters on the ground around this location, and use the Protovoltaic Magneto Collector on the elementals, then kill them. Do this until you finish this quest.|QID|10584|M|58.00,61.00|
@@ -178,14 +178,15 @@ A Ride the Lightning |QID|10657|M|60.5,69.0|N|From Toshley.|
 A Ridgespine Menace |QID|10620|M|60.4,68.8|N|From Dizzy Dina.|
 A Cutting Your Teeth |QID|10632|M|60.5,68.4|N|From Razak Ironsides.|
 
-C Test Flight: The Singing Ridge |N|Right-click Tally's Waiver, then talk to Rally and take another flight.|QID|10710|M|60.20,68.80|U|30540|
+C Test Flight: The Singing Ridge |N|Right-click Tally's Waiver, then talk to Rally and take another flight.|QID|10710|CHAT|M|60.20,68.80|U|30540|
 C Ride the Lightning |U|30818|N|Use the Magneto Sphere to absorb lightning strikes from Scalewing Serpents. Kill them until you get 5 glands and absorb 25 lightning strikes.|QID|10657|M|68.00,61.00|S|
 C Cutting Your Teeth |N|Kill Daggermaw Lashtails until you get the items for this quest.|QID|10632|M|63.00,56.00|S|
 C Ridgespine Menace |N|Go north and kill Ridgespine Stalkers, they are in stealth.|QID|10620|
 C Cutting Your Teeth |N|Kill Daggermaw Lashtails until you get the items for this quest.|QID|10632|M|63.00,56.00|US|
 C Ride the Lightning |U|30818|N|Use the Magneto Sphere to absorb lightning strikes from Scalewing Serpents. Kill them until you get 5 glands and absorb 25 lightning strikes.|QID|10657|M|68.00,61.00|US|
+C Crystal Clear |N|Kill Crystal Flayers until you finish this quest.|QID|10608|S|
 C What Came First, the Drake or the Egg? |N|Kill mobs and click on Netherdrake Eggs to spawn a whelp. Use the Temporal Phase Modulator on it to turn it into a random type of nether drake. Kill them until you get the items for this quest.|QID|10609|M|67.00,75.00|
-C Crystal Clear |N|Kill Crystal Flayers until you finish this quest.|QID|10608|
+C Crystal Clear |N|Kill Crystal Flayers until you finish this quest.|QID|10608|US|
 T Test Flight: The Singing Ridge |QID|10710|M|60.3,68.4|N|To Tally Zapnabber.|
 T What Came First, the Drake or the Egg? |QID|10609|M|61.0,68.1|N|To Fizit "Doc" Clocktock.|
 T Ride the Lightning |QID|10657|M|60.5,69.0|N|To Toshley.|
@@ -198,12 +199,12 @@ A More than a Pound of Flesh |QID|10671|M|60.4,68.8|N|From Dizzy Dina.|
 A Test Flight: Razaan's Landing |QID|10711|M|60.3,68.4|N|From Tally Zapnabber.|
 
 r Sell junk, repair, restock |QID|10674|M|60.73,69.06|
-C Test Flight: Razaan's Landing |N|Talk to Rally and take the flight.|QID|10711|M|60.20,68.80|
+C Test Flight: Razaan's Landing |N|Talk to Rally and take the flight.|QID|10711|CHAT|M|60.20,68.80|
 C More than a Pound of Flesh |N|Kill Flesh Beasts until you get the items for this quest.|QID|10671|M|65.8,45.8|S|
 C Trapping the Light Fantastic |N|Use the Light Trap to catch Light Orbs, the small light orbs floating around, until you finish this quest.|QID|10674|M|67.00,45.00|U|30852|
 C More than a Pound of Flesh |N|Kill Flesh Beasts until you get the items for this quest.|QID|10671|M|65.8,45.8|US|
-l Damaged Mask |QID|10810|N|Kill Fel Corrupters until you get the Damaged Mask.|L|31384 1|M|71.00,34.00|
-A Damaged Mask |N|Right-click the mask to start this quest.|QID|10810|M|68.9,35.6|U|31384|
+;l Damaged Mask |QID|10810|N|Kill Fel Corrupters until you get the Damaged Mask.|L|31384 1|M|71.00,34.00|
+A Damaged Mask |N|Kill Fel Corrupters until you get the Damaged Mask. Right-click the mask to start this quest.|QID|10810|M|68.9,35.6|U|31384|
 H Toshley's Station |QID|10674|N|Hearth to Toshley's Station. |M|61.00,68.10|
 T Trapping the Light Fantastic |QID|10674|M|60.5,69.0|N|To Toshley.|
 A Show Them Gnome Mercy! |QID|10675|M|60.5,69.0|N|From Toshley.|
@@ -212,13 +213,13 @@ T Test Flight: Razaan's Landing |QID|10711|M|60.3,68.4|N|To Tally Zapnabber.|
 
 C Gauging the Resonant Frequency |N|Clear the area here and then use the Oscillating Frequency Scanner five times in different spots. You have to make a pentagon shaped placement area and then stand in the middle of it. |U|30701|QID|10594|M|61.00,76.00|
 T Gauging the Resonant Frequency |QID|10594|M|60.2,68.9|N|To Nickwinkle the Metro-Gnome.|
-R Razor Ridge|QID|10675|N|Talk to the gnome and get sent to Razaan's Landing |M|60.20,68.80|
-C Show Them Gnome Mercy!|N|Kill mobs here until Nexus-Prince Razaan shows up. Kill him and loot the Collection of Souls from the cube.|QID|10675|M|66.40,44.10|
+R Razor Ridge|QID|10675|CHAT|N|Talk to the gnome and get sent to Razaan's Landing |M|60.20,68.80|
+K Nexus-Prince Razaan|N|Kill mobs here until Nexus-Prince Razaan shows up. Kill him and loot the Collection of Souls from the cube.|QID|10675|T|Nexus-Prince Razaan|M|66.40,44.10|
 T Show Them Gnome Mercy!|QID|10675|M|60.5,69.0|N|To Toshley.|
-r Sell junk, repair, restock |QID|10674|M|60.73,69.06|
+r Sell junk, repair, restock |QID|10712|M|60.73,69.06|
 
 A Test Flight: Ruuan Weald |QID|10712|M|60.3,68.4|N|From Tally Zapnabber.|
-C Test Flight: Ruuan Weald |N|Talk to Rally Zapnabber and choose to go to Ruuan. Use the Nether-weather Vane in your inventory while in the air.|QID|10712|M|60.20,68.80|U|31124|
+C Test Flight: Ruuan Weald |N|Talk to Rally Zapnabber and choose to go to Ruuan. Use the Nether-weather Vane in your inventory while in the air.|QID|10712|CHAT|M|60.20,68.80|U|31124|
 f Evergrove |QID|10712|N|Get the flight path.|M|61.70,39.60|
 A A Time for Negotiation... |QID|10682|M|62.0,39.5|N|From Tree Warden Chawn.|
 A Creating the Pendant |QID|10567|M|62.2,39.1|N|From Timeon.|
@@ -233,31 +234,33 @@ A From the Ashes |QID|10771|M|61.2,38.4|N|From Mosswood the Ancient.|
 T Mystery Mask |QID|10812|M|62.2,40.1|N|To Wildlord Antelarion.|
 A Felsworn Gas Mask |QID|10819|M|62.2,40.1|N|From Wildlord Antelarion.|
 h Evergrove |QID|10682| |N|Set your hearthstone to Evergrove. |M|62.85,38.30|
-C A Time for Negotiation... |N|Find Overseer Nuaar, who wanders on the path southeast to northwest of Evergrove. Talk to him and complete the quest.|QID|10682|M|58.8,39.1|T|Overseer Nuaar|
+C A Time for Negotiation... |N|Find Overseer Nuaar, who wanders on the path southeast to northwest of Evergrove. Talk to him and complete the quest.|QID|10682|CHAT|M|58.8,39.1|T|Overseer Nuaar|
 T A Time for Negotiation... |QID|10682|M|62.0,39.5|N|To Tree Warden Chawn.|
 A ...and a Time for Action |QID|10713|M|62.0,39.5|N|From Tree Warden Chawn.|
 A Poaching from Poachers |QID|10717|M|62.0,39.5|N|From Samia Inkling.|
 
-l Meeting Note |QID|10719| |N|Kill Wyrmcult mobs until you get the Meeting Note.|L|31120 1|M|59.00,40.00|S|
+;l Meeting Note |QID|10719| |N|Kill Wyrmcult mobs until you get the Meeting Note.|L|31120 1|M|59.00,40.00|S|
+A Did You Get The Note? |N|Kill Wyrmcult mobs until you get the Meeting Note. Right-click the note to start the quest.|QID|10719|S|M|59.9,37.8|U|31120|
 C Poaching from Poachers |N|Kill and loot Wyrmcult Poachers until you get 5 nets.|QID|10717|M|60.00,36.00|S|
 C ...and a Time for Action |N|Kill Wyrmcult Hewers until you finish this quest.|QID|10713|M|59.00,36.00|
 C Poaching from Poachers |N|Kill and loot Wyrmcult Poachers until you get 5 nets.|QID|10717|M|60.00,36.00|US|
-l Meeting Note |QID|10719| |N|Kill Wyrmcult mobs until you get the Meeting Note.|L|31120 1|M|59.00,40.00|US|
-A Did You Get The Note? |N|Right-click the note to start the quest.|QID|10719|M|59.9,37.8|U|31120|
+;l Meeting Note |QID|10719| |N|Kill Wyrmcult mobs until you get the Meeting Note.|L|31120 1|M|59.00,40.00|US|
+A Did You Get The Note? |N|Kill Wyrmcult mobs until you get the Meeting Note. Right-click the note to start the quest.|QID|10719|US|M|59.9,37.8|U|31120|
 l Ruuan'ok Claw|QID|10567|N|Kill mobs until you get six Ruuan'ok Claws.|L|30704 6|M|65.00,35.00|
 C Creating the Pendant |N|Go here and use the claws to summon the harbinger, then kill it and loot the item.|QID|10567|M|64.47,33.11|U|30704|
-l Gorgrom's Favor|QID|10797|N|Go down the path, and then go to the building at the arrow, go to the second floor, kill Dorgok and loot the item.|L|31363 1|M|55.19,24.29|
+C Crush the Bloodmaul Camp! |N|Kill Ogres until you finish this quest.|QID|10796|S|
+K Dorgok|QID|10797|N|Go down the path, and then go to the building at the arrow, go to the second floor, kill Dorgok and loot the item.|T|Dorgok|L|31363 1|M|55.19,24.29|
 A Favor of the Gronn |N|Right-click Gorgrom's Favor and start this quest.|QID|10797|M|55.2,24.0|U|31363|
-C Crush the Bloodmaul Camp! |N|Kill Ogres until you finish this quest.|QID|10796|
+C Crush the Bloodmaul Camp! |N|Kill Ogres until you finish this quest.|QID|10796|US|
 
 H Evergrove |QID|10567|N|Hearth to Evergrove.|M|62.84,38.35|
 T Creating the Pendant |QID|10567|M|62.2,39.1|N|To Timeon.|
 A Whispers of the Raven God |QID|10607|M|62.2,39.1|N|From Timeon.|
 T ...and a Time for Action |QID|10713|M|62.0,39.5|N|To Tree Warden Chawn.|
 T Did You Get The Note? |QID|10719|M|62.0,39.5|N|To Tree Warden Chawn.|
+A Wyrmskull Watcher |QID|10894|M|62.0,39.5|N|From Tree Waden Chawn.|
 T Poaching from Poachers |QID|10717|M|62.0,39.5|N|To Samia Inkling.|
 A Whelps of the Wyrmcult |QID|10747|M|62.0,39.5|N|From Samia Inkling.|
-A Wyrmskull Watcher |QID|10894|M|62.0,39.5|N|From Tree Waden Chawn.|
 T A Date with Dorgok |QID|10795|M|62.0,38.0|N|To Commander Haephus Stonewall.|
 T Favor of the Gronn |QID|10797|M|62.0,38.0|N|To Commander Haephus Stonewall.|
 A Pay the Baron a Visit |QID|10798|M|62.0,38.0|N|From Commander Haephus Stonewall.|
