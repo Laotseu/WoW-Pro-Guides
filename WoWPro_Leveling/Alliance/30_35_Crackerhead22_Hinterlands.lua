@@ -95,9 +95,10 @@ return [[
 
 L Level 29 |QID|26546|LVL|29|N|This guide requires a minimum level of 29 to do.|
 
-R The Hinterlands|QID|26546|M|43.36,45.18;36.71,31.15;38.45,22.89;39.32,19.03|Z|Arathi Highlands|CN|N|Follow the waypoints to The Hinterlands.\n\nFor players up to level 33 only, there is a bread-crumb quest from Ironforge Hero's Callboard or from Captain Nials in Aerie Peak.|
+A Hero's Call: The Hinterlands!|QID|26542|RANK|1|M|40,48.8|N|There is a bread-crumb quest from Ironforge Hero's Callboard or from Captain Nials in Aerie Peak.|LVL|34|O|
+R The Hinterlands|QID|26546|M|43.36,45.18;36.71,31.15;38.45,22.89;39.32,19.03|Z|Arathi Highlands|CN|N|Follow the waypoints to The Hinterlands.|
 R Aerie Peak|QID|26546|M|26.29,69.07;26.21,55.04;20.13,53.66;14.17,48.03|CN|N|Follow the waypoints to Aerie Peak.|
-f Aerie Peak|QID|26546|M|12.9,48.3;11.36,49.09;12.17,47.29;11.17,46.06|CN|N|At Guthrum Thunderfist.|
+f Aerie Peak|M|12.9,48.3;11.36,49.09;12.17,47.29;11.17,46.06|CN|N|At Guthrum Thunderfist.|
 T Hero's Call: The Hinterlands!|QID|26542|M|9.96,44.31|N|To Gryphon Master Talonaxe.|ACTIVE|26542|
 
 A Razorbeak Friends|QID|26546|M|9.96,44.31|N|From Gryphon Master Talonaxe.|
@@ -111,7 +112,8 @@ T A Mangy Threat|QID|26547|M|9.97,44.27|N|To Gryphon Master Talonaxe.|
 A Out to the Front|QID|26548|M|9.97,44.27|N|From Gryphon Master Talonaxe.|
 
 F Stormfeather Outpost|QID|26548|M|11.11,46.09|N|Talk to Guthrum Thunderfist, and choose to go to Stormfeather Outpost.|
-f Stormfeather Outpost|QID|26548|M|65.74,44.94|N|At Brock Rockbeard.|
+
+f Stormfeather Outpost|M|65.74,44.94|N|At Brock Rockbeard.|
 T Out to the Front|QID|26548|M|66.33,44.37|N|To Kerr Ironsight.|
 
 A The Wicked Revantusk|QID|26462|M|66.33,44.37|N|From Kerr Ironsight.|
@@ -120,7 +122,7 @@ A Snapjaws, Lad!|QID|26485|M|66.27,44.32|N|From Dron Blastbrew.|
 A 99 Bottles of Booze on the Beach|QID|26486|M|66.27,44.32|N|From Dron Blastbrew.|
 h Stormfeather Outpost|QID|26462|N|With Innkeeper Keirnan|
 C The Wicked Revantusk|QID|26462|S|M|71.98,50.71|N|Kill any Revantusk you see.|
-C Gan'dranda|QID|26483|M|73.23,53.72|N|Kill and loot Gan'dranda for his head.|
+K Gan'dranda|QID|26483|T|Gan'dranda|M|73.23,53.72|N|Kill Gan'dranda to get his head.|
 C The Wicked Revantusk|QID|26462|US|M|71.98,50.71|N|Finish killing any Revantusk you see.|
 
 C Snapjaws, Lad!|QID|26485|S|M|77.34,70.34|N|Kill and loot the Saltwater Snapjaws for their Gizzards.|
@@ -140,7 +142,7 @@ A Prime Slime|QID|26490|M|66.27,44.36|N|From Dron Blastbrew.|
 R Skulk Rock |QID|26490|M|57.42,38.67|N|Head to Skulk Rock, then to the cave entrance near the river.|
 C Skulk Rock Supplies|QID|26492|M|57.80,41.44|N|Look around inside the cave to find the Ooze-Coated Supply Crates.|S|NC|
 C Skulk Rock Clean-Up|QID|26491|M|58.29,40.76|N|Killing any Jade Oozes you see.|S|
-C Prime Slime|QID|26490|M|57.42,38.67;57.49,41.20|CS|N|Head into the cave then kill and loot Direglob for the sample.|T|Direglob|
+K Prime Slime|QID|26490|T|The Direglob|M|57.42,38.67;57.49,41.20|CS|N|Head into the cave then kill and loot Direglob for the sample.|
 C Skulk Rock Supplies|QID|26492|M|57.80,41.44|N|Look around inside the cave to find the Ooze-Coated Supply Crates.|US|NC|
 C Skulk Rock Clean-Up|QID|26491|M|58.29,40.76|N|Head back outside to finish killing any Jade Oozes you need.|US|
 T Skulk Rock Clean-Up|QID|26491|M|66.31,44.39|N|To Kerr Ironsight.|
@@ -160,10 +162,10 @@ A All That Skitters|QID|26523|M|63.81,60.00|N|From Fraggar Thundermantle.|
 
 C Vilebranch Scum|QID|26497|M|68.60,69.10|N|Kill Vilebranch Headhunters and Witch Doctors.|S|
 C Faces of Evil|QID|26521|S|U|58209|N|Use the torch by any mask you see, has a small range and can be used while moving.|NC|
-C All That Skitters|QID|26523|S|N|Grab the spiders as you (you need. They can be a little hard to grab since they are small and move aroud a lot.|NC|
-C Heads Up|QID|26518|M|65.16,65.11|N|Head to the first set of stairs, go up and turn left. When you hit the next set of stairs, go up and turn right. Follow the path ignoring the next set of stairs to find Umboda.|
+C All That Skitters|QID|26523|S|NC|T|Skittering Spiderling|N|Grab the spiders as you (you need. They can be a little hard to grab since they are small and move aroud a lot.|
+K Umboda Three-Heads|QID|26518|T|Umboda Three-Heads|M|65.16,65.11|N|Head to the first set of stairs, go up and turn left. When you hit the next set of stairs, go up and turn right. Follow the path ignoring the next set of stairs to find Umboda.|
 C Faces of Evil|QID|26521|US|U|58209|M|65.29,67.31|N|Burn any of the masks you need too.|NC|
-C All That Skitters|QID|26523|M|68.55,70.21|N|Grab any spiders that you don't have.|US|NC|
+C All That Skitters|QID|26523|T|Skittering Spiderling|M|68.55,70.21|N|Grab any spiders that you don't have.|US|NC|
 C Vilebranch Scum|QID|26497|M|68.60,69.10|N|Kill Vilebranch Headhunters and Witch Doctors.|US|
 
 T Vilebranch Scum|QID|26497|M|63.90,60.04|N|To Doran Steelwing.|
@@ -177,7 +179,7 @@ A Dark Vessels|QID|26524|M|63.89,60.04|N|From Fraggar Thundermantle.|
 F Jintha'Alor |QID|26515|M|63.90,60.04|N|Speak to Doran Steelwing and ask for a ride to the top of Jintha'Alor.|
 
 C Dark Vessels|QID|26524|S|M|65.33,66.55|N|Grab any small, sparkling cauldron you see, you will need 5.|NC|
-C Ongo'longo's Revenge|QID|26515|M|62.33,75.19|N|After you've landed, go through the tunnel, down one tier and turn right. You'll find Ongo'longo in the pit.|
+K Ongo'longo|QID|26515|T|Ongo'longo|M|62.33,75.19|N|After you've landed, go through the tunnel, down one tier and turn right. You'll find Ongo'longo in the pit.|
 C Death to the Vilebranch|QID|26498|M|64,71.25|N|After you free Ongo'longo go down 2 tiers. And kill any Shadowcaster and Berserker you see.|
 C Dark Vessels|QID|26524|M|65.33,66.55|N|Grab any small, sparkling cauldron you see, you will need 5.|US|NC|
 T Ongo'longo's Revenge|QID|26515|M|63.89,59.97|N|To Doran Steelwing.|
