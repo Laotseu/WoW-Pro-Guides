@@ -568,7 +568,7 @@ function WoWPro:GuideLevels(guide,lowerLevel,upperLevel,meanLevel)
     end
     guide['startlevel'] = lowerLevel
     guide['endlevel'] = upperLevel
-    guide['level'] = meanLevel
+    guide['level'] = meanLevel or (lowerLevel + upperLevel) / 2
 end
 
 function WoWPro:GuideRaceSpecific(guide,race)
