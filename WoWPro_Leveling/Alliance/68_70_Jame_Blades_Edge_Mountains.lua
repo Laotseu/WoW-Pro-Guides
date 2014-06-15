@@ -83,7 +83,7 @@ WoWPro:GuideIcon(guide,"ACH",4928)
 WoWPro:GuideSteps(guide, function()
 return [[
 H Shattrath City|QID|9794|N|Hearth to Shattrath City.|
-r Sell junk, repair, restock|N|Sell junk, repair, restock at your repective faction.|
+r Sell junk, repair, restock|QID|10927|N|Sell junk, repair, restock at your repective faction.|
 F Orebor Harborage|QID|9794|N|Fly to Orebor Harborage.|Z|Shattrath City|M|63.79,41.18|
 
 A No Time for Curiosity|QID|9794|M|41.2,28.7|N|From Timoth Daniels.|Z|Zangarmarsh|
@@ -273,13 +273,13 @@ A Deceive thy Enemy |QID|10820|M|73.2,40.0|N|From Legion Communicator.|U|31366|
 C Deceive thy Enemy |N|Kill the mobs for this quest.|QID|10820|M|74.43,40.66|
 T Deceive thy Enemy |N|Put the gas mask on and turn this quest in.|QID|10820|M|73.30,40.00|U|31366|
 A You're Fired! |QID|10821|N|From Legion Communicator.|U|31366|M|73.2,40.0|
-l Camp Anger Key|QID|10821|N|Kill Anger Guards until you get 5 Camp Anger Keys|L|31536 5|M|74.43,40.66|
-C You're Fired! |N|Find the five obelisks (where the waypoints are), and activate them quickly. Kill Doomcryer (elite mob, not immune to anything).|QID|10821|M|73.83,41.06;73.94,39.91;75.42,40.5;75.31,41.72;73.54,43.52|CS|
+;l Camp Anger Key|QID|10821|N|Kill Anger Guards until you get 5 Camp Anger Keys|L|31536 5|M|74.43,40.66|
+C You're Fired! |N|Kill Anger Guards to get Camp Anger Keys. Find the five obelisks (where the waypoints are), and activate them quickly. Kill Doomcryer (elite mob, not immune to anything).|QID|10821|M|73.83,41.06;73.94,39.91;75.42,40.5;75.31,41.72;73.54,43.52|CS|
 C Culling the Wild |N|Kill the mobs needed for this quest.|QID|10753|M|71.00,36.00|US|
 C Little Embers |N|Kill Imps until you finish this quest.|QID|10770|M|72.00,22.00|S|
-C Southern Volcanic Soil|N|Click the soil.|QID|10771|M|71.65,22.37|QO|Southern Volcanic Soil: 1/1|
-C Central Volcanic Soil|N|Click the soil.|QID|10771|M|71.6,20.32|QO|Central Volcanic Soil: 1/1|
-C From the Ashes |N|Click the soil to complete this quest.|QID|10771|M|71.59,18.51|
+C Southern Volcanic Soil|N|Click the soil.|QID|10771|NC|M|71.65,22.37|QO|1|
+C Central Volcanic Soil|N|Click the soil.|QID|10771|NC|M|71.6,20.32|QO|2|
+C FrCentral Volcanic Soil|N|Click the soil to complete this quest.|QID|10771|NC|QO|3|M|71.59,18.51|
 C Little Embers |N|Kill Imps until you finish this quest.|QID|10770|M|72.00,22.00|US|
 H Evergrove |QID|10753| |N|Hearth to Evergrove.|M|62.84,38.35|
 
@@ -295,7 +295,7 @@ A Into the Churning Gulch |QID|10799|M|53.3,41.2|N|From Baron Sablemane.|
 C Into the Churning Gulch |N|Kill Crust Bursters until you get the items for this quest.|QID|10799|M|50.00,42.00|
 T Into the Churning Gulch |N|To Baron Sablemane.|QID|10799|M|53.10,41.00|
 A Goodnight, Gronn |QID|10800|M|53.3,41.2|N|From Baron Sablemane.|
-C Goodnight, Gronn |N|Use the Sleeping Powder on Grulloc, then loot the sack quickly.|QID|10800|M|61.00,47.00|U|31403|
+C Goodnight, Gronn |N|Use the Sleeping Powder on Grulloc, then loot the sack quickly.|QID|10800|NC|M|61.00,47.00|U|31403|
 T Goodnight, Gronn |N|To Baron Sablemane.|QID|10800|M|53.10,41.00|
 A It's a Trap! |QID|10801|M|53.3,41.2|N|From Baron Sablemane.|
 T It's a Trap! |QID|10801|M|62.0,38.0|N|To Commander Haephus Stonewall.|
@@ -307,18 +307,19 @@ A Longtail is the Lynchpin |QID|10893|M|49.9,35.9|N|From Watcher Moonshade.|
 C Longtail is the Lynchpin |N|Go in the tunnel and kill Draaca Longtail.|QID|10893|M|45.00,31.00|T|Draaca Longtail|
 T Longtail is the Lynchpin |QID|10893|M|49.9,35.9|N|To Watcher Moonshade.|
 A Meeting at the Blackwing Coven |QID|10722|M|49.9,35.9|N|From Watcher Moonshade.|
-l Orb of the Grishna |QID|10825|N|Kill Grishna mobs until you get the Orb of the Grishna.|L|31489 1|S|
-C Receive the Second Prophecy|N|Go through the tunnel and go to this location on the tree house. Kill Grishna mobs and you will get a buff that allows you to see prophecies on the minimap.|QID|10607|M|42.43,21.67|QO|Receive the Second Prophecy: 1/1|
-C Receive the Third Prophecy|N|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Third Prophecy.|QID|10607|M|40.68,18.62|QO|Receive the Third Prophecy: 1/1|
-C Receive the First Prophecy|N|Kill Grishna mobs if you need to get the buff again. Go to this spot, up in the tree house, for the First Prophecy.|QID|10607|M|39.06,17.25|QO|Receive the First Prophecy: 1/1|
-C Whispers of the Raven God |N|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Fourth Prophecy.|QID|10607|M|40.18,22.99|
-l Orb of the Grishna |QID|10825|N|Kill Grishna mobs until you get the Orb of the Grishna.|L|31489 1|US|M|40.18,22.99|
-A The Truth Unorbed |N|Right-click the orb to start this quest.|QID|10825|M|40.2,23.0|U|31489|
-C Whelps of the Wyrmcult |N|Capture the Blackwhelps for this quest by using the Blackwhelp Net.|QID|10747|M|32.3,34.9|S|U|31129|
+;l Orb of the Grishna |QID|10825|N|Kill Grishna mobs until you get the Orb of the Grishna.|L|31489 1|S|
+A The Truth Unorbed |N|Kill Grishna mobs until you get the Orb of the Grishna. Right-click the orb to start this quest.|QID|10825|S|M|40.2,23.0|U|31489|
+C Receive the Second Prophecy|N|Go through the tunnel and go to this location on the tree house. Kill Grishna mobs and you will get a buff that allows you to see prophecies on the minimap.|QID|10607|NC|M|42.43,21.67|QO|Receive the Second Prophecy: 1/1|
+C Receive the Third Prophecy|N|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Third Prophecy.|QID|10607|NC|M|40.68,18.62|QO|Receive the Third Prophecy: 1/1|
+C Receive the First Prophecy|N|Kill Grishna mobs if you need to get the buff again. Go to this spot, up in the tree house, for the First Prophecy.|QID|10607|NC|M|39.06,17.25|QO|Receive the First Prophecy: 1/1|
+C Receive the Fourth Prophecy |N|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Fourth Prophecy.|QID|10607|QO|4|M|40.18,22.99|
+;l Orb of the Grishna |QID|10825|N|Kill Grishna mobs until you get the Orb of the Grishna.|L|31489 1|US|M|40.18,22.99|
+A The Truth Unorbed |N|Kill Grishna mobs until you get the Orb of the Grishna. Right-click the orb to start this quest.|QID|10825|US|M|40.2,23.0|U|31489|
+C Whelps of the Wyrmcult |N|Capture the Blackwhelps for this quest by using the Blackwhelp Net.|QID|10747|M|32.3,34.9|S|T|Wyrmcult Blackwhelp,use item:31129|
 l Costume Scraps |QID|10722|N|Go in the cave here and kill Wyrmcult mobs until you get 5 Costume Scraps.|L|31121 5|M|32.04,33.94|
 U Costume Scraps|QID|10722|N|Use the scraps to get an Overseer Disguise.|U|31121|M|32.00,33.00|L|31122|
-C Meeting at the Blackwing Coven|N|Use the Overseer Costume. Talk to Korphis Darkscale.|QID|10722|M|32.66,37.52|U|31122|
-C Whelps of the Wyrmcult |N|Capture the rest of the Blackwhelps for this quest by using the Blackwhelp Net.|QID|10747|M|32.3,34.9|US|U|31129|
+C Meeting at the Blackwing Coven|N|Use the Overseer Costume. Talk to Korphis Darkscale.|QID|10722|CHAT|M|32.66,37.52|U|31122|
+C Whelps of the Wyrmcult |N|Capture the rest of the Blackwhelps for this quest by using the Blackwhelp Net.|QID|10747|M|32.3,34.9|US|T|Wyrmcult Blackwhelp,use item:31129|
 
 H Evergrove |QID|10607|N|Hearth to Evergrove.|M|62.84,38.35|
 T Whispers of the Raven God |QID|10607|M|62.2,39.1|N|To Timeon.|
@@ -332,16 +333,16 @@ r Sell junk, repair, restock |QID|10829|N|Sell junk, repair, restock.|M|61.61,38
 T Treebole Must Know |QID|10829|M|36.9,22.5|N|To Treebole.|
 A Exorcising the Trees |QID|10830|M|36.9,22.5|N|From Treebole.|
 l Grishnath Orb |QID|10830|N|Go to this area and get 5 Grishnath Orbs.|L|31495 5|M|40.00,17.00|
-l Dire Pinfeather |QID|10830|N|Kill Dire Ravens until you get five Dire Pinfeathers.|L|31517 5|M|37.00,29.00|
-U Exorcism Feather |QID|10830|N|Right-click the Grishnath Orb to create an Exorcism Feather.|L|31518 5|U|31495|M|37.00,29.00|
+;l Dire Pinfeather |QID|10830|N|Kill Dire Ravens until you get five Dire Pinfeathers.|L|31517 5|M|37.00,29.00|
+C Exorcism Feather |QID|10830|NC|N|Kill Dire Ravens to get Dire Pinfeathers. Right-click the Grishnath Orb to create an Exorcism Feather.|L|31518 5|U|31495|M|37.00,29.00|
 
 C Exorcising the Trees |N|Use exorcism feathers on Raven's Wood Leafbeards, then kill the spirit that spawns.|QID|10830|M|37.00,29.00|U|31518|
 T Exorcising the Trees |QID|10830|M|36.9,22.5|N|To Treebole.|
 C Slaughter at Boulder'mok |N|Kill ogres until you finish this quest.|QID|10803|M|30.3,24.6|S|
-l Grisly Totem |QID|10802|N|Kill ogres here until you get three Grisly Totems. |M|30.00,22.00|L|31754 3|
-C Gorgrom the Dragon-Eater |N|Use the Altar, then drop the Grisly Totems on Gorgrom once he is dead.|QID|10802|M|30.00,22.00|U|31754|
+;l Grisly Totem |QID|10802|N|Kill ogres here until you get three Grisly Totems. |M|30.00,22.00|L|31754 3|
+C Gorgrom the Dragon-Eater |N|Kill ogres here to get Grisly Totems. Use the Altar, then drop the Grisly Totems on Gorgrom once he is dead.|QID|10802|NC|M|30.6,22.3|U|31754|
 C Slaughter at Boulder'mok |N|Kill ogres until you finish this quest.|QID|10803|M|30.3,24.6|US|
-C Maxnar Must Die! |N|Kill Maxnar the Ashmaw. You may use the costume scraps if you have 5 of them to save time.|QID|10748|M|34.00,36.00|
+K Maxnar Must Die! |N|Kill Maxnar the Ashmaw. You may use the costume scraps if you have 5 of them to save time.|QID|10748|T|Maxnar the Ashmaw|U|31121|M|34.00,36.00|
 H Evergrove |QID|10818|N|Hearth to Evergrove, or run if your hearth is not up.|M|62.84,38.35|
 T Maxnar Must Die! |QID|10748|M|62.0,39.5|N|To Tree Warden Chawn.|
 T Gorgrom the Dragon-Eater |QID|10802|M|62.0,38.0|N|To Commander Haephus Stonewall.|
@@ -352,10 +353,12 @@ r Sell junk, repair, restock |QID|10818| |N|Sell junk, repair, restock.|M|61.61,
 T Baron Sablemane Has Requested Your Presence |QID|10818|M|53.3,41.2|N|To Baron Sablemane.|
 A Massacre at Gruul's Lair |QID|10805|N|From Baron Sablemane.|M|53.3,41.2|
 N Group |QID|10805|N|Get a group for Massacre at Gruul's Lair and Showdown.|M|53.3,41.2|
-C Massacre at Gruul's Lair |N|Kill the mobs needed for this quest. Then kill Fingrom who is at the waypoint in the house (second floor).|QID|10805|M|60.45,21.21|
+C Massacre at Gruul's Lair |N|Kill the mobs needed for this quest.|QID|10805|S|QO|1;2;3|M|64.8,21.3|
+K Fingrom |N|Kill Fingrom who is at the waypoint in the house (second floor).|QID|10805|QO|4|T|Fingrom|M|66.6,20.1|
+C Massacre at Gruul's Lair |N|Kill the mobs needed for this quest.|QID|10805|US|QO|1;2;3|M|64.8,21.3|
 T Massacre at Gruul's Lair |QID|10805|N|To Baron Sablemane.|M|53.3,41.2|
 A Showdown |QID|10806|N|From Baron Sablemane.|M|53.3,41.2|
-C Showdown |N|Use Sablemane's Signet then let Baron Sablemane be the one to get attacked by the elite. Kill Goc. Sablemane cannot be healed.|QID|10806|M|64.00,18.00|U|31808|
+K Goc |N|Use Sablemane's Signet then let Baron Sablemane be the one to get attacked by the elite. Kill Goc. Sablemane cannot be healed.|QID|10806|T|Goc|M|64.2,18.5|U|31808|
 T Showdown |QID|10806|N|To Baron Sablemane.|M|53.3,41.2|
 F Toshley's Station |QID|11672|N|Fly to Toshley's Station.|M|61.61,39.64|
 
