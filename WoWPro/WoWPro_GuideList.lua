@@ -310,7 +310,7 @@ function WoWPro:CreateGuideTabFrame_Rows(frame)
     		    GameTooltip:Show()
     		end)
     		row:SetScript("OnLeave", function(self)
-    		    WoWPro:Print("GuideTooltip: Leaving %s",iGuide.GID)
+    		    --WoWPro:Print("GuideTooltip: Leaving %s",iGuide.GID)
     		    GameTooltip:Hide()
     		end)
         end
