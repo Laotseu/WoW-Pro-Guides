@@ -24,7 +24,7 @@ for guidID,guide in pairs(WoWPro.Guides) do
   	})
   	end
   end
-table.sort(guides, function(a,b) return a.Name < b.Name end)
+table.sort(guides, function(a,b) return (a.Name or "") < (b.Name or "") end)
 WoWPro.WorldEvents.GuideList.Guides = guides  
 
 -- Sorting Functions --

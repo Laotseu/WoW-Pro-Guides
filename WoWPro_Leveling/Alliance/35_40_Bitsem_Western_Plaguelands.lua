@@ -141,6 +141,8 @@ A Scourge First... Horde Later|QID|27159|M|41.06,70.44|N|From Thassarian.|
 A War Machines|QID|27160|M|40.97,70.38|N|From Lurid.|
 A The Endless Flow|QID|27161|M|41.27,70.06|N|From Lang Loosegrip.|
 
+f Andorhal|M|39.52,69.54|N|At Ginny Goodwin.|
+
 C Scourge First... Horde Later|QID|27159|M|41.89,69.69|S|N|Kill the Desiccated Scourge.|
 C War Machines|QID|27160|M|42.50,72.01|N|Kill Opengut Behemoths.|S|
 C The Endless Flow|QID|27161|U|60849|M|42.44,65.55|N|Use Lang's Hand Grenades to kill skeletons and the Scourge Bone Animus inside the tower.|
@@ -157,7 +159,7 @@ A Brute Strength|QID|27163|PRE|27160|M|41.10,70.46|N|From Thassarian.|S|
 A Scholomancer|QID|27162|PRE|27160|M|41.10,70.46|N|From Thassarian.|
 A Brute Strength|QID|27163|PRE|27160|M|41.10,70.46|N|From Thassarian.|US|
 
-C Brute Strength|QID|27163|M|43.57,69.61|N|Level 35 Elite, inside the building.|
+K Rattlegore|QID|27163|T|Rattlegore|M|43.57,69.61|N|Level 35 Elite, inside the building.|
 C Araj the Summoner|QID|27164|U|60849|M|45.20,69.32|N|Loot Araj's Phylactery Shard. Araj guards the area, so you may need to attack him. If so, use Lang's Hand Grenades if he summons skeletons.|NC|
 C Scholomancer|QID|27162|M|45.39,72.34|N|Attack Darkmaster Gandling, a boss skull boss (HP 7620).  You will be immobilised at 50% damage, when Thassarian and Koltira Deathweaver will appear to help you. You then need to finish the last 100 HP yourself.|
 
@@ -168,13 +170,10 @@ T Brute Strength|QID|27163|M|41.13,70.48|N|To Thassarian.|US|
 T Araj the Summoner|QID|27164|M|41.13,70.48|N|To Thassarian.|US|
 
 A Victory, For Now|QID|27165|PRE|27162;27163;27164|M|41.13,70.48|N|From Thassarian.|
-f Andorhal|QID|27165|M|39.44,69.55|N|Get flightpoint from Ginny Goodwin.|
-F Chillwind Camp |QID|27165|M|39.44,69.55|N|Speak to Ginny Goodwin for a free-flight to Chillwind Camp.|
-f Chillwind Camp|QID|27165|M|42.95,84.95|N|Get flightpoint from Bibilfaz Featherwhistle.|
-
-;The guide doesn't one ask you to Hearthstone to Chillwind Camp, so commenting out this step.
-;h Chillwind Camp|QID|27165|M|43.38,84.51|N|At Mother Matterly.|
-
+f Andorhal|M|39.44,69.55|N|Get flightpoint from Ginny Goodwin.|
+F Chillwind Camp |QID|27165|M|39.44,69.55|N|Fly to Chillwind Camp.  Ginny Goodwin will give you a free-flight if you select the relevant option from her chat menu.|
+f Chillwind Camp|M|42.95,84.95|N|Get flightpoint from Bibilfaz Featherwhistle.|
+h Chillwind Camp|QID|27165|M|43.38,84.51|N|At Mother Matterly.|
 r Repair and Sell Junk |QID|27165|M|43.08,84.28|N|Excellent opportunity to repair and sell your junk with Leonard Porter.\n\nClick this step to continue.|RANK|3|
 T Victory, For Now|QID|27165|M|42.78,84.12|N|To Commander Ashlam Valorfist.|
 
@@ -209,7 +208,7 @@ T Ambushed!|QID|27171|M|42.74,83.97|N|To Commander Ashlam Valorfist.|
 A The Writhing Haunt|QID|27172|PRE|27171|M|42.74,83.97|N|From Commander Ashlam Valorfist.|
 
 T The Writhing Haunt|QID|27172|M|53.78,64.67|N|To Thurman Grant.|
-A This Is Our Army|QID|27173|PRE|27172|M|53.78,64.67|N|From Thurman Grant.|
+A This Is Our Army|QID|27173|PRE|27173|M|53.78,64.67|N|From Thurman Grant.|
 C This Is Our Army|QID|27173|M|52.53,65.78|N|Go outside and kill 10 Forsaken Outriders.|
 T This Is Our Army|QID|27173|M|53.78,64.67|N|To Thurman Grant.|
 
@@ -222,8 +221,10 @@ A A New Era for the Plaguelands|QID|26999|PRE|27175|M|49.31,54.87|N|From Field A
 A Zen'Kiki, the Druid|QID|26953|M|48.98,54.75|N|From Adrine Towhide.|
 A I Ain't Sayin' You a Gourd-Digger...|QID|26956|M|48.60,54.88|N|From Selyria Groenveld.|
 
-f The Menders' Stead|QID|27197|M|50.49,52.34|N|At Marge Heffman.|
-r Repair and Sell Junk |QID|26999|M|50.69,53.12|N|Excellent opportunity to repair and sell your junk with Gurt.\n\nClick this step to continue.|RANK|3|
+A The Battle Resumes!|QID|27197|M|50.39,52.70|N|From Durnt Brightfalcon.|
+
+f The Menders' Stead|M|50.49,52.34|N|At Marge Heffman.|
+r Repair and Restock|QID|26953|NC|M|50.69,52.89|N|Repair and Restock.|
 
 C I Ain't Sayin' You a Gourd-Digger...|QID|26956|M|47.41,52.91|CN|N|Click on the Unhealthy-Looking Pumpkins then kill the Thrashing Pumpkin that appears.|QO|Unhealthy-Looking Pumpkin Removed: 3/3|
 C I Ain't Sayin' You a Gourd-Digger...|QID|26956|M|46.33,54.45|CN|N|Click on the Rotten Apples then kill the Pome Wrath that appears.|QO|Rotten Apple Removed: 4/4|
@@ -278,7 +279,7 @@ T This Means WAR (Wild Arachnid Roundup)|QID|27001|M|48.11,32.47|N|To Nathaniel 
 
 A An Audience with the Highlord|QID|27002|PRE|27001|M|48.11,32.47|N|From Nathaniel Dumah.|
 
-f Hearthglen|QID|27002|M|47.67,31.80;44.67,18.58|CS|N|Hop on a Hearthglen Mustang and follow the road to Hearthglen. At William Henderson.|
+f Hearthglen|M|47.67,31.80;44.67,18.58|CS|N|Hop on a Hearthglen Mustang and follow the road to Hearthglen. At William Henderson.|
 
 A It's About Time!|QID|27156|M|43.24,16.02|N|From Lieutenant Myner.|
 T An Audience with the Highlord|QID|27002|M|42.04,14.64|N|To Highlord Tirion Fordring, upstairs in Mardenholde Keep.|
@@ -288,9 +289,9 @@ A Taelan Fordring's Legacy|QID|27151|M|42.19,14.98|N|From Daria L'Rayne.|
 C It's About Time!|QID|27156|M|43.09,16.33|N|Head outside the keep, then talk to Trainees. Challenge and beat them.|
 T It's About Time!|QID|27156|M|43.28,15.96|N|To Lieutenant Myner.|
 
-A Drudges...|QID|27157|M|43.28,15.96|N|From Lieutenant Myner.|
-C Drudges...|QID|27157|M|45.86,12.31;45.37,9.73|CS|N|Enter the mine. Kill the *ew* huge spider.|
-T Drudges...|QID|27157|M|43.27,15.91|N|To Lieutenant Myner.|
+A Drudges... <Sigh>|QID|27157|M|43.28,15.96|N|From Lieutenant Myner.|
+C Drudges... <Sigh>|QID|27157|T|Shadril|M|45.86,12.31;45.37,9.73|CS|N|Enter the mine. Kill the *ew* huge spider.|
+T Drudges... <Sigh>|QID|27157|M|43.27,15.91|N|To Lieutenant Myner.|
 
 C Taelan Fordring's Legacy|QID|27151|M|54.78,24.69|N|Kill the Redpine Looters.|
 T Taelan Fordring's Legacy|QID|27151|M|54.99,24.73|N|(UI Alert)|
@@ -379,7 +380,7 @@ A Alas, Andorhal|QID|27206|PRE|27204|M|39.97,69.58|N|From Thassarian.|
 F Chillwind Camp|QID|27206|NC|N|Fly to Chillwind Camp.|M|39.43,69.55|
 T Alas, Andorhal|QID|27206|M|42.73,84.12|N|To Commander Ashlam Valorfist.|
 
-A Into the Woods|QID|27683|M|42.97,83.51|N|From Argent Officer Pureheart, if you intent to continue onto Eastern Plaguelands.|
+A Into the Woods|QID|27683|M|42.97,83.51|N|From Argent Officer Pureheart, if you intent to continue onto Eastern Plaguelands.|O|
 
 ]]
 end)
