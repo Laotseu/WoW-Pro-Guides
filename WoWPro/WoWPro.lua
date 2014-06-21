@@ -700,7 +700,7 @@ function WoWPro:QuestColor(questLevel, playerLevel)
     elseif diff > -3  then
         c = WoWPro:InterpolateHSL(Difficulty[4], Difficulty[3], (-diff)/3)
     else
-        c = WoWPro:InterpolateHSL(Difficulty[5], Difficulty[4], (-diff)/90)
+        c = WoWPro:InterpolateHSL(Difficulty[4], Difficulty[5], (-diff)/90)
     end
     return  WoWPro:HSL2RGB(c[1], c[2], c[3])
 end
