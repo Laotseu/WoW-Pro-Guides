@@ -190,8 +190,9 @@ A Summit of Fate|QID|26517|M|63.83,59.97|N|From Fraggar Thundermantle.|
 
 F Jintha'Alor |QID|26517|M|63.90,60.04|N|For the second time, speak to Doran Steelwing and ask for a ride to the top of Jintha'Alor.|
 
+C It's Ours Now|QID|26516|S|M|65,81|N|Kill any Soul Eater and Blood Drinker you come across.|
 C Summit of Fate|QID|26517|M|59.20,76.98|N|Through the cave again and turn right, then loot the Sacrificed Vilebranch to get the Spider Idols.|NC|
-C It's Ours Now|QID|26516|M|65,81|N|Kill any Soul Eater and Blood Drinker you come across.|
+C It's Ours Now|QID|26516|US|M|65,81|N|Kill any Soul Eater and Blood Drinker you come across.|
 
 F The Hinterlands |QID|26517|M|53.25,66.25|N|Head back to Sharpbeak and ride him back down to Fraggar Thundermantle.|
 
@@ -203,7 +204,7 @@ T It's Ours Now|QID|26516|M|63.85,59.92|N|To Doran Steelwing.|
 F Jintha'Alor |QID|26526|M|63.90,60.04|N|For the third time, speak to Doran Steelwing and ask for a ride to the top of Jintha'Alor.|
 
 C Venomous Secrets|QID|26525|S|M|56.40,83.59|N|Kill 8 Spawn of Shadra.|
-C Hunt the Keeper|QID|26526|M|59.69,77.83;59.05,78.69;57.8,81.55;56.91,83.42;54.59,83.59|CS|N|Head through the cave, then turn right. There's a second cave, go into the cave, take the middle path at the split. Then take a right and follow the path back to Morta'gya. Kill her and loot the tablet from her.|
+K Morta'gya the Keeper|QID|26526|T|Morta'gya the Keeper|M|59.69,77.83;59.05,78.69;57.8,81.55;56.91,83.42;54.59,83.59|CS|N|Head through the cave, then turn right. There's a second cave, go into the cave, take the middle path at the split. Then take a right and follow the path back to Morta'gya. Kill her and loot the tablet from her.|
 C Venomous Secrets|QID|26525|US|N|Kill 8 Spawn of Shadra.|
 
 F The Hinterlands |QID|26526|M|53.25,66.25|N|Head back to Sharpbeak and ride him back down to Fraggar Thundermantle.|
@@ -217,9 +218,9 @@ T Quel'Danil Lodge|QID|27725|M|32.20,42.63|N|To Anchorite Traska, she's in the h
 A In Defense of Quel'Danil|QID|27625|M|32.20,42.63|N|From Anchorite Traska.|
 A The Highvale Documents|QID|27626|M|32.20,42.63|N|From Anchorite Traska.|
 C In Defense of Quel'Danil|QID|27625|S|M|30.74,47.33|N|Kill any Deathstalkers that you come across.|
-l Highvale Report|QID|27626|L|61972|M|28.56,46.04|N|Loot the Highvale report from this waypoint.|
-l Highvale Notes|QID|27626|M|29.63,48.67|N|Loot the Highvale notes from here.|L|61974|
-C The Highvale Documents|QID|27626|M|31.91,46.99|N|And... Rounding out, the Highvale Records are at this waypoint, inside the lodge.|QO|Highvale Records: 1/1|NC|
+C Highvale Report|QID|27626|NC|QO|1|M|28.56,46.04|N|Loot the Highvale report from this waypoint.|
+C Highvale Notes|QID|27626|NC|QO|3|M|29.63,48.67|N|Loot the Highvale notes from here.|L|61974|
+C Highvale Records|QID|27626|NC|QO|2|M|31.91,46.99|N|And... Rounding out, the Highvale Records are at this waypoint, inside the lodge.|QO|Highvale Records: 1/1|NC|
 C In Defense of Quel'Danil|QID|27625|US|M|30.74,47.33|N|Kill the Deathstalker Invaders.|
 
 T In Defense of Quel'Danil|QID|27625|M|32.19,42.62|N|To Anchorite Traska.|
@@ -246,7 +247,7 @@ C Starvation Diet|QID|26643|M|49.77,52.63|N|Hit any spider cacoon you see. Need 
 T The Fang of Shadra|QID|26529|M|30.74,47.22|N|To Gilda Cloudcaller.|
 A The Shell of Shadra|QID|26530|M|30.74,47.22|N|From Gilda Cloudcaller.|
 T Starvation Diet|QID|26643|M|30.74,47.22|N|To Gilda Cloudcaller.|
-C The Shell of Shadra|QID|26530|M|48.35,67.64|N|Run to the top of the Altar of Zul, kill Qiaga the Keeper and loot the Shell of Shadra.|
+K Qiaga the Keeper|QID|26530|T|Qiaga the Keeper|M|48.35,67.64|N|Run to the top of the Altar of Zul, kill Qiaga the Keeper and loot the Shell of Shadra.|
 T The Shell of Shadra|QID|26530|M|30.74,47.20|N|To Gilda Cloudcaller.|
 
 A Summoning Shadra|QID|26531|M|30.74,47.20|N|From Gilda Cloudcaller.|
@@ -256,16 +257,16 @@ C Southwestern Temple|QID|26531|U|58784|QO|Southwestern Temple: 1/1|M|32.55,76.1
 C Eastern Temple|QID|26531|U|58784|QO|Eastern Temple: 1/1|M|37.03,71.55|N|Go to the top of the Eastern Temple and use the idol.|NC|
 T Summoning Shadra|QID|26531|M|34.39,67.91|N|To Wildhammer Lookout.|
 A Shadra the Venom Queen|QID|26532|M|34.39,67.92|N|From Wildhammer Lookout.|
-C Shadra the Venom Queen|QID|26532|M|34.21,69.46|N|Kill Shadra.  She will focus her attention on the NPCs, so you only have to worry about DPS'ing her.|
+K Shadra the Venom Queen|QID|26532|T|Shadra|M|34.21,69.46|N|Kill Shadra.  She will focus her attention on the NPCs, so you only have to worry about DPS'ing her.|
 
-A Find OOX-09/HL!|QID|485|U|8704|N|Accept the quest from the OOX-09/HL Distress Beacon you probably found somewhere in this zone. If you didn't find this Distress Beacon, then skip this step.|
-T Find OOX-09/HL!|QID|485|U|8704|M|49.36,37.67|N|To Homing Robot OOX-09/HL.|ACTIVE|485|
+A Find OOX-09/HL!|QID|485|O|U|8704|N|Accept the quest from the OOX-09/HL Distress Beacon you probably found somewhere in this zone. If you didn't find this Distress Beacon, then skip this step.|
+T Find OOX-09/HL!|QID|485|U|8704|M|49.36,37.67|N|To Homing Robot OOX-09/HL.|
 A Rescue OOX-09/HL!|QID|836|PRE|485|M|49.36,37.67|N|*QUEST TURN-IN IS IN BOOTY BAY*. If you plan on visiting Booty Bay anytime soon, then accept this quest. Escort OOX-09/HL to safety, you will be ambushed once by 3 Wildkin.|RANK|3|
 C Rescue OOX-09/HL!|QID|836|ACTIVE|836|M|57.8,50.2|N|Escort OOX-09/HL to safety, you will be ambushed once by 3 Wildkin at the waypoint.|
 
-F Aerie Peak|QID|26532|M|66.3,44.4|N|Your final destination is Aerie Peak, either follow the steps to Stormfeather Outpost, or skip that step and make your own way to Aerie Peak.|S|
+F Aerie Peak|QID|26532|M|65.8,44.9|N|Your final destination is Aerie Peak, either follow the steps to Stormfeather Outpost, or skip that step and make your own way to Aerie Peak.|S|
 H Stormfeather Outpost|QID|26532|M|57.8,50.2|N|Hearthstone, or run to Stormfeather Outpost.|
-F Aerie Peak|QID|26532|M|66.3,44.4|N|Fly to Aerie Peak.|US|
+F Aerie Peak|QID|26532|M|65.8,44.9|N|Fly to Aerie Peak.|US|
 
 T Shadra the Venom Queen|QID|26532|M|9.94,44.27|N|To Gryphon Master Talonaxe.|
 F Booty Bay|QID|836|ACTIVE|836|M|43,72|Z|The Cape of Stranglethorn|N|Fly to Booty Bay in The Cape of Stranglethorn. Do *NOT* accept the quest The Battle for Andorhal if you want to be teleported from Booty Bay to Westland Plaguelands.\n\nIf you don't have Booty Bay on your Flight Plan, fly to Goldshire and then run south through Duskwood, Stranglethorn Jungle and The Cape of Stranglethorn.|
@@ -274,7 +275,7 @@ A The Battle for Andorhal|QID|28749|LEAD|27518;28505;28576|PRE|836|M|41.55,74.35
 F Andorhal|QID|28749|ACTIVE|28749|N|Speak to War-Mage Erallier and ask for a Teleport to Andorhal.|
 
 A The Battle for Andorhal|QID|28505|LEAD|836;27518;28576;28749|N|From Gryphon Master Talonaxe.|
-F Andorhal|QID|28505|ACTIVE|28505|N|Speak with Guthrum Thunderfist to fly to Andorhal in Western Plaguelands. Then report to Thassarian within Andorhal.|
+F Andorhal|QID|28505|ACTIVE|28505|M|11.1,46.2|N|Speak with Guthrum Thunderfist to fly to Andorhal in Western Plaguelands. Then report to Thassarian within Andorhal.|
 
 ]]
 
