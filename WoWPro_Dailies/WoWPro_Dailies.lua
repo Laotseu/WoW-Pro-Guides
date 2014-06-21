@@ -127,3 +127,9 @@ function WoWPro.Dailies:DumpInfo()
     eBox:Show()
     eBox:SetScript("OnEscapePressed", function (self) self:Hide() end)
 end
+
+
+-- Empty function to prevent error when loading the guides
+function WoWPro.Dailies:GuideFaction(guide,factionnumber) 
+end
+

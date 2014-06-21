@@ -95,3 +95,7 @@ function WoWPro.WorldEvents:LoadAllGuides()
         self:Print(string.format("Done! %d A, %d N, %d H guides present", aCount, nCount, hCount))
 end	    
 
+-- Empty function to allow the guide to load properly
+function WoWPro.WorldEvents:GuideHoliday( guide, holiday )
+	-- body
+end
