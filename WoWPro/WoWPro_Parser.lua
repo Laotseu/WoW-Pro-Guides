@@ -794,7 +794,8 @@ function WoWPro:RowUpdate(offset)
 		end
 		
 		-- if use and GetItemInfo(use) then
-		if use then
+		local target_item = select(3,(target or ""):lower():find("use item:(%d+)")) -- Check if the |T| has a "use item:""
+		if use and tonumber(use) ~= tonumber(target_item or "") then
 			row.itembutton.item_id = use -- To display the item Tooltip
 			row.itembutton:Show() 
 			row.itemicon:SetTexture(GetItemIcon(use))
@@ -837,6 +838,7 @@ function WoWPro:RowUpdate(offset)
 				end
 			end
 		else 
+			use = nil
 			row.itembutton.item_id = nil
 			row.itembutton:Hide() 
 		end
