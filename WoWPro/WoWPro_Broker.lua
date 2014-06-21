@@ -602,8 +602,9 @@ function WoWPro:NextStep(k,i)
 	    -- Check for must be active quests
 		if WoWPro.active and WoWPro.active[k] and k <= CurrentIndex then
 			if not WoWPro:QIDsInTable(WoWPro.active[k],WoWPro.QuestLog) then 
-				skip = true -- If the quest is not in the quest log, the step is skipped --
 				WoWPro.why[k] = "NextStep(): Skipping step necessary ACTIVE quest is not in QuestLog."
+				WoWPro.CompleteStep(k)
+				skip = true -- If the quest is not in the quest log, the step is skipped --
 				break
 			end
 			WoWPro:dbp("Step %s [%s] ACTIVE %s, skip=%s",WoWPro.action[k],WoWPro.step[k],WoWPro.active[k],tostring(skip))
