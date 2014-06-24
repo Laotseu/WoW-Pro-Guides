@@ -103,15 +103,21 @@ WoWPro:GuideSteps(guide, function()
 return [[
 
 ; Missing Quests:
-; The Lost Courier
 ; Your Presence is Required at Stars' Rest
 ; Missing Level 80 Quest
 ; Mystery of the Infinite, Redux
 
-N Note |QID|12298|N|If you followed my previous guides, you should be in Wintergarde Keep, Dragonblight and have the following quest: High Commander Halford Wyrmbane If you don't have it, just ignore this quest, it's not a big deal, you can get the follow up anyway. Let's get started!|
+A The Lost Courier |QID|12157|LEAD|12171;12298;12174;12235|M|82.0,46.4|Z|Borean Tundra|N|This is a breadcrumb quest from xxx Keep in Borean Tundra.|O|
+T The Lost Courier |QID|12157|M|28.9,56.1|N|To Courier Lanson.|
+A Of Traitors and Treason |QID|12171|PRE|12157|LEAD|12298;12174|M|28.9,56.1|N|From Courier Lanson.|
+T Of Traitors and Treason |QID|12171|M|29.2,55.3|N|To Palena Silvercloud.|
+A High Commander Halford Wyrmbane |QID|12298;12174|LEAD|12235|M|31.2,44.0|Z|Howling Fjord|N|Skip this quest if you are not in Howling Fjord.\n\nThis is a breadcrumb quest from Greer Orehammer in Westguard Keep, Howling Fjord.|O|
+A High Commander Halford Wyrmbane |QID|12298;12174|LEAD|12235|M|29.2,55.3|N|This is a breadcrumb quest From Palena Silvercloud in Stars' Rest, Dragonblight. Ignore it if you are nearer to Winterguard Keep then you are to Stars' Rest.|O|
+F Wintergarde Keep |QID|12298|ACTIVE|12298|M|31.2,44.0|Z|Howling Fjord|N|Talk to Greer Orehammer and choose to fly to Wintergarde Keep.|
+;N Note |QID|12298|N|If you followed my previous guides, you should be in Wintergarde Keep, Dragonblight and have the following quest: High Commander Halford Wyrmbane If you don't have it, just ignore this quest, it's not a big deal, you can get the follow up anyway. Let's get started!|
 f Wintergarde Keep |QID|12298|N|Get the new flight path at Rodney Wells. |M|77.0,49.8|
-N Warning! |QID|12298|N|Throughout this whole chapter, do NOT get the quest [The Hills Have Us]. If you take it, this will fly you to Grizzly Hills and will make you waste a lot of time.|
-T High Commander Halford Wyrmbane |QID|12298|N|To High Commander Halford Wyrmbane.|M|78.60,48.20|
+N Warning! |QID|12235|N|Throughout this whole chapter, do NOT get the quest [The Hills Have Us]. If you take it, this will fly you to Grizzly Hills and will make you waste a lot of time.|
+T High Commander Halford Wyrmbane |QID|12298;12174|N|To High Commander Halford Wyrmbane.|M|78.60,48.20|
 A Naxxramas and the Fall of Wintergarde |QID|12235|M|78.6,48.2|N|From High Commander Halfor Wyrmbane.|
 
 T Naxxramas and the Fall of Wintergarde |QID|12235|N|Go back towards the gryphon master. To Gryphon Commander Urik.|M|77.1,50.1|
@@ -141,7 +147,7 @@ A Wanted: Onslaught Commander Iustus |QID|12442|N|From the Wanted Poster inside 
 h Wintergarde Keep |QID|12253|N|Make this inn your home location with Illusia Lune. |M|77.50,51.50|
 C Vengeful Geists |QID|12258|QO|Vengeful Geist slain: 15/15|M|79.9,49.7|S|N|Kill any Vengeful Geist you see.|
 C Rescue from Town Square|QID|12253|S|N|Kill Vengeful Geists to free the Trapped Wintergarde Villagers.|
-C Imprints on the Past |QID|12282|N|Go back to the gate and take the path going down south. Go to the first building on your right-hand side. Go to the upper floor and find the Scrying Orb. |M|78.90,50.90|
+C Imprints on the Past |QID|12282|NC|N|Go back to the gate and take the path going down south. Go to the first building on your right-hand side. Go to the upper floor and find the Scrying Orb. |M|78.90,50.90|
 C Rescue from Town Square|QID|12253|US|N|Now just go from one building to another, killing Vengeful Geists to free the Trapped Wintergarde Villagers.|
 C Vengeful Geists |QID|12258|QO|Vengeful Geist slain: 15/15|M|79.9,49.7|US|N|Finish killing Vengeful Geists.|
 
@@ -151,20 +157,20 @@ T The Fate of the Dead |QID|12258|N|To Commander Lynore Windstryke. |M|78.60,48.
 T Imprints on the Past |QID|12282|N|To Zelig the Visionary. |M|79.10,47.20|
 A Orik Trueheart and the Forgotten Shore |QID|12287|M|79.1,47.2|N|From Zelig the Visionary.|
 
-U Quarterflash's Homing Bot |QID|12272|U|37459|N|Go up to Siege Engineer Quarterflash . Use Quarterflash's Homing Bot and mount up.|M|77.84,50.28|
+;U Quarterflash's Homing Bot |QID|12272|U|37459|N|Go up to Siege Engineer Quarterflash . Use Quarterflash's Homing Bot and mount up.|M|77.84,50.28|
 R Wintergarde Mine |QID|12272|N|Follow the bot, it will take you to the Wintergarde Mine. |M|80.00,45.00|
 
-C The Bleeding Ore |QID|12272|S|N|Mine the Strange Ore nodes.|M|80.4,45.1|
-l Wintergarde Miner's Cards|QID|12269|S|QO|Wintergarde Miner's Card: 10/10|N|Kill and loot RisenWintergarde Miners to get the cards.|
+C The Bleeding Ore |QID|12272|S|NC|N|Mine the Strange Ore nodes.|M|80.4,45.1|
+C Wintergarde Miner's Cards|QID|12269|S|QO|Wintergarde Miner's Card: 10/10|N|Kill and loot RisenWintergarde Miners to get the cards.|
 T The Search for Slinkin |QID|12276|N|Stick to the right and you'll find Slinkin the Demo-Gnome. |M|81.53,42.20|
 A Leave Nothing to Chance |QID|12277|M|81.5,42.2|N|From Slinkin the Demo-Gnome's corpse.|
-l Wintergarde Mine Bomb |QID|12269|L|37465|N|Turn around, take a right turn and in this room you should find Wintergarde Mine Bombs. |M|80.74,41.32|
+C Wintergarde Mine Bomb |QID|12277|NC|L|37465|N|Turn around, take a right turn and in this room you should find Wintergarde Mine Bombs. |M|80.74,41.32|
+C Upper Wintergarde Mine Shaft |QID|12277|S|NC|QO|1|U|37465|N|Go around the mine to the upper shaft. You'll find another glimmering spot there. Use the Wintergarde Mine Bomb again. |M|80.41,44.59|
+C Lower Wintergarde Mine Shaft |QID|12277|NC|QO|Lower Wintergarde Mine Shaft Destroyed: 1/1|U|37465|N|Go back to the mine entrance and you should see a glimmer on the floor. Right-click the Wintergarde Mine Bomb while standing there. |M|80.14,45.28|
+C Upper Wintergarde Mine Shaft |QID|12277|US|NC|QO|1|U|37465|N|Go around the mine to the upper shaft. You'll find another glimmering spot there. Use the Wintergarde Mine Bomb again. |M|80.41,44.59|
 
-N Leave Nothing to Chance |QID|12277|QO|Lower Wintergarde Mine Shaft Destroyed: 1/1|U|37465|N|Go back to the mine entrance and you should see a glimmer on the floor. Right-click the Wintergarde Mine Bomb while standing there. |M|80.14,45.28|
-C Leave Nothing to Chance |QID|12277|U|37465|N|Go around the mine to the upper shaft. You'll find another glimmering spot there. Use the Wintergarde Mine Bomb again. |M|80.41,44.59|
-
-C The Bleeding Ore |QID|12272|US|N|Finish getting the ore you need.|M|80.4,45.1|
-l Wintergarde Miner's Cards|QID|12269|US|QO|Wintergarde Miner's Card: 10/10|N|Kill and loot Risen Wintergarde Miners to finish getting the cards.|
+C The Bleeding Ore |QID|12272|US|NC|N|Finish getting the ore you need.|M|80.4,45.1|
+C Wintergarde Miner's Cards|QID|12269|US|QO|Wintergarde Miner's Card: 10/10|N|Kill and loot Risen Wintergarde Miners to finish getting the cards.|
 H Wintergarde Keep |QID|12269|N|Hearthstone back to Wintergarde Keep (or just ride there if HS not up)|M|79.1,47.2|
 
 T The Bleeding Ore |QID|12272|N|To Siege Engineer Quarterflash.|M|77.84,50.28|
@@ -178,7 +184,7 @@ A The Noble's Crypt |QID|12311|M|79.1,53.2|N|From Cavalier Durkon.|
 
 K Necrolord Amarion |QID|12311|T|Necrolord Amarion|QO|Necrolord Amarion slain: 1/1|N|Enter the crypt, go to the bottom of it, kill Necrolord Amarion.|
 
-A Secrets of the Scourge |QID|12312|N|Right-click the Flesh Bound Tome which should be on the floor behind where you found Necrolord Amarion. Get the quest and get out of the crypt as fast as you can to stop those annoying ghouls from spawning.|M|78.6,52.4|
+A Secrets of the Scourge |QID|12312|M|79.0,52.9;|N|Right-click the Flesh Bound Tome which should be on the floor behind where you found Necrolord Amarion. Get the quest and get out of the crypt as fast as you can to stop those annoying ghouls from spawning.|M|78.6,52.4|
 
 T The Noble's Crypt |QID|12311|M|79.1,53.2|N|To Cavalier Durkon.|
 T Secrets of the Scourge |QID|12312|M|79.1,53.2|N|To Cavalier Durkon.|
@@ -191,7 +197,7 @@ A My Old Enemy |QID|12464|N|Take the path up north and turn left to go to the Wi
 
 T Understanding the Language of Death  |QID|12320|N|Go downstairs to Inquisitor Hallard.|M|76.8,47.4|
 A A Righteous Sermon |QID|12321|M|76.8,47.4|N|From Inquisitor Hallard.|
-C A Righteous Sermon |QID|12321|N|Watch the script until you get the complete message.|M|76.8,47.4|
+C A Righteous Sermon |QID|12321|NC|N|Watch the script until you get the complete message.|M|76.8,47.4|
 A A Disturbance In The West |QID|12439|N|Get out of this building. Go a little east to Vas the Unstable.  ==Note== This quest won't appear if you took [Your Presence Is Required at Star's Rest] which you shouldn't have taken by the way, because I never mentioned you should take it, but anyway. ABANDON [Your Presence Is Required at Star's Rest] and you'll be able to get this quest.|M|78.90,45.30|
 T A Righteous Sermon |QID|12321|N|Go back to High Commander Halford Wyrmbane.|M|78.60,48.20|
 A Into Hostile Territory |QID|12325|M|78.6,48.2|N|From High Commander Halford Wyrmbane.|
@@ -203,15 +209,15 @@ f Stars' Rest |M|29.2,55.3|N|Get the new flight path.|
 T To Stars' Rest! |QID|12440|N|To the Image of Archmage Modera.|M|29.00,55.50|
 A Rifle the Bodies |QID|12000|M|29.0,55.5|N|From the Image of Archmage Modera.|M|29.00,55.50|
 A The Liquid Fire of Elune |QID|12166|N|From Warden Jodi Moonsong.|M|29.20,55.60|
-C The Liquid Fire of Elune |QID|12166|U|36956|N|Go north to the area on the other side of the road . Kill Rabid Grizzlies and Blighted Elks, loot them and: Right-click the Liquid Fire of Elune on their corpse. Do this until you finish the quest.|M|29.00,51.00|
+C The Liquid Fire of Elune |QID|12166|NC|U|36956|N|Go north to the area on the other side of the road . Kill Rabid Grizzlies and Blighted Elks, loot them and: Right-click the Liquid Fire of Elune on their corpse. Do this until you finish the quest.|M|29.00,51.00|
 T The Liquid Fire of Elune |QID|12166|N|To Warden Jodi Moonsong.|M|29.2,55.6|
 A Kill the Cultists |QID|12167|M|29.2,55.6|N|From Warden Jodi Moonsong.|M|29.2,55.6|
 
 R Icemist Village |QID|12167|N|Go north back to the same area and find the path leading to Icemist Village. |M|24.00,44.00|
 
-K Functional Cultist Suits|QID|12167|QO|Functional Cultist Suit: 5/5|N|Kill and loot Cultists near and around the buildings on the south side of the villageuntil you get all the suits.|
-l The Favor of Zangus |QID|12168|L|36958|N|If you haven't gotten the [The Favor of Zangus] yet, keep killing Cultists until you get it.|
-A The Favor of Zangus |QID|12168|U|36958|N|Right-click [The Favor of Zangus] to start the quest|M|26.4,45.7|
+C Functional Cultist Suits|QID|12167|QO|Functional Cultist Suit: 5/5|N|Kill and loot Cultists near and around the buildings on the south side of the villageuntil you get all the suits.|
+;l The Favor of Zangus |QID|12168|L|36958|N|If you haven't gotten the [The Favor of Zangus] yet, keep killing Cultists until you get it.|
+A The Favor of Zangus |QID|12168|U|36958|N|If you haven't gotten the [The Favor of Zangus] yet, keep killing Cultists until you get it. Right-click [The Favor of Zangus] to start the quest|M|26.4,45.7|
 T Kill the Cultists |QID|12167|N|To Warden Jodi Moonsong.|M|29.20,55.60|
 T The Favor of Zangus |QID|12168|M|29.2,55.6|N|To Warden Jodi Moonsong.|
 A The High Cultist |QID|12169|M|29.2,55.6|N|From Warden Jodi Moonsong.|
