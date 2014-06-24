@@ -16,15 +16,17 @@ for guidID,guide in pairs(WoWPro.Guides) do
 	    end
 		table.insert(guides, {
 			GID = guidID,
+			guide = guide,
 			Zone = guide.zone,
 			Name = guide.name,
-		    Author = guide.author,
+	   	Author = guide.author,
 			Category = guide.category,
-			Progress = progress
+			Progress = progress,
+			Range = "("..tostring(guide.startlevel).."-"..tostring(guide.endlevel)..")",
 		})
 	end
 end
-table.sort(guides, function(a,b) return (a.Name or "") < (b.Name or "") end)
+--table.sort(guides, function(a,b) return (a.Name or "") < (b.Name or "") end)
 WoWPro.Dailies.GuideList.Guides = guides
 
 -- Sorting Functions --

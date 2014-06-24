@@ -1,3 +1,5 @@
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 --------------------------------------
 --      WoWPro_WorldEvents_Parser      --
 --------------------------------------
@@ -43,6 +45,8 @@ WoWPro.WorldEvents.actionlabels = {
 -- Determine Next Active Step (WorldEvents Module Specific)--
 -- This function is called by the main NextStep function in the core broker --
 function WoWPro.WorldEvents:NextStep(k, skip)
+	err("WoWPro.WorldEvents:NextStep was called")
+	if true then return end -- No longer used
 	local GID = WoWProDB.char.currentguide
 
 	-- Optional Quests --
@@ -58,6 +62,8 @@ end
 
 -- Skip a step --
 function WoWPro.WorldEvents:SkipStep(index)
+	err("WoWPro.WorldEvents:SkipStep was called")
+	if true then return end -- No longer used
 	local GID = WoWProDB.char.currentguide
 	
 	if not WoWPro.QID[index] then return "" end
@@ -100,6 +106,8 @@ end
 
 -- Unskip a step --
 function WoWPro.WorldEvents:UnSkipStep(index)
+	err("WoWPro.WorldEvents:UnSkipStep was called")
+	if true then return end -- No longer used
 	local GID = WoWProDB.char.currentguide
 	WoWProCharDB.Guide[GID].completion[index] = nil
 	if WoWPro.QID[index] 
@@ -137,6 +145,8 @@ end
 
 -- Guide Load --
 function WoWPro.WorldEvents:LoadGuide()
+	err("WoWPro.WorldEvents:LoadGuide was called")
+	if true then return end -- No longer used, use the one in WoWPro_Broker.lua
 	local GID = WoWProDB.char.currentguide
 
 	-- Parsing quests --
@@ -200,6 +210,8 @@ end
 
 -- Left-Click Row Function --
 function WoWPro.WorldEvents:RowLeftClick(i)
+	err("WoWPro.WorldEvents:RowLeftClick was called")
+	if true then return end -- No longer use, see WoWPro_Broker.lua and WoWPro_Parser.lua
 	if WoWPro.QID[WoWPro.rows[i].index] and WoWPro.QuestLog[WoWPro.QID[WoWPro.rows[i].index]] then
 		QuestLog_OpenToQuest(WoWPro.QuestLog[WoWPro.QID[WoWPro.rows[i].index]].index)
 	end
@@ -208,7 +220,9 @@ end
 
 -- Event Response Logic --
 function WoWPro.WorldEvents:EventHandler(self, event, ...)
+	--err("WoWPro.WorldEvents:EventHandler was called")
 	if true then return end
+	-- All the code bellow is include in the WoWPro addon now.
 	WoWPro:dbp("Running: WorldEvents Event Handler "..event)
 		
     -- Lets see what quests the NPC has:

@@ -14,13 +14,17 @@ for guidID,guide in pairs(WoWPro.Guides) do
 	    end
 	    return ""
 	end	
+	guide.name = guide.zone
+	guide.zone = guide.realzone or ""
   	table.insert(guides, {
   		GID = guidID,
+  		guide = guide,
 		Zone = guide.zone,
 		Name = guide.name,
 		Author = guide.author,
 		Category = guide.category,
-		Progress = progress
+		Progress = progress,
+		Range = "("..tostring(guide.startlevel).."-"..tostring(guide.endlevel)..")",
   	})
   	end
   end

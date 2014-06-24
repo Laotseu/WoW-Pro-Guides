@@ -555,7 +555,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	if row then
 		zone = WoWPro.rows[row].zone
 	end 
-	zone = zone or WoWPro.zone[i] or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)"))
+	zone = zone or WoWPro.zone[i] or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)") or "") or GetRealZoneText()
 	local autoarrival = WoWPro.waypcomplete[i]
 
 	if zone:match("/") then
@@ -563,7 +563,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 		zone , floor = string.split("/",zone)
 		floor = tonumber(floor)
 		if not zone then
-			zone = strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)"))
+			zone = strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)") or "") or GetRealZoneText()
 		end
 	end
 

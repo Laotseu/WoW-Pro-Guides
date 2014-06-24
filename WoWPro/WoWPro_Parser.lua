@@ -212,7 +212,7 @@ end
 
 function WoWPro.ParseQuestLine(faction,i,text,realline)
 	local GID = WoWProDB.char.currentguide
-	local zone = strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)"))
+	local zone = strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)") or "")
 	
 	_, _, WoWPro.action[i], WoWPro.step[i] = text:find("^(%a) ([^|]*)(.*)")
 	if (not WoWPro.action[i]) or (not WoWPro.step[i]) then
@@ -247,7 +247,7 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 	end
 	if text:find("|US|") then WoWPro.unsticky[i] = true end
 	WoWPro.use[i] = text:match("|U|([^|]*)|?")
-	WoWPro.zone[i] = text:match("|Z|([^|]*)|?") or (WoWPro.map[i] and zone)
+	WoWPro.zone[i] = text:match("|Z|([^|]*)|?") or (WoWPro.map[i] and zone ~= "" and zone)
 	if WoWPro.zone[i] and WoWPro.map[i] and not WoWPro:ValidZone(WoWPro.zone[i]) then
 --		local line =string.format("Vers=%s|Guide=%s|Line=%s",WoWPro.Version,GID,text)
 --        WoWProDB.global.ZoneErrors = WoWProDB.global.ZoneErrors or {}
