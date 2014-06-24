@@ -160,14 +160,14 @@ A Scholomancer|QID|27162|PRE|27160|M|41.10,70.46|N|From Thassarian.|
 A Brute Strength|QID|27163|PRE|27160|M|41.10,70.46|N|From Thassarian.|US|
 
 K Rattlegore|QID|27163|T|Rattlegore|M|43.57,69.61|N|Level 35 Elite, inside the building.|
-C Araj the Summoner|QID|27164|U|60849|M|45.20,69.32|N|Loot Araj's Phylactery Shard. Araj guards the area, so you may need to attack him. If so, use Lang's Hand Grenades if he summons skeletons.|NC|
-C Scholomancer|QID|27162|M|45.39,72.34|N|Attack Darkmaster Gandling, a boss skull boss (HP 7620).  You will be immobilised at 50% damage, when Thassarian and Koltira Deathweaver will appear to help you. You then need to finish the last 100 HP yourself.|
+K Araj the Summoner|QID|27164|T|Araj the Summoner|U|60849|M|45.20,69.32|N|Loot Araj's Phylactery Shard. Araj guards the area, so you may need to attack him. If so, use Lang's Hand Grenades if he summons skeletons.|NC|
+K Darkmaster Gandling|QID|27162|T|Darkmaster Gandling|M|45.39,72.34|N|Attack Darkmaster Gandling, a boss skull boss (HP 7620).  You will be immobilised at 50% damage, when Thassarian and Koltira Deathweaver will appear to help you. You then need to finish the last 100 HP yourself.|
 
-T Araj the Summoner|QID|27164|M|41.13,70.48|N|To Thassarian.|S|
-T Brute Strength|QID|27163|M|41.13,70.48|N|To Thassarian.|S|
+;T Araj the Summoner|QID|27164|M|41.13,70.48|N|To Thassarian.|S|
+;T Brute Strength|QID|27163|M|41.13,70.48|N|To Thassarian.|S|
 T Scholomancer|QID|27162|M|41.13,70.48|N|To Thassarian.|
-T Brute Strength|QID|27163|M|41.13,70.48|N|To Thassarian.|US|
-T Araj the Summoner|QID|27164|M|41.13,70.48|N|To Thassarian.|US|
+T Brute Strength|QID|27163|M|41.13,70.48|N|To Thassarian.|
+T Araj the Summoner|QID|27164|M|41.13,70.48|N|To Thassarian.|
 
 A Victory, For Now|QID|27165|PRE|27162;27163;27164|M|41.13,70.48|N|From Thassarian.|
 f Andorhal|M|39.44,69.55|N|Get flightpoint from Ginny Goodwin.|
@@ -190,7 +190,7 @@ A Uther's Blessing|QID|27169|PRE|27167|M|42.73,83.98|N|From Commander Ashlam Val
 A Those That Couldn't Let Go|QID|27168|PRE|27167|M|43.32,83.81|N|From High Priestess MacDonnell.|
 
 ; ** Added target button to make quest easier. Direction is irrelevant for this quest as long as you are within range to use Holy Thurible
-C Those That Couldn't Let Go|QID|27168|S|U|60861|T|Withdrawn Soul|M|49.84,80.79|N|From now on use the Holy Thurible on Withdrawn Souls.  Some may turn hostile.|
+C Those That Couldn't Let Go|QID|27168|S|U|60861|T|Withdrawn Soul,use item:60861|M|49.84,80.79|N|From now on use the Holy Thurible on Withdrawn Souls.  Some may turn hostile.|
 C Uther's Blessing|QID|27169|NC|U|61920|M|51.94,82.64|N|Use the Chillwind Tribute at Uther's Tomb.|
 
 T Uther's Blessing|QID|27169|M|51.95,82.71|N|To High Priest Thel'danis.|
@@ -200,7 +200,7 @@ A Ambushed!|QID|27171|PRE|27170|M|53.77,80.47|N|From the Broken Weapons Crate.|
 
 C Ambushed!|QID|27171|M|54.82,79.75|N|Kill and loot the Skeletal Sorcerers, as you head out of the crypt.|
 ; ** Added target button to make quest easier. Direction is irrelevant for this quest as long as you are within range to use Holy Thurible
-C Those That Couldn't Let Go|QID|27168|US|U|60861|M|49.84,80.79|T|Withdrawn Soul|N|Finish off using the Holy Thurible on Withdrawn Souls as you head back to Chillwind Camp.  Remember, they can turn hostile.|
+C Those That Couldn't Let Go|QID|27168|US|U|60861|M|49.84,80.79|T|Withdrawn Soul,use item:60861|N|Finish off using the Holy Thurible on Withdrawn Souls as you head back to Chillwind Camp.  Remember, they can turn hostile.|
 
 T Those That Couldn't Let Go|QID|27168|M|43.44,83.76|N|To High Priestess MacDonnell.|
 A The Menders' Stead|QID|27175|M|43.02,83.61|N|From Argent Officer Pureheart.|
@@ -208,12 +208,12 @@ T Ambushed!|QID|27171|M|42.74,83.97|N|To Commander Ashlam Valorfist.|
 A The Writhing Haunt|QID|27172|PRE|27171|M|42.74,83.97|N|From Commander Ashlam Valorfist.|
 
 T The Writhing Haunt|QID|27172|M|53.78,64.67|N|To Thurman Grant.|
-A This Is Our Army|QID|27173|PRE|27173|M|53.78,64.67|N|From Thurman Grant.|
+A This Is Our Army|QID|27173|M|53.78,64.67|N|From Thurman Grant.|
 C This Is Our Army|QID|27173|M|52.53,65.78|N|Go outside and kill 10 Forsaken Outriders.|
 T This Is Our Army|QID|27173|M|53.78,64.67|N|To Thurman Grant.|
 
 A Combat Training|QID|27174|M|53.78,64.67|N|From Thurman Grant.|
-C Combat Training|QID|27174|M|53.91,65.70|N|Talk to Gory, then help the villagers defeat Gory.|
+K Gory|QID|27174|T|Gory|M|53.91,65.70|N|Talk to Gory, then help the villagers defeat Gory.|
 T Combat Training|QID|27174|M|53.84,64.66|N|To Thurman Grant.|
 T The Menders' Stead|QID|27175|M|49.31,54.87|N|To Field Agent Kaartish.|
 
@@ -230,10 +230,10 @@ C I Ain't Sayin' You a Gourd-Digger...|QID|26956|M|47.41,52.91|CN|N|Click on the
 C I Ain't Sayin' You a Gourd-Digger...|QID|26956|M|46.33,54.45|CN|N|Click on the Rotten Apples then kill the Pome Wrath that appears.|QO|Rotten Apple Removed: 4/4|
 C I Ain't Sayin' You a Gourd-Digger...|QID|26956|M|45.19,53.40|CN|N|Click on the Bad Corn then kill the Corn Stalker that appears.|QO|Bad Corn Removed: 6/6|
 C Zen'Kiki, the Druid|QID|26953|M|52.11,58.67|N|Kill with Zen'kiki with you. If Zen'kiki isn't with you, talk to Adrine Towhide at The Mender's Stead to get him back.|S|
-l Diseased Wolf Samples|QID|26999|M|46.98,46.34|L|60763 4|N|Kill and loot Diseased Wolves for their samples.|S|
-l Hulking Plaguebear Samples|QID|26999|M|46.98,46.34|L|60762 4|N|Kill and loot Hulking Plaguebears for their samples.|
-l Diseased Wolf Samples|QID|26999|M|46.98,46.34|L|60763 4|N|Kill and loot Diseased Wolves for their samples.|US|
-C A New Era for the Plaguelands|QID|26999|M|54.92,60.83|N|Kill and loot Plague Lurkers and Venom Mist Lurkers to get their samples.|
+C Diseased Wolf Samples|QID|26999|M|46.98,46.34|QO|4|N|Kill and loot Diseased Wolves for their samples.|S|
+C Hulking Plaguebear Samples|QID|26999|M|46.98,46.34|QO|3|N|Kill and loot Hulking Plaguebears for their samples.|
+C Diseased Wolf Samples|QID|26999|M|46.98,46.34|QO|4|N|Kill and loot Diseased Wolves for their samples.|US|
+C Plague Lurkers and Venom Mist Lurkers|QID|26999|QO|1;2|M|54.92,60.83|N|Kill and loot Plague Lurkers and Venom Mist Lurkers to get their samples.|
 C Zen'Kiki, the Druid|QID|26953|M|52.11,58.67|N|Finish killing the wildlife with Zen'kiki. If Zen'kiki isn't with you, talk to Adrine Towhide at The Mender's Stead to get him back.|US|
 T A New Era for the Plaguelands|QID|26999|M|49.33,54.92|N|To Field Agent Kaartish.|
 
@@ -290,7 +290,7 @@ C It's About Time!|QID|27156|M|43.09,16.33|N|Head outside the keep, then talk to
 T It's About Time!|QID|27156|M|43.28,15.96|N|To Lieutenant Myner.|
 
 A Drudges... <Sigh>|QID|27157|M|43.28,15.96|N|From Lieutenant Myner.|
-C Drudges... <Sigh>|QID|27157|T|Shadril|M|45.86,12.31;45.37,9.73|CS|N|Enter the mine. Kill the *ew* huge spider.|
+K Shadril |QID|27157|T|Shadril|M|45.86,12.31;45.37,9.73|CS|N|Enter the mine. Kill the *ew* huge spider.|
 T Drudges... <Sigh>|QID|27157|M|43.27,15.91|N|To Lieutenant Myner.|
 
 C Taelan Fordring's Legacy|QID|27151|M|54.78,24.69|N|Kill the Redpine Looters.|
@@ -298,7 +298,7 @@ T Taelan Fordring's Legacy|QID|27151|M|54.99,24.73|N|(UI Alert)|
 
 A Unusual Behavior... Even For Gnolls|QID|27152|PRE|27151|M|54.99,24.73|N|(UI Alert)|
 R Unusual Behavior... Even For Gnolls|QID|27152|NC|M|54.78,34.10;56.16,34.70;57.07,35.56|CS|N|Follow the arrows up the path to investigate the Gnoll Camp.|QO|Gnoll camp investigated|
-C Unusual Behavior... Even For Gnolls|QID|27152|M|54.78,34.10;56.16,34.70;57.07,35.56|CS|N|Kill Moldfang.|QO|Moldfang slain: 1/1|T|Moldfang|
+K Moldfang Even For Gnolls|QID|27152|M|54.78,34.10;56.16,34.70;57.07,35.56|CS|N|Kill Moldfang.|QO|Moldfang slain: 1/1|T|Moldfang|
 T Unusual Behavior... Even For Gnolls|QID|27152|M|57.28,35.71|N|(UI Alert)|
 
 A The Good People of Hearthglen|QID|27153|PRE|27152|M|57.28,35.71|N|(UI Alert)|
@@ -339,7 +339,7 @@ T Memories from a Lost Past|QID|27017|M|50.60,52.60|N|To Del Gahrron.|
 A The Battle Resumes!|QID|27197|M|50.39,52.70|N|From Durnt Brightfalcon.| ;LVL|38|
 
 C Zen'Kiki and the Cultists|QID|26955|NC|M|66.78,47.12|N|Take Zen'Kiki to the cages. Open them, let him heal.|S|
-C Desperate Acts|QID|27054|M|66.04,47.75|N|Kill Instructor Malicia and loot the orders.|
+K Instructor Malicia|QID|27054|T|Instructor Malicia|M|66.04,47.75|N|Kill Instructor Malicia and loot the orders.|
 T Desperate Acts|QID|27054|M|66.04,47.75|N|(UI Alert)|
 A Students of Krastinov|QID|27055|PRE|27054|M|66.04,47.75|N|(UI Alert)|
 C Zen'Kiki and the Cultists|QID|26955|NC|M|66.78,47.12|N|Take Zen'Kiki to the cages. Open them, let him heal.|US|
@@ -351,7 +351,7 @@ F Andorhal|QID|27197|M|50.52,52.36|N|Fly to Andorhal.|
 
 T The Battle Resumes!|QID|27197|M|39.84,69.47|N|To Thassarian.|
 A Ashes to Ashes|QID|27199|PRE|27197|M|39.84,69.47|N|From Thassarian.|
-A Supporting the Troops|QID|27198|PRE|27199|M|40.11,69.17|N|From Lang Loosegrip.|
+A Supporting the Troops|QID|27198|M|40.11,69.17|N|From Lang Loosegrip.|
 
 C Supporting the Troops|QID|27198|S|M|44.45,65.66|N|Kill Andorhal Deathguards.|
 C Ashes to Ashes|QID|27199|M|44.70,65.11|N|Kill three Deathguard War-Captains on their horses.|
@@ -373,14 +373,15 @@ T Brother Against Brother|QID|27202|M|39.90,69.65|N|To Thurman Grant.|
 T Val'kyr Incursion|QID|27201|M|39.89,69.55|N|To Thassarian.|
 
 A Aradne|QID|27204|PRE|27201|M|39.89,69.55|N|From Thassarian.|
-C Aradne|QID|27204|M|40.37,72.24|N|Head up the tower and kill the elite Aradne.  Your companions will be there to help you.|
+K Aradne|QID|27204|T|Aradne|M|40.37,72.24|N|Head up the tower and kill the elite Aradne.  Your companions will be there to help you.|
 T Aradne|QID|27204|M|39.97,69.58|N|To Thassarian.|
 
 A Alas, Andorhal|QID|27206|PRE|27204|M|39.97,69.58|N|From Thassarian.|
 F Chillwind Camp|QID|27206|NC|N|Fly to Chillwind Camp.|M|39.43,69.55|
 T Alas, Andorhal|QID|27206|M|42.73,84.12|N|To Commander Ashlam Valorfist.|
 
-A Into the Woods|QID|27683|M|42.97,83.51|N|From Argent Officer Pureheart, if you intent to continue onto Eastern Plaguelands.|O|
+; This step only show if the other breadcrumb quests are not already selected.
+A Into the Woods|QID|27683;27684;28578|M|42.97,83.51|N|From Argent Officer Pureheart, if you intent to continue onto Eastern Plaguelands.|O|
 
 ]]
 end)
