@@ -583,9 +583,9 @@ T The Slumbering King |QID|11452|M|28.8,44.1|N|To Captain Adams.|
 T Sleeping Giants |QID|11432|M|28.9,44.2|N|To Mage-Lieutenant Malister.|
 T The Frost Wyrm and its Master |QID|11238|N|To Mage-Lieutenant Malister.|
 r Sell junk, repair, re-stock food/drink. |QID|12297|M|29.83,42.60|
-T Of Traitors and Treason |QID|12297|N|To Greer Orehammer.|
-A High Commander Halford Wyrmbane |QID|12298|N|Take this quest is you want to do the Dragonblight guide next.\n\nFrom Greer Orehammer.|O|
-F Wintergarde Keep |QID|12298|ACTIVE|12298|N|Talk to Greer Orehammer and choose to fly to Wintergarde Keep.|
+T Of Traitors and Treason |QID|12297|M|31.2,44.0|N|To Greer Orehammer.|
+A High Commander Halford Wyrmbane |QID|12298|M|31.2,44.0|N|Take this quest is you want to do the Dragonblight guide next.\n\nFrom Greer Orehammer.|O|
+F Wintergarde Keep |QID|12298|ACTIVE|12298|M|31.2,44.0|N|Talk to Greer Orehammer and choose to fly to Wintergarde Keep.|
 
 ]]
 end)
