@@ -6,7 +6,7 @@ local L = WoWPro_Locale
 
 local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
 
--- Remeber Taxi Locations
+-- Remember Taxi Locations
 function WoWPro:RecordTaxiLocations(...)
     for i = 1, NumTaxiNodes() do
         local nomen = TaxiNodeName(i)
@@ -393,6 +393,38 @@ function WoWPro:AutoCompleteLevel(...)
 end
 
 
+do -- closure
+
+local THROTTLE_TIME = 0.4
+local throt
+local f = CreateFrame("Frame")
+f:Hide()
+f:SetScript("OnUpdate", function(self, elapsed)
+	throt = throt - elapsed
+	if throt < 0 and not MaybeCombatLockdown() then
+		WoWPro:ResizeAndPad()
+		f:Hide()
+	end
+end)
+
+local function ResizeAndPad_bucket(delay)
+	throt = delay or THROTTLE_TIME
+	f:Show()
+end
+
+function WoWPro:ResizeAndPad(delay)
+	if delay then
+		ResizeAndPad_bucket(delay)
+	elseif MaybeCombatLockdown() then
+		ResizeAndPad_bucket()
+	else
+		WoWPro:RowSizeSet()
+		WoWPro:PaddingSet()
+	end
+end
+
+end -- closue
+
 -- Update Quest Tracker --
 local green = "FF00FF00"
 local white = "FFFFFFFF"
@@ -538,7 +570,7 @@ function WoWPro:UpdateQuestTracker()
 		end
 		row.track:SetText(track)
 	end
-	if not MaybeCombatLockdown() then WoWPro:RowSizeSet(); WoWPro:PaddingSet() end
+	WoWPro:ResizeAndPad()
 end
 
 
