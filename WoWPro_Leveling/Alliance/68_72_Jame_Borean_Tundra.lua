@@ -117,7 +117,7 @@
 -- Who: Jiyambi
 
 local guide = WoWPro:RegisterGuide("JamBor6872", "Leveling", "Borean Tundra", "Jame", "Alliance")
-WoWPro:GuideLevels(guide,65,70,68.4946)
+WoWPro:GuideLevels(guide,68,70,68.4946)
 WoWPro:GuideNextGuide(guide, "JamHow7274")
 WoWPro:GuideIcon(guide,"ACH",4928)
 WoWPro:GuideSteps(guide, function()
@@ -139,7 +139,7 @@ A A Soldier in Need|QID|11789|M|55.01,68.88|N|From Medic Hawthorn.|
 C The Siege |QID|11797|N|Kill Crypt Crawlers just outside of the keep to complete this quest.|M|54.30,68.34|
 T The Siege |QID|11797|M|56.4,69.6|N|To Sergeant Hammerhill.|
 A Death From Above |QID|11889|M|56.4,69.6|N|From Sergeant Hammerhill.|
-C A Soldier in Need |QID|11789|N|Downstairs in the hold of the boat at the center of town, loot the First Aid Supplies.|M|57.47,69.24|
+C A Soldier in Need |QID|11789|NC|N|Downstairs in the hold of the boat at the center of town, loot the First Aid Supplies.|M|57.47,69.24|
 A Cultists Among Us |QID|11920|N|Click the Cultist Shrine to accept this quest.|M|57.55,69.13|
 T Cultists Among Us |QID|11920|N|Turn this quest in up on deck to Captain "Lefty" Lugsail.|M|57.8,69.2|
 
@@ -148,8 +148,8 @@ T A Soldier in Need |QID|11789|M|55,69|N|To Medic Hawthorn.|
 C Death From Above |QID|11889|U|35278|N|Use the net on the Scourged Flamespitters in the air outside town and kill them when they land.|M|55,70|
 T Death From Above |QID|11889|M|56.37,69.58|N|To Sergeant Hammerhill.|
 A Plug the Sinkholes |QID|11897|M|56.4,69.6|N|From Sergeant Hammerhill.|
-C Southern Sinkhole |QID|11897|NC|QO|Explosives set at southern sinkhole: 1/1|U|35704|N|Use the Incendiary Explosives on the southern sinkhole here.|M|50.60,71.43|
-C Northrend Sinkhole |QID|11897|NC|QO|Explosives set at northrend sinkhole: 1/1|U|35704|N|Use the Incendiary Explosives on the southern sinkhole here.|M|50.60,71.43|
+C Southern Sinkhole |QID|11897|NC|QO|1|U|35704|N|Use the Incendiary Explosives on the southern sinkhole here.|M|50.60,71.43|
+C Northrend Sinkhole |QID|11897|NC|QO|2|U|35704|N|Use the Incendiary Explosives on the southern sinkhole here.|M|54.9,63.4|
 T Plug the Sinkholes |QID|11897|N|To Sergeant Hammerhill.|M|56.37,69.58|
 A Farshire |QID|11928|M|56.4,69.6|N|From Sergeant Hammerhill.|
 A Word on the Street |QID|11927|M|56.8,69.5|N|From Mark Hanes.|
@@ -317,7 +317,7 @@ C Get Me Outa Here! |QID|11673|N|Continue collecting Crafty's Stuff as needed wh
 C Crafty's Stuff |QID|11645|NC|M|58,15|US|N|Finishing getting any crates that you need.|
 T Get Me Outa Here!|QID|11673|N|To Fizzcrank Fullthrottle in the inn on the second floor at Fizzcrank Airstrip.|M|57.03,18.71|
 T Dirty, Stinkin' Snobolds! |QID|11645|N|To Crafty Wobblesprocket who wanders a bit.|M|57.58,18.71;58.18,18.34|CN|
-A Just a Few More Things... |QID|11650|N|From Crafty Wobblesprocket who wanders a bit.|M|57.58,18.71;58.18,18.34|CN|
+A Just a Few More Things... |QID|11650|O|N|From Crafty Wobblesprocket who wanders a bit.|M|57.58,18.71;58.18,18.34|CN|
 C Master and Servant |QID|11730|U|35116|N|Kill robots and use The Ultrasonic Screwdriver on them.|M|57.52,25.03|S|
 C What's the Matter with the Transmatter? |QID|11710|NC|N|Pick up Fizzcrank Spare Parts.|M|62.15,19.5|S|
 C Re-Cursive |QID|11712|U|34973|N|Kill Mechagnomes and use the Re-Cursive Transmatter Injection on them.|M|58.4,19.5|S|
@@ -378,11 +378,11 @@ A Give Fizzcrank the News |QID|11873|N|From Iggy "Tailspin" Cogtoggle.|M|61.63,3
 C Just a Few More Things... |QID|11650|L|39682|N|Grab the Overcharged Capacitor out of your delivery box. If you don't have it, skip this and the next quest and finish them when you get it.|M|56.98,18.85|
 T Lefty Loosey, Righty Tighty |QID|11788|N|To Jinky Wingnut.|M|57.45,18.74|
 A The Gearmaster |QID|11798|N|From Jinky Wingnut.|M|57.45,18.74|
-T What's the Matter with the Transmatter? |QID|11710|M|57.8-5,18.6|N|To Mordle Cogspinner.|
+T What's the Matter with the Transmatter? |QID|11710|M|57.8,18.6|N|To Mordle Cogspinner.|
 A Check in With Bixie |QID|11692|M|57.4,18.7|N|From Mordle Cogspinner.|
 T Master and Servant |QID|11730|M|57.84,18.70|N|To Crafty Wobblesprocket|
 T Just a Few More Things... |QID|11650|N|To Crafty Wobblesprocket|M|57.58,18.71;58.18,18.34|CN|
-A Hah... You're Not So Big Now! |QID|11653|N|From Crafty Wobblesprocket who wanders a bit.|M|57.58,18.71;58.18,18.34|CN|
+A Hah... You're Not So Big Now! |QID|11653|PRE|11650|N|From Crafty Wobblesprocket who wanders a bit.|M|57.58,18.71;58.18,18.34|CN|
 r Sell junk, repair and re-stock food/drink. |QID|11873|M|57.07,19.85|
 T Give Fizzcrank the News |QID|11873|N|To Fizzcrank Fullthrottle in the building on the second floor.|M|56.98,18.70|
 h Fizzcrank Airstrip |QID|11713|N|Set your hearthstone here with "Charlie" Northrop in the building on the ground floor.|M|57.12,18.72|
@@ -393,7 +393,7 @@ C Northwest Sinkhole |U|34920|QID|11713|NC|QO|Mark Location of Northwest Sinkhol
 C Northeast Sinkhole |U|34920|QID|11713|NC|QO|Mark Location of Northeast Sinkhole: 1/1|N|Use the Map of the Geyser Fields at the Northeast Sinkhole.|M|69.68,32.59|
 C South Sinkhole |QID|11713|U|34920|NC|QO|Mark Location of South Sinkhole: 1/1|N|Use the Map of the Geyser Fields at the South Sinkhole to complete the quest.|M|70.23,36.34|
 T Hah... You're Not So Big Now! |QID|11653|N|To Crafty Wobblesprocket who wanders a bit.|M|57.58,18.71;58.18,18.34|CN|
-A Plan B |QID|11658|N|From Crafty Wobblesprocket who wanders a bit.|M|57.58,18.71;58.18,18.34|CN|
+A Plan B |QID|11658|PRE|11653|N|From Crafty Wobblesprocket who wanders a bit.|M|57.58,18.71;58.18,18.34|CN|
 T Scouting the Sinkholes |QID|11713|N|To Abner Fizzletorque.|M|57.06,20.12|
 A Fueling the Project |QID|11715|N|From Abner Fizzletorque.|M|57.06,20.12|
 C Fueling the Project |QID|11715|NC|U|34975|N|Use the Portable Oil Collector on Oil Slicks in the pools southeast of town until you complete this quest. Don't stand right on top of the oil slicks or you might be trapped inside the Collector.|M|57.52,25.03|
@@ -407,7 +407,7 @@ C Plan B: Warsong Outfits |QID|11658|S|CHAT|QO|Warsong Outfit: 1/1|N|Loot 10 War
 T A Bot in Mammoth's Clothing |QID|11718|N|To Abner Fizzletorque.|M|57.06,20.12|
 A Deploy the Shake-n-Quake! |QID|11723|N|From Abner Fizzletorque.|M|57.06,20.12|
 T Plan B |QID|11658|N|To Crafty Wobblesprocket who wanders a bit at the Fizzcrank Airstrip.|M|57.58,18.71;58.18,18.34|CN|
-A It Was The Orcs, Honest! |QID|11670|N|From Crafty Wobblesprocket who wanders a bit.|M|57.58,18.71;58.18,18.34|CN|
+A It Was The Orcs, Honest! |QID|11670|PRE|11658|N|From Crafty Wobblesprocket who wanders a bit.|M|57.58,18.71;58.18,18.34|CN|
 U Use Crafty's Sack |QID|11670|L|34869|N|Loot the items from Crafty's Sack.|U|34871|
 C It Was The Orcs, Honest! |QID|11670|U|34869|N|Go north to the cave we jumped into earlier. Use the Orc Disguise, then jump down and try to land in the water. Kill Magmothregar and plant the Warsong Banner in his corpse.|M|55.29,12.11|
 H Fizzcrank Airstrip |QID|11713|N|Hearthstone to Fizzcrank Airstrip.|
@@ -417,7 +417,7 @@ A Oh Great... Plagued Magnataur! |QID|11693|N|From Bixie Wrenchshanker.|M|73.42,
 C Oh Great... Plagued Magnataur! |QID|11693|N|Kill 10 Plagued Magnataurs to complete this quest.|M|74.83,19.88|
 T Oh Great... Plagued Magnataur! |QID|11693|N|To Bixie Wrenchshanker.|M|73.42,18.79|
 A There's Something Going On In Those Caves |QID|11694|N|From Bixie Wrenchshanker.|M|73.42,18.79|
-C There's Something Going On In Those Caves |QID|11694|U|34915|N|Head up to the cave and use Bixie's Inhibiting Powder on the cauldron.|M|74.79,14.24|
+C There's Something Going On In Those Caves |QID|11694|NC|U|34915|N|Head up to the cave and use Bixie's Inhibiting Powder on the cauldron.|M|74.79,14.24|
 T There's Something Going On In Those Caves |QID|11694|N|To Bixie Wrenchshanker.|M|73.42,18.79|
 A Rats, Tinky Went into the Necropolis! |QID|11697|N|From Bixie Wrenchshanker.|M|73.42,18.79|
 A Might As Well Wipe Out the Scourge |QID|11698|N|From Bixie Wrenchshanker.|M|73.42,18.79|
@@ -458,7 +458,7 @@ C Happy as a Clam |QID|11869|N|Go west to Lake Kum'uya and kill 10 Loot Crazed D
 K Nedar, Lord of Rhinos... |QID|11884|T|"Lunchbox"|N|Go west of the lake and look for Nedar, Lord of Rhinos on his mount.|M|47.19,40.14|
 C Help Those That Cannot Help Themselves |QID|11876|NC|U|35228|N|Use the D.E.H.T.A. Trap Smasher on Trapped Mammoth Calves.|M|53.73,39.87|US|
 C Ears of Our Enemies |QID|11866|N|Kill Loot Crazed enemies south of D.E.H.T.A.|M|57.57,45.49|US|
-N If you killed any Mammoths|QID|11865|N|If you killed any  of the agressive mammoth bulls, you will have their blood on you and the D.E.H.T.A. Enforcers (lvl 77!) will attack you. Take a dip in Lake Kum'uya to wash the blood off, then close this step.|M|53.04,46.21|
+N If you killed any Mammoths|QID|11865|NOBUFF|46221|N|If you killed any  of the agressive mammoth bulls, you will have their blood on you and the D.E.H.T.A. Enforcers (lvl 77!) will attack you. Take a dip in Lake Kum'uya to wash the blood off, then close this step.|M|53.04,46.21|
 T Unfit for Death |QID|11865|N|To Zaza at the D.E.H.T.A. Encampment.|M|56.80,44.03|
 A The Culler Cometh |QID|11868|N|From Zaza|M|56.80,44.03|
 T Help Those That Cannot Help Themselves |QID|11876|N|To Arch Druid Lathorius.|M|57.06,44.30|
@@ -529,7 +529,7 @@ T Dragonspeak |QID|11682|N|To Surristrasz.|M|45.3,34.5|
 A Traversing the Rift |QID|11733|N|From Surristrasz.|M|45.3,34.5|
 T Traversing the Rift |QID|11733|N|To Archmage Berinand.|M|32.95,34.40|
 
-f Transitus Shield|M|331,34.4|N|From Warmage Adami|
+f Transitus Shield|M|33.1,34.4|N|From Warmage Adami|
 A Reading the Meters |QID|11900|N|From Archmage Berinand.|M|32.95,34.40|
 A Secrets of the Ancients |QID|11910|N|From Archmage Berinand.|M|32.95,34.40|
 A Basic Training |QID|11918|N|From Raelorasz.|M|33.31,34.53|
