@@ -638,7 +638,7 @@ T Revelations|QID|30946|M|62.33,29.06|N|To Lorewalker Cho.|
 A Prophet Khar'zul|QID|31228|M|62.33,29.06|N|From Lorewalker Cho.|
 C Prophet's Island|QID|31228|M|62.29,29.34|CHAT|N|Speak to Mishi just outside the tarvern on the right hand side, and tell her you're ready to leave. She will whisk you to the Isle of Reckoning.|QO|Speak with Mishi in Zouchin Village: 1/1|
 C Zandalari Forces|QID|31228|M|76.4,9.2|S|N|Kill the trolls as you make your way through the village.|QO|Zandalari forces slain: 12/12|
-C Prophet Khar'zul|QID|31228|M|76.4,9.2|N|Jump onto the table and kill Prophet Khar'zul. Stay on the table throughout the fight to avoid the bad stuff on the floor.|T|Prophet Khar'zul|QO|Prophet Khar'zul slain: 1/1|
+K Prophet Khar'zul|QID|31228|M|76.4,9.2|N|Jump onto the table and kill Prophet Khar'zul. Stay on the table throughout the fight to avoid the bad stuff on the floor.|T|Prophet Khar'zul|QO|Prophet Khar'zul slain: 1/1|
 C Zandalari Forces|QID|31228|M|76.17,11.38|US|N|Finish killing the trolls as you head to Mishi.|QO|Zandalari forces slain: 12/12|
 F Zouchin Village|QID|31228|M|76.17,11.38|CHAT|N|Talk to Mishi for a ride back to the village. You must NOT be mounted.\nIf he is not there, go back up the stairs to the top and go back down.|
 T Prophet Khar'zul|QID|31228|M|62.33,29.06|N|To Lorewalker Cho.|
@@ -746,16 +746,16 @@ A The Defense of Shado-Pan Fallback|QID|30665|M|44.49,89.88|N|From Shado-Master 
 C Turnabout|QID|30670|S|M|41.29,86.60|N|These drop from the little sha in the area.|
 C The Defense of Shado-Pan Fallback|QID|30665|S|M|44.45,88.63|
 A Holed Up|QID|30682|NC|M|42.99,88.33|N|From Sya Zhong. (Exit through north door)|
-C Ya Firebough rescued|QID|30682|NC|QO|Ya Firebough rescued: 1/1|M|41.08, 87.03|
-C Old Lady Fung rescued|QID|30682|NC|QO|Old Lady Fung rescued: 1/1|M|42.74, 85.76|
-C Jin Warmkeg rescued|QID|30682|NC|QO|Jin Warmkeg rescued: 1/1|M|43.86,86.22|
+C Ya Firebough rescued|QID|30682|CHAT|QO|Ya Firebough rescued: 1/1|M|41.08, 87.03|
+C Old Lady Fung rescued|QID|30682|CHAT|QO|Old Lady Fung rescued: 1/1|M|42.74, 85.76|
+C Jin Warmkeg rescued|QID|30682|CHAT|QO|Jin Warmkeg rescued: 1/1|M|43.86,86.22|
 C Turnabout|QID|30670|US|M|41.29,86.60|N|These drop from the little sha in the area.|
 C The Defense of Shado-Pan Fallback|QID|30665|US|M|44.45,88.63|
 T Turnabout|QID|30670|M|44.47,89.91|N|To Shado-Master Chong.|
 A Unmasking the Yaungol|QID|30690|M|44.47,89.91|N|From Shado-Master Chong.|
 T The Defense of Shado-Pan Fallback|QID|30665|M|44.47,89.91|N|To Shado-Master Chong.|
 T Holed Up|QID|30682|M|44.47,89.91|N|To Shado-Master Chong.|
-C Unmasking the Yaungol|QID|30690|U|81741|M|45.28,86.63|N|Set up your trap and pull him into it. When he is trapped, use your 'extra action' button.|
+C Unmasking the Yaungol|QID|30690|T|Kobai|U|81741|M|45.28,86.63|N|Set up your trap and pull him into it. When he is trapped, use your 'extra action' button.|
 T Unmasking the Yaungol|QID|30690|M|44.48,89.91|N|To Shado-Master Chong.|
 A To Winter's Blossom|QID|30699|M|44.48,89.91|N|From Shado-Master Chong.|
 r Repair/Restock|QID|30699|M|44.23,90.25|N|At Fixxit Redhammer.|
@@ -777,18 +777,18 @@ C Honor, Even in Death|QID|30723|US|M|30.22,62.06|
 T A Line Unbroken|QID|30715|M|35.12,59.66|N|To Ban Bearheart.|
 T Honor, Even in Death|QID|30723|M|34.95,59.31|N|To Lin Silentstrike.|
 A To the Wall!|QID|30724|M|34.95,59.31|N|From Lin Silentstrike.|
-C To the Wall!|QID|30724|M|34.55,59.05|N|Talk to Lin for a ride to the wall.|
+C To the Wall!|QID|30724|CHAT|M|34.55,59.05|N|Talk to Lin for a ride to the wall.|
 T To the Wall!|QID|30724|M|29.31,62.29|N|To Suna Silentstrike.|
 A Off the Wall!|QID|30750|M|29.31,62.29|N|From Suna Silentstrike.|
 A A Terrible Sacrifice|QID|30751|M|29.24,62.30|N|From Lao-Chin the Iron Belly.|
-C A Terrible Sacrifice|QID|30751|S|M|26.27,59.10|
+C A Terrible Sacrifice|QID|30751|S|NC|M|26.27,59.10|
 C Off the Wall!|QID|30750|M|26.98,59.95|N|Right-click to boot them off the wall (at low health) or just kill them.|
-C A Terrible Sacrifice|QID|30751|US||26.27,59.10|
+C A Terrible Sacrifice|QID|30751|US|NC|M|26.27,59.10|
 C Off the Wall!|QID|30750|M|26.98,59.95|N|Right-click to boot them off the wall (at low health) or just kill them.|
 T Off the Wall!|QID|30750|M|29.31,62.29|N|To Suna Silentstrike.|
 T A Terrible Sacrifice|QID|30751|M|29.24,62.30|N|To Lao-Chin the Iron Belly.|
 A Lao-Chin's Gambit|QID|30994|M|29.31,62.29|N|From Suna Silentstrike.|
-C Lao-Chin's Gambit|QID|30994|M|29.31,62.25|N|Talk to Suna for a ride back.|
+C Lao-Chin's Gambit|QID|30994|CHAT|M|29.31,62.25|N|Talk to Suna for a ride back.|
 T Lao-Chin's Gambit|QID|30994|M|31.82,60.10|N|To Lao-Chin the Iron Belly.|
 A Do a Barrel Roll!|QID|30991|M|31.82,60.10|N|From Lao-Chin the Iron Belly.|
 C Do a Barrel Roll!|QID|30991|M|31.95,60.43|N|Click on the barrels, to control them, you steer towards the target (with your mouse or arrows), then press 1 to blow up the barrel.|
@@ -798,8 +798,8 @@ C Finish This!|QID|30992|M|31.30,61.61|
 T Finish This!|QID|30992|M|31.29,61.50|N|To Ban Bearheart.|
 A Where are My Reinforcements?|QID|30993|M|31.30,61.61|N|From Ban Bearheart.|
 ;A My Husband...|QID|30768|M|31.30,61.61|N|From Suna Silentstrike.|;apparently Blizzard changed this to be mutually exclusive with 'Beyond the Wall' and 'The Shado-Pan Offensive' *it wasnt originally*??
-C Where are My Reinforcements?|QID|30993|M|31.30,61.61|NC|QO|Tell Ban You are Ready to Leave: 1/1|N|Talk to Ban while down in the valley|
-C Where are My Reinforcements?|QID|30993|M|33.96,58.62|NC|QO|Ride Ban's Balloon to the Shado-Pan Monastery: 1/1|N|Talk to Ban Bearheart and listen to his history lesson.|
+C Where are My Reinforcements?|QID|30993|CHAT|M|31.30,61.61|NC|QO|Tell Ban You are Ready to Leave: 1/1|N|Talk to Ban while down in the valley|
+C Where are My Reinforcements?|QID|30993|CHAT|M|33.96,58.62|NC|QO|Ride Ban's Balloon to the Shado-Pan Monastery: 1/1|N|Talk to Ban Bearheart and listen to his history lesson.|
 T Where are My Reinforcements?|QID|30993|M|35.31,49.56|N|To Ban Bearheart.|
 A Unbelievable!|QID|30752|M|35.31,49.56|N|From Ban Bearheart.|
 C Unbelievable!|QID|30752|M|36.75,47.67|N|Ask the guard at the door to let you in, fight him when he refuses.|
@@ -810,7 +810,7 @@ A Into the Monastery|QID|31030|M|36.75,47.67|N|From Ban Bearheart. This is a dun
 ; Horde
 H Kota Basecamp|QID|31511|FACTION|Horde|N|This will shorthen your flight time. Otherwise, you will have to run back to Winter's Blossom to fly|
 F Eastwind Rest|QID|31511|FACTION|Horde|M|42.78,69.58|N|At Uncle Eastwind.|
-C A Witness to History|QID|31511|FACTION|Horde|M|45.70,8.88|Z|Vale of Eternal Blossoms|N|Speak with Dezco.|
+C A Witness to History|QID|31511|CHAT|FACTION|Horde|M|45.70,8.88|Z|Vale of Eternal Blossoms|N|Speak with Dezco.|
 ; ** The turn-in NPC has changed. ** T A Witness to History|QID|31511|FACTION|Horde|M|56.85,43.37|N|To Zhi the Harmonious.|
 T A Witness to History|QID|31511|FACTION|Horde|CC|M|56.11,27.10;68.3,47.59|N|To Madame Vee Luo in the Summer's Rest at Shrine of the Two Moons.|
 ; ** This quest is no longer available. ** A The Shrine of Two Moons|QID|30649|FACTION|Horde|M|56.74,42.63|Z|Vale of Eternal Blossoms|N|From Sun Tenderheart.|
@@ -819,7 +819,7 @@ f Shrine of Two Moons|QID|31511|FACTION|Horde|M|62.86,21.78|Z|Vale of Eternal Bl
 ; Alliance
 H Kota Basecamp|QID|31512|FACTION|Alliance|N|This will shorten your flight time. Otherwise, you will have to run back to Winter's Blossom to fly|
 F Westwind Rest|QID|31512|FACTION|Alliance|M|42.78,69.58|N|At Uncle Eastwind.|
-C A Witness to History|QID|31512|FACTION|Alliance|M|43.04,9.33|Z|Vale of Eternal Blossoms|N|Speak to Anduin|
+C A Witness to History|QID|31512|CHAT|FACTION|Alliance|M|43.04,9.33|Z|Vale of Eternal Blossoms|N|Speak to Anduin|
 ; ** The turn-in NPC has changed. **T A Witness to History|QID|31512|FACTION|Alliance|M|56.85,43.37|Z|Vale of Eternal Blossoms|N|To Zhi the Harmonious.|
 f Shrine of Seven Stars|QID|31512|FACTION|Alliance|CC|M|56.11,27.10;64.41,30.91;75.24,29.44;82.70,41.87;83.80,64.44;84.62,62.41|Z|Vale of Eternal Blossoms|N|Get the flight point from Sharinga Springrunner, on the second floor on the Summer Terrace. The flight trainer is right beside her if you happen to be level 90.|
 T A Witness to History|QID|31512|FACTION|Alliance|M|86.77,68.97|Z|Vale of Eternal Blossoms|N|To Matron Vi Vinh in The Golden Lantern at The Shrine of Seven Stars. /n Avoid the Horde guards as you pass The Shrine of Two Moons and the Sha on your right as you travel between points.|

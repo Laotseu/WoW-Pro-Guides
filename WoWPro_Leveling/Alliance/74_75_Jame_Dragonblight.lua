@@ -184,7 +184,7 @@ A The Noble's Crypt |QID|12311|M|79.1,53.2|N|From Cavalier Durkon.|
 
 K Necrolord Amarion |QID|12311|T|Necrolord Amarion|QO|Necrolord Amarion slain: 1/1|N|Enter the crypt, go to the bottom of it, kill Necrolord Amarion.|
 
-A Secrets of the Scourge |QID|12312|M|79.0,52.9;|N|Right-click the Flesh Bound Tome which should be on the floor behind where you found Necrolord Amarion. Get the quest and get out of the crypt as fast as you can to stop those annoying ghouls from spawning.|M|78.6,52.4|
+A Secrets of the Scourge |QID|12312|M|79.0,52.9|N|Right-click the Flesh Bound Tome which should be on the floor behind where you found Necrolord Amarion. Get the quest and get out of the crypt as fast as you can to stop those annoying ghouls from spawning.|M|78.6,52.4|
 
 T The Noble's Crypt |QID|12311|M|79.1,53.2|N|To Cavalier Durkon.|
 T Secrets of the Scourge |QID|12312|M|79.1,53.2|N|To Cavalier Durkon.|
@@ -262,7 +262,7 @@ A Strengthen the Ancients |QID|12092|N|From Sarendryana.|M|28.80,57.10|
 ;l Woodlands Walker |QID|12092|S|L|36786 3|N|Dismount. Look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some Bark of the Walkers. Repeat until you got 3.|M|32.68,65.48|
 C Strengthen the Ancients |U|36786|S|QID|12092|N|For the Bark of the Walker, look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some.|nOnce you have bark, look for Lothalor Ancients (not corrupted ones). Get close to them and right-click the Bark of the Walkers.|M|32.68,65.48|
 K Lieutenant Ta'zinni |QID|12083|T|Lieutenant Ta'zinni|L|36779|N|Go further south until you find a Ley Line Focus  Kill Lieutenant Ta'zinni. He's a troll NPC and patrols around the Ley Line Focus. Loot the Ley Line Focus Control Amulet.|M|32.00,71.00|
-C Atop the Woodlands |QID|12083|U|36779|N|Right-click it while being close to the Ley Line Focus, then wait until you get the quest completion.|M|32.2,70.6|
+C Atop the Woodlands |QID|12083|NC|U|36779|N|Right-click it while being close to the Ley Line Focus, then wait until you get the quest completion.|M|32.2,70.6|
 C Woodlands Walker |QID|12092|US|L|36786 3|N|Dismount. Look for Woodlands Walker, right-click them, click their text and they'll either attack you or give you some Bark of the Walkers. Repeat until you got 3.|M|32.68,65.48|
 C Strengthen the Ancients |U|36786|US|QID|12092|N|Look for Lothalor Ancients (not corrupted ones). Get close to them and right-click the Bark of the Walkers.|M|32.68,65.48|
 
@@ -312,7 +312,7 @@ C Tua'kea's Crab Traps |QID|12009|US|N|Finish gathering Tua'kea Crab Traps.|M|46
 K Kili'ua |QID|12016|T|Kili'ua|N|Once you reach Kili'ua's Atoll, kill Kili'ua and loot [The Flesh of "Two Huge Pincers"].|M|43.27,82.40|
 
 R The Briny Pinnacle |QID|12032|N|Swim west to The Briny Pinnacle. |M|34.00, 83.00|
-C Conversing With the Depths |QID|12032|N|Follow the path up until you find The Pearl of the Depth. Right-click it and the sea-goddess Oacha'noa will come and talk to you. Jump in the water when she gives you the compulsion buff.|M|34.00,83.46|
+C Conversing With the Depths |QID|12032|NC|N|Follow the path up until you find The Pearl of the Depth. Right-click it and the sea-goddess Oacha'noa will come and talk to you. Jump in the water when she gives you the compulsion buff.|M|34.00,83.46|
 H Moa'ki Harbor |QID|12016|N|Hearthstone back to Moa'ki Harbor.|
 
 T Tua'kea's Crab Traps |QID|12009|N|Tua'kea |M|47.7,76.6|
@@ -348,7 +348,7 @@ T The Plume of Alystros |QID|12456|O|N|Go back to Nishera the Garden Keeper.|M|6
 
 R Venomspite |QID|12458|N|This is an optional step, but will help you get the Exploration Achievement.|M|77.11,62.09|
 R New Hearthglen |QID|12458|N|This is an optional step to help you get the Exploration Achievement also.|M|72.93,68.11|
-K High General Abbendis |QID|12464|T|High General Abbendis|N|She can be found in the big cathedral in New Hearthglen. There's a level 80 elite next to her but he doesn't add if you pull Abbendis, so don't worry about it.|M|70.8,75.2;|CC|
+K High General Abbendis |QID|12464|T|High General Abbendis|N|She can be found in the big cathedral in New Hearthglen. There's a level 80 elite next to her but he doesn't add if you pull Abbendis, so don't worry about it.|M|70.8,75.2|CC|
 
 T Seeds of the Lashers |QID|12458|N|Ask Tariolastrasz to send you to the top floor. To Lord Itharius.|M|59.60,54.50|
 A That Which Creates Can Also Destroy |QID|12459|M|59.6,54.4|N|From To Lord Itharius.|

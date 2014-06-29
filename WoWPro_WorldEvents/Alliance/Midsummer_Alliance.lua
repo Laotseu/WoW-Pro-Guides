@@ -93,7 +93,7 @@ T The Master of Summer Lore |N|To the Festival Loremaster.|M|62.2,48.67|QID|1197
 A Incense for the Summer Scorchlings |N|From the Festival Loremaster.|M|62.2,48.67|QID|11964|Z|Darnassus|
 A Unusual Activity |N|From the Earthen Ring Elder. |M|62.11,49.15|Z|Darnassus|QID|11886|
 
-A Torch Tossing |N|From the Master Fire Eater. |M|63.19,47.5|QID|11731|Z|Darnassus|
+A Torch Towssing |N|From the Master Fire Eater. |M|63.19,47.5|QID|11731|Z|Darnassus|
 C Torch Tossing |N|Throw the torch at the brazier with the red arrow over it 8 times.|U|34862|QID|11731|Z|Darnassus|
 T Torch Tossing |N|To the Master Fire Eater. |M|63.19,47.5|QID|11731|Z|Darnassus|
 A Torch Catching |N|From the Master Fire Eater. |M|63.19,47.5|QID|11657|Z|Darnassus|
