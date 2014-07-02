@@ -470,8 +470,11 @@ function WoWPro:NextStep(k,i)
         		end
         		if totalFailure then
         		    skip = true
-        		    WoWPro.why[k] = "NextStep(): None of possible prereqs was met."
+        		    WoWPro.why[k] = ("NextStep(): None of possible prereqs were met. |PRE|%s|"):format(WoWPro.prereq[k])
         		    WoWProCharDB.Guide[GID].skipped[k] = true
+        		    if WoWPro.action[k] == "A" then
+        		    	WoWProCharDB.skippedQIDs[QID] = true
+        		    end
         		    break
         		end
         	else
@@ -481,8 +484,11 @@ function WoWPro:NextStep(k,i)
         			local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
         			if not WoWPro:IsQuestFlaggedCompleted(tonumber(jprereq)) then 
         				skip = true -- If one of the prereqs is NOT complete, step is skipped.
-        				WoWPro.why[k] = "NextStep(): Not all of the prereqs was met: " .. WoWPro.prereq[k]
+        				WoWPro.why[k] = "NextStep(): Not all of the prereqs were met: " .. WoWPro.prereq[k]
         				WoWProCharDB.Guide[GID].skipped[k] = true
+        				if WoWPro.action[k] == "A" then
+        					WoWProCharDB.skippedQIDs[QID] = true
+        				end
         				break
         			end
         		end
@@ -621,7 +627,7 @@ function WoWPro:NextStep(k,i)
                 WoWPro.CompleteStep(k)
                 break
             end
-            if WoWPro.action[k] ~= "L" and level > UnitLevel("player") then
+            if WoWPro.level[k] and tonumber(WoWPro.level[k]) > UnitLevel("player") then
                 skip = true
                 WoWPro:dbp("Skip %s [%s] because its level %d is too high.",WoWPro.action[k],WoWPro.step[k],level)
                 WoWPro.why[k] = "NextStep(): Skipping step because player level not high enough."
@@ -669,6 +675,10 @@ function WoWPro:NextStep(k,i)
 				    WoWProCharDB.Guide[GID].skipped[k] = true
 				    WoWProCharDB.skippedQIDs[QID] = true
 				    WoWPro:dbp("Prof permaskip qid %s for no %s",WoWPro.QID[k],prof)
+				elseif skip == true then
+					-- Skipping the line because the profession requirements are not met
+					WoWPro.why[k] = ("NextStep(): skipping step because profession requirements not met for |P|%s|."):format(WoWPro.prof[k])
+					WoWProCharDB.Guide[GID].skipped[k] = true
 				end
 			else
 			    WoWPro:Error("Warning: malformed profession tag [%s] at step %d",WoWPro.prof[k],k)

@@ -326,6 +326,7 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 	WoWPro.pet[i] = text:match("|PET|([^|]*)|?")
 	WoWPro.gossip[i] = text:match("|QG|([^|]*)|?")
 	if WoWPro.gossip[i] then WoWPro.gossip[i] = strupper(WoWPro.gossip[i]) end
+	if text:find("|DAILY|") then WoWPro.daily[i] = true end
 	WoWPro.why[i] = nil
 
     -- If the step is "Achievement" use the name and description from the server ...
@@ -408,6 +409,7 @@ function WoWPro:ParseSteps(steps)
 			   (gender == nil or gender == UnitSex("player")) and
 			   (faction == nil or myFaction == "NEUTRAL" or faction == "NEUTRAL" or faction == myFaction) then
                 WoWPro.ParsingQuestLine = text
+            if i > 1000 then err("Infinite parsing for guide %s, j = %s",GID,j); return end
 				WoWPro.ParseQuestLine(faction,i,text,j)
 				WoWPro.ParsingQuestLine = nil
 				i = i + 1
@@ -706,7 +708,9 @@ function WoWPro:RowUpdate(offset)
 		if WoWPro.noncombat[k] and WoWPro.action[k] == "C" then
 			row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
 		elseif WoWPro.chat[k] then
-		    row.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon") 
+		   row.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon") 
+		elseif WoWPro.daily[k] and WoWPro.action[k] == "A" then
+			row.action:SetTexture("Interface\\GossipFrame\\DailyQuestIcon")
 		end
 		
 		row.check:SetScript("OnClick", function(self, button, down)
