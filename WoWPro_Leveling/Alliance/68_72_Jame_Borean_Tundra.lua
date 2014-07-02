@@ -123,7 +123,7 @@ WoWPro:GuideIcon(guide,"ACH",4928)
 WoWPro:GuideSteps(guide, function()
 return [[
 
-B Overcharged Capacitor |QID|11650|N|The quest Just a Few More Things... in Borean Tundra will require an Overcharged Capacitor.  The quest pays out 4g70s and 20k XP and leads to two further quests each worth the same (and one with a 2-3g green reward), so worth while looking for this item now in Auction House if you can't find an Engineer with 4 Cobalt Bars and 1 Crystallized Earth. You can leave it in your delivery box to save space, as the questgiver above is near a mailbox.|L|39682|M|62.9,71.7|Z|Stormwind City|
+B Overcharged Capacitor |QID|11650|O|N|The quest Just a Few More Things... in Borean Tundra will require an Overcharged Capacitor.  The quest pays out 4g70s and 20k XP and leads to two further quests each worth the same (and one with a 2-3g green reward), so worth while looking for this item now in Auction House if you can't find an Engineer with 4 Cobalt Bars and 1 Crystallized Earth. You can leave it in your delivery box to save space, as the questgiver above is near a mailbox.\r\rSkip this step if you have no intention of getting the Overcharged Capacitor for now.|L|39682|M|62.9,71.7|Z|Stormwind City|
 N Cold Weather Flying|SPELL|Cold Weather Flying;54197|N|Purchase Cold Weather Flying from Bralla Cloudwing for 500 gold(faction discounts apply).|M|70.29,73.37|Z|Stormwind City|
 A Hero's Call: Northrend! |QID|28709|LEAD|11672|N|From the Hero's Callboard in Darnassus, Ironforge, or either Callboard in Stormwind City.  May not show if your level is too high.|M|62.9,71.7|Z|Stormwind City|
 R Stormwind Harbor |QID|11672|N|Go to Stormwind Harbor.|Z|Stormwind City|M|27.06,25.50|
@@ -243,7 +243,7 @@ T The Emissary |QID|11626|N|To Karuk.|M|47.15,75.39|
 T Cowards and Fools |QID|11932|N|To Ataika in Kaskala.|M|63.81,46.10|
 A The Son of Karkut |QID|12086|N|From Ataika.|M|63.81,46.10|
 A Not Without a Fight! |QID|11949|N|From Ataika.|M|63.81,46.10|
-A Preparing for the Worst |QID|11945|N|From Utaik.|M|64.0,45.7|
+A Preparing for the Worst |QID|11945|DAILY|N|From Utaik.|M|64.0,45.7|
 C Preparing for the Worst |QID|11945|NC|N|Pick up these supplies off the ground.|M|65.76,47.55|S|
 C Not Without a Fight! |QID|11949|N|Kill Kvaldir Raiders.|M|65.76,47.55|
 C Preparing for the Worst |QID|11945|NC|N|Pick up these supplies off the ground.|M|65.76,47.55|US|
@@ -317,7 +317,7 @@ C Get Me Outa Here! |QID|11673|N|Continue collecting Crafty's Stuff as needed wh
 C Crafty's Stuff |QID|11645|NC|M|58,15|US|N|Finishing getting any crates that you need.|
 T Get Me Outa Here!|QID|11673|N|To Fizzcrank Fullthrottle in the inn on the second floor at Fizzcrank Airstrip.|M|57.03,18.71|
 T Dirty, Stinkin' Snobolds! |QID|11645|N|To Crafty Wobblesprocket who wanders a bit.|M|57.58,18.71;58.18,18.34|CN|
-A Just a Few More Things... |QID|11650|O|N|From Crafty Wobblesprocket who wanders a bit.|M|57.58,18.71;58.18,18.34|CN|
+A Just a Few More Things... |QID|11650|O|N|From Crafty Wobblesprocket who wanders a bit.\n\nSkip this quest if you didn't get an Overcharged Capacitor.|M|57.58,18.71;58.18,18.34|CN|
 C Master and Servant |QID|11730|U|35116|N|Kill robots and use The Ultrasonic Screwdriver on them.|M|57.52,25.03|S|
 C What's the Matter with the Transmatter? |QID|11710|NC|N|Pick up Fizzcrank Spare Parts.|M|62.15,19.5|S|
 C Re-Cursive |QID|11712|U|34973|N|Kill Mechagnomes and use the Re-Cursive Transmatter Injection on them.|M|58.4,19.5|S|
@@ -494,7 +494,7 @@ f Amber Ledge |M|45.4,34.7|N|From Surristrasz|
 T Nick of Time |QID|11575|N|To Librarian Donathan.|M|45.27,33.36|
 A Prison Break |QID|11587|N|From Librarian Donathan.|M|45.27,33.36|
 A Monitoring the Rift: Cleftcliff Anomaly |QID|11576|N|From Librarian Garren.|M|44.98,33.38|
-K Beryl Mage Hunters |QID|11587|L|34688|N|Kill Beryl Mage Hunters until one drops a Beryl Prison Key.|M|42.51,37.85|
+C Beryl Mage Hunters |QID|11587|L|34688|N|Kill Beryl Mage Hunters until one drops a Beryl Prison Key.|M|42.51,37.85|
 C Prison Break |QID|11587|N|Click an Arcane Prison to free a Mage Prisoner.|M|42.74,36.95|
 C Monitoring the Rift: Cleftcliff Anomaly |QID|11576|NC|U|34669|N|Fly southwest to the rift and use the Arcanometer next to it.|M|34.36,42.13|
 T Prison Break |QID|11587|N|To Librarian Donathan.|M|45.27,33.36|
@@ -502,7 +502,7 @@ T Prison Break |QID|11587|N|To Librarian Donathan.|M|45.27,33.36|
 A Abduction |QID|11590|N|From Librarian Donathan.|M|45.27,33.36|
 T Monitoring the Rift: Cleftcliff Anomaly |QID|11576|N|To Librarian Garren.|M|44.98,33.38|
 A Monitoring the Rift: Sundered Chasm |QID|11582|N|From Librarian Garren.|M|44.98,33.38|
-C Monitoring the Rift: Sundered Chasm |QID|11582|U|34669|N|Dive down to the Sundered Chasm here, and use the Arcanometer near the rift at the bottom.|M|44.01,28.63|
+C Monitoring the Rift: Sundered Chasm |QID|11582|NC|U|34669|N|Dive down to the Sundered Chasm here, and use the Arcanometer near the rift at the bottom.|M|44.01,28.63|
 C Abduction |QID|11590|U|34691|N|Get out of the water, back to Beryl Point and find a Beryl Sorcerer. Fight it down to low health, then use the Arcane Binder on it.|M|42.51,38.01|
 T Abduction |QID|11590|N|To Librarian Donathan.|M|45.27,33.36|
 A The Borean Inquisition |QID|11646|N|From Librarian Donathan.|M|45.27,33.36|
@@ -510,7 +510,7 @@ T Monitoring the Rift: Sundered Chasm |QID|11582|N|To Librarian Garren.|M|44.98,
 A Monitoring the Rift: Winterfin Cavern |QID|12728|N|From Librarian Garren.|M|44.98,33.38|
 T The Borean Inquisition |QID|11646|N|To Librarian Normantis on the second floor of the tower.|M|46.33,32.84|
 A The Art of Persuasion |QID|11648|N|From Librarian Normantis on the second floor of the tower.|M|46.33,32.84|
-C The Art of Persuasion |QID|11648|U|34811|N|Use the Neural needler on the Imprisoned Beryl Sorcerer several times until the quest completes.|M|46.33,32.84|
+C The Art of Persuasion |QID|11648|NC|U|34811|N|Use the Neural needler on the Imprisoned Beryl Sorcerer several times until the quest completes.|M|46.33,32.84|
 T The Art of Persuasion |QID|11648|N|To Librarian Normantis on the second floor of the tower.|M|46.33,32.84|
 A Sharing Intelligence |QID|11663|N|From Librarian Normantis on the second floor of the tower.|M|46.33,32.84|
 T Sharing Intelligence |QID|11663|N|To Librarian Donathan.|M|45.27,33.36|
@@ -528,32 +528,32 @@ A Dragonspeak |QID|11682|N|From Archmage Evanor.|M|46.38,32.40|
 T Dragonspeak |QID|11682|N|To Surristrasz.|M|45.3,34.5|
 A Traversing the Rift |QID|11733|N|From Surristrasz.|M|45.3,34.5|
 T Traversing the Rift |QID|11733|N|To Archmage Berinand.|M|32.95,34.40|
-
-f Transitus Shield|M|33.1,34.4|N|From Warmage Adami|
 A Reading the Meters |QID|11900|N|From Archmage Berinand.|M|32.95,34.40|
 A Secrets of the Ancients |QID|11910|N|From Archmage Berinand.|M|32.95,34.40|
+
+f Transitus Shield|M|33.1,34.4|N|From Warmage Adami|
 A Basic Training |QID|11918|N|From Raelorasz.|M|33.31,34.53|
 A Nuts for Berries |QID|11912|N|From Librarian Serrah.|M|33.48,34.38|
 N A note of caution|QID|11912|N|When flying around in this area, be careful not to fly too near the lvl 80 Elite Blue Dragons circling above, they will hurt you plenty. Close this step to continue.|
 C Basic Training |QID|11918|N|Kill Coldarra Spellweavers.|S|
 C Secrets of the Ancients |QID|11910|N|Kill Glacial Ancients and Magic-bound Ancients.|S|
 C Nuts for Berries |QID|11912|NC|N|Pick up Frostberries.|S|
-K Coldarra Spellbinders |QID|11941|L|35648|N|Kill Coldarra Spellbinders until one drops a Scintillating Fragment|M|33,28|
+C Coldarra Spellbinders |QID|11941|L|35648|N|Kill Coldarra Spellbinders until one drops a Scintillating Fragment|M|33,28|
 A Puzzling... |QID|11941|U|35648|N|Right-click the Scintillating Fragment to accept this quest.|M|35.0,28.0|
 T Puzzling... |QID|11941|N|To Raelorasz.|M|33.31,34.53|
 
 A The Cell |QID|11943|N|From Raelorasz.|M|33.31,34.53|
 C Southern Coldarra Reading |QID|11900|NC|QO|Southern Coldarra Reading: 1/1|N|Follow the path west to find a Coldarra Geological Monitor and click it.|M|28.33,34.98|
-C Warbringer Goredrak |QID|11943|T|Warbringer Goredrak|QO|Energy Core: 1/1|N|Kill Warbringer Goredrak and loot the Energy Core.|M|24.24,28.92|
+K Warbringer Goredrak |QID|11943|T|Warbringer Goredrak|QO|Energy Core: 1/1|N|Kill Warbringer Goredrak and loot the Energy Core.|M|24.24,28.92|
 C Western Coldarra Reading |QID|11900|NC|QO|Western Coldarra Reading: 1/1|N|Go northwest to find another Coldarra Geological Monitor and click it.|M|22.36,24.17|
-C General Cerulean  |QID|11943|T|General Cerulean|QO|Prison Casing: 1/1|N|Kill General Cerulean and loot the Prison Casing.|M|27.31,20.40|
+K General Cerulean  |QID|11943|T|General Cerulean|QO|Prison Casing: 1/1|N|Kill General Cerulean and loot the Prison Casing.|M|27.31,20.40|
 C Northern Coldarra Reading |QID|11900|NC|QO|Northern Coldarra Reading: 1/1|N|Go east to find another Coldarra Geological Monitor and click it.|M|31.31,20.29|
 T The Cell |QID|11943|N|To Raelorasz.|M|33.31,34.53|
 A Keristrasza |QID|11946|U|35671|N|Use your Augmented Arcane Prison to make Keristrasza appear.|M|33.1,34.11|
 T Keristrasza |QID|11946|N|To Keristraza.|M|33.1,34.11|
 
 A Bait and Switch |QID|11951|N|From Keristrasza.|M|33.1,34.11|
-C Bait and Switch |QID|11951|N|Loot the purple crystals all around the Nexus.|M|28.36,32.54|
+C Bait and Switch |QID|11951|NC|N|Loot the purple crystals all around the Nexus.|M|28.36,32.54|
 C Nuts for Berries |QID|11912|NC|N|Pick up Frostberries.|US|
 C Secrets of the Ancients |QID|11910|N|Kill Glacial Ancients and Magic-bound Ancients.|US|
 C Basic Training |QID|11918|N|Kill Coldarra Spellweavers.|US|
@@ -573,11 +573,12 @@ T Mustering the Reds |QID|11967|N|To Raelorasz.|M|33.31,34.53|
 A Springing the Trap |QID|11969|N|From Raelorasz.|M|33.31,34.53|
 C Keep the Secret Safe |QID|11914|N|Kill Arcane Serpents near the Nexus.|Z|Borean Tundra|M|27.8,24.2|S|
 K Coldarra Wyrmkins |QID|11936|L|35586 5|N|Kill Coldarra Wyrmkins until you get 5 Frozen Axes.|M|23.60,34.32|S|
+C Hatching a Plan |QID|11936|US|NC|N|Click on the Blue Dragon Eggs near the Nexus.|M|27.8,24.2|
 C Nexus Geological Reading |QID|11900|NC|QO|Nexus Geological Reading: 1/1|N|Go down to the Nexus to find another Coldarra Geological Monitor and click it.|M|28.26,28.47|
 K Coldarra Wyrmkins |QID|11936|L|35586 5|N|Kill Coldarra Wyrmkins until you get 5 Frozen Axes.|M|23.60,34.32|US|
-C Hatching a Plan |QID|11936|N|Click on the Blue Dragon Eggs near the Nexus.|M|27.8,24.2|
+C Hatching a Plan |QID|11936|US|NC|N|Click on the Blue Dragon Eggs near the Nexus.|M|27.8,24.2|
 C Keep the Secret Safe |QID|11914|N|Kill Arcane Serpents near the Nexus.|M|27.8,24.2|US|
-C Springing the Trap |QID|11969|U|44950|N|Get out of the ravine and go northeast to the Signal Fire at the Nexus's Northwestern Entrance. Dismount, then use Raelorasz's Spark. Stay close to Keristrasza until she takes off and run close to her when she lands.|M|25.41,21.81|
+C Springing the Trap |QID|11969|NC|U|44950|N|Get out of the ravine and go northeast to the Signal Fire at the Nexus's Northwestern Entrance. Dismount, then use Raelorasz's Spark. Stay close to Keristrasza until she takes off and run close to her when she lands.|M|25.41,21.81|
 T Keep the Secret Safe |QID|11914|N|To Librarian Serrah.|M|33.48,34.38|
 T Hatching a Plan |QID|11936|N|To Raelorasz.|M|33.31,34.53|
 
@@ -587,7 +588,10 @@ T Reading the Meters |QID|11900|N|To Archmage Berinand.|M|32.95,34.40|
 C Drake Hunt |QID|11919|T|Nexus Drake Hatchling,use item:35506|N|Find a Nexus Drake Hatchling flying around to the west of the Nexus. Use Raelorasz's Spear on it and tank it until it becomes friendly (about 10 seconds). Ride back to the Transitus Shield quickly, you have 3 minutes to turn this quest in.|M|23,26|
 T Drake Hunt |QID|11919|N|To Raelorasz.|M|33.31,34.53|
 A Cracking the Code |QID|11931|N|From Raelorasz.|M|33.31,34.53|
-N Drake Hunt |QID|12117|N|Drake Hunt is now a repeatable daily quest. You may pick it up again and if you wish and do it again after the next step.|
+;N Drake Hunt |QID|12117|N|Drake Hunt is now a repeatable daily quest. You may pick it up again and if you wish and do it again after the next step.|
+A Drake Hunt |QID|11940|DAILY|O|N|Drake Hunt is now a repeatable daily quest. You may pick it up again.\n\nFrom Raelorasz.|M|33.31,34.53|
+C Drake Hunt |QID|11940|T|Nexus Drake Hatchling,use item:35506|N|Find a Nexus Drake Hatchling flying around to the west of the Nexus. Use Raelorasz's Spear on it and tank it until it becomes friendly (about 10 seconds). Ride back to the Transitus Shield quickly, you have 3 minutes to turn this quest in.|M|23,26|
+T Drake Hunt |QID|11940|N|To Raelorasz.|M|33.31,34.53|
 C Cracking the Code |QID|11931|S|QO|Shimmering Rune: 3/3|N|Kill Coldarra Spellbinders around him until you get 3 Shimmering Runes.|M|32.77,27.84|
 K Inquisitor Caleras |QID|11931|T|Inquisitor Caleras|QO|Azure Codex: 1/1|N|Kill Inquisitor Caleras to the north and loot the Azure Codex. |M|32.77,27.84|
 C Cracking the Code |QID|11931|US|QO|Shimmering Rune: 3/3|N|Kill Coldarra Spellbinders around him until you get 3 Shimmering Runes.|M|32.77,27.84|

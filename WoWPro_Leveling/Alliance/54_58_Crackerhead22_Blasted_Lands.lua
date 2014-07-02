@@ -127,9 +127,9 @@ T Minor Distractions|QID|25710|M|60.13,13.67|N|To Quartermaster Lungertz.|
 A Eliminate the Okril'lon|QID|25711|M|60.13,13.67|N|From Quartermaster Lungertz.|
 A Nethergarde Reigns|QID|25712|M|60.18,13.58|N|From Leyan Steelson.|
 A Remove Their Arms|QID|25713|M|60.35,13.77|N|From Buttonwillow McKittrick.|
-C Curtail the Darktail|QID|25709|S|U|57119|M|68.54,32.58|N|Use the bow on the vultures as you go along, has about 100 yard range.|T|Darktail Bonepicker|
+C Curtail the Darktail|QID|25709|S|T|Darktail Bonepicker,use item:57119|M|68.54,32.58|N|Use the bow on the vultures as you go along, has about 100 yard range.|
 C Our Fallen Friends|QID|25708|M|68.54,33.33|N|Kill any Drowned Gilnean you see to release them.|
-C Curtail the Darktail|QID|25709|US|U|57119|M|68.54,32.58|N|Kill any vultures you need left.|T|Darktail Bonepicker|
+C Curtail the Darktail|QID|25709|US|T|Darktail Bonepicker,use item:57119|M|68.54,32.58|N|Kill any vultures you need left.|
 T Our Fallen Friends|QID|25708|M|61.59,18.71|N|To Enohar Thunderbrew.|
 T Curtail the Darktail|QID|25709|M|61.59,18.71|N|To Enohar Thunderbrew.|
 
@@ -149,7 +149,7 @@ C Cultists at our Doorstep|QID|25716|M|62.47,22.09;64.35,26.33;61.17,31.53|CN|
 T Cultists at our Doorstep|QID|25716|M|63.09,16.77|N|To Watcher Mahar Ba.|
 
 A Kasim Sharim|QID|26157|M|63.09,16.77|N|From Watcher Mahar Ba.|
-R Serpent's Coil|QID|26157|QO|Report to Kasim Sharim in the back of the Serpent's Coil in the Blasted Lands.|M|62.47,22.09;64.35,26.33;60.83,29.42|CS|N|Head back to the area from the previous quest and enter the cave.|
+R Serpent's Coil|QID|26157|M|62.47,22.09;64.35,26.33;60.83,29.42|CS|N|Head back to the area from the previous quest and enter the cave.|
 T Kasim Sharim|QID|26157|M|62.58,26.37|N|To Kasim Sharim.|
 A Attune the Bloodstone|QID|26158|M|62.58,26.37|N|From Kasim Sharim.|
 C Attune the Bloodstone|QID|26158|NC|QO|Use internal Bloodstone Teleporter: 1/1|M|63.19,25.96|N|Click on the Bloodstone.|
@@ -227,7 +227,7 @@ A The Altar of Storms|QID|26162|M|62.91,25.98|N|From Kasim Sharim.|
 C The Altar of Storms|QID|26162|M|40.34,35.72;36.98,28.16|CS|N|Click on the Blood Altar to get things started. Demons will spawn near the small altars with candles. Kill them as quickly as possible.|
 T The Altar of Storms|QID|26162|M|61.37,29.93|N|Click the Bloodstone then talk to Loramus Thalipedes.|
 A The Final Ritual|QID|26170|M|62.60,26.06|N|From Kasim Sharim.|
-C The Final Ritual|QID|26170|NC|M|62.46,26.03|N|Talk to Kasim and choose to do the ritual. Wait a moment then talk to Loramus.|
+C The Final Ritual|QID|26170|CHAT|M|62.46,26.03|N|Talk to Kasim and choose to do the ritual. Wait a moment then talk to Loramus.|
 T The Final Ritual|QID|26170|M|62.38,26.02|N|To Loramus Thalipedes.|
 A You Are Rakh'likh, Demon|QID|26171|M|62.38,26.02|N|From Loramus Thalipedes.|
 C You Are Rakh'likh, Demon|QID|26171|U|56012|M|46.5,21.67|N|Speak with the Deathly Usher. Kill Razelikh, and then once he enters Loramus, get him down in health then use the Stone Knife when he says too.|
