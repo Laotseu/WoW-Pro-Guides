@@ -109,6 +109,7 @@ err("WoWPro:NextStepX was called")
 				-- If their prerequisite has been skipped, skipping any dependant quests --
 				if WoWPro.action[k] == "A" 
 				or WoWPro.action[k] == "C" 
+				or WoWPro.action[k] == "U" 
 				or WoWPro.action[k] == "T" then
 					WoWProCharDB.skippedQIDs[WoWPro.QID[k]] = true
 					WoWProCharDB.Guide[GID].skipped[k] = true
@@ -326,7 +327,10 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 	WoWPro.pet[i] = text:match("|PET|([^|]*)|?")
 	WoWPro.gossip[i] = text:match("|QG|([^|]*)|?")
 	if WoWPro.gossip[i] then WoWPro.gossip[i] = strupper(WoWPro.gossip[i]) end
-	if text:find("|DAILY|") then WoWPro.daily[i] = true end
+	if text:find("|DAILY|") then
+		--err("Daily found: %s", text)
+		WoWPro:SetSessionDailyQuests(WoWPro.QID[i])
+	end
 	WoWPro.why[i] = nil
 
     -- If the step is "Achievement" use the name and description from the server ...
@@ -709,8 +713,10 @@ function WoWPro:RowUpdate(offset)
 			row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
 		elseif WoWPro.chat[k] then
 		   row.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon") 
-		elseif WoWPro.daily[k] and WoWPro.action[k] == "A" then
+		elseif WoWPro.action[k] == "A" and WoWPro:IsQuestDaily(QID) then
 			row.action:SetTexture("Interface\\GossipFrame\\DailyQuestIcon")
+		elseif WoWPro.action[k] == "T" and WoWPro:IsQuestDaily(QID) then
+			row.action:SetTexture("Interface\\GossipFrame\\DailyActiveQuestIcon")
 		end
 		
 		row.check:SetScript("OnClick", function(self, button, down)
@@ -955,4 +961,47 @@ function WoWPro:RowLeftClick(i)
 		QuestLog_OpenToQuest(WoWPro.QuestLog[QID])
 	end
 	WoWPro.rows[i]:SetChecked(nil)
+end
+
+
+-- Functions to deal with remembering the daily quests
+
+-- Remember the quest as daily
+function WoWPro:SetPermanentDailyQuest( qid )
+	if not qid then return end
+
+	if type(qid) ~= "number" then
+		err("Invalid type for qid %s",qid)
+		return
+	end
+
+	WoWProDB.global.DailyQuests[qid] = true
+end
+
+-- Set all the quests in qids as daily but don't remember it between sessions
+function WoWPro:SetSessionDailyQuests( qids )
+	if not qids then return end
+
+	for i = 1, select("#",(";"):split(qids)) do
+		local qid = select(i,(";"):split(qids))
+		WoWPro.DailyQuests[tonumber(qid)] = true
+	end
+end
+
+-- If any of the quest in qids is a daily, return true
+function WoWPro:IsQuestDaily( qids )
+	if not qids then return nil end
+
+	if type(qids) == "number" then
+		return WoWProDB.global.DailyQuests[qids] or WoWPro.DailyQuests[qids]
+	end
+
+	for i = 1, select("#",(";"):split(qids)) do
+		local qid = select(i,(";"):split(qids))
+		if  WoWProDB.global.DailyQuests[tonumber(qid)] or WoWPro.DailyQuests[tonumber(qid)] then
+			return true
+		end
+	end
+
+	return nil
 end

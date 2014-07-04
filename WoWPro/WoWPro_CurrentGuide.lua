@@ -193,8 +193,10 @@ frame:SetScript("OnShow", function()
 				row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
 			elseif WoWPro.chat[index] then
 			    row.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon") 
-			elseif WoWPro.daily[index] and WoWPro.action[index] == "A" then
+			elseif WoWPro.action[index] == "A" and WoWPro:IsQuestDaily(WoWPro.QID[index]) then
 				row.action:SetTexture("Interface\\GossipFrame\\DailyQuestIcon")
+			elseif WoWPro.action[index] == "T" and WoWPro:IsQuestDaily(WoWPro.QID[index]) then
+				row.action:SetTexture("Interface\\GossipFrame\\DailyActiveQuestIcon")
 			end
 			
 			local note = WoWPro.note[index]

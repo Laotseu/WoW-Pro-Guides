@@ -271,10 +271,10 @@ function WoWPro:OnInitialize()
 	WoWProCharDB.skippedQIDs = WoWProCharDB.skippedQIDs or {}
 	WoWProDB.global.QID2Guide = WoWProDB.global.QID2Guide  or {}
 	WoWProDB.global.RecklessCombat = WoWProDB.global.RecklessCombat or false
-	WoWProCharDB.Trades  = WoWProCharDB.Trades or {}
-	if WoWProCharDB.Enabled == nil then
-	    WoWProCharDB.Enabled = true
-	end
+
+   WoWProDB.global.DailyQuests = WoWProDB.global.DailyQuests or {} -- Detected by GetQuestLogTitle and kept between logins
+   WoWPro.DailyQuests = {} -- Set by |DAILY| flags when the guides are parsed and forgotten between logins
+
 	WoWProDB.global.Deltas = {}
 	WoWProDB.global.Log = {}
 	if WoWProDB.char.currentguide and 
@@ -288,9 +288,14 @@ function WoWPro:OnInitialize()
 	    WoWProCharDB.AutoHideInsideInstances = true
 	end
 	WoWPro.DebugLevel = WoWProCharDB.DebugLevel
-    WoWPro.GossipText = nil
-    WoWPro.GuideLoaded = false
-    WoWProDB.profile.Selector = WoWProDB.profile.Selector or {}
+   WoWPro.GossipText = nil
+   WoWPro.GuideLoaded = false
+   WoWProDB.profile.Selector = WoWProDB.profile.Selector or {}
+
+	WoWProCharDB.Trades  = WoWProCharDB.Trades or {}
+	if WoWProCharDB.Enabled == nil then
+	    WoWProCharDB.Enabled = true
+	end
 end
 
 

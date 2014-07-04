@@ -1033,9 +1033,12 @@ function WoWPro:PopulateQuestLog()
 	ExpandQuestHeader(0)	
 	entries = GetNumQuestLogEntries()
 	for i=1,entries do
-		local isHeader, _ , _, _, questID = select(5,GetQuestLogTitle(i))
+		local isHeader, _ , _, isDaily, questID = select(5,GetQuestLogTitle(i))
 		if not isHeader then
 			WoWPro.QuestLog[questID] = i
+			if isDaily then
+				WoWPro:SetPermanentDailyQuest(questID)
+			end
 		elseif isCollapsed then
 		end
 	end
