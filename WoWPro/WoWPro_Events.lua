@@ -859,7 +859,7 @@ function WoWPro:QuestDialogAutomation()
 				local index = 1
 				repeat
 					local item = select((index-1) * 5 + 1, GetGossipActiveQuests())
-					if item == step then
+					if item:trim() == step then
 						SelectGossipActiveQuest(index)
 						callMeAgain = true
 						break
@@ -872,7 +872,7 @@ function WoWPro:QuestDialogAutomation()
 				local index = 1
 				repeat
 					local item = select((index-1) * 6 + 1, GetGossipAvailableQuests())
-					if item == step then
+					if item and item:trim() == step then
 						SelectGossipAvailableQuest(index)
 						callMeAgain = true
 						break
@@ -889,7 +889,7 @@ function WoWPro:QuestDialogAutomation()
 				local numActiveQuests = GetNumActiveQuests()
 				local step_index = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
 				for i=1, numActiveQuests do
-					if GetActiveTitle(i) == step then
+					if GetActiveTitle(i):trim() == step then
 						SelectActiveQuest(i)
 						callMeAgain = true
 						break
@@ -898,7 +898,7 @@ function WoWPro:QuestDialogAutomation()
 			elseif WoWProCharDB.AutoSelect and action == "A" then
 				local numAvailableQuests = GetNumAvailableQuests()
 				for i=1, numAvailableQuests do
-					if GetAvailableTitle(i) == step then
+					if GetAvailableTitle(i):trim() == step then
 						SelectAvailableQuest(i)
 						callMeAgain = true
 						break
@@ -910,7 +910,7 @@ function WoWPro:QuestDialogAutomation()
 		if QuestFrameProgressPanel:IsShown() then
 
 			-- Turnin the current quest automaticaly if applicable
-			if WoWProCharDB.AutoTurnin and WoWPro.action[step_index] == "T" and GetTitleText() == WoWPro.step[step_index] then
+			if WoWProCharDB.AutoTurnin and WoWPro.action[step_index] == "T" and GetTitleText():trim() == WoWPro.step[step_index] then
 				CompleteQuest()
 				callMeAgain = true
 			end
@@ -921,7 +921,7 @@ function WoWPro:QuestDialogAutomation()
 			-- Choose the reward automaticaly if there is only one choice
 			if WoWProCharDB.AutoTurnin and 
 				(WoWPro.action[step_index] == "T" or WoWPro.action[step_index] == "A") and
-				GetTitleText() == WoWPro.step[step_index] and
+				GetTitleText():trim() == WoWPro.step[step_index] and
 				GetNumQuestChoices() <= 1 then
 					GetQuestReward(1)
 					callMeAgain = true
@@ -933,7 +933,7 @@ function WoWPro:QuestDialogAutomation()
 			-- Accept the current quest automaticaly if applicable
 			if WoWProCharDB.AutoAccept and 
 				WoWPro.action[step_index] == "A" and 
-				GetTitleText() == WoWPro.step[step_index] and 
+				GetTitleText():trim() == WoWPro.step[step_index] and 
 				not WoWPro.optional[step_index] and -- Don' t automatically accept optional quests
 				not _G.QuestFrame.autoQuest -- No need to accept autoQuest since they are accepted automatically
 			then 
