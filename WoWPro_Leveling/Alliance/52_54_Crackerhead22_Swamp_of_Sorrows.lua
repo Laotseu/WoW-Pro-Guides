@@ -76,7 +76,7 @@ WoWPro:GuideIcon(guide,"ACH",4904)
 WoWPro:GuideSteps(guide, function()
 return [[
 
-A Hero's Call: Swamp of Sorrows!|QID|28675|N|From the Hero's Call Boards in Ironforge or Stormwind. This is optional, if you are already near the Swamp of Sorrows, just skop it.|O|
+A Hero's Call: Swamp of Sorrows!|QID|28675|N|From the Hero's Call Boards in Ironforge or Stormwind. This is optional, if you are already near the Swamp of Sorrows or if you are above level 55, just skop it.|O|
 T Hero's Call: Swamp of Sorrows!|QID|28675|M|73.07,14.74|N|To Trade Baron Silversnap in Bogpaddle. The way to get there if you don't have the flight path is to use the road to the East of Morgan Vigil in the Burning Steppes.|
 A Maliciously Delicious|QID|27587|M|73.07,14.74|N|From Trade Baron Silversnap.|
 f Bogpaddle|mM|72.09,12.05|N|At Skeezie.|
