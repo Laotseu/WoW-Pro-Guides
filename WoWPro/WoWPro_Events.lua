@@ -859,7 +859,7 @@ function WoWPro:QuestDialogAutomation()
 				local index = 1
 				repeat
 					local item = select((index-1) * 5 + 1, GetGossipActiveQuests())
-					if item:trim() == step then
+					if item and item:trim() == step then
 						SelectGossipActiveQuest(index)
 						callMeAgain = true
 						break
