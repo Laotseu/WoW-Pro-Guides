@@ -45,6 +45,7 @@ function WoWPro.WorldEvents:OnDisable()
 	if WoWPro.Guides[WoWProDB.char.currentguide] and WoWPro.Guides[WoWProDB.char.currentguide].guidetype == "WorldEvents" then
 		WoWPro:RemoveMapPoint()
 		WoWProDB.char.lastWorldEventsguide = WoWProDB.char.currentguide
+		WoWProDB.char.currentguide = nil
 		WoWPro:LoadGuide()
 	end
 end
@@ -63,6 +64,7 @@ function WoWPro.WorldEvents:RegisterGuide(GIDvalue, zonename, guidename, categor
 
 	WoWPro.Guides[GIDvalue] = {
 		guidetype = "WorldEvents",
+		GID = GIDvalue,
 		zone = zonename,
 		name = guidename,
 		category = categoryname,
@@ -71,6 +73,13 @@ function WoWPro.WorldEvents:RegisterGuide(GIDvalue, zonename, guidename, categor
 		faction = factionname
 	}
 end
+
+
+function WoWPro.WorldEvents:GuideHoliday(guide,holiday)
+    -- The holiday needs to be a word to match the texture returned from the CalendarGetHolidayInfo() function 
+    guide['holiday']=holiday
+end
+
 
 function WoWPro.WorldEvents:LoadAllGuides()
     self:Print("Test Load of WorldEvents Guides")
@@ -95,10 +104,10 @@ function WoWPro.WorldEvents:LoadAllGuides()
 end	    
 
 -- Empty function to allow the guide to load properly
-function WoWPro.WorldEvents:GuideHoliday( guide, holiday )
+--function WoWPro.WorldEvents:GuideHoliday( guide, holiday )
 	-- body
-	guide.category = holiday
-end
+--	guide.category = holiday
+--end
 
 function WoWPro.WorldEvents:GuideZone( guide, zone )
 	-- body

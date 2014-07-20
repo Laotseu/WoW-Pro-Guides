@@ -6,30 +6,43 @@ WoWPro.WorldEvents.GuideList = {}
   
 -- Creating a Table of Guides for the Guide List and sorting based on name --
 local guides = {}
-for guidID,guide in pairs(WoWPro.Guides) do
-  if guide.guidetype == "WorldEvents" then
-    local function progress ()
-	    if WoWProCharDB.Guide[guidID] and WoWProCharDB.Guide[guidID].progress and WoWProCharDB.Guide[guidID].total then
-	        return WoWProCharDB.Guide[guidID].progress.."/"..WoWProCharDB.Guide[guidID].total
-	    end
-	    return ""
-	end	
-	guide.name = guide.zone
-	guide.zone = guide.realzone or ""
-  	table.insert(guides, {
-  		GID = guidID,
-  		guide = guide,
-		Zone = guide.zone,
-		Name = guide.name,
-		Author = guide.author,
-		Category = guide.category,
-		Progress = progress,
-		Range = "("..tostring(guide.startlevel).."-"..tostring(guide.endlevel)..")",
-  	})
-  	end
-  end
-table.sort(guides, function(a,b) return (a.Name or "") < (b.Name or "") end)
-WoWPro.WorldEvents.GuideList.Guides = guides  
+
+local function AddInfo(guide)
+    if not guide.holiday then
+        WoWPro.WorldEvents:Error("Guide %s: missing holiday",guide.GID)
+        guide.name = "Unknown"
+        guide.category = ""
+        return
+    end
+    guide.name = guide.holiday
+    guide.category = ""
+end
+
+local function Init()
+    for guidID,guide in pairs(WoWPro.Guides) do
+      if guide.guidetype == "WorldEvents" then
+        local function progress ()
+    	    if WoWProCharDB.Guide[guidID] and WoWProCharDB.Guide[guidID].progress and WoWProCharDB.Guide[guidID].total then
+    	        return WoWProCharDB.Guide[guidID].progress.."/"..WoWProCharDB.Guide[guidID].total
+    	    end
+    	    return ""
+    	end
+    	AddInfo(guide)
+      	table.insert(guides, {
+      		GID = guidID,
+    		--Zone = guide.zone,
+    		guide = guide,
+    		Name = guide.zone,
+    		Author = guide.author,
+    		Category = guide.category,
+    		Progress = progress,
+        Holiday = guide.holiday
+      	})
+      	end
+      end
+    table.sort(guides, function(a,b) return a.Name < b.Name end)
+    WoWPro.WorldEvents.GuideList.Guides = guides  
+end
 
 -- Sorting Functions --
 local sorttype = "Default"
@@ -56,21 +69,33 @@ local function nameSort()
   	end
 end
 local function categorySort()
-	if sorttype == "CategoryAsc" then
-		table.sort(guides, function(a,b) return a.Category > b.Category end)
-		WoWPro.WorldEvents:UpdateGuideList()
-		sorttype = "CategoryDesc"
-	else
-		table.sort(guides, function(a,b) return a.Category < b.Category end)
-		WoWPro.WorldEvents:UpdateGuideList()
-		sorttype = "CategoryAsc"
-	end
+  if sorttype == "CategoryAsc" then
+    table.sort(guides, function(a,b) return a.Category > b.Category end)
+    WoWPro.WorldEvents:UpdateGuideList()
+    sorttype = "CategoryDesc"
+  else
+    table.sort(guides, function(a,b) return a.Category < b.Category end)
+    WoWPro.WorldEvents:UpdateGuideList()
+    sorttype = "CategoryAsc"
+  end
+end
+local function holidaySort()
+  if sorttype == "HolidayAsc" then
+    table.sort(guides, function(a,b) return a.Holiday > b.Holiday end)
+    WoWPro.WorldEvents:UpdateGuideList()
+    sorttype = "HolidayDesc"
+  else
+    table.sort(guides, function(a,b) return a.Holiday < b.Holiday end)
+    WoWPro.WorldEvents:UpdateGuideList()
+    sorttype = "HolidayAsc"
+  end
 end
   
   
   
 -- Describe the table to the Core Module
-WoWPro.WorldEvents.GuideList.Format={{"Name",0.35,nameSort},{"Category",0.20,categorySort},{"Author",0.20,authorSort},{"Progress",0.15,nil}}
+WoWPro.WorldEvents.GuideList.Format={{"Name",0.35,nameSort},{"Holiday",0.20,holidaySort},{"Author",0.20,authorSort},{"Progress",0.15,nil}}
+WoWPro.WorldEvents.GuideList.Init = Init
   
 WoWPro.WorldEvents:dbp("Guide Setup complete")
   
