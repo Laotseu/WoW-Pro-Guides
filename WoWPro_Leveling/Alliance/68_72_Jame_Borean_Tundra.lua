@@ -585,12 +585,12 @@ T Hatching a Plan |QID|11936|N|To Raelorasz.|M|33.31,34.53|
 A Drake Hunt |QID|11919|N|From Raelorasz.|M|33.31,34.53|
 T Springing the Trap |QID|11969|N|To Raelorasz.|M|33.31,34.53|
 T Reading the Meters |QID|11900|N|To Archmage Berinand.|M|32.95,34.40|
-C Drake Hunt |QID|11919|T|Nexus Drake Hatchling,use item:35506|N|Find a Nexus Drake Hatchling flying around to the west of the Nexus. Use Raelorasz's Spear on it and tank it until it becomes friendly (about 10 seconds). Ride back to the Transitus Shield quickly, you have 3 minutes to turn this quest in.|M|23,26|
+C Drake Hunt |QID|11919|T|Nexus Drake Hatchling;use item:35506|N|Find a Nexus Drake Hatchling flying around to the west of the Nexus. Use Raelorasz's Spear on it and tank it until it becomes friendly (about 10 seconds). Ride back to the Transitus Shield quickly, you have 3 minutes to turn this quest in.|M|23,26|
 T Drake Hunt |QID|11919|N|To Raelorasz.|M|33.31,34.53|
 A Cracking the Code |QID|11931|N|From Raelorasz.|M|33.31,34.53|
 ;N Drake Hunt |QID|12117|N|Drake Hunt is now a repeatable daily quest. You may pick it up again and if you wish and do it again after the next step.|
 A Drake Hunt |QID|11940|DAILY|O|N|Drake Hunt is now a repeatable daily quest. You may pick it up again.\n\nFrom Raelorasz.|M|33.31,34.53|
-C Drake Hunt |QID|11940|T|Nexus Drake Hatchling,use item:35506|N|Find a Nexus Drake Hatchling flying around to the west of the Nexus. Use Raelorasz's Spear on it and tank it until it becomes friendly (about 10 seconds). Ride back to the Transitus Shield quickly, you have 3 minutes to turn this quest in.|M|23,26|
+C Drake Hunt |QID|11940|T|Nexus Drake Hatchling;use item:35506|N|Find a Nexus Drake Hatchling flying around to the west of the Nexus. Use Raelorasz's Spear on it and tank it until it becomes friendly (about 10 seconds). Ride back to the Transitus Shield quickly, you have 3 minutes to turn this quest in.|M|23,26|
 T Drake Hunt |QID|11940|N|To Raelorasz.|M|33.31,34.53|
 C Cracking the Code |QID|11931|S|QO|Shimmering Rune: 3/3|N|Kill Coldarra Spellbinders around him until you get 3 Shimmering Runes.|M|32.77,27.84|
 K Inquisitor Caleras |QID|11931|T|Inquisitor Caleras|QO|Azure Codex: 1/1|N|Kill Inquisitor Caleras to the north and loot the Azure Codex. |M|32.77,27.84|

@@ -127,9 +127,9 @@ T Minor Distractions|QID|25710|M|60.13,13.67|N|To Quartermaster Lungertz.|
 A Eliminate the Okril'lon|QID|25711|M|60.13,13.67|N|From Quartermaster Lungertz.|
 A Nethergarde Reigns|QID|25712|M|60.18,13.58|N|From Leyan Steelson.|
 A Remove Their Arms|QID|25713|M|60.35,13.77|N|From Buttonwillow McKittrick.|
-C Curtail the Darktail|QID|25709|S|T|Darktail Bonepicker,use item:57119|M|68.54,32.58|N|Use the bow on the vultures as you go along, has about 100 yard range.|
+C Curtail the Darktail|QID|25709|S|T|Darktail Bonepicker;use item:57119|M|68.54,32.58|N|Use the bow on the vultures as you go along, has about 100 yard range.|
 C Our Fallen Friends|QID|25708|M|68.54,33.33|N|Kill any Drowned Gilnean you see to release them.|
-C Curtail the Darktail|QID|25709|US|T|Darktail Bonepicker,use item:57119|M|68.54,32.58|N|Kill any vultures you need left.|
+C Curtail the Darktail|QID|25709|US|T|Darktail Bonepicker;use item:57119|M|68.54,32.58|N|Kill any vultures you need left.|
 T Our Fallen Friends|QID|25708|M|61.59,18.71|N|To Enohar Thunderbrew.|
 T Curtail the Darktail|QID|25709|M|61.59,18.71|N|To Enohar Thunderbrew.|
 
