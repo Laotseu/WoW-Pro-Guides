@@ -173,7 +173,7 @@ T Tools to Get the Job Done |QID|11475|M|75.1,65.5|N|To Walt.|
 A We Have the Technology |QID|11484|M|75.1,65.5|N|From Walt.|
 A We Can Rebuild It |QID|11483|M|75.1,65.5|N|From Walt.|
 C Pristine Shoveltusk Hide|QID|11484|N|Kill Shoveltusks until this drops.|M|72.6,64|S|QO|1|
-C The Ransacked Caravan |QID|11465|T|Fjord Turkey,use item:34111|N|Go here to the Fjord Turkeys and use your Trained Rock Falcon on them until the quest completes. If you have a pet, either dismiss it or put it on passive.|M|69.25,64.60|
+C The Ransacked Caravan |QID|11465|T|Fjord Turkey;use item:34111|N|Go here to the Fjord Turkeys and use your Trained Rock Falcon on them until the quest completes. If you have a pet, either dismiss it or put it on passive.|M|69.25,64.60|
 T Harpoon Master Yavus |QID|11430|M|64.4,47.0|N|To Lieutenant Icehammer.|
 A It Goes to 11... |QID|11421|M|64.4,47.0|N|From Lieutenant Icehammer.|
 C Steel Ribbing |S|QID|11484|QO|2|N|Kill Dragonflayer Warriors and Rune-Seers until you find a Steel Ribbing.|M|68.63,54.41|
@@ -249,7 +249,7 @@ A Mage-Lieutenant Malister |QID|11187|M|28.8,44.1|N|From Captain Adams.|
 T Mage-Lieutenant Malister |QID|11187|M|28.9,44.2|N|To Mage-Lieutenant Malister.|
 A Two Wrongs... |QID|11188|M|28.9,44.2|N|From Mage-Lieutenant Malister.|
 T Shoveltusk Soup Again? |QID|11155|M|31.2,40.8|N|To Chef Kettleblack.|
-C Two Wrongs... |QID|11188| |T|Proto-Drake,use item:33119|N|Using Malister's Frost Wand, lure Proto-Drakes down to the ground and kill them. |M|39.04,48.78|
+C Two Wrongs... |QID|11188| |T|Proto-Drake;use item:33119|N|Using Malister's Frost Wand, lure Proto-Drakes down to the ground and kill them. |M|39.04,48.78|
 T Two Wrongs... |QID|11188|M|28.9,44.2|N|To Mage-Lieutenant Malister.|
 A Report to Scout Knowles |QID|11199|M|28.8,44.1|N|From Captain Adams.|
 r Sell junk, repair, re-stock food/drink. |QID|11199|M|29.83,42.60|
@@ -467,7 +467,7 @@ T The Rune of Command |QID|11348|M|62.3,17.2|N|To Prospector Belvar.|
 T Preying Upon the Weak |QID|11292|M|62.6,16.8|N|To Trapper Jethan.|
 T Down to the Wire |QID|11269|M|62.6,16.8|N|To Gil Grisert.|
 A We Call Him Steelfeather |QID|11418|M|62.6,16.8|N|From Gil Grisert.|
-C We Call Him Steelfeather |QID|11418|NC|T|Steelfeather,use item:34026|N|Target Steelfeather (/tar Steel), then use the Feathered Charm and wait for the quest complete message.|
+C We Call Him Steelfeather |QID|11418|NC|T|Steelfeather;use item:34026|N|Target Steelfeather (/tar Steel), then use the Feathered Charm and wait for the quest complete message.|
 T We Call Him Steelfeather |QID|11418|M|62.6,16.8|N|To Gil Grisert.|
 r Sell junk, repair, re-stock food/drink. |QID|11322|M|61.01,17.07|
 H Westguard Inn |QID|11322|N|Hearth back to Westguard Keep.|

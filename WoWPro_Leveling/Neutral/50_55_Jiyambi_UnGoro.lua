@@ -90,7 +90,7 @@ A The Scent of Lar'korwi|RANK|2|QID|24732|PRE|24731|M|71.20,76.46|N|From Torwa P
 T Claws of White|QID|24719|M|70.76,76.39|N|To Garl Stormclaw.|
 
 A Carried on the Waves|QID|24686|PRE|24719|M|70.76,76.39|N|From Garl Stormclaw.|
-C Carried on the Waves|QID|24686|T|Bloodpetal Seed,use item:50441|U|50441|M|73.13,62.00|N|Get into the river and swim north, looking for tiny orange spores under the water. Use the net when you are near them to gather them.|
+C Carried on the Waves|QID|24686|T|Bloodpetal Seed;use item:50441|U|50441|M|73.13,62.00|N|Get into the river and swim north, looking for tiny orange spores under the water. Use the net when you are near them to gather them.|
 C The Scent of Lar'korwi|QID|24732|M|71.48,60.17;67.42,60.68;67.01,62.55;66.61,66.62;67.31,72.94|CN|N|Look for nests. Once you stand on them, a Mate will appear - kill and loot it.|
 T Carried on the Waves|QID|24686|M|71.04,76.62|N|To Garl Stormclaw.|
 A Flowing to the North|QID|24689|PRE|24686|M|71.04,76.62|N|From Garl Stormclaw.|

@@ -116,7 +116,7 @@ T When the Going Gets Tough, Cheat|QID|27775|M|64.35,37.97|N|To Garyanne Fleezle
 A It's Goat Time, Baby|QID|27776|M|64.47,37.93|N|From Garyanne Fleezlebop.|
 T Easily Swayed|QID|27774|M|65.06,38.26|N|To Dolph Blastus.|
 A A Strange Request|QID|27764|M|65.06,38.26|N|From Dolph Blastus.|
-C It's Goat Time, Baby|QID|27776|T|Billy Goat,use item:62397|M|61.45,36.83|N|Have fun sending 12 Billy Goats off the edge of the cliff.  There is a timed achievement requiring 12 in a minute as well.|NC|
+C It's Goat Time, Baby|QID|27776|T|Billy Goat;use item:62397|M|61.45,36.83|N|Have fun sending 12 Billy Goats off the edge of the cliff.  There is a timed achievement requiring 12 in a minute as well.|NC|
 T It's Goat Time, Baby|QID|27776|M|64.34,38.14|N|To Garyanne Fleezlebop.|
 
 T A Strange Request|QID|27764|M|66.36,55.30|N|To Rhea. Unless you plan on jumping off the cliff, take either path down and cut through the valley.|

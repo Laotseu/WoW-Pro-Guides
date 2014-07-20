@@ -315,11 +315,11 @@ C Receive the First Prophecy|N|Kill Grishna mobs if you need to get the buff aga
 C Receive the Fourth Prophecy |N|Kill Grishna mobs if you need to get the buff again. Go to this spot for the Fourth Prophecy.|QID|10607|QO|4|M|40.18,22.99|
 ;l Orb of the Grishna |QID|10825|N|Kill Grishna mobs until you get the Orb of the Grishna.|L|31489 1|US|M|40.18,22.99|
 A The Truth Unorbed |N|Kill Grishna mobs until you get the Orb of the Grishna. Right-click the orb to start this quest.|QID|10825|US|M|40.2,23.0|U|31489|
-C Whelps of the Wyrmcult |N|Capture the Blackwhelps for this quest by using the Blackwhelp Net.|QID|10747|M|32.3,34.9|S|T|Wyrmcult Blackwhelp,use item:31129|
+C Whelps of the Wyrmcult |N|Capture the Blackwhelps for this quest by using the Blackwhelp Net.|QID|10747|M|32.3,34.9|S|T|Wyrmcult Blackwhelp;use item:31129|
 l Costume Scraps |QID|10722|N|Go in the cave here and kill Wyrmcult mobs until you get 5 Costume Scraps.|L|31121 5|M|32.04,33.94|
 U Costume Scraps|QID|10722|N|Use the scraps to get an Overseer Disguise.|U|31121|M|32.00,33.00|L|31122|
 C Meeting at the Blackwing Coven|N|Use the Overseer Costume. Talk to Korphis Darkscale.|QID|10722|CHAT|M|32.66,37.52|U|31122|
-C Whelps of the Wyrmcult |N|Capture the rest of the Blackwhelps for this quest by using the Blackwhelp Net.|QID|10747|M|32.3,34.9|US|T|Wyrmcult Blackwhelp,use item:31129|
+C Whelps of the Wyrmcult |N|Capture the rest of the Blackwhelps for this quest by using the Blackwhelp Net.|QID|10747|M|32.3,34.9|US|T|Wyrmcult Blackwhelp;use item:31129|
 
 H Evergrove |QID|10607|N|Hearth to Evergrove.|M|62.84,38.35|
 T Whispers of the Raven God |QID|10607|M|62.2,39.1|N|To Timeon.|

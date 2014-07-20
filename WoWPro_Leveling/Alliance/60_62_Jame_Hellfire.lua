@@ -399,7 +399,7 @@ C Free Aylaan |N|Free Aylaan here.|QID|10368|CHAT|QO|Aylaan Freed: 1/1|M|13.00,5
 C Free Akoru |N|Free Akoru here.|QID|10368|CHAT|QO|Akoru Freed: 1/1|M|15.50,58.75|
 T The Dreghood Elders |QID|10368|M|16.3,65.1|N|To Naladu.|
 A Arzeth's Demise |QID|10369|M|16.3,65.1|N|From Naladu.|
-K Arzeth |N|Use the Staff of the Dreghood Elders on Azreth to turn him into a non-elite, then kill him.|QID|10369|T|Arzeth the Merciless,use item:29513|M|14.25,61.50|
+K Arzeth |N|Use the Staff of the Dreghood Elders on Azreth to turn him into a non-elite, then kill him.|QID|10369|T|Arzeth the Merciless;use item:29513|M|14.25,61.50|
 T Arzeth's Demise |QID|10369|M|16.3,65.1|N|To Naladu.|
 C Sha'naar Relics |N|Grab the 10 relics needed for this quest.|QID|9430|M|15.1,55.7|US|NC|
 C Cruel Taskmasters |N|Kill the 10 Taskmasters needed for this quest.|QID|9399|M|15.1,55.7|US|

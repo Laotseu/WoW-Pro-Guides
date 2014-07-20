@@ -200,8 +200,8 @@ C Still At It |QID|12644|NC|N|Stand where you can reach everything at the still 
 T Still At It |QID|12644|N|To Grimbooze Thunderbrew.|M|26.8,60.1|
 
 A The Taste Test |QID|12645|N|From Grimbooze Thunderbrew.|M|26.8,60.1|
-C Hadrius' taste test|QID|12645|NC|T|Hadrius Harlowe,use item:38697|N|Use the Jungle Punch Sample on Hadrius Harlowe for his taste test.|M|27.31,59.41|QO|Hadrius' taste test: 1/1|
-C Hemet's taste test|QID|12645|NC|T|Hemet Nesingwary,use item:38697|N|Use the Jungle Punch Sample on Hemet Nesingwary for his taste test.|M|27.1,58.67|QO|Hemet's taste test: 1/1|
+C Hadrius' taste test|QID|12645|NC|T|Hadrius Harlowe;use item:38697|N|Use the Jungle Punch Sample on Hadrius Harlowe for his taste test.|M|27.31,59.41|QO|Hadrius' taste test: 1/1|
+C Hemet's taste test|QID|12645|NC|T|Hemet Nesingwary;use item:38697|N|Use the Jungle Punch Sample on Hemet Nesingwary for his taste test.|M|27.1,58.67|QO|Hemet's taste test: 1/1|
 C Crocolisk Mastery: The Plan |QID|12560|NC|N|Gather ferns along the banks of the river.|M|34.7,41.5|
 T Crocolisk Mastery: The Plan |QID|12560|N|To Debaar, at Nesingwary Base Camp.|M|27.21,59.86|
 
@@ -212,7 +212,7 @@ T Rhino Mastery: The Kill |QID|12556| |N|To Hemet Nesingwary, in Nesingwary Base
 A Lakeside Landing |QID|12651|N|From Hemet Nesingwary.|M|27.09,58.72|
 T Dreadsaber Mastery: Ready to Pounce |QID|12558|N|To Buck Cantwell.|M|26.7,59.0|
 
-C The Taste Test |QID|12645|NC|T|Tamara Wobblesprocket,use item:38697|QO|3|N|Give a sample to Tamara at Lakeside Landing.|M|50.44,62.10|
+C The Taste Test |QID|12645|NC|T|Tamara Wobblesprocket;use item:38697|QO|3|N|Give a sample to Tamara at Lakeside Landing.|M|50.44,62.10|
 T Lakeside Landing |QID|12651|N|To Tamara Wobblesprocket.|
 
 A The Part-time Hunter |QID|12654|N|From Tamara Wobblesprocket.|M|50.5,62.1|

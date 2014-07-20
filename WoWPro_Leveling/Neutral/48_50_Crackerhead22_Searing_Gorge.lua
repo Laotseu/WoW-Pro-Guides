@@ -182,7 +182,7 @@ A Lunk's Adventure: Cranky Little Dwarfs|QID|27983|M|36.63,36.89|N|Kill a Dark I
 C Curse These Fat Fingers|QID|27976|M|39.22,41.08|N|Kill Heavy War Golems.|S|
 C Heat That Just Don't Quit|S|QID|27981|U|62826|M|31.15,43.81;39.07,41.43;42.88,35.89|CN|N|Use the Furnace Flasks on the Elementals at the start of the fight.|
 C Lunk's Adventure: Cranky Little Dwarfs|QID|27983|S|M|38.72,49.87|N|Get the Dark Iron Steamsmiths down below 50% health. He will sit on the dwarves, when he gets up you will get a random item. Including the items needed for "Recon Essentials".|
-K Rasha'krak|QID|28099|T|Rasha'krak,use item:62826|M|31.15,43.81;39.07,41.43;42.88,35.89|CN|N|Rasha'krak wanders between these waypoints. Use the "Furnace Flasks" on him at the start.|
+K Rasha'krak|QID|28099|T|Rasha'krak;use item:62826|M|31.15,43.81;39.07,41.43;42.88,35.89|CN|N|Rasha'krak wanders between these waypoints. Use the "Furnace Flasks" on him at the start.|
 C Lunk's Adventure: Cranky Little Dwarfs|QID|27983|US|M|38.72,49.87|N|Finish having Lunk put the Dark Iron Steamsmiths to sleep.|
 C Recon Essentials|QID|27977|M|36.29,47.13|N|Kill Dark Iron Steamsmiths until the two items needed drop, if they did not drop during "Lunk's Adventure: Cranky Little Dwarfs".|
 T Lunk's Adventure: Cranky Little Dwarfs|QID|27983|M|38.72,49.87|N|(UI Alert).|

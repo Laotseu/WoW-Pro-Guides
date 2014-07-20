@@ -216,7 +216,7 @@ C The Westfall Brigade|QID|26287|M|51.30,53.34|N|Kill Riverpaw Brutes and Bandit
 C In Defense of Westfall|QID|26286|M|53.42,49.31|N|Kill and loot the Riverpaw Brutes and Bandits until one drops the Gnoll Attack Orders.|
 C The Westfall Brigade|QID|26287|M|51.30,53.34|N|Finish killing the Riverpaw Brutes and Bandits.|US|
 
-C Feeding the Hungry and the Hopeless|QID|26271|NC|T|Homeless Stormwind Citizen,use item:57991|M|58.00,39.75|N|Run around outside the wall and use the Westfall Stew near the Homeless. They will come to you.|
+C Feeding the Hungry and the Hopeless|QID|26271|NC|T|Homeless Stormwind Citizen;use item:57991|M|58.00,39.75|N|Run around outside the wall and use the Westfall Stew near the Homeless. They will come to you.|
 
 T In Defense of Westfall|QID|26286|M|56.30,47.59|N|To Marshal Gryan Stoutmantle.|
 

@@ -861,7 +861,9 @@ function WoWPro:RowUpdate(offset)
 		if target then
 			row.targetbutton.tooltip_text = target
 		    local mtext
-		    local target, emote = string.split(",",target)
+		    --local target, emote = string.split(";",target)
+		    local target, emote = target:match("([^;]*)[;](.*)")
+		    if not target then target = row.targetbutton.tooltip_text end
 			row.targetbutton:Show()
 			if emote then
 			   mtext = target:gsub("\\n","\n")

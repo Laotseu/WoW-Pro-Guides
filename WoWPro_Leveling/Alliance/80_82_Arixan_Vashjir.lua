@@ -566,9 +566,9 @@ A Clear Goals|QID|25748|PRE|25747|M|38.7,78.4|Z|Shimmering Expanse|N|From Admira
 A Not Entirely Unprepared|QID|25749|M|33.19,68.33|Z|Shimmering Expanse|N|From Captain Taylor.|
 A Properly Inspired|QID|25751|PRE|25747|M|33,69.2|Z|Shimmering Expanse|N|From Engineer Hexascrub.|
 C Properly Inspired|QID|25751|NC|S|M|30.7,82.6|Z|Shimmering Expanse|N|Find 8 Bloated Kelp Bulbs.|
-C Not Entirely Unprepared|QID|25749|S|NC|T|Alliance Lookout,use item:56247|M|31.8,75|Z|Shimmering Expanse|N|Use the Box of Crossbow Bolts while targeting Alliance Lookouts.|
+C Not Entirely Unprepared|QID|25749|S|NC|T|Alliance Lookout;use item:56247|M|31.8,75|Z|Shimmering Expanse|N|Use the Box of Crossbow Bolts while targeting Alliance Lookouts.|
 C Clear Goals|QID|25748|M|28.3,81.6;37.2,79.1|Z|Shimmering Expanse|CN|N|Kill 10 of the naga forces at the south end of the ruins.|
-C Not Entirely Unprepared|QID|25749|US|NC|T|Alliance Lookout,use item:56247|M|31.8,75|Z|Shimmering Expanse|N|Use the Box of Crossbow Bolts while targeting Alliance Lookouts.|
+C Not Entirely Unprepared|QID|25749|US|NC|T|Alliance Lookout;use item:56247|M|31.8,75|Z|Shimmering Expanse|N|Use the Box of Crossbow Bolts while targeting Alliance Lookouts.|
 C Properly Inspired|QID|25751|NC|US|M|30.7,82.6|Z|Shimmering Expanse|N|Find remaining Bloated Kelp Bulbs.|
 T Properly Inspired|QID|25751|M|33,69.2|Z|Shimmering Expanse|N|To Engineer Hexascrub.|
 T Not Entirely Unprepared|QID|25749|M|33.19,68.33|Z|Shimmering Expanse|N|To Captain Taylor.|
