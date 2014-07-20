@@ -234,7 +234,7 @@ C Speak with Asaq|QID|28134|M|49.66,39.13|QO|Speak with Asaq: 1/1|N|Speak to Asa
 A Take it to 'Em!|QID|27993|M|49.68,39.03|N|From Mack.|
 
 C Speak with Nomarch Teneth|QID|28134|M|60.21,38.33|N|Speak to Nomarch and say "King Phaoris sent me to ask you about Neferset activity".|CHAT|QO|Speak with Nomarch Teneth: 1/1|
-A Thieving Little Pluckers|QID|28250|M|60.21,38.33|N|From Nomarch Teneth.|
+A Thieving Little Pluckers|QID|28250|DAILY|M|60.21,38.33|N|From Nomarch Teneth.|
 C Thieving Little Pluckers|QID|28250|U|63351|M|58.60,39.58|N|To the south by the trees. Stand near them, and use the Tahret Dynasty Mallet to kill them.|
 T Thieving Little Pluckers|QID|28250|M|60.25,38.32|N|To Nomarch Teneth.|
 
@@ -249,13 +249,13 @@ C Premature Explosionation|QID|27141|M|64.35,22.29|N|Right-click the Powder Keg,
 T Premature Explosionation|QID|27141|M|64.59,28.60|N|To Harrison Jones.|
 
 A Field Work|QID|27179|M|64.59,28.60|N|From Sand Pygmy Corpse.|
-C Field Work|QID|27179|N|Kill Sand Pygmies and loot Ornate Tablet Fragments. You can also find them lying around in this area.|S|
+C Field Work|QID|27179|NC|N|Kill Sand Pygmies and loot Ornate Tablet Fragments. You can also find them lying around in this area.|S|
 A Just the Tip|QID|27176|M|64.85,29.53|N|From the Elaborate Disc.|
 A Do the World a Favor|QID|27187|M|65.4,30.8|N|Kill a Mangy Hyena or Skarf to be offered this quest.|
 C Do the World a Favor|QID|27187|N|Kill Mangy Hyenas.|S|
 K Sultan Oogah|QID|27176|M|68.08,31.51|T|Sultan Oogah|N|Kill and loot Sultan Oogah for the Sultan's Staff.|
 C Just the Tip|QID|27176|M|68.08,31.51|U|60859|N|Activate the Elaborate Disc to combine it with the Sultan's Staff to create the Shaft of the Stars.|NC|
-C Field Work|QID|27179|M|63.50,31.33|N|Continue to obtain the Ornate Tablet Fragments from either the floor or by killing the Sand Pygmies.|US|
+C Field Work|QID|27179|NC|M|63.50,31.33|N|Continue to obtain the Ornate Tablet Fragments from either the floor or by killing the Sand Pygmies.|US|
 C Do the World a Favor|QID|27187|M|66.78,26.76;63.34,26.99|CN|N|Kill Mangy Hyenas.|US|
 
 T Do the World a Favor|QID|27187|M|64.60,28.65|N|(UI Alert)|
@@ -335,9 +335,10 @@ T The Prophet's Dying Words|QID|27602|M|39.66,45.38|N|"Talk" to the Sand-Covered
 
 A Colossal Guardians|QID|27623|M|39.66,45.38|N|From the Sand-Covered Hieroglyph.|
 
+C Under the Choking Sands|QID|27519|S|NC|M|40.63,39.15|N|Right-click Oasis Survivors to rescue them.|
 C Colossal Guardians|QID|27623|M|41.19,37.73|N|Right-click the Colossus of the Moon, kill it and loot the Stone of the Moon.|QO|Stone of the Moon: 1/1|
 C Colossal Guardians|QID|27623|M|39.60,40.88|N|Right-click the Colossus of the Sun, kill it and loot the Stone of the Sun.|
-C Under the Choking Sands|QID|27519|M|40.63,39.15|N|Right-click Oasis Survivors to rescue them.|US|NC|
+C Under the Choking Sands|QID|27519|US|NC|M|40.63,39.15|N|Right-click Oasis Survivors to rescue them.|
 C Minions of Al'Akir|QID|27520|M|41.07,38.47|US|N|Finish killing Scions of Al'Akir.|RANK|2|
 
 T Colossal Guardians|QID|27623|M|39.65,45.38|N|To the Sand-Covered Hieroglyph.|
@@ -350,7 +351,7 @@ T Under the Choking Sands|QID|27519|M|45.27,37.84|N|To General Ammantep.|US|
 
 A Send Word to Phaoris|QID|27628|M|45.23,37.95|N|From Prince Nadun.|
 T Minions of Al'Akir|QID|27520|M|45.23,37.95|N|To Prince Nadun.|RANK|2|
-A The Vortex Pinnacle|QID|28845|M|45.25,37.79|N|Inside the Instance, if you wish to do it. From General Ammantep.|RANK|2|
+A The Vortex Pinnacle|QID|28845|M|45.25,37.79|N|Inside the Instance, if you wish to do it. From General Ammantep.|RANK|2|O|
 
 T Send Word to Phaoris|QID|27628|M|54.79,32.72|N|To King Phaoris, then sit back and watch the cinematic.|
 
@@ -617,7 +618,7 @@ A Sending a Message|QID|28195|M|22.49,63.21|N|From Commander Schnottz.|
 C The Great Escape|QID|28194|M|25.13,68.24|S|N|Kill Schnottz Sea Troopers until you've looted 6 Fresh Sailor Uniforms.|
 K Captain Margun|QID|28195|T|Captain Margun|M|22.29,67.6|N|Kill Captain Margun who is standing on the bridge.|QO|Captain Margun Killed: 1/1|
 K Captain Cork|QID|28195|T|Captain Cork|M|24.88,68.98|N|Kill Captain Cork.|QO|Captain Cork Killed: 1/1|
-K Captain Kronk|QID|28195|T|Captain Kronk|M|26.05,68.71|N|Finally kill Captain Kronk.|QO|Captain Kronk Killed: 1/1|
+K Captain Kronkh|QID|28195|T|Captain Kronkh|M|26.05,68.71|N|Finally kill Captain Kronkh.|QO|Captain Kronkh Killed: 1/1|
 C The Great Escape|QID|28194|M|25.13,68.24|US|N|Kill Schnottz Sea Troopers until you've looted 6 Fresh Sailor Uniforms.|
 
 T The Great Escape|QID|28194|M|21.87,64.05|N|To the Prolific Writer.|
@@ -667,9 +668,9 @@ A Reduced Productivity|QID|28271|M|27.02,7.62|N|From Harrison Jones.|US|
 
 h Oasis of Vir'sar|QID|28272|M|26.65,7.29|N|At Yasmin.|
 
-C Missing Pieces|QID|28272|M|39.30,25.55|N|Loot Ancient Copper Scrolls, found Pillaged Loot Sacks on the ground around the Obelisk of the Moon. Ensure you have looted all the scrolls before killing the last Schnottz Employee|S|
+C Missing Pieces|QID|28272|NC|M|39.30,25.55|N|Loot Ancient Copper Scrolls, found Pillaged Loot Sacks on the ground around the Obelisk of the Moon. Ensure you have looted all the scrolls before killing the last Schnottz Employee|S|
 C Reduced Productivity|QID|28271|M|38.86,25.83|N|Kill Schnottz Employees around the Obelisk of the Moon. On killing the 15th, you will be shown a cinematic, and then returned to Oasis of Vir'sar|
-C Missing Pieces|QID|28272|M|39.30,25.55|N|Loot Ancient Copper Scrolls, found on the ground around the Obelisk of the Moon.|US|
+C Missing Pieces|QID|28272|NC|M|39.30,25.55|N|Loot Ancient Copper Scrolls, found on the ground around the Obelisk of the Moon.|US|
 
 T Missing Pieces|QID|28272|M|27.02,7.61|N|To Harrison Jones.|S|
 T Reduced Productivity|QID|28271|M|27.02,7.61|N|To Harrison Jones.|
@@ -679,7 +680,7 @@ A Stirred the Hornet's Nest|QID|28363|M|27.02,7.61|N|From Harrison Jones.|
 T Stirred the Hornet's Nest|QID|28363|M|29.55,21.92|N|To Sullah.|
 
 A Shroud of the Makers|QID|28367|M|29.55,21.92|N|From Sullah.|
-C Shroud of the Makers|QID|28367|U|63699|M|40.57,24.16|N|This time, use the Shroud of the Makers before entering the area around the Obelisk of the Moon. It will make you invisible but Myzerian will STILL see you, so stay away from that Dragon. It's pretty much like a rogue stealth, so you're not really invisible, you'll get detected if you walk too close to enemies, so be stealthy! Right-click 7 Schnottz Powder Kegs.|
+C Shroud of the Makers|QID|28367|NC|U|63699|M|40.57,24.16|N|This time, use the Shroud of the Makers before entering the area around the Obelisk of the Moon. It will make you invisible but Myzerian will STILL see you, so stay away from that Dragon. It's pretty much like a rogue stealth, so you're not really invisible, you'll get detected if you walk too close to enemies, so be stealthy! Right-click 7 Schnottz Powder Kegs.|
 T Shroud of the Makers|QID|28367|M|27.04,7.64|N|To Harrison Jones.|
 
 A Schnottz So Fast|QID|28402|M|27.04,7.64|N|From Harrison Jones.|

@@ -137,7 +137,7 @@ C Eliminate the Okril'lon|QID|25711|M|53.06,15.91|N|Kill Okril'lon Infantry.|S|
 C Remove Their Arms|QID|25713|S|U|57117|M|53.44,13.77|N|Throw the grenade at the sparkling boxes (has a minimum range)|NC|
 K Nethergarde Reigns|QID|25712|M|51.57,12.70|T|Captain Metlek|N|Slay Captain Metlek at the Nethergarde Supply Camp.|
 C Remove Their Arms|QID|25713|US|U|57117|M|53.44,13.77|N|Finish throwing grenades at the sparkling boxes.|NC|
-C Eliminate the Okril'lon|QID|25711|M|53.06,15.91|N|Finish killing the Okril'lon Infantry you need.|
+C Eliminate the Okril'lon|QID|25711|M|53.06,15.91|N|Finish killing the Okril'lon Infantry you need.|US|
 
 T Remove Their Arms|QID|25713|M|60.37,13.79|N|To Buttonwillow McKittrick.|
 T Nethergarde Reigns|QID|25712|M|60.17,13.56|N|To Leyan Steelson.|
@@ -213,7 +213,7 @@ T The Vile Blood of Demons|QID|26165|M|55.00,49.57|N|To Watcher Grimeo.|
 A Enhancing the Stone|QID|26166|M|54.99,49.57|N|From Watcher Grimeo.|
 T Protecting Our Rear|QID|26173|M|54.68,50.29|N|To Watch Commander Relthorn Netherwane.|
 A Watching Our Back|QID|26174|M|54.68,50.29|N|From Watch Commander Relthorn Netherwane.|
-C Watching Our Back|QID|26174|M|53.96,49.93|N|This can be very tricky to do. You have wait untill the patrollers backs are to you.|
+C Watching Our Back|QID|26174|NC|M|53.96,49.93|N|This can be very tricky to do. You have wait untill the patrollers backs are to you.|
 T Watching Our Back|QID|26174|M|54.70,50.35|N|To Watch Commander Relthorn Netherwane.|
 
 A Surwich|QID|26175|M|54.70,50.35|N|From Watch Commander Relthorn Netherwane.|
@@ -242,7 +242,7 @@ A Wormthorn's Dream|QID|26184|M|46.41,87.09|N|From Mayor Charlton Connisport.|
 f Surwich|M|47.10,89.20|N|At Graham McAllister.|
 h Surwich|QID|26184|M|44.42,87.70|N|Set your hearth with Donna Berrymore.|
 C Wormthorn's Dream|QID|26184|S|M|38.77,70|N|Kill any Doomguard Destoryer, Dreadlord Defilier, and Corrupted Darkwood Treant you see.|
-K Wormthorn's Dream|QID|26184|QO|Felspore Bog Lord slain: 3/3|M|38.77,70;34.6,75.9|CN|N|Go here to kill the Felspore Bog Lords.|
+K Wormthorn's Dream|QID|26184|QO|Felspore Bog Lord slain: 3/3|M|31.6,76.3|CN|N|Go here to kill the Felspore Bog Lords.|
 C Wormthorn's Dream|QID|26184|US|N|Kill any Doomguard Destoryer, Dreadlord Defilier, and Corrupted Darkwood Treant you need left.|
 T Wormthorn's Dream|QID|26184|M|46.45,87.02|N|To Mayor Charlton Connisport.|
 A Advice from the Cenarion Circle|QID|26185|M|46.45,87.02|N|From Mayor Charlton Connisport.|
@@ -263,7 +263,7 @@ T Demoniac Vessel|QID|26186|M|46.36,87.01|N|To Mayor Charlton Connisport.|
 A The Downfall of Marl Wormthorn|QID|26187|M|46.36,87.01|N|From Mayor Charlton Connisport.|
 K The Downfall of Marl Wormthorn|QID|26187|T|Marl Wormthorn|U|57185|M|34.84,68.11|N|Kill the demons around him then use the vessel to snap him out of his trance, then defeat him.|
 T The Downfall of Marl Wormthorn|QID|26187|M|46.34,87.06|N|To Mayor Charlton Connisport.|
-F Stormwind City|QID|28708|M|47.11,89.29|N|Fly to Stormwind to visit trainers, AH, sell junk and repair/restock.|
+F Stormwind|QID|28708|M|47.11,89.29|N|Fly to Stormwind to visit trainers, AH, sell junk and repair/restock.|
 L You should by now...|QID|28708|N|Between level 58-60 by now. If you are not level 60, I would suggest doing another zone or two to hit 60. That way you can fly in the Outlands. If you don't wish to do that, just close this step and the next guide will load.|
 
 ]]

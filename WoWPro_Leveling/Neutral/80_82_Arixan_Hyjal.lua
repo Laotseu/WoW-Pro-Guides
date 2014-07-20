@@ -227,9 +227,9 @@ h Trade District|QID|28825|M|60.36,75.20|Z|Stormwind City|N|At Innkeeper Allison
 A Hero's Call: Mount Hyjal!|QID|27726|M|62.9,71.7|Z|Stormwind City|N|From the Hero's Call Board.|FACTION|Alliance|
 T A Personal Summons|QID|28825|M|74.58,18.94|Z|Stormwind City|N|To Naraat the Earthspeaker.|FACTION|Alliance|
 A The Eye of the Storm|QID|28826|PRE|28825|M|74.58,18.94|Z|Stormwind City|N|From Naraat the Earthspeaker.|FACTION|Alliance|
-C The Eye of the Storm|QID|28826|M|74.43,19.25|Z|Stormwind City|N|Right click the water bowl behind you. Enjoy your first Cataclysm cinematic!|FACTION|Alliance|
+C The Eye of the Storm|QID|28826|NC|M|74.43,19.25|Z|Stormwind City|N|Right click the water bowl behind you. Enjoy your first Cataclysm cinematic!|FACTION|Alliance|
 T The Eye of the Storm|QID|28826|M|74.56,19.18|Z|Stormwind City|N|To Naraat the Earthspeaker.|FACTION|Alliance|
-C Hero's Call: Mount Hyjal!|QID|27726|NC|M|82.7,28.36|Z|Stormwind City|N|Talk to Cenarion Emissary Jademoon to get to Moonglade.|FACTION|Alliance|
+C Hero's Call: Mount Hyjal!|QID|27726|CHAT|M|82.7,28.36|Z|Stormwind City|N|Talk to Cenarion Emissary Jademoon to get to Moonglade.|FACTION|Alliance|
 T Hero's Call: Mount Hyjal!|QID|27726|M|45.3,44.8|Z|Moonglade|N|To Emissary Windsong.|FACTION|Alliance|
 
 A Warchief's Command: Mount Hyjal!|QID|27721|M|49.7,76.7|Z|Orgrimmar|N|Get the quest from the Warchief's Command Board from Orgrimmar.|FACTION|Horde|
@@ -344,7 +344,7 @@ A Gar'gol's Gotta Go|QID|25328|M|27.26,40.75|N|From Kristoff Manheim.|
 K Gar'gol's Gotta Go|QID|25328|T|Gar'gol|M|26.39,38.69|N|Kill Gar'gol then loot the Rusty Skull Key from Gar'gol's Personal Treasure Chest.|
 T Mastering Puppets|QID|25301|RANK|2|M|25.83,41.56|N|From the entrance take your first left and then at the next split take a right. Continue straight until you reach a pedestal with a book on it.|
 A Elementary!|QID|25303|PRE|25301|RANK|2|M|25.81,41.56|N|From The Twilight Apocrypha.|
-C Elementary!|QID|25303|RANK|2|M|25.89,41.58|N|Activate the four orbs in the following order: Crucible of Fire, Crucible of Earth, Crucible of Air, Crucible of Water. This will summon The Manipulator. Kill him to complete the quest.|
+C Elementary!|QID|25303|RANK|2|M|25.89,41.58|N|Activate the four orbs in the following order: \nCrucible of Fire, \nCrucible of Earth, \nCrucible of Air, \n Crucible of Water. \n\nThis will summon The Manipulator. Kill him to complete the quest.|
 T Elementary!|QID|25303|RANK|2|M|25.84,41.65|N|To The Twilight Apocrypha.|
 A Return to Duskwhisper|QID|25312|PRE|25303|RANK|2|M|25.84,41.65|N|From The Twilight Apocrypha.|
 
@@ -368,7 +368,7 @@ A Lightning in a Bottle|QID|25355|M|28.4,29.9|N|From Takrik Ragehowl.|FACTION|Ho
 T Free Your Mind, the Rest Follows|QID|25298|RANK|2|M|28.21,29.90|N|To Rio Duran.|
 
 C Sweeping the Shelf|QID|25352;25354|S|M|26.76,40.87|N|Kill Twilight Stormcallers and Howling Riftdwellers.|
-C Lightning in a Bottle|QID|25353|U|52834|M|22.85,31.90|N|Use the Condenser Jar.|FACTION|Alliance|
+C Lightning in a Bottle|QID|25353|NC|U|52834|M|22.85,31.90|N|Use the Condenser Jar.|FACTION|Alliance|
 T Lightning in a Bottle|QID|25353|U|52853|M|22.85,31.93|N|Use the Totem, then turn the quest into the Spirit of Goldrinn.|FACTION|Alliance|
 A Into the Maw!|QID|25618;25623|LEAD|25623|PRE|25353|M|28.2,29.8|N|From the summoned Spirit of Goldrinn. You can also get it from Ian Duran at the coordonates.|FACTION|Alliance|
 ;A Into the Maw!|QID|25623|PRE|25353|M|28.2,29.8|N|From Ian Duran.|FACTION|Alliance|
@@ -396,7 +396,7 @@ T Rage of the Wolf Ancient|QID|25576|M|26.34,41.95|N|To Yargra Blackscar.|
 T Forged of Shadow and Flame|QID|25575|M|26.30,41.91|N|To Jordan Olafson.|
 T Crushing the Cores|QID|25577|M|26.30,41.91|N|To Jordan Olafson.|
 A Cindermaul, the Portal Master|QID|25599|PRE|25575;25576;25577|M|26.34,41.88|N|From Jordan Olafson.|
-C Cindermaul, the Portal Master|QID|25599|M|30.75,41.61|N|Head west back to the center of the cavern. From the center, follow the path down to the right. In the first cavern to the left, you will find Cindermaul. Kill him, then loot the chest he leaves behind.|
+K Cindermaul, the Portal Master|QID|25599|T|Cindermaul|M|30.75,41.61|N|Head west back to the center of the cavern. From the center, follow the path down to the right. In the first cavern to the left, you will find Cindermaul. Kill him, then loot the chest he leaves behind.|
 T Cindermaul, the Portal Master|QID|25599|M|26.30,41.87|N|To Jordan Olafson.|
 A Forgemaster Pyrendius|QID|25600|PRE|25599|M|26.33,41.88|N|From Jordan Olafson.|
 K Forgemaster Pyrendius|QID|25600|T|Forgemaster Pyrendius|M|32.08,45.76|N|Forgemaster Pyrendius is a level 80 elite. He has 154k health, so don't try to fight him directly. He is standing in a circle of runes. To kill him, make sure you hit him at least once, then drag Pyrendius to one of those runes, click on it to activate the rune, then position Pyrendius so that he is standing on the rune. Repeat that, moving from rune to rune, until he dies.|
@@ -476,7 +476,7 @@ T Good News... and Bad News|QID|29066|M|19.08,37.03|N|To Matoclaw.|
 A Last Stand at Whistling Grove|QID|25940|PRE|25428;25392|M|19.10,40.98|N|From Laina Nightsky.|
 T Last Stand at Whistling Grove|QID|25940|M|13.68,32.88|N|To Keeper Taldros.|
 A The Bears Up There|QID|25462|PRE|25940|M|13.68,32.88|N|From Keeper Taldros.|
-C The Bears Up There|QID|25462|M|13.93,34.22|N|Find one of the trees nearby that has small ladders around its base. Click on one of the ladders to climb into the tree. In the tree, Click on one of the bear cubs you are near to grab it. Then use the vehicle controls on your action bar to climb to the top of the tree. Once you are at the top of the tree, you will get a new control: Chuck-a-Bear. Aim for the trampoline in front of Keeper Taldros and toss the bear cub onto it. Then climb to a lower part of the tree to get another bear cub. Repeat 6 times.|
+C The Bears Up There|QID|25462|NC|M|13.93,34.22|N|Find one of the trees nearby that has small ladders around its base. Click on one of the ladders to climb into the tree. In the tree, Click on one of the bear cubs you are near to grab it. Then use the vehicle controls on your action bar to climb to the top of the tree. Once you are at the top of the tree, you will get a new control: Chuck-a-Bear. Aim for the trampoline in front of Keeper Taldros and toss the bear cub onto it. Then climb to a lower part of the tree to get another bear cub. Repeat 6 times.|
 T The Bears Up There|QID|25462|M|13.66,32.89|N|To Keeper Taldros.|
 A Smashing Through Ashes|QID|25490|PRE|25462|M|13.71,32.87|N|From Keeper Taldros.|
 C Smashing Through Ashes|QID|25490|M|20.07,59.28|N|Kill any Charbringer you see.|
@@ -625,9 +625,9 @@ A In Bloom|QID|25224|PRE|25276|M|76.89,62.09|N|From Condenna the Pitiless.|
 A Trial By Fire|QID|25223|PRE|25276|M|76.97,62.20|N|From Condenna the Pitiless.|
 A Waste of Flesh|QID|25330|PRE|25276|M|76.99,62.16|N|From Instructor Cargall.|
 C Trial By Fire|QID|25223|M|81.81,64.04|N|Kill Fiery Instructors.|S|
-C Waste of Flesh|QID|25330|S|U|52819|M|78.95,63.18|N|Use the Frostgale Crystal on Immolated Supplicants to put out the fire.|NC|
+C Waste of Flesh|QID|25330|S|T|Immolated Supplicant|U|52819|M|78.95,63.18|N|Use the Frostgale Crystal on Immolated Supplicants to put out the fire.|NC|
 C In Bloom|QID|25224|M|81.02,63.88;78.75,62.28|CN|L|52537 5|N|Collect Flame Blossoms.|NC|
-C Waste of Flesh|QID|25330|US|U|52819|M|78.95,63.18|N|Use the Frostgale Crystal on Immolated Supplicants to put out the fire.|NC|
+C Waste of Flesh|QID|25330|US|T|Immolated Supplicant|U|52819|M|78.95,63.18|N|Use the Frostgale Crystal on Immolated Supplicants to put out the fire.|NC|
 C Trial By Fire|QID|25223|M|81.81,64.04|N|Finish killing the Fiery Instructors.|US|
 T Waste of Flesh|QID|25330|M|77.09,62.23|N|To Instructor Cargall.|
 T Trial By Fire|QID|25223|M|76.95,62.15|N|To Condenna the Pitiless.|
@@ -658,7 +658,7 @@ L Level 82|QID|25499|LVL|82|N|You should be around level 82 by this point.|
 T Agility Training: Run Like Hell!|QID|25499|M|89.53,59.09|N|To Instructor Mylva.|
 
 A Mental Training: Speaking the Truth to Power|QID|25299|PRE|25499|M|89.53,59.09|N|From Instructor Mylva.|
-C Mental Training: Speaking the Truth to Power|QID|25299|U|52828|M|89.58,59.03|N|Use the Orb of Ascension. You will be asked 10 yes/no questions. The questions are simple and the answers are VERY obvious. Dismiss the Orb once you get the quest completed message.|
+C Mental Training: Speaking the Truth to Power|QID|25299|NC|U|52828|M|89.58,59.03|N|Use the Orb of Ascension. You will be asked 10 yes/no questions. The questions are simple and the answers are VERY obvious. Dismiss the Orb once you get the quest completed message.|
 T Mental Training: Speaking the Truth to Power|QID|25299|M|89.58,59.03|N|To Instructor Mylva.|
 
 A Spiritual Training: Mercy is for the Weak|QID|25309|PRE|25299|M|89.58,59.03|N|From Instructor Mylva.|

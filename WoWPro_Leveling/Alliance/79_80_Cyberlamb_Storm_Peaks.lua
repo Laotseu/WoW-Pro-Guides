@@ -168,7 +168,7 @@ T The Crone's Bargain|QID|12841|N|To Lok'lira the Crone.|M|42.8,68.9|
 A Mildred the Cruel|QID|12905|N|From Lok'lira the Crone.|M|42.8,68.9|
 T Mildred the Cruel|QID|12905|N|To Mildred the Cruel.|M|44.4,68.9|
 A Discipline|QID|12906|N|From Milred the Cruel.|M|44.4,68.9|
-C Discipline|QID|12906|N|Use the Disciplining Rod on 6 Exhausted Vrykul in the cave.|T|Exhausted Vrykul,use item:42837|
+C Discipline|QID|12906|N|Use the Disciplining Rod on 6 Exhausted Vrykul in the cave.|T|Exhausted Vrykul;use item:42837|
 T Discipline|QID|12906|N|To Milred the Cruel.|M|44.4,68.9|
 A Examples to be Made|QID|12907|N|From Milred the Cruel.|M|44.4,68.9|
 K Garhal|QID|12907|T|Garhal|N|Find Garhal and kill him.|M|45.4,69.1|

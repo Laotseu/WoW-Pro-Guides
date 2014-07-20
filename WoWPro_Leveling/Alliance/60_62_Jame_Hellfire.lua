@@ -107,8 +107,9 @@ return [[
 R Portal to the Blasted Lands|QID|10288|N|By the Portal Trainer |Z|Stormwind City|M|50.3,86|
 B Nethergarde Bitter |QID|10288|L|23848 1|LEAD|9563|N|Buy a Nethergarde Bitter from Bernie Heisten in Nethergarde Keep. |M|59.40,14.89|Z|Blasted Lands|
 
-A Through the Dark Portal |QID|10119|M|54.66,50.44|LEAD|10288|N|From Watch Commander Relthorn Netherwane. This quest is not present if you have done or started "Hero's Call: Outland!". If it's the case, just ckick the step off.|Z|Blasted Lands|
+A Through the Dark Portal |QID|10119;28708|M|54.66,50.44|LEAD|10288|N|From Watch Commander Relthorn Netherwane.|Z|Blasted Lands|
 R Hellfire Peninsula |QID|10119|N|Go through the portal.|M|55.01,54.13|Z|Blasted Lands|
+T Hero's Call: Outland! |QID|28708|M|87.3,50.7|N|To Commander Duron.|
 T Through the Dark Portal |QID|10119|M|87.3,50.7|N|To Commander Duron.|
 A Arrival in Outland |QID|10288|M|87.3,50.7|N|From Commander Duron.|
 T Arrival in Outland |QID|10288|M|87.4,52.4|N|To Amish Wildhammer.|

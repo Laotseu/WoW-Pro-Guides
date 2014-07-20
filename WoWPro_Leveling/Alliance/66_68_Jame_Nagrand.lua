@@ -214,12 +214,13 @@ r Sell junk, repair, restock |QID|9800|N|Do not sell Ogre Warbeads or Ivory Tusk
 
 A The Consortium Needs You! |QID|9913|M|51.8,34.8|N|From Consortium Recruiter.|M|51.18,69.83|
 N From now on... |QID|9871|N|If you see any Murkblood Invaders kill them until you get the Murkblood Invasion Plans. They wander the road west of Telaar.|
+C Eating Damnation |N|Kill Enraged Crushers until you get the items for this quest.|QID|9821|S|M|52,19|
 C Windroc Mastery|N|Kill the Windrocs needed for this quest.|QID|9855|US|M|49.00,62.00|
-C A Rare Bean |N|Collect Digested Caracoli off the ground from the dung piles, until you finish this quest.|QID|9800|M|50.00,30.00|S|
+C A Rare Bean |N|Collect Digested Caracoli off the ground from the dung piles, until you finish this quest.|QID|9800|NC|M|50.00,30.00|S|
 C Clefthoof Mastery |N|Kill Clefthoof Bulls (and other mobs) until you finish this quest.|QID|9850|US|M|50.00,30.00|
-C A Rare Bean |N|Collect Digested Caracoli off the ground from the dung piles, until you finish this quest.|QID|9800|M|50.00,30.00|US|
+C A Rare Bean |N|Collect Digested Caracoli off the ground from the dung piles, until you finish this quest.|QID|9800|NC|M|50.00,30.00|US|
 C Talbuk Mastery |N|Kill the rest of the mobs for this quest.|QID|9858|M|50.00,30.00|US|
-C Eating Damnation |N|Kill Enraged Crushers until you get the items for this quest.|QID|9821|M|52,19|
+C Eating Damnation |N|Kill Enraged Crushers until you get the items for this quest.|QID|9821|US|M|52,19|
 T A Rare Bean |QID|9800|M|60.8,22.4|N|To Elementalist Lo'ap.|
 A Agitated Spirits of Skysong |QID|9804|M|60.8,22.4|N|From Elementalist Lo'ap.|
 T Eating Damnation |QID|9821|M|61.8,24.4|N|To Gordawg, he wanders around.|
@@ -311,7 +312,7 @@ A Armaments for Deception |QID|9928|M|73.8,62.6|N|From Lantressor of the Blade.|
 A Ruthless Cunning |QID|9927|M|73.8,62.6|N|From Lantressor of the Blade.|
 C Ruthless Cunning |N|Plant the banners on the mob corpses for this quest.|QID|9927|M|71.4,79.4|S|
 C Armaments for Deception |N|Loot the boxes for this quest.|QID|9928|NC|M|71.4,79.4|S|
-K Giselda the Crone |N|Kill Giselda the Crone in center the large building.|QID|9936|M|71.14,92.31|QO|Giselda the Crone slain: 1/1|
+K Giselda the Crone |N|Kill Giselda the Crone in center the large building.|QID|9936|T|Giselda the Crone|M|71.2,82.4|QO|Giselda the Crone slain: 1/1|
 C Wanted: Giseld the Crone|QID|9936|N|Kill the rest of the Kil'sorrow agents needed.|M|70.52,79.2|
 C Ruthless Cunning |N|Plant the rest of the banners on the mob corpses for this quest.|QID|9927|M|71.4,79.4|US|
 C Armaments for Deception |N|Loot the rest of the boxes for this quest.|QID|9928|NC|M|71.4,79.4|US|
