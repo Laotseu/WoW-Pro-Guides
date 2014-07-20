@@ -845,7 +845,7 @@ end
 -- Call this function to deal with any open quest dialog for autoaccept, autocomplete and autoturins
 -- for any of the current displayed step
 function WoWPro:QuestDialogAutomation()
-	if not WoWPro.CurrentIndex or not WoWPro.ActiveStep then return end
+	if not WoWPro.CurrentIndex or not WoWPro.ActiveStep or IsShiftKeyDown() then return end
 
 	for step_index = WoWPro.ActiveStep, WoWPro.CurrentIndex do
 

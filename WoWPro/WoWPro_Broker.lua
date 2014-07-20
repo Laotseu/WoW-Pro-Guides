@@ -531,7 +531,7 @@ function WoWPro:NextStep(k,i)
     	end
 
 		-- Select the right C step with the QG tag that matches the gossip
-		if WoWPro.GossipText and WoWPro.gossip[k] and  not WoWProCharDB.Guide[GID].completion[k] then
+		if WoWPro.GossipText and WoWPro.gossip[k] and  not WoWProCharDB.Guide[GID].completion[k] and k <= CurrentIndex  then
 		   -- is gossip in GossipText?
 		   if string.find(WoWPro.GossipText, WoWPro.gossip[k], 1 , true) then
 		       -- Found it
@@ -578,6 +578,28 @@ function WoWPro:NextStep(k,i)
  			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in QuestLog."
 			WoWProCharDB.Guide[GID].skipped[k] = true
  			break
+    	end
+
+    	-- Skip T steps that have conditinal set to true and are not completed
+    	if WoWPro.action[k] == "T" and WoWPro.conditional[k] and k <= CurrentIndex  then
+			local isCompleted = false
+			local numQIDs = select("#", string.split(";",QID))
+			for j=1,numQIDs do
+				local qID = select(numQIDs-j+1, string.split(";", QID))
+				qID = tonumber(qID)
+				local quest_log_index = WoWPro.QuestLog[qID]
+				if quest_log_index and select(7,GetQuestLogTitle(quest_log_index)) == 1 then
+					isCompleted = true
+					break
+				end
+			end
+			if not isCompleted then
+	 			skip = true 
+	 			WoWPro:dbp("Step %s [%s] skipped as not completed",WoWPro.action[k],WoWPro.step[k])
+	 			WoWPro.why[k] = "NextStep(): Skipping Conditional T step because the quest is not completed."
+				WoWProCharDB.Guide[GID].skipped[k] = true
+	 			break
+			end
     	end
     	
     	-- Complete "f" steps if we know the flight point already

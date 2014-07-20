@@ -22,7 +22,8 @@ WoWPro.actiontypes = {
 	U = "Interface\\Icons\\INV_Misc_Bag_08",
 	L = "Interface\\Icons\\Spell_ChargePositive",
 	l = "Interface\\Icons\\INV_Misc_Bag_08",
-	r = "Interface\\Icons\\Ability_Repair"
+	r = "Interface\\Icons\\Ability_Repair",
+	t = "Interface\\GossipFrame\\ActiveQuestIcon"
 }
 WoWPro.actionlabels = {
 	A = "Accept",
@@ -40,7 +41,8 @@ WoWPro.actionlabels = {
 	U = "Use",
 	L = "Level",
 	l = "Loot",
-	r = "Repair/Restock"
+	r = "Repair/Restock",
+	t = "Conditional Turn In"
 }
 
 -- Determine Next Active Step (Leveling Module Specific)--
@@ -215,13 +217,15 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 	local GID = WoWProDB.char.currentguide
 	local zone = strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)") or "")
 	
-	_, _, WoWPro.action[i], WoWPro.step[i] = text:find("^(%a) ([^|]*)(.*)")
+--		_, _, WoWPro.action[i], WoWPro.step[i] = text:find("^(%a) ([^|]*)(.*)")
+		_, _, WoWPro.action[i], WoWPro.step[i] = text:find("^(%a) ([^|]*)")
 	if (not WoWPro.action[i]) or (not WoWPro.step[i]) then
 	    WoWPro:Error("Line %d in guide %s is badly formatted: \"%s\"\nParsing Halted.",realline,GID,text)
 	    return
 	end
 	if not WoWPro.actionlabels[WoWPro.action[i]] then
-		WoWPro:Error("Invalid action label %s at line %d in guide %s: \"%s\"\nParsing Halted.",WoWPro.action[i],realline,GID,text)
+		err("Invalid action label %s at line %d in guide %s: \"%s\"\nParsing Halted.",WoWPro.action[i],realline,GID,tostring(text))
+		--WoWPro:Error("Invalid action label %s at line %d in guide %s: \"%s\"\nParsing Halted.",WoWPro.action[i],realline,GID,tostring(text))
 		return
 	end
 	WoWPro.step[i] = WoWPro.step[i]:trim()
