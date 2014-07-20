@@ -69,7 +69,7 @@ WoWPro.Leveling.GuideList.Format={{"Zone",0.35,zoneSort},{"Range",0.15,rangeSort
 
 -- Fancy tooltip!
 function WoWPro.Leveling.GuideTooltipInfo(row, tooltip, guide)
-    WoWPro:Print("GuideTooltipInfo: Entering %s",guide.GID)
+    --WoWPro:Print("GuideTooltipInfo: Entering %s",guide.GID)
     GameTooltip:SetOwner(row, "ANCHOR_TOPLEFT")
     GameTooltip:AddLine(guide.zone)
     if guide.icon then

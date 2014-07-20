@@ -86,31 +86,31 @@ WoWPro:GuideSteps(guide, function()
 return [[
 
 N Wall of Text |QID|11970|N|This guide is geared toward actually completing all the achievements necessary to become a Flame Warden. Check off and skip the extra quests if you just wish to use it as a guide to getting all the bonfires.|
-N This guide starts|QID|11970|N|In Darnassus, so if your in the Eastern Kingdoms, head to SW and take the boat to Darnassus.|
+R Darnassus|QID|11970|N|This guide starts in Darnassus, so if your in the Eastern Kingdoms, head to SW and take the boat to Darnassus.|
 
 A The Master of Summer Lore |N|From the Night Elf Commoner in Darnassus, near the Bank.|QID|11970|Z|Darnassus|M|44.73,52.72|
 T The Master of Summer Lore |N|To the Festival Loremaster.|M|62.2,48.67|QID|11970|Z|Darnassus|
 A Incense for the Summer Scorchlings |N|From the Festival Loremaster.|M|62.2,48.67|QID|11964|Z|Darnassus|
 A Unusual Activity |N|From the Earthen Ring Elder. |M|62.11,49.15|Z|Darnassus|QID|11886|
 
-A Torch Tossing |N|From the Master Fire Eater. |M|63.19,47.5|QID|11731|Z|Darnassus|
+A Torch Towssing |N|From the Master Fire Eater. |M|63.19,47.5|QID|11731|Z|Darnassus|
 C Torch Tossing |N|Throw the torch at the brazier with the red arrow over it 8 times.|U|34862|QID|11731|Z|Darnassus|
 T Torch Tossing |N|To the Master Fire Eater. |M|63.19,47.5|QID|11731|Z|Darnassus|
 A Torch Catching |N|From the Master Fire Eater. |M|63.19,47.5|QID|11657|Z|Darnassus|
 C Torch Catching |N|Throw the torch from the bonfire and catch it 4 times in a row. Easiest way is to follow its shadow, though this quest is still not that easy.|U|34833|QID|11657|Z|Darnassus|
 T Torch Catching |N|To the Master Fire Eater. |M|63.19,47.5|QID|11657|Z|Darnassus|
 
-A More Torch Tossing |N|From the Master Fire Eater. |M|63.19,47.5|QID|11921|Z|Darnassus|
+A More Torch Tossing |N|From the Master Fire Eater. |M|63.19,47.5|QID|11921|Z|Darnassus|O|
 C More Torch Tossing |N|Throw the torch at the brazier with the red arrow over it 20 times. This is a daily and can be repeated tomorrow.|U|34862|Z|Darnassus|QID|11921|
 T More Torch Tossing |N|To the Master Fire Eater. |M|63.19,47.5|Z|Darnassus|QID|11921|
-A More Torch Catching |N|From the Master Fire Eater. |M|63.19,47.5|Z|Darnassus|QID|11924|
+A More Torch Catching |N|From the Master Fire Eater. |M|63.19,47.5|Z|Darnassus|QID|11924|O|
 C More Torch Catching |N|Throw the torch from the bonfire and catch it 10 times in a row. This is a daily and can be repeated tomorrow.|U|34833|Z|Darnassus|QID|11924|
 T More Torch Catching |N|To the Master Fire Eater. |M|63.19,47.5|Z|Darnassus|QID|11924|
 
 A Honor the Flame|N|From the Flame Warden. (Teldrassil)|QID|11824|M|54.88,52.78|Z|Teldrassil|
 T Incense for the Summer Scorchlings |N|Find a Scorchling at or near the tent. |M|54.83,52.77|QID|11964|Z|Teldrassil|
 R Rut'theran Village |N|Run back through Darnassus.|M|36.29,50.3|Z|Darnassus|QID|11806|
-F Azuremyst Isle|N|Fly to Azure Watch.|M|55.43,88.41|Z|Teldrassil|QID|11806|
+F Azure Watch|N|Fly to Azure Watch on Azuremyst Isle.|M|55.43,88.41|Z|Teldrassil|QID|11806|
 A Honor the Flame|N|From the Flame Warden. (Azuremyst Isle)|QID|11806|M|44.48,52.51|Z|Azuremyst Isle|
 R Bloodmyst Isle |N|Head North to Bloodmyst Isle.|Z|Azuremyst Isle|M|42,0.4|QID|11809|
 A Honor the Flame|N|From the Flame Warden. (Bloodmyst Isle)|QID|11809|M|55.82,67.89|Z|Bloodmyst Isle|
@@ -278,8 +278,8 @@ A Honor the Flame|N|From the Flame Warden. (HalfHill)|QID|32502|M|51.8,51.4|Z|Va
 T Honor the Flame|QID|32502|M|51.8,51.4|Z|Valley of the Four Winds|
 F Soggy's Gamble|N|Fly to Soggy's Gamble in the Dread Waste.|QID|32497|M|56.42,50.34|Z|Valley of the Four Winds|
 A Honor the Flame|N|From the Flame Warden. (Soggy's Gamble)|QID|32497|M|56.1,69.5|Z|Dread Wastes|
-T Honor the Flame|QID|32497|M|56.1,69.5|Z|Dread Wastes|
-F Longying Outpost|N|Fly to Longying Outpost in Townlong Steppes.|QID|32501|M|56.12,70.13|
+T Honor the Flame|QID|32497|M|56.1,69.5|Z|Dread Wastes|Z|Dread Wastes|
+F Longying Outpost|N|Fly to Longying Outpost in Townlong Steppes.|QID|32501|M|56.12,70.13|Z|Townlong Steppes|
 A Honor the Flame|N|From the Flame Warden. (Longying Outpost)|QID|32501|M|71.5,56.3|Z|Townlong Steppes|
 T Honor the Flame|QID|32501|M|71.5,56.3|Z|Townlong Steppes|
 F Binan Village|N|Fly to Binan Village in Kun-Lai Summit.|QID|32500|M|71.12,57.33|Z|Townlong Steppes|
