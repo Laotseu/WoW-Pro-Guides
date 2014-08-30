@@ -339,14 +339,14 @@ C Scalawag Frog |QID|11476|NC|T|Scalawag Frog|QO|1|N|Click on a Scalawag Frog ne
 C Shiny Knife |QID|11476|NC|QO|2|N|Buy a Shiny Knife from "Silvermoon" Harry here. |M|35.10,80.94|
 T A Carver and a Croaker |QID|11476|M|35.6,80.6|N|To Zeh'gehn.|
 A "Crowleg" Dan |QID|11479|M|35.6,80.6|N|From Zeh'gehn. You'll have to from him to finish talking before getting the quest.|
-C "Crowleg" Dan |QID|11479|N|Defeat "Crowleg" Dan on the ship here. |M|35.95,83.60|
+K "Crowleg" Dan |QID|11479|T|"Crowleg" Dan|N|Defeat "Crowleg" Dan on the ship here. |M|35.95,83.60|
 T "Crowleg" Dan |QID|11479|M|35.6,80.2|N|To Handsome Terry.|
 A Meet Number Two |QID|11480|M|35.6,80.2|N|From Handsome Terry.|
 T Meet Number Two |QID|11480|M|35.4,79.4|N|To Annie Bonn, on the top floor.|
 
 A The Jig is Up |QID|11471|N|From Annie Bonn.|
 K Big Roy |QID|11469|T|Big Roy|N|Kill Big Roy here and loot Big Roy's Blubber. |M|31.33,78.68|
-C The Jig is Up |QID|11471|N|Beat "Mad" Jonah Sterling down to ~30%, then kill Hozzer when he awakens, and loot Jonah Sterling's Spyglass from Hozzer. |M|33.5,75.3;33.60,78.18|
+C The Jig is Up |QID|11471|N|Beat "Mad" Jonah Sterling down to ~30%, then kill Hozzer when he awakens, and loot Jonah Sterling's Spyglass from Hozzer. |M|33.5,75.3;33.60,78.18|CS|
 C The Frozen Heart of Isuldof |QID|11512|N|Loot The Frozen Heart of Isuldof from the ground here. |M|32.33,78.67|
 T The Jig is Up |QID|11471|N|To Annie Bonn.|
 C The Ancient Armor of the Kvaldir |QID|11567|NC|N|Talk to Alanya on the docks outside and click her chat bubble to be flown here. Go into the ship's hold and loot The Ancient Armor of the Kvaldir.|M|36.08,81.60;81.77,73.90|CC|
@@ -410,8 +410,8 @@ A Down to the Wire |QID|11269|M|62.6,16.8|N|From Gil Grisert.|
 A Preying Upon the Weak |QID|11292|M|62.6,16.8|N|From Trapper Jethan.|
 A March of the Giants |QID|11355|N|From Researcher Aderan.|M|62.6,16.5|
 C The One That Got Away |QID|11410|U|34013|N|Use the Fresh Barbfish Bait here to spawn and kill Frostfin. |M|63.90,19.50|
-C Down to the Wire |QID|11269|N|Loot Spotted Hippogryph Down from the ground.|M|59.1,21|S|
-C Preying Upon the Weak |QID|11292|N|Click on the traps, you will either get a Trapped Prey, or a Worg may spawn.|S|M|56.9,21.7|
+C Down to the Wire |QID|11269|NC|N|Loot Spotted Hippogryph Down from the ground.|M|59.1,21|S|
+C Preying Upon the Weak |QID|11292|NC|N|Click on the traps, you will either get a Trapped Prey, or a Worg may spawn.|S|M|56.9,21.7|
 T The Enigmatic Frost Nymphs |QID|11302|M|61.5,22.8|N|To Lurielle.|
 
 A Spirits of the Ice |QID|11313|M|61.5,22.8|N|From Lurielle.|
@@ -457,8 +457,8 @@ T Seeds of the Blacksouled Keepers |QID|11319|M|61.5,22.8|N|To Lurielle.|
 A Keeper Witherleaf |QID|11428|M|61.5,22.8|N|From Lurielle.|
 K Keeper Witherleaf |QID|11428|T|Keeper Witherleaf|N|Kill Keeper Witherleaf in the area.|M|53.82,17.48|
 T Keeper Witherleaf |QID|11428|M|61.5,22.8|N|To Lurielle.|
-C Down to the Wire |QID|11269|N|Finish collecting Spotted Hippogryph Downs and Trapped Animals. |M|51.96,20.11|US|
-C Preying Upon the Weak |QID|11292|N|Finish collecting Trapped Animals. |M|51.96,20.11|US|
+C Down to the Wire |QID|11269|NC|N|Finish collecting Spotted Hippogryph Downs and Trapped Animals. |M|51.96,20.11|US|
+C Preying Upon the Weak |QID|11292|NC|N|Finish collecting Trapped Animals. |M|51.96,20.11|US|
 K Binder Murdis |QID|11348|T|Binder Murdis|QO|Binder Murdis slain: 1/1|N|Kill Binder Murdis here. |M|71.85,24.56|
 C The Rune of Command |QID|11348|NC|QO|1|U|33796|N|Use the Rune of Command on a Stone Giant nearby. |M|71.96,23.16|
 K Megalith |QID|11359|T|Megalith|N|Mount up and find Megalith up here. Kill Megalith. |M|67.94,10.64|
@@ -509,9 +509,9 @@ T Burn Skorn, Burn! |QID|11247|N|To Westguard Sergeant.|
 
 A All Hail the Conqueror of Skorn! |QID|11250|N|From Westguard Sergeant.|
 C Eyes of the Eagle |QID|11416|N|Mount up and jump off the southern cliff  into the river, then click on the egg here. Kill Talonshrike and loot his eyes.|M|44.02,38.44;41.43,37.67|CS|
-C Send Them Packing |S|QID|11224|NC|T|Abandoned Pack Mule,raise|N|Use "/raise" with Abandoned Pack Mules targeted to send them packing. |M|33.53,38.71|
+C Send Them Packing |S|QID|11224|NC|T|Abandoned Pack Mule;raise|N|Use "/raise" with Abandoned Pack Mules targeted to send them packing. |M|33.53,38.71|
 C Danger! Explosives! |QID|11218|NC|U|33190|N|Use Steelring's Foolproof Dynamite on Whisper Gulch Ore here and collect the fragments that the explosion produces.|M|35.71,36.53|
-C Send Them Packing |US|QID|11224|NC|T|Abandoned Pack Mule,raise|N|Finish useing "/raise" with Abandoned Pack Mules targeted to send them packing. |M|33.53,38.71|
+C Send Them Packing |US|QID|11224|NC|T|Abandoned Pack Mule;raise|N|Finish useing "/raise" with Abandoned Pack Mules targeted to send them packing. |M|33.53,38.71|
 T Where is Explorer Jaren? |QID|11393|N|Jump down into the water and swim to the land west to get to Jaren.|M|24.2,32.5|
 A And You Thought Murlocs Smelled Bad! |QID|11394|M|24.2,32.5|N|From Explorer Jaren.|
 C And You Thought Murlocs Smelled Bad! |S|QID|11394|N|Kill any Scourge mobs you need for this quest. |M|22.78,31.13|

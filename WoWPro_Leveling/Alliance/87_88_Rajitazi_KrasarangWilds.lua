@@ -126,6 +126,7 @@ return [[
 
 L Level 86 |QID|30080|LVL|86|N|You need to be Level 86 to do this guide.|
 F Zhu's Watch|QID|30080|M|19, 56|N|This guide starts at Zhu's watch. If you aren't there, fly or run there.|
+f Zhu's Watch|M|76.7,8.4|N|From Gee Hung|
 T Ken-Ken|QID|29873|M|76.23,7.13|N|To Ken-Ken. This was accepted from Xiao at the beginning of Valley of the 4 Winds.|
 A What's Eating Zhu's Watch?|QID|30079|M|76.22,7.06|N|From Ken-Ken.|
 C Speak with Mei|QID|30079|CHAT|QO|Speak with Mei: 1/1|M|75.84,7.60|N|Up the stairs, outside.|
@@ -203,8 +204,8 @@ C The Lost Dynasty|QID|30344|US|NC|M|68.05,21.47|N|These are stone tablets on th
 C Squirmy Delight|QID|30350|US|M|63.00,27.79|
 T Crane Mastery: Needlebeak|QID|31262|M|67.61,25.68|N|To Daggle Bombstrider.|
 T Profit Mastery: Chasheen|QID|31260|M|67.61,25.68|N|To Daggle Bombstrider.|
-T Blind Them!|QID|30384|M|67.45,32.70|N|To Lyalia.|
 T Squirmy Delight|QID|30350|M|67.36,32.75|N|To Kang Bramblestaff.|
+T Blind Them!|QID|30384|M|67.45,32.70|N|To Lyalia.|
 T The Lost Dynasty|QID|30344|M|67.45,32.64|N|To Lorekeeper Vaeldrin|
 A Where are the Pools|QID|30346|M|67.45,32.64|N|From Lorekeeper Vaeldrin.|
 A Threat from Dojan|QID|30349|M|67.45,32.70|N|From Lyalia.|

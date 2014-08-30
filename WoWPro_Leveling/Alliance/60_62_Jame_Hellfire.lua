@@ -104,7 +104,7 @@ WoWPro:GuideNextGuide(guide, "JamZan6264")
 WoWPro:GuideIcon(guide,"ACH",4928)
 WoWPro:GuideSteps(guide, function()
 return [[
-R Portal to the Blasted Lands|QID|10288|N|By the Portal Trainer |Z|Stormwind City|M|50.3,86|
+R Blasted Lands|QID|10288|N|Use the portal by the Portal Trainer |Z|Stormwind City|M|50.3,86|
 B Nethergarde Bitter |QID|10288|L|23848 1|LEAD|9563|N|Buy a Nethergarde Bitter from Bernie Heisten in Nethergarde Keep. |M|59.40,14.89|Z|Blasted Lands|
 
 A Through the Dark Portal |QID|10119;28708|M|54.66,50.44|LEAD|10288|N|From Watch Commander Relthorn Netherwane.|Z|Blasted Lands|

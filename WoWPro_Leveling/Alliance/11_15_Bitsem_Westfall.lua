@@ -124,8 +124,8 @@ L Level 9 |QID|26209|LVL|9|N|This guide requires a minimum level of 9 to do.|
 R Westfall |QID|26209|N|Westfall is located west of Elwynn Forest (just follow the road west from Goldshire).\n\nThere are two breadcrumb quests for this region:\n\nFurlbrow's Deed\nThis is a pickup from the floor behind Hogger\n\nHero's Call: Westfall\nThis quest is available from either of the Hero's Call boards in Stormwind City (Dwarven District and Trade District), or from any of these: Deputy Rainer at Westbrook Garrison, Marshall Dughan in Goldshire, Guard Thomas at the eastern Elwynn Bridge, Marshall McCree and Marshall Haggard at Eastvale Logging Camp.|
 A Hero's Call: Westfall!|QID|184;28562;26378|LEAD|26209|N|Breadcrumb quest for Westfall that can be found on the Hero's Call Board in Inronforge or Stormwind, or from any of these: Deputy Rainer at Westbrook Garrison, Marshall Dughan in Goldshire, Guard Thomas at the eastern Elwynn Bridge, Marshall McCree and Marshall Haggard at Eastvale Logging Camp.\n\nThis quest is optional, skip it if you don't want it or if you plan on getting Furlbrow's Deed is Elwynn Forest.|O|
 A Furlbrow's Deed|QID|184;28562;26378|LEAD|26209|M|24.8,95.2|Z|Elwynn Forest|N|Breadcrumb quest for Westfall. Choose this one if you are in Elwynn Forest already.\n\nThis quest is optional, skip it if you don't want it.|O|
-T Hero's Call: Westfall!|QID|28562;26378|M|60.05,19.40|N|To Lieutenant Horatio Laine.|ACTIVE|
-T Furlbrow's Deed|QID|184|M|60.05,19.40|N|To Lieutenant Horatio Laine.|ACTIVE|
+T Hero's Call: Westfall!|QID|28562;26378|M|60.05,19.40|N|To Lieutenant Horatio Laine.|
+T Furlbrow's Deed|QID|184|M|60.05,19.40|N|To Lieutenant Horatio Laine.|
 
 A Murder Was The Case That They Gave Me|QID|26209|RANK|1|M|60.05,19.40|N|From Lieutenant Horatio Laine.|
 C Murder Was The Case That They Gave Me|QID|26209|CHAT|RANK|1|M|58.26,18.50|N|Question the Drifters, Transient, and Homeless in the field. Some will fight you, some give information.|
@@ -198,7 +198,7 @@ A You Have Our Thanks|QID|26270|PRE|26241|RANK|1|M|56.02,31.28|N|From Farmer Sal
 T You Have Our Thanks|QID|26270|M|56.37,30.60|N|To Salma Saldean.|
 A Hope for the People|QID|26266|RANK|1|M|56.37,30.60|N|From Salma Saldean.|
 
-A CLUCK!|QID|3861|T|Chicken,chicken|U|11109|RANK|3|M|56.02,31.28|N|To get this quest, buy one unit of Special Chicken Feed from Farmer Saldean, find a chicken, and repeatedly type /chicken at it until eventually it turns friendly, and offer the quest.|
+A CLUCK!|QID|3861|T|Chicken;chicken|U|11109|RANK|3|M|56.02,31.28|N|To get this quest, buy one unit of Special Chicken Feed from Farmer Saldean, find a chicken, and repeatedly type /chicken at it until eventually it turns friendly, and offer the quest.|
 T CLUCK!|QID|3861|RANK|3|M|56.02,31.28|N|To Chicken - enjoy your new pet!|
 
 T Hope for the People|QID|26266|M|56.88,47.13|N|To Hope Saldean at Sentinel Hill.|

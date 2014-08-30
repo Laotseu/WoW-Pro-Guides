@@ -355,7 +355,7 @@ T SI:7 Report: Take No Prisoners|QID|29727|M|58.93,81.93|N|To Amber Kearnen.|
 A A Perfect Match|QID|29903|M|58.87,81.68|N|From Admiral Taylor.|
 A Seek Out the Lorewalker|QID|29888|M|58.96,81.68|N|From Bold Karasshi.|
 
-C A Perfect Match|QID|29903|NC|M|60.44,87.70|N|Speak to the Aqualytes and give them presents. The trick is to look at what weapon they have:Daggers: Give a dagger; Sword: Give a shield; Red Staff: give a healing prayer; Blue/Green Staff: give a staff.|
+C A Perfect Match|QID|29903|CHAT|M|60.44,87.70|N|Speak to the Aqualytes and give them presents. The trick is to look at what weapon they have:\n\nDaggers: Give a dagger;\nSword: Give a shield;\nRed Staff: give a healing prayer;\nBlue/Green Staff: give a staff.|
 T A Perfect Match|QID|29903|M|58.87,81.68|N|To Admiral Taylor.|
 A Bigger Fish to Fry|QID|29904|M|58.87,81.68|N|From Admiral Taylor.|
 
@@ -441,8 +441,8 @@ C The Silkwood Road|QID|29865|S|M|43.26,49.23|N|Loot the eggs to get Pristine Si
 
 A Down Kitty!|QID|29717|M|39.82,48.05|N|Little An followed you to Forest Heart and has a new quest for you, once you get there.|
 C Down Kitty!|QID|29717|S|M|37.11,47.72|
-C The Double Hozen Dare|QID|29716|NC|M|37.31,48.19|
-T The Double Hozen Dare|QID|29716|NC|N|To An Windfur. (she should be following you)|
+C The Double Hozen Dare|QID|29716|CHAT|M|37.31,48.19|
+T The Double Hozen Dare|QID|29716|N|To An Windfur. (she should be following you)|
 A The Jade Witch|QID|29723|N|From An Windfur.|
 C The Jade Witch|QID|29723|M|39.23,46.17|N|Before you talk to the widow, look around for a 'Jade Warrior Statue' in her front yard, if it is there talk to it for a BoA treasure. Talk to Widow Greenpaw, she'll bring you to Shin and then become attackable, kill her.|
 C Down Kitty!|QID|29717|US|M|37.11,47.72|
@@ -514,10 +514,10 @@ T The Sprites' Plight|QID|29745|N|To UI Alert.|
 A Break the Cycle|QID|29747|N|From UI Alert.|
 A Simulacrumble|QID|29748|M|48.61,20.65|N|From Shattered Destroyer.|
 C Break the Cycle|QID|29747|S|M|48.34,16.61|N|Kill the Spiritbinders and kick over the statues as you go.|
-C Simulacrumble|QID|29748|M|47.82,16.45|N|Right-click on the statues to destroy them.|
+C Simulacrumble|QID|29748|NC|M|47.82,16.45|N|Right-click on the statues to destroy them.|
+T Simulacrumble|QID|29748|N|To UI Alert.|
 C Break the Cycle|QID|29747|US|M|48.34,16.61|
 T Break the Cycle|QID|29747|M|48.34,16.61|N|To UI Alert.|
-T Simulacrumble|QID|29748|N|To UI Alert.|
 A An Urgent Plea|QID|29749|N|From UI Alert.|
 C An Urgent Plea|QID|29749|M|44.24,14.91|N|Get the staff|QO|Staff of Pei-Zhi: 1/1|
 C An Urgent Plea|QID|29749|M|44.36,15.89|N|Kill Ancient Spirits drifting towards the center to destroy the ritual.|QO|Interrupt the Ritual of Spiritbinding: 1/1|
@@ -525,14 +525,14 @@ T An Urgent Plea|QID|29749|M|44.22,15.01|N|To Pei-Zhi.|
 A Ritual Artifacts|QID|29751|M|44.22,15.01|N|From Pei-Zhi. While you are in this area doing these quests, keep an eye out for a rarely found BoA item, 'Hammer of the Ten Thunders'.|
 A Vessels of the Spirit|QID|29750|M|44.22,15.01|N|From Pei-Zhi.|
 A The Wayward Dead|QID|29752|M|44.22,15.01|N|From Pei-Zhi.|
-C The Wayward Dead|QID|29752|S|U|74771|M|44.22,15.01|N|Use Pei-Zhi's staff to release the Wandering Spirits, also kill Spiritclaw's.|
+C The Wayward Dead|QID|29752|S|NC|U|74771|M|44.22,15.01|N|Use Pei-Zhi's staff to release the Wandering Spirits, also kill Spiritclaw's.|
 C Vessels of the Spirit|QID|29750|S|M|40.69,14.85|
 C Ritual Artifacts|QID|29751|NC|QO|Chipped Ritual Bowl: 1/1|M|41.62,14.27|
 C Ritual Artifacts|QID|29751|NC|QO|Jade Cong: 1/1|M|42.63,15.74|
 R Spirit Binders |M|42.26,17.47|ACH|6754;3|N|Exploration>The Dark Heart of the Mogu. |
 C Ritual Artifacts|QID|29751|NC|QO|Pungent Ritual Candle: 1/1|M|42.3,17.09|
 C Vessels of the Spirit|QID|29750|US|M|40.69,14.85|
-C The Wayward Dead|QID|29752|US|U|74771|M|40.38,14.76|
+C The Wayward Dead|QID|29752|US|NC|U|74771|M|40.38,14.76|
 T Ritual Artifacts|QID|29751|M|44.21,15.01|N|To Pei-Zhi.|
 T Vessels of the Spirit|QID|29750|M|44.21,15.01|N|To Pei-Zhi.|
 T The Wayward Dead|QID|29752|M|44.21,15.01|N|To Pei-Zhi.|
