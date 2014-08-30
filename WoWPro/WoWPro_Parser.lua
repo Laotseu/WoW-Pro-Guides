@@ -635,6 +635,7 @@ function WoWPro:RowUpdate(offset)
 
 		local questtext = WoWPro.questtext[k] 
 		local optional = WoWPro.optional[k] 
+		local conditional = WoWPro.conditional[k]
 		local prereq = WoWPro.prereq[k] 
 		local leadin = WoWPro.leadin[k] 
 		local target = WoWPro.target[k] 
@@ -691,11 +692,15 @@ function WoWPro:RowUpdate(offset)
 			row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
 		end
 
-		-- Add a label for optional steps
+		-- Add a line for optional steps
 		if optional then
 			note = "|cFF69CCF0Optional Step|r|n"..note
 		end
 
+		-- Add a line for conditional step (so that ppl may chose to skip it)
+		if conditional then
+			note = "|cFF9482C9Conditional Step|r|n"..note
+		end
 
 		if note then note = strtrim(note) note = string.gsub(note,"\\n","\n") end
 		

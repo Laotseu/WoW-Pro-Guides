@@ -1,3 +1,5 @@
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 --------------------------
 --      WoWPro.lua      --
 --------------------------
