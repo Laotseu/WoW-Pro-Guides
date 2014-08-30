@@ -103,3 +103,13 @@ function WoWPro.WorldEvents:LoadAllGuides()
         self:Print(string.format("Done! %d A, %d N, %d H guides present", aCount, nCount, hCount))
 end	    
 
+-- Empty function to allow the guide to load properly
+--function WoWPro.WorldEvents:GuideHoliday( guide, holiday )
+	-- body
+--	guide.category = holiday
+--end
+
+function WoWPro.WorldEvents:GuideZone( guide, zone )
+	-- body
+	guide.realzone = zone
+end
