@@ -696,7 +696,7 @@ local function createBlizzOptions()
 					end
 			},
 			enableDebug = {
-				order = 20,
+				order = 19,
 				type = "toggle",
 				name = L["Enable Debug"],
 				desc = L["Enables/Disables debug logging"],
@@ -709,6 +709,17 @@ local function createBlizzOptions()
 						end
 						WoWProCharDB.DebugLevel = WoWPro.DebugLevel
 					end
+			},
+			enableDebug = {
+				order = 20,
+				type = "toggle",
+				name = L["Display QID"],
+				desc = L["Enables/Disables displaying the current QID in the quest watcher"],
+				get = function(info) return WoWProCharDB.ShowQID end,
+				set = function(info,val) 
+							WoWProCharDB.ShowQID = not WoWProCharDB.ShowQID
+							WoWPro:UpdateQuestTracker()
+						end
 			},
 			resetGuide = {
 			    order = 21,

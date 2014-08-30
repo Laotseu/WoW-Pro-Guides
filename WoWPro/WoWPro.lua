@@ -1,3 +1,5 @@
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 --------------------------
 --      WoWPro.lua      --
 --------------------------
@@ -29,10 +31,28 @@ BINDING_HEADER_BINDING_WOWPRO = "WoWPro Keybindings"
 _G["BINDING_NAME_CLICK WoWPro_FauxTargetButton:LeftButton"] = "Target quest mob"
 
 WoWPro.Serial = 0
+
+-- For print
+local default_channel = nil
+local function setDefaultChanelForPrint()
+	default_channel = nil
+	for i=1, _G.NUM_CHAT_WINDOWS do
+		local name = _G.GetChatWindowInfo(i)
+		if name and name:lower() == 'output' then
+			default_channel = i
+		end
+	end
+end
+
 -- Add message to internal debug log
 function WoWPro:Add2Log(level,msg)
     if WoWPro.DebugLevel >= level then
-        DEFAULT_CHAT_FRAME:AddMessage( msg )
+		if default_channel then
+			_G["ChatFrame"..default_channel]:AddMessage(msg);
+		else
+			_G.SELECTED_CHAT_FRAME:AddMessage(msg)
+		end
+       -- DEFAULT_CHAT_FRAME:AddMessage( msg )
     end
 	WoWPro.Serial = WoWPro.Serial + 1
 	if WoWPro.Serial > 9999 then
@@ -234,7 +254,7 @@ WoWPro.Tags = { "action", "step", "note", "index", "map", "sticky",
 	"unsticky", "use", "zone", "lootitem", "lootqty", "optional", 
 	"level", "QID","target", "prof", "mat", "rank", "rep","waypcomplete", "why",
 	 "noncombat","active","ach","spell","qcount","NPC","questtext","prereq","leadin","faction",
-	 "buff", "chat","recipe", "gossip","conditional","pet"
+	 "buff", "nobuff", "chat", "recipe", "gossip", "conditional", "pet", "daily"
 }
 
 -- Called before all addons have loaded, but after saved variables have loaded. --
@@ -252,7 +272,12 @@ function WoWPro:OnInitialize()
 	WoWProCharDB.completedQIDs = WoWProCharDB.completedQIDs or {}
 	WoWProCharDB.skippedQIDs = WoWProCharDB.skippedQIDs or {}
 	WoWProDB.global.QID2Guide = WoWProDB.global.QID2Guide  or {}
-	WoWProDB.global.RecklessCombat = false
+	WoWProDB.global.RecklessCombat = WoWProDB.global.RecklessCombat or false
+
+   WoWProDB.global.DailyQuests = WoWProDB.global.DailyQuests or {} -- Detected by GetQuestLogTitle and kept between logins
+   WoWPro.DailyQuests = {} -- Set by |DAILY| flags when the guides are parsed and forgotten between logins
+
+	WoWProDB.global.Deltas = {}
 	if WoWProCharDB.EnableGrail == nil then
 	    WoWProCharDB.EnableGrail = true
 	end
@@ -260,19 +285,27 @@ function WoWPro:OnInitialize()
 	if WoWProCharDB.Enabled == nil then
 	    WoWProCharDB.Enabled = true
 	end
+	WoWProDB.global.Deltas = {}
 	WoWProDB.global.Log = {}
-	WoWProCharDB.DebugLevel = WoWProCharDB.DebugLevel or WoWPro.DebugLevel
-	if not WoWProCharDB.DebugLevel then
-		WoWProDB.global.Deltas = {}
+	if WoWProDB.char.currentguide and 
+		WoWProCharDB.Guide and 
+		WoWProCharDB.Guide[WoWProDB.char.currentguide] and 
+		WoWProCharDB.Guide[WoWProDB.char.currentguide].total then
+		WoWProCharDB.Guide[WoWProDB.char.currentguide].total = nil
 	end
+	WoWProCharDB.DebugLevel = WoWProCharDB.DebugLevel or WoWPro.DebugLevel
 	if WoWProCharDB.AutoHideInsideInstances == nil then
 	    WoWProCharDB.AutoHideInsideInstances = true
 	end
-    WoWPro.DebugLevel = WoWProCharDB.DebugLevel
-    WoWPro.GossipText = nil
-    WoWPro.GuideLoaded = false
-    WoWPro.EnableGrail = WoWProCharDB.EnableGrail or True
-    WoWProDB.profile.Selector = WoWProDB.profile.Selector or {}
+	WoWPro.DebugLevel = WoWProCharDB.DebugLevel
+   WoWPro.GossipText = nil
+   WoWPro.GuideLoaded = false
+   WoWProDB.profile.Selector = WoWProDB.profile.Selector or {}
+
+	WoWProCharDB.Trades  = WoWProCharDB.Trades or {}
+	if WoWProCharDB.Enabled == nil then
+	    WoWProCharDB.Enabled = true
+	end
 end
 
 
@@ -285,10 +318,17 @@ end
 
 -- Called when the addon is enabled, and on log-in and /reload, after all addons have loaded. --
 function WoWPro:OnEnable()
+	-- Find the default channel
+	setDefaultChanelForPrint()
+
 	WoWPro:dbp("|cff33ff33Enabled|r: Core Addon")
     if  WoWProDB.global.RecklessCombat then
         WoWPro:Warning("Achtung!  Beware! Peligro!  Reckless Combat mode enabled.  InCombat interlocks disabled!")
     end
+	
+	-- Diable Aboutis if present since it conflict with WoWPro quest automation
+	if _G.Aboutis then _G.Aboutis:Disable() end
+
 	-- Loading Frames --
 	if not WoWPro.FramesLoaded then --First time the addon has been enabled since UI Load
 		WoWPro:CreateFrames()
@@ -308,6 +348,15 @@ function WoWPro:OnEnable()
 	for name, module in WoWPro:IterateModules() do
 		WoWPro:dbp("Enabling "..name.." module...")
 		module:Enable()
+		
+		-- Build the complete list of possible action labels
+		if module.actionlabels then
+			for k, v in pairs(module.actionlabels) do
+				if not WoWPro.actionlabels[k] then
+					WoWPro.actionlabels[k] = v
+				end
+			end
+		end
 	end
 	
 	WoWPro:CustomizeFrames()	-- Applies profile display settings
@@ -334,25 +383,25 @@ function WoWPro:OnEnable()
 	WoWPro:RegisterEvents( {															-- Setting up core events
 		"PLAYER_REGEN_ENABLED", "PARTY_MEMBERS_CHANGED", "QUEST_LOG_UPDATE",
 		"UPDATE_BINDINGS", "PLAYER_ENTERING_WORLD", "PLAYER_LEAVING_WORLD","UNIT_AURA", "TRADE_SKILL_SHOW", "GOSSIP_SHOW",
-		"QUEST_DETAIL", "QUEST_GREETING", "QUEST_TURNED_IN", "QUEST_ACCEPTED"
+		"QUEST_DETAIL", "QUEST_GREETING"
 		
 	})
 	bucket:RegisterBucketEvent({"CHAT_MSG_LOOT", "BAG_UPDATE"}, 0.333, WoWPro.AutoCompleteLoot)
 	bucket:RegisterBucketEvent({"CRITERIA_UPDATE"}, 0.250, WoWPro.AutoCompleteCriteria)
+	bucket:RegisterBucketEvent({"GOSSIP_SHOW", "QUEST_GREETING", "QUEST_DETAIL", "QUEST_PROGRESS", "QUEST_COMPLETE"}, 0.1, WoWPro.QuestDialogAutomation)
 	bucket:RegisterBucketEvent({"LOOT_CLOSED"}, 0.250, WoWPro.AutoCompleteChest)
+	bucket:RegisterBucketMessage("WoWPro_QuestDialogAutomation", 0.1, WoWPro.QuestDialogAutomation)
 	bucket:RegisterBucketMessage("WoWPro_LoadGuide",0.25,WoWPro.LoadGuideReal)
 	bucket:RegisterBucketMessage("WoWPro_LoadGuideSteps",0.25,WoWPro.LoadGuideStepsReal)
 	bucket:RegisterBucketMessage("WoWPro_GuideSetup",0.25,WoWPro.SetupGuideReal)
 	bucket:RegisterBucketMessage("WoWPro_UpdateGuide",0.333,WoWPro.UpdateGuideReal)
-	bucket:RegisterBucketMessage("WoWPro_PuntedQLU",0.333,WoWPro.PuntedQLU)
+	-- bucket:RegisterBucketMessage("WoWPro_PuntedQLU",0.333,WoWPro.PuntedQLU)
 	if WoWPro.Recorder then
 	    bucket:RegisterBucketMessage("WoWPro_PostQuestLogUpdate",0.1,WoWPro.Recorder.PostQuestLogUpdate)
-	    bucket:RegisterBucketMessage("WoWPro_PostLoadGuide",0.1,WoWPro.Recorder.PostGuideLoad)
 	end
 	
 	WoWPro.LockdownTimer = nil
 	WoWPro.LockdownCounter = 5  -- times until release and give up to wait for other addons
-	WoWPro:dbp("Setting Timer OnEnable")
 	WoWPro.EventFrame:SetScript("OnUpdate", WoWPro.LockdownHandler)
 	    
 	WoWPro.EventFrame:SetScript("OnEvent",WoWPro.EventHandler)
@@ -364,6 +413,20 @@ function WoWPro:OnEnable()
 	    return
 	end
 
+	-- Remove the empty radio buttons from all menus
+	-- Remove the empty radio button for all
+	for i,v in ipairs(WoWPro.DropdownMenu) do
+		v.notCheckable 	= true
+	end
+
+	WoWPro:LoadGuide()
+	WoWPro.FirstMapCall = true 	-- Force an arrow reset
+	WoWPro:PopulateQuestLog()
+	WoWPro:AutoCompleteQuestUpdate(nil)
+	WoWPro:AutoCompleteZone()
+	
+	WoWPro:UpdateQuestTracker()
+	WoWPro:UpdateGuide()
 end	
 
 -- Called when the addon is disabled --
@@ -378,6 +441,10 @@ function WoWPro:OnDisable()
 	WoWPro.EventFrame:UnregisterAllEvents()	-- Unregisters all events
 	WoWPro:RemoveMapPoint()							-- Removes any active map points
 	WoWPro:Print("|cffff3333Disabled|r: Core Addon")
+
+	-- Re-enable Aboutis
+	if _G.Aboutis then _G.Aboutis:Enable() end
+
 end
 
 -- Tag Registration Function --
@@ -511,7 +578,7 @@ function WoWPro:GuideLevels(guide,lowerLevel,upperLevel,meanLevel)
     end
     guide['startlevel'] = lowerLevel
     guide['endlevel'] = upperLevel
-    guide['level'] = meanLevel
+    guide['level'] = meanLevel or (lowerLevel + upperLevel) / 2
 end
 
 function WoWPro:GuideRaceSpecific(guide,race)

@@ -101,7 +101,7 @@
 -- Who: Jiyambi
 
 local guide = WoWPro:RegisterGuide("ScoZul7778", "Leveling", "Zul'Drak", "Scoot", "Neutral")
-WoWPro:GuideLevels(guide,74,75, 74.0604)
+WoWPro:GuideLevels(guide,74,76, 74.0604)
 WoWPro:GuideNextGuide(guide, "ScoSho7879|ScoSho7879")
 WoWPro:GuideIcon(guide,"ACH",4928)
 WoWPro:GuideSteps(guide, function()
