@@ -116,7 +116,7 @@ A Kill Gil|QID|27598|M|83.86,39.98|N|From Crazy Larry.|
 A Can't Take It With Them|QID|27599|M|83.86,39.98|
 C Kill Gil|QID|27598|S|M|90.56,30.70|N|Kill 7 Gilblin Stalkers.|
 C Can't Take It With Them|QID|27599|NC|T|Deceased Bogpaddle Privateer|U|62785|M|93.47,25.96|N|Loot the Deceased Bogpaddle Privateer corpses. Use the potion to get things done faster.|
-C Kill Gil|QID|27598|US|M|90.56,30.70|N|Kill 7 Gilblin Stalkers.|
+C Kill Gil|QID|27598|USM|90.56,30.70|N|Kill 7 Gilblin Stalkers.|
 T Kill Gil|QID|27598|M|83.86,40.04|N|To Crazy Larry.|
 T Can't Take It With Them|QID|27599|M|83.86,40.04|N|To Crazy Larry.|
 

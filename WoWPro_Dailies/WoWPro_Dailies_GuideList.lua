@@ -8,7 +8,7 @@ local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...))
 WoWPro.Dailies.GuideList = {}
 
 -- Creating a Table of Guides for the Guide List and sorting based on level --
-local guides
+local guides = {}
 
 local function AddInfo(guide)
     if guide.name then
@@ -46,7 +46,7 @@ local function Init()
     if WoWPro.Dailies.GuideList.Guides then
         return
     end
-    guides = {}
+    wipe(guides)
     for guidID,guide in pairs(WoWPro.Guides) do
     	if guide.guidetype == "Dailies" then
     	    local function progress ()
