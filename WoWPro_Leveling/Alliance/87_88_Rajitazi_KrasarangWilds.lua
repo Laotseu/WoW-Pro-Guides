@@ -225,7 +225,7 @@ T Lotus Tea|QID|30351||N|To Kang Bramblestaff, next to you. (if you dont turn it
 T The Pools of Youth|QID|30347|M|67.45,32.64|N|To Lorekeeper Vaeldrin.|
 T Lotus Tea|QID|30351|M|67.36,32.75|N|To Kang Bramblestaff. |
 A Immortality?|QID|30348|M|67.45,32.64|N|From Lorekeeper Vaeldrin.|
-C Immortality?|QID|30348|M|67.45,32.64|N|Watch and wait.|
+C Immortality?|QID|30348|NC|M|67.45,32.64|N|Watch and wait.|
 T Immortality?|QID|30348|M|67.45,32.64|N|To Lorekeeper Vaeldrin.|
 A Going on the Offensive|QID|30363|M|67.45,32.70|N|From Lyalia.|
 
@@ -345,7 +345,7 @@ A The Lord Reclaimer|QID|30359|M|15.09,39.42|N|From Lorekeeper Vaeldrin.|
 K Kill Groundbreaker Brojai|QID|30359|T|Groundbreaker Brojai|QO|Groundbreaker Brojai slain: 1/1|M|23.58,48.85|N|Talk to Lyelia to start a scripted event which ends with you killing Brojai.|
 T The Lord Reclaimer|QID|30359|M|24.70,33.98|N|To Lorekeeper Vaeldrin.|
 A The Waters of Youth|QID|30445|M|24.70,33.98|N|From Lorekeeper Vaeldrin.|
-C The Waters of Youth|QID|30445|M|24.70,33.98|
+C The Waters of Youth|QID|30445|NC|M|24.70,33.98|
 T The Waters of Youth|QID|30445|M|24.70,33.98|N|To Lyalia.|
 A Warn Stoneplow|QID|30360|M|24.74,34.04|N|From Lyalia.|
 
