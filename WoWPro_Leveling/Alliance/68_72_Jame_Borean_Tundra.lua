@@ -538,7 +538,7 @@ N A note of caution|QID|11912|N|When flying around in this area, be careful not 
 C Basic Training |QID|11918|N|Kill Coldarra Spellweavers.|S|
 C Secrets of the Ancients |QID|11910|N|Kill Glacial Ancients and Magic-bound Ancients.|S|
 C Nuts for Berries |QID|11912|NC|N|Pick up Frostberries.|S|
-C Coldarra Spellbinders |QID|11941|L|35648|N|Kill Coldarra Spellbinders until one drops a Scintillating Fragment|M|33,28|
+N Coldarra Spellbinders |QID|11941|L|35648|N|Kill Coldarra Spellbinders until one drops a Scintillating Fragment|M|33,28|
 A Puzzling... |QID|11941|U|35648|N|Right-click the Scintillating Fragment to accept this quest.|M|35.0,28.0|
 T Puzzling... |QID|11941|N|To Raelorasz.|M|33.31,34.53|
 
@@ -572,8 +572,8 @@ R Transitus Shield |QID|11967|N|Talk to Keristrasza for a teleport back to the T
 T Mustering the Reds |QID|11967|N|To Raelorasz.|M|33.31,34.53|
 A Springing the Trap |QID|11969|N|From Raelorasz.|M|33.31,34.53|
 C Keep the Secret Safe |QID|11914|N|Kill Arcane Serpents near the Nexus.|Z|Borean Tundra|M|27.8,24.2|S|
+C Hatching a Plan |QID|11936|S|NC|N|Click on the Blue Dragon Eggs near the Nexus.|M|27.8,24.2|
 K Coldarra Wyrmkins |QID|11936|L|35586 5|N|Kill Coldarra Wyrmkins until you get 5 Frozen Axes.|M|23.60,34.32|S|
-C Hatching a Plan |QID|11936|US|NC|N|Click on the Blue Dragon Eggs near the Nexus.|M|27.8,24.2|
 C Nexus Geological Reading |QID|11900|NC|QO|Nexus Geological Reading: 1/1|N|Go down to the Nexus to find another Coldarra Geological Monitor and click it.|M|28.26,28.47|
 K Coldarra Wyrmkins |QID|11936|L|35586 5|N|Kill Coldarra Wyrmkins until you get 5 Frozen Axes.|M|23.60,34.32|US|
 C Hatching a Plan |QID|11936|US|NC|N|Click on the Blue Dragon Eggs near the Nexus.|M|27.8,24.2|
