@@ -8,7 +8,7 @@ local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...))
 WoWPro.Dailies.GuideList = {}
 
 -- Creating a Table of Guides for the Guide List and sorting based on level --
-local guides
+local guides = {}
 
 local function AddInfo(guide)
     if guide.name then
@@ -46,7 +46,7 @@ local function Init()
     if WoWPro.Dailies.GuideList.Guides then
         return
     end
-    guides = {}
+    wipe(guides)
     for guidID,guide in pairs(WoWPro.Guides) do
     	if guide.guidetype == "Dailies" then
     	    local function progress ()
@@ -62,7 +62,7 @@ local function Init()
     			Zone = guide.zone,
     			Name = guide.GID,
     		    Author = guide.author,
-    			Category = guide.category,
+    			Category = guide.category or "",
     			Progress = progress
                 --GID = guide.GID
     		})
@@ -147,9 +147,11 @@ function WoWPro.Dailies.GuideTooltipInfo(row, tooltip, guide)
     else
         GameTooltip:AddTexture("Interface\\PaperDollInfoFrame\\SpellSchoolIcon5")
     end
-    GameTooltip:AddDoubleLine("Start Level:",tostring(guide.startlevel),1,1,1,unpack(WoWPro.LevelColor(guide.startlevel)))
+    GameTooltip:AddDoubleLine("Start Level:",tostring(guide.startlevel),1,1,1,guide.startlevel and unpack(WoWPro.LevelColor(guide.startlevel)) or 1)
     GameTooltip:AddDoubleLine("Mean Level:",string.format("%.2f",guide.level or 0),1,1,1,unpack(WoWPro.LevelColor(guide)))
-    GameTooltip:AddDoubleLine("End Level:",tostring(guide.endlevel),1,1,1,unpack(WoWPro.LevelColor(guide.endlevel)))
+    if guide.endlevel then
+        GameTooltip:AddDoubleLine("End Level:",tostring(guide.endlevel),1,1,1,unpack(WoWPro.LevelColor(guide.endlevel)))
+    end
 end
 
 WoWPro.Dailies:dbp("Guide Setup complete")

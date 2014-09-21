@@ -110,7 +110,7 @@ L Level 26 |QID|26035|LVL|26|N|This guide is recommended for those Level 26 and 
 R Refuge Pointe|QID|26035|M|39.91,48.71|N|Head to Refuge Pointe in Arathi Highlands.|
 
 f Refuge Pointe|NC|M|39.9,47.4|N|Get the flight point for Refuge Point from Cedrik Prose.|
-T Into Arathi|QID|26139|O|M|39.92,48.73|N|To Captain Nials.|
+T Into Arathi|QID|26139|M|39.92,48.73|N|To Captain Nials.|
 T Hero's Call: Arathi Highlands!|QID|28573|O|M|39.92,48.73|N|To Captain Nials.|
 
 h Refuge Pointe|QID|26035|M|39.91,49.04|N|Set your home point at Vikki Lonsav.|

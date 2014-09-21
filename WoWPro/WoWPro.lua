@@ -383,8 +383,8 @@ function WoWPro:OnEnable()
 	WoWPro:RegisterEvents( {															-- Setting up core events
 		"PLAYER_REGEN_ENABLED", "PARTY_MEMBERS_CHANGED", "QUEST_LOG_UPDATE",
 		"UPDATE_BINDINGS", "PLAYER_ENTERING_WORLD", "PLAYER_LEAVING_WORLD","UNIT_AURA", "TRADE_SKILL_SHOW", "GOSSIP_SHOW",
-		"QUEST_DETAIL", "QUEST_GREETING"
-		
+		"QUEST_DETAIL", "QUEST_GREETING",
+		"CINEMATIC_STOP"
 	})
 	bucket:RegisterBucketEvent({"CHAT_MSG_LOOT", "BAG_UPDATE"}, 0.333, WoWPro.AutoCompleteLoot)
 	bucket:RegisterBucketEvent({"CRITERIA_UPDATE"}, 0.250, WoWPro.AutoCompleteCriteria)
@@ -747,16 +747,16 @@ function WoWPro.LevelColor(guide)
     end
     if type(guide) == "table" then
          WoWPro:dbp("WoWPro.LevelColor(%s)",guide.GID)
-        if (playerLevel < guide['startlevel']) then
-            return {WoWPro:QuestColor(guide['level'] or guide['endlevel'])}
+        if (playerLevel < (guide['startlevel'] or 1)) then
+            return {WoWPro:QuestColor(guide['level'] or guide['endlevel'] or 90)}
         end
-        if (playerLevel >  guide['endlevel']) then
-            return {WoWPro:QuestColor(guide['endlevel'])}
+        if (playerLevel >  (guide['endlevel'] or 90)) then
+            return {WoWPro:QuestColor(guide['endlevel'] or 90)}
         end
         if guide['level'] then
-            return {WoWPro:QuestColor(guide['level'])}
+            return {WoWPro:QuestColor(guide['level'] or 1)}
         else
-            return {WoWPro:QuestColor((guide['startlevel']+guide['endlevel'])/2.0)}
+            return {WoWPro:QuestColor(((guide['startlevel'] or 1)+(guide['endlevel'] or 90))/2.0)}
         end
     end
     

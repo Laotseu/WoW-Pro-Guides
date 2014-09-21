@@ -141,11 +141,11 @@ r Sell junk, repair, restock|QID|10516|N|Sell junk, repair, restock |M|37.7,64.8
 C Getting the Bladespire Tanked|N|Use the beer ogres until you complete this quest. |QID|10512|NC|M|40.3,53.0|S|U|30353|
 C The Bladespire Ogres |N|Kill any ogre you see for this quest.|QID|10504|M|40.3,53.0|S|
 A The Trappings of a Vindicator |QID|10516|M|44.0,51.9|N|From Vindicator Vuuleen.|
-C Vindicator Vuuleen's Blade |QID|10516|QO|1|U|30353|N|Go in this building and kill the two non-elite mobs. Do not pull the elite mobs. Kill Droggam by going close to him (without attracting any mob), and use the Bloodmaul Brutebane Keg on him. Droggam will run towards you without attracting the elites. Loot the blade. (39.20, 52.80)|M|39.20, 52.80|
-C Vindicator Vuuleen's Shield |N|Kill Mugdorg in this building by using the beer in the same manner as last time. Take the shield.|QID|10516|QO|2|U|30353|M|42.00,57.00|
+K Vindicator Vuuleen's Blade |T|Vindicator Vuuleen|QID|10516|QO|1|U|30353|N|Go in this building and kill the two non-elite mobs. Do not pull the elite mobs. Kill Droggam by going close to him (without attracting any mob), and use the Bloodmaul Brutebane Keg on him. Droggam will run towards you without attracting the elites. Loot the blade. (39.20, 52.80)|M|39.20, 52.80|
+K Vindicator Vuuleen's Shield |T|Vindicator Vuuleen|N|Kill Mugdorg in this building by using the beer in the same manner as last time. Take the shield.|QID|10516|QO|2|U|30353|M|42.00,57.00|
 T The Trappings of a Vindicator |QID|10516|M|44.0,51.9|N|To Vindicator Vuuleen.|
 A Gorr'Dim, Your Time Has Come... |QID|10517|M|44.0,51.9|N|From Vindicator Vuuleen.|
-C Gorr'Dim, Your Time Has Come... |U|30353|N|Kill Gorr'Dim by using the beer in the same manner as before. |QID|10517|M|40.00,49.00|
+K Gorr'Dim, Your Time Has Come... |T|Gorr'Dim|U|30353|N|Kill Gorr'Dim by using the beer in the same manner as before. |QID|10517|M|39.6,49.3|
 T Gorr'Dim, Your Time Has Come... |QID|10517|M|44.0,51.9|N|To Vindicator Vuuleen.|
 A Planting the Banner|QID|10518|N|From Vindicator Vuuleen.|
 C Bladespire Clan Banner|QID|10518|QO|1|N|Kill a Bladespire Champion on the second floor of this building (stairs are outside) and loot the Bladespire Clan Banner.|M|39,58|

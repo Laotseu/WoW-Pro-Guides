@@ -312,7 +312,7 @@ C Lycanthoth the Corruptor|QID|25273|U|52682|M|32.46,37.27|N|Head inside the cav
 T Lycanthoth the Corruptor|QID|25273|M|32.46,37.30|N|To Spirit of Goldrinn.|FACTION|Alliance|
 A The Shrine Reclaimed|QID|25280|PRE|25273|M|29.63,29.36|N|From Spirit of Goldrinn.|FACTION|Alliance|
 T The Shrine Reclaimed|QID|25280|M|28.28,29.81|N|To Ian Duran.|FACTION|Alliance|
-A Cleaning House|QID|25278|PRE|25280|M|28.21,29.85|N|From Ian Duran.|FACTION|Alliance|
+A Cleaning House|QID|25278|M|28.21,29.85|N|From Ian Duran.|FACTION|Alliance|
 
 A The Voice of Lo'Gosh|QID|25269|M|35.7,19.5|N|From Oomla Whitehorn.|FACTION|Horde|
 T The Voice of Lo'Gosh|QID|25269|M|30.1,31.7|N|If you don't have a flying mount. Follow the road west until it branches. Take the fork to the right, down to a valley. If you are following the road down, continue straight, past the wolf statue. In a cage at the edge of the small pond is Takrik Ragehowl.|FACTION|Horde|
@@ -326,8 +326,8 @@ A The Shrine Reclaimed|QID|25279|M|29.6,29.4|N|From Spirit of Lo'Gosh after you 
 T The Shrine Reclaimed|QID|25279|M|28.4,29.9|N|At Takrik Ragehowl to the west.|FACTION|Horde|
 A Cleaning House|QID|25277|M|28.4,29.9|N|From Takrik Ragehowl.|FACTION|Horde|
 
-A From the Mouth of Madness|QID|25297|PRE|25280|RANK|2|M|28.27,29.91|N|From Rio Duran.|
-A The Eye of Twilight|QID|25300|PRE|25280|RANK|2|M|28.34,29.97|N|From Royce Duskwhisper.|
+A From the Mouth of Madness|QID|25297|RANK|2|M|28.27,29.91|N|From Rio Duran.|
+A The Eye of Twilight|QID|25300|RANK|2|M|28.34,29.97|N|From Royce Duskwhisper.|
 C Bitterblossom|QID|25297|NC|QO|Bitterblossom: 1/1|RANK|2|M|29.4,31.6|N|Loot Bitterblossom from around the edge of the pond.|
 
 C Cleaning House|QID|25278|S|M|27.7,34.5|N|Kill Hovel Brutes and Shadowcasters.|FACTION|Alliance|
@@ -344,7 +344,7 @@ A Gar'gol's Gotta Go|QID|25328|M|27.26,40.75|N|From Kristoff Manheim.|
 K Gar'gol's Gotta Go|QID|25328|T|Gar'gol|M|26.39,38.69|N|Kill Gar'gol then loot the Rusty Skull Key from Gar'gol's Personal Treasure Chest.|
 T Mastering Puppets|QID|25301|RANK|2|M|25.83,41.56|N|From the entrance take your first left and then at the next split take a right. Continue straight until you reach a pedestal with a book on it.|
 A Elementary!|QID|25303|PRE|25301|RANK|2|M|25.81,41.56|N|From The Twilight Apocrypha.|
-C Elementary!|QID|25303|RANK|2|M|25.89,41.58|N|Activate the four orbs in the following order: \nCrucible of Fire, \nCrucible of Earth, \nCrucible of Air, \n Crucible of Water. \n\nThis will summon The Manipulator. Kill him to complete the quest.|
+C Elementary!|QID|25303|RANK|2|M|25.89,41.58|N|Activate the four orbs in the following order: \nCrucible of Fire, \nCrucible of Earth, \nCrucible of Air, \nCrucible of Water. \n\nThis will summon The Manipulator. Kill him to complete the quest.|
 T Elementary!|QID|25303|RANK|2|M|25.84,41.65|N|To The Twilight Apocrypha.|
 A Return to Duskwhisper|QID|25312|PRE|25303|RANK|2|M|25.84,41.65|N|From The Twilight Apocrypha.|
 
@@ -640,9 +640,9 @@ A Walking the Dog|QID|25294|PRE|25291|M|90.08,56.48|N|From Instructor Devoran.|
 A Gather the Intelligence|QID|25296|PRE|25291|M|88.36,58.57|N|From the Outhouse Hideout.|
 C Twilight Communique|QID|25296|NC|M|89.4,55.5|QO|Twilight Communique: 1/1|N|Search the camp until you find the Twilight Communique. It can be just about anywhere in the camp so just keep looking around until you find it. Try to grab it when none of the Twilight Guards are close by. If they see you take the communique they will attack.|
 N Walking the Dog|QID|25294|U|52717|M|90.11,56.32|N|Once back in the camp, use the Fiery Leash to summon the Spawn of Smolderos. Click this step once you've summoned him.|
+C Physical Training: Forced Labor|QID|25509|S|U|54788|M|89.55,49.35|N|Use the Twilight Pick on Darkwhisper Lodestones on your way to the other camp.|NC|
 C Walking the Dog|QID|25294|S|U|52708|M|90.11,56.32|N|Kill Spinescale Basilisk for Charred Basilisk Meat. Feed it to the Spawn of Smolderos.|
 ;l Charred Basilisk Meat|QID|25294|L|52708 5|S|M|89.55,49.35|N|Kill Spinescale Basilisk and loot 5 Charred Basilisk Meat.|
-C Physical Training: Forced Labor|QID|25509|S|U|54788|M|89.55,49.35|N|Use the Twilight Pick on Darkwhisper Lodestones on your way to the other camp.|NC|
 C Gather the Intelligence|QID|25296|M|91.95,51.60|N|Leave the camp. Head northeast, toward the other camp, Doom's Vigil. Find the Hyjal Battleplans somewhere in the Doom's Vigil camp.|NC|
 ;l Charred Basilisk Meat|QID|25294|L|52708 5|US|M|89.55,49.35|N|Kill Spinescale Basilisk and loot 5 Charred Basilisk Meat.|
 C Physical Training: Forced Labor|QID|25509|US|U|54788|M|89.55,49.35|N|Use the Twilight Pick on Darkwhisper Lodestones.|NC|
