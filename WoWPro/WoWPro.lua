@@ -740,16 +740,16 @@ function WoWPro.LevelColor(guide)
     end
     if type(guide) == "table" then
          WoWPro:dbp("WoWPro.LevelColor(%s)",guide.GID)
-        if (playerLevel < guide['startlevel']) then
-            return {WoWPro:QuestColor(guide['level'] or guide['endlevel'])}
+        if (playerLevel < (guide['startlevel'] or 1)) then
+            return {WoWPro:QuestColor(guide['level'] or guide['endlevel'] or 90)}
         end
-        if (playerLevel >  guide['endlevel']) then
-            return {WoWPro:QuestColor(guide['endlevel'])}
+        if (playerLevel >  (guide['endlevel'] or 90)) then
+            return {WoWPro:QuestColor(guide['endlevel'] or 90)}
         end
         if guide['level'] then
-            return {WoWPro:QuestColor(guide['level'])}
+            return {WoWPro:QuestColor(guide['level'] or 1)}
         else
-            return {WoWPro:QuestColor((guide['startlevel']+guide['endlevel'])/2.0)}
+            return {WoWPro:QuestColor(((guide['startlevel'] or 1)+(guide['endlevel'] or 90))/2.0)}
         end
     end
     
