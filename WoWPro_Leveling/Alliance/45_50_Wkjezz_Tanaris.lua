@@ -108,23 +108,28 @@ return [[
 
 L Level 44 |QID|27446|LVL|44|N|You need to be Level 44 to work this guide.|
 
-R Thousand Needles |QID|27446|LVL|45|M|75.95,74.58|N|This quest starts with a single lead-in quest from Fizzle & Pozzik's Speedbarge in Thousand Needles.  \n\nIf you have not quested in Thousand Needles before this point, you should fly to Shadebough, Feralas or Mudsprocket, Dustwallow Marsh.  From there, get the quest To New Thalanaar, fly to New Thalanaar, do the quest The Grimtotem are Coming, then the quest Two If By Boat.|Z|Thousand Needles|
+;R Thousand Needles |QID|27446|LVL|45|M|75.95,74.58|N|This quest starts with a single lead-in quest from Fizzle & Pozzik's Speedbarge in Thousand Needles.  \n\nIf you have not quested in Thousand Needles before this point, you should fly to Shadebough, Feralas or Mudsprocket, Dustwallow Marsh.  From there, get the quest To New Thalanaar, fly to New Thalanaar, do the quest The Grimtotem are Coming, then the quest Two If By Boat.|Z|Thousand Needles|
+A To New Thalanaar |QID|25479;25481|LEAD|27446|N|This quest starts with a single lead-in quest from Fizzle & Pozzik's Speedbarge in Thousand Needles.  \n\nIf you have not quested in Thousand Needles before this point, you should fly to Shadebough, Feralas or Mudsprocket, Dustwallow Marsh.  From there, get the quest To New Thalanaar, fly to New Thalanaar, do the quest The Grimtotem are Coming, then the quest Two If By Boat.|O|
+T To New Thalanaar |QID|25479;25481|M|86.1,45.2|Z|Feralas|N|To Caryssia Moonhunter.|
+A Two If By Boat |QID|25488|LEAD|27446|M|88.5,44.4|Z|Feralas|N|From Rendow.|O|
+T Two If By Boat |QID|25488|M|75.9,74.6|Z|Thousand Needles|N|To Fizzle Brassbolts.|
 R Fizzle & Pozzik's Speedbarge |QID|27446|N|This guide starts with a single lead-in quest from Fizzle & Pozzik's Speedbarge in Thousand Needles, so head there first.|
 
-A Tanaris is Calling|QID|27446|M|75.95,74.58|Z|Thousand Needles|N|From Fizzle Brassbolts.|
-F Gadgetzan|QID|27446|M|79.11,71.85|Z|Thousand Needles|N|Fly to Gadgetzan from Tilly Topspin.|
+A Tanaris is Calling|QID|27446|M|75.95,74.58|LEAD|25048|Z|Thousand Needles|N|From Fizzle Brassbolts.|O|
+f Fizzle & Pozzik's Speedbarge |M|79.1,71.9|Z|Thousand Needles|N|From Tilly Topspin.|
+F Gadgetzan|QID|27446|M|79.11,71.85;74.7,95.3;75.5,97.3|CC|Z|Thousand Needles|N|Fly to Gadgetzan from Tilly Topspin if it's  available, otherwise you have to run there.|
 r Sell Junk / Repair and Restock|QID|27446|M|52.28,29.72|N|Sell any junk, and repair at Kringle Goodsteel.\n\nGadgetzan is home to the banker, if you need to utilise this.\n\nClick here to continue.|
 A Butcherbot|QID|25112|M|52.24,28.07|N|From Driz Plunkbow.|
 h Gadgetzan|QID|27446|M|52.59,27.00|N|At Innkeeper Fizzgrimble.|
-;f Gadgetzan|QID|27446|M|51.32,29.45|N|At Bera Stonehammer.|
+f Gadgetzan|M|51.32,29.45|N|At Bera Stonehammer.|
 T Tanaris is Calling|QID|27446|M|51.23,29.90|N|To Kelsey Steelspark.|
 
 A Seaside Salvage|QID|25048|M|51.23,29.90|N|From Kelsey Steelspark.|
 A Puddle Stomping|QID|25049|M|51.25,29.88|N|From Kelsey Steelspark.|
 A Butcherbot|QID|25112|M|52.24,28.07|N|From Driz Plunkbow.|
-C Seaside Salvage|QID|25048|S|M|54.88,36.83|N|Pick up Steamwheedle Supplies.|
+C Seaside Salvage|QID|25048|S|NC|M|54.88,36.83|N|Pick up Steamwheedle Supplies.|
 C Puddle Stomping|QID|25049|M|54.93,43.58|N|Kill 8 Tidal Striders.|
-C Seaside Salvage|QID|25048|US|M|54.88,36.83|N|Pick up Steamwheedle Supplies.|
+C Seaside Salvage|QID|25048|US|NC|M|54.88,36.83|N|Pick up Steamwheedle Supplies.|
 C Butcherbot|QID|25112|U|52715|M|49.73,39.34|N|Progress to this location killing Basalisks as you go. Once dead use the Butcherbot Control when targeting the Basilisks.|
 T Seaside Salvage|QID|25048|M|51.27,29.98|N|To Kelsey Steelspark.|
 T Puddle Stomping|QID|25049|M|51.25,29.94|N|To Kelsey Steelspark.|
@@ -142,11 +147,11 @@ A Dead Man's Chest|QID|25052|M|72.17,45.21|N|From Kelsey Steelspark.|
 A To The Ground!|QID|25053|M|72.17,45.21|N|From Kelsey Steelspark.|
 A Lootin' Plunder|QID|25054|M|72.17,45.21|N|From Kelsey Steelspark.|
 C Dead Man's Chest|QID|25052|S|M|72.61,46.39|N|Kill Southsea Pirates.|
-C Lootin' Plunder|QID|25054|S|M|71.50,46.79|N|Look inside the shacks, and collect Pirate Loot.|
-U To The Ground!|QID|25053|U|51547|QO|Northwest Shack: 1/1|M|71.67,46.75|N|The 1st building to torch is here.|
-U To The Ground!|QID|25053|U|51547|QO|Southwest Shack: 1/1|M|71.93,48|N|The second building to set on fire is here.|
-C To The Ground!|QID|25053|U|51547|M|72.88,46.09|N|The last building to torch is here.|
-C Lootin' Plunder|QID|25054|US|M|71.50,46.79|N|Finish collecting Pirate Loot.|
+C Lootin' Plunder|QID|25054|NC|S|M|71.50,46.79|N|Look inside the shacks, and collect Pirate Loot.|
+C To The Ground!|QID|25053|NC|U|51547|QO|Northwest Shack: 1/1|M|71.67,46.75|N|The 1st building to torch is here.|
+C To The Ground!|QID|25053|NC|U|51547|QO|Southwest Shack: 1/1|M|71.93,48|N|The second building to set on fire is here.|
+C To The Ground!|QID|25053|NC|U|51547|QO|Northeast Shack: 1/1|M|72.88,46.09|N|The last building to torch is here.|
+C Lootin' Plunder|QID|25054|NC|US|M|71.50,46.79|N|Finish collecting Pirate Loot.|
 C Dead Man's Chest|QID|25052|US|M|72.61,46.39|N|Finish killing Pirates.|
 L Level 46|QID|25052|LVL|46|N|You should be around level 46 by this point.|
 T Dead Man's Chest|QID|25052|M|72.22,45.22|N|To Kelsey Steelspark.|
@@ -160,7 +165,7 @@ C Filling Our Pockets|QID|26887|M|69.94,53.44|N|Beware the Strongarms; They will
 T Going Off-Task|QID|26886|M|72.17,45.23|N|To Kelsey Steelspark.|
 T Filling Our Pockets|QID|26887|M|72.17,45.23|N|To Kelsey Steelspark.|
 A Captain Dreadbeard|QID|25166|M|72.17,45.23|N|From Kelsey Steelspark.|
-C Captain Dreadbeard|QID|25166|M|71.04,55.62|N|If you're quick you can get here through the path you cleared from the last quest.|
+K Captain Dreadbeard|QID|25166|T|Captain Dreadbeard|M|71.04,55.62|N|If you're quick you can get here through the path you cleared from the last quest.|
 T Captain Dreadbeard|QID|25166|M|72.17,45.19|N|To Kelsey Steelspark.|
 A All Cheered Out|QID|26889|M|72.17,45.19|N|From Kelsey Steelspark.|
 
@@ -181,9 +186,9 @@ T I'm With Scorpid|QID|25521|M|42.46,24.25|N|To Gus Rustflutter.|
 A Gargantapid|QID|25522|M|42.46,24.25|N|From Gus Rustflutter.|
 T Blood to Thrive|QID|25021|M|42.27,23.91|N|To Mazoga.|
 A Sang'thraze the Deflector|QID|25025|M|42.27,23.91|N|From Mazoga.|
-C Gargantapid|QID|25522|M|45.89,24.51|N|Head inside the cave, kill and loot Gargantapid.|
+K Gargantapid|QID|25522|T|Gargantapid|M|45.89,24.51|N|Head inside the cave, kill and loot Gargantapid.|
 T Gargantapid|QID|25522|M|42.46,24.22|N|To Gus Rustflutter.|
-C Sang'thraze the Deflector|QID|25025|M|44.88,44.32|N|Kill and loot Zakkaru.|
+K Zakkaru|QID|25025|T|Zakkaru|M|44.88,44.32|N|Kill and loot Zakkaru.|
 T Sang'thraze the Deflector|QID|25025|M|42.28,23.86|N|To Mazoga.|
 A Darkest Mojo|QID|25026|M|42.28,23.86|N|From Mazoga.|
 C Darkest Mojo|QID|25026|M|38.92,23.98|N|If zombies seem in short supply, try clicking on shallow graves.|
@@ -225,15 +230,15 @@ C Just Trying to Kill Some Bugs|QID|24953|M|54.54,72.01|N|Explode!|
 T Just Trying to Kill Some Bugs|QID|24953|M|55.65,60.83|N|To Zeke Bootscuff.|
 A Land's End|QID|25061|M|55.31,60.30|N|From Narain Soothfancy.|
 A Find OOX-17/TN!|QID|351|O|U|8623|N|By now you should be high enough level to handle the Beacon quest. This is why I have pathed this guide like this up until now, giving you more chance to loot the Beacon. If you have not had the beacon drop please skip this step.|
-T Find OOX-17/TN!|QID|351|O|M|59.81,64.06|N|To Homing Robot OOX-17/TN.|
-A Rescue OOX-17/TN!|QID|648|O|PRE|351|M|59.80,63.99|N|From Homing Robot OOX-17/TN. This is optional as it the turn-in requires you to go to Booty Bay.|
-C Rescue OOX-17/TN!|QID|648|O|M|60.86,53.63|N|Escort the chicken to safety.|
+T Find OOX-17/TN!|QID|351|M|59.81,64.06|N|To Homing Robot OOX-17/TN.|
+A Rescue OOX-17/TN!|QID|648|PRE|351|M|59.80,63.99|N|From Homing Robot OOX-17/TN. This is optional as it the turn-in requires you to go to Booty Bay.|
+C Rescue OOX-17/TN!|QID|648|M|60.86,53.63|N|Escort the chicken to safety.|
 T Land's End|QID|25061|CS|M|50.61,76.03;49.99,82.92|N|To Kelsey Steelspark.|
 
 A Define "Crazy"|QID|25060|M|50.00,82.93|N|From Kelsey Steelspark.|
 A What We Came For|QID|25062|M|50.00,82.93|N|From Kelsey Steelspark.|
 C Define "Crazy"|QID|25060|M|51.68,91.20|N|Kill Crazed Bilgewater Survivers.|S|
-C What We Came For|QID|25062|M|50.76,90.75|N|Loot a Bilgewater Footlocker.|
+C What We Came For|QID|25062|NC|M|50.76,90.75|N|Loot a Bilgewater Footlocker.|
 C Define "Crazy"|QID|25060|M|51.68,91.20|N|Kill Crazed Bilgewater Survivers.|US|
 T Define "Crazy"|QID|25060|CS|M|49.13,87.50;49.99,82.91|N|To Kelsey Steelspark.|
 T What We Came For|QID|25062|M|49.99,82.91|N|To Kelsey Steelspark.|
@@ -244,7 +249,7 @@ C Terrapination|QID|25063|M|49.98,90.47|N|Turtles are in the sea.|
 T Terrapination|QID|25063|M|49.99,82.90|N|To Kelsey Steelspark.|
 
 A You Too, Brute?|QID|25065|M|49.99,82.90|N|From Kelsey Steelspark.|
-C You Too, Brute?|QID|25065|M|53.31,89.73|N|Kill and loot Meatface.|
+K Meatface|QID|25065|T|Meatface|M|53.31,89.73|N|Kill and loot Meatface.|
 T You Too, Brute?|QID|25065|M|50.00,82.90|N|To Kelsey Steelspark.|
 A Prospector Gunstan|QID|28881|M|50.00,82.90|N|From Kelsey Steelspark.|
 f Southmoon Ruins|QID|28881|M|49.10,76.00;40.01,77.50|CS|N|At Thurda.|
@@ -255,7 +260,7 @@ A Fragments of Language|QID|25565|M|40.12,76.91|N|From Prospector Gunstan.|
 A The Thunderdrome!|QID|26895|M|40.26,77.13|N|From Flinn.|
 C Ancient Obstacles|QID|25420|M|37.91,76.99|N|Head towards the waypoint and kill Sandstone Golems.|
 C Laying Claim|QID|25559|S|M|41.21,69.31|N|Kill Religuary Diggers.|
-C Fragments of Language|QID|25565|M|41.03,70.46|N|Pick up Ancient Hieroglpyhs off the ground.|
+C Fragments of Language|QID|25565|NC|M|41.03,70.46|N|Pick up Ancient Hieroglpyhs off the ground.|
 C Laying Claim|QID|25559|US|M|41.21,69.31|N|Kill Religuary Diggers.|
 T Ancient Obstacles|QID|25420|M|40.13,76.93|N|To Prospector Gunstan.|
 T Laying Claim|QID|25559|M|40.13,76.93|N|To Prospector Gunstan.|
