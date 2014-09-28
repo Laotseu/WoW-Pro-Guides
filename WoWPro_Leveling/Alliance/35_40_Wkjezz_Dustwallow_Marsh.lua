@@ -127,10 +127,11 @@ R Theramore Isle |QID|27251|M|29.6,47.1;34.0,46.7;42.4,50.9;52.0,50.6|N|Follow t
 A They Call Him Smiling Jim|QID|27251|M|66.05,45.91|N|From Guard Byron.|
 h Theramore Isle|QID|27251|M|66.57,45.26|N|At Innkeeper Janene. Take this chance to sell your junk and restock also.|
 A Mudrock Soup and Bugs|QID|1204|M|68.23,48.79|N|From Morgan Stern.|
-T Reinforcements From Theramore|QID|26687|O|M|68.21,48.58|N|To Captain Garran Vimes.|
+T Reinforcements From Theramore|QID|26687|M|68.21,48.58|N|To Captain Garran Vimes.|
 T They Call Him Smiling Jim|QID|27251|M|68.21,48.58|N|To Captain Garran Vimes.|
 A Inspecting the Ruins|QID|27249|M|68.21,48.58|N|From Captain Garran Vimes.|
 
+; Zone name Theramore Isle
 f Theramore|M|67.49,51.33|N|At Baldruc.|
 A This Old Lighthouse|QID|27216|M|68.30,51.84|N|From Sergeant Amelyn.|
 T Hero's Call: Dustwallow Marsh! |QID|28552|M|68.36,51.02|O|N|To Calia Hastings|
@@ -176,8 +177,8 @@ A Defias in Dustwallow?|QID|27234|M|59.65,41.16|N|From Captain Wymor.|
 T A Disturbing Development|QID|27214|M|59.65,41.16|N|To Captain Wymor.|
 T The Hermit of Swamplight Manor|QID|27215|M|55.44,26.30|N|To "Swamp Eye" Jarl.|
 A Marsh Frog Legs|QID|27183|M|55.36,26.13|N|From "Swamp Eye" Jarl.|
-A The Orc Report|QID|27246|M|55.44,25.89|N|From the grave next to the house.|
 A What's Haunting Witch Hill?|QID|27188|M|55.53,26.19|N|From Mordant Grimsby.|
+A The Orc Report|QID|27246|M|55.44,25.89|N|From the grave next to the house.|
 C What's Haunting Witch Hill?|QID|27188|S|N|Kill the undeads (Don't let your pets make the killing blow).|
 C Marsh Frog Legs|QID|27183|S|T|Giant Marsh Frog|M|56.27,28.36|N|Kill and loot the frogs (Don't let your pets make the killing blow).|
 C Mudrock Soup and Bugs|QID|1204|S|M|61.03,26.56|N|Kill and loot all Turtles.|
@@ -205,7 +206,7 @@ C Secondhand Diving Gear|QID|27236|M|63.06,18.63;62.31,18.86;61.69,18.21|CN|N|Pi
 T Secondhand Diving Gear|QID|27236|M|63.73,17.03|N|To Renn McGill.|
 A Recover the Cargo!|QID|27237|M|63.73,17.03|N|From Renn McGill.|
 U Open the supplies bag.|QID|27237|U|33045|L|33040|
-U Put on the helmet.|QID|27237|U|33040|N|(Click to manually complete)|
+U Put on the helmet.|QID|27237|BUFF|42275|U|33040|N|(Click to manually complete)|
 C Recover the Cargo!|QID|27237|U|33044|M|66.76,13.89|N|Use this item on floaty piles of Shipwreck Debris. |
 T Recover the Cargo!|QID|27237|M|63.74,17.06|N|To Renn McGill. Don't forget to re-equip your regular helmet.|
 
@@ -236,7 +237,7 @@ T Daelin's Men|QID|27286|M|68.18,48.53|N|To Captain Garran Vimes.|
 A The Deserters|QID|27287|M|68.18,48.53|N|From Captain Garran Vimes.|
 T The Black Shield|QID|27284|M|64.74,50.39|N|To Caz Twosprocket. Sell and Repair here also.|
 A The Black Shield|QID|27285|M|64.74,50.39|N|From Caz Twosprocket.|
-C Survey Alcaz Island|QID|27239|NC|M|67.37,51.07|N|Tell Cassa Crimsonwing you are ready. Enjoy the ride and enjoy our thanks. Thanks for using Wow-Pro|
+C Survey Alcaz Island|QID|27239|CHAT|M|67.37,51.07|N|Tell Cassa Crimsonwing you are ready. Enjoy the ride and enjoy our thanks. Thanks for using Wow-Pro|
 T Survey Alcaz Island|QID|27239|M|66.26,49.04|N|To Lady Jaina Proudmoore.|
 A Proof of Treachery|QID|27240|M|66.27,49.05|N|From Lady Jaina Proudmoore. Wait a few seconds and this quest will appear.|
 R Stormwind City|QID|27240|M|66.26,49.05|N|Talk to Jaina to be ported to Stormwind.|
@@ -265,7 +266,7 @@ T Jarl Needs Eyes|QID|27184|M|55.45,26.38|N|To "Swamp Eye" Jarl.|
 A Hungry as an Ogre!|QID|27191|M|55.45,26.38|N|From "Swamp Eye" Jarl.|
 A Jarl Needs a Blade|QID|27186|M|55.45,26.38|N|From "Swamp Eye" Jarl.|
 C Hungry as an Ogre!|QID|27191|S|M|56.30,14.70|N|Kill and loot Murlocs until you have 8 heads.|
-C Jarl Needs a Blade|QID|27186|M|57.90,18.25|N|Kill and loot Razorspine.|
+K Razorspine|QID|27186|T|Razorspine|M|57.90,18.25|N|Kill and loot Razorspine.|
 C Hungry as an Ogre!|QID|27191|US|M|58.81,15.79|N|Kill and loot Murlocs until you have 8 heads.|
 T Hungry as an Ogre!|QID|27191|M|55.46,26.32|N|To "Swamp Eye" Jarl.|
 T Jarl Needs a Blade|QID|27186|M|55.46,26.32|N|To "Swamp Eye" Jarl.|
@@ -357,8 +358,8 @@ C Peace at Last|QID|27291|U|33082|M|63.64,42.86|N|Use the wreath on the sparklin
 T Peace at Last|QID|27291|M|68.21,48.54|N|To Captain Garran Vimes.|
 F Mudsprocket|QID|27411|N|Fly back to Mudsprocket.|M|67.50,51.23|
 T Challenge to the Black Flight|QID|27411|M|41.86,73.89|N|To Brogg.|
-A To New Thalanaar|QID|25479|M|41.86,73.89|N|From Thyssiana. (Optional, Do this if you wish to go to Thousand Needless, our next guide.)|
-C To New Thalanaar|QID|25479|O|M|42.84,72.42|N|Choose the speech bubble from the Mudsprocket Flight Master.|
+A To New Thalanaar|QID|25479|O|M|41.86,73.89|N|From Thyssiana. (Optional, Do this if you wish to go to Thousand Needless, our next guide.)|
+C To New Thalanaar|QID|25479|M|42.84,72.42|N|Choose the speech bubble from the Mudsprocket Flight Master.|
 
 N The End|N|Well done on the achievment! Simply close this step and Thousand Needles will begin. You can also choose a new guide from out Guides List. WKjezz of Wow-pro.|
 ]]

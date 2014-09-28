@@ -235,7 +235,7 @@ C Northern Hospitality|QID|12299|N|Finish taking out the Conquest Hold Marauders
 T Wolfsbane Root|QID|12307|N|To Katja.|M|25.64,33.40|
 T Northern Hospitality|QID|12299|N|To Sergi.|M|26.39,35.78|
 A Test of Mettle|QID|12300|M|26.5,35.8|N|From Sergi.|
-K Sergent Bonesnap|QID|12300|T|Sergent Bonesnap|N|Kill Sergent Bonesnap in Bonesnap's Camp.|M|21.87,30.00|
+K Sergeant Bonesnap|QID|12300|T|Sergeant Bonesnap|N|Kill Sergent Bonesnap in Bonesnap's Camp.|M|21.87,30.00|
 T Test of Mettle|QID|12300|N|To the Captured Trapper in Bonesnap's Camp.|M|21.87,29.97|
 A Words of Warning|QID|12302|M|21.9,29.9|N|From the Captured Trapper.|
 
