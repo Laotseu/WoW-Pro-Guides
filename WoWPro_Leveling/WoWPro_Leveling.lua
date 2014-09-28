@@ -60,7 +60,7 @@ function WoWPro.Leveling:OnEnable()
 		WoWPro:LoadGuide("JamScar5558")
 	-- No current guide, but a guide was stored for later use --
 	elseif WoWProDB.char.lastlevelingguide and not WoWProDB.char.currentguide then
-		WoWPro:LoadGuide(WoWProDB.char.lastlevelingguide)
+		--WoWPro:LoadGuide(WoWProDB.char.lastlevelingguide)
 	end
 	
 	WoWPro.FirstMapCall = true
