@@ -6,25 +6,90 @@ local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...))
 
 	
 local L = WoWPro_Locale
+WoWPro.actiontypesorder = { "A", "C", "T", "K", "R", "H", "h", "F", "f", "N", "B", "b", "U", "L", "l", "r", "noncombat", "chat", "acceptdaily", "turnindaily" }
 WoWPro.actiontypes = {
 	A = "Interface\\GossipFrame\\AvailableQuestIcon",
-	C = "Interface\\Icons\\Ability_DualWield",
+	--C = "Interface\\Icons\\Ability_DualWield",
+	--C = "Interface\\CHARACTERFRAME\\UI-StateIcon",
+	C = "Interface\\MINIMAP\\OBJECTICONS",
 	T = "Interface\\GossipFrame\\ActiveQuestIcon",
-	K = "Interface\\Icons\\Ability_Creature_Cursed_02",
+	--K = "Interface\\Icons\\Ability_Creature_Cursed_02",
+	K = "Interface\\MINIMAP\\OBJECTICONS",
 	R = "Interface\\Icons\\Ability_Tracking",
-	H = "Interface\\Icons\\INV_Misc_Rune_01",
-	h = "Interface\\AddOns\\WoWPro\\Textures\\resting.tga",
-	F = "Interface\\Icons\\Ability_Druid_FlightForm",
-	f = "Interface\\Icons\\Ability_Hunter_EagleEye",
+	--H = "Interface\\Icons\\INV_Misc_Rune_01",
+	H = "Interface\\MINIMAP\\TRACKING\\Innkeeper",
+	--h = "Interface\\AddOns\\WoWPro\\Textures\\resting.tga",
+	h = "Interface\\CHARACTERFRAME\\UI-StateIcon",
+	--F = "Interface\\Icons\\Ability_Druid_FlightForm",
+	F = "Interface\\MINIMAP\\OBJECTICONS",
+--	f = "Interface\\Icons\\Ability_Hunter_EagleEye",
+	f = "Interface\\MINIMAP\\OBJECTICONS",
 	N = "Interface\\Icons\\INV_Misc_Note_01",
-	B = "Interface\\Icons\\INV_Misc_Coin_01",
+--	B = "Interface\\Icons\\INV_Misc_Coin_01",
+	B = "Interface\\MINIMAP\\OBJECTICONS",
 	b = "Interface\\Icons\\Spell_Frost_SummonWaterElemental",
 	U = "Interface\\Icons\\INV_Misc_Bag_08",
 	L = "Interface\\Icons\\Spell_ChargePositive",
 	l = "Interface\\Icons\\INV_Misc_Bag_08",
 	r = "Interface\\Icons\\Ability_Repair",
-	t = "Interface\\GossipFrame\\ActiveQuestIcon"
+	t = "Interface\\GossipFrame\\ActiveQuestIcon",
+	--noncombat = "Interface\\AddOns\\WoWPro\\Textures\\Config.tga",
+	noncombat = "Interface\\MINIMAP\\OBJECTICONS",
+	chat = "Interface\\GossipFrame\\Gossipgossipicon",
+	acceptdaily = "Interface\\GossipFrame\\DailyQuestIcon",
+	turnindaily = "Interface\\GossipFrame\\DailyActiveQuestIcon",
 }
+WoWPro.actiontypesdesc = {
+	A = "Accept Quest",
+	C = "Complete Quest",
+	T = "Turn In Quest",
+	K = "Kill",
+	R = "Run To",
+	H = "Use Hearthstone",
+	h = "Set Hearthstone",
+	F = "Fly To",
+	f = "Get Flight Path",
+	N = "Note",
+	B = "Buy",
+	b = "Go by Boat or Zeppelin",
+	U = "Use Item",
+	L = "Level Up",
+	l = "Loot Item(s)",
+	r = "Repair/Restock",
+	--t = "Turn In Quest (conditional)",
+	noncombat = "Interact With or Pickup Item(s)",
+	chat = "Chat",
+	acceptdaily = "Accept Daily Quest",
+	turnindaily = "Turn In Daily Quest",
+}
+WoWPro.actiontypecoords = {
+	--C = { 1/2, 1, 0, 1/2 },
+	C = { 4/8, 5/8, 5/8, 6/8 },
+	K = { 5/8, 6/8, 3/8, 4/8 },
+	F = { 4/8, 5/8, 2/8, 3/8 },
+	f = { 5/8, 6/8, 1/8, 2/8 },
+	B = { 1/8, 2/8, 2/8, 3/8 },
+	h = { 0, 1/2, 0, 1/2},
+	noncombat = { 1/8, 2/8, 4/8, 5/8 },
+}
+function WoWPro:SetActiontypeTex(tex, actiontype)
+	if not WoWPro.actiontypes[actiontype] then
+		err("Invalid actiontype '%s'", actiontype)
+	end
+	tex:SetTexture(WoWPro.actiontypes[actiontype])
+	if WoWPro.actiontypecoords[actiontype] then
+		tex:SetTexCoord(
+			WoWPro.actiontypecoords[actiontype][1],
+			WoWPro.actiontypecoords[actiontype][2],
+			WoWPro.actiontypecoords[actiontype][3],
+			WoWPro.actiontypecoords[actiontype][4]
+		)
+	else
+		tex:SetTexCoord(0, 1, 0, 1)
+	end
+end
+
+
 WoWPro.actionlabels = {
 	A = "Accept",
 	C = "Complete",
@@ -720,17 +785,21 @@ function WoWPro:RowUpdate(offset)
 		
 		if not ( WoWProDB.profile.showcoords and coord ) and not note then note = "" end
 		row.note:SetText(note)
-		row.action:SetTexture(WoWPro.actiontypes[action])
-		if WoWPro.noncombat[k] and WoWPro.action[k] == "C" then
-			row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
-		elseif WoWPro.chat[k] then
-		   row.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon") 
-		elseif WoWPro.action[k] == "A" and WoWPro:IsQuestDaily(QID) then
-			row.action:SetTexture("Interface\\GossipFrame\\DailyQuestIcon")
-		elseif WoWPro.action[k] == "T" and WoWPro:IsQuestDaily(QID) then
-			row.action:SetTexture("Interface\\GossipFrame\\DailyActiveQuestIcon")
-		end
+		--row.action:SetTexture(WoWPro.actiontypes[action])
 		
+		-- Ajust the action icon based on |NC|, |CHAT|, |DAILY|, etc.
+		local texaction = WoWPro.action[k]
+		if WoWPro.noncombat[k] and texaction == "C" then
+			texaction = "noncombat"
+		elseif WoWPro.chat[k] then
+		   texaction = "chat" 
+		elseif texaction == "A" and WoWPro:IsQuestDaily(QID) then
+			texaction = "acceptdaily"
+		elseif texaction == "T" and WoWPro:IsQuestDaily(QID) then
+			texaction = "turnindaily"
+		end
+		WoWPro:SetActiontypeTex(row.action, texaction)
+
 		row.check:SetScript("OnClick", function(self, button, down)
 			WoWPro:CheckFunction(row, button, down)
 		end)

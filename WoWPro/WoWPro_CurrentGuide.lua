@@ -187,17 +187,22 @@ frame:SetScript("OnShow", function()
 			row.step:SetText(step)
 			
 			local action = WoWPro.action[index]
-			row.action:SetTexture(WoWPro[module:GetName()].actiontypes[action])
-			
+			--row.action:SetTexture(WoWPro.actiontypes[action])
+
 			if WoWPro.noncombat[index] then
-				row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
+				--row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
+				action = "noncombat"
 			elseif WoWPro.chat[index] then
-			    row.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon") 
+			   -- row.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon") 
+			   action = "chat"
 			elseif WoWPro.action[index] == "A" and WoWPro:IsQuestDaily(WoWPro.QID[index]) then
-				row.action:SetTexture("Interface\\GossipFrame\\DailyQuestIcon")
+				--row.action:SetTexture("Interface\\GossipFrame\\DailyQuestIcon")
+				action = "acceptdaily"
 			elseif WoWPro.action[index] == "T" and WoWPro:IsQuestDaily(WoWPro.QID[index]) then
-				row.action:SetTexture("Interface\\GossipFrame\\DailyActiveQuestIcon")
+				--row.action:SetTexture("Interface\\GossipFrame\\DailyActiveQuestIcon")
+				action = "turnindaily"
 			end
+			WoWPro:SetActiontypeTex(row.action, action)
 			
 			local note = WoWPro.note[index]
 			row.note:SetText(note)

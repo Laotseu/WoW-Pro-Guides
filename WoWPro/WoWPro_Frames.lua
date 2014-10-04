@@ -146,6 +146,14 @@ function WoWPro.RowFontSet()
 		row.note:SetTextColor(WoWProDB.profile.notetextcolor[1], WoWProDB.profile.notetextcolor[2], WoWProDB.profile.notetextcolor[3], 1);
 		row.track:SetTextColor(WoWProDB.profile.tracktextcolor[1], WoWProDB.profile.tracktextcolor[2], WoWProDB.profile.tracktextcolor[3], 1);
 		WoWPro.mousenotes[i].note:SetTextColor(WoWProDB.profile.notetextcolor[1], WoWProDB.profile.notetextcolor[2], WoWProDB.profile.notetextcolor[3], 1);
+
+		-- Set the icon and checkbox sizes based on the step font size
+		local size = (select(2,row.step:GetFont()) or 14)
+		row.action.frame:SetWidth(size+2)
+		row.action.frame:SetHeight(size+2)
+		row.check:SetWidth(size)
+		row.check:SetHeight(size)
+
 	end
 	WoWPro.StickyTitle:SetFont(WoWProDB.profile.stickytitlefont, WoWProDB.profile.stickytitletextsize)
 	WoWPro.StickyTitle:SetTextColor(WoWProDB.profile.stickytitletextcolor[1], WoWProDB.profile.stickytitletextcolor[2], WoWProDB.profile.stickytitletextcolor[3], 1);
