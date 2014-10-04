@@ -481,7 +481,7 @@ end
 -- https://github.com/Rainrider/KlaxxiKillOrder/issues/1
 -- New syntax for UnitGUID() in WoD
 function WoWPro:TargetNpcId()
-    local unitType, _, serverID, instanceID, zoneID, npcID, spawnID = strsplit(":", UnitGUID("target") or "")
+    local unitType, _, serverID, instanceID, zoneID, npcID, spawnID = strsplit("-", UnitGUID("target") or "")
     if not unitType then
         WoWPro:dbp("No target");
         return nil
@@ -490,7 +490,7 @@ function WoWPro:TargetNpcId()
     if unitType == "Player" then
         unitType, serverID, npcID = strsplit("-", UnitGUID("target"))
         WoWPro:dbp("Your target is a " .. unitType.. " ID %d",npcid);
-        return npcid
+        return npcID
     else
         WoWPro:dbp("Your target is a " .. unitType.. " ID %d",npcid);
         return nil
@@ -574,7 +574,7 @@ end
 
 function WoWPro:GuideLevels(guide,lowerLevel,upperLevel,meanLevel)
     if (not lowerLevel) or (not upperLevel) or (not meanLevel) then
-        WoWPro:Error("Bad GuideLevels(%s,%s,%s,%s)",guide.GID,tostring(lowerLevel),tostring(upperLevel),tostring(meanLevel))
+        --WoWPro:Error("Bad GuideLevels(%s,%s,%s,%s)",guide.GID,tostring(lowerLevel),tostring(upperLevel),tostring(meanLevel))
     end
     guide['startlevel'] = lowerLevel
     guide['endlevel'] = upperLevel
