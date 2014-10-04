@@ -254,7 +254,7 @@ WoWPro.Tags = { "action", "step", "note", "index", "map", "sticky",
 	"unsticky", "use", "zone", "lootitem", "lootqty", "optional", 
 	"level", "QID","target", "prof", "mat", "rank", "rep","waypcomplete", "why",
 	 "noncombat","active","ach","spell","qcount","NPC","questtext","prereq","leadin","faction",
-	 "buff", "nobuff", "chat", "recipe", "gossip", "conditional", "pet", "daily"
+	 "buff", "nobuff", "chat", "recipe", "gossip", "conditional", "pet","building","daily"
 }
 
 -- Called before all addons have loaded, but after saved variables have loaded. --
@@ -277,6 +277,14 @@ function WoWPro:OnInitialize()
    WoWProDB.global.DailyQuests = WoWProDB.global.DailyQuests or {} -- Detected by GetQuestLogTitle and kept between logins
    WoWPro.DailyQuests = {} -- Set by |DAILY| flags when the guides are parsed and forgotten between logins
 
+	WoWProDB.global.Deltas = {}
+	if WoWProCharDB.EnableGrail == nil then
+	    WoWProCharDB.EnableGrail = true
+	end
+	WoWProCharDB.Trades  = WoWProCharDB.Trades or {}
+	if WoWProCharDB.Enabled == nil then
+	    WoWProCharDB.Enabled = true
+	end
 	WoWProDB.global.Deltas = {}
 	WoWProDB.global.Log = {}
 	if WoWProDB.char.currentguide and 
@@ -470,22 +478,21 @@ event from the guide frame.
 	end
 end
 
+-- https://github.com/Rainrider/KlaxxiKillOrder/issues/1
+-- New syntax for UnitGUID() in WoD
 function WoWPro:TargetNpcId()
-    local guid = UnitGUID("target");
-    if not guid then
+    local unitType, _, serverID, instanceID, zoneID, npcID, spawnID = strsplit(":", UnitGUID("target") or "")
+    if not unitType then
         WoWPro:dbp("No target");
         return nil
     end      
-    local B = tonumber(guid:sub(5,5), 16);
-    local maskedB = B % 8; -- x % 8 has the same effect as x & 0x7 on numbers <= 0xf
-    local knownTypes = {[0]="player", [3]="NPC", [4]="pet", [5]="vehicle"};
-    local npcid = tonumber(guid:sub(6,10), 16);
     
-    if maskedB == 3 then
-        WoWPro:dbp("Your target is a " .. (knownTypes[maskedB] or " unknown entity!") .. " ID %d",npcid);
+    if unitType == "Player" then
+        unitType, serverID, npcID = strsplit("-", UnitGUID("target"))
+        WoWPro:dbp("Your target is a " .. unitType.. " ID %d",npcid);
         return npcid
     else
-        WoWPro:dbp("Your target is a " .. (knownTypes[maskedB] or " unknown entity!"));
+        WoWPro:dbp("Your target is a " .. unitType.. " ID %d",npcid);
         return nil
     end
 end
@@ -549,8 +556,8 @@ function WoWPro:RegisterGuide(GIDvalue, gtype, zonename, authorname, side)
 	}
 
 
-	if side and side ~= UnitFactionGroup("player") and side ~= "Neutral" and WoWPro.DebugLevel < 1 then
-	    -- If the guide is not of the correct faction, don't register it
+	if side and side ~= UnitFactionGroup("player") and side ~= "Neutral" then
+	    -- If the guide is not of the correct side, don't register it
 	    return guide
 	end 
 			

@@ -394,6 +394,7 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 	WoWPro.nobuff[i] = text:match("|NOBUFF|([^|]*)|?")
 	WoWPro.recipe[i] = text:match("|RECIPE|([^|]*)|?")
 	WoWPro.pet[i] = text:match("|PET|([^|]*)|?")
+	WoWPro.building[i] = text:match("|BUILDING|([^|]*)|?")
 	WoWPro.gossip[i] = text:match("|QG|([^|]*)|?")
 	if WoWPro.gossip[i] then WoWPro.gossip[i] = strupper(WoWPro.gossip[i]) end
 	if text:find("|DAILY|") then
@@ -617,6 +618,7 @@ function WoWPro.SetupGuideReal()
 	WoWPro:AutoCompleteQuestUpdate()
 	WoWPro:UpdateQuestTracker()
 	WoWPro:UpdateGuide("WoWPro:LoadGuideSteps()")
+	WoWPro:SendMessage("WoWPro_PostLoadGuide")
 end
 
 
@@ -868,7 +870,7 @@ function WoWPro:RowUpdate(offset)
 		
 		-- Item Button --
 		local noUseItem = nil
-		if action == "H" then use = 6948 end
+		if action == "H" and not use then use = 6948 end
 		if ( not use ) and (questtext or action == "C" or action == "K") and WoWPro.QuestLog[tonumber(QID)] then
 			-- local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[tonumber(QID)].index)
 			local link, icon, charges = GetQuestLogSpecialItemInfo(WoWPro.QuestLog[tonumber(QID)])

@@ -904,6 +904,34 @@ function WoWPro:NextStep(k,i)
             end
      	end
         
+        -- Test for buildings, default is to skip if we dont have any of the named ones.
+        if WoWPro.building and WoWPro.building[k] then
+            local Name,ids  = string.split(";",WoWPro.building[k],2)
+            local numList = select("#", string.split(";", ids))
+            local idHash = {}
+            WoWPro:dbp("Checking to see if you own %s: %s",Name, ids)
+            for i=1,numList do
+                local bid = select(numList-i+1, string.split(";", ids))
+                bid = tonumber(bid)
+		        if not bid then
+		            WoWPro:Error("Malformed BID [%s] in Guide %s",WoWPro.building[k],WoWProDB.char.currentguide)
+		            bid = 0
+		        end
+		        idHash[bid] = true
+		    end
+		    local buildings = C_Garrison.GetBuildings();
+		    WoWPro.why[k] = "NextStep(): Building not owned."
+		    skip = true
+            for i = 1, #buildings do
+                local building = buildings[i];
+                if idHash[building.buildingID] then
+                    skip = false
+                    WoWPro.why[k] = "NextStep(): Building owned."
+                    WoWPro:dbp("Build %d is owned",building.buildingID)
+                end
+            end
+		end
+        
 		-- Skipping any quests with a greater completionist rank than the setting allows --
 		if WoWPro.rank and WoWPro.rank[k] then
 			if tonumber(WoWPro.rank[k]) > WoWProDB.profile.rank then 
@@ -1378,7 +1406,7 @@ function WoWPro:QuestPrereq(qid)
 end
 
 function WoWPro:Questline(qid)
-    if not Grail then return end
+    if not Grail or not WoWPro.EnableGrail then return end
     WoWPro:SkipAll()
     WoWPro:QuestPrereq(qid)
     WoWPro:LoadGuide(nil)
@@ -1401,7 +1429,7 @@ function WoWPro.PickQuestline()
 end
 
 function WoWPro:GrailQuestPrereq(qid)
-    if not Grail then return nil end
+    if not Grail or not WoWPro.EnableGrail then return nil end
     local preReq = Grail:QuestPrerequisites(qid)
     local PREstr = nil
     if not preReq then return nil end
@@ -1424,7 +1452,7 @@ function WoWPro:GrailQuestPrereq(qid)
 end
 
 function WoWPro:GrailCheckQuestName(guide,QID,myname)
-    if not Grail then return nil end
+    if not Grail or not WoWPro.EnableGrail then return nil end
     if QID == "*" then return QID end
     if not QID then
         WoWPro:Warning("In guide %s, quest [%s]  does not have a QID",guide,tostring(myname))
@@ -1451,7 +1479,7 @@ function WoWPro:GrailCheckQuestName(guide,QID,myname)
 end
 
 function WoWPro:GrailQuestLevel(qid)
-    if not Grail then return nil end
+    if not Grail or not WoWPro.EnableGrail then return nil end
     local _,_,level = Grail:MeetsRequirementLevel(qid,nil)
     if level then
         return tostring(level)
@@ -1472,10 +1500,10 @@ function WoWPro.LockdownHandler(self, elapsed)
 			if TomTom and TomTom.AddMFWaypoint then
 				WoWPro:CarboniteProfileHack()
 			else 
-				WoWPro:Warning("Waiting for TomTom or Carbonite to init...")
+				WoWPro:Warning("Waiting for TomTom or Carbonite to init...%s", tostring(WoWPro.LockdownCounter))
 				if WoWPro.LockdownCounter > 0 then
 					WoWPro.LockdownCounter = WoWPro.LockdownCounter - 1
-					WoWPro.LockdownTimer = 1.0
+					WoWPro.LockdownTimer = 0.33
 				else
 					-- Warning if the user is missing TomTom --
 					WoWPro:Warning("It looks like you don't have |cff33ff33TomTom|r or |cff33ff33Carbonite|r installed. "

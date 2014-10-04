@@ -585,14 +585,15 @@ function WoWPro.EventHandler(frame, event, ...)
 
 	-- Unlocking event processong after things get settled --
 	if event == "PLAYER_ENTERING_WORLD" then
-	    WoWPro:dbp("Setting Timer 1")
+	    WoWPro:dbp("Setting Timer PEW")
 	    WoWPro.InitLockdown = true
+	    WoWPro.LockdownCounter = 5  -- times until release and give up to wait for other addons
 	    WoWPro.LockdownTimer = 1.5
 	end
 		
 	-- Locking event processong till after things get settled --
 	if event == "PLAYER_LEAVING_WORLD" then
-	    WoWPro:dbp("Locking Down 1")
+	    WoWPro:dbp("Locking Down PLW")
 	    WoWPro.InitLockdown = true
 	end
 	
@@ -788,6 +789,12 @@ function WoWPro.EventHandler(frame, event, ...)
 		WoWPro:AutoCompleteQuestUpdate(GetQuestID())
 	end
 	
+	if event == "QUEST_TURNED_IN" or event == "QUEST_ACCEPTED" then
+	    local qlidx, qid = ...
+	    WoWPro:dbp("%s(%s,%s)",event,qlidx,qid)
+	    -- just watch for now
+	end
+	    
 	if event == "TRADE_SKILL_SHOW" then
 	    WoWPro:ScanTrade()
     end
