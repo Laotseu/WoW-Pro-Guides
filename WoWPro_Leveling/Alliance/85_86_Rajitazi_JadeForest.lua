@@ -724,8 +724,8 @@ F Pearlfin Village|QID|30498|M|54.6,61.8|N|The flightmaster has an option for a 
 A An Unexpected Advantage|QID|30565|M|58.55,82.30|N|From Sully "The Pickle" McLeary.|
 T Get Back Here!|QID|30498|M|58.07,80.65|N|To Admiral Taylor.|
 A Helping the Cause|QID|30568|M|58.08,80.67|N|From Admiral Taylor.|
-C Helping the Cause|QID|30568|QO|Defeat the Captive Hozen: 1/1|M|54.86, 79.81|M|Talk to Amber to kick off the fight.|
-C Helping the Cause|QID|30568|QO|Challenge a Pearlfin Recruit: 1/1|M|59.31, 83.49|
+C Helping the Cause|QID|30568|QO|Defeat the Captive Hozen: 1/1|M|54.86, 79.81|N|Talk to Amber to kick off the fight.|
+C Helping the Cause|QID|30568|QO|Challenge a Pearlfin Recruit: 1/1|M|59.31, 83.49|N|Talk to a recruit to start the fight.|
 C Helping the Cause|QID|30568|NC|QO|Assist the Wounded Pearlfin: 3/3|M|60.12,87.19|
 C An Unexpected Advantage|QID|30565|M|62.50,76.15|
 T An Unexpected Advantage|QID|30565|M|58.55,82.30|N|To Sully "The Pickle" McLeary.|
