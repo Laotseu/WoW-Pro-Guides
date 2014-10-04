@@ -615,6 +615,43 @@ local function CreateDisplayConfig()
 	return options
 end
 
+local function CreateLegend()
+	local options = {
+		type = "group",
+		name = "Icon Legend",
+		args = {
+			help = {
+				order = 0.1,
+				type = "description",
+				name = "This explain what the guide icons means.",
+			},
+			blank = {
+				order = 0.2,
+				type = "description",
+				name = " ",
+			},  
+		}
+	}
+
+	local a = options.args
+	local i = 1
+	for i, k in ipairs(WoWPro.actiontypesorder) do
+		a[k] = {}
+		a[k].order = i
+		a[k].type = "description"
+		a[k].fontSize = "large"
+		a[k].name = WoWPro.actiontypesdesc[k]
+		a[k].image = WoWPro.actiontypes[k]
+		if WoWPro.actiontypecoords[k] then
+			a[k].imageCoords =  WoWPro.actiontypecoords[k]
+		end
+		a[k].imageWidth = 20
+		a[k].imageHeight = 20
+	end
+
+	return options
+end
+
 local function createBlizzOptions()
 	local options = CreateDisplayConfig()
 
@@ -696,7 +733,7 @@ local function createBlizzOptions()
 					end
 			},
 			enableDebug = {
-				order = 20,
+				order = 19,
 				type = "toggle",
 				name = L["Enable Debug"],
 				desc = L["Enables/Disables debug logging"],
@@ -709,6 +746,17 @@ local function createBlizzOptions()
 						end
 						WoWProCharDB.DebugLevel = WoWPro.DebugLevel
 					end
+			},
+			enableDebug = {
+				order = 20,
+				type = "toggle",
+				name = L["Display QID"],
+				desc = L["Enables/Disables displaying the current QID in the quest watcher"],
+				get = function(info) return WoWProCharDB.ShowQID end,
+				set = function(info,val) 
+							WoWProCharDB.ShowQID = not WoWProCharDB.ShowQID
+							WoWPro:UpdateQuestTracker()
+						end
 			},
 			resetGuide = {
 			    order = 21,

@@ -101,7 +101,7 @@
 -- Date: 2011-10-28 08:00
 -- Who: Crackerhead22
 
-local guide = WoWPro:RegisterGuide("TwiHollEK",'WorldEvents',"Hallows End", "Twists", "Alliance")
+local guide = WoWPro:RegisterGuide("TwiHollEK",'WorldEvents',"Hallows End EK", "Twists", "Alliance")
 WoWPro:GuideLevels(guide,1,90,45.000000)
 WoWPro.WorldEvents:GuideHoliday(guide,"HallowsEnd")
 WoWPro:GuideSteps(guide, function()
