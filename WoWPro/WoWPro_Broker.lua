@@ -588,7 +588,7 @@ function WoWPro:NextStep(k,i)
 				local qID = select(numQIDs-j+1, string.split(";", QID))
 				qID = tonumber(qID)
 				local quest_log_index = WoWPro.QuestLog[qID]
-				if quest_log_index and select(7,GetQuestLogTitle(quest_log_index)) == 1 then
+				if quest_log_index and select(6,GetQuestLogTitle(quest_log_index)) == 1 then
 					isCompleted = true
 					break
 				end
@@ -1083,10 +1083,10 @@ function WoWPro:PopulateQuestLog()
 	ExpandQuestHeader(0)	
 	entries = GetNumQuestLogEntries()
 	for i=1,entries do
-		local isHeader, _ , _, isDaily, questID = select(5,GetQuestLogTitle(i))
+		local isHeader, _ , _, frequency, questID = select(4,GetQuestLogTitle(i))
 		if not isHeader then
 			WoWPro.QuestLog[questID] = i
-			if isDaily then
+			if frequency == LE_QUEST_FREQUENCY_DAILY then
 				WoWPro:SetPermanentDailyQuest(questID)
 			end
 		elseif isCollapsed then
