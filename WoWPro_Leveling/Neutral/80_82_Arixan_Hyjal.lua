@@ -583,10 +583,10 @@ C Lost Wardens|QID|25881|RANK|2|S|M|48.98,51.70|N|Talk to the Lost Wardens to re
 C The Hammer and the Key|QID|25904|M|60.42,58.91|N|Kill and loot the Twilight Field Captains until the Glyph of Opening drops.|T|Twilight Field Captain|
 T The Hammer and the Key|QID|25904|M|42.25,60.80|N|To Tortolla.|
 A The Third Flamegate|QID|25906|PRE|25904|M|42.25,60.80|N|From Tortolla.|
-C Lost Wardens|QID|25881|RANK|2|US|M|48.98,51.70|N|Talk to the Lost Wardens to rescue them.|CHAT|
-T Lost Wardens|QID|25881|RANK|2|M|57.15,55.94|N|Continue to follow the road east until you reach a building with nightelves fighting around it. Go inside to find Captain Irontree.|
 A Pressing the Advantage|QID|25886|PRE|25881|RANK|2|M|57.15,55.94|N|From Captain Irontree.|
 A Hyjal Recycling Program|QID|25901|PRE|25843|RANK|2|M|56.87,56.01|N|From Logram.|
+C Lost Wardens|QID|25881|RANK|2|US|M|48.98,51.70|N|Talk to the Lost Wardens to rescue them.|CHAT|
+T Lost Wardens|QID|25881|RANK|2|M|57.15,55.94|N|Continue to follow the road east until you reach a building with nightelves fighting around it. Go inside to find Captain Irontree.|
 C Pressing the Advantage|QID|25886|S|RANK|2|M|54.16,54.28|N|Kill and loot the Twilight Field Captains.|T|Twilight Field Captain|
 C Hyjal Recycling Program|QID|25901|NC|RANK|2|M|56.80,52.80|N|Collect Arrows.|
 C Pressing the Advantage|QID|25886|US|RANK|2|M|54.16,54.28|N|Finish killing and looting the Twilight Field Captains.|T|Twilight Field Captain|

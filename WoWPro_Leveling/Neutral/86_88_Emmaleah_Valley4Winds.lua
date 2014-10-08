@@ -188,10 +188,10 @@ A Back to the Sty|QID|29914|M|75.2,24.1|N|From Liang Thunderfoot.|
 
 C Mushan Shoulder Steak |QID|29913|S|QO|Mushan Shoulder Steak: 4/4|M|72,29|N|The meat is NOT a 100% drop.|
 C Turtle Meat Scrap |QID|29913|S|QO|Turtle Meat Scrap: 80/80|M|67.6,30.1|
-C Pick up Smelly |QID|29914|NC|T|Smelly|QO|Smelly: 1/1|M|70.5,29.5|
-C Pick up Ling |QID|29914|NC|T|Ling|QO|Ling: 1/1|M|66.8,29.0|
+l Pick up Smelly |QID|29914|NC|T|Smelly|QO|Smelly: 1/1|M|70.5,29.5|
+l Pick up Ling |QID|29914|NC|T|Ling|QO|Ling: 1/1|M|66.8,29.0|
 C Turtle Meat Scrap |QID|29913|US|QO|Turtle Meat Scrap: 80/80|M|67.6,30.1|N|Kill turtles for the scraps.|
-C Pick up Jian |QID|29914|NC|T|Jian|QO|Jian: 1/1|M|69.9,24.3|
+l Pick up Jian |QID|29914|NC|T|Jian|QO|Jian: 1/1|M|69.9,24.3|
 f Grassy Cline|M|70.8,24.2|N|From Kom of the Mountain Winds.|
 C Mushan Shoulder Steak |QID|29913|US|QO|Mushan Shoulder Steak: 4/4|M|72,29|N|The meat is NOT a 100% drop.|
 
@@ -238,7 +238,7 @@ T Legacy|QID|29949|M|68.77,43.43|N|To Li Li.|
 A Li Li's Day Off|QID|29950|M|68.77,43.43|N|From Li Li.|
 A Muddy Water|QID|29951|M|68.71,43.12|N|From Mudmug. Wait a minute or two for the dialog to finish, then this quest becomes available.|
 C Li Li's Day Off|QID|29950|U|76350|QO|Bring Li Li to Huangtze Falls: 1/1|M|74.37,42.65|
-C Muddy Water|QID|29951|U|76362|M|69.97,57.89|N|Find a place with about 10 muddy water pools close together. Click on the pool to fill the vile, it will leak when you travel to the next set of pools, until its full, at which point it will seal.|
+C Muddy Water|QID|29951|NC|U|76362|M|69.97,57.89|N|Find a place with about 10 muddy water pools close together. Click on the pool to fill the vile, it will leak when you travel to the next set of pools, until its full, at which point it will seal.|
 
 R Silken Fields|QID|29950|M|63.62,58.37|CC|N|Go south cross country towards Silken Fields.(the road is a much farther path).|
 A The Moth Rebellion|QID|30059|M|63.55,58.46|N|From Journeyman Chu. Avoid the mutated silkmoths or you could be overwhelmed!|
@@ -295,11 +295,15 @@ C Broken Dreams|QID|29952|CHAT|M|68.85,43.41|N|Chat with Chen to get transported
 T Broken Dreams|QID|29952|M|68.85,43.41|N|To Chen Stormstout.|
 A Chen's Resolution|QID|30046|M|68.81,43.50|N|From Chen Stormstout.|
 
+A No Fishing Pole Necessary!|QID|32685|O|M|5839,46.9|N|This is a fishing quest. Skip it if you haven't learn fishing.\n\nFrom Ben of the Booming Voice.|
+C No Fishing Pole Necessary!|QID|32685|NC|N|Fish 5 Golden Carp from the river.|
+T No Fishing Pole Necessary!|QID|32685|M|5839,46.9|N|To Ben of the Booming Voice.|
+
+f Halfhill|M|56.5,50.4|N|From Wing Nga.If you want to this is a good time to do the fishing quest and cooking training.  Perhaps not the most efficient, but if you are goind to do it, may as well do it while you get XP.|
 T Chen's Resolution|QID|30046|M|55.89,49.44|N|Follow Chen to Halfhill and turn in there.|
 A Hop Hunting|QID|30053|M|55.89,49.44|N|From Chen Stormstout.|
 A Li Li and the Grain|QID|30048|M|55.89,49.44|N|From Chen Stormstout.|
 A Doesn't Hold Water|QID|30049|M|55.89,49.44|N|From Chen Stormstout.|
-f Halfhill|M|56.5,50.4|N|From Wing Nga.If you want to this is a good time to do the fishing quest and cooking training.  Perhaps not the most efficient, but if you are goind to do it, may as well do it while you get XP.|
 A Children of the Water |QID|32045|M|55.13,47.38|N|From Stonecarver Mac, up on Halfhill|; Halfhill
 
 A A Helping Hand|QID|30252|M|52.02,48.13|N|From Farmer Yoon. This chain for The Tillers is optional, but it opens up the Quartermaster which gives you a place to repair. (Plus its quick and easy XP.)|
