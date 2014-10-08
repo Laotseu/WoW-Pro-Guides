@@ -894,6 +894,11 @@ local function createBlizzOptions()
 	config:RegisterOptionsTable("WoWPro-Profile", profiles)
 	dialog:AddToBlizOptions("WoWPro-Profile", "WoW-Pro Profiles", "WoW-Pro")
 
+	-- Icon Legend
+	local legendOptions = CreateLegend()
+	config:RegisterOptionsTable("WoWPro-Legend", legendOptions)
+	dialog:AddToBlizOptions("WoWPro-Legend", legendOptions.name, "WoW-Pro")
+
 	return blizzPanel
 end
 

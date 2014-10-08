@@ -7,6 +7,29 @@ local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...))
 	
 local L = WoWPro_Locale
 WoWPro.actiontypesorder = { "A", "C", "T", "K", "R", "H", "h", "F", "f", "N", "B", "b", "U", "L", "l", "r", "noncombat", "chat", "acceptdaily", "turnindaily" }
+WoWPro.actiontypesdesc = {
+	A = "Accept Quest",
+	C = "Complete Quest",
+	T = "Turn In Quest",
+	K = "Kill",
+	R = "Run To",
+	H = "Use Hearthstone",
+	h = "Set Hearthstone",
+	F = "Fly To",
+	f = "Get Flight Path",
+	N = "Note",
+	B = "Buy",
+	b = "Go by Boat or Zeppelin",
+	U = "Use Item",
+	L = "Level Up",
+	l = "Loot or Pickup Item(s)",
+	r = "Repair/Restock",
+	--t = "Turn In Quest (conditional)",
+	noncombat = "Interact With Item(s)",
+	chat = "Chat",
+	acceptdaily = "Accept Daily Quest",
+	turnindaily = "Turn In Daily Quest",
+}
 WoWPro.actiontypes = {
 	A = "Interface\\GossipFrame\\AvailableQuestIcon",
 	--C = "Interface\\Icons\\Ability_DualWield",
@@ -30,8 +53,10 @@ WoWPro.actiontypes = {
 	b = "Interface\\Icons\\Spell_Frost_SummonWaterElemental",
 	U = "Interface\\Icons\\INV_Misc_Bag_08",
 	L = "Interface\\Icons\\Spell_ChargePositive",
-	l = "Interface\\Icons\\INV_Misc_Bag_08",
-	r = "Interface\\Icons\\Ability_Repair",
+--	l = "Interface\\Icons\\INV_Misc_Bag_08",
+	l = "Interface\\CURSOR\\Pickup",
+--	r = "Interface\\Icons\\Ability_Repair",
+	r = "Interface\\MINIMAP\\OBJECTICONS",
 	t = "Interface\\GossipFrame\\ActiveQuestIcon",
 	--noncombat = "Interface\\AddOns\\WoWPro\\Textures\\Config.tga",
 	noncombat = "Interface\\MINIMAP\\OBJECTICONS",
@@ -39,37 +64,15 @@ WoWPro.actiontypes = {
 	acceptdaily = "Interface\\GossipFrame\\DailyQuestIcon",
 	turnindaily = "Interface\\GossipFrame\\DailyActiveQuestIcon",
 }
-WoWPro.actiontypesdesc = {
-	A = "Accept Quest",
-	C = "Complete Quest",
-	T = "Turn In Quest",
-	K = "Kill",
-	R = "Run To",
-	H = "Use Hearthstone",
-	h = "Set Hearthstone",
-	F = "Fly To",
-	f = "Get Flight Path",
-	N = "Note",
-	B = "Buy",
-	b = "Go by Boat or Zeppelin",
-	U = "Use Item",
-	L = "Level Up",
-	l = "Loot Item(s)",
-	r = "Repair/Restock",
-	--t = "Turn In Quest (conditional)",
-	noncombat = "Interact With or Pickup Item(s)",
-	chat = "Chat",
-	acceptdaily = "Accept Daily Quest",
-	turnindaily = "Turn In Daily Quest",
-}
 WoWPro.actiontypecoords = {
 	--C = { 1/2, 1, 0, 1/2 },
 	C = { 4/8, 5/8, 5/8, 6/8 },
 	K = { 5/8, 6/8, 3/8, 4/8 },
 	F = { 4/8, 5/8, 2/8, 3/8 },
 	f = { 5/8, 6/8, 1/8, 2/8 },
-	B = { 1/8, 2/8, 2/8, 3/8 },
+	B = { 0/8, 1/8, 2/8, 3/8 },
 	h = { 0, 1/2, 0, 1/2},
+	r = { 3/8, 4/8, 3/8, 4/8 },
 	noncombat = { 1/8, 2/8, 4/8, 5/8 },
 }
 function WoWPro:SetActiontypeTex(tex, actiontype)
@@ -448,6 +451,7 @@ function WoWPro:ParseSteps(steps)
 	    WoWPro.Guides[GID].acnt_level = 0
 	    WoWPro.Guides[GID].asum_level = 0 
 	end
+--err("ParsingSteps for %s, steps = %s",GID,#steps)
 	for j=1,#steps do
 		local text = steps[j]
 		text = text:trim()
@@ -489,6 +493,8 @@ function WoWPro:ParseSteps(steps)
 			end
 		end
 	end
+--err("after for j=1,#steps")
+--if true then return end
 	if WoWPro.DebugLevel > 0 then
 	    if WoWPro.Guides[GID].acnt_level > 0 then
             if WoWPro.Guides[GID].startlevel and WoWPro.Guides[GID].startlevel ~= WoWPro.Guides[GID].amin_level then
@@ -517,7 +523,7 @@ end
 function WoWPro.LoadGuideStepsReal()
 	local GID = WoWProDB.char.currentguide
     WoWPro:dbp("LoadGuideSteps(%s)",GID);
-    
+--err("LoadGuideStepsReal for guide %s", GID)    
 	-- Parsing quests --
 	local sequencef = WoWPro.Guides[GID].sequence
 	local sequence = sequencef()
@@ -526,10 +532,10 @@ function WoWPro.LoadGuideStepsReal()
 	    return
 	end
 	local steps = { string.split("\n", sequence ) }
-
 	WoWPro.stepcount = 0
+--err("Before ParseSteps")
 	WoWPro:ParseSteps(steps)
-	
+--if true then return end	
 	WoWPro:dbp("Guide Parsed. "..WoWPro.stepcount.." steps stored.")
 	WoWPro:PushCurrentGuide(GID)
 	WoWPro:GuideSetup()
