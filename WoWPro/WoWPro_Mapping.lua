@@ -593,7 +593,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 		for _, qid in ipairs(QIDs) do
 			if IsQuestWatched(GetQuestLogIndexByID(qid)) then
 				WORLDMAP_SETTINGS.selectedQuestId = qid
-				QuestPOI_SelectButtonByQuestId("WatchFrameLines", qid, true)
+				--QuestPOI_SelectButtonByQuestId("WatchFrameLines", qid, true)
 				SetSuperTrackedQuestID(qid)
 				break
 			end

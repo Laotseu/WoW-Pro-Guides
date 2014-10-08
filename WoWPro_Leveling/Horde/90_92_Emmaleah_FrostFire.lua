@@ -1,4 +1,3 @@
-
 -- WoWPro Guides by "The WoW-Pro Community" are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 -- Based on a work at github.com.
 -- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
@@ -218,7 +217,7 @@ T Thunderlord Cache|QID|32803|M|35.11,23.92;34.89,23.92;34.19,23.46|CS|N|Behind 
 K Primalist Mur'og|M|32.53,27.85;33.95,29.96;37.94,32.70;37.00,33.20|CS|N|There is a Shamanstone up here and the Primalist drops 516 cloth legs.|
 A Let the Hunt Begin!|QID|32791|M|30.89,25.84|N|From Ga'nar.|
 C Let the Hunt Begin!|QID|32791|NC|QO|1|CHAT|N|Tell Gnar you are ready|
-C Let the Hunt Begin!|QID|32791|M|36.45,26.17|N|Stay until his followers go down.  If you mess this up, drop and restart.|
+C Let the Hunt Begin!|QID|32791|M|36.45,26.17|N|Stay until his followers go down. If you mess this up, drop and restart.|
 T Let the Hunt Begin!|QID|32791|M|36.00,25.78|N|To Ga'nar.|
 A Leave Nothing Behind!|QID|32792|M|36.00,25.78|N|From Ga'nar.|
 A They Rely on Numbers|QID|32929|M|35.92,25.71|N|From Ligra the Unyielding.|
@@ -251,7 +250,7 @@ T Heavy Arms|QID|36589|M|50.03,68.90|P|Engineering;202|O|N|To Blizthraz Blastcha
 A Spare Parts|QID|36594|M|50.03,68.90|P|Engineering;202|N|From Blizthraz Blastcharge.|Z|Frostwall|
 T The Mysterious Flask|QID|35058|M|45.16,51.00|N|To Refugee Lo'nash.|P|Alchemy;171|Z|Frostwall|
 A The Alchemist|QID|35103|M|45.16,51.00|N|From Refugee Lo'nash.|P|Alchemy;171|Z|Frostwall|
-T Bigger is Better|QID|36567|M|42.16,55.58|RANK|2|N|To Gazlowe in your new town hall.  If you cant see him, just log out and back in again.|Z|Frostwall|
+T Bigger is Better|QID|36567|M|42.16,55.58|RANK|2|N|To Gazlowe in your new town hall. If you cant see him, just log out and back in again.|Z|Frostwall|
 
 C Ashran Appearance|QID|36706|M|45.67,50.12|CHAT|N|At Bron Skyhorn. Choose the chat option, not the actual flightpath.|Z|Frostwall|
 T Ashran Appearance|QID|36706|M|45.48,34.66|Z|Warspear|N|To Stomphoof.|
