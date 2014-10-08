@@ -215,7 +215,7 @@ C Lifting the Curse|QID|25818|M|15.08,23.79|N|Kill and loot Captain Halyndor, he
 T Lifting the Curse|QID|25818|M|14.37,24.02|N|Jump off the northside of the boat, swim down to the bottom of the ship and look for a hole. Swim in and turn the quest into the Intrepid's Locked Strongbox.|LVL|20|
 
 A The Eye of Paleth|QID|25819|M|14.37,24.02|N|From the Intrepid's Locked Strongbox.|PRE|25818|LVL|20|
-H Menethil Harbor|QID|25819|M|10.58,60.59|N|Hearth back to Menethal Harbor.|LVL|20|
+H Deepwater Tavern|QID|25819|M|10.58,60.59|N|Hearth back to Menethal Harbor.|LVL|20|
 T The Eye of Paleth|QID|25819|M|10.61,60.56|N|To Glorin Steelbrow.|
 T Claws from the Deep|QID|25801|M|11.14,57.76|N|To Karl Boran.|
 T Return the Statuette|QID|25805|M|11.14,57.76|N|To Karl Boran.|
@@ -231,7 +231,7 @@ A Crocolisk Hides|QID|25856|M|26.77,26.64|N|From James Halloran.|
 r Repair/Restock|QID|25856|M|25.67,25.86|N|At Wenna Silkbeard.|
 C Crocolisk Hides|QID|25856|S|M|27.23,23.21|N|Kill and loot any Crocolisk you see.|
 C Dinosaur Crisis|QID|25864|M|39.28,20.68|N|Kill 8 Highland Raptors.|S|
-C I'll Call Him Bitey|QID|25854|M|35.45,20.20|N|Collect 6 Wobbling Raptor Eggs.|
+C I'll Call Him Bitey|QID|25854|NC|M|35.45,20.20|N|Collect 6 Wobbling Raptor Eggs.|
 C Dinosaur Crisis|QID|25864|M|39.28,20.68|N|Kill 8 Highland Raptors.|US|
 C Crocolisk Hides|QID|25856|US|M|27.23,23.21|N|Kill and loot any Crocolisk you see.|
 
@@ -242,7 +242,7 @@ A Hunting Horrorjaw|QID|25857|M|26.75,26.63|N|From James Halloran.|PRE|25856|
 T I'll Call Him Bitey|QID|25854|M|26.78,25.92|N|To Fradd Swiftgear.|
 A Gizmos and Gadgets|QID|25855|M|26.78,25.92|N|From Fradd Swiftgear.|PRE|25854|
 
-C Hunting Horrorjaw|QID|25857|M|31.16,22.11|N|Kill and loot Horrorjaw for his hide.|
+K Horrorjaw|QID|25857|T|Horrorjaw|M|31.16,22.11|N|Kill and loot Horrorjaw for his hide.|
 C The Mosshide Job|QID|25865|S|M|33.73,31.21|N|Loot from gnolls.|
 C Gizmos and Gadgets|QID|25855|M|31.39,29.92|N|Look for sparkles in the ground and loot them.|
 C The Mosshide Job|QID|25865|US|M|33.73,31.21|N|Loot from gnolls.|
@@ -252,13 +252,13 @@ T Gizmos and Gadgets|QID|25855|M|26.82,25.92|N|To Fradd Swiftgear.|
 
 A Dark Iron Trappers|QID|25866|M|26.94,26.15|N|From Shilah Slabchisel.|PRE|25855;25857;25865|
 A Gnoll Escape|QID|25867|M|26.94,26.15|N|From Shilah Slabchisel.|PRE|25855;25857;25865|
-C Gnoll Escape|QID|25867|M|45.38,34.90|S|N|Free Gnolls from the Gnoll Cages when you get keys from Dark Iron Trappers.|
+C Gnoll Escape|QID|25867|NC|M|45.38,34.90|S|N|Free Gnolls from the Gnoll Cages when you get keys from Dark Iron Trappers.|
 C Dark Iron Trappers|QID|25866|M|43.62,34.27|N|Kill Dark Iron Trappers and loot their keys.|
-C Gnoll Escape|QID|25867|M|45.38,34.90|US|N|Free Gnolls from the Gnoll Cages when you get keys from Dark Iron Trappers.|
+C Gnoll Escape|QID|25867|NC|M|45.38,34.90|US|N|Free Gnolls from the Gnoll Cages when you get keys from Dark Iron Trappers.|
 T Dark Iron Trappers|QID|25866|M|26.91,26.18|N|To Shilah Slabchisel.|
 T Gnoll Escape|QID|25867|M|26.91,26.18|N|To Shilah Slabchisel.|
 A Yorla Darksnare|QID|25868|M|26.91,26.18|N|From Shilah Slabchisel.|PRE|25866+25867|
-C Yorla Darksnare|QID|25868|M|41.25,22.00|N|Kill Yorla Darksnare.|
+K Yorla Darksnare|QID|25868|T|Yorla Darksnare|M|41.25,22.00|N|Kill Yorla Darksnare.|
 T Yorla Darksnare|QID|25868|M|27.00,26.03|N|To Shilah Slabchisel.|
 A Whelgar's Retreat|QID|26981|M|27.00,26.03|N|From Shilah Slabchisel.|PRE|25868|
 f Whelgar's Retreat|QID|26981|M|38.77,39.03|N|At Damon Baelor.|
@@ -269,7 +269,7 @@ A Strike the Earth!|QID|25850|M|38.65,39.47|N|From Ormer Ironbraid.|
 A Tooling Around|QID|25853|M|38.81,39.71|N|From Merrin Rockweaver.|
 C Strike the Earth!|QID|25850|M|33.59,47.47|S|N|Kill Paleolithic Elementals.|
 C When Archaeology Attacks|QID|25849|M|34.49,46.65|S|N|Kill and loot Living Fossils.|
-C Tooling Around|QID|25853|M|35.37,50.71|N|The Tools are little sparkling boxes.|
+C Tooling Around|QID|25853|NC|M|35.37,50.71|N|The Tools are little sparkling boxes.|
 C Strike the Earth!|QID|25850|M|33.59,47.47|US|N|Kill Paleolithic Elementals.|
 C When Archaeology Attacks|QID|25849|M|34.49,46.65|US|N|Kill and loot Living Fossils.|
 T Strike the Earth!|QID|25850|M|38.67,39.48|N|To Ormer Ironbraid.|
@@ -280,7 +280,7 @@ L Level 22 |QID|26189|LVL|22|N|You need to be Level 22 to be able to continue th
 
 A The Angerfang Menace|QID|26189|M|38.89,39.47|N|From Prospector Whelgar.|PRE|25849|
 C The Angerfang Menace|QID|26189|QO|Angerfang Dragonmaw slain: 16/16|M|53.33,54.44|N|Kill Angerfang Dragonmaw Orcs.|S|
-K Gorfax Angerfang|QID|26189|M|53.33,54.44|QO|Gorfax Angerfang slain: 1/1|N|Kill Gorfax Angerfang.|ACTIVE|26189|
+K Gorfax Angerfang|QID|26189|T|Gorfax Angerfang|M|53.33,54.44|QO|Gorfax Angerfang slain: 1/1|N|Kill Gorfax Angerfang.|ACTIVE|26189|
 C The Angerfang Menace|QID|26189|QO|Angerfang Dragonmaw slain: 16/16|M|53.33,54.44|N|Kill Angerfang Dragonmaw Orcs.|US|
 T The Angerfang Menace|QID|26189|M|38.94,39.46|N|To Prospector Whelgar.|
 
@@ -301,7 +301,7 @@ T Mired in Hatred|QID|25926|M|56.36,40.23|N|To Rethiel the Greenwarden.|
 A The Threat of Flame|QID|25927|M|56.36,40.23|N|From Rethiel the Greenwarden.|PRE|25926|
 A For Peat's Sake|QID|25939|M|56.41,39.93|N|From Ferilon Leafborn.|PRE|25926|
 C The Threat of Flame|QID|25927|M|56.74,29.50|S|N|Kill Rampant Fire Elementals.|
-C For Peat's Sake|QID|25939|U|56134|M|63.43,33.10|N|Stand in the fire and use your Floodlilly.|
+C For Peat's Sake|QID|25939|NC|U|56134|M|63.43,33.10|N|Stand in the fire and use your Floodlilly.|
 C The Threat of Flame|QID|25927|M|56.74,29.50|US|N|Kill Rampant Fire Elementals.|
 T The Threat of Flame|QID|25927|M|56.48,40.39|N|To Rethiel the Greenwarden.|
 T For Peat's Sake|QID|25939|M|56.41,39.94|N|To Rethiel the Greenwarden.|
