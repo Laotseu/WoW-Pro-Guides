@@ -45,6 +45,7 @@
 -- Date: 2014-09-19 18:17
 -- Who: Fluclo
 
+
 local guide = WoWPro:RegisterGuide('EmmFluc_DarkPortal', "Leveling", 'The Dark Portal', 'Emm+Fluc', 'Neutral')
 WoWPro:GuideLevels(guide,90,90,90)
 WoWPro:GuideNextGuide(guide, 'ShadowDraenor|EmmFrostfire')
@@ -52,8 +53,8 @@ WoWPro:GuideSteps(guide, function()
 return [[
 
 ;Quest numbers differ on source pick-up. From Stormwind or Orgrimmar Auto-Accept, it is 34398. From Archmage Khadgar at The Dark Portal it is 36881.
-C The Dark Portal |QID|36881|Z|Blasted Lands|M|54.9,50.3|N|To Archmage Khadgar|CHAT|ACTIVE|36881|
-T The Dark Portal |QID|36881|N|To Archmage Khadgar|M|54.8,48.2|Z|Tanaan Jungle|ACTIVE|36881|
+C The Dark Portal |QID|34398;36881|Z|Blasted Lands|M|54.9,50.3|N|To Archmage Khadgar|CHAT|
+T The Dark Portal |QID|34398;36881|N|To Archmage Khadgar|M|54.8,48.2|Z|Tanaan Jungle|
 
 A The Dark Portal |QID|34398|Z|Stormwind City|N|Auto-Accept on arrival in Stormwind City. If it doesn't appear/auto-accept, just head to the Hero's Call Board and select the quest from there.|FACTION|Alliance|Z|Stormwind City|LEAD|36881|
 A The Dark Portal |QID|34398|Z|Orgrimmar|N|Auto-Accept on arrival in Orgrimmar. If it doesn't appear/auto-accept, just head to the Hero's Call Board and select the quest from there.|FACTION|Horde|Z|Orgrimmar|LEAD|36881|

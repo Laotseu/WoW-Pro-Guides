@@ -139,7 +139,7 @@ A Hero's Call: Twilight Highlands!|QID|28716|M|62.90,71.78|N|From the Message bo
 T Hero's Call: Twilight Highlands!|QID|28716|M|85.62,31.93|N|To King Varian Wrynn.|Z|Stormwind City|
 
 A My Son, the Prince|QID|26960|PRE|28716|M|85.62,31.93|N|From King Varian Wrynn.|Z|Stormwind City|
-C My Son, the Prince|QID|26960|M|85.64,31.86|Z|Stormwind City|N|Talk to Anduin,|NC|
+C My Son, the Prince|QID|26960|M|85.64,31.86|Z|Stormwind City|N|Talk to Anduin,|CHAT|
 T My Son, the Prince|QID|26960|M|85.62,31.93|N|To King Varian Wrynn.|Z|Stormwind City|
 
 A Rallying the Fleet|QID|26975|M|85.62,31.93|N|From King Varian Wrynn.|Z|Stormwind City|
@@ -208,7 +208,7 @@ T Kurdran's Waitin'|QID|28599|M|79.10,78.32|N|To Kurdran Wildhammer upstairs ins
 
 A Our Boys on the Shore|QID|27338|PRE|28597|M|79.10,78.32|N|From Kurdran Wildhammer.|
 A Salvage Operation|QID|27177|M|79.28,78.47|N|From Simon Chandler.|S|
-A Naga Reinforcements|QID|27178|M|78.28,78.47|N|From Simon Chandler.|
+A Naga Reinforcements|QID|27178|M|79.28,78.47|N|From Simon Chandler.|
 A Salvage Operation|QID|27177|M|79.28,78.47|N|From Simon Chandler.|US|
 
 A Siren's Song|QID|27200|M|76.02,79.70|N|From Ephram Hardstone, who's on the sinking ship at the Obsidian Breakers (southwest of Highbank).|
@@ -253,7 +253,7 @@ C Roots'll Do 'Er|QID|27515|M|71.98,66.59|N|Collect the roots in the area.|NC|
 T Roots'll Do 'Er|QID|27515|M|67.71,65.90|N|To Thordun Hammerblow.|
 
 A Wings Over Highbank|QID|27516|M|67.71,65.90|N|From Thordun Hammerblow.|
-C Wings Over Highbank|QID|27516|M|67.66,65.95|N|Speak to Thordun Hammerblow when you are ready to fly back.|NC|
+C Wings Over Highbank|QID|27516|M|67.66,65.95|N|Speak to Thordun Hammerblow when you are ready to fly back.|CHAT|
 T Wings Over Highbank|QID|27516|M|79.12,78.27|N|To Kurdran Wildhammer upstairs.|
 
 A Any Portal in a Storm|QID|27537|M|79.12,78.27|N|From Kurdran Wildhammer.|
