@@ -335,7 +335,7 @@ T The Prophet's Dying Words|QID|27602|M|39.66,45.38|N|"Talk" to the Sand-Covered
 
 A Colossal Guardians|QID|27623|M|39.66,45.38|N|From the Sand-Covered Hieroglyph.|
 
-C Under the Choking Sands|QID|27519|S|NC|M|40.63,39.15|N|Right-click Oasis Survivors to rescue them.|
+;C Under the Choking Sands|QID|27519|S|NC|M|40.63,39.15|N|Right-click Oasis Survivors to rescue them.|
 C Colossal Guardians|QID|27623|M|41.19,37.73|N|Right-click the Colossus of the Moon, kill it and loot the Stone of the Moon.|QO|Stone of the Moon: 1/1|
 C Colossal Guardians|QID|27623|M|39.60,40.88|N|Right-click the Colossus of the Sun, kill it and loot the Stone of the Sun.|
 C Under the Choking Sands|QID|27519|US|NC|M|40.63,39.15|N|Right-click Oasis Survivors to rescue them.|

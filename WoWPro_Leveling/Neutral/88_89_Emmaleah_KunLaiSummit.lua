@@ -387,12 +387,12 @@ A Pandaren Prisoners|QID|30655|FACTION|Horde|M|62.36,79.64|N|From Elder Shiao.|
 C Pandaren Prisoners|QID|30655;30650|NC|S|M|49.67,80.36|N|Free the Pandaren Prisoners, they are located throughout Fire Camp Ordo.|
 C Barrels of Fun - Eastern Oil Rig|QID|30656;30651|NC|U|80528|M|51.0,79.4|N|Locate and click on a Explosives Barrel, head to the Eastern Oil Rig and use the Explosives.|QO|Eastern Oil Rig destroyed: 1/1|
 C Barrels of Fun - Southern Oil Rig|QID|30656;30651|S|NC|U|80528|M|49.62,80.99|N|Locate another Explosives Barrel.|QO|Southern Oil Rig destroyed: 1/1|
-C In Tents Channeling - Musaan the Blazecaster|QID|30657;30652|M|50.42,78.64|N|Kill Musaan the Blazecaster|QO|Musaan the Blazecaster slain: 1/1|T|Musaan the Blazecaster|
-C In Tents Channeling - Harala the Firespeaker|QID|30657;30652|M|49.44,78.5|N|Kill Harala the Firespeaker|QO|Harala the Firespeaker slain: 1/1|T|Harala the Firespeaker|
+K Musaan the Blazecaster|QID|30657;30652|M|50.42,78.64|N|Kill Musaan the Blazecaster|QO|Musaan the Blazecaster slain: 1/1|T|Musaan the Blazecaster|
+K Harala the Firespeaker|QID|30657;30652|M|49.44,78.5|N|Kill Harala the Firespeaker|QO|Harala the Firespeaker slain: 1/1|T|Harala the Firespeaker|
 C Barrels of Fun - Southern Oil Rig|QID|30656;30651|US|NC|U|80528|M|49.62,80.99|N|Locate and click another Explosives Barrel, head to the Southern Oil Rig and use the Explosives.|QO|Southern Oil Rig destroyed: 1/1|
 C Barrels of Fun - Western Oil Rig|QID|30656;30651|S|NC|U|80528|M|49.42,80.61|N|Locate one more Explosives Barrel.|QO|Western Oil Rig destroyed: 1/1|
-C In Tents Channeling - Pao-kun the Pyromancer|QID|30657;30652|M|49.17,80.36|N|Kill Pao-kun the Pyromancer|QO|Pao-kun the Pyromancer slain: 1/1|T|Pao-kun the Pyromancer|
-C In Tents Channeling - Akonu the Embercaller|QID|30657;30652|M|47.71,79.97|N|Kill Akonu the Embercaller|QO|Akonu the Embercaller slain: 1/1|T|Akonu the Embercaller|
+K Pao-kun the Pyromancer|QID|30657;30652|M|49.17,80.36|N|Kill Pao-kun the Pyromancer|QO|Pao-kun the Pyromancer slain: 1/1|T|Pao-kun the Pyromancer|
+K Akonu the Embercaller|QID|30657;30652|M|47.71,79.97|N|Kill Akonu the Embercaller|QO|Akonu the Embercaller slain: 1/1|T|Akonu the Embercaller|
 T In Tents Channeling|QID|30657;30652|N|To UI Alert.|
 A The Ordo Warbringer|QID|30660;30661|N|From UI Alert.|
 C Barrels of Fun - Western Oil Rig|QID|30656;30651|US|NC|U|80528|M|47.87,81.42|N|Locate and click one more Explosives Barrel, head to the Western Oil Rig and use the Explosives.|QO|Western Oil Rig destroyed: 1/1|
@@ -448,7 +448,7 @@ T The Fearmaster|QID|30804|M|71.37,69.64|N|To Lao Muskpaw.|
 T At the Yak Wash|QID|30491|M|71.34,69.31|N|To Muskpaw Jr..|
 A Back in Yak|QID|30492|M|71.33,69.28|N|From Muskpaw Jr..|
 
-R The Grummle Bazaar|QID|30492|CS|M|69.47,68.93;66.49,66.62;61.6,62.03;65.51,61.26|
+R The Grummle Bazaar|QID|30492|CS|M|69.47,68.93;66.49,66.62;65.51,61.26|
 C Back in Yak|QID|30492|M|65.51,61.26|
 T Back in Yak|QID|30492|M|64.71,61.76|N|To Lucky Eightcoins.|
 A A Grummle's Luck|QID|30808|M|64.71,61.76|N|From Lucky Eightcoins.|
@@ -459,7 +459,7 @@ C Sturdy Yaungol Spear|QID|31421|NC|M|71.2,62.6;70.0,63.8|CN|N|Optional-This BoA
 R Fire Camp Ruqin|QID|30614|M|63.44,68.53|
 C Traffic Issues|QID|30616|S|M|63.53,66.80|N|Kill the Ruqin Yaungols around the camp.|
 C A Grummle's Luck|QID|30808|S|M|62.24,66.92|N|These are groundspawn 'sparklies', beside things, inside boxes, etc.|NC|
-C Oil Stop|QID|30614|U|80312|M|63.44,68.53;62.64,68.36|CN|N|Click on the oilwell to fill your flask. These respawn pretty fast.|
+C Oil Stop|QID|30614|NC|U|80312|M|63.44,68.53;62.64,68.36|CN|N|Click on the oilwell to fill your flask. These respawn pretty fast.|
 C A Grummle's Luck|QID|30808|US|M|62.24,66.92|N|These are groundspawn 'sparklies', beside things, inside boxes, etc.|NC|
 C Traffic Issues|QID|30616|US|M|63.53,66.80|N|Finish killing the Ruqin Yaungols around the camp.|
 T A Grummle's Luck|QID|30808|M|64.71,61.76|N|To Lucky Eightcoins.|
