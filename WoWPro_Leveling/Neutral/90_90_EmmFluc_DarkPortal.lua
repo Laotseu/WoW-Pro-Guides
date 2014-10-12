@@ -4,6 +4,11 @@
 -- Permissions beyond the scope of this license may be available at http://www.wow-pro.com/License.
 
 -- URL: http://wow-pro.com/wiki/assault_dark_portal
+-- Date: 2014-10-12 06:06
+-- Who: Emmaleah
+-- Log: run thru in build 19005 - Emmaleah - 10/11/14 (combining of horde/alliance steps)
+
+-- URL: http://wow-pro.com/node/3600/revisions/26701/view
 -- Date: 2014-09-29 21:07
 -- Who: Fluclo
 

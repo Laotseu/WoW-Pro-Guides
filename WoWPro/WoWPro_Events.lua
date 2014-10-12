@@ -236,8 +236,8 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 					       --  WoWPro.CompleteStep(i)
 				        -- end
 				
-						-- Quest Completion: Any C or K step is considered completed if the quest is completed
-						elseif (action == "C" or action == "K") and not completion and quest_log_index and select(6,GetQuestLogTitle(quest_log_index)) == 1 then
+						-- Quest Completion: Any C, K or l step is considered completed if the quest is completed
+						elseif (action == "C" or action == "K" or action == "l") and not completion and quest_log_index and select(7,GetQuestLogTitle(quest_log_index)) == 1 then
 							WoWPro.CompleteStep(i, true)
 
 						-- If the flighpoint is already known, mark it. Not really related to the quest log but only
