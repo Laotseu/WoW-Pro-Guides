@@ -34,7 +34,7 @@ WoWPro.actiontypes = {
 	A = "Interface\\GossipFrame\\AvailableQuestIcon",
 	--C = "Interface\\Icons\\Ability_DualWield",
 	--C = "Interface\\CHARACTERFRAME\\UI-StateIcon",
-	C = "Interface\\MINIMAP\\OBJECTICONS",
+	C = [[Interface\QUESTFRAME\QuestTypeIcons]],
 	T = "Interface\\GossipFrame\\ActiveQuestIcon",
 	--K = "Interface\\Icons\\Ability_Creature_Cursed_02",
 	K = "Interface\\MINIMAP\\OBJECTICONS",
@@ -59,21 +59,23 @@ WoWPro.actiontypes = {
 	r = "Interface\\MINIMAP\\OBJECTICONS",
 	t = "Interface\\GossipFrame\\ActiveQuestIcon",
 	--noncombat = "Interface\\AddOns\\WoWPro\\Textures\\Config.tga",
-	noncombat = "Interface\\MINIMAP\\OBJECTICONS",
+	-- noncombat = "Interface\\MINIMAP\\OBJECTICONS",
+	--noncombat = [[Interface\GossipFrame\BinderGossipIcon]],
+	noncombat = [[Interface\CURSOR\openhand]],
 	chat = "Interface\\GossipFrame\\Gossipgossipicon",
 	acceptdaily = "Interface\\GossipFrame\\DailyQuestIcon",
 	turnindaily = "Interface\\GossipFrame\\DailyActiveQuestIcon",
 }
 WoWPro.actiontypecoords = {
 	--C = { 1/2, 1, 0, 1/2 },
-	C = { 4/8, 5/8, 5/8, 6/8 },
-	K = { 5/8, 6/8, 3/8, 4/8 },
+	C = { 2/7, 3/7, 1/4, 2/4 },
+	K = { 7/8, 8/8, 6/8, 7/8 },
 	F = { 4/8, 5/8, 2/8, 3/8 },
 	f = { 5/8, 6/8, 1/8, 2/8 },
 	B = { 0/8, 1/8, 2/8, 3/8 },
 	h = { 0, 1/2, 0, 1/2},
 	r = { 3/8, 4/8, 3/8, 4/8 },
-	noncombat = { 1/8, 2/8, 4/8, 5/8 },
+	-- noncombat = { 1/8, 2/8, 4/8, 5/8 },
 }
 function WoWPro:SetActiontypeTex(tex, actiontype)
 	if not WoWPro.actiontypes[actiontype] then
@@ -1049,7 +1051,7 @@ function WoWPro:RowLeftClick(i)
 	if QID then
 	   ShowUIPanel(QuestLogFrame)
 	   -- QuestLog_OpenToQuest(WoWPro.QuestLog[QID].index)
-		QuestLog_OpenToQuest(WoWPro.QuestLog[QID])
+		QuestLogPopupDetailFrame_Show(WoWPro.QuestLog[QID])
 	end
 	WoWPro.rows[i]:SetChecked(nil)
 end
