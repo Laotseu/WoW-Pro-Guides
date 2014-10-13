@@ -560,6 +560,16 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	zone = zone or WoWPro.zone[i] or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)") or "") or GetRealZoneText()
 	local autoarrival = WoWPro.waypcomplete[i]
 
+	-- Accept |Z|zone name;floor| since / can be a valid character for zone name
+	if zone:match(";") then
+		-- Well, they have a floor specified
+		zone , floor = string.split(";",zone)
+		floor = tonumber(floor)
+		if not zone then
+			zone = strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)") or "") or GetRealZoneText()
+		end
+	end
+
 	if zone:match("/") then
 		-- Well, they have a floor specified
 		zone , floor = string.split("/",zone)
@@ -569,7 +579,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 		end
 	end
 
-	if eric_map then err("zone = %s,floor = %s,desc = %s",zone,floor,desc) end
+	if eric_map then err("zone = %s, floor = %s, desc = %s",zone,floor,desc) end
 
 	-- Loading Blizzard Coordinates for this objective, if coordinates aren't provided --
 	if (WoWPro.action[i]=="T" or WoWPro.action[i]=="C") and WoWPro.QID and WoWPro.QID[i] and (not coords or forceBlizCoord) then
