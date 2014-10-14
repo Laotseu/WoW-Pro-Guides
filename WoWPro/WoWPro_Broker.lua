@@ -437,25 +437,6 @@ function WoWPro:NextStep(k,i)
 			break
 		end
 		
-		-- Optional Quests --
-		-- if WoWPro.optional[k] and QID then 
-		-- 	skip = true --Optional steps default to skipped --
-		-- 	WoWPro.why[k] = "NextStep(): Optional steps default to skipped."
-		-- 	-- Checking Use Items --
-		-- 	if WoWPro.use and WoWPro.use[k] then
-		-- 		if GetItemCount(WoWPro.use[k]) >= 1 then 
-		-- 			skip = false -- If the optional quest has a use item and it's in the bag, it's NOT skipped --
-		-- 			WoWPro.why[k] = "NextStep(): Optional steps with an item to use that is present is not skipped."
-		-- 		end
-		-- 	end
-		-- 	-- Are we on the quest?
-		-- 	if WoWPro:QIDsInTable(QID,WoWPro.QuestLog) then
-		-- 		skip = false -- The optional quest is not skipped if we are on it!
-		-- 		WoWPro.why[k] = "NextStep(): Optional not skipped if on the quest!"			    
-		-- 	end
-		-- end
-	
-	
 		-- Checking Prerequisites --
     	if WoWPro.prereq[k] and k <= CurrentIndex then
     	    if string.find(WoWPro.prereq[k],"+") then
@@ -544,30 +525,7 @@ function WoWPro:NextStep(k,i)
 		       skip = true
 		   end
 		end
-        -- Partial Completion --
-        -- Already done in AutoCompleteQuestUpdate
-        -- if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[k] 
-        -- and not WoWProCharDB.Guide[GID].completion[k] then 
-	       --  local numquesttext = select("#", string.split(";", WoWPro.questtext[k]))
-	       --  local complete = true
-	       --  for l=1,numquesttext do
-		      --   local lquesttext = select(numquesttext-l+1, string.split(";", WoWPro.questtext[k]))
-		      --   local lcomplete = false
-		      --   for _, objective in pairs(WoWPro.QuestLog[QID].leaderBoard) do --Checks each of the quest log objectives
-			     --    if lquesttext == objective then --if the objective matches the step's criteria, mark true
-				    --     lcomplete = true
-			     --    end
-		      --   end
-		      --   if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
-	       --  end
-	       --  --if the step has not been found to be incomplete, run the completion function
-	       --  if complete then
-	       --      WoWPro.CompleteStep(i)
-	       --      skip = true
-	       --      break
-	       --  end 
-        -- end
-
+ 
 	   -- Skip C or T steps, or step with |QO| if they are not active quests
 	   -- ActiveStep is used here in order not to skip if the A step is a sticky (doesn't work, let's fix the guides instead)
 	   if (WoWPro.action[k] == "C" or WoWPro.action[k] == "T" or WoWPro.questtext[k]) and
