@@ -237,7 +237,7 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 				        -- end
 				
 						-- Quest Completion: Any C, K or l step is considered completed if the quest is completed
-						elseif (action == "C" or action == "K" or action == "l") and not completion and quest_log_index and select(7,GetQuestLogTitle(quest_log_index)) == 1 then
+						elseif (action == "C" or action == "K" or action == "l") and not completion and quest_log_index and select(6,GetQuestLogTitle(quest_log_index)) == 1 then
 							WoWPro.CompleteStep(i, true)
 
 						-- If the flighpoint is already known, mark it. Not really related to the quest log but only
@@ -585,14 +585,15 @@ function WoWPro.EventHandler(frame, event, ...)
 
 	-- Unlocking event processong after things get settled --
 	if event == "PLAYER_ENTERING_WORLD" then
-	    WoWPro:dbp("Setting Timer 1")
+	    WoWPro:dbp("Setting Timer PEW")
 	    WoWPro.InitLockdown = true
+	    WoWPro.LockdownCounter = 5  -- times until release and give up to wait for other addons
 	    WoWPro.LockdownTimer = 1.5
 	end
 		
 	-- Locking event processong till after things get settled --
 	if event == "PLAYER_LEAVING_WORLD" then
-	    WoWPro:dbp("Locking Down 1")
+	    WoWPro:dbp("Locking Down PLW")
 	    WoWPro.InitLockdown = true
 	end
 	
@@ -788,6 +789,12 @@ function WoWPro.EventHandler(frame, event, ...)
 		WoWPro:AutoCompleteQuestUpdate(GetQuestID())
 	end
 	
+	if event == "QUEST_TURNED_IN" or event == "QUEST_ACCEPTED" then
+	    local qlidx, qid = ...
+	    WoWPro:dbp("%s(%s,%s)",event,qlidx,qid)
+	    -- just watch for now
+	end
+	    
 	if event == "TRADE_SKILL_SHOW" then
 	    WoWPro:ScanTrade()
     end
@@ -823,6 +830,9 @@ function WoWPro.EventHandler(frame, event, ...)
 		WoWPro:AutoCompleteQuestUpdate(nil)
 		WoWPro:UpdateQuestTracker()
 		WoWPro:UpdateGuide(event)
+		if WoWPro.Recorder then
+	        WoWPro:SendMessage("WoWPro_PostQuestLogUpdate")
+	    end
 	end	
 	if event == "UI_INFO_MESSAGE" then
 		WoWPro:AutoCompleteGetFP(...)

@@ -534,6 +534,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	if not GID or not WoWPro.Guides[GID] then return end
 	if WoWPro.InitLockdown then return end
 
+
 	-- Removing old map point --
 	WoWPro:RemoveMapPoint()
 	--FinalCoord = nil
@@ -541,7 +542,8 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 
 	-- Loading Variables for this step --
 	local i
-	if row then i = WoWPro.rows[row].index 
+	if row then 
+		i = WoWPro.rows[row].index 
 	else 
 		-- i = WoWPro:NextStepNotSticky(WoWPro.ActiveStep)
 		i = WoWPro.CurrentIndex or WoWPro.ActiveStep or 1
@@ -558,6 +560,16 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	zone = zone or WoWPro.zone[i] or strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)") or "") or GetRealZoneText()
 	local autoarrival = WoWPro.waypcomplete[i]
 
+	-- Accept |Z|zone name;floor| since / can be a valid character for zone name
+	if zone:match(";") then
+		-- Well, they have a floor specified
+		zone , floor = string.split(";",zone)
+		floor = tonumber(floor)
+		if not zone then
+			zone = strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)") or "") or GetRealZoneText()
+		end
+	end
+
 	if zone:match("/") then
 		-- Well, they have a floor specified
 		zone , floor = string.split("/",zone)
@@ -567,13 +579,13 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 		end
 	end
 
-	if eric_map then err("zone = %s,floor = %s,desc = %s",zone,floor,desc) end
+	if eric_map then err("zone = %s, floor = %s, desc = %s",zone,floor,desc) end
 
 	-- Loading Blizzard Coordinates for this objective, if coordinates aren't provided --
 	if (WoWPro.action[i]=="T" or WoWPro.action[i]=="C") and WoWPro.QID and WoWPro.QID[i] and (not coords or forceBlizCoord) then
 		QuestMapUpdateAllQuests()
 		QuestPOIUpdateIcons()
-		WorldMapFrame_UpdateQuests()
+		--WorldMapFrame_UpdateQuests()
 		local x, y = WoWPro:findBlizzCoords(WoWPro.QID[i])
 		if x and y then coords = tostring(x)..","..tostring(y) end
 	end
@@ -593,7 +605,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 		for _, qid in ipairs(QIDs) do
 			if IsQuestWatched(GetQuestLogIndexByID(qid)) then
 				WORLDMAP_SETTINGS.selectedQuestId = qid
-				QuestPOI_SelectButtonByQuestId("WatchFrameLines", qid, true)
+				--QuestPOI_SelectButtonByQuestId("WatchFrameLines", qid, true)
 				SetSuperTrackedQuestID(qid)
 				break
 			end

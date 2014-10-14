@@ -775,6 +775,9 @@ function WoWPro:CreateDropdownMenu()
 		{text = "Display Settings", func = function() 
 			InterfaceOptionsFrame_OpenToCategory("Guide Display") 
 		end},
+		{text = "Icon Legend", func = function() 
+			InterfaceOptionsFrame_OpenToCategory("Icon Legend") 
+		end},
 		{text = L["Guide List"], func = function() 
 			InterfaceOptionsFrame_OpenToCategory("Guide List") 
 		end},
