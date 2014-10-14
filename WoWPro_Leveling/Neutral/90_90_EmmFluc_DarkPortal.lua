@@ -220,6 +220,9 @@ C The Home Stretch |QID|34446|N|Run through the Iron Bastion to the Docks.\n(Not
 T The Home Stretch |QID|35884|N|To Archmage Khadgar|M|44.4,80.7|Z|TanaanJungleIntro|FACTION|Alliance|
 T The Home Stretch |QID|34446|N|To Archmage Khadgar|M|44.4,80.7|Z|TanaanJungleIntro|FACTION|Horde|
 
+A Step Three: Prophet! |QID|34575|M|44.4,80.7|Z|TanaanJungleIntro|N|From Archmage Khadgar|; Iron Bastion |Z|970;0|
+T Step Three: Prophet! |QID|34575|M|27.0,8.1|Z|Shadowmoon Valley|N|To Prophet Velen|; Eventide Landing |Z|947;0|
+
 ]]
 
 end)
