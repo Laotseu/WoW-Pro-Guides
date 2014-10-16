@@ -34,6 +34,7 @@ local function createBlizzOptions()
 						if WoWPro.Dailies:IsEnabled() then WoWPro.Dailies:Disable() else WoWPro.Dailies:Enable() end
 					end
 			}, 
+			--[[
 			blank2 = {
 				order = 3,
 				type = "description",
@@ -148,6 +149,7 @@ local function createBlizzOptions()
 				imageWidth = 15,
 				imageHeight = 15
 			}, 
+			]]
 		},
 	})
 	dialog:SetDefaultSize("WoWPro-Dailies-Bliz", 600, 400)

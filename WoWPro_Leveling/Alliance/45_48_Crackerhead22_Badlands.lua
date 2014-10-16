@@ -102,7 +102,7 @@ R Light's Hope Chapel|QID|27762|M|73.8,53.1|Z|Eastern Plaguelands|N|The questing
 T Hero's Call: Badlands! |QID|28579|M|73.8,53.1|Z|Eastern Plaguelands|N|To Gek Nozzlerocket|M|73.8,53.1|O|
 
 A Fuselight, Ho!|QID|27762|M|73.8,53.1|Z|Eastern Plaguelands|N|From Gek Nozzlerocket.|
-R Fuselight-by-the-Sea|QID|27762|M|73.8,53.1|Z|Eastern Plaguelands|N|Click on "The Uncrashable" behind Gek, and accept the warning that it will take you to The Badlands. Pray - it is some bad driving.|
+R Fuselight-by-the-Sea|QID|27762|M|73.8,53.1|Z|Eastern Plaguelands|N|Click on "The Uncrashable" behind Gek, and pray. It is some bad driving.|
 T Fuselight, Ho!|QID|27762|M|92.6,38.9|N|To Eddie Flofizzle.|
 
 A To Fuselight Proper|QID|27763|M|92.48,38.94|N|From Eddie Flofizzle.|
@@ -121,16 +121,16 @@ T When the Going Gets Tough, Cheat|QID|27775|M|64.35,37.97|N|To Garyanne Fleezle
 A It's Goat Time, Baby|QID|27776|M|64.47,37.93|N|From Garyanne Fleezlebop.|
 T Easily Swayed|QID|27774|M|65.06,38.26|N|To Dolph Blastus.|
 A A Strange Request|QID|27764|M|65.06,38.26|N|From Dolph Blastus.|
-C It's Goat Time, Baby|QID|27776|U|62397|M|61.45,36.83|N|Have fun sending 12 Billy Goats off the edge of the cliff. There is a timed achievement requiring 12 in a minute as well.|NC|
+C It's Goat Time, Baby|QID|27776|T|Billy Goat;use item:62397|M|61.45,36.83|N|Have fun sending 12 Billy Goats off the edge of the cliff.  There is a timed achievement requiring 12 in a minute as well.|NC|
 T It's Goat Time, Baby|QID|27776|M|64.34,38.14|N|To Garyanne Fleezlebop.|
 
 T A Strange Request|QID|27764|M|66.36,55.30|N|To Rhea. Unless you plan on jumping off the cliff, take either path down and cut through the valley.|
 
 A First Sample: Wild Eggs|QID|27765|M|66.36,55.30|N|From Rhea.|
 A Second Sample: Whelps|QID|27766|M|66.37,55.29|N|From Rhea.|
-C First Sample: Wild Eggs|QID|27765|M|70.61,45.08|N|There at the bottom edges of the surrounding cliffs. You usually will be attacked when you pick up an egg.|S|
+C First Sample: Wild Eggs|QID|27765|NC|M|70.61,45.08|N|There at the bottom edges of the surrounding cliffs. You usually will be attacked when you pick up an egg.|S|
 C Second Sample: Whelps|QID|27766|M|70.61,45.08|N|Kill whelps then loot the corpses until you get 10 "Scalding Whelp Corpses".|
-C First Sample: Wild Eggs|QID|27765|M|70.61,45.08|N|There at the bottom edges of the surrounding cliffs. You usually will be attacked when you pick up an egg.|US|
+C First Sample: Wild Eggs|QID|27765|NC|M|70.61,45.08|N|There at the bottom edges of the surrounding cliffs. You usually will be attacked when you pick up an egg.|US|
 T First Sample: Wild Eggs|QID|27765|M|66.48,55.30|N|To Rhea.|
 T Second Sample: Whelps|QID|27766|M|66.48,55.30|N|To Rhea.|
 A Lifting the Veil|QID|27770|M|66.48,55.30|N|From Rhea.|
@@ -152,7 +152,7 @@ A Dustwind Dig|QID|27791|M|47.05,56.55|N|From Dr. Hieronymus Blam.|
 T Dustwind Dig|QID|27791|M|49.19,36.84|N|To Lead Prospector Durdin.|
 A All's Fair in Love, War, and Archaeology|QID|27792|M|49.19,36.84|N|From Lead Prospector Durdin.|
 
-f Dustwind Dig|QID|27772|M|48.90,36.33|N|At Nancy Skybrew.|
+f Dustwind Dig|M|49.0,36.2,36.33|N|At Nancy Skybrew.|
 r Sell junk, repair/restock.|QID|27823|
 A A Dwarf's Got Needs|QID|27823|M|49.44,37.11|N|From Sigrun Ironhew.|
 C A Dwarf's Got Needs|QID|27823|M|49.03,28.78|N|Kill Dark Iron Dwarves to obtain 15 mugs of "Shadowstout".|
@@ -164,7 +164,7 @@ A The Warden's Pawn|QID|27796|M|49.16,36.82|N|From Lead Prospector Durdin.|
 A The Sentinel's Pawn|QID|27797|M|49.16,36.82|N|From Lead Prospector Durdin.|
 C The Good Stuff|QID|27824|M|39.85,24.89|N|In the basement next to the fireplace.|NC|
 T The Good Stuff|QID|27824|M|49.38,36.91|N|To Sigrun Ironhew.|
-T The Sentinel's Pawn|QID|27797|M|48.13,50.89|N|Underground in the Tomb of the Watchers, at the Marble Slab (right hand on entering tomb / the western annex)|
+T The Sentinel's Pawn|QID|27797|M|50.5,46.9;48.13,50.89|CS|N|Underground in the Tomb of the Watchers, at the Marble Slab (right hand on entering tomb / the western annex)|
 A The Sentinel's Game|QID|27709|M|48.13,50.89|N|From the Marble Slab.|
 
 N The Sentinel's Game|QID|27709|N|The next few steps tell you which way to turn the statues. It may help to zoom the map in to better find the right one via the waypoint.|
@@ -202,7 +202,7 @@ N Ride to the end of the canyon|QID|27715|M|43.38,41.13|QO|Ride to the end of th
 C The Day that Deathwing Came: What Really Happened|QID|27715|M|39.37,38.51|N|Fly up to Deathwing.|
 T The Day that Deathwing Came: What Really Happened|QID|27715|M|26.29,62.29|N|To Martek the Exiled.|
 
-f Dragon's Mouth|QID|27826|M|21.79,57.73|N|At Jake Badlands.|
+f Dragon's Mouth|M|21.79,57.73|N|At Jake Badlands.|
 T Into the Dragon's Mouth|QID|27826|M|21.29,57.79|N|To Rhea.|
 A The Swift, the Fierce, and the Stout|QID|27827|M|21.29,57.79|N|From Rhea.|
 A Half-Ton Holdouts|QID|27833|M|20.85,57.28|N|From Terrance Storm.|
@@ -222,15 +222,21 @@ T Eric, the Utility Dwarf|QID|27828|M|20.53,55.94|N|To Eric "The Swift".|
 
 A The Wrath of a Dragonflight|QID|27829|M|20.53,55.94|N|From Eric "The Swift".|
 N Note:|QID|27829|N|Abuse the heck out of Eric's, "Eric's Charge" ability as it is a stun. Especially when fighting the elites. Close this step.|
-C The Wrath of a Dragonflight|QID|27829|M|26.38,45.02|N|Kalaran wanders around so look for his boss icon on the minimap.|
+C Drakflight Soldiers|QID|27829|S|M|26.38,45.02|QO|Drakflight Soldier slain: 0/4|N|Kill Drakflight Soldiers|
+K Kalaran the Annihilator|QID|27829|M|26.38,45.02|T|Kalaran the Annihilator|QO|Kalaran the Annihilator slain: 1/1|N|Kalaran wanders around so look for his boss icon on the minimap.|
+C Drakflight Soldiers|QID|27829|US|M|26.38,45.02||Drakflight Soldier slain: 0/4|N|Kill Drakflight Soldiers|
 T The Wrath of a Dragonflight|QID|27829|M|26.12,45.32|N|(UI Alert)|
 A Their Hunt Continues|QID|27830|M|26.12,45.32|N|(UI Alert)|
-K Moldarr|QID|27830|M|17.07,47.78|N|Kill Moldarr.|QO|Moldarr slain: 1/1|
-C Their Hunt Continues|QID|27830|M|15.85,42.12|N|Head up to General Jirakka, kill the rest of the Darkflight dragonspawn you need on the way.|
+C Darkflight dragonspawn|QID|27830|S|QO|Darkflight dragonspawn slain: 6/6|M|15.85,42.12|N|Kill the rest of the Darkflight.|
+K Moldarr|QID|27830|T|Moldarr|M|17.07,47.78|N|Kill Moldarr.|QO|Moldarr slain: 1/1|
+K General Jirakka|QID|27830|T|General Jirakka|M|15.85,42.12|N|Kill Moldarr.|QO|General Jirakka slain: 1/1|
+C Darkflight dragonspawn|QID|27830|US|QO|Darkflight dragonspawn slain: 6/6|1M|15.85,42.12|N|Kill the rest of the Darkflight.|
 T Their Hunt Continues|QID|27830|M|15.76,42.24|N|(UI Alert)|
 
 A The Sorrow and the Fury|QID|27831|M|15.76,42.24|N|(UI Alert)|
-C The Sorrow and the Fury|QID|27831|M|9.60,41.88|N|Clear a wide area before trying to fight Nyxondra, as she does a fear every now and then.|
+C Nyxondra Broodlings|QID|27831|S|QO|Nyxondra's Broodling slain: 12/12|M|9.60,41.88|N|Kill the little dragons.|
+K Nyxondra|QID|27831|M|9.60,41.88|T|Nyxondra|QO|Nyxondra slain: 1/1|N|Clear a wide area before trying to fight Nyxondra, as she does a fear every now and then.|
+C Nyxondra Broodlings|QID|27831|US|QO|Nyxondra's Broodling slain: 12/12|M|9.60,41.88|N|Kill the little dragons.|
 T The Sorrow and the Fury|QID|27831|M|9.98,40.99|N|(UI Alert)|
 A The Hidden Clutch|QID|27832|M|9.98,40.99|N|(UI Alert)|
 T The Hidden Clutch|QID|27832|M|16.01,33.31|N|To Rhea.|
@@ -244,7 +250,7 @@ A The Egg Lives On|QID|27859|M|17.98,30.55|N|From Dr. Hieronymus Blam.|
 H Dragon's Mouth|QID|27825|N|Hearth back to Dragon's Mouth or run if your hearth is on cooldown.|
 r Sell junk, repair/restock.|QID|27825|
 C Half-Ton Holdouts|QID|27833|M|14.71,63.74|N|Kill the ogres that you need.|S|
-C Survival of the Fattest|QID|27825|M|11.84,71.49|N|Loot the glowing things.|
+C Survival of the Fattest|QID|27825|NC|M|11.84,71.49|N|Loot the glowing things.|
 C Half-Ton Holdouts|QID|27833|M|14.71,63.74|N|Head back outside the cave to kill the rest of the ogres that you need.|US|
 T Survival of the Fattest|QID|27825|M|20.74,55.86|N|To Victoria Dolen.|
 A To the Aid of the Thorium Brotherhood|QID|28512|M|20.74,55.86|N|From Victoria Dolen. Will not show up if you have the quest, "Hero's Call: Searing Gorge!"|
