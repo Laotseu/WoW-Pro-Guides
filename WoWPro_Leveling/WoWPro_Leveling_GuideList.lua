@@ -52,11 +52,19 @@ local function zoneSort()
 end
 local function rangeSort()
 	if sorttype == "RangeAsc" then
-		table.sort(guides, function(a,b) return a.level > b.level end)
+		table.sort(guides, function(a,b) 
+			a.level = a.level or ((a.startlevel + a.endlevel)/2)
+			b.level = b.level or ((b.startlevel + b.endlevel)/2)
+			return a.level > b.level 
+		end)
 		WoWPro.Leveling:UpdateGuideList()
 		sorttype = "RangeDesc"
 	else
-		table.sort(guides, function(a,b) return a.level < b.level end)
+		table.sort(guides, function(a,b)
+			a.level = a.level or ((a.startlevel + (a.endlevel or 0))/2)
+			b.level = b.level or ((b.startlevel + (b.endlevel or 0))/2)
+			return a.level < b.level 
+		end)
 		WoWPro.Leveling:UpdateGuideList()
 		sorttype = "RangeAsc"
 	end

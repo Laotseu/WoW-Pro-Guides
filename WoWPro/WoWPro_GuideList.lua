@@ -44,7 +44,9 @@ function WoWPro.CreateGuideList()
     		end) 
     		prev = tabs[name]
     		table.insert(tabhashtable,name)
-    		maxFormatItems = max(maxFormatItems, #(WoWPro[name].GuideList.Format))
+    		if WoWPro[name].GuideList.Format then
+    			maxFormatItems = max(maxFormatItems, #(WoWPro[name].GuideList.Format))
+    		end
 		end
 	end
 	WoWPro.GuideList.TabTable = tabs
