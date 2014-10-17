@@ -330,7 +330,8 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 	    WoWPro:Error("Invalid Z tag at line %s in: %s",realline,text)
 	    WoWPro.zone[i] = nil
 	end
-	_, _, WoWPro.lootitem[i], WoWPro.lootqty[i] = text:find("|L|(%d+)%s?(%d*)|")
+	--_, _, WoWPro.lootitem[i], WoWPro.lootqty[i] = text:find("|L|(%d+)%s?(%d*)|")
+	WoWPro.lootitem[i], WoWPro.lootqty[i] = text:match("|L|(%d+)%s?(%d*)|")
 	if WoWPro.lootitem[i] then
     	if tonumber(WoWPro.lootqty[i]) ~= nil then
     	    WoWPro.lootqty[i] = tonumber(WoWPro.lootqty[i])
@@ -339,6 +340,23 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
     	end
     end
 	WoWPro.questtext[i] = text:match("|QO|([^|]*)|?")
+	-- Hack for the new quest objective format
+	if WoWPro.questtext[i] then
+		local numquesttext = select("#", (";"):split(WoWPro.questtext[i]))
+		local questresult = ""
+		for l=1,numquesttext do
+			local lquesttext = select(l, (";"):split(WoWPro.questtext[i]))
+			local questob1, questob2 = lquesttext:match("([^:]+)[:][ ](.*)")
+			if questob1 then
+				--err("questob1 = %s, questob2 = %s",questob1, questob2)
+				questresult = ("%s%s%s %s"):format(questresult, l>1 and ";" or "", questob2, questob1)
+			else
+				questresult = ("%s%s%s"):format(questresult, l>1 and ";" or "", lquesttext)
+			end
+		end
+		WoWPro.questtext[i] = questresult
+	end
+
 	if text:find("|O|") then 
 		WoWPro.optional[i] = true
 		WoWPro.optionalcount = WoWPro.optionalcount + 1 

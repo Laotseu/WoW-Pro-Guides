@@ -267,7 +267,7 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 									for j=1,GetNumQuestLeaderBoards(quest_log_index) do
 										local itemtext, _, isdone = GetQuestLogLeaderBoard(j, quest_log_index)
 										if (itemtext == lquesttext) or
-											(itemtext:match("(.+):") == lquesttext:match("(.+):") and isdone) then
+											(itemtext:match("[0-9]+[/][0-9]+ (.+)") == lquesttext:match("[0-9]+[/][0-9]+ (.+)") and isdone) then
 											lcomplete = true
 											break
 										end
@@ -501,11 +501,13 @@ function WoWPro:UpdateQuestTracker()
       					end
       				else
       					-- Text quest objectif
-	      				local litemname = lquesttext:match("(.+):") -- Everything before the : is the item name
+	      				--local litemname = lquesttext:match("(.+):") -- Everything before the : is the item name
+	      				local litemname = lquesttext:match("[0-9]+[/][0-9]+ (.+)") -- New format "1/2 Objective"
 	      				for m=1,GetNumQuestLeaderBoards(j) do
 	      					if GetQuestLogLeaderBoard(m, j) then
 	      						local itemtext, _, isdone = GetQuestLogLeaderBoard(m, j)
-	      						local itemName = itemtext:match("(.+):") -- Everything before the : is the item name
+	      						--local itemName = itemtext:match("(.+):") -- Everything before the : is the item name
+	      						local itemName = itemtext:match("[0-9]+[/][0-9]+ (.+)") -- New format "1/2 Objective"
 	      						if itemName and itemName == litemname then
 	      							track = ("%s%s- %s%s"):format(track, l>1 and "\n" or "", itemtext, isdone and " (C)" or "")
 	      						end
