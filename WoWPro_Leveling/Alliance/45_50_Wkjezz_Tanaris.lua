@@ -148,9 +148,9 @@ A To The Ground!|QID|25053|M|72.17,45.21|N|From Kelsey Steelspark.|
 A Lootin' Plunder|QID|25054|M|72.17,45.21|N|From Kelsey Steelspark.|
 C Dead Man's Chest|QID|25052|S|M|72.61,46.39|N|Kill Southsea Pirates.|
 C Lootin' Plunder|QID|25054|NC|S|M|71.50,46.79|N|Look inside the shacks, and collect Pirate Loot.|
-C To The Ground!|QID|25053|NC|U|51547|QO|Northwest Shack: 1/1|M|71.67,46.75|N|The 1st building to torch is here.|
-C To The Ground!|QID|25053|NC|U|51547|QO|Southwest Shack: 1/1|M|71.93,48|N|The second building to set on fire is here.|
-C To The Ground!|QID|25053|NC|U|51547|QO|Northeast Shack: 1/1|M|72.88,46.09|N|The last building to torch is here.|
+C Torch the Northwest Shack|QID|25053|NC|U|51547|QO|Northwest Shack: 1/1|M|71.67,46.75|N|The 1st building to torch is here.|
+C Torch the Southwest Shack|QID|25053|NC|U|51547|QO|Southwest Shack: 1/1|M|71.93,48|N|The second building to set on fire is here.|
+C Torch the Northeast Shack|QID|25053|NC|U|51547|QO|Northeast Shack: 1/1|M|72.88,46.09|N|The last building to torch is here.|
 C Lootin' Plunder|QID|25054|NC|US|M|71.50,46.79|N|Finish collecting Pirate Loot.|
 C Dead Man's Chest|QID|25052|US|M|72.61,46.39|N|Finish killing Pirates.|
 L Level 46|QID|25052|LVL|46|N|You should be around level 46 by this point.|
@@ -160,7 +160,7 @@ A Going Off-Task|QID|26886|M|72.22,45.22|N|From Kelsey Steelspark.|
 T To The Ground!|QID|25053|M|72.22,45.22|N|To Kelsey Steelspark.|
 T Lootin' Plunder|QID|25054|M|72.22,45.22|N|To Kelsey Steelspark.|
 A Filling Our Pockets|QID|26887|M|72.22,45.22|N|From Kelsey Steelspark.|
-C Going Off-Task|QID|26886|M|74.60,45.18|N|Getting on this boat is a tricky affair. Mobs will aggro onto you as you climb the ramp. Try and burn down one at a time, and have potions ready.|
+K Southsea Taskmaster|QID|26886|T|Southsea Taskmaster|M|74.60,45.18|N|Getting on this boat is a tricky affair. Mobs will aggro onto you as you climb the ramp. Try and burn down one at a time, and have potions ready.|
 C Filling Our Pockets|QID|26887|M|69.94,53.44|N|Beware the Strongarms; They will pull you to them and possibly cause mass mob aggro; if in packs CC the Stongram, and kill the other first.|
 T Going Off-Task|QID|26886|M|72.17,45.23|N|To Kelsey Steelspark.|
 T Filling Our Pockets|QID|26887|M|72.17,45.23|N|To Kelsey Steelspark.|
