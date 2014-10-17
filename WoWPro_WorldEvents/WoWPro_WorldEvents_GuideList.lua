@@ -35,12 +35,13 @@ local function Init()
     	AddInfo(guide)
       	table.insert(guides, {
       		GID = guidID,
-    		Zone = guide.zone,
+    		--Zone = guide.zone,
     		guide = guide,
-    		Name = guide.name,
+    		Name = guide.zone,
     		Author = guide.author,
     		Category = guide.category,
-    		Progress = progress
+    		Progress = progress,
+        Holiday = guide.holiday
       	})
       	end
       end
@@ -73,21 +74,32 @@ local function nameSort()
   	end
 end
 local function categorySort()
-	if sorttype == "CategoryAsc" then
-		table.sort(guides, function(a,b) return a.Category > b.Category end)
-		WoWPro.WorldEvents:UpdateGuideList()
-		sorttype = "CategoryDesc"
-	else
-		table.sort(guides, function(a,b) return a.Category < b.Category end)
-		WoWPro.WorldEvents:UpdateGuideList()
-		sorttype = "CategoryAsc"
-	end
+  if sorttype == "CategoryAsc" then
+    table.sort(guides, function(a,b) return a.Category > b.Category end)
+    WoWPro.WorldEvents:UpdateGuideList()
+    sorttype = "CategoryDesc"
+  else
+    table.sort(guides, function(a,b) return a.Category < b.Category end)
+    WoWPro.WorldEvents:UpdateGuideList()
+    sorttype = "CategoryAsc"
+  end
+end
+local function holidaySort()
+  if sorttype == "HolidayAsc" then
+    table.sort(guides, function(a,b) return a.Holiday > b.Holiday end)
+    WoWPro.WorldEvents:UpdateGuideList()
+    sorttype = "HolidayDesc"
+  else
+    table.sort(guides, function(a,b) return a.Holiday < b.Holiday end)
+    WoWPro.WorldEvents:UpdateGuideList()
+    sorttype = "HolidayAsc"
+  end
 end
   
   
   
 -- Describe the table to the Core Module
-WoWPro.WorldEvents.GuideList.Format={{"Name",0.35,nameSort},{"Category",0.20,categorySort},{"Author",0.20,authorSort},{"Progress",0.15,nil}}
+WoWPro.WorldEvents.GuideList.Format={{"Name",0.35,nameSort},{"Holiday",0.20,holidaySort},{"Author",0.20,authorSort},{"Progress",0.15,nil}}
 WoWPro.WorldEvents.GuideList.Init = Init
   
 WoWPro.WorldEvents:dbp("Guide Setup complete")
