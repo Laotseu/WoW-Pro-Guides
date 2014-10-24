@@ -45,12 +45,12 @@ return [[
 
 A Iron Horde Invasion|QID|36498|M|49.69,76.43|N|This quest should auto-accept in Stormwind City, if not, head to your nearest Hero's Call Board.|Z|Stormwind City|M|62.9,71.6|
 F Shattered Beachhead|QID|36498|N|Use the portal in the mage tower of Stormwind City.|M|49.0,87.2|Z|Stormwind City|Z|Stormwind City|ACTIVE|36498|
-f Shattershore|QID|36498|M|67.64,27.97|N|With Araazi.|
 T Iron Horde Invasion|QID|36498|N|To Vindicator Maraad.|M|66.58,28.26|
 
 A Attack of the Iron Horde|QID|35460|N|From Vindicator Maraad.|M|66.58,28.26|
 A Under Siege|QID|35462|NC|N|From Vindicator Maraad.|M|66.58,28.26|
 A Peeking into the Portal|QID|36379|Z|Blasted Lands|N|From Bodrick Grey.|M|66.94,27.94|
+f Shattershore|QID|36498|M|67.64,27.97|N|With Araazi.|
 
 C Attack of the Iron Horde|QID|35460|M|62.85,31.94|S|N|Kill the grunts in the area as you go about the other two tasks.|
 C Under Siege|QID|35462|M|63.41,33.13|NC|N|Click on the Demolishers to destroy them.|S|

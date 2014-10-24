@@ -1,3 +1,6 @@
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+local function trace(msg,...) WoWPro:Print(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 ---------------------------------
 --      WoWPro_Guide_List      --
 ---------------------------------
@@ -41,7 +44,9 @@ function WoWPro.CreateGuideList()
     		end) 
     		prev = tabs[name]
     		table.insert(tabhashtable,name)
-    		maxFormatItems = max(maxFormatItems, #(WoWPro[name].GuideList.Format))
+    		if WoWPro[name].GuideList.Format then
+    			maxFormatItems = max(maxFormatItems, #(WoWPro[name].GuideList.Format))
+    		end
 		end
 	end
 	WoWPro.GuideList.TabTable = tabs
@@ -280,7 +285,7 @@ function WoWPro:GuideTabFrame_RowOnClick()
 	else
 		WoWPro:LoadGuide(self.GID)
 	end
-	self.module:UpdateGuideList()
+	-- self.module:UpdateGuideList()
 end		
 
 

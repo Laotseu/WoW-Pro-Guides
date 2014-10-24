@@ -139,7 +139,7 @@ A Hero's Call: Twilight Highlands!|QID|28716|M|62.90,71.78|N|From the Message bo
 T Hero's Call: Twilight Highlands!|QID|28716|M|85.62,31.93|N|To King Varian Wrynn.|Z|Stormwind City|
 
 A My Son, the Prince|QID|26960|PRE|28716|M|85.62,31.93|N|From King Varian Wrynn.|Z|Stormwind City|
-C My Son, the Prince|QID|26960|M|85.64,31.86|Z|Stormwind City|N|Talk to Anduin,|NC|
+C My Son, the Prince|QID|26960|M|85.64,31.86|Z|Stormwind City|N|Talk to Anduin,|CHAT|
 T My Son, the Prince|QID|26960|M|85.62,31.93|N|To King Varian Wrynn.|Z|Stormwind City|
 
 A Rallying the Fleet|QID|26975|M|85.62,31.93|N|From King Varian Wrynn.|Z|Stormwind City|
@@ -182,7 +182,8 @@ C Cataclysm in the Catacombs|QID|27092|M|51.30,42.30|N|Head to the Cathedral of 
 T Cataclysm in the Catacombs|QID|27092|M|50.45,42.42|N|To the disarmed bomb.|Z|Stormwind City|
 
 A A Villain Unmasked|QID|27106|PRE|26977|M|50.45,42.42|N|From the disarmed bomb.|Z|Stormwind City|
-C A Villain Unmasked|QID|27106|M|85.19,32.25|N|Head to Stormwind Keep, and talk to Major Samuelson. Once confronted, he will turn into a Level 84 elite, which the Guards will help you defeat.|Z|Stormwind City|
+C A Villain Unmasked|QID|27106|QO|1|CHAT|M|85.19,32.25|N|Head to Stormwind Keep, and talk to Major Samuelson. Once confronted, he will turn into a Level 84 elite, which the Guards will help you defeat.|Z|Stormwind City|
+C A Villain Unmasked|QID|27106|QO|2|M|85.19,32.25|N|Head to Stormwind Keep, and talk to Major Samuelson. Once confronted, he will turn into a Level 84 elite, which the Guards will help you defeat.|Z|Stormwind City|
 T A Villain Unmasked|QID|27106|M|85.66,32.00|N|To King Varian Wrynn.|Z|Stormwind City|
 
 A Twilight Shores|QID|28238|PRE|26977|M|85.66,32.00|N|From King Varian Wrynn.|Z|Stormwind City|
@@ -196,7 +197,7 @@ C Welcome to Highbank!|QID|28596|M|79.04,76.01|N|Kill the Axebite Infantry (avoi
 T Welcome to Highbank!|QID|28596|M|80.99,79.43|N|To Lieutenant Fawkes.|
 
 A Burnin' at Both Ends|QID|28597|M|81.00,79.34|N|From Fargo Flintlocke.|
-C Burnin' at Both Ends|QID|28597|M|78.74,76.27|N|Collect cannon powder around Highbank. You can stay mounted on your flying mount for this quest.|NC|
+l Burnin' at Both Ends|QID|28597|M|78.74,76.27|N|Collect cannon powder around Highbank. You can stay mounted on your flying mount for this quest.|NC|
 T Burnin' at Both Ends|QID|28597|M|78.68,76.85|N|To Fargo Flintlocke.|
 
 A Aiming High|QID|28598|PRE|28597|M|78.68,76.85|N|From Fargo Flintlocke.|
@@ -208,7 +209,7 @@ T Kurdran's Waitin'|QID|28599|M|79.10,78.32|N|To Kurdran Wildhammer upstairs ins
 
 A Our Boys on the Shore|QID|27338|PRE|28597|M|79.10,78.32|N|From Kurdran Wildhammer.|
 A Salvage Operation|QID|27177|M|79.28,78.47|N|From Simon Chandler.|S|
-A Naga Reinforcements|QID|27178|M|78.28,78.47|N|From Simon Chandler.|
+A Naga Reinforcements|QID|27178|M|79.28,78.47|N|From Simon Chandler.|
 A Salvage Operation|QID|27177|M|79.28,78.47|N|From Simon Chandler.|US|
 
 A Siren's Song|QID|27200|M|76.02,79.70|N|From Ephram Hardstone, who's on the sinking ship at the Obsidian Breakers (southwest of Highbank).|
@@ -243,7 +244,8 @@ A Bird Down! Bird Down!|QID|27514|M|76.84,69.83|N|From Lieutenant Emry.|
 T Shredderectomy|QID|27433|M|76.93,69.79|N|To Fargo Flintlocke.|
 A Siege Tank Rescue|QID|27468|M|76.93,69.79|N|From Fargo Flintlocke.|
 
-C Siege Tank Rescue|QID|27468|M|70.96,71.16|N|Speak to the Siege Tank Commander when you are ready. Defend the tank while they do repairs.|
+C Siege Tank Rescue|QID|27468|QO|1|CHAT|M|70.96,71.16|N|Speak to the Siege Tank Commander when you are ready. Defend the tank while they do repairs.|
+C Siege Tank Rescue|QID|27468|QO|2|M|70.96,71.16|N|Speak to the Siege Tank Commander when you are ready. Defend the tank while they do repairs.|
 
 T Siege Tank Rescue|QID|27468|M|76.97,69.91|N|To Fargo Flintlocke.|
 T Bird Down! Bird Down!|QID|27514|M|67.68,65.86|N|To Thordun Hammerblow.|
@@ -253,7 +255,7 @@ C Roots'll Do 'Er|QID|27515|M|71.98,66.59|N|Collect the roots in the area.|NC|
 T Roots'll Do 'Er|QID|27515|M|67.71,65.90|N|To Thordun Hammerblow.|
 
 A Wings Over Highbank|QID|27516|M|67.71,65.90|N|From Thordun Hammerblow.|
-C Wings Over Highbank|QID|27516|M|67.66,65.95|N|Speak to Thordun Hammerblow when you are ready to fly back.|NC|
+C Wings Over Highbank|QID|27516|M|67.66,65.95|N|Speak to Thordun Hammerblow when you are ready to fly back.|CHAT|
 T Wings Over Highbank|QID|27516|M|79.12,78.27|N|To Kurdran Wildhammer upstairs.|
 
 A Any Portal in a Storm|QID|27537|M|79.12,78.27|N|From Kurdran Wildhammer.|
@@ -271,6 +273,7 @@ A The Way is Open|QID|27545|M|79.50,77.62|N|From Talaa in the center courtyard.|
 T The Way is Open|QID|27545|M|79.09,78.23|N|To Kurdran Wildhammer upstairs.|
 
 A Firebeard's Patrol|QID|27621|M|79.21,78.27|N|From Thordun Hammerblow.|
+f Twilight Highlands|M|81.7,77.1|N|From Glenn Arbuckle.|
 
 r Sell junk, Repair/Restock|QID|27621|M|79.11,76.50|N|From Brundall Chiselgut, 	Dorgan Slagfist, or Richard Maschner in the profession trainer area.  Also beef up your profession skills if needed.|
 
@@ -282,12 +285,12 @@ A Welcome Relief|QID|27803|M|60.18,57.96|N|From Keegan Firebeard.|US|
 f Firebeard's Patrol|QID|27804|M|60.39, 57.64|N|At Farstad Stonegrip.|
 
 C Welcome Relief|QID|27803|M|59.67,56.91|N|Kill subjugated firestarters.|S|
-C The Only Homes We Have|QID|27804|PRE|27803|U|62508|M|59.68,56.89|N|Use the Water Bucket to put out fires.|
+C The Only Homes We Have|QID|27804|NC|U|62508|M|59.68,56.89|N|Use the Water Bucket to put out fires.|
 C Welcome Relief|QID|27803|M|59.67,56.91|N|Kill subjugated firestarters.|US|
 
-T Welcome Relief|QID|27803|M|60.08,58.00|N|To Keegan Firebeard.|S|
+;T Welcome Relief|QID|27803|M|60.08,58.00|N|To Keegan Firebeard.|
 T The Only Homes We Have|QID|27804|M|60.08,58.00|N|To Keegan Firebeard.|
-T Welcome Relief|QID|27803|M|60.08,58.00|N|To Keegan Firebeard.|US|
+T Welcome Relief|QID|27803|M|60.08,58.00|N|To Keegan Firebeard.|
 
 A Honorable Bearing|QID|27806|PRE|27803|M|60.08,58.00|N|From Keegan Firebeard.|
 
@@ -298,11 +301,11 @@ C Small Comforts|QID|27805|QO|Parlan's Ivory Hammer: 1/1|M|59.32,56.88|N|Enter a
 T Small Comforts|QID|27805|M|60.40,58.24|N|To Cailin Longfellow inside the building.|
 
 T Honorable Bearing|QID|27806|M|57.44,58.09|N|To Iain Firebeard.|
-A Clan Mullan|QID|27807|M|57.44,58.09|N|From Iain Firebeard.|S|
-A Stubborn as a Doyle|QID|27808|M|57.44,58.09|N|From Iain Firebeard.|S|
+;A Clan Mullan|QID|27807|M|57.44,58.09|N|From Iain Firebeard.|S|
+;A Stubborn as a Doyle|QID|27808|M|57.44,58.09|N|From Iain Firebeard.|S|
 A Firebeard Bellows|QID|27809|M|57.44,58.09|N|From Iain Firebeard.|
-A Clan Mullan|QID|27807|M|57.44,58.09|N|From Iain Firebeard.|US|
-A Stubborn as a Doyle|QID|27808|M|57.44,58.09|N|From Iain Firebeard.|US|
+A Clan Mullan|QID|27807|M|57.44,58.09|N|From Iain Firebeard.|
+A Stubborn as a Doyle|QID|27808|M|57.44,58.09|N|From Iain Firebeard.|
 
 T Clan Mullan|QID|27807|M|50.81,60.16|N|To Duglas Mullan.|
 
@@ -321,9 +324,9 @@ C The Scent of Battle|QID|27811|US|M|56.95,63.99|N|Locate the Mullan Gryphons an
 T The Scent of Battle|QID|27811|M|50.88,60.30|N|To Edana Mullan.|
 A The Loyalty of Clan Mullan|QID|27812|M|50.88,60.30|N|From Duglas Mullan.|
 
-T The Fate of the Doyles|QID|27999|M|57.42,58.17|N|To Iain Firebeard.|S|
+;T The Fate of the Doyles|QID|27999|M|57.42,58.17|N|To Iain Firebeard.|S|
 T The Loyalty of Clan Mullan|QID|27812|M|57.42,58.17|N|To Iain Firebeard.|
-T The Fate of the Doyles|QID|27999|M|57.42,58.17|N|To Iain Firebeard.|US|
+T The Fate of the Doyles|QID|27999|M|57.42,58.17|N|To Iain Firebeard.|
 T Firebeard Bellows|QID|27809|M|62.49,48.35|N|To Mackay Firebeard.|
 
 A Death Worthy of a Dragonmaw|QID|27813|M|62.49,48.35|N|From Mackay Firebeard.|
