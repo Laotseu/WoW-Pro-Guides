@@ -144,7 +144,7 @@ F Farwatcher's Glen|QID|29013|M|32.02,61.79|Z|Stonetalon Mountains|U|37586|
 A Candy Bucket |QID|29013|M|31.50,60.68|Z|Stonetalon Mountains|N|Farwatcher's Glen|
 
 F Northwatch Expedition Base Camp|QID||M|70.91,80.50|Z|Stonetalon Mountains|U|37586|
-A Candy Bucket |QID||M|71.04,79.14|Z|Stonetalon Mountains|N|Northwatch Expedition|
+A Candy Bucket |QID|29010|M|71.04,79.14|Z|Stonetalon Mountains|N|Northwatch Expedition|
 F Honor's Stand|QID|29006|M|38.97,10.91|Z|Southern Barrens|U|37586|
 A Candy Bucket |QID|29006|M|38.97,10.91|Z|Southern Barrens|N|Honor's Stand|
 F Nijel's Point|QID|12348|M|64.67,10.44|Z|Desolace|U|37586|
