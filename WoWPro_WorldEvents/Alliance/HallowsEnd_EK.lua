@@ -130,6 +130,7 @@
 local guide = WoWPro:RegisterGuide("TwiHollEK",'WorldEvents',"Eastern Kingdoms", "Twists", "Alliance")
 WoWPro:GuideLevels(guide,1,90,45.000000)
 WoWPro.WorldEvents:GuideHoliday(guide,"HallowsEnd", "Hallow's End - Eastern Kingdoms")
+WoWPro:GuideNextGuide(guide, 'TwiHollKAL')
 WoWPro:GuideSteps(guide, function()
 return [[
 
@@ -154,7 +155,7 @@ T Missing Heirlooms|QID|29392|M|23.99,44.60|N|To Hired Courier.|Z|Stormwind City
 A Fencing the Goods|QID|29398|M|23.99,44.60|N|To Hired Courier.|Z|Stormwind City|
 b Teldrassil|QID|8357|M|22.06,56.06|N|Take the boat to Teldrassil and enter the portal to Darnassus.|Z|Stormwind City|
 A Candy Bucket |QID|12334|M|62.25,33.17|Z|Darnassus|N|Darnassus|
-A Dancing for Marzipan|QID|8357|M|62.31,32.92|Z|Darnassus|U|37586|
+A Dancing for Marzipan|QID|8357;8311|M|62.31,32.92|Z|Darnassus|U|37586|
 C Dancing for Marzipan|QID|8357|T|/dance|N|click the button to dance.|Z|Darnassus|
 T Dancing for Marzipan|QID|8357|M|62.31,32.92|Z|Darnassus|
 
@@ -175,7 +176,7 @@ A The Collector's Agent|QID|29403|M|64.17,46.46|N|From Hudson Barnes.|Z|Stormwin
 C The Collector's Agent|QID|29403|M|51.23,44.63;53.16,42.52;55.26,43.54|N|In the catacombs in the Cathedral of Light.|Z|Stormwind City|CS|
 T The Collector's Agent|QID|29403|M|55.26,43.54|Z|Stormwind City|
 A What Now?|QID|29411|M|55.26,43.54|N|From the crate.|Z|Stormwind City|
-A Flexing for Nougat|QID|8356|M|60.14,75.09|N|From Innkeeper Allison.|Z|Stormwind City|
+A Flexing for Nougat|QID|8356;8311|M|60.14,75.09|N|From Innkeeper Allison.|Z|Stormwind City|
 C Flexing for Nougat|QID|8356|T|/flex|N|click the button to flex.|Z|Stormwind City|
 T Flexing for Nougat|QID|8356|M|60.14,75.09|N|To Innkeeper Allison.|Z|Stormwind City|
 T What Now?|QID|29411|M|60.14,75.09|N|To Anson Hastings.|Z|Stormwind City|
@@ -222,11 +223,11 @@ F Kharanos|QID|12332|M|53.77,52.71|N|In Dun Morogh.|Z|Dun Morogh|U|37586|
 A Candy Bucket |QID|12332|M|54.5,50.8|N|In Dun Morogh. Kharanos|Z|Dun Morogh|
 
 F Ironforge|QID|12335|M|56.13,47.99|Z|Ironforge|U|37586|
-A Incoming Gumdrop|QID|8355|M|36.21,4.03|N|From Talvash del Kissel.|Z|Ironforge|
+A Incoming Gumdrop|QID|8355;8311|M|36.21,4.03|N|From Talvash del Kissel.|Z|Ironforge|
 C Incoming Gumdrop|QID|8355|T|/train|N|click the button for the train.|Z|Ironforge|
 T Incoming Gumdrop|QID|8355|M|36.21,4.03|N|To Talvash del Kissel.|Z|Ironforge|
 A Candy Bucket |QID|12335|M|18.5,50.9|Z|Ironforge|U|37586|N|Ironforge|
-A Chicken Clucking for a Mint|QID|8353|M|18.77,51.27|N|From Innkeeper Firebrew.|Z|Ironforge|U|37586|
+A Chicken Clucking for a Mint|QID|8353;8311|M|18.77,51.27|N|From Innkeeper Firebrew.|Z|Ironforge|U|37586|
 C Chicken Clucking for a Mint|QID|8353|T|/chicken|N|click the button to cluck.|Z|Ironforge|
 T Chicken Clucking for a Mint|QID|8353|M|18.77,51.27|N|To Innkeeper Firebrew.|Z|Ironforge|
 F Menethil Harbor|QID|12343|M|9.39,59.50|Z|Wetlands|U|37586|
