@@ -37,7 +37,7 @@ local function Init()
       		GID = guidID,
     		--Zone = guide.zone,
     		guide = guide,
-    		Name = guide.zone,
+    		Name = guide.name or guide.zone,
     		Author = guide.author,
     		Category = guide.category,
     		Progress = progress,

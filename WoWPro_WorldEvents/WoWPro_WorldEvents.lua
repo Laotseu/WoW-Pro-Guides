@@ -45,14 +45,15 @@ function WoWPro.WorldEvents:OnDisable()
 	if WoWPro.Guides[WoWProDB.char.currentguide] and WoWPro.Guides[WoWProDB.char.currentguide].guidetype == "WorldEvents" then
 		WoWPro:RemoveMapPoint()
 		WoWProDB.char.lastWorldEventsguide = WoWProDB.char.currentguide
-		WoWProDB.char.currentguide = nil
-		WoWPro:LoadGuide()
+		--WoWProDB.char.currentguide = nil
+		--WoWPro:LoadGuide()
 	end
 end
 
 -- Guide Registration Function --
 function WoWPro.WorldEvents:RegisterGuide(GIDvalue, zonename, guidename, categoryname, authorname, factionname, sequencevalue)
-	
+err("WoWPro.WorldEvents:RegisterGuide called")	
+
 --[[ Purpose: 
 		Called by guides to register them to the WoWPro.Guide table. All members
 		of this table must have a quidetype parameter to let the addon know what 
@@ -70,7 +71,8 @@ function WoWPro.WorldEvents:RegisterGuide(GIDvalue, zonename, guidename, categor
 		category = categoryname,
 		author = authorname,
 		sequence = sequencevalue,
-		faction = factionname
+		faction = factionname,
+		nextGID = nil
 	}
 end
 

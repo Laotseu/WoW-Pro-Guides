@@ -4,7 +4,8 @@ local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...))
 --      WoWPro.lua      --
 --------------------------
 
-WoWPro = LibStub("AceAddon-3.0"):NewAddon("WoWPro","AceEvent-3.0")
+_G.WoWPro = LibStub("AceAddon-3.0"):NewAddon("WoWPro","AceEvent-3.0")
+local WoWPro = _G.WoWPro
 WoWPro.Version = GetAddOnMetadata("WoWPro", "Version") 
 WoWPro.DebugLevel = 0
 WoWPro.Guides = {}
@@ -27,7 +28,7 @@ end
     
 -- WoWPro keybindings name descriptions --
 _G["BINDING_NAME_CLICK WoWPro_FauxItemButton:LeftButton"] = "Use quest item"
-BINDING_HEADER_BINDING_WOWPRO = "WoWPro Keybindings"
+_G.BINDING_HEADER_BINDING_WOWPRO = "WoWPro Keybindings"
 _G["BINDING_NAME_CLICK WoWPro_FauxTargetButton:LeftButton"] = "Target quest mob"
 
 WoWPro.Serial = 0
@@ -141,7 +142,7 @@ local function orderedNext(t, state)
     -- Equivalent of the next function, but returns the keys in the alphabetic
     -- order. We use a temporary ordered key table that is stored in the
     -- table being iterated.
-
+    local key
     if state == nil then
         -- the first time, generate the index
         t._orderedIndex = _generateOrderedIndex( t )
@@ -254,7 +255,8 @@ WoWPro.Tags = { "action", "step", "note", "index", "map", "sticky",
 	"unsticky", "use", "zone", "lootitem", "lootqty", "optional", 
 	"level", "QID","target", "prof", "mat", "rank", "rep","waypcomplete", "why",
 	 "noncombat","active","ach","spell","qcount","NPC","questtext","prereq","leadin","faction",
-	 "buff", "nobuff", "chat", "recipe", "gossip", "conditional", "pet","building","daily"
+	 "buff", "nobuff", "chat", "recipe", "gossip", "conditional", "pet","building","daily",
+	 "altfp",
 }
 
 -- Called before all addons have loaded, but after saved variables have loaded. --
@@ -653,7 +655,7 @@ function WoWPro:HSL2RGB(h,s,l)
   if s == 0 then
     r, g, b = l, l, l -- white
   else
-    function hue2rgb(p, q, t)
+    local function hue2rgb(p, q, t)
       if t < 0 then t = t + 1 end
       if t > 1 then t = t - 1 end
       if t < 1/6 then return p + (q - p) * 6 * t end
@@ -701,7 +703,7 @@ function WoWPro:PlayerLevel()
     local UL = UnitLevel("player")
     local XP = UnitXP("player")
     local XPMax = UnitXPMax("player")
-    playerLevel = UL + (XP/XPMax)
+    local playerLevel = UL + (XP/XPMax)
     return playerLevel
 end
 
@@ -743,7 +745,7 @@ end
 
 function WoWPro.LevelColor(guide)
     
-    playerLevel = WoWPro:PlayerLevel()
+    local playerLevel = WoWPro:PlayerLevel()
     if type(guide) == "number" then
         WoWPro:dbp("WoWPro.LevelColor(%f)",guide)
         return {WoWPro:QuestColor(guide)}

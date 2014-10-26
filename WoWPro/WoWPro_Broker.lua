@@ -193,13 +193,13 @@ function WoWPro.LoadGuideReal()
 	end
 
     -- If we have upgraded, wipe the old information and re-create
-	if WoWProCharDB.Guide[GID] and WoWPro.Version ~= WoWProCharDB.Guide[GID].Version then
-	    WoWPro:Print("Resetting Guide "..GID.." due to upgrade.  Forgetting skipped steps.")
-	    WoWProCharDB.Guide[GID].completion =  {}
-	    WoWProCharDB.Guide[GID].skipped =  {}
-	    WoWProCharDB.Guide[GID].why =  {}
-	    WoWProCharDB.Guide[GID].Version = WoWPro.Version
-    end
+	-- if WoWProCharDB.Guide[GID] and WoWPro.Version ~= WoWProCharDB.Guide[GID].Version then
+	--     WoWPro:Print("Resetting Guide "..GID.." due to upgrade.  Forgetting skipped steps.")
+	--     WoWProCharDB.Guide[GID].completion =  {}
+	--     WoWProCharDB.Guide[GID].skipped =  {}
+	--     WoWProCharDB.Guide[GID].why =  {}
+	--     WoWProCharDB.Guide[GID].Version = WoWPro.Version
+ --    end
     
     -- If we resetting guide, wipe the old information and re-create
 	if WoWPro.Resetting then
@@ -583,7 +583,8 @@ function WoWPro:NextStep(k,i)
     	end
     	
     	-- Complete "f" steps if we know the flight point already
-    	if WoWPro.action[k] == "f"  and WoWProCharDB.Taxi[WoWPro.step[k]] then
+    	if WoWPro.action[k] == "f"  and 
+    			(WoWProCharDB.Taxi[WoWPro.step[k]] or (WoWPro.altfp[k] and WoWProCharDB.Taxi[WoWPro.altfp[k]])) then
 	        WoWPro.CompleteStep(k)
 	        skip = true
 	        break

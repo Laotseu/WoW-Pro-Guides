@@ -227,94 +227,6 @@ local WoWProMapping_callbacks_tomtom = {
 			},
 }
 
--- parameters for Lightheaded
-local zidmap = {
-   [1] = "Dun Morogh",
-   [3] = "Badlands",
-   [4] = "Blasted Lands",
-   [8] = "Swamp Of Sorrows",
-   [10] = "Duskwood",
-   [11] = "Wetlands",
-   [12] = "Elwynn Forest",
-   [14] = "Durotar",
-   [15] = "Dustwallow",
-   [16] = "Aszhara",
-   [17] = "The Barrens",
-   [28] = "Western Plaguelands",
-   [33] = "Stranglethorn Vale",
-   [36] = "Alterac Mountains",
-   [38] = "Loch Modan",
-   [40] = "Westfall",
-   [41] = "Deadwind Pass",
-   [44] = "Redridge Mountains",
-   [45] = "Arathi Basin",
-   [46] = "Burning Steppes",
-   [47] = "The Hinterlands",
-   [51] = "Searing Gorge",
-   [65] = "Dragonblight",
-   [66] = "Zul'Drak",
-   [67] = "The Storm Peaks",
-   [85] = "Tirisfal Glades",
-   [130] = "Silverpine Forest",
-   [139] = "Eastern Plaguelands",
-   [141] = "Teldrassil",
-   [148] = "Darkshore",
-	[201] = "Un'Goro Crater",
-   [210] = "Icecrown",
-   [215] = "Mulgore",
-   [261] = "Silithus",
-   [267] = "Hilsbrad Foothills",
-   [331] = "Ashenvale Forest",
-   [357] = "Feralas",
-   [361] = "Felwood",
---   [394] = "Grizzly Hills",
-   [400] = "Thousand Needles",
-   [405] = "Desolace",
-   [406] = "Stonetalon Mountains",
-   [440] = "Tanaris",
-   [490] = "Grizzly Hills",
---   [490] = "Un'Goro Crater",
-   [493] = "Moonglade",
-   [495] = "Howling Fjord",
-   [618] = "Winterspring",
-   [640] = "Deepholm",
---   [1377] = "Silithus",
-	[795] = "Molten Front",
-	[806] = "The Jade Forest",
-	[807] = "Valley of the Four Winds",
-	[809] = "Kun-Lai Summit",
-	[810] = "Townlong Steppes",
-	[811] = "Vale of Eternal Blossoms",
-	[857] = "Krasarang Wilds",
-	[858] = "Dread Wastes",
-	[873] = "The Veiled Stair",
-   [1497] = "Undercity",
-   [1519] = "Stormwind City",
-   [1537] = "Ironforge",
-   [1637] = "Ogrimmar",
-   [1638] = "Thunder Bluff",
-   [1657] = "Darnassus",
-   [3430] = "Eversong Woods",
-   [3433] = "Ghostlands",
-   [3483] = "Hellfire",
-   [3487] = "Silvermoon City",
-   [3518] = "Nagrand",
-   [3519] = "Terokkar Forest",
-   [3520] = "Shadowmoon Valley",
-   [3521] = "Zangarmarsh",
-   [3522] = "Blades Edge Mountains",
-   [3523] = "Netherstorm",
-   [3524] = "Azuremyst Isle",
-   [3525] = "Bloodmyst Isle",
-   [3537] = "Borean Tundra",
-   [3557] = "The Exodar",
-   [3703] = "Shattrath City",
-   [3711] = "Sholazar Basin",
-   [4080] = "Sunwell",
-   [4197] = "Lake Wintergrasp",
-   [4395] = "Dalaran",
-}
-
 local QIDs = {}
 function WoWPro:findBlizzCoords(questId)
 
@@ -463,15 +375,28 @@ end
     
 function WoWPro:ValidZone(zone)
 	if zone then
-	    if tonumber(zone) then
-	        -- Using a numeric zone ID
-            return tostring(tonumber(zone))
-	    elseif WoWPro.Zone2MapID[zone] then
-	        -- Zone found in DB
-	        return WoWPro.Zone2MapID[zone].mapID
-	    elseif zone:match("/") then
-	        local nzone , floor = string.split("/",zone)
-	        return WoWPro:ValidZone(nzone)
+		if tonumber(zone) then
+		  -- Using a numeric zone ID
+		   return tostring(tonumber(zone))
+		elseif WoWPro.Zone2MapID[zone] then
+		  -- Zone found in DB
+		  return WoWPro.Zone2MapID[zone].mapID
+		elseif zone:match("/") then
+		   local nzone , floor = string.split("/",zone)
+		   if nzone == zone then
+		   	err("Can't parse zone %s", zone)
+		   	return false
+		   else
+		   	return WoWPro:ValidZone(nzone)
+		   end
+		elseif zone:match(";") then
+		    local nzone , floor = string.split(";",zone)
+		    if nzone == zone then
+				err("Can't parse zone %s", zone)
+				return false
+	   	 else
+		    	return WoWPro:ValidZone(nzone)
+		    end
 	    end
     end    
     return false
