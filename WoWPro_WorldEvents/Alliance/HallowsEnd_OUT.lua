@@ -135,6 +135,7 @@
 local guide = WoWPro:RegisterGuide("TwiHollOUT",'WorldEvents',"Outland", "Twists", "Alliance")
 WoWPro:GuideLevels(guide,1,90,45.000000)
 WoWPro.WorldEvents:GuideHoliday(guide,"HallowsEnd", "Hallow's End - Outland")
+WoWPro:GuideNextGuide(guide,"TwiHollNor")
 WoWPro:GuideSteps(guide, function()
 return [[
 

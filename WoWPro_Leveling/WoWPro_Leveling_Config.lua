@@ -34,6 +34,7 @@ local function createBlizzOptions()
 						if WoWPro.Leveling:IsEnabled() then WoWPro.Leveling:Disable() else WoWPro.Leveling:Enable() end
 					end
 			}, 
+			--[[
 			blank2 = {
 				order = 4,
 				type = "description",
@@ -126,7 +127,8 @@ local function createBlizzOptions()
 				type = "description",
 				fontSize = "medium",
 				name = "Get Flight Path",
-				image = "Interface\\Icons\\Ability_Hunter_EagleEye",
+				image = "Interface\\MINIMAP\\OBJECTICONS",
+				imageCoords = { 5/8, 6/8, 1/8, 2/8 },
 				imageWidth = 15,
 				imageHeight = 15
 			},   
@@ -184,7 +186,7 @@ local function createBlizzOptions()
 				imageWidth = 15,
 				imageHeight = 15
 			}, 
-			
+			]]
 		},
 	})
 	dialog:SetDefaultSize("WoWPro-Leveling-Bliz", 600, 400)

@@ -89,9 +89,9 @@ C Azeroth's Last Stand |QID|35933|N|Kill an Iron Horde, and loot the Iron Horde 
 T Azeroth's Last Stand |QID|35933|N|Auto-Complete|Z|TanaanJungleIntro|
 
 A Onslaught's End |QID|34392|N|Auto-Accept\n\nIf you've previously abandoned this quest, you can pick it up again from Archmage Khadgar.|PRE|35933|Z|TanaanJungleIntro|
-C Onslaught's End |QID|34392|N|Disable the Northern Fel Spire|QO|1|NC|M|51.0, 42.0|Z|TanaanJungleIntro|
-C Onslaught's End |QID|34392|N|Disable the Southern Fel Spire|QO|2|NC|M|51.0, 54.6|Z|TanaanJungleIntro|
-T Onslaught's End |QID|34392|N|To Archmage Khadgar|M|54.73,48.26|Z|TanaanJungleIntro|
+C Disable the Southern Fel Spire |QID|34392|N|Disable the Northern Fel Spire|QO|1|NC|M|51.0, 42.0|Z|TanaanJungleIntro|;hand
+C Disable the Northern Fel Spire |QID|34392|N|Disable the Southern Fel Spire|QO|2|NC|M|51.0, 54.6|Z|TanaanJungleIntro|;hand
+T Onslaught's End |QID|34392|N|To Archmage Khadgar|M|4.73,48.26|Z|TanaanJungleIntro|
 
 A The Portal's Power |QID|34393|N|From Archmage Khadgar|M|4.73,48.26|PRE|34392|Z|TanaanJungleIntro|
 C The Portal's Power |QID|34393|N|Enter Gul'dan's prison, located directly underneath Archmage Khadgar. Entrances available due north and due south of Khadgar.|NC|QO|1|M|54.9,51.1|Z|TanaanJungleIntro|
@@ -123,7 +123,6 @@ T Vengeance for the Fallen |QID|35241|N|To Thrall|FACTION|Horde|M|71.92,62.06|Z|
 T Blaze of Glory |QID|34422|N|To Archmage Khadgar|M|71.55,62.37|Z|TanaanJungleIntro|
 T Bled Dry |QID|35240;34421|N|To Archmage Khadgar|M|71.55,62.37|Z|TanaanJungleIntro|
 
-N Altar Altercation |QID|34423|N|This quest sometimes does not show in the guide. If it does not, /reloadui should make it appear.  It is a Blizard bug.|
 A Altar Altercation |QID|34423|N|From Archmage Khadgar|PRE|35242;34422;35240|FACTION|Alliance|M|71.61,62.43|Z|TanaanJungleIntro|
 A Altar Altercation |QID|34423|N|From Archmage Khadgar|PRE|35241;34422;34421|FACTION|Horde|M|71.61,62.43|Z|TanaanJungleIntro|
 C Altar Altercation |QID|34423|N|Speak with Ariok and tell him "Khadgar has asked us to go distract the Eye of Kilrogg".|QO|1|CHAT|M|72.0,62.2|Z|TanaanJungleIntro|
@@ -151,8 +150,8 @@ A The Shadowmoon Clan |QID|34432|N|From Vindicator Maraad|FACTION|Alliance|M|80.
 A The Shadowmoon Clan |QID|34739|N|From Thrall|FACTION|Horde|M|80.54,48.42|PRE|34429|Z|TanaanJungleIntro|
 A Masters of Shadow |QID|34431;34737|N|From Luuka|M|82.89,54.52|PRE|34429|Z|TanaanJungleIntro|
 C The Shadowmoon Clan |QID|34432;34739|N|Kill the Shadowmoon Voidaxe, Ritualist and Void Wolfs|S|M|60.6,51.8|Z|TanaanJungleIntro|
-C Kill Ungra|QID|34431;34737|N|Head up the first stairs, then take the next set of stairs to the left, then to the left.|QO|1|M|44.0,74.5|T|Ungra|Z|TanaanJungleIntro|
-C Kill Taskmaster Gorran|QID|34431;34737|N|Straight along the corridor behind you. Watch for the hole in the floor.|QO|2|M|56.2,19.8|T|Taskmaster Gurran|Z|TanaanJungleIntro|
+K Slay Ungra |QID|34431;34737|T|Ungra|N|Kill Ungra. Head up the first stairs, then take the next set of stairs to the left, then to the left.|QO|1|M|44.0,74.5|Z|Tanaan Jungle|
+K Slay Taskmaster Gurran |QID|34431;34737|T|Taskmaster Gurran|N|Straight along the corridor behind you. Watch for the hole in the floor.|QO|2|M|56.2,19.8|Z|Tanaan Jungle|
 C Find Ankova|QID|34431;34737|N|Jump down the hole, then follow the corridor north-west to the corpse of Ankova|QO|3|NC|M|45.2,16.1|Z|TanaanJungleIntro|
 A Yrel|QID|34434;34740|From Yrel|M|45.15,15.98|N|From Yrel.|Z|TanaanJungleIntro|PRE|34429|
 C Yrel|QID|34434;34740|Head back down the corridor.|M|58.28,38.31|NC|N|Lead Yrel out to the main corridor, she can find her way from there.|Z|TanaanJungleIntro|
@@ -186,7 +185,7 @@ A The Shadow of the Worldbreaker |QID|34958|N|From Thaelin Darkanvil|PRE|34439|M
 C The Shadow of the Worldbreaker |QID|34958|N|Kill the Blackrock until one drops the Worldbreaker Schematics|S|M|43.0,35.8|Z|TanaanJungleIntro|
 T Ga'nar of the Frostwolf |QID|34442|N|To Ga'nar, who is at the other end of Blackrock Quarry|M|41.9,41.9|Z|TanaanJungleIntro|
 A Polishing the Iron Throne |QID|34925|N|From Ga'nar|M|41.9,41.9|PRE|34442|Z|TanaanJungleIntro|
-C Polishing the Iron Throne |QID|34925|N|Go in the basement of the nearest building and kill Overseer Gotrigg, and loot the Shackle Key|M|45.62,39.82|T|Overseer Gotrigg|Z|TanaanJungleIntro|
+K Overseer Gotrigg |QID|34925|N|Go in the basement of the nearest building and kill Overseer Gotrigg, and loot the Shackle Key|M|45.62,39.82|T|Overseer Gotrigg|Z|TanaanJungleIntro|
 T Polishing the Iron Throne |QID|34925|N|To Ga'nar|M|41.89,42.12|Z|TanaanJungleIntro|
 A The Prodigal Frostwolf |QID|34437|N|From Ga'nar|M|41.89,42.12|PRE|34925|Z|TanaanJungleIntro|
 C The Gunpowder Plot |QID|34987|N|Head into the hut and loot the Blackrock Powder Keg|NC|QO|1|M|46.9,32.1|Z|TanaanJungleIntro|
@@ -220,3 +219,85 @@ N And you are Finished!|QID|34787;33868|N|Check this step off and the next guide
 ]]
 
 end)
+--[[
+T Azeroth's Last Stand |QID|35933|M|54.1,48.8|Z|Tanaan Jungle|; The Dark Portal
+; Field turnin
+A Onslaught's End |QID|34392|M|54.1,48.8|Z|Tanaan Jungle|; The Dark Portal
+C Onslaught's End |QID|34392|QO|1/1 Northern Fel Spire disabled|M|51.1,42.0|Z|Tanaan Jungle|; The Dark Portal
+C Onslaught's End |QID|34392|QO|1/1 Southern Fel Spire disabled|M|51.2,54.7|Z|Tanaan Jungle|; The Dark Portal
+T Onslaught's End |QID|34392|M|54.7,48.2|Z|Tanaan Jungle|N|To Archmage Khadgar|; The Dark Portal
+A The Portal's Power |QID|34393|M|54.7,48.2|Z|Tanaan Jungle|N|From Archmage Khadgar|; The Dark Portal
+C The Portal's Power |QID|34393|QO|1/1 Enter Gul'dan's prison|M|54.9,50.1|Z|Tanaan Jungle|; The Dark Portal
+C The Portal's Power |QID|34393|QO|1/1 Mark of the Burning Blade destroyed|M|55.9,46.3|Z|Tanaan Jungle|; The Dark Portal
+C The Portal's Power |QID|34393|QO|1/1 Mark of the Shattered Hand destroyed|M|57.2,48.1|Z|Tanaan Jungle|; The Dark Portal
+C The Portal's Power |QID|34393|QO|1/1 Mark of the Blackrock destroyed|M|56.2,50.2|Z|Tanaan Jungle|; The Dark Portal
+C The Portal's Power |QID|34393|QO|1/1 Stasis Rune destroyed|M|55.8,48.2|Z|Tanaan Jungle|; The Dark Portal
+T The Portal's Power |QID|34393|M|54.8,48.3|Z|Tanaan Jungle|N|To Archmage Khadgar|; The Dark Portal
+A The Cost of War |QID|34420|M|54.8,48.1|Z|Tanaan Jungle|N|From Archmage Khadgar|; The Dark Portal
+T The Cost of War |QID|34420|M|60.2,56.3|Z|Tanaan Jungle|N|To Archmage Khadgar|; Heartblood
+A Blaze of Glory |QID|34422|M|60.2,56.3|Z|Tanaan Jungle|N|From Archmage Khadgar|; Heartblood
+A Vengeance for the Fallen |QID|35242|M|62.2,52.9|Z|Tanaan Jungle|N|From Rephuura|; Heartblood
+A Bled Dry |QID|35240|M|62.3,53.0|Z|Tanaan Jungle|N|From Taag|; Heartblood
+C Bled Dry |QID|35240|QO|1/1 Eastern cage opened|M|65.6,54.0|Z|Tanaan Jungle|; Heartblood
+C Bled Dry |QID|35240|QO|1/1 Southern cage opened|M|61.0,62.8|Z|Tanaan Jungle|; Heartblood
+T Vengeance for the Fallen |QID|35242|M|71.5,62.7|Z|Tanaan Jungle|N|To Vindicator Maraad|; Heartblood
+T Blaze of Glory |QID|34422|M|71.5,62.4|Z|Tanaan Jungle|N|To Archmage Khadgar|; Heartblood
+T Bled Dry |QID|35240|M|71.5,62.4|Z|Tanaan Jungle|N|To Archmage Khadgar|; Heartblood
+A Altar Altercation |QID|34423|M|71.5,62.4|Z|Tanaan Jungle|N|From Archmage Khadgar|; Heartblood
+C Altar Altercation |QID|34423|QO|1/1 Speak with Ariok|M|72.0,62.2|Z|Tanaan Jungle|; Heartblood
+C Altar Altercation |QID|34423|QO|1/1 Escort Ariok to the Bleeding Altar|M|75.9,55.6|Z|Tanaan Jungle|; The Bleeding Altar
+C Altar Altercation |QID|34423|QO|3/3 Blood Ritual Orb destroyed|M|78.7,53.4|Z|Tanaan Jungle|; The Bleeding Altar
+C Altar Altercation |QID|34423|QO|1/1 Find Khadgar on Tar'thog Bridge|M|71.8,41.9|Z|Tanaan Jungle|; Tar'thog Bridge
+T Altar Altercation |QID|34423|M|72.0,40.5|Z|Tanaan Jungle|N|To Archmage Khadgar|; Tar'thog Bridge
+A The Kargathar Proving Grounds |QID|34425|M|72.0,40.5|Z|Tanaan Jungle|N|From Unknown|; Tar'thog Bridge
+T The Kargathar Proving Grounds |QID|34425|M|73.0,38.1|Z|Tanaan Jungle|N|To Archmage Khadgar|; Kargathar Proving Grounds
+A A Potential Ally |QID|34478|M|73.0,38.1|Z|Tanaan Jungle|N|From Archmage Khadgar|; Kargathar Proving Grounds
+T A Potential Ally |QID|34478|M|73.2,38.9|Z|Tanaan Jungle|N|To Exarch Maladaar|; Kargathar Proving Grounds
+A Kill Your Hundred |QID|34429|M|73.0,38.1|Z|Tanaan Jungle|N|From Archmage Khadgar|; Kargathar Proving Grounds
+C Kill Your Hundred |QID|34429|QO|1/1 Enter the arena|M|73.7,27.2|Z|Tanaan Jungle|; Kargathar Proving Grounds
+C Kill Your Hundred |QID|34429|QO|100/100 Combatants slain in the arena|M|73.6,24.5|Z|Tanaan Jungle|; Kargathar Proving Grounds
+C Kill Your Hundred |QID|34429|QO|1/1 Escape Kargath's arena|M|82.5,49.6|Z|Tanaan Jungle|; Umbral Halls
+; Usernote: test|M|82.5,56.3|Z|Umbral Halls|;  |Z|970;1|
+T Kill Your Hundred |QID|34429|M|81.3,50.2|Z|Umbral Halls|N|To Archmage Khadgar|;  |Z|970;1|
+A The Shadowmoon Clan |QID|34432|M|80.7,45.2|Z|Umbral Halls|N|From Vindicator Maraad|;  |Z|970;1|
+A Masters of Shadow |QID|34431|M|82.8,44.3|Z|Umbral Halls|N|From Luuka|;  |Z|970;1|
+C Masters of Shadow |QID|34431|QO|1/1 Ungra slain|M|43.8,76.7|Z|Tanaan Jungle|; Umbral Halls |Z|970;1|
+C Masters of Shadow |QID|34431|QO|1/1 Taskmaster Gurran slain|M|56.0,19.9|Z|Tanaan Jungle|; Umbral Halls |Z|970;1|
+C Masters of Shadow |QID|34431|QO|1/1 Ankova the Fallen slain|M|46.0,15.7|Z|Tanaan Jungle|; Umbral Halls |Z|970;1|
+A Yrel |QID|34434|M|45.1,16.1|Z|Tanaan Jungle|N|From Unknown|; Umbral Halls |Z|970;1|
+T Masters of Shadow |QID|34431|M|50.3,48.3|Z|Tanaan Jungle|N|To Exarch Maladaar|; Umbral Halls |Z|970;1|
+T The Shadowmoon Clan |QID|34432|M|51.4,55.1|Z|Tanaan Jungle|N|To Qiana Moonshadow|; Umbral Halls |Z|970;1|
+T Yrel |QID|34434|M|50.5,48.4|Z|Tanaan Jungle|N|To Yrel|; Umbral Halls |Z|970;1|
+A Keli'dan the Breaker |QID|34436|M|50.2,48.2|Z|Tanaan Jungle|N|From Exarch Maladaar|; Umbral Halls |Z|970;1|
+T Keli'dan the Breaker |QID|34436|M|49.5,14.4|Z|Tanaan Jungle|N|To Archmage Khadgar|; Blackrock Quarry |Z|970;0|
+A Prepare for Battle |QID|35019|M|48.6,14.2|Z|Tanaan Jungle|N|From Vindicator Maraad|; Blackrock Quarry |Z|970;0|
+T Prepare for Battle |QID|35019|M|48.5,14.2|Z|Tanaan Jungle|N|To Vindicator Maraad|; Blackrock Quarry |Z|970;0|
+A The Battle of the Forge |QID|34439|M|49.5,14.2|Z|Tanaan Jungle|N|From Cordana Felsong|; Blackrock Quarry |Z|970;0|
+C The Battle of the Forge |QID|34439|QO|3/3 Ogron Warcrusher slain|M|40.5,17.5|Z|Tanaan Jungle|; Blackrock Quarry |Z|970;0|
+C The Battle of the Forge |QID|34439|QO|15/15 Blackrock Grunt slain|M|43.2,17.4|Z|Tanaan Jungle|; Blackrock Quarry |Z|970;0|
+T The Battle of the Forge |QID|34439|M|43.1,26.4|Z|Tanaan Jungle|N|To Farseer Drek'Thar|; Blackrock Quarry |Z|970;0|
+A Ga'nar of the Frostwolf |QID|34442|M|43.0,26.4|Z|Tanaan Jungle|N|From Farseer Drek'Thar|; Blackrock Quarry |Z|970;0|
+A The Gunpowder Plot |QID|34987|M|44.1,29.6|Z|Tanaan Jungle|N|From Hansel Heavyhands|; Blackrock Quarry |Z|970;0|
+A The Shadow of the Worldbreaker |QID|34958|M|44.1,29.7|Z|Tanaan Jungle|N|From Thaelin Darkanvil|; Blackrock Quarry |Z|970;0|
+T Ga'nar of the Frostwolf |QID|34442|M|41.7,41.9|Z|Tanaan Jungle|N|To Ga'nar|; Blackrock Quarry |Z|970;0|
+A Polishing the Iron Throne |QID|34925|M|41.7,41.9|Z|Tanaan Jungle|N|From Ga'nar|; Blackrock Quarry |Z|970;0|
+T Polishing the Iron Throne |QID|34925|M|41.8,42.0|Z|Tanaan Jungle|N|To Ga'nar|; Blackrock Quarry |Z|970;0|
+A The Prodigal Frostwolf |QID|34437|M|41.8,42.0|Z|Tanaan Jungle|N|From Ga'nar|; Blackrock Quarry |Z|970;0|
+C The Gunpowder Plot |QID|34987|QO|1/1 Blackrock Powder Keg|M|46.9,32.0|Z|Tanaan Jungle|; Blackrock Quarry |Z|970;0|
+C The Gunpowder Plot |QID|34987|QO|1/1 Depress the Makeshift Plunger|M|44.0,29.5|Z|Tanaan Jungle|; Blackrock Quarry |Z|970;0|
+T The Gunpowder Plot |QID|34987|M|44.1,29.6|Z|Tanaan Jungle|N|To Hansel Heavyhands|; Blackrock Quarry |Z|970;0|
+T The Shadow of the Worldbreaker |QID|34958|M|44.1,29.7|Z|Tanaan Jungle|N|To Thaelin Darkanvil|; Blackrock Quarry |Z|970;0|
+T The Prodigal Frostwolf |QID|34437|M|43.0,26.4|Z|Tanaan Jungle|N|To Farseer Drek'Thar|; Blackrock Quarry |Z|970;0|
+A Taking a Trip to the Top of the Tank |QID|35747|M|43.1,28.7|Z|Tanaan Jungle|N|From Archmage Khadgar|; Blackrock Quarry |Z|970;0|
+C Taking a Trip to the Top of the Tank |QID|35747|QO|1/1 Speak with Thaelin|M|44.1,29.7|Z|Tanaan Jungle|; Blackrock Quarry |Z|970;0|
+C Taking a Trip to the Top of the Tank |QID|35747|QO|1/1 Gogluk slain|M|37.2,48.0|Z|Tanaan Jungle|; The Path of Glory |Z|970;0|
+C Taking a Trip to the Top of the Tank |QID|35747|QO|1/1 Climb the rear chains of the Iron Worldbreaker|M|39.8,48.3|Z|Tanaan Jungle|; The Path of Glory |Z|970;0|
+T Taking a Trip to the Top of the Tank |QID|35747|M|40.1,48.4|Z|Tanaan Jungle|N|To Thaelin Darkanvil|; The Path of Glory |Z|970;0|
+A A Taste of Iron |QID|34445|M|40.1,48.4|Z|Tanaan Jungle|N|From Thaelin Darkanvil|; The Path of Glory |Z|970;0|
+C A Taste of Iron |QID|34445|QO|1/1 Enter the Worldbreaker Side Turret|M|40.1,49.0|Z|Tanaan Jungle|; The Path of Glory |Z|970;0|
+C A Taste of Iron |QID|34445|QO|200/200 Iron Horde slain|M|40.2,48.7|Z|Tanaan Jungle|; The Path of Glory |Z|970;0|
+C A Taste of Iron |QID|34445|QO|1/1 Press the Main Cannon Trigger|M|40.2,48.3|Z|Tanaan Jungle|; The Path of Glory |Z|970;0|
+T A Taste of Iron |QID|34445|M|40.1,48.4|Z|Tanaan Jungle|N|To Thaelin Darkanvil|; The Path of Glory |Z|970;0|
+A The Home Stretch |QID|35884|M|40.1,48.4|Z|Tanaan Jungle|N|From Thaelin Darkanvil|; The Path of Glory |Z|970;0|
+T The Home Stretch |QID|35884|M|44.4,80.7|Z|Tanaan Jungle|N|To Archmage Khadgar|; Iron Bastion |Z|970;0|
+A Step Three: Prophet! |QID|34575|M|44.4,80.7|Z|Tanaan Jungle|N|From Archmage Khadgar|; Iron Bastion |Z|970;0|]]

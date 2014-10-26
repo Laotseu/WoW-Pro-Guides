@@ -135,20 +135,21 @@
 local guide = WoWPro:RegisterGuide("TwiHollKAL",'WorldEvents',"Kalimdor", "Twists", "Alliance")
 WoWPro:GuideLevels(guide,1,90,45.000000)
 WoWPro.WorldEvents:GuideHoliday(guide,"HallowsEnd","Hallow's End - Kalimdor")
+WoWPro:GuideNextGuide(guide, 'TwiHollOUT')
 WoWPro:GuideSteps(guide, function()
 return [[
 
 F Teldrassil|QID|12337|N|Start in Teldrassil|Z|Teldrassil|
 b Azuremyst Isle|QID|12337|M|52.08,89.47|N|Now take the boat to Azuremyst Isle, or Fly to Exodar.|Z|Teldrassil|
 A Candy Bucket |QID|12337|M|59.3,18.5|Z|The Exodar|N|The Exodar|
-F Azure Watch|QID12333|M|49.71,49.11|Z|Azuremyst Isle|U|37586|
+F Azure Watch|QID|12333|M|49.71,49.11|Z|Azuremyst Isle|U|37586|
 A Candy Bucket |QID|12333|M|48.5,49.21|Z|Azuremyst Isle|U|37586|N|Azure Watch|
-F Blood Watch|QID12341|M|57.68,53.87|Z|Bloodmyst Isle|U|37586|
+F Blood Watch|QID|12341|M|57.68,53.87|Z|Bloodmyst Isle|U|37586|
 A Candy Bucket |QID|12341|M|55.68,59.85|Z|Bloodmyst Isle|N|Blood Watch|
 F Rut'theran Village|QID|28951|M|55.40,88.50|N|Return to Rut'theran Village.|Z|Teldrassil|U|37586|
 R Enter Darnassus|QID|12334|M|55.10,88.52|Z|Teldrassil|
 A Candy Bucket |QID|12334|M|62.16,33.01|Z|Darnassus|N|Darnassus|
-A Dancing for Marzipan|QID|8357|M|62.31,32.92|Z|Darnassus|
+A Dancing for Marzipan|QID|8357;8311|M|62.31,32.92|Z|Darnassus|
 C Dancing for Marzipan|QID|8357|T|/dance|N|click the button to dance.|Z|Stormwind City|
 
 A Candy Bucket |QID|12331|M|55.41,52.25|Z|Teldrassil|N|Dolanaar|
