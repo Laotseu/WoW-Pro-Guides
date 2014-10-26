@@ -52,14 +52,17 @@ end
 
 -- Auto-Complete: Get flight point --
 function WoWPro:AutoCompleteGetFP(...)
+	local zonetext = GetMinimapZoneText()
 	for i = 1,15 do
 		local index = WoWPro.rows[i].index
 		local step =  WoWPro.step[index]
-		if ((... == ERR_NEWTAXIPATH and WoWPro.action[index] == "f" and GetMinimapZoneText() == step) or
-			 (WoWPro.action[index] == "f" and WoWProCharDB.Taxi[step]))
+		local altfp = WoWPro.altfp[index]
+		if ((... == ERR_NEWTAXIPATH and WoWPro.action[index] == "f" and (zonetext == step or (altfp and altfp == zonetext) ) or
+			 (WoWPro.action[index] == "f" and (WoWProCharDB.Taxi[step] or (altfp and WoWProCharDB.Taxi[altfp])))))
 			and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
-			WoWProCharDB.Taxi[step] = true -- keep track of the discovered flightpoints
-			WoWPro:Print("Discovered Flight Point: [%s]",step)
+
+			WoWProCharDB.Taxi[zonetext] = true -- keep track of the discovered flightpoints
+			WoWPro:Print("Discovered Flight Point: [%s]",zonetext)
 			WoWPro.CompleteStep(index)
 		end
 	end
@@ -242,7 +245,8 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 
 						-- If the flighpoint is already known, mark it. Not really related to the quest log but only
 						-- place I can put it so that it check for things that are.
-						elseif action == "f" and not completion and WoWProCharDB.Taxi[WoWPro.step[i]] then
+						elseif action == "f" and not completion and 
+								 (WoWProCharDB.Taxi[WoWPro.step[i]] or (WoWPro.altfp[i] and WoWProCharDB.Taxi[WoWPro.altfp[i]])) then
 							WoWPro.CompleteStep(i, true)
 
 				        -- -- Quest Completion --

@@ -189,7 +189,7 @@ frame:SetScript("OnShow", function()
 			local action = WoWPro.action[index]
 			--row.action:SetTexture(WoWPro.actiontypes[action])
 
-			if WoWPro.noncombat[index] then
+			if WoWPro.action[index] == "C" and WoWPro.noncombat[index] then
 				--row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
 				action = "noncombat"
 			elseif WoWPro.chat[index] then
@@ -202,7 +202,7 @@ frame:SetScript("OnShow", function()
 				--row.action:SetTexture("Interface\\GossipFrame\\DailyActiveQuestIcon")
 				action = "turnindaily"
 			end
-			WoWPro:SetActiontypeTex(row.action, action)
+			WoWPro:SetActiontypeTex(row.action, action, index)
 			
 			local note = WoWPro.note[index]
 			row.note:SetText(note)

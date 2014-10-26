@@ -3,7 +3,8 @@
 -----------------------------
 
 local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
-
+local WoWPro = _G.WoWPro
+local _ = _G._
 	
 local L = WoWPro_Locale
 WoWPro.actiontypesorder = { "A", "C", "T", "K", "R", "H", "h", "F", "f", "N", "B", "b", "U", "L", "l", "r", "noncombat", "chat", "acceptdaily", "turnindaily" }
@@ -78,9 +79,9 @@ WoWPro.actiontypecoords = {
 	r = { 3/8, 4/8, 3/8, 4/8 },
 	-- noncombat = { 1/8, 2/8, 4/8, 5/8 },
 }
-function WoWPro:SetActiontypeTex(tex, actiontype)
+function WoWPro:SetActiontypeTex(tex, actiontype, index)
 	if not WoWPro.actiontypes[actiontype] then
-		err("Invalid actiontype '%s'", actiontype)
+		err("Invalid actiontype '%s' for index %s", actiontype, index)
 	end
 	tex:SetTexture(WoWPro.actiontypes[actiontype])
 	if WoWPro.actiontypecoords[actiontype] then
@@ -338,6 +339,7 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 		--err("Daily found: %s", text)
 		WoWPro:SetSessionDailyQuests(WoWPro.QID[i])
 	end
+	WoWPro.altfp[i] = text:match("|ALTFP|([^|]*)|?")
 	WoWPro.why[i] = nil
 
     -- If the step is "Achievement" use the name and description from the server ...

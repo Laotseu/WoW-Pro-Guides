@@ -44,13 +44,13 @@ WoWPro:GuideSteps(guide, function()
 return [[
 
 A Iron Horde Invasion|QID|36498|M|49.69,76.43|N|This quest should auto-accept in Stormwind City, if not, head to your nearest Hero's Call Board.|Z|Stormwind City|M|62.9,71.6|
-F Shattered Beachhead|QID|36498|N|Use the portal in the mage tower of Stormwind City.|M|49.0,87.2|Z|Stormwind City|Z|Stormwind City|ACTIVE|36498|
+R Shattered Beachhead|QID|36498|N|Use the portal in the mage tower of Stormwind City.|M|49.0,87.2|Z|Stormwind City|Z|Stormwind City|ACTIVE|36498|
 T Iron Horde Invasion|QID|36498|N|To Vindicator Maraad.|M|66.58,28.26|
 
 A Attack of the Iron Horde|QID|35460|N|From Vindicator Maraad.|M|66.58,28.26|
 A Under Siege|QID|35462|NC|N|From Vindicator Maraad.|M|66.58,28.26|
 A Peeking into the Portal|QID|36379|Z|Blasted Lands|N|From Bodrick Grey.|M|66.94,27.94|
-f Shattershore|QID|36498|M|67.64,27.97|N|With Araazi.|
+f Shattered Beachhead|M|67.64,27.97|N|With Araazi.|ALTFP|Shattershore|
 
 C Attack of the Iron Horde|QID|35460|M|62.85,31.94|S|N|Kill the grunts in the area as you go about the other two tasks.|
 C Under Siege|QID|35462|M|63.41,33.13|NC|N|Click on the Demolishers to destroy them.|S|
@@ -70,21 +70,21 @@ T Ending Executions|QID|35464|N|To Bodrick Grey.|M|66.94,27.94|
 T Subversive Scouts|QID|35463|N|To Vindicator Maraad.|M|66.58,28.26|
 
 A Investigating the Invasion|QID|36307|N|From Vindicator Maraad.|M|66.58,28.26|
-T Investigating the Invasion|QID|36307|M|48.73,31.77|N|To Vindicator Maraad, who has moved location.|M|51.9,28.6|
+T Investigating the Invasion|QID|36307|M|51.9,28.7|N|To Vindicator Maraad, who has moved location.|
 
 A Lunatic Lieutenants|QID|35486|M|48.74,31.78|N|From Vindicator Maraad.|M|51.9,28.6|
 A For Nethergarde! |QID|35492|N|From Vindicator Maraad.|M|51.9,28.6|
 A Mementos of the Fallen |QID|35494|N|From Commander Vines|M|52.0,28.5|
 
-C Lunatic Lieutenants|QID|35486|QO|2|N|Kill Rukah and loot the Battleplan|M|57.1,18.2|
-C Mementos of the Fallen |QID|35494|QO|3|N|Loot Keri's Mug|NC|M|59.3,18.0|
-C Mementos of the Fallen |QID|35494|QO|2|N|Loot Krolan's Shield|NC|M|60.6,20.0|
-C For Nethergarde! |QID|35492|QO|1|N|Plant the flag at Nethegarde entrance|NC|M|62.9,22.5|
-C For Nethergarde! |QID|35492|QO|2|N|Plant the flag in the center of Nethergarde|NC|M|61.6,18.6|
-C Mementos of the Fallen |QID|35494|QO|1|N|Loot Strumner's Sword (inside the hut)|NC|M|61.8,15.0|
-C Lunatic Lieutenants|QID|35486|QO|1|N|Kill Mokrik Blackfingers and loot the Battleplan|M|62.9,13.1|
-C For Nethergarde! |QID|35492|QO|3|N|Plant the flag outside of the main keep|NC|M|59.9,15.9|
-C Lunatic Lieutenants|QID|35486|QO|3|N|Kill Gar Steelcrush and loot the Battleplan. He can be found inside the main keep upstairs in the command room.|
+K Rukah the Machinist |QID|35486|T|Rukah the Machinist|QO|2|N|Kill Rukah and loot the Battleplan|M|57.1,18.2|
+C Loot Keri's Mug |QID|35494|QO|3|N|Loot Keri's Mug|NC|M|59.3,18.0|
+C Loot Krolan's Shield |QID|35494|QO|2|N|Loot Krolan's Shield|NC|M|60.6,20.0|
+C Plant the flag at Nethegarde entrance |QID|35492|QO|1|N|Plant the flag at Nethegarde entrance|NC|M|62.9,22.5|
+C Plant the flag in the center of Nethergarde |QID|35492|QO|2|N|Plant the flag in the center of Nethergarde|NC|M|61.6,18.6|
+C Loot Strumner's Sword |QID|35494|QO|1|N|Loot Strumner's Sword (inside the hut)|NC|M|61.8,15.0|
+K Mokrik Blackfingers |QID|35486|T|Mokrik Blackfingers|QO|1|N|Kill Mokrik Blackfingers and loot the Battleplan|M|62.9,13.1|
+C Plant the flag outside of the main keep |QID|35492|QO|3|N|Plant the flag outside of the main keep|NC|M|59.9,15.9|
+K Gar Steelcrush|QID|35486|T|Gar Steelcrush|QO|3|M|60.2,13.9|N|Kill Gar Steelcrush and loot the Battleplan. He can be found inside the main keep upstairs in the command room.|
 
 T Mementos of the Fallen |QID|35494|N|From Commander Vines|M|52.0,28.5|
 T Lunatic Lieutenants|QID|35486|M|48.74,31.78|N|From Vindicator Maraad.|M|51.9,28.6|
@@ -109,10 +109,10 @@ C Gar'mak Bladetwist|QID|35500|M|40.45,11.45|T|Gar'mak Bladetwist|N|Kill Gar'mak
 T Gar'mak Bladetwist|QID|35500|N|To Vindicator Maraad.|M|51.9,28.6|
 
 A Report to the King|QID|36941|N|From Vindicator Maraad.|M|51.9,28.6|,
-F Stormwind City|QID|36941|N|Head to the King in Stormwind City. You can use the portal in Shattered Beachhead, or your preferred route to Stormwind City.|ACTIVE|36941|M|66.4,28.0|
+R Stormwind City|QID|36941|N|Head to the King in Stormwind City. You can use the portal in Shattered Beachhead, or your preferred route to Stormwind City.|ACTIVE|36941|M|66.4,28.0|
 T Report to the King|QID|36941|N|To King Varian Wrynn in Stormwind Keep.|M|85.8,31.7|Z|Stormwind City|
 
-U Iron Starlette|U|110660|N|Add your starlette to your collection. Run the revamped Upper Blackrock Spire while it's tuned for 90's (will be 100 after expansion is released.)|
+U Iron Starlette|U|111660|N|Add your starlette to your collection. Run the revamped Upper Blackrock Spire while it's tuned for 90's (will be 100 after expansion is released.)|
 
 ]]
 
