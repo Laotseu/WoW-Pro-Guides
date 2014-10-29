@@ -658,7 +658,7 @@ A The Burlap Trail: To Burlap Waystation|QID|30592|M|58.09,61.46|N|From Brother 
 C The Burlap Trail: To Burlap Waystation|QID|30592|M|52.94,66.60|N|Press M on your map to determine the current location of the Trail Packers, head to that location, then escort them to the Burlap Waystation, there will be many attacks, and the Packers will die if you don't help them. Only the guide will fend off the attacks, and can die. You need to get only one Packer alive to The Burlap Trail to successfully complete the quest.|
 T The Burlap Trail: To Burlap Waystation|QID|30592|M|51.66,67.83|N|To Brother Trailscenter.|
 A The Rabbitsfoot|QID|30602|M|58.04,61.49|M|51.66,67.83|N|From Brother Trailscenter.|
-C The Rabbitsfoot|QID|30602|NC|M|49.07,70.42|N|Rescue Brother Rabbitsfoot by clicking on him. He is hanging from a tree.|
+C The Rabbitsfoot|QID|30602|CHAT|M|49.07,70.42|N|Rescue Brother Rabbitsfoot by clicking on him. He is hanging from a tree.|
 A The Broketooth Ravage|QID|30603|M|49.07,70.42|N|From Brother Rabbitsfoot.|
 K Mo Mo|QID|30603|T|Mo Mo|L|81137|M|48.2,72.8|N|Up the hill, in the cave, there is a treasure chest in the cave also, you probably want to loot it.|
 T The Rabbitsfoot|QID|30602|M|51.97,67.21|N|To Brother Rabbitsfoot, who is now located in The Burlap Waystation.|
