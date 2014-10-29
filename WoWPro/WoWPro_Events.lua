@@ -212,7 +212,8 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 							WoWProCharDB.Guide[GID].completion[i] = nil
 							completion = nil
 							if not skipUIUpdate then
-			        WoWPro:UpdateGuide()
+								WoWPro:UpdateGuide()
+								WoWPro:UpdateQuestTracker()
 							end
 						
 						  
