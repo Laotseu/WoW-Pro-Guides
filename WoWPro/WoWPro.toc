@@ -4,7 +4,7 @@
 ## Author: Jiyambi
 ## SavedVariables: WoWProData
 ## SavedVariablesPerCharacter: WoWProCharDB
-## OptionalDeps: Carbonite, TomTom
+## OptionalDeps: Carbonite, TomTom, Aboutis
 ## Version: 6.0.1
 ## X-Category: Compilations
 ## X-License: Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
@@ -24,11 +24,11 @@ Libraries\AceGUI-3.0-SharedMediaWidgets\widget.xml
 Libraries\LibDataBroker-1.1\LibDataBroker-1.1.lua
 Libraries\LibDBIcon-1.0\LibDBIcon-1.0.lua
 Libraries\LibBabble-Zone-3.0\lib.xml
-Libraries\Astrolabe\Load.xml
 
 WoWPro.lua
 WoWPro_Widgets.lua
 WoWPro_Localization.lua
+WoWPro_Events.lua
 WoWPro_CurrentGuide.lua
 WoWPro_GuideList.lua
 WoWPro_Frames.lua
@@ -36,7 +36,6 @@ WoWPro_Config.lua
 WoWPro_Zones.lua
 WoWPro_Mapping.lua
 WoWPro_Broker.lua
-WoWPro_Events.lua
 WoWPro_NilGuide.lua
 WoWPro_Parser.lua
 WoWPro_Trade.lua

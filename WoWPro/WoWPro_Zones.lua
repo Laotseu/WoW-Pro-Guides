@@ -18,9 +18,9 @@ WoWPro.SubZone = {
 WoWPro.Zone2MapID = {}
 WoWPro.MapID2Zone = {}
 
-local function DefineDungeonArea(mapID, floor, zi, dungeon, mapName)
-    WoWPro.Zone2MapID[zi] = {mapID=mapID, floor=floor, dungeon=dungeon, mapName=mapName}
-    WoWPro.MapID2Zone[mapID] = zi
+local function DefineDungeonArea(mapID, floor, zone, dungeon, mapName)
+    WoWPro.Zone2MapID[zone] = {mapID=mapID, floor=floor, dungeon=dungeon, mapName=mapName}
+    WoWPro.MapID2Zone[mapID] = mapName or zone
 end
 
 local function DefineInstance(mapID, numFloors, zi, mapName)
@@ -30,11 +30,11 @@ end
 
 local function DefineTerrain(cont, zonei, mapID, numFloors, zone, mapName)
     if mapName then
-        WoWPro.Zone2MapID[zone] = {cont=cont, zonei=zonei, mapID=mapID, numFloors=numFloors, zone=zone, mapName=mapName}
+        WoWPro.Zone2MapID[mapName] = {cont=cont, zonei=zonei, mapID=mapID, numFloors=numFloors, zone=zone, mapName=mapName}
     else
         WoWPro.Zone2MapID[zone] = {cont=cont, zonei=zonei, mapID=mapID, numFloors=numFloors, zone=zone, mapName=zone}
     end
-    WoWPro.MapID2Zone[mapID] = zone
+    WoWPro.MapID2Zone[mapID] = mapName or zone
 end
 
 -- From WoWPro:GenerateMapCache() + WoWPro:Functionalize()
@@ -548,9 +548,11 @@ DefineTerrain(2,35,  23,0,"Eastern Plaguelands")
 DefineTerrain(2,36,  26,0,"The Hinterlands")
 DefineTerrain(3, 0, 466,0,"Outland")
 DefineTerrain(3, 1, 465,0,"Hellfire Peninsula")
+DefineTerrain(3, 2, 477,0,"Nagrand")
 DefineTerrain(3, 3, 481,0,"Shattrath City")
 DefineTerrain(3, 4, 475,0,"Blade's Edge Mountains")
 DefineTerrain(3, 5, 467,0,"Zangarmarsh")
+DefineTerrain(3, 6, 473,0,"Shadowmoon Valley")
 DefineTerrain(3, 7, 478,0,"Terokkar Forest")
 DefineTerrain(3, 8, 479,0,"Netherstorm")
 DefineTerrain(4, 0, 485,0,"Northrend")
@@ -568,7 +570,6 @@ DefineTerrain(4,11, 495,0,"The Storm Peaks")
 DefineTerrain(5, 1, 605,0,"Kezan")
 DefineTerrain(5, 2, 640,0,"Deepholm")
 DefineTerrain(5, 3, 737,0,"The Maelstrom","The Maelstrom@The Maelstrom")
-DefineTerrain(5, 3, 737,0,"The Maelstrom","The Maelstrom@The Maelstrom")
 DefineTerrain(5, 4, 544,0,"The Lost Isles")
 DefineTerrain(6, 0, 862,0,"Pandaria")
 DefineTerrain(6, 1, 807,0,"Valley of the Four Winds")
@@ -584,9 +585,7 @@ DefineTerrain(6,10, 951,0,"Timeless Isle")
 DefineTerrain(6,11, 873,0,"The Veiled Stair")
 DefineTerrain(7, 0, 962,0,"Draenor")
 DefineTerrain(7, 1, 950,0,"Nagrand","Nagrand@Draenor")
-DefineTerrain(7, 1, 950,0,"Nagrand","Nagrand@Draenor")
 DefineTerrain(7, 2, 945,0,"Tanaan Jungle")
-DefineTerrain(7, 3, 947,0,"Shadowmoon Valley","Shadowmoon Valley@Draenor")
 DefineTerrain(7, 3, 947,0,"Shadowmoon Valley","Shadowmoon Valley@Draenor")
 DefineTerrain(7, 4, 949,0,"Gorgrond")
 DefineTerrain(7, 5, 948,0,"Spires of Arak")
