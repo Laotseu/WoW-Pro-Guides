@@ -110,7 +110,7 @@ A Report to Marshal Bluewall|QID|9415|M|54.51,32.83|N|From Rifleman Torrig.|FACT
 f Cenarion Hold |M|54.4,32.7|N|From Cloud Skydance.|FACTION|Alliance|
 A Report to General Kirika|QID|9416|M|52.96,34.68|N|From Scout Bloodfist.|FACTION|Horde|
 f Cenarion Hold |M|52.8,34.6|N|From Runk Windtamer.|FACTION|Horde|
-A Secret Communication|QID|8318|M|23.1,35.1|N|From Bor Wildmane.|
+A Secret Communication|QID|8318|M|53.1,35.1|N|From Bor Wildmane.|
 A Twilight Geolords|QID|8320|M|53.2,35.2|N|From Huum Wildmane.|
 
 C Deadly Desert Venom|QID|8277|M|47.91,36.17|S|N|Kill and loot Sand Skitterers and Stonelash Scorpids.|
