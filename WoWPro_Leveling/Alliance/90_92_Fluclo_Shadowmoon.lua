@@ -35,7 +35,7 @@
 -- Date: 2014-09-29 21:06
 -- Who: Fluclo
 
-local guide = WoWPro:RegisterGuide('ShadowDraenor', "Leveling", 'Shadowmoon Valley', 'Fluclo', 'Alliance')
+local guide = WoWPro:RegisterGuide('ShadowDraenor', "Leveling", 'Shadowmoon Valley@Draenor', 'Fluclo', 'Alliance')
 WoWPro:GuideLevels(guide,90,92,90)
 WoWPro:GuideNextGuide(guide, 'LudoGorgrond')
 WoWPro:GuideSteps(guide, function()
