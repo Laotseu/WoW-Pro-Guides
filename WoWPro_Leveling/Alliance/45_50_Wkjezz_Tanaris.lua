@@ -218,15 +218,15 @@ C Chicken of the Desert|QID|24933|US|M|58.14,59.84|N|Finish gathering Hyena Chun
 T Chicken of the Desert|QID|24933|M|55.60,60.80|N|Woo hoo! To Zeke Bootscuff.|
 A A Great Idea|QID|24951|M|55.60,60.80|N|From Zeke Bootscuff.|
 T Gazer Tag|QID|24931|M|55.27,60.19|N|To Narain Soothfancy.|
-C A Great Idea|QID|24951|U|52031|M|54.48,64.19|N|Look for the big fat beetle, they are usually accompanied by a tiny little one. Throw the bait and WALK back. Do not mount, this will de-spawn your bug.|
+C A Great Idea|QID|24951|NC|U|52031|M|54.48,64.19|N|Look for the big fat beetle, they are usually accompanied by a tiny little one. Throw the bait and WALK back. Do not mount, this will de-spawn your bug.|
 T A Great Idea|QID|24951|M|55.65,60.79|N|To Zeke Bootscuff.|
 
 A Just Trying to Kill Some Bugs|QID|24953|M|55.65,60.79|N|From Zeke Bootscuff.|
-R Talk to Narain Soothfancy.|QID|24953|CC|M|55.25,60.26|N|All that meat grinding was worth it, now you get to pilot a silithid!|
+C Talk to Narain Soothfancy.|QID|24953|CHAT|BUFF|72976|CC|M|55.25,60.26|N|All that meat grinding was worth it, now you get to pilot a silithid!|
 R Go here|QID|24953|CC|M|54.66,69.60|N|Go to the hole here; it's the first one you see on the way down the ramp and you will be heading south west as you enter.|
 R Then here...|QID|24593|CC|M|54.19,70.07|N|Go to the cave mouth here, and take the left fork.|
 R Then finally here...|QID|24593|CC|M|54.02,71.85|N|Into the circle room. Get in there center, and hit button 2.|
-C Just Trying to Kill Some Bugs|QID|24953|M|54.54,72.01|N|Explode!|
+C Just Trying to Kill Some Bugs|QID|24953|NC|M|54.54,72.01|N|Explode!|
 T Just Trying to Kill Some Bugs|QID|24953|M|55.65,60.83|N|To Zeke Bootscuff.|
 A Land's End|QID|25061|M|55.31,60.30|N|From Narain Soothfancy.|
 A Find OOX-17/TN!|QID|351|O|U|8623|N|By now you should be high enough level to handle the Beacon quest. This is why I have pathed this guide like this up until now, giving you more chance to loot the Beacon. If you have not had the beacon drop please skip this step.|

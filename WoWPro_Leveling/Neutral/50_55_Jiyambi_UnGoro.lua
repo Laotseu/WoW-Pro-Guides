@@ -90,7 +90,7 @@ A The Scent of Lar'korwi|RANK|2|QID|24732|PRE|24731|M|71.20,76.46|N|From Torwa P
 T Claws of White|QID|24719|M|70.76,76.39|N|To Garl Stormclaw.|
 
 A Carried on the Waves|QID|24686|PRE|24719|M|70.76,76.39|N|From Garl Stormclaw.|
-C Carried on the Waves|QID|24686|T|Bloodpetal Seed;use item:50441|U|50441|M|73.13,62.00|N|Get into the river and swim north, looking for tiny orange spores under the water. Use the net when you are near them to gather them.|
+C Carried on the Waves|QID|24686|NC|T|Bloodpetal Seed;use item:50441|U|50441|M|73.13,62.00|N|Get into the river and swim north, looking for tiny orange spores under the water. Use the net when you are near them to gather them.|
 C The Scent of Lar'korwi|QID|24732|M|71.48,60.17;67.42,60.68;67.01,62.55;66.61,66.62;67.31,72.94|CN|N|Look for nests. Once you stand on them, a Mate will appear - kill and loot it.|
 T Carried on the Waves|QID|24686|M|71.04,76.62|N|To Garl Stormclaw.|
 A Flowing to the North|QID|24689|PRE|24686|M|71.04,76.62|N|From Garl Stormclaw.|
@@ -111,7 +111,7 @@ A Is This Stuff Still Good?|QID|24865|M|68.59,36.41|N|From a crate at an abandon
 C Aberrant Flora|QID|24855|M|64.99,29.42|N|Kill Lashers in the Roiling Gardens area.|US|
 T Aberrant Flora|QID|24855|M|76.43,48.30|N|Back to Ithis Moonwarden.|
 A The Eastern Pylon|QID|24721|PRE|24855|M|76.91,49.16|N|From Ithis Moonwarden.|
-C The Eastern Pylon|QID|24721|NC|M|77.26,50.03|N|Ithis will teleport you up to the little ridge. The pylon is on your right. Just right-click it.|
+C The Eastern Pylon|QID|24721|CHAT|M|77.26,50.03|N|Ithis will teleport you up to the little ridge. The pylon is on your right. Just right-click it.|
 T The Bait for Lar'korwi|RANK|2|QID|24733|M|71.20,76.52|N|Back down to Torwa Pathfinder.|
 l Blue Crystals|NC|US|L|11184 7|QID|24720|N|Loot 7 blue crystals from the big crystal nodes in this part of the zone.|
 
@@ -128,7 +128,7 @@ T The Eastern Pylon|QID|24721|M|54.27,62.56|N|To J.D. Collie.|
 A Crystals of Power|QID|24720|M|54.27,62.56|N|From J.D. Collie.|
 h Marshal's Stand|QID|24697|M|55.31,62.26|N|If you'd like, set your hearth at Innkeeper Dreedle.|
 A How to Make Meat Fresh Again|RANK|2|QID|24697|M|55.09,60.52|N|From Nolen Tacker.|
-C How to Make Meat Fresh Again|RANK|2|QID|24697|U|50430|M|53.83,60.86|N|Use the meat on the nearby Diemetrodons, and have them chase you into the pit.|
+C How to Make Meat Fresh Again|RANK|2|QID|24697|NC|U|50430|M|53.83,60.86|N|Use the meat on the nearby Diemetrodons, and have them chase you into the pit.|
 T How to Make Meat Fresh Again|RANK|2|QID|24697|M|55.00,60.54|N|To Nolen Tacker.|
 C Volcanic Activity|QID|24740|M|48.57,48.34|S|N|Kill and loot elementals.|
 C Finding the Source|QID|24742|NC|U|12472|M|56.23,56.75;47.57,55.59;45.48,48.38;48.40,43.67;55.13,43.34|CN|N|Circle the volcano, checking the different hot spots until you find the hottest one.|
@@ -200,7 +200,7 @@ T The Apes of Un'Goro|QID|24717|M|43.20,41.19|N|To Gremix.|
 A The Northern Pylon|QID|24722|PRE|24717|M|43.20,41.19|N|From Gremix.|
 T The Mighty U'cha|QID|24718|M|43.20,41.19|N|To Gremix.|
 T Gormashh the Glutinous|QID|24699|M|43.09,41.32|N|To Tara.|
-C The Northern Pylon|QID|24722|NC|M|56.47,12.44|N|Head back to the northern wall of the crater and right-click the northern pylon.|
+C The Northern Pylon|QID|24722|CHAT|M|56.47,12.44|N|Head back to the northern wall of the crater and right-click the northern pylon.|
 H Marshal's Stand|QID|24722|M|54.79,63.90|N|Hearth back to Marshall's Stand. Or ride back if it is down, or if you didn't set your hearth there.|
 
 A Adventures in Archaeology|QID|24698|PRE|24717|M|55.09,60.59|N|From Nolen Tacker.|
@@ -240,7 +240,7 @@ A A Tale of Two Shovels|QID|24709|M|31.86,50.30|N|From Spark Nilminer.|
 K Durrin Direshovel|QID|24709|T|Durrin Direshovel|M|37.62,81.63|N|Durrin patrols the area on a raptor.|
 T A Tale of Two Shovels|QID|24709|M|31.89,50.39|N|Back to Spark Nilminer.|
 A The Western Pylon|QID|24723|M|31.89,50.39|N|From Spark Nilminer.|
-C The Western Pylon|QID|24723|NC|M|23.48,49.98|N|Right-click the western pylon, at the crater wall to the west.|
+C The Western Pylon|QID|24723|CHAT|M|23.48,49.98|N|Right-click the western pylon, at the crater wall to the west.|
 C Crystals of Power|NC|US|QID|24720|M|31.16,77.41|N|Loot 7 red crystals from the big crystal nodes in this part of the zone.|QO|Red Power Crystal: 7/7|
 H Marshal's Stand|QID|24866|M|54.79,63.90|N|Hearth back to Marshall's Stand. Or ride back if it is down, or if you didn't set your hearth there.|
 T An Abandoned Research Camp|QID|24866|M|54.99,62.19|N|To Hol'anyee Marshal.|
