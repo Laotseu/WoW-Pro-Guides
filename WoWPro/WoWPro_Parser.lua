@@ -2,9 +2,10 @@
 --      WoWPro_Parser      --
 -----------------------------
 
-local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+local _G = getfenv(0)
 local WoWPro = _G.WoWPro
 local _ = _G._
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
 	
 local L = WoWPro_Locale
 WoWPro.actiontypesorder = { "A", "C", "T", "K", "R", "H", "h", "F", "f", "N", "B", "b", "U", "L", "l", "r", "noncombat", "chat", "acceptdaily", "turnindaily" }

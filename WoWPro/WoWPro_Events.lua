@@ -2,6 +2,9 @@
 --  WoWPro_Events.lua   --
 --------------------------
 
+local _G = getfenv(0)
+local WoWPro = _G.WoWPro
+
 local L = WoWPro_Locale
 
 local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
