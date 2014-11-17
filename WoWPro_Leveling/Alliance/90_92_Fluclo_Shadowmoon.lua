@@ -93,7 +93,7 @@ T Looking for Lumber |QID|34584|N|From Baros Alexston|M|29.0,16.2|
 T Ravenous Ravens |QID|34616|N|From Baros Alexston|M|29.0,16.2|
 
 A Quakefist |QID|34585|N|From Yrel|M|28.9,16.4|PRE|34584+34616|
-C Quakefist |QID|34585|N|Kill Quakefist, who can be found inside the cave.|M|30.1,21.8|T|Quakefist|
+K Quakefist |QID|34585|T|Quakefist|N|Kill Quakefist, who can be found inside the cave.|M|30.1,21.8|
 T Quakefist |QID|34585|N|To Yrel|M|28.9,16.4|
 
 A Establish Your Garrison|QID|34586|N|From Baros Alexston|M|29.0,16.2|PRE|34585|
@@ -111,11 +111,11 @@ C Keeping it Together |QID|35176|N|Head to Shelly Harnby (outside the garrison) 
 
 C Pale Moonlight |QID|35174|N|Kill and loot the Pale Devourers|S|QO|2|
 C Ship Salvage|QID|35166|N|Loot the Drudgeboat Salvage from the floor, or kill and loot the Pale Devourers and Shadowmoon Darters.|S|NC|
-C Pale Moonlight |QID|35174|N|Head down to Eventide Landing and kill Gnaw Bloodseeker|QO|1|M|25.5,5.5|T|Gnaw Bloodseeker|
+K Gnaw Bloodseeker |QID|35174|N|Head down to Eventide Landing and kill Gnaw Bloodseeker|QO|1|M|25.5,5.5|T|Gnaw Bloodseeker|
 l Fantastic Fish |QID|34174|N|Fantastic Fish: Lootable object for Garrison Resources and 10k XP|M|26.50,5.68|RANK|3|
 l Sunken Treasure |QID|35279|N|Sunken Treasure: Lootable object for Garrison Resources and 10k XP, located in the water under the ship.|M|28.83,7.18|RANK|3|
 l Stolen Treasure |QID|35280|N|Stolen Treasure: Lootable object for Garrison Resources and 10k XP, located in Paletide Den.|M|27.04,2.49|RANK|3|
-C Treasure: Ship Salvage|QID|35166|N|Finish looting the Drudgeboat Salvage from the floor, or kill and loot the Pale Devourers and Shadowmoon Darters.|US|NC|M|26.5,6.5|
+C Ship Salvage|QID|35166|N|Finish looting the Drudgeboat Salvage from the floor, or kill and loot the Pale Devourers and Shadowmoon Darters.|US|NC|M|26.5,6.5|
 C Pale Moonlight |QID|35174|N|Finish killing the Pale Devourers|US|QO|2|M|26.5,6.5|
 
 T Pale Moonlight |QID|35174|N|To Vindicator Maraad\n\nUse your Garrison Hearthstone to get back to the garrison.|U|110560|M|44.0,53.5|Z|Lunarfall|
@@ -141,18 +141,18 @@ T Delegating on Draenor |QID|34692|N|To Lieutenant Thorn|M|40.3,53.6|Z|Lunarfall
 A Migrant Workers |QID|34778|N|From Vindicator Maraad|PRE|34692|M|44.0,53.5|Z|Lunarfall|
 C Migrant Workers |QID|34778|N|Speak with Zipfizzle and tell him to Move Out.|CHAT|M|44.2,51.0|Z|Lunarfall|
 
-A Hero's Welcome |QID|33075|N|From Yrel|PRE|34692|M|47.2,50.9|Z|Lunarfall|
+A A Hero's Welcome |QID|33075|N|From Yrel|PRE|34692|M|47.2,50.9|Z|Lunarfall|
 
 A Wanted: Kuu'rat's Tusks |QID|33833|N|From the notice board in Moonflower Valley. This is a 3-party group quest.|M|33.2,30.7|RANK|3|
 C Wanted: Kuu'rat's Tusks |QID|33833|N|Kill Kuu'rat, and loot the tusks. This is flagged as a 3-party group quest but can be solo'd by many. Don't forget to use your newly acquired Call to Arms to aid you in the battle.|M|34.6,26.9|RANK|3|
 T Wanted: Kuu'rat's Tusks |QID|33833|N|To Eremor in Embaari Village|RANK|3|M|45.5,37.7|
 
 f Embaari Village |QID|33075|N|With Eonor|M|45.7,38.8|
-C Hero's Welcome |QID|33075|N|Find Samaara at Embaari Village|M|46.1,38.9|NC|
-T Hero's Welcome |QID|33075|N|To Samaara|M|46.1,38.9|
+C A Hero's Welcome |QID|33075|N|Find Samaara at Embaari Village|M|46.1,38.9|NC|
+T A Hero's Welcome |QID|33075|N|To Samaara|M|46.1,38.9|
 A Dark Enemies |QID|33765|N|From Samaara|M|46.1,38.9|PRE|33075|
 
-h Lamplighter Inn|QID|33813|N|Set your hearthstone to Lamplighter Inn in Embaari Village.|
+h Lamplighter Inn|QID|33813|M|46.7,41.0|N|Set your hearthstone to Lamplighter Inn in Embaari Village.|
 
 A Think of the Children! |QID|33070|N|From Efee|M|46.6,37.7|PRE|33075|
 A Closing the Door |QID|33905|N|From Vindicator Tenuum|M|46.6,37.3|PRE|33075|
@@ -245,7 +245,7 @@ C Circle the Wagon |QID|34779|N|Defend the wagon from the Shadowmoon Raiders|M|5
 C Circle the Wagon |QID|34779|N|Follow Maraad through Saraah's Vale and Elodor Fields. There will be two ambushes during the escort.|QO|3|CN|M|52.50,30.28;53.82,32.12;55.97,32.82|
 T Circle the Wagon |QID|34779|N|To Exarch Akama|M|55.97,32.82|
 
-A Invisible Ramparts |QID|34780|N|From Exarch Hataaru|M|55.97,32.82|PRE|34779|
+A Invisible Ramparts |QID|34780|N|From Exarch Hataaru|M|56.2,32.6|PRE|34779|
 N Charged Resonance Crystal |QID|34780|N|Pick up a Charged Resonance Crystal|BUFF|161644|M|56.8,34.2|NC|ACTIVE|34780|
 C Primary Pilon |QID|34780|N|Carry the crystal to primary pylon|QO|1|M|56.2,32.8|NC|
 C Secondary Pylon |QID|34780|N|Pick up a second Charged Resonance Crystal, and carry the crystal to secondary pylon|QO|2|M|56.6,33.1|NC|
@@ -290,15 +290,15 @@ T The Sting |QID|34790|N|To Rangari Chel|M|56.7,23.0|
 T Fun with Fungus |QID|34784|N|To Exarch Naielle|M|56.5,23.5|
 
 T Hataaru, the Artificer |QID|34785|N|To Exarch Hataaru outside the Elodor Dig|M|61.9,29.7|
-A Shut'er Down |QID|35070|N|From Exarch Hataaru|PRE|34785|M|61.9,29.7|
+A Shut 'er Down |QID|35070|N|From Exarch Hataaru|PRE|34785|M|61.9,29.7|
 A Engorged Goren |QID|34786|N|From Apprentice Artificer Andren|M|61.9,29.1|PRE|34782|
 
 C Engorged Goren |QID|34786|N|Kill and loot the Crystalmaw Goren and Spitters until you have 20 Crystallized Goren Scales|S|M|63.5,26.3|
-C Shut'er Down |QID|35070|N|Disable the Crystal with the Override Level|NC|M|64.4,26.2|
+C Shut 'er Down |QID|35070|N|Disable the Crystal with the Override Level|NC|M|64.4,26.2|
 C Engorged Goren |QID|34786|N|Finish killing and looting the Crystalmaw Goren and Spitters until you have 20 Crystallized Goren Scales|US|M|63.5,26.3|
 
 T Engorged Goren |QID|34786|N|To Apprentice Artificer Andren|M|61.9,29.1|
-T Shut'er Down |QID|35070|N|To Exarch Hataaru|M|61.9,29.7|
+T Shut 'er Down |QID|35070|N|To Exarch Hataaru|M|61.9,29.7|
 A Exarch Maladaar |QID|34787|N|From Exarch Akama|M|61.9,29.6|PRE|35070|
 
 T Exarch Maladaar |QID|34787|N|To Exarch Maladaar on Fey Landing.|CN|M|59.53,29.14;59.5,30.4|
@@ -360,11 +360,11 @@ A Fiona's Solution|QID|33787|M|53.60,57.27|N|From Fiona.|
 A Swamplighter Queen|QID|33808|M|53.60,57.27|N|From Fiona.|
 
 C Wanted: Maa'run's Hoof |QID|33836|N|Kill and loot Maa'run for her hoof. This is a 3-party group quest.|RANK|3|M|51.8,54.4|
-C Swamplighter Queen|QID|33808|N|Head into Swamplight Cave, then kill and loot Swamplighter Queen for her tail.|M|51.5,55.6|
+C Fiona's Solution|QID|33787|N|Kill and loot the Swamplighter Drones for the Swamplighter Venom (note, venom does NOT drop from the Workers)|QO|2|S|M|51.8,58.5|
+K Swamplighter Queen|QID|33808|T|Swamplighter Queen|N|Head into Swamplight Cave, then kill and loot Swamplighter Queen for her tail.|M|51.5,55.6|
 
 C Fiona's Solution|QID|33787|N|Pick up the Moonlit Herb from the ground of Swamplight Trail.|QO|4|M|51.8,58.5|NC|S|
 C Fiona's Solution|QID|33787|N|Kill and loot the Riot Blossom|QO|3|S|M|51.8,58.5|
-C Fiona's Solution|QID|33787|N|Kill and loot the Swamplighter Drones for the Swamplighter Venom (note, venom does NOT drop from the Workers)|QO|2|S|M|51.8,58.5|
 C Fiona's Solution|QID|33787|N|Kill and loot Twilight Riverbeast for the Heart.|QO|1|M|51.8,58.5|
 C Fiona's Solution|QID|33787|N|Pick up the Moonlit Herb from the ground of Swamplight Trail.|QO|4|M|51.8,58.5|NC|US|
 C Fiona's Solution|QID|33787|N|Finish killing and looting Twilight Riverbeast for the Heart.|QO|1|M|51.8,58.5|
@@ -374,7 +374,7 @@ C Fiona's Solution|QID|33787|N|Finish killing and looting the Riot Blossom|QO|3|
 T Fiona's Solution|QID|33787|M|53.59,57.30|N|To Fiona.|
 T Swamplighter Queen|QID|33808|M|53.59,57.30|N|To Fiona.|
 A Cooking With Unstable Herbs|QID|33788|M|53.59,57.30|N|From Fiona.|PRE|33787;33808|
-C Cooking With Unstable Herbs|QID|33788|QO|1|N|Speak with Fiona|CHAT|M|53.59,57.30|
+C Cooking With Unstable Herbs|QID|33788|QO|1|T|Fiona|N|Speak with Fiona|CHAT|M|53.59,57.30|
 C Cooking With Unstable Herbs|QID|33788|QO|2|N|Follow Fiona's steps to complete the elixir.\n\nNice Glow = Moonlit Herb\nSomething Meaty = Riverbeast Heart\nWriggle Around = Riotvine\nDangerous and Toxic = Swamplighter Venom|NC|M|53.59,57.30|
 C Cooking With Unstable Herbs|QID|33788|QO|3|N|Click to use the elixir on Gidwin Goldbraids.|NC|
 T Cooking With Unstable Herbs|QID|33788|M|53.59,57.30|N|To Fiona.|
@@ -401,7 +401,7 @@ A Gestating Genesaur|QID|35015|M|55.67,71.98|N|From Rangari Arepheon.|PRE|35014|
 C Gestating Genesaur|QID|35015|M|56.1,73.1|N|Kill Blooming Genesaur|
 T Gestating Genesaur|QID|35015|M|55.67,71.98|N|To Rangari Arepheon.|
 
-C Poison Paralysis|QID|35006|NC|N|Find and cure Argus Highbeacon|QO|2|M|56.8,70.4|
+C Poison Paralysis|QID|35006|CHAT|N|Find and cure Argus Highbeacon|QO|2|M|56.8,70.4|
 C Poison Paralysis|QID|35006|NC|N|Find and cure Rimblat Earthshatter|QO|1|M|55.1,68.1|
 
 C Slumberbloom|QID|34997|M|53.3,65.7|N|Finish destroying the Slumberblooms by using the Gathered Pebbles on them.|NC|US|
@@ -434,10 +434,10 @@ C Loola's Lost Love |QID|34876|N|Click on the loose mud to seach it|NC|S|M|45.0,
 C A Grandmother's Remedy |QID|33077|N|Click on the Belly Toad to squeeze a Vial of Toad Juice|S|NC|M|45.0,51.0|
 
 A Rangari Roundup |QID|34897|N|From Rangari Navra.\nNote: You will have to click Rangari Navra for the quest to be made available.|M|43.7,51.7|T|Rangari Navra|
-C Rangari Roundup |QID|34897|N|Find Hidden Rangari|S|NC|
+C Rangari Roundup |QID|34897|N|Find Hidden Rangari|S|CHAT|
 C The Clarity Elixir |QID|33076|N|Collect the Pristine Star Lily, this can be found inside the tree in Nightmarsh.|QO|3|NC|M|47.3,52.1|
 
-C Rangari Roundup |QID|34897|N|Finish finding the Hidden Rangari|US|NC|CN|M|47.1,53.1;46.4,51.6;45.0,50.4;44.8,51.2;43.9,52.7|
+C Rangari Roundup |QID|34897|N|Finish finding the Hidden Rangari|US|CHAT|CN|M|47.1,53.1;46.4,51.6;45.0,50.4;44.8,51.2;43.9,52.7|
 C A Grandmother's Remedy |QID|33077|N|Finish squeezing the Vial of Toad Juice out of the Belly Toads.|US|NC|M|45.0,51.0|
 C Loola's Lost Love |QID|34876|N|Finish searching the loose mud|NC|US|M|45.0,51.0|
 C Engorged Heart |QID|33076|N|Finish killing and looting the Echidnian Hydra for their Engorged Heart|QO|2|US|M|45.0,51.0|
@@ -536,7 +536,7 @@ C The Clothes on Their Backs|QID|36266|N|Finish killing and loot the Shadowmoon 
 C On the Offensive|QID|33083|N|Finish killing the Shadowmoon Forces|US|
 
 A Wanted: Kliaa's Stinger|QID|33834|N|From the poster in Bloodthorn Hill. This is a 3-party group quest.|M|26.40,32.84|RANK|2|
-C Wanted: Kliaa's Stinger|QID|33834|N|Kill and loot Kliaa for her Massive Stinger|M|24.61,36.34|RANK|2|
+K Kliaa |QID|33834|T|Kliaa|N|Kill and loot Kliaa for her Massive Stinger|M|24.61,36.34|RANK|2|
 
 R Bloodthorn Cave |QID|33419|N|Head to Bloodthorn Cave.|M|24.03,33.06|
 A A Matter of Life and Death|QID|33419|N|From Roona in the Bloodthorn Cave.|M|23.09,32.97|
@@ -644,7 +644,7 @@ T Captured Critters|QID|33331|N|Auto-Complete|
 C Prune the Podlings|QID|34806|M|47.05,14.39|N|Finish killing Podlings|US|
 T Prune the Podlings|QID|34806|M|47.05,14.39|N|Auto-Complete|
 
-C Game of Thorns|QID|33271|N|Follow the path up to King Deathbloom, and kill him.|M|37.89,21.07;35.7,19.7|CN|
+K King Deathbloom|QID|33271|T|King Deathbloom|N|Follow the path up to King Deathbloom, and kill him.|M|37.89,21.07;35.7,19.7|CN|
 T Game of Thorns|QID|33271|N|To Shelly Hamby|M|36.4,19.3|
 A Shelly Hamby |QID|35625|N|From Shelly Hamby|M|36.4,19.3|PRE|33271|
 T Shelly Hamby |QID|35625|N|From Shelly Hamby|M|36.4,19.3|
@@ -675,11 +675,11 @@ C Inspiring Ashran |QID|36629|N|Speak with Knewbie McGreen|M|44.29,89.37|Z|Ashra
 C Inspiring Ashran |QID|36629|N|Speak with Vindicator Nuurem|M|40.74,97.09|Z|Ashran|QO|3|CHAT|
 T Inspiring Ashran |QID|36629|N|To Lieutenant Howell|M|38.30,96.88|Z|Ashran|
 
-A Surly Dwarf |QID|36630|N|From Lieutenant Howell|M|38.30,96.88|Z|Ashran|PRE|36629|
-T Surly Dwarf |QID|36630|N|To Delvar Ironfist|M|41.05,86.93|Z|Ashran|
+A A Surly Dwarf |QID|36630|N|From Lieutenant Howell|M|38.30,96.88|Z|Ashran|PRE|36629|
+T A Surly Dwarf |QID|36630|N|To Delvar Ironfist|M|41.05,86.93|Z|Ashran|
 A Delvar Ironfist |QID|36633|N|From Delvar Ironfist|M|41.05,86.93|Z|Ashran|PRE|36630|
 
-F Lunarfall|QID|0|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36624|
+F Lunarfall|QID|34192|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|
 
 A Things Are Not Goren Our Way |QID|34192|N|From Timothy Leens|M|65.46,41.79|Z|Lunarfall|PRE|36592|
 C Things Are Not Goren Our Way |QID|34192|N|Kill the Lunarfall Goren (both Red and Yellow count).|M|65.46,41.79|Z|Lunarfall|S|QO|1|
@@ -716,7 +716,7 @@ C Your First Jewelcrafting Work Order |QID|36644|N|Collect the Jewelcrafting Wor
 T Your First Jewelcrafting Work Order |QID|36644|N|To Kurt Broadoak.|ACTIVE|36644|
 C Your First Inscription Work Order |QID|36647|N|Collect the Inscription Work Order.|QO|2|ACTIVE|36647|NC|
 T Your First Inscription Work Order |QID|36647|N|To Kaya Solasen.|ACTIVE|36647|
-T Lost in Transition |QID|37087|N|To Kyra Goldhands|ACTIVE|37087|
+T Lost in Transition |QID|37087|N|To Kyra Goldhands|
 C Your First Tailoring Work Order |QID|36643|N|Collect the Tailoring Work Order.|QO|2|ACTIVE|36643|NC|
 T Your First Tailoring Work Order |QID|36643|N|To Kaylie Macdonald.|ACTIVE|36643|
 C Your First Blacksmithing Work Order|QID|35168|N|Collect the Blacksmithing Work Order.|QO|2|ACTIVE|35168|NC|
