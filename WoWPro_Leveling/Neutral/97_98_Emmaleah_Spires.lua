@@ -35,7 +35,7 @@
 
 local guide = WoWPro:RegisterGuide('EmmSoArak', 'Leveling', 'Spires of Arak', 'Emmaleah', 'Neutral')
 WoWPro:GuideLevels(guide,96, 98, 96.7)
-WoWPro:GuideNextGuide(guide, 'nil|EmmNagrand')
+WoWPro:GuideNextGuide(guide, 'LaotseuNagrand|EmmNagrand')
 WoWPro:GuideSteps(guide, function()
 return [[
 
