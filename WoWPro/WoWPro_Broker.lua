@@ -476,7 +476,7 @@ function WoWPro:NextStep(k,i)
         		end
         		if totalFailure then
         		    skip = true
-        		    WoWPro.why[k] = ("NextStep(): None of possible prereqs were met. %|PRE%|%s%|"):format(WoWPro.prereq[k])
+        		    WoWPro.why[k] = ("NextStep(): None of possible prereqs were met. ||PRE||%s||"):format(WoWPro.prereq[k])
         		    WoWProCharDB.Guide[GID].skipped[k] = true
         		    if WoWPro.action[k] == "A" then
         		    	WoWProCharDB.skippedQIDs[QID] = true
@@ -681,9 +681,10 @@ function WoWPro:NextStep(k,i)
 				    WoWProCharDB.Guide[GID].skipped[k] = true
 				    WoWProCharDB.skippedQIDs[QID] = true
 				    WoWPro:dbp("Prof permaskip qid %s for no %s",WoWPro.QID[k],prof)
+				    skip = true
 				elseif skip == true then
 					-- Skipping the line because the profession requirements are not met
-					WoWPro.why[k] = ("NextStep(): skipping step because profession requirements not met for |P|%s|."):format(WoWPro.prof[k])
+					WoWPro.why[k] = ("NextStep(): skipping step because profession requirements not met for ||P||%s||."):format(WoWPro.prof[k])
 					WoWProCharDB.Guide[GID].skipped[k] = true
 				end
 			else
