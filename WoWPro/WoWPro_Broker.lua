@@ -476,7 +476,7 @@ function WoWPro:NextStep(k,i)
         		end
         		if totalFailure then
         		    skip = true
-        		    WoWPro.why[k] = ("NextStep(): None of possible prereqs were met. |PRE|%s|"):format(WoWPro.prereq[k])
+        		    WoWPro.why[k] = ("NextStep(): None of possible prereqs were met. %|PRE%|%s%|"):format(WoWPro.prereq[k])
         		    WoWProCharDB.Guide[GID].skipped[k] = true
         		    if WoWPro.action[k] == "A" then
         		    	WoWProCharDB.skippedQIDs[QID] = true
