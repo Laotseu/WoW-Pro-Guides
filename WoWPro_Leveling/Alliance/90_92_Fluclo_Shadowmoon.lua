@@ -237,7 +237,7 @@ A The Southern Wilds |QID|35444|N|From Farmer Gehaar|CN|M|49.08,37.25;49.1,38.6|
 
 ; The next 7 blocks of quests are dependant upon which profession item(s) you have looted from Karnoth.
 H Lunarfall |QID|33814|N|Use your Garrison Hearthstone, or fly back to your garrison.|U|110560|ACTIVE|35342|
-T The Mysterious Flask|QID|35342|M|47.69,45.39|Z|Lunarfall|N|To Aenir.|ACTIVE|35342|
+T The Mysterious Flask|QID|35342|M|47.69,45.39|Z|Lunarfall|N|To Aenir.|
 A The Young Alchemist|QID|35343|M|47.69,45.39|Z|Lunarfall|N|From Aenir.|PRE|35342|
 F Embaari Village |QID|35343|N|Fly back to Embaari Village|ACTIVE|35343|
 
