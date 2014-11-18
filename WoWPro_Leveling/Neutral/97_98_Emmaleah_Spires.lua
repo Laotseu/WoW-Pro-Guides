@@ -118,9 +118,9 @@ T Inspecting the Troops|QID|35275|M|40.06,44.04|N|To Shadow Hunter Ukambe.|FACTI
 A Orders, Commander?|QID|35277|M|40.19,43.46|N|From Taskmaster Gornek.|FACTION|Horde|PRE|35275|
 C Orders, Commander?|QID|35277|M|40.17,43.39|NC|N|Pick your outpost.|FACTION|Horde|
 T Orders, Commander?|QID|35277|M|40.18,43.51|N|To Taskmaster Gornek.|FACTION|Horde|
-A Outpost specific quest|QID|37326;35697|M|40.19,43.46|N|The quest (and quest giver) is determined by which building you choose. It is from Taskmaster Gornek (brewery) or Provisioner Galgar(smugglers den}.|FACTION|Horde|PRE|35277|
-;A Peace Offering|QID|35697|M|40.05,43.18|N|From Provisioner Galgar.|-- smugglers den
-;A Befriending the Locals|QID|37326|N|From Taskmaster Gornek -- brewery
+;A Outpost specific quest|QID|37326;35697|M|40.19,43.46|N|The quest (and quest giver) is determined by which building you choose. It is from Taskmaster Gornek (brewery) or Provisioner Galgar(smugglers den}.|FACTION|Horde|PRE|35277|
+A Peace Offering|QID|37326;35697|M|40.05,43.18|N|From Provisioner Galgar.|-- smugglers den
+A Befriending the Locals|QID|37326;35697|N|From Taskmaster Gornek -- brewery
 
 A Wanted: Keeho's Severed Paw|QID|35674|M|39.46,61.66|N|From Wanted Poster inside the building.|FACTION|Alliance|PRE|35286|
 A Wanted: Spineslicer's Husk|QID|35675|M|39.46,61.66|N|From Wanted Poster.|FACTION|Alliance|PRE|35286|
@@ -145,16 +145,16 @@ A I See Dead People|QID|35329|M|39.13,48.95|N|From Jasper Fel.|FACTION|Alliance|
 A I See Dead People|QID|35322|M|39.13,48.95|N|From Shadow Hunter Ukambe.|FACTION|Horde|PRE|35295|
 
 C I See Dead People|QID|35322;35329|QO|1|M|39.01,48.72|N|Kill the spectres outside the garrison until the plans drop.|
-C I See Dead People|QID|35322;35329|QO|2|M|39.01,48.72|NC|
+C I See Dead People|QID|35322;35329|QO|2|M|39.01,48.72|CHAT|N|From Bryan Finn.|
 T I See Dead People|QID|35322;35329|M|39.01,48.72|N|To Bryan Finn.|
 A A Parting Favor|QID|35339|M|39.01,48.72|N|From Bryan Finn.|PRE|35222+35329|
 C A Parting Favor|QID|35339|QO|1|M|37.68,51.13|S|N|Kill the spectres inside the garrison until you have enough essence.|
 A Three Feet Under|QID|36864|M|35.80,52.20|N|Help Gibb out and he will follow you for life. From Benjamin Gibb.|FACTION|Horde|
 C A Parting Favor|QID|35339|QO|1|M|37.68,51.13|US|N|Kill the spectres inside the garrison until you have enough essence.|
-C A Parting Favor|QID|35339|QO|2|M|37.68,51.13|NC|N|Alice is upstairs.|
+C A Parting Favor|QID|35339|QO|2|M|37.68,51.13|CHAT|N|Alice is upstairs.|
 T A Parting Favor|QID|35339|M|37.67,51.13|N|To Alice Finn.|
 A A Piece of the Puzzle|QID|35353|M|37.67,51.13|N|From Alice Finn.|PRE|35339|
-C A Piece of the Puzzle|QID|35353|M|37.73,51.01|N|He is in the basement.|T|Horrific Aberration|
+K Watch Commander Dranson|QID|35353|M|37.73,51.01|N|He is in the basement.|T|Watch Commander Dranson|
 T A Piece of the Puzzle|QID|35353|M|37.51,50.76|N|To Alice Finn (she is waiting for you in the kitchen).|
 A Second in Command|QID|35380|M|37.55,50.76|N|From Alice Finn.|PRE|35353|
 T Second in Command|QID|35380|M|37.70,53.81|N|To Sir Harris.|
@@ -165,28 +165,28 @@ C Prime the Cannons|QID|35408|NC|QO|1|M|37.01,52.45|S|
 C Prime the Cannons|QID|35408|NC|QO|2|M|36.42,53.55|
 C Prime the Cannons|QID|35408|NC|QO|1|M|37.01,52.45|US|
 C Punishable by Death|QID|35407||M|35.58,52.84|US|
-T Punishable by Death|QID|35407|M|37.70,53.81|N|To Sir Harris.|
-T Prime the Cannons|QID|35408|M|37.65,53.87|N|To Lady Claudia.|
-A Admiral Taylor|QID|35482;36183|M|37.65,53.89|N|From Lady Claudia.|PRE|35407;35408|
+T Punishable by Death|QID|35407|M|37.7,53.8|N|To Sir Harris.|
+T Prime the Cannons|QID|35408|M|37.7,53.9|N|To Lady Claudia.|
+A Admiral Taylor|QID|35482;36183|M|37.7,53.9|N|From Lady Claudia.|PRE|35407;35408|
 C Admiral Taylor|QID|35482;36183|M|36.83,57.30|N|Wait for a short scene, then kill the bad guys.|
 T Admiral Taylor|QID|35482;36183|M|36.82,56.92|N|To Admiral Taylor.|
 A Honoring a Hero|QID|35549|M|36.8,56.8|N|From Jasper Fel.|FACTION|Alliance|PRE|35482|
 A Surviving in a Savage Land|QID|35550|M|36.86,56.74|N|From Shadow Hunter Ukambe.|FACTION|Horde|PRE|36183|
-H Southport|QID|35549|M|36.8,56.8|FACTION|Alliance|PRE|35482|
+H Southport|QID|35549|M|40.1,61.5|FACTION|Alliance|PRE|35482|
 H Axefall|QID|35550|M|36.86,56.74|FACTION|Horde|PRE|36183|
 
-T Honoring a Hero|QID|35549|M|36.88,60.04|N|To Lieutenant Willem.|FACTION|Alliance|
+T Honoring a Hero|QID|35549|M|39.8,60.8|N|To Lieutenant Willem.|FACTION|Alliance|
 A For Old Times Sake|QID|36353|M|39.98,60.65|N|To/From Admiral Taylor who wants to come join your garrison forces.|FACTION|Alliance|PRE|35549|
 T Surviving in a Savage Land|QID|35550|M|40.18,43.50|N|To Taskmaster Gornek.|FACTION|Horde|
 
 f Southport|QID|35293|M|39.78,61.87;39.08,61.79|CS|N|At Firn Swiftbreeze.|FACTION|Alliance|
-F Veil Terokk|QID|37296|M|39.08,61.80|N|At Firn Swiftbreeze.|FACTION|Alliance|ACTIVE|37296|
-F Veil Terokk|QID|37327|M|39.53,43.36|N|At Hutou Featherwind.|FACTION|Horde|ACTIVE|37297|
-t Befriending the Locals|QID|37326;37327|M|43.90,48.90|N|To Dusk-Seer Irizzar.|
+F Veil Terokk|QID|37326|M|39.08,61.80|N|At Firn Swiftbreeze.|FACTION|Alliance|ACTIVE|37326|
+F Veil Terokk|QID|37327|M|39.53,43.36|N|At Hutou Featherwind.|FACTION|Horde|ACTIVE|37327|
+T Befriending the Locals|QID|37326;37327|M|43.90,48.90|N|To Dusk-Seer Irizzar.|
 C Peace Offering|QID|35697;35699|M|43.90,48.90|CHAT|N|Offer a peace offering to Shadow-Sage Iksar.|
-t Peace Offering|QID|35697;35699|M|43.90,48.90|N|To Dusk-Seer Irizzar.|
+T Peace Offering|QID|35697;35699|M|43.90,48.90|N|To Dusk-Seer Irizzar.|
 
-A A Lack of Wasps|QID|37296|M|43.90,48.90|N|From Dusk-Seer Irizzar.|PRE|35697+35699|
+A A Lack of Wasps|QID|37296|M|43.90,48.90|N|From Dusk-Seer Irizzar.|PRE|35697+35699+37326+37327|
 C A Lack of Wasps|QID|37296|M|44.15,47.54|
 T A Lack of Wasps|QID|37296|M|43.90,48.91|N|To Dusk-Seer Irizzar.|
 A Not Here, Not Now|QID|37328;37329;37330;37331|M|43.90,48.91|N|From Dusk-Seer Irizzar.|PRE|37296|
@@ -204,10 +204,10 @@ C Ikky's Egg|QID|34838|M|45.39,36.70|NC|N|Click on the egg to help him hatch.|
 T Ikky's Egg|QID|34838|M|45.39,36.70|N|To Ikky.|
 A Baby Bird|QID|34886|M|45.39,36.70|N|From Ikky.|PRE|34838|
 C Mother of Thorns|QID|34885|M|44.22,38.10|QO|1|S|
-C Baby Bird|QID|34886|M|44.37,37.71|NC|S|
-C Mother of Thorns|QID|34885|M|40.39,36.56|QO|2|
+C Baby Bird|QID|34886|M|44.37,37.71|NC|S|T|Ravenger Grub|
+K Shadeback Thornmother|QID|34885|M|40.39,36.56|QO|2|T|Shadeback Thornmother|
 C Mother of Thorns|QID|34885|M|44.22,38.10|QO|1|US|
-C Baby Bird|QID|34886|M|44.37,37.71|NC|US|
+C Baby Bird|QID|34886|M|44.37,37.71|NC|US|T|Ravenger Grub|
 T Baby Bird|QID|34886|M|45.40,36.69|N|To Ikky.|
 
 C Last of the Talonpriests|QID|34827|NC|U|112100|M|48.11,34.60|
@@ -231,28 +231,28 @@ T Behind the Veil|QID|34830|M|44.48,24.02|N|To Talonpriest Zellek.|
 A Blades in the Dark|QID|34882|M|44.48,24.02|N|From Talonpriest Zellek.|PRE|34830|
 A A Feast of Shadows|QID|34883|M|44.48,24.02|N|From Talonpriest Zellek.|PRE|34830|
 C A Feast of Shadows|QID|34883|M|43.46,23.37|S|N|These drop from the mobs in this area.|
-C Blades in the Dark|QID|34882|T|Malrok Thornscar|M|42.73,26.53|
+K Malrok Thornscar|QID|34882|T|Malrok Thornscar|M|42.73,26.53|
 C A Feast of Shadows|QID|34883|M|43.46,23.37|US|
 T Blades in the Dark|QID|34882|M|44.48,24.01|N|To Talonpriest Zellek.|
 T A Feast of Shadows|QID|34883|M|44.48,24.01|N|To Talonpriest Zellek.|
 A Back from Beyond|QID|34942|M|44.48,24.01|N|From Talonpriest Zellek.|PRE|34882+34883|
 A Power Unearthed|QID|35257|M|44.40,23.99|N|From Darkscryer Raastok.|PRE|34882+34883|
 
-R Apexis Excavation|QID|35257|M|36.99,24.63|N|
-f Apexis Excavation|QID|35257|M|36.99,24.63|N|At Skytalon Kuris.|
+;R Apexis Excavation|QID|35257|M|36.99,24.63|N|
+f Apexis Excavation|ALTFP|Spires of Arak|M|36.99,24.63|N|At Skytalon Kuris.|
 A Sol Sisters|QID|35259|M|36.95,24.45|N|From Kura the Blind.|
 T Power Unearthed|QID|35257|M|36.85,24.54|N|To Darkscryer Raastok.|
 A Hardly Working|QID|35260|M|36.85,24.54|N|From Darkscryer Raastok.|PRE|35257|
 A Legacy of the Apexis|QID|35258|M|36.85,24.54|N|From Darkscryer Raastok.|PRE|35257|
 C Legacy of the Apexis|QID|35258|S|M|35.34,25.86|N|The excavation has 3 levels, ground, midway up where the first Sol Sister is located, and the top where the other sol sister is and the final two quests take place.|
 C Hardly Working|QID|35260|U|113084|NC|S|M|33.51,25.39|N|The outcasts you are freeing and the apexis guardians exist on all three levels.|
-C Sol Sisters|QID|35259|QO|1|M|34.67,30.06;34.15,28.31;32.86,28.50|CS|N|When you enter the cave, you have to pass thru a room before you get to the one she is in.|
-C Sol Sisters|QID|35259|QO|2|M|33.42,25.72;32.60,26.02;32.07,25.71|CS|N|Out of the cave and continue north to the ramp up to the top level. Go north at the top level and into the cave with the other sister.|
+K Sol-Shaper Veoryx|QID|35259|QO|1|T|Sol-Shaper Veoryx|M|34.67,30.06;34.15,28.31;32.86,28.50|CS|N|When you enter the cave, you have to pass thru a room before you get to the one she is in.|
+K Sol-Shaper Krashyx|QID|35259|QO|2|T|Sol Shaper Krashyx|M|33.42,25.72;32.60,26.02;32.07,25.71|CS|N|Out of the cave and continue north to the ramp up to the top level. Go north at the top level and into the cave with the other sister.|
 T Sol Sisters|QID|35259|M|31.91,25.49|N|To Inactive Apexis Destroyer.|
 A Shot-Caller|QID|35261|M|31.91,25.49|N|From Inactive Apexis Destroyer.|PRE|35259|
 C Hardly Working|QID|35260|U|113084|NC|US|M|33.51,25.39|N|Back out of the cave and go southeast on this same level to find Overseer Akrath.|
 C Legacy of the Apexis|QID|35258|US|M|35.34,25.86|
-C Shot-Caller|QID|35261|M|33.35,30.14|T|Overseer Akrath|N|The overseer drops the apexis interface.|
+K Overseer Akrath|QID|35261|M|33.35,30.14|T|Overseer Akrath|N|The overseer drops the apexis interface.|
 T Shot-Caller|QID|35261|M|35.52,32.06|N|To Overseer's Chair.|
 A Hot Seat|QID|35273|M|35.52,32.06|N|From Overseer's Chair.|PRE|35261|
 C Hot Seat|QID|35273|NC|M|35.48,32.03|N|Hop in the chair and use the abilities to kill the Destroyers and Sol-Shapers.|
