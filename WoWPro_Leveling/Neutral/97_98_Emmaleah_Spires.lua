@@ -291,7 +291,7 @@ A Hatred Undying|QID|34999|M|61.90,42.23|N|From Kazu.|
 T Talon Watch|QID|34998|M|62.23,42.68|N|To Talon Guard Kurekk.|
 A Banished From the Sky|QID|35000|M|62.23,42.68|N|From Talon Guard Kurekk.|PRE|34998|
 C Hatred Undying|QID|34999|S|M|64.26,38.53|
-C Banished From the Sky|QID|35000|U|116977|M|64.21,39.73|
+C Banished From the Sky|QID|35000|NC|U|116977|M|64.21,39.73|
 C Hatred Undying|QID|34999|US|M|64.26,38.53|
 T Banished From the Sky|QID|35000|M|62.22,42.69|N|To Talon Guard Kurekk.|
 A Gaze of the Raven God|QID|35001|M|62.22,42.69|N|From Talon Guard Kurekk.|PRE|35000|
@@ -302,9 +302,9 @@ C Sons of Sethe|QID|35002|M|66.77,47.42|
 C Gaze of the Raven God|QID|35001|U|117396|NC|US|M|65.78,43.67|
 T Sons of Sethe|QID|35002|M|66.81,51.39|N|To the Offering Bowl.|
 T Gaze of the Raven God|QID|35001|M|66.59,51.69|N|To the stand to Place Eye of Anzu.|
-A The False Talon King|QID|35011|M|66.77,51.58|N|From Talon Guard Kurekk.|PRE|35001;35011|
-A Servants of a Dead God|QID|35004|M|66.83,51.72|N|From Anzu, (who is perched on a broken piller beside/above the alter).|PRE|35001;35011|
-A Ritual Severance|QID|35003|M|66.83,51.72|N|From Anzu.|PRE|35001;35011|
+A The False Talon King|QID|35011|M|66.77,51.58|N|From Talon Guard Kurekk.|PRE|35001|
+A Servants of a Dead God|QID|35004|M|66.83,51.72|N|From Anzu, (who is perched on a broken piller beside/above the alter).|PRE|35001|
+A Ritual Severance|QID|35003|M|66.83,51.72|N|From Anzu.|PRE|35001|
 C Servants of a Dead God|QID|35004|S|M|67.46,38.17|
 C Southern Ritual|QID|35003|QO|1|NC|M|68.96,41.76|N|Run all over the circle until you stomp it out.|
 C The False Talon King|QID|35011|M|70.16,41.17|
@@ -327,7 +327,7 @@ T A Sentimental Relic|QID|35245|M|46.50,46.66|N|To Reshad.|
 A The Missing Piece|QID|35897|M|46.50,46.66|N|From Reshad.|PRE|35245|
 T The Missing Piece|QID|35897|M|46.63,46.74|N|To Effigy of Terokk.|
 A Terokk's Fall|QID|35895|M|46.63,46.74|PRE|35897|N|From Effigy of Terokk.|
-C Find Lithic|QID|35895|NC|QO|1|M|44.63,46.74;64.06,40.43|CS|CHAT|N|Talk to the Effigy to start the scripted event.|
+C Find Lithic|QID|35895|CHAT|QO|1|M|44.63,46.74;64.06,40.43|CS|CHAT|N|Talk to the Effigy to start the scripted event.|
 C Terokk's Fall|QID|35895|QO|2;3|M|66.95,45.32|N|Use the "1" key to kill the outcasts and the "2" key to rescue the guards. Both abilites are Area of Effect.|
 C Use Anzu's Eye|QID|35895|NC|QO|4|M|66.95,45.32|
 T Terokk's Fall|QID|35895|M|46.50,46.67|N|To Reshad.|
