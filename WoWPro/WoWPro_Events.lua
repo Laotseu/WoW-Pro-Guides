@@ -59,7 +59,7 @@ function WoWPro:AutoCompleteGetFP(...)
 	for i = 1,15 do
 		local index = WoWPro.rows[i].index
 		local step =  WoWPro.step[index]
-		local altfp = WoWPro.altfp[index]
+		local altfp = WoWPro.altfp[index] and (WoWPro.altfp[index]):format(_G.UnitName("player")) -- Hack for the Draenor garisson
 		if ((... == ERR_NEWTAXIPATH and WoWPro.action[index] == "f" and (zonetext == step or (altfp and altfp == zonetext) ) or
 			 (WoWPro.action[index] == "f" and (WoWProCharDB.Taxi[step] or (altfp and WoWProCharDB.Taxi[altfp])))))
 			and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
