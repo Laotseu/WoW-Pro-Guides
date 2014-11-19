@@ -135,7 +135,7 @@ T Quakefist |QID|34585|N|To Yrel|M|28.9,16.4|
 
 A Establish Your Garrison|QID|34586|N|From Baros Alexston|M|29.0,16.2|PRE|34585|
 C Establish Your Garrison|QID|34586|N|Speak to Baros Alexston and tell him you have everything, and build the garrison.|CHAT|M|29.0,16.2|
-f Lunarfall |N|With Dungar Longdrink.  If your Arrow disappeared, a /reload or a quick look at the map will fix things.|M|47.8,49.8|Z|Lunarfall|
+f Lunarfall|ALTFP|%s's Outpost|N|With Dungar Longdrink.  If your Arrow disappeared, a /reload or a quick look at the map will fix things.|M|47.8,49.8|Z|Lunarfall|
 T Establish Your Garrison|QID|34586|N|To Baros Alexston|M|41.4,49.2|Z|Lunarfall|
 
 A Keeping it Together |QID|35176|N|From Baros Alexston|PRE|34586|M|41.4,49.2|Z|Lunarfall|
@@ -182,7 +182,7 @@ C Migrant Workers |QID|34778|N|Speak with Zipfizzle and tell him to Move Out.|CH
 A A Hero's Welcome |QID|33075|N|From Yrel|PRE|34692|M|47.2,50.9|Z|Lunarfall|
 
 A Wanted: Kuu'rat's Tusks |QID|33833|N|From the notice board in Moonflower Valley. This is a 3-party group quest.|M|33.2,30.7|RANK|3|
-C Wanted: Kuu'rat's Tusks |QID|33833|N|Kill Kuu'rat, and loot the tusks. This is flagged as a 3-party group quest but can be solo'd by many. Don't forget to use your newly acquired Call to Arms to aid you in the battle.|M|34.6,26.9|RANK|3|
+K Kuu'rat|QID|33833|T|Kuu'rat|N|Kill Kuu'rat, and loot the tusks. This is flagged as a 3-party group quest but can be solo'd by many. Don't forget to use your newly acquired Call to Arms to aid you in the battle.|M|34.6,26.9|RANK|3|
 T Wanted: Kuu'rat's Tusks |QID|33833|N|To Eremor in Embaari Village|RANK|3|M|45.5,37.7|
 
 f Embaari Village |N|With Eonor|M|45.7,38.8|
@@ -233,7 +233,7 @@ T Shadows Awaken |QID|34019|N|To Prophet Velen|CN|M|49.42,36.81;49.3,37.4|
 A Into Twilight |QID|33072|N|From Prophet Velen|CN|M|49.42,36.81;49.3,37.4||PRE|34019|
 
 ;The following quest has been seen at 49.1,38.6 and 49.08,37.25 - not yet found out why it varies (yet!)
-A The Southern Wilds |QID|35444|N|From Farmer Gehaar|CN|M|49.08,37.25;49.1,38.6|PRE|34019|
+A The Southern Wilds |QID|35444|N|From Farmer Gehaar|M|49.08,37.25;49.1,38.6|PRE|34019|
 
 ; The next 7 blocks of quests are dependant upon which profession item(s) you have looted from Karnoth.
 H Lunarfall |QID|33814|N|Use your Garrison Hearthstone, or fly back to your garrison.|U|110560|ACTIVE|35342|
