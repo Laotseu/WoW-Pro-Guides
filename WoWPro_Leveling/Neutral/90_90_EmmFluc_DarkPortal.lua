@@ -150,7 +150,7 @@ T Azeroth's Last Stand |QID|35933|N|Auto-Complete|Z|TanaanJungleIntro|
 A Onslaught's End |QID|34392|N|Auto-Accept\n\nIf you've previously abandoned this quest, you can pick it up again from Archmage Khadgar.|PRE|35933|Z|TanaanJungleIntro|
 C Disable the Southern Fel Spire |QID|34392|N|Disable the Northern Fel Spire|QO|1|NC|M|51.0, 42.0|Z|TanaanJungleIntro|;hand
 C Disable the Northern Fel Spire |QID|34392|N|Disable the Southern Fel Spire|QO|2|NC|M|51.0, 54.6|Z|TanaanJungleIntro|;hand
-T Onslaught's End |QID|34392|N|To Archmage Khadgar|M|4.73,48.26|Z|TanaanJungleIntro|
+T Onslaught's End |QID|34392|N|To Archmage Khadgar|M|54.79,48.27|Z|TanaanJungleIntro|
 
 A The Portal's Power |QID|34393|N|From Archmage Khadgar|M|54.73,48.26|PRE|34392|Z|TanaanJungleIntro|
 C The Portal's Power |QID|34393|N|Enter Gul'dan's prison, located directly underneath Archmage Khadgar. Entrances available due north and due south of Khadgar.|NC|QO|1|M|54.9,51.1|Z|TanaanJungleIntro|
@@ -172,8 +172,8 @@ A Bled Dry |QID|34421|N|From Korag|M|62.27,52.96|PRE|34420|Z|TanaanJungleIntro|F
 C Vengeance for the Fallen |QID|35242|N|Kill the Bleeding Hollow orcs.|S|M|65.7,54.0|Z|TanaanJungleIntro|FACTION|Alliance|
 C Vengeance for the Fallen |QID|35241|N|Kill the Bleeding Hollow orcs.|S|M|65.7,54.0|Z|TanaanJungleIntro|FACTION|Horde|
 C Blaze of Glory |QID|34422|N|Approach the Bleeding Hollow huts, then use Lucifrium Bead's "Inferno" to burn them.|NC|S|M|66.5,55.9|Z|TanaanJungleIntro|
-C Bled Dry |QID|35240;34421|N|Open the Southern cage.|NC|QO|2|M|61.00,62.75|Z|TanaanJungleIntro|
-C Bled Dry |QID|35240;34421|N|Open the Eastern cage.|NC|QO|1|M|65.71,54.08|Z|TanaanJungleIntro|
+C Open the Southern cage |QID|35240;34421|N|Open the Southern cage.|NC|QO|1|M|61.00,62.75|Z|TanaanJungleIntro|
+C Open the Eastern cage |QID|35240;34421|N|Open the Eastern cage.|NC|QO|2|M|65.71,54.08|Z|TanaanJungleIntro|
 C Blaze of Glory |QID|34422|N|Finish burning the Bleeding Hollow huts.|NC|US|M|63.65,50.03;66.55,55.61;61.23,62.07|CN|Z|TanaanJungleIntro|
 C Vengeance for the Fallen |QID|35242|N|Finish killing the Bleeding Hollow orcs.|US|M|63.3,64.4|Z|TanaanJungleIntro|FACTION|Alliance|
 C Vengeance for the Fallen |QID|35241|N|Finish killing the Bleeding Hollow orcs.|US|M|63.3,64.4|Z|TanaanJungleIntro|FACTION|Horde|
@@ -246,12 +246,12 @@ A Ga'nar of the Frostwolf |QID|34442|N|From Farseer Drek'Thar|PRE|34439|M|43.04,
 A The Gunpowder Plot |QID|34987|N|From Hansel Heavyhands|PRE|34439|M|44.09,29.56|Z|TanaanJungleIntro|
 A The Shadow of the Worldbreaker |QID|34958|N|From Thaelin Darkanvil|PRE|34439|M|44.06,29.67|Z|TanaanJungleIntro|
 C The Shadow of the Worldbreaker |QID|34958|N|Kill the Blackrock until one drops the Worldbreaker Schematics|S|M|43.0,35.8|Z|TanaanJungleIntro|
+C The Gunpowder Plot |QID|34987|N|Head to the end hut and loot the Blackrock Powder Keg.\nRun around and put powder everywehre, it's more fun :-).|NC|QO|1|M|46.9,32.1|Z|TanaanJungleIntro|
 T Ga'nar of the Frostwolf |QID|34442|N|To Ga'nar, who is at the other end of Blackrock Quarry|M|41.9,41.9|Z|TanaanJungleIntro|
 A Polishing the Iron Throne |QID|34925|N|From Ga'nar|M|41.9,41.9|PRE|34442|Z|TanaanJungleIntro|
 K Overseer Gotrigg |QID|34925|N|Go in the basement of the nearest building and kill Overseer Gotrigg, and loot the Shackle Key|M|45.62,39.82|T|Overseer Gotrigg|Z|TanaanJungleIntro|
 T Polishing the Iron Throne |QID|34925|N|To Ga'nar|M|41.89,42.12|Z|TanaanJungleIntro|
 A The Prodigal Frostwolf |QID|34437|N|From Ga'nar|M|41.89,42.12|PRE|34925|Z|TanaanJungleIntro|
-C The Gunpowder Plot |QID|34987|N|Head to the end hut and loot the Blackrock Powder Keg|NC|QO|1|M|46.9,32.1|Z|TanaanJungleIntro|
 C The Shadow of the Worldbreaker |QID|34958|N|Keep killing the Blackrock, one will eventually drop the Worldbreaker Schematics|US|M|43.0,35.8|Z|TanaanJungleIntro|
 C The Gunpowder Plot |QID|34987|N|Press the Makeshift Plunger between Hansel Heavyhands and Thaelin Darkanvil|NC|QO|2|M|44.0,29.7|Z|TanaanJungleIntro|
 T The Gunpowder Plot |QID|34987|N|To Hansel Heavyhands|M|44.09,29.56|Z|TanaanJungleIntro|
