@@ -99,9 +99,19 @@ end
 WoWPro:Export("Warning")
 
 -- WoWPro error function --
+local err_text_table = {}
 function WoWPro:Error(message,...)
 	if message ~= nil then
-	    local msg = string.format("|cffff7d0a%s|r: "..message, self.name or "Wow-Pro",...)
+		wipe(err_text_table)
+		for i=1,select('#', ...) do
+			local v = select(i, ...);
+			if (type(v) ~= "string") then
+				err_text_table[i] = v:gsub("[|]", "||")
+			else
+				err_text_table[i] = v 
+			end
+		end
+	    local msg = string.format("|cffff7d0a%s|r: "..message, self.name or "Wow-Pro",unpack(err_text_table))
         WoWPro:Add2Log(0,msg)
 	end
 end
