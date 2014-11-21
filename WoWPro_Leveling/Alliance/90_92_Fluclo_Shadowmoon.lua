@@ -277,6 +277,7 @@ F Embaari Village |QID|36262|N|Fly to Embaari Village|ACTIVE|36262|
 ;Regular questing resumes from this point.
 T Migrant Workers |QID|34778|N|To Foreman Zipfizzle|M|56.0,32.6|
 A Circle the Wagon |QID|34779|N|From Foreman Zipfizzle|M|56.0,32.6|PRE|34778|
+f Elodor |M|56.3,29.5;59.2,26.6;58.7,58.7,31.9|CS|N|From Vamuun.|
 
 C Circle the Wagon |QID|34779|N|Locate the missing wagon in Saraah's Vale.|NC|M|51.2,28.4|QO|1|
 C Circle the Wagon |QID|34779|N|Defend the wagon from the Shadowmoon Raiders|M|51.2,28.4|QO|2|
