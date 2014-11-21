@@ -79,14 +79,14 @@ return [[
 L Level 92 |QID|33533;35556;36632|LVL|92|N|This guide requires a minimum level of 92 to do.|
 
 F Wildwood Wash |QID|33533|N|Fly to Wildwood Wash in Gorgrond.|ACTIVE|33533|M|48.10,49.80|Z|Lunarfall|
-T The Secrets of Gorgrond |QID|33533|N|To Yrel|O|ACTIVE|33533|M|63.99,57.19|
+T The Secrets of Gorgrond |QID|33533|N|To Yrel|M|63.99,57.19|
 
 F Wildwood Wash |QID|36632|N|Fly to Wildwood Wash in Gorgrond.|ACTIVE|36632|M|48.10,49.80|Z|Lunarfall|
-T The Secrets of Gorgrond |QID|36632|N|To Yrel|O|ACTIVE|36632|M|63.99,57.19|
+T The Secrets of Gorgrond |QID|36632|N|To Yrel|36632|M|63.99,57.19|
 
-A The Secrets of Gorgrond |QID|35556|N|Visit the Hero's Callboard in your Garrison, and accept this quest.|M|42.73,44.74|Z|Lunarfall|LEAD|33533;36632|
-F Wildwood Wash |QID|35556|N|Fly to Wildwood Wash in Gorgrond.|ACTIVE|35556|M|48.10,49.80|Z|Lunarfall|
-T The Secrets of Gorgrond |QID|35556|N|To Yrel|M|63.99,57.19|ACTIVE|35556|
+A The Secrets of Gorgrond |QID|35556|N|Visit the Hero's Callboard in your Garrison, and accept this quest.|M|42.73,44.74|Z|Lunarfall|
+F Wildwood Wash |QID|35556|N|Fly to Wildwood Wash in Gorgrond.|M|48.10,49.80|Z|Lunarfall|
+T The Secrets of Gorgrond |QID|35556|N|To Yrel|M|63.99,57.19|
 
 N Welcome to Gorgrond|QID|35033|ACTIVE|35033|S|N|If you want the garrison supply treasures included in this guide, please set your Rank to 3.|
 
