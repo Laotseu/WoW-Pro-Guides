@@ -140,6 +140,7 @@
 local guide = WoWPro:RegisterGuide("TwiHollCat",'WorldEvents',"Azeroth", "Twists", "Alliance")
 WoWPro:GuideLevels(guide,1,90,45.000000)
 WoWPro.WorldEvents:GuideHoliday(guide,"HallowsEnd","Hallow's End - Cataclysm" )
+WoWPro:GuideNextGuide(guide,"LudoHallowPanA")
 WoWPro:GuideSteps(guide, function()
 return [[
 
