@@ -79,14 +79,14 @@ return [[
 L Level 92 |QID|33533;35556;36632|LVL|92|N|This guide requires a minimum level of 92 to do.|
 
 F Wildwood Wash |QID|33533|N|Fly to Wildwood Wash in Gorgrond.|ACTIVE|33533|M|48.10,49.80|Z|Lunarfall|
-T The Secrets of Gorgrond |QID|33533|N|To Yrel|O|ACTIVE|33533|M|63.99,57.19|
+T The Secrets of Gorgrond |QID|33533|N|To Yrel|M|63.99,57.19|
 
 F Wildwood Wash |QID|36632|N|Fly to Wildwood Wash in Gorgrond.|ACTIVE|36632|M|48.10,49.80|Z|Lunarfall|
-T The Secrets of Gorgrond |QID|36632|N|To Yrel|O|ACTIVE|36632|M|63.99,57.19|
+T The Secrets of Gorgrond |QID|36632|N|To Yrel|36632|M|63.99,57.19|
 
-A The Secrets of Gorgrond |QID|35556|N|Visit the Hero's Callboard in your Garrison, and accept this quest.|M|42.73,44.74|Z|Lunarfall|LEAD|33533;36632|
-F Wildwood Wash |QID|35556|N|Fly to Wildwood Wash in Gorgrond.|ACTIVE|35556|M|48.10,49.80|Z|Lunarfall|
-T The Secrets of Gorgrond |QID|35556|N|To Yrel|M|63.99,57.19|ACTIVE|35556|
+A The Secrets of Gorgrond |QID|35556|N|Visit the Hero's Callboard in your Garrison, and accept this quest.|M|42.73,44.74|Z|Lunarfall|
+F Wildwood Wash |QID|35556|N|Fly to Wildwood Wash in Gorgrond.|M|48.10,49.80|Z|Lunarfall|
+T The Secrets of Gorgrond |QID|35556|N|To Yrel|M|63.99,57.19|
 
 N Welcome to Gorgrond|QID|35033|ACTIVE|35033|S|N|If you want the garrison supply treasures included in this guide, please set your Rank to 3.|
 
@@ -226,12 +226,12 @@ T Down the Goren Hole |QID|35229|N|To Hansel Heavyhands|M|47.58,94.10|
 T Just In Case |QID|35233|N|To Hansel Heavyhands|M|47.58,94.10|
 
 A Iyu |QID|35235|N|From Hansel Heavyhands|M|47.58,94.10|PRE|35234;35229;35233|
-C Iyu |QID|35235|N|Kill Iyu, who is at surface level.|T|Iyu|M|47.50,92.62|
+K Iyu |QID|35235|N|Kill Iyu, who is at surface level.|T|Iyu|M|47.50,92.62|
 T Iyu |QID|35235|N|To Yrel, who is now in Bastion Rise.|M|47.71,93.30|
 
 A Power of the Genesaur |QID|35255|N|From Yrel|PRE|35235|M|47.71,93.30|
 A Service of Rangari Kaalya|QID|35262|N|From Rangari Kaalya|PRE|35235|M|47.78,93.27|
-f Bastion Rise|QID|35255|N|At Ranger Yaval down under the ledge.|M|46.40,92.41|
+f Bastion Rise|ATLFP|Tailthrasher Basin|QID|35255|N|At Ranger Yaval down under the ledge.|M|46.40,92.41|
 H Highpass |QID|35255|N|Hearthstone to Highpass, or fly there if you didn't set your hearthstone.|ACTIVE|35255|
 T Power of the Genesaur |QID|35255|N|To Vindicator Maraad|M|52.85,59.68|
 
@@ -412,11 +412,11 @@ A A Grim Harvest |QID|35647|N|From Khaano|M|58.27,59.89|PRE|35645;35644|
 A A Heartfelt Search |QID|35656|N|From Khaano|M|58.27,59.89|PRE|35645;35644|
 C A Grim Harvest |QID|35647|N|Kill and loot the Fungal Stompers as you make your way to the Drained Fungal Heart|M|58.92,62.52|
 C A Heartfelt Search |QID|35656|N|Inspect the Drained Fungal Heart|NC|M|58.92,62.52|
-T A Heartfelt Search |QID|35656|N|To Khaano, who will run next to the Drained Fungal Heart|M|58.27,59.89|
-T A Grim Harvest |QID|35647|N|To Khaano|M|58.27,59.89|
+T A Heartfelt Search |QID|35656|N|To Khaano, who will run next to the Drained Fungal Heart|M|58.92,62.52|
+T A Grim Harvest |QID|35647|N|To Khaano|M|58.92,62.52|
 
-A Heart of the Fen |QID|35659|N|From Khaano|M|58.27,59.89|PRE|35647|
-C Heart of the Fen |QID|35659|N|Head to the Heart of the Fen, then kill Khaano|M|61.14,61.81|T|Khaano|
+A Heart of the Fen |QID|35659|N|From Khaano|M|58.92,62.52|PRE|35647|
+K Heart of the Fen |QID|35659|N|Head to the Heart of the Fen, then kill Khaano|M|61.14,61.81|T|Khaano|
 H Highpass |QID|35659|N|Hearthstone to Highpass, or run there if you didn't set your hearthstone/if your hearthstone is still on cooldown.|
 T Heart of the Fen |QID|35659|N|To Rangari D'kaan|M|53.32,59.89|
 

@@ -1,3 +1,6 @@
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+local function trace(msg,...) WoWPro:Print(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 --------------------------------------
 --      WoWPro_Leveling_Parser      --
 --------------------------------------
@@ -44,6 +47,7 @@ WoWPro.Leveling.actionlabels = {
 -- Determine Next Active Step (Leveling Module Specific)--
 -- This function is called by the main NextStep function in the core broker --
 function WoWPro.Leveling:NextStep(k, skip)
+	err("WoWPro.Leveling:NextStep")
 	local GID = WoWProDB.char.currentguide
 	local myFaction = strupper(UnitFactionGroup("player"))
 
@@ -109,6 +113,7 @@ end
 
 -- Unskip a step --
 function WoWPro.Leveling:UnSkipStep(index)
+err("WoWPro.Leveling:UnSkipStep")
 	local GID = WoWProDB.char.currentguide
 	WoWProCharDB.Guide[GID].completion[index] = nil
 	if WoWPro.QID[index] 
@@ -146,6 +151,7 @@ end
 
 -- Quest parsing function --
 local function ParseQuests(...)
+	err("ParseQuests called")
 	WoWPro.Leveling:dbp("Parsing Guide...")
 	local GID = WoWProDB.char.currentguide
 	local i = 1

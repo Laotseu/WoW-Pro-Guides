@@ -120,9 +120,9 @@ A Finding Yi-Mo|QID|30080|M|75.86,7.60|N|From Mei Barrelbottom.|
 C Speak with Yun|QID|30079|CHAT|QO|Speak with Yun: 1/1|M|75.48,9.26|N|up the stairs, inside.|
 C Speak with Despondent Warden of Zhu|QID|30079|CHAT|QO|Speak with Despondent Warden of Zhu: 1/1|M|76.69,8.85|
 C Speak with Sunni|QID|30079|CHAT|QO|Speak with Sunni: 1/1|M|76.44,8.27|N|up the stairs, inside.|
-f Zhu's Watch|QID|30080|M|76.7,8.38|N|At Gee Hung.|
+f Zhu's Watch|M|76.7,8.38|N|At Gee Hung.|
 l Boat Building Instructions|QID|31869|L|87524|M|88.53,50.6;19.17,39.06|Z|Valley of the Four Winds|CS|N|Optional, worth 10g and some XP. Dot is at the beginning of the patch down, run down the hill, along the shore about 20 feet, and up into the house, papers are on table.|
-C Finding Yi-Mo|QID|30080|CHAT|M|78.97,7.73|N|He is lying on the ground.|
+C Finding Yi-Mo|QID|30080|CHAT|M|81.3,6.9|N|He is lying on the ground.|
 T Finding Yi-Mo|QID|30080|M|81.31,6.78|N|To Yi-Mo Longbrow.|
 A Cheer Up, Yi-Mo|QID|30082|M|81.31,6.78|N|From Yi-Mo Longbrow.|
 C Cheer Up, Yi-Mo|QID|30082|CHAT|M|76.77,7.74|N|Talk to him, then you have to roll him home. You will be attacked by large birds on the way.|
@@ -139,9 +139,9 @@ A Borderlands|QID|30084|M|75.83,7.65|N|From Mei Barrelbottom.|
 T Materia Medica|QID|30081|M|76.24,7.14|N|To Ken-Ken.|
 A Why So Serious?|QID|30088|M|76.24,7.14|N|From Ken-Ken.|
 C Why So Serious?|QID|30088|S|L|78941 18|M|72.00,16.91|N|The panthers are in the area around the Memorial Flames.|
-C Memorial Flame of Po|QID|30084|NC|U|78928|QO|Memorial Flame of Po: 1/1|M|75.20,17.20|
-C Memorial Flame of Zhu|QID|30084|NC|U|78928|QO|Memorial Flame of Zhu: 1/1|M|72.71,18.11|
-C Memorial Flame of Rin|QID|30084|NC|U|78928|QO|Memorial Flame of Rin: 1/1|M|71.21,17.55|
+C Memorial Flame of Po|QID|30084|NC|U|78928|QO|Memorial Flame of Po: 1/1|M|74.0,16.8|
+C Memorial Flame of Zhu|QID|30084|NC|U|78928|QO|Memorial Flame of Zhu: 1/1|M|72.8,18.1|
+C Memorial Flame of Rin|QID|30084|NC|U|78928|QO|Memorial Flame of Rin: 1/1|M|71.3,17.5|
 C Securing the Province|QID|30083|S|M|77.30,58.91|Z|Valley of the Four Winds|N|Kill the sauroks on the way in and out of the cave.|;the tomtom arrow doesn't show up for the next few steps (located outside of Krasarang Wilds).
 l Saurok Stone Tablet|QID|30088|L|86220|M|75.05,55.12|Z|Valley of the Four Winds|N|The tablet, located in the second "room" of the cave, is a world drop worth ~100G and a random amount of XP (at least as much as one quest)|
 l Jar of Pigment|QID|30088|US|L|78942|M|73.89,56.30|Z|Valley of the Four Winds|N|Pick up the jar of pigment here.|
@@ -191,8 +191,8 @@ K Dojani Dominator|QID|30129|T|Dojani Dominator|L|78917|M|55.51,35.48|N|Kill him
 T The Mogu Agenda|QID|30129|M|55.51,35.48|N|To Kang Bramblestaff.|
 A The Pools of Youth|QID|30128|M|55.51,35.48|N|From Kang Bramblestaff.|
 C Threat from Dojan|QID|30127|US|M|54.68,38.86|N|Finish these guys before you go to the pools so you don't have to return this way.|
-C Herbal Remedies|QID|30130|M|54.59,39.74|N|If you haven't finished up the flowers, there is a couple of spots by the path down to Na Lek.|
-C The Pools of Youth|QID|30128|CHAT|M|51.63,33.08|N|When facing the platform where you killed the Dominator, go to your left, over a bridge and down some stairs to a pool area. Free Na Lek, kill the guardians and loot 'the water of youth' (groundspawn).|
+C The Pools of Youth|QID|30128|M|51.63,33.08|N|When facing the platform where you killed the Dominator, go to your left, over a bridge and down some stairs to a pool area. Free Na Lek, kill the guardians and loot 'the water of youth' (groundspawn).|
+C Herbal Remedies|QID|30130|M|54.59,39.74|N|Finish up the flowers.|
 T Crane Mastery: Needlebeak|QID|31262|M|67.61,25.68|N|To Daggle Bombstrider.|
 T Profit Mastery: Chasheen|QID|31260|M|67.61,25.68|N|To Daggle Bombstrider.|
 T Threat from Dojan|QID|30127|M|59.93,24.82|N|To Kor Bloodtusk.|
@@ -333,7 +333,7 @@ C The Swarm Begins|QID|30622|US|M|10.14,52.00|Z|Valley of the Four Winds|
 T The Mantidote|QID|30623|Z|Valley of the Four Winds|N|To UI Alert.|
 T The Swarm Begins|QID|30622|M|11.53,49.50|Z|Valley of the Four Winds|N|To Guard Captain Oakenshield.|
 A Students No More|QID|30625|M|11.53,49.57|Z|Valley of the Four Winds|N|From Guard Captain Oakenshield.|
-C Students No More|QID|30625|M|8.9,51.7;9.7,58.3;9.4,54.2;9.6,54.0|Z|Valley of the Four Winds|CN|N|The NPC's will call you over to join them as they roam around this area killing these 4 elites.|
+C Students No More|QID|30625|T|Xiao|M|8.9,51.7;9.7,58.3;9.4,54.2;9.6,54.0|Z|Valley of the Four Winds|N|The NPC's will call you over to join them as they roam around this area killing these 4 elites.|
 T Students No More|QID|30625|M|11.55,49.44|Z|Valley of the Four Winds|N|To Guard Captain Oakenshield.|
 A Retreat!|QID|30626|M|11.55,49.44|Z|Valley of the Four Winds|N|From Guard Captain Oakenshield.|
 T Retreat!|QID|30626|M|17.91,56.22|Z|Valley of the Four Winds|N|To Loon Mai.|
