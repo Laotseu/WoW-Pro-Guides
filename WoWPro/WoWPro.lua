@@ -81,9 +81,20 @@ end
 WoWPro:Export("dbp")
 
 -- WoWPro print function --
+local print_text_table = {}
 function WoWPro:Print(message,...)
 	if message ~= nil then
-	    local msg = string.format("|c7fffff7f%s|r: "..message, self.name or "Wow-Pro",...)
+		wipe(print_text_table)
+		for i=1,select('#', ...) do
+			local v = select(i, ...);
+			if (type(v) == "string") then
+				print_text_table[i] = v:gsub("[|]", "||")
+			else
+				print_text_table[i] = v 
+			end
+		end
+
+	    local msg = string.format("|c7fffff7f%s|r: "..message, self.name or "Wow-Pro",unpack(print_text_table))
         WoWPro:Add2Log(0,msg)
 	end
 end
@@ -105,7 +116,7 @@ function WoWPro:Error(message,...)
 		wipe(err_text_table)
 		for i=1,select('#', ...) do
 			local v = select(i, ...);
-			if (type(v) ~= "string") then
+			if (type(v) == "string") then
 				err_text_table[i] = v:gsub("[|]", "||")
 			else
 				err_text_table[i] = v 
