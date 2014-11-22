@@ -40,7 +40,7 @@
 
 local guide = WoWPro:RegisterGuide('EmmSoArak', 'Leveling', 'Spires of Arak', 'Emmaleah', 'Neutral')
 WoWPro:GuideLevels(guide,96, 98, 96.7)
-WoWPro:GuideNextGuide(guide, 'LaotseuNagrand|EmmNagrand')
+WoWPro:GuideNextGuide(guide, 'LudoNagrand|EmmNagrand')
 WoWPro:GuideSteps(guide, function()
 return [[
 
@@ -393,30 +393,29 @@ T When All Is Aligned|QID|35704|M|46.49,46.67|N|To Reshad.|
 A Victory is Within Reach|QID|36316|M|46.49,46.67|N|From Reshad. This is a dungeon quest.|PRE|35704|
 
 H Southport|QID|35915|ACTIVE|35915|M|46.53,46.80|FACTION|Alliance|
-C Attempted Murder|QID|35915|M|39.51,43.36|CHAT|N|Talk to Firn Swiftbreeze for a (non flightpath) option to fly to Shadow's Vigil.|FACTION|Alliance|
+C Attempted Murder|QID|35915|M|39.1,61.8|CHAT|N|Talk to Firn Swiftbreeze for a (non flightpath) option to fly to Shadow's Vigil.|FACTION|Alliance|
 T Attempted Murder|QID|35915|M|52.10,23.54|N|To Hulda Shadowblade.|FACTION|Alliance|
 A Assassin's Mark|QID|35926|M|52.10,23.54|PRE|35915|N|From Hulda Shadowblade.|FACTION|Alliance|
-C Assassin's Mark|QID|35926|M|55.49,23.22|N|Check the bodies of the 'Vigilant Outcasts' lying along the road.|FACTION|Alliance|
+C Assassin's Mark|QID|35926|NC|M|55.49,23.22|N|Check the bodies of the 'Vigilant Outcasts' lying along the road.|FACTION|Alliance|
 T Assassin's Mark|QID|35926|M|53.57,27.51|N|To (a stealthed) Hulda Shadowblade.|FACTION|Alliance|
 A The Power of Poison|QID|35959|M|53.57,27.51|PRE|35926|N|From (a stealthed) Hulda Shadowblade.|FACTION|Alliance|
 A Extrinsic Motivation|QID|36023|M|53.57,27.51|PRE|35926|N|From (a stealthed) Hulda Shadowblade.|FACTION|Alliance|
 C The Power of Poison|QID|35959|M|53.57,27.51|U|113587|FACTION|Alliance|N|Use the poisosn to encourage the orcs to talk.|
-C Extrinsic Motivation|QID|36023|M|56,33|FACTION|Alliance|
+C Extrinsic Motivation|QID|36023|M|53.57,27.51|FACTION|Alliance|
 T The Power of Poison|QID|35959|M|53.57,27.51|N|To (the stealthed) Hulda Shadowblade.|FACTION|Alliance|
 T Extrinsic Motivation|QID|36023|M|53.57,27.51|N|To (the stealthed) Hulda Shadowblade.|FACTION|Alliance|
 A Gardul Venomshiv|QID|36029|PRE|36023;35959|M|53.57,27.51|N|From (the stealthed) Hulda Shadowblade.|FACTION|Alliance|
 
-C Gardul Venomshiv|QID|36029|T|Gardul Venomshiv|M|56.09,33.93|FACTION|Alliance|
+K Gardul Venomshiv|QID|36029|T|Gardul Venomshiv|M|56.09,33.93|FACTION|Alliance|
 T Gardul Venomshiv|QID|36029|M|57.14,34.49|N|To Hulda Shadowblade.|FACTION|Alliance|
 A We Have Him Now|QID|36048|M|57.14,34.49|PRE|36023|N|From Hulda Shadowblade.|FACTION|Alliance|
-C We Have Him Now|QID|36048|M|58.15,33.3|QO|2|S|FACTION|Alliance|
-C We Have Him Now|QID|36048|M|58.15,33.3|QO|1|T|Gardul Venomshiv|FACTION|Alliance|
-C We Have Him Now|QID|36048|M|58.15,33.3|QO|2|US|FACTION|Alliance|
+C Pick Up Poison Barrels|QID|36048|NC|M|58.15,33.3|QO|2|S|FACTION|Alliance|
+K Gardul Venomshiv|QID|36048|M|58.15,33.3|QO|1|T|Gardul Venomshiv|FACTION|Alliance|
+C Pick Up Poison Barrels|QID|36048|NC|M|58.15,33.3|QO|2|US|FACTION|Alliance|
 T We Have Him Now|QID|36048|M|57.14,34.49|N|To Hulda Shadowblade.|FACTION|Alliance|
 A No Time to Waste|QID|36165|M|57.14,34.49|PRE|36023|N|From Hulda Shadowblade.|FACTION|Alliance|
-R The Howling Crag|QID|35619|RANK|3|M|61,18|N|Despite being in a hurry to revive our poisoned barkeep, we are going to take a side trip for our traveling convenience.  Go North and somewhat east.|FACTION|Alliance|
-C Wanted: Venombarb|QID|35676|M|61.11,19.05|RANK|3|FACTION|Alliance|
-H Southport|QID|35619|ACTIVE|35676;36165|FACTION|Alliance|
+R The Howling Crag|QID|35676|RANK|3|M|61,18|N|Despite being in a hurry to revive our poisoned barkeep, we are going to take a side trip for our traveling convenience.  Go North and somewhat east.|FACTION|Alliance|
+K Venombarb|QID|35676|T|Venombarb|M|61.11,19.05|RANK|3|FACTION|Alliance|
 
 H Axefall|QID|35907|ACTIVE|35907|M|46.53,46.80|FACTION|Horde|
 C Attempted Murder|QID|35907||M|39.51,43.36|CHAT|N|Talk to Hutou Featherwind for a (non flightpath) option to fly to Shadow's Vigil.|FACTION|Horde|
@@ -443,12 +442,14 @@ R The Howling Crag|QID|35620|RANK|3|M|61,18|N|Despite being in a hurry to revive
 C Wanted: Venombarb|QID|35672|M|61.11,19.05|RANK|3|FACTION|Horde|
 H Axefall|QID|35620|ACTIVE|35672;36166|FACTION|Horde|
 
+H Southport|QID|36165|ACTIVE|35676;36165|FACTION|Alliance|
 C No Time to Waste|QID|36165|M|39.66,60.86|CHAT|FACTION|Alliance|
 T No Time to Waste|QID|36165|M|39.66,61.86|N|To Kolrigg Stokton.|FACTION|Alliance|
 A Standing United|QID|37281|M|39.74,61.90|PRE|36165|N|To/From Hulda Shadowblade to accept her as a follower.|FACTION|Alliance|
-A Cleaning House|QID|37287|M|38.51,61.68|PRE|36165|N|From Kolrigg Stokton.|FACTION|Alliance|
+T Wanted: Venombarb|QID|35676|M|39.24,62.86|N|To Falrogh the Drunk.|FACTION|Alliance|
+A Cleaning House|QID|37287|M|39.5,61.6|PRE|36165|N|From Kolrigg Stokton.|FACTION|Alliance|
 C Cleaning House|QID|37287|M|38.37,62.64|CHAT|N|After you talk to him, he becomes hostile and you must kill him.|FACTION|Alliance|
-T Cleaning House|QID|37287|M|38.51,61.68|N|To Kolrigg Stokton.|FACTION|Alliance|
+T Cleaning House|QID|37287|M|39.5,61.6|N|To Kolrigg Stokton.|FACTION|Alliance|
 C Pinchwhistle Gearworks|QID|35619|M|39.09, 61.81|CHAT|N|Talk to Firn Swiftbreeze for a flight to Pinchwhistle Gearworks.|FACTION|Alliance|
 
 C No Time to Waste|QID|36166|M|40.11,43.28|CHAT|FACTION|Horde|
@@ -464,11 +465,11 @@ T Pinchwhistle Gearworks|QID|35619;35620|M|61.47,72.94|N|To Kimzee Pinchwhistle.
 A Defungination|QID|35077|M|61.47,72.94|N|From Kimzee Pinchwhistle.|PRE|35619+35620|
 A Spore-be-Gone|QID|35079|M|61.46,72.96|N|From Engineer Gazwitz.|PRE|35619+35620|
 A Unwanted Pests|QID|36179|NC|M|62.56,73.92|N|From Exterminator Lemmy.|PRE|35619+35620|
-C Unwanted Pests|QID|36179|NC|M|63.14,75.02|S|
+C Unwanted Pests|QID|36179|M|63.14,75.02|S|
 C Spore-be-Gone|QID|35079|M|63.33,77.41|NC|S|N|These look a bit like rocket clusters. Click to reactivate.|
 C Defungination|QID|35077|M|62.95,74.72|U|112683|NC|N|These are yellow blobs on the ground. Face them and use your flame blaster.|
 C Spore-be-Gone|QID|35079|M|63.33,77.41|NC|US|N|These look a bit like rocket clusters. Click to reactivate.|
-C Unwanted Pests|QID|36179|NC|M|63.14,75.02|US|
+C Unwanted Pests|QID|36179|M|63.14,75.02|US|
 T Spore-be-Gone|QID|35079|M|61.44,72.95|N|To Engineer Gazwitz.|
 T Unwanted Pests|QID|36179|M|61.44,72.95|N|To Engineer Gazwitz.|
 T Defungination|QID|35077|M|61.47,72.92|N|To Kimzee Pinchwhistle.|
@@ -497,19 +498,19 @@ T The Right Parts for the Job|QID|35090|M|58.83,92.84|N|To Kimzee Pinchwhistle.|
 T Skimming Off The Top|QID|35089|M|58.83,92.84|N|To Kimzee Pinchwhistle.|
 A Sporicide|QID|35091|M|58.83,92.84|N|From Kimzee Pinchwhistle.|PRE|35090;35089|
 T Field Trial|QID|36384|M|58.46,92.22|N|To Krixel Pinchwhistle.|
-A Preventing the Worst|QID|35211|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|35211|
-A Curing With Force|QID|36428|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|35211|
+A Preventing the Worst|QID|35211|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|36384|
+A Curing With Force|QID|36428|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|36384|
 C Curing With Force|QID|36428|M|58,92|U|115533|S|N|You have to beat them up before they will accept the potion, don't forget to give it to them (instead of killing them).|
 C Sporicide|QID|35091|M|58,92|S|N|There are a few of these wandering in the village but most are behind it.|
-C Preventing the Worst|QID|35211|M|58,92|NC|N|There is a translucent bomb inside of each of the buildings, click on it to activate. It is upstairs on the balcony of the 2 story building.|
+C Preventing the Worst|QID|35211|M|56.5,91.2|NC|N|There is a translucent bomb inside of each of the buildings, click on it to activate. It is upstairs on the balcony of the 2 story building.|
 C Curing With Force|QID|36428|M|56.2,90.4|U|115533|US|N|You have to beat them up before they will accept the potion, don't forget to give it to them (instead of killing them).|
 C Sporicide|QID|35091|M|56.2,90.4|US|N|There are a few of these wandering in the village but most are behind it.|
 T Sporicide|QID|35091|M|58.49,92.33|N|To Kimzee Pinchwhistle.|
 T Preventing the Worst|QID|35211|M|58.46,92.22|N|To Krixel Pinchwhistle.|
 T Curing With Force|QID|36428|M|58.46,92.22|N|To Krixel Pinchwhistle.|
-A Flame on|QID|35298|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|35211;36428|
-C Flame on|QID|35298|M|58.44,92.24|QO|1|NC|N|Click on the Plunger to set off the bombs.|
-C Flame on|QID|35298|M|58.88,92.84|QO|2|NC|N|Hop in Kimzee's flying machine.|
+A Flame On|QID|35298|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|35211;36428|
+C Flame On|QID|35298|M|58.44,92.24|QO|1|NC|N|Click on the Plunger to set off the bombs.|
+C Flame On|QID|35298|M|58.88,92.84|QO|2|NC|N|Hop in Kimzee's flying machine.|
 T Flame on|QID|35298|M|61.47,72.94|N|To Kimzee Pinchwhistle.|
 A Kimzee Pinchwhistle|QID|36062|M|61.47,72.94|N|To/From Kimzee Pinchwhistle.|PRE|35298|
 
@@ -517,7 +518,6 @@ H Southport|QID|35674|M|61.47,72.94|N|Back to Southport.|FACTION|Alliance|
 T Wanted: Keeho's Severed Paw|QID|35674|M|39.89,60.85|N|To Lieutenant Willem.|FACTION|Alliance|
 A News from Nagrand|QID|36606|M|39.89,60.85|N|From Lieutenant Willem.|LVL|98|FACTION|Alliance|
 T Wanted: Spineslicer's Husk|QID|35675|M|39.35,59.81|N|To Quartermaster Jolie.|FACTION|Alliance|
-T Wanted: Venombarb|QID|35676|M|39.24,62.86|N|To Falrogh the Drunk.|FACTION|Alliance|
 f Veil Terokk|QID|37141|M|39.09,61.81|N|To Firn Swiftbreeze.|FACTION|Alliance|
 
 H Axefall|QID|35669|M|61.47,72.94|N|Back to Axefall.|FACTION|Horde|
