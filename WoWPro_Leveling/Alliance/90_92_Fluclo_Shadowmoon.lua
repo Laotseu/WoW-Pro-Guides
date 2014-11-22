@@ -637,7 +637,7 @@ T The Defense of Karabor|QID|33256|N|Jump onto Raindash to take you back to Emba
 
 l The Prophet's Arcanum |QID|37322|N|Go to the mailbox, there will be a message there from Yrel, with The Prophet's Arcanum. Take it.|L|119208|PRE|33256|M|45.9,39.6|
 A The Prophet's Final Message|QID|37322|M|42.37,52.04|Z|Lunarfall|N|From The Prophet's Arcanum. (Quest can also be obtained from Arsenio Zerep.)|U|119208|PRE|33256|
-F Path of Light|QID|37322|N|Fly to the Path of Light|M|45.67,38.85|ACTIVE|37322|
+F Path of the Light|QID|37322|N|Fly to the Path of the Light|M|45.67,38.85|ACTIVE|37322|
 R Tranquil Court|QID|37322|M|70.4,50.4|N|Run east up the stairs to Tranquil Court.|
 f Tranquil Court|M|70.4,50.4|N|With Itara|ACTIVE|37322|
 T The Prophet's Final Message|QID|37322|N|To Prophet Velen's Memorial|M|73.7,55.8|
@@ -660,7 +660,7 @@ T Building for Professions |QID|36100|M|31.8,31.2|Z|Lunarfall|N|To Baros Alexsto
 l Sunken Fishing boat |QID|35677|N|Sunken Fishing boat: Lootable object for decent XP|RANK|3|M|37.18,26.02|
 
 T Lost Lumberjacks|QID|34820|M|39.9,29.5|N|To Lost Packmule.|
-A Gloomshade Grove|QID|33263|M|39.53,29.93|N|From Lost Packmule.|PRE|34820|
+A Gloomshade Grove|QID|33263|M|39.9,29.5|N|From Lost Packmule.|PRE|34820|
 
 C Gloomshade Game Hunter |QID|33461|N|Kill and loot Gulper Leg for the Gulper Leg.|QO|3|S|
 C Gloomshade Game Hunter |QID|33461|N|Kill and loot Gloomshade Howler for the Shadowstalker Ribs.|QO|1|S|
