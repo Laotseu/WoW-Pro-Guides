@@ -233,7 +233,7 @@ T Shadows Awaken |QID|34019|N|To Prophet Velen|CN|M|49.42,36.81;49.3,37.4|
 A Into Twilight |QID|33072|N|From Prophet Velen|CN|M|49.42,36.81;49.3,37.4||PRE|34019|
 
 ;The following quest has been seen at 49.1,38.6 and 49.08,37.25 - not yet found out why it varies (yet!)
-A The Southern Wilds |QID|35444|N|From Farmer Gehaar|M|49.08,37.25;49.1,38.6|PRE|34019|
+A The Southern Wilds |QID|35444|N|From Farmer Gehaar|M|49.08,37.25;49.1,38.6|CS|PRE|34019|
 
 ; The next 7 blocks of quests are dependant upon which profession item(s) you have looted from Karnoth.
 H Lunarfall |QID|33814|N|Use your Garrison Hearthstone, or fly back to your garrison.|U|110560|ACTIVE|35342|
@@ -270,14 +270,13 @@ C Father and Son|QID|36311|N|Speak to Duna at Arbor Glen|M|51.1,37.0|CHAT|
 T Father and Son|QID|36311|N|To Haephest|M|45.2,38.9|
 
 H Lunarfall |QID|36236|N|Use your Garrison Hearthstone, or fly back to your garrison.|U|110560|ACTIVE|36236|
-T The Cryptic Tome of Tailoring|QID|36236|M|43.0,54.9|Z|Lunarfall|N|To Aerun.|ACTIVE|36236|
+T The Cryptic Tome of Tailoring|QID|36236|M|43.0,54.9|Z|Lunarfall|N|To Aerun.|
 A Ameeka, Master Tailor|QID|36262|M|43.0,54.9|Z|Lunarfall|N|From Aerun.|PRE|36236|
 F Embaari Village |QID|36262|N|Fly to Embaari Village|ACTIVE|36262|
 
 ;Regular questing resumes from this point.
 T Migrant Workers |QID|34778|N|To Foreman Zipfizzle|M|56.0,32.6|
 A Circle the Wagon |QID|34779|N|From Foreman Zipfizzle|M|56.0,32.6|PRE|34778|
-f Elodor |M|56.3,29.5;59.2,26.6;58.7,58.7,31.9|CS|N|From Vamuun.|
 
 C Circle the Wagon |QID|34779|N|Locate the missing wagon in Saraah's Vale.|NC|M|51.2,28.4|QO|1|
 C Circle the Wagon |QID|34779|N|Defend the wagon from the Shadowmoon Raiders|M|51.2,28.4|QO|2|
@@ -339,6 +338,8 @@ C Engorged Goren |QID|34786|N|Finish killing and looting the Crystalmaw Goren an
 T Engorged Goren |QID|34786|N|To Apprentice Artificer Andren|M|61.9,29.1|
 T Shut 'er Down |QID|35070|N|To Exarch Hataaru|M|61.91,29.69|
 A Exarch Maladaar |QID|34787|N|From Exarch Akama|M|61.9,29.6|PRE|35070|
+
+f Elodor |ALTFP|Fey Landing|M|58.7,31.9|N|From Vamuun.|
 
 T Exarch Maladaar |QID|34787|N|To Exarch Maladaar on Fey Landing.|CN|M|59.53,29.14;59.5,30.4|
 A Trust No One |QID|35552|N|From Exarch Maladaar.|M|59.5,30.4|PRE|34787|
@@ -481,7 +482,7 @@ C A Grandmother's Remedy |QID|33077|N|Finish squeezing the Vial of Toad Juice ou
 C Loola's Lost Love |QID|34876|N|Finish searching the loose mud|NC|US|M|45.0,51.0|
 C Engorged Heart |QID|33076|N|Finish killing and looting the Echidnian Hydra for their Engorged Heart|QO|2|US|M|45.0,51.0|
 C Swamplighter Dust |QID|33076|N|Finish killing and looting the Frenzied Swamplighters for the Swamplighter Dust, there are loads of them up Moonwillow Peak (which will also be the quest turn-in area)|QO|1|US|M|39.73,53.59;37.66,54.75;36.80,51.66|CS|
-T The Clarity Elixir |QID|33076|N|To Prophet Velen in Moonwillow Peak|CN|M|39.73,53.59;37.66,54.75;35.3,49.1|
+T The Clarity Elixir |QID|33076|N|To Prophet Velen in Moonwillow Peak|CS|M|39.73,53.59;37.66,54.75;35.3,49.1|
 
 A The Fate of Karabor |QID|33059|N|From Prophet Velen|M|35.3,49.1|PRE|33076|
 C The Fate of Karabor |QID|33059|N|Click on the Clarity Elixir to drink it|M|35.3,49.1|QO|1|NC|

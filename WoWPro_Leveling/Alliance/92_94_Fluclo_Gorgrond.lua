@@ -129,7 +129,9 @@ C We Need An Outpost |QID|35063|N|Use the Drafting Table and select one of the b
 h Highpass |QID|35063|N|Set your hearthstone with Trader Yula|M|53.23,59.79|
 T We Need An Outpost |QID|35063|N|To Thaelin Darkanvil who has moved further into the Highpass.|M|53.00,59.78|
 
-A Next Quest |QID|35708;34704|N|If you built a Lumber Yard, get Tangleheart from Glirin.\nIf you built a Sparring Ring, get A Rediscovered Legend from Rangari Jonaa|M|53.06,59.51;53.02,59.81|CN|
+;A Next Quest |QID|35708;34704|N|If you built a Lumber Yard, get Tangleheart from Glirin.\nIf you built a Sparring Ring, get A Rediscovered Legend from Rangari Jonaa|M|53.06,59.51;53.02,59.81|CN|
+A Tangleheart |QID|35708;34704|N|This quest is only available if you built a Lumber Yard.\n\nFrom Glirin.|M|53.06,59.51|
+A A Rediscovered Legend |QID|35708;34704|N|This quest is only available if you built a Sparring Ring.\n\nFrom Rangari Jonaa|M|53.02,59.81|
 
 ;The following quests are if you selected Lumber Yard
 f Highpass |QID|35708|N|With Rangari Rajess|M|52.83,59.33|ACTIVE|35708|
