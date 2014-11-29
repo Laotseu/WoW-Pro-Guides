@@ -933,6 +933,8 @@ function WoWPro:QuestDialogAutomation()
 		if callMeAgain then 
 			WoWPro:SendMessage("WoWPro_QuestDialogAutomation") 
 			--return
+		end
+
 	end
 
 end

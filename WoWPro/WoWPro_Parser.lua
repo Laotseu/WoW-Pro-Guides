@@ -956,6 +956,10 @@ function WoWPro:RowUpdate(offset)
 		if not itemkb then WoWPro:SetMacro("WPI") end
 		if not targetkb then WoWPro:SetMacro("WPT") end
 		
+		-- Setting the zone for the coordinates of the step --
+		zone = zone or strsplit("-(",WoWPro.Guides[GID].zone)
+		row.zone = strtrim(zone)
+
 		WoWPro.rows[i] = row
 		
 		k = k + 1
