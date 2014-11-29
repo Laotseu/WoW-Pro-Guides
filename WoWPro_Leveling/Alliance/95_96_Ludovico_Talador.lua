@@ -89,8 +89,8 @@ L Level 94 |QID|34566|LVL|94|N|This guide requires a minimum level of 94 to do.|
 
 T News from Talador |QID|36495|N|To Bodrick Grey, in your Garrison.|M|38.33,36.74|Z|Lunarfall|O|
 
-A The Critical Path |QID|34676|N|From Bodrick Grey|LEAD|36495|
-A The Critical Path |QID|37183|N|From Bodrick Grey|M|38.20,36.90|Z|Lunarfall|PRE|36495|
+A The Critical Path |QID|34676;37183|N|From Bodrick Grey|LEAD|36495|
+A The Critical Path |QID|37183;34676|N|From Bodrick Grey|M|38.20,36.90|Z|Lunarfall|PRE|36495|
 
 N Talador|QID|34676;37183|ACTIVE|34676;37183|S|N|If you want the garrison supply treasures and rare elites included in this guide, please set your Rank to 3.|
 
@@ -122,7 +122,7 @@ R Kuuro's Claim|QID|34573|M|71.06,23.05;71.29,24.03;72.57,24.44;73.62,23.90|CS|N
 C Iridium Recovery|QID|34573|M|75.4,22|S|N|Kill and loot the Iridium Geode.|
 C Out of Jovite|QID|34571|M|75.4,22|NC|S|N|These are green crystals sticking out the ground and walls.|
 C Gas Guzzlers|QID|34624|M|75.4,22|N|Kill the Glowgullets, then use your 'Goren Gas Extractor' on them.|S|U|111910|
-l Pure Crystal Dust|QID|34263|M|78.21,14.72|N|Pure Crystal Dust: Lootable object for Garrison Resources and decent XP. At the back of the right hand walkway.|RANK|3|
+l Pure Crystal Dust|QID|34263|M|75.9,22.7;78.21,14.72|CS|N|Pure Crystal Dust: Lootable object for Garrison Resources and decent XP. At the back of the right hand walkway.|RANK|3|
 C Out of Jovite|QID|34571|M|75.4,22|NC|US|N|These are green crystals sticking out the ground and walls.|
 C Iridium Recovery|QID|34573|M|75.4,22|US|N|Kill and loot the Iridium Geode.|
 C Gas Guzzlers|QID|34624|M|75.4,22|N|Kill the Glowgullets, then use your 'Goren Gas Extractor' on them.|US|U|111910|
@@ -132,18 +132,136 @@ T Gas Guzzlers|QID|34624|M|70.15,20.11|N|To Miall|
 
 A Going to the Gordunni|QID|34578|M|70.15,20.11|N|From Miall|PRE|34573;34571;34624|
 
-A Why Is The Brew Gone?|QID|34773|M|69.60,21.60|N|From Quartermaster O'Riley|RANK|2|
+; Mage Tower
+; A An Audience With The Archmage|QID|34631|M|69.9,20.8|N|From Foreman Eksos|
+T An Audience With The Archmage|QID|34631|M|75.0,31.2|N|To Archmage Khadgar|
+A Making Acquaintances|QID|34815|PRE|34631|M|75.0,31.2|N|From Archmage Khadgar|
+f Zangarra |M|80.4,25.3|N|From Dominic Arlington.|ACTIVE|34815|
+C Making Acquaintances|QID|34815|NC|M|80.6,26.1|N|Take the portal.|
+T Making Acquaintances|QID|34815|M|85.0,31.0|N|To Magister Serena|
+
+A Creating the Ink|QID|34609|PRE|34815|M|85.0,31.0|N|From Magister Serena|
+A Forming the Scroll|QID|34612|PRE|34815|M|85.0,31.0|N|From Magister Serena|
+A Gathering the Spark|QID|34619|PRE|34815|M|85.0,31.0|N|From Magister Serena|
+C Gathering the Spark|QID|34619|S|NC|M|83.3,28.8|N|Boxes the sparks.|
+C Creating the Ink|QID|34609|S|M|84.0,29.8|N|Kill and loot Encroaching Giants.|
+C Forming the Scroll|QID|34612|S|NC|M|82.2,31.6|N|Click on the Slumbering Protectors.|
+K No'losh |T|No'losh|RANK|2|M|86.3,30.0|N|He wonders around along the stream.|
+C Forming the Scroll|QID|34612|US|NC|M|82.2,31.6|N|Click on the Slumbering Protectors.|
+C Creating the Ink|QID|34609|US|M|84.0,29.8|N|Kill and loot Encroaching Giants.|
+C Gathering the Spark|QID|34619|US|NC|M|83.3,28.8|N|Boxes the sparks.|
+T Creating the Ink|QID|34609|M|0,0|N|To Magister Serena|
+T Forming the Scroll|QID|34612|M|0,0|N|To Magister Serena|
+T Gathering the Spark|QID|34619|M|0,0|N|To Magister Serena|
+
+H Fort Wrynn|QID|34875|M|69.6,21.1|N|Hearth to Fort Wrynn or take the portal again and follow the road.|
+A Next Steps|QID|34875|PRE|34609;34612;34619|M|0,0|N|From Magister Serena|
+T Next Steps|QID|34875|M|69.6,21.1|N|To Magister Serena|
+A The Foot of the Fortress|QID|34908|PRE|34875|M|69.6,21.1|N|From Magister Serena|
+
+A One Step Ahead |QID|36801|M|69.6,20.8|PRE|34875+35045|N|From Sloan McCoy|; Fort Wrynn |Z|946;0|
+A Wanted: Kil'uun |QID|34103|M|69.4,21.1|PRE|34875+35045|N|From Patrick Messer|; Fort Wrynn |Z|946;0|
+A Wanted: Hilaani |QID|34104|M|69.4,21.1|PRE|34875+35045|N|From Patrick Messer|; Fort Wrynn |Z|946;0|
+A Wanted: Ra'tok the Hammer |QID|34105|PRE|34875+35045|M|69.4,21.1|N|From Patrick Messer|; Fort Wrynn |Z|946;0|
+;A Why Is The Brew Gone? |QID|34773|M|69.6,21.6|Z|Talador|N|From Quartermaster O'Riley|; Fort Wrynn |Z|946;0|
+A Why Is The Brew Gone?|QID|34773|M|69.60,21.60|PRE|34875+35045|N|From Quartermaster O'Riley|RANK|2|
 C Why Is The Brew Gone?|QID|34773|M|72.5,22.2|N|Make your way around the lake killing raiders and looting swords and beer.|
 T Why Is The Brew Gone?|QID|34773|M|69.60,21.60|N|To Quartermaster O'Riley|
 
-A Not In Your House|QID|34804|PRE|34773|M|69.60,21.60|N|From Quartermaster O'Riley|
-K Ripgut|QID|34804|M|67.30,20.81|QO|1|N|Out the main gate on top of the rise.|T|Ripgut|
-T Not In Your House|QID|34804|M|69.60,21.60|N|To Quartermaster O'Riley|
+K Kil'uun|QID|34103|T|Kil'uun|M|66.20,34.40;72.90,31.40;72.95,25.95;67.05,36.35;73.20,28.30;72.75,34.15;66.25,31.77;68.88,27.29;71.28,24.52;69.80,37.25|CN|N|Kil'uun, Circles clockwise south of Fort Wrynn around Voljin's Pride. Party of 3 suggested.|
 
-A Wanted: Kil'uun|QID|34103|M|69.43,21.14|N|From Patrick Messer|RANK|3|
-A Wanted: Hilaani|QID|34104|M|69.43,21.14|N|From Patrick Messer|RANK|3|
+A They Came From Above|QID|36843|M|67.50,42.17|N|From Akhan, near the fork to the Pilgrim's highway.|
+T They Came From Above|QID|36843|M|73.0,38.6|N|To Crystal-Shaper Barum|
+
+; The Plight of the Arakkoa
+A As the Smoke Rises|QID|34685|PRE|34711+34981|M|69.45,21.46|N|From Kalaam|
+R The Road to the Signpost|QID|34685|M|71.27,24.07;72.53,24.53;73.13,26.42;74.63,30.75;73.07,38.69|CS|N|Its a long ride. Head out the back.|
+T As the Smoke Rises|QID|34685|M|73.07,38.75|N|To Crystal-Shaper Barum|
+
+A Burning Sky|QID|33740|M|73.07,38.75|N|From Crystal-Shaper Barum|
+A Pieces of Us|QID|33734|M|73.07,38.75|N|From Crystal-Shaper Barum|
+C Burning Sky|QID|33740|M|73.07,38.75|N|Kill Wing-Guards, Squallbringers, and Sun-Callers.|S|
+A Barum's Notes|QID|33761|M|76.27,42.77|N|From Barum's Notes|
+A Pyrophobia|QID|33578|M|77.74,43.96|N|From Raksi|
+
+K Sun-Sage Kairyx|QID|33578|M|78.45,45.23|QO|1|N|Sun-Sage Kairyx|
+T Pyrophobia|QID|33578|M|77.74,43.96|N|To Raksi|
+A What the Draenei Found|QID|33579|M|77.74,43.96|N|From Raksi|
+C Harmonic Crystal|QID|33761|NC|M|77.74,44.08|QO|3|N|Green Spiky Crystal|
+C Melani's Doll|QID|33734|NC|M|77.91,42.98|QO|2|
+C Polished Crystal|QID|33761|NC|M|76.98,43.08|QO|2|N|Clear Purple Rectangle|
+C Annals of Aruuna|QID|33734|NC|M|75.45,44.13|QO|3|N|
+C Crystal-Shaper's Tools|QID|33734|S|NC|M|77.54,41.24|QO|1|
+C Honed Crystal|QID|33761|NC|M|76.17,44.26|QO|1|N|Glowing Red Spike|
+C Crystal-Shaper's Tools|QID|33734|US|NC|M|77.54,41.24|QO|1|
+C Burning Sky|QID|33740|M|73.07,38.75|N|Kill Wing-Guards, Squallbringers, and Sun-Callers.|US|
+R Aruuna Crystal Mine|QID|33579|M|77.76,41.23;78.39,35.49|CS||N|Go to the mine entrance.|
+C Ancient Prism|QID|33579|M|82.72,37.89|N|Go to the right of the tracks and cross the rock bridge to get to it.|
+T What the Draenei Found|QID|33579|M|82.64,37.78|N|To Raksi, who snunk in behind you.|
+
+A The Purge of Veil Shadar|QID|33580|M|70.50,56.85|N|From Shadow-Sage Iskar.|
+f Terokkar Refuge |M|70.3,57.1|N|Talk to Skytalon Inuz|; Terokkar Refuge |Z|946;0|
+A Forbidden Knowledge|QID|33581|M|70.52,57.35|N|From Darkscryer Raastok.|
+A Kura's Vengeance|QID|33582|M|70.77,56.79|N|From Kura the Blind.|
+R Veil Shadar|QID|33580|M|71.11,57.30;73.18,59.47;74.71,61.33|CS|N|Straight across.|
+C The Purge of Veil Shadar|QID|33580|CHAT|S|M|75.80,61.20;74.70,63.35;74.80,66.05;78.35,60.60|CN|
+C Forbidden Knowledge|QID|33581|NC|S|M|74.52,66.93|N|These are reddish glowing books on the carpets and tables.|
+K Wing-Guard Kuuan|QID|33582|M|79.11,60.47;80.11,61.58;80.52,64.29|CS|QO|1|T|Wing-Guard Kuuan|N|In the cave|
+C The Purge of Veil Shadar|QID|33580|CHAT|US|M|75.80,61.20;74.70,63.35;74.80,66.05;78.35,60.60|CN|
+C Forbidden Knowledge|QID|33581|NC|US|M|74.52,66.93|N|These are reddish glowing books on the carpets and tables.|
+T The Purge of Veil Shadar|QID|33580|M|70.63,57.40|N|To Shadow-Sage Iskar.|
+T Forbidden Knowledge|QID|33581|M|70.51,57.34|N|To Darkscryer Raastok.|
+T Kura's Vengeance|QID|33582|M|70.77,56.78|N|To Kura the Blind.|
+
+
+T Pieces of Us|QID|33734|M|76.71,55.24|N|To Crystal-Shaper Barum, who moved a bit.|
+T Burning Sky|QID|33740|M|76.71,55.24|N|To Crystal-Shaper Barum|
+T Barum's Notes|QID|33761|M|76.71,55.24|N|To Crystal-Shaper Barum|
+
+;A Burning Sky|QID|33740|PRE|36843|M|73.1,38.7|N|From Crystal-Shaper Barum|; Neutral
+;A Pieces of Us|QID|33734|M|0.0,0.0|N|From Crystal-Shaper Barum|; Neutral
+;C Burning Sky|QID|33740|S|M|79.8,34.6|N|Adherent Wing-Guard|
+;C Burning Sky|QID|33740|M|75.4,63.2|N|Adherent Squallbringer|
+;C Burning Sky|QID|33740|M|76.0,43.8|N|Adherent Sun-Caller|
+;C Pieces of Us|QID|33734|M|75.8,44.4|N|Crystal-Shaper's Tools|
+;C Pieces of Us|QID|33734|M|77.9,43.1|N|Melani's Doll|
+;C Pieces of Us|QID|33734|M|78.2,43.8|N|Annals of Aruuna|
+;C Burning Sky|QID|33740|US|M|79.8,34.6|N|Adherent Wing-Guard|
+
+;T Burning Sky|QID|33740|M|76.6,55.2|N|To Crystal-Shaper Barum|
+;T Pieces of Us|QID|33734|M|76.6,55.2|N|To Crystal-Shaper Barum|
 
 R The Pilgrim's Road|QID|34578|M|71.27,24.07;72.53,24.53;73.13,26.42;74.63,30.75;72.66,38.06;67.30,42.83|CS|N|Its a long ride.  We will break it up a little. Head out the back.|
+
+T The Foot of the Fortress|QID|34908|M|62.0,69.3|N|To Magister Serena|
+A Dropping In|QID|34913|PRE|34908|M|62.0,69.3|N|From Magister Serena|
+T Dropping In|QID|34913|M|69.9,69.5|N|To Magister Serena|
+
+A While We're in the Neighborhood|QID|34909|PRE|34913|M|69.9,69.5|N|From Magister Serena|
+A Vicious Viziers|QID|34888|PRE|34913|M|69.9,69.5|N|From Magister Serena|
+A Orbs of Power|QID|34889|PRE|34913|M|69.9,69.5|N|From Magister Serena|
+T While We're in the Neighborhood|QID|34909|M|0,0|N|To Magister Serena|
+T Vicious Viziers|QID|34888|M|0,0|N|To Magister Serena|
+T Orbs of Power|QID|34889|M|0,0|N|To Magister Serena|
+
+A The Final Step|QID|34912|PRE|34909;34888;34889|M|0,0|N|From Magister Serena|
+C The Final Step|QID|34912|M|64.0,81.8|N|Witch Lord Morkurk|
+C The Final Step|QID|34912|M|64.3,81.8|N|Arcane Nexus|
+T The Final Step|QID|34912|M|0,0|N|To Magister Serena|
+A Due Cause to Celebrate|QID|34711|PRE|34912|M|0,0|N|From Magister Serena|
+T Due Cause to Celebrate|QID|34711|M|69.7,20.8|N|To Magister Serena|
+A Joining the Ranks|QID|34993|PRE|34711|M|69.7,20.8|N|From Magister Serena|RANK|2|
+T Joining the Ranks|QID|34993|M|69.7,20.8|N|To Magister Serena|
+
+
+A Not In Your House|QID|34804|PRE|34773|M|69.60,21.60|N|From Quartermaster O'Riley|
+K Ripgut|QID|34804|M|67.30,20.81|QO|1|N|Out the main gate on top of the rise.|T|Ripgut|
+
+;A Wanted: Kil'uun|QID|34103|M|69.43,21.14|N|From Patrick Messer|RANK|3|
+;A Wanted: Hilaani|QID|34104|M|69.43,21.14|N|From Patrick Messer|RANK|3|
+
+
+
 
 A Seek Out the Seer|QID|33871|M|67.50,43.75;70.78,47.38;68.98,45.97|CN|N|From Elumm who walks up and down this road.|
 R Duskfall Island|QID|34578|M|67.56,44.76;66.29,46.85;65.83,47.53|CS|N|Next, Duskfall!|
@@ -169,6 +287,7 @@ R Tomb of Lights|QID|34578|M|61.87,52.16;61.00,53.62;62.43,56.83;63.45,61.83|CS|
 C Wanted: Hilaani|QID|34104|M|66.21,65.30|N|Hilaani, between Tombs of Light and Gordal Fortress, waaay to the south of fort. Party of 3 suggested.|
 R Gordal Foothills|QID|34578|M|63.41,63.12;62.47,65.40;62.41,67.42|CS|N|Now on to the Gordunni|
 
+T Not In Your House|QID|34804|M|69.60,21.60|N|To Quartermaster O'Riley|
 T Going to the Gordunni|QID|34578|M|69.57,67.87|N|To Miall|
 A Dropping Bombs|QID|34976|M|62.57,67.87|N|From Miall|
 C Dropping Bombs|QID|34976|M|63.46,68.99|QO|1|U|112091|N|Base Catapult Destroyed|
@@ -199,88 +318,7 @@ T The Only Way to Travel|QID|34981|M|69.78,20.74|N|To Miall|
 A Armor Up|QID|34982|M|69.8,20.8|N|From Miall|RANK|2|
 T Armor Up|QID|34982|M|69.8,20.8|N|To Miall|
 
-C Wanted: Kil'uun|QID|34103|M|66.20,34.40;72.90,31.40;72.95,25.95;67.05,36.35;73.20,28.30;72.75,34.15;66.25,31.77;68.88,27.29;71.28,24.52;69.80,37.25|CN|N|Kil'uun, Circles clockwise south of Fort Wrynn around Voljin's Pride. Party of 3 suggested.|
 T Wanted: Kil'uun|QID|34103|M|69.43,21.14|N|To Patrick Messer|
-
-; Mage Tower
-; A An Audience With The Archmage|QID|34631|M|69.9,20.8|N|From Foreman Eksos|
-T An Audience With The Archmage|QID|34631|M|75.0,31.2|N|To Archmage Khadgar|
-A Making Acquaintances|QID|34815|PRE|34631|M|75.0,31.2|N|From Archmage Khadgar|
-T Making Acquaintances|QID|34815|M|85.0,31.0|N|To Magister Serena|
-
-A Creating the Ink|QID|34609|PRE|34815|M|85.0,31.0|N|From Magister Serena|
-A Forming the Scroll|QID|34612|PRE|34815|M|85.0,31.0|N|From Magister Serena|
-A Gathering the Spark|QID|34619|PRE|34815|M|85.0,31.0|N|From Magister Serena|
-C Forming the Scroll|QID|34612|M|82.2,31.6|N|Slumbering Protector|
-C Creating the Ink|QID|34609|M|84.0,29.8|N|Encroaching Giant|
-C Creating the Ink|QID|34609|M|83.0,31.6|N|Invasive Shambler|
-T Creating the Ink|QID|34609|M|0,0|N|To Magister Serena|
-T Forming the Scroll|QID|34612|M|0,0|N|To Magister Serena|
-T Gathering the Spark|QID|34619|M|0,0|N|To Magister Serena|
-
-A Next Steps|QID|34875|PRE|34609;34612;34619|M|0,0|N|From Magister Serena|
-T Next Steps|QID|34875|M|69.6,21.1|N|To Magister Serena|
-A The Foot of the Fortress|QID|34908|PRE|34875|M|69.6,21.1|N|From Magister Serena|
-T The Foot of the Fortress|QID|34908|M|62.0,69.3|N|To Magister Serena|
-A Dropping In|QID|34913|PRE|34908|M|62.0,69.3|N|From Magister Serena|
-T Dropping In|QID|34913|M|69.9,69.5|N|To Magister Serena|
-
-A While We're in the Neighborhood|QID|34909|PRE|34913|M|69.9,69.5|N|From Magister Serena|
-A Vicious Viziers|QID|34888|PRE|34913|M|69.9,69.5|N|From Magister Serena|
-A Orbs of Power|QID|34889|PRE|34913|M|69.9,69.5|N|From Magister Serena|
-T While We're in the Neighborhood|QID|34909|M|0,0|N|To Magister Serena|
-T Vicious Viziers|QID|34888|M|0,0|N|To Magister Serena|
-T Orbs of Power|QID|34889|M|0,0|N|To Magister Serena|
-
-A The Final Step|QID|34912|PRE|34909;34888;34889|M|0,0|N|From Magister Serena|
-C The Final Step|QID|34912|M|64.0,81.8|N|Witch Lord Morkurk|
-C The Final Step|QID|34912|M|64.3,81.8|N|Arcane Nexus|
-T The Final Step|QID|34912|M|0,0|N|To Magister Serena|
-A Due Cause to Celebrate|QID|34711|PRE|34912|M|0,0|N|From Magister Serena|
-T Due Cause to Celebrate|QID|34711|M|69.7,20.8|N|To Magister Serena|
-A Joining the Ranks|QID|34993|PRE|34711|M|69.7,20.8|N|From Magister Serena|RANK|2|
-T Joining the Ranks|QID|34993|M|69.7,20.8|N|To Magister Serena|
-
-; The Plight of the Arakkoa
-A As the Smoke Rises|QID|34685|PRE|34711+34981|M|69.45,21.46|N|From Kalaam|
-R The Road to the Signpost|QID|34685|M|71.27,24.07;72.53,24.53;73.13,26.42;74.63,30.75;73.07,38.69|CS|N|Its a long ride. Head out the back.|
-T As the Smoke Rises|QID|34685|M|73.07,38.75|N|To Crystal-Shaper Barum|
-
-A Burning Sky|QID|33740|M|73.07,38.75|N|From Crystal-Shaper Barum|
-A Pieces of Us|QID|33734|M|73.07,38.75|N|From Crystal-Shaper Barum|
-A Barum's Notes|QID|33761|ACTIVE|33740;33734|M|76.27,42.77|N|From Barum's Notes|
-A Pyrophobia|QID|33578|M|77.74,43.96|N|From Raksi|
-C Burning Sky|QID|33740|M|75.80,45.20;78.20,45.00;79.80,34.50;75.38,36.52;77.30,41.00;74.89,66.49;73.60,59.25;77.90,38.00;76.81,43.26;78.06,35.61;75.25,39.86;81.62,36.14;77.61,61.06;75.12,62.17|CN|N|Kill Wing-Guards, Squallbringers, and Sun-Callers.|S|
-
-K Sun-Sage Kairyx|QID|33578|M|78.45,45.23|QO|1|N|Sun-Sage Kairyx|
-T Pyrophobia|QID|33578|M|77.74,43.96|N|To Raksi|
-A What the Draenei Found|QID|33579|M|77.74,43.96|N|From Raksi|
-C Harmonic Crystal|QID|33761|M|77.74,44.08|QO|3|N|Green Spiky Crystal|
-C Melani's Doll|QID|33734|M|77.91,42.98|QO|2|
-C Polished Crystal|QID|33761|M|76.98,43.08|QO|2|N|Clear Purple Rectangle|
-C Annals of Aruuna|QID|33734|M|75.45,44.13|QO|3|N|
-C Honed Crystal|QID|33761|M|76.17,44.26|QO|1|N|Glowing Red Spike|
-C Crystal-Shaper's Tools|QID|33734|M|77.54,41.24|QO|1|
-C Burning Sky|QID|33740|M|75.80,45.20;78.20,45.00;79.80,34.50;75.38,36.52;77.30,41.00;74.89,66.49;73.60,59.25;77.90,38.00;76.81,43.26;78.06,35.61;75.25,39.86;81.62,36.14;77.61,61.06;75.12,62.17|CN|N|Kill Wing-Guards, Squallbringers, and Sun-Callers.|US|
-R Aruuna Crystal Mine|QID|33579|M|77.76,41.23;78.39,35.49|CS||N|Go to the mine entrance.|
-C Ancient Prism|QID|33579|M|82.72,37.89|N|Go to the right of the tracks and cross the rock bridge to get to it.|
-T What the Draenei Found|QID|33579|M|82.64,37.78|N|To Raksi, who snunk in behind you.|
-T Pieces of Us|QID|33734|M|76.71,55.24|N|To Crystal-Shaper Barum, who moved a bit.|
-T Burning Sky|QID|33740|M|76.71,55.24|N|To Crystal-Shaper Barum|
-T Barum's Notes|QID|33761|M|76.71,55.24|N|To Crystal-Shaper Barum|
-
-A The Purge of Veil Shadar|QID|33580|M|70.50,56.85|N|From Shadow-Sage Iskar.|
-A Kura's Vengeance|QID|33582|M|70.77,56.79|N|From Kura the Blind.|
-A Forbidden Knowledge|QID|33581|M|70.52,57.35|N|From Darkscryer Raastok.|
-R Veil Shadar|QID|33580|M|71.11,57.30;73.18,59.47;74.71,61.33|CS|N|Straight across.|
-C The Purge of Veil Shadar|QID|33580|CHAT|S|M|75.80,61.20;74.70,63.35;74.80,66.05;78.35,60.60|CN|
-C Forbidden Knowledge|QID|33581|NC|S|M|74.52,66.93|N|These are reddish glowing books on the carpets and tables.|
-K Wing-Guard Kuuan|QID|33582|M|79.11,60.47;80.11,61.58;80.52,64.29|CS|QO|1|T|Wing-Guard Kuuan|N|In the cave|
-C The Purge of Veil Shadar|QID|33580|CHAT|US|M|75.80,61.20;74.70,63.35;74.80,66.05;78.35,60.60|CN|
-C Forbidden Knowledge|QID|33581|NC|US|M|74.52,66.93|N|These are reddish glowing books on the carpets and tables.|
-T The Purge of Veil Shadar|QID|33580|M|70.63,57.40|N|To Shadow-Sage Iskar.|
-T Forbidden Knowledge|QID|33581|M|70.51,57.34|N|To Darkscryer Raastok.|
-T Kura's Vengeance|QID|33582|M|70.77,56.78|N|To Kura the Blind.|
 
 ; The Battle for Shattrath
 H Fort Wrynn|QID|36801|N|Hearth back or fly to Fort Wrynn|
@@ -493,20 +531,6 @@ T Wanted: Ra'tok the Hammer|QID|34105|M|69.43,21.14|N|To Patrick Messer|
 ; Sometime when in
 A As the Smoke Rises|QID|34685|M|0.0,0.0|N|From ?|; Neutral
 T As the Smoke Rises|QID|34685|M|73.0,38.6|N|To Crystal-Shaper Barum|
-A They Came From Above|QID|36843|M|67.50,42.17|N|From Akhan, near the fork to the Pilgrim's highway.|
-T They Came From Above|QID|36843|M|73.0,38.6|N|To Crystal-Shaper Barum|
-
-A Burning Sky|QID|33740|LEAD|34685;36843|M|0.0,0.0|N|From Crystal-Shaper Barum|; Neutral
-C Burning Sky|QID|33740|M|79.8,34.6|N|Adherent Wing-Guard|
-C Burning Sky|QID|33740|M|75.4,63.2|N|Adherent Squallbringer|
-C Burning Sky|QID|33740|M|76.0,43.8|N|Adherent Sun-Caller|
-T Burning Sky|QID|33740|M|76.6,55.2|N|To Crystal-Shaper Barum|
-
-A Pieces of Us|QID|33734|M|0.0,0.0|N|From Crystal-Shaper Barum|; Neutral
-C Pieces of Us|QID|33734|M|75.8,44.4|N|Crystal-Shaper's Tools|
-C Pieces of Us|QID|33734|M|77.9,43.1|N|Melani's Doll|
-C Pieces of Us|QID|33734|M|78.2,43.8|N|Annals of Aruuna|
-T Pieces of Us|QID|33734|M|76.6,55.2|N|To Crystal-Shaper Barum|
 
 K Ra'kahn|M|59.48,59.59|RANK|3|
 ]]
