@@ -146,6 +146,14 @@ function WoWPro.RowFontSet()
 		row.note:SetTextColor(WoWProDB.profile.notetextcolor[1], WoWProDB.profile.notetextcolor[2], WoWProDB.profile.notetextcolor[3], 1);
 		row.track:SetTextColor(WoWProDB.profile.tracktextcolor[1], WoWProDB.profile.tracktextcolor[2], WoWProDB.profile.tracktextcolor[3], 1);
 		WoWPro.mousenotes[i].note:SetTextColor(WoWProDB.profile.notetextcolor[1], WoWProDB.profile.notetextcolor[2], WoWProDB.profile.notetextcolor[3], 1);
+
+		-- Set the icon and checkbox sizes based on the step font size
+		local size = (select(2,row.step:GetFont()) or 14)
+		row.action.frame:SetWidth(size+2)
+		row.action.frame:SetHeight(size+2)
+		row.check:SetWidth(size)
+		row.check:SetHeight(size)
+
 	end
 	WoWPro.StickyTitle:SetFont(WoWProDB.profile.stickytitlefont, WoWProDB.profile.stickytitletextsize)
 	WoWPro.StickyTitle:SetTextColor(WoWProDB.profile.stickytitletextcolor[1], WoWProDB.profile.stickytitletextcolor[2], WoWProDB.profile.stickytitletextcolor[3], 1);
@@ -767,6 +775,9 @@ function WoWPro:CreateDropdownMenu()
 		{text = "Display Settings", func = function() 
 			InterfaceOptionsFrame_OpenToCategory("Guide Display") 
 		end},
+		{text = "Icon Legend", func = function() 
+			InterfaceOptionsFrame_OpenToCategory("Icon Legend") 
+		end},
 		{text = L["Guide List"], func = function() 
 			InterfaceOptionsFrame_OpenToCategory("Guide List") 
 		end},
@@ -843,3 +854,58 @@ function WoWPro:AbleFrames()
 end
 
 WoWPro:CreateMainFrame()
+
+-- Macro stuff
+do -- closure
+
+local THROTTLE_TIME = 0.4
+local throt, m_type, m_body
+local f = CreateFrame("Frame")
+f:Hide()
+f:SetScript("OnShow", function(self)
+	throt = THROTTLE_TIME
+end)
+f:SetScript("OnUpdate", function(self, elapsed)
+	throt = throt - elapsed
+	if throt < 0 then
+		WoWPro:SetMacro(m_type, m_body)
+		f:Hide()
+	end
+end)
+
+local function SetMarcro_bucket(macroType, macroBody)
+	m_type, m_body = macroType, macroBody
+	f:Show()
+end
+
+function WoWPro:SetMacro(macroType, macroBody)
+	--assert(macroType == "WPI" or macroType == "WPT","Invalide macro type: " .. (macroType or 'nil'))
+
+	if InCombatLockdown() then
+		-- Wait until after lockdown to update the macro
+		SetMarcro_bucket(macroType, macroBody)
+		return
+	end
+
+	-- select the icon
+	local macroIcon = (macroType == "WPI" or not macroBody or macroBody:find("#showtooltip")) and "INV_MISC_QUESTIONMARK" or "Ability_Marksmanship"
+
+
+
+	-- find macro
+	local macroIndex = _G.GetMacroIndexByName(macroType)
+
+	-- create macro if not present
+	if macroIndex == 0 then
+		macroIndex = _G.CreateMacro(macroType, macroIcon, "", 1, 0)
+	end
+
+	-- set error message and error sound if there is no usable quest item
+	local error_msg = (macroType == "WPI" and "No suitable quest item found") or "Nothig to target"
+	macroBody = macroBody or "/script UIErrorsFrame:AddMessage(\"" .. error_msg .. "\", 1.0, 0.0, 0.0, 53, 5);"
+	    .. "PlaySoundFile(\"Sound\\\\Interface\\\\Error.wav\");"
+
+	_G.EditMacro(macroIndex, macroType, macroIcon, macroBody)
+end
+
+end -- closure

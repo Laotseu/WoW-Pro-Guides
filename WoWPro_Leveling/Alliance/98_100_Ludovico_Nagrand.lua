@@ -58,17 +58,17 @@ T Taking the Fight to Nagrand|QID|34674;37184|M|86.40,66.20|N|To Lieutenant Balf
 A The Might of the Warsong|QID|34675|M|88.40,66.20|N|From Lieutenant Balfor.|PRE|34674;37184|
 K Malroc Stonesunder |QID|35932|M|81.09,59.77|N|*Rare Kill*\nDrops Malroc's Staff of Command worth 54g.|RANK|3|
 K Redclaw the Feral |QID|35712|M|73.57,58.02|N|*Rare Kill*\nDrops Redclaw's Gutripper worth 43g.|RANK|3|
+f Telaari Station|QID|34678|M|63.62,61.56|N|With John Shelby.|
 T The Might of the Warsong|QID|34675|M|63.52,61.88|N|To Rangari D'kaan at Telaari Station.|
 
 A Up and Running |QID|34678|M|63.52,61.88|N|From Rangari D'kaan.|
 C Up and Running |QID|34678|NC|QO|3|N|Loot the Transmission Flywheel, inside the hut.|M|63.67,62.37|
-f Telari Station|QID|34678|M|63.62,61.56|N|With John Shelby.|
 C Up and Running |QID|34678|NC|QO|2|N|Loot the Prop Rotor, just behind Gryphon Master.|M|63.75,61.56|
-C Up and Running |QID|34678|QO|1|N|Loot Assorted Engineering Parts on the floor next to Captain Washburn.|M|62.09,62.12|
+C Up and Running |QID|34678|NC|QO|1|N|Loot Assorted Engineering Parts on the floor next to Captain Washburn.|M|62.09,62.12|
 T Up and Running |QID|34678|M|63.07,61.96|N|To Thaelin Darkanvil.|
 
 A Operation: Surprise Party |QID|34682|M|63.07,61.96|N|From Thaelin Darkanvil.|
-C Operation: Surprise Party |QID|34682|N|Mount Thaelin's Copter.|M|63.02,61.97|
+C Operation: Surprise Party |QID|34682|NC|N|Mount Thaelin's Copter.|M|63.02,61.97|
 T Operation: Surprise Party |QID|34682|N|To Rangari Ogir in Rangari Overlook.|M|65.88,68.62|
 
 A Mo'mor Might Know |QID|34716|N|From Rangari Ogir.|M|65.88,68.62|
@@ -183,8 +183,8 @@ A Obliterating Ogres |QID|34572|M|78.79,69.26|N|From Rangari Eleena|
 C Obliterating Ogres|QID|34572|S|M|83.38,74.85|N|Kill the Ogres.|
 A Removing the Paper Trail|QID|34597|M|81.34,70.38|N|From the Ogre Scrolls.|
 C Removing the Paper Trail|QID|34597|NC|M|82.01,73.68|S|N|Click the Boxes of Ogre Research to destroy them.|
-C Obtaining Ogre Offensive Orders|QID|34593|QO|2|M|83.20,70.39|T|Thulgork|N|Kill and loot Thurgork for the orders.|
-C Obtaining Ogre Offensive Orders|QID|34593|QO|1|M|84.05,73.42|T|Crulgorosh|N|Kill and loot Crulgorosh for the orders. He can be found in the building up the stairs and to the left.|
+K Thulgork|QID|34593|QO|2|M|83.20,70.39|T|Thulgork|N|Kill and loot Thurgork for the orders.|
+K Crulgorosh|QID|34593|QO|1|M|84.05,73.42|T|Crulgorosh|N|Kill and loot Crulgorosh for the orders. He can be found in the building up the stairs and to the left.|
 
 K Warmaster Blugthol |QID|34645|M|82.79,76.03|N|*Rare Kill*\nDrops Blug'thol's Bloody Bracers worth 14g.|RANK|3|
 
@@ -223,10 +223,10 @@ A Meet Me in the Cavern|QID|34956|M|85.44,54.60|N|From Lantresor of the Blade.|
 C The Friend o' My Enemy|QID|34952|M|85.42,55.30|N|Finish this up before you go in the Cavern as the ones inside don't count and when you come out you will be neutral to them.|US|
 T Meet Me in the Cavern|QID|34956|M|89.99,55.94|N|To Lantresor of the Blade.|
 
-A Challenge of the Masters|QID|34957|M|89.99,55.94|N|From Lantresor of the Blade.|
-C Challenge of the Masters|QID|34868|M|90.78,60.43|N|Kill the various challengers up to Warlord Dharl of the Thrice-Bloodied Blade.|
+A Challenge of the Masters|QID|34957|M|89.99,55.94|N|From Lantresor of the Blade.|; The Masters' Cavern |Z|950;10|
+C Challenge of the Masters|QID|34957|M|90.78,60.43|N|Kill the various challengers up to Warlord Dharl of the Thrice-Bloodied Blade.|; The Masters' Cavern |Z|950;10|
 
-H Telaari Station |QID|34868|N|Use your hearthstone to return to Telaari Station.|ACTIVE|34596;34877;34957;34952|
+H Telaari Post |QID|34868|N|Use your hearthstone to return to Telaari Post.|ACTIVE|34596;34877;34957;34952|
 
 T Reglakk's Research|QID|34596|M|63.52,61.88|N|From Rangari D'kaan.|
 T Removing the Reinforcements|QID|34877|M|63.52,61.88|N|From Rangari D'kaan.|
@@ -261,6 +261,7 @@ R Vault of the Titan |QID|35663|N|Head to the Vault of the Titan.|M|67.20,49.55|
 C A Lesson in Teamwork |QID|35663|N|Loot the Ancient Reliquary from the ground or kill and loot the Highmaul.|NC|S|
 C A Lesson in Archaeology |QID|35632|N|Deploy the Teleportation Beacon.|NC|QO|1|M|70.75,47.50|
 C A Lesson in Archaeology |QID|35632|N|Wait for the dialog to finish.|NC|QO|2|M|70.75,47.50|
+;C A Lesson in Archaeology |QID|35632|QO|1|M|70.0,40.3|Z|Nagrand|; Vault of the Titan |Z|950;11|
 C A Lesson in Teamwork |QID|35663|N|Finish looting the Ancient Reliquary from the ground or kill and loot the Highmaul.|NC|US|M|68.85,48.65|
 
 T A Lesson in Teamwork |QID|35663|N|To Gazmolf Futzwangler|M|71.13,52.35|
