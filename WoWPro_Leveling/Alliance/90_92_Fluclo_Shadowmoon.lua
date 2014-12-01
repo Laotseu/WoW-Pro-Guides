@@ -283,7 +283,7 @@ T Shadows Awaken |QID|34019|N|To Prophet Velen|CN|M|49.42,36.81;49.3,37.4|
 A Into Twilight |QID|33072|N|From Prophet Velen|CN|M|49.42,36.81;49.3,37.4|PRE|34019|
 
 ;The following quest has been seen at 49.1,38.6 and 49.08,37.25 - not yet found out why it varies (yet!)
-A The Southern Wilds |QID|35444|N|From Farmer Gehaar|M|49.08,37.25;49.1,38.6|CS|PRE|34019|
+A The Southern Wilds |QID|35444|N|From Farmer Gehaar|M|49.1,38.6|CS|PRE|34019|
 
 ; The next 7 blocks of quests are dependant upon which profession item(s) you have looted from Karnoth.
 H Lunarfall |QID|36308;33814;36236|N|Use your Garrison Hearthstone, or fly back to your garrison.|U|110560|ACTIVE|36308;35342;36236|
