@@ -80,7 +80,7 @@ N Reccomendations|QID|33230|N|WoWPro is a great addon, but your Timeless Isle ex
 T A Flash of Bronze...|QID|33230|M|80.65,33.18|Z|Vale of Eternal Blossoms|FACTION|Horde|N|To Chromie, at the Mogu'Shan Palace upper level.|
 A Journey to the Timeless Isle|QID|33232|M|80.65,33.18|Z|Vale of Eternal Blossoms|FACTION|Horde|N|From Chromie|
 R Timeless Isle|QID|33232|M|21.8,39.8|U|104110|FACTION|Horde|N|Use watch and get wisked away!|
-f Huojin Landing|QID|33232|M|21.92,39.75|FACTION|Horde|N|Chi-Ro the Skytamer is the flightmaster|
+f Huojin Landing|M|21.92,39.75|FACTION|Horde|N|Chi-Ro the Skytamer is the flightmaster|
 T Journey to the Timeless Isle|QID|33232|M|22.01,40.93|FACTION|Horde|N|To Watcher Alundra.|
 A Time Keeper Kairoz|QID|33156|M|22.01,40.93|FACTION|Horde|N|From Watcher Alundra.|
 
@@ -103,15 +103,83 @@ R Inkeeper|QID|33161|M|36.59,46.83|N|Say hello to Graceful Swan, your Innkeeper.
 R Mail-Grummie|QID|33161|M|36.91,46.83|N|Say hello to Hopswift, chat with him to get your mail.|T|Hopswift|
 T A Timeless Tour|QID|33161|M|34.54,53.63|N|To Kairoz.|
 
+; Riddles - One time quests
+
+L Rolo's Riddle|QID|32974|M|20.10,56.90;20.50,71.20;20.90,74.00;21.10,44.90;21.30,40.90;22.90,55.00;23.10,75.50;24.20,67.80;34.20,87.10;61.80,83.60;67.10,78.80;70.20,67.20;22.70,69.45;36.50,87.45;60.10,88.45;68.20,74.45;23.45,37.75;23.45,58.85;36.45,20.25;62.45,80.53;20.60,53.50;25.85,70.50;21.45,49.70;20.40,36.05;25.50,60.05;23.39,46.30;33.80,22.50;23.57,50.35;23.25,33.35;26.55,28.38;26.51,51.65;25.40,55.25;23.00,61.60;55.60,87.75;20.68,61.03;65.49,77.06;22.55,35.23;20.90,63.75;71.22,72.90;39.65,91.75;22.79,29.99;29.35,30.15|CN|N|Click on Glinting Sand and get Rolo's Riddle.|L|102225|
+A Rolo's Riddle|QID|32974|N|Click on the Riddle you found in the Glinting Sand to get the quest.|U|102225|
+T Rolo's Riddle|QID|32974|M|49.37,69.41|N|To Mound of Dirt, behind the jumping pillars.|
+A Rolo's Riddle|QID|32975|M|49.37,69.41|PRE|32974|N|From Mound of Dirt, behind the jumping pillars.|
+T Rolo's Riddle|QID|32975|M|34.57,26.67|N|To Mound of Dirt, at the rear of Three Breeze Terrace.|
+A Rolo's Riddle|QID|32976|M|34.57,26.67|PRE|32975|N|From Mound of Dirt, at the rear of Three Breeze Terrace.|
+N Rolo's Riddle|ACTIVE|32976|M|41.2,63.6|N|You have one of two options:  Buy a glider or ride an Albatross. Ku-Mo sells them. Click this step off and pick your option.|T|Ku-Mo|
+N Use an Albatross|ACTIVE|32976|M|33.88,55.22|N|Once you are on the albatross, skip to the turn-in step so you know when to exit.|T|Highwind Albatross|
+R Timeless Waters|ACTIVE|32976|M|69,7|N|Take your water stider or raft onto the waters till you get here.  You should now be able to fly straight up as far as you dare on your flying mount and then go towards the lake, where the arrow points.  You will be dismounted, and then use your glider.|U|104346|
+T Rolo's Riddle|QID|32976|M|66.06,23.26|N|To Rolo's Treasure.|
+
+
+; Maybe you got the cash now?
+C Time In Your Hands|QID|33228|N|Wander about the island killing anything you can until you have your 1000.  Takes less than an hour. Why pay up? It opens up the [Hints From The Past] and [The Last Emperor] quest lines.|
+T Time In Your Hands|QID|33228|M|34.54,53.63|N|To Kairoz.|
+A Hints From The Past|QID|33332|M|34.54,53.63|PRE|33228|N|From Kairoz.|
+A The Last Emperor|QID|33335|M|34.54,53.63|PRE|33228|N|From Kairoz.|
+A The Essence of Time|QID|33336|M|34.54,53.63|PRE|33161|N|From Kairoz.|
+
+; A Vision in Time
+T The Essence of Time|QID|33336|M|34.54,53.63|N|To Kairoz.|L|105715|
+A Empowering the Hourglass|QID|33338|M|34.54,53.63|PRE|33336|N|From Kairoz.|
+C Empowering the Hourglass|QID|33338|N|Kill and loot till you get 50 Epoch Stones.|S|
+t Empowering the Hourglass|QID|33338|M|34.54,53.63|N|To Kairoz.|
+
+A Visions in Time|QID|33337;33375;33376;33377;33378;33379|M|34.54,53.63|PRE|33338|N|From Kairoz, He will offer six version of the quest each in turn. Accept whichever he offers.|
+U A Vision in Time|QID|33337|Z|Siege of Orgrimmar|U|105930|
+U Refining The Vision|QID|33375|Z|Siege of Orgrimmar|U|105931|
+U Seeking Fate|QID|33376|Z|Siege of Orgrimmar|U|105932|
+U Hidden Threads|QID|33377|Z|Siege of Orgrimmar|U|105933|
+U Courting Destiny|QID|33378|Z|Siege of Orgrimmar|U|10594|
+U One Final Turn|QID|33379|Z|Siege of Orgrimmar|U|105935|
+t Visions in Time|QID|33337|M|34.54,53.63|N|To Kairoz.|
+t Refining The Vision|QID|33375|M|34.54,53.63|N|To Kairoz.|
+t Seeking Fate|QID|33376|M|34.54,53.63|N|To Kairoz.|
+t Hidden Threads|QID|33377|M|34.54,53.63|N|To Kairoz.|
+t Courting Destiny|QID|33378|M|34.54,53.63|N|To Kairoz.|
+t One Final Turn|QID|33379|M|34.54,53.63|N|To Kairoz.|
+
+; Time Worn Journal
+C Hints From The Past|QID|33332|M|42.69,55.72|N|Sold by Mistweaver Ai for 500, or you can buy on AH for not much.|
+T Hints From The Past|QID|33332|M|34.54,53.63|N|To Kairoz. Sell the book on the AH or mail to an alt.|
+A Timeless Treasures|QID|33333|M|34.54,53.63|PRE|33332|N|From Kairoz.|
+C Timeless Treasures|QID|33333|M|24.8,53.04;22.15,49.27|CN|N|Two chests are marked on the map. If you already looted them, go to the Achievments module and select the "Treasure" guide for the rest.|
+T Timeless Treasures|QID|33333|M|34.54,53.63|N|To Kairoz.|
+A Strong Enough To Survive|QID|33334|M|34.54,53.63|PRE|33333|N|From Kairoz, weekly quest.|
+C Strong Enough To Survive|QID|33334||N|Kill 5 Rares or Rare Elites on the island this week. The addon NPCScan works great for spotting them.|S|
+t Strong Enough To Survive|QID|33334|M|34.54,53.63|N|To Kairoz.|
+t Empowering the Hourglass|QID|33338|M|34.54,53.63|N|To Kairoz.|
+
+; Shaohao Reputation
+T The Last Emperor|QID|33335|M|42.86,55.2|N|To Emperor Shaohao. Chat with him to finish the quest.|
+A Timeless Nutriment|QID|33340|M|42.86,55.2|PRE|33335|N|From Emperor Shaohao.|
+C Timeless Nutriment|QID|33340|M|44.0,49.2;42.3,68.2|CN|N|Eat some Ripe Crispfruit that has fallen to the ground.|
+T Timeless Nutriment|QID|33340|M|42.86,55.2|N|To Emperor Shaohao.|
+A Wayshrines Of The Celestials|QID|33341|M|42.86,55.2|PRE|33340|N|From Emperor Shaohao.|
+C Wayshrines Of The Celestials|QID|33341|M|22.80,29.30;26.70,52.20;28.00,72.10;30.20,45.50;35.00,29.50;37.50,74.20;43.40,55.90;49.80,70.20;53.00,60.80;58.10,46.70;63.90,50.60;66.20,72.30|CN|N|Pick a shrine and click on it!|
+T Wayshrines Of The Celestials|QID|33341|M|42.86,55.2|N|To Emperor Shaohao.|
+A Path of the Mistwalker|QID|33374|M|42.86,55.2|PRE|33341|N|From Emperor Shaohao, daily quest.|
+A Drive Back The Flame|QID|33342|M|42.86,55.2|PRE|33374|N|From Emperor Shaohao.|
+C Path of the Mistwalker|QID|33374|M|67.6, 66.7|N|I like Croaking Hollow since they are mostly elites and can be peeled off nicely each day. Lots of kitties nearby if you get bored. When you mouse over the creature, it will tell you if it good for the quest.  If you need REP, go kill Ordon yaungol instead.|
+t Path of the Mistwalker|QID|33374|M|42.86,55.2|N|To Emperor Shaohao.|
+t Drive Back The Flame|QID|33342|M|42.86,55.2|N|To Emperor Shaohao.|
+A The Archiereus Of Flame|QID|33343|M|42.86,55.2|PRE|33342|N|From Emperor Shaohao.|
+T The Archiereus Of Flame|QID|33343|M|42.86,55.2|N|To Emperor Shaohao.|
+
 ; Weekly Loots
-A Pillar Hopping Tracking Quest|QID|32969|M|49.71,69.42|N|From Gleaming Treasure Chest, weekly, on the Firewalkers path. Hop onto the pillar and loot.  Easy as pie, NOT.|
-T Pillar Hopping Tracking Quest|QID|32969|M|49.71,69.42|N|To Gleaming Treasure Chest.|
+A Feather Fall Tracking Quest|QID|32971|M|58.49,60.14|N|From Gleaming Crane Statue, weekly, on the Firewalkers path.  You will be launched into the air and the you will fall slowly. Steer towards a platform and loot as many as you can in 1 minute.  If you buy a [Golden Glider], dont complete the quest until late in the week, as you can access almostg anything you want this way!|
+T Feather Fall Tracking Quest|QID|32971|M|58.51,60.06|N|To Gleaming Crane Statue.|
 N Rope-Bound Treasure Chest: First Way|QID|32968|M|60.2,45.9;53.94,47.21|CS|N|On the Firewalkers path. If you like walking on ropes, start here and work your way to the chest.|
 N Rope-Bound Treasure Chest: Second Way|QID|32968|M|38.8,58.8;53.94,47.21|CS|N|If you like riding on an Albatross, target one near the Celestial Court and then kill it when you are near the chest.|T|Highwind Albatross|
 A Rope Drop Tracking Quest|QID|32968|M|53.94,47.21|N|From Rope-Bound Treasure Chest.|
 T Rope Drop Tracking Quest|QID|32968|M|53.94,47.21|N|To Rope-Bound Treasure Chest.|
-A Feather Fall Tracking Quest|QID|32971|M|58.49,60.14|N|From Gleaming Crane Statue, weekly, on the Firewalkers path.  You will be launched into the air and the you will fall slowly. Steer towards a platform and loot as many as you can in 1 minute.  If you buy a [Golden Glider], dont complete the quest until late in the week, as you can access almostg anything you want this way!|
-T Feather Fall Tracking Quest|QID|32971|M|58.51,60.06|N|To Gleaming Crane Statue.|
+A Pillar Hopping Tracking Quest|QID|32969|M|49.71,69.42|N|From Gleaming Treasure Chest, weekly, on the Firewalkers path. Hop onto the pillar and loot.  Easy as pie, NOT.|
+T Pillar Hopping Tracking Quest|QID|32969|M|49.71,69.42|N|To Gleaming Treasure Chest.|
 
 ; Coin Aquisition
 A A Timeless Question|QID|33211|M|65,50.6|N|From Senior Historian Evelyna, daily.|
@@ -155,77 +223,17 @@ C A Timeless Question|QID|33211|QG|White wolves|N|Frostwolf clan|
 C A Timeless Question|QID|33211|QG|Zandalari|N|Talak|
 C A Timeless Question|QID|33211|QG|Zangarmarsh|N|Coilfang Reservoir|
 T A Timeless Question|QID|33211|M|65,50.6|N|To Senior Historian Evelyna.|
+
+t Strong Enough To Survive|QID|33334|M|34.54,53.63|N|To Kairoz.|
+t Empowering the Hourglass|QID|33338|M|34.54,53.63|N|To Kairoz.|
+
+
 A Little Tommy Newcomer|QID|33222|M|34.68,60.32|PRE|31951|SPELL|Battle Pet Training;119467;true|N|From Little Tommy Newcomer, and battle Lil' Oondasta, a Boss beast.  |
 T Little Tommy Newcomer|QID|33222|M|34.68,60.32|N|To Little Tommy Newcomer.|
+
 ; This quest is independent of the one above, but if you can't do it, you have no business doing this one!
 A The Celestial Tournament|QID|33137|M|34.72,59.68|PRE|33222|N|From Master Li.|
 T The Celestial Tournament|QID|33137|M|34.72,59.68|N|To Master Li?|
-
-; Maybe you got the cash now?
-C Time In Your Hands|QID|33228|N|Wander about the island killing anything you can until you have your 1000.  Takes less than an hour. Why pay up? It opens up the [Hints From The Past] and [The Last Emperor] quest lines.|
-T Time In Your Hands|QID|33228|M|34.54,53.63|N|To Kairoz.|
-A Hints From The Past|QID|33332|M|34.54,53.63|PRE|33228|N|From Kairoz.|
-A The Last Emperor|QID|33335|M|34.54,53.63|PRE|33228|N|From Kairoz.|
-A The Essence of Time|QID|33336|M|34.54,53.63|PRE|33161|N|From Kairoz.|
-
-; A Vision in Time
-T The Essence of Time|QID|33336|M|34.54,53.63|N|To Kairoz.|L|105715|
-A Empowering the Hourglass|QID|33338|M|34.54,53.63|PRE|33336|N|From Kairoz.|
-C Empowering the Hourglass|QID|33338|N|Kill and loot till you get 50 Epoch Stones.|S|
-t Empowering the Hourglass|QID|33338|M|34.54,53.63|N|To Kairoz.|
-A Visions in Time|QID|33337;33375;33376;33377;33378;33379|M|34.54,53.63|PRE|33338|N|From Kairoz, He will offer six version of the quest each in turn. Accept whichever he offers.|
-U A Vision in Time|QID|33337|Z|Siege of Orgrimmar|U|105930|
-U Refining The Vision|QID|33375|Z|Siege of Orgrimmar|U|105931|
-U Seeking Fate|QID|33376|Z|Siege of Orgrimmar|U|105932|
-U Hidden Threads|QID|33377|Z|Siege of Orgrimmar|U|105933|
-U Courting Destiny|QID|33378|Z|Siege of Orgrimmar|U|10594|
-U One Final Turn|QID|33379|Z|Siege of Orgrimmar|U|105935|
-t Visions in Time|QID|33337|M|34.54,53.63|N|To Kairoz.|
-t Refining The Vision|QID|33375|M|34.54,53.63|N|To Kairoz.|
-t Seeking Fate|QID|33376|M|34.54,53.63|N|To Kairoz.|
-t Hidden Threads|QID|33377|M|34.54,53.63|N|To Kairoz.|
-t Courting Destiny|QID|33378|M|34.54,53.63|N|To Kairoz.|
-t One Final Turn|QID|33379|M|34.54,53.63|N|To Kairoz.|
-
-; Time Worn Journal
-C Hints From The Past|QID|33332|M|42.69,55.72|N|Sold by Mistweaver Ai for 500, or you can buy on AH for not much.|
-T Hints From The Past|QID|33332|M|34.54,53.63|N|To Kairoz. Sell the book on the AH or mail to an alt.|
-A Timeless Treasures|QID|33333|M|34.54,53.63|PRE|33332|N|From Kairoz.|
-C Timeless Treasures|QID|33333|M|24.8,53.04;22.15,49.27|CN|N|Two chests are marked on the map. If you already looted them, go to the Achievments module and select the "Treasure" guide for the rest.|
-T Timeless Treasures|QID|33333|M|34.54,53.63|N|To Kairoz.|
-A Strong Enough To Survive|QID|33334|M|34.54,53.63|PRE|33333|N|From Kairoz, weekly quest.|
-C Strong Enough To Survive|QID|33334||N|Kill 5 Rares or Rare Elites on the island this week. The addon NPCScan works great for spotting them.|S|
-t Strong Enough To Survive|QID|33334|M|34.54,53.63|N|To Kairoz.|
-
-; Shaohao Reputation
-T The Last Emperor|QID|33335|M|42.86,55.2|N|To Emperor Shaohao. Chat with him to finish the quest.|
-A Timeless Nutriment|QID|33340|M|42.86,55.2|PRE|33335|N|From Emperor Shaohao.|
-C Timeless Nutriment|QID|33340|M|44.0,49.2;42.3,68.2|CN|N|Eat some Ripe Crispfruit that has fallen to the ground.|
-T Timeless Nutriment|QID|33340|M|42.86,55.2|N|To Emperor Shaohao.|
-A Wayshrines Of The Celestials|QID|33341|M|42.86,55.2|PRE|33340|N|From Emperor Shaohao.|
-C Wayshrines Of The Celestials|QID|33341|M|22.80,29.30;26.70,52.20;28.00,72.10;30.20,45.50;35.00,29.50;37.50,74.20;43.40,55.90;49.80,70.20;53.00,60.80;58.10,46.70;63.90,50.60;66.20,72.30|CN|N|Pick a shrine and click on it!|
-T Wayshrines Of The Celestials|QID|33341|M|42.86,55.2|N|To Emperor Shaohao.|
-A Path of the Mistwalker|QID|33374|M|42.86,55.2|PRE|33341|N|From Emperor Shaohao, daily quest.|
-A Drive Back The Flame|QID|33342|M|42.86,55.2|PRE|33374|N|From Emperor Shaohao.|
-C Path of the Mistwalker|QID|33374|M|67.6, 66.7|N|I like Croaking Hollow since they are mostly elites and can be peeled off nicely each day. Lots of kitties nearby if you get bored. When you mouse over the creature, it will tell you if it good for the quest.  If you need REP, go kill Ordon yaungol instead.|
-t Path of the Mistwalker|QID|33374|M|42.86,55.2|N|To Emperor Shaohao.|
-t Drive Back The Flame|QID|33342|M|42.86,55.2|N|To Emperor Shaohao.|
-A The Archiereus Of Flame|QID|33343|M|42.86,55.2|PRE|33342|N|From Emperor Shaohao.|
-T The Archiereus Of Flame|QID|33343|M|42.86,55.2|N|To Emperor Shaohao.|
-
-; Riddles - One time quests
-
-l Rolo's Riddle|QID|32974|M|20.10,56.90;20.50,71.20;20.90,74.00;21.10,44.90;21.30,40.90;22.90,55.00;23.10,75.50;24.20,67.80;34.20,87.10;61.80,83.60;67.10,78.80;70.20,67.20;22.70,69.45;36.50,87.45;60.10,88.45;68.20,74.45;23.45,37.75;23.45,58.85;36.45,20.25;62.45,80.53;20.60,53.50;25.85,70.50;21.45,49.70;20.40,36.05;25.50,60.05;23.39,46.30;33.80,22.50;23.57,50.35;23.25,33.35;26.55,28.38;26.51,51.65;25.40,55.25;23.00,61.60;55.60,87.75;20.68,61.03;65.49,77.06;22.55,35.23;20.90,63.75;71.22,72.90;39.65,91.75;22.79,29.99;29.35,30.15|CN|N|Click on Glinting Sand and get Rolo's Riddle.|L|102225|
-A Rolo's Riddle|QID|32974|N|Click on the Riddle you found in the Glinting Sand to get the quest.|U|102225|
-T Rolo's Riddle|QID|32974|M|49.37,69.41|N|To Mound of Dirt, behind the jumping pillars.|
-A Rolo's Riddle|QID|32975|M|49.37,69.41|PRE|32974|N|From Mound of Dirt, behind the jumping pillars.|
-T Rolo's Riddle|QID|32975|M|34.57,26.67|N|To Mound of Dirt, at the rear of Three Breeze Terrace.|
-A Rolo's Riddle|QID|32976|M|34.57,26.67|PRE|32975|N|From Mound of Dirt, at the rear of Three Breeze Terrace.|
-N Rolo's Riddle|ACTIVE|32976|M|41.2,63.6|N|You have one of two options:  Buy a glider or ride an Albatross. Ku-Mo sells them. Click this step off and pick your option.|T|Ku-Mo|
-N Use an Albatross|ACTIVE|32976|M|33.88,55.22|N|Once you are on the albatross, skip to the turn-in step so you know when to exit.|T|Highwind Albatross|
-R Timeless Waters|ACTIVE|32976|M|69,7|N|Take your water stider or raft onto the waters till you get here.  You should now be able to fly straight up as far as you dare on your flying mount and then go towards the lake, where the arrow points.  You will be dismounted, and then use your glider.|U|104346|
-T Rolo's Riddle|QID|32976|M|66.06,23.26|N|To Rolo's Treasure.|
-
 ; Pirates!
 N Dread Ship Vazuvius|QID|32957|M|38.00,90.80;39.33,92.38|CN|N|Head out to the ship and battle Cursed Hozen Swabbys util they drop the key. They count towards [Path of the Mistwalker]. The [Cursed Swabby Helmet] is the featured loot.|L|104015|
 A Sunken Hozen Treasure - Tracking Quest|QID|32957|M|40.4,92.98|N|From Sunken Treasure.|
@@ -275,6 +283,18 @@ A Noodle Time|QID|33146|PRE|33027|M|53.6,51.2|Z|Valley of the Four Winds|N|From 
 T Noodle Time|QID|33146|M|53.6,51.2|Z|Valley of the Four Winds|N|From Sungshin Ironpaw|
 A Noodle Time: Bonus|QID|33358|PRE|33027|M|53.6,51.2|Z|Valley of the Four Winds|N|From Sungshin Ironpaw, daily scenario.|
 T Noodle Time: Bonus|QID|33358|M|53.6,51.2|Z|Valley of the Four Winds|N|From Sungshin Ironpaw|
+
+; Quests that may not have been turnin yet
+t Strong Enough To Survive|QID|33334|M|34.54,53.63|N|To Kairoz.|
+t Empowering the Hourglass|QID|33338|M|34.54,53.63|N|To Kairoz.|
+
+t Visions in Time|QID|33337|M|34.54,53.63|N|To Kairoz.|
+t Refining The Vision|QID|33375|M|34.54,53.63|N|To Kairoz.|
+t Seeking Fate|QID|33376|M|34.54,53.63|N|To Kairoz.|
+t Hidden Threads|QID|33377|M|34.54,53.63|N|To Kairoz.|
+t Courting Destiny|QID|33378|M|34.54,53.63|N|To Kairoz.|
+t One Final Turn|QID|33379|M|34.54,53.63|N|To Kairoz.|
+
 ]]
 
 end)

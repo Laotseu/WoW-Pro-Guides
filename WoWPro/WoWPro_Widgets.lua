@@ -1,3 +1,5 @@
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 ----------------------------------
 --      WoWPro_Widgets.lua      --
 ----------------------------------
@@ -21,8 +23,8 @@ end
 function WoWPro:CreateAction(parent, anchor)
     local frame = CreateFrame("Frame", nil, parent)
     frame:SetPoint("LEFT", anchor, "RIGHT", 3, 0)
-	frame:SetWidth(15)
-	frame:SetHeight(15)
+	frame:SetWidth(20)
+	frame:SetHeight(20)
 
 	local action = frame:CreateTexture()
 	action.frame = frame
@@ -32,16 +34,20 @@ function WoWPro:CreateAction(parent, anchor)
 end
 	
 function WoWPro:CreateStep(parent, anchor)
-	local step = parent:CreateFontString(nil, nil, "GameFontHighlight")
+	local step = parent:CreateFontString(nil, nil, "GameFontHighlightLarge")
+	--local step = parent:CreateFontString(nil, "OVERLAY")
+	--step:SetFont("Fonts\\FRIZQT__.TTF", 18, "OUTLINE")
+	--err("filename = %s, fontHeight = %s, flags = %s", step:GetFont())
 	step:SetPoint("LEFT", anchor, "RIGHT", 3, 0)
 	step:SetPoint("RIGHT")
 	step:SetJustifyH("LEFT")
-	
+
 	return step
 end
 
 function WoWPro:CreateNote(parent, anchor1)
-	local note = parent:CreateFontString(nil, nil, "GameFontNormalSmall")
+	--local note = parent:CreateFontString(nil, nil, "GameFontNormalSmall")
+	local note = parent:CreateFontString(nil, nil, "GameFontNormal")
 	note:SetPoint("TOPLEFT", anchor1, "BOTTOMLEFT", 0, -3)
 	note:SetPoint("RIGHT")
 	note:SetJustifyH("LEFT")
@@ -78,6 +84,14 @@ function WoWPro:CreateItemButton(parent, id)
 
 	itembutton:RegisterForClicks("anyUp")
 	itembutton:Hide()
+
+	--Add tooltip to the button
+	itembutton:HookScript("OnEnter", function (self)
+		if self.item_id then
+			GameTooltip:SetOwner(self); GameTooltip:SetHyperlink("item:" .. self.item_id); GameTooltip:Show();
+		end
+	end);
+	itembutton:HookScript("OnLeave", GameTooltip_Hide);
 	
 	return itembutton, itemicon, cooldown
 end
@@ -98,6 +112,14 @@ function WoWPro:CreateTargetButton(parent, id)
 	targetbutton:RegisterForClicks("anyUp")
 	targetbutton:Hide()
 	
+	--Add tooltip to the button
+	targetbutton:HookScript("OnEnter", function (self)
+		if self.tooltip_text then
+			GameTooltip:SetOwner(self); GameTooltip:SetText(self.tooltip_text); GameTooltip:Show();
+		end
+	end);
+	targetbutton:HookScript("OnLeave", GameTooltip_Hide);
+
 	return targetbutton, targeticon
 end
 
