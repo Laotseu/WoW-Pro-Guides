@@ -448,7 +448,7 @@ N The Hills of Valuun |QID|33084|N|Complete the Bonus Objective: The Hills of Va
 C The Big Haul |QID|33084|N|Kill and loot the Rock Bull, Rock Grazer and Rock Calf for the Raw Elekk Steak.|M|62.4,36.8|RANK|2|
 T The Big Haul |QID|33084|N|To Traevar Gunnermark|M|62.4,36.8|RANK|2|
 
-f Path of the Light|QID|35444|N|With Paaya.|M|59.35,46.00|ACTIVE|35444|
+f Path of Light|ALTFP|Path of the Light|N|With Paaya.|M|59.35,46.00|
 R The Draakorium |QID|35444|N|Run south along the road.|M|57.0,56.6|ACTIVE|35444|
 T The Southern Wilds |QID|35444|N|To Prelate Reenu.|M|57.0,57.5|ACTIVE|35444| ;From Farmer Gehaar
 
@@ -587,6 +587,59 @@ T Escape From Shaz'gul |QID|33081|N|To Yrel, now in Twilight Glade.|M|40.6,54.9|
 A Chasing Shadows |QID|33586|N|From Prophet Velen|M|40.53,54.91|PRE|33081+33059|
 A Fast Expansion|QID|33814|M|40.65,54.87|N|From Scout Valdez.|PRE|33081|
 
+H Lunarfall |QID|33814|N|Use your Garrison Hearthstone, or fly back to your garrison.|U|110560|
+T Fast Expansion|QID|33814|M|41.53,49.27|Z|Lunarfall|N|To Baros Alexston.|
+A Bigger is Better |QID|36592|M|41.53,49.27|Z|Lunarfall|N|From Baros Alexston.|
+C Bigger is Better |QID|36592|M|41.4,49.0|Z|Lunarfall|N|Select the Architect Table, and select "Upgrade" for the Town Hall.|NC|
+T Bigger is Better |QID|36592|M|31.8,31.2|Z|Lunarfall|N|To Baros Alexston.|
+
+A Things Are Not Goren Our Way |QID|34192|N|From Timothy Leens|M|65.46,41.79|Z|Lunarfall|PRE|36592|
+C Things Are Not Goren Our Way |QID|34192|N|Kill the Lunarfall Goren (both Red and Yellow count).|M|65.46,41.79|Z|Lunarfall|S|QO|1|
+K Stonetooth |QID|34192|T|Stonetooth|N|Head to the back of the mine and kill Stonetooth.|M|58.81,78.85|Z|Lunarfall Excavation@Lunarfall|T|Stonetooth|QO|2|
+C Things Are Not Goren Our Way |QID|34192|N|Kill the Lunarfall Goren (both Red and Yellow count).|M|65.46,41.79|Z|Lunarfall|US|QO|1|
+T Things Are Not Goren Our Way |QID|34192|N|To Timothy Leens|M|65.46,41.79|Z|Lunarfall|
+
+A Gloomshade Game Hunter |QID|33461|N|From the list of ingredients attached to the side of the cart.|M|44.3,53.9|Z|Lunarfall|
+A Lost Lumberjacks|QID|34820|M|37.9,63.7;48.92,42.24|CS|Z|Lunarfall|N|From Ken Loggin. \n(if you've already leveled up your garrison, you'll find Ken outside the fort to the west.|
+
+A Your First Alchemy Work Order |QID|36641|N|From your Alchemy. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Alchemy;76;119;120|
+C Your First Alchemy Work Order |QID|36641|N|Speak to Peter Kearie to start your first Alchemy Work Order.|QO|1|ACTIVE|36641|CHAT|
+A Your First Enchanting Work Order|QID|36645|N|From your Enchanter's Study. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Enchanter's Study;93;125;126|
+C Your First Enchanting Work Order|QID|36645|N|Speak to Garm to start your first Enchanting Work Order.|QO|1|ACTIVE|36645|CHAT|
+A Your First Engineering Work Order|QID|36646|N|From Zaren Hoffle. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Engineering Works;91;123;124|
+C Your First Engineering Work Order|QID|36646|N|Speak to Helayn Whent to start your first Engineering Work Order.|QO|1|ACTIVE|36646|CHAT|
+A Your First Jewelcrafting Work Order |QID|36644|N|From your Gem Boutique. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Gem Boutique;96;131;132|
+C Your First Jewelcrafting Work Order |QID|36644|N|Speak to Kaya Solasen to start your first Jewelcrafting Work Order.|QO|1|ACTIVE|36644|CHAT|
+A Your First Inscription Work Order |QID|36647|N|From your Scribe's Quarters. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Scribe's Quarters;95;129;130|
+C Your First Inscription Work Order |QID|36647|N|Speak to Kurt Broadoak to start your first Inscription Work Order.|QO|1|ACTIVE|36647|CHAT|
+A Lost in Transition |QID|37087|N|From Kyra Goldhands. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Storehouse;51;142;143|
+C Lost in Transition |QID|37087|N|Collect the crates of surplus materials from around the fort.|NC|BUILDING|Storehouse;51;142;143|
+A Your First Tailoring Work Order |QID|36643|N|From your Tailoring Emporium. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Tailoring Emporium;94;127;128|
+C Your First Tailoring Work Order |QID|36643|N|Speak to Kaylie Macdonald to start your first Tailoring Work Order.|QO|1|ACTIVE|36643|CHAT|
+A Your First Blacksmithing Work Order|QID|35168|N|From your Forge. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|The Forge;60;117;118|
+C Your First Blacksmithing Work Order|QID|35168|N|Speak to Yulia Samras to start your first Blacksmithing Work Order.|QO|1|ACTIVE|35168|CHAT|
+A Your First Leatherworking Work Order |QID|36642|N|From your Tannery. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|The Tannery;90;121;122|
+C Your First Leatherworking Work Order |QID|36642|N|Speak to Marianne Levine to start your first Leatherworking Work Order.|QO|1|ACTIVE|36642|CHAT|
+
+C Your First Alchemy Work Order |QID|36641|N|Collect the Alchemy Work Order.|QO|2|ACTIVE|36641|NC|
+T Your First Alchemy Work Order |QID|36641|N|To Peter Kearie.|ACTIVE|36641|
+C Your First Enchanting Work Order|QID|36645|N|Collect the Enchanting Work Order.|QO|2|ACTIVE|36645|NC|
+T Your First Enchanting Work Order|QID|36645|N|To Garm.|ACTIVE|36645|
+C Your First Engineering Work Order|QID|36646|N|Collect the Engineering Work Order.|QO|2|ACTIVE|36646|NC|
+T Your First Engineering Work Order|QID|36646|N|To Helayn Whent|ACTIVE|36646|
+C Your First Jewelcrafting Work Order |QID|36644|N|Collect the Jewelcrafting Work Order.|QO|2|ACTIVE|36644|NC|
+T Your First Jewelcrafting Work Order |QID|36644|N|To Kaya Solasen.|ACTIVE|36644|
+C Your First Inscription Work Order |QID|36647|N|Collect the Inscription Work Order.|QO|2|ACTIVE|36647|NC|
+T Your First Inscription Work Order |QID|36647|N|To Kurt Broadoak.|ACTIVE|36647|
+T Lost in Transition |QID|37087|N|To Kyra Goldhands|ACTIVE|37087|
+C Your First Tailoring Work Order |QID|36643|N|Collect the Tailoring Work Order.|QO|2|ACTIVE|36643|NC|
+T Your First Tailoring Work Order |QID|36643|N|To Kaylie Macdonald.|ACTIVE|36643|
+C Your First Blacksmithing Work Order|QID|35168|N|Collect the Blacksmithing Work Order.|QO|2|ACTIVE|35168|NC|
+T Your First Blacksmithing Work Order|QID|35168|N|To Yulia Samras|ACTIVE|35168|
+C Your First Leatherworking Work Order |QID|36642|N|Collect the Leatherworking Work Order.|QO|2|ACTIVE|36642|NC|
+T Your First Leatherworking Work Order |QID|36642|N|To Marianne Levine.|ACTIVE|36642|
+
+
 F Embaari Village |QID|33586|M|40.7,55.3|N|Fly to Embaari Village, or use your hearthstone if it has cooled down.|
 f Exile's Rise|QID|33586|M|45.58,25.37|N|At Wargra.|
 T Chasing Shadows |QID|33586|M|45.70,26.35|N|To Rulkan up Exile's Rise|
@@ -641,7 +694,7 @@ C Harbingers of the Void|QID|33793|N|Kill Essence of Anguish, who is inside Ance
 
 l Rovo's Dagger |QID|33573|N|Rovo's Dagger: Lootable object and tidy XP from Cave #2.|M|36.68,44.46|RANK|3|
 l Ashes of A'kumbo |QID|33584|N|Ashes of A'kumbo: Lootable object and tidy XP fropm Cave #3.|M|37.75,44.27|RANK|3|
-l Greka's Urn |QID|33614|N|Greka's Urn: Lootable object and tidy XP from Cave #4.|M|38.5,43.0|RANK|3| ; Added comma to coord
+l Greka's Urn |QID|33614|N|Greka's Urn: Lootable object and tidy XP from Cave #4.|M|38.5,43.0|RANK|3|
 l Beloved's Offering |QID|33046|N|Beloved's Offering: Lootable object and tidy XP from Cave #5.|M|36.79,41.41|RANK|3|
 l Uzko's Knickknacks |QID|33540|N|Uzko's Knickknacks: Lootable object for an i525 Blue Boots and tidy XP from Cave #6.|M|35.87,40.87|RANK|3|
 C Into Anguish|QID|35032|N|Deactivate the Mark of Anguish|QO|4|M|32.6,38.8|NC|
@@ -718,15 +771,6 @@ R Tranquil Court|QID|37322|M|70.4,50.4|N|Run east up the stairs to Tranquil Cour
 f Tranquil Court|M|70.4,50.4|N|With Itara|ACTIVE|37322|
 T The Prophet's Final Message|QID|37322|N|To Prophet Velen's Memorial|M|73.7,55.8|
 
-H Lunarfall |QID|33814|N|Use your Garrison Hearthstone, or fly back to your garrison.|U|110560|
-
-A Lost Lumberjacks|QID|34820|M|48.92,42.24|Z|Lunarfall|N|From Ken Loggin. \n(if you've already leveled up your garrison, you'll find Ken outside the fort to the west.|
-A Gloomshade Game Hunter |QID|33461|N|From the list of ingredients attached to the side of the cart.|M|44.2,53.9|Z|Lunarfall|
-
-T Fast Expansion|QID|33814|M|41.53,49.27|Z|Lunarfall|N|To Baros Alexston.|
-A Bigger is Better |QID|36592|M|41.53,49.27|Z|Lunarfall|N|From Baros Alexston.|
-C Bigger is Better |QID|36592|M|41.4,49.0|Z|Lunarfall|N|Select the Architect Table, and select "Upgrade" for the Town Hall.|NC|
-T Bigger is Better |QID|36592|M|31.8,31.2|Z|Lunarfall|N|To Baros Alexston.|
 T Supply Drop|QID|35905|M|31.8,31.2|Z|Lunarfall|N|To Baros Alexston.|
 
 A Building for Professions |QID|36100|M|31.8,31.2|Z|Lunarfall|N|From Baros Alexston.|
@@ -804,51 +848,7 @@ A Surly Dwarf |QID|36630|N|From Lieutenant Howell|M|38.30,96.88|Z|Ashran|PRE|366
 T Surly Dwarf |QID|36630|N|To Delvar Ironfist|M|41.05,86.93|Z|Ashran|
 A Delvar Ironfist |QID|36633|N|From Delvar Ironfist|M|41.05,86.93|Z|Ashran|PRE|36630|
 
-F Lunarfall|QID|34192|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36624|
-
-A Things Are Not Goren Our Way |QID|34192|N|From Timothy Leens|M|65.46,41.79|Z|Lunarfall|PRE|36592|
-C Things Are Not Goren Our Way |QID|34192|N|Kill the Lunarfall Goren (both Red and Yellow count).|M|65.46,41.79|Z|Lunarfall|S|QO|1|
-C Things Are Not Goren Our Way |QID|34192|N|Head to the back of the mine and kill Stonetooth.|M|58.81,78.85|Z|Lunarfall Excavation@Lunarfall|T|Stonetooth|QO|2|
-C Things Are Not Goren Our Way |QID|34192|N|Kill the Lunarfall Goren (both Red and Yellow count).|M|65.46,41.79|Z|Lunarfall|US|QO|1|
-T Things Are Not Goren Our Way |QID|34192|N|To Timothy Leens|M|65.46,41.79|Z|Lunarfall|
-
-A Your First Alchemy Work Order |QID|36641|N|From your Alchemy. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Alchemy;76;119;120|
-C Your First Alchemy Work Order |QID|36641|N|Speak to Peter Kearie to start your first Alchemy Work Order.|QO|1|ACTIVE|36641|CHAT|
-A Your First Enchanting Work Order|QID|36645|N|From your Enchanter's Study. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Enchanter's Study;93;125;126|
-C Your First Enchanting Work Order|QID|36645|N|Speak to Garm to start your first Enchanting Work Order.|QO|1|ACTIVE|36645|CHAT|
-A Your First Engineering Work Order|QID|36646|N|From Zaren Hoffle. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Engineering Works;91;123;124|
-C Your First Engineering Work Order|QID|36646|N|Speak to Helayn Whent to start your first Engineering Work Order.|QO|1|ACTIVE|36646|CHAT|
-A Your First Jewelcrafting Work Order |QID|36644|N|From your Gem Boutique. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Gem Boutique;96;131;132|
-C Your First Jewelcrafting Work Order |QID|36644|N|Speak to Kaya Solasen to start your first Jewelcrafting Work Order.|QO|1|ACTIVE|36644|CHAT|
-A Your First Inscription Work Order |QID|36647|N|From your Scribe's Quarters. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Scribe's Quarters;95;129;130|
-C Your First Inscription Work Order |QID|36647|N|Speak to Kurt Broadoak to start your first Inscription Work Order.|QO|1|ACTIVE|36647|CHAT|
-A Lost in Transition |QID|37087|N|From Kyra Goldhands. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Storehouse;51;142;143|
-C Lost in Transition |QID|37087|N|Collect the crates of surplus materials from around the fort.|NC|BUILDING|Storehouse;51;142;143|
-A Your First Tailoring Work Order |QID|36643|N|From your Tailoring Emporium. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|Tailoring Emporium;94;127;128|
-C Your First Tailoring Work Order |QID|36643|N|Speak to Kaylie Macdonald to start your first Tailoring Work Order.|QO|1|ACTIVE|36643|CHAT|
-A Your First Blacksmithing Work Order|QID|35168|N|From your Forge. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|The Forge;60;117;118|
-C Your First Blacksmithing Work Order|QID|35168|N|Speak to Yulia Samras to start your first Blacksmithing Work Order.|QO|1|ACTIVE|35168|CHAT|
-A Your First Leatherworking Work Order |QID|36642|N|From your Tannery. Not opened up yet? Click the scroll. Not built yet? Move onto another guide, and come back in an hour.|BUILDING|The Tannery;90;121;122|
-C Your First Leatherworking Work Order |QID|36642|N|Speak to Marianne Levine to start your first Leatherworking Work Order.|QO|1|ACTIVE|36642|CHAT|
-
-C Your First Alchemy Work Order |QID|36641|N|Collect the Alchemy Work Order.|QO|2|ACTIVE|36641|NC|
-T Your First Alchemy Work Order |QID|36641|N|To Peter Kearie.|ACTIVE|36641|
-C Your First Enchanting Work Order|QID|36645|N|Collect the Enchanting Work Order.|QO|2|ACTIVE|36645|NC|
-T Your First Enchanting Work Order|QID|36645|N|To Garm.|ACTIVE|36645|
-C Your First Engineering Work Order|QID|36646|N|Collect the Engineering Work Order.|QO|2|ACTIVE|36646|NC|
-T Your First Engineering Work Order|QID|36646|N|To Helayn Whent|ACTIVE|36646|
-C Your First Jewelcrafting Work Order |QID|36644|N|Collect the Jewelcrafting Work Order.|QO|2|ACTIVE|36644|NC|
-T Your First Jewelcrafting Work Order |QID|36644|N|To Kaya Solasen.|ACTIVE|36644|
-C Your First Inscription Work Order |QID|36647|N|Collect the Inscription Work Order.|QO|2|ACTIVE|36647|NC|
-T Your First Inscription Work Order |QID|36647|N|To Kurt Broadoak.|ACTIVE|36647|
-T Lost in Transition |QID|37087|N|To Kyra Goldhands|ACTIVE|37087|
-C Your First Tailoring Work Order |QID|36643|N|Collect the Tailoring Work Order.|QO|2|ACTIVE|36643|NC|
-T Your First Tailoring Work Order |QID|36643|N|To Kaylie Macdonald.|ACTIVE|36643|
-C Your First Blacksmithing Work Order|QID|35168|N|Collect the Blacksmithing Work Order.|QO|2|ACTIVE|35168|NC|
-T Your First Blacksmithing Work Order|QID|35168|N|To Yulia Samras|ACTIVE|35168|
-C Your First Leatherworking Work Order |QID|36642|N|Collect the Leatherworking Work Order.|QO|2|ACTIVE|36642|NC|
-T Your First Leatherworking Work Order |QID|36642|N|To Marianne Levine.|ACTIVE|36642|
-
+H Lunarfall|QID|34192|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36624|
 ; Having this quest and the [Ashran Appearance] quest causes the Ashran one not to complete.
 A The Secrets of Gorgrond |QID|35556|N|Moving onto Gorgrond next? Accept this quest from your Bulletin Board.|LEAD|36632;35556|LVL|92|M|42.65,44.74|Z|Lunarfall|O|
 
