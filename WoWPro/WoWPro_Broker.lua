@@ -676,7 +676,7 @@ function WoWPro:NextStep(k,i)
 				    -- This seems to be triggered sometimes in Shadowmoon...
 				    WoWPro:dbp("Prof unskip qid %s for no %s for profmaxlvl=%d and profmaxskill=%d",WoWPro.QID[k],prof, profmaxlvl, profmaxskill )
 				    skip = false
-				    hasProf = true
+				    --hasProf = true
 				end
 				if WoWPro.action[k] == "A" and not hasProf then
 				    -- If they do not have the profession, mark the step and quest as skipped
