@@ -346,6 +346,9 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 		WoWPro:SetSessionDailyQuests(WoWPro.QID[i])
 	end
 	WoWPro.altfp[i] = text:match("|ALTFP|([^|]*)|?")
+	if WoWPro.altfp[i] then
+		WoWPro.altfp[i] = (WoWPro.altfp[i]):format(_G.UnitName("player")) -- Hack for the Draenor garisson
+	end
 	WoWPro.why[i] = nil
 
     -- If the step is "Achievement" use the name and description from the server ...
