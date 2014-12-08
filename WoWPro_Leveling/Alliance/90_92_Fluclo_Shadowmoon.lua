@@ -312,6 +312,29 @@ A Ameeka, Master Tailor|QID|36262|M|43.0,54.9|Z|Lunarfall|N|From Aerun.|PRE|3623
 T Enchanted Highmaul Bracer|QID|36308|N|To Eileese Shadowsong|Z|Lunarfall|M|50.07,42.10|
 A The Arakkoan Enchanter|QID|36310|N|From Eileese Shadowsong|Z|Lunarfall|M|50.07,42.10|PRE|36308|
 
+A Ashran Appearance |QID|36624|N|From Lieutenant Thorn|M|31.27,32.72|Z|Lunarfall|
+C Ashran Appearance |QID|36624|N|Speak with Dungar Longdrink and ask him to fly you to Ashran,|CHAT|M|48.15,49.87|Z|Lunarfall|
+F Stormshield|QID|36624|N|Ask Dungar to take you to Stormshield in Ashran.|M|48.15,49.87|Z|Lunarfall|
+T Ashran Appearance |QID|36624|N|To Private Tristan|M|37.55,91.19|Z|Ashran|
+
+A Host Howell |QID|36626|N|From Private Tristan|M|37.55,91.19|Z|Ashran|PRE|36624|
+T Host Howell |QID|36626|N|To Lieutenant Howell|M|38.30,96.88|Z|Ashran|
+
+A Inspiring Ashran |QID|36629|N|From Lieutenant Howell|M|38.30,96.88|Z|Ashran|PRE|36626|
+C Inspiring Ashran |QID|36629|N|Speak with Jaesia Rosecheek|M|38.35,97.31|Z|Ashran|QO|1|CHAT|
+C Inspiring Ashran |QID|36629|N|Speak with Knewbie McGreen|M|44.29,89.37|Z|Ashran|QO|2|CHAT|
+C Inspiring Ashran |QID|36629|N|Speak with Vindicator Nuurem|M|40.74,97.09|Z|Ashran|QO|3|CHAT|
+T Inspiring Ashran |QID|36629|N|To Lieutenant Howell|M|38.30,96.88|Z|Ashran|
+
+A A Surly Dwarf |QID|36630|N|From Lieutenant Howell|M|38.30,96.88|Z|Ashran|PRE|36629|
+T A Surly Dwarf |QID|36630|N|To Delvar Ironfist|M|41.05,86.93|Z|Ashran|
+A Delvar Ironfist |QID|36633|N|From Delvar Ironfist|M|41.05,86.93|Z|Ashran|PRE|36630|
+H Lunarfall|QID|34192|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36624|
+
+H Lunarfall|QID|34192|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36624|
+; Having this quest and the [Ashran Appearance] quest causes the Ashran one not to complete.
+A The Secrets of Gorgrond |QID|35556|N|Moving onto Gorgrond next? Accept this quest from your Bulletin Board.|LEAD|36632;35556|LVL|92|M|42.65,44.74|Z|Lunarfall|O|
+
 F Embaari Village |QID|35343;36262;36310|N|Fly to Embaari Village|ACTIVE|35343;36262;36310|M|47.99,49.92|
 
 T The Young Alchemist|QID|35343|M|55.85,41.15|N|To Abatha.|
@@ -744,7 +767,7 @@ A Darkness Falls|QID|33837|N|From Prophet Velen.|M|46.4,38.7|PRE|33794;33083;337
 
 T Wanted: Kliaa's Stinger|QID|33834|N|To Dyuna|ACTIVE|33834|M|44.91,38.53|
 
-F Fey Landing |QID|36266|N|Fly to Fey Landing in Elodor.|ACTIVE|36266|
+F Elodor |QID|36266|N|Fly to Fey Landing in Elodor.|ACTIVE|36266|
 T The Clothes on Their Backs|QID|36266|N|To Ameeka.|M|58.2,26.5|
 A Hexcloth|QID|36269|N|From Ameeka.|PRE|36266|M|58.2,26.5|
 C Hexcloth|QID|36269|N|Click on Ameeka's Flytrap Ichor on the floor.|NC|M|58.28,26.57|
@@ -829,28 +852,6 @@ T Failed Apprentice |QID|36313|N|To Deema|M|37.4,72.6|
 A Oru'kai's Staff |QID|36315|N|From Deema|M|37.4,72.6|PRE|36313|
 C Oru'kai's Staff |QID|36315|N|Obtain Oru'kai's Staff from the water.|
 T Oru'kai's Staff |QID|36315|N|To Arcanist Delath|M|37.4,72.6|
-
-A Ashran Appearance |QID|36624|N|From Lieutenant Thorn|M|31.27,32.72|Z|Lunarfall|
-C Ashran Appearance |QID|36624|N|Speak with Dungar Longdrink and ask him to fly you to Ashran,|CHAT|M|48.15,49.87|Z|Lunarfall|
-F Stormshield|QID|36624|N|Ask Dungar to take you to Stormshield in Ashran.|M|48.15,49.87|Z|Lunarfall|
-T Ashran Appearance |QID|36624|N|To Private Tristan|M|37.55,91.19|Z|Ashran|
-
-A Host Howell |QID|36626|N|From Private Tristan|M|37.55,91.19|Z|Ashran|PRE|36624|
-T Host Howell |QID|36626|N|To Lieutenant Howell|M|38.30,96.88|Z|Ashran|
-
-A Inspiring Ashran |QID|36629|N|From Lieutenant Howell|M|38.30,96.88|Z|Ashran|PRE|36626|
-C Inspiring Ashran |QID|36629|N|Speak with Jaesia Rosecheek|M|38.35,97.31|Z|Ashran|QO|1|CHAT|
-C Inspiring Ashran |QID|36629|N|Speak with Knewbie McGreen|M|44.29,89.37|Z|Ashran|QO|2|CHAT|
-C Inspiring Ashran |QID|36629|N|Speak with Vindicator Nuurem|M|40.74,97.09|Z|Ashran|QO|3|CHAT|
-T Inspiring Ashran |QID|36629|N|To Lieutenant Howell|M|38.30,96.88|Z|Ashran|
-
-A Surly Dwarf |QID|36630|N|From Lieutenant Howell|M|38.30,96.88|Z|Ashran|PRE|36629|
-T Surly Dwarf |QID|36630|N|To Delvar Ironfist|M|41.05,86.93|Z|Ashran|
-A Delvar Ironfist |QID|36633|N|From Delvar Ironfist|M|41.05,86.93|Z|Ashran|PRE|36630|
-
-H Lunarfall|QID|34192|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36624|
-; Having this quest and the [Ashran Appearance] quest causes the Ashran one not to complete.
-A The Secrets of Gorgrond |QID|35556|N|Moving onto Gorgrond next? Accept this quest from your Bulletin Board.|LEAD|36632;35556|LVL|92|M|42.65,44.74|Z|Lunarfall|O|
 
 D Zone Finished|QID|33533;35556;36632|N|Zone finished (for now). Feel free to hearth to your garrison for your missions, otherwise move onto the Gorgrond guide.|
 
