@@ -34,6 +34,7 @@ local function createBlizzOptions()
 						if WoWPro.WorldEvents:IsEnabled() then WoWPro.WorldEvents:Disable() else WoWPro.WorldEvents:Enable() end
 					end
 			}, 
+			--[[
 			blank2 = {
 				order = 4,
 				type = "description",
@@ -166,6 +167,7 @@ local function createBlizzOptions()
 				imageWidth = 15,
 				imageHeight = 15
 			}, 
+			]]
 			
 		},
 	})
