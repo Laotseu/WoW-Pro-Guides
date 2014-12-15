@@ -138,6 +138,7 @@
 local guide = WoWPro:RegisterGuide("TwiDarkmoon",'WorldEvents',"DarkmoonFaireIsland", "Twists", "Neutral")
 WoWPro:GuideLevels(guide,1,90,45.000000)
 WoWPro.WorldEvents:GuideHoliday(guide,"Darkmoon Faire")
+WoWPro.WorldEvents:GuideZone(guide,"Darkmoon Island")
 WoWPro:GuideSteps(guide, function()
 return [[
 
