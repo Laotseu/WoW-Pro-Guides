@@ -287,10 +287,10 @@ C Shadows Awaken |QID|34019|N|Kill and loot Karnoth.|M|49.4,37.0|
 A The Mysterious Flask|QID|35342|N|Loot the Mysterious Flask from Karnoth, and use it to begin the quest.|U|113103|P|Alchemy;171;*;1;700|
 A The Strength of Iron|QID|36309|N|Loot Haephest's Satchel from Karnoth, and use it to begin the quest.|U|115343|P|Blacksmithing;164;*;1;700|
 A Enchanted Highmaul Bracer|QID|36308|N|Loot the Enchanted Highmaul Bracer from Karnoth, and use it to begin the quest.|U|115281|P|Enchanting;333;*;1;700|
-A Gnomish Location Transponder|QID|36286|N|Loot the Gnomish Location Transponder from Karnoth, and use it to begin the quest.|U|115278|P|Engineering;202;*;1;700|
+A Transponder 047-B|QID|36286|N|Loot the Gnomish Location Transponder from Karnoth, and use it to begin the quest.|U|115278|P|Engineering;202;*;1;700|
 A A Mysterious Satchel|QID|36239|N|Loot the Mysterious Satchel from Karnoth, and use it to begin the quest.|U|114984|P|Inscription;773;*;1;700|
 A A Power Lost|QID|36408|N|Loot the Drained Crystal Fragment from Karnoth, and use it to begin the quest.|U|115507|P|Jewelcrafting;755;*;1;700|
-A A Call for Huntsman|QID|36176|N|Loot the Dirty Note from Karnoth, and use it to begin the quest.|U|114877|P|Leatherworking;164;*;1;700|
+A A Call for Huntsman|QID|36176|N|Loot the Dirty Note from Karnoth, and use it to begin the quest.|U|114877|P|Leatherworking;165;*;1;700|
 A The Cryptic Tome of Tailoring|QID|36236|N|Loot the Cryptic Tome of Tailoring Note from Karnoth, and use it to begin the quest.|U|114972|P|Tailoring;197;*;1;700|
 
 ;The following quests have been seen at 49.3,37.4 and 49.42,36.81 - not yet found out why it varies (yet!)
@@ -301,10 +301,10 @@ A Into Twilight |QID|33072|N|From Prophet Velen|CN|M|49.42,36.81;49.3,37.4|PRE|3
 A The Southern Wilds |QID|35444|N|From Farmer Gehaar|M|49.1,38.6|CS|PRE|34019|
 
 ; The next 7 blocks of quests are dependant upon which profession item(s) you have looted from Karnoth.
-H Lunarfall |QID|36308;33814;36236|N|Use your Garrison Hearthstone, or fly back to your garrison.|U|110560|ACTIVE|36308;35342;36236|
+H Lunarfall |QID|36308;33814;36236|N|Use your Garrison Hearthstone, or fly back to your garrison.|U|110560|ACTIVE|36308;36309;35342;36236;36286;36239;36408;36176|
 
 T The Mysterious Flask|QID|35342|M|47.69,45.39|Z|Lunarfall|N|To Aenir.|
-A The Young Alchemist|QID|35343|M|47.69,45.39|Z|Lunarfall|N|From Aenir.|PRE|35342|
+A The Young Alchemist|QID|35343|M|40.3,53.6|Z|Lunarfall|N|From Aenir.|PRE|35342|
 
 T The Cryptic Tome of Tailoring|QID|36236|M|43.0,54.9|Z|Lunarfall|N|To Aerun.|ACTIVE|36236|
 A Ameeka, Master Tailor|QID|36262|M|43.0,54.9|Z|Lunarfall|N|From Aerun.|PRE|36236|
@@ -312,7 +312,7 @@ A Ameeka, Master Tailor|QID|36262|M|43.0,54.9|Z|Lunarfall|N|From Aerun.|PRE|3623
 T Enchanted Highmaul Bracer|QID|36308|N|To Eileese Shadowsong|Z|Lunarfall|M|50.07,42.10|
 A The Arakkoan Enchanter|QID|36310|N|From Eileese Shadowsong|Z|Lunarfall|M|50.07,42.10|PRE|36308|
 
-A Ashran Appearance |QID|36624|N|From Lieutenant Thorn|M|31.27,32.72|Z|Lunarfall|
+A Ashran Appearance |QID|36624|N|From Lieutenant Thorn|M|40.3,53.5|Z|Lunarfall|
 C Ashran Appearance |QID|36624|N|Speak with Dungar Longdrink and ask him to fly you to Ashran,|CHAT|M|48.15,49.87|Z|Lunarfall|
 F Stormshield|QID|36624|N|Ask Dungar to take you to Stormshield in Ashran.|M|48.15,49.87|Z|Lunarfall|
 T Ashran Appearance |QID|36624|N|To Private Tristan|M|37.55,91.19|Z|Ashran|
@@ -329,11 +329,7 @@ T Inspiring Ashran |QID|36629|N|To Lieutenant Howell|M|38.30,96.88|Z|Ashran|
 A A Surly Dwarf |QID|36630|N|From Lieutenant Howell|M|38.30,96.88|Z|Ashran|PRE|36629|
 T A Surly Dwarf |QID|36630|N|To Delvar Ironfist|M|41.05,86.93|Z|Ashran|
 A Delvar Ironfist |QID|36633|N|From Delvar Ironfist|M|41.05,86.93|Z|Ashran|PRE|36630|
-H Lunarfall|QID|34192|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36624|
-
-H Lunarfall|QID|34192|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36624|
-; Having this quest and the [Ashran Appearance] quest causes the Ashran one not to complete.
-A The Secrets of Gorgrond |QID|35556|N|Moving onto Gorgrond next? Accept this quest from your Bulletin Board.|LEAD|36632;35556|LVL|92|M|42.65,44.74|Z|Lunarfall|O|
+;F Lunarfall|QID|34192|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36624|
 
 F Embaari Village |QID|35343;36262;36310|N|Fly to Embaari Village|ACTIVE|35343;36262;36310|M|47.99,49.92|
 
@@ -461,7 +457,7 @@ A Supply Drop |QID|35905|N|From Exarch Naielle|PRE|34788|M|62.5,26.2|
 f Fey Landing |QID|35552|N|With Vamuun.|M|58.7,31.9|
 
 ;The next block is for Engineers only
-T Gnomish Location Transponder|QID|36286|N|To Goggles|M|60.9,32.6|ACTIVE|36286|
+T Transponder 047-B|QID|36286|N|To Goggles|M|60.9,32.6|
 A Snatch 'n' Grab|QID|36287|N|From Goggles|M|60.9,32.6|PRE|36286|
 C Snatch 'n' Grab|QID|36287|N|Obtain the Pilfered Parts from Moonlit Shore|NC|M|66.9,27.5|
 T Snatch 'n' Grab|QID|36287|N|To Goggles|M|60.9,32.6|PRE|36286|
@@ -574,7 +570,7 @@ C A Grandmother's Remedy |QID|33077|N|Finish squeezing the Vial of Toad Juice ou
 C Loola's Lost Love |QID|34876|N|Finish searching the loose mud|NC|US|M|45.0,51.0|
 C Engorged Heart |QID|33076|N|Finish killing and looting the Echidnian Hydra for their Engorged Heart|QO|2|US|M|45.0,51.0|
 C Swamplighter Dust |QID|33076|N|Finish killing and looting the Frenzied Swamplighters for the Swamplighter Dust, there are loads of them up Moonwillow Peak (which will also be the quest turn-in area)|QO|1|US|M|39.73,53.59;37.66,54.75;36.80,51.66|CS|
-T The Clarity Elixir |QID|33076|N|To Prophet Velen in Moonwillow Peak|CS|M|39.73,53.59;37.66,54.75;35.3,49.1|
+T The Clarity Elixir |QID|33076|N|To Prophet Velen in Moonwillow Peak|CN|M|39.73,53.59;37.66,54.75;35.3,49.1|
 
 A The Fate of Karabor |QID|33059|N|From Prophet Velen|M|35.3,49.1|PRE|33076|
 C The Fate of Karabor |QID|33059|N|Click on the Clarity Elixir to drink it|M|35.3,49.1|QO|1|NC|
@@ -588,6 +584,7 @@ T Loola's Lost Love |QID|34876|N|To Old Loola|M|41.3,55.1|
 
 C Going Undercover |QID|33080|N|Speak to Sylene and ask for a Shadowmoon orc illusion.|QO|1|M|40.7,54.6|CHAT|
 
+C The Clothes on Their Backs|QID|36266|N|Kill and loot the Shadowmoon Forces for their Ceremonial Shadowmoon Robes.|S|
 A The Dark that Blinds Us |QID|33078|N|From Loreseeker Heidii|M|42.1,57.4|
 C The Dark that Blinds Us |QID|33078|N|Click the Western stone to get a rubbing|QO|3|NC|M|43.7,60.5|
 C The Dark that Blinds Us |QID|33078|N|Click the Northern stone to get a rubbing|QO|2|NC|M|44.5,59.1|
@@ -605,6 +602,8 @@ A Escape From Shaz'gul |QID|33081|N|From Yrel|M|34.2,63.2|PRE|33080|
 
 C Escape From Shaz'gul |QID|33081|N|Speak to Yrel and select any two chat lines to inspire her.|QO|1|CHAT|M|34.2,63.2|
 C Escape From Shaz'gul |QID|33081|N|Escort Yrel out of Shaz'gul, a number of mobs will spawn at various points.|QO|2|M|39.2,57.5|
+
+C The Clothes on Their Backs|QID|36266|N|Finish killing and loot the Shadowmoon Forces for their Ceremonial Shadowmoon Robes.|US|
 
 T Escape From Shaz'gul |QID|33081|N|To Yrel, now in Twilight Glade.|M|40.6,54.9|
 A Chasing Shadows |QID|33586|N|From Prophet Velen|M|40.53,54.91|PRE|33081+33059|
@@ -706,7 +705,6 @@ A Across the Stars|QID|33795|M|35.37,36.95|N|From Illuminate Praavi.|PRE|34043|
 
 C Into Anguish|QID|35032|N|Head up the stairs, then use the Fragment of Anguish to remove the forcefield.|QO|1|M|35.0,37.9|NC|
 
-C The Clothes on Their Backs|QID|36266|N|Kill and loot the Shadowmoon Forces for their Ceremonial Shadowmoon Robes.|S|
 C On the Offensive|QID|33083|N|Kill the Shadowmoon Forces|S|
 C Across the Stars|QID|33795|N|Pick up the Star Readings from the floor.|NC|S|
 C The Great Salvation|QID|33794|N|Rescue the Draenei prisoners by opening the cages.|NC|S|
@@ -733,7 +731,6 @@ l Ronokk's Belongs |QID|33886|N|Ronokk's Belongs: Lootable object for a cloak an
 l Carved Drinking Horn |QID|33569|N|Carved Drinking Horn: Lootable object for Carved Drinking Horn and tidy XP.|M|33.50,39.65|RANK|3|
 C The Great Salvation|QID|33794|N|Finish rescuing the Draenei prisoners by opening the cages.|NC|US|
 C Across the Stars|QID|33795|N|Finish picking up the Star Readings from the floor.|NC|US|
-C The Clothes on Their Backs|QID|36266|N|Finish killing and loot the Shadowmoon Forces for their Ceremonial Shadowmoon Robes.|US|
 C On the Offensive|QID|33083|N|Finish killing the Shadowmoon Forces|US|
 
 A Wanted: Kliaa's Stinger|QID|33834|N|From the poster in Bloodthorn Hill. This is a 3-party group quest.|M|26.40,32.84|RANK|2|
@@ -852,6 +849,10 @@ T Failed Apprentice |QID|36313|N|To Deema|M|37.4,72.6|
 A Oru'kai's Staff |QID|36315|N|From Deema|M|37.4,72.6|PRE|36313|
 C Oru'kai's Staff |QID|36315|N|Obtain Oru'kai's Staff from the water.|
 T Oru'kai's Staff |QID|36315|N|To Arcanist Delath|M|37.4,72.6|
+
+H Lunarfall|QID|34192|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36624|
+; Having this quest and the [Ashran Appearance] quest causes the Ashran one not to complete.
+A The Secrets of Gorgrond |QID|35556|N|Moving onto Gorgrond next? Accept this quest from your Bulletin Board.|LEAD|36632;35556|LVL|92|M|42.65,44.74|Z|Lunarfall|O|
 
 D Zone Finished|QID|33533;35556;36632|N|Zone finished (for now). Feel free to hearth to your garrison for your missions, otherwise move onto the Gorgrond guide.|
 
