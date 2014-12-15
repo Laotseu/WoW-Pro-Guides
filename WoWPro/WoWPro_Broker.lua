@@ -663,7 +663,8 @@ function WoWPro:NextStep(k,i)
 				for p=1,6 do
 					if profs[p] then
 						local skillName, _, skillRank, maxskill, _, _, skillnum = GetProfessionInfo(profs[p])
-						if (tonumber(skillnum) == tonumber(profnum)) then
+						-- if (tonumber(skillnum) == tonumber(profnum)) then
+						if skillName == prof then
 							hasProf = true
 							if (profmaxlvl == 0) and (skillRank >= proflvl) then skip = false end
 							if (profmaxlvl > 0) and (skillRank < profmaxlvl) then skip = false end
