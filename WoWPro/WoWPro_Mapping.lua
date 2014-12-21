@@ -476,7 +476,11 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	end
 	if not i then return end
 
-	local coords; if WoWPro.map then coords = WoWPro.map[i] else coords = nil end
+	local coords
+	if WoWPro.map then coords = WoWPro.map[i] else coords = nil end
+	-- Special case for |M|0,0| which means not to set the arrow.
+	if coords == "0,0" then return end
+
 	local desc = WoWPro.step[i]
 	local zone
 	local floor = 0

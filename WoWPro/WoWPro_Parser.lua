@@ -727,7 +727,7 @@ function WoWPro:RowUpdate(offset)
 		if note then note = strtrim(note) note = string.gsub(note,"\\n","\n") end
 		
 		
-		if WoWProDB.profile.showcoords and coord then
+		if WoWProDB.profile.showcoords and coord and coord ~= "0,0" then
 		    note = note or ""
 		    if WoWPro.waypcomplete[k] == 1 then
 		        note = note.." ("..string.gsub(coord,";"," > ")..")"
