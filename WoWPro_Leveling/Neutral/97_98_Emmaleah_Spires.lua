@@ -97,10 +97,13 @@ N Beginnings|QID|34653|N|This guide begins at your garrison to take the free fli
 N Bonus Objectives|QID|34653|N|The bonus quests are not mentioned in this guide.  Feel free to do them if you want to.  You must be at least 96 to do this guide.|
 N Jumping Games|QID|34653|N|This zone has some archeaology rewards that require jumping and rope running (like Timeless Isle).  I leave these to you to figure out if you want to take the time.|
 N Nagrand|QID|34653|N|The Nagrand quests require level 98 and you are welcome to pick up the leadin at any time after that.  I did not include it in the guide until the very end to be sure that it is not in the guide before it is available to you.
-A Arakkoa Exodus|QID|34653|M|42.67,44.73|Z|Lunarfall|N|From the Bulletin Board|FACTION|Alliance|
-A Arakkoa Exodus|QID|36951|M|49.5,41.5|Z|Frostwall|N|From the Command Board|FACTION|Horde|
-F Spires of Arak|QID|34653|M|47.96,49.78|Z|Lunarfall|CC|CHAT|N|Take the chat option from Dungar.|FACTION|Alliance|
-F Spires of Arak|QID|36951|M|45.85,51.01|Z|Frostwall|CC|CHAT|N|Take the chat option from Brom.|FACTION|Horde|
+A News from Spires of Arak |QID|35554|M|69.7,21.6|Z|Talador|N|If you just finished the Talador guide, take this lead quest. Otherwise you can just igonre it.\n\nFrom Vindicator Icia|O|; Fort Wrynn |Z|946;0|
+T News from Spires of Arak |QID|35554|M|37.7,36.8|Z|Lunarfall|N|To Bodrick Grey|; Minifee's Fort |Z|971;0|
+
+A Arakkoa Exodus|QID|34653;36951|M|42.67,44.73|Z|Lunarfall|N|From the Bulletin Board|FACTION|Alliance|
+A Arakkoa Exodus|QID|36951;34653|M|49.5,41.5|Z|Frostwall|N|From the Command Board|FACTION|Horde|
+F Spires of Arak|QID|34653;36951|M|47.96,49.78|Z|Lunarfall|CC|CHAT|N|Take the chat option from Dungar.|FACTION|Alliance|
+F Spires of Arak|QID|36951;34653|M|45.85,51.01|Z|Frostwall|CC|CHAT|N|Take the chat option from Brom.|FACTION|Horde|
 
 T Arakkoa Exodus|QID|36951;34653|M|37.89,18.02|N|To Azik.|
 A The Shadows of Skettis|QID|34655|M|37.89,18.02|N|From Azik.|PRE|36951+34653|
@@ -115,7 +118,7 @@ C Adherents of the Sun God|QID|34657|M|42.77,14.32|US|
 T Hidden in Plain Sight|QID|34656|M|43.66,12.91|N|To Reshad.|
 T Adherents of the Sun God|QID|34657|M|43.66,12.91|N|To Reshad.|
 A Orders From On High|QID|34658|M|43.66,12.91|N|From Reshad.|PRE|34656;34657|
-C Orders From On High|QID|34658|M|45.80,15.28|T|Sun-Sage Rathyx|N|Kill Sun-Sage Rathyx and loot the orders.|
+K Sun-Sage Rathyx|QID|34658|M|45.80,15.28|T|Sun-Sage Rathyx|N|Kill Sun-Sage Rathyx and loot the orders.|
 T Orders From On High|QID|34658|M|45.38,18.25|N|To Reshad.|
 A The Crone|QID|34659|M|45.38,18.25|N|From Reshad.|PRE|34658|
 R Crow's Crook|QID|34659|M|50.66,28.59|N|Run South towards Crow's Crook.|
@@ -128,8 +131,8 @@ A All Due Respect|QID|35636|M|51.62,31.38|N|From Ornekka.|PRE|34659|
 A Echo Hunters|QID|34805|M|51.57,31.36|N|From Rashad.|PRE|34659|
 C A Charming Deception|QID|34756|M|49.60,38.24|S|NC|N|After you click on the charms, an adherant will attack, the charm gives you an illusion, which you can "dispell" to stun your opponent.|
 C Echo Hunters|QID|34805|M|50.23,39.80|S|N|These are bats, (up in the air), you need ranged to get their attention.|T|Echo Hunter|
-C All Due Respect|QID|35636|NC|QO|1|M|50.25,36.37|
-C All Due Respect|QID|35636|NC|QO|2|M|50.46,36.85|N|After you find the 2nd item, you will have to fight several adherants while Reshad studies what you have found.|
+C Get a Feather of Syth|QID|35636|NC|QO|1|M|50.25,36.37|
+C Get The Saga of Terokk|QID|35636|QO|2|M|50.46,36.85|N|After you find the 2nd item, you will have to fight several adherants while Reshad studies what you have found.|
 T All Due Respect|QID|35636|M|50.27,36.72|N|To Reshad.|
 A Syth's Secret|QID|35668|M|50.27,36.72|N|From Reshad.|PRE|35636|
 C Syth's Secret|QID|35668|CS|M|49.05,41.23;48.47,42.47|T|Sun-Talon Oberyx|N|Go down into the burrow,kill Oberyx and loot the eye.|
@@ -156,22 +159,23 @@ T Inspecting the Troops|QID|35276|M|40.00,60.47|N|To Jasper Fel.|FACTION|Allianc
 A Orders, Commander?|QID|35286|M|39.84,60.78|N|From Lieutenant Willem.|FACTION|Alliance|PRE|35276|
 C Orders, Commander?|QID|35286|M|39.70,60.84|NC|N|Pick your outpost.|FACTION|Alliance|
 T Orders, Commander?|QID|35286|M|39.84,60.78|N|To Lieutenant Willem.|FACTION|Alliance|
-A Outpost specific quest|QID|37327;35699|M|39.84,60.78|N|The quest (and quest giver) is determined by which building you choose. It is from Lieutenant Willam (brewery) or Millie Osgood (smugglers den).|FACTION|Alliance|PRE|35286|
-;A Peace Offering|QID|35699|N|From Millie Osgood.| -- smugglers den
-;A Befriending the Locals|QID|37327|N|From Lieutenant Willem -
+;A Outpost specific quest|QID|37327;35699|M|39.84,60.78|N|The quest (and quest giver) is determined by which building you choose. It is from Lieutenant Willam (brewery) or Millie Osgood (smugglers den).|FACTION|Alliance|PRE|35286|
+A Peace Offering|QID|37327;35699|N|From Millie Osgood.|M|39.5,61.3|FACTION|Alliance| -- smugglers den
+A Befriending the Locals|QID|37327;35699|N|From Lieutenant Willem|FACTION|Alliance| -
+A Wanted: Keeho's Severed Paw|QID|35674|M|39.46,61.66|N|From Wanted Poster inside the building.|FACTION|Alliance|PRE|35286|
+A Wanted: Spineslicer's Husk|QID|35675|M|39.46,61.66|N|From Wanted Poster.|FACTION|Alliance|PRE|35286|
+A Wanted: Venombarb|QID|35676|M|39.46,61.66|N|From Wanted Poster.|FACTION|Alliance|PRE|35286|
+A Pinchwhistle Gearworks|QID|35619;36861|M|39.63,60.62|N|From Watchman Kovak. If this quest isn't available to you, check to see if you have the quest offered at your garrison, (also called Pinchwhistle Gearworks) If you do, drop it and accept this one. (or go back to your garrison and ignore the guide).|FACTION|Alliance|PRE|35286|LVL|97| ; need to be 97 to get the quest, hope I did that right.A Old Friends|QID|35293|M|39.79,60.68|N|From Jasper Fel.|FACTION|Alliance|PRE|35286|
+h Southport|QID|35293|M|40.12,61.49|N|At Elria Willowfall.|FACTION|Alliance|
 
 R Axefall|QID|35275|M|40.06,44.04|N|On the other side of the mountain.|FACTION|Horde|
 T Inspecting the Troops|QID|35275|M|40.06,44.04|N|To Shadow Hunter Ukambe.|FACTION|Horde|
 A Orders, Commander?|QID|35277|M|40.19,43.46|N|From Taskmaster Gornek.|FACTION|Horde|PRE|35275|
 C Orders, Commander?|QID|35277|M|40.17,43.39|NC|N|Pick your outpost.|FACTION|Horde|
 T Orders, Commander?|QID|35277|M|40.18,43.51|N|To Taskmaster Gornek.|FACTION|Horde|
-A Outpost specific quest|QID|37326;35697|M|40.19,43.46|N|The quest (and quest giver) is determined by which building you choose. It is from Taskmaster Gornek (brewery) or Provisioner Galgar(smugglers den).|FACTION|Horde|PRE|35277|
-A Peace Offering|QID|37326;35697|M|40.05,43.18|N|From Provisioner Galgar.|-- smugglers den
-A Befriending the Locals|QID|37326;35697|N|From Taskmaster Gornek -- brewery
-
-h Southport|QID|35293|M|40.12,61.49|N|At Elria Willowfall.|FACTION|Alliance|
-A Old Friends|QID|35293|M|39.79,60.68|N|From Jasper Fel.|FACTION|Alliance|PRE|35286|
-
+;A Outpost specific quest|QID|37326;35697|M|40.19,43.46|N|The quest (and quest giver) is determined by which building you choose. It is from Taskmaster Gornek (brewery) or Provisioner Galgar(smugglers den).|FACTION|Horde|PRE|35277|
+A Peace Offering|QID|37326;35697|M|40.05,43.18|N|From Provisioner Galgar.|FACTION|Horde|-- smugglers den
+A Befriending the Locals|QID|37326;35697|N|From Taskmaster Gornek|FACTION|Horde| -- brewery
 A Wanted: Keeho's Severed Paw|QID|35669|M|40.11,43.05|N|From Wanted Poster, its inside the building if you choose the brewery.|FACTION|Horde|PRE|35277|
 A Wanted: Spineslicer's Husk|QID|35670|M|40.11,43.05|N|From Wanted Poster.|FACTION|Horde|PRE|35277|
 A Wanted: Venombarb|QID|35672|M|40.11,43.05|N|From Wanted Poster.|FACTION|Horde|PRE|35277|
@@ -307,9 +311,6 @@ H Axefall|QID|37328;37330|M|36.99,24.63|N|If you hearthstone isnt up or you didn
 T Not Here, Not Now|QID|37329;37331|M|39.89,60.84|N|To Lieutenant Willem.|FACTION|Alliance|
 A Attempted Murder|QID|35915|M|39.65,60.85|N|From Hulda Shadowblade.|PRE|37329|FACTION|Alliance|
 A The Tinkertoss Twins|QID|35713|M|39.51,61.33|N|From Milly Osgood.|PRE|37331|FACTION|Alliance|
-A Wanted: Keeho's Severed Paw|QID|35674|M|39.46,61.66|N|From Wanted Poster inside the building.|FACTION|Alliance|PRE|35286|
-A Wanted: Spineslicer's Husk|QID|35675|M|39.46,61.66|N|From Wanted Poster.|FACTION|Alliance|PRE|35286|
-A Wanted: Venombarb|QID|35676|M|39.46,61.66|N|From Wanted Poster.|FACTION|Alliance|PRE|35286|
 F Veil Terokk|QID|35634|M|39.07,61.80|N|At Firn Swiftbreeze.|FACTION|Alliance|
 
 T Not Here, Not Now|QID|37328;37330|M|40.18,43.50|N|To Taskmaster Gornek.|FACTION|Horde|
@@ -465,7 +466,7 @@ A No Time to Waste|QID|36165|M|57.14,34.49|PRE|36023|N|From Hulda Shadowblade.|F
 R The Howling Crag|QID|36165|RANK|3|M|61,18|N|Despite being in a hurry to revive our poisoned barkeep, we are going to take a side trip for our traveling convenience.  Go North and somewhat east.|FACTION|Alliance|
 K Venombarb|QID|35676|T|Venombarb|M|61.11,19.05|RANK|3|FACTION|Alliance|
 H Southport|QID|35619|ACTIVE|35676;36165|FACTION|Alliance|
-A Pinchwhistle Gearworks|QID|35619|M|39.63,60.62|N|From Watchman Kovak. If this quest isn't available to you, check to see if you have the quest offered at your garrison, (also called Pinchwhistle Gearworks) If you do, drop it and accept this one. (or go back to your garrison and ignore the guide).|FACTION|Alliance|PRE|35286|LVL|97| ; need to be 97 to get the quest, hope I did that right.
+A Pinchwhistle Gearworks|QID|35619;36861|M|39.63,60.62|N|From Watchman Kovak. If this quest isn't available to you, check to see if you have the quest offered at your garrison, (also called Pinchwhistle Gearworks) If you do, drop it and accept this one. (or go back to your garrison and ignore the guide).|FACTION|Alliance|PRE|35286|LVL|97| ; need to be 97 to get the quest, hope I did that right.
 
 H Axefall|QID|35907|ACTIVE|35907|M|46.53,46.80|FACTION|Horde|
 C Attempted Murder|QID|35907||M|39.51,43.36|CHAT|N|Talk to Hutou Featherwind for a (non flightpath) option to fly to Shadow's Vigil.|FACTION|Horde|
