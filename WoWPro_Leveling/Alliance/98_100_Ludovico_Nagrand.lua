@@ -327,7 +327,7 @@ T A Fascinating Fungus |QID|36284|N|To Dr. Hadley Ricard|M|86.64,28.33|
 A Dirgemire |QID|36285|N|From Dr. Hadley Ricard|M|86.64,28.33|PRE|36275;36284|
 
 R Decaying Grotto|QID|36285|M|86.41,16.19|ACTIVE|36285|N|Head to the Decaying Grotto, this is an underwater cavern.|
-C Dirgemire |QID|36285|N|Kill and loot Dirgemire for the Fungal Brain.|M|84.34,17.23|
+K Dirgemire |QID|36285|T|Dirgemire|N|Kill and loot Dirgemire for the Fungal Brain.|M|84.34,17.23|
 
 T Dirgemire |QID|36285|N|To Dr. Hadley Ricard|M|86.64,28.33|
 C Whacking Weeds |QID|36273|N|Finish killing the Spiteleaf Podlings.|US|
@@ -359,12 +359,12 @@ A The Pride of Lok-rath |QID|35061|N|From Uruk Foecleaver|M|55.49,42.10|PRE|3506
 A Silence the War Machines |QID|35067|N|From Lieutenant K. K. Lee|M|55.46,42.10|PRE|35060|
 A If They Won't Surrender... |QID|35068|N|From Lieutenant K. K. Lee|M|55.46,42.10|PRE|35060|
 
-C Silence the War Machines |QID|35067|N|Destroy the War Machines|S|
+C Silence the War Machines |QID|35067|NC|N|Destroy the War Machines|S|
 C If They Won't Surrender... |QID|35068|N|Kill the Lok-rath enemy forces.|S|
 A Terror of Nagrand |QID|35069|N|From Fallen Alliance Soldier|M|56.08,43.77|
 C Terror of Nagrand |QID|35069|N|Head into Terror's Cave, then kill and loot Shagor for his collar.|M|58.36,43.63|
-C The Pride of Lok-rath |QID|35061|N|Kill Uruk Foecleaver|M|55.64,47.75|
-C Silence the War Machines |QID|35067|N|Destroy the War Machines|US|M|55.77,46.53;54.57,44.89;55.97,43.02|CN|
+K Uruk Foecleaver |QID|35061|T|Uruk Foecleaver|N|Kill Uruk Foecleaver|M|55.64,47.75|
+C Silence the War Machines |QID|35067|NC|N|Destroy the War Machines|US|M|55.77,46.53;54.57,44.89;55.97,43.02|CN|
 C If They Won't Surrender... |QID|35068|N|Finish killing the Lok-rath enemy forces.|US|
 
 T Terror of Nagrand |QID|35069|N|To Captain "Victorious" Chong|M|62.13,40.43|
@@ -382,7 +382,7 @@ A Carrier Has Arrived |QID|35141|N|From Yrel.|M|61.98,40.54|PRE|35140|
 K Tura'aka |QID|35920|M|64.89,39.31|N|*Rare Kill*\nDrops a cloak worth 23g.|RANK|3|
 f Joz's Rylaks |QID|35332|N|With Joz Navarix|M|62.23,32.89|
 
-H Telaari Station |QID|35062|N|Use your hearthstone to return to Telaari Station.|
+H Trading Post |QID|35062|N|Use your hearthstone to return to Telaari Station.|
 T Carrier Has Arrived|QID|35141|M|63.06,61.95|N|To Thaelin Darkanvil|
 T Lok-rath is Secured|QID|35062|M|63.52,61.89|N|To Rangari D'kaan|
 A And Justice for Thrall|QID|35169|PRE|34596;34957;35062|M|63.52,61.89|N|From Rangari D'kaan|
@@ -523,7 +523,7 @@ F Throne of the Elements|QID|35395|M|63.64,61.55|N|To John Shelby|
 T The Fate of Gordawg|QID|35395|M|72.79,19.69|N|To Kalandrios|
 T The Dark Heart of Oshu'gun|QID|35396|M|71.54,19.76|N|To Vindicator Nobundo|
 
-R Gates of Grommashar|QID|35169|M|61.61,58.71; 69.50,58.62; 71.70, 66.00; 74.6,69.4|N|Ride to the Gates. This is a scenario, so don't queue up for anything or you will bug it out.|
+R Gates of Grommashar|QID|35169|M|61.61,58.71; 69.50,58.62; 71.70, 66.00; 74.6,69.4|CN|N|Ride to the Gates. This is a scenario, so don't queue up for anything or you will bug it out.|
 C And Justice for Thrall|QID|35169|M|74.56,69.56|CHAT|QO|1|N|Speak to Vindicator Yrel|
 C And Justice for Thrall|QID|35169|M|71.4,84.4|QO|2|N|Garrosh Hellscream|
 T And Justice for Thrall|QID|35169|M|66.96,33.77|N|A Cinematic and then, To Vindicator Yrel. Go up the hill past Thrall to see Garrosh youtself, before you turn in.|
