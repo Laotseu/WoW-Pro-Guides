@@ -82,9 +82,9 @@ WoWPro.actiontypecoords = {
 	r = { 3/8, 4/8, 3/8, 4/8 },
 	-- noncombat = { 1/8, 2/8, 4/8, 5/8 },
 }
-function WoWPro:SetActiontypeTex(tex, actiontype, index)
+function WoWPro:SetActiontypeTex(tex, actiontype, index, offset)
 	if not WoWPro.actiontypes[actiontype] then
-		err("Invalid actiontype '%s' for index %s", actiontype, index)
+		err("Invalid actiontype '%s' for index %s (offset = %s)", actiontype, index, offset)
 	end
 	tex:SetTexture(WoWPro.actiontypes[actiontype])
 	if WoWPro.actiontypecoords[actiontype] then

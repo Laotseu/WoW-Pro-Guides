@@ -132,33 +132,36 @@ frame:SetScript("OnShow", function()
 		for i,row in ipairs(rows) do
 			row.index = index
 			
-			if completion[index] or WoWProCharDB.Guide[GID].skipped[index] or WoWProCharDB.skippedQIDs[WoWPro.QID[index]] then
-				row.check:SetChecked(true)
-				if WoWProCharDB.Guide[GID].skipped[index] or WoWProCharDB.skippedQIDs[WoWPro.QID[index]] then
-					row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
+			local step = steplist[index]
+			if step then 
+				row:Show()
+				row.check:Show() 
+
+				if completion[index] or WoWProCharDB.Guide[GID].skipped[index] or WoWProCharDB.skippedQIDs[WoWPro.QID[index]] then
+					row.check:SetChecked(true)
+					if WoWProCharDB.Guide[GID].skipped[index] or WoWProCharDB.skippedQIDs[WoWPro.QID[index]] then
+						row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
+					else
+						row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
+					end
 				else
+					row.check:SetChecked(false)
 					row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
 				end
-			else
-				row.check:SetChecked(false)
-				row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
-			end
-			
-			local step = steplist[index]
-			if step then row.check:Show() else row.check:Hide() end
-			if optional[index] then step = step.." (optional)" end
-			if WoWPro.prof[index] then
-				local prof, proflvl = string.split(";", WoWPro.prof[index]) 
-				step = step.." ("..prof..")"
-			end
-			if WoWPro.rank[index] then
-				step = step.." (rank "..WoWPro.rank[index]..")"
-			end
-			
-			row.step:SetTextColor(1.0,1.0,1.0,1.0)
-			if WoWPro.level and WoWPro.level[index] then
-			    step = step.." (level "..tostring(WoWPro.level[index])..")"
-			    local level = tonumber(WoWPro.level[index])         
+				
+				if optional[index] then step = step.." (optional)" end
+				if WoWPro.prof[index] then
+					local prof, proflvl = string.split(";", WoWPro.prof[index]) 
+					step = step.." ("..prof..")"
+				end
+				if WoWPro.rank[index] then
+					step = step.." (rank "..WoWPro.rank[index]..")"
+				end
+				
+				row.step:SetTextColor(1.0,1.0,1.0,1.0)
+				if WoWPro.level and WoWPro.level[index] then
+				    step = step.." (level "..tostring(WoWPro.level[index])..")"
+				    local level = tonumber(WoWPro.level[index])         
                 if WoWPro.action[index] == "L" and level > UnitLevel("player") then
                     row.step:SetTextColor(0.75,0,0,1.0)                    
                 end
@@ -166,66 +169,71 @@ frame:SetScript("OnShow", function()
                     row.step:SetTextColor(0.75,0.3,0.3,1.0)
                 end
 
-			end
-			
-			-- Setting sticky texture --
-			if WoWPro.sticky[index] then 
-				step = step.." (sticky)"
-				row:SetBackdrop( {
-					bgFile = WoWProDB.profile.stickytexture,
-					tile = true, tileSize = 16
-				})
-				row:SetBackdropColor(WoWProDB.profile.stickycolor[1], WoWProDB.profile.stickycolor[2], WoWProDB.profile.stickycolor[3], WoWProDB.profile.stickycolor[4])
-			else
-				row:SetBackdropColor(WoWProDB.profile.stickycolor[1], WoWProDB.profile.stickycolor[2], WoWProDB.profile.stickycolor[3], 0)
-			end
-			
-			if WoWPro.unsticky[index] then 
-				step = step.." (un-sticky)"
-			end
-		
-			row.step:SetText(step)
-			
-			local action = WoWPro.action[index]
-			--row.action:SetTexture(WoWPro.actiontypes[action])
-
-			if WoWPro.action[index] == "C" and WoWPro.noncombat[index] then
-				--row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
-				action = "noncombat"
-			elseif WoWPro.chat[index] then
-			   -- row.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon") 
-			   action = "chat"
-			elseif WoWPro.action[index] == "A" and WoWPro:IsQuestDaily(WoWPro.QID[index]) then
-				--row.action:SetTexture("Interface\\GossipFrame\\DailyQuestIcon")
-				action = "acceptdaily"
-			elseif WoWPro.action[index] == "T" and WoWPro:IsQuestDaily(WoWPro.QID[index]) then
-				--row.action:SetTexture("Interface\\GossipFrame\\DailyActiveQuestIcon")
-				action = "turnindaily"
-			end
-			WoWPro:SetActiontypeTex(row.action, action, index)
-			
-			local note = WoWPro.note[index]
-			row.note:SetText(note)
-			
-			-- Setting the note frame size correctly --
-			local w = row:GetWidth()
-			row.note:SetWidth(w-30)
-			local h = row.note:GetHeight()
-			local newh = h + ROWHEIGHT
-			row:SetHeight(newh)
-			totalh = totalh + newh
-			if totalh > maxh then 
-				row:Hide() 
-				shownrows = shownrows - 1
-			else 
-				row:Show() 
-			end
-			
-			-- On Click - Complete Step Clicked --
-			row.check:SetScript("OnClick", function(self, button, down)
-				WoWPro:CheckFunction(row, button, down)
-			end)
+				end
 				
+				-- Setting sticky texture --
+				if WoWPro.sticky[index] then 
+					step = step.." (sticky)"
+					row:SetBackdrop( {
+						bgFile = WoWProDB.profile.stickytexture,
+						tile = true, tileSize = 16
+					})
+					row:SetBackdropColor(WoWProDB.profile.stickycolor[1], WoWProDB.profile.stickycolor[2], WoWProDB.profile.stickycolor[3], WoWProDB.profile.stickycolor[4])
+				else
+					row:SetBackdropColor(WoWProDB.profile.stickycolor[1], WoWProDB.profile.stickycolor[2], WoWProDB.profile.stickycolor[3], 0)
+				end
+				
+				if WoWPro.unsticky[index] then 
+					step = step.." (un-sticky)"
+				end
+			
+				row.step:SetText(step)
+				
+				local action = WoWPro.action[index]
+				--row.action:SetTexture(WoWPro.actiontypes[action])
+
+				if WoWPro.action[index] == "C" and WoWPro.noncombat[index] then
+					--row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
+					action = "noncombat"
+				elseif WoWPro.chat[index] then
+				   -- row.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon") 
+				   action = "chat"
+				elseif WoWPro.action[index] == "A" and WoWPro:IsQuestDaily(WoWPro.QID[index]) then
+					--row.action:SetTexture("Interface\\GossipFrame\\DailyQuestIcon")
+					action = "acceptdaily"
+				elseif WoWPro.action[index] == "T" and WoWPro:IsQuestDaily(WoWPro.QID[index]) then
+					--row.action:SetTexture("Interface\\GossipFrame\\DailyActiveQuestIcon")
+					action = "turnindaily"
+				end
+				WoWPro:SetActiontypeTex(row.action, action, index, offset)
+				
+				local note = WoWPro.note[index]
+				row.note:SetText(note)
+				
+				-- Setting the note frame size correctly --
+				local w = row:GetWidth()
+				row.note:SetWidth(w-30)
+				local h = row.note:GetHeight()
+				local newh = h + ROWHEIGHT
+				row:SetHeight(newh)
+				totalh = totalh + newh
+				if totalh > maxh and index < #steplist then 
+					row:Hide() 
+					shownrows = shownrows - 1
+				else 
+					row:Show() 
+				end
+				
+				-- On Click - Complete Step Clicked --
+				row.check:SetScript("OnClick", function(self, button, down)
+					WoWPro:CheckFunction(row, button, down)
+				end)
+				
+			else 
+				row:Hide()
+				row.check:Hide() 
+			end
+
 			index = index + 1
 		end
 	
