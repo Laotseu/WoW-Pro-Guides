@@ -175,8 +175,64 @@ A Befriending the Locals|QID|37327;35699|N|From Lieutenant Willem|FACTION|Allian
 A Wanted: Keeho's Severed Paw|QID|35674|M|39.46,61.66|N|From Wanted Poster inside the building.|FACTION|Alliance|PRE|35286|
 A Wanted: Spineslicer's Husk|QID|35675|M|39.46,61.66|N|From Wanted Poster.|FACTION|Alliance|PRE|35286|
 A Wanted: Venombarb|QID|35676|M|39.46,61.66|N|From Wanted Poster.|FACTION|Alliance|PRE|35286|
-A Pinchwhistle Gearworks|QID|35619;36861|M|39.63,60.62|N|From Watchman Kovak. If this quest isn't available to you, check to see if you have the quest offered at your garrison, (also called Pinchwhistle Gearworks) If you do, drop it and accept this one. (or go back to your garrison and ignore the guide).|FACTION|Alliance|PRE|35286|LVL|97| ; need to be 97 to get the quest, hope I did that right.A Old Friends|QID|35293|M|39.79,60.68|N|From Jasper Fel.|FACTION|Alliance|PRE|35286|
+A Pinchwhistle Gearworks|QID|35619;36861|M|39.63,60.62|N|From Watchman Kovak. If this quest isn't available to you, check to see if you have the quest offered at your garrison, (also called Pinchwhistle Gearworks) If you do, drop it and accept this one. (or go back to your garrison and ignore the guide).|FACTION|Alliance|PRE|35286|LVL|96| ; need to be 97 to get the quest, hope I did that right.
+A Old Friends|QID|35293|M|39.79,60.68|N|From Jasper Fel.|FACTION|Alliance|PRE|35286|
 h Southport|QID|35293|M|40.12,61.49|N|At Elria Willowfall.|FACTION|Alliance|
+
+f Pinchwhistle Gearworks|QID|35619;35620|M|60.88,73.31|N|At Kwiven Quickcog.|
+T Pinchwhistle Gearworks|QID|35619;35620|M|61.47,72.94|N|To Kimzee Pinchwhistle.|
+A Defungination|QID|35077|M|61.47,72.94|N|From Kimzee Pinchwhistle.|PRE|35619+35620|
+A Spore-be-Gone|QID|35079|M|61.46,72.96|N|From Engineer Gazwitz.|PRE|35619+35620|
+A Unwanted Pests|QID|36179|NC|M|62.56,73.92|N|From Exterminator Lemmy.|PRE|35619+35620|
+C Unwanted Pests|QID|36179|M|63.14,75.02|S|
+C Spore-be-Gone|QID|35079|M|63.33,77.41|NC|S|N|These look a bit like rocket clusters. Click to reactivate.|
+C Defungination|QID|35077|M|62.95,74.72|U|112683|NC|N|These are yellow blobs on the ground. Face them and use your flame blaster.|
+C Spore-be-Gone|QID|35079|M|63.33,77.41|NC|US|N|These look a bit like rocket clusters. Click to reactivate.|
+C Unwanted Pests|QID|36179|M|63.14,75.02|US|
+T Spore-be-Gone|QID|35079|M|61.44,72.95|N|To Engineer Gazwitz.|
+T Unwanted Pests|QID|36179|M|61.44,72.95|N|To Engineer Gazwitz.|
+T Defungination|QID|35077|M|61.47,72.92|N|To Kimzee Pinchwhistle.|
+A The Mother Lode|QID|35080|M|61.47,72.94|N|From Kimzee Pinchwhistle.|PRE|35079;36179;35077|
+
+C The Mother Lode|QID|35080|M|59.06,79.09|NC|N|Ride to Pinchwhistle Point.|
+T The Mother Lode|QID|35080|M|59.12,79.19|N|To Kimzee Pinchwhistle.|
+A Getting the Crew Back Together|QID|35082|M|59.12,79.19|N|From Kimzee Pinchwhistle.|PRE|35080|
+A Clearing Out Before Cleaning Up|QID|35081|M|59.10,79.23|N|From Engineer Gazwitz.|PRE|35080|
+C Clearing Out Before Cleaning Up|QID|35081|M|60.90,81.86|S|
+C Getting the Crew Back Together|QID|35082|M|60.93,81.98|NC|
+C Clearing Out Before Cleaning Up|QID|35081|M|60.90,81.86|US|
+T Getting the Crew Back Together|QID|35082|M|59.12,79.18|N|To Kimzee Pinchwhistle.|
+T Clearing Out Before Cleaning Up|QID|35081|M|59.09,79.23|N|To Engineer Gazwitz.|
+A Follow that Hotrod!|QID|35285|M|59.09,79.21|N|From Engineer Gazwitz.|PRE|35081;35082|
+T Follow that Hotrod!|QID|35285|M|58.49,92.33|N|To Kimzee Pinchwhistle.|
+A The Right Parts for the Job|QID|35090|M|58.49,92.33|N|From Kimzee Pinchwhistle.|PRE|35285|
+A Skimming Off The Top|QID|35089|M|58.49,92.33|N|From Kimzee Pinchwhistle.|PRE|35285|
+A Field Trial|QID|36384|U|115475|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|35285|
+C Skimming Off The Top|QID|35089|M|59.18,88.12|S|N|Kill the oily slimes in the area.|
+C The Right Parts for the Job|QID|35090|U|112698|M|59.81,88.34|NC|S|N|Use your rocket to shoot at one of the shredders standing around.  It will break it and then you pick up the pieces.|
+C Field Trial|QID|36384|U|115475|M|59.18,88.12|N|When you encounter one of the infected, use the potion on him.|
+C The Right Parts for the Job|QID|35090|U|112698|M|59.81,88.34|NC|US|N|Use your rocket to shoot at one of the shredders standing around.  It will break it and then you pick up the pieces.|
+C Skimming Off The Top|QID|35089|M|59.18,88.12|US|N|Kill the oily slimes in the area.|
+T The Right Parts for the Job|QID|35090|M|58.83,92.84|N|To Kimzee Pinchwhistle.|
+T Skimming Off The Top|QID|35089|M|58.83,92.84|N|To Kimzee Pinchwhistle.|
+A Sporicide|QID|35091|M|58.83,92.84|N|From Kimzee Pinchwhistle.|PRE|35090;35089|
+T Field Trial|QID|36384|M|58.46,92.22|N|To Krixel Pinchwhistle.|
+A Preventing the Worst|QID|35211|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|36384|
+A Curing With Force|QID|36428|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|36384|
+C Curing With Force|QID|36428|M|58,92|U|115533|S|N|You have to beat them up before they will accept the potion, don't forget to give it to them (instead of killing them). Again, a garrison follower will kill them.  Send them home for a bit.|
+C Sporicide|QID|35091|M|58,92|S|N|There are a few of these wandering in the village but most are behind it.|
+C Preventing the Worst|QID|35211|M|56.5,91.2|NC|N|There is a translucent bomb inside of each of the buildings, click on it to activate. It is upstairs on the balcony of the 2 story building.|
+C Curing With Force|QID|36428|M|56.2,90.4|U|115533|US|N|You have to beat them up before they will accept the potion, don't forget to give it to them (instead of killing them). Again, a garrison follower will kill them.  Send them home for a bit.|
+C Sporicide|QID|35091|M|56.2,90.4|US|N|There are a few of these wandering in the village but most are behind it.|
+T Sporicide|QID|35091|M|58.49,92.33|N|To Kimzee Pinchwhistle.|
+T Preventing the Worst|QID|35211|M|58.46,92.22|N|To Krixel Pinchwhistle.|
+T Curing With Force|QID|36428|M|58.46,92.22|N|To Krixel Pinchwhistle.|
+A Flame On|QID|35298|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|35211;36428|
+C Flame On|QID|35298|M|58.44,92.24|QO|1|NC|N|Click on the Plunger to set off the bombs.|
+C Flame On|QID|35298|M|58.88,92.84|QO|2|NC|N|Hop in Kimzee's flying machine.|
+T Flame On|QID|35298|M|61.47,72.94|N|To Kimzee Pinchwhistle.|
+A Kimzee Pinchwhistle|QID|36062|M|61.47,72.94|N|To/From Kimzee Pinchwhistle.|PRE|35298|
+
 
 R Axefall|QID|35275|M|40.06,44.04|N|On the other side of the mountain.|FACTION|Horde|
 T Inspecting the Troops|QID|35275|M|40.06,44.04|N|To Shadow Hunter Ukambe.|FACTION|Horde|
@@ -200,8 +256,8 @@ T What's Theirs is Ours|QID|35295|M|39.13,48.95|N|To Shadow Hunter Ukambe.|FACTI
 A I See Dead People|QID|35329|M|39.13,48.95|N|From Jasper Fel.|FACTION|Alliance|PRE|35293|
 A I See Dead People|QID|35322|M|39.13,48.95|N|From Shadow Hunter Ukambe.|FACTION|Horde|PRE|35295|
 
-C I See Dead People|QID|35322;35329|QO|1|M|39.01,48.72|N|Kill the spectres outside the garrison until the plans drop.|
-C I See Dead People|QID|35322;35329|QO|2|M|39.01,48.72|CHAT|N|From Bryan Finn.|
+C I See Dead People|QID|35322;35329|QO|1|M|39.6,50.7|N|Kill the spectres outside the garrison until the plans drop.|
+C I See1 Dead People|QID|35322;35329|QO|2|M|39.01,48.72|CHAT|N|From Bryan Finn.|
 T I See Dead People|QID|35322;35329|M|39.01,48.72|N|To Bryan Finn.|
 A A Parting Favor|QID|35339|M|39.01,48.72|N|From Bryan Finn.|PRE|35222+35329|
 C A Parting Favor|QID|35339|QO|1|M|37.68,51.13|S|N|Kill the spectres inside the garrison until you have enough essence.|
@@ -210,16 +266,16 @@ C A Parting Favor|QID|35339|QO|1|M|37.68,51.13|US|N|Kill the spectres inside the
 C A Parting Favor|QID|35339|QO|2|M|37.68,51.13|CHAT|N|Alice is upstairs.|
 T A Parting Favor|QID|35339|M|37.67,51.13|N|To Alice Finn.|
 A A Piece of the Puzzle|QID|35353|M|37.67,51.13|N|From Alice Finn.|PRE|35339|
-K Watch Commander Dranson|QID|35353|M|37.73,51.01|N|He is in the basement.|T|Watch Commander Dranson|
+K Watch Commander Branson|QID|35353|M|37.73,51.01|N|He is in the basement.|T|Watch Commander Branson|
 T A Piece of the Puzzle|QID|35353|M|37.51,50.76|N|To Alice Finn (she is waiting for you in the kitchen).|
 A Second in Command|QID|35380|M|37.55,50.76|N|From Alice Finn.|PRE|35353|
 T Second in Command|QID|35380|M|37.70,53.81|N|To Sir Harris.|
 A Punishable by Death|QID|35407|M|37.70,53.81|N|From Sir Harris.|PRE|35380|
 A Prime the Cannons|QID|35408|M|37.66,53.87|N|From Lady Claudia.|PRE|35380|
 C Punishable by Death|QID|35407||M|35.58,52.84|S|
-C Prime the Cannons|QID|35408|NC|QO|1|M|37.01,52.45|S|
-C Prime the Cannons|QID|35408|NC|QO|2|M|36.42,53.55|
-C Prime the Cannons|QID|35408|NC|QO|1|M|37.01,52.45|US|
+C Pick up Cannonballs|QID|35408|NC|QO|1|M|37.01,52.45|S|
+C Pick up the Armory Cannon|QID|35408|NC|QO|2|M|36.42,53.55|
+C Pick up Cannonballs|QID|35408|NC|QO|1|M|37.01,52.45|US|
 C Punishable by Death|QID|35407||M|35.58,52.84|US|
 T Punishable by Death|QID|35407|M|37.7,53.8|N|To Sir Harris.|
 T Prime the Cannons|QID|35408|M|37.7,53.9|N|To Lady Claudia.|
@@ -259,10 +315,10 @@ C Ikky's Egg|QID|34838|M|45.39,36.70|NC|N|Click on the egg to help him hatch.|
 T Ikky's Egg|QID|34838|M|45.39,36.70|N|To Ikky.|
 A Baby Bird|QID|34886|M|45.39,36.70|N|From Ikky.|PRE|34838|
 C Mother of Thorns|QID|34885|M|44.22,38.10|QO|1|S|
-C Baby Bird|QID|34886|M|44.37,37.71|NC|S|N|Crawling on the ground|T|Ravenger Grub|
+C Baby Bird|QID|34886|M|44.37,37.71|NC|S|N|Pick Ravager Grubs crawling on the ground.|
 K Shadeback Thornmother|QID|34885|M|40.39,36.56|QO|2|T|Shadeback Thornmother|
 C Mother of Thorns|QID|34885|M|44.22,38.10|QO|1|US|
-C Baby Bird|QID|34886|M|44.37,37.71|NC|US|N|Crawling on the ground|T|Ravenger Grub|
+C Baby Bird|QID|34886|M|44.37,37.71|NC|US|N|Pick Ravager Grubs crawling on the ground.|
 T Baby Bird|QID|34886|M|45.40,36.69|N|To Ikky.|
 
 C Last of the Talonpriests|QID|34827|NC|U|112100|M|48.11,34.60|
@@ -276,8 +332,8 @@ C Ishaal's Orb|QID|34828|NC|M|48.08,28.47|
 C Egg Punt|QID|36425|NC|US|M|47.92,28.52|
 T Egg Punt|QID|36425|M|47.54,29.24|N|To UI Alert|
 C New Neighbors|QID|34829|US|M|45.43,29.96|
-T New Neighbors|QID|34829|M|48.02,34.75|N|To Talonpriest Ishaal.|
 T Ishaal's Orb|QID|34828|M|48.02,34.75|N|To Talonpriest Ishaal.|
+T New Neighbors|QID|34829|M|48.02,34.75|N|To Talonpriest Ishaal.|
 A Behind the Veil|QID|34830|M|48.02,34.75|N|From Talonpriest Ishaal.|PRE|34828|
 
 R Veil Akraz|QID|34830|M|44.73,26.98|
@@ -302,7 +358,7 @@ A Legacy of the Apexis|QID|35258|M|36.85,24.54|N|From Darkscryer Raastok.|PRE|35
 C Legacy of the Apexis|QID|35258|S|M|35.34,25.86|N|The excavation has 3 levels, ground, midway up where the first Sol Sister is located, and the top where the other sol sister is and the final two quests take place.|
 C Hardly Working|QID|35260|U|113084|NC|S|M|33.51,25.39|N|The outcasts you are freeing and the apexis guardians exist on all three levels. Visit the cave at ground level first!|
 K Sol-Shaper Veoryx|QID|35259|QO|1|T|Sol-Shaper Veoryx|M|34.67,30.06;34.15,28.31;32.86,28.50|CS|N|When you enter the cave, you have to pass thru a room before you get to the one she is in.|
-K Sol-Shaper Krashyx|QID|35259|QO|2|T|Sol Shaper Krashyx|M|33.42,25.72;32.60,26.02;32.07,25.71|CS|N|Out of the cave and continue north to the ramp up to the top level. Go north at the top level and into the cave with the other sister.|
+K Sol-Shaper Krashyx|QID|35259|QO|2|T|Sol-Shaper Krashyx|M|33.42,25.72;32.60,26.02;32.07,25.71|CS|N|Out of the cave and continue north to the ramp up to the top level. Go north at the top level and into the cave with the other sister.|
 T Sol Sisters|QID|35259|M|31.91,25.49|N|To Inactive Apexis Destroyer.|
 A Shot-Caller|QID|35261|M|31.91,25.49|N|From Inactive Apexis Destroyer.|PRE|35259|
 C Legacy of the Apexis|QID|35258|US|M|35.34,25.86|
@@ -336,7 +392,7 @@ T Mother of Thorns|QID|34885|M|46.49,46.68|N|To Reshad.|
 T Rites of the Talonpriests|QID|35733|M|46.63,46.74|N|To Effigy of Terokk.|
 A The Talon King|QID|35734|M|46.63,46.74|N|From Effigy of Terokk.|PRE|35733|
 C The Talon King|QID|35734|M|46.48,46.66|CC|CHAT|N|Talk to him to start this phased encounter.|
-C The Talon King|QID|35734|M|45.99,66.27|N|Use the Talon King's abilities (1) to wipe them all out.|
+C The Talon King|QID|35734|M|45.99,66.27;45.7,66.4|N|Use the Talon King's abilities (1) to wipe them all out.|
 T The Talon King|QID|35734|M|46.48,46.66|N|To Reshad.|
 A Ikky|QID|34898|M|46.19,45.69|N|Talk to Ikky to acquire him as a battle pet.|PRE|34886|
 F Talon Watch|QID|34998|M|46.18,44.13|CC|CHAT|N|Chat with Skytalon Meshaa for a flight to a new area, Talon Watch(Chat Option, not a flight path).|
@@ -363,7 +419,7 @@ A Servants of a Dead God|QID|35004|M|66.83,51.72|N|From Anzu, (who is perched on
 A Ritual Severance|QID|35003|M|66.83,51.72|N|From Anzu.|PRE|35001;35002|
 C Servants of a Dead God|QID|35004|S|M|67.46,38.17|
 C Southern Ritual|QID|35003|QO|1|NC|M|68.96,41.76|N|Run all over the circle until you stomp it out.|
-C The False Talon King|QID|35011|M|70.05,40.91|
+K Talon King Ikiss|QID|35011|T|Talon King Ikiss|M|70.05,40.91|
 C Central Ritual|QID|35003|QO|2|NC|M|67.57,40.62|
 C Northern Ritual|QID|35003|QO|3|NC|M|66.93,38.24|
 C Servants of a Dead God|QID|35004|US|M|67.46,38.17|
@@ -373,7 +429,7 @@ T Servants of a Dead God|QID|35004|M|64.32,37.01|N|To Anzu.|
 T Ritual Severance|QID|35003|M|64.32,37.01|N|To Anzu.|
 A Sethe, the Dead God|QID|35012|M|64.32,37.01|N|From Anzu.|PRE|35003;35004|
 C Sethe, the Dead God|QID|35012|M|62.48,35.86|CHAT|N|Chat with Anzu to start the fight.|
-C Lithic's Gift|QID|35013|M|61.28,38.76|
+C Lithic's Gift|QID|35013|NC|M|61.28,38.76|
 T Lithic's Gift|QID|35013|M|60.45,38.73|N|To Memory of Lithic.|
 A A Sentimental Relic|QID|35245|M|60.45,38.73|N|From Memory of Lithic.|PRE|35013|
 T Sethe, the Dead God|QID|35012|M|60.41,39.02|N|To Anzu.|
@@ -383,7 +439,7 @@ T A Sentimental Relic|QID|35245|M|46.50,46.66|N|To Reshad.|
 A The Missing Piece|QID|35897|M|46.50,46.66|N|From Reshad.|PRE|35245|
 T The Missing Piece|QID|35897|M|46.63,46.74|N|To Effigy of Terokk.|
 A Terokk's Fall|QID|35895|M|46.63,46.74|PRE|35897|N|From Effigy of Terokk.|
-C Find Lithic|QID|35895|CHAT|QO|1|M|44.63,46.74;64.06,40.43|CS|CHAT|N|Talk to the Effigy to start the scripted event.|
+C Find Lithic|QID|35895|CHAT|QO|1|M|64.06,40.43|CHAT|N|Talk to the Effigy to start the scripted event.|
 C Terokk's Fall|QID|35895|QO|2;3|M|66.95,45.32|N|Use the "1" key to kill the outcasts and the "2" key to rescue the guards. Both abilites are Area of Effect.|
 C Use Anzu's Eye|QID|35895|NC|QO|4|M|66.95,45.32|
 T Terokk's Fall|QID|35895|M|46.50,46.67|N|To Reshad.|
@@ -398,7 +454,7 @@ A Cult of the Ravenspeakers|QID|34921|M|46.93,46.11|N|From Anzu.|
 C Cult of the Ravenspeakers|QID|34921|NC|M|48.93,48.90|N|Place the feather Anzu gave you in the 'Offering Basket'.|
 T Cult of the Ravenspeakers|QID|34921|M|48.97,48.97|N|To Iktis of the Flock.|
 A To the... Rescue?|QID|34991|M|48.97,48.97|N|From Iktis of the Flock.|PRE|34921|
-C To the... Rescue?|QID|34991|M|48.73,51.59|N|Go kill the Raptor and rescue(loot) poor Tillok.|T|Stonescale|
+K Stonescale|QID|34991|M|48.73,51.59|N|Go kill the Raptor and rescue(loot) poor Tillok.|T|Stonescale|
 T To the... Rescue?|QID|34991|M|48.98,48.97|N|To Iktis of the Flock.|
 A The High Ravenspeaker|QID|35010|M|48.98,48.97|N|From Iktis of the Flock.|PRE|34991|
 C The High Ravenspeaker|QID|35010|M|51.11,49.62|NC|
@@ -440,8 +496,9 @@ C Call of the Raven Mother|QID|35009|NC|QO|2|M|51.60,50.41|N|Position yourself w
 T Call of the Raven Mother|QID|35009|M|51.14,50.52|N|To Ka'alu.|
 A On Ebon Wings|QID|36085|M|51.35,50.28|N|From Reshad.|PRE|35009|
 C On Ebon Wings|QID|36085|QO|1|M|51.14,50.52|CHAT|
-C On Ebon Wings|QID|36085|QO|2|M|45.33,53.21|
-C On Ebon Wings|QID|36085|QO|3|M|45.33,53.21|
+C On Ebon Wings|QID|36085|S|QO|2|M|45.33,53.21|
+K Windkeeper Koreyx|QID|36085|QO|3|T|Windkeeper Koreyx|M|45.33,53.21|
+C On Ebon Wings|QID|36085|US|QO|2|M|45.33,53.21|
 T On Ebon Wings|QID|36085|M|46.51,54.29|N|To Reshad.|
 A When All Is Aligned|QID|35704|M|46.51,54.29|N|From Reshad.|PRE|36085|
 C When All Is Aligned|QID|35704|NC|M|46.5,54.56|N|Hop back on Ka'alu to began a bombing mission. Press "1" to fire, you have no control of speed or direction Ka'alu flies.|
@@ -499,7 +556,7 @@ C The Ebon Hunter|QID|35835|M|65.09,61.46|T|The Ebon Hunter|FACTION|Alliance|
 T The Ebon Hunter|QID|35835|M|60.08,53.64|N|To Dilbert Tinkertoss.|FACTION|Alliance|
 H Southport|QID|35619|ACTIVE|35676;36165|FACTION|Alliance|
 
-A Pinchwhistle Gearworks|QID|35619;36861|M|39.63,60.62|N|From Watchman Kovak. If this quest isn't available to you, check to see if you have the quest offered at your garrison, (also called Pinchwhistle Gearworks) If you do, drop it and accept this one. (so you can fly from here... or go back to your garrison if you prefer).|FACTION|Alliance|PRE|35286|LVL|97|
+A Pinchwhistle Gearworks|QID|35619;36861|M|39.63,60.62|N|From Watchman Kovak. If this quest isn't available to you, check to see if you have the quest offered at your garrison, (also called Pinchwhistle Gearworks) If you do, drop it and accept this one. (so you can fly from here... or go back to your garrison if you prefer).|FACTION|Alliance|PRE|35286|LVL|96|
 C No Time to Waste|QID|36165|M|39.66,60.86|CHAT|FACTION|Alliance|
 T No Time to Waste|QID|36165|M|39.66,61.86|N|To Kolrigg Stokton.|FACTION|Alliance|
 A Standing United|QID|37281|M|39.72,60.91|PRE|36165|N|To/From Hulda Shadowblade to accept her as a follower.|FACTION|Alliance|
@@ -507,7 +564,7 @@ A Cleaning House|QID|37287|M|39.51,61.68|PRE|36165|N|From Kolrigg Stokton.|FACTI
 C Cleaning House|QID|37287|M|38.37,62.64|CHAT|N|After you talk to him, he becomes hostile and you must kill him.|FACTION|Alliance|
 T Cleaning House|QID|37287|M|39.51,61.68|N|To Kolrigg Stokton.|FACTION|Alliance|
 T Wanted: Venombarb|QID|35676|M|39.24,62.86|N|To Falrogh the Drunk.|FACTION|Alliance|
-C Pinchwhistle Gearworks|QID|35619|M|39.09, 61.81|CHAT|N|Talk to Firn Swiftbreeze for a flight to Pinchwhistle Gearworks.|FACTION|Alliance|
+C Pinchwhistle Gearworks|QID|35619;36861|M|39.09, 61.81|CHAT|N|Talk to Firn Swiftbreeze for a flight to Pinchwhistle Gearworks.|FACTION|Alliance|
 
 H Axefall|QID|35907|ACTIVE|35907|M|46.18,44.13|FACTION|Horde|N|If your hearthstone is unavailable/not set to Axefall, the closest flight point is in Veil Terok at Skytalon Meshaal.|
 T Wanted: Keeho's Severed Paw|QID|35669|M|40.18,43.50|N|To Taskmaster Gornek.|FACTION|Horde|
@@ -570,6 +627,7 @@ A Pinchwhistle Gearworks|QID|35620|M|40.01,43.97|N|From Scout Cel. If this quest
 T Wanted: Venombarb|QID|35672|M|39.51,43.36|N|To Hutou Featherwind.|FACTION|Horde|
 
 C Pinchwhistle Gearworks|QID|35620|M|39.50,43.38|CHAT|N|Talk to Hotou Featherwind for a flight to Pinchwhistle Gearworks.|FACTION|Horde|
+
 f Pinchwhistle Gearworks|QID|35619;35620|M|60.88,73.31|N|At Kwiven Quickcog.|
 T Pinchwhistle Gearworks|QID|35619;35620|M|61.47,72.94|N|To Kimzee Pinchwhistle.|
 A Defungination|QID|35077|M|61.47,72.94|N|From Kimzee Pinchwhistle.|PRE|35619+35620|
@@ -639,3 +697,99 @@ D Your Garrison|U|110560|M|40.18,43.5|N|This ends Spires of Arak.  The final lev
 ]]
 
 end)
+--[=[
+f Pinchwhistle Gearworks |M|60.9,73.3|Z|Spires of Arak|N|Talk to Kwiven Quickcog|; Pinchwhistle Gearworks |Z|948;0|
+T Pinchwhistle Gearworks |QID|35619|M|61.5,72.9|Z|Spires of Arak|N|To Kimzee Pinchwhistle|; Pinchwhistle Gearworks |Z|948;0|
+A Defungination |QID|35077|M|61.5,72.9|Z|Spires of Arak|N|From Kimzee Pinchwhistle|; Pinchwhistle Gearworks |Z|948;0|
+A Spore-be-Gone |QID|35079|M|61.5,73.0|Z|Spires of Arak|N|From Engineer Gazwitz|; Pinchwhistle Gearworks |Z|948;0|
+A Unwanted Pests |QID|36179|M|62.6,73.9|Z|Spires of Arak|N|From Exterminator Lemmy|; Sporemist Shallows |Z|948;0|
+; |U|112683|M|63.6,75.0|Z|Spires of Arak|N|item:112683 [QR58 Flame Blaster]|; Sporemist Shallows |Z|948;0|
+; |U|112683|M|63.6,75.5|Z|Spires of Arak|N|item:112683 [QR58 Flame Blaster]|; Sporemist Shallows |Z|948;0|
+; |U|112683|M|63.9,76.4|Z|Spires of Arak|N|item:112683 [QR58 Flame Blaster]|; Sporemist Shallows |Z|948;0|
+; |U|112683|M|64.0,74.2|Z|Spires of Arak|N|item:112683 [QR58 Flame Blaster]|; Sporemist Shallows |Z|948;0|
+; |U|112683|M|64.6,74.8|Z|Spires of Arak|N|item:112683 [QR58 Flame Blaster]|; Sporemist Shallows |Z|948;0|
+; |U|112683|M|64.3,75.3|Z|Spires of Arak|N|item:112683 [QR58 Flame Blaster]|; Sporemist Shallows |Z|948;0|
+; |U|112683|M|63.7,75.3|Z|Spires of Arak|N|item:112683 [QR58 Flame Blaster]|; Sporemist Shallows |Z|948;0|
+T Defungination |QID|35077|M|61.5,72.9|Z|Spires of Arak|N|To Kimzee Pinchwhistle|; Pinchwhistle Gearworks |Z|948;0|
+T Spore-be-Gone |QID|35079|M|61.4,73.0|Z|Spires of Arak|N|To Engineer Gazwitz|; Pinchwhistle Gearworks |Z|948;0|
+T Unwanted Pests |QID|36179|M|61.4,73.0|Z|Spires of Arak|N|To Engineer Gazwitz|; Pinchwhistle Gearworks |Z|948;0|
+A The Mother Lode |QID|35080|M|61.5,72.9|Z|Spires of Arak|N|From Kimzee Pinchwhistle|; Pinchwhistle Gearworks |Z|948;0|
+T The Mother Lode |QID|35080|M|59.1,79.2|Z|Spires of Arak|N|To Kimzee Pinchwhistle|; Wreck of the Mother Lode |Z|948;0|
+A Getting the Crew Back Together |QID|35082|M|59.1,79.2|Z|Spires of Arak|N|From Kimzee Pinchwhistle|; Wreck of the Mother Lode |Z|948;0|
+A Clearing Out Before Cleaning Up |QID|35081|M|59.1,79.2|Z|Spires of Arak|N|From Engineer Gazwitz|; Wreck of the Mother Lode |Z|948;0|
+T Clearing Out Before Cleaning Up |QID|35081|M|59.1,79.2|Z|Spires of Arak|N|To Engineer Gazwitz|; Wreck of the Mother Lode |Z|948;0|
+T Getting the Crew Back Together |QID|35082|M|59.1,79.2|Z|Spires of Arak|N|To Unknown|; Wreck of the Mother Lode |Z|948;0|
+A Follow that Hotrod! |QID|35285|M|59.1,79.2|Z|Spires of Arak|N|From Engineer Gazwitz|; Wreck of the Mother Lode |Z|948;0|
+T Follow that Hotrod! |QID|35285|M|58.5,92.3|Z|Spires of Arak|N|To Kimzee Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+A The Right Parts for the Job |QID|35090|M|58.5,92.3|Z|Spires of Arak|N|From Kimzee Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+A Skimming Off The Top |QID|35089|M|58.5,92.3|Z|Spires of Arak|N|From Kimzee Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+; |U|112698|M|58.6,89.8|Z|Spires of Arak|N|item:112698 [G-14 Buster Rocket]|; Pinchwhistle Point |Z|948;0|
+; |U|112698|M|58.9,89.6|Z|Spires of Arak|N|item:112698 [G-14 Buster Rocket]|; Pinchwhistle Point |Z|948;0|
+; |U|112698|M|57.6,90.6|Z|Spires of Arak|N|item:112698 [G-14 Buster Rocket]|; Pinchwhistle Point |Z|948;0|
+T The Right Parts for the Job |QID|35090|M|58.8,92.8|Z|Spires of Arak|N|To Kimzee Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+T Skimming Off The Top |QID|35089|M|58.8,92.8|Z|Spires of Arak|N|To Kimzee Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+A Sporicide |QID|35091|M|58.8,92.8|Z|Spires of Arak|N|From Kimzee Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+A Field Trial |QID|36384|M|58.5,92.2|Z|Spires of Arak|N|From Krixel Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+; |U|115475|M|56.4,90.9|Z|Spires of Arak|N|item:115475 [Vial of Untested Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115475|M|56.4,90.9|Z|Spires of Arak|N|item:115475 [Vial of Untested Serum]|; Pinchwhistle Point |Z|948;0|
+T Field Trial |QID|36384|M|58.5,92.2|Z|Spires of Arak|N|To Krixel Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+A Preventing the Worst |QID|35211|M|58.5,92.2|Z|Spires of Arak|N|From Krixel Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+A Curing With Force |QID|36428|M|58.5,92.2|Z|Spires of Arak|N|From Krixel Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+T Sporicide |QID|35091|M|58.8,92.8|Z|Spires of Arak|N|To Kimzee Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.3,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.3,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.3,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.3,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.2,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.2,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.2,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.2,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.2,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.2,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.2,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.2,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|57.2,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.6,91.3|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.6,91.3|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.6,91.3|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.6,91.3|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.6,91.3|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.6,91.3|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.1,90.4|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.1,90.4|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.1,90.4|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.1,90.4|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.1,90.5|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.1,90.5|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.1,90.5|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.4,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.4,90.8|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|56.3,91.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|55.8,88.5|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+; |U|115533|M|58.6,88.0|Z|Spires of Arak|N|item:115533 [Vial of Refined Serum]|; Pinchwhistle Point |Z|948;0|
+T Preventing the Worst |QID|35211|M|58.5,92.2|Z|Spires of Arak|N|To Krixel Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+T Curing With Force |QID|36428|M|58.5,92.2|Z|Spires of Arak|N|To Krixel Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+A Flame On |QID|35298|M|58.5,92.2|Z|Spires of Arak|N|From Krixel Pinchwhistle|; Pinchwhistle Point |Z|948;0|
+C Flame On |QID|35298|QO|1|M|58.5,92.2|Z|Spires of Arak|; Pinchwhistle Point |Z|948;0|
+C Flame On |QID|35298|QO|2|M|58.9,92.8|Z|Spires of Arak|; Pinchwhistle Point |Z|948;0|
+T Flame On |QID|35298|M|61.6,72.9|Z|Spires of Arak|N|To Kimzee Pinchwhistle|; Pinchwhistle Gearworks |Z|948;0|
+A Kimzee Pinchwhistle |QID|36062|M|61.6,72.9|Z|Spires of Arak|N|Auto-accept|; Pinchwhistle Gearworks |Z|948;0|
+]=]
