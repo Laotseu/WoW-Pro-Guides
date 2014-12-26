@@ -741,7 +741,7 @@ A A Matter of Life and Death|QID|33419|N|From Roona in the Bloodthorn Cave.|M|60
 C A Matter of Life and Death|QID|33419|N|Save Diaani.|NC|QO|2|M|52.29,54.33|Z|Bloodthorn Cave|
 l Rotting Basket|QID|33572|N|Rotting Baskets: Lootable junk worth 13 gold and some tidy XP.|M|56.28,48.84|RANK|3|Z|Bloodthorn Cave|
 C A Matter of Life and Death|QID|33419|N|Save Arekk, he's in the cave north of Diaani|NC|QO|1|M|32.73,52.84|Z|Bloodthorn Cave|
-K Gorum |QID|33664|M|33.55,27.98|N|*Rare Elite* in Arekk cave.|RANK|3|Z|Bloodthorn Cave|
+K Gorum |QID|33664|T|Gorum|M|31.7,34.7|N|*Rare Elite* in Arekk cave.|RANK|3|Z|Bloodthorn Cave|
 C A Matter of Life and Death|QID|33419|N|Save Zuulo, continue south then east through the tunnel.|NC|QO|3|M|49.89,68.92|Z|Bloodthorn Cave|
 T A Matter of Life and Death|QID|33419|N|To Roona.|M|60.09,32.01|Z|Bloodthorn Cave|
 
@@ -786,7 +786,7 @@ T The Defense of Karabor|QID|33256|N|Jump onto Raindash to take you back to Emba
 
 l The Prophet's Arcanum |QID|37322|N|Go to the mailbox, there will be a message there from Yrel, with The Prophet's Arcanum. Take it.|L|119208|PRE|33256|M|45.9,39.6|
 A The Prophet's Final Message|QID|37322|M|42.37,52.04|Z|Lunarfall|N|From The Prophet's Arcanum. (Quest can also be obtained from Arsenio Zerep.)|U|119208|PRE|33256|
-F Path of the Light|QID|37322|N|Fly to the Path of the Light|M|45.67,38.85|ACTIVE|37322|
+F Path of Light|QID|37322|N|Fly to the Path of Light|M|45.67,38.85|ACTIVE|37322|
 R Tranquil Court|QID|37322|M|70.4,50.4|N|Run east up the stairs to Tranquil Court.|
 f Tranquil Court|M|70.4,50.4|N|With Itara|ACTIVE|37322|
 T The Prophet's Final Message|QID|37322|N|To Prophet Velen's Memorial|M|73.7,55.8|
@@ -827,9 +827,10 @@ A Game of Thorns|QID|33271|M|47.05,14.83|N|From Jarrod Hamby (or the Skull from 
 A Prune the Podlings|QID|34806|M|47.05,14.39|N|From Ryan Metcalf.|PRE|33263|
 A Captured Critters|QID|33331|M|46.26,15.91|N|From a Captured Critter just ouside the cave.|PRE|33263|
 
+C Captured Critters|QID|33331|S|N|Release Captured Critters|NC|M|43.0,18.5|
 C Prune the Podlings|QID|34806|M|47.05,14.39|N|Kill Podlings|S|
 C Gloomshade Game Hunter |QID|33461|N|Finish killing and looting Gloomshade Fungi for the Gloomshade Spore.|QO|2|US|M|43.0,18.5|
-C Captured Critters|QID|33331|N|Release Captured Critters|NC|M|43.0,18.5|
+C Captured Critters|QID|33331|US|N|Release Captured Critters|NC|M|43.0,18.5|
 T Captured Critters|QID|33331|N|Auto-Complete|
 C Prune the Podlings|QID|34806|M|47.05,14.39|N|Finish killing Podlings|US|
 T Prune the Podlings|QID|34806|M|47.05,14.39|N|Auto-Complete|
