@@ -80,19 +80,21 @@ WoWPro:GuideNextGuide(guide, 'LudoTalador')
 WoWPro:GuideSteps(guide, function()
 return [[
 
+N Welcome to Gorgrond|QID|33533;35556;36632|S|N|If you want the garrison supply treasures included in this guide, please set your Rank to 3.|
+
 L Level 92 |QID|33533;35556;36632|LVL|92|N|This guide requires a minimum level of 92 to do.|
 
-F Wildwood Wash |QID|33533|N|Fly to Wildwood Wash in Gorgrond.|ACTIVE|33533|M|48.10,49.80|Z|Lunarfall|
-T The Secrets of Gorgrond |QID|33533|N|To Yrel|O|ACTIVE|33533|M|63.99,57.19|
+A The Secrets of Gorgrond |QID|35556|N|Visit the Hero's Callboard in your Garrison, and accept this quest.|M|42.73,44.74|Z|Lunarfall|
 
-F Wildwood Wash |QID|36632|N|Fly to Wildwood Wash in Gorgrond.|ACTIVE|36632|M|48.10,49.80|Z|Lunarfall|
-T The Secrets of Gorgrond |QID|36632|N|To Yrel|O|ACTIVE|36632|M|63.99,57.19|
+F Wildwood Wash |QID|36632;33533;35556|N|Fly to Wildwood Wash in Gorgrond.|ACTIVE|36632;33533;35556|M|48.10,49.80|Z|Lunarfall|
+T The Secrets of Gorgrond |QID|36632;33533;35556|N|To Yrel|M|63.99,57.19|
 
-A The Secrets of Gorgrond |QID|35556|N|Visit the Hero's Callboard in your Garrison, and accept this quest.|M|42.73,44.74|Z|Lunarfall|LEAD|33533;36632|
-F Wildwood Wash |QID|35556|N|Fly to Wildwood Wash in Gorgrond.|ACTIVE|35556|M|48.10,49.80|Z|Lunarfall|
-T The Secrets of Gorgrond |QID|35556|N|To Yrel|M|63.99,57.19|ACTIVE|35556|
+;F Wildwood Wash |QID|36632|N|Fly to Wildwood Wash in Gorgrond.|ACTIVE|36632|M|48.10,49.80|Z|Lunarfall|
+;T The Secrets of Gorgrond |QID|36632|N|To Yrel|M|63.99,57.19|
 
-N Welcome to Gorgrond|QID|35033|ACTIVE|35033|S|N|If you want the garrison supply treasures included in this guide, please set your Rank to 3.|
+;F Wildwood Wash |QID|35556|N|Fly to Wildwood Wash in Gorgrond.|M|48.10,49.80|Z|Lunarfall|
+;T The Secrets of Gorgrond |QID|35556|N|To Yrel|M|63.99,57.19|
+
 
 A Welcome to Gorgrond |QID|35033|N|From Yrel|M|63.99,57.19|PRE|33533+36632+35556|
 C Welcome to Gorgrond |QID|35033|N|Ride up the path|QO|1|M|63.50,52.78|NC|
@@ -103,12 +105,12 @@ A A Harvester Has Come |QID|35065|N|From Rangari D'kaan|M|64.21,51.94|
 A Wake of the Genesaur |QID|35834|N|From Rangari Kaalya|M|64.20,51.77|
 
 C Wake of the Genesaur |QID|35834|N|Kill the Wild Overgrowth|S|
-C A Harvester Has Come |QID|35065|N|Kill Harvester Ommru|M|63.2,46.8|T|Harvester Ommru|
+K Harvester Ommru |QID|35065|N|Harvester Ommru is inside the cave.|M|63.7,49.0;63.2,46.8|CS|T|Harvester Ommru|
 A I Drew Aggro...culture |QID|35828|N|From Thaelin Darkanvil|M|64.99,48.53|
 C Wake of the Genesaur |QID|35834|N|Finish Killing the Wild Overgrowth|US|
 
-T Wake of the Genesaur |QID|35834|N|To Rangari Kaalya who has moved to the road|M|63.14,52.29|
 T A Harvester Has Come |QID|35065|N|To Rangari D'kaan|M|63.21,52.26|
+T Wake of the Genesaur |QID|35834|N|To Rangari Kaalya who has moved to the road|M|63.14,52.29|
 
 T I Drew Aggro...culture |QID|35828|N|To Thaelin Darkanvil|M|63.17,52.41|
 A He Drew Aggro...culture |QID|36595|N|From Rangari D'kaan|M|63.21,52.28|LEAD|35828|
@@ -134,10 +136,12 @@ h Highpass |QID|35063|N|Set your hearthstone with Trader Yula|M|53.23,59.79|
 T We Need An Outpost |QID|35063|N|To Thaelin Darkanvil who has moved further into the Highpass.|M|53.00,59.78|
 
 A Next Quest |QID|35708;34704|N|If you built a Lumber Yard, get Tangleheart from Glirin.\nIf you built a Sparring Ring, get A Rediscovered Legend from Rangari Jonaa|M|53.06,59.51;53.02,59.81|CN|
+;A Tangleheart |QID|35708;34704|N|This quest is only available if you built a Lumber Yard.\n\nFrom Glirin.|M|53.06,59.51|SPELL|Summon Mechashredder 5000;164050;1|
+;A A Rediscovered Legend |QID|35708;34704|N|This quest is only available if you built a Sparring Ring.\n\nFrom Rangari Jonaa|M|53.02,59.81|SPELL|Summon Mechashredder 5000;164050|
 
 ;The following quests are if you selected Lumber Yard
-f Highpass |QID|35708|N|With Rangari Rajess|M|52.83,59.33|ACTIVE|35708|
 A Deeproot |QID|35212|N|From Thaelin Darkanvil|M|53.00,59.78|ACTIVE|35708|
+f Highpass |QID|35708|N|With Rangari Rajess|M|52.83,59.33|ACTIVE|35708|
 T Tangleheart |QID|35708|N|To Glirin, who has moved to Tangleheart|M|55.93,71.54|
 A Growing Wood |QID|35652|N|From Glirin|M|55.93,71.54|PRE|35708|
 A Lost Lumberjack |QID|36368|N|From Glirin|M|55.93,71.54|PRE|35708|
@@ -149,7 +153,7 @@ A Chapter III: Ritual of the Charred |QID|35650|N|From Frenna|M|57.06,71.92|PRE|
 C Growing Wood |QID|35652|N|Kill and loot the Cultivators to get the Ancient Growth Sap.|S|
 C Chapter III: Ritual of the Charred |QID|35650|N|Kill Emberbark Ancient|S|
 C Chapter I: Plant Food |QID|35654|N|Click on the Pollen Pod to destroy them.|NC|S|
-C Chapter II: The Harvest |QID|35651|N|Kill Ontogen the Harvester|T|Ontogen the Harvester|M|59.88,71.08|
+K Chapter II: The Harvest |QID|35651|N|Kill Ontogen the Harvester|T|Ontogen the Harvester|M|59.88,71.08|
 C Chapter I: Plant Food |QID|35654|N|Click on the Pollen Pod to destroy them.|NC|US|
 C Chapter III: Ritual of the Charred |QID|35650|N|Finish killing the Emberbark Ancient|US|
 C Growing Wood |QID|35652|N|Finish killing and loot the Cultivators and Ancients to get the Ancient Growth Sap.|US|
@@ -170,7 +174,7 @@ f Deeproot|QID|35213|N|From Rangari Nogo|M|46.46,76.60|ACTIVE|35213|
 C The Infested|QID|35214|N|Kill the Infested Orcs|S|
 C The Razorbloom|QID|35213|N|Inspect the corpse of Lera Ashtoes|QO|1|NC|M|47.38,73.41|
 C The Razorbloom|QID|35213|N|Inspect the corpse of Razzlebeard|QO|3|NC|M|47.60,72.78|
-A The Voice of Iyu |QID|35215|N|From Razzlebeard's Report|M|47.60,72.78|ACTIVE|35213|
+A The Voice of Iyu |QID|35215|N|From Razzlebeard's Report|M|47.60,72.78|
 C The Razorbloom|QID|35213|N|Inspect the corpse of Nori Sootstash|QO|2|NC|M|48.13,73.56|
 C The Voice of Iyu |QID|35215|N|Slay the Voice of Iyu|T|Voice of Iyu|M|49.43,71.64|
 A Super Seeds |QID|35216|N|From Enriched Seeds|ACTIVE|35215|M|49.46,70.95|
@@ -230,12 +234,12 @@ T Down the Goren Hole |QID|35229|N|To Hansel Heavyhands|M|47.58,94.10|
 T Just In Case |QID|35233|N|To Hansel Heavyhands|M|47.58,94.10|
 
 A Iyu |QID|35235|N|From Hansel Heavyhands|M|47.58,94.10|PRE|35234;35229;35233|
-C Iyu |QID|35235|N|Kill Iyu, who is at surface level.|T|Iyu|M|47.50,92.62|
+K Iyu |QID|35235|N|Kill Iyu, who is at surface level.|T|Iyu|M|47.50,92.62|
 T Iyu |QID|35235|N|To Yrel, who is now in Bastion Rise.|M|47.71,93.30|
 
 A Power of the Genesaur |QID|35255|N|From Yrel|PRE|35235|M|47.71,93.30|
 A Service of Rangari Kaalya|QID|35262|N|From Rangari Kaalya|PRE|35235|M|47.78,93.27|
-f Bastion Rise|QID|35255|N|At Ranger Yaval down under the ledge.|M|46.40,92.41|
+f Bastion Rise|ALTFP|Tailthrasher Basin|QID|35255|N|At Ranger Yaval down under the ledge.|M|46.40,92.41|
 H Highpass |QID|35255|N|Hearthstone to Highpass, or fly there if you didn't set your hearthstone.|ACTIVE|35255|
 T Power of the Genesaur |QID|35255|N|To Vindicator Maraad|M|52.85,59.68|
 
@@ -416,11 +420,11 @@ A A Grim Harvest |QID|35647|N|From Khaano|M|58.27,59.89|PRE|35645;35644|
 A A Heartfelt Search |QID|35656|N|From Khaano|M|58.27,59.89|PRE|35645;35644|
 C A Grim Harvest |QID|35647|N|Kill and loot the Fungal Stompers as you make your way to the Drained Fungal Heart|M|58.92,62.52|
 C A Heartfelt Search |QID|35656|N|Inspect the Drained Fungal Heart|NC|M|58.92,62.52|
-T A Heartfelt Search |QID|35656|N|To Khaano, who will run next to the Drained Fungal Heart|M|58.27,59.89|
-T A Grim Harvest |QID|35647|N|To Khaano|M|58.27,59.89|
+T A Heartfelt Search |QID|35656|N|To Khaano, who will run next to the Drained Fungal Heart|M|58.92,62.52|
+T A Grim Harvest |QID|35647|N|To Khaano|M|58.92,62.52|
 
-A Heart of the Fen |QID|35659|N|From Khaano|M|58.27,59.89|PRE|35647|
-C Heart of the Fen |QID|35659|N|Head to the Heart of the Fen, then kill Khaano|M|61.14,61.81|T|Khaano|
+A Heart of the Fen |QID|35659|N|From Khaano|M|58.92,62.52|PRE|35647|
+K Heart of the Fen |QID|35659|N|Head to the Heart of the Fen, then kill Khaano|M|61.14,61.81|T|Khaano|
 H Highpass |QID|35659|N|Hearthstone to Highpass, or run there if you didn't set your hearthstone/if your hearthstone is still on cooldown.|
 T Heart of the Fen |QID|35659|N|To Rangari D'kaan|M|53.32,59.89|
 
