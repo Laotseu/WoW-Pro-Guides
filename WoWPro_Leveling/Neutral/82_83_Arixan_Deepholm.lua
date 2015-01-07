@@ -187,36 +187,36 @@ WoWPro:GuideIcon(guide,"ACH",4864)
 WoWPro:GuideSteps(guide, function()
 return [[
 
-N The Battle Is Won, The War Goes On|QID|27398|Z|Stormwind City|N|If you don't have this quest, check it off and continue to the next.|FACTION|Alliance|
-A Hero's Call: Deepholm!|QID|27727|M|63,71.7|Z|Stormwind City|N|If you don't have the first quest.|FACTION|Alliance|
+;N The Battle Is Won, The War Goes On|QID|27398|Z|Stormwind City|N|If you don't have this quest, check it off and continue to the next.|FACTION|Alliance|
+A Hero's Call: Deepholm!|QID|27727|M|63,71.7|Z|Stormwind City|N|Breadcrumb quest.|FACTION|Alliance|O|
 T The Battle Is Won, The War Goes On|QID|27398|M|74.5,19.3|Z|Stormwind City|N|If you have it. To Naraat the Earthspeaker.|FACTION|Alliance|
-T Hero's Call: Deepholm!|QID|27727|M|74.5,19.3|Z|Stormwind City|N|If you have it. To Naraat the Earthspeaker.|O|FACTION|Alliance|
+T Hero's Call: Deepholm!|QID|27727|M|74.5,19.3|Z|Stormwind City|N|If you have it. To Naraat the Earthspeaker.|FACTION|Alliance|
 
 A Warchief's Command: Deepholm!|QID|27722|M|49.67,76.45|Z|Orgrimmar|N|From Warchief's Command Board.|FACTION|Horde|
 T Warchief's Command: Deepholm!|QID|27722|M|50.30,38.24|Z|Orgrimmar|N|To Farseer Krogar.|FACTION|Horde|
 
-A The Maelstrom|QID|27203|PRE|27727|Z|The Maelstrom|M|74.5,19.3|N|From Naraat the Earthspeaker.|
+A The Maelstrom|QID|27203|Z|The Maelstrom|M|74.5,19.3|N|From Naraat the Earthspeaker.|
 T The Maelstrom|QID|27203|M|33.2,50.2|Z|The Maelstrom|N|Click on the portal that appears. Then turn the quest into Thrall.|
 A Deepholm, Realm of Earth|QID|27123|Z|The Maelstrom|PRE|27203|M|33.2,50.2|N|From Thrall.|
-C Deepholm, Realm of Earth|QID|27123|Z|The Maelstrom|M|33.2,50.2|N|Hop on the Wyvern behind you.|
-T Deepholm, Realm of Earth|QID|27123|Z|Deepholm|M|49.6,53|N|To Maruut Stonebinder.
+;C Deepholm, Realm of Earth|QID|27123|NC|Z|The Maelstrom|M|33.2,50.2|N|Hop on the Wyvern behind you.|
+T Deepholm, Realm of Earth|QID|27123|Z|Deepholm|M|49.6,53|N|Hop on the Wyvern behind you. To Maruut Stonebinder.|
 A Gunship Down|QID|26245|PRE|27123|M|49.6,53|N|From Maruut Stonebinder.|
 A Elemental Energy|QID|27136|PRE|27123|M|49.7,53|N|From Seer Kormo.|
 A The Earth Claims All|QID|26244|PRE|27123|M|49.7,53|N|From Seer Kormo.|
 C Elemental Energy|QID|27136|U|60835|M|49.6,61.5|N|Use the Depleted Totem and kill the Energized Geodes and Lodestone Elementals.|
 F Storm's Fury Wreckage|QID|27136|M|55,74|N|Fly to the Storm's Fury Wreckage.|
 C The Earth Claims All|QID|26244|S|M|55.6,72.6|N|Kill Deepstone Elementals.|
-A Captain's Log|QID|26246|PRE|26245|M|53.5,73.3|N|Click the Captain's Log to get this quest.|
-N First Clue|QID|26245|QO|First Clue: 1/1|M|53.5,73.7|N|Click on Captain Skullshatter for the first clue.|
-N Second Clue|QID|26245|QO|Second Clue: 1/1|M|56.1,74.2|N|Click on to find the Slain Cannoneer for the second clue.|
-C Gunship Down|QID|26245|M|56.7,76.4|N|Click on the Unexploded Artillery Shell to find the final clue.|
+A Captain's Log|QID|26246|M|53.5,73.3|N|Click the Captain's Log to get this quest.|
+C First Clue|QID|26245|NC|QO|First Clue: 1/1|M|53.5,73.7|N|Click on Captain Skullshatter for the first clue.|
+C Second Clue|QID|26245|NC|QO|Second Clue: 1/1|M|56.1,74.2|N|Click on to find the Slain Cannoneer for the second clue.|
+C Third Clue|QID|26245|NC|QO|Third Clue: 1/1|M|56.7,76.4|N|Click on the Unexploded Artillery Shell to find the final clue.|
 C The Earth Claims All|QID|26244|US|M|55.6,72.6|N|Kill Deepstone Elementals.|
 T Gunship Down|QID|26245|M|49.6,53|N|To Maruut Stonebinder.|
 T Captain's Log|QID|26246|M|49.6,53|N|To Maruut Stonebinder.|
 T The Earth Claims All|QID|26244|M|49.7,53|N|To Seer Kormo.|
 T Elemental Energy|QID|27136|M|49.7,53|N|To Seer Kormo.|
 A Diplomacy First|QID|26247|PRE|26246;26244;27136|M|49.6,53|N|From Maruut Stonebinder.|
-A Where's Goldmine?|QID|26409|PRE|26876|M|49.52,53.40|N|From Earthcaller Yevaa.|
+A Where's Goldmine?|QID|26409|M|49.52,53.40|N|From Earthcaller Yevaa.|
 
 T Diplomacy First|QID|26247|M|62.2,47|N|Fly up to the Alliance Gunship. To Stormcaller Mylra.|
 A All Our Friends Are Dead|QID|26248|PRE|26247|M|62.2,47|N|From Stormcaller Mylra.|
@@ -227,7 +227,7 @@ A Without a Captain or Crew|QID|26427|PRE|26249|RANK|2|M|64,46.2|N|From First Ma
 C All Our Friends Are Dead|QID|26248|US|M|62,47|N|Use the Spirit Totem on Slain Crew Members 6 times.|
 T All Our Friends Are Dead|QID|26248|M|62.2,47|N|To Stormcaller Mylra.|
 A Take No Prisoners|QID|26251|PRE|26248|M|62.2,47|N|From Stormcaller Mylra.|
-A On Second Thought, Take One Prisoner|QID|26250|PRE|26251|M|62.2,47|N|From Stormcaller Mylra.|
+A On Second Thought, Take One Prisoner|QID|26250|M|62.2,47|N|From Stormcaller Mylra.|
 C Take No Prisoners|QID|26251|M|60.8,42.3|N|Kill 6 Twilight Saboteurs.|S|
 C Without a Captain or Crew|QID|26427|RANK|2|M|63.1,39.4;63.4,44.6|CS|N|Pick up the Coil of Rope (on top of the deck) and Bottle of Whiskey (first level below deck).|
 C On Second Thought, Take One Prisoner|QID|26250|M|60.7,41.3|N|Attack Mor'norokk the Hateful and subdue him.|
@@ -255,10 +255,10 @@ A The Forgemaster's Log|QID|26260|PRE|26261|M|65.47,62.41|N|(UI Alert)|
 T The Forgemaster's Log|QID|26260|M|63.75,55.36|N|Find the Forgemaster's Log at the top of a tower.|
 
 A Silvermarsh Rendezvous|QID|27007|PRE|26260|M|63.75,55.36|
-C Silvermarsh Rendezvous|QID|27007|M|69.96,60.17|N|Fly up and to the southwest to Upper Silvermarsh.|
+C Silvermarsh Rendezvous|QID|27007|NC|M|69.96,60.17|N|Fly up and to the southwest to Upper Silvermarsh.|
 T Silvermarsh Rendezvous|QID|27007|M|70.34,61.04|N|(UI Alert)|
 A Quicksilver Submersion|QID|27010|PRE|27007|M|70.34,61.04|N|(UI Alert)|
-A Twilight Research|QID|27100|PRE|27010|U|60816|RANK|2|M|70.50,61.48|N|Find and kill a Mercurial Ooze. It will drop Maziel's Research. Use this to begin the quest Twilight Research.|
+A Twilight Research|QID|27100|U|60816|RANK|2|M|70.50,61.48|N|Find and kill a Mercurial Ooze. It will drop Maziel's Research. Use this to begin the quest Twilight Research.|
 C Twilight Research|QID|27100|RANK|2|S|M|74.00,60.91|N|Kill any Mercurial Ooze you see until you get 4 Twilight Research Notes.|
 l Quicksilver Submersion|QID|27010|L|60809|M|71.7,64.2|N|Loot a Trogg Crate from the ground here. A trogg will come out and attack you but shouldn't pose a problem.|
 C Quicksilver Submersion|QID|27010|U|60809|M|74.96,64.77|N|Use the Trogg Crate to put it on your head. You should be in the mercury pond. You need to get close to the Forgemaster's camp, but not too close. Watch the conversation that happens.|
@@ -269,7 +269,7 @@ T Twilight Research|QID|27100|RANK|2|M|74.05,60.90|N|(UI Alert)|
 A Maziel's Revelation|QID|27101|PRE|27100|RANK|2|M|74.05,60.90|N|(UI Alert)|
 T Maziel's Revelation|QID|27101|RANK|2|M|67.18,70.17|N|Fly to Lower Silvermarsh. Find Maziel's Journal.|
 A Maziel's Ascendancy|QID|27102|PRE|27101|RANK|2|M|67.18,70.17|N|From Maziel's Journal.|
-C Maziel's Ascendancy|QID|27102|RANK|2|M|69.37,68.20;72.79,61.98|CS|N|Maziel is inside the cave just east of where the journal was located. Enter the cave and take the left fork when the path spits. Maziel is located on an island in the middle of a small pond.|
+K Maziel|QID|27102|T|Maziel|RANK|2|M|69.37,68.20;72.79,61.98|CS|N|Maziel is inside the cave just east of where the journal was located. Enter the cave and take the left fork when the path spits. Maziel is located on an island in the middle of a small pond.|
 T Maziel's Ascendancy|QID|27102|RANK|2|M|72.26,62.22|N|(UI Alert)|
 T The Twilight Overlook|QID|27061|M|64.47,82.23|N|To Stormcaller Mylra.|
 
@@ -287,8 +287,8 @@ T Testing the Trap|QID|26771|M|64.50,82.19|N|To Stormcaller Mylra.|
 A Abyssion's Minions|QID|26857|PRE|26771|M|64.50,82.19|N|From Stormcaller Mylra.|
 A Block the Gates|QID|26861|PRE|26771|M|64.50,82.19|N|From Seer Galekk.|
 C Abyssion's Minions|QID|26857|S|M|69.72,77.39|N|Kill any of the cultists or dragonspawn.|
-N Block the Gates|QID|26861|U|60501|M|68.7,75.1|N|Fly to the Twilight Gate and use the Stormstone to seal it.|QO|Twilight Gate disrupted: 1/1|
-C Block the Gates|QID|26861|U|60501|M|71.14,75.03|N|Fly to the Elemental Gate and seal it with the Stormstone.|
+C Disrupt the Twilight Gate |QID|26861|NC|U|60501|M|68.7,75.1|N|Fly to the Twilight Gate and use the Stormstone to seal it.|QO|Twilight Gate disrupted: 1/1|
+C Disrupt the Elemental Gate|QID|26861|NC|U|60501|QO|2|M|71.14,75.03|N|Fly to the Elemental Gate and seal it with the Stormstone.|
 C Abyssion's Minions|QID|26857|US|M|69.72,77.39|N|Kill any of the cultists or dragonspawn.|
 T Block the Gates|QID|26861|M|64.49,82.25|N|To Seer Galekk.|
 T Abyssion's Minions|QID|26857|M|64.49,82.25|N|To Stormcaller Mylra.|
@@ -324,37 +324,38 @@ A One With the Ground|QID|27934|PRE|27932;27933|M|30.69,77.77|N|From Slate Quick
 C One With the Ground|QID|27934|M|47.11,90.17|N|Talk to Slate and tell him you are ready to complete the ritual. You will go tunneling through the ground into Avalanchion's Vault.|
 T One With the Ground|QID|27934|M|47.11,90.17|N|Click the notification box to turn in One With the Ground.|
 A Bring Down the Avalanche|QID|27935|PRE|27934|RANK|1|M|47.11,90.17|N|Accept the followup, Bring Down the Avalanche.|
-C Bring Down the Avalanche|QID|27935|M|46.96,89.23|N|Kill Avalanchion.|
+K Avalanchion|QID|27935|T|Avalanchion|M|46.96,89.23|N|Kill Avalanchion.|
 T Bring Down the Avalanche|QID|27935|M|27.88,68.68|N|Once he is dead, leave the cave by jumping down into the water and heading north to exit exit. Then return to Crag Rockcrusher at Stonehearth.|
 A Stonefather's Boon|QID|26499|PRE|26484|M|27.88,68.68|N|From Crag Rockcrusher.|
 A We're Surrounded|QID|26500|PRE|26484|M|28.23,69.69|N|From Earthbreaker Dolomite.|
-C Stonefather's Boon|QID|26499|S|U|58884|M|29.85,73.77|N|Go to where the Earthen are fighting the troggs, just southwest of where Dolomite is. Use the Stonefather's Banner near any Stonehearth Defenders and kill any Stone Trogg Ambushers until you complete both of the quests you have.|
+C Stonefather's Boon|QID|26499|NC|S|U|58884|M|29.85,73.77|N|Go to where the Earthen are fighting the troggs, just southwest of where Dolomite is. Use the Stonefather's Banner near any Stonehearth Defenders and kill any Stone Trogg Ambushers until you complete both of the quests you have.|
 C We're Surrounded|QID|26500|M|31.38,72.07|N|Kill 12 Stone Trogg Ambushers.|
-C Stonefather's Boon|QID|26499|US|U|58884|M|29.85,73.77|N|Go to where the Earthen are fighting the troggs, just southwest of where Dolomite is. Use the Stonefather's Banner near any Stonehearth Defenders and kill any Stone Trogg Ambushers until you complete both of the quests you have.|
+C Stonefather's Boon|QID|26499|NC|US|U|58884|M|29.85,73.77|N|Go to where the Earthen are fighting the troggs, just southwest of where Dolomite is. Use the Stonefather's Banner near any Stonehearth Defenders and kill any Stone Trogg Ambushers until you complete both of the quests you have.|
 T We're Surrounded|QID|26500|M|28.24,69.72|N|To Earthbreaker Dolomite.|
 A Thunder Stones|QID|26502|PRE|26500|RANK|1|M|28.21,69.66|N|From Earthbreaker Dolomite.|
 T Stonefather's Boon|QID|26499|M|27.86,68.69|N|To Crag Rockcrusher.|
 A Sealing the Way|QID|26501|PRE|26499|M|27.86,68.69|N|From Crag Rockcrusher.|
-C Thunder Stones|QID|26502|S|M|25.84,68.47|N|From now on, collect Thunder Stones.|
-N Shrine sealed|QID|26501|U|58885|M|27.3,67.8|QO|Shrine sealed: 1/1|N|Kill any troggs that are attacking the Earthen Geomancer, then use the Rockslide Reagent on him to seal the Shrine.|
-N Armory sealed|QID|26501|U|58885|M|27.3,70.11|QO|Armory sealed: 1/1|N|Kill any troggs that are attacking the Earthen Geomancer, then use the Rockslide Reagent on him to seal the Armory.|
-N Inn sealed|QID|26501|U|58885|M|26.17,69.85|QO|Inn sealed: 1/1|N|Kill any troggs that are attacking the Earthen Geomancer, then use the Rockslide Reagent on him to seal the Inn.|
-C Sealing the Way|QID|26501|U|58885|M|26.0,68.8|N|Seal the Barracks.|
-C Thunder Stones|QID|26502|US|M|25.84,68.47|N|Finish collecting Thunder Stones.|
+C Thunder Stones|QID|26502|NC|S|M|25.84,68.47|N|From now on, collect Thunder Stones.|
+C Seal the Shrine |QID|26501|NC|U|58885|M|27.3,67.8|QO|Shrine sealed: 1/1|N|Kill any troggs that are attacking the Earthen Geomancer, then use the Rockslide Reagent on him to seal the Shrine.|
+C Seal the Armory |QID|26501|NC|U|58885|M|27.3,70.11|QO|Armory sealed: 1/1|N|Kill any troggs that are attacking the Earthen Geomancer, then use the Rockslide Reagent on him to seal the Armory.|
+C Seal the Inn |QID|26501|NC|U|58885|M|26.17,69.85|QO|Inn sealed: 1/1|N|Kill any troggs that are attacking the Earthen Geomancer, then use the Rockslide Reagent on him to seal the Inn.|
+C Seal the Barracks|QID|26501|NC|QO|3|U|58885|M|26.0,68.8|N|Seal the Barracks.|
+C Thunder Stones|QID|26502|NC|US|M|25.84,68.47|N|Finish collecting Thunder Stones.|
 T Sealing the Way|QID|26501|M|24.55,62.41|N|To Gravel Longslab.|
 A Shatter Them!|QID|26537|PRE|26501|M|24.55,62.41|N|From Gravel Longslab.|
 T Thunder Stones|QID|26502|M|24.72,62.14|N|To Clay Mudaxle.|
 A Fixer Upper|QID|26564|PRE|26501;26502|M|24.72,62.14|N|From Clay Mudaxle.|
 A Battlefront Triage|QID|26591|PRE|26501;26502|M|24.63,62.11|N|From Earthmender Deepvein.|
-C Fixer Upper|QID|26564|S|M|21.01,57.78|N|Collect 6 Catapult Parts.|
-C Battlefront Triage|QID|26591|S|U|58965|M|23.62,61.32|N|Use Deepvein's Patch Kit on the Inured Earthen.|
+C Fixer Upper|QID|26564|S|NC|M|21.01,57.78|N|Collect 6 Catapult Parts.|
+C Battlefront Triage|QID|26591|S|NC|U|58965|M|23.62,61.32|N|Use Deepvein's Patch Kit on the Inured Earthen.|
 C Shatter Them!|QID|26537|M|23.31,60.51|N|Kill 12 Stone Troggs.|
-C Fixer Upper|QID|26564|US|M|21.01,57.78|N|Collect 6 Catapult Parts.|
+C Battlefront Triage|QID|26591|US|NC|U|58965|M|23.62,61.32|N|Use Deepvein's Patch Kit on the Inured Earthen.|
+C Fixer Upper|QID|26564|US|NC|M|21.01,57.78|N|Collect 6 Catapult Parts.|
 T Battlefront Triage|QID|26591|M|24.59,62.14|N|To Earthmender Deepvein.|
 T Fixer Upper|QID|26564|M|24.75,62.13|N|To Clay Mudaxle.|
 T Shatter Them!|QID|26537|M|24.52,62.41|N|To Gravel Longslab.|
 A Troggzor the Earthinator|QID|26625|PRE|26537;26564;26591|M|24.52,62.41|N|From Gravel Longslab.|
-C Troggzor the Earthinator|QID|26625|M|22.51,56.74|N|Troggzor is located on a small rise. Kill him and loot The Earthinator's Cudgel.|
+K Troggzor the Earthinator|QID|26625|T|Troggzor the Earthinator|M|22.51,56.74|N|Troggzor is located on a small rise. Kill him and loot The Earthinator's Cudgel.|
 T Troggzor the Earthinator|QID|26625|M|24.52,62.40|N|To Gravel Longslab.|
 A Rush Delivery|QID|27126|M|24.72,62.17|N|From Clay Mudaxle.|
 T Rush Delivery|QID|27126|M|20.77,61.56|N|To Peak Grindstone.|
@@ -366,29 +367,29 @@ C Keep Them off the Front|QID|26755|N|Hop in one of the catapults to the left of
 T Keep Them off the Front|QID|26755|N|To Pyrium Lodestone.|
 A Reactivate the Constructs|QID|26762|PRE|26755|N|From Pyrium Lodestone.|
 A Mystic Masters|QID|26770|PRE|26755|N|From Flint Oremantle.|
-C Reactivate the Constructs|QID|26762|S|M|24.00,48.00|N|Reactivate Deactivated War Constructs.|
+C Reactivate the Constructs|QID|26762|S|NC|M|24.00,48.00|N|Reactivate Deactivated War Constructs.|
 C Mystic Masters|QID|26770|M|24.00,48.00|N|Slay 5 Needlerock Mystics.|
-C Reactivate the Constructs|QID|26762|US|M|24.00,48.00|N|Finish reactivate the 5 Deactivated War Constructs.|
+C Reactivate the Constructs|QID|26762|US|NC|M|24.00,48.00|N|Finish reactivate the 5 Deactivated War Constructs.|
 T Reactivate the Constructs|QID|26762|N|To Pyrium Lodestone.|
 T Mystic Masters|QID|26770|N|To Flint Oremantle.|
 A Down Into the Chasm|QID|26834|PRE|26762;26770|M|22.6,52.1|N|From Pyrium Lodestone.|
 T Down Into the Chasm|QID|26834|M|27.6,44.9|N|To Slate Quicksand.|
 A Sprout No More|QID|26791|PRE|26834|M|27.6,44.9|N|From Slate Quicksand.|
 A Fungal Monstrosities|QID|26792|PRE|26834|M|27.6,44.9|N|From Slate Quicksand.|
-C Sprout No More|QID|26791|S|N|Obtain a War Guardian and start destroying Giant Mushrooms and Fungal Monstrosities.|
+C Sprout No More|QID|26791|S|NC|N|Obtain a War Guardian and start destroying Giant Mushrooms and Fungal Monstrosities.|
 C Fungal Monstrosities|QID|26792|M|27.5,38.3|N|Destroy Fungal Monstrosities.|
-C Sprout No More|QID|26791|M|27.6,35.6|US|N|Finish destroying Giant Shrooms.|
+C Sprout No More|QID|26791|M|27.6,35.6|US|NC|N|Finish destroying Giant Shrooms.|
 T Sprout No More|QID|26791|M|27.6,44.9|N|To Slate Quicksand.|
 T Fungal Monstrosities|QID|26792|M|27.6,44.9|N|To Slate Quicksand.|
 A A Slight Problem|QID|26835|PRE|26791;26792|M|27.6,44.9|N|From Slate Quickand.|
 T A Slight Problem|QID|26835|PRE|26791;26792|M|22.6,52.1|N|To Pyrium Lodestone.|
 A Rescue the Stonefather... and Flint|QID|26836|PRE|26835|M|22.6,52.1|N|From Pyrium Lodestone.|
-C Rescue the Stonefather... and Flint|QID|26836|M|24.64,32.41;24.57,30.94|CC|N|Fly to this bridge and then kill Bouldergut.|
+K Bouldergut |QID|26836|T|Bouldergut|M|24.64,32.41;24.57,30.94|CC|N|Fly to this bridge and then kill Bouldergut.|
 T Rescue the Stonefather... and Flint|QID|26836|M|22.6,52.1|N|To Pyrium Lodestone.|
 A The Hero Returns|QID|27937|PRE|26836|M|22.6,52.1|N|From Pyrium Lodestone.|
 T The Hero Returns|QID|27937|M|28,68.6|N|To Stonefather Oremantle.|
 A The Middle Fragment|QID|27938|PRE|27937|M|28,68.6|N|From Stonefather Oremantle.|
-C The Middle Fragment|QID|27938|M|28,68.72|N|In The Stonefather's Safe, right behind Oremantle.|
+C The Middle Fragment|QID|27938|NC|M|28,68.72|N|In The Stonefather's Safe, right behind Oremantle.|
 T The Middle Fragment|QID|27938|M|49.5,53.3|N|To Earthcaller Yevaa.|
 A The Very Earth Beneath Our Feet|QID|26326|RANK|1|M|49.6,53|N|From Maruut Stonebinder.|
 T The Very Earth Beneath Our Feet|QID|26326|M|46.1, 45.7|N|To Earthcaller Torunscar.|
@@ -396,40 +397,40 @@ A Crumbling Defenses|QID|26312|PRE|26326|M|46.1,45.7|N|From Earthcaller Torunsca
 A On Even Ground|QID|26314|PRE|26326|M|46.1,45.7|N|From Earthcaller Torunscar.|
 A Core of Our Troubles|QID|26313|PRE|26326|M|46.1,45.7|N|From Earthmender Norsala.|
 C Core of Our Troubles|QID|26313|S|M|45.1,40.5|N|Kill Irestone Rumblers and loot them to get Irestone Cores.|
-C On Even Ground|QID|26314|S|U|58169|N|Use the Elementium Grapple Line to pull 3 Servants of Therazane off of their feet.|
+C On Even Ground|QID|26314|S|NC|U|58169|N|Use the Elementium Grapple Line to pull 3 Servants of Therazane off of their feet.|
 C Crumbling Defenses|QID|26312|M|44.4,43.9;44.6,41.3;47.4,42.9|CS|N|Relieve Tawn, Mylra and Hargoth.|
-C On Even Ground|QID|26314|US|U|58169|N|Use the Elementium Grapple Line to pull 3 Servants of Therazane off of their feet.|
+C On Even Ground|QID|26314|US|NC|U|58169|N|Use the Elementium Grapple Line to pull 3 Servants of Therazane off of their feet.|
 C Core of Our Troubles|QID|26313|US|M|45.1,40.5|N|Finish collecting 6 Irestone Cores.|
 T Crumbling Defenses|QID|26312|M|46.1,45.7|N|To Earthcaller Torunscar.|
 T On Even Ground|QID|26314|M|46.1,45.7|N|To Earthcaller Torunscar.|
 T Core of Our Troubles|QID|26313|M|46.1,45.7|N|To Earthmender Norsala.|
 A Imposing Confrontation|QID|26315|PRE|26312;26313;26314|M|46.1,45.7|N|From Earthmender Norsala.|
-C Imposing Confrontation|QID|26315|M|49.00,40.00|U|58177|N|Read the Earthen Ring Proclamation to Boden the Imposing.|
+C Imposing Confrontation|QID|26315|NC|T|Boden the Imposing|M|49.00,40.00|U|58177|N|Read the Earthen Ring Proclamation to Boden the Imposing.|
 T Imposing Confrontation|QID|26315|M|46.1,45.7|N|To Earthmender Norsala.|
 A Rocky Relations|QID|26328|PRE|26315|M|46.1,45.7|N|From Earthmender Norsala.|
-T Rocky Relations|QID|26328|M|56.50,41.20|N|To Diamant the Patient.|
-A Hatred Runs Deep|QID|26376|PRE|26328|M|56.50,41.20|N|From Diamant the Patient.|
-A Unsolid Ground|QID|26377|PRE|26328|M|56.50,41.20|N|From Diamant the Patient.|
+T Rocky Relations|QID|26328|M|56.5,42.6|N|To Diamant the Patient.|
+A Hatred Runs Deep|QID|26376|PRE|26328|M|56.5,42.6|N|From Diamant the Patient.|
+A Unsolid Ground|QID|26377|PRE|26328|M|56.5,42.6|N|From Diamant the Patient.|
 A Loose Stones|QID|26375|PRE|26328|M|56.5,41.1|N|From Quartz Stonetender.|
 l Jade Crystal Clusters|QID|26377|L|58500 6|N|Loot 6 Jade Crystal Clusters from around the camp.|S|M|59.5,39.9|
-C Loose Stones|QID|26375|U|58254|S|N|Use Delicate Chain Smasher to free Quartz Rocklings|M|59.5,39.9|
+C Loose Stones|QID|26375|NC|U|58254|S|N|Use Delicate Chain Smasher to free Quartz Rocklings|M|59.5,39.9|
 C Hatred Runs Deep|QID|26376|S|QO|Lorthuna's Gate Cultists slain: 12/12|M|59.5,39.9|N|Kill Twilight Duskwardens.|
-K Dragul Giantbutcher|QID|26376|QO|Dragul Giantbutcher slain: 1/1|M|60.20,39.50|N|Kill Dragul Giantbutcher.|
+K Dragul Giantbutcher|QID|26376|T|Dragul Giantbutcher|QO|Dragul Giantbutcher slain: 1/1|M|60.20,39.50|N|Kill Dragul Giantbutcher.|
 C Hatred Runs Deep|QID|26376|US|QO|Lorthuna's Gate Cultists slain: 12/12|M|59.5,39.9|N|Kill Twilight Duskwardens.|
 l Jade Crystal Clusters|QID|26377|L|58500 6|N|Loot 6 Jade Crystal Clusters from around the camp.|US|M|59.5,39.9|
 U Jade Crystal Clusters|QID|26377|L|58783|U|58500|N|Use the Jade Crystal Clusters to get the Jade Crystal Composite.|
 C Unsolid Ground|QID|26377|U|58783|M|58.80,41.20|N|Go to an open area of the camp. Use the Jade Crystal Composite to summon an Aggitated Tunneler. Mount up as soon as you get the quest complete message. You don’t want to be nearby when the rockworm emerges.|
-C Loose Stones|QID|26375|U|58254|M|59.00,42.00|US|N|Finish releasing Quartz Rocklings with the Delicate Chain Smasher.|
+C Loose Stones|QID|26375|NC|U|58254|M|59.00,42.00|US|N|Finish releasing Quartz Rocklings with the Delicate Chain Smasher.|
 T Loose Stones|QID|26375|M|56.5,41.1|N|To Quartz Stonetender.|
-T Unsolid Ground|QID|26377|M|56.50,41.20|N|To Diamant the Patient.|
-T Hatred Runs Deep|QID|26376|M|56.50,41.20|N|To Diamant the Patient.|
-A Violent Gale|QID|26426|M|56.50,41.20|PRE|26375;26376;26377|N|From Diamant the Patient.|
-N Felsen the Enduring|QID|26426|M|52,32|QO|Find Felsen the Enduring: 1/1|N|Find Felsen the Enduring at the waypoint.|
-C Violent Gale|QID|26426|M|58.00,25.00|N|Find the entrance to Crumbling Depths.|
+T Unsolid Ground|QID|26377|M|56.5,42.6|N|To Diamant the Patient.|
+T Hatred Runs Deep|QID|26376|M|56.5,42.6|N|To Diamant the Patient.|
+A Violent Gale|QID|26426|M|56.5,42.6|PRE|26375;26376;26377|N|From Diamant the Patient.|
+C Felsen the Enduring|QID|26426|NC|M|52,32|QO|Find Felsen the Enduring: 1/1|N|Find Felsen the Enduring at the waypoint.|
+C Entrance to Crumbling Depths|QID|26426|NC|QO|2|M|58.00,25.00|N|Find the entrance to Crumbling Depths.|
 T Violent Gale|QID|26426|N|(UI Alert)|
 A Depth of the Depths|QID|26869|PRE|26426|N|Automatic from Diamond the Patient.|
-C Depth of the Depths|QID|26869|N|Follow the main path until you reach a fork. Wait for the Colossal Gyreworm to go by then start running down the right fork. Follow this around until you reach a small branch to you right. Duck into this and wait for the elite to path by again, then continue up the tunnel, following the elite. Take the next right. Hug the wall to your right until you enter a short tunnel. Follow this to another chamber. Keep hugging the right wall and enter the first tunnel you come to. This will lead to the chamber with the stone you are looking for.|
-T Depth of the Depths|QID|26869|M|66.4,20.6|N|Click on the stone.|
+T Depth of the Depths|QID|26869|N|Follow the main path until you reach a fork. Wait for the Colossal Gyreworm to go by then start running down the right fork. Follow this around until you reach a small branch to you right. Duck into this and wait for the elite to path by again, then continue up the tunnel, following the elite. Take the next right. Hug the wall to your right until you enter a short tunnel. Follow this to another chamber. Keep hugging the right wall and enter the first tunnel you come to. This will lead to the chamber with the stone you are looking for.|
+;T Depth of the Depths|QID|26869|M|66.4,20.6|N|Click on the stone.|
 A A Rock Amongst Many|QID|26871|PRE|26869|M|66.4,20.6|N|From the Gigantic Painite Cluster.|
 T A Rock Amongst Many|QID|26871|M|56.5,42.5|N|Don’t go back the way you came. Take the exit directly in front of you, into another tunnel. Keep the wall on your right side as you follow this tunnel. At the end of it, you will drop down into the large central chamber. To your left is the circular tunnel that the Colossal Gyreworm paths around. Wait for him to go by, then follow him down the right fork. There will be some stones blocking the way, but they can be hopped over. Take the first right you can, and follow this tunnel all the way to the exit.|
 A Entrenched|QID|26436|PRE|26871|M|56.5,42.5|N|From Diamant the Patient.|
@@ -437,18 +438,18 @@ T Entrenched|QID|26436|M|34.12,34.19|N|To Kor the Immovable. He's way to the Wes
 A Intervention|QID|26438|PRE|26436|M|34.12,34.19|N|From Kor the Immovable.|
 A Making Things Crystal Clear|QID|26437|PRE|26436|M|34.12,34.19|N|From Kor the Immovable.|
 A Putting the Pieces Together|QID|26439|PRE|26436|M|34.5,33.4|N|From Berracite, who wanders.|
-C Making Things Crystal Clear|QID|26437|M|33.40,43.80|S|N|Collect Chalky Crystal Formations.|
+C Making Things Crystal Clear|QID|26437|NC|M|33.40,43.80|S|N|Collect Chalky Crystal Formations.|
 C Intervention|QID|26438|M|31.3,47.8|N|Kill 12 Rockflayers.|S|
-C Putting the Pieces Together|QID|26439|M|33.47,43.80|N|Click on Dormant/Dead Stonebound Elementals to reform them.|
+C Putting the Pieces Together|QID|26439|NC|M|33.47,43.80|N|Click on Dormant/Dead Stonebound Elementals to reform them.|
 C Intervention|QID|26438|M|31.3,47.8|N|Kill 12 Rockflayers.|US|
-C Making Things Crystal Clear|QID|26437|M|33.40,43.80|US|N|Finish collecting Chalky Crystal Formations.|
+C Making Things Crystal Clear|QID|26437|NC|M|33.40,43.80|US|N|Finish collecting Chalky Crystal Formations.|
 T Putting the Pieces Together|QID|26439|M|34.2,35|N|To Berracite, who wanders.|
 T Making Things Crystal Clear|QID|26437|M|34.12,34.19|N|To Kor the Immovable.|
 T Intervention|QID|26438|M|34.12,34.19|N|To Kor the Immovable.|
 A Pebble|QID|28869|PRE|26437;26438;26439|RANK|1|M|34.12,34.19|N|From Kor the Immovable.|
 T Pebble|QID|28869|N|To Pebble.|
 A Clingy|QID|26440|PRE|28869|N|From Pebble.|
-C Clingy|QID|26440|M|30.00,46.00|N|Pebble will begin “harvesting” the crystal. Defend him.|
+C Clingy|QID|26440|NC|M|30.00,46.00|N|Pebble will begin “harvesting” the crystal. Defend him.|
 T Clingy|QID|26440|N|To Pebble.|
 A So Big, So Round...|QID|26441|PRE|26440|N|From Pebble.|
 T So Big, So Round...|QID|26441|M|34.12,34.19|N|To Kor the Immovable.|
@@ -456,16 +457,16 @@ A Petrified Delicacies|QID|26507|PRE|26441|RANK|1|M|34.12,34.19|N|From Kor the I
 A Rock Bottom|QID|26575|PRE|26441|M|34.12,34.19|N|From Kor the Immovable.|
 C Petrified Delicacies|QID|26507|RANK|1|M|39.1,28.8|N|Head to the shelf to the northeast. Loot any Petrified Bats off the ground. The basilisks in the area can also drop them.|
 T Petrified Delicacies|QID|26507|RANK|1|N|To Pebble, who should still be following you around.|
-C Rock Bottom|QID|26575|M|47.5,27.00|N|Try to dodge the boulders he chucks. If you get the message that Gorgonite’s eyes begin to glow, you must quickly break line-of-sight with him or you will be stunned for several seconds.|
+K Gorgonite |QID|26575|T|Gorgonite|M|47.5,27.00|N|Try to dodge the boulders he chucks. If you get the message that Gorgonite’s eyes begin to glow, you must quickly break line-of-sight with him or you will be stunned for several seconds.|
 T Rock Bottom|QID|26575|M|34.12,34.19|N|Back to Kor the Immovable.|
 A Steady Hand|QID|26576|PRE|26575|RANK|1|M|34.12,34.19|N|From Kor.|
 A Rocky Upheaval|QID|26577|PRE|26575|M|34.12,34.19|N|From Kor.|
 T Steady Hand|QID|26576|RANK|1|N|To Terrath the Steady.|
-A Don't. Stop. Moving.|QID|26656|PRE|26576|RANK|1|M|39.94,19.41|N|From Terrath the Steady.|
-C Don't. Stop. Moving.|QID|26656|RANK|1|M|39.94,19.41;43.03,16.33;46.07,13.60;50.56,13.79|CS|N|You need to do this on a ground mount. Speak to Terrath and tell him you are ready. A group of Opalescent Guardians will spawn. This group will follow you and you need to get 5 across the eastern section of the Pale Roost, past all the stone dragons. The best way I have found is to run directly east to the stone circle at (50.60, 13.00)|
-T Don't. Stop. Moving.|QID|26656|RANK|1|M|39.94,19.41|N|To Terrath the Steady.|
-A Hard Falls|QID|26657|PRE|26656|RANK|1|M|39.94,19.41|N|From Terrath the Steady.|
-A Fragile Values|QID|26658|PRE|26656|RANK|1|M|39.94,19.41|N|From Terrath the Steady.|
+A Don't. Stop. Moving.|QID|26656|PRE|26576|RANK|1|M|39.9,19.4|N|From Terrath the Steady.|
+C Don't. Stop. Moving.|QID|26656|NC|RANK|1|M|39.94,19.41;43.03,16.33;46.07,13.60;50.56,13.79|CS|N|You need to do this on a ground mount. Speak to Terrath and tell him you are ready. A group of Opalescent Guardians will spawn. This group will follow you and you need to get 5 across the eastern section of the Pale Roost, past all the stone dragons. The best way I have found is to run directly east to the stone circle at (50.60, 13.00)|
+T Don't. Stop. Moving.|QID|26656|RANK|1|M|39.9,19.4|N|To Terrath the Steady.|
+A Hard Falls|QID|26657|PRE|26656|RANK|1|M|39.9,19.4|N|From Terrath the Steady.|
+A Fragile Values|QID|26658|PRE|26656|RANK|1|M|39.9,19.4|N|From Terrath the Steady.|
 C Hard Falls|QID|26657|S|RANK|1|M|33.6,21.4|N|Go west, out into the Pale Roost. You will see Stone Dragons falling to the ground. Attack them before they manage to take off again.|
 C Fragile Values|QID|26658|RANK|1|U|60266|M|35.8,26.4|N|Search the area until you find two stone troggs with a basilisk in a net. Kill the two troggs and loot them to get a Stonework Mallet.|
 C Hard Falls|QID|26657|US|RANK|1|M|33.6,21.4|N|Go west, out into the Pale Roost. You will see Stone Dragons falling to the ground. Attack them before they manage to take off again.|
@@ -495,10 +496,10 @@ A Corruption Destruction|QID|26585|PRE|26578;26579;26582|M|72.2,53.9|N|From Gors
 A Wrath of the Fungalmancer|QID|26583|PRE|26578;26579;26582|M|68.50,26.30|RANK|2|N|From Ruberick.|
 C Shaken and Stirred|QID|26584|N|Right behind Ruberick, you may have notice there are troggs raining from the sky. Kill 8 of these Verlock Pillartumblers.|
 N Wrath of the Fungalmancer|QID|26583|RANK|2|N|Go in the direction Ruberick is facing, until you enter Fungal Deep. Follow the cave down until you run into Earthmender Norsala. If you reach a point where the path splits off in different directions, it means someone else is doing the event. Wait a couple minutes and she should re-appear.|
-N Wrath of the Fungalmancer|QID|26583|RANK|2|N|Speak to Norsala and let her know you are ready to start the event.Follow him, attacking when you can.|
+C Wrath of the Fungalmancer|QID|26583|QO|1|RANK|2|N|Speak to Norsala and let her know you are ready to start the event.Follow him, attacking when you can.|
 C Wrath of the Fungalmancer|QID|26583|RANK|2|N|He’ll lead you on a merry chase through his cave, stopping a couple times. Be sure to watch out for the mushrooms he throws each time he stops. They will start small and begin growing, eventually exploding for a moderate amount of damage that hits everyone within 5 yards or so. You can stop this by attacking the mushrooms.|
 T Wrath of the Fungalmancer|QID|26583|RANK|2|M|68.50,26.30|N|Once Glop makes his last stand and is finished off, take the path to your left, then turn right to head out of the cave.|
-C Corruption Destruction|QID|26585|M|73.00,27.00|N|Loot Verlok Miracle-Grow, which will be on the ground and in crates all over this area.|
+C Corruption Destruction|QID|26585|NC|M|73.00,27.00|N|Loot Verlok Miracle-Grow, which will be on the ground and in crates all over this area.|
 T Corruption Destruction|QID|26585|M|72.2,53.9|N|Back to Gorsik.|
 T Shaken and Stirred|QID|26584|M|72.2,53.9|N|To Gorsik.|
 A At the Stonemother's Call|QID|26750|PRE|26584;26585|M|72.2,53.9|N|From Gorsik the Tumultuous.|
@@ -506,7 +507,7 @@ T At the Stonemother's Call|QID|26750|M|56.30,12.20|N|To Therazane.|
 A Audience with the Stonemother|QID|26752|PRE|26750|M|56.1,13.4|N|Watch event that takes place.|
 T Audience with the Stonemother|QID|26752|M|56.1,13.4|N|To Earthcaller Torunscar. He is off to the side and toward the back of Therazane's throne.|
 A Rallying the Earthen Ring|QID|26827|PRE|26752|M|56.1,13.4|N|From Earthcaller Torunscar.|
-C Rallying the Earthen Ring|QID|26827|N|Return to the Temple of Earth. Go into either of the two rooms near the back and talk to members of the Earthen Ring to get them to head off to the fight.|
+C Rallying the Earthen Ring|QID|26827|NC|M|50.5,58.3|N|Return to the Temple of Earth. Go into either of the two rooms near the back and talk to members of the Earthen Ring to get them to head off to the fight.|
 T Rallying the Earthen Ring|QID|26827|M|49.6,53|N|To Maruut Stonebinder.|
 A Our Part of the Bargain|QID|26828|PRE|26827|N|From Maruut.|
 T Our Part of the Bargain|QID|26828|M|63.30,25.00|N|Fly to the Halcyon Egress and find Therazane.|
@@ -514,9 +515,9 @@ A The Stone March|QID|26829|PRE|26828|M|63.3,25.1|N|From Therazane.|
 A Therazane's Mercy|QID|26832|PRE|26828|M|63.3,25.1|N|From Therazane.|
 A The Twilight Flight|QID|26831|PRE|26828|M|62.2,27|N|From Boden the Imposing.|RANK|1|
 C The Stone March|QID|26829|S|N|Kill Twilight Precipice Cultists.|
-C Therazane's Mercy|QID|26832|QO|High Priestess Lorthuna defeated: 1/1|M|62.50,31.00|N|Very top of the tower.|
-C Therazane's Mercy|QID|26832|QO|Boldrich Stonerender defeated: 1/1|N|Head west to find him.|
-C The Twilight Flight|QID|26831|M|63.20,38.20|N|Fight, chase, Kill!|
+K High Priestess Lorthuna|QID|26832|T|High Priestess Lorthuna|QO|High Priestess Lorthuna defeated: 1/1|M|62.50,31.00|N|Very top of the tower.|
+K Boldrich Stonerender|QID|26832|T|Boldrich Stonerender|M|58.9,32.9|QO|Boldrich Stonerender defeated: 1/1|N|Head west to find him.|
+K Zoltrik Drakebane |QID|26831|T|Zoltrik Drakebane|M|63.20,38.20|N|Fight, chase, Kill!|
 T The Twilight Flight|QID|26831|M|64.1,36.9|N|To Terath.|
 C The Stone March|QID|26829|M|62,35.6|US|N|Finish killing Cultists.|
 T The Stone March|QID|26829|M|63.3,25.1|N|To Therazane.|
@@ -538,7 +539,7 @@ A The Binding|QID|26971|PRE|26875|M|49.8,52.8|N|(UI Alert)|
 C The Binding|QID|26971|N|Kill High Priestess Lorthuna.|
 T The Binding|QID|26971|N|To Earthcaller Torunscar.|
 A The Stone Throne|QID|26709|PRE|26971|M|49.7,53.3|N|Will open up the Daily Quest hub in Deepholm, and to let the temple go back to normal.|
-A Wayward Child|QID|28824|PRE|26709|M|56.5,12.2|N|This is a Quest for Stonecore, the 5-man Dungeon in this zone. Feel free to pick up this quest so you can do it when you run the instance. However that will not be covered here.|
+A Wayward Child|QID|28824|PRE|26709|M|56.5,12.2|N|This is a Quest for Stonecore, the 5-man Dungeon in this zone. Feel free to pick up this quest so you can do it when you run the instance. However that will not be covered here.|O|
 T The Stone Throne|QID|26709|M|56.4,12.2|N|Back up on Therazane's Throne.|
 
 A The Twilight Plot|QID|27004|RANK|1|M|47.4,51.4|N|From Explorer Mowi.|FACTION|Alliance|

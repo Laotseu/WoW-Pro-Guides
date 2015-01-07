@@ -52,11 +52,19 @@ local function zoneSort()
 end
 local function rangeSort()
 	if sorttype == "RangeAsc" then
-		table.sort(guides, function(a,b) return a.startlevel > b.startlevel end)
+		table.sort(guides, function(a,b) 
+			a.level = a.level or ((a.startlevel + a.endlevel)/2)
+			b.level = b.level or ((b.startlevel + b.endlevel)/2)
+			return a.level > b.level 
+		end)
 		WoWPro.Leveling:UpdateGuideList()
 		sorttype = "RangeDesc"
 	else
-		table.sort(guides, function(a,b) return a.startlevel < b.startlevel end)
+		table.sort(guides, function(a,b)
+			a.level = a.level or ((a.startlevel + (a.endlevel or 0))/2)
+			b.level = b.level or ((b.startlevel + (b.endlevel or 0))/2)
+			return a.level < b.level 
+		end)
 		WoWPro.Leveling:UpdateGuideList()
 		sorttype = "RangeAsc"
 	end
@@ -78,7 +86,7 @@ function WoWPro.Leveling.GuideTooltipInfo(row, tooltip, guide)
         GameTooltip:AddTexture("Interface\\PaperDollInfoFrame\\SpellSchoolIcon5")
     end
     GameTooltip:AddDoubleLine("Start Level:",tostring(guide.startlevel),1,1,1,unpack(WoWPro.LevelColor(guide.startlevel)))
-    GameTooltip:AddDoubleLine("Mean Level:",string.format("%.2f",guide.level or 0),1,1,1,unpack(WoWPro.LevelColor(guide)))
+    GameTooltip:AddDoubleLine("Mean Level:",string.format("%.2f",guide.level or 0),1,1,1,unpack(WoWPro.LevelColor(guide.level or 0)))
     GameTooltip:AddDoubleLine("End Level:",tostring(guide.endlevel),1,1,1,unpack(WoWPro.LevelColor(guide.endlevel)))
 end
 
