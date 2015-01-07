@@ -142,7 +142,7 @@ A Echo Hunters|QID|34805|M|51.57,31.36|N|From Rashad.|PRE|34659|
 C A Charming Deception|QID|34756|M|49.60,38.24|S|NC|N|After you click on the charms, an adherant will attack, the charm gives you an illusion, which you can "dispell" to stun your opponent.|
 C Echo Hunters|QID|34805|M|50.23,39.80|S|N|These are bats, (up in the air), you need ranged to get their attention.|T|Echo Hunter|
 C Get a Feather of Syth|QID|35636|NC|QO|1|M|50.25,36.37|
-C Get The Saga of Terokk|QID|35636|QO|2|M|50.46,36.85|N|After you find the 2nd item, you will have to fight several adherants while Reshad studies what you have found.|
+C Get The Saga of Terokk|QID|35636|QO|2|M|50.0,36.7|N|After you find the 2nd item, you will have to fight several adherants while Reshad studies what you have found.|
 T All Due Respect|QID|35636|M|50.27,36.72|N|To Reshad.|
 A Syth's Secret|QID|35668|M|50.27,36.72|N|From Reshad.|PRE|35636|
 C Syth's Secret|QID|35668|CS|M|49.05,41.23;48.47,42.47|T|Sun-Talon Oberyx|N|Go down into the burrow,kill Oberyx and loot the eye.|
@@ -164,21 +164,22 @@ A Inspecting the Troops|QID|35276|M|45.89,46.37|N|From Jasper Fel.|FACTION|Allia
 A Inspecting the Troops|QID|35275|M|45.90,46.36|N|From Shadow Hunter Ukambe.|FACTION|Horde|PRE|35272|
 
 R Southport|QID|35276|M|45.79,47.08;41.79,50.72;40.41,59.78|CS|N|Over to the coast.|FACTION|Alliance|
-f Southport|M|39.08,61.80|N|To Firn Swiftbreeze|
 T Inspecting the Troops|QID|35276|M|40.00,60.47|N|To Jasper Fel.|FACTION|Alliance|
 A Orders, Commander?|QID|35286|M|39.84,60.78|N|From Lieutenant Willem.|FACTION|Alliance|PRE|35276|
 C Orders, Commander?|QID|35286|M|39.70,60.84|NC|N|Pick your outpost.|FACTION|Alliance|
 T Orders, Commander?|QID|35286|M|39.84,60.78|N|To Lieutenant Willem.|FACTION|Alliance|
-;A Outpost specific quest|QID|37327;35699|M|39.84,60.78|N|The quest (and quest giver) is determined by which building you choose. It is from Lieutenant Willam (brewery) or Millie Osgood (smugglers den).|FACTION|Alliance|PRE|35286|
-A Peace Offering|QID|37327;35699|N|From Millie Osgood.|M|39.5,61.3|FACTION|Alliance| -- smugglers den
-A Befriending the Locals|QID|37327;35699|N|From Lieutenant Willem|FACTION|Alliance| -
+A Outpost specific quest|QID|37327;35699|M|39.84,60.78|N|The quest (and quest giver) is determined by which building you choose. It is from Lieutenant Willam (brewery) or Millie Osgood (smugglers den).|FACTION|Alliance|PRE|35286|
+;A Peace Offering|QID|37327;35699|N|From Millie Osgood.|M|39.5,61.3|FACTION|Alliance| -- smugglers den
+;A Befriending the Locals|QID|37327;35699|N|From Lieutenant Willem|FACTION|Alliance| -
 A Wanted: Keeho's Severed Paw|QID|35674|M|39.46,61.66|N|From Wanted Poster inside the building.|FACTION|Alliance|PRE|35286|
 A Wanted: Spineslicer's Husk|QID|35675|M|39.46,61.66|N|From Wanted Poster.|FACTION|Alliance|PRE|35286|
 A Wanted: Venombarb|QID|35676|M|39.46,61.66|N|From Wanted Poster.|FACTION|Alliance|PRE|35286|
 A Pinchwhistle Gearworks|QID|35619;36861|M|39.63,60.62|N|From Watchman Kovak. If this quest isn't available to you, check to see if you have the quest offered at your garrison, (also called Pinchwhistle Gearworks) If you do, drop it and accept this one. (or go back to your garrison and ignore the guide).|FACTION|Alliance|PRE|35286|LVL|96| ; need to be 97 to get the quest, hope I did that right.
 A Old Friends|QID|35293|M|39.79,60.68|N|From Jasper Fel.|FACTION|Alliance|PRE|35286|
 h Southport|QID|35293|M|40.12,61.49|N|At Elria Willowfall.|FACTION|Alliance|
+f Southport|M|39.08,61.80|N|To Firn Swiftbreeze|
 
+C Pinchwhistle Gearworks|QID|35619;35620|NC|M|39.1,61.8|N|Talk to Firn Seifbreeze to get a ride.|
 f Pinchwhistle Gearworks|QID|35619;35620|M|60.88,73.31|N|At Kwiven Quickcog.|
 T Pinchwhistle Gearworks|QID|35619;35620|M|61.47,72.94|N|To Kimzee Pinchwhistle.|
 A Defungination|QID|35077|M|61.47,72.94|N|From Kimzee Pinchwhistle.|PRE|35619+35620|
@@ -224,13 +225,13 @@ C Sporicide|QID|35091|M|58,92|S|N|There are a few of these wandering in the vill
 C Preventing the Worst|QID|35211|M|56.5,91.2|NC|N|There is a translucent bomb inside of each of the buildings, click on it to activate. It is upstairs on the balcony of the 2 story building.|
 C Curing With Force|QID|36428|M|56.2,90.4|U|115533|US|N|You have to beat them up before they will accept the potion, don't forget to give it to them (instead of killing them). Again, a garrison follower will kill them.  Send them home for a bit.|
 C Sporicide|QID|35091|M|56.2,90.4|US|N|There are a few of these wandering in the village but most are behind it.|
-T Sporicide|QID|35091|M|58.49,92.33|N|To Kimzee Pinchwhistle.|
+T Sporicide|QID|35091|M|58.8,92.9|N|To Kimzee Pinchwhistle.|
 T Preventing the Worst|QID|35211|M|58.46,92.22|N|To Krixel Pinchwhistle.|
 T Curing With Force|QID|36428|M|58.46,92.22|N|To Krixel Pinchwhistle.|
 A Flame On|QID|35298|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|35211;36428|
 C Flame On|QID|35298|M|58.44,92.24|QO|1|NC|N|Click on the Plunger to set off the bombs.|
 C Flame On|QID|35298|M|58.88,92.84|QO|2|NC|N|Hop in Kimzee's flying machine.|
-T Flame On|QID|35298|M|61.47,72.94|N|To Kimzee Pinchwhistle.|
+T Flame On|QID|35298|M|61.6,72.9|N|To Kimzee Pinchwhistle.|
 A Kimzee Pinchwhistle|QID|36062|M|61.47,72.94|N|To/From Kimzee Pinchwhistle.|PRE|35298|
 
 
@@ -392,7 +393,7 @@ T Mother of Thorns|QID|34885|M|46.49,46.68|N|To Reshad.|
 T Rites of the Talonpriests|QID|35733|M|46.63,46.74|N|To Effigy of Terokk.|
 A The Talon King|QID|35734|M|46.63,46.74|N|From Effigy of Terokk.|PRE|35733|
 C The Talon King|QID|35734|M|46.48,46.66|CC|CHAT|N|Talk to him to start this phased encounter.|
-C The Talon King|QID|35734|M|45.99,66.27;45.7,66.4|N|Use the Talon King's abilities (1) to wipe them all out.|
+C The Talon King|QID|35734|M|45.99,66.27;45.7,66.4|CS|N|Use the Talon King's abilities (1) to wipe them all out.|
 T The Talon King|QID|35734|M|46.48,46.66|N|To Reshad.|
 A Ikky|QID|34898|M|46.19,45.69|N|Talk to Ikky to acquire him as a battle pet.|PRE|34886|
 F Talon Watch|QID|34998|M|46.18,44.13|CC|CHAT|N|Chat with Skytalon Meshaa for a flight to a new area, Talon Watch(Chat Option, not a flight path).|
@@ -552,7 +553,7 @@ C All Natural|QID|35739|US|M|61.00,57.12|N|Kill the ancient trees for thier char
 T All Natural|QID|35739|M|60.19,53.15|N|To Dilbert Tinkertoss.|FACTION|Alliance|
 T I See Dead Arakkoa|QID|35782|M|60.19,53.15|N|To Dilbert Tinkertoss.|FACTION|Alliance|
 A The Ebon Hunter|QID|35835|M|60.20,53.15|PRE|35739;35782|N|From Dilbert Tinkertoss.|FACTION|Alliance|
-C The Ebon Hunter|QID|35835|M|65.09,61.46|T|The Ebon Hunter|FACTION|Alliance|
+K The Ebon Hunter|QID|35835|M|65.09,61.46|T|The Ebon Hunter|FACTION|Alliance|
 T The Ebon Hunter|QID|35835|M|60.08,53.64|N|To Dilbert Tinkertoss.|FACTION|Alliance|
 H Southport|QID|35619|ACTIVE|35676;36165|FACTION|Alliance|
 
