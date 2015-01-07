@@ -83,7 +83,7 @@ WoWPro.actiontypecoords = {
 	-- noncombat = { 1/8, 2/8, 4/8, 5/8 },
 }
 function WoWPro:SetActiontypeTex(tex, actiontype, index, offset)
-	if not WoWPro.actiontypes[actiontype] then
+	if not WoWPro.actiontypes[actiontype] and index then
 		err("Invalid actiontype '%s' for index %s (offset = %s)", actiontype, index, offset)
 	end
 	tex:SetTexture(WoWPro.actiontypes[actiontype])
@@ -602,16 +602,17 @@ function WoWPro:CheckFunction(row, button, down)
 			WoWPro:SkipStepDialogCall(row.index, steplist)
 		end
 	elseif button == "RightButton" and row.check:GetChecked() then
-	    row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
-		WoWProCharDB.Guide[GID].completion[row.index] = true
-		WoWPro:UpdateQuestTracker()
-		if WoWProDB.profile.checksound then	
-			PlaySoundFile(WoWProDB.profile.checksoundfile)
-		end
-		if WoWPro.action[row.index] == "D" then
-	        WoWProCharDB.Guide[GID].done = true
-	        WoWPro:dbp("WoWPro:CheckFunction: %s guide is done.",GID)
-	    end
+	   row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
+	   WoWPro.CompleteStep(row.index, true)
+		-- WoWProCharDB.Guide[GID].completion[row.index] = true
+		--WoWPro:UpdateQuestTracker()
+		--if WoWProDB.profile.checksound then	
+		--	PlaySoundFile(WoWProDB.profile.checksoundfile)
+		-- end
+		-- if WoWPro.action[row.index] == "D" then
+	 --        WoWProCharDB.Guide[GID].done = true
+	 --        WoWPro:dbp("WoWPro:CheckFunction: %s guide is done.",GID)
+	 --    end
 	elseif not row.check:GetChecked() then
 		WoWPro:UnSkipStep(row.index)
 	end
