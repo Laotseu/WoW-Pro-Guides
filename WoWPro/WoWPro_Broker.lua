@@ -286,10 +286,6 @@ function WoWPro.UpdateGuideReal(From)
 	    WoWPro:dbp("UpdateGuideReal(): Hey! No guide, no update.")
 	    return
 	end
-	WoWPro:dbp("Running: UpdateGuideReal()")
-	local GID = WoWProDB.char.currentguide
-	local offset = WoWPro.GuideOffset
-	WoWPro.GuideOffset = nil
 	
 	-- If the user is in combat, or if a GID is not present, or if the guide cannot be found, end --
 	if MaybeCombatLockdown() then
@@ -302,6 +298,10 @@ function WoWPro.UpdateGuideReal(From)
 		WoWPro:SendMessage("WoWPro_UpdateGuide","InCinematic")
 		return
 	end
+	WoWPro:dbp("Running: UpdateGuideReal()")
+	local GID = WoWProDB.char.currentguide
+	local offset = WoWPro.GuideOffset
+	WoWPro.GuideOffset = nil
 	if  not GID or not WoWPro.Guides[GID] then
 	    WoWPro:dbp("Suppresssed guide update. Guide %s is invalid.",tostring(GID))
         return 
@@ -355,25 +355,28 @@ function WoWPro.UpdateGuideReal(From)
 	if WoWPro.Recorder then
 	    WoWPro.ActiveStep = WoWPro.Recorder.SelectedStep or WoWPro.ActiveStep
 	end
-	if not offset then WoWPro.Scrollbar:SetValue(WoWPro.ActiveStep) end
-	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount))
-	
-	local reload = true
-	-- Reloading until all stickies that need to unsticky have done so --
-	while reload do reload = rowContentUpdate(offset) end
-	
-	-- Update content and formatting --
-	WoWPro:RowSet(); WoWPro:RowSet()
-	WoWPro:PaddingSet()
-	
-	-- Updating the guide list or current guide panels if they are shown --
-	if WoWPro[module:GetName()].GuideList
-	and WoWPro[module:GetName()].GuideList.Frame
-	and WoWPro[module:GetName()].GuideList.Frame:IsVisible() 
-	and WoWPro[module:GetName()].UpdateGuideList then
-		WoWPro[module:GetName()]:UpdateGuideList() 
+
+	if WoWPro.CurrentIndex <= #WoWPro.step then
+		if not offset then WoWPro.Scrollbar:SetValue(WoWPro.ActiveStep) end
+		WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount))
+		
+		local reload = true
+		-- Reloading until all stickies that need to unsticky have done so --
+		while reload do reload = rowContentUpdate(offset) end
+		
+		-- Update content and formatting --
+		WoWPro:RowSet(); WoWPro:RowSet()
+		WoWPro:PaddingSet()
+		
+		-- Updating the guide list or current guide panels if they are shown --
+		if WoWPro[module:GetName()].GuideList
+		and WoWPro[module:GetName()].GuideList.Frame
+		and WoWPro[module:GetName()].GuideList.Frame:IsVisible() 
+		and WoWPro[module:GetName()].UpdateGuideList then
+			WoWPro[module:GetName()]:UpdateGuideList() 
+		end
+		if WoWPro.CurrentGuideFrame:IsVisible() then WoWPro.UpdateCurrentGuidePanel() end
 	end
-	if WoWPro.CurrentGuideFrame:IsVisible() then WoWPro.UpdateCurrentGuidePanel() end
 	
 	-- Updating the progress count --
 	local p = 0
@@ -973,7 +976,7 @@ function WoWPro:NextStep(k,i)
 	-- Prevent infinite loop
 	if k > #WoWPro.step then
 		--err("Infinite loop")
-		return 1
+		return #WoWPro.step + 1
 	end
 		
 	end
@@ -1010,7 +1013,7 @@ end
 
 
 -- Step Completion Tasks --
-function WoWPro.CompleteStep(step)
+function WoWPro.CompleteStep(step, manual)
 	local GID = WoWProDB.char.currentguide
 	if WoWProCharDB.Guide[GID].completion[step] then return end
 	if WoWProDB.profile.checksound then	
@@ -1027,7 +1030,7 @@ function WoWPro.CompleteStep(step)
 	end
 	
 	local Delta = WoWPro:MapPointDelta()
-	if Delta then
+	if not manual and Delta then
 	    local qid=-99
 	    if WoWPro.QID[step] then
 	        qid = WoWPro.QID[step]
