@@ -478,7 +478,7 @@ T The Southern Wilds |QID|35459|N|To Prelate Reenu, south along the road in Draa
 T The Southern Wilds |QID|35450|N|To Prelate Reenu, south along the road in Draakorium|M|57.0,57.5|ACTIVE|35450|
 
 A Crippled Caravan|QID|33786|M|57.0,57.5|N|From Prelate Reenu.|
-A Wanted: Maa'run's Hoof |QID|33836|N|From the Wanted Poster at The Draakorium. This is a 3-party group quest.|RANK|3|
+A Wanted: Maa'run's Hoof |QID|33836|M|57.4,57.2|N|From the Wanted Poster at The Draakorium. This is a 3-party group quest.|RANK|3|
 f The Draakorium |QID|33786|N|With Morfax|M|57.0,56.6|
 C Crippled Caravan|QID|33786|N|Head to Fiona's Caravan|M|53.6,57.3|NC|
 T Crippled Caravan|QID|33786|N|To Fiona|M|53.6,57.3|
@@ -486,7 +486,7 @@ T Crippled Caravan|QID|33786|N|To Fiona|M|53.6,57.3|
 A Fiona's Solution|QID|33787|M|53.60,57.27|N|From Fiona.|
 A Swamplighter Queen|QID|33808|M|53.60,57.27|N|From Fiona.|
 
-C Wanted: Maa'run's Hoof |QID|33836|N|Kill and loot Maa'run for her hoof. This is a 3-party group quest.|RANK|3|M|51.8,54.4|
+K Maa'run |QID|33836|T|Maa'run|N|Kill and loot Maa'run for her hoof. This is a 3-party group quest.|RANK|3|M|51.8,54.4|
 C Fiona's Solution|QID|33787|N|Kill and loot the Swamplighter Drones for the Swamplighter Venom (note, venom does NOT drop from the Workers)|QO|2|S|M|51.8,58.5|
 K Swamplighter Queen|QID|33808|T|Swamplighter Queen|N|Head into Swamplight Cave, then kill and loot Swamplighter Queen for her tail.|M|51.5,55.6|
 
