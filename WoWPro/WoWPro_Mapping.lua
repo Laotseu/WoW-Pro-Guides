@@ -438,15 +438,17 @@ function WoWPro:ValidateMapCoords(guide,action,step,coords)
 		    WoWPro:Error("Missing coordinate, %d/%d in guide %s, line [%s %s].",numcoords-j+1,numcoords,guide,action,step)
 		    return
 		end
-		local x = tonumber(jcoord:match("([^|]*),"))
-		if not x or x > 100  then
-		    WoWPro:Error("Bad X coordinate %s, %d/%d in guide %s, line [%s %s].",jcoord,numcoords-j+1,numcoords,guide,action,step)
-		    return
-		end
-		local y = tonumber(jcoord:match(",([^|]*)"))
-		if not y or y > 100 then
-		    WoWPro:Error("Bad Y coordinate %s, %d/%d in guide %s, line [%s %s].",jcoord,numcoords-j+1,numcoords,guide,action,step)
-		    return
+		if jcoord ~= "0,0" then
+			local x = tonumber(jcoord:match("([^|]*),"))
+			if x == nil or x < 0 or x > 100  then
+			    WoWPro:Error("Bad X coordinate %s, %d/%d in guide %s, line [%s %s].",jcoord,numcoords-j+1,numcoords,guide,action,step)
+			    return
+			end
+			local y = tonumber(jcoord:match(",([^|]*)"))
+			if y == nil or y < 0 or y > 100 then
+			    WoWPro:Error("Bad Y coordinate %s, %d/%d in guide %s, line [%s %s].",jcoord,numcoords-j+1,numcoords,guide,action,step)
+			    return
+			end
 		end
 	end
 end
