@@ -715,8 +715,8 @@ C Across the Stars|QID|33795|N|Pick up the Star Readings from the floor.|NC|S|
 C The Great Salvation|QID|33794|N|Rescue the Draenei prisoners by opening the cages.|NC|S|
 
 C Into Anguish|QID|35032|N|Deactivate the Mark of Shadows|QO|3|M|34.5,41.4|NC|
-C Harbingers of the Void |QID|33793|N|Kill the Shadowmoon Prophet surrounding the Essence of Shadow to release it, then kill it.|QO|1|M|34.0,43.3|
-C Harbingers of the Void|QID|33793|N|Kill Essence of Anguish, who is inside Ancestor's Grotto cave.|QO|3|M|35.2,44.5|
+K Essence of Shadow |QID|33793|T|Essence of Shadow|N|Kill the Shadowmoon Prophet surrounding the Essence of Shadow to release it, then kill it.|QO|1|M|34.0,43.3|
+K Essence of Anguish|QID|33793|T|Essence of Anguish|N|Kill Essence of Anguish, who is inside Ancestor's Grotto cave.|QO|3|M|35.2,44.5|
 
 l Rovo's Dagger |QID|33573|N|Rovo's Dagger: Lootable object and tidy XP from Cave #2.|M|36.68,44.46|RANK|3|
 l Ashes of A'kumbo |QID|33584|N|Ashes of A'kumbo: Lootable object and tidy XP fropm Cave #3.|M|37.75,44.27|RANK|3|
@@ -724,7 +724,7 @@ l Greka's Urn |QID|33614|N|Greka's Urn: Lootable object and tidy XP from Cave #4
 l Beloved's Offering |QID|33046|N|Beloved's Offering: Lootable object and tidy XP from Cave #5.|M|36.79,41.41|RANK|3|
 l Uzko's Knickknacks |QID|33540|N|Uzko's Knickknacks: Lootable object for an i525 Blue Boots and tidy XP from Cave #6.|M|35.87,40.87|RANK|3|
 C Into Anguish|QID|35032|N|Deactivate the Mark of Anguish|QO|4|M|32.6,38.8|NC|
-C Harbingers of the Void |QID|33793|N|Kill the Shadowmoon Prophet surrounding the Essence of Darkness to release it, then kill it.|QO|2|M|31.2,39.4|
+K Essence of Darkness|QID|33793|T|Essence of Darkness|N|Kill the Shadowmoon Prophet surrounding the Essence of Darkness to release it, then kill it.|QO|2|M|31.2,39.4|
 C Into Anguish|QID|35032|N|Deactivate the Mark of Darkness|QO|2|M|29.5,39.7|NC|
 
 T Into Anguish|QID|35032|N|Auto-Complete|
@@ -742,7 +742,18 @@ A Wanted: Kliaa's Stinger|QID|33834|N|From the poster in Bloodthorn Hill. This i
 K Kliaa |QID|33834|T|Kliaa|N|Kill and loot Kliaa for her Massive Stinger|M|24.61,36.34|RANK|2|
 
 R Bloodthorn Cave |QID|33419|N|Head to Bloodthorn Cave.|M|24.03,33.06|
-A A Matter of Life and Death|QID|33419|N|From Roona in the Bloodthorn Cave.|M|60.09,32.01|Z|Bloodthorn Cave|
+
+;A Bonus Objective: Bloodthorn Cave |QID|34504|M|24.0,33.0|Z|Shadowmoon Valley|N|From Bloodthorn Striker|; Bloo;dthorn Cave |Z|947;0|
+;A A Matter of Life and Death |QID|33419|M|23.2,33.0|Z|Shadowmoon Valley|N|From Roona|; Bloodthorn Cave |Z|947;0|
+;C A Matter of Life and Death |QID|33419|QO|2|M|22.7,34.0|Z|Shadowmoon Valley|; Bloodthorn Cave |Z|947;0|
+;C Bonus Objective: Bloodthorn Cave |QID|34504|QO|1|M|26.0,51.0|Z|Shadowmoon Valley|; Bloodthorn Cave |Z|947;15|
+;C A Matter of Life and Death |QID|33419|QO|1|M|21.6,34.1|Z|Shadowmoon Valley|; Bloodthorn Cave |Z|947;0|
+;C Bonus Objective: Bloodthorn Cave |QID|34504|QO|2|M|21.1,35.0|Z|Shadowmoon Valley|; Bloodthorn Cave |Z|947;0|
+;T Bonus Objective: Bloodthorn Cave |QID|34504|M|21.1,35.0|Z|Shadowmoon Valley|; Bloodthorn Cave |Z|947;0|
+;C A Matter of Life and Death |QID|33419|QO|3|M|22.6,34.8|Z|Shadowmoon Valley|; Bloodthorn Cave |Z|947;0|
+;T A Matter of Life and Death |QID|33419|M|23.1,33.0|Z|Shadowmoon Valley|N|To Roona|; Bloodthorn Cave |Z|947;0|
+
+A A Matter of Life and Death|QID|33419|N|From Roona in the Bloodthorn Cave.|M|23.2,33.0|Z|Bloodthorn Cave|
 C A Matter of Life and Death|QID|33419|N|Save Diaani.|NC|QO|2|M|52.29,54.33|Z|Bloodthorn Cave|
 l Rotting Basket|QID|33572|N|Rotting Baskets: Lootable junk worth 13 gold and some tidy XP.|M|56.28,48.84|RANK|3|Z|Bloodthorn Cave|
 C A Matter of Life and Death|QID|33419|N|Save Arekk, he's in the cave north of Diaani|NC|QO|1|M|32.73,52.84|Z|Bloodthorn Cave|
@@ -762,8 +773,8 @@ C The Dark Side of the Moon|QID|35093|N|Kill Arkeddon.|M|30.9,43.9|QO|2|
 T The Dark Side of the Moon|QID|35093|N|To Yrel|M|46.4,38.6|
 
 T On the Offensive|QID|33083|N|To Prophet Velen|M|46.4,38.7|
-T Harbingers of the Void|QID|33793|M|35.7,36.9|N|To Prophet Velen|
-T Across the Stars|QID|33795|M|35.7,36.9|N|To Prophet Velen|
+T Harbingers of the Void|QID|33793|M|46.4,38.7|N|To Prophet Velen|
+T Across the Stars|QID|33795|M|46.4,38.7|N|To Prophet Velen|
 
 A Darkness Falls|QID|33837|N|From Prophet Velen.|M|46.4,38.7|PRE|33794;33083;33793;33795|
 
@@ -858,7 +869,7 @@ T Oru'kai's Staff |QID|36315|N|To Arcanist Delath|M|37.4,72.6|
 
 H Lunarfall|QID|34192|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36624|
 ; Having this quest and the [Ashran Appearance] quest causes the Ashran one not to complete.
-A The Secrets of Gorgrond |QID|35556|N|Moving onto Gorgrond next? Accept this quest from your Bulletin Board.|LEAD|36632;35556|LVL|92|M|42.65,44.74|Z|Lunarfall|O|
+A The Secrets of Gorgrond |QID|35556;34676|N|Moving onto Gorgrond next? Accept this quest from your Bulletin Board.|LEAD|36632;35556|LVL|92|M|42.65,44.74|Z|Lunarfall|O|
 
 D Zone Finished|QID|33533;35556;36632|N|Zone finished (for now). Feel free to hearth to your garrison for your missions, otherwise move onto the Gorgrond guide.|
 

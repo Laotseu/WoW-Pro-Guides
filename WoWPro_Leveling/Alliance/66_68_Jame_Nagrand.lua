@@ -332,8 +332,8 @@ A Body of Evidence |QID|9932|M|73.8,62.6|N|From Lantressor of the Blade.|
 A Returning the Favor |QID|9931|M|73.8,62.6|N|From Lantressor of the Blade.|
 T Shattering the Veil |QID|9849|M|61.8,24.4|N|To Gordawg.|
 A Gurok the Usurper |QID|9853|N|From Gordawg.|M|61.8,24.4|
-T The Spirit Polluted |QID|9810|M|60.5,22.4|N|To Ementalist Lo'ap.|
-T Muck Diving |QID|9815|M|60.5,22.4|N|To Ementalist Lo'ap.|
+T The Spirit Polluted |QID|9810|M|60.8,22.4|N|To Ementalist Lo'ap.|
+T Muck Diving |QID|9815|M|M|60.8,22.4|N|To Ementalist Lo'ap.|
 T Murkblood Corrupters |QID|9862|M|60.5,22.4|N|To Ementalist Morgh.|
 
 C Returning the Favor|N|Plant Kil'sorrow Banners on ogre corpses as you did earlier with the other quest.|QID|9931|NC|M|50.00,22.00|U|25555|S|
@@ -344,10 +344,10 @@ C Wanted: Zorbo the Advisor|N|Kill Warmaul Shamans and Reavers in the area.|QID|
 C Returning the Favor|N|Plant Kil'sorrow Banners on ogre corpses as you did earlier with the other quest. |QID|9931|NC|M|50.00,22.00|U|25555|US|
 
 N Ring of Blood|N|Look for a group for Ring of Blood quests if you wish. Some people can solo most if not all of this depending on level/class/spec/gear. Most will probably will still need help.|
-K Gutripper|QID|9856|M|36.9,20;34.3,26.5;31.2,31.5;32.2,25;33.4,20|CN|N|Kill Gutripper and loot his eye.|T|Gutripper|L|24513|S|
+K Gutripper|QID|9856|M|36.9,20;34.3,26.5;31.2,31.5;32.2,25;33.4,20|CN|N|Kill Gutripper and loot his eye.|T|Gutripper|S|
 C Flawless Greater Windroc Beak|QID|10252|QO|Flawless Greater Windroc Beak: 1/1|N|Go between the waypoints until a flawless beak drops.|M|36.00,19.00;32.99,22.62|CN|L|28667|
-K Gutripper|QID|9856|M|36.9,20;34.3,26.5;31.2,31.5;32.2,25;33.4,20|CN|N|Kill Gutripper and loot his eye. He wanders around where the waypoints are.|T|Gutripper|L|24513|US|
-C The Ravaged Caravan|N|Get the crates needed for this quest.|QID|9956|M|27.00,23.00|S|
+K Gutripper|QID|9856|M|36.9,20;34.3,26.5;31.2,31.5;32.2,25;33.4,20|CN|N|Kill Gutripper and loot his eye. He wanders around where the waypoints are.|T|Gutripper|US|
+C The Ravaged Caravan|N|Get the crates needed for this quest.|QID|9956|NC|M|27.00,23.00|S|
 l Warmaul Skull|QID|9853|M|27.00,23.00|N|Kill Warmaul Ogres until you get 7 skulls.|L|24502 7|S|
 C Mountain Gronn Eyeball|QID|10252|N|Kill the Mountain Gronn on this path and loot the eyeball.|QO|Mountain Gronn Eyeball: 1/1|M|30.00,32.00|T|Mountain Gronn|
 T Corki's Ransom|QID|9954|M|27.0,23.7;29.5,26.0|CS|N|Go in the cave here, go to the back of the cave and find Corki. Turn the quest in, be careful of the elite.|
@@ -356,7 +356,7 @@ K Cho'war the Pillager|N|Go through the cave and kill Cho'war.|QID|9955|T|Cho'wa
 l Warmaul Skull|QID|9853|M|27.00,23.00|N|Kill Warmaul Ogres until you get 7 skulls.|L|24502 7|US|
 K Gurok the Usurper|N|Use the skulls at the pulsating purple circle. Kill Gurok then loot him. He has a nasty knock back, so don't have your back towards the cliff.|QID|9853|M|29.00,25.00|U|24502|
 C Cho'war the Pillager |QID|9955|M|27.0,23.7;29.5,26.0|CS|N|Go in the cave here, go to the back of the cave and find Corki. Right click on the cage to let the moron out.|
-C The Ravaged Caravan|N|Get the rest of the crates needed.|QID|9956|M|27.00,23.00|US|
+C The Ravaged Caravan|N|Get the rest of the crates needed.|QID|9956|NC|M|27.00,23.00|US|
 
 C Aged Clefthoof Blubber |QID|10252|N|Kill Aged Clefthoofs until you get the Blubber.|QO|Aged Clefthoof Blubber: 1/1|M|27.00,41.00|
 K Ortor My Old Friend... |N|Go here and kill Ortor.|QID|9873|T|Ortor of Murkblood|M|30.9,42.4|

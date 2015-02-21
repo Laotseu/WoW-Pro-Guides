@@ -297,7 +297,7 @@ H Southport|QID|35549|M|40.1,61.5|FACTION|Alliance|PRE|35482|
 H Axefall|QID|35550|M|36.86,56.74|FACTION|Horde|PRE|36183|
 
 T Honoring a Hero|QID|35549|M|39.8,60.8|N|To Lieutenant Willem.|FACTION|Alliance|
-A For Old Times Sake|QID|36353|M|39.98,60.65|N|To/From Admiral Taylor who wants to come join your garrison forces.|FACTION|Alliance|PRE|35549|
+A For Old Times' Sake|QID|36353|M|39.98,60.65|N|To/From Admiral Taylor who wants to come join your garrison forces.|FACTION|Alliance|PRE|35549|
 T Surviving in a Savage Land|QID|35550|M|40.18,43.50|N|To Taskmaster Gornek.|FACTION|Horde|
 
 f Southport|QID|35293|M|39.78,61.87;39.08,61.79|CS|N|At Firn Swiftbreeze.|FACTION|Alliance|

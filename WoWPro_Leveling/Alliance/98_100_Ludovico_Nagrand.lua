@@ -73,7 +73,7 @@ WoWPro:GuideNextGuide(guide, 'nil')
 WoWPro:GuideSteps(guide, function()
 return [[
 
-N Warning!|QID|0|N|This guide is partially written. It has been played through once and still needs TLC. Use at your own risk|
+N Warning!|QID|34675|N|This guide is partially written. It has been played through once and still needs TLC. Use at your own risk|
 
 L Level 98 |QID|34674;37184|LVL|98|N|This guide requires a minimum level of 98 to do.|
 N Welcome to Nagrand|QID|34674;37184|ACTIVE|34674;37184|S|N|If you want the rare elite and treasures included in this guide, please set your Rank to 3.|
@@ -388,11 +388,11 @@ T Lok-rath is Secured|QID|35062|M|63.52,61.89|N|To Rangari D'kaan|
 A And Justice for Thrall|QID|35169|PRE|34596;34957;35062|M|63.52,61.89|N|From Rangari D'kaan|
 F Yrel's Watch|QID|35332|M|63.64,61.55|N|To John Shelby|
 
-f Throne of the Elements|QID|35332|N|With Gixmo Moneycash|M|73.70,26.65|
+f Throne of the Elements|ALTFP|Skysong Lake|QID|35332|N|With Gixmo Moneycash|M|73.70,26.65|
 T Nobundo Sends Word |QID|35332|N|To Vindicator Nobundo at the Throne of the Elements|M|71.72,19.65|
 A Called to the Throne |QID|35331|N|From Vindicator Nobundo|M|71.72,19.65|PRE|35332|
 C Called to the Throne |QID|35331|QO|1|N|Speak to Vindicator Nobundo, and tell him you are ready to commune with the furies.|CHAT|
-C Called to the Throne |QID|35331|QO|2|N|Commune with the furries|NC|M|71.40,18.12|
+C Called to the Throne |QID|35331|QO|2|N|Commune with the furries|NC|M|71.7,19.7|
 T Called to the Throne |QID|35331|N|To Vindicator Nobundo|M|71.72,19.65|
 A Elemental Attunement |QID|35333|N|From Vindicator Nobundo|M|71.72,19.65|PRE|35331|
 A An Old Friend |QID|34943|M|72.78,19.72|N|From Kalandrios|PRE|35331|
@@ -404,45 +404,46 @@ T An Old Friend |QID|34943|M|75.07,22.74|N|To Gar'rok, up on the ledge.|
 A A Rare Bloom|QID|34894|M|75.07,22.74|PRE|34943|N|From Gar'rok|
 
 R Elemental Plateau|QID|34881|M|75.86,21.50;77.71,18.87|CS|N|Take the path all the way up to the Plateau|
-K Corrupted Wind Spirit|QID|34881|M|75.60,23.80;78.90,24.80;80.30,20.00;76.70,25.55;81.84,17.09;79.75,17.82;82.20,20.80;79.90,14.16;78.99,21.67|CN|QO|2|S|
-K Corrupted Wind Guardian|QID|34893|M|79.69,25.31|QO|2|
-C Pillar of Wind|QID|35333|M|78.32,24.42|QO|2|
+C Corrupted Wind Spirit|QID|34881|M|75.60,23.80;78.90,24.80;80.30,20.00;76.70,25.55;81.84,17.09;79.75,17.82;82.20,20.80;79.90,14.16;78.99,21.67|CN|QO|2|S|
+K Corrupted Wind Guardian|QID|34893|T|Currupted Wind Guardian|M|79.69,25.31|QO|2|
+C Pillar of Wind|QID|35333|NC|M|78.32,24.42|QO|2|
 
-K Unstable Earth Spirit|QID|34881|M|76.45,14.30;74.38,9.75;82.30,17.65;78.30,15.80;82.10,19.80;81.10,15.76;76.10,11.70;79.59,18.29;80.70,21.55;79.50,13.18|CN|QO|1|S|
-C Unstable Earth Guardian|QID|34893|M|81.43,14.34|QO|1|
-C Pillar of Earth|QID|35333|M|79.30,11.67|QO|1|
+C Unstable Earth Spirit|QID|34881|M|76.45,14.30;74.38,9.75;82.30,17.65;78.30,15.80;82.10,19.80;81.10,15.76;76.10,11.70;79.59,18.29;80.70,21.55;79.50,13.18|CN|QO|1|S|
+K Unstable Earth Guardian|QID|34893|T|Unstable Earth Guardian|M|81.43,14.34|QO|1|
+C Pillar of Earth|QID|35333|NC|M|79.30,11.67|QO|1|
 
-K Tumultous Water Spirit|QID|34881|M|78.00,15.50;80.35,18.55;72.31,9.12;74.12,11.01;75.99,12.54|CN|QO|4|S|
-K Tainted Water Guardian|QID|34893|M|75.28,14.05|QO|4|
-C Pillar of Water|QID|35333|M|73.80,10.50|QO|4|
+C Tumultous Water Spirit|QID|34881|M|78.00,15.50;80.35,18.55;72.31,9.12;74.12,11.01;75.99,12.54|CN|QO|4|S|
+K Tainted Water Guardian|QID|34893|T|Tainted Water Guardian|M|75.28,14.05|QO|4|
+C Pillar of Water|QID|35333|NC|M|73.80,10.50|QO|4|
 
-R Magmire|QID|34894|M|68.8,10.4|N|To get the bloom, you need to get past Magmire. Cave opening here.|
+K Magmire|QID|34894|M|68.8,10.4|T|Magmire|N|To get the bloom, you need to get past Magmire. Cave opening here.|
 A A Wrong of Earth and Fire|QID|33928|N|Kill Magmire and get the quest from the Molten Core|U|113080|
-C A Rare Bloom|QID|34894|M|70.7,9.9|N|Ember Blossom, in the back of the cave.|
-K Volatile Fire Spirit|QID|34881|M|73.60,10.45;71.14,8.29;68.53,9.85;67.75,11.95;65.47,10.59|CN|QO|3|S|
-K Volatile Flame Guardian|QID|34893|M|66.54,8.39|QO|3|
+C A Rare Bloom|QID|34894|M|70.7,9.9|NC|N|Ember Blossom, in the back of the cave.|
+C Volatile Fire Spirit|QID|34881|M|73.60,10.45;71.14,8.29;68.53,9.85;67.75,11.95;65.47,10.59|CN|QO|3|S|
+K Volatile Flame Guardian|QID|34893|T|Volatile Flame Guardian|M|66.54,8.39|QO|3|
 C Pillar of Flame|QID|35333|M|67.42,9.17|QO|3|
+C Volatile Fire Spirit|QID|34881|M|73.60,10.45;71.14,8.29;68.53,9.85;67.75,11.95;65.47,10.59|CN|QO|3|US|
 
 R Throne of the Elements|QID|34894|M|67.57,11.28;68.83,14.10;70.62,17.15|CS|N|Take the back way back.|
-T A Rare Bloom|QID|34894|M|75.07,22.74|N|To Gar'rok|
+T Earth, Wind and Fire...and Water|QID|34881|M|71.34,17.86|N|To Incineratus|
+T Guardians of the Plateau|QID|34893|M|71.34,17.86|N|To Incineratus|
+T A Wrong of Earth and Fire|QID|33928|M|71.34,17.86|N|To Incineratus|
+T Elemental Attunement|QID|35333|M|71.72,19.65|N|To Vindicator Nobundo|
+T A Rare Bloom|QID|34894|M|73.8,16.4;75.07,22.74|CS|N|To Gar'rok|
 A Guise of the Deceiver|QID|34932|PRE|34894|M|75.07,22.74|N|From Gar'rok|
-C Guise of the Deceiver|QID|34932|M|77.96,23.32|CHAT|N|Speak with her. Challe is on the path to the Plateau, but take a path to the right.|
+C Guise of the Deceiver|QID|34932|M|76.0,20.8;77.96,23.32|CS|CHAT|N|Speak with her. Challe is on the path to the Plateau, but take a path to the right.|
 T Guise of the Deceiver|QID|34932|M|75.07,22.74|N|To Gar'rok|
 A The Debt We Share|QID|34941|PRE|34932|M|75.07,22.74|N|From Gar'rok|
 C Witness|QID|34941|M|75.07,22.74|CHAT|N|Witness his passing, and wait a few moments.|
 
 T The Debt We Share|QID|34941|M|72.6,19.6|N|To Kalandrios|
-T Elemental Attunement|QID|35333|M|71.72,19.65|N|To Vindicator Nobundo|
-T Earth, Wind and Fire...and Water|QID|34881|M|71.34,17.86|N|To Incineratus|
-T A Wrong of Earth and Fire|QID|33928|M|71.34,17.86|N|To Incineratus|
-T Guardians of the Plateau|QID|34893|M|71.34,17.86|N|To Incineratus|
 
 A The Ritual of Binding|QID|35330|PRE|35333;34881;34893|M|71.72,19.65|N|From Vindicator Nobundo|
 C The Ritual of Binding|QID|35330|M|72.6,19.6|CHAT|N|Chat with Kalandrios to start the ritual.|
 T The Ritual of Binding|QID|35330|M|71.72,19.65|N|To Vindicator Nobundo|
 
 A The Call of Oshu'gun|QID|35372|M|71.72,19.65|N|From Vindicator Nobundo|
-F Spirit Woods|QID|35372|M|73.70,26.65|CHAT|N|Ask Gixmo Moneycash for a ride.|
+C Spirit Woods|QID|35372|M|73.70,26.65|QO|1|CHAT|N|Ask Gixmo Moneycash for a ride.|
 T The Call of Oshu'gun|QID|35372|M|55.52,55.92|N|To Vindicator Nobundo|
 
 A Spiritual Matters|QID|35393|PRE|35372|M|55.52,55.92|N|From Vindicator Nobundo|
@@ -452,50 +453,35 @@ A Silence the Call|QID|35084|M|55.46,55.92|N|From Shamanstone|
 A Disrupt the Rituals|QID|35083|M|55.46,55.92|N|From Shamanstone|
 
 C The Pale Threat|QID|35397|M|57.6,59.2|QO|2|N|Kill the Pale|S|
-K Enslaved Earth Spirit|QID|35398|M|52.6,61.2|T|Enslaved Earth Spirit|QO|1|S|
-K Greyseer|QID|35397|M|66.30,18.00|QO|1|Z|The Underpale|N|Head to the cave at the back of Shadowfall Canyon. The arrow may be flaky until you get into the cave.|
+C Enslaved Earth Spirit|QID|35398|M|52.6,61.2|T|Enslaved Earth Spirit|QO|1|S|
+K Greyseer|QID|35397|T|Greyseer|M|56.5,61.9;67.4,18.3|CS|QO|1|Z|The Underpale|N|Head to the cave at the back of Shadowfall Canyon. The arrow may be flaky until you get into the cave.|
 
 T The Pale Threat|QID|35397|M|46.12,32.83|Z|The Underpale|N|To Vindicator Nobundo, in the cave.|
 T Dark Binding |QID|35398|M|46.12,32.83|Z|The Underpale|N|To Vindicator Nobundo, in the cave.|
 A The Fate of Gordawg|QID|35395|PRE|35397;35398|M|46.12,32.83|Z|The Underpale|N|To Vindicator Nobundo, in the cave.|
 A The Dark Heart of Oshu'gun|QID|35396|PRE|35397;35398|M|46.12,32.83|Z|The Underpale|N|To Vindicator Nobundo, in the cave.|
-l Heart of the Fury|QID|35395|M|41.0,40.5|Z|The Underpale|QO|1|N|Kill Gordawg and loot the heart.|
+;l Heart of the Fury|QID|35395|M|41.0,40.5|Z|The Underpale|QO|1|N|Kill Gordawg and loot the heart.|
+K Gordawg|QID|35395|M|41.0,40.5|Z|The Underpale|QO|1|T|Gordawg|N|Kill Gordawg and loot the heart.|
 
-C The Dark Heart of Oshu'gun|QID|35396|M|17.50,64.50|Z|The Underpale|QO|1|N|Head into the opening behind Gordawg and keep on going till you see Cho'gall.|
+C The Dark Heart of Oshu'gun|QID|35396|NC|M|17.50,64.50|Z|The Underpale|QO|1|N|Head into the opening behind Gordawg and keep on going till you see Cho'gall.|
 K Decimatus|QID|35396|M|17.09,64.70|Z|The Underpale|QO|2|T|Decimatus|
 R Oshu'gun|QID|35393|M|22.67,65.43;19.77,72.35;11.88,68.73;8.41,60.20|CS|Z|The Underpale|N|Follow Nobundo up the ramp and leave the Sanctum here. Climb up the crack.|
 
-C Mok'gor totems|QID|35083|M|48.16,58.49|QO|1|
-C Gra'ah totems|QID|35083|M|52.39,63.35|QO|2|
+C Silence the Call|QID|35084|M|54.2,67.6|QO|2|N|Warsong shamans|S|
+C Mok'gor totems|QID|35083|NC|M|48.16,58.49|QO|1|
 A The Warsong Threat|QID|35386|M|51.87,62.09|N|From Warsong Plans|
+C Gra'ah totems|QID|35083|NC|M|52.39,63.35|QO|2|
 C Kag'ah totems|QID|35083|M|50.54,70.49|QO|3|
 
-f Nivek's Overlook|QID|35084|M|49.38,75.91|N|From Nivek Lee, grab a flight point while we are out here.|RANK|2|
+f Nivek's Overlook|ALTFP|Spirit Woods|QID|35084|M|49.38,75.91|N|From Nivek Lee, grab a flight point while we are out here.|RANK|2|
 A Feline Friends Forever|QID|35596|M|40.4,76.2|N|From Goldmane the Skinner|RANK|3|
 T Feline Friends Forever|QID|35596|M|40.4,76.2|N|To Goldmane the Skinner|RANK|3|
 
-C Silence the Call|QID|35084|M|54.2,67.6|QO|2|N|Warsong shamans|S|
 K Ritualist Kuhlrath|QID|35084|M|54.70,67.11|QO|1|N|In the hut.|
-C Warsong Outrider Orders|QID|35386|M|51.86,67.4|QO|3|N|On a table in the hut.|
-C Nagrand Scouting Report|QID|35386|M|54.57,67.07|QO|4|; In Kuhlrath's hut
-C Warsong Command Brief|QID|35386|M|52.50,55.80|QO|1|; Gar'Lua
-C Mixed Unit Tactics|QID|35386|M|47.08,56.01|QO|2|
-
-R Ancestral Grounds|QID|35393|M|41.33,56.54|N|Get ready to speak with spirits.|
-T Spiritual Matters|QID|35393|M|40.43,56.79|N|To Gar'rok|
-A Lighting The Darkness|QID|35022|PRE|34941|M|40.43,56.79|N|From Gar'rok|
-A Echoes of the Past|QID|35023|PRE|34941|M|40.40,56.75|N|From Dahaka|
-
-C Echoes of the Past|QID|35023|M|37.8,56.2|QO|1|N|Tormented Echos's and Void-Crazed Spirits.  Stay on the first two tiers.|S|
-C Lighting The Darkness|QID|35022|M|38.50,54.25|QO|1|N|Light the pyres.  Stay on the first two tiers.|U|112396|
-
-T Lighting The Darkness|QID|35022|M|40.43,56.79|N|To Gar'rok|
-T Echoes of the Past|QID|35023|M|40.4,56.6|N|To Dahaka|
-A Golmash Hellscream|QID|35024|PRE|35022;35023||M|40.43,56.79|N|From Gar'rok|
-
-C Golmash Hellscream|QID|35024|M|37.4,55.6|N|Golmash Hellscream, on the third tier.|
-
-T Golmash Hellscream|QID|35024|M|40.4,56.8|N|To Gar'rok|
+C Nagrand Scouting Report|QID|35386|NC|M|54.57,67.07|QO|4|; In Kuhlrath's hut
+C Warsong Outrider Orders|QID|35386|NC|M|51.86,67.4|QO|3|N|On a table in the hut.|
+C Warsong Command Brief|QID|35386|NC|M|52.50,55.80|QO|1|; Gar'Lua
+C Mixed Unit Tactics|QID|35386|NC|M|47.08,56.01|QO|2|
 T Silence the Call|QID|35084|M|46.73,57.52|N|To Shamanstone|
 T Disrupt the Rituals|QID|35083|M|46.73,57.52|N|To Shamanstone|
 A Through the Nether|QID|35085|PRE|35084;35083|M|46.73,57.52|N|To Shamanstone|
@@ -508,15 +494,31 @@ A The Void March|QID|35086|PRE|35085|M|46.81,57.51|N|From Shamanstone|
 
 K Void Terror|QID|35086|M|51.6,64.8|QO|1|S|
 K Void Tendril|QID|35086|M|51.6,64.8|QO|2|S|
-C Void Portals|QID|35087|M|46.20,58.60;50.10,72.00;52.10,65.50;52.60,70.40;52.70,68.00;52.30,61.95;49.25,56.85;50.38,59.98|CN|QO|1|
+C Void Portals|QID|35087|NC|M|46.20,58.60;50.10,72.00;52.10,65.50;52.60,70.40;52.70,68.00;52.30,61.95;49.25,56.85;50.38,59.98|CN|QO|1|
 
 T The Nether Approaches|QID|35087|M|46.81,57.51|N|From Shamanstone|
 T The Void March|QID|35086|M|46.81,57.51|N|From Shamanstone|
 A The Shadow of the Void|QID|35088|PRE|35087;35086|M|46.81,57.51|N|From Shamanstone, or the closest one.|
-
-C The Shadow of the Void|QID|35088|M|48.09,58.56|QO|1|N|Click on the void crystal at the altar and kill Invalidus|
-
+K Invalidus|QID|35088|T|Invalidus|M|48.09,58.56|QO|1|N|Click on the void crystal at the altar and kill Invalidus|
 T The Shadow of the Void|QID|35088|M|55.5,55.9|N|To Shamanstone|
+
+R Ancestral Grounds|QID|35393|M|41.33,56.54|N|Get ready to speak with spirits.|
+T Spiritual Matters|QID|35393|M|40.43,56.79|N|To Gar'rok|
+A Lighting The Darkness|QID|35022|PRE|34941|M|40.43,56.79|N|From Gar'rok|
+A Echoes of the Past|QID|35023|PRE|34941|M|40.40,56.75|N|From Dahaka|
+
+C Echoes of the Past|QID|35023|M|37.8,56.2|QO|1|N|Tormented Echos's and Void-Crazed Spirits.  Stay on the first two tiers.|S|
+C Lighting The Darkness|QID|35022|NC|M|38.50,54.25|QO|1|N|Light the pyres.  Stay on the first two tiers.|U|112396|
+C Echoes of the Past|QID|35023|M|37.8,56.2|QO|1|N|Tormented Echos's and Void-Crazed Spirits.  Stay on the first two tiers.|US|
+
+T Lighting The Darkness|QID|35022|M|40.43,56.79|N|To Gar'rok|
+T Echoes of the Past|QID|35023|M|40.4,56.6|N|To Dahaka|
+A Golmash Hellscream|QID|35024|PRE|35022;35023||M|40.43,56.79|N|From Gar'rok|
+
+K Golmash Hellscream|QID|35024|T|Golmash Hellscream|M|37.4,55.6|N|Golmash Hellscream, on the third tier.|
+
+T Golmash Hellscream|QID|35024|M|40.4,56.8|N|To Gar'rok|
+
 H Telaari Station |QID|35386|N|Use your hearthstone to return to Telaari Station.|
 T The Warsong Threat|QID|35386|M|62.12,62.12|N|To Captain Washburn|
 F Throne of the Elements|QID|35395|M|63.64,61.55|N|To John Shelby|

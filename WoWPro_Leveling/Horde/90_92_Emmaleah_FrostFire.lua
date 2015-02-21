@@ -429,10 +429,10 @@ T Let the Hunt Begin!|QID|32791|M|36.00,25.78|N|To Ga'nar.|
 A Leave Nothing Behind!|QID|32792|M|36.00,25.78|N|From Ga'nar.|
 A They Rely on Numbers|QID|32929|M|35.92,25.71|N|From Ligra the Unyielding.|
 C They Rely on Numbers|QID|32929|M|35.10,29.72|S|
-C Leave Nothing Behind!|QID|32792|QO|2|M|38.1,28.9|T|Kur'ak the Binder|
+K Kur'ak the Binder|QID|32792|QO|2|M|38.1,28.9|T|Kur'ak the Binder|
 A Dagg at Daggarmaw Ravine|QID|34654|M|39.6,28.0|N|There is no quest !, but if you want Dagg to be your follower later, you need to free him from this cage.|
-C Leave Nothing Behind!|QID|32792|NC|QO|1|M|38.7,30.2|
-C Leave Nothing Behind!|QID|32792|NC|QO|3|M|42.3,34.1|
+C Destroy the Ballistae|QID|32792|NC|QO|1|M|38.7,30.2|
+C Destroy the Supplies|QID|32792|NC|QO|3|M|42.3,34.1|
 C They Rely on Numbers|QID|32929|M|35.10,29.72|US|
 T They Rely on Numbers|QID|32929|M|46.39,32.05|N|To Kal'gor the Honorable.|
 A Articles of the Fallen|QID|32804|M|46.39,32.05|N|From Kal'gor the Honorable.|
@@ -441,12 +441,12 @@ A Wrath of Gronn|QID|32794|M|46.40,32.15|N|From Ga'nar.|
 C Articles of the Fallen|QID|32804|M|46.59,33.46|NC|N|Pick up the items off of the ground in this open area.|
 T Articles of the Fallen|QID|32804|M|46.38,32.04|N|To Kal'gor the Honorable.|
 C Wrath of Gronn|QID|32794|M|39.88,72.16|N|Head down the cave and fight the gronn's captors.|
-T Wrath of Gronn|QID|32794|M|50.58,54.40|N|To Ga'nar. Take any path in the cave to the middle.|Z|Grulloc's Lair|
+T Wrath of Gronn|QID|32794|M|50.58,54.40|N|To Ga'nar. Take any path in the cave to the middle.|Z|Grulloc's Lair|;  Grulloc's Lair |Z|941;8|
 A The Eldest|QID|32795|M|50.58,54.40|Z|Grulloc's Lair|N|From Ga'nar.|
 C The Eldest|QID|32795|M|53.65,62.58|Z|Grulloc's Lair|CHAT|N|Talk to Ga'nar to start the fight.|T|Grulloc|
-T The Eldest|QID|32795|M|49.30,50.46|Z|Grulloc's Lair|N|From Ga'nar.|
-A To the Garrison|QID|32796|M|49.30,50.46|Z|Grulloc's Lair|
-H Town Hall (Frostwall)|QID|32796|M|41.58,53.06|Z|Frostwall|U|110560|N|Back to your Garrison.|
+T The Eldest|QID|32795|M|51.6,63.6|Z|Grulloc's Lair|N|From Ga'nar.|
+A To the Garrison|QID|32796|M|51.6,63.6|Z|Grulloc's Lair|
+H Frostwall|QID|32796|M|41.58,53.06|Z|Frostwall|U|110560|N|Back to your Garrison.|
 
 A Ashran Appearance|QID|36706|M|52.45,53.35|N|From Gazlowe.|Z|Frostwall|
 A We Be Needin' Supplies|QID|34736|M|51.33,51.44|N|From Rokhan.|Z|Frostwall|

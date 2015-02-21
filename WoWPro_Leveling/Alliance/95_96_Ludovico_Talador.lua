@@ -264,9 +264,9 @@ A Orbs of Power |QID|34911|PRE|34913|M|69.9,69.5|N|From Magister Serena.|
 ;K No'losh |T|No'losh|RANK|2|M|86.3,30.0|N|He wonders around along the stream.|
 C While We're in the Neighborhood|QID|34909|S|M|67.0,72.8|N|Kill ogres.|
 C Orbs of Power|QID|34911|S|NC|M|69.9,77.0|N|Click on the orbs to destroy them.|
-K Vizier Vorgorsh |QID|34910|QO|1|T|Vorgorsh|M|68.6,78.9;67.9,79.7;68.5,82.9|CS|
-K Vizier Zulmork |QID|34910|QO|2|T|Zulmork|M|67.1,77.0|
-K Vizier Cromaug |QID|34910|QO|3|T|Cromaug|M|66.2,81.1|
+K Vizier Vorgorsh |QID|34910|QO|1|T|Vizier Vorgorsh|M|68.6,78.9;67.9,79.7;68.5,82.9|CS|
+K Vizier Zulmork |QID|34910|QO|2|T|Vizier Zulmork|M|67.1,77.0|
+K Vizier Cromaug |QID|34910|QO|3|T|Vizier Cromaug|M|66.2,81.1|
 C Orbs of Power|QID|34911|US|NC|M|69.9,77.05|N|Click on the orbs to destroy them.|
 C While We're in the Neighborhood|QID|34909|US|M|67.0,72.8|N|Kill ogres.|
 T While We're in the Neighborhood|QID|34909|M|0,0|N|To Magister Serena.|
@@ -306,7 +306,7 @@ C Prowler Blood |QID|34802|S|QO|1|Z|Talador|N|Kill the cats|;  |Z|946;0|
 C Snapdragon Frond |QID|34802|S|NC|QO|2|Z|Talador|N|Pick up the Snapdragons|;  |Z|946;0|
 C Riverhoppe Eye |QID|34802|QO|3|Z|Talador|N|Kill the frogs|;  |Z|946;0|
 C Snapdragon Frond |QID|34802|US|NC|QO|2|Z|Talador|N|Pick up the Snapdragons|;  |Z|946;0|
-C AProwler Blood |QID|34802|US|QO|1|Z|Talador|N|Kill the cats|;  |Z|946;0|
+C Prowler Blood |QID|34802|US|QO|1|Z|Talador|N|Kill the cats|;  |Z|946;0|
 T A Pilgrimage Gone Awry |QID|34802|M|61.3,54.4|Z|Talador|N|To Nadur|;  |Z|946;0|
 
 K Hilaani|QID|34104|T|Hilaani|U||M|66.21,65.30|N|Hilaani, between Tombs of Light and Gordal Fortress, waaay to the south of fort. Party of 3 suggested or use your garrison "I Win" button.|
@@ -590,8 +590,6 @@ T Just Peachicky |QID|33882|M|36.2,65.1|N|To Caleb|;  |Z|946;0|
 T Sher'KHAAAAAAANNNN! |QID|33884|M|36.2,65.1|N|To Caleb|;  |Z|946;0|
 T And the Elekk Too?! |QID|33944|M|36.2,65.1|N|To Caleb|;  |Z|946;0|
 
-D Your Garrison|QID|35537|M|71.84,29.75|N|Back to your garrison, where the Spires of Arak guide will start. Click to continue.|U|110560|
-
 ;A Wanted: Ra'tok the Hammer|QID|34105|M|69.43,21.14|N|From Patrick Messer|
 ;C Wanted: Ra'tok the Hammer|QID|34105|M|54.2,22.2|N|Ra'tok the Hammer, on the Orunai Coast, west of fort, NW of Tuurem.  Party of 3 suggested.|
 ;T Wanted: Ra'tok the Hammer|QID|34105|M|69.43,21.14|N|To Patrick Messer|
@@ -601,5 +599,8 @@ A As the Smoke Rises|QID|34685|M|0.0,0.0|N|From ?|; Neutral
 T As the Smoke Rises|QID|34685|M|73.0,38.6|N|To Crystal-Shaper Barum|
 
 K Ra'kahn|M|59.48,59.59|RANK|3|
+
+D Your Garrison|M|71.84,29.75|N|Back to your garrison, where the Spires of Arak guide will start. Click to continue.|U|110560|
+
 ]]
 end)
