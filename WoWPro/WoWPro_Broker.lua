@@ -210,7 +210,9 @@ function WoWPro.LoadGuideReal()
 	    WoWProCharDB.Guide[GID].completion =  {}
 	    WoWProCharDB.Guide[GID].skipped =  {}
 	    WoWProCharDB.Guide[GID].why =  {}
+	    WoWProCharDB.Guide[GID].done = false
 	    WoWProCharDB.Guide[GID].Version = WoWPro.Version
+	    -- err("GID = %s, done = %s", GID, WoWProCharDB.Guide[GID].done)
     end
 	    
 	if ((not WoWProCharDB.Guide[GID].completion) or (not WoWProCharDB.Guide[GID].skipped)) then
@@ -395,8 +397,9 @@ function WoWPro.UpdateGuideReal(From)
 	WoWPro.TitleText:SetText((WoWPro.Guides[GID].name or WoWPro.Guides[GID].zone).."   ("..(WoWProCharDB.Guide[GID].progress+1).."/"..WoWProCharDB.Guide[GID].total..")")
 	
 	-- If the guide is complete, loading the next guide --
-	if (WoWProCharDB.Guide[GID].progress == WoWProCharDB.Guide[GID].total or WoWProCharDB.Guide[GID].done)
+	if (WoWProCharDB.Guide[GID].progress >= WoWProCharDB.Guide[GID].total or WoWProCharDB.Guide[GID].done)
 	and not WoWPro.Recorder and WoWPro.Leveling and not WoWPro.Leveling.Resetting then
+--		err("progress = %s, total = %s, done = %s",WoWProCharDB.Guide[GID].progress, WoWProCharDB.Guide[GID].total, WoWProCharDB.Guide[GID].done)
 		if WoWProDB.profile.autoload then
 			WoWProDB.char.currentguide = WoWPro:NextGuide(GID)
 			WoWPro:Print("Switching to next guide: %s",tostring(WoWProDB.char.currentguide))
@@ -1057,6 +1060,7 @@ function WoWPro.CompleteStep(step, manual)
 	    WoWPro:dbp(line)
 	end
 	if WoWPro.action[step] == "D" then
+--		err("GID = %s, step = %s, WoWPro.action[step] = %s", GID, step, WoWPro.action[step])
 	    WoWProCharDB.Guide[GID].done = true
 	    WoWPro:dbp("WoWPro.CompleteStep: %s guide is done.",GID)
 	end
