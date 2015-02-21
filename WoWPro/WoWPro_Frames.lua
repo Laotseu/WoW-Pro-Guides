@@ -1,3 +1,5 @@
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 ---------------------------------
 --      WoWPro_Frames.lua      --
 ---------------------------------
@@ -787,10 +789,13 @@ function WoWPro:CreateDropdownMenu()
 		end},
 		{text = L["Reset Current Guide"], func = function() 
 			if not WoWProDB.char.currentguide then return end
-			WoWProCharDB.Guide[WoWProDB.char.currentguide] = nil
+			-- WoWProCharDB.Guide[WoWProDB.char.currentguide]
 			for j = 1,WoWPro.stepcount do 
 				if WoWPro.QID[j] then WoWProCharDB.skippedQIDs[WoWPro.QID[j]] = nil end
 			end
+			WoWPro.Resetting = true
+			WoWPro:LoadGuide()
+			WoWPro.Resetting = false
 			WoWPro:LoadGuide()
 		end},
 	}
