@@ -119,7 +119,7 @@ WoWPro:GuideNextGuide(guide, "JamNag6668")
 WoWPro:GuideIcon(guide,"ACH",4928)
 WoWPro:GuideSteps(guide, function()
 return [[
-F Shattrath City|QID|10211|N|Fly to Shattrath City.|M|41.28,28.98|Z|Zangarmarsh|
+F Shattrath|QID|10211|N|Fly to Shattrath City.|M|41.28,28.98|Z|Zangarmarsh|
 A A'dal|Z|Shattrath City|QID|10210|M|59.70,41.45|N|From Haggard War Veteran.|
 T A'dal|Z|Shattrath City|QID|10210|M|54.0,44.8|N|To A'dal.|
 A City of Light |Z|Shattrath City|QID|10211|M|54.8,44.3|N|From Khadgar.|
@@ -152,7 +152,7 @@ A Strange Energy |QID|9968|M|44.3,26.3|N|From Earthbinder Tavgren.|
 C Vicious Teromoth Sample|QID|9968|S|N|Kill Vicious Teromoths to get 4 Vicious Teromoth Samples.|QO|Vicious Teromoth Sample: 4/4|M|44.00,20.00|
 A It's Watching You!|QID|9951|M|45.0,22.5|N|From Warden Treelos.|
 C Clues in the Thicket|N|Examine the Strange Object here.|QID|9971|M|45.10,21.80|
-C It's Watching You!|N|Kill Naphthal'ar at the top of the tower.|QID|9951|M|43.50,22.00|
+K Naphthal'ar|N|Kill Naphthal'ar at the top of the tower.|QID|9951|T|Naphthal'ar|M|43.50,22.00|
 T It's Watching You!|QID|9951|M|45.0,22.5|N|To Warden Treelos.|
 C Vicious Teromoth Sample|QID|9968|US|N|Kill Vicious Teromoths to get 4 Vicious Teromoth Samples.|QO|Vicious Teromoth Sample: 4/4|M|44.00,20.00|
 T Clues in the Thicket|QID|9971|M|44.3,26.3|N|To Earthbinder Tavgren.|

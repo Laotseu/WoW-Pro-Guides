@@ -123,13 +123,13 @@
 -- Who: Jiyambi
 
 local guide = WoWPro:RegisterGuide("JamNag6668", "Leveling", "Nagrand", "Jame", "Alliance")
-WoWPro:GuideLevels(guide,64,68,64.5625)
+WoWPro:GuideLevels(guide,65,68,65.8)
 WoWPro:GuideNextGuide(guide, "JamBla6870")
 WoWPro:GuideIcon(guide,"ACH",4928)
 WoWPro:GuideSteps(guide, function()
 return [[
 
-A A Message to Telaar |QID|9792|M|41.8,27.2|Z|Zangarmarsh|N|This is a breadcrumb quest for Nagran that start in the Orebor Harborage in Zangarmarsh.\n\nThis quest is optional, skip it if you don't want to do it.|O|
+A A Message to Telaar |QID|9792|LEAD|9917|M|41.8,27.2|Z|Zangarmarsh|N|This is a breadcrumb quest for Nagran that start in the Orebor Harborage in Zangarmarsh.\n\nThis quest is optional, skip it if you don't want to do it.|O|
 R Nagrand|QID|9792|N|Make your way to Nagrand.|M|20.30,55.60|
 A I Must Have Them! |QID|10109|M|61.7,67.1|N|From Wazat.|
 ;N From now on...|QID|9861|N|From now on, kill Air Elementals until you get the Howling Wind, and kill Wild Elekks (you will need 3 Pairs of Ivory Tusks for a quest).|
@@ -174,7 +174,7 @@ C Windroc Mastery |N|Kill the Windrocs needed for this quest.|QID|9854|M|64,36|S
 A The Howling Wind |QID|9861|M|64.0,45.1|US|N|Kill Air Elementals until you get the Howling Wind. Use it to start the quest.|U|24504|
 T The Howling Wind |QID|9861|M|60.5,22.4|N|To Elementalist Morgh.|
 A Murkblood Corrupters |QID|9862|M|60.5,22.4|N|From Elementalist Morgh.|
-T The Throne of the Elements |QID|9869|M|60.5,22.4|N|To Elementalist Sharvak.|
+T The Throne of the Elements |QID|9869|M|60.7,22.1|N|To Elementalist Sharvak.|
 A A Rare Bean |QID|9800|M|60.8,22.4|N|From Elementalist Lo'ap.|
 A Muck Diving |QID|9815|M|60.8,22.4|N|From Elementalist Lo'ap.|
 A The Underneath |QID|9818|M|60.7,22.6|N|From Elementalist Untrag.|
@@ -198,8 +198,8 @@ A Talbuk Mastery|QID|9858|M|71.4,40.6|N|From Harold Lane.|
 T The Tortured Earth|QID|9819|M|61.8,24.4|N|To Gordawg, he walks around.|
 A Eating Damnation|QID|9821|M|61.8,24.4|N|From Gordawg.|
 ;N Mana Tombs |QID|10109|N|You can do Mana Tombs if you want, for XP |
-H Telaar|N|Skip this step if your Hearthstone is on cooldown.|M|54.7,70.2|
-r Sell junk, repair, restock, train skills|QID|10109|M|53.0,72.2|N|Sell junk, repair, restock, train skills |
+H Telaar|N|Skip this step if your Hearthstone is on cooldown.|QID|10109|M|54.7,70.2|
+r Sell junk, repair, restock, train skills|QID|10109|M|53.2,79.1|N|Sell junk, repair, restock, train skills |
 
 ;N From now on...|QID|9855|N|From now on, kill the mobs you need for the mastery quests if you see them.|
 T I Must Have Them! |QID|10109|M|61.7,67.1|N|To Wazat.|
@@ -219,7 +219,7 @@ T HELP! |QID|9923|M|55.5,68.8|N|To Arechron.|
 A Corki's Gone Missing Again!|QID|9924|M|55.5,68.8|N|From Arechron.|
 T The Ruins of Burning Blade|QID|9921|M|54.6,72.2|N|To Mo'mor the Breaker.|
 A The Twin Clefts of Nagrand|QID|9922|M|54.6,72.2|N|From Mo'mor the Breaker.|
-A He Called Himself Altruis...|QID|9982|N|From Huntress Kima.  She wanders around Telaar.|M|53.54,72|
+A He Called Himself Altruis...|QID|9982|LVL|66|N|From Huntress Kima.  She wanders around Telaar.|M|53.54,72|
 r Sell junk, repair, restock |QID|9800|N|Do not sell Ogre Warbeads or Ivory Tusks. Sell junk, repair, restock.|M|53.25,70|
 
 A The Consortium Needs You! |QID|9913|M|51.8,34.8|N|From Consortium Recruiter.|M|51.18,69.83|
@@ -283,7 +283,7 @@ A Buying Time|QID|9999|M|27.35,43.06|N|From Altruis the Sufferer.|
 C Buying Time|QID|9999|M|25.52,37.54|N|Kill the Demons that are needed for this quest.|
 T Buying Time|QID|9999|M|27.35,43.06|N|To Altruis the Sufferer.|
 A The Master Planner|QID|10001|M|27.35,43.06|N|From Altruis the Sufferer.|
-C The Master Planner|QID|10001|M|23.64,34.7;17.49,50.27|CN|N|Find, kill and loot a Mo'arg Master Planner at either of the waypoints.|
+K Mo'arg Master PLanner|QID|10001|T|Mo'arg Master PLanner|M|23.64,34.7;17.49,50.27|CN|N|Find, kill and loot a Mo'arg Master Planner at either of the waypoints.|
 T The Master Planner|QID|10001|M|27.33,43.07|N|To Altruis the Sufferer.|
 N Altruis offers too much|QID|9859|N|The rest of the quests Altruis offers will be done at the end of the guide for completion as they take you out of the zone.|
 K Bach'lor|QID|9859|M|29.1,33.8;26.2,50.6|CN|N|Kill Bach'lor and loot his hoof. He wanders between the waypoints.|T|Bach'lor|L|24523|US|
@@ -292,7 +292,7 @@ A Gava'xi |QID|9900|M|30.8,58.1|N|From Zerid.|
 T The Consortium Needs You! |QID|9913|M|31.4,57.8|N|To Gezhe.|
 A Stealing from Thieves |QID|9882|M|31.4,57.8|N|From Gezhe.|REP|The Consortium;933;Neutral|
 A A Head Full of Ivory|QID|9914|N|From Shadrek.|M|31.75,56.80|REP|The Consortium;933;Neutral|
-N Sell junk, repair, restock |QID|9922|N|Sell junk, repair, restock.|M|30.59,56.94|
+r Sell junk, repair, restock |QID|9922|N|Sell junk, repair, restock.|M|30.59,56.94|
 
 C A Head Full of Ivory|QID|9914|S|N|Kill Wild Elekks.|M|31.75,56.80|REP|The Consortium;933;Neutral|
 l Murkblood Invasion Plans |QID|9871|N|Kill a Murkblood Invader (they wander the road) and loot the plans.|L|24559|M|28.3,53.4;29.9,58.1;33.3,58.5;38,55.3;40.6,58.3;44.2,59.5|CN|
@@ -368,6 +368,7 @@ T Stealing from Thieves |QID|9882|M|31.4,57.8|N|To Gezhe.|REP|The Consortium;933
 T Vision of the Dead |QID|10252|N|To Nitrin the Learned.|M|51.74,56.9|
 A Levixus the Soul Caller |QID|10253|PRE|10252|M|51.74,56.9|N|From Nitrin the Learned. This takes you into a dungeon, so this is optional.|
 T The Ravaged Caravan |QID|9956|M|54.2,70.0|N|To Huntress Kima, find her wandering around Telaar.|
+A He Called Himself Altruis...|QID|9982|LVL|66|N|From Huntress Kima.  She wanders around Telaar.|M|54.2,70.0|
 T Wanted: Giselda the Crone |QID|9936|M|54.8,71.0|N|To Waden Moi'bff Jill.|
 T Wanted: Zorbo the Advisor|QID|9940|M|54.8,71.0|N|To Waden Moi'bff Jill.|
 A Wanted: Durn the Hungerer |QID|9938|N|From Waden Moi'bff Jill.|M|54.8,71.0|
@@ -391,6 +392,7 @@ T Message to Telaar |QID|9933|M|55.5,68.8|N|To Arechron.|
 T The Ultimate Bloodsport|QID|9852|N|To Hemet Nesingwary.|M|71.5,40.8|
 
 N The following quests are the rest of the ones from Altruis.|
+T He Called Himself Altruis...|QID|9982|M|27.29,43.1|N|To Altruis the Sufferer.|
 A Patience and Understanding|QID|10004|M|27.33,43.07|N|From Altruis the Sufferer.|
 C Patience and Understanding|QID|10004|M|77.23,34.70|Z|Shattrath City|N|Head to Shattrath, talk to Sal'salabim and get him low in health.|
 T Patience and Understanding|QID|10004|M|77.23,34.70|Z|Shattrath City|N|To Sal'salabim.|

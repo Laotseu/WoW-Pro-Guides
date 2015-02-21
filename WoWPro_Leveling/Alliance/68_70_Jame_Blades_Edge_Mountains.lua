@@ -77,7 +77,7 @@
 -- Who: Jiyambi
 
 local guide = WoWPro:RegisterGuide("JamBla6870", "Leveling", "Blade's Edge Mountains", "Jame", "Alliance")
-WoWPro:GuideLevels(guide,62,70,65.8483)
+WoWPro:GuideLevels(guide,66,70,66.8483)
 WoWPro:GuideNextGuide(guide, "JamBor6872")
 WoWPro:GuideIcon(guide,"ACH",4928)
 WoWPro:GuideSteps(guide, function()

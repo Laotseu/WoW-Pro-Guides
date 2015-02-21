@@ -199,7 +199,7 @@ N Welcome to Frostfire Ridge|QID|33815|M|40.75,67.10|
 N Treasure|QID|33815|M|40.75,67.10|N|The guide mentions some but not nearly all the treasure to be found in the zone. If you have extra gold, Srikka, the archeology vender in Warspear (74,32)sells a treasure map for 100g to any character who has finished the zone (it is no longer mailable/tradeable). Otherwise if you are interested in ALL the treasure you can look on wowhead or any number of other addons.|
 N Bonus Objectives|QID|33815|M|40.75,67.10|N|This guide does not include the bonus objectives. Feel free to do them as you come across them, or save them for more gold at level 100.|
 
-t The Home of the Frostwolves|QID|33868|M|40.75,67.10|N|To Farseer Drek'Thar.|
+T The Home of the Frostwolves |QID|33868|M|40.8,67.1|N|To Farseer Drek'Thar.|
 A A Song of Frost and Fire|QID|33815|M|40.75,67.10|N|From Farseer Drek'Thar.|
 C A Song of Frost and Fire|QID|33815|M|41.81,69.64|CHAT|N|Mount up and be ready to follow Durotan.|
 T A Song of Frost and Fire|QID|33815|M|41.81,69.64|N|To Durotan.|
@@ -216,13 +216,13 @@ C A Gronnling Problem|QID|34592|M|47.42,66.34|US|N|Find the rest of the gronns y
 T Back to Work|QID|34375|M|48.76,64.91|N|To Gazlowe.|
 T A Gronnling Problem|QID|34592|M|48.76,64.91|N|To Gazlowe.|
 A The Den of Skog|QID|34765|M|48.76,64.91|N|From Gazlowe.|
-C The Den of Skog|QID|34765|M|48.47,70.25|T|Skog|
+K Skog|QID|34765|M|48.47,70.25|T|Skog|
 T The Den of Skog|QID|34765|M|48.75,64.90|N|To Gazlowe.|
 A Establish Your Garrison|QID|34378|M|48.75,64.90|N|From Gazlowe.|
 C Establish Your Garrison|QID|34378|M|46.96,66.40|NC|N|Watch the cinematic thru the telescope. The reward is a hearthstone attuned to your garrison, yes, you have two hearth locations now and they DON'T share a CD.|
 N TomTom Arrow Gone?|QID|34378|M|46.96,66.40|N|Reload your UI and the arrow will reappear, then manually check this step off.|
 
-f Your Outpost|QID|34378|M|45.79,50.91|N|At Bron Skyhorn.|Z|Frostwall|
+f Frostwall Garisson|ALTFP|%s's Outpost||QID|34378|M|45.79,50.91|N|At Bron Skyhorn.|Z|Frostwall|
 T Establish Your Garrison|QID|34378|M|52.52,53.49|N|To Gazlowe.|Z|Frostwall|
 A What We Got|QID|34824|M|52.47,53.43|N|From Gazlowe.|Z|Frostwall|
 A What We Need|QID|34822|M|52.52,53.49|N|From Gazlowe.|Z|Frostwall|
@@ -233,7 +233,7 @@ C What We Got|QID|34824|M|49.39,16.57|CHAT|QO|3|Z|Frostwall|
 C What We Need|QID|34822|M|39.89,61.89|S|N|Kill the pack wolves or pick up the boxes off of the ground.|
 C Kill Groog|QID|34823|M|49.33,59.69;40.2,59.9;41.32,58.62|CS|T|Groog|
 C What We Need|QID|34822|M|39.89,61.89|US|N|Finish gathering the salvage.|
-H Town Hall (Frostwall)|QID|34824|M|41.58,53.06|Z|Frostwall|U|110560|N|Hearth but if you can't or don't want to, it's not that far of a run back to your Garrison.|
+H Frostwall|QID|34824|M|41.58,53.06|Z|Frostwall|U|110560|N|Hearth but if you can't or don't want to, it's not that far of a run back to your Garrison.|
 C What We Got|QID|34824|M|55.02,52.79|NC|QO|2|N|Open the crate next to Lady Sena.|Z|Frostwall|
 
 T The Ogron Live?|QID|34823|M|51.49,51.38|N|To Rokhan.|Z|Frostwall|
@@ -279,7 +279,7 @@ A Great Balls of Fire!|QID|33408|M|34.27,73.03|N|From Durotan.|Z|Bladespire Cita
 C Great Balls of Fire!|QID|33408|M|56.0,85.8|NC|N|Dodge the fireballs as you run up the ramp, click on the barricade when you arrive.|Z|Bladespire Citadel|
 T Great Balls of Fire!|QID|33408|M|70.8,78.6|N|To Thrall.|Z|Bladespire Courtyard|
 A The Butcher of Bladespire|QID|33410|M|70.8,78.6|N|From Thrall.|Z|Bladespire Courtyard|
-C The Butcher of Bladespire|QID|33410|M|58.07,77.50|T|Dorogg the Ruthless|Z|Bladespire Courtyard|
+K Dorogg the Ruthless|QID|33410|M|58.07,77.50|T|Dorogg the Ruthless|Z|Bladespire Courtyard|
 T The Butcher of Bladespire|QID|33410|M|70.71,78.56|N|To Thrall.|Z|Bladespire Courtyard|
 A To the Slaughter|QID|33622|M|70.71,78.56|N|From Thrall.|Z|Bladespire Courtyard|
 A Armed and Dangerous|QID|33344|M|70.71,78.56|N|From Thrall.|Z|Bladespire Courtyard|
@@ -300,7 +300,7 @@ T To the Slaughter|QID|33622|M|50.30,32.59|N|To Durotan.|Z|Bladespire Courtyard|
 T Armed and Dangerous|QID|33344|M|50.30,32.59|N|To Durotan.|Z|Bladespire Courtyard|
 A Last Steps|QID|33527|M|50.30,32.59|N|From Durotan.|Z|Bladespire Courtyard|
 C Last Steps|QID|33527|M|50.3,31.8|T|Gorr'thog|N|Click on the ladder beside you to climb the chain. At the top you will find Gorr'thog. Kill him.|Z|Bladespire Throne|
-T Last Steps|QID|33527|M|66.52,56.51|N|To Durotan.|Z|Bladespire Courtyard|
+T Last Steps|QID|33527|M|66.4,56.5|N|To Durotan.|Z|Bladespire Courtyard|
 L Level 91|QID|34823|LVL|91|N|You should be around level 91 by this point.|
 A Moving In|QID|33657|M|66.52,56.51|N|From Durotan.|Z|Bladespire Throne|
 C Moving In|QID|33657|M|66.52,56.51|NC|N|Hop on the wolf next to Durotan and it will take you to the next area.|Z|Bladespire Throne|
@@ -309,8 +309,8 @@ A Save Wolf Home|QID|33468|M|42.94,41.60|N|From Durotan.|Z|Bladespire Citadel|
 
 A Wanted: Gutsmash the Destroyer|QID|33919|M|28.9,44.8|N|From Bounty Board. If the dot and arrow don't line up with the bounty board, your UI is out of sync with the map layer, opening your map or /reload should fix it.|Z|Bladespire Citadel|
 A Mopping Up|QID|33412|M|28.3,45.7|N|From Snowrunner Rolga.|Z|Bladespire Citadel|
-A Slavery and Strife|QID|33119|M|20.1,52.9|N|From Guse.|RANK|2|
-f Bladespire Fortress|QID|33412|M|19.9,51.8|N|At Roark the Airwolf.|
+A Slavery and Strife|QID|33119|M|20.2,52.8|N|From Guse.|Z|Bladespire Citadel|RANK|2|
+f Bladespire Fortress|QID|33412|M|19.9,51.8|Z|Bladespire Citadel|N|At Roark the Airwolf.|
 F Wor'gol|QID|33468|M|24.33,37.24|N|At Roark the Airwolf.|
 
 A Free Our Brothers and Sisters|QID|33807|M|21.76,56.39|N|From Duratan.|
@@ -324,7 +324,7 @@ C Save Wolf Home|QID|33468|M|20.8,57.9|US|N|Finish up anyremaining invaders you 
 T Save Wolf Home|QID|33468|M|20.80,57.93|N|To Draka.|
 T Free Our Brothers and Sisters|QID|33807|M|20.80,57.93|N|To Draka.|
 A The Farseer|QID|33469|M|20.80,57.93|N|From Draka.|
-C The Farseer|QID|33469|M|16.71,57.71|T|Warleader Gargrak|N|Run into the cave and kill Gargrak.|
+K Warleader Gargrak|QID|33469|M|16.71,57.71|T|Warleader Gargrak|N|Run into the cave and kill Gargrak.|
 T The Farseer|QID|33469|M|16.79,57.83|N|To Farseer Drek'Thar.|
 A Pool of Visions|QID|33470|M|16.79,57.83|N|From Farseer Drek'Thar.|
 C Pool of Visions|QID|33470|M|16.79,57.83|CHAT|N|Talk to Drek'Thar to start the ritual.|
@@ -366,7 +366,7 @@ A The Warlord's Guard|QID|33450|M|24.30,28.30|N|From Igrimar the Resolute.|
 C The Cure|QID|33454|M|27.17,26.98|S|N|Kill Geomancers to loot the antidote, use it on the gladiators.|
 K Thunk|QID|33450|M|27.0,25.6|QO|1|N|Inside the building.|T|Thunk|
 K Gullok|QID|33450|M|27.97,23.56|QO|2|N|In the cave.|T|Gullok|
-K Splorg|QID|33450|M|28.4,16.1|QO|3|N|Inside the building up the hill.|T|Splorg|
+K Splorg|QID|33450|M|28.5,26.1|QO|3|N|Inside the building up the hill.|T|Splorg|
 C The Cure|QID|33454|M|27.17,26.98|US|N|Finish curing the gladiators.|
 T The Warlord's Guard|QID|33450|M|24.30,28.30|N|To Igrimar the Resolute.|
 T The Cure|QID|33454|M|24.30,28.30|N|To Igrimar the Resolute.|
