@@ -53,7 +53,7 @@ return [[
 A Iron Horde Invasion|QID|36499|M|49.69,76.43|Z|Orgrimmar@Orgrimmar|
 C The Dark Portal |QID|34398;36881|N|You have accepted quest [The Dark Portal] for the follow-on to this guide. Drop it or you will not be able to complete any quest after [Iron Horde Invasion].|
 F Shattered Landing|QID|36499|NC|M|47.15,62.02|Z|Cleft of Shadow@Orgrimmar|N|Click on the Portal in the Cleft of Shadow.|
-f Shattered Landing|QID|36499|ACTIVE|36499|M|72.95,48.58|Z|Blasted Lands|N|At Ameri Windblade.|
+f Shattered Landing|QID|36499|M|72.95,48.58|Z|Blasted Lands|N|At Ameri Windblade.|
 A Peeking into the Portal|QID|36382|M|71.88,48.97|Z|Blasted Lands|N|From Rokhan.|
 T Iron Horde Invasion|QID|36499|M|71.81,47.72|Z|Blasted Lands|N|To Thrall.|
 A Attack of the Iron Horde|QID|35745|M|71.81,47.72|Z|Blasted Lands|N|From Thrall.|

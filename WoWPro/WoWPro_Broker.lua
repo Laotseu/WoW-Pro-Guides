@@ -566,7 +566,6 @@ function WoWPro:NextStep(k,i)
  			WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k])
  			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in QuestLog."
 			WoWProCharDB.Guide[GID].skipped[k] = true
-		            lcomplete = WoWPro.QuestLog[qid].ocompleted and WoWPro.QuestLog[qid].ocompleted[tonumber(lquesttext)]
  			break
     	end
 
