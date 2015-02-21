@@ -355,7 +355,7 @@ A Protector of Ameth'Aran|QID|13579|M|43.67,53.51|N|From Malfurion Stormrage.|
 
 T The Last Wildkin|QID|13577|M|45.54,48.50|N|To Aroom.|
 A Aroom's Farewell|QID|13578|M|45.54,48.50|N|From Aroom.|
-C Aroom's Farewell|QID|13578|M|46.67,46.47|N|The feathers are on the ground, they are small and can be a little hard to see.|
+C Aroom's Farewell|QID|13578|NC|M|46.67,46.47|N|The feathers are on the ground, they are small and can be a little hard to see.|
 T Aroom's Farewell|QID|13578|M|45.53,48.50|N|To Aroom.|
 A Elune's Fire|QID|13582|M|45.53,48.50|N|From Aroom.|
 C Elune's Fire|QID|13582|M|46.80,50.32|N|Obtain Elune's Torch from Horoo the Flamekeeper. |
