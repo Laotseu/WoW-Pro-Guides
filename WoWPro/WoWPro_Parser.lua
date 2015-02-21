@@ -760,7 +760,7 @@ function WoWPro:RowUpdate(offset)
 		    else
 		        note = note.." ("..coord..")"
 		    end
-		    if zone then
+		    if zone and zone ~= WoWPro.Guides[GID].zone then
 		        note = note .. " @ " ..zone
 		    end
 		end
