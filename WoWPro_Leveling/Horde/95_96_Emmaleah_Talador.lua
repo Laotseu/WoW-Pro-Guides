@@ -91,12 +91,12 @@ A Gas Guzzlers|QID|34579|M|70.90,30.49|PRE|35102|N|From Morketh Bladehowl.|
 R Kuuro's Claim|QID|34576|M|74.03,22.68|ACTIVE|34576|
 C Iridium Recovery|QID|34576|M|75.4,22|S|N|Look up, these are non-agro critters flying above you.|
 C Out of Jovite|QID|34577|M|75.4,22|NC|S|N|These are green crystals sticking out the ground and walls.|
-C Gas Guzzlers|QID|34579|M|75.4,22|U|111910|N|After you kill the goren, use your 'Goren Gas Extractor' on them.|
+C Gas Guzzlers|QID|34579|M|75.4,22|U|111910|N|After you kill the goren, use your 'Goren Gas Extractor' on them.|S|
 A Pure Crystal Dust|QID|34576|M|78.11,14.8|N|More treasure, it's up the ramp and at the end of the room.|ACTIVE|34263;37421|ITEM|117572|
 C Gas Guzzlers|QID|34579|M|75.4,22|U|111910|N|After you kill the goren, use your 'Goren Gas Extractor' on them.|US|
 C Iridium Recovery|QID|34576|M|75.4,22|US|N|Look up, these are non-agro critters flying above you.|
 C Out of Jovite|QID|34577|M|75.4,22|NC|US|N|These are green crystals sticking out the ground and walls.|
-H Vol'jin's Pride|QID|34576|M|75.4,22|N|Save your self a minute or two and hearth back.|ACTIVE|34576|U|110560|
+H Vol'jin's Pride|QID|34576|M|75.4,22|N|Save your self a minute or two and hearth back.|ACTIVE|34576|
 T Out of Jovite|QID|34577|M|70.90,30.49|N|To Morketh Bladehowl.|
 T Iridium Recovery|QID|34576|M|70.90,30.49|N|To Morketh Bladehowl.|
 T Gas Guzzlers|QID|34579|M|70.90,30.49|N|To Morketh Bladehowl.|
@@ -154,26 +154,26 @@ A Old Friends, New Enemies|QID|35226|M|61.50,10.96|N|From Durotan.|RANK|2|
 A Too Many Irons in the Fire|QID|33722|M|61.50,10.96|N|From Durotan.|RANK|2|
 f Frostwolf Overlook|QID|33735|M|61.42,10.52|N|At Mok'ra.|RANK|2|;currently you auto learn this, but putting the step in... in case that changes.
 
-C Too Many Irons in the Fire|QID|33722|S|M|58.45,10.74|N|Kill the Iron Horde as you go along.|RANK|2|
-R Orunai Coast|QID|33933|M|58.96,11.75|L|108743|N|As you get to the bottom of the hill a bomb will explode at the campsite across the path. After the dust clears, you can pick up the boots if you want a toy.|RANK|2|
-C Old Friends, New Enemies|QID|35226|M|52.98,6.97|T|Lieutenant Dilka|N|Run in, confront Orgrim and then kill his lieutenant.|RANK|2|
-C In Short Supply|QID|33735|S|NC|M|50.09,11.71|N|This crates are scattered around the area.|RANK|2|
-C Thunderlord Cache|QID|33721|U|107899|QO|1|M|56.52,9.97|NC|N|Set down Gazlowe's solution and let it do its thing.|RANK|2|
-C Munitions Landing|QID|33721|U|107899|QO|2|M|56.22,12.25|NC|N|Set down Gazlowe's solution and let it do its thing.|RANK|2|
-C In Short Supply|QID|33735|US|M|55.52,15.52|NC|RANK|2|
-C Blackrock Forge|QID|33721|U|107899|QO|3|M|57.68,15.46|NC|N|Set down Gazlowe's solution and let it do its thing.|RANK|2|
-A Decommissioned Mission|QID|33720|M|59.95,16.48|N|From Iron Shredder Decommision Codes, lying on a rock by the road.|RANK|2|
-C Too Many Irons in the Fire|QID|33722|M|62.73,13.94|US|N|Finish this up before you go in the cave (there can be two guards in the cave, but they are usually dead).|RANK|2|
-C Decommissioned Mission|QID|33720|T|Engineer Draxen|QO|1|M|61.59,14.46;63.22,14.47|CS|N|Go into Draxxen's Workshop and kill him so you can take his shredder.|RANK|2|
-C Decommissioned Mission|QID|33720|QO|2|NC|M|60.07,20.15;59.22,20.35|CS|N|Hop in the shredder and return to Draka's Den.|RANK|2|
-T In Short Supply|QID|33735|M|58.92,20.15|N|To Draka.|RANK|2|
-A Iron Them Out|QID|33736|M|58.92,20.15|N|From Draka.|RANK|2|
-T Too Many Irons in the Fire|QID|33722|M|58.92,20.19|N|To Durotan.|RANK|2|
-T Old Friends, New Enemies|QID|35226|M|58.92,20.18|N|To Durotan.|RANK|2|
-A Dreadpiston|QID|34950|M|58.92,20.18|N|From Durotan.|RANK|2|
-T Decommissioned Mission|QID|33720|M|58.95,20.71|N|To Gazlowe.|RANK|2|
-T Gazlowe's Solution|QID|33721|M|58.95,20.71|N|To Gazlowe.|RANK|2|
-A Vol. X Pages ?|QID|33724|M|58.95,20.71|N|From Gazlowe.|RANK|2|
+C Too Many Irons in the Fire|QID|33722|S|M|58.45,10.74|N|Kill the Iron Horde as you go along.|
+R Orunai Coast|QID|33722|M|58.96,11.75|L|108743|N|As you get to the bottom of the hill a bomb will explode at the campsite across the path. After the dust clears, you can pick up the boots if you want a toy.|
+C Old Friends, New Enemies|QID|35226|M|52.98,6.97|T|Lieutenant Dilka|N|Run in, confront Orgrim and then kill his lieutenant.|
+C In Short Supply|QID|33735|S|NC|M|50.09,11.71|N|This crates are scattered around the area.|
+C Thunderlord Cache|QID|33721|U|107899|QO|1|M|56.52,9.97|NC|N|Set down Gazlowe's solution and let it do its thing.|
+C Munitions Landing|QID|33721|U|107899|QO|2|M|56.22,12.25|NC|N|Set down Gazlowe's solution and let it do its thing.| ; Removed the missed coords line, and put the Gaz's Soln line in
+C In Short Supply|QID|33735|US|M|55.52,15.52|NC|
+C Blackrock Forge|QID|33721|U|107899|QO|3|M|57.68,15.46|NC|N|Set down Gazlowe's solution and let it do its thing.|
+A Decommissioned Mission|QID|33720|M|59.95,16.48|N|From Iron Shredder Decommision Codes, lying on a rock by the road.|
+C Too Many Irons in the Fire|QID|33722|M|62.73,13.94|US|N|Finish this up before you go in the cave (there can be two guards in the cave, but they are usually dead).|
+C Decommissioned Mission|QID|33720|T|Engineer Draxen|QO|1|M|61.59,14.46;63.22,14.47|CS|N|Go into Draxxen's Workshop and kill him so you can take his shredder.|
+C Decommissioned Mission|QID|33720|QO|2|NC|M|60.07,20.15;59.22,20.35|CS|N|Hop in the shredder and return to Draka's Den.|
+T In Short Supply|QID|33735|M|58.92,20.15|N|To Draka.|
+A Iron Them Out|QID|33736|M|58.92,20.15|N|From Draka.|
+T Too Many Irons in the Fire|QID|33722|M|58.92,20.19|N|To Durotan.|
+T Old Friends, New Enemies|QID|35226|M|58.92,20.18|N|To Durotan.|
+A Dreadpiston|QID|34950|M|58.92,20.18|N|From Durotan.|
+T Decommissioned Mission|QID|33720|M|58.95,20.71|N|To Gazlowe.|
+T Gazlowe's Solution|QID|33721|M|58.95,20.71|N|To Gazlowe.|
+A Vol. X Pages ?|QID|33724|M|58.95,20.71|N|From Gazlowe.|
 
 C Vol. X Pages ?|QID|33724|M|56.74,24.51|S|N|Drops from the Iron Horde mobs.|RANK|2|
 C Wanted: Ra'tok the Hammer|QID|34106|T|Ra'tok the Hammer|M|54.36,22.29|RANK|2|
@@ -215,6 +215,7 @@ T Wanted: Kil'uun|QID|34108|M|70.81,29.64|N|To Beastmaster Tagh.|RANK|2|
 T Wanted: Ra'tok the Hammer|QID|34106|M|70.81,29.64|N|To Beastmaster Tagh.|RANK|2|
 C Send Them Running|QID|34803|M|70.51,27.64|T|Vicegnaw|RANK|2|
 T Send Them Running|QID|34803|M|71.18,29.43|N|To Provisioner Naya.|RANK|2|
+A News from Spires of Arak|LVL|96|QID|35537|M|71.25,29.94|N|From Shadow Hunter Kajassa. This will pop up on the guide when you hit 96, check it off manually if you aren't in Vol'jin's Pride.|
 
 R Aruuna|QID|33740|M|73.07,38.74|CC|N|You actually don't run quite there as Barum is just outside of Aruuna.|RANK|2|
 A Burning Sky|QID|33740|M|73.07,38.74|N|From Crystal-Shaper Barum.|RANK|2|
@@ -267,9 +268,9 @@ T Kura's Vengeance|QID|33582|M|70.77,56.78|N|To Kura the Blind.|RANK|2|
 
 C Clear!|QID|34751|US|M|61.39,44.41;72.54,53.57;66.89,59.55|CN|N|These are located in each of the areas marked.|RANK|2|
 C Wanted: Hilaani|QID|34107|M|66.51,65.30|T|Hilaani|RANK|2|
-R Gordal Foothills|QID|34837;34878|M|62,68|
 
 ;arsenal
+R Gordal Foothills|QID|34837|M|62.10,69.24|ACTIVE|34837|
 t Going to the Gordunni|QID|34837|M|62.10,69.24|N|To Morketh Bladehowl.|
 A Dropping Bombs|QID|34840|M|62.10,69.24|PRE|34837|N|From Morketh Bladehowl.|
 C Dropping Bombs|QID|34840|NC|U|112091|QO|1|M|63.57,69.04|
@@ -283,10 +284,10 @@ A Supply Recovery|QID|34860|M|68.77,70.52|PRE|34840|N|From Morketh Bladehowl.|
 C Supply Recovery|QID|34860|S|M|69.04,82.47|NC|N|The boxes are scattered around the area.|
 C Prized Repossessions|QID|34858|S|M|69.04,82.47|N|Kill ogres as you travel towards the other objectives.|
 K Gennadian|QID|34929|M|67.4,80.6|L|116075|T|Gennadian|ITEM|116075|N|Before you go up the stairs, to your left (facing the stairs) is an archway to an area with Genadian. Kill and loot for a bit of treasure.|ACTIVE|34858|
-K Vizier Vorgorsh|QID|34855|QO|1|M|68.55,82.91|T|Vizier Vorgorsh|ACTIVE|34855|
-K Vizier Zulmork|QID|34855|QO|2|M|67.05,77.06|T|Vizier Zulmork|ACTIVE|34855|
+K Vizier Vorgorsh|QID|34855|QO|1|M|68.55,82.91|T|Vizier Vorgorsh|
+K Vizier Zulmork|QID|34855|QO|2|M|67.05,77.06|T|Vizier Zulmork|
 l Iron Box|QID|34251|M|64.9,79.2|L|117571|ITEM|117571|N|Inside the tower there is a chest on the floor. Loot for a bit of treasure.|ACTIVE|34855|
-K Vizier Cromaug|QID|34855|QO|3|M|66.26,80.97|T|Vizier Cromaug|ACTIVE|34855|
+K Vizier Cromaug|QID|34855|QO|3|M|66.26,80.97|T|Vizier Cromaug|
 C Supply Recovery|QID|34860|US|M|69.04,82.47|
 C Prized Repossessions|QID|34858|US|M|69.04,82.47|
 T Punching Through|QID|34855|M|69.04,82.47|N|To Morketh Bladehowl (who is following you around).|
@@ -312,10 +313,10 @@ A Orbs of Power|QID|34889|PRE|34879|M|68.30,70.32|N|From Magister Krelas.|
 C While We're in the Neighborhood|QID|34887|M|70.20,72.36|S|N|Kill ogres and loot the runebeads.|
 C Orbs of Power|QID|34889|M|70.20,72.36|NC|S|N|Click on the Orbs to destroy them.|
 K Gennadian|QID|34929|M|67.4,80.6|L|116075|T|Gennadian|ITEM|116075|N|Before you go up the stairs, to your left (facing the stairs) is an archway to an area with Genadian. Kill and loot for a bit of treasure.|ACTIVE|34889|
-K Vizier Vorgorsh|QID|34888|QO|1|M|68.53,82.89|T|Vizier Vorgorsh|ACTIVE|34888|
-K Vizier Zulmork|QID|34888|QO|2|M|67.01,76.98|T|Vizier Zulmork|ACTIVE|34888|
+K Vizier Vorgorsh|QID|34888|QO|1|M|68.53,82.89|T|Vizier Vorgorsh|
+K Vizier Zulmork|QID|34888|QO|2|M|67.01,76.98|T|Vizier Zulmork|
 l Iron Box|QID|34251|M|64.9,79.2|L|117571|ITEM|117571|N|Inside the tower there is a chest on the floor. Loot for a bit of treasure.|ACTIVE|34888|
-K Vizier Cromaug|QID|34888|QO|3|M|66.23,81.04|T|Vizier Cromaug|ACTIVE|34888|
+K Vizier Cromaug|QID|34888|QO|3|M|66.23,81.04|T|Vizier Cromaug|
 C While We're in the Neighborhood|QID|34887|M|66.3,81.04|US|N|Finish collecting any needed runebeads.|
 C Orbs of Power|QID|34889|M|66.51,80.21|NC|US|N|Click on the Orbs to destroy them.|
 T Vicious Viziers|QID|34888|M|66.23,81.04|N|To Magister Krelas.|
@@ -347,12 +348,12 @@ A New Owner|QID|35238|M|64.24,47.80|N|From Pleasure Bot 8000. You may need to wa
 
 A A Pilgrimage Gone Awry|QID|34801|M|61.35,54.39|N|From Nadur.|RANK|3|
 C A Pilgrimage Gone Awry|QID|34801|QO|3|M|64.21,58.96|N|The frogs are along the water's edge.|RANK|3|
-C A Pilgrimage Gone Awry|QID|34801|M|59.55,54.78|S|N|The flowers are a ground spawn here and many of the tigers are stealthed in this area.|RANK|3|
+C A Pilgrimage Gone Awry|QID|34801|QO|1;2|M|59.55,54.78|S|N|The flowers are a ground spawn here and many of the tigers are stealthed in this area.|RANK|3|
 K Ra'kahn|QID|34196|M|60.1,57.5;59.4,59.6|CS||L|116112|T|Ra'kahn|ITEM|116112|N|This named tiger lives in a small cave around the other side of the hill. Kill and loot for a bit of treasure.|RANK|3|
-C A Pilgrimage Gone Awry|QID|34801|M|59.55,54.78|US|N|The flowers are a ground spawn here and many of the tigers are stealthed in this area.|RANK|3|
+C A Pilgrimage Gone Awry|QID|34801|QO|1;2|M|59.55,54.78|US|N|The flowers are a ground spawn here and many of the tigers are stealthed in this area.|RANK|3|
 T A Pilgrimage Gone Awry|QID|34801|M|61.35,54.40|N|To Nadur.|RANK|3|
 
-A Gatekeepers of Auchindoun|QID|34776|M|58.10,53.05|N|From Aeda Brightdawn.|RANK|3|
+A Gatekeepers of Auchindoun|QID|34776|M|58.10,53.05|N|From Aeda Brightdawn.|RANK|3|;i dont know if this is doable here, since I didnt find this quest until I had finished the zone, may be prereq's that arent mentioned.
 C Gatekeepers of Auchindoun|QID|34776|QO|1|M|57.38,52.75|CHAT|N|Challenge Vidicator Dalu to a fight. You can challenge them simultaneously if you want.|T|Vindicator Dalu|RANK|3|
 C Gatekeepers of Auchindoun|QID|34776|QO|2|M|57.37,52.60|CHAT|N|Challenge Soulbinder Halaari|T|Soulbinder Halaari|RANK|3|
 T Gatekeepers of Auchindoun|QID|34776|M|58.10,53.06|N|To Aeda Brightdawn.|RANK|3|
@@ -360,7 +361,7 @@ A The True Path|QID|36518|M|58.1,53.06|N|Accept Aeda as your follower.|RANK|3|
 
 R Auchindoun|QID|34696|M|51.67,62.82;54.76,66.46|CS|N|Up the stairs you just fought at, and follow the road untill you get to the road that encirles Auchindoun.|PRE|36158|RANK|3|
 R Auchindoun|QID|34696|M|51.67,62.82;54.76,66.46|CS|N|Run till you get to the road encircling Auchindoun, then take a left on that road.|LEAD|35158|RANK|2|
-f Exarch's Refuge|QID|34696|M|54.51,67.84|N|At Roka. There are actually two flight paths and I suspect the other is supposed to be for alliance, but you can pick it up.|RANK|2|
+f Exarch's Refuge|M|54.51,67.84|N|At Roka. There are actually two flight paths and I suspect the other is supposed to be for alliance, but you can pick it up.|RANK|2|
 A Every Bit Counts|QID|34710|M|55.37,66.75|N|From Ranger Belonis.|RANK|2|
 A Powering the Defenses|QID|35249|M|55.56,66.98|N|From Mehlar Dawnblade.|RANK|2|
 T The Lady of Light|QID|34696|M|55.49,67.68|N|To Lady Liadrin.|RANK|2|

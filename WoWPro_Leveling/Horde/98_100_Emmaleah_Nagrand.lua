@@ -288,7 +288,7 @@ T Dirgemire|QID|36285|M|86.68,28.30|N|To Dr. Hadley Ricard.|RANK|2|
 C Whacking Weeds|QID|36273|M|84.27,28.31|US|RANK|2|
 
 R Skysong Lake|QID|34964|M|73.69,26.64|RANK|2|RANK|2|
-f Throne of the Elements|QID|34964|M|73.69,26.64|N|At Gixmo Moneycash.|RANK|2|RANK|2|
+f Throne of the Elements|ALTFP|Skysong Lake|M|73.69,26.64|N|At Gixmo Moneycash.|RANK|2|
 T The Farseer Awaits|QID|34964|M|71.71,19.61|N|To Farseer Drek'Thar.|RANK|2|
 A Called to the Throne|QID|34965|M|71.71,19.61|N|From Farseer Drek'Thar.|RANK|2|
 C Called to the Throne|QID|34965|M|71.71,19.61|CHAT|N|Wait for the dialog to finish and then the next quests are available.|RANK|2|

@@ -204,7 +204,7 @@ N Welcome to Frostfire Ridge|QID|33815|M|40.75,67.10|
 N Treasure|QID|33815|M|40.75,67.10|N|The guide mentions some but not nearly all the treasure to be found in the zone. If you have extra gold, Srikka, the archeology vender in Warspear (74,32)sells a treasure map for 100g to any character who has finished the zone (it is no longer mailable/tradeable). Otherwise if you are interested in ALL the treasure you can look on wowhead or any number of other addons.|
 N Bonus Objectives|QID|33815|M|40.75,67.10|N|This guide does not include the bonus objectives. Feel free to do them as you come across them, or save them for more gold at level 100.|
 
-t The Home of the Frostwolves|QID|33868|M|40.75,67.10|N|To Farseer Drek'Thar.|
+T The Home of the Frostwolves |QID|33868|M|40.8,67.1|N|To Farseer Drek'Thar.|
 A A Song of Frost and Fire|QID|33815|M|40.75,67.10|N|From Farseer Drek'Thar.|
 C A Song of Frost and Fire|QID|33815|M|41.81,69.64|CHAT|N|Mount up and be ready to follow Durotan.|
 T A Song of Frost and Fire|QID|33815|M|41.81,69.64|N|To Durotan.|
@@ -221,13 +221,13 @@ C A Gronnling Problem|QID|34592|M|47.42,66.34|US|N|Find the rest of the gronns y
 T Back to Work|QID|34375|M|48.76,64.91|N|To Gazlowe.|
 T A Gronnling Problem|QID|34592|M|48.76,64.91|N|To Gazlowe.|
 A The Den of Skog|QID|34765|M|48.76,64.91|N|From Gazlowe.|
-C The Den of Skog|QID|34765|M|48.47,70.25|T|Skog|
+K Skog|QID|34765|M|48.47,70.25|T|Skog|
 T The Den of Skog|QID|34765|M|48.75,64.90|N|To Gazlowe.|
 A Establish Your Garrison|QID|34378|M|48.75,64.90|N|From Gazlowe.|
 C Establish Your Garrison|QID|34378|M|46.96,66.40|NC|N|Watch the cinematic thru the telescope. The reward is a hearthstone attuned to your garrison, yes, you have two hearth locations now and they DON'T share a CD.|
 N TomTom Arrow Gone?|QID|34378|M|46.96,66.40|N|Reload your UI and the arrow will reappear, then manually check this step off.|
 
-f Your Outpost|QID|34378|M|45.79,50.91|N|At Bron Skyhorn.|Z|Frostwall|
+f Frostwall Garisson|ALTFP|%s's Outpost|M|45.79,50.91|N|At Bron Skyhorn.|Z|Frostwall|
 T Establish Your Garrison|QID|34378|M|52.52,53.49|N|To Gazlowe.|Z|Frostwall|
 A What We Got|QID|34824|M|52.47,53.43|N|From Gazlowe.|Z|Frostwall|
 A What We Need|QID|34822|M|52.52,53.49|N|From Gazlowe.|Z|Frostwall|
@@ -238,7 +238,7 @@ C What We Got|QID|34824|M|49.39,16.57|CHAT|QO|3|Z|Frostwall|
 C What We Need|QID|34822|M|39.89,61.89|S|N|Kill the pack wolves or pick up the boxes off of the ground.|
 C Kill Groog|QID|34823|M|49.33,59.69;40.2,59.9;41.32,58.62|CS|T|Groog|
 C What We Need|QID|34822|M|39.89,61.89|US|N|Finish gathering the salvage.|
-H Town Hall (Frostwall)|QID|34824|M|41.58,53.06|Z|Frostwall|U|110560|N|Hearth but if you can't or don't want to, it's not that far of a run back to your Garrison.|
+H Frostwall|QID|34824|M|41.58,53.06|Z|Frostwall|U|110560|N|Hearth but if you can't or don't want to, it's not that far of a run back to your Garrison.|
 C What We Got|QID|34824|M|55.02,52.79|NC|QO|2|N|Open the crate next to Lady Sena.|Z|Frostwall|
 
 T The Ogron Live?|QID|34823|M|51.49,51.38|N|To Rokhan.|Z|Frostwall|
@@ -284,7 +284,7 @@ A Great Balls of Fire!|QID|33408|M|34.27,73.03|N|From Durotan.|Z|Bladespire Cita
 C Great Balls of Fire!|QID|33408|M|56.0,85.8|NC|N|Dodge the fireballs as you run up the ramp, click on the barricade when you arrive.|Z|Bladespire Citadel|
 T Great Balls of Fire!|QID|33408|M|70.8,78.6|N|To Thrall.|Z|Bladespire Courtyard|
 A The Butcher of Bladespire|QID|33410|M|70.8,78.6|N|From Thrall.|Z|Bladespire Courtyard|
-C The Butcher of Bladespire|QID|33410|M|58.07,77.50|T|Dorogg the Ruthless|Z|Bladespire Courtyard|
+K Dorogg the Ruthless|QID|33410|M|58.07,77.50|T|Dorogg the Ruthless|Z|Bladespire Courtyard|
 T The Butcher of Bladespire|QID|33410|M|70.71,78.56|N|To Thrall.|Z|Bladespire Courtyard|
 A To the Slaughter|QID|33622|M|70.71,78.56|N|From Thrall.|Z|Bladespire Courtyard|
 A Armed and Dangerous|QID|33344|M|70.71,78.56|N|From Thrall.|Z|Bladespire Courtyard|
@@ -305,7 +305,7 @@ T To the Slaughter|QID|33622|M|50.30,32.59|N|To Durotan.|Z|Bladespire Courtyard|
 T Armed and Dangerous|QID|33344|M|50.30,32.59|N|To Durotan.|Z|Bladespire Courtyard|
 A Last Steps|QID|33527|M|50.30,32.59|N|From Durotan.|Z|Bladespire Courtyard|
 C Last Steps|QID|33527|M|50.3,31.8|T|Gorr'thog|N|Click on the ladder beside you to climb the chain. At the top you will find Gorr'thog. Kill him.|Z|Bladespire Throne|
-T Last Steps|QID|33527|M|66.52,56.51|N|To Durotan.|Z|Bladespire Courtyard|
+T Last Steps|QID|33527|M|66.4,56.5|N|To Durotan.|Z|Bladespire Courtyard|
 L Level 91|QID|34823|LVL|91|N|You should be around level 91 by this point.|
 A Moving In|QID|33657|M|66.52,56.51|N|From Durotan.|Z|Bladespire Throne|
 C Moving In|QID|33657|M|66.52,56.51|NC|N|Hop on the wolf next to Durotan and it will take you to the next area.|Z|Bladespire Throne|
@@ -313,9 +313,9 @@ T Moving In|QID|33657|M|42.94,41.60|N|To Durotan.|Z|Bladespire Citadel|
 A Save Wolf Home|QID|33468|M|42.94,41.60|N|From Durotan.|Z|Bladespire Citadel|
 
 A Wanted: Gutsmash the Destroyer|QID|33919|M|28.9,44.8|N|From Bounty Board. If the dot and arrow don't line up with the bounty board, your UI is out of sync with the map layer, opening your map or /reload should fix it.|Z|Bladespire Citadel|
-A Mopping Up|QID|33412|M|28.29,45.72|N|From Snowrunner Rolga.|Z|Bladespire Citadel|
-A Slavery and Strife|QID|33119|M|20.1,52.9|N|From Guse.|RANK|2|
-f Bladespire Fortress|QID|33412|M|19.9,51.8|N|At Roark the Airwolf.|
+A Mopping Up|QID|33412|M|28.3,45.7|N|From Snowrunner Rolga.|Z|Bladespire Citadel|
+A Slavery and Strife|QID|33119|M|20.2,52.8|N|From Guse.|Z|Bladespire Citadel|RANK|2|
+f Bladespire Fortress|QID|33412|M|19.9,51.8|Z|Bladespire Citadel|N|At Roark the Airwolf.|
 F Wor'gol|QID|33468|M|24.33,37.24|N|At Roark the Airwolf.|
 
 A Free Our Brothers and Sisters|QID|33807|M|21.76,56.39|N|From Duratan.|
@@ -329,7 +329,7 @@ C Save Wolf Home|QID|33468|M|20.8,57.9|US|N|Finish up anyremaining invaders you 
 T Save Wolf Home|QID|33468|M|20.80,57.93|N|To Draka.|
 T Free Our Brothers and Sisters|QID|33807|M|20.80,57.93|N|To Draka.|
 A The Farseer|QID|33469|M|20.80,57.93|N|From Draka.|
-C The Farseer|QID|33469|M|16.71,57.71|T|Warleader Gargrak|N|Run into the cave and kill Gargrak.|
+K Warleader Gargrak|QID|33469|M|16.71,57.71|T|Warleader Gargrak|N|Run into the cave and kill Gargrak.|
 T The Farseer|QID|33469|M|16.79,57.83|N|To Farseer Drek'Thar.|
 A Pool of Visions|QID|33470|M|16.79,57.83|N|From Farseer Drek'Thar.|
 C Pool of Visions|QID|33470|M|16.79,57.83|CHAT|N|Talk to Drek'Thar to start the ritual.|
@@ -434,10 +434,10 @@ T Let the Hunt Begin!|QID|32791|M|36.00,25.78|N|To Ga'nar.|
 A Leave Nothing Behind!|QID|32792|M|36.00,25.78|N|From Ga'nar.|
 A They Rely on Numbers|QID|32929|M|35.92,25.71|N|From Ligra the Unyielding.|
 C They Rely on Numbers|QID|32929|M|35.10,29.72|S|
-C Leave Nothing Behind!|QID|32792|QO|2|M|38.1,28.9|T|Kur'ak the Binder|
+K Kur'ak the Binder|QID|32792|QO|2|M|38.1,28.9|T|Kur'ak the Binder|
 A Dagg at Daggarmaw Ravine|QID|34654|M|39.6,28.0|N|There is no quest !, but if you want Dagg to be your follower later, you need to free him from this cage.|
-C Leave Nothing Behind!|QID|32792|NC|QO|1|M|38.7,30.2|
-C Leave Nothing Behind!|QID|32792|NC|QO|3|M|42.3,34.1|
+C Destroy the Ballistae|QID|32792|NC|QO|1|M|38.7,30.2|
+C Destroy the Supplies|QID|32792|NC|QO|3|M|42.3,34.1|
 C They Rely on Numbers|QID|32929|M|35.10,29.72|US|
 T They Rely on Numbers|QID|32929|M|46.39,32.05|N|To Kal'gor the Honorable.|
 A Articles of the Fallen|QID|32804|M|46.39,32.05|N|From Kal'gor the Honorable.|
@@ -446,12 +446,12 @@ A Wrath of Gronn|QID|32794|M|46.40,32.15|N|From Ga'nar.|
 C Articles of the Fallen|QID|32804|M|46.59,33.46|NC|N|Pick up the items off of the ground in this open area.|
 T Articles of the Fallen|QID|32804|M|46.38,32.04|N|To Kal'gor the Honorable.|
 C Wrath of Gronn|QID|32794|M|39.88,72.16|N|Head down the cave and fight the gronn's captors.|
-T Wrath of Gronn|QID|32794|M|50.58,54.40|N|To Ga'nar. Take any path in the cave to the middle.|Z|Grulloc's Lair|
+T Wrath of Gronn|QID|32794|M|50.58,54.40|N|To Ga'nar. Take any path in the cave to the middle.|Z|Grulloc's Lair|;  Grulloc's Lair |Z|941;8|
 A The Eldest|QID|32795|M|50.58,54.40|Z|Grulloc's Lair|N|From Ga'nar.|
 C The Eldest|QID|32795|M|53.65,62.58|Z|Grulloc's Lair|CHAT|N|Talk to Ga'nar to start the fight.|T|Grulloc|
-T The Eldest|QID|32795|M|49.30,50.46|Z|Grulloc's Lair|N|From Ga'nar.|
-A To the Garrison|QID|32796|M|49.30,50.46|Z|Grulloc's Lair|
-H Town Hall (Frostwall)|QID|32796|M|41.58,53.06|Z|Frostwall|U|110560|N|Back to your Garrison.|
+T The Eldest|QID|32795|M|51.6,63.6|Z|Grulloc's Lair|N|From Ga'nar.|
+A To the Garrison|QID|32796|M|51.6,63.6|Z|Grulloc's Lair|
+H Frostwall|QID|32796|M|41.58,53.06|Z|Frostwall|U|110560|N|Back to your Garrison.|
 
 A Ashran Appearance|QID|36706|M|52.45,53.35|N|From Gazlowe.|Z|Frostwall|
 A We Be Needin' Supplies|QID|34736|M|51.33,51.44|N|From Rokhan.|Z|Frostwall|
@@ -531,12 +531,12 @@ T Avenge and Reclaim|QID|35106|M|37.72,47.47|P|Alchemy;171|N|To Ang'kra.|
 U Learn Alchemy skill|QID|32991|U|109558|M|37.72,47.47|P|Alchemy;171|N|After you learn check this step off manually. Don't learn the blueprints as you will also learn  them from a different quest and these sell for 150 gold.|
 ;U Learn Alchemy Lab Blueprints|QID|33918|U|111812|M|37.72,47.47|P|Alchemy;171|N|After you learn check this step off manually.|
 
-C Into the Boneslag|QID|32991|NC|M|40.4,49|QO|1|
-C Into the Boneslag|QID|32991|NC|M|41.1,44.7|QO|2|
-C Of Fire and Thunder|QID|33013|NC|M|43.2,44.4|QO|1|
-C Into the Boneslag|QID|32991|CHAT|M|44.31,43.03|QO|3|
-C Of Fire and Thunder|QID|33013|NC|M|44.71,43.43|QO|2|
-T Of Fire and Thunder|QID|33013|M|44.71,43.43|N|To UI Alert.|
+C Find Roknor|QID|32991|NC|M|40.4,49|QO|1|
+C Find Makar Stonebinder|QID|32991|NC|M|41.1,44.7|QO|2|
+C Inspect Siege Munitions|QID|33013|NC|M|43.2,44.4|QO|1|
+C Find Gana Surhide|QID|32991|CHAT|M|44.31,43.03|QO|3|
+C Inspect Heavy Plating|QID|33013|NC|M|44.71,43.43|QO|2|
+T Of Fire and Thunder|QID|33013|M|0,0|N|To UI Alert.|
 T Into the Boneslag|QID|32991|M|47.57,45.57|N|To Lokra.|
 A Moving Target|QID|32992|M|47.57,45.57|N|From Lokra.|
 
@@ -545,9 +545,9 @@ T Waruk the Frostforged|QID|36207|M|46.08,48.78|P|Blacksmithing;164|N|To Waruk t
 A The Restless Spirit|QID|36230|M|46.08,48.78|PRE|36207|P|Blacksmithing;164|N|From Waruk the Frostforged.|
 
 f Darkspear's Edge|QID|34736|M|51.70,41.12|N|At Ja'kana.|
-A Poulticide|QID|34345|M|52.62,40.43|N|From Shadow Hunter Rala.|
 T We Be Needin' Supplies|QID|34736|M|52.62,40.43|N|To Shadow Hunter Rala.|
 A Lurkers|QID|34344|M|52.62,40.43|N|From Shadow Hunter Rala.|
+A Poulticide|QID|34345|M|52.62,40.43|N|From Shadow Hunter Rala.|
 A Frosted Fury|QID|34346|M|52.52,40.43|N|From Shadow Hunter Mala.|
 C Poulticide|QID|34345|M|56.12,37.83|S|NC|N|These are ground spawn in the area.|
 C Lurkers|QID|34344|M|54.01,31.36|S|N|These drop off the Snow Lurkers.|
@@ -573,8 +573,8 @@ C The Restless Spirit|QID|36230|M|59.46,31.79|P|Blacksmithing;164|QO|3|U|114969|
 T Only the Winner|QID|32981|M|59.46,31.79|N|To Gronnstalker Rokash.|
 T Defection of Gronnstalker Rokash|QID|35341|M|59.46,31.79|N|From Gronnstalker Rokash.|RANK|2|
 T Frosted Fury|QID|34346|M|52.51,40.42|N|To Shadow Hunter Mala.|
-T Lurkers|QID|34344|M|52.63,40.41|N|To Shadow Hunter Rala.|
 T Poulticide|QID|34345|M|52.63,40.41|N|To Shadow Hunter Rala.|
+T Lurkers|QID|34344|M|52.63,40.41|N|To Shadow Hunter Rala.|
 
 A The Real Prey|QID|34348|M|52.63,40.45|N|From Shadow Hunter Rala.|
 C The Real Prey|QID|34348|M|53.4,29.4;52.13,29.42|CS|T|Grosh the Mighty|
@@ -625,10 +625,10 @@ C Karg Unchained|QID|33785|M|63.22,60.02|S|N|Kill them all.|
 C Where's My Wolf?!|QID|33826|M|65.9,60.8|T|Huntmaster Torash|QO|1|
 A Dagg at Gromgar|QID|34651|M|65.9,60.8|N|There is no quest !, but if you want Dagg to be your follower later, you need to free him from this cage.|
 C Where's My Wolf?!|QID|33826|M|61.01,64.95|QO|2|NC|
-C Karg Unchained|QID|33785|M|63.77,68.17|N|Finish killing the orcs.|
-T Where's My Wolf?!|QID|33826|M|63.21,60.07|N|To Karg Bloodfury.|
+T Where's My Wolf?!|QID|33826|M|0,0|N|To Karg Bloodfury.|
+C Karg Unchained|QID|33785|US|M|63.77,68.17|N|Finish killing the orcs.|
 A Enfilade|QID|32994|M|63.21,60.07|N|From Karg Bloodfury who is following you around unless you went into The Hunter's Hall, at which point he will reappear as soon as you leave.|
-T Karg Unchained|QID|33785|M|63.21,60.07|N|To Karg Bloodfury (he is following you around).|
+T Karg Unchained|QID|33785|M|0,0|N|To Karg Bloodfury (he is following you around).|
 A The Master Siegesmith|QID|33828|M|63.19,60.04|N|From Lokra.|
 C Enfilade|QID|32994|M|61.38,71.71|S|N|The apprentices and siegesmiths drop the gunpowder you need to blow up the cannons. Also there is some as groundspawn.|
 
@@ -642,15 +642,15 @@ U Learn Inscription skill|QID|33918|U|111923|M|61.2,71.2|P|Inscription;773|N|Aft
 ;U Learn Scribe's Quarters Blueprints|QID|33918|U|111815|M|61.2,71.2|P|Inscription;773|N|After you learn check this step off manually.|
 
 C The Master Siegesmith|QID|33828|M|62.66,74.54|T|Master Siegesmith Uratok|
+T The Master Siegesmith|QID|33828|M|0,0|N|To Lokra.|
 C Enfilade|QID|32994|M|61.38,71.71|US|N|The apprentices and siegesmiths drop the gunpowder you need to blow up the cannons. Also there is some as groundspawn.|
-T Enfilade|QID|32994|M|62.53,74.91|N|To Karg Bloodfury.|
-T The Master Siegesmith|QID|33828|M|62.53,74.91|N|To Lokra.|
-A Return to the Pack|QID|33493|M|62.53,74.91|N|From Lokra.|
+T Enfilade|QID|32994|M|0,0|N|To Karg Bloodfury.|
+A Return to the Pack|QID|33493|M|0,0|N|From Lokra.|
 C Spare Parts|QID|36594|M|56.74,71.82|P|Engineering;202|N|Kill and loot for the shells or pick them up from the ground. Use the provided bomb to blow up the siege cannons and pick up the parts. There is a treasure chest here also with some garrison resources, (and hopefully sometimes something better).|
 H Town Hall (Frostwall)|QID|33918|M|41.58,53.06|U|110560|Z|Frostwall|CC|
-T Wanted: Grondo's Bounty|QID|33918|M|45.88,42.80|N|To Rokhan.|
+T Wanted: Grondo's Bounty|QID|33918|M|45.88,42.80|N|To Rokhan.|Z|Frostwall|
 
-T Spare Parts|QID|36594|M|50.03,68.90|P|Engineering;202|N|To Blizthraz Blastcharge.|
+T Spare Parts|QID|36594|M|50.03,68.90|P|Engineering;202|N|To Blizthraz Blastcharge.|Z|Frostwall|
 A Big Frostfire Gun|QID|36627|M|50.03,68.90|PRE|36594|P|Engineering;202|N|From Blizthraz Blastcharge.|
 A Things Are Not Goren Our Way|QID|35154|M|61.99,73.88|N|From Gorsol.|LVL|92|
 C Things Are Not Goren Our Way|QID|35154|M|61.39,84.40|N|After completing this quest you will be able to mine here, without the mining profession.|T|Stonetooth|
@@ -751,14 +751,14 @@ C Go trap an animal|QID|36345|QO|1|M|55,62;26,43|CN|U|113991|N|Trap a wolf (in t
 C Place a work order|QID|36345|QO|2|M|51.71,58.32|Z|Frostwall|N|At Farmer Lok'lub, sometimes he gets bored and wanders around, I have found him as far away as my garrison's graveyard.|
 T Breaking Into the Trap Game|QID|36345|BUILDING|Barn;24;25;133|M|51.71,58.32|Z|Frostwall|N|To Farmer Lok'lub|
 
-A The Secrets of Gorgrond|QID|35557|M|41.58,53.06|N|From the Command Board.|
-T Return to the Pack|QID|33493|M|50.17,37.82|N|To Durotan.|
-A Thunderlord Invasion|QID|37291|M|50.17,37.82|N|From Durotan.|
-C Thunderlord Invasion|QID|37291|M|43.61,47.91|CHAT|N|Chat with Sargeant Grimjaw to start the scenario. You can take up to two groupmates with you if they come to your garrison. It will take around 10 min.|
-t Thunderlord Invasion|QID|37291|M|43.61,47.91|N|To Sargeant Grimjaw.|
-A The Iron Wolf|QID|33010|M|50.17,37.82|N|From Durotan.|
+A The Secrets of Gorgrond|QID|35557|M|49.1,41.6|N|Take this quest if you want to do go to Gorgrond after you are done with Frostfire.\n\nFrom the Command Board.|Z|Frostwall|O|
+T Return to the Pack|QID|33493|M|50.2,37.7|N|To Durotan.|Z|Frostwall|
+A Thunderlord Invasion|QID|37291|M|50.2,37.7|N|From Durotan.|Z|Frostwall|
+C Thunderlord Invasion|QID|37291|M|43.,47.8|CHAT|Z|Frostwall|N|Chat with Sargeant Grimjaw to start the scenario. You can take up to two groupmates with you if they come to your garrison. It will take around 10 min.|
+T Thunderlord Invasion|QID|37291|M|43.5,47.8|N|To Sargeant Grimjaw.|Z|Frostwall|
+A The Iron Wolf|QID|33010|M|50.2,37.7|N|From Durotan.|Z|Frostwall|
 
-A Sevices of Dagg|QID|34733|M|48.23,17.32|N|If you found Dagg while out and about questing (in daggermaw ravine and in grom'gar) he has come to pledge his service.|PRE|34654;34651|
+A Sevices of Dagg|QID|34733|M|48.23,17.32|Z|Frostwall|N|If you found Dagg while out and about questing (in daggermaw ravine and in grom'gar) he has come to pledge his service.|PRE|34654;34651|
 R Grimfrost Hill|QID|33125|M|65.14,49.45|
 A A Proper Parting|QID|33125|M|66.03,49.09|N|From Outrider Urukag.|
 A Gut Guttra|QID|33132|M|66.03,49.09|N|From Outrider Urukag.|
