@@ -531,12 +531,12 @@ T Avenge and Reclaim|QID|35106|M|37.72,47.47|P|Alchemy;171|N|To Ang'kra.|
 U Learn Alchemy skill|QID|32991|U|109558|M|37.72,47.47|P|Alchemy;171|N|After you learn check this step off manually. Don't learn the blueprints as you will also learn  them from a different quest and these sell for 150 gold.|
 ;U Learn Alchemy Lab Blueprints|QID|33918|U|111812|M|37.72,47.47|P|Alchemy;171|N|After you learn check this step off manually.|
 
-C Into the Boneslag|QID|32991|NC|M|40.4,49|QO|1|
-C Into the Boneslag|QID|32991|NC|M|41.1,44.7|QO|2|
-C Of Fire and Thunder|QID|33013|NC|M|43.2,44.4|QO|1|
-C Into the Boneslag|QID|32991|CHAT|M|44.31,43.03|QO|3|
-C Of Fire and Thunder|QID|33013|NC|M|44.71,43.43|QO|2|
-T Of Fire and Thunder|QID|33013|M|44.71,43.43|N|To UI Alert.|
+C Find Roknor|QID|32991|NC|M|40.4,49|QO|1|
+C Find Makar Stonebinder|QID|32991|NC|M|41.1,44.7|QO|2|
+C Inspect Siege Munitions|QID|33013|NC|M|43.2,44.4|QO|1|
+C Find Gana Surhide|QID|32991|CHAT|M|44.31,43.03|QO|3|
+C Inspect Heavy Plating|QID|33013|NC|M|44.71,43.43|QO|2|
+T Of Fire and Thunder|QID|33013|M|0,0|N|To UI Alert.|
 T Into the Boneslag|QID|32991|M|47.57,45.57|N|To Lokra.|
 A Moving Target|QID|32992|M|47.57,45.57|N|From Lokra.|
 
@@ -545,9 +545,9 @@ T Waruk the Frostforged|QID|36207|M|46.08,48.78|P|Blacksmithing;164|N|To Waruk t
 A The Restless Spirit|QID|36230|M|46.08,48.78|PRE|36207|P|Blacksmithing;164|N|From Waruk the Frostforged.|
 
 f Darkspear's Edge|QID|34736|M|51.70,41.12|N|At Ja'kana.|
-A Poulticide|QID|34345|M|52.62,40.43|N|From Shadow Hunter Rala.|
 T We Be Needin' Supplies|QID|34736|M|52.62,40.43|N|To Shadow Hunter Rala.|
 A Lurkers|QID|34344|M|52.62,40.43|N|From Shadow Hunter Rala.|
+A Poulticide|QID|34345|M|52.62,40.43|N|From Shadow Hunter Rala.|
 A Frosted Fury|QID|34346|M|52.52,40.43|N|From Shadow Hunter Mala.|
 C Poulticide|QID|34345|M|56.12,37.83|S|NC|N|These are ground spawn in the area.|
 C Lurkers|QID|34344|M|54.01,31.36|S|N|These drop off the Snow Lurkers.|
@@ -573,8 +573,8 @@ C The Restless Spirit|QID|36230|M|59.46,31.79|P|Blacksmithing;164|QO|3|U|114969|
 T Only the Winner|QID|32981|M|59.46,31.79|N|To Gronnstalker Rokash.|
 T Defection of Gronnstalker Rokash|QID|35341|M|59.46,31.79|N|From Gronnstalker Rokash.|RANK|2|
 T Frosted Fury|QID|34346|M|52.51,40.42|N|To Shadow Hunter Mala.|
-T Lurkers|QID|34344|M|52.63,40.41|N|To Shadow Hunter Rala.|
 T Poulticide|QID|34345|M|52.63,40.41|N|To Shadow Hunter Rala.|
+T Lurkers|QID|34344|M|52.63,40.41|N|To Shadow Hunter Rala.|
 
 A The Real Prey|QID|34348|M|52.63,40.45|N|From Shadow Hunter Rala.|
 C The Real Prey|QID|34348|M|53.4,29.4;52.13,29.42|CS|T|Grosh the Mighty|
@@ -625,10 +625,10 @@ C Karg Unchained|QID|33785|M|63.22,60.02|S|N|Kill them all.|
 C Where's My Wolf?!|QID|33826|M|65.9,60.8|T|Huntmaster Torash|QO|1|
 A Dagg at Gromgar|QID|34651|M|65.9,60.8|N|There is no quest !, but if you want Dagg to be your follower later, you need to free him from this cage.|
 C Where's My Wolf?!|QID|33826|M|61.01,64.95|QO|2|NC|
-C Karg Unchained|QID|33785|M|63.77,68.17|N|Finish killing the orcs.|
-T Where's My Wolf?!|QID|33826|M|63.21,60.07|N|To Karg Bloodfury.|
+T Where's My Wolf?!|QID|33826|M|0,0|N|To Karg Bloodfury.|
+C Karg Unchained|QID|33785|US|M|63.77,68.17|N|Finish killing the orcs.|
 A Enfilade|QID|32994|M|63.21,60.07|N|From Karg Bloodfury who is following you around unless you went into The Hunter's Hall, at which point he will reappear as soon as you leave.|
-T Karg Unchained|QID|33785|M|63.21,60.07|N|To Karg Bloodfury (he is following you around).|
+T Karg Unchained|QID|33785|M|0,0|N|To Karg Bloodfury (he is following you around).|
 A The Master Siegesmith|QID|33828|M|63.19,60.04|N|From Lokra.|
 C Enfilade|QID|32994|M|61.38,71.71|S|N|The apprentices and siegesmiths drop the gunpowder you need to blow up the cannons. Also there is some as groundspawn.|
 
@@ -642,15 +642,15 @@ U Learn Inscription skill|QID|33918|U|111923|M|61.2,71.2|P|Inscription;773|N|Aft
 ;U Learn Scribe's Quarters Blueprints|QID|33918|U|111815|M|61.2,71.2|P|Inscription;773|N|After you learn check this step off manually.|
 
 C The Master Siegesmith|QID|33828|M|62.66,74.54|T|Master Siegesmith Uratok|
+T The Master Siegesmith|QID|33828|M|0,0|N|To Lokra.|
 C Enfilade|QID|32994|M|61.38,71.71|US|N|The apprentices and siegesmiths drop the gunpowder you need to blow up the cannons. Also there is some as groundspawn.|
-T Enfilade|QID|32994|M|62.53,74.91|N|To Karg Bloodfury.|
-T The Master Siegesmith|QID|33828|M|62.53,74.91|N|To Lokra.|
-A Return to the Pack|QID|33493|M|62.53,74.91|N|From Lokra.|
+T Enfilade|QID|32994|M|0,0|N|To Karg Bloodfury.|
+A Return to the Pack|QID|33493|M|0,0|N|From Lokra.|
 C Spare Parts|QID|36594|M|56.74,71.82|P|Engineering;202|N|Kill and loot for the shells or pick them up from the ground. Use the provided bomb to blow up the siege cannons and pick up the parts. There is a treasure chest here also with some garrison resources, (and hopefully sometimes something better).|
 H Town Hall (Frostwall)|QID|33918|M|41.58,53.06|U|110560|Z|Frostwall|CC|
-T Wanted: Grondo's Bounty|QID|33918|M|45.88,42.80|N|To Rokhan.|
+T Wanted: Grondo's Bounty|QID|33918|M|45.88,42.80|N|To Rokhan.|Z|Frostwall|
 
-T Spare Parts|QID|36594|M|50.03,68.90|P|Engineering;202|N|To Blizthraz Blastcharge.|
+T Spare Parts|QID|36594|M|50.03,68.90|P|Engineering;202|N|To Blizthraz Blastcharge.|Z|Frostwall|
 A Big Frostfire Gun|QID|36627|M|50.03,68.90|PRE|36594|P|Engineering;202|N|From Blizthraz Blastcharge.|
 A Things Are Not Goren Our Way|QID|35154|M|61.99,73.88|N|From Gorsol.|LVL|92|
 C Things Are Not Goren Our Way|QID|35154|M|61.39,84.40|N|After completing this quest you will be able to mine here, without the mining profession.|T|Stonetooth|
@@ -751,14 +751,14 @@ C Go trap an animal|QID|36345|QO|1|M|55,62;26,43|CN|U|113991|N|Trap a wolf (in t
 C Place a work order|QID|36345|QO|2|M|51.71,58.32|Z|Frostwall|N|At Farmer Lok'lub, sometimes he gets bored and wanders around, I have found him as far away as my garrison's graveyard.|
 T Breaking Into the Trap Game|QID|36345|BUILDING|Barn;24;25;133|M|51.71,58.32|Z|Frostwall|N|To Farmer Lok'lub|
 
-A The Secrets of Gorgrond|QID|35557|M|41.58,53.06|N|From the Command Board.|
-T Return to the Pack|QID|33493|M|50.17,37.82|N|To Durotan.|
-A Thunderlord Invasion|QID|37291|M|50.17,37.82|N|From Durotan.|
-C Thunderlord Invasion|QID|37291|M|43.61,47.91|CHAT|N|Chat with Sargeant Grimjaw to start the scenario. You can take up to two groupmates with you if they come to your garrison. It will take around 10 min.|
-t Thunderlord Invasion|QID|37291|M|43.61,47.91|N|To Sargeant Grimjaw.|
-A The Iron Wolf|QID|33010|M|50.17,37.82|N|From Durotan.|
+A The Secrets of Gorgrond|QID|35557|M|49.1,41.6|N|Take this quest if you want to do go to Gorgrond after you are done with Frostfire.\n\nFrom the Command Board.|Z|Frostwall|O|
+T Return to the Pack|QID|33493|M|50.2,37.7|N|To Durotan.|Z|Frostwall|
+A Thunderlord Invasion|QID|37291|M|50.2,37.7|N|From Durotan.|Z|Frostwall|
+C Thunderlord Invasion|QID|37291|M|43.,47.8|CHAT|Z|Frostwall|N|Chat with Sargeant Grimjaw to start the scenario. You can take up to two groupmates with you if they come to your garrison. It will take around 10 min.|
+T Thunderlord Invasion|QID|37291|M|43.5,47.8|N|To Sargeant Grimjaw.|Z|Frostwall|
+A The Iron Wolf|QID|33010|M|50.2,37.7|N|From Durotan.|Z|Frostwall|
 
-A Sevices of Dagg|QID|34733|M|48.23,17.32|N|If you found Dagg while out and about questing (in daggermaw ravine and in grom'gar) he has come to pledge his service.|PRE|34654;34651|
+A Sevices of Dagg|QID|34733|M|48.23,17.32|Z|Frostwall|N|If you found Dagg while out and about questing (in daggermaw ravine and in grom'gar) he has come to pledge his service.|PRE|34654;34651|
 R Grimfrost Hill|QID|33125|M|65.14,49.45|
 A A Proper Parting|QID|33125|M|66.03,49.09|N|From Outrider Urukag.|
 A Gut Guttra|QID|33132|M|66.03,49.09|N|From Outrider Urukag.|
