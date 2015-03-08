@@ -170,7 +170,7 @@ T West to the Strand|QID|13617|M|18.28,20.49|N|To Talen.|
 A The Ancient Statuettes|QID|26465|M|18.28,20.49|N|From Talen.|
 A Naga of the Strand|QID|13602|M|18.28,20.49|N|From Shindrell Swiftfire.|
 
-f Blackfathom Camp|QID|13602|M|18.11,20.64|N|At Solais.|
+f Blackfathom Camp|M|18.11,20.64|N|At Solais.|
 C The Ancient Statuettes|QID|26465|S|M|11.69,24.27|N|Loot statuettes off the ground.|
 C Naga of the Strand|QID|13602|M|13.58,14.69|N|Kill any type of Naga you see.|
 C The Ancient Statuettes|QID|26465|US|M|12.92,26.45|N|Finish looting statuettes.|
@@ -207,7 +207,7 @@ A The Lost Gem|QID|26464|M|20.25,38.77|N|From Teronis' Corpse.|
 A That Which Has Risen|QID|13644|M|20.24,38.77|N|From Keeper Heartwise.|
 C The Lost Gem|QID|26464|S|M|21.94,40.27|N|Kill and loot tenticles as you progress thru these steps.|
 C That Which Has Risen|QID|13644|M|20.65,41.90|N|Kill Harbinger Aphotic.|
-C Bathed in Light|QID|13642|M|18.86,41.68|N|Stand in the light and use the Unbathed Concoction.|U|45065|
+C Bathed in Light|QID|13642|NC|M|18.86,41.68|N|Stand in the light and use the Unbathed Concoction.|U|45065|
 T That Which Has Risen|QID|13644|M|20.09,38.76|N|To Keeper Heartwise.|
 C The Lost Gem|QID|26464|US|M|19.53,43.82|N|Get the gem if you have not yet.|
 
@@ -219,7 +219,7 @@ A Astranaar Bound|QID|13646|M|26.75,36.04|N|From Sentinel Avana.|
 R Astranaar|QID|13646|NC|N|Talk to Sentinel Avana. She will give you a free ride on one of her Kitties.|
 T Astranaar Bound|QID|13646|M|34.69,48.55|N|To Sentinel Luara.|
 
-f Astranaar|QID|13849|NC|N|Accept the Flight Path from Daelyshia.|
+f Astranaar|N|Accept the Flight Path from Daelyshia.|M|34.4,48.0|
 
 A Astranaar's Burning!|QID|13849|M|34.92,49.77|N|From Sentinel Thenysil.|
 C Astranaar's Burning!|QID|13849|U|46094|M|35.31,49.26|N|Use the bucket and aim for a fire.  Rinse and repeat.|NC|
@@ -242,21 +242,21 @@ A A Shameful Waste|QID|26454|M|86.86,44.76|N|From Architect Nemos.|
 A Vile Satyr! Dryads in Danger!|QID|26467|M|86.72,42.98|N|From Illiyana.|
 A The Lost Chalice|QID|26455|M|85.20,44.49|N|From Kayneth Stillwind.|
 
-f Forest Song|QID|26467|M|85.09,43.45|N|At Suralais Farwind.|
+f Forest Song|M|85.09,43.45|N|At Suralais Farwind.|
 
 T Vile Satyr! Dryads in Danger!|QID|26467|M|78.35,44.84|N|To Anilia.|
 A The Branch of Cenarius|QID|26468|M|78.35,44.84|N|From Anilia.|
 C The Branch of Cenarius|QID|26468|M|78.47,42.89|N|Kill and loot Geltharis.|
-C A Shameful Waste|QID|26454|S|M|80.69,52.34|N|Pick up Satyrnaar Fel Wood.|
-C The Lost Chalice|QID|26455|M|81.20,49.19|N|Loot the Chalice of Elune.|
-C A Shameful Waste|QID|26454|US|M|81.60,51.00|N|Finish getting any Fel Wood you need left.|
+C A Shameful Waste|QID|26454|NC|S|M|80.69,52.34|N|Pick up Satyrnaar Fel Wood.|
+C The Lost Chalice|QID|26455|NC|M|81.20,49.19|N|Loot the Chalice of Elune.|
+C A Shameful Waste|QID|26454|NC|US|M|81.60,51.00|N|Finish getting any Fel Wood you need left.|
 T The Lost Chalice|QID|26455|M|85.24,44.53|N|To Kayneth Stillwind.|
 T The Branch of Cenarius|QID|26468|M|86.73,43.16|N|To Illiyana.|
 
 A Satyr Slaying!|QID|26469|M|86.73,43.17|N|From Illiyana.|
 A Stopping the Rituals|QID|13683|M|86.35,43.70|N|From Anchorite Buurq.|
 C Satyr Slaying!|QID|26469|S|M|80.17,48.70|N|Kill and loot Satyrs.|
-C Stopping the Rituals|QID|13683|M|80.12,49.82|N|Clicky clicky on the Purple Gems.|
+C Stopping the Rituals|QID|13683|NC|M|80.12,49.82|N|Clicky clicky on the Purple Gems.|
 C Satyr Slaying!|QID|26469|US|M|81.65,48.18|N|Finish looting Satyr horns.|
 T Stopping the Rituals|QID|13683|M|86.46,43.75|N|To Anchorite Buurq.|
 T Satyr Slaying!|QID|26469|M|86.84,43.21|N|To Illiyana.|
@@ -278,22 +278,22 @@ T Recover the Remains|QID|13869|M|83.84,62.98|N|To Gnarl.|
 C Explosives Shredding|QID|13698|M|84.09,62.57|N|Have a hunt for a Shredder with Green Name text. Get in this Vehicle and blow up som Kegs Laughing out loud Boom!. When you have killed the kegs follow the arrow back to the camp.|
 T Explosives Shredding|QID|13698|M|83.93,62.68|N|To Sentinel Luciel Starwhisper.|
 C Destroy the Legion|QID|26444|S|M|82.51,78.23|N|Kill demons. Don't forget to loot these Demons, especially if you are doing Loremaster, they drop a quest item.|
-C Reclaiming Felfire Hill|QID|26446|M|82.12,66.78|N|Click on Fertile Dirt Mounds.|
+C Reclaiming Felfire Hill|QID|26446|NC|M|82.12,66.78|N|Click on Fertile Dirt Mounds.|
 C Destroy the Legion|QID|26444|US|M|83.84,70.40|N|Finish killing demons.|
 
-A Diabolical Plans|QID|26443|U|23777|M|83.98,70.68|N|Make sure you have looted this item and click it to open up a quest.|
+A Diabolical Plans|QID|26443|U|23777|M|0,0|N|Make sure you have looted this item and click it to open up a quest.|
 T Reclaiming Felfire Hill|QID|26446|M|83.72,63.09|N|To Gnarl.|
 A Closure is Only Natural|QID|13766|M|83.72,63.09|N|From Gnarl.|
 T Diabolical Plans|QID|26443|M|84.09,62.77|N|To Vindicator Vedaar.|
 A Never Again!|QID|26445|M|84.09,62.77|N|From Vindicator Vedaar.|
 T Destroy the Legion|QID|26444|M|84.03,62.83|N|To Vindicator Vedaar.|
-C Closure is Only Natural|QID|13766|S|U|45545|M|82.53,80.62|N|Use the twig on the green portals as you encounter them.|
+C Closure is Only Natural|QID|13766|NC|S|U|45545|M|82.53,80.62|N|Use the twig on the green portals as you encounter them.|
 
 R Path to Gorgannon|QID|26445|CC|M|84.25,71.81;84.09,77.06;87.24,79.33;89.39,77.08|N|Follow the waypoints.|
 K Gorgannon|QID|26445|N|Be aware of the mobs close to him, he calls for help. Once you kill him loot his Blade.|QO|Gorgannon's Flaming Blade: 1/1|
 R Path to the Seeker.|QID|26445|CC|M|82.64,77.86;78.44,81.59|N|Follow the waypoints.|
 C Never Again!|QID|26445|M|78.28,83.79|N|Look for the skull on the mini-map, kill Diathorus the Seeker and loot his spear.|
-C Closure is Only Natural|QID|13766|US|U|45545|M|81.21,79.87|
+C Closure is Only Natural|QID|13766|NC|US|U|45545|M|81.21,79.87|
 T Closure is Only Natural|QID|13766|M|83.72,63.02|N|To Gnarl.|
 A The Shadewalker|QID|13792|M|83.78,63.01|N|From Gnarl.|
 T Never Again!|QID|26445|M|84.13,62.72|N|To Vindicator Vedaar.|
