@@ -509,14 +509,14 @@ R The Draakorium |QID|35444|N|Run south along the road.|M|57.0,56.6|ACTIVE|35444
 T The Southern Wilds |QID|35444|N|To Prelate Reenu.|M|57.0,57.5|ACTIVE|35444| ;From Farmer Gehaar
 
 A The Southern Wilds|QID|35459|M|42.71,44.76|Z|Lunarfall|LEAD|35444|
-f The Draakorium |QID|35459|N|With Morfax|M|57.0,56.6|ACTIVE|35459|
+f The Draakorium |N|With Morfax|M|57.0,56.6|ACTIVE|35459|
 T The Southern Wilds |QID|35459|N|To Prelate Reenu, south along the road in Draakorium|M|57.0,57.5|ACTIVE|35459|
 
 T The Southern Wilds |QID|35450|N|To Prelate Reenu, south along the road in Draakorium|M|57.0,57.5|ACTIVE|35450|
 
 A Crippled Caravan|QID|33786|M|57.0,57.5|N|From Prelate Reenu.|
 A Wanted: Maa'run's Hoof |QID|33836|M|57.4,57.2|N|From the Wanted Poster at The Draakorium. This is a 3-party group quest.|RANK|3|
-f The Draakorium |QID|33786|N|With Morfax|M|57.0,56.6|
+f The Draakorium |N|With Morfax|M|57.0,56.6|
 C Crippled Caravan|QID|33786|N|Head to Fiona's Caravan|M|53.6,57.3|NC|
 T Crippled Caravan|QID|33786|N|To Fiona|M|53.6,57.3|
 
@@ -586,7 +586,7 @@ T Fiona |QID|35617|M|53.60,57.29|N|To Fiona.|
 T Wanted: Maa'run's Hoof|QID|33836|M|58.03,57.63|N|To Orrin.|RANK|3|
 
 R Twilight Glade|QID|33072|N|Run to Twilight Glade.|ACTIVE|33072|M|40.5,54.9|
-f Twilight Glade |QID|33072|N|With Gotuun|M|40.73,55.28|
+f Twilight Glade|N|With Gotuun|M|40.73,55.28|
 T Into Twilight |QID|33072|N|To Prophet Velen at Twilight Glade|M|40.5,54.9|
 A The Clarity Elixir |QID|33076|N|From Prophet Velen|PRE|33072|M|40.5,54.9|
 
@@ -700,7 +700,7 @@ T Your First Leatherworking Work Order |QID|36642|N|To Marianne Levine.|ACTIVE|3
 
 
 F Embaari Village |QID|33586|M|40.7,55.3|N|Fly to Embaari Village, or use your hearthstone if it has cooled down.|
-f Exile's Rise|QID|33586|M|45.58,25.37|N|At Wargra.|
+f Exile's Rise|M|45.58,25.37|N|At Wargra.|
 T Chasing Shadows |QID|33586|M|45.70,26.35|N|To Rulkan up Exile's Rise|
 
 A Ancestor's Memory|QID|33082|M|45.70,26.35|N|From Rulkan.|PRE|33586|
