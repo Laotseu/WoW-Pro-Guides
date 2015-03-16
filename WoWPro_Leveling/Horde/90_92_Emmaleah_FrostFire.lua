@@ -771,7 +771,7 @@ T A Proper Parting|QID|33125|M|66.04,49.10|N|To Outrider Urukag.|
 T Gut Guttra|QID|33132|M|66.04,49.10|N|To Outrider Urukag.|
 
 R Grom'gar|QID|33010|M|62.81,65.73|
-C The Iron Wolf|QID|33010|M|58.38,58.36|Z|Hunter's Hall|N|If you get caught in a net, kill the caster of the net to free yourself (before The Iron Wolf does bad AoE things.)|
+C The Iron Wolf|QID|33010|M|63.7,68.3;66.1,65.7|CS|N|If you get caught in a net, kill the caster of the net to free yourself (before The Iron Wolf does bad AoE things.)|
 T The Iron Wolf|QID|33010|M|53.23,56.27|Z|Hunter's Hall|N|To Thrall.|
 A To Thunder Pass|QID|34123|M|53.23,56.27|Z|Hunter's Hall|N|From Thrall.|
 
