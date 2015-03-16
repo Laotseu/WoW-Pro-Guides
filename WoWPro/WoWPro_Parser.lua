@@ -274,6 +274,12 @@ DefineTag("R",nil,"string",nil,function (value,i) end)  -- Swallow R tags
 DefineTag("C",nil,"string",nil,function (value,i) end)  -- Swallow C tags
 DefineTag("GEN",nil,"string",nil,function (value,i) end)  -- Swallow C tags
 
+-- Added by LaoTseu
+DefineTag("DAILY",daily,"boolean",nil,nil)   
+DefineTag("ALTFP","level","string",nil,nil)
+DefineTag("NOBUFF","nobuff","string",nil,nil)
+
+
 function WoWPro.ParseQuestLine(faction,i,text,realline)
 	local GID = WoWProDB.char.currentguide
 	local zone = strtrim(string.match(WoWPro.Guides[GID].zone, "([^%(]+)") or "")
@@ -292,8 +298,8 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 	end
 	WoWPro.step[i] = WoWPro.step[i]:trim()
 	WoWPro.stepcount = WoWPro.stepcount + 1
-	WoWPro.QID[i] = text:match("|QID|([^|]*)|?")
 --[=[	
+	
 	local tags = { strsplit("|", text) }
 	local idx = 2
 	
@@ -356,13 +362,8 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 	    idx = idx + 1
 	until idx > #tags
 ]=]
-	if WoWPro.action[i] == "t" then
-	    WoWPro.action[i] = "T"
-	    WoWPro.conditional[i] = true
-	end
-	if (WoWPro.action[i] == "A" or WoWPro.action[i] == "T") then
-	    WoWPro:GrailCheckQuestName(GID,WoWPro.QID[i],WoWPro.step[i])
-	end
+	WoWPro.QID[i] = text:match("|QID|([^|]*)|?")
+
 	WoWPro.note[i] = text:match("|N|([^|]*)|?")
 	WoWPro.mat[i] = text:match("|N|([^|]*)|?")
 	-- Replace all the \ by | to allow UI Escape sequences in the notes
@@ -487,11 +488,11 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
 	end
 	WoWPro.why[i] = nil
 
-    -- If the step is "Achievement" use the name and description from the server ...
-    if WoWPro.ach[i] and false then
-        if not WoWPro.note[i] then
-            WoWPro.note[i] = ""
-        end
+	-- If the step is "Achievement" use the name and description from the server ...
+	if WoWPro.ach[i] and false then
+		if not WoWPro.note[i] then
+		   WoWPro.note[i] = ""
+		end
     	local achnum, achitem = string.split(";",WoWPro.ach[i])
     	local count = GetAchievementNumCriteria(achnum) 
     	local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(achnum) 
@@ -504,14 +505,36 @@ function WoWPro.ParseQuestLine(faction,i,text,realline)
     		local description, type, completed, quantity, requiredQuantity, characterName, flags, assetID, quantityString, criteriaID = GetAchievementCriteriaInfo(achnum, achitem) 
     		WoWPro.note[i] = description.. " ("..quantityString.." of "..requiredQuantity..")\n\n"..WoWPro.note[i]
     	end 
-    end
+	 end
+
+   -- Post tag validation (validations that involve more then a tag or multiple tags)
+   if WoWPro.action[i] == "t" then
+   	WoWPro.action[i] = "T"
+   	WoWPro.conditional[i] = true
+   end
+
+   if (WoWPro.action[i] == "A" or WoWPro.action[i] == "T") then
+       WoWPro:GrailCheckQuestName(GID,WoWPro.QID[i],WoWPro.step[i])
+   end
+
+   if WoWPro.action[i] == "f" and WoWPro.QID[i] ~= nil then 
+   	-- There is code to detect if a Taxi is known or discovered. No need for QID here.
+    	WoWPro:Warning("Step [%s %s] has a QID tag ||QID||%s||.",WoWPro.action[i],WoWPro.step[i], WoWPro.QID[i])
+    	WoWPro.QID[i] = nil 
+   end
+
+   if WoWPro.daily[i] then
+   	WoWPro:SetSessionDailyQuests(WoWPro.QID[i])
+   	--WoWPro.daily[i] = nil
+   end
+
 		
 	-- Module ParseQuestLine Handlers --
 	if WoWProDB.char.currentguide and
 	   WoWPro.Guides[WoWProDB.char.currentguide] and
 	   WoWPro.Guides[WoWProDB.char.currentguide].guidetype and
 	   WoWPro[WoWPro.Guides[WoWProDB.char.currentguide].guidetype].ParseQuestLine then
-	    WoWPro[WoWPro.Guides[WoWProDB.char.currentguide].guidetype]:ParseQuestLine(text,i)
+	   WoWPro[WoWPro.Guides[WoWProDB.char.currentguide].guidetype]:ParseQuestLine(text,i)
 	end
 end
 

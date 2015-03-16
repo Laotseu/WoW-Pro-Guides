@@ -152,7 +152,8 @@ function WoWPro.LoadGuideReal()
     
 	--Re-initiallizing tags and counts--
 	for i,tag in pairs(WoWPro.Tags) do 
-		WoWPro[tag] = {}
+		WoWPro[tag] = WoWPro[tag] or {}
+		wipe(WoWPro[tag])
 	end
 	WoWPro.stepcount, WoWPro.stickycount, WoWPro.optionalcount = 0, 0 ,0
 	
