@@ -11,28 +11,35 @@ local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...))
 
 -- Remember Taxi Locations
 function WoWPro:RecordTaxiLocations(...)
+	--err("Processing %s nodes.", NumTaxiNodes())
     for i = 1, NumTaxiNodes() do
-        local nomen = TaxiNodeName(i)
-        local location,zone = string.split(",",nomen)
-        if not WoWProCharDB.Taxi[location] then
-            WoWProCharDB.Taxi[location] = true
-            WoWPro:Print("Discovered Flight Point: [%s]",location)
+		local nomen = TaxiNodeName(i)
+		local fptype = TaxiNodeGetType(i)
+		local location,zone = string.split(",",nomen)
+		if fptype == "CURRENT" or fptype == "REACHABLE" then
+			WoWProCharDB.Taxi[location] = true
+			--err("location = %s, zone = %s, fptype = %s", location, zone, fptype)
+			if not WoWProCharDB.Taxi[location] then
+				WoWPro:Print("Discovered Flight Point: [%s]",location)
 
-            -- Complete f steps for that location if present
-         	local GID = WoWProDB.char.currentguide
-         	if not GID or not WoWPro.Guides[GID] then return end
+				-- Complete f steps for that location if present
+				local GID = WoWProDB.char.currentguide
+				if not GID or not WoWPro.Guides[GID] then return end
 
-         	if WoWProCharDB.Guide then
-         		for i=1,#WoWPro.action do
-         			if WoWPro.action[i] == 'f' and 
-         				WoWPro.step[i] == location and 
-         				not WoWProCharDB.Guide[GID].completion[i] then
-         				WoWPro.CompleteStep(i, "Detected new Taxi for "..location, true)
-         			end
-         		end
-         	end
-        end
-    end
+				if WoWProCharDB.Guide then
+					for i=1,#WoWPro.action do
+						if WoWPro.action[i] == 'f' and 
+							WoWPro.step[i] == location and 
+							not WoWProCharDB.Guide[GID].completion[i] then
+								WoWPro.CompleteStep(i, "Detected new Taxi for "..location, "Flight point already known.", true)
+						end
+					end
+				end
+			end        	
+		else
+     		WoWProCharDB.Taxi[location] = nil
+		end 
+	end
 end
 
 -- Auto-Complete: Use flight point --
@@ -46,7 +53,7 @@ function WoWPro:TakeTaxi(index,destination)
                 Dismount()
             end
             TakeTaxiNode(i)
-            WoWPro.CompleteStep(index,"Took taxi to "..location)
+            WoWPro.CompleteStep(index,"Took taxi to "..location, "Took the taxi.")
             return
         end
     end
@@ -66,7 +73,7 @@ function WoWPro:AutoCompleteGetFP(...)
 
 			WoWProCharDB.Taxi[zonetext] = true -- keep track of the discovered flightpoints
 			WoWPro:Print("Discovered Flight Point: [%s]",zonetext)
-			WoWPro.CompleteStep(index)
+			WoWPro.CompleteStep(index, "Flightpoint discovered.")
 		end
 	end
 end
