@@ -39,6 +39,9 @@ function WoWPro:RecordTaxiLocations(...)
 		else
      		WoWProCharDB.Taxi[location] = nil
 		end 
+
+		-- Little fix to remove bogus Taxi entries
+		WoWProCharDB.Taxi[""]  = nil
 	end
 end
 
@@ -63,12 +66,13 @@ end
 -- Auto-Complete: Get flight point --
 function WoWPro:AutoCompleteGetFP(...)
 	local zonetext = GetMinimapZoneText()
+	if not zonetext or zonetext == "" then return end
 	for i = 1,15 do
 		local index = WoWPro.rows[i].index
 		local step =  WoWPro.step[index]
-		local altfp = WoWPro.altfp[index] or ""
+		local altfp = WoWPro.altfp[index]
 		if ((... == ERR_NEWTAXIPATH and WoWPro.action[index] == "f" and (zonetext == step or altfp == zonetext)) or
-			 (WoWPro.action[index] == "f" and (WoWProCharDB.Taxi[step] or WoWProCharDB.Taxi[altfp])))
+			 (WoWPro.action[index] == "f" and (WoWProCharDB.Taxi[step] or (altfp and WoWProCharDB.Taxi[altfp]))))
 			and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
 
 			WoWProCharDB.Taxi[zonetext] = true -- keep track of the discovered flightpoints

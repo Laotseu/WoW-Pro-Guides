@@ -565,7 +565,7 @@ function WoWPro:NextStep(k,i)
 	      k <= CurrentIndex then 
  			skip = true -- If the quest is not in the quest log, the step is skipped --
  			WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k])
- 			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in QuestLog."
+ 			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in Quest Log."
 			WoWProCharDB.Guide[GID].skipped[k] = true
  			break
     	end

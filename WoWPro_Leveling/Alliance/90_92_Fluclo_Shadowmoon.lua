@@ -504,7 +504,7 @@ N The Hills of Valuun |QID|33084|N|Complete the Bonus Objective: The Hills of Va
 C The Big Haul |QID|33084|N|Kill and loot the Rock Bull, Rock Grazer and Rock Calf for the Raw Elekk Steak.|M|62.4,36.8|RANK|2|
 T The Big Haul |QID|33084|N|To Traevar Gunnermark|M|62.4,36.8|RANK|2|
 
-f Path of Light|ALTFP|Path of the Light|N|With Paaya.|M|59.35,46.00|
+f Path of the Light|ALTFP|Path of Light|N|With Paaya.|M|59.35,46.00|
 R The Draakorium |QID|35444|N|Run south along the road.|M|57.0,56.6|ACTIVE|35444|
 T The Southern Wilds |QID|35444|N|To Prelate Reenu.|M|57.0,57.5|ACTIVE|35444| ;From Farmer Gehaar
 

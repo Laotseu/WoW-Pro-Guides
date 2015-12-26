@@ -150,7 +150,7 @@ K Sun-Sage Rathyx|QID|34658|M|45.80,15.28|T|Sun-Sage Rathyx|N|Kill Sun-Sage Rath
 T Orders From On High|QID|34658|M|45.38,18.25|N|To Reshad.|
 A The Crone|QID|34659|M|45.38,18.25|N|From Reshad.|PRE|34658|
 R Crow's Crook|QID|34659|M|50.66,28.59|N|Run South towards Crow's Crook.|
-f Crow's Crook|QID|34659|M|51.87,31.06|N|At Darkscreech.|
+f Crow's Crook|M|51.87,31.06|N|At Darkscreech.|
 
 C The Crone|QID|34659|M|51.62,31.38|CHAT|N|Tell Ornekka the secret word.|
 T The Crone|QID|34659|M|51.62,31.38|N|To Ornekka.|
@@ -172,7 +172,7 @@ T Echo Hunters|QID|34805|M|48.59,44.48|N|To Reshad.|
 A A Gathering of Shadows|QID|35671|M|48.59,44.48|N|From Reshad.|PRE|35668+34805|
 C A Gathering of Shadows|QID|35671|M|46.54,45.59|NC|
 T A Gathering of Shadows|QID|35671|M|46.51,45.60|N|To Shadow-Sage Iskar.|
-f Veil Terokk|QID|35272|M|46.18,44.13|N|At Skytalon Meshaal.|
+f Veil Terokk|M|46.18,44.13|N|At Skytalon Meshaal.|
 A One of Our Own|QID|35274|M|45.89,46.36|N|From Jasper Fel.|FACTION|Alliance|
 A One of Our Own|QID|35272|M|45.90,46.35|N|From Shadow Hunter Ukambe.|FACTION|Horde|
 C One of Our Own|QID|35272;35274|CHAT|M|46.52,45.61|N|Talk to Iskar and get him to let your guy free.|
@@ -198,7 +198,7 @@ h Southport|QID|35293|M|40.12,61.49|N|At Elria Willowfall.\nIf you built the bre
 f Southport|M|39.08,61.80|N|To Firn Swiftbreeze|
 
 C Pinchwhistle Gearworks|QID|35619;35620|NC|M|39.1,61.8|N|Talk to Firn Seifbreeze to get a ride.|
-f Pinchwhistle Gearworks|QID|35619;35620|M|60.88,73.31|N|At Kwiven Quickcog.|
+f Pinchwhistle Gearworks|M|60.88,73.31|N|At Kwiven Quickcog.|
 T Pinchwhistle Gearworks|QID|35619;35620|M|61.47,72.94|N|To Kimzee Pinchwhistle.|
 A Defungination|QID|35077|M|61.47,72.94|N|From Kimzee Pinchwhistle.|PRE|35619+35620|
 A Spore-be-Gone|QID|35079|M|61.46,72.96|N|From Engineer Gazwitz.|PRE|35619+35620|
@@ -266,7 +266,7 @@ A Wanted: Spineslicer's Husk|QID|35670|M|40.11,43.05|N|From Wanted Poster.|FACTI
 A Wanted: Venombarb|QID|35672|M|40.11,43.05|N|From Wanted Poster.|FACTION|Horde|PRE|35277|
 h Axefall|QID|35295|M|40.41,42.99|N|At Taz'jari.|FACTION|Horde|
 A What's Theirs is Ours|QID|35295|M|40.27,43.37|N|From Shadow Hunter Ukambe.|FACTION|Horde|PRE|35277|
-f Axefall|QID|35293|M|39.53,43.36|N|At Hutou Featherwind.|FACTION|Horde|
+f Axefall|M|39.53,43.36|N|At Hutou Featherwind.|FACTION|Horde|
 
 A Return to Veil Terokk|QID|35611|M|40.18,60.25|N|From Percy.|PRE|35286+35277|
 R Admiral Taylor's Garrison|QID|35295|M|39.13,48.95|
@@ -310,7 +310,7 @@ T Honoring a Hero|QID|35549|M|39.8,60.8|N|To Lieutenant Willem.|FACTION|Alliance
 A For Old Times' Sake|QID|36353|M|39.98,60.65|N|To/From Admiral Taylor who wants to come join your garrison forces.|FACTION|Alliance|PRE|35549|
 T Surviving in a Savage Land|QID|35550|M|40.18,43.50|N|To Taskmaster Gornek.|FACTION|Horde|
 
-f Southport|QID|35293|M|39.78,61.87;39.08,61.79|CS|N|At Firn Swiftbreeze.|FACTION|Alliance|
+f Southport|M|39.78,61.87;39.08,61.79|CS|N|At Firn Swiftbreeze.|FACTION|Alliance|
 F Veil Terokk|QID|37327|M|39.53,43.36|N|At Hutou Featherwind.|FACTION|Horde|ACTIVE|37327|
 T Befriending the Locals|QID|37326;37327|M|43.90,48.90|N|To Dusk-Seer Irizzar.|
 C Peace Offering|QID|35697;35699|M|43.90,48.90|CHAT|N|Offer a peace offering to Shadow-Sage Iksar.|
@@ -416,7 +416,7 @@ T The Talon King|QID|35734|M|46.48,46.66|N|To Reshad.|
 A Ikky|QID|34898|M|46.19,45.69|N|Talk to Ikky to acquire him as a battle pet.|PRE|34886|
 F Talon Watch|QID|34998|M|46.18,44.13|CC|CHAT|N|Chat with Skytalon Meshaa for a flight to a new area, Talon Watch(Chat Option, not a flight path).|
 
-f Talon Watch|QID|34998|M|61.90,42.62|N|At Skytalon Karaz.|
+f Talon Watch|M|61.90,42.62|N|At Skytalon Karaz.|
 A Hatred Undying|QID|34999|M|61.90,42.23|N|From Kazu.|
 T Talon Watch|QID|34998|M|62.23,42.68|N|To Talon Guard Kurekk.|
 A Banished From the Sky|QID|35000|M|62.23,42.68|N|From Talon Guard Kurekk.|PRE|34998|
@@ -647,7 +647,7 @@ T Wanted: Venombarb|QID|35672|M|39.51,43.36|N|To Hutou Featherwind.|FACTION|Hord
 
 C Pinchwhistle Gearworks|QID|35620|M|39.50,43.38|CHAT|N|Talk to Hotou Featherwind for a flight to Pinchwhistle Gearworks.|FACTION|Horde|
 
-f Pinchwhistle Gearworks|QID|35619;35620|M|60.88,73.31|N|At Kwiven Quickcog.|
+f Pinchwhistle Gearworks|M|60.88,73.31|N|At Kwiven Quickcog.|
 T Pinchwhistle Gearworks|QID|35619;35620|M|61.47,72.94|N|To Kimzee Pinchwhistle.|
 A Defungination|QID|35077|M|61.47,72.94|N|From Kimzee Pinchwhistle.|PRE|35619+35620|
 A Spore-be-Gone|QID|35079|M|61.46,72.96|N|From Engineer Gazwitz.|PRE|35619+35620|
@@ -707,7 +707,7 @@ F Veil Terokk|QID|37141|M|39.09,61.81|N|To Firn Swiftbreeze.|FACTION|Alliance|
 
 H Axefall|QID|371419|M|61.47,72.94|N|Back to Axefall.|FACTION|Horde|
 A News from Nagrand|QID|36607;36602|M|40.18,43.51|N|From Taskmaster Gornek.|FACTION|Horde|
-f Veil Terokk|QID|37141|M|39.51,43.36|N|To Hutou Featherwind.|FACTION|Horde|
+f Veil Terokk|M|39.51,43.36|N|To Hutou Featherwind.|FACTION|Horde|
 
 A Talonpriest Ishaal|QID|37141|M|46.53,46.80|N|To Talonpriest Ishaal, yet another follower for you. If you make him your bodyguard you will have access to mail wherever you are in Draenor.|PRE|34829|
 
