@@ -160,12 +160,13 @@ h Wildhammer Stronghold|QID|10680|M|37.06,58.17|N|At Dreg Cloudsweeper.|
 C Put On Yer Kneepads...|QID|10703|S|M|33.53,40.37|N|Kill any Chimera and Felboar you come across.|
 T The Hand of Gul'dan|QID|10680|M|42.20,45.07|N|To Earthmender Torlok.|
 A Enraged Spirits of Fire and Earth|QID|10458|M|42.20,45.07|N|From Earthmender Torlok.|
-C Enraged Spirits of Fire and Earth|QID|10458|U|30094|QO|Earthen Soul Captured: 8/8|M|42.73,47.86;46.59,52.15|CN|N|Use the totem and kill Enraged Earth Spirits between these points.|
-C Enraged Spirits of Fire and Earth|QID|10458|U|30094|M|49.97,50.20|N|Use the totem and kill the fire spirits. Warning: Yes, the green stuff is lava and will hurt you.|
+C Enraged Spirits of Fire and Earth|QID|10458|S|U|30094|QO|Earthen Soul Captured: 8/8|M|42.73,47.86;46.59,52.15|CN|N|Use the totem and kill Enraged Earth Spirits between these points.|
+C Enraged Spirits of Fire and Earth|QID|10458|U|30094|QO|2|M|49.97,50.20|N|Use the totem and kill the fire spirits. Warning: Yes, the green stuff is lava and will hurt you.|
+C Enraged Spirits of Fire and Earth|QID|10458|US|U|30094|QO|Earthen Soul Captured: 8/8|M|42.73,47.86;46.59,52.15|CN|N|Use the totem and kill Enraged Earth Spirits between these points.|
 T Enraged Spirits of Fire and Earth|QID|10458|M|42.20,45.07|N|To Earthmender Torlok.|
 A Enraged Spirits of Water|QID|10480|M|42.20,45.07|N|From Earthmender Torlok.|
 C Spleendid!|QID|10661|M|30.05,39.67|N|Kill any Felfire Diemetradon you see until you get 8 spleens.|S|
-l A Ghost in the Machine|QID|10642|L|30716 15|M|29.99,39.53|N|They are near the lava pools and rivers.|
+C A Ghost in the Machine|QID|10642|NC|M|29.99,39.53|N|They are near the lava pools and rivers.|
 C Spleendid!|QID|10661|M|30.05,39.67|N|Kill any Felfire Diemetradon you see until you get 8 spleens.|US|
 C Put On Yer Kneepads...|QID|10703|US|M|33.53,40.37|N|Kill any mobs that you need left..|
 C To Legion Hold|QID|10563|U|30638|M|23.62,36.82|N|Once you get to the waypoint use the "disguise" Snake.|
@@ -180,13 +181,14 @@ C Harbingers of Shadowmoon|QID|10643|U|30719|M|36.98,55.25|N|Put on the Spectrec
 T Harbingers of Shadowmoon|QID|10643|M|36.97,55.16|N|To Zorus the Judicator.|
 A Teron Gorefiend - Lore and Legend|QID|10644|M|36.97,55.16|N|From Zorus the Judicator. Don't forget to put on your regular helm.|
 
-l Fel Reaver Power Core|QID|10572|L|30628 |M|26.23,41.27|N|Dive underwater to get the power core.|
-C Setting Up the Bomb|QID|10572|M|22.20,35.50|N|Loot the armor plate.|
+C Fel Reaver Power Core|QID|10572|NC|QO|1|M|26.23,41.27|N|Dive underwater to get the power core.|
+C Fel Reaver Armor Plate|QID|10572|NC|QO|2|M|22.20,35.50|N|Loot the armor plate.|
 K Overseer Ripsaw|QID|10621|L|30756 |T|Overseer Ripsaw|N|Find and kill Overseer Ripsaw, then loot the item he drops.|
 A Illidari-Bane Shard|QID|10621|U|30756|M|22.49,35.97|N|Accept the quest from the shard.|
 C The Sketh'lon Wreckage|QID|10569|M|36.05,30.78|N|Kill Arakkoa until you get all three pages.|
+C The Second Course...|QID|10677|S|M|49.02,26.89|N|Kill Greater Felfire Diemetradons in the fel lava river.|
 C Enraged Spirits of Water|QID|10480|U|30094|M|49.18,23.10|N|Use the totem and kill the Enraged Water Spirits near it.|
-C The Second Course...|QID|10677|M|49.02,26.89|N|Kill Greater Felfire Diemetradons in the fel lava river.|
+C The Second Course...|QID|10677|US|M|49.02,26.89|N|Kill Greater Felfire Diemetradons in the fel lava river.|
 A The Ashtongue Tribe|QID|10619|M|61.24,29.18|N|From Vindicator Aluumen.|REP|Aldor;932|
 A Karabor Training Grounds|QID|10587|M|61.24,29.18|N|From Exarch Onaala.|REP|Aldor;932|
 A Tablets of Baa'ri|QID|10568|M|62.54,28.46|N|From Anchorite Ceyla.|REP|Aldor;932|
@@ -201,13 +203,13 @@ T The Sketh'lon Wreckage|QID|10569|M|38.71,54.17|N|To Gryphonrider Kieran.|
 A Find the Deserter|QID|10759|M|38.71,54.17|N|From Gryphonrider Kieran.|
 T Setting Up the Bomb|QID|10572|M|39.53,53.65|N|To Wing Commander Nuainn.|
 A Blast the Infernals!|QID|10564|M|39.53,53.65|N|From Wing Commander Nuainn.|
-C Blast the Infernals!|QID|10564|M|22.66, 39.92|N|Head to the waypoint and use the bomb.|
+C Blast the Infernals!|QID|10564|NC|M|22.66, 39.92|N|Head to the waypoint and use the bomb.|
 T Blast the Infernals!|QID|10564|M|39.53,53.65|N|To Wing Commander Nuainn.|
 A The Deathforge|QID|10573|M|39.53,53.65|N|From Wing Commander Nuainn.|
 
 T Find the Deserter|QID|10759|M|35.22,39.32|N|To Parshah. He wonders north and south along the road.|
 A Asghar's Totem|QID|10777|M|35.22,39.32|N|From Parshah. He wonders north and south along the road.|
-C Asghar's Totem|QID|10777|M|40.01,29.11|N|Kill Asghar and loot his totem.|
+K Asghar|QID|10777|T|Asghar|M|40.01,29.11|N|Kill Asghar and loot his totem.|
 T Asghar's Totem|QID|10777|M|35.20,40.85|N|To Parshah.|
 A The Rod of Lianthe|QID|10778|M|35.20,40.85|N|From Parshah.|
 T The Deathforge|QID|10573|M|40.43,41.36|N|To Stormer Ewan Wildwing.|
@@ -218,9 +220,9 @@ C Minions of the Shadow Council|QID|10582|M|40.3,37.97|N|The mobs you need are i
 T Minions of the Shadow Council|QID|10582|M|40.44,41.37|N|To Stormer Ewan Wildwing.|
 A The Fate of Flanis|QID|10583|M|40.44,41.37|N|From Stormer Ewan Wildwing.|
 A The Summoning Chamber|QID|10585|M|40.43,41.39|N|From Stormer Ewan Wildwing.|
-l Elemental Displacer|QID|10585|L|30672 |M|37.41,41.71|N|Head inside the cave and kill Deathforge Smiths and Tinkerers until the item drops.|
-C The Fate of Flanis|QID|10583|M|34.64,39.87|N|Fight your way back and loot Flanis' Pack.|
-C The Summoning Chamber|QID|10585|U|30672|M|37.67,38.30|N|Drop down to the lower level at the bridge near the mouth of the cavez, kill Summoner Skartax, then use the displacer. Kill the elemental that spawns.|
+C Elemental Displacer|QID|10585|QO|2||M|37.41,41.71|N|Head inside the cave and kill Deathforge Smiths and Tinkerers until the item drops.|
+C The Fate of Flanis|QID|10583|CHAT|M|34.64,39.87|N|Fight your way back and loot Flanis' Pack.|
+C The Summoning Chamber|QID|10585|T|Summoner Skartax|U|30672|M|37.67,38.30|N|Drop down to the lower level at the bridge near the mouth of the cavez, kill Summoner Skartax, then use the displacer. Kill the elemental that spawns.|
 T The Summoning Chamber|QID|10585|M|40.44,41.35|N|To Stormer Ewan Wildwing.|
 T The Fate of Flanis|QID|10583|M|40.44,41.35|N|To Stormer Ewan Wildwing.|
 A Bring Down the Warbringer!|QID|10586|M|40.44,41.35|N|From Stormer Ewan Wildwing.|

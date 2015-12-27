@@ -161,7 +161,7 @@ C We Die Laughing!|QID|33548|M|41.12,72.86|NC|S|N|Retrieve the masks from the fa
 B Femur of Improbability|QID|36170|L|118715|M|40.1,72.2|N|More treasure for the taking, ignore the sign, I'm sure its not that importan.... ahhhhh!|ITEM|118715|RANK|3|
 A Eye Candy|QID|33563|M|40.48,71.96|N|From Limbflayer.|
 C Eye Candy|QID|33563|M|41.42,72.75|T|Skothwa|
-C We Die Laughing!|QID|33548|M|41.12,72.86|NC|N|Retrieve the masks from the fallen villagers.|
+C We Die Laughing!|QID|33548|US|M|41.12,72.86|NC|N|Retrieve the masks from the fallen villagers.|
 C Goren, Goren, Gone!|QID|33544|M|40.96,73.87|US|
 T Goren, Goren, Gone!|QID|33544|M|40.96,73.87|N|To UI Alert.|
 T We Die Laughing!|QID|33548|M|41.45,74.10|N|To Kaz the Shrieker.|
@@ -186,13 +186,13 @@ A Reagents from Rakthoth|QID|33694|M|46.29,69.98|N|From Marrow.|LVL|93|RANK|2|
 A Skulltakers in Crimson Fen|QID|35667|M|46.29,69.98|N|From Marrow.|RANK|2|
 A Tangleheart|QID|35707|M|46.36,69.64|N|From Penny Clobberbottom.|ACTIVE|36474|
 A A Rediscovered Legend|QID|34697|M|46.33,69.69|N|From Limbflayer.|ACTIVE|35880|
-f Beastwatch|QID|36474;35880|M|45.98,69.23|N|At Grinslicer.|
-h Make Beastwatch your home|QID|36474;35880|M|45.98,69.72|N|At Licefeaster.|
+f Beastwatch|M|45.98,69.23|N|At Grinslicer.|
+h Beastwatch|QID|36474;35880|M|45.98,69.72|N|Make Beastwatch your home. From Licefeaster.|
 
 ;if sparring arena
 N Proof of Strength|QID|35880|ACTIVE|35880|N|To get the drops for the proof of strength bonus quests, you have to kill stuff with your champion. So use him often to improve your drop chances.|
 l Odd Boulder|QID|36737|M|45.05,69.91|N|Call Beatface (click on the rock) to expose the Ancient Ogre Cache|RANK|3|ACTIVE|35880|
-B Pile of Rubble|QID|36118|M|43.94,70.44|QO|1|N|Pile of Rubble-treasure lying there waiting for you. Contains a random ilvl 516 green item.|RANK|3|
+B Pile of Rubble|QID|36118|M|43.94,70.44|QO|1|N|Pile of Rubble-treasure lying there waiting for you. Contains a random ilvl 516 green item.|RANK|3|ACTIVE|35880|
 t Rage and Wisdom|QID|35880|M|45.71,70.51;43.56,65.01|CS|N|To Bony Xuk.|
 A A Harsh Reminder|QID|35248|M|43.56,65.01|N|From Bony Xuk.|PRE|35880|
 A Seedbearers of Bad News|QID|35035|M|43.56,65.01|N|From Bony Xuk.|PRE|35880|
@@ -218,7 +218,7 @@ A Trophy of Glory: Crater Lord Igneous|QID|35811|M|52.8,59.6|O|U|113448|N|From '
 l Odd Boulder|QID|36728|M|41.85,58.89|N|Call Beatface (click on the rock) to expose the Obsidian Crystal Formation|RANK|3|PRE|35880|
 C On the Mend|QID|35026|M|45.89,59.30|N|These drop multiples from the steam elementals, the bigger ones (Turbulent Steamfury) drop more than thier smaller cousings (Rippling Steamfury).|
 C Basilisk Butcher|QID|35870|M|43.53,60.82|US|N|These drop from the basilisks in the area as well as groundspawn of basilisk corpses.|
-f Breaker's Crown|QID|35026|M|45.86,54.91|N|At Nisha, aren't you glad you saved her.|ACTIVE|35870|
+f Breaker's Crown|M|45.86,54.91|N|At Nisha, aren't you glad you saved her.|ACTIVE|35870|
 
 T On the Mend|QID|35026|M|45.86,54.91|N|To Nisha.|
 T Basilisk Butcher|QID|35870|M|45.86,54.91|N|To Nisha.|
@@ -236,6 +236,7 @@ C Xuk Me, Right?|QID|35202|M|45.34,52.26|S|N|Kill and loot the Goren running amo
 C What the Bony Xuk?|QID|35038|NC|M|44.03,53.02|S|N|From the Longtooth Gorger corpses lying around.|
 K Gronnslaver Raz|QID|35037|M|47.7,52|QO|2|T|Gronnslaver Raz|ACTIVE|35037|
 A The Gronn Strategy|QID|35925|M|47.73,52.07|N|From Weaponization Orders.|ACTIVE|35934|
+l Hardened Thornvine|QID|36718|M|47.21,51.82|N|Use Shredder (click on the vines) to expose the Unknown Petrified Egg|RANK|3|;5
 B Suntouched Spear|QID|36610|PRE|35880|M|45.7,49.7|QO|1|N|Run out of Raz's camp and towards the waypoint, then drop down to the ledge about 15 feet below, Wait here for Charl Doomwing to fly overhead to get that one.|ITEM|118718|RANK|3|
 K Charl Doomwing|QID|35815|M|46.0,46.8|PRE|35880|T|Charl Doomwing|L|113456|N|This is an elite mob, it is meant to be killed in a group. Kill and loot item for a bonus quest.|RANK|3|
 A Trophy of Glory: Charl Doomwing|QID|35815|M|46.0,46.8|O|U|113456|N|From 'Fang of the Doomwing' you just looted.|PRE|35880|
@@ -264,14 +265,15 @@ T Zero Xuk's Given|QID|35247|M|44,48.8|N|To Spirit of Bony Xuk.|
 A Get the Xuk Out|QID|36832|M|44,48.8|N|From Spirit of Bony Xuk.|PRE|35247|
 
 B Harvestable Precious Crystal|QID|36651|PRE|35880|M|44.55,50.76;46.12,49.95|CS|QO|1|N|Enter Glut's Burrow and you will find the crystal in the back, feel free to kill the Glut (silver elite} while you are here.|RANK|3|ITEM|$824|
-K Glut|QID|36204|M|46.2,50.8|T|Glut|L|118229|N|Kill and loot for an ilvl 534 agility trinket.|RANK|3|ITEM|118229|PRE|35880|
+K Glut|QID|36204|M|44.5 50.8;46.2,50.8|CS|T|Glut|L|118229|N|Kill and loot for an ilvl 534 agility trinket.|RANK|3|ITEM|118229|
 l Odd Boulder|QID|36732|M|44.17,46.65|N|Call Beatface (click on the rock) to expose the Obsidian Crystal Formation|PRE|35880|RANK|3|;8
 C Fair Warning|QID|35128|M|32.12,75.66|QO|1|S|N|Go into the cave and kill them as you go down.|Z|Fissure of Fury|
 C Leave Every Soldier Behind|QID|35129|M|44.96,86.18|CHAT|QO|1|N|Talk to Thukmar and then take care of him.|Z|Fissure of Fury|
 C Leave Every Soldier Behind|QID|35129|M|44.96,86.18|NC|QO|2|N|The intel is on the ground beside Thukmar.|;this seems to not be on map layer 19, despite it showing on map layer 19 when you open the map...
-B Horned Skull|QID|35056|M|42.1,66.73|QO|1|N|Loot for some Garrison Resources.|RANK|3|Z|Fissure of Fury|ITEM|$934|PRE|35880|
-K Gelgor of the Blue Flame|QID|36391|M|34.0,38.6|T|Gelgor the Blue Flame|L|118230|N|Kill and loot for an ilvl 534 versatility trinket.|PRE|35880|RANK|3|ITEM|118230|;in fissure of fury
-l Odd Boulder|QID|36723|M|60.34,44.75|Z|Fissure of Fury|N|Call Beatface (click on the rock) to expose the Aged Stone Container|PRE|35880|RANK|3|;7
+B Horned Skull|QID|35056|M|42.1,66.73|QO|1|N|Loot for some Garrison Resources.|RANK|3|Z|Fissure of Fury|ITEM|$934|
+K Gelgor of the Blue Flame|QID|36391|M|43.5,48.1;34.0,38.6|CS|T|Gelgor the Blue Flame|L|118230|N|Kill and loot for an ilvl 534 versatility trinket.|RANK|3|ITEM|118230|;in fissure of fury
+l Hardened Thornvine|QID|36720|M|36.71,51.45|Z|Fissure of Fury|N|This is in the room with Gelgor. Use Shredder (click on the vines) to expose the Ancient Titan Chest|RANK|3|;6 -
+l Odd Boulder|QID|36723|M|60.34,44.75|Z|Fissure of Fury|N|Call Beatface (click on the rock) to expose the Aged Stone Container|RANK|3|PRE|35880|;7
 C Fair Warning|QID|35128|M|30.78,75.97|US|;Z|;Fissure of Fury|
 A A Great Escape|QID|35210|M|34.72,66.66|N|From Goren Tunnel.|PRE|35041|;Z|;Fissure of Fury|
 C A Great Escape|QID|35210|M|34.72,66.66|NC|N|Click on the mound of dirt to clear the tunnel entrance.|;Z|;Fissure of Fury|
@@ -284,20 +286,23 @@ T Eye in the Sky|QID|35139|M|43.9,48.9|N|To Rexxar.|
 A Chains of Iron|QID|35136|M|43.9,48.9|N|From Rexxar.|PRE|35139|
 l Odd Boulder|QID|36726|M|41.76,45.27|N|Call Beatface (click on the rock) to expose the Aged Stone Container|RANK|3|PRE|35880|;9 - Gorgorok's Fall
 l Odd Boulder|QID|36722|M|45.62,49.31|N|Call Beatface (click on the rock) to expose the Aged Stone Container|RANK|3|PRE|35880|;9.1 - Valley of Destruction
-B Iron Supply Chest|QID|36618|M|42.77,44.42;43.7,42.5|CS|QO|1|N|Down inside Brak's Excavation (a cave). Loot for some Garrison Resources.|RANK|3|ITEM|$824|PRE|35880|
-B Sniper's Crossbow|QID|36634|M|45.0,42.6|QO|1|N|Pick up an ilvl 539 crossbow.|RANK|3|ITEM|118713|PRE|35880|;above/across from fissure of fury
+B Iron Supply Chest|QID|36618|M|42.77,44.42;43.7,42.5|CS|QO|1|N|Down inside Brak's Excavation (a cave). Loot for some Garrison Resources.|RANK|3|ITEM|$824|
+l Hardened Thornvine|QID|36001|M|42.91,43.49|N|This is NOT inside Brak's excavation, it is just above/behind the cave entrance. Use Shredder (click on the vines) to expose the Unknown Petrified Egg|RANK|3|;10 - Gronn Canyon/Brak's Excavation
+B Sniper's Crossbow|QID|36634|M|45.0,42.6|QO|1|N|Pick up an ilvl 539 crossbow.|RANK|3|ITEM|118713|;above/across from fissure of fury
 l Odd Boulder|QID|36733|M|44.57,43.02|N|Call Beatface (click on the rock) to expose the Ancient Ogre Cache|RANK|3|PRE|35880|;10.1 - between petrified rylak egg and crossbow
 B Petrified Rylak Egg |QID|36521|M|46.25,42.93|L|118707|N|Pick up for a bit of treasure.|RANK|3|ITEM|118707|PRE|35880|;gronn canyon
-K Rolkor|QID|36393|M|47.73,41.07|L|118211|N|Kill and loot for an ilvl 539 str trinket.|RANK|3|ITEM|118211|PRE|35880|
-K Greldrok the Cunning|QID|36186|M|46.8,43.2|T|Greldrok the Cunning|L|118210|N|Inside a cave, Kill and loot for an ilvl 534 str 1H Mace.|RANK|3|ITEM|118210|PRE|35880|
-l Odd Boulder|QID|36735|M|47.92,39.97|N|Call Beatface (click on the rock) to expose the Ancient Titan Chest|RANK|3|PRE|35880|;12 - Gronn Canyon
-B Warm Goren Egg|QID|36203|M|48.9,47.3|QO|1|N|In 7 days this will become a Goren Disguise (toy)|RANK|3|ACTIVE|35136;35807|ITEM|118716|PRE|35880|
+K Rolkor|QID|36393|T|Rolkor|M|47.73,41.07|L|118211|N|Kill and loot for an ilvl 539 str trinket.|RANK|3|ITEM|118211|
+l Hardened Thornvine|QID|36717|M|47.5,43.63|N|Use Shredder (click on the vines) to expose the Aged Stone Container|RANK|3|;11 - Gronn Canyon below Rolkar
+K Greldrok the Cunning|QID|36186|M|46.4,45.4;46.8,43.2|CS|T|Greldrok the Cunning|L|118210|N|Inside a cave, Kill and loot for an ilvl 534 str 1H Mace.|RANK|3|ITEM|118210|
+l Odd Boulder|QID|36735|M|47.92,39.97|N|Call Beatface (click on the rock) to expose the Ancient Titan Chest|RANK|3|PRE|35880|;12 - Gronn Canyon just before |US|Seedbearers
+B Warm Goren Egg|QID|36203|M|48.9,47.3|QO|1|N|In 7 days this will become a Goren Disguise (toy)|RANK|3|ACTIVE|35136;35807|ITEM|118716|
 
 C Chains of Iron|QID|35136|M|49.0,45.2;49.2,44.8|CS|QO|1|N|When you enter this valley, you first see Rexxar fighting some grunts, assist him, as he works his way towards Captain Brak. Eventually Nisha flys up and brings Capt. Brak to you. Kill her, then go over and loot the artifact.|
 C Chains of Iron|QID|35136|M|49.74,43.85;49.6,44.5|CS|QO|2|CHAT|N|After you have the artifact, optionally come back down and chat with Nisha for a ride back to your outpost.|
 
 A Reagents from Rakthoth|QID|33694|M|46.29,69.98|N|From Marrow. If you level, this quest will pop up, if you aren't in Beastwatch, just check it off manually, the guide will remind you to pick it up again later.|LVL|93|ACTIVE|35136|
 N Sparring Arena|QID|35880|ACTIVE|35880|N|What follows next is a running from flight path to flight path and getting a couple of followers.  If that doesn't interest you check these steps off until Run to Mistcreep Mire.  There are bonus objectives in these areas but no quests.|
+l Hardened Thornvine|QID|35971|M|47.01,69.06|N|Use Shredder (click on the vines) to expose the Forgotten Skull Cache|;20 - @ Beastwatch
 
 ;if lumber yard
 t The Razorbloom|QID|36474|M|46.59,71.49|N|To Draka.|
@@ -319,7 +324,6 @@ T Super Seeds|QID|35406|M|46.59,71.52|N|To Kaz the Shrieker.|
 A Cutter|QID|35430|M|46.59,71.52|N|From Kaz the Shrieker.|PRE|35406|
 A Pollen Power|QID|35429|M|46.58,71.52|N|From Kaz the Shrieker.|PRE|35406|
 l Hardened Thornvine|QID|36714|ACTIVE|35707|M|47.66,76.78|N|Use Shredder (click on the vines) to expose the Mysterious Petrified Pod|RANK|3|;21 - Deeproot
-
 R Evermorn Springs|QID|35430;36037|M|44.95,79.09|
 l Hardened Thornvine|QID|35981|ACTIVE|35707|M|45.31,81.99|N|Use Shredder (click on the vines) to expose the Unknown Petrified Egg|RANK|3|;20.1 - Deeproot
 C Pollen Power|QID|35429|M|44.94,81.70|N|These drop from the wasps (Golden Pollinators) and the Ravagers just outside of Evermorn Springs. Collect as you travel along the road outside of Evermorn on the way to Cutter.|
@@ -355,16 +359,16 @@ C Cut Them Down|QID|35433|M|39.81,80.80|US|
 T Cut Them Down|QID|35433|M|42.06,85.83|N|To Draka.|
 T The Life Spring|QID|35434|M|42.06,85.93|N|To Kaz the Shrieker.|
 A Thieving Dwarves|QID|36488|M|42.06,85.91|N|From Kaz the Shrieker.|PRE|35434|
-f Evermorn Springs|QID|35468;36037|M|41.32,87.16|N|At Chucklespine.|
+f Evermorn Springs|ALTFP|The Compost Heap|M|41.32,87.16|N|At Chucklespine.|
 R The Destroyed Expedition|QID|36037|M|44.86,86.72|N|This is to pick up a follower, if followers don't interest you following the road east to Bastion Rise is more direct.|RANK|2|
-A A Centurian Without a Cause|QID|36037|M|44.86,86.72|RANK|2|N|Assist Centurian Tormark with the waves of mobs. The final mob is Woodfist.  When they are defeated, wait a few seconds and he will offer to be your follower. Its safer to run back to Evermorn Rise (where you just got the flight path) and run on to Bastion Rise from there, but you can go from here, just more mobs in the way.|
+A A Centurion Without a Cause |QID|36037|M|44.86,86.72|RANK|2|N|Assist Centurian Tormark with the waves of mobs. The final mob is Woodfist.  When they are defeated, wait a few seconds and he will offer to be your follower. Its safer to run back to Evermorn Rise (where you just got the flight path) and run on to Bastion Rise from there, but you can go from here, just more mobs in the way.|
 l Hardened Thornvine|QID|36019|ACTIVE|35707|M|45.8,89.27|N|Use Shredder (click on the vines) to expose the Forgotten Skull Cache|RANK|3|;25.1 - Tailthrasher Basin
 K Sunclaw|QID|36656|M|44.6,92.2|T|Sunclaw|L|118223|N|There are ropes you can click on to climb up the rock formation. Kill and loot for an ilvl 533 agi fist weapon.|RANK|3|ITEM|118223|;just before blook
 
 R Deeproot|QID|34279;34279|RANK|2|M|42.74,90.76|CC|N|Take the trail up here to find another follower.|
 R Blook's Overlook|QID|34279|RANK|2|M|42.30,92.16|N|Continue up the winding trail.|
 N Blook|QID|34279|RANK|2|CHAT|M|41.27,91.44|N|Chat with him to challenge him.  When you win, he will offer to be your follower. He despawns in about 15 seconds and you will have to wait to fight him again if you don't accept quick enough.|
-A I am Blook|QID|34279|RANK|2|M|41.27,91.44|N|If he despawns before you accecpt the quest you will have to fight him again when he respawns.|
+A I Am Blook |QID|34279|RANK|2|M|41.27,91.44|N|If he despawns before you accecpt the quest you will have to fight him again when he respawns.|
 B Ockbar's Pack |QID|34241|M|43.1,92.9|L|118227|N|Pick up for a bit of treasure.|RANK|3|ITEM|118227|
 l Hardened Thornvine|QID|35975|ACTIVE|35707|M|45.97,93.56|N|Use Shredder (click on the vines) to expose the Remains of Explorer Engineer Toldirk Ashlamp|RANK|3|;25 - Tailthrasher Basin/Bastian Rise
 
@@ -386,10 +390,10 @@ C Iyu|QID|35510|M|47.41,92.35|N|Run back outside of the Bastion and defeat Iyu.|
 T Iyu|QID|35510|M|47.71,93.31|N|To Draka.|
 A Power of the Genesaur|QID|35416|M|47.71,93.31|N|From Draka.|PRE|35509|
 A Kaz the Shrieker|QID|35511|M|47.78,93.27|N|This grants you Kaz as a follower.|PRE|35510|
-f Bastion Rise|QID|33694|M|47.44,90.79|N|Grab the flight path while you are here.|
+f Bastion Rise|M|47.44,90.79|N|Grab the flight path while you are here.|
 
 l Hardened Thornvine|QID|35968|ACTIVE|35707|M|49.65,78.82|N|Use Shredder (click on the vines) to expose the Forgotten Ogre Cache|RANK|3|;28 - Ruins of the First Bastian
-R The Forgotten Cave|QID|36713|M|51.37,77.75|N|Right after you leave Ruins of the First Bastion Rise, go up the hill to the Forgotten cave. You may as well do the bonus objective while you are getting to the vine and the dagger.|RANK|3|
+R The Forgotten Caves|QID|36713|M|51.37,77.75|N|Right after you leave Ruins of the First Bastion Rise, go up the hill to the Forgotten cave. You may as well do the bonus objective while you are getting to the vine and the dagger.|RANK|3|
 l Hardened Thornvine|QID|36713|ACTIVE|35707|M|53.01,79.03|N|Use Shredder (click on the vines) to expose the Unknown Petrified Egg|RANK|3|;28.1 - The Forgotten Cave
 B Strange Looking Dagger |QID|34940|M|53.0,80.0|QO|1|N|In the back of The Forgotten Cave, Pick up for a bit of treasure. You can jump up from the rock.|RANK|3|ITEM|118718|
 R Darksting Cave|QID|34726|M|52.16,76.81|N|Exit the Forgotten Cave and Right next to it is Darksting Cave.|RANK|3|
@@ -405,8 +409,8 @@ L Level 93|QID|35667|LVL|93|N|If you aren't level 93 do some bonus quests (or so
 H Beastwatch|QID|35667|M|47.44,90.79|N|Hearth or Fly back to Beastwatch.|RANK|2|
 A Reagents from Rakthoth|QID|33694|M|46.29,69.98|N|From Marrow.|LVL|93|RANK|2|
 R Mistcreep Mire|QID|35667|M|54.45,66.65|N|There is really no nice straight path over there, so check your map and go towards the waypoint.|RANK|2|
-l Hardened Thornvine|QID|36715|ACTIVE|35707|M|51.76,69.13|N|Use Shredder (click on the vines) to expose the Mysterious Petrified Pod|RANK|3|;31 - Mistcreep Mire
-l Odd Boulder|QID|36738|M|50.32,66.57|N|Call Beatface (click on the rock) to expose the Ancient Titan Chest|RANK|3|PRE|35880|;30 - Mistcreep Mire
+l Hardened Thornvine|QID|36715|M|51.76,69.13|N|Use Shredder (click on the vines) to expose the Mysterious Petrified Pod|RANK|3|;31 - Mistcreep Mire
+l Odd Boulder|QID|36738|M|50.32,66.57|N|Call Beatface (click on the rock) to expose the Ancient Titan Chest|RANK|3|;30 - Mistcreep Mire
 K Khargax the Devourer|QID|35819|M|52.4,65.8|L|113460|N|This is an elite mob, it is meant to be killed in a group. Kill and loot item for a bonus quest.|T|Khargax the Devourer|RANK|3|
 A Trophy of Glory: Khargax the Devourer|QID|35819|O|U|113460|M|52.4,65.8|N|From 'Shimmering Scale' you just looted.|
 B Odd Skull|QID|36509|M|52.5,66.9|QO|1|N|Pick up for a bit of treasure.|RANK|3|ITEM|118717|;mistcreep mire
@@ -615,7 +619,7 @@ t Proof of Strength: Ogron Horn|QID|36076|M|46.29,69.31|N|To Limbflayer.|
 t Proof of Strength: Ravager Claw|QID|36097|M|46.29,69.31|N|To Limbflayer.|
 C Strike While the Iron is Hot|QID|36573;36574|QO|1|M|46.0,69.2|CHAT|N|At Grinslicer (flightmaster}. This is the chat option, NOT an actual flightpath.|
 C Strike While the Iron is Hot|QID|36573;36574|QO|2|M|44.7,17.8|CHAT|N|Talk to Draka to begin. \nUse your extra action button to release the artifact, keep doing it as it comes off cooldown. \nKeep fighting until the scenario finishes.
-f The Iron Approach|QID|36573;36574|M|43.02,20.22|N|At Nisha.|ACTIVE|36573;36574|
+f The Iron Approach|M|43.02,20.22|N|At Nisha.|ACTIVE|36573;36574|
 F Beastwatch|QID|36573;36574|M|43.02,20.22|N|At Nisha. Fly back to Beastwatch to turn in. It's a little faster to hearth if you want.|ACTIVE|36573;36574|
 T Strike While the Iron is Hot|QID|36573;36574|M|46.09,70.19|N|To Durotan. Your reward is a book that allows the purchase of a level 2 small or medium garrison building plan in Ashran. There is a breadcrumb quest to lead you there in a few steps.|
 
@@ -661,7 +665,7 @@ C Safe Passage|QID|34216|M|31.8,11.8|Z|Frostfire Ridge|CHAT|N|Walk with Cordana 
 T Safe Passage|QID|34216|M|31.8,11.8|Z|Frostfire Ridge|N|To Farseer Urquan.|
 A What Must Be Done|QID|34227|M|31.8,11.8|Z|Frostfire Ridge|N|From Farseer Urquan.|PRE|34216|RANK|3|
 A A Clew of Worms|QID|34228|M|31.8,11.8|Z|Frostfire Ridge|N|From Cordana Felsong.|PRE|34216|RANK|3|
-f Throm'var|QID|34228|M|31.8,9.5|Z|Frostfire Ridge|N|At Jonnock Hewndawn.|RANK|3|
+f Throm'var|M|31.8,9.5|Z|Frostfire Ridge|N|At Jonnock Hewndawn.|RANK|3|
 C A Clew of Worms|QID|34228|M|28.1,15.1|Z|Frostfire Ridge|S|N|Take out the little worms as you are traveling towards the Wolf Mother.|
 K Mother of Wolves|QID|34228|M|28.1,15.1|Z|Frostfire Ridge|T|Mother of Wolves|L|106237|ACTIVE|34228|RANK|3|
 C A Clew of Worms|QID|34228|M|29.6,9.5|Z|Frostfire Ridge|US|N|Find and finish off any worms you still need.|
