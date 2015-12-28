@@ -79,21 +79,18 @@ function WoWPro:dbp(message,...)
 end
 WoWPro:Export("dbp")
 
+function WoWPro:print(message,...)
+	if message ~= nil then
+	    local msg = string.format("|c7f0000ff%s|r: "..message, self.name or "Wow-Pro",...)
+	    WoWPro:Add2Log(2,msg)
+	end
+end
+WoWPro:Export("print")
+
 -- WoWPro print function --
-local print_text_table = {}
 function WoWPro:Print(message,...)
 	if message ~= nil then
-		wipe(print_text_table)
-		for i=1,select('#', ...) do
-			local v = select(i, ...);
-			if (type(v) == "string") then
-				print_text_table[i] = v:gsub("[|]", "||")
-			else
-				print_text_table[i] = v 
-			end
-		end
-
-	    local msg = string.format("|c7fffff7f%s|r: "..message, self.name or "Wow-Pro",unpack(print_text_table))
+	    local msg = string.format("|c7fffff7f%s|r: "..message, self.name or "Wow-Pro",...)
         WoWPro:Add2Log(0,msg)
 	end
 end
@@ -339,6 +336,7 @@ function WoWPro:OnInitialize()
 	    WoWProCharDB.EnableGrail = true
 	end
 	WoWProCharDB.Trades  = WoWProCharDB.Trades or {}
+	WoWProCharDB.GuideStack  = WoWProCharDB.GuideStack or {}
 	if WoWProCharDB.Enabled == nil then
 	    WoWProCharDB.Enabled = true
 	end

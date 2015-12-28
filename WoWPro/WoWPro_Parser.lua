@@ -287,7 +287,7 @@ end)
 DefineTag("NOBUFF","nobuff","string",nil,nil)
 
 
-function WoWPro.ParseQuestLine(faction, zone, i, text)
+function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	local GID = WoWProDB.char.currentguide
 		
 		
@@ -325,7 +325,8 @@ function WoWPro.ParseQuestLine(faction, zone, i, text)
 
     -- Now make sure it is a valid action!
     if not WoWPro.actionlabels[WoWPro.action[i]] then
-	    WoWPro:Error("Line %d in guide %s has an invalid action: '%s'",i,GID,WoWPro.action[i])
+		err("Invalid action label %s at line %d in guide %s: \"%s\"\nParsing Halted.",WoWPro.action[i],realline,GID,tostring(text))
+		--WoWPro:Error("Invalid action label %s at line %d in guide %s: \"%s\"\nParsing Halted.",WoWPro.action[i],realline,GID,tostring(text))
 	    return    
     end
 
