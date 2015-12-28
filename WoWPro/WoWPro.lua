@@ -269,7 +269,7 @@ local defaults = { profile = {
 	autoload = true,
 	guidescroll = false,
 	checksound = true,
-	checksoundfile = [[Sound\Interface\MapPing.wav]],
+	checksoundfile = [[Sound\Interface\MapPing.ogg]],
 	rank = 2,
 	resize = false,
 	autoresize = true,

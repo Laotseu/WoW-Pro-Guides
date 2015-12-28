@@ -226,12 +226,6 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 						QID = tonumber(QID)
 						local quest_log_index = WoWPro.QuestLog[QID]
 
-				        -- if WoWPro.CompletingQuest and action == "T" and not completion and WoWPro.missingQuest == QID then
-			           -- WoWPro.CompleteStep(i,"AutoCompleteQuestUpdate: quest turn-in.")
-					       --  WoWProCharDB.completedQIDs[QID] = true
-					       --  WoWPro.CompletingQuest = false
-				        -- end
-				
 				      -- A quest was just abandoned, all the related steps that were marked
 				      -- as completed need to be unmarked
 						if WoWPro.abandonedQID == QID and
@@ -244,30 +238,11 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 								WoWPro:UpdateGuide()
 								WoWPro:UpdateQuestTracker()
 							end
-						
-						  
-						  -- -- Abandoned Quests --
-				    --     if not WoWPro.CompletingQuest and ( action == "A" or action == "C" ) 
-				    --     and completion and WoWPro.missingQuest == QID then
-					   --      WoWProCharDB.Guide[GID].completion[i] = nil
-					   --      WoWPro:UpdateGuide()
-					   --      WoWPro:MapPoint()
-				    --     end
-				
-	                    -- Quest AutoComplete --
-	                    -- if questComplete and (action == "A" or action == "C" or action == "T" or action == "N") and QID == questComplete then
-                       -- WoWPro.CompleteStep(i, "AutoCompleteQuestUpdate: AutoComplete")
-	                    -- end
 	               
 	               -- Quests that are in the current log have been accepted
 	               elseif action == "A" and quest_log_index and not completion then
 	               	WoWPro.CompleteStep(i, nil, true)
 
-				        -- -- Quest Accepts --
-				        -- if WoWPro.newQuest == QID and action == "A" and not completion then
-					       --  WoWPro.CompleteStep(i)
-				        -- end
-				
 						-- Quest Completion: Any C, K or l step is considered completed if the quest is completed
 						elseif (action == "C" or action == "K" or action == "l") and not completion and quest_log_index and select(6,GetQuestLogTitle(quest_log_index)) == 1 then
 							WoWPro.CompleteStep(i, nil, true)
@@ -278,11 +253,6 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 								 (WoWProCharDB.Taxi[WoWPro.step[i]] or (WoWPro.altfp[i] and WoWProCharDB.Taxi[WoWPro.altfp[i]])) then
 							WoWPro.CompleteStep(i, nil, true)
 
-				        -- -- Quest Completion --
-				        -- if WoWPro.QuestLog[QID] and action == "C" and not completion and WoWPro.QuestLog[QID].complete then
-					       --  WoWPro.CompleteStep(i)
-				        -- end
-				
 						-- Partial Completion --
 						elseif not completion and WoWPro.QuestLog[QID] and WoWPro.questtext[i] and quest_log_index and GetNumQuestLeaderBoards(quest_log_index) > 0 then
 							local numquesttext = select("#", (";"):split(WoWPro.questtext[i]))
@@ -312,24 +282,6 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 								WoWPro.CompleteStep(i, nil, true)
 							end --if the step has not been found to be incomplete, run the completion function
 						end
-
-				        -- -- Partial Completion --
-				        -- if WoWPro.QuestLog[QID] and WoWPro.QuestLog[QID].leaderBoard and WoWPro.questtext[i] 
-				        -- and not WoWProCharDB.Guide[GID].completion[i] then 
-					       --  local numquesttext = select("#", string.split(";", WoWPro.questtext[i]))
-					       --  local complete = true
-					       --  for l=1,numquesttext do
-						      --   local lquesttext = select(numquesttext-l+1, string.split(";", WoWPro.questtext[i]))
-						      --   local lcomplete = false
-						      --   for _, objective in pairs(WoWPro.QuestLog[QID].leaderBoard) do --Checks each of the quest log objectives
-							     --    if lquesttext == objective then --if the objective matches the step's criteria, mark true
-								    --     lcomplete = true
-							     --    end
-						      --   end
-						      --   if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
-					       --  end
-					       --  if complete then WoWPro.CompleteStep(i) end --if the step has not been found to be incomplete, run the completion function
-				        -- end
 				   end
 			   end
 			end		

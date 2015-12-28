@@ -1101,7 +1101,7 @@ function WoWPro:NextStep(k,i)
 		end
 
 
-		skip = WoWPro[WoWPro.Guides[GID].guidetype]:NextStep(k, skip)
+		--skip = WoWPro[WoWPro.Guides[GID].guidetype]:NextStep(k, skip)
 				
 	until true
 	if skip then k = k+1 end
@@ -1114,7 +1114,7 @@ function WoWPro:NextStep(k,i)
 		
 	end
 	
-	WoWPro.why[k] = "NextStep(): Step active."
+	--WoWPro.why[k] = "Current Step"
 	WoWPro:dbp("%s=WoWPro.NextStep()",tostring(k))
 	return k
 end
@@ -1154,7 +1154,7 @@ function WoWPro.CompleteStep(step, why, manual)
 	end
 	WoWPro:dbp("WoWPro.CompleteStep(%d,%s[%s],'%s')",step,WoWPro.action[step], WoWPro.step[step], why)
 	WoWPro.why[step] = why
-	WoWProCharDB.Guide[GID].completion[step] = why
+	WoWProCharDB.Guide[GID].completion[step] = why or true
 	for i,row in ipairs(WoWPro.rows) do
 		if WoWProCharDB.Guide[GID].completion[row.index] then
 			row.check:SetChecked(true)
@@ -1184,7 +1184,7 @@ function WoWPro.CompleteStep(step, why, manual)
 	    WoWPro:dbp("WoWPro.CompleteStep: jumping from %s to %s.",GID, nGID)
 	    WoWPro:LoadGuide(nGID)
 	end
-	if why then WoWPro.why[step] = why end
+	--if why then WoWPro.why[step] = why end
 	WoWPro:UpdateGuide("WoWPro.CompleteStep")
 	-- WoWPro:MapPoint()
 end
