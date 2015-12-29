@@ -235,7 +235,7 @@ end)
 DefineTag("US","unsticky","boolean",nil,nil)
 DefineTag("U","use","number",nil,nil)
 DefineTag("L","lootitem","string",nil,function (text,i)
-    _, _, WoWPro.lootitem[i], WoWPro.lootqty[i] = text:find("(%d+)%s?(%d*)|");
+   WoWPro.lootitem[i], WoWPro.lootqty[i] = select(3,text:find("(%d+)%s?(%d*)"))
 	if WoWPro.lootitem[i] then
     	if tonumber(WoWPro.lootqty[i]) ~= nil then
     	    WoWPro.lootqty[i] = tonumber(WoWPro.lootqty[i])
@@ -282,7 +282,7 @@ DefineTag("GEN",nil,"string",nil,function (value,i) end)  -- Swallow Gen tags
 -- Added by LaoTseu
 DefineTag("DAILY",daily,"boolean",nil,function(value,i) WoWPro:SetSessionDailyQuests(WoWPro.QID[i]) end)   
 DefineTag("ALTFP","level","string",nil,function(value,i)
-	WoWPro.altfp[i] = (WoWPro.altfp[i]):format(_G.UnitName("player")) -- Hack for the Draenor garisson
+	WoWPro.altfp[i] = (value):format(_G.UnitName("player")) -- Hack for the Draenor garisson
 end)
 DefineTag("NOBUFF","nobuff","string",nil,nil)
 
