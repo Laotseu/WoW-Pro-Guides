@@ -708,7 +708,7 @@ C The Clothes on Their Backs|QID|36266|N|Finish killing and loot the Shadowmoon 
 
 T Escape From Shaz'gul |QID|33081|N|To Yrel, now in Twilight Glade.|M|40.6,54.9|
 A Chasing Shadows |QID|33586|N|From Prophet Velen|M|40.53,54.91|PRE|33081+33059|
-A Fast Expansion|QID|33814|M|40.65,54.87|N|From Scout Valdez.|PRE|33081|
+A Fast Expansion|QID|33814|M|40.65,54.87|N|From Scout Valdez.|PRE|33081|LEAD|36592|
 
 H Lunarfall |QID|33814|N|Use your Garrison Hearthstone, or fly back to your garrison.|U|110560|
 T Fast Expansion|QID|33814|M|41.53,49.27|Z|Lunarfall|N|To Baros Alexston.|
@@ -718,7 +718,7 @@ T Bigger is Better |QID|36592|M|31.8,31.2|Z|Lunarfall|N|To Baros Alexston.|
 
 A Things Are Not Goren Our Way |QID|34192|N|From Timothy Leens|M|65.46,41.79|Z|Lunarfall|PRE|36592|
 C Things Are Not Goren Our Way |QID|34192|N|Kill the Lunarfall Goren (both Red and Yellow count).|M|65.46,41.79|Z|Lunarfall|S|QO|1|
-K Stonetooth |QID|34192|T|Stonetooth|N|Head to the back of the mine and kill Stonetooth.|M|58.81,78.85|Z|Lunarfall Excavation@Lunarfall|T|Stonetooth|QO|2|
+K Stonetooth |QID|34192|T|Stonetooth|N|Head to the back of the mine and kill Stonetooth.|M|58.81,78.85|Z|Lunarfall Excavation@Lunarfall|QO|2|
 C Things Are Not Goren Our Way |QID|34192|N|Kill the Lunarfall Goren (both Red and Yellow count).|M|65.46,41.79|Z|Lunarfall|US|QO|1|
 T Things Are Not Goren Our Way |QID|34192|N|To Timothy Leens|M|65.46,41.79|Z|Lunarfall|
 

@@ -337,9 +337,9 @@ T Go With The Flow|QID|13877|M|52.09,56.54|N|To Sabina Pilgrim.|
 
 A Hot Lava|QID|13880|M|52.23,56.55|N|From Core.|
 A Put Out The Fire|QID|13884|M|52.14,56.71|N|From Arctanus.|
-C Hot Lava|QID|13880|S|U|46352|M|50.12,51.85|N|Use the Gift of the Earth, and target a Lava Fissure.|
+C Hot Lava|QID|13880|S|NC|U|46352|M|50.12,51.85|N|Use the Gift of the Earth, and target a Lava Fissure.|
 C Put Out The Fire|QID|13884|M|49.78,47.06|N|Kill 10 Lava Ragers.|
-C Hot Lava|QID|13880|US|U|46352|M|49.78,47.06|N|Finish filling Lava Fissures.
+C Hot Lava|QID|13880|US|NC|U|46352|M|49.78,47.06|N|Finish filling Lava Fissures.
 T Hot Lava|QID|13880|M|52.22,56.47|N|To Core.|
 T Put Out The Fire|QID|13884|M|52.19,56.76|N|To Arctanus.|
 A Vortex|QID|13886|M|52.33,56.89|N|From The Vortex.|
@@ -374,10 +374,10 @@ A Dryad Delivery|QID|26476|M|36.61,49.66|N|From Raene Wolfrunner.|
 T Dryad Delivery|QID|26476|M|59.20,59.67|N|To Shael'dryn.|
 A Search the Bole|QID|26477|M|59.20,59.67|N|From Shael'dryn.|
 l Wooden Key|QID|26477|M|55.80,33.88|N|Head towards the waypoint. Kill treants as you go, until one drops a Wooden Key.|L|5475|
-R The Howling Vale|QID|26477|M|54.34,36.40;55.8,37|CC|N|Head towards the Howling Vale.|
-C Search the Bole|QID|26477|M|54.51,37.22;55.02,40.66|CS|N|Head through the cave and open the Worn Chest.|
+;R The Howling Vale|QID|26477|M|54.34,36.40;55.8,37|CC|N|Head towards the Howling Vale.|
+C Search the Bole|QID|26477|M|55.4,34.7;;54.51,37.22;55.02,40.66|CS|N|Head towards the Howling Vale, Once there, gead through the cave and open the Worn Chest.|
 
-R Optional Step : Read Carefully|QID|26477|M|51.50,80.54|Z|Felwood|N|If you wish to do felwood later follow you arrow to the flight point. It is dangerous, but worth it. Collect the flight path once there. If you dont want to, or have the Flight Path already, skip this step by clicking the check mark.|
+f Emerald Sanctuary|QID|26477|M|51.50,80.54|Z|Felwood|N|If you wish to do felwood later follow you arrow to the flight point. It is dangerous, but worth it. Collect the flight path once there. If you dont want to, or have the Flight Path already, skip this step by clicking the check mark.|O|
 
 T Search the Bole|QID|26477|M|59.12,59.75|N|To Shael'dryn.|
 A Playing Possum|QID|26478|M|59.12,59.75|N|From Shael'dryn.|
@@ -411,12 +411,12 @@ A Ze Gnomecorder|QID|25607|M|35.28,71.30|N|From Professor Xakxak Gyromate.|
 A The Goblin Braintrust|QID|13979|M|35.07,71.55|N|From Huntress Jalin.|
 A They Took Our Gnomes|QID|13913|M|35.13,71.69|N|From Huntress Jalin.|
 
-f Stardust Spire|QID|13913|M|35.06,72.02|N|At Myre Moonglide.|
+f Stardust Spire|M|35.06,72.02|N|At Myre Moonglide.|
 r Repair/Sell|QID|26470|M|34.71,71.31|N|From the Boyer in the tower.|
 
-C Retaking Mystral Lake|QID|26470|M|52.78,71.67|N|Kill elementals until you're done.|S|
-K Tidress|QID|26470|M|48.23,70.63|QO|Tideress slain: 1/1|N|Kill Tidress on the isle.|
-C Retaking Mystral Lake|QID|26470|M|52.78,71.67|N|Kill elementals until you're done.|US|
+C Retaking Mystral Lake|QID|26470|QO|1|M|52.78,71.67|N|Kill elementals until you're done.|S|
+K Tidress|QID|26470|T|Tidress|M|48.23,70.63|QO|2|N|Kill Tidress on the isle.|
+C Retaking Mystral Lake|QID|26470|QO|1|M|52.78,71.67|N|Kill elementals until you're done.|US|
 T Dartol's Rod|QID|26480|M|53.07,71.67;54.00,73.93;50.89,75.07|CS|N|Do not Kill Krolg, use the rod then turn the quest into Krolg.|U|46739|
 A King of the Foulweald|QID|13989|M|50.89,75.07|N|From Krolg.|
 T Report from the Northern Front|QID|26456|M|61.88,83.85|N|To Sentinel Farsong. This step is has no follow ups and low XP, but DOES count toward Loremaster.|RANK|3|
@@ -427,10 +427,10 @@ C A New Adornment|QID|26481|M|54.70,79.62|N|Kill and loot Ran Bloodtooth to get 
 T A New Adornment|QID|26481|M|50.90,75.08|N|To Krolg.|
 A True Power of the Rod|QID|26482|M|50.90,75.08|N|From Krolg.|
 
-C True Power of the Rod|QID|26482|NC|U|46781|M|50.01,59.73|N|Run to near the Furblog Cage, kill the guard by that cage, then use the rod. Talk to Ota Wen and then enjoy the carnage.|
+C True Power of the Rod|QID|26482|CHAT|U|46781|M|50.01,59.73|N|Run to near the Furblog Cage, kill the guard by that cage, then use the rod. Talk to Ota Wen and then enjoy the carnage.|
 C Ze Gnomecorder|QID|25607|S|M|47.15,65.01|N|Kill and loot Goblin Technicians, to get the Filthy Goblin Technology.|
 C They Took Our Gnomes|QID|13913|M|43.29,63.52|N|Look for the (badly driven) caravan, and kill the driver.|S|
-C The Goblin Braintrust|QID|13979|M|46.18,61.58|N|Kill and loot Chief Bombgineer Sploder.|
+K Chief Bombgineer Sploder|QID|13979|T|Chief Bombgineer Sploder|M|46.18,61.58|N|Kill and loot Chief Bombgineer Sploder.|
 A They Set Them Up The Bomb!|QID|13981|M|46.27,61.29|N|This is on the roof of the construct you are currently on top of.|
 C Ze Gnomecorder|QID|25607|US|M|46.46,61.31|N|Finish getting pieces of Filthy Goblin Technology.|
 C They Took Our Gnomes|QID|13913|M|43.29,63.52|N|Look for the (badly driven) caravan, and kill the driver.|US|
