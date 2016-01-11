@@ -134,13 +134,14 @@ function WoWPro:SkipStep(index)
 	if WoWPro.action[index] == "A" 
 	or WoWPro.action[index] == "C" 
 	or WoWPro.action[index] == "T" then
-	    local numqids = select("#", string.split(";", WoWPro.QID[j]))
-	    for k=1,numqids do
-	        local kqid = select(numqids-k+1, string.split(";", WoWPro.QID[j]))
-	        if tonumber(kqid) then
-	            WoWProCharDB.skippedQIDs[tonumber(kqid)] = true
-	        end
-	    end
+	    -- local numqids = select("#", string.split(";", WoWPro.QID[j]))
+	    -- for k=1,numqids do
+	    --     local kqid = select(numqids-k+1, string.split(";", WoWPro.QID[j]))
+	    --     if tonumber(kqid) then
+	    --         WoWProCharDB.skippedQIDs[tonumber(kqid)] = true
+	    --     end
+	    -- end
+	   WoWPro:SetQIDsInTable(WoWPro.QID[j],WoWProCharDB.skippedQIDs)
 		WoWProCharDB.Guide[GID].skipped[index] = true
 		WoWPro:dbp("Skipping step %d", index)
 	else 
@@ -160,7 +161,8 @@ function WoWPro:SkipStep(index)
 						if WoWPro.action[j] == "A" 
 						or WoWPro.action[j] == "C" 
 						or WoWPro.action[j] == "T" then
-							WoWProCharDB.skippedQIDs[WoWPro.QID[j]] = true
+							-- WoWProCharDB.skippedQIDs[WoWPro.QID[j]] = true
+							WoWPro:SetQIDsInTable(WoWPro.QID[j],WoWProCharDB.skippedQIDs)	
 						end
 						steplist = steplist.."- "..WoWPro.step[j].."\n"
 						skipstep(j)
@@ -185,14 +187,15 @@ function WoWPro:UnSkipStep(index)
 	and ( WoWPro.action[index] == "A" 
 		or WoWPro.action[index] == "C" 
 		or WoWPro.action[index] == "T" ) then
-    		local numqids = select("#", string.split(";", WoWPro.QID[j]))
-    	    for k=1,numqids do
-    	        local kqid = select(numqids-k+1, string.split(";", WoWPro.QID[j]))
-    	        if tonumber(kqid) then
-    	            WoWProCharDB.skippedQIDs[tonumber(kqid)] = nil
-    	        end
-    	    end
-			WoWProCharDB.Guide[GID].skipped[index] = nil
+   --  		local numqids = select("#", string.split(";", WoWPro.QID[index]))
+   --  	    for k=1,numqids do
+   --  	        local kqid = select(numqids-k+1, string.split(";", WoWPro.QID[index]))
+   --  	        if tonumber(kqid) then
+   --  	            WoWProCharDB.skippedQIDs[tonumber(kqid)] = nil
+   --  	        end
+   --  	    end
+			-- WoWProCharDB.Guide[GID].skipped[index] = nil
+			WoWPro:WipeQIDsInTable(WoWPro.QID[index],WoWProCharDB.skippedQIDs)
 	else
 		WoWProCharDB.Guide[GID].skipped[index] = nil
 	end
@@ -206,7 +209,8 @@ function WoWPro:UnSkipStep(index)
 					if WoWPro.action[j] == "A" 
 					or WoWPro.action[j] == "C" 
 					or WoWPro.action[j] == "T" then
-						WoWProCharDB.skippedQIDs[WoWPro.QID[j]] = nil
+						-- WoWProCharDB.skippedQIDs[WoWPro.QID[j]] = nil
+						WoWPro:WipeQIDsInTable(WoWPro.prereq[j],WoWProCharDB.skippedQIDs)
 					end
 					WoWProCharDB.Guide[GID].skipped = {}
 					unskipstep(j)
@@ -853,6 +857,15 @@ function WoWPro:RowUpdate(offset)
 		local unsticky = WoWPro.unsticky[k] 
 		local use = WoWPro.use[k] 
 		local zone = WoWPro.zone[k] 
+		local floor = 0
+
+		-- Extract the floor if present
+		if zone and (zone:match("/") or zone:match(";")) then
+			zone, floor = string.split("/;",zone)
+		end
+		if tonumber(zone) then
+			zone = GetMapNameByID(zone)
+		end
 
 		local questtext = WoWPro.questtext[k] 
 		local optional = WoWPro.optional[k] 
@@ -903,7 +916,7 @@ function WoWPro:RowUpdate(offset)
 		row.step:SetText(step)
 		row.track:SetText("")
 		if step then row.check:Show() else row.check:Hide() end
-		if completion[k] or WoWProCharDB.Guide[GID].skipped[k] or WoWProCharDB.skippedQIDs[WoWPro.QID[k]] then
+		if completion[k] or WoWProCharDB.Guide[GID].skipped[k] or WoWPro:QIDsInTable(WoWPro.QID[k],WoWProCharDB.skippedQIDs) then
 			row.check:SetChecked(true)
 			if WoWProCharDB.Guide[GID].skipped[k] or WoWPro:QIDsInTable(WoWPro.QID[k],WoWProCharDB.skippedQIDs) then
 				row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")

@@ -609,7 +609,10 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 					crazy = true,
 					})
 
-				if eric_map then err("zm = %s, zf = %s, x/100 = %s, y/100 = %s, uid = %s",zm, zf,x/100, y/100, uid) end
+				if eric_map then 
+					err("zm = %s, zf = %s, x/100 = %s, y/100 = %s, uid = %s",zm, zf,x/100, y/100, uid) 
+					eric_uid = uid
+				end
 
 			end
 			--err("Add WP: j = %s / %s, x = %s, y = %s, zm = %s, zf = %s, uid_x = %s, uid_y = %s, title = %s", j, numcoords, x, y, zm, zf, uid[3], uid[4], desc)

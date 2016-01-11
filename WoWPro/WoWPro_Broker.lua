@@ -6,6 +6,7 @@ local _G = getfenv(0)
 local WoWPro = _G.WoWPro
 
 local L = WoWPro_Locale
+local HBD = WoWPro.HBD
 local OldQIDs, CurrentQIDs, NewQIDs, MissingQIDs
 
 local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
@@ -78,7 +79,7 @@ end
 
 -- Wipe out all the QIDs in the table.
 function WoWPro:WipeQIDsInTable(IDs,tabla)
-    return QidMapReduce(IDs,false,"&",";",function (qid) tabla[qid] = nil; return true; end)
+    return QidMapReduce(IDs,false,"&",";",function (qid) tabla[qid] = nil; tabla[tostring(qid)] = nil return true; end)
 end
 
 -- Set all the QIDs in the table.
@@ -90,9 +91,9 @@ end
 
 -- See if any of the list of QUIDs are in the indicated table.
 function WoWPro:QIDsInTable(QIDs,tabla)
-    if not QIDs or QIDs == "" then return false end
-    local numQIDs = select("#", string.split(";", QIDs))
-    local default = false
+   if not QIDs or QIDs == "" then return false end
+   local numQIDs = select("#", string.split(";", QIDs))
+   local default = false
 	for j=1,numQIDs do
 		local QID = select(numQIDs-j+1, string.split(";", QIDs))
 		QID = tonumber(QID)
@@ -101,13 +102,13 @@ function WoWPro:QIDsInTable(QIDs,tabla)
 		    QID=0
 		end
 		if QID >= 0 then
-            if tabla[QID] then return true end
-            default = false
-        else
-            if tabla[-QID] then return false end
-            default = true
-        end
-    end
+         if tabla[QID] or tabla[tostring(QID)] then return true end
+         default = false
+      else
+         if tabla[-QID] or tabla[tostring(-QID)] then return false end
+         default = true
+      end
+   end
 	return default
 end
 
@@ -577,7 +578,8 @@ function WoWPro:NextStep(k,i)
         		    WoWPro.why[k] = ("NextStep(): None of possible prereqs were met. ||PRE||%s||"):format(WoWPro.prereq[k])
         		    WoWProCharDB.Guide[GID].skipped[k] = true
         		    if WoWPro.action[k] == "A" then
-        		    	WoWProCharDB.skippedQIDs[QID] = true
+        		    	-- WoWProCharDB.skippedQIDs[QID] = true
+        		    	WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
         		    end
         		    break
         		end
@@ -591,7 +593,8 @@ function WoWPro:NextStep(k,i)
         				WoWPro.why[k] = "NextStep(): Not all of the prereqs were met: " .. WoWPro.prereq[k]
         				WoWProCharDB.Guide[GID].skipped[k] = true
         				if WoWPro.action[k] == "A" then
-        					WoWProCharDB.skippedQIDs[QID] = true
+        					-- WoWProCharDB.skippedQIDs[QID] = true
+        					WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
         				end
         				break
         			end
@@ -614,7 +617,8 @@ function WoWPro:NextStep(k,i)
     				if WoWPro.action[k] == "A" 
     				or WoWPro.action[k] == "C" 
     				or WoWPro.action[k] == "T" then
-    					WoWProCharDB.skippedQIDs[QID] = true
+    					-- WoWProCharDB.skippedQIDs[QID] = true
+    					WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
     					WoWProCharDB.Guide[GID].skipped[k] = true
     				else
     					WoWProCharDB.Guide[GID].skipped[k] = true
@@ -703,7 +707,9 @@ function WoWPro:NextStep(k,i)
 	   if (WoWPro.action[k] == "F" or WoWPro.action[k] == "R" or WoWPro.action[k] == "b" or WoWPro.action[k] == "H") and
 	   	not WoWPro.waypcomplete[k] and
 	   	k <= CurrentIndex and
-	   	(WoWPro.step[k] == GetZoneText():trim() or WoWPro.step[k] == GetSubZoneText():trim()) then
+	   	(WoWPro.step[k] == GetZoneText():trim() or 
+	   	 WoWPro.step[k] == GetSubZoneText():trim() or
+	   	 WoWPro.step[k] == HBD:GetLocalizedMap(HBD:GetPlayerZone()):trim()) then
 
 	        WoWPro.CompleteStep(k, "Destination zone detected")
 	   	skip = true
@@ -726,7 +732,7 @@ function WoWPro:NextStep(k,i)
         if WoWPro.level and WoWPro.level[k] then
             local level = tonumber(WoWPro.level[k])
             if WoWPro.action[k] == "L" and level <= UnitLevel("player") then
-                WoWProCharDB.Guide[GID].completion[i] = true
+                WoWProCharDB.Guide[GID].completion[k] = true
                 skip = true
                 WoWPro.CompleteStep(k, "NextStep(): Completed L step because player level is high enough.")
                 break
@@ -780,7 +786,8 @@ function WoWPro:NextStep(k,i)
 				    -- If they do not have the profession, mark the step and quest as skipped
 				    WoWPro.why[k] = "NextStep(): Permanently skipping step because player does not have a profession."
 				    WoWProCharDB.Guide[GID].skipped[k] = true
-				    WoWProCharDB.skippedQIDs[QID] = true
+				    WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
+				    -- WoWProCharDB.skippedQIDs[QID] = true
 				    WoWPro.why[k] = ("NextStep(): skipping step because because the profession is not known ||P||%s||."):format(WoWPro.prof[k])
 				    WoWPro:dbp("Prof permaskip qid %s for no %s",WoWPro.QID[k],prof)
 				    skip = true
@@ -888,8 +895,8 @@ function WoWPro:NextStep(k,i)
 			if WoWPro.action[k] == "A" and standingId < 3 and repID > 3 and skip then
 			    WoWProCharDB.Guide[GID].skipped[k] = true
 			    -- LFO: Questionable, needs review.
-			    --WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
-				 WoWProCharDB.skippedQIDs[QID] = true
+			   WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
+				 --WoWProCharDB.skippedQIDs[QID] = true
 			end
 			if skip then 
 				WoWProCharDB.Guide[GID].skipped[k] = true
@@ -1114,7 +1121,7 @@ function WoWPro:NextStep(k,i)
 		
 	end
 	
-	--WoWPro.why[k] = "Current Step"
+	--WoWPro.why[k] = "NextStep(): Step active."
 	WoWPro:dbp("%s=WoWPro.NextStep()",tostring(k))
 	return k
 end
@@ -1147,6 +1154,7 @@ end
 
 -- Step Completion Tasks --
 function WoWPro.CompleteStep(step, why, manual)
+	--err("step = %s, why = %s, manual = %s", step, why, manual)
 	local GID = WoWProDB.char.currentguide
 	if WoWProCharDB.Guide[GID].completion[step] then return end
 	if WoWProDB.profile.checksound then	

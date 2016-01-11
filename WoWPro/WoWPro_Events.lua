@@ -6,6 +6,7 @@ local _G = getfenv(0)
 local WoWPro = _G.WoWPro
 
 local L = WoWPro_Locale
+local HBD = WoWPro.HBD
 
 local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
 
@@ -324,8 +325,9 @@ function WoWPro:AutoCompleteZone()
 	local coord = WoWPro.map[currentindex]
 	local waypcomplete = WoWPro.waypcomplete[currentindex]
 	local zonetext, subzonetext = GetZoneText(), string.trim(GetSubZoneText())
+	local hbdzonetext = HBD:GetLocalizedMap(HBD:GetPlayerZone())
 	if action == "F" or action == "H" or action == "b" or (action == "R" and not waypcomplete) then
-		if step == zonetext or step == subzonetext 
+		if step == zonetext or step == subzonetext  or step == hbdzonetext
 		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[currentindex] then
 			WoWPro.CompleteStep(currentindex, ("Arrival at destination %s detected"):format(step) )
 		end
@@ -547,9 +549,9 @@ function WoWPro.EventHandler(frame, event, ...)
 	    WoWPro.SaveGarrisonBuildings()
 	end
 
-	if WoWPro.InitLockdown and event ~= "ZONE_CHANGED_NEW_AREA" then
-	    return
-	end
+	-- if WoWPro.InitLockdown and event ~= "ZONE_CHANGED_NEW_AREA" then
+	--     return
+	-- end
 	
 	-- Noticing if we are doing a pet battle!
 	local guidetype = "WoWPro"
@@ -609,7 +611,12 @@ function WoWPro.EventHandler(frame, event, ...)
 	if event == "PLAYER_REGEN_ENABLED" or 
 		event == "PLAYER_ENTERING_WORLD" or
 		event == "CINEMATIC_STOP" then
-		WoWPro:UpdateGuide() 
+
+		WoWPro.InitLockdown = nil
+		WoWPro:PopulateQuestLog()
+		WoWPro:AutoCompleteQuestUpdate(nil)
+		WoWPro:UpdateQuestTracker()
+		WoWPro:UpdateGuide(event)
 	end
 	
 	-- Updating party-dependant options --
