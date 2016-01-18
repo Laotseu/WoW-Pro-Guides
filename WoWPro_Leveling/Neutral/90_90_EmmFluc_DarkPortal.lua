@@ -149,7 +149,7 @@
 -- Date: 2014-09-19 18:17
 -- Who: Fluclo
 
-local guide = WoWPro:RegisterGuide('EmmFluc_DarkPortal', "Leveling", 'Assault on the Dark Portal', 'Emm+Fluc', 'Neutral')
+local guide = WoWPro:RegisterGuide('EmmFluc_DarkPortal', "Leveling", 'Assault on the Dark Portal', 'Emm+Fluc', 'Neutral', 'Tanaan Jungle')
 WoWPro:GuideLevels(guide,90,90,90)
 WoWPro:GuideIcon(guide,"ICON","Inferface\\ICONS\\Achievement_Dungeon_Outland_DungeonMaster")
 WoWPro:GuideNextGuide(guide, 'ShadowDraenor|EmmFrostfire')
@@ -225,8 +225,8 @@ T A Potential Ally |QID|34427|N|To Farseer Drek'Thar once he has run back to the
 A Kill Your Hundred |QID|34429|N|From Archmage Khadgar|M|73.02,38.08|PRE|34427+34478|Z|970|
 C Kill Your Hundred |QID|34429|N|Enter Kargathar Proving Grounds|QO|1|NC|M|73.6,29.0|Z|970|
 C Kill Your Hundred |QID|34429|N|Wait until you have 100 Combatants killed (your friends will do all the killing for you if you want).|QO|2|M|73.6,27.3|Z|970|
-C Kill Your Hundred |QID|34429|N|Leave the arena and head to Umbral Halls.|NC|QO|3|M|67.3,22.0|Z|970|
-T Kill Your Hundred |QID|34429|N|To Archmage Khadgar|M|81.31,50.27|Z|Umbral Halls|
+C Kill Your Hundred |QID|34429|N|Leave the arena and head to Umbral Halls.|NC|QO|3|M|67.6,20.6|Z|970|
+T Kill Your Hundred |QID|34429|N|To Archmage Khadgar|M|81.2,50.2|Z|Umbral Halls|
 
 A The Shadowmoon Clan |QID|34432|N|From Vindicator Maraad|FACTION|Alliance|M|80.7,45.3|PRE|34429|Z|Umbral Halls|
 A The Shadowmoon Clan |QID|34739|N|From Thrall|FACTION|Horde|M|81.62,44.75|PRE|34429|Z|Umbral Halls|
@@ -295,9 +295,9 @@ A The Home Stretch |QID|35884;34446|N|From Thaelin Darkanvil|PRE|34445|M|40.11,4
 C The Home Stretch |QID|35884;34446|N|Run through the Iron Bastion to the Docks.\n(Note: You cannot mount at this time)|M|44.41,80.12|Z|970|NC|
 T The Home Stretch |QID|35884;34446|N|To Archmage Khadgar|M|44.41,80.70|Z|970|
 
-A Step Three: Prophet! |QID|34575|N|Auto-Accepted when you arrive at Eventide Landing.|FACTION|Alliance|
+A Step Three: Prophet! |QID|34575|N|Auto-Accepted when you arrive at Eventide Landing.|FACTION|Alliance|Z|Shadowmoon Valley|
 
-A The Home of the Frostwolves|QID|33868|N|Auto-Accepted when you arrive at Frostfire Ridge.|FACTION|Horde|
+A The Home of the Frostwolves|QID|33868|N|Auto-Accepted when you arrive at Frostfire Ridge.|FACTION|Horde|Z|Frostfire Ridge|
 
 ]]
 

@@ -219,11 +219,11 @@ WoWPro:GuideNextGuide(guide, 'EmmSoArak')
 WoWPro:GuideSteps(guide, function()
 return [[
 
-T News from Talador |QID|36495|N|To Bodrick Grey, in your Garrison.|M|38.33,36.74|Z|Lunarfall|O|
+T News from Talador |QID|36495|N|To Bodrick Grey, in your Garrison.|M|38.33,36.74|Z|Lunarfall|
 
-A The Critical Path |QID|34676;37183|N|From Bodrick Grey|LEAD|36495|LVL|96|
-A The Critical Path |QID|34676|N|Open your Adventure Guide and Start Quest for Talador.|LEAD|36495|
-A The Critical Path |QID|37183;34676|N|From Bodrick Grey|M|38.20,36.90|Z|Lunarfall|PRE|36495|
+A The Critical Path |QID|34676;37183|N|Breadcrumb quest for Talador. From Bodrick Grey|LEAD|36495|LVL|96|Z|Lunarfall|M|37.8,36.8|
+A The Critical Path |QID|34676;37183|N|Breadcrumb quest for Talador. Open your Adventure Guide and Start Quest for Talador.|LEAD|36495|Z|Lunarfall|M|45.3,45.0|
+;A The Critical Path |QID|37183;34676|N|From Bodrick Grey|M|38.20,36.90|PRE|36495|
 
 N Talador|QID|34676;37183|ACTIVE|34676;37183|S|N|If you want the garrison supply treasures and rare elites included in this guide, please set your Rank to 3.|
 
@@ -267,7 +267,7 @@ l Pure Crystal Dust|QID|34263|M|75.9,22.7;75.5,22.2;77.9,18.8;78.2,14.7|CS|N|Pur
 C Out of Jovite|QID|34571|M|75.4,22|NC|US|N|These are green crystals sticking out the ground and walls.|
 C Iridium Recovery|QID|34573|M|75.4,22|US|N|Kill and loot the Iridium Geode.|
 C Gas Guzzlers|QID|34624|M|75.4,22|N|Kill the Glowgullets, then use your 'Goren Gas Extractor' on them.|US|U|111910|
-H Fort Wrynn|QID|34573|PRE|35045|M|69.6,21.1|N|Hearth to Fort Wrynn or take the portal again and follow the road.|PRE|34815|
+H Fort Wrynn|QID|34573|PRE|35045+34563|M|69.6,21.1|N|Hearth to Fort Wrynn or take the portal again and follow the road.|
 T Iridium Recovery|QID|34573|M|70.15,20.11|N|To Miall|
 T Out of Jovite|QID|34571|N|To Mial.|M|70.90,30.49|
 T Gas Guzzlers|QID|34624|M|70.15,20.11|N|To Miall|
@@ -338,7 +338,7 @@ A What the Draenei Found|QID|33579|M|77.74,43.96|N|From Raksi|
 C Harmonic Crystal|QID|33761|NC|M|77.74,44.08|QO|3|N|Green Spiky Crystal|
 C Melani's Doll|QID|33734|NC|M|77.91,42.98|QO|2|
 C Polished Crystal|QID|33761|NC|M|76.98,43.08|QO|2|N|Clear Purple Rectangle|
-C Annals of Aruuna|QID|33734|NC|M|75.45,44.13|QO|3|N|
+C Annals of Aruuna|QID|33734|NC|M|75.45,44.13|QO|3|
 C Crystal-Shaper's Tools|QID|33734|S|NC|M|77.54,41.24|QO|1|
 C Honed Crystal|QID|33761|NC|M|76.17,44.26|QO|1|N|Glowing Red Spike|
 l Relic of Aruuna |QID|33734|L|116128|M|75.8,44.7|RANK|3|
@@ -346,7 +346,7 @@ C Crystal-Shaper's Tools|QID|33734|US|NC|M|77.54,41.24|QO|1|
 C Burning Sky|QID|33740|M|73.07,38.75|N|Kill Wing-Guards, Squallbringers, and Sun-Callers.|US|
 R Aruuna Crystal Mine|QID|33579|M|77.76,41.23;78.39,35.49|CS||N|Go to the mine entrance.|
 C Ancient Prism|QID|33579|M|82.72,37.89|N|Go to the right of the tracks and cross the rock bridge to get to it.|
-T What the Draenei Found|QID|33579|M|82.64,37.78|N|To Raksi, who snunk in behind you.|
+T What the Draenei Found|QID|33579|M|0,0|N|To Raksi, who snunk in behind you.|
 
 A The Purge of Veil Shadar|QID|33580|M|70.50,56.85|N|From Shadow-Sage Iskar.|
 f Terokkar Refuge |M|70.3,57.1|N|Talk to Skytalon Inuz|; Terokkar Refuge |Z|946;0|
@@ -431,14 +431,14 @@ A New Owner|QID|35239|M|62.89,50.46|N|From Pleasure-Bot 8000, after a delay.|
 T New Owner|QID|35239|M|62.89,50.46|N|To Pleasure-Bot 8000|
 
 A A Pilgrimage Gone Awry|QID|34802|M|61.4,54.3|N|From Nadur|
-C Prowler Blood |QID|34802|S|QO|1|Z|Talador|N|Kill the cats|;  |Z|946;0|
-C Snapdragon Frond |QID|34802|S|NC|QO|2|Z|Talador|N|Pick up the Snapdragons|;  |Z|946;0|
-C Riverhoppe Eye |QID|34802|QO|3|Z|Talador|N|Kill the frogs|;  |Z|946;0|
-C Snapdragon Frond |QID|34802|US|NC|QO|2|Z|Talador|N|Pick up the Snapdragons|;  |Z|946;0|
-C Prowler Blood |QID|34802|US|QO|1|Z|Talador|N|Kill the cats|;  |Z|946;0|
-T A Pilgrimage Gone Awry |QID|34802|M|61.3,54.4|Z|Talador|N|To Nadur|;  |Z|946;0|
+C Prowler Blood |QID|34802|S|QO|1|Z|Talador|N|Kill the cats|;;  |Z|946;0|
+C Snapdragon Frond |QID|34802|S|NC|QO|2|Z|Talador|N|Pick up the Snapdragons|;;  |Z|946;0|
+C Riverhoppe Eye |QID|34802|QO|3|Z|Talador|N|Kill the frogs|;;  |Z|946;0|
+C Snapdragon Frond |QID|34802|US|NC|QO|2|Z|Talador|N|Pick up the Snapdragons|;;  |Z|946;0|
+C Prowler Blood |QID|34802|US|QO|1|Z|Talador|N|Kill the cats|;;  |Z|946;0|
+T A Pilgrimage Gone Awry |QID|34802|M|61.3,54.4|Z|Talador|N|To Nadur|;;  |Z|946;0|
 
-K Hilaani|QID|34104|T|Hilaani|U||M|66.21,65.30|N|Hilaani, between Tombs of Light and Gordal Fortress, waaay to the south of fort. Party of 3 suggested or use your garrison "I Win" button.|
+K Hilaani|QID|34104|T|Hilaani|M|66.21,65.30|N|Hilaani, between Tombs of Light and Gordal Fortress, waaay to the south of fort. Party of 3 suggested or use your garrison "I Win" button.|
 
 ; Quest for the Artillery Tower
 R Gordal Foothills|QID|34578|M|62.47,65.40;62.41,67.42|CN|N|Now on to the Gordunni|
@@ -459,7 +459,7 @@ C Supply Recovery|QID|34977|NC|M|67.0,80.0|QO|1|N|Scattered throughout the area.
 C Prized Repossessions|QID|34978|M|67.4,73.9|N|Gordunni Bashers or Cleavers|S|
 K Vizier Vorgorsh|QID|34979|M|68.6,82.6|QO|1|T|Vizier Vorgorsh|N|Upstairs, in the building.|
 K Vizier Zulmork|QID|34979|M|67.14,77.04|QO|2|T|Vizier Zulmork|
-l Iron Box |L||QID|34979|M|64.6,79.2|RANK|3|
+l Iron Box |QID|34251|M|64.6,79.2|RANK|3|
 K Vizier Cromaug|QID|34979|M|66.2,80.8|QO|3|T|Vizier Cromaug|N|Up another flight in the building.|
 T Punching Through|QID|34979|N|To Miall, who is next to you|M|0,0|
 C Supply Recovery|QID|34977|NC|M|67.0,80.0|QO|1|N|Scattered throughout the area.|US|
@@ -581,7 +581,7 @@ C Holding the Line|QID|34407|S|M|55.66,63.41|N|Slay demons around here.|
 C Burning Resonators|QID|33917|NC|S|M|56.37,63.33;55.52,64.34;57.24,64.02;54.89,52.29|CN|QO|1|
 K Tagar Spinebreaker|QID|33530|T|Tagar Spinebreaker|M|64.13,67.88|Z|Tomb of Lights|QO|2|
 
-K O'mogg Blackheart|QID|33920|T|O'mogg Blackheart|M|56.57,62.72|QO|1|T|O'mogg Blackheart|
+K O'mogg Blackheart|QID|33920|T|O'mogg Blackheart|M|56.57,62.72|QO|1|
 l Karab'uun|QID|33920|M|56.68,62.49|QO|2|
 C Burning Resonators|QID|33917|NC|US|M|56.37,63.33;55.52,64.34;57.24,64.02;54.89,52.29|CN|QO|1|
 C Holding the Line|QID|34407|US|M|55.66,63.41|N|Slay demons around here.|
@@ -707,7 +707,7 @@ C Caught In The Chaos|QID|34406|M|52.34,47.89|US|NC|N|The miners are everywhere.
 T Arcane Essence|QID|34403|M|51.65,50.51|N|From Archmage Elandra.|
 T Caught In The Chaos|QID|34406|M|51.65,50.51|N|From Archmage Elandra.|
 A An'dure The Giant|QID|34415|M|51.65,50.51|N|From Archmage Elandra.|
-K An'dure The Awakened|QID|34415|T|An'dure The Awakened|M|54.31,49.90|T|An'dure the Awakened|
+K An'dure The Awakened|QID|34415|T|An'dure The Awakened|M|54.31,49.90|
 T An'dure The Giant|QID|34415|M|51.65,50.51|N|From Archmage Elandra.|
 A Kaelynara Sunchaser|QID|34448|M|51.65,50.51|N|From Archmage Elandra.|
 C Kaelynara Sunchaser|QID|34448|M|51.65,50.51|N|Chat with Elandra to begin.|CHAT|QO|1|

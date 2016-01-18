@@ -270,13 +270,13 @@ T Quakefist |QID|34585|N|To Yrel|M|28.9,16.4|
 
 A Establish Your Garrison|QID|34586|N|From Baros Alexston|M|29.0,16.2|PRE|34585|
 C Establish Your Garrison|QID|34586|N|Speak to Baros Alexston and tell him you have everything, and build the garrison.|CHAT|M|29.0,16.2|
-f Lunarfall|ALTFP|%s's Outpost|N|With Dungar Longdrink.  If your Arrow disappeared, a /reload or a quick look at the map will fix things.|M|47.8,49.8|Z|Lunarfall|
+f Lunarfall (Alliance)|ALTFP|%s's Outpost|N|With Dungar Longdrink.  If your Arrow disappeared, a /reload or a quick look at the map will fix things.|M|47.8,49.8|Z|Lunarfall|
 l Pippers' Buried Supplies|QID|35382|N|Pippers' Burried Supplies: Lootable object for Garrison Resources. Behind Blacksmith Rachelle Black's stall next to the Gryphon master.|M|50.63,48.46|RANK|3|Z|Lunarfall|
 T Establish Your Garrison|QID|34586|N|To Baros Alexston|M|41.4,49.2|Z|Lunarfall|
 
 A Keeping it Together |QID|35176|N|From Baros Alexston|PRE|34586|M|41.4,49.2|Z|Lunarfall|
 A Ship Salvage|QID|35166|N|From Baros Alexston|PRE|34586|M|41.4,49.2|Z|Lunarfall|
-l Pippers' Buried Supplies |QID|35381|N|Pippers' Buried Supplies: Lootable object for Garrison Resources. To the left of the tent.|M|42.44,54.38|Z|Lunarfall|RANK|3|
+l Pippers' Buried Supplies |QID|35381|N|Pippers' Buried Supplies: Lootable object for Garrison Resources. To the left of the tent.|M|30.0,18.3|Z|Lunarfall|RANK|3|
 A Pale Moonlight |QID|35174|N|From Vindicator Maraad|PRE|34586|M|44.0,53.5|Z|Lunarfall|
 
 C Keeping it Together |QID|35176|N|Speak to Assistant Brightstone and tell her it's time to get back to work.|QO|1|CHAT|M|45.0,53.6|Z|Lunarfall|
@@ -319,7 +319,7 @@ T Delegating on Draenor |QID|34692|N|To Lieutenant Thorn|M|40.3,53.6|Z|Lunarfall
 ;Stormshield and Delvar Ironfist follower
 A Ashran Appearance |QID|36624|N|From Lieutenant Thorn.\n\nThis will involve four quests that take you to Stormshield in Ashran and will gain you a follower. Skip this quest if you want to stay in Shadowmoon Valley.|M|31.27,32.72|Z|Lunarfall|RANK|2|
 C Ashran Appearance |QID|36624|N|Speak with Dungar Longdrink and ask him to fly you to Ashran,|CHAT|M|48.15,49.87|Z|Lunarfall|
-F Stormshield|QID|36624|N|Ask Dungar to take you to Stormshield in Ashran.|M|48.15,49.87|Z|Lunarfall|
+;F Stormshield|QID|36624|N|Ask Dungar to take you to Stormshield in Ashran.|M|48.15,49.87|Z|Lunarfall|
 T Ashran Appearance |QID|36624|N|To Private Tristan|M|37.55,91.19|Z|Ashran|
 
 A Host Howell |QID|36626|N|From Private Tristan|M|37.55,91.19|Z|Ashran|PRE|36624|
@@ -335,7 +335,7 @@ A A Surly Dwarf |QID|36630|N|From Lieutenant Howell|M|38.30,96.88|Z|Ashran|PRE|3
 T A Surly Dwarf |QID|36630|N|To Delvar Ironfist, inside Stormshield Barracks|M|41.05,86.93|Z|Ashran|
 A Delvar Ironfist |QID|36633|N|From Delvar Ironfist|M|41.05,86.93|Z|Ashran|PRE|36630|
 T Delvar Ironfist |QID|36633|N|To Delvar Ironfist|M|41.05,86.93|Z|Ashran|PRE|36630|
-F Lunarfall|QID|33075|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36630|
+F Lunarfall (Alliance)|QID|33075|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36630|
 
 A Migrant Workers |QID|34778|N|From Vindicator Maraad|PRE|34692|M|44.0,53.5|Z|Lunarfall|
 C Migrant Workers |QID|34778|N|Speak with Zipfizzle and tell him to Move Out.|CHAT|M|44.2,51.0|Z|Lunarfall|
@@ -783,7 +783,7 @@ R Mount Kra'gor |QID|35553|N|Head east outside of the cave, then head up the hil
 K Rai'vosh |QID|35553|N|Kill Rai'vosh for a Rare piece to slow falling and some Garrison Resources. When you first reach him, you need to allow the dialog between Turog and Rai'vosh to play out before he is attackable.|M|48.81,22.64|RANK|3|
 
 C Lunarblossom|QID|34836|N|Loot the Lunarblossom from the ground of Deadwalker Pass, the entrance to the Pass is to the east of Exile's Rise.|NC|S|M|51.1,19.2|
-l Mushroom-Covered Chest |QID|33869|N|Mushroom-Covered Chest: Lootable object found at the bottom of the lake in Umbrafen.|M|52.87,24.85|RANK|3|
+l Mushroom-Covered Chest |QID|37254|N|Mushroom-Covered Chest: Lootable object found at the bottom of the lake in Umbrafen.|M|52.87,24.85|RANK|3|
 
 C Lunarblossom|QID|34836|N|Loot the Lunarblossom from the ground of Deadwalker Pass, the entrance to the Pass is to the east of Exile's Rise.|NC|S|M|51.1,19.2|
 R Deadwalker Pass |QID|34847|N|Head east to Deadwalker Pass|M|50.93,25.20|ACTIVE|34847|
@@ -830,6 +830,7 @@ C The Dark Side of the Moon|QID|34054|N|Wait for the dialog to finish, then kill
 
 l Ronokk's Belongs |QID|33886|N|Ronokk's Belongs: Lootable object for a cloak and tidy XP.|M|31.30,39.10|RANK|3|
 l Carved Drinking Horn |QID|33569|N|Carved Drinking Horn: Lootable object for Carved Drinking Horn and tidy XP.|M|33.50,39.65|RANK|3|
+l Veema's Herb Bag |QID|33866|N|Veema's Herb bag: Lootable object and tidy XP. Contains Frostweed.|M|34.2,43.5|RANK|3|
 C The Great Salvation|QID|33794|N|Finish rescuing the Draenei prisoners by opening the cages.|NC|US|
 C Across the Stars|QID|33795|N|Finish picking up the Star Readings from the floor.|NC|US|
 C On the Offensive|QID|33083|N|Finish killing the Shadowmoon Forces|US|
@@ -898,7 +899,7 @@ T The Defense of Karabor|QID|33256|N|Jump onto Raindash to take you back to Emba
 
 l The Prophet's Arcanum |QID|37322|N|Go to the mailbox, there will be a message there from Yrel, with The Prophet's Arcanum. Take it.|L|119208|PRE|33256|M|45.9,39.6|
 A The Prophet's Final Message|QID|37322|M|42.37,52.04|Z|Lunarfall|N|From The Prophet's Arcanum. (Quest can also be obtained from Arsenio Zerep.)|U|119208|PRE|33256|
-F Path of Light|QID|37322|N|Fly to the Path of Light|M|45.67,38.85|ACTIVE|37322|
+F Path of the Light|QID|37322|N|Fly to the Path of the Light|M|45.67,38.85|ACTIVE|37322|
 R Tranquil Court|QID|37322|M|70.4,50.4|N|Run east up the stairs to Tranquil Court.|
 f Tranquil Court|M|70.4,50.4|N|With Itara|ACTIVE|37322|
 T The Prophet's Final Message|QID|37322|N|To Prophet Velen's Memorial|M|73.7,55.8|
