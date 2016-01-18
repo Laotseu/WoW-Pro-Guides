@@ -99,7 +99,7 @@ WoWPro:Export("Print")
 -- WoWPro warning function --
 function WoWPro:Warning(message,...)
 	if message ~= nil then
-	    local msg = string.format("|cffffff00%s|r: "..message, self.name or "Wow-Pro",...)
+	    local msg = string.format("|cffffff00%s|r: "..tostring(message), self.name or "Wow-Pro",tostringall(...))
         WoWPro:Add2Log(0,msg)
 	end
 end
@@ -306,7 +306,7 @@ WoWPro.Tags = { "action", "step", "note", "index", "map", "sticky",
 	"unsticky", "use", "zone", "lootitem", "lootqty", "optional", 
 	"level", "QID","target", "prof", "mat", "rank", "rep","waypcomplete", "why",
 	 "noncombat","active","ach","spell","qcount","NPC","questtext","prereq","leadin","faction",
-	 "nobuff", "altfp", "daily",	-- Added by LaoTSeu
+	 "nobuff", "altfp", "daily", "zoneName", "mapID", "map_level",	-- Added by LaoTSeu
 	 "buff", "chat","recipe", "gossip","conditional","pet", "building", "item", "guide", "availible"
 }
 
@@ -601,17 +601,18 @@ function WoWPro:Timeless()
 end
 
 
-function WoWPro:RegisterGuide(GIDvalue, gtype, zonename, authorname, faction)
+function WoWPro:RegisterGuide(GIDvalue, gtype, name, authorname, faction, zone)
     if not WoWPro[gtype] then
         WoWPro:Error("WoWPro:RegisterGuide(%s,%s,...) has bad gtype",GIDvalue,tostring(gtype))
     end
 
     local guide = {
 		guidetype = gtype,
-		zone = zonename,
+		zone = zone or name,
 		author = authorname,
 		faction = faction,
-		GID = GIDvalue
+		GID = GIDvalue,
+		name = name
 	}
 
 

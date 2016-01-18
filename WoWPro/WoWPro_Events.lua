@@ -735,26 +735,26 @@ function WoWPro.EventHandler(frame, event, ...)
  --    end
 
     -- Noting that a quest is being completed for quest log update events --
-	if event == "QUEST_COMPLETE" then
-	--    local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-   --     local questtitle = GetTitleText();
-	--	if WoWProCharDB.AutoTurnin == true and (WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and questtitle == WoWPro.step[qidx] then
-	--	    if (GetNumQuestChoices() <= 1) then
-	--	        GetQuestReward(1)
-	--	    end
-   -- end
-		WoWPro:AutoCompleteQuestUpdate(GetQuestID())
-	end
+	-- if event == "QUEST_COMPLETE" then
+	-- --    local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
+ --   --     local questtitle = GetTitleText();
+	-- --	if WoWProCharDB.AutoTurnin == true and (WoWPro.action[qidx] == "T" or WoWPro.action[qidx] == "A") and questtitle == WoWPro.step[qidx] then
+	-- --	    if (GetNumQuestChoices() <= 1) then
+	-- --	        GetQuestReward(1)
+	-- --	    end
+ --   -- end
+	-- 	WoWPro:AutoCompleteQuestUpdate(GetQuestID())
+	-- end
 	
-	if event == "QUEST_TURNED_IN" or event == "QUEST_ACCEPTED" then
-	    local qlidx, qid = ...
-	    WoWPro:dbp("%s(%s,%s)",event,qlidx,qid)
-	    --if event == "QUEST_TURNED_IN" then
-       -- 	WoWPro.CompletingQuest = true
-       -- 	WoWProCharDB.completedQIDs[qlidx] = true
-       -- 	WoWPro:AutoCompleteQuestUpdate(qlidx)	    
-	    --end
-	end
+	-- if event == "QUEST_TURNED_IN" or event == "QUEST_ACCEPTED" then
+	--     local qlidx, qid = ...
+	--     WoWPro:dbp("%s(%s,%s)",event,qlidx,qid)
+	--     --if event == "QUEST_TURNED_IN" then
+ --       -- 	WoWPro.CompletingQuest = true
+ --       -- 	WoWProCharDB.completedQIDs[qlidx] = true
+ --       -- 	WoWPro:AutoCompleteQuestUpdate(qlidx)	    
+	--     --end
+	-- end
 	    
 	if event == "TRADE_SKILL_SHOW" then
 	    WoWPro:ScanTrade()
@@ -777,7 +777,10 @@ function WoWPro.EventHandler(frame, event, ...)
 	if event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
 		WoWPro:AutoCompleteZone(...)
 	end
-	if event == "QUEST_LOG_UPDATE" then
+	if event == "QUEST_LOG_UPDATE" or
+		event == "QUEST_COMPLETE" or
+		event == "QUEST_TURNED_IN" or 
+		event == "QUEST_ACCEPTED" then
 		WoWPro:PopulateQuestLog()
 		WoWPro:AutoCompleteQuestUpdate(nil)
 		WoWPro:UpdateQuestTracker()

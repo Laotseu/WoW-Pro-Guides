@@ -8,6 +8,7 @@ local _ = _G._
 local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
 	
 local L = WoWPro_Locale
+local HBD = WoWPro.HBD
 WoWPro.actiontypesorder = { "A", "C", "T", "K", "R", "H", "h", "F", "f", "N", "B", "b", "U", "L", "l", "r", "D", "noncombat", "chat", "acceptdaily", "turnindaily" }
 WoWPro.actiontypesdesc = {
 	A = "Accept Quest",
@@ -224,6 +225,74 @@ function WoWPro:UnSkipStep(index)
 	WoWPro:UpdateQuestTracker()
 end
 
+
+-- Take a zone token and return the zone name or ID and the floor.
+-- Valid formats: |Z|Zone Name|, |Z|Zone Name/level|, |Z|Zone Name/level|, |Z|mapID|, |Z|mapID/level|
+-- Zone Name is a string
+-- mapID and level are numbers
+-- Returns: zone, mapID, level
+local zone_cache = {} -- "toke" => validated_OK, message, zone, mapID, level
+function WoWPro.ParseZoneToken(token, validating)
+	-- assert(type(token) == "string", ("Invalid first parameter, expected a string, got \"%s\""):format(type(token)))
+	if (not token or token == "") and validating then return true, nil end
+	if (not token or token == "") and not validating then return nil, nil, nil end
+
+	if zone_cache[token] then
+		if validating then
+			return zone_cache[token][1], zone_cache[token][2]
+		else
+			return zone_cache[token][3], zone_cache[token][4], zone_cache[token][5]
+		end
+	end
+	
+	-- Is there a level? (Let's make sure we only catch only the text after the last / or ;)
+	local zone, level = select(3,token:find("(.*)[/;]([^/;]+)"))
+	if level then
+		level = tonumber(level)
+		if validating and level == nil then
+			zone_cache[token] = { false, ("level must be a number: |Z|%s|. If the zone name use a \"/\", use |Z|Zone name;0|."):format(token),
+										 zone, mapID, level }
+			return false, zone_cache[token][2]
+		end
+	else
+		-- No level found
+		zone = token
+		level = 0
+	end
+
+	local mapID
+	-- Is the zone a mapID?
+	if tonumber(zone) ~= nil then
+		mapID = tonumber(zone)
+		zone = HBD:GetLocalizedMap(mapID)
+		if validating and zone == nil then
+			zone_cache[token] = { false, ("HereBeDragons doesn't recongnize mapID \"%s\" in |Z|%S|"):format(mapID, token),
+										 zone, mapID, level }
+			return false, zone_cache[token][2]
+		end
+	else
+		mapID = WoWPro.Zone2MapID[zone]
+		if validating and mapID == nil then
+			zone_cache[token] = { false, ("Cannot find a valid mapID for |Z|%s|"):format(token),
+										 zone, mapID, level }
+			return false, zone_cache[token][2]
+		end
+	end
+
+	zone_cache[token] = { true, nil, zone, mapID, level }
+	if validating then
+		return true
+	else
+		return zone, mapID, level
+	end
+end
+
+
+function WoWPro.ValidateZoneToken(action,step,tag_value)
+	WoWPro.ParseZoneToken(tag_value, true)
+end
+
+
 local TagTable = {}
 local function DefineTag(action, key, vtype, validator, setter)
     TagTable[action] = {key=key, vtype=vtype, validator=validator, setter=setter}
@@ -293,8 +362,18 @@ DefineTag("NOBUFF","nobuff","string",nil,nil)
 
 function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	local GID = WoWProDB.char.currentguide
-		
-		
+
+	-- Validate guide zone
+	local valid, msg = WoWPro.ParseZoneToken(zone, true)		
+	if not valid then 
+		local currentZone = HBD:GetLocalizedMap(HBD:GetPlayerZone())
+		WoWPro:Warning(("Invalid zone %s for guide %s, will use current zone %s"):format(zone or "nil", GID, currentZone))
+		zone = currentZone
+	end
+	
+	if text:match("(.*);;") then
+		text = text:match("(.*);;") or "" -- Remove the ;; and everything after it, these are comments
+	end
 	text = string.trim(text) 
 	if text == "" or string.sub(text,1,1) == ";" then
 	    -- empty lines or comments are ignored
@@ -382,8 +461,12 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	            WoWPro:Error("Tag %s has a bad key vtype of '%s'. Report this!", tag, tag_spec.vtype)
 	        end
 	        if tag and tag_spec.validator then
-	            if not tag_spec.validator(WoWPro.action[i],WoWPro.step[i],tag,value) then
+	        		local valid, msg = tag_spec.validator(WoWPro.action[i],WoWPro.step[i],tag,value)
+	            if not valid then
 	                WoWPro:Warning("i:Step %s [%s] has an bad value for tag ||%s||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag, value)
+	                if msg then
+	                	WoWPro:Warning("   " .. msg)
+	                end
 	                tag = nil
 	                value = nil
 	            end
@@ -417,9 +500,13 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	    WoWPro:ValidateMapCoords(GID,WoWPro.action[i],WoWPro.step[i],WoWPro.map[i])
 	end    
 	WoWPro.zone[i] = WoWPro.zone[i] or (WoWPro.map[i] and zone)
-	if WoWPro.zone[i] and WoWPro.map[i] and not WoWPro:ValidZone(WoWPro.zone[i]) then
-	    WoWPro:Error("Step %s [%s] has a bad Z||%s|| tag.",WoWPro.action[i],WoWPro.step[i],WoWPro.zone[i])
-	    WoWPro.zone[i] = nil
+	local valid, msg = WoWPro.ParseZoneToken(WoWPro.zone[i])
+	if WoWPro.zone[i] and WoWPro.map[i] and not valid then
+		WoWPro:Error("Step %s [%s] has a bad Z||%s|| tag.",WoWPro.action[i],WoWPro.step[i],WoWPro.zone[i])
+		WoWPro:Error("   " .. msg)
+	   WoWPro.zone[i] = nil
+	elseif valid then
+		WoWPro.zoneName[i], WoWPro.mapID[i], WoWPro.map_level[i] = WoWPro.ParseZoneToken(value)
 	end
 	WoWPro.prereq[i] = WoWPro.prereq[i] or (WoWPro.action[i] == "A" and WoWPro:GrailQuestPrereq(WoWPro.QID[i]))
 
