@@ -434,7 +434,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 
 	local GID = WoWProDB.char.currentguide
 	if not GID or not WoWPro.Guides[GID] then return end
-	if WoWPro.InitLockdown then return end
+	-- if WoWPro.InitLockdown then return end
 
 
 	-- Removing old map point --
