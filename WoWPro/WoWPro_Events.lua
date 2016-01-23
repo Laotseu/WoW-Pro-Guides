@@ -780,7 +780,8 @@ function WoWPro.EventHandler(frame, event, ...)
 	if event == "QUEST_LOG_UPDATE" or
 		event == "QUEST_COMPLETE" or
 		event == "QUEST_TURNED_IN" or 
-		event == "QUEST_ACCEPTED" then
+		event == "QUEST_ACCEPTED" or
+		event == "GARRISON_FOLLOWER_ADDED" then
 		WoWPro:PopulateQuestLog()
 		WoWPro:AutoCompleteQuestUpdate(nil)
 		WoWPro:UpdateQuestTracker()
