@@ -257,15 +257,15 @@ T Clearing Out Before Cleaning Up|QID|35081|M|59.09,79.23|N|To Engineer Gazwitz.
 A Follow that Hotrod!|QID|35285|M|59.09,79.21|N|From Engineer Gazwitz.|PRE|35081;35082|
 T Follow that Hotrod!|QID|35285|M|58.49,92.33|N|To Kimzee Pinchwhistle.|
 A The Right Parts for the Job|QID|35090|M|58.49,92.33|N|From Kimzee Pinchwhistle.|PRE|35285|
-A Skimming Off The Top|QID|35089|M|58.49,92.33|N|From Kimzee Pinchwhistle.|PRE|35285|
+A Skimming Off the Top|QID|35089|M|58.49,92.33|N|From Kimzee Pinchwhistle.|PRE|35285|
 A Field Trial|QID|36384|U|115475|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|35285|
-C Skimming Off The Top|QID|35089|M|59.18,88.12|S|N|Kill the oily slimes in the area.|
+C Skimming Off the Top|QID|35089|M|59.18,88.12|S|N|Kill the oily slimes in the area.|
 C The Right Parts for the Job|QID|35090|U|112698|M|59.81,88.34|NC|S|N|Use your rocket to shoot at one of the shredders standing around.  It will break it and then you pick up the pieces.|
 C Field Trial|QID|36384|U|115475|M|59.18,88.12|N|When you encounter one of the infected, use the potion on him.|
 C The Right Parts for the Job|QID|35090|U|112698|M|59.81,88.34|NC|US|N|Use your rocket to shoot at one of the shredders standing around.  It will break it and then you pick up the pieces.|
-C Skimming Off The Top|QID|35089|M|59.18,88.12|US|N|Kill the oily slimes in the area.|
+C Skimming Off the Top|QID|35089|M|59.18,88.12|US|N|Kill the oily slimes in the area.|
 T The Right Parts for the Job|QID|35090|M|58.83,92.84|N|To Kimzee Pinchwhistle.|
-T Skimming Off The Top|QID|35089|M|58.83,92.84|N|To Kimzee Pinchwhistle.|
+T Skimming Off the Top|QID|35089|M|58.83,92.84|N|To Kimzee Pinchwhistle.|
 A Sporicide|QID|35091|M|58.83,92.84|N|From Kimzee Pinchwhistle.|PRE|35090;35089|
 T Field Trial|QID|36384|M|58.46,92.22|N|To Krixel Pinchwhistle.|
 A Preventing the Worst|QID|35211|M|58.46,92.22|N|From Krixel Pinchwhistle.|PRE|36384|
