@@ -316,6 +316,31 @@ function WoWPro:AutoCompleteSetHearth(...)
 	end	
 end
 
+-- Parse chat messages
+function WoWPro:ParseChatMsg(msg, ...)
+	-- Validate Hearthstone
+	local loc = msg:match(L["(.*) is now your home."])
+	if loc then
+		WoWProCharDB.Guide.hearth = loc
+		for i = 1,15 do
+			local index = WoWPro.rows[i].index
+			if WoWPro.action[index] == "h" and WoWPro.step[index] == loc 
+			and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
+				WoWPro.CompleteStep(index, "Hearthstone was set to "..loc)
+			end
+		end
+		return
+	end	
+
+	-- New follower
+	local follower = msg:match("%[(.+)%] is now your follower[.]")
+	if follower then
+		err("ParseChatMsg: %s, %s", follower, msg)
+		WoWPro:EventHandler("QUEST_LOG_UPDATE")
+		return
+	end
+end
+
 -- Auto-Complete: Zone based --
 function WoWPro:AutoCompleteZone()
 	WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount or 0
