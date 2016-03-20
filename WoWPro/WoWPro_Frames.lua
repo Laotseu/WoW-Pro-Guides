@@ -798,7 +798,7 @@ function WoWPro:CreateDropdownMenu()
 			end
 			WoWPro.Resetting = true
 			WoWPro:LoadGuide()
-			err("Resetting guide %s",WoWProDB.char.currentguide)
+			-- err("Resetting guide %s",WoWProDB.char.currentguide)
 			WoWPro.Resetting = false
 			WoWPro:LoadGuide()
 		end},

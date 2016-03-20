@@ -22,6 +22,8 @@ for guidID,guide in pairs(WoWPro.Guides) do
 			Range = "("..tostring(guide.startlevel).."-"..tostring(guide.endlevel)..")",
 			Progress = progress, 
 			startlevel = guide.startlevel,
+			endlevel = guide.endlevel,
+			level = guidelevel,
 		})
 	end
 end
@@ -54,24 +56,24 @@ end
 local function rangeSort()
 	if sorttype == "RangeAsc" then
 		table.sort(guides, function(a,b) 
-			a.level = a.level or ((a.startlevel + a.endlevel)/2)
-			b.level = b.level or ((b.startlevel + b.endlevel)/2)
-			return a.level > b.level 
+			local alevel = a.level or ((a.startlevel + a.endlevel*3)/4)
+			local blevel = b.level or ((b.startlevel + b.endlevel*3)/4)
+			return alevel > blevel 
 		end)
 		WoWPro.Leveling:UpdateGuideList()
 		sorttype = "RangeDesc"
 	else
 		table.sort(guides, function(a,b)
-			a.level = a.level or ((a.startlevel + (a.endlevel or 0))/2)
-			b.level = b.level or ((b.startlevel + (b.endlevel or 0))/2)
-			return a.level < b.level 
+			local alevel = a.level or ((a.startlevel + (a.endlevel*3 or 0))/4)
+			local blevel = b.level or ((b.startlevel + (b.endlevel*3 or 0))/4)
+			return alevel < blevel 
 		end)
 		WoWPro.Leveling:UpdateGuideList()
 		sorttype = "RangeAsc"
 	end
 end
 rangeSort()             -- Sort by range
-sorttype = "Default"    -- and reset to Default
+sorttype = "RangeAsc"    -- and reset to Default
 		
 -- Describe the table to the Core Module
 WoWPro.Leveling.GuideList.Format={{"Zone",0.35,zoneSort},{"Range",0.15,rangeSort},{"Author",0.30,authorSort},{"Progress",0.20,nil}}
