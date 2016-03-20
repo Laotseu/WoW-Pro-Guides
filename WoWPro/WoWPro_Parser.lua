@@ -307,17 +307,37 @@ DefineTag("S","sticky","boolean",nil, function (text,i)
 end)
 DefineTag("US","unsticky","boolean",nil,nil)
 DefineTag("U","use","number",nil,nil)
-DefineTag("L","lootitem","string",nil,function (text,i)
-   WoWPro.lootitem[i], WoWPro.lootqty[i] = select(3,text:find("(%d+)%s?(%d*)"))
-	if WoWPro.lootitem[i] then
-    	if tonumber(WoWPro.lootqty[i]) ~= nil then
-    	    WoWPro.lootqty[i] = tonumber(WoWPro.lootqty[i])
-    	else
-    	    WoWPro.lootqty[i] = 1
-    	end
-    end
-end)    
-DefineTag("QO","questtext","string",nil,nil)
+DefineTag("L","lootitem","string",nil,
+	-- Setter
+	function (text,i)
+	   WoWPro.lootitem[i], WoWPro.lootqty[i] = select(3,text:find("(%d+)%s?(%d*)"))
+		if WoWPro.lootitem[i] then
+	    	if tonumber(WoWPro.lootqty[i]) ~= nil then
+	    	    WoWPro.lootqty[i] = tonumber(WoWPro.lootqty[i])
+	    	else
+	    	    WoWPro.lootqty[i] = 1
+	    	end
+	    end
+	end)    
+-- DefineTag("QO","questtext","string",nil,nil)
+DefineTag("QO","questtext","string",
+	-- Validator
+	function(action,step,tag,value,i)
+		local qtext,qindicator = value:match("(.+):%s*([0-9]+[/][0-9]+)")
+		if qtext and qindicator then
+			WoWPro:Warning("%d:Step %s [%s] is using old ||%s||%s|| format.",i,action,step,tag,value)
+		end
+		return true -- Return valid since the message has already been printed and we fix it in the setter.
+	end,
+	-- Setter
+	function(value,i,action,step,tag)
+		local qtext,qindicator = value:match("(.+):%s*([0-9]+[/][0-9]+)")
+		if qtext and qindicator then
+			WoWPro.questtext[i] = ("%s %s"):format(qindicator, qtext)
+		else
+			WoWPro.questtext[i] = value
+		end
+	end)
 DefineTag("O","optional","boolean",nil,function (text,i)
     WoWPro.optional[i] = true;
     WoWPro.optionalcount = WoWPro.optionalcount + 1;
@@ -347,6 +367,10 @@ DefineTag("ITEM","item","string",nil,nil)
 DefineTag("GUIDE","guide","string",nil,nil)
 DefineTag("QG","gossip","string",nil, function (value,i) WoWPro.gossip[i] = strupper(value) end)
 DefineTag("Z","zone","string",nil,nil)
+-- DefineTag("Z","zone","string",WoWPro.ValidateZoneToken,function(value,i)
+-- 	WoWPro.zone[i] = value
+-- 	WoWPro.zoneName[i], WoWPro.mapID[i], WoWPro.map_level[i] = WoWPro.ParseZoneToken(value)
+-- end)
 DefineTag("FACTION","faction","string",nil,nil)
 DefineTag("R",nil,"string",nil,function (value,i) end)  -- Swallow R tags
 DefineTag("C",nil,"string",nil,function (value,i) end)  -- Swallow C tags
@@ -354,7 +378,7 @@ DefineTag("GEN",nil,"string",nil,function (value,i) end)  -- Swallow Gen tags
 
 -- Added by LaoTseu
 DefineTag("DAILY",daily,"boolean",nil,function(value,i) WoWPro:SetSessionDailyQuests(WoWPro.QID[i]) end)   
-DefineTag("ALTFP","level","string",nil,function(value,i)
+DefineTag("ALTFP",altfp,"string",nil,function(value,i)
 	WoWPro.altfp[i] = (value):format(_G.UnitName("player")) -- Hack for the Draenor garisson
 end)
 DefineTag("NOBUFF","nobuff","string",nil,nil)
@@ -419,6 +443,16 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	repeat
 	    local tag = tags[idx]
 	    tag = tag and tag:trim() -- clean it up
+	    -- If there is a ; where a tag should be, it's comment.
+	    local realtag, comment = tag:match("(.*)([;].*)")
+	    if comment then
+	    	tag = realtag:trim()
+	    	for i=idx+1,#tags do
+	    		comment = ("%s|%s"):format(comment, tags[i])
+	    		tags[i] = nil
+	    	end
+	    	WoWPro:Warning("EOL Comment: %s", comment)
+	    end
 	    local tag_spec = TagTable[tag]
 	    local value = nil
 	    if tag_spec then
@@ -453,7 +487,7 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	            idx = idx + 1
 	            value = tags[idx]
 	            if not value then
-	                WoWPro:Warning("%d:Step %s [%s] has an missing value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
+	                WoWPro:Warning("%d:Step %s [%s] has a missing value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
 	            elseif not WoWPro.Guides[value] then
 	                WoWPro:Warning("%d:Step %s [%s] has an invalid value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
 	            end
@@ -461,9 +495,9 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	            WoWPro:Error("Tag %s has a bad key vtype of '%s'. Report this!", tag, tag_spec.vtype)
 	        end
 	        if tag and tag_spec.validator then
-	        		local valid, msg = tag_spec.validator(WoWPro.action[i],WoWPro.step[i],tag,value)
+	        		local valid, msg = tag_spec.validator(WoWPro.action[i],WoWPro.step[i],tag,value,i)
 	            if not valid then
-	                WoWPro:Warning("i:Step %s [%s] has an bad value for tag ||%s||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag, value)
+	                WoWPro:Warning("Step %s [%s] has a bad value for tag ||%s||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag, value)
 	                if msg then
 	                	WoWPro:Warning("   " .. msg)
 	                end
@@ -473,7 +507,7 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	        end
 	        if tag then
 	            if tag_spec.setter then
-	                tag_spec.setter(value,i)
+	                tag_spec.setter(value,i,WoWPro.action[i],WoWPro.step[i],tag)
 	            else
 	                WoWPro[tag_spec.key][i] = value
 	            end
