@@ -143,7 +143,7 @@ T Breaking Waves of Change |QID|26383|M|51.80,18.10|N|To Dentaria Silverglade.|O
 T Hero's Call: Darkshore! |QID|28490|M|51.80,18.10|N|To Dentaria Silverglade.|O|
 
 A The Last Wave of Survivors|QID|13518|M|51.80,18.10|N|From Dentaria Silverglade.|
-A Threat from the Water|QID|13522|M|50.39,18.75|N|From Ranger Glynda Nal'Shea.|
+A Threat from the Water|QID|13522|M|50.2,19.8|N|From Ranger Glynda Nal'Shea.|
 h Lor'danel|QID|13831|M|50.98,18.61|N|At Innkeeper Kyteran.|
 C Threat from the Water|QID|13522|M|45.50,17.64|S|N|Kill 8 Vile Sprays.|
 C Rescue Volcor|QID|13518|M|45.03,18.20|QO|Volcor rescued: 1/1|N|Talk to Volcor.|NC|
@@ -355,7 +355,7 @@ A Protector of Ameth'Aran|QID|13579|M|43.67,53.51|N|From Malfurion Stormrage.|
 
 T The Last Wildkin|QID|13577|M|45.54,48.50|N|To Aroom.|
 A Aroom's Farewell|QID|13578|M|45.54,48.50|N|From Aroom.|
-C Aroom's Farewell|QID|13578|M|46.67,46.47|N|The feathers are on the ground, they are small and can be a little hard to see.|
+C Aroom's Farewell|QID|13578|NC|M|46.67,46.47|N|The feathers are on the ground, they are small and can be a little hard to see.|
 T Aroom's Farewell|QID|13578|M|45.53,48.50|N|To Aroom.|
 A Elune's Fire|QID|13582|M|45.53,48.50|N|From Aroom.|
 C Elune's Fire|QID|13582|M|46.80,50.32|N|Obtain Elune's Torch from Horoo the Flamekeeper. |
