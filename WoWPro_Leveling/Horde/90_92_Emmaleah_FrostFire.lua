@@ -292,7 +292,7 @@ T What We Need|QID|34822|M|52.47,53.43|N|To Gazlowe.|Z|Frostwall|
 A Build Your Barracks|QID|34461|M|52.47,53.43|N|From Gazlowe.|Z|Frostwall|
 C Build Your Barracks|QID|34461|M|59.82,50.08|U|111956|NC|QO|1;2|N|Pick up the blueprints off the table and learn them.|Z|Frostwall|
 C Build Your Barracks|QID|34461|M|52.31,53.57|NC|QO|3|N|Click on the table beside Gazlowe, pick one of the two possible sites on the map that appears, then follow Gazlowe over to that spot.|Z|Frostwall|
-C Build Your Barracks|QID|34461|M|58.02,49.34|NC|QO|5|N|Follow Gazlowe over to the spot, and click on the scroll in front of the door to finalize your plot.|Z|Frostwall|
+C Build Your Barracks|QID|34461|M|58.02,49.34|NC|QO|4|N|Follow Gazlowe over to the spot, and click on the scroll in front of the door to finalize your plot.|Z|Frostwall|
 T Build Your Barracks|QID|34461|M|57.40,48.39|Z|Frostwall|N|To Gazlowe. Finalizing your garrison sent you to your graveyard. Run back inside to turn in.|
 A We Need An Army|QID|34861|M|52.47,53.43|N|From Gazlowe.|Z|Frostwall|
 T We Need An Army|QID|34861|M|53.85,54.81|N|To Warmaster Zog who is inside your Town Hall.|Z|Frostwall|
@@ -359,7 +359,7 @@ A Save Wolf Home|QID|33468|M|42.94,41.60|N|From Durotan.|Z|Bladespire Citadel|
 A Wanted: Gutsmash the Destroyer|QID|33919|M|28.9,44.8|N|From Bounty Board.|Z|Bladespire Citadel|RANK|2|
 A Mopping Up|QID|33412|M|28.29,45.72|N|From Snowrunner Rolga.|Z|Bladespire Citadel|RANK|2|
 A Slavery and Strife|QID|33119|M|20.2,52.8|N|From Guse.|Z|Bladespire Citadel|RANK|2|
-f Bladespire Fortress|QID|33412|M|19.9,51.8|Z|Bladespire Citadel|N|At Roark the Airwolf.|
+f Bladespire Citadel|QID|33412|M|19.9,51.8|Z|Bladespire Citadel|N|At Roark the Airwolf.|
 F Wor'gol|QID|33468|M|24.33,37.24|N|At Roark the Airwolf.|
 
 A Free Our Brothers and Sisters|QID|33807|M|21.76,56.39|N|From Duratan.|
@@ -373,7 +373,7 @@ C Save Wolf Home|QID|33468|M|20.8,57.9|US|N|Finish up anyremaining invaders you 
 T Save Wolf Home|QID|33468|M|20.80,57.93|N|To Draka.|
 T Free Our Brothers and Sisters|QID|33807|M|20.80,57.93|N|To Draka.|
 A The Farseer|QID|33469|M|20.80,57.93|N|From Draka.|
-K Warleader Gargrak|QID|33469|M|16.71,57.71|T|Warleader Gargrak|N|Run into the cave and kill Gargrak.|
+K Warleader Gargrak|QID|33469|T|Warleader Gargrak|M|16.71,57.71|T|Warleader Gargrak|N|Run into the cave and kill Gargrak.|
 T The Farseer|QID|33469|M|16.79,57.83|N|To Farseer Drek'Thar.|
 A Pool of Visions|QID|33470|M|16.79,57.83|N|From Farseer Drek'Thar.|
 C Pool of Visions|QID|33470|M|16.79,57.83|CHAT|N|Talk to Drek'Thar to start the ritual.|
@@ -715,9 +715,9 @@ A Turning Timber into Profit|QID|36138|M|51.87,61.75|N|From Lumber Lord Okton.|P
 C Turning Timber into Profit|QID|36138|S|N|As you are out and about don't forget to mark trees.|
 
 ;if you chose the inn(tavern) MED
-A The Headhunter's Harvest|QID|37046|N|From Akanja.|BUILDING|Inn;34;35;36|
-C The Headhunter's Harvest|QID|37046|CHAT|N|Talk to Akanja and pick a follower.|
-T The Headhunter's Harvest|QID|37046|RANK|2|N|To Akanja.|
+A The Headhunter's Harvest|QID|37046|N|From Akanja.|BUILDING|Inn;34;35;36|Z|Frostwall|
+C The Headhunter's Harvest|QID|37046|CHAT|N|Talk to Akanja and pick a follower.|Z|Frostwall|
+T The Headhunter's Harvest|QID|37046|RANK|2|N|To Akanja.|Z|Frostwall|
 
 ;gladiators sanctum MED
 A Warlord of Draenor|QID|36874|BUILDING|GladiatorsSantum;159;160;161|N|From Raza'kul.|
@@ -813,10 +813,10 @@ C A Proper Parting|QID|33125|M|62.55,50.83|NC|QO|3|RANK|3|
 T A Proper Parting|QID|33125|M|66.04,49.10|N|To Outrider Urukag.|RANK|3|
 T Gut Guttra|QID|33132|M|66.04,49.10|N|To Outrider Urukag.|RANK|3|
 
-R The Hunter's Hall|QID|33010|M|63.39,65.67|RANK|2|
-C The Iron Wolf|QID|33010|M|58.38,58.36|Z|Hunter's Hall|N|If you get caught in a net, kill the caster of the net to free yourself (before The Iron Wolf does bad AoE things.)|RANK|2|
-T The Iron Wolf|QID|33010|M|53.23,56.27|Z|Hunter's Hall|N|To Thrall.|RANK|2|
-A To Thunder Pass|QID|34123|M|53.23,56.27|Z|Hunter's Hall|N|From Thrall.|RANK|2|
+R The Hunter's Hall|QID|33010|M|62.9,65.6|RANK|2|N|Get into the Hunter Hall|
+C The Iron Wolf|QID|33010|M|58.5,58.4|N|If you get caught in a net, kill the caster of the net to free yourself (before The Iron Wolf does bad AoE things.)|RANK|2|Z|941;6|
+T The Iron Wolf|QID|33010|M|53.2,56.1|N|To Thrall.|RANK|2|Z|941;6|
+A To Thunder Pass|QID|34123|M|53.2,56.1|Z|Hunter's Hall|N|From Thrall.|RANK|2|Z|941;6|
 
 f Wolf's Stand|QID|34124|M|73.63,60.03|N|At Windhunter.|RANK|2|
 T To Thunder Pass|QID|34123|M|73.43,58.83|N|To Lokra.|RANK|2|
@@ -829,7 +829,7 @@ C Pick one|QID|37563|M|76.32,54.06|N|Geyah is a resto shaman, her guarenteed abi
 T The Frostwolves Stand Ready|QID|37563|M|76.32,54.06|N|To Makar Stonebinder.|RANK|2|
 
 R Bones of Agurak|QID|34066|M|78.38,54.95;83.62,60.88|CS|N|There is a passage thru the rocks starting at the first waypoint.|RANK|2|
-f Thunder Pass|QID|34066|M|83.62,60.88|N|At Bile Warneck.|RANK|2|
+f Thunder Pass|ALTFP|Bones of Agurak|M|83.62,60.88|N|At Bile Warneck.|RANK|2|
 A Savage Vengeance|QID|34066|M|83.22,62.76|N|From Scout Ruk'Gan. If you happen arrive just as someone else picked up the quest it takes a minute or two for him to come back.|RANK|3|
 C Savage Vengeance|QID|34066|M|83.50,65.90|S|RANK|3|
 A Getting the Points|QID|34069|M|84.14,65.11|N|From Barbed Thunderlord Spear.|RANK|3|
@@ -858,9 +858,9 @@ C Burn Them Down|QID|34073|NC|U|109164|QO|3|M|83.37,75.13|RANK|3|
 C The Mark of Defiance|QID|34102|U|109196|M|83.23,74.49|US|N|Use the banner on the corpses you kill.|RANK|3|
 T Burn Them Down|QID|34073|M|82.83,76.34|N|To Scout Ruk'Gan.|RANK|3|
 T The Mark of Defiance|QID|34102|M|82.83,76.34|N|To Scout Ruk'Gan.|RANK|3|
-A Vul'gaths End|QID|34075|M|82.83,76.34|N|From Scout Ruk'Gan.|RANK|3|
-C Vul'gaths End|QID|34075|M|83.83,74.96|T|General Vul'gath|N|Just across the rock bridge here.|RANK|3|
-T Vul'gaths End|QID|34075|M|82.82,76.33|N|To Scout Ruk'Gan.|RANK|3|
+A Vul'gath's End|QID|34075|M|82.83,76.34|N|From Scout Ruk'Gan.|RANK|3|
+C Vul'gath's End|QID|34075|M|83.83,74.96|T|General Vul'gath|N|Just across the rock bridge here.|RANK|3|
+T Vul'gath's End|QID|34075|M|82.82,76.33|N|To Scout Ruk'Gan.|RANK|3|
 
 D We're outa here!|N|This concludes Frostfire Ridge, check off this step and the next guide will open.|
 

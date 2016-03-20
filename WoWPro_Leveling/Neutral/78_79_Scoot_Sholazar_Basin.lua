@@ -102,7 +102,7 @@
 -- Who: Jiyambi
 
 local guide = WoWPro:RegisterGuide("ScoSho7879", "Leveling", "Sholazar Basin", "Scoot", "Neutral")
-WoWPro:GuideLevels(guide,76,77, 76.2557)
+WoWPro:GuideLevels(guide,76,78, 76.2557)
 WoWPro:GuideNextGuide(guide, "EstIce7985|ScoSto7980")
 WoWPro:GuideIcon(guide,"ACH",4928)
 WoWPro:GuideSteps(guide, function()

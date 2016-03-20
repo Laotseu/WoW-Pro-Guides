@@ -708,6 +708,16 @@ C The Clothes on Their Backs|QID|36266|N|Finish killing and loot the Shadowmoon 
 
 T Escape From Shaz'gul |QID|33081|N|To Yrel, now in Twilight Glade.|M|40.6,54.9|
 A Chasing Shadows |QID|33586|N|From Prophet Velen|M|40.53,54.91|PRE|33081+33059|
+
+;Enchanting Quests
+T The Arakkoan Enchanter|QID|36310|N|To Arcanist Delath|M|37.4,72.6|
+A Failed Apprentice |QID|36313|N|From Arcanist Delath|M|37.4,72.6|PRE|36310|
+C Failed Apprentice |QID|36313|N|Free Deema|M|35.7,72.3|NC|
+T Failed Apprentice |QID|36313|N|To Deema|M|35.7,72.3|
+A Oru'kai's Staff |QID|36315|N|From Deema|M|37.4,72.6|PRE|36313|
+C Oru'kai's Staff |QID|36315|N|Obtain Oru'kai's Staff from the water.|M|35.8,72.8|
+T Oru'kai's Staff |QID|36315|N|To Arcanist Delath|M|37.4,72.6|
+
 A Fast Expansion|QID|33814|M|40.65,54.87|N|From Scout Valdez.|PRE|33081|LEAD|36592|
 
 H Lunarfall |QID|33814|N|Use your Garrison Hearthstone, or fly back to your garrison.|U|110560|
@@ -851,8 +861,9 @@ R Bloodthorn Cave |QID|33419|N|Head to Bloodthorn Cave.|M|24.03,33.06|
 ;T A Matter of Life and Death |QID|33419|M|23.1,33.0|Z|Shadowmoon Valley|N|To Roona|; Bloodthorn Cave |Z|947;0|
 
 A A Matter of Life and Death|QID|33419|N|From Roona in the Bloodthorn Cave.|M|23.2,33.0|Z|Bloodthorn Cave|
-C A Matter of Life and Death|QID|33419|N|Save Diaani.|NC|QO|2|M|52.29,54.33|Z|Bloodthorn Cave|
+C A Matter of Life and Death|QID|33419|S|N|Save Diaani.|NC|QO|2|M|52.29,54.33|Z|Bloodthorn Cave|
 l Rotting Basket|QID|33572|N|Rotting Baskets: Lootable junk worth 13 gold and some tidy XP.|M|56.28,48.84|RANK|3|Z|Bloodthorn Cave|
+C A Matter of Life and Death|QID|33419|US|N|Save Diaani.|NC|QO|2|M|52.29,54.33|Z|Bloodthorn Cave|
 C A Matter of Life and Death|QID|33419|N|Save Arekk, he's in the cave north of Diaani|NC|QO|1|M|32.73,52.84|Z|Bloodthorn Cave|
 K Gorum |QID|33664|T|Gorum|M|31.7,34.7|N|*Rare Elite* in Arekk cave.|RANK|3|Z|Bloodthorn Cave|
 C A Matter of Life and Death|QID|33419|N|Save Zuulo, continue south then east through the tunnel.|NC|QO|3|M|49.89,68.92|Z|Bloodthorn Cave|
@@ -955,15 +966,7 @@ T Shelly Hamby |QID|35625|N|From Shelly Hamby|M|36.4,19.3|
 
 T Gloomshade Game Hunter|QID|33461|M|37.4,61.1|Z|Lunarfall|N|To Arsenio Zerep just outside your Garrison. Use your Garrison Hearthstone to get you back to your garrison.|U|110560|
 
-J Garrison Buldings|GUIDE|LudoBuildingsAlliance|N|Check in to see if there are any building quests to do.|
-;Enchanting Quests
-T The Arakkoan Enchanter|QID|36310|N|To Arcanist Delath|M|37.4,72.6|
-A Failed Apprentice |QID|36313|N|From Arcanist Delath|M|37.4,72.6|PRE|36310|
-C Failed Apprentice |QID|36313|N|Free Deema|M|37.4,72.6|NC|
-T Failed Apprentice |QID|36313|N|To Deema|M|37.4,72.6|
-A Oru'kai's Staff |QID|36315|N|From Deema|M|37.4,72.6|PRE|36313|
-C Oru'kai's Staff |QID|36315|N|Obtain Oru'kai's Staff from the water.|
-T Oru'kai's Staff |QID|36315|N|To Arcanist Delath|M|37.4,72.6|
+;J Garrison Buldings|GUIDE|LudoBuildingsAlliance|N|Check in to see if there are any building quests to do.|
 
 H Lunarfall|QID|34192|N|Fly back to Lunarfall (or hearthstone)|M|37.23,90.88|Z|Ashran|U|110560|PRE|36624|
 ; Having this quest and the [Ashran Appearance] quest causes the Ashran one not to complete.

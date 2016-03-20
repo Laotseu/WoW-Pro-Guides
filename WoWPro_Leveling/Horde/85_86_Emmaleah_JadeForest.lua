@@ -166,14 +166,14 @@ A Regroup!|QID|29694|M|33.67,10.56|N|From General Nazgrim.|
 A Face to Face With Consequence|QID|31771|M|33.67,10.56|N|From Taran Zhu.|
 
 C Face to Face With Consequence|QID|31771|M|34.32,10.60|N|Kill these guys as you run out of the building|
-C Regroup!|QID|29694|M|31.95,13.21|CHAT|QO|Shademaster Kiryn Rescued: 1/1|
+C Regroup!|QID|29694|M|31.95,13.21|CHAT|QO|1|
 A Priorities!|QID|31978|M|31.97,13.30|N|From Gi-Oh.|
 A Prowler Problems|QID|31773|M|32.06,13.32|N|From Kai-Lin Honeydew.|
 C Prowler Problems|QID|31773|S|M|30.61,11.78|
 C Priorities!|QID|31978|S|NC|M|29.39,13.58|
-C Regroup!|QID|29694|M|30.81,11.32|CHAT|QO|Sergeant Gorrok Rescued: 1/1|
-C Regroup!|QID|29694|M|30.4,7.2|CHAT|QO|Rivett Clutchpop Rescued: 1/1|
-C Regroup!|QID|29694|M|29.41,8.45|CHAT|QO|Shokia Rescued: 1/1|
+C Regroup!|QID|29694|M|30.81,11.32|CHAT|QO|3|
+C Regroup!|QID|29694|M|30.4,7.2|CHAT|QO|2|
+C Regroup!|QID|29694|M|29.41,8.45|CHAT|QO|4|
 C Priorities!|QID|31978|US|NC|M|29.3,10.0|N|Finish collecting the Barrels of Honeybrew.|
 C Prowler Problems|QID|31773|US|M|30.61,11.78|N|Finish killing the Sha-Infested Prowlers.|
 C Priorities!|QID|31978|US|NC|M|29.39,13.58|
@@ -192,8 +192,8 @@ T Seeking Zin'Jun|QID|31774|M|31.17,17.52|N|To Zin'Jun.|
 A Cryin' My Eyes Out|QID|29765|M|31.17,17.52|N|From Zin'Jun.|
 A Monstrosity|QID|29743|M|30.90,17.49|N|From base of statue.|
 C Cryin' My Eyes Out|QID|29765|S|M|29.15,17.91|N|Kill the hozen to recover Zin'Jun's stuff.|
-C Monstrosity|QID|29743|QO|Statue Torso Sketched: 1/1|NC|M|29.34,18.92|
-C Monstrosity|QID|29743|QO|Statue Arm Sketched: 1/1|NC|M|30.01,21.21|
+C Monstrosity|QID|29743|QO|1|NC|M|29.34,18.92|
+C Monstrosity|QID|29743|QO|2|NC|M|30.01,21.21|
 C Cryin' My Eyes Out|QID|29765|US|M|31,21|N|Kill the monkeys to find Zin'Jun's missing things.|
 T Cryin' My Eyes Out|QID|29765|M|31,21|N|To Zin'Jun.|
 A Seein' Red|QID|29804|M|29.42,18.00|N|From Zin'Jun.|
@@ -207,14 +207,14 @@ A Choppertunity|QID|31777|M|31.15,21.56|N|From Rivett Clutchpop.|
 C Unreliable Allies|QID|31778|S|CHAT|M|29.63,23.15|
 C Choppertunity|S|QID|31777|U|89163|M|27.92,24.14|N|Pick up the sparkly Rocket Launchers, you will need at least 6, target choppers and use (they have a very long range.|
 C Assault on the Airstrip|S|QID|31775|M|27.96,24.73|
-K Master Engineer Cogswing and Gyro-Mechanic Lavenderp|T|Master Engineer Cogswing|QO|Master Engineer Cogswing and Gyro-Mechanic Lavenderp slain: 1/1|QID|31776|M|30.3,24.28|N|These guys move between campsites in this area.|
-K Morgus Grimhatchet|T|Morgus Grimhatchet|QO|Morgus Grimhatchet slain: 1/1|QID|31776|M|29.66,23.23|N|These guys move between campsites in this area.|
-K Corporal Jackson Silver|T|Corporal Jackson Silver|QO|Corporal Jackson Silver slain: 1/1|QID|31776|M|27.84,23.1|
+K Master Engineer Cogswing and Gyro-Mechanic Lavenderp|T|Master Engineer Cogswing|QO|1|QID|31776|M|30.3,24.28|N|These guys move between campsites in this area.|
+K Morgus Grimhatchet|T|Morgus Grimhatchet|QO|2|QID|31776|M|29.66,23.23|N|These guys move between campsites in this area.|
+K Corporal Jackson Silver|T|Corporal Jackson Silver|QO|3|QID|31776|M|27.84,23.1|
 C Unreliable Allies|QID|31778|US|CHAT|M|29.63,23.15|
 C Choppertunity|QID|31777|U|89163|US|M|27.92,24.14|N|Use rocket launchers on choppers.|
 C Assault on the Airstrip|US|QID|31775|M|27.96,24.73|
-C Monstrosity|QID|29743|QO|Statue Head Sketched: 1/1|NC|M|29.87, 22.39|
-C Monstrosity|QID|29743|QO|Statue Shoulder Sketched: 1/1|NC|M|28.33,22.31|
+C Monstrosity|QID|29743|QO|4|NC|M|29.87, 22.39|
+C Monstrosity|QID|29743|QO|3|NC|M|28.33,22.31|
 T Monstrosity|QID|29743|M|28.33,22.31|N|To UI Alert.|
 T Choppertunity|QID|31777|M|31.12,21.68|N|To Rivett Clutchpop.|
 T Unreliable Allies|QID|31778|M|31.45,21.72|N|To Merchant Zin.|
@@ -233,7 +233,7 @@ C Missed Me By... That Much!|QID|29821|M|24.02,27.12|U|84157|N|Use the rocket bo
 T Missed Me By... That Much!|QID|29821|M|22.85,30.60|N|To Empty Package.|
 A They're So Thorny!|QID|31112|M|22.85,30.60|N|From Empty Package.|
 C They're So Thorny!|QID|31112|U|84157|M|25.53,27.70|N|Use the rocket boots again to jump back to the shore.  The sprites drop the supplies.|
-C Forensic Science|QID|29815|US|NC|M|26.23,30.07|NC|
+C Forensic Science|QID|29815|US|M|26.23,30.07|NC|
 T They're So Thorny!|QID|31112|M|28.07,24.62|N|To Rivett Clutchpop.|
 T Forensic Science|QID|29815|M|28.15,24.87|N|To Shademaster Kiryn.|
 A Acid Rain|QID|29827|M|28.21,24.91|N|From Shademaster Kiryn.|
@@ -279,11 +279,15 @@ A Instant Messaging|QID|29936|M|28.00,47.21|N|From Chief Kah Kah.|
 T The Bees' Knees|QID|29933|M|28.00,47.21|N|To Chief Kah Kah.|
 T Wicked Wikkets|QID|31241|M|28.00,47.21|N|To Chief Kah Kah.|
 T Captain Jack's Dead|QID|31261|M|27.97,47.09|N|To Chief Kah Kah.|
-C Instant Messaging|QID|29936|NC|U|76305|M|27.96,44.47|
+C Instant Messaging|QID|29936|NC|U|76305|M|28.0,46.8|
 T Instant Messaging|QID|29936|M|28.28,47.75|N|To General Nazgrim.|
 A Beyond the Horizon|QID|29941|M|28.28,47.75|N|From General Nazgrim.|
 f Grookin Hill|QID|29941|M|27.83,47.94|N|At Grookin Flapmaster.|
-C Beyond the Horizon|QID|29941|CHAT|M|27.77,50.35|N|Blizzard has conveniently placed chat bubbles over thier heads (and on the minimap) to help you find them.|
+;C Beyond the Horizon|QID|29941|CHAT|M|27.77,50.35|N|Blizzard has conveniently placed chat bubbles over thier heads (and on the minimap) to help you find them.|
+C Dipatch Sergeant Gorrok|QID|29941|QO|2|CHAT|M|27.3,50.7|N|He is walking around. Look for the yellow dot on the minimap.|
+C Dipatch Shademaster Kiryn|QID|29941|QO|3|CHAT|M|27.1,49.0|N|Blizzard has conveniently placed chat bubbles over thier heads (and on the minimap) to help you find them.|
+C Parley with Kah Kah|QID|29941|QO|4|CHAT|M|28.0,47.2|N|Blizzard has conveniently placed chat bubbles over thier heads (and on the minimap) to help you find them.|
+C Dipatch Shokia|QID|29941|CHAT|QO|1|M|28.3,47.0|N|Blizzard has conveniently placed chat bubbles over thier heads (and on the minimap) to help you find them.|
 T Beyond the Horizon|QID|29941|M|28.25,47.76|N|To General Nazgrim.|
 A Furious Fowl|QID|29937|M|28.25,47.76|N|From Rivett Clutchpop.|
 A What's in a Name Name?|QID|31239|M|28.01,47.15|N|From Chief Kah Kah.|
@@ -303,7 +307,7 @@ T The Scouts Return|QID|29971|M|28.63,47.40|N|To Shokia.|
 A Scouting Report: Hostile Natives|QID|29730|M|28.6,47.4|N|From Riko.|
 C Scouting Report: Hostile Natives|QID|29730|NC|QO|Inspect the warning sign: 1/1|M|38.84, 45.47|
 C Scouting Report: Hostile Natives|QID|29730|NC|QO|Inspect a Lifelike Jade Statue: 1/1|M|38.8,46.1|
-C Scouting Report: Hostile Natives|QID|29730|NC|QO|Speak with Widow Greenpaw: 1/1|M|39.2, 46.2|
+C Scouting Report: Hostile Natives|QID|29730|CHAT|QO|Speak with Widow Greenpaw: 1/1|M|39.2, 46.2|
 T Scouting Report: Hostile Natives|QID|29730|M|28.6,47.4|N|To Riko.|
 A Scouting Report: On the Right Track|QID|29731|M|28.7,47.5|N|From Shademaster Kiryn.|
 C Scouting Report: On the Right Track|QID|29731|M|48.65,60.32|NC|
@@ -329,7 +333,7 @@ T Boom Goes the Doonamite!|QID|29967|M|28.99,49.11|N|To Rivett Clutchpop.|
 T Burning Down the House|QID|29966|M|28.62,47.51|N|To General Nazgrim.|
 A Dawn's Blossom|QID|30015|M|28.65,47.55|N|From General Nazgrim.|
 
-F Dawn's Blossom|QID|30015|M|27.83,47.94|N|At Grookin Flapmaster.|
+F Dawn's Blossom|QID|30015|M|47.0,46.2|N|At Grookin Flapmaster.|
 f Dawn's Blossom|M|47.64,46.24|N|From Keg Runner Lee.|
 T Dawn's Blossom|QID|30015|M|46.82,46.17|N|To Lorewalker Cho.|
 A Welcome to Dawn's Blossom|QID|31230|M|47.19,46.11|N|From Toya.|
@@ -342,8 +346,9 @@ C The Threads that Stick|QID|29866|S|NC|M|43.68,48.32|N|Loot the eggs to get Pri
 C The Silkwood Road|QID|29865|M|43.26,49.23|
 C The Threads that Stick|QID|29866|US|NC|M|43.68,48.32|N|Loot the eggs to get Pristine Silk.|
 A Down Kitty!|QID|29717|M|39.82,48.05|N|From An Windfur.|
+C The Double Hozen Dare|QID|29716|S|M|37.31,48.19|CHAT|N|Talk to the panda cubs clinging to the trees here.|
 C Down Kitty!|QID|29717|M|37.11,47.72|
-C The Double Hozen Dare|QID|29716|M|37.31,48.19|CHAT|N|Talk to the panda cubs clinging to the trees here.|
+C The Double Hozen Dare|QID|29716|US|M|37.31,48.19|CHAT|N|Talk to the panda cubs clinging to the trees here.|
 T The Double Hozen Dare|QID|29716|N|To An Windfur. (she should be following you)|
 A The Jade Witch|QID|29723|N|From An Windfur.|
 T Down Kitty!|QID|29717|N|To An Windfur.|
@@ -515,7 +520,7 @@ A Spitfire|QID|29585|M|43.28,75.77|N|From Gentle Mother Hanae.|
 A Orchard-Supplied Hardware|QID|29580|M|43.28,75.77|N|From Gentle Mother Hanae.|
 C Orchard-Supplied Hardware|QID|29580|NC|S|M|43.58,71.16|
 C Spitfire|QID|29585|U|72578|NC|S|M|44.48,72.49|
-C Rally the Survivors|QID|29579|NC|S|M|44.51,72.75|
+C Rally the Survivors|QID|29579|CHAT|S|M|44.51,72.75|
 C Defiance|QID|29578|M|44.19,74.52|
 C Orchard-Supplied Hardware|QID|29580|NC|US|M|43.58,71.16|
 C Spitfire|QID|29585|U|72578|NC|US|M|44.48,72.49|

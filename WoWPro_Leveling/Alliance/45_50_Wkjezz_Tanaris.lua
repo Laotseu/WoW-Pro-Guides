@@ -100,7 +100,7 @@
 -- Who: Jiyambi
 
 local guide = WoWPro:RegisterGuide('WkjTan4550', "Leveling", 'Tanaris', 'Wkjezz', 'Alliance')
-WoWPro:GuideLevels(guide,43,49,44.7607)
+WoWPro:GuideLevels(guide,44,49,44.7607)
 WoWPro:GuideNextGuide(guide, 'JiyUng5055')
 WoWPro:GuideIcon(guide,"ACH",4935)
 WoWPro:GuideSteps(guide, function()
@@ -148,9 +148,9 @@ A To The Ground!|QID|25053|M|72.17,45.21|N|From Kelsey Steelspark.|
 A Lootin' Plunder|QID|25054|M|72.17,45.21|N|From Kelsey Steelspark.|
 C Dead Man's Chest|QID|25052|S|M|72.61,46.39|N|Kill Southsea Pirates.|
 C Lootin' Plunder|QID|25054|NC|S|M|71.50,46.79|N|Look inside the shacks, and collect Pirate Loot.|
-C Torch the Northwest Shack|QID|25053|NC|U|51547|QO|Northwest Shack: 1/1|M|71.67,46.75|N|The 1st building to torch is here.|
-C Torch the Southwest Shack|QID|25053|NC|U|51547|QO|Southwest Shack: 1/1|M|71.93,48|N|The second building to set on fire is here.|
-C Torch the Northeast Shack|QID|25053|NC|U|51547|QO|Northeast Shack: 1/1|M|72.88,46.09|N|The last building to torch is here.|
+C Torch the Northwest Shack|QID|25053|NC|U|51547|QO|1|M|71.67,46.75|N|The 1st building to torch is here.|
+C Torch the Southwest Shack|QID|25053|NC|U|51547|QO|2|M|71.93,48|N|The second building to set on fire is here.|
+C Torch the Northeast Shack|QID|25053|NC|U|51547|QO|3|M|72.88,46.09|N|The last building to torch is here.|
 C Lootin' Plunder|QID|25054|NC|US|M|71.50,46.79|N|Finish collecting Pirate Loot.|
 C Dead Man's Chest|QID|25052|US|M|72.61,46.39|N|Finish killing Pirates.|
 L Level 46|QID|25052|LVL|46|N|You should be around level 46 by this point.|
@@ -212,7 +212,7 @@ T A Few Good Goblins|QID|25072|M|55.66,60.85|N|To Zeke Bootscuff.|
 
 A Gazer Tag|QID|24931|M|55.25,60.22|N|From Narain Soothfancy.|
 C Gazer Tag|QID|24931|S|M|52.65,53.99|N|Watch out for disturbed land; these are Elite worms, easy enough to solo, but annoying. Kill and loot, this may take a while.|
-C Chicken of the Desert|QID|24933|S|M|58.14,59.84|N|Kill and loot Hyenas. To say the drop rate on the Basalisks and Hyenas is low, is an understatement; Do not get discouraged. |
+C Chicken of the Desert|QID|24933|S|M|58.14,59.84|N|Kill and loot Hyenas. To say the drop rate on the Basalisks and Hyenas is low, is an understatement; Do not get discouraged.|
 C Gazer Tag|QID|24931|US|M|52.65,53.99|N|Kill and loot Glasshide Gazers.|
 C Chicken of the Desert|QID|24933|US|M|58.14,59.84|N|Finish gathering Hyena Chunks.|
 T Chicken of the Desert|QID|24933|M|55.60,60.80|N|Woo hoo! To Zeke Bootscuff.|

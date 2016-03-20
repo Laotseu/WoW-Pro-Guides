@@ -112,7 +112,7 @@ N Starts in Vol'jin's Pride|QID|34681|N|If you aren't there, Brom, the flightmas
 
 A Legacy of the Ancients|QID|36385|M|46.88,84.88|O|U|115467|BUILDING|Lumbermill;41|N|Accepted from Barkskin Tome|
 T It's a Matter of Strategy|QID|34681|M|71.06,29.74|N|To Foreman Grobash.|
-f Vol'jin's Pride|QID|34681|M|70.07,29.4|N|At Mo'Jimba.|;currently you get this and 2 other FPs automatically
+f Vol'jin's Pride|QID|34681|M|70.7,29.4|N|At Mo'Jimba.|;currently you get this and 2 other FPs automatically
 A At Your Command|QID|34566|M|71.06,29.74|Z|Talador|N|From Foreman Grobash.|
 C At Your Command|QID|34566|NC|M|71.14,29.95|Z|Talador|N|Use the table and make your selection.|
 T At Your Command|QID|34566|M|71.06,29.74|Z|Talador|N|To Foreman Grobash.|
@@ -175,7 +175,7 @@ A Wanted: Kil'uun|QID|34108|M|70.82,29.63|N|From Beastmaster Tagh.|RANK|2|
 A Wanted: Hilaani|QID|34107|M|70.82,29.63|N|From Beastmaster Tagh.|RANK|2|
 A Wanted: Ra'tok the Hammer|QID|34106|M|70.82,29.63|N|From Beastmaster Tagh.|RANK|2|
 K Kil'uun|QID|34108|M|67.18,28.74|QO|1|S|T|Kil'uun|N|He flys all over this area, keep looking up, and/or hitting the target button.|RANK|2|
-C Logistical Nightmare|QID|34766|M|68.06,31.38|RANK|2|
+C Logistical Nightmare|QID|34766|NC|M|68.06,31.38|RANK|2|
 K Kil'uun|QID|34108|M|67.18,28.74|QO|1|US|T|Kil'uun|N|He flys all over this area, keep looking up, and/or hitting the target button.|RANK|2|
 
 K Underseer Bloodmane|QID|34945|M|63.8,20.7|L|112475|ITEM|112475|T|Underseer Bloodmane|N|Kill and loot for a bit of treasure. If you kill Prize (his pet) first it will cause him to enrage, making the fight needlessly more difficult.|RANK|3|

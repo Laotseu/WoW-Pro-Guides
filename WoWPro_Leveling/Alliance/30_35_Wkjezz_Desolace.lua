@@ -138,10 +138,10 @@ WoWPro:GuideIcon(guide,"ACH",4930)
 WoWPro:GuideSteps(guide, function()
 return [[
 
-R Farwatcher's Glen|QID|25938|N|This zone's quests start from Hierophant Malyk in Farwatcher's Glen, Stonetalon Mountains. It is a Direct continuation from the Stonetalon Mountains guide, or use the Hero's Call: Desolace! quest and take that that to Officer Jankie.|Z|Stonetalon Mountains|
+R Farwatcher's Glen|QID|25938;14387|N|This zone's quests start from Hierophant Malyk in Farwatcher's Glen, Stonetalon Mountains. It is a Direct continuation from the Stonetalon Mountains guide, or use the Hero's Call: Desolace! quest and take that that to Officer Jankie.|Z|Stonetalon Mountains|
 
-A Help for Desolace|QID|25938|M|33.09,59.63|N|From Hierophant Malyk. Alternatively, accept Hero's Call: Desolace! quest from Darnassus or The Exodar.|Z|Stonetalon Mountains|
-R The Charred Vale|QID|25938|M|30.95,62.20;30.23,63.15;30.06,64.98|CS|N|Follow the waypoints to help you safely down the mountains.|Z|Stonetalon Mountains|
+A Help for Desolace|QID|25938|M|33.09,59.63|N|From Hierophant Malyk. Alternatively, accept Hero's Call: Desolace! quest from Darnassus or The Exodar.|Z|Stonetalon Mountains|LEAD|14384|
+R The Charred Vale|QID|25938;14387|M|30.95,62.20;30.23,63.15;30.06,64.98|CS|N|Follow the waypoints to help you safely down the mountains.|Z|Stonetalon Mountains|
 T Help for Desolace|QID|25938|M|54.18,9.41|N|To Officer Jankie.|
 A Rerouted!|QID|14384|M|54.18,9.41|N|From Officer Jankie.|
 R Nijel's Point|QID|14384|M|54.18,9.41|N|Mount Jankie's Mount for a ride to Nijel's Point.|
@@ -152,13 +152,13 @@ T Rerouted!|QID|14384|M|66.75,10.90|N|To Corporal Melkins.|
 A Lay of the Land|QID|14387|M|66.75,10.90|N|From Captain Pentigast.|
 T Lay of the Land|QID|14387|M|66.48,11.76|N|To Vahlarriel Demonslayer.|
 A Elune's Gifts|QID|14354|M|66.48,11.76|N|From Vahlarriel Demonslayer.|
-N Cup of Elune|QID|14354|M|77.00,18.25|N|Visit the Cup of Elune.|QO|Cup of Elune Visited: 1/1|
+C Visit the Cup of Elune|QID|14354|NC|M|77.00,18.25|N|Visit the Cup of Elune.|QO|3|
 A Nothing a Couple of Melons Won't Fix|QID|14193|M|77.00,18.25|N|Started by the Cup of Elune.|
 l Melonfruit|QID|14193|L|48106 8|M|77.06,18.18|N|Gather 8 Melons from the ground.|S|
-N Elune's Brazier|QID|14354|M|78.77,22.98|N|Visit Elune's Brazier|QO|Elune's Brazier Visited: 1/1|
+C Visit the Elune's Brazier|QID|14354|NC|M|78.77,22.98|N|Visit Elune's Brazier|QO|2|
 A Ten Pounds of Flesh|QID|14358|M|78.77,22.98|N|Started by Elune's Brazier.|
 l Ten Pounds of Flesh|QID|14358|S|L|48857 10|N|Kill and loot Satyrs for their flesh, you need 10 total.|
-C Elune's Gifts|QID|14354|M|75.97,26.57|N|Visit Handmaiden Of Elune.|
+C Visit the Handmaiden Of Elune|QID|14354|NC|QO|1|M|75.97,26.57|N|Visit Handmaiden Of Elune.|
 
 A To the Hilt!|QID|14357|M|75.97,26.57|N|Started by Elune's Handmaiden.|
 l Satyr Sabers|QID|14357|S|L|48943 20|N|From weapons racks and Satyr kills, you will need 20 total.|
@@ -166,9 +166,9 @@ l Melonfruit|QID|14193|L|48106 8|M|77.06,18.18|N|Gather 8 Melons from the ground
 C Nothing a Couple of Melons Won't Fix|QID|14193|M|77.06,18.18|N|Head back to the Cup of Elune, and offer the 8 Melonfruit there.|U|48106|
 T Nothing a Couple of Melons Won't Fix|QID|14193|M|77.06,18.18|N|(UI Alert)|
 l Ten Pounds of Flesh|QID|14358|US|L|48857 10|N|Kill and loot Satyrs for their flesh.|
-C Ten Pounds of Flesh|QID|14358|N|Head back to Elune's Brazier and offer the 10 pieces of Satyr Flesh there.|U|48857|
+C Ten Pounds of Flesh|QID|14358|M|78.77,22.98|N|Head back to Elune's Brazier and offer the 10 pieces of Satyr Flesh there.|U|48857|
 T Ten Pounds of Flesh|QID|14358|N|At Elune's Brazier. Don't bother with the follow-up, it is for buff only and does not count for any other quest achievements.|
-l Satyr Sabers|QID|14357|S|L|48943 20|N|From weapons racks and Satyr kills.|
+l Satyr Sabers|QID|14357|US|L|48943 20|N|From weapons racks and Satyr kills.|
 C To the Hilt!|QID|14357|M|75.97,26.57|N|Head back to Elune's Handmaiden and offer the 20 Satyr Sabers there.|U|48943|
 T To the Hilt!|QID|14357|M|75.97,26.57|N|(UI Alert)|
 T Elune's Gifts|QID|14354|M|66.44,11.71|N|To Vahlarriel Demonslayer.|
@@ -183,14 +183,14 @@ A Fletch Me Some Plumage!|QID|14253|M|60.90,28.99|N|From Bizby.|RANK|2|
 C New Beginnings|QID|14251|S|M|60.55,27.05|RANK|2|N|Kill and loot any type of scorpions for their stingers.|
 C Good Gold For Bad Tail|QID|14252|S|M|60.20,30.99|RANK|2|N|Kill and loot basalisks for their tails.|
 C Fletch Me Some Plumage!|QID|14253|S|RANK|2|N|Kill and loot Dread Swoops for their tails.|
-l Burning Blade Ear|QID|14365|M|53.40,33.34|N|Kill the Burning Blade until a Burning Blade Ear drops.|L|49203|
-A Ears Are Burning|QID|14362|U|49203|N|Accept the quest from the Burning Blade Ear that dropped from the Burning Blade.|
+;C Burning Blade Ear|QID|14365|M|53.40,33.34|N|Kill the Burning Blade until a Burning Blade Ear drops.|
+A Ears Are Burning|QID|14362|U|49203|N|Kill the Burning Blade until a Burning Blade Ear drops.\n\nAccept the quest from the Burning Blade Ear that dropped from the Burning Blade.|M|53.40,33.34|
 C Ears Are Burning|QID|14362|M|53.20,27.48|S|N|Kill and loot Burning Blade mobs for their ears.|
-C Peace of Mind|QID|14361|M|53.40,33.34|N|Kohor is by a cave south of the fortress.|
+K Kohor|QID|14361|T|Kohor|M|53.40,33.34|N|Kohor is by a cave south of the fortress.|
 T Peace of Mind|QID|14361|M|53.40,33.34|N|(UI Alert)|
 
 A You'll Know It When You See It|QID|14363|M|53.40,33.34|N|(UI Alert)|
-C You'll Know It When You See It|QID|14363|M|52.94,28.96|N|Head up to the building, and loot the Demonic Chest.|
+C You'll Know It When You See It|QID|14363|NC|M|52.94,28.96|N|Head up to the building, and loot the Demonic Chest.|
 T You'll Know It When You See It|QID|14363|M|52.94,28.96|N|(UI Alert)|
 A Putting Their Heads Together|QID|14364|M|52.94,28.96|N|(UI Alert)|
 l Bleached Skulls|QID|14364|L|48953 100|N|From piles around the compound.|
@@ -201,8 +201,8 @@ f Ethel Rethor|QID|14365|M|39.04,27.01|N|At Korrah's Hippogryph.|
 T Ethel Rethor|QID|14365|M|38.83,26.97|N|To Cenarion Researcher Korrah.|
 
 A The Emerging Threat|QID|14256|M|38.83,26.97|N|From Cenarion Researcher Korrah.|
-C The Emerging Threat|QID|14256|M|39.07,27.43|N|Speak to the Tauren and she'll send you on a trip.|
-T The Emerging Threat|QID|14256|M|38.79,27.06|N|To Cenarion Researcher Korrah.|
+C The Emerging Threat|QID|14256|CHAT|M|38.83,26.97|N|Speak to the Tauren and she'll send you on a trip.|
+T The Emerging Threat|QID|14256|M|38.83,26.97|N|To Cenarion Researcher Korrah.|
 A Slitherblade Slaughter|QID|14257|M|38.79,27.06|N|From Cenarion Researcher Korrah.|
 C Slitherblade Slaughter|QID|14257|M|36.57,36.27|N|Sliverblade Nagas drop Bones at 100% Rate. Warriors drop Fins at a low rate. Sorcerers Drop Scales at a low rate, but in multiples.|S|
 T The Karnitol Shipwreck |QID|1454|M|36.13,30.49|N|Karnitol's Chest found along the coast.|
