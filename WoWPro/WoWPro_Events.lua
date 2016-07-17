@@ -798,7 +798,8 @@ function WoWPro.EventHandler(frame, event, ...)
 		end
 	end
 	if event == "CHAT_MSG_SYSTEM" then
-		WoWPro:AutoCompleteSetHearth(...)
+		-- WoWPro:AutoCompleteSetHearth(...)
+		WoWPro:ParseChatMsg(...)
 	end	
 	if event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "MINIMAP_ZONE_CHANGED" or event == "ZONE_CHANGED_NEW_AREA" then
 		WoWPro:AutoCompleteZone(...)

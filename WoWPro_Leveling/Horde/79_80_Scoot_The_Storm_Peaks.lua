@@ -165,17 +165,18 @@ C Examples to be Made |QID|12907|N|Turn around, walk to the next room, turn righ
 T Examples to be Made |QID|12907|M|44.4,68.9|
 
 A A Certain Prisoner |QID|12908|M|44.4,68.9|
-T A Certain Prisoner |QID|12908|M|44.4,68.9|
+T A Certain Prisoner |QID|12908|M|44.4,68.9|N|To Lok'lire the Crone|
 
 A A Change of Scenery |QID|12921|M|42.8,68.9|
 T A Change of Scenery |QID|12921|N|Go past where you killed Garhal and out to Brunnhildar Village.  Lok'lira the Crone is on the right.|M|47.5,69.1|
 
-A Is That Your Goblin? |QID|12969|M|47.5,69.1|
+A Is That Your Goblin? |QID|12969|M|47.5,69.1|N|From Lok'lira the Crone|
 C Is That Your Goblin? |QID|12969|N|Fight Agnetta Tyrsdottar .|M|48.23,69.73|
-T Is That Your Goblin? |QID|12969|M|47.5,69.1|
+T Is That Your Goblin? |QID|12969|M|47.5,69.1|N|To Lok'lira the Crone|
 
-A The Hyldsmeet |QID|12970|M|47.5,69.1|
-T The Hyldsmeet |QID|12970|N|Talk to her and get the story.|M|47.5,69.1|
+A The Hyldsmeet |QID|12970|M|47.5,69.1|N|From Lok'lira the Crone|
+C The Hyldsmeet |QID|12970|CHAT|M|47.5,69.1|N|Talk to her and get the story.|
+T The Hyldsmeet |QID|12970|N|To Lok'lira the Crone|M|47.5,69.1|
 
 A Taking on All Challengers |QID|12971|M|47.5,69.1|
 C Taking on All Challengers |QID|12971|N|They're all around the village.|

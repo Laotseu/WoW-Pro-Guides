@@ -184,7 +184,8 @@ local function WoWProMapping_distance(event, uid, range, distance, lastdistance)
 			end
 		end
 
-	elseif autoarrival == 2 or autoarrival == 3 then
+	-- elseif autoarrival == 2 or autoarrival == 3 then
+	else
 
 		--if iactual ~= #cache then return
 		if iactual == 1 and autoarrival == 2 then
