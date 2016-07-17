@@ -173,8 +173,8 @@ A Nowhere To Run And Nowhere To Hide |QID|12719|M|54.3,57.3|N|From Prince Kelese
 A Lambs To The Slaughter |QID|12722|N|From Baron Rivendare.|M|54.7,57.4|
 
 C Lambs To The Slaughter |QID|12722|N|Kill Scarlet Crusade Soldiers and Citazens of New Avalon until you are done.|S|
-l Get the Empty Cauldron |QID|12716|QO|Empty Cauldron: 1/1|N|Get out of the crypt and go southeast to New Avalon. On your left-hand side you will see the New Avalon Inn. The Empty Cauldron is in the basement.|M|57.80,61.86|
-l Get the Iron Chain |QID|12716|QO|Iron Chain: 1/1|N|Northeast of the inn you'll find the New Avalon Forge.|M|61.99,60.24|
+C Get the Empty Cauldron |QID|12716|NC|QO|Empty Cauldron: 1/1|N|Get out of the crypt and go southeast to New Avalon. On your left-hand side you will see the New Avalon Inn. The Empty Cauldron is in the basement.|M|57.80,61.86|
+C Get the Iron Chain |QID|12716|NC|QO|Iron Chain: 1/1|N|Northeast of the inn you'll find the New Avalon Forge.|M|61.99,60.24|
 
 C Nowhere To Run And Nowhere To Hide |QID|12719|N|Mount up and ride southwest to the New Avalon Town Hall. Go inside, Kill Mayor Quimby and loot the [New Avalon Registry].|M|52.50,72.03|
 C The Plaguebringer's Request |QID|12716|N|You can get the [Crusader Skull] from any New Avalon resident you kill.|M|57.8,61.8|
@@ -198,7 +198,7 @@ T Behind Scarlet Lines |QID|12723|N|Go far south to the Scarlet Tavern, second f
 A The Path Of The Righteous Crusader |QID|12724|M|56.3,79.8|N|From Orbaz Bloodbane.|
 A Brothers In Death |QID|12725|M|56.3,80.2|N|From Thassarian.|
 
-C The Path Of The Righteous Crusader |QID|12724|N|Ride northeast to the Scarlet Hold and loot the [New Avalon Patrol Schedule] on the upper floor.|M|63.0,68.3|
+C The Path Of The Righteous Crusader |QID|12724|NC|N|Ride northeast to the Scarlet Hold and loot the [New Avalon Patrol Schedule] on the upper floor.|M|63.0,68.3|
 
 T Brothers In Death |QID|12725|N|Go to the Basement where you'll find Koltira Deathweaver.|M|63.0,67.8|
 A Bloody Breakout |QID|12727|N|From Koltira Deathweaver. Be ready to defend, try to fight inside the anti-magic barrier as much as possible.|M|63.0,67.8|
