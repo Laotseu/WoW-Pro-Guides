@@ -190,41 +190,41 @@ T Scourgekabob|QID|12484|N|To Mack Fearson.|M|15.77,46.76|
 A Seared Scourge|QID|12029|M|16.7,48.3|N|From Mack Fearson, after his song.|
 A Shimmercap Stew|QID|12483|M|15.7,46.7|N|From Prigmon.|
 
-l Ice Serpent Eyes|QID|12483|L|35798 5|N|Drop from Ice Serpent or Serpent Defender, you need five eyes.|S|
-l Get 5 Shimmering Snowcaps|QID|12483|L|35782 5|N|From the Shimmering Snowcaps, to the west, near the river.|S|
-l Frozen Mojos|QID|11991|L|35799 5|N|Drop from Krakkari Warriors and Shamans, you need 5 mojos.|M|12.9,59.2|
+C Get 5 Ice Serpent Eyes|QID|12483|QO|1|N|Drop from Ice Serpent or Serpent Defender, you need five eyes.|S|
+C Get 5 Shimmering Snowcaps|QID|12483|NC|QO|2|N|From the Shimmering Snowcaps, to the west, near the river.|S|
+C Frozen Mojos|QID|11991|QO|3|N|Drop from Krakkari Warriors and Shamans, you need 5 mojos.|M|12.9,59.2|
 T Subject to Interpretation|QID|11991|M|13.2,60.9|U|35797|N|Use the [Drakuru's Elixir] near the Drakuru's Brazier. Turn the quest into the Image of Drakuru.|
 A Sacrifices Must be Made|QID|12007|M|13.2,60.9|N|From the Image of Drakuru.|
 
-l Ice Serpent Eyes|QID|12483|L|35798 5|N|Drop from Ice Serpent or Serpent Defender, you need five eyes.|US|
-l Get 5 Shimmering Snowcaps|QID|12483|L|35782 5|N|From the Shimmering Snowcaps, to the west, near the river.|US|
-C Shimmercap Stew|QID|12483|N|Loot Sweetroots from the ground.|M|16.1,34.8|S|
-K Warlord Zim'bo|L|35836|QID|12007|N|Kill and loot Warlord Zim'bo.|M|15,37|
+C Get 5 Ice Serpent Eyes|QID|12483|QO|1|N|Drop from Ice Serpent or Serpent Defender, you need five eyes.|US|
+C Get 5 Shimmering Snowcaps|QID|12483|NC|QO|2|N|From the Shimmering Snowcaps, to the west, near the river.|US|
+C Shimmercap Stew|QID|12483|NC|QO|3|N|Loot Sweetroots from the ground.|M|16.1,34.8|S|
+K Warlord Zim'bo|T|Warlord Zim'bo|L|35836|QID|12007|N|Kill and loot Warlord Zim'bo.|M|15,37|
 C Sacrifices Must be Made|QID|12007|N|Get the "Eye of the Prophets" from the Seer of Zeb'Halak (statue), up the stairs.|M|17.92,36.51|
 T Sacrifices Must be Made|QID|12007|U|35797|N|Use the Drakuru's Elixir near the Drakuru's Brazier. Then turn the quest into the Image of Drakuru.|M|17.46,36.42|
 A Heart of the Ancients|QID|12042|M|17.4,36.4|N|From the Image of Drakuru.|
-C Shimmercap Stew|QID|12483|N|Loot the Sweetroots if you don't have 5 of them already|M|16.1,34.8|US|
+C Shimmercap Stew|QID|12483|QO|3|NC|N|Loot the Sweetroots if you don't have 5 of them already|M|16.1,34.8|US|
 
 C Seared Scourge|QID|12029|N|Go north to Drak'Tharon Keep. Go to the area west of the stairs and you'll see many trolls running around. Throw Mack's Dark Grog on them.|U|35908|M|16,30|
 T Tactical Clemency |QID|12422|N|To Captured Trapper.|M|21.9,30.0|
 
 C Attack on Silverbrook|QID|12413|N|Ride east to Silverbrook Hills. Kill 8 Silverbrook Defenders.|M|26,31|
 N Warning|QID|12284|N|There might be some PvP action involved in the following circuit. So if you want to avoid PvP at all costs, skip it. They don't count for the zone quest achievement, but they do give nice XP and are quickly done and count for a different achievment.|M|34,33|
-A Keep 'Em on Their Heels|QID|12284|M|34.5,32.9|N|From Commander Bargok.|
-A Overwhelmed!|QID|12288|M|33.9,32.8|N|From Aumana.|
-A Making Repairs|QID|12280|M|34.5,32.6|N|From Lurz.|
-A Shred the Alliance|QID|12270|M|34.5,32.6|N|From Grekk.|
-C Keep 'Em on Their Heels|QID|12284|O|N|Kill 15 Alliance Units.|S|
-C Overwhelmed!|QID|12288|O|U|37568|N|Use the Renewing Tourniquet on 10 Wounded Skirmishers.|S|M|34.28,40.1|
-C Making Repairs|QID|12280|O|N|Collect 4 Grooved Cogs, 3 Notched Sprockets, and 2 High Tension Springs.|S|M|34.28,40.1|
-C Shred the Alliance|QID|12270|O|N|Look for Broken-down Shredders. Walk up to them and right-click to get in. Use ability 3 to sprint, if you get attacked, ability 1 is a pushback, and ability 2 is a melee range blind. Ability 5 delivers the shredder once you're back.|M|34.28,40.1|
-C Keep 'Em on Their Heels|QID|12284|O|N|Kill 15 Alliance Units.|US|
-C Overwhelmed!|QID|12288|O|U|37568|N|Use the Renewing Tourniquet on 10 Wounded Skirmishers.|US|M|34.28,40.1|
-C Making Repairs|QID|12280|O|N|Collect 4 Grooved Cogs, 3 Notched Sprockets, and 2 High Tension Springs.|US|M|34.28,40.1|
-T Shred the Alliance|QID|12270|O|M|34.5,32.6|N|To Grekk.|
-T Making Repairs|QID|12280|O|M|34.5,32.6|N|To Lurz.|
-T Overwhelmed!|QID|12288|O|M|33.9,32.8|N|To Aumana.|
-T Keep 'Em on Their Heels|QID|12284|O|M|34.5,32.9|N|To Commander Bargok.|
+A Keep 'Em on Their Heels|QID|12284|M|34.5,32.9|N|From Commander Bargok.|O|
+A Overwhelmed!|QID|12288|M|33.9,32.8|N|From Aumana.|O|
+A Making Repairs|QID|12280|M|34.5,32.6|N|From Lurz.|O|
+A Shred the Alliance|QID|12270|M|34.5,32.6|N|From Grekk.|O|
+C Keep 'Em on Their Heels|QID|12284|N|Kill 15 Alliance Units.|S|
+C Overwhelmed!|QID|12288|U|37568|N|Use the Renewing Tourniquet on 10 Wounded Skirmishers.|S|M|34.28,40.1|
+C Making Repairs|QID|12280|NC|N|Collect 4 Grooved Cogs, 3 Notched Sprockets, and 2 High Tension Springs.|S|M|34.28,40.1|
+C Shred the Alliance|QID|12270|N|Look for Broken-down Shredders. Walk up to them and right-click to get in. Use ability 3 to sprint, if you get attacked, ability 1 is a pushback, and ability 2 is a melee range blind. Ability 5 delivers the shredder once you're back.|M|34.28,40.1|
+C Keep 'Em on Their Heels|QID|12284|N|Kill 15 Alliance Units.|US|
+C Overwhelmed!|QID|12288|U|37568|N|Use the Renewing Tourniquet on 10 Wounded Skirmishers.|US|M|34.28,40.1|
+C Making Repairs|QID|12280|NC|N|Collect 4 Grooved Cogs, 3 Notched Sprockets, and 2 High Tension Springs.|US|M|34.28,40.1|
+T Shred the Alliance|QID|12270|M|34.5,32.6|N|To Grekk.|
+T Making Repairs|QID|12280|M|34.5,32.6|N|To Lurz.|
+T Overwhelmed!|QID|12288|M|33.9,32.8|N|To Aumana.|
+T Keep 'Em on Their Heels|QID|12284|M|34.5,32.9|N|To Commander Bargok.|
 
 T Heart of the Ancients |QID|12042|N|Clear the way to the top, go inside the cabin and turn in the quest to the Heart of the Ancients.|M|37,32.5|
 A My Heart is in Your Hands |QID|12802|M|36.9,32.4|N|From the Heart of the Ancients.|
@@ -342,30 +342,30 @@ T Sasha's Hunt |QID|12134|N|To Sasha.|M|57.52,41.35|
 T Anatoly Will Talk |QID|12330|M|57.5,41.3|N|To Sasha.|
 A A Sister's Pledge |QID|12411|M|57.5,41.3|N|From Sasha.|
 
-C Vordrassil's Seeds|QID|12242|S|N|Look for 8 Vordrassil's Seeds. They can be found lying around in the furbolg camps all around the huge tree.|M|52,39|
+C Vordrassil's Seeds|QID|12242|NC|S|N|Look for 8 Vordrassil's Seeds. They can be found lying around in the furbolg camps all around the huge tree.|M|52,39|
 C Destroy the Sapling|QID|12241|N|Head into Grizzlemaw. The sapling is in the bottom level. Use the torch on the tree.|U|37306|M|50.8,42.6|
-C Vordrassil's Seeds|QID|12242|US|N|Look for 8 Vordrassil's Seeds. They can be found lying around in the furbolg camps all around the huge tree.|M|52,39|
+C Vordrassil's Seeds|QID|12242|NC|US|N|Look for 8 Vordrassil's Seeds. They can be found lying around in the furbolg camps all around the huge tree.|M|52,39|
 H Conquest Hold|QID|12236|U|6948|N|Hearth to Conquest Hold.|
 T Vordrassil's Seeds|QID|12242|M|22.5,63.0|N|To Windseer Grayhorn.|
 T Destroy the Sapling|QID|12241|M|22.5,63.0|N|To Windseer Grayhorn.|
-A Ursoc, the Bear God|QID|12236|N|From Windseer Grayhorn.|M|22.5,63.0|
+A Ursoc, the Bear God|QID|12236|N|From Windseer Grayhorn.|M|22.5,63.0|O|
 F Camp Oneqwah|QID|12411|M|22.0,64.5|N|Fly to Camp Oneqwah.|
 
-C Ursoc, the Bear God|QID|12236|O|N|This group quest *is* soloable, especially if you're a healer or tank class. Head north and go up the narrow path. You can ask Tur to tank, DPS or heal. Generally, if you're not a healer, it's probably best to have him heal, as Ursoc doesn't really hit that hard. Once you kill Ursoc, use the Purified Ashes of Vordrassil on his corpse.|U|37307|M|52.6,24.1|
+C Ursoc, the Bear God|QID|12236|N|This group quest *is* soloable, especially if you're a healer or tank class. Head north and go up the narrow path. You can ask Tur to tank, DPS or heal. Generally, if you're not a healer, it's probably best to have him heal, as Ursoc doesn't really hit that hard. Once you kill Ursoc, use the Purified Ashes of Vordrassil on his corpse.|U|37307|M|52.6,24.1|
 
 T A Sister's Pledge |QID|12411|N|To Anya in Duskhowl Den.|M|64.87,43.43|
-A Hour of the Worg |QID|12164|N|From Sasha.|M|57.53,41.27|
+A Hour of the Worg |QID|12164|O|N|From Sasha.|M|57.53,41.27|
 N Find out what Hugh Glass knows of Loken|QID|12204|QO|Hugh Glass Questioned: 1/1|N|Talk to Hugh Glass, click on the text and let him speak until you get the quest update.|M|69.1,40.1|
 
-N Detour|QID|12236|O|N|We're going to take a little detour here to turn in Ursoc, the Bear God. There just isn't a better time to do in than now.|
-F Conquest Hold|QID|12236|O|N|Go back to Camp Oneqwah and take the Flight Path.|M|64.9,46.9|
-T Ursoc, the Bear God|QID|12236|O|M|22.5,63.0|N|To Windseer Grayhorn.|
+N Detour|QID|12236|N|We're going to take a little detour here to turn in Ursoc, the Bear God. There just isn't a better time to do in than now.|
+F Conquest Hold|QID|12236|N|Go back to Camp Oneqwah and take the Flight Path.|M|64.9,46.9|
+T Ursoc, the Bear God|QID|12236|M|22.5,63.0|N|To Windseer Grayhorn.|
 F Camp Oneqwah|QID|12068|M|22.0,64.5|N|Fly to Camp Oneqwah.|PRE|12236|
 
-K Overseer Brunon|QID|12093|QO|Overseer Brunon slain: 1/1|N|Go east/southeast to a summoning circle with 4 dwarves Iron Rune-Weavers channeling. Kill the 4 Dwarves. Overseer Brunon will spawn. Kill him.|M|78.8,43.4|
-K Overseer Lochli|QID|12093|QO|Overseer Lochli slain: 1/1|N|Go northwest to another summoning circle. Kill the 4 Dwarves. Overseer Lochli will spawn. Kill him.|M|75.2,37.1|
-K Overseer Korgan|QID|12093|QO|Overseer Korgan slain: 1/1|N|Go northwest to another summoning circle. Kill the 4 Dwarves. Overseer Korgan will spawn. Kill him.|M|71.7,34.5|
-C Runes of Compulsion|QID|12093|N|Go northwest to another summoning circle. Kill the 4 Dwarves. Overseer Druval will spawn. Kill him.|M|67.6,29.6|
+K Overseer Brunon|QID|12093|T|Overseer Brunon|QO|4|N|Go east/southeast to a summoning circle with 4 dwarves Iron Rune-Weavers channeling. Kill the 4 Dwarves. Overseer Brunon will spawn. Kill him.|M|78.8,43.4|
+K Overseer Lochli|QID|12093|T|Overseer Lochli|QO|3|N|Go northwest to another summoning circle. Kill the 4 Dwarves. Overseer Lochli will spawn. Kill him.|M|75.2,37.1|
+K Overseer Korgan|QID|12093|T|Overseer Korgan|QO|2|N|Go northwest to another summoning circle. Kill the 4 Dwarves. Overseer Korgan will spawn. Kill him.|M|71.7,34.5|
+K Overseer Druval|QID|12093|T|Overseer Druval|QO|1|N|Go northwest to another summoning circle. Kill the 4 Dwarves. Overseer Druval will spawn. Kill him.|M|67.6,29.6|
 
 C Therapy|QID|12114|N|Kill Drakkari Protectors and Drakkari Oracles on your way.|S|
 C It Takes Guts....|QID|12116|N|Further north you'll find an entrance to the catacombs. Look for Drakkari Canopic Jars. Loot 5 of them.|M|71.5,23.0|
@@ -383,13 +383,13 @@ T Dun-da-Dun-tah! |QID|12082|M|73.8,34.0|N|To Harkor.|
 T It Takes Guts.... |QID|12116|N|To Kraz.|M|73.90,34.25|
 A Drak'aguul's Mallet |QID|12120|M|73.9,34.1|N|From Kraz.|
 
-N READ THIS|QID|12164|O|N|We're about to attempt a 3 man quest, Hour of the Worg. Some classes, ranged especially (and Death Knights) will be able to solo it, nevertheless if you can get a group it becomes much quicker and less time consuming.|
-R Bloodmoon Isle|QID|12164|O|N|Swim northeast to Bloodmoon Isle.|M|83,28|
-K Selas|QID|12164|O|QO|Selas slain: 1/1|N|Head up the path and to the right, Selas is a worgen in the camp.|M|85.8,27.7|
-K Varlam|QID|12164|O|QO|Varlam slain: 1/1|N|A wolf rider, gead back to the path and further up on the left there's another camp, Varlam is here.|M|85.1,23.4|
-K Goremaw|QID|12164|O|QO|Goremaw slain: 1/1|N|A large wolf; he's on the southern side of the tower.|M|86.9,26.8|
-C Hour of the Worg|QID|12164|O|N|Arugal is on top of the tower. He has 4 phases. Phase one he shadowbolts for ~1500 damage. At 75% HP, he goes into P2, summoning 3 adds. Kill them to return to P1, which lasts until 50%. Then he'll MC someone, who you bring down to 35%, then he goes back to P1. At 25%, he repeats P2, except with 9 adds. Sasha helps in the final phase. If you're ranged, you can probably kill him by LoSing his shadowbolts, if you're far enough down the adds won't aggro on you, but will despawn instead. Good luck!|M|87.5,26.5|
-T Hour of the Worg|QID|12164|O|M|64.9,43.5;87.2,25.6|CS|N|To Sasha. If she despawns before you can turn the quest in, you can find her back where you accepted the quest at.|
+N READ THIS|QID|12164|N|We're about to attempt a 3 man quest, Hour of the Worg. Some classes, ranged especially (and Death Knights) will be able to solo it, nevertheless if you can get a group it becomes much quicker and less time consuming.|
+R Bloodmoon Isle|QID|12164|N|Swim northeast to Bloodmoon Isle.|M|83,28|
+K Selas|QID|12164|T|Selas|QO|2|N|Head up the path and to the right, Selas is a worgen in the camp.|M|85.8,27.7|
+K Varlam|QID|12164|T|Varlam|QO|1|N|A wolf rider, gead back to the path and further up on the left there's another camp, Varlam is here.|M|85.1,23.4|
+K Goremaw|QID|12164|T|Goremaw|QO|3|N|A large wolf; he's on the southern side of the tower.|M|86.9,26.8|
+K Arugal|QID|12164|T|Arugal|QO|4|N|Arugal is on top of the tower. He has 4 phases. Phase one he shadowbolts for ~1500 damage. At 75% HP, he goes into P2, summoning 3 adds. Kill them to return to P1, which lasts until 50%. Then he'll MC someone, who you bring down to 35%, then he goes back to P1. At 25%, he repeats P2, except with 9 adds. Sasha helps in the final phase. If you're ranged, you can probably kill him by LoSing his shadowbolts, if you're far enough down the adds won't aggro on you, but will despawn instead. Good luck!|M|87.5,26.5|
+T Hour of the Worg|QID|12164|M|64.9,43.5;87.2,25.6|CS|N|To Sasha. If she despawns before you can turn the quest in, you can find her back where you accepted the quest at.|
 
 C Drak'aguul's Mallet |QID|12120|N|Find and kill Drak'aguul. He patrols on the path from near the water and up the stairs, then towards Drakil'jin Ruin.|M|74,30|T|Drak'aguul|
 T Drak'aguul's Mallet |QID|12120|N|To Kraz.|M|73.91,34.02|
@@ -410,9 +410,9 @@ T Runes of Compulsion |QID|12093|N|To Gavrock.|M|79.78,33.66|
 A Latent Power |QID|12094|M|79.8,33.6|N|From Gavrock.|
 C In the Name of Loken|QID|12204|N|Talk to Gavrock and click on the text, wait until you get the quest update.|M|79.7,33.6|
 
-N Latent Power|QID|12094|QO|Power Drawn from Second Ancient Stone: 1/1|N|Go south/southwest to an isle with a stone surrounded by a blue glow. Use the Shard of Gavrok.|U|36787|M|79,40|
-N Latent Power|QID|12094|QO|Power Drawn from Third Ancient Stone: 1/1|N|Go southwest to another of those blue glow stones. Use the Shard of Gavrock.|U|36787|M|74,44|
-C Latent Power|QID|12094|N|Go northwest to another of those blue glow stones. Use the Shard of Gavrock.|U|36787|M|71,39.5|
+C Draw power from the Second Ancient Stone|QID|12094|NC|QO|2|N|Go south/southwest to an isle with a stone surrounded by a blue glow. Use the Shard of Gavrok.|U|36787|M|79,40|
+C Draw power from the Third Ancient Stone|QID|12094|NC|QO|3|N|Go southwest to another of those blue glow stones. Use the Shard of Gavrock.|U|36787|M|74,44|
+C Draw power from the First Ancient Stone|QID|12094|NC|QO|1|N|Go northwest to another of those blue glow stones. Use the Shard of Gavrock.|U|36787|M|71,39.5|
 T In the Name of Loken|QID|12204|N|To Scout Vor'takh.|M|65.1,47.7|
 A The Overseer's Shadow|QID|12201|M|65.1,47.7|N|From Scout Vor'takh.|
 
@@ -424,9 +424,9 @@ A Cultivating an Image|QID|12202|M|65.1,47.7|N|From Scout Vor'takh.|
 T An Intriguing Plan|QID|12165|M|65.1,47.3|N|To Prospector Rokar.|
 A From the Ground Up|QID|12196|M|65.1,47.3|N|From Prospector Rokar.|
 
-C From the Ground Up|QID|12196|N|Gather 8 War Golem Parts.|M|76.25,57.46|S|
+C From the Ground Up|QID|12196|NC|N|Gather 8 War Golem Parts.|M|76.25,57.46|S|
 C Cultivating an Image|QID|12202|N|Head back to Dun'Argol. Kill any 8 dwarves and use the Camera on their corpses.|U|37125|M|76.25,57.46|
-C From the Ground Up|QID|12196|N|Gather 8 War Golem Parts.|M|76.25,57.46|US|
+C From the Ground Up|QID|12196|NC|N|Gather 8 War Golem Parts.|M|76.25,57.46|US|
 T Cultivating an Image|QID|12202|N|To Scout Vor'takh.|M|65.1,47.7|
 A Loken's Orders|QID|12203|M|65.1,47.7|N|From Scout Vor'takh.|
 T From the Ground Up|QID|12196|M|65.1,47.3|N|To Prospector Rokar.|

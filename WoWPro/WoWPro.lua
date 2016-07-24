@@ -1,8 +1,11 @@
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 --------------------------
 --      WoWPro.lua      --
 --------------------------
 
-WoWPro = LibStub("AceAddon-3.0"):NewAddon("WoWPro","AceEvent-3.0")
+_G.WoWPro = LibStub("AceAddon-3.0"):NewAddon("WoWPro","AceEvent-3.0")
+local WoWPro = _G.WoWPro
 WoWPro.Version = GetAddOnMetadata("WoWPro", "Version") 
 WoWPro.DebugLevel = 0
 WoWPro.Guides = {}
@@ -25,14 +28,32 @@ end
     
 -- WoWPro keybindings name descriptions --
 _G["BINDING_NAME_CLICK WoWPro_FauxItemButton:LeftButton"] = "Use quest item"
-BINDING_HEADER_BINDING_WOWPRO = "WoWPro Keybindings"
+_G.BINDING_HEADER_BINDING_WOWPRO = "WoWPro Keybindings"
 _G["BINDING_NAME_CLICK WoWPro_FauxTargetButton:LeftButton"] = "Target quest mob"
 
 WoWPro.Serial = 99999
+
+-- For print
+local default_channel = nil
+local function setDefaultChanelForPrint()
+	default_channel = nil
+	for i=1, _G.NUM_CHAT_WINDOWS do
+		local name = _G.GetChatWindowInfo(i)
+		if name and name:lower() == 'output' then
+			default_channel = i
+		end
+	end
+end
+
 -- Add message to internal debug log
 function WoWPro:Add2Log(level,msg)
     if WoWPro.DebugLevel >= level then
-        DEFAULT_CHAT_FRAME:AddMessage( msg )
+		if default_channel then
+			_G["ChatFrame"..default_channel]:AddMessage(msg);
+		else
+			_G.SELECTED_CHAT_FRAME:AddMessage(msg)
+		end
+       -- DEFAULT_CHAT_FRAME:AddMessage( msg )
     end
 	WoWPro.Serial = WoWPro.Serial + 1
 	if WoWPro.Serial > 9999 then
@@ -49,6 +70,7 @@ function WoWPro:Add2Log(level,msg)
 	end
 end
 -- Debug print function --
+
 function WoWPro:dbp(message,...)
 	if WoWPro.DebugLevel > 0 and message ~= nil then
 	    local msg = string.format("|c7f007f00%s|r: "..message, self.name or "Wow-Pro",...)
@@ -77,16 +99,26 @@ WoWPro:Export("Print")
 -- WoWPro warning function --
 function WoWPro:Warning(message,...)
 	if message ~= nil then
-	    local msg = string.format("|cffffff00%s|r: "..message, self.name or "Wow-Pro",...)
+	    local msg = string.format("|cffffff00%s|r: "..tostring(message), self.name or "Wow-Pro",tostringall(...))
         WoWPro:Add2Log(0,msg)
 	end
 end
 WoWPro:Export("Warning")
 
 -- WoWPro error function --
+local err_text_table = {}
 function WoWPro:Error(message,...)
 	if message ~= nil then
-	    local msg = string.format("|cffff7d0a%s|r: "..message, self.name or "Wow-Pro",...)
+		wipe(err_text_table)
+		for i=1,select('#', ...) do
+			local v = select(i, ...);
+			if (type(v) == "string") then
+				err_text_table[i] = v:gsub("[|]", "||")
+			else
+				err_text_table[i] = v 
+			end
+		end
+	    local msg = string.format("|cffff7d0a%s|r: "..message, self.name or "Wow-Pro",unpack(err_text_table))
         WoWPro:Add2Log(0,msg)
 	end
 end
@@ -128,7 +160,7 @@ local function orderedNext(t, state)
     -- Equivalent of the next function, but returns the keys in the alphabetic
     -- order. We use a temporary ordered key table that is stored in the
     -- table being iterated.
-
+    local key
     if state == nil then
         -- the first time, generate the index
         t._orderedIndex = _generateOrderedIndex( t )
@@ -237,7 +269,7 @@ local defaults = { profile = {
 	autoload = true,
 	guidescroll = false,
 	checksound = true,
-	checksoundfile = [[Sound\Interface\MapPing.wav]],
+	checksoundfile = [[Sound\Interface\MapPing.ogg]],
 	rank = 2,
 	resize = false,
 	autoresize = true,
@@ -269,6 +301,14 @@ local defaults = { profile = {
 	stickytitletextcolor = {1, 1, 1},
 } }
 
+-- Core Tag Setup --
+WoWPro.Tags = { "action", "step", "note", "index", "map", "sticky", 
+	"unsticky", "use", "zone", "lootitem", "lootqty", "optional", 
+	"level", "QID","target", "prof", "mat", "rank", "rep","waypcomplete", "why",
+	 "noncombat","active","ach","spell","qcount","NPC","questtext","prereq","leadin","faction",
+	 "nobuff", "altfp", "daily", "zoneName", "mapID", "map_level",	-- Added by LaoTSeu
+	 "buff", "chat","recipe", "gossip","conditional","pet", "building", "item", "guide", "availible"
+}
 
 -- Called before all addons have loaded, but after saved variables have loaded. --
 function WoWPro:OnInitialize()
@@ -285,7 +325,11 @@ function WoWPro:OnInitialize()
 	WoWProCharDB.completedQIDs = WoWProCharDB.completedQIDs or {}
 	WoWProCharDB.skippedQIDs = WoWProCharDB.skippedQIDs or {}
 	WoWProDB.global.QID2Guide = WoWProDB.global.QID2Guide  or {}
-	WoWProDB.global.Guide2QIDs = WoWProDB.global.Guide2QIDs  or {}
+   WoWProDB.global.Guide2QIDs = WoWProDB.global.Guide2QIDs  or {}
+	WoWProDB.global.DailyQuests = WoWProDB.global.DailyQuests or {} -- Detected by GetQuestLogTitle and kept between logins
+   WoWPro.DailyQuests = {} -- Set by |DAILY| flags when the guides are parsed and forgotten between logins
+
+	WoWProDB.global.Deltas = {}
 	WoWProDB.global.RecklessCombat = false
 	WoWProDB.global.Achievements = WoWProDB.global.Achievements or {}
 	WoWProDB.global.NpcFauxQuests = WoWProDB.global.NpcFauxQuests or {}
@@ -298,20 +342,28 @@ function WoWPro:OnInitialize()
 	if WoWProCharDB.Enabled == nil then
 	    WoWProCharDB.Enabled = true
 	end
+	WoWProDB.global.Deltas = {}
 	WoWProDB.global.Log = {}
-	WoWProCharDB.DebugLevel = WoWProCharDB.DebugLevel or WoWPro.DebugLevel
-	if not WoWProCharDB.DebugLevel then
-		WoWProDB.global.Deltas = {}
+	if WoWProDB.char.currentguide and 
+		WoWProCharDB.Guide and 
+		WoWProCharDB.Guide[WoWProDB.char.currentguide] and 
+		WoWProCharDB.Guide[WoWProDB.char.currentguide].total then
+		WoWProCharDB.Guide[WoWProDB.char.currentguide].total = nil
 	end
+	WoWProCharDB.DebugLevel = WoWProCharDB.DebugLevel or WoWPro.DebugLevel
 	if WoWProCharDB.AutoHideInsideInstances == nil then
 	    WoWProCharDB.AutoHideInsideInstances = true
 	end
-    WoWPro.DebugLevel = WoWProCharDB.DebugLevel
-    WoWPro.GossipText = nil
-    WoWPro.GuideLoaded = false
-    WoWPro.EnableGrail = WoWProCharDB.EnableGrail or True
-    WoWProDB.profile.Selector = WoWProDB.profile.Selector or {}
-    WoWPro.inhibit_oldQuests_update = false
+	WoWPro.DebugLevel = WoWProCharDB.DebugLevel
+   WoWPro.GossipText = nil
+   WoWPro.GuideLoaded = false
+   WoWPro.EnableGrail = WoWProCharDB.EnableGrail or True
+   WoWProDB.profile.Selector = WoWProDB.profile.Selector or {}
+
+	WoWProCharDB.Trades  = WoWProCharDB.Trades or {}
+	if WoWProCharDB.Enabled == nil then
+	    WoWProCharDB.Enabled = true
+	end
 end
 
 
@@ -324,10 +376,17 @@ end
 
 -- Called when the addon is enabled, and on log-in and /reload, after all addons have loaded. --
 function WoWPro:OnEnable()
+	-- Find the default channel
+	setDefaultChanelForPrint()
+
 	WoWPro:Print("|cff33ff33Enabled|r: Version %s", WoWPro.Version)
     if  WoWProDB.global.RecklessCombat then
         WoWPro:Warning("Achtung!  Beware! Peligro!  Reckless Combat mode enabled.  InCombat interlocks disabled!")
     end
+	
+	-- Diable Aboutis if present since it conflict with WoWPro quest automation
+	if _G.Aboutis then _G.Aboutis:Disable() end
+
 	-- Loading Frames --
 	if not WoWPro.FramesLoaded then --First time the addon has been enabled since UI Load
 		WoWPro:CreateFrames()
@@ -347,6 +406,15 @@ function WoWPro:OnEnable()
 	for name, module in WoWPro:IterateModules() do
 		WoWPro:dbp("Enabling "..name.." module...")
 		module:Enable()
+		
+		-- Build the complete list of possible action labels
+		if module.actionlabels then
+			for k, v in pairs(module.actionlabels) do
+				if not WoWPro.actionlabels[k] then
+					WoWPro.actionlabels[k] = v
+				end
+			end
+		end
 	end
 	
 	WoWPro:CustomizeFrames()	-- Applies profile display settings
@@ -374,6 +442,7 @@ function WoWPro:OnEnable()
 		"PLAYER_REGEN_ENABLED", "PARTY_MEMBERS_CHANGED", "QUEST_LOG_UPDATE",
 		"UPDATE_BINDINGS", "PLAYER_ENTERING_WORLD", "PLAYER_LEAVING_WORLD","UNIT_AURA", "TRADE_SKILL_SHOW", "GOSSIP_SHOW",
 		"QUEST_DETAIL", "QUEST_GREETING", "QUEST_TURNED_IN", "QUEST_ACCEPTED", "CINEMATIC_START", "CINEMATIC_STOP", "ZONE_CHANGED_NEW_AREA",
+		"GARRISON_FOLLOWER_ADDED",
 		"PLAYER_TARGET_CHANGED",
 		"PET_BATTLE_OPENING_START", "PET_BATTLE_PET_ROUND_RESULTS", "CHAT_MSG_PET_BATTLE_COMBAT_LOG", "PET_BATTLE_FINAL_ROUND", "PET_BATTLE_CLOSE",
 		"SCENARIO_UPDATE", "SCENARIO_CRITERIA_UPDATE", "SCENARIO_SPELL_UPDATE", "SCENARIO_COMPLETED", "SCENARIO_CRITERIA_SHOW_STATE_UPDATE",
@@ -381,12 +450,14 @@ function WoWPro:OnEnable()
 	})
 	bucket:RegisterBucketEvent({"CHAT_MSG_LOOT", "BAG_UPDATE"}, 0.333, WoWPro.AutoCompleteLoot)
 	bucket:RegisterBucketEvent({"CRITERIA_UPDATE"}, 0.250, WoWPro.AutoCompleteCriteria)
+	bucket:RegisterBucketEvent({"GOSSIP_SHOW", "QUEST_GREETING", "QUEST_DETAIL", "QUEST_PROGRESS", "QUEST_COMPLETE"}, 0.1, WoWPro.QuestDialogAutomation)
 	bucket:RegisterBucketEvent({"LOOT_CLOSED"}, 0.250, WoWPro.AutoCompleteChest)
+	bucket:RegisterBucketMessage("WoWPro_QuestDialogAutomation", 0.1, WoWPro.QuestDialogAutomation)
 	bucket:RegisterBucketMessage("WoWPro_LoadGuide",0.25,WoWPro.LoadGuideReal)
 	bucket:RegisterBucketMessage("WoWPro_LoadGuideSteps",0.25,WoWPro.LoadGuideStepsReal)
 	bucket:RegisterBucketMessage("WoWPro_GuideSetup",0.25,WoWPro.SetupGuideReal)
 	bucket:RegisterBucketMessage("WoWPro_UpdateGuide",0.333,WoWPro.UpdateGuideReal)
-	bucket:RegisterBucketMessage("WoWPro_PuntedQLU",0.333,WoWPro.PuntedQLU)
+	-- bucket:RegisterBucketMessage("WoWPro_PuntedQLU",0.333,WoWPro.PuntedQLU)
 	bucket:RegisterBucketMessage("WoWPro_GuideSelect",0.333,WoWPro.SelectGuideReal)
 	if WoWPro.Recorder then
 	    bucket:RegisterBucketMessage("WoWPro_PostQuestLogUpdate",0.1,WoWPro.Recorder.PostQuestLogUpdate)
@@ -410,6 +481,20 @@ function WoWPro:OnEnable()
 	    return
 	end
 
+	-- Remove the empty radio buttons from all menus
+	-- Remove the empty radio button for all
+	for i,v in ipairs(WoWPro.DropdownMenu) do
+		v.notCheckable 	= true
+	end
+
+	WoWPro:LoadGuide()
+	WoWPro.FirstMapCall = true 	-- Force an arrow reset
+	WoWPro:PopulateQuestLog()
+	WoWPro:AutoCompleteQuestUpdate(nil)
+	WoWPro:AutoCompleteZone()
+	
+	WoWPro:UpdateQuestTracker()
+	WoWPro:UpdateGuide()
 end	
 
 -- Called when the addon is disabled --
@@ -424,6 +509,10 @@ function WoWPro:OnDisable()
 	WoWPro.EventFrame:UnregisterAllEvents()	-- Unregisters all events
 	WoWPro:RemoveMapPoint()							-- Removes any active map points
 	WoWPro:Print("|cffff3333Disabled|r: Version %s", WoWPro.Version)
+
+	-- Re-enable Aboutis
+	if _G.Aboutis then _G.Aboutis:Enable() end
+
 end
 
 -- Core Tag Setup --
@@ -464,7 +553,7 @@ end
 -- https://github.com/Rainrider/KlaxxiKillOrder/issues/1
 -- New syntax for UnitGUID() in WoD
 function WoWPro:TargetNpcId()
-    local unitType, _, serverID, instanceID, zoneID, npcID, spawnID = strsplit("-", UnitGUID("target") or "")
+    local unitType, _, serverID, instanceID, zoneID, npcID, spawnID = strsplit(":", UnitGUID("target") or "")
     if not unitType then
         WoWPro:dbp("No target");
         return nil
@@ -527,17 +616,18 @@ function WoWPro:Timeless()
 end
 
 
-function WoWPro:RegisterGuide(GIDvalue, gtype, zonename, authorname, faction)
+function WoWPro:RegisterGuide(GIDvalue, gtype, name, authorname, faction, zone)
     if not WoWPro[gtype] then
         WoWPro:Error("WoWPro:RegisterGuide(%s,%s,...) has bad gtype",GIDvalue,tostring(gtype))
     end
 
     local guide = {
 		guidetype = gtype,
-		zone = zonename,
+		zone = zone or name,
 		author = authorname,
 		faction = faction,
-		GID = GIDvalue
+		GID = GIDvalue,
+		name = name
 	}
 
 
@@ -675,7 +765,7 @@ function WoWPro:HSL2RGB(h,s,l)
   if s == 0 then
     r, g, b = l, l, l -- white
   else
-    function hue2rgb(p, q, t)
+    local function hue2rgb(p, q, t)
       if t < 0 then t = t + 1 end
       if t > 1 then t = t - 1 end
       if t < 1/6 then return p + (q - p) * 6 * t end
@@ -705,7 +795,7 @@ Difficulty[1] = {0,0.9,0.5} -- Red
 Difficulty[2] = {30/360,0.9,0.5} -- Orange
 Difficulty[3] = {60/360,0.9,0.5} -- Yellow
 Difficulty[4] = {120/360,0.9,0.5} -- Green
-Difficulty[5] = {180/360,0.7,0.3} -- Green/Teal
+Difficulty[5] = {180/360,0.8,0.4} -- Green/Teal
 
 function WoWPro:InterpolateHSL(l,h,r)
 --    WoWPro:dbp("WoWPro:InterpolateHSL([%f, %f, %f], [%f, %f, %f], %f)", l[1], l[2], l[3], h[1], h[2], h[3], r)
@@ -721,7 +811,7 @@ function WoWPro:PlayerLevel()
     local UL = UnitLevel("player")
     local XP = UnitXP("player")
     local XPMax = UnitXPMax("player")
-    playerLevel = UL + (XP/XPMax)
+    local playerLevel = UL + (XP/XPMax)
     return playerLevel
 end
 
@@ -763,28 +853,27 @@ end
 
 function WoWPro.LevelColor(guide)
     
-    playerLevel = WoWPro:PlayerLevel()
+    local playerLevel = WoWPro:PlayerLevel()
     if type(guide) == "number" then
 --        WoWPro:dbp("WoWPro.LevelColor(%f)",guide)
         return {WoWPro:QuestColor(guide)}
     end
     if type(guide) == "table" then
 --         WoWPro:dbp("WoWPro.LevelColor(%s)",guide.GID)
-        if (playerLevel < guide['startlevel']) then
-            return {WoWPro:QuestColor(guide['level'] or guide['endlevel'])}
+        if (playerLevel < (guide['startlevel'] or 1)) then
+            return {WoWPro:QuestColor(guide['level'] or guide['endlevel'] or 100)}
         end
-        if (playerLevel >  guide['endlevel']) then
-            return {WoWPro:QuestColor(guide['endlevel'])}
+        if (playerLevel >  (guide['endlevel'] or 100)) then
+            return {WoWPro:QuestColor(guide['endlevel'] or 100)}
         end
         if guide['level'] then
-            return {WoWPro:QuestColor(guide['level'])}
+            return {WoWPro:QuestColor(guide['level'] or 1)}
         else
-            return {WoWPro:QuestColor((guide['startlevel']+guide['endlevel'])/2.0)}
+            return {WoWPro:QuestColor(( (guide['startlevel'] or 1) * 3 + (guide['endlevel'] or 100) ) / 4.0)}
         end
     end
     
 end
-
 -- Creating a Table of Guides for the Guide List and sorting based on level --
 local guides
 
@@ -828,7 +917,6 @@ function WoWPro:ResolveIcon(guide)
         end
     end
 end
-
 
 function WoWPro:GuideIcon(guide,gtype,gsubtype)
     gtype = strupper(gtype)

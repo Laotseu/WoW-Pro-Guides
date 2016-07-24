@@ -173,9 +173,9 @@ C Those That Couldn't Be Saved|QID|26799|S|M|46.47,74.85|R|Undead|N|Kill zombies
 
 A The Wakening|QID|24960|M|45.93,80.44|R|Undead|N|From Caretaker Caice. Speak with the Forsaken at each waypoint and go through their conversation.|
 
-C Lilian Voss|QID|24960|NC|M|44.22,70.64|QO|1|R|Undead|CHAT|
-C Marshal Redpath|QID|24960|NC|M|46.54,71.11|QO|2|R|Undead|CHAT|
-C Valdred Moray|QID|24960|NC|M|40.68,72.96|QO|3|R|Undead|CHAT|
+C Lilian Voss|QID|24960|CHAT|M|44.22,70.64|QO|1|R|Undead|
+C Marshal Redpath|QID|24960|CHAT|M|46.54,71.11|QO|2|R|Undead|
+C Valdred Moray|QID|24960|CHAT|M|40.68,72.96|QO|3|R|Undead|
 
 C Those That Couldn't Be Saved|QID|26799|US|M|46.47,74.85|R|Undead|N|Kill zombies.|
 T The Wakening|QID|24960|M|45.93,80.44|R|Undead|N|To Caretaker Caice.|
@@ -257,7 +257,7 @@ T No Better Than the Zombies|QID|24970|M|67.01,42.32|N|To Darnell.|
 
 A Assault on the Rotbrain Encampment|QID|24971|M|67.01,42.32|N|From Darnell.|PRE|24970|
 C Assault on the Rotbrain Encampment|QID|24971|M|70.03,69.71|QO|2|S|N|Kill the hostile undead.
-K Marshal Redpath|QID|24971|M|70.03,69.71|QO|1|N|Marshal Redpath was once tough to take on alone.|
+K Marshal Redpath|QID|24971|T|Marshal Redpath|M|70.03,69.71|QO|1|N|Marshal Redpath was once tough to take on alone.|
 C Assault on the Rotbrain Encampment|QID|24971|M|70.03,69.71|QO|2|N|Kill the hostile undead.|
 T Assault on the Rotbrain Encampment|QID|24971|M|46.61,58.83|US|N|To Shadow Priest Sarvis.|
 
