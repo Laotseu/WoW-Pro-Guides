@@ -36,9 +36,9 @@ WoWPro.actiontypesdesc = {
 }
 WoWPro.actiontypes = {
 	A = "Interface\\GossipFrame\\AvailableQuestIcon",
-	C = [[Interface\MINIMAP\OBJECTICONS]],
-	--C = "Interface\\CHARACTERFRAME\\UI-StateIcon",
-	--C = [[Interface\QUESTFRAME\QuestTypeIcons]],
+	-- C = [[Interface\MINIMAP\OBJECTICONS]],
+	-- C = "Interface\\CHARACTERFRAME\\UI-StateIcon",
+	C = "Interface\\WorldStateFrame\\CombatSwords",
 	T = "Interface\\GossipFrame\\ActiveQuestIcon",
 	--K = "Interface\\Icons\\Ability_Creature_Cursed_02",
 	K = "Interface\\MINIMAP\\OBJECTICONS",
@@ -73,9 +73,9 @@ WoWPro.actiontypes = {
 	turnindaily = "Interface\\GossipFrame\\DailyActiveQuestIcon",
 }
 WoWPro.actiontypecoords = {
-	C = { 4/8, 5/8, 5/8, 6/8 },
-	--C = { 1/2, 1, 0, 1/2 },
-	--C = { 2/7, 3/7, 1/4, 2/4 },
+	-- C = { 7/8, 8/8, 5/8, 6/8 },
+	-- C = { 1/2, 1, 0, 1/2 },
+	C = { 0/2, 1/2, 0/2, 1/2 },
 	K = { 7/8, 8/8, 6/8, 7/8 },
 	F = { 4/8, 5/8, 2/8, 3/8 },
 	f = { 5/8, 6/8, 1/8, 2/8 },
@@ -295,7 +295,11 @@ end
 
 local TagTable = {}
 local function DefineTag(action, key, vtype, validator, setter)
-    TagTable[action] = {key=key, vtype=vtype, validator=validator, setter=setter}
+	if action == nil then
+		err("DefineTag: invalid action '%s' : key = %s, vtype = %s, validator = %s, setter = %s", action, key, vtype, validator, setter)
+	else
+    	TagTable[action] = {key=key, vtype=vtype, validator=validator, setter=setter}
+   end
 end
 
 DefineTag("N","note","string",nil,nil)
@@ -468,8 +472,13 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	            WoWPro:Error("Tag %s has a bad key value of '%s'. Report this!", tag, tostring(tag_spec.key))
 	            tag = nil
 	        end
+
+	        if tag_spec.key == nil or WoWPro[tag_spec.key] == nil then
+	        		err("Line = %s", text)
+	        		err("tag = %s, tag_spec.key = %s, WoWPro[tag_spec.key] = %s, idx = %s, action = %s, step = %s", tag, tag_spec.key, WoWPro[tag_spec.key], idx, WoWPro.action[i], WoWPro.step[i])
+	        end
 	        if tag_spec.key and WoWPro[tag_spec.key][i] then
-	            WoWPro:Warning("%d:Duplicate tag ¦%s¦ in [%s].",i,tag,atext)
+	            WoWPro:Warning("%d:Step %s [%s] has duplicate tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
 	        end
 	        if tag_spec.vtype == "boolean" then
 	            -- We only care that it exists
@@ -479,25 +488,25 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	            idx = idx + 1
 	            value = tonumber(tags[idx])
 	            if not value then
-	                WoWPro:Warning("%d:Bad value for tag ¦%s¦%s¦ in [%s].",i,tag, tags[idx],atext)
+	                WoWPro:Warning("%d:Step %s [%s] has an bad value for tag ||%s||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag, value)
 	            end
 	        elseif tag_spec.vtype == "string" then
 	            -- pop the next value off the stack
 	            idx = idx + 1
 	            value = tags[idx]
 	            if not value then
-	                WoWPro:Warning("%d:Missing value for tag %s in [%s].",i,tag,atext)
+	                WoWPro:Warning("%d:Step %s [%s] has an missing value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
 	            elseif string.len(value) == 0 then
-	                WoWPro:Warning("%d:Empty value for tag ¦%s¦ in [%s].",i,tag,atext)
+	                WoWPro:Warning("%d:Step %s [%s] has an empty value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
 	            end
 	        elseif tag_spec.vtype == "guide" then
 	            -- pop the next value off the stack
 	            idx = idx + 1
 	            value = tags[idx]
 	            if not value then
-	                WoWPro:Warning("%d:Missing value for tag ¦%s¦ in [%s].",i,tag,atext)
+	                WoWPro:Warning("%d:Step %s [%s] has a missing value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
 	            elseif not WoWPro.Guides[value] then
-	                WoWPro:Warning("%d:Invalid value for tag ¦%s¦ in [%s].",i,tag,atext)
+	                WoWPro:Warning("%d:Step %s [%s] has an invalid value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
 	            end
 	        else
 	            WoWPro:Error("Tag %s has a bad key vtype of '%s'. Report this!", tag, tag_spec.vtype)
@@ -505,7 +514,7 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	        if tag and tag_spec.validator then
 	        		local valid, msg = tag_spec.validator(WoWPro.action[i],WoWPro.step[i],tag,value,i)
 	            if not valid then
-	                WoWPro:Warning("%d:Validation failed for tag ¦%s¦%s¦ in [%s].",i,tag, value,atext)
+	                WoWPro:Warning("Step %s [%s] has a bad value for tag ||%s||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag, value)
 	                if msg then
 	                	WoWPro:Warning("   " .. msg)
 	                end
@@ -567,7 +576,7 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	end
 
 	local GQL = tonumber(WoWPro:GrailQuestLevel(WoWPro.QID[i]))
-    WoWPro.level[i] = WoWPro.level[i] or GCL
+    WoWPro.level[i] = WoWPro.level[i] or (WoWPro.action[i] == "A" and GQL)
 	
 	if GQL and GQL < 1 and tonumber(WoWPro.QID[i]) < 100000  then
 	    WoWPro:dbp("Guide %s QID %s: Grail reports %s!",GID,WoWPro.QID[i],GQL)
@@ -906,8 +915,10 @@ function WoWPro.SetupGuideReal()
 	
 	WoWPro.GuideLoaded = true
 	
+	WoWPro.FirstMapCall = true 	-- Force an arrow reset
 	WoWPro:PopulateQuestLog()
 	WoWPro:AutoCompleteQuestUpdate()
+	WoWPro:AutoCompleteZone()
 	WoWPro:UpdateQuestTracker()
 	WoWPro:UpdateGuide("WoWPro:LoadGuideSteps()")
 	WoWPro:SendMessage("WoWPro_PostLoadGuide")

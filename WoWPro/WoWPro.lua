@@ -307,7 +307,8 @@ WoWPro.Tags = { "action", "step", "note", "index", "map", "sticky",
 	"level", "QID","target", "prof", "mat", "rank", "rep","waypcomplete", "why",
 	 "noncombat","active","ach","spell","qcount","NPC","questtext","prereq","leadin","faction",
 	 "nobuff", "altfp", "daily", "zoneName", "mapID", "map_level",	-- Added by LaoTSeu
-	 "buff", "chat","recipe", "gossip","conditional","pet", "building", "item", "guide", "availible"
+	 "buff", "chat","recipe", "gossip","conditional","pet", "building", "item", "guide", "availible", 
+	 "sobjective", "pet1", "pet2", "pet3", "strategy",
 }
 
 -- Called before all addons have loaded, but after saved variables have loaded. --
@@ -361,9 +362,6 @@ function WoWPro:OnInitialize()
    WoWProDB.profile.Selector = WoWProDB.profile.Selector or {}
 
 	WoWProCharDB.Trades  = WoWProCharDB.Trades or {}
-	if WoWProCharDB.Enabled == nil then
-	    WoWProCharDB.Enabled = true
-	end
 end
 
 
@@ -436,7 +434,8 @@ function WoWPro:OnEnable()
     
 
 	-- Event Setup --
-	local bucket = LibStub("AceBucket-3.0")
+	WoWPro.bucket = WoWPro.bucket or LibStub("AceBucket-3.0")
+	local bucket = WoWPro.bucket
 	WoWPro:dbp("Registering Events: Core Addon")
 	WoWPro:RegisterEvents( {															-- Setting up core events
 		"PLAYER_REGEN_ENABLED", "PARTY_MEMBERS_CHANGED", "QUEST_LOG_UPDATE",
@@ -464,7 +463,7 @@ function WoWPro:OnEnable()
 	    bucket:RegisterBucketMessage("WoWPro_PostLoadGuide",0.1,WoWPro.Recorder.PostGuideLoad)
 	    bucket:RegisterBucketMessage("WoWPro_PostUpdateGuide",0.1,WoWPro.Recorder.PostUpdateGuide)
 	else
-	    bucket:RegisterBucketMessage("WoWPro_PostQuestLogUpdate",0.1,WoWPro.PostQuestLogUpdate)
+	    -- bucket:RegisterBucketMessage("WoWPro_PostQuestLogUpdate",0.1,WoWPro.PostQuestLogUpdate)
 	end
 	
 	WoWPro.LockdownTimer = nil
@@ -488,17 +487,20 @@ function WoWPro:OnEnable()
 	end
 
 	WoWPro:LoadGuide()
-	WoWPro.FirstMapCall = true 	-- Force an arrow reset
-	WoWPro:PopulateQuestLog()
-	WoWPro:AutoCompleteQuestUpdate(nil)
-	WoWPro:AutoCompleteZone()
+
+	-- Pushed to WoWPro.SetupGuideReal()
+	-- WoWPro.FirstMapCall = true 	-- Force an arrow reset
+	-- WoWPro:PopulateQuestLog()
+	-- WoWPro:AutoCompleteQuestUpdate(nil)
+	-- WoWPro:AutoCompleteZone()
 	
-	WoWPro:UpdateQuestTracker()
-	WoWPro:UpdateGuide()
+	-- WoWPro:UpdateQuestTracker()
+	-- WoWPro:UpdateGuide()
 end	
 
 -- Called when the addon is disabled --
 function WoWPro:OnDisable()
+	--err("OnDisable was called")
 	-- Module Disabling --
 	for name, module in WoWPro:IterateModules() do
 		WoWPro:dbp("Disabling "..name.." module...")
@@ -506,6 +508,7 @@ function WoWPro:OnDisable()
 	end
 
 	WoWPro:AbleFrames()								-- Hides all frames
+	WoWPro.bucket:UnregisterAllBuckets()		-- Unregister all buckets
 	WoWPro.EventFrame:UnregisterAllEvents()	-- Unregisters all events
 	WoWPro:RemoveMapPoint()							-- Removes any active map points
 	WoWPro:Print("|cffff3333Disabled|r: Version %s", WoWPro.Version)
@@ -517,7 +520,7 @@ end
 
 -- Core Tag Setup --
 -- These are not part of any tag per say.  All others are defined in _Parser.lua
-WoWPro.Tags = { action=true, step=true, lootqty=true, why=true, qcount=true, conditional=true}
+--WoWPro.Tags = { action=true, step=true, lootqty=true, why=true, qcount=true, conditional=true}
 
 -- Tag Registration Function --
 function WoWPro:RegisterTags(tagtable)

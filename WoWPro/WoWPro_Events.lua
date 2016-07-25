@@ -66,14 +66,14 @@ function WoWPro:TakeTaxi(index,destination)
 end
 
 -- Auto-Complete: Get flight point --
-function WoWPro:AutoCompleteGetFP(...)
+function WoWPro:AutoCompleteGetFP(messageType, message)
 	local zonetext = GetMinimapZoneText()
 	if not zonetext or zonetext == "" then return end
 	for i = 1,15 do
 		local index = WoWPro.rows[i].index
 		local step =  WoWPro.step[index]
 		local altfp = WoWPro.altfp[index]
-		if ((... == ERR_NEWTAXIPATH and WoWPro.action[index] == "f" and (zonetext == step or altfp == zonetext)) or
+		if ((message == ERR_NEWTAXIPATH and WoWPro.action[index] == "f" and (zonetext == step or altfp == zonetext)) or
 			 (WoWPro.action[index] == "f" and (WoWProCharDB.Taxi[step] or (altfp and WoWProCharDB.Taxi[altfp]))))
 			and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[index] then
 
@@ -165,6 +165,7 @@ end
 
 -- Auto-Complete: Loot based --
 function WoWPro.AutoCompleteLoot()
+	if WoWPro.lootitem == nil then return end
 	for i = 1,1+WoWPro.ActiveStickyCount do
 	    local lootqtyi
 		local index = WoWPro.rows[i].index

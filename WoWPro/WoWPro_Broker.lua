@@ -172,7 +172,7 @@ end
 -- Guide Load --
 function WoWPro:LoadGuide(guideID)
     WoWPro:dbp("Signaled for LoadGuide %s",tostring(guideID))
-    --err("Signaled for LoadGuide %s", guideID)
+    -- err("Signaled for LoadGuide %s", guideID)
     if guideID then
         WoWProDB.char.currentguide = guideID
     end
@@ -695,38 +695,38 @@ function WoWPro:NextStep(k,i)
  			break
     	end
 
-        -- Scenario objectives
-        if WoWPro.sobjective[k] then
-            local stage, objective = string.split(";",WoWPro.sobjective[k])
-            stage = tonumber(stage)
-            objective = tonumber(objective) or 0
-            if not WoWPro.Scenario then
-                skip = true
-                break
-            end
-            if WoWPro.Scenario.currentStage > stage then
-                WoWPro.CompleteStep(k, "Stage completed")
-                   skip = true
-                   break
-               end
-               if WoWPro.Scenario.currentStage < stage then
-                   WoWPro.why[k] = "NextStep(): Stage is not active yet."
-                   skip = true
-                   break
-               end
-               if objective > 0 then
-                   if objective > WoWPro.Scenario.numCriteria then
-                       WoWPro:Error("Invalid objective number")
-                       skip = true
-                       break
-                   end
-                   if WoWPro.Scenario.Criteria[objective].completed then
-                       WoWPro.CompleteStep(k, "Scenario objective completed")
-                       skip = true
-                       break
-                   end
-               end
-        end
+		-- Scenario objectives
+		if WoWPro.sobjective[k] then
+		   local stage, objective = string.split(";",WoWPro.sobjective[k])
+		   stage = tonumber(stage)
+		   objective = tonumber(objective) or 0
+		   if not WoWPro.Scenario then
+		       skip = true
+		       break
+		   end
+		   if WoWPro.Scenario.currentStage > stage then
+		       WoWPro.CompleteStep(k, "Stage completed")
+		          skip = true
+		          break
+		      end
+		      if WoWPro.Scenario.currentStage < stage then
+		          WoWPro.why[k] = "NextStep(): Stage is not active yet."
+		          skip = true
+		          break
+		      end
+		      if objective > 0 then
+		          if objective > WoWPro.Scenario.numCriteria then
+		              WoWPro:Error("Invalid objective number")
+		              skip = true
+		              break
+		          end
+		          if WoWPro.Scenario.Criteria[objective].completed then
+		              WoWPro.CompleteStep(k, "Scenario objective completed")
+		              skip = true
+		              break
+		          end
+		      end
+		end
 
 
     	-- Skip T steps that have conditinal set to true and are not completed
@@ -761,7 +761,7 @@ function WoWPro:NextStep(k,i)
 	   end	
 
 	   -- Complete "h" steps if the Hearthstone is already bound to the correct desnisation
-           if (WoWPro.action[k] == "C" or WoWPro.action[k] == "T") and QID then
+	   if WoWPro.action[k] == "h" and WoWPro.step[k] == GetBindLocation() and k <= CurrentIndex then
 		   WoWPro.CompleteStep(k, "Hearthstone already set to "..WoWPro.step[k])
 		   skip = true
 		   break
@@ -1505,7 +1505,7 @@ end
 -- 	for QID, questInfo in pairs(WoWPro.oldQuests) do
 -- 		if not WoWPro.QuestLog[QID] then 
 -- 			WoWPro.missingQuest = QID 
-			WoWPro:print("Missing Quest: %d [%s]",QID, tostring(WoWPro.oldQuests[QID].title))
+--			WoWPro:print("Missing Quest: %d [%s]",QID, tostring(WoWPro.oldQuests[QID].title))
 -- 		end
 -- 	end
 
