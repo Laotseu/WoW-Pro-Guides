@@ -91,7 +91,7 @@ C Araj the Summoner|QID|26925|U|60678|M|45.25,69.12|N|Aral is at the center of A
 T Araj the Summoner|QID|26925|M|47.83,65.14|N|To Koltira Deathweaver.|
 A Scholomancer|QID|26924|M|47.73,65.17|N|From Koltira Deathweaver.|
 A Brute Strength|QID|27117|M|47.73,65.17|N|From Koltira Deathweaver.|
-C Brute Strength|QID|27117|M|46.64,71.53|N|He's inside the broken tower. He's elite, so be careful!|
+K The Ravenian|QID|27117|T|The Ravenian|M|46.64,71.53|N|He's inside the broken tower. He's elite, so be careful!|
 C Scholomancer|QID|26924|M|45.23,72.98|N|Your commander will come to help you when you get the Scholomancer to half health.|
 T Scholomancer|QID|26924|M|47.80,65.24|N|To Koltira Deathweaver, back at the Horde camp.|
 T Brute Strength|QID|27117|M|47.80,65.24|N|To Koltira Deathweaver.|
@@ -113,17 +113,17 @@ T Latent Disease|QID|26934|M|83.24,69.29|Z|Tirisfal Glades|N|To Apothecary Dithe
 A Who Needs Cauldrons?|QID|26978|PRE|26934|M|83.24,69.28|Z|Tirisfal Glades|N|From Apothecary Dithers.|
 T After the Crusade|QID|26930|M|83.22,69.00|Z|Tirisfal Glades|N|To High Executor Derrington.|
 C Foes Before Hoes|QID|26933|S|M|36.79,57.70|N|Kill laborers around the Felstone Field.|
-C Leave Drum near Windmill|QID|26978|U|60753|QO|Leave Drum near Windmill: 1/1|M|37.25,56.53|N|Use the drum and place it near the windmill.|
-C Leave Drum inside Barn|QID|26978|U|60753|QO|Leave Drum inside Barn: 1/1|M|38.77,55.18|N|Use the drum and place it inside the ranch house.|
-C Leave Drum inside Ranch House|QID|26978|U|60753|QO|Leave Drum inside Ranch House: 1/1|M|38.12,54.42|N|Use the drum and place it inside the ranch house.|
-C Leave Drum near Grain Silos|QID|26978|U|60753|QO|Leave Drum near Grain Silos: 1/1|M|36.89,54.59|N|Use the drum and place it near the grain silos.|
+C Leave Drum near Windmill|QID|26978|NC|U|60753|QO|Leave Drum near Windmill: 1/1|M|37.25,56.53|N|Use the drum and place it near the windmill.|
+C Leave Drum inside Barn|QID|26978|NC|U|60753|QO|Leave Drum inside Barn: 1/1|M|38.77,55.18|N|Use the drum and place it inside the ranch house.|
+C Leave Drum inside Ranch House|QID|26978|NC|U|60753|QO|Leave Drum inside Ranch House: 1/1|M|38.12,54.42|N|Use the drum and place it inside the ranch house.|
+C Leave Drum near Grain Silos|QID|26978|NC|U|60753|QO|Leave Drum near Grain Silos: 1/1|M|36.89,54.59|N|Use the drum and place it near the grain silos.|
 C Foes Before Hoes|QID|26933|US|M|36.79,57.70|N|Kill laborers around the Felstone Field.|
 T Foes Before Hoes|QID|26933|M|83.41,69.96|Z|Tirisfal Glades|N|To Shadow Priestess Vandis, back at the Bulwark.|
 T Who Needs Cauldrons?|QID|26978|M|83.21,69.30|Z|Tirisfal Glades|N|To Apothecary Dithers.|
 A Lower the Boom|QID|26936|PRE|26978|M|83.19,69.01|Z|Tirisfal Glades|N|From High Executor Derrington. If this step does not auto-complete, check it off manually.|
 A Strange New Faces|QID|26979|PRE|26936|M|83.19,69.01|Z|Tirisfal Glades|N|From High Executor Derrington.|
 A The Menders' Stead|QID|26952|PRE|26978|M|83.19,68.62|Z|Tirisfal Glades|N|From Argent Officer Garush.|
-R Charred Outpost|QID|26979|M|40.66,52.08|N|Northeast of Felstone Field.|
+;R Charred Outpost|QID|26979|M|40.66,52.08|N|Northeast of Felstone Field.|
 T Strange New Faces|QID|26979|M|40.66,52.08|N|To Lindsay Ravensun.|
 A When Death is Not Enough|QID|26937|PRE|26979|M|40.65,52.03|N|From Lindsay Ravensun.|
 C When Death is Not Enough|QID|26937|M|38.48,56.75|N|Kill Alliance Laborers in Felstone Field and allow the valkyr to raise them.|
@@ -131,7 +131,7 @@ T When Death is Not Enough|QID|26937|N|The turn-in should pop up automatically.|
 A Combat Training|QID|26938|N|The quest should pop up auto-matically.|
 C Combat Training|QID|26938|M|38.77,55.21|N|Use the valkyr's Call to Arms ability on 5 forsaken around the farm, then head into the barn and use your army to defeat the behemoth there.|
 T Combat Training|QID|26938|M|40.66,52.08|N|To Lindsay Ravensun.|
-R The Menders' Stead|QID|26952|M|49.31,54.80|N|Follow the road east.|
+;R The Menders' Stead|QID|26952|M|49.31,54.80|N|Follow the road east.|
 T The Menders' Stead|QID|26952|M|49.31,54.80|N|To Field Agent Kaartish.|
 A A New Era for the Plaguelands|QID|26999|M|49.31,54.80|N|From Field Agent Kaartish.|
 A Zen'Kiki, the Druid|QID|26953|M|48.96,54.77|N|From Adrine Towhide.|
@@ -165,7 +165,7 @@ A This Means WAR (Wild Arachnid Roundup)|QID|27001|PRE|27000|M|48.11,32.41|N|Fro
 C This Means WAR (Wild Arachnid Roundup)|QID|27001|M|47.91,32.84|N|Back on the horse, but this time we are herding spiders toward the Lumber Camp. It's likely you'll only be able to get one at a time, just be patient and use Ability 1 on the oposite side of the spider from the camp.|
 T This Means WAR (Wild Arachnid Roundup)|QID|27001|M|48.11,32.42|N|To Nathaniel Dumah.|
 A An Audience with the Highlord|QID|27002|PRE|27001|M|48.11,32.42|N|From Nathaniel Dumah.|
-R Hearthglen|QID|27012|M|44.66,18.45|N|Follow the road north.|
+;R Hearthglen|QID|27012|M|44.66,18.45|N|Follow the road north.|
 f Hearthglen|QID|27012|M|44.66,18.45|N|At William Henderson.|
 A It's About Time!|QID|27156|M|43.20,15.79|N|From Lieutenant Myner.|
 A The Long Trip Home|QID|26957|M|42.58,15.03|N|From Del Gahrron, on the second floor of the keep.|
@@ -173,14 +173,14 @@ T An Audience with the Highlord|QID|27002|M|42.03,14.75|N|To Highlord Tirion For
 A Taelan Fordring's Legacy|QID|27151|PRE|27002|M|42.17,14.98|N|From Daria L'Rayne.|
 C It's About Time!|QID|27156|M|42.81,16.35|N|Talk to trainies outside the keep, and challenge them to duels.|
 T It's About Time!|QID|27156|M|43.19,15.95|N|To Lieutenant Myner.|
-A Drudges...|QID|27157|M|43.19,15.95|N|From Lieutenant Myner.|
+A Drudges... <Sigh>|QID|27157|M|43.19,15.95|N|From Lieutenant Myner.|
 r Repair/Restock|QID|27157|M|44.85,12.51|N|At Outfitter Mendelev.|
-C Drudges...|QID|27157|M|45.83,11.89;45.47,9.36|CS|N|Head into the cave and kill the spider.|
-T Drudges...|QID|27157|M|43.25,15.93|N|To Lieutenant Myner.|
+C Drudges... <Sigh>|QID|27157|M|45.83,11.89;45.47,9.36|CS|N|Head into the cave and kill the spider.|
+T Drudges... <Sigh>|QID|27157|M|43.25,15.93|N|To Lieutenant Myner.|
 C Taelan Fordring's Legacy|QID|27151|M|54.63,23.60|N|Kill gnolls south of Hearthglen.|
 T Taelan Fordring's Legacy|QID|27151|M|54.48,23.87|N|The turn-in should pop up automatically.|
 A Unusual Behavior... Even For Gnolls|QID|27152|M|54.48,23.87|N|The quest should pop up automatically.|
-C Unusual Behavior... Even For Gnolls|QID|27152|M|57.76,36.11|N|Head to the gnoll camp farther down the road and kill Moldfang.|
+K Moldfang|QID|27152|T|Moldfang|M|57.76,36.11|N|Head to the gnoll camp farther down the road and kill Moldfang.|
 T Unusual Behavior... Even For Gnolls|QID|27152|M|57.76,36.11|N|The turn-in should pop up automatically.|
 A The Good People of Hearthglen|QID|27153|M|57.76,36.11|N|The quest should pop up automatically.|
 C A Gnoll's Resolve|QID|27012|S|M|53.61,45.86|N|Kill and loot gnolls.|

@@ -54,7 +54,7 @@
 -- Who: Jiyambi
 
 local guide = WoWPro:RegisterGuide("ScoSto7980", "Leveling", "The Storm Peaks", "Scoot", "Horde")
-WoWPro:GuideLevels(guide,77,77, 77)
+WoWPro:GuideLevels(guide,77,79, 77)
 WoWPro:GuideNextGuide(guide, "ScoIce8080")
 WoWPro:GuideIcon(guide,"ACH",4928)
 WoWPro:GuideSteps(guide, function()
@@ -74,14 +74,15 @@ A Equipment Recovery |QID|12844|M|41.1,86.1|
 A Reclaimed Rations |QID|12827|M|40.9,85.3|
 A Expression of Gratitude |QID|12836|M|40.9,85.3|
 f K3 |QID|12818|M|40.73,84.57|
-C Clean Up |QID|12818|N|Pick up parts around the smoking hole in the ground .  Kill a few Gnolls while you're at it.|M|39.48,86.76|
+C Reclaimed Rations |QID|12827|NC|S|N|Loot boxes, kill Gnolls|M|35.0,83.8|
+C Clean Up |QID|12818|NC|N|Pick up parts around the smoking hole in the ground.|M|39.48,86.76|
 T Clean Up |QID|12818|M|41.0,86.4|
 
 A Just Around the Corner |QID|12819|M|41.0,86.4|
-C Just Around the Corner |QID|12819|N|THE AREA AROUND AND OVER THE MINE FIELD IS A NO FLY ZONE!!!  Land well away at the first spot and follow the dots in. You will see a clear path. Dismiss any pets you have.  (35.38,89.31) (35.51,89.36) (35.36,89.17) (35.33,88.69) (35.45,88.29) (35.42,87.91) (35.29,87.67) (35.10,87.77).|M|36.2,89.3|
-N CAUTION! |QID|12819|N|Be careful getting out of the Minefield. Start back the way you came in, then make the first right. Follow the clear path. Don't try to fly until you reach the road! Click off when done.  (35.29,87.67) (35.42,87.91) (35.04,88.17) (34.70,87.66) (34.82,87.30) (33.97,86.47)|M|35.10,87.77|
-C Expression of Gratitude |QID|12836|
-C Reclaimed Rations |QID|12827|N|Loot boxes, kill Gnolls|M|35.0,83.8|
+C Just Around the Corner |QID|12819|N|THE AREA AROUND AND OVER THE MINE FIELD IS A NO FLY ZONE!!!  Land well away at the first spot and follow the dots in. You will see a clear path. Dismiss any pets you have.|M|36.2,89.33;35.38,89.31;35.51,89.36;35.36,89.17;35.33,88.69;35.45,88.29;35.42,87.91;35.29,87.67;35.10,87.77|CS|
+N CAUTION! |QID|12819|N|Be careful getting out of the Minefield. Start back the way you came in, then make the first right. Follow the clear path. Don't try to fly until you reach the road! Click off when done.  (35.29,87.67) (35.42,87.91) (35.04,88.17) (34.70,87.66) (34.82,87.30) (33.97,86.47)|M|35.29,87.67;35.42,87.91;35.04,88.17;34.70,87.66;34.82,87.30;33.97,86.47|CS|
+K Gnarlhide |QID|12836|T|Gnarlhide|M|30.4,85.4|
+C Reclaimed Rations |QID|12827|NC|US|N|Loot boxes, kill Gnolls|M|35.0,83.8|
 T Just Around the Corner |QID|12819|M|41.0,86.4|
 
 A Slightly Unstable |QID|12826|M|41.0,86.4|
@@ -97,10 +98,12 @@ A Moving In |QID|12829|M|41.7,80.0|
 A Ore Repossession |QID|12830|M|41.7,80.0|
 N STOP! |QID|12831|N|Don't get a bomb from the U.D.E.D. dispenser yet.|
 
+C Ore Repossession |QID|12830|S|N|Still need ore? Keep killing diggers.|M|44.0,75.9|
+C Moving In |QID|12829|S|N|Keep killing Crystalwebs|
 A Only Partly Forgotten |QID|12831|N|Head into the cave at . Find an Injured Goblin Miner, there are three in the cave, any of them will work.  Kill spiders and diggers along the way.|M|40.36,78.64|
 C Only Partly Forgotten |QID|12831|N|Deep in the cave at |M|47.07,71.18|
-C Moving In |QID|12829|N|Keep killing Crystalwebs|
-C Ore Repossession |QID|12830|N|Still need ore? Keep killing diggers.|M|44.0,75.9|
+C Moving In |QID|12829|US|N|Keep killing Crystalwebs|
+C Ore Repossession |QID|12830|US|N|Still need ore? Keep killing diggers.|M|44.0,75.9|
 T Only Partly Forgotten |QID|12831|N|Turn in to Injured Goblin Miner.  Again, any of them.|M|43.5,75.2|
 
 A Bitter Departure |QID|12832|N|It's an escort.  Talk to the Injured Goblin Miner to begin.|M|43.5,75.2|
@@ -111,7 +114,7 @@ N READ THIS! |QID|12828|N|Time to get a bomb from the U.D.E.D. dispenser.  You o
 C Ample Inspiration |QID|12828|N| Blow up Mammoth, loot meat|U|40686|M|41.7,80.0|
 F Sifreldar Village |QID|12844|M|40,73|
 C They Took Our Men! |QID|12843||N|Kill mobs for keys to the cages.  Pick up K3 Equipment also.|M|39.8,73.3|
-C Equipment Recovery |QID|12844|N|Pick up any more you need.|M|39.8,73.3|
+C Equipment Recovery |QID|12844|NC|N|Pick up any more you need.|M|39.8,73.3|
 F K3 |QID|12843|M|40,86|
 T Equipment Recovery |QID|12844|M|41.1,86.1|
 T They Took Our Men! |QID|12843|M|41.1,86.1|
@@ -122,18 +125,18 @@ T Bitter Departure |QID|12832|M|40.9,85.3|
 T A Delicate Touch |QID|12820|M|40.9,85.3|
 
 A Opening the Backdoor |QID|12821|M|40.9,85.3|
-N Transporter Power Cell |QID|12821|N|.|L|40731|M|45.11,82.38|
-C Opening the Backdoor |QID|12821|N|Transporter. Use the Transporter Power Cell at the Transporter.|U|40731|M|50.66,81.95|
-N Use the Transporter.|QID|12821|
+C Transporter Power Cell |QID|12821|NC|QO|1|M|45.11,82.38|
+C Opening the Backdoor |QID|12821|NC|QO|2|N|Transporter. Use the Transporter Power Cell at the Transporter.|U|40731|M|50.66,81.95|
 T Opening the Backdoor |QID|12821|M|40.9,85.3|
 
-A Know No Fear |QID|12822| M|40.9,85.3|
-N Use the Transporter.|QID|12823|
+A Know No Fear |QID|12822|N|From Ricket.|M|40.9,85.3|
+N Use the Transporter.|QID|12823|M|41.0,85.4|
 
-A A Flawless Plan |QID|12823|
-C Know No Fear |QID|12822|N|Head into the cave at . Kill Watchers and Devotees.|M|48.10,81.45|
+A A Flawless Plan |QID|12823|N|From Gino.|M|50.4,81.6|
+C Know No Fear |QID|12822|S|N|Head into the cave at . Kill Watchers and Devotees.|M|48.10,81.45|
 C A Flawless Plan |QID|12823|N|Place Explosive at the altar .  This will summon Tormar Frostgut.  Kill him, then you can actually take your time exiting the cave, it won't collapse on you.|U|41431|M|50.55,77.70|
-T A Flawless Plan |QID|12823|
+C Know No Fear |QID|12822|US|N|Head into the cave at . Kill Watchers and Devotees.|M|48.10,81.45|
+T A Flawless Plan |QID|12823|N|To Gino.|M|50.4,81.6|
 
 A Demolitionist Extraordinaire |QID|12824|
 N Use the Transporter.|QID|12824|
@@ -162,17 +165,18 @@ C Examples to be Made |QID|12907|N|Turn around, walk to the next room, turn righ
 T Examples to be Made |QID|12907|M|44.4,68.9|
 
 A A Certain Prisoner |QID|12908|M|44.4,68.9|
-T A Certain Prisoner |QID|12908|M|44.4,68.9|
+T A Certain Prisoner |QID|12908|M|44.4,68.9|N|To Lok'lire the Crone|
 
 A A Change of Scenery |QID|12921|M|42.8,68.9|
 T A Change of Scenery |QID|12921|N|Go past where you killed Garhal and out to Brunnhildar Village.  Lok'lira the Crone is on the right.|M|47.5,69.1|
 
-A Is That Your Goblin? |QID|12969|M|47.5,69.1|
+A Is That Your Goblin? |QID|12969|M|47.5,69.1|N|From Lok'lira the Crone|
 C Is That Your Goblin? |QID|12969|N|Fight Agnetta Tyrsdottar .|M|48.23,69.73|
-T Is That Your Goblin? |QID|12969|M|47.5,69.1|
+T Is That Your Goblin? |QID|12969|M|47.5,69.1|N|To Lok'lira the Crone|
 
-A The Hyldsmeet |QID|12970|M|47.5,69.1|
-T The Hyldsmeet |QID|12970|N|Talk to her and get the story.|M|47.5,69.1|
+A The Hyldsmeet |QID|12970|M|47.5,69.1|N|From Lok'lira the Crone|
+C The Hyldsmeet |QID|12970|CHAT|M|47.5,69.1|N|Talk to her and get the story.|
+T The Hyldsmeet |QID|12970|N|To Lok'lira the Crone|M|47.5,69.1|
 
 A Taking on All Challengers |QID|12971|M|47.5,69.1|
 C Taking on All Challengers |QID|12971|N|They're all around the village.|
