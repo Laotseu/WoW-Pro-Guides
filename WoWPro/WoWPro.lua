@@ -34,13 +34,23 @@ _G["BINDING_NAME_CLICK WoWPro_FauxTargetButton:LeftButton"] = "Target quest mob"
 WoWPro.Serial = 99999
 
 -- For print
+local myname = ...
+local myfullname = _G.GetAddOnMetadata(myname, "Title")
 local default_channel = nil
 local function setDefaultChanelForPrint()
 	default_channel = nil
 	for i=1, _G.NUM_CHAT_WINDOWS do
-		local name = _G.GetChatWindowInfo(i)
-		if name and name:lower() == 'output' then
+		local name, _, _, _, _, shown = _G.GetChatWindowInfo(i)
+		if not default_channel and name and shown and (name:lower() == myname:lower() or name:lower() == myfullname:lower()) then
 			default_channel = i
+		end
+	end
+	if not default_channel then
+		for i=1, _G.NUM_CHAT_WINDOWS do
+			local name, _, _, _, _, shown = _G.GetChatWindowInfo(i)
+			if not default_channel and name and shown and name:lower() == 'output' then
+				default_channel = i
+			end
 		end
 	end
 end
@@ -99,8 +109,10 @@ WoWPro:Export("Print")
 -- WoWPro warning function --
 function WoWPro:Warning(message,...)
 	if message ~= nil then
-	    local msg = string.format("|cffffff00%s|r: "..tostring(message), self.name or "Wow-Pro",tostringall(...))
-        WoWPro:Add2Log(0,msg)
+		message = message:gsub("([^|])[|]([^|])", "%1||%1")
+		message = message:gsub("^[|]([^|])", "||%1")
+		message = message:gsub("([^|])[|]$", "%1||")
+      WoWPro:Add2Log(0,string.format("|cffffff00%s|r: "..tostring(message), self.name or "Wow-Pro",tostringall(...)))
 	end
 end
 WoWPro:Export("Warning")
