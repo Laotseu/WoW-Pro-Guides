@@ -533,16 +533,18 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	   elseif WoWPro.Zone2MapID[zone] then
 			-- Zone found in DB
 			zm = WoWPro.Zone2MapID[zone].mapID
-			zf = WoWPro.Zone2MapID[zone].floor or floor
+			zf = floor ~= nil and floor > 0 and floor or WoWPro.Zone2MapID[zone].floor
 			zc = WoWPro.Zone2MapID[zone].cont
 			zi = WoWPro.Zone2MapID[zone].zonei
 	        WoWPro:dbp("MapPoint: zone [%s] mapped to %d/%d", zone, zm, zf)
 			-- Hack for Tomtom
 			if (not zf or zf == 0) and WoWPro.Zone2MapID[zone].numFloors and WoWPro.Zone2MapID[zone].numFloors > 1 then
-				zf = 1 -- use 1 instead of 0 when there is more then one floor and the floor is not specified
+				zf = GetCurrentMapDungeonLevel() or 1 -- use 1 instead of 0 when there is more then one floor and the floor is not specified
 			end
 	   end
 	end
+
+	if eric_map then err("zm = %s, zf = %s",zm, zf) end
 
 	  if not zm then
 	  	zm = GetCurrentMapAreaID()
