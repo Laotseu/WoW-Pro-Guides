@@ -389,9 +389,10 @@ DefineTag("SWITCH","switch","number",nil,nil)
 DefineTag("DEAD","dead","string",nil,nil)
 
 -- Added by LaoTseu
-DefineTag("DAILY",daily,"boolean",nil,function(value,i) WoWPro:SetSessionDailyQuests(WoWPro.QID[i]) end)   
-DefineTag("ALTFP",altfp,"string",nil,function(value,i)
+DefineTag("DAILY","daily","boolean",nil,function(value,i) WoWPro:SetSessionDailyQuests(WoWPro.QID[i]) end)   
+DefineTag("ALTFP","altfp","string",nil,function(value,i)
 	WoWPro.altfp[i] = (value):format(_G.UnitName("player")) -- Hack for the Draenor garisson
+	-- err("i=%s, value=%s, result=%s", i, value, WoWPro.altfp[i])
 end)
 DefineTag("NOBUFF","nobuff","string",nil,nil)
 
@@ -402,6 +403,7 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	-- Validate guide zone
 	local valid, msg = WoWPro.ParseZoneToken(zone, true)		
 	if not valid then 
+		err("Invalid zone = %s, msg = %s",zone,msg)
 		local currentZone = HBD:GetLocalizedMap(HBD:GetPlayerZone())
 		WoWPro:Warning(("Invalid zone %s for guide %s, will use current zone %s"):format(zone or "nil", GID, currentZone))
 		zone = currentZone
@@ -416,8 +418,8 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	    return
 	end
 
-    -- Split the line up on the pipes
-    local tags = { strsplit("|", text) }
+   -- Split the line up on the pipes
+   local tags = { strsplit("|", text) }
 	if #tags < 3 then
 	    -- Two pipes are needed for a valid line
 	    WoWPro:Error("Line %d in guide %s has only %d sections.", i, GID, #tags)
@@ -456,88 +458,88 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	    local tag = tags[idx]
 	    tag = tag and tag:trim() -- clean it up
 	    -- If there is a ; where a tag should be, it's comment.
-	    local realtag, comment = tag:match("(.*)([;].*)")
+	    local comment = tag:match("(.*[;].*)")
 	    if comment then
-	    	tag = realtag:trim()
 	    	for i=idx+1,#tags do
-	    		comment = ("%s|%s"):format(comment, tags[i])
-	    		tags[i] = nil
+	    		comment = ("%s||%s"):format(comment, tags[i])
 	    	end
 	    	WoWPro:Warning("EOL Comment: %s", comment)
-	    end
-	    local tag_spec = TagTable[tag]
-	    local value = nil
-	    if tag_spec then
-	        if tag_spec.key and not WoWPro[tag_spec.key] then
-	            WoWPro:Error("Tag %s has a bad key value of '%s'. Report this!", tag, tostring(tag_spec.key))
-	            tag = nil
-	        end
-
-	        if tag_spec.key == nil or WoWPro[tag_spec.key] == nil then
-	        		err("Line = %s", text)
-	        		err("tag = %s, tag_spec.key = %s, WoWPro[tag_spec.key] = %s, idx = %s, action = %s, step = %s", tag, tag_spec.key, WoWPro[tag_spec.key], idx, WoWPro.action[i], WoWPro.step[i])
-	        end
-	        if tag_spec.key and WoWPro[tag_spec.key][i] then
-	            WoWPro:Warning("%d:Step %s [%s] has duplicate tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
-	        end
-	        if tag_spec.vtype == "boolean" then
-	            -- We only care that it exists
-	            value = true
-	        elseif tag_spec.vtype == "number" then
-	            -- pop the next value off the stack
-	            idx = idx + 1
-	            value = tonumber(tags[idx])
-	            if not value then
-	                WoWPro:Warning("%d:Step %s [%s] has an bad value for tag ||%s||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag, value)
-	            end
-	        elseif tag_spec.vtype == "string" then
-	            -- pop the next value off the stack
-	            idx = idx + 1
-	            value = tags[idx]
-	            if not value then
-	                WoWPro:Warning("%d:Step %s [%s] has an missing value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
-	            elseif string.len(value) == 0 then
-	                WoWPro:Warning("%d:Step %s [%s] has an empty value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
-	            end
-	        elseif tag_spec.vtype == "guide" then
-	            -- pop the next value off the stack
-	            idx = idx + 1
-	            value = tags[idx]
-	            if not value then
-	                WoWPro:Warning("%d:Step %s [%s] has a missing value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
-	            elseif not WoWPro.Guides[value] then
-	                WoWPro:Warning("%d:Step %s [%s] has an invalid value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
-	            end
-	        else
-	            WoWPro:Error("Tag %s has a bad key vtype of '%s'. Report this!", tag, tag_spec.vtype)
-	        end
-	        if tag and tag_spec.validator then
-	        		local valid, msg = tag_spec.validator(WoWPro.action[i],WoWPro.step[i],tag,value,i)
-	            if not valid then
-	                WoWPro:Warning("Step %s [%s] has a bad value for tag ||%s||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag, value)
-	                if msg then
-	                	WoWPro:Warning("   " .. msg)
-	                end
-	                tag = nil
-	                value = nil
-	            end
-	        end
-	        if tag then
-	            if tag_spec.setter then
-	                tag_spec.setter(value,i,WoWPro.action[i],WoWPro.step[i],tag)
-	            else
-	                WoWPro[tag_spec.key][i] = value
-	            end
-	        end
+	    	idx = #tags+1
 	    else
-	        if not tag and idx <  #tags then
-	            WoWPro:Warning("%d:Step %s [%s] has an empty tag.",i,WoWPro.action[i],WoWPro.step[i])
-	        elseif tag and tag ~= "" and tag:sub(1,1) ~= ";" then
-	            -- empty tags and tags that are comments are permissible
-	            WoWPro:Error("%s:Step %s [%s] has an unknown tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
-	        end
-	    end
-	    idx = idx + 1
+		    local tag_spec = TagTable[tag]
+		    local value = nil
+		    if tag_spec then
+		        if tag_spec.key and not WoWPro[tag_spec.key] then
+		            WoWPro:Error("Tag %s has a bad key value of '%s'. Report this!", tag, tostring(tag_spec.key))
+		            tag = nil
+		        end
+
+		        if tag_spec.key == nil or WoWPro[tag_spec.key] == nil then
+		        		err("Line = %s", text)
+		        		err("tag = %s, tag_spec.key = %s, WoWPro[tag_spec.key] = %s, idx = %s, action = %s, step = %s", tag, tag_spec.key, WoWPro[tag_spec.key], idx, WoWPro.action[i], WoWPro.step[i])
+		        end
+		        if tag_spec.key and WoWPro[tag_spec.key][i] then
+		            WoWPro:Warning("%d:Step %s [%s] has duplicate tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
+		        end
+		        if tag_spec.vtype == "boolean" then
+		            -- We only care that it exists
+		            value = true
+		        elseif tag_spec.vtype == "number" then
+		            -- pop the next value off the stack
+		            idx = idx + 1
+		            value = tonumber(tags[idx])
+		            if not value then
+		                WoWPro:Warning("%d:Step %s [%s] has an bad value for tag ||%s||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag, value)
+		            end
+		        elseif tag_spec.vtype == "string" then
+		            -- pop the next value off the stack
+		            idx = idx + 1
+		            value = tags[idx]
+		            if not value then
+		                WoWPro:Warning("%d:Step %s [%s] has an missing value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
+		            elseif string.len(value) == 0 then
+		                WoWPro:Warning("%d:Step %s [%s] has an empty value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
+		            end
+		        elseif tag_spec.vtype == "guide" then
+		            -- pop the next value off the stack
+		            idx = idx + 1
+		            value = tags[idx]
+		            if not value then
+		                WoWPro:Warning("%d:Step %s [%s] has a missing value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
+		            elseif not WoWPro.Guides[value] then
+		                WoWPro:Warning("%d:Step %s [%s] has an invalid value for tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
+		            end
+		        else
+		            WoWPro:Error("Tag %s has a bad key vtype of '%s'. Report this!", tag, tag_spec.vtype)
+		        end
+		        if tag and tag_spec.validator then
+		        		local valid, msg = tag_spec.validator(WoWPro.action[i],WoWPro.step[i],tag,value,i)
+		            if not valid then
+		                WoWPro:Warning("Step %s [%s] has a bad value for tag ||%s||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag, value)
+		                if msg then
+		                	WoWPro:Warning("   " .. msg)
+		                end
+		                tag = nil
+		                value = nil
+		            end
+		        end
+		        if tag then
+		            if tag_spec.setter then
+		                tag_spec.setter(value,i,WoWPro.action[i],WoWPro.step[i],tag)
+		            else
+		                WoWPro[tag_spec.key][i] = value
+		            end
+		        end
+		    else
+		        if not tag and idx <  #tags then
+		            WoWPro:Warning("%d:Step %s [%s] has an empty tag.",i,WoWPro.action[i],WoWPro.step[i])
+		        elseif tag and tag ~= "" and tag:sub(1,1) ~= ";" then
+		            -- empty tags and tags that are comments are permissible
+		            WoWPro:Error("%s:Step %s [%s] has an unknown tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
+		        end
+		    end
+		    idx = idx + 1
+		 end
 	until idx > #tags
 	
 	if WoWPro.action[i] == "t" then
@@ -576,7 +578,7 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	end
 
 	local GQL = tonumber(WoWPro:GrailQuestLevel(WoWPro.QID[i]))
-    WoWPro.level[i] = WoWPro.level[i] or (WoWPro.action[i] == "A" and GQL)
+   WoWPro.level[i] = WoWPro.level[i] or (WoWPro.action[i] == "A" and GQL) or nil
 	
 	if GQL and GQL < 1 and tonumber(WoWPro.QID[i]) < 100000  then
 	    WoWPro:dbp("Guide %s QID %s: Grail reports %s!",GID,WoWPro.QID[i],GQL)
@@ -660,30 +662,36 @@ end
 function WoWPro:ParseSteps(steps)
 	WoWPro:dbp("Parsing Guide, %d steps",#steps)
 	local GID = WoWProDB.char.currentguide
-	local i = 2  -- Leave room the the L step
+	local i = WoWPro.Recorder and 1 or 2  -- Leave room the the L step, no extra step for recorder guides
 	local myclassL, myclass = UnitClass("player")
 	local myraceL, myrace = UnitRace("player")
 	local myFaction = strupper(UnitFactionGroup("player"))
 	local zone = strtrim(string.match(WoWPro.Guides[GID].zone or "", "([^%(]+)"))
 
-    if WoWPro.Recorder then
-        i = 1 -- No extra steps for recorder guides
-    end
+    -- if WoWPro.Recorder then
+    --     i = 1 -- No extra steps for recorder guides
+    -- end
 	if myrace == "Scourge" then
 		myrace = "Undead"
 	end
 	WoWPro.stepcount, WoWPro.stickycount, WoWPro.optionalcount = 0, 0 ,0
 	if WoWPro.DebugLevel > 0 then
 	    WoWPro.Guides[GID].amax_level = -1
-	    WoWPro.Guides[GID].amin_level = 100
+	    WoWPro.Guides[GID].amin_level = _G.MAX_PLAYER_LEVEL_TABLE[min(_G.GetExpansionLevel(),_G.GetAccountExpansionLevel())]
 	    WoWPro.Guides[GID].acnt_level = 0
 	    WoWPro.Guides[GID].asum_level = 0 
 	end
---err("ParsingSteps for %s, steps = %s",GID,#steps)
+	WoWPro:Warning("ParsingSteps for %s, steps = %s",GID,#steps)
+
+
 	for j=1,#steps do
 		local text = steps[j]
 		text = text:trim()
-		if text ~= "" and text:sub(1,1) ~= ";" then
+		-- if warnnumber < 20 then
+		-- 	WoWPro:Warning("Guide %s: %s - %s",GID, j, text)
+		-- 	warnnumber = warnnumber + 1
+		-- end
+		if text ~= "" and text:sub(1,1) ~= ";" and not (j == 1 and text:sub(1,1) == "L") then
 			local class, race  = text:match("|C|([^|]*)|?"), text:match("|R|([^|]*)|?")
 			local gender, faction = text:match("|GEN|([^|]*)|?"), text:match("|FACTION|([^|]*)|?")
 			if class then
@@ -709,7 +717,7 @@ function WoWPro:ParseSteps(steps)
 			if faction then
 				-- deleting leading/trailing whitespace and then canonicalize the case
 				faction=strupper(strtrim(faction))
-            end			    
+         end			    
 			if (class == nil or class:find(myclass)) and
 			   (race == nil or race:find(myrace)) and
 			   (gender == nil or gender == UnitSex("player")) and
@@ -720,34 +728,41 @@ function WoWPro:ParseSteps(steps)
 			end
 		end
 	end
+	-- do return end
 	-- OK, now add a standard L step at the start of every guide
 	local init,min_level
 	if not WoWPro.Recorder then
     	min_level = WoWPro.Guides[GID].startlevel or 1
-    	init = string.format("L Level %d|LVL|%d|N|You need to be level %d to start this guide.|",min_level,min_level,min_level)
-    	WoWPro.ParseQuestLine(faction, zone, 1, init)
+
+		-- Is there already one?
+		if not WoWPro.level[1] or WoWPro.level[1] ~= min_level then
+	    	init = string.format("L Level %d|LVL|%d|N|You need to be level %d to start this guide.|",min_level,min_level,min_level)
+	    	WoWPro.ParseQuestLine(faction, zone, 1, init)
+	    end
 	end
 	
 	-- OK, now add a standard L step just before the end of the guide, if we have an end-level
-	if not WoWPro.Recorder and WoWPro.Guides[GID].endlevel then
-	    local halt
-	    local endlevel = WoWPro.Guides[GID].endlevel
-	    halt =  string.format("L Level %d|LVL|%d|N|You need to be level %d to finish this guide.|",endlevel,endlevel,endlevel)
-	    WoWPro.ParseQuestLine(faction, zone, i, halt)
-	    i = i + 1
-	end
+	-- if not WoWPro.Recorder and WoWPro.Guides[GID].endlevel then
+	--     local halt
+	--     local endlevel = WoWPro.Guides[GID].endlevel
+	--     halt =  string.format("L Level %d|LVL|%d|N|You need to be level %d to finish this guide.|",endlevel,endlevel,endlevel)
+	--     WoWPro.ParseQuestLine(faction, zone, i, halt)
+	--     i = i + 1
+	-- end
 
-	-- OK, now add a standard D step at the end of every guide
+	-- OK, now add a standard D step at the end of every guide if there is not already one.
 	local fini, nguide
-    if not  WoWPro.Recorder then
+   if WoWPro.Recorder or (WoWPro.action[i-1] and WoWPro.action[i-1] == 'D') then
+   	i = i -1
+   else
     	nguide = WoWPro:NextGuide(GID)
-    	if nguide then
+    	if nguide and nguide ~= "" then
     	    fini = string.format("D Onwards|N|This ends %s. %s is next.|",WoWPro:GetGuideName(GID), WoWPro:GetGuideName(nguide))
     	else
     	    fini = string.format("D Fini|N|This ends %s. There is no next guide, so you can pick the next from the control panel.|",WoWPro:GetGuideName(GID))
     	end
     	WoWPro.ParseQuestLine(faction, zone, i, fini)
-    end
+   end
     
     WoWPro.stepcount = i
 
@@ -797,7 +812,7 @@ function WoWPro.LoadGuideStepsReal()
 	end
 	local steps = { string.split("\n", sequence ) }
 	WoWPro.stepcount = 0
-    WoWProCharDB.Guide[GID].done = false
+   WoWProCharDB.Guide[GID].done = false
 	WoWPro:ParseSteps(steps)
 	
 	
@@ -812,8 +827,8 @@ function WoWPro.LoadGuideStepsReal()
 	if WoWPro.Guides2Register then
 	    WoWProDB.global.Guide2QIDs[GID] = WoWPro.Version
 	    WoWPro:dbp("Recorded %s, time to load next Guides2Register.", GID)
-        WoWPro:SendMessage("WoWPro_LoadGuide")
-        return
+       WoWPro:SendMessage("WoWPro_LoadGuide")
+       return
     end
     
 	WoWPro:PushCurrentGuide(GID)
