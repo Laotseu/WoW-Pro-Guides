@@ -199,10 +199,10 @@ F The Menders' Stead|QID|26957|M|44.65,18.43|
 T The Long Trip Home|QID|26957|M|50.60,52.56|N|To Del Gahrron.|
 A Memories from a Lost Past|QID|27017|PRE|26957|M|50.60,52.56|N|From Del Gahrron.|
 A Gahrron's Withering Cauldron|QID|27053|N|From Field Agent Kaartish.|M|49.27,54.81|
-C Gahrron's Withering Cauldron|QID|27053|M|62.52,58.96|N|Kill the cauldron lord at Gahrron's Withering to get the key.|
+K Gahrron's Withering Cauldron|QID|27053|T|Cauldron Lord Soulwrath|M|62.52,58.96|N|Kill the cauldron lord at Gahrron's Withering to get the key.|
 T Gahrron's Withering Cauldron|QID|27053|M|62.52,58.96|N|To the cauldron.|
 A Return to the Stead|QID|27057|M|62.56,58.58|N|From the cauldron.|
-C Memories from a Lost Past|QID|27017|M|64.93,59.52|N|In the farmhouse. The painting is on the wall downstairs, the book is upstairs.|
+C Memories from a Lost Past|QID|27017|NC|M|64.93,59.52|N|In the farmhouse. The painting is on the wall downstairs, the book is upstairs.|
 T Memories from a Lost Past|QID|27017|M|50.64,52.63|N|To Del Gahrron, back at The Menders' Stand.|
 T Return to the Stead|QID|27057|M|49.27,54.82|N|To Field Agent Kaartish.|
 A Desperate Acts|QID|27054|PRE|27057|M|49.27,54.82|N|From Field Agent Kaartish.|

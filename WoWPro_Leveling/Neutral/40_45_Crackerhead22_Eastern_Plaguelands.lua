@@ -157,7 +157,7 @@ F Thondroril River |QID|27367|M|9.02,66.52|N|Head to Fiona at the western part o
 T Hero's Call: Eastern Plaguelands!|QID|28578|M|9.02,66.52|N|To Fiona.|ACTIVE|28577;28578|
 T Warchief's Command: Eastern Plaguelands!|QID|28577|M|9.02,66.52|N|To Fiona.|ACTIVE|28577;28578|
 ;You can do both Hero's Call/Warchief's Command AND Into the Woods! so this allows that combination.
-f Thondroril River|QID|27367|M|10.02,65.70|N|Get flightpoint with Frax Bucketdrop.|PRE|28577+28578+27684|RANK|3|
+f Thondroril River|ALTFP|Eastern Plaguelands|M|10.02,65.70|N|Get flightpoint with Frax Bucketdrop.|RANK|3|
 F The Menders' Stead|QID|27683|M|42.8,85|N|Fly to The Menders' Stead in Western Plaguelands.\n\nThis is a Rank 3 step for an extra quest that involves a flight to The Mender's Stead, pick up a quest, then fly back here to Thondroril River. If you don't want the achievement Loremaster, or the extra 435 XP and 5 silver, then skip this and the Accept In the Woods quest.|PRE|28577+28578+27684|RANK|3|
 A Into the Woods|QID|27683|M|48.93,54.73|Z|Western Plaguelands|N|From Adrine Towhide.\n\nIf you skipped the flying to The Menders' Stead, then skip this step as well.|PRE|28577+28578+27684|RANK|3|
 F Thondroril River |QID|27683|M|50.5,52.2|Z|Western Plaguelands|N|Fly back to Thondroril River.|ACTIVE|27683|PRE|28577+28578+27684|RANK|3|
@@ -196,7 +196,7 @@ A What I Do Best|QID|27371|M|18.40,75.08|N|From Tarenar Sunstrike.|
 C What I Do Best|QID|27371|M|18.35,77.66|N|Kill 5 Death's Step Miscreations. Tarenar Sunstrike will assist you in this quest.|
 T What I Do Best|QID|27371|M|18.35,77.66|N|(UI Alert)|
 A A Gift For Fiona|QID|27372|M|18.35,77.66|N|(UI Alert)|
-C Plaguehounds|QID|27372|M|18.07,71.42|L|60986 10|N|Kill Plaguehounds until you get 10 blood.|
+C A Gift For Fiona|QID|27372|M|18.07,71.42|N|Kill Plaguehounds until you get 10 blood.|
 T A Gift For Fiona|QID|27372|M|9.02,66.40|N|To Fiona.|
 A Onward, to Light's Hope Chapel|QID|27373|M|9.02,66.40|N|From Fiona.|
 
@@ -214,21 +214,21 @@ r Sell Junk. Repair/restock.|QID|27381|NC|M|35.74,68.99|N|With Argus Highbeacon.
 T Traveling Companions|QID|27381|M|35.24,68.76|N|Use the Argent Parachutes to jump off the tower, then head to Tarenar Sunstrike.|
 
 R The Undercroft|QID|27432|M|24.23,78.31|N|Run to The Undercroft.|
-C Zaeldarr the Outcast|QID|27432|L|15785|M|23.82,78.79|N|Kill and loot Zaeldarr. He is at the bottom of the crypt.|
+K Zaeldarr the Outcast|QID|27432|T|Zaeldarr the Outcast|M|23.82,78.79|N|Kill and loot Zaeldarr. He is at the bottom of the crypt.|
 T Little Pamela|QID|27383|M|32.55,83.77|N|To Pamela Redpath.|
 
 A I'm Not Supposed to Tell You This|QID|27392|M|32.55,83.77|N|From Pamela Redpath.|S|
 A Pamela's Doll|QID|27384|M|32.55,83.77|N|From Pamela Redpath.|
 A I'm Not Supposed to Tell You This|QID|27392|M|32.55,83.77|N|From Pamela Redpath.|US|
 
-C Pamela's Doll's Head|QID|27384|S|M|34.00,85.30;35.45,83.0;35.5,85.35|L|12886|CC|N|Head to the ruined houses and look for the doll part. A Ghosts of the Past will spawn when you approach the part.|
-C Pamela's Doll's Left Side|QID|27384|S|M|34.00,85.30;35.45,83.0;35.5,85.35|L|12887|CC|N|Head to the ruined houses and look for the doll part. A Ghosts of the Past will spawn when you approach the part.|
-C Pamela's Doll's Right Side|QID|27384|M|34.00,85.30;35.45,83.0;35.5,85.35|L|12888|CC|N|Head to the ruined houses and look for the doll part. A Ghosts of the Past will spawn when you approach the part.|
-C Pamela's Doll's Head|QID|27384|US|M|34.00,85.30;35.45,83.0;35.5,85.35|L|12886|CC|N|Head to the ruined houses and look for the doll part. A Ghosts of the Past will spawn when you approach the part.|
-C Pamela's Doll's Left Side|QID|27384|US|M|34.00,85.30;35.45,83.0;35.5,85.35|L|12887|CC|N|Head to the ruined houses and look for the doll part. A Ghosts of the Past will spawn when you approach the part.|
+C Pamela's Doll's Head|QID|27384|NC|S|M|34.00,85.30;35.45,83.0;35.5,85.35|L|12886|CC|N|Head to the ruined houses and look for the doll part. A Ghosts of the Past will spawn when you approach the part.|
+C Pamela's Doll's Left Side|QID|27384|NC|S|M|34.00,85.30;35.45,83.0;35.5,85.35|L|12887|CC|N|Head to the ruined houses and look for the doll part. A Ghosts of the Past will spawn when you approach the part.|
+C Pamela's Doll's Right Side|QID|27384|NC|M|34.00,85.30;35.45,83.0;35.5,85.35|L|12888|CC|N|Head to the ruined houses and look for the doll part. A Ghosts of the Past will spawn when you approach the part.|
+C Pamela's Doll's Head|QID|27384|NC|US|M|34.00,85.30;35.45,83.0;35.5,85.35|L|12886|CC|N|Head to the ruined houses and look for the doll part. A Ghosts of the Past will spawn when you approach the part.|
+C Pamela's Doll's Left Side|QID|27384|NC|US|M|34.00,85.30;35.45,83.0;35.5,85.35|L|12887|CC|N|Head to the ruined houses and look for the doll part. A Ghosts of the Past will spawn when you approach the part.|
 
 C Pamela's Doll|QID|27384|U|12886|M|35.41,83.04|N|Combine the three doll parts into the doll itself.|NC|
-C I'm Not Supposed to Tell You This|QID|27392|M|40.14,83.75|N|Kill and loot "The Lone Hunter".|
+K The Lone Hunter|QID|27392|T|The Lone Hunter|M|40.14,83.75|N|Kill and loot "The Lone Hunter".|
 
 T I'm Not Supposed to Tell You This|QID|27392|M|32.53,83.80|N|To Pamela Redpath.|S|
 T Pamela's Doll|QID|27384|M|32.47,83.76|N|To Pamela Redpath.|
