@@ -914,7 +914,7 @@ function WoWPro:SetMacro(macroType, macroBody)
 	-- set error message and error sound if there is no usable quest item
 	local error_msg = (macroType == "WPI" and "No suitable quest item found") or "Nothig to target"
 	macroBody = macroBody or "/script UIErrorsFrame:AddMessage(\"" .. error_msg .. "\", 1.0, 0.0, 0.0, 53, 5);"
-	    .. "PlaySoundFile(\"Sound\\\\Interface\\\\Error.wav\");"
+	    .. "PlaySoundFile(\"Sound/Interface/Error.ogg\");"
 
 	_G.EditMacro(macroIndex, macroType, macroIcon, macroBody)
 end
