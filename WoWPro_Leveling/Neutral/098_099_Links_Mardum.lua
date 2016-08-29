@@ -26,9 +26,9 @@ C Set Them Free|QID|38759|QO|5|NC|M|41.59,66.67|N|Free Mannethrel Darkstar|
 C Enter the Illidari: Coilskar|QID|40379|QO|1|CHAT|M|43.43,72.68|N|Click on thr Ashtoung Mystic to sacrifice his Soul.|
 C Enter the Illidari: Coilskar|QID|40379|QO|2|NC|M|43.79,72.04|N|Click on the Legion Gateway Activator.|
 K Inquisitor Baleful|QID|39049|T|Inquisitor Baleful|M|42.62,79.17|N|Kill Inquisitor Baleful and pick up the power taken|
-T Enter the Illidari: Coilskar|QID|40379|M|38.80,60.63|N|To Jace Darkweaver.|
-T Eye On the Prize|QID|39049|M|38.80,60.63|N|To Jace Darkweaver.|
 T Set Them Free|QID|38759|M|38.80,60.63|N|To Jace Darkweaver.|
+T Eye On the Prize|QID|39049|M|38.80,60.63|N|To Jace Darkweaver.|
+T Enter the Illidari: Coilskar|QID|40379|M|38.80,60.63|N|To Jace Darkweaver.|
 ; T Assault on Mardum|QID|39279|M|39.43,70.47|N|To Foul Felstalker.| automatically turned in when done.
 h Mardum, the Shattered Abyss|QID|40379|M|38.80,60.64|N|At Jace Darkweaver.|
 A Meeting With the Queen|QID|39050|M|38.80,60.64|N|From Jace Darkweaver.|
@@ -52,11 +52,11 @@ C Give Me Sight Beyond Sight|QID|39262|CHAT|QO|1|M|64.05,52.30|N|Speak with Jace
 C Give Me Sight Beyond Sight|QID|39262|NC|QO|2|M|64.0,52.8|N|Face the Cave and Use Spectral Sight|
 T Give Me Sight Beyond Sight|QID|39262|M|64.05,52.30|N|To Jace Darkweaver.|
 A Hidden No More|QID|39495|M|64.05,52.30|N|From Jace Darkweaver.|
-K Fel Lord Caza|QID|39495|T|Fel Lord Caza|M|61.66,62.79|N|Sly Caza and pick up the power taken|
+K Fel Lord Caza|QID|39495|T|Fel Lord Caza|M|64.3,59.0|N|Sly Caza and pick up the power taken|
 L Level 99|QID|39495|LVL|99|N|You should be around level 99 by this point.|
 T Hidden No More|QID|39495|M|60.51,44.75|N|To Kayn Sunfury.|
 A Stop the Bombardment|QID|38727|M|60.51,44.75|N|From Kayn Sunfury.|
-A Their Numbers Are Legion|QID|38819|M|65.0,30.0|N|From Cyana Nightglaive.|
+A Their Numbers Are Legion|QID|38819|M|60.5,44.9|N|From Cyana Nightglaive.|
 A Into the Foul Creche|QID|38725|M|60.53,44.66|N|From Allari the Souleater.|
 C Their Numbers Are Legion|QID|38819|M|73.2,33.8|N|War progress|
 C Stop the Bombardment|QID|38727|QO|3|NC|M|66.39,30.40|N|1/1 Soul Engine Devastator|
