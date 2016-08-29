@@ -499,6 +499,7 @@ function WoWPro:OnEnable()
 	end
 
 	WoWPro:LoadGuide()
+	WoWPro:ResizeAndPad(.5)
 
 	-- Pushed to WoWPro.SetupGuideReal()
 	-- WoWPro.FirstMapCall = true 	-- Force an arrow reset

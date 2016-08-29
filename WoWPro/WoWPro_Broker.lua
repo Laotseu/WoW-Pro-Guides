@@ -438,8 +438,8 @@ function WoWPro.UpdateGuideReal(From)
 		while reload do reload = rowContentUpdate(offset) end
 		
 		-- Update content and formatting --
-		WoWPro:RowSet(); WoWPro:RowSet()
-		WoWPro:PaddingSet()
+		WoWPro.RowSet(); WoWPro.RowSet()
+		WoWPro.PaddingSet()
 		
 		-- Updating the guide list or current guide panels if they are shown --
 		if WoWPro[module:GetName()].GuideList

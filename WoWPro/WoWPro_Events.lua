@@ -437,8 +437,9 @@ function WoWPro:ResizeAndPad(delay)
 	elseif MaybeCombatLockdown() then
 		ResizeAndPad_bucket()
 	else
-		WoWPro:RowSizeSet()
+		WoWPro:TitlebarSet()
 		WoWPro:PaddingSet()
+		WoWPro:RowSizeSet()
 	end
 end
 
