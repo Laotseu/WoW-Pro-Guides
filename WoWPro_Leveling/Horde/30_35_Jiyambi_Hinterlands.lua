@@ -92,7 +92,7 @@ A Stomp To My Beat|QID|26240|M|78.79,78.44|N|From Mystic Yayo'jin.|
 C Stalking the Stalkers|QID|26223|M|75.45,75.15;70.35,63.15;71.65,50.95;60.95,44.90|CC|N|Head up the path, then kill the Silvermane Stalkers.|
 C The Savage Dwarves|QID|26238|S|M|71.03,50.04|N|Kill Wildhammer Dwarves.|
 C Stomp To My Beat|QID|26240|NC|U|57920|M|71.48,50.40|N|Use the drums on Revantusk stalkers (not the casters!)|S|T|Revantusk Stalker|
-C Thornar Thunderclash|QID|26263|M|70.97,48.47|N|He's located inside a small fortified area.|
+K Thornar Thunderclash|QID|26263|T|Thornar Thunderclash|M|70.97,48.47|N|He's located inside a small fortified area.|
 C Stomp To My Beat|QID|26240|NC|U|57920|M|71.48,50.40|N|Use the drums on Revantusk stalkers (not the casters!)|US|T|Revantusk Stalker|
 C The Savage Dwarves|QID|26238|US|M|71.03,50.04|N|Finish killing Wildhammer Dwarves.|
 
@@ -130,7 +130,7 @@ A All That Skitters|QID|26310|M|67.74,66.50|N|From Eliza Darkgrin.|
 C Start Taking Back|QID|26306|S|M|65.59,70.41|N|Kill headhunters and witchdoctors on the lower levels of Jintha'Alor.|
 C All That Skitters|QID|26310|S|NC|M|65.37,67.67|N|Right-click the spiders to collect them. Don't kill them!|
 C Faces of Evil|QID|26357|S|NC|U|58209|M|66.66,70.94|N|Use the torch to burn tiki masks.|
-C Heads Up|QID|26366|M|65.14,65.12|N|Kill and loot Umboda. He's on the north end of the second level of Jintha'Alor.|
+K Umboda Three-Heads|QID|26366|T|Umboda Three-Heads|M|65.14,65.12|N|Kill and loot Umboda. He's on the north end of the second level of Jintha'Alor.|
 C All That Skitters|QID|26310|US|NC|M|65.37,67.67|N|Right-click the spiders to collect them. Don't kill them!|
 C Start Taking Back|QID|26306|US|M|65.59,70.41|N|Kill headhunters and witchdoctors on the lower levels of Jintha'Alor.|
 T All That Skitters|QID|26310|M|67.74,66.55|N|To Eliza Darkgrin, back at the entrance to Jintha'Alor.|
@@ -143,8 +143,9 @@ C Death to the Vilebranch|QID|26307|M|63.56,70.34|N|Kill Berserkers and Shadowca
 T Death to the Vilebranch|QID|26307|M|67.81,66.44|N|To Primal Torntusk, back at the entrance to Jintha'Alor.|
 A It's Ours Now|QID|26308|PRE|26307|M|67.81,66.44|N|From Primal Torntusk.|
 A Ongo'longo's Revenge|QID|26367|M|67.72,66.53|N|From Primal Torntusk.|
-C It's Ours Now|QID|26308|M|65.98,80.49|N|Kill Blood Drinkers and Soul Eaters on the fifth and sixth levels of Jintha'Alor.|
-C Ongo'longo's Revenge|QID|26367|M|62.28,75.49|N|On the fifth level of Jintha'Alor, fight the huge dire troll until it breaks free.|
+C It's Ours Now|QID|26308|S|M|65.98,80.49|N|Kill Blood Drinkers and Soul Eaters on the fifth and sixth levels of Jintha'Alor.|
+K Ongo'longo|QID|26367|T|Ongo'longo|M|62.28,75.49|N|On the fifth level of Jintha'Alor, fight the huge dire troll until it breaks free.|
+C It's Ours Now|QID|26308|US|M|65.98,80.49|N|Kill Blood Drinkers and Soul Eaters on the fifth and sixth levels of Jintha'Alor.|
 C Dark Vessels|QID|26309|US|NC|M|63.93,74.39|N|Loot the cauldrons scattered around Jintha'Alor.|
 C Faces of Evil|QID|26357|US|NC|U|58209|M|66.66,70.94|N|Use the torch to burn tiki masks.|
 T Dark Vessels|QID|26309|M|67.72,66.53|N|To Eliza Darkgrin.|
@@ -157,7 +158,7 @@ C Summit of Fate|QID|26363|NC|M|59.85,77.63|N|Loot the spider idols off the dead
 T Summit of Fate|QID|26363|M|67.81,66.47|N|To Primal Torntusk.|
 A Hunt the Keeper|QID|26369|PRE|26363|M|67.81,66.47|N|From Primal Torntusk.|
 C Venomous Secrets|QID|26368|S|M|54.61,83.81|N|Kill and loot spiders in the cave on the sixth level of Jintha'Alor.|
-C Hunt the Keeper|QID|26369|M|57.47,86.44|N|In the back of a cave at the top of Jintha'Alor, kill and loot Morta'gya the Keeper.|
+K Morta'gya the Keeper|QID|26369|T|Morta'gya the Keeper|M|57.47,86.44|N|In the back of a cave at the top of Jintha'Alor, kill and loot Morta'gya the Keeper.|
 C Venomous Secrets|QID|26368|US|M|54.61,83.81|N|Kill and loot spiders in the cave on the sixth level of Jintha'Alor.|
 T Hunt the Keeper|QID|26369|M|67.79,66.42|N|To Primal Torntusk.|
 T Venomous Secrets|QID|26368|M|67.69,66.58|N|To Eliza Darkgrin.|
@@ -174,19 +175,20 @@ T The Eye of Shadra|QID|26381|M|31.96,58.39|N|To Darkcleric Marnal, back at Hiri
 A The Fang of Shadra|QID|26406|PRE|26381|M|31.96,58.39|N|From Darkcleric Marnal.|
 T Can't Make An Omelette Without...|QID|26382|M|31.93,58.44|N|To Apothecary Surlis.|
 A Starvation Diet|QID|26387|PRE|26382|M|31.93,58.44|N|From Apothecary Surlis.|
+C Starvation Diet|QID|26387|S|M|49.25,51.49|N|Kill cocooned victims in the Creeping Ruin.|
 C The Fang of Shadra|QID|26406|NC|M|49.48,52.13|N|Loot the fang from the chest in The Creeping Ruin.|
-C Starvation Diet|QID|26387|M|49.25,51.49|N|Kill cocooned victims in the Creeping Ruin.|
+C Starvation Diet|QID|26387|US|M|49.25,51.49|N|Kill cocooned victims in the Creeping Ruin.|
 T The Fang of Shadra|QID|26406|M|31.90,58.38|N|To Darkcleric Marnal.|
 A The Shell of Shadra|QID|26418|M|31.90,58.38|N|From Darkcleric Marnal.|
 T Starvation Diet|QID|26387|M|31.88,58.46|N|To Apothecary Surlis.|
-C The Shell of Shadra|QID|26418|M|48.44,67.75|N|Kill and loot Qiaga the Keeper.|
+K Qiaga the Keeper|QID|26418|T|Qiaga the Keeper|M|48.44,67.75|N|Kill and loot Qiaga the Keeper.|
 H Hiri'watha Research Station|QID|26418|M|31.85,58.29|N|If you can't hearth there, ride back.|
 T The Shell of Shadra|QID|26418|M|31.85,58.29|N|To Darkcleric Marnal.|
 A Summoning Shadra|QID|26558|M|31.85,58.29|N|From Darkcleric Marnal.|
 C Summoning Shadra|QID|26558|U|58784|M|36.99,71.53;32.52,75.90;32.17,67.29|CS|N|Use the idol at each altar.|
 T Summoning Shadra|QID|26558|M|35.54,68.46|N|To Deathstalker Lookout.|
 A Shadra the Venom Queen|QID|26419|M|35.54,68.46|N|From Deathstalker Lookout.|
-C Shadra the Venom Queen|QID|26419|M|34.59,69.70|N|Let the forsaken tank for you, and defeat the venom queen!|
+K Shadra the Venom Queen|QID|26419|M|34.59,69.70|N|Let the forsaken tank for you, and defeat the venom queen!|
 T Shadra the Venom Queen|QID|26419|M|31.96,58.33|N|To Darkcleric Marnal, back at the Hiri'Watha Research Station.|
 A The Battle for Andorhal|QID|28508|M|31.96,58.33|N|From Darkcleric Marnal. Pick this up if you'd like to do Western Plaguelands next.|
 
