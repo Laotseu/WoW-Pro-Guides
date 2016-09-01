@@ -140,43 +140,44 @@ C Into the Mists|QID|29690|M|37.89,95.73|Z|Azshara|N|Speak to General Nazgrim an
 T Into the Mists|QID|29690|M|30.77,10.22|N|To General Nazgrim.|
 
 A Paint it Red!|QID|31765|M|30.77,10.22|N|From General Nazgrim.|
-C Paint it Red!|QID|31765|M|31.55,11.13|N|Head to the lower level deck, and click on a Gunship Turret. Use the "Full Autofire" action to kill the required troops and cannons.|
+C Paint it Red!|QID|31765|M|31.55,11.13|N|Cannons are on the lower level along this side of the warship.|
 T Paint it Red!|QID|31765|M|31.00,11.04|N|To Rivett Clutchpop.|
 
 A Touching Ground|QID|31766|M|31.00,11.04|N|From Rivett Clutchpop.|
-C Touching Ground|QID|31766|M|31.55,11.13|N|Click on the Rappelling Rope (next to the Gunship Turrets).|NC|
-T Touching Ground|QID|31766|M|31.71,11.49|N|To General Nazgrim.|
+C Touching Ground|QID|31766|M|31.55,11.13|N|Ropes are beside the cannons.|
 
+T Touching Ground|QID|31766|M|31.71,11.49|N|To General Nazgrim.|
 A Finish Them!|QID|31767|M|31.71,11.49|N|From General Nazgrim.|
 A Fire Is Always the Answer|QID|31768|M|31.71,11.49|N|From General Nazgrim.|
-C Finish Them!|QID|31767|S|M|33.03,8.07|N|Kill the Thunder Hold troops (Laborers do not count)|
-C Fire Is Always the Answer|QID|31768|U|89605|M|33.78,6.53|NC|N|Use Nazgrim's Flage Gun as you stand near Thunder Hold Munitions.|
-C Finish Them!|QID|31767|US|M|33.03,8.07|N|Finish killing the Thunder Hold troops (Laborers do not count)|
-T Finish Them!|QID|31767|M|33.67,10.61;34.79,10.61|CC|N|To General Nazgrim, who has moved into the Thunder Hold (run up the steps).|
+C Finish Them!|QID|31767|S|M|33.03,8.07|
+C Fire Is Always the Answer|QID|31768|U|89605|M|33.78,6.53|
+C Finish Them!|QID|31767|US|M|33.03,8.07|
+T Finish Them!|QID|31767|M|34.79,10.61|N|To General Nazgrim.|
 T Fire Is Always the Answer|QID|31768|M|34.79,10.61|N|To General Nazgrim.|
 
 A The Final Blow!|QID|31769|M|34.79,10.61|N|From General Nazgrim.|
-C The Final Blow!|QID|31769|U|89769|QO|Destroy the first barricade: 1/1|M|34.01,9.84|NC|N|Head to the first barricade and use Nazgrim's Flage Gun to destroy it.|
-C The Final Blow!|QID|31769|U|89769|QO|Destroy the second barricade: 1/1|M|34.65,9.8|NC|N|Head up the stairs to the second barricade and use Nazgrim's Flage Gun to destroy it.|
-C The Final Blow!|QID|31769|U|89769|QO|Destroy the third barricade: 1/1|M|34.92,10.67|NC|N|Head along the corridor to the third barricade and use Nazgrim's Flage Gun to destroy it.|
-C The Final Blow!|QID|31769|M|33.60,10.58|QO|Find Captain Doren: 1/1|NC|N|Head up the stairs, then to where Captain Doren is standing, then sit back and watch the cinematic.|
-T The Final Blow!|QID|31769|M|33.67,10.56|N|To General Nazgrim. You will need to wait a minute for the dialog to finish before he will accept the quest.|
-A You're Either With Us Or...|QID|31770|M|33.67,10.56|N|From General Nazgrim. Again, you will need to wait a minute for the dialog to finish before he will offer the quest.|
+C The Final Blow!|QID|31769|U|89769|QO|Destroy the first barricade: 1/1|M|34.01,9.84|
+C The Final Blow!|QID|31769|U|89769|QO|Destroy the second barricade: 1/1|M|34.65,9.8|
+C The Final Blow!|QID|31769|U|89769|QO|Destroy the third barricade: 1/1|M|34.92,10.67|
+C The Final Blow!|QID|31769|M|33.60,10.58|
+T The Final Blow!|QID|31769|M|33.67,10.56|N|To General Nazgrim.|
+A You're Either With Us Or...|QID|31770|M|33.67,10.56|N|From General Nazgrim.|
 A Regroup!|QID|29694|M|33.67,10.56|N|From General Nazgrim.|
 A Face to Face With Consequence|QID|31771|M|33.67,10.56|N|From Taran Zhu.|
 
-C Face to Face With Consequence|QID|31771|M|34.32,10.60|N|Head out of the building, killing the Sha's, as you head to Honeydew Glade.|
-C Regroup!|QID|29694|M|31.95,13.21|CHAT|QO|Shademaster Kiryn Rescued: 1/1|N|Jump into the river, then head over to Honeydew Glade and speak to Shademaster Kiryn.|
+C Face to Face With Consequence|QID|31771|M|34.32,10.60|N|Kill these guys as you run out of the building|
+C Regroup!|QID|29694|M|31.95,13.21|CHAT|QO|1|
 A Priorities!|QID|31978|M|31.97,13.30|N|From Gi-Oh.|
 A Prowler Problems|QID|31773|M|32.06,13.32|N|From Kai-Lin Honeydew.|
-C Prowler Problems|QID|31773|S|M|30.61,11.78|N|Kill the Sha-Infested Prowlers as you wander the area.|
-C Priorities!|QID|31978|S|NC|M|29.39,13.58|N|Collect the Barrels on the floor around the Glade.|
-C Regroup!|QID|29694|M|30.58,11.65|CHAT|QO|Sergeant Gorrok Rescued: 1/1|N|Head north-west to Sergeant Gorrock, and speak to him.|
-C Regroup!|QID|29694|M|30.4,7.2|CHAT|QO|Rivett Clutchpop Rescued: 1/1|N|Speak to Rivett Clutchpop to get him down from the tree.|
-C Regroup!|QID|29694|M|29.41,8.45|CHAT|QO|Shokia Rescued: 1/1|N|Speak to Shokia up on the overlook at Honeydew Farm.|
+C Prowler Problems|QID|31773|S|M|30.61,11.78|
+C Priorities!|QID|31978|S|NC|M|29.39,13.58|
+C Regroup!|QID|29694|M|30.81,11.32|CHAT|QO|3|
+C Regroup!|QID|29694|M|30.4,7.2|CHAT|QO|2|
+C Regroup!|QID|29694|M|29.41,8.45|CHAT|QO|4|
 C Priorities!|QID|31978|US|NC|M|29.3,10.0|N|Finish collecting the Barrels of Honeybrew.|
 C Prowler Problems|QID|31773|US|M|30.61,11.78|N|Finish killing the Sha-Infested Prowlers.|
-C You're Either With Us Or...|QID|31770|CHAT|M|29.27,13.33|N|Head to Mayor Honeydew.|
+C Priorities!|QID|31978|US|NC|M|29.39,13.58|
+C You're Either With Us Or...|QID|31770|CHAT|M|29.27,13.33|N|Talk to Mayor Honeydew.|
 T You're Either With Us Or...|QID|31770|M|29.15,13.74|N|To Mayor Honeydew.|
 C Face to Face With Consequence|QID|31771|M|34.32,10.60|N|Kill these guys as you run out of the building|US|
 T Face to Face With Consequence|QID|31771|M|29.15,13.82|N|To Taran Zhu.|
@@ -184,15 +185,15 @@ T Prowler Problems|QID|31773|M|29.15, 13.82|N|To Taran Zhu.|
 T Regroup!|QID|29694|M|29.16,13.70|N|To Sergeant Gorrok.|
 A Seeking Zin'jun|QID|31774|M|29.13,13.76|N|From Sergeant Gorrok.|
 T Priorities!|QID|31978|M|29.37,13.57|N|To Ellie Honeypaw.|
-h Honeydew Village|QID|31774|M|28.53,13.33|N|Talk to Brewmother Kiki if you want to make Pandaria you new home. This as a good place to set your hearthstone, as there is a portal to Orgrimar right outside the door.|
+h Honeydew Village|QID|31774|M|28.53,13.33|N|Talk to Brewmother Kiki if you want to make Pandaria you new home. This as a good place to set your heartstone, as there is a portal to Orgrimar right outside the door.|
 f Honeydew Village|QID|31774|M|28.1,15.57|N|At Wing Hya.|
 
-T Seeking Zin'jun|QID|31774|M|31.17,17.52|N|To Zin'Jun.|
+T Seeking Zin'Jun|QID|31774|M|31.17,17.52|N|To Zin'Jun.|
 A Cryin' My Eyes Out|QID|29765|M|31.17,17.52|N|From Zin'Jun.|
 A Monstrosity|QID|29743|M|30.90,17.49|N|From base of statue.|
 C Cryin' My Eyes Out|QID|29765|S|M|29.15,17.91|N|Kill the hozen to recover Zin'Jun's stuff.|
-C Monstrosity|QID|29743|QO|Statue Torso Sketched: 1/1|NC|M|29.34,18.92|
-C Monstrosity|QID|29743|QO|Statue Arm Sketched: 1/1|NC|M|30.01,21.21|
+C Monstrosity|QID|29743|QO|1|NC|M|29.34,18.92|
+C Monstrosity|QID|29743|QO|2|NC|M|30.01,21.21|
 C Cryin' My Eyes Out|QID|29765|US|M|31,21|N|Kill the monkeys to find Zin'Jun's missing things.|
 T Cryin' My Eyes Out|QID|29765|M|31,21|N|To Zin'Jun.|
 A Seein' Red|QID|29804|M|29.42,18.00|N|From Zin'Jun.|
@@ -206,14 +207,14 @@ A Choppertunity|QID|31777|M|31.15,21.56|N|From Rivett Clutchpop.|
 C Unreliable Allies|QID|31778|S|CHAT|M|29.63,23.15|
 C Choppertunity|S|QID|31777|U|89163|M|27.92,24.14|N|Pick up the sparkly Rocket Launchers, you will need at least 6, target choppers and use (they have a very long range.|
 C Assault on the Airstrip|S|QID|31775|M|27.96,24.73|
-K Master Engineer Cogswing and Gyro-Mechanic Lavenderp|T|Master Engineer Cogswing|QO|Master Engineer Cogswing and Gyro-Mechanic Lavenderp slain: 1/1|QID|31776|M|30.3,24.28|N|These guys move between campsites in this area.|
-K Morgus Grimhatchet|T|Morgus Grimhatchet|QO|Morgus Grimhatchet slain: 1/1|QID|31776|M|29.66,23.23|N|These guys move between campsites in this area.|
-K Corporal Jackson Silver|T|Corporal Jackson Silver|QO|Corporal Jackson Silver slain: 1/1|QID|31776|M|27.84,23.1|
+K Master Engineer Cogswing and Gyro-Mechanic Lavenderp|T|Master Engineer Cogswing|QO|1|QID|31776|M|30.3,24.28|N|These guys move between campsites in this area.|
+K Morgus Grimhatchet|T|Morgus Grimhatchet|QO|2|QID|31776|M|29.66,23.23|N|These guys move between campsites in this area.|
+K Corporal Jackson Silver|T|Corporal Jackson Silver|QO|3|QID|31776|M|27.84,23.1|
 C Unreliable Allies|QID|31778|US|CHAT|M|29.63,23.15|
 C Choppertunity|QID|31777|U|89163|US|M|27.92,24.14|N|Use rocket launchers on choppers.|
 C Assault on the Airstrip|US|QID|31775|M|27.96,24.73|
-C Monstrosity|QID|29743|QO|Statue Head Sketched: 1/1|NC|M|29.87, 22.39|
-C Monstrosity|QID|29743|QO|Statue Shoulder Sketched: 1/1|NC|M|28.33,22.31|
+C Monstrosity|QID|29743|QO|4|NC|M|29.87, 22.39|
+C Monstrosity|QID|29743|QO|3|NC|M|28.33,22.31|
 T Monstrosity|QID|29743|M|28.33,22.31|N|To UI Alert.|
 T Choppertunity|QID|31777|M|31.12,21.68|N|To Rivett Clutchpop.|
 T Unreliable Allies|QID|31778|M|31.45,21.72|N|To Merchant Zin.|
@@ -232,7 +233,7 @@ C Missed Me By... That Much!|QID|29821|M|24.02,27.12|U|84157|N|Use the rocket bo
 T Missed Me By... That Much!|QID|29821|M|22.85,30.60|N|To Empty Package.|
 A They're So Thorny!|QID|31112|M|22.85,30.60|N|From Empty Package.|
 C They're So Thorny!|QID|31112|U|84157|M|25.53,27.70|N|Use the rocket boots again to jump back to the shore.  The sprites drop the supplies.|
-C Forensic Science|QID|29815|US|NC|M|26.23,30.07|
+C Forensic Science|QID|29815|US|M|26.23,30.07|NC|
 T They're So Thorny!|QID|31112|M|28.07,24.62|N|To Rivett Clutchpop.|
 T Forensic Science|QID|29815|M|28.15,24.87|N|To Shademaster Kiryn.|
 A Acid Rain|QID|29827|M|28.21,24.91|N|From Shademaster Kiryn.|
@@ -278,11 +279,15 @@ A Instant Messaging|QID|29936|M|28.00,47.21|N|From Chief Kah Kah.|
 T The Bees' Knees|QID|29933|M|28.00,47.21|N|To Chief Kah Kah.|
 T Wicked Wikkets|QID|31241|M|28.00,47.21|N|To Chief Kah Kah.|
 T Captain Jack's Dead|QID|31261|M|27.97,47.09|N|To Chief Kah Kah.|
-C Instant Messaging|QID|29936|NC|U|76305|M|27.96,44.47|
+C Instant Messaging|QID|29936|NC|U|76305|M|28.0,46.8|
 T Instant Messaging|QID|29936|M|28.28,47.75|N|To General Nazgrim.|
 A Beyond the Horizon|QID|29941|M|28.28,47.75|N|From General Nazgrim.|
 f Grookin Hill|QID|29941|M|27.83,47.94|N|At Grookin Flapmaster.|
-C Beyond the Horizon|QID|29941|CHAT|M|27.77,50.35|N|Blizzard has conveniently placed chat bubbles over thier heads (and on the minimap) to help you find them.|
+;C Beyond the Horizon|QID|29941|CHAT|M|27.77,50.35|N|Blizzard has conveniently placed chat bubbles over thier heads (and on the minimap) to help you find them.|
+C Dipatch Sergeant Gorrok|QID|29941|QO|2|CHAT|M|27.3,50.7|N|He is walking around. Look for the yellow dot on the minimap.|
+C Dipatch Shademaster Kiryn|QID|29941|QO|3|CHAT|M|27.1,49.0|N|Blizzard has conveniently placed chat bubbles over thier heads (and on the minimap) to help you find them.|
+C Parley with Kah Kah|QID|29941|QO|4|CHAT|M|28.0,47.2|N|Blizzard has conveniently placed chat bubbles over thier heads (and on the minimap) to help you find them.|
+C Dipatch Shokia|QID|29941|CHAT|QO|1|M|28.3,47.0|N|Blizzard has conveniently placed chat bubbles over thier heads (and on the minimap) to help you find them.|
 T Beyond the Horizon|QID|29941|M|28.25,47.76|N|To General Nazgrim.|
 A Furious Fowl|QID|29937|M|28.25,47.76|N|From Rivett Clutchpop.|
 A What's in a Name Name?|QID|31239|M|28.01,47.15|N|From Chief Kah Kah.|
@@ -299,27 +304,27 @@ T Silly Wikket, Slickies are for Hozen|QID|29942|M|27.06,50.77|N|To Eekle Eekle.
 T Boom Bait|QID|29939|M|27.21,50.78|N|To Rivett Clutchpop.|
 A The Scouts Return|QID|29971|M|27.21,50.78|N|From Rivett Clutchpop.|
 T The Scouts Return|QID|29971|M|28.63,47.40|N|To Shokia.|
-A Scouting Report: Hostile Natives|QID|29730|M|37.72,45.31|N|From Riko.|
+A Scouting Report: Hostile Natives|QID|29730|M|28.6,47.4|N|From Riko.|
 C Scouting Report: Hostile Natives|QID|29730|NC|QO|Inspect the warning sign: 1/1|M|38.84, 45.47|
-C Scouting Report: Hostile Natives|QID|29730|NC|QO|Inspect a Lifelike Jade Statue: 1/1|M|38.84,45.14|
-C Scouting Report: Hostile Natives|QID|29730|NC|QO|Speak with Widow Greenpaw: 1/1|M|39.2, 46.2|
-T Scouting Report: Hostile Natives|QID|29730|M|28.62,47.43|N|To Riko.|
-A Scouting Report: On the Right Track|QID|29731|M|43.16,61.27|N|From Shademaster Kiryn.|
+C Scouting Report: Hostile Natives|QID|29730|NC|QO|Inspect a Lifelike Jade Statue: 1/1|M|38.8,46.1|
+C Scouting Report: Hostile Natives|QID|29730|CHAT|QO|Speak with Widow Greenpaw: 1/1|M|39.2, 46.2|
+T Scouting Report: Hostile Natives|QID|29730|M|28.6,47.4|N|To Riko.|
+A Scouting Report: On the Right Track|QID|29731|M|28.7,47.5|N|From Shademaster Kiryn.|
 C Scouting Report: On the Right Track|QID|29731|M|48.65,60.32|NC|
-T Scouting Report: On the Right Track|QID|29731|M|28.62,47.48|N|To Shademaster Kiryn.|
-A Scouting Report: The Friend of My Enemy|QID|29823|M|49.87,69.15|N|From Riko.|
+T Scouting Report: On the Right Track|QID|29731|M|28.7,47.5|N|To Shademaster Kiryn.|
+A Scouting Report: The Friend of My Enemy|QID|29823|M|28.6,47.4|N|From Riko.|
 C Scouting Report: The Friend of My Enemy|QID|29823|M|49.82,70.53|N|3 knocks back, so you can hit them at range with 4.|
-T Scouting Report: The Friend of My Enemy|QID|29823|M|28.62,47.48|N|To Riko.|
-A Scouting Report: Like Jinyu in a Barrel|QID|29824|M|62.72,81.89|N|From Shokia.|
+T Scouting Report: The Friend of My Enemy|QID|29823|M|28.6,47.4|N|To Riko.|
+A Scouting Report: Like Jinyu in a Barrel|QID|29824|M|28.6,47.4|N|From Shokia.|
 C Scouting Report: Like Jinyu in a Barrel|QID|29824|M|58.06,83.28|N|Use your mouse to aim and then rt click to shoot.|
-T Scouting Report: Like Jinyu in a Barrel|QID|29824|M|28.62,47.48|N|To Shokia.|
+T Scouting Report: Like Jinyu in a Barrel|QID|29824|M|28.6,47.4|N|To Shokia.|
 A Guerrillas in our Midst|QID|29943|M|28.62,47.48|N|From General Nazgrim.|
 A Green-ish Energy|QID|29968|M|30.78,52.22|N|From Rivett Clutchpop.|
 C Green-ish Energy|QID|29968|S|NC|M|29.25,51.73|
 C Guerrillas in our Midst|QID|29943|M|29.12,51.95|
 T Guerrillas in our Midst|QID|29943|M|29.25,51.73|N|To General Nazgrim.|
 A Burning Down the House|QID|29966|M|29.25,51.73|N|From General Nazgrim.|
-C Burning Down the House|QID|29966|U|76336|M|29.49,54.08|
+C Burning Down the House|QID|29966|U|76336|M|30.4,52.9;29.49,54.08|CN|
 C Green-ish Energy|QID|29968|US|NC|M|29.25,51.73|
 T Green-ish Energy|QID|29968|M|27.23,50.74|N|To Rivett Clutchpop.|
 A Boom Goes the Doonamite!|QID|29967|M|27.23,50.74|N|From Rivett Clutchpop.|
@@ -328,8 +333,8 @@ T Boom Goes the Doonamite!|QID|29967|M|28.99,49.11|N|To Rivett Clutchpop.|
 T Burning Down the House|QID|29966|M|28.62,47.51|N|To General Nazgrim.|
 A Dawn's Blossom|QID|30015|M|28.65,47.55|N|From General Nazgrim.|
 
-F Dawn's Blossom|QID|30015|M|27.83,47.94|N|At Grookin Flapmaster.|
-f Dawn's Blossom|QID|30015|M|47.64,46.24|N|From Keg Runner Lee.|
+F Dawn's Blossom|QID|30015|M|47.0,46.2|N|At Grookin Flapmaster.|
+f Dawn's Blossom|M|47.64,46.24|N|From Keg Runner Lee.|
 T Dawn's Blossom|QID|30015|M|46.82,46.17|N|To Lorewalker Cho.|
 A Welcome to Dawn's Blossom|QID|31230|M|47.19,46.11|N|From Toya.|
 C Welcome to Dawn's Blossom|QID|31230|CHAT|M|47.04,46.02;45.77,43.67;48.47,44.50|CS|
@@ -341,8 +346,9 @@ C The Threads that Stick|QID|29866|S|NC|M|43.68,48.32|N|Loot the eggs to get Pri
 C The Silkwood Road|QID|29865|M|43.26,49.23|
 C The Threads that Stick|QID|29866|US|NC|M|43.68,48.32|N|Loot the eggs to get Pristine Silk.|
 A Down Kitty!|QID|29717|M|39.82,48.05|N|From An Windfur.|
+C The Double Hozen Dare|QID|29716|S|M|37.31,48.19|CHAT|N|Talk to the panda cubs clinging to the trees here.|
 C Down Kitty!|QID|29717|M|37.11,47.72|
-C The Double Hozen Dare|QID|29716|M|37.31,48.19|CHAT|N|Talk to the panda cubs clinging to the trees here.|
+C The Double Hozen Dare|QID|29716|US|M|37.31,48.19|CHAT|N|Talk to the panda cubs clinging to the trees here.|
 T The Double Hozen Dare|QID|29716|N|To An Windfur. (she should be following you)|
 A The Jade Witch|QID|29723|N|From An Windfur.|
 T Down Kitty!|QID|29717|N|To An Windfur.|
@@ -371,7 +377,7 @@ R Shrine of the Dawn|QID|29995|M|52.63,38.08|
 T Shrine of the Dawn|QID|29995|M|52.63,38.08|N|To Syra Goldendraft.|
 A Getting Permission|QID|29920|M|52.63,38.08|N|From Syra Goldendraft.|
 K Defeat Pandriarch Bramblestaff |QID|29920|T|Pandriarch Bramblestaff|QO|Pandriarch Bramblestaff defeated: 1/1|M|54.1,38.4|; Shrine of the Dawn
-K Defeat Pandriarch Goldendraft |QID|29920|T|Defeat Pandriarch|QO|Pandriarch Goldendraft defeated: 1/1|M|53.6,36.8|; Shrine of the Dawn
+K Defeat Pandriarch Goldendraft |QID|29920|T|Pandriarch Goldendraft|QO|Pandriarch Goldendraft defeated: 1/1|M|53.6,36.8|; Shrine of the Dawn
 K Defeat Pandriarch Windfur |QID|29920|T|Pandriarch Windfur|QO|Pandriarch Windfur defeated: 1/1|M|52.6,35.6|; Shrine of the Dawn
 T Getting Permission|QID|29920|M|52.61,38.13|N|To Lo Wanderbrew.|
 
@@ -385,7 +391,7 @@ A Calamity Jade|QID|29926|M|50.91,27.05|N|From Foreman Mann.|
 A Mann's Man|QID|29927|M|50.91,27.05|N|From Foreman Mann.|
 T Mann's Man|QID|29927|M|45.44,29.09|N|To Hao Mann.|
 A Trapped!|QID|29929|M|45.44,29.09|N|From Hao Mann.|
-C Trapped!|QID|29929|NC|M|43.87,30.49|N|While doing the quests here in the mine an 'ancient pandaran mining pick' can rarely be found, keep an eye out for it.|
+C Trapped!|QID|29929|S|NC|M|43.87,30.49|N|While doing the quests here in the mine an 'ancient pandaran mining pick' can rarely be found, keep an eye out for it.|
 C Calamity Jade|QID|29926|M|44.48,30.29|
 C Trapped!|QID|29929|NC|US|M|43.87,30.49|
 T Trapped!|QID|29929|M|46.30,29.35|N|To Hao Mann.|
@@ -506,7 +512,7 @@ A Flying Colors|QID|29647|M|43.27,24.75|N|From Instructor Myang.|
 T Flying Colors|QID|29647|M|42.71,23.23|N|To High Elder Cloudfall.|
 
 F Dawn's Blossom|QID|29931|M|43.52,24.55|N|At Studious Chu.(or you can just ride straight to Nectarbreeze)|
-R Nectarbreeze Orchard|CC|M|46.67,46.76;45.83,50.25;46.72,55.25;41.52,61.13;43.37,72.76;43.54,75.91|N|The green dots will take you via roads, which is probably safer, but certainly slower than running cross-country.|
+R Nectarbreeze Orchard|QID|29576|CC|M|46.67,46.76;45.83,50.25;46.72,55.25;41.52,61.13;43.37,72.76;43.54,75.91|N|The green dots will take you via roads, which is probably safer, but certainly slower than running cross-country.|
 T An Air of Worry |QID|29576|N|To Shao the Defiant|M|43.5,75.9|
 A Defiance|QID|29578|M|43.54,75.91|N|From Shao the Defiant.|
 A Rally the Survivors|QID|29579|M|43.54,75.91|N|From Shao the Defiant.|
@@ -514,7 +520,7 @@ A Spitfire|QID|29585|M|43.28,75.77|N|From Gentle Mother Hanae.|
 A Orchard-Supplied Hardware|QID|29580|M|43.28,75.77|N|From Gentle Mother Hanae.|
 C Orchard-Supplied Hardware|QID|29580|NC|S|M|43.58,71.16|
 C Spitfire|QID|29585|U|72578|NC|S|M|44.48,72.49|
-C Rally the Survivors|QID|29579|NC|S|M|44.51,72.75|
+C Rally the Survivors|QID|29579|CHAT|S|M|44.51,72.75|
 C Defiance|QID|29578|M|44.19,74.52|
 C Orchard-Supplied Hardware|QID|29580|NC|US|M|43.58,71.16|
 C Spitfire|QID|29585|U|72578|NC|US|M|44.48,72.49|
@@ -558,7 +564,7 @@ C Crimson Serpent|QID|29999|NC|QO|Playful Crimson Serpent found: 1/1|M|58.19,61.
 T The Librarian's Quandary|QID|29998|M|56.29,60.46|N|To Lorewalker Stonestep.|
 A Moth-Ridden|QID|30001|M|56.29,60.46|N|From Lorewalker Stonestep.|
 A Pages of History|QID|30002|M|56.29,60.46|N|From Lorewalker Stonestep.|
-C Gold Serpent|QID|29999|NC|QO|Playful Gold Serpent found: 1/1|M|57.51,58.52|N|Click on the cog to pick up the serpant.|
+C Gold Serpent|QID|29999|NC|QO|Playful Gold Serpent found: 1/1|M|57.51,58.52|M|55.9,60.3|N|Click on the cog to pick up the serpant.|
 C Pages of History|QID|30002|S|M|55.70,59.95|N|Stomp(click) on the bookworms (or just kill them the normal way).|
 C Moth-Ridden|QID|30001|M|56.39,60.43|
 C Pages of History|QID|30002|US|M|55.70,59.95|N|Stomp(click) on the bookworms (or just kill them the normal way).|
@@ -586,15 +592,14 @@ T Get Back Here!|QID|30499|M|28.02,47.15|N|To General Nazgrim.|
 A Sufficient Motivation|QID|30466|M|28.02,47.15|N|From General Nazgrim.|
 A Gauging Our Progress|QID|30484|M|28.02,47.15|N|From General Nazgrim.|
 C Sufficient Motivation|QID|30466|U|79884|S|NC|QO|Bucket of Slicky Water: 1/1|M|28.14,47.33|N|Pick up a bucket of slicky water and toss it on lazy hozen as you go.|
+C Sufficient Motivation|QID|30466|S|U|79884|NC|QO|Hozen Motivated: 10/10|M|27.14,46.70|
 C Gauging Our Progress|QID|30484|CHAT|M|28.41,47.75;29.15,50.87;28.41,51.92;27.03,55.00|N|The green dots show where the people you need to talk to are.|CS|
 C Sufficient Motivation|QID|30466|U|79884|US|NC|QO|Hozen Motivated: 10/10|M|27.14,46.70|
 T Sufficient Motivation|QID|30466|M|28.07,47.15|N|To General Nazgrim.|
 T Gauging Our Progress|QID|30484|M|28.07,47.15|N|To General Nazgrim.|
 A Last Piece of the Puzzle|QID|30485|M|28.21,46.68|N|From Lorewalker Cho.|
-C Last Piece of the Puzzle|QID|30485|M|28.19,46.71|N|Talk to Mishi for a ride. *this step will not autocomplete until you finish the next step*|
-
-C Last Piece of the Puzzle|QID|30485|U|80071|M|44.51,66.97|
-f Serpent's Overlook|QID|31303|M|43.13,68.48|N|At Sky Dancer Ji. optional, but you will not be able to get back up here until lvl 90 if you don't (admittedly, you don't need to get up here again.)|
+C Last Piece of the Puzzle|QID|30485|U|80071|M|28.2,46.7;44.50,66.96|CS|N|Talk to Mishi for a ride and then use the Cho Family Heirloom at the shrine.|
+f Serpent's Overlook|M|43.13,68.48|N|At Sky Dancer Ji. optional, but you will not be able to get back up here until lvl 90 if you don't (admittedly, you don't need to get up here again.)|
 T Last Piece of the Puzzle|QID|30485|M|44.74,67.09|N|To Lorewalker Cho.|
 A The Seal is Broken|QID|31303|M|44.74,67.09|N|From Lorewalker Cho.|
 C The Seal is Broken|QID|31303|CHAT|M|47.73,58.29|N|Talk to Mishi to start the "bombing run".|

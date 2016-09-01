@@ -33,7 +33,7 @@ A Down to Azsuna|QID|41220|M|72.51,45.66|Z|Dalaran@Dalaran70|N|From Archmage Kha
 C Down to Azsuna|QID|41220|QO|1|M|72.51,45.66|Z|Dalaran@Dalaran70|NC|N|Fly down with Khadgar.|
 T Down to Azsuna|QID|41220|M|45.11,42.92|N|To Archmage Khadgar.|
 A Into the Fray|QID|38834|M|45.11,42.92|N|From Archmage Khadgar.|
-f Illidari Stand|QID|41220|M|44.59,43.85|N|At Izal Whitemoon.|
+f Illidari Stand|M|44.59,43.85|N|At Izal Whitemoon.|
 T Into the Fray|QID|38834|M|43.55,43.45|N|To Kayn Sunfury.|
 A Demon Souls|QID|37653|M|43.29,43.16|N|From Allari the Souleater.|
 A Reignite the Wards|QID|37658|M|43.15,43.60|N|From Jace Darkweaver.|
@@ -69,6 +69,7 @@ C Saving Stellagosa|QID|37450|QO|1|M|38.45,56.65|N|Stellagosa is here.|
 C Saving Stellagosa|QID|37450|QO|2|M|40.48,56.36|N|Kill and Loot Lykill to get the key to Stellagosa's bonds.|T|Overseer Lykill|
 C Saving Stellagosa|QID|37450|QO|3|M|38.23,57.60;38.01,58.35;37.69,57.62|CN|NC|N|Click on the locks to free Stellagosa.|
 T Saving Stellagosa|QID|37450|M|36.27,49.03|N|To Kor'vas Bloodthorn.|
+C Fel Machinations|QID|37656|M|40.05,48.80|N|Free the prisoners as you go.|US|
 T Fel Machinations|QID|37656|M|36.27,49.03|N|To Kor'vas Bloodthorn.|
 A Dark Revelations|QID|37449|M|36.27,49.03|N|From Kor'vas Bloodthorn.|
 A Cache of Infernals|QID|38037|M|35.38,50.37|N|Click on the pile of rocks to start spawning infernals, 3rd wave is the silver.|
@@ -131,7 +132,7 @@ K Kill Vintner Shalrala|QID|38203|QO|1|M|47.16,8.30|T|Vintner Shalrala|N|Kill an
 K Kill Vintner Liastrin|QID|38203|QO|2|M|45.58,12.73|T|Vintner Liastrin|N|Kill and loot second recipe.|RANK|3|
 K Kill Grand Vintner Valiana|QID|38203|QO|3|M|42.91,8.55|T|Grand Vintner Valiana|N|Kill and loot third recipe.|RANK|3|
 A Glimmering Treasure Chest|QID|38367|M|42.63,8.08|N|Loot for a bit of treasure and resources.|RANK|3|
-f Challiane Vineyards|QID|38203|M|40.81,8.98|N|At Stagtamer Maliana.|RANK|3|
+f Challiane's Terrace|M|40.81,8.98|N|At Stagtamer Maliana.|RANK|3|
 T Challiane Vineyards|QID|38203|M|40.78,9.33|N|To Cellarman Voodani.|RANK|3|
 R Azurewing Whelplands|QID|37857|M|53.50,16.68|N|Back to the interupted quest line.|RANK|3|
 
@@ -267,7 +268,7 @@ A Hit the Books|QID|37678|M|53.02,47.80|Z|1015/17|N|From Andellis.|
 C Dressing With Class|QID|37736|QO|4|M|55.01,51.52|Z|1015/17|NC|N|The spellbook is in this bookcase.|
 C Hit the Books|QID|37678|QO|1|M|60.70,86.32|Z|1015/17|N|Kill the books as you go along.|S|
 C Dressing With Class|QID|37736|QO|3|M|66.24,72.76|Z|1015/17|NC|N|The wand is lying against the wall.|
-A Small Treasure Chest|QID|42284|M|62.00,83.74|Z|1015/17]N|Loot for a bit of treasure and resources.|
+A Small Treasure Chest|QID|42284|M|62.00,83.74|Z|1015/17|N|Loot for a bit of treasure and resources.|
 C Dressing With Class|QID|37736|QO|2|M|59.46,84.76|Z|1015/17|NC|N|Take the robes from the sleeping student.|
 C Hit the Books|QID|37678|QO|1|M|60.70,86.32|Z|1015/17|N|Finish killing the ancient tomes.|US|
 C Dressing With Class|QID|37736|QO|1|M|55.61,56.08|Z|1015/17|NC|N|The hat is on the ground.|
@@ -333,7 +334,7 @@ T Eye See You|QID|42375|M|63.88,28.97|N|To Tehd Shoemaker.|RANK|3|
 A They're Doing it Wrong|QID|42369|M|63.88,28.97|N|From Tehd Shoemaker.|RANK|3|
 A Quantity Over Quality|QID|42368|M|63.88,28.88|N|From Marius Felbane.|RANK|3|
 A Arkethrax|QID|42367|M|63.88,28.88|N|From Marius Felbane.|RANK|3|
-f Felblaze Ingress|QID|42372|M|63.82,28.48|N|At Adept Sunwing.|RANK|3|
+f Felblaze Ingress|M|63.82,28.48|N|At Adept Sunwing.|RANK|3|
 C Quantity Over Quality|QID|42368|QO|1|M|67.83,26.99|N|Kill demons as you go along.|S|RANK|3|
 A Small Treasure Chest|QID|42958|M|65.47,29.56|N|Loot for a bit of treasure and resources.|RANK|3|
 C They're Doing it Wrong|QID|42369|QO|1|M|67.85,28.07|N|Two stabilizers need sabatoged on each side of the portal.|RANK|3|
