@@ -1198,6 +1198,18 @@ function WoWPro:NextStep(k,i)
 			    skip = true
 			end
 		end
+
+		-- skipping any quest with class tag if the character is not of the right class
+		if WoWPro.class and WoWPro.class[k] then
+		    local class1, class2, classID = UnitClass("player")
+		    local step_class = (WoWPro.class[k]):upper()
+		    if not (step_class == class1:upper() or step_class == class2 or tonumber(step_class) == classID)  then
+			    WoWProCharDB.Guide[GID].skipped[k] = true
+			    WoWPro.why[k] = "NextStep(): Character is not of the proper class"
+			    skip = true
+		    end
+		end
+
 		
 		-- WoWPro:dbp("Checkpoint Daleth for step %d",k)
       -- Do we have enough loot in bags?

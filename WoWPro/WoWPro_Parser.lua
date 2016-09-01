@@ -124,7 +124,7 @@ WoWPro.actionlabels = {
 	r = "Repair/Restock",
 	t = "Conditional Turn In",
 	D = "Done",
-	J = "Jump"
+	J = "Jump",
 	["!"] = "Declare",
 	["$"] = "Treasure",
 	[";"] = "Comment"
@@ -322,16 +322,30 @@ local function validate_list_of_ints(action, step, tag, value)
     return WoWPro.QidVerify(value, false,";","|")
 end
 
-
-DefineTag("N","note","string",nil,nil)
-DefineTag("QID","QID","string",nil,nil)
-DefineTag("M","map","string",nil,nil)
-DefineTag("S","sticky","boolean",nil, function (text,i)
-    WoWPro.sticky[i] = true;
-    WoWPro.stickycount = WoWPro.stickycount + 1;
+-- QID Tags first
+DefineTag("QID","QID","string",validate_list_of_qids,nil)
+DefineTag("PRE","prereq","string",validate_list_of_qids,nil)
+DefineTag("AVAILABLE","available","string",validate_list_of_qids,nil)
+DefineTag("O","optional","boolean",nil,function (text,i)
+    WoWPro.optional[i] = true;
+    WoWPro.optionalcount = WoWPro.optionalcount + 1;
 end)
-DefineTag("US","unsticky","boolean",nil,nil)
-DefineTag("U","use","number",nil,nil)
+DefineTag("LEAD","leadin","string",validate_list_of_qids,nil)
+DefineTag("ACTIVE","active","string",validate_list_of_qids,nil)
+DefineTag("NPC","NPC","string",validate_list_of_ints,nil)
+
+-- Mapping Tags
+DefineTag("M","map","string",nil,nil)
+DefineTag("Z","zone","string",nil,nil)
+-- DefineTag("Z","zone","string",WoWPro.ValidateZoneToken,function(value,i)
+-- 	WoWPro.zone[i] = value
+-- 	WoWPro.zoneName[i], WoWPro.mapID[i], WoWPro.map_level[i] = WoWPro.ParseZoneToken(value)
+-- end)
+DefineTag("CC","waypcomplete","boolean",nil,function (value,i) WoWPro.waypcomplete[i] = 1; end)
+DefineTag("CS","waypcomplete","boolean",nil,function (value,i) WoWPro.waypcomplete[i] = 2; end)
+DefineTag("CN","waypcomplete","boolean",nil,function (value,i) WoWPro.waypcomplete[i] = false; end)
+
+-- Item or Quest Objective Tags
 DefineTag("L","lootitem","string",nil,
 	-- Setter
 	function (text,i)
@@ -344,7 +358,6 @@ DefineTag("L","lootitem","string",nil,
 	    	end
 	    end
 	end)    
--- DefineTag("QO","questtext","string",nil,nil)
 DefineTag("QO","questtext","string",
 	-- Validator
 	function(action,step,tag,value,i)
@@ -363,44 +376,28 @@ DefineTag("QO","questtext","string",
 			WoWPro.questtext[i] = value
 		end
 	end)
-DefineTag("SO","sobjective","string",nil,nil)
-DefineTag("O","optional","boolean",nil,function (text,i)
-    WoWPro.optional[i] = true;
-    WoWPro.optionalcount = WoWPro.optionalcount + 1;
-end)
-DefineTag("PRE","prereq","string",nil,nil)
-DefineTag("AVAILABLE","available","string",nil,nil)
-DefineTag("CC","waypcomplete","boolean",nil,function (value,i) WoWPro.waypcomplete[i] = 1; end)
-DefineTag("CS","waypcomplete","boolean",nil,function (value,i) WoWPro.waypcomplete[i] = 2; end)
-DefineTag("CN","waypcomplete","boolean",nil,function (value,i) WoWPro.waypcomplete[i] = false; end)
+-- DefineTag("QO","questtext","string",nil,nil)
+DefineTag("SO","sobjective","string",validate_list_of_ints,nil)
+DefineTag("U","use","number",nil,nil)
+DefineTag("ITEM","item","string",nil,nil)
 DefineTag("NC","noncombat","boolean",nil,nil)
 DefineTag("CHAT","chat","boolean",nil,nil)
-DefineTag("LVL","level","string",nil,nil)
-DefineTag("LEAD","leadin","string",nil,nil)
-DefineTag("ACTIVE","active","string",nil,nil)
+DefineTag("LVL","level","number",nil,nil)
 DefineTag("T","target","string",nil,nil)
+DefineTag("QG","gossip","string",nil, function (value,i) WoWPro.gossip[i] = strupper(value) end)
+
+-- Conditionals
 DefineTag("REP","rep","string",nil,nil)
 DefineTag("P","prof","string",nil,nil)
-DefineTag("RANK","rank","number",nil,nil)
 DefineTag("SPELL","spell","string",nil,nil)
-DefineTag("NPC","NPC","string",nil,nil)
 DefineTag("ACH","ach","string",nil,nil)
 DefineTag("BUFF","buff","string",nil,nil)
 DefineTag("RECIPE","recipe","number",nil,nil)
 DefineTag("PET","pet","string",nil,nil)
 DefineTag("BUILDING","building","string",nil,nil)
-DefineTag("ITEM","item","string",nil,nil)
 DefineTag("GUIDE","guide","string",nil,nil)
-DefineTag("QG","gossip","string",nil, function (value,i) WoWPro.gossip[i] = strupper(value) end)
-DefineTag("Z","zone","string",nil,nil)
--- DefineTag("Z","zone","string",WoWPro.ValidateZoneToken,function(value,i)
--- 	WoWPro.zone[i] = value
--- 	WoWPro.zoneName[i], WoWPro.mapID[i], WoWPro.map_level[i] = WoWPro.ParseZoneToken(value)
--- end)
-DefineTag("FACTION","faction","string",nil,nil)
-DefineTag("R",nil,"string",nil,function (value,i) end)  -- Swallow R tags
-DefineTag("C",nil,"string",nil,function (value,i) end)  -- Swallow C tags
-DefineTag("GEN",nil,"string",nil,function (value,i) end)  -- Swallow Gen tags
+
+-- Pet Stuff
 DefineTag("PET1","pet1","string",nil,nil)
 DefineTag("PET2","pet2","string",nil,nil)
 DefineTag("PET3","pet3","string",nil,nil)
@@ -408,6 +405,19 @@ DefineTag("STRATEGY","strategy","string",nil,nil)
 DefineTag("SELECT","select","number",nil,nil)
 DefineTag("SWITCH","switch","number",nil,nil)
 DefineTag("DEAD","dead","string",nil,nil)
+
+-- Stuff at the end
+DefineTag("US","unsticky","boolean",nil,nil)
+DefineTag("S","sticky","boolean",nil, function (text,i)
+    WoWPro.sticky[i] = true;
+    WoWPro.stickycount = WoWPro.stickycount + 1;
+end)
+DefineTag("N","note","string",nil,nil)
+DefineTag("FACTION","faction","string",nil,nil)
+DefineTag("R",nil,"string",nil,function (value,i) end)  -- Swallow R tags
+DefineTag("C","class","string",nil,nil)
+DefineTag("GEN",nil,"string",nil,function (value,i) end)  -- Swallow Gen tags
+DefineTag("RANK","rank","number",nil,nil)
 
 -- Added by LaoTseu
 DefineTag("DAILY","daily","boolean",nil,function(value,i) WoWPro:SetSessionDailyQuests(WoWPro.QID[i]) end)   
@@ -487,7 +497,7 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	    	WoWPro:Warning("EOL Comment: %s", comment)
 	    	idx = #tags+1
 	    else
-		    local tag_spec = TagTable[tag]
+		    local tag_spec = WoWPro.TagTable[tag]
 		    local value = nil
 		    if tag_spec then
 		        if tag_spec.key and not WoWPro[tag_spec.key] then
