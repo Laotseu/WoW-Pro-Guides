@@ -33,7 +33,7 @@ A Down to Azsuna|QID|41220|M|72.51,45.66|Z|Dalaran@Dalaran70|N|From Archmage Kha
 C Down to Azsuna|QID|41220|QO|1|M|72.51,45.66|Z|Dalaran@Dalaran70|NC|N|Fly down with Khadgar.|
 T Down to Azsuna|QID|41220|M|45.11,42.92|N|To Archmage Khadgar.|
 A Into the Fray|QID|38834|M|45.11,42.92|N|From Archmage Khadgar.|
-f Illidari Stand|QID|41220|M|44.59,43.85|N|At Izal Whitemoon.|
+f Illidari Stand|M|44.59,43.85|N|At Izal Whitemoon.|
 T Into the Fray|QID|38834|M|43.55,43.45|N|To Kayn Sunfury.|
 A Demon Souls|QID|37653|M|43.29,43.16|N|From Allari the Souleater.|
 A Reignite the Wards|QID|37658|M|43.15,43.60|N|From Jace Darkweaver.|
@@ -69,6 +69,7 @@ C Saving Stellagosa|QID|37450|QO|1|M|38.45,56.65|N|Stellagosa is here.|
 C Saving Stellagosa|QID|37450|QO|2|M|40.48,56.36|N|Kill and Loot Lykill to get the key to Stellagosa's bonds.|T|Overseer Lykill|
 C Saving Stellagosa|QID|37450|QO|3|M|38.23,57.60;38.01,58.35;37.69,57.62|CN|NC|N|Click on the locks to free Stellagosa.|
 T Saving Stellagosa|QID|37450|M|36.27,49.03|N|To Kor'vas Bloodthorn.|
+C Fel Machinations|QID|37656|M|40.05,48.80|N|Free the prisoners as you go.|US|
 T Fel Machinations|QID|37656|M|36.27,49.03|N|To Kor'vas Bloodthorn.|
 A Dark Revelations|QID|37449|M|36.27,49.03|N|From Kor'vas Bloodthorn.|
 A Cache of Infernals|QID|38037|M|35.38,50.37|N|Click on the pile of rocks to start spawning infernals, 3rd wave is the silver.|
@@ -77,7 +78,7 @@ R Illidari Perch|QID|42286|M|31.34,46.39|N|Just for the heck of it, some treasur
 f Illidari Perch|QID|42286|M|31.81,46.27|N|At Jena Moonrath.|RANK|3|
 K Kill Houndmaster Stroxis|QID|42286|QO|1|M|30.82,47.61|N|Silver to kill for some treasure and resources.|RANK|3|
 A Treasure Chest|QID|44105|M|26.25,47.14|N|Loot for a bit of treasure and resources.|RANK|3|
-R Traitor's Overlook|M|35.54,52.50|N|And back to the questline.|RANK|3|
+R Traitor's Overlook|QID|37449|M|35.54,52.50|N|And back to the questline.|RANK|3|
 C Retake Faronaar-Bonus Objective|QID|36811|M|35.11,52.90|N|If you havent already, finish this up.|US|
 t Retake Faronaar-Bonus Objective|QID|36811|M|35.11,52.90|N|Auto turned in upon completion,|
 C Dark Revelations|QID|37449|QO|1|M|35.54,52.50|N|Kill Nightglaive the Traitor.|T|Nightglaive the Traitor|
@@ -131,7 +132,7 @@ K Kill Vintner Shalrala|QID|38203|QO|1|M|47.16,8.30|T|Vintner Shalrala|N|Kill an
 K Kill Vintner Liastrin|QID|38203|QO|2|M|45.58,12.73|T|Vintner Liastrin|N|Kill and loot second recipe.|RANK|3|
 K Kill Grand Vintner Valiana|QID|38203|QO|3|M|42.91,8.55|T|Grand Vintner Valiana|N|Kill and loot third recipe.|RANK|3|
 A Glimmering Treasure Chest|QID|38367|M|42.63,8.08|N|Loot for a bit of treasure and resources.|RANK|3|
-f Challiane Vineyards|QID|38203|M|40.81,8.98|N|At Stagtamer Maliana.|RANK|3|
+f Challiane's Terrace|M|40.81,8.98|N|At Stagtamer Maliana.|RANK|3|
 T Challiane Vineyards|QID|38203|M|40.78,9.33|N|To Cellarman Voodani.|RANK|3|
 R Azurewing Whelplands|QID|37857|M|53.50,16.68|N|Back to the interupted quest line.|RANK|3|
 
@@ -267,7 +268,7 @@ A Hit the Books|QID|37678|M|53.02,47.80|Z|1015/17|N|From Andellis.|
 C Dressing With Class|QID|37736|QO|4|M|55.01,51.52|Z|1015/17|NC|N|The spellbook is in this bookcase.|
 C Hit the Books|QID|37678|QO|1|M|60.70,86.32|Z|1015/17|N|Kill the books as you go along.|S|
 C Dressing With Class|QID|37736|QO|3|M|66.24,72.76|Z|1015/17|NC|N|The wand is lying against the wall.|
-A Small Treasure Chest|QID|42284|M|62.00,83.74|Z|1015/17]N|Loot for a bit of treasure and resources.|
+A Small Treasure Chest|QID|42284|M|62.00,83.74|Z|1015/17|N|Loot for a bit of treasure and resources.|
 C Dressing With Class|QID|37736|QO|2|M|59.46,84.76|Z|1015/17|NC|N|Take the robes from the sleeping student.|
 C Hit the Books|QID|37678|QO|1|M|60.70,86.32|Z|1015/17|N|Finish killing the ancient tomes.|US|
 C Dressing With Class|QID|37736|QO|1|M|55.61,56.08|Z|1015/17|NC|N|The hat is on the ground.|
@@ -333,16 +334,16 @@ T Eye See You|QID|42375|M|63.88,28.97|N|To Tehd Shoemaker.|RANK|3|
 A They're Doing it Wrong|QID|42369|M|63.88,28.97|N|From Tehd Shoemaker.|RANK|3|
 A Quantity Over Quality|QID|42368|M|63.88,28.88|N|From Marius Felbane.|RANK|3|
 A Arkethrax|QID|42367|M|63.88,28.88|N|From Marius Felbane.|RANK|3|
-f Felblaze Ingress|QID|42372|M|63.82,28.48|N|At Adept Sunwing.|RANK|3|
+f Felblaze Ingress|M|63.82,28.48|N|At Adept Sunwing.|RANK|3|
 C Quantity Over Quality|QID|42368|QO|1|M|67.83,26.99|N|Kill demons as you go along.|S|RANK|3|
 A Small Treasure Chest|QID|42958|M|65.47,29.56|N|Loot for a bit of treasure and resources.|RANK|3|
 C They're Doing it Wrong|QID|42369|QO|1|M|67.85,28.07|N|Two stabilizers need sabatoged on each side of the portal.|RANK|3|
 A Small Treasure Chest|QID|44103|M|69.16,25.93;69.77,29.57;68.87,29.73|CS|N|In an underwater cave. Loot for a bit of treasure and resources.|RANK|3|
 C Arkethrax|QID|42367|QO|1|M|67.32,30.70|N|Kill Arkethrax|T|Arkethrax|RANK|3|
 C Quantity Over Quality|QID|42368|QO|1|M|67.83,26.99|N|Finish up any demons still needed.|US|RANK|3|
-T Quantity Over Quality|QID|42368|M|63.88,28.88|N|To Marius Felbane.|RANK|3|
-T Arkethrax|QID|42367|M|63.88,28.88|N|To Marius Felbane.|RANK|3|
 T They're Doing it Wrong|QID|42369|M|63.86,28.94|N|To Tehd Shoemaker.|RANK|3|
+T Arkethrax|QID|42367|M|63.88,28.88|N|To Marius Felbane.|RANK|3|
+T Quantity Over Quality|QID|42368|M|63.88,28.88|N|To Marius Felbane.|RANK|3|
 
 R The Empyrean Society Enclave|QID|38419|M|63.54,33.2|N|Take the road to the left if you want to get through without fighting. Continue on ths road towards Olivian Veil.|RANK|3|
 R The Greenway|QID|38419|M|62.56,34.56|N|Side jaunt for a Silver and 3 chests.|RANK|3|
@@ -358,11 +359,13 @@ A Let's Make A Deal|QID|38460|M|61.22,50.74|N|From Daglop.|RANK|2|
 C Let's Make A Deal|QID|38460|M|61.22,50.74|NC|N|Sign Daglop's Contract.|RANK|2|
 T Let's Make A Deal|QID|38460|M|61.22,50.74|N|To Daglop.|RANK|2|
 A Minion! Kill Them!|QID|38232|M|61.22,50.74|N|From Daglop.|RANK|2|
-C Minion! Kill Them!|QID|38232|M|62.01,50.10|S|N|The olives are on the ground, the birds and cats drop the feathers and the shadowrunners drop the horns.|RANK|2|
+C Minion! Kill Them!|QID|38232|QO|1;2|M|62.01,50.10|S|N|The olives are on the ground, the birds and cats drop the feathers and the shadowrunners drop the horns.|RANK|2|
+C Minion! Kill Them!|QID|38232|NC|QO|3|M|62.01,50.10|S|N|The olives are on the ground, the birds and cats drop the feathers and the shadowrunners drop the horns.|RANK|2|
 K Kill Devious Sunrunner|QID|44081|M|60.25,46.14|ITEM|140685|T|Devious Sunrunner|N|Click on the Ley Portal to be transported to a treasure. Kill the Stallions, then loot the chest for a bit of treasure and resources.|RANK|3|
-C Minion! Kill Them!|QID|38232|M|62.01,50.10|S|N|Finish gathering the things Daglop wants.|RANK|2|
-T Minion! Kill Them!|QID|38232|M|61.89,49.63|RANK|2|
-A This IS In My Contract.|QID|38237|M|61.89,49.63|RANK|2|
+C Minion! Kill Them!|QID|38232|NC|QO|3|M|62.01,50.10|US|N|Finish gathering the things Daglop wants.|RANK|2|
+C Minion! Kill Them!|QID|38232|QO|1;2|M|62.01,50.10|US|N|Finish gathering the things Daglop wants.|RANK|2|
+T Minion! Kill Them!|QID|38232|M|0,0|RANK|2|
+A This IS In My Contract.|QID|38237|M|0,0|RANK|2|
 C This IS In My Contract.|QID|38237|QO|1|M|64.11,52.88|N|Run down to the beach, Daglop is standing in front of a cave, Speak with him to start the ritual|CHAT|RANK|2|
 C This IS In My Contract.|QID|38237|QO|2|M|63.52,53.24|T|Sharazaan|RANK|2|
 A Small Treasure Chest|QID|42278|M|62.99,54.17|N|Loot for a bit of treasure and resources.|RANK|2|
@@ -410,18 +413,19 @@ t Plunder the Cove-Bonus Objective|QID|37495|M|46.54,58.96|N|Auto turned in when
 A Small Treasure Chest|QID|37829|M|53.17,64.44|Z|1015/18|N|Loot for a bit of treasure and resources.|
 T The Right Weapon for the Job|QID|37565|M|53.41,62.95|N|To Okuna Longtusk.|
 A The Prince is Going Down|QID|37566|M|53.41,62.95|N|From Okuna Longtusk.|
-C The Prince is Going Down|QID|37566|M|53.48,63.52|N|Kill Prince Oceanus.|
+K The Prince is Going Down|QID|37566|T|Prince Oceanus|M|53.48,63.52|N|Kill Prince Oceanus.|
 T The Prince is Going Down|QID|37566|M|51.93,61.80|N|To Okuna Longtusk.|
-T A Favor for Mr. Shackle|QID|38857|M|56.59,59.60|N|To Mr. Shackle.|
 
 f Shackle's Den|QID|37654|M|56.19,58.93|N|At Avaya Farwind.|
+T A Favor for Mr. Shackle|QID|38857|M|56.59,59.60|N|To Mr. Shackle.|
 A Maritime Law|QID|37654|M|56.60,59.59|N|From Mr. Shackle.|
 A Making the World Safe for Profit|QID|37657|M|56.60,59.59|N|From Mr. Shackle.|
 A Shipwrecked Sailors|QID|42268;42220|M|57.66,58.07|N|From UI Alert.|
 C Making the World Safe for Profit|QID|37657|QO|1|M|60.15,61.97|S|N|Kill Gilblin & Makrura as you go about your other objectives.|
 C Shipwrecked Sailors|QID|42268|M|59.93,58.12|N|Rescue sailors as you go about your other objectives.|S|FACTION|Horde|
 C Shipwrecked Sailors|QID|42220|M|59.93,58.12|N|Kill sailors as you go about your other objectives.|S|FACTION|Alliance|
-C Making the World Safe for Profit|QID|37657|QO|2|M|62.21,61.48;63.52,63.55|CS|N|The queen is in an underwater cave.|
+K Making the World Safe for Profit|QID|37657|T|Queen Kraklaa|QO|2|M|62.21,61.48;63.52,63.55|CS|N|The queen is in an underwater cave.|
+C Making the World Safe for Profit|QID|37657|QO|1|M|60.15,61.97|US|N|Kill Gilblin & Makrura as you go about your other objectives.|
 K Tide Behemoth|QID|38217|T|Tide Behemoth|M|61.35,61.93|ITEM|129062|N|Kill and loot for a bit of treasure and resources.|
 A Small Treasure Chest|QID|42272|M|59.54,61.99;59.88,63.20|CS|N|Path starts at first coord, treasure is on top of a rocky outcrop. Loot for a bit of treasure and resources.|
 A Small Treasure Chest|QID|42273|M|62.38,58.41|N|Loot for a bit of treasure and resources.|
