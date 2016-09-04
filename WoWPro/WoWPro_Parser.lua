@@ -361,11 +361,16 @@ DefineTag("L","lootitem","string",nil,
 DefineTag("QO","questtext","string",
 	-- Validator
 	function(action,step,tag,value,i)
+		if WoWPro.action[i] == 'A' or WoWPro.action[i] == 'T' then
+			local msg = ("%d:Step [%s %s] should not use the ||%s||%s|| tags."):format(i,action,step,tag,value)
+			return false, msg
+		end
 		local qtext,qindicator = value:match("(.+):%s*([0-9]+[/][0-9]+)")
 		if qtext and qindicator then
 			WoWPro:Warning("%d:Step %s [%s] is using old ||%s||%s|| format.",i,action,step,tag,value)
+			-- Return valid since the message has already been printed and we fix it in the setter.
 		end
-		return true -- Return valid since the message has already been printed and we fix it in the setter.
+		return true 
 	end,
 	-- Setter
 	function(value,i,action,step,tag)
@@ -546,9 +551,10 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 		        if tag and tag_spec.validator then
 		        		local valid, msg = tag_spec.validator(WoWPro.action[i],WoWPro.step[i],tag,value,i)
 		            if not valid then
-		                WoWPro:Warning("Step %s [%s] has a bad value for tag ||%s||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag, value)
 		                if msg then
-		                	WoWPro:Warning("   " .. msg)
+		                	WoWPro:Warning(msg)
+		                else
+		                	WoWPro:Warning("%s: Step [%s %s] has an invalid tag ||%s||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag, value)
 		                end
 		                tag = nil
 		                value = nil
