@@ -1199,15 +1199,23 @@ function WoWPro:NextStep(k,i)
 			end
 		end
 
-		-- skipping any quest with class tag if the character is not of the right class
+		-- skipping any line with class tag if the character is not of the right class
+		-- There might be multiple class separated by ;
+		-- Class names and class IDs a re valid
 		if WoWPro.class and WoWPro.class[k] then
-		    local class1, class2, classID = UnitClass("player")
-		    local step_class = (WoWPro.class[k]):upper()
-		    if not (step_class == class1:upper() or step_class == class2 or tonumber(step_class) == classID)  then
-			    WoWProCharDB.Guide[GID].skipped[k] = true
-			    WoWPro.why[k] = "NextStep(): Character is not of the proper class"
-			    skip = true
-		    end
+		   local class1, class2, classID = UnitClass("player")
+		   local class_ok
+		   for i,step_class in ipairs({ strsplit( ';', (WoWPro.class[k]):upper() ) }) do
+			   if step_class == class1:upper() or step_class == class2 or tonumber(step_class) == classID  then
+			   	class_ok = true
+			   	break
+			   end
+		   end
+		   if not class_ok then
+			   WoWProCharDB.Guide[GID].skipped[k] = true
+				WoWPro.why[k] = "NextStep(): Character is not of the proper class"
+				skip = true
+			end
 		end
 
 		
