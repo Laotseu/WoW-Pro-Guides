@@ -12,7 +12,7 @@
 -- Date: 2016-08-20 00:38
 -- Who: Emmaleah
 
-local guide = WoWPro:RegisterGuide('EmmLegionRogue', 'Leveling', 'The Hall of Shadows@Dalaran70', 'Emmaleah', 'Neutral')
+local guide = WoWPro:RegisterGuide('EmmLegionRogue', 'Leveling', 'The Hall of Shadows@Dalaran', 'Emmaleah', 'Neutral')
 WoWPro:GuideName(guide, 'Rogue Order Hall')
 WoWPro:GuideLevels(guide,98, 110, 98.0)
 WoWPro:GuideNextGuide(guide, 'EmmAzsuna')
@@ -37,11 +37,11 @@ C Call of The Uncrowned|QID|40832|QO|2|M|53.11,70.93|Z|Dalaran@Dalaran70|N|Whisp
 C Call of The Uncrowned|QID|40832|QO|3|M|53.16,69.96|Z|Dalaran@Dalaran70|N|Go thru the now opened door.|NC|
 C Call of The Uncrowned|QID|40832|QO|4|M|44.69,54.94|N|Click on the lamp holder to open the door to where the 'Uncrowned' are.|NC|
 T Call of The Uncrowned|QID|40832|M|41.44,78.08|N|To Lord Jorach Ravenholdt.|
-A The Final Shadow|QID|40839|M|41.44,78.08|N|From Lord Jorach Ravenholdt.|PRE|44832|
+A The Final Shadow|QID|40839|M|41.44,78.08|N|From Lord Jorach Ravenholdt.|
 C The Final Shadow|QID|40839|QO|1|M|42.24,77.09|N|Click on the empty chair beside Princess Tess.|NC|
 C The Final Shadow|QID|40839|QO|2|M|42.24,77.09|N|Listen to the conversation.|NC|
 T The Final Shadow|QID|40839|M|41.44,78.08|N|To Lord Jorach Ravenholdt.|
-A A Worthy Blade|QID|40840|M|41.44,78.08|N|From Lord Jorach Ravenholdt.|PRE|44839|
+A A Worthy Blade|QID|40840|M|41.44,78.08|N|From Lord Jorach Ravenholdt.|
 C A Worthy Blade|QID|40840|QO|3|M|42.38,75.75|N|Talk to Tess.|CHAT|
 C A Worthy Blade|QID|40840|QO|1|M|41.17,74.24|N|Talk to Tethys.|CHAT|
 C A Worthy Blade|QID|40840|QO|2|M|40.91,75.40|N|Talk to Valeera.|CHAT|
@@ -155,6 +155,7 @@ A Zone Lead-in Quest|QID|39718;39864;39731;39733;39735|M|37.40,44.20|N|From the 
 T Lethal Efficiency|QID|40997|M|37.40,44.20|N|To Nikki the Gossip.|
 
 ;Insert the stuff that happens after you finish first zone here
+A Honoring Success |QID|40950|M|0.0,0.0|Z|Dalaran|N|From Lord Jorach Ravenholdt|; Chamber of Shadows |Z|1014;10|
 
 ;insert order hall progression quests here
 
@@ -165,3 +166,116 @@ J On to Highmountain|QID|39733|N| This temporarily ends the order hall guide, yo
 
 ]]
 end)
+--[==[
+A In the Blink of an Eye |QID|44184|M|49.6,82.1|Z||;  |Z|14;0|
+C In the Blink of an Eye |QID|44184|QO|2|M|49.6,48.3|Z|Deadwind Pass|; Chamber of the Guardian |Z|32;21|
+T In the Blink of an Eye |QID|44184|M|57.9,45.8|Z|Dalaran|N|To Emissary Auldbridge|; Dalaran |Z|1014;10|
+A Call of The Uncrowned |QID|40832|M|57.9,45.8|Z|Dalaran|N|From Ravenholdt Courier|; Dalaran |Z|1014;10|
+C Call of The Uncrowned |QID|40832|QO|1|M|58.2,48.4|Z|Dalaran|; Dalaran |Z|1014;10|
+; |U|114746|M|42.8,80.3|Z|Dalaran|N|item:114746 [Goredrenched Armor Set]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|114622|M|42.8,80.3|Z|Dalaran|N|item:114622 [Goredrenched Weaponry]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|114822|M|42.8,80.3|Z|Dalaran|N|item:114822 [Heavily Reinforced Armor Enhancement]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|114131|M|42.8,80.3|Z|Dalaran|N|item:114131 [Power Overrun Weapon Enhancement]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|114808|M|42.8,80.3|Z|Dalaran|N|item:114808 [Fortified Armor Enhancement]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|114129|M|42.8,80.3|Z|Dalaran|N|item:114129 [Striking Weapon Enhancement]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|114745|M|42.8,80.3|Z|Dalaran|N|item:114745 [Braced Armor Enhancement]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|114128|M|42.8,80.3|Z|Dalaran|N|item:114128 [Balanced Weapon Enhancement]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|128503|M|42.8,80.3|Z|Dalaran|N|item:128503 [Master Hunter's Seeking Crystal]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|127883|M|42.8,80.3|Z|Dalaran|N|item:127883 [True Iron Rudder]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|127882|M|42.8,80.3|Z|Dalaran|N|item:127882 [Blast Furnace]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|127880|M|42.8,80.3|Z|Dalaran|N|item:127880 [Ice Cutter]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|127663|M|42.8,80.3|Z|Dalaran|N|item:127663 [Trained Shark Tank]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|127894|M|42.8,80.3|Z|Dalaran|N|item:127894 [Tuskarr Fishing Net]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|127662|M|42.8,80.3|Z|Dalaran|N|item:127662 [High Intensity Fog Lights]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|125787|M|42.8,80.3|Z|Dalaran|N|item:125787 [Bilge Pump]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|118475|M|42.8,80.3|Z|Dalaran|N|item:118475 [Hearthstone Strategy Guide]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|118007|M|42.8,80.3|Z|Dalaran|N|item:118007 [Mecha-Blast Rocket]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|87216|M|42.8,80.3|Z|Dalaran|N|item:87216 [Thermal Anvil]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|110294|M|42.8,80.3|Z|Dalaran|N|item:110294 [Blackwater Whiptail Bait]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|110293|M|42.8,80.3|Z|Dalaran|N|item:110293 [Abyssal Gulper Eel Bait]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|110292|M|42.8,80.3|Z|Dalaran|N|item:110292 [Sea Scorpion Bait]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|110291|M|42.8,80.3|Z|Dalaran|N|item:110291 [Fire Ammonite Bait]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|110290|M|42.8,80.3|Z|Dalaran|N|item:110290 [Blind Lake Sturgeon Bait]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|110289|M|42.8,80.3|Z|Dalaran|N|item:110289 [Fat Sleeper Bait]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|110274|M|42.8,80.3|Z|Dalaran|N|item:110274 [Jawless Skulker Bait]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|118391|M|42.8,80.3|Z|Dalaran|N|item:118391 [Worm Supreme]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|122742|M|42.8,80.3|Z|Dalaran|N|item:122742 [Bladebone Hook]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|118236|M|42.8,80.3|Z|Dalaran|N|item:118236 [Counterfeit Coin]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|122580|M|42.8,80.3|Z|Dalaran|N|item:122580 [Ogre Buddy Handbook]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|122514|M|42.8,80.3|Z|Dalaran|N|item:122514 [Mission Completion Orders]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|122272|M|42.8,80.3|Z|Dalaran|N|item:122272 [Follower Ability Retraining Manual]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|118474|M|42.8,80.3|Z|Dalaran|N|item:118474 [Supreme Manual of Dance]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|118354|M|42.8,80.3|Z|Dalaran|N|item:118354 [Follower Retraining Certificate]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|118100|M|42.8,80.3|Z|Dalaran|N|item:118100 [Highmaul Relic]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|116415|M|42.8,80.3|Z|Dalaran|N|item:116415 [Pet Charm]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|44050|M|42.8,80.3|Z|Dalaran|N|item:44050 [Mastercraft Kalu'ak Fishing Pole]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|33820|M|42.8,80.3|Z|Dalaran|N|item:33820 [Weather-Beaten Fishing Hat]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|140590|M|42.8,80.3|Z|Dalaran|N|item:140590 [Large Crate of Salvage]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|114120|M|42.8,80.3|Z|Dalaran|N|item:114120 [Big Crate of Salvage]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|139593|M|42.8,80.3|Z|Dalaran|N|item:139593 [Sack of Salvaged Goods]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|118903|M|42.8,80.3|Z|Dalaran|N|item:118903 [Preserved Mining Pick]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|118897|M|42.8,80.3|Z|Dalaran|N|item:118897 [Miner's Coffee]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|114116|M|42.8,80.3|Z|Dalaran|N|item:114116 [Bag of Salvaged Goods]|; Dalaran Merchant's Bank |Z|1014;10|
+; |U|128453|M|42.8,80.3|Z|Dalaran|N|item:128453 [Saberstalkers Battle Standard]|; Dalaran Merchant's Bank |Z|1014;10|
+C Call of The Uncrowned |QID|40832|QO|2|M|52.9,70.6|Z|Dalaran|; Glorious Goods |Z|1014;10|
+C Call of The Uncrowned |QID|40832|QO|3|M|0.0,0.0|Z|Dalaran|; Hidden Corridor |Z|1014;10|
+C Call of The Uncrowned |QID|40832|QO|4|M|0.0,0.0|Z|Dalaran|; Chamber of Shadows |Z|1014;10|
+T Call of The Uncrowned |QID|40832|M|0.0,0.0|Z|Dalaran|N|To Lord Jorach Ravenholdt|; Chamber of Shadows |Z|1014;10|
+A The Final Shadow |QID|40839|M|0.0,0.0|Z|Dalaran|N|From Lord Jorach Ravenholdt|; Chamber of Shadows |Z|1014;10|
+C The Final Shadow |QID|40839|QO|1|M|0.0,0.0|Z|Dalaran|; Chamber of Shadows |Z|1014;10|
+C The Final Shadow |QID|40839|QO|2|M|0.0,0.0|Z|Dalaran|; Chamber of Shadows |Z|1014;10|
+T The Final Shadow |QID|40839|M|0.0,0.0|Z|Dalaran|N|To Lord Jorach Ravenholdt|; Chamber of Shadows |Z|1014;10|
+A A Worthy Blade |QID|40840|M|42.4,78.1|Z|Dalaran|N|From Lord Jorach Ravenholdt|; Chamber of Shadows |Z|1014;4|
+C A Worthy Blade |QID|40840|QO|3|M|41.4,75.1|Z|Dalaran|; Chamber of Shadows |Z|1014;4|
+C A Worthy Blade |QID|40840|QO|1|M|41.4,75.1|Z|Dalaran|; Chamber of Shadows |Z|1014;4|
+C A Worthy Blade |QID|40840|QO|2|M|41.4,75.1|Z|Dalaran|; Chamber of Shadows |Z|1014;4|
+C A Worthy Blade |QID|40840|QO|4|M|41.5,76.2|Z|Dalaran|; Chamber of Shadows |Z|1014;4|
+T A Worthy Blade |QID|40840|M|41.5,76.2|Z|Dalaran|N|To Lord Jorach Ravenholdt|; Chamber of Shadows |Z|1014;4|
+A A Friendly Accord |QID|40847|M|41.3,75.0|Z|Dalaran|N|From Fleet Admiral Tethys|; Chamber of Shadows |Z|1014;4|
+C A Friendly Accord |QID|40847|QO|1|M|0.0,0.0|Z|Dalaran|; Chamber of the Guardian |Z|1014;4|
+C A Friendly Accord |QID|40847|QO|2|M|32.5,73.1|Z|Dalaran|; Chamber of the Guardian |Z|1014;12|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Dalaran|; Chamber of the Guardian |Z|1014;12|
+C The Dark Within |QID|37234|QO|2|M|0.0,0.0|Z|Dalaran|; Chamber of the Guardian |Z|1014;12|
+C A Friendly Accord |QID|40847|QO|1|M|0.0,0.0|Z|Dalaran|; Chamber of the Guardian |Z|1014;12|
+C A Friendly Accord |QID|40847|QO|2|M|0.0,0.0|Z|Dalaran|; Chamber of the Guardian |Z|1014;12|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Dalaran|; Chamber of the Guardian |Z|1014;12|
+C A Friendly Accord |QID|40847|QO|3|M|41.7,67.9|Z|The Cape of Stranglethorn|; Booty Bay |Z|673;0|
+C A Friendly Accord |QID|40847|QO|4|M|40.7,69.0|Z|The Cape of Stranglethorn|; The Crimson Veil |Z|673;0|
+T A Friendly Accord |QID|40847|M|40.8,69.0|Z|The Cape of Stranglethorn|N|To Fleet Admiral Tethys|; The Crimson Veil |Z|673;0|
+A The Dreadblades |QID|40849|M|40.8,69.0|Z|The Cape of Stranglethorn|N|From Fleet Admiral Tethys|; The Crimson Veil |Z|673;0|
+C The Dreadblades |QID|40849|QO|1|M|40.8,69.0|Z|The Cape of Stranglethorn|; The Crimson Veil |Z|673;0|
+C The Dark Within |QID|37234|QO|2|M|0.0,0.0|Z|The Cape of Stranglethorn|; Booty Bay |Z|673;0|
+C The Dreadblades |QID|40849|QO|1|M|0.0,0.0|Z|The Cape of Stranglethorn|; Booty Bay |Z|673;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|The Cape of Stranglethorn|; Booty Bay |Z|673;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|The Cape of Stranglethorn|; Booty Bay |Z|673;0|
+; Usernote: Temple of A Thousand Ligues|M|56.0,68.7|Z|Azsuna|; Temple of A Thousand Lights |Z|1015;0|
+C The Dreadblades |QID|40849|QO|2|M|53.4,72.0|Z|Azsuna|; Temple of A Thousand Lights |Z|1015;0|
+C The Dreadblades |QID|40849|QO|3|M|85.4,60.6|Z|Azsuna|; Temple of A Thousand Lights |Z|1015;0|
+C The Dark Within |QID|37234|QO|2|M|85.4,60.6|Z|Azsuna|; Temple of A Thousand Lights |Z|1015;0|
+C The Dreadblades |QID|40849|QO|2|M|85.4,60.6|Z|Azsuna|; Temple of A Thousand Lights |Z|1015;0|
+C The Dreadblades |QID|40849|QO|1|M|85.4,60.6|Z|Azsuna|; Temple of A Thousand Lights |Z|1015;0|
+C Survey Ashran |QID|36127|QO|3|M|85.4,60.6|Z|Azsuna|; Temple of A Thousand Lights |Z|1015;0|
+C Survey Ashran |QID|36127|QO|2|M|85.4,60.6|Z|Azsuna|; Temple of A Thousand Lights |Z|1015;0|
+T The Dreadblades |QID|40849|M|0.0,0.0|Z|Dalaran|N|To Fleet Admiral Tethys|; Chamber of Shadows |Z|1014;10|
+A Honoring Success |QID|40950|M|0.0,0.0|Z|Dalaran|N|From Lord Jorach Ravenholdt|; Chamber of Shadows |Z|1014;10|
+C Honoring Success |QID|40950|QO|1|M|0.0,0.0|Z|Dalaran|; Chamber of Shadows |Z|1014;10|
+C Honoring Success |QID|40950|QO|2|M|0.0,0.0|Z|Dalaran|; Chamber of Shadows |Z|1014;10|
+C Honoring Success |QID|40950|QO|3|M|0.0,0.0|Z|Dalaran|; Chamber of Shadows |Z|1014;10|
+T Honoring Success |QID|40950|M|0.0,0.0|Z|Dalaran|N|To Lord Jorach Ravenholdt|; Chamber of Shadows |Z|1014;10|
+A Right Tools for the Job |QID|40994|M|0.0,0.0|Z|Dalaran|N|From Lord Jorach Ravenholdt|; Chamber of Shadows |Z|1014;10|
+T Right Tools for the Job |QID|40994|M|30.8,69.6|Z|Dalaran|N|To Marin Noggenfogger|; Uncrowned Vault |Z|1014;4|
+A Injection of Power |QID|40995|M|30.8,69.6|Z|Dalaran|N|From Marin Noggenfogger|; Uncrowned Vault |Z|1014;4|
+C Injection of Power |QID|40995|QO|1|M|30.8,69.6|Z|Dalaran|; Uncrowned Vault |Z|1014;4|
+C Injection of Power |QID|40995|QO|2|M|28.1,61.7|Z|Dalaran|; Uncrowned Vault |Z|1014;4|
+T Injection of Power |QID|40995|M|30.8,69.3|Z|Dalaran|N|To Marin Noggenfogger|; Uncrowned Vault |Z|1014;4|
+A Delegation |QID|40996|M|30.8,69.3|Z|Dalaran|N|From Marin Noggenfogger|; Uncrowned Vault |Z|1014;4|
+T Delegation |QID|40996|M|38.0,44.3|Z|Dalaran|N|To Nikki the Gossip|; The Hall of Shadows |Z|1014;4|
+A Lethal Efficiency |QID|40997|M|38.0,44.3|Z|Dalaran|N|From Nikki the Gossip|; The Hall of Shadows |Z|1014;4|
+A Paradise Lost |QID|39718|M|37.8,45.1|Z|Dalaran|N|From Nikki the Gossip|; The Hall of Shadows |Z|1014;4|
+T Lethal Efficiency |QID|40997|M|37.8,45.1|Z|Dalaran|N|To Nikki the Gossip|; The Hall of Shadows |Z|1014;4|
+; |U|140192|M|44.7,57.3|Z|Dalaran|N|item:140192 [Dalaran Hearthstone]|; Chamber of Shadows |Z|1014;4|
+C Survey Ashran |QID|36127|QO|2|M|99.4,14.9|Z|Dalaran|; Chamber of Shadows |Z|1014;4|
+C The Dark Within |QID|37234|QO|2|M|99.4,14.9|Z|Dalaran|; Chamber of Shadows |Z|1014;4|
+C Survey Ashran |QID|36127|QO|3|M|99.4,14.9|Z|Dalaran|; Chamber of Shadows |Z|1014;4|
+]==]
+
