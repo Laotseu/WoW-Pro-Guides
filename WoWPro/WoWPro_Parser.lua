@@ -66,7 +66,7 @@ WoWPro.actiontypes = {
 	J = "Interface\\TAXIFRAME\\UI-Taxi-Icon-Red",
 	["!"] = "Interface\\GossipFrame\\DailyQuestIcon",
 	["$"] = "Interface\\Worldmap\\TreasureChest_64",
-	[";"] = "Interface\\Icons\\INV_Scroll_11",
+--	[";"] = "Interface\\Icons\\INV_Scroll_11",
 	--noncombat = "Interface\\AddOns\\WoWPro\\Textures\\Config.tga",
 	-- noncombat = "Interface\\MINIMAP\\OBJECTICONS",
 	noncombat = [[Interface\GossipFrame\BinderGossipIcon]],
@@ -127,7 +127,7 @@ WoWPro.actionlabels = {
 	J = "Jump",
 	["!"] = "Declare",
 	["$"] = "Treasure",
-	[";"] = "Comment"
+	--[";"] = "Comment"
 }
 
 function WoWPro.InsertActionDescriptions(tabla, order)
