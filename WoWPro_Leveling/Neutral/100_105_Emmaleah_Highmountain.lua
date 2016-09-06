@@ -121,7 +121,7 @@ C Dargrul and the Hammer|QID|39027|M|66.48,49.66|QO|1|Z|1024/5|NC|N|Follow Warbr
 C Dargrul and the Hammer|QID|39027|M|15.25,26.78|QO|2|Z|1024/5|NC|N|There is a Treasure chest up where Dargrul was.  You will have to kill 15-20 mobs to get it, so I'm not sure its worth it.  Run out of the cavern.|
 T Dargrul and the Hammer|QID|39027|M|38.60,68.44|N|To Spiritwalker Ebonhorn.|
 A Get to High Ground|QID|38909|M|38.60,68.44|N|From Spiritwalker Ebonhorn.|
-C Get to High Ground|QID|38909|M|27.48,38.90|Z|ThunderTotem|QO|1|N|Escort Jale Rivermane to Thunder Totem.|
+C Get to High Ground|QID|38909|M|27.48,38.90|Z|ThunderTotem|QO|1|NC|N|Escort Jale Rivermane to Thunder Totem.|
 C Get to High Ground|QID|38909|M|55.48,65.55|Z|Highmountain/6|QO|2|NC|N|Follow Jale to Mayla Highmountain.|
 T Get to High Ground|QID|38909|M|54.67,63.02|Z|Highmountain/6|N|To Mayla Highmountain.|
 A The Bloodtotem Tribe|QID|38912|M|54.67,63.02|Z|Highmountain/6|N|From Mayla Highmountain.|

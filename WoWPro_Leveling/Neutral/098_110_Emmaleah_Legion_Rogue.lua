@@ -12,7 +12,7 @@
 -- Date: 2016-08-20 00:38
 -- Who: Emmaleah
 
-local guide = WoWPro:RegisterGuide('EmmLegionRogue', 'Leveling', 'The Hall of Shadows@Dalaran', 'Emmaleah', 'Neutral')
+local guide = WoWPro:RegisterGuide('EmmLegionRogue', 'Leveling', 'The Hall of Shadows@Dalaran70', 'Emmaleah', 'Neutral')
 WoWPro:GuideName(guide, 'Rogue Order Hall')
 WoWPro:GuideLevels(guide,98, 110, 98.0)
 WoWPro:GuideNextGuide(guide, 'EmmAzsuna')
