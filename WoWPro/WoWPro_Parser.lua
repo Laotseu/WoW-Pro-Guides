@@ -456,7 +456,7 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 	-- Validate guide zone
 	local valid, msg = WoWPro.ParseZoneToken(zone, true)		
 	if not valid then 
-		err("Invalid zone = %s, msg = %s",zone,msg)
+		--err("Invalid zone = %s, msg = %s",zone,msg)
 		local currentZone = HBD:GetLocalizedMap(HBD:GetPlayerZone())
 		WoWPro:Warning(("Invalid zone %s for guide %s, will use current zone %s"):format(zone or "nil", GID, currentZone))
 		zone = currentZone
@@ -1190,7 +1190,12 @@ function WoWPro:RowUpdate(offset)
 		        note = note.." ("..coord..")"
 		    end
 		    if zone and zone ~= WoWPro.Guides[GID].zone then
-		        note = note .. " @ " ..zone
+		    	local display_zone = zone
+		    	if zone:find("@") then
+		    		-- Let's remove the ugly @xxxxx
+		    		display_zone = zone:gsub("[@].*","")
+		    	end
+		      note = note .. " @ " ..display_zone
 		    end
 		end
 		
