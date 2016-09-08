@@ -126,14 +126,14 @@ A Wakening Sickness|QID|31005|M|70.24,25.55|N|From Kil'ruk the Wind-Reaver.|
 A Ancient Vengeance|QID|31676|M|70.24,25.55|N|From Kil'ruk the Wind-Reaver.|
 C Wakening Sickness|QID|31005|S|M|71.18,36.13|N|The flies he wants are in groups and can be easily AE'd|
 C Ancient Vengeance|QID|31676|S|M|70.58,36.61|
-l Wind-Reaver's Dagger of Quick Strikes|QID|31666|L|86519|CC|M|71.8,36.1|N|This BoA Agility dagger can rarely be found on the ground, against the base of a piller here.|
+C Wind-Reaver's Dagger of Quick Strikes|QID|31666|NC|M|71.8,36.1|N|This BoA Agility dagger can rarely be found on the ground, against the base of a piller here.|
 C Ancient Vengeance|QID|31676|US|M|70.58,36.61|
 C Wakening Sickness|QID|31005|US|M|71.18,38.43|N|The flies he wants are in groups and can be easily AE'd|
 T Wakening Sickness|QID|31005|M|70.16,25.63|N|To Kil'ruk the Wind-Reaver.|
 T Ancient Vengeance|QID|31676|M|70.16,25.63|N|To Kil'ruk the Wind-Reaver.|
 A The Klaxxi Council|QID|31006|M|70.24,25.75|N|From Kil'ruk the Wind-Reaver.|
 
-C The Klaxxi Council|QID|31006|M|54.09,34.78|NC|N|Talk to him for a ride.|
+C The Klaxxi Council|QID|31006|M|54.09,34.78|CHAT|N|Talk to him for a ride.|
 T The Klaxxi Council|QID|31006|M|55.01,33.99|N|To Kil'ruk the Wind-Reaver.|
 A The Dread Clutches|QID|31007|M|55.01,33.99|N|From Kil'ruk the Wind-Reaver.|
 A Not Fit to Swarm|QID|31660|M|55.01,33.99|N|From Kil'ruk the Wind-Reaver.|

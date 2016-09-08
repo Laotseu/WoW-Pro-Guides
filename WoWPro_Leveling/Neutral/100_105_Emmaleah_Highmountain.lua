@@ -40,12 +40,12 @@ N Ranks|QID|39733|N|Setting the guide to Rank 1 will get you all of the essentia
 T The Lone Mountain|QID|39733|M|71.13,43.96|Z|Dalaran@Dalaran70|N|To Warbrave Oro.|
 A Keepers of the Hammer|QID|38907|M|71.13,43.96|Z|Dalaran@Dalaran70|QO|1|N|From Warbrave Oro.|
 C Keepers of the Hammer|QID|38907|M|69.95,51.20|Z|Dalaran@Dalaran70|QO|2|NC|N|Fly to Thunder Totem in Highmountain at Aludane Whitecloud. (the normal way you use a flight path, not a chat option).|
-C Keepers of the Hammer|QID|38907|M|45.70,38.88|Z|ThunderTotem|NC|N|Meet Warbrave Oro at Thunder Totem.|
-T Keepers of the Hammer|QID|38907|M|50.01,44.71|Z|ThunderTotem|CS|N|Take the elevator down to Mayla Highmountain.|
-A The Rivermane Tribe|QID|38911|M|44.51,50.70|Z|ThunderTotem|N|From Mayla Highmountain.|
-$ Treasure Chest|QID|40471|M|62.04,67.25|Z|ThunderTotem|N|Loot for a bit of treasure and Resources.|
-$ Treasure Chest|QID|44352|M|32.16,38.35;31.98,38.35|Z|ThunderTotem|CS|N|Jump off the bridge and swim into an underwater cave to find the Treasure.  Loot for a bit of resources and treasure.|RANK|2|
-$ Treasure Chest|QID|40475|M|32.05,41.93|Z|ThunderTotem|N|After you leave the cave, as you are swimming to shore, there is another treasure in the boat.  Loot for a bit of resources and treasure.|RANK|2|
+C Keepers of the Hammer|QID|38907|M|45.70,38.88|Z|Thunder Totem|NC|N|Meet Warbrave Oro at Thunder Totem.|
+T Keepers of the Hammer|QID|38907|M|50.01,44.71|Z|Thunder Totem|CS|N|Take the elevator down to Mayla Highmountain.|
+A The Rivermane Tribe|QID|38911|M|44.51,50.70|Z|Thunder Totem|N|From Mayla Highmountain.|
+$ Treasure Chest|QID|40471|M|62.04,67.25|Z|Thunder Totem|N|Loot for a bit of treasure and Resources.|
+$ Treasure Chest|QID|44352|M|32.16,38.35;31.98,38.35|Z|Thunder Totem|CS|N|Jump off the bridge and swim into an underwater cave to find the Treasure.  Loot for a bit of resources and treasure.|RANK|2|
+$ Treasure Chest|QID|40475|M|32.05,41.93|Z|Thunder Totem|N|After you leave the cave, as you are swimming to shore, there is another treasure in the boat.  Loot for a bit of resources and treasure.|RANK|2|
 A The Rivermane Tribe|QID|38911|M|43.64,59.92|N|From Jale Rivermane.|
 T The Rivermane Tribe|QID|38911|M|43.64,59.92|N|To Jale Rivermane.|
 A Ormgul the Pestilent|QID|39491|M|43.64,59.92|N|From Jale Rivermane.|
@@ -99,7 +99,7 @@ $ Glimmering Treasure Chest|QID|40476|M|77.63,55.45|Z|1024/21|N|Go down these st
 T Moozy's Adventure|QID|39572|M|40.00,57.93|N|To Sella Waterwise.|
 K Kill Flamescale|QID|39963|QO|1|M|40.97,57.72|T|Flamescale|N|Click on the abandoned fishing pole to summon up Flamescale, a rare mob you can kill for treasure and resources.|ITEM|131773|
 
-$ Small Treasure Chest|QID|40491|M|13.67,55.40|Z|ThunderTotem|N|Cross the river, run through Earthmother's Bounty and follow the road, pause briefly to loot for a bit of treasure and resources.|
+$ Small Treasure Chest|QID|40491|M|13.67,55.40|Z|Thunder Totem|N|Cross the river, run through Earthmother's Bounty and follow the road, pause briefly to loot for a bit of treasure and resources.|
 R Riverbend|QID|39498|M|41.97,66.70|N|Continue on the road until you get to Riverbend.|
 T High Water|QID|39498|M|40.36,71.70|N|To Jale Rivermane.|
 A The Underking Comes|QID|42104|M|40.36,71.70|N|From Jale Rivermane.|
@@ -126,7 +126,7 @@ C Dargrul and the Hammer|QID|39027|M|66.48,49.66|QO|1|Z|1024/5|NC|N|Follow Warbr
 C Dargrul and the Hammer|QID|39027|M|15.25,26.78|QO|2|Z|1024/5|NC|N|There is a Treasure chest up where Dargrul was.  You will have to kill 15-20 mobs to get it, so I'm not sure its worth it.  Run out of the cavern.|
 T Dargrul and the Hammer|QID|39027|M|38.60,68.44|N|To Spiritwalker Ebonhorn.|
 A Get to High Ground|QID|38909|M|38.60,68.44|N|From Spiritwalker Ebonhorn.|
-C Get to High Ground|QID|38909|M|27.48,38.90|Z|ThunderTotem|QO|1|N|Escort Jale Rivermane to Thunder Totem.|
+C Get to High Ground|QID|38909|M|27.48,38.90|Z|Thunder Totem|QO|1|NC|N|Escort Jale Rivermane to Thunder Totem.|
 C Get to High Ground|QID|38909|M|55.48,65.55|Z|Highmountain/6|QO|2|NC|N|Follow Jale to Mayla Highmountain.|
 T Get to High Ground|QID|38909|M|54.67,63.02|Z|Highmountain/6|N|To Mayla Highmountain.|
 A The Bloodtotem Tribe|QID|38912|M|54.67,63.02|Z|Highmountain/6|N|From Mayla Highmountain.|
@@ -138,8 +138,8 @@ C The Story of Huln|QID|40167|M|74.73,74.63|Z|Highmountain/6|CHAT|N|The Story of
 T The Story of Huln|QID|40167|M|74.73,74.63|Z|Highmountain/6|N|To Spiritwalker Ebonhorn.|
 A To See the Past|QID|40520|M|74.73,74.63|Z|Highmountain/6|N|From Spiritwalker Ebonhorn.|
 R Path of Sky|QID|40520|M|50.50,38.94|Z|Highmountain/6|N|Run out this doorway.|
-C To See the Past|QID|40520|M|35.31,23.53|Z|ThunderTotem|QO|1|NC|N|Buy the bottle of Airspark from Lanna Skyspark.|
-C To See the Past|QID|40520|M|57.76,10.92|Z|ThunderTotem|QO|2|NC|N|Click on the sparkling place at the base of the falls.|
+C To See the Past|QID|40520|M|35.31,23.53|Z|Thunder Totem|QO|1|NC|N|Buy the bottle of Airspark from Lanna Skyspark.|
+C To See the Past|QID|40520|M|57.76,10.92|Z|Thunder Totem|QO|2|NC|N|Click on the sparkling place at the base of the falls.|
 K Kill Sekhan|QID|40681|QO|1|M|45.15,56.30|T|Sekhan|N|Rare to kill for treasure and resources.|
 C To See the Past|QID|40520|M|45.17,53.42|QO|3|N|Click on the crystal here and then fight the Darkshard Crystal that appears.|
 T To See the Past|QID|40520|M|74.92,75.00|Z|Highmountain/6|N|To Spiritwalker Ebonhorn.|
@@ -163,45 +163,46 @@ T Huln's War - The Nathrezim|QID|39992|M|74.78,75.23|Z|Highmountain/6|N|To Spiri
 A Secrets of Highmountain|QID|38916|M|74.78,75.23|Z|Highmountain/6|N|From Spiritwalker Ebonhorn.|
 A Ceremonial Drums|QID|42622|M|54.89,77.98|Z|Highmountain/6|N|From Torv Dubstomp.|
 C Ceremonial Drums|QID|42622|M|39.51,74.70|Z|Highmountain/6|S|NC|N|Pick up the medium and large Ceremonial Drum from where you get the quest and then take the elevator upstairs to find more.
-A Mountainstrider Round-Up|QID|42596|M|53.92,45.84|Z|ThunderTotem|N|From Liza Galestride.|
-A Moozy's Reunion|QID|42590|M|51.89,55.00;45.86,54.99|CS|Z|ThunderTotem|N|From Sella Waterwise.|
-C Moozy's Reunion|QID|42590|M|53.37,20.63|Z|ThunderTotem|N|Ethel can be found in a hut.|
-C Mountainstrider Round-Up|QID|42596|M|53.37,20.63; 54.15,45.76|CN|Z|ThunderTotem|N|Ride a mountainstrider back to the stablemaster. Then do it again two more times.|
-C Moozy's Reunion|QID|42590|M|53.98,45.76|Z|ThunderTotem|N|By the time you have all the mountainstriders safely back to the stables, Ethel made it home.|
-T Mountainstrider Round-Up|QID|42596|M|53.98,45.76|Z|ThunderTotem|N|To Liza Galestride.|
-T Moozy's Reunion|QID|42590|M|45.93,54.93|Z|ThunderTotem|N|To Sella Waterwise.|
-C Ceremonial Drums|QID|42622|M|52.99,57.83|Z|ThunderTotem|QO|3|N|Kill the drumtakers to get the  Small Ceremonial Drums|
+A Mountainstrider Round-Up|QID|42596|M|53.92,45.84|Z|Thunder Totem|N|From Liza Galestride.|
+A Moozy's Reunion|QID|42590|M|51.89,55.00;45.86,54.99|CS|Z|Thunder Totem|N|From Sella Waterwise.|
+C Moozy's Reunion|QID|42590|M|53.37,20.63|Z|Thunder Totem|N|Ethel can be found in a hut.|
+C Mountainstrider Round-Up|QID|42596|M|53.37,20.63; 54.15,45.76|CN|Z|Thunder Totem|N|Ride a mountainstrider back to the stablemaster. Then do it again two more times.|
+C Moozy's Reunion|QID|42590|M|53.98,45.76|Z|Thunder Totem|N|By the time you have all the mountainstriders safely back to the stables, Ethel made it home.|
+T Mountainstrider Round-Up|QID|42596|M|53.98,45.76|Z|Thunder Totem|N|To Liza Galestride.|
+T Moozy's Reunion|QID|42590|M|45.93,54.93|Z|Thunder Totem|N|To Sella Waterwise.|
+C Ceremonial Drums|QID|42622|M|52.99,57.83|Z|Thunder Totem|QO|3|N|Kill the drumtakers to get the  Small Ceremonial Drums|
 C Ceremonial Drums|QID|42622|M|45.10,65.09|N|Finish collecting drums.|
 T Secrets of Highmountain|QID|38916|M|44.87,65.72|N|To Spiritwalker Ebonhorn.|
 
 A The Path of Huln|QID|39575|M|44.87,65.72|N|From Spiritwalker Ebonhorn.|
-$ Treasure Chest|QID|40510|M|41.78,72.72|N|Loot for a bit of treasure and resources.|
-C The Path of Huln|QID|39575|M|45.63,71.15|Z|1024/29|NC|QO|1|N|Escort Spiritwalker Ebonhorn to the Path of Huln.|
-C The Path of Huln|QID|39575|M|46.50,70.98|Z|1024/29|NC|QO|2|N|Jump in to the Vault.|
-T The Path of Huln|QID|39575|M|47.35,70.26|Z|1024/29|N|To Spiritwalker Ebonhorn.|
-A Echoes of Deathwing-Bonus Objective|QID|39576|M|47.35,70.26|Z|1024/29|N|Auto accepted when you enter the area.|
-C Echoes of Deathwing-Bonus Objective|QID|39576|M|47.35,70.26|Z|1024/29|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|
-A In Defiance of Deathwing|QID|40219|M|47.35,70.26|Z|1024/29|N|From Spiritwalker Ebonhorn.|
-C In Defiance of Deathwing|QID|40219|M|38.71,71.47|Z|1024/29|QO|1|NC|N|Click on brazier to recieve Vision of Scales.|
-C In Defiance of Deathwing|QID|40219|M|51.50,30.62|Z|1024/29|QO|2|NC|N|Click on the brazier to see Vision of the Hammer.|
-$ Glimmering Treasure Chest|QID|39606|M|52.04,28.79|Z|1024/29|N|Step on the Titan Waygate, to be teleported above, where you will see another brazier, Click on it to see a short vignette. After that, a chest appears in front of the Waygate before you leave the upper area. Loot for treasure and resources.|
-$ Small Treaure Chest|QID|40508|M|49.52,40.08;60.82,54.91|CS|Z|1024/29|N|Loot for a bit of treasure and resources.|
-C In Defiance of Deathwing|QID|40219|M|49.90,55.10|Z|1024/29|QO|3|NC|N|Click on the brazier to see Vision of Hope.|
-T In Defiance of Deathwing|QID|40219|M|49.90,55.10|Z|1024/29|N|To Spiritwalker Ebonhorn who is following you.|
-A Titanic Showdown|QID|39578|M|49.90,55.10|Z|1024/29|N|From Spiritwalker Ebonhorn.|
-C Titanic Showdown|QID|39578|QO|1|M|53.91,63.14;48.04,70.53|CS|Z|1024/29|NC|N|Click on the brazier to see Vision of Deathwing.|
-C Titanic Showdown|QID|39578|QO|2|M|48.04,70.53|Z|1024/29|N|Fight Vision of Deathwing.|
-T Titanic Showdown|QID|39578|M|48.50,71.21|Z|1024/29|N|To Spiritwalker Ebonhorn.|
-A An Ancient Secret|QID|39577|M|48.50,71.12|Z|1024/29|N|From Spiritwalker Ebonhorn.|
-C An Ancient Secret|QID|39577|M|59.67,77.13|Z|1024/29|QO|1|NC|N|Light this brazier to witness Vision of Ebon Wings.|
-C An Ancient Secret|QID|39577|M|61.52,72.74|Z|1024/29|QO|2|N|Defend Huln|
-C An Ancient Secret|QID|39577|M|61.52,72.74|Z|1024/29|QO|3|NC|N|Listen to Ebonhorn|
-T An Ancient Secret|QID|39577|M|61.52,72.74|Z|1024/29|N|To Ebyssian.|
-A The Backdoor|QID|39579|M|61.52,72.74|Z|1024/29|N|From Ebyssian.|
-$ Treasure Chest|QID|40509|M|40.26,50.09|Z|1024/29|N|Backtrack a little ways to pick up this chest for treasure and resources.|RANK|2|
-R The Backdoor|QID|39579|M|49.71,86.94|CC|Z|1024/29|N|The backdoor is this way. Mount up and ride out.|
-C Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|1024/29|US|N|If you somehow managed to not finish this, kill a few more.|
-T Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|1024/29|N|Auto turned in upon completion.|
+$ Treasure Chest|QID|40510|M|43.7,72.8|N|Loot for a bit of treasure and resources.|
+C The Path of Huln|QID|39575|M|45.63,71.15|Z|Path of Huln|NC|QO|1|N|Escort Spiritwalker Ebonhorn to the Path of Huln.|
+C The Path of Huln|QID|39575|M|46.50,70.98|Z|Path of Huln|NC|QO|2|N|Jump in to the Vault.|
+T The Path of Huln|QID|39575|M|47.35,70.26|Z|Path of Huln|N|To Spiritwalker Ebonhorn.|
+A Echoes of Deathwing-Bonus Objective|QID|39576|S|M|47.35,70.26|Z|Path of Huln|N|Auto accepted when you enter the area.|
+C Echoes of Deathwing-Bonus Objective|QID|39576|S|M|47.35,70.26|Z|Path of Huln|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|
+A In Defiance of Deathwing|QID|40219|M|47.35,70.26|Z|Path of Huln|N|From Spiritwalker Ebonhorn.|
+C In Defiance of Deathwing|QID|40219|M|38.71,71.47|Z|Path of Huln|QO|1|NC|N|Click on brazier to recieve Vision of Scales.|
+C In Defiance of Deathwing|QID|40219|M|51.50,30.62|Z|Path of Huln|QO|2|NC|N|Click on the brazier to see Vision of the Hammer.|
+C Echoes of Deathwing-Bonus Objective|QID|39576|US|M|47.35,70.26|Z|Path of Huln|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|
+$ Glimmering Treasure Chest|QID|39606|M|52.04,28.79|Z|Path of Huln|N|Step on the Titan Waygate, to be teleported above, where you will see another brazier, Click on it to see a short vignette. After that, a chest appears in front of the Waygate before you leave the upper area. Loot for treasure and resources.|
+$ Small Treaure Chest|QID|40508|M|49.52,40.08;60.82,54.91|CS|Z|Path of Huln|N|Loot for a bit of treasure and resources.|
+C In Defiance of Deathwing|QID|40219|M|49.90,55.10|Z|Path of Huln|QO|3|NC|N|Click on the brazier to see Vision of Hope.|
+T In Defiance of Deathwing|QID|40219|M|49.90,55.10|Z|Path of Huln|N|To Spiritwalker Ebonhorn who is following you.|
+A Titanic Showdown|QID|39578|M|49.90,55.10|Z|Path of Huln|N|From Spiritwalker Ebonhorn.|
+C Titanic Showdown|QID|39578|QO|1|M|53.91,63.14;48.04,70.53|CS|Z|Path of Huln|NC|N|Click on the brazier to see Vision of Deathwing.|
+C Titanic Showdown|QID|39578|QO|2|M|48.04,70.53|Z|Path of Huln|N|Fight Vision of Deathwing.|
+T Titanic Showdown|QID|39578|M|48.50,71.21|Z|Path of Huln|N|To Spiritwalker Ebonhorn.|
+A An Ancient Secret|QID|39577|M|48.50,71.12|Z|Path of Huln|N|From Spiritwalker Ebonhorn.|
+C An Ancient Secret|QID|39577|M|59.67,77.13|Z|Path of Huln|QO|1|NC|N|Light this brazier to witness Vision of Ebon Wings.|
+C An Ancient Secret|QID|39577|M|61.52,72.74|Z|Path of Huln|QO|2|N|Defend Huln|
+C An Ancient Secret|QID|39577|M|61.52,72.74|Z|Path of Huln|QO|3|NC|N|Listen to Ebonhorn|
+T An Ancient Secret|QID|39577|M|61.52,72.74|Z|Path of Huln|N|To Ebyssian.|
+A The Backdoor|QID|39579|M|61.52,72.74|Z|Path of Huln|N|From Ebyssian.|
+$ Treasure Chest|QID|40509|M|40.26,50.09|Z|Path of Huln|N|Backtrack a little ways to pick up this chest for treasure and resources.|RANK|2|
+R The Backdoor|QID|39579|M|49.71,86.94|CC|Z|Path of Huln|N|The backdoor is this way. Mount up and ride out.|
+C Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|Path of Huln|US|N|If you somehow managed to not finish this, kill a few more.|
+T Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|Path of Huln|N|Auto turned in upon completion.|
 T The Backdoor|QID|39579|M|47.48,84.74|N|To Mayla Highmountain.|
 A The High Chieftain|QID|39580|M|47.47,84.73|N|From Mayla Highmountain.|
 f Obsidian Overlook|QID|39579|M|47.26,84.64|N|At Chofa Nighthoof.|
@@ -307,16 +308,16 @@ K Kill the Exiled Shaman|QID|39782|QO|1|M|41.92,41.61|ITEM|129175|T|Tenpack Flam
 U Learn companion pet|QID|39782|M|41.92,41.61|U|129175|N|Click to add Crispin to your pet journal. (manually close this step.)|RANK|2|
 $ Optional-Toy|QID|39824|M|55.7,53.2;53.61,51.04|CS|ITEM|131811|U|131927|N|If you want to have this toy, there is one more treasure to pick up. After you get it click on the feather to combine. Its hard to explain and you may want to consult the internet for more info. Run back to Skyhorn village and then follow the arrow from there. The coordinates are to where the path starts to get to the tree that the chest is balanced on. Check this off manually if you don't want to do this. Check the next step off manually if you do.|RANK|2|
 C The Skies of Highmountain|QID|39387|M|45.69,39.15|NC|N|Optional-Hop on Aviash for a quick ride back to Thunder Totem. (check this off manually)|
-C The Skies of Highmountain|QID|39387|M|42.17,32.99|Z|ThunderTotem|QO|1|CHAT|N|Meet Lasan at Thunder Totem.|
-C The Skies of Highmountain|QID|39387|M|46.68,60.82|Z|ThunderTotem|QO|2|NC|N|Witness the Skyhorn Ritual.|
-T The Skies of Highmountain|QID|39387|M|54.81,63.03|Z|ThunderTotem|N|To Mayla Highmountain.|
-T The High Chieftain|QID|39580|M|44.46,50.75|Z|ThunderTotem|N|To Mayla Highmountain.|
-T Ceremonial Drums|QID|42622|M|44.51,55.87|Z|ThunderTotem|N|To Torv Dubstomp.|
-R Up the elevator|QID|42630|M|42.86,38.79|Z|ThunderTotem|CC|N|Take the elevator above for a few more quests.|
-A Bolas Bastion|QID|42630|M|42.86,38.79|Z|ThunderTotem|N|From Bolas Skyfeather.|
-C Bolas Bastion|QID|42630|M|43.38,37.81|Z|ThunderTotem|NC|N|Hop in the Bolos Launcher and shoot at the Coven Attackers.|
-T Bolas Bastion|QID|42630|M|42.94,38.76|Z|ThunderTotem|N|To Bolas Skyfeather.|
-A An Offering of Ammo|QID|40217|M|42.34,46.85|Z|ThunderTotem|N|From Shale Greyfeather.|
+C The Skies of Highmountain|QID|39387|M|42.17,32.99|Z|Thunder Totem|QO|1|CHAT|N|Meet Lasan at Thunder Totem.|
+C The Skies of Highmountain|QID|39387|M|46.68,60.82|Z|Thunder Totem|QO|2|NC|N|Witness the Skyhorn Ritual.|
+T The Skies of Highmountain|QID|39387|M|54.81,63.03|Z|Thunder Totem|N|To Mayla Highmountain.|
+T The High Chieftain|QID|39580|M|44.46,50.75|Z|Thunder Totem|N|To Mayla Highmountain.|
+T Ceremonial Drums|QID|42622|M|44.51,55.87|Z|Thunder Totem|N|To Torv Dubstomp.|
+R Up the elevator|QID|42630|M|42.86,38.79|Z|Thunder Totem|CC|N|Take the elevator above for a few more quests.|
+A Bolas Bastion|QID|42630|M|42.86,38.79|Z|Thunder Totem|N|From Bolas Skyfeather.|
+C Bolas Bastion|QID|42630|M|43.38,37.81|Z|Thunder Totem|NC|N|Hop in the Bolos Launcher and shoot at the Coven Attackers.|
+T Bolas Bastion|QID|42630|M|42.94,38.76|Z|Thunder Totem|N|To Bolas Skyfeather.|
+A An Offering of Ammo|QID|40217|M|42.34,46.85|Z|Thunder Totem|N|From Shale Greyfeather.|
 
 A Wrathshard|QID|39134|M|49.02,55.26|N|From Warbrave Nava.|RANK|2|
 A No Time to Talk|QID|39133|M|49.02,55.26|N|From Warbrave Nava|RANK|2|
@@ -516,8 +517,8 @@ C Unexpected Allies|QID|39456|M|54.80,63.04|Z|1080/6|QO|2|NC|N|Wait / watch the 
 T Unexpected Allies|QID|39456|M|54.80,63.04|Z|1080/6|N|To Mayla Hightmountain.|
 A Battle of Snowblind Mesa|QID|38915|M|54.80,63.04|Z|1080/6|N|To Mayla Hightmountain.|
 R Up the elevator|QID|38915|M|58.27,83.78|Z|1080/6|N|And back up again.|
-$ Steany Jewerly Box|QID|39531|M|63.49,59.41|Z|ThunderTotem|ITEM|141322 1|N|I'm somewhat uncomfortable stealing from sleeping ally's, but there it is.|
-$ Small Treasure Chest|QID|40472|M|50.64,75.37|Z|ThunderTotem|N|Loot for a bit of resources and treasure.|
+$ Steany Jewerly Box|QID|39531|M|63.49,59.41|Z|Thunder Totem|ITEM|141322 1|N|I'm somewhat uncomfortable stealing from sleeping ally's, but there it is.|
+$ Small Treasure Chest|QID|40472|M|50.64,75.37|Z|Thunder Totem|N|Loot for a bit of resources and treasure.|
 T Battle of Snowblind Mesa|QID|38915|M|53.27,64.05|N|To Mayla Highmountain.|
 A Battle Worms|QID|39776|M|53.27,64.05|N|From Mayla Highmountain.|
 A Buy Us Time|QID|39777|M|53.36,64.01|N|From Jale Rivermane.|
