@@ -1201,12 +1201,12 @@ function WoWPro:RowUpdate(offset)
 		        note = note.." ("..coord..")"
 		    end
 		    if zone and zone ~= WoWPro.Guides[GID].zone then
-		    	local display_zone = zone
+		    	local display_zone = WoWPro.Zone2MapID[zone] and WoWPro.Zone2MapID[zone].mapName or zone
 		    	if zone:find("@") then
 		    		-- Let's remove the ugly @xxxxx
 		    		display_zone = zone:gsub("[@].*","")
 		    	end
-		      note = note .. " @ " ..display_zone
+		      note = note .. " in " ..display_zone
 		    end
 		end
 		
