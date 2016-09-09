@@ -36,7 +36,7 @@ N Ranks|QID|39718|N|Setting the guide to Rank 1 will get you all of the essentia
 
 T Paradise Lost|QID|39718|M|72.51,45.66|Z|Dalaran@Dalaran70|N|To Archmage Khadgar.|
 A Down to Azsuna|QID|41220|M|72.51,45.66|Z|Dalaran@Dalaran70|N|From Archmage Khadgar.|
-C Down to Azsuna|QID|41220|QO|1|M|72.51,45.66|Z|Dalaran@Dalaran70|NC|N|Fly down with Khadgar.|
+C Down to Azsuna|QID|41220|M|72.51,45.66|Z|Dalaran@Dalaran70|CHAT|N|Fly down with Khadgar.|
 T Down to Azsuna|QID|41220|M|45.11,42.92|N|To Archmage Khadgar.|
 A Into the Fray|QID|38834|M|45.11,42.92|N|From Archmage Khadgar.|
 f Illidari Stand|M|44.59,43.85|N|At Izal Whitemoon.|
@@ -56,8 +56,8 @@ C The Price of Power|QID|39935|M|41.58,44.85|US|N|And kill more demons to learn 
 C Demon Souls|QID|37653|U|122100|QO|1|M|42.24,46.42|N|Finish up killing demons and use the gem to trap their souls.|US|
 T Reignite the Wards|QID|37658|M|43.14,43.60|N|To Jace Darkweaver.|
 T The Price of Power|QID|39935|M|43.29,43.16|N|To Allari the Souleater.|P|Inscription;773|
-T Demon Souls|QID|37653|M|43.28,43.16|N|To Allari the Souleater.|LVL|102|
-A Scribal Knowledge|QID|39939|M|43.29,43.16|N|From Allari the Souleater.|P|Inscription;773|LVL|102|PRE|39935|
+T Demon Souls|QID|37653|M|43.28,43.16|N|To Allari the Souleater.|
+A Scribal Knowledge|QID|39939|M|43.29,43.16|N|From Allari the Souleater.|P|Inscription;773|PRE|39935|
 A Inscription of the Body|QID|39936|M|43.29,43.16|N|From Allari the Souleater.|P|Inscription;773|LVL|102|PRE|39935|
 A The Scythe of Souls|QID|37660|M|43.28,43.16|N|From Allari the Souleater.|
 C The Scythe of Souls|QID|37660|QO|1|M|44.38,44.63|N|Chat with Allari|CHAT|
@@ -158,7 +158,7 @@ K Kill Grand Vintner Valiana|QID|38203|QO|3|M|42.91,8.55|T|Grand Vintner Valiana
 $ Glimmering Treasure Chest|QID|38367|M|42.63,8.08|N|Loot for a bit of treasure and resources.|RANK|3|
 C Tainted Vintage-Bonus Objective|QID|37965|M|47.62,13.13|US|N|Stay and complete or check off.|RANK|3|
 t A Tainted Vintage-Bonus Objective|QID|37965|M|47.62,13.13|N|Auto turned in when complete.|RANK|3|
-f Challiane Vineyards|M|40.81,8.98|N|At Stagtamer Maliana.|RANK|3|
+f Challiane's Terrace|M|40.81,8.98|N|At Stagtamer Maliana.|RANK|3|
 T Challiane Vineyards|QID|38203|M|40.78,9.33|N|To Cellarman Voodani.|RANK|3|
 R Azurewing Whelplands|QID|37857|M|53.50,16.68|N|Back to the interupted quest line.|RANK|3|
 
