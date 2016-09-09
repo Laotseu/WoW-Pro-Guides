@@ -45,7 +45,7 @@ N Ranks|QID|39733|N|Setting the guide to Rank 1 will get you all of the essentia
 T The Lone Mountain|QID|39733|M|71.13,43.96|Z|Dalaran@Dalaran70|N|To Warbrave Oro.|
 A Keepers of the Hammer|QID|38907|M|71.13,43.96|Z|Dalaran@Dalaran70|QO|1|N|From Warbrave Oro.|
 C Keepers of the Hammer|QID|38907|M|69.95,51.20|Z|Dalaran@Dalaran70|QO|2|NC|N|Fly to Thunder Totem in Highmountain at Aludane Whitecloud. (the normal way you use a flight path, not a chat option).|
-C Keepers of the Hammer|QID|38907|M|45.70,38.88|Z|ThunderTotem|NC|N|Meet Warbrave Oro at Thunder Totem.|
+C Keepers of the Hammer|QID|38907|M|45.70,38.88|Z|ThunderTotem|NC|N|Meet Warbrave Oro at ThunderTotem.|
 T Keepers of the Hammer|QID|38907|M|50.01,44.71|Z|ThunderTotem|CS|N|Take the elevator down to Mayla Highmountain.|
 A The Rivermane Tribe|QID|38911|M|44.51,50.70|Z|ThunderTotem|N|From Mayla Highmountain.|
 $ Treasure Chest|QID|40471|M|62.04,67.25|Z|ThunderTotem|N|Loot for a bit of treasure and Resources.|
@@ -131,7 +131,7 @@ C Dargrul and the Hammer|QID|39027|M|66.48,49.66|QO|1|Z|1024/5|NC|N|Follow Warbr
 C Dargrul and the Hammer|QID|39027|M|15.25,26.78|QO|2|Z|1024/5|NC|N|There is a Treasure chest up where Dargrul was.  You will have to kill 15-20 mobs to get it, so I'm not sure its worth it.  Run out of the cavern.|
 T Dargrul and the Hammer|QID|39027|M|38.60,68.44|N|To Spiritwalker Ebonhorn.|
 A Get to High Ground|QID|38909|M|38.60,68.44|N|From Spiritwalker Ebonhorn.|
-C Get to High Ground|QID|38909|M|27.48,38.90|Z|ThunderTotem|QO|1|N|Escort Jale Rivermane to Thunder Totem.|
+C Get to High Ground|QID|38909|M|27.48,38.90|Z|ThunderTotem|QO|1|NC|N|Escort Jale Rivermane to ThunderTotem.|
 C Get to High Ground|QID|38909|M|55.48,65.55|Z|Highmountain/6|QO|2|NC|N|Follow Jale to Mayla Highmountain.|
 T Get to High Ground|QID|38909|M|54.67,63.02|Z|Highmountain/6|N|To Mayla Highmountain.|
 A The Bloodtotem Tribe|QID|38912|M|54.67,63.02|Z|Highmountain/6|N|From Mayla Highmountain.|
@@ -181,32 +181,33 @@ T Secrets of Highmountain|QID|38916|M|44.87,65.72|N|To Spiritwalker Ebonhorn.|
 
 A The Path of Huln|QID|39575|M|44.87,65.72|N|From Spiritwalker Ebonhorn.|
 $ Treasure Chest|QID|40510|M|43.78,72.72|N|Loot for a bit of treasure and resources.|
-C The Path of Huln|QID|39575|M|45.63,71.15|Z|1024/29|NC|QO|1|N|Escort Spiritwalker Ebonhorn to the Path of Huln.|
-C The Path of Huln|QID|39575|M|46.50,70.98|Z|1024/29|NC|QO|2|N|Jump in to the Vault.|
-T The Path of Huln|QID|39575|M|47.35,70.26|Z|1024/29|N|To Spiritwalker Ebonhorn.|
-A Echoes of Deathwing-Bonus Objective|QID|39576|M|47.35,70.26|Z|1024/29|N|Auto accepted when you enter the area.|
-C Echoes of Deathwing-Bonus Objective|QID|39576|M|47.35,70.26|Z|1024/29|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|
-A In Defiance of Deathwing|QID|40219|M|47.35,70.26|Z|1024/29|N|From Spiritwalker Ebonhorn.|
-C In Defiance of Deathwing|QID|40219|M|38.71,71.47|Z|1024/29|QO|1|NC|N|Click on brazier to recieve Vision of Scales.|
-C In Defiance of Deathwing|QID|40219|M|51.50,30.62|Z|1024/29|QO|2|NC|N|Click on the brazier to see Vision of the Hammer.|
-$ Glimmering Treasure Chest|QID|39606|M|52.04,28.79|Z|1024/29|N|Step on the Titan Waygate, to be teleported above, where you will see another brazier, Click on it to see a short vignette. After that, a chest appears in front of the Waygate before you leave the upper area. Loot for treasure and resources.|
-$ Small Treaure Chest|QID|40508|M|49.52,40.08;60.82,54.91|CS|Z|1024/29|N|Loot for a bit of treasure and resources.|
-C In Defiance of Deathwing|QID|40219|M|49.90,55.10|Z|1024/29|QO|3|NC|N|Click on the brazier to see Vision of Hope.|
-T In Defiance of Deathwing|QID|40219|M|49.90,55.10|Z|1024/29|N|To Spiritwalker Ebonhorn who is following you.|
-A Titanic Showdown|QID|39578|M|49.90,55.10|Z|1024/29|N|From Spiritwalker Ebonhorn.|
-C Titanic Showdown|QID|39578|QO|1|M|53.91,63.14;48.04,70.53|CS|Z|1024/29|NC|N|Click on the brazier to see Vision of Deathwing.|
-C Titanic Showdown|QID|39578|QO|2|M|48.04,70.53|Z|1024/29|N|Fight Vision of Deathwing.|
-T Titanic Showdown|QID|39578|M|48.50,71.21|Z|1024/29|N|To Spiritwalker Ebonhorn.|
-A An Ancient Secret|QID|39577|M|48.50,71.12|Z|1024/29|N|From Spiritwalker Ebonhorn.|
-C An Ancient Secret|QID|39577|M|59.67,77.13|Z|1024/29|QO|1|NC|N|Light this brazier to witness Vision of Ebon Wings.|
-C An Ancient Secret|QID|39577|M|61.52,72.74|Z|1024/29|QO|2|N|Defend Huln|
-C An Ancient Secret|QID|39577|M|61.52,72.74|Z|1024/29|QO|3|NC|N|Listen to Ebonhorn|
-T An Ancient Secret|QID|39577|M|61.52,72.74|Z|1024/29|N|To Ebyssian.|
-A The Backdoor|QID|39579|M|61.52,72.74|Z|1024/29|N|From Ebyssian.|
-$ Treasure Chest|QID|40509|M|40.26,50.09|Z|1024/29|N|Backtrack a little ways to pick up this chest for treasure and resources.|RANK|2|
-R The Backdoor|QID|39579|M|49.71,86.94|CC|Z|1024/29|N|The backdoor is this way. Mount up and ride out.|
-C Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|1024/29|US|N|If you somehow managed to not finish this, kill a few more.|
-T Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|1024/29|N|Auto turned in upon completion.|
+C The Path of Huln|QID|39575|M|45.63,71.15|Z|Path of Huln|NC|QO|1|N|Escort Spiritwalker Ebonhorn to the Path of Huln.|
+C The Path of Huln|QID|39575|M|46.50,70.98|Z|Path of Huln|NC|QO|2|N|Jump in to the Vault.|
+T The Path of Huln|QID|39575|M|47.35,70.26|Z|Path of Huln|N|To Spiritwalker Ebonhorn.|
+A Echoes of Deathwing-Bonus Objective|QID|39576|S|M|47.35,70.26|Z|Path of Huln|N|Auto accepted when you enter the area.|
+C Echoes of Deathwing-Bonus Objective|QID|39576|S|M|47.35,70.26|Z|Path of Huln|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|
+A In Defiance of Deathwing|QID|40219|M|47.35,70.26|Z|Path of Huln|N|From Spiritwalker Ebonhorn.|
+C In Defiance of Deathwing|QID|40219|M|38.71,71.47|Z|Path of Huln|QO|1|NC|N|Click on brazier to recieve Vision of Scales.|
+C In Defiance of Deathwing|QID|40219|M|51.50,30.62|Z|Path of Huln|QO|2|NC|N|Click on the brazier to see Vision of the Hammer.|
+C Echoes of Deathwing-Bonus Objective|QID|39576|US|M|47.35,70.26|Z|Path of Huln|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|
+$ Glimmering Treasure Chest|QID|39606|M|52.04,28.79|Z|Path of Huln|N|Step on the Titan Waygate, to be teleported above, where you will see another brazier, Click on it to see a short vignette. After that, a chest appears in front of the Waygate before you leave the upper area. Loot for treasure and resources.|
+$ Small Treaure Chest|QID|40508|M|49.52,40.08;60.82,54.91|CS|Z|Path of Huln|N|Loot for a bit of treasure and resources.|
+C In Defiance of Deathwing|QID|40219|M|49.90,55.10|Z|Path of Huln|QO|3|NC|N|Click on the brazier to see Vision of Hope.|
+T In Defiance of Deathwing|QID|40219|M|49.90,55.10|Z|Path of Huln|N|To Spiritwalker Ebonhorn who is following you.|
+A Titanic Showdown|QID|39578|M|49.90,55.10|Z|Path of Huln|N|From Spiritwalker Ebonhorn.|
+C Titanic Showdown|QID|39578|QO|1|M|53.91,63.14;48.04,70.53|CS|Z|Path of Huln|NC|N|Click on the brazier to see Vision of Deathwing.|
+C Titanic Showdown|QID|39578|QO|2|M|48.04,70.53|Z|Path of Huln|N|Fight Vision of Deathwing.|
+T Titanic Showdown|QID|39578|M|48.50,71.21|Z|Path of Huln|N|To Spiritwalker Ebonhorn.|
+A An Ancient Secret|QID|39577|M|48.50,71.12|Z|Path of Huln|N|From Spiritwalker Ebonhorn.|
+C An Ancient Secret|QID|39577|M|59.67,77.13|Z|Path of Huln|QO|1|NC|N|Light this brazier to witness Vision of Ebon Wings.|
+C An Ancient Secret|QID|39577|M|61.52,72.74|Z|Path of Huln|QO|2|N|Defend Huln|
+C An Ancient Secret|QID|39577|M|61.52,72.74|Z|Path of Huln|QO|3|NC|N|Listen to Ebonhorn|
+T An Ancient Secret|QID|39577|M|61.52,72.74|Z|Path of Huln|N|To Ebyssian.|
+A The Backdoor|QID|39579|M|61.52,72.74|Z|Path of Huln|N|From Ebyssian.|
+$ Treasure Chest|QID|40509|M|40.26,50.09|Z|Path of Huln|N|Backtrack a little ways to pick up this chest for treasure and resources.|RANK|2|
+R The Backdoor|QID|39579|M|49.71,86.94|CC|Z|Path of Huln|N|The backdoor is this way. Mount up and ride out.|
+C Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|Path of Huln|US|N|If you somehow managed to not finish this, kill a few more.|
+T Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|Path of Huln|N|Auto turned in upon completion.|
 T The Backdoor|QID|39579|M|47.48,84.74|N|To Mayla Highmountain.|
 A The High Chieftain|QID|39580|M|47.47,84.73|N|From Mayla Highmountain.|
 f Obsidian Overlook|QID|39579|M|47.26,84.64|N|At Chofa Nighthoof.|
