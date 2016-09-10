@@ -231,10 +231,10 @@ N Check Your Mail |ACTIVE|14094|Z|GilneasCity|M|58.94,31.89|N|There's a mailbox 
 
 C All Hell Breaks Loose |QID|14093|N|Kill Rampaging Worgen.|Z|GilneasCity|M|58.8,32.7|S|
 C Salvage the Supplies |QID|14094|N|Look for Supply Crates near the buildings.|Z|GilneasCity|M|58.8,32.7|S|NC|
-C Evacuate the Merchant Square |QID|14098|N|Click on Merchant Square Doors.  A Rampaging Worgen may attack you on opening the door.|Z|GilneasCity|M|58.8,32.7|S|
+C Evacuate the Merchant Square |QID|14098|NC|N|Click on Merchant Square Doors.  A Rampaging Worgen may attack you on opening the door.|Z|GilneasCity|M|58.8,32.7|S|
 C All Hell Breaks Loose |QID|14093|N|Kill Rampaging Worgen.|US|Z|GilneasCity|
 C Salvage the Supplies |QID|14094|N|Look for Supply Crates near the buildings.|US|Z|GilneasCity|NC|
-C Evacuate the Merchant Square |QID|14098|N|Click on Merchant Square Doors.|US|Z|GilneasCity|
+C Evacuate the Merchant Square |QID|14098|NC|N|Click on Merchant Square Doors.|US|Z|GilneasCity|
 
 T Salvage the Supplies |QID|14094|Z|GilneasCity|M|59.58,26.77|N|Back to Gwen Armstead.|
 
