@@ -118,9 +118,9 @@ C Grell to Pay|QID|42865|M|68.13,71.58|N|Kill Enderkind|T|Enderkind|RANK|2|
 C All Grell Broke Loose|QID|42883|M|68.68,73.84|NC|US|U|138815|N|Use the Old Grizzlebarks staff (provided) to clear the doorways of brambles.|RANK|2|
 C Moist Around the Hedges|QID|42857|M|68.68,73.84|NC|US|N|These are scattered around and drop from the Grell.|RANK|2|
 C Grassroots Effort|QID|42884|M|68.68,73.84|US|N|Kill Grell as you search for brambles to untangle.|RANK|2|
-T Grell to Pay|QID|42865|M|66.68,77.28|N|To Old Grizzleback.|RANK|2|
 T All Grell Broke Loose|QID|42883|M|66.68,77.28|N|To Old Grizzleback.|RANK|2|
 T Grassroots Effort|QID|42884|M|66.68,77.28|N|To Old Grizzleback.|RANK|2|
+T Grell to Pay|QID|42865|M|66.68,77.28|N|To Old Grizzleback.|RANK|2|
 T Moist Around the Hedges|QID|42857|M|66.68,77.28|N|To Old Grizzleback.|RANK|2|
 
 R Whispering Bluffs|QID|38900|M|64.69,81.13|N|Continuing on our way towards Steelclaw Vale.|RANK|2|
@@ -141,8 +141,8 @@ C Emerald Sisters|QID|42748|NC|M|59.46,82.04|US|N|Finish rescuing Sisters as you
 C Where the Wildkin Are|QID|42747|M|59.46,82.04|US|N|Finish killing Wildkin and slimes as you leave the grotto.|RANK|2|
 T Emerald Sisters|QID|42748|M|59.41,84.13|N|To Guviena Bladesong.|RANK|2|
 T Where the Wildkin Are|QID|42747|M|59.41,84.13|N|To Guviena Bladesong.|RANK|2|
-T Grotessque Remains|QID|42786|M|59.41,84.13|N|To Guviena Bladesong.|RANK|2|
 T Dreamcatcher|QID|42750|M|59.41,84.13|N|To Guviena Bladesong.|RANK|2|
+T Grotessque Remains|QID|42786|M|59.41,84.13|N|To Guviena Bladesong.|RANK|2|
 A Moon Reaver|QID|42751|M|59.41,84.13|N|From Guviena Bladesong.|RANK|2|
 
 $ Elindya Featherlight|QID|38887|M|60.42,90.72;61.03,88.04|CS|N|Click on Elindya and then follow her and help her kill the demon Skul'vrax|RANK|3|
@@ -192,7 +192,7 @@ R Marrowden|QID|43446|M|46.02,87.22|N|Brief sidetrip for a couple of treasures a
 K Kill Bahagar|QID|43446|QO|1|M|45.61,88.84|ITEM|130135|N|Silver - Kill for loot and resources.|RANK|3|
 $ Treasure|QID|44138|M|43.7,89.9;43.05,88.19|CS|N|In a cave with several unfriendly hydras.  Loot for a bit of treasure and resources.|RANK|3|;if we had such a rank... this would qualify for rank 4
 R Smolderhide Thicket|QID|38146|M|48.68,88.28|N|And... back to your questing.|RANK|3|
-K Kill Chieftain Graw|QID|38146|M|48.68,88.28|T|Chieftain Graw|
+K Kill Chieftain Graw|QID|38146|M|48.68,88.28|T|Chieftain Graw|LEAD|38146|
 A The Chieftain's Beads|QID|38146|M|48.71,88.30|N|Auto accepted from item you looted from the Cheiftain.|
 C Frenzied Furbolgs|QID|38455|M|46.95,84.40|US|N|Finish killing the Smolderhide furbolg.|
 T Totemic Call|QID|38246|M|48.39,84.63|N|To Elder Sookh.|
