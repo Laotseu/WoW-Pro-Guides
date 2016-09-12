@@ -523,7 +523,7 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 	
 	-- Finding the zone --
 	local zm,zf,zc,zi
-	zm = nil
+	--zm = nil
 	if zone then
 		if tonumber(zone) then
 	        -- Using a numeric zone ID
@@ -537,9 +537,9 @@ function WoWPro:MapPoint(row, forceBlizCoord)
 			zi = WoWPro.Zone2MapID[zone].zonei
 	        WoWPro:dbp("MapPoint: zone [%s] mapped to %d/%d", zone, zm, zf)
 			-- Hack for Tomtom
-			if (not zf or zf == 0) and WoWPro.Zone2MapID[zone].numFloors and WoWPro.Zone2MapID[zone].numFloors > 1 then
-				zf = GetCurrentMapDungeonLevel() or 1 -- use 1 instead of 0 when there is more then one floor and the floor is not specified
-			end
+			-- if (not zf) and WoWPro.Zone2MapID[zone].numFloors and WoWPro.Zone2MapID[zone].numFloors > 1 then
+			-- 	zf = GetCurrentMapDungeonLevel() or 1 -- use 1 instead of 0 when there is more then one floor and the floor is not specified
+			-- end
 	   end
 	end
 
