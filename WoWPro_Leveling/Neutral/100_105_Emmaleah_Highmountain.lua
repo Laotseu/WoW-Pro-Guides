@@ -45,7 +45,7 @@ N Ranks|QID|39733|N|Setting the guide to Rank 1 will get you all of the essentia
 T The Lone Mountain|QID|39733|M|71.13,43.96|Z|Dalaran@Dalaran70|N|To Warbrave Oro.|
 A Keepers of the Hammer|QID|38907|M|71.13,43.96|Z|Dalaran@Dalaran70|QO|1|N|From Warbrave Oro.|
 C Keepers of the Hammer|QID|38907|M|69.95,51.20|Z|Dalaran@Dalaran70|QO|2|NC|N|Fly to Thunder Totem in Highmountain at Aludane Whitecloud. (the normal way you use a flight path, not a chat option).|
-C Keepers of the Hammer|QID|38907|M|45.70,38.88|Z|ThunderTotem|NC|N|Meet Warbrave Oro at Thunder Totem.|
+C Keepers of the Hammer|QID|38907|M|45.70,38.88|Z|ThunderTotem|NC|N|Meet Warbrave Oro at ThunderTotem.|
 T Keepers of the Hammer|QID|38907|M|50.01,44.71|Z|ThunderTotem|CS|N|Take the elevator down to Mayla Highmountain.|
 A The Rivermane Tribe|QID|38911|M|44.51,50.70|Z|ThunderTotem|N|From Mayla Highmountain.|
 $ Treasure Chest|QID|40471|M|62.04,67.25|Z|ThunderTotem|N|Loot for a bit of treasure and Resources.|
@@ -131,7 +131,7 @@ C Dargrul and the Hammer|QID|39027|M|66.48,49.66|QO|1|Z|1024/5|NC|N|Follow Warbr
 C Dargrul and the Hammer|QID|39027|M|15.25,26.78|QO|2|Z|1024/5|NC|N|There is a Treasure chest up where Dargrul was.  You will have to kill 15-20 mobs to get it, so I'm not sure its worth it.  Run out of the cavern.|
 T Dargrul and the Hammer|QID|39027|M|38.60,68.44|N|To Spiritwalker Ebonhorn.|
 A Get to High Ground|QID|38909|M|38.60,68.44|N|From Spiritwalker Ebonhorn.|
-C Get to High Ground|QID|38909|M|27.48,38.90|Z|ThunderTotem|QO|1|N|Escort Jale Rivermane to Thunder Totem.|
+C Get to High Ground|QID|38909|M|27.48,38.90|Z|ThunderTotem|QO|1|NC|N|Escort Jale Rivermane to ThunderTotem.|
 C Get to High Ground|QID|38909|M|55.48,65.55|Z|Highmountain/6|QO|2|NC|N|Follow Jale to Mayla Highmountain.|
 T Get to High Ground|QID|38909|M|54.67,63.02|Z|Highmountain/6|N|To Mayla Highmountain.|
 A The Bloodtotem Tribe|QID|38912|M|54.67,63.02|Z|Highmountain/6|N|From Mayla Highmountain.|
@@ -181,35 +181,36 @@ T Secrets of Highmountain|QID|38916|M|44.87,65.72|N|To Spiritwalker Ebonhorn.|
 
 A The Path of Huln|QID|39575|M|44.87,65.72|N|From Spiritwalker Ebonhorn.|
 $ Treasure Chest|QID|40510|M|43.78,72.72|N|Loot for a bit of treasure and resources.|
-C The Path of Huln|QID|39575|M|45.63,71.15|Z|1024/29|NC|QO|1|N|Escort Spiritwalker Ebonhorn to the Path of Huln.|
-C The Path of Huln|QID|39575|M|46.50,70.98|Z|1024/29|NC|QO|2|N|Jump in to the Vault.|
-T The Path of Huln|QID|39575|M|47.35,70.26|Z|1024/29|N|To Spiritwalker Ebonhorn.|
-A Echoes of Deathwing-Bonus Objective|QID|39576|M|47.35,70.26|Z|1024/29|N|Auto accepted when you enter the area.|
-C Echoes of Deathwing-Bonus Objective|QID|39576|M|47.35,70.26|Z|1024/29|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|
-A In Defiance of Deathwing|QID|40219|M|47.35,70.26|Z|1024/29|N|From Spiritwalker Ebonhorn.|
-C In Defiance of Deathwing|QID|40219|M|38.71,71.47|Z|1024/29|QO|1|NC|N|Click on brazier to recieve Vision of Scales.|
-C In Defiance of Deathwing|QID|40219|M|51.50,30.62|Z|1024/29|QO|2|NC|N|Click on the brazier to see Vision of the Hammer.|
-$ Glimmering Treasure Chest|QID|39606|M|52.04,28.79|Z|1024/29|N|Step on the Titan Waygate, to be teleported above, where you will see another brazier, Click on it to see a short vignette. After that, a chest appears in front of the Waygate before you leave the upper area. Loot for treasure and resources.|
-$ Small Treaure Chest|QID|40508|M|49.52,40.08;60.82,54.91|CS|Z|1024/29|N|Loot for a bit of treasure and resources.|
-C In Defiance of Deathwing|QID|40219|M|49.90,55.10|Z|1024/29|QO|3|NC|N|Click on the brazier to see Vision of Hope.|
-T In Defiance of Deathwing|QID|40219|M|49.90,55.10|Z|1024/29|N|To Spiritwalker Ebonhorn who is following you.|
-A Titanic Showdown|QID|39578|M|49.90,55.10|Z|1024/29|N|From Spiritwalker Ebonhorn.|
-C Titanic Showdown|QID|39578|QO|1|M|53.91,63.14;48.04,70.53|CS|Z|1024/29|NC|N|Click on the brazier to see Vision of Deathwing.|
-C Titanic Showdown|QID|39578|QO|2|M|48.04,70.53|Z|1024/29|N|Fight Vision of Deathwing.|
-T Titanic Showdown|QID|39578|M|48.50,71.21|Z|1024/29|N|To Spiritwalker Ebonhorn.|
-A An Ancient Secret|QID|39577|M|48.50,71.12|Z|1024/29|N|From Spiritwalker Ebonhorn.|
-C An Ancient Secret|QID|39577|M|59.67,77.13|Z|1024/29|QO|1|NC|N|Light this brazier to witness Vision of Ebon Wings.|
-C An Ancient Secret|QID|39577|M|61.52,72.74|Z|1024/29|QO|2|N|Defend Huln|
-C An Ancient Secret|QID|39577|M|61.52,72.74|Z|1024/29|QO|3|NC|N|Listen to Ebonhorn|
-T An Ancient Secret|QID|39577|M|61.52,72.74|Z|1024/29|N|To Ebyssian.|
-A The Backdoor|QID|39579|M|61.52,72.74|Z|1024/29|N|From Ebyssian.|
-$ Treasure Chest|QID|40509|M|40.26,50.09|Z|1024/29|N|Backtrack a little ways to pick up this chest for treasure and resources.|RANK|2|
-R The Backdoor|QID|39579|M|49.71,86.94|CC|Z|1024/29|N|The backdoor is this way. Mount up and ride out.|
-C Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|1024/29|US|N|If you somehow managed to not finish this, kill a few more.|
-T Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|1024/29|N|Auto turned in upon completion.|
-T The Backdoor|QID|39579|M|47.48,84.74|N|To Mayla Highmountain.|
+C The Path of Huln|QID|39575|M|45.63,71.15|Z|Path of Huln|NC|QO|1|N|Escort Spiritwalker Ebonhorn to the Path of Huln.|
+C The Path of Huln|QID|39575|M|46.50,70.98|Z|Path of Huln|NC|QO|2|N|Jump in to the Vault.|
+T The Path of Huln|QID|39575|M|47.35,70.26|Z|Path of Huln|N|To Spiritwalker Ebonhorn.|
+A Echoes of Deathwing-Bonus Objective|QID|39576|S|M|47.35,70.26|Z|Path of Huln|N|Auto accepted when you enter the area.|
+C Echoes of Deathwing-Bonus Objective|QID|39576|S|M|47.35,70.26|Z|Path of Huln|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|
+A In Defiance of Deathwing|QID|40219|M|47.35,70.26|Z|Path of Huln|N|From Spiritwalker Ebonhorn.|
+C In Defiance of Deathwing|QID|40219|M|46.9,72.4|Z|Path of Huln|QO|1|NC|N|Click on brazier to recieve Vision of Scales.|
+C In Defiance of Deathwing|QID|40219|M|48.3,70.5|Z|Path of Huln|QO|2|NC|N|Click on the brazier to see Vision of the Hammer.|
+C Echoes of Deathwing-Bonus Objective|QID|39576|US|M|47.35,70.26|Z|Path of Huln|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|
+$ Glimmering Treasure Chest|QID|39606|M|48.3,70.4;52.04,28.79|Z|Path of Huln|N|Step on the Titan Waygate, to be teleported above, where you will see another brazier, Click on it to see a short vignette. After that, a chest appears in front of the Waygate before you leave the upper area. Loot for treasure and resources.|
+$ Small Treaure Chest|QID|40508|M|49.52,40.08;57.6,42.1;60.82,54.91|CS|Z|Path of Huln|N|Loot for a bit of treasure and resources.|
+C In Defiance of Deathwing|QID|40219|M|49.4,54.6|Z|Path of Huln|QO|3|NC|N|Step on the Titan Waygate, to be teleported down. Click on the brazier to see Vision of Hope.|
+T In Defiance of Deathwing|QID|40219|M|0,0|Z|Path of Huln|N|To Spiritwalker Ebonhorn who is following you.|
+A Titanic Showdown|QID|39578|M|0,0|Z|Path of Huln|N|From Spiritwalker Ebonhorn.|
+C Titanic Showdown|QID|39578|QO|1|M|53.91,63.14;48.04,70.53|CS|Z|Path of Huln|NC|N|Click on the brazier to see Vision of Deathwing.|
+C Titanic Showdown|QID|39578|QO|2|M|48.04,70.53|Z|Path of Huln|N|Fight Vision of Deathwing.|
+T Titanic Showdown|QID|39578|M|48.50,71.21|Z|Path of Huln|N|To Spiritwalker Ebonhorn.|
+A An Ancient Secret|QID|39577|M|48.50,71.12|Z|Path of Huln|N|From Spiritwalker Ebonhorn.|
+C An Ancient Secret|QID|39577|M|59.67,77.13|Z|Path of Huln|QO|1|NC|N|Light this brazier to witness Vision of Ebon Wings.|
+C An Ancient Secret|QID|39577|M|61.52,72.74|Z|Path of Huln|QO|2|N|Defend Huln|
+C An Ancient Secret|QID|39577|M|61.52,72.74|Z|Path of Huln|QO|3|NC|N|Listen to Ebonhorn|
+T An Ancient Secret|QID|39577|M|61.52,72.74|Z|Path of Huln|N|To Ebyssian.|
+A The Backdoor|QID|39579|M|61.52,72.74|Z|Path of Huln|N|From Ebyssian.|
+$ Treasure Chest|QID|40509|M|40.26,50.09|Z|Path of Huln|N|Backtrack a little ways to pick up this chest for treasure and resources.|RANK|2|
+R The Backdoor|QID|39579|M|49.71,86.94|CC|Z|Path of Huln|N|The backdoor is this way. Mount up and ride out.|
+C Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|Path of Huln|US|N|If you somehow managed to not finish this, kill a few more.|
+T Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|Path of Huln|N|Auto turned in upon completion.|
+T The Backdoor|QID|39579|M|47.48,84.74|Z|Highmountain|N|To Mayla Highmountain.|
 A The High Chieftain|QID|39580|M|47.47,84.73|N|From Mayla Highmountain.|
-f Obsidian Overlook|QID|39579|M|47.26,84.64|N|At Chofa Nighthoof.|
+f Obsidian Overlook|M|47.26,84.64|N|At Chofa Nighthoof.|
 
 F Skyhorn|QID|38913|M|47.26,84.64|N|At Chofa Nighthoof.|
 T The Skyhorn Tribe|QID|38913|M|52.47,44.70|N|To Lasan Skyhorn.|
@@ -224,8 +225,8 @@ C Candle to the Grave|QID|39768|M|56.08,46.40|S|N|Kill Bluewax Graverobbers.|
 C Wax On, Wax Off|QID|39765|M|56.86,45.26|T|Bluewax Skullcaptain|N|Kill and loot the Bullwax Skullcaptain for the skull.|
 $ The Beastly Boxer|QID|39872|M|55.48,47.21;53.69,51.30|CS|N|Follow this path to get to the Beastly Boxer. Challenge him to a fight, there is a bit of treasure and resources as a reward.|
 C Candle to the Grave|QID|39768|M|56.08,46.40|US|N|Go back and finish killing Bluewax Graverobbers|
-T Candle to the Grave|QID|39768|M|54.69,45.01|N|To Oenia Skyhorn.|
 T Wax On, Wax Off|QID|39765|M|54.69,45.01|N|To Oenia Skyhorn.|
+T Candle to the Grave|QID|39768|M|54.69,45.01|N|To Oenia Skyhorn.|
 A The Gates of Wax|QID|39769|M|54.69,45.01|N|From Oenia Skyhorn.|
 T The Gates of Wax|QID|39769|M|55.09,44.20;55.27,41.79|CS|N|To Bluewax Gatekeeper inside Candle Rock.|
 A Candle of Command|QID|40339|M|55.27,41.79|N|From Bluewax Gatekeeper.|
@@ -276,7 +277,7 @@ $ Treasure Chest|QID|40496|M|50.99,36.47|N|Loot for a bit of treasure and resour
 C Eagle Egg Recovery|QID|40070|M|50.82,35.32|NC|US|N|Finish collecting Eagle Eggs.|
 C Fledgling Worm Guts|QID|40069|M|50.29,34.88|US|N|Finish collecting worm guts.|
 $ Small Treasure Chest|QID|40497|M|49.39,38.02;49.85,40.31;50.25,38.63|CS|N|Run up the ramp (just before the bridge where you turn in the quest) for a small treasure chest.  Loot for a bit of treasure and resources.|
-C Tamer Takedown|QID|40071|M|49.12,42.20|N|Kill Tamer Korgrul.|T|Tamer Korgrul.|
+K Tamer Takedown|QID|40071|M|49.12,42.20|N|Kill Tamer Korgrul.|T|Tamer Korgrul|
 T Tamer Takedown|QID|40071|M|49.45,39.24|N|To Oren Windstrider.|
 T Fledgling Worm Guts|QID|40069|M|49.45,39.24|N|To Oren Windstrider.|
 A Going Down, Going Up|QID|42425|M|49.45,39.24|N|From Oren Windstrider.|
@@ -367,13 +368,13 @@ T Bear Huntin'|QID|39392|M|40.03,52.25|N|To Hemet Nesingwary.|RANK|2|
 A Scout It Out|QID|40228|M|40.04,52.25|N|From Hemet Nesingwary.|RANK|2|
 A Moose on the Loose|QID|39178|M|40.00,52.30|N|From Laeni Silvershot.|RANK|2|
 A I'm Not Lion!|QID|39867|M|40.02,52.36|N|From Ellias.|RANK|2|
-C I'm Not Lion!|QID|39867|M|37.50,49.12|N|Kill and loot the mountain lion.|T|Rashar|RANK|2|
-C Scout It Out|QID|40228|M|44.18,44.14;43.54,44.83|CS|U|130074|T|Irewing|N|Go up the hillside so you are in range to use the flare gun. Fire it off and the other hunters will come help you.|RANK|2|
-C Moose on the Loose|QID|39178|M|45.78,42.80|T|Morashu|N|Kill and loot the old moose. His guards are not there to help you.|RANK|2|
+K I'm Not Lion!|QID|39867|M|37.50,49.12|N|Kill and loot the mountain lion.|T|Rashar|RANK|2|
+K Scout It Out|QID|40228|M|44.18,44.14;43.54,44.83|CS|U|130074|T|Irewing|N|Go up the hillside so you are in range to use the flare gun. Fire it off and the other hunters will come help you.|RANK|2|
+K Moose on the Loose|QID|39178|M|45.78,42.80|T|Morashu|N|Kill and loot the old moose. His guards are not there to help you.|RANK|2|
 A The Screeching Crag-Bonus Objective|QID|40316|M|45.19,46.34|N|Auto-accepted when entering the area.|
 C The Screeching Crag-Bonus Objective|QID|40316|M|45.19,46.34|S|N|Kill harpys and the cursed animals, click on the hexxing fetishs to advance the objective.|
 A Hex-a-Gone|QID|39419|M|47.18,47.99|N|From Maltha Silenthoof|RANK|3|
-C Hex-a-Gone|QID|39419|M|45.56,49.06|T|Hexweaver Akara|N|Kill Heaweaver Akara.|RANK|3|
+K Hex-a-Gone|QID|39419|M|45.56,49.06|T|Hexweaver Akara|N|Kill Heaweaver Akara.|RANK|3|
 T Hex-a-Gone|QID|39419|M|47.18,47.99|N|To Maltha Silenthoof|RANK|3|
 C The Screeching Crag-Bonus Objective|QID|40316|M|45.15,47.49|US|N|Stay and finish or manually click it off.|
 t The Screeching Crag-Bonus Objective|QID|40316|M|45.15,47.49|N|Auto turned in upon completion.|
@@ -418,9 +419,9 @@ A Shiny, But Deadly|QID|39764|M|51.86,81.25|Z|1024/16|N|From Apprentice Rosalyn.
 A The Soulkeeper's Fate|QID|39773|M|51.86,81.25|Z|1024/16|N|From Apprentice Rosalyn.|RANK|2|
 C Shiny, But Deadly|QID|39764|M|51.49,15.02|Z|1024/16|S|N|Kill kobolds to sometimes collect Soul Chambers.|RANK|2|
 C The Soulkeeper's Fate|QID|39773|M|30.90,62.25|Z|1024/16|NC|N|Find Soulkeeper Uriah.|RANK|2|
-C Shiny, But Deadly|QID|39764|M|51.49,15.02|Z|1024/16|S|N|Kill kobolds to sometimes collect Soul Chambers.|RANK|2|
-T Shiny, But Deadly|QID|39764|M|30.65,62.80|Z|1024/16|N|To Apprentice Rosalyn.|RANK|2|
 T The Soulkeeper's Fate|QID|39773|M|30.65,62.80|Z|1024/16|N|To Apprentice Rosalyn.|RANK|2|
+C Shiny, But Deadly|QID|39764|M|51.49,15.02|Z|1024/16|US|N|Kill kobolds to sometimes collect Soul Chambers.|RANK|2|
+T Shiny, But Deadly|QID|39764|M|30.65,62.80|Z|1024/16|N|To Apprentice Rosalyn.|RANK|2|
 A Demon Detainment|QID|39774|M|30.65,62.80|Z|1024/16|N|From Apprentice Rosalyn.|RANK|2|
 C Demon Detainment|QID|39774|M|42.26,41.24|Z|1024/16|QO|3|T|Xorias|N|Xorias detained.|RANK|2|
 C Demon Detainment|QID|39774|M|55.69,13.48|Z|1024/16|QO|1|T|Ezerak|N|Ezerak detained.|RANK|2|
