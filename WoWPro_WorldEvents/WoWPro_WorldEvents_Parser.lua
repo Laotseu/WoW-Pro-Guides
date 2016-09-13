@@ -1,3 +1,5 @@
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
+
 --------------------------------------
 --      WoWPro_WorldEvents_Parser      --
 --------------------------------------
@@ -43,6 +45,8 @@ WoWPro.WorldEvents.actionlabels = {
 -- Determine Next Active Step (WorldEvents Module Specific)--
 -- This function is called by the main NextStep function in the core broker --
 function WoWPro.WorldEvents:NextStep(k, skip)
+	err("WoWPro.WorldEvents:NextStep was called")
+	if true then return end -- No longer used
 	local GID = WoWProDB.char.currentguide
 
 	-- Optional Quests --
@@ -66,6 +70,9 @@ end
 
 -- Event Response Logic --
 function WoWPro.WorldEvents:EventHandler(self, event, ...)
+	--err("WoWPro.WorldEvents:EventHandler was called")
+	if true then return end
+	-- All the code bellow is include in the WoWPro addon now.
 	WoWPro:dbp("Running: WorldEvents Event Handler "..event)
 		
     -- Lets see what quests the NPC has:

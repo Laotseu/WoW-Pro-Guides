@@ -147,14 +147,21 @@ T Their Numbers Are Legion|QID|38819|M|60.51,44.75|N|To Kayn Sunfury.|
 A Fel Secrets|QID|40051|M|60.51,44.82|N|From Kor'vas Bloodthorn.|
 C Fel Secrets|QID|40051|QO|1|M|60.56,44.76|NC|N|Click on the floating Book and choose between Havoc (DPS) & Vengeance (Tank)|
 T Fel Secrets|QID|40051|M|60.51,44.75|N|To Kayn Sunfury.|
-A Cry Havoc or Vengeance Will Be Mine!|QID|39516;39515|M|60.51,44.75|N|From Kayn Sunfury.|
-C Cry Havoc or Vengeance Will Be Mine!|QID|39516;39515|QO|2|M|60.55,44.86|N|Teach Cyana|CHAT|
-C Cry Havoc or Vengeance Will Be Mine!|QID|39516;39515|QO|4|M|60.52,44.82|N|Teach Kor'vas|CHAT|
-C Cry Havoc or Vengeance Will Be Mine!|QID|39516;39515|QO|3|M|60.51,44.75|N|Teach Kayn|CHAT|
-C Cry Havoc or Vengeance Will Be Mine!|QID|39516;39515|QO|1|M|60.53,44.66|N|Teach Allari|CHAT|
-C Cry Havoc or Vengeance Will Be Mine!|QID|39516;39515|QO|5|M|60.25,44.58|N|Teach Mannethrel|CHAT|
-t Cry Havoc and Let Slip the Illidari!|QID|39516|M|60.51,44.75|N|To Kayn Sunfury.|
-t Vengeance Will Be Mine!|QID|39515|M|60.51,44.75|N|To Kayn Sunfury.|
+A Cry Havoc and Let Slip the Illidari!|QID|39515;39516|M|60.51,44.75|N|From Kayn Sunfury.|
+C Cry Havoc and Let Slip the Illidari!|QID|39516|CHAT|QO|2|M|60.55,44.86|N|Teach Cyana|
+C Cry Havoc and Let Slip the Illidari!|QID|39516|CHAT|QO|4|M|60.52,44.82|N|Teach Kor'vas|
+C Cry Havoc and Let Slip the Illidari!|QID|39516|CHAT|QO|3|M|60.51,44.75|N|Teach Kayn|
+C Cry Havoc and Let Slip the Illidari!|QID|39516|CHAT|QO|1|M|60.53,44.66|N|Teach Allari|
+C Cry Havoc and Let Slip the Illidari!|QID|39516|CHAT|QO|5|M|60.25,44.58|N|Teach Mannethrel|
+T Cry Havoc and Let Slip the Illidari!|QID|39516|M|60.51,44.75|N|To Kayn Sunfury.|
+A Vengeance Will Be Mine! |QID|39515;39516|M|60.51,44.75|N|From Kayn Sunfury.|
+C Vengeance Will Be Mine! |QID|39515|CHAT|QO|2|M|60.55,44.86|N|Teach Cyana|
+C Vengeance Will Be Mine! |QID|39515|CHAT|QO|4|M|60.52,44.82|N|Teach Kor'vas|
+C Vengeance Will Be Mine! |QID|39515|CHAT|QO|3|M|60.51,44.75|N|Teach Kayn|
+C Vengeance Will Be Mine! |QID|39515|CHAT|QO|1|M|60.53,44.66|N|Teach Allari|
+C Vengeance Will Be Mine! |QID|39515|CHAT|QO|5|M|60.25,44.58|N|Teach Mannethrel|
+C Vengeance Will Be Mine! |QID|39515|M|60.51,44.75|N|To Kayn Sunfury.|
+T Vengeance Will Be Mine! |QID|39515|M|60.51,44.75|N|To Kayn Sunfury.|
 A On Felbat Wings|QID|39663|M|60.51,44.75|N|From Kayn Sunfury.|
 C On Felbat Wings|QID|39663|QO|1|M|62.53,44.90|N|Grab a felbat from Illidari Whitemoon and fly to the Fel Hammer.|CHAT|
 T On Felbat Wings|QID|39663|M|69.93,44.23|N|To Cyana Nightglaive.|
@@ -169,3 +176,4 @@ T Return to the Black Temple|QID|38729|M|69.86,37.70|N|To Kayn Sunfury.|
 ]]
 
 end)
+
