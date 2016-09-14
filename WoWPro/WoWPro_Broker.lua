@@ -2,8 +2,14 @@
 --      WoWPro_Broker      --
 -----------------------------
 
+local _G = getfenv(0)
+local WoWPro = _G.WoWPro
+
 local L = WoWPro_Locale
+local HBD = WoWPro.HBD
 local OldQIDs, CurrentQIDs, NewQIDs, MissingQIDs
+
+local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...)) .. " - " .. _G.time()) end
 
 -- Is nil when no scenario is active
 -- Is a table when a scenario is ongoing
@@ -72,11 +78,11 @@ function WoWPro.QidVerify(list,empty_ok,or_string,and_string)
 end
                     
 
--- See if any of the list of QIDs are in the indicated table.
-function WoWPro:QIDsInTable(QIDs,tabla)
---    WoWPro:dbp("WoWPro:QIDsInTable(%s,%s)",QIDs,tostring(tabla))
-    return QidMapReduce(QIDs,false,";","&",function (qid) return tabla[qid] end)
-end
+-- -- See if any of the list of QIDs are in the indicated table.
+-- function WoWPro:QIDsInTable(QIDs,tabla)
+-- --    WoWPro:dbp("WoWPro:QIDsInTable(%s,%s)",QIDs,tostring(tabla))
+--     return QidMapReduce(QIDs,false,";","&",function (qid) return tabla[qid] end)
+-- end
 
 -- See if any of the list of QIDs are in the indicated table and return the first
 function WoWPro:QIDInTable(QIDs,tabla)
@@ -97,14 +103,70 @@ end
 
 -- Wipe out all the QIDs in the table.
 function WoWPro:WipeQIDsInTable(IDs,tabla)
-    return QidMapReduce(IDs,false,"&",";",function (qid) tabla[qid] = nil; return true; end)
+    return QidMapReduce(IDs,false,"&",";",function (qid) tabla[qid] = nil; tabla[tostring(qid)] = nil return true; end)
 end
 
 -- Set all the QIDs in the table.
 function WoWPro:SetQIDsInTable(IDs,tabla)
     return QidMapReduce(IDs,false,"&",";",function (qid) tabla[qid] = true; return true; end)
 end
+    
+                    
 
+-- See if any of the list of QUIDs are in the indicated table.
+function WoWPro:QIDsInTable(QIDs,tabla)
+   if not QIDs or QIDs == "" then return false end
+   local numQIDs = select("#", string.split(";", QIDs))
+   local default = false
+	for j=1,numQIDs do
+		local QID = select(numQIDs-j+1, string.split(";", QIDs))
+		QID = tonumber(QID)
+		if not QID then
+		    WoWPro:Error("Malformed QID [%s] in Guide %s",QIDs,WoWProDB.char.currentguide)
+		    QID=0
+		end
+		if QID >= 0 then
+         if tabla[QID] or tabla[tostring(QID)] then return true end
+         default = false
+      else
+         if tabla[-QID] or tabla[tostring(-QID)] then return false end
+         default = true
+      end
+   end
+	return default
+end
+
+-- See if any of the list of QIDs are in the indicated table and return the first
+function WoWPro:QIDInTable(QIDs,tabla)
+--    WoWPro:dbp("WoWPro:QIDsInTable(%s,%s)",QIDs,tostring(tabla))
+    return QidMapReduce(QIDs,false,";","&",function (qid) return tabla[qid] and qid end)
+end
+
+-- See if any of the list of QIDs are in the indicated table, return a subkey
+function WoWPro:QIDsInTableKey(QIDs,tabla,key)
+--    WoWPro:dbp("WoWPro:QIDsInTable(%s,%s)",QIDs,tostring(tabla))
+    return QidMapReduce(QIDs,false,";","&",function (qid) return tabla[qid] and tabla[qid][key] end)
+end
+-- See if all of the list of QUIDs are in the indicated table.
+function WoWPro:AllIDsInTable(IDs,tabla)
+    if not IDs then return false end
+    local numIDs = select("#", string.split(";", IDs))
+	for j=1,numIDs do
+		local ID = select(numIDs-j+1, string.split(";", IDs))
+		ID = tonumber(ID)
+		if not ID then
+		    WoWPro:Error("Malformed ID [%s] in Guide %s",IDs,WoWProDB.char.currentguide)
+		    ID=0
+		end
+		if ID >= 0 then
+            if not tabla[ID] then
+                WoWPro:dbp("AllIDsInTable: Did not find %d",ID)
+                return false
+            end
+        end
+    end
+	return true
+end
 
 WoWPro.PetsOwned = nil
 
@@ -130,11 +192,11 @@ end
 -- Guide Load --
 function WoWPro:LoadGuide(guideID)
     WoWPro:dbp("Signaled for LoadGuide %s",tostring(guideID))
+    -- err("Signaled for LoadGuide %s", guideID)
     if guideID then
         WoWProDB.char.currentguide = guideID
     end
     WoWPro.GuideLoaded = false
-    WoWPro.current_strategy = nil
     WoWPro:SendMessage("WoWPro_LoadGuide")
 end
 
@@ -167,6 +229,13 @@ function WoWPro.LoadGuideReal()
     
     WoWPro:dbp("WoWPro_LoadGuide: starting guide cleanup:  %s",tostring(GID))
     
+	--Re-initiallizing tags and counts--
+	for i,tag in pairs(WoWPro.Tags) do 
+		WoWPro[tag] = WoWPro[tag] or {}
+		wipe(WoWPro[tag])
+	end
+	WoWPro.stepcount, WoWPro.stickycount, WoWPro.optionalcount = 0, 0 ,0
+	
 	--Checking the GID and loading the guide --
 	if not GID then 
 		WoWPro:LoadNilGuide() 
@@ -176,22 +245,22 @@ function WoWPro.LoadGuideReal()
 	end
 	
 	-- If the current guide can not be found, see if it was renamed.
-	if not WoWPro.Guides[GID] then
-	    local myUFG = UnitFactionGroup("player"):sub(1,1)
-	    local name,levels = GID:match("([A-Za-z]+)([0-9]+)")
-	    levels = levels or ""
-	    name = name or ""
-	    local newGID =name..myUFG..levels
-	    if WoWPro.Guides[newGID] then
-	        -- Yeah, we renamed the guide on the poor chap.
-	        -- Remap the state
-	        WoWPro:Print("Guide "..GID.." was renamed to "..newGID..".  Remapping.")
-	        WoWProCharDB.Guide[newGID] = WoWProCharDB.Guide[GID]
-	        WoWProCharDB.Guide[GID] = nil
-	        GID = newGID
-	        WoWProDB.char.currentguide = GID  
-	    end
-	end
+	-- if not WoWPro.Guides[GID] then
+	--     local myUFG = UnitFactionGroup("player"):sub(1,1)
+	--     local name,levels = GID:match("([A-Za-z]+)([0-9]+)")
+	--     levels = levels or ""
+	--     name = name or ""
+	--     local newGID =name..myUFG..levels
+	--     if WoWPro.Guides[newGID] then
+	--         -- Yeah, we renamed the guide on the poor chap.
+	--         -- Remap the state
+	--         WoWPro:Print("Guide "..GID.." was renamed to "..newGID..".  Remapping.")
+	--         WoWProCharDB.Guide[newGID] = WoWProCharDB.Guide[GID]
+	--         WoWProCharDB.Guide[GID] = nil
+	--         GID = newGID
+	--         WoWProDB.char.currentguide = GID  
+	--     end
+	-- end
 	if not WoWPro.Guides[GID] then 
 		WoWPro:dbp("Guide "..GID.." not found, loading NilGuide.")
 		WoWPro:LoadNilGuide()
@@ -207,26 +276,35 @@ function WoWPro.LoadGuideReal()
 	end
 
     -- If we have upgraded, wipe the old information and re-create
-	if WoWProCharDB.Guide[GID] and WoWPro.Version ~= WoWProCharDB.Guide[GID].Version then
-	    WoWPro:Print("Resetting Guide "..GID.." due to upgrade.  Forgetting skipped steps.")
-	    WoWProCharDB.Guide[GID].completion =  {}
-	    WoWProCharDB.Guide[GID].skipped =  {}
-	    WoWProCharDB.Guide[GID].Version = WoWPro.Version
-    end
+	-- if WoWProCharDB.Guide[GID] and WoWPro.Version ~= WoWProCharDB.Guide[GID].Version then
+	--     WoWPro:Print("Resetting Guide "..GID.." due to upgrade.  Forgetting skipped steps.")
+	--     WoWProCharDB.Guide[GID].completion =  {}
+	--     WoWProCharDB.Guide[GID].skipped =  {}
+	--     WoWProCharDB.Guide[GID].why =  {}
+	--     WoWProCharDB.Guide[GID].Version = WoWPro.Version
+ --    end
     
     -- If we resetting guide, wipe the old information and re-create
 	if WoWPro.Resetting then
 	    WoWPro:Print("Manual reset of Guide "..GID..".")
 	    WoWProCharDB.Guide[GID].completion =  {}
 	    WoWProCharDB.Guide[GID].skipped =  {}
+	    WoWProCharDB.Guide[GID].why =  {}
+	    WoWProCharDB.Guide[GID].done = false
 	    WoWProCharDB.Guide[GID].Version = WoWPro.Version
+	    -- err("GID = %s, done = %s", GID, WoWProCharDB.Guide[GID].done)
     end
 	    
 	if ((not WoWProCharDB.Guide[GID].completion) or (not WoWProCharDB.Guide[GID].skipped)) then
 	    WoWProCharDB.Guide[GID].completion = WoWProCharDB.Guide[GID].completion or {}
 	    WoWProCharDB.Guide[GID].skipped = WoWProCharDB.Guide[GID].skipped or {}
-	    WoWPro:Print("Initializing Guide "..GID..".")
+	    WoWProCharDB.Guide[GID].why = WoWProCharDB.Guide[GID].why or {}
+	    local guide = WoWPro.Guides[GID]
+	    WoWPro:Print(("Initializing Guide: %s - %s (%s)."):format(guide.name or guide.zone or "", guide.guidetype, GID))
 	end
+
+	WoWPro.ActiveStep = 1
+	WoWPro.CurrentIndex = 0 
 	
     WoWPro:LoadGuideSteps()
 end
@@ -264,13 +342,33 @@ end
 
 
 function WoWPro:UpdateGuide(From)
-    WoWPro:print("Signaled for UpdateGuide from %s",tostring(From))
+    WoWPro:dbp("Signaled for UpdateGuide")
     WoWPro:SendMessage("WoWPro_UpdateGuide",From)
 end
 
 -- Guide Update --
 local menuFrame = CreateFrame("Frame", "WoWProDropMenu", UIParent, "UIDropDownMenuTemplate")
 WoWPro.GuideOffset = nil
+
+-- Calling on the guide's module to populate the guide window's rows --
+local function rowContentUpdate(offset)
+	local reload = WoWPro:RowUpdate(offset)
+	for i, row in pairs(WoWPro.rows) do
+		if WoWPro.RowDropdownMenu[i] then
+			row:SetScript("OnClick", function(self, button, down)			    
+				if button == "LeftButton" then
+					WoWPro:RowLeftClick(i)
+				elseif button == "RightButton" then
+					WoWPro.rows[i]:SetChecked(nil)
+					if WoWPro.Recorder then WoWPro:RowLeftClick(i) end
+					EasyMenu(WoWPro.RowDropdownMenu[i], menuFrame, "cursor", 0 , 0, "MENU")
+				end
+			end)
+		end
+	end
+	return reload
+end
+
 function WoWPro.UpdateGuideReal(From)
     WoWPro:dbp("UpdateGuideReal(): Running")
 	if not WoWPro.GuideFrame:IsVisible() then
@@ -282,105 +380,118 @@ function WoWPro.UpdateGuideReal(From)
 	    WoWPro:dbp("UpdateGuideReal(): Hey! No guide, no update.")
 	    return
 	end
-	WoWPro:print("Running: UpdateGuideReal(), WoWPro Version %s.", WoWPro.Version);
-	local GID = WoWProDB.char.currentguide
-	local offset = WoWPro.GuideOffset
-	WoWPro.GuideOffset = nil
 	
 	-- If the user is in combat, or if a GID is not present, or if the guide cannot be found, end --
 	if MaybeCombatLockdown() then
-	    WoWPro:print("Suppresssed guide update.  In Combat.")
+	    WoWPro:dbp("Suppresssed guide update.  In Combat.")
 	    WoWPro:SendMessage("WoWPro_UpdateGuide","InCombat")
 	    return
 	end
+	if InCinematic() then
+		WoWPro:dbp("Suppresssed guide update.  In Cinematic.")
+		WoWPro:SendMessage("WoWPro_UpdateGuide","InCinematic")
+		return
+	end
+	WoWPro:dbp("Running: UpdateGuideReal()")
+	local GID = WoWProDB.char.currentguide
+	local offset = WoWPro.GuideOffset
+	WoWPro.GuideOffset = nil
 	if  not GID or not WoWPro.Guides[GID] then
-	    WoWPro:print("Suppresssed guide update. Guide %s is invalid.",tostring(GID))
+	    WoWPro:dbp("Suppresssed guide update. Guide %s is invalid.",tostring(GID))
         return 
 	end
 	if  not WoWPro.GuideLoaded then
-	    WoWPro:print("Suppresssed guide update. Guide %s is not loaded yet!",tostring(GID))
+	    WoWPro:dbp("Suppresssed guide update. Guide %s is not loaded yet!",tostring(GID))
         return 
 	end
-		
+
 	-- If the module that handles this guide is not present and enabled, then end --
 	local module = WoWPro:GetModule(WoWPro.Guides[GID].guidetype)
 	if not module or not module:IsEnabled() then return end
 	
 	-- Finding the active step in the guide --
-	WoWPro.ActiveStep = WoWPro.NextStep(1)
+-- err("ActiveStep = %s, CurrentIndex = %s", WoWPro.ActiveStep, WoWPro.CurrentIndex)	
+	local oldCurrentIndex = WoWPro.CurrentIndex
+	
+	-- Ensure that the current step is not skiped
+	WoWPro.ActiveStep = WoWPro:NextStep(1)
+	local ActiveStep = WoWPro.ActiveStep
+	local maxloop = 1000
+	repeat
+		maxloop = maxloop -1
+		if maxloop < 1 then
+			err("infinite loop ActiveStep = %s", ActiveStep)
+			return
+		end
+		ActiveStep = WoWPro.ActiveStep
+	 	WoWPro.ActiveStep = WoWPro:NextStep(ActiveStep-1)
+	until ActiveStep == WoWPro.ActiveStep
+
+	-- ActiveStep is the first step we find that is not completed or skiped
+	-- CurrentIndex is the first non sticky step we find that is not completed or skiped
+	-- Finding if the currently displayed step has changed
+	-- err("ActiveStep = %s, CurrentIndex = %s", WoWPro.ActiveStep, WoWPro.CurrentIndex)	
+	local oldCurrentIndex = WoWPro.CurrentIndex
+	WoWPro.CurrentIndex = WoWPro:NextStep(ActiveStep-1)
+	local CurrentIndex 
+	local maxloop = 1000
+	repeat
+		maxloop = maxloop -1
+		if maxloop < 1 then
+			err("infinite loop CurrentIndex = %s", CurrentIndex)
+			return
+		end
+
+		CurrentIndex = WoWPro.CurrentIndex
+	 	WoWPro.CurrentIndex = WoWPro:NextStepNotSticky(CurrentIndex-1)
+	until CurrentIndex == WoWPro.CurrentIndex
+
 	if WoWPro.Recorder then
 	    WoWPro.ActiveStep = WoWPro.Recorder.SelectedStep or WoWPro.ActiveStep
 	end
-	if not offset then WoWPro.Scrollbar:SetValue(WoWPro.ActiveStep) end
-	WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount))
-	
-	-- Calling on the guide's module to populate the guide window's rows --
-	local function rowContentUpdate()
-		local reload = WoWPro:RowUpdate(offset)
-		-- Hyjack the click and menu functions for the Recorder if it's enabled --
-		if WoWPro.Recorder then
-            WoWPro.Recorder:RowUpdate(offset)
-        end
-		for i, row in pairs(WoWPro.rows) do
-			if WoWPro.RowDropdownMenu[i] then
-				row:SetScript("OnClick", function(self, button, down)			    
-					if button == "LeftButton" then
-					    if WoWPro.Recorder then
-					        WoWPro.Recorder:RowLeftClick(i)
-					    else
-						    WoWPro:RowLeftClick(i)
-						end
-					elseif button == "RightButton" then
-						WoWPro.rows[i]:SetChecked(nil)
-						if WoWPro.Recorder then
-						    WoWPro:RowLeftClick(i)
-						    EasyMenu(WoWPro.Recorder.RowDropdownMenu[i], menuFrame, "cursor", 0 , 0, "MENU")
-						else
-						    EasyMenu(WoWPro.RowDropdownMenu[i], menuFrame, "cursor", 0 , 0, "MENU")
-						end
-						
-						
-					end
-				end)
-			end
+
+	if WoWPro.CurrentIndex <= #WoWPro.step then
+		if not offset then WoWPro.Scrollbar:SetValue(WoWPro.ActiveStep) end
+		WoWPro.Scrollbar:SetMinMaxValues(1, math.max(1, WoWPro.stepcount))
+		
+		local reload = true
+		-- Reloading until all stickies that need to unsticky have done so --
+		while reload do reload = rowContentUpdate(offset) end
+		
+		-- Update content and formatting --
+		WoWPro.RowSet(); WoWPro.RowSet()
+		WoWPro.PaddingSet()
+		
+		-- Updating the guide list or current guide panels if they are shown --
+		if WoWPro[module:GetName()].GuideList
+		and WoWPro[module:GetName()].GuideList.Frame
+		and WoWPro[module:GetName()].GuideList.Frame:IsVisible() 
+		and WoWPro[module:GetName()].UpdateGuideList then
+			WoWPro[module:GetName()]:UpdateGuideList() 
 		end
-		return reload
+		if WoWPro.CurrentGuideFrame:IsVisible() then WoWPro.UpdateCurrentGuidePanel() end
 	end
-	local reload = true
-	-- Reloading until all stickies that need to unsticky have done so --
-	while reload do reload = rowContentUpdate() end
-	
-	-- Update content and formatting --
-	WoWPro:RowSet(); WoWPro:RowSet()
-	WoWPro:PaddingSet()
-	
-	-- Updating the guide list or current guide panels if they are shown --
-	if WoWPro[module:GetName()].GuideList
-	and WoWPro[module:GetName()].GuideList.Frame
-	and WoWPro[module:GetName()].GuideList.Frame:IsVisible() 
-	and WoWPro[module:GetName()].UpdateGuideList then
-		WoWPro[module:GetName()]:UpdateGuideList() 
-	end
-	if WoWPro.CurrentGuideFrame:IsVisible() then WoWPro.UpdateCurrentGuidePanel() end
 	
 	-- Updating the progress count --
 	local p = 0
 	for j = 1,WoWPro.stepcount do
 		if ( WoWProCharDB.Guide[GID].completion[j] or WoWProCharDB.Guide[GID].skipped[j] )
-		and not WoWPro.sticky[j] 
-		and not WoWPro.optional[j] then 
+		and not WoWPro.sticky[j] then
+--		and not WoWPro.optional[j] then 
 			p = p + 1 
 		end
 	end
 	WoWProCharDB.Guide[GID].progress = p
-	WoWProCharDB.Guide[GID].total = WoWPro.stepcount - WoWPro.stickycount - WoWPro.optionalcount
+	-- WoWProCharDB.Guide[GID].total = WoWPro.stepcount - WoWPro.stickycount - WoWPro.optionalcount
+	WoWProCharDB.Guide[GID].total = WoWPro.stepcount - WoWPro.stickycount
 	
 	-- TODO: make next lines module specific
-	WoWPro.TitleText:SetText((WoWPro.Guides[GID].name or WoWPro.Guides[GID].zone).."   ("..WoWProCharDB.Guide[GID].progress.."/"..WoWProCharDB.Guide[GID].total..")")
+	WoWPro.TitleText:SetText((WoWPro.Guides[GID].name or WoWPro.Guides[GID].zone).."   ("..(WoWProCharDB.Guide[GID].progress+1).."/"..WoWProCharDB.Guide[GID].total..")")
 	
 	-- If the guide is complete, loading the next guide --
-	if (WoWProCharDB.Guide[GID].progress == WoWProCharDB.Guide[GID].total or WoWProCharDB.Guide[GID].done)
+	if (WoWProCharDB.Guide[GID].progress >= WoWProCharDB.Guide[GID].total or WoWProCharDB.Guide[GID].done)
 	and not WoWPro.Recorder and WoWPro.Leveling and not WoWPro.Leveling.Resetting then
+--		err("progress = %s, total = %s, done = %s",WoWProCharDB.Guide[GID].progress, WoWProCharDB.Guide[GID].total, WoWProCharDB.Guide[GID].done)
 		if WoWProDB.profile.autoload then
 			WoWProDB.char.currentguide = WoWPro:NextGuide(GID)
 			WoWPro:Print("Switching to next guide: %s",tostring(WoWProDB.char.currentguide))
@@ -389,9 +500,15 @@ function WoWPro.UpdateGuideReal(From)
 		else
 			WoWPro.NextGuideDialog:Show()
 		end
+		oldCurrentIndex = nil
 	end
-	WoWPro:MapPoint()
-	WoWPro:SendMessage("WoWPro_PostUpdateGuide")
+-- err("ActiveStep = %s, CurrentIndex = %s", WoWPro.ActiveStep, WoWPro.CurrentIndex)	
+	if oldCurrentIndex ~= WoWPro.CurrentIndex then
+		WoWPro:MapPoint()
+		WoWPro:SendMessage("WoWPro_QuestDialogAutomation") -- Just in case a dialog is open for the step that was just added
+		-- Added in WoWPro Master
+		WoWPro:SendMessage("WoWPro_PostUpdateGuide")
+	end
 end	
 
 local Rep2IdAndClass
@@ -415,17 +532,21 @@ Rep2IdAndClass = {  ["hated"] = {1,false},
 			
 -- Next Step --    			
 -- Determines the next active step --
-function WoWPro.NextStep(k,i)
+function WoWPro:NextStep(k,i)
 	local GID = WoWProDB.char.currentguide
-	if not k then k = 1 end --k is the position in the guide
+	if not GID then return 1 end
+	if not k or k < 1 then k = 1 end --k is the position in the guide
 	if not i then i = 1 end --i is the position on the rows
-	WoWPro:print("Called WoWPro.NextStep(%d,%d)",k,i)
+	WoWPro:dbp("Called WoWPro:NextStep(%d,%d)",k,i)
 	local skip = true
+
+	local CurrentIndex = max(WoWPro.CurrentIndex or 0, WoWPro.ActiveStep or 0)
+
 	-- The "repeat ... break ... until true" hack is how you do a continue in LUA!  http://lua-users.org/lists/lua-l/2006-12/msg00444.html
 	while skip do repeat
 		local QID=WoWPro.QID[k]
 		skip = false -- The step defaults to NOT skipped
-		
+
 		-- Quickly skip completed steps --
 		if WoWProCharDB.Guide[GID].completion[k] then
 		    -- WoWPro.why[k] = "NextStep(): Completed."
@@ -446,7 +567,7 @@ function WoWPro.NextStep(k,i)
 			skip = true
 			break
 		end
-		
+--[=[		
 		-- !/; Steps --
 		if WoWPro.action[k] == "!" then
 		    -- These had their effect when the guide was parsed
@@ -517,38 +638,50 @@ function WoWPro.NextStep(k,i)
 	    end
 
 	    -- WoWPro:dbp("Checkpoint Aleph for step %d",k)
-	    
+]=]
 		-- Checking Prerequisites --
-    	if WoWPro.prereq[k] then
+    	if WoWPro.prereq[k] and k <= CurrentIndex then
     	    if string.find(WoWPro.prereq[k],"+") then
     	        -- Any prereq met is OK, skip only if none are met	
         		local numprereqs = select("#", string.split("+", WoWPro.prereq[k]))
         		local totalFailure = true
         		for j=1,numprereqs do
         			local jprereq = select(numprereqs-j+1, string.split("+", WoWPro.prereq[k]))
-        			if WoWPro:IsQuestFlaggedCompleted(jprereq, true) then 
+        			if WoWPro:IsQuestFlaggedCompleted(tonumber(jprereq)) then 
         				totalFailure = false -- If one of the prereqs is complete, step is not skipped.
         			end
         		end
         		if totalFailure then
         		    skip = true
-        		    WoWPro.why[k] = "NextStep(): None of possible prereqs was met."
+        		    WoWPro.why[k] = ("NextStep(): None of possible prereqs were met. ||PRE||%s||"):format(WoWPro.prereq[k])
+        		    WoWProCharDB.Guide[GID].skipped[k] = true
+        		    if WoWPro.action[k] == "A" then
+        		    	-- WoWProCharDB.skippedQIDs[QID] = true
+        		    	WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
+        		    end
+        		    break
         		end
         	else
      	        -- All prereq met must be met	
         		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
         		for j=1,numprereqs do
         			local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
-        			if not WoWPro:IsQuestFlaggedCompleted(jprereq, true) then 
+        			if not WoWPro:IsQuestFlaggedCompleted(tonumber(jprereq)) then 
         				skip = true -- If one of the prereqs is NOT complete, step is skipped.
-        				WoWPro.why[k] = "NextStep(): Not all of the prereqs was met: " .. WoWPro.prereq[k]
+        				WoWPro.why[k] = "NextStep(): Not all of the prereqs were met: " .. WoWPro.prereq[k]
+        				WoWProCharDB.Guide[GID].skipped[k] = true
+        				if WoWPro.action[k] == "A" then
+        					-- WoWProCharDB.skippedQIDs[QID] = true
+        					WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
+        				end
+        				break
         			end
         		end
-       	    end
+			end
     	end
 
     	-- Skipping quests with prerequisites if their prerequisite was skipped --
-    	if WoWPro.prereq[k] 
+    	if WoWPro.prereq[k] and k <= CurrentIndex 
     	and not WoWProCharDB.Guide[GID].skipped[k] 
     	and not WoWPro:QIDsInTable(QID,WoWProCharDB.skippedQIDs) then 
     		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
@@ -560,11 +693,10 @@ function WoWPro.NextStep(k,i)
     				WoWPro:dbp("MissingPreReq2(%d)",k)
     				-- If their prerequisite has been skipped, skipping any dependant quests --
     				if WoWPro.action[k] == "A" 
-    				or WoWPro.action[k] == "C"
-    				or WoWPro.action[k] == "$"
+    				or WoWPro.action[k] == "C" 
     				or WoWPro.action[k] == "T" then
-    				    -- LFO: Questionable, needs review
-    					WoWProCharDB.skippedQIDs[tonumber(jprereq)] = true
+    					-- WoWProCharDB.skippedQIDs[QID] = true
+    					WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
     					WoWProCharDB.Guide[GID].skipped[k] = true
     				else
     					WoWProCharDB.Guide[GID].skipped[k] = true
@@ -572,51 +704,44 @@ function WoWPro.NextStep(k,i)
     			end
     		end
     	end
-    
-        -- Select the right C step with the QG tag that matches the gossip
-        if WoWPro.GossipText and WoWPro.gossip[k] and  not WoWProCharDB.Guide[GID].completion[k] then
-            -- is gossip in GossipText?
-            if string.find(WoWPro.GossipText, WoWPro.gossip[k], 1 , true) then
-                -- Found it
-                WoWPro:dbp("Step %s [%s] '%s' in GossipText",WoWPro.action[k],WoWPro.step[k],WoWPro.gossip[k])
-                WoWPro.why[k] = "Located gossip word in gossip text"
-                skip = false
-            else
-                WoWPro.why[k] = "Gossip word not in gossip text"
-                skip = true
-            end
-        end
+    	if skip then break end -- Exit the loop
 
-        -- Partial Completion --
-        if WoWPro:QIDsInTable(QID,WoWPro.QuestLog) and
-           WoWPro:QIDsInTable(QID,WoWPro.QuestLog,'leaderBoard') and
-           WoWPro.questtext[k] and
-           not WoWProCharDB.Guide[GID].completion[k] then
-            local qid = WoWPro:QIDInTable(QID,WoWPro.QuestLog)
-            -- WoWPro:Print("LFO: qid is %s",tostring(qid))
-	        local numquesttext = select("#", string.split(";", WoWPro.questtext[k]))
-	        local complete = true
-	        for l=1,numquesttext do
-		        local lquesttext = select(numquesttext-l+1, string.split(";", WoWPro.questtext[k]))
-		        local lcomplete = false
-		        if tonumber(lquesttext) then
-		            lcomplete = WoWPro.QuestLog[qid].ocompleted and WoWPro.QuestLog[qid].ocompleted[tonumber(lquesttext)]
-		        else
-    		        for _, objective in pairs(WoWPro.QuestLog[qid].leaderBoard) do --Checks each of the quest log objectives
-    			        if lquesttext == objective then --if the objective matches the step's criteria, mark true
-    				        lcomplete = true
-    			        end
-    		        end
-    		    end
-		        if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
-	        end
-	        --if the step has not been found to be incomplete, run the completion function
-	        if complete then
-	            WoWPro.CompleteStep(k,"Criteria met")
-	            skip = true
-	            break
-	        end 
-        end
+    	-- Check leadin
+    	if WoWPro.leadin[k] and k <= CurrentIndex and
+    		WoWPro:IsQuestFlaggedCompleted(WoWPro.leadin[k]) then
+ 			skip = true 
+ 			WoWPro:dbp("Step %s [%s] skipped because it is a leadin to QID %s that is completed.",WoWPro.action[k],WoWPro.step[k],WoWPro.leadin[k])
+ 			WoWPro.why[k] = "NextStep(): Skipping step because it is a leadin to a completed quest."
+			WoWProCharDB.Guide[GID].skipped[k] = true
+ 			break
+    	end
+
+		-- Select the right C step with the QG tag that matches the gossip
+		if WoWPro.GossipText and WoWPro.gossip[k] and  not WoWProCharDB.Guide[GID].completion[k] and k <= CurrentIndex  then
+		   -- is gossip in GossipText?
+		   if string.find(WoWPro.GossipText, WoWPro.gossip[k], 1 , true) then
+		       -- Found it
+		       WoWPro:dbp("Step %s [%s] '%s' in GossipText",WoWPro.action[k],WoWPro.step[k],WoWPro.gossip[k])
+		       WoWPro.why[k] = "Located gossip word in gossip text"
+		       skip = false
+		   else
+		       WoWPro.why[k] = "Gossip word not in gossip text"
+		       WoWProCharDB.Guide[GID].skipped[k] = true
+		       skip = true
+		   end
+		end
+ 
+	   -- Skip C or T steps, or step with |QO| if they are not active quests
+	   -- ActiveStep is used here in order not to skip if the A step is a sticky (doesn't work, let's fix the guides instead)
+	   if (WoWPro.action[k] == "C" or WoWPro.action[k] == "T" or WoWPro.questtext[k]) and
+	      not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) and 
+	      k <= CurrentIndex then 
+ 			skip = true -- If the quest is not in the quest log, the step is skipped --
+ 			WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k])
+ 			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in Quest Log."
+			WoWProCharDB.Guide[GID].skipped[k] = true
+ 			break
+    	end
 
         -- Scenario objectives
         if WoWPro.sobjective[k] then
@@ -679,45 +804,74 @@ function WoWPro.NextStep(k,i)
         end
 
 
-	    -- Skip C or T steps if not in QuestLog
-           if (WoWPro.action[k] == "C" or WoWPro.action[k] == "T") and QID then
---	        WoWPro:Print("LFO: %s [%s] step %s",WoWPro.action[k],WoWPro.step[k],k)
-	        if not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) then 
-    			skip = true -- If the quest is not in the quest log, the step is skipped --
-    			WoWPro:dbp("Step %s [%s/%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k],tostring(QID))
-    			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in QuestLog."
-    			break
-    		elseif WoWPro.action[k] == "T" and QidMapReduce(QID,false,";","|",function (qid) return WoWPro.QuestLog[qid] and WoWPro.QuestLog[qid].leaderBoard end) then
-    		    -- For turnins, make sure we have completed the criteria
-    		    if WoWPro.conditional[k] and not QidMapReduce(QID,false,";","|",function (qid) return WoWPro.QuestLog[qid] and WoWPro.QuestLog[qid].complete end) then
-    		        skip = true
-    		        WoWPro.why[k] = "T criteria not met"
-    		        break
-    		    end
-    		end
+    	-- Skip T steps that have conditinal set to true and are not completed
+    	if WoWPro.action[k] == "T" and WoWPro.conditional[k] and k <= CurrentIndex  then
+			local isCompleted = false
+			local numQIDs = select("#", string.split(";",QID))
+			for j=1,numQIDs do
+				local qID = select(numQIDs-j+1, string.split(";", QID))
+				qID = tonumber(qID)
+				local quest_log_index = WoWPro.QuestLog[qID]
+				if quest_log_index and select(6,GetQuestLogTitle(quest_log_index)) == 1 then
+					isCompleted = true
+					break
+				end
+			end
+			if not isCompleted then
+	   		WoWPro.CompleteStep(k,"Criteria met")
+	 			skip = true 
+	 			WoWPro:dbp("Step %s [%s] skipped as not completed",WoWPro.action[k],WoWPro.step[k])
+	 			WoWPro.why[k] = "NextStep(): Skipping Conditional T step because the quest is not completed."
+				WoWProCharDB.Guide[GID].skipped[k] = true
+	 			break
+			end
     	end
     	
     	-- Complete "f" steps if we know the flight point already
-    	if WoWPro.action[k] == "f"  and WoWProCharDB.Taxi[WoWPro.step[k]] then
-	        WoWPro.CompleteStep(k, "Taxi point known")
+    	if WoWPro.action[k] == "f"  and 
+    			(WoWProCharDB.Taxi[WoWPro.step[k]] or (WoWPro.altfp[k] and WoWProCharDB.Taxi[WoWPro.altfp[k]])) then
+	        WoWPro.CompleteStep(k, "Taxi already known")
 	        skip = true
 	        break
-	    end	
+	   end	
+
+	   -- Complete "h" steps if the Hearthstone is already bound to the correct desnisation
+	   if WoWPro.action[k] == "h" and WoWPro.step[k] == GetBindLocation() and k <= CurrentIndex then
+		   WoWPro.CompleteStep(k, "Hearthstone already set to "..WoWPro.step[k])
+		   skip = true
+		   break
+	   end
+
+	   -- Current zone check : steps that complete if were are in the correct zone.
+	   if (WoWPro.action[k] == "F" or WoWPro.action[k] == "R" or WoWPro.action[k] == "b" or WoWPro.action[k] == "H") and
+	   	not WoWPro.waypcomplete[k] and
+	   	k <= CurrentIndex and
+	   	(WoWPro.step[k] == GetZoneText():trim() or 
+	   	 WoWPro.step[k] == GetSubZoneText():trim() or
+	   	 WoWPro.step[k] == HBD:GetLocalizedMap(HBD:GetPlayerZone()):trim()) then
+
+	        WoWPro.CompleteStep(k, "Destination zone detected")
+	   	skip = true
+	   	break
+	   end
+
 	    -- Check for must be active quests
-        if WoWPro.active and WoWPro.active[k] then
-    		if not WoWPro:QIDsInTable(WoWPro.active[k],WoWPro.QuestLog) then 
-    			skip = true -- If the quest is not in the quest log, the step is skipped --
-    			WoWPro.why[k] = "NextStep(): Skipping step necessary ACTIVE quest is not in QuestLog."
-    			break
-    		end
-    		WoWPro:dbp("Step %s [%s] ACTIVE %s, skip=%s",WoWPro.action[k],WoWPro.step[k],WoWPro.active[k],tostring(skip))
-        end
+		if WoWPro.active and WoWPro.active[k] and k <= CurrentIndex then
+			if not WoWPro:QIDsInTable(WoWPro.active[k],WoWPro.QuestLog) then 
+				WoWPro.why[k] = "NextStep(): Skipping step necessary ACTIVE quest is not in QuestLog."
+				WoWPro.CompleteStep(k)
+				skip = true -- If the quest is not in the quest log, the step is skipped --
+				break
+			end
+			WoWPro:dbp("Step %s [%s] ACTIVE %s, skip=%s",WoWPro.action[k],WoWPro.step[k],WoWPro.active[k],tostring(skip))
+		end
 
         -- WoWPro:dbp("Status(%d) skip=%s",k,tostring(skip))
         -- Checking level based completion --
         if WoWPro.level and WoWPro.level[k] then
             local level = tonumber(WoWPro.level[k])
             if WoWPro.action[k] == "L" and level <= UnitLevel("player") then
+                WoWProCharDB.Guide[GID].completion[k] = true
                 skip = true
                 WoWPro.CompleteStep(k, "NextStep(): Completed L step because player level is high enough.")
                 break
@@ -744,9 +898,8 @@ function WoWPro.NextStep(k,i)
         end
             
         -- WoWPro:dbp("Checkpoint Beth for step %d",k)
-         
 		-- Skipping profession quests if their requirements aren't met --
-		if WoWPro.prof[k] and not skip then
+		if WoWPro.prof[k] and not skip and k <= CurrentIndex then
 			local prof, profnum, proflvl, profmaxlvl, profmaxskill = string.split(";",WoWPro.prof[k])
 			if proflvl == '*' then proflvl = 700 end -- Set to the maximum level obtainable in the expansion plus 1
 			proflvl = tonumber(proflvl) or 1
@@ -767,7 +920,8 @@ function WoWPro.NextStep(k,i)
 				for p=1,6 do
 					if profs[p] then
 						local skillName, _, skillRank, maxskill, _, _, skillnum = GetProfessionInfo(profs[p])
-						if (tonumber(skillnum) == tonumber(profnum)) then
+						-- if (tonumber(skillnum) == tonumber(profnum)) then
+						if skillName == prof then
 							hasProf = true
 							if (profmaxlvl == 0) and (skillRank >= proflvl) then skip = false end
 							if (profmaxlvl > 0) and (skillRank < profmaxlvl) then skip = false end
@@ -779,15 +933,21 @@ function WoWPro.NextStep(k,i)
 				if (hasProf == false) and (proflvl == 0) then
 				    WoWPro:dbp("Prof unskip qid %s for no %s for proflvl == 0",WoWPro.QID[k],prof)
 				    skip = false
+				    --hasProf = true
 				end
 				if WoWPro.action[k] == "A" and not hasProf then
 				    -- If they do not have the profession, mark the step and quest as skipped
 				    WoWPro.why[k] = "NextStep(): Permanently skipping step because player does not have a profession."
 				    WoWProCharDB.Guide[GID].skipped[k] = true
 				    WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
+				    -- WoWProCharDB.skippedQIDs[QID] = true
+				    WoWPro.why[k] = ("NextStep(): skipping step because because the profession is not known ||P||%s||."):format(WoWPro.prof[k])
 				    WoWPro:dbp("Prof permaskip qid %s for no %s",WoWPro.QID[k],prof)
-				    skip = true 
-				    break
+				    skip = true
+				elseif skip == true then
+					-- Skipping the line because the profession requirements are not met
+					WoWPro.why[k] = ("NextStep(): skipping step because profession requirements not met for ||P||%s||."):format(WoWPro.prof[k])
+					WoWProCharDB.Guide[GID].skipped[k] = true
 				end
 			else
 			    WoWPro:Error("Warning: malformed profession tag [%s] at step %d",WoWPro.prof[k],k)
@@ -795,7 +955,7 @@ function WoWPro.NextStep(k,i)
 		end
         
 		-- Skipping reputation quests if their requirements are met --
-		if WoWPro.rep and WoWPro.rep[k] and not skip then
+		if WoWPro.rep and WoWPro.rep[k] and not skip and k <= CurrentIndex then
 			local rep, factionIndex, temprep, replvl = string.split(";",WoWPro.rep[k])
 			WoWPro:dbp("ConsiderRep(%d, %s [%s] %s)",k,WoWPro.action[k],WoWPro.step[k],WoWPro.rep[k]);
 			if temprep == nil then temprep = "neutral-exalted" end
@@ -817,30 +977,30 @@ function WoWPro.NextStep(k,i)
 			        WoWPro:Error("Bad [%s] replvl [%s] found.  Defaulting to 0",rep,replvl)
 			        replvl = 0
 			    end
-			    WoWPro:dbp("Special replvl converted to %s",tostring(replvl))
+			    self:dbp("Special replvl converted to %s",tostring(replvl))
 			else
 			    replvl = tonumber(replvl) or 0
 			end
 
 
-            -- Extract lower bound rep
-            if not Rep2IdAndClass[repID] then
+         -- Extract lower bound rep
+         if not Rep2IdAndClass[repID] then
                 WoWPro:Error("Bad lower REP value of [%s] found in [%s].  Defaulting to 1.",temprep,WoWPro.rep[k])
-                repID = 0
-            end                
-            Friendship = Rep2IdAndClass[repID][2]
-            repID = Rep2IdAndClass[repID][1]
-            if not repID then
+             repID = 0
+         end                
+         Friendship = Rep2IdAndClass[repID][2]
+         repID = Rep2IdAndClass[repID][1]
+         if not repID then
                 WoWPro:Error("Bad lower REP value of [%s] found in [%s].  Defaulting to 1.",temprep,WoWPro.rep[k])
-                repID = 0
-            end
+             repID = 0
+         end
 
-            -- Extract upper bound rep
-            repmax = Rep2IdAndClass[repmax][1]
-            if not repmax then
+         -- Extract upper bound rep
+         repmax = Rep2IdAndClass[repmax][1]
+         if not repmax then
                 WoWPro:Error("Bad upper REP value of [%s] found.  Defaulting to 5.",temprep)
-                repmax = 5
-            end
+             repmax = 5
+         end
 
             
 			skip = true --reputation steps skipped by default
@@ -857,16 +1017,16 @@ function WoWPro.NextStep(k,i)
 			else
 			    name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild , _, hasBonusRepGain = GetFactionInfoByID(factionIndex)
                 WoWPro:dbp("Faction %s: standing %d, earned %d, bottomValue %d, bonus %s",name,standingId,earnedValue,bottomValue,tostring(hasBonusRepGain))
-                earnedValue = earnedValue - bottomValue
+             earnedValue = earnedValue - bottomValue
 			end
 
-            if type(replvl) == "boolean" then
-                if not(replvl) == not(hasBonusRepGain) then
-                    skip = false
-                    WoWPro.why[k] = "NextStep(): RepStep no skip on bonus"
-                end
+         if type(replvl) == "boolean" then
+             if not(replvl) == not(hasBonusRepGain) then
+                 skip = false
+                 WoWPro.why[k] = "NextStep(): RepStep no skip on bonus"
+             end
                 WoWPro:dbp("Special replvl %s vs hasBonusRepGain %s, skip is %s",tostring(replvl),tostring(hasBonusRepGain),tostring(skip))
-            end 
+         end 
 
 			if type(replvl) == "number" and (repID <= standingId) and (repmax >= standingId) and (replvl == 0) then
 				skip = false
@@ -887,12 +1047,18 @@ function WoWPro.NextStep(k,i)
 			-- Mark quests as skipped that we will assume will NEVER be done.
 			if WoWPro.action[k] == "A" and standingId < 3 and repID > 3 and skip then
 			    WoWProCharDB.Guide[GID].skipped[k] = true
-			    WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
+			    -- LFO: Questionable, needs review.
+			   WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
+				 --WoWProCharDB.skippedQIDs[QID] = true
 			end
-        end
+			if skip then 
+				WoWProCharDB.Guide[GID].skipped[k] = true
+				break 
+			end
+      end
         
-        -- Skipping Achievements if completed  --
-    	if WoWPro.ach and WoWPro.ach[k] then
+      -- Skipping Achievements if completed  --
+    	if WoWPro.ach and WoWPro.ach[k] and k <= CurrentIndex then
     		local achnum, achitem, achflip = string.split(";",WoWPro.ach[k])
     		achflip = WoWPro.toboolean(achflip) 
     		local count = GetAchievementNumCriteria(achnum)
@@ -911,7 +1077,7 @@ function WoWPro.NextStep(k,i)
 			    end 
     		elseif (count > 0) and achitem then
     			local description, type, completed, quantity, requiredQuantity, characterName, flags, assetID, quantityString, criteriaID = GetAchievementCriteriaInfo(achnum, achitem)
-    			WoWPro:dbp("ACH %s/%s Completed=%s, Flip=%s", achnum, achitem, tostring(Completed), tostring(achflip))
+    			self:dbp("ACH %s/%s Completed=%s, Flip=%s", achnum, achitem, tostring(Completed), tostring(achflip))
     			if achflip then completed = not completed end
 			    if completed then
 			        if not achflip then
@@ -932,20 +1098,20 @@ function WoWPro.NextStep(k,i)
     	if WoWPro.spell and WoWPro.spell[k] then
     	    local spellNick,spellID,spellFlip = string.split(";",WoWPro.spell[k])
     	    local spellName = GetSpellInfo(tonumber(spellID))
-    	    local spellKnown = GetSpellInfo(spellName)
-    	    spellKnown = spellKnown ~= nil
+    	    -- local spellKnown = GetSpellInfo(spellName)
+    	    -- spellKnown = spellKnown ~= nil
+    	    local spellKnown = IsSpellKnown(spellID)
     	    spellFlip = WoWPro.toboolean(spellFlip)
     	    if spellFlip then spellKnown = not spellKnown end
     	    WoWPro:dbp("Checking spell step %s [%s] for %s: Nomen %s, Known %s",WoWPro.action[k],WoWPro.step[k],WoWPro.spell[k],tostring(spellName),tostring(spellKnown))
     	    if spellKnown then
-    	        local why = string.format("Skipping because spell [%s] is known=%s",spellName, tostring(not not spellKnown))
-    	        WoWPro.CompleteStep(k, why)
+    	        WoWPro.CompleteStep(k)
 				skip = true
-				WoWPro:dbp(why)
+				WoWPro:dbp("Skipping because spell [%s] is known=%s",spellName, tostring(not not spellKnown))
 			end
     	end
     	
-    	if WoWPro.recipe and WoWPro.recipe[k] then
+    	if WoWPro.recipe and WoWPro.recipe[k] and k <= CurrentIndex then
     	    WoWPro:dbp("Step %d Recipe %s",k,WoWPro.recipe[k])
     	    if WoWProCharDB.Trades and WoWPro:AllIDsInTable(WoWPro.recipe[k],WoWProCharDB.Trades) then
         	    local why = string.format("recipe #%d %s/%d is known: %s",k,WoWPro.step[k],WoWPro.recipe[k],tostring(WoWProCharDB.Trades[WoWPro.recipe[k]]))
@@ -954,16 +1120,15 @@ function WoWPro.NextStep(k,i)
         		WoWPro:dbp(why)
         		break
         	end
-        end
+      end
         
     	-- This tests for spells that are cast on you and show up as buffs
-    	if WoWPro.buff and WoWPro.buff[k] then
+    	if WoWPro.buff and WoWPro.buff[k] and k <= CurrentIndex then
     	    local buffy = WoWPro:CheckPlayerForBuffs(WoWPro.buff[k])
     	    if buffy then
 	            skip = true
-	            local why = string.format("Skipping because buff #%d",buffy)
-                WoWPro.why[k] = why
-                WoWPro:dbp(why);
+                WoWPro.why[k] = "NextStep(): Skipping step because BUFF was present."
+                WoWPro:dbp("Skipping because buff #%d",buffy);
                 break
             end
      	end
@@ -1061,10 +1226,30 @@ function WoWPro.NextStep(k,i)
 			    skip = true
 			end
 		end
+
+		-- skipping any line with class tag if the character is not of the right class
+		-- There might be multiple class separated by ;
+		-- Class names and class IDs a re valid
+		if WoWPro.class and WoWPro.class[k] then
+		   local class1, class2, classID = UnitClass("player")
+		   local class_ok
+		   for i,step_class in ipairs({ strsplit( ';', (WoWPro.class[k]):upper() ) }) do
+			   if step_class == class1:upper() or step_class == class2 or tonumber(step_class) == classID  then
+			   	class_ok = true
+			   	break
+			   end
+		   end
+		   if not class_ok then
+			   WoWProCharDB.Guide[GID].skipped[k] = true
+				WoWPro.why[k] = "NextStep(): Character is not of the proper class"
+				skip = true
+			end
+		end
+
 		
 		-- WoWPro:dbp("Checkpoint Daleth for step %d",k)
-        -- Do we have enough loot in bags?
-		if (WoWPro.lootitem and WoWPro.lootitem[k]) then
+      -- Do we have enough loot in bags?
+		if (WoWPro.lootitem and WoWPro.lootitem[k] and k <= CurrentIndex) then
 		    WoWPro:dbp("Checking step %d for loot %s",k, WoWPro.lootitem[k])
 		    if GetItemCount(WoWPro.lootitem[k]) >= (WoWPro.lootqty[k] or 1) then
 		        if WoWPro.action[k] == "T" then
@@ -1088,13 +1273,13 @@ function WoWPro.NextStep(k,i)
 			end
 		else		
     		-- Special for Buy steps where the step name is the item to buy and no |L| specified
-    		if WoWPro.action[k] == "B" then
+    		if WoWPro.action[k] == "B" and k <= CurrentIndex then
     		    if GetItemCount(WoWPro.step[k]) > 0 then
     			    WoWPro.CompleteStep(k, "NextStep(): completed cause you bought enough named loot.")
     			    skip = true
     			end
     		end		    
-        end
+      end
 		
 		-- Skipping any unstickies until it's time for them to display --
 		if WoWPro.unsticky[k] and WoWPro.ActiveStickyCount and i > WoWPro.ActiveStickyCount+1 then 
@@ -1148,7 +1333,7 @@ function WoWPro.NextStep(k,i)
                 -- make sure this pet is active
                 WoWPro.PetSelect(WoWPro.select[k])
             end
-            -- Two ways to end the step:
+            -- Three ways to end the step:
             --    1) |DEAD|PET{123}| or|DEAD|{NPCID} i.e. switch when someone dies
             --    2) |SWITCH|PET{123}| i.e. manual switch when button is pressed
             -- Example:
@@ -1166,27 +1351,33 @@ function WoWPro.NextStep(k,i)
             -- SWITCH handling is done by WoWPro:RowUpdate(), which sets the use button to the next pet          
         end
 
-		skip = WoWPro[WoWPro.Guides[GID].guidetype]:NextStep(k, skip)
+		--skip = WoWPro[WoWPro.Guides[GID].guidetype]:NextStep(k, skip)
 				
 	until true
 	if skip then k = k+1 end
+
+	-- Prevent infinite loop
+	if k > #WoWPro.step then
+		--err("Infinite loop")
+		return #WoWPro.step + 1
+	end
 		
 	end
 	
-	WoWPro.why[k] = "NextStep(): Step active."
+	--WoWPro.why[k] = "NextStep(): Step active."
 	WoWPro:dbp("%s=WoWPro.NextStep()",tostring(k))
 	return k
 end
 
 -- Next Step Not Sticky --
 -- Determines the next active step that isn't a sticky step (for mapping) --
-function WoWPro.NextStepNotSticky(k)
+function WoWPro:NextStepNotSticky(k)
     WoWPro:dbp("Called WoWPro.NextStepNotSticky(%d)",k)
 	if not k then k = 1 end
 	local sticky = true
 	while sticky do 
 		sticky = false
-		k = WoWPro.NextStep(k)
+		k = WoWPro:NextStep(k)
 		if WoWPro.sticky[k] then 
 			sticky = true
 			k = k + 1
@@ -1205,7 +1396,8 @@ function WoWPro.NextStepNotSticky(k)
 end
 
 -- Step Completion Tasks --
-function WoWPro.CompleteStep(step, why)
+function WoWPro.CompleteStep(step, why, manual)
+	--err("step = %s, why = %s, manual = %s", step, why, manual)
 	local GID = WoWProDB.char.currentguide
 	if WoWProCharDB.Guide[GID].completion[step] then return end
 	if WoWProDB.profile.checksound then	
@@ -1213,7 +1405,7 @@ function WoWPro.CompleteStep(step, why)
 	end
 	WoWPro:dbp("WoWPro.CompleteStep(%d,%s[%s],'%s')",step,WoWPro.action[step], WoWPro.step[step], why)
 	WoWPro.why[step] = why
-	WoWProCharDB.Guide[GID].completion[step] = why
+	WoWProCharDB.Guide[GID].completion[step] = why or true
 	for i,row in ipairs(WoWPro.rows) do
 		if WoWProCharDB.Guide[GID].completion[row.index] then
 			row.check:SetChecked(true)
@@ -1223,7 +1415,7 @@ function WoWPro.CompleteStep(step, why)
 	end
 	
 	local Delta = WoWPro:MapPointDelta()
-	if Delta then
+	if not manual and Delta then
 	    local qid=-99
 	    if WoWPro.QID[step] then
 	        qid = WoWPro.QID[step]
@@ -1231,9 +1423,10 @@ function WoWPro.CompleteStep(step, why)
 	    local line = string.format("Action=%s|Step=%s|M0=%.2f,%.2f|M1=%.2f,%.2f|Error=%.2f|QID=%s|Vers=%s|Guide=%s",WoWPro.action[step],WoWPro.step[step],Delta[2],Delta[3],Delta[4],Delta[5],Delta[1],qid,WoWPro.Version,GID)
         WoWProDB.global.Deltas = WoWProDB.global.Deltas or {}
 	    table.insert(WoWProDB.global.Deltas, line)
-	    WoWPro:print(line)
+	    WoWPro:dbp(line)
 	end
 	if WoWPro.action[step] == "D" then
+--		err("GID = %s, step = %s, WoWPro.action[step] = %s", GID, step, WoWPro.action[step])
 	    WoWProCharDB.Guide[GID].done = true
 	    if WoWPro.guide[step] then
             local nGID = WoWPro.guide[step]
@@ -1249,12 +1442,12 @@ function WoWPro.CompleteStep(step, why)
 	    WoWPro:LoadGuide(nGID)
 	    return
 	end
-	WoWPro.why[step] = why
+	--if why then WoWPro.why[step] = why end
 	WoWPro:UpdateGuide("WoWPro.CompleteStep")
-	WoWPro:RemoveMapPoint()
-	WoWPro:MapPoint()
+	-- WoWPro:MapPoint()
 end
 
+WoWPro.oldQuests = {}
 WoWPro.QuestLog = {}
 WoWPro.FauxQuestLog = {}
 
@@ -1264,6 +1457,14 @@ local function  tablecopy(orig)
         copy[orig_key] = orig_value
     end
     return copy
+end
+
+
+local abandoning
+local orig = _G.AbandonQuest
+_G.AbandonQuest = function(...)
+	abandoning = true
+	return orig(...)
 end
 
 
@@ -1295,6 +1496,60 @@ end
 
 WoWPro.inhibit_oldQuests_update = false
 
+-- Populate the Quest Log table for other functions to call on --
+--local colapsedHeaders = {}
+function WoWPro:PopulateQuestLog()
+	local WoWProCharDB = WoWPro.CharDB
+
+	WoWPro.oldQuests, WoWPro.QuestLog = WoWPro.QuestLog, WoWPro.oldQuests
+	wipe(WoWPro.QuestLog)
+	
+	-- Remember the colapsed headers
+	--wipe(colapsedHeaders)
+	local entries = GetNumQuestLogEntries()
+	--for i=entries,1,-1 do
+	--	if select(6,GetQuestLogTitle(i)) then
+	--		tinsert(colapsedHeaders,i)
+	--	end
+	--end
+	
+	
+	ExpandQuestHeader(0)	
+	entries = GetNumQuestLogEntries()
+	for i=1,entries do
+		local isHeader, _ , _, frequency, questID = select(4,GetQuestLogTitle(i))
+		if not isHeader then
+			WoWPro.QuestLog[questID] = i
+			if frequency == LE_QUEST_FREQUENCY_DAILY then
+				WoWPro:SetPermanentDailyQuest(questID)
+			end
+		elseif isCollapsed then
+		end
+	end
+	
+	-- Restaure the colapsed headers
+	--while(#colapsedHeaders) > 0 do
+	--	CollapseQuestHeader(tremove(colapsedHeaders))
+	--end
+
+	-- Is the table empty?
+	if not next(WoWPro.oldQuests) then return end
+
+	-- Generating table WoWPro.missingQuest --
+	for QID, questInfo in pairs(WoWPro.oldQuests) do
+		if not WoWPro.QuestLog[QID] then
+			if not abandoning then
+				-- It's a quest that has been completed
+				WoWPro.abandonedQID = nil
+			else
+				WoWPro.abandonedQID = QID
+			end
+			abandoning = nil
+		end
+	end
+end
+
+--[==[
 -- Populate the Quest Log table for other functions to call on --
 function WoWPro.PopulateQuestLog()
 	WoWPro:print("PopulateQuestLog(): WoWPro.inhibit_oldQuests_update is %s", tostring(WoWPro.inhibit_oldQuests_update))
@@ -1442,6 +1697,7 @@ function WoWPro.PostQuestLogUpdate()
     WoWPro.inhibit_oldQuests_update = false
     WoWPro:dbp("WoWPro.PostQuestLogUpdate() inhibit_oldQuests_update = false")
 end
+]==]
 
 local ScenarioSerial = 0
 
@@ -1563,6 +1819,7 @@ function WoWPro:IsQuestFlaggedCompleted(qid,force)
             return false
         end
     end
+--[==[	 
     if not WoWProCharDB.completedQIDs then
         WoWProCharDB.completedQIDs = {}
     end
@@ -1592,13 +1849,15 @@ function WoWPro:IsQuestFlaggedCompleted(qid,force)
         WoWProCharDB.completedQIDs[-QID] = IsQuestFlaggedCompleted(-QID) or false
         return not WoWProCharDB.completedQIDs[-QID]
     end
+]==]
+ 	return IsQuestFlaggedCompleted(QID)
 end
 
 -- Quest Ordering by distance to travel
 
 function WoWPro.SwapSteps(i,j)
     local GID = WoWProDB.char.currentguide
-    for tag,val in pairs(WoWPro.Tags) do
+    for idx,tag in pairs(WoWPro.Tags) do
         WoWPro[tag][j] ,  WoWPro[tag][i] =  WoWPro[tag][i] ,  WoWPro[tag][j]
     end
     WoWProCharDB.Guide[GID].completion[i] , WoWProCharDB.Guide[GID].completion[j] = WoWProCharDB.Guide[GID].completion[j] , WoWProCharDB.Guide[GID].completion[i]
@@ -1606,10 +1865,10 @@ function WoWPro.SwapSteps(i,j)
 end
 
 
-function WoWPro.FindClosestStep(limit)
+function WoWPro:FindClosestStep(limit)
     local distance, closest
     for index=1, limit do
-        local d = WoWPro.DistanceToStep(index)
+        local d = WoWPro:DistanceToStep(index)
         if (not distance) or (d < distance) then
             distance = d
             closest = index
@@ -1662,15 +1921,15 @@ function WoWPro.OrderSteps(update)
     local limit = WoWPro:CompleteAtEnd()
     WoWPro:Print("Limit at %d instead of %d",limit,WoWPro.stepcount)
     -- Put the first step closest to us
-    local sidx,d = WoWPro.FindClosestStep(limit)
+    local sidx,d = WoWPro:FindClosestStep(limit)
     WoWPro.SwapSteps(1,sidx)
     WoWPro.why[1] = string.format("selected step as the closest at a distance of %g",d)
-    WoWPro:Print("First step %d at distance of %g",sidx,d)
+    WoWPro:Print("First setp %d at distance of %g",sidx,d)
     -- Now achor at each step and find the following step that is closer
     for anchor = 1, limit do
        local distance, closest 
        for index=anchor+1 , limit do
-            local d = WoWPro.DistanceBetweenSteps(anchor,index)
+            local d = WoWPro:DistanceBetweenSteps(anchor,index)
             if (not distance) or (d < distance) then
                 distance = d
                 closest = index
