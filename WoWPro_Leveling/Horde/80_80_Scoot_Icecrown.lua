@@ -60,7 +60,7 @@
 -- Who: Jiyambi
 
 local guide = WoWPro:RegisterGuide("ScoIce8080", "Leveling", "Icecrown", "Scoot", "Horde")
-WoWPro:GuideLevels(guide,77,77,77)
+WoWPro:GuideLevels(guide,77,80,78)
 WoWPro:GuideNextGuide(guide, "AriVasH8082")
 WoWPro:GuideIcon(guide,"ACH",4928)
 WoWPro:GuideSteps(guide, function()
