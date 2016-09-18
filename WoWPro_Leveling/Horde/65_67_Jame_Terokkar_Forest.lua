@@ -101,14 +101,15 @@ C Rather Be Fishin'|N|Kill and loot eels until you finish this quest.|QID|10037|
 T What's Wrong at Cenarion Thicket? |QID|9957|M|44.3,26.3|N|To Earthbinder Tavgren.|
 A Clues in the Thicket |QID|9971|M|44.3,26.3|N|From Earthbinder Tavgren.|
 A Strange Energy |QID|9968|M|44.3,26.3|N|From Earthbinder Tavgren.|
-l Vicious Teromoth Sample|QID|9968|S|N|Kill Vicious Teromoths to get 4 Vicious Teromoth Samples.|L|24279 4|M|44.00,20.00|
+C Teromoth Sample|QID|9968|S|QO|1|N|Kill Teromoths to get 4 Teromoth Samples.|M|43.6,27.3|
+C Vicious Teromoth Sample|QID|9968|S|QO|2|N|Kill Vicious Teromoths to get 4 Vicious Teromoth Samples.||M|44.00,20.00|
 A It's Watching You!|QID|9951|M|45.0,22.5|N|From Warden Treelos.|
-C Clues in the Thicket|N|Examine the Strange Object here.|QID|9971|M|45.10,21.80|
-C It's Watching You!|N|Kill Naphthal'ar at the top of the tower.|QID|9951|M|43.50,22.00|
+C Clues in the Thicket|N|Examine the Strange Object here.|QID|9971|NC|M|45.10,21.80|
+K Naphthal'ar|N|Kill Naphthal'ar at the top of the tower.|QID|9951|T|Naphthal'ar|M|43.50,22.00|
 T It's Watching You!|QID|9951|M|45.0,22.5|N|To Warden Treelos.|
-l Vicious Teromoth Sample|QID|9968|US|N|Kill Vicious Teromoths to get 4 Vicious Teromoth Samples.|L|24279 4|M|44.00,20.00|
+C Vicious Teromoth Sample|QID|9968|US|QO|2|N|Kill Vicious Teromoths to get 4 Vicious Teromoth Samples.|M|44.00,20.00|
 T Clues in the Thicket|QID|9971|M|44.3,26.3|N|To Earthbinder Tavgren.|
-C Strange Energy|N|Kill teromoths until you get the items for this quest.|QID|9968|M|44.00,28.00|
+C Teromoth Sample|QID|9968|US|QO|1|N|Kill Teromoths to get 4 Teromoth Samples.|M|443.6,27.3|
 T Strange Energy|QID|9968|M|44.3,26.3|N|To Earthbinder Tavgren.|
 A By Any Means Necessary|QID|9978|M|44.3,26.3|N|From Earthbinder Tavgren.|
 T By Any Means Necessary|QID|9978|M|47.1,27.0|N|Find Empoor on the road between Shattrath City and Tuurem. Talk to him and then fight him to low health. Turn this quest in right after this.|
@@ -124,22 +125,22 @@ A Wanted: Bonelashers Dead! |QID|10034|M|49.82,45.27|N|From the Wanted Poster.|
 A Olemba Seed Oil |QID|9993|M|50.13,44.88|N|From Rakoria.|
 A Vestments of the Wolf Spirit |QID|10018|M|50.17,46.44|N|From Malukaz.|
 
+C Olemba Seed Oil |QID|9993|NC|M|56.5,41.4|N|Grab Olemba Seeds|S|
 C Vestments of the Wolf Spirit |QID|10018|M|56.5,41.4|N|Kill Timber Worg (Alpha)s|S|
 C Magical Disturbances |QID|10027|M|56.5,41.4|N|Kill Warp Stalkers|S|
-C Olemba Seed Oil |QID|9993|M|56.5,41.4|N|Grab Olemba Seeds|S|
-C Olemba Seed Oil |QID|9993|M|56.5,41.4|N|Grab Olemba Seeds|US|
+;C Olemba Seed Oil |QID|9993|NC|M|56.5,41.4|N|Grab Olemba Seeds|US|
 C Magical Disturbances |QID|10027|M|56.5,41.4|N|Kill Warp Stalkers|US|
 C Vestments of the Wolf Spirit |QID|10018|M|56.5,41.4|N|Kill Timber Worg (Alpha)s|US|
 
 R Veil Shienor|QID|10847|N|Head northeast to Veil Shienor.|M|59,27|
 C Arakkoa War Path |QID|10868|N|Kill Arakkoa until you complete the quest.|S|
 C The Outcast's Plight |N|Kill Arakkoa to get their feathers.|QID|10917|S|
-l Steal the Eye of Shienor |QID|10847|L|25642|N|The Eye can be found by heading to the eastern tree, going up, and crossing the bridge.|M|59.7,25.4|
-K Ayit |QID|9987|QO|Ayit slain: 1/1|N|He's down in a small hut between two trees.|M|59.4,23.5|
+C Steal the Eye of Shienor |QID|10847|NC|QO|2|N|The Eye can be found by heading to the eastern tree, going up, and crossing the bridge.|M|59.7,25.4|
+K Ayit |QID|9987|QO|2|T|Ayit|N|He's down in a small hut between two trees.|M|59.4,23.5|
 R Veil Reskk|QID|9987|N|Head northeast to Veil Reskk|M|49.3,20.2|
 N Eastern Altar|QID|10021|N|Right-click the Eastern Altar here.|M|49.20,20.30|QO|Eastern Altar: 1/1|REP|Aldor;932|
-K Ashkaz |QID|9987|QO|Ashkaz slain: 1/1|N|He's on the tree house that can be accessed by a wooden bridge from the ground. Careful, he can knock you off the platform.|M|49.9,16.5|
-C The Eyes of Skettis |QID|10847|N|Cross the bridge to the next house, the Eye is there. |M|50.1,19.4|
+K Ashkaz |QID|9987|T|Ashkaz|QO|1|N|He's on the tree house that can be accessed by a wooden bridge from the ground. Careful, he can knock you off the platform.|M|49.9,16.5|
+C Steal the Eye of Reskk |QID|10847|NC|QO|1|N|Cross the bridge to the next house, the Eye is there. |M|50.1,19.4|
 N Northern Altar|QID|10021|N|Right-click the northern altar here.|M|50.70,16.60|QO|Northern Altar: 1/1|REP|Aldor;932|
 C Restoring the Light|N|Right-click the Altar here to complete the quest.|QID|10021|M|48.10,14.50|REP|Aldor;932|
 C Arakkoa War Path |QID|10868|N|Kill Arakkoa until you complete the quest.|US|
@@ -179,8 +180,8 @@ A Veil Skith: Darkstone of Terokk|QID|10839|M|37.4,51.5|N|From Kirrik the Awaken
 A Before Darkness Falls|QID|10878|M|37.4,51.2|N|From Mekeda. He tends to wander around.|
 C Missing Friends |N|Kill bird mobs and get Prison Keys. Use the keys on the cages until you finish this quest.|QID|10852|M|32.3,41.7|S|
 C A Personal Favor |N|Kill bird mobs until you finish this quest.|QID|10112|M|32.3,41.7|S|
-C Veil Skith: Darkstone of Terokk |N|Use the Rod of Purification here.|QID|10839|M|30.80,42.00|
-C Stymying the Arakkoa|N|Kill Urdak in the trees.|QID|9987|M|31.00,43.00|
+C Veil Skith: Darkstone of Terokk |N|Use the Rod of Purification here.|QID|10839|NC|M|30.80,42.00|
+K Urdak|N|Kill Urdak in the trees.|QID|9987|T|Urdak|QO|3|M|31.00,43.00|
 C Missing Friends |N|Kill bird mobs and get Prison Keys. Use the keys on the cages until you finish this quest.|QID|10852|M|32.3,41.7|US|
 C A Personal Favor |N|Kill bird mobs until you finish this quest.|QID|10112|M|32.3,41.7|US|
 T Veil Skith: Darkstone of Terokk |QID|10839|M|37.4,51.5|N|To Kirrik the Awakened.|
@@ -221,7 +222,7 @@ T Stymying the Arakkoa |QID|9987|M|48.97,44.64|N|To Rokag.|
 T Wanted: Bonelashers Dead! |QID|10034|M|49.25,45.88|N|To Mawg Grimshot.|
 A Torgos! |QID|10036|M|49.25,45.88|N|From Mawg Grimshot.|
 T Magical Disturbances |QID|10027|M|48.77,45.69|N|To Kurgatok.|
-C Olemba Seed Oil |QID|9993|N|Collect any olemba seeds.|M|34.9,42.8|S|
+;C Olemba Seed Oil |QID|9993|N|Collect any olemba seeds.|M|34.9,42.8|S|
 C Magical Disturbances |QID|10027|N|Kill warp stalkers.|M|34.9,42.8|S|
 C Vestments of the Wolf Spirit |QID|10018|N|Collect wolf pelts.|M|34.9,42.8|S|
 C An Unwelcome Presence |QID|10000|M|67,52|N|Kill Warped Peons.|
@@ -231,12 +232,12 @@ A What Happens in Terokkar Stays in Terokkar |QID|10008|M|63.38,42.73|N|From Sha
 
 R Bonechewer Ruins |QID|10013|N|Fight your way back over again. |M|67,52|
 C What Happens in Terokkar Stays in Terokkar |QID|10008|S|N|Kill Bonechewer Devastators and Backbreakers.|
-C The Firewing Liaison |QID|10003|N|Lisaile Fireweaver is in the main building. |M|67.8,53.3|
+K Lisaile Fireweaver |QID|10003|T|Lisaile Fireweaver|N|Lisaile Fireweaver is in the main building. |M|67.8,53.3|
 A An Unseen Hand|QID|10013|N|Right-click the plans on the floor next to Lisaile. |M|67.9,53.6|
 C What Happens in Terokkar Stays in Terokkar |QID|10008|US|N|Kill Bonechewer Devastators and Backbreakers.|
 T The Firewing Liaison |QID|10003|M|63.38,42.73|N|To Shadowstalker Kaide.|
 T What Happens in Terokkar Stays in Terokkar |QID|10008|M|63.38,42.73|N|To Shadowstalker Kaide.|
-C Olemba Seed Oil |QID|9993|N|Collect any olemba seeds you still need.|M|34.9,42.8|US|
+C Olemba Seed Oil |QID|9993|NC|N|Collect any olemba seeds you still need.|M|34.9,42.8|US|
 C Magical Disturbances |QID|10027|N|Kill any warp stalker kills you still need.|M|34.9,42.8|US|
 C Vestments of the Wolf Spirit |QID|10018|N|Collect any wolf pelts you still need.|M|34.9,42.8|US|
 
