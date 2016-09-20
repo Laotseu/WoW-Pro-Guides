@@ -107,8 +107,7 @@ C Troops in the Field|QID|43267|M|49.66,51.25|NC|N|Use the scouting map to send 
 t Troops in the Field|QID|43267|M|49.66,51.25|N|To Siouxsie the Banshee.|LVL|101|
 A Tech it up a Notch|QID|43268|M|49.66,51.25|N|From Siouxsie the Banshee.|PRE|43267|LVL|101|
 A Salanar the Horseman|QID|43539|M|49.66,51.25|N|From Siouxsie the Banshee.|PRE|43268|LVL|101|
-C Salanar the Horseman|QID|43539|M|49.66,51.25|NC|N|Use the scouting map to send your
-followers on the next mission, "Salanar the Horseman". This mission is 1 hour. You will need to manually check this step off to progress the guide before the mission is finished.|LVL|101|
+C Salanar the Horseman|QID|43539|M|49.66,51.25|NC|N|Use the scouting map to send yourfollowers on the next mission, "Salanar the Horseman". This mission is 1 hour. You will need to manually check this step off to progress the guide before the mission is finished.|LVL|101|
 C Tech it up a Notch|QID|43268|M|47.73,53.89|NC|N|Go to Archivist Zubashi and select which class hall upgrade you want.|LVL|101|
 T Tech it up a Notch|QID|43268|M|49.66,51.25|N|To Siouxsie the Banshee.|LVL|101|
 t Salanar the Horseman|QID|43539|M|49.66,51.25|N|To Siouxsie the Banshee Whenever you exhaust a ghoul, you can (and should) recruit more over at Dark Summoner Marogh.|LVL|101|
