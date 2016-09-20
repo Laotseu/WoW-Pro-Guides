@@ -1506,7 +1506,7 @@ function WoWPro:PopulateQuestLog()
 	
 	-- Remember the colapsed headers
 	--wipe(colapsedHeaders)
-	local entries = GetNumQuestLogEntries()
+	-- local entries = GetNumQuestLogEntries()
 	--for i=entries,1,-1 do
 	--	if select(6,GetQuestLogTitle(i)) then
 	--		tinsert(colapsedHeaders,i)
@@ -1514,8 +1514,8 @@ function WoWPro:PopulateQuestLog()
 	--end
 	
 	
-	ExpandQuestHeader(0)	
-	entries = GetNumQuestLogEntries()
+	-- ExpandQuestHeader(0)	
+	local entries = GetNumQuestLogEntries()
 	for i=1,entries do
 		local isHeader, _ , _, frequency, questID = select(4,GetQuestLogTitle(i))
 		if not isHeader then

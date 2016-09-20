@@ -934,7 +934,7 @@ function WoWPro:QuestDialogAutomation()
 
 				local index = 1
 				repeat
-					local item = select((index-1) * 5 + 1, GetGossipActiveQuests())
+					local item = select((index-1) * 6 + 1, GetGossipActiveQuests())
 					if item and item:trim() == step then
 						SelectGossipActiveQuest(index)
 						callMeAgain = true
@@ -947,7 +947,7 @@ function WoWPro:QuestDialogAutomation()
 
 				local index = 1
 				repeat
-					local item = select((index-1) * 6 + 1, GetGossipAvailableQuests())
+					local item = select((index-1) * 7 + 1, GetGossipAvailableQuests())
 					if item and item:trim() == step then
 						SelectGossipAvailableQuest(index)
 						callMeAgain = true
