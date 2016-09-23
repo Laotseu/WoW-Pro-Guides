@@ -388,9 +388,9 @@ A Pet Rocks|QID|39391|M|45.20,32.49|N|From Navarrogg.|
 A Stonedark Crystal|QID|39425|M|45.20,32.49|N|From Navarrogg.|
 A They Will Pay With Blood|QID|39588|M|45.20,32.49|N|From Navarrogg.|
 $ Small Treasure Chest|QID|40481|M|44.75,31.86;45.54,34.59|CS|N|Loot for a bit of treasure and resources.|RANK|2|
-C Pet Rocks|QID|39391|M|43.54,33.66|QO|2|NC|N|Lying by the mountain trail.|
 C Stonedark Crystal|QID|39425|M|44.31,27.89|S|N|It will drop from the feltotem mobs you are killing.|
 C They Will Pay With Blood|QID|39588|M|43.09,32.91|S|N|Kill Feltotem.|
+C Pet Rocks|QID|39391|M|43.54,33.66|QO|2|NC|N|Lying by the mountain trail.|
 C Pet Rocks|QID|39391|M|43.53,28.39|QO|1|NC|N|Lying between the two braziers.|
 K Kill Majestic Elderhorn|QID|39646|QO|1|M|44.41,27.18|ITEM|131900|N|He paths aong the lake shore and then around the mountain.|RANK|2|
 C Pet Rocks|QID|39391|M|45.33,27.58|QO|3|NC|N|Out on the island.|
@@ -414,7 +414,7 @@ t Vengence for the Stonedark-Bonus Objective|QID|42373|M|47.40,29.29|N|Auto turn
 
 $ Small Treasure Chest|QID|44280|M|44.72,25.00;42.79,23.58;46.36,21.63|CS|N|Run up the mountain trail for a great view and to find this chest which contains a bit of loot and treasure. If you don't have a kite/glider, run back down.|RANK|3|
 R Stonedark Grotto|QID|40229|M|44.39,26.84;42.61,25.54|CS|N|Run to the Navarrogg new hang-out. (Stonedark Grotto).|
-T Step into the Dark|QID|40229|M|44.01,23.19|Z|1024/31|N|To Navarrogg.|
+T Step into the Dark|QID|40229|M|44.0,23.2|Z|1024/31|N|To Navarrogg.|
 A Unexpected Allies|QID|39456|M|44.01,23.19|Z|1024/31|N|From Navarrogg.|
 A You Lift, Brul?|QID|39440|M|52.50,62.81|Z|1024/31|N|From Damrul the Stronk.|
 C You Lift, Brul?|QID|39440|M|52.40,51.63|Z|1024/31|QO|1|NC|N|Carry Weights to Statue.|
