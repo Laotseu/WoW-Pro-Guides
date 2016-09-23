@@ -206,7 +206,7 @@ U Knights of the Ebon Blade|QID|44082|M|53.29,68.53|Z|The Heart of Acherus@Broke
 T Knights of the Ebon Blade|QID|44082|M|53.29,68.53|Z|The Heart of Acherus@BrokenShore|N|To Korgaz Deadaxe.|
 A The Nightmare Lash|QID|43572|M|98.8,59.2|N|From Salanar the Horseman. This is a dungeon quests, so queue or find friends.|PRE|44082|
 t The Nightmare Lash|QID|43572|M|98.8,59.2|N|To Salanar the Horseman.|
-N Class Hall Advancement|QID|43571|M|56.01,40.64|NC|N|Don't forget to go to Archivist Zubashi and choose your tier 2 order hall advancement. The rest of progressing your class hall requires level 110.|LVL|105|
+N Class Hall Advancement|QID|43571|M|56.01,40.64|LVL|105|NC|N|Don't forget to go to Archivist Zubashi and choose your tier 2 order hall advancement. The rest of progressing your class hall requires level 110.|LVL|105|
 
 ;2nd spec artifact
 A Blades of Destiny|QID|43962|M|57.78,60.43|Z|The Heart of Acherus@BrokenShore|N|From Duke Lankral, if you care about a secondary spec.|PRE|43539|LVL|102|

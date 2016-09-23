@@ -60,7 +60,7 @@ A A Mage's Weapon|QID|41085|M|59.08,42.86|Z|MageClassShrine/2|N|From Meryl Felst
 C A Mage's Weapon|QID|41085|M|61.20,25.85|Z|MageClassShrine/2|N|Click on the book to choose your artifact.|
 T A Mage's Weapon|QID|41085|M|59.08,42.86|Z|MageClassShrine/2|N|To Meryl Felstorm.|
 A Artifact Specific Quest|QID|42001;40267;42452|M|59.08,42.86|Z|MageClassShrine/2|N|From Meryl Felstorm.|PRE|41085|
-R Portal to Dalaran|QID|42001;40267;42452|M|62.57,51.56|Z|MageClassShrine/2|CC|N|How thoughtful, they provided a way out, Use Portal to Dalaran.|
+R Dalaran|QID|42001;40267;42452|M|62.57,51.56|Z|MageClassShrine/2|CC|N|How thoughtful, they provided a way out, Use Portal to Dalaran.|
 
 T Growing Power|QID|42175|LVL|101|M|60.4,36|N|To Meryl Felstorm|LVL|101|
 A Rise, Champions|QID|42663|LVL|101|M|60.4,36|N|From Meryl Felstorm|PRE|42175|
@@ -260,7 +260,7 @@ C Place the Third Scroll of Meitre|QID|42011|M|0.00,0.00|SO|6;3|N|Place the Thir
 C Place the First Scroll of Meitre|QID|42011|M|0.00,0.00|SO|6;1|N|Place the First Scroll of Meitre.|;no coordinates in this room
 C The Nexus Vault|QID|42011|M|0.00,0.00|QO|2|N|Pick up Aluneth, dispite the tone of the speech, it doesn't fight you.|; no coordinates in this room
 C Leave the Nexus Vault|QID|42011|M|60.01,20.01|Z|The Nexus|SO|7;2|N|Use the portal Azuregos left for you to leave the Nexus Vault|; no coordinates in this room
-R Portal to Dalaran|QID|42011|M|59.20,20.44|Z|The Nexus|CC|N|Azuregos has made you a portal to Dalaran.|ACTIVE|42011|
+R Dalaran|QID|42011|M|59.20,20.44|Z|The Nexus|CC|N|Azuregos has made you a portal to Dalaran.|ACTIVE|42011|
 T The Nexus Vault|QID|42011|M|28.58,49.86|N|To Archmage Kalec who can be found in the Violet Citadel.|
 
 ;FIRE
@@ -280,7 +280,7 @@ C Destroy Permafrost Walls|QID|11997|M|76.68,61.87;73.47,53.58;61.85,53.80;51.90
 C Hot of the Trail|QID|11997|M|51.86,35.29|Z|Icecrown Citadel@IcecrownCitadelDeathKnight|SO|3;1|N|Survive the three waves of flaming undead.|
 C Playing with Fire|QID|11997|M|50.93,14.71|Z|Icecrown Citadel@IcecrownCitadelDeathKnight|SO|4;1|N|Slay Lyandra Sunstrider|T|Lyandra Sunstrider|
 C The Frozen Flame|QID|11997|M|51.84,16.60|Z|Icecrown Citadel@IcecrownCitadelDeathKnight|QO|2|N|Pick up Felo'melorn.|
-R Portal to Dalaran|QID|11997|M|51.84,18.26|Z|Icecrown Citadel@IcecrownCitadelDeathKnight|N|Aethas has made a portal to Dalaran for you.|ACTIVE|11997|
+R Dalaran|QID|11997|M|51.84,18.26|Z|Icecrown Citadel@IcecrownCitadelDeathKnight|N|Aethas has made a portal to Dalaran for you.|ACTIVE|11997|
 T The Frozen Flame|QID|11997|M|28.45,48.97|Z|Dalaran@Dalaran70|N|To Archmage Modera.|
 
 ;FROST
@@ -291,12 +291,12 @@ T Finding Ebonchill|QID|42452|M|59.17,42.94|N|To Meryl Felstorm.|
 A The Deadwind Site|QID|42476|M|59.17,42.94|N|From Meryl Felstorm.|PRE|42452|
 A Daio the Decrepit|QID|42477|M|59.17,42.94|N|From Meryl Felstorm.|PRE|42452|
 A Alodi's Gems|QID|42455|M|60.79,43.21|N|From Alodi.|PRE|42452|
-R Portal to Dalaran|QID|42455|M|62.63,51.62|CC|N|Use the portal to get back to Dalaran.|ACTIVE|42455|
+R Dalaran|QID|42455|M|62.63,51.62|CC|N|Use the portal to get back to Dalaran.|ACTIVE|42455|
 C Alodi's Gems|QID|42455|M|51.73,19.05|Z|Dalaran@Dalaran70|QO|1|NC|N|Go to the Bank of Dalaran.|
 C Alodi's Gems|QID|42455|M|51.49,18.68|Z|Dalaran@Dalaran70|QO|2|NC|N|Speak with the manager.|
 C Alodi's Gems|QID|42455|M|54.69,16.39|Z|Dalaran@Dalaran70|QO|3|NC|N|Enter Alodi's personal vault.|
 C Alodi's Gems|QID|42455|M|53.94,18.83;54.31,14.76;50.78,15.71|CS|Z|Dalaran@Dalaran70|QO|4|NC|N|Find the Mana Gems.|
-R Chamber of the Guardians|QID|42477;42476|M|49.49,47.32|Z|Dalaran@Dalaran70|N|Optional - Run to the park in the center of Dalaran, now called Chamber of the Guardians, and step on the teleport pad.|ACTIVE|42476;42477|
+R Chamber of the Guardian|QID|42477;42476|M|49.49,47.32|Z|Dalaran@Dalaran70|N|Optional - Run to the park in the center of Dalaran, now called Chamber of the Guardians, and step on the teleport pad.|ACTIVE|42476;42477|
 C Portal Karazhan|QID|42476;42477|M|32.27,71.76|Z|Aegwynn's Gallery@Dalaran70|QO|1|NC|N|Optional - Use the Dalaran Portal to Karazhan.|
 C The Deadwind Site|QID|42476|M|37.75,67.20|Z|Deadwind Pass|QO|2|NC|N|Fly to the abandoned Kirin Tor camp near Karazhan|
 C The Deadwind Site|QID|42476|M|35.82,64.01|Z|Deadwind Pass|QO|3|NC|N|Find remaining ritual items.|
@@ -311,7 +311,7 @@ T Alodi's Gems|QID|42455|M|60.79,43.21|N|To Alodi.|
 T The Deadwind Site|QID|42476|M|59.17,42.94|N|To Meryl Felstorm.|
 T Daio the Decrepit|QID|42477|M|59.17,42.94|N|To Meryl Felstorm.|
 A The Mage Hunter|QID|42479|M|59.17,42.94|N|From Meryl Felstorm.|PRE|42455;42476;42477|
-R Portal to Dalaran|QID|42479|N|Take the portal out.|ACTIVE|42479|
+R Dalaran|QID|42479|N|Take the portal out.|ACTIVE|42479|
 C The Mage Hunter|QID|42479|M|69.83,51.13|QO|1|NC|N|Take the hippogryph in Dalaran to Faronaar.|
 C Preparations|QID|42479|M|30.61,45.04|Z|AzsunaArtifact|SO|1;1|NC|N|Talk to Meryl.|
 C Wards set up|QID|42479|M|30.07,48.30;29.96,51.67;26.78,49.01|Z|AzsunaArtifact|SO|2;1|CN|N|Go to the three locations and set the Wards.|
