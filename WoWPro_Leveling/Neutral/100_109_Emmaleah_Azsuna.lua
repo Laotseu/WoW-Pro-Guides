@@ -399,6 +399,7 @@ T Scribal Knowledge|QID|39939|M|65.07,25.94|N|To Zarla Shadowheart.|P|Inscriptio
 A Control is Key|QID|39941|M|65.07,25.94|N|From Zarla Shadowheart.|P|Inscription;773|LVL|102|PRE|39939|
 A Runes of Power|QID|39940|M|65.07,25.94|N|From Zarla Shadowheart.|P|Inscription;773|LVL|102|PRE|39939|
 T Felblaze Ingress|QID|42372|M|63.86,28.92|N|To Tehd Shoemaker.|RANK|3|
+f Felblaze Ingress|M|63.82,28.48|N|At Adept Sunwing.|RANK|3|
 A Eye See You|QID|42375|M|63.86,28.92|N|From Tehd Shoemaker.|RANK|3|
 C Eye See You|QID|42375|QO|1|M|63.86,28.92;67.07,27.77|CS|NC|N|Click on the Eye of Kilrog and then use it to explore the requested areas. Avoid the NPC's with the eye symbol because they see invis for the radius shown by the light blue circle around them.|RANK|3|
 C Eye See You|QID|42375|QO|2|M|67.86,24.91|NC|N|Ritual site is down here.|RANK|3|
@@ -407,7 +408,6 @@ T Eye See You|QID|42375|M|63.88,28.97|N|To Tehd Shoemaker.|RANK|3|
 A They're Doing it Wrong|QID|42369|M|63.88,28.97|N|From Tehd Shoemaker.|RANK|3|
 A Quantity Over Quality|QID|42368|M|63.88,28.88|N|From Marius Felbane.|RANK|3|
 A Arkethrax|QID|42367|M|63.88,28.88|N|From Marius Felbane.|RANK|3|
-f Felblaze Ingress|M|63.82,28.48|N|At Adept Sunwing.|RANK|3|
 C Quantity Over Quality|QID|42368|M|67.83,26.99|N|Kill demons as you go along.|S|RANK|3|
 $ Small Treasure Chest|QID|42958|M|65.47,29.56|N|Loot for a bit of treasure and resources.|RANK|3|
 C Runes of Power|QID|39940|M|67.85,28.07|S|NC|N|The runes are here on the ground on each side of the portal.|P|Inscription;773|LVL|102|
@@ -446,7 +446,7 @@ A Minion! Kill Them!|QID|38232|M|61.22,50.74|N|From Daglop.|RANK|2|
 C Minion! Kill Them!|QID|38232|M|62.01,50.10|S|N|The olives are on the ground, the birds and cats drop the feathers and the shadowrunners drop the horns.|RANK|2|
 K Kill Treacherous Stallions|QID|44081|QO|1|M|60.25,46.14|ITEM|140685|T|Devious Sunrunner|N|Silver - Click on the Ley Portal to be transported to a treasure. Kill the Stallions, then loot the chest for a bit of treasure and resources.|RANK|3|
 $ Marius & Tehd vs a Fel Lord|QID|38212|M|60.50,48.56;59.17,46.44|CS|ITEM|129068|T|Brogozog|N|Follow this path to once again save Thed's hide. Chat with him to start the vignette. Kill and loot the demon for a bit of treasure and resources.|RANK|3|
-C Minion! Kill Them!|QID|38232|M|62.01,50.10|S|N|Finish gathering the things Daglop wants.|RANK|2|
+C Minion! Kill Them!|QID|38232|M|62.01,50.10|US|N|Finish gathering the things Daglop wants.|RANK|2|
 T Minion! Kill Them!|QID|38232|M|61.89,49.63|RANK|2|
 A This IS In My Contract.|QID|38237|M|61.89,49.63|RANK|2|
 C This IS In My Contract.|QID|38237|QO|1|M|64.11,52.88|N|Run down to the beach, Daglop is standing in front of a cave, Speak with him to start the ritual|CHAT|RANK|2|
