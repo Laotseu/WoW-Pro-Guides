@@ -360,9 +360,11 @@ T The Final Blessing|QID|41478|M|30.31,30.71|Z|Suramar|N|To Solendra Featherdown
 A Natural Adversaries|QID|41479|M|30.31,30.71|Z|Suramar|N|From Solendra Featherdown.|
 A Managazer|QID|41480|M|30.31,30.71|Z|Suramar|N|From Solendra Featherdown.|
 A Moonwhisper Rescue|QID|41485|M|30.31,30.71|Z|Suramar|N|From Solendra Featherdown.|
-C Moonwhisper Rescue|QID|41485|M|31.55,27.74|Z|Suramar|QO|1|U|136605|N|5/5 Petrified Nightsabers Cleansed|
-C Managazer|QID|41480|M|33.21,24.51|Z|Suramar|QO|1|N|1/1 Managazer slain. In Cave.|
-C Natural Adversaries|QID|41479|M|30.90,26.30|Z|Suramar|QO|1|N|8/8 Manascale Basilisk slain|
+C Natural Adversaries|QID|41479|S|M|30.90,26.30|Z|Suramar|QO|1|N|8/8 Manascale Basilisk slain|
+C Moonwhisper Rescue|QID|41485|NC|S|M|31.55,27.74|Z|Suramar|QO|1|U|136605|N|5/5 Petrified Nightsabers Cleansed|
+K Managazer|QID|41480|T|Managazer|M|33.21,24.51|Z|Suramar|QO|1|N|1/1 Managazer slain. In Cave.|
+C Moonwhisper Rescue|QID|41485|NC|US|M|31.55,27.74|Z|Suramar|QO|1|U|136605|N|5/5 Petrified Nightsabers Cleansed|
+C Natural Adversaries|QID|41479|US|M|30.90,26.30|Z|Suramar|QO|1|N|8/8 Manascale Basilisk slain|
 T Natural Adversaries|QID|41479|M|30.37,30.79|Z|Suramar|N|To Solendra Featherdown.|
 T Managazer|QID|41480|M|30.37,30.79|Z|Suramar|N|To Solendra Featherdown.|
 T Moonwhisper Rescue|QID|41485|M|30.37,30.79|Z|Suramar|N|To Solendra Featherdown.|
@@ -382,8 +384,6 @@ T Leyline Feed: Falanaar Depths|QID|43593|M|57.77,75.37|Z|Suramar|N|To Hungering
 A Leyline Feed: Falanaar Arcway|QID|43592|M|25.10,44.30|Z|Suramar|N|From Leyline Spiderling.|
 C Leyline Feed: Falanaar Arcway|QID|43592|M|66.09,52.06|Z|Suramar|QO|1|N|343/250 Ancient Mana|
 T Leyline Feed: Falanaar Arcway|QID|43592|M|66.19,52.92|Z|Suramar|N|To Broodmother Shu'malis.|
-A Leyline Apprentice|QID|44492|M|37.01,46.39|Z|Suramar|N|From Arcanist Valtrois.|
-T Leyline Apprentice|QID|44492|M|37.01,46.39|Z|Suramar|N|To Arcanist Valtrois.|
 A Scouting the Crimson Thicket|QID|42223|M|49.73,82.18|Z|Suramar|
 A Leyline Feed: Halls of the Eclipse|QID|43594|M|27.28,86.52|Z|Suramar|N|From Kozak the Afflictor.|
 C Leyline Feed: Halls of the Eclipse|QID|43594|M|29.19,84.73|Z|Suramar|QO|1|N|254/250 Ancient Mana|
@@ -403,6 +403,9 @@ C They Become The Hunted|QID|41215|M|60.95,44.93|Z|Suramar|QO|1|N|6/6 Nightborne
 C Trapping Evolved|QID|41230|M|61.49,43.00|Z|Suramar|QO|1|N|4/4 Arcane Trap|
 T They Become The Hunted|QID|41215|M|61.85,49.07|Z|Suramar|N|To Nighteyes.|
 T Trapping Evolved|QID|41230|M|61.85,49.07|Z|Suramar|N|To Lilryia Dawnwind.|
+
+A Leyline Apprentice|QID|44492|M|37.01,46.39|Z|Suramar|N|From Arcanist Valtrois.|
+T Leyline Apprentice|QID|44492|M|37.01,46.39|Z|Suramar|N|To Arcanist Valtrois.|
 
 ; Jandvik's Jarl Side Storyline
 
