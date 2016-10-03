@@ -525,7 +525,7 @@ C Shipwrecked Sailors|QID|42268;42220|QO|1|M|59.93,58.12|N|Finish up with the sa
 T Shipwrecked Sailors|QID|42268;42220|M|59.93,58.12|N|To UI Alert.|
 T Making the World Safe for Profit|QID|37657|M|56.59,59.58|N|To Mr. Shackle.|
 
-U Dalaran Hearthstone|QID|42244|U|140192|N|Hearth or fly to Dalaran to get the final zone quest completed and receive you zone achievement.|
+R Dalaran|QID|42244|U|140192|N|Hearth or fly to Dalaran to get the final zone quest completed and receive you zone achievement.|
 T Fate of the Queen's Reprisal|QID|42244|M|61.05,17.23|Z|Dalaran@Dalaran70|N|To Advisor Stillwater.|FACTION|Horde|
 T Fate of the Queen's Reprisal|QID|40794|M|28.66,74.87|Z|Dalaran@Dalaran70|N|To Lt. Surtees.|FACTION|Alliance|
 

@@ -144,10 +144,10 @@ A Supplies From the Skies|QID|38036|M|33.76,50.76|QO|1|N|From Mishka.|
 A Assault and Battery|QID|38053|M|33.61,50.81|QO|1|N|From Tinkmaster Overspark.|
 A See Ya Later, Oscillator|QID|38558|M|33.61,50.81|QO|1|N|From Tinkmaster Overspark.|
 $ Treasure Chest|QID|38677|M|35.71,54.06|N|On the lowest level of the crashed alliance ship, be careful you don't fall over the waterfall. Loot for a bit of treasure and resources.|RANK|3|
-C Supplies From the Skies|QID|38036|M|33.82,50.65|QO|1|S|N|Skyfire First Aid Kit scatted in the ship|
+C Supplies From the Skies|QID|38036|NC|M|33.82,50.65|S|N|Skyfire First Aid Kit scatted in the ship|
 C Assault and Battery|QID|38053|M|35.41,54.23|N|Kill Dread-Rider Malwick for the Battery|
 C See Ya Later, Oscillator|QID|38558|M|33.63,57.26|N|The Crystal Oscillator is in a camp near a giant gear.|
-C Supplies From the Skies|QID|38036|M|33.81,56.98|QO|1|US|N|Skyfire First Aid Kit scatted in the ship|
+C Supplies From the Skies|QID|38036|NC|M|33.81,56.98|US|N|Skyfire First Aid Kit scatted in the ship|
 C Boarded!|QID|38052|M|34.35,57.21|N|8/8 Forsaken slain|
 K Kill Whitewater Typhoon|QID|38472|M|36.67,51.79|QO|1|ITEM|138418|N|Silver - Kill and loot for some treasure and resources.|RANK|3|
 T Boarded!|QID|38052|M|33.67,51.06|N|To Sky Admiral Rogers.|
@@ -160,10 +160,10 @@ $ Small Treasure Chest|QID|38676|M|31.09,56.00|N|On the other half of the allian
 T The Lost Legion|QID|38057|M|31.19,57.96|N|To Knight-Captain Rhodes, up the hill, ride onto the top floor of the ship to the drake cave.|
 A Pins and Needles|QID|38059|M|31.19,57.96|QO|1|N|From Knight-Captain Rhodes.|
 C Lightning Rod|QID|38058|M|29.40,57.93|QO|1|N|Charge the Transponder, stand in the sparks!|S|
-C 7th Legion Dragoon|QID|38059|S|QO|1|N|Rescue Dragoons from the static fields.|
+C 7th Legion Dragoon|QID|38059|NC|S|QO|1|N|Rescue Dragoons from the static fields.|
 $ Treasure Chest|QID|38529|M|80.89,48.83;20.03,41.23|Z|1017/9|CS|N|Go to the top floor of the Alliance ship and go waay inside the drake cave. Loot for a bit of treasure and resources.|RANK|3|
 C Lightning Rod|QID|38058|M|29.40,57.93|QO|1|N|Charge the Transponder, stand in the sparks!||US|
-C 7th Legion Dragoon|QID|38059|US|QO|1|N|Rescue Dragoons from the static fields.|
+C 7th Legion Dragoon|QID|38059|NC|US|QO|1|N|Rescue Dragoons from the static fields.|
 T Lightning Rod|QID|38058|M|29.39,57.96|QO|2|N|To UI.|
 A Signal Boost|QID|38060|M|29.39,57.96|N|From UI.|
 T Pins and Needles|QID|38059|M|30.22,52.95|N|To UI.|
