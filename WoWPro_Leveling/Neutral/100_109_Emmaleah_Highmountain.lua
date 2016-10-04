@@ -211,35 +211,36 @@ T Secrets of Highmountain|QID|38916|M|44.87,65.72|N|To Spiritwalker Ebonhorn.|
 
 A The Path of Huln|QID|39575|M|44.87,65.72|N|From Spiritwalker Ebonhorn.|
 $ Treasure Chest|QID|40510|M|43.78,72.72|N|Loot for a bit of treasure and resources.|RANK|2|
-C The Path of Huln|QID|39575|M|45.63,71.15|Z|1024/29|NC|QO|1|N|Escort Spiritwalker Ebonhorn to the Path of Huln.|
-C The Path of Huln|QID|39575|M|46.50,70.98|Z|1024/29|NC|QO|2|N|Jump in to the Vault.|
-T The Path of Huln|QID|39575|M|47.35,70.26|Z|1024/29|N|To Spiritwalker Ebonhorn.|
-A Echoes of Deathwing-Bonus Objective|QID|39576|M|47.35,70.26|Z|1024/29|N|Auto accepted when you enter the area.|LVL|-109|RANK|2|
-C Echoes of Deathwing-Bonus Objective|QID|39576|M|47.35,70.26|Z|1024/29|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|RANK|2|
-A In Defiance of Deathwing|QID|40219|M|47.35,70.26|Z|1024/29|N|From Spiritwalker Ebonhorn.|
-C In Defiance of Deathwing|QID|40219|M|38.71,71.47|Z|1024/29|QO|1|NC|N|Click on brazier to recieve Vision of Scales.|
-C In Defiance of Deathwing|QID|40219|M|51.50,30.62|Z|1024/29|QO|2|NC|N|Click on the brazier to see Vision of the Hammer.|
-$ Glimmering Treasure Chest|QID|39606|M|52.04,28.79|Z|1024/29|N|Step on the Titan Waygate, to be teleported above, where you will see another brazier, Click on it to see a short vignette. After that, a chest appears in front of the Waygate before you leave the upper area. Loot for treasure and resources.|RANK|2|
-$ Small Treaure Chest|QID|40508|M|49.52,40.08;60.82,54.91|CS|Z|1024/29|N|Loot for a bit of treasure and resources.|RANK|2|
-C In Defiance of Deathwing|QID|40219|M|49.90,55.10|Z|1024/29|QO|3|NC|N|Click on the brazier to see Vision of Hope.|
-T In Defiance of Deathwing|QID|40219|M|49.90,55.10|Z|1024/29|N|To Spiritwalker Ebonhorn who is following you.|
-A Titanic Showdown|QID|39578|M|49.90,55.10|Z|1024/29|N|From Spiritwalker Ebonhorn.|
-C Titanic Showdown|QID|39578|QO|1|M|53.91,63.14;48.04,70.53|CS|Z|1024/29|NC|N|Click on the brazier to see Vision of Deathwing.|
-C Titanic Showdown|QID|39578|QO|2|M|48.04,70.53|Z|1024/29|N|Fight Vision of Deathwing.|
-T Titanic Showdown|QID|39578|M|48.50,71.21|Z|1024/29|N|To Spiritwalker Ebonhorn.|
-A An Ancient Secret|QID|39577|M|48.50,71.12|Z|1024/29|N|From Spiritwalker Ebonhorn.|
-C An Ancient Secret|QID|39577|M|59.67,77.13|Z|1024/29|QO|1|NC|N|Light this brazier to witness Vision of Ebon Wings.|
-C An Ancient Secret|QID|39577|M|61.52,72.74|Z|1024/29|QO|2|N|Defend Huln|
-C An Ancient Secret|QID|39577|M|61.52,72.74|Z|1024/29|QO|3|NC|N|Listen to Ebonhorn|
-T An Ancient Secret|QID|39577|M|61.52,72.74|Z|1024/29|N|To Ebyssian.|
-A The Backdoor|QID|39579|M|61.52,72.74|Z|1024/29|N|From Ebyssian.|
-$ Treasure Chest|QID|40509|M|40.26,50.09|Z|1024/29|N|Backtrack a little ways to pick up this chest for treasure and resources.|RANK|2|
-R The Backdoor|QID|39579|M|49.71,86.94|CC|Z|1024/29|N|The backdoor is this way. Mount up and ride out.|
-C Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|1024/29|US|N|If you somehow managed to not finish this, kill a few more.|RANK|2|
-t Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|1024/29|N|Auto turned in upon completion.|RANK|2|
-T The Backdoor|QID|39579|M|47.48,84.74|N|To Mayla Highmountain.|
+C The Path of Huln|QID|39575|M|45.63,71.15|Z|Path of Huln|NC|QO|1|N|Escort Spiritwalker Ebonhorn to the Path of Huln.|
+C The Path of Huln|QID|39575|M|46.50,70.98|Z|Path of Huln|NC|QO|2|N|Jump in to the Vault.|
+T The Path of Huln|QID|39575|M|47.35,70.26|Z|Path of Huln|N|To Spiritwalker Ebonhorn.|
+A Echoes of Deathwing-Bonus Objective|QID|39576|S|M|47.35,70.26|Z|Path of Huln|N|Auto accepted when you enter the area.|LVL|-109|RANK|2|
+C Echoes of Deathwing-Bonus Objective|QID|39576|S|M|47.35,70.26|Z|Path of Huln|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|RANK|2|
+A In Defiance of Deathwing|QID|40219|M|47.35,70.26|Z|Path of Huln|N|From Spiritwalker Ebonhorn.|
+C In Defiance of Deathwing|QID|40219|M|46.9,72.4|Z|Path of Huln|QO|1|NC|N|Click on brazier to recieve Vision of Scales.|
+C In Defiance of Deathwing|QID|40219|M|48.3,70.5|Z|Path of Huln|QO|2|NC|N|Click on the brazier to see Vision of the Hammer.|
+C Echoes of Deathwing-Bonus Objective|QID|39576|US|M|47.35,70.26|Z|Path of Huln|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|
+$ Glimmering Treasure Chest|QID|39606|M|48.3,70.4;52.04,28.79|Z|Path of Huln|N|Step on the Titan Waygate, to be teleported above, where you will see another brazier, Click on it to see a short vignette. After that, a chest appears in front of the Waygate before you leave the upper area. Loot for treasure and resources.|RANK|2|
+$ Small Treaure Chest|QID|40508|M|49.52,40.08;57.6,42.1;60.82,54.91|CS|Z|Path of Huln|N|Loot for a bit of treasure and resources.|RANK|2|
+C In Defiance of Deathwing|QID|40219|M|49.4,54.6|Z|Path of Huln|QO|3|NC|N|Step on the Titan Waygate, to be teleported down. Click on the brazier to see Vision of Hope.|
+T In Defiance of Deathwing|QID|40219|M|0,0|Z|Path of Huln|N|To Spiritwalker Ebonhorn who is following you.|
+A Titanic Showdown|QID|39578|M|0,0|Z|Path of Huln|N|From Spiritwalker Ebonhorn.|
+C Titanic Showdown|QID|39578|QO|1|M|53.91,63.14;48.04,70.53|CS|Z|Path of Huln|NC|N|Click on the brazier to see Vision of Deathwing.|
+C Titanic Showdown|QID|39578|QO|2|M|48.04,70.53|Z|Path of Huln|N|Fight Vision of Deathwing.|
+T Titanic Showdown|QID|39578|M|48.50,71.21|Z|Path of Huln|N|To Spiritwalker Ebonhorn.|
+A An Ancient Secret|QID|39577|M|48.50,71.12|Z|Path of Huln|N|From Spiritwalker Ebonhorn.|
+C An Ancient Secret|QID|39577|M|59.67,77.13|Z|Path of Huln|QO|1|NC|N|Light this brazier to witness Vision of Ebon Wings.|
+C An Ancient Secret|QID|39577|M|61.52,72.74|Z|Path of Huln|QO|2|N|Defend Huln|
+C An Ancient Secret|QID|39577|M|61.52,72.74|Z|Path of Huln|QO|3|NC|N|Listen to Ebonhorn|
+T An Ancient Secret|QID|39577|M|61.52,72.74|Z|Path of Huln|N|To Ebyssian.|
+A The Backdoor|QID|39579|M|61.52,72.74|Z|Path of Huln|N|From Ebyssian.|
+$ Treasure Chest|QID|40509|M|40.26,50.09|Z|Path of Huln|N|Backtrack a little ways to pick up this chest for treasure and resources.|RANK|2|
+R The Backdoor|QID|39579|M|49.71,86.94|CC|Z|Path of Huln|N|The backdoor is this way. Mount up and ride out.|
+C Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|Path of Huln|US|N|If you somehow managed to not finish this, kill a few more.|RANK|2|
+t Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|Path of Huln|N|Auto turned in upon completion.|RANK|2|
+T The Backdoor|QID|39579|M|47.48,84.74|Z|Highmountain|N|To Mayla Highmountain.|
 A The High Chieftain|QID|39580|M|47.47,84.73|N|From Mayla Highmountain.|
-f Obsidian Overlook|QID|39579|M|47.26,84.64|N|At Chofa Nighthoof.|
+f Obsidian Overlook|M|47.26,84.64|N|At Chofa Nighthoof.|
 F Thunder Totem|QID|39580|M|47.26,84.64|N|Fly back to Thunder Totem at Chofa Nighthoof.|
 T The High Chieftain|QID|39580|M|44.46,50.75|Z|ThunderTotem/6|N|Take the elevator down to find Mayla Highmountain.|
 T Ceremonial Drums|QID|42622|M|44.51,55.87|Z|ThunderTotem/6|N|To Torv Dubstomp.|
@@ -387,9 +388,9 @@ A Pet Rocks|QID|39391|M|45.20,32.49|N|From Navarrogg.|
 A Stonedark Crystal|QID|39425|M|45.20,32.49|N|From Navarrogg.|
 A They Will Pay With Blood|QID|39588|M|45.20,32.49|N|From Navarrogg.|
 $ Small Treasure Chest|QID|40481|M|44.75,31.86;45.54,34.59|CS|N|Loot for a bit of treasure and resources.|RANK|2|
-C Pet Rocks|QID|39391|M|43.54,33.66|QO|2|NC|N|Lying by the mountain trail.|
 C Stonedark Crystal|QID|39425|M|44.31,27.89|S|N|It will drop from the feltotem mobs you are killing.|
 C They Will Pay With Blood|QID|39588|M|43.09,32.91|S|N|Kill Feltotem.|
+C Pet Rocks|QID|39391|M|43.54,33.66|QO|2|NC|N|Lying by the mountain trail.|
 C Pet Rocks|QID|39391|M|43.53,28.39|QO|1|NC|N|Lying between the two braziers.|
 K Kill Majestic Elderhorn|QID|39646|QO|1|M|44.41,27.18|ITEM|131900|N|He paths aong the lake shore and then around the mountain.|RANK|2|
 C Pet Rocks|QID|39391|M|45.33,27.58|QO|3|NC|N|Out on the island.|
@@ -413,7 +414,7 @@ t Vengence for the Stonedark-Bonus Objective|QID|42373|M|47.40,29.29|N|Auto turn
 
 $ Small Treasure Chest|QID|44280|M|44.72,25.00;42.79,23.58;46.36,21.63|CS|N|Run up the mountain trail for a great view and to find this chest which contains a bit of loot and treasure. If you don't have a kite/glider, run back down.|RANK|3|
 R Stonedark Grotto|QID|40229|M|44.39,26.84;42.61,25.54|CS|N|Run to the Navarrogg new hang-out. (Stonedark Grotto).|
-T Step into the Dark|QID|40229|M|44.01,23.19|Z|1024/31|N|To Navarrogg.|
+T Step into the Dark|QID|40229|M|44.0,23.2|Z|1024/31|N|To Navarrogg.|
 A Unexpected Allies|QID|39456|M|44.01,23.19|Z|1024/31|N|From Navarrogg.|
 A You Lift, Brul?|QID|39440|M|52.50,62.81|Z|1024/31|N|From Damrul the Stronk.|
 C You Lift, Brul?|QID|39440|M|52.40,51.63|Z|1024/31|QO|1|NC|N|Carry Weights to Statue.|
