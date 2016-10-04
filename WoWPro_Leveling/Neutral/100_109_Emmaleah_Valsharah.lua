@@ -225,15 +225,15 @@ C Faerie Fracas-Bonus Objective|QID|38842|M|53.77,79.87|S|N|Kill the thistleleaf
 A Thorny Dancing|QID|40220|M|53.75,79.82|N|From Saylanna Riverbreeze.|RANK|2|
 A Spread Your Lunarwings and Fly|QID|40221|M|53.75,79.82|N|From Saylanna Riverbreeze.|RANK|2|
 A Thieving Thistleleaf|QID|38862|M|53.77,79.87|U|129966|N|Auto accepted from the lunarwing egg you just looted.|RANK|2|
-C Spread Your Lunarwings and Fly|QID|40221|M|53.75,79.82|S|N|As you search for Thorndancers, free Lunarwings by untangleing the roots, or fighting the ones in the air.|RANK|2|
+C Spread Your Lunarwings and Fly|QID|40221|NC|M|53.75,79.82|S|N|As you search for Thorndancers, free Lunarwings by untangleing the roots, or fighting the ones in the air.|RANK|2|
 C Thieving Thistleleaf|QID|38862|M|53.77,79.87|S|N|As you search for Thorndancers, kill Thistleleaf Ruffians to reclaim the eggs.|RANK|2|
 $ Treasure|QID|38861|M|56.05,83.75|N|In a small cave. Loot for a bit of treasure and resources.|RANK|2|
 K Kill Jinkiki The Puncturer|QID|38889|QO|1|M|53,87|T|Jinkiki The Puncturer|N|Enter the cave and chat with the little bear to rescue him.|ITEM|128690|RANK|2|
 A Adopting the Adorable|QID|38889|M|53,87|N|From the Shivering Bear Cub upon killing Jinkiki.|RANK|2|
-$ Treasure|QID|38864|M|54.00,82.19;54.94,80.56|CS|N|Dive in and swim into an underwater cave.  Loot the treasure chest for a bit of treasure and resources.|RANK|2|;bugged 8/27 and quest doesnt actually loot or go away.
+;$ Treasure|QID|38864|M|54.00,82.19;54.94,80.56|CS|N|Dive in and swim into an underwater cave.  Loot the treasure chest for a bit of treasure and resources.|RANK|2|;bugged 8/27 and quest doesnt actually loot or go away.
 C Thorny Dancing|QID|40220|M|53.75,79.82|N|Kill 3 Thorndancers, they are the taller Thistleleaf mobs.|RANK|2|
 C Thieving Thistleleaf|QID|38862|M|53.77,79.87|US|N|Finish collecting the eggs.|RANK|2|
-C Spread Your Lunarwings and Fly|QID|40221|M|53.75,79.82|S|N|Finish rescueing Lunarwings.|RANK|2|
+C Spread Your Lunarwings and Fly|QID|40221|NC|M|53.75,79.82|US|N|Finish rescueing Lunarwings.|RANK|2|
 C Faerie Fracas-Bonus Objective|QID|38842|M|53.77,79.87|US|N|Stay and finish up or click this off and leave.|RANK|2|
 t Faerie Fracas-Bonus Objective|QID|38842|M|53.77,79.87|N|Auto-Turned in when completed.|RANK|2|
 T Thorny Dancing|QID|40220|M|53.75,79.82|N|To Saylanna Riverbreeze.|RANK|2|
