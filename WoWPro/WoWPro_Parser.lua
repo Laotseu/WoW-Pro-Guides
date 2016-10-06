@@ -9,7 +9,7 @@ local function err(msg,...) _G.geterrorhandler()(msg:format(_G.tostringall(...))
 	
 local L = WoWPro_Locale
 local HBD = WoWPro.HBD
-WoWPro.actiontypesorder = { "A", "C", "T", "K", "R", "H", "h", "F", "f", "N", "B", "b", "U", "L", "l", "r", "D", "noncombat", "chat", "acceptdaily", "turnindaily" }
+WoWPro.actiontypesorder = { "A", "C", "T", "K", "R", "H", "h", "P", "F", "f", "N", "B", "b", "U", "L", "l", "r", "D", "noncombat", "chat", "acceptdaily", "turnindaily" }
 WoWPro.actiontypesdesc = {
 	A = "Accept Quest",
 	C = "Complete Quest",
@@ -18,6 +18,7 @@ WoWPro.actiontypesdesc = {
 	R = "Run To",
 	H = "Use Hearthstone",
 	h = "Set Hearthstone",
+	P = "Take portal",
 	F = "Fly To",
 	f = "Get Flight Path",
 	N = "Note",
