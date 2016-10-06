@@ -478,9 +478,9 @@ T Given to Corruption|QID|41749;41893|M|66.20,44.52|N|To Elothir.|
 
 A Softening the Target|QID|43702|M|66.20,44.76|N|From Tyrande Whisperwind.|
 C Softening the Target|QID|43702|M|66.34,44.85|N|Hop on the bat for a bombing run.|
+T Softening the Target|QID|43702|M|63.19,42.22|N|To Tyrande Whisperwind.|
 A Ruins of Shala'nir-Bonus Objective|QID|38748|M|63.28,42.07|N|Auto Accepted upon entering the area.|RANK|2|LVL|-109|
 C Ruins of Shala'nir-Bonus Objective|QID|38748|M|63.28,42.07|S|N|Kill mobs and destroy nightmare totems to complete the objective.|RANK|2|
-T Softening the Target|QID|43702|M|63.19,42.22|N|To Tyrande Whisperwind.|
 A Close Enough to Touch|QID|38687;41763|M|63.19,42.22|N|From Tyrande Whisperwind.|
 C Close Enough to Touch|QID|38687;41763|M|62.48,38.89|NC|QO|1|N|Follow Tyrande into Shala'nir|
 C Close Enough to Touch|QID|38687;41763|M|63.03,36.89|NC|QO|2|N|Search for Malfurion at the Inn|
