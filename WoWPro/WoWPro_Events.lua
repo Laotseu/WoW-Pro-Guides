@@ -378,7 +378,7 @@ function WoWPro:AutoCompleteZone()
 	local waypcomplete = WoWPro.waypcomplete[currentindex]
 	local zonetext, subzonetext = GetZoneText(), string.trim(GetSubZoneText())
 	local hbdzonetext = HBD:GetLocalizedMap(HBD:GetPlayerZone())
-	if action == "F" or action == "H" or action == "b" or "P" or (action == "R" and not waypcomplete) then
+	if action == "F" or action == "H" or action == "b" or action == "P" or (action == "R" and not waypcomplete) then
 		if step == zonetext or step == subzonetext  or step == hbdzonetext
 		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[currentindex] then
 			WoWPro.CompleteStep(currentindex, ("Arrival at destination %s detected"):format(step) )
