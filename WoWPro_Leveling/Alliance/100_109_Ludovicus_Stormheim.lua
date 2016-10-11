@@ -145,9 +145,9 @@ C Greymane's Gambit|QID|39800|M|69.14,74.70|QO|1|N|Greymane's mission complete|
 ; The Aftermath
 T Greymane's Gambit|QID|39800|M|33.71,51.02|N|To Sky Admiral Rogers.|
 A Boarded!|QID|38052|M|33.71,51.02|N|From Sky Admiral Rogers.|
-A Supplies From the Skies|QID|38036|M|33.76,50.76|QO|1|N|From Mishka.|
-A Assault and Battery|QID|38053|M|33.61,50.81|QO|1|N|From Tinkmaster Overspark.|
-A See Ya Later, Oscillator|QID|38558|M|33.61,50.81|QO|1|N|From Tinkmaster Overspark.|
+A Supplies From the Skies|QID|38036|M|33.76,50.76|N|From Mishka.|
+A Assault and Battery|QID|38053|M|33.61,50.81|N|From Tinkmaster Overspark.|
+A See Ya Later, Oscillator|QID|38558|M|33.61,50.81|N|From Tinkmaster Overspark.|
 $ Treasure Chest|QID|38677|M|35.71,54.06|N|On the lowest level of the crashed alliance ship, be careful you don't fall over the waterfall. Loot for a bit of treasure and resources.|RANK|3|
 C Supplies From the Skies|QID|38036|NC|M|33.82,50.65|S|N|Skyfire First Aid Kit scatted in the ship|
 C Assault and Battery|QID|38053|M|35.41,54.23|N|Kill Dread-Rider Malwick for the Battery|
@@ -159,17 +159,17 @@ T Boarded!|QID|38052|M|33.67,51.06|N|To Sky Admiral Rogers.|
 T Supplies From the Skies|QID|38036|M|33.74,50.81|N|To Mishka.|
 T See Ya Later, Oscillator|QID|38558|M|33.63,50.84|N|To Tinkmaster Overspark.|
 T Assault and Battery|QID|38053|M|33.60,50.83|N|To Tinkmaster Overspark.|
-A Lightning Rod|QID|38058|M|33.60,50.83|QO|1|N|From Tinkmaster Overspark.|
+A Lightning Rod|QID|38058|M|33.60,50.83|N|From Tinkmaster Overspark.|
 A The Lost Legion|QID|38057|M|33.76,50.76|N|From Mishka.|
 $ Small Treasure Chest|QID|38676|M|31.09,56.00|N|On the other half of the alliance ship, bottom floor. Loot for a bit of treasure and resources.|RANK|3|
 T The Lost Legion|QID|38057|M|31.19,57.96|N|To Knight-Captain Rhodes, up the hill, ride onto the top floor of the ship to the drake cave.|
-A Pins and Needles|QID|38059|M|31.19,57.96|QO|1|N|From Knight-Captain Rhodes.|
+A Pins and Needles|QID|38059|M|31.19,57.96|N|From Knight-Captain Rhodes.|
 C Lightning Rod|QID|38058|M|29.40,57.93|QO|1|N|Charge the Transponder, stand in the sparks!|S|
 C 7th Legion Dragoon|QID|38059|NC|S|QO|1|N|Rescue Dragoons from the static fields.|
 $ Treasure Chest|QID|38529|M|80.89,48.83;20.03,41.23|Z|1017/9|CS|N|Go to the top floor of the Alliance ship and go waay inside the drake cave. Loot for a bit of treasure and resources.|RANK|3|
 C Lightning Rod|QID|38058|M|29.40,57.93|QO|1|N|Charge the Transponder, stand in the sparks!||US|
 C 7th Legion Dragoon|QID|38059|NC|US|QO|1|N|Rescue Dragoons from the static fields.|
-T Lightning Rod|QID|38058|M|29.39,57.96|QO|2|N|To UI.|
+T Lightning Rod|QID|38058|M|29.39,57.96|N|To UI.|
 A Signal Boost|QID|38060|M|29.39,57.96|N|From UI.|
 T Pins and Needles|QID|38059|M|30.22,52.95|N|To UI.|
 $ Small Treasure Chest|QID|43196|M|32.93,48.10;32.06,47.20|CS|N|On top of the Weeping Bluffs is another Drake cave. You don't have to wake the sleeping drakes. Loot for a bit of treasure and resources.|RANK|3|
@@ -178,17 +178,17 @@ C Signal Boost|QID|38060|M|32.22,49.90|QO|2|N|Defend the Transponder from fosake
 T Signal Boost|QID|38060|M|33.81,46.03|N|To Sky Admiral Rogers.|
 
 ; The Trial of Might
-A The Ancient Trials|QID|38210|M|33.74,45.80|QO|3|N|From Muninn.|
+A The Ancient Trials|QID|38210|M|33.74,45.80|N|From Muninn.|
 A Stormforged Grapple Launcher|QID|39775|M|33.80,45.79|N|From Stormforged Grapple Launcher.|
 T Stormforged Grapple Launcher|QID|39775|M|33.80,45.79|N|From Stormforged Grapple Launcher.|
 $ Small Treasure Chest|QID|38680|M|35.92,47.92|N|On a lake on the Weeping Bluffs, loot for a bit of treasure and resources.|RANK|3|
 K Kill Bloodstalker Alpha|QID|38626|M|38.42,42.80|ITEM|129101|T|Bloodstalker Alpha|N|He roams this part of the valley. Silver - Kill and loot for a bit of treasure and resources.||RANK|3|
-T The Ancient Trials|QID|38459|M|38.13,40.88;41.17,40.59;41.83,43.06|CS|N|To Havi.|
-A Havi's Test|QID|38331|M|41.83,43.06|N|From Havi.|
-C Havi's Test|QID|38331|M|41.68,42.83|QO|1|NC|N|Click on the vegetables, face the stewpot, adjust angle if needed and press "4".|
-C Havi's Test|QID|38331|M|41.60,42.61|QO|2|NC|N|Click on the crabs, face the stewpot, adjust angle if needed and press "4".|
-C Havi's Test|QID|38331|M|41.82,42.75|QO|3|NC|N|Click on the hearty grains, face the stewpot, adjust angle if needed and press "4".|
-T Havi's Test|QID|38331|M|41.83,43.06|N|To Havi.|
+T The Ancient Trials|QID|38210|M|38.13,40.88;41.17,40.59;43.2,49.1|CS|N|To Havi.|
+A Havi's Test|QID|38331|M|43.2,49.1|N|From Havi.|
+C Havi's Test|QID|38331|M|42.9,49.1|QO|1|NC|N|Click on the vegetables, face the stewpot, adjust angle if needed and press "4".|
+C Havi's Test|QID|38331|M|42.9,49.4|QO|2|NC|N|Click on the crabs, face the stewpot, adjust angle if needed and press "4".|
+C Havi's Test|QID|38331|M|43.1,49.4|QO|3|NC|N|Click on the hearty grains, face the stewpot, adjust angle if needed and press "4".|
+T Havi's Test|QID|38331|M|43.2,49.1|N|To Havi.|
 
 A Ahead of the Game|QID|39590|M|41.83,43.06|N|From Havi.|
 A A Worthy Challenger-Bonus Objective|QID|38442|LVL|-109|M|41.83,43.06|N|Auto Accepted upon entering the area.|
@@ -236,17 +236,17 @@ A A Grapple a Day|QID|38312|PRE|38473|M|37.38,63.85|N|From Commander Lorna Crowl
 C A Grapple a Day|QID|38312|M|37.37,63.79|QO|1|N|Stormforged Grapple Launcher|
 $ Treasure Chest|QID|38486|M|39.47,65.17|N|While you are on the wall, hop down and get this chest. Loot for a bit of treasure and resorces.|;moved you walk right past it
 T A Grapple a Day|QID|38312|M|42.02,64.48|N|To Commander Lorna Crowley.|
-A No Wings Required|QID|38318|M|42.02,64.48|QO|2|N|From Commander Lorna Crowley.|
+A No Wings Required|QID|38318|M|42.02,64.48|N|From Commander Lorna Crowley.|
 A To Weather the Storm|QID|38405|M|42.02,64.48|N|From Commander Lorna Crowley.|
 C No Wings Required|QID|38318|M|42.88,64.85|QO|1|N|Click on the hook with the big Yellow Arrow and grapple over the wall|
-A Built to Scale|QID|38337|M|43.46,64.40|N|Kill a Stormwing Drake to get this quest from the UI.|
-A Assault the Drekirjar-Bonus Objective|QID|38374|LVL|-109|M|42.88,64.85|N|From UI upon entering Hrydshal.|
+A Built to Scale|QID|38337|M|43.46,64.40|S|N|Kill a Stormwing Drake to get this quest from the UI.|
+A Assault the Drekirjar-Bonus Objective|QID|38374|S|LVL|-109|M|42.88,64.85|N|From UI upon entering Hrydshal.|
 C Built to Scale|QID|38337|M|45.05,66.45|S|N|Kill drakes and loot the 'Storm Drake Scales'.| ;keep sticky while you're in the area
-C To Weather the Storm|QID|38405|M|45.68,66.64|QO|3|N|Loot Oiled Cloak|
+C To Weather the Storm|QID|38405|M|45.68,66.64|NC|QO|3|N|Loot Oiled Cloak|
 $ Treasure Chest|QID|38474|M|42.6,65.80|N|Loot for a bit of treasure and resources.|
 C To Weather the Storm|QID|38405|M|43.98,66.99|QO|1|T|Stormbreaker Reykir|N|Kill Stormbreaker Reykir and loot the Enchanted Lodestone.| ; change order to not have to walk back
 K Kill Glimar Ironfist|QID|38333|M|41.5,66.7|QO|1|ITEM|129291|T|Glimar Ironfist|N|Silver - Kill and loot for a bit of treasure and resources.|
-C To Weather the Storm|QID|38405|M|41.86,68.40|QO|2|N|Loot Climbing Treads|
+C To Weather the Storm|QID|38405|M|41.86,68.40|NC|QO|2|N|Loot Climbing Treads|
 T No Wings Required|QID|38318|M|43.79,68.21|N|To Commander Lorna Crowley.|
 T To Weather the Storm|QID|38405|M|43.79,68.21|N|To Commander Lorna Crowley.|
 A Impalement Insurance|QID|38410|PRE|38405|M|43.79,68.21|N|From Commander Lorna Crowley.|
@@ -255,24 +255,26 @@ $ Treasure Chest|QID|38489|M|44.16,69.98|N|While you are grappling around, get t
 K Kill Thane Irglov the Merciless|QID|38424|M|40.66,72.40|T|Thane Irglov the Merciless|ITEM|129113|N|Silver - Kill the others in the Mead Hall, then you can take on Thane. Kill and loot for some treasure and resources.|RANK|2|
 $ Small Treasure Chest|QID|38475|M|40.56,69.74;40.64,68.52|CS|N|Hook up to the top of the tower to find a chest and loot for a bit of treasure and resources.|  ; Emma
 C Impalement Insurance|QID|38410|M|46.09,70.99|US|NC|N|Finish up destroying Harpoon Launchers.|
+A Built to Scale|QID|38337|M|43.46,64.40|US|N|Kill a Stormwing Drake to get this quest from the UI.|
 C Built to Scale|QID|38337|M|45.05,66.45|US|N|Kill drakes and loot the 'Storm Drake Scales'.|
 T Impalement Insurance|QID|38410|M|46.25,70.37|N|To Commander Lorna Crowley.|
-T Built to Scale|QID|38337|M|46.25,70.36|N|To Commander Lorna Crowley.|
 A Another Way|QID|38342|PRE|38410|M|46.25,70.37|N|From Commander Lorna Crowley.|
-C Another Way|QID|38342|M|46.24,72.39|QO|1|N|Kill Gunnlaug Scaleheart|
-C Another Way|QID|38342|M|45.70,73.12|QO|2|N|Climb the Tower|
+T Built to Scale|QID|38337|M|46.25,70.36|N|To Commander Lorna Crowley.|
+K Another Way|QID|38342|M|46.24,72.39|QO|1|T|Gunnlaug Scaleheart|N|Kill Gunnlaug Scaleheart|
+C Another Way|QID|38342|NC|M|45.70,73.12|QO|2|N|Climb the Tower|
 T Another Way|QID|38342|M|45.62,73.09|N|To Commander Lorna Crowley.|
 A Above the Winter Moonlight|QID|38412|PRE|38342|M|45.65,73.08|N|From Commander Lorna Crowley.|
-C Above the Winter Moonlight|QID|38412|M|46.36,74.37|QO|1|N|Grapple to the Mountain Path|
+C Above the Winter Moonlight|QID|38412|NC|M|46.36,74.37|QO|1|N|Grapple to the Mountain Path|
 $ Small Treasure Chest|QID|38476|M|48.13,74.22|N|Beside the waterfall, loot for a bit of treasure and resources.|
 K Kill Stormwing Matriarch|QID|38423|M|49.6,71.6|T|Stormwing Matriarch|QO|1|ITEM|129110|N|Silver - Kill and loot for a bit of treasure and resources. Also drops a pet.|
 U Stormwing Whelpling|QID|38423|M|49.6,71.6|U|129208|N|Click to add pet to your collection.|
 C A Stack of Racks|QID|39792|M|51.9,74.1|RANK|2|
+A Assault the Drekirjar-Bonus Objective|QID|38374|US|LVL|-109|M|42.88,64.85|N|From UI upon entering Hrydshal.|
 C Assault the Drekirjar-Bonus Objective|QID|38374|M|45.86,67.84|N|Stay and finish if you want, or manually click it off.|
 t Assault the Drekirjar-Bonus Objective|QID|38374|M|45.86,67.84|N|Auto turned in when complete.|
 $ Small Treasure Chest|QID|38485|M|49.24,76.99;49.76,77.99|CS|N|One grapple point off the trail, you will find a chest in this niche. Loot for treasure and resources, then back to traveling upwards on the trail.|
 K Kill Bladesquall|QID|38431|M|45.88,77.37|QO|1|ITEM|129048|T|Bladesquall|N|Grapple across the defunct bridge for this silver - Kill and loot for a bit of treasure and resources.|
-C Above the Winter Moonlight|QID|38412|M|44.26,77.56|QO|2|N|Reach the Top of the Path|
+C Above the Winter Moonlight|QID|38412|NC|M|44.26,77.56|QO|2|N|Reach the Top of the Path|
 T Above the Winter Moonlight|QID|38412|M|44.82,77.41|N|To Vethir.|
 A Heart of a Dragon|QID|38414|M|44.79,77.40|N|From Vethir.|
 A Wings of Liberty|QID|38413|M|44.79,77.40|N|From Vethir.|
@@ -285,8 +287,8 @@ K Kill Fathnyr|QID|38425|M|46.67,83.68|QO|1|ITEM|129206|T|Fathnyr|N|Silver - In 
 C Wings of Liberty|QID|38413|M|45.73,82.14|QO|4|NC|N|Free Hridmogir.|
 C Wings of Liberty|QID|38413|M|44.12,80.67|QO|3|NC|N|Free Erilar.|
 $ Small Treasure Chest|QID|43239|M|44.30,79.88;43.70,80.09|CS|N|On the top of the spire, hook you way up and loot for treasure and resources.|
-C Heart of a Dragon|QID|38414|M|42.31,81.89|Z|1217/25|QO|1|N|Find the Thorignir Mother.|
-C Heart of a Dragon|QID|38414|M|41.75,81.46|Z|1217/25|QO|2|T|Azariah|N|Kill Azariah.|
+C Heart of a Dragon|QID|38414|M|42.31,81.89|QO|1|N|Find the Thorignir Mother.|
+C Heart of a Dragon|QID|38414|M|41.75,81.46|QO|2|T|Azariah|N|Kill Azariah.|
 C Fury of the Storm|QID|40568|M|44.07,82.69|US|N|Finish killing the vrykul.|
 T Heart of a Dragon|QID|38414|M|42.75,82.73|N|To Vethir.|
 T Wings of Liberty|QID|38413|M|42.81,82.69|N|To Vethir.|
@@ -314,6 +316,7 @@ A Only the Finest|QID|39793|M|51.46,57.06|N|From Rax Sixtrigger.|RANK|2|
 A Rigging the Wager|QID|39787|M|51.26,57.21|N|From Snaggle Sixtrigger.|RANK|2|
 R Nastrondir|QID|39793|ACTIVE|39793|M|43.82,53.69;40.81,50.21;42.41,39.01|CS|N|Run thru Stony Highlands, Past Valley of the Sword and into Nastrondir.|RANK|2| ; Emma
 A The Brood of Nithogg-Bonus Objective|QID|42431|LVL|-109|M|42.65,38.71|N|Auto Accepted upon entering the area.|RANK|2|
+f Stormtorn Foothills |M|51.9,34.7|N|Talk to Hillevi the Scalekeeper|; Stormtorn Foothills |Z|1017;0|
 C The Brood of Nithogg-Bonus Objective|QID|42431|M|42.65,38.71|S|N|Kill the drakes and pick up eggs to advance the objective.|RANK|2|
 C Only the Finest|QID|39793|M|44.14,37.51|S|N|Kill goats to collect the patches of goat hair.|RANK|2|
 $ Small Treasure Chest|QID|43238|M|43.14,39.01;43.17,40.49|CS|N|Hook out to find chest, loot for treasure and resources.|RANK|2|

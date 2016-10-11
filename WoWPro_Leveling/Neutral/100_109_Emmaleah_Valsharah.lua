@@ -381,7 +381,7 @@ A Kur'talos Ravencrest|QID|38718|M|40.85,53.01|N|From Commander Jarod Shadowsong
 C Kur'talos Ravencrest|QID|38718|M|40.89,53.00|QO|1|NC|N|Click on the banner to exame it.|
 T Kur'talos Ravencrest|QID|38718|M|40.74,53.01|N|To Commander Jarod Shadowsong.|
 A Maiev's Trail|QID|38714|M|40.74,53.01|N|From Commander Jarod Shadowsong. If he disappears, run out of the room and back in and he reappears.|
-A The Rooks Guard|QID|38715|M|40.74,53.01|N|From Commander Jarod Shadowsong.|
+A The Rook's Guard|QID|38715|M|40.74,53.01|N|From Commander Jarod Shadowsong.|
 R Ravencourt|QID|38715|M|39.06,53.03;38.96,52.44|CS|N|Run out of this chamber and up into the hold courtyard.|RANK|-1|
 U Inscription on tomb|QID|38772|QO|1|M|37.96,52.81|N|Silver - Click on the nameplate to summon Theryssia and put her to rest.|T|Theryssia|RANK|2|
 A Black Rook Hold-Bonus Objective|QID|38716|M|39.25,53.55|N|Auto accepted as you enter this area.|RANK|2|LVL|-109|
