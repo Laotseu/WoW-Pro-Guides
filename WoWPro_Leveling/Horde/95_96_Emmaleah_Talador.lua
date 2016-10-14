@@ -120,7 +120,7 @@ N Starts in Vol'jin's Pride|QID|34681|N|If you aren't there, Brom, the flightmas
 
 A Legacy of the Ancients|QID|36385|M|46.88,84.88|O|U|115467|BUILDING|Lumbermill;41|N|Accepted from Barkskin Tome|
 T It's a Matter of Strategy|QID|34681|M|71.06,29.74|N|To Foreman Grobash.|
-f Vol'jin's Pride|QID|34681|M|70.07,29.4|N|At Mo'Jimba.|;currently you get this and 2 other FPs automatically
+f Vol'jin's Pride|QID|34681|M|70.7,29.4|N|At Mo'Jimba.|;currently you get this and 2 other FPs automatically
 A At Your Command|QID|34566|M|71.06,29.74|Z|Talador|N|From Foreman Grobash.|
 C At Your Command|QID|34566|NC|M|71.14,29.95|Z|Talador|N|Use the table and make your selection.|
 T At Your Command|QID|34566|M|71.06,29.74|Z|Talador|N|To Foreman Grobash.|
@@ -139,12 +139,12 @@ A Gas Guzzlers|QID|34579|M|70.90,30.49|PRE|35102|N|From Morketh Bladehowl.|
 R Kuuro's Claim|QID|34576|M|74.03,22.68|ACTIVE|34576|
 C Iridium Recovery|QID|34576|M|75.4,22|S|N|Look up, these are non-agro critters flying above you.|
 C Out of Jovite|QID|34577|M|75.4,22|NC|S|N|These are green crystals sticking out the ground and walls.|
-C Gas Guzzlers|QID|34579|M|75.4,22|U|111910|N|After you kill the goren, use your 'Goren Gas Extractor' on them.|
+C Gas Guzzlers|QID|34579|M|75.4,22|U|111910|N|After you kill the goren, use your 'Goren Gas Extractor' on them.|S|
 l Pure Crystal Dust|QID|34576|M|78.11,14.8|L|117572|N|More treasure, it's up the ramp and at the end of the room.|ACTIVE|34263;37421|ITEM|117572|
 C Gas Guzzlers|QID|34579|M|75.4,22|U|111910|N|After you kill the goren, use your 'Goren Gas Extractor' on them.|US|
 C Iridium Recovery|QID|34576|M|75.4,22|US|N|Look up, these are non-agro critters flying above you.|
 C Out of Jovite|QID|34577|M|75.4,22|NC|US|N|These are green crystals sticking out the ground and walls.|
-H Vol'jin's Pride|QID|34576|M|75.4,22|N|Save your self a minute or two and hearth back.|ACTIVE|34576|U|110560|
+H Vol'jin's Pride|QID|34576|M|75.4,22|N|Save your self a minute or two and hearth back.|ACTIVE|34576|
 T Out of Jovite|QID|34577|M|70.90,30.49|N|To Morketh Bladehowl.|
 T Iridium Recovery|QID|34576|M|70.90,30.49|N|To Morketh Bladehowl.|
 T Gas Guzzlers|QID|34579|M|70.90,30.49|N|To Morketh Bladehowl.|
@@ -183,7 +183,7 @@ A Wanted: Kil'uun|QID|34108|M|70.82,29.63|N|From Beastmaster Tagh.|RANK|2|
 A Wanted: Hilaani|QID|34107|M|70.82,29.63|N|From Beastmaster Tagh.|RANK|2|
 A Wanted: Ra'tok the Hammer|QID|34106|M|70.82,29.63|N|From Beastmaster Tagh.|RANK|2|
 K Kil'uun|QID|34108|M|67.18,28.74|QO|1|S|T|Kil'uun|N|He flys all over this area, keep looking up, and/or hitting the target button.|RANK|2|
-C Logistical Nightmare|QID|34766|M|68.06,31.38|RANK|2|
+C Logistical Nightmare|QID|34766|NC|M|68.06,31.38|RANK|2|
 K Kil'uun|QID|34108|M|67.18,28.74|QO|1|US|T|Kil'uun|N|He flys all over this area, keep looking up, and/or hitting the target button.|RANK|2|
 
 K Underseer Bloodmane|QID|34945|M|63.8,20.7|L|112475|ITEM|112475|T|Underseer Bloodmane|N|Kill and loot for a bit of treasure. If you kill Prize (his pet) first it will cause him to enrage, making the fight needlessly more difficult.|RANK|3|
@@ -321,9 +321,9 @@ T Kura's Vengeance|QID|33582|M|70.77,56.78|N|To Kura the Blind.|RANK|2|
 
 C Clear!|QID|34751|US|M|61.39,44.41;72.54,53.57;66.89,59.55|CN|N|These are located in each of the areas marked.|RANK|2|
 C Wanted: Hilaani|QID|34107|M|66.51,65.30|T|Hilaani|RANK|2|N|Head over and kill Hilaani.|
-R Gordal Foothills|QID|34837;34878|M|62,68|
 
 ;arsenal
+R Gordal Foothills|QID|34837|M|62.10,69.24|ACTIVE|34837|
 t Going to the Gordunni|QID|34837|M|62.10,69.24|N|To Morketh Bladehowl.|
 A Dropping Bombs|QID|34840|M|62.10,69.24|PRE|34837|N|From Morketh Bladehowl.|
 C Dropping Bombs|QID|34840|NC|U|112091|QO|1|M|63.57,69.04|N|Use the smoke grenade to destroy the Base Catapult from a distance (or click on it when next to it).|
@@ -337,10 +337,10 @@ A Supply Recovery|QID|34860|M|68.77,70.52|PRE|34840|N|From Morketh Bladehowl.|
 C Supply Recovery|QID|34860|S|M|69.04,82.47|NC|N|The boxes are scattered around the area.|
 C Prized Repossessions|QID|34858|S|M|69.04,82.47|N|Kill ogres as you travel towards the other objectives.|
 K Gennadian|QID|34929|M|67.4,80.6|L|116075|T|Gennadian|ITEM|116075|N|Before you go up the stairs, to your left (facing the stairs) is an archway to an area with Genadian. Kill and loot for a bit of treasure.|ACTIVE|34858|
-K Vizier Vorgorsh|QID|34855|QO|1|M|68.55,82.91|T|Vizier Vorgorsh|ACTIVE|34855|N|Head back to the stairs, go up them, then to the left and kill Vizier Vorgorsh.|
-K Vizier Zulmork|QID|34855|QO|2|M|67.05,77.06|T|Vizier Zulmork|ACTIVE|34855|N|Head back across the bridege, head to Vizier Zulmork and kill him.|
+K Vizier Vorgorsh|QID|34855|QO|1|M|68.55,82.91|T|Vizier Vorgorsh|N|Head back to the stairs, go up them, then to the left and kill Vizier Vorgorsh.|
+K Vizier Zulmork|QID|34855|QO|2|M|67.05,77.06|T|Vizier Zulmork|N|Head back across the bridege, head to Vizier Zulmork and kill him.|
 l Iron Box|QID|34251|M|64.9,79.2|L|117571|ITEM|117571|N|Inside the tower there is a chest on the floor. Loot for a bit of treasure.|ACTIVE|34855|
-K Vizier Cromaug|QID|34855|QO|3|M|66.26,80.97|T|Vizier Cromaug|ACTIVE|34855|N|Head into the building and kill Vizier Cromaug.|
+K Vizier Cromaug|QID|34855|QO|3|M|66.26,80.97|T|Vizier Cromaug|N|Head into the building and kill Vizier Cromaug.|
 C Supply Recovery|QID|34860|US|M|69.04,82.47|N|Finish obtaining shipments.|
 C Prized Repossessions|QID|34858|US|M|69.04,82.47|N|Finish looting Gordunni "Toothpicks" from the Ogres.|
 T Punching Through|QID|34855|M|69.04,82.47|N|To Morketh Bladehowl (who is following you around).|
@@ -366,10 +366,10 @@ A Orbs of Power|QID|34889|PRE|34879|M|68.30,70.32|N|From Magister Krelas.|
 C While We're in the Neighborhood|QID|34887|M|70.20,72.36|S|N|Kill ogres and loot the runebeads.|
 C Orbs of Power|QID|34889|M|70.20,72.36|NC|S|N|Click on the Orbs to destroy them.|
 K Gennadian|QID|34929|M|67.4,80.6|L|116075|T|Gennadian|ITEM|116075|N|Before you go up the stairs, to your left (facing the stairs) is an archway to an area with Genadian. Kill and loot for a bit of treasure.|ACTIVE|34889|
-K Vizier Vorgorsh|QID|34888|QO|1|M|68.53,82.89|T|Vizier Vorgorsh|ACTIVE|34888|
-K Vizier Zulmork|QID|34888|QO|2|M|67.01,76.98|T|Vizier Zulmork|ACTIVE|34888|
+K Vizier Vorgorsh|QID|34888|QO|1|M|68.53,82.89|T|Vizier Vorgorsh|
+K Vizier Zulmork|QID|34888|QO|2|M|67.01,76.98|T|Vizier Zulmork|
 l Iron Box|QID|34251|M|64.9,79.2|L|117571|ITEM|117571|N|Inside the tower there is a chest on the floor. Loot for a bit of treasure.|ACTIVE|34888|
-K Vizier Cromaug|QID|34888|QO|3|M|66.23,81.04|T|Vizier Cromaug|ACTIVE|34888|
+K Vizier Cromaug|QID|34888|QO|3|M|66.23,81.04|T|Vizier Cromaug|
 C While We're in the Neighborhood|QID|34887|M|66.3,81.04|US|N|Finish collecting any needed runebeads.|
 C Orbs of Power|QID|34889|M|66.51,80.21|NC|US|N|Click on the Orbs to destroy them.|
 T Vicious Viziers|QID|34888|M|66.23,81.04|N|To Magister Krelas.|
@@ -402,12 +402,12 @@ l Barrel of Fish|QID|34252|M|62.4,48|L|110506|ITEM|110506|N|Loot for a bit of tr
 
 A A Pilgrimage Gone Awry|QID|34801|M|61.35,54.39|N|From Nadur.|RANK|3|
 C A Pilgrimage Gone Awry|QID|34801|QO|3|M|64.21,58.96|N|The frogs are along the water's edge.|RANK|3|
-C A Pilgrimage Gone Awry|QID|34801|M|59.55,54.78|S|N|The flowers are a ground spawn here and many of the tigers are stealthed in this area.|RANK|3|
+C A Pilgrimage Gone Awry|QID|34801|QO|1;2|M|59.55,54.78|S|N|The flowers are a ground spawn here and many of the tigers are stealthed in this area.|RANK|3|
 K Ra'kahn|QID|34196|M|60.1,57.5;59.4,59.6|CS||L|116112|T|Ra'kahn|ITEM|116112|N|This named tiger lives in a small cave around the other side of the hill. Kill and loot for a bit of treasure.|RANK|3|
-C A Pilgrimage Gone Awry|QID|34801|M|59.55,54.78|US|N|The flowers are a ground spawn here and many of the tigers are stealthed in this area.|RANK|3|
+C A Pilgrimage Gone Awry|QID|34801|QO|1;2|M|59.55,54.78|US|N|The flowers are a ground spawn here and many of the tigers are stealthed in this area.|RANK|3|
 T A Pilgrimage Gone Awry|QID|34801|M|61.35,54.40|N|To Nadur.|RANK|3|
 
-A Gatekeepers of Auchindoun|QID|34776|M|58.10,53.05|N|From Aeda Brightdawn.|RANK|3|
+A Gatekeepers of Auchindoun|QID|34776|M|58.10,53.05|N|From Aeda Brightdawn.|RANK|3|;i dont know if this is doable here, since I didnt find this quest until I had finished the zone, may be prereq's that arent mentioned.
 C Gatekeepers of Auchindoun|QID|34776|QO|1|M|57.38,52.75|CHAT|N|Challenge Vidicator Dalu to a fight. You can challenge them simultaneously if you want.|T|Vindicator Dalu|RANK|3|
 C Gatekeepers of Auchindoun|QID|34776|QO|2|M|57.37,52.60|CHAT|N|Challenge Soulbinder Halaari|T|Soulbinder Halaari|RANK|3|
 T Gatekeepers of Auchindoun|QID|34776|M|58.10,53.06|N|To Aeda Brightdawn.|RANK|3|
@@ -415,7 +415,7 @@ A The True Path|QID|36518|M|58.1,53.06|N|Accept Aeda as your follower.|RANK|3|
 
 R Auchindoun|QID|34696|M|51.67,62.82;54.76,66.46|CS|N|Up the stairs you just fought at, and follow the road untill you get to the road that encirles Auchindoun.|PRE|36158|RANK|3|
 R Auchindoun|QID|34696|M|51.67,62.82;54.76,66.46|CS|N|Run till you get to the road encircling Auchindoun, then take a left on that road.|LEAD|35158|RANK|2|
-f Exarch's Refuge|QID|34696|M|54.51,67.84|N|At Roka. There are actually two flight paths and I suspect the other is supposed to be for alliance, but you can pick it up.|RANK|2|
+f Exarch's Refuge|M|54.51,67.84|N|At Roka. There are actually two flight paths and I suspect the other is supposed to be for alliance, but you can pick it up.|RANK|2|
 A Every Bit Counts|QID|34710|M|55.37,66.75|N|From Ranger Belonis.|RANK|2|
 A Powering the Defenses|QID|35249|M|55.56,66.98|N|From Mehlar Dawnblade.|RANK|2|
 T The Lady of Light|QID|34696|M|55.49,67.68|N|To Lady Liadrin.|RANK|2|
@@ -498,7 +498,7 @@ l Farmer's Bounty|QID|34249|M|35.5,96.8|ITEM|$824|N|Loot for some garrison resou
 l Yuuri's Gift|QID|34140|ITEM|$824|M|40.7,89.5|PRE|33530|N|Yuuri is so greatful you rescued him,he wants to share some garrison resources for you (located in the wagon, not behind him as he says).|RANK|3|
 
 R Retribution Point|QID|34326|M|43.44,75.92|RANK|2|N|Run to Retribution Point.|
-f Retribution Point|QID|34122|M|42.12,76.78|N|At Beldos.|RANK|2|
+f Retribution Point|M|42.12,76.78|N|At Beldos.|RANK|2|
 T Changing the Tide|QID|34326|M|43.44,75.92|N|To Restalaan.|RANK|2|
 A Desperate Measures|QID|34092|M|43.43,75.94|N|From Restalaan.|RANK|2|
 A Ogre Diplomacy|QID|34122|M|42.97,76.23|N|From Lady Liadrin.|RANK|2|
