@@ -247,7 +247,8 @@ A Pillaging Peons|QID|31738|M|46.13,84.58|N|From Sunke Khang.|
 A Priorities!|QID|31739|M|46.22,84.69|N|From Teng Applebloom.|
 A Critical Condition|QID|29552|M|46.10,84.54|N|From Mishka.|
 
-f Paw'don Village|QID|31737|M|46.05,85.10|N|Learn the Paw'don Village flight-point from Wing Kyo.|
+; The flight point use "Paw'Don", the heart use "Paw'don"...
+f Paw'Don Village|ALTFP|Paw'don Village|M|46.05,85.10|N|Learn the Paw'don Village flight-point from Wing Kyo.|
 ; [aldavor] added QID
 h Paw'don Village|QID|31739|M|44.9,84.4|N|Consider setting your hearthstone to Paw'don Village.  It has profession trainers present and there is a portal to Stormwind.|
 
@@ -277,16 +278,17 @@ R Twinspire Keep|QID|31741|M|44.91,83.64;43.66,84.73;42.67,85.23;41.49,83.33|CS|
 
 C Twinspire Keep|QID|31741|S|M|42.30,79.63|
 C Unfair Trade|QID|31744|S|M|40.12,81.90|N|Kill the green demonic eyeballs to free the cubs.  There are LOTS.|
-C Bomb the Wild Imps|QID|31743|U|89602|QO|Wild Imps bombed: 1/1|M|43.3,81.5|N|Use the flare to call an aerial strike|; Twinspire Keep
-C Bomb the Twinspire munitions stockpile|QID|31743|U|89602|QO|Twinspire munitions stockpile bombed: 1/1|M|40.6,82.4|N|Use the flare to call an aerial strike|; Twinspire Keep
-C Bomb Xhu'daggab|QID|31743|U|89602|QO|Xhu'daggab bombed: 1/1|M|40.3,82.0|N|Use the flare to call an aerial strike|; Twinspire Keep
+C Bomb the Wild Imps|QID|31743|NC|U|89602|QO|Wild Imps bombed: 1/1|M|43.3,81.5|N|Use the flare to call an aerial strike|; Twinspire Keep
+C Bomb the Twinspire munitions stockpile|QID|31743|NC|U|89602|QO|Twinspire munitions stockpile bombed: 1/1|M|40.6,82.4|N|Use the flare to call an aerial strike|; Twinspire Keep
+C Bomb Xhu'daggab|QID|31743|NC|U|89602|QO|Xhu'daggab bombed: 1/1|M|40.3,82.0|N|Use the flare to call an aerial strike|; Twinspire Keep
 C Bomb the Twinspire Demolishers|QID|31743|U|89602|QO|Twinspire Demolishers bombed: 1/1|M|41.2,81.4|N|Use the flare to call an aerial strike|; Twinspire Keep
+K Dalgan slain|QID|31742|S|T|Dalgan|QO|Dalgan slain: 1/1|M|41.0,80.2|; Twinspire Keep
 K Bellandra Felstorm|QID|31742|T|Bellandra Felstorm|QO|Bellandra Felstorm slain: 1/1|M|41.7,80.2|; Twinspire Keep
-K Dalgan slain|QID|31742|T|Dalgan|QO|Dalgan slain: 1/1|M|41.0,80.2|; Twinspire Keep
-C Unfair Trade|QID|31744|US|M|40.3,82.0|N|Kill the green demonic eyeballs to free the cubs|; Twinspire Keep - Need better coords
+K Dalgan slain|QID|31742|US|T|Dalgan|QO|Dalgan slain: 1/1|M|41.0,80.2|; Twinspire Keep
+C Unfair Trade|QID|31744|US|M|40.3,82.0|N|Kill the green demonic eyeballs to free the cubs|; Twinspire Keep - Need better coord
 C Twinspire Keep|QID|31741|US|M|41.6,81.3|; Twinspire Keep
 
-C Unfair Trade|QID|31744|M|40.3,82.0|N|Kill the remaining green demonic eyeballs to free the cubs|; Twinspire Keep - Need better coords
+C Unfair Trade|QID|31744|M|40.3,82.0|N|Kill the remaining green demonic eyeballs to free the cubs|; Twinspire Keep - Need better coord
 C Twinspire Keep|QID|31741|M|41.6,81.3|N|You have been sneaky and avoided killing the horde.  Go down and take care of this!|; Twinspire Keep
 
 T Twinspire Keep|QID|31741|M|41.39,79.60|N|To Sully "The Pickle" McLeary.|
@@ -318,14 +320,14 @@ A Ancient Power|QID|29560|M|54.11,82.37|N|From Bold Karasshi.|
 
 C The Path of War |QID|29558|S|M|53.7,80.3|; Slingtail Pits
 C Ancient Power |QID|29560|S|NC|M|53.8,81.1|N|The skulls are lying on the ground in the village|; Slingtail Pits
-C Freeing Our Brothers |QID|29559|M|54.6,79.3|N|You need to kill Slingtail to get the keys that open the cages|; Slingtail Pits
+C Freeing Our Brothers |QID|29559|NC|M|54.6,79.3|N|You need to kill Slingtail to get the keys that open the cages|; Slingtail Pits
 C Ancient Power |QID|29560|US|NC|M|53.8,81.1|N|The skulls are lying on the ground in the village|; Slingtail Pits
 C The Path of War |QID|29558|US|M|53.7,80.3|; Slingtail Pits
 
 T The Path of War|QID|29558|M|54.15,82.42|N|To Bold Karasshi.|
 T Freeing Our Brothers|QID|29559|M|54.15,82.42|N|To Bold Karasshi.|
 T Ancient Power|QID|29560|M|54.15,82.42|N|To Bold Karasshi.|
-A Kung Din|QID|29759|PRE|29558;29559;29560|M|54.15,82.42|N|From Bold Karasshi.|
+A Kung Din|QID|29759|PRE|29558,29559,29560|M|54.15,82.42|N|From Bold Karasshi.|
 
 K Kung Din|QID|29759|T|Kung Din|M|54.56,79.99|N|Two phase fight, switches between normal fighting and Vehicle UI where you need to press 1 to "hang on for life".  Remember the Key!|L|79753|
 
@@ -334,33 +336,33 @@ A Jailbreak|QID|29562|PRE|29759|M|54.15,82.42|N|From Bold Karasshi.|
 
 C Jailbreak|QID|29562|M|56.18,81.41|
 
-f Pearlfin Village|QID|29562|M|57.95,82.47|N|At Ut-Nam.|
+f Pearlfin Village|M|57.95,82.47|N|At Ut-Nam.|
 T Jailbreak|QID|29562|M|58.97,81.69|N|To Bold Karasshi.|
 A The Pearlfin Situation|QID|29883|M|58.93,81.93|N|From Rell Nightwind.|
 A Road Rations|QID|29885|M|58.93,81.93|N|From Rell Nightwind.|
 
 ; [aldavor] To make this work, I had to replace the QO options with the correct sequence of numerics... weird
-C Speak to Pearlkeeper Fujin|QID|29883|QO|1|M|58.75,81.28|CHAT|NC|
-C Speak to Elder Lusshan|QID|29883|QO|4|M|58.04,80.56|CHAT|NC|
-C Speak to Instructor Sharpfin|QID|29883|QO|3|M|58.79,84.58|CHAT|NC|
-C Speak to Watersmith Ot-Temmdo|QID|29883|QO|2|M|59.92,83.92|CHAT|NC|
-C Road Rations|QID|29885|M|60.6,85.0|N|Kill the Pearly Tortoises on the outer bank of the lake around the Pearlfin Village|
+C Speak to Pearlkeeper Fujin |QID|29883|CHAT|QO|Speak to Pearlkeeper Fujin: 1/1|M|58.75,81.28|; Pearlfin Village
+C Speak to Elder Lusshan |QID|29883|CHAT|QO|Speak to Elder Lusshan: 1/1|M|58.04,80.56|; Pearlfin Village
+C Speak to Instructor Sharpfin |QID|29883|CHAT|QO|Speak to Instructor Sharpfin: 1/1|M|58.79,84.58|; Pearlfin Village
+C Speak to Watersmith Ot-Temmdo |QID|29883|CHAT|QO|Speak to Watersmith Ot-Temmdo: 1/1|M|59.92,83.92|; Pearlfin Village
+C Road Rations |QID|29885|M|60.6,85.0|N|Kill the Pearly Tortoises on the outer bank of the lake around the Pearlfin Village|; Pearlfin Village
 
 T The Pearlfin Situation|QID|29883|M|58.93,81.93|N|To Rell Nightwind.|
 T Road Rations|QID|29885|M|58.93,81.93|N|To Rell Nightwind.|
 A Family Heirlooms|QID|29762|M|58.97,81.69|N|From Bold Karasshi.|
 A The Elder's Instruments|QID|29887|M|58.75,81.28|N|From Pearlkeeper Fujin.|
 
+C The Elder's Instruments|QID|29887|S|M|67.25,88.40|N|Kill the monkeys until you get all four items.|
 R Moonwater Retreat|QID|29887|M|60.26,83.96;61.70,84.75;63.72,86.27;65.21,87.16|CS|N|Through the Bamboo Wilds and up to the hill.|
 ; [aldavor] added rank 3 since it's achiev not quest.
-R Watersmithing|QID|968460001|M|66.01, 87.56|ACH|6846;1|N|Exploration>Fish Tales.|RANK|3|
-C The Elder's Instruments|QID|29887|S|M|67.25,88.40|N|Kill the monkeys until you get all four items.|
-C Family Heirlooms|QID|29762|NC|M|67.44,87.54|N|Loot the corpses around the village.|
+R Watersmithing|M|66.01, 87.56|ACH|6846;1|N|Exploration>Fish Tales.|
+C Family Heirlooms|QID|29762|US|NC|M|67.44,87.54|N|Loot the corpses around the village.|
 C The Elder's Instruments|QID|29887|US|M|67.25,88.40|N|Kill the monkeys until you get all four items.|
 T Family Heirlooms|QID|29762|M|58.97,81.69|N|To Bold Karasshi.|
 T The Elder's Instruments|QID|29887|M|58.75,81.28|N|To Pearlkeeper Fujin.|
 A Spirits of the Water|QID|29894|M|58.75,81.28|N|From Pearlkeeper Fujin.|
-C Spirits of the Water|QID|29894|NC|M|58.58,82.89|N|Speak to Elder Lusshan and witness the waterspeaking ceremony.|
+C Spirits of the Water|QID|29894|CHAT|M|58.58,82.89|N|Speak to Elder Lusshan and witness the waterspeaking ceremony.|
 T Spirits of the Water|QID|29894|M|58.97,81.69|N|To Bold Karasshi.|
 A SI:7 Report: Lost in the Woods|QID|29733|M|58.98,81.82|N|From Rell Nightwind. "See" his report as soon as you accept.|
 C SI:7 Report: Lost in the Woods|QID|29733|M|49.88,70.92|N|Use all three of Rell Nightwind's attacks to kill the elite Hozen and then General Rik-Rik. If you keep all abilities on cooldown, it is easy.  Hint, if you are about to die, exit the vehicle and it will take you back to the start without dying.|
@@ -386,7 +388,7 @@ T SI:7 Report: Take No Prisoners|QID|29727|M|58.93,81.93|N|To Amber Kearnen.|
 A A Perfect Match|QID|29903|M|58.87,81.68|N|From Admiral Taylor.|
 A Seek Out the Lorewalker|QID|29888|M|58.96,81.68|N|From Bold Karasshi.|
 
-C A Perfect Match|QID|29903|NC|M|60.44,87.70|N|Speak to the Aqualytes and give them presents. The trick is to look at what weapon they have:Daggers: Give a dagger; Sword: Give a shield; Red Staff: give a healing prayer; Blue/Green Staff: give a staff.|
+C A Perfect Match|QID|29903|CHAT|M|60.44,87.70|N|Speak to the Aqualytes and give them presents. The trick is to look at what weapon they have:\n\nDaggers: Give a dagger;\nSword: Give a shield;\nRed Staff: give a healing prayer;\nBlue/Green Staff: give a staff.|
 T A Perfect Match|QID|29903|M|58.87,81.68|N|To Admiral Taylor.|
 A Bigger Fish to Fry|QID|29904|M|58.87,81.68|N|From Admiral Taylor.|
 
@@ -405,7 +407,7 @@ C Let Them Burn|QID|29905|US|M|55.01,81.74|
 T Let Them Burn|QID|29905|M|58.89,81.46|N|To Elder Lusshan.|
 T Carp Diem|QID|29906|M|58.89,81.46|N|To Elder Lusshan.|
 
-R Dreamer's Pavilion|QID|29888|M|59.50,85.78;56.36,87.37;54.77,87.59;54.40,90.38;53.75,91.56|CS|N|Let's go to Dreamer's Pavilion through Amberfly Bog|
+R Dreamer's Pavilion|QID|29888|M|59.50,85.78;56.36,87.37;54.77,87.59;54.40,90.38;53.75,91.56|CC|N|Let's go to Dreamer's Pavilion through Amberfly Bog|
 T Seek Out the Lorewalker|QID|29888|M|53.75,91.56|N|To Mouthwatering Brew.|
 A Borrowed Brew|QID|29889|M|53.75,91.56|N|From Mouthwatering Brew.|
 C Borrowed Brew|QID|29889|NC|M|53.73,91.44|N|Drink the brew.|
@@ -435,7 +437,7 @@ T Hue|QID|29893|M|53.78,90.63|N|To Lorewalker Cho.|
 A Finding Your Center|QID|29890|M|53.75,90.67|N|From Lorewalker Cho.|
 C Finding Your Center|QID|29890|M|54.57,91.88|N|Keep the bar as close to the centre circle as possible.  If it hits either extreme, you fail.\n\nOnce complete, you will enter a cut-scene.|
 
-R Den of Sorrow|QID|29890|M|59.23,87.96;60.19,83.42;61.88,81.98;62.21,82.64;65.18,79.27;65.90,79.29|CS|N|Run back to Pearlfin Village and then take the path in your vision.|
+R Den of Sorrow|QID|29890|M|59.23,87.96;60.19,83.42;61.4,82.0;62.1,78.5;65.18,79.27;65.90,79.29|CC|N|Run back to Pealfin Village and then take the path in your vision.|
 T Finding Your Center|QID|29890|M|65.90,79.29|N|To Anduin Wrynn.|
 A Sacred Waters|QID|29898|M|65.90,79.29|N|From Anduin Wrynn.|
 A Rest in Peace|QID|29899|M|65.98,79.30|N|From Ren Whitepaw.|
@@ -455,20 +457,20 @@ T Sacred Waters|QID|29898|M|65.98,79.38|N|To Lina Whitepaw.|
 T Rest in Peace|QID|29899|M|65.98,79.30|N|To Ren Whitepaw.|
 T An Ancient Legend|QID|29900|M|65.94,79.22|N|To Ren Whitepaw.|
 A Anduin's Decision|QID|29901|M|65.94,79.22|N|From Ren Whitepaw.|
-C Anduin's Decision|QID|29901|NC|M|65.91,79.24|N|Talk to Anduin and learn of his decision in case you didn't guess it already.|CHAT|
-T Anduin's Decision|QID|29901|M|58.87,81.68|N|To Admiral Taylor, back in *Pearlfin Village*.|
-A In Search of Wisdom|QID|29922|M|58.1,80.6|N|From Elder Lusshan.|
-C In Search of Wisdom|QID|29922|NC|M|57.95,82.52|N|Speak to Kitemaster Ut-Nam and have him send you to Dawn's Blossom|
+C Anduin's Decision|QID|29901|CHAT|M|65.91,79.24|N|Talk to Anduin and learn of his decision in case you didn't guess it already.|
+T Anduin's Decision|QID|29901|M|58.87,81.68|N|To Admiral Taylor, back in *Perlfin Villiage*.|
+A In Search of Wisdom|QID|29922|M|58.1,81.5|N|From Elder Lusshan.|
+C In Search of Wisdom|QID|29922|CHAT|M|57.95,82.52|N|Speak to Kitemaster Ut-Nam and have him send you to Dawn's Blossom|
 
-f Dawn's Blossom|QID|29922|M|47.05,46.24|N|At Keg Runner Lee.|
+f Dawn's Blossom|M|47.05,46.24|N|At Keg Runner Lee.|
 T In Search of Wisdom|QID|29922|M|46.81,46.14|N|To Lorewalker Cho.|
 ; [aldavor] added rank 3 since it's achiev not quest.
-R The Emperor's Burden - Part 1|QID|968550001|M|47.08, 45.14|ACH|6855;1|N|Exploration>The Seven Burdens of Shaohao.|RANK|3|
+R The Emperor's Burden - Part 1|M|47.08, 45.14|ACH|6855;1|N|Exploration>The Seven Burdens of Shaohao.|
 A Welcome to Dawn's Blossom|QID|31230|M|47.16,46.17|N|From Toya.|
 ; [aldavor] changed the QOs to numerics.
-C Welcome to Dawn's Blossom|QID|31230|M|47.04,46.02|N|Wanderbrew wanders about near here.|QO|3|CHAT|
-C Welcome to Dawn's Blossom|QID|31230|M|45.77,43.67|QO|2|N|Speak with Peiji Goldendraft.|CHAT|
-C Welcome to Dawn's Blossom|QID|31230|M|48.47,44.50|QO|1|N|Speak with Master Windfur.|CHAT|
+C Speak with Kai Wanderbrew|QID|31230|CHAT|M|47.04,46.02|N|Wanderbrew wanders about near here.|QO|Speak with Kai Wanderbrew: 1/1|
+C Speak with Peiji Goldendraft|QID|31230|CHAT|M|45.77,43.67|QO|Speak with Peiji Goldendraft: 1/1|
+C Speak with Master Windfur|QID|31230|CHAT|M|48.47,44.50|QO|Speak with Master Windfur: 1/1|
 T Welcome to Dawn's Blossom|QID|31230|M|47.16,46.17|N|To Toya.|
 
 A The Double Hozen Dare|QID|29716|M|46.65,46.15|N|From An Windfur.|
@@ -479,31 +481,33 @@ C The Silkwood Road|QID|29865|S|M|43.26,49.23|N|Kill silkwood stalkers until you
 A Down Kitty!|QID|29717|M|39.82,48.05|N|Little An followed you to Forest Heart and has a new quest for you, once you get there.|
 C Down Kitty!|QID|29717|S|M|37.11,47.72|N|Kill eight Jade Guardians|
 C The Double Hozen Dare|QID|29716|M|37.31,48.19|N|Talk to the frightened cubs found around the trees|CHAT|
-T The Double Hozen Dare|QID|29716|NC|N|To An Windfur. (she should be following you)|
+T The Double Hozen Dare|QID|29716|N|To An Windfur. (she should be following you)|
 A The Jade Witch|QID|29723|N|From An Windfur.|
 C The Jade Witch|QID|29723|M|39.23,46.17|N|Before you talk to the widow, look around for a 'Jade Warrior Statue' in her front yard, if it is there talk to it for a BoA treasure. Talk to Widow Greenpaw, she'll bring you to Shin and then become attackable, kill her.|CHAT|
 C Down Kitty!|QID|29717|US|M|37.11,47.72|N|Kill eight Jade Guardians|
-T Down Kitty!|QID|29717|N|To An Windfur.|
-C The Silkwood Road|QID|29865|US|M|43.26,49.23|N|Keep killing silkwood stalkers until you have slain eight of them.|
+
+T Down Kitty!|QID|29717|S|N|To An Windfur.|
+C The Silkwood Road|QID|29865|US|M|43.26,49.23|N|Loot the eggs to get Pristine Silk Strand|
 C The Threads that Stick|NC|QID|29866|US|M|43.68,48.32|N|Keep looting the eggs to get Pristine Silk Strands|
 
 T The Silkwood Road|QID|29865|M|46.46,45.81|N|To Tzu the Ironbelly.|
 T The Threads that Stick|QID|29866|M|46.63,45.31|N|To Lo Wanderbrew.|
 T The Jade Witch|QID|29723|M|46.43,44.85|N|To An Windfur, now wandering around the village.|
+T Down Kitty!|QID|29717|US|N|To An Windfur. She run aroud the village.|
 A Find the Boy|QID|29993|M|47.07,46.08|N|From Kai Wanderbrew, never in the same place twice|
 A All We Can Spare|QID|29925|M|47.16,46.17|N|From Toya.|
 A An Air of Worry|QID|29576|M|48.33,46.06|N|From Old Man Misteyes.|
 A Tian Monastery|QID|29617|M|49.65,45.83|N|From Apprentice Yufi.|
 
-R The Arboretum|QID|29993|M|49.02,46.27;49.14,47.32;50.43,46.41|CC|N|The path is just down the stairs you passed to get the last quest.|
+R The Arboretum|QID|29993|M|49.02,46.27;49.14,47.32;50.43,46.41|CS|N|The path is just down the stairs you passed to get the last quest.|
 A The Perfect Color|QID|29881|M|54.89,45.31|N|From Inkmaster Glenzu.|
 T Find the Boy|QID|29993|M|54.92,44.83|N|To Inkmaster Wei.|
 A Shrine of the Dawn|QID|29995|M|54.92,45.11;54.67,44.11|CN|N|From Inkmaster Wei, who walks around between these two chairs.|
 A Quill of Stingers|QID|29882|M|55.40,45.29|N|From Inkmaster Jo Po, who wanders a bit.|
-f The Arboretum|QID|29881|M|56.96,44.22|N|Get the flight path at Injar'i Lakebloom.|
-C The Perfect Color|QID|29881|S|M|53.48,44.38|N|Collect the glowing petals from around the trees (can be hard to spot).|
+f The Arboretum|M|56.96,44.22|N|Get the flight path at Injar'i Lakebloom.|
+C The Perfect Color|QID|29881|NC|S|M|53.48,44.38|N|Collect the glowing petals from around the trees (can be hard to spot).|
 C Quill of Stingers|QID|29882|M|53.65,43.99|N|Kill and loot Orchard Wasps for the stingers.|
-C The Perfect Color|QID|29881|US|M|53.48,44.38|N|Collect the red glowing petals from around the trees (can be hard to spot).|
+C The Perfect Color|QID|29881|NC|US|M|53.48,44.38|N|Collect the red glowing petals from around the trees (can be hard to spot).|
 T The Perfect Color|QID|29881|M|54.91,45.35|N|To Inkmaster Glenzu.|
 T Quill of Stingers|QID|29882|M|55.28,45.20|N|To Inkmaster Jo Po.|
 
@@ -518,7 +522,7 @@ T Getting Permission|QID|29920|M|52.59,38.13|N|To Lo Wanderbrew.|
 
 R Dawn's Blossom|QID|29925|M|51.17,39.47;51.28,45.45;47.90,47.30;46.68,46.58|CC|N|Mount up and head back to Toya at Dawn's Blossom.|
 R Emperor's Omen|QID|29925|M|47.15,46.17|N|Ask Toya for a ride.|
-f Emperor's Omen|QID|29925|M|50.84,26.86|N|At Supplier Towsa.|
+f Emperor's Omen|M|50.84,26.86|N|At Supplier Towsa.|
 
 T All We Can Spare|QID|29925|M|50.91,27.07|N|To Lorewalker Cho.|
 A I Have No Jade And I Must Scream|QID|29928|M|50.94,27.03|N|From Foreman Mann.|
@@ -539,8 +543,8 @@ C What's Mined Is Yours|QID|29930|M|46.3,29.35|N|Hop in Hao's cart.|
 T What's Mined Is Yours|QID|29930|M|50.94,27.03|N|To Foreman Mann.|
 T Calamity Jade|QID|29926|M|50.94,27.03|N|From Foreman Mann.|
 A The Serpent's Heart|QID|29931|M|50.94,27.03|N|From Foreman Mann.|
-N If you are into exploring... |QID|29745|N|...this is as close to Sri-La Village as you are going to get in this guide. Skip the next step if you don't want to go there, no quests there except lvl 90 dailies. There is a treasure box in a cave on windward island, but unless you are a rogue, I wouldn't advise going to get it before you have the dailies in the area.|RANK|3|O|
-f Sri-La Village|QID|29745|M|55.44,23.73|N|At Gingo Alebottom.|RANK|3|
+N If you are into exploring... |N|...this is as close to Sri-La Village as you are going to get in this guide. skip the next step if you don't want to go there, no quests there except lvl 90 dailies. There is a treasure box in a cave on windward island, but unless you are a rogue, I wouldn't advise going to get it before you have the dailies in the area.|RANK|3|O|
+f Sri-La Village|M|55.44,23.73|N|At Gingo Alebottom.|RANK|3|
 
 R Wood of the Lost|QID|29745|M|48.64,24.91|CC|
 A The Sprites' Plight|QID|29745|M|48.64,24.91|N|From Outcast Sprite.|
@@ -549,10 +553,10 @@ T The Sprites' Plight|QID|29745|N|To UI Alert.|
 A Break the Cycle|QID|29747|N|From UI Alert.|
 A Simulacrumble|QID|29748|M|48.61,20.65|N|From Shattered Destroyer.|
 C Break the Cycle|QID|29747|S|M|48.34,16.61|N|Kill the Spiritbinders and kick over the statues as you go.|
-C Simulacrumble|QID|29748|M|47.82,16.45|N|Right-click on the statues to destroy them.|
+C Simulacrumble|QID|29748|NC|M|47.82,16.45|N|Right-click on the statues to destroy them.|
+T Simulacrumble|QID|29748|N|To UI Alert.|
 C Break the Cycle|QID|29747|US|M|48.34,16.61|
 T Break the Cycle|QID|29747|M|48.34,16.61|N|To UI Alert.|
-T Simulacrumble|QID|29748|N|To UI Alert.|
 A An Urgent Plea|QID|29749|N|From UI Alert.|
 
 C An Urgent Plea|QID|29749|M|44.24,14.91|N|Get the staff|QO|1|
@@ -562,15 +566,15 @@ A Ritual Artifacts|QID|29751|M|44.22,15.01|N|From Pei-Zhi. While you are in this
 A Vessels of the Spirit|QID|29750|M|44.22,15.01|N|From Pei-Zhi.|
 A The Wayward Dead|QID|29752|M|44.22,15.01|N|From Pei-Zhi.|
 
-C The Wayward Dead|QID|29752|S|U|74771|M|44.22,15.01|N|Use Pei-Zhi's staff to release the Wandering Spirits.|
+C The Wayward Dead|QID|29752|S|NC|U|74771|M|44.22,15.01|N|Use Pei-Zhi's staff to release the Wandering Spirits.|
 C Vessels of the Spirit|QID|29750|S|M|40.69,14.85|N|Kill Shan'ze Spiritclaws for Spirit Bottles.|
 C Ritual Artifacts|QID|29751|NC|QO|2|M|41.62,14.27|N|Get the Chipped Ritual Bowl|
 C Ritual Artifacts|QID|29751|NC|QO|1|M|42.63,15.74|N|Get the Jade Cong|
 ; [aldavor] added rank 3 since it's achiev not quest.
-R Spirit Binders |QID|967540003|M|42.26, 17.47|ACH|6754;3|N|Exploration>The Dark Heart of the Mogu.|RANK|3|
+R Spirit Binders |M|42.26,17.47|ACH|6754;3|N|Exploration>The Dark Heart of the Mogu. |RANK|3|
 C Ritual Artifacts|QID|29751|NC|QO|3|M|42.3,17.09|N|Get the Pungent Ritual Candle|
 C Vessels of the Spirit|QID|29750|US|M|40.69,14.85|N|Kill Shan'ze Spiritclaws for Spirit Bottles.|
-C The Wayward Dead|QID|29752|US|U|74771|M|40.38,14.76|N|Use Pei-Zhi's staff to release the Wandering Spirits.|
+C The Wayward Dead|QID|29752|US|NC|U|74771|M|40.38,14.76|N|Use Pei-Zhi's staff to release the Wandering Spirits.|
 
 T Ritual Artifacts|QID|29751|M|44.21,15.01|N|To Pei-Zhi.|
 T Vessels of the Spirit|QID|29750|M|44.21,15.01|N|To Pei-Zhi.|
@@ -579,7 +583,7 @@ A Back to Nature|QID|29753|M|44.21,15.01|N|From Pei-Zhi.|
 A A Humble Offering|QID|29756|M|44.21,15.01|N|From Pei-Zhi.|
 
 C Back to Nature|QID|29753|S|U|74808|M|39.88,10.43|N|Throw spirit bottles to the ground to release the beast spirits (be aware, they may spawn hostiles).|
-C A Humble Offering|QID|29756|M|39.71,10.98|N|Gather 10 Tidemist Caps.|
+C A Humble Offering|QID|29756|NC|M|39.71,10.98|N|Gather 10 Tidemist Caps.|
 C Back to Nature|QID|29753|US|U|74808|M|39.88,10.43|N|Throw spirit bottles to the ground to release the beast spirits (be aware, they may spawn hostiles).|
 
 T Back to Nature|QID|29753|M|44.26,15.04|N|To Pei-Zhi.|
@@ -599,7 +603,7 @@ A A Courteous Guest|QID|29619|M|45.01,24.93|N|From Lin Tenderpaw.|
 C A Courteous Guest|QID|29619|M|45.81,27.50|N|From the ground or kill sprites.|
 T A Courteous Guest|QID|29619|M|45.01,24.99|N|To Lin Tenderpaw, back up the stairs.|
 A The Great Banquet|QID|29620|M|45.01,24.99|N|From Lin Tenderpaw.|
-f Banquet Grounds|QID|29620|M|43.52,24.55|N|At Studious Chu.|
+f Tian Monastery|M|43.52,24.55|N|At Studious Chu.|
 C The Great Banquet|QID|29620|NC|M|42.74,23.17|
 T The Great Banquet|QID|29620|M|42.74,23.17|N|To High Elder Cloudfall.|
 A Your Training Starts Now|QID|29622|M|43.13,23.63|N|From Xiao.|
@@ -627,9 +631,9 @@ A And a Heavy Fist|QID|29630|M|41.59,23.66|N|From Groundskeeper Wu.|
 A Burning Bright|QID|29631|M|38.02,23.80|N|From Guard Shan Long, outside the Waxwood gate.|
 
 C Burning Bright|QID|29631|S|M|36,21|N|Kill six Waxwood Hunters.|
-C A Steady Hand|QID|29629|NC|S|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
-R Owen's Wishing Well|QID|29628|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|RANK|3|
-C A Steady Hand|QID|29629|US|NC|L|73193 80|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
+;C A Steady Hand|QID|29629|NC|S|N|Any movement (including panning the camera angle) will end the gathering.|
+;R Owen's Wishing Well|QID|31397|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|
+C A Steady Hand|QID|29629|NC|L|73193 80|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
 C Burning Bright|QID|29631|US|M|36,21|N|Kill six Waxwood Hunters.|
 C And a Heavy Fist|QID|29630|S|M|37,17|N|Kill Greenwood Tricksters as you approach the next objective|
 C A Strong Back|QID|29628|NC|QO|1|M|37.8,17.6|N|Obtain the Boiling Cauldron.|
@@ -651,7 +655,7 @@ T Attention|QID|29624|M|41.60,28.33|N|To Instructor Xann.|
 C Husshun, the Wizened|QID|29634|M|44.54,24.08|N|Challenge him to a match beyond the bell.|QO|Husshun defeated: 1/1|
 T Husshun, the Wizened|QID|29634|M|43.27,24.75|N|To Master Stone Fist.|
 A Xiao, the Eater|QID|29635|M|43.27,24.75|N|From Master Stone Fist.|
-C Xiao, the Eater|QID|29635|M|43.12, 23.64|QO|1|
+C Xiao, the Eater|QID|29635|M|43.12, 23.64|
 T Xiao, the Eater|QID|29635|M|43.27,24.75|N|To Master Stone Fist.|
 A A Test of Endurance|QID|29636|M|43.27,24.75|N|From Master Stone Fist.|
 T A Test of Endurance|QID|29636|M|38.96,24.04|N|To Instructor Myang.|
@@ -668,9 +672,9 @@ R Restore Balance|QID|29576|M|37.5,34.0;33.94,32.27;32.74,34.0;34.09,33.52|CC|AC
 R What Is Worth Fighting For|QID|29576|M|38.1,35.7;39.6,33.6;35.74,30.46|CC|ACH|6858;2|N|Exploration > The First Monks. \nHead back down the path back to the road and follow the waypoints.|RANK|3|
 
 ; [aldavor] added rank 3 since it's achiev not quest.
-R Xin Wo Yin the Broken Hearted|QID|29576|M|37.30, 30.12|ACH|7230;2|N|Exploration>Legend of the Brewfathers.|RANK|3|
+R Xin Wo Yin the Broken Hearted|M|37.30, 30.12|ACH|7230;2|N|Exploration>Legend of the Brewfathers.|RANK|3|
 
-F Paw'don Village|QID|29576|M|43.52,24.55|CS|N|At Studious Chu.(or you can just ride straight to Nectarbreeze...or...if your hearthstone is set there, hearth to Paw'don)|
+F Paw'Don Village|QID|29576|M|43.52,24.55|N|At Studious Chu.(or you can just ride straight to Nectarbreeze...or...if your hearthstone is set there, hearth to Paw'don)|
 R Nectarbreeze Orchard|QID|29576|M|43.54,75.91|CC|
 T An Air of Worry |QID|29576|N|To Shao the Defiant|M|43.5,75.9|
 A Defiance|QID|29578|M|43.54,75.91|N|From Shao the Defiant.|
@@ -681,7 +685,7 @@ A Orchard-Supplied Hardware|QID|29580|M|43.28,75.77|N|From Gentle Mother Hanae.|
 C Defiance|QID|29578|S|M|44.19,74.52|
 C Orchard-Supplied Hardware|QID|29580|S|NC|M|43.58,71.16|
 C Spitfire|QID|29585|S|NC|U|72578|M|44.48,72.49|
-C Rally the Survivors|QID|29579|NC|M|44.51,72.75|
+C Rally the Survivors|QID|29579|CHAT|M|44.51,72.75|
 C Spitfire|QID|29585|US|NC|U|72578|M|44.48,72.49|
 C Orchard-Supplied Hardware|QID|29580|US|NC|M|43.58,71.16|
 C Defiance|QID|29578|US|M|44.19,74.52|
@@ -696,7 +700,7 @@ T The Splintered Path|QID|29586|M|40.96,73.97|N|To Shao the Defiant.|
 A Unbound|QID|29587|M|40.96,73.97|N|From Shao the Defiant.|
 A Maul Gormal|QID|29670|M|40.96,73.97|N|From Shao the Defiant.|
 C Unbound|QID|29587|S|NC|M|39.76,75.57|N|Click on the nets to free the farmers.|
-K Maul Gormal|QID|29670|T|Subjugator Gormal|QO|1|M|37.84,75.76|N|Kill Subjugator Gormal|
+K Subjugator Gormal|QID|29670|T|Subjugator Gormal|QO|1|M|37.84,75.76|
 C Unbound|QID|29587|US|NC|M|39.76,75.57|N|Click on the nets to free the farmers.|
 T Unbound|QID|29587|M|41.02,73.97|N|To Shao the Defiant.|
 T Maul Gormal|QID|29670|M|41.02,73.97|N|To Shao the Defiant.|
@@ -717,7 +721,7 @@ F Temple of the Jade Serpent|QID|29932|M|48.2,60.0;55.8,57.1|CC|N|Talk to Kitema
 T The Temple of the Jade Serpent|QID|29932|M|58.13,58.67|N|To Elder Sage Rain-Zhu.|
 A The Scryer's Dilemma|QID|29997|M|58.13,58.67|N|From Elder Sage Rain-Zhu.|
 A The Librarian's Quandary|QID|29998|M|58.13,58.67|N|From Elder Sage Rain-Zhu.|
-A They Call Him... Stormstout|QID|32019|M|58.13,58.67|N|From Elder Sage Rain-Zhu.|
+A They Call Him... Stormstout|QID|32019;32018|M|58.13,58.67|N|From Elder Sage Rain-Zhu.|
 A The Rider's Bind|QID|29999|M|58.03,59.02|N|From Fei.|
 A Lighting Up the Sky|QID|30005|M|58.0,59.0|N|From Fei.|
 C Lighting Up the Sky|QID|30005|S|NC|N|Set off the fireworks(sparkly barrels) scattered throughout.|
@@ -731,13 +735,13 @@ C Find the Playful Gold Serpent |QID|29999|NC|QO|4|M|56.0,60.4|
 C Pages of History|QID|30002|US|M|55.70,59.95|N|Click on the books and the bookworms will spawn. It's faster (and more fun) to stomp on them then to kill them.|
 C Moth-Ridden|QID|30001|US|M|56.39,60.43|
 T Moth-Ridden|QID|30001|M|56.27,60.44|N|To Lorewalker Stonestep.|
-A Everything In Its Place|QID|30004|M|56.27,60.44|N|From Lorewalker Stonestep.|
 T Pages of History|QID|30002|M|56.27,60.44|N|To Lorewalker Stonestep.|
+A Everything In Its Place|QID|30004|M|56.27,60.44|N|From Lorewalker Stonestep.|
 C Find the Playful Emerald Serpent |QID|29999|NC|QO|3|M|56.5,58.4|N|Head outside the library back to the central plaza and out the main gate.|
 C The Scryer's Dilemma|QID|29997|M|56.9,55.8|N|When you get in the Fountain of the Everseeing, kill Water Fiends until you get the staff.|
 T The Scryer's Dilemma|QID|29997|M|57.6,56.0|N|To Wise Mari.|
 A A New Vision|QID|30011|M|57.6,56.0|N|From Wise Mari.|
-C Find the Playful Azure Serpent|QID|29999|QO|1|M|59.2,56.7|
+C Find the Playful Azure Serpent|QID|29999|NC|QO|1|M|59.2,56.7|
 
 C Lighting Up the Sky|QID|30005|US|M|56.42,58.12|
 T A New Vision|QID|30011|M|58.13,58.67|N|To Elder Sage Rain-Zhu.|
@@ -747,27 +751,27 @@ T Lighting Up the Sky|QID|30005|M|58.03,59.02|N|To Fei.|
 A The Jade Serpent|QID|30000|M|58.03,59.02|N|From Fei.|
 C The Jade Serpent|QID|30000|M|53.49,58.02|
 ; [aldavor] added rank 3 since it's achiev not quest.
-R The Emperor's Burden - Part 3|QID|968550003|M|55.88, 56.85|ACH|6855;3|N|Exploration>The Seven Burdens of Shaohao.|RANK|3|
+R The Emperor's Burden - Part 3|M|55.88, 56.85|ACH|6855;3|N|Exploration>The Seven Burdens of Shaohao.|RANK|3|
 T The Jade Serpent|QID|30000|M|55.85,57.08|N|To Elder Sage Wind-Yi.|
 
 A Get Back Here!|QID|30498|M|55.84,57.07|N|From UI Alert.|
-f Jade Temple Grounds|QID|30498|M|54.58,61.75|N|At Ginsa Arroweye.|
-F Pearlfin Village|QID|30498|M|54.58,61.35|N|The flightmaster has an option for a direct flight.|
+f Jade Temple Grounds|M|54.6,61.8|N|At Ginsa Arroweye.|
+F Pearlfin Village|QID|30498|M|54.6,61.8|N|The flightmaster has an option for a direct flight.|
 A An Unexpected Advantage|QID|30565|M|58.55,82.30|N|From Sully "The Pickle" McLeary.|
 T Get Back Here!|QID|30498|M|58.07,80.65|N|To Admiral Taylor.|
 A Helping the Cause|QID|30568|M|58.08,80.67|N|From Admiral Taylor.|
 C Helping the Cause|QID|30568|QO|2|M|54.86,79.81|N|Talk to Amber to kick off the fight, and defeat the captive Hozen.|
-C Helping the Cause|QID|30568|QO|1|M|59.31,83.49|N|Challenge a Pearlfin Recruit|
+C Helping the Cause|QID|30568|QO|1|M|59.31, 83.49|N|Talk to a recruit to start the fight.|
 C Helping the Cause|QID|30568|NC|QO|3|M|60.12,87.19|N|Assist the Wounded Pearlfin|
 C An Unexpected Advantage|QID|30565|M|62.50,76.15|
 T An Unexpected Advantage|QID|30565|M|58.55,82.30|N|To Sully "The Pickle" McLeary.|
 T Helping the Cause|QID|30568|M|58.07,80.65|N|To Admiral Taylor.|
 A Last Piece of the Puzzle|QID|31362|M|58.85,81.11|N|From Lorewalker Cho.|
 
-C Last Piece of the Puzzle|QID|31362|NC|U|80071|M|58.85,81.08;44.50,66.96|CS|N|Talk to Mishi for a ride and then use the Cho Family Heirloom at the shrine.|
+C Last Piece of the Puzzle|QID|31362|NC|U|80071|M|58.85,81.08;44.50,66.96|CN|N|Talk to Mishi for a ride and then use the Cho Family Heirloom at the shrine.|
+f Serpent's Overlook|M|43.13,68.48|N|At Sky Dancer Ji.|
 T Last Piece of the Puzzle|QID|31362|M|44.8,67.1|N|To Lorewalker Cho.|
 A The Seal is Broken|QID|31303|M|44.78,67.06|N|From Lorewalker Cho.|
-f Serpent's Overlook|QID|31303|M|43.13,68.48|N|At Sky Dancer Ji.|
 C The Seal is Broken|QID|31303|M|44.72,66.98|N|Talk to Mishi to start the "bombing run" to seal the fissures. Look for points where the steam is rising upwards.|
 T The Seal is Broken|QID|31303|M|49.27,61.39|N|To Lorewalker Cho.|
 A Residual Fallout|QID|30500|M|49.27,61.39|N|From Lorewalker Cho.|
@@ -785,7 +789,7 @@ T Residual Fallout|QID|30500|M|49.32,61.50|N|To Lorewalker Cho.|
 T Jaded Heart|QID|30502|M|49.32,61.50|N|To Lorewalker Cho.|
 T Emergency Response|QID|31319|M|49.32,61.50|N|To Lorewalker Cho.|
 A Moving On|QID|30648|M|49.31,61.35|N|From Fei.|
-C Moving On|QID|30648|M|49.31,61.35|N|Talk to Fei.|
+C Moving On|QID|30648|CHAT|M|49.31,61.35|N|Talk to Fei.|
 T Moving On|QID|30648|N|To UI Alert (after the ride into the Valley).|
 
 N Congratulations,|N|You finished The Jade Forest. Next zone is Valley of the Four Winds, the guide should load when you check off this step.|

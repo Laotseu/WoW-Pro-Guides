@@ -52,12 +52,14 @@ frame:SetScript("OnShow", function()
 
 	local tooltip = CreateFrame("Frame", "tooltip", frame)
 	tooltip:SetBackdrop( {
-		bgFile = [[Interface\Tooltips\UI-Tooltip-Background]],
+		-- bgFile = [[Interface\Tooltips\UI-Tooltip-Background]],
+		bgFile = [[Interface\DialogFrame\UI-DialogBox-Background]],
 		edgeFile = [[Interface\Tooltips\UI-Tooltip-Border]],
 		tile = true, tileSize = 16, edgeSize = 16,
 		insets = { left = 4,  right = 3,  top = 4,  bottom = 3 }
 	})
 	tooltip:SetBackdropColor(1, 1, 1, 1)
+	tooltip:SetAlpha(1)
 	tooltip:SetHeight(125)
 	tooltip:SetWidth(512)
 	tooltip:SetFrameStrata("TOOLTIP")
@@ -90,13 +92,16 @@ frame:SetScript("OnShow", function()
 		row.check = WoWPro:CreateCheck(row)
 		row.action = WoWPro:CreateAction(row, row.check)
 		row.action.frame:SetScript("OnEnter", function()
-		    if row.index and WoWPro.why and WoWPro.why[row.index] then
-		        tooltip:SetPoint("TOPLEFT", row, "BOTTOMLEFT", -10, 10)
-		        tooltiptext:SetHeight(125)
-		        tooltiptext:SetText(string.format("Step %d/QID %s: %s",row.index,tostring(WoWPro.QID[row.index]),WoWPro.why[row.index]))
-		        tooltiptext:SetHeight(tooltiptext:GetStringHeight())
-		        tooltip:SetHeight(tooltiptext:GetStringHeight()+20)
-		        tooltip:Show()
+			-- if row.index and WoWPro.why and WoWPro.why[row.index] then
+			if row.index then
+				local why = WoWPro.why and WoWPro.why[row.index] and (" - " .. WoWPro.why[row.index]) or ""
+				tooltip:SetPoint("TOPLEFT", row, "BOTTOMLEFT", -10, 10)
+				tooltiptext:SetHeight(125)
+				--tooltiptext:SetText(("%s%s"):format(row.index, why))
+				tooltiptext:SetText(("%s - QID:%s %s"):format(row.index, WoWPro.QID[row.index] or "---", why))
+				tooltiptext:SetHeight(tooltiptext:GetStringHeight())
+				tooltip:SetHeight(tooltiptext:GetStringHeight()+20)
+				tooltip:Show()
 		    end
 		end)
 		row.action.frame:SetScript("OnLeave", function()
@@ -131,33 +136,36 @@ frame:SetScript("OnShow", function()
 		for i,row in ipairs(rows) do
 			row.index = index
 			
-			if completion[index] or WoWProCharDB.Guide[GID].skipped[index] or WoWProCharDB.skippedQIDs[WoWPro.QID[index]] then
-				row.check:SetChecked(true)
-				if WoWProCharDB.Guide[GID].skipped[index] or WoWProCharDB.skippedQIDs[WoWPro.QID[index]] then
-					row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
+			local step = steplist[index]
+			if step then 
+				row:Show()
+				row.check:Show() 
+
+				if completion[index] or WoWProCharDB.Guide[GID].skipped[index] or WoWProCharDB.skippedQIDs[WoWPro.QID[index]] then
+					row.check:SetChecked(true)
+					if WoWProCharDB.Guide[GID].skipped[index] or WoWProCharDB.skippedQIDs[WoWPro.QID[index]] then
+						row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
+					else
+						row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
+					end
 				else
+					row.check:SetChecked(false)
 					row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
 				end
-			else
-				row.check:SetChecked(false)
-				row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
-			end
-			
-			local step = steplist[index]
-			if step then row.check:Show() else row.check:Hide() end
-			if optional[index] then step = step.." (optional)" end
-			if WoWPro.prof[index] then
-				local prof, proflvl = string.split(";", WoWPro.prof[index]) 
-				step = step.." ("..prof..")"
-			end
-			if WoWPro.rank[index] then
-				step = step.." (rank "..WoWPro.rank[index]..")"
-			end
-			
-			row.step:SetTextColor(1.0,1.0,1.0,1.0)
-			if WoWPro.level and WoWPro.level[index] then
-			    step = step.." (level "..tostring(WoWPro.level[index])..")"
-			    local level = tonumber(WoWPro.level[index])         
+				
+				if optional[index] then step = step.." (optional)" end
+				if WoWPro.prof[index] then
+					local prof, proflvl = string.split(";", WoWPro.prof[index]) 
+					step = step.." ("..prof..")"
+				end
+				if WoWPro.rank[index] then
+					step = step.." (rank "..WoWPro.rank[index]..")"
+				end
+				
+				row.step:SetTextColor(1.0,1.0,1.0,1.0)
+				if WoWPro.level and WoWPro.level[index] then
+				    step = step.." (level "..tostring(WoWPro.level[index])..")"
+				    local level = tonumber(WoWPro.level[index])         
                 if WoWPro.action[index] == "L" and level > UnitLevel("player") then
                     row.step:SetTextColor(0.75,0,0,1.0)                    
                 end
@@ -165,57 +173,71 @@ frame:SetScript("OnShow", function()
                     row.step:SetTextColor(0.75,0.3,0.3,1.0)
                 end
 
-			end
-			
-			-- Setting sticky texture --
-			if WoWPro.sticky[index] then 
-				step = step.." (sticky)"
-				row:SetBackdrop( {
-					bgFile = WoWProDB.profile.stickytexture,
-					tile = true, tileSize = 16
-				})
-				row:SetBackdropColor(WoWProDB.profile.stickycolor[1], WoWProDB.profile.stickycolor[2], WoWProDB.profile.stickycolor[3], WoWProDB.profile.stickycolor[4])
-			else
-				row:SetBackdropColor(WoWProDB.profile.stickycolor[1], WoWProDB.profile.stickycolor[2], WoWProDB.profile.stickycolor[3], 0)
-			end
-			
-			if WoWPro.unsticky[index] then 
-				step = step.." (un-sticky)"
-			end
-		
-			row.step:SetText(step)
-			
-			local action = WoWPro.action[index]
-			row.action:SetTexture(WoWPro.actiontypes[action])
-
-            if WoWPro.noncombat[index] and WoWPro.action[index] == "C" then
-                row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
-            elseif WoWPro.chat[index] then
-                row.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon") 
-            end
-			
-			local note = WoWPro.note[index]
-			row.note:SetText(note)
-			
-			-- Setting the note frame size correctly --
-			local w = row:GetWidth()
-			row.note:SetWidth(w-30)
-			local h = row.note:GetHeight()
-			local newh = h + ROWHEIGHT
-			row:SetHeight(newh)
-			totalh = totalh + newh
-			if totalh > maxh then 
-				row:Hide() 
-				shownrows = shownrows - 1
-			else 
-				row:Show() 
-			end
-			
-			-- On Click - Complete Step Clicked --
-			row.check:SetScript("OnClick", function(self, button, down)
-				WoWPro:CheckFunction(row, button, down)
-			end)
+				end
 				
+				-- Setting sticky texture --
+				if WoWPro.sticky[index] then 
+					step = step.." (sticky)"
+					row:SetBackdrop( {
+						bgFile = WoWProDB.profile.stickytexture,
+						tile = true, tileSize = 16
+					})
+					row:SetBackdropColor(WoWProDB.profile.stickycolor[1], WoWProDB.profile.stickycolor[2], WoWProDB.profile.stickycolor[3], WoWProDB.profile.stickycolor[4])
+				else
+					row:SetBackdropColor(WoWProDB.profile.stickycolor[1], WoWProDB.profile.stickycolor[2], WoWProDB.profile.stickycolor[3], 0)
+				end
+				
+				if WoWPro.unsticky[index] then 
+					step = step.." (un-sticky)"
+				end
+			
+				row.step:SetText(step)
+				
+				local action = WoWPro.action[index]
+				--row.action:SetTexture(WoWPro.actiontypes[action])
+
+				if WoWPro.action[index] == "C" and WoWPro.noncombat[index] then
+					--row.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
+					action = "noncombat"
+				elseif WoWPro.chat[index] then
+				   -- row.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon") 
+				   action = "chat"
+				elseif WoWPro.action[index] == "A" and WoWPro:IsQuestDaily(WoWPro.QID[index]) then
+					--row.action:SetTexture("Interface\\GossipFrame\\DailyQuestIcon")
+					action = "acceptdaily"
+				elseif WoWPro.action[index] == "T" and WoWPro:IsQuestDaily(WoWPro.QID[index]) then
+					--row.action:SetTexture("Interface\\GossipFrame\\DailyActiveQuestIcon")
+					action = "turnindaily"
+				end
+				WoWPro:SetActiontypeTex(row.action, action, index, offset)
+				
+				local note = WoWPro.note[index]
+				row.note:SetText(note)
+				
+				-- Setting the note frame size correctly --
+				local w = row:GetWidth()
+				row.note:SetWidth(w-30)
+				local h = row.note:GetHeight()
+				local newh = h + ROWHEIGHT
+				row:SetHeight(newh)
+				totalh = totalh + newh
+				if totalh > maxh and index < #steplist then 
+					row:Hide() 
+					shownrows = shownrows - 1
+				else 
+					row:Show() 
+				end
+				
+				-- On Click - Complete Step Clicked --
+				row.check:SetScript("OnClick", function(self, button, down)
+					WoWPro:CheckFunction(row, button, down)
+				end)
+				
+			else 
+				row:Hide()
+				row.check:Hide() 
+			end
+
 			index = index + 1
 		end
 	
