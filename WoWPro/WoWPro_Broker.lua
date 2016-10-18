@@ -1795,30 +1795,30 @@ end
 
 -- Cached version of function
 function WoWPro:IsQuestFlaggedCompleted(qid,force)
-    if qid == "*" then return nil; end
-    local QID = tonumber(qid)
-    if not QID then
-        -- is it a QID list?
-        local quids = select("#", string.split(";", qid))
-        if (not quids) or quids == 1 then 
-            WoWPro:Warning("Guide %s has a bad QID! [%s]",WoWProDB.char.currentguide,tostring(qid))
-            return nil;
-        else
-            -- Yup, return true if any are complete
-    		for j=1,quids do
-    			local jquid = select(quids-j+1, string.split(";", qid))
-                jquid = tonumber(jquid)
-                if not jquid then
-                    WoWPro:Warning("Guide %s has a bad sub QID! [%s]",WoWProDB.char.currentguide,tostring(qid))
-                    return nil
-                end
-                if WoWPro:IsQuestFlaggedCompleted(jquid,force) then
-                    return true
-                end
-     		end
-            return false
-        end
-    end
+	if qid == "*" then return nil; end
+	local QID = tonumber(qid)
+	if not QID then
+		-- is it a QID list?
+		local quids = select("#", string.split(";", qid))
+		if (not quids) or quids == 1 then 
+			WoWPro:Warning("Guide %s has a bad QID! [%s]",WoWProDB.char.currentguide,tostring(qid))
+			return nil;
+		else
+		   -- Yup, return true if any are complete
+		   for j=1,quids do
+		   	local jquid = select(quids-j+1, string.split(";", qid))
+		   	jquid = tonumber(jquid)
+		   	if not jquid then
+		   		WoWPro:Warning("Guide %s has a bad sub QID! [%s]",WoWProDB.char.currentguide,tostring(qid))
+		   		return nil
+		   	end
+		   	if WoWPro:IsQuestFlaggedCompleted(jquid,force) then
+		   		return true
+		   	end
+		   end
+		   return false
+		end
+   end
 --[==[	 
     if not WoWProCharDB.completedQIDs then
         WoWProCharDB.completedQIDs = {}
