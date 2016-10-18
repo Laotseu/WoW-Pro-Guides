@@ -326,7 +326,7 @@ A Only the Finest|QID|39793|M|51.46,57.06|N|From Rax Sixtrigger.|RANK|2|
 A Rigging the Wager|QID|39787|M|51.26,57.21|N|From Snaggle Sixtrigger.|RANK|2|
 R Nastrondir|QID|39793|ACTIVE|39793|M|43.82,53.69;40.81,50.21;42.41,39.01|CS|N|Run thru Stony Highlands, Past Valley of the Sword and into Nastrondir.|RANK|2| ; Emma
 A The Brood of Nithogg-Bonus Objective|QID|42431|LVL|-109|M|42.65,38.71|N|Auto Accepted upon entering the area.|RANK|2|
-f Stormtorn Foothills |M|51.9,34.7|N|Talk to Hillevi the Scalekeeper|; Stormtorn Foothills |Z|1017;0|
+f Stormtorn Foothills |M|51.9,34.7|S|N|Talk to Hillevi the Scalekeeper|; Stormtorn Foothills |Z|1017;0|
 C The Brood of Nithogg-Bonus Objective|QID|42431|M|42.65,38.71|S|N|Kill the drakes and pick up eggs to advance the objective.|RANK|2|
 C Only the Finest|QID|39793|M|44.14,37.51|S|N|Kill goats to collect the patches of goat hair.|RANK|2|
 $ Small Treasure Chest|QID|43238|M|43.14,39.01;43.17,40.49|CS|N|Hook out to find chest, loot for treasure and resources.|RANK|2|
@@ -336,8 +336,7 @@ $ Glimmering Treasure Chest|QID|43189|M|42.12,35.72;42.46,34.08|CS|ITEM|141896|N
 K Kill Egyl the Enduring|QID|40068|M|41.77,34.11|QO|1|ITEM|132898|N|There is a cave under the statue. Go inside to find Egyl. Kill and loot for a bit of treasure and resources.|RANK|2|
 C Only the Finest|QID|39793|M|44.14,37.51|US|N|Finish collecting the patches of goat hair.|RANK|2|
 C Rigging the Wager|QID|39787|M|48.87,34.07;48.24,32.81|CS|QO|1|N|There is a grapple point to his nest above. Fight with your back to the wall, so you dont get thrown off. Kill and loot his beak.|RANK|2|
-C The Brood of Nithogg-Bonus Objective|QID|42431|M|47.76,32.62|US|N|Finish or click off manually.|RANK|2|
-t The Brood of Nithogg-Bonus Objective|QID|42431|M|47.76,32.62|N|Auto turned in upon completion.|RANK|2|
+f Stormtorn Foothills |M|51.9,34.7|US|N|Talk to Hillevi the Scalekeeper|; Stormtorn Foothills |Z|1017;0|
 A Plight of the Blackfeather|QID|42444|M|50.32,34.00|N|From Frightened Ravenbear.|RANK|2|
 T Plight of the Blackfeather|QID|42444|M|50.79,30.91;49.79,32.63|CS|N|To Cukkaw.|RANK|2|
 A Singed Feathers|QID|42446|M|49.79,32.63|N|From Cukkaw.|RANK|2|
@@ -352,6 +351,8 @@ T Nithogg's Tribute|QID|42445|M|49.79,32.64|N|To Cukkaw.|RANK|2|
 A Dances With Ravenbears|QID|42447|M|49.79,32.64|N|From Cukkaw.|RANK|2|
 C Dances With Ravenbears|QID|42447|M|53.70,30.20|CHAT|N|Tell him you are ready (multiple times if needed). Mimic thier motions 1-raise arms, 2-spin, 3-flap wings, |RANK|2|
 T Dances With Ravenbears|QID|42447|M|54.03,30.23|N|To Cukkaw.|RANK|2|
+C The Brood of Nithogg-Bonus Objective|QID|42431|M|47.76,32.62|US|N|Finish or click off manually.|RANK|2|
+t The Brood of Nithogg-Bonus Objective|QID|42431|M|47.76,32.62|N|Auto turned in upon completion.|RANK|2|
 f Stormtorn Foothills|QID|42447|M|51.98,34.80|N|At Hillevi the Scalekeeper.|RANK|2|
 F Lorna's Watch|QID|39787|M|51.98,34.81|N|Fly back to Lorna's Watch at Hillevi the Scalekeepter.|RANK|2|
 K Hook & Sinker|QID|38625|M|42.09,57.66|ITEM|129109|N|A nice pair of Rares|RANK|2|
@@ -367,7 +368,7 @@ T A Stone Cold Gamble|QID|39786|M|51.31,56.99|N|To Snaggle Sixtrigger.|RANK|2|
 
 ; Back to business
 R Valdisdall|QID|39803|M|51.12,54.76;57.87,50.47|CS|N|Off to Valdisdall|
-h Set Hearth to Valdisdall|QID|39803|M|60.54,50.26|N|At Riala the Hearthwatcher. If you are doing this on Rank 2 or 3.  It will save you a lot of time.|RANK|2|ACTIVE|39803|
+h Valdisdall|QID|39803|M|60.54,50.26|N|At Riala the Hearthwatcher. If you are doing this on Rank 2 or 3.  It will save you a lot of time.|RANK|2|ACTIVE|39803|
 f Valdisdall|QID|39803|M|60.73,50.86|N|At Garhal the Scalekeeper.|
 T The Trials Continue|QID|39803|M|60.14,50.74|N|To Havi.|
 A Speaking of Bones|QID|39804|M|60.14,50.73|N|From Havi.|
