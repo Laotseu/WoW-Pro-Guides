@@ -24,6 +24,8 @@ for guidID,guide in pairs(WoWPro.Guides) do
 			Range = "("..tostring(qstart).."-"..tostring(guide.endlevel)..")",
 			Progress = progress, 
 			startlevel = qstart,
+			endlevel = guide.endlevel,
+			level = guidelevel,
 		})
 	end
 end
@@ -55,17 +57,25 @@ local function zoneSort()
 end
 local function rangeSort()
 	if sorttype == "RangeAsc" then
-		table.sort(guides, function(a,b) return a.startlevel > b.startlevel end)
+		table.sort(guides, function(a,b) 
+			local alevel = a.level or ((a.startlevel + a.endlevel*3)/4)
+			local blevel = b.level or ((b.startlevel + b.endlevel*3)/4)
+			return alevel > blevel 
+		end)
 		WoWPro.Leveling:UpdateGuideList()
 		sorttype = "RangeDesc"
 	else
-		table.sort(guides, function(a,b) return a.startlevel < b.startlevel end)
+		table.sort(guides, function(a,b)
+			local alevel = a.level or ((a.startlevel + (a.endlevel*3 or 0))/4)
+			local blevel = b.level or ((b.startlevel + (b.endlevel*3 or 0))/4)
+			return alevel < blevel 
+		end)
 		WoWPro.Leveling:UpdateGuideList()
 		sorttype = "RangeAsc"
 	end
 end
 rangeSort()             -- Sort by range
-sorttype = "Default"    -- and reset to Default
+sorttype = "RangeAsc"    -- and reset to Default
 		
 -- Describe the table to the Core Module
 WoWPro.Leveling.GuideList.Format={{"Zone",0.35,zoneSort},{"Range",0.15,rangeSort},{"Author",0.30,authorSort},{"Progress",0.20,nil}}
@@ -82,7 +92,7 @@ function WoWPro.Leveling.GuideTooltipInfo(row, tooltip, guide)
         GameTooltip:AddTexture("Interface\\PaperDollInfoFrame\\SpellSchoolIcon5")
     end
     GameTooltip:AddDoubleLine("Start Level:",tostring(guide.qstart),1,1,1,unpack(WoWPro.LevelColor(guide.qstart)))
-    GameTooltip:AddDoubleLine("Mean Level:",string.format("%.2f",guide.level or 0),1,1,1,unpack(WoWPro.LevelColor(guide)))
+    GameTooltip:AddDoubleLine("Mean Level:",string.format("%.2f",guide.level or 0),1,1,1,unpack(WoWPro.LevelColor(guide.level or 0)))
     GameTooltip:AddDoubleLine("End Level:",tostring(guide.endlevel),1,1,1,unpack(WoWPro.LevelColor(guide.endlevel)))
 end
 
