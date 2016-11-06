@@ -114,7 +114,7 @@ T The Traitor Orc|QID|26025|M|13.27,35.92|N|To Dark Ranger Alina.|
 A The Real Threat|QID|26029|PRE|26027|M|13.39,34.29|N|From Deathstalker Maudria.|
 
 C Sigil of Thoradin|QID|26031|M|16.59,60.88|N|Head back to Stromgarde. Turn  right to the western portion of the keep, kill and loot humans.|
-C The Real Threat|QID|26029|N|Kill and loot Or'Kalar, in the ogre section of Stromgarde.|M|17.75,62.70;17.40,67.90;14.69,67.44|CC|
+K Or'Kalar|QID|26029|T|Or'Kalar|N|Kill and loot Or'Kalar, in the ogre section of Stromgarde.|M|17.75,62.70;17.40,67.90;14.69,67.44|CC|
 T Sigil of Thoradin|QID|26031|M|12.98,36.06|N|To Galen Trollbane, back at Galen's Fall.|
 A Sigil of Arathor|QID|26032|PRE|26031|M|12.98,36.06|N|From Galen Trollbane.|
 
@@ -122,9 +122,11 @@ A To Steal From Thieves|QID|26428|M|13.71,34.08|N|From Genavie Callow.|
 
 T The Real Threat|QID|26029|M|13.34,33.99|N|To Deathstalker Maudria.|
 C Sigil of Arathor|QID|26032|M|37.80,56.16|N|From the human lieutenant on a horse outside Refugee Point. Be careful, the other humans in this area will flag you PvP!|
-K Marcel Dabyrie|QID|26428|QO|2|M|48.53,39.23|N|Inside the stable.|
-K Fardel Dabyrie|QID|26428|QO|3|M|51.28,41.58|N|Outside the barn.|
-K Kenata Dabyrie|QID|26428|QO|1|M|50.87,36.99|N|Inside the house on the hill.|
+K Kenata Dabyrie|QID|26428|S|T|Kenata Dabyrie|QO|1|M|50.87,36.99|N|Inside the house on the hill.|
+K Fardel Dabyrie|QID|26428|S|T|Fardel Dabyrie|QO|3|M|51.28,41.58|N|Outside the barn.|
+K Marcel Dabyrie|QID|26428|T|Marcel Dabyrie|QO|2|M|48.53,39.23|N|Inside the stable.|
+K Fardel Dabyrie|QID|26428|US|T|Fardel Dabyrie|QO|3|M|51.28,41.58|N|Outside the barn.|
+K Kenata Dabyrie|QID|26428|US|T|Kenata Dabyrie|QO|1|M|50.87,36.99|N|Inside the house on the hill.|
 R Hammerfall|QID|26909|M|69.61,36.47|N|Head to the eastern corner of the zone.|
 A Raising Spirits|QID|26107|M|67.80,34.79|N|From Gor'mul.|
 h Hammerfall|QID|26628|M|68.97,33.32|N|At Innkeeper Adegwa.|
@@ -148,7 +150,7 @@ T Goggle Boggle|QID|26050|RANK|2|M|27.52,83.04|N|To Doctor Draxlegauge.|
 A Sunken Treasure|QID|26051|RANK|2|PRE|26050|M|27.52,83.04|N|From Doctor Draxlegauge.|
 A Drowned Sorrows|QID|26055|RANK|2|M|27.65,83.20|N|From Captain Steelgut.|
 C Drowned Sorrows|QID|26055|S|RANK|2|M|11.16,89.64|N|Kill Naga off the coast.|
-C Sunken Treasure|QID|26051|RANK|2|M|16.31,95.09|N|Search for the sparkling rocks on the sea floar.|
+C Sunken Treasure|QID|26051|NC|RANK|2|M|16.31,95.09|N|Search for the sparkling rocks on the sea floar.|
 C Drowned Sorrows|QID|26055|US|RANK|2|M|11.16,89.64|N|Kill Naga off the coast.|
 T Drowned Sorrows|QID|26055|RANK|2|M|27.65,83.25|N|To Captain Steelgut.|
 T Sunken Treasure|QID|26051|RANK|2|M|27.60,82.96|N|To Doctor Draxlegauge.|
@@ -176,7 +178,7 @@ C Thundering Key|QID|26041|NC|QO|Thundering Key: 1/1|M|46.43,52.37|N|At the Circ
 C Burning Key|QID|26041|NC|QO|Burning Key: 1/1|M|18.90,30.94|N|At the Circle of West Binding, at the far west edge of the zone.|
 T Stones of Binding|QID|26041|M|30.03,58.92|N|At the Stone of Inner Binding, east of Stromgarde.|
 A Breaking the Keystone|QID|26042|PRE|26041|M|30.03,58.92|N|At the Stone of Inner Binding.|
-C Breaking the Keystone|QID|26042|M|43.71,67.04|N|Kill and loot Fozruk, to the east.|
+K Fozruk|QID|26042|T|Fozruk|M|43.71,67.04|N|Kill and loot Fozruk, to the east.|
 T Breaking the Keystone|QID|26042|M|29.91,59.62|N|To the Keystone, at the Circle of Inner Binding.|
 A Myzrael's Tale|QID|26911|PRE|26042|M|30.03,58.94|N|From the Stone of Inner Binding.|
 H Hammerfall|QID|26429|M|68.98,34.75|N|Ride or fly back if you cannot hearth.|
@@ -187,7 +189,7 @@ A The Princess Unleashed|QID|26912|PRE|26911|M|69.63,36.53|N|From Zaruk.|
 C The Princess Unleashed|QID|26912|U|4472|M|57.35,34.61|N|Use the scroll to summon Myzrael. This is technically a group quest, but can be solo'd if you feel comfortable with it. She will degrade into several earth elementals upon death. Once you've defeated her, be sure to loot the shackles from her.|
 T The Princess Unleashed|QID|26912|M|57.34,34.63|N|To the stone in front of you.|
 A Revantusk Village|QID|26430|M|69.00,34.78|N|From Drum Fel, back at Hammerfall. Take this if you'd like to do the Hinterlands next.|RANK|3|
-A Into the Scarlet Monastery|QID|26986|M|68.46,37.76|N|From Doctor Gregory Victor. Pick this up if you'd like to run Scarlet Monestary later.|RANK|3|
+A Into the Scarlet Monastery|QID|26986|O|M|68.46,37.76|N|From Doctor Gregory Victor. Pick this up if you'd like to run Scarlet Monestary later.|RANK|3|
 
 ]]
 
