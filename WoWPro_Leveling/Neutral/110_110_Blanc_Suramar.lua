@@ -313,10 +313,10 @@ A Do The Thing!|QID|42396|M|16.02,55.11|N|From Pearlhunter Phin.|RANK|2|
 C Do The Thing!|QID|42396|M|15.85,54.72|NC|N|Pick up the 'Specked Pearl' off of the ground here.|RANK|2|
 T Do The Thing!|QID|42396|M|15.85,55.12|N|To Pearlhunter Phin.|RANK|2|
 A Mrgls of Endearment|QID|42688|PRE|42396|M|15.85,55.12|N|From Pearlhunter Phin.|RANK|2|
-C Mrgls of Endearment|QID|42688|M|63.29,15.10|QO|1|S|N|Kill Leyscar Scuttlers to loot the Intact Crab Shells.|RANK|2|
-K Kill Tideclaw|QID|43542|QO|1|M|18.78,60.90|T|Tideclaw|N|Silver - Kill and loot for a bit of treasure and resources.|RANK|2|
+C Mrgls of Endearment|QID|42688|M|16.1,56.9|QO|1|S|N|Kill Leyscar Scuttlers to loot the Intact Crab Shells.|RANK|2|
+K Kill Tideclaw|QID|43542|M|18.78,60.90|T|Tideclaw|N|Silver - Kill and loot for a bit of treasure and resources.|RANK|2|
 $ Forgotten Crab Trap|QID|37832|M|63.23,15.22|Z|Azsuna|N|This one is actually in Azsuna, but you are closer now. Loot chest for a bit of treasure and resources.|
-C Mrgls of Endearment|QID|42688|M|63.29,15.10|QO|1|US|N|Kill Leyscar Scuttlers to loot things to polish the pearl.|RANK|2|
+C Mrgls of Endearment|QID|42688|M|16.1,56.9|QO|1|US|N|Kill Leyscar Scuttlers to loot things to polish the pearl.|RANK|2|
 C Mrgls of Endearment|QID|42688|M|15.22,52.37|CHAT|QO|2|N|Show Items to Phin|RANK|2|
 T Mrgls of Endearment|QID|42688|M|15.22,52.37|N|To Pearlhunter Phin.|RANK|2|
 A A Mlrglrmg For Grlmrgl|QID|42728|M|15.22,52.35|N|From Pearlhunter Phin.|PRE|42688|RANK|2|
@@ -502,10 +502,12 @@ T Into the Crevasse|QID|42227|M|48.88,43.38|Z|Falanaar Tunnels@Suramar|N|To Vale
 A The Hidden City|QID|42228|M|48.88,43.38|Z|Falanaar Tunnels@Suramar|N|From Valewalker Farodin.|PRE|42227|
 $ Shimmering Ancient Mana Cluster|QID|43747|M|35.62,31.61|Z|Falanaar Tunnels@Suramar|ITEM|141655|N|Loot for some storeable ancient mana.  Does NOT stack. Behind Sanaar (which dispite being silver, doesn't appear to have a quest or cool loot associated, except for the world quest.)|RANK|2|
 R Falanaar South Leyline|QID|43593|M|40.99,45.47;45.03,54.61;41.80,66.64|CC|Z|Falanaar Tunnels@Suramar|N|Increases your ancient mana cap and faction is handy|RANK|2|
-A Leyline Feed Falanaar Depths|QID|43593|M|58.00,75.20|Z|Falanaar Tunnels@Suramar|N|From/To Leyline Feed.|RANK|2|PRE|41138|
+A Leyline Feed: Falanaar Depths|QID|43593|M|58.00,75.20|Z|Falanaar Tunnels@Suramar|N|From/To Leyline Feed.|RANK|2|PRE|41138|
+T Leyline Feed: Falanaar Depths|QID|43593|M|58.00,75.20|Z|Falanaar Tunnels@Suramar|N|From/To Leyline Feed.|RANK|2|PRE|41138|
 $ Small Treasure Chest|QID|43840|M|58.33,70.00|Z|Falanaar Tunnels@Suramar|N|Loot for treasure and resources.|RANK|2|
 R Falanaar North Leyline|QID|43592|M|42.49,70.68;45.03,54.61;57.26,45.16|CC|Z|Falanaar Tunnels@Suramar|N|Run to the  to get the other Falanaar leyline.|RANK|2|
 A Leyline Feed: Falanaar Arcway|QID|43592|M|66.57,52.52|Z|Falanaar Tunnels@Suramar|N|From/To Leyline Feed. Dispite being Silver Elite, there is no quest/reward for killing Broodmother Shu'holis unless you have it as a world quest.|RANK|2|PRE|41138|
+T Leyline Feed: Falanaar Arcway|QID|43592|M|66.57,52.52|Z|Falanaar Tunnels@Suramar|N|From/To Leyline Feed. Dispite being Silver Elite, there is no quest/reward for killing Broodmother Shu'holis unless you have it as a world quest.|RANK|2|PRE|41138|
 $ Small Treasure Chest|QID|43839|M|56.20,36.01;48.68,42.60|CS|Z|Falanaar Tunnels@Suramar|N|Run back out of this room, you will see Orathiss waiting for you. While following Orathiss, slight detour here for a chest. Loot for treasure and resources.|RANK|2|
 R Shattered Locus|QID|42228|M|57.76,43.87;53.10,26.23;47.95,14.07|CS|Z|Falanaar Tunnels@Suramar|N|Follow Orathiss to the Shattered Locus.|RANK|-1|
 R Shattered Locus|QID|42228|M|56.20,36.01;53.10,26.23;47.95,14.07|CS|Z|Falanaar Tunnels@Suramar|N|Back across the webs to where you entered and continue following Orathiss to the Shattered Locus.|RANK|2|
@@ -583,7 +585,7 @@ C Moonwhisper Rescue|QID|41485|M|31.55,27.74|S|U|136605|NC|N|Cleanse Petrified N
 C Managazer|QID|41480|M|31.45,26.11;33.21,24.51|CS|QO|1|N|Kill Managazer (Inside Cave).|
 R Ley Station Moonfall|QID|43590|M|30.74,29.46;36.68,27.16;36.11,25.73|CS|N|Run through Moonwhisper Gulch to activate another waystation, you will need 200 ancient mana.|RANK|2|
 A Leyline Feed: Ley Station Moonfall|QID|43590|M|36.07,19.56|N|From Leyline Feed.|RANK|2|
-C Leyline Feed: Ley Station Moonfall|QID|43590|M|34.91,29.48|QO|1|N|Kill Thudchop Trunksmasher (Ettin) wandering around across the river and loot the Broken Leydar Dish.|RANK|2|
+K Thudchop Trunksmasher|QID|43590|T|Thudchop Trunksmasher|M|34.91,29.48|QO|1|N|Kill Thudchop Trunksmasher (Ettin) wandering around across the river and loot the Broken Leydar Dish.|RANK|2|
 T Leyline Feed: Ley Station Moonfall|QID|43590|M|36.03,19.59|N|To Leyline Feed.|RANK|2|
 C Moonwhisper Rescue|QID|41485|M|31.55,27.74|US|NC|U|136605|N|Finish cleansing Petrified Nightsabers.|
 C Natural Adversaries|QID|41479|M|30.90,26.30|US|N|Kill Manascale Basilisk.|
