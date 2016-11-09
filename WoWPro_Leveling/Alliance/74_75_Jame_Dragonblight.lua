@@ -118,17 +118,21 @@ WoWPro:GuideSteps(guide, function()
 return [[
 
 ; Missing Quests:
-; The Lost Courier
 ; Your Presence is Required at Stars' Rest
-; Wanton Warlord
-; A Reclusive Runemaster
 ; Missing Level 80 Quest
 ; Mystery of the Infinite, Redux
 
-N Note |QID|12298|N|If you followed my previous guides, you should be in Wintergarde Keep, Dragonblight and have the following quest: High Commander Halford Wyrmbane If you don't have it, just ignore this quest, it's not a big deal, you can get the follow up anyway. Let's get started!|
+A The Lost Courier |QID|12157|LEAD|12171;12298;12174;12235|M|82.0,46.4|Z|Borean Tundra|N|This is a breadcrumb quest from xxx Keep in Borean Tundra.|O|
+T The Lost Courier |QID|12157|M|28.9,56.1|N|To Courier Lanson.|
+A Of Traitors and Treason |QID|12171|PRE|12157|LEAD|12298;12174|M|28.9,56.1|N|From Courier Lanson.|
+T Of Traitors and Treason |QID|12171|M|29.2,55.3|N|To Palena Silvercloud.|
+A High Commander Halford Wyrmbane |QID|12298;12174|LEAD|12235|M|31.2,44.0|Z|Howling Fjord|N|Skip this quest if you are not in Howling Fjord.\n\nThis is a breadcrumb quest from Greer Orehammer in Westguard Keep, Howling Fjord.|O|
+A High Commander Halford Wyrmbane |QID|12298;12174|LEAD|12235|M|29.2,55.3|N|This is a breadcrumb quest From Palena Silvercloud in Stars' Rest, Dragonblight. Ignore it if you are nearer to Winterguard Keep then you are to Stars' Rest.|O|
+F Wintergarde Keep |QID|12298|ACTIVE|12298|M|31.2,44.0|Z|Howling Fjord|N|Talk to Greer Orehammer and choose to fly to Wintergarde Keep.|
+;N Note |QID|12298|N|If you followed my previous guides, you should be in Wintergarde Keep, Dragonblight and have the following quest: High Commander Halford Wyrmbane If you don't have it, just ignore this quest, it's not a big deal, you can get the follow up anyway. Let's get started!|
 f Wintergarde Keep |QID|12298|N|Get the new flight path at Rodney Wells. |M|77.0,49.8|
-N Warning! |QID|12298|N|Throughout this whole chapter, do NOT get the quest [The Hills Have Us]. If you take it, this will fly you to Grizzly Hills and will make you waste a lot of time.|
-T High Commander Halford Wyrmbane |QID|12298|N|To High Commander Halford Wyrmbane.|M|78.60,48.20|
+N Warning! |QID|12235|N|Throughout this whole chapter, do NOT get the quest [The Hills Have Us]. If you take it, this will fly you to Grizzly Hills and will make you waste a lot of time.|
+T High Commander Halford Wyrmbane |QID|12298;12174|N|To High Commander Halford Wyrmbane.|M|78.60,48.20|
 A Naxxramas and the Fall of Wintergarde |QID|12235|M|78.6,48.2|N|From High Commander Halfor Wyrmbane.|
 
 T Naxxramas and the Fall of Wintergarde |QID|12235|N|Go back towards the gryphon master. To Gryphon Commander Urik.|M|77.1,50.1|
