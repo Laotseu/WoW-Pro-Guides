@@ -245,7 +245,7 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 				-- Quest is flaged as completed then any step with that QID is complete
 				-- T steps are covered by this check
 				if WoWPro:IsQuestFlaggedCompleted(QIDs) and not completion then
-					WoWPro.CompleteStep(i, "AutoCompleteQuestUpdate", true)
+					WoWPro.CompleteStep(i, "Quest marked done (AutoCompleteQuestUpdate)", true)
 				else
 
 					local numQIDs = select("#", string.split(";",QIDs))
@@ -269,17 +269,17 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 	               
 	               -- Quests that are in the current log have been accepted
 	               elseif action == "A" and quest_log_index and not completion then
-	               	WoWPro.CompleteStep(i, "AutoCompleteQuestUpdate", true)
+	               	WoWPro.CompleteStep(i, "Quest active (AutoCompleteQuestUpdate)", true)
 
 						-- Quest Completion: Any C, K or l step is considered completed if the quest is completed
 						elseif (action == "C" or action == "K" or action == "l") and not completion and quest_log_index and select(6,GetQuestLogTitle(quest_log_index)) == 1 then
-							WoWPro.CompleteStep(i, "AutoCompleteQuestUpdate", true)
+							WoWPro.CompleteStep(i, "Quest completed (AutoCompleteQuestUpdate)", true)
 
 						-- If the flighpoint is already known, mark it. Not really related to the quest log but only
 						-- place I can put it so that it check for things that are.
 						elseif action == "f" and not completion and 
 								 (WoWProCharDB.Taxi[WoWPro.step[i]] or (WoWPro.altfp[i] and WoWProCharDB.Taxi[WoWPro.altfp[i]])) then
-							WoWPro.CompleteStep(i, "AutoCompleteQuestUpdate", true)
+							WoWPro.CompleteStep(i, "Flight point knowned (AutoCompleteQuestUpdate)", true)
 
 						-- Partial Completion --
 						elseif not completion and WoWPro.QuestLog[QID] and WoWPro.questtext[i] and quest_log_index and GetNumQuestLeaderBoards(quest_log_index) > 0 then
@@ -307,7 +307,7 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
 								if not lcomplete then complete = false end --if one of the listed objectives isn't complete, then the step is not complete.
 							end
 							if complete then
-								WoWPro.CompleteStep(i, "AutoCompleteQuestUpdate", true)
+								WoWPro.CompleteStep(i, "Quest objective completed (AutoCompleteQuestUpdate)", true)
 							end --if the step has not been found to be incomplete, run the completion function
 						end
 				   end
