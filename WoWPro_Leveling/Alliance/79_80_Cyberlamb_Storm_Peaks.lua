@@ -85,7 +85,7 @@ return [[
 L Level 77 |QID|12818|N|You need to be Level 77 to do this guide.|LVL|77|
 
 N READ THIS!|QID|12818|N|This guide picks up only non-group, non-instance quests.|
-A Luxurious Getaway!|QID|12853|N|Before heading to Storm Peaks, travel into Dalaran and accept "Luxurious Getaway" from Rin Duoctane. He can be found at "Cantrips & Crows" down in the sewers.|Z|4395|M|31.23,49.63|T|Rin Duoctane|
+A Luxurious Getaway!|QID|12853|N|Before heading to Storm Peaks, travel into Dalaran and accept "Luxurious Getaway" from Rin Duoctane. He can be found at "Cantrips & Crows" down in the sewers.|Z|Dalaran/2|M|31.23,49.63|T|Rin Duoctane|
 R The Storm Peaks|QID|12818|N|Head on over to The Storm Peaks.|M|40.5,85.6|
 T Luxurious Getaway!|QID|12853|N|To Jeer Sparksocket.|M|41.0,86.4|
 A Clean Up|QID|12818|N|From Jeer Sparksocket.|M|41.0,86.4|
@@ -97,14 +97,14 @@ f K3|QID|12819|N|At Skizzle Slickside.|M|40.7,84.5|
 
 C Reclaimed Rations|QID|12827|N|Either click on the crates in the camps, or loot from gnolls in this area.|L|40645 16|S|NC|
 C Clean Up|QID|12818|N|Loot the Charred Wreckage from the ground in and around the smoldering crash site.|M|39,86|NC|
-C Expression of Gratitude|QID|12836|N|Kill Gnarlhide.|M|30.4,85.6|T|Gnarlhide|
+K Expression of Gratitude|QID|12836|N|Kill Gnarlhide.|M|30.4,85.6|T|Gnarlhide|
 C Reclaimed Rations|QID|12827|N|Finish collecting the Dried Gnoll Rations from either the crates in the camps or by killing the gnolls.|US|L|40645 16|M|30.4,85.8;31.7,85.5;34.9,83.7;34.9,82.6|CN|
 
 F Sifreldar Village |QID|12844|N|Fly up to Sifreldar Village.|M|40.1,75.1|
 
-C Equipment Recovery|QID|12844|N|Click on the boxes in this area and loot 8 K3 Equipment.|L|40726 8|S|
-C They Took Our Men!|QID|12843|N|Kill Sifreldar mobs, loot cage keys and release 5 Goblin Prisoners.|M|40.7,72.6|
-C Equipment Recovery|QID|12844|N|Click on the boxes in this area and loot 8 K3 Equipment.|L|40726 8|US|
+C Equipment Recovery|QID|12844|NC|N|Click on the boxes in this area and loot 8 K3 Equipment.|L|40726 8|S|
+C They Took Our Men!|QID|12843|NC|N|Kill Sifreldar mobs, loot cage keys and release 5 Goblin Prisoners.|M|40.7,72.6|
+C Equipment Recovery|QID|12844|NC|N|Click on the boxes in this area and loot 8 K3 Equipment.|L|40726 8|US|
 T Clean Up|QID|12818|N|To Jeer Sparksocket.|M|41.0,86.4|
 
 A Just Around the Corner|QID|12819|N|From Jeer Sparksocket.|M|41.0,86.4|
@@ -119,7 +119,7 @@ C Just Around the Corner|QID|12819|N|Enter the minefield and work your way to th
 
 A Moving In|QID|12829|N|From Tore Rumblewrench.|M|41.6,80|
 A Ore Repossession|QID|12830|N|From Tore Rumblewrench.|M|41.6,80|
-l Grab a U.D.E.D.|QID|12828|N|Use the U.D.E.D. Dispenser and get a bomb.\n\nOn collecting the bomb you will have 48 seconds to complete the next step.|M|41.6,80|L|40686|
+l Grab a U.D.E.D.|QID|12828|NC|N|Use the U.D.E.D. Dispenser and get a bomb.\n\nOn collecting the bomb you will have 48 seconds to complete the next step.|M|41.6,80|L|40686|
 C Ample Inspiration|QID|12828|N|Target an Ice Mammoth and throw the bomb at it. Note you will have just 48 seconds from collecting the bomb to use the bomb.\n\nWait a few seconds after blowing up the mammoth for the meat to appear on the ground. Once they appear, loot them until you have 8 Hearty Mammoth Meat. The "big piece" in the middle will give you multiple quantities.|M|43.7,78.8|U|40686|L|40728 8|NC|
 T Just Around the Corner|QID|12819|N|To Jeer Sparksocket.|M|41.0,86.4|
 A Slightly Unstable|QID|12826|N|From Jeer Sparksocket.|M|41.0,86.4|
@@ -134,7 +134,7 @@ R Crystalweb Cavern|QID|12829|N|Head into the Crystalweb Cavern|M|40.75,78.80|
 C Moving In|QID|12829|N|Kill 12 Crystalweb Spitters as you progress through the cave.|S|
 C Ore Repossession|QID|12830|N|Kill and loot the Snowblind Diggers for their Impure Saronite Ore.|M|43.9,75.5|L|40744 5|S|
 A Only Partly Forgotten|QID|12831|N|Enter the cave and find an Injured Goblin Miner to get this quest.|M|40.43,78.04|
-C Only Partly Forgotten|QID|12831|N|Go further into the cave and kill Icetip Crawlers until you loot an Icetip Venom Sac.|M|47.0,72.0|
+C Only Partly Forgotten|QID|12831|N|Go further into the cave and kill Icetip Crawlers until you loot an Icetip Venom Sac.|M|47.0,72.0;40.2,75.1|CC|
 C Ore Repossession|QID|12830|N|Finish killing and looting the Snowblind Diggers.|M|43.9,75.5|L|40744 5|US|
 T Only Partly Forgotten|QID|12831|N|Return to the Injured Goblin Miner.|M|43.48,75.25|
 A Bitter Departure|QID|12832|N|Injured Goblin Miner.|M|43.48,75.25|
@@ -146,7 +146,7 @@ T A Delicate Touch|QID|12820|N|To Ricket.|M|40.9,85.3|
 T Bitter Departure|QID|12832|N|To Ricket.|M|40.9,85.3|
 
 A Opening the Backdoor|QID|12821|N|From Ricket.|M|40.9,85.3|
-l Transporter Power Cell|QID|12821|N|Click on the Transporter Power Cell.|M|45.1,82.3|L|40731|
+C Transporter Power Cell|QID|12821|NC|N|Click on the Transporter Power Cell.|M|45.1,82.3|
 C Opening the Backdoor|QID|12821|N|Enter the teleportation pad and use the Transporter Power Cell.|M|50.7,81.9|U|40731|NC|
 T Opening the Backdoor|QID|12821|N|To Ricket.|M|40.9,85.3|
 A Know No Fear|QID|12822|N|From Ricket.|M|40.9,85.3|
@@ -169,19 +169,19 @@ T When All Else Fails|QID|12862|N|To Rork Sharpchin.|M|28.85,74.08|
 
 A Ancient Relics|QID|12870|N|From Rork Sharpchin.|M|28.85,74.08|
 A Loyal Companions|QID|12865|N|From Fjorlin Frostbrow.|M|29.8,75.7|
-C On Brann's Trail|QID|12854|N|Click on the Disturbed Snow and loot the Burlap-Wrapped Note.|M|36.0,64.1|L|40947|
-l Fresh Rhino Meat|QID|12865|N|Kill Rhinos and loot 8 Fresh Rhino Meat.|M|44,58|L|41340 8|
+C On Brann's Trail|QID|12854|NC|N|Click on the Disturbed Snow and loot the Burlap-Wrapped Note.|M|36.0,64.1|L|40947|
+C Fresh Rhino Meat|QID|12865|NC|N|Kill Rhinos and loot 8 Fresh Rhino Meat.|M|44,58|L|41340 8|
 T Leave No Goblin Behind|QID|12846|N|To Lok'lira the Crone, inside the Forlorn Mine.|M|42.8,68.9|
 A The Crone's Bargain|QID|12841|N|From Lok'lira the Crone.|M|42.8,68.9|
-C The Crone's Bargain|QID|12841|N|Kill Syra as she walks around inside the mine and loot the Runes of the Yrkvinn.|M|44.0,69.8|
+K Oversee Syra|QID|12841|T|Oversee Syra|N|Kill Oversee Syra as she walks around inside the mine and loot the Runes of the Yrkvinn.|M|44.0,69.8|
 T The Crone's Bargain|QID|12841|N|To Lok'lira the Crone.|M|42.8,68.9|
 A Mildred the Cruel|QID|12905|N|From Lok'lira the Crone.|M|42.8,68.9|
 T Mildred the Cruel|QID|12905|N|To Mildred the Cruel.|M|44.4,68.9|
 A Discipline|QID|12906|N|From Milred the Cruel.|M|44.4,68.9|
-C Discipline|QID|12906|N|Use the Disciplining Rod on 6 Exhausted Vrykul in the cave.|U|42837|
+C Discipline|QID|12906|N|Use the Disciplining Rod on 6 Exhausted Vrykul in the cave.|T|Exhausted Vrykul;use item:42837|
 T Discipline|QID|12906|N|To Milred the Cruel.|M|44.4,68.9|
 A Examples to be Made|QID|12907|N|From Milred the Cruel.|M|44.4,68.9|
-C Examples to be Made|QID|12907|N|Find Garhal and kill him.|M|45.4,69.1|
+K Garhal|QID|12907|T|Garhal|N|Find Garhal and kill him.|M|45.4,69.1|
 T Examples to be Made|QID|12907|N|To Milred the Cruel.|M|44.4,68.9|
 A A Certain Prisoner|QID|12908|N|From Milred the Cruel.|M|44.4,68.9|
 T A Certain Prisoner|QID|12908|N|To Lok'lira the Crone.|M|42.8,68.9|
@@ -189,10 +189,10 @@ A A Change of Scenery|QID|12921|N|From Lok'lira the Crone.|M|42.8,68.9|
 T A Change of Scenery|QID|12921|N|Head through the mine out ot the other side and find Lok'lira the Crone.|M|47.4,69.0|
 
 A Is That Your Goblin?|QID|12969|N|From Lok'lira the Crone.|M|47.4,69.0|
-C Is That Your Goblin?|QID|12969|N|Find Agnetta Tyrsdottar and challenge/defeat her.|M|48.2,69.7|
+K Agnetta Tyrsdottar|QID|12969|T|Agnetta Tyrsdottar|N|Find Agnetta Tyrsdottar and challenge/defeat her.|M|48.2,69.7|
 T Is That Your Goblin?|QID|12969|N|To Lok'lira the Crone.|M|47.4,69.0|
 A The Hyldsmeet|QID|12970|N|From Lok'lira the Crone.|M|47.4,69.0|
-C The Hyldsmeet|QID|12970|N|Step through dialogue with Lok'lira the Crone.|M|47,69|
+C The Hyldsmeet|QID|12970|CHAT|N|Step through dialogue with Lok'lira the Crone.|M|47.5,69.1|
 T The Hyldsmeet|QID|12970|N|To Lok'lira the Crone.|M|47.4,69.0|
 A Taking on All Challengers|QID|12971|N|From Lok'lira the Crone.|M|47.4,69.0|
 C Taking on All Challengers|QID|12971|N|Defeat 6 Victorius Challengers in this area.|
@@ -217,11 +217,11 @@ A Aberrations|QID|12925|N|From Thyra Kvinnshal.|M|48.4,72.1|
 A Off With Their Black Wings|QID|12942|N|From Iva the Vengeful |M|48.3,72.1|
 A Yulda's Folly|QID|12968|N|From Iva the Vengeful |M|48.3,72.1|
 C The Slithering Darkness|QID|12989|N|Enter the cave and kill 8 Ravenous Jormungar.|M|55.91,64.26|
-C The Last of Her Kind|QID|12983|N|Find the Injured Icemaw Matriarch toward the back of the cave, mount her and ride out.|M|54.75,60.25|U|42838|
+C The Last of Her Kind|QID|12983|NC|N|Find the Injured Icemaw Matriarch toward the back of the cave, mount her and ride out.|M|54.75,60.25|U|42838|
 T The Last of Her Kind|QID|12983|N|To Astrid Bjornrittar.|M|49.7,71.7|
 A The Warm-Up|QID|12996|N|To From Astrid Bjornrittar.|M|49.7,71.7|
 T The Slithering Darkness|QID|12989|N|To Astrid Bjornrittar.|M|49.7,71.7|
-C The Warm-Up|QID|12996|N|Use the Reins of the Icemaw Matriarch to summon a bear and use the controls to defeat Kirgaraak.|M|50.6,67.6|U|42481|
+K Kirgaraak|QID|12996|T|Kirgaraak|N|Use the Reins of the Icemaw Matriarch to summon a bear and use the controls to defeat Kirgaraak.|M|50.6,67.6|U|42481|
 T The Warm-Up|QID|12996|N|To Astrid Bjornrittar.|M|49.7,71.7|
 A Into the Pit|QID|12997|N|From Astrid Bjornrittar.|M|49.7,71.7|
 C Into the Pit|QID|12997|N|Use the Reins of the Warbear Matriarch to summon a bear and use the controls to defeat 6 Hyldsmeet Warbear.|M|50,65|U|42499|
@@ -235,12 +235,12 @@ A The Drakkensryd|QID|12886|N|From Gretta the Arbiter.|M|50.8,65.5|
 C The Drakkensryd|QID|12886|N|Use the Hyldnir Harpoon to jump from drake to drake and kill 10 Hyldsmeet Drake-Rider. Jump to Column Ornaments if you need to heal and when you complete the quest |U|41058|
 T The Drakkensryd|QID|12886|N|To Thorim.|M|33.4,58.0|
 A Sibling Rivalry|QID|13064|N|From Thorim.|M|33.4,58.0|
-C Sibling Rivalry|QID|13064|N|Step through dialogue with Thorim.|M|33.4,58.0|
+C Sibling Rivalry|QID|13064|CHAT|N|Step through dialogue with Thorim.|M|33.4,58.0|
 T Sibling Rivalry|QID|13064|N|To Thorim.|M|33.4,58.0|
 A Mending Fences|QID|12915|N|From Thorim.|M|33.4,58.0|
 C Off With Their Black Wings|QID|12942|N|Kill 12 Nascent Val'kyr in this area.|S|
-l Vials of Frost Oil|QID|12925|N|Kill Valkyrion Aspirants and loot at least 5 Vials of Frost Oil.|M|23.3,59.5|L|41612 5|
-C Aberrations|QID|12925|N|Use the Vials of Frost Oil and destroy 30 Plagued Proto Drakes.|M|23,58|U|41612|
+;l Vials of Frost Oil|QID|12925|N|Kill Valkyrion Aspirants and loot at least 5 Vials of Frost Oil.|M|23.3,59.5|L|41612 5|
+C Aberrations|QID|12925|NC|N|Kill Valkyrion Aspirants to get Vials of Frost Oil. Use the Vials of Frost Oil and destroy 30 Plagued Proto Drakes.|M|23,58|U|41612|
 C Yulda's Folly|QID|12968|N|Kill Yuda the Stormspeaker inside the building.|M|23.9,61.9|
 A Valkyrion Must Burn|QID|12953|N|From Harpoon Crate next to her.|M|24.0,61.7|
 C Valkyrion Must Burn|QID|12953|N|Use the Valkyrion Harpoon Guns to destroy 6 Dry Haystacks.|M|27,60|
