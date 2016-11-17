@@ -368,7 +368,7 @@ WoWPro.Tags = { "action", "step", "note", "index", "map", "sticky",
 	"unsticky", "use", "zone", "lootitem", "lootqty", "optional", 
 	"level", "QID","target", "prof", "mat", "rank", "rep","waypcomplete", "why",
 	 "noncombat","active","ach","spell","qcount","NPC","questtext","prereq","leadin","faction",
-	 "nobuff", "altfp", "daily", "zoneName", "mapID", "map_level",	-- Added by LaoTSeu
+	 "nobuff", "altfp", "daily", "zoneName", "mapID", "map_level", "dest",	-- Added by LaoTSeu
 	 "buff", "chat","recipe", "gossip","conditional","pet", "building", "item", "guide", "availible", 
 	 "sobjective", "pet1", "pet2", "pet3", "strategy",
 }
@@ -514,7 +514,7 @@ function WoWPro:OnEnable()
 	bucket:RegisterBucketEvent({"CRITERIA_UPDATE"}, 0.250, WoWPro.AutoCompleteCriteria)
 	bucket:RegisterBucketEvent({"GOSSIP_SHOW", "QUEST_GREETING", "QUEST_DETAIL", "QUEST_PROGRESS", "QUEST_COMPLETE"}, 0.1, WoWPro.QuestDialogAutomation)
 	bucket:RegisterBucketEvent({"LOOT_CLOSED"}, 0.250, WoWPro.AutoCompleteChest)
-	bucket:RegisterBucketMessage("WoWPro_QuestDialogAutomation", 0.1, WoWPro.QuestDialogAutomation)
+	bucket:RegisterBucketMessage("WoWPro_QuestDialogAutomation", 0.25, WoWPro.QuestDialogAutomation)
 	bucket:RegisterBucketMessage("WoWPro_LoadGuide",0.25,WoWPro.LoadGuideReal)
 	bucket:RegisterBucketMessage("WoWPro_LoadGuideSteps",0.25,WoWPro.LoadGuideStepsReal)
 	bucket:RegisterBucketMessage("WoWPro_GuideSetup",0.25,WoWPro.SetupGuideReal)

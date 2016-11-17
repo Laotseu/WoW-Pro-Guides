@@ -267,7 +267,7 @@ end
 -- Zone Name is a string
 -- mapID and level are numbers
 -- Returns: zone, mapID, level
-local zone_cache = {} -- "toke" => validated_OK, message, zone, mapID, level
+local zone_cache = {} -- "token" => validated_OK, message, zone, mapID, level
 function WoWPro.ParseZoneToken(token, validating)
 	-- assert(type(token) == "string", ("Invalid first parameter, expected a string, got \"%s\""):format(type(token)))
 	if (not token or token == "") and validating then return true, nil end
@@ -456,12 +456,19 @@ DefineTag("GEN",nil,"string",nil,function (value,i) end)  -- Swallow Gen tags
 DefineTag("RANK","rank","number",nil,nil)
 
 -- Added by LaoTseu
+-- |DAILY| indicates a daily quest that will have a blue ! or ?
 DefineTag("DAILY","daily","boolean",nil,function(value,i) WoWPro:SetSessionDailyQuests(WoWPro.QID[i]) end)   
+-- |ALTFP| is used for f steps when the Fligh  Point name is different then the subzone. 
+-- |ALTFP| should always insdicate the zone name, with the realFlight Point name use for the step text.
 DefineTag("ALTFP","altfp","string",nil,function(value,i)
 	WoWPro.altfp[i] = (value):format(_G.UnitName("player")) -- Hack for the Draenor garisson
 	-- err("i=%s, value=%s, result=%s", i, value, WoWPro.altfp[i])
 end)
+-- |NOBUFF| check for the absence of a buff or aura. Same syntax as |BUFF|
 DefineTag("NOBUFF","nobuff","string",nil,nil)
+-- |DEST| is used as an arrival condition for R, b, P, H and F steps.
+-- |DEST| must contain a zone or subzone name (should be subzone most of the time)
+DefineTag("DEST","dest","string",nil,nil)
 
 
 function WoWPro.ParseQuestLine(faction, zone, i, text, realline)

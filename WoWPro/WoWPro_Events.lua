@@ -373,15 +373,16 @@ function WoWPro:AutoCompleteZone()
 	WoWPro.ActiveStickyCount = WoWPro.ActiveStickyCount or 0
 	local currentindex = WoWPro.rows[1+WoWPro.ActiveStickyCount].index
 	local action = WoWPro.action[currentindex]
-	local step = WoWPro.step[currentindex]
-	local coord = WoWPro.map[currentindex]
-	local waypcomplete = WoWPro.waypcomplete[currentindex]
-	local zonetext, subzonetext = GetZoneText(), string.trim(GetSubZoneText())
-	local hbdzonetext = HBD:GetLocalizedMap(HBD:GetPlayerZone())
-	if action == "F" or action == "H" or action == "b" or action == "P" or (action == "R" and not waypcomplete) then
-		if step == zonetext or step == subzonetext  or step == hbdzonetext
+	-- local waypcomplete = WoWPro.waypcomplete[currentindex]
+	-- local step = WoWPro.step[currentindex]
+	-- local coord = WoWPro.map[currentindex]
+	-- local zonetext, subzonetext = GetZoneText(), string.trim(GetSubZoneText())
+	-- local hbdzonetext = HBD:GetLocalizedMap(HBD:GetPlayerZone())
+	if action == "F" or action == "H" or action == "b" or action == "P" or (action == "R" and not WoWPro.waypcomplete[currentindex]) then
+		if WoWPro.IsAtDestination(WoWPro.step[currentindex]) or WoWPro.IsAtDestination(WoWPro.dest[currentindex])
+		-- if step == zonetext or step == subzonetext  or step == hbdzonetext
 		and not WoWProCharDB.Guide[WoWProDB.char.currentguide].completion[currentindex] then
-			WoWPro.CompleteStep(currentindex, ("Arrival at destination %s detected"):format(step) )
+			WoWPro.CompleteStep(currentindex, ("Arrival at destination %s detected"):format(WoWPro.dest[currentindex] or WoWPro.step[currentindex]) )
 		end
 	end
 end

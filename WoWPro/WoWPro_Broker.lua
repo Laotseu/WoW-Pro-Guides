@@ -297,6 +297,12 @@ function WoWPro.LoadGuideReal()
     -- If we resetting guide, wipe the old information and re-create
 	if WoWPro.Resetting then
 	    WoWPro:Print("Manual reset of Guide "..GID..".")
+	    -- Remove all the guide QIDs from WoWProCharDB.skippedQIDs
+	    -- It's an ugly hack I'm not sure about the concequences of removing WoWProCharDB.skippedQIDs altegother
+	    for i, qid in ipairs(WoWProCharDB.Guide[GID].QID or {}) do
+	    	WoWProCharDB.skippedQIDs[qid] = nil
+	    end
+
 	    WoWProCharDB.Guide[GID].completion =  {}
 	    WoWProCharDB.Guide[GID].skipped =  {}
 	    WoWProCharDB.Guide[GID].why =  {}
@@ -567,12 +573,12 @@ function WoWPro:NextStep(k,i)
 		-- Quickly skip any manually skipped quests --
 		if WoWProCharDB.Guide[GID].skipped[k] then
 			WoWPro:dbp("SkippedStep(%d,%s [%s])",k,WoWPro.action[k],WoWPro.step[k])
-			WoWPro.why[k] = "NextStep(): SkippedStep."
+			WoWPro.why[k] = WoWPro.why[k] or "Manually skipped 1 (NextStep)"
 			skip = true
 			break
 		elseif WoWPro:QIDsInTable(QID,WoWProCharDB.skippedQIDs) then
 			WoWProCharDB.Guide[GID].skipped[k] = true
-			WoWPro.why[k] = "NextStep(): SkippedQID."
+			WoWPro.why[k] = WoWPro.why[k] or "Manually skipped 2 (NextStep)"
 			WoWPro:dbp("SkippedQID(%d, qid=%s, %s [%s])",k,QID,WoWPro.action[k],WoWPro.step[k]);
 			skip = true
 			break
@@ -853,14 +859,12 @@ function WoWPro:NextStep(k,i)
 	   end
 
 	   -- Current zone check : steps that complete if were are in the correct zone.
-	   if (WoWPro.action[k] == "F" or WoWPro.action[k] == "R" or WoWPro.action[k] == "b" or WoWPro.action[k] == "H") and
+	   if (WoWPro.action[k] == "F" or WoWPro.action[k] == "R" or WoWPro.action[k] == "b" or WoWPro.action[k] == "H"  or WoWPro.action[k] == "P") and
 	   	not WoWPro.waypcomplete[k] and
 	   	k <= CurrentIndex and
-	   	(WoWPro.step[k] == GetZoneText():trim() or 
-	   	 WoWPro.step[k] == GetSubZoneText():trim() or
-	   	 WoWPro.step[k] == HBD:GetLocalizedMap(HBD:GetPlayerZone()):trim()) then
-
-	        WoWPro.CompleteStep(k, "Destination zone detected")
+	   	(WoWPro.IsAtDestination(WoWPro.step[k]) or WoWPro.IsAtDestination(WoWPro.dest[k]))
+	   then
+	      WoWPro.CompleteStep(k, "Destination zone detected")
 	   	skip = true
 	   	break
 	   end
@@ -977,6 +981,14 @@ function WoWPro:NextStep(k,i)
 			factionIndex = tonumber(factionIndex)
 			repID = string.lower(repID)
 			repmax = string.lower(repmax)
+-- err("rep = %s, factionIndex = %s, temprep = %s, replvl = %s, repID = %s, repmax = %s", rep, factionIndex, temprep, replvl,repID,repmax)		
+--[=[
+/spew WoWPro.rep[850]
+/spew string.split(";",WoWPro.rep[850])
+/run rep, factionIndex, temprep, replvl = string.split(";",WoWPro.rep[850])
+/spew string.split("-",temprep)
+/run repID,repmax = string.split("-",temprep)
+]=]	
 			if replvl and (not tonumber(replvl)) then
 			    replvl =  string.lower(replvl)
 			    if replvl == "bonus" then
@@ -995,11 +1007,16 @@ function WoWPro:NextStep(k,i)
 
          -- Extract lower bound rep
          if not Rep2IdAndClass[repID] then
-                WoWPro:Error("Bad lower REP value of [%s] found in [%s].  Defaulting to 1.",temprep,WoWPro.rep[k])
-             repID = 0
-         end                
-         Friendship = Rep2IdAndClass[repID][2]
-         repID = Rep2IdAndClass[repID][1]
+            WoWPro:Error("Bad lower REP value of [%s] found in [%s].  Defaulting to 1.",temprep,WoWPro.rep[k])
+            repID = 0
+         end      
+         if repID == nil or Rep2IdAndClass[repID] == nil then
+         	err("Unknown or invalid rep: Rep2IdAndClass[%s] = %s",repID, Rep2IdAndClass[repID or ""])
+         else
+	         Friendship = Rep2IdAndClass[repID][2]
+	         repID = Rep2IdAndClass[repID][1]
+         end
+
          if not repID then
                 WoWPro:Error("Bad lower REP value of [%s] found in [%s].  Defaulting to 1.",temprep,WoWPro.rep[k])
              repID = 0
