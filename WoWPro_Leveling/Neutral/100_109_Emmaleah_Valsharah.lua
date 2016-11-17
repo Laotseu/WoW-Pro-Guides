@@ -167,7 +167,7 @@ $ Treasure|QID|38359|M|54.42,74.20|N|Inside the house behind the dressing screen
 $ Treasure|QID|39093|M|54.19,70.59|N|Up the stream on a rock. Loot for a bit of treasure and resources.|RANK|2|
 
 $ Treasure|QID|38466|M|55.55,77.60|L|130147|N|Open this treasure chest to start a short event where several forest sprites attack.  After they are dead, loot the chest again for your treasure|ITEM|130147|RANK|2|
-U Thistleleaf Branch|QID|38382|M|55.55,77.60|U|130147|N|Click to add the toy to your collection.|RANK|2|
+;U Thistleleaf Branch|QID|38382|M|55.55,77.60|U|130147|N|Click to add the toy to your collection.|RANK|2|
 l Companion Pet|QID|38468|M|59.54,77.23|L|130154|N|Chat with Lorel Stagfeather to start a fight with Gorebeak.|ITEM|130154|RANK|2|T|Gorebeak|
 U Pygmy Owl|QID|38468|M|59.54,77.23|U|130154|N|Click to add the Pygmy Owl to your collection.|RANK|2|
 
@@ -191,8 +191,8 @@ $ Treasure|QID|39071|M|62.06,67.33|N|Out of the cavern and around the corner up 
 $ Treasure|QID|39087|M|61.63,73.69|N|Beside the pond, Loot for a bit of treasure and resources.|RANK|2|
 C The Nightmare Lord|QID|40573|M|62.22,76.14|NC|QO|2|N|Enter The Archdruid's Den|
 $ Treasure|QID|39070|M|63.03,76.98|N|loot for a bit of treasure and resources.|RANK|2|
-C The Nightmare Lord|QID|40573|M|63.83,77.52|NC|QO|3|N|Thaon Moonclaw found|
-C The Nightmare Lord|QID|40573|M|64.03,77.96|QO|4|N|Thaon Moonclaw slain|
+C The Nightmare Lord|QID|40573|T|Thaon Moonclaw|M|63.83,77.52|NC|QO|3|N|Thaon Moonclaw found|
+K The Nightmare Lord|QID|40573|T|Thaon Moonclaw|M|64.03,77.96|QO|4|N|Thaon Moonclaw slain|
 T The Nightmare Lord|QID|40573|M|62.33,76.20|N|To Evelle Nightwhisper.|
 C Moonclaw Vale-Bonus Objective|QID|39393|M|61.04,73.23|US|N|Stay and Finish or check this off manually.|RANK|2|
 t Moonclaw Vale-Bonus Objective|QID|39393|M|63.81,70.05|N|Auto-turn-in when completed.|RANK|2|
@@ -210,9 +210,9 @@ C Grell to Pay|QID|42865|M|68.13,71.58|N|Kill Enderkind|T|Enderkind|RANK|2|
 C All Grell Broke Loose|QID|42883|M|68.68,73.84|NC|US|N|Kill Grell.|RANK|2|
 C Moist Around the Hedges|QID|42857|M|68.68,73.84|NC|US|N|These are scattered around and drop from the Grell.|RANK|2|
 C Grassroots Effort|QID|42884|M|68.68,73.84|US|U|138815|N|Use the Old Grizzlebarks staff (provided) to clear the doorways of brambles.|RANK|2|
-T Grell to Pay|QID|42865|M|66.68,77.28|N|To Old Grizzleback.|RANK|2|
 T All Grell Broke Loose|QID|42883|M|66.68,77.28|N|To Old Grizzleback.|RANK|2|
 T Grassroots Effort|QID|42884|M|66.68,77.28|N|To Old Grizzleback.|RANK|2|
+T Grell to Pay|QID|42865|M|66.68,77.28|N|To Old Grizzleback.|RANK|2|
 T Moist Around the Hedges|QID|42857|M|66.68,77.28|N|To Old Grizzleback.|RANK|2|
 
 R Whispering Bluffs|QID|38900|M|64.69,81.13|N|Continuing on our way towards Steelclaw Vale.|RANK|2|
@@ -224,18 +224,19 @@ R Lightsong|QID|42748|M|59.41,84.12|N|Some optional quests and treasure are avai
 A Emerald Sisters|QID|42748|M|59.41,84.12|N|From Guviena Bladesong.|RANK|2|
 A Where the Wildkin Are|QID|42747|M|59.41,84.12|N|From Guviena Bladesong.|RANK|2|
 C Where the Wildkin Are|QID|42747|M|59.46,82.04|S|N|Kill Wildkin and slimes as you go.|RANK|2|
-C Emerald Sisters|QID|42748|M|59.46,82.04|S|N|Rescue Sisters as you go in the Grotto.|RANK|2|
+C Emerald Sisters|QID|42748|NC|M|59.46,82.04|S|N|Rescue Sisters as you go in the Grotto.|RANK|2|
 A Dreamcatcher|QID|42750|M|59.46,82.04|N|From Leirana.|RANK|2|
 A Grotesque Remains|QID|42786|U|138441|N|From an item that will randomly drop from the slimes.|RANK|2|
 C Dreamcatcher|QID|42750|M|59.22,81.87|QO|1|NC|N|Click the Shriektalon Totem to siphen.|RANK|2|
 C Dreamcatcher|QID|42750|M|56.30,81.14|QO|2|NC|N|Click the Fearfeather Totem to siphen.|RANK|2|
 C Dreamcatcher|QID|42750|M|61.03,80.70|QO|3|NC|N|Click the Reaverbeak Totem to siphen.|RANK|2|
-C Emerald Sisters|QID|42748|M|59.46,82.04|US|N|Finish rescuing Sisters as you leave the grotto.|RANK|2|
+C Emerald Sisters|QID|42748|NC|M|59.46,82.04|US|N|Finish rescuing Sisters as you leave the grotto.|RANK|2|
 C Where the Wildkin Are|QID|42747|M|59.46,82.04|US|N|Finish killing Wildkin and slimes as you leave the grotto.|RANK|2|
 T Emerald Sisters|QID|42748|M|59.41,84.13|N|To Guviena Bladesong.|RANK|2|
 T Where the Wildkin Are|QID|42747|M|59.41,84.13|N|To Guviena Bladesong.|RANK|2|
 T Grotesque Remains|QID|42786|M|59.41,84.13|N|To Guviena Bladesong.|RANK|2|
 T Dreamcatcher|QID|42750|M|59.41,84.13|N|To Guviena Bladesong.|RANK|2|
+T Grotessque Remains|QID|42786|M|59.41,84.13|N|To Guviena Bladesong.|RANK|2|
 A Moon Reaver|QID|42751|M|59.41,84.13|N|From Guviena Bladesong.|RANK|2|
 
 $ Elindya Featherlight|QID|38887|M|60.42,90.72;61.03,88.04|CS|N|Click on Elindya and then follow her and help her kill the demon Skul'vrax|RANK|3|
@@ -255,20 +256,20 @@ C Faerie Fracas-Bonus Objective|QID|38842|M|53.77,79.87|S|N|Kill the thistleleaf
 A Thorny Dancing|QID|40220|M|53.75,79.82|N|From Saylanna Riverbreeze.|RANK|2|
 A Spread Your Lunarwings and Fly|QID|40221|M|53.75,79.82|N|From Saylanna Riverbreeze.|RANK|2|
 A Thieving Thistleleaf|QID|38862|M|53.77,79.87|U|129966|N|Auto accepted from the lunarwing egg you just looted.|RANK|2|
-C Spread Your Lunarwings and Fly|QID|40221|M|53.75,79.82|S|N|As you search for Thorndancers, free Lunarwings by untangleing the roots, or fighting the ones in the air.|RANK|2|
+C Spread Your Lunarwings and Fly|QID|40221|NC|M|53.75,79.82|S|N|As you search for Thorndancers, free Lunarwings by untangleing the roots, or fighting the ones in the air.|RANK|2|
 C Thieving Thistleleaf|QID|38862|M|53.77,79.87|S|N|As you search for Thorndancers, kill Thistleleaf Ruffians to reclaim the eggs.|RANK|2|
 $ Treasure|QID|38861|M|56.05,83.75|N|In a small cave. Loot for a bit of treasure and resources.|RANK|2|
 K Kill Jinkiki The Puncturer|QID|38889|QO|1|M|53,87|T|Jinkiki The Puncturer|N|Enter the cave and chat with the little bear to rescue him.|ITEM|128690|RANK|2|
 A Adopting the Adorable|QID|38889|M|53,87|N|From the Shivering Bear Cub upon killing Jinkiki.|RANK|2|
-$ Treasure|QID|38864|M|54.00,82.19;54.94,80.56|CS|N|Dive in and swim into an underwater cave.  Loot the treasure chest for a bit of treasure and resources.|RANK|2|;bugged 8/27 and quest doesnt actually loot or go away.
+;$ Treasure|QID|38864|M|54.00,82.19;54.94,80.56|CS|N|Dive in and swim into an underwater cave.  Loot the treasure chest for a bit of treasure and resources.|RANK|2|;bugged 8/27 and quest doesnt actually loot or go away.
 C Thorny Dancing|QID|40220|M|53.75,79.82|N|Kill 3 Thorndancers, they are the taller Thistleleaf mobs.|RANK|2|
 C Thieving Thistleleaf|QID|38862|M|53.77,79.87|US|N|Finish collecting the eggs.|RANK|2|
-C Spread Your Lunarwings and Fly|QID|40221|M|53.75,79.82|S|N|Finish rescueing Lunarwings.|RANK|2|
+C Spread Your Lunarwings and Fly|QID|40221|NC|M|53.75,79.82|US|N|Finish rescueing Lunarwings.|RANK|2|
 C Faerie Fracas-Bonus Objective|QID|38842|M|53.77,79.87|US|N|Stay and finish up or click this off and leave.|RANK|2|
 t Faerie Fracas-Bonus Objective|QID|38842|M|53.77,79.87|N|Auto-Turned in when completed.|RANK|2|
-T Thieving Thistleleaf|QID|38862|M|53.75,79.82|N|To Saylanna Riverbreeze.|RANK|2|
 T Thorny Dancing|QID|40220|M|53.75,79.82|N|To Saylanna Riverbreeze.|RANK|2|
 T Spread Your Lunarwings and Fly|QID|40221|M|53.75,79.82|N|To Saylanna Riverbreeze.|RANK|2|
+T Thieving Thistleleaf|QID|38862|M|53.75,79.82|N|To Saylanna Riverbreeze.|RANK|2|
 
 R Field of Dreamers|QID|38142|M|52.77,78.98;51.82,75.21|CS|N|You can return to Cenarius Grove and then take the road from there, or just go cross country.|
 $ Treasure|QID|38388|M|50.96,77.00;51.49,77.70|CS|N|Small cave, right beside the road. Loot chest for treasure and resources.|RANK|2|
@@ -287,7 +288,7 @@ $ Treasure|QID|38387|M|44.87,79.23;44.35,82.58|CS|N|Run up this path and to a sm
 R Smolderhide Thicket|QID|38146|M|48.68,88.28|N|And... back to your questing.|RANK|3|
 K Kill Chieftain Graw|QID|38146|M|48.68,88.28|L|128340|T|Chieftain Graw|
 A The Chieftain's Beads|QID|38146|M|48.71,88.30|U|128340|N|Auto accepted from item you looted from the Cheiftain.|
-C Totemic Call|QID|38246|M|48.87,88.52|N|Destroy the Nightmare Totem behind the Cheiftain.|
+C Totemic Call|QID|38246|NC|M|48.87,88.52|N|Destroy the Nightmare Totem behind the Cheiftain.|
 C Frenzied Furbolgs|QID|38455|M|46.95,84.40|US|N|Finish killing the Smolderhide furbolg.|
 T Totemic Call|QID|38246|M|48.39,84.63|N|To Elder Sookh.|
 T The Chieftain's Beads|QID|38146|M|48.39,84.63|N|To Elder Sookh.|
@@ -303,7 +304,7 @@ C The Demons Below|QID|38144|M|48.99,69.91|Z|1018/14|US|N|Finish your demon quot
 T The Demons Below|QID|38144|M|62.53,48.82|Z|1018/14|N|To Koda Steelclaw.|
 T Out of the Dream|QID|38145|M|62.53,48.82|Z|1018/14|N|To Koda Steelclaw.|
 A Entangled Dreams|QID|38147|M|62.53,48.82|Z|1018/14|N|From Koda Steelclaw.|
-C Entangled Dreams|QID|38147|M|59.84,83.58|Z|1018/14|T|Morphael|N|Kill Morphael|
+K Entangled Dreams|QID|38147|M|59.84,83.58|Z|1018/14|T|Morphael|N|Kill Morphael|
 T Entangled Dreams|QID|38147|M|48.85,81.52|N|To Koda Steelclaw.|
 
 $ Treasure|QID|38366|M|48.69,73.79|N|Surrounded by a circle of tree trunks. Loot for a bit of treasure and resources.|RANK|2|
@@ -315,8 +316,8 @@ C Wretched Sisters-Bonus Objective|QID|38372|M|47.25,69.79|S|N|Smash eggs, burn 
 C Solid as a Rock|QID|38235|M|43.84,70.19|QO|1|NC|N|Click Marnor to rescue him.|
 C Solid as a Rock|QID|38235|M|43.85,75.31|QO|3|NC|N|Click Del'thanar to rescue him.|
 $ Treasure|QID|38363|M|43.39,75.89|N|Loot for a bit of resources and treasure.|RANK|2|
-K Kill Seersei|QID|38479|QO|1|M|41.82,78.43|ITEM|130171|T|Seerseo|N|Kill and loot for a bit of resources and treasure.|RANK|2|
-C Death to the Witchmother|QID|38225|M|45.67,77.59|QO|1|N|Kill Magula.|T|Magula|
+K Kill Seersei|QID|38479|T|Seersei|M|41.82,78.43|ITEM|130171|T|Seerseo|N|Kill and loot for a bit of resources and treasure.|RANK|2|
+K Death to the Witchmother|QID|38225|M|45.67,77.59|QO|1|N|Kill Magula.|T|Magula|
 C Solid as a Rock|QID|38235|M|46.58,76.53|QO|2|NC|N|Click Erwind to rescue him.|
 C Wretched Sisters-Bonus Objective|QID|38372|M|47.25,69.79|S|N|Finish or check this off manually.|RANK|2|
 t Wretched Sisters-Bonus Objective|QID|38372|M|45.31,73.90|N|Auto turned in when you complete it.|RANK|2|
@@ -356,7 +357,7 @@ A The Die is Cast|QID|38663|M|51.43,57.01|N|From Lyanis Moonfall.|
 A A Village in Peril|QID|38643|M|54.79,52.80|N|From Darcy Heathrow.|
 R Bradensbrook|QID|38643|M|53.44,50.25;42.35,59.01|CS|N|Follow the road into Bradensbrook.|RANK|-1|
 $ Share Marius and Tehd Adventures|QID|44070|M|50.66,49.72;48.94,47.21;49.15,49.54|CS|ITEM|132359|T|Gathenak|N|Follow this path down to find Marius and Tehd and share in their adventures. Silver-Kill for treasure and resources.|RANK|2|
-$ Old Bear Trap|QID|39357|M|48.10,47.18;47.09,58.04|CS|ITEM|130214|T|Mad Henryk|N|Follow the path back up and across the road. Get close to the trap to start the vignette.|RANK|2|
+$ Old Bear Trap|QID|39357|M|48.10,47.18;47.1,57.8|CS|ITEM|130214|T|Mad Henryk|N|Follow the path back up and across the road. Get close to the trap to start the vignette.|RANK|2|
 $ Treasure|QID|39083|M|44.00,61.57;45.14,61.81;45.12,61.14|CS|N|Jump off the rocky outcropping into the tree to loot chest for treasure and resources.|RANK|2|
 T A Village in Peril|QID|38643|M|42.35,59.01|N|To Mayor Heathrow.|
 A Children of the Night|QID|38645|M|42.48,58.98|N|From Commander Jarod Shadowsong.|
@@ -406,7 +407,7 @@ A Kur'talos Ravencrest|QID|38718|M|40.85,53.01|N|From Commander Jarod Shadowsong
 C Kur'talos Ravencrest|QID|38718|M|40.89,53.00|QO|1|NC|N|Click on the banner to exame it.|
 T Kur'talos Ravencrest|QID|38718|M|40.74,53.01|N|To Commander Jarod Shadowsong.|
 A Maiev's Trail|QID|38714|M|40.74,53.01|N|From Commander Jarod Shadowsong. If he disappears, run out of the room and back in and he reappears.|
-A The Rooks Guard|QID|38715|M|40.74,53.01|N|From Commander Jarod Shadowsong.|
+A The Rook's Guard|QID|38715|M|40.74,53.01|N|From Commander Jarod Shadowsong.|
 R Ravencourt|QID|38715|M|39.06,53.03;38.96,52.44|CS|N|Run out of this chamber and up into the hold courtyard.|RANK|-1|
 U Inscription on tomb|QID|38772|QO|1|M|37.96,52.81|N|Silver - Click on the nameplate to summon Theryssia and put her to rest.|T|Theryssia|RANK|2|
 A Black Rook Hold-Bonus Objective|QID|38716|M|39.25,53.55|N|Auto accepted as you enter this area.|RANK|2|LVL|-109|
@@ -427,7 +428,7 @@ $ Treasure|QID|39084|M|43.22,54.87|N|Slight detour while you are following Comma
 C Black Rook Prison|QID|38717|M|42.22,46.43|N|Kill Araxxas and loot the Prison Keys.|T|Araxxas|
 C Black Rook Hold-Bonus Objective|QID|38716|M|43.35,53.18|US|N|Optional - Complete before you leave the area.|
 t Black Rook Hold-Bonus Objective|QID|38716|M|43.35,53.18|N|Auto turned in when complete.|RANK|2|
-T Black Rook Prison|QID|38717|M|40.56,44.27|N|Go thru the doorway behind Araxxas and down a long winding staircase to find Commander Shadowsong and turn in your quest.|
+T Black Rook Prison|QID|38717|M|40.56,44.27|N|Go thru the doorway behind Araxxas and down a long winding staircase to find Commander Shadowsong and turn in your quest.|RANK|2|
 A Brotherly Love|QID|38724|M|40.56,44.27|N|From Commander Jarod Shadowsong.|
 A Illidari Freedom|QID|38719|M|40.57,44.34|N|From Arduen Soulblade.|
 $ Treasure|QID|39085|M|40.51,44.68|N|In the water right beside where Arduen is lying. Loot for a bit of treasure and resources.|RANK|2|
@@ -435,8 +436,8 @@ C Illidari Freedom|QID|38719|M|39.92,43.43|QO|1|CHAT|N|Find (and then fight) Sir
 C Illidari Freedom|QID|38719|M|39.54,42.80|QO|3|CHAT|N|Find Asha Ravensong.|
 T Brotherly Love|QID|38724|M|39.48,42.10|N|To Maiev Shadowsong.|
 A Lieutenant of the Tower|QID|38721|M|39.48,42.10|N|From Malev Shadowsong.|
+$ Treasure|QID|39086|M|41.00,42.68|N|Loot for a bit of treasure and resources.|
 C Illidari Freedom|QID|38719|M|40.38,42.37;41.56,42.58|CS|QO|2|CHAT|N|Go up the winding staircase and find Cassiel Nightthorn.|
-$ Treasure|QID|39086|M|41.00,42.68|N|Loot for a bit of treasure and resources.|RANK|2|
 C Lieutenant of the Tower|QID|38721|M|41.54,41.16|N|Kill Lieutenant Desdel Stareye.|T|Lieutenant Desdel Stareye|
 T Lieutenant of the Tower|QID|38721|M|41.97,40.75;38.86,50.91|CS|N|Click on the gate to go outside, and then you can turn in the quest to Maiev Shadowsong.|
 T Illidari Freedom|QID|38719|M|39.13,51.05|N|To Asha Ravensong.|
@@ -503,9 +504,9 @@ T Given to Corruption|QID|41749;41893|M|66.20,44.52|N|To Elothir.|
 
 A Softening the Target|QID|43702|M|66.20,44.76|N|From Tyrande Whisperwind.|
 C Softening the Target|QID|43702|M|66.34,44.85|N|Hop on the bat for a bombing run.|
+T Softening the Target|QID|43702|M|63.19,42.22|N|To Tyrande Whisperwind.|
 A Ruins of Shala'nir-Bonus Objective|QID|38748|M|63.28,42.07|N|Auto Accepted upon entering the area.|RANK|2|LVL|-109|
 C Ruins of Shala'nir-Bonus Objective|QID|38748|M|63.28,42.07|S|N|Kill mobs and destroy nightmare totems to complete the objective.|RANK|2|
-T Softening the Target|QID|43702|M|63.19,42.22|N|To Tyrande Whisperwind.|
 A Close Enough to Touch|QID|38687;41763|M|63.19,42.22|N|From Tyrande Whisperwind.|
 C Close Enough to Touch|QID|38687;41763|M|62.48,38.89|NC|QO|1|N|Follow Tyrande into Shala'nir|
 C Close Enough to Touch|QID|38687;41763|M|63.03,36.89|NC|QO|2|N|Search for Malfurion at the Inn|

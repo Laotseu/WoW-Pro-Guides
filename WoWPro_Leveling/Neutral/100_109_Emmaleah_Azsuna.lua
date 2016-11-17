@@ -130,10 +130,10 @@ N Ranks|QID|39718|N|Setting the guide to Rank 1 will get you all of the essentia
 
 T Paradise Lost|QID|39718|M|72.51,45.66|Z|Dalaran@Dalaran70|N|To Archmage Khadgar.|
 A Down to Azsuna|QID|41220|M|72.51,45.66|Z|Dalaran@Dalaran70|N|From Archmage Khadgar.|
-C Down to Azsuna|QID|41220|QO|1|M|72.51,45.66|Z|Dalaran@Dalaran70|NC|N|Fly down with Khadgar.|
+C Down to Azsuna|QID|41220|M|72.51,45.66|Z|Dalaran@Dalaran70|CHAT|N|Fly down with Khadgar.|
 T Down to Azsuna|QID|41220|M|45.11,42.92|N|To Archmage Khadgar.|
 A Into the Fray|QID|38834|M|45.11,42.92|N|From Archmage Khadgar.|
-f Illidari Stand|QID|38834|M|44.59,43.85|N|At Izal Whitemoon.|
+f Illidari Stand|M|44.59,43.85|N|At Izal Whitemoon.|
 T Into the Fray|QID|38834|M|43.55,43.45|N|To Kayn Sunfury.|
 T Our New Allies|QID|39934|M|43.29,43.16|N|To Allari the Souleater.|P|Inscription;773|LVL|102|
 A The Price of Power|QID|39935|M|43.29,43.16|N|From Allari the Souleater.|P|Inscription;773|LVL|102|PRE|39934|
@@ -150,8 +150,8 @@ C The Price of Power|QID|39935|M|41.58,44.85|US|N|And kill more demons to learn 
 C Demon Souls|QID|37653|U|122100|QO|1|M|42.24,46.42|N|Finish up killing demons and use the gem to trap their souls.|US|
 T Reignite the Wards|QID|37658|M|43.14,43.60|N|To Jace Darkweaver.|
 T The Price of Power|QID|39935|M|43.29,43.16|N|To Allari the Souleater.|P|Inscription;773|
-T Demon Souls|QID|37653|M|43.28,43.16|N|To Allari the Souleater.|LVL|102|
-A Scribal Knowledge|QID|39939|M|43.29,43.16|N|From Allari the Souleater.|P|Inscription;773|LVL|102|PRE|39935|
+T Demon Souls|QID|37653|M|43.28,43.16|N|To Allari the Souleater.|
+A Scribal Knowledge|QID|39939|M|43.29,43.16|N|From Allari the Souleater.|P|Inscription;773|PRE|39935|
 A Inscription of the Body|QID|39936|M|43.29,43.16|N|From Allari the Souleater.|P|Inscription;773|LVL|102|PRE|39935|
 A The Scythe of Souls|QID|37660|M|43.28,43.16|N|From Allari the Souleater.|
 C The Scythe of Souls|QID|37660|QO|1|M|44.38,44.63|N|Chat with Allari|CHAT|
@@ -187,7 +187,7 @@ A Dark Revelations|QID|37449|M|36.27,49.03|N|From Kor'vas Bloodthorn.|
 $ Cache of Infernals|QID|38037|M|35.38,50.37|N|Silver - Click on the pile of rocks to start spawning infernals, 3rd wave is the silver.|RANK|2|
 K Kill Ragemaw|QID|44108|QO|1|M|32.57,48.74|ITEM|129075|T|Ragemaw|N|Silver - Kill and loot for some treasure and resources.|RANK|2|
 R Illidari Perch|QID|42286|M|31.34,46.39|N|Optional Side trip for Silvers and treasure chests. Left click the next few steps or change your guide to Rank 1 if you don't want to see the optional side trips.|RANK|3|
-f Illidari Perch|QID|42286|M|31.81,46.27|N|At Jena Moonrath.|RANK|3|
+f Illidari Perch|M|31.81,46.27|N|At Jena Moonrath.|RANK|3|
 K Kill Houndmaster Stroxis|QID|42286|QO|1|M|30.82,47.61|N|Silver - Kill and loot for some treasure and resources.|RANK|3|
 $ Treasure Chest|QID|44105|M|26.25,47.14|N|Loot for a bit of treasure and resources.|RANK|3|
 K Kill Inquistitor Tivos|QID|42376|QO|1|M|26.83,49.07;28.30,51.94|CS|ITEM|141874|T|Inquistitor Tivos|N|Silver - Use the portal located at the first coordinate, to port up to the Soulrender above, he is in the lower level. Kill and loot for some treasure and resources.|RANK|3|
@@ -208,7 +208,7 @@ A Journey to the Repose|QID|38443|M|43.55,43.42|N|From Archmage Khadgar.|
 
 $ Treasure Chest|QID|42292|M|40.85,36.59;42,32;41.39,30.75|CS|N|Loot for a bit of treasure and resources.|RANK|3|
 R Azurewing Repose|QID|38443|M|40.85,36.59;47.71,28.60|CS|N|Ride to Azurewing Repose.|PRE|-42292|
-f Azurewing Repose|QID|38443|M|48.43,28.08|N|At Dagrona.|
+f Azurewing Repose|M|48.43,28.08|N|At Dagrona.|
 T Journey to the Repose|QID|38443|M|47.94,27.19|N|To Archmage Khadgar.|
 A The Death of the Eldest|QID|37853|M|47.94,27.19|N|From Archmage Khadgar.|
 C The Death of the Eldest|QID|37853|QO|1|M|48.87,21.38|S|N|Kill and loot Leyworms.|
@@ -255,7 +255,7 @@ K Kill Grand Vintner Valiana|QID|38203|QO|3|M|42.91,8.55|T|Grand Vintner Valiana
 $ Glimmering Treasure Chest|QID|38367|M|42.63,8.08|N|Loot for a bit of treasure and resources.|RANK|3|
 C A Tainted Vintage-Bonus Objective|QID|37965|M|47.62,13.13|US|N|Stay and complete or check off.|RANK|3|
 t A Tainted Vintage-Bonus Objective|QID|37965|M|47.62,13.13|N|Auto turned in when complete.|RANK|3|
-f Challiane Vineyards|QID|38203|M|40.81,8.98|N|At Stagtamer Maliana.|RANK|3|
+f Challiane's Terrace|M|40.81,8.98|N|At Stagtamer Maliana.|RANK|3|
 T Challiane Vineyards|QID|38203|M|40.78,9.33|N|To Cellarman Voodani.|RANK|3|
 R Azurewing Whelplands|QID|37857|M|53.50,16.68|N|Back to the interupted quest line.|RANK|3|
 
@@ -475,6 +475,7 @@ T Scribal Knowledge|QID|39939|M|65.07,25.94|N|To Zarla Shadowheart.|P|Inscriptio
 A Control is Key|QID|39941|M|65.07,25.94|N|From Zarla Shadowheart.|P|Inscription;773|LVL|102|PRE|39939|
 A Runes of Power|QID|39940|M|65.07,25.94|N|From Zarla Shadowheart.|P|Inscription;773|LVL|102|PRE|39939|
 T Felblaze Ingress|QID|42372|M|63.86,28.92|N|To Tehd Shoemaker.|RANK|3|
+f Felblaze Ingress|M|63.82,28.48|N|At Adept Sunwing.|RANK|3|
 A Eye See You|QID|42375|M|63.86,28.92|N|From Tehd Shoemaker.|RANK|3|
 C Eye See You|QID|42375|QO|1|M|63.86,28.92;67.07,27.77|CS|NC|N|Click on the Eye of Kilrog and then use it to explore the requested areas. Avoid the NPC's with the eye symbol because they see invis for the radius shown by the light blue circle around them.|RANK|3|
 C Eye See You|QID|42375|QO|2|M|67.86,24.91|NC|N|Ritual site is down here.|RANK|3|
@@ -483,7 +484,6 @@ T Eye See You|QID|42375|M|63.88,28.97|N|To Tehd Shoemaker.|RANK|3|
 A They're Doing it Wrong|QID|42369|M|63.88,28.97|N|From Tehd Shoemaker.|RANK|3|
 A Quantity Over Quality|QID|42368|M|63.88,28.88|N|From Marius Felbane.|RANK|3|
 A Arkethrax|QID|42367|M|63.88,28.88|N|From Marius Felbane.|RANK|3|
-f Felblaze Ingress|QID|42372|M|63.82,28.48|N|At Adept Sunwing.|RANK|3|
 C Quantity Over Quality|QID|42368|M|67.83,26.99|N|Kill demons as you go along.|S|RANK|3|
 $ Small Treasure Chest|QID|42958|M|65.47,29.56|N|Loot for a bit of treasure and resources.|RANK|3|
 C Runes of Power|QID|39940|M|67.85,28.07|S|NC|N|The runes are here on the ground on each side of the portal.|P|Inscription;773|LVL|102|
@@ -578,7 +578,7 @@ C The Prince is Going Down|QID|37566|M|53.48,63.52|N|Kill Prince Oceanus.|
 $ Small Treasure Chest|QID|37829|M|53.17,64.44|N|Loot for a bit of treasure and resources.|RANK|2|
 T The Prince is Going Down|QID|37566|M|51.93,61.80|N|To Okuna Longtusk.|
 
-f Shackle's Den|QID|38857|M|52.94,61.12;56.19,58.93|CS|N|At Avaya Farwind.|
+f Shackle's Den|M|56.19,58.93|N|At Avaya Farwind.|
 T A Favor for Mr. Shackle|QID|38857|M|56.59,59.60|N|To Mr. Shackle.|
 A Maritime Law|QID|37654|M|56.60,59.59|N|From Mr. Shackle.|
 A Making the World Safe for Profit|QID|37657|M|56.60,59.59|N|From Mr. Shackle.|
@@ -601,7 +601,7 @@ C Shipwrecked Sailors|QID|42268;42220|QO|1|M|59.93,58.12|N|Finish up with the sa
 T Shipwrecked Sailors|QID|42268;42220|M|59.93,58.12|N|To UI Alert.|
 T Making the World Safe for Profit|QID|37657|M|56.59,59.58|N|To Mr. Shackle.|
 
-U Dalaran Hearthstone|QID|42244|U|140192|N|Hearth or fly to Dalaran to get the final zone quest completed and receive you zone achievement.|
+R Dalaran|QID|42244|U|140192|N|Hearth or fly to Dalaran to get the final zone quest completed and receive you zone achievement.|
 T Fate of the Queen's Reprisal|QID|42244|M|61.05,17.23|Z|Dalaran@Dalaran70|N|To Advisor Stillwater.|FACTION|Horde|
 T Fate of the Queen's Reprisal|QID|40794|M|28.66,74.87|Z|Dalaran@Dalaran70|N|To Lt. Surtees.|FACTION|Alliance|
 

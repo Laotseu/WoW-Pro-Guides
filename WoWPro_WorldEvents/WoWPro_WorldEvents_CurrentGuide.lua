@@ -2,6 +2,8 @@
 --      WoWPro_WorldEvents_CurrentGuide      --
 --------------------------------------------
 
+if true then return end -- I don't beleive anything is used here.
+
 local L = WoWPro_Locale
 local NUMROWS, ROWHEIGHT, GAP, EDGEGAP = 12, 25, 8, 16
 local offset, rows, shownrows = 0, {}, NUMROWS
