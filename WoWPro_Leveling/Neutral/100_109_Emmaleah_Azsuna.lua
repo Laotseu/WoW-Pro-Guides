@@ -165,11 +165,11 @@ C The Scythe of Souls|QID|37660|QO|8|M|44.26,44.14|N|Click on the crystal to lea
 C The Scythe of Souls|QID|37660|QO|9|M|43.38,43.36|N|Meet back up with Allari|NC|
 T The Scythe of Souls|QID|37660|M|43.29,43.16|N|To Allari the Souleater.|
 ;add class tag
-A From Within|QID|36920|M|43.56,43.46|N|From Kayn Sunfury.|C|Death Knight,Hunter,Mage,Monk,Paladin,Priest,Roque,Shaman,Warrior,Warlock,Druid
-A From Within|QID|44140|M|43.56,43.46|N|From Kayn Sunfury.|C|Demon Hunter|
+A From Within|QID|36920;44140|M|43.56,43.46|N|From Kayn Sunfury.|
+;A From Within|QID|44140|M|43.56,43.46|N|From Kayn Sunfury.|C|Demon Hunter;Hunter|
 
-T From Within|QID|36920|M|41.24,50.50|N|To Kor'vas Bloodthorn.|C|Death Knight,Hunter,Mage,Monk,Paladin,Priest,Roque,Shaman,Warrior,Warlock,Druid
-T From Within|QID|44140|M|43.56,43.46|N|From Kayn Sunfury.|C|Demon Hunter|
+T From Within|QID|36920;44140|M|41.24,50.50|N|To Kor'vas Bloodthorn.|
+;T From Within|QID|44140|M|43.56,43.46|N|From Kayn Sunfury.|
 A Fel Machinations|QID|37656|M|40.05,48.80|N|From Kor'vas Bloodthorn who will show up and follow you around.|
 A Saving Stellagosa|QID|37450|M|40.05,48.80|N|From Kor'vas Bloodthorn.|
 A Retake Faronaar-Bonus Objective|QID|36811|M|41.24,50.50|N|From Kor'vas Bloodthorn.|RANK|2|LVL|-109|

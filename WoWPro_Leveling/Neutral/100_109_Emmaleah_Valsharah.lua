@@ -316,7 +316,7 @@ C Wretched Sisters-Bonus Objective|QID|38372|M|47.25,69.79|S|N|Smash eggs, burn 
 C Solid as a Rock|QID|38235|M|43.84,70.19|QO|1|NC|N|Click Marnor to rescue him.|
 C Solid as a Rock|QID|38235|M|43.85,75.31|QO|3|NC|N|Click Del'thanar to rescue him.|
 $ Treasure|QID|38363|M|43.39,75.89|N|Loot for a bit of resources and treasure.|RANK|2|
-K Kill Seersei|QID|38479|T|Seersei|M|41.82,78.43|ITEM|130171|T|Seerseo|N|Kill and loot for a bit of resources and treasure.|RANK|2|
+K Kill Seersei|QID|38479|T|Seersei|M|41.82,78.43|ITEM|130171|N|Kill and loot for a bit of resources and treasure.|RANK|2|
 K Death to the Witchmother|QID|38225|M|45.67,77.59|QO|1|N|Kill Magula.|T|Magula|
 C Solid as a Rock|QID|38235|M|46.58,76.53|QO|2|NC|N|Click Erwind to rescue him.|
 C Wretched Sisters-Bonus Objective|QID|38372|M|47.25,69.79|S|N|Finish or check this off manually.|RANK|2|
