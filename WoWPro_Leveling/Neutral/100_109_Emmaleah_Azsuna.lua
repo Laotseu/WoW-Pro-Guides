@@ -175,10 +175,10 @@ N Ranks|QID|39718|N|Setting the guide to Rank 1 will get you all of the essentia
 
 T Paradise Lost|QID|39718|M|72.51,45.66|Z|Dalaran@Dalaran70|N|To Archmage Khadgar.|
 A Down to Azsuna|QID|41220|M|72.51,45.66|Z|Dalaran@Dalaran70|N|From Archmage Khadgar.|
-C Down to Azsuna|QID|41220|QO|1|M|72.51,45.66|Z|Dalaran@Dalaran70|NC|N|Fly down with Khadgar.|
+C Down to Azsuna|QID|41220|M|72.51,45.66|Z|Dalaran@Dalaran70|CHAT|N|Fly down with Khadgar.|
 T Down to Azsuna|QID|41220|M|45.11,42.92|N|To Archmage Khadgar.|
 A Into the Fray|QID|38834;44137|M|45.11,42.92|N|From Archmage Khadgar.|
-f Illidari Stand|QID|38834|M|44.59,43.85|N|At Izal Whitemoon.|
+f Illidari Stand|M|44.59,43.85|N|At Izal Whitemoon.|
 T Into the Fray|QID|38834;44137|M|43.55,43.45|N|To Kayn Sunfury / Altruis the Sufferer.|
 T Our New Allies|QID|39934|M|43.29,43.16|N|To Allari the Souleater.|P|Inscription;773|LVL|102|
 A The Price of Power|QID|39935|M|43.29,43.16|N|From Allari the Souleater.|P|Inscription;773|LVL|102|PRE|39934|
@@ -232,7 +232,7 @@ A Dark Revelations|QID|37449|M|36.27,49.03|N|From Kor'vas Bloodthorn.|
 R Illidari Perch|QID|42286|M|31.34,46.39|N|Optional Side trip for Silvers and treasure chests. Left click the next few steps or change your guide to Rank 1 if you don't want to see the optional side trips.|RANK|3|S
 K Kill Vorthax|QID|42280|QO|1|M|37.14,43.35|ITEM|141875|T|Vorthax|N|Silver - Kill and loot for some treasure and resources.|RANK|3|
 R Illidari Perch|QID|42286|M|31.34,46.39|N|Optional Side trip for Silvers and treasure chests. Left click the next few steps or change your guide to Rank 1 if you don't want to see the optional side trips.|RANK|3|US
-f Illidari Perch|QID|42286|M|31.81,46.27|N|At Jena Moonrath.|RANK|3|
+f Illidari Perch|M|31.81,46.27|N|At Jena Moonrath.|RANK|3|
 K Kill Houndmaster Stroxis|QID|42286|QO|1|M|30.82,47.61|N|Silver - Kill and loot for some treasure and resources. Pull him into Illidari perch to get help from the Illidari|RANK|3|
 $ Treasure Chest|QID|44105|M|26.25,47.14|N|Loot for a bit of treasure and resources.|RANK|3|
 K Kill Inquistitor Tivos|QID|42376|QO|1|M|26.83,49.07;28.30,51.94|CS|ITEM|141874|T|Inquistitor Tivos|N|Silver - Use the portal located at the first coordinate, to port up to the Soulrender above, he is in the lower level. Kill and loot for some treasure and resources.|RANK|3|
@@ -250,7 +250,7 @@ A Journey to the Repose|QID|38443|M|43.55,43.42|N|From Archmage Khadgar.|
 
 $ Treasure Chest|QID|42292|M|40.85,36.59;42,32;41.39,30.75|CS|N|Loot for a bit of treasure and resources.|RANK|3|
 R Azurewing Repose|QID|38443|M|40.85,36.59;47.71,28.60|CS|N|Ride to Azurewing Repose.|PRE|-42292|
-f Azurewing Repose|QID|38443|M|48.43,28.08|N|At Dagrona.|
+f Azurewing Repose|M|48.43,28.08|N|At Dagrona.|
 T Journey to the Repose|QID|38443|M|47.94,27.19|N|To Archmage Khadgar.|
 A The Death of the Eldest|QID|37853|M|47.94,27.19|N|From Archmage Khadgar.|
 C The Death of the Eldest|QID|37853|QO|1|M|48.87,21.38|S|N|Kill and loot Leyworms.|
@@ -297,7 +297,7 @@ K Kill Grand Vintner Valiana|QID|38203|QO|3|M|42.91,8.55|T|Grand Vintner Valiana
 $ Glimmering Treasure Chest|QID|38367|M|42.63,8.08|N|Loot for a bit of treasure and resources.|RANK|3|
 C A Tainted Vintage-Bonus Objective|QID|37965|M|47.62,13.13|US|N|Stay and complete or check off.|RANK|3|
 t A Tainted Vintage-Bonus Objective|QID|37965|M|47.62,13.13|N|Auto turned in when complete.|RANK|3|
-f Challiane Vineyards|QID|38203|M|40.81,8.98|N|At Stagtamer Maliana.|RANK|3|
+f Challiane's Terrace|M|40.81,8.98|N|At Stagtamer Maliana.|RANK|3|
 T Challiane Vineyards|QID|38203|M|40.78,9.33|N|To Cellarman Voodani.|RANK|3|
 R Azurewing Whelplands|QID|37857|M|53.50,16.68|N|Back to the interupted quest line.|RANK|3|
 
@@ -332,8 +332,11 @@ C You Scratch My Back...|QID|37860|QO|4|M|57.17,13.86|NC|N|Click on your special
 $ Treasure chest|QID|37958|M|57.89,12.23|N|Treasure chest containing items and resources.|RANK|2|
 C You Scratch My Back...|QID|37860|QO|3|M|55.66,13.01|NC|N|Click on your special action button to send in the whelplings to disable the northern mana pylon.|
 T You Scratch My Back...|QID|37860|M|56.90,14.01|N|To UI Alert.|
+$ Treasure chest|QID|37958|M|57.89,12.23|N|Treasure chest containing items and resources.|RANK|2|
+$ Unbound Rift|QID|37932|M|59.74,12.29|QO|1|N|Silver - This vignette is located down in the cravasse. Kill and loot for a bit of resources and treasure.|RANK|2|
 $ Treasure Chest|QID|37980|M|58.28,16.07;58.38,15.24;58.69,14.14|CS|N|Take the stairs here, follow the path up, then take the ley portal to find a treasure chest. Loot for treaure and resources.|RANK|2|
-C Opposites Repel|QID|39937|QO|1|M|55.62,17.50|US|N|Kill and loot the Nightfallen for their Ley Dust.|P|Inscription;773|LVL|102|
+$ Treasure Chest|QID|37832|M|63.23,15.21|N|WAY out of the way, but this is as close as you get to it. Loot for a bit of treasure and resources.|RANK|3|
+C Opposites Repel|QID|39937|QO|1|M|55.62,17.50|US|N|Kill and loot the nightfallen for their Ley Dust.|P|Inscription;773|LVL|102|
 C Opposites Repel|QID|39937|QO|2|M|54.00,15.31|N|Combine the ley dust into a pigment.|U|129105|P|Inscription;773|LVL|102|
 T Opposites Repel|QID|39937|M|54.00,15.31|N|To Baric Stormrunner.|P|Inscription;773|LVL|102|
 A Containing the Demon Within|QID|39938|M|54.00,15.31|N|To Baric Stormrunner.|P|Inscription;773|LVL|102|PRE|39937|
@@ -514,6 +517,7 @@ T Scribal Knowledge|QID|39939|M|65.07,25.94|N|To Zarla Shadowheart.|P|Inscriptio
 A Control is Key|QID|39941|M|65.07,25.94|N|From Zarla Shadowheart.|P|Inscription;773|LVL|102|PRE|39939|
 A Runes of Power|QID|39940|M|65.07,25.94|N|From Zarla Shadowheart.|P|Inscription;773|LVL|102|PRE|39939|
 T Felblaze Ingress|QID|42372|M|63.86,28.92|N|To Tehd Shoemaker.|RANK|3|
+f Felblaze Ingress|M|63.82,28.48|N|At Adept Sunwing.|RANK|3|
 A Eye See You|QID|42375|M|63.86,28.92|N|From Tehd Shoemaker.|RANK|3|
 C Eye See You|QID|42375|QO|1|M|63.86,28.92;67.07,27.77|CS|NC|N|Click on the Eye of Kilrog and then use it to explore the requested areas. Avoid the NPC's with the eye symbol because they see invis for the radius shown by the light blue circle around them.|RANK|3|
 C Eye See You|QID|42375|QO|2|M|67.86,24.91|NC|N|Ritual site is down here.|RANK|3|
@@ -522,7 +526,6 @@ T Eye See You|QID|42375|M|63.88,28.97|N|To Tehd Shoemaker.|RANK|3|
 A They're Doing it Wrong|QID|42369|M|63.88,28.97|N|From Tehd Shoemaker.|RANK|3|
 A Quantity Over Quality|QID|42368|M|63.88,28.88|N|From Marius Felbane.|RANK|3|
 A Arkethrax|QID|42367|M|63.88,28.88|N|From Marius Felbane.|RANK|3|
-f Felblaze Ingress|QID|42372|M|63.82,28.48|N|At Adept Sunwing.|RANK|3|
 C Quantity Over Quality|QID|42368|M|67.83,26.99|N|Kill demons as you go along.|S|RANK|3|
 $ Small Treasure Chest|QID|42958|M|65.47,29.56|N|Loot for a bit of treasure and resources.|RANK|3|
 C Runes of Power|QID|39940|M|67.85,28.07|S|NC|N|The runes are here on the ground on each side of the portal.|P|Inscription;773|LVL|102|
@@ -617,7 +620,7 @@ C The Prince is Going Down|QID|37566|M|53.48,63.52|N|Kill Prince Oceanus.|
 $ Small Treasure Chest|QID|37829|M|53.17,64.44|N|Loot for a bit of treasure and resources.|RANK|2|
 T The Prince is Going Down|QID|37566|M|51.93,61.80|N|To Okuna Longtusk.|
 
-f Shackle's Den|QID|38857|M|52.94,61.12;56.19,58.93|CS|N|At Avaya Farwind.|
+f Shackle's Den|M|56.19,58.93|N|At Avaya Farwind.|
 T A Favor for Mr. Shackle|QID|38857|M|56.59,59.60|N|To Mr. Shackle.|
 A Maritime Law|QID|37654|M|56.60,59.59|N|From Mr. Shackle.|
 A Making the World Safe for Profit|QID|37657|M|56.60,59.59|N|From Mr. Shackle.|
@@ -640,7 +643,7 @@ C Shipwrecked Sailors|QID|42268;42220|QO|1|M|59.93,58.12|N|Finish up with the sa
 T Shipwrecked Sailors|QID|42268;42220|M|59.93,58.12|N|To UI Alert.|
 T Making the World Safe for Profit|QID|37657|M|56.59,59.58|N|To Mr. Shackle.|
 
-U Dalaran Hearthstone|QID|42244|U|140192|N|Hearth or fly to Dalaran to get the final zone quest completed and receive you zone achievement.|
+R Dalaran|QID|42244|U|140192|N|Hearth or fly to Dalaran to get the final zone quest completed and receive you zone achievement.|
 T Fate of the Queen's Reprisal|QID|42244|M|61.05,17.23|Z|Dalaran@Dalaran70|N|To Advisor Stillwater.|FACTION|Horde|
 T Fate of the Queen's Reprisal|QID|40794|M|28.66,74.87|Z|Dalaran@Dalaran70|N|To Lt. Surtees.|FACTION|Alliance|
 

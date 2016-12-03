@@ -75,6 +75,17 @@ function WoWPro.GetZoneText()
     end
 end
 
+-- Return true is the character is currently in the specified zone
+function WoWPro.IsAtDestination(zone_name)
+    if not zone_name then return nil end
+    if zone_name == GetZoneText():trim() or 
+       zone_name == GetSubZoneText():trim() or
+       zone_name == WoWPro.HBD:GetLocalizedMap(WoWPro.HBD:GetPlayerZone()):trim() then
+        return true
+    end
+end
+
+
 local MapsSeen = {}
 local zonei, zonec, zonenames, contnames = {}, {}, {}, {}
 local function ScrapeMapInfo(cont, zone, zone_idx, cont_name)
