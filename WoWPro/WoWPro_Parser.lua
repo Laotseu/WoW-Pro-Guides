@@ -549,8 +549,8 @@ function WoWPro.ParseQuestLine(faction, zone, i, text, realline)
 		        end
 
 		        if tag_spec.key == nil or WoWPro[tag_spec.key] == nil then
-		        		err("Line = %s", text)
-		        		err("tag = %s, tag_spec.key = %s, WoWPro[tag_spec.key] = %s, idx = %s, action = %s, step = %s", tag, tag_spec.key, WoWPro[tag_spec.key], idx, WoWPro.action[i], WoWPro.step[i])
+		        		-- err("Line = %s", text)
+		        		-- err("tag = %s, tag_spec.key = %s, WoWPro[tag_spec.key] = %s, idx = %s, action = %s, step = %s", tag, tag_spec.key, WoWPro[tag_spec.key], idx, WoWPro.action[i], WoWPro.step[i])
 		        end
 		        if tag_spec.key and WoWPro[tag_spec.key][i] then
 		            WoWPro:Warning("%d:Step %s [%s] has duplicate tag ||%s||.",i,WoWPro.action[i],WoWPro.step[i],tag)
@@ -1050,17 +1050,18 @@ end
 function WoWPro:CheckFunction(row, button, down)
     local GID = WoWProDB.char.currentguide
     WoWPro:dbp("WoWPro:CheckFunction: row %d button %s UD %s rowChecked %s",row.index, button, tostring(down), tostring(row.check:GetChecked()))
-	if button == "LeftButton" and row.check:GetChecked() then
-	    WoWPro:dbp("WoWPro:CheckFunction: User marked step %d as skipped.", row.index)
-		local steplist = WoWPro.SkipStep(row.index, true)
-		if steplist ~= "" then 
-			WoWPro:SkipStepDialogCall(row.index, steplist, row.check)
-		else
-		    WoWPro.SkipStep(row.index, false)
-		    row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
-		    WoWPro:UpdateGuide("CheckFunction:Skip1Step")
-		end
-	elseif button == "RightButton" and row.check:GetChecked() then
+	-- if button == "LeftButton" and row.check:GetChecked() then
+	--     WoWPro:dbp("WoWPro:CheckFunction: User marked step %d as skipped.", row.index)
+	-- 	local steplist = WoWPro.SkipStep(row.index, true)
+	-- 	if steplist ~= "" then 
+	-- 		WoWPro:SkipStepDialogCall(row.index, steplist, row.check)
+	-- 	else
+	-- 	    WoWPro.SkipStep(row.index, false)
+	-- 	    row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
+	-- 	    WoWPro:UpdateGuide("CheckFunction:Skip1Step")
+	-- 	end
+	-- elseif button == "RightButton" and row.check:GetChecked() then
+	if (button == "LeftButton" or button == "RightButton") and row.check:GetChecked() then
 	   row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
 	   WoWPro.CompleteStep(row.index, "Mannualy checked (right-click)", true)
 		-- WoWProCharDB.Guide[GID].completion[row.index] = true
