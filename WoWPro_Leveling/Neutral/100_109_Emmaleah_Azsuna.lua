@@ -556,11 +556,11 @@ $ Small Treasure Chest|QID|42338|M|55.70,25.48;57.19,25.23|CS|N|Loot for a bit o
 R Olivian Veil|QID|40751|M|60.98,34.67;65.84,37.26;66.06,43.44|CS|N|Back to questing.|RANK|3|
 $ Small Treasure Chest|QID|40751|M|66.06,43.44|N|Loot for a bit of treasure and resources.|RANK|2|
 K Kill Syphonus|QID|37989|QO|1|M|67.19,51.58|T|Syphonus|N|Silver - Kill and loot for a bit of treasure and resources.  Be wary of the lvl 110 mobs nearby.|RANK|2|ITEM|129064|
-T Missing Demon|QID|42238|M|61.22,50.74|N|To Daglop.|RANK|2|
-A Let's Make A Deal|QID|38460|M|61.22,50.74|N|From Daglop.|RANK|2|
-C Let's Make A Deal|QID|38460|M|61.22,50.74|NC|N|Sign Daglop's Contract.|RANK|2|
-T Let's Make A Deal|QID|38460|M|61.22,50.74|N|To Daglop.|RANK|2|
-A Minion! Kill Them!|QID|38232|M|61.22,50.74|N|From Daglop.|RANK|2|
+T Missing Demon|QID|42238|M|63.2,51.4|N|To Daglop.|RANK|2|
+A Let's Make A Deal|QID|38460|M|63.2,51.4|N|From Daglop.|RANK|2|
+C Let's Make A Deal|QID|38460|M|63.2,51.4|CHAT|N|Sign Daglop's Contract.|RANK|2|
+T Let's Make A Deal|QID|38460|M|0,0|N|To Daglop.|RANK|2|
+A Minion! Kill Them!|QID|38232|M|0,0|N|From Daglop.|RANK|2|
 C Minion! Kill Them!|QID|38232|M|62.01,50.10|S|N|The olives are on the ground, the birds and cats drop the feathers and the shadowrunners drop the horns.|RANK|2|
 K Kill Treacherous Stallions|QID|44081|QO|1|M|60.25,46.14|ITEM|140685|T|Devious Sunrunner|N|Silver - Click on the Ley Portal to be transported to a treasure. Kill the Stallions, then loot the chest for a bit of treasure and resources.|RANK|3|
 $ Marius & Tehd vs a Fel Lord|QID|38212|M|60.50,48.56;59.17,46.44|CS|ITEM|129068|T|Brogozog|N|Follow this path to once again save Thed's hide. Chat with him to start the vignette. Kill and loot the demon for a bit of treasure and resources.|RANK|3|
@@ -576,7 +576,7 @@ K Kill The Oracle|QID|37822|QO|1|M|59.76,54.65;59.69,55.17|CS|N|Silver - Go up t
 $ Small Treasure Chest|QID|40752|M|58.64,53.38|N|Loot for a bit of treasure and resources.|RANK|2|
 $ Small Treasure Chest|QID|44405|M|54.87,52.13|N|Loot for a bit of treasure and resources. Be aware. the NPCs in the alcove with you will take offense at you looting their treasure.|RANK|2|
 K Kill Warbringer Mox'na|QID|37909|ITEM|129069|M|51.34,56.19|T|Warbringer Mox'na|N|Silver - Kill and loot for a bit of treasure and resources.|RANK|3|
-$ Small Treasure Chest|QID|38370|M|51.34,56.19|N|You always wanted to be a wedding crasher... right? Kill the Bride and Groom as they object to you stealing thier gifts. Loot for a bit of treasure and resources.|RANK|3|
+$ Small Treasure Chest|QID|38370|M|49.5,56.6|N|You always wanted to be a wedding crasher... right? Kill the Bride and Groom as they object to you stealing thier gifts. Loot for a bit of treasure and resources.|RANK|3|
 
 R Shipwreck Arena|QID|37496|M|50.64,44.27|N|Run back past Narthalas Academy and to the Shipwreck Arena.|RANK|-1|
 R Shipwreck Arena|QID|37496|M|46.14,45.00;47.99,45.51|CS|N|Run Down the Old Coast Path and to the Shipwreck Arena.|RANK|2|
