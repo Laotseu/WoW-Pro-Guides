@@ -120,7 +120,30 @@ C Ride Huey to return to Dalaran.|QID|42185|SO|6;1|M|33.72,58.22|Z|The Storm Pea
 T Never Hunt Alone|QID|42185|M|69.68,43.04|Z|Dalaran@Dalaran70|N|To Grif Wildheart.|
 A Hunter to Hunter|QID|41009|M|69.68,43.04|Z|Dalaran@Dalaran70|N|From Grif Wildheart.|PRE|42185|LEAD|44043|
 T Hunter to Hunter|QID|41009|M|60.10,53.39|Z|Dalaran@Dalaran70|N|To Emmarel Shadewarden.|
-R Trueshot Lodge|QID|99999|M|72.88,41.21|Z|Dalaran@Dalaran70|N|Chat with Talua for a ride back to Trueshot Lodge|LVL|101|
+;R Trueshot Lodge|QID|99999|M|72.88,41.21|Z|Dalaran@Dalaran70|N|Chat with Talua for a ride back to Trueshot Lodge|LVL|101|
+A On Eagle's Wings |QID|40953|M|60.0,53.0|Z|Dalaran|N|From Emmarel Shadewarden|; The Hunter's Reach |Z|1014;10|
+f Krasus' Landing |M|69.9,50.7|Z|Dalaran|N|Talk to Aludane Whitecloud|; Krasus' Landing |Z|1014;10|
+C On Eagle's Wings |QID|40953|QO|1|M|69.9,50.7|Z|Dalaran|; Krasus' Landing |Z|1014;10|
+C On Eagle's Wings |QID|40953|QO|2|M|36.3,27.9|Z|Trueshot Lodge|;  |Z|1072;0|
+C On Eagle's Wings |QID|40953|M|36.3,27.9|Z|Trueshot Lodge|;  |Z|1072;0|
+T On Eagle's Wings |QID|40953|M|36.4,28.3|Z|Trueshot Lodge|N|To Emmarel Shadewarden|;  |Z|1072;0|
+A The Unseen Path |QID|40954|M|36.4,28.3|Z|Trueshot Lodge|N|From Emmarel Shadewarden|;  |Z|1072;0|
+C The Unseen Path |QID|40954|M|44.1,24.1|Z|Trueshot Lodge|;  |Z|1072;0|
+T The Unseen Path |QID|40954|M|43.8,24.4|Z|Trueshot Lodge|N|To Emmarel Shadewarden|;  |Z|1072;0|
+A Oath of Service |QID|40955|M|43.8,24.4|Z|Trueshot Lodge|N|From Emmarel Shadewarden|;  |Z|1072;0|
+C Oath of Service |QID|40955|M|44.3,27.1|Z|Trueshot Lodge|;  |Z|1072;0|
+T Oath of Service |QID|40955|M|43.5,24.9|Z|Trueshot Lodge|N|To Emmarel Shadewarden|;  |Z|1072;0|
+A Altar of the Eternal Hunt |QID|41053|M|43.5,24.9|Z|Trueshot Lodge|N|From Emmarel Shadewarden|;  |Z|1072;0|
+T Altar of the Eternal Hunt |QID|41053|M|47.5,53.1|Z|Trueshot Lodge|N|To Altar Keeper Biehn|;  |Z|1072;0|
+A Infused with Power |QID|41047|M|47.5,53.1|Z|Trueshot Lodge|N|From Altar Keeper Biehn|;  |Z|1072;0|
+C Infused with Power |QID|41047|M|47.5,53.1|Z|Trueshot Lodge|;  |Z|1072;0|
+T Infused with Power |QID|41047|M|47.4,53.2|Z|Trueshot Lodge|N|To Altar Keeper Biehn|;  |Z|1072;0|
+A Tactical Matters |QID|40958|M|47.4,53.2|Z|Trueshot Lodge|N|From Altar Keeper Biehn|;  |Z|1072;0|
+T Tactical Matters |QID|40958|M|43.2,47.1|Z|Trueshot Lodge|N|To Tactician Tinderfell|;  |Z|1072;0|
+A The Campaign Begins |QID|40959|M|43.2,47.1|Z|Trueshot Lodge|N|From Tactician Tinderfell|;  |Z|1072;0|
+C The Campaign Begins |QID|40959|M|42.9,47.0|Z|Trueshot Lodge|;  |Z|1072;0|
+A Paradise Lost |QID|39718|M|42.9,47.0|Z|Trueshot Lodge|N|From Tactician Tinderfell|;  |Z|1072;0|
+T The Campaign Begins |QID|40959|M|42.9,47.0|Z|Trueshot Lodge|N|To Tactician Tinderfell|;  |Z|1072;0|
 
 ;MARKSMANSHIP
 ;A Rendezvous with the Courier|QID|41540|M|60.06,53.47|Z|Dalaran@Dalaran70|N|From Emmarel Shadewarden.|
@@ -203,7 +226,7 @@ A The Campaign Begins|QID|40959|M|42.82,46.95|N|From Tactician Tinderfell.|PRE|4
 C The Campaign Begins|QID|40959|M|42.82,46.95|N|Choose which zone you want to do first.|
 A Zone Lead-in Quest|QID|39718;39864;39731;39733;39735|M|42.62,46.84|N|From the Scouting Map. Choose which zone you want to do first.  The Legion expansion is set up differently so all are viable first zones.|
 T The Campaign Begins|QID|40959|M|42.62,46.84|N|To Tactician Tinderfell.|
-C Travel to Dalaran|QID|39718;39864;39731;39733;39735|M|42.62,46.84|N|Take the portal to Dalaran|
+C Travel to Dalaran|QID|39718;39864;39731;39733;39735|NC|M|42.62,46.84|N|Take the portal to Dalaran|
 
 J On to Azsuna|QID|39718|N|This temporarily ends the order hall guide, you will be sent back here, when you finish Azuna. That guide will auto load when you close this step.|GUIDE|EmmAzsuna|
 J On to Stormheim|QID|39864|N|This temporarily ends the order hall guide, you will be sent back here, when you finish Stormheim. That guide will auto load when you close this step.|GUIDE|EmmStormheim|FACTION|Horde|

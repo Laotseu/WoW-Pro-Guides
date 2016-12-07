@@ -185,31 +185,31 @@ C Greymane's Gambit|QID|39800|M|69.14,74.70|QO|1|N|Greymane's mission complete|
 ; The Aftermath
 T Greymane's Gambit|QID|39800|M|33.71,51.02|N|To Sky Admiral Rogers.|
 A Boarded!|QID|38052|M|33.71,51.02|N|From Sky Admiral Rogers.|
-A Supplies From the Skies|QID|38036|M|33.76,50.76|QO|1|N|From Mishka.|
-A Assault and Battery|QID|38053|M|33.61,50.81|QO|1|N|From Tinkmaster Overspark.|
-A See Ya Later, Oscillator|QID|38558|M|33.61,50.81|QO|1|N|From Tinkmaster Overspark.|
+A Supplies From the Skies|QID|38036|M|33.76,50.76|N|From Mishka.|
+A Assault and Battery|QID|38053|M|33.61,50.81|N|From Tinkmaster Overspark.|
+A See Ya Later, Oscillator|QID|38558|M|33.61,50.81|N|From Tinkmaster Overspark.|
 $ Treasure Chest|QID|38677|M|35.71,54.06|N|On the lowest level of the crashed alliance ship, be careful you don't fall over the waterfall. Loot for a bit of treasure and resources.|RANK|3|
-C Supplies From the Skies|QID|38036|M|33.82,50.65|QO|1|S|N|Skyfire First Aid Kit scatted in the ship|
+C Supplies From the Skies|QID|38036|NC|M|33.82,50.65|S|N|Skyfire First Aid Kit scatted in the ship|
 C Assault and Battery|QID|38053|M|35.41,54.23|N|Kill Dread-Rider Malwick for the Battery|
 C See Ya Later, Oscillator|QID|38558|M|33.63,57.26|N|The Crystal Oscillator is in a camp near a giant gear.|
-C Supplies From the Skies|QID|38036|M|33.81,56.98|QO|1|US|N|Skyfire First Aid Kit scatted in the ship|
+C Supplies From the Skies|QID|38036|NC|M|33.81,56.98|US|N|Skyfire First Aid Kit scatted in the ship|
 C Boarded!|QID|38052|M|34.35,57.21|N|8/8 Forsaken slain|
 K Kill Whitewater Typhoon|QID|38472|M|36.67,51.79|QO|1|ITEM|138418|N|Silver - Kill and loot for some treasure and resources.|RANK|3|
 T Boarded!|QID|38052|M|33.67,51.06|N|To Sky Admiral Rogers.|
 T Supplies From the Skies|QID|38036|M|33.74,50.81|N|To Mishka.|
 T See Ya Later, Oscillator|QID|38558|M|33.63,50.84|N|To Tinkmaster Overspark.|
 T Assault and Battery|QID|38053|M|33.60,50.83|N|To Tinkmaster Overspark.|
-A Lightning Rod|QID|38058|PRE|38053;38052;38558;38036|M|33.60,50.83|QO|1|N|From Tinkmaster Overspark.|
+A Lightning Rod|QID|38058|PRE|38053;38052;38558;38036|M|33.60,50.83|N|From Tinkmaster Overspark.|
 A The Lost Legion|QID|38057|PRE|38053;38052;38558|M|33.76,50.76|N|From Mishka.|
 $ Small Treasure Chest|QID|38676|M|31.09,56.00|N|On the other half of the alliance ship, bottom floor. Loot for a bit of treasure and resources.|RANK|3|
 T The Lost Legion|QID|38057|M|31.19,57.96|N|To Knight-Captain Rhodes, up the hill, ride onto the top floor of the ship to the drake cave.|
 A Pins and Needles|QID|38059|PRE|38057|M|31.19,57.96|QO|1|N|From Knight-Captain Rhodes.|
 C Lightning Rod|QID|38058|M|29.40,57.93|QO|1|N|Charge the Transponder, stand in the sparks!|S|
-C 7th Legion Dragoon|QID|38059|S|QO|1|N|Rescue Dragoons from the static fields.|
+C 7th Legion Dragoon|QID|38059|NC|S|QO|1|N|Rescue Dragoons from the static fields.|
 $ Treasure Chest|QID|38529|M|80.89,48.83;20.03,41.23|Z|1017/9|CS|N|Go to the top floor of the Alliance ship and go waay inside the drake cave. Loot for a bit of treasure and resources.|RANK|3|
 C Lightning Rod|QID|38058|M|29.40,57.93|QO|1|N|Charge the Transponder, stand in the sparks!||US|
-C 7th Legion Dragoon|QID|38059|US|QO|1|N|Rescue Dragoons from the static fields.|
-T Lightning Rod|QID|38058|M|29.39,57.96|QO|2|N|To UI.|
+C 7th Legion Dragoon|QID|38059|NC|US|QO|1|N|Rescue Dragoons from the static fields.|
+T Lightning Rod|QID|38058|M|29.39,57.96|N|To UI.|
 A Signal Boost|QID|38060|PRE|38058|M|29.39,57.96|N|From UI.|
 T Pins and Needles|QID|38059|M|30.22,52.95|N|To UI.|
 $ Small Treasure Chest|QID|43196|M|32.93,48.10;32.06,47.20|CS|N|On top of the Weeping Bluffs is another Drake cave. You don't have to wake the sleeping drakes. Loot for a bit of treasure and resources.|RANK|3|
@@ -218,12 +218,12 @@ C Signal Boost|QID|38060|M|32.22,49.90|QO|2|N|Defend the Transponder from fosake
 T Signal Boost|QID|38060|M|33.81,46.03|N|To Sky Admiral Rogers.|
 
 ; The Trial of Might
-A The Ancient Trials|QID|38210|PRE|38060|M|33.74,45.80|QO|3|N|From Muninn.|
+A The Ancient Trials|QID|38210|PRE|38060|M|33.74,45.80|N|From Muninn.|
 A Stormforged Grapple Launcher|QID|39775|M|33.80,45.79|N|From Stormforged Grapple Launcher.|
 T Stormforged Grapple Launcher|QID|39775|M|33.80,45.79|N|From Stormforged Grapple Launcher.|
 $ Small Treasure Chest|QID|38680|M|35.92,47.92|N|On a lake on the Weeping Bluffs, loot for a bit of treasure and resources.|RANK|3|
 K Kill Bloodstalker Alpha|QID|38626|M|38.42,42.80|ITEM|129101|T|Bloodstalker Alpha|N|He roams this part of the valley. Silver - Kill and loot for a bit of treasure and resources.|RANK|3|
-T The Ancient Trials|QID|38210|M|38.61,45.79;40.11,50.34;41.93,49.48|CS|N|To Havi.|
+T The Ancient Trials|QID|38210|M|38.13,40.88;41.17,40.59;43.2,49.1|CS|N|To Havi.|
 A Havi's Test|QID|38331|PRE|38210|M|43.14,49.21|N|From Havi.|
 C Havi's Test|QID|38331|M|42.91,49.12|QO|1|NC|N|Click on the vegetables, face the stewpot, adjust angle if needed and press "4".|
 C Havi's Test|QID|38331|M|42.91,49.41|QO|2|NC|N|Click on the crabs, face the stewpot, adjust angle if needed and press "4".|
@@ -271,25 +271,25 @@ A Will of the Thorignir|QID|38473|PRE|39597|M|43.17,49.15|N|From Havi.| ; Allian
 ; The Trial of Will (Cry Thunder!)
 
 R Lorna's Watch|QID|38473|ACTIVE|38473|M|40.34,51.45;45.11,54.33;42.85,59.10;38.32,63.60|CS|N|Lets ride on to Hrydshal and then to the Watch.|
-f Lorna's Watch|QID|38473|M|37.41,63.99|N|At Donovan.|
+f Lorna's Watch|M|37.41,63.99|N|At Donovan.|
 T Will of the Thorignir|QID|38473|M|37.38,63.85|N|To Commander Lorna Crowley.|
 A A Grapple a Day|QID|38312|PRE|38473|M|37.38,63.85|N|From Commander Lorna Crowley.|
 C A Grapple a Day|QID|38312|M|37.37,63.79|QO|1|N|Stormforged Grapple Launcher|
 $ Treasure Chest|QID|38486|M|39.47,65.17|N|While you are running to the wall, get the chest under tent. Loot for a bit of treasure and resorces.|;moved you walk right past it
 T A Grapple a Day|QID|38312|M|42.02,64.48|N|To Commander Lorna Crowley.|
-A No Wings Required|QID|38318|PRE|38312|M|42.02,64.48|QO|2|N|From Commander Lorna Crowley.|
-A To Weather the Storm|QID|38405|PRE|38312|M|42.02,64.48|N|From Commander Lorna Crowley.|
+A No Wings Required|QID|38318|PRE|38312|M|42.02,64.48|N|From Commander Lorna Crowley.|
+A To Weather the Storm|QID|38405|M|42.02,64.48|N|From Commander Lorna Crowley.|
 C No Wings Required|QID|38318|M|42.88,64.85|QO|1|N|Click on the hook with the big Yellow Arrow and grapple over the wall|
 A Assault the Drekirjar-Bonus Objective|QID|38374|M|45.86,67.84|N|Auto-accepted when you enter the area.|RANK|2|LVL|-109|
 C Assault the Drekirjar-Bonus Objective|QID|38374|M|45.86,67.84|S|N|Go about your quests to advance this objective.|RANK|2|
 C Stormheim Savagery|QID|40179|M|45.86,67.84|Z|Stormheim|P|Leatherworking;164|S|N|Kill Vrykul to get the Bindings.|
 A Built to Scale|QID|38337|M|43.46,64.40|N|Kill a Stormwing Drake to get this quest from the UI.|
 C Built to Scale|QID|38337|M|45.05,66.45|S|N|Kill drakes and loot the 'Storm Drake Scales'.| ;keep sticky while you're in the area
-C To Weather the Storm|QID|38405|M|45.68,66.64|QO|3|N|Loot Oiled Cloak|
+C To Weather the Storm|QID|38405|M|45.68,66.64|NC|QO|3|N|Loot Oiled Cloak|
 $ Treasure Chest|QID|38474|M|42.6,65.80|N|Loot for a bit of treasure and resources.|
 C To Weather the Storm|QID|38405|M|43.98,66.99|QO|1|T|Stormbreaker Reykir|N|Kill Stormbreaker Reykir and loot the Enchanted Lodestone.| ; change order to not have to walk back
 K Kill Glimar Ironfist|QID|38333|M|41.5,66.7|QO|1|ITEM|129291|T|Glimar Ironfist|N|Silver - Kill and loot for a bit of treasure and resources.|
-C To Weather the Storm|QID|38405|M|41.86,68.40|QO|2|N|Loot Climbing Treads|
+C To Weather the Storm|QID|38405|M|41.86,68.40|NC|QO|2|N|Loot Climbing Treads|
 T No Wings Required|QID|38318|M|43.79,68.21|N|To Commander Lorna Crowley.|
 T To Weather the Storm|QID|38405|M|43.79,68.21|N|To Commander Lorna Crowley.|
 A Impalement Insurance|QID|38410|PRE|38405|M|43.79,68.21|N|From Commander Lorna Crowley.|
@@ -299,19 +299,19 @@ $ Treasure Chest|QID|38489|M|44.16,69.98|N|While you are grappling around, get t
 K Kill Thane Irglov the Merciless|QID|38424|M|40.66,72.40|T|Thane Irglov the Merciless|ITEM|129113|N|Silver - Kill the others in the Mead Hall, then you can take on Thane. Kill and loot for some treasure and resources.|RANK|2|
 $ Small Treasure Chest|QID|38475|M|40.56,69.74;40.64,68.52|CS|N|Hook up to the top of the tower to find a chest and loot for a bit of treasure and resources.|  ; Emma
 C Impalement Insurance|QID|38410|M|46.09,70.99|US|NC|N|Finish up destroying Harpoon Launchers.|
+A Built to Scale|QID|38337|M|43.46,64.40|US|N|Kill a Stormwing Drake to get this quest from the UI.|
 C Built to Scale|QID|38337|M|45.05,66.45|US|N|Kill drakes and loot the 'Storm Drake Scales'.|
 C Stormheim Savagery|QID|40179|M|45.86,67.84|Z|Stormheim|P|Leatherworking;164|US|QO|1|N|Kill Vrykul to get the Bindings.|
 T Impalement Insurance|QID|38410|M|46.25,70.37|N|To Commander Lorna Crowley.|
-T Built to Scale|QID|38337|M|46.25,70.36|N|To Commander Lorna Crowley.|
 A Another Way|QID|38342|PRE|38410|M|46.25,70.37|N|From Commander Lorna Crowley.|
 C Assault the Drekirjar-Bonus Objective|QID|38374|M|45.86,67.84|US|N|Stay and finish if you want, or manually click it off.|RANK|2|
 t Assault the Drekirjar-Bonus Objective|QID|38374|M|45.86,67.84|N|Auto turned in when complete.|RANK|2|
 K Another Way|QID|38342|M|46.24,72.39|QO|1|T|Gunnlaug Scaleheart|N|Kill Gunnlaug Scaleheart|
-C Another Way|QID|38342|M|45.70,73.12|QO|2|N|Climb the Tower. Turn in at Top, BEFORE grappling across.|
+C Another Way|QID|38342|NC|M|45.70,73.12|QO|2|N|Climb the Tower. Turn in at Top, BEFORE grappling across.|
 T Another Way|QID|38342|M|45.62,73.09|N|To Commander Lorna Crowley.|
 A Above the Winter Moonlight|QID|38412|PRE|38342|M|45.65,73.08|N|From Commander Lorna Crowley.|
 
-C Above the Winter Moonlight|QID|38412|M|46.36,74.37|QO|1|N|Grapple to the Mountain Path|
+C Above the Winter Moonlight|QID|38412|NC|M|46.36,74.37|QO|1|N|Grapple to the Mountain Path|
 $ Small Treasure Chest|QID|38476|M|48.13,74.22|N|Beside the waterfall, loot for a bit of treasure and resources.|RANK|2|
 K Kill Stormwing Matriarch|QID|38423|M|49.6,71.6|T|Stormwing Matriarch|QO|1|ITEM|129110|N|Silver - Kill and loot for a bit of treasure and resources. Also drops a pet.|RANK|2|
 U Stormwing Whelpling|QID|38423|M|49.6,71.6|U|129208|N|Click to add pet to your collection.|RANK|2|
@@ -330,8 +330,8 @@ K Kill Fathnyr|QID|38425|M|46.67,83.68|QO|1|ITEM|129206|T|Fathnyr|N|Silver - In 
 C Wings of Liberty|QID|38413|M|45.73,82.14|QO|4|NC|N|Free Hridmogir.|
 C Wings of Liberty|QID|38413|M|44.12,80.67|QO|3|NC|N|Free Erilar.|
 $ Small Treasure Chest|QID|43239|M|44.30,79.88;43.70,80.09|CS|N|On the top of the spire, hook you way up and loot for treasure and resources.|RANK|2|
-C Heart of a Dragon|QID|38414|M|42.31,81.89|Z|Stormheim/25|QO|1|N|Find the Thorignir Mother.|
-C Heart of a Dragon|QID|38414|M|41.75,81.46|Z|Stormheim/25|QO|2|T|Azariah|N|Kill Azariah.|
+C Heart of a Dragon|QID|38414|M|42.31,81.89|QO|1|N|Find the Thorignir Mother.|
+C Heart of a Dragon|QID|38414|M|41.75,81.46|QO|2|T|Azariah|N|Kill Azariah.|
 C Fury of the Storm|QID|40568|M|44.07,82.69|US|N|Finish killing the vrykul.|
 T Heart of a Dragon|QID|38414|M|42.75,82.73|N|To Vethir.|
 T Wings of Liberty|QID|38413|M|42.81,82.69|N|To Vethir.|
@@ -361,6 +361,7 @@ A Only the Finest|QID|39793|PRE|39789|M|51.46,57.06|N|From Rax Sixtrigger.|RANK|
 A Rigging the Wager|QID|39787|PRE|39789|M|51.26,57.21|N|From Snaggle Sixtrigger.|RANK|2|
 R Nastrondir|QID|39793|ACTIVE|39793|M|43.82,53.69;40.81,50.21;42.41,39.01|CS|N|Run thru Stony Highlands, Past Valley of the Sword and into Nastrondir.|RANK|2| ; Emma
 A The Brood of Nithogg-Bonus Objective|QID|42431|LVL|-109|M|42.65,38.71|N|Auto Accepted upon entering the area.|RANK|2|
+f Stormtorn Foothills |M|51.9,34.7|S|N|Talk to Hillevi the Scalekeeper|; Stormtorn Foothills |Z|1017;0|
 C The Brood of Nithogg-Bonus Objective|QID|42431|M|42.65,38.71|S|N|Kill the drakes and pick up eggs to advance the objective.|RANK|2| ; Emma
 C Only the Finest|QID|39793|M|44.14,37.51|S|N|Kill goats to collect the patches of goat hair.|RANK|2|
 $ Small Treasure Chest|QID|43238|M|43.14,39.01;43.17,40.49|CS|N|Hook out to find chest, loot for treasure and resources.|RANK|2|
@@ -370,8 +371,7 @@ $ Glimmering Treasure Chest|QID|43189|M|42.12,35.72;42.46,34.08|CS|ITEM|141896|N
 K Kill Egyl the Enduring|QID|40068|M|41.77,34.11|QO|1|ITEM|132898|N|There is a cave under the statue. Go inside to find Egyl. Kill and loot for a bit of treasure and resources.|RANK|2|
 C Only the Finest|QID|39793|M|44.14,37.51|US|N|Finish collecting the patches of goat hair.|RANK|2|
 C Rigging the Wager|QID|39787|M|48.87,34.07;48.24,32.81|CS|QO|1|N|There is a grapple point to his nest above. Fight with your back to the wall, so you dont get thrown off. Kill and loot his beak.|RANK|2|
-C The Brood of Nithogg-Bonus Objective|QID|42431|M|47.76,32.62|US|N|Finish or click off manually.|RANK|2| ; Emma
-t The Brood of Nithogg-Bonus Objective|QID|42431|M|47.76,32.62|N|Auto turned in upon completion.|RANK|2|
+f Stormtorn Foothills |M|51.9,34.7|US|N|Talk to Hillevi the Scalekeeper|; Stormtorn Foothills |Z|1017;0|
 A Plight of the Blackfeather|QID|42444|M|50.32,34.00|N|From Frightened Ravenbear.|RANK|2|
 T Plight of the Blackfeather|QID|42444|M|50.79,30.91;49.79,32.63|CS|N|To Cukkaw.|RANK|2|
 A Singed Feathers|QID|42446|PRE|42444|M|49.79,32.63|N|From Cukkaw.|RANK|2|
@@ -386,6 +386,8 @@ T Nithogg's Tribute|QID|42445|M|49.79,32.64|N|To Cukkaw.|RANK|2|
 A Dances With Ravenbears|QID|42447|PRE|42445;42446|M|49.79,32.64|N|From Cukkaw.|RANK|2|
 C Dances With Ravenbears|QID|42447|M|53.70,30.20|CHAT|N|Tell him you are ready (multiple times if needed). Mimic their motions 1-raise arms, 2-spin, 3-flap wings, |RANK|2|
 T Dances With Ravenbears|QID|42447|M|54.03,30.23|N|To Cukkaw.|RANK|2|
+C The Brood of Nithogg-Bonus Objective|QID|42431|M|47.76,32.62|US|N|Finish or click off manually.|RANK|2|
+t The Brood of Nithogg-Bonus Objective|QID|42431|M|47.76,32.62|N|Auto turned in upon completion.|RANK|2|
 f Stormtorn Foothills|QID|42447|M|51.98,34.80|N|At Hillevi the Scalekeeper.|RANK|2|
 F Lorna's Watch|QID|39787|M|51.98,34.81|N|Fly back to Lorna's Watch at Hillevi the Scalekeepter.|RANK|2|
 K Hook & Sinker|QID|38625|M|42.05,57.84|QO|1|ITEM|129109|T|Hook|N|Silver - Kill and loot for a bit of loot and Treasure.|RANK|2|
@@ -402,7 +404,7 @@ T A Stone Cold Gamble|QID|39786|M|51.31,56.99|N|To Snaggle Sixtrigger.|RANK|2|
 ; Back to business - The Trial of Valor
 
 R Valdisdall|QID|39803|M|51.12,54.76;57.87,50.47|CS|N|Off to Valdisdall|
-h Set Hearth to Valdisdall|QID|39803|M|60.54,50.26|N|At Riala the Hearthwatcher. If you are doing this on Rank 2 or 3.  It will save you a lot of time.|RANK|2|ACTIVE|39803|
+h Valdisdall|QID|39803|M|60.54,50.26|N|At Riala the Hearthwatcher. If you are doing this on Rank 2 or 3.  It will save you a lot of time.|RANK|2|ACTIVE|39803|
 f Valdisdall|QID|39803|M|60.73,50.86|N|At Garhal the Scalekeeper.|
 T The Trials Continue|QID|39803|M|60.14,50.74|N|To Havi.|
 A Speaking of Bones|QID|39804|PRE|39803|M|60.14,50.73|N|From Havi.|
@@ -436,7 +438,7 @@ C Lay Them to Rest|QID|39791|M|64.71,45.39|U|128772|S|N|Weaken them, below 75% a
 C Judgment Day|QID|38811|M|64.81,46.56|QO|2|N|Click on the offering bowl and be ready to fight.|T|Rythas the Oracle|
 $ Small Treasure Chest|QID|43205|M|65.37,43.12|N|Loot for a bit of treasure and resources.|
 C Judgment Day|QID|38811|M|67.56,43.00|QO|1|N|Judged by Heimir of the Black Fist.|T|Heimir of the Black Fist|
-A The Nameless King|QID|38685|M|67.26,39.93|QO|1|T|The Nameless King|N|Click on his offering shrine to start the vignette.  Kill him and earn treasure and resources.|RANK|2|
+A The Nameless King|QID|38685|M|67.26,39.93|T|The Nameless King|N|Click on his offering shrine to start the vignette.  Kill him and earn treasure and resources.|RANK|2|
 C Judgment Day|QID|38811|M|66.87,45.77|QO|3|N|Judged by Oktel Dragonblood|T|Oktel Dragonblood|
 $ Small Treasure Chest|QID|43302|M|64.20,41.58;64.29,39.55|CS|N|Loot for a bit of treasure and resources.|RANK|2|
 C Lay Them to Rest|QID|39791|M|64.71,45.39|U|128772|US|N|Finish returning the Restless Ancestors to the earth.|
@@ -567,7 +569,7 @@ T Ending the New Beginning|QID|39122|M|71.46,60.58|N|ToCommander Lorna Crowley|
 R Felskorn Warcamp|QID|40001|M|62.85,60.42|N|The best way I think is to use your grapple hook and go up the rooks at the back of Skol Ashil (near where Isel the Hammer was).  There is also a gate out the back of Skol Ashil then a path thru the Runewoods and finaly into the Felskorn Warcamp.|
 T Knocking on Valor's Door|QID|40001|M|65.91,59.53|N|To Vethir.|
 A A Familiar Fate|QID|40002|PRE|40001|M|65.91,59.53|N|From Vethir.|
-C A Familiar Fate|QID|40002|M|65.29,57.62|QO|1|T|Dravax|N|Kill Dravax and loot the shard.|
+K A Familiar Fate|QID|40002|M|65.29,57.62|QO|1|T|Dravax|N|Kill Dravax and loot the shard.|
 $ Small Treasure Chest|QID|43187|M|65.58,57.36|N|Loot for a bit of treasure and resources.|
 C A Familiar Fate|QID|40002|M|65.94,59.40|QO|2|CHAT|N|Click on the circle of binding to free Vethir.|
 T A Familiar Fate|QID|40002|M|65.94,59.53|N|To Vethir.|
@@ -665,7 +667,7 @@ C A Murky Fate|QID|40120|M|79.61,59.90|QO|1|U|129725|US|N|Finish up burning the 
 C Rout the Bilgefin Invaders-Bonus Objective|QID|40111|M|80.44,53.11|N|Stay and finish this up or click off manually and move on.|RANK|2|
 t Rout the Bilgefin Invaders-Bonus Objective|QID|40111|M|81.12,61.30|N|Auto turned in upon completion.|RANK|2|
 T A Murky Fate|QID|40120|M|78.24,58.64|N|To Morheim Ancestor.|RANK|2|
-$ Small Treasure Chest|QID|43191|M|52.37,54.51|N|Loot for a bit of treasure and resources.|RANK|2|
+$ Small Treasure Chest|QID|43191|M|82.40,54.51|N|Loot for a bit of treasure and resources.|RANK|2|
 C Put It All on Red|QID|42483|M|81.58,52.56|T|Steelscale|N|This is difficult to solo for most classes. You may want to bring a friend. Kill Steelscale and loot his fin.|RANK|2|
 
 R Bronzeleaf Thicket|QID|43304|M|79.51,62.85;77.31,63.72|CS|N|Three more treasure chests up here.|RANK|3|
@@ -675,6 +677,105 @@ $ Small Treasure Chest|QID|43237|M|73.98,58.59|N|Loot for treasure and resources
 R Talonrest|QID|42483|M|51.4,57.4|U|6948|N|If you set your hearthstone to Valdisdall, this is where you want to use it!|RANK|2|
 T Put It All on Red|QID|42483|M|51.41,57.35|N|To Snaggle's Note. (Optional) Use your reward (magnifying glass) to determine the true value of the other quest rewards.|RANK|2|
 N End of Stormheim|QID|99999|U|140192|N|Return to your Class Order Hall to pick your next zone and tend to your missions.|
+
+$ Small Treasure Chest|QID|38490|M|33.62,27.28;32.73,27.90|CS|N|Loot for a bit of treasure and resources.|
+$ Captain Tomas of the Blightcaller|QID|38498|M|35.53,18.67|QO|1|ITEM|129040|N|Talk to Captain Tomas to start the vignette. You will need to check this off manually.|;havent yet found correct QID
+$ Small Treasure Chest|QID|38498|M|39.58,19.35|N|Loot for a bit of treasure and resources.|
+$ Treasure Chest|QID|43195|M|50.00,18.10|N|Loot for a bit of treasure and resources.|RANK|3|
+$ Small Treasure Chest|QID|38487|M|35.03,36.60|N|Loot for a bit of treasure and resources.|
+$ Small Treasure Chest|QID|38495|M|33.13,36.06|N|Loot for a bit of treasure and resources.|
+$ Small Treasure Chest|QID|43208|M|36.00,39.22;37.21,38.66|CS|N|Loot for a bit of treasure and resources.|
+
+$ Small Treasure Chest|QID|38488|M|41.75,46.03|N|Loot for a bit of treasure and resources.|
+$ Treasure Chest|QID|38483|M|50.13,42.10;50.32,41.00|CS|N|Loot for a bit of treasure and resources.|
+$ Treasure Chest|QID|43246|M|51.46,41.55;50.54,41.24|CS|N|Standing at the first coordinate, look up and northeast.  Follow the grapple hook path towards the 2nd coordinate to find the chest. Loot for a bit of treasure and resources.|
+$ Treasure Chest|QID|38474|M|42.6,65.80|N|Loot for a bit of treasure and resources.|
+$ Treasure Chest|QID|38486|M|39.48,65.18|N|While you are on the wall, hop down and get this chest. Loot for a bit of treasure and resorces.|
+$ Treasure Chest|QID|38489|M|44.16,69.97|N|While you are grappling around, get this chest on a rooftop. Loot for a bit of treasure and resources.|
+$ Small Treasure Chest|QID|38475|M|40.64,68.52|N|Hook up to the top of the tower to find a chest and loot for a bit of treasure and resources.|
+$ Small Treasure Chest|QID|38476|M|48.13,74.22|N|Beside the waterfall, loot for a bit of treasure and resources.|
+$ Small Treasure Chest|QID|38485|M|49.24,76.99;49.76,77.99|CS|N|One grapple point off the trail, you will find a chest in this niche. Loot for treasure and resources, then back to traveling upwards on the trail.|
+$ Treasure Chest|QID|38481|M|46.77,80.40|N|Look South-Southeast from Hrafsir, Hook to the chest, loot for treasure and resources.|
+$ Small Treasure Chest|QID|43239|M|44.30,79.88;43.70,80.09|CS|N|On the top of the spire, hook you way up and loot for treasure and resources.|
+
+$ Glimmering Treasure Chest|QID|38763|M|49.70,49.20;49.69,47.28|CS|N|Dodge the energy beams, open the chest, be ready to fight.  Loot for a bit of treasure and resources.|RANK|2|
+$ Small Treasure Chest|QID|43207|M|49.07,60.00|N|Loot for a bit of treasure and resources.|RANK|2|
+$ Small Treasure Chest|QID|43238|M|43.14,39.01;43.17,40.49|CS|N|Hook out to find chest, loot for treasure and resources.|RANK|2|
+$ Small Treasure Chest|QID|43240|M|44.06,37.88;44.99,38.24|CS|N|Use grapple points to get to this treasure. Loot for a bit of treasure and resources.|RANK|2|
+$ Small Treasure Chest|QID|43255|M|45.68,32.90;46.29,33.12;46.49,34.09;47.45,34.10|CS|N|Use grapple points to get to this treasure. Loot for a bit of treasure and resources.|RANK|2|
+$ Glimmering Treasure Chest|QID|43189|M|42.12,35.72;42.46,34.08|CS|ITEM|141896|N|Long run up the steps At the top you get achievement and a chest to loot for treasure and resources.|RANK|3|
+$ Small Treasure Chest|QID|38477|M|42.33,61.12|N|Kill the basilisk curled around the treasure and then its yours. Loot for treasure and resources.|RANK|2|
+$ Treasure Chest|QID|38738|M|47.97,62.37|N|Underwater and the base of the waterfall. Loot for a bit of treasure and resources.|
+$ Small Treasure Chest|QID|38681|M|48.18,65.20;46.60,64.96|CS|N|Inside the cave.  Loot for a bit of treasure and resources.|RANK|2|
+$ Small Treasure Chest|QID|40083|M|67.99,57.77|N|Loot fora bit of resources and treasure.|
+$ Small Treasure Chest|QID|43205|M|65.37,43.12|N|Loot for a bit of treasure and resources.|
+$ Treasure Chest|QID|38744|M|68.00,16.69;68.42,29.60|CS|N|If we had a rank 4, this would earn it.  Way out in the bay, is a spire. go to first coord and hook your way up towards the top.  Chest is on the rock, not the buiding at the top. Loot for resources and treasure.|RANK|3|
+$ Small Treasure Chest|QID|43302|M|64.20,41.58;64.29,39.55|CS|N|Loot for a bit of treasure and resources.|
+$ Small Treasure Chest|QID|38637|M|69.35,44.97;69.13,44.77|CS|N|Use grapple point to reach chest. Loot for treasure and resources.|
+$ Small Treasure Chest|QID|40086|M|69.0,41.9|CS|N|In the room with the ritual stone. Loot for treasure and resources.|
+$ Small Treasure Chest|QID|43305|M|72.24,43.75;71.95,44.14|CS|N|Use your grappling hook to go up and get this chest. Loot for a bit of treasure and resources.|
+$ Small Treasure Chest|QID|43306|M|73.25,42.68;74.41,41.84|CS|N|Get this before you complete the next quest or you will have to run a long ways back to get it.  Use Hook to get up to alcove above. Loot for a bit of treasure and resources.|RANK|3|
+$ Small Treasure Chest|QID|40085|M|73.33,41.51|N|Loot for treasure and resources.|
+$ Treasure Chest|QID|38509;38510|M|79.88,24.72|Z|Helheim|N|Loot for treasure and resources.|
+$ Treasure Chest|QID|38503|M|83.3,24.6|Z|Helheim|N|You can find this chest underwater inside a sunken ship. Loot for treasure and resources.|RANK|2|
+$ Treasure Chest|QID|38511;38516|M|19.62,46.98|Z|Helheim|N|Loot for treasure and resources.|
+$ Small Treasure Chest|QID|38383|M|60.7,53.3|Z|Helheim|N|Loot for a bit of treasure and resources.|
+$ Small Treasure Chest|QID|38480|M|51.4,76.7;52.03,80.56|CS|N|Path Starts beside Hannval's house. Run up to find chest. Loot for a bit of treasure and resources.|RANK|3|
+$ Small Treasure Chest|QID|43190|M|59.14,87.18;53.19,93.12|CS|N|This is WAY down the trail. Loot or a bit of treasure and resources. Run back up to the flightpath the way you came.|RANK|3|
+$ Small Treasure Chest|QID|40090|M|57.95,63.35|N|Loot for a bit of treasure and resources.|
+$ Treasure Chest|QID|40089|M|61.83,62.89|
+$ Treasure Chest|QID|40088|M|59.25,58.59|N|Loot for a bit of treasure and resources.|
+$ Treasure Chest|QID|40091|M|60.33,72.30;60.89,71.80;62.6,73.6|CS|N|Run up this path and into the tower for a chest to loot for a bit of treasure and resources.|RANK|2|
+$ Small Treasure Chest|QID|43187|M|65.58,57.36|N|Loot for a bit of treasure and resources.|
+$ Small Treasure Chest|QID|43188|M|70.00,67.17|N|Before you go back up the central stairs, Loot for a bit of treasure and resources.|
+$ Small Treasure Chest|QID|40094|M|60.85,42.73|N|Use grapple to get on roof beam with chest.  Loot for resources and treasure.|RANK|2|
+$ Small Treasure Chest|QID|40093|M|61.41,44.41|N|Loot for treasure and resources.|RANK|2|
+$ Small Treasure Chest|QID|40082|M|58.04,47.51|N|Run up to the top of the tower to find a chest. Loot for a bit of treasure and resources.|RANK|2|
+$ Treasure Chest|QID|40095|M|54.98,47.14|N|Underwater on the deck of sunken ship. Loot for a bit of treasure and resources.|RANK|2|
+$ Treasure Chest|QID|38744|M|61.91,32.25|N|Loot for a bit of treasure and resources.|RANK|3|
+$ Small Treasure Chest|QID|43194|M|73.10,45.72|N|Loot for a bit of treasure and resources.|RANK|2|
+$ Small Treasure Chest|QID|42629|M|75.37,52.11|N|Hook from the ship to piller.  Chest on top of piller. Loot for a bit of treasure and resources.|RANK|2|
+$ Treasure Chest|QID|42629|M|75.17,49.49|N|Hook to the next ship and then up to the crows nest to find a chest. Loot for treasure and resources.|RANK|2|
+$ Small Treasure Chest|QID|42632|M|73.9,52.2|N|Loot for a bit of treasure and resources.|RANK|2|
+$ Treasure Chest|QID|40099|M|80.58,67.04;81.86,67.49|CS|N|Loot for a bit of treasure and resources.|RANK|3|
+$ Small Treasure Chest|QID|43191|M|82.40,54.51|N|Loot for a bit of treasure and resources.|RANK|2|
+$ Small Treasure Chest|QID|43307|M|76.05,65.05;76.91,66.17;77.25,67.18;77.31,68.16;77.12,69.29;78.57,70.33;78.43,71.38|CS|N|Very time comsuming to get to. About 5 hook points and a couple of jump downs.  Loot for a bit of treasure and resources. (or decide you dont want to.)|RANK|3|
+$ Small Treasure Chest|QID|43304|M|75.49,60.10;75.62,60.63|CS|N|Look up from first coord. Use Hook Point. Loot for treasure and resources.|RANK|3|
+$ Small Treasure Chest|QID|43237|M|73.98,58.59|N|Loot for treasure and resources.|RANK|3|
+
+K Kill Bloodstalker Alpha|QID|38626|M|38.42,42.80|QO|1|ITEM|129101|T|Bloodstalker Alpha|N|He roams this part of the valley. Silver - Kill and loot for a bit of treasure and resources.|
+K Kill Glimar Ironfist|QID|38333|M|41.5,66.7|QO|1|ITEM|129291|T|Glimar Ironfist|N|Silver - Kill and loot for a bit of treasure and resources.|
+K Kill Thane Irglov the Merciless|QID|38424|M|40.66,72.40|T|Thane Irglov the Merciless|ITEM|129113|N|Silver - Kill the others in the Mead Hall, then you can take on Thane. Kill and loot for some treasure and resources.|RANK|2|
+K Kill Stormwing Matriarch|QID|38423|M|49.6,71.6|T|Stormwing Matriarch|QO|1|ITEM|129110|N|Silver - Kill and loot for a bit of treasure and resources. Also drops a pet.|
+K Kill Bladesquall|QID|38431|M|45.88,77.37|QO|1|ITEM|129048|T|Bladesquall|N|Grapple across the defunct bridge for this silver - Kill and loot for a bit of treasure and resources.|
+K Kill Fathnyr|QID|38425|M|46.67,83.68|QO|1|ITEM|129206|T|Fathnyr|N|Silver - In a small cave roughly above Hridmogir, easiert reached from hook points starting at the cave Aleifir was in. Loot for a bit of resources and treasure.|
+K Kill Tiptog the Lost|QID|38774|M|46.29,50.01|T|Tiptog the Lost|QO|1|ITEM|129163|N|Silver - Kill and loot for a bit of treasure and resources.|RANK|2|
+K Kill Houndmaster Ely|QID|38712|M|47.10,57.20|QO|1|ITEM|129037|T|Houndmaster Ely|N|Silver - Kill and loot for a bit of loot and Treasure.|RANK|2|
+K Kill Egyl the Enduring|QID|40068|M|41.77,34.11|QO|1|ITEM|132898|N|There is a cave under the statue. Go inside to find Egyl. Kill and loot for a bit of treasure and resources.|RANK|2|
+K Kill Starbuck|QID|42437|M|54.70,29.21|QO|1|ITEM|130132|T|Starbuck|N|Kill and loot for a bit of treasure and resources.|RANK|2|
+K Kill Urgev the Flayer|QID|38847|M|64.88,51.82|QO|1|ITEM|129219|T|Urgev the Flayer|N|Silver - Kill and loot for a bit of treasure and resources.|
+K Kill Mordvigbjorn|QID|38837|M|72.60,49.99|QO|1|ITEM|129035|T|Mordvigbjorn|N|Silver - Kill and loot for a bit of treasure and resources.|RANK|2|
+K Kill Fenri|QID|38461|M|84.94,50.05|Z|Helheim|QO|1|ITEM|129291|T|Fenri|N|Silver - Loot for a bit of treasure and resorces.|RANK|2|
+K Kill Soulthirster|QID|39870|M|28.27,64.80|Z|Helheim|QO|1|ITEM|129188|T|Soulthirster|N|Silver - Kill for a pet and the usual resources.|
+K Kill Daniel "Boomer" Vorick|QID|39048|M|58.42,75.65|ITEM|129144|QO|1|T|Daniel "Boomer" Vorick|N|Silver - Kill and loot for a bit of treasure and resources and FOR THE HORDE!|RANK|2|
+K Kill Hannval the Butcher|QID|42591|M|51.69,74.50|QO|1|T|Hannval the Butcher|N|Silver - Kill for treasure and resources.|RANK|2|
+K Kill Isel the Hammer|QID|39120|M|62.02,60.48|QO|1|ITEM|129133|T|Isel the Hammer|N|Silver - Kill and loot for a bit of resources and treasure.|
+K Kill Ivory Sentinel|QID|39031|M|59.86,68.07|QO|1|ITEM|132895|T|Ivory Sentinel|N|Silver - Kill and loot for a bit of treasure and resources.|
+K Kill Inquisitor Ernstenbok|QID|37908|M|63.66,74.33|QO|1|ITEM|140685|T|Inquisitor Ernstenbok|N|Silver - Kill and loot for a bit of treasure and resources.|RANK|2|
+K Kill Tarben|QID|40081|M|60.90,43.91;61.53,43.25|CS|QO|1|ITEM|129199|T|Tarben|N|Silver - From the roofbeam, Grapple to the loading dock above and then Kill Tarben for a bit of treasure and resources.|RANK|2|
+K Kill Captain Brvet|QID|38642|M|57.97,45.28|QO|1|ITEM|129123|N|Silver - Blow the "Horn of the Helmouth", to summon 3 raiders. Kill and loot for a bit of treasure and resources.|RANK|2|
+K Kill Captain Sten|QID|43595|M|55.83,46.82|QO|1|T|Captain Sten|RANK|2|
+K Kill Halvir|QID|43595|M|53.86,42.13|QO|4|T|Halvir|RANK|2|
+K Kill Sigrid|QID|43595|M|54.43,35.12|QO|2|T|Sigrid|RANK|2|
+K Kill Kjell|QID|43595|M|57.00,34.81|QO|3|T|Kjell|RANK|2|
+K Kill Roteye|QID|43342|QO|1|M|57.73,34.77;58.37,33.96|CS|ITEM|139387|T|Roteye|N|Silver-Kill and loot for a bit of treasure and resources.|RANK|2|
+K Kill Kottr Vondyr|QID|40109|M|73.46,47.68|QO|1|ITEM|138419|T|Kottr Vondyr|N|Silver - Kill and loot for a bit of treasure and resources.|RANK|2|
+K Kill Grrvrgull the Conquerer|QID|40113|M|78.65,61.17|QO|1|ITEM|138421|T|Grrvrgull the Conquerer|N|Silver - Kill and loot for a bit of treasure and resources.|RANK|2|
+K Kill Apothecary Perez|M|44.2,22.8|ITEM|129266|
+K Kill Assassin Huwe|M|44.2,22.8|ITEM|129266|
+K Kill Dark Ranger Jess|M|44.2,22.8|ITEM|129266|
+K Kill Deathguard Adams|M|44.2,22.8|ITEM|129266|
+K Kill Deathguard Adams|M|77,62|ITEM|130134|
 
 ; Standard Class Halls redirect
 D On to Class Halls|N|This ends Stormheim and the Druid order hall guide will load.|C|Druid|GUIDE|EmmLegionDruid|
@@ -698,3 +799,353 @@ K Kill Deathguard Adams|M|77,62|ITEM|130134|
 ]]
 
 end)
+
+--[==[
+C Judgment Day |QID|38811|QO|2|M|64.7,46.5|Z|Stormheim|; Field of Fallen Kings |Z|1017;0|
+; |U|128772|M|65.4,43.2|Z|Stormheim|N|item:128772 [Branch of the Runewood]|; Field of Fallen Kings |Z|1017;0|
+; |U|140310|M|67.3,39.7|Z|Stormheim|N|item:140310 [Crude Statuette]|; Field of Fallen Kings |Z|1017;0|
+; |U|138839|M|67.3,39.7|Z|Stormheim|N|item:138839 [Valiant's Glory]|; Field of Fallen Kings |Z|1017;0|
+C Judgment Day |QID|38811|QO|1|M|67.5,42.9|Z|Stormheim|; Field of Fallen Kings |Z|1017;0|
+C Judgment Day |QID|38811|QO|3|M|66.7,45.6|Z|Stormheim|; Field of Fallen Kings |Z|1017;0|
+C Judgment Day |QID|38811|M|66.7,45.6|Z|Stormheim|; Field of Fallen Kings |Z|1017;0|
+; |U|128772|M|67.7,44.2|Z|Stormheim|N|item:128772 [Branch of the Runewood]|; Field of Fallen Kings |Z|1017;0|
+; |U|128772|M|66.5,46.3|Z|Stormheim|N|item:128772 [Branch of the Runewood]|; Field of Fallen Kings |Z|1017;0|
+; |U|128772|M|66.5,46.3|Z|Stormheim|N|item:128772 [Branch of the Runewood]|; Field of Fallen Kings |Z|1017;0|
+; |U|128772|M|66.7,47.8|Z|Stormheim|N|item:128772 [Branch of the Runewood]|; Field of Fallen Kings |Z|1017;0|
+; |U|128772|M|66.7,47.8|Z|Stormheim|N|item:128772 [Branch of the Runewood]|; Field of Fallen Kings |Z|1017;0|
+; |U|128772|M|65.2,47.1|Z|Stormheim|N|item:128772 [Branch of the Runewood]|; Field of Fallen Kings |Z|1017;0|
+; |U|128772|M|65.2,47.1|Z|Stormheim|N|item:128772 [Branch of the Runewood]|; Field of Fallen Kings |Z|1017;0|
+; |U|128772|M|65.3,45.5|Z|Stormheim|N|item:128772 [Branch of the Runewood]|; Field of Fallen Kings |Z|1017;0|
+; |U|128772|M|64.7,45.2|Z|Stormheim|N|item:128772 [Branch of the Runewood]|; Field of Fallen Kings |Z|1017;0|
+C Lay Them to Rest |QID|39791|M|64.7,45.2|Z|Stormheim|; Field of Fallen Kings |Z|1017;0|
+T Judgment Day |QID|38811|M|68.1,48.7|Z|Stormheim|N|To Shieldmaiden Iounn|; Field of Fallen Kings |Z|1017;0|
+A Regal Remains |QID|38817|M|68.1,48.7|Z|Stormheim|N|From Shieldmaiden Iounn|; Field of Fallen Kings |Z|1017;0|
+T Lay Them to Rest |QID|39791|M|68.1,48.7|Z|Stormheim|N|To Shieldmaiden Iounn|; Field of Fallen Kings |Z|1017;0|
+A Breaking the Bonespeakers |QID|38816|M|68.1,48.7|Z|Stormheim|N|From Shieldmaiden Iounn|; Field of Fallen Kings |Z|1017;0|
+A The Runes that Bind |QID|38823|M|69.8,45.7|Z|Stormheim|N|From Bonespeaker Cleaver|; Haustvald |Z|1017;0|
+; |U|138783|M|73.3,41.4|Z|Stormheim|N|item:138783 [Glittering Memento]|; Haustvald |Z|1017;0|
+C The Runes that Bind |QID|38823|M|69.6,42.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C Breaking the Bonespeakers |QID|38816|M|69.7,41.7|Z|Stormheim|; Haustvald |Z|1017;0|
+C Regal Remains |QID|38817|M|69.4,41.7|Z|Stormheim|; Haustvald |Z|1017;0|
+T Regal Remains |QID|38817|M|69.9,45.5|Z|Stormheim|N|To Shieldmaiden Iounn|; Haustvald |Z|1017;0|
+T Breaking the Bonespeakers |QID|38816|M|69.9,45.5|Z|Stormheim|N|To Shieldmaiden Iounn|; Haustvald |Z|1017;0|
+T The Runes that Bind |QID|38823|M|69.9,45.5|Z|Stormheim|N|To Shieldmaiden Iounn|; Haustvald |Z|1017;0|
+A Waking the Shieldmaiden |QID|38815|M|69.9,45.5|Z|Stormheim|N|From Shieldmaiden Iounn|; Haustvald |Z|1017;0|
+; |U|138419|M|72.3,49.2|Z|Stormheim|N|item:138419 [The Binder's Bonds]|; The Runewood |Z|1017;0|
+; |U|129231|M|72.3,49.2|Z|Stormheim|N|item:129231 [Stormborn Treads]|; The Runewood |Z|1017;0|
+; |U|129336|M|72.3,49.2|Z|Stormheim|N|item:129336 [Runesworn Bindings]|; The Runewood |Z|1017;0|
+A The Mystery of Dreyrgrot |QID|42635|M|74.9,55.6|Z|Stormheim|N|From Sir Finley Mrrgglton|; Dreyrgrot |Z|1017;0|
+A A Stone of Blood |QID|42639|M|74.9,55.6|Z|Stormheim|N|From Sir Finley Mrrgglton|; Dreyrgrot |Z|1017;0|
+T Mystery at Citrine Bay |QID|44116|M|77.3,55.1|Z|Stormheim|N|To Fleet Admiral Tethys|; Citrine Bay |Z|1017;0|
+A Searching For Clues |QID|44155|M|77.3,55.1|Z|Stormheim|N|From Fleet Admiral Tethys|; Citrine Bay |Z|1017;0|
+A Time Flies When Yer Havin' Rum! |QID|44117|M|77.3,55.1|Z|Stormheim|N|From Fleet Admiral Tethys|; Citrine Bay |Z|1017;0|
+A Remnants of the Past |QID|39984|M|63.0,48.6|Z|Stormheim|; Tideskorn Harbor |Z|1017;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Stormheim|; Tideskorn Harbor |Z|1017;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Stormheim|; Tideskorn Harbor |Z|1017;0|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Stormheim|; Tideskorn Harbor |Z|1017;0|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Stormheim|; Tideskorn Harbor |Z|1017;0|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Stormheim|; Tideskorn Harbor |Z|1017;0|
+; |U|139608|M|0.0,0.0|Z|Dalaran|N|item:139608 [Brittle Spelltome]|; The Hall of Shadows |Z|1014;10|
+A Shadows in the Mists |QID|40044|M|60.8,27.0|Z||;  |Z|1007;0|
+; |U|118922|M|57.9,34.5|Z|Stormheim|N|item:118922 [Oralius' Whispering Crystal]|; Helmouth Shallows |Z|1017;0|
+T Shadows in the Mists |QID|40044|M|59.0,42.9|Z|Stormheim|N|To Havi|; Tideskorn Harbor |Z|1017;0|
+T Scavenging the Shallows |QID|40046|M|59.0,42.9|Z|Stormheim|N|To Havi|; Tideskorn Harbor |Z|1017;0|
+T To Honor the Fallen |QID|43595|M|59.0,42.9|Z|Stormheim|N|To Havi|; Tideskorn Harbor |Z|1017;0|
+A Scavenging the Shallows |QID|40046|M|58.9,42.8|Z|Stormheim|N|From Havi|; Tideskorn Harbor |Z|1017;0|
+A To Honor the Fallen |QID|43595|M|58.9,42.8|Z|Stormheim|N|From Havi|; Tideskorn Harbor |Z|1017;0|
+A Shadows in the Mists |QID|40044|M|58.9,42.8|Z|Stormheim|N|From Havi|; Tideskorn Harbor |Z|1017;0|
+; Usernote: T||Captain Sten|T|Captain Sten|N|GUID = Creature-0-3020-1220-31825-98014-00004C1093|M|55.7,46.9|Z|Stormheim|; Helmouth Shallows |Z|1017;0|
+C Shadows in the Mists |QID|40044|QO|1|M|55.6,46.8|Z|Stormheim|; Helmouth Shallows |Z|1017;0|
+C Scavenging the Shallows |QID|40046|M|55.9,43.2|Z|Stormheim|; Helmouth Shallows |Z|1017;0|
+; Usernote: xxx|T|Halvir|N|GUID = Creature-0-3020-1220-31825-98018-00004C183D|M|53.8,42.1|Z|Stormheim|; Helmouth Shallows |Z|1017;0|
+C Shadows in the Mists |QID|40044|QO|4|M|53.9,42.0|Z|Stormheim|; Helmouth Shallows |Z|1017;0|
+; Usernote: z|T|Sigrid|N|GUID = Creature-0-3020-1220-31825-98015-00004C18D8|M|54.5,35.1|Z|Stormheim|; Helmouth Shallows |Z|1017;0|
+C Shadows in the Mists |QID|40044|QO|2|M|54.8,34.9|Z|Stormheim|; Helmouth Shallows |Z|1017;0|
+C To Honor the Fallen |QID|43595|M|54.8,34.9|Z|Stormheim|; Helmouth Shallows |Z|1017;0|
+; Usernote: z|T|Kjell|N|GUID = Creature-0-3020-1220-31825-98016-00004C1929|M|56.9,34.9|Z|Stormheim|; Helmouth Shallows |Z|1017;0|
+C Shadows in the Mists |QID|40044|QO|3|M|56.9,34.9|Z|Stormheim|; Helmouth Shallows |Z|1017;0|
+C Shadows in the Mists |QID|40044|M|56.9,34.9|Z|Stormheim|; Helmouth Shallows |Z|1017;0|
+T Scavenging the Shallows |QID|40046|M|58.9,42.8|Z|Stormheim|N|To Havi|; Tideskorn Harbor |Z|1017;0|
+T To Honor the Fallen |QID|43595|M|58.9,42.8|Z|Stormheim|N|To Havi|; Tideskorn Harbor |Z|1017;0|
+T Shadows in the Mists |QID|40044|M|58.9,42.8|Z|Stormheim|N|To Havi|; Tideskorn Harbor |Z|1017;0|
+C Waking the Shieldmaiden |QID|38815|M|71.5,42.5|Z|Stormheim|; Haustvald |Z|1017;0|
+T Waking the Shieldmaiden |QID|38815|M|71.5,42.5|Z|Stormheim|N|To Ashildir|; Haustvald |Z|1017;0|
+A The Final Judgment |QID|38818|M|71.5,42.5|Z|Stormheim|N|From Ashildir|; Haustvald |Z|1017;0|
+; Usernote: Take the portal to Helheim|M|73.6,39.5|Z|Stormheim|; Haustvald |Z|1017;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Helheim|;  |Z|1022;0|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Helheim|;  |Z|1022;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Helheim|;  |Z|1022;0|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Helheim|;  |Z|1022;0|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Helheim|;  |Z|1022;0|
+; Usernote: z|T|Runeseer Faljar|N|GUID = Creature-0-3020-1220-31825-93093-00004C1183|M|73.1,40.1|Z|Stormheim|; Haustvald |Z|1017;0|
+C The Final Judgment |QID|38818|M|73.2,39.9|Z|Stormheim|; Haustvald |Z|1017;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C The Final Judgment |QID|38818|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+T The Final Judgment |QID|38818|M|65.5,47.2|Z|Helheim|N|To Ashildir|;  |Z|1022;0|
+A Raze Hel |QID|38343|M|65.5,47.2|Z|Helheim|N|From Ashildir|;  |Z|1022;0|
+A An Unworthy Task |QID|39837|M|65.5,47.2|Z|Helheim|N|From Ashildir|;  |Z|1022;0|
+C An Unworthy Task |QID|39837|M|60.8,43.8|Z|Helheim|;  |Z|1022;0|
+T An Unworthy Task |QID|39837|M|64.6,43.3|Z|Helheim|N|To Colborn the Unworthy|;  |Z|1022;0|
+A A Little Kelp From My Foes |QID|38339|M|64.6,43.3|Z|Helheim|N|From Colborn the Unworthy|;  |Z|1022;0|
+A Accessories of the Cursed |QID|38324|M|64.6,43.3|Z|Helheim|N|From Colborn the Unworthy|;  |Z|1022;0|
+C Accessories of the Cursed |QID|38324|M|69.0,29.0|Z|Helheim|;  |Z|1022;0|
+C A Little Kelp From My Foes |QID|38339|M|67.7,27.6|Z|Helheim|;  |Z|1022;0|
+T A Little Kelp From My Foes |QID|38339|M|64.6,43.4|Z|Helheim|N|To Colborn the Unworthy|;  |Z|1022;0|
+T Accessories of the Cursed |QID|38324|M|64.6,43.4|Z|Helheim|N|To Colborn the Unworthy|;  |Z|1022;0|
+A Stealth by Seaweed |QID|38347|M|64.6,43.4|Z|Helheim|N|From Colborn the Unworthy|;  |Z|1022;0|
+C Stealth by Seaweed |QID|38347|M|47.5,32.8|Z|Helheim|;  |Z|1022;0|
+T Stealth by Seaweed |QID|38347|M|46.9,32.9|Z|Helheim|N|To Ashildir|;  |Z|1022;0|
+A A Desperate Bargain |QID|39848|M|46.9,32.9|Z|Helheim|N|From Ashildir|;  |Z|1022;0|
+C A Desperate Bargain |QID|39848|QO|1|M|34.0,27.6|Z|Helheim|; Helya's Throne |Z|1022;0|
+C A Desperate Bargain |QID|39848|QO|2|M|34.0,27.6|Z|Helheim|; Helya's Throne |Z|1022;0|
+C A Desperate Bargain |QID|39848|M|34.0,27.6|Z|Helheim|; Helya's Throne |Z|1022;0|
+T A Desperate Bargain |QID|39848|M|34.0,27.6|Z|Helheim|; Helya's Throne |Z|1022;0|
+A The Eternal Nemesis |QID|39857|M|34.0,27.6|Z|Helheim|; Helya's Throne |Z|1022;0|
+T The Eternal Nemesis |QID|39857|M|46.8,49.0|Z|Helheim|N|To Ashildir|; The Eternal Battlefield |Z|1022;0|
+; |U|141391|M|46.8,49.0|Z|Helheim|N|item:141391 [Ashildir's Unending Courage]|; The Eternal Battlefield |Z|1022;0|
+A To Light the Way |QID|39849|M|46.8,49.0|Z|Helheim|N|From Ashildir|; The Eternal Battlefield |Z|1022;0|
+T Raze Hel |QID|38343|M|22.9,55.3|Z|Helheim|N|To Kvaldir Mistcaller|;  |Z|1022;0|
+; Usernote: z|T|Bloodbeard|N|GUID = Creature-0-3882-1463-13382-91657-00004C22A9|M|22.1,62.0|Z|Helheim|;  |Z|1022;0|
+C To Light the Way |QID|39849|M|22.1,62.0|Z|Helheim|;  |Z|1022;0|
+T To Light the Way |QID|39849|M|46.9,48.9|Z|Helheim|N|To Ashildir|; The Eternal Battlefield |Z|1022;0|
+A Sundered |QID|39850|M|46.9,48.9|Z|Helheim|N|From Ashildir|; The Eternal Battlefield |Z|1022;0|
+A Allies in Death |QID|39851|M|46.9,48.9|Z|Helheim|N|From Ashildir|; The Eternal Battlefield |Z|1022;0|
+C Sundered |QID|39850|QO|3|M|35.3,76.2|Z|Helheim|; The Eternal Battlefield |Z|1022;0|
+C Sundered |QID|39850|QO|2|M|57.4,77.1|Z|Helheim|; The Eternal Battlefield |Z|1022;0|
+C Allies in Death |QID|39851|M|59.1,66.5|Z|Helheim|; The Eternal Battlefield |Z|1022;0|
+C Sundered |QID|39850|QO|1|M|63.8,61.2|Z|Helheim|; The Eternal Battlefield |Z|1022;0|
+C Sundered |QID|39850|M|63.8,61.2|Z|Helheim|; The Eternal Battlefield |Z|1022;0|
+T Sundered |QID|39850|M|46.9,48.9|Z|Helheim|N|To Ashildir|; The Eternal Battlefield |Z|1022;0|
+T Allies in Death |QID|39851|M|46.9,48.9|Z|Helheim|N|To Ashildir|; The Eternal Battlefield |Z|1022;0|
+A Victory is Eternal |QID|39853|M|46.9,48.9|Z|Helheim|N|From Ashildir|; The Eternal Battlefield |Z|1022;0|
+C Victory is Eternal |QID|39853|M|46.5,62.7|Z|Helheim|; The Eternal Battlefield |Z|1022;0|
+T Victory is Eternal |QID|39853|M|46.5,62.7|Z|Helheim|N|To Ashildir|; The Eternal Battlefield |Z|1022;0|
+A Paid in Lifeblood |QID|39855|M|46.5,62.7|Z|Helheim|N|From Ashildir|; The Eternal Battlefield |Z|1022;0|
+; |U|129188|M|46.5,62.7|Z|Helheim|N|item:129188 [Bleakwater Jelly]|; The Eternal Battlefield |Z|1022;0|
+C Paid in Lifeblood |QID|39855|M|34.1,27.9|Z|Helheim|; Helya's Throne |Z|1022;0|
+C Survey Ashran |QID|36127|QO|2|M|60.2,52.2|Z|Stormheim|;  |Z|1017;0|
+C Survey Ashran |QID|36127|QO|3|M|60.2,52.2|Z|Stormheim|;  |Z|1017;0|
+C Wrath of Azshara |QID|38286|QO|1|M|60.2,52.2|Z|Stormheim|;  |Z|1017;0|
+C Well-Worn Blindfold |QID|32854|M|60.2,52.2|Z|Stormheim|;  |Z|1017;0|
+C Paid in Lifeblood |QID|39855|M|60.2,52.2|Z|Stormheim|;  |Z|1017;0|
+C An Intriguing Grimoire |QID|29445|M|60.2,52.2|Z|Stormheim|;  |Z|1017;0|
+T Paid in Lifeblood |QID|39855|M|60.1,50.7|Z|Stormheim|N|To Havi|; Valdisdall |Z|1017;0|
+A A Heavy Burden |QID|40078|M|60.1,50.7|Z|Stormheim|N|From Havi|; Valdisdall |Z|1017;0|
+; |U|141401|M|60.0,50.6|Z|Stormheim|N|item:141401 [Renewed Lifeblood]|; Valdisdall |Z|1017;0|
+C A Heavy Burden |QID|40078|M|60.5,51.2|Z|Stormheim|; Valdisdall |Z|1017;0|
+T A Heavy Burden |QID|40078|M|60.2,50.7|Z|Stormheim|N|To Havi|; Valdisdall |Z|1017;0|
+A Knocking on Valor's Door |QID|40001|M|60.2,50.7|Z|Stormheim|N|From Havi|; Valdisdall |Z|1017;0|
+; |U|133813|M|60.2,50.7|Z|Stormheim|N|item:133813 [Recipe: Pickled Stormray]|; Valdisdall |Z|1017;0|
+A To Catch a Banshee |QID|39059|M|60.0,51.4|Z|Stormheim|N|From Ensign Ward|; Valdisdall |Z|1017;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Stormheim|; Valdisdall |Z|1017;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Stormheim|; Valdisdall |Z|1017;0|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Stormheim|; Valdisdall |Z|1017;0|
+C To Catch a Banshee |QID|39059|M|0.0,0.0|Z|Stormheim|; Valdisdall |Z|1017;0|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Stormheim|; Valdisdall |Z|1017;0|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Stormheim|; Valdisdall |Z|1017;0|
+; |U|132830|M|0.0,0.0|Z|Dalaran|N|item:132830 [Cursebinder Chains]|; Uncrowned Vault |Z|1014;10|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;4|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;4|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;4|
+C To Catch a Banshee |QID|39059|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;4|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;4|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;4|
+N Took a taxi |M|60.6,50.9|Z|Stormheim|N|Talk to Garhal the Scalekeeper|; Valdisdall |Z|1017;0|
+F Lorna's Watch |N|Fly to Lorna's Watch, Stormheim|M|37.5,63.9|Z|Stormheim|; Lorna's Watch |Z|1017;0|
+N Took a taxi |M|60.8,50.9|Z|Stormheim|N|Talk to Garhal the Scalekeeper|; Valdisdall |Z|1017;0|
+F Lorna's Watch |N|Fly to Lorna's Watch, Stormheim|M|37.5,63.9|Z|Stormheim|; Lorna's Watch |Z|1017;0|
+; |U|138783|M|49.8,78.0|Z|Stormheim|N|item:138783 [Glittering Memento]|; Thorim's Peak |Z|1017;0|
+; |U|140310|M|43.7,80.1|Z|Stormheim|N|item:140310 [Crude Statuette]|; Thorim's Peak |Z|1017;0|
+; |U|141896|M|42.5,34.1|Z|Stormheim|N|item:141896 [Nashal's Spyglass]|; Nashal the Watcher |Z|1017;0|
+N Took a taxi |M|60.7,50.9|Z|Stormheim|N|Talk to Garhal the Scalekeeper|; Valdisdall |Z|1017;0|
+F Skyfire Triage Camp |N|Fly to Skyfire Triage Camp, Stormheim|M|33.7,50.6|Z|Stormheim|; Skyfire Triage Camp |Z|1017;0|
+A Plight of the Blackfeather |QID|42444|M|50.3,34.0|Z|Stormheim|N|From Frightened Ravenbear|; Stormtorn Foothills |Z|1017;0|
+f Stormtorn Foothills |M|52.0,34.7|Z|Stormheim|N|Talk to Hillevi the Scalekeeper|; Stormtorn Foothills |Z|1017;0|
+T Plight of the Blackfeather |QID|42444|M|49.8,32.6|Z|Stormheim|N|To Cukkaw|; Stormtorn Foothills |Z|1017;0|
+A Singed Feathers |QID|42446|M|49.8,32.6|Z|Stormheim|N|From Cukkaw|; Stormtorn Foothills |Z|1017;0|
+A Nithogg's Tribute |QID|42445|M|49.9,32.6|Z|Stormheim|N|From Cukkaw|; Stormtorn Foothills |Z|1017;0|
+C Nithogg's Tribute |QID|42445|QO|2|M|50.6,34.7|Z|Stormheim|; Stormtorn Foothills |Z|1017;0|
+C Nithogg's Tribute |QID|42445|QO|1|M|48.3,34.4|Z|Stormheim|; Nastrondir |Z|1017;0|
+C Nithogg's Tribute |QID|42445|M|48.3,34.4|Z|Stormheim|; Nastrondir |Z|1017;0|
+C Singed Feathers |QID|42446|M|53.6,27.8|Z|Stormheim|; Stormtorn Foothills |Z|1017;0|
+T Singed Feathers |QID|42446|M|49.8,32.6|Z|Stormheim|N|To Cukkaw|; Stormtorn Foothills |Z|1017;0|
+T Nithogg's Tribute |QID|42445|M|49.8,32.6|Z|Stormheim|N|To Cukkaw|; Stormtorn Foothills |Z|1017;0|
+A Dances With Ravenbears |QID|42447|M|49.8,32.6|Z|Stormheim|N|From Cukkaw|; Stormtorn Foothills |Z|1017;0|
+C Dances With Ravenbears |QID|42447|M|53.7,30.2|Z|Stormheim|; Blackfeather Altar |Z|1017;0|
+; Level up! 106
+T Dances With Ravenbears |QID|42447|M|54.0,30.2|Z|Stormheim|N|To Cukkaw|; Blackfeather Altar |Z|1017;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Stormheim|; Stormtorn Foothills |Z|1017;0|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Stormheim|; Stormtorn Foothills |Z|1017;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Stormheim|; Stormtorn Foothills |Z|1017;0|
+C To Catch a Banshee |QID|39059|M|0.0,0.0|Z|Stormheim|; Stormtorn Foothills |Z|1017;0|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Stormheim|; Stormtorn Foothills |Z|1017;0|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Stormheim|; Stormtorn Foothills |Z|1017;0|
+; |U|139608|M|0.0,0.0|Z|Dalaran|N|item:139608 [Brittle Spelltome]|; The Hall of Shadows |Z|1014;10|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+C To Catch a Banshee |QID|39059|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+; |U|138885|M|42.3,61.2|Z|Stormheim|N|item:138885 [Treasure of the Ages]|; Stonescar Gorge |Z|1017;0|
+; |U|138783|M|48.0,62.4|Z|Stormheim|N|item:138783 [Glittering Memento]|; Stonescar Gorge |Z|1017;0|
+; |U|140310|M|46.6,64.9|Z|Hrydshal|N|item:140310 [Crude Statuette]|;  |Z|1017;0|
+; |U|110560|M|47.7,65.2|Z|Hrydshal|N|item:110560 [Garrison Hearthstone]|;  |Z|1017;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Hrydshal|;  |Z|1017;0|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Hrydshal|;  |Z|1017;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Hrydshal|;  |Z|1017;0|
+C To Catch a Banshee |QID|39059|M|0.0,0.0|Z|Hrydshal|;  |Z|1017;0|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Hrydshal|;  |Z|1017;0|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Hrydshal|;  |Z|1017;0|
+; |U|111557|M|48.1,54.7|Z|Lunarfall|N|item:111557 [Sumptuous Fur]|; Chupala's Garrison |Z|971;0|
+; |U|113263|M|48.1,54.7|Z|Lunarfall|N|item:113263 [Sorcerous Earth]|; Chupala's Garrison |Z|971;0|
+; |U|139593|M|51.6,63.2|Z|Salvage Yard|N|item:139593 [Sack of Salvaged Goods]|;  |Z|971;0|
+; |U|140590|M|51.6,63.2|Z|Salvage Yard|N|item:140590 [Large Crate of Salvage]|;  |Z|971;0|
+; |U|114128|M|47.1,59.4|Z|Storehouse|N|item:114128 [Balanced Weapon Enhancement]|;  |Z|971;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Lunarfall|; Chupala's Garrison |Z|947;0|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Lunarfall|; Chupala's Garrison |Z|947;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Lunarfall|; Chupala's Garrison |Z|947;0|
+C To Catch a Banshee |QID|39059|M|0.0,0.0|Z|Lunarfall|; Chupala's Garrison |Z|947;0|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Lunarfall|; Chupala's Garrison |Z|947;0|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Lunarfall|; Chupala's Garrison |Z|947;0|
+; |U|138783|M|64.3,39.6|Z|Stormheim|N|item:138783 [Glittering Memento]|; Field of Fallen Kings |Z|1017;0|
+; |U|140310|M|71.9,44.2|Z|Stormheim|N|item:140310 [Crude Statuette]|; Haustvald |Z|1017;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C To Catch a Banshee |QID|39059|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Stormheim|; Haustvald |Z|1017;0|
+; |U|138885|M|19.5,47.2|Z|Helheim|N|item:138885 [Treasure of the Ages]|;  |Z|1022;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Helheim|; The Eternal Battlefield |Z|1022;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Helheim|; The Eternal Battlefield |Z|1022;0|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Helheim|; The Eternal Battlefield |Z|1022;0|
+C To Catch a Banshee |QID|39059|M|0.0,0.0|Z|Helheim|; The Eternal Battlefield |Z|1022;0|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Helheim|; The Eternal Battlefield |Z|1022;0|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Helheim|; The Eternal Battlefield |Z|1022;0|
+T Knocking on Valor's Door |QID|40001|M|65.8,59.4|Z|Stormheim|N|To Vethir|; Felskorn Warcamp |Z|1017;0|
+A A Familiar Fate |QID|40002|M|65.8,59.4|Z|Stormheim|N|From Vethir|; Felskorn Warcamp |Z|1017;0|
+C A Familiar Fate |QID|40002|QO|1|M|65.3,57.9|Z|Stormheim|; Felskorn Warcamp |Z|1017;0|
+C A Familiar Fate |QID|40002|QO|2|M|65.8,59.3|Z|Stormheim|; Felskorn Warcamp |Z|1017;0|
+C A Familiar Fate |QID|40002|M|65.8,59.3|Z|Stormheim|; Felskorn Warcamp |Z|1017;0|
+T A Familiar Fate |QID|40002|M|65.8,59.3|Z|Stormheim|N|To Vethir|; Felskorn Warcamp |Z|1017;0|
+A Stem the Tide |QID|40003|M|65.8,59.3|Z|Stormheim|N|From Vethir|; Felskorn Warcamp |Z|1017;0|
+A Break the Spine |QID|40004|M|65.8,59.3|Z|Stormheim|N|From Vethir|; Felskorn Warcamp |Z|1017;0|
+A Drive Back the Tideskorn |QID|39998|M|64.8,60.2|Z|Stormheim|; Gates of Valor |Z|1017;0|
+T Drive Back the Tideskorn |QID|39998|M|64.8,60.2|Z|Stormheim|; Felskorn Warcamp |Z|1017;0|
+A Drive Back the Tideskorn |QID|39998|M|64.5,60.5|Z|Stormheim|; Gates of Valor |Z|1017;0|
+C Stem the Tide |QID|40003|QO|1|M|70.1,64.2|Z|Stormheim|; Gates of Valor |Z|1017;0|
+C Break the Spine |QID|40004|QO|4|M|71.2,64.8|Z|Stormheim|; Gates of Valor |Z|1017;0|
+C Stem the Tide |QID|40003|QO|2|M|70.0,66.2|Z|Stormheim|; Gates of Valor |Z|1017;0|
+C Break the Spine |QID|40004|QO|1|M|69.4,65.8|Z|Stormheim|; Gates of Valor |Z|1017;0|
+C Break the Spine |QID|40004|QO|2|M|68.6,67.9|Z|Stormheim|; Gates of Valor |Z|1017;0|
+C Stem the Tide |QID|40003|QO|3|M|68.2,69.7|Z|Stormheim|; Gates of Valor |Z|1017;0|
+C Stem the Tide |QID|40003|M|68.2,69.7|Z|Stormheim|; Gates of Valor |Z|1017;0|
+C Break the Spine |QID|40004|QO|3|M|66.8,68.3|Z|Stormheim|; Gates of Valor |Z|1017;0|
+C Break the Spine |QID|40004|M|66.8,68.3|Z|Stormheim|; Gates of Valor |Z|1017;0|
+T Drive Back the Tideskorn |QID|39998|M|67.3,70.1|Z|Stormheim|; Gates of Valor |Z|1017;0|
+T Stem the Tide |QID|40003|M|70.2,69.4|Z|Stormheim|N|To Vethir|; Gates of Valor |Z|1017;0|
+T Break the Spine |QID|40004|M|70.2,69.4|Z|Stormheim|N|To Vethir|; Gates of Valor |Z|1017;0|
+A Stormheim's Salvation |QID|40005|M|70.2,69.4|Z|Stormheim|N|From Vethir|; Gates of Valor |Z|1017;0|
+C Stormheim's Salvation |QID|40005|M|70.5,70.6|Z|Stormheim|; Gates of Valor |Z|1017;0|
+T Stormheim's Salvation |QID|40005|M|70.2,69.3|Z|Stormheim|N|To Havi|; Gates of Valor |Z|1017;0|
+A Securing the Aegis |QID|40072|M|70.2,69.3|Z|Stormheim|N|From Havi|; Gates of Valor |Z|1017;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Stormheim|; Straits of Hydrannon |Z|1017;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Stormheim|; Straits of Hydrannon |Z|1017;0|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Stormheim|; Straits of Hydrannon |Z|1017;0|
+C To Catch a Banshee |QID|39059|M|0.0,0.0|Z|Stormheim|; Straits of Hydrannon |Z|1017;0|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Stormheim|; Straits of Hydrannon |Z|1017;0|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Stormheim|; Straits of Hydrannon |Z|1017;0|
+N Took a taxi |M|69.9,51.2|Z|Dalaran|N|Talk to Aludane Whitecloud|; Krasus' Landing |Z|1014;10|
+F Skyfire Triage Camp |N|Fly to Skyfire Triage Camp, Stormheim|M|33.7,50.6|Z|Stormheim|; Skyfire Triage Camp |Z|1017;0|
+; |U|138885|M|44.1,70.0|Z|Stormheim|N|item:138885 [Treasure of the Ages]|; Hrydshal |Z|1017;0|
+; |U|138783|M|38.7,66.0|Z|Stormheim|N|item:138783 [Glittering Memento]|; Hrydshal |Z|1017;0|
+C A Stack of Racks |QID|39792|M|54.2,77.1|Z|Stormheim|; Jotunnwood |Z|1017;0|
+T A Stack of Racks |QID|39792|M|51.4,57.1|Z|Stormheim|N|To Rax Sixtrigger|; Talonrest |Z|1017;0|
+A Put It All on Red |QID|42483|M|51.5,57.3|Z|Stormheim|N|From Snaggle Sixtrigger|; Talonrest |Z|1017;0|
+; |U|140310|M|73.2,45.7|Z|Stormheim|N|item:140310 [Crude Statuette]|; Inkbinders Rise |Z|1017;0|
+A The Value of Knowledge |QID|42640|M|75.5,50.7|Z|Stormheim|N|From Plundering Corsair|; Citrine Bay |Z|1017;0|
+C Time Flies When Yer Havin' Rum! |QID|44117|M|75.4,51.5|Z|Stormheim|; Citrine Bay |Z|1017;0|
+C The Value of Knowledge |QID|42640|M|75.5,51.4|Z|Stormheim|; Citrine Bay |Z|1017;0|
+C Searching For Clues |QID|44155|M|75.1,52.1|Z|Stormheim|; Dreyrgrot |Z|1017;0|
+C The Mystery of Dreyrgrot |QID|42635|M|76.1,49.7|Z|Stormheim|; Citrine Bay |Z|1017;0|
+; |U|138783|M|76.2,49.4|Z|Stormheim|N|item:138783 [Glittering Memento]|; Citrine Bay |Z|1017;0|
+C A Stone of Blood |QID|42639|M|76.2,49.3|Z|Stormheim|; Citrine Bay |Z|1017;0|
+C Put It All on Red |QID|42483|M|80.2,51.1|Z|Stormheim|;  |Z|1017;0|
+T Time Flies When Yer Havin' Rum! |QID|44117|M|77.2,55.0|Z|Stormheim|N|To Fleet Admiral Tethys|; Citrine Bay |Z|1017;0|
+T Searching For Clues |QID|44155|M|77.2,55.0|Z|Stormheim|N|To Fleet Admiral Tethys|; Citrine Bay |Z|1017;0|
+A Dark Secrets and Shady Deals |QID|44177|M|77.2,55.0|Z|Stormheim|N|From Fleet Admiral Tethys|; Citrine Bay |Z|1017;0|
+T The Value of Knowledge |QID|42640|M|74.9,55.5|Z|Stormheim|N|To Sir Finley Mrrgglton|; Dreyrgrot |Z|1017;0|
+T The Mystery of Dreyrgrot |QID|42635|M|74.9,55.5|Z|Stormheim|N|To Sir Finley Mrrgglton|; Dreyrgrot |Z|1017;0|
+T A Stone of Blood |QID|42639|M|74.9,55.5|Z|Stormheim|N|To Sir Finley Mrrgglton|; Dreyrgrot |Z|1017;0|
+A What the Bonespeakers Buried |QID|42641|M|74.9,55.5|Z|Stormheim|N|From Sir Finley Mrrgglton|; Dreyrgrot |Z|1017;0|
+A Spilling Bad Blood |QID|42645|M|74.9,55.5|Z|Stormheim|N|From Sir Finley Mrrgglton|; Dreyrgrot |Z|1017;0|
+C What the Bonespeakers Buried |QID|42641|M|72.0,51.9|Z|Stormheim|; Dreyrgrot |Z|1017;0|
+C Spilling Bad Blood |QID|42645|M|72.4,53.5|Z|Stormheim|; Dreyrgrot |Z|1017;0|
+T What the Bonespeakers Buried |QID|42641|M|75.0,55.6|Z|Stormheim|N|To Sir Finley Mrrgglton|; Dreyrgrot |Z|1017;0|
+T Spilling Bad Blood |QID|42645|M|75.0,55.6|Z|Stormheim|N|To Sir Finley Mrrgglton|; Dreyrgrot |Z|1017;0|
+A Rout the Bilgefin Invaders |QID|40111|M|80.1,53.4|Z|Stormheim|; Bilgefin Shore |Z|1017;0|
+T Rout the Bilgefin Invaders |QID|40111|M|81.0,53.2|Z|Stormheim|;  |Z|1017;0|
+A Rout the Bilgefin Invaders |QID|40111|M|81.9,54.0|Z|Stormheim|; Bilgefin Shore |Z|1017;0|
+T Rout the Bilgefin Invaders |QID|40111|M|82.8,60.2|Z|Stormheim|N|To Bilgefin Invader|; Bilgefin Shore |Z|1017;0|
+f Greywatch |M|72.1,59.8|Z|Stormheim|N|Talk to Gryphon-Master Clifford|; Greywatch |Z|1017;0|
+T To Catch a Banshee |QID|39059|M|71.5,59.9|Z|Stormheim|N|To Genn Greymane|; Greywatch |Z|1017;0|
+A Combustible Contagion |QID|39060|M|71.5,59.9|Z|Stormheim|N|From Genn Greymane|; Greywatch |Z|1017;0|
+A Whispers from the Dark |QID|39061|M|71.5,59.9|Z|Stormheim|N|From Genn Greymane|; Greywatch |Z|1017;0|
+A Cut Out the Heart |QID|39472|M|72.4,61.0|Z|Stormheim|; Bronzeleaf Thicket |Z|1017;0|
+; |U|127295|M|72.6,60.7|Z|Stormheim|N|item:127295 [Blazing Torch]|; Bronzeleaf Thicket |Z|1017;0|
+C Combustible Contagion |QID|39060|QO|3|M|72.6,60.7|Z|Stormheim|; Bronzeleaf Thicket |Z|1017;0|
+A Rout the Bilgefin Invaders |QID|40111|M|78.8,58.1|Z|Stormheim|; Morheim |Z|1017;0|
+A A Murky Fate |QID|40120|M|78.2,58.6|Z|Stormheim|N|From Morheim Ancestor|; Morheim |Z|1017;0|
+T Rout the Bilgefin Invaders |QID|40111|M|78.8,60.1|Z|Stormheim|N|To Bilgefin Invader|; Morheim |Z|1017;0|
+C A Murky Fate |QID|40120|M|81.7,62.5|Z|Stormheim|; Morheim |Z|1017;0|
+; |U|140310|M|81.8,67.5|Z|Stormheim|N|item:140310 [Crude Statuette]|;  |Z|1017;0|
+T A Murky Fate |QID|40120|M|78.2,58.6|Z|Stormheim|N|To Morheim Ancestor|; Morheim |Z|1017;0|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Stormheim|; Morheim |Z|1017;0|
+C Combustible Contagion |QID|39060|QO|3|M|0.0,0.0|Z|Stormheim|; Morheim |Z|1017;0|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Stormheim|; Morheim |Z|1017;0|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Stormheim|; Morheim |Z|1017;0|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Stormheim|; Morheim |Z|1017;0|
+C Put It All on Red |QID|42483|M|0.0,0.0|Z|Stormheim|; Morheim |Z|1017;0|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Stormheim|; Morheim |Z|1017;0|
+T Dark Secrets and Shady Deals |QID|44177|M|0.0,0.0|Z|Dalaran|N|To Lord Jorach Ravenholdt|; Chamber of Shadows |Z|1014;10|
+A Champion: Lord Jorach Ravenholdt |QID|44183|M|0.0,0.0|Z|Dalaran|N|Auto-accept|; Chamber of Shadows |Z|1014;10|
+A Convincin' Old Yancey |QID|43841|M|0.0,0.0|Z|Dalaran|N|From Fleet Admiral Tethys|; Chamber of Shadows |Z|1014;10|
+; |U|140517|M|0.0,0.0|Z|Dalaran|N|item:140517 [Glory of the Order]|; The Hall of Shadows |Z|1014;10|
+; |U|140931|M|0.0,0.0|Z|Dalaran|N|item:140931 [Bandit Wanted Poster]|; The Hall of Shadows |Z|1014;10|
+C Survey Ashran |QID|36127|QO|2|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+C Combustible Contagion |QID|39060|QO|3|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+C Survey Ashran |QID|36127|QO|3|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+C Wrath of Azshara |QID|38286|QO|1|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+C An Intriguing Grimoire |QID|29445|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+C Put It All on Red |QID|42483|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+C Well-Worn Blindfold |QID|32854|M|0.0,0.0|Z|Dalaran|; The Hall of Shadows |Z|1014;10|
+T Put It All on Red |QID|42483|M|51.4,57.2|Z|Stormheim|; Talonrest |Z|1017;0|
+N Took a taxi |M|60.6,50.9|Z|Stormheim|N|Talk to Garhal the Scalekeeper|; Valdisdall |Z|1017;0|
+F Greywatch |N|Fly to Greywatch, Stormheim|M|72.1,59.8|Z|Stormheim|; Greywatch |Z|1017;0|
+; |U|140310|M|77.2,67.2|Z|Stormheim|N|item:140310 [Crude Statuette]|;  |Z|1017;0|
+; |U|138783|M|78.4,71.3|Z|Stormheim|N|item:138783 [Glittering Memento]|;  |Z|1017;0|
+N Took a taxi |M|60.7,50.8|Z|Stormheim|N|Talk to Garhal the Scalekeeper|; Valdisdall |Z|1017;0|
+F Greywatch |N|Fly to Greywatch, Stormheim|M|72.1,59.8|Z|Stormheim|; Greywatch |Z|1017;0|
+; |U|127295|M|73.2,62.6|Z|Stormheim|N|item:127295 [Blazing Torch]|; Bronzeleaf Thicket |Z|1017;0|
+C Combustible Contagion |QID|39060|QO|2|M|73.2,63.1|Z|Stormheim|; Bronzeleaf Thicket |Z|1017;0|
+C Cut Out the Heart |QID|39472|M|75.0,62.0|Z|Stormheim|; Bronzeleaf Thicket |Z|1017;0|
+C Whispers from the Dark |QID|39061|M|74.7,61.5|Z|Stormheim|; Bronzeleaf Thicket |Z|1017;0|
+; |U|127295|M|74.4,58.8|Z|Stormheim|N|item:127295 [Blazing Torch]|; Bronzeleaf Thicket |Z|1017;0|
+C Combustible Contagion |QID|39060|QO|1|M|74.4,58.7|Z|Stormheim|; Bronzeleaf Thicket |Z|1017;0|
+C Combustible Contagion |QID|39060|M|74.4,58.7|Z|Stormheim|; Bronzeleaf Thicket |Z|1017;0|
+T Combustible Contagion |QID|39060|M|71.5,59.8|Z|Stormheim|N|To Genn Greymane|; Greywatch |Z|1017;0|
+T Whispers from the Dark |QID|39061|M|71.5,59.8|Z|Stormheim|N|To Genn Greymane|; Greywatch |Z|1017;0|
+T Cut Out the Heart |QID|39472|M|71.5,59.8|Z|Stormheim|N|To Genn Greymane|; Greywatch |Z|1017;0|
+A To Skold-Ashil |QID|39062|M|71.5,59.8|Z|Stormheim|N|From Genn Greymane|; Greywatch |Z|1017;0|
+
+]==]

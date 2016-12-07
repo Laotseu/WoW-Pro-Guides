@@ -150,30 +150,30 @@ T Slitherblade Slaughter|QID|14257|M|41.19,29.03;38.84,27.00|CS|N|Back to Cenari
 A Going Deep|QID|14260|PRE|14257|M|38.85,27.01|N|From Cenarion Researcher Korrah.|
 
 C Going Deep|NC|QID|14260|U|49064|N|Use the Slitherblade Charm.|
-T Going Deep|QID|14260|M|41.23,28.98;38.64,23.06;31.00,30.92|CS|N|You're now a naga! This means the naga will be friendly to you. You also have an increased swim speed and underwater breathing. Head out to the island and talk to Valishj.|
-A Wetter Than Wet|QID|14264|PRE|14260|M|31.01,30.99|N|From Valishj.|
-N Naga Abilities|QID|14264|N|As a naga, you now have several abilities. Ability 1 will root one of the elementals. Ability 2 deals damage to an elemental. Ability 4 we can't use just yet, and Ability 4 is a simple heal for out of combat.|
-C Wetter Than Wet|QID|14264|M|34.93,21.76|N|Kill elementals by rooting them with Ability 1, then spamming Ability 2.|
-T Wetter Than Wet|QID|14264|M|31.06,30.98|N|Back to Valishj.|
-A Deep Impact|QID|14268|PRE|14264|M|31.06,30.98|N|From Valishj.|
+T Going Deep|QID|14260|U|49064|M|41.23,28.98;38.64,23.06;31.00,30.92|CS|N|You're now a naga! This means the naga will be friendly to you. You also have an increased swim speed and underwater breathing. Head out to the island and talk to Valishj.|
+A Wetter Than Wet|QID|14264|PRE|14260|U|49064|M|31.01,30.99|N|From Valishj.|
+N Naga Abilities|QID|14264|U|49064|N|As a naga, you now have several abilities. Ability 1 will root one of the elementals. Ability 2 deals damage to an elemental. Ability 4 we can't use just yet, and Ability 4 is a simple heal for out of combat.|
+C Wetter Than Wet|QID|14264|U|49064|M|34.93,21.76|N|Kill elementals by rooting them with Ability 1, then spamming Ability 2.|
+T Wetter Than Wet|QID|14264|U|49064|M|31.06,30.98|N|Back to Valishj.|
+A Deep Impact|QID|14268|PRE|14264|U|49064|M|31.06,30.98|N|From Valishj.|
 
-N Naga Abilities|QID|14268|N|You won't have access to Ability 1 or 2 anymore. You'll use Ability 4 to look for artifacts.|
-l Break Rubble|QID|14268|M|37.11,14.61|L|49102 4|N|The rubble that you need to use Ability 4 on looks like a big gray rock. When you use the ability, some glowing tablets will appear. Each has a chance to contain Ancient Tablet Fragments, the sparkling ones contain an actual fragment you need (the non-sparkling ones are junk). You need 4.|
+N Naga Abilities|QID|14268|U|49064|N|You won't have access to Ability 1 or 2 anymore. You'll use Ability 4 to look for artifacts.|
+l Break Rubble|QID|14268|U|49064|M|37.11,14.61|L|49102 4|N|The rubble that you need to use Ability 4 on looks like a big gray rock. When you use the ability, some glowing tablets will appear. Each has a chance to contain Ancient Tablet Fragments, the sparkling ones contain an actual fragment you need (the non-sparkling ones are junk). You need 4.|
 C Deep Impact|NC|QID|14268|U|49102|N|Right-click the tablet fragments to combine them.|
 T Deep Impact|QID|14268|N|The turn-in should pop up automatically.|
 A Mystery Solved|QID|14282|PRE|14268|N|The new quest should pop up automatically.|
 
 T Mystery Solved|QID|14282|M|41.19,29.03;38.83,27.03|CS|N|Back to Cenarion Researcher Korrah.|
 A The Enemy of Our Enemy|QID|14292|PRE|14282|M|38.83,27.03|N|From Cenarion Researcher Korrah.|
-T The Enemy of Our Enemy|QID|14292|M|29.07,8.15|N|To Lord Hydronis.|
-A A Revenant's Vengeance|QID|14284|PRE|14292|M|29.07,8.15|N|From Lord Hydronis.|
-C A Revenant's Vengeance|QID|14284|M|29.01,8.06|N|Talk to Hydronis to start the event. Ability 1 slows Valishj's casting, Ability 2 is a frontal cone of high damage, Ability 3 is a basic frost bolt, and Ability 5 regenerates health and mana. Use 1 to slow her cast times, then use ability 2 and 3 until you run out of mana. Then you ability 5. Rinse and repeat.|
-T A Revenant's Vengeance|QID|14284|M|29.01,8.06|N|To Lord Hydronis.|
-A Return and Report|QID|14301|PRE|14284|M|29.01,8.06|N|From Lord Hydronis.|
-T Return and Report|QID|14301|M|41.19,29.03;38.80,26.96|CC|N|Back to Cenarion Researcher Korrah. Congrats on a very nice piece of gear!|
+T The Enemy of Our Enemy|QID|14292|U|49064|M|29.07,8.15|N|To Lord Hydronis.|
+A A Revenant's Vengeance|QID|14284|U|49064|PRE|14292|M|29.07,8.15|N|From Lord Hydronis.|
+C A Revenant's Vengeance|QID|14284|U|49064|M|29.01,8.06|N|Talk to Hydronis to start the event. Ability 1 slows Valishj's casting, Ability 2 is a frontal cone of high damage, Ability 3 is a basic frost bolt, and Ability 5 regenerates health and mana. Use 1 to slow her cast times, then use ability 2 and 3 until you run out of mana. Then you ability 5. Rinse and repeat.|
+T A Revenant's Vengeance|QID|14284|U|49064|M|29.01,8.06|N|To Lord Hydronis.|
+A Return and Report|QID|14301|U|49064|PRE|14284|M|29.01,8.06|N|From Lord Hydronis.|
+T Return and Report|QID|14301|U|49064|M|41.19,29.03;38.80,26.96|CC|N|Back to Cenarion Researcher Korrah. Congrats on a very nice piece of gear!|
 A Official Assessment|QID|14302|PRE|14301|M|38.80,26.96|N|From Cenarion Researcher Korrah.|
 
-C Peace of Mind|QID|14223|M|53.13,33.06|N|Kill Kohor, outside of Thunder Axe Fortress.|
+K Peace of Mind|QID|14223|T|Kohor|M|53.13,33.06|N|Kill Kohor, outside of Thunder Axe Fortress.|
 T Peace of Mind|QID|14223|N|The turn-in should pop up automatically.|
 A You'll Know It When You See It|QID|14225|PRE|14223|N|The new quest should pop up automatically.|
 l Burning Blade Ear|QID|14232|L|49010|N|Kill a Burning Blade member and loot their ear.|
