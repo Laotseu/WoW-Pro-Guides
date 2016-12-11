@@ -173,9 +173,9 @@ T Siegebreaker|QID|24569|M|41.51,46.75|N|To Warlord Bloodhilt.|
 A Taking Back Taurajo|QID|24572|PRE|24569|M|41.51,46.75|N|From Warlord Bloodhilt.|
 A Honoring the Dead|QID|24573|PRE|24569|M|41.53,46.63|N|From Winnoa Pineforest.|
 C Taking Back Taurajo|QID|24572|S|M|44.05,52.21|N|Kill Taurajo Looters.|
-N Krulmoo Eulogized|QID|24573|NC|QO|1|U|49880|M|44.35,50.87|N|Use the totem next to the corpse of Krulmoo.|
-N Omusa Eulogized|QID|24573|NC|QO|4|U|49880|M|43.7,52.34|N|Use the totem next to the corpse of Omusa.|
-N Yonada Eulogized|QID|24573|NC|QO|3|U|49880|M|44.32,52.57|N|Use the totem next to the corpse of Yonada.|
+C Krulmoo Eulogized|QID|24573|NC|QO|1|U|49880|M|44.35,50.87|N|Use the totem next to the corpse of Krulmoo.|
+C Omusa Eulogized|QID|24573|NC|QO|4|U|49880|M|43.7,52.34|N|Use the totem next to the corpse of Omusa.|
+C Yonada Eulogized|QID|24573|NC|QO|3|U|49880|M|44.32,52.57|N|Use the totem next to the corpse of Yonada.|
 C Honoring the Dead|QID|24573|NC|U|49880|M|44.54,52.18|N|Finally use the totem next to Dranh.|
 C Taking Back Taurajo|QID|24572|US|M|44.05,52.21|N|Kill Taurajo Looters.|
 T Honoring the Dead|QID|24573|M|41.51,46.64|N|To Winnoa Pineforest.|

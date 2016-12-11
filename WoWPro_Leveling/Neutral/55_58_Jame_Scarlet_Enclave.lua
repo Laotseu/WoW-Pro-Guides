@@ -178,11 +178,11 @@ A Nowhere To Run And Nowhere To Hide |QID|12719|M|54.3,57.3|N|From Prince Kelese
 A Lambs To The Slaughter |QID|12722|N|From Baron Rivendare.|M|54.7,57.4|
 
 C Lambs To The Slaughter |QID|12722|N|Kill Scarlet Crusade Soldiers and Citazens of New Avalon until you are done.|S|
-l Get the Empty Cauldron |QID|12716|QO|1|N|Get out of the crypt and go southeast to New Avalon. On your left-hand side you will see the New Avalon Inn. The Empty Cauldron is in the basement.|M|57.80,61.86|
-l Get the Iron Chain |QID|12716|QO|2|N|Northeast of the inn you'll find the New Avalon Forge.|M|61.99,60.24|
+C Get the Empty Cauldron |QID|12716|NC|QO|Empty Cauldron: 1/1|N|Get out of the crypt and go southeast to New Avalon. On your left-hand side you will see the New Avalon Inn. The Empty Cauldron is in the basement.|M|57.80,61.86|
+C Get the Iron Chain |QID|12716|NC|QO|Iron Chain: 1/1|N|Northeast of the inn you'll find the New Avalon Forge.|M|61.99,60.24|
 
 C Nowhere To Run And Nowhere To Hide |QID|12719|N|Mount up and ride southwest to the New Avalon Town Hall. Go inside, Kill Mayor Quimby and loot the [New Avalon Registry].|M|52.50,72.03|
-C The Plaguebringer's Request |QID|12716|QO|3|N|You can get the [Crusader Skull]'s from any New Avalon resident you kill.|M|57.8,61.8|
+C The Plaguebringer's Request |QID|12716|N|You can get the [Crusader Skull] from any New Avalon resident you kill.|M|57.8,61.8|
 C Lambs To The Slaughter |QID|12722|N|Kill Scarlet Crusade Soldiers and Citazens of New Avalon until you are done.|US|
 
 T The Plaguebringer's Request |QID|12716|N|To Noth the Plaguebringer in Havenshire Farms.|M|55.9,52.4|
@@ -193,8 +193,8 @@ T Nowhere To Run And Nowhere To Hide |QID|12719|N|To Prince Keleseth in the Cryp
 A How To Win Friends And Influence Enemies |QID|12720|M|54.3,57.3|N|From Prince Keleseth.|
 T Lambs To The Slaughter |QID|12722|N|To Baron Rivendare.|M|54.7,57.4|
 
-U Open the Ornately Jeweled Box |QID|12720|U|39418|QO|1|N|There are one or two [Keleseth's Persuader] depending on your specialization inside. Click to complete when done.|
-C How To Win Friends And Influence Enemies |QID|12720|N|Go to the Scarlet Hold on the east side of New Avalon, equip the Persuader(s) and beat on people until they tell you want you want to hear.|M|60,68|
+U Open the Ornately Jeweled Box |QID|12720|U|39418|L|39371|N|There are two [Keleseth's Persuader] inside.|
+C How To Win Friends And Influence Enemies |QID|12720|N|Go to the Scarlet Hold on the east side of New Avalon, equip both swords and beat on people until they tell you want you want to hear.|M|60,68|
 
 T How To Win Friends And Influence Enemies |QID|12720|N|To Prince Keleseth.|M|54.3,57.3|
 A Behind Scarlet Lines |QID|12723|M|54.3,57.3|N|From Prince Keleseth.|
@@ -203,7 +203,7 @@ T Behind Scarlet Lines |QID|12723|N|Go far south to the Scarlet Tavern, second f
 A The Path Of The Righteous Crusader |QID|12724|M|56.3,79.8|N|From Orbaz Bloodbane.|
 A Brothers In Death |QID|12725|M|56.3,80.2|N|From Thassarian.|
 
-C The Path Of The Righteous Crusader |QID|12724|N|Ride northeast to the Scarlet Hold and loot the [New Avalon Patrol Schedule] on the upper floor.|M|63.0,68.3|
+C The Path Of The Righteous Crusader |QID|12724|NC|N|Ride northeast to the Scarlet Hold and loot the [New Avalon Patrol Schedule] on the upper floor.|M|63.0,68.3|
 
 T Brothers In Death |QID|12725|N|Go to the Basement where you'll find Koltira Deathweaver.|M|63.0,67.8|
 A Bloody Breakout |QID|12727|N|From Koltira Deathweaver. Be ready to defend, try to fight inside the anti-magic barrier as much as possible.|M|63.0,67.8|
@@ -214,31 +214,31 @@ T Bloody Breakout |QID|12727|M|56.3,80.2|N|To Thassarian.|
 A A Cry For Vengeance! |QID|12738|M|56.3,80.2|N|From Thassarian.|
 
 T A Cry For Vengeance! |QID|12738|N|To the east in the Chapel of the Crimson Flame. Turn the quest into Knight Commander Plaguefist.|M|52.9,81.5|
-A A Special Surprise|QID|12742|R|Human|N|From Put your goul on passive mode (if you have one), if you have one.|M|52.9,81.5|
-A A Special Surprise|QID|12743|R|Night Elf|N|From Put your goul on passive mode (if you have one), if you have one.|M|52.9,81.5|
-A A Special Surprise|QID|12744|R|Dwarf|N|From Put your goul on passive mode (if you have one), if you have one.|M|52.9,81.5|
-A A Special Surprise|QID|12745|R|Gnome|N|From Put your goul on passive mode (if you have one), if you have one.|M|52.9,81.5|
-A A Special Surprise|QID|12746|R|Draenei|N|From Put your goul on passive mode (if you have one), if you have one.|M|52.9,81.5|
-A A Special Surprise |QID|28649|R|Worgen|N|From Put your ghoul on passive mode (if you have one), if you have one.|M|52.9,81.5|
-A A Special Surprise |QID|12739|R|Tauren|N|From Put your ghoul on passive mode (if you have one), if you have one.|M|52.9,81.5|
-A A Special Surprise |QID|12747|R|Blood Elf|N|From Put your ghoul on passive mode (if you have one), if you have one.|M|52.9,81.5|
-A A Special Surprise |QID|12748|R|Orc|N|From Put your ghoul on passive mode (if you have one), if you have one.|M|52.9,81.5|
-A A Special Surprise |QID|12749|R|Troll|N|From Put your ghoul on passive mode (if you have one), if you have one.|M|52.9,81.5|
-A A Special Surprise |QID|12750|R|Undead|N|From Put your ghoul on passive mode (if you have one), if you have one.|M|52.9,81.5|
-A A Special Surprise |QID|28650|R|Goblin|N|From Put your ghoul on passive mode (if you have one), if you have one.|M|52.9,81.5|
+A A Special Surprise|QID|12742|R|Human|N|From Put your goul on passive mode.|M|52.9,81.5|
+A A Special Surprise|QID|12743|R|Night Elf|N|From Put your goul on passive mode.|M|52.9,81.5|
+A A Special Surprise|QID|12744|R|Dwarf|N|From Put your goul on passive mode.|M|52.9,81.5|
+A A Special Surprise|QID|12745|R|Gnome|N|From Put your goul on passive mode.|M|52.9,81.5|
+A A Special Surprise|QID|12746|R|Draenei|N|From Put your goul on passive mode.|M|52.9,81.5|
+A A Special Surprise |QID|28649|R|Worgen|N|From Put your ghoul on passive mode.|M|52.9,81.5|
+A A Special Surprise |QID|12739|R|Tauren|N|From Put your ghoul on passive mode.|M|52.9,81.5|
+A A Special Surprise |QID|12747|R|Blood Elf|N|From Put your ghoul on passive mode.|M|52.9,81.5|
+A A Special Surprise |QID|12748|R|Orc|N|From Put your ghoul on passive mode.|M|52.9,81.5|
+A A Special Surprise |QID|12749|R|Troll|N|From Put your ghoul on passive mode.|M|52.9,81.5|
+A A Special Surprise |QID|12750|R|Undead|N|From Put your ghoul on passive mode.|M|52.9,81.5|
+A A Special Surprise |QID|28650|R|Goblin|N|From Put your ghoul on passive mode.|M|52.9,81.5|
 
-C A Special Surprise|QID|12742|R|Human|N|Put your goul on passive mode (if you have one), listen to Ellen Stanbridge's speach and kill her.|M|54.6,83.7|
-C A Special Surprise|QID|12743|R|Night Elf|N|Put your goul on passive mode (if you have one), listen to Yazmina Oakenthorn's speach and kill her.|M|54.3,83.8|
-C A Special Surprise|QID|12744|R|Dwarf|N|Put your goul on passive mode (if you have one), listen to Donovan Pulfrost's speach and kill him.|M|54.1,83.5|
-C A Special Surprise|QID|12745|R|Gnome|N|Put your goul on passive mode (if you have one), listen to Goby Blastenheimer's speach and kill him.|M|54.9,83.7|
-C A Special Surprise|QID|12746|R|Draenei|N|Put your goul on passive mode (if you have one), listen to Valok the Righteous' speach and kill him.|M|54.5,83.5|
-C A Special Surprise|QID|28649|R|Worgen|N|Put your goul on passive mode (if you have one), listen to Lord Haraford's speach and kill him.|M|54.5,83.4|
-C A Special Surprise |QID|12739|R|Tauren|N|Put your ghoul on passive mode (if you have one), listen to Malar Bravehorn's speech and kill him.|M|54.51,83.86|
-C A Special Surprise |QID|12747|R|Blood Elf|N|Put your ghoul on passive mode (if you have one), listen to Lady Eonys' speech and kill her.|M|54.28,83.31|
-C A Special Surprise |QID|12748|R|Orc|N|Put your ghoul on passive mode (if you have one), listen to Kug Ironjaw's speech and kill him.|M|53.77,83.28|
-C A Special Surprise |QID|12749|R|Troll|N|Put your ghoul on passive mode (if you have one), listen to Iggy Darktusk's speech and kill him.|M|53.81,83.75|
-C A Special Surprise |QID|12750|R|Undead|N|Put your ghoul on passive mode (if you have one), listen to Antoine Brack's speech and kill him.|M|53.54,83.31|
-C A Special Surprise |QID|28650|R|Goblin|N|Put your ghoul on passive mode (if you have one), listen toGally Lumpstain's speech and kill her.|M|53.54,83.6|
+C A Special Surprise|QID|12742|R|Human|N|Put your goul on passive mode, listen to Ellen Stanbridge's speach and kill her.|M|54.6,83.7|
+C A Special Surprise|QID|12743|R|Night Elf|N|Put your goul on passive mode, listen to Yazmina Oakenthorn's speach and kill her.|M|54.3,83.8|
+C A Special Surprise|QID|12744|R|Dwarf|N|Put your goul on passive mode, listen to Donovan Pulfrost's speach and kill him.|M|54.1,83.5|
+C A Special Surprise|QID|12745|R|Gnome|N|Put your goul on passive mode, listen to Goby Blastenheimer's speach and kill him.|M|54.9,83.7|
+C A Special Surprise|QID|12746|R|Draenei|N|Put your goul on passive mode, listen to Valok the Righteous' speach and kill him.|M|54.5,83.5|
+C A Special Surprise|QID|28649|R|Worgen|N|Put your goul on passive mode, listen to Lord Haraford's speach and kill him.|M|54.5,83.4|
+C A Special Surprise |QID|12739|R|Tauren|N|Put your ghoul on passive mode, listen to Malar Bravehorn's speech and kill him.|M|54.51,83.86|
+C A Special Surprise |QID|12747|R|Blood Elf|N|Put your ghoul on passive mode, listen to Lady Eonys' speech and kill her.|M|54.28,83.31|
+C A Special Surprise |QID|12748|R|Orc|N|Put your ghoul on passive mode, listen to Kug Ironjaw's speech and kill him.|M|53.77,83.28|
+C A Special Surprise |QID|12749|R|Troll|N|Put your ghoul on passive mode, listen to Iggy Darktusk's speech and kill him.|M|53.81,83.75|
+C A Special Surprise |QID|12750|R|Undead|N|Put your ghoul on passive mode, listen to Antoine Brack's speech and kill him.|M|53.54,83.31|
+C A Special Surprise |QID|28650|R|Goblin|N|Put your ghoul on passive mode, listen toGally Lumpstain's speech and kill her.|M|53.54,83.6|
 
 T A Special Surprise|QID|12742|R|Human|N|To Knight Commander Plaguefist.|M|52.9,81.5|
 T A Special Surprise|QID|12743|R|Night Elf|N|To Knight Commander Plaguefist.|M|52.9,81.5|

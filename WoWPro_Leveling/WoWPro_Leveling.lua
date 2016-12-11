@@ -113,8 +113,8 @@ function WoWPro.Leveling:RegisterGuide(GIDvalue, zonename, authorname, startleve
 		guidetype = "Leveling",
 		zone = zonename,
 		author = authorname,
-		startlevel = tonumber(startlevelvalue),
-		endlevel = tonumber(endlevelvalue),
+		-- startlevel = tonumber(startlevelvalue),
+		-- endlevel = tonumber(endlevelvalue),
 		sequence = sequencevalue,
 		nextGID = nextGIDvalue,
 		faction = factionname
