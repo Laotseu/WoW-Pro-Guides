@@ -708,8 +708,8 @@ function WoWPro:NextStep(k,i)
 
     	-- Skipping quests with prerequisites if their prerequisite was skipped --
     	if WoWPro.prereq[k] and k <= CurrentIndex 
-    	and not WoWProCharDB.Guide[GID].skipped[k] 
-    	and not WoWPro:QIDsInTable(QID,WoWProCharDB.skippedQIDs) then 
+    	   and not WoWProCharDB.Guide[GID].skipped[k] 
+    	   and not WoWPro:QIDsInTable(QID,WoWProCharDB.skippedQIDs) then 
     		local numprereqs = select("#", string.split(";", WoWPro.prereq[k]))
     		for j=1,numprereqs do
     			local jprereq = select(numprereqs-j+1, string.split(";", WoWPro.prereq[k]))
@@ -761,8 +761,8 @@ function WoWPro:NextStep(k,i)
 	   -- Skip C or T steps, or step with |QO| if they are not active quests
 	   -- ActiveStep is used here in order not to skip if the A step is a sticky (doesn't work, let's fix the guides instead)
 	   if (WoWPro.action[k] == "C" or WoWPro.action[k] == "T" or WoWPro.questtext[k]) and
-	      not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) and 
-	      k <= CurrentIndex then 
+	   not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) and 
+	   k <= CurrentIndex then 
  			skip = true -- If the quest is not in the quest log, the step is skipped --
  			WoWPro:dbp("Step %s [%s] skipped as not in QuestLog",WoWPro.action[k],WoWPro.step[k])
  			WoWPro.why[k] = "NextStep(): Skipping C/T step because quest is not in Quest Log."
@@ -810,24 +810,24 @@ function WoWPro:NextStep(k,i)
                 WoWPro.CompleteStep(k, "Stage completed: "..WoWPro.sobjective[k])
                    skip = true
                    break
-               end
-               if WoWPro.Scenario.currentStage < stage then
-                   WoWPro.why[k] = "NextStep(): Stage is not active yet."
-                   skip = true
-                   break
-               end
-               if objective > 0 then
-                   if objective > WoWPro.Scenario.numCriteria then
-                       WoWPro:dbp("Big scenario objective [%s] at step %s [%s]. objective=%d, numCriteria=%d", WoWPro.sobjective[k], WoWPro.action[k],WoWPro.step[k], objective, WoWPro.Scenario.numCriteria)
-                       skip = true
+            end
+            if WoWPro.Scenario.currentStage < stage then
+                WoWPro.why[k] = "NextStep(): Stage is not active yet."
+                skip = true
+                break
+            end
+            if objective > 0 then
+               if objective > WoWPro.Scenario.numCriteria then
+                  WoWPro:dbp("Big scenario objective [%s] at step %s [%s]. objective=%d, numCriteria=%d", WoWPro.sobjective[k], WoWPro.action[k],WoWPro.step[k], objective, WoWPro.Scenario.numCriteria)
+                  skip = true
                        break
-                   end
-                   if WoWPro.Scenario.Criteria[objective].completed then
-                       WoWPro.CompleteStep(k, "Scenario objective completed:"..WoWPro.sobjective[k])
-                       skip = true
-                       break
-                   end
-               end
+                  end
+                  if WoWPro.Scenario.Criteria[objective].completed then
+                     WoWPro.CompleteStep(k, "Scenario objective completed:"..WoWPro.sobjective[k])
+                     skip = true
+                     break
+                  end
+            end
         end
 
 
@@ -838,19 +838,20 @@ function WoWPro:NextStep(k,i)
 			for j=1,numQIDs do
 				local qID = select(numQIDs-j+1, string.split(";", QID))
 				qID = tonumber(qID)
-	        if not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) then
-				if quest_log_index and select(6,GetQuestLogTitle(quest_log_index)) == 1 then
-					isCompleted = true
-					break
-				end
-			end
-			if not isCompleted then
-	   		WoWPro.CompleteStep(k,"Criteria met")
-	 			skip = true 
-	 			WoWPro:dbp("Step %s [%s] skipped as not completed",WoWPro.action[k],WoWPro.step[k])
-	 			WoWPro.why[k] = "NextStep(): Skipping Conditional T step because the quest is not completed."
-	 			break
-			end
+    	        if not WoWPro:QIDsInTable(QID,WoWPro.QuestLog) then
+    				if quest_log_index and select(6,GetQuestLogTitle(quest_log_index)) == 1 then
+    					isCompleted = true
+    					break
+    				end
+    			end
+    			if not isCompleted then
+    	   		    WoWPro.CompleteStep(k,"Criteria met")
+    	 			skip = true 
+    	 			WoWPro:dbp("Step %s [%s] skipped as not completed",WoWPro.action[k],WoWPro.step[k])
+    	 			WoWPro.why[k] = "NextStep(): Skipping Conditional T step because the quest is not completed."
+    	 			break
+    			end
+            end
     	end
     	
     	-- Complete "f" steps if we know the flight point already
