@@ -186,11 +186,11 @@ C The Scarlet Palisade|QID|24980|S|M|31.92,46.00|N|Kill members of the Scarlet C
 K Scarlet Crusade|QID|24979|L|52079|M|34.91,48.45|N|Kill Scarlet Crusade at the Scarlet Palisade until you get a Scarlet Letter.|
 A A Scarlet Letter|QID|24979|U|52079|M|34.91,48.45|N|Right-click the Scarlet Palisade dropped by the Scarlet Crusade.|
 
-C A Scarlet Letter|QID|24979|NC|M|31.69,46.13|N|Go to the top of the tower and talk to Lilian. Watch the scene.|
+C A Scarlet Letter|QID|24979|CHAT|M|31.69,46.13|N|Go to the top of the tower and talk to Lilian. Watch the scene.|
 C The Scarlet Palisade|QID|24980|US|M|31.92,46.00|N|Kill members of the Scarlet Crusade.|
 C Briny Sea Cucumber|QID|24976|NC|QO|3|M|33.19,43.14|N|Collect Sea Cucumbers from the ocean floor. Watch out for the rare level 10 murloc who roams the area - he's probably a bit too strong for you!|
 C Ever So Lonely|QID|24974|U|52059|QO|1|M|35.06,44.67|N|Use the murloc leash on a murloc after you beat it down to 25%. \nDon't wait too long to return. You only have 10 minutes before he dies.|
-C Xavren's Thorn|QID|24976|NC|QO|2|M|33.19,43.14|N|Collect Xavren's Thorn on the cliffs above the beach.|
+C Xavren's Thorn|QID|24976|NC|QO|2|M|36.9,43.3|N|Collect Xavren's Thorn on the cliffs above the beach.|
 C Ever So Lonely|QID|24974|NC|U|52059|M|44.72,53.68|N|Head back to the Carlston Estate and head upstairs to turn in the murloc to Carlston.|
 
 T Ever So Lonely|QID|24974|M|44.72,53.68|N|To Sedrick Calston.|
