@@ -159,6 +159,7 @@ WoWPro:GuideIcon(guide,"ICON","Interface\\ICONS\\Achievements_Zone_Highmountain"
 WoWPro:GuideSteps(guide, function()
 return [[
 
+A The Lone Mountain|QID|39733|N|To get this quest, you need to go to your class Hall and select the Highmountain zone from the Soucting Map.|
 N Starting in Dalaran|QID|39733|U|140192|N|This guide assumes you are starting in Dalaran. |
 N Treasure|QID|39733|N|All the treasures necessary for the zone treasure hunting achievement are listed if you do the guide on rank 3.|
 N Rares (Silver Elite)|QID|39733|N|A significant number,(21/25) of the Silver mobs are listed.  The item displayed has a high chance to drop but not guarenteed.  Blizzard has marked these mobs on the minimap with a star.|
@@ -218,7 +219,9 @@ T Lifespring Cavern|QID|39661|M|38.40,61.20|N|To Jale Rivermane.|
 A Balance of Elements|QID|39488|M|38.40,61.20|N|From Jale Rivermane.|PRE|39661|
 A Invading Spelunkers|QID|39489|M|38.40,61.20|N|From Jale Rivermane.|PRE|39661|
 C Invading Spelunkers|QID|39489|M|36.76,59.16|Z|Highmountain/20|S|N|Kill Drogbar or Earth Furies.|
-C Balance of Elements|QID|39488|M|49.08,48.14|Z|Highmountain/21|NC|N|Pick up the crystals off of the ground and they also drop from the Drogbar.|
+C Balance of Elements|QID|39488|S|M|49.08,48.14|Z|1024/21|NC|N|Pick up the crystals off of the ground and they also drop from the Drogbar.|
+$ Treasure Chest|QID|39812|M|39.53,57.44|N|Loot for a bit of treasure and resources.|RANK|2|
+C Balance of Elements|QID|39488|US|M|49.08,48.14|Z|1024/21|NC|N|Pick up the crystals off of the ground and they also drop from the Drogbar.|
 C Invading Spelunkers|QID|39489|M|49.08,48.14|Z|Highmountain/21|US|N|Finish killing Drogbar or Earth Furies.|
 T Invading Spelunkers|QID|39489|M|49.08,48.14|Z|Highmountain/21|N|To Jale Rivermane who is following you around.|
 T Balance of Elements|QID|39488|M|49.08,48.14|Z|Highmountain/21|N|To Jale Rivermane.|
@@ -249,14 +252,14 @@ C Bitestone Enclave|QID|39043|M|84.05,46.57|Z|Highmountain/5|N|Kill Basalisks an
 T Bitestone Enclave|QID|39043|M|47.32,44.53|Z|Highmountain/5|N|To Warbrave Oro.|
 A Dargrul and the Hammer|QID|39027|M|47.32,44.53|Z|Highmountain/5|N|From Warbrave Oro.|PRE|39043|
 C Dargrul and the Hammer|QID|39027|M|66.48,49.66|QO|1|Z|Highmountain/5|NC|N|Follow Warbrave Oro to confront Dargrul. When he encases you in rock, click on it to break free.|
-$ Treasure Chest|QID|40489|M|85.62,38.38|N|There is a Treasure chest up where Dargrul was.  You may have to kill 15-20 mobs to get it, so I'm not sure its worth it. Check off manually if you don't want to go up there.|RANK|3|
+;$ Treasure Chest|QID|40489|M|85.62,38.38|N|There is a Treasure chest up where Dargrul was.  You may have to kill 15-20 mobs to get it, so I'm not sure its worth it. Check off manually if you don't want to go up there.|RANK|3|
 C Dargrul and the Hammer|QID|39027|M|15.25,26.78|QO|2|Z|Highmountain/5|NC|N|Run out of the cavern.|
-f Sylvan Falls|QID|39027|M|35.88,65.93|N|Run past the turn in because it goes to an escort quest. Get the flightpath at Roren Longshadow.|
+f Sylvan Falls|M|35.88,65.93|N|Run past the turn in because it goes to an escort quest. Get the flightpath at Roren Longshadow.|
 $ Treasure Chest|QID|40488|M|36.61,62.13|N|Loot for a bit of treasure and resources.|RANK|2|
 T Dargrul and the Hammer|QID|39027|M|38.60,68.44|N|To Spiritwalker Ebonhorn.|
 A Get to High Ground|QID|38909|M|38.60,68.44|N|From Spiritwalker Ebonhorn.|PRE|39027|
-C Get to High Ground|QID|38909|M|27.48,38.90|Z|ThunderTotem|QO|1|N|Escort Jale Rivermane to Thunder Totem.|
 $ Small Treasure Chest|QID|40491|M|13.67,55.40|Z|ThunderTotem|N|While escorting Jale, pause briefly to loot for a bit of treasure and resources.|RANK|2|
+C Get to High Ground|QID|38909|M|27.2,59.2|Z|ThunderTotem|QO|1|N|Escort Jale Rivermane to Thunder Totem.|
 C Get to High Ground|QID|38909|M|55.48,65.55|Z|Highmountain/6|QO|2|NC|N|Follow Jale to Mayla Highmountain.|
 T Get to High Ground|QID|38909|M|54.67,63.02|Z|Highmountain/6|N|To Mayla Highmountain.|
 A The Bloodtotem Tribe|QID|38912|M|54.67,63.02|Z|Highmountain/6|N|From Mayla Highmountain.|PRE|38909|
@@ -317,6 +320,7 @@ C Echoes of Deathwing-Bonus Objective|QID|39576|M|47.35,70.26|Z|Highmountain/29|
 A In Defiance of Deathwing|QID|40219|M|47.35,70.26|Z|Highmountain/29|N|From Spiritwalker Ebonhorn.|PRE|39575|
 C In Defiance of Deathwing|QID|40219|M|38.71,47.66|Z|Highmountain/29|QO|1|NC|N|Click on brazier to recieve Vision of Scales.|
 C In Defiance of Deathwing|QID|40219|M|51.50,30.62|Z|Highmountain/29|QO|2|NC|N|Click on the brazier to see Vision of the Hammer.|
+C Echoes of Deathwing-Bonus Objective|QID|39576|US|M|47.35,70.26|Z|1024;0|S|N|Kill stuff, (like you have a choice).Note, you can ride your mount in here!|
 $ Glimmering Treasure Chest|QID|39606|M|59.30,41.53|Z|Highmountain/29|N|Step on the Titan Waygate, to be teleported above, where you will see another brazier, Click on it to see a short vignette. After that, a chest appears in front of the Waygate before you leave the upper area. Loot for treasure and resources.|RANK|2|
 $ Small Treaure Chest|QID|40508|M|49.52,40.08;60.82,54.91|CS|Z|Highmountain/29|N|Loot for a bit of treasure and resources.|RANK|2|
 C In Defiance of Deathwing|QID|40219|M|49.37,54.76|Z|Highmountain/29|QO|3|NC|N|Click on the brazier to see Vision of Hope.|
@@ -335,9 +339,9 @@ $ Treasure Chest|QID|40509|M|40.26,50.09|Z|Highmountain/29|N|Backtrack a little 
 R The Backdoor|QID|39579|M|49.71,86.94|CC|Z|Highmountain/29|N|The backdoor is this way. Mount up and ride out.|
 C Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|Highmountain/29|US|N|If you somehow managed to not finish this, kill a few more.|RANK|2|
 t Echoes of Deathwing-Bonus Objective|QID|39576|M|49.71,86.94|Z|Highmountain/29|N|Auto turned in upon completion.|RANK|2|
-T The Backdoor|QID|39579|M|47.48,84.74|N|To Mayla Highmountain.|
+T The Backdoor|QID|39579|M|47.48,84.74|Z|Highmountain|N|To Mayla Highmountain.|
 A The High Chieftain|QID|39580|M|47.47,84.73|N|From Mayla Highmountain.|PRE|39579|
-f Obsidian Overlook|QID|39579|M|47.26,84.64|N|At Chofa Nighthoof.|
+f Obsidian Overlook|M|47.26,84.64|N|At Chofa Nighthoof.|
 F Thunder Totem|QID|39580|M|47.26,84.64|N|Fly back to Thunder Totem at Chofa Nighthoof.|
 T The High Chieftain|QID|39580|M|54.85,63.11|Z|Highmountain/6|N|Take the elevator down to find Mayla Highmountain.|
 T Ceremonial Drums|QID|42622|M|54.86,77.98|Z|Highmountain/6|N|To Torv Dubstomp.|
@@ -486,9 +490,9 @@ A Pet Rocks|QID|39391|M|45.20,32.49|N|From Navarrogg.|PRE|39381|
 A Stonedark Crystal|QID|39425|M|45.20,32.49|N|From Navarrogg.|PRE|39381|
 A They Will Pay With Blood|QID|39588|M|45.20,32.49|N|From Navarrogg.|PRE|39381|
 $ Small Treasure Chest|QID|40481|M|44.75,31.86;45.54,34.59|CS|N|Loot for a bit of treasure and resources.|RANK|2|
-C Pet Rocks|QID|39391|M|43.54,33.66|QO|2|NC|N|Lying by the mountain trail.|
 C Stonedark Crystal|QID|39425|M|44.31,27.89|S|N|It will drop from the feltotem mobs you are killing.|
 C They Will Pay With Blood|QID|39588|M|43.09,32.91|S|N|Kill Feltotem.|
+C Pet Rocks|QID|39391|M|43.54,33.66|QO|2|NC|N|Lying by the mountain trail.|
 C Pet Rocks|QID|39391|M|43.53,28.39|QO|1|NC|N|Lying between the two braziers.|
 K Kill Majestic Elderhorn|QID|39646|QO|1|M|44.41,27.18|ITEM|131900|N|He paths aong the lake shore and then around the mountain.|RANK|2|
 C Pet Rocks|QID|39391|M|45.33,27.58|QO|3|NC|N|Out on the island.|
