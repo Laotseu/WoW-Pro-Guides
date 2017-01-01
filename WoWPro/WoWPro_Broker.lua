@@ -1029,9 +1029,9 @@ function WoWPro:NextStep(k,i)
             repmin = Rep2IdAndClass[repmin][1]
          end
 
-            if not repmin then
-                WoWPro:Error("Bad lower REP value of [%s] found in [%s].  Defaulting to 1.",temprep,WoWPro.rep[k])
-                repmin = 0
+         if not repmin then
+            WoWPro:Error("Bad lower REP value of [%s] found in [%s].  Defaulting to 1.",temprep,WoWPro.rep[k])
+            repmin = 0
          end
 
          -- Extract upper bound rep
@@ -1089,15 +1089,19 @@ function WoWPro:NextStep(k,i)
 				    WoWPro:dbp("!- [%s] Spec %s repmax %s & standingId %s: skip", WoWPro.step[k],WoWPro.rep[k],tostring(repmax), tostring(standingId))
 				end
 			end
+
 			-- Mark quests as skipped that we will assume will NEVER be done.
 			if WoWPro.action[k] == "A" and standingId < 3 and repmin > 3 and skip then
 			    WoWProCharDB.Guide[GID].skipped[k] = true
 			    WoWPro:SetQIDsInTable(QID,WoWProCharDB.skippedQIDs)
 			end
+
 			-- OK Now for the FLIP!
 			if flip then
 			    skip = not flip
 			    WoWPro:dbp("!? Processed flip: skip=%s", tostring(skip))
+            end
+            
 			if skip then 
 				WoWProCharDB.Guide[GID].skipped[k] = true
 				break 
