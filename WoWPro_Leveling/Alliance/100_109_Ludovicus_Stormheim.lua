@@ -192,6 +192,7 @@ N Rares (Silver Elite)|QID|39735|N|All of the Silver mobs are also included. The
 N Ranks|N|Setting the guide to Rank 1 will get you all of the essential questlines for the zone questing achievement. Rank 2, adds the quests you may as well do while you are there. Rank 3 gets every quest & treasure and rare in the zone.|
 
 ; Greymane's Gambit Leadin
+A Stormheim|QID|39735|N|To get this quest, you need to go to your class Hall and select the Highmountain zone from the Soucting Map.|
 R The Violet Citadel|QID|39735|M|29.10,46.93|Z|Dalaran@Dalaran70|N|At Sky Admiral Rogers.|
 T Stormheim|QID|39735|M|29.10,46.93|Z|Dalaran@Dalaran70|N|To Sky Admiral Rogers.|
 A A Royal Summons|QID|38035|PRE|39735|M|29.10,46.93|Z|Dalaran@Dalaran70|N|From Sky Admiral Rogers.|

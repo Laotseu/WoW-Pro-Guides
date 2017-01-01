@@ -213,6 +213,7 @@ N Treasure|QID|39718|N|Enough treasures necessary for the zone treasure hunting 
 N Rares (Silver Elite)|QID|39718|N|All Rares are included if you do the guide on rank 3, *some are on rank 2, none are on 1*  The item displayed has a high chance to drop but not guarenteed.  Blizzard has marked these mobs on the minimap with a star.|
 N Ranks|QID|39718|N|Setting the guide to Rank 1 will get you all of the essential questlines for the zone questing achievement. Rank 2, adds the most of the rest of the quests in the zone, Rank 3, includes the difficult or out of the way optional quests, rares and treasures.|
 
+A Paradise Lost|QID|39718|N|To get this quest, you need to go to your class Hall and select the Azsuna zone from the Soucting Map.|
 T Paradise Lost|QID|39718|M|72.51,45.66|Z|Dalaran@Dalaran70|N|To Archmage Khadgar.|
 A Down to Azsuna|QID|41220|PRE|39718|M|72.51,45.66|Z|Dalaran@Dalaran70|N|From Archmage Khadgar.|
 C Down to Azsuna|QID|41220|M|72.51,45.66|Z|Dalaran@Dalaran70|CHAT|N|Fly down with Khadgar.|
